@@ -1,6 +1,16 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 19:51 UTC
+## Current checkpoint — 2026-09-23 20:14 UTC
+
+The shared worktree's concurrent mode additions reached a clean Astro type check (75 files, zero diagnostics), lint, 39/39 unit tests on an unchanged rerun with a 20-second per-test timeout, and a preview build/audit of 246 pages and 2,675 internal links. The combined `npm run verify` run did not pass uninterrupted: two catalog-heavy tests exceeded the default 5-second timeout while the machine was busy, then passed on rerun. The new modes remained uncommitted and continued changing after the snapshot, so these checks are evidence for that snapshot, not a final release.
+
+The regular `npm test` command now uses that 20-second limit to avoid failing the content scans solely because this shared Windows host is busy. Tests remain bounded; no assertion or application behavior was changed by this adjustment.
+
+Focused Flower Pots, Paper Planes, and Shell Game checks passed 6/6 in Chromium on the shared build. A Firefox/WebKit run against the shared port passed 8/12; two cases lost the shared server connection and two timed out. A copied, isolated snapshot on port 4333 then passed 11/12 Firefox/WebKit cases, including narrow 12-player layouts, axe checks, reduced motion, replay and skip. The sole remaining failure was the Shell Game-specific WebKit test waiting for “Show result now” after the reveal had completed and the button had disappeared; the failure screenshot showed the winner and pearl correctly, and the generic Shell Game skip/replay checks passed in both engines. This is a test timing issue, and the exact final mode edits still need a clean browser run after they settle.
+
+Evidence: ignored local logs `artifacts/current-worktree-{verify,build,new-modes-browser,new-modes-cross-browser}.log` in the main workspace and `artifacts/new-modes-isolated-{build,cross-browser}.log` in the attached isolated worktree. No public deployment occurred.
+
+## Previous checkpoint — 2026-09-23 19:51 UTC
 
 The first local Git baseline is `86a452c` on `build/who-goes-first`. The owner's launch decision is an approved partial catalog; the canonical domain and maintained contact remain undecided. No public deployment has occurred. This checkpoint adds a production build gate for contact and host/logging disclosures, and renders those disclosures on Privacy only in production. The actual host and policy must be checked by the owner before release.
 

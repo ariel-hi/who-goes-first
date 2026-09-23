@@ -12,7 +12,7 @@
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check",
     "lint": "eslint .",
-    "test": "vitest run",
+    "test": "vitest run --testTimeout=20000",
     "test:browser": "playwright test",
     "test:serve": "tsx scripts/serve-static.ts",
     "screenshots": "tsx scripts/capture-screenshots.ts",
