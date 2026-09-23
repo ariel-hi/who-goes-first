@@ -18,6 +18,7 @@ const node = process.execPath;
 const astro = join(root, 'node_modules/astro/bin/astro.mjs');
 const tsx = join(root, 'node_modules/tsx/dist/cli.mjs');
 const origin = 'https://who-goes-first.release-check.net';
+const releaseDetails = { CONTACT_EMAIL: 'owner@release-check.net', PRIVACY_HOST_NAME: 'Fixture Host', PRIVACY_LOGGING_POLICY: 'Fixture access logs are deleted after 30 days.' };
 function build(name: string, extra: Record<string, string>) {
   const out = join(fixtureRoot, name);
   const env = { ...process.env, ASTRO_TELEMETRY_DISABLED: '1', DEPLOY_CONTEXT: 'preview', SITE_URL: origin, BUILD_OUT_DIR: out, ...extra };
@@ -32,7 +33,7 @@ const preview = build('preview-empty', {});
 assert.match(readFileSync(join(preview, 'index.html'), 'utf8'), /content="noindex, follow"/);
 assert.doesNotMatch(readFileSync(join(preview, 'sitemap.xml'), 'utf8'), /<loc>/);
 assert.match(readFileSync(join(preview, '_headers'), 'utf8'), /X-Robots-Tag: noindex/);
-const production = build('production-empty', { DEPLOY_CONTEXT: 'production' });
+const production = build('production-empty', { DEPLOY_CONTEXT: 'production', ...releaseDetails });
 assert.match(readFileSync(join(production, 'index.html'), 'utf8'), /content="index, follow"/);
 assert.match(readFileSync(join(production, 'games/index.html'), 'utf8'), /content="noindex, follow"/);
 assert.doesNotMatch(readFileSync(join(production, 'sitemap.xml'), 'utf8'), /\/games\/|\/house-rules\/|\/dev\//);
@@ -55,7 +56,10 @@ for (let index = 1; index <= 40; index++) {
 const prompt = promptSchema.parse({ id: 'synthetic-prompt', slug: 'synthetic-prompt', language: 'en', sourceType: 'original-house-rule', prompt: 'Which fictional test participant volunteers?', internalReviewNotes: 'PRIVATE_PROMPT_CANARY_8J2', status: 'approved', approvedBy: 'AUTOMATED FIXTURE ONLY — NOT HUMAN APPROVAL', approvedRevision: null, publishedAt: '2026-09-19', materiallyUpdatedAt: '2026-09-19' });
 prompt.approvedRevision = contentRevision(prompt);
 writeFileSync(join(fixtureRoot, 'src/content/prompts/synthetic-prompt.json'), JSON.stringify(prompt));
-const populated = build('production-fixtures', { DEPLOY_CONTEXT: 'production', CONTACT_EMAIL: 'fixture@example.org' });
+const populated = build('production-fixtures', { DEPLOY_CONTEXT: 'production', ...releaseDetails });
+const privacy = readFileSync(join(populated, 'privacy/index.html'), 'utf8');
+assert.match(privacy, /The hosting provider is Fixture Host\. Fixture access logs are deleted after 30 days\./);
+assert.doesNotMatch(privacy, /This local version has no public hosting service configured/);
 const answer = readFileSync(join(populated, 'games/synthetic-fixture/index.html'), 'utf8');
 assert.match(answer, /This synthetic answer exists only/);
 assert.match(answer, /publisher.example.org/);
@@ -74,5 +78,14 @@ assert.match(disabledBalloon, /&quot;initialMode&quot;:\[0,&quot;quick&quot;\]/)
 assert.doesNotMatch(disabledBalloon, /value="balloon"|How Balloon Rise works/);
 const invalid = spawnSync(node, [astro, 'build'], { cwd: fixtureRoot, env: { ...process.env, DEPLOY_CONTEXT: 'production', SITE_URL: 'https://example.com', BUILD_OUT_DIR: join(fixtureRoot, 'invalid') }, encoding: 'utf8' });
 assert.notEqual(invalid.status, 0);
-console.log('Release matrix passed: preview, empty production, isolated synthetic content, disabled mode, and invalid-domain rejection. Fixture output is never deployable content.');
+for (const [name, details, expected] of [
+  ['missing-contact', { ...releaseDetails, CONTACT_EMAIL: '' }, 'CONTACT_EMAIL'],
+  ['missing-host', { ...releaseDetails, PRIVACY_HOST_NAME: '' }, 'PRIVACY_HOST_NAME'],
+  ['missing-logging', { ...releaseDetails, PRIVACY_LOGGING_POLICY: '' }, 'PRIVACY_LOGGING_POLICY'],
+] as const) {
+  const rejected = spawnSync(node, [astro, 'build'], { cwd: fixtureRoot, env: { ...process.env, DEPLOY_CONTEXT: 'production', SITE_URL: origin, BUILD_OUT_DIR: join(fixtureRoot, name), ...details }, encoding: 'utf8' });
+  assert.notEqual(rejected.status, 0);
+  assert.match(rejected.stdout + rejected.stderr, new RegExp(expected));
+}
+console.log('Release matrix passed: preview, empty production, isolated synthetic content, disabled mode, and missing-domain/contact/hosting rejection. Fixture output is never deployable content.');
 writeFileSync('artifacts/release-fixtures/latest.json', JSON.stringify({ createdAt: new Date().toISOString(), fixtureRoot, production, populated }, null, 2));

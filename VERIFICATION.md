@@ -1,6 +1,14 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 13:51 UTC
+## Current checkpoint — 2026-09-23 19:51 UTC
+
+The first local Git baseline is `86a452c` on `build/who-goes-first`. The owner's launch decision is an approved partial catalog; the canonical domain and maintained contact remain undecided. No public deployment has occurred. This checkpoint adds a production build gate for contact and host/logging disclosures, and renders those disclosures on Privacy only in production. The actual host and policy must be checked by the owner before release.
+
+The gate was verified against an isolated worktree copied from `86a452c`, with only the seven release-gate files copied from the shared workspace. Astro check passed for 75 files with zero diagnostics; lint passed; all 39 unit tests passed on rerun; the static preview build and audits passed for 242 pages and 2,631 internal links; and the release matrix passed preview, empty production, synthetic populated production, Balloon disabled, and rejected missing domain/contact/host/logging configuration. The production fixture Privacy page contained the configured host/logging sentence and omitted the local-only notice. The first combined verification run had one existing coverage test exceed its 5-second limit under machine load; its unchanged rerun passed in 1.43 seconds. The individual gates therefore passed, but a single uninterrupted combined run is not claimed.
+
+The shared worktree is also receiving concurrent picker/mode edits. Its type check at this checkpoint found a new mode union mismatch in `src/components/Picker.tsx`; those edits were not included in the isolated verification or first commit. Browser visual approval, physical device and screen-reader checks, actual host disclosure, final release verification, and public smoke/rollback remain open in `LAUNCH_CHECKLIST.md`.
+
+## Previous checkpoint — 2026-09-23 13:51 UTC
 
 The running homepage passed another all-method retention check at 13:42 UTC: all seven animated scenes remain mounted beside the winner, replay creates a fresh scene, and skip settles the current scene. The 12-player spinner fits at 320px with long and duplicate names. All nine freshly captured homepage screenshots were opened and inspected. Presentation code did not change in this content pass.
 

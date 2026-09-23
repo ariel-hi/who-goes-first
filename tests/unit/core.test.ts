@@ -92,8 +92,13 @@ test('telemetry drops private extras and invalid values; a failed sink is harmle
   expect(() => createAnalytics(() => { throw Error(); }).emit('share_completed', { kind: 'tool' })).not.toThrow();
 });
 test('release config rejects placeholders and private URL state', () => {
+  const release = { DEPLOY_CONTEXT: 'production', SITE_URL: 'https://firstplayer.site', CONTACT_EMAIL: 'owner@firstplayer.site', PRIVACY_HOST_NAME: 'Example Host', PRIVACY_LOGGING_POLICY: 'Access logs are deleted after 30 days.' };
   expect(() => siteSettings({ DEPLOY_CONTEXT: 'production' })).toThrow();
   expect(() => siteSettings({ DEPLOY_CONTEXT: 'production', SITE_URL: 'https://example.com' })).toThrow();
   expect(() => siteSettings({ SITE_URL: 'https://host.test/?name=Bo' })).toThrow();
-  expect(siteSettings({ DEPLOY_CONTEXT: 'production', SITE_URL: 'https://firstplayer.site' }).production).toBe(true);
+  expect(() => siteSettings({ ...release, CONTACT_EMAIL: '' })).toThrow('CONTACT_EMAIL');
+  expect(() => siteSettings({ ...release, CONTACT_EMAIL: 'owner@invalid' })).toThrow('CONTACT_EMAIL');
+  expect(() => siteSettings({ ...release, PRIVACY_HOST_NAME: '' })).toThrow('PRIVACY_HOST_NAME');
+  expect(() => siteSettings({ ...release, PRIVACY_LOGGING_POLICY: '' })).toThrow('PRIVACY_LOGGING_POLICY');
+  expect(siteSettings(release)).toMatchObject({ production: true, contact: release.CONTACT_EMAIL, privacyHost: release.PRIVACY_HOST_NAME, privacyLogging: release.PRIVACY_LOGGING_POLICY });
 });
