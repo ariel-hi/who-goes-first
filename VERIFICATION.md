@@ -1,6 +1,12 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 20:22 UTC
+## Current checkpoint — 2026-09-23 20:29 UTC
+
+The link checker now supports `--approved-only`, so launch checks can target the reviewed public catalog without conflating draft-source failures. Its batch completion flag also reports correctly when the final batch starts at a nonzero offset. Two approved-only batches checked all **284 distinct source URLs**: 250 plus 34, with 284 unique URLs and 284 HTTP 200 HEAD responses at 20:26–20:27 UTC. The check changed no record, approval, or verification date. Availability does not prove a rule's factual accuracy, and a future host can change its response.
+
+`npx eslint scripts/check-links.ts` passed; `npm run check` reported 75 Astro files with zero errors, warnings, or hints. Evidence: ignored `artifacts/approved-links-check.json` and `artifacts/approved-links-check-tail.json` in the main workspace. The concurrent picker edits remain uncommitted, and no public deployment occurred.
+
+## Previous checkpoint — 2026-09-23 20:22 UTC
 
 The Shell Game-specific browser test now waits for natural completion instead of trying to click “Show result now” after that control can disappear. The generic Shell Game test still exercises skip and replay. The previously failing WebKit case passed in an isolated rerun.
 

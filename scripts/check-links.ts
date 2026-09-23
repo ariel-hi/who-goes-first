@@ -1,12 +1,13 @@
-import { readRecords } from '../src/lib/content/catalog';
+import { getCatalog, readRecords } from '../src/lib/content/catalog';
 import { ruleSchema } from '../src/lib/content/schema';
 import { parseArgs } from 'node:util';
-const { values } = parseArgs({ options: { offset: { type: 'string', default: '0' }, limit: { type: 'string', default: '250' } } });
+const { values } = parseArgs({ options: { offset: { type: 'string', default: '0' }, limit: { type: 'string', default: '250' }, 'approved-only': { type: 'boolean', default: false } } });
 const offset = Number(values.offset), limit = Number(values.limit);
 if (!Number.isSafeInteger(offset) || offset < 0 || !Number.isSafeInteger(limit) || limit < 1 || limit > 250) {
   throw new Error('Use --offset <nonnegative integer> and --limit <1–250>.');
 }
-const records = [...readRecords('src/content/games'), ...readRecords('research/games')].map(record => ruleSchema.parse(record));
+const approvedOnly = values['approved-only'];
+const records = approvedOnly ? getCatalog() : [...readRecords('src/content/games'), ...readRecords('research/games')].map(record => ruleSchema.parse(record));
 const allUrls = [...new Set(records.flatMap(record => record.sources.map(source => source.url)))].sort();
 const urls = allUrls.slice(offset, offset + limit);
 const findings: { url: string; status: number | string }[] = new Array(urls.length);
@@ -35,8 +36,8 @@ await Promise.all(Array.from({ length: Math.min(3, urls.length) }, async () => {
   while (next < urls.length) { const index = next++; findings[index] = await check(urls[index]!); }
 }));
 const remainingAfterBatch = Math.max(0, allUrls.length - offset - urls.length);
-console.log(JSON.stringify({ checkedAt: new Date().toISOString(), totalSources: allUrls.length, offset,
-  checked: findings.length, complete: findings.length === allUrls.length, remainingAfterBatch,
-  nextCommand: remainingAfterBatch ? `npm run links:check -- --offset ${offset + urls.length} --limit ${limit}` : null,
+console.log(JSON.stringify({ checkedAt: new Date().toISOString(), scope: approvedOnly ? 'approved catalog' : 'approved catalog and research drafts', totalSources: allUrls.length, offset,
+  checked: findings.length, complete: offset + findings.length >= allUrls.length, remainingAfterBatch,
+  nextCommand: remainingAfterBatch ? `npm run links:check -- --offset ${offset + urls.length} --limit ${limit}${approvedOnly ? ' --approved-only' : ''}` : null,
   findings, note: 'Availability only. A HEAD failure can be server policy; verify manually. No editorial records were changed.' }, null, 2));
 if (findings.some(result => typeof result.status !== 'number' || result.status >= 400)) process.exitCode = 1;
