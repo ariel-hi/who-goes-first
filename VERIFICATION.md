@@ -1,6 +1,14 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 20:33 UTC
+## Current checkpoint — 2026-09-23 22:02 UTC
+
+The then-current shared worktree passed an uninterrupted `npm run verify`: 75 Astro files with zero diagnostics, lint, 39 unit tests, content validation (228 approved game rules and 60 approved prompts), and a 246-page preview build/audit with 2,675 internal links. The live development picker also passed `npm run test:dev-release` in fresh browser contexts before and after the release matrix. That regression took unusually long but exited successfully. Evidence: ignored `artifacts/current-exact-verify.log` and `artifacts/current-dev-release-regression.log` in the main workspace.
+
+The full browser suite on the shared ports passed 166 of 207 tests, with the failures caused by missing Playwright trace files, refused shared-server connections, and a disappearing shared `dist/_headers`; it is not a product pass. I copied the site into the attached isolated worktree, rebuilt it, used ports 4333/4334 and separate test artifacts, and ran all 210 current browser cases across Chromium, Firefox and WebKit. Its first run passed 207/210: Vite rejected the junctioned React dependency with HTTP 403 on all three development hydration cases. After allowing the linked dependency path in the **isolated dev config only**, those cases passed 3/3. One uninterrupted full rerun then passed **210/210** in 10.2 minutes. Temporary isolated servers were stopped afterward. Evidence: ignored `artifacts/full-browser-{build,isolated-final}.log` and `artifacts/dev-hydration-rerun.log` in the isolated worktree.
+
+The isolated browser tests changed only hardcoded localhost ports and the worktree's Vite filesystem allowance needed for its `node_modules` junction. A comparison of 921 tracked source/public/research paths, ignoring line-ending differences, found five shared picker/style source files had changed again during the full run. The green suite therefore proves the isolated source snapshot, **not the later shared worktree or a public release**. The five differing files are `src/components/Picker.tsx`, `src/components/modes/TableReveals.tsx`, `src/lib/presentations.ts`, `src/lib/reveal-plan.ts`, and `src/styles/table.css`. Physical-device, screen-reader, visual-owner approval and hosted checks remain open. No deployment occurred.
+
+## Previous checkpoint — 2026-09-23 20:33 UTC
 
 An isolated production rehearsal used the real approved catalog with fixture-only domain, contact and hosting disclosures in ignored output. `npm run build` passed content validation, generated 246 pages, and passed SEO and production artifact audits for 2,675 internal links, canonicals, indexing, headers and private-content exclusion. The output has 228 game article directories and 228 corresponding sitemap entries, includes the house-rules route, renders `index, follow` on the homepage and the fixture Privacy/contact wording, and contains neither development nor research routes. The build report confirms 60 approved house prompts. No fixture output was deployed or copied to the public workspace.
 
