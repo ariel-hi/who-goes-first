@@ -1,0 +1,42 @@
+{
+  "id": "quacks-co-quedlinburg-dash-schmidt-de-summary",
+  "slug": "quacks-co-quedlinburg-dash-schmidt-de-summary",
+  "gameName": "Quacks & Co.: Quedlinburg Dash",
+  "aliases": [
+    "Mit Quacks & Co. nach Quedlinburg"
+  ],
+  "language": "en",
+  "editionLabel": "Schmidt Spiele German rules, article 40630, English summary",
+  "firstPlayerRule": "Whoever most recently saw a donkey goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Turns proceed clockwise. On a turn, draw a chip from your feed bag without looking inside."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/40630_Mit%20Quacks%20%26%20Co%20nach%20Quedlinburg_D.pdf",
+      "title": "Quacks & Co.: Quedlinburg Dash — Schmidt Spiele rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Auf die Tiere, fertig, los!, first paragraph; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever most recently saw a donkey goes first. Local source SHA-256: 71ddcfb30bb01fd5f412f046f12538802ee8bc1bb9c3c1f70a83b32632de4fde. This is the children's animal-racing game, not the potion-brewing base game.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

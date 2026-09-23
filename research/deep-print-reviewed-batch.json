@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "renature-deep-print-en-us",
+    "gameName": "Renature",
+    "sourceHint": "renature-3a56c4d1.pdf",
+    "editionLabel": "Deep Print / Capstone English US rulebook, copyright 2020",
+    "pages": [3, 4, 8],
+    "printedPages": [3, 4, 8],
+    "location": "Setup step 9; Playing the game; credits",
+    "firstPlayerRule": "Whoever most recently took a walk in nature starts. Turns proceed clockwise.",
+    "clarifications": ["The starter begins with 4 points. Continuing clockwise, the other players begin with 3, 2 and 1 points respectively, as applicable to the player count."],
+    "evidenceNotes": "Rendered setup, turn-order and credits pages were inspected. The year is the printed copyright, not the 2025 upload-directory date. The initial score adjustment is part of setup, not a criterion for choosing the starter."
+  },
+  {
+    "slug": "corrosion-deep-print-en",
+    "gameName": "Corrosion",
+    "sourceHint": "corrosion-c578e7ac.pdf",
+    "editionLabel": "Deep Print / Pegasus English rulebook, copyright 2021",
+    "pages": [4, 6, 15, 16],
+    "printedPages": [4, 6, 15, 16],
+    "location": "Setup step 10; Playing the game; Solo mode; credits",
+    "firstPlayerRule": "Choose a starting player. The rulebook suggests the first person to notice a rusty object as one possible way to decide.",
+    "clarifications": ["Give the chosen starter the wrench. Turns proceed clockwise; the wrench marks the active player.", "In solo mode, the human player takes the first turn, then alternates with the automated opponent."],
+    "interpretation": "Spotting a rusty object is an example in the official rules, not a mandatory requirement.",
+    "houseFallback": "Your group may choose the starter randomly. This is a house method for making the choice.",
+    "evidenceNotes": "Rendered pages 4, 6, 15 and 16 were inspected. The parenthetical example has not been presented as compulsory. The solo instruction takes precedence when playing alone. Directory only in this batch: the main instruction leaves the selection method to the group."
+  },
+  {
+    "slug": "savannah-park-deep-print-en-us",
+    "gameName": "Savannah Park",
+    "sourceHint": "savannah-park-0a5809f5.pdf",
+    "editionLabel": "Deep Print / Capstone English US rulebook, eight-page file",
+    "pages": [4, 7, 8],
+    "printedPages": [4, 7, 8],
+    "location": "Playing the game; Solo mode and children's variant; credits",
+    "firstPlayerRule": "Whoever most recently fed an animal chooses the first animal token. All players then move their matching token simultaneously.",
+    "clarifications": ["The player who chooses the token passes clockwise from round to round.", "When playing solo, you choose the animal token each round.", "The youngest-player instruction in the children's variant concerns end-of-game scoring, not who starts the game."],
+    "interpretation": "The starting-player criterion selects the first token chooser; it does not give that player a separate placement turn.",
+    "houseFallback": "If the feeding criterion does not suit your group, agree to choose the first token chooser randomly. This is a house rule.",
+    "evidenceNotes": "Rendered pages 4, 7 and 8 were inspected. The feeding criterion, simultaneous placement and clockwise rotation all appear on page 4. No publication year has been inferred from the upload URL. Excluded from the random mix because the answer describes a chooser role followed by simultaneous play."
+  },
+  {
+    "slug": "caldera-park-deep-print-en",
+    "gameName": "Caldera Park",
+    "sourceHint": "caldera-park-c274d78c.pdf",
+    "editionLabel": "Deep Print / Pegasus English rulebook, v1.0, copyright 2022",
+    "pages": [3, 4, 5, 6, 12],
+    "printedPages": [3, 4, 5, 6, 12],
+    "location": "Setup step 7; Weather forecast; Action turns; Solo challenge and credits",
+    "firstPlayerRule": "Whoever most recently saw a wild animal in real life takes the marmot and makes the first action-token and terrain choice.",
+    "clarifications": ["Each round begins with everyone choosing a weather token for their own park. The marmot holder's choice follows that weather step.", "After the marmot holder announces the requirements, everyone places an animal token and refills their display. Pass the marmot to the left for the next action turn.", "The solo challenge reveals action tokens from a shuffled stack instead of choosing an action token from the row."],
+    "interpretation": "The criterion assigns the first shared-action chooser, rather than a separate animal-placement turn. The sighting must be in real life.",
+    "houseFallback": "If the sighting criterion does not suit your group, agree to choose the first marmot holder randomly. This is a house rule.",
+    "evidenceNotes": "Rendered pages 3–6 and 12 were inspected. Setup assigns the marmot; page 5 establishes what its holder does. The initial weather step is retained so that the answer does not imply the action choice happens before it. v1.0 and copyright 2022 are printed in the credits. Excluded from the random mix because this is a shared-action chooser role."
+  }
+]

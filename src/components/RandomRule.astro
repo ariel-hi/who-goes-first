@@ -1,0 +1,46 @@
+---
+import type { PublicRule } from '../lib/content/schema';
+import { randomRuleEligible } from '../lib/content/random-rules';
+interface Props { games: PublicRule[]; prefix?: string; approvedIds?: string[]; featured?: boolean }
+const { games, prefix = '/games/', approvedIds = [], featured = false } = Astro.props;
+const choices = games.filter(randomRuleEligible).map(game => ({ id: game.id, name: game.gameName, edition: game.editionLabel, rule: game.firstPlayerRule, href: `${approvedIds.includes(game.id) ? '/games/' : prefix}${game.slug}/` }));
+---
+<section id="random-rule" class:list={['random-rule', { 'random-rule-featured': featured }]} data-random-rule data-choices={JSON.stringify(choices)}>
+  <div class="random-rule-heading"><h2>{featured ? 'Try a random rule' : 'Pick a random rule'}</h2><button class="primary" data-draw-rule disabled>Pick a rule</button></div>
+  {choices.length ? <p class="small muted">{choices.length} rules you can use to choose a starting player.</p> : <p class="small muted">No reviewed starting-player rules are available yet.</p>}
+  <div data-rule-result hidden>
+    <div role="status" aria-live="polite" aria-atomic="true"><p class="random-rule-game" data-rule-game></p><p class="random-rule-answer" data-rule-answer></p></div>
+    <p class="small muted" data-rule-edition></p>
+    <div class="random-rule-actions"><a href={prefix === '/dev/rules/' ? '/dev/games/' : '/games/'} data-rule-link>Source & details</a><button class="text-button" data-skip-rule>Skip this rule</button><a href="/">Pick a player</a></div>
+    <p class="small muted">These criteria give people different chances. If there’s a tie or nobody qualifies, pick another rule or use the player picker.</p>
+  </div>
+  <p role="alert" class="error" data-rule-error hidden></p>
+  <noscript><p class="small muted">Enable JavaScript for a random rule, or browse the game list.</p></noscript>
+</section>
+<script>
+  import { randomCollectionIndex } from '../lib/selection';
+  document.querySelectorAll<HTMLElement>('[data-random-rule]').forEach(root => {
+    const choices: { id: string; name: string; edition: string; rule: string; href: string }[] = JSON.parse(root.dataset.choices!);
+    let current: string | undefined;
+    function draw(skip: boolean) {
+      const error = root.querySelector<HTMLElement>('[data-rule-error]')!;
+      try {
+        const eligible = choices.filter(choice => !skip || choices.length === 1 || choice.id !== current);
+        const choice = eligible[randomCollectionIndex(eligible.length)]!;
+        root.querySelector<HTMLElement>('[data-rule-game]')!.textContent = choice.name;
+        root.querySelector<HTMLElement>('[data-rule-answer]')!.textContent = choice.rule;
+        root.querySelector<HTMLElement>('[data-rule-edition]')!.textContent = choice.edition;
+        root.querySelector<HTMLAnchorElement>('[data-rule-link]')!.href = choice.href;
+        root.querySelector<HTMLElement>('[data-rule-result]')!.hidden = false;
+        error.hidden = true; current = choice.id;
+      } catch {
+        error.textContent = 'The random draw is unavailable. Choose a rule from the list below.';
+        error.hidden = false;
+      }
+    }
+    const button = root.querySelector<HTMLButtonElement>('[data-draw-rule]')!;
+    button.addEventListener('click', () => draw(false));
+    button.disabled = choices.length === 0;
+    root.querySelector('[data-skip-rule]')!.addEventListener('click', () => draw(true));
+  });
+</script>

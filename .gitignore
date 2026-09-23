@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+playwright-report/
+test-results/
+research/source-files/
+artifacts/

@@ -1,0 +1,51 @@
+{
+  "id": "burgle-bros-fowers-en-markiii",
+  "slug": "burgle-bros-fowers-en-markiii",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1ba7a898fcbd47f753e2acc728b0f93a7d69d55d1fa975e013b5ccee5a7b8992",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Burgle Bros.",
+  "aliases": [
+    "Burgle Bros"
+  ],
+  "editionLabel": "English MarkIII-v2.05 PDF, with second-edition rules credits",
+  "firstPlayerRule": "Whoever most recently took money out of a bank takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Turns continue clockwise. Each turn includes the player's actions, any required event, and movement of the guard on that player's floor.",
+    "The team chooses its entrance together before play. Each character enters at the start of its own first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.skellig-rules.de/rules/0072-0003/BBRuleBook%5BMarkIII-v2.05%5D.pdf",
+      "title": "Burgle Bros. — Fowers Games (English manual hosted by Skellig Games) rules",
+      "publisher": "Fowers Games (English manual hosted by Skellig Games)",
+      "printedPages": [
+        "1",
+        "3",
+        "4",
+        "11",
+        "12",
+        "22"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        7,
+        12
+      ],
+      "location": "Bank Job setup; Break in step 5; Gameplay; More Scenarios; credits. PDF pages are spreads",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The English PDF has no extractable text. All 13 PDF pages were rendered and visually read. Starting criterion is printed page 4 on PDF page 3; credits on printed page 22 thank the second-edition rules editor. Do not infer the criterion from the separately retrieved German booklet, which omits it in its setup. Cached source: research\\source-files\\burgle-english\\burgle-bros-1a14e113.pdf; SHA-256 881e1a634034551b7ec09718e87810058c79a9827dad4dd05b24eec6ecfea431. Discovery: https://www.skellig-games.de/burgle-bros.html. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; Selects an ordinary player turn using personal history; the cooperative guard phase does not change who starts.",
+  "uncertainty": [
+    "The bank instruction does not define particular withdrawal methods or a starting tie-break.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

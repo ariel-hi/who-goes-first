@@ -1,0 +1,55 @@
+{
+  "name": "who-goes-first",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "npm run content:validate && astro build && tsx scripts/audit-build.ts",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:browser": "playwright test",
+    "test:serve": "tsx scripts/serve-static.ts",
+    "screenshots": "tsx scripts/capture-screenshots.ts",
+    "screenshots:dev": "tsx scripts/capture-dev-screenshots.ts",
+    "screenshots:methods": "tsx scripts/capture-methods.ts",
+    "test:release": "tsx scripts/test-release.ts",
+    "test:dev-release": "tsx scripts/test-dev-release.ts",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "content:review": "tsx scripts/review-content.ts",
+    "content:coverage": "tsx scripts/check-coverage.ts",
+    "links:check": "tsx scripts/check-links.ts",
+    "verify": "npm run check && npm run lint && npm test && npm run build",
+    "audit:lighthouse": "tsx scripts/audit-lighthouse.ts"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.6",
+    "astro": "^7.3.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.11.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "lighthouse": "^13.5.0",
+    "node": "^22.23.2",
+    "parse5": "^8.0.1",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^5.0.1"
+  }
+}

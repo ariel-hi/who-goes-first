@@ -1,0 +1,121 @@
+[
+  {
+    "slug": "alchemists-cge-en",
+    "gameName": "Alchemists",
+    "sourceHint": "alchemists-49da6848",
+    "editionLabel": "English CGE base-game rules, 20-page publisher booklet",
+    "pages": [7, 8],
+    "printedPages": [7, 8],
+    "location": "Starting Player Token; Choosing Play Order and Declaring Actions",
+    "firstPlayerRule": "Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first.",
+    "clarifications": [
+      "The other players choose order spaces clockwise. Those spaces determine play order for the rest of the round; the token holder is not necessarily first to perform an action.",
+      "Players declare actions from the lowest order space upward, then resolve actions from the highest space downward."
+    ]
+  },
+  {
+    "slug": "bunny-bunny-moose-moose-cge-en",
+    "gameName": "Bunny Bunny Moose Moose",
+    "sourceHint": "bunny-bunny-moose-moose-14c02485",
+    "editionLabel": "English CGE rules, 12-page publisher booklet",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "Setup; The Round and The Narrator",
+    "firstPlayerRule": "The person who looks most like a moose is the first narrator. The rules also allow the group to choose the narrator however it likes.",
+    "officialTieBreak": "Among tied players, choose whoever looks most like a rabbit. If a tie remains, choose randomly.",
+    "houseFallback": null,
+    "clarifications": ["The narrator reads and reveals cards to lead the round; the other players react together. This selects a role, rather than the first ordinary turn."]
+  },
+  {
+    "slug": "dungeon-lords-cge-en",
+    "gameName": "Dungeon Lords",
+    "sourceHint": "dungeon-lords-d6f0e965",
+    "editionLabel": "English CGE base-game rules, 24-page publisher booklet",
+    "pages": [7, 12],
+    "printedPages": [7, 12],
+    "location": "First Game setup, Starting Player Token; Selecting and Revealing Orders",
+    "firstPlayerRule": "Give the starting-player token to the nicest player, or choose its holder randomly.",
+    "officialTieBreak": "Random selection is an explicit alternative in the rulebook; it is not restricted to ties.",
+    "houseFallback": null,
+    "clarifications": ["Players select orders simultaneously. After the first orders are revealed, the token holder places a minion first, followed by the others clockwise."]
+  },
+  {
+    "slug": "dungeon-petz-cge-en",
+    "gameName": "Dungeon Petz",
+    "sourceHint": "dungeon-petz-4e7797b9",
+    "editionLabel": "English CGE base-game publisher rules",
+    "pages": [2, 8],
+    "printedPages": [2, 8],
+    "location": "Starting Player Token; Going Shopping, Biggest Group Goes First",
+    "firstPlayerRule": "Whoever fed a pet most recently receives the starting-player token. The rules also permit choosing its holder randomly or by agreement.",
+    "officialTieBreak": "For shopping groups of equal size, resolve them clockwise beginning with the starting-player token holder. Choosing that token holder randomly is also an official setup alternative.",
+    "houseFallback": null,
+    "clarifications": ["The token does not guarantee the first shopping action. After players reveal their groups, the largest group goes first; its size counts both imps and gold tokens."]
+  },
+  {
+    "slug": "goblins-inc-cge-en",
+    "gameName": "Goblins, Inc.",
+    "sourceHint": "goblins-inc-8f0ace3c",
+    "editionLabel": "English CGE rules, October 2012 copyright",
+    "pages": [5, 11],
+    "printedPages": [5, 11],
+    "location": "Build! Starting Player and Swapping Jobs; three-player Team Rules",
+    "firstPlayerRule": "In the standard four-player game, whoever opened the box is the first round's starting player. That player and the opponent opposite them plan first.",
+    "officialTieBreak": "In the three-player variant, the lower-scoring member of the two-person team starts alongside the solo player; roll a die if those teammates are tied. The die also breaks lowest-score ties when selecting a starter for later rounds.",
+    "clarifications": [
+      "During the four-player build, two players plan while their partners wait to build, then the roles switch. There is not a single player taking the whole opening turn alone.",
+      "The box-opening instruction applies to the first round. Later rounds use the lowest score."
+    ],
+    "uncertainty": ["No tie-break is stated specifically for the opening box-opener criterion."]
+  },
+  {
+    "slug": "last-will-cge-en",
+    "gameName": "Last Will",
+    "sourceHint": "last-will-b1d10964",
+    "editionLabel": "English CGE base-game publisher rules",
+    "pages": [3, 5],
+    "printedPages": [3, 5],
+    "location": "Player setup; Planning and Planning in a 2-player game",
+    "firstPlayerRule": "Whoever most recently paid for something receives the starting-player marker and begins the planning phase.",
+    "clarifications": [
+      "With three or more players, the marker holder chooses a plan first, followed clockwise by the others. The chosen plans determine order for the remaining phases.",
+      "With two players, the marker holder first blocks a plan with a neutral marker. The opponent blocks another and chooses their own plan; the marker holder then chooses from the remaining plans."
+    ]
+  },
+  {
+    "slug": "lost-ruins-of-arnak-cge-en",
+    "gameName": "Lost Ruins of Arnak",
+    "sourceHint": "lost-ruins-of-arnak-79991642",
+    "editionLabel": "English CGE base-game rules, 24-page publisher booklet",
+    "pages": [6, 20],
+    "printedPages": [6, 20],
+    "location": "Player Setup, Play Order; Solo Variant, Gameplay",
+    "firstPlayerRule": "Whoever most recently traveled somewhere they had never visited before takes the starting-player marker and starts.",
+    "clarifications": ["Multiplayer turns proceed clockwise. In the solo variant, the automated rival starts each of the five rounds."]
+  },
+  {
+    "slug": "seti-cge-en",
+    "gameName": "SETI: Search for Extraterrestrial Intelligence",
+    "aliases": ["SETI"],
+    "sourceHint": "seti-search-for-extraterrestrial-intelligence-432f75e7",
+    "editionLabel": "English CGE base-game publisher rules",
+    "pages": [6],
+    "printedPages": [6],
+    "location": "Player Setup, Starting Player Marker",
+    "firstPlayerRule": "Whoever saw a UFO most recently takes the starting-player marker and starts.",
+    "clarifications": ["Multiplayer turns proceed clockwise. Starting scores are one, two, three and four points in turn order."]
+  },
+  {
+    "slug": "tzolkin-cge-en",
+    "gameName": "Tzolk'in: The Mayan Calendar",
+    "aliases": ["Tzolkin"],
+    "sourceHint": "tzolk-in-the-mayan-calendar-28da5663",
+    "editionLabel": "English CGE base-game rules, publisher file TZ_rules_EN_13.pdf",
+    "pages": [4],
+    "printedPages": [4],
+    "location": "Setting Up the Game, Starting Player",
+    "firstPlayerRule": "The player who most recently sacrificed something receives the starting-player marker.",
+    "officialTieBreak": "If tied, give the marker to the player who volunteers for the next sacrifice.",
+    "uncertainty": ["This thematic setup instruction does not define what counts as a sacrifice."]
+  }
+]

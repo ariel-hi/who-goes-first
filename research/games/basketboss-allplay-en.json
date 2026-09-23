@@ -1,0 +1,42 @@
+{
+  "id": "basketboss-allplay-en",
+  "slug": "basketboss-allplay-en",
+  "gameName": "Basketboss",
+  "aliases": [
+    "Basket Boss"
+  ],
+  "language": "en",
+  "editionLabel": "English rules linked by Allplay, four-page publisher PDF",
+  "firstPlayerRule": "The tallest person takes the Referee Advisor card and makes the first contract offer or passes.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The rules call the people playing managers, to distinguish them from the basketball player cards.",
+    "Taking the Referee during setup also requires returning $2m to the supply."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0143/6178/8473/files/BasketBoss_Rulebook_220314_compressed.pdf?v=1647288826",
+      "title": "Basketboss — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 6; Offer Contracts opening paragraph; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/basketboss. Finding: The tallest person takes the Referee Advisor card and makes the first contract offer or passes. Local source SHA-256: a319034da32072d8c51151af429fcf306bef2bc08c411964a00d3b9bf11acfc2. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

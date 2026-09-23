@@ -1,0 +1,38 @@
+{
+  "id": "chomp-allplay-en",
+  "slug": "chomp-allplay-en",
+  "gameName": "Chomp",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Allplay dinosaur game rules, four-page publisher PDF",
+  "firstPlayerRule": "The first player to name their own favorite dinosaur goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This entry covers Allplay's dinosaur game. Gamewright's similarly named Chomp! is a different game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-chomp-rulebook-link.pdf",
+      "title": "Chomp — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 5; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/chomp. Finding: The first player to name their own favorite dinosaur goes first. Local source SHA-256: 753339d95fffa3d62732b36cf464ad1b83f9e7bee89d41c54f905fa538d05bd3. Identity was checked against the Allplay product page linked to BGG 377449. This rule belongs to that dinosaur game, not Gamewright's simultaneous card game.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

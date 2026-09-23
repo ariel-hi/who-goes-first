@@ -1,0 +1,40 @@
+{
+  "id": "rebis-thundergryph-en-2022",
+  "slug": "rebis-thundergryph-en-2022",
+  "gameName": "Rebis",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "ThunderGryph English Matchbox base rules, ©2022",
+  "firstPlayerRule": "Whoever most recently drank something with an especially unusual taste goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Multiplayer turns proceed clockwise.",
+    "Solo play uses a separate setup and a five-step turn repeated by the human player; it does not compare drinking histories with the Automa."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2023/01/rebis-rulebook_en_NEW.pdf",
+      "title": "Rebis — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 5; Game Flow; Solo Setup and Solo Gameplay; credits; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/rebis/. Finding: Whoever most recently drank something with an especially unusual taste goes first. Local source SHA-256: dd4e3e6d26974cc9cb012d508c1b46694a87d480ec25adc6f6a4e1a145229b0d. Both pages of the publisher-linked English base foldout were inspected, including ©2022 credits. The source says a particularly strange taste; it does not require alcohol. Rubedo allocation and final-score tie-breaks are not starting tie-breaks.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

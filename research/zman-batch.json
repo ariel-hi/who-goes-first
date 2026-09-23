@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "carcassonne-amazonas-zman-en",
+    "gameName": "Carcassonne: Amazonas",
+    "aliases": ["Carcassonne Amazonas"],
+    "sourceHint": "carcassonne-amazonas-",
+    "editionLabel": "Z-Man English rulebook, 2016 copyright",
+    "pages": [2, 3],
+    "printedPages": [2, 3],
+    "location": "Setup: The starting player; Gameplay",
+    "firstPlayerRule": "Start with whoever most recently took a boat ride. Play proceeds clockwise.",
+    "officialTieBreak": "The rulebook also permits the youngest player to start instead.",
+    "houseFallback": null,
+    "uncertainty": ["The youngest-player option is an alternative, not explicitly a tie-break. No equal-recency tie is separately resolved."],
+    "evidenceNotes": "The publisher product page links this eight-page English manual. The 2016 edition date comes from its copyright page, not the 2024 upload directory."
+  },
+  {
+    "slug": "carcassonne-hunters-gatherers-zman-en",
+    "gameName": "Carcassonne: Hunters and Gatherers",
+    "aliases": ["Carcassonne: Hunters & Gatherers"],
+    "sourceHint": "carcassonne-hunters-and-gatherers-",
+    "editionLabel": "Z-Man English 95-tile edition, 2020 copyright",
+    "pages": [2, 3],
+    "printedPages": [2, 3],
+    "location": "Contents and preparation; Playing the Game",
+    "firstPlayerRule": "The youngest player takes the first turn. Continue clockwise.",
+    "clarifications": ["This is the edition with 95 land tiles, including 16 menhir tiles."],
+    "evidenceNotes": "The contents page identifies the updated tile set; the credits state 2002 and 2020 copyrights. This record does not claim to check the original 2002 rulebook."
+  },
+  {
+    "slug": "jabbas-palace-zman-en",
+    "gameName": "Star Wars: Jabba's Palace – A Love Letter Game",
+    "aliases": ["Jabba's Palace", "Star Wars Jabba's Palace", "Jabba’s Palace: A Love Letter Game"],
+    "sourceHint": "star-wars-jabba-s-palace-a-love-letter-game-",
+    "editionLabel": "Z-Man English 19-character-card edition",
+    "pages": [3, 4, 7],
+    "printedPages": [3, 4, 7],
+    "location": "Setup step 6; Taking a Turn; Starting the Next Round",
+    "firstPlayerRule": "Whoever most recently rescued a friend starts the first round. Turns proceed clockwise.",
+    "clarifications": ["For the next round, the previous round’s winner starts. If several players tied for that win, choose randomly among those winners."],
+    "uncertainty": ["The random choice among tied winners belongs to the next-round instruction. The rulebook does not apply it to a tie in the initial rescued-a-friend criterion."],
+    "evidenceNotes": "The current publisher product page links this sixteen-page English manual. No publication year is inferred from its upload path."
+  },
+  {
+    "slug": "pandemic-rapid-response-zman-en",
+    "gameName": "Pandemic: Rapid Response",
+    "aliases": ["Pandemic Rapid Response"],
+    "sourceHint": "pandemic-rapid-response-",
+    "editionLabel": "Z-Man English rulebook, 2019 copyright",
+    "pages": [3, 4],
+    "printedPages": [3, 4],
+    "location": "Setup step 9; Real-Time Gameplay and Player Turns",
+    "firstPlayerRule": "The player who most recently traveled by plane starts. Continue clockwise.",
+    "clarifications": ["Flip the sand timer to begin. Although the game runs in real time, players take turns one at a time."],
+    "evidenceNotes": "The source is the eight-page English manual linked by the current publisher. The credits state 2019."
+  },
+  {
+    "slug": "wrath-of-the-lich-king-zman-en",
+    "gameName": "World of Warcraft: Wrath of the Lich King",
+    "aliases": ["World of Warcraft: Wrath of the Lich King – A Pandemic System Board Game", "WoW: Wrath of the Lich King"],
+    "sourceHint": "world-of-warcraft-wrath-of-the-lich-king-",
+    "editionLabel": "Z-Man English Pandemic System rulebook, 2021 copyright",
+    "pages": [3, 5, 10],
+    "printedPages": [3, 5, 10],
+    "location": "Setup step 11; Playing the Game; Solo Play setup and turn order",
+    "firstPlayerRule": "Start with the player who has traveled furthest north. Turns continue clockwise.",
+    "clarifications": ["For solo play, arrange three heroes in a row and start with the leftmost hero. Take their turns from left to right, using the solo marker to track the active hero; all three share one hand of cards."],
+    "evidenceNotes": "The current publisher product links the twelve-page English Pandemic System manual. Solo play has a hero-order instruction instead of choosing between people. The credits carry Blizzard’s 2021 copyright."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "adventure-games-gloom-city-kosmos-en-2022",
+  "slug": "adventure-games-gloom-city-kosmos-en-2022",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "093a17ec571c8017583b965a590cefca64fc8a01dd3ee32edee3f7d2294e3c8d",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Adventure Games: The Gloom City File",
+  "aliases": [
+    "The Gloom City File",
+    "Gloom City File"
+  ],
+  "editionLabel": "Thames & Kosmos English rules, ©2022, code 695135-02-210222",
+  "firstPlayerRule": "Whoever most recently read or watched a thriller goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Individual turns proceed clockwise, with movement, revealing a location card, and one action in that order.",
+    "Multiplayer participants each control at least one character. For solo play, choose two or more characters.",
+    "Specific instructions on cards or in the adventure book take precedence over the general rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/695135_GloomCity_manual_040322.pdf",
+      "title": "Adventure Games: The Gloom City File — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "cover",
+        "2",
+        "3",
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3,
+        4,
+        16
+      ],
+      "location": "Game Setup; Important Information; Game Overview; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2, 3, 4, 16. Printed page 4 chooses the most recent reader or watcher of a thriller and then describes clockwise character turns. Page 2 distinguishes multiplayer and solo character allocation, and page 3 gives specific story/card instructions precedence. Credits identify ©2022 Thames & Kosmos and code 695135-02-210222. The source is the Google Drive file reached by the publisher’s indexed manual URL; the complete sixteen-page PDF was retrieved with the explicit larger-file limit. Duplicate neighboring footer numbers in extracted text were checked against the actual rendered pages, which show 2, 3 and 4 respectively. Publisher discovery URL: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Local source SHA-256: 504bbb09fd6c2006c972dcdd2dd256e01377d6e4104b373dc078ccc87df787f8. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. A source-checked opening turn based on reading/viewing history, requiring no game-specific components.",
+  "uncertainty": [
+    "The initial criterion has no stated tie-break.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "dale-of-merchants-snowdale-en-6",
+  "slug": "dale-of-merchants-snowdale-en-6",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dale of Merchants",
+  "aliases": [
+    "Dale of Merchants: The Guild of Extraordinary Traders"
+  ],
+  "editionLabel": "Snowdale Design English original game, ©2021, rules file 6.0",
+  "firstPlayerRule": "Whoever woke earliest today starts. For consecutive games, one of the previous game's losers starts the next game.",
+  "officialTieBreak": null,
+  "houseFallback": "If the starting criterion is tied or unclear, agree to choose randomly among the eligible players. This is this site's suggested house rule.",
+  "clarifications": [
+    "Turns proceed clockwise, with an action phase followed by cleanup.",
+    "The consecutive-game instruction does not specify how to choose between multiple losing players.",
+    "This answer covers the original game's regular rules. Tournament rules and the later anniversary edition are separate."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://snowdaledesign.fi/wp-content/uploads/2022/03/Dale-of-Merchants-Rules-EN-6.0.pdf",
+      "title": "Dale of Merchants — Snowdale Design rules",
+      "publisher": "Snowdale Design",
+      "printedPages": [
+        "cover",
+        "3",
+        "6–9",
+        "14–15"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "location": "Game setup, upper right of printed page 7; Turn overview on page 8; team rules; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved (the Dawn file is explicitly a shortened campaign excerpt); relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2, 4, 5, 8. The publisher's original-game page links this complete nine-PDF-page booklet. Setup selects today's earliest waking player and changes consecutive games to a losing player. The four-player team section changes seating, decks and shared stalls without giving a different opening selector. PDF spreads and printed page numbers were visually checked; copyright is 2021, despite the 2022 download directory. The original game's identity 176165 appears in the credits. Publisher discovery URL: https://snowdaledesign.fi/games/dale-of-merchants/. Local source SHA-256: 359a7263b0aab3e7bad9177bd70443d3a2ef2a78e6d7a2db7b3a22a04def2806.",
+  "uncertainty": [
+    "No initial tie-break or selection between multiple previous losers is specified.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "push-a-monster-queen-games-en",
+  "slug": "push-a-monster-queen-games-en",
+  "gameName": "Push a Monster",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Queen Games English rules, two-page rule sheet",
+  "firstPlayerRule": "Whoever most recently saw a monster goes first.",
+  "officialTieBreak": "If the group cannot agree who starts, the youngest player begins.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starting player rolls the die. Turns continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/push-a-monster_en.pdf",
+      "title": "Push a Monster — Queen Games rules",
+      "publisher": "Queen Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Playing the Game, opening paragraph; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever most recently saw a monster goes first. Local source SHA-256: a854c1c68b760031af9b421ed0a8550834b93790307ed1c01edf6b737a11c055. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

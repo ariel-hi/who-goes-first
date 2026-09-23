@@ -1,0 +1,42 @@
+{
+  "id": "chabyrinthe-cocktail-fr",
+  "slug": "chabyrinthe-cocktail-fr",
+  "gameName": "Chabyrinthe",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Cocktail Games French eight-page rules; English summary",
+  "firstPlayerRule": "Whoever most recently spotted a black cat starts. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": "This is an English summary of the cited French rulebook's standard starting instruction.",
+  "sources": [
+    {
+      "url": "https://www.cocktailgames.com/wp-content/uploads/2016/03/Chabyrinthe_regles_BD.pdf",
+      "title": "Chabyrinthe — Cocktail Games rules",
+      "publisher": "Cocktail Games",
+      "printedPages": [
+        "1",
+        "3",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        8
+      ],
+      "location": "Title and player range; Le jeu; cooperative and team variants; PDF pages 1, 3, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.cocktailgames.com/jeu/chabyrinthe/. Finding: Whoever most recently spotted a black cat starts. Turns proceed clockwise. Local source SHA-256: d98aaa287c1d33b2798e19e49feeb22c3eabe991b22c9a3d890905d95a420c24. Rendered pages 1, 3 and 8 were inspected. The wording specifies a black cat, not any cat. The final page gives cooperative and four-player team adjustments without a replacement starter criterion. No publication year was inferred from the upload URL.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

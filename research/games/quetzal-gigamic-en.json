@@ -1,0 +1,45 @@
+{
+  "id": "quetzal-gigamic-en",
+  "slug": "quetzal-gigamic-en",
+  "gameName": "Quetzal",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Gigamic rules, June 2020 file",
+  "firstPlayerRule": "Whoever explored an island most recently receives the first-player marker and places meeples first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Everyone rolls their own meeples before the placement phase. Placement then proceeds clockwise from the first player.",
+    "With two players, place the Automaton's meeples before the human players take their placement turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.en.gigamic-adds.com/pdf/games/quetzal/rules-quetzal-en.pdf",
+      "title": "Quetzal — Gigamic rules",
+      "publisher": "Gigamic",
+      "printedPages": [
+        "4",
+        "6",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        11
+      ],
+      "location": "Setup, step 6; Playing the Game; 2-Player Games; PDF pages 4, 6, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.en.gigamic-adds.com/game/quetzal/rules. Finding: Whoever explored an island most recently receives the first-player marker and places meeples first. Local source SHA-256: e6c483c0ae8f8d8bc02bfcf9bf51781d9beaad692f456c4615e868811c9ec7db. The PDF has no extractable text; setup and the two-player adjustments were read visually. The publisher's interactive setup independently shows the same island-exploration criterion.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

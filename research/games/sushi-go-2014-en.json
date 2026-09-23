@@ -1,0 +1,42 @@
+{
+  "id": "sushi-go-2014-en",
+  "gameName": "Sushi Go!",
+  "aliases": [
+    "Sushi Go",
+    "SushiGo"
+  ],
+  "editionLabel": "English base game · copyright 2014",
+  "firstPlayerRule": "Everyone chooses a card secretly at the same time. Once everyone has chosen, reveal the cards together; no single player starts.",
+  "officialTieBreak": "Not applicable: selection and reveal are simultaneous.",
+  "houseFallback": null,
+  "clarifications": [
+    "After revealing, pass the remaining hand to the player on your left.",
+    "This entry covers Sushi Go!, not Sushi Go Party! or Sushi Roll."
+  ],
+  "internalEvidence": "Publisher product page links the seven-page rules PDF. Visually checked Playing a Round on PDF page 2: simultaneous selection and reveal, then hands pass left. Credits show 2014.",
+  "uncertainty": [
+    "The PDF pages are unnumbered; page references here are one-based PDF positions."
+  ],
+  "slug": "sushi-go-2014-en",
+  "language": "en",
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/SushiGoTM-RULES.pdf",
+      "title": "Sushi Go! — English rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        6
+      ],
+      "location": "Second PDF page, Playing a Round; sixth PDF page, copyright",
+      "checkedAt": "2026-09-22"
+    }
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

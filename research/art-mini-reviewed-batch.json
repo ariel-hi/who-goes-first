@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "art-decko-rio-grande-en-2020",
+    "gameName": "Art Decko",
+    "newRecord": true,
+    "publisher": "Rio Grande Games",
+    "editionLabel": "Rio Grande Games English rules, ©2020, twenty-page Exhibition Guidelines",
+    "firstPlayerRule": "The person the group considers the best artist starts. If that cannot be decided, the rules let the players choose another selection method.",
+    "officialTieBreak": null,
+    "houseFallback": null,
+    "clarifications": [
+      "Play proceeds clockwise. Use this order when distributing the numbered Starting Gold cards during setup.",
+      "The rulebook supplies no test or scoring system for artistic ability. Its permission to choose another method is official."
+    ],
+    "pdfPages": [1,6,8,20],
+    "printedPages": ["6","8","20"],
+    "location": "Setup step 9; Sequence of Play; final credits",
+    "evidence": "Read setup and turn context; visually inspected title, setup, turn sequence and credits. Printed copyright is 2020, not the PDF URL's 2021 directory. Discovery used a retailer's link to the publisher-hosted PDF; the guessed publisher product page returned 404 and is not cited as provenance.",
+    "uncertainty": ["Artistic ability has no prescribed measurement; the official alternative handles an unresolved choice."],
+    "portable": true,
+    "poolReason": "A subjective opening-player criterion with an official alternative; selecting the person requires no components."
+  },
+  {
+    "slug": "art-robbery-helvetiq-en",
+    "gameName": "Art Robbery",
+    "newRecord": true,
+    "publisher": "Helvetiq",
+    "editionLabel": "Helvetiq English rules, undated two-page sheet with Coiledspring Games UK importer",
+    "firstPlayerRule": "Whoever visited a museum most recently starts the first raid.",
+    "officialTieBreak": null,
+    "houseFallback": "If the visit is tied or nobody has visited a museum, agree to choose randomly. This is this site's suggested house rule.",
+    "clarifications": [
+      "Turns continue clockwise.",
+      "Later raids start with the player holding the Guard Dog figure; the museum criterion selects only the opening player.",
+      "The Alibi comparison breaks a final-score tie. It does not decide who starts."
+    ],
+    "pdfPages": [1,2],
+    "printedPages": [],
+    "location": "How to Play on the first sheet; End of a Raid and End of the Game on the reverse",
+    "evidence": "Both publisher PDF sheets were read and visually inspected. The opening visit criterion and later Guard Dog priority are separate. No publication year is printed in the inspected sheet.",
+    "uncertainty": ["No initial tie-break is stated."],
+    "portable": true,
+    "poolReason": "The opening criterion is portable; later component-based round priority stays in the clarification."
+  },
+  {
+    "slug": "for-sale-spiel-das-de-summary",
+    "gameName": "For Sale",
+    "newRecord": false,
+    "editionLabel": "SPIEL DAS! / IELLO German rules, ©2023, v1 file; English summary",
+    "clarifications": [
+      "The chosen player takes the first bidding-or-passing turn in the property-buying phase. Turns proceed clockwise.",
+      "In later buying rounds, the winner of the preceding auction starts. House selection and reveal in the selling phase are simultaneous."
+    ],
+    "pdfPages": [3,4,6,8,12],
+    "printedPages": ["3","4","6","8","12"],
+    "location": "Spielvorbereitung step 4; Spielablauf; buying-round end; selling phase; final credits",
+    "evidence": "Rechecked the cached German publisher/distributor PDF and all five listed renders. The 2023 colophon, random initial selection, later auction-winner priority and simultaneous selling remain distinct. The English IELLO PDF's text corroborates the initial rule but is not substituted for this edition.",
+    "portable": false,
+    "poolReason": "A random-only instruction provides no different selection criterion for the random-rule mix."
+  },
+  {
+    "slug": "schotten-totten-pegasus-de-summary",
+    "gameName": "Schotten Totten",
+    "newRecord": false,
+    "editionLabel": "Pegasus Spiele German rules, ©2024, version 1.0; English summary",
+    "clarifications": [
+      "Players then alternate turns, starting by playing a Clan card.",
+      "In the Clanfehde multi-round variant, the players alternate who starts each round.",
+      "The rulebook does not define how close to Scotland a visit must be."
+    ],
+    "pdfPages": [5,6,10,16],
+    "printedPages": ["5","6","10","16"],
+    "location": "Spielvorbereitung step 4; Spielablauf; Clanfehde variant; final credits",
+    "evidence": "Rechecked all four listed rendered pages. The German instruction explicitly includes Scotland or somewhere nearby. Printed credits identify ©2024 Pegasus/IELLO and v1.0. Clanfehde's alternating later-round starter is not a previous-winner criterion.",
+    "portable": true,
+    "poolReason": "An opening-player travel-recency comparison with no required components."
+  },
+  {
+    "slug": "time-bomb-evolution-iello-de-summary",
+    "gameName": "Time Bomb Evolution",
+    "newRecord": false,
+    "editionLabel": "IELLO / Hutter Trade German base rules, ©2016–2020; English summary",
+    "clarifications": [
+      "That player receives the wire cutters and reveals a wire card belonging to another player. A player cannot cut their own wire.",
+      "The owner of the revealed card takes the next turn. At a new round, the last recipient of the cutters starts.",
+      "This answer covers Time Bomb Evolution's base rules, not the separate original Time Bomb game."
+    ],
+    "pdfPages": [9,10,11,12],
+    "printedPages": ["9","10","11"],
+    "location": "Spielaufbau step 6; Spielablauf; Rundenende; unnumbered final credits",
+    "evidence": "Rechecked all four listed rendered pages, including the unnumbered final page. London recency chooses the opening active player; cutter transfer determines subsequent order. English IELLO text corroborates this without replacing the identified German source.",
+    "portable": true,
+    "poolReason": "A personal-history criterion selects the first active player in a competitive hidden-team game."
+  }
+]

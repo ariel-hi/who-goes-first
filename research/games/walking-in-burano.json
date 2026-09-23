@@ -1,0 +1,38 @@
+{
+  "id": "walking-in-burano",
+  "slug": "walking-in-burano",
+  "gameName": "Walking in Burano",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English AEG rules, nine-page spread PDF",
+  "firstPlayerRule": "The player who most recently traveled abroad starts. The rules also permit choosing a random starter.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2019/04/Walking-in-Burano_Rulebook_AEG_low.pdf",
+      "title": "Walking in Burano — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Player Setup, step D; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/walking-in-burano/. Finding: The player who most recently traveled abroad starts. The rules also permit choosing a random starter. Local source SHA-256: 1c79c28b4c18048c8b5649d94ecc30c883ce89efca555c8891be327fb599ab29. AEG's product page redirected in a loop during this check. The publisher-hosted PDF was found through search, downloaded successfully and read directly. The instruction is on printed page 5 within PDF page 3.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

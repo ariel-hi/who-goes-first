@@ -1,0 +1,110 @@
+[
+  {
+    "slug":"hardback-fowers-en",
+    "gameName":"Hardback",
+    "newRecord":true,
+    "publisher":"Fowers Games (English manual hosted by Skellig Games)",
+    "editionLabel":"English Fowers Games rules, 20-page Skellig-hosted PDF",
+    "firstPlayerRule":"Whoever last used a pen takes the first turn.",
+    "officialTieBreak":null,
+    "houseFallback":"If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+    "clarifications":[
+      "Give that player the First Player Token and continue clockwise.",
+      "In the Cooperative Anthology variant, each human player takes a normal turn, followed by Penny Dreadful's turn."
+    ],
+    "pdfPages":[2,3,17,18,19],
+    "printedPages":["1","2","16","17","18"],
+    "location":"Setup step 4; Cooperative Anthology; credits",
+    "evidence":"Inspected rendered setup, game-end, cooperative-variant and credit pages. The pen criterion selects the first normal human turn. No printing year was inferred from the host path.",
+    "uncertainty":["No starting tie-break is stated beside the pen criterion."],
+    "portable":true,
+    "poolReason":"A personal-history criterion that selects the first ordinary turn without game components."
+  },
+  {
+    "slug":"burgle-bros-fowers-en-markiii",
+    "gameName":"Burgle Bros.",
+    "aliases":["Burgle Bros"],
+    "newRecord":true,
+    "publisher":"Fowers Games (English manual hosted by Skellig Games)",
+    "editionLabel":"English MarkIII-v2.05 PDF, with second-edition rules credits",
+    "firstPlayerRule":"Whoever most recently took money out of a bank takes the first turn.",
+    "officialTieBreak":null,
+    "houseFallback":"If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+    "clarifications":[
+      "Turns continue clockwise. Each turn includes the player's actions, any required event, and movement of the guard on that player's floor.",
+      "The team chooses its entrance together before play. Each character enters at the start of its own first turn."
+    ],
+    "pdfPages":[2,3,7,12],
+    "printedPages":["1","3","4","11","12","22"],
+    "location":"Bank Job setup; Break in step 5; Gameplay; More Scenarios; credits. PDF pages are spreads",
+    "evidence":"The English PDF has no extractable text. All 13 PDF pages were rendered and visually read. Starting criterion is printed page 4 on PDF page 3; credits on printed page 22 thank the second-edition rules editor. Do not infer the criterion from the separately retrieved German booklet, which omits it in its setup.",
+    "uncertainty":["The bank instruction does not define particular withdrawal methods or a starting tie-break."],
+    "portable":true,
+    "poolReason":"Selects an ordinary player turn using personal history; the cooperative guard phase does not change who starts."
+  },
+  {
+    "slug":"burgle-bros-2-fowers-en",
+    "gameName":"Burgle Bros 2: The Casino Capers",
+    "aliases":["Burgle Bros 2","Burgle Bros 2: Casino Capers"],
+    "newRecord":true,
+    "publisher":"Fowers Games (English manual hosted by Skellig Games)",
+    "editionLabel":"English Fowers Games rules, 16-page Skellig-hosted PDF",
+    "firstPlayerRule":"Whoever most recently gambled starts. The rules also allow choosing the first player randomly.",
+    "officialTieBreak":null,
+    "houseFallback":null,
+    "clarifications":[
+      "Before play, choose two first-floor corner tiles as entrances. Each player enters through one of these at the start of their first turn; that initial move costs no action.",
+      "After a player's turn and the bouncer's turn on that floor, the next player clockwise takes a turn.",
+      "Random Finale Mode changes the finale setup, while retaining the normal starting instructions."
+    ],
+    "pdfPages":[1,3,6,16],
+    "printedPages":["3","6","16"],
+    "location":"Campaign and Random Finale modes; Entering the Casino; How to Play; credits",
+    "evidence":"Read the setup and sequential-turn context and visually inspected all listed pages. Random selection is an official alternative in the starting instruction, not an invented house fallback. The current Fowers store advertises a second edition, but this older hosted PDF does not establish that edition; the public label identifies only the inspected file.",
+    "portable":true,
+    "poolReason":"Personal-history criterion with an official random alternative; it selects the first player turn."
+  },
+  {
+    "slug":"clank-direwolf-en-2016",
+    "gameName":"Clank!: A Deck-Building Adventure",
+    "aliases":["Clank","Clank!"],
+    "newRecord":true,
+    "publisher":"Dire Wolf Digital",
+    "editionLabel":"English base-game rules, ©2016 Dire Wolf Digital",
+    "firstPlayerRule":"The sneakiest player starts. The rules also allow choosing randomly.",
+    "officialTieBreak":null,
+    "houseFallback":null,
+    "clarifications":[
+      "Play continues clockwise. Starting players put 3, 2, 1 and 0 Clank cubes into the Clank Area in turn order, using only the positions needed for your player count.",
+      "The rulebook does not define a measure for deciding who is sneakiest."
+    ],
+    "pdfPages":[1,2,3,11],
+    "printedPages":[],
+    "location":"Setup step N and setup diagram; credits",
+    "evidence":"Retrieved the English base-game rulebook through Dire Wolf's actual support-page PDF link. Visually inspected title, setup, diagram and ©2016 credits. Preserve the publisher's optional random choice and the starting noise allocation.",
+    "uncertainty":["Sneakiest is an undefined subjective criterion; no invented scoring system was added."],
+    "portable":true,
+    "poolReason":"A standalone subjective criterion, with an official random alternative, selects the first turn."
+  },
+  {
+    "slug":"isle-of-trains-dice-hate-me-en-v86",
+    "gameName":"Isle of Trains",
+    "newRecord":true,
+    "publisher":"Dice Hate Me Games",
+    "editionLabel":"English Rules and Reference v8.6, four-page publisher PDF",
+    "firstPlayerRule":"The player dealt the green-shaded Level 1 engine takes the first turn.",
+    "officialTieBreak":null,
+    "houseFallback":"If you cannot use the marked engine to choose a starter, agree to choose randomly. This is a house rule.",
+    "clarifications":[
+      "Setup deals each player a Level 1 engine and five cards at random. Turns then proceed clockwise, with two actions per turn.",
+      "This source covers the original Isle of Trains, not Isle of Trains: All Aboard."
+    ],
+    "pdfPages":[1,2],
+    "printedPages":[],
+    "location":"Setup step 1; Game Play; Starting the Game diagram",
+    "evidence":"Visually checked both rule pages, including the green engine in the setup diagram. Source filename identifies v8.6; no printing year was invented. The criterion depends on the dealt game component and therefore stays out of the portable mix.",
+    "uncertainty":["The instruction does not explain a case where no player has the green-shaded engine; the suggested random alternative is explicitly a house rule."],
+    "portable":false,
+    "poolReason":"Requires the marked Level 1 engine from this game's setup."
+  }
+]

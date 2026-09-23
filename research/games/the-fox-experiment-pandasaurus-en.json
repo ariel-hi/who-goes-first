@@ -1,0 +1,49 @@
+{
+  "id": "the-fox-experiment-pandasaurus-en",
+  "slug": "the-fox-experiment-pandasaurus-en",
+  "gameName": "The Fox Experiment",
+  "aliases": [
+    "Fox Experiment"
+  ],
+  "language": "en",
+  "editionLabel": "Pandasaurus Games English updated v2 rules, copyright 2023",
+  "firstPlayerRule": "Give the first turn-order token to whoever has the friendliest pet, or choose that player randomly. Assign the remaining tokens clockwise.",
+  "officialTieBreak": "Random selection is an official alternative to the pet criterion, whether or not there is a tie.",
+  "houseFallback": null,
+  "clarifications": [
+    "The first Selection phase follows the assigned turn-order tokens. Breeding and Research normally happen simultaneously.",
+    "With two human players, the automated opponent receives the third turn-order token. In solo play, it receives the second token.",
+    "Later rounds may use a different turn order; clockwise order applies to the opening round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/tdxtn6bphrblw8ou70l1z/PANFOXCORE-The_Fox_Experiment-Rulebook-v2-UPDATED-sm.pdf?rlkey=9pbei353jt3bqf1gjmrot28mb&st=ffyxg2p9&dl=0",
+      "title": "The Fox Experiment — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [
+        "6",
+        "8",
+        "24",
+        "28"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        8,
+        24,
+        28
+      ],
+      "location": "Player Setup step 3; Selection phase; Two-Player and Solo setup; PDF pages 6, 8, 24, 28",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/the-fox-experiment. Finding: Give the first turn-order token to whoever has the friendliest pet, or choose that player randomly. Assign the remaining tokens clockwise. Local source SHA-256: 609200c1944008788287a2d535c04cec5994189990201ddf2ea9877291528d57. All four cited rendered pages were inspected. The publisher filename identifies the updated v2 manual, and the credits on page 33 state copyright 2023. The official product links BGG 368432. The solo opponent's second token makes the human first; it is not selected using the pet criterion.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

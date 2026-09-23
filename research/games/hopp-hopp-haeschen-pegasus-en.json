@@ -1,0 +1,42 @@
+{
+  "id": "hopp-hopp-haeschen-pegasus-en",
+  "slug": "hopp-hopp-haeschen-pegasus-en",
+  "gameName": "Hopp hopp Häschen",
+  "aliases": [
+    "Hopp hopp Haeschen"
+  ],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele English rules, eight-page booklet",
+  "firstPlayerRule": "The player with the longest ears goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player rolls the color die. Turns continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/58/3a/ce/1717757234/4250231706820_gb.pdf?ts=1752574419",
+      "title": "Hopp hopp Häschen — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "How to Play, opening paragraph; PDF pages 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Hopp-Hopp-Haeschen/66005G. Finding: The player with the longest ears goes first. Local source SHA-256: d39a2b7bb822597bb58e4080ac759b3d3435b2a333630d9e2f66ca1520c4fcb0. The English rules linked from Hopp Hopp Häschen explicitly use ear length, not age or hair length.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

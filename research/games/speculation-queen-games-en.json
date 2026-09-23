@@ -1,0 +1,43 @@
+{
+  "id": "speculation-queen-games-en",
+  "slug": "speculation-queen-games-en",
+  "gameName": "Speculation",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Queen Games English edition by Dirk Henn, copyright 2013",
+  "firstPlayerRule": "Whoever most recently bought stock shares goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "On the opening turn, the active player uses a Trade tile and draws the movement tile randomly. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/speculation_en.pdf",
+      "title": "Speculation — Queen Games rules",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Set-up, final paragraph; Sequence of play, first-turn exception; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever most recently bought stock shares goes first. Local source SHA-256: 29626a1d90da36255ff5d0461d0b94fb91647d328fbbad5d19d126eff5987f7d. ",
+  "uncertainty": [
+    "No alternative is specified here if nobody has bought shares.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

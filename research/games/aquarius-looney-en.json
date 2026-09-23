@@ -1,0 +1,39 @@
+{
+  "id": "aquarius-looney-en",
+  "slug": "aquarius-looney-en",
+  "gameName": "Aquarius",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Looney Labs Aquarius v3.0 English rules, copyright 1998–2020",
+  "firstPlayerRule": "The player with the longest hair goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This is the standard game in the 100-card v3.0 edition. Its reverse side presents separate preschool variations."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/AquariusRules_0.pdf",
+      "title": "Aquarius — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Who Starts?; reverse-side version and contents; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/aquarius. Finding: The player with the longest hair goes first. Local source SHA-256: 47a0d7bab1c2de596a34fbe1693c7451cf7e2f7f465300f17c9e2e3c54f58962. Both image-only pages were rendered. The starting rule is at the foot of the front page; the reverse identifies Aquarius v3.0 and 100 cards.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "slug": "viva-catrina-huch-de-summary",
+    "gameName": "Viva Catrina",
+    "sourceHint": "viva-catrina-cffbdd1b.pdf",
+    "editionLabel": "HUCH! 2026 German edition, English summary",
+    "pages": [3, 4],
+    "printedPages": [3, 4],
+    "location": "Setup, step 5; Spielablauf, opening paragraph",
+    "firstPlayerRule": "Whoever most recently received flowers as a gift goes first.",
+    "clarifications": ["That player takes the Catrina figure and begins the first round. Play continues clockwise."],
+    "evidenceNotes": "The German source specifies receiving flowers as a gift, not buying or giving flowers. The file identifies the 2026 HUCH! edition of the game by Frédéric Boulle and Grégory Grard."
+  },
+  {
+    "slug": "for-sale-spiel-das-de-summary",
+    "gameName": "For Sale",
+    "sourceHint": "for-sale-7b3def5e.pdf",
+    "editionLabel": "SPIEL DAS! / IELLO German rules, v1 file, English summary",
+    "pages": [3, 4],
+    "printedPages": [3, 4],
+    "location": "Spielvorbereitung, step 4; Spielablauf, Phase 1: Häuser kaufen",
+    "firstPlayerRule": "Choose the starting player randomly.",
+    "houseFallback": null,
+    "clarifications": ["The chosen player takes the first bidding-or-passing turn in the property-buying phase. Turns proceed clockwise."],
+    "evidenceNotes": "The Hutter Trade download identifies SPIEL DAS! and IELLO in its colophon. This file explicitly uses random selection; a personal real-estate criterion from another edition was not substituted."
+  },
+  {
+    "slug": "fairy-trails-huch-en",
+    "gameName": "Fairy Trails",
+    "sourceHint": "fairy-trails-3fcce0d7.pdf",
+    "editionLabel": "HUCH! 2020 multilingual rules, English two-player section",
+    "pages": [5, 6],
+    "printedPages": [5, 6],
+    "location": "English section: Preparation; How to Play, opening sentence",
+    "firstPlayerRule": "Whoever most recently walked in a forest while wondering whether hidden folk exist goes first.",
+    "clarifications": ["The first player places a card from their hand and draws a replacement at the end of the turn."],
+    "uncertainty": ["The English wording includes the thought about hidden folk; the German opening sentence in the same file mentions only the forest walk."],
+    "evidenceNotes": "Actual rendered English pages 5 and 6 were checked. The full English condition is retained rather than silently shortened to the German wording."
+  },
+  {
+    "slug": "time-bomb-evolution-iello-de-summary",
+    "gameName": "Time Bomb Evolution",
+    "sourceHint": "time-bomb-evolution-cb40c068.pdf",
+    "editionLabel": "IELLO German base rules distributed by Hutter Trade, English summary",
+    "pages": [9, 10],
+    "printedPages": [9, 10],
+    "location": "Setup, step 6; Spielablauf, Wie wird gespielt?",
+    "firstPlayerRule": "Whoever most recently visited London is the starting player.",
+    "clarifications": ["That player receives the wire cutters and reveals a wire card belonging to another player. A player cannot cut their own wire."],
+    "evidenceNotes": "The starting passage is visibly on PDF and printed page 9, with the first action on page 10. This is Time Bomb Evolution, not the separate original Time Bomb game. The downloaded Evolution-variant supplement is not a separate starting-rule record."
+  },
+  {
+    "slug": "saltfjord-huch-de-summary",
+    "gameName": "Saltfjord",
+    "sourceHint": "saltfjord-04ad2de3.pdf",
+    "editionLabel": "HUCH! German rules, 2024 file, English summary",
+    "pages": [5, 6, 14, 15],
+    "printedPages": [5, 6, 14, 15],
+    "location": "Persönlicher Aufbau: Bereitet die Start-Sets vor; Rundenablauf; Fortgeschrittenes Spiel; Solo-Spiel",
+    "firstPlayerRule": "Whoever most recently ate fish is the starting player.",
+    "clarifications": ["That player chooses a starting set first and also takes the first turn. Other players follow clockwise.", "The advanced wagon variant keeps this starting instruction. In solo play, you take every turn; there is no opponent or automa."],
+    "evidenceNotes": "The initial 35 MB retrieval limit was exceeded; the exact publisher URL was retrieved successfully with an explicit 100 MB limit. Rendered pages 5, 6, 14 and 15 were inspected, including advanced and solo context."
+  }
+]

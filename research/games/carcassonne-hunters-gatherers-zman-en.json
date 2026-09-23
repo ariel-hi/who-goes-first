@@ -1,0 +1,44 @@
+{
+  "id": "carcassonne-hunters-gatherers-zman-en",
+  "slug": "carcassonne-hunters-gatherers-zman-en",
+  "gameName": "Carcassonne: Hunters and Gatherers",
+  "aliases": [
+    "Carcassonne: Hunters & Gatherers"
+  ],
+  "language": "en",
+  "editionLabel": "Z-Man English 95-tile edition, 2020 copyright",
+  "firstPlayerRule": "The youngest player takes the first turn. Continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This is the edition with 95 land tiles, including 16 menhir tiles."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/Hunters-and-Gatherers-RUlebook.pdf",
+      "title": "Carcassonne: Hunters and Gatherers — Z-Man Games rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Contents and preparation; Playing the Game; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zmangames.com/game/carcassonne-hunters-gatherers/. Finding: The youngest player takes the first turn. Continue clockwise. Local source SHA-256: 95fa60cebe04b28cef644636e9a6de1835fee88527ac0dd462a02467cc17f511. The contents page identifies the updated tile set; the credits state 2002 and 2020 copyrights. This record does not claim to check the original 2002 rulebook.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

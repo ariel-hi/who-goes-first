@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GameArticle from '../components/GameArticle.astro';
+import NotFound from '../pages/404.astro';
+import { readRecords } from '../lib/content/catalog';
+import { ruleSchema, publicRule } from '../lib/content/schema';
+// Injected with prerender:false only in local development. Resolve the current
+// record per request: cached getStaticPaths leaves newly added drafts as 404s.
+const draft = readRecords('research/games').map(raw => ruleSchema.parse(raw)).find(record => record.slug === Astro.params.slug);
+const rule = draft ? publicRule(draft) : undefined;
+if (!rule) Astro.response.status = 404;
+---
+{rule ? <Layout title={`Draft: ${rule.gameName} — local review`} description="Research copy, available only in development." noindex={true}><div class="content-page"><div class="preview-banner"><strong>Research copy · source review</strong><br/>This research copy is separate from the reviewed catalog.</div><GameArticle rule={rule} preview={true} /></div></Layout> : <NotFound />}

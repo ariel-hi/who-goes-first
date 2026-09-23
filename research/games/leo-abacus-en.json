@@ -1,0 +1,48 @@
+{
+  "id": "leo-abacus-en",
+  "slug": "leo-abacus-en",
+  "gameName": "Leo",
+  "aliases": [
+    "Leo Goes to the Barber",
+    "Leo muss zum Friseur"
+  ],
+  "language": "en",
+  "editionLabel": "ABACUSSPIELE Leo Goes to the Barber, English rules",
+  "firstPlayerRule": "The player with the longest hair goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The player with the shortest hair keeps the clock; that is a separate role. Turns proceed clockwise.",
+    "If another day is needed, the player who would have taken the next turn becomes its starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2021/01/LEO_Regel_GB.pdf",
+      "title": "Leo — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3
+      ],
+      "location": "Title and components; Set-up; Course of the Game: One Day and End of the Day; PDF pages 1, 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/leo-muss-zum-friseur/. Finding: The player with the longest hair goes first. Local source SHA-256: ddd91f757a58cb392738c6803c3f915519a6324e6096b9eba9448489a70676c1. The English manual linked from the German Leo muss zum Friseur product identifies the cooperative lion-and-barber game, matching inventory Leo 191538. This successful primary source replaces the failed dV download lead; it is not a second edition record.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

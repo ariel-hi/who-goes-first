@@ -1,0 +1,47 @@
+{
+  "id": "time-bomb-evolution-iello-de-summary",
+  "slug": "time-bomb-evolution-iello-de-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "34520b209092be1759e0d6558abb7d981e05ba2cba59ee71da7d6b9176bba421",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Time Bomb Evolution",
+  "aliases": [],
+  "editionLabel": "IELLO / Hutter Trade German base rules, ©2016–2020; English summary",
+  "firstPlayerRule": "Whoever most recently visited London is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player receives the wire cutters and reveals a wire card belonging to another player. A player cannot cut their own wire.",
+    "The owner of the revealed card takes the next turn. At a new round, the last recipient of the cutters starts.",
+    "This answer covers Time Bomb Evolution's base rules, not the separate original Time Bomb game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://produkte.hutter-trade.com//files/products/62/200/de/TIME%20BOMB%20EVOLUTION_rulebook_DE_Light.pdf",
+      "title": "Time Bomb Evolution — Hutter Trade rules",
+      "publisher": "Hutter Trade",
+      "printedPages": [
+        "9",
+        "10",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "location": "Spielaufbau step 6; Spielablauf; Rundenende; unnumbered final credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Whoever most recently visited London is the starting player. Local source SHA-256: 714966e55c509ba76cc683e8a5f88e42c5e5deea93426a87dc8729e7cf6381d1. The starting passage is visibly on PDF and printed page 9, with the first action on page 10. This is Time Bomb Evolution, not the separate original Time Bomb game. The downloaded Evolution-variant supplement is not a separate starting-rule record. Editorial recheck 2026-09-23: Rechecked all four listed rendered pages, including the unnumbered final page. London recency chooses the opening active player; cutter transfer determines subsequent order. English IELLO text corroborates this without replacing the identified German source. Cached source: research\\source-files\\hutter\\time-bomb-evolution-cb40c068.pdf; SHA-256 714966e55c509ba76cc683e8a5f88e42c5e5deea93426a87dc8729e7cf6381d1. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal-history criterion selects the first active player in a competitive hidden-team game.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

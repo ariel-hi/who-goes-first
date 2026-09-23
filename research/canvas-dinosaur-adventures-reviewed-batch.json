@@ -1,0 +1,150 @@
+[
+  {
+    "slug": "dinosaur-island-pandasaurus-en-rulebook-2",
+    "gameName": "Dinosaur Island",
+    "aliases": [],
+    "editionLabel": "Pandasaurus English base game, Rulebook 2.0",
+    "firstPlayerRule": "Whoever most recently extracted DNA from an amber-trapped mosquito goes first. If nobody has done that, whoever most recently visited a theme park starts.",
+    "clarifications": [
+      "Give the starter the First Player Token and arrange the opening turn order clockwise. That player rolls the DNA dice and takes the first research turn.",
+      "The theme-park criterion is the rulebook’s official fallback, not an extra rule invented by this site.",
+      "Later rounds use ascending victory-point order, starting with the lowest score. Players tied on points keep their relative order from the preceding round; this does not break a tie during initial setup.",
+      "This answer covers multiplayer setup in Rulebook 2.0. The same manual includes a separate solo mode."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the official criteria leave a tie or nobody qualifies, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 5, 6, 15, 17],
+    "printedPages": ["cover", "unnumbered setup page", "6", "15", "17"],
+    "location": "Main Game Setup step 9; How to Play and Research Phase; Cleanup Phase: Reset Turn Order; Solo Rules",
+    "evidence": "The cover explicitly identifies Rulebook 2.0. Setup step 9 gives priority to the latest successful amber-mosquito DNA extraction, with latest theme-park visit if no player has done that. Step 10 allocates increasing startup cash from the starter. Page 6 confirms clockwise first-round turns and the starter rolling the DNA pool before scientist assignment. Page 15 instead sorts later rounds by fewest VPs and preserves prior relative order for equal scores. Solo setup is separately described on page 17. The source does not date this printing, so no year is inferred from its download address.",
+    "uncertainty": ["The source gives no tie-break for equal or unknown dates under the initial criteria."],
+    "portable": true,
+    "poolReason": "An opening-player personal-history criterion with an explicit theme-park alternative; no game-specific components are needed to compare it. Preserve both branches."
+  },
+  {
+    "slug": "canvas-r2i-en-2021",
+    "gameName": "Canvas",
+    "aliases": [],
+    "editionLabel": "R2i Games English base rules, ©2021, v09 publisher PDF",
+    "firstPlayerRule": "Whoever painted most recently goes first.",
+    "clarifications": [
+      "Play continues clockwise. On a turn, take an Art Card or complete a painting according to the normal rules.",
+      "In Painting with Vincent, the simulated player Vincent acts last. That variant is available for one or two human players.",
+      "The separate Solo Puzzle variant has only one player. This answer covers the ©2021 base-game manual, not the later second edition or expansion rules."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 3, 4, 7, 8],
+    "printedPages": [],
+    "location": "Unnumbered cover credits; Setup; On Your Turn; Variants: Painting with Vincent and Solo Puzzle; Scenarios",
+    "evidence": "The original publisher hosts the complete eight-page Canvas_Rulebook_v09.pdf. Cover credits identify ©2021 R2i Games, Jeffrey Chin and Andrew Nerger. The first paragraph of On Your Turn on PDF page 4 chooses the latest painter and states clockwise play. Setup on page 3 gives each player four Inspiration Tokens. Page 7 keeps standard play except for its listed variants: Vincent is a simulated non-scoring participant who goes last; Solo Puzzle has one player. Page 8 changes scoring-card scenarios, not initial selection. These pages carry no printed page numbers. No second-edition rule is inferred from the current Tabletop Tycoon product listings.",
+    "uncertainty": ["The manual does not define an initial-start tie-break or narrow what counts as painting."],
+    "portable": true,
+    "poolReason": "The real opening turn uses a portable personal-history criterion. Vincent’s special position is variant context, not the randomly offered criterion."
+  },
+  {
+    "slug": "adventure-games-monochrome-inc-kosmos-en-2020",
+    "gameName": "Adventure Games: Monochrome Inc.",
+    "aliases": ["Monochrome Inc.", "Monochrome Inc"],
+    "editionLabel": "Thames & Kosmos English rules, ©2020, code 695132-02-100720",
+    "firstPlayerRule": "Whoever most recently watched or read a thriller goes first.",
+    "clarifications": [
+      "The game is cooperative but uses individual character turns. Card exchanges are allowed before movement and after the action under the normal exchange restrictions.",
+      "For solo play, control two characters of your choice.",
+      "Specific instructions on cards or in the adventure book take precedence over the general rulebook."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 3, 16],
+    "printedPages": ["cover", "2", "3", "unnumbered credits"],
+    "location": "Game Setup; Game Overview; final credits and publication code",
+    "evidence": "Game Overview on printed page 3 gives the initial turn to the latest watcher or reader of a thriller, followed by a five-part individual turn. It permits exchanges before movement and after the action. Page 2 has separate multiplayer and two-character solo setup. Credits identify ©2020 Thames & Kosmos and code 695132-02-100720, alongside ©2019 original Kosmos rights. This manual was checked independently of the other Adventure Games titles. Clockwise order was not stated in the inspected overview and is not imported from the other manuals.",
+    "uncertainty": ["The initial criterion has no stated tie-break."],
+    "portable": true,
+    "poolReason": "Chooses the actual first character turn using a portable reading/viewing-history criterion."
+  },
+  {
+    "slug": "adventure-games-dungeon-kosmos-en-2019",
+    "gameName": "Adventure Games: The Dungeon",
+    "aliases": ["The Dungeon"],
+    "editionLabel": "Thames & Kosmos English rules, ©2019, code 695088-02-060619",
+    "firstPlayerRule": "Whoever most recently read a fantasy novel or watched a fantasy movie or show goes first.",
+    "clarifications": [
+      "Players take individual turns in clockwise order, moving their character and then taking one action.",
+      "In solo play, control two or more characters of your choice.",
+      "Specific instructions on cards or in the adventure book take precedence over the general rulebook."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 3, 16],
+    "printedPages": ["1", "2", "3", "16"],
+    "location": "Game Setup; Solo game setup and Game Overview; credits",
+    "evidence": "Printed page 3 explicitly selects the latest participant to have read/watched a fantasy novel, movie or show. The paraphrase assigns reading to a novel and watching to a movie/show without adding a completion requirement. The same overview confirms clockwise individual turns. Solo setup permits two or more characters; multiplayer setup is on page 2. Page 16 shows ©2019 Thames & Kosmos and code 695088-02-060619.",
+    "uncertainty": ["The initial criterion has no stated tie-break."],
+    "portable": true,
+    "poolReason": "Portable personal-history criterion for the opening player, separate from cooperative story resolution."
+  },
+  {
+    "slug": "adventure-games-gloom-city-kosmos-en-2022",
+    "gameName": "Adventure Games: The Gloom City File",
+    "aliases": ["The Gloom City File", "Gloom City File"],
+    "editionLabel": "Thames & Kosmos English rules, ©2022, code 695135-02-210222",
+    "firstPlayerRule": "Whoever most recently read or watched a thriller goes first.",
+    "clarifications": [
+      "Individual turns proceed clockwise, with movement, revealing a location card, and one action in that order.",
+      "Multiplayer participants each control at least one character. For solo play, choose two or more characters.",
+      "Specific instructions on cards or in the adventure book take precedence over the general rulebook."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 3, 4, 16],
+    "printedPages": ["cover", "2", "3", "4", "16"],
+    "location": "Game Setup; Important Information; Game Overview; credits",
+    "evidence": "Printed page 4 chooses the most recent reader or watcher of a thriller and then describes clockwise character turns. Page 2 distinguishes multiplayer and solo character allocation, and page 3 gives specific story/card instructions precedence. Credits identify ©2022 Thames & Kosmos and code 695135-02-210222. The source is the Google Drive file reached by the publisher’s indexed manual URL; the complete sixteen-page PDF was retrieved with the explicit larger-file limit. Duplicate neighboring footer numbers in extracted text were checked against the actual rendered pages, which show 2, 3 and 4 respectively.",
+    "uncertainty": ["The initial criterion has no stated tie-break."],
+    "portable": true,
+    "poolReason": "A source-checked opening turn based on reading/viewing history, requiring no game-specific components."
+  },
+  {
+    "slug": "adventure-games-hotel-abaddon-kosmos-en-2021",
+    "gameName": "Adventure Games: The Grand Hotel Abaddon",
+    "aliases": ["The Grand Hotel Abaddon", "Grand Hotel Abaddon"],
+    "editionLabel": "Thames & Kosmos English rules, ©2021, code 695134-02-170221",
+    "firstPlayerRule": "Whoever most recently read a ghost story goes first.",
+    "clarifications": [
+      "The criterion specifies reading a ghost story. The rulebook does not add watching a film or show as an alternative.",
+      "Individual turns proceed clockwise, with movement, revealing a location card, and one action in that order.",
+      "For solo play, control two or more characters of your choice. Specific instructions on cards or in the adventure book take precedence over the general rules."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 3, 4, 16],
+    "printedPages": ["cover", "2", "3", "4", "16"],
+    "location": "Game Setup; Solo game and Important Information; Game Overview; credits",
+    "evidence": "Printed page 4 specifically selects the latest reader of a ghost story. It does not offer watching as an alternative, unlike some other games in the series. The overview then states clockwise player turns; the free-exchange variant modifies card exchange without replacing initial selection. Pages 2–3 distinguish multiplayer and solo characters and specific story instructions. Credits show ©2021 Thames & Kosmos and code 695134-02-170221.",
+    "uncertainty": ["The initial criterion has no stated tie-break."],
+    "portable": true,
+    "poolReason": "The rule selects the first ordinary character turn using a portable reading-history criterion."
+  },
+  {
+    "slug": "adventure-games-volcanic-island-kosmos-en-2020",
+    "gameName": "Adventure Games: The Volcanic Island",
+    "aliases": ["The Volcanic Island", "Volcanic Island"],
+    "editionLabel": "Thames & Kosmos English rules, ©2020, code 695133-02-270520",
+    "firstPlayerRule": "Whoever most recently saw an island goes first.",
+    "clarifications": [
+      "The rule says seeing an island; it does not require landing on or visiting one.",
+      "Individual turns proceed clockwise, with movement, revealing a location card, and one action in that order.",
+      "For solo play, control two or more characters of your choice."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 4, 16],
+    "printedPages": ["cover", "2", "4", "16"],
+    "location": "Game Setup; Game Overview; credits",
+    "evidence": "Printed page 4 uses most-recently-seen an island, not visited one, and then confirms clockwise individual turns. Its free-exchange variant changes card exchange, not initial selection. Page 2 separates one-character-per-player multiplayer setup from solo control of two or more characters. Credits identify ©2020 Thames & Kosmos and code 695133-02-270520.",
+    "uncertainty": ["The initial criterion has no stated tie-break, and the source does not define what counts as seeing an island."],
+    "portable": true,
+    "poolReason": "A portable personal-history criterion for the actual opening player; preserve the source’s broader seeing wording."
+  }
+]

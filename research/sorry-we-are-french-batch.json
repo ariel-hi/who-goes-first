@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "ganymede-swaf-en",
+    "gameName": "Ganymede",
+    "sourceHint": "ganymede-3b204327",
+    "editionLabel": "English Sorry We Are French rules, ten-page publisher file",
+    "pages": [2], "printedPages": [2],
+    "location": "Setup, opening sentence",
+    "firstPlayerRule": "Whoever watched a science-fiction film or TV series most recently is the first player."
+  },
+  {
+    "slug": "in-the-footsteps-of-darwin-swaf-en",
+    "gameName": "In the Footsteps of Darwin",
+    "sourceHint": "in-the-footsteps-of-darwin-94a7d6d2",
+    "editionLabel": "English Sorry We Are French rules, twelve-page publisher booklet",
+    "pages": [4], "printedPages": [4],
+    "location": "Setup, step 2",
+    "firstPlayerRule": "Whoever traveled by ship most recently takes the Darwin token and starts.",
+    "officialTieBreak": "If nobody has traveled by ship, the rulebook lets the group use its preferred way of choosing a first player.",
+    "houseFallback": null,
+    "uncertainty": ["The official alternative covers a group in which nobody has traveled by ship; no separate tie-break is given for equally recent trips."]
+  },
+  {
+    "slug": "iki-swaf-en",
+    "gameName": "IKI",
+    "aliases": ["IKI: A Game of Edo Artisans"],
+    "sourceHint": "iki-161e2fd3",
+    "editionLabel": "English Sorry We Are French edition, 2021 publisher file",
+    "pages": [2,6,12], "printedPages": [2,6,12],
+    "location": "Player Setup, steps 10–11; Phase A, Way of Life; Rules for 2 Players, Setup",
+    "firstPlayerRule": "With three or four players, whoever visited Japan most recently is the first month's starting player. With two players, randomly assign the Sun and Moon tokens; the Sun player starts the first month.",
+    "officialTieBreak": "In the three- or four-player setup, choose randomly if nobody has visited Japan.",
+    "clarifications": ["The starter chooses an Ikizama space first. The chosen spaces then determine the action order, so the setup starter does not necessarily take the first action.", "For the first month's choice order, the starting player's firefighting marker is on top of the stack, with the other markers underneath in clockwise order."],
+    "uncertainty": ["No separate tie-break is stated for equally recent visits to Japan."],
+    "evidenceNotes": "The publisher PDF's text layer is garbled. Player setup, phase order and the two-player Sun/Moon override were read from rendered pages."
+  }
+]

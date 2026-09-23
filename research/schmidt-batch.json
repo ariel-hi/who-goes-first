@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "auf-achse-schmidt-de-summary",
+    "gameName": "Auf Achse",
+    "sourceHint": "auf-achse-c5729d18.pdf",
+    "editionLabel": "Schmidt Spiele German rules, article 49090, English summary",
+    "pages": [3],
+    "printedPages": [3],
+    "location": "Spielablauf — Würfeln und Fahren, first sentence",
+    "firstPlayerRule": "Whoever has driven the farthest distance this month goes first.",
+    "clarifications": ["This summarizes the German rulebook. Turns continue clockwise."],
+    "evidenceNotes": "The time window is this month, not the latest journey or the journey to today's game."
+  },
+  {
+    "slug": "dog-kids-schmidt-de-summary",
+    "gameName": "DOG Kids",
+    "sourceHint": "dog-kids-b99017a9.pdf",
+    "editionLabel": "Schmidt Spiele DOG Kids, article 40554, German rules summarized in English",
+    "pages": [1],
+    "printedPages": [1],
+    "location": "German section, Spielablauf, opening sentence",
+    "firstPlayerRule": "Whoever can bark the loudest goes first.",
+    "clarifications": ["This is the standard DOG Kids game with three dog pieces per player and 88 cards."],
+    "houseFallback": "If anyone prefers to skip the barking, agree to pick randomly. This is a house rule.",
+    "evidenceNotes": "The publisher's observed URL contains a registered-sign character in its directory name; the queue percent-encodes the original UTF-8 path. This is article 40554, not the separate travel edition."
+  },
+  {
+    "slug": "tempel-des-schreckens-schmidt-de-summary",
+    "gameName": "Tempel des Schreckens",
+    "sourceHint": "tempel-des-schreckens-7b9eaabc.pdf",
+    "editionLabel": "Schmidt Spiele German rules, article 75046, English summary",
+    "pages": [1],
+    "printedPages": [],
+    "location": "Spielvorbereitung, step 3: Startspieler festlegen",
+    "firstPlayerRule": "Whoever most recently found a gold treasure takes the key card and starts.",
+    "officialTieBreak": "If nobody has found a gold treasure, the rules offer the youngest player as an alternative starter.",
+    "clarifications": ["The rulebook also says the game ends with everyone losing if nobody has found a gold treasure.", "The key-card holder first opens another player's chamber. The owner of that chamber then receives the key."],
+    "evidenceNotes": "Both the unusual immediate-loss sentence and the youngest-player alternative are explicitly in the source. The latter is not an invented fallback."
+  },
+  {
+    "slug": "quacks-of-quedlinburg-schmidt-de-summary",
+    "gameName": "The Quacks of Quedlinburg",
+    "aliases": ["Die Quacksalber von Quedlinburg", "Quacks of Quedlinburg"],
+    "sourceHint": "the-quacks-of-quedlinburg-3a076199.pdf",
+    "editionLabel": "Schmidt Spiele German base-game rules, article 49341, English summary",
+    "pages": [2, 3, 4],
+    "printedPages": [2, 3, 4],
+    "location": "Spielvorbereitung; Wahrsagekarten; Die Trank-Zubereitung",
+    "firstPlayerRule": "Whoever most recently cooked something is the first round's starting player.",
+    "clarifications": ["That player shuffles the fortune-teller cards, keeps the deck, and reads the opening card aloud.", "Players brew their potions simultaneously; the starting-player role does not mean drawing ingredients before everyone else."],
+    "evidenceNotes": "German starting instruction checked on printed/PDF page 2, round-start card reader on page 3, simultaneous brewing on page 4."
+  },
+  {
+    "slug": "quacks-co-quedlinburg-dash-schmidt-de-summary",
+    "gameName": "Quacks & Co.: Quedlinburg Dash",
+    "aliases": ["Mit Quacks & Co. nach Quedlinburg"],
+    "sourceHint": "quacks-co-quedlinburg-dash-bd4cab40.pdf",
+    "editionLabel": "Schmidt Spiele German rules, article 40630, English summary",
+    "pages": [3],
+    "printedPages": [3],
+    "location": "Auf die Tiere, fertig, los!, first paragraph",
+    "firstPlayerRule": "Whoever most recently saw a donkey goes first.",
+    "clarifications": ["Turns proceed clockwise. On a turn, draw a chip from your feed bag without looking inside."],
+    "evidenceNotes": "This is the children's animal-racing game, not the potion-brewing base game."
+  }
+]

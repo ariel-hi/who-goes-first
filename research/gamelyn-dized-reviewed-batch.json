@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "tiny-epic-dinosaurs-gamelyn-en-dized",
+    "gameName": "Tiny Epic Dinosaurs",
+    "aliases": ["TEDino"],
+    "firstPlayerRule": "The person who most recently visited a natural history museum starts. The rules also allow your group to choose another method.",
+    "clarifications": [
+      "Give that player the First Player Marker. After everyone collects resources together, the marker holder assigns the first Rancher, followed by clockwise turns.",
+      "Starting bonuses depend on that order: the second player gets one Plant, the third one Meat, and the fourth one Supply, where those seats exist.",
+      "The marker can change hands through an action during play. In solo mode, the Rival Ranch receives it during setup and takes the first assignment turn."
+    ],
+    "interpretation": null,
+    "sourceEnds": ["/setup", "/phase-1-collect-resources", "/phase-2-assign-ranchers", "/barriers-and-first-player-marker", "/solo-setup", "/solo-gameplay"],
+    "evidence": "Setup step 7 identifies the museum criterion, permitted alternative and seat bonuses. Resource collection precedes sequential Rancher assignment. Solo Setup E and Solo Gameplay explicitly make the Rival the initial first player. Credits state copyright 2020; the record identifies the online English reference rather than asserting a particular physical printing.",
+    "portable": true
+  },
+  {
+    "slug": "tiny-epic-kingdoms-gamelyn-en-dized",
+    "gameName": "Tiny Epic Kingdoms",
+    "aliases": [],
+    "firstPlayerRule": "Whoever most recently swung a sword goes first. Choosing the first player randomly is also an official option.",
+    "clarifications": [
+      "The starter receives the Active Player Token, selects an available action and takes that action or does nothing. Other players then respond in clockwise order.",
+      "Pass the token clockwise after the turn. In a five-player game, the player who clears the action card passes the token without taking an action; this is a later-turn adjustment."
+    ],
+    "interpretation": null,
+    "sourceEnds": ["/setup", "/on-your-turn", "/playing-with-5-players"],
+    "evidence": "Setup's Assign the Active Player Token paragraph states both sword recency and random selection. On Your Turn step 3 explicitly makes the active player act before the other players; this is not merely an administrative chooser. The two-player variant introduces the Lost Kingdom without replacing the initial criterion. Credits identify TEK08 and copyright 2014–2022, not a new publication date for this web reference.",
+    "portable": true
+  },
+  {
+    "slug": "tiny-epic-quest-gamelyn-en-dized",
+    "gameName": "Tiny Epic Quest",
+    "aliases": [],
+    "firstPlayerRule": "The player who most recently took part in a scavenger hunt starts. Your group may instead agree who receives the First Player Token.",
+    "clarifications": [
+      "In a two-to-four-player game, the token holder chooses the first Movement Card and moves a Hero or stays idle. The others follow clockwise using that card or staying idle.",
+      "The same token holder starts the Night Phase. At the end of the round, pass the token clockwise for the next round.",
+      "Solo setup leaves the First Player Token in the box."
+    ],
+    "interpretation": null,
+    "sourceEnds": ["/game-setup-for-2-4-players", "/day-phase-movement-and-questing", "/night-phase-adventuring", "/night-phase-resolution", "/game-setup"],
+    "evidence": "Multiplayer setup step 10 supplies the criterion and group-choice option. Day movement explicitly gives the token holder the first movement decision before clockwise responses. Night adventuring starts with the same holder; resolution passes the token clockwise. Separate solo setup omits it. Icon-only token-side details are not transcribed into this answer. Credits state copyright 2017–2022.",
+    "portable": true
+  },
+  {
+    "slug": "tiny-epic-vikings-gamelyn-en-dized",
+    "gameName": "Tiny Epic Vikings",
+    "aliases": [],
+    "firstPlayerRule": "The player who most recently set foot on an island takes the first action turn.",
+    "clarifications": [
+      "Give that player the Chieftain Marker. Initial boat placement starts with their right-hand neighbor and runs counterclockwise, ending with the starter.",
+      "After card drafting, the Chieftain Marker holder begins the action phase, followed by clockwise turns.",
+      "For the next era, the player with the most Island Runes receives the marker. If tied, it goes to the tied player who acted latest in the previous era's order.",
+      "Solo play is different: you take the first action turn in every era, before the Enemy Clan."
+    ],
+    "interpretation": null,
+    "sourceEnds": ["/setting-up-the-game", "/phase-2-performing-actions", "/phase-3-cleanup", "/phase-2-solo-action-changes"],
+    "evidence": "Setup step 7 assigns the Chieftain by island recency; step 8 uses reverse initial boat placement. Phase 1 drafts cards before Phase 2's explicit sequential action turns. Cleanup's Rune tie-break only determines later eras and is not an initial-start tie-break. Two-player setup changes do not replace the initial criterion; Solo Player Setup and Solo Action Changes explicitly give the human the first action each era. Credits state copyright 2022.",
+    "portable": true
+  },
+  {
+    "slug": "tiny-epic-western-gamelyn-en-dized",
+    "gameName": "Tiny Epic Western",
+    "aliases": [],
+    "firstPlayerRule": "Whoever most recently saw a horse starts as Dealer and places the first Posse Token. Random selection is also an official option.",
+    "clarifications": [
+      "The Dealer first shuffles and deals the Poker Cards. Posse placement then begins with that same player and continues clockwise.",
+      "Pass the Dealer Token clockwise at the end of each round.",
+      "In solo mode, you place a Posse Token before the Rival responds; the human player's turn always comes first."
+    ],
+    "interpretation": null,
+    "sourceEnds": ["/setup", "/phase-1-shuffle-and-deal", "/phase-2-posse-placement", "/round-end", "/phase-2-posse-placement-1"],
+    "evidence": "Setup step 6 assigns the Dealer by latest horse sighting or random selection. The gameplay summary and Posse Placement both confirm the Dealer actually takes the first placement turn. Solo Posse Placement explicitly reverses any need to choose between human and automated Rival: human always acts first. Credits identify TEW05 and copyright 2016–2022.",
+    "portable": true
+  },
+  {
+    "slug": "tiny-epic-zombies-gamelyn-en-dized",
+    "gameName": "Tiny Epic Zombies",
+    "aliases": [],
+    "firstPlayerRule": "The person who most recently visited a mall goes first. The rules also allow your group to choose its own method.",
+    "clarifications": [
+      "Human players take the turns. After each Human turn, the Zombie player performs an action; the Zombie role is assigned separately during setup.",
+      "The two-to-four-player modes use automated Zombies instead of a Zombie player. Their Human turn rules remain the same.",
+      "In solo mode, you control two Human characters and alternate their turns."
+    ],
+    "interpretation": "In a mode with a Zombie player, apply the starting criterion to the Human players. This follows the published turn sequence; the criterion's sentence itself does not expressly limit who qualifies.",
+    "sourceEnds": ["/gameplay-overview", "/game-setup", "/cooperative-game-2-4-players", "/competitive-game-2-4-players", "/solo-game-1-player"],
+    "evidence": "Gameplay Overview states the mall criterion and own-method alternative, then gives turns to Humans and a response to the Zombie player. Game Setup assigns the Zombie role separately and before starting. Other Game Modes preserves Human play with automated Zombies, and solo alternates two Human characters. The limitation to Human players is explicitly labeled as interpretation, not silently added to the official sentence. Directory only: the general random mix does not carry this game's role-dependent qualification. The credits contain no copyright year, so none is invented.",
+    "portable": false
+  }
+]

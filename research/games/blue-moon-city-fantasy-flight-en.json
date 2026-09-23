@@ -1,0 +1,40 @@
+{
+  "id": "blue-moon-city-fantasy-flight-en",
+  "slug": "blue-moon-city-fantasy-flight-en",
+  "gameName": "Blue Moon City",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Fantasy Flight Games English edition, eight-page rulebook",
+  "firstPlayerRule": "The group chooses someone to start, then takes turns clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If you want a quick way to choose, pick a player randomly. This is a house rule.",
+  "clarifications": [
+    "The rulebook leaves the choice to the players; it does not prescribe a personal characteristic or a random draw."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.fantasyflightgames.com/ffg_content/Blue%20Moon%20City/bmcrules.pdf",
+      "title": "Blue Moon City — Fantasy Flight Games rules",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "A Player's Turn, opening paragraph; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.fantasyflightgames.com/en/more/product-document-archive/. Finding: The group chooses someone to start, then takes turns clockwise. Local source SHA-256: 5f60c2eb25946821c738d0f2ba290770275c9b201d81773cca683988dabedb33. The instruction is a free group choice. Do not substitute a more colorful criterion from another edition.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

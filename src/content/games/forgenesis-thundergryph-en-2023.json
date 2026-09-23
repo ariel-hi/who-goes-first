@@ -1,0 +1,40 @@
+{
+  "id": "forgenesis-thundergryph-en-2023",
+  "slug": "forgenesis-thundergryph-en-2023",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "78a84e82d3f5f7c981419eceef1f0e942217a7c4aa22ca7bf083b18c4c83ac2f",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Forgenesis",
+  "aliases": [],
+  "editionLabel": "ThunderGryph English Soda Pop base rules, ©2023",
+  "firstPlayerRule": "Whoever most recently crafted an item takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Before play, that person places one opposing Creature on a Summoning space near the opponent's corner; the other player then does the same.",
+    "After both setup placements, the selected starter takes the first gameplay turn. The two players alternate turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2024/03/forgenesis-rulebook_en.pdf",
+      "title": "Forgenesis — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup steps 4–6; Gameplay; credits; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/forgenesis/. Finding: Whoever most recently crafted an item takes the first turn. Local source SHA-256: 92dd14139a1bc55d535b98818491101b6def83279a1d22847e27b77101746abf. Both pages of the publisher-linked English base rules were inspected, including ©2023 credits. Here the same person starts both setup placement and actual gameplay; the source explicitly confirms the first gameplay turn in setup step 6. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the main personal-history criterion selects the actual starter without requiring game components. Multiplayer scope and official alternatives remain explicit.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

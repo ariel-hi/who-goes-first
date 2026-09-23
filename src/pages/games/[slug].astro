@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import GameArticle from '../../components/GameArticle.astro';
+import NotFound from '../404.astro';
+import { getCatalog } from '../../lib/content/catalog';
+import { siteSettings } from '../../lib/site';
+export function getStaticPaths() { return getCatalog().map(rule => ({ params: { slug: rule.slug }, props: { rule } })); }
+const catalog = getCatalog();
+const rule = Astro.props.rule ?? catalog.find(game => game.slug === Astro.params.slug);
+if (!rule) Astro.response.status = 404;
+const family = (name: string) => name.split(':', 1)[0]!.trim().toLocaleLowerCase('en');
+const related = catalog.filter(game => game.id !== rule?.id && rule && family(game.gameName) === family(rule.gameName)).slice(0, 5);
+const site = siteSettings().url;
+---
+{rule ? <Layout title={`Who goes first in ${rule.gameName}? ${rule.editionLabel}`} description={`${rule.gameName} — ${rule.editionLabel}: ${rule.firstPlayerRule}`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: rule.gameName, item: `${site}/games/${rule.slug}/` }] }).replace(/</g, '\\u003c')} />
+  <div class="content-page"><GameArticle rule={rule} related={related} /></div>
+</Layout> : <NotFound />}

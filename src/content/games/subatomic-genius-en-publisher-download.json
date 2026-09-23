@@ -1,0 +1,54 @@
+{
+  "id": "subatomic-genius-en-publisher-download",
+  "slug": "subatomic-genius-en-publisher-download",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4a08dbea3d30c14c57e4b365a97af201e6a7617a3daa07030e8f4bdae26d0efc",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Subatomic: An Atom Building Game",
+  "aliases": [
+    "Subatomic"
+  ],
+  "editionLabel": "English rulebook linked from Genius Games’ second-edition page",
+  "firstPlayerRule": "The person who did a science experiment most recently goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the First Player Marker. They take the first turn, then turns continue clockwise.",
+    "A turn consists of playing cards for actions, followed by refreshing the play areas."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1ERfQyg3gewCdxl8gjGGFzpRRDrjbRFml/view?usp=sharing",
+      "title": "Subatomic: An Atom Building Game — Genius Games rules",
+      "publisher": "Genius Games",
+      "printedPages": [
+        "2",
+        "3",
+        "4",
+        "9",
+        "14"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4,
+        5,
+        10,
+        15,
+        16
+      ],
+      "location": "Cover; Game Setup; Gameplay — Summary of a Turn; Ending the Game; credits; back cover",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 3, 4, 5, 10, 15, 16. Rendered PDF page 4 (printed 3) awards the marker for the latest science experiment; PDF page 5 (printed 4) confirms that its holder takes the first clockwise turn. Page 10 describes finishing the round to equalize turns. Cover and credits were inspected. The publisher product title identifies its second edition, but this linked PDF does not explicitly identify its printing; the public label preserves that distinction. PDF page 3 lists 11 starting cards while page 5's introduction says 10. This unrelated inconsistency is not resolved or repeated as setup advice. The PDF was retrieved through the public download for the exact Drive file linked by the publisher. Publisher discovery URL: https://www.geniusgames.org/products/subatomic-an-atom-building-game-2nd-edition. Local source SHA-256: ee7b6209c34d6637f782bf0c6a886b35b389d68d97f7a3c050bd728c3a9a2c6d. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, and relevant mode context. Owner authorization: Reload localhost, 2026-09-22. Included in the random mix because the criterion selects an individual first actor without requiring game-specific components; team seating in The King Is Dead does not replace individual turns.",
+  "uncertainty": [
+    "The publisher links this manual from its second-edition product page; the PDF itself does not explicitly identify its edition or printing year.",
+    "No initial-start tie-break is stated alongside the cited criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cargo-noir-days-of-wonder-en",
+  "slug": "cargo-noir-days-of-wonder-en",
+  "gameName": "Cargo Noir",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Days of Wonder English rules, 2015 V2 file",
+  "firstPlayerRule": "Whoever last visited a port in real life starts and takes the first-player marker. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player moves the game-turn marker forward at the start of each round.",
+    "On everyone's first turn, skip phases 1 and 2 and begin with phase 3, Sending Ships Out."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/cn_rules_2015_en.pdf",
+      "title": "Cargo Noir — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "3",
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        7
+      ],
+      "location": "Setting up the game; Starting the game; III. Sending Ships Out; PDF pages 3, 4, 7",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.daysofwonder.com/other-games/. Finding: Whoever last visited a port in real life starts and takes the first-player marker. Turns proceed clockwise. Local source SHA-256: 8bcbc1dc2297bddcd4d626351aa46cb7e2c3ee46f97640212cb3830358093db0. All three cited pages were viewed. The port visit selects the starter; the first-turn phase exception applies to every player. The file's layout identifies English V2, 2015.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

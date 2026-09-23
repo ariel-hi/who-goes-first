@@ -1,0 +1,47 @@
+{
+  "id": "azul-2018-en",
+  "slug": "azul-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "619d904d7ed4ad5d0e9de45a379aeb22427a06d7eb15d304153c2a7b2ccf6ae3",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Azul",
+  "aliases": [
+    "Azul base game"
+  ],
+  "editionLabel": "English base game · copyright 2018",
+  "firstPlayerRule": "The player whose visit to Portugal was most recent starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If no one qualifies or your group cannot agree, you can agree to pick randomly. This is an optional house rule, not an official Azul tie-break.",
+  "clarifications": [
+    "Before the first turn, the starting player puts the marker in the center. Turns then proceed clockwise.",
+    "The floor-line penalty is separate: the first player to select tiles from the center also takes the marker and puts it on their floor line."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Rules-Next-Move-web.pdf",
+      "title": "Azul — English rulebook",
+      "publisher": "Next Move Games / Plan B Games",
+      "printedPages": [
+        "2",
+        "3",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        6
+      ],
+      "location": "Page 2, Game Setup step 5; page 3, Factory offer; copyright on page 6",
+      "checkedAt": "2026-09-19"
+    }
+  ],
+  "internalEvidence": "Visually inspected local Poppler renders of PDF pages 2, 3, and 6 on 2026-09-19. Page 2: ‘The player who most recently visited Portugal takes the starting player marker’. Page 3 explains center placement, clockwise turns, and taking the marker from the center. Page 6 shows copyright 2018 Plan B Games. Publisher page https://www.nextmove-games.com/en/azul/azul-game/ links this English manual. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion.",
+  "uncertainty": [
+    "No tie or no-visitor resolution appears in the starting instruction. Do not borrow the end-game scoring tie-break.",
+    "The hosting path contains 2024; it is not treated as an edition date."
+  ]
+}

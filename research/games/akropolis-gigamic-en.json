@@ -1,0 +1,51 @@
+{
+  "id": "akropolis-gigamic-en",
+  "slug": "akropolis-gigamic-en",
+  "gameName": "Akropolis",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Gigamic base-game rules, with official solo supplement",
+  "firstPlayerRule": "Whoever climbed a hill most recently takes the Chief Architect marker and plays first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "In the official solo mode, the human player starts against the Illustrious Architect."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://en.gigamic.com/index.php?controller=attachment&id_attachment=471",
+      "title": "Akropolis — Gigamic rules",
+      "publisher": "Gigamic",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup, Chief Architect marker; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://en.gigamic.com/index.php?controller=attachment&id_attachment=472",
+      "title": "Akropolis — official solo mode",
+      "publisher": "Gigamic",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Solo mode, Setup",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.gigamic.com/games-for-family/1115-product.html. Finding: Whoever climbed a hill most recently takes the Chief Architect marker and plays first. Local source SHA-256: cec65271fc6af15c3a4966fee948d8ad697f16bfb39e069390ca0deb9fa90a45. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

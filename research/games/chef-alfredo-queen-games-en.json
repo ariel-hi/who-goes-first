@@ -1,0 +1,36 @@
+{
+  "id": "chef-alfredo-queen-games-en",
+  "slug": "chef-alfredo-queen-games-en",
+  "gameName": "Chef Alfredo",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Queen Games English rules, copyright 2015",
+  "firstPlayerRule": "Whoever most recently helped cook a meal takes the die and goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/chef-alfredo_en.pdf",
+      "title": "Chef Alfredo — Queen Games rules",
+      "publisher": "Queen Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Game Components and setup, final paragraph beneath the die; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever most recently helped cook a meal takes the die and goes first. Local source SHA-256: d41283f75b5b206a9c88af038ba3bce0fb7e1a8a63680be006c9d5013413616c. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

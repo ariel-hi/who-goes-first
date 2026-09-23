@@ -1,0 +1,43 @@
+{
+  "id": "goblins-inc-cge-en",
+  "slug": "goblins-inc-cge-en",
+  "gameName": "Goblins, Inc.",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English CGE rules, October 2012 copyright",
+  "firstPlayerRule": "In the standard four-player game, whoever opened the box is the first round's starting player. That player and the opponent opposite them plan first.",
+  "officialTieBreak": "In the three-player variant, the lower-scoring member of the two-person team starts alongside the solo player; roll a die if those teammates are tied. The die also breaks lowest-score ties when selecting a starter for later rounds.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "During the four-player build, two players plan while their partners wait to build, then the roles switch. There is not a single player taking the whole opening turn alone.",
+    "The box-opening instruction applies to the first round. Later rounds use the lowest score."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/goblins-inc/rules/goblins-rules-en.pdf",
+      "title": "Goblins, Inc. — Czech Games Edition rules",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "5",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        11
+      ],
+      "location": "Build! Starting Player and Swapping Jobs; three-player Team Rules; PDF pages 5, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/goblins-inc. Finding: In the standard four-player game, whoever opened the box is the first round's starting player. That player and the opponent opposite them plan first. Local source SHA-256: b0608e6183bb9a5218ef30615a054e98eb041ddd0d109c848388544bbf089f2d. ",
+  "uncertainty": [
+    "No tie-break is stated specifically for the opening box-opener criterion.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

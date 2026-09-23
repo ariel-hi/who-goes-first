@@ -1,0 +1,53 @@
+{
+  "id": "iwari-thundergryph-en-2022",
+  "slug": "iwari-thundergryph-en-2022",
+  "gameName": "Iwari",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "ThunderGryph English retail rules, ©2022",
+  "firstPlayerRule": "Whoever traveled most recently takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the Totem Connection Scoring Marker, which also serves as the first-player token. Turns proceed clockwise.",
+    "An optional setup rule for later games starts the initial hand draft with the last player. It does not change who takes the first gameplay turn.",
+    "With two players, each person also plays for a shared third tribe after their own action; this does not replace the starting-player criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2023/01/iwari-retail-rulebook_en.pdf",
+      "title": "Iwari — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "location": "Setup step 5 and optional initial hand draft; Gameplay; two-player additional rules; credits; PDF pages 1, 3, 4, 5, 6, 7, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/iwari/. Finding: Whoever traveled most recently takes the first turn. Local source SHA-256: aacd005f8d272c7d104e737ea20c200ad4182827fc354c4954e020311d068fa8. The publisher links separate retail and Deluxe manuals. This record uses the eight-page retail-named English file, whose credits show ©2022 and whose setup includes two through five players. No year was inferred from the hosting path. The separately linked solo supplement is outside this record. The game-end unused-pieces tie-break is not a starting tie-break.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCoverage } from '../lib/content/coverage';
+const coverage = getCoverage();
+---
+<Layout title="Collection coverage — local review" description="Research inventory and missing source coverage. Development only." noindex={true}>
+  <div class="content-page">
+    <div class="preview-banner"><strong>Research inventory · development only</strong><br/>Game identities are not verified starting rules.</div>
+    <h1>Collection coverage.</h1>
+    <p>{coverage.games.length.toLocaleString('en')} game identities from <a href={coverage.indexSource}>First Player Fun</a>, discovered {coverage.discoveredAt}. This is the full inventory of that collection, not a claim to cover every board game.</p>
+    <p><strong>{coverage.researched}</strong> have a researched edition here. <strong>{coverage.pending}</strong> still need a primary source. <a href="/dev/games/">Open the {coverage.ruleCount} researched rules</a></p>
+    <p class="small muted">Matches use titles, aliases and reviewed identity corrections. They do not approve a rule or establish that all editions agree. Discovery links identify games; they are not publisher evidence.</p>
+    <div data-coverage>
+      <label class="search-box"><span>Search the full inventory</span><input type="search" placeholder="Game name or BGG number…" autocomplete="off" maxlength="100" disabled /></label>
+      <label>Research status <select data-filter disabled><option value="all">All games</option><option value="pending">Needs a primary source</option><option value="researched">Has a researched edition</option></select></label>
+      <p class="count-label" data-coverage-count role="status">{coverage.games.length} identities listed</p>
+      <ul class="coverage-list">{coverage.games.map(game => <li data-search={`${game.name} ${game.bggId}`} data-status={game.editions.length ? 'researched' : 'pending'}>
+        <div><strong>{game.name}</strong><small>BGG {game.bggId} · {game.editions.length ? 'Researched edition available' : 'Needs a primary source'}</small></div>
+        <div>{game.editions.map(edition => <a href={edition.href}>{edition.editionLabel}</a>)}<a href={game.discoveryUrl}>Discovery reference</a></div>
+      </li>)}</ul>
+      <p data-coverage-empty hidden>No matching game in this inventory.</p>
+      <noscript><p>All identities are listed above. Browser find works without JavaScript.</p></noscript>
+    </div>
+    <p><a href="/dev/review/">Review source evidence and revisions</a></p>
+  </div>
+</Layout>
+<style>
+  .coverage-list { list-style:none; padding:0; margin:20px 0; }
+  .coverage-list li { padding:16px 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; gap:16px; }
+  .coverage-list li[hidden] { display:none; }
+  .coverage-list strong,.coverage-list small { display:block; overflow-wrap:anywhere; }
+  .coverage-list small { color:var(--muted); font-size:12px; margin-top:6px; }
+  .coverage-list li>div:last-child { display:flex; flex-direction:column; align-items:flex-start; flex:0 0 40%; }
+  .coverage-list a { font-size:12px; display:flex; align-items:center; min-height:44px; }
+  select { min-height:44px; margin-left:12px; max-width:100%; }
+  @media(max-width:500px) { .coverage-list li { display:block; } select { display:block; margin:8px 0 0; } }
+</style>
+<script>
+  import { normalizeSearch } from '../lib/search';
+  const root = document.querySelector<HTMLElement>('[data-coverage]')!;
+  const input = root.querySelector<HTMLInputElement>('input')!;
+  const filter = root.querySelector<HTMLSelectElement>('select')!;
+  const entries = [...root.querySelectorAll<HTMLElement>('li')].map(element => ({ element, text: normalizeSearch(element.dataset.search!) }));
+  function update() {
+    const query = normalizeSearch(input.value); let count = 0;
+    for (const entry of entries) {
+      entry.element.hidden = !entry.text.includes(query) || (filter.value !== 'all' && entry.element.dataset.status !== filter.value);
+      if (!entry.element.hidden) count++;
+    }
+    root.querySelector<HTMLElement>('[data-coverage-count]')!.textContent = `${count} ${count === 1 ? 'identity' : 'identities'} found`;
+    root.querySelector<HTMLElement>('[data-coverage-empty]')!.hidden = count > 0;
+  }
+  input.addEventListener('input', update); filter.addEventListener('change', update);
+  input.disabled = false; filter.disabled = false;
+</script>

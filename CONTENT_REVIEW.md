@@ -1,0 +1,102 @@
+# Content review queue
+
+**Owner-authorized assistant review: 228 game rules approved for the catalog; 168 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+On 2026-09-23, Codex reviewed and published 60 original house questions under the owner's authorization, including the six earlier research drafts. They are separate from publisher rules, and the question picker draws the whole pool before repeating. Exact approved revisions are in `src/content/prompts/original-questions.json`; the six draft records remain in `research/prompts/` as research history.
+
+The latest Alley Cat, Red Raven, Board&Dice and Ludonova pass adds eleven approvals after inspecting 39 source-page renders. Five are new research records; six are reviewed existing drafts. Seven qualify for the random mix. Ancient World's second edition does not close the original identity, Ceylon's variant placement order is corrected, and official alternatives remain in main answers rather than tie-break fields. See `research/coverage/alley-red-raven-board-dice-ludonova-progress.md`.
+
+On 2026-09-22 the owner explicitly delegated factual review to Codex: “I am not going to personally read through every game rule, that's up to you to make sure it's correct. So in that way you have my approval.” This replaces the earlier requirement for a separate human signature on every rule. Codex must still check sources and record the actual reviewer and exact revision; the owner's authorization is not evidence that an unchecked rule is correct.
+
+Run `npm run dev`. Normal local navigation opens `/dev/games/` (reviewed rules plus research drafts) and `/dev/house-rules/` (the 60 published original questions). Open `/dev/review/` for evidence, uncertainties and exact revision hashes, or `/dev/coverage/` for the full research inventory. These routes do not exist in a static build. Keep the development server on localhost. The remaining research collection has not completed this editorial pass; it is not waiting for the owner to read it.
+
+The 2026-09-23 editorial pass rechecked 55 portable Gamewright instructions against cached publisher text and source-file hashes, plus Azul, Carcassonne, Ticket to Ride (2015), and Love Letter (2025). Setup context, edition scope, clarifications, and explicit fallbacks were checked. Sushi Go! and Chomp! were also checked and approved for the directory only: their simultaneous starts cannot choose one person. Exact approved records live in `src/content/games/`; original research copies are preserved. The wider discovery inventory remains unfinished.
+
+The Ravensburger pass adds eight reviewed catalog entries and seven portable criteria. Chronicles of Light remains directory-only because its first Leader coordinates a cooperative round without individual turns. Dutch ALIEN, German Coco Crazy and Italian Horrified instructions are explicitly labeled English summaries of those source languages. Asara remains held for its missing initial setup sheet. See `research/coverage/ravensburger-progress.md`.
+
+The next pass adds ten reviewed records from Deep Print, Cocktail Games, Helvetiq and Horrible Guild. Seven join the random mix. Savannah Park and Caldera Park assign shared-action choosers, while Corrosion leaves the method open and offers rusty-object spotting only as an example; these three remain directory-only. Initial and subsequent rounds are separated for Kawaii and Kinoko. See `research/coverage/park-cocktail-guild-helvetiq-progress.md`.
+
+The Eagle-Gryphon, Ludonaute and 2F-Spiele pass adds ten reviewed edition records, three eligible for the random mix. Mercado de Lisboa, Bot Factory and Nomads provide usable personal-history criteria. Both Incan Gold editions are simultaneous; Federation leaves the method open; On Mars and Escape Plan require phase distinctions; Inventions has a player-count/Chronos exception; Fearsome Floors compares players with the game’s monster. These seven remain directory-only. See `research/coverage/eagle-ludonaute-2f-progress.md`.
+
+The next combined pass adds Rococo Deluxe, Harmonies, Meadow, PARKS, Anachrony, Astra, Trickerion, Septima and both Perseverance episodes. Nine main answers are portable personal-history criteria. Trickerion remains directory-only: its top-hat rule chooses a Magician first, while opening Initiative Order is separately randomized. Anachrony’s optional asset draft is explicitly distinguished from its standard déjà vu criterion. See `research/coverage/mixed-mindclash-progress.md`.
+
+The ThunderGryph and Sinister Fish pass adds twelve reviewed records, eleven eligible for the random mix. Cat-a-comb selects a setup player whose opponent takes the first actual turn. Moon has a Production Phase before sequential Construction turns; its two-player exception is explicit. Streets retains its undefined subjective criterion without an invented measure. See `research/coverage/thundergryph-sinister-progress.md`.
+
+The Gamelyn pass adds six reviewed English records from official Dized references, with five eligible for the random mix. Tiny Epic Zombies remains directory-only; the Human-player qualification is labeled as interpretation. HTML section links replace PDF page references. See `research/coverage/gamelyn-dized-progress.md`.
+
+The Osprey and Genius Games pass adds five reviewed catalog entries and five portable criteria. Their 28 listed rendered PDF pages were inspected. Cytosis preserves initial-resource and later-marker context; Subatomic explicitly distinguishes the publisher page’s second-edition title from the PDF’s unspecified printing. See `research/coverage/osprey-genius-progress.md`.
+
+The Capstone and Atlas pass adds seven reviewed catalog entries and four portable criteria after inspecting 25 rendered source pages. Curious Cargo retains phase priority and simultaneous Construction; Joan of Arc distinguishes multiplayer from solo; Once Upon a Time requires a Story Card. Gloom’s official fallback applies only when all players had equally miserable days. See `research/coverage/capstone-atlas-progress.md`.
+
+The Renegade, North Star and Thunderworks pass adds six reviewed entries and five portable criteria after inspecting 36 rendered source pages. Nature keeps its Quick Play distinction; Goblin Vaults identifies the first human bidder after Glavrun’s two-player reveal. Terror Below remains directory-only. See `research/coverage/renegade-northstar-thunderworks-progress.md`.
+
+The Underdog, Thunderworks and Next Move pass adds seven reviewed entries and six portable criteria after inspecting 35 rendered source pages. The two Trekking manuals retain their edition labels; FlipToons remains directory-only because its opening phases are simultaneous. Beez preserves reverse setup order and clockwise play. See `research/coverage/underdog-thunderworks-progress.md`.
+
+The Canvas, Dinosaur Island and Adventure Games pass adds seven reviewed entries and seven portable criteria after inspecting 32 rendered source pages. Dinosaur Island keeps its official theme-park fallback; Canvas identifies the original ©2021 manual; each Adventure Games title has independently checked opening and edition instructions. See `research/coverage/canvas-dinosaur-adventures-progress.md`.
+
+The Snowdale, Rietburg and Steve Jackson Games pass adds six reviewed entries and three portable criteria after inspecting 22 rendered source pages. Previous-game-dependent branches remain catalog-only. Dawn of Peacemakers preserves its official random alternative and explicitly covers the shortened campaign source. See `research/coverage/snowdale-rietburg-sjgames-progress.md`.
+
+The Rio Grande and Zoch editorial pass approves fourteen existing drafts after re-inspecting 20 rendered source pages. Six join the random mix; the other eight retain their setup-role, simultaneous, open-choice or address-specific distinctions in the directory. Research coverage is unchanged. See `research/coverage/rio-grande-zoch-review-progress.md`.
+
+## Random-mix eligibility
+
+The Dized follow-up pass adds ten reviewed records and six portable criteria. Big Monster, Coup, Flamme Rouge and New York Slice remain directory-only with their simultaneous, prior-game or setup-role distinctions. Volcano explicitly identifies the Fiesta Caldera variant. Four official random alternatives remain in the main answers without a duplicate house-rule label. Balloon Pop's title match belongs to a different game and is not counted. See `research/coverage/dized-followup-progress.md`.
+
+`src/content/random-rule-pool.json` is an explicit reviewed allowlist, separate from the game directory. It contains 168 portable first-player criteria. It excludes simultaneous play, team/role assignment, component-dependent setup, and rules that merely say to choose randomly. Other unreviewed candidates are excluded by default. The fingerprint covers the full public answer, edition, sources, clarifications, and fallbacks. Changes invalidate eligibility until checked again. Do not refill this list automatically from every research record or from keyword matching.
+
+The 86 Gamewright drafts added on 2026-09-23 UTC have publisher URLs, PDF page locations, source-file hashes, and individually written starting answers. Review these through the same queue. Their edition labels identify the exact linked publisher PDF without guessing a publication year. Particular review points: Imagine has an explicit youngest-player fallback; Chomp! begins simultaneously; Marshmallow Test's dealer also leads; Three of a Crime's first eyewitness and first detective are different people; Hit List has a neutral-reader option. Boochie and Hit or Miss remain unresolved source leads and have no invented answer pages. See `research/coverage/gamewright-progress.md`.
+
+The Blue Orange batch adds 13 edition records for 12 more inventory games. Review the separate US/UK Spin Circus answers and their cross-linked sources; Disc Cover's competitive-only criterion; the Next Station controller roles; and Lost Seas' explicitly labeled English summary of a French manual. All relevant starting instructions were visually inspected. See `research/coverage/blue-orange-progress.md`.
+
+The Rio Grande and Zoch batches add 14 more researched entries. Pay attention to Beyond the Sun's official random tie-break, Butterfly's official undecidable-case fallback, Trans-Siberian Railroad's auction/Phase 1 distinction, and the simultaneous or cooperative role assignments in Niagara, Alles Tomate!, Für die Katz and Ist da wer?!. See `research/coverage/rio-grande-progress.md` and `zoch-progress.md`.
+
+| Candidate | Source inspected (one-based PDF pages) | Editorial review focus |
+|---|---|---|
+| Azul, English copyright 2018 | Next Move PDF pages 2, 3, 6 | Portugal criterion; marker in center versus floor penalty; no invented tie-break |
+| CATAN, English copyright 2020, fifth-edition credits | Publisher PDF pages 4, 12, 13, 15 | Oldest player for beginners; highest dice roll for variable setup; first regular turn after reversed placement round |
+| Ticket to Ride, North America, English 2015 reprint | Days of Wonder PDF pages 2, 4 | Experienced traveler is undefined; clockwise; distinguish PDF page from printer's Page3 label |
+| Carcassonne, English 2021 V3 | Z-Man PDF pages 3, 6; 2026-09-22 | Youngest; clockwise; unspecified age tie |
+| UNO, English 112-card 10020-SN70_G1 | Mattel single-sheet English panel; 2026-09-22 | Dealer versus first player; opening Reverse, Skip, Draw Two and Wild exceptions; older 42001 rules differ |
+| Wingspan, English standard multiplayer | Official Rulepop Setup → Player with expansions disabled; 2026-09-22 | Random choice is official; exclude Automa/Duet/Flock variants |
+| Codenames, English EN 30, 2025 | CGE PDF pages 2, 4, 7; 2026-09-22 | Key determines starting team; its spymaster gives first clue |
+| Splendor, English 2024 refresh | Space Cowboys two-sheet rules; 2026-09-22 | Youngest receives First Player marker; not Duel |
+| 7 Wonders, English 2020 | Repos PDF pages 4, 8; 2026-09-22 | Simultaneous play; teaching suggestion does not appoint a first player |
+| Pandemic, English copyright 2013 | Z-Man PDF pages 3, 8; 2026-09-22 | Largest individual City-card population, not hand total or real-world residence |
+| Dominion, English second edition, 2021 revision | Rio Grande PDF page 4; 2026-09-22 | Random for fresh game; previous untied winner goes last in rematch |
+| Love Letter, English 21-card bag edition, 2025 | Z-Man PDF pages 3, 4, 7, 15; 2026-09-22 | Most recent handwritten letter; later-round winner and tied-winner random selection |
+| Sushi Go!, English 2014 | Gamewright PDF pages 2, 6; 2026-09-22 | Simultaneous choice/reveal; not Party or Roll |
+| The Crew: The Quest for Planet Nine, English 2019 | Kosmos PDF pages 8, 10, 22; 2026-09-22 | Four-rocket commander chooses first task and leads first trick; exclude variants |
+| Cascadia, English base game | AEG image-based PDF pages 4, 5, visually read; 2026-09-22 | Recent wildlife sighting OR expressly permitted random alternative |
+| Kingdomino, English copyright 2016 | Blue Orange PDF pages 2, 3 visually inspected, page 4 copyright read; 2026-09-22 | Random king placement during setup versus the first regular turn on the lowest-numbered domino |
+| Dixit, English refresh, 2021 credits | Libellud PDF page 2 visually inspected, page 1 credits read; 2026-09-22 | First person to find a clue becomes storyteller; no age-based instruction inferred |
+| Tiny Towns, English base game | AEG rasterized PDF page 2, step 9 visually read; 2026-09-22 | Recent real-life construction; not Town Hall or solo rules |
+| Six original house prompts | `research/prompts/*.json` | Inclusive wording, optional participation, no sensitive disclosure, random tie-break escape |
+
+The first three records were checked on 2026-09-19; the other 15 records in the table above on 2026-09-22, and the new 86 Gamewright, 13 Blue Orange, eight Rio Grande and six Zoch records on 2026-09-23 UTC. Full compendium research remains unfinished. `research/coverage/discovery-index.json` includes 1,320 discovered game identities, not their rules. It is separate from the usable rule count and cannot be approved as a factual rule record. See `research/coverage/README.md` for coverage and continuing research.
+
+Source PDFs/rendered pages are local research-only files under ignored `research/source-files/`. Re-download the initial source set with `scripts/fetch-research.py` and `research/source-manifest.json`. Later publisher batches use `scripts/research-gamewright.py` and `scripts/research-blue-orange.py`; see their coverage notes. Wingspan uses the publisher-linked official HTML reference. Never deploy or redistribute the manuals or screenshots. Internal evidence and uncertainties are in the draft JSON. Source availability alone is not approval.
+
+## Approve an exact revision
+
+1. Read the source in context and inspect edition/date/page information. Review all public wording, aliases, interpretation, fallback, and uncertainty. Edit the draft as needed. Do not resolve uncertainty by guessing.
+2. Run `npm run content:validate` and `npm run content:review`. The latter prints SHA-256 revisions and creates no approvals.
+3. Under the owner's standing authorization, Codex may complete the source review and approve the exact revision. Set `approvedBy` honestly to the assistant reviewer and authorization date; never invent a human signature. Set `approvedRevision` to the hash for exactly the reviewed content. Unresolved factual issues stay in research until the source resolves them; no per-rule owner approval is required.
+4. Set `status` to `approved` (or `published`), and `publishedAt` / `materiallyUpdatedAt` to actual applicable dates. Place that JSON in `src/content/games/` or `src/content/prompts/`. Remove the corresponding draft file from `research/` when the owner wants it out of the queue; keep history in version control.
+5. Run `npm run verify`, `npm run test:release`, and `npm run test:browser`. Review the static output, then authorize its separate deployment.
+
+Any source, answer, alias, evidence, or prompt change invalidates the hash. Review it again; do not simply refresh hashes automatically. Lifecycle metadata is not part of the hash. `needs-review` and `retired` records belong outside the approved directory and generate no public page. A failing source-link check alone does not justify deleting a previously verified rule.
+
+For an existing published rule with a temporarily broken source link, first investigate and record the issue. Retain the approved record if its facts remain sound. Investigate substantive contradictions and correct or withdraw the affected revision under the owner's authorization. Do not automatically rewrite facts from a failed link check or deploy changes without a deployment request.
+
+The validator enforces approval completeness and revision equality; it cannot prove factual correctness or reviewer identity. Source review and honest provenance provide that trust boundary. Test fixtures use explicit synthetic identities in an isolated copy, not real approvals.
+
+
+
+Art Decko and Art Robbery add two researched identities; For Sale, Schotten Totten and Time Bomb Evolution finish review. This adds five approved catalog entries and four portable criteria. See `research/coverage/art-mini-progress.md` for sources and the publication-audit correction.
+
+Age of Dirt and nine existing Czech Games Edition drafts add ten approved catalog entries and four portable criteria after inspecting 27 rendered source pages. Lost Ruins of Arnak, SETI, Tzolk'in and Age of Dirt join the random mix. The other six retain their setup-role, simultaneous or phase-order distinctions in the catalog. See `research/coverage/cge-wizkids-progress.md`.
+
+The Fowers, Dire Wolf and Isle of Trains batch adds five researched and approved records, four portable, after inspection of 30 rendered source pages. See `research/coverage/skellig-direwolf-trains-progress.md`.
+
+The R&R Games pass approves five existing drafts, four portable, after inspection of ten rendered source pages. Pyramid Poker retains its setup-phase instruction in the catalog. See `research/coverage/rnr-review-progress.md`.
+

@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "ghost-stories-repos-en",
+    "gameName": "Ghost Stories",
+    "sourceHint": "ghost-stories-cb429608.pdf",
+    "editionLabel": "Repos Production English rules, copyright 2008–2009",
+    "pages": [4, 9],
+    "printedPages": [4, 9],
+    "location": "Playing the Game; Rules for 1, 2, or 3 Players",
+    "firstPlayerRule": "The most recent person to watch a kung-fu movie starts. Turns then proceed clockwise.",
+    "clarifications": ["The solo game uses one player's Taoist and three neutral boards; it does not require choosing between several human players."],
+    "evidenceNotes": "The starting instruction and nearby four-player setup were read on rendered page 4. Page 9 was separately inspected for the one-, two- and three-player adjustments and solo example. The source credits state copyright 2008–2009. No alternative starter or tie resolution is supplied alongside the movie criterion."
+  },
+  {
+    "slug": "last-bastion-repos-en",
+    "gameName": "Last Bastion",
+    "sourceHint": "last-bastion-c8ba029e.pdf",
+    "editionLabel": "Repos Production English rules, copyright 2019",
+    "pages": [6, 11],
+    "printedPages": [6, 11],
+    "location": "Game Turn; Games with Less Than 4 Players",
+    "firstPlayerRule": "Whoever most recently defended a person or an honorable cause takes the first turn. Continue clockwise.",
+    "clarifications": ["A turn begins with the Horde phase, followed by the Hero phase.", "For fewer than four players, each person chooses one Hero; unused Horde boards become neutral boards. In a two-player game, the two Hero boards must face each other."],
+    "evidenceNotes": "Rendered pages 6 and 11 were inspected, including the one-player row and the two-player seating note. The staging-rprod URL is the English rulebook directly linked by the publisher's current product page, not a guessed replacement URL. Copyright 2019 appears in the source credits."
+  },
+  {
+    "slug": "spooky-tower-repos-en",
+    "gameName": "Spooky Tower",
+    "sourceHint": "spooky-tower-825659f5.pdf",
+    "editionLabel": "Repos Production English rules, copyright 2026",
+    "pages": [4],
+    "printedPages": [4],
+    "location": "Gameplay Overview, opening instruction",
+    "firstPlayerRule": "Use the game's playful criterion: whoever most recently saw a ghost starts. Play then continues clockwise.",
+    "clarifications": ["The starting player begins by dropping both dice into the clock tower."],
+    "uncertainty": ["The cited instruction does not define what counts as seeing a ghost or give an alternative when nobody qualifies."],
+    "evidenceNotes": "The rendered page is printed page 4. Extraction also included a stray 5 from an adjacent layout object; it is not a spread or a second cited page. The source's credits identify copyright 2026. No assertion that ghosts exist or that a player has seen one is being made."
+  },
+  {
+    "slug": "secrets-repos-en",
+    "gameName": "Secrets",
+    "sourceHint": "secrets-6dfa34da.pdf",
+    "editionLabel": "English rules hosted by Repos Production, copyright Sombreros Production 2017",
+    "pages": [3, 4],
+    "printedPages": [3, 4],
+    "location": "Setup, first active player; Player Turn",
+    "firstPlayerRule": "Use the rulebook's joke criterion—most recently abducted by the CIA or KGB—or choose the starter randomly. Continue clockwise.",
+    "officialTieBreak": "Random selection is an explicitly permitted alternative in the rulebook.",
+    "houseFallback": null,
+    "clarifications": ["Place the Character deck in front of the first active player. After each turn, pass it to the player on the left, who becomes the next active player."],
+    "evidenceNotes": "Both rendered pages were inspected. Random selection is offered unconditionally as an alternative, rather than only when the thematic criterion is tied. Repos hosts this English rulebook; its credits name Sombreros Production and copyright 2017."
+  },
+  {
+    "slug": "stupefy-repos-en",
+    "gameName": "Stupefy!",
+    "aliases": ["Stupefy", "Harry Potter Stupefy"],
+    "sourceHint": "stupefy-2bbd667d.pdf",
+    "editionLabel": "Repos Production English rules, copyright 2022",
+    "pages": [2, 3, 4],
+    "printedPages": [2, 3, 4],
+    "location": "Setup step 9; Gameplay and Share Rewards; Become the Favourite card",
+    "firstPlayerRule": "Whoever was the best notetaker at school becomes the first round's Favourite. That player announces and manages the phases.",
+    "clarifications": ["Players prepare, target and cast their spells simultaneously; the Favourite is the round leader, not the only person who acts first.", "When sharing rewards, start with the Favourite and continue clockwise among players whose flags are still standing. If the Favourite cannot participate, the first eligible player to their left chooses first.", "Taking the Become the Favourite card gives you that role for the next round."],
+    "evidenceNotes": "All three rendered pages were inspected. The notetaker criterion assigns the first Favourite, while the fallback on page 3 applies only to taking rewards. It is not a tie-break for choosing the initial Favourite. The separate reward card controls the next round. The credits state copyright 2022."
+  },
+  {
+    "slug": "city-of-horror-repos-en",
+    "gameName": "City of Horror",
+    "sourceHint": "city-of-horror-046404a2.pdf",
+    "editionLabel": "Repos Production English rules, copyright 2013",
+    "pages": [4, 5],
+    "printedPages": [4, 5],
+    "location": "Setup steps 2–3; Movement Card Selection; Character Movement",
+    "firstPlayerRule": "Give the First Player token to whoever looks most like a zombie. That player moves a character first during the Character Movement phase.",
+    "clarifications": ["During setup, place the Zombie Leader token on that player's color. Character placement starts with the player to their right and goes counterclockwise, so the first player places their characters last.", "Movement cards are normally chosen secretly and revealed simultaneously. Actual character movement then starts with the First Player token holder and proceeds clockwise.", "The B side of the Water Tower lets players with characters there choose their movement cards after the others have revealed theirs."],
+    "evidenceNotes": "Rendered setup and movement pages were inspected. The criterion assigns a token, not a separate entire turn before everyone else. Initial placement order is the reverse of subsequent character-movement order. Page 7 was also inspected for later token changes, which are not generalized into an initial-player tie-break. The source credits state copyright 2013."
+  },
+  {
+    "slug": "terror-in-meeple-city-repos-en",
+    "gameName": "Terror in Meeple City",
+    "aliases": ["Rampage", "Terror in Meeple City (aka Rampage)"],
+    "sourceHint": "terror-in-meeple-city-7736c6a4.pdf",
+    "editionLabel": "Repos Production English Rampage rulebook, copyright 2013",
+    "pages": [4],
+    "printedPages": [],
+    "location": "Overview of a Game Turn, opening red panel on the unnumbered fourth PDF page",
+    "firstPlayerRule": "Whoever gives the most convincing giant-monster impression starts. Take turns clockwise after that.",
+    "clarifications": ["The publisher's Terror in Meeple City page links this rulebook under the game's earlier title, Rampage."],
+    "uncertainty": ["The rulebook does not supply a judging procedure for the monster impressions."],
+    "evidenceNotes": "The publisher download context, rendered Rampage cover and unnumbered starting page were checked. The title alias is not a match to an unrelated game. The source credits state copyright 2013. No tie-break was inferred."
+  }
+]

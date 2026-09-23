@@ -1,0 +1,40 @@
+{
+  "id": "seismic-atlas-en",
+  "slug": "seismic-atlas-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4f261940aecd59ab2b4829eccd4f3e1779729c329b0b43bb64191e2b6bb02352",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Seismic",
+  "aliases": [],
+  "editionLabel": "Atlas English rules, single-sheet publisher PDF",
+  "firstPlayerRule": "The player seated closest to a solid doorframe goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the nearest seat is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Turns then proceed clockwise. Each turn draws and places a tile, with an optional road crew placement if allowed.",
+    "The rule awarding a tie to the tallest player concerns the final score, not the choice of starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.atlas-games.com/pdf_storage/SeismicRulesSheetENG.pdf",
+      "title": "Seismic — Atlas Games rules",
+      "publisher": "Atlas Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup, final bullet; Game Play; End Game; Variants",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1. The rendered single sheet gives the seated-nearest-solid-doorframe criterion in Setup and then clockwise individual tile-placement turns. The tallest-player tie-break appears only under End Game. The four printed variants do not supply an alternative initial starter. The sheet has no printed folio or edition date; none is inferred. Publisher discovery URL: https://atlas-games.com/product_tables/AG1300. Local source SHA-256: 55c12dfe7e9f051e35909ad7dd28bcac3fc09163d8a2b3d98e649655f678c7c7. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The seating-distance criterion chooses an individual first actor without game-specific components. The endgame tie-break is not reused for initial selection.",
+  "uncertainty": [
+    "No distance-tie rule is stated for the initial starter.",
+    "The linked rules sheet does not identify a printing year.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

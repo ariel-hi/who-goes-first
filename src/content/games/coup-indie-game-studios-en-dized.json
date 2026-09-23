@@ -1,0 +1,63 @@
+{
+  "id": "coup-indie-game-studios-en-dized",
+  "slug": "coup-indie-game-studios-en-dized",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6601a581b466eae144e4fc2abd48b91109f61b339431ef0e67dd221dc5d328ed",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Coup",
+  "aliases": [],
+  "editionLabel": "Indie Game Studios English base rules, official Dized reference",
+  "firstPlayerRule": "The previous game's winner goes first, or choose the starting player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise. On each turn, take one action; passing is not an option.",
+    "With two players, the starter receives one coin and the other player receives two. This applies to both regular setup and the optional two-player card-selection setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/VQFplTJ8TIm-j1-U_pvpZg/turn-order",
+      "title": "Coup — Turn order",
+      "publisher": "Indie Game Studios, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Turn order section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/AM39r8IyTcmrHEMIQLGypQ/regular-setup",
+      "title": "Coup — Regular setup",
+      "publisher": "Indie Game Studios, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Regular setup section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/HvgSyeErQJu2CsY62hqNig/two-player-variant-setup",
+      "title": "Coup — Two-player variant setup",
+      "publisher": "Indie Game Studios, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Two-player variant setup section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/5cGXWUJOTUeJc4X3Gz9w5A/actions",
+      "title": "Coup — Actions",
+      "publisher": "Indie Game Studios, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Actions section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read all 4 cached rule-section bodies for this game, including relevant variants. Its index identifies Indie Game Studios and explicitly describes these as publisher-maintained official rules. Turn order supplies a previous-winner instruction and an official random alternative. No most-recent-win-in-any-game wording was substituted. Both setup sections explicitly give the two-player starter only one coin. This reference covers base Coup, not an expansion's faction rules. Source snapshots: https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/coup SHA-256 7f509e6c4cda65d186837bc7bca7e204de8330c068b495a330bee6c550911077; https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/AM39r8IyTcmrHEMIQLGypQ/regular-setup SHA-256 3d097b336be4a7b4a8fd3849aeb721bf0805220b770614ca6cce4ce43d97f815; https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/HvgSyeErQJu2CsY62hqNig/two-player-variant-setup SHA-256 64f4ee440660dcff6ad5899f2da5026a21acdf30de247aa769ff13f79d38eb74; https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/VQFplTJ8TIm-j1-U_pvpZg/turn-order SHA-256 11b1b8d4c1c054310476844e9593840a907602f16a4a4dcbeb5e8817eb9d5ee0; https://rules.dized.com/game/xzsTtI3VTV-2wvos3otxIg/5cGXWUJOTUeJc4X3Gz9w5A/actions SHA-256 b340446186672a86b32c0c343cc7baf2eb3d71a24c648226e47075089fa82530. Editorial review 2026-09-23: Codex reviewed the complete cached English HTML sections, identity and edition, opening actions versus setup roles, ties, alternatives and variants. Owner authorization: Reload localhost, 2026-09-22. Directory only: this is previous-game order or random selection, rather than a standalone criterion for a fresh session. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+  "uncertainty": [
+    "This record covers the named official online reference; other editions may differ."
+  ]
+}

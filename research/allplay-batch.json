@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "high-society-allplay-en",
+    "gameName": "High Society",
+    "sourceHint": "high-society-32e5d75d",
+    "editionLabel": "English Allplay edition, rulebook with 2025 copyright",
+    "pages": [1],
+    "printedPages": [2, 3],
+    "location": "Setup step 3 and Playing the Game, middle panels of the first PDF sheet",
+    "firstPlayerRule": "The most smartly dressed player starts the first auction. The rules also allow choosing the first player at random.",
+    "officialTieBreak": "Random selection is an official alternative; it is not restricted to a tie.",
+    "houseFallback": null,
+    "evidenceNotes": "The source describes the criterion as most dapper. Copyright 2025 is visible on printed page 1 of the same PDF sheet."
+  },
+  {
+    "slug": "river-valley-glassworks-allplay-en",
+    "gameName": "River Valley Glassworks",
+    "sourceHint": "river-valley-glassworks-90a8d107",
+    "editionLabel": "English Allplay multiplayer rules, four-page publisher PDF",
+    "pages": [1],
+    "location": "Setup step 5",
+    "firstPlayerRule": "Whoever saw a river most recently takes the first-player marker and starts.",
+    "evidenceNotes": "The extracted text misnumbers this instruction as step 2; rendered page shows step 5. This is the multiplayer manual, not the separate solo rulebook."
+  },
+  {
+    "slug": "through-the-desert-allplay-en",
+    "gameName": "Through the Desert",
+    "sourceHint": "through-the-desert-27013bfb",
+    "editionLabel": "English Allplay base-game rules, four-page publisher PDF",
+    "pages": [1, 2],
+    "location": "Setup step 4; Place Leaders and Game Turns",
+    "firstPlayerRule": "The person who most recently drank water goes first.",
+    "clarifications": ["This player places the first caravan leader. Leader placement and subsequent turns proceed clockwise."]
+  },
+  {
+    "slug": "panda-panda-allplay-en",
+    "gameName": "Panda Panda",
+    "sourceHint": "panda-panda-5855e6f7",
+    "editionLabel": "English Allplay rules, two-sheet publisher PDF",
+    "pages": [1],
+    "location": "Setup step 3 and Game Rounds",
+    "firstPlayerRule": "The player who saw a panda most recently starts. Seeing one in a picture or video counts.",
+    "clarifications": ["This selects the first player for the opening round."]
+  },
+  {
+    "slug": "habitats-allplay-en",
+    "gameName": "Habitats",
+    "sourceHint": "habitats-9134d87a",
+    "editionLabel": "English rules linked by Allplay, four-page publisher PDF",
+    "pages": [1],
+    "location": "Setup step 7",
+    "firstPlayerRule": "Whoever fed an animal most recently starts and takes the Turn Tracker and Turn Marker."
+  },
+  {
+    "slug": "pollen-allplay-en",
+    "gameName": "Pollen",
+    "sourceHint": "pollen-404e72cd",
+    "editionLabel": "English Allplay rules, publisher file labeled v18",
+    "pages": [2],
+    "location": "Preparation, below the Player Count Adjustments table",
+    "firstPlayerRule": "The person who most recently watered a plant takes the first turn."
+  },
+  {
+    "slug": "switchbacks-allplay-en",
+    "gameName": "Switchbacks",
+    "sourceHint": "switchbacks-4951163d",
+    "editionLabel": "English Allplay rules, four-page publisher PDF",
+    "pages": [2],
+    "location": "Setup step 4",
+    "firstPlayerRule": "Whoever went hiking most recently goes first."
+  },
+  {
+    "slug": "roll-to-the-top-journeys-allplay-en",
+    "gameName": "Roll to the Top: Journeys",
+    "aliases": ["Roll to the Top Journeys"],
+    "sourceHint": "roll-to-the-top-edbf2ce1",
+    "editionLabel": "English Journeys rules linked by Allplay",
+    "pages": [2],
+    "location": "Setup; Roll Dice and Explore the Landmark",
+    "firstPlayerRule": "The player who most recently took a trip is the first active player and rolls the exploration dice. Everyone fills in their boards simultaneously using the rolled numbers.",
+    "clarifications": ["The starting rule chooses the initial dice roller; it does not give that person an exclusive board-filling turn."],
+    "evidenceNotes": "The current Allplay asset and the older Shopify v15 file both identify Journeys, with the same starting instruction. They have different file hashes; only the inspected current Allplay asset is cited here, and the second download is not counted as another edition."
+  },
+  {
+    "slug": "pies-allplay-en",
+    "gameName": "Pies",
+    "sourceHint": "pies-2de0b88c",
+    "editionLabel": "English Allplay rules, four-page publisher PDF",
+    "pages": [1, 2],
+    "location": "Setup final sentence and Tricks opening instruction",
+    "firstPlayerRule": "The player who most recently ate a piece of pie leads the first trick.",
+    "clarifications": ["Later card-selection order is determined by the cards played into each trick."]
+  },
+  {
+    "slug": "qe-allplay-en",
+    "gameName": "QE",
+    "aliases": ["Q.E.", "Quantitative Easing"],
+    "sourceHint": "qe-7b2c01f8",
+    "editionLabel": "English rules linked by Allplay, publisher file labeled 2019 EN",
+    "pages": [1],
+    "printedPages": [1],
+    "location": "Setup step 5",
+    "firstPlayerRule": "Whoever visited a bank most recently is the first auctioneer and takes the First Auctioneer Token.",
+    "clarifications": ["That person keeps this token for the game to mark the start of each round."]
+  },
+  {
+    "slug": "big-top-allplay-en",
+    "gameName": "Big Top",
+    "sourceHint": "big-top-bb4c578a",
+    "editionLabel": "English Allplay rules, four-page publisher PDF",
+    "pages": [1, 2],
+    "location": "Preparation final sentence and Auctions",
+    "firstPlayerRule": "The person most afraid of clowns becomes the first auctioneer.",
+    "clarifications": ["The auctioneer selects an attraction to auction and makes the opening bid or passes.", "This is Allplay's circus auction game. Gamewright's Big Top is a different animal-and-color recognition game."]
+  },
+  {
+    "slug": "basketboss-allplay-en",
+    "gameName": "Basketboss",
+    "aliases": ["Basket Boss"],
+    "sourceHint": "basketboss-666cd5bd",
+    "editionLabel": "English rules linked by Allplay, four-page publisher PDF",
+    "pages": [1, 2],
+    "location": "Setup step 6; Offer Contracts opening paragraph",
+    "firstPlayerRule": "The tallest person takes the Referee Advisor card and makes the first contract offer or passes.",
+    "clarifications": ["The rules call the people playing managers, to distinguish them from the basketball player cards.", "Taking the Referee during setup also requires returning $2m to the supply."]
+  }
+]

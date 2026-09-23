@@ -1,0 +1,36 @@
+{
+  "id": "match-of-the-penguins-gamewright-en",
+  "slug": "match-of-the-penguins-gamewright-en",
+  "gameName": "Match of the Penguins",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Gamewright rules · 3-page publisher PDF",
+  "firstPlayerRule": "The person whose home is closest to the South Pole starts by revealing cards.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/MatchofthePenguins-RULES.pdf",
+      "title": "Match of the Penguins — Gamewright rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "How to Play, PDF page 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The person whose home is closest to the South Pole starts by revealing cards. Local source SHA-256: 58707cf00bb56ed7a64ce1638e3b3b318650505e391f29fec1d9309e4a8fc441.",
+  "uncertainty": [
+    "No tie-break is stated alongside this starting instruction.",
+    "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

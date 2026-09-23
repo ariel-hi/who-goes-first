@@ -1,0 +1,43 @@
+{
+  "id": "first-rat-pegasus-en",
+  "slug": "first-rat-pegasus-en",
+  "gameName": "First Rat",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele English rules, second-printing download",
+  "firstPlayerRule": "Whoever most recently ate cheese goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starter takes the Start Rat marker and one cheese; later players receive their starting cheese according to clockwise order.",
+    "In solo play, you start before Greg the Robo-Rat."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/57/5c/6b/1717757235/4250231729942_firstrat_rules_en_2te_auflage_web-min.pdf?ts=1752574416",
+      "title": "First Rat — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "3",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        11
+      ],
+      "location": "Setup, step 12; Solo Play: Setup, final bullet; PDF pages 3, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/First-Rat/51232G. Finding: Whoever most recently ate cheese goes first. Local source SHA-256: 6179c1ee38567d8f226bf1b29fd0ddae2f0fb60c12aa0e325edda6af94f5dc85. The source URL identifies the second printing. Both the multiplayer starting instruction and the separate solo assignment were inspected on rendered pages.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

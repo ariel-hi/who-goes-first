@@ -1,0 +1,45 @@
+{
+  "id": "ticket-to-ride-2015-en",
+  "slug": "ticket-to-ride-2015-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "90279655ec01dbe2eba2fc5b89d0d19c195570c063043f4646610c1105ab88a8",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Ticket to Ride",
+  "aliases": [
+    "TTR",
+    "Ticket to Ride USA",
+    "Ticket to Ride North America"
+  ],
+  "editionLabel": "North America base game · English 2015 reprint",
+  "firstPlayerRule": "The most experienced traveler takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group cannot agree who qualifies, agree to pick randomly instead. This is an optional house rule, not the publisher’s tie-break.",
+  "clarifications": [
+    "Turns proceed clockwise after the starting player. This instruction belongs to the North America base game; it does not establish the rule for other Ticket to Ride titles."
+  ],
+  "interpretation": "The starting instruction does not define a scoring system for travel experience. Agree together rather than treating a particular measure as an official rule.",
+  "sources": [
+    {
+      "url": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf",
+      "title": "Ticket to Ride — English rules, 2015 reprint",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "Unnumbered components / setup page (printer header Page3)"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "PDF page 2, The Game Turn; PDF page 4, copyright; printer header identifies English 2015 reprint",
+      "checkedAt": "2026-09-19"
+    }
+  ],
+  "internalEvidence": "Visually inspected local Poppler renders of PDF pages 2 and 4 on 2026-09-19. PDF page 2: ‘The player who is the most experienced traveler goes first.’ The next sentence specifies clockwise play. The same page identifies the North America board. The printer header says rules EN reprint 2015; PDF page 4 has copyright 2004–2015 Days of Wonder. The page header’s Page3 is a printer label, not PDF page 3. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion.",
+  "uncertainty": [
+    "No definition of most experienced traveler or starting-player tie-break is given in the cited passage.",
+    "Do not reuse the end-game scoring tie-break for the initial player choice."
+  ]
+}

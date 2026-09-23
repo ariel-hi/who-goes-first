@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "tawantinsuyu-board-dice-en",
+    "gameName": "Tawantinsuyu: The Inca Empire",
+    "sourceHint": "tawantinsuyu-the-inca-empire-c47ba9b3",
+    "editionLabel": "English Board&Dice base-game rules, 28-page publisher booklet",
+    "pages": [7, 22],
+    "printedPages": [7, 22],
+    "location": "Setup, steps 14–15; Solo Rules, Gameplay",
+    "firstPlayerRule": "Whoever harvested a vegetable most recently starts. Alternatively, use any random selection method the group chooses.",
+    "officialTieBreak": "Random selection is an explicit alternative, with no requirement that the vegetable criterion first produce a tie.",
+    "houseFallback": null,
+    "clarifications": ["The starter also chooses a starting Weaving tile first, followed clockwise by the others. In solo play, the human player starts before Axomamma."]
+  },
+  {
+    "slug": "trismegistus-ultimate-formula-board-dice-en",
+    "gameName": "Trismegistus: The Ultimate Formula",
+    "editionLabel": "English original Board&Dice rules, 28-page booklet",
+    "sourceHint": "trismegistus-the-ultimate-formula-74a6b0ed",
+    "pages": [4, 8, 22, 26],
+    "printedPages": [4, 8, 22, 26],
+    "location": "Introductory Game Setup; Player Setup step 17; solo setup and difficulty options",
+    "firstPlayerRule": "For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative.",
+    "officialTieBreak": "Both setup methods explicitly permit random selection; neither makes it conditional on a tie.",
+    "houseFallback": null,
+    "clarifications": [
+      "The introductory starter receives the Duval Laboratory board. Standard setup skips that introductory assignment.",
+      "The base solo setup puts the human player first. An optional difficulty increase instead makes Botmegistus start, without a compensating Ethereal die.",
+      "These instructions belong to The Ultimate Formula, not the separately listed New Edition."
+    ],
+    "uncertainty": ["The standard setup does not define what qualifies as an alchemical transmutation."]
+  },
+  {
+    "slug": "trismegistus-new-edition-board-dice-en",
+    "gameName": "Trismegistus",
+    "aliases": ["Trismegistus New Edition"],
+    "editionLabel": "English Board&Dice New Edition multiplayer rules, 24-page booklet",
+    "sourceHint": "trismegistus-the-ultimate-formula-new-edition-0b61d22d",
+    "pages": [1, 8],
+    "printedPages": [8],
+    "location": "Cover; Player Setup, steps A and C3",
+    "firstPlayerRule": "Whoever made a potion most recently starts.",
+    "clarifications": [
+      "Put that player's marker first on the turn-order track, then place the other players' markers clockwise.",
+      "This is the revised New Edition. The original game, The Ultimate Formula, has a separate entry with different setup instructions."
+    ],
+    "evidenceNotes": "The publisher identifies this revised game at https://boardanddice.com/trismegistus-newedition/. Its cover says Trismegistus without the older subtitle. It does not stand in for the original inventory identity.",
+    "uncertainty": ["The thematic potion criterion is not defined in this setup passage. The separately offered solo rulebook is not covered here."]
+  }
+]

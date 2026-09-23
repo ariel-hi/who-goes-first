@@ -1,0 +1,36 @@
+{
+  "id": "three-of-a-crime-gamewright-en",
+  "slug": "three-of-a-crime-gamewright-en",
+  "gameName": "Three of a Crime",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "firstPlayerRule": "Whoever most recently visited a police station is the first eyewitness. The detective on their left makes the first questioning play.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/ThreeofaCrime-RULES.pdf",
+      "title": "Three of a Crime — Gamewright rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Opening round and questioning instructions, PDF page 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The English starting instruction in Opening round and questioning instructions on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever most recently visited a police station is the first eyewitness. The detective on their left makes the first questioning play. Local source SHA-256: c354554248c0d59348aa71e3a01780f992278a272648c09b4c3166a0b255e485.",
+  "uncertainty": [
+    "No tie-break is stated alongside this starting instruction.",
+    "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

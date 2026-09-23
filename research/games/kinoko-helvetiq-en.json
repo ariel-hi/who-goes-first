@@ -1,0 +1,38 @@
+{
+  "id": "kinoko-helvetiq-en",
+  "slug": "kinoko-helvetiq-en",
+  "gameName": "Kinoko",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Helvetiq multilingual rules, English sheet",
+  "firstPlayerRule": "Whoever most recently picked a mushroom starts. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "For later rounds, the player to the left of whoever announced the previous round's end starts the new round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://helvetiq.com/media/hexaattachment/products/attachments/Kinoko_Rules_Web.pdf",
+      "title": "Kinoko — Helvetiq rules",
+      "publisher": "Helvetiq",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "English sheet: Gameplay; End of the round; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://helvetiq.com/intl/kinoko. Finding: Whoever most recently picked a mushroom starts. Turns proceed clockwise. Local source SHA-256: 076fb00bb2584132757fa35b5b45ebd371937f6ec00f1c8a3946693a6de8d7c4. The full rendered English sheet, PDF page 3, was inspected. Picking a mushroom is the initial criterion; eating mushrooms is not stated. The later-round instruction and end-of-game tie-break were not substituted for the initial rule. No printed page number or publication year is shown on the sheet.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

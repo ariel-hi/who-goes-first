@@ -1,0 +1,41 @@
+{
+  "id": "dino-hunt-dice-sjgames-en-2013",
+  "slug": "dino-hunt-dice-sjgames-en-2013",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dino Hunt Dice",
+  "aliases": [],
+  "editionLabel": "Steve Jackson Games English rules, version 1.0, January 2013",
+  "firstPlayerRule": "The previous game's winner starts, or choose whoever makes the best dinosaur sound.",
+  "officialTieBreak": null,
+  "houseFallback": "If neither option settles the choice, or your group prefers another approach, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "Play passes to the left. Remember the starter so everyone receives the same number of turns when the final round is completed.",
+    "The dinosaur-sound option is an alternative starting criterion, not a stated tie-break for a previous win.",
+    "The extra round between tied leaders decides the winner at the end, not who starts the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.sjgames.com/dice/dinohunt/img/dinohuntdice_rules.pdf",
+      "title": "Dino Hunt Dice — Steve Jackson Games rules",
+      "publisher": "Steve Jackson Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Unnumbered first-page introduction; second-page Winning and credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved (the Dawn file is explicitly a shortened campaign excerpt); relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2. The full two-page official PDF states previous winner OR best dinosaur noise and explicitly passes play leftward. Winning on page 2 explains equal turns and a final-score tie round. Credits identify version 1.0, January 2013. The start rule was checked independently of Zombie Dice and Dinosaur Island. Publisher discovery URL: https://www.sjgames.com/dice/dinohunt/img/dinohuntdice_rules.pdf. Local source SHA-256: 4277a32b87ed6c0a4b8d2c6a667188dcfb7cdd30d0d30f480a75fb07f6ee78a8.",
+  "uncertainty": [
+    "No initial tie-break or scoring system for dinosaur sounds is specified.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

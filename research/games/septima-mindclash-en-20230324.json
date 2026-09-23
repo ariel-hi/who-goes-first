@@ -1,0 +1,57 @@
+{
+  "id": "septima-mindclash-en-20230324",
+  "slug": "septima-mindclash-en-20230324",
+  "gameName": "Septima",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Mindclash English rules, ©2023, file version 20230324",
+  "firstPlayerRule": "In multiplayer, whoever most recently made a mixed drink is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the Starting Player token. Players choose and reveal Action cards simultaneously, then resolve their actions in clockwise turn order.",
+    "Initial Leader placement proceeds counterclockwise from the last player. In the Full Game, the starting Spell choices and Ritual-marker placement use that same reverse order.",
+    "At the end of Autumn, Winter and Spring, pass the Starting Player token clockwise.",
+    "In solo play, you take the Starting Player token at setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/v85vkai7akxjbya/SEPTIMA_Rulebook_EN_websafe.pdf?dl=0",
+      "title": "Septima — Mindclash Games rules",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "22",
+        "23",
+        "26",
+        "27",
+        "38",
+        "39"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        6,
+        7,
+        12,
+        14,
+        20
+      ],
+      "location": "Cover; player setup steps 10–14; Select Action and Resolve Action; End of Season; solo player setup; credits; PDF pages 1, 6, 7, 12, 14, 20",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/septima/. Finding: In multiplayer, whoever most recently made a mixed drink is the starting player. Local source SHA-256: b8d6ab497a41729c10bc9c9b669b28b9d35f913b0d51424f21c9c1d334b60edc. The publisher directly links the public Dropbox manual. The first bounded download exceeded 70 MB and was not used. A complete 113,488,684-byte retrieval succeeded under a 120 MB limit; its hash was recorded. All six listed pages were visually inspected. The mixed-drink instruction is part of both Basic and Full setup, outside the Full Game-only box. No alcoholic-content condition or definition of mixed drink was invented. Ordered action resolution distinguishes this from an entirely simultaneous game.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

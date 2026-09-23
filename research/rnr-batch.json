@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "amalfi-renaissance-rnr-en",
+    "gameName": "Amalfi: Renaissance",
+    "sourceHint": "amalfi-renaissance-190c4fe8",
+    "editionLabel": "English R&R Games Renaissance rules, 24-page publisher booklet",
+    "pages": [6, 22],
+    "printedPages": [6, 22],
+    "location": "Players Setup, steps 6–9; Solo Challenge",
+    "firstPlayerRule": "Whoever most recently visited the ocean receives the wind-rose marker and starts the game.",
+    "clarifications": [
+      "The setup choice of starting cards runs in reverse turn order, beginning to the starter's right. It is a separate step from taking the first turn.",
+      "In the solo challenge, the human player acts first each period and the rival reacts afterward."
+    ]
+  },
+  {
+    "slug": "hanabi-rnr-en",
+    "gameName": "Hanabi",
+    "sourceHint": "hanabi-82f82656",
+    "editionLabel": "English R&R Games rules, 2013 copyright, folded booklet",
+    "pages": [1, 2],
+    "location": "The Game on the second PDF sheet; edition credits on the first sheet",
+    "firstPlayerRule": "The player wearing the most colorful clothing takes the first turn.",
+    "clarifications": ["Play continues clockwise."],
+    "evidenceNotes": "This image-only PDF was reviewed visually on both rendered sheets; extracted text was insufficient."
+  },
+  {
+    "slug": "humboldts-great-voyage-rnr-en",
+    "gameName": "Humboldt's Great Voyage",
+    "sourceHint": "humboldt-s-great-voyage-f5b20648",
+    "editionLabel": "English rules distributed by R&R Games, nine-page publisher PDF",
+    "pages": [3],
+    "printedPages": [11],
+    "location": "Setup, starting-player paragraph and voyage preparation",
+    "firstPlayerRule": "Whoever most recently went on a journey starts and takes the travel journal and knowledge-disk bag.",
+    "clarifications": ["This player also begins the optional setup card exchange and cargo-tile draw. Turns proceed clockwise."],
+    "evidenceNotes": "PDF page 3 is printed page 11, not printed page 3."
+  },
+  {
+    "slug": "pyramid-poker-rnr-en",
+    "gameName": "Pyramid Poker",
+    "sourceHint": "pyramid-poker-31740e27",
+    "editionLabel": "English R&R Games two-player base-game rules, 2016 copyright",
+    "pages": [1, 2],
+    "location": "Build Pyramid on the first sheet; Making Hands on the second sheet",
+    "firstPlayerRule": "The first player to say “Tut Tut” places the first block in the pyramid.",
+    "clarifications": ["Players alternate placing their blocks. Once all 30 blocks are placed, they continue taking turns to remove blocks and form poker hands."],
+    "uncertainty": ["This answer covers the two-player base rules, not the separately offered three-to-four-player addendum."]
+  },
+  {
+    "slug": "touria-rnr-en",
+    "gameName": "Touria",
+    "sourceHint": "touria-132d6b2e",
+    "editionLabel": "English rules distributed by R&R Games, eight-page publisher PDF",
+    "pages": [3, 4],
+    "printedPages": [11, 12],
+    "location": "Setup, starting-player paragraph; General Course of the Game",
+    "firstPlayerRule": "The player most eager to get married starts; the rules alternatively suggest whoever got married most recently.",
+    "clarifications": ["These are alternative starting criteria, not a stated tie-break sequence. The starter receives no setup bonus and takes the first turn moving the shared heroes' group; play then continues clockwise."],
+    "evidenceNotes": "PDF pages 3–4 are printed pages 11–12. Both alternative criteria appear in the same setup sentence."
+  }
+]

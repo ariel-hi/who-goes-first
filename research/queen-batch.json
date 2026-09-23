@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "chef-alfredo-queen-games-en",
+    "gameName": "Chef Alfredo",
+    "sourceHint": "chef-alfredo-554fa2b8.pdf",
+    "editionLabel": "Queen Games English rules, copyright 2015",
+    "pages": [1],
+    "printedPages": [],
+    "location": "Game Components and setup, final paragraph beneath the die",
+    "firstPlayerRule": "Whoever most recently helped cook a meal takes the die and goes first."
+  },
+  {
+    "slug": "kobold-queen-games-en",
+    "gameName": "Kobold",
+    "sourceHint": "kobold-fa50b8a4.pdf",
+    "editionLabel": "Queen Games English rules, copyright 2018",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "Flow of the Game, opening paragraph",
+    "firstPlayerRule": "Whoever most recently saw a kobold goes first.",
+    "officialTieBreak": "If the players cannot agree who should start, the youngest player goes first.",
+    "clarifications": ["Turns continue clockwise."]
+  },
+  {
+    "slug": "push-a-monster-queen-games-en",
+    "gameName": "Push a Monster",
+    "sourceHint": "push-a-monster-b2ab0766.pdf",
+    "editionLabel": "Queen Games English rules, two-page rule sheet",
+    "pages": [2],
+    "printedPages": [],
+    "location": "Playing the Game, opening paragraph",
+    "firstPlayerRule": "Whoever most recently saw a monster goes first.",
+    "officialTieBreak": "If the group cannot agree who starts, the youngest player begins.",
+    "clarifications": ["The starting player rolls the die. Turns continue clockwise."]
+  },
+  {
+    "slug": "speculation-queen-games-en",
+    "gameName": "Speculation",
+    "sourceHint": "speculation-c2a44482.pdf",
+    "editionLabel": "Queen Games English edition by Dirk Henn, copyright 2013",
+    "pages": [2, 3],
+    "printedPages": [2, 3],
+    "location": "Set-up, final paragraph; Sequence of play, first-turn exception",
+    "firstPlayerRule": "Whoever most recently bought stock shares goes first.",
+    "clarifications": ["On the opening turn, the active player uses a Trade tile and draws the movement tile randomly. Turns proceed clockwise."],
+    "uncertainty": ["No alternative is specified here if nobody has bought shares."]
+  },
+  {
+    "slug": "super-vampire-queen-games-en",
+    "gameName": "Super-Vampire",
+    "aliases": ["Super Vampire"],
+    "sourceHint": "super-vampire-54faa354.pdf",
+    "editionLabel": "Queen Games English rules, four-page rulebook",
+    "pages": [2],
+    "printedPages": [],
+    "location": "Gameplay, first paragraph",
+    "firstPlayerRule": "Whoever most recently met a vampire takes the first turn as the Super-Vampire.",
+    "officialTieBreak": "If nobody has met a real vampire, the youngest player starts.",
+    "clarifications": ["The other players begin as the sun players. The Super-Vampire role moves clockwise between rounds."]
+  },
+  {
+    "slug": "vienna-city-collection-queen-games-en",
+    "gameName": "Vienna",
+    "aliases": ["Vienna: Stefan Feld City Collection"],
+    "sourceHint": "vienna-b9da0e14.pdf",
+    "editionLabel": "Queen Games English rules, Stefan Feld City Collection 5",
+    "pages": [1, 5, 6, 7, 11],
+    "printedPages": [1, 5, 6, 7, 11],
+    "location": "Cover and game identity; introductory setup step 14; Card phase and Action phase; advanced setup",
+    "firstPlayerRule": "Whoever was most recently in Vienna takes the city crest and is first player; the rulebook also allows whoever was closest to Vienna.",
+    "clarifications": ["Everyone assigns cards simultaneously before the city-crest holder takes the first action turn.", "The advanced game keeps this starting-player instruction from the introductory setup."],
+    "uncertainty": ["The parenthetical alternative about being closer to Vienna is not explained further; the source supplies no measurement or tie procedure."],
+    "evidenceNotes": "The publisher file is the City Collection 5 agent-placement game, not the older Schmidt dice-placement game with the same title. The text extractor duplicates content across facing pages; the start instruction is visibly on printed/PDF page 5."
+  }
+]

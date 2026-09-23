@@ -1,0 +1,46 @@
+{
+  "id": "disney-hocus-pocus-the-game-ravensburger-en",
+  "slug": "disney-hocus-pocus-the-game-ravensburger-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a96baa91c47a5789330b9f3c1d61eeefe31606b9fd1b9ff0d476703c3f5f4ac5",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Disney Hocus Pocus: The Game",
+  "aliases": [
+    "Hocus Pocus",
+    "Hocus Pocus The Game"
+  ],
+  "editionLabel": "Ravensburger English rulebook, file 26946",
+  "firstPlayerRule": "Whoever last lit a candle starts. Play proceeds clockwise.",
+  "officialTieBreak": "If there is doubt about who should start, choose the oldest player.",
+  "houseFallback": null,
+  "clarifications": [
+    "A later round begins with the player to the left of whoever took the last turn of the previous round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26946%20Anl%20Disney%20Hocus%20Pocus.pdf?ossl=pds_text_Spielanleitung",
+      "title": "Disney Hocus Pocus: The Game — Ravensburger rules",
+      "publisher": "Ravensburger",
+      "printedPages": [
+        "2",
+        "3",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        6
+      ],
+      "location": "Setup step 6; Playing the Game; end-of-round step 7; PDF pages 2, 3, 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/strategy-games/disney-hocus-pocus-the-game-60001875. Finding: Whoever last lit a candle starts. Play proceeds clockwise. Local source SHA-256: 056261e139f930020b9e2486ce7007f3ca6855ac096d5cd4f8f8dbadfafd2233. All three cited pages were inspected as rendered images. The oldest-player instruction belongs to initial setup. The left-neighbor rule applies to later rounds. No publication year has been inferred from the download URL. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

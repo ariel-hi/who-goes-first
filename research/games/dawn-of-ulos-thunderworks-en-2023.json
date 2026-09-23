@@ -1,0 +1,51 @@
+{
+  "id": "dawn-of-ulos-thunderworks-en-2023",
+  "slug": "dawn-of-ulos-thunderworks-en-2023",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dawn of Ulos",
+  "aliases": [],
+  "editionLabel": "Thunderworks English rules, ©2023",
+  "firstPlayerRule": "In multiplayer, whoever woke up earliest today goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the wake-up times are tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the start player marker. Turns proceed clockwise: place a tile if able, optionally take an action, then draw a tile.",
+    "Finish the last round so that everyone has the same number of turns. The player to the marker holder’s right takes the last turn.",
+    "In solo mode, Ulrir always receives the start player marker and acts before the human player. Turns then alternate."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/DoU-Rulebook-Web.pdf?v=1700492576",
+      "title": "Dawn of Ulos — Thunderworks Games rules",
+      "publisher": "Thunderworks Games",
+      "printedPages": [
+        "unnumbered Game Setup",
+        "unnumbered How to Play",
+        "11",
+        "16–17",
+        "unnumbered credits"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7,
+        11,
+        16,
+        17,
+        20
+      ],
+      "location": "Game Setup step 8; How to Play; Game End and Final Scoring; Solo Mode setup step 7 and Ulrir Turn; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 4, 7, 11, 16, 17, 20. Game Setup selects whoever woke earliest today. How to Play confirms that marker holder begins clockwise individual turns. Game End preserves equal turn counts; the unused-rift tie-break is only for final scores. Solo setup explicitly awards Ulrir the marker and first turn, and the following page details that automated turn. The credits state ©2023. Publisher discovery URL: https://thunderworksgames.com/products/dawn-of-ulos-board-game. Local source SHA-256: ddfb57c3b646a59d1f8bc14be00b4921a1f98b9651f124ac2c813c09410df035.",
+  "uncertainty": [
+    "The source gives no initial-start tie-break for identical or uncertain wake-up times.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

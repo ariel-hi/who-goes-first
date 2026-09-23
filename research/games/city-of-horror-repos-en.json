@@ -1,0 +1,44 @@
+{
+  "id": "city-of-horror-repos-en",
+  "slug": "city-of-horror-repos-en",
+  "gameName": "City of Horror",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Repos Production English rules, copyright 2013",
+  "firstPlayerRule": "Give the First Player token to whoever looks most like a zombie. That player moves a character first during the Character Movement phase.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "During setup, place the Zombie Leader token on that player's color. Character placement starts with the player to their right and goes counterclockwise, so the first player places their characters last.",
+    "Movement cards are normally chosen secretly and revealed simultaneously. Actual character movement then starts with the First Player token holder and proceeds clockwise.",
+    "The B side of the Water Tower lets players with characters there choose their movement cards after the others have revealed theirs."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/City-Of-Horror/city-of-horror-rules-usa-1611844477269EU.pdf",
+      "title": "City of Horror — Repos Production rules",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Setup steps 2–3; Movement Card Selection; Character Movement; PDF pages 4, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.rprod.com/en/old-games/city-of-horror. Finding: Give the First Player token to whoever looks most like a zombie. That player moves a character first during the Character Movement phase. Local source SHA-256: d84f1b33770e57ae494af7f00a3a191cc40cc26c118a17e4a3576fc01341d57f. Rendered setup and movement pages were inspected. The criterion assigns a token, not a separate entire turn before everyone else. Initial placement order is the reverse of subsequent character-movement order. Page 7 was also inspected for later token changes, which are not generalized into an initial-player tie-break. The source credits state copyright 2013.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

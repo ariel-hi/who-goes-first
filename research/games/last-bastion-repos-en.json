@@ -1,0 +1,43 @@
+{
+  "id": "last-bastion-repos-en",
+  "slug": "last-bastion-repos-en",
+  "gameName": "Last Bastion",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Repos Production English rules, copyright 2019",
+  "firstPlayerRule": "Whoever most recently defended a person or an honorable cause takes the first turn. Continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "A turn begins with the Horde phase, followed by the Hero phase.",
+    "For fewer than four players, each person chooses one Hero; unused Horde boards become neutral boards. In a two-player game, the two Hero boards must face each other."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/staging-rprod/storage/downloads/games/last-bastion/regles/lab-rules-en-1616666142liGQM.pdf",
+      "title": "Last Bastion — Repos Production rules",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "6",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        11
+      ],
+      "location": "Game Turn; Games with Less Than 4 Players; PDF pages 6, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.rprod.com/en/games/last-bastion. Finding: Whoever most recently defended a person or an honorable cause takes the first turn. Continue clockwise. Local source SHA-256: 0f1a8f3eb46a053a3dbbbe97e225e565e86306962f0a9098905e79383f6bbc62. Rendered pages 6 and 11 were inspected, including the one-player row and the two-player seating note. The staging-rprod URL is the English rulebook directly linked by the publisher's current product page, not a guessed replacement URL. Copyright 2019 appears in the source credits.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

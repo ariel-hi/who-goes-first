@@ -1,0 +1,43 @@
+{
+  "id": "fauna-dv-giochi-it-summary",
+  "slug": "fauna-dv-giochi-it-summary",
+  "gameName": "Fauna",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "dV Giochi Italian rules, English summary",
+  "firstPlayerRule": "The player with the most exotic animal at home goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player receives the lion marker and card holder, and places the first estimate cube. Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/net/fauna/fauna_regole.pdf",
+      "title": "Fauna — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Preparazione, final paragraph; Il gioco, Piazzare i segnalini; PDF pages 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: The player with the most exotic animal at home goes first. Local source SHA-256: 2b916889193a3fa4c8ede9101da354408741db604062e55d6c6194ad73065a9c. Base game with 180 animal cards and a lion starting-player marker; not a junior or compact edition.",
+  "uncertainty": [
+    "The source does not define how to compare how exotic the animals are, or give a special rule for a group without animals at home.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

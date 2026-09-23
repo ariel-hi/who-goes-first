@@ -1,0 +1,48 @@
+{
+  "id": "trismegistus-ultimate-formula-board-dice-en",
+  "slug": "trismegistus-ultimate-formula-board-dice-en",
+  "gameName": "Trismegistus: The Ultimate Formula",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English original Board&Dice rules, 28-page booklet",
+  "firstPlayerRule": "For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative.",
+  "officialTieBreak": "Both setup methods explicitly permit random selection; neither makes it conditional on a tie.",
+  "houseFallback": null,
+  "clarifications": [
+    "The introductory starter receives the Duval Laboratory board. Standard setup skips that introductory assignment.",
+    "The base solo setup puts the human player first. An optional difficulty increase instead makes Botmegistus start, without a compensating Ethereal die.",
+    "These instructions belong to The Ultimate Formula, not the separately listed New Edition."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/g52fkpicc8l9bh8/Trismegistus_Rules_EN.pdf?dl=0",
+      "title": "Trismegistus: The Ultimate Formula — Board&Dice rules",
+      "publisher": "Board&Dice",
+      "printedPages": [
+        "4",
+        "8",
+        "22",
+        "26"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        8,
+        22,
+        26
+      ],
+      "location": "Introductory Game Setup; Player Setup step 17; solo setup and difficulty options; PDF pages 4, 8, 22, 26",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/trismegistus-the-ultimate-formula/. Finding: For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative. Local source SHA-256: 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036. ",
+  "uncertainty": [
+    "The standard setup does not define what qualifies as an alchemical transmutation.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

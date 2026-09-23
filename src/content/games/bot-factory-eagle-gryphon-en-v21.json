@@ -1,0 +1,47 @@
+{
+  "id": "bot-factory-eagle-gryphon-en-v21",
+  "slug": "bot-factory-eagle-gryphon-en-v21",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "bf7d3de3b62b5de974b8db5b392f20b7947b214bfe048df958f7705c6ea318f3",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Bot Factory",
+  "aliases": [],
+  "editionLabel": "Eagle-Gryphon English v21 public rules, ©2022",
+  "firstPlayerRule": "The person who last bought a robot starts the first worker-placement phase. You may instead choose that player randomly.",
+  "officialTieBreak": "Random selection is an official alternative; it is not restricted to a tie.",
+  "houseFallback": null,
+  "clarifications": [
+    "Initial worker placement proceeds clockwise. After that first placement phase, turn order follows the workers’ positions from left to right, including Sandra.",
+    "During setup, the initial last player receives an extra Speech token and players take their first Part tiles in reverse turn order.",
+    "The personal-history criterion selects among players in the multiplayer game; the solo Inspection variant has its own setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1NwVYjl38U4qHOoYakdmONILBbdO8xV_e/view",
+      "title": "Bot Factory — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "3",
+        "4",
+        "10",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        10,
+        11
+      ],
+      "location": "Setup after step 6; Move Workers / Turn Order; solo variant and credits; PDF pages 3, 4, 10, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/bot-factory. Finding: The person who last bought a robot starts the first worker-placement phase. You may instead choose that player randomly. Local source SHA-256: f5a6d4812138fce3fff1fc39e5d79023495e586bd7499587d6276db45b27b240. Rendered pages 3, 4, 10, 11 and 12 inspected. The criterion selects the initial Move Workers turn, not necessarily the first subsequent Perform Actions turn. The file explicitly offers random selection. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: a standalone criterion identifies the starter without game-specific components.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "gloom-atlas-en-second-edition",
+  "slug": "gloom-atlas-en-second-edition",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Gloom",
+  "aliases": [
+    "Gloom Second Edition"
+  ],
+  "editionLabel": "Atlas English second-edition rules, ©2004–2014",
+  "firstPlayerRule": "Whoever has had the worst day goes first.",
+  "officialTieBreak": "If everyone has had an equally miserable day, the owner of the game takes the first turn.",
+  "houseFallback": "If your group prefers another approach or cannot resolve the choice, agree to choose randomly instead. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Play continues clockwise. A turn allows two plays, followed by drawing back up to the current draw limit, normally five cards.",
+    "The rulebook does not define a scoring system for comparing players’ days."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://atlas-games.com/atlas-cms/resources/pdfs/gloom2-0rules.pdf",
+      "title": "Gloom — Atlas Games rules",
+      "publisher": "Atlas Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup — Draw a Starting Hand; Game Play; For Beginners; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2. Rendered PDF panel 1 explicitly labels Second Edition and places the worst-day starter at the end of Setup. Its owner fallback applies when all players had equally miserable days, not automatically to every partial tie. The clockwise direction and turn sequence follow. Panel 2's beginner variant ignores card effects and does not replace the initial criterion; credits state ©2004–2014. These panels have no printed page numbers. Publisher discovery URL: https://atlas-games.com/gloom. Local source SHA-256: 5256839f16a3ad69a54abc350d455e3dc190d073131c46462bfd3bb21da0c048.",
+  "uncertainty": [
+    "The cited rule does not resolve every possible partial tie or a situation where the owner is absent.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

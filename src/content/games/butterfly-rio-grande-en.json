@@ -1,0 +1,37 @@
+{
+  "id": "butterfly-rio-grande-en",
+  "slug": "butterfly-rio-grande-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "937ea436a5f583c1c0d5cdad9e76c33d981e611a1d13a5fb73c3ddbb4b1b144a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Butterfly",
+  "aliases": [],
+  "editionLabel": "English rules · two-page publisher PDF",
+  "firstPlayerRule": "The person who gives the best impression of a real hedgehog starts.",
+  "officialTieBreak": "If the group cannot decide, the rules allow any other selection method.",
+  "houseFallback": null,
+  "clarifications": [
+    "The starter's right-hand neighbor places the hedgehog on the board first. This placement does not move it or collect a tile; the selected starter then takes the first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2019/05/Butterfly-Rules.pdf",
+      "title": "Butterfly — Rio Grande Games rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and Playing the Game; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/butterfly/. Finding: The person who gives the best impression of a real hedgehog starts. Local source SHA-256: b3c5bf8d46e009ef8ed118b918f2304fe4cfe8b748cf084e2d04cc18b773fad5. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The hedgehog impression selects the first regular-turn player. The right-hand neighbor's prior placement is setup only. The source's undecidable-case alternative is retained.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

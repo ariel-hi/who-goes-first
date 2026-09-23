@@ -1,0 +1,21 @@
+[
+  {
+    "inventoryName": "Balloon Pop!",
+    "inventoryBggId": "212027",
+    "status": "identity-mismatch",
+    "rejectedReference": "https://rules.dized.com/game/yH9D9m33TV2n8EryO_EfNg/balloon-pop",
+    "reason": "The title match led to Lautapelit.fi's Mikko Punakallio game released in 2023. Inventory 212027 instead identifies Andy Van Zandt's 2017 Tasty Minstrel Games/Arclight dice game. No record or coverage match was created from this unrelated reference.",
+    "identitySources": [
+      "https://en.lautapelit.fi/news/123/2023-new-release-balloon-pop",
+      "https://en.boardgamearena.com/gamepanel?game=balloonpop"
+    ],
+    "checkedAt": "2026-09-23"
+  },
+  {
+    "inventoryName": "Big Monster",
+    "inventoryBggId": "246567",
+    "status": "variant-question-open",
+    "reason": "The official Dized reference explicitly supplies simultaneous standard play, but its two-player and special three-player setup/turn sections do not state how to select the initial starter. The article reports that omission and labels random selection as a house fallback. A separate publisher-site lookup returned an internal fetch error. No secondary-hosted manual was silently substituted for the cited edition.",
+    "checkedAt": "2026-09-23"
+  }
+]

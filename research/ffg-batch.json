@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "black-gold-fantasy-flight-en",
+    "gameName": "Black Gold",
+    "sourceHint": "black-gold-825dcf1d.pdf",
+    "editionLabel": "Fantasy Flight Games English rules, copyright 2011",
+    "pages": [4, 6],
+    "printedPages": [4, 6],
+    "location": "Setup, step 10; The Game Round and Adjust Oil Prices",
+    "firstPlayerRule": "Whoever most recently filled their car with gas takes the market price die and starts the first round.",
+    "officialTieBreak": "Choose randomly if the players cannot remember or would prefer a different method.",
+    "houseFallback": null,
+    "clarifications": ["The die holder begins by adjusting oil prices. The die passes to the left at the end of each round."],
+    "evidenceNotes": "Setup explicitly offers random selection when the criterion is unwanted or cannot be recalled. This is an official alternative, not a supplied house rule."
+  },
+  {
+    "slug": "black-sheep-fantasy-flight-en",
+    "gameName": "Black Sheep",
+    "sourceHint": "black-sheep-99217ac6.pdf",
+    "editionLabel": "Fantasy Flight Games English rules, copyright 2008",
+    "pages": [1],
+    "printedPages": [],
+    "location": "Unnumbered outer spread, right-hand panel, Setup step 7",
+    "firstPlayerRule": "Everyone moos; whoever makes the loudest moo goes first.",
+    "clarifications": ["This is Reiner Knizia's game with plastic farm animals and field mats."],
+    "houseFallback": "If anyone would rather skip the mooing, agree to pick randomly. This is a house rule.",
+    "evidenceNotes": "Setup step 7 follows the initial deal. End-of-game scoring tie-breaks elsewhere on the spread do not resolve a starting-player tie."
+  },
+  {
+    "slug": "blue-moon-city-fantasy-flight-en",
+    "gameName": "Blue Moon City",
+    "sourceHint": "blue-moon-city-85077cda.pdf",
+    "editionLabel": "Fantasy Flight Games English edition, eight-page rulebook",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "A Player's Turn, opening paragraph",
+    "firstPlayerRule": "The group chooses someone to start, then takes turns clockwise.",
+    "clarifications": ["The rulebook leaves the choice to the players; it does not prescribe a personal characteristic or a random draw."],
+    "houseFallback": "If you want a quick way to choose, pick a player randomly. This is a house rule.",
+    "evidenceNotes": "The instruction is a free group choice. Do not substitute a more colorful criterion from another edition."
+  },
+  {
+    "slug": "journey-to-mordor-fantasy-flight-en",
+    "gameName": "The Lord of the Rings: Journey to Mordor",
+    "aliases": ["Journey to Mordor"],
+    "sourceHint": "the-lord-of-the-rings-journey-to-mordor-562fe7f5.pdf",
+    "editionLabel": "Fantasy Flight Games English rules, copyright 2016",
+    "pages": [1],
+    "printedPages": [1],
+    "location": "Setup, step 4: Determine First Player",
+    "firstPlayerRule": "Whoever most recently read The Lord of the Rings goes first.",
+    "clarifications": ["Play continues clockwise. The instruction refers to reading the book."],
+    "uncertainty": ["No alternative is stated here for a group in which nobody has read the book."]
+  }
+]

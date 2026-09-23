@@ -1,0 +1,40 @@
+{
+  "id": "dog-kids-schmidt-de-summary",
+  "slug": "dog-kids-schmidt-de-summary",
+  "gameName": "DOG Kids",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Schmidt Spiele DOG Kids, article 40554, German rules summarized in English",
+  "firstPlayerRule": "Whoever can bark the loudest goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If anyone prefers to skip the barking, agree to pick randomly. This is a house rule.",
+  "clarifications": [
+    "This is the standard DOG Kids game with three dog pieces per player and 88 cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Produkte/4/40554%20-%20DOG%C2%AE%20Kids/40554_DOG_Kids_Anleitung_DE_FR_IT.pdf",
+      "title": "DOG Kids — Schmidt Spiele rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "German section, Spielablauf, opening sentence; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever can bark the loudest goes first. Local source SHA-256: eb99a2ea3bfeb2bb879944c42f28aada3bc3752baed704c2d00ea23368295754. The publisher's observed URL contains a registered-sign character in its directory name; the queue percent-encodes the original UTF-8 path. This is article 40554, not the separate travel edition.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

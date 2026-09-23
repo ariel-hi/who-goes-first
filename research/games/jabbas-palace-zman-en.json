@@ -1,0 +1,49 @@
+{
+  "id": "jabbas-palace-zman-en",
+  "slug": "jabbas-palace-zman-en",
+  "gameName": "Star Wars: Jabba's Palace – A Love Letter Game",
+  "aliases": [
+    "Jabba's Palace",
+    "Star Wars Jabba's Palace",
+    "Jabba’s Palace: A Love Letter Game"
+  ],
+  "language": "en",
+  "editionLabel": "Z-Man English 19-character-card edition",
+  "firstPlayerRule": "Whoever most recently rescued a friend starts the first round. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "For the next round, the previous round’s winner starts. If several players tied for that win, choose randomly among those winners."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/LLSW_Rulebook.pdf",
+      "title": "Star Wars: Jabba's Palace – A Love Letter Game — Z-Man Games rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "3",
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        7
+      ],
+      "location": "Setup step 6; Taking a Turn; Starting the Next Round; PDF pages 3, 4, 7",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zmangames.com/game/jabbas-palace-a-love-letter-game/. Finding: Whoever most recently rescued a friend starts the first round. Turns proceed clockwise. Local source SHA-256: d77102a1ce140861e99b2bd21bd7f862b8cc6b5730d3f3bbca8b1cc43debc786. The current publisher product page links this sixteen-page English manual. No publication year is inferred from its upload path.",
+  "uncertainty": [
+    "The random choice among tied winners belongs to the next-round instruction. The rulebook does not apply it to a tie in the initial rescued-a-friend criterion.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

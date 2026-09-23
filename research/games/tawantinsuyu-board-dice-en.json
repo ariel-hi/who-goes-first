@@ -1,0 +1,41 @@
+{
+  "id": "tawantinsuyu-board-dice-en",
+  "slug": "tawantinsuyu-board-dice-en",
+  "gameName": "Tawantinsuyu: The Inca Empire",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Board&Dice base-game rules, 28-page publisher booklet",
+  "firstPlayerRule": "Whoever harvested a vegetable most recently starts. Alternatively, use any random selection method the group chooses.",
+  "officialTieBreak": "Random selection is an explicit alternative, with no requirement that the vegetable criterion first produce a tie.",
+  "houseFallback": null,
+  "clarifications": [
+    "The starter also chooses a starting Weaving tile first, followed clockwise by the others. In solo play, the human player starts before Axomamma."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/0c6j1y0ymw7euo0zwa4lm/Tawantinsuyu_Rules_EN_web.pdf?rlkey=6zpcq7mjxrg20ke1ra897uctc&st=46mymfhe&dl=0",
+      "title": "Tawantinsuyu: The Inca Empire — Board&Dice rules",
+      "publisher": "Board&Dice",
+      "printedPages": [
+        "7",
+        "22"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        22
+      ],
+      "location": "Setup, steps 14–15; Solo Rules, Gameplay; PDF pages 7, 22",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/download/. Finding: Whoever harvested a vegetable most recently starts. Alternatively, use any random selection method the group chooses. Local source SHA-256: 62922bebdc49d2f62c79b08cb8ab680f84a8e1ed0802e465fb3cb9d264de2d93. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,41 @@
+{
+  "id": "viva-topo-dv-giochi-it-summary",
+  "slug": "viva-topo-dv-giochi-it-summary",
+  "gameName": "Viva Topo!",
+  "aliases": [
+    "Viva Topo"
+  ],
+  "language": "en",
+  "editionLabel": "dV Giochi Italian rules, English summary",
+  "firstPlayerRule": "Whoever likes cheese the most goes first.",
+  "officialTieBreak": "The rules also allow drawing lots to choose the starting player.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starting player rolls the die first, then play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/viva-topo/download/Viva%20Topo-rules.pdf",
+      "title": "Viva Topo! — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Il gioco, opening paragraph; PDF pages 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: Whoever likes cheese the most goes first. Local source SHA-256: b8f9da704780b71ef6e76ec743596d4ab87bcc720a0396f80c46c025481d858e. Drawing lots is an explicit official alternative, not an invented house fallback.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,49 @@
+{
+  "id": "burgle-bros-2-fowers-en",
+  "slug": "burgle-bros-2-fowers-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "61bbd6dd77130b110c2b22041c797a157b6ca237ac0ddce83aa6ce13a404b085",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Burgle Bros 2: The Casino Capers",
+  "aliases": [
+    "Burgle Bros 2",
+    "Burgle Bros 2: Casino Capers"
+  ],
+  "editionLabel": "English Fowers Games rules, 16-page Skellig-hosted PDF",
+  "firstPlayerRule": "Whoever most recently gambled starts. The rules also allow choosing the first player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before play, choose two first-floor corner tiles as entrances. Each player enters through one of these at the start of their first turn; that initial move costs no action.",
+    "After a player's turn and the bouncer's turn on that floor, the next player clockwise takes a turn.",
+    "Random Finale Mode changes the finale setup, while retaining the normal starting instructions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.skellig-rules.de/rules/0072-0004/Burgle_Bros_2_Rulebook.pdf",
+      "title": "Burgle Bros 2: The Casino Capers — Fowers Games (English manual hosted by Skellig Games) rules",
+      "publisher": "Fowers Games (English manual hosted by Skellig Games)",
+      "printedPages": [
+        "3",
+        "6",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        6,
+        16
+      ],
+      "location": "Campaign and Random Finale modes; Entering the Casino; How to Play; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read the setup and sequential-turn context and visually inspected all listed pages. Random selection is an official alternative in the starting instruction, not an invented house fallback. The current Fowers store advertises a second edition, but this older hosted PDF does not establish that edition; the public label identifies only the inspected file. Cached source: research\\source-files\\skellig-direwolf\\burgle-bros-2-the-casino-capers-654a5c5a.pdf; SHA-256 b4b8a9e19511d3256ee6ee3b844303799a0e2be326d1b295bc0eed1937587557. Discovery: https://www.skellig-rules.de/. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; Personal-history criterion with an official random alternative; it selects the first player turn.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

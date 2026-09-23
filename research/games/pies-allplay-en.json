@@ -1,0 +1,39 @@
+{
+  "id": "pies-allplay-en",
+  "slug": "pies-allplay-en",
+  "gameName": "Pies",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "firstPlayerRule": "The player who most recently ate a piece of pie leads the first trick.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Later card-selection order is determined by the cards played into each trick."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-pies-rulebook-link.pdf",
+      "title": "Pies — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup final sentence and Tricks opening instruction; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/pies. Finding: The player who most recently ate a piece of pie leads the first trick. Local source SHA-256: 0cc24d41ec8f99ceb9c02139007cf0f650e36ab33f8b251715a8481ac953c6b7. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

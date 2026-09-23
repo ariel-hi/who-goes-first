@@ -1,0 +1,40 @@
+{
+  "id": "isle-of-trains-dice-hate-me-en-v86",
+  "slug": "isle-of-trains-dice-hate-me-en-v86",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Isle of Trains",
+  "aliases": [],
+  "editionLabel": "English Rules and Reference v8.6, four-page publisher PDF",
+  "firstPlayerRule": "The player dealt the green-shaded Level 1 engine takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If you cannot use the marked engine to choose a starter, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Setup deals each player a Level 1 engine and five cards at random. Turns then proceed clockwise, with two actions per turn.",
+    "This source covers the original Isle of Trains, not Isle of Trains: All Aboard."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://dicehatemegames.com/wp-content/uploads/2014/03/IsleOfTrains_RulesReference_v8.6.pdf",
+      "title": "Isle of Trains — Dice Hate Me Games rules",
+      "publisher": "Dice Hate Me Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 1; Game Play; Starting the Game diagram",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked both rule pages, including the green engine in the setup diagram. Source filename identifies v8.6; no printing year was invented. The criterion depends on the dealt game component and therefore stays out of the portable mix. Cached source: research\\source-files\\archaeology-trains\\isle-of-trains-d2dc1b29.pdf; SHA-256 aaac5dded97203618171dc6a04869c5fc1722392dcc62c16e22f67322cf31229. Discovery: https://dicehatemegames.com/.",
+  "uncertainty": [
+    "The instruction does not explain a case where no player has the green-shaded engine; the suggested random alternative is explicitly a house rule.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

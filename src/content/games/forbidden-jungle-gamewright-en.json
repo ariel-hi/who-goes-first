@@ -1,0 +1,36 @@
+{
+  "id": "forbidden-jungle-gamewright-en",
+  "slug": "forbidden-jungle-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "bc355beff52b7f14da2a93df713fe72ab02c65f8dca0357c0e64adf3cec3cb6a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Forbidden Jungle",
+  "aliases": [],
+  "editionLabel": "English Gamewright rules · 8-page publisher PDF",
+  "firstPlayerRule": "Start with whoever most recently touched a tree.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/429_ForbiddenJungle_RULES_110123.pdf",
+      "title": "Forbidden Jungle — Gamewright rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "How to Play, PDF page 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 3 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Start with whoever most recently touched a tree. Local source SHA-256: bfe8d210dc87c5a61ae57f3aa9a4df5c0e3c0c91fd85eb78354f4978accfb0c9. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion.",
+  "uncertainty": [
+    "No tie-break is stated alongside this starting instruction.",
+    "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
+  ]
+}

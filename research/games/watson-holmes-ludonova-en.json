@@ -1,0 +1,40 @@
+{
+  "id": "watson-holmes-ludonova-en",
+  "slug": "watson-holmes-ludonova-en",
+  "gameName": "Watson & Holmes",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English publisher-hosted US rulebook, nine PDF spreads",
+  "firstPlayerRule": "The player with the best acting and reading voice reads the case introduction and takes the start-player token. If the group uses the recorded introduction instead, choose the starter randomly.",
+  "officialTieBreak": "Random selection is explicitly required when using the recorded introduction; the manual does not give a separate tie-break for the voice criterion.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The token holder chooses a location first in the Visiting Phase, followed clockwise by the others. This initial choice differs from later rounds, when the last player to obtain a location takes the token."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://ludonova.com/wp-content/uploads/2023/10/WaH_RuleBook_US_HD-Print_092816.pdf",
+      "title": "Watson & Holmes — Ludonova rules",
+      "publisher": "Ludonova",
+      "printedPages": [
+        "8",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Setup and Visiting Phase on printed page 9; Start Player Token on page 8; PDF pages 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/watsonholmes-diarios-del-221b/. Finding: The player with the best acting and reading voice reads the case introduction and takes the start-player token. If the group uses the recorded introduction instead, choose the starter randomly. Local source SHA-256: 38c03d3851697e9bf3c63cdd30bbda6ba7a820523c2f585f6729f3d0f3b7dc83. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

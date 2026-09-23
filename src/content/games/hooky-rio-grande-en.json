@@ -1,0 +1,40 @@
+{
+  "id": "hooky-rio-grande-en",
+  "slug": "hooky-rio-grande-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "54aca1035481c865ef67f5dbca53374474ed790381742c89aa835a6ada6912c4",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Hooky",
+  "aliases": [],
+  "editionLabel": "English rules · twelve-page publisher PDF",
+  "firstPlayerRule": "The person most recently in a classroom starts. The rules also allow choosing a starter randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starting player keeps that role throughout the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2022/12/hooky_rules.pdf",
+      "title": "Hooky — Rio Grande Games rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup, opening paragraph and step 2; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/hooky/. Finding: The person most recently in a classroom starts. The rules also allow choosing a starter randomly. Local source SHA-256: af0d4f72d00e3d0bfeec5ec671f7b386664d5ae3daed604f9479317da8684fc8. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. Classroom recency or the expressly permitted random alternative selects the starter. The same player opens the initial clues and each round.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

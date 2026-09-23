@@ -1,0 +1,47 @@
+{
+  "id": "saltfjord-huch-de-summary",
+  "slug": "saltfjord-huch-de-summary",
+  "gameName": "Saltfjord",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "HUCH! German rules, 2024 file, English summary",
+  "firstPlayerRule": "Whoever most recently ate fish is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player chooses a starting set first and also takes the first turn. Other players follow clockwise.",
+    "The advanced wagon variant keeps this starting instruction. In solo play, you take every turn; there is no opponent or automa."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://produkte.hutter-trade.com//files/products/1493/200/de/HUTT-088-2024-Saltfjord_Anleitung_006_PRINT.pdf",
+      "title": "Saltfjord — Hutter Trade rules",
+      "publisher": "Hutter Trade",
+      "printedPages": [
+        "5",
+        "6",
+        "14",
+        "15"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        14,
+        15
+      ],
+      "location": "Persönlicher Aufbau: Bereitet die Start-Sets vor; Rundenablauf; Fortgeschrittenes Spiel; Solo-Spiel; PDF pages 5, 6, 14, 15",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Whoever most recently ate fish is the starting player. Local source SHA-256: 7b30d8482e7793b317a397b2dd7fc4a2c194944e00ffe0f20f5b284d40142805. The initial 35 MB retrieval limit was exceeded; the exact publisher URL was retrieved successfully with an explicit 100 MB limit. Rendered pages 5, 6, 14 and 15 were inspected, including advanced and solo context.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,44 @@
+{
+  "id": "star-wars-villainous-power-of-the-dark-side-ravensburger-en",
+  "slug": "star-wars-villainous-power-of-the-dark-side-ravensburger-en",
+  "gameName": "Star Wars Villainous: Power of the Dark Side",
+  "aliases": [
+    "Star Wars Villainous"
+  ],
+  "language": "en",
+  "editionLabel": "Ravensburger English base-game rules, copyright 2022, EN01",
+  "firstPlayerRule": "Use the game's playful criterion—whoever last used the Force—or let the oldest player start.",
+  "officialTieBreak": "Choosing the oldest player is an official alternative, not just a tie-break.",
+  "houseFallback": null,
+  "clarifications": [
+    "The first player starts with no Credits, the second with one, and the third and fourth with two each."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/27361_anl_2361098%5B1%5D.pdf?ossl=pds_text_Spielanleitung",
+      "title": "Star Wars Villainous: Power of the Dark Side — Ravensburger rules",
+      "publisher": "Ravensburger",
+      "printedPages": [
+        "3",
+        "19"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        19,
+        20
+      ],
+      "location": "Setup step 7; credits and back-cover edition code; PDF pages 3, 19, 20",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/service/game-instructions. Finding: Use the game's playful criterion—whoever last used the Force—or let the oldest player start. Local source SHA-256: c2d1cee36951b35e9988fa4f7fbd6033c1918475f83125c904c5884c328e369c. Setup page 3, credits page 19 and the EN01 back cover were visually inspected. Page 2's clipped spread duplicates some extracted text from page 3, but the actual starting passage is visible on page 3. The oldest-player alternative is connected by or; it is not restricted to a tie. The source identifies the original five-Villain Power of the Dark Side set.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

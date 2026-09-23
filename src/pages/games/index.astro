@@ -1,0 +1,8 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import GameDirectory from '../../components/GameDirectory.astro';
+import RandomRule from '../../components/RandomRule.astro';
+import { getCatalog } from '../../lib/content/catalog';
+const games = getCatalog();
+---
+<Layout title="Board Game Starting-Player Rules — Who Goes First?" description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}><div class="content-page"><h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p><RandomRule games={games} /><GameDirectory games={games} /></div></Layout>

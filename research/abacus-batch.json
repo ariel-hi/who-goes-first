@@ -1,0 +1,89 @@
+[
+  {
+    "slug": "7seas-abacus-en",
+    "gameName": "7Seas",
+    "aliases": ["7 Seas"],
+    "sourceHint": "7seas-a6e7cd52.pdf",
+    "editionLabel": "ABACUSSPIELE English rules, two-page folded-sheet PDF",
+    "pages": [2],
+    "printedPages": [2, 3],
+    "location": "Set-up of the Game; Preparation of the Round; Course of the Game",
+    "firstPlayerRule": "Whoever most recently went to sea goes first.",
+    "clarifications": ["That player takes the compass card, prepares and deals the round, and plays the first booty card. Play continues clockwise."],
+    "evidenceNotes": "The starting instruction is in the panel numbered 2 on PDF page 2; preparation and turn order are in the adjacent panel numbered 3. A beach visit was not substituted for going to sea."
+  },
+  {
+    "slug": "stop-abacus-en",
+    "gameName": "STOP",
+    "sourceHint": "stop-cf873a80.pdf",
+    "editionLabel": "ABACUSSPIELE English rules, 112-card edition, copyright 2001",
+    "pages": [1],
+    "printedPages": [],
+    "location": "Set-up; Course of the Game; Exception: Playing out of turn",
+    "firstPlayerRule": "The player who has read the rules deals and takes the first turn.",
+    "clarifications": ["Normal turns proceed clockwise. The game also permits an out-of-turn play when a number card matches the discard's color and number."],
+    "evidenceNotes": "The rule assigns the dealer to the person who read the rules and then explicitly says the dealer begins. It does not say the latest reader or the player to the dealer's left. The matching-number-card interruption is preserved."
+  },
+  {
+    "slug": "so-ein-mist-abacus-en",
+    "gameName": "So ein Mist",
+    "sourceHint": "so-ein-mist-b63ca0e3.pdf",
+    "editionLabel": "ABACUSSPIELE English rules, 2019 edition",
+    "pages": [2, 4],
+    "printedPages": [2, 4],
+    "location": "Set-up of the Game, final bullet; Course of the Game, opening paragraph",
+    "firstPlayerRule": "Whoever most recently stepped in animal poop goes first.",
+    "clarifications": ["The first player rolls a die from the middle. Turns proceed clockwise."],
+    "evidenceNotes": "This is Rüdiger Dorn's animal-path dice game; the criterion is stated in the publisher's English translation."
+  },
+  {
+    "slug": "mamma-mia-plus-abacus-en",
+    "gameName": "Mamma Mia! Plus",
+    "sourceHint": "mamma-mia-plus-2d703615.pdf",
+    "editionLabel": "ABACUSSPIELE English Plus rules, four-page PDF",
+    "pages": [2],
+    "printedPages": [],
+    "location": "Game Setup, final bullet; A Game Round",
+    "firstPlayerRule": "The hungriest player goes first.",
+    "clarifications": ["The first player begins putting ingredients into the oven. Play continues clockwise.", "This entry covers Mamma Mia! Plus, whose setup gives each player eight ingredient cards and a set of fifteen order cards."],
+    "evidenceNotes": "The Plus edition is kept distinct from the original Mamma Mia! game. The later-round instruction about the last card drawn is not used as the initial starting criterion."
+  },
+  {
+    "slug": "shanghaien-abacus-en",
+    "gameName": "Shanghaien",
+    "sourceHint": "shanghaien-ec591f0b.pdf",
+    "editionLabel": "ABACUSSPIELE English two-player rules",
+    "pages": [1],
+    "printedPages": [],
+    "location": "Game Setup, final bullet; Game Play",
+    "firstPlayerRule": "The most rough-and-ready player goes first.",
+    "clarifications": ["The two players then alternate turns."],
+    "uncertainty": ["The source gives no objective measure for deciding who is most rough-and-ready."],
+    "evidenceNotes": "The unusual wording is explicit in the publisher's English setup. No physical contest or appearance test has been inferred."
+  },
+  {
+    "slug": "tajuto-abacus-de-summary",
+    "gameName": "Tajuto",
+    "sourceHint": "tajuto-8ff08463.pdf",
+    "editionLabel": "ABACUSSPIELE German rules, English summary",
+    "pages": [4],
+    "printedPages": [4],
+    "location": "Spielablauf, opening two sentences",
+    "firstPlayerRule": "The oldest player goes first.",
+    "clarifications": ["Turns continue clockwise."],
+    "evidenceNotes": "The available publisher product page links the German manual; the answer is clearly labeled as an English summary of that file."
+  },
+  {
+    "slug": "leo-abacus-en",
+    "gameName": "Leo",
+    "aliases": ["Leo Goes to the Barber", "Leo muss zum Friseur"],
+    "sourceHint": "leo-3eea49e7.pdf",
+    "editionLabel": "ABACUSSPIELE Leo Goes to the Barber, English rules",
+    "pages": [1, 2, 3],
+    "printedPages": [1, 2, 3],
+    "location": "Title and components; Set-up; Course of the Game: One Day and End of the Day",
+    "firstPlayerRule": "The player with the longest hair goes first.",
+    "clarifications": ["The player with the shortest hair keeps the clock; that is a separate role. Turns proceed clockwise.", "If another day is needed, the player who would have taken the next turn becomes its starter."],
+    "evidenceNotes": "The English manual linked from the German Leo muss zum Friseur product identifies the cooperative lion-and-barber game, matching inventory Leo 191538. This successful primary source replaces the failed dV download lead; it is not a second edition record."
+  }
+]

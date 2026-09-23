@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "lotus-renegade-en-2024",
+    "gameName": "Lotus",
+    "aliases": [],
+    "editionLabel": "Renegade English rules with solo mode, ©2024",
+    "firstPlayerRule": "In multiplayer, whoever has the greenest thumb goes first.",
+    "clarifications": [
+      "Turns continue clockwise. Each player takes two actions, then draws back to four cards.",
+      "The four-player family variant uses teams, but players still take individual turns under the normal rules.",
+      "The Winter Lotus solo mode is a separate one-player challenge."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If your group cannot agree who has the greenest thumb, or prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 6, 16, 17, 18, 20],
+    "printedPages": ["cover", "5", "15", "16", "17", "unnumbered credits"],
+    "location": "Playing the Game; Ending the Game; Family Variant; Winter Lotus solo rules; credits",
+    "evidence": "The rendered Playing the Game page selects the greenest thumb and begins clockwise individual turns. The endgame Petal Card tie-break is not an initial-start tie-break. The family variant retains individual turns; Winter Lotus is explicitly solo. The credits say ©2024, despite 2023 in the publisher-linked filename. The source supplies no quantitative definition of greenest thumb.",
+    "uncertainty": ["The subjective gardening criterion has no stated initial-start tie-break."],
+    "portable": true,
+    "poolReason": "The multiplayer criterion selects an individual first actor using a personal comparison, without requiring game-specific components."
+  },
+  {
+    "slug": "terror-below-renegade-en-2019",
+    "gameName": "Terror Below",
+    "aliases": [],
+    "editionLabel": "Renegade English rules, ©2019",
+    "firstPlayerRule": "In multiplayer, whoever most recently defeated a Worm in combat goes first.",
+    "clarifications": [
+      "Choose starting Locations in reverse player order, beginning with the last player. This setup order does not change who takes the first turn.",
+      "The starting player plays a Vehicle card, resolves it, refills their hand, and checks for a possible Worm Attack. Turns then continue clockwise.",
+      "In solo play, the human uses one squad; the Worms’ separate Terror Turn happens after each human turn."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [9, 21, 22, 28],
+    "printedPages": ["8", "20", "21", "unnumbered credits"],
+    "location": "Worm Setup and Turn Sequence; Solo Game setup and Terror Turn; credits",
+    "evidence": "Rendered PDF page 9 states the most recent Worm combat victory criterion, then separately orders initial Location placement backwards. Its Turn Sequence starts with the selected player and continues clockwise. Solo pages place the Terror Turn after the human's turn. Credits identify ©2019. The complete source was retrieved from the publisher's own host; the old product URL returned 404 and is not claimed as a working discovery page.",
+    "uncertainty": ["The rule does not define which past Worm-combat victories qualify or provide an initial-start tie-break."],
+    "portable": false,
+    "poolReason": "The criterion relies on a past Worm-combat victory rather than a standalone everyday comparison. Keep this game's answer in the directory without adapting it into a different rule for the random mix."
+  },
+  {
+    "slug": "oceans-north-star-en",
+    "gameName": "Oceans",
+    "aliases": [],
+    "editionLabel": "North Star English base rules, 16-page publisher PDF",
+    "firstPlayerRule": "Whoever can hold their breath the longest goes first.",
+    "clarifications": [
+      "Turns proceed clockwise from that player, with Playing Cards, Feeding, Aging, and Drawing Cards phases.",
+      "Assign Bonus Tokens by turn order: 4/0 points with two players, 6/4/0 with three, or 7/6/4/0 with four. Keep each token behind its owner’s screen for final scoring.",
+      "The trait-card and Alaska fishing-job tie-breaks concern the final score, not the starting player."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the comparison is unclear or your group prefers to skip it, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [5, 6, 14, 15, 16],
+    "printedPages": ["4", "5", "13", "14", "unnumbered credits"],
+    "location": "Setup step 11 and Bonus Token table; Playing the Game; The Deep; End of Game; credits",
+    "evidence": "Rendered setup step 11 gives the breath-holding criterion and the exact 2/3/4-player Bonus Token table. Playing the Game confirms clockwise individual turns. The Deep section does not replace this setup criterion. End of Game's trait-count and fishing-job tie-breaks apply only to final scores. The credits contain no printing date; none is inferred from the URL timestamp. No procedure for conducting a breath-holding contest is added.",
+    "uncertainty": ["No initial-start tie-break is stated alongside the criterion.", "The linked manual does not identify a printing year."],
+    "portable": true,
+    "poolReason": "This ability comparison selects an individual first actor without game-specific components. Preserve the factual criterion without inventing a contest procedure; the existing skip and house fallback remain available."
+  },
+  {
+    "slug": "paint-the-roses-north-star-en",
+    "gameName": "Paint the Roses",
+    "aliases": [],
+    "editionLabel": "North Star English base rules, 20-page publisher PDF",
+    "firstPlayerRule": "Whoever most recently watered a plant goes first.",
+    "clarifications": [
+      "Give that player the Greenhouse. They begin by choosing and placing a Shrub tile; the group then contributes clues and guesses.",
+      "At the end of a continuing turn, replenish and pass the Greenhouse to the player on the left, who becomes the active player.",
+      "The two-player rules and Expert variation change other parts of play or setup, while retaining this starting-player criterion."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [6, 8, 9, 13, 15, 19, 20],
+    "printedPages": ["6", "8", "9", "13", "15", "19", "unnumbered player aid"],
+    "location": "Setup step 7; How to Play; Place a Tile and Place Clue Tokens; Moving the Queen; Two-Player Rules and Expert Variation; credits; player aid",
+    "evidence": "Rendered setup step 7 chooses the latest person to water a plant and gives them the Greenhouse. Pages 8–9 confirm an individual active-player tile placement before the cooperative clue and guessing phases. The player aid passes the Greenhouse left after Replenish, provided the game continues. The two-player and Expert changes do not alter setup step 7. The 2021 filename is not asserted as a printing date because the credits do not establish it.",
+    "uncertainty": ["No initial-start tie-break is stated alongside the watering criterion.", "The linked manual does not identify a printing year."],
+    "portable": true,
+    "poolReason": "The watering criterion selects the actual first tile-placing player, not merely a facilitator of simultaneous play, and needs no game-specific components."
+  },
+  {
+    "slug": "nature-northstar-en-core",
+    "gameName": "Nature",
+    "aliases": ["Nature core game"],
+    "editionLabel": "NorthStar English core rules, 13-spread publisher PDF",
+    "firstPlayerRule": "In standard multiplayer play, whoever can make the most amazing animal noise goes first.",
+    "clarifications": [
+      "Give that player the snow leopard. After Preparation, its holder takes the first Adapting turn and later begins the clockwise Feeding turns.",
+      "After scoring a non-final round, pass the snow leopard to the left before the next round’s Preparation.",
+      "The Quick Play variant makes Adapting simultaneous; the five- and six-player rules use that variant. The snow leopard still identifies who starts Feeding."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If your group cannot agree on an animal noise or prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [3, 4, 5, 6, 8, 10, 12, 13],
+    "printedPages": ["4–5", "6–7", "8–9", "10–11", "14–15", "18–19", "22–23", "back cover"],
+    "location": "Setup step 8; Preparation; Adapting and Reveal Traits; Feeding; Scoring; Quick Play Variant and 5–6 Player Rules; credits",
+    "evidence": "Rendered spread 3 selects the most amazing animal noise. Spreads 4–6 distinguish common Preparation from the sequential default Adapting turns, beginning with the snow leopard holder; the shared Trait reveal happens after those turns. Spread 8 confirms clockwise Feeding starts with that holder. Spread 10 rotates the marker left after scoring and separately describes simultaneous Adapting in Quick Play and five/six-player games. Credits identify Dominic Crapuchettes's NorthStar game, matching inventory identity 330152, not Renature. The December 2025 filename is not treated as an explicit printing date.",
+    "uncertainty": ["The subjective animal-noise criterion has no stated judging method or initial-start tie-break.", "This core-rule record does not cover the separate solo or module manuals."],
+    "portable": true,
+    "poolReason": "The standard multiplayer criterion selects an individual first Adapting actor without game-specific components. The simultaneous Quick Play variant is explicitly distinguished."
+  },
+  {
+    "slug": "goblin-vaults-thunderworks-en-2022",
+    "gameName": "Goblin Vaults",
+    "aliases": [],
+    "editionLabel": "Thunderworks English rules, ©2022",
+    "firstPlayerRule": "In multiplayer, whoever looks most like a goblin takes the first human bidding turn.",
+    "clarifications": [
+      "Give that player the first player marker. Initial vault cards are chosen and revealed simultaneously during setup; bidding then begins with the marker holder and proceeds clockwise.",
+      "With two players, reveal Glavrun’s bidding card before the human players bid. In solo play, the first player marker is unused and Glavrun also reveals a card before the human acts.",
+      "After a non-final round’s Warden Phase, pass the first player marker clockwise."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If your group cannot agree on the resemblance or prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [4, 6, 7, 10, 11, 12],
+    "printedPages": ["4", "6", "7", "10", "11", "12"],
+    "location": "Setup steps 9–10; Card Strength; Bidding Phase and two-player box; Warden Phase and Final Scoring; Solitary Mode; credits",
+    "evidence": "Rendered setup page 4 gives the first player marker to the most goblin-like player after simultaneous starting-card selection. Page 7's two-player Glavrun box is visually before the human bidding paragraph: Glavrun reveals first, then the marker holder begins clockwise human bidding. Page 11 removes the marker in solo and places Glavrun's first reveal before the human's turn. Page 10's gear-token tie-break concerns final scoring, while its marker rotation concerns later rounds. The credits say ©2022. The resemblance criterion does not require comparison with a particular component illustration.",
+    "uncertainty": ["The subjective resemblance criterion has no stated judging method or initial-start tie-break."],
+    "portable": true,
+    "poolReason": "The resemblance criterion identifies the first human actor and does not require the game's cards or a specific illustration. Automated-opponent timing and simultaneous setup are kept explicit."
+  }
+]

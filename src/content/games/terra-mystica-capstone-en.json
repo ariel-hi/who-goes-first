@@ -1,0 +1,53 @@
+{
+  "id": "terra-mystica-capstone-en",
+  "slug": "terra-mystica-capstone-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "208020566acdf95a4793b01bdd90bafbedb37de71726289faaf2b2f8fda0f7c3",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Terra Mystica",
+  "aliases": [],
+  "editionLabel": "Capstone English base rules, 20-page publisher PDF",
+  "firstPlayerRule": "Whoever most recently dug a planting bed in their own garden goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "That player receives the Starting player token. After Income, they take the first Action, followed by the other players clockwise.",
+    "Initial Dwelling placement and Bonus-card selection have their own setup orders. They do not replace the token holder as the first player in the Action phase.",
+    "In later rounds, the first player to pass becomes the next round’s starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://capstone-games.com/cdn/shop/files/EN_terra_mystica_rules-3rd_CG_web.pdf?v=15200505769140123159",
+      "title": "Terra Mystica — Capstone Games rules",
+      "publisher": "Capstone Games",
+      "printedPages": [
+        "5",
+        "6",
+        "8",
+        "9",
+        "14",
+        "20"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        8,
+        9,
+        14,
+        20
+      ],
+      "location": "Setup — Starting player token; Choosing a Faction Board; first Structures and Bonus cards; Income; Action phase; Passing; faction reference",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 5, 6, 8, 9, 14, 20. Rendered page 5 chooses the most recent person to dig a planting bed in their garden. Page 6's random alternative concerns factions, not the starting player. Pages 8 and 20 distinguish the variable initial Dwelling sequence, Nomads and Chaos Magicians placement exceptions, and reverse Bonus-card choice from the Action phase. Page 9 confirms the token holder's first Action after Income. Page 14 assigns next-round priority to the first passer. This is Terra Mystica, not the separate game Terra. The precise publisher file identifies scope without inferring a printing from its filename. Publisher discovery URL: https://capstone-games.com/products/terra-mystica. Local source SHA-256: 539a1d923c8c6d3ba72842770c44c25e202e6e9349a267937831cc7f4a77c007. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The garden criterion selects the individual who takes the first Action without requiring game-specific components.",
+  "uncertainty": [
+    "No initial-start tie-break is stated alongside the gardening criterion.",
+    "This record does not infer a printing year or numbered edition from the download filename.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

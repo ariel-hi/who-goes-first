@@ -1,0 +1,36 @@
+{
+  "id": "nacho-pile-pandasaurus-en",
+  "slug": "nacho-pile-pandasaurus-en",
+  "gameName": "Nacho Pile",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pandasaurus Games English rules, copyright 2023",
+  "firstPlayerRule": "Pick the starting player at random and give them the bag of chips.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/9sgi14hy0lhomasjoddl5/PANNACHOCORE-rules-v12.pdf?rlkey=0nl87s7doahs9k1mx57xayad7&dl=0",
+      "title": "Nacho Pile — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup step 3, left panel of the second unnumbered PDF sheet; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/nacho-pile-small-bag. Finding: Pick the starting player at random and give them the bag of chips. Local source SHA-256: 4622d9cb1920c5316fb6a98bb786203600374b85844d8694f1473996c666b290. The rendered second sheet was inspected. It explicitly prescribes random selection; no draw method or subsequent turn direction is invented. Copyright 2023 appears on the first sheet. The publisher product links BGG 366327.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

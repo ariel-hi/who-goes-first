@@ -1,0 +1,30 @@
+---
+interface Props { prompts: { id: string; prompt: string }[] }
+const { prompts } = Astro.props;
+---
+{prompts.length > 0 && <div data-house-prompts data-prompts={JSON.stringify(prompts)}>
+  <div class="prompt-stage"><span class="eyebrow">Your group decides who qualifies</span><blockquote aria-live="polite" aria-atomic="true" data-prompt>Choose a question to start.</blockquote><div class="prompt-actions"><button class="primary" data-next disabled>Choose a question</button><button class="text-button" data-skip disabled>Skip</button></div><p class="small error" data-prompt-error hidden></p></div>
+  <p><a class="inline-link" href="/">Nobody / tied? Choose a random tie-break</a></p>
+  <details><summary>See all {prompts.length} original house rules</summary><ul class="prompt-list">{prompts.map(prompt => <li>{prompt.prompt}</li>)}</ul></details>
+</div>}
+<script>
+  import { shuffledPromptDeck } from '../lib/prompt-deck';
+  document.querySelectorAll<HTMLElement>('[data-house-prompts]').forEach(root => {
+    const prompts: { id: string; prompt: string }[] = JSON.parse(root.dataset.prompts!);
+    let current = -1;
+    let deck: number[] = [];
+    const update = () => {
+      const error = root.querySelector<HTMLElement>('[data-prompt-error]')!;
+      try {
+        if (!deck.length) deck = shuffledPromptDeck(prompts.length, current);
+        current = deck.pop()!;
+        root.querySelector<HTMLElement>('[data-prompt]')!.textContent = prompts[current]!.prompt;
+        root.querySelector<HTMLButtonElement>('[data-skip]')!.disabled = false;
+        error.hidden = true;
+      } catch { error.textContent = 'Secure randomness is unavailable. You can choose a question from the list below.'; error.hidden = false; }
+    };
+    root.querySelector('[data-next]')!.addEventListener('click', update);
+    root.querySelector('[data-skip]')!.addEventListener('click', update);
+    root.querySelector<HTMLButtonElement>('[data-next]')!.disabled = false;
+  });
+</script>

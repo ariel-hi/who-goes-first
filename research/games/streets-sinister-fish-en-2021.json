@@ -1,0 +1,49 @@
+{
+  "id": "streets-sinister-fish-en-2021",
+  "slug": "streets-sinister-fish-en-2021",
+  "gameName": "Streets",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Sinister Fish English base rules, ©2021",
+  "firstPlayerRule": "The player with the most “hipster cred” goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Turns proceed clockwise from that player.",
+    "Solo mode uses a different sequence: build and score for yourself, then build and score for the Grifter, then draw your replacement Building."
+  ],
+  "interpretation": "The rulebook does not define a measure for “hipster cred”; the group must agree how to apply it.",
+  "sources": [
+    {
+      "url": "https://sinisterfish.com/wp-content/uploads/2022/01/streets_rulebook.pdf",
+      "title": "Streets — Sinister Fish Games rules",
+      "publisher": "Sinister Fish Games",
+      "printedPages": [
+        "5",
+        "6",
+        "15",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        5,
+        6,
+        15,
+        16,
+        24
+      ],
+      "location": "Setup closing instruction; Rules and Turn Sequence; Solo Mode setup and rules; back-cover credits; PDF pages 1, 5, 6, 15, 16, 24",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://sinisterfish.com/product/streets-retail-edition/. Finding: The player with the most “hipster cred” goes first. Local source SHA-256: 7f22a6a7da3d30cb2b923186c0f71c0bfbd23c9c5bc74dd05c4fbe24943ac3ec. The publisher's retail product links this 24-page base manual, whose back cover states ©2021. The subjective starter criterion is reproduced without inventing a metric or a tie-break. Solo turn-sequence steps 1–5 establish the human action before the Grifter. The separate promo-pack rules were not used.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

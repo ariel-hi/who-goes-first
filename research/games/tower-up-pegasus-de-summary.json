@@ -1,0 +1,38 @@
+{
+  "id": "tower-up-pegasus-de-summary",
+  "slug": "tower-up-pegasus-de-summary",
+  "gameName": "Tower Up",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele German rules, English summary",
+  "firstPlayerRule": "Whoever lives on the highest floor goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/ba/19/51/1752666637/tower-up-anleitung.pdf?ts=1752672108",
+      "title": "Tower Up — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Spielvorbereitung, step 9; PDF pages 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Tower-Up/51887G. Finding: Whoever lives on the highest floor goes first. Local source SHA-256: e5ca5a2adddfba3638b2d4e6681a7b8f856d9c5cbc4bc7bef19ddfafe39a6d2e. The rule refers to the floor where the person lives, not the height of the tallest building they have visited.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

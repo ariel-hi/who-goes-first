@@ -1,0 +1,64 @@
+{
+  "id": "icecool-brain-games-en",
+  "slug": "icecool-brain-games-en",
+  "gameName": "ICECOOL",
+  "aliases": [
+    "Ice Cool"
+  ],
+  "language": "en",
+  "editionLabel": "English Brain Games rules, ten-page publisher download",
+  "firstPlayerRule": "Whoever saw a penguin most recently is the first catcher. The player to that person's left takes the first flick, and turns continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The catcher assignment does not make that person the first player to move. In a four-player round, the three runners act before the catcher.",
+    "The two-player rules keep this starting order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1OqHjZSI14QHhd8Kao6-bNImQnZyW7BK4/view?usp=sharing",
+      "title": "ICECOOL — Brain Games rules",
+      "publisher": "Brain Games",
+      "printedPages": [
+        "5",
+        "7",
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        10
+      ],
+      "location": "Setup step 5; Phase 2, playing the round; two-player changes; PDF pages 2, 4, 10",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/01660-DE-AmigoRule.pdf",
+      "title": "ICECOOL — AMIGO rules",
+      "publisher": "AMIGO",
+      "printedPages": [
+        "3",
+        "5",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5,
+        11
+      ],
+      "location": "Setup step 5; Phase 2, playing a round; two-player changes; PDF pages 3, 5, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.brain-games.online/. Finding: Whoever saw a penguin most recently is the first catcher. The player to that person's left takes the first flick, and turns continue clockwise. Local source SHA-256: f623ed4b625d3207cf28edae884067346eb9e758ee04337bac2743dc0c9ed099. English PDF pages 2, 4 and 10 (printed 5, 7 and 13) were rendered and inspected. The publisher rules index links the public Google Drive download. German AMIGO PDF pages 3, 5 and 11 were also visually checked and agree on the starting instructions. The English source replaces the temporary German-only draft; these matching instructions are represented once in the directory.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

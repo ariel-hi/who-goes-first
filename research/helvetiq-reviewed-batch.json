@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "kawaii-helvetiq-en",
+    "gameName": "Kawaii",
+    "sourceHint": "kawaii-4cdcfbc2.pdf",
+    "editionLabel": "Helvetiq multilingual rules, English sheet",
+    "pages": [1],
+    "printedPages": [],
+    "location": "English sheet: How to play; End of the game and scoring",
+    "firstPlayerRule": "Whoever most recently ate ice cream starts the first round. Card-flipping turns proceed clockwise.",
+    "clarifications": ["The player with the lowest score starts subsequent rounds.", "Capturing a pile can interrupt the turn sequence. The rock-paper-scissors tie-break in the rules resolves simultaneous captures of a pile, not a tie over who starts."],
+    "evidenceNotes": "The full rendered English sheet was inspected. The first-round ice-cream criterion is distinct from the later-round lowest-score instruction. No printed page number or publication year is shown on this sheet. The capture tie-break was not reused as a starting tie-break."
+  },
+  {
+    "slug": "kinoko-helvetiq-en",
+    "gameName": "Kinoko",
+    "sourceHint": "kinoko-a7fcd77c.pdf",
+    "editionLabel": "Helvetiq multilingual rules, English sheet",
+    "pages": [3],
+    "printedPages": [],
+    "location": "English sheet: Gameplay; End of the round",
+    "firstPlayerRule": "Whoever most recently picked a mushroom starts. Turns proceed clockwise.",
+    "clarifications": ["For later rounds, the player to the left of whoever announced the previous round's end starts the new round."],
+    "evidenceNotes": "The full rendered English sheet, PDF page 3, was inspected. Picking a mushroom is the initial criterion; eating mushrooms is not stated. The later-round instruction and end-of-game tie-break were not substituted for the initial rule. No printed page number or publication year is shown on the sheet."
+  }
+]

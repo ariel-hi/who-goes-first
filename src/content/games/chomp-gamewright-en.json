@@ -1,0 +1,38 @@
+{
+  "id": "chomp-gamewright-en",
+  "slug": "chomp-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "fad75b8e9634d8e440b3c1ea037df1339e360aaf9623a0a9af1c08cfdcf14b95",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Chomp!",
+  "aliases": [],
+  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "firstPlayerRule": "There is no single starting player: everyone turns over a card at the same time.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This entry covers the standard game for three or more players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/ChompTM-RULES.pdf",
+      "title": "Chomp! — Gamewright rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Game Play (for three or more players), PDF page 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The English starting instruction in Game Play (for three or more players) on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: There is no single starting player: everyone turns over a card at the same time. Local source SHA-256: fb5ee00b1e7fdb255339c87a0b4f7fca94a69b7668c9b5db41c912922d04df1e. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Directory only: simultaneous play cannot choose one starting player.",
+  "uncertainty": [
+    "No tie-break is stated alongside this starting instruction.",
+    "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
+  ]
+}

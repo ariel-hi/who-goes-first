@@ -1,0 +1,42 @@
+{
+  "id": "ghost-stories-repos-en",
+  "slug": "ghost-stories-repos-en",
+  "gameName": "Ghost Stories",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Repos Production English rules, copyright 2008–2009",
+  "firstPlayerRule": "The most recent person to watch a kung-fu movie starts. Turns then proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The solo game uses one player's Taoist and three neutral boards; it does not require choosing between several human players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/Ghost-Stories/gs-rules-us-16118426030fANr.pdf",
+      "title": "Ghost Stories — Repos Production rules",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "4",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        9
+      ],
+      "location": "Playing the Game; Rules for 1, 2, or 3 Players; PDF pages 4, 9",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.rprod.com/en/old-games/ghost-stories. Finding: The most recent person to watch a kung-fu movie starts. Turns then proceed clockwise. Local source SHA-256: 1597d171775e207e770add0a9aa10df1e4a2635db355b012cf27b8ef7068ad7a. The starting instruction and nearby four-player setup were read on rendered page 4. Page 9 was separately inspected for the one-, two- and three-player adjustments and solo example. The source credits state copyright 2008–2009. No alternative starter or tie resolution is supplied alongside the movie criterion.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

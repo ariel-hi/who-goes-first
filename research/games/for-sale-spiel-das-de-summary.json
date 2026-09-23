@@ -1,0 +1,42 @@
+{
+  "id": "for-sale-spiel-das-de-summary",
+  "slug": "for-sale-spiel-das-de-summary",
+  "gameName": "For Sale",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "SPIEL DAS! / IELLO German rules, v1 file, English summary",
+  "firstPlayerRule": "Choose the starting player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The chosen player takes the first bidding-or-passing turn in the property-buying phase. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://produkte.hutter-trade.com//files/products/1662/200/de/for-sale-spielregel-de-v1.pdf",
+      "title": "For Sale — Hutter Trade rules",
+      "publisher": "Hutter Trade",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Spielvorbereitung, step 4; Spielablauf, Phase 1: Häuser kaufen; PDF pages 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Choose the starting player randomly. Local source SHA-256: 66d4237436f549c40b3e918af2cf8a38a316d2bc46a751f0bc09efc5a6d1e9fa. The Hutter Trade download identifies SPIEL DAS! and IELLO in its colophon. This file explicitly uses random selection; a personal real-estate criterion from another edition was not substituted.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

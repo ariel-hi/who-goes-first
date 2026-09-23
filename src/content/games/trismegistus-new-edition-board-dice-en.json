@@ -1,0 +1,46 @@
+{
+  "id": "trismegistus-new-edition-board-dice-en",
+  "slug": "trismegistus-new-edition-board-dice-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d0cd84188b88161c0a457009a69dd58540c2377c02a324459c090f75a89a0c43",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Trismegistus",
+  "aliases": [
+    "Trismegistus New Edition"
+  ],
+  "editionLabel": "English Board&Dice New Edition multiplayer rules, 24-page booklet",
+  "firstPlayerRule": "Whoever made a potion most recently starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Put that player's marker first on the turn-order track, then place the other players' markers clockwise.",
+    "This is the revised New Edition. The original game, The Ultimate Formula, has a separate entry with different setup instructions.",
+    "The setup does not define what counts as a potion. This entry covers the multiplayer manual, not the separately offered solo rules."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/57q0skxes2ffi9vxd2occ/tris_rulebook_web.pdf?rlkey=fpowhmsw2po165f8frv51sao7&st=fjbyxdok&dl=0",
+      "title": "Trismegistus — Board&Dice rules",
+      "publisher": "Board&Dice",
+      "printedPages": [
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        8
+      ],
+      "location": "Cover; Player Setup, steps A and C3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/download/. Finding: Whoever made a potion most recently starts. Local source SHA-256: 15cf6c3a736e59b0b8c4c197b511af6487e6fb33a94b180b61f5e8cd6c607582. The publisher identifies this revised game at https://boardanddice.com/trismegistus-newedition/. Its cover says Trismegistus without the older subtitle. It does not stand in for the original inventory identity. Editorial recheck 2026-09-23: Opened and visually inspected each listed source-page render from the publisher-linked cached PDF. Rechecked starting role, mode and edition scope. Official alternatives remain in the main answer and are not mislabeled as tie-breaks. Cached source: research\\source-files\\board-dice\\trismegistus-the-ultimate-formula-new-edition-0b61d22d.pdf; SHA-256 15cf6c3a736e59b0b8c4c197b511af6487e6fb33a94b180b61f5e8cd6c607582. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The thematic potion criterion is undefined. Keep the exact revised-edition answer in the directory without inventing a real-world interpretation for the mix.",
+  "uncertainty": [
+    "The thematic potion criterion is not defined in this setup passage. The separately offered solo rulebook is not covered here.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

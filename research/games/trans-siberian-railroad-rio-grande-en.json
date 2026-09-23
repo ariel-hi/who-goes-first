@@ -1,0 +1,47 @@
+{
+  "id": "trans-siberian-railroad-rio-grande-en",
+  "slug": "trans-siberian-railroad-rio-grande-en",
+  "gameName": "Trans-Siberian Railroad",
+  "aliases": [
+    "Trans Siberian Railroad"
+  ],
+  "language": "en",
+  "editionLabel": "English rules · TSR-Rules-20200811 publisher file",
+  "firstPlayerRule": "The person who most recently visited Russia opens the initial auction, unless the group agrees on another method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That starter makes the first bid or passes in the opening Red stock auction.",
+    "After the initial auctions, Phase 1 begins with the last person who bought a stock certificate. The setup starter is not necessarily the first player in Phase 1."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2020/08/TSR-Rules-20200811.pdf",
+      "title": "Trans-Siberian Railroad — Rio Grande Games rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "2",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5
+      ],
+      "location": "Setup; Initial Auction Round; Phase 1; PDF pages 2, 4, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/trans-siberian-railroad/. Finding: The person who most recently visited Russia opens the initial auction, unless the group agrees on another method. Local source SHA-256: cc4ef537d190ffda626e11f28c45d717944788afe219d64d04301c9697d13839. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

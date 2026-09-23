@@ -1,0 +1,23 @@
+{
+  "allowedHosts": [
+    "portalgames.pl",
+    "www.portalgames.pl",
+    "portalgames-media-files.s3.eu-central-1.amazonaws.com",
+    "en.portalgames.pl"
+  ],
+  "manuals": [
+    {
+      "gameName": "Neuroshima Hex! 3.0",
+      "bggId": "21241",
+      "url": "https://portalgames.pl/en/wp-content/uploads/2015/07/EN_Neuroshima_Hex_3_0_rulebook.pdf",
+      "indexSource": "https://en.portalgames.pl/neuroshima-hex-3-0-rules/",
+      "downloadUrl": "https://portalgames.pl/wp-content/uploads/2015/07/EN_Neuroshima_Hex_3_0_rulebook.pdf"
+    },
+    {
+      "gameName": "Gutenberg",
+      "bggId": "339958",
+      "url": "https://portalgames-media-files.s3.eu-central-1.amazonaws.com/wp-content/uploads/2022/06/GUTENBER_RULEBOOK.pdf",
+      "indexSource": "https://en.portalgames.pl/gutenberg/"
+    }
+  ]
+}

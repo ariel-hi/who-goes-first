@@ -1,0 +1,149 @@
+[
+  {
+    "slug": "trekking-national-parks-underdog-en-second-edition",
+    "gameName": "Trekking the National Parks: Second Edition",
+    "aliases": ["Trekking the National Parks", "Trekking the National Parks 2nd Edition"],
+    "editionLabel": "Underdog English second edition, 8-page publisher PDF",
+    "firstPlayerRule": "Whoever most recently visited a national park goes first.",
+    "clarifications": [
+      "Give that player the First Player Token. Turns proceed clockwise, with two actions per turn.",
+      "The token also identifies the final turn order: finish the last round so that everyone has the same number of turns.",
+      "This answer covers the second edition identified in the publisher’s download and credits."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 4, 7, 8],
+    "printedPages": ["cover", "2", "4", "7", "unnumbered credits"],
+    "location": "Setup step 8; Gameplay; End of the Game; second-edition credits",
+    "evidence": "Setup step 8 gives the First Player Token and first turn to the latest visitor to a national park. Gameplay confirms clockwise individual turns with two actions each. The final round ends with the player to the starter’s right; Park Card and stone tie-breaks apply only to final scoring. Credits explicitly identify Second Edition development by Underdog Games. The publisher’s legacy page is labeled for the second edition; this is not the separately offered third-edition manual. No printing year is inferred from the URL timestamp.",
+    "uncertainty": ["The source states no initial-start tie-break and does not identify a printing year."],
+    "portable": true,
+    "poolReason": "The personal travel criterion selects the actual first player and requires no game-specific components."
+  },
+  {
+    "slug": "trekking-world-underdog-en-first-edition",
+    "gameName": "Trekking the World",
+    "aliases": ["Trekking the World first edition"],
+    "editionLabel": "Underdog English first edition, 8-page legacy download",
+    "firstPlayerRule": "Whoever most recently went to an airport goes first.",
+    "clarifications": [
+      "That player also places their Trekker on an Airport first during setup. Others place theirs clockwise, with only one Trekker per Airport.",
+      "Regular turns begin with the same first player and continue clockwise.",
+      "The criterion concerns going to an airport; it does not require taking a flight."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 4, 7, 8],
+    "printedPages": ["cover", "2", "4", "7", "unnumbered credits"],
+    "location": "Setup step 2; Gameplay; End of the Game and Final Scoring; credits",
+    "evidence": "Setup step 2 selects the latest airport visitor and orders starting Trekker placement clockwise. Gameplay separately confirms that this player begins clockwise individual turns. The souvenir-count tie-break concerns final scoring only. Unlike Trekking the National Parks, this game ends after the triggering player finishes their turn; no equal-turn final round is asserted. The publisher’s legacy navigation identifies this download as first edition. The PDF credits identify Underdog but state no printing year.",
+    "uncertainty": ["The source states no initial-start tie-break and does not identify a printing year."],
+    "portable": true,
+    "poolReason": "The everyday airport-visit criterion selects the actual first actor without requiring game components."
+  },
+  {
+    "slug": "fliptoons-thunderworks-en-2025",
+    "gameName": "FlipToons",
+    "aliases": ["Flip Toons"],
+    "editionLabel": "Thunderworks English rules, ©2025",
+    "firstPlayerRule": "Everyone begins together; whoever most recently watched a cartoon takes the first Market turn.",
+    "clarifications": [
+      "Give that player the first player card during setup. The opening Flip and Check Fame phases are simultaneous.",
+      "The Market phase then proceeds clockwise from the card holder. Each player may take up to two Hire or Dismiss actions.",
+      "If another round follows, pass the first player card clockwise during Cleanup. The card is not used in solo play."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the cartoon-watching comparison is unclear or your group prefers another approach, agree to choose the first Market player randomly. This is this site’s suggested house rule.",
+    "pdfPages": [4, 5, 6, 7, 8, 11, 15, 16],
+    "printedPages": ["4–8", "unnumbered Cleanup and Final Flip", "unnumbered Solo Play Rules", "unnumbered solo continuation and copyright"],
+    "location": "Setup step 7 and diagram; Flip; Check Fame; Market; Cleanup; Solo Setup; copyright",
+    "evidence": "Setup step 7 selects the latest cartoon viewer for the first player card. Rendered pages 6–7 explicitly make Flip and Check Fame simultaneous; page 8 starts individual clockwise Market turns with the card holder. Cleanup rotates the card only when another round follows. The repeated Final Flip tie-break concerns the eventual winner, not the initial card holder. Solo Setup removes the card entirely. The copyright is ©2025.",
+    "uncertainty": ["The source gives no tie-break for assigning the initial first player card."],
+    "portable": false,
+    "poolReason": "This criterion selects priority in a later Market phase after a simultaneous opening, rather than a first actor at the start of play. Preserve that distinction in the directory; do not adapt it into a different random-mix rule."
+  },
+  {
+    "slug": "dawn-of-ulos-thunderworks-en-2023",
+    "gameName": "Dawn of Ulos",
+    "aliases": [],
+    "editionLabel": "Thunderworks English rules, ©2023",
+    "firstPlayerRule": "In multiplayer, whoever woke up earliest today goes first.",
+    "clarifications": [
+      "Give that player the start player marker. Turns proceed clockwise: place a tile if able, optionally take an action, then draw a tile.",
+      "Finish the last round so that everyone has the same number of turns. The player to the marker holder’s right takes the last turn.",
+      "In solo mode, Ulrir always receives the start player marker and acts before the human player. Turns then alternate."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the wake-up times are tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [4, 7, 11, 16, 17, 20],
+    "printedPages": ["unnumbered Game Setup", "unnumbered How to Play", "11", "16–17", "unnumbered credits"],
+    "location": "Game Setup step 8; How to Play; Game End and Final Scoring; Solo Mode setup step 7 and Ulrir Turn; credits",
+    "evidence": "Game Setup selects whoever woke earliest today. How to Play confirms that marker holder begins clockwise individual turns. Game End preserves equal turn counts; the unused-rift tie-break is only for final scores. Solo setup explicitly awards Ulrir the marker and first turn, and the following page details that automated turn. The credits state ©2023.",
+    "uncertainty": ["The source gives no initial-start tie-break for identical or uncertain wake-up times."],
+    "portable": true,
+    "poolReason": "The multiplayer wake-up-time comparison selects the actual first actor without requiring game components. The separate solo rule stays explicit."
+  },
+  {
+    "slug": "azul-master-chocolatier-next-move-en-2022",
+    "gameName": "Azul: Master Chocolatier",
+    "aliases": ["Azul Master Chocolatier", "Azul Chocolate"],
+    "editionLabel": "Next Move English rules, ©2022",
+    "firstPlayerRule": "Whoever most recently ate chocolate goes first.",
+    "clarifications": [
+      "That player takes the starting player marker and fills the Factory displays during setup. They then put the marker in the center and take the first Factory offer turn; play continues clockwise.",
+      "During each round, the first person to take tiles from the center also takes the marker into their foundry line. It counts for the foundry penalty and makes them the next round’s starting player.",
+      "The brown-board and Special Factories variants retain the same initial starting-player criterion."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2, 4, 5, 6],
+    "printedPages": ["2", "3", "5", "6", "cover"],
+    "location": "Game Setup step 5; Factory offer; Scoring and Preparing the next round; Variant play and Special Factories; credits and cover",
+    "evidence": "The publisher-owned Next Move CDN supplies this six-page PDF in a non-cover-first order. Printed page 2 selects the latest chocolate eater; printed page 3 places the marker in the center before their clockwise first turn. The center taker receives the marker later, with the foundry penalty, and begins the following round. Both variants preserve the initial criterion. The final-score horizontal-line tie-break is not a starting-player rule. The cover identifies Master Chocolatier and the credits say ©2022 despite the 2024 hosting path.",
+    "uncertainty": ["The source gives no initial-start tie-break for the chocolate-eating criterion."],
+    "portable": true,
+    "poolReason": "The personal food-recency criterion selects the actual first actor and needs no game-specific components."
+  },
+  {
+    "slug": "azul-sintra-next-move-en-2024",
+    "gameName": "Azul: Stained Glass of Sintra",
+    "aliases": ["Azul Sintra", "Stained Glass of Sintra"],
+    "editionLabel": "Next Move English rules, ©2024",
+    "firstPlayerRule": "Whoever most recently cleaned a window goes first.",
+    "clarifications": [
+      "That player receives the starting player tile. Choosing someone to manage the scoring board is a separate setup step.",
+      "At the start of each round, the tile holder places it in the center and takes the first turn. Turns continue clockwise.",
+      "The first person to take pane pieces from the center receives the tile for the next round and moves one space down the broken glass track."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [2, 3, 5, 6],
+    "printedPages": ["unnumbered Game Setup", "3", "5", "6"],
+    "location": "Game Setup steps 6–8; Playing the Game and Advance a pattern; End of the Round; accessibility setup and credits",
+    "evidence": "The publisher-owned Next Move CDN manual awards the tile to the latest window cleaner, separately from appointing the scorekeeper. Playing the Game begins clockwise turns with the tile holder. The first center picker gets the tile beside their palace board and advances one step down the broken glass track; this is not the original Azul floor-line rule. End of the Round confirms that holder refills factories before the next round. The accessibility setup changes tile arrangement, not the starter. Credits explicitly say ©2024. Final broken-glass score ties are not initial-start ties.",
+    "uncertainty": ["The source gives no initial-start tie-break for the window-cleaning criterion."],
+    "portable": true,
+    "poolReason": "The everyday window-cleaning criterion selects an individual first actor without requiring game components."
+  },
+  {
+    "slug": "beez-next-move-en-2020",
+    "gameName": "Beez",
+    "aliases": [],
+    "editionLabel": "Next Move English rules, ©2020",
+    "firstPlayerRule": "Whoever most recently ate a honey sandwich goes first.",
+    "clarifications": [
+      "Place bees during setup starting with the person to the first player’s right and continuing counterclockwise. The first player places their bee last.",
+      "Regular turns then begin with the selected first player and proceed clockwise, through Flight plan, Flying and collecting nectar, and Storing nectar and making honey.",
+      "The two-player and expert rules keep this starting-player criterion."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+    "pdfPages": [1, 2],
+    "printedPages": ["2–4", "5–6", "cover"],
+    "location": "Game Setup step 3; Gameplay; Game End; Rules for two players and experts; credits",
+    "evidence": "This publisher-owned Next Move CDN PDF contains two three-panel sheets. Printed page 3 specifies a honey sandwich, not honey alone. Its setup text explicitly runs counterclockwise from the starter’s right, while Gameplay says the selected starter begins clockwise regular turns. Printed page 6 retains all other rules for two-player and expert modes. The large-nectar tie-break applies only to final honey-drop scores. Credits state ©2020. Both full sheets were extracted and visually inspected, including the setup-direction wording.",
+    "uncertainty": ["The source gives no initial-start tie-break for the honey-sandwich criterion."],
+    "portable": true,
+    "poolReason": "The food-recency criterion selects the first actual player after reverse-order setup and requires no game-specific components."
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "astra-mindclash-en-2022",
+  "slug": "astra-mindclash-en-2022",
+  "gameName": "Astra",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Mindclash English rules, ©2022",
+  "firstPlayerRule": "Whoever most recently saw a shooting star goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the First Player token; they retain it throughout the game.",
+    "Turns proceed clockwise.",
+    "The additional two-player Dream phase does not change this starting criterion. This answer covers the multiplayer rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://mindclashgames.com/wp-content/uploads/2023/03/MCG_Astra_Rulebook_websafe.pdf",
+      "title": "Astra — Mindclash Games rules",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "6",
+        "7",
+        "10",
+        "11",
+        "20",
+        "21",
+        "30",
+        "31"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        4,
+        6,
+        11,
+        16
+      ],
+      "location": "Cover; player setup step 4; gameplay; two-player rules; credits; PDF pages 1, 4, 6, 11, 16",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/astra/. Finding: Whoever most recently saw a shooting star goes first. Local source SHA-256: b5d85643857d65e155cf1819704243448d9f18a51cb4d4e64ed1f8bc638fcff4. The publisher’s game page directly links this websafe rulebook. It is not the earlier preview PDF or the separate Myths of the Night Sky storybook. All five listed PDF pages were visually inspected; spread numbering differs from printed numbering.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

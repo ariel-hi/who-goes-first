@@ -1,0 +1,40 @@
+{
+  "id": "pyramid-poker-rnr-en",
+  "slug": "pyramid-poker-rnr-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "50e94ade7fea2fa8daef4362dc9160012f3ceca5733a34c770ff97604b8d56c1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Pyramid Poker",
+  "aliases": [],
+  "editionLabel": "English R&R Games two-player base-game rules, 2016 copyright",
+  "firstPlayerRule": "The first player to say “Tut Tut” places the first block in the pyramid.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Players alternate placing their blocks. Once all 30 blocks are placed, they continue taking turns to remove blocks and form poker hands."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rnrgames.com/Content/RRGames/images/productrules/PyramidPoker_rules_english.pdf",
+      "title": "Pyramid Poker — R&R Games rules",
+      "publisher": "R&R Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Build Pyramid on the first sheet; Making Hands on the second sheet",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/pyramid-poker. Finding: The first player to say “Tut Tut” places the first block in the pyramid. Local source SHA-256: 91105083133e94eca5dbb9b3268d89120397cabde3733ca19fd2e98522d38eb9. Editorial recheck 2026-09-23: Inspected both complete PDF sheets, including 2016 credits, Build Pyramid and Making Hands. Saying Tut Tut first selects initial block placement in setup; after 30 placements players continue alternating to remove blocks. The record covers the two-player base booklet only. Cached source: research\\source-files\\rnr\\pyramid-poker-31740e27.pdf; SHA-256 91105083133e94eca5dbb9b3268d89120397cabde3733ca19fd2e98522d38eb9. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The quoted instruction selects pyramid construction under Set-up; retain that phase-specific answer in the catalog.",
+  "uncertainty": [
+    "This answer covers the two-player base rules, not the separately offered three-to-four-player addendum.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

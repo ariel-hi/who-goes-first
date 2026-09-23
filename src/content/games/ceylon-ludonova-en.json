@@ -1,0 +1,44 @@
+{
+  "id": "ceylon-ludonova-en",
+  "slug": "ceylon-ludonova-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6cb87b6075d1b559877ddfd92d90bc41ea16286b1ac6e466e8eeddf6bf8f0a05",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Ceylon",
+  "aliases": [],
+  "editionLabel": "English Ludonova rules, publisher file Rules_Ceylon_2.0_low.pdf",
+  "firstPlayerRule": "In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starter receives the teapot and chooses an initial map position first. Standard setup continues clockwise; the experienced-player variant assigns these initial positions in ascending starting-tile order.",
+    "During play, turns proceed clockwise from the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://ludonova.com/wp-content/uploads/2023/10/Rules_Ceylon_2.0_low.pdf",
+      "title": "Ceylon — Ludonova rules",
+      "publisher": "Ludonova",
+      "printedPages": [
+        "4",
+        "6",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        10
+      ],
+      "location": "Setup step I; Playing; Game variant",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/ceylon/. Finding: In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts. Local source SHA-256: 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. Editorial recheck 2026-09-23: Opened and visually inspected each listed source-page render from the publisher-linked cached PDF. Rechecked starting role, mode and edition scope. Official alternatives remain in the main answer and are not mislabeled as tie-breaks. Corrected the original draft clarification: the variant uses ascending tile order for initial placement, not standard clockwise setup order. Cached source: research\\source-files\\ludonova\\ceylon-1454d869.pdf; SHA-256 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The main answer includes an experienced-player variant requiring numbered starting tiles.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

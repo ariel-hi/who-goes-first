@@ -1,0 +1,38 @@
+{
+  "id": "wingspan-online-en",
+  "slug": "wingspan-online-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a473785f79e70d9c027ed28b48be36f8a87013855cf0c6746df142b5fdec40a9",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Wingspan",
+  "aliases": [
+    "Wingspan base game"
+  ],
+  "editionLabel": "English base game · official online rules, standard multiplayer",
+  "firstPlayerRule": "Choose the starting player at random and give that player the first-player token.",
+  "officialTieBreak": "A single random selection determines the starting player; no qualifying personal trait is required.",
+  "houseFallback": null,
+  "clarifications": [
+    "This entry covers standard play with human opponents. Automa, Duet and Flock modes have their own setup instructions.",
+    "The random selection is the official setup instruction, not an added house rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://wingspan.rulepop.com/#setup",
+      "title": "Wingspan Rules — Setup, Player",
+      "publisher": "Stonemaier Games / Rulepop",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Setup → Player, first-player token; Settings: Wingspan only, Standard (2–5 players), Human",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Stonemaier’s Wingspan rules page links Rulepop. Inspected the live setup with expansion sets disabled and standard human multiplayer selected; the first-player token instruction requires random selection. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research/source-files/core-games-review/wingspan-player.html; SHA-256 cc2b165a6a281428e9b0a169dfb26e0bb6757553e5b5d08e30ece16dabbdde7c. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The official base-game reference calls for random selection in standard human multiplayer, without a distinct portable criterion.",
+  "uncertainty": [
+    "The online reference is live rather than a dated print edition; review future changes before updating this record."
+  ]
+}

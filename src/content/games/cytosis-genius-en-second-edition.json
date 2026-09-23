@@ -1,0 +1,56 @@
+{
+  "id": "cytosis-genius-en-second-edition",
+  "slug": "cytosis-genius-en-second-edition",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ee6dde83c2a700c42efc97e9bb1a1e9f50625084c01b2f99f72da7dfdedc04da",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Cytosis: A Cell Biology Board Game",
+  "aliases": [
+    "Cytosis",
+    "Cytosis: A Cell Biology Game"
+  ],
+  "editionLabel": "Genius Games English second-edition rules, Rev1 download",
+  "firstPlayerRule": "Whoever looked through a microscope most recently goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "That player receives the First Player Marker and places the first flask. Turns continue clockwise.",
+    "Starting ATP increases with turn order: the first player gets 2, the next gets 3, then 4, and so on. Everyone also chooses two additional resources from ATP, mRNA and Lipids.",
+    "The marker does not rotate automatically. A player can claim it at Laureates in Biology and keeps it for later rounds until someone else claims it."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/1577/9557/files/Cytosis_Rulebook_Rev1.pdf?7588456581848514858",
+      "title": "Cytosis: A Cell Biology Board Game — Genius Games rules",
+      "publisher": "Genius Games",
+      "printedPages": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "9",
+        "14"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5,
+        6,
+        10,
+        15,
+        16
+      ],
+      "location": "Designer foreword; Game Setup steps 8–9 and diagram; Phase 1; Laureates in Biology; two-player rules; game summary",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 2, 4, 5, 6, 10, 15, 16. PDF page 2's foreword explicitly identifies the second edition. Rendered PDF page 4 (printed 3) contains the microscope criterion and initial resources; pages 5 and 6 show setup and first-flask order. PDF page 10 (printed 9) distinguishes claiming the marker in play from its initial allocation. PDF page 15's two-player changes do not replace the starter. PDF page 16 summarizes the same marker-first sequence. No printing year is inferred from the file name or product history. Publisher discovery URL: https://www.geniusgames.org/products/cytosis-a-cell-biology-game-a-science-accurate-strategy-board-game-about-building-proteins-carbohydrates-enzymes-organelles-membranes. Local source SHA-256: 2f6994131d2fc23214c65240153c4bfc3a04db27a9f4c24f9ebd8e0fb9a69716. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, and relevant mode context. Owner authorization: Reload localhost, 2026-09-22. Included in the random mix because the criterion selects an individual first actor without requiring game-specific components; team seating in The King Is Dead does not replace individual turns.",
+  "uncertainty": [
+    "No initial-start tie-break is stated alongside the cited criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

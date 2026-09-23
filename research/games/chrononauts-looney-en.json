@@ -1,0 +1,39 @@
+{
+  "id": "chrononauts-looney-en",
+  "slug": "chrononauts-looney-en",
+  "gameName": "Chrononauts",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Looney Labs English rules, copyright 2000–2013",
+  "firstPlayerRule": "Everyone guesses the current time. The closest guess goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This selects the starter for the multiplayer game. Solonauts is a separate solitaire mode with no competing first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/ChrononautsRules.pdf",
+      "title": "Chrononauts — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "How to Play, opening paragraph; Other Ways to Play Chrononauts; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/chrononauts. Finding: Everyone guesses the current time. The closest guess goes first. Local source SHA-256: 7f5e497ebd9b5477b0d3c22844c5af1019e3b95ef06bd441885f39929479501e. The current publisher-linked two-page sheet was rendered and read. The time-guess instruction is explicit on its front; the separate solo mode is on its back.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

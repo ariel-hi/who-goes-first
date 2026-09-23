@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import '../styles/table.css';
+import { siteSettings } from '../lib/site';
+interface Props { title: string; description: string; noindex?: boolean; canonicalPath?: string; pageType?: 'WebPage' | 'AboutPage' | 'CollectionPage'; modified?: string; citations?: string[] }
+const { title, description, noindex = false, canonicalPath = Astro.url.pathname, pageType = 'WebPage', modified, citations } = Astro.props;
+const settings = siteSettings();
+const canonical = new URL(canonicalPath, settings.url).href;
+const path = Astro.url.pathname;
+const localPreview = import.meta.env.DEV && !settings.production;
+const gamesPath = localPreview ? '/dev/games/' : '/games/';
+const indexed = settings.production && !noindex;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    ...(path === '/' ? [{ '@type': 'WebSite', '@id': `${settings.url}/#website`, name: 'Who Goes First?', url: `${settings.url}/`, inLanguage: 'en' }] : []),
+    { '@type': pageType, '@id': `${canonical}#webpage`, name: title, description, url: canonical, inLanguage: 'en', isPartOf: { '@id': `${settings.url}/#website` }, ...(modified ? { dateModified: modified } : {}), ...(citations ? { citation: citations } : {}) },
+  ],
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title><meta name="description" content={description} />
+    <meta name="robots" content={indexed ? 'index, follow' : 'noindex, follow'} />
+    <link rel="canonical" href={canonical} /><meta name="theme-color" content="#f7f5ee" /><meta name="color-scheme" content="light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" /><meta property="og:site_name" content="Who Goes First?" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/social.png', settings.url).href} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="Who Goes First? A fair draw for your next board game." />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={new URL('/social.png', settings.url).href} /><meta name="twitter:image:alt" content="Who Goes First? A fair draw for your next board game." />
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" tabindex="0">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Who Goes First? Home"><svg class="brand-mark" aria-hidden="true" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="8"/><g fill="#fafaf7"><circle cx="10" cy="10" r="2.2"/><circle cx="22" cy="10" r="2.2"/><circle cx="16" cy="16" r="2.2"/><circle cx="10" cy="22" r="2.2"/><circle cx="22" cy="22" r="2.2"/></g></svg>Who goes first?</a>
+      <nav class="site-nav" aria-label="Main navigation"><a href={gamesPath} aria-current={path.startsWith('/games/') || path.startsWith('/dev/games/') || path.startsWith('/dev/rules/') ? 'page' : undefined}>Game rules</a><a href="/about/" aria-current={path === '/about/' ? 'page' : undefined}>About</a></nav>
+    </header>
+    <main id="main" tabindex="-1"><slot /></main>
+    <footer class="site-footer"><nav aria-label="Footer"><a href="/fairness/">How it works</a><a href="/privacy/">Privacy</a>{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
+  </body>
+</html>
+

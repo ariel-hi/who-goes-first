@@ -1,0 +1,48 @@
+{
+  "id": "terror-below-renegade-en-2019",
+  "slug": "terror-below-renegade-en-2019",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Terror Below",
+  "aliases": [],
+  "editionLabel": "Renegade English rules, ©2019",
+  "firstPlayerRule": "In multiplayer, whoever most recently defeated a Worm in combat goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Choose starting Locations in reverse player order, beginning with the last player. This setup order does not change who takes the first turn.",
+    "The starting player plays a Vehicle card, resolves it, refills their hand, and checks for a possible Worm Attack. Turns then continue clockwise.",
+    "In solo play, the human uses one squad; the Worms’ separate Terror Turn happens after each human turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/TerrorBelow_Rulebook_Web_3_18_19.pdf",
+      "title": "Terror Below — Renegade Game Studios rules",
+      "publisher": "Renegade Game Studios",
+      "printedPages": [
+        "8",
+        "20",
+        "21",
+        "unnumbered credits"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        21,
+        22,
+        28
+      ],
+      "location": "Worm Setup and Turn Sequence; Solo Game setup and Terror Turn; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 9, 21, 22, 28. Rendered PDF page 9 states the most recent Worm combat victory criterion, then separately orders initial Location placement backwards. Its Turn Sequence starts with the selected player and continues clockwise. Solo pages place the Terror Turn after the human's turn. Credits identify ©2019. The complete source was retrieved from the publisher's own host; the old product URL returned 404 and is not claimed as a working discovery page. Publisher discovery URL: https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/TerrorBelow_Rulebook_Web_3_18_19.pdf. Local source SHA-256: 14508dfe8fffe366389f99e80e9543cc2423af266cb6493ebf08b06e52b643ea.",
+  "uncertainty": [
+    "The rule does not define which past Worm-combat victories qualify or provide an initial-start tie-break.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

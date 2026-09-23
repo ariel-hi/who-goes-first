@@ -1,0 +1,39 @@
+{
+  "id": "hanabi-rnr-en",
+  "slug": "hanabi-rnr-en",
+  "gameName": "Hanabi",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English R&R Games rules, 2013 copyright, folded booklet",
+  "firstPlayerRule": "The player wearing the most colorful clothing takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rnrgames.com/Content/RRGames/images/ProductRules/hanabiRules.PDF",
+      "title": "Hanabi — R&R Games rules",
+      "publisher": "R&R Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "The Game on the second PDF sheet; edition credits on the first sheet; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/hanabi. Finding: The player wearing the most colorful clothing takes the first turn. Local source SHA-256: f23df0ceaa2715e6b46444018fb8bfad6afb021d76fc2c2ee802fdfb4c2dc472. This image-only PDF was reviewed visually on both rendered sheets; extracted text was insufficient.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

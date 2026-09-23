@@ -1,0 +1,41 @@
+{
+  "id": "spooky-tower-repos-en",
+  "slug": "spooky-tower-repos-en",
+  "gameName": "Spooky Tower",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Repos Production English rules, copyright 2026",
+  "firstPlayerRule": "Use the game's playful criterion: whoever most recently saw a ghost starts. Play then continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starting player begins by dropping both dice into the clock tower."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/spooky-tower/packs_press/spo-en01-rules-17727912283SgCe.pdf",
+      "title": "Spooky Tower — Repos Production rules",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Gameplay Overview, opening instruction; PDF pages 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.rprod.com/en/games/spooky-tower. Finding: Use the game's playful criterion: whoever most recently saw a ghost starts. Play then continues clockwise. Local source SHA-256: 611eae395e45c35572efa7951848e25910f30bc08e3d611616568b6ecd8852bd. The rendered page is printed page 4. Extraction also included a stray 5 from an adjacent layout object; it is not a spread or a second cited page. The source's credits identify copyright 2026. No assertion that ghosts exist or that a player has seen one is being made.",
+  "uncertainty": [
+    "The cited instruction does not define what counts as seeing a ghost or give an alternative when nobody qualifies.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

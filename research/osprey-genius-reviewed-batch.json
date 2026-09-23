@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "the-king-is-dead-second-edition-osprey-en-2020",
+    "gameName": "The King Is Dead: Second Edition",
+    "aliases": ["The King Is Dead 2nd Edition"],
+    "editionLabel": "Osprey English second-edition rules, ©2020",
+    "firstPlayerRule": "The most recent visitor to a castle goes first.",
+    "clarifications": [
+      "Starting with that player, turns run clockwise. Each player plays an action card or passes.",
+      "Four-player games use teams seated opposite their partners, but players still take individual turns. The advanced game changes the action cards, not the starting criterion."
+    ],
+    "pdfPages": [4, 6, 7, 8, 12],
+    "printedPages": [],
+    "location": "Setup — Start Player and Advanced Game; How to Play — Turns; End of the Game; Four-Player Game; credits",
+    "evidence": "Rendered PDF page 4 selects the latest castle visitor; page 6 confirms clockwise action/pass turns. Page 8 retains individual turns in four-player partnerships. Page 7's most-recent-action tie-break concerns victory, not the initial starter. Page 12 states ©2020. The reviewed pages have no printed folios; PDF positions are used.",
+    "uncertainty": [],
+    "portable": true
+  },
+  {
+    "slug": "village-green-osprey-en-2020",
+    "gameName": "Village Green",
+    "aliases": [],
+    "editionLabel": "Osprey English rules, ©2020",
+    "firstPlayerRule": "In multiplayer, whoever watered a plant most recently goes first.",
+    "clarifications": [
+      "Give that player the start player card. They take the opening turn, then play moves clockwise.",
+      "A turn draws and plays either a green card or an award card. Solo play uses separate rules and needs no choice between players."
+    ],
+    "pdfPages": [2, 4, 14, 16],
+    "printedPages": ["1", "3", "13"],
+    "location": "Setup step 8; How to Play; Solo Game; credits",
+    "evidence": "Rendered PDF page 2 (printed 1) gives the start player card to the latest plant waterer. PDF page 4 (printed 3) identifies the card holder as the first actor and gives clockwise order. PDF page 14 (printed 13) covers solo changes, not an alternative multiplayer starter. PDF page 16 credits state ©2020.",
+    "uncertainty": [],
+    "portable": true
+  },
+  {
+    "slug": "cytosis-genius-en-second-edition",
+    "gameName": "Cytosis: A Cell Biology Board Game",
+    "aliases": ["Cytosis", "Cytosis: A Cell Biology Game"],
+    "editionLabel": "Genius Games English second-edition rules, Rev1 download",
+    "firstPlayerRule": "Whoever looked through a microscope most recently goes first.",
+    "clarifications": [
+      "That player receives the First Player Marker and places the first flask. Turns continue clockwise.",
+      "Starting ATP increases with turn order: the first player gets 2, the next gets 3, then 4, and so on. Everyone also chooses two additional resources from ATP, mRNA and Lipids.",
+      "The marker does not rotate automatically. A player can claim it at Laureates in Biology and keeps it for later rounds until someone else claims it."
+    ],
+    "pdfPages": [2, 4, 5, 6, 10, 15, 16],
+    "printedPages": ["1", "3", "4", "5", "9", "14"],
+    "location": "Designer foreword; Game Setup steps 8–9 and diagram; Phase 1; Laureates in Biology; two-player rules; game summary",
+    "evidence": "PDF page 2's foreword explicitly identifies the second edition. Rendered PDF page 4 (printed 3) contains the microscope criterion and initial resources; pages 5 and 6 show setup and first-flask order. PDF page 10 (printed 9) distinguishes claiming the marker in play from its initial allocation. PDF page 15's two-player changes do not replace the starter. PDF page 16 summarizes the same marker-first sequence. No printing year is inferred from the file name or product history.",
+    "uncertainty": [],
+    "portable": true
+  },
+  {
+    "slug": "periodic-genius-en",
+    "gameName": "Periodic: A Game of The Elements",
+    "aliases": ["Periodic"],
+    "editionLabel": "Genius Games English base rules, publisher download",
+    "firstPlayerRule": "Whoever touched calcium carbonate most recently starts.",
+    "clarifications": [
+      "The rulebook gives chalk and seashells as examples. Play proceeds clockwise from the selected player.",
+      "Distribute starting Energy by turn order: 3, 4, 5, 3 and 4 tokens for the first through fifth players, as applicable. The first three players begin at 0 on the Academic Track; the fourth and fifth begin at 2."
+    ],
+    "pdfPages": [2, 3, 4, 5, 12],
+    "printedPages": ["1", "2", "3", "4"],
+    "location": "Game Summary; Game Setup steps 9–11; Gameplay; credits",
+    "evidence": "Rendered PDF page 3 (printed 2) supplies the calcium-carbonate criterion, Academic Track positions and the non-monotonic 3/4/5/3/4 Energy allocation. Page 4's Microscope and Flask setup depends on seating after this decision, rather than selecting another starter. Page 5 (printed 4) confirms clockwise turns. Credits on PDF page 12 identify Genius Games and the designers but supply no printing year. The example substances are attributed to the manual rather than asserting that every commercial chalk has the same composition. The PDF was retrieved through the public download for the exact Drive file linked by the publisher.",
+    "uncertainty": ["The linked English manual does not identify a printing year."],
+    "portable": true
+  },
+  {
+    "slug": "subatomic-genius-en-publisher-download",
+    "gameName": "Subatomic: An Atom Building Game",
+    "aliases": ["Subatomic"],
+    "editionLabel": "English rulebook linked from Genius Games’ second-edition page",
+    "firstPlayerRule": "The person who did a science experiment most recently goes first.",
+    "clarifications": [
+      "Give that player the First Player Marker. They take the first turn, then turns continue clockwise.",
+      "A turn consists of playing cards for actions, followed by refreshing the play areas."
+    ],
+    "pdfPages": [1, 3, 4, 5, 10, 15, 16],
+    "printedPages": ["2", "3", "4", "9", "14"],
+    "location": "Cover; Game Setup; Gameplay — Summary of a Turn; Ending the Game; credits; back cover",
+    "evidence": "Rendered PDF page 4 (printed 3) awards the marker for the latest science experiment; PDF page 5 (printed 4) confirms that its holder takes the first clockwise turn. Page 10 describes finishing the round to equalize turns. Cover and credits were inspected. The publisher product title identifies its second edition, but this linked PDF does not explicitly identify its printing; the public label preserves that distinction. PDF page 3 lists 11 starting cards while page 5's introduction says 10. This unrelated inconsistency is not resolved or repeated as setup advice. The PDF was retrieved through the public download for the exact Drive file linked by the publisher.",
+    "uncertainty": ["The publisher links this manual from its second-edition product page; the PDF itself does not explicitly identify its edition or printing year."],
+    "portable": true
+  }
+]

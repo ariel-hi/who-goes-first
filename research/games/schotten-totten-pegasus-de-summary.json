@@ -1,0 +1,43 @@
+{
+  "id": "schotten-totten-pegasus-de-summary",
+  "slug": "schotten-totten-pegasus-de-summary",
+  "gameName": "Schotten Totten",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele German Schotten Totten rules, 16-page booklet, English summary",
+  "firstPlayerRule": "Whoever most recently traveled to Scotland, or somewhere near it, goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "In the Clanfehde multi-round variant, the players alternate who starts each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/7e/fb/93/1752666638/schotten-totten-anleitung.pdf?ts=1752672114",
+      "title": "Schotten Totten — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "5",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        10
+      ],
+      "location": "Spielvorbereitung, step 4; Variante Clanfehde; PDF pages 5, 10",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Schotten-Totten/57261G. Finding: Whoever most recently traveled to Scotland, or somewhere near it, goes first. Local source SHA-256: 5a2dd65e5897f4541ace8d3ce63d92bfc580e366e09c92c46a0c8f1ce45949df. The parenthetical nearby-place allowance belongs to the official starting instruction. The later-round alternation is separately identified as a variant.",
+  "uncertainty": [
+    "The source does not define how close a place must be to count as near Scotland.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

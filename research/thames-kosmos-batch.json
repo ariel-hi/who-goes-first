@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "aqualin",
+    "gameName": "Aqualin",
+    "sourceHint": "aqualin-696be26f.pdf",
+    "editionLabel": "English Thames & Kosmos rules, four-page publisher PDF",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "Preparation, final paragraph",
+    "firstPlayerRule": "The player who was most recently in the ocean goes first."
+  },
+  {
+    "slug": "catch-the-moon",
+    "gameName": "Catch the Moon",
+    "sourceHint": "catch-the-moon-ef161b71.pdf",
+    "editionLabel": "English rules in the eight-page publisher-linked PDF",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "Setup and first-player instruction",
+    "firstPlayerRule": "Whoever most recently saw a full moon starts.",
+    "officialTieBreak": "If the group cannot decide, the youngest player starts.",
+    "houseFallback": null
+  },
+  {
+    "slug": "lost-cities-rivals",
+    "gameName": "Lost Cities: Rivals",
+    "aliases": ["Lost Cities Rivals"],
+    "sourceHint": "lost-cities-rivals-94f9ab2e.pdf",
+    "editionLabel": "English Thames & Kosmos rules, eight-page publisher PDF",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "Preparation, starting player",
+    "firstPlayerRule": "The player whose birthday occurred most recently starts."
+  },
+  {
+    "slug": "lost-cities-roll-and-write",
+    "gameName": "Lost Cities: Roll & Write",
+    "aliases": ["Lost Cities Roll and Write"],
+    "sourceHint": "lost-cities-roll-write-e473dc5a.pdf",
+    "editionLabel": "English rules in the eight-page publisher-linked PDF",
+    "pages": [3],
+    "printedPages": [3],
+    "location": "How to Play, choosing the first active player",
+    "firstPlayerRule": "The group's greatest adventurer takes the first turn.",
+    "officialTieBreak": "If you are unsure who that is, the player who most recently went hiking starts.",
+    "houseFallback": null,
+    "clarifications": ["The active player rolls the dice and selects a color-and-number pair first. The other players then choose from the remaining dice."]
+  },
+  {
+    "slug": "the-pillars-of-the-earth",
+    "gameName": "The Pillars of the Earth",
+    "aliases": ["Pillars of the Earth"],
+    "sourceHint": "the-pillars-of-the-earth-01394fff.pdf",
+    "editionLabel": "English Thames & Kosmos rules, eight-page publisher PDF",
+    "pages": [3],
+    "printedPages": [2],
+    "location": "Preparation, choosing the starting player",
+    "firstPlayerRule": "The player who most recently saw a cathedral starts the first round.",
+    "clarifications": ["This chooses the initial starting player, who receives the cathedral's nave piece."],
+    "evidenceNotes": "The printed page number is 2, while its position in the downloaded PDF is 3."
+  },
+  {
+    "slug": "targi",
+    "gameName": "Targi",
+    "sourceHint": "targi-6ae7583b.pdf",
+    "editionLabel": "English Thames & Kosmos rules, six-page spread PDF",
+    "pages": [2],
+    "printedPages": [3],
+    "location": "Preparation, starting-player instruction on the right-hand page",
+    "firstPlayerRule": "The player who most recently ate dates goes first.",
+    "officialTieBreak": "If neither player has ever eaten dates, the player using blue starts.",
+    "houseFallback": null,
+    "clarifications": ["Dates means the fruit."],
+    "evidenceNotes": "The fallback applies when neither player has eaten dates; the source does not state a separate tie-break for both having eaten them together."
+  }
+]

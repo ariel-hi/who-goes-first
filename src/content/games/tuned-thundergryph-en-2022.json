@@ -1,0 +1,43 @@
+{
+  "id": "tuned-thundergryph-en-2022",
+  "slug": "tuned-thundergryph-en-2022",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8863c660019ef449d72344aedc7da6c19fd64b2c428121ec41aba0eb6dce0c9f",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Tuned",
+  "aliases": [],
+  "editionLabel": "ThunderGryph multilingual rules, English section, ©2022",
+  "firstPlayerRule": "Whoever attended a concert most recently starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The two players alternate turns.",
+    "The English setup places each player's Rooster on the middle action symbol before play begins."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2023/01/tuned-rulebook-multi-language.pdf",
+      "title": "Tuned — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4,
+        5,
+        24
+      ],
+      "location": "English Setup and Gameplay; English credits; back-cover copyright; PDF pages 1, 3, 4, 5, 24",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/tuned/. Finding: Whoever attended a concert most recently starts. Local source SHA-256: 786ca95985c4061ba59974646a94e24dd8aaf62d5eeccfef90954c1f75d2726f. The publisher links one 24-page multilingual PDF. English starting instructions are on PDF page 4, with English turn order on page 5; no printed page numbers appear there. The back cover states ©2022. The story's older Rooster is not an oldest-player selection rule. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the main personal-history criterion selects the actual starter without requiring game components. Multiplayer scope and official alternatives remain explicit.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

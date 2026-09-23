@@ -1,0 +1,40 @@
+{
+  "id": "forum-trajanum-dv-giochi-it-summary",
+  "slug": "forum-trajanum-dv-giochi-it-summary",
+  "gameName": "Forum Trajanum",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "dV Giochi Italian rules, English summary",
+  "firstPlayerRule": "Whoever most recently visited a city center is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player receives the starting-player piece."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/forum-trajanum/download/ForumTrajanum_Rules.pdf",
+      "title": "Forum Trajanum — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Plance personali, starting-player instruction at bottom right; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: Whoever most recently visited a city center is the starting player. Local source SHA-256: db9cb85d5cd7d2fede0d12deaa0ef8035d213b488f0b20571a5306ebfed1ab17. The instruction specifies a city center; it does not require a visit to Rome or to an ancient forum. The publisher-hosted PDF has a dV Giochi watermark.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

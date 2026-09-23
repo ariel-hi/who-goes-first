@@ -1,0 +1,38 @@
+{
+  "id": "sheepy-time",
+  "slug": "sheepy-time",
+  "gameName": "Sheepy Time",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English AEG base-game rules, sixteen-page optimized publisher PDF",
+  "firstPlayerRule": "The player who went to sleep earliest last night goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/SheepyTime_BaseGame_Rulebook_Optimized.pdf",
+      "title": "Sheepy Time — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup step 7; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/sheepy-time/. Finding: The player who went to sleep earliest last night goes first. Local source SHA-256: fa45e1252f09d094e90e3dd520c1d301fd2e18c99b95fc03fe43961ed20c7814. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

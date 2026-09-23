@@ -1,0 +1,48 @@
+{
+  "id": "boonlake-capstone-en-2021",
+  "slug": "boonlake-capstone-en-2021",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a9524501c5e6dad84c66f3fd2b1a5c451bf90be60d1ed834d11b5eb3d0064cf7",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Boonlake",
+  "aliases": [],
+  "editionLabel": "Capstone English rules, ©2021",
+  "firstPlayerRule": "In multiplayer, whoever most recently traveled to a place with fewer than 100 inhabitants goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the starting player token and 6 coins. The next player clockwise receives 7 coins; the third and fourth players, if present, receive 8 each.",
+    "The token holder takes the first turn, then turns continue clockwise. Each turn chooses an action, advances a ship, and updates the action strips.",
+    "Solo play is different: the Wise Eminence receives the starting player token and acts first; the human starts with 7 coins."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://capstone-games.com/cdn/shop/files/Boonlake_Capstone_US-compressed.pdf?v=9086147972115199219",
+      "title": "Boonlake — Capstone Games rules",
+      "publisher": "Capstone Games",
+      "printedPages": [
+        "3",
+        "4",
+        "15",
+        "24"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        15,
+        24
+      ],
+      "location": "Setup step 13; Course of the Game; Solo Game; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 3, 4, 15, 24. Rendered page 3 specifies the latest journey to a place with fewer than 100 inhabitants and the 6/7/8/8 starting coins. Page 4 confirms that the token holder begins the clockwise sequence of individual turns. Page 15 gives the solo token and first action to the Wise Eminence, with 7 coins for the human. Page 24 credits state ©2021. Other players benefiting from parts of a chosen action does not replace the individual active turn. Publisher discovery URL: https://capstone-games.com/products/boonlake. Local source SHA-256: 4128d8f309f769565952f30479944d03420baa1de8f04d0d3a58876b06e58e58. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The multiplayer travel criterion selects an individual first actor without game-specific components. Solo play is explicitly excluded from the main answer.",
+  "uncertainty": [
+    "No initial-start tie-break is stated alongside the multiplayer criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

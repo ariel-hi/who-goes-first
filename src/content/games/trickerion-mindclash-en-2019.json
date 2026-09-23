@@ -1,0 +1,54 @@
+{
+  "id": "trickerion-mindclash-en-2019",
+  "slug": "trickerion-mindclash-en-2019",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b16be1aaf79cc9fa9ace5e19b012af2aafeeb75cce2a8d17008b6eda3ca0088d",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Trickerion: Legends of Illusion",
+  "aliases": [
+    "Trickerion"
+  ],
+  "editionLabel": "Mindclash revised retail English rules, ©2019",
+  "firstPlayerRule": "Randomize the players’ markers on the Initiative Order track. The player in its first position acts first.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group wants a different setup method, agree on one before play. That would be a house rule; the cited opening Initiative Order is already random.",
+  "clarifications": [
+    "The person who last wore a top hat chooses a Magician first during setup, with that choice proceeding clockwise. This does not determine the opening Initiative Order.",
+    "With two players, use the first and third Initiative Order spaces.",
+    "Character placement follows Initiative Order after simultaneous assignment planning.",
+    "In later turns, lower Fame means earlier initiative. Players tied on Fame reverse their relative order. Skip this reordering in the first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://mindclashgames.com/wp-content/uploads/2023/03/Trickerion-Retail-version-Revised-Rulebook_2019-web.pdf",
+      "title": "Trickerion: Legends of Illusion — Mindclash Games rules",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "9",
+        "10",
+        "11",
+        "12",
+        "23"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        9,
+        10,
+        11,
+        12,
+        23
+      ],
+      "location": "Cover; player setup; Starting Fame Points and Initiative Order; Set Initiative Order; Place Characters; credits; PDF pages 1, 9, 10, 11, 12, 23",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/trickerion/. Finding: Randomize the players’ markers on the Initiative Order track. The player in its first position acts first. Local source SHA-256: e6bf30a03990f28fc8f83ff27af7a150d81fdcf31968aadda617f02426085568. All six cited pages were visually inspected. The top-hat sentence selects initial Magician-choice order only. Page 10 separately randomizes opening Initiative Order, and pages 11–12 confirm the first-turn exception and action sequence. Later Fame ties and the game-winning tie-break must not be presented as opening selection rules. The separate solo expansion manual is outside this entry. Directory only: actual opening order is random. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Directory only: randomized opening Initiative Order, while the top-hat criterion selects a preliminary Magician choice.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

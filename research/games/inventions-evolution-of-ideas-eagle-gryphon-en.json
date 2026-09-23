@@ -1,0 +1,54 @@
+{
+  "id": "inventions-evolution-of-ideas-eagle-gryphon-en",
+  "slug": "inventions-evolution-of-ideas-eagle-gryphon-en",
+  "gameName": "Inventions: Evolution of Ideas",
+  "aliases": [
+    "Inventions"
+  ],
+  "language": "en",
+  "editionLabel": "Eagle-Gryphon English public rules, ©2023, v10 production file",
+  "firstPlayerRule": "With three or four players, whoever most recently invented something takes the first position in turn order. With two players, randomize the order of both players and Chronos.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "In the three- or four-player game, initial turn order proceeds clockwise from the selected player.",
+    "The preliminary Stone Age setup round runs in reverse turn order. It is separate from the regular turns that follow.",
+    "Turn order can change later under the Era Change procedure."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1DXq5tND1m_S2qGqD1oDmyoXkf9xZ2vmx/view",
+      "title": "Inventions: Evolution of Ideas — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "2",
+        "4",
+        "7",
+        "10",
+        "22",
+        "23"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        7,
+        10,
+        22,
+        23
+      ],
+      "location": "Setup step 3; Stone Age setup round; How to Play; Era Change; two-player setup; credits; PDF pages 2, 4, 7, 10, 22, 23",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/inventions-evolution-of-ideas. Finding: With three or four players, whoever most recently invented something takes the first position in turn order. With two players, randomize the order of both players and Chronos. Local source SHA-256: 522f678569c11108d54e75e869ec03c9e9027142a1fa11f7650a73c04c3d4bd6. Rendered pages 2, 4, 7, 10, 22 and 23 inspected. The two-player exception explicitly randomizes both players and automated opponent Chronos; it is not a starting tie-break for the three- or four-player criterion. The separate solo rulebook was not imported or represented as reviewed.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

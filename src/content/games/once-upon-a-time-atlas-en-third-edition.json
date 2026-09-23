@@ -1,0 +1,43 @@
+{
+  "id": "once-upon-a-time-atlas-en-third-edition",
+  "slug": "once-upon-a-time-atlas-en-third-edition",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3822d88232f177c7189fb0abbf351577f668b611a43d8df823dcb08298094812",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Once Upon a Time: The Storytelling Card Game",
+  "aliases": [
+    "Once Upon a Time",
+    "OUAT"
+  ],
+  "editionLabel": "Atlas English third-edition rules, ©1993–2012",
+  "firstPlayerRule": "Draw and discard a Story Card. The player who looks most like that card becomes the first Storyteller.",
+  "officialTieBreak": null,
+  "houseFallback": "If the group cannot agree who looks most like the card, agree to choose the first Storyteller randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "The first Storyteller begins the story. The starter card is drawn from the Story Deck; the instruction does not restrict it to Character cards.",
+    "For the next game, the player with the most cards left in hand at the end becomes the first Storyteller and collects, shuffles and deals the cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.atlas-games.com/atlas-cms/resources/pdfs/ouat3rulesweb.pdf",
+      "title": "Once Upon a Time: The Storytelling Card Game — Atlas Games rules",
+      "publisher": "Atlas Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Playing the Game; Starting the Next Story; Rules Summary; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2. Rendered PDF panel 2 gives the draw/discard and resemblance criterion, immediately followed by the Storyteller beginning the story. Panel 1 confirms the initial criterion in the summary and gives the separate most-cards-left rematch rule. The publisher identifies this download as third-edition rules; panel 1 credits state ©1993–2012. No rule requiring a Character card or automatic clockwise sequence is inferred. These panels have no printed page numbers. Publisher discovery URL: https://www.atlas-games.com/onceuponatime. Local source SHA-256: 04e5876f08807542546086615428b967575e2be6ef8041a480c535536cf74b0b. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The criterion depends on a card drawn from this game's Story Deck. It is not a standalone rule that can be used without those components.",
+  "uncertainty": [
+    "No initial resemblance tie-break or rematch hand-size tie-break is stated in the cited sections.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

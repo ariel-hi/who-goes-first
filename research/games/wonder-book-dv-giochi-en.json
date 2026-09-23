@@ -1,0 +1,41 @@
+{
+  "id": "wonder-book-dv-giochi-en",
+  "slug": "wonder-book-dv-giochi-en",
+  "gameName": "Wonder Book",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "dV Giochi English rules",
+  "firstPlayerRule": "Whoever most recently spotted a dragon takes the Chapter deck and reads its first card aloud.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This chooses the opening reader. During the Players' Phase, the group chooses its turn order and may change it between phases.",
+    "For a first game, use the Chapter I deck and keep the cards in order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/wonder-book-ita/download/WB_Rulebook_WEB.pdf",
+      "title": "Wonder Book — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        4
+      ],
+      "location": "Start the Adventure, step 3; The Players' Phase, opening paragraph; PDF pages 1, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: Whoever most recently spotted a dragon takes the Chapter deck and reads its first card aloud. Local source SHA-256: 24e846f9a8858dcd576571b26926f76d5f4cb78081f4d789e52e5b91743ad48f. The cooperative game supports one to four players. The opening-reader instruction does not impose a fixed turn order on the later Players' Phase. No Chapter story contents were used.",
+  "uncertainty": [
+    "The rulebook does not define what counts as spotting a dragon.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

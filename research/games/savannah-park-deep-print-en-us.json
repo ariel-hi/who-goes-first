@@ -1,0 +1,46 @@
+{
+  "id": "savannah-park-deep-print-en-us",
+  "slug": "savannah-park-deep-print-en-us",
+  "gameName": "Savannah Park",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Deep Print / Capstone English US rulebook, eight-page file",
+  "firstPlayerRule": "Whoever most recently fed an animal chooses the first animal token. All players then move their matching token simultaneously.",
+  "officialTieBreak": null,
+  "houseFallback": "If the feeding criterion does not suit your group, agree to choose the first token chooser randomly. This is a house rule.",
+  "clarifications": [
+    "The player who chooses the token passes clockwise from round to round.",
+    "When playing solo, you choose the animal token each round.",
+    "The youngest-player instruction in the children's variant concerns end-of-game scoring, not who starts the game."
+  ],
+  "interpretation": "The starting-player criterion selects the first token chooser; it does not give that player a separate placement turn.",
+  "sources": [
+    {
+      "url": "https://www.deep-print-games.com/wp-content/uploads/2025/01/SavPark_Rulebook_US.pdf",
+      "title": "Savannah Park — Deep Print Games rules",
+      "publisher": "Deep Print Games",
+      "printedPages": [
+        "4",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7,
+        8
+      ],
+      "location": "Playing the game; Solo mode and children's variant; credits; PDF pages 4, 7, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://deep-print-games.com/en/spiele/savannah-park/. Finding: Whoever most recently fed an animal chooses the first animal token. All players then move their matching token simultaneously. Local source SHA-256: 41334f051a60dbd35f7406d2cb811921a5057771badf371e610b6f0fa35b01b2. Rendered pages 4, 7 and 8 were inspected. The feeding criterion, simultaneous placement and clockwise rotation all appear on page 4. No publication year has been inferred from the upload URL. Excluded from the random mix because the answer describes a chooser role followed by simultaneous play.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

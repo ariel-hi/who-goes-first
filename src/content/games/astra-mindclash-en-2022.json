@@ -1,0 +1,53 @@
+{
+  "id": "astra-mindclash-en-2022",
+  "slug": "astra-mindclash-en-2022",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "74ae03338b172a82d2a8734457621275608a94e58f501f01caf9ad2c9db092e5",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Astra",
+  "aliases": [],
+  "editionLabel": "Mindclash English rules, ©2022",
+  "firstPlayerRule": "Whoever most recently saw a shooting star goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the First Player token; they retain it throughout the game.",
+    "Turns proceed clockwise.",
+    "The additional two-player Dream phase does not change this starting criterion. This answer covers the multiplayer rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://mindclashgames.com/wp-content/uploads/2023/03/MCG_Astra_Rulebook_websafe.pdf",
+      "title": "Astra — Mindclash Games rules",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "6",
+        "7",
+        "10",
+        "11",
+        "20",
+        "21",
+        "30",
+        "31"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        4,
+        6,
+        11,
+        16
+      ],
+      "location": "Cover; player setup step 4; gameplay; two-player rules; credits; PDF pages 1, 4, 6, 11, 16",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/astra/. Finding: Whoever most recently saw a shooting star goes first. Local source SHA-256: b5d85643857d65e155cf1819704243448d9f18a51cb4d4e64ed1f8bc638fcff4. The publisher’s game page directly links this websafe rulebook. It is not the earlier preview PDF or the separate Myths of the Night Sky storybook. All five listed PDF pages were visually inspected; spread numbering differs from printed numbering. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the explicitly scoped main answer selects a multiplayer starter using personal history, without game-specific components. Optional variant instructions remain separate.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "septima-mindclash-en-20230324",
+  "slug": "septima-mindclash-en-20230324",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "41a3e093360527d218f82bf6d748ea2ce4b2f938c4a61b702fd0a766e894a80c",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Septima",
+  "aliases": [],
+  "editionLabel": "Mindclash English rules, ©2023, file version 20230324",
+  "firstPlayerRule": "In multiplayer, whoever most recently made a mixed drink is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the Starting Player token. Players choose and reveal Action cards simultaneously, then resolve their actions in clockwise turn order.",
+    "Initial Leader placement proceeds counterclockwise from the last player. In the Full Game, the starting Spell choices and Ritual-marker placement use that same reverse order.",
+    "At the end of Autumn, Winter and Spring, pass the Starting Player token clockwise.",
+    "In solo play, you take the Starting Player token at setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/v85vkai7akxjbya/SEPTIMA_Rulebook_EN_websafe.pdf?dl=0",
+      "title": "Septima — Mindclash Games rules",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "10",
+        "11",
+        "12",
+        "13",
+        "22",
+        "23",
+        "26",
+        "27",
+        "38",
+        "39"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        6,
+        7,
+        12,
+        14,
+        20
+      ],
+      "location": "Cover; player setup steps 10–14; Select Action and Resolve Action; End of Season; solo player setup; credits; PDF pages 1, 6, 7, 12, 14, 20",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/septima/. Finding: In multiplayer, whoever most recently made a mixed drink is the starting player. Local source SHA-256: b8d6ab497a41729c10bc9c9b669b28b9d35f913b0d51424f21c9c1d334b60edc. The publisher directly links the public Dropbox manual. The first bounded download exceeded 70 MB and was not used. A complete 113,488,684-byte retrieval succeeded under a 120 MB limit; its hash was recorded. All six listed pages were visually inspected. The mixed-drink instruction is part of both Basic and Full setup, outside the Full Game-only box. No alcoholic-content condition or definition of mixed drink was invented. Ordered action resolution distinguishes this from an entirely simultaneous game. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the explicitly scoped main answer selects a multiplayer starter using personal history, without game-specific components. Optional variant instructions remain separate.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

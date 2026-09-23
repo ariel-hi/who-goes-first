@@ -1,0 +1,42 @@
+{
+  "id": "viva-catrina-huch-de-summary",
+  "slug": "viva-catrina-huch-de-summary",
+  "gameName": "Viva Catrina",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "HUCH! 2026 German edition, English summary",
+  "firstPlayerRule": "Whoever most recently received flowers as a gift goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player takes the Catrina figure and begins the first round. Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://produkte.hutter-trade.com//files/products/1763/200/de/Screen_huc_26_16490_VivaCatrina_Auflage_A_2026_AL.pdf",
+      "title": "Viva Catrina — Hutter Trade rules",
+      "publisher": "Hutter Trade",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup, step 5; Spielablauf, opening paragraph; PDF pages 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Whoever most recently received flowers as a gift goes first. Local source SHA-256: fce5b62d4cc18f6c57c7553da00f703e1a837806a2b769ecc353da70f8bc983f. The German source specifies receiving flowers as a gift, not buying or giving flowers. The file identifies the 2026 HUCH! edition of the game by Frédéric Boulle and Grégory Grard.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

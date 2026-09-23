@@ -1,0 +1,60 @@
+{
+  "id": "villagers-sinister-fish-en-2019",
+  "slug": "villagers-sinister-fish-en-2019",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1cb7b37209b3de7dda7bdcfc2a2d2e493ec5db91b66ce86fcc7f6f3a24c209dc",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Villagers",
+  "aliases": [],
+  "editionLabel": "Sinister Fish English revised rules, ©2019",
+  "firstPlayerRule": "Whoever has lived in the same place the longest drafts first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that person the First Player Card. Players draft one villager at a time in clockwise order.",
+    "Drafting comes before building. In the Build Phase, each player finishes their building actions before the next player acts.",
+    "At the end of the Build Phase, pass the First Player Card to the player on the left.",
+    "Solo mode uses the Countess: after drafting a card for yourself, assign a face-up Road villager to her Village before replenishing the Road."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://sinisterfish.com/wp-content/uploads/2022/01/villagers_rulebook_revised_low.pdf",
+      "title": "Villagers — Sinister Fish Games rules",
+      "publisher": "Sinister Fish Games",
+      "printedPages": [
+        "4",
+        "5",
+        "8",
+        "11",
+        "12",
+        "18",
+        "22",
+        "23",
+        "27"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        4,
+        5,
+        8,
+        11,
+        12,
+        18,
+        22,
+        23,
+        27
+      ],
+      "location": "Game Setup step 6; Draft Phase; Build Phase and its end; two-player road update; Solo Mode; credits; PDF pages 1, 4, 5, 8, 11, 12, 18, 22, 23, 27",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://sinisterfish.com/product/villagers/. Finding: Whoever has lived in the same place the longest drafts first. Local source SHA-256: 3e9b1f5e9081c2a292fb0dcb5786eeb206a8104d56c9613d3eb4e0d1751f15fa. The publisher's revised-file link leads to this 28-page manual; its credits state ©2019. Rendered page 4 contains setup step 6. The text extractor repeats that instruction on page 5, but it is not visually printed there. The two-player reverse-order coin placement on page 11 occurs after drafting and does not select the opening player. No address or new interpretation of same place is requested. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant solo and two-player context, and source references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the main criterion selects an individual starter without game-specific components. Moon's preliminary production does not replace its sequential first Construction turn; Streets' subjective criterion is explicitly identified as undefined.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

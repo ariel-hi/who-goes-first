@@ -1,0 +1,41 @@
+{
+  "id": "everdell-pegasus-de-summary",
+  "slug": "everdell-pegasus-de-summary",
+  "gameName": "Everdell",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele German base rules, English summary",
+  "firstPlayerRule": "The most easily contented player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starter draws five cards. The remaining players, in clockwise order, draw six, seven and eight cards as applicable."
+  ],
+  "interpretation": "Here, the German word genügsamste means being content with little. The rule gives no objective test.",
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/83/a5/65/1717757222/4250231727238_detodk7zhz1gjb1.pdf?ts=1752574417",
+      "title": "Everdell — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Spielaufbau, step 6; PDF pages 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Everdell/57600G. Finding: The most easily contented player goes first. Local source SHA-256: f195569f1f96d98f9b8f45c98142cf4f1af5ace9f872e334032e4ed46e4d6dd8. The criterion is translated from this German file rather than importing the wording of an English edition. Printed page 5 is PDF page 6.",
+  "uncertainty": [
+    "The German criterion is genügsamste: most content with little or least demanding. The source supplies no objective test.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

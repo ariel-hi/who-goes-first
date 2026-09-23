@@ -1,0 +1,38 @@
+{
+  "id": "high-society-allplay-en",
+  "slug": "high-society-allplay-en",
+  "gameName": "High Society",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Allplay edition, rulebook with 2025 copyright",
+  "firstPlayerRule": "The most smartly dressed player starts the first auction. The rules also allow choosing the first player at random.",
+  "officialTieBreak": "Random selection is an official alternative; it is not restricted to a tie.",
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-high-society-rulebook-link.pdf",
+      "title": "High Society — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 3 and Playing the Game, middle panels of the first PDF sheet; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/high-society. Finding: The most smartly dressed player starts the first auction. The rules also allow choosing the first player at random. Local source SHA-256: 505daf026ce13504835c91e028c73cf6b936c5624c642cbf3b9590cfde34a115. The source describes the criterion as most dapper. Copyright 2025 is visible on printed page 1 of the same PDF sheet.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

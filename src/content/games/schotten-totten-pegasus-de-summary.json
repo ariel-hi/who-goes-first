@@ -1,0 +1,49 @@
+{
+  "id": "schotten-totten-pegasus-de-summary",
+  "slug": "schotten-totten-pegasus-de-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a356cddb160ec5380f4207e4fde8a50a6a322a092d62d2d31914b1f90587fc95",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Schotten Totten",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele German rules, ©2024, version 1.0; English summary",
+  "firstPlayerRule": "Whoever most recently traveled to Scotland, or somewhere near it, goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Players then alternate turns, starting by playing a Clan card.",
+    "In the Clanfehde multi-round variant, the players alternate who starts each round.",
+    "The rulebook does not define how close to Scotland a visit must be."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/7e/fb/93/1752666638/schotten-totten-anleitung.pdf?ts=1752672114",
+      "title": "Schotten Totten — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "5",
+        "6",
+        "10",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        10,
+        16
+      ],
+      "location": "Spielvorbereitung step 4; Spielablauf; Clanfehde variant; final credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Schotten-Totten/57261G. Finding: Whoever most recently traveled to Scotland, or somewhere near it, goes first. Local source SHA-256: 5a2dd65e5897f4541ace8d3ce63d92bfc580e366e09c92c46a0c8f1ce45949df. The parenthetical nearby-place allowance belongs to the official starting instruction. The later-round alternation is separately identified as a variant. Editorial recheck 2026-09-23: Rechecked all four listed rendered pages. The German instruction explicitly includes Scotland or somewhere nearby. Printed credits identify ©2024 Pegasus/IELLO and v1.0. Clanfehde's alternating later-round starter is not a previous-winner criterion. Cached source: research\\source-files\\pegasus\\schotten-totten-aaea1e02.pdf; SHA-256 5a2dd65e5897f4541ace8d3ce63d92bfc580e366e09c92c46a0c8f1ce45949df. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; An opening-player travel-recency comparison with no required components.",
+  "uncertainty": [
+    "The source does not define how close a place must be to count as near Scotland.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

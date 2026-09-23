@@ -1,0 +1,43 @@
+{
+  "id": "potion-explosion-horrible-guild-en-v32",
+  "slug": "potion-explosion-horrible-guild-en-v32",
+  "gameName": "Potion Explosion",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Horrible Guild English rulebook, PE_Rulebook_ENG_v32",
+  "firstPlayerRule": "Whoever most recently prepared a drink goes first. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player keeps the First Player token for the whole game.",
+    "When choosing starting potions, draft the first potion clockwise from the starter, then the second potion in reverse order from the last player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/kq0lgp6on0plqerurl1zb/PE_Rulebook_ENG_v32.pdf?rlkey=aug72sx82x4h82hyo6hino4uq&st=bk16lbi7&dl=0",
+      "title": "Potion Explosion — Horrible Guild rules",
+      "publisher": "Horrible Guild",
+      "printedPages": [
+        "4",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        9
+      ],
+      "location": "Game setup steps 2 and 4; End of game; PDF pages 4, 9",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://horribleguild.com/us/product/potion-explosion/. Finding: Whoever most recently prepared a drink goes first. Turns proceed clockwise. Local source SHA-256: 65494a546129aa2ea3f8e49cd7271fcc3e7b04c7b5659cc2a169da22940196c8. Rendered setup page 4 and end-of-game page 9 were inspected. Preparing a drink, not drinking one, is the criterion. The second potion's counterclockwise draft does not change normal clockwise turn order. The marble-explosion tie-break on page 9 decides the game's winner, not the starter. This is the current publisher-linked English v32 file; no date has been inferred from its filename. The initial 25 MB download limit was exceeded; the full PDF was retrieved successfully under an explicit 60 MB cap.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

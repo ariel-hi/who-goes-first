@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "ticket-to-ride-europe-15th-days-of-wonder-en",
+    "gameName": "Ticket to Ride: Europe",
+    "aliases": ["Ticket to Ride Europe", "Ticket to Ride Europe 15th Anniversary", "TTR Europe"],
+    "sourceHint": "ticket-to-ride-europe-15th-anniversary-391a66b7.pdf",
+    "editionLabel": "Days of Wonder English 15th Anniversary rules, copyright 2004–2021",
+    "pages": [4, 8],
+    "printedPages": [4, 8],
+    "location": "The Game Turn; Variants and edition credits",
+    "firstPlayerRule": "Start with the player who has visited the greatest number of European countries during their lifetime, then continue clockwise.",
+    "clarifications": ["This is the 15th Anniversary rulebook's instruction. The refreshed 7281N English rulebook instead allows the group to choose its own starting method."],
+    "additionalSources": [{
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2026/08/7281N_TICKET2RIDEeuropeV2_RULES_EN_20250429.pdf",
+      "title": "Ticket to Ride: Europe — refreshed English rules, 7281N download",
+      "publisher": "Days of Wonder",
+      "printedPages": ["3"],
+      "pdfPagesOneBased": [3],
+      "location": "The Game Turn, group-chosen starting method in the refreshed rules",
+      "checkedAt": "2026-09-23"
+    }],
+    "evidenceNotes": "Rendered cover, printed/PDF page 4 and final page 8 were inspected. Anniversary symbols on the cards and the copyright ending in 2021 identify this edition. The separate current publisher file's first-player instruction was inspected and differs; neither answer is generalized across editions."
+  },
+  {
+    "slug": "small-world-of-warcraft-days-of-wonder-en",
+    "gameName": "Small World of Warcraft",
+    "aliases": ["Small World: World of Warcraft"],
+    "sourceHint": "small-world-of-warcraft-8a8acfcf.pdf",
+    "editionLabel": "Days of Wonder English base rules, with Battle for Azeroth team-variant clarification",
+    "pages": [4],
+    "printedPages": [4],
+    "location": "Starting the Game and I. The First Round",
+    "firstPlayerRule": "In the base game, the person who last played a video game starts. Take turns clockwise from them.",
+    "clarifications": ["In later rounds, the same first player advances the round marker and starts again.", "The Battle for Azeroth team variant has a different order: Alliance 1, Horde 1, Neutral, Alliance 2, Horde 2. Leave out positions that are not used for your player count.", "With two or four players there is no Neutral player. With three or five players, include one Neutral player. The first Alliance player starts the team game."],
+    "additionalSources": [{
+      "url": "https://ncdn0.daysofwonder.com/small-world-of-warcraft/en/img/sb_team-rules_en.pdf",
+      "title": "Small World of Warcraft — Battle for Azeroth English team variant",
+      "publisher": "Days of Wonder",
+      "printedPages": [],
+      "pdfPagesOneBased": [1, 2],
+      "location": "Playing in Teams on the first unnumbered page; first Alliance player example on the second",
+      "checkedAt": "2026-09-23"
+    }],
+    "uncertainty": ["The team sheet assigns faction order but does not give a separate method for assigning people to the numbered faction positions."],
+    "evidenceNotes": "The base manual's rendered cover and page 4 were inspected, as were both pages of the team sheet. Both are hosted on the publisher's own legacy CDN; retailer links were used only to discover those primary files. The newer indexed 9001 CDN URL returned a non-PDF response and was not used as evidence. Team sheet SHA-256: f33ae912500a7f5d7dfe2ae30260b8af5b9ae2d459af3a544d1bf1ef1ea3b31e."
+  }
+]

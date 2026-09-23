@@ -1,0 +1,13 @@
+{
+  "id": "catan-2020-en", "slug": "catan-2020-en", "gameName": "CATAN", "aliases": ["The Settlers of Catan", "Settlers of Catan"],
+  "editionLabel": "English base game · fifth-edition credits, copyright 2020", "language": "en",
+  "firstPlayerRule": "For the beginner setup, the oldest player starts. For variable setup, everyone rolls both dice; the highest roller starts setup and takes the first regular turn after setup.",
+  "officialTieBreak": null,
+  "houseFallback": "If the starting instruction leaves your group tied, you can agree to pick randomly. This is the site’s house-rule fallback, not a tie-break supplied by this manual.",
+  "clarifications": ["In variable setup, the second placement round runs back in the opposite direction. The player who began setup places their second settlement last, then begins the game."],
+  "interpretation": null,
+  "sources": [{ "url": "https://www.catan.com/sites/default/files/2021-06/catan_base_rules_2020_200707.pdf", "title": "CATAN — Game Rules & Almanac", "publisher": "CATAN Studio / CATAN GmbH", "printedPages": ["4", "12", "13", "15"], "pdfPagesOneBased": [4, 12, 13, 15], "location": "Page 4, Turn Overview; page 12, Set-Up Phase and Round Two note; page 13, Starting Set-Up for Beginners; page 15, credits", "checkedAt": "2026-09-19" }],
+  "internalEvidence": "Visually inspected local Poppler renders of PDF pages 4, 12, 13, and 15 on 2026-09-19. Page 12: ‘Each player rolls both dice. The player who rolls highest is the starting player and begins.’ Page 13 specifies oldest player for beginners. The note under Round Two on page 12 connects the setup starter to the first regular turn. Page 15 credits fifth-edition development and copyright 2020.",
+  "uncertainty": ["The cited highest-roll and oldest-player instructions do not provide a tie resolution.", "This draft covers the specific 2020-copyright English manual, not every CATAN edition."],
+  "status": "draft", "approvedBy": null, "approvedRevision": null, "publishedAt": null, "materiallyUpdatedAt": null
+}

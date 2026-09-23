@@ -1,0 +1,55 @@
+{
+  "id": "champions-of-midgard-grey-fox-en-dized",
+  "slug": "champions-of-midgard-grey-fox-en-dized",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "016b45bb9916a2099c1394beef790eebacd1d57de800db011653972b381ec88c",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Champions of Midgard",
+  "aliases": [],
+  "editionLabel": "Grey Fox Games English base rules, official Dized reference",
+  "firstPlayerRule": "The player who most recently earned glory in battle starts. Choosing a player randomly is also an official option.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the First Player Marker. Leader selection begins with their right-hand neighbor and goes counterclockwise; actual worker placement starts with the marker holder and proceeds clockwise.",
+    "The marker changes hands through the Jarl's Longhouse action. Taking that action while already holding the marker passes it to your left; the marker does not automatically rotate each round."
+  ],
+  "interpretation": "The cited instruction does not define what counts as earning glory in battle. Agree on its meaning together, or use the official random option.",
+  "sources": [
+    {
+      "url": "https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/MlfkrewDSnSaHXUvzyk0mA/game-setup",
+      "title": "Champions of Midgard — Game Setup",
+      "publisher": "Grey Fox Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Game Setup section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/rBDB_JZaTSG9xKfBt5bufA/worker-placement",
+      "title": "Champions of Midgard — Worker Placement",
+      "publisher": "Grey Fox Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Worker Placement section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/zaC8EqshTn2uIEvXP6Nmig/jarls-longhouse",
+      "title": "Champions of Midgard — Jarl's Longhouse",
+      "publisher": "Grey Fox Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Jarl's Longhouse section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read all 6 cached rule-section bodies for this game, including relevant variants. Its index identifies Grey Fox Games and explicitly describes these as publisher-maintained official rules. Game Setup steps 7 and 8 distinguish the first-player criterion from reverse Leader selection. Worker Placement explicitly starts with the marker holder. Jarl's Longhouse says it is the only way the marker moves, including the holder's pass-left exception. Clean-up contains no automatic marker rotation. Source snapshots: https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/champions-of-midgard SHA-256 0b86b179973bc14c6ea4a1befb5790fd856cd5f6e8ce1190ac5e3efc1945d823; https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/AedrTYS6QPWVoGV3gxzBZg/gameplay-overview SHA-256 b74821884c993a1f4c0dc7f45e30496c2d28192d2c0e85fff328e770dced256d; https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/sIMEoaDuQl-ZsiWFvRmuqg/playing-a-round SHA-256 5019eec6f502bb8f0f5d9ec867f9e44edebcad5ad7cb8e515604f07deeb26b50; https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/rBDB_JZaTSG9xKfBt5bufA/worker-placement SHA-256 bed97b9724ea310a3fd89de0b29e4adab37d7475ca6a5b3adc7f75c732810710; https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/nOCIMw3NS4O8alBSqZp21Q/clean-up-phase SHA-256 04760035c3ede7cf1f6abb0e54a51406fcfb338b292c00fcd7cc08b40c3d2a41; https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/zaC8EqshTn2uIEvXP6Nmig/jarls-longhouse SHA-256 a3c97ec774f6e329ea157621ddf2a591c3d0ac1cc74d94cc14a4a4854dac0d7b; https://rules.dized.com/game/9tZ3KBeJQeiFbjco54bFdw/MlfkrewDSnSaHXUvzyk0mA/game-setup SHA-256 d29c9a6092bbb5071bd5f0da2fd7c44f72958354520fea7623c6d5fa2816af4c. Editorial review 2026-09-23: Codex reviewed the complete cached English HTML sections, identity and edition, opening actions versus setup roles, ties, alternatives and variants. Owner authorization: Reload localhost, 2026-09-22. The main criterion identifies the actual first worker-placement turn, with its subjective meaning and official random alternative visible. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+  "uncertainty": [
+    "Glory in battle is an undefined thematic criterion; no narrower real-world or gaming definition is inferred.",
+    "This record covers the named official online reference; other editions may differ."
+  ]
+}

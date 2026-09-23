@@ -1,0 +1,53 @@
+{
+  "id": "trekking-national-parks-underdog-en-second-edition",
+  "slug": "trekking-national-parks-underdog-en-second-edition",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a9ea4994c0a8d37e000ed3811257bae78e1531135233727d06dca1ded0a64048",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Trekking the National Parks: Second Edition",
+  "aliases": [
+    "Trekking the National Parks",
+    "Trekking the National Parks 2nd Edition"
+  ],
+  "editionLabel": "Underdog English second edition, 8-page publisher PDF",
+  "firstPlayerRule": "Whoever most recently visited a national park goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the First Player Token. Turns proceed clockwise, with two actions per turn.",
+    "The token also identifies the final turn order: finish the last round so that everyone has the same number of turns.",
+    "This answer covers the second edition identified in the publisher’s download and credits."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0008/7703/5638/files/TTNP-rules.pdf?v=1603995999",
+      "title": "Trekking the National Parks: Second Edition — Underdog Games rules",
+      "publisher": "Underdog Games",
+      "printedPages": [
+        "cover",
+        "2",
+        "4",
+        "7",
+        "unnumbered credits"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        7,
+        8
+      ],
+      "location": "Setup step 8; Gameplay; End of the Game; second-edition credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2, 4, 7, 8. Setup step 8 gives the First Player Token and first turn to the latest visitor to a national park. Gameplay confirms clockwise individual turns with two actions each. The final round ends with the player to the starter’s right; Park Card and stone tie-breaks apply only to final scoring. Credits explicitly identify Second Edition development by Underdog Games. The publisher’s legacy page is labeled for the second edition; this is not the separately offered third-edition manual. No printing year is inferred from the URL timestamp. Publisher discovery URL: https://www.underdoggames.com/pages/ttnp2-how-to-play. Local source SHA-256: 8c9565c01904f6cc1d9b1794d5131114981a6c7cd0b42e9959dda890ba2fc357. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The personal travel criterion selects the actual first player and requires no game-specific components.",
+  "uncertainty": [
+    "The source states no initial-start tie-break and does not identify a printing year.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

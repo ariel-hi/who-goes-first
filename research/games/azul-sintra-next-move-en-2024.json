@@ -1,0 +1,51 @@
+{
+  "id": "azul-sintra-next-move-en-2024",
+  "slug": "azul-sintra-next-move-en-2024",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Azul: Stained Glass of Sintra",
+  "aliases": [
+    "Azul Sintra",
+    "Stained Glass of Sintra"
+  ],
+  "editionLabel": "Next Move English rules, ©2024",
+  "firstPlayerRule": "Whoever most recently cleaned a window goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "That player receives the starting player tile. Choosing someone to manage the scoring board is a separate setup step.",
+    "At the start of each round, the tile holder places it in the center and takes the first turn. Turns continue clockwise.",
+    "The first person to take pane pieces from the center receives the tile for the next round and moves one space down the broken glass track."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Sintra-Rules_2024_compressed.pdf",
+      "title": "Azul: Stained Glass of Sintra — Next Move Games rules",
+      "publisher": "Next Move Games",
+      "printedPages": [
+        "unnumbered Game Setup",
+        "3",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "location": "Game Setup steps 6–8; Playing the Game and Advance a pattern; End of the Round; accessibility setup and credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 2, 3, 5, 6. The publisher-owned Next Move CDN manual awards the tile to the latest window cleaner, separately from appointing the scorekeeper. Playing the Game begins clockwise turns with the tile holder. The first center picker gets the tile beside their palace board and advances one step down the broken glass track; this is not the original Azul floor-line rule. End of the Round confirms that holder refills factories before the next round. The accessibility setup changes tile arrangement, not the starter. Credits explicitly say ©2024. Final broken-glass score ties are not initial-start ties. Publisher discovery URL: https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Sintra-Rules_2024_compressed.pdf. Local source SHA-256: 178ef319cdd15c5de36a569090402cb95ba9c66f92acdc70128b117fe7c73c63.",
+  "uncertainty": [
+    "The source gives no initial-start tie-break for the window-cleaning criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

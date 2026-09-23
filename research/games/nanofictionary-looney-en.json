@@ -1,0 +1,39 @@
+{
+  "id": "nanofictionary-looney-en",
+  "slug": "nanofictionary-looney-en",
+  "gameName": "Nanofictionary",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Looney Labs English rules, 2017 edition, item LOO-079",
+  "firstPlayerRule": "The player with the shortest name takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Brainstorming turns continue clockwise. Later, stories are told in the order players took their Number cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/NanofictionaryRules.pdf",
+      "title": "Nanofictionary — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup: Who Goes First; Brainstorming Phase; Storytelling Phase; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/nanofictionary. Finding: The player with the shortest name takes the first turn. Local source SHA-256: 2f3c7e8f2ca1cff7d7144323b8155fa987561ecebb945382c763b7c62273f812. The complete replacement for an incomplete first download was rendered. The voting tie-break is an end-game rule and was not reused as a starting tie-break.",
+  "uncertainty": [
+    "The source does not specify whether to compare first names, full names or another form of name.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

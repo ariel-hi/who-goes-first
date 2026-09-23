@@ -1,0 +1,52 @@
+{
+  "id": "chocolate-factory-alley-cat-en",
+  "slug": "chocolate-factory-alley-cat-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3d79d4fc5c2c0e4d486013cd573a8945ab0cea5606b77f10a7e3da37a65777b2",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Chocolate Factory",
+  "aliases": [],
+  "editionLabel": "English Alley Cat Games press-pack rulebook, 16-page PDF",
+  "firstPlayerRule": "Whoever most recently ate chocolate is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "After the Prepare phase, the Start Player marker holder chooses first in Expand & Recruit, followed clockwise. The last player chooses both a Factory Part packet and an Employee packet; the draft then returns anticlockwise so everyone receives one of each.",
+    "Run Factory normally follows turn order, but players may agree to run their factories simultaneously.",
+    "Pass the Start Player marker clockwise when preparing for the next day. This starting answer covers multiplayer play; Factory Manager is a separate solo mode."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1NmfFOWZ77sooT4Ngp06gaUEtNQhviKAV/view",
+      "title": "Chocolate Factory — Alley Cat Games rules",
+      "publisher": "Alley Cat Games",
+      "printedPages": [
+        "3",
+        "5",
+        "6",
+        "11",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        5,
+        6,
+        11,
+        12,
+        16
+      ],
+      "location": "Setup: Start player; How to play; Expand & Recruit; Run Factory; Cleanup; Factory Manager solo game; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually inspected all listed pages from the public press pack linked by the publisher. The chocolate criterion establishes the first sequential draft, following shared preparation. The snake draft, optional simultaneous factory phase, later clockwise marker passing and solo scope were checked. No printing year was invented. Cached source: research\\source-files\\alley\\chocolate-factory-c9195ea4.pdf; SHA-256 88045cde594f8ddd38ed11b6e81863c307577d0fd55629be2705ddb9accc30e6. Discovery: https://www.alleycatgames.com/chocolate-factory. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; Personal-history criterion selects the first sequential draft without needing the game's components.",
+  "uncertainty": [
+    "No starting tie-break is stated beside the chocolate criterion.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "caldera-park-deep-print-en",
+  "slug": "caldera-park-deep-print-en",
+  "gameName": "Caldera Park",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Deep Print / Pegasus English rulebook, v1.0, copyright 2022",
+  "firstPlayerRule": "Whoever most recently saw a wild animal in real life takes the marmot and makes the first action-token and terrain choice.",
+  "officialTieBreak": null,
+  "houseFallback": "If the sighting criterion does not suit your group, agree to choose the first marmot holder randomly. This is a house rule.",
+  "clarifications": [
+    "Each round begins with everyone choosing a weather token for their own park. The marmot holder's choice follows that weather step.",
+    "After the marmot holder announces the requirements, everyone places an animal token and refills their display. Pass the marmot to the left for the next action turn.",
+    "The solo challenge reveals action tokens from a shuffled stack instead of choosing an action token from the row."
+  ],
+  "interpretation": "The criterion assigns the first shared-action chooser, rather than a separate animal-placement turn. The sighting must be in real life.",
+  "sources": [
+    {
+      "url": "https://www.deep-print-games.com/wp-content/uploads/2025/01/CalPark_Rulebook_EN_LR.pdf",
+      "title": "Caldera Park — Deep Print Games rules",
+      "publisher": "Deep Print Games",
+      "printedPages": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        5,
+        6,
+        12
+      ],
+      "location": "Setup step 7; Weather forecast; Action turns; Solo challenge and credits; PDF pages 3, 4, 5, 6, 12",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.deep-print-games.com/spiele/caldera-park/. Finding: Whoever most recently saw a wild animal in real life takes the marmot and makes the first action-token and terrain choice. Local source SHA-256: a43be334828ade34c4470f7e99465061bed568e904662de15a7fae02c1b00e9f. Rendered pages 3–6 and 12 were inspected. Setup assigns the marmot; page 5 establishes what its holder does. The initial weather step is retained so that the answer does not imply the action choice happens before it. v1.0 and copyright 2022 are printed in the credits. Excluded from the random mix because this is a shared-action chooser role.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

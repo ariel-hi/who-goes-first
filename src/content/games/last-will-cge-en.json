@@ -1,0 +1,43 @@
+{
+  "id": "last-will-cge-en",
+  "slug": "last-will-cge-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "04e9ca9c567109f50fd4fc1fb9eb64d5c678249da4a5ae4e8bceddf4799866cd",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Last Will",
+  "aliases": [],
+  "editionLabel": "English CGE base-game publisher rules",
+  "firstPlayerRule": "Whoever most recently paid for something receives the starting-player marker and begins the planning phase.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "With three or more players, the marker holder chooses a plan first, followed clockwise by the others. The chosen plans determine order for the remaining phases.",
+    "With two players, the marker holder first blocks a plan with a neutral marker. The opponent blocks another and chooses their own plan; the marker holder then chooses from the remaining plans."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/last-will/rules/last-will-rules-en.pdf",
+      "title": "Last Will — Czech Games Edition rules",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "3",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5
+      ],
+      "location": "Player setup; Planning and Planning in a 2-player game; PDF pages 3, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/last-will. Finding: Whoever most recently paid for something receives the starting-player marker and begins the planning phase. Local source SHA-256: 458b380cc376457570b0663353109158e900294a845cd8323191e1e4a0b5d46e. Editorial recheck 2026-09-23: Re-read the listed setup and gameplay pages and opened each rendered page. Selects planning priority; subsequent order and the two-player blocking sequence differ. Cached source: research\\source-files\\cge\\last-will-b1d10964.pdf; SHA-256 458b380cc376457570b0663353109158e900294a845cd8323191e1e4a0b5d46e. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; Selects planning priority; subsequent order and the two-player blocking sequence differ.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

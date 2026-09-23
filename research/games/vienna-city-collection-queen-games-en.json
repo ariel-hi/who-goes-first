@@ -1,0 +1,52 @@
+{
+  "id": "vienna-city-collection-queen-games-en",
+  "slug": "vienna-city-collection-queen-games-en",
+  "gameName": "Vienna",
+  "aliases": [
+    "Vienna: Stefan Feld City Collection"
+  ],
+  "language": "en",
+  "editionLabel": "Queen Games English rules, Stefan Feld City Collection 5",
+  "firstPlayerRule": "Whoever was most recently in Vienna takes the city crest and is first player; the rulebook also allows whoever was closest to Vienna.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Everyone assigns cards simultaneously before the city-crest holder takes the first action turn.",
+    "The advanced game keeps this starting-player instruction from the introductory setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/vienna_en.pdf",
+      "title": "Vienna — Queen Games rules",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "1",
+        "5",
+        "6",
+        "7",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        5,
+        6,
+        7,
+        11
+      ],
+      "location": "Cover and game identity; introductory setup step 14; Card phase and Action phase; advanced setup; PDF pages 1, 5, 6, 7, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever was most recently in Vienna takes the city crest and is first player; the rulebook also allows whoever was closest to Vienna. Local source SHA-256: 5318f8cd4824d750767f423dfa6b9611dea0d81d32f6bee41b75aa06598ad29b. The publisher file is the City Collection 5 agent-placement game, not the older Schmidt dice-placement game with the same title. The text extractor duplicates content across facing pages; the start instruction is visibly on printed/PDF page 5.",
+  "uncertainty": [
+    "The parenthetical alternative about being closer to Vienna is not explained further; the source supplies no measurement or tie procedure.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

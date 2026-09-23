@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "icecool-brain-games-en",
+    "gameName": "ICECOOL",
+    "aliases": [
+      "Ice Cool"
+    ],
+    "sourceHint": "icecool-1cd181d0",
+    "editionLabel": "English Brain Games rules, ten-page publisher download",
+    "pages": [
+      2,
+      4,
+      10
+    ],
+    "printedPages": [
+      5,
+      7,
+      13
+    ],
+    "location": "Setup step 5; Phase 2, playing the round; two-player changes",
+    "firstPlayerRule": "Whoever saw a penguin most recently is the first catcher. The player to that person's left takes the first flick, and turns continue clockwise.",
+    "clarifications": [
+      "The catcher assignment does not make that person the first player to move. In a four-player round, the three runners act before the catcher.",
+      "The two-player rules keep this starting order."
+    ],
+    "evidenceNotes": "English PDF pages 2, 4 and 10 (printed 5, 7 and 13) were rendered and inspected. The publisher rules index links the public Google Drive download. German AMIGO PDF pages 3, 5 and 11 were also visually checked and agree on the starting instructions. The English source replaces the temporary German-only draft; these matching instructions are represented once in the directory.",
+    "additionalSources": [
+      {
+        "url": "https://blog.amigo-spiele.de/content/ap/rule/01660-DE-AmigoRule.pdf",
+        "title": "ICECOOL — AMIGO rules",
+        "publisher": "AMIGO",
+        "printedPages": [
+          "3",
+          "5",
+          "11"
+        ],
+        "pdfPagesOneBased": [
+          3,
+          5,
+          11
+        ],
+        "location": "Setup step 5; Phase 2, playing a round; two-player changes; PDF pages 3, 5, 11",
+        "checkedAt": "2026-09-23"
+      }
+    ]
+  },
+  {
+    "slug": "team3-green-brain-games-en",
+    "gameName": "TEAM3 Green",
+    "aliases": [
+      "TEAM3 GREEN",
+      "Team 3 Green"
+    ],
+    "sourceHint": "team3-green-7420ae81",
+    "editionLabel": "English Green edition, Brain Games rules with 2019 copyright",
+    "pages": [
+      1,
+      3,
+      4
+    ],
+    "location": "Overview and Game Setup; Playing a Round; TEAM3VS3 variant",
+    "firstPlayerRule": "For the cooperative base game, the player with the longest arms is the first Architect. The next player to the left is the Supervisor, followed by the Builder.",
+    "clarifications": [
+      "This assigns the opening team roles. The Architect starts the timer and gestures to the Supervisor while the three players work together.",
+      "In the competitive TEAM3VS3 variant, teams race simultaneously; there is no team that moves first."
+    ],
+    "evidenceNotes": "Green cover and Mind Merge expansion identify the edition. Rendered PDF pages 1, 3 and 4 were inspected, including the 2019 copyright and simultaneous competitive variant. No criterion for an individual Builder turn was inferred."
+  }
+]

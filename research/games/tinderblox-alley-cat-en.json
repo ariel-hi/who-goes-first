@@ -1,0 +1,39 @@
+{
+  "id": "tinderblox-alley-cat-en",
+  "slug": "tinderblox-alley-cat-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Tinderblox",
+  "aliases": [],
+  "editionLabel": "English Alley Cat Games rules, two sheets listing 23 Tinderblox cards",
+  "firstPlayerRule": "Whoever most recently went camping takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "On a turn, reveal a card and use the tweezers to build the fire. Pass the tweezers clockwise when your turn ends."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1w3Kw4OZdFSgFsbUHWyY9ec42qkCQO1m-/view",
+      "title": "Tinderblox — Alley Cat Games rules",
+      "publisher": "Alley Cat Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Overview; Components; How to Play; credits. PDF pages are folded sheets",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Opened and visually inspected both sheets from the publisher-linked public press pack. The camping instruction chooses the first normal turn. The component list identifies the 23-card file without inferring a printing year or claiming all retail versions match. Cached source: research\\source-files\\alley\\tinderblox-2b7d864c.pdf; SHA-256 662e5a822c3c116accf501eac2613373ef2aad1ce44d96d7e8a7ff35cc4ce45f. Discovery: https://www.alleycatgames.com/tinderblox.",
+  "uncertainty": [
+    "No starting tie-break is stated beside the camping criterion.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

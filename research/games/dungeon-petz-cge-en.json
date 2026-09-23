@@ -1,0 +1,41 @@
+{
+  "id": "dungeon-petz-cge-en",
+  "slug": "dungeon-petz-cge-en",
+  "gameName": "Dungeon Petz",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English CGE base-game publisher rules",
+  "firstPlayerRule": "Whoever fed a pet most recently receives the starting-player token. The rules also permit choosing its holder randomly or by agreement.",
+  "officialTieBreak": "For shopping groups of equal size, resolve them clockwise beginning with the starting-player token holder. Choosing that token holder randomly is also an official setup alternative.",
+  "houseFallback": null,
+  "clarifications": [
+    "The token does not guarantee the first shopping action. After players reveal their groups, the largest group goes first; its size counts both imps and gold tokens."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/dungeon-petz/rules/dungeon-petz-rules-en.pdf",
+      "title": "Dungeon Petz — Czech Games Edition rules",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "2",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        8
+      ],
+      "location": "Starting Player Token; Going Shopping, Biggest Group Goes First; PDF pages 2, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/dungeon-petz. Finding: Whoever fed a pet most recently receives the starting-player token. The rules also permit choosing its holder randomly or by agreement. Local source SHA-256: c53b53cd864d0f1756a3fa0cdc857c0a934bcd30764cfb6803c8df9f12b2359a. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

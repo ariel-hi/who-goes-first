@@ -1,0 +1,276 @@
+[
+  {
+    "slug": "big-monster-explor8-en-dized",
+    "gameName": "Big Monster",
+    "aliases": [],
+    "editionLabel": "Explor8 English base rules, official Dized reference",
+    "firstPlayerRule": "In the standard three-to-six-player game, everyone starts together: on a signal, all players take their tiles and choose one.",
+    "clarifications": [
+      "Choosing and passing tiles is simultaneous. The person giving the signal does not receive a separate opening turn.",
+      "Two-player play is sequential: the first player chooses a tile and discards another, then the second player chooses from what remains. That second player starts the next turn.",
+      "The special three-player variant also uses sequential choices and rotates the starter. The cited variant setup and turn sections do not say how to select the initial starter."
+    ],
+    "officialTieBreak": "No starting-player tie arises in the standard simultaneous mode.",
+    "houseFallback": "For the sequential two-player or special three-player variant, your group can agree to choose the initial starter randomly. This is a house rule, not a stated publisher instruction.",
+    "interpretation": null,
+    "sourceEnds": [
+      "/game-turn-3-to-6-players",
+      "/2-players-setup",
+      "/game-turn-for-2-players",
+      "/3-players-setup-special-rules",
+      "/game-turn-for-3-players-special-rules"
+    ],
+    "evidence": "The standard Game Turn section explicitly begins with simultaneous play. The separate two-player and special three-player sections describe a first player but do not provide an initial selection criterion; that gap is visible in the article and is not filled with an invented official rule. The team and individual setup sections were read too.",
+    "uncertainty": [
+      "The initial selection method for the sequential variants is not stated in the cited online setup and turn sections."
+    ],
+    "portable": false,
+    "poolReason": "Directory only: the standard mode starts simultaneously; the sequential variants do not specify their initial selection method."
+  },
+  {
+    "slug": "blood-rage-cmon-en-dized",
+    "gameName": "Blood Rage",
+    "aliases": [],
+    "editionLabel": "CMON English base rules, official Dized reference",
+    "firstPlayerRule": "The player whose birthplace is farthest north takes the first Action turn.",
+    "clarifications": [
+      "Give that player the First Player token. Card drafting happens before the Action phase; the token holder then acts first, followed by clockwise turns.",
+      "For a first game, the rules recommend skipping the first Age's draft and using the eight dealt cards. This does not replace the starting-player criterion.",
+      "Pass the First Player token to the left at the end of each Age."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the birthplace comparison is tied, unknown or unwelcome, agree to choose randomly. This is a house rule.",
+    "interpretation": null,
+    "sourceEnds": [
+      "/last-steps",
+      "/drafting",
+      "/action-phase-overview",
+      "/first-game",
+      "/end-of-an-age"
+    ],
+    "evidence": "Last Steps uses place of birth, not current home or latest northern trip. Phases of Play and Gods' Gifts precede the action turns. The first-game deal recommendation and two-player drafting changes do not reassign the First Player token.",
+    "uncertainty": [
+      "No tie-break for equally northern birthplaces is stated alongside the criterion."
+    ],
+    "portable": true,
+    "poolReason": "The birthplace comparison identifies the actual first Action player; earlier drafting does not replace that order."
+  },
+  {
+    "slug": "champions-of-midgard-grey-fox-en-dized",
+    "gameName": "Champions of Midgard",
+    "aliases": [],
+    "editionLabel": "Grey Fox Games English base rules, official Dized reference",
+    "firstPlayerRule": "The player who most recently earned glory in battle starts. Choosing a player randomly is also an official option.",
+    "clarifications": [
+      "Give that player the First Player Marker. Leader selection begins with their right-hand neighbor and goes counterclockwise; actual worker placement starts with the marker holder and proceeds clockwise.",
+      "The marker changes hands through the Jarl's Longhouse action. Taking that action while already holding the marker passes it to your left; the marker does not automatically rotate each round."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": null,
+    "interpretation": "The cited instruction does not define what counts as earning glory in battle. Agree on its meaning together, or use the official random option.",
+    "sourceEnds": [
+      "/game-setup",
+      "/worker-placement",
+      "/jarls-longhouse"
+    ],
+    "evidence": "Game Setup steps 7 and 8 distinguish the first-player criterion from reverse Leader selection. Worker Placement explicitly starts with the marker holder. Jarl's Longhouse says it is the only way the marker moves, including the holder's pass-left exception. Clean-up contains no automatic marker rotation. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+    "uncertainty": [
+      "Glory in battle is an undefined thematic criterion; no narrower real-world or gaming definition is inferred."
+    ],
+    "portable": true,
+    "poolReason": "The main criterion identifies the actual first worker-placement turn, with its subjective meaning and official random alternative visible."
+  },
+  {
+    "slug": "coup-indie-game-studios-en-dized",
+    "gameName": "Coup",
+    "aliases": [],
+    "editionLabel": "Indie Game Studios English base rules, official Dized reference",
+    "firstPlayerRule": "The previous game's winner goes first, or choose the starting player randomly.",
+    "clarifications": [
+      "Turns proceed clockwise. On each turn, take one action; passing is not an option.",
+      "With two players, the starter receives one coin and the other player receives two. This applies to both regular setup and the optional two-player card-selection setup."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": null,
+    "interpretation": null,
+    "sourceEnds": [
+      "/turn-order",
+      "/regular-setup",
+      "/two-player-variant-setup",
+      "/actions"
+    ],
+    "evidence": "Turn order supplies a previous-winner instruction and an official random alternative. No most-recent-win-in-any-game wording was substituted. Both setup sections explicitly give the two-player starter only one coin. This reference covers base Coup, not an expansion's faction rules. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+    "uncertainty": [],
+    "portable": false,
+    "poolReason": "Directory only: this is previous-game order or random selection, rather than a standalone criterion for a fresh session."
+  },
+  {
+    "slug": "flamme-rouge-lautapelit-en-dized",
+    "gameName": "Flamme Rouge",
+    "aliases": [],
+    "editionLabel": "Lautapelit.fi English base rules, official Dized reference",
+    "firstPlayerRule": "The most recent bicycle rider places both cyclists first during setup. Once racing begins, everyone chooses energy cards simultaneously; the frontmost cyclist moves first.",
+    "clarifications": [
+      "Initial placement proceeds clockwise, with each player placing both cyclists before the next player places theirs.",
+      "During movement, resolve cyclists from front to back. If two occupy the same square, the cyclist in the right-hand lane moves first.",
+      "The bicycle-recency rule determines starting-position placement, not a separate individual turn in the simultaneous Energy phase."
+    ],
+    "officialTieBreak": "If bicycle recency is tied for setup placement, the youngest tied player places first.",
+    "houseFallback": null,
+    "interpretation": null,
+    "sourceEnds": [
+      "/4-starting-positions",
+      "/1-energy-phase",
+      "/2-movement-phase"
+    ],
+    "evidence": "Starting Positions explicitly gives both bicycle recency and the youngest-player tie-break. Turn Overview and Energy Phase distinguish simultaneous decisions from Movement Phase's front-to-back/right-lane order. Handicap changes starting decks and does not assign an individual Energy turn.",
+    "uncertainty": [],
+    "portable": false,
+    "poolReason": "Directory only: the personal-history criterion chooses a setup placement role; gameplay starts with simultaneous card selection and positional movement."
+  },
+  {
+    "slug": "new-york-slice-bezier-en-dized",
+    "gameName": "New York Slice",
+    "aliases": [],
+    "editionLabel": "Bezier Games English base rules, official Dized reference",
+    "firstPlayerRule": "The player who most recently won any game is the first Slicer. After that player divides the pizza, their left-hand neighbor chooses the first portion.",
+    "clarifications": [
+      "The Slicer begins the round by revealing a pizza and Special, then dividing them into portions.",
+      "Portion choices proceed clockwise from the Slicer's left. The Slicer receives the last portion.",
+      "The player on the Slicer's left becomes the Slicer for the next round."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the latest-win criterion does not select one player, agree to choose the initial Slicer randomly. This is a house rule.",
+    "interpretation": null,
+    "sourceEnds": [
+      "/determine-first-slicer",
+      "/1-start-each-round",
+      "/2-divide-pizzaspecial-into-portions",
+      "/3-choose-a-portion",
+      "/4-next-player-chooses",
+      "/5-next-round-and-new-slicer"
+    ],
+    "evidence": "Determine First Slicer says last to win any game, not the previous New York Slice winner specifically. Round setup, strategic slicing and first portion selection are distinct; the Slicer's left neighbor chooses first. Two-player setup removes specific slices without replacing that order.",
+    "uncertainty": [
+      "No tie-break for the latest game win is supplied alongside the Slicer criterion."
+    ],
+    "portable": false,
+    "poolReason": "Directory only: the criterion selects the Slicer, while their neighbor is the first portion chooser. Keep the role distinction in the full article."
+  },
+  {
+    "slug": "schrodingers-cats-9th-level-en-dized",
+    "gameName": "Schrödinger's Cats",
+    "aliases": [
+      "Schrodinger's Cats",
+      "Schrodingers Cats",
+      "Schroedinger's Cats"
+    ],
+    "editionLabel": "9th Level Games English base rules, official Dized reference",
+    "firstPlayerRule": "The player who most recently watched a documentary goes first.",
+    "clarifications": [
+      "That player is the First Scientist: they shuffle and deal, announce the experiment's total number of boxes, and begin as the Active Scientist.",
+      "The Active Scientist proposes a hypothesis about how many Alive Cats, Dead Cats or Empty Boxes are in play. The starting criterion does not restrict the documentary to a particular subject."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If documentary recency is tied or nobody qualifies, agree to pick randomly. This is a house rule.",
+    "interpretation": null,
+    "sourceEnds": [
+      "/first-player",
+      "/before-the-first-round-begins",
+      "/aPf_3glsRlCyKfuf9_1f4Q/GrI3cZoRRAaE4BOAv8ZW1w/how-to-propose-a-hypothesis"
+    ],
+    "evidence": "First Player explicitly assigns both dealing and the initial Active Scientist role. Before the First Round Begins requires announcing the box count; How to Propose a Hypothesis defines the first active decision. Two/three-player and no-elimination alternatives do not replace this initial criterion. Credits state copyright 2015; no claim is made that the live web reference is a particular physical printing.",
+    "uncertainty": [
+      "No starting tie-break is stated alongside the documentary criterion."
+    ],
+    "portable": true,
+    "poolReason": "Documentary recency selects the first active decision-maker, not just the dealer."
+  },
+  {
+    "slug": "the-grimm-forest-druid-city-en-dized",
+    "gameName": "The Grimm Forest",
+    "aliases": [
+      "Grimm Forest"
+    ],
+    "editionLabel": "Druid City Games English base rules, official Dized reference",
+    "firstPlayerRule": "The person who most recently ate bacon receives the Starting Player token and takes the first Build turn.",
+    "clarifications": [
+      "The round begins with Gather: everyone secretly chooses cards, then resolves the gathering steps. Build follows, with individual turns beginning at the Starting Player and continuing clockwise.",
+      "The token also determines the order for simultaneous card effects that must be resolved in turn order. Pass it clockwise during Clean Up.",
+      "With two players, resolve Prince Regal's resource collection before either player chooses their Gather and Fable cards."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If nobody qualifies, there is a tie, or the criterion does not suit your group, agree to choose randomly. This is a house rule.",
+    "interpretation": null,
+    "sourceEnds": [
+      "/player-setup",
+      "/components-miniatures",
+      "/nq16LjxvQVytT_IEJENFdw/1-gather",
+      "/nq16LjxvQVytT_IEJENFdw/2-build",
+      "/3-clean-up",
+      "/gAni_9D0T56R9AMhqFqZGg/prince-regal-2-player-game"
+    ],
+    "evidence": "Player Setup names the bacon criterion. Components: Miniatures defines turn order as starting with the token holder and continuing clockwise. Gather is shared card selection before sequential Build turns; simultaneous triggered effects can still use turn order. Prince Regal acts before two-player Gather choices but is not a human candidate for the token.",
+    "uncertainty": [
+      "No tie-break or dietary alternative is specified alongside the initial criterion."
+    ],
+    "portable": true,
+    "poolReason": "The food-history criterion selects the first individual Build turn after the shared Gather phase."
+  },
+  {
+    "slug": "volcano-fiesta-caldera-looney-en-dized",
+    "gameName": "Volcano",
+    "aliases": [
+      "Volcano Fiesta Caldera"
+    ],
+    "editionLabel": "Looney Labs English Fiesta Caldera variant, official Dized reference",
+    "firstPlayerRule": "Whoever has traveled closest to molten lava goes first. The rules also suggest choosing randomly as an alternative.",
+    "clarifications": [
+      "The comparison is closeness to molten lava, rather than the most recent volcano visit.",
+      "A turn can include multiple cap moves, ending when an eruption occurs. Under this setup, the opening move cannot capture more than one piece.",
+      "This reference identifies its rules as the Fiesta Caldera version of Volcano, with a central empty space and eight translucent pyramid colors. It differs from the original game's setup and victory condition."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": null,
+    "interpretation": null,
+    "sourceEnds": [
+      "/who-starts",
+      "/moving-caps",
+      "/equipment",
+      "/setup",
+      "/historical-notes"
+    ],
+    "evidence": "Who Starts states proximity to molten lava, then offers a random method because of the initial capture limitation. Equipment and Setup identify the eight-color, central-Caldera configuration. Historical Notes explicitly calls it the Fiesta Caldera variant, so this is not silently labeled the original rules. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+    "uncertainty": [
+      "No distance tie-break is supplied alongside the criterion; random choice is separately suggested."
+    ],
+    "portable": true,
+    "poolReason": "The travel-history criterion selects the actual first cap-moving turn without using components to choose the person."
+  },
+  {
+    "slug": "boop-smirk-dagger-en-dized",
+    "gameName": "boop.",
+    "aliases": [
+      "Boop"
+    ],
+    "editionLabel": "Smirk & Dagger Games English base rules, official Dized reference",
+    "firstPlayerRule": "The player who most recently petted a cat starts, or choose the first player randomly.",
+    "clarifications": [
+      "Players begin with eight Kittens each, with their Cats out of play. Take turns placing one Kitten on an empty bed space.",
+      "The introductory version for younger players removes Cats and kitten graduation; the cited adjustment does not replace the starting-player rule."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": null,
+    "interpretation": null,
+    "sourceEnds": [
+      "/first-player",
+      "/set-up",
+      "/object",
+      "/adjusting-for-younger-players"
+    ],
+    "evidence": "First Player provides cat-petting recency and the random alternative. Object gives alternating placement turns. Credits identify Scott Brady and Curt Covert; the reference covers boop., not BOOoop. or Boop the Halls. No physical-printing year is invented from web metadata. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+    "uncertainty": [],
+    "portable": true,
+    "poolReason": "The personal-history criterion selects the actual opening placement player."
+  }
+]

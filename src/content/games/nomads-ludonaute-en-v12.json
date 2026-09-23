@@ -1,0 +1,49 @@
+{
+  "id": "nomads-ludonaute-en-v12",
+  "slug": "nomads-ludonaute-en-v12",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "f02e4b91a33c682dfaf09bcadcbd3379d364bfed6f60017c20436e83a49a5939",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Nomads",
+  "aliases": [
+    "Nomades",
+    "Legends of Luma: Nomads"
+  ],
+  "editionLabel": "Ludonaute English v1.2 rules, ©2017",
+  "firstPlayerRule": "Whoever most recently told a story starts. Choosing a player at random is also an official option.",
+  "officialTieBreak": "You may choose randomly instead of using the storytelling criterion; the rulebook does not limit this option to ties.",
+  "houseFallback": null,
+  "clarifications": [
+    "Regular turns proceed clockwise.",
+    "With fewer than five players, the person to the starter’s right first places the unused Adventurers’ discs during setup. That setup task does not make them the first player.",
+    "In the Lumarathon variant, if you have just finished Oh Captain!, its last Captain starts Nomads instead."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.data.ludonaute.fr/Nomades/RULES/Nomads_Rules_EN.pdf",
+      "title": "Nomads — Ludonaute rules",
+      "publisher": "Ludonaute",
+      "printedPages": [
+        "3",
+        "4",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4,
+        8
+      ],
+      "location": "Setup; turn sequence; Lumarathon variant; edition credits; PDF pages 1, 3, 4, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.data.ludonaute.fr/?Nomades/RULES. Finding: Whoever most recently told a story starts. Choosing a player at random is also an official option. Local source SHA-256: f3f4c79a73b111883d23d63abfae7d111b4f1188dee3ba4691e413f84ec5415c. Rendered pages 1, 3, 4 and 8 were visually inspected before preparation. The ordinary storytelling/random option is kept separate from non-played Adventurer setup and the linked-game Lumarathon exception. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: a standalone criterion identifies the starter without game-specific components.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

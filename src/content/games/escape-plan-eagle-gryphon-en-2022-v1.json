@@ -1,0 +1,50 @@
+{
+  "id": "escape-plan-eagle-gryphon-en-2022-v1",
+  "slug": "escape-plan-eagle-gryphon-en-2022-v1",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ab9dcab7ab0604e5437caa84879e808b4909f329afe4d17d9f17a41dc87ff2ea",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Escape Plan",
+  "aliases": [],
+  "editionLabel": "Eagle-Gryphon English 2022 v1 Preview rules, ©2018/2022",
+  "firstPlayerRule": "The rulebook names whoever most recently robbed a bank as the initial starter. That player leads the opening City-tile placement; the order reverses before the first Player Action phase.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Setup records the initial order clockwise from that player.",
+    "The Turn Order phase ranks players by Notoriety, with ties reversing the tied players’ existing order. Everyone is initially tied, so the first day’s action order is the reverse of the setup order.",
+    "In the two-player setup, Sandra occupies the third initial position on the turn-order track."
+  ],
+  "interpretation": "The bank-robbery line is the rulebook’s thematic starting criterion. The inspected passage supplies no substitute for a group to which it does not apply; an agreed random choice below is a house rule.",
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1XljbZuiGh3mk9SJFZPQ9b3P0kLqyyqiQ/view",
+      "title": "Escape Plan — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "2",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "location": "Player Setup step M; phase sequence; City phase; Turn Order phase; credits; PDF pages 2, 5, 6, 7, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/escape-plan. Finding: The rulebook names whoever most recently robbed a bank as the initial starter. That player leads the opening City-tile placement; the order reverses before the first Player Action phase. Local source SHA-256: 75b1d19c969823fb033da9bed5f3aa9c7d3d3cb1ae045c990c6cce2d666a1340. Rendered pages 2, 5, 6, 7 and 8 inspected. The initial starter is distinguished from the Player Action starter; the source explicitly says Day 1 order reverses because all Notoriety values are tied. The visible two-player setup puts Sandra in position 3. No invented official fallback or real-world qualification was added. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Directory only: Initial City-tile order reverses before Player Actions; not a simple standalone action starter.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "tzolkin-cge-en",
+  "slug": "tzolkin-cge-en",
+  "gameName": "Tzolk'in: The Mayan Calendar",
+  "aliases": [
+    "Tzolkin"
+  ],
+  "language": "en",
+  "editionLabel": "English CGE base-game rules, publisher file TZ_rules_EN_13.pdf",
+  "firstPlayerRule": "The player who most recently sacrificed something receives the starting-player marker.",
+  "officialTieBreak": "If tied, give the marker to the player who volunteers for the next sacrifice.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/tzolkin-the-mayan-calendar/rules/TZ_rules_EN_13.pdf",
+      "title": "Tzolk'in: The Mayan Calendar — Czech Games Edition rules",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setting Up the Game, Starting Player; PDF pages 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/tzolkin-the-mayan-calendar. Finding: The player who most recently sacrificed something receives the starting-player marker. Local source SHA-256: df209c48ccb626e330a24d4a36da0af9d8de48b4ebbef244a564e5855fa5874a. ",
+  "uncertainty": [
+    "This thematic setup instruction does not define what counts as a sacrifice.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

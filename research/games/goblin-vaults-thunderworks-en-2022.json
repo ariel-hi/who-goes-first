@@ -1,0 +1,52 @@
+{
+  "id": "goblin-vaults-thunderworks-en-2022",
+  "slug": "goblin-vaults-thunderworks-en-2022",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Goblin Vaults",
+  "aliases": [],
+  "editionLabel": "Thunderworks English rules, ©2022",
+  "firstPlayerRule": "In multiplayer, whoever looks most like a goblin takes the first human bidding turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group cannot agree on the resemblance or prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the first player marker. Initial vault cards are chosen and revealed simultaneously during setup; bidding then begins with the marker holder and proceeds clockwise.",
+    "With two players, reveal Glavrun’s bidding card before the human players bid. In solo play, the first player marker is unused and Glavrun also reveals a card before the human acts.",
+    "After a non-final round’s Warden Phase, pass the first player marker clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/GV-Rulebook-Web.pdf?v=1700499168",
+      "title": "Goblin Vaults — Thunderworks Games rules",
+      "publisher": "Thunderworks Games",
+      "printedPages": [
+        "4",
+        "6",
+        "7",
+        "10",
+        "11",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        7,
+        10,
+        11,
+        12
+      ],
+      "location": "Setup steps 9–10; Card Strength; Bidding Phase and two-player box; Warden Phase and Final Scoring; Solitary Mode; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 4, 6, 7, 10, 11, 12. Rendered setup page 4 gives the first player marker to the most goblin-like player after simultaneous starting-card selection. Page 7's two-player Glavrun box is visually before the human bidding paragraph: Glavrun reveals first, then the marker holder begins clockwise human bidding. Page 11 removes the marker in solo and places Glavrun's first reveal before the human's turn. Page 10's gear-token tie-break concerns final scoring, while its marker rotation concerns later rounds. The credits say ©2022. The resemblance criterion does not require comparison with a particular component illustration. Publisher discovery URL: https://thunderworksgames.com/products/goblin-vaults-card-game. Local source SHA-256: 9dfa6139b7ef0da0ac71af062783ea3f42275308eff9fbb01baae788292a39d3.",
+  "uncertainty": [
+    "The subjective resemblance criterion has no stated judging method or initial-start tie-break.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

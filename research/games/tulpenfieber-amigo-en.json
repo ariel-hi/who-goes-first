@@ -1,0 +1,40 @@
+{
+  "id": "tulpenfieber-amigo-en",
+  "slug": "tulpenfieber-amigo-en",
+  "gameName": "Tulpenfieber",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English AMIGO rules, six-page publisher booklet",
+  "firstPlayerRule": "Whoever most recently gave someone flowers starts and takes tulip field I.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The other players take consecutively numbered fields clockwise from the first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02153-GB-AmigoRule.pdf",
+      "title": "Tulpenfieber — AMIGO rules",
+      "publisher": "AMIGO",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup, opening paragraph; Playing the Game; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2153&select=downloads. Finding: Whoever most recently gave someone flowers starts and takes tulip field I. Local source SHA-256: 36c24aaef45a58312173370bfa7d242af41414d808e8ff02600a45280f322bbc. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

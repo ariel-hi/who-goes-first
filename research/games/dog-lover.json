@@ -1,0 +1,40 @@
+{
+  "id": "dog-lover",
+  "slug": "dog-lover",
+  "gameName": "Dog Lover",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English AEG base-game rules, sixteen-page optimized publisher PDF",
+  "firstPlayerRule": "Choose randomly, or let the player who owns the most dogs in real life start.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The player immediately counterclockwise from the starter places the Watch Dog token during setup; that placement does not make them the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/DogLover_BaseGame_Rulebook_Optimized.pdf",
+      "title": "Dog Lover — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Setup steps 9–11; PDF pages 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/doglover/. Finding: Choose randomly, or let the player who owns the most dogs in real life start. Local source SHA-256: efb8a0db7c64e5b29f2038d93d8b72f40a579b32a9a021167315bbfa7e35380f. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

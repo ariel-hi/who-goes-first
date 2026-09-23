@@ -1,0 +1,53 @@
+{
+  "id": "azul-master-chocolatier-next-move-en-2022",
+  "slug": "azul-master-chocolatier-next-move-en-2022",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b725482247ee46a968873e49ad3134fd03d00d1bec0275e1df2d1f66c9eb77ae",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Azul: Master Chocolatier",
+  "aliases": [
+    "Azul Master Chocolatier",
+    "Azul Chocolate"
+  ],
+  "editionLabel": "Next Move English rules, ©2022",
+  "firstPlayerRule": "Whoever most recently ate chocolate goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "That player takes the starting player marker and fills the Factory displays during setup. They then put the marker in the center and take the first Factory offer turn; play continues clockwise.",
+    "During each round, the first person to take tiles from the center also takes the marker into their foundry line. It counts for the foundry penalty and makes them the next round’s starting player.",
+    "The brown-board and Special Factories variants retain the same initial starting-player criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-chocolate-rulebook-V2-May27_compressed.pdf",
+      "title": "Azul: Master Chocolatier — Next Move Games rules",
+      "publisher": "Next Move Games",
+      "printedPages": [
+        "2",
+        "3",
+        "5",
+        "6",
+        "cover"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "location": "Game Setup step 5; Factory offer; Scoring and Preparing the next round; Variant play and Special Factories; credits and cover",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2, 4, 5, 6. The publisher-owned Next Move CDN supplies this six-page PDF in a non-cover-first order. Printed page 2 selects the latest chocolate eater; printed page 3 places the marker in the center before their clockwise first turn. The center taker receives the marker later, with the foundry penalty, and begins the following round. Both variants preserve the initial criterion. The final-score horizontal-line tie-break is not a starting-player rule. The cover identifies Master Chocolatier and the credits say ©2022 despite the 2024 hosting path. Publisher discovery URL: https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-chocolate-rulebook-V2-May27_compressed.pdf. Local source SHA-256: 18938595b0d269612728fd84ec1557ff9f25fbcf14f5a4b507aea322f9f2a617. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The personal food-recency criterion selects the actual first actor and needs no game-specific components.",
+  "uncertainty": [
+    "The source gives no initial-start tie-break for the chocolate-eating criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

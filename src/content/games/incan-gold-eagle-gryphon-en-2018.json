@@ -1,0 +1,44 @@
+{
+  "id": "incan-gold-eagle-gryphon-en-2018",
+  "slug": "incan-gold-eagle-gryphon-en-2018",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6bf44260c94f5c4db5c3d9048879349536f635be1f072395d29079a8173b31f7",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Incan Gold",
+  "aliases": [],
+  "editionLabel": "Eagle-Gryphon English rules, ©2018, meeple edition",
+  "firstPlayerRule": "Everyone makes their explore-or-return decision simultaneously. Choose a Guide, preferably someone who already knows the game, to coordinate play.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Guide prepares the round and signals when everyone reveals their decision. This role does not give that person an earlier decision than the other explorers."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1dUqSh-rCYACXEGvL4Hn-wKSthLfwzzks/view",
+      "title": "Incan Gold — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "1",
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4
+      ],
+      "location": "Preparations; A Game Round / Players’ Choices; credits; PDF pages 1, 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/incan-gold-2018. Finding: Everyone makes their explore-or-return decision simultaneously. Choose a Guide, preferably someone who already knows the game, to coordinate play. Local source SHA-256: 50d0f6a1142ee5232457fcb94a4648acd6e6bcb8246274ed96b9a2e93607bdae. Rendered pages 1, 2 and 4 inspected. This is the ©2018 meeple-based file, distinct from the ©2024 Explore/Exit-card rules in the same publisher-linked folder. The endgame scoring tie-break is not a starting tie-break. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Directory only: Simultaneous explorer decisions; the Guide coordinates play.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

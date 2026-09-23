@@ -1,0 +1,41 @@
+{
+  "id": "dungeon-petz-cge-en",
+  "slug": "dungeon-petz-cge-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "aa020952db0182116d41faf467d93f03d8dad63ad8a0cb44233a5e911733d805",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Dungeon Petz",
+  "aliases": [],
+  "editionLabel": "English CGE base-game publisher rules",
+  "firstPlayerRule": "Whoever fed a pet most recently receives the starting-player token. The rules also permit choosing its holder randomly or by agreement.",
+  "officialTieBreak": "For shopping groups of equal size, resolve them clockwise beginning with the starting-player token holder. Choosing that token holder randomly is also an official setup alternative.",
+  "houseFallback": null,
+  "clarifications": [
+    "The token does not guarantee the first shopping action. After players reveal their groups, the largest group goes first; its size counts both imps and gold tokens."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/dungeon-petz/rules/dungeon-petz-rules-en.pdf",
+      "title": "Dungeon Petz — Czech Games Edition rules",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "2",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        8
+      ],
+      "location": "Starting Player Token; Going Shopping, Biggest Group Goes First; PDF pages 2, 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/dungeon-petz. Finding: Whoever fed a pet most recently receives the starting-player token. The rules also permit choosing its holder randomly or by agreement. Local source SHA-256: c53b53cd864d0f1756a3fa0cdc857c0a934bcd30764cfb6803c8df9f12b2359a. Editorial recheck 2026-09-23: Re-read the listed setup and gameplay pages and opened each rendered page. Starting token provides tied-group priority, not a guaranteed first shopping action. Cached source: research\\source-files\\cge\\dungeon-petz-4e7797b9.pdf; SHA-256 c53b53cd864d0f1756a3fa0cdc857c0a934bcd30764cfb6803c8df9f12b2359a. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; Starting token provides tied-group priority, not a guaranteed first shopping action.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

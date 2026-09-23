@@ -1,0 +1,49 @@
+{
+  "id": "hardback-fowers-en",
+  "slug": "hardback-fowers-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Hardback",
+  "aliases": [],
+  "editionLabel": "English Fowers Games rules, 20-page Skellig-hosted PDF",
+  "firstPlayerRule": "Whoever last used a pen takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the First Player Token and continue clockwise.",
+    "In the Cooperative Anthology variant, each human player takes a normal turn, followed by Penny Dreadful's turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.skellig-rules.de/rules/0072-0002/Rules%20in%20English.pdf",
+      "title": "Hardback — Fowers Games (English manual hosted by Skellig Games) rules",
+      "publisher": "Fowers Games (English manual hosted by Skellig Games)",
+      "printedPages": [
+        "1",
+        "2",
+        "16",
+        "17",
+        "18"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        17,
+        18,
+        19
+      ],
+      "location": "Setup step 4; Cooperative Anthology; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Inspected rendered setup, game-end, cooperative-variant and credit pages. The pen criterion selects the first normal human turn. No printing year was inferred from the host path. Cached source: research\\source-files\\skellig-direwolf\\hardback-0e4042f1.pdf; SHA-256 c7edb06a2cf8e57859e7ccab9eb87da7864cc44d98c33efc2075cb7a1f972c45. Discovery: https://www.skellig-games.de/hardback.html.",
+  "uncertainty": [
+    "No starting tie-break is stated beside the pen criterion.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

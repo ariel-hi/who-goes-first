@@ -1,0 +1,41 @@
+{
+  "id": "small-world-days-of-wonder-en",
+  "slug": "small-world-days-of-wonder-en",
+  "gameName": "Small World",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Days of Wonder English rules, copyright 2009–2018",
+  "firstPlayerRule": "Whoever has the pointiest ears takes the first turn. Continue clockwise around the table.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The same first player advances the game-turn marker when a new round begins."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/7901-SW-rules-EN-2018_lowres.pdf",
+      "title": "Small World — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Starting the game on the left of the spread; I. The first turn on the right; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.daysofwonder.com/game/small-world/. Finding: Whoever has the pointiest ears takes the first turn. Continue clockwise around the table. Local source SHA-256: 601ab13477536df7bbb682b1dda5c3dbc4779ff6148cccdb45191c046e7d5f39. The PDF uses spreads: PDF page 2 contains printed pages 2 and 3. The starting-player paragraph is on printed page 2. Copyright on the final source page ends in 2018.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

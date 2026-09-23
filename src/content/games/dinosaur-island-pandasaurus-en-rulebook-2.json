@@ -1,0 +1,51 @@
+{
+  "id": "dinosaur-island-pandasaurus-en-rulebook-2",
+  "slug": "dinosaur-island-pandasaurus-en-rulebook-2",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6a7ab7b958f9d3a5365ea0817e732e27d64584160ff8a7d8435fc635baae5553",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Dinosaur Island",
+  "aliases": [],
+  "editionLabel": "Pandasaurus English base game, Rulebook 2.0",
+  "firstPlayerRule": "Whoever most recently extracted DNA from an amber-trapped mosquito goes first. If nobody has done that, whoever most recently visited a theme park starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official criteria leave a tie or nobody qualifies, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give the starter the First Player Token and arrange the opening turn order clockwise. That player rolls the DNA dice and takes the first research turn.",
+    "The theme-park criterion is the rulebook’s official fallback, not an extra rule invented by this site.",
+    "Later rounds use ascending victory-point order, starting with the lowest score. Players tied on points keep their relative order from the preceding round; this does not break a tie during initial setup.",
+    "This answer covers multiplayer setup in Rulebook 2.0. The same manual includes a separate solo mode."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/hnzlz0aj4r3qqve/Dinosaur%20Island%20Rulebook.pdf?dl=0",
+      "title": "Dinosaur Island — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [
+        "cover",
+        "unnumbered setup page",
+        "6",
+        "15",
+        "17"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        5,
+        6,
+        15,
+        17
+      ],
+      "location": "Main Game Setup step 9; How to Play and Research Phase; Cleanup Phase: Reset Turn Order; Solo Rules",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 5, 6, 15, 17. The cover explicitly identifies Rulebook 2.0. Setup step 9 gives priority to the latest successful amber-mosquito DNA extraction, with latest theme-park visit if no player has done that. Step 10 allocates increasing startup cash from the starter. Page 6 confirms clockwise first-round turns and the starter rolling the DNA pool before scientist assignment. Page 15 instead sorts later rounds by fewest VPs and preserves prior relative order for equal scores. Solo setup is separately described on page 17. The source does not date this printing, so no year is inferred from its download address. Publisher discovery URL: https://pandasaurusgames.com/products/dinosaur-island. Local source SHA-256: 97ff8b521eec9f0e6230e9d60f0b161a56efef3b1ae793d42f9baf1f2b39e855. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. An opening-player personal-history criterion with an explicit theme-park alternative; no game-specific components are needed to compare it. Preserve both branches.",
+  "uncertainty": [
+    "The source gives no tie-break for equal or unknown dates under the initial criteria.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

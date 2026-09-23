@@ -1,0 +1,41 @@
+{
+  "id": "dixit-2021-en",
+  "slug": "dixit-2021-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1a2422a4a8df257e209035611d70d0ed1bdd22fb8bf548a4878a8bd6266da1d8",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Dixit",
+  "aliases": [],
+  "editionLabel": "English refresh edition · 2021 credits, eight voting dials",
+  "firstPlayerRule": "Whoever comes up with a clue for a card first becomes the opening storyteller.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody wants to offer the first clue, your group can agree to choose a storyteller randomly. This is a house rule.",
+  "clarifications": [
+    "After a turn, the storyteller role moves to the player on the current storyteller’s left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-libellud/uploads/2022/03/DIXIT_REFRESH_RULES_US-UK-AU_BD.pdf",
+      "title": "Dixit — refreshed English rulebook",
+      "publisher": "Libellud",
+      "printedPages": [
+        "Unnumbered How to play page"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "PDF page 2, How to play opening sentence and End of turn; PDF page 1, Credits 2021",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The English rulebook linked by https://www.libellud.com/en/resources/dixit/ says the first person to find a clue becomes the first storyteller. The How to play page was visually inspected. Page 1 labels the credits 2021; the component list shows eight dials. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\dixit-4e8b9d4b.pdf; SHA-256 26365f602d44493cb38f63459a904d653c31ac93eb5543f899ca0da20cfd51b7. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The first clue depends on the dealt Dixit cards and assigns the opening storyteller role.",
+  "uncertainty": [
+    "No explicit simultaneous-clue tie-break appears in this opening instruction.",
+    "Do not substitute a youngest-player rule or assume all Dixit products use this instruction."
+  ]
+}

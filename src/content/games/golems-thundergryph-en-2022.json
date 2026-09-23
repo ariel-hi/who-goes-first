@@ -1,0 +1,40 @@
+{
+  "id": "golems-thundergryph-en-2022",
+  "slug": "golems-thundergryph-en-2022",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a1ff9a71d9f985e958fc22c3617ce67f0fec547ee575361463692822822f0f7e",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Golems",
+  "aliases": [],
+  "editionLabel": "ThunderGryph English Matchbox base rules, ©2022",
+  "firstPlayerRule": "In the two-player game, whoever most recently built a snowman starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "After the starting player's turn, their opponent takes a turn.",
+    "The solo rules replace multiplayer setup: you take five cards and resolve their actions before the Automa receives the four remaining cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2023/01/golems-rulebook_en_NEW.pdf",
+      "title": "Golems — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Two-player Setup step 8; Game Flow; Solo Game; credits; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/golems/. Finding: In the two-player game, whoever most recently built a snowman starts. Local source SHA-256: 6fdfac2077949abcb2ebafb1c2c4e9ac68f2843afd630ef52b7c2bac9f4a8c2a. Both pages of the publisher-linked base-game foldout were inspected, including the separate solo setup and ©2022 credits. This is Golems by Francesco Testini, not the distinct game Golem. The product's general player-count display is not used to override the actual two-player/solo manual. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the main personal-history criterion selects the actual starter without requiring game components. Multiplayer scope and official alternatives remain explicit.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

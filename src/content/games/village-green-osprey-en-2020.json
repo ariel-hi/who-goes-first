@@ -1,0 +1,46 @@
+{
+  "id": "village-green-osprey-en-2020",
+  "slug": "village-green-osprey-en-2020",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "dbdea847d0437c7175d9c24943970a0a701391038681954f02cbda8ceb6a1b57",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Village Green",
+  "aliases": [],
+  "editionLabel": "Osprey English rules, ©2020",
+  "firstPlayerRule": "In multiplayer, whoever watered a plant most recently goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the start player card. They take the opening turn, then play moves clockwise.",
+    "A turn draws and plays either a green card or an award card. Solo play uses separate rules and needs no choice between players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ospreypublishing.com/media/mb0m50fj/vg_rulebook_a6_lr-1.pdf",
+      "title": "Village Green — Osprey Games rules",
+      "publisher": "Osprey Games",
+      "printedPages": [
+        "1",
+        "3",
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        14,
+        16
+      ],
+      "location": "Setup step 8; How to Play; Solo Game; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 2, 4, 14, 16. Rendered PDF page 2 (printed 1) gives the start player card to the latest plant waterer. PDF page 4 (printed 3) identifies the card holder as the first actor and gives clockwise order. PDF page 14 (printed 13) covers solo changes, not an alternative multiplayer starter. PDF page 16 credits state ©2020. Publisher discovery URL: https://www.ospreypublishing.com/uk/discover/gaming-resources/board-card-games/. Local source SHA-256: c75de9786c2ec0e60680c7eaedec1842ee49a0126a47a7fa4390673d492ba710. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, and relevant mode context. Owner authorization: Reload localhost, 2026-09-22. Included in the random mix because the criterion selects an individual first actor without requiring game-specific components; team seating in The King Is Dead does not replace individual turns.",
+  "uncertainty": [
+    "No initial-start tie-break is stated alongside the cited criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

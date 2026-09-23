@@ -1,0 +1,42 @@
+{
+  "id": "carcassonne-amazonas-zman-en",
+  "slug": "carcassonne-amazonas-zman-en",
+  "gameName": "Carcassonne: Amazonas",
+  "aliases": [
+    "Carcassonne Amazonas"
+  ],
+  "language": "en",
+  "editionLabel": "Z-Man English rulebook, 2016 copyright",
+  "firstPlayerRule": "Start with whoever most recently took a boat ride. Play proceeds clockwise.",
+  "officialTieBreak": "The rulebook also permits the youngest player to start instead.",
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/Amazonas-Rulbook.pdf",
+      "title": "Carcassonne: Amazonas — Z-Man Games rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup: The starting player; Gameplay; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zmangames.com/game/carcassonne-amazonas/. Finding: Start with whoever most recently took a boat ride. Play proceeds clockwise. Local source SHA-256: ac7b77dcb1315d248d45b81e014f5876c2db33fb076638613047c9a4ae87fcf5. The publisher product page links this eight-page English manual. The 2016 edition date comes from its copyright page, not the 2024 upload directory.",
+  "uncertainty": [
+    "The youngest-player option is an alternative, not explicitly a tie-break. No equal-recency tie is separately resolved.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

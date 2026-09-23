@@ -1,0 +1,40 @@
+{
+  "id": "planes",
+  "slug": "planes",
+  "gameName": "Planes",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English AEG rules, sixteen-page publisher PDF",
+  "firstPlayerRule": "The player who most recently traveled by plane starts. The reference sheet also permits a random choice.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2017/05/planes_rulebook-v5-2small.pdf",
+      "title": "Planes — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        16
+      ],
+      "location": "Setup step 2; Reference Sheet setup step 2; PDF pages 4, 16",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/destination-fun/planes/. Finding: The player who most recently traveled by plane starts. The reference sheet also permits a random choice. Local source SHA-256: a962e2c9167336775504a4f6f6a1af7b81d7fadb65da86274b425c5ac6dd278b. The random alternative appears in the reference sheet on page 16, although the longer setup text on page 4 only mentions air travel.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,45 @@
+{
+  "id": "clank-direwolf-en-2016",
+  "slug": "clank-direwolf-en-2016",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Clank!: A Deck-Building Adventure",
+  "aliases": [
+    "Clank",
+    "Clank!"
+  ],
+  "editionLabel": "English base-game rules, ©2016 Dire Wolf Digital",
+  "firstPlayerRule": "The sneakiest player starts. The rules also allow choosing randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play continues clockwise. Starting players put 3, 2, 1 and 0 Clank cubes into the Clank Area in turn order, using only the positions needed for your player count.",
+    "The rulebook does not define a measure for deciding who is sneakiest."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/EN_Clank_Rulebook.pdf",
+      "title": "Clank!: A Deck-Building Adventure — Dire Wolf Digital rules",
+      "publisher": "Dire Wolf Digital",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3,
+        11
+      ],
+      "location": "Setup step N and setup diagram; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Retrieved the English base-game rulebook through Dire Wolf's actual support-page PDF link. Visually inspected title, setup, diagram and ©2016 credits. Preserve the publisher's optional random choice and the starting noise allocation. Cached source: research\\source-files\\skellig-direwolf\\clank-a-deck-building-adventure-7a3bb8f9.pdf; SHA-256 a9a5538a28f97234e731388e5fbfa53394368b5b3e6aae5fdb40fa12e28df24c. Discovery: https://www.direwolfdigital.com/support/.",
+  "uncertainty": [
+    "Sneakiest is an undefined subjective criterion; no invented scoring system was added.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

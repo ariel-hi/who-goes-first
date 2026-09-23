@@ -1,0 +1,42 @@
+{
+  "id": "cat-cafe-alley-cat-en",
+  "slug": "cat-cafe-alley-cat-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Cat Café",
+  "aliases": [
+    "Cat Cafe"
+  ],
+  "editionLabel": "English Alley Cat Games press-pack rules, two folded sheets",
+  "firstPlayerRule": "Whoever most recently petted a cat starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": "If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starting player rolls the dice and chooses the first die. The other players choose clockwise before everyone marks items or passes.",
+    "If the game continues, the player to the left of the current starter begins the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1DceTHK7SWS2tu2Dujm0geBT5cEdSXdXQ/view",
+      "title": "Cat Café — Alley Cat Games rules",
+      "publisher": "Alley Cat Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 3; Dice Draft; Check for Completed Columns; credits. PDF pages are folded sheets",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Opened and visually inspected both sheets from the public press pack linked by Alley Cat Games. The setup explicitly uses petting a cat, and the starter makes the first sequential dice choice. No printing year was inferred. This exact press-pack manual is the authority for the answer, not a pre-release file or advertising copy. Cached source: research\\source-files\\alley\\cat-caf-de044f98.pdf; SHA-256 4b068782c774b4411f2b4789b2c96798d3f1b3f03b9a6746f3648b92e30e30f1. Discovery: https://www.alleycatgames.com/cat-cafe.",
+  "uncertainty": [
+    "No starting tie-break is stated beside the cat criterion.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

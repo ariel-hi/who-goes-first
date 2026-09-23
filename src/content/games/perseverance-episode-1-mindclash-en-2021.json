@@ -1,0 +1,50 @@
+{
+  "id": "perseverance-episode-1-mindclash-en-2021",
+  "slug": "perseverance-episode-1-mindclash-en-2021",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c8cae02886b2a5f2613cdcebb60d55290a0ab1271248087d34cd1faf8e9615d9",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Perseverance: Castaway Chronicles – Episode 1",
+  "aliases": [
+    "Perseverance Episode 1",
+    "Perseverance: Castaway Chronicles – Episodes 1 & 2"
+  ],
+  "editionLabel": "Mindclash English Episode 1 rules, copyright 2021",
+  "firstPlayerRule": "For a standalone multiplayer game of Episode 1, whoever was most recently on a boat goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Regular turns proceed clockwise.",
+    "Preliminary Settlement and Influence placement runs in reverse: start with the last player and proceed counterclockwise.",
+    "Episode 2 has a different criterion. This entry does not cover the separate Chronicle campaign or solo mode."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://mindclashgames.com/wp-content/uploads/2023/03/Perseverance_EP1_Official_Rulebook_websafe.pdf",
+      "title": "Perseverance: Castaway Chronicles – Episode 1 — Mindclash Games rules",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "8",
+        "9",
+        "30",
+        "31"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        5,
+        16
+      ],
+      "location": "Cover and two-episode scope; Before Starting Play; credits; PDF pages 1, 5, 16",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/perseverance-1-2. Finding: For a standalone multiplayer game of Episode 1, whoever was most recently on a boat goes first. Local source SHA-256: 49f279e7e2e27ee43a27e6a8d38c3574e24b2ee48d93ee7a1a50a500a9686b98. All three listed pages were visually inspected. The cover explicitly identifies two standalone episodes in the Episodes 1 & 2 box, so this and Episode 2 map to one inventory identity rather than two completed games. The reverse preliminary placement does not change the stated clockwise regular-turn order. No newer second-edition claim is inferred from the current product page. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the explicitly scoped main answer selects a multiplayer starter using personal history, without game-specific components. Optional variant instructions remain separate.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

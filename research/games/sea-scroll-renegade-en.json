@@ -1,0 +1,42 @@
+{
+  "id": "sea-scroll-renegade-en",
+  "slug": "sea-scroll-renegade-en",
+  "gameName": "Sea Scroll",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Renegade English rulebook, 2026 copyright",
+  "firstPlayerRule": "Whoever most recently went swimming takes the first turn. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The setup supports two to six players; its starting-player instruction does not change with player count."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Sea%20Scroll/SeaScroll_Rulebook_WEB.pdf",
+      "title": "Sea Scroll — Renegade Game Studios rules",
+      "publisher": "Renegade Game Studios",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup step 7 and Playing the Game; PDF pages 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://renegadegamestudios.com/sea-scroll/. Finding: Whoever most recently went swimming takes the first turn. Play then proceeds clockwise. Local source SHA-256: 4f497b5b7e2729b08a9f4c2e74a63547181e57476c4e18a7eb53942bc705f508. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

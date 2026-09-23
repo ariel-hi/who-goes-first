@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "dale-of-merchants-snowdale-en-6",
+    "gameName": "Dale of Merchants",
+    "aliases": ["Dale of Merchants: The Guild of Extraordinary Traders"],
+    "editionLabel": "Snowdale Design English original game, ©2021, rules file 6.0",
+    "firstPlayerRule": "Whoever woke earliest today starts. For consecutive games, one of the previous game's losers starts the next game.",
+    "clarifications": [
+      "Turns proceed clockwise, with an action phase followed by cleanup.",
+      "The consecutive-game instruction does not specify how to choose between multiple losing players.",
+      "This answer covers the original game's regular rules. Tournament rules and the later anniversary edition are separate."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the starting criterion is tied or unclear, agree to choose randomly among the eligible players. This is this site's suggested house rule.",
+    "pdfPages": [1,2,4,5,8],
+    "printedPages": ["cover","3","6–9","14–15"],
+    "location": "Game setup, upper right of printed page 7; Turn overview on page 8; team rules; credits",
+    "evidence": "The publisher's original-game page links this complete nine-PDF-page booklet. Setup selects today's earliest waking player and changes consecutive games to a losing player. The four-player team section changes seating, decks and shared stalls without giving a different opening selector. PDF spreads and printed page numbers were visually checked; copyright is 2021, despite the 2022 download directory. The original game's identity 176165 appears in the credits.",
+    "uncertainty": ["No initial tie-break or selection between multiple previous losers is specified."],
+    "portable": false,
+    "poolReason": "The complete rule includes a previous-game-dependent branch; retain it in the catalog rather than trimming it to fit the random mix."
+  },
+  {
+    "slug": "dawn-of-peacemakers-snowdale-en-campaign-1-1",
+    "gameName": "Dawn of Peacemakers",
+    "aliases": [],
+    "editionLabel": "Snowdale Design English campaign opening rules, ©2018, file 1.1 short",
+    "firstPlayerRule": "Whoever most recently avoided a conflict starts. The campaign rules also allow choosing the starter randomly.",
+    "clarifications": [
+      "Give that person the starting-player token. They begin the adventurer phase, with turns continuing clockwise.",
+      "When another round begins, pass the token to the right: the preceding round's last player starts next.",
+      "This answer covers the campaign's basic opening rules in the publisher's eleven-page excerpt. Follow additional scenario instructions; the separate Skirmish mode is not covered."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": null,
+    "pdfPages": [2,3,6,8,9,11],
+    "printedPages": ["2","3","6","8","9","11"],
+    "location": "Campaign setup step 12; Round overview; Adventurer phase; Status phase; credits",
+    "evidence": "The complete public PDF is an eleven-page opening excerpt, not the full campaign. Setup step 12 explicitly permits a random alternative. Pages 8–9 confirm the token holder actually takes the opening turn; page 11 passes the token counterclockwise for later rounds. Page 3 identifies ©2018 and BGG identity 221669. The publisher FAQ/errata at https://snowdaledesign.fi/dawn-of-peacemakers-faq/ was also read on 2026-09-23; its listed corrections do not replace these opening rules. Cached FAQ: dawn-faq.html.",
+    "uncertainty": ["The personal-history criterion has no separate tie-break; random selection is an official alternative."],
+    "portable": true,
+    "poolReason": "A portable opening-player criterion with an explicitly authorized random alternative. No detailed account of a conflict is needed; the interface also allows skipping."
+  },
+  {
+    "slug": "liberation-of-rietburg-kosmos-en-2020",
+    "gameName": "The Liberation of Rietburg",
+    "aliases": ["Legends of Andor: Liberation of Rietburg", "The Liberation of Rietburg Castle"],
+    "editionLabel": "Thames & Kosmos English rules, ©2020, code 691746-02-181019",
+    "firstPlayerRule": "The player considered most heroic takes the first turn.",
+    "clarifications": [
+      "The manual gives no scoring system for deciding who is most heroic.",
+      "This selects the first active player. Choosing a character and carrying out the setup instructions are separate steps.",
+      "The first game's recommended character selection does not assign the opening turn to a particular hero."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the group cannot agree, or would rather skip the comparison, agree to choose randomly. This is this site's suggested house rule.",
+    "pdfPages": [1,2,4,8],
+    "printedPages": ["1","2","4","8"],
+    "location": "Course of play, opening sentence; Game setup; credits",
+    "evidence": "The publisher's indexed manual opens Course of play with the most-heroic-player criterion. Page 2 recommends particular characters for the first game but does not select a starter. Page 8 identifies ©2020 Thames & Kosmos and code 691746-02-181019; the filename's different product number is not substituted for that printed code. No clockwise order is claimed because the inspected source does not state it.",
+    "uncertainty": ["The subjective criterion has no stated measurement or tie-break."],
+    "portable": true,
+    "poolReason": "Selects the actual opening player by a portable subjective criterion; no hero statistics or game components are required."
+  },
+  {
+    "slug": "zombie-dice-sjgames-en-2010",
+    "gameName": "Zombie Dice",
+    "aliases": [],
+    "editionLabel": "Steve Jackson Games English base rules, version 1.0, March 2010",
+    "firstPlayerRule": "The previous game's winner starts, or choose whoever delivers the most expressive cry of “Braaaaains!”.",
+    "clarifications": [
+      "These are alternative starting criteria; the manual does not present the vocal performance as a tie-break after a tied win.",
+      "The extra round for tied leaders resolves the end of the game. It is not an initial-start tie-break.",
+      "This answer covers the base game's version 1.0 rules."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If neither option settles the choice, or your group prefers another approach, agree to choose randomly. This is this site's suggested house rule.",
+    "pdfPages": [1,2],
+    "printedPages": [],
+    "location": "Unnumbered first page, introduction and final scoring; second-page credits",
+    "evidence": "Both pages of the publisher-hosted rules were read and inspected. The opening paragraph gives previous winner OR expressive brains call. The separate final-score tie round does not resolve starting-player ambiguity. Credits explicitly identify version 1.0, March 2010; later expansion advertisements on the reverse are not treated as a revised rule date. No turn direction is inferred from another dice game.",
+    "uncertainty": ["No initial tie-break or ranking procedure for equally expressive performances is specified."],
+    "portable": false,
+    "poolReason": "Preserve the complete previous-winner alternative in the catalog; do not strip the past-game-dependent branch to put the rule in the random mix."
+  },
+  {
+    "slug": "dino-hunt-dice-sjgames-en-2013",
+    "gameName": "Dino Hunt Dice",
+    "aliases": [],
+    "editionLabel": "Steve Jackson Games English rules, version 1.0, January 2013",
+    "firstPlayerRule": "The previous game's winner starts, or choose whoever makes the best dinosaur sound.",
+    "clarifications": [
+      "Play passes to the left. Remember the starter so everyone receives the same number of turns when the final round is completed.",
+      "The dinosaur-sound option is an alternative starting criterion, not a stated tie-break for a previous win.",
+      "The extra round between tied leaders decides the winner at the end, not who starts the game."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If neither option settles the choice, or your group prefers another approach, agree to choose randomly. This is this site's suggested house rule.",
+    "pdfPages": [1,2],
+    "printedPages": [],
+    "location": "Unnumbered first-page introduction; second-page Winning and credits",
+    "evidence": "The full two-page official PDF states previous winner OR best dinosaur noise and explicitly passes play leftward. Winning on page 2 explains equal turns and a final-score tie round. Credits identify version 1.0, January 2013. The start rule was checked independently of Zombie Dice and Dinosaur Island.",
+    "uncertainty": ["No initial tie-break or scoring system for dinosaur sounds is specified."],
+    "portable": false,
+    "poolReason": "The complete opening rule includes a previous-game winner; keep it searchable without removing that branch for the portable random mix."
+  },
+  {
+    "slug": "stars-are-right-sjgames-en-2009",
+    "gameName": "The Stars are Right",
+    "aliases": [],
+    "editionLabel": "Steve Jackson Games English rules, version 1.0, July 2009",
+    "firstPlayerRule": "Whoever has the next upcoming birthday goes first.",
+    "clarifications": [
+      "Setup describes the player's zodiac sign, then explicitly explains the choice in terms of whose birthday comes next.",
+      "Play continues clockwise after the opening turn."
+    ],
+    "officialTieBreak": null,
+    "houseFallback": "If the next birthday is shared or unclear, agree to choose randomly among the tied players. This is this site's suggested house rule.",
+    "pdfPages": [1,2,5],
+    "printedPages": ["cover","2","5"],
+    "location": "Setup, last paragraph on page 2; title and final credits",
+    "evidence": "The complete five-page Steve Jackson Games PDF was text-read; title, setup and credits were visually inspected. Setup explicitly equates its zodiac wording with next birthday and states clockwise order. Final credits identify the English edition's ©2009 Pegasus Spiele rights and rules version 1.0, July 2009. No separate astrological calculation or oldest/youngest tie-break is introduced.",
+    "uncertainty": ["The rulebook does not specify how to break a shared-birthday tie."],
+    "portable": true,
+    "poolReason": "An ordinary opening-player birthday comparison requiring no game components; no birth year is needed."
+  }
+]

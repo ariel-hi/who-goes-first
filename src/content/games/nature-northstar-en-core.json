@@ -1,0 +1,59 @@
+{
+  "id": "nature-northstar-en-core",
+  "slug": "nature-northstar-en-core",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c0379f7c82136c46d95f3dcbf3a3a5d9691ba7cae29ac6196e7edc116c7e7af4",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Nature",
+  "aliases": [
+    "Nature core game"
+  ],
+  "editionLabel": "NorthStar English core rules, 13-spread publisher PDF",
+  "firstPlayerRule": "In standard multiplayer play, whoever can make the most amazing animal noise goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group cannot agree on an animal noise or prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the snow leopard. After Preparation, its holder takes the first Adapting turn and later begins the clockwise Feeding turns.",
+    "After scoring a non-final round, pass the snow leopard to the left before the next round’s Preparation.",
+    "The Quick Play variant makes Adapting simultaneous; the five- and six-player rules use that variant. The snow leopard still identifies who starts Feeding."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/0_Nature_core_rulebook_12-27-2025.pdf?v=1772833201",
+      "title": "Nature — NorthStar Game Studio rules",
+      "publisher": "NorthStar Game Studio",
+      "printedPages": [
+        "4–5",
+        "6–7",
+        "8–9",
+        "10–11",
+        "14–15",
+        "18–19",
+        "22–23",
+        "back cover"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        12,
+        13
+      ],
+      "location": "Setup step 8; Preparation; Adapting and Reveal Traits; Feeding; Scoring; Quick Play Variant and 5–6 Player Rules; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 3, 4, 5, 6, 8, 10, 12, 13. Rendered spread 3 selects the most amazing animal noise. Spreads 4–6 distinguish common Preparation from the sequential default Adapting turns, beginning with the snow leopard holder; the shared Trait reveal happens after those turns. Spread 8 confirms clockwise Feeding starts with that holder. Spread 10 rotates the marker left after scoring and separately describes simultaneous Adapting in Quick Play and five/six-player games. Credits identify Dominic Crapuchettes's NorthStar game, matching inventory identity 330152, not Renature. The December 2025 filename is not treated as an explicit printing date. Publisher discovery URL: https://www.northstargames.com/pages/nature-resources. Local source SHA-256: 07558cae09ab6dc4e947ca7cd0442961296da1039d6eedeb6cfeb3e403dc07d4. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The standard multiplayer criterion selects an individual first Adapting actor without game-specific components. The simultaneous Quick Play variant is explicitly distinguished.",
+  "uncertainty": [
+    "The subjective animal-noise criterion has no stated judging method or initial-start tie-break.",
+    "This core-rule record does not cover the separate solo or module manuals.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "fliptoons-thunderworks-en-2025",
+  "slug": "fliptoons-thunderworks-en-2025",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "FlipToons",
+  "aliases": [
+    "Flip Toons"
+  ],
+  "editionLabel": "Thunderworks English rules, ©2025",
+  "firstPlayerRule": "Everyone begins together; whoever most recently watched a cartoon takes the first Market turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If the cartoon-watching comparison is unclear or your group prefers another approach, agree to choose the first Market player randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the first player card during setup. The opening Flip and Check Fame phases are simultaneous.",
+    "The Market phase then proceeds clockwise from the card holder. Each player may take up to two Hire or Dismiss actions.",
+    "If another round follows, pass the first player card clockwise during Cleanup. The card is not used in solo play."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/FT_Rulebook_10_reduced.pdf?v=1747929807",
+      "title": "FlipToons — Thunderworks Games rules",
+      "publisher": "Thunderworks Games",
+      "printedPages": [
+        "4–8",
+        "unnumbered Cleanup and Final Flip",
+        "unnumbered Solo Play Rules",
+        "unnumbered solo continuation and copyright"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        15,
+        16
+      ],
+      "location": "Setup step 7 and diagram; Flip; Check Fame; Market; Cleanup; Solo Setup; copyright",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 4, 5, 6, 7, 8, 11, 15, 16. Setup step 7 selects the latest cartoon viewer for the first player card. Rendered pages 6–7 explicitly make Flip and Check Fame simultaneous; page 8 starts individual clockwise Market turns with the card holder. Cleanup rotates the card only when another round follows. The repeated Final Flip tie-break concerns the eventual winner, not the initial card holder. Solo Setup removes the card entirely. The copyright is ©2025. Publisher discovery URL: https://thunderworksgames.com/products/fliptoons-game. Local source SHA-256: 4eb194ddfa83539c0de562bb52f52c3f00072ace2fc218aa9d0ca95c1eca56f2.",
+  "uncertainty": [
+    "The source gives no tie-break for assigning the initial first player card.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

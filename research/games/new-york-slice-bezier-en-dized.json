@@ -1,0 +1,83 @@
+{
+  "id": "new-york-slice-bezier-en-dized",
+  "slug": "new-york-slice-bezier-en-dized",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "New York Slice",
+  "aliases": [],
+  "editionLabel": "Bezier Games English base rules, official Dized reference",
+  "firstPlayerRule": "The player who most recently won any game is the first Slicer. After that player divides the pizza, their left-hand neighbor chooses the first portion.",
+  "officialTieBreak": null,
+  "houseFallback": "If the latest-win criterion does not select one player, agree to choose the initial Slicer randomly. This is a house rule.",
+  "clarifications": [
+    "The Slicer begins the round by revealing a pizza and Special, then dividing them into portions.",
+    "Portion choices proceed clockwise from the Slicer's left. The Slicer receives the last portion.",
+    "The player on the Slicer's left becomes the Slicer for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/rwQc121gR7aI5bEChE_YuA/determine-first-slicer",
+      "title": "New York Slice — Determine First Slicer",
+      "publisher": "Bezier Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Determine First Slicer section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/cBoMDLG3SWug1aUJ4404zA/1-start-each-round",
+      "title": "New York Slice — 1. Start Each Round",
+      "publisher": "Bezier Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "1. Start Each Round section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/MHVNFP1pQGqaMRsOr1CTCg/2-divide-pizzaspecial-into-portions",
+      "title": "New York Slice — 2. Divide Pizza+Special Into Portions",
+      "publisher": "Bezier Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "2. Divide Pizza+Special Into Portions section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/1MlynBRsRYa_Gx3n-JJ4sw/3-choose-a-portion",
+      "title": "New York Slice — 3. Choose A Portion",
+      "publisher": "Bezier Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "3. Choose A Portion section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/xXlyufeSRYedeeL6RmXdpw/4-next-player-chooses",
+      "title": "New York Slice — 4. Next Player Chooses",
+      "publisher": "Bezier Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "4. Next Player Chooses section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/xtKvCxbzTCe3SeAmrvPAkg/5-next-round-and-new-slicer",
+      "title": "New York Slice — 5. Next Round & New Slicer",
+      "publisher": "Bezier Games, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "5. Next Round & New Slicer section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read all 8 cached rule-section bodies for this game, including relevant variants. Its index identifies Bezier Games and explicitly describes these as publisher-maintained official rules. Determine First Slicer says last to win any game, not the previous New York Slice winner specifically. Round setup, strategic slicing and first portion selection are distinct; the Slicer's left neighbor chooses first. Two-player setup removes specific slices without replacing that order. Source snapshots: https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/new-york-slice SHA-256 59a5ccc978dfa7ffc2e5ca814953d0e2a50c0ca299841c674d89336e776c1b79; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/tHX98373Rr-ji7bTk5FnVQ/2-players-slices-to-use SHA-256 07f1a79e9d8c3c0219e27ebdb406a36d7a8fea3f3b16aff0b7815c87c7984d86; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/rwQc121gR7aI5bEChE_YuA/determine-first-slicer SHA-256 caef37c1b70b4dd34006ff5beab38c2b4a1e3d876161bdfdc4b88e66d9b95339; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/uFNdJ0s2SDSDsB_DRsic0A/gameplay-overview SHA-256 530a4a3774fe5f451d614f71b569a00c9b93096438dd82366863ab5f67c2d8c1; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/cBoMDLG3SWug1aUJ4404zA/1-start-each-round SHA-256 cae35f89d6728388a122c3d70a2890bb5fd826c40d253fa146b4b6373aed24bb; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/MHVNFP1pQGqaMRsOr1CTCg/2-divide-pizzaspecial-into-portions SHA-256 f9a18b54bf7c22a40b04cad755119a0ee7162df03433d4c02592e653d88624ad; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/1MlynBRsRYa_Gx3n-JJ4sw/3-choose-a-portion SHA-256 75443646ba073661ef559002e7ddd2f62c8a2d0734e6738e8024e34d39d117ac; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/xXlyufeSRYedeeL6RmXdpw/4-next-player-chooses SHA-256 724f89332fc3ade4a76a5b62f3af01348888c0a4a8db461d6145c0b2deeb9a7d; https://rules.dized.com/game/kw7wMxkER0yVvQ5ml8bm5w/xtKvCxbzTCe3SeAmrvPAkg/5-next-round-and-new-slicer SHA-256 6e2b8edc882ecb6022dccc49dc5a32154cf294e7fa254f6eba6a99c27afaac1f.",
+  "uncertainty": [
+    "No tie-break for the latest game win is supplied alongside the Slicer criterion.",
+    "This record covers the named official online reference; other editions may differ."
+  ]
+}

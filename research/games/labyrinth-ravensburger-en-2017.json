@@ -1,0 +1,42 @@
+{
+  "id": "labyrinth-ravensburger-en-2017",
+  "slug": "labyrinth-ravensburger-en-2017",
+  "gameName": "Labyrinth",
+  "aliases": [
+    "The aMAZEing Labyrinth",
+    "The Amazing Labyrinth"
+  ],
+  "language": "en",
+  "editionLabel": "Ravensburger English board-game rules, copyright 2017, file 234981",
+  "firstPlayerRule": "Whoever most recently went on a treasure hunt starts. Turns then proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "On a turn, first shift the maze, then move your playing piece."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://product-files.ravensburger.cloud/manuals/663916.pdf",
+      "title": "Labyrinth — Ravensburger rules",
+      "publisher": "Ravensburger",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Cover identifies the board game; How to Play on the second unnumbered PDF page; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/family-games/labyrinth-26448. Finding: Whoever most recently went on a treasure hunt starts. Turns then proceed clockwise. Local source SHA-256: 5955e31010bfd76839bc18b4745ec2b9ab013c86d69637b141295dc7047fb727. Both rendered pages were inspected. The actual linked English rulebook gives the treasure-hunt criterion. A youngest-player instruction from another edition has not been substituted. The source is the board game, not the card game or a themed Labyrinth title. The second page shows copyright 2017 and file code 234981.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

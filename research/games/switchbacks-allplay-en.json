@@ -1,0 +1,36 @@
+{
+  "id": "switchbacks-allplay-en",
+  "slug": "switchbacks-allplay-en",
+  "gameName": "Switchbacks",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "firstPlayerRule": "Whoever went hiking most recently goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-switchbacks-rulebook-link.pdf",
+      "title": "Switchbacks — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup step 4; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/switchbacks. Finding: Whoever went hiking most recently goes first. Local source SHA-256: 8f50d2ff24743123040fa9da7cc7ff09d6c337158b412f19225182fadd3a5bf7. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

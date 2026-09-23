@@ -1,0 +1,43 @@
+{
+  "id": "chateau-roquefort-rio-grande-en",
+  "slug": "chateau-roquefort-rio-grande-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3f9138099f9dd687508f7e138e5b949aa757d3bebbc79e2a8fb1510059d48bd2",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Chateau Roquefort",
+  "aliases": [
+    "Château Roquefort"
+  ],
+  "editionLabel": "English rules · folded sheet with 2022 copyright",
+  "firstPlayerRule": "The group chooses a starting player using any method it prefers.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns then proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/Softproof_10036687-0001-RGG-Chateau-Roquefort-englishrulesanna.pdf",
+      "title": "Chateau Roquefort — Rio Grande Games rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Playing the Game on panel 2; edition imprint on panel 4; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/chateau-roquefort/. Finding: The group chooses a starting player using any method it prefers. Local source SHA-256: 9030c6b4d5fc49b54be593adc5970f3a91145118352dee278a123d6045ed9ee5. The visible imprint says 2022 even though the publisher URL contains a 2013 upload directory. The edition label uses the file's imprint, not the URL date. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The manual leaves selection to the group without providing a distinct criterion for the random mix. Its visible 2022 imprint was checked independently of the URL's 2013 directory.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "paint-the-roses-north-star-en",
+  "slug": "paint-the-roses-north-star-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Paint the Roses",
+  "aliases": [],
+  "editionLabel": "North Star English base rules, 20-page publisher PDF",
+  "firstPlayerRule": "Whoever most recently watered a plant goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Give that player the Greenhouse. They begin by choosing and placing a Shrub tile; the group then contributes clues and guesses.",
+    "At the end of a continuing turn, replenish and pass the Greenhouse to the player on the left, who becomes the active player.",
+    "The two-player rules and Expert variation change other parts of play or setup, while retaining this starting-player criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/1_Paint_the_Roses_Rulebook_2021.pdf?v=1649761397",
+      "title": "Paint the Roses — North Star Games rules",
+      "publisher": "North Star Games",
+      "printedPages": [
+        "6",
+        "8",
+        "9",
+        "13",
+        "15",
+        "19",
+        "unnumbered player aid"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        8,
+        9,
+        13,
+        15,
+        19,
+        20
+      ],
+      "location": "Setup step 7; How to Play; Place a Tile and Place Clue Tokens; Moving the Queen; Two-Player Rules and Expert Variation; credits; player aid",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 6, 8, 9, 13, 15, 19, 20. Rendered setup step 7 chooses the latest person to water a plant and gives them the Greenhouse. Pages 8–9 confirm an individual active-player tile placement before the cooperative clue and guessing phases. The player aid passes the Greenhouse left after Replenish, provided the game continues. The two-player and Expert changes do not alter setup step 7. The 2021 filename is not asserted as a printing date because the credits do not establish it. Publisher discovery URL: https://www.northstargames.com/products/paint-the-roses. Local source SHA-256: 3c791f803bce8500a2f26959eb9765977214156553c5702fbde43fc7c7ed199a.",
+  "uncertainty": [
+    "No initial-start tie-break is stated alongside the watering criterion.",
+    "The linked manual does not identify a printing year.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

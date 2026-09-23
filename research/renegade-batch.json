@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "junk-orbit-renegade-en",
+    "gameName": "Junk Orbit",
+    "sourceHint": "junk-orbit-",
+    "editionLabel": "Renegade English rulebook, 2023 copyright, with solo mode",
+    "pages": [
+      6,
+      11,
+      12
+    ],
+    "printedPages": [
+      6,
+      11,
+      12
+    ],
+    "location": "How to Play opening paragraph; Solo Mode setup and Activating Ships",
+    "firstPlayerRule": "The player who most recently took out the garbage goes first. Continue clockwise.",
+    "officialTieBreak": "If nobody has done so, the rulebook suggests racing to the nearest bin to take out the garbage.",
+    "clarifications": [
+      "This opening rule applies to multiplayer play. In solo mode, one person controls the fleet and may activate any of their ships on each turn."
+    ],
+    "uncertainty": [
+      "The fallback is for nobody having taken out the garbage; the rule does not separately resolve equally recent garbage trips."
+    ],
+    "evidenceNotes": "The 16-page publisher download is named JunkOrbit2; page 15 carries a 2023 copyright. The official fallback is a suggestion in parentheses, not an instruction added by this site."
+  },
+  {
+    "slug": "sea-scroll-renegade-en",
+    "gameName": "Sea Scroll",
+    "sourceHint": "sea-scroll-",
+    "editionLabel": "Renegade English rulebook, 2026 copyright",
+    "pages": [
+      2,
+      4
+    ],
+    "printedPages": [
+      2,
+      4
+    ],
+    "location": "Setup step 7 and Playing the Game",
+    "firstPlayerRule": "Whoever most recently went swimming takes the first turn. Play then proceeds clockwise.",
+    "clarifications": [
+      "The setup supports two to six players; its starting-player instruction does not change with player count."
+    ]
+  },
+  {
+    "slug": "bargain-quest-renegade-en",
+    "gameName": "Bargain Quest",
+    "sourceHint": "bargain-quest-",
+    "editionLabel": "English base-game rulebook, 112-item-card edition",
+    "pages": [
+      4,
+      6,
+      8,
+      12
+    ],
+    "printedPages": [
+      3,
+      5,
+      7,
+      11
+    ],
+    "location": "Setup step 3; Supply, Shopping and Upgrade steps",
+    "firstPlayerRule": "Give the initial quest token to the player who most recently paid cash for goods or a service.",
+    "clarifications": [
+      "The first Supply step uses a shared draft: everyone chooses a card before passing the remaining cards left. The token does not give its holder the first choice of every phase.",
+      "Shopping order depends on the displays. Equal appeal is broken by total displayed price, then clockwise order from the quest-token holder. The last shop to receive a hero takes the token.",
+      "The current token holder starts the Upgrade step, followed by the other players clockwise."
+    ],
+    "evidenceNotes": "Downloaded from the creators’ official Game Rules page, which links the base game and expansions separately. The visible component list identifies the 112-item-card edition; no publication year is inferred from the URL."
+  }
+]

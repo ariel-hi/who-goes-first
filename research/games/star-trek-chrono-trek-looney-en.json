@@ -1,0 +1,40 @@
+{
+  "id": "star-trek-chrono-trek-looney-en",
+  "slug": "star-trek-chrono-trek-looney-en",
+  "gameName": "Star Trek Chrono-Trek",
+  "aliases": [
+    "Chrono-Trek"
+  ],
+  "language": "en",
+  "editionLabel": "Looney Labs English Star Trek Chrono-Trek rules",
+  "firstPlayerRule": "A player whose character has more difficulty pips than every other character goes first. Otherwise, whoever most recently watched a Star Trek episode begins.",
+  "officialTieBreak": "If nobody has uniquely the most character pips, use the most recent Star Trek episode viewer.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Pips are the difficulty dots beneath a character's name, not the player's experience level."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/ChronoTrek%20Rulesheet.pdf",
+      "title": "Star Trek Chrono-Trek — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Difficulty Levels; Who Goes First?; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/star-trek-chrono-trek. Finding: A player whose character has more difficulty pips than every other character goes first. Otherwise, whoever most recently watched a Star Trek episode begins. Local source SHA-256: 0f9cef7cfb74529fcbc36f2dc0dd55bf5d25b163d4cb03d6196f32dc6cddf1ff. The image-only sheet was inspected at increased resolution. The first condition requires more pips than any other character; the episode-viewing condition applies otherwise. A film-viewing rule was not substituted.",
+  "uncertainty": [
+    "The instruction gives no further tie-break for equal viewing times, or fallback when nobody has watched an episode.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,38 @@
+{
+  "id": "kinoko-helvetiq-en",
+  "slug": "kinoko-helvetiq-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "45c8a5f3b7bc1f3b17fc918b106f3b47e75d56000eacf77467507c406f20fb12",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Kinoko",
+  "aliases": [],
+  "editionLabel": "Helvetiq multilingual rules, English sheet",
+  "firstPlayerRule": "Whoever most recently picked a mushroom starts. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "For later rounds, the player to the left of whoever announced the previous round's end starts the new round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://helvetiq.com/media/hexaattachment/products/attachments/Kinoko_Rules_Web.pdf",
+      "title": "Kinoko — Helvetiq rules",
+      "publisher": "Helvetiq",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "English sheet: Gameplay; End of the round; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://helvetiq.com/intl/kinoko. Finding: Whoever most recently picked a mushroom starts. Turns proceed clockwise. Local source SHA-256: 076fb00bb2584132757fa35b5b45ebd371937f6ec00f1c8a3946693a6de8d7c4. The full rendered English sheet, PDF page 3, was inspected. Picking a mushroom is the initial criterion; eating mushrooms is not stated. The later-round instruction and end-of-game tie-break were not substituted for the initial rule. No printed page number or publication year is shown on the sheet. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: a standalone criterion identifies the starter without game-specific components.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

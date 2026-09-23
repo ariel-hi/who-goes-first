@@ -1,0 +1,76 @@
+{
+  "id": "volcano-fiesta-caldera-looney-en-dized",
+  "slug": "volcano-fiesta-caldera-looney-en-dized",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Volcano",
+  "aliases": [
+    "Volcano Fiesta Caldera"
+  ],
+  "editionLabel": "Looney Labs English Fiesta Caldera variant, official Dized reference",
+  "firstPlayerRule": "Whoever has traveled closest to molten lava goes first. The rules also suggest choosing randomly as an alternative.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The comparison is closeness to molten lava, rather than the most recent volcano visit.",
+    "A turn can include multiple cap moves, ending when an eruption occurs. Under this setup, the opening move cannot capture more than one piece.",
+    "This reference identifies its rules as the Fiesta Caldera version of Volcano, with a central empty space and eight translucent pyramid colors. It differs from the original game's setup and victory condition."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/zASKRflpT_2uSW16Ox6UWQ/who-starts",
+      "title": "Volcano — Who Starts",
+      "publisher": "Looney Labs, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Who Starts section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/5Jm-6JY2Sx6hx9qN1FTDOg/moving-caps",
+      "title": "Volcano — Moving Caps",
+      "publisher": "Looney Labs, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Moving Caps section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/toN5irmbQUSz2vukYlxtxQ/equipment",
+      "title": "Volcano — Equipment",
+      "publisher": "Looney Labs, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Equipment section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/2x3J44JrTQKLMex0I-0XEA/setup",
+      "title": "Volcano — Setup",
+      "publisher": "Looney Labs, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Setup section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/5u_aUTvkSyCqxrJxECGByg/historical-notes",
+      "title": "Volcano — Historical Notes",
+      "publisher": "Looney Labs, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Historical Notes section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read all 6 cached rule-section bodies for this game, including relevant variants. Its index identifies Looney Labs and explicitly describes these as publisher-maintained official rules. Who Starts states proximity to molten lava, then offers a random method because of the initial capture limitation. Equipment and Setup identify the eight-color, central-Caldera configuration. Historical Notes explicitly calls it the Fiesta Caldera variant, so this is not silently labeled the original rules. Source snapshots: https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/volcano SHA-256 6ee57ab311baefd65e3abea80a0b0e296e238fdbc5a80e483cdfe51756b1c537; https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/toN5irmbQUSz2vukYlxtxQ/equipment SHA-256 e6294c929e4812eee4be2e10a4cba2dd709476c2bf27d452289d1656e79a3369; https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/2x3J44JrTQKLMex0I-0XEA/setup SHA-256 7814f9b40b6675107fe3b071761ef8fb8d93b3ba5494a8c6790ac08f4c910345; https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/zASKRflpT_2uSW16Ox6UWQ/who-starts SHA-256 9dc7ac80fa3c158278db8346b0c6d71102a3da65544dd4f8fbff1f4522cee0a0; https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/7i7YbjwUTPKrK2clSnS7NQ/erupting SHA-256 c9630ce3d80839fca7b66f49795f69560f8195ca39d924ebb040682e9fbc932b; https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/5Jm-6JY2Sx6hx9qN1FTDOg/moving-caps SHA-256 0ee132598f55f6f042c780c1c724e87ec7111a508e7267adf87571c1f0bffa6f; https://rules.dized.com/game/q8legYypSnCNEvVWTldWxQ/5u_aUTvkSyCqxrJxECGByg/historical-notes SHA-256 89a16b50d5a8496485900b62ce7436afd975b69e0ec69add727b1e0b2aaa9857. Visual review correction: the official random alternative remains in the main answer; the duplicate house-rule fallback is removed to avoid mislabeling publisher instructions.",
+  "uncertainty": [
+    "No distance tie-break is supplied alongside the criterion; random choice is separately suggested.",
+    "This record covers the named official online reference; other editions may differ."
+  ]
+}

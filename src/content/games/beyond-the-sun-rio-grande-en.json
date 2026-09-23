@@ -1,0 +1,38 @@
+{
+  "id": "beyond-the-sun-rio-grande-en",
+  "slug": "beyond-the-sun-rio-grande-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b58ba033b1484f5510fc351b6c9dbd6942427b8148eea70d246a5a4891503375",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Beyond the Sun",
+  "aliases": [],
+  "editionLabel": "English base game · combined rules and setup sheet",
+  "firstPlayerRule": "The person who most recently went to space starts.",
+  "officialTieBreak": "Choose randomly if there is a tie.",
+  "houseFallback": null,
+  "clarifications": [
+    "The instruction is on the setup sheet appended to this 26-page combined PDF. The reverse-side changes for two and three players do not replace it."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-Combined-Rules.pdf",
+      "title": "Beyond the Sun — Rio Grande Games rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        25,
+        26
+      ],
+      "location": "Setup for 4 players, step 13; reverse-side setup changes; PDF pages 25, 26",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/beyond-the-sun/. Finding: The person who most recently went to space starts. Local source SHA-256: 3495b2c7ec9e2ea50de64d4a37c14a1b89d286dc581fcb620391af27309963b9. The product's separate 24-page main rulebook omits the setup sheet. This record cites the publisher-hosted combined file, found through primary-source search, whose final two pages were both inspected. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The combined file's setup step 13 supplies the space-travel criterion and official random tie-break. Both sides of the setup sheet were checked; two- and three-player changes preserve it.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

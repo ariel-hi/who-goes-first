@@ -1,0 +1,54 @@
+{
+  "id": "joan-of-arc-orleans-capstone-en-2022",
+  "slug": "joan-of-arc-orleans-capstone-en-2022",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c79edb6a1f9382f8dd407620ce644b0f73920214661e11cf960d0f0d69dcc041",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Joan of Arc: Orléans Draw & Write",
+  "aliases": [
+    "Joan of Arc Orleans Draw and Write",
+    "Orleans Draw & Write"
+  ],
+  "editionLabel": "Capstone English rules, ©2022, January 2023 download",
+  "firstPlayerRule": "Choose the multiplayer starting player randomly and give them the Follower bag.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The bag holder draws the round’s Followers, then chooses the first Follower and takes its action. Choices continue clockwise.",
+    "The extra Followers give the starter three actions in a two-player round, or two actions with three to five players. The other players each get two or one, respectively.",
+    "After the round’s actions are finished, pass the bag clockwise for the next round. Refill an empty bag as instructed before passing it; the final emptying ends the game instead.",
+    "In solo play, the human starts and Joan takes the second turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://capstone-games.com/cdn/shop/files/Joan-of-Arc-Draw-Write-Rulebook-1-24-2023.pdf?v=17969137148742989073",
+      "title": "Joan of Arc: Orléans Draw & Write — Capstone Games rules",
+      "publisher": "Capstone Games",
+      "printedPages": [
+        "1",
+        "2",
+        "8",
+        "9",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        8,
+        9,
+        12
+      ],
+      "location": "Setup step 3; Course of the Game; Solo Game; Joan’s actions; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2, 8, 9, 12. Rendered page 1 assigns the bag randomly. Page 2 begins clockwise choices with its holder, distinguishes two-player and three-to-five-player extra actions, and rotates the bag after resolving/refilling the round. Page 8 explicitly says the human begins and Joan goes second in solo; page 9 clarifies the automated opponent's actions. Page 12 credits are ©2022, while the publisher's linked file is dated January 24, 2023. These dates are kept distinct. This draw-and-write game is not the original Orléans. Publisher discovery URL: https://capstone-games.com/products/joan-of-arc-orleans-draw-write. Local source SHA-256: 8c11394699cff9eaaefe3b6dc294e116d80438b68f44a373bee3231ea89d778d. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. Official random selection is already the site's basic picker behavior; it is not a distinct portable criterion for the random-rule mix.",
+  "uncertainty": [
+    "The cited setup specifies random selection without prescribing a particular randomization method.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

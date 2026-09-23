@@ -1,0 +1,40 @@
+{
+  "id": "coco-crazy-ravensburger-de",
+  "slug": "coco-crazy-ravensburger-de",
+  "gameName": "Coco Crazy",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Ravensburger German rules, article 20 902 6; English summary",
+  "firstPlayerRule": "Whoever makes the cheekiest monkey face goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": "This is an English summary of the German section of the multilingual rulebook. The rule does not specify how to judge the faces.",
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/20902%20anl%202155853.pdf?ossl=pds_text_Spielanleitung",
+      "title": "Coco Crazy — Ravensburger rules",
+      "publisher": "Ravensburger",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        4
+      ],
+      "location": "German cover and opening-play instruction on page 4; PDF pages 1, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/service/game-instructions. Finding: Whoever makes the cheekiest monkey face goes first. Local source SHA-256: e9f2fc36eb5d77a0f77eab7bfbe71f68117a9ab714627c0ffef58b28bc0a61c4. The rendered German cover and page 4 were inspected. The rule refers specifically to a monkey grimace. The Italian text instead refers to a monkey sound, so the different language instructions have not been merged into a universal criterion. No clockwise direction is inferred from the German word reihum.",
+  "uncertainty": [
+    "Other language sections use different wording; this record applies only to the identified German instruction.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

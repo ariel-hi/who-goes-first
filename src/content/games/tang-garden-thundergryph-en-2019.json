@@ -1,0 +1,52 @@
+{
+  "id": "tang-garden-thundergryph-en-2019",
+  "slug": "tang-garden-thundergryph-en-2019",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "44a4da32bf102b29de4fe68ef1e7b69f469fe35acf974bbfdce88489ea5f2bb0",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Tang Garden",
+  "aliases": [],
+  "editionLabel": "ThunderGryph English retail rules, ©2019",
+  "firstPlayerRule": "The most recent visitor to China goes first. If nobody has visited, choose randomly.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give the starting player the engineer token. Turns proceed clockwise.",
+    "Random selection when nobody has visited China is part of the official rule.",
+    "This criterion selects the multiplayer starter. The Yin & Yang solo variant has its own setup and turn sequence."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2022/08/tang-garden-retail-rulebook_en_290x290.pdf",
+      "title": "Tang Garden — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [
+        "1",
+        "2",
+        "3",
+        "9",
+        "10",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        12
+      ],
+      "location": "Setup step 10; Order of Play; Yin & Yang solo variant; credits; PDF pages 1, 2, 3, 9, 10, 12",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/tang-garden/. Finding: The most recent visitor to China goes first. If nobody has visited, choose randomly. Local source SHA-256: 82aa045bcf23a7f04aff8caea6fbf6c6f2180c246bb1d278c4d5e58f442d814c. The publisher product supplies the English retail PDF; the final page shows ©2019. The random alternative covers nobody having visited, not a stated tie between simultaneous visitors. Scoring tie-breaks on page 9 are unrelated to starting order. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the main personal-history criterion selects the actual starter without requiring game components. Multiplayer scope and official alternatives remain explicit.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

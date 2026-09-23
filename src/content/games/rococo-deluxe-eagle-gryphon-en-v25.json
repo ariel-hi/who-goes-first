@@ -1,0 +1,53 @@
+{
+  "id": "rococo-deluxe-eagle-gryphon-en-v25",
+  "slug": "rococo-deluxe-eagle-gryphon-en-v25",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "45a1de986729b7e2323bb63ef36c6b8435bd9562f02347f6884d88da280f6594",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Rococo: Deluxe Edition",
+  "aliases": [
+    "Rococo Deluxe"
+  ],
+  "editionLabel": "Eagle-Gryphon English Deluxe rules, v25, ©2021",
+  "firstPlayerRule": "In multiplayer, whoever last used a needle and thread takes the first action turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Give that player the gold thimble Start Player token. Action turns proceed clockwise.",
+    "Before the action phase, players choose their Employee cards simultaneously.",
+    "In later rounds, the player who acquired the Queen’s Favor takes the Start Player token. If nobody acquired it, the starting player stays the same.",
+    "In the Madame du Barry solo mode, Madame du Barry receives the Start Player token."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/11XzaV_gCLn1mPTkuNBr5_XmDaFfdytIi/view",
+      "title": "Rococo: Deluxe Edition — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "4",
+        "6",
+        "7",
+        "17",
+        "20"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        7,
+        17,
+        20
+      ],
+      "location": "Setup step 11; round preparation; action phase; Madame du Barry solo setup; credits; PDF pages 4, 6, 7, 17, 20",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/rococo-deluxe. Finding: In multiplayer, whoever last used a needle and thread takes the first action turn. Local source SHA-256: 43a0d68b0c134bd53bd97ce40c8d4844895d47ea96832f3fd0eb1b34aff6b38d. The publisher product links the public rulebook folder. The inspected file is Rococo Deluxe Rules v25.pdf; its credits show ©2021. This record is for Deluxe, not the original Rococo. The solo setup cross-reference has a numbering discrepancy; the actual base starting instruction is setup step 11. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: this personal-history criterion selects the first multiplayer action turn without game-specific components.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

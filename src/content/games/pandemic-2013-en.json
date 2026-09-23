@@ -1,0 +1,44 @@
+{
+  "id": "pandemic-2013-en",
+  "slug": "pandemic-2013-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "fbc8b14c1244f2646c1b8d56ccf8c62aa61494baae21570c696a9fd08671dad9",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Pandemic",
+  "aliases": [
+    "Pandemic base game"
+  ],
+  "editionLabel": "English base game · copyright 2013, eight-page rulebook",
+  "firstPlayerRule": "Look at the City cards in your opening hands. Whoever holds the card showing the largest city population takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If the printed populations do not settle it, your group can agree to choose randomly. This is an optional house rule.",
+  "clarifications": [
+    "Compare individual City cards, not each hand’s combined population or the players’ home cities.",
+    "Use the population printed on the cards. This entry does not cover Pandemic Legacy or Hot Zone."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/Pandemic_Rulebook.pdf",
+      "title": "Pandemic — English base-game rulebook",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "3",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        8
+      ],
+      "location": "Page 3, Begin play (step 6); page 8, credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Publisher product page links the eight-page PDF. Visually checked setup step 6 on page 3; it uses the largest City-card population. Page 8 has copyright 2013. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\pandemic-734c1439.pdf; SHA-256 f1d93b126f13d53decea29ef04a8cb549687b36de5ab0b479567216f2d8a8a61. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The opening City cards determine the starter, using an individual printed population, not the players' home cities.",
+  "uncertainty": [
+    "The starting instruction supplies no population tie-break."
+  ]
+}

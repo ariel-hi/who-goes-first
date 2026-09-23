@@ -1,0 +1,22 @@
+---
+import Picker from './Picker';
+import type { Mode } from '../lib/preferences';
+interface Props { initialMode?: Mode; balloonEnabled?: boolean }
+const { initialMode = 'quick', balloonEnabled = true } = Astro.props;
+---
+<div data-picker-shell>
+  <Picker client:load initialMode={initialMode} balloonEnabled={balloonEnabled} />
+  <p class="error" data-picker-startup-error role="alert" hidden>The picker couldn’t finish loading. No player has been selected. <a href={Astro.url.pathname}>Reload this page</a> to try again.</p>
+</div>
+<script>
+  // Independent of React and its dependencies, so a failed island download
+  // leaves an actionable message instead of an endless loading label.
+  document.querySelectorAll<HTMLElement>('[data-picker-shell]').forEach(shell => {
+    const island = shell.querySelector('astro-island');
+    const notice = shell.querySelector<HTMLElement>('[data-picker-startup-error]')!;
+    const timer = window.setTimeout(() => {
+      if (island?.hasAttribute('ssr')) notice.hidden = false;
+    }, 8000);
+    island?.addEventListener('astro:hydrate', () => { clearTimeout(timer); notice.hidden = true; }, { once: true });
+  });
+</script>

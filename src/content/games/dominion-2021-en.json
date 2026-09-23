@@ -1,0 +1,45 @@
+{
+  "id": "dominion-2021-en",
+  "slug": "dominion-2021-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6d47c32b1dea2383ab94d83476c14509084be7918072c2233fae0e4b46692bff",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Dominion",
+  "aliases": [
+    "Dominion second edition",
+    "Dominion 2nd edition"
+  ],
+  "editionLabel": "English second edition · 2021 rulebook revision",
+  "firstPlayerRule": "For a fresh game, choose the starting player randomly. If you just played Dominion and it was not a tie, the previous winner goes last; the player to their left starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rematch exception applies only after a game without a tie; otherwise use the ordinary random selection instruction.",
+    "Random selection for a fresh game is an official instruction, not a house rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf",
+      "title": "Dominion — Second Edition rulebook, 2021 revision",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        16
+      ],
+      "location": "Preparation on page 4; second-edition credits and copyright on page 16; document footer identifies the 2021 revision",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read the publisher’s second-edition PDF and visually checked page 4. Preparation gives random selection and the preceding-game winner exception. The file’s 2016 URL is not its revision date. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\dominion-3508abb0.pdf; SHA-256 4c109459b5253acc7611bb2c14f98a90a4f60f7cce3311bfab6cbac7ab3e8ac9. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. Fresh games start randomly; the rematch branch depends on the preceding Dominion result. The complete answer is catalog-only.",
+  "uncertainty": [
+    "Do not confuse the end-game scoring tie-break with this setup exception."
+  ]
+}

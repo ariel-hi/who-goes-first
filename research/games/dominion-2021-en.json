@@ -1,0 +1,43 @@
+{
+  "id": "dominion-2021-en",
+  "gameName": "Dominion",
+  "aliases": [
+    "Dominion second edition",
+    "Dominion 2nd edition"
+  ],
+  "editionLabel": "English second edition · 2021 rulebook revision",
+  "firstPlayerRule": "For a fresh game, choose the starting player randomly. If you just played Dominion and it was not a tie, the previous winner goes last; the player to their left starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rematch exception applies only after a game without a tie; otherwise use the ordinary random selection instruction.",
+    "Random selection for a fresh game is an official instruction, not a house rule."
+  ],
+  "internalEvidence": "Read the publisher’s second-edition PDF and visually checked page 4. Preparation gives random selection and the preceding-game winner exception. The file’s 2016 URL is not its revision date.",
+  "uncertainty": [
+    "Do not confuse the end-game scoring tie-break with this setup exception."
+  ],
+  "slug": "dominion-2021-en",
+  "language": "en",
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf",
+      "title": "Dominion — Second Edition rulebook, 2021 revision",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Preparation, page 4; document footer identifies the 2021 revision",
+      "checkedAt": "2026-09-22"
+    }
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

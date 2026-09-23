@@ -1,0 +1,41 @@
+{
+  "id": "art-robbery-helvetiq-en",
+  "slug": "art-robbery-helvetiq-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Art Robbery",
+  "aliases": [],
+  "editionLabel": "Helvetiq English rules, undated two-page sheet with Coiledspring Games UK importer",
+  "firstPlayerRule": "Whoever visited a museum most recently starts the first raid.",
+  "officialTieBreak": null,
+  "houseFallback": "If the visit is tied or nobody has visited a museum, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "Turns continue clockwise.",
+    "Later raids start with the player holding the Guard Dog figure; the museum criterion selects only the opening player.",
+    "The Alibi comparison breaks a final-score tie. It does not decide who starts."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://helvetiq.com/media/hexaattachment/products/attachments/art-robbery_rules_EN.pdf",
+      "title": "Art Robbery — Helvetiq rules",
+      "publisher": "Helvetiq",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "How to Play on the first sheet; End of a Raid and End of the Game on the reverse",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Both publisher PDF sheets were read and visually inspected. The opening visit criterion and later Guard Dog priority are separate. No publication year is printed in the inspected sheet. Cached source: research\\source-files\\art-robbery\\art-robbery-93f6af1d.pdf; SHA-256 3d8924db824e8fcb36cced37299848a9ee27dede894e0c5de84610d127f8985c. Discovery: https://helvetiq.com/intl/art-robbery.",
+  "uncertainty": [
+    "No initial tie-break is stated.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HousePrompts from '../components/HousePrompts.astro';
+import { getPrompts } from '../lib/content/catalog';
+const prompts = getPrompts();
+---
+<Layout title="Original house rules — local preview" description="Try original starting-player prompts. Local drafts awaiting editorial review." noindex={true}>
+  <div class="content-page">
+    <h1>House rules</h1>
+    <div class="preview-banner"><strong>Local preview · original questions</strong><br/>These are our own published house rules, not instructions from a game's publisher.</div>
+    <p>Let a question decide who starts. Your group decides who qualifies; skip anything you don’t want to answer.</p>
+    <p class="small muted">A random prompt does not give every player an equal chance. <a href="/">Use the fair picker</a> for that.</p>
+    <HousePrompts prompts={prompts} />
+  </div>
+</Layout>

@@ -1,0 +1,45 @@
+{
+  "id": "niagara-zoch-en",
+  "slug": "niagara-zoch-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b80ccccd9dfc1a694c33543ca94d9f0f3accdad5f51175583e77fdf563d07c09",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Niagara",
+  "aliases": [],
+  "editionLabel": "English section · multilingual publisher rules",
+  "firstPlayerRule": "The person most afraid of water starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Everyone first chooses a paddle card simultaneously. The starting player reveals theirs first, followed by the others clockwise.",
+    "The lifesaver marks the starter and passes to the left at the end of each round."
+  ],
+  "interpretation": "The English manual describes the starter as the most hydrophobic player; the short answer restates that in everyday language.",
+  "sources": [
+    {
+      "url": "https://cdn.simba-dickie-group.de/downloads/601124900/601124900_Niagara_Rules-online_DE-EN-FR-IT.pdf",
+      "title": "Niagara — Zoch rules",
+      "publisher": "Zoch",
+      "printedPages": [
+        "9",
+        "10",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        10,
+        11
+      ],
+      "location": "Components and Set Up, lifesaver; Play paddle cards; End of Round; PDF pages 9, 10, 11",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/family-games/niagara-601124900-en.html. Finding: The person most afraid of water starts. Local source SHA-256: 49a08b29977ec04c32e7802db630d9da30a562aa4d05334223e76071b16f94c8. The PDF is linked from Zoch's Niagara product page and served on the publisher group's download CDN. The English section, not another language's wording, was inspected. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. All players initially choose paddle cards simultaneously; the lifesaver holder reveals first afterward. The public clarification and later leftward marker transfer preserve that distinction.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

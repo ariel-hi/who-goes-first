@@ -1,0 +1,49 @@
+{
+  "id": "seti-cge-en",
+  "slug": "seti-cge-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ddbe62633e0b787e5e4f9b836e313c021b964f025acf3628e7234dfa381360a6",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "SETI: Search for Extraterrestrial Intelligence",
+  "aliases": [
+    "SETI"
+  ],
+  "editionLabel": "English CGE base-game rules, multiplayer setup",
+  "firstPlayerRule": "Whoever saw a UFO most recently takes the starting-player marker and starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Multiplayer turns proceed clockwise. Starting scores are one, two, three and four points in turn order.",
+    "The starting marker passes one place to the left between rounds. The first person to pass during a round does not thereby become the next starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/seti-search-for-extraterrestrial-intelligence/rules/seti-rules-en.pdf",
+      "title": "SETI: Search for Extraterrestrial Intelligence — Czech Games Edition rules",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "6",
+        "7",
+        "18",
+        "19"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7,
+        18,
+        19
+      ],
+      "location": "Player Setup; Game Overview; Milestones; Pass and Between Rounds",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence. Finding: Whoever saw a UFO most recently takes the starting-player marker and starts. Local source SHA-256: b241d2ace42c1199254bde456ddac09d7ce1ca5ba036596f545b5d3aadcc083a. Editorial recheck 2026-09-23: Re-read the listed setup and gameplay pages and opened each rendered page. Personal observation criterion selects the first multiplayer turn without game components. Cached source: research\\source-files\\cge\\seti-search-for-extraterrestrial-intelligence-432f75e7.pdf; SHA-256 b241d2ace42c1199254bde456ddac09d7ce1ca5ba036596f545b5d3aadcc083a. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; Personal observation criterion selects the first multiplayer turn without game components.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

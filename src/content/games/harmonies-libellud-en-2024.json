@@ -1,0 +1,50 @@
+{
+  "id": "harmonies-libellud-en-2024",
+  "slug": "harmonies-libellud-en-2024",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3e0354d1b515288a4eb4003030f8cbdb86c399438b58a3bd1ef5a82bc3934ce1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Harmonies",
+  "aliases": [],
+  "editionLabel": "Libellud English rules, 2024 credits",
+  "firstPlayerRule": "Whoever most recently saw a magnificent landscape goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Point the central board’s arrow toward the starting player.",
+    "Turns then proceed clockwise.",
+    "This starting criterion applies to the multiplayer game. The solo variant has its own setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-libellud/uploads/2024/03/LIBELLUD_HARMONIES_RULES_EN-1.pdf",
+      "title": "Harmonies — Libellud rules",
+      "publisher": "Libellud",
+      "printedPages": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "10",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "location": "Cover and credits; setup step 6; game turn; solo variant; PDF pages 1, 2, 3, 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.libellud.com/en/resources/harmonies/. Finding: Whoever most recently saw a magnificent landscape goes first. Local source SHA-256: 5ed98481b5a6580d15ee92c2c744a33027481fb17ec75fb22fa0e05d9a0ae6c7. The complete English PDF is hosted on Libellud’s Asmodee publisher CDN. The Libellud resource page was read; the direct CDN URL was discovered through a secondary lead, not inferred from a resource-page anchor. PDF pages are spreads, so their numbers differ from the printed page numbers. The credits show 2024. No objective definition of magnificent or extra tie-break is supplied. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: this personal-history criterion selects the first multiplayer action turn without game-specific components.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

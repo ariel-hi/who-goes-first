@@ -1,0 +1,42 @@
+{
+  "id": "burano-emperors4-en",
+  "slug": "burano-emperors4-en",
+  "gameName": "Burano",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English EmperorS4 rules, twenty-page publisher-linked PDF",
+  "firstPlayerRule": "Whoever visited Italy most recently starts. If nobody has ever been there, choose the starting player randomly.",
+  "officialTieBreak": "Random selection applies when nobody has visited Italy. No rule is given here for equally recent visits.",
+  "houseFallback": null,
+  "clarifications": [
+    "The initial cube-pyramid construction is simultaneous; the selected player leads the player-turn phase.",
+    "This is Burano, the cube-pyramid game, rather than Walking in Burano."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/open?id=0B-UUhGhkNzLsdy1UZjBRS2RaUTQ",
+      "title": "Burano — EmperorS4 rules",
+      "publisher": "EmperorS4",
+      "printedPages": [
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7
+      ],
+      "location": "Setup - Player step 4; Sequence of Play and Player Turns; PDF pages 6, 7",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.emperors4.com/game/burano. Finding: Whoever visited Italy most recently starts. If nobody has ever been there, choose the starting player randomly. Local source SHA-256: 07e1da202de25491371c2922fabed5c84a0a765b3376da77a030860640462a53. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

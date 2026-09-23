@@ -1,0 +1,51 @@
+{
+  "id": "oceans-north-star-en",
+  "slug": "oceans-north-star-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Oceans",
+  "aliases": [],
+  "editionLabel": "North Star English base rules, 16-page publisher PDF",
+  "firstPlayerRule": "Whoever can hold their breath the longest goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the comparison is unclear or your group prefers to skip it, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Turns proceed clockwise from that player, with Playing Cards, Feeding, Aging, and Drawing Cards phases.",
+    "Assign Bonus Tokens by turn order: 4/0 points with two players, 6/4/0 with three, or 7/6/4/0 with four. Keep each token behind its owner’s screen for final scoring.",
+    "The trait-card and Alaska fishing-job tie-breaks concern the final score, not the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/Oceans_Rules_Web.pdf?v=1603131915",
+      "title": "Oceans — North Star Games rules",
+      "publisher": "North Star Games",
+      "printedPages": [
+        "4",
+        "5",
+        "13",
+        "14",
+        "unnumbered credits"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        14,
+        15,
+        16
+      ],
+      "location": "Setup step 11 and Bonus Token table; Playing the Game; The Deep; End of Game; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 5, 6, 14, 15, 16. Rendered setup step 11 gives the breath-holding criterion and the exact 2/3/4-player Bonus Token table. Playing the Game confirms clockwise individual turns. The Deep section does not replace this setup criterion. End of Game's trait-count and fishing-job tie-breaks apply only to final scores. The credits contain no printing date; none is inferred from the URL timestamp. No procedure for conducting a breath-holding contest is added. Publisher discovery URL: https://www.northstargames.com/pages/oceans-rules. Local source SHA-256: c8392dc4c3a9cbec57a5546dff91fd21e653652ee5932237f2c98d152da3bdde.",
+  "uncertainty": [
+    "No initial-start tie-break is stated alongside the criterion.",
+    "The linked manual does not identify a printing year.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,265 @@
+[
+  {
+    "slug": "cloud-city-blue-orange-us-en",
+    "gameName": "Cloud City",
+    "sourceHint": "b9cc597e",
+    "editionLabel": "English US rules · two-page folded publisher PDF",
+    "pages": [
+      1,
+      2
+    ],
+    "printedPages": [
+      1,
+      2
+    ],
+    "location": "Setup and How to Play",
+    "firstPlayerRule": "The player whose head is most in the clouds starts.",
+    "clarifications": [
+      "The chosen player receives starting tile 1. This is the rulebook's playful criterion; it does not define a measurement or equate it with height."
+    ]
+  },
+  {
+    "slug": "color-flush-blue-orange-en",
+    "gameName": "Color Flush",
+    "sourceHint": "e74ac462",
+    "editionLabel": "English rules · six-page publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2
+    ],
+    "location": "Setup",
+    "firstPlayerRule": "The person wearing the greatest number of colors starts."
+  },
+  {
+    "slug": "disc-cover-competitive-blue-orange-us-en",
+    "gameName": "Disc Cover",
+    "sourceHint": "a060a033",
+    "editionLabel": "English US competitive variation · 12-page bilingual publisher PDF",
+    "pages": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "printedPages": [
+      2,
+      3,
+      5,
+      6
+    ],
+    "location": "Cooperative rules and competitive variation setup",
+    "firstPlayerRule": "In the competitive variant, whoever most recently listened to music becomes the first Leader.",
+    "clarifications": [
+      "The cooperative game does not use this selection criterion: one player starts a shuffled song, and everyone chooses a cover. The Leader's tie decision in competitive play concerns album-cover voting, not a tie over who starts."
+    ]
+  },
+  {
+    "slug": "lost-seas-blue-orange-fr-summary-en",
+    "gameName": "Lost Seas",
+    "sourceHint": "c2fc2cbe",
+    "editionLabel": "French rules · English summary of the four-page publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      6
+    ],
+    "location": "Déroulement du jeu, Tour de jeu",
+    "firstPlayerRule": "Whoever most recently went to sea starts and takes the first-player token.",
+    "clarifications": [
+      "This answer translates the French instruction. The publisher's English download link returned a French rulebook during this check; the edition label reflects the file actually inspected."
+    ],
+    "uncertainty": [
+      "An English-language edition has not been checked against this French instruction."
+    ]
+  },
+  {
+    "slug": "mech-a-dream-blue-orange-us-en",
+    "gameName": "Mech A Dream",
+    "sourceHint": "75b8ef7e",
+    "editionLabel": "English rules · 20-page bilingual publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2
+    ],
+    "location": "Setup",
+    "firstPlayerRule": "The person who most recently dreamed about robots starts and takes the phase pawn, Sun side up."
+  },
+  {
+    "slug": "neoville-blue-orange-us-en",
+    "gameName": "Neoville",
+    "sourceHint": "90c9239f",
+    "editionLabel": "English rules · 16-page publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2
+    ],
+    "location": "Setup, step 5",
+    "firstPlayerRule": "The person who most recently spent time in nature starts and receives Equity tile 1."
+  },
+  {
+    "slug": "next-station-london-blue-orange-en",
+    "gameName": "Next Station London",
+    "aliases": [
+      "Next Station: London"
+    ],
+    "sourceHint": "6919afd3",
+    "editionLabel": "English rules · 20-page publisher PDF",
+    "pages": [
+      2,
+      4
+    ],
+    "printedPages": [
+      2,
+      4
+    ],
+    "location": "Setup and Build your Underground line",
+    "firstPlayerRule": "The person who most recently took the Underground is the controller for the first round.",
+    "clarifications": [
+      "The controller reveals the shared Station cards. All players then draw their own line section at the same time."
+    ]
+  },
+  {
+    "slug": "next-station-tokyo-blue-orange-en",
+    "gameName": "Next Station Tokyo",
+    "aliases": [
+      "Next Station: Tokyo"
+    ],
+    "sourceHint": "6a1e1959",
+    "editionLabel": "English rules · two-page folded publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2,
+      4
+    ],
+    "location": "Setup and Build your subway line",
+    "firstPlayerRule": "The person who most recently took the subway is the controller for the first round.",
+    "clarifications": [
+      "The controller reveals the shared Station cards. All players then draw their own line section at the same time."
+    ]
+  },
+  {
+    "slug": "spin-circus-blue-orange-us-en",
+    "gameName": "Spin Circus",
+    "sourceHint": "867ee55b",
+    "editionLabel": "US English rules · four-page bilingual publisher PDF",
+    "pages": [
+      1
+    ],
+    "printedPages": [
+      1
+    ],
+    "location": "Setup",
+    "firstPlayerRule": "The person who most recently saw an acrobat starts.",
+    "clarifications": [
+      "The separate UK-flagged English publisher file uses seeing a stage instead. These are distinct source editions; check the manual supplied with your game."
+    ],
+    "additionalSources": [
+      {
+        "url": "https://blueorangegames.eu/wp-content/uploads/2021/12/SpinCircus-Rules-EN.pdf",
+        "title": "Spin Circus — Blue Orange rules (UK file)",
+        "publisher": "Blue Orange",
+        "printedPages": [
+          "1"
+        ],
+        "pdfPagesOneBased": [
+          1
+        ],
+        "location": "Setup; PDF pages 1",
+        "checkedAt": "2026-09-23"
+      }
+    ],
+    "evidenceNotes": "The other English publisher file was also visually checked on PDF page 1. Its starting criterion differs. Comparison source SHA-256: 336540618626f68d41ebf20f304d21dc9978fb667adc1380421af6b55fa93468."
+  },
+  {
+    "slug": "spin-circus-blue-orange-uk-en",
+    "gameName": "Spin Circus",
+    "sourceHint": "fb32fae2",
+    "editionLabel": "UK English rules · two-page publisher PDF",
+    "pages": [
+      1
+    ],
+    "printedPages": [
+      1
+    ],
+    "location": "Setup",
+    "firstPlayerRule": "The person who most recently saw a stage starts.",
+    "clarifications": [
+      "The separate US-flagged English publisher file uses seeing an acrobat instead. These are distinct source editions; check the manual supplied with your game."
+    ],
+    "additionalSources": [
+      {
+        "url": "https://www.blueorangegames.com/webroot/img/games/rules/247470e50a2d650252d0a7b13c398b8f-Spin-Circus.pdf",
+        "title": "Spin Circus — Blue Orange rules (US file)",
+        "publisher": "Blue Orange",
+        "printedPages": [
+          "1"
+        ],
+        "pdfPagesOneBased": [
+          1
+        ],
+        "location": "Setup; PDF pages 1",
+        "checkedAt": "2026-09-23"
+      }
+    ],
+    "evidenceNotes": "The other English publisher file was also visually checked on PDF page 1. Its starting criterion differs. Comparison source SHA-256: 9ee1d17fad647d0424e04d9aece576b5185d3855cca86b743f62b73fae36be6c."
+  },
+  {
+    "slug": "volto-blue-orange-en",
+    "gameName": "Volto",
+    "sourceHint": "a08fccec",
+    "editionLabel": "English rules · six-page publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2
+    ],
+    "location": "How to play",
+    "firstPlayerRule": "The most cunning player starts."
+  },
+  {
+    "slug": "wilson-and-shep-blue-orange-us-en",
+    "gameName": "Wilson & Shep",
+    "aliases": [
+      "Wilson and Shep"
+    ],
+    "sourceHint": "7f11632e",
+    "editionLabel": "US English rules · two-page folded publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2,
+      3,
+      4
+    ],
+    "location": "Setup step 4, How to play and Shep's turn",
+    "firstPlayerRule": "Whoever most recently saw a sheep plays Wilson in the first round. Wilson makes the first swapping move; the person on their left makes Shep's first move.",
+    "clarifications": [
+      "Wilson first hides their tile while the others close their eyes. The remaining players cooperate as Shep; later Shep moves pass clockwise."
+    ]
+  },
+  {
+    "slug": "wonder-woods-blue-orange-en",
+    "gameName": "Wonder Woods",
+    "sourceHint": "9e56f4bd",
+    "editionLabel": "English rules · four-page publisher PDF",
+    "pages": [
+      2
+    ],
+    "printedPages": [
+      2
+    ],
+    "location": "Setup and How to Play",
+    "firstPlayerRule": "The person who most recently went mushroom picking starts and takes the first-player token."
+  }
+]

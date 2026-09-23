@@ -1,0 +1,55 @@
+{
+  "id": "flamme-rouge-lautapelit-en-dized",
+  "slug": "flamme-rouge-lautapelit-en-dized",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c71f30874cf7f1b53c507d11da39373d97b22374f941b37474f2ebd64e4210cb",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Flamme Rouge",
+  "aliases": [],
+  "editionLabel": "Lautapelit.fi English base rules, official Dized reference",
+  "firstPlayerRule": "The most recent bicycle rider places both cyclists first during setup. Once racing begins, everyone chooses energy cards simultaneously; the frontmost cyclist moves first.",
+  "officialTieBreak": "If bicycle recency is tied for setup placement, the youngest tied player places first.",
+  "houseFallback": null,
+  "clarifications": [
+    "Initial placement proceeds clockwise, with each player placing both cyclists before the next player places theirs.",
+    "During movement, resolve cyclists from front to back. If two occupy the same square, the cyclist in the right-hand lane moves first.",
+    "The bicycle-recency rule determines starting-position placement, not a separate individual turn in the simultaneous Energy phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/Hv3h5oezS6WJ1Vmjn5JVbg/4-starting-positions",
+      "title": "Flamme Rouge — 4. Starting Positions",
+      "publisher": "Lautapelit.fi, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "4. Starting Positions section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/9fFA4viXSMeCeyV0gYK1tA/1-energy-phase",
+      "title": "Flamme Rouge — 1. Energy Phase",
+      "publisher": "Lautapelit.fi, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "1. Energy Phase section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/kiRpwbhGTvOK0d31RNRH-w/2-movement-phase",
+      "title": "Flamme Rouge — 2. Movement Phase",
+      "publisher": "Lautapelit.fi, official Dized rules",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "2. Movement Phase section of the official English online reference",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read all 5 cached rule-section bodies for this game, including relevant variants. Its index identifies Lautapelit.fi and explicitly describes these as publisher-maintained official rules. Starting Positions explicitly gives both bicycle recency and the youngest-player tie-break. Turn Overview and Energy Phase distinguish simultaneous decisions from Movement Phase's front-to-back/right-lane order. Handicap changes starting decks and does not assign an individual Energy turn. Source snapshots: https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/flamme-rouge SHA-256 fe106dcbef13b5318bd04c72af2da1303ab09c3b2e7808de99260cd8d8cf0f3b; https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/Hv3h5oezS6WJ1Vmjn5JVbg/4-starting-positions SHA-256 1c8480cf4a1b888d12f87b96eab5eb56f39d4dbc0cd525e358fc3b32a49eeece; https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/hnlwugI5RgWex3HjrPdIyA/0-turn-overview SHA-256 e648a7ed592949c8babb6366269b7cd58072603ed1724d1f5b5e4504be512427; https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/9fFA4viXSMeCeyV0gYK1tA/1-energy-phase SHA-256 2cf10ea0e43f8b4d5f5b8bc194f2866666320646261f0597a081c66f9e811dc6; https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/kiRpwbhGTvOK0d31RNRH-w/2-movement-phase SHA-256 0badcba21af7b8733d31bb4b7fa71752816aa930df1a125a99bbe0030385bd76; https://rules.dized.com/game/NO4Xy2cRQwC3tn7fc_wBCw/ajOzvYN-QS21T3tEn4J7Rw/handicap SHA-256 820af0db679c0636d320e34bb8ae2e539b7a7669ee946d14ec001aa8fbe3389c. Editorial review 2026-09-23: Codex reviewed the complete cached English HTML sections, identity and edition, opening actions versus setup roles, ties, alternatives and variants. Owner authorization: Reload localhost, 2026-09-22. Directory only: the personal-history criterion chooses a setup placement role; gameplay starts with simultaneous card selection and positional movement.",
+  "uncertainty": [
+    "This record covers the named official online reference; other editions may differ."
+  ]
+}

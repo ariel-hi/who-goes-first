@@ -1,0 +1,43 @@
+{
+  "id": "alien-fate-of-the-nostromo-ravensburger-nl",
+  "slug": "alien-fate-of-the-nostromo-ravensburger-nl",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "176fc5edf3c3871af99cd44b649d38f0561bc1b04b5aa1cc1c66da2098d595e0",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "ALIEN: Fate of the Nostromo",
+  "aliases": [
+    "Alien Fate of the Nostromo"
+  ],
+  "editionLabel": "Ravensburger Dutch rulebook, file 27029; English summary",
+  "firstPlayerRule": "Whoever was most recently hissed at by a cat starts. Continue clockwise after each player's turn.",
+  "officialTieBreak": "Otherwise, the oldest player starts, as the rulebook instructs.",
+  "houseFallback": null,
+  "clarifications": [
+    "Each turn consists of the Crew Action phase followed by the Encounter phase."
+  ],
+  "interpretation": "This is an English summary of the cited Dutch rulebook.",
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/27029%20anl%202362054.pdf?ossl=pds_text_Spielanleitung",
+      "title": "ALIEN: Fate of the Nostromo — Ravensburger rules",
+      "publisher": "Ravensburger",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Spelopzet step 14; Spelverloop; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.org/fi/produkte/pelit/perhepelit/alien-signature-game-en-27029/index.html. Finding: Whoever was most recently hissed at by a cat starts. Continue clockwise after each player's turn. Local source SHA-256: ae587721c3f616ad9d4c957e2adf7e4c8dfc94bcb8c4f35f638693f881882b6f. Rendered pages 2 and 3 were inspected, as was the credits page. The publisher product link is labeled EN, but the retrieved instructions are Dutch. The answer follows the actual Dutch text, not the link label. The product page also contains unrelated descriptive copy; the manual itself identifies Fate of the Nostromo. No year has been inferred from artwork copyright. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ancient-world-red-raven-en-second-edition",
+  "slug": "ancient-world-red-raven-en-second-edition",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a857281cc86c213bd9e18a8fe949192d397f048ba6f6b4dbd5402f2931eec770",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "The Ancient World",
+  "aliases": [
+    "The Ancient World (Second Edition)",
+    "Ancient World"
+  ],
+  "editionLabel": "English second-edition rulebook, ©2019 Red Raven Games",
+  "firstPlayerRule": "Whoever most recently won a game takes the first turn. The rules also allow choosing randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the first-player token. After the Prepare phase, players take one action per turn clockwise until everyone has passed.",
+    "Everyone starts with six coins. In turn order, the second player receives one extra coin; the third and fourth receive two extra coins each.",
+    "This answer covers the second edition. Its optional variants that evoke the first edition do not establish the original edition's starting rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/yexdy14mhzrl24x/theancientworld_2ndedition_printed%20rules%20ver%2001.pdf?dl=0",
+      "title": "The Ancient World — Red Raven Games rules",
+      "publisher": "Red Raven Games",
+      "printedPages": [
+        "2",
+        "4",
+        "5",
+        "7",
+        "8",
+        "17",
+        "20"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        17,
+        20
+      ],
+      "location": "Second Edition cover; Setup step 10; Game Round and Player Actions; End of Round; Variants; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually inspected all listed pages of the manual linked by Red Raven's Ancient World product page. Cover names the second edition and credits print copyright 2019. BGG identifies this edition separately as 259298, reimplementing the inventory's original 147253. Added an explicit empty inventory override so this record cannot falsely close research on the original. The starting criterion refers to winning a game generally, not winning a particular rematch. Cached source: research\\source-files\\red-raven\\the-ancient-world-894ee457.pdf; SHA-256 0902cf4f472a850d75d5f22eaceac7cd56b0eccf0159ae03a329e027194ba1d4. Discovery: https://www.redravengames.com/ancient-world/. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; General personal history of winning a game selects the first action turn; no shared prior match or game component is required, and random choice is an official alternative.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

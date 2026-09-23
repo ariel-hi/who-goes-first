@@ -1,0 +1,38 @@
+{
+  "id": "panda-panda-allplay-en",
+  "slug": "panda-panda-allplay-en",
+  "gameName": "Panda Panda",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Allplay rules, two-sheet publisher PDF",
+  "firstPlayerRule": "The player who saw a panda most recently starts. Seeing one in a picture or video counts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This selects the first player for the opening round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-panda-rulebook-link.pdf",
+      "title": "Panda Panda — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 3 and Game Rounds; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/panda-panda. Finding: The player who saw a panda most recently starts. Seeing one in a picture or video counts. Local source SHA-256: 84db83bf945050a9c951ef1ad303df139e35b570647104ee55c660e40c2dcded. ",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

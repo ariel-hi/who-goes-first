@@ -1,0 +1,41 @@
+{
+  "id": "lost-cities-roll-and-write",
+  "slug": "lost-cities-roll-and-write",
+  "gameName": "Lost Cities: Roll & Write",
+  "aliases": [
+    "Lost Cities Roll and Write"
+  ],
+  "language": "en",
+  "editionLabel": "English rules in the eight-page publisher-linked PDF",
+  "firstPlayerRule": "The group's greatest adventurer takes the first turn.",
+  "officialTieBreak": "If you are unsure who that is, the player who most recently went hiking starts.",
+  "houseFallback": null,
+  "clarifications": [
+    "The active player rolls the dice and selects a color-and-number pair first. The other players then choose from the remaining dice."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1DfgnvgPBbePTw7gHfmcLWVga43Hae4Fp/view",
+      "title": "Lost Cities: Roll & Write — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "How to Play, choosing the first active player; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The group's greatest adventurer takes the first turn. Local source SHA-256: 72aa5e0f5a5f1f4533d52fec34ffa1f31ab04fd65e3fd7c9c63bd8b012cc422d. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

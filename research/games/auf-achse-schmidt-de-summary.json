@@ -1,0 +1,40 @@
+{
+  "id": "auf-achse-schmidt-de-summary",
+  "slug": "auf-achse-schmidt-de-summary",
+  "gameName": "Auf Achse",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Schmidt Spiele German rules, article 49090, English summary",
+  "firstPlayerRule": "Whoever has driven the farthest distance this month goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This summarizes the German rulebook. Turns continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Produkte/4/49090%20-%20Auf%20Achse/Auf_Achse49090D.pdf",
+      "title": "Auf Achse — Schmidt Spiele rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Spielablauf — Würfeln und Fahren, first sentence; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever has driven the farthest distance this month goes first. Local source SHA-256: 162e106204ec0a17cb2a4e80b61574579f53cb41aa5d1d4ba5ef9dd2e91bef0f. The time window is this month, not the latest journey or the journey to today's game.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

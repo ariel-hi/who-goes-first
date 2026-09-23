@@ -1,0 +1,43 @@
+{
+  "id": "cat-a-comb-thundergryph-en-2023",
+  "slug": "cat-a-comb-thundergryph-en-2023",
+  "gameName": "Cat-a-comb",
+  "aliases": [
+    "Cat a comb",
+    "Catacomb"
+  ],
+  "language": "en",
+  "editionLabel": "ThunderGryph English Soda Pop base rules, ©2023",
+  "firstPlayerRule": "The person who last combed a cat places the neutral cats during setup. Their opponent takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The setup player places one brown Neutral Cat on a Region tile of each color.",
+    "The two players then alternate gameplay turns. The cat-combing criterion selects the setup player, not the first active player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thundergryph.com/wp-content/uploads/2024/03/cat-a-comb-rulebook_en.pdf",
+      "title": "Cat-a-comb — ThunderGryph Games rules",
+      "publisher": "ThunderGryph Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup steps 3–4; Gameplay; credits; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://thundergryph.com/product/cat-a-comb/. Finding: The person who last combed a cat places the neutral cats during setup. Their opponent takes the first turn. Local source SHA-256: 19a725e7618743f9310085a50df8fe962f6a8f69de55eac6fbd2252f629f3dc6. Both pages of the publisher-linked English base rules were inspected, including ©2023 credits. The source does not say that the latest cat-comber goes first. Excluded from the general random mix because its opposite-player relation is specific to two players.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

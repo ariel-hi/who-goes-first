@@ -1,0 +1,57 @@
+{
+  "id": "small-world-of-warcraft-days-of-wonder-en",
+  "slug": "small-world-of-warcraft-days-of-wonder-en",
+  "gameName": "Small World of Warcraft",
+  "aliases": [
+    "Small World: World of Warcraft"
+  ],
+  "language": "en",
+  "editionLabel": "Days of Wonder English base rules, with Battle for Azeroth team-variant clarification",
+  "firstPlayerRule": "In the base game, the person who last played a video game starts. Take turns clockwise from them.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "In later rounds, the same first player advances the round marker and starts again.",
+    "The Battle for Azeroth team variant has a different order: Alliance 1, Horde 1, Neutral, Alliance 2, Horde 2. Leave out positions that are not used for your player count.",
+    "With two or four players there is no Neutral player. With three or five players, include one Neutral player. The first Alliance player starts the team game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://ncdn0.daysofwonder.com/small-world-of-warcraft/en/img/sb_rules_en.pdf",
+      "title": "Small World of Warcraft — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Starting the Game and I. The First Round; PDF pages 4",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://ncdn0.daysofwonder.com/small-world-of-warcraft/en/img/sb_team-rules_en.pdf",
+      "title": "Small World of Warcraft — Battle for Azeroth English team variant",
+      "publisher": "Days of Wonder",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Playing in Teams on the first unnumbered page; first Alliance player example on the second",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.boardgamesindia.com/small-world-of-warcraft-en-days-of-wonder. Finding: In the base game, the person who last played a video game starts. Take turns clockwise from them. Local source SHA-256: 76b1e3dd6430261f6ca7051299059f6da085f74d73de0f816f1c9ced5ef0303d. The base manual's rendered cover and page 4 were inspected, as were both pages of the team sheet. Both are hosted on the publisher's own legacy CDN; retailer links were used only to discover those primary files. The newer indexed 9001 CDN URL returned a non-PDF response and was not used as evidence. Team sheet SHA-256: f33ae912500a7f5d7dfe2ae30260b8af5b9ae2d459af3a544d1bf1ef1ea3b31e.",
+  "uncertainty": [
+    "The team sheet assigns faction order but does not give a separate method for assigning people to the numbered faction positions.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

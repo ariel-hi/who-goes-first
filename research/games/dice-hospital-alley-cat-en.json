@@ -1,0 +1,52 @@
+{
+  "id": "dice-hospital-alley-cat-en",
+  "slug": "dice-hospital-alley-cat-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dice Hospital",
+  "aliases": [],
+  "editionLabel": "English Alley Cat Games press-pack rulebook, 16-page PDF",
+  "firstPlayerRule": "Whoever most recently visited a hospital starts. The rules also allow choosing randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is the multiplayer starting rule. Give that player the First Player token; starting patients are drawn from that player clockwise.",
+    "During Patient Intake, the starter rolls the patient dice and chooses an ambulance first, followed clockwise. The starter cannot choose ambulance 1. The player on their right assigns equal-valued dice of different colours to ambulances.",
+    "Hospital Improvement follows ambulance-number order. Hospital Activation may be simultaneous; the rules recommend taking turns in ambulance order for your first game.",
+    "The player who takes the lowest-numbered ambulance receives the First Player token and starts the next round. Solo play has separate rules."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/12uetCioKWz2GZ7wpOi6TqCnn8WFTVoi8/view",
+      "title": "Dice Hospital — Alley Cat Games rules",
+      "publisher": "Alley Cat Games",
+      "printedPages": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "8",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        10
+      ],
+      "location": "Game Setup; Patient Intake; Hospital Improvement and Activation; Shift Change; Solo Game",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually inspected all listed pages from the publisher-linked public press pack. The hospital-visit criterion starts the sequential ambulance choice, not every subsequent phase. Random selection is an official alternative, not a tie-break or invented fallback. Separate patient-allocation and solo procedures were checked. Cached source: research\\source-files\\alley\\dice-hospital-926e4aeb.pdf; SHA-256 316519401ee0c08d430c936b6223a6cd6d2e795b35d6328e9003b45539aa9117. Discovery: https://www.alleycatgames.com/dice-hospital.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

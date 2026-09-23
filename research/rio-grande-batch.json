@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "tobago-rio-grande-en",
+    "gameName": "Tobago",
+    "sourceHint": "tobago-04911415.pdf",
+    "editionLabel": "English rules · two-page folded publisher PDF",
+    "pages": [2],
+    "printedPages": [2],
+    "location": "Game Play, opening sentence",
+    "firstPlayerRule": "The person who most recently visited an island starts.",
+    "clarifications": ["Turns then proceed clockwise."]
+  },
+  {
+    "slug": "hooky-rio-grande-en",
+    "gameName": "Hooky",
+    "sourceHint": "hooky-9741f576.pdf",
+    "editionLabel": "English rules · twelve-page publisher PDF",
+    "pages": [3],
+    "printedPages": [3],
+    "location": "Setup, opening paragraph and step 2",
+    "firstPlayerRule": "The person most recently in a classroom starts. The rules also allow choosing a starter randomly.",
+    "houseFallback": null,
+    "clarifications": ["The starting player keeps that role throughout the game."]
+  },
+  {
+    "slug": "beyond-the-sun-rio-grande-en",
+    "gameName": "Beyond the Sun",
+    "sourceHint": "beyond-the-sun-c848a494.pdf",
+    "editionLabel": "English base game · combined rules and setup sheet",
+    "pages": [25, 26],
+    "printedPages": [],
+    "location": "Setup for 4 players, step 13; reverse-side setup changes",
+    "firstPlayerRule": "The person who most recently went to space starts.",
+    "officialTieBreak": "Choose randomly if there is a tie.",
+    "houseFallback": null,
+    "clarifications": ["The instruction is on the setup sheet appended to this 26-page combined PDF. The reverse-side changes for two and three players do not replace it."],
+    "evidenceNotes": "The product's separate 24-page main rulebook omits the setup sheet. This record cites the publisher-hosted combined file, found through primary-source search, whose final two pages were both inspected."
+  },
+  {
+    "slug": "trans-siberian-railroad-rio-grande-en",
+    "gameName": "Trans-Siberian Railroad",
+    "aliases": ["Trans Siberian Railroad"],
+    "sourceHint": "trans-siberian-railroad-15048b22.pdf",
+    "editionLabel": "English rules · TSR-Rules-20200811 publisher file",
+    "pages": [2, 4, 5],
+    "printedPages": [2, 4, 5],
+    "location": "Setup; Initial Auction Round; Phase 1",
+    "firstPlayerRule": "The person who most recently visited Russia opens the initial auction, unless the group agrees on another method.",
+    "houseFallback": null,
+    "clarifications": ["That starter makes the first bid or passes in the opening Red stock auction.", "After the initial auctions, Phase 1 begins with the last person who bought a stock certificate. The setup starter is not necessarily the first player in Phase 1."]
+  },
+  {
+    "slug": "butterfly-rio-grande-en",
+    "gameName": "Butterfly",
+    "sourceHint": "butterfly-cd696634.pdf",
+    "editionLabel": "English rules · two-page publisher PDF",
+    "pages": [1],
+    "printedPages": [],
+    "location": "Setup and Playing the Game",
+    "firstPlayerRule": "The person who gives the best impression of a real hedgehog starts.",
+    "officialTieBreak": "If the group cannot decide, the rules allow any other selection method.",
+    "houseFallback": null,
+    "clarifications": ["The starter's right-hand neighbor places the hedgehog on the board first. This placement does not move it or collect a tile; the selected starter then takes the first turn."]
+  },
+  {
+    "slug": "hamburgum-rio-grande-en",
+    "gameName": "Hamburgum",
+    "sourceHint": "hamburgum-1749e99f.pdf",
+    "editionLabel": "English rules · Hamburgum Rules V2 publisher file",
+    "pages": [8],
+    "printedPages": [6],
+    "location": "Game Preparations",
+    "firstPlayerRule": "The person who most recently visited a church starts."
+  },
+  {
+    "slug": "chateau-roquefort-rio-grande-en",
+    "gameName": "Chateau Roquefort",
+    "aliases": ["Château Roquefort"],
+    "sourceHint": "chateau-roquefort-65783b71.pdf",
+    "editionLabel": "English rules · folded sheet with 2022 copyright",
+    "pages": [1],
+    "printedPages": [2, 4],
+    "location": "Playing the Game on panel 2; edition imprint on panel 4",
+    "firstPlayerRule": "The group chooses a starting player using any method it prefers.",
+    "houseFallback": null,
+    "clarifications": ["Turns then proceed clockwise."],
+    "evidenceNotes": "The visible imprint says 2022 even though the publisher URL contains a 2013 upload directory. The edition label uses the file's imprint, not the URL date."
+  },
+  {
+    "slug": "zooloretto-rio-grande-en",
+    "gameName": "Zooloretto",
+    "sourceHint": "zooloretto-7480035b.pdf",
+    "editionLabel": "English rules · Zooloretto2024 publisher file",
+    "pages": [3],
+    "printedPages": [2],
+    "location": "Game Setup, final bullet; Game Play",
+    "firstPlayerRule": "The players agree on who starts.",
+    "houseFallback": null,
+    "clarifications": ["Turns then proceed clockwise."]
+  }
+]

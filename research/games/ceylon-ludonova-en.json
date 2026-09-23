@@ -1,0 +1,43 @@
+{
+  "id": "ceylon-ludonova-en",
+  "slug": "ceylon-ludonova-en",
+  "gameName": "Ceylon",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Ludonova rules, publisher file Rules_Ceylon_2.0_low.pdf",
+  "firstPlayerRule": "In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts.",
+  "officialTieBreak": "Random selection is an official alternative to the tea criterion, not a stated tie-break sequence.",
+  "houseFallback": null,
+  "clarifications": [
+    "The selected starter receives the teapot and chooses an initial map position first. During play, turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://ludonova.com/wp-content/uploads/2023/10/Rules_Ceylon_2.0_low.pdf",
+      "title": "Ceylon — Ludonova rules",
+      "publisher": "Ludonova",
+      "printedPages": [
+        "4",
+        "6",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        10
+      ],
+      "location": "Setup step I; Playing; Game variant; PDF pages 4, 6, 10",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/ceylon/. Finding: In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts. Local source SHA-256: 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. ",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

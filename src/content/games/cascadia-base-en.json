@@ -1,0 +1,46 @@
+{
+  "id": "cascadia-base-en",
+  "slug": "cascadia-base-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "50b6da12a578aa9e793773a21ec3268988ab994acb6bf5d5a2736262246c8054",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Cascadia",
+  "aliases": [
+    "Cascadia base game"
+  ],
+  "editionLabel": "English base game · 16-page publisher rulebook",
+  "firstPlayerRule": "The person who most recently saw a bear, elk, salmon, hawk, or fox starts. The rulebook also allows choosing the starting player randomly.",
+  "officialTieBreak": "No separate tie-break is stated; random selection is an official alternative.",
+  "houseFallback": null,
+  "clarifications": [
+    "Play continues clockwise.",
+    "Choosing randomly is part of the printed setup, not an added house rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/Cascadia_BaseGame_Rulebook_Optimized.pdf",
+      "title": "Cascadia — English base-game rulebook",
+      "publisher": "Flatout Games / Alderac Entertainment Group",
+      "printedPages": [
+        "3",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        5
+      ],
+      "location": "Components (wildlife names) on page 3; Setup step 8 on page 4; Gameplay on page 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "AEG’s Cascadia page links this PDF. It is image-based, so setup pages 4 and 5 were rendered and visually read. Step 8 gives wildlife observation or random selection; page 5 says clockwise. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\cascadia-bfffb6ed.pdf; SHA-256 a7f142115aadfcb2b7d145dd04c694b6672f620358a477f4030f528c48c91627. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. Wildlife sighting recency chooses the first regular turn. The five animals are named in Components, and random selection is an official alternative. No in-person restriction is invented.",
+  "uncertainty": [
+    "The source does not define whether a sighting must be in person. The URL’s 2025 upload path is not treated as an edition date."
+  ]
+}

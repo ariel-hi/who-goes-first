@@ -1,0 +1,45 @@
+{
+  "id": "incan-gold-eagle-gryphon-en-2024",
+  "slug": "incan-gold-eagle-gryphon-en-2024",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3c7bfab4f7b75cb084d7f55b5540f46d2b51f13250c1315ef0eeb3c1d031531d",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Incan Gold",
+  "aliases": [],
+  "editionLabel": "Eagle-Gryphon English rules, ©2024, Explore/Exit-card edition",
+  "firstPlayerRule": "Players take their turns simultaneously. Pick a Guide to manage the Temple cards and coordinate the phases; there is no individual first explorer.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players reveal their Explore or Exit cards together when the Guide gives the signal.",
+    "This file does not specify a personal criterion for choosing the Guide. The older ©2018 rules prefer someone familiar with the game; that preference is not stated here."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1g9iStN6y5m0VZFrQFYN3a2RFztps4W6s/view",
+      "title": "Incan Gold — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "1",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4
+      ],
+      "location": "Opening explanation and Setup; simultaneous Explore/Exit decisions; credits; PDF pages 1, 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/incan-gold-2018. Finding: Players take their turns simultaneously. Pick a Guide to manage the Temple cards and coordinate the phases; there is no individual first explorer. Local source SHA-256: bfcb3cf9bce73631ef1dfe107efdf99c1f0895f694b8ea130c7c1c6b5a03793a. Rendered pages 1, 3 and 4 inspected. The visible copyright is ©2024; the extracted production footer says INCAN GOLD RULES 2023 v7. Edition is identified by visible copyright and Explore/Exit cards, not inferred from a product upload date. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Directory only: Simultaneous explorer decisions; no individual first explorer.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

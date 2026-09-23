@@ -1,0 +1,51 @@
+{
+  "id": "adventure-games-volcanic-island-kosmos-en-2020",
+  "slug": "adventure-games-volcanic-island-kosmos-en-2020",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Adventure Games: The Volcanic Island",
+  "aliases": [
+    "The Volcanic Island",
+    "Volcanic Island"
+  ],
+  "editionLabel": "Thames & Kosmos English rules, ©2020, code 695133-02-270520",
+  "firstPlayerRule": "Whoever most recently saw an island goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "The rule says seeing an island; it does not require landing on or visiting one.",
+    "Individual turns proceed clockwise, with movement, revealing a location card, and one action in that order.",
+    "For solo play, control two or more characters of your choice."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/695133_AG_VolcanicIsland_Manual.pdf",
+      "title": "Adventure Games: The Volcanic Island — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "cover",
+        "2",
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        16
+      ],
+      "location": "Game Setup; Game Overview; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2, 4, 16. Printed page 4 uses most-recently-seen an island, not visited one, and then confirms clockwise individual turns. Its free-exchange variant changes card exchange, not initial selection. Page 2 separates one-character-per-player multiplayer setup from solo control of two or more characters. Credits identify ©2020 Thames & Kosmos and code 695133-02-270520. Publisher discovery URL: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Local source SHA-256: aeabb061dcfb80a2f75e4a5dd03861f51a84237cb83ed4e33bf77dac64472a9b.",
+  "uncertainty": [
+    "The initial criterion has no stated tie-break, and the source does not define what counts as seeing an island.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

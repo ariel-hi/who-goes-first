@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GameDirectory from '../components/GameDirectory.astro';
+import HousePrompts from '../components/HousePrompts.astro';
+import { readRecords } from '../lib/content/catalog';
+import { contentRevision, ruleSchema, promptSchema, publicRule } from '../lib/content/schema';
+const rules = readRecords('research/games').map(record => ruleSchema.parse(record));
+const prompts = readRecords('research/prompts').map(record => promptSchema.parse(record));
+---
+<Layout title="Local editorial review — Who Goes First?" description="Local draft review only. No publication approval implied." noindex={true}><div class="content-page"><div class="preview-banner"><strong>Development only · Not approved for publication</strong><br/>These drafts and this route are excluded from every static build.</div><h1>Editorial review table.</h1><p>Read the cited instruction in context, inspect the edition, and approve the exact revision in the repository. This screen cannot approve content.</p><GameDirectory games={rules.map(publicRule)} prefix="/dev/rules/" />{rules.map(rule => <section class="review-entry"><h2>{rule.gameName}</h2><p>{rule.editionLabel}</p><details><summary>Evidence, uncertainty & revision</summary><p>{rule.internalEvidence}</p><ul>{rule.uncertainty.map(note => <li>{note}</li>)}</ul><p>Revision: <code>{contentRevision(rule)}</code></p><p>Status: {rule.status} · Approver: {rule.approvedBy || 'None'}</p><ul>{rule.sources.map(source => <li><a href={source.url}>{source.title}</a> — {source.location}; checked {source.checkedAt}</li>)}</ul></details></section>)}<section class="rule-section"><span class="eyebrow">Original prompt candidates · unapproved</span><h2>Try the house-rule interaction</h2><p>A randomly chosen question does not give people equal chances. Your group decides who qualifies. Skip freely.</p><HousePrompts prompts={prompts} />{prompts.map(prompt => <details class="review-entry"><summary>{prompt.id}</summary><p>{prompt.internalReviewNotes}</p><code>{contentRevision(prompt)}</code></details>)}</section></div></Layout>

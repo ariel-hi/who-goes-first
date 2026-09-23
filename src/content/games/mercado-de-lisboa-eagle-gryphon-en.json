@@ -1,0 +1,48 @@
+{
+  "id": "mercado-de-lisboa-eagle-gryphon-en",
+  "slug": "mercado-de-lisboa-eagle-gryphon-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7589baf60de96f5a95ad1dba59c961d71b726c9a304aadc4f5b67c011a4e571d",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Mercado de Lisboa",
+  "aliases": [],
+  "editionLabel": "Eagle-Gryphon English rules, ©2020, publisher’s six-page Preview file",
+  "firstPlayerRule": "Whoever last visited a market takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Play then proceeds clockwise.",
+    "With four players, the fourth player receives the extra Pub tile during setup.",
+    "This starting criterion applies to multiplayer games. The included solo challenges have separate setup instructions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/14h7sn1ESMmeNfEUGH0B3lqrFYXhmX_hl/view",
+      "title": "Mercado de Lisboa — Eagle-Gryphon Games rules",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "1",
+        "2",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "location": "Setup step 7; Playing the Game; credits; Solo Challenges; PDF pages 1, 2, 4, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/mercado-de-lisboa. Finding: Whoever last visited a market takes the first turn. Local source SHA-256: 6c27b14f1d89f13b3a8fd3fb02a634a8b1e2d94e4722804b991d468fd77ed6d5. All six pages of the image-only PDF were rendered and visually read. The text extractor returned empty pages, so the answer comes from the visible setup passage, not an inferred search snippet. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: a standalone criterion identifies the starter without game-specific components.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

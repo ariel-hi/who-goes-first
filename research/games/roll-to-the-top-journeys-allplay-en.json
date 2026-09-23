@@ -1,0 +1,40 @@
+{
+  "id": "roll-to-the-top-journeys-allplay-en",
+  "slug": "roll-to-the-top-journeys-allplay-en",
+  "gameName": "Roll to the Top: Journeys",
+  "aliases": [
+    "Roll to the Top Journeys"
+  ],
+  "language": "en",
+  "editionLabel": "English Journeys rules linked by Allplay",
+  "firstPlayerRule": "The player who most recently took a trip is the first active player and rolls the exploration dice. Everyone fills in their boards simultaneously using the rolled numbers.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The starting rule chooses the initial dice roller; it does not give that person an exclusive board-filling turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-roll-to-the-top-rulebook-link.pdf",
+      "title": "Roll to the Top: Journeys — Allplay rules",
+      "publisher": "Allplay",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup; Roll Dice and Explore the Landmark; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/roll-to-the-top. Finding: The player who most recently took a trip is the first active player and rolls the exploration dice. Everyone fills in their boards simultaneously using the rolled numbers. Local source SHA-256: 9631653cfcbd2892e4108221f0660551897be70909fe8b14a8a9fbecb550efa6. The current Allplay asset and the older Shopify v15 file both identify Journeys, with the same starting instruction. They have different file hashes; only the inspected current Allplay asset is cited here, and the second download is not counted as another edition.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

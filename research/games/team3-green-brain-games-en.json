@@ -1,0 +1,44 @@
+{
+  "id": "team3-green-brain-games-en",
+  "slug": "team3-green-brain-games-en",
+  "gameName": "TEAM3 Green",
+  "aliases": [
+    "TEAM3 GREEN",
+    "Team 3 Green"
+  ],
+  "language": "en",
+  "editionLabel": "English Green edition, Brain Games rules with 2019 copyright",
+  "firstPlayerRule": "For the cooperative base game, the player with the longest arms is the first Architect. The next player to the left is the Supervisor, followed by the Builder.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This assigns the opening team roles. The Architect starts the timer and gestures to the Supervisor while the three players work together.",
+    "In the competitive TEAM3VS3 variant, teams race simultaneously; there is no team that moves first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1HB93D17mWAb1uKDi7FVXvt-b73tl9_9T/view?usp=sharing",
+      "title": "TEAM3 Green — Brain Games rules",
+      "publisher": "Brain Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4
+      ],
+      "location": "Overview and Game Setup; Playing a Round; TEAM3VS3 variant; PDF pages 1, 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.brain-games.online/. Finding: For the cooperative base game, the player with the longest arms is the first Architect. The next player to the left is the Supervisor, followed by the Builder. Local source SHA-256: ca0122de927f86b302a61949c9e3f93807edb0b8e466e971e97641d1b461f64c. Green cover and Mind Merge expansion identify the edition. Rendered PDF pages 1, 3 and 4 were inspected, including the 2019 copyright and simultaneous competitive variant. No criterion for an individual Builder turn was inferred.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

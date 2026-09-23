@@ -1,0 +1,36 @@
+{
+  "id": "paper-world-pandasaurus-en",
+  "slug": "paper-world-pandasaurus-en",
+  "gameName": "Paper World",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pandasaurus Games English first-printing rules, copyright 2025",
+  "firstPlayerRule": "Whoever used scissors most recently takes the first turn. Continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/5lfkyrpdxoh2e0i6sf0xc/PANPWCORE_rules_1stPrinting_v1.pdf?rlkey=8a4390wijc0pox2w5z0mnsd3z&st=w7njx2j8&dl=0",
+      "title": "Paper World — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 6 and Gameplay, middle panel of the first unnumbered PDF sheet; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/paper-world. Finding: Whoever used scissors most recently takes the first turn. Continue clockwise. Local source SHA-256: 14290b9881a3dcddd9c9d101a7e2167875bf8efae5d7b3027640fc423abd2aa3. The full first sheet was rendered and inspected. It contains three panels, not three numbered PDF pages. The first-printing identifier is in the publisher-linked filename; copyright 2025 is in the second sheet's credits. The publisher product record links BGG 429020.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

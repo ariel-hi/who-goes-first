@@ -1,0 +1,45 @@
+{
+  "id": "beez-next-move-en-2020",
+  "slug": "beez-next-move-en-2020",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6089aa2b554b3018f4a695bb189aa61ca7fa15a4500351a0456450a8b27de985",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Beez",
+  "aliases": [],
+  "editionLabel": "Next Move English rules, ©2020",
+  "firstPlayerRule": "Whoever most recently ate a honey sandwich goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, the timing is tied or unclear, or your group prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",
+  "clarifications": [
+    "Place bees during setup starting with the person to the first player’s right and continuing counterclockwise. The first player places their bee last.",
+    "Regular turns then begin with the selected first player and proceed clockwise, through Flight plan, Flying and collecting nectar, and Storing nectar and making honey.",
+    "The two-player and expert rules keep this starting-player criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Beez-Rules-20-06-10_compressed.pdf",
+      "title": "Beez — Next Move Games rules",
+      "publisher": "Next Move Games",
+      "printedPages": [
+        "2–4",
+        "5–6",
+        "cover"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Game Setup step 3; Gameplay; Game End; Rules for two players and experts; credits",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Complete publisher-hosted or publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 1, 2. This publisher-owned Next Move CDN PDF contains two three-panel sheets. Printed page 3 specifies a honey sandwich, not honey alone. Its setup text explicitly runs counterclockwise from the starter’s right, while Gameplay says the selected starter begins clockwise regular turns. Printed page 6 retains all other rules for two-player and expert modes. The large-nectar tie-break applies only to final honey-drop scores. Credits state ©2020. Both full sheets were extracted and visually inspected, including the setup-direction wording. Publisher discovery URL: https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Beez-Rules-20-06-10_compressed.pdf. Local source SHA-256: aa5e0044275e4b1f69f8ab170886908b1837963c3e4ec5f98081dbdb651e14f3. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The food-recency criterion selects the first actual player after reverse-order setup and requires no game-specific components.",
+  "uncertainty": [
+    "The source gives no initial-start tie-break for the honey-sandwich criterion.",
+    "This answer covers the identified publisher file; other editions may differ."
+  ]
+}

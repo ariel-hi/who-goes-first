@@ -1,0 +1,41 @@
+{
+  "id": "revive-pegasus-de-summary",
+  "slug": "revive-pegasus-de-summary",
+  "gameName": "Revive",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele German rules, English summary",
+  "firstPlayerRule": "Choose the starter with a quantum random generator, or another method the group considers sufficiently random if one is unavailable.",
+  "officialTieBreak": "Without a quantum random generator, the rules explicitly allow any other method with a degree of randomness the group accepts.",
+  "houseFallback": null,
+  "clarifications": [
+    "The selected person takes the first turn, followed clockwise. Solo play has a separate sequence for its single player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/9b/28/cf/1717757128/4250231735561_de.pdf?ts=1752574415",
+      "title": "Revive — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "6",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        9
+      ],
+      "location": "Persönliche Spielvorbereitung, opening paragraph; Spielablauf; PDF pages 6, 9",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Revive/53071G. Finding: Choose the starter with a quantum random generator, or another method the group considers sufficiently random if one is unavailable. Local source SHA-256: 17e89080de2959f252f1e60864a5100615cd123be670dbd2ffa3684beb1b7362. The alternative is an official instruction, not a house fallback. No claim is made that this website uses a quantum generator. Campaign cards and hidden content were not opened.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

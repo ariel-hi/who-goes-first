@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "akropolis-gigamic-en",
+    "gameName": "Akropolis",
+    "sourceHint": "akropolis-21688410",
+    "editionLabel": "English Gigamic base-game rules, with official solo supplement",
+    "pages": [3], "printedPages": [3],
+    "location": "Setup, Chief Architect marker",
+    "firstPlayerRule": "Whoever climbed a hill most recently takes the Chief Architect marker and plays first.",
+    "clarifications": ["In the official solo mode, the human player starts against the Illustrious Architect."],
+    "additionalSources": [{"url":"https://en.gigamic.com/index.php?controller=attachment&id_attachment=472","title":"Akropolis — official solo mode","publisher":"Gigamic","printedPages":[],"pdfPagesOneBased":[1],"location":"Solo mode, Setup","checkedAt":"2026-09-23"}]
+  },
+  {
+    "slug": "looot-gigamic-en",
+    "gameName": "Looot",
+    "sourceHint": "looot-dba4b052",
+    "editionLabel": "English Gigamic rules, eight-page publisher booklet",
+    "pages": [2], "printedPages": [2],
+    "location": "Setup, step 8",
+    "firstPlayerRule": "The player whose home is farthest north takes the first turn."
+  },
+  {
+    "slug": "the-hanging-gardens-gigamic-en",
+    "gameName": "The Hanging Gardens",
+    "sourceHint": "the-hanging-gardens-b7aec7cd",
+    "editionLabel": "English Gigamic rules, eight-page booklet, multiplayer setup",
+    "pages": [2], "printedPages": [2],
+    "location": "Setup, step 8",
+    "firstPlayerRule": "Whoever did yard work most recently takes the first-player marker and begins their garden.",
+    "clarifications": ["This answer covers multiplayer setup. The separate solo supplement uses an Automaton opponent."]
+  },
+  {
+    "slug": "verso-gigamic-en",
+    "gameName": "Verso",
+    "sourceHint": "verso-e01e0d08",
+    "editionLabel": "English Gigamic rules, two-sheet publisher file, multiplayer setup",
+    "pages": [1], "printedPages": [],
+    "location": "Setup, step 3; How to play",
+    "firstPlayerRule": "The player who went on a journey most recently takes the first turn.",
+    "clarifications": ["Play continues clockwise. This is the multiplayer starting instruction."]
+  },
+  {
+    "slug": "quetzal-gigamic-en",
+    "gameName": "Quetzal",
+    "sourceHint": "quetzal-d845ebad",
+    "editionLabel": "English Gigamic rules, June 2020 file",
+    "pages": [4,6,11], "printedPages": [4,6,11],
+    "location": "Setup, step 6; Playing the Game; 2-Player Games",
+    "firstPlayerRule": "Whoever explored an island most recently receives the first-player marker and places meeples first.",
+    "clarifications": ["Everyone rolls their own meeples before the placement phase. Placement then proceeds clockwise from the first player.", "With two players, place the Automaton's meeples before the human players take their placement turns."],
+    "evidenceNotes": "The PDF has no extractable text; setup and the two-player adjustments were read visually. The publisher's interactive setup independently shows the same island-exploration criterion."
+  }
+]

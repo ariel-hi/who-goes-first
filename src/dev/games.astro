@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GameDirectory from '../components/GameDirectory.astro';
+import RandomRule from '../components/RandomRule.astro';
+import { getCatalog, readRecords } from '../lib/content/catalog';
+import { publicRule, ruleSchema } from '../lib/content/schema';
+const approved = getCatalog();
+const drafts = readRecords('research/games').map(record => ruleSchema.parse(record)).sort((a, b) => a.gameName.localeCompare(b.gameName));
+const games = [...approved, ...drafts.map(publicRule)].filter((game, i, all) => all.findIndex(other => other.id === game.id) === i).sort((a, b) => a.gameName.localeCompare(b.gameName));
+---
+<Layout title="Game rules — local preview" description="Search researched game-rule drafts and inspect their publisher sources. Local review only." noindex={true}>
+  <div class="content-page">
+    <h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p>
+    <div class="preview-banner"><strong>Local preview · {games.length} game rules</strong> · <a href="/dev/review/">Review sources</a><br/>{approved.length} reviewed; remaining entries are research drafts. <a href="/dev/coverage/">Full collection research status</a></div>
+    <RandomRule games={games} approvedIds={approved.map(game => game.id)} prefix="/dev/rules/" />
+    <GameDirectory games={games} approvedIds={approved.map(game => game.id)} prefix="/dev/rules/" />
+    <p class="small"><a href="/dev/house-rules/">Try the original house rules</a></p>
+  </div>
+</Layout>

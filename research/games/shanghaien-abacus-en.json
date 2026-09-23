@@ -1,0 +1,39 @@
+{
+  "id": "shanghaien-abacus-en",
+  "slug": "shanghaien-abacus-en",
+  "gameName": "Shanghaien",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "ABACUSSPIELE English two-player rules",
+  "firstPlayerRule": "The most rough-and-ready player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The two players then alternate turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2021/01/Shanghaien_Regel_GB.pdf",
+      "title": "Shanghaien — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Game Setup, final bullet; Game Play; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/shanghaien/. Finding: The most rough-and-ready player goes first. Local source SHA-256: 03a1800402cd5f23328d47f13adbdcdbf0f3aea6c6b4846992e2a2547d0ae9df. The unusual wording is explicit in the publisher's English setup. No physical contest or appearance test has been inferred.",
+  "uncertainty": [
+    "The source gives no objective measure for deciding who is most rough-and-ready.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

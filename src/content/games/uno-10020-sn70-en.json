@@ -1,0 +1,43 @@
+{
+  "id": "uno-10020-sn70-en",
+  "slug": "uno-10020-sn70-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "540fd1ac162f9a0681ac67e11e591ee3e294e2c04f06754e638273c086b9dc07",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "UNO",
+  "aliases": [
+    "Uno classic",
+    "UNO 112 cards"
+  ],
+  "editionLabel": "English 112-card edition · 10020-SN70_G1 (2017)",
+  "firstPlayerRule": "The dealer’s left neighbor normally starts. An opening action card can change this.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Everyone draws a card; the highest number deals (symbols count as zero). Tied draws are not resolved in the cited setup.",
+    "Opening Reverse: dealer starts, play moves right. Opening Skip: skip the dealer’s left neighbor; the next person starts. Opening Draw Two: that neighbor draws two and loses their turn.",
+    "Opening Wild, Wild Shuffle Hands or Wild Customizable: the dealer’s left neighbor chooses the color. Return an opening Wild Draw Four to the deck and draw another card.",
+    "Rules vary by edition. Match the cited 112-card set to yours."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/10020-SN70_G1_4XN_IS_Uno.pdf",
+      "title": "UNO — 10020-SN70_G1 multilingual instruction sheet, English panel",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "English panel: Setup, Let’s Play, Functions of Action Cards; copyright 2017",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Read the English setup and action-card text and inspected the rendered sheet. Older 42001 instructions differ. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\uno-6920681b.pdf; SHA-256 6353789db42dc78174cf04c1811ad8ba39ffeabfd9731afd8c3f4be4037cd521. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The dealer and opening action card determine the first turn; Reverse, Skip and Draw Two exceptions remain explicit. This is the 112-card 2017 sheet.",
+  "uncertainty": [
+    "Dealer-selection ties are unspecified."
+  ]
+}

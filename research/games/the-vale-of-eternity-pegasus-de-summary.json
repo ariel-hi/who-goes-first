@@ -1,0 +1,40 @@
+{
+  "id": "the-vale-of-eternity-pegasus-de-summary",
+  "slug": "the-vale-of-eternity-pegasus-de-summary",
+  "gameName": "The Vale of Eternity",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pegasus Spiele German rules, English summary",
+  "firstPlayerRule": "Whoever most recently saw a reptile goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player takes the starting marker. Initial scores are assigned according to the resulting clockwise player order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/ce/72/b6/1717757317/4250231738890_de.pdf?ts=1752574414",
+      "title": "The Vale of Eternity — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Spielvorbereitung, steps 6–7; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/The-Vale-of-Eternity/51330G. Finding: Whoever most recently saw a reptile goes first. Local source SHA-256: 245b0695095ab72b00ef91ebe86e33ef33c30790a135105f9bf5c26e8c74b7f9. The setup explicitly names a reptile, not a dragon or pet. The rendered page also distinguishes the decorative Eternity figure from the starting marker.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
