@@ -1,6 +1,14 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 22:02 UTC
+## Current checkpoint — 2026-09-23 22:17 UTC
+
+The latest 16 shared picker/reveal/style/test edits were copied into the attached isolated worktree (with only localhost test ports changed there). All 16 still matched the shared worktree after verification, ignoring line endings and those port substitutions. The exact isolated snapshot passed `npm run verify`: 75 Astro files with zero diagnostics, lint, 40 unit tests, content validation (228 approved game rules, 60 approved prompts), and a 246-page preview build/audit with 2,675 internal links. The conservative basic-home gzip estimate is 132,204 bytes. Evidence: ignored `artifacts/current-fallback-verify.log` in the isolated worktree.
+
+A focused 180-case picker/reveal run across Chromium, Firefox and WebKit initially passed 179/180. WebKit reproducibly kept the optional TableReveals module unavailable in the same browser context after a deliberately aborted download, including on the next page. The selected player remained correct, but the stage disappeared silently. The error boundary now displays “Visual unavailable. The selected player is shown below.” The combined test was split: the failure case asserts the visible fallback and correct winner; an independent case asserts the reduced-motion visual. All six affected cases passed across the three engines after this change. The other 178 cases passed on the preceding snapshot, before this one-line fallback change and test split; a post-change full 180-case run is not claimed. Evidence: ignored `artifacts/latest-picker-browser.log` and `artifacts/current-fallback-browser.log` in the isolated worktree.
+
+Eight fresh 390px captures cover the home and Flower Pots, Paper Planes and Shell Game ready/result states. They show visible controls, winner text and settled pieces without horizontal overflow. Four representative captures were opened and inspected. Evidence: ignored `artifacts/current-mobile-{home,flowers,planes,shells}-{ready,result}.png` in the isolated worktree. This remains browser emulation, not physical-device testing or owner visual approval. Temporary isolated servers on ports 4333/4334 were stopped. No deployment occurred.
+
+## Previous checkpoint — 2026-09-23 22:02 UTC
 
 The then-current shared worktree passed an uninterrupted `npm run verify`: 75 Astro files with zero diagnostics, lint, 39 unit tests, content validation (228 approved game rules and 60 approved prompts), and a 246-page preview build/audit with 2,675 internal links. The live development picker also passed `npm run test:dev-release` in fresh browser contexts before and after the release matrix. That regression took unusually long but exited successfully. Evidence: ignored `artifacts/current-exact-verify.log` and `artifacts/current-dev-release-regression.log` in the main workspace.
 
