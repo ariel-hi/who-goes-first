@@ -1,5 +1,13 @@
 # Local verification — updated 2026-09-23 UTC
 
+## Allplay editorial checkpoint — 2026-09-23 23:55 UTC
+
+Three existing Allplay drafts received source-backed editorial approval: High Society, Panda Panda and River Valley Glassworks. Publisher PDFs were opened; cached PDF hashes and relevant page renders were rechecked. High Society's random alternative was moved out of the tie-break field. The exact approved catalog has **231 rules** and the portable random mix has **171**; discovery coverage remains **408 of 1,320 identities**, with 912 still needing primary-source research. See `research/coverage/allplay-review-progress.md`.
+
+On the shared worktree, `npm run verify` passed Astro check (75 files, zero diagnostics), lint, 40 unit tests, content validation (231 approved rules, 60 approved prompts), and the 248-page preview build. SEO and static audits passed for 2,696 internal links. `npm run test:release` passed preview, empty production, synthetic approved content, disabled mode, and rejection of missing live configuration.
+
+The 207-case browser run passed **205 cases** across Chromium, Firefox and WebKit. WebKit's 60-draw house-prompt case exceeded its 30-second test limit while reaching the final development-page check; its longer `test.slow()` rerun passed. The coin reveal test sampled opacity before the settled style appeared; its polling CSS assertion rerun passed. Both affected WebKit cases passed together after those test-only changes. The full 207-case suite was not repeated after those changes. The picker and reveal code remains concurrently edited and uncommitted. No deployment occurred.
+
 ## Current checkpoint — 2026-09-23 23:28 UTC
 
 The shared picker design settled on **245 preview pages**, with Paper Planes removed from public navigation and output. A coherent isolated copy passed `npm run verify` (75 Astro files, zero diagnostics; lint; 40 unit tests; 228 approved rules and 60 prompts; 245 pages and 2,664 audited internal links). Its complete browser suite passed **207/207** in one uninterrupted run across Chromium, Firefox and WebKit. The earlier interrupted isolated runs used a snapshot assembled during concurrent edits or retained hardcoded main-workspace ports; those failures are not counted as product passes. Evidence: ignored `artifacts/current-settled-verify.log` and `artifacts/current-ports-fixed-browser.log` in the attached isolated worktree.

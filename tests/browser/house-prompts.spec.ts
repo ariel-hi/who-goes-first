@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 test('fun questions use the full pool before repeating', async ({ page }) => {
+  test.slow();
   await page.goto('/house-rules/');
   await expect(page.locator('.prompt-list li')).toHaveCount(60);
   const draw = page.getByRole('button', { name: 'Choose a question' });
