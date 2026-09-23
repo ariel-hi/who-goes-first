@@ -7,7 +7,7 @@ const { games, prefix = '/games/', approvedIds = [] } = Astro.props;
   <label class="search-box"><span>Search by game or another name</span><input type="search" name="game-search" placeholder="Find a game…" autocomplete="off" maxlength="100" /></label>
   <p class="count-label" data-count aria-live="polite">{games.length} {games.length === 1 ? 'rule' : 'rules'} available</p>
   <ul class="game-list">{games.map(game => <li data-game={JSON.stringify({ gameName: game.gameName, aliases: game.aliases, editionLabel: game.editionLabel })}><a href={`${approvedIds.includes(game.id) ? '/games/' : prefix}${game.slug}/`}><span>{game.gameName}<small>{game.editionLabel}</small></span></a></li>)}</ul>
-  <div class="empty-state" data-empty hidden={games.length > 0}><h2>{games.length ? 'No matching rule yet.' : 'No rules published yet'}</h2><p>{games.length ? 'No game matches your search.' : 'Rules will appear here after their publisher sources have been checked.'}</p><a class="inline-link" href="/">Pick a starting player instead</a></div>
+  <div class="empty-state" data-empty hidden={games.length > 0}><h2>{games.length ? 'No matching rule yet.' : 'No rules published yet'}</h2><p>{games.length ? 'No reviewed rule matches your search. The catalog is still growing.' : 'Rules will appear here after their publisher sources have been checked.'}</p><a class="inline-link" href="/">Pick a starting player instead</a></div>
   <noscript><p class="small muted">Search needs JavaScript. All available rules are listed above as ordinary links.</p></noscript>
 </div>
 <script>
