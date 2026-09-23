@@ -1,6 +1,12 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 20:29 UTC
+## Current checkpoint — 2026-09-23 20:33 UTC
+
+An isolated production rehearsal used the real approved catalog with fixture-only domain, contact and hosting disclosures in ignored output. `npm run build` passed content validation, generated 246 pages, and passed SEO and production artifact audits for 2,675 internal links, canonicals, indexing, headers and private-content exclusion. The output has 228 game article directories and 228 corresponding sitemap entries, includes the house-rules route, renders `index, follow` on the homepage and the fixture Privacy/contact wording, and contains neither development nor research routes. The build report confirms 60 approved house prompts. No fixture output was deployed or copied to the public workspace.
+
+Evidence: `artifacts/production-rehearsal.log` and `artifacts/production-rehearsal/` in the attached isolated worktree. The real canonical domain, maintained contact, actual host policy and final picker state remain outstanding, so this is not the exact approved release.
+
+## Previous checkpoint — 2026-09-23 20:29 UTC
 
 The link checker now supports `--approved-only`, so launch checks can target the reviewed public catalog without conflating draft-source failures. Its batch completion flag also reports correctly when the final batch starts at a nonzero offset. Two approved-only batches checked all **284 distinct source URLs**: 250 plus 34, with 284 unique URLs and 284 HTTP 200 HEAD responses at 20:26–20:27 UTC. The check changed no record, approval, or verification date. Availability does not prove a rule's factual accuracy, and a future host can change its response.
 
