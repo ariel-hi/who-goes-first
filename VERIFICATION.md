@@ -1,6 +1,16 @@
 # Local verification — updated 2026-09-23 UTC
 
-## Current checkpoint — 2026-09-23 20:14 UTC
+## Current checkpoint — 2026-09-23 20:22 UTC
+
+The Shell Game-specific browser test now waits for natural completion instead of trying to click “Show result now” after that control can disappear. The generic Shell Game test still exercises skip and replay. The previously failing WebKit case passed in an isolated rerun.
+
+A fresh isolated snapshot of the concurrent mode edits passed the complete `npm run verify` sequence: 75 Astro files with zero diagnostics, lint, 39 unit tests, content validation, and a 246-page preview build with 2,675 audited internal links. `npm run test:release` also passed preview, empty production, synthetic populated production, disabled Balloon, and rejection of missing domain/contact/hosting settings. Focused Flower Pots, Paper Planes, and Shell Game tests passed 12/12 in Firefox and WebKit on a separate static server, including narrow 12-player layouts, reduced motion, replay, skip, plane finish and shell reveal. The same focused set had passed 6/6 in Chromium on the earlier shared build.
+
+The shared picker files changed again after this snapshot and remain uncommitted. This evidence therefore does not claim final-release verification. I visually opened the fresh 375px Card Draw and Flower Pots captures and a mobile Flower Pots result crop; the cards, flowers, labels, method choices and action button fit without visible clipping. The owner has not yet approved the visual treatment, and physical-device and screen-reader checks remain open.
+
+Evidence: ignored files `artifacts/latest-snapshot-{verify,release,new-modes-browser}.log` and `artifacts/shells-webkit-rerun.log` in the attached isolated worktree, plus `.preview-375-{cards,flowers}.png` and `.preview-mobile-final.png` in the main workspace. No public deployment occurred.
+
+## Previous checkpoint — 2026-09-23 20:14 UTC
 
 The shared worktree's concurrent mode additions reached a clean Astro type check (75 files, zero diagnostics), lint, 39/39 unit tests on an unchanged rerun with a 20-second per-test timeout, and a preview build/audit of 246 pages and 2,675 internal links. The combined `npm run verify` run did not pass uninterrupted: two catalog-heavy tests exceeded the default 5-second timeout while the machine was busy, then passed on rerun. The new modes remained uncommitted and continued changing after the snapshot, so these checks are evidence for that snapshot, not a final release.
 
