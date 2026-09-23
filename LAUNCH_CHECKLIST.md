@@ -1,6 +1,6 @@
 # Owner actions before public launch
 
-- [ ] Review and approve the visual treatment in the running site and captured screenshots.
+- [ ] Review and approve the visual treatment in the running site and captured screenshots. The owner chose to decide later on 2026-09-23; local screenshots and automated audits do not constitute approval.
 - [ ] Launch with the approved partial catalog, as the owner requested. Verify that the exact release contains only reviewed rules and that public copy does not claim a complete compendium. Continue the remaining factual game-rule review under the owner's standing authorization using `CONTENT_REVIEW.md`; the owner does not need to read each rule. Local draft navigation and the discovery inventory remain excluded from deployed builds. See `/dev/coverage/` and `research/coverage/README.md` for the research backlog.
 - [x] Review and approve the six original prompt candidates. Their exact revisions are published among the 60 questions in `src/content/prompts/original-questions.json` under the owner's standing editorial authorization; the earlier drafts remain in the local research archive.
 - [ ] Choose the canonical domain, confirm naming rights and budget, and authorize a Cloudflare Pages project/destination. No purchase or account change has been made.
