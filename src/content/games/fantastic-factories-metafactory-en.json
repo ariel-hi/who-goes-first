@@ -1,0 +1,42 @@
+{
+  "id": "fantastic-factories-metafactory-en",
+  "slug": "fantastic-factories-metafactory-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "375a559c6d18454fcd0ddf007d3a3027dfae657d140184d385dec21385c9665b",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Fantastic Factories",
+  "aliases": [],
+  "editionLabel": "English rulebook with 74 blueprint cards",
+  "firstPlayerRule": "The player who used a tool most recently receives the first player token and starts the Market Phase.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During the Market Phase, turns continue clockwise from the token holder.",
+    "The Work Phase is simultaneous. At its end, pass the first player token to the next player clockwise for the following round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/c6/ff/c4-fantastic-factories-rulebook.pdf",
+      "title": "Fantastic Factories — English rulebook",
+      "publisher": "Metafactory Games / Deep Water Games",
+      "printedPages": [
+        "2",
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        7
+      ],
+      "location": "Setup; Market Phase; Ending the Work Phase",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked publisher-authored English booklet preserved by 1jour-1jeu. Printed page 2 says 'used a tool most recently' (not 'held a tool'); page 4 starts the Market Phase with the token holder and says the Work Phase is simultaneous; page 7 passes the token clockwise. The inspected booklet lists 74 blueprint cards, identifying its edition. SHA-256: 5246527e78aca03017b523358a000bbce134b4f847c47c92b87e4c481077c7ea. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player wording, and stated later turn order on rendered rulebook pages.",
+  "uncertainty": []
+}

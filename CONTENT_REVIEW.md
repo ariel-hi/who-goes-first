@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 497 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 501 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Fantastic Factories, Farmageddon, Fields of Green, and Forest Shuffle add four checked English editions. Fantastic Factories uses the inspected booklet's "used a tool" wording. Fields of Green allows a farm or rural area, while Farmageddon specifies a farm. Forest Shuffle's publisher file was inaccessible at the time of review, so its publisher-authored rulebook was checked through a matching mirror and that retrieval limit remains in the evidence.
 
 Fallout Shelter: The Board Game and Fog of Love add two publisher-hosted English editions. Fallout Shelter remains separate from Fallout: The Board Game; the opening selection and subsequent turn sequence were checked on rendered pages.
 

@@ -1,0 +1,42 @@
+{
+  "id": "fields-of-green-artipia-en",
+  "slug": "fields-of-green-artipia-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "bcbac836d48aba9b813e6fb73c96f8a65eeb96b982aca43c3509e2b22a11e82d",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Fields of Green",
+  "aliases": [],
+  "editionLabel": "Artipia Games English rulebook",
+  "firstPlayerRule": "The player who most recently visited a farm or a rural area takes the First Player tile.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with the tile holder, players draw cards clockwise during Upkeep.",
+    "At the end of the Harvest Phase, pass the tile to the player on the left for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://artipiagames.gr/files/FoG/fields_of_green_rulebook.pdf",
+      "title": "Fields of Green — English rulebook",
+      "publisher": "Artipia Games",
+      "printedPages": [
+        "2",
+        "3",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        7
+      ],
+      "location": "Setup, step 6; Upkeep Phase; Harvest Phase",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked publisher-hosted Artipia English PDF pages 2 and 7; PDF page 3 confirms Upkeep order. Setup step 6 permits either a farm or a rural area. The tile passes left after Harvest. SHA-256: ab32559a97effff7546499dcce79f914980020820c44e7d81d82e11bb98b324b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player wording, and stated later turn order on rendered rulebook pages.",
+  "uncertainty": []
+}
