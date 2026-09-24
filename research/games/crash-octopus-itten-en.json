@@ -1,0 +1,40 @@
+{
+  "id": "crash-octopus-itten-en",
+  "slug": "crash-octopus-itten-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Crash Octopus",
+  "aliases": [],
+  "editionLabel": "Itten English rules",
+  "firstPlayerRule": "The player who most recently encountered an octopus is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player scatters the treasure pieces over the octopus head during setup.",
+    "Turns then proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.itten-games.com/wp/wp-content/uploads/2020/09/OC_Rule-Book-EN-922_s.pdf",
+      "title": "Crash Octopus — publisher English rules",
+      "publisher": "Itten",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Preparation, step 6",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 2 of the Itten-hosted English manual gives the most-recent octopus encounter, treasure-scattering task and clockwise order. Octopus head, tentacles, ships and treasure pieces match inventory BGG 319579. SHA-256: 434ec19d9557e0c3b45e6698063ff9ea2b0c5140dc26bfea5c01ec8542ab8f83. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No fallback or tie procedure is given if no player recalls an octopus encounter."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "crossing-moonster-en",
+  "slug": "crossing-moonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9ef62ff702c143c4e23c13de0ef6f8c7afc8e481c434cc7b5ac3deba7962317e",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Crossing",
+  "aliases": [],
+  "editionLabel": "Moonster Games English rules",
+  "firstPlayerRule": "No one takes an individual first turn: players count to three together, then simultaneously point at a mushroom.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before play, choose someone to distribute the life stones. The rules suggest a banker, or otherwise the player with the nicest jewelry.",
+    "The distributor is a setup role, not a first-turn player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/76/7c/39-crossing-rulebook.pdf",
+      "title": "Crossing — English rulebook",
+      "publisher": "Moonster Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup, Distribution of stones; First turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 names the optional banker/jewelry distributor and states the simultaneous count-and-point first turn. The booklet credits Moonster Games on page 5; mushroom tiles, character tiles and life stones match inventory BGG 172971. SHA-256: b696033a17410eada23361d78df9d69079bf3f92dc50596789de88dce742c842. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The setup role has no tie procedure; simultaneous play needs no first-player tie."
+  ]
+}

@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 598 game rules approved for the catalog; 237 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 603 game rules approved for the catalog; 238 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Crash Octopus, Crossing, Cthulhu Realms, Dawn Under, and Draw Bot add five checked English editions. Crossing's first turn is simultaneous; its banker or jewelry criterion selects a setup distributor. Draw Bot has a screwdriver-based setup manager, but its turn rule passes that role left before rolling, so the entry describes both steps. Dawn Under adds one portable criterion. Crash Octopus uses the publisher-hosted English booklet.
 
 Clever Cubed, Colorado, Farm Club, Finding Nessie, and Fleet Commander: Genesis add five checked English editions. Colorado preserves its official free-choice alternative; Fleet Commander preserves the nine-dice fallback for its first Pitched Battle. Clever Cubed and Finding Nessie join the random mix. The Farm Club and Colorado prompts remain game-specific, and Fleet Commander's fallback needs its dice.
 

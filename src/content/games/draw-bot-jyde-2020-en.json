@@ -1,0 +1,42 @@
+{
+  "id": "draw-bot-jyde-2020-en",
+  "slug": "draw-bot-jyde-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a75a2a4d10a42f1955733492d2060ee575917183f4caeba13c99d3db58728ebe",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Draw Bot",
+  "aliases": [],
+  "editionLabel": "JyDe Éditions English rules, 2020",
+  "firstPlayerRule": "Players do not take individual turns: everyone draws at the same time. The player who most recently used a screwdriver is named Workshop Manager during setup.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the beginning of a turn, the player to the current Workshop Manager’s left becomes the new Workshop Manager, rolls four dice and chooses one exclusively; all players then choose an action.",
+    "As written, the first turn’s dice roller is the player to the left of the manager named in setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/94/85/9a-draw-bot-rulebook.pdf",
+      "title": "Draw Bot — English rulebook",
+      "publisher": "JyDe Éditions",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup, step 5; Game Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1, printed page 2, names the screwdriver user as Workshop Manager; PDF page 2, printed page 4, says the player to that manager’s left takes the role at the beginning of each turn before rolling. The same booklet says everyone plays simultaneously and credits JyDe Éditions ©2020. Factory Sheets, DRAW and BOT cards and Manufacturing dice match inventory BGG 306673. SHA-256: 4d960df50a68dc61393ef6c80c8c582244c24e4e601b57fa7a2ad1b4aca73214. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The turn-opening wording appears to shift the role immediately after setup; the answer follows that literal sequence."
+  ]
+}
