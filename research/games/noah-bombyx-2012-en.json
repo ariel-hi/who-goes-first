@@ -1,0 +1,38 @@
+{
+  "id": "noah-bombyx-2012-en",
+  "slug": "noah-bombyx-2012-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Noah",
+  "aliases": [],
+  "editionLabel": "Bombyx English rules, 2012",
+  "firstPlayerRule": "The shortest player starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the end of a round, the player with the highest penalty score starts the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/56/ce/f7-noah-rulebook.pdf",
+      "title": "Noah — English rulebook",
+      "publisher": "Bombyx",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3,
+        7
+      ],
+      "location": "Game Setup; End of Round & Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 3 gives the shortest-player criterion, and page 7 assigns the next round to the player with the highest score. Page 7 bears the Bombyx logo and credits; 55 cards, five ferries and Noah token match inventory BGG 116858. SHA-256: 0fccbb1df06917da242e8c87393b58fce6ce0e96a42adfa1287f75e0d736d013. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for equal height or the later highest score."
+  ]
+}

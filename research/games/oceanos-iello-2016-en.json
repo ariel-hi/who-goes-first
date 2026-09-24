@@ -1,0 +1,41 @@
+{
+  "id": "oceanos-iello-2016-en",
+  "slug": "oceanos-iello-2016-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Oceanos",
+  "aliases": [],
+  "editionLabel": "IELLO English rules, 2016",
+  "firstPlayerRule": "The last player to visit an aquarium becomes the first Expedition Captain.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Captain deals Exploration cards; players choose and reveal cards simultaneously. The Captain role passes to the player on the left each turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/16/41/64-oceanos-rulebook.pdf",
+      "title": "Oceanos — English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Set Up, step 6; Round Overview",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 5 gives the aquarium criterion for Expedition Captain; page 6 describes simultaneous card reveal and captain handoff. Page 12 credits IELLO ©2016; submarine pieces and Exploration cards match inventory BGG 192860. SHA-256: 510eb9288f65c4f8fc765126a1529419a5eae04bf0228ed595e3796bb272227c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "There is no sequential first action among the players; the published criterion assigns the first Captain."
+  ]
+}

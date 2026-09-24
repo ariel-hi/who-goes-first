@@ -1,0 +1,39 @@
+{
+  "id": "ninja-taisen-iello-2016-en",
+  "slug": "ninja-taisen-iello-2016-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "f37ed2eb7c12fa7fb81983255609526f53a2edee832e3a33921122fb025336f0",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Ninja Taisen",
+  "aliases": [],
+  "editionLabel": "IELLO English rules, 2016",
+  "firstPlayerRule": "The most silent player rolls the dice and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player is selected after both villages and the ninja are set up."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/52/65/54-ninja-taisen-rulebook.pdf",
+      "title": "Ninja Taisen — English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        7
+      ],
+      "location": "Setup, step 6",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 7 says the most silent player takes the dice and becomes the first player. Page 16 credits IELLO ©2016; Ninja cards and battlefield tiles match inventory BGG 162041. SHA-256: 6c359418c81f0e5aefc677393399420dfaca6664a863e3d9fa507221ec0d8a24. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules give no objective test or tie procedure for silence."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "patchwork-lookout-mayfair-2014-en",
+  "slug": "patchwork-lookout-mayfair-2014-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4e8b4d22a28caad7ed759aa32d55f76f248f574977d41ddc364964c4597ee1e7",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Patchwork",
+  "aliases": [],
+  "editionLabel": "Lookout Spiele / Mayfair Games English rules, 2014",
+  "firstPlayerRule": "The player who last used a needle starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After that, the player whose time token is furthest behind takes the next turn; if the tokens share a space, the token on top goes first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/74/af/f2-patchwork-rulebook.pdf",
+      "title": "Patchwork — English rulebook",
+      "publisher": "Lookout Spiele / Mayfair Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup, step 3; Course of Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1 gives the needle criterion and later time-token turn order. Page 2 bears Lookout Spiele ©2014 and Mayfair Games imprints; quilt boards, buttons and time tokens match inventory BGG 163412. SHA-256: 73f302cf49bcd5a6f9dbb8937f2a24382798e232e9130d9dc0cdc086f734fb3d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure for players who last used a needle at the same time."
+  ]
+}
