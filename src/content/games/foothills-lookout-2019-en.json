@@ -1,0 +1,43 @@
+{
+  "id": "foothills-lookout-2019-en",
+  "slug": "foothills-lookout-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "5d5d646771fda99e9e7dd0c1d79393bccf93842f59681b2275fbab29cf1dad3e",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Foothills",
+  "aliases": [],
+  "editionLabel": "Lookout Games English edition, 2019",
+  "firstPlayerRule": "Choose a starting player; the rules suggest the person who most recently dug soil in their garden.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give the selected player the starting-player chit; that player keeps it for the entire game.",
+    "Players then choose two starting resources in reverse play order.",
+    "The two players alternate turns beginning with the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Foothills.pdf",
+      "title": "Foothills — English rulebook",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Setup, step 10; Course of Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the publisher-authored Lookout English rulebook page 5 from the archive and checked page 6 turn sequence. Setup step 10 gives the optional garden-digging example, fixed chit and reverse-order resource choice. The publisher’s indexed English PDF has the same wording; credits identify Lookout GmbH ©2019 and inventory BGG 270538. SHA-256: a99805e480fea269b391327502a4969ce7cc770957dddb20359119d54ff0cd9f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "The garden criterion is explicitly an example, so the rules allow another method. No tie procedure is specified."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "megaland-red-raven-2018-en",
+  "slug": "megaland-red-raven-2018-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Megaland",
+  "aliases": [],
+  "editionLabel": "Red Raven Games English edition, 2018",
+  "firstPlayerRule": "The person who most recently played a video game receives the first-player token and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During the Night phase, the current first player passes the token to the player on their left, who starts the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Megaland.pdf",
+      "title": "Megaland — English rulebook",
+      "publisher": "Red Raven Games",
+      "printedPages": [
+        "5",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        9
+      ],
+      "location": "Setup, step 7; Phase 3: Night — First Player",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered publisher-authored English pages 5 and 9 from the archive. Page 5 gives the recent-video-game criterion; page 9 passes the token left each Night. The credits name Ryan and Malorie Laukat and Red Raven Games ©2018, matching inventory BGG 251293. SHA-256: 2f7e3b6679975554d2e485d5bb8e6d61820cfc0113684fa42a2ca654101d1a1c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is specified for equally recent video game play."
+  ]
+}

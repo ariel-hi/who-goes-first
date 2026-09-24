@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 735 game rules approved for the catalog; 315 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 741 game rules approved for the catalog; 321 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Paperback, Petrichor, Herbaceous, Foothills, Rumble Nation and Megaland add six checked English editions. Herbaceous has a separate team-variant starter; Foothills prints its garden-digging criterion as an example; Rumble Nation's 2019 booklet is distinct from the later Deluxe printing. See `research/coverage/paperback-petrichor-herbaceous-foothills-rumble-megaland-progress.md`.
 
 Regicide, On Tour, Rock Hard: 1977 and the Split Stone Games Mycelia add four checked English editions. On Tour’s best-music-taste criterion selects the first roller while everyone writes simultaneously. Rock Hard’s publisher permits any alternative selection method. Mycelia is kept distinct from the unrelated Ravensburger game. See `research/coverage/regicide-on-tour-rock-mycelia-progress.md`.
 

@@ -1,0 +1,42 @@
+{
+  "id": "herbaceous-pencil-first-2017-en",
+  "slug": "herbaceous-pencil-first-2017-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Herbaceous",
+  "aliases": [],
+  "editionLabel": "Pencil First Games English base game, 2017",
+  "firstPlayerRule": "The person who most recently cooked with or planted herbs starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Regular turns continue clockwise.",
+    "In the four-player team variant, the team containing the youngest player goes first; teammates sit opposite one another so teams alternate."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Herbaceous.pdf",
+      "title": "Herbaceous — English rulebook",
+      "publisher": "Pencil First Games",
+      "printedPages": [
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7
+      ],
+      "location": "Gameplay; Team Variant — Setup",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the publisher-authored English rulebook pages 4 and 7 from the archive. Page 4 gives the regular herb criterion and clockwise order; page 7 gives the separate team rule. The credits name Pencil First Games and 2017; components match inventory BGG 195314. SHA-256: 12869f43c88fe08fb13dab850f5bc4b48e23e6e66fd152e74c57bd066d38497e. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "Neither mode gives an official tie procedure."
+  ]
+}

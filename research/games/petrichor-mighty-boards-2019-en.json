@@ -1,0 +1,40 @@
+{
+  "id": "petrichor-mighty-boards-2019-en",
+  "slug": "petrichor-mighty-boards-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Petrichor",
+  "aliases": [],
+  "editionLabel": "Mighty Boards English rulebook, 2019 printing",
+  "firstPlayerRule": "The person most recently caught in the rain starts, or select a first player by any other method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the First Player marker.",
+    "During setup, place clouds in reverse play order beginning with the player to the starter’s right."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Petrichor.pdf",
+      "title": "Petrichor — English rulebook",
+      "publisher": "Mighty Boards",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setup, steps 5 and 12",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 4 of a publisher-authored English rulebook preserved in the archive; it matches the publisher-indexed Petrichor rulebook text and inventory BGG 210274. Setup step 5 gives the recent-rain criterion and permits any method; step 12 places clouds in reverse order. SHA-256: 9ea70a1b11173b36c8fe73f720160b49c2c5a3e7be772e0363dd9440baa2e5ef. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The publisher’s original download URL currently returns an error; the archived copy is accessible. No tie procedure is printed."
+  ]
+}

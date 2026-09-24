@@ -1,0 +1,41 @@
+{
+  "id": "paperback-fowers-original-en",
+  "slug": "paperback-fowers-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "aa53a93e187fb7f797df297040579bb268fb2be4eadd2e3b33d27c9ef1340e1f",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Paperback",
+  "aliases": [],
+  "editionLabel": "Fowers Games original English edition, 2014",
+  "firstPlayerRule": "The person who most recently finished reading a novel starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Everyone draws a first hand of five cards before play.",
+    "Turns then proceed clockwise.",
+    "This is the original Paperback word game, not Paperback Adventures or the tenth anniversary edition."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Paperback.pdf",
+      "title": "Paperback — English rulebook",
+      "publisher": "Fowers Games",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Start Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the image-only publisher-authored original English rulebook from the archive. Page 4 names the recent novel reader, the five-card initial hand and clockwise play. The booklet’s starting deck and Fame card setup match inventory BGG 141572. SHA-256: 0dab6b4d70d0d99c288c426d38b86769cd156c113d7c5c0e731885e6eb100433. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "The booklet states no tie procedure for players who finished novels at the same time."
+  ]
+}

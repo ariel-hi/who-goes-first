@@ -1,0 +1,40 @@
+{
+  "id": "rumble-nation-hobby-japan-2019-en",
+  "slug": "rumble-nation-hobby-japan-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d864f0a5ae98cb4ec18c16218bc63f72c2dc07a9989af853840df455eea89bf0",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Rumble Nation",
+  "aliases": [],
+  "editionLabel": "2019 English original edition, Hobby Japan",
+  "firstPlayerRule": "The person who most recently visited a castle starts, or choose a player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give the starting player the three dice.",
+    "This is the 2019 rulebook with 24 tactics cards and three dice, distinct from a later Deluxe printing."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Rumble%20Nation.pdf",
+      "title": "Rumble Nation — English rulebook",
+      "publisher": "Hobby Japan",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Game Setup, step 6",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 2 of the publisher-authored 2019 English booklet from the archive. It gives both the recent castle visit and random alternative and assigns the dice. Page 1 lists 24 bilingual tactics cards and three dice; BGG identifies the English 2019 file, matching inventory BGG 266722. SHA-256: 301eb3b44d2894caca53e934595af45e7a3e6196558cfe1596c53ed49fd47493. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "No tie procedure is specified for equally recent castle visits."
+  ]
+}
