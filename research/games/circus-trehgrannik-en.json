@@ -1,0 +1,39 @@
+{
+  "id": "circus-trehgrannik-en",
+  "slug": "circus-trehgrannik-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Circus",
+  "aliases": [],
+  "editionLabel": "Trehgrannik English rules",
+  "firstPlayerRule": "The player who last attended a circus starts and takes the starting-player card.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is the Trehgrannik game with performers, poster cards and a circus-caravan board."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/10/39/22-circus-rulebook.pdf",
+      "title": "Circus — English rulebook",
+      "publisher": "Trehgrannik",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Game Setup, star 7",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2, printed page 2, states the most-recent circus attendee criterion and starting-player card. The complete booklet credits Trehgrannik, with performer and poster components matching inventory BGG 307830. The publisher product page also identifies this game. SHA-256: ff6726764bd7c7054f0cd5ddca2b7f86f8cc353de08faacbdaaa67932868cfc2. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for players who attended a circus together."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "dunaia-blam-2020-en",
+  "slug": "dunaia-blam-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "092ac5d5b9951ed07d5c8a4d11973312c03fdea3519d65c403b569a26ea56bc0",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Dunaïa",
+  "aliases": [],
+  "editionLabel": "BLAM! English rules, 2020",
+  "firstPlayerRule": "The wisest player starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After each turn, the player on the left becomes the active player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/24/2e/d7-dunaia-the-prophecy-rulebook.pdf",
+      "title": "Dunaïa — English rulebook",
+      "publisher": "BLAM!",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "First player; Game Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 states the wisest-player criterion and leftward turn handoff. The booklet credits BLAM! on page 8; Dunaia figurines, dice and Metal flowers match inventory BGG 265682. SHA-256: 15a3a8d38916e51706a95cea4480b88bd4dc97846a3762c2f9176f13538415ca. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules do not define wisdom or specify a tie procedure."
+  ]
+}

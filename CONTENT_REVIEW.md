@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 587 game rules approved for the catalog; 231 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 593 game rules approved for the catalog; 235 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Circus, Cowboy Bebop: Space Serenade, Cóatl: The Card Game, Dunaïa, Dust in the Wings, and Farben add six checked English editions. Cóatl offers an open choice with a paintbrush suggestion; Farben assigns a starting role while all players choose colors together and a different player tells the first story. Four portable criteria joined the random mix. Cowboy Bebop uses a publisher-hosted manual; its first player also receives one fewer opening card.
 
 Abra Kazam!, ARGH, Antinomy, Aquarium, and Asteroyds add five checked English manuals. Abra Kazam! assigns a Wizard role that can change after every spell; Asteroyds assigns a player to roll dice and run the stopwatch while planning is simultaneous. Aquarium's breath-holding instruction stays in its game page. ARGH and Antinomy supply two more portable opening criteria.
 
