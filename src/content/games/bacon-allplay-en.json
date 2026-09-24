@@ -1,0 +1,42 @@
+{
+  "id": "bacon-allplay-en",
+  "slug": "bacon-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "5e2f389cdcc2cfc27884dd4e58594c4a0fdf7ecc477059400c7011b62cf8775d",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Bacon",
+  "aliases": [],
+  "editionLabel": "Allplay English online rulebook",
+  "firstPlayerRule": "Give the start player token to the player who most recently ate bacon.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The start player begins the first round, and the next player clockwise follows.",
+    "For later rounds, pass the start player token to the player on the team with the fewest total victory points who is closest clockwise to the previous start player. If tied, pass it to the next player clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.allplay.com/board-games-bacon-rough-draft-rulebook-link.pdf",
+      "title": "Bacon English rulebook (publisher online PDF)",
+      "publisher": "Allplay",
+      "printedPages": [
+        "1",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        4
+      ],
+      "location": "Setup; End of Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked the publisher-linked Allplay PDF pages 1 and 4. The publisher calls this online file a rough draft; a retailer-hosted copy has the same SHA-256. The start player wording is explicit. SHA-256: d00bc6ccb5c36cc185715d4437eb9f1dc5479971dabaef9b0aadbffaad0d131b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the BGG identity against the publisher and the starting criterion against the cited pages.",
+  "uncertainty": [
+    "Allplay labels the online PDF a rough draft; later printings should be checked separately."
+  ]
+}

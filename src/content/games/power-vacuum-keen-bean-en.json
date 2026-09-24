@@ -1,0 +1,40 @@
+{
+  "id": "power-vacuum-keen-bean-en",
+  "slug": "power-vacuum-keen-bean-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "98f42e147add56bdc2654876b66967f5a7a876f428d73d576d9cdca4e886411e",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Power Vacuum",
+  "aliases": [],
+  "editionLabel": "Keen Bean Studio English rulebook",
+  "firstPlayerRule": "The player who most recently got an electric shock starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise.",
+    "For each later round, the starting player is the next player clockwise from the previous round's starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.keenbean.studio/uploads/1/3/6/1/136105771/powervacuum-rules-web.pdf",
+      "title": "Power Vacuum English rulebook",
+      "publisher": "Keen Bean Studio",
+      "printedPages": [
+        "3",
+        "14"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        14
+      ],
+      "location": "Setup, step 10; End of Round & Scoring, step 8",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked the Keen Bean Studio English PDF pages 3 and 14. Setup identifies the most recent electric-shock recipient and clockwise play; later-round setup advances the starting player clockwise. SHA-256: 2db4b892fb96954019fc6caef9a4df6e3c1fc2b8cfba2129a128c838ddfb73da. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the BGG identity against the publisher and the starting criterion against the cited pages.",
+  "uncertainty": []
+}
