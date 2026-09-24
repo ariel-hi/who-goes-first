@@ -4,7 +4,7 @@ The owner requested the entire starting-rule compendium, not a named starter lis
 
 `discovery-index.json` records all 1,320 distinct game identities observed in First Player Fun's public collection on 2026-09-22. It contains names, BGG IDs and discovery links only; no competitor rule prose, images, application code, or inferred publisher verification. This is a useful research inventory, not an exhaustive definition of all board games. No reusable license for that site's rule prose was established in the inspected repositories.
 
-Run `npm run content:coverage` or open `/dev/coverage/` to compare the complete inventory with researched editions. At this checkpoint there are 521 researched rule records in total; 499 inventory identities match a researched edition and 821 still need primary-source research. Matching a title does not prove every edition agrees. The owner has delegated editorial review to Codex. All 521 researched exact revisions are approved for the catalog; 184 portable criteria are eligible for the random mix. Research coverage, approval and deployment remain separate.
+Run `npm run content:coverage` or open `/dev/coverage/` to compare the complete inventory with researched editions. At this checkpoint there are 523 researched rule records in total; 501 inventory identities match a researched edition and 819 still need primary-source research. Matching a title does not prove every edition agrees. The owner has delegated editorial review to Codex. All 523 researched exact revisions are approved for the catalog; 186 portable criteria are eligible for the random mix. Research coverage, approval and deployment remain separate.
 
 `identity-overrides.json` records known ambiguous names. An override's inventory IDs replace title matching for that rule; an empty list means the rule does not represent any inventory identity. Unknown rule IDs, unknown inventory IDs and duplicate override records are errors. Gamewright's Chomp! is excluded from the unrelated Allplay Chomp identity, which now has its own researched answer.
 
@@ -99,4 +99,6 @@ Hats, Havalandi and Helios add three further researched identities and three por
 Indian Summer and Into the Blue add two further researched identities and portable criteria. The publisher-authored English manuals were read on their setup and gameplay pages; the PDF credits identify Edition Spielwiese and Funnyfox respectively.
 
 Half-Pint Heroes, It Happens and Horse Fever add three researched identities. The first two are portable criteria; Horse Fever's six-color table requires its Sprint Die and box, so it stays in the game directory only. It Happens rotates the starter each round, and Horse Fever applies its family-mode selection in board-game mode too.
+
+Ice and the Sky and Himalaya add two more researched identities and portable criteria. Their first-player roles pass left in later generations or turns; the English sources are publisher-authored, with Ice and the Sky hosted by Jeux Opla.
 

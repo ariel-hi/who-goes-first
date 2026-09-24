@@ -1,0 +1,31 @@
+{
+  "id": "himalaya-tilsit-en",
+  "slug": "himalaya-tilsit-en",
+  "gameName": "Himalaya",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Tilsit English rulebook",
+  "firstPlayerRule": "The wisest player begins as the first caravaneer.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The first caravaneer places the 20-sided die in front of them.", "At the start of each later turn, the first caravaneer role passes to the player on the left, proceeding clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://tesera.ru/images/items/150536/Himalaya_Rules_English.PDF",
+      "title": "Himalaya English rules",
+      "publisher": "Tilsit",
+      "printedPages": ["Placing the players", "Phase 1"],
+      "pdfPagesOneBased": [2],
+      "location": "Placing the players; Phase 1: Turn marker progress",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked PDF page 2 of the publisher-authored English rules mirrored by Tesera. It names the wisest player, has that player take the 20-sided die, and passes the first caravaneer position clockwise on later turns. Matches inventory BGG 3800, the original Himalaya game rather than Trek 12: Himalaya. SHA-256: c3faff35f1405a3defe16e103fa28499d2d062c4c1b20a39774bc140b3030bae. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
