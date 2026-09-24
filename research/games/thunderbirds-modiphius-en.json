@@ -1,0 +1,41 @@
+{
+  "id": "thunderbirds-modiphius-en",
+  "slug": "thunderbirds-modiphius-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Thunderbirds",
+  "aliases": [],
+  "editionLabel": "Modiphius English cooperative board-game rules",
+  "firstPlayerRule": "The player who most recently watched the Thunderbirds TV show starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the dice. Players take turns clockwise, each with an Action Phase followed by a Disaster Phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/00/97/b6-thunderbirds-rulebook.pdf",
+      "title": "Thunderbirds — English rulebook",
+      "publisher": "Modiphius Entertainment",
+      "printedPages": [
+        "3",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5
+      ],
+      "location": "Setting Up the Game, step 8; Turn Overview",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 3 gives the TV-viewing criterion and dice handoff; page 5 gives the clockwise turn sequence. The Tracy characters, Thunderbirds machines, Hood Track and cooperative setup match inventory BGG 160610. Modiphius identifies itself as publisher of Matt Leacock’s Thunderbirds game. SHA-256: b67e0dd497053e7e1b2372a0d7f8ab65e4765798e9711e96535eff89b862850d. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for the most recent viewing."
+  ]
+}

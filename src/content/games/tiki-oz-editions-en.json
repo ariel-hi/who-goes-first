@@ -1,0 +1,41 @@
+{
+  "id": "tiki-oz-editions-en",
+  "slug": "tiki-oz-editions-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "58ddf006dcde3485025302248a9cc8d8ceb4101fb13e8c03c247d6ff2c990217",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Tiki",
+  "aliases": [],
+  "editionLabel": "Ôz Editions English rules",
+  "firstPlayerRule": "The player who last ate fruit starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players then take turns until someone collects four fruit or the fruit reserve is empty."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/80/3f/29-tiki-rulebook.pdf",
+      "title": "Tiki — English rulebook",
+      "publisher": "Ôz Editions",
+      "printedPages": [
+        "3",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        8
+      ],
+      "location": "Turn; Thanks and credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 3 gives the fruit criterion and turn sequence. The cover bears the Ôz Editions logo and page 8 credits the publisher; Tikis, villages and fruit match inventory BGG 214910. SHA-256: e5e3c9ec6ae8d89b97cd8851c37f9b8d728d7d1cbd224388cf6d7ef37d10c9e5. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure for players who last ate fruit together."
+  ]
+}

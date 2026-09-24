@@ -1,0 +1,39 @@
+{
+  "id": "voting-game-player-ten-en",
+  "slug": "voting-game-player-ten-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Voting Game",
+  "aliases": [],
+  "editionLabel": "Player Ten Games English instructions",
+  "firstPlayerRule": "The player who most recently called their mother is the first question reader.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player draws and reads the first Question card. After voting and scoring, the player to their left draws and reads the next question."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/3d/26/4f-the-voting-game-rulebook.pdf",
+      "title": "The Voting Game — English rulebook",
+      "publisher": "Player Ten Games, LLC",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Instructions cover; Playing the Game, Question and Repeat",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered both pages of the booklet. Page 2 gives the recent-call criterion, first question-reader action and leftward handoff. Page 1 credits Player Ten Games, LLC; numbered player ID cards, Voting cards and Question cards match inventory BGG 172007. SHA-256: 153521f4442f33fa3b8bb80246a4b99775b99a9af0e6a2ba147c037787c4b6a5. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for calls made together.",
+    "The criterion chooses the first reader; voting itself is simultaneous."
+  ]
+}

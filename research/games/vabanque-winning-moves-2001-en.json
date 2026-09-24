@@ -1,0 +1,39 @@
+{
+  "id": "vabanque-winning-moves-2001-en",
+  "slug": "vabanque-winning-moves-2001-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Vabanque",
+  "aliases": [],
+  "editionLabel": "Winning Moves English rules, ©2001",
+  "firstPlayerRule": "Players select a start player; the rules give no method for choosing one.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player places a pawn on any casino table, and the other players place theirs in clockwise order. The start player places the first betting token.",
+    "After each round, the richest player becomes the next start player, with play order determined by wealth."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/89/ad/c4-vabanque-rulebook.pdf",
+      "title": "Vabanque — English rulebook",
+      "publisher": "Winning Moves",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Preparation; Place Tokens; Determine New Order of Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 says to select a start player and gives the first pawn/token placement. Page 4 ranks players by wealth for the next round and credits Winning Moves ©2001. Casino tables, character cards and pawns match inventory BGG 2536. SHA-256: a9663f6a77d73aaa4872b4d18236c579625203abfd33442187f99083b4df3689. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The booklet leaves the initial selection method to the players."
+  ]
+}

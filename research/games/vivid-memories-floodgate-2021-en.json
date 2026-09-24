@@ -1,0 +1,44 @@
+{
+  "id": "vivid-memories-floodgate-2021-en",
+  "slug": "vivid-memories-floodgate-2021-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Vivid Memories",
+  "aliases": [],
+  "editionLabel": "Floodgate Games English rules, 2021",
+  "firstPlayerRule": "Give the start player marker to whoever can recall the earliest positive memory, or choose a player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the first turn of the Remember phase; turns proceed clockwise.",
+    "At the end of rounds one and two, the marker goes to the player left of the last player to take a turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/41/62/36-vivid-memories-rulebook.pdf",
+      "title": "Vivid Memories — English rulebook",
+      "publisher": "Floodgate Games",
+      "printedPages": [
+        "2",
+        "3",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        8
+      ],
+      "location": "Game Setup, step 8; Remember Phase; End of Round and credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 2 gives the earliest-positive-memory criterion and random option; page 3 gives the first turn. Page 8 gives the later-round handoff and Floodgate ©2021 credits. Memory fragments and moment tiles match inventory BGG 316090. SHA-256: 8b08daad916b42e26572ed21896e875b8cf6d9a870fb17b61a0aaae6917b1cb4. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for equally early recalled memories."
+  ]
+}

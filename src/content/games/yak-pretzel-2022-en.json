@@ -1,0 +1,44 @@
+{
+  "id": "yak-pretzel-2022-en",
+  "slug": "yak-pretzel-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d8da8ea7811e55a944140f58f7a73dcde20697232244b8f78ac0660b0d24c047",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Yak",
+  "aliases": [],
+  "editionLabel": "Pretzel Games English rules, 2022",
+  "firstPlayerRule": "The person who is hairy as a yak starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Put the Baby Yak in front of that player. They reveal their Action card first during Noon; play proceeds clockwise.",
+    "The Baby Yak passes clockwise at the end of each day."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/a2/6b/c9-yak-rulebook.pdf",
+      "title": "Yak — English rulebook",
+      "publisher": "Pretzel Games",
+      "printedPages": [
+        "3",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Setup, step 9; Noon; end of day",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2/printed page 3 gives the hair criterion and Baby Yak marker. Pages 3–4 explain the first action and clockwise handoff. Carriages, food and stone towers match inventory BGG 351038; the publisher identifies the game as Yak. SHA-256: 43e5dbb868865c4bd202aaa2a92e49d992f2f2072d972575bc50026c33782382. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules do not define how to judge yak-like hairiness or break a tie."
+  ]
+}

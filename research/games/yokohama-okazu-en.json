@@ -1,0 +1,44 @@
+{
+  "id": "yokohama-okazu-en",
+  "slug": "yokohama-okazu-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Yokohama",
+  "aliases": [],
+  "editionLabel": "OKAZU Brand English rules",
+  "firstPlayerRule": "The player who most recently visited Yokohama starts; if that does not determine a player, choose one by any preferred method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the Start Player card. It stays with them for the whole game.",
+    "The starting player begins with three yen; every other player starts with four."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/00/9a/00-yokohama-rulebook.pdf",
+      "title": "Yokohama — English rulebook",
+      "publisher": "OKAZU Brand",
+      "printedPages": [
+        "3",
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        16
+      ],
+      "location": "Game Setup, steps 8–9; credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 3 gives the Yokohama-visit criterion and flexible fallback; page 4 gives initial money. Page 16 credits OKAZU Brand. Area boards, President pawns and trading-house sites match inventory BGG 196340. SHA-256: 4a6377da566e7d1e5c2b26e9981aef48fbc0eff0ac47f959fa6db5e80aa7519f. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The fallback is intentionally open-ended; the rules do not prescribe a tie procedure."
+  ]
+}
