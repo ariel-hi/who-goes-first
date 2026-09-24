@@ -1,0 +1,43 @@
+{
+  "id": "age-of-civilization-ice-makes-2019-en",
+  "slug": "age-of-civilization-ice-makes-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Age of Civilization",
+  "aliases": [],
+  "editionLabel": "ICE Makes English rulebook, 2019 copyright",
+  "firstPlayerRule": "The player who is best at world history starts and takes the starter token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play continues clockwise during the round.",
+    "At round end, pass the starter token counterclockwise to the next round’s starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/00/fe/d4-age-of-civilization-rulebook.pdf",
+      "title": "Age of Civilization — English rulebook",
+      "publisher": "ICE Makes",
+      "printedPages": [
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7
+      ],
+      "location": "Setup, step 7; Playing the Game; Round End",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The complete ICE Makes manual preserved by 1jour-1jeu was rendered on PDF pages 4 and 7. Its 2019 copyright, six-round play, starter token and civilization cards match inventory BGG 264647. Later English files may use different opening wording, so this record names the inspected edition. SHA-256: 362b313aa817b94a0e4d845f2bd7f3cbca15a7601a097bd41015013d5addcc6e. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not give a test or tie procedure for being best at world history.",
+    "This 2019 manual differs in wording from later English rulebook copies."
+  ]
+}

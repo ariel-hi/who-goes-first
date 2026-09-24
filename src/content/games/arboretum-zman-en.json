@@ -1,0 +1,42 @@
+{
+  "id": "arboretum-zman-en",
+  "slug": "arboretum-zman-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9fb71ab8706089586143fcdea105bda790f32301617ba888f8b0af005bc755e9",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Arboretum",
+  "aliases": [],
+  "editionLabel": "Z-Man Games English rules, ZM1203",
+  "firstPlayerRule": "The player who last watered a plant starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The player to their right deals seven cards to each player.",
+    "Turns then continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.zmangames.com/us-east-1/filer_public/09/29/09290f24-d01b-4da1-bd55-761940330214/zm1203_arboretum_rules.pdf",
+      "title": "Arboretum — Z-Man Games English rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Set up; Distributing the cards; How to play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Z-Man publisher-hosted image-based booklet was rendered. Printed/PDF page 2 states the start criterion and dealer; printed/PDF page 4 establishes clockwise play. The ZM1203 file and tree-card artwork match inventory BGG 140934. SHA-256: 523e6f477ec5b7ca7568a871ae1337a16edec0054e3521a2c279334b5b79f08c. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules give no tie procedure when multiple players watered a plant together."
+  ]
+}
