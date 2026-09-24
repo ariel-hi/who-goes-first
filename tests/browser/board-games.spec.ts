@@ -11,5 +11,5 @@ test('all board games are searchable and lead to the right game page', async ({ 
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.goto('/board-games/174476/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText("10' to Kill");
-  await expect(page.getByRole('link', { name: 'player picker' })).toHaveAttribute('href', '/');
+  await expect(page.getByRole('link', { name: /La Boîte de Jeu English rulebook/ })).toHaveAttribute('href', '/games/10-to-kill-la-boite-de-jeu-en/');
 });

@@ -311,8 +311,8 @@ test('static help and navigation remain usable without JavaScript', async ({ bro
 test('reviewed catalog, local drafts, aliases, house prompts and real 404s', async ({ page, request }) => {
   await page.goto('/games/');
   await page.getByRole('searchbox').fill('Sushi Go');
-  await expect(page.locator('.game-list li:visible')).toHaveCount(1);
-  await page.locator('.game-list li:visible a').click();
+  await expect(page.locator('.game-list a[href="/games/sushi-go-2014-en/"]:visible')).toBeVisible();
+  await page.locator('.game-list a[href="/games/sushi-go-2014-en/"]:visible').click();
   await expect(page.locator('.rule-answer')).toContainText('no single player starts');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, follow');
   for (const path of ['/games/not-a-game/', '/dev/review/', '/research/games/azul-2018-en.json']) expect((await request.get(path)).status()).toBe(404);

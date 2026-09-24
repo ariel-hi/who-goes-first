@@ -1,7 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
-  // Three simultaneous engines plus the live preview exhaust this Windows host.
-  testDir: './tests/browser', fullyParallel: true, workers: process.env.CI ? 3 : 1,
+  // The live-route checks add and remove temporary catalog records. Keep browser
+  // cases serial so a directory read cannot race with fixture cleanup.
+  testDir: './tests/browser', fullyParallel: false, workers: 1,
   timeout: 30000, expect: { timeout: 8000 },
   reporter: [['list'], ['html', { open: 'never' }]],
   use: { baseURL: 'http://127.0.0.1:4322', trace: 'retain-on-failure', screenshot: 'only-on-failure' },

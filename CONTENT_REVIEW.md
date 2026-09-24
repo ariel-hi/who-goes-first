@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 755 game rules approved for the catalog; 334 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 762 game rules approved for the catalog; 339 eligible for the random mix. Public house prompts: 60.**
+
+Container: 10th Anniversary Jumbo Edition!, The King's Guild, Lisboa, SteamRollers, Super Motherload, That's Pretty Clever, and VivaJava Dice add seven more checked English editions. The first five join the portable mix; the last two use a random choice or game-specific dice. See `research/coverage/container-kings-lisboa-steam-super-clever-vivajava-progress.md`.
 
 Bob Ross: Art of Chill Game, Bob Ross: Happy Little Accidents, The Brigade, Firenze, Inuit: The Snow Folk, My Happy Farm, Trellis and Veggie Garden add eight checked English editions. Happy Little Accidents assigns a host before simultaneous drawing and stays outside the random mix. See `research/coverage/bob-brigade-firenze-inuit-farm-trellis-veggie-progress.md`.
 
