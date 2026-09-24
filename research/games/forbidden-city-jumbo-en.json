@@ -1,0 +1,40 @@
+{
+  "id": "forbidden-city-jumbo-en",
+  "slug": "forbidden-city-jumbo-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Forbidden City",
+  "aliases": [],
+  "editionLabel": "Jumbo English rules in the 2018 multilingual booklet",
+  "firstPlayerRule": "The player who has, at some point, traveled closest to the Forbidden City in China starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play then proceeds clockwise.",
+    "This is Jumbo’s tile-laying Forbidden City by Reiner Knizia, not the separate game Gùgōng."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.jumboplay.com/19700_Manual.pdf",
+      "title": "Forbidden City multilingual manual — English section",
+      "publisher": "Jumbo",
+      "printedPages": [
+        "18"
+      ],
+      "pdfPagesOneBased": [
+        20
+      ],
+      "location": "Starting the Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Jumbo-hosted 24-page multilingual PDF was inspected. The English Starting the Game page is PDF page 20, printed page 18; it was rendered and read. The title, product code 19700 and Knizia identity match inventory BGG 246316, distinct from Gùgōng. SHA-256: 4494868d9a3834205fcb703c0c85eb3feac2762a818f1b2b9aab459faf5f45dd. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules give no tie procedure for equally close travel."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "gloomy-graves-renegade-en",
+  "slug": "gloomy-graves-renegade-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "370d9351eb85ba2dfe30410bf6c1dca556d342db74d74ba3fb5ed3392d5c6235",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Gloomy Graves",
+  "aliases": [],
+  "editionLabel": "Renegade Game Studios English rulebook, 2020",
+  "firstPlayerRule": "The player who most recently visited a graveyard starts and takes the Start Player card.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Each round begins with that player and continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/cd/ff/ec-gloomy-graves-rulebook.pdf",
+      "title": "Gloomy Graves Rulebook",
+      "publisher": "Renegade Game Studios",
+      "printedPages": [
+        "4–5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Game Setup, step 8; How to Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "A complete publisher-authored English rulebook preserved by a game-rule archive was inspected. PDF page 4 was rendered and read; setup step 8 names the graveyard visitor. Page 5 confirms clockwise rounds. Publisher credits and game identity match inventory BGG 293556. SHA-256: d8622de199a9c51d3a9b99bd2524fa8cd3ecf2ee0a25a91cd683c57596e147ea. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "No procedure is given for tied or no graveyard visits."
+  ]
+}

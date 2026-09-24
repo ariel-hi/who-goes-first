@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 545 game rules approved for the catalog; 203 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 549 game rules approved for the catalog; 206 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Fresh Fruits, Gloomy Graves, Jumbo's Forbidden City, and the original Spielworxx Gentes add four checked English editions. Fresh Fruits changes its starting player after every round. Gentes leaves the initial selection method to the players and has a separate action that can change the next-round starter, so it remains directory-only. Jumbo's Forbidden City is distinct from Gùgōng.
 
 Good Cop Bad Cop, Gnomopolis, For Crown & Kingdom, Forest Shuffle: Dartmoor, and Favelas add five checked English editions. Good Cop Bad Cop's criterion can leave groups without a qualifying player, so it remains directory-only. Gnomopolis preserves an official random alternative; Favelas preserves its official random tie option and distinguishes the youngest setup die roller from the Rio visitor who starts.
 

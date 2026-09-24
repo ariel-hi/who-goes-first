@@ -1,0 +1,42 @@
+{
+  "id": "gentes-spielworxx-en",
+  "slug": "gentes-spielworxx-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "312767e4b37a8098ca78facdfaf8d3396d9f78ec82ed299195ee6e2fa1ac806c",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Gentes",
+  "aliases": [],
+  "editionLabel": "Spielworxx original English rulebook, 2017",
+  "firstPlayerRule": "Players choose a starting player by any method they like, then give that player the Starting Player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first civilization cards are chosen starting with the player to the right of the starter and continuing counterclockwise.",
+    "Later, a player can take the New Starting Player action to receive the token for the next round; otherwise it stays with the previous starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/73/75/a1-gentes-rulebook.pdf",
+      "title": "Gentes English Rulebook",
+      "publisher": "Spielworxx",
+      "printedPages": [
+        "5",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        11
+      ],
+      "location": "Preparation, step I; Determining the New Starting Player",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "A complete publisher-authored English booklet preserved by a game-rule archive was rendered and read at pages 5 and 11. Page 12 credits Spielworxx ©2017. Preparation leaves the initial selection method to the players; the later action changes the next-round starter. Matches inventory BGG 217780. SHA-256: e44829b826c0de1dd9dec480056c3252611dbea407f20302d82c0c5eb1455059. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "No specific initial selection method is prescribed."
+  ]
+}

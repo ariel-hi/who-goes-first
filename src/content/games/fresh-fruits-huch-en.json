@@ -1,0 +1,41 @@
+{
+  "id": "fresh-fruits-huch-en",
+  "slug": "fresh-fruits-huch-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4b1a01ea7cdbc69cc0b931268d6af8db851e576ce91be2582ff5d73bce6c890b",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Fresh Fruits",
+  "aliases": [],
+  "editionLabel": "HUCH! English rules in the 2022 multilingual booklet",
+  "firstPlayerRule": "The last person to eat a melon starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise.",
+    "At the end of a round, the current starting player takes the remaining double tile. The next player clockwise becomes the starting player for the following round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://produkte.hutter-trade.com//files/products/733/200/de/Screen_huc_22_12800_Fresh%20Fruits_Auflage_A_2022_Anleitung_RZ.pdf",
+      "title": "Fresh Fruits — multilingual rules, English section",
+      "publisher": "HUCH! / Hutter Trade",
+      "printedPages": [
+        "6–7"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7
+      ],
+      "location": "How to Play; End of the Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Hutter Trade product page links this multilingual PDF. Its English pages 6–7 were rendered and read. They identify the most recent melon eater for round one and pass the starting role clockwise after each round. The title, HUCH! branding and designer match inventory BGG 354324. SHA-256: 5260f6bdad3d66b8713fcc105ba5567254d4485024b89b707796a5ffc38541d0. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "No tie procedure is stated for people who last ate melon together."
+  ]
+}
