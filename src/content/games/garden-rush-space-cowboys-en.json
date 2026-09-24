@@ -1,0 +1,39 @@
+{
+  "id": "garden-rush-space-cowboys-en",
+  "slug": "garden-rush-space-cowboys-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "abaaa9563b7c1e7a79c60a822d70535f4df07bcb95adac0e858b7c74d6b0a62b",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Garden Rush",
+  "aliases": [],
+  "editionLabel": "Space Cowboys English rules, 2024 file",
+  "firstPlayerRule": "The player who most recently ate a tomato takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "They take the First Player Marker and keep it until the end of the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/SCGR01EN_GARDENRUSH_RULES_20240903_compressed-1.pdf",
+      "title": "Garden Rush Game Rules",
+      "publisher": "Space Cowboys",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup, step 4",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted Asmodee/Space Cowboys PDF page 3 was rendered and read. Step 4 identifies the tomato eater and persistent marker. Matches inventory BGG 327082. SHA-256: d39a2ceea08392f05247c6c86caebbee2800e8f05f5dffaa4e0184e698e1b27b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "No tie procedure is given for people who ate a tomato at the same time."
+  ]
+}

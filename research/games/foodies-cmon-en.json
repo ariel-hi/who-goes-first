@@ -1,0 +1,40 @@
+{
+  "id": "foodies-cmon-en",
+  "slug": "foodies-cmon-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Foodies",
+  "aliases": [],
+  "editionLabel": "CMON English rulebook",
+  "firstPlayerRule": "Whoever most recently ate at an international restaurant takes the First Player token and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player keeps the First Player token for the rest of the game.",
+    "Other players follow clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/Foodies-Rulebook-.pdf",
+      "title": "Foodies Rulebook",
+      "publisher": "CMON",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup, step 4",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Publisher product page links this image-based PDF. Rendered page 3 was read visually; setup step 4 states the international-restaurant criterion and persistent token. Matches inventory BGG 280896. SHA-256: 3a38b3e232ecfbc19f3720d9bddb9b09b2ae9664c7821aa0287c26660f7936e7. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not specify a tie procedure for players who ate together."
+  ]
+}

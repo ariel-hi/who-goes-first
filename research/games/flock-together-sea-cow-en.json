@@ -1,0 +1,41 @@
+{
+  "id": "flock-together-sea-cow-en",
+  "slug": "flock-together-sea-cow-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Flock Together",
+  "aliases": [],
+  "editionLabel": "Sea Cow Games English rulebook, 2024 upload",
+  "firstPlayerRule": "The person who most recently ate chicken goes last. The player to that person’s left goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise.",
+    "The same first player begins the next day after each player has taken a turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.seacowboardgames.com/s/Flock-Together-Rulebook.pdf",
+      "title": "Flock Together Rulebook",
+      "publisher": "Sea Cow Games",
+      "printedPages": [
+        "9–10"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        10
+      ],
+      "location": "Determining Turn Order; Course of the Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Sea Cow Games links this PDF from its How To Play page. PDF pages 9–10 were rendered and read; the rule assigns last place to the most recent chicken eater and the first turn to their left-hand neighbor, continuing clockwise each day. Matches inventory BGG 383360. SHA-256: 81c8f052e466b8e8172bd12b107ec4780a0a3b0db5c02687175c475ea3241deb. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not state a tie procedure if multiple players most recently ate chicken together."
+  ]
+}

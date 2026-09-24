@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 535 game rules approved for the catalog; 195 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 540 game rules approved for the catalog; 199 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+GUBS, Galactic Cruise, Foodies, Garden Rush, and Flock Together add five checked English editions. GUBS lets the person who proposed the game select anyone to start, so it stays out of the random mix. Flock Together assigns the most recent chicken eater last place and the person to their left first place; that distinction is preserved. Galactic Cruise uses a publisher-authored manual held by a retailer; the others use publisher-hosted manuals.
 
 Four Gardens, Ginkgopolis, Flip City, and Gingerbread House add four more checked English editions. The Ginkgopolis record preserves the separate Hal variant, and Gingerbread House distinguishes its optional starting-witch example from its reverse-order character setup. Flip City's table-flipping criterion is retained as printed.
 

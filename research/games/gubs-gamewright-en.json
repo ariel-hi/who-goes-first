@@ -1,0 +1,41 @@
+{
+  "id": "gubs-gamewright-en",
+  "slug": "gubs-gamewright-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "GUBS: A Game of Wit and Luck",
+  "aliases": [
+    "GUBS"
+  ],
+  "editionLabel": "Gamewright English rules of play",
+  "firstPlayerRule": "Whoever suggested playing GUBS selects the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play then proceeds clockwise. The suggester may select any player, including themselves."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/GUBS-RULES.pdf",
+      "title": "GUBS: A Game of Wit and Luck — Rules of Play",
+      "publisher": "Gamewright",
+      "printedPages": [
+        "English rules sheet"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "How to Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted Gamewright PDF page 1 was rendered and read. The title and opening sentence match inventory BGG 31808. The suggester makes a choice; the suggester does not automatically start. SHA-256: 0cd6cb729917880f46adf4f34d18d44b304fc186693c0db30baf62b85ab06712. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not say how to resolve multiple people having suggested the game."
+  ]
+}
