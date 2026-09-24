@@ -1,0 +1,42 @@
+{
+  "id": "the-fuzzies-schmidt-2021-de",
+  "slug": "the-fuzzies-schmidt-2021-de",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Fuzzies",
+  "aliases": [],
+  "editionLabel": "English summary of Schmidt Spiele Die Knuffies German rules, 2021",
+  "firstPlayerRule": "Choose a starting player. The rulebook suggests the fuzziest person among you.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starting player removes the first Fuzzy from the tower.",
+    "After a turn, pass the tweezers to the player on your left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Retail/300dpi_JPG/49395_Die_Knuffies_Regel_D.pdf",
+      "title": "The Fuzzies — rulebook",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "Step 5",
+        "Step 13"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        16
+      ],
+      "location": "Determine the starting player; pass the tweezers",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the official Schmidt Spiele German Die Knuffies PDF; its hash matches the earlier archived copy. Rendered PDF page 8, which explicitly says to determine a starter and offers the fuzziest player only as a suggestion. PDF page 16 passes the tweezers left after the turn. This is an English summary of the German edition, not a claim about a separate English printing. SHA-256: 3c9921d27aa6eeb3507c2495fdd53b42c334c620e13a59e810fa68272895a106. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rulebook leaves the selection method open; “fuzziest” is a subjective suggestion. Excluded from the portable random mix."
+  ]
+}

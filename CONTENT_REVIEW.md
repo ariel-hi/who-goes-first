@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 722 game rules approved for the catalog; 309 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 726 game rules approved for the catalog; 311 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Rebirth has separate Scotland and Ireland starting instructions, both eligible for the random mix. The Fuzzies uses a checked German publisher booklet and is labeled as an English summary. Doodle Dungeon uses indexed text of its English publisher booklet; the publisher download was blocked, and this limit is recorded. See `research/coverage/rebirth-fuzzies-doodle-progress.md`.
 
 Eight more English publisher rulebooks cover Marco Polo II, Oh My Goods!, Praga Caput Regni, Silver & Gold, Overboss, Space Explorers, Tucano and Stockpile. Four provide portable random criteria. Silver & Gold uses simultaneous marking; Overboss's undead idea is a suggestion; Stockpile's meal-price question stays outside the random mix. See `research/coverage/mixed-publisher-sept24-progress.md`.
 

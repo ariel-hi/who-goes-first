@@ -1,0 +1,40 @@
+{
+  "id": "rebirth-mighty-boards-scotland-en",
+  "slug": "rebirth-mighty-boards-scotland-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Rebirth",
+  "aliases": [],
+  "editionLabel": "Mighty Boards English rules — Scotland map",
+  "firstPlayerRule": "The person who last visited Scotland starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play progresses clockwise until the end of the game.",
+    "Use this instruction for the Scotland map. The Ireland map has its own opening criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bghub.org/r/rebirth.pdf",
+      "title": "Rebirth — rulebook",
+      "publisher": "Mighty Boards",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Scotland setup, step 10",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered printed/PDF page 2 of the archived Mighty Boards English rulebook. Scotland setup step 10 names the last Scotland visitor and clockwise turns. The publisher site links the same-named rulebook but denied direct retrieval; the archived publisher-produced file was used for the hash. SHA-256: 94cede0b4131bd3b0913b53437d54a1c790a67a1103dd3b8492a0d6bd7153697. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure or time limit for visiting Scotland is specified."
+  ]
+}

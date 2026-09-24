@@ -1,0 +1,40 @@
+{
+  "id": "rebirth-mighty-boards-ireland-en",
+  "slug": "rebirth-mighty-boards-ireland-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Rebirth",
+  "aliases": [],
+  "editionLabel": "Mighty Boards English rules — Ireland map",
+  "firstPlayerRule": "The person who last visited Ireland starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play progresses clockwise until the end of the game.",
+    "Use this instruction for the Ireland map. The Scotland map has its own opening criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bghub.org/r/rebirth.pdf",
+      "title": "Rebirth — rulebook",
+      "publisher": "Mighty Boards",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Ireland setup, step 12",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered printed/PDF page 6 of the archived Mighty Boards English rulebook. Ireland setup step 12 names the last Ireland visitor and clockwise turns, distinct from the Scotland setup. The publisher site links the same-named rulebook but denied direct retrieval; the archived publisher-produced file was used for the hash. SHA-256: 94cede0b4131bd3b0913b53437d54a1c790a67a1103dd3b8492a0d6bd7153697. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure or time limit for visiting Ireland is specified."
+  ]
+}

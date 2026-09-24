@@ -1,0 +1,42 @@
+{
+  "id": "doodle-dungeon-pegasus-2020-en",
+  "slug": "doodle-dungeon-pegasus-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "bb0651d31adb4cc5fc86457fe8ec7e53e322d27d5775e243021d13bcef96fcd1",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Doodle Dungeon",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English rules, ©2020",
+  "firstPlayerRule": "Decide who is most malicious and give them the start-player pencil sharpener. The rulebook also suggests rolling a die.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During the Build Dungeon phase, players choose cards clockwise from the starting player.",
+    "Pass the start-player pencil sharpener at the end of each build round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pegasusna.com/media/pdf/09/05/c6/4250231724213_en.pdf",
+      "title": "Doodle Dungeon — rulebook",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        16
+      ],
+      "location": "Game Setup, step 5; summary of build rounds",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Read publisher-indexed text of the Pegasus English PDF. Printed page 4 setup step 5 chooses the most malicious player, and its adjacent note allows a die roll. Printed page 16 confirms clockwise card choices and passing the pencil-sharpener marker each build round. Direct requests to the publisher PDF and its CDN redirect returned HTTP 403, so original bytes could not be hashed or rendered. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction, identity and map or edition.",
+  "uncertainty": [
+    "“Most malicious” is subjective. The die-roll alternative does not define the die procedure; excluded from the portable random mix."
+  ]
+}
