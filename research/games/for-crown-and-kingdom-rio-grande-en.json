@@ -1,0 +1,42 @@
+{
+  "id": "for-crown-and-kingdom-rio-grande-en",
+  "slug": "for-crown-and-kingdom-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "For Crown & Kingdom",
+  "aliases": [
+    "For Crown and Kingdom"
+  ],
+  "editionLabel": "Rio Grande Games English rules, 2016 release",
+  "firstPlayerRule": "The first player to make a trumpet sound and announce themselves as the starting player starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player places a character first; other players place characters clockwise.",
+    "Regular turns then begin with the same starting player and continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2015/07/For-Crown-and-Kingdom-Rules.pdf",
+      "title": "For Crown & Kingdom Rulebook",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Setup, starting-player paragraph",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted English rulebook page 5 was rendered and read. It explicitly keeps the same starter for initial character placement and regular turns. The title, publisher and designer match inventory BGG 77011. SHA-256: 23d9365d91dac0da2f7d8083109e4c6b43f7a3aea0afc93d8010f2b45379a988. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is specified for a simultaneous trumpet sound and announcement."
+  ]
+}

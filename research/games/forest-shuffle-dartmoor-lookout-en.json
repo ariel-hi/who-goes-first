@@ -1,0 +1,41 @@
+{
+  "id": "forest-shuffle-dartmoor-lookout-en",
+  "slug": "forest-shuffle-dartmoor-lookout-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Forest Shuffle: Dartmoor",
+  "aliases": [],
+  "editionLabel": "Lookout Games English Dartmoor rules, 2025",
+  "firstPlayerRule": "The player who last visited a moor starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before play, players choose caves in reverse turn order.",
+    "Turns then proceed clockwise from the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2025/12/en_dartmoor.html_ForestShuffeDartmoor_0156_Rules_EN_WEB_250922.pdf",
+      "title": "Forest Shuffle: Dartmoor — English Rules",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "2–3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup, step 8; The Caves; Game Flow",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The publisher-hosted English PDF page 2 was rendered and read; step 8 selects the moor visitor. The cave paragraph gives reverse setup order, and page 3 confirms clockwise turns. The cover identifies this stand-alone Dartmoor game, matching inventory BGG 438402. SHA-256: a1b23b77e64c0c4380d6212063dc32960c4134a3a50e60675bf8a32e320b2767. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The source does not provide a tie or no-visitor procedure."
+  ]
+}

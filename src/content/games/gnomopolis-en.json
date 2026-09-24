@@ -1,0 +1,40 @@
+{
+  "id": "gnomopolis-en",
+  "slug": "gnomopolis-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e93373ba2bf72317cda09deabef744434593f9299a0c3a058a02f1a9e86fcc06",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Gnomopolis",
+  "aliases": [],
+  "editionLabel": "English Gnomopolis rulebook",
+  "firstPlayerRule": "The shortest player starts, or the group may choose the starting player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns then proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/2f/39/4a-gnomopolis-rulebook.pdf",
+      "title": "Gnomopolis: A Gnome Building Game — English Rules",
+      "publisher": "Conclave Editora",
+      "printedPages": [
+        "1–2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup closing sentence; Game Overview",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The English publisher-authored booklet preserved by a game-rule archive was rendered and read at page 1; the opening assignment and official random alternative are printed after setup. Page 2 confirms clockwise order. The designer names and components match inventory BGG 202819. SHA-256: ba9012f8dd24fec48079858b71e5b544977b77b883f9ddec58544bceec26c02d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
+  "uncertainty": [
+    "The booklet does not separately say how equally short players should decide if they decline the random alternative."
+  ]
+}

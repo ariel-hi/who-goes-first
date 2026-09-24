@@ -1,0 +1,41 @@
+{
+  "id": "favelas-wizkids-en",
+  "slug": "favelas-wizkids-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b1024cfbb12ee36ca9f5bb3be023a9cdd5eac9970633185012ee620f0ae88ebb",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Favelas",
+  "aliases": [],
+  "editionLabel": "WizKids English rules, 2017",
+  "firstPlayerRule": "Whoever most recently visited Rio de Janeiro goes first.",
+  "officialTieBreak": "If that results in a tie, choose the starting player at random.",
+  "houseFallback": null,
+  "clarifications": [
+    "The youngest player rolls the Council Dice during setup; that is a separate task from taking the first turn.",
+    "After a turn, play continues to the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://eadn-wc03-13179282.nxedge.io/posters/repository/wizkids/WebRes_Favelas_Rules.pdf",
+      "title": "Favelas Rules",
+      "publisher": "WizKids",
+      "printedPages": [
+        "3–4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Set-Up, steps I–J; On Your Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The WizKids product page links this English PDF. Rendered page 3 confirms that the youngest player only rolls the setup dice, while the most recent Rio visitor goes first and ties can be resolved randomly. The printed joke about putting the game away is not presented as a practical tie method. Page 4 confirms turn order. Matches inventory BGG 230591. SHA-256: 04ffc6b9cdb9e9851b9f78d754f0973b6bccc712ed58637825b29fcdd0080047. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
+  "uncertainty": [
+    "The source does not define whether a group where nobody has visited Rio counts as tied; it does explicitly permit a random choice when tied."
+  ]
+}

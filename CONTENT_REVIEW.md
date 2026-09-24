@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 540 game rules approved for the catalog; 199 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 545 game rules approved for the catalog; 203 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Good Cop Bad Cop, Gnomopolis, For Crown & Kingdom, Forest Shuffle: Dartmoor, and Favelas add five checked English editions. Good Cop Bad Cop's criterion can leave groups without a qualifying player, so it remains directory-only. Gnomopolis preserves an official random alternative; Favelas preserves its official random tie option and distinguishes the youngest setup die roller from the Rio visitor who starts.
 
 GUBS, Galactic Cruise, Foodies, Garden Rush, and Flock Together add five checked English editions. GUBS lets the person who proposed the game select anyone to start, so it stays out of the random mix. Flock Together assigns the most recent chicken eater last place and the person to their left first place; that distinction is preserved. Galactic Cruise uses a publisher-authored manual held by a retailer; the others use publisher-hosted manuals.
 
