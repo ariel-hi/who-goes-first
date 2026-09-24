@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 495 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 497 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Fallout Shelter: The Board Game and Fog of Love add two publisher-hosted English editions. Fallout Shelter remains separate from Fallout: The Board Game; the opening selection and subsequent turn sequence were checked on rendered pages.
 
 Expeditions: Around the World, Elevenses, Emberleaf, and Exposed add four checked English entries. Elevenses' clockwise tie rule applies to later rounds, while Emberleaf's bravest-player method is only a recommendation. Their source pages and exact revisions are recorded in the approved entries.
 
