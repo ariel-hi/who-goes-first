@@ -1,0 +1,41 @@
+{
+  "id": "key-to-city-london-quined-en",
+  "slug": "key-to-city-london-quined-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "cdb64ff1c3684be3d6b244af90b56c6d1fc8394257042b1656c47a0fd23c581a",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Key to the City: London",
+  "aliases": [],
+  "editionLabel": "Quined Games English rulebook, 2016",
+  "firstPlayerRule": "Choose a starting player; the rules suggest the player who most recently visited London. That player places their sailing barge on the first space of the era 1 river tile.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The other players place their barges in the remaining berths in any order.",
+    "In each era, the player whose boat is on the rightmost space of the current river tile plays first, then play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/f5/4b/1d-key-to-the-city-london-rulebook.pdf",
+      "title": "Key to the City: London — English rulebook",
+      "publisher": "Quined Games",
+      "printedPages": [
+        "3–4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Set up, step 3; Game play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Quined’s product page links an English PDF, but that link currently fails; a complete publisher-authored copy preserved by a rulebook archive was inspected. PDF pages 3–4 were rendered and read. The booklet credits Quined Games and the Bleasdale/Breese design, matching inventory BGG 205507. SHA-256: cf23149f1f62552c9029ce71c57f2ec630fa58ee82d1fc02df7fbdbfff0c6ae8. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "The London-visit criterion is a suggestion, not a requirement. The rules leave the choice to players and give no tie procedure."
+  ]
+}

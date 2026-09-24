@@ -1,0 +1,41 @@
+{
+  "id": "kill-the-unicorns-morning-en",
+  "slug": "kill-the-unicorns-morning-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7960afbf92cdc6ace7d9c5ec5bfe4a3179af9c7bffedcfa3963eed1e9bbb9a3d",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Kill The Unicorns",
+  "aliases": [],
+  "editionLabel": "Morning English rulebook, version 2",
+  "firstPlayerRule": "The last player to have spotted a real unicorn becomes the first player and takes the First Player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rule is a joke: the booklet gives no practical procedure when nobody has spotted a real unicorn.",
+    "For later hunts, the player who wins a unicorn becomes the new first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dontpanicgames.com/static/MORNING-KTU-Rulebook-EN.pdf",
+      "title": "Kill the Unicorns — English rulebook",
+      "publisher": "Morning / Don’t Panic Games",
+      "printedPages": [
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        16
+      ],
+      "location": "Setup, step 8; Hunt resolution",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Don’t Panic Games hosts the Morning-branded English PDF. PDF page 7 was rendered and read for the opening rule; page 16 text states the hunt-winner transfer. The hunt cards, scheme cards and title match inventory BGG 204602. SHA-256: f0bb6dca8353ded1f162b98f562c59be432826c04d6a0e388472c8540e04857b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "The manual does not provide a workable initial fallback for players who have never seen a real unicorn."
+  ]
+}
