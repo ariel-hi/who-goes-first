@@ -1,0 +1,37 @@
+{
+  "id": "10-tricks-later-fudacoma-en",
+  "slug": "10-tricks-later-fudacoma-en",
+  "gameName": "10 Tricks Later",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English Fudacoma Games rulebook",
+  "firstPlayerRule": "The player who most recently watched a horror movie leads the first trick of the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The winner of each trick leads the next trick.",
+    "A later round starts with the player who gained the lowest score in the preceding round. If that score is tied, the rules let the players decide the starter by any appropriate method."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://fudacoma.jp/wp-content/uploads/10trick_rules_EN.pdf",
+      "title": "10 Tricks Later — English rules",
+      "publisher": "Fudacoma Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [1, 2],
+      "location": "Setup step 5 and Card Play on PDF page 1; next-round leader paragraph on PDF page 2",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted English PDF was retrieved and both pages rendered and visually inspected. Local source: research/source-files/fudacoma-artipia/10-tricks-later-en.pdf; SHA-256 02e1fd345d8a1e1fda2a16edc66d73e34a67d0644c51a7b641e682750ab4d892. Setup step 5 assigns the first Lead Player to the person who last watched a horror movie; later trick and round leaders use different instructions. Draft only pending editorial review.",
+  "uncertainty": [
+    "The first-round horror-movie criterion has no stated tie-break.",
+    "The answer applies to the identified English publisher file; other editions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

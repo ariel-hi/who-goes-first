@@ -1,0 +1,38 @@
+{
+  "id": "13-ghosts-artipia-en",
+  "slug": "13-ghosts-artipia-en",
+  "gameName": "13 Ghosts",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Artipia Games English rulebook, 2017 copyright; retailer-hosted mirror",
+  "firstPlayerRule": "The player who most recently saw a ghost starts. A ghost in a film, television show, or illustration counts if no one has seen one in real life.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The two-player rules alternate the starting player in later rounds.",
+    "The three-player and four-player team variants refer back to the two-player rules for play order, with their own clockwise or team-turn instructions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.spiele-offensive.de/gfx/cf/13ghosts/13ghosts-rules.pdf",
+      "title": "13 Ghosts — Artipia Games English rulebook mirror",
+      "publisher": "Artipia Games (document); Spiele-Offensive (mirror host)",
+      "printedPages": [],
+      "pdfPagesOneBased": [2, 3, 4, 5, 6, 8],
+      "location": "Opening-player instruction on PDF page 2; subsequent-round and player-count variants on pages 3–6; publisher imprint on page 8",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The current Artipia product page links a legacy English rulebook URL that could not be retrieved at this checkpoint. An Artipia-branded eight-page English booklet from a retailer mirror was retrieved, all pages rendered and visually inspected. Product page: https://www.artipiagames.com/13-ghosts/ ; linked but unavailable original: https://www.artipiagames.gr/files/13_ghosts/13_ghosts_rulebook.pdf . Local mirror source: research/source-files/fudacoma-artipia/13-ghosts-en-mirror.pdf; SHA-256 b0d439dddcdf74e39affea4c0b491fef7889ae0395d38df73e2dd9b0c0372701. Draft held for provenance and variant review; mirror pagination may differ from the linked publisher file.",
+  "uncertainty": [
+    "The current publisher-linked rulebook could not be compared with the retailer-hosted mirror.",
+    "The opening criterion is stated in the two-player instructions; application to the three-player and four-player variants should be confirmed before public approval.",
+    "No tie-break is stated alongside the first-round ghost criterion."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

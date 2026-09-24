@@ -1,4 +1,12 @@
-# Local verification — updated 2026-09-23 UTC
+# Local verification — updated 2026-09-24 UTC
+
+## Allplay expansion and research checkpoint — 2026-09-24 00:16 UTC
+
+Nine additional Allplay draft revisions received source-backed editorial approval after their cached publisher PDF hashes and rendered rule pages were rechecked. The exact catalog has **240 approved rules**, and the portable random mix has **176** separately fingerprinted criteria. Through the Desert, Habitats, Pollen, Switchbacks and Pies enter the mix; Roll to the Top: Journeys, QE, Big Top and Basketboss remain directory-only. See `research/coverage/allplay-review-progress.md` for each source and decision.
+
+On this shared checkout, `npm run verify` passed Astro check (75 files, zero diagnostics), lint, 40 unit tests, content validation, and the **257-page** preview build. Static/SEO audits passed for **2,795 internal links**. `npm run test:release` passed the preview-empty, production-empty, synthetic approved content, disabled mode and missing-live-config cases. The complete browser suite passed **207/207 in one run** across Chromium, Firefox and WebKit (ignored logs: `artifacts/allplay-round2-verify.log`, `artifacts/allplay-round2-browser.log`). The browser run ended before three new research drafts were added; `npm run content:validate`, `npm run content:coverage` and a second complete `npm run verify` passed afterward on the **433-draft** snapshot (`artifacts/allplay-round2-final-verify.log`). The added drafts are development-only and do not change the 240 public articles or random mix.
+
+The new Fudacoma, Blue Orange and Artipia drafts raise researched coverage to **411 of 1,320 identities**, with **909** pending. The Artipia draft is held for source provenance and variant comparison. The owner's visual-design decision remains deferred; canonical domain and maintained contact remain undecided. The picker/reveal edits from another task remain uncommitted. No public deployment occurred.
 
 ## Allplay editorial checkpoint — 2026-09-23 23:55 UTC
 
