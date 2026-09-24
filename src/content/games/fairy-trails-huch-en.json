@@ -1,0 +1,43 @@
+{
+  "id": "fairy-trails-huch-en",
+  "slug": "fairy-trails-huch-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "eed456d6f559b7a4c273f4df8a05455fa4385d3e157844f1fe920d4b2d6b2f53",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Fairy Trails",
+  "aliases": [],
+  "editionLabel": "HUCH! 2020 multilingual rules, English two-player section",
+  "firstPlayerRule": "Whoever most recently walked in a forest while wondering whether hidden folk exist goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player places a card from their hand and draws a replacement at the end of the turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://produkte.hutter-trade.com//files/products/47/200/de/huc_19_10100_Fairy%20Trails_Auflage_A_2020_Rules_sc.pdf",
+      "title": "Fairy Trails — Hutter Trade rules",
+      "publisher": "Hutter Trade",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "English section: Preparation; How to Play, opening sentence; PDF pages 5, 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Whoever most recently walked in a forest while wondering whether hidden folk exist goes first. Local source SHA-256: 6d54e74a99350d7c2ab83fa5ff9739d1f9f75b7cd7ca33c89b9514cce766ce03. Actual rendered English pages 5 and 6 were checked. The full English condition is retained rather than silently shortened to the German wording. Editorial review 2026-09-23: Rechecked the cited starting instruction and opening-turn context in the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The English wording includes the thought about hidden folk; the German opening sentence in the same file mentions only the forest walk.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "caverna-cave-vs-cave-mayfair-en",
+  "slug": "caverna-cave-vs-cave-mayfair-en",
+  "gameName": "Caverna: Cave vs Cave",
+  "aliases": ["Caverna: Cave vs. Cave"],
+  "language": "en",
+  "editionLabel": "Mayfair Games First Wealth English rules",
+  "firstPlayerRule": "Choose at random who receives the starting-player marker. As an explicit alternative, let the smaller player begin.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The marker holder acts first in each round. At round end, pass the marker to the opponent so the opening turn alternates between players."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/56/be/12-caverna-cave-vs-cave-rulebook.pdf",
+      "title": "Caverna: Cave vs Cave — First Wealth English rulebook",
+      "publisher": "Mayfair Games",
+      "printedPages": ["2", "3"],
+      "pdfPagesOneBased": [2, 3],
+      "location": "Setup: Additional Cavern, Action Markers, Walls and Starting Player; Course of Play",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 (printed page 2) of the Mayfair Games rulebook preserved by 1jour-1jeu. Setup specifies random selection or the smaller player as an alternative. Page 3 sets round order and transfers the marker after each round. SHA-256: 2b231dab47b437b5e080ef0e130e3017c9e92453d301dd76df827951ded77719. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The alternate size-based criterion has no tie-break if players are equally small."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,40 @@
+{
+  "id": "relic-runners-days-of-wonder-en",
+  "slug": "relic-runners-days-of-wonder-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "85ed5cc607f3fee8cd5e178cae915e52d1f3461b90029b7816685bda60dc1623",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Relic Runners",
+  "aliases": [],
+  "editionLabel": "Days of Wonder English rules, 2015 file",
+  "firstPlayerRule": "Start with whoever saw a relic most recently. If nobody in the group has ever seen a relic, use the most recent visit to a shrine or temple instead. Then take turns clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Choose the starting player before turning over the top tile of each purple temple."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/rr_rules_2015_en.pdf",
+      "title": "Relic Runners — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setting up the game, final starting-player and purple-temple instructions; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.daysofwonder.com/other-games/. Finding: Start with whoever saw a relic most recently, then take turns clockwise. Local source SHA-256: ec5b12321a37124f594e298ea0ead90531f262abcef2d7830f831591ba96420a. The English page identifies both the relic criterion and the shrine/temple alternative. Copyright and layout text identify the 2015 file; the hosting path is not an edition date. The starting passage and nearby setup context were visually inspected. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, official alternative and variant context against publisher PDF pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The official alternative covers nobody having seen a relic. The passage does not resolve equally recent visits or nobody meeting the alternative criterion.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

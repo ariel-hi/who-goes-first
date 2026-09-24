@@ -1,0 +1,38 @@
+{
+  "id": "wormholes",
+  "slug": "wormholes",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "cd2d7eccfb8ab47b8aa575c72130084e38e096d987ed02e2bb197662b618aa34",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Wormholes",
+  "aliases": [],
+  "editionLabel": "English AEG rules, eight-page publisher PDF",
+  "firstPlayerRule": "The player who most recently went through a doorway starts. The rules also allow choosing randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2022/02/Wormholes_BaseGame_1P_Rulebook_FINAL.pdf",
+      "title": "Wormholes — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup step 8; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/wormholes/. Finding: The player who most recently went through a doorway starts. The rules also allow choosing randomly. Local source SHA-256: b67a024d8a551f44ec75c6e8520da71aaf9b6e2a4a49533826162af601a81310. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

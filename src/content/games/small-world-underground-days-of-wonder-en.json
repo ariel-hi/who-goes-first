@@ -1,0 +1,43 @@
+{
+  "id": "small-world-underground-days-of-wonder-en",
+  "slug": "small-world-underground-days-of-wonder-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "29164822b8691640e6313cd34e8e906c97ca67529b9112a5112807db279c491f",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Small World Underground",
+  "aliases": [
+    "Small World: Underground"
+  ],
+  "editionLabel": "Days of Wonder English rules, copyright 2009–2018",
+  "firstPlayerRule": "The last person to visit a cave or cellar starts. Turns then go clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player advances the game-turn marker before starting each new round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/7909-SWU-Rules-EN.pdf",
+      "title": "Small World Underground — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Starting the game on printed page 4; first-turn context on the facing page; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.daysofwonder.com/game/small-world-underground/. Finding: The last person to visit a cave or cellar starts. Turns then go clockwise. Local source SHA-256: 60f651c9af8884875d968d00fbf2f95298833ead617ea1d2b39f3bc55ad9bde0. The source is a spread PDF: PDF page 3 holds printed pages 4 and 5. The starting criterion is on the left, printed page 4. Copyright on the final source page ends in 2018. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, official alternative and variant context against publisher PDF pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

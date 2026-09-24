@@ -1,0 +1,39 @@
+{
+  "id": "targi",
+  "slug": "targi",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "56c9e30a7a5de6e1743849948d62ba4b7210b010811bcc44664652fcfbe536cb",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Targi",
+  "aliases": [],
+  "editionLabel": "English Thames & Kosmos rules, six-page spread PDF",
+  "firstPlayerRule": "The player who most recently ate dates goes first. If neither player has ever eaten dates, the player using blue starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Dates means the fruit."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1knX4DyUGYRA2FH59JS1aIar_6XFBKw-9/view",
+      "title": "Targi — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Preparation, starting-player instruction on the right-hand page; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The player who most recently ate dates goes first. Local source SHA-256: 499462e863c1ba9ef3b9b2a6a07b86f1038765e732a4dda933ce834abb5ee727. The fallback applies when neither player has eaten dates; the source does not state a separate tie-break for both having eaten them together. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

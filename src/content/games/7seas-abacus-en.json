@@ -1,0 +1,43 @@
+{
+  "id": "7seas-abacus-en",
+  "slug": "7seas-abacus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3c3e4cc050547b16712ffb9a5f245f63fa764766c004961d53f39c7070c94b9a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "7Seas",
+  "aliases": [
+    "7 Seas"
+  ],
+  "editionLabel": "ABACUSSPIELE English rules, two-page folded-sheet PDF",
+  "firstPlayerRule": "Whoever most recently went to sea goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player takes the compass card, prepares and deals the round, and plays the first booty card. Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2022/01/7Seas_Regel_EN.pdf",
+      "title": "7Seas — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Set-up of the Game; Preparation of the Round; Course of the Game; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/7seas/. Finding: Whoever most recently went to sea goes first. Local source SHA-256: 5c1cb2de5647c017f38c87acab159682b994358a3f2264fc6779f2744209418f. The starting instruction is in the panel numbered 2 on PDF page 2; preparation and turn order are in the adjacent panel numbered 3. A beach visit was not substituted for going to sea. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

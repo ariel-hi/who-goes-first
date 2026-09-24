@@ -1,6 +1,12 @@
 # Content review queue
 
-**Owner-authorized assistant review: 242 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 468 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Eight HABA editions were checked against their publisher-linked English PDFs and approved on 2026-09-23: Animal Upon Animal, its Christmas Edition, Dancing Eggs, First Orchard, Honga, Rhino Hero, Rhino Hero: Super Battle, and Unicorn Glitterluck: Cloud Crystals. The Super Battle answer preserves the source's optional starter wording.
+
+Seven Looney Labs editions (Aquarius, Back to the Future: The Card Game, Chrononauts, Homeworlds, Just Desserts, Nanofictionary, and Star Trek Chrono-Trek) were checked against their publisher PDFs and approved on 2026-09-23. Official tie rules and the distinct solo or variant context remain explicit.
+
+Seven ABACUSSPIELE editions (7Seas, Leo, Mamma Mia! Plus, Shanghaien, So ein Mist, STOP, and Tajuto) were checked against their cached publisher PDFs and approved on 2026-09-23. Their source hashes and edition-specific wording are recorded in the exact approved revisions. These entries are in the game directory; random-mix eligibility remains separately reviewed.
 
 The Allplay editorial pass approved High Society, Panda Panda, River Valley Glassworks, Through the Desert, Habitats, Pollen, Switchbacks, Roll to the Top: Journeys, Pies, QE, Big Top and Basketboss after rechecking publisher PDF pages and source hashes. Eight of these twelve have standalone starting criteria eligible for the random mix. High Society's random selection is an official alternative in its main answer, not a tie-break. Roll to the Top: Journeys begins with a dice-roller role and simultaneous board filling; QE, Big Top and Basketboss assign game-specific roles. See `research/coverage/allplay-review-progress.md`.
 
@@ -15,6 +21,16 @@ On 2026-09-22 the owner explicitly delegated factual review to Codex: “I am no
 Run `npm run dev`. Normal local navigation opens `/dev/games/` (reviewed rules plus research drafts) and `/dev/house-rules/` (the 60 published original questions). Open `/dev/review/` for evidence, uncertainties and exact revision hashes, or `/dev/coverage/` for the full research inventory. These routes do not exist in a static build. Keep the development server on localhost. The remaining research collection has not completed this editorial pass; it is not waiting for the owner to read it.
 
 The 2026-09-23 editorial pass rechecked 55 portable Gamewright instructions against cached publisher text and source-file hashes, plus Azul, Carcassonne, Ticket to Ride (2015), and Love Letter (2025). Setup context, edition scope, clarifications, and explicit fallbacks were checked. Sushi Go! and Chomp! were also checked and approved for the directory only: their simultaneous starts cannot choose one person. Exact approved records live in `src/content/games/`; original research copies are preserved. The wider discovery inventory remains unfinished.
+
+The subsequent Gamewright pass checked 30 more edition records against rendered publisher manuals and source hashes. It kept team starts, first role assignments, cooperative variants, and simultaneous play distinctions in their catalog answers. The 20 AEG records were likewise checked against rendered publisher PDFs, including the original and Premium Valley of the Kings editions and Smash Up's separate faction-drafting procedure.
+
+The Blue Orange pass checked 13 more edition records against rendered publisher pages and source hashes. Both Spin Circus editions retain their different criteria; Lost Seas remains labeled as an English summary of the French manual. Disc Cover's competitive variant and the Next Station controller roles are scoped to the inspected editions.
+
+The Pegasus pass checked 16 more edition records against publisher PDFs and source hashes, including explicitly labeled German-to-English summaries. The Days of Wonder pass checked nine more records. Its two Ticket to Ride: Europe editions retain different starting instructions; Small World of Warcraft retains its separate team turn order; Relic Runners' official no-relic alternative appears in its main answer.
+
+The Thames & Kosmos pass checked eight more entries against publisher-linked PDFs. Catch the Moon and Lost Cities: Roll & Write retain their stated tie rules. Targi and Switch & Signal show their official no-match alternatives in the main answers, with the cooperative role clear for the latter.
+
+The Queen Games, dV Giochi, Pandasaurus, Repos, AMIGO, Schmidt and Gutenberg passes added 40 more verified edition records. Image-based dV pages were checked directly; AMIGO's 3 Chapters has separate two-player and larger-group instructions. Official alternatives in Super-Vampire, Viva Topo!, The Fox Experiment, Secrets and Tempel des Schreckens appear in the main answers rather than tie-break fields.
 
 The Ravensburger pass adds eight reviewed catalog entries and seven portable criteria. Chronicles of Light remains directory-only because its first Leader coordinates a cooperative round without individual turns. Dutch ALIEN, German Coco Crazy and Italian Horrified instructions are explicitly labeled English summaries of those source languages. Asara remains held for its missing initial setup sheet. See `research/coverage/ravensburger-progress.md`.
 
@@ -50,7 +66,7 @@ The Dized follow-up pass adds ten reviewed records and six portable criteria. Bi
 
 The 86 Gamewright drafts added on 2026-09-23 UTC have publisher URLs, PDF page locations, source-file hashes, and individually written starting answers. Review these through the same queue. Their edition labels identify the exact linked publisher PDF without guessing a publication year. Particular review points: Imagine has an explicit youngest-player fallback; Chomp! begins simultaneously; Marshmallow Test's dealer also leads; Three of a Crime's first eyewitness and first detective are different people; Hit List has a neutral-reader option. Boochie and Hit or Miss remain unresolved source leads and have no invented answer pages. See `research/coverage/gamewright-progress.md`.
 
-The Blue Orange batch adds 13 edition records for 12 more inventory games. Review the separate US/UK Spin Circus answers and their cross-linked sources; Disc Cover's competitive-only criterion; the Next Station controller roles; and Lost Seas' explicitly labeled English summary of a French manual. All relevant starting instructions were visually inspected. See `research/coverage/blue-orange-progress.md`.
+The Blue Orange batch adds 13 approved edition records for 12 more inventory games. The separate US/UK Spin Circus answers and their cross-linked sources; Disc Cover's competitive-only criterion; the Next Station controller roles; and Lost Seas' explicitly labeled English summary of a French manual were checked against rendered publisher pages. See `research/coverage/blue-orange-progress.md`.
 
 The Rio Grande and Zoch batches add 14 more researched entries. Pay attention to Beyond the Sun's official random tie-break, Butterfly's official undecidable-case fallback, Trans-Siberian Railroad's auction/Phase 1 distinction, and the simultaneous or cooperative role assignments in Niagara, Alles Tomate!, Für die Katz and Ist da wer?!. See `research/coverage/rio-grande-progress.md` and `zoch-progress.md`.
 

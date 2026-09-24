@@ -1,0 +1,42 @@
+{
+  "id": "the-pillars-of-the-earth",
+  "slug": "the-pillars-of-the-earth",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a69dcc1c67261a32a1efd2a65d51c12fd3127fa785a99995c2d60145f6febc5a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "The Pillars of the Earth",
+  "aliases": [
+    "Pillars of the Earth"
+  ],
+  "editionLabel": "English Thames & Kosmos rules, eight-page publisher PDF",
+  "firstPlayerRule": "The player who most recently saw a cathedral starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This chooses the initial starting player, who receives the cathedral's nave piece."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/691530_pillarsofearth_manual.pdf",
+      "title": "The Pillars of the Earth — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Preparation, choosing the starting player; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The player who most recently saw a cathedral starts the first round. Local source SHA-256: 462f3a6f9c963012a5b6288c9f27460f070d9717d7e131c3723fa142ba8d2714. The printed page number is 2, while its position in the downloaded PDF is 3. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

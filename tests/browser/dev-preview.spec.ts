@@ -15,7 +15,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await expect(page.locator('.player')).toHaveCount(5);
   await page.getByRole('button', { name: 'Paste a list' }).click();
   await page.getByLabel('Player names').fill('Mina\nAlex\nJo');
-  for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Marble Race']) {
+  for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) {
     await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();
     await page.getByRole('button', { name: 'Pick a player' }).click();
     await expect(page.locator('.winner-announcement')).toContainText(/(Mina|Alex|Jo) goes first/);
@@ -153,8 +153,8 @@ test('all researched games are searchable but only reviewed portable rules enter
   await page.getByRole('searchbox').fill('Imagine');
   await page.locator('.game-list li:visible a').click();
   await expect(page.getByRole('heading', { name: 'Official tie-break or fallback' }).locator('..')).toContainText('youngest');
-  await page.goto('http://127.0.0.1:4321/dev/rules/targi/');
-  await expect(page.getByRole('heading', { name: 'Official tie-break or fallback' }).locator('..')).toContainText('neither player has ever eaten dates');
+  await page.goto('http://127.0.0.1:4321/games/targi/');
+  await expect(page.locator('.rule-answer')).toContainText('If neither player has ever eaten dates');
   await page.goto('http://127.0.0.1:4321/dev/games/');
   await page.getByRole('searchbox').fill('Spin Circus');
   await expect(page.locator('.game-list li:visible')).toHaveCount(2);

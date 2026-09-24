@@ -1,0 +1,33 @@
+{
+  "id": "a-column-of-fire-thames-kosmos-en",
+  "slug": "a-column-of-fire-thames-kosmos-en",
+  "gameName": "A Column of Fire",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Thames & Kosmos English rulebook, product 692650",
+  "firstPlayerRule": "Whoever was most recently in a church takes the starting player marker and begins the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starting player does not change during the game. Other players follow clockwise in both halves of each year."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thamesandkosmos.com/manuals/full/692650_acolumnoffire_manual.pdf",
+      "title": "A Column of Fire — Thames & Kosmos English manual",
+      "publisher": "Thames & Kosmos",
+      "printedPages": ["2", "3"],
+      "pdfPagesOneBased": [2, 3],
+      "location": "Game Preparation; Overview of Gameplay: Course of the Game",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The publisher's support catalog identifies item 692650 as A Column of Fire and links the English manual. Rendered PDF page 2 says the most recent church visitor receives the starting player marker and that this player does not change. Page 3 confirms clockwise order in both halves of a year. Local source SHA-256: 6744a582019f4e0933ea47bb39cfe49d95c476040e263cd59b02672b9e636616. Publisher catalog: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The manual states no tie-break for equally recent church visits."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

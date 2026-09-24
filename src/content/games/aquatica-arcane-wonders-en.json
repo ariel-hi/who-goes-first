@@ -1,0 +1,41 @@
+{
+  "id": "aquatica-arcane-wonders-en",
+  "slug": "aquatica-arcane-wonders-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4196d7d540390caf4784caae90ba2074455c4ae3b45c7ed28a9c5647141578b8",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Aquatica",
+  "aliases": [],
+  "editionLabel": "Arcane Wonders English rulebook, base game",
+  "firstPlayerRule": "The player who most recently dived in the sea is first in turn order.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise from the first player. If using King cards in basic mode, give King 1 to the first player, King 2 to the second player, and so on."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.arcanewonders.com/wp-content/uploads/2021/05/AQUATICA_rules_200x200_JANUARY.pdf",
+      "title": "Aquatica — Arcane Wonders English base-game rulebook",
+      "publisher": "Arcane Wonders",
+      "printedPages": [
+        "7",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        12
+      ],
+      "location": "Player Setup, step 3; How to Play: Player Turns",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered publisher page 7 gives the sea-diving criterion and explains King-card numbering for basic mode. Page 12 confirms clockwise turns. This is the base game, not the Coral Reefs expansion. Source SHA-256: 06b8328dcdf4f2f2cf002f1f06f152b59ca6ecd1f69501fb74f7512acc51daf9. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the rendered publisher setup and turn-order pages.",
+  "uncertainty": [
+    "The rulebook does not specify a tie-break for equally recent dives."
+  ]
+}

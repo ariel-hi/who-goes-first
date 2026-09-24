@@ -37,7 +37,7 @@ test('inline names survive count changes; large groups reflow without an interna
   for (const width of [1366, 390, 320]) {
     await page.setViewportSize({ width, height: 844 });
     for (const count of [2, 5, 8, 12, 20, 50, 4]) {
-      await page.getByLabel('Player count', { exact: true }).selectOption(String(count));
+      await page.getByLabel('Player count', { exact: true }).fill(String(count));
       await expect(page.locator('.player')).toHaveCount(count);
       await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Magnificent Eucalyptus');
       await expect(page.getByLabel('Name for player 2', { exact: true })).toHaveValue('王芳');
@@ -49,33 +49,37 @@ test('inline names survive count changes; large groups reflow without an interna
   expect(errors).toEqual([]);
 });
 
-test('new reveal download failure and reduced motion preserve the same result', async ({ page }) => {
+test('new reveal download failure preserves the selected player with a visible fallback', async ({ page }) => {
   await controlledRandom(page, 3);
   await page.route('**/*TableReveals*.js*', route => route.abort());
   await ready(page, '/methods/spinner/');
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(announcement(page)).toContainText('Seat 4 goes first');
-  await page.unroute('**/*TableReveals*.js*');
+  await expect(page.getByText('Visual unavailable. The selected player is shown below.')).toBeVisible();
+});
+
+test('reduced motion preserves the result and settled visual', async ({ page }) => {
+  await controlledRandom(page, 3);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await ready(page, '/methods/towers/');
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(announcement(page)).toContainText('Seat 4 goes first');
-  await expect(page.locator('.table-reveal')).toHaveCount(0);
+  await expect(page.locator('.table-reveal')).toHaveAttribute('data-settled', 'true');
 });
 
-for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Marble Race']) test(`${mode} reveals the same preselected outcome`, async ({ page }) => {
+for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) test(`${mode} reveals the same preselected outcome`, async ({ page }) => {
   await controlledRandom(page, 1); await ready(page);
   await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(announcement(page)).toContainText('Seat 2 goes first.');
 });
 
-test('skip, resize and tab interruption preserve the locked outcome', async ({ page }) => {
+test('resize and tab interruption preserve the locked outcome without an early reveal control', async ({ page }) => {
   await controlledRandom(page, 3); await ready(page, '/methods/balloon/');
   await page.getByRole('button', { name: 'Pick a player' }).click();
-  await expect(page.getByRole('button', { name: 'Show result now' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Show result now' })).toHaveCount(0);
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.getByRole('button', { name: 'Show result now' }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   await expect(announcement(page)).toContainText('Seat 4 goes first.');
   await page.waitForTimeout(500);
   await page.getByRole('button', { name: 'Pick again' }).click();
@@ -105,16 +109,49 @@ test('Unicode, duplicate disambiguation, invalid input and literal HTML', async 
 
 test('counts 2, 12, 13, 50 and 51 never drop a player', async ({ page }) => {
   await ready(page);
-  await page.getByLabel('Player count').selectOption('2'); await expect(page.locator('.player')).toHaveCount(2);
+  const count = page.getByLabel('Player count');
+  await expect(count).toHaveAttribute('type', 'text');
+  await count.fill('1'); await expect(page.locator('.player')).toHaveCount(4);
+  await count.fill('51'); await expect(page.locator('.player')).toHaveCount(4);
+  await count.blur(); await expect(count).toHaveValue('4');
+  await count.fill('2'); await expect(page.locator('.player')).toHaveCount(2);
   await expect(page.getByRole('button', { name: 'Remove a player' })).toBeDisabled();
-  await page.getByLabel('Player count').selectOption('12'); await expect(page.getByRole('radio', { name: /^Balloon Rise/ })).toBeEnabled();
-  await page.getByLabel('Player count').selectOption('13'); await expect(page.locator('input[value=quick]')).toBeDisabled();
-  await expect(page.locator('input[value=instant]')).toBeChecked();
-  await page.getByLabel('Player count').selectOption('50'); await expect(page.locator('.player')).toHaveCount(50);
+  await count.fill('12'); await expect(page.getByRole('radio', { name: /^Balloon Rise/ })).toBeEnabled();
+  await count.fill('13'); await expect(page.locator('input[value=quick]')).toBeChecked();
+  await expect(page.getByRole('radio', { name: 'Dice Roll' })).toBeEnabled();
+  await expect(page.getByRole('radio', { name: 'Coin Flip' })).toBeEnabled();
+  await expect(page.locator('input[name=presentation]')).toHaveCount(4);
+  await count.fill('50'); await expect(page.locator('.player')).toHaveCount(50);
+  await expect(page.locator('input[name=presentation]')).toHaveCount(2);
+  await expect(page.getByRole('radio', { name: 'Quick' })).toBeEnabled();
   await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
   await page.getByRole('button', { name: 'Paste a list' }).click();
   await page.getByLabel('Player names').fill(Array.from({ length: 51 }, (_, i) => `Player ${i + 1}`).join('\n'));
   await expect(page.locator('.player')).toHaveCount(51); await expect(page.getByRole('alert')).toContainText('no one has been removed');
+});
+
+test('larger groups can use dice and coins while the toolbar stays visible during a reveal', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await controlledRandom(page, 12); await ready(page);
+  await page.getByLabel('Player count').fill('13');
+  await page.getByRole('radio', { name: 'Dice Roll' }).check();
+  const toolbar = page.locator('.roster-tools');
+  const before = await toolbar.locator('button').evaluate(button => getComputedStyle(button).opacity);
+  await page.getByRole('button', { name: 'Pick a player' }).click();
+  await expect(toolbar).toBeVisible();
+  await expect(toolbar).toContainText('Paste a list');
+  expect(await toolbar.evaluate(element => (element.closest('fieldset') as HTMLElement).inert)).toBe(true);
+  expect(await toolbar.locator('button').evaluate(button => getComputedStyle(button).opacity)).toBe(before);
+  expect(await page.locator('.reveal-options').evaluate(element => (element as HTMLElement).inert)).toBe(true);
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(announcement(page)).toContainText('Seat 13 goes first');
+  await expect(page.locator('.dice-reveal .reveal-player')).toHaveCount(13);
+  await page.getByLabel('Player count').fill('24');
+  await page.getByRole('radio', { name: 'Coin Flip' }).check();
+  await page.getByRole('button', { name: 'Pick a player' }).click();
+  await expect(announcement(page)).toContainText('Seat 13 goes first');
+  await expect(page.locator('.coin-reveal .reveal-player')).toHaveCount(24);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
 test('secure RNG failure is recoverable with no fallback winner', async ({ page }) => {
@@ -163,8 +200,8 @@ test('blocked storage and blocked audio cannot block the result', async ({ page 
 test('reduced motion is immediate and keyboard activation works', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' }); await controlledRandom(page, 2); await ready(page, '/methods/balloon/');
   await page.getByRole('button', { name: 'Pick a player' }).focus(); await page.keyboard.press('Enter');
-  await expect(announcement(page)).toContainText('Seat 3 goes first'); await expect(page.locator('.balloon-field')).toHaveCount(0);
-  await expect(page.getByText(/Reduced motion/)).toBeVisible();
+  await expect(announcement(page)).toContainText('Seat 3 goes first'); await expect(page.locator('.balloon-field')).toHaveAttribute('data-settled', 'true');
+  await expect(page.getByText(/Reduced motion/)).toHaveCount(0);
 });
 
 test('failed Balloon download still reveals the text result', async ({ page }) => {
@@ -223,7 +260,7 @@ test('twelve long names remain readable on mobile Balloon and result states', as
   await page.getByRole('button', { name: 'Pick a player' }).click(); await page.locator('.balloon-field').waitFor();
   await expect(page.locator('.balloon-player')).toHaveCount(12);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  await page.getByRole('button', { name: 'Show result now' }).click(); await expect(announcement(page)).toContainText('LongName10');
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result'); await expect(announcement(page)).toContainText('LongName10');
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze()).violations).toEqual([]);
 });
 

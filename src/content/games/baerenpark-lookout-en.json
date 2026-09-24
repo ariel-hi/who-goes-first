@@ -1,0 +1,41 @@
+{
+  "id": "baerenpark-lookout-en",
+  "slug": "baerenpark-lookout-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "f5e0b586933ee310171f47b28065a89a48cb44cef2597e20b54c175f42529243",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Bärenpark",
+  "aliases": [
+    "Barenpark"
+  ],
+  "editionLabel": "Lookout Games English rulebook",
+  "firstPlayerRule": "The player who most recently visited an animal park starts. The rules also allow choosing the starting player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting tiles depend on seating order: the first player gets a Toilet, the second a Playground, the third a Playground in a four-player game or a Food Street in a three-player game, and the fourth a Food Street. Play then proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://lookout-spiele.de/upload/en_baerenpark.html_Rules_B%C3%A4renpark_EN.pdf",
+      "title": "Bärenpark — English rulebook",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup step 8 and Course of Play",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The publisher-hosted English PDF, page 3, setup step 8 names the most recent animal-park visitor and explicitly offers random selection as an alternative. The Course of Play on the same page sets clockwise order. The publisher web page links the English rules. Reviewed against the PDF's indexed text on 2026-09-23; the publisher server denied a direct file download. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the cited starting instruction against the publisher-authored rulebook.",
+  "uncertainty": [
+    "The rulebook gives no tie-break for equally recent animal-park visits; random selection is an explicit alternative."
+  ]
+}

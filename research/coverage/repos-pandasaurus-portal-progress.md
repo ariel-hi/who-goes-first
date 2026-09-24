@@ -20,7 +20,7 @@ Fifteen new draft records cover fifteen further discovery identities. The local 
 | Brew | Printed/PDF pages 3–4 | Latest tea/coffee brewing; everyone rolls dice before individual turns |
 | Gutenberg | Printed/PDF pages 4–5, 7, 16 | Thickest among each person's last-read books; initiative ordering and automa token override |
 
-Every cited starting passage and relevant mode context was inspected as a rendered image. Manually written batch records, intake manifests and source SHA-256 hashes are separate from approvals. All fifteen records remain `draft`, with null approval fields.
+Every cited starting passage and relevant mode context was inspected as a rendered image. Codex completed owner-authorized editorial review of all fifteen records on 2026-09-23; exact approved revisions are under `src/content/games/`. Manually written batch records, intake manifests and source SHA-256 hashes remain available for provenance.
 
 Repos' Last Bastion product page directly links its staging-named CDN file. That publisher-selected location was preserved. Repos' Terror in Meeple City page links the Rampage manual; the alias is explicit. The Spooky Tower PDF has a stray extracted page-number object, but the rendered cited page is page 4, not a spread.
 

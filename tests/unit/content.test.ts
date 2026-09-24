@@ -3,6 +3,15 @@ import { readRecords } from '../../src/lib/content/catalog';
 import { assertPublishable, contentRevision, publicRule, ruleSchema } from '../../src/lib/content/schema';
 import { searchRank } from '../../src/lib/search';
 import { getCoverage } from '../../src/lib/content/coverage';
+import { getBoardGames } from '../../src/lib/content/board-games';
+test('public board game directory includes every discovered identity and links only approved matching rules', () => {
+  const games = getBoardGames();
+  expect(games).toHaveLength(1320);
+  expect(new Set(games.map(game => game.bggId)).size).toBe(games.length);
+  expect(games.find(game => game.name === 'Azul')?.rules.map(rule => rule.id)).toContain('azul-2018-en');
+  expect(games.find(game => game.bggId === '377449')?.rules.map(rule => rule.id)).not.toContain('chomp-gamewright-en');
+  expect(games.some(game => game.rules.length === 0)).toBe(true);
+});
 test('coverage does not merge unrelated games with identical or punctuation-equivalent names', () => {
   const coverage = getCoverage();
   const chomp = coverage.games.find(game => game.bggId === '377449');

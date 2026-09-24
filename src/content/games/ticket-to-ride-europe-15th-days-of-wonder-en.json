@@ -1,0 +1,59 @@
+{
+  "id": "ticket-to-ride-europe-15th-days-of-wonder-en",
+  "slug": "ticket-to-ride-europe-15th-days-of-wonder-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c73a6417d9b3f7ad7126a5b23dd2848989e3728766d102b59bee566d6aeff3d1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Ticket to Ride: Europe",
+  "aliases": [
+    "Ticket to Ride Europe",
+    "Ticket to Ride Europe 15th Anniversary",
+    "TTR Europe"
+  ],
+  "editionLabel": "Days of Wonder English 15th Anniversary rules, copyright 2004–2021",
+  "firstPlayerRule": "Start with the player who has visited the greatest number of European countries during their lifetime, then continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This is the 15th Anniversary rulebook's instruction. The refreshed 7281N English rulebook instead allows the group to choose its own starting method."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2023/07/t2re15-rules-EN.pdf",
+      "title": "Ticket to Ride: Europe — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "4",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        8
+      ],
+      "location": "The Game Turn; Variants and edition credits; PDF pages 4, 8",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2026/08/7281N_TICKET2RIDEeuropeV2_RULES_EN_20250429.pdf",
+      "title": "Ticket to Ride: Europe — refreshed English rules, 7281N download",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "The Game Turn, group-chosen starting method in the refreshed rules",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2023/07/t2re15-rules-EN.pdf. Finding: Start with the player who has visited the greatest number of European countries during their lifetime, then continue clockwise. Local source SHA-256: 9dc1f4210477d61dcd9b1baed990f4080fe372b657f6531f6e57c98197487fae. Rendered cover, printed/PDF page 4 and final page 8 were inspected. Anniversary symbols on the cards and the copyright ending in 2021 identify this edition. The separate current publisher file's first-player instruction was inspected and differs; neither answer is generalized across editions. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, official alternative and variant context against publisher PDF pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

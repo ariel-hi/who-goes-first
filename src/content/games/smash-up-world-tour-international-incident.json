@@ -1,0 +1,44 @@
+{
+  "id": "smash-up-world-tour-international-incident",
+  "slug": "smash-up-world-tour-international-incident",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "f2b155771bb59c6df4c95ec1db3d5a1e12e856d8dbe932d96d8f5c8178525191",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Smash Up: World Tour – International Incident",
+  "aliases": [
+    "Smash Up World Tour International Incident"
+  ],
+  "editionLabel": "World Tour: International Incident, English AEG expansion rules, twenty-page publisher PDF",
+  "firstPlayerRule": "The player who most recently visited another country starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The formal faction-drafting sidebar separately chooses the first drafter randomly."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/SmashUp_WorldTourInternationalIncident_Expansion_Rulebook_Optimized.pdf",
+      "title": "Smash Up: World Tour – International Incident — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Setup, final paragraph; formal drafting sidebar; PDF pages 4, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/smash-up/. Finding: The player who most recently visited another country starts. Local source SHA-256: dccd686918e1eb8d6407ca02c3ef44717a097367815a8a800cc5792ca46e724e. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

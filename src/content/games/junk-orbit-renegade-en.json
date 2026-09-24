@@ -1,0 +1,44 @@
+{
+  "id": "junk-orbit-renegade-en",
+  "slug": "junk-orbit-renegade-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "331ab77905d2561829e6cbd160bca90b34d31570d21345b480547d0939e44e78",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Junk Orbit",
+  "aliases": [],
+  "editionLabel": "Renegade English rulebook, 2023 copyright, with solo mode",
+  "firstPlayerRule": "The player who most recently took out the garbage goes first. If nobody has done so, the rulebook suggests racing to the nearest bin to take out the garbage. Continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This opening rule applies to multiplayer play. In solo mode, one person controls the fleet and may activate any of their ships on each turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Junk%20Orbit/JunkOrbit2_Rulebook_WEB.pdf",
+      "title": "Junk Orbit — Renegade Game Studios rules",
+      "publisher": "Renegade Game Studios",
+      "printedPages": [
+        "6",
+        "11",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        11,
+        12
+      ],
+      "location": "How to Play opening paragraph; Solo Mode setup and Activating Ships; PDF pages 6, 11, 12",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://renegadegamestudios.com/junk-orbit/. Finding: The player who most recently took out the garbage goes first. Continue clockwise. Local source SHA-256: 9dbd8b9c75956244b528e3baaaa0e0630031b4338c62331bb36c067c428d5ef7. The 16-page publisher download is named JunkOrbit2; page 15 carries a 2023 copyright. The official fallback is a suggestion in parentheses, not an instruction added by this site. Editorial review 2026-09-23: Rechecked the cited starting instruction and the applicable play sequence in the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The fallback is for nobody having taken out the garbage; the rule does not separately resolve equally recent garbage trips.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

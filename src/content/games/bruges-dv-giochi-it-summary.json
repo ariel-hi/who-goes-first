@@ -1,0 +1,42 @@
+{
+  "id": "bruges-dv-giochi-it-summary",
+  "slug": "bruges-dv-giochi-it-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "665d39dba657eb2fbf76e0f9241d485bb1a8caca45ef2dc226e10b884ba9be47",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Bruges",
+  "aliases": [],
+  "editionLabel": "dV Giochi Italian rules, English summary",
+  "firstPlayerRule": "Whoever most recently ate Belgian chocolate goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player receives the starting-player marker and five dice, draws cards first, and rolls the dice in the following phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/net/bruges/bruges-regole.pdf",
+      "title": "Bruges — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Preparazione, step 8: Primo giocatore; Il gioco, phases 1 and 2; PDF pages 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: Whoever most recently ate Belgian chocolate goes first. Local source SHA-256: 4e71ea9c3fbd59d21dbde73606ece184ee503fa02783c3251a5e10d02e1394ed. The criterion is Belgian chocolate specifically, not any chocolate. The starting passage is visibly on PDF page 2. Editorial review 2026-09-23: Rechecked the cited starting instruction, role and opening-turn context against the publisher PDF, including rendered image-only pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "bargain-quest-renegade-en",
+  "slug": "bargain-quest-renegade-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3cdf2056589eb6a306d68a76e8a8c862ed9a95eb4a110fe93985924af5ef9f89",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Bargain Quest",
+  "aliases": [],
+  "editionLabel": "English base-game rulebook, 112-item-card edition",
+  "firstPlayerRule": "Give the initial quest token to the player who most recently paid cash for goods or a service.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first Supply step uses a shared draft: everyone chooses a card before passing the remaining cards left. The token does not give its holder the first choice of every phase.",
+    "Shopping order depends on the displays. Equal appeal is broken by total displayed price, then clockwise order from the quest-token holder. The last shop to receive a hero takes the token.",
+    "The current token holder starts the Upgrade step, followed by the other players clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bargainquestgame.com/s/Bargain-Quest-base-game-Rulebook.pdf",
+      "title": "Bargain Quest — Renegade Game Studios rules",
+      "publisher": "Renegade Game Studios",
+      "printedPages": [
+        "3",
+        "5",
+        "7",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        8,
+        12
+      ],
+      "location": "Setup step 3; Supply, Shopping and Upgrade steps; PDF pages 4, 6, 8, 12",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://bargainquestgame.com/rulebooks. Finding: Give the initial quest token to the player who most recently paid cash for goods or a service. Local source SHA-256: ce5a7b8e39d90aac874031a896f60196dcabbec0c8fb483b14d772707c83a8bc. Downloaded from the creators’ official Game Rules page, which links the base game and expansions separately. The visible component list identifies the 112-item-card edition; no publication year is inferred from the URL. Editorial review 2026-09-23: Rechecked the cited starting instruction and the applicable play sequence in the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "brew-pandasaurus-en",
+  "slug": "brew-pandasaurus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ba7e32a85e9fc3aa275b7a6afb8b9605102f101a435c3c58149a21cc011010f0",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Brew",
+  "aliases": [],
+  "editionLabel": "Pandasaurus Games English rules, copyright 2021",
+  "firstPlayerRule": "Whoever most recently brewed a cup of tea or coffee gets the first-player marker. Turns proceed clockwise from that player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "At the start of the round, everyone rolls their six dice before the individual turns begin."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/52h76va9npox6p9/Brew%20Rulebook.pdf?dl=0",
+      "title": "Brew — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Player Setup step 9; Round Overview; PDF pages 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/brew. Finding: Whoever most recently brewed a cup of tea or coffee gets the first-player marker. Turns proceed clockwise from that player. Local source SHA-256: 43df40c343a72992a7963c87f1bbc5d5dba48167bc62190cb520739c14daf73f. Both cited rendered pages were inspected, including the dice-roll timing before turns. Copyright 2021 appears in the final credits. The publisher product links BGG 332386. The large primary PDF was retrieved completely with a 150 MB bound after exceeding the earlier 60 MB limit. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative, role and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

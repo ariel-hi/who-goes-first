@@ -1,0 +1,42 @@
+{
+  "id": "shake-that-city",
+  "slug": "shake-that-city",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "92af079e5a2c6355bc8bdc8ee0a592022a0a1187880890a10307b53355dd8e9e",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Shake That City",
+  "aliases": [],
+  "editionLabel": "English AEG base-game rules, eight-page optimized publisher PDF",
+  "firstPlayerRule": "Whoever most recently shook something is the first active player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The active player shakes the cubes and chooses a building color first. The other players then choose from the remaining colors."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/ShakeThatCity_BaseGame_Rulebook_Optimized.pdf",
+      "title": "Shake That City — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Game Setup step 6; Round Overview; PDF pages 4, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/shake-that-city/. Finding: Whoever most recently shook something is the first active player. Local source SHA-256: 502aeb6386e0448a1ff44dfd0bd453de1c9c4e559162c3f6071252e529241157. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

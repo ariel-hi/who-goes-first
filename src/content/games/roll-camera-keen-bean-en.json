@@ -1,0 +1,44 @@
+{
+  "id": "roll-camera-keen-bean-en",
+  "slug": "roll-camera-keen-bean-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e85ebe507cde6d6539d79bcb8adedd67ad681e6903d75d2647f228648e9bfe93",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Roll Camera!: The Filmmaking Board Game",
+  "aliases": [
+    "Roll Camera!",
+    "Roll Camera"
+  ],
+  "editionLabel": "English Keen Bean Studio rules, thirteen-sheet publisher-linked PDF",
+  "firstPlayerRule": "Whoever most recently filmed a movie starts. Alternatively, choose the starting player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is a cooperative game. The first player receives the six Crew dice and the Budget/Schedule dials."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.keenbean.studio/uploads/1/3/6/1/136105771/rc-rulebook-24-comp.pdf",
+      "title": "Roll Camera!: The Filmmaking Board Game — Keen Bean Studio rules",
+      "publisher": "Keen Bean Studio",
+      "printedPages": [
+        "1",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Game Overview and Game Setup step 8, left-hand pages; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.keenbean.studio/rollcamera.html. Finding: Whoever most recently filmed a movie starts. Alternatively, choose the starting player at random. Local source SHA-256: 7136f4fbb2c111b9c46ac065557ac44ac3e1efda1e9cf0f7462d7da021cf0f90. The PDF is image-only; the instruction was read visually. The direct Keen Bean Studio download is byte-identical (SHA-256 checked) to the Allplay-hosted copy whose pages were rendered and inspected. The record cites the direct publisher download. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the rendered publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

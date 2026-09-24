@@ -1,0 +1,40 @@
+{
+  "id": "snack-happens-pegasus-en",
+  "slug": "snack-happens-pegasus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "254ad79517783e2c8398cbb1159ca9fcf97e8039cd00d771eccb8f14932d5534",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Snack Happens",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English rules, four-page booklet",
+  "firstPlayerRule": "Whoever most recently raided the fridge goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player drops the discs into the fridge gameboard. Turns continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/99/09/d8/1717756513/4250231731730_en.pdf?ts=1752574419",
+      "title": "Snack Happens — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Game Play, opening paragraph; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Snack-Happens/66030G. Finding: Whoever most recently raided the fridge goes first. Local source SHA-256: c8fb47f3281a278540e0cc2165c359a77d03a9329ff212b1161d54a8ac1f7aff. The real-life fridge criterion was read on the rendered English page, separately from the in-game disc-dropping action. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode context and turn order against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "umbrella-pandasaurus-en",
+  "slug": "umbrella-pandasaurus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "50b38c65e3b183a6172e97202521d6183b59adbab4b9310bffae7958314c1b58",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Umbrella",
+  "aliases": [],
+  "editionLabel": "Pandasaurus Games licensed English rules, copyright 2024",
+  "firstPlayerRule": "The player with the nicest umbrella at home starts. Turns then proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/3pmywlhib568j7n92z4yv/PANUMBRECORE-UMBRELLA_RULES_EN-v4-2024-JAN24-1054.pdf?rlkey=mefch3do3o6wvhkv4r5dlxpqt&st=9rq44dj0&dl=0",
+      "title": "Umbrella — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup step 8; Turn Sequence, unnumbered PDF pages; PDF pages 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/umbrella. Finding: The player with the nicest umbrella at home starts. Turns then proceed clockwise. Local source SHA-256: 372d768c5ca166b7ee6d043e83f328979ecf53fc39303668cd04da38a31af589. Both rendered pages were inspected. The starting criterion is separate from the scoring-token setup typo immediately above it. Credits identify Lumberjacks Studio and licensing to Pandasaurus Games, copyright 2024. The publisher product links BGG 402125. The large primary PDF was retrieved completely with a 150 MB bound after exceeding the earlier 60 MB limit. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative, role and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rulebook does not define how to judge the nicest umbrella.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

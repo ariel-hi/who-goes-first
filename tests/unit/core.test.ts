@@ -16,9 +16,12 @@ describe('uniform selection', () => {
     expect(() => randomCollectionIndex(0)).toThrow();
     expect(() => randomCollectionIndex(2 ** 32 + 1)).toThrow();
   });
-  test('spinner geometry ends with every selected slice centered under the pin', () => {
-    for (let count = 2; count <= 12; count++) for (let winner = 0; winner < count; winner++) {
-      expect((spinnerRotation(winner, count) + winner * 360 / count) % 360).toBeCloseTo(0);
+  test('spinner geometry keeps varied stops inside the selected slice', () => {
+    for (let count = 2; count <= 12; count++) for (let winner = 0; winner < count; winner++) for (const turns of [4, 5, 6, -4, -5, -6]) {
+      for (const offset of [-.33, -.17, .11, .31]) {
+        const remainder = (spinnerRotation(winner, count, turns, offset) + winner * 360 / count - offset * 360 / count) % 360;
+        expect(Math.min(Math.abs(remainder), 360 - Math.abs(remainder))).toBeCloseTo(0);
+      }
     }
   });
   test.each([1, 2, 3, 12, 13, 50])('every position is reachable for %i candidates', n => {

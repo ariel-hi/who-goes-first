@@ -1,0 +1,45 @@
+{
+  "id": "lords-of-waterdeep-wizards-en",
+  "slug": "lords-of-waterdeep-wizards-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "0d10978a187e187f802c4a13e5ba35805e13193959fd4242cb5e668de5c0fbd4",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Lords of Waterdeep",
+  "aliases": [
+    "Dungeons & Dragons: Lords of Waterdeep"
+  ],
+  "editionLabel": "Wizards of the Coast English base game, 2012",
+  "firstPlayerRule": "The player who most recently visited another city goes first and receives the First Player marker.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player starts with 4 Gold. Going left around the table, each following player receives one more Gold than the previous player.",
+    "Turns begin with the First Player marker holder and proceed to the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://media.wizards.com/downloads/dnd/DnD_LOW_Rulebook_EN.pdf",
+      "title": "Lords of Waterdeep — Wizards of the Coast rules",
+      "publisher": "Wizards of the Coast",
+      "printedPages": [
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Start Play and Actions in a Turn; PDF pages 4, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://dnd-support.wizards.com/hc/en-us/articles/360000998123-Lords-of-Waterdeep. Finding: The player who most recently visited another city goes first and receives the First Player marker. Local source SHA-256: 6c366a04c287e8f9b4cac2f42231892f81d5a1b6c545eb22332a6e204ce4de2f. Publisher PDF uses two-page spreads: PDF page 4 contains printed pages 6–7, and PDF page 5 contains printed pages 8–9. Printed page 2 carries the 2012 copyright and document code 300-38851000-001-EN. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the cited publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ankh-gods-of-egypt-cmon-en",
+  "slug": "ankh-gods-of-egypt-cmon-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "907a35761307a85e374c7aa03dbc433266cc4d6d038cc9aa1cbd3027bf856993",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Ankh: Gods of Egypt",
+  "aliases": [],
+  "editionLabel": "CMON English rulebook (2021)",
+  "firstPlayerRule": "Choose the first player at random, or give the first turn to whoever owns the most cats.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Other players follow clockwise. The first player is player 1 in the scenario setup, with subsequent player numbers assigned to their left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/Ankh_Rulebook.pdf",
+      "title": "Ankh: Gods of Egypt — CMON English rulebook",
+      "publisher": "CMON",
+      "printedPages": [
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        13
+      ],
+      "location": "Setup, steps 4 and 9",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 13 of the final CMON-hosted English rulebook. Setup step 4 offers either random selection or the player who owns the most cats; clockwise seating order follows. Step 9 maps the first player to scenario player 1. Source SHA-256: ccfaa04d644e1bccf88439f9285fded0ffb9badd4700854ead2fefd69b8bac6c. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the rendered publisher setup page.",
+  "uncertainty": [
+    "The rulebook does not specify a tie-break if multiple players own the same greatest number of cats."
+  ]
+}

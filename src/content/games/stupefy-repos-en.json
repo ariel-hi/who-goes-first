@@ -1,0 +1,49 @@
+{
+  "id": "stupefy-repos-en",
+  "slug": "stupefy-repos-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "5f64eee4ac00afbe6530e0d9535681b952b3f120723e891a686211afee4c2755",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Stupefy!",
+  "aliases": [
+    "Stupefy",
+    "Harry Potter Stupefy"
+  ],
+  "editionLabel": "Repos Production English rules, copyright 2022",
+  "firstPlayerRule": "Whoever was the best notetaker at school becomes the first round's Favourite. That player announces and manages the phases.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Players prepare, target and cast their spells simultaneously; the Favourite is the round leader, not the only person who acts first.",
+    "When sharing rewards, start with the Favourite and continue clockwise among players whose flags are still standing. If the Favourite cannot participate, the first eligible player to their left chooses first.",
+    "Taking the Become the Favourite card gives you that role for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/Stupefy/stu-en01-rules-1661490886NNfKQ.pdf",
+      "title": "Stupefy! — Repos Production rules",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Setup step 9; Gameplay and Share Rewards; Become the Favourite card; PDF pages 2, 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.rprod.com/en/games/stupefy. Finding: Whoever was the best notetaker at school becomes the first round's Favourite. That player announces and manages the phases. Local source SHA-256: adaa0e53e940cef3ee97bd893a9e4e8b0d0a680c6e9a318fa74a2cc5a1657af8. All three rendered pages were inspected. The notetaker criterion assigns the first Favourite, while the fallback on page 3 applies only to taking rewards. It is not a tie-break for choosing the initial Favourite. The separate reward card controls the next round. The credits state copyright 2022. Editorial review 2026-09-23: Rechecked the cited starting instruction, role, phase and official alternative against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

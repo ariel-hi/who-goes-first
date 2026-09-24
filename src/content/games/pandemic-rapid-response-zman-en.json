@@ -1,0 +1,44 @@
+{
+  "id": "pandemic-rapid-response-zman-en",
+  "slug": "pandemic-rapid-response-zman-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "395b463e3b5bc9b7eb6250af31106a645f6cc01b710d82d2e8858c2208ea559a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Pandemic: Rapid Response",
+  "aliases": [
+    "Pandemic Rapid Response"
+  ],
+  "editionLabel": "Z-Man English rulebook, 2019 copyright",
+  "firstPlayerRule": "The player who most recently traveled by plane starts. Continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Flip the sand timer to begin. Although the game runs in real time, players take turns one at a time."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/Rapid-Response-Rulebook.pdf",
+      "title": "Pandemic: Rapid Response — Z-Man Games rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup step 9; Real-Time Gameplay and Player Turns; PDF pages 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zmangames.com/game/pandemic-rapid-response/. Finding: The player who most recently traveled by plane starts. Continue clockwise. Local source SHA-256: ad733a19d29d8bec1856a7743f72a27c4e691d6bde26fb4c45b756d326469176. The source is the eight-page English manual linked by the current publisher. The credits state 2019. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

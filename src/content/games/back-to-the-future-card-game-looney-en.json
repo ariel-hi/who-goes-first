@@ -1,0 +1,37 @@
+{
+  "id": "back-to-the-future-card-game-looney-en",
+  "slug": "back-to-the-future-card-game-looney-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7400451ced7bb1b225d00e45b66201d6e9a0f69f074338a18f08c99f28bb45ca",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Back to the Future: The Card Game",
+  "aliases": [],
+  "editionLabel": "Looney Labs English rules, copyright 2010",
+  "firstPlayerRule": "Whoever most recently watched a Back to the Future movie goes first.",
+  "officialTieBreak": "If tied, the player who has watched the movies the greatest number of times starts.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/BTTFRules.pdf",
+      "title": "Back to the Future: The Card Game — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Who Goes First?; reverse-side credits; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/back-future-card-game. Finding: Whoever most recently watched a Back to the Future movie goes first. Local source SHA-256: 6066639def9cffce488f2572172108239fee5d7e56cf0f49edf084490455de15. Both image-only pages were rendered. The opening criterion and its watch-count tie-break are together in the front-page Who Goes First section. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition identification and applicable mode or tie context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The source gives no further tie-break for equal watch counts, or fallback if nobody has watched a movie.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

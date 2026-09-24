@@ -1,0 +1,41 @@
+{
+  "id": "alpaca-gateongames-en",
+  "slug": "alpaca-gateongames-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e35da25953e536904b7474450ce4e79edda60bd973018cbdd054b7f3375b4bf5",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Alpaca",
+  "aliases": [],
+  "editionLabel": "GateOnGames English rulebook, version 10 (2023)",
+  "firstPlayerRule": "The person who most recently petted an alpaca goes first and takes the alpaca miniature.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise. The rulebook jokingly says that if no one has petted an alpaca, players should go pet one immediately; it gives no practical alternate starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.gateongames.com/wp-content/uploads/2023/11/Alpaca-rulebook-EN-v10-low.pdf",
+      "title": "Alpaca — GateOnGames English rulebook, version 10",
+      "publisher": "GateOnGames",
+      "printedPages": [
+        "4",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6
+      ],
+      "location": "Setup, step 5; Gameplay",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The publisher's downloads page offers the English Alpaca rulebook. Rendered page 4, setup step 5, specifies the most recent alpaca petter and the first-player miniature. Rendered page 6 confirms clockwise turns. Source SHA-256: 15af1b285a14b8035cd65f33023788332479e3d4430b6d31c168b849a7dadabe. Publisher downloads: https://www.gateongames.com/en/rulebooks-and-downloadable-material/. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the rendered publisher setup and turn-order pages.",
+  "uncertainty": [
+    "The rulebook has no practical alternate starter when no one has petted an alpaca, and no tie-break for equally recent petting."
+  ]
+}

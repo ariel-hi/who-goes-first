@@ -1,0 +1,55 @@
+{
+  "id": "valley-of-the-kings-premium-en",
+  "slug": "valley-of-the-kings-premium-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1fe2b1f02015b1caa04c799e1b78355403d33165592cd6916103cd48e03af517",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Valley of the Kings",
+  "aliases": [
+    "Valley of the Kings Premium Edition"
+  ],
+  "editionLabel": "Premium Edition, English AEG rules, eight-page publisher PDF",
+  "firstPlayerRule": "Choose the starting player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is the Premium Edition instruction. The original edition has a different starting rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2019/04/VotKPremium_rulebook_v2-8.pdf",
+      "title": "Valley of the Kings — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup step 8, Determine Starting Player; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2017/11/VotK_Rulebook.pdf",
+      "title": "Valley of the Kings — original edition rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setup step 7",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/valley-of-the-kings/. Finding: Choose the starting player randomly. Local source SHA-256: e4a69917ee1bfdfb958ba57d48fb1692a7ea654ec0efbc4ee058c04230ed3c01. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

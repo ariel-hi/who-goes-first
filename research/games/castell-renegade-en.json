@@ -1,0 +1,31 @@
+{
+  "id": "castell-renegade-en",
+  "slug": "castell-renegade-en",
+  "gameName": "Castell",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Renegade Game Studios English rulebook",
+  "firstPlayerRule": "The player who most recently visited Catalonia receives the first-player marker and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Players take turns clockwise. At the end of each round except the last, pass the first-player marker to the left for the next round."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://m102.nthu.edu.tw/~s102061202/Castell_Rulebook_Final_low_RGS.pdf",
+      "title": "Castell — Renegade English rulebook",
+      "publisher": "Renegade Game Studios",
+      "printedPages": ["4", "5"],
+      "pdfPagesOneBased": [5, 6],
+      "location": "Final Steps step 3; Round Structure steps 3 and 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered pages 5 and 6 (printed pages 4 and 5) of the Renegade-authored English rulebook. Final Steps assigns the marker to the most recent visitor to Catalonia; Round Structure defines clockwise turns and leftward marker transfer. A university-hosted copy preserves the publisher rulebook. SHA-256: 7efc514fa2d6e784d30713542bffabd9f03a23ceb907ea4391025d5747dcc2cc. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rulebook gives no tie-break for equally recent visits to Catalonia."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,42 @@
+{
+  "id": "abluxxen-amigo-en",
+  "slug": "abluxxen-amigo-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8b7a8523180245c37fd4867972a323aa7a16a3459fb8834f8626d9d17f6e8c51",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Abluxxen",
+  "aliases": [
+    "Abluxxen (aka Linko)",
+    "Linko"
+  ],
+  "editionLabel": "English AMIGO rules, 2022 copyright, version 1.0",
+  "firstPlayerRule": "Whoever saw a lynx most recently takes the paw marker and plays first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Play continues clockwise. The two-player variant retains this base-game starting instruction."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02204-GB-AmigoRule.pdf",
+      "title": "Abluxxen — AMIGO rules",
+      "publisher": "AMIGO",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup and Playing the Game; The Duel two-player variant; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2204&select=downloads. Finding: Whoever saw a lynx most recently takes the paw marker and plays first. Local source SHA-256: 0cb76f4f353021a416d45c74c35ce7d588dbfa1f648a28e7fb48ed3662275629. Both long PDF sheets were rendered and inspected, including the two-player changes and the 2022 copyright/version 1.0 footer. Linko is a discovery alias; this answer is limited to the cited AMIGO edition. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

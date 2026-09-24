@@ -1,0 +1,33 @@
+{
+  "id": "bears-vs-babies-exploding-kittens-2023-en",
+  "slug": "bears-vs-babies-exploding-kittens-2023-en",
+  "gameName": "Bears vs Babies",
+  "aliases": ["Bears vs. Babies"],
+  "language": "en",
+  "editionLabel": "Exploding Kittens English instructions, January 2023",
+  "firstPlayerRule": "Pick a player to go first. The instructions suggest examples such as the furriest player, the player with the most recent tantrum, or the player with the most body parts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The choice is made for the practice round. After the full-game setup, play goes clockwise around the table; the instructions do not call for choosing another starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0345/9180/1483/files/BVB-CORE_Instructions_05JAN2023_Web.pdf?v=1709624968",
+      "title": "Bears vs Babies — Exploding Kittens English instructions (2023)",
+      "publisher": "Exploding Kittens",
+      "printedPages": ["5", "25", "27"],
+      "pdfPagesOneBased": [5, 25, 27],
+      "location": "Setup — Practice Round, step 7; Setup; Playing",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The publisher's instructions page links this official PDF. Rendered page 5, practice setup step 7, asks players to pick the first player and gives three example criteria without choosing one as mandatory. Page 25 has no new starter choice in full-game setup, and page 27 establishes clockwise play. Source SHA-256: ca0a691e0eb4f5edbb20ff23134ab438e2be94fd75f2940649679ee7cca66465. Publisher page: https://www.explodingkittens.com/pages/rules-bears-vs-babies. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The instructions do not state whether groups should reselect a starter after the practice round."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

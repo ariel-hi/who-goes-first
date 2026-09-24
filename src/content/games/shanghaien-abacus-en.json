@@ -1,0 +1,39 @@
+{
+  "id": "shanghaien-abacus-en",
+  "slug": "shanghaien-abacus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a2312a13715d1cc96374ee4e9cb53bff40f38a3d74782bd7ca2b18cb3a9cfa4b",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Shanghaien",
+  "aliases": [],
+  "editionLabel": "ABACUSSPIELE English two-player rules",
+  "firstPlayerRule": "The most rough-and-ready player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The two players then alternate turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2021/01/Shanghaien_Regel_GB.pdf",
+      "title": "Shanghaien — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Game Setup, final bullet; Game Play; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/shanghaien/. Finding: The most rough-and-ready player goes first. Local source SHA-256: 03a1800402cd5f23328d47f13adbdcdbf0f3aea6c6b4846992e2a2547d0ae9df. The unusual wording is explicit in the publisher's English setup. No physical contest or appearance test has been inferred. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The source gives no objective measure for deciding who is most rough-and-ready.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

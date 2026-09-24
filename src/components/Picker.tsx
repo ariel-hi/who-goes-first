@@ -1,4 +1,4 @@
-import { Component, Suspense, lazy, useCallback, useEffect, useReducer, useRef, useState, type ReactNode } from 'react';
+import { Component, Suspense, lazy, useCallback, useEffect, useMemo, useReducer, useRef, useState, type ReactNode } from 'react';
 import { displayLabel, parseNames, seats, graphemeCount, hasControls } from '../lib/roster';
 import { select, type Outcome, type Player } from '../lib/selection';
 import { pickerReducer } from '../lib/state';
@@ -6,7 +6,7 @@ import { clearPreferences, defaults, readPreferences, writePreferences, type Mod
 import { analytics } from '../lib/analytics';
 import { cleanLink, shareLink } from '../lib/share';
 import { playChime } from '../lib/sound';
-import { presentations, revealHints } from '../lib/presentations';
+import { presentations, revealDuration, supportsGroup } from '../lib/presentations';
 import { createRevealPlan, playerColor, type RevealPlan } from '../lib/reveal-plan';
 import ModeIcon from './ModeIcon';
 import PlayerName from './PlayerName';
@@ -17,11 +17,12 @@ class EffectBoundary extends Component<{ children: ReactNode; onFail: () => void
   state = { failed: false };
   static getDerivedStateFromError() { return { failed: true }; }
   componentDidCatch() { this.props.onFail(); }
-  render() { return this.state.failed ? null : this.props.children; }
+  render() { return this.state.failed ? <p role="status" className="reveal-unavailable">Visual unavailable. The selected player is shown below.</p> : this.props.children; }
 }
 
 export default function Picker({ initialMode = 'quick', balloonEnabled = true }: { initialMode?: Mode; balloonEnabled?: boolean }) {
   const [players, setPlayers] = useState<Player[]>(seats(4));
+  const [countDraft, setCountDraft] = useState('4');
   const [text, setText] = useState('');
   const [inputMode, setInputMode] = useState<'seats' | 'names'>('seats');
   const [mode, setMode] = useState<Mode>(initialMode);
@@ -49,8 +50,13 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const duplicate = new Set(eligible.map(p => p.label)).size !== eligible.length;
   const reduced = systemReduced || prefs.motion === 'reduce';
   const busy = state.phase === 'revealing';
-  const effectiveMode = eligible.length > 12 ? 'instant' : mode;
+  const effectiveMode = supportsGroup(mode, eligible.length) ? mode : 'quick';
   const winner = state.outcome?.players.find(p => p.id === state.outcome?.winnerId);
+  const winnerLabel = winner && state.outcome ? displayLabel(winner, state.outcome.players) : '';
+
+  useEffect(() => {
+    setCountDraft(String(players.length));
+  }, [players.length]);
 
   useEffect(() => {
     try {
@@ -105,16 +111,16 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
 
   useEffect(() => {
     if (state.phase !== 'revealing') return;
-    const timer = window.setTimeout(finish, reduced ? 0 : presentations.find(item => item.id === eventMode.current)!.duration);
+    const timer = window.setTimeout(finish, reduced ? 0 : revealDuration(eventMode.current, revealPlan!));
     const interrupted = () => { if (document.hidden) finish(); };
     document.addEventListener('visibilitychange', interrupted);
     window.addEventListener('pagehide', finish);
     return () => { clearTimeout(timer); document.removeEventListener('visibilitychange', interrupted); window.removeEventListener('pagehide', finish); };
-  }, [state.phase, finish, reduced]);
+  }, [state.phase, finish, reduced, revealPlan]);
 
   function edited(nextPlayers: Player[], valid = true) {
     if (busy) return;
-    locked.current = null; setPlayers(nextPlayers); setError('');
+    locked.current = null; lastStart.current = -Infinity; setPlayers(nextPlayers); setError('');
     dispatch({ type: 'EDIT', valid });
   }
   function editNames(value: string) {
@@ -126,6 +132,12 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     let id = Math.max(0, ...players.map(p => Number(p.id.replace('player-', ''))));
     while (next.length < count) next.push({ id: `player-${++id}`, label: `Seat ${next.length + 1}` });
     edited(next); setText(next.map(p => p.label).join('\n'));
+  }
+  function typeCount(value: string) {
+    if (!/^\d{0,2}$/.test(value)) return;
+    setCountDraft(value);
+    const count = Number(value);
+    if (count >= 2 && count <= 50 && count !== players.length) resizeGroup(count);
   }
   function rename(id: string, label: string) {
     setInputMode('names');
@@ -160,71 +172,75 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     const url = cleanLink(window.location.href);
     const result = await shareLink(url);
     setManualLink(result === 'unavailable' ? url : '');
-    setShareStatus(result === 'copied' ? 'Link copied.' : result === 'shared' ? 'Link shared.' : result === 'cancelled' ? '' : 'Copy this link:');
+    setShareStatus(result === 'copied' ? 'Link copied.' : result === 'unavailable' ? 'Copy this link:' : '');
     if (result === 'copied' || result === 'shared') analytics.emit('share_completed', { kind: 'tool' });
   }
 
-  const animated = state.outcome !== null && !reduced && !['instant', 'quick'].includes(effectiveMode);
-  const fullStage = animated;
+  const visualMode = !['instant', 'quick'].includes(effectiveMode);
+  const preview = visualMode && state.outcome === null;
+  // A deterministic plan supplies the pieces with layout values only. Preview
+  // mode suppresses every winner marker and animation; no draw takes place.
+  const previewScene = useMemo(() => {
+    if (!preview) return null;
+    const outcome: Outcome = { drawId: 0, players: eligible, winnerId: eligible[0]!.id, policy: 'equal-chance' };
+    return { outcome, plan: createRevealPlan(outcome, () => .5) };
+  }, [preview, players]);
+  const scene = state.outcome && revealPlan ? { outcome: state.outcome, plan: revealPlan } : previewScene;
   return <section className="picker" aria-label="Starting-player picker" data-phase={state.phase} data-count={eligible.length} data-large={eligible.length > 12}>
     {/* Firefox otherwise restores dynamic disabled states before hydration. */}
     <form autoComplete="off" onSubmit={event => event.preventDefault()}>
       <div className="picker-card">
-        <fieldset disabled={busy || !hydrated}>
+        <fieldset disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Your players</legend>
           <div className="players-heading">
-            <span className="field-label">{eligible.length} at the table</span>
             <div className="stepper">
               <button type="button" aria-label="Remove a player" disabled={players.length <= 2} onClick={() => resizeGroup(players.length - 1)}>−</button>
               <label className="sr-only" htmlFor="player-count">Player count</label>
-              <select id="player-count" value={players.length} onChange={e => resizeGroup(Number(e.target.value))}>{Array.from({ length: 49 }, (_, i) => <option key={i + 2} value={i + 2}>{i + 2}</option>)}</select>
+              <input id="player-count" type="text" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={countDraft} onChange={e => typeCount(e.target.value)} onBlur={() => setCountDraft(String(players.length))} onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); if (e.key === 'Escape') { setCountDraft(String(players.length)); e.currentTarget.blur(); } }} />
               <button type="button" aria-label="Add a player" disabled={players.length >= 50} onClick={() => resizeGroup(players.length + 1)}>+</button>
             </div>
           </div>
-          <div className="roster-tools" style={{ visibility: busy ? 'hidden' : 'visible' }}>
-            {fullStage ? <button type="button" className="text-button" onClick={() => edited(players)}>Edit players</button> : <span>Tap a name to edit.</span>}
-            <button type="button" className="text-button" aria-expanded={bulkOpen && !fullStage} aria-controls={bulkOpen && !fullStage ? 'bulk-names' : undefined} onClick={() => { if (fullStage) edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(fullStage || !bulkOpen); }}>{bulkOpen && !fullStage ? 'Done' : 'Paste a list'}</button>
+          <div className="roster-tools">
+            <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { if (state.phase === 'result') edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
           </div>
-          {bulkOpen && !fullStage && <div className="name-editor" id="bulk-names">
+          {bulkOpen && <div className="name-editor" id="bulk-names">
             <label htmlFor="names">Player names <span className="muted small">One per line · up to 24 characters.</span></label>
             <textarea id="names" rows={Math.max(3, players.length)} value={text} onChange={e => { setInputMode('names'); editNames(e.target.value); }} spellCheck={false} aria-invalid={errors.length > 0} aria-describedby="input-errors" />
           </div>}
           <div id="input-errors" className="input-errors">{errors.map(message => <p key={message} className="error" role="alert">{message}</p>)}</div>
           {duplicate && <p className="small notice">Matching names are separate players, marked with # numbers.</p>}
-          {!fullStage && <ul className={`roster ${eligible.length > 8 ? 'roster-compact' : ''} ${busy && effectiveMode === 'quick' && !reduced ? 'quick-reveal' : ''}`} aria-label="Players in this draw" style={{ '--players': Math.min(eligible.length, 6), '--mobile-players': Math.min(eligible.length, 4), '--tiny-players': Math.min(eligible.length, 3) } as React.CSSProperties}>
+          <ul className={`roster ${eligible.length > 8 ? 'roster-compact' : ''} ${busy && effectiveMode === 'quick' && !reduced ? 'quick-reveal' : ''}`} aria-label="Players in this draw" style={{ '--players': Math.min(eligible.length, 6), '--mobile-players': Math.min(eligible.length, 4), '--tiny-players': Math.min(eligible.length, 3) } as React.CSSProperties}>
             {players.map((player, i) => <li key={player.id} className={state.phase === 'result' && winner?.id === player.id ? 'player winner' : 'player'} style={{ '--seat': i, '--piece': playerColor(player) } as React.CSSProperties}>
               <span className="seat-token" aria-hidden="true">{i + 1}</span>
               <PlayerName player={player} index={i} errors={errors.length > 0} onRename={rename} />
               {duplicate && <span className="duplicate-id">#{player.id.replace('player-', '')}</span>}
               {state.phase === 'result' && winner?.id === player.id && <span className="winner-dot" aria-label="Winner">✓</span>}
             </li>)}
-          </ul>}
+          </ul>
         </fieldset>
-        {animated && state.outcome && revealPlan && <EffectBoundary key={state.outcome.drawId} onFail={finish}>
-          <Suspense fallback={<div className="reveal-loading">One moment…</div>}>
-            {effectiveMode === 'balloon' ? <BalloonRise outcome={state.outcome} plan={revealPlan} settled={!busy} /> : <TableReveals outcome={state.outcome} plan={revealPlan} settled={!busy} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'race'} />}
-          </Suspense>
-        </EffectBoundary>}
         <div className={`result-area ${state.phase === 'result' ? 'has-result' : busy ? 'is-revealing' : 'is-ready'}`}>
-          <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement">{state.phase === 'result' && winner && <p><bdi>{displayLabel(winner, state.outcome.players)}</bdi> goes first.</p>}</div>
-          {busy && <p className="result-hint" aria-hidden="true">{revealHints[effectiveMode]}</p>}
+          <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement" data-long={winnerLabel.length > 18}>{state.phase === 'result' && winner && <p><bdi>{winnerLabel}</bdi> goes first.</p>}</div>
         </div>
-        <fieldset className="reveal-options" disabled={busy || !hydrated}>
+        <fieldset className="reveal-options" disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Choose your reveal</legend>
           <div className="segmented">
-            {presentations.filter(option => balloonEnabled || option.id !== 'balloon').map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
-              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} disabled={eligible.length > 12 && option.id !== 'instant'} onChange={() => { setMode(option.id); if (state.phase === 'result') dispatch({ type: 'EDIT', valid: !errors.length }); }} />
+            {presentations.filter(option => (balloonEnabled || option.id !== 'balloon') && supportsGroup(option.id, eligible.length)).map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
+              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onChange={() => { setMode(option.id); if (state.phase === 'result') { lastStart.current = -Infinity; dispatch({ type: 'EDIT', valid: !errors.length }); } }} />
               <ModeIcon mode={option.id} /><span>{option.label}</span>
             </label>)}
           </div>
         </fieldset>
-        {(eligible.length > 12 || reduced) && <p className="mode-note small muted">{eligible.length > 12 ? '13+ players: Instant keeps everyone in the draw.' : 'Reduced motion · instant results'}</p>}
         {error && <p role="alert" className="error">{error}</p>}
-        {busy ? <button type="button" className="primary" onClick={finish}>Show result now</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
+        {busy ? <button type="button" className="primary" disabled>Revealing…</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
+        {visualMode && scene && <div className="reveal-stage"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
+          <Suspense fallback={<div className="reveal-loading">One moment…</div>}>
+            {effectiveMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
+          </Suspense>
+        </EffectBoundary></div>}
       </div>
-      <div className="picker-utilities"><button type="button" className="text-button" onClick={() => setSettingsOpen(!settingsOpen)} aria-expanded={settingsOpen} aria-controls="picker-settings" disabled={busy || !hydrated}>Preferences</button><a href="/fairness/">Equal chances</a><button type="button" className="text-button" disabled={!hydrated} onClick={() => void share()}>Share</button></div>
+      <div className="picker-utilities"><button type="button" className="text-button" onClick={() => setSettingsOpen(!settingsOpen)} aria-expanded={settingsOpen} aria-controls="picker-settings" disabled={!hydrated} inert={busy}>Preferences</button><a href="/fairness/">Equal chances</a><button type="button" className="text-button" disabled={!hydrated} onClick={() => void share()}>Share</button></div>
       <div role="status" className="small muted share-status">{shareStatus}{manualLink && <input readOnly aria-label="Clean sharing link" value={manualLink} onFocus={e => e.target.select()} />}</div>
-      {settingsOpen && <fieldset id="picker-settings" className="settings" disabled={busy}>
+      {settingsOpen && <fieldset id="picker-settings" className="settings" inert={busy}>
         <legend className="sr-only">Preferences</legend>
         <label className="check-row"><input type="checkbox" checked={prefs.remember} onChange={e => setPrefs({ ...prefs, remember: e.target.checked, roster: null })} /><span>Remember this group<small>Saved only on this device.</small></span></label>
         <label className="check-row"><input type="checkbox" checked={prefs.sound} onChange={e => setPrefs({ ...prefs, sound: e.target.checked })} /><span>Soft sound</span></label>

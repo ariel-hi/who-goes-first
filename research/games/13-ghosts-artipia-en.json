@@ -4,7 +4,7 @@
   "gameName": "13 Ghosts",
   "aliases": [],
   "language": "en",
-  "editionLabel": "Artipia Games English rulebook, 2017 copyright; retailer-hosted mirror",
+  "editionLabel": "Artipia Games English rulebook, 2017 copyright",
   "firstPlayerRule": "The player who most recently saw a ghost starts. A ghost in a film, television show, or illustration counts if no one has seen one in real life.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -15,19 +15,18 @@
   "interpretation": null,
   "sources": [
     {
-      "url": "https://www.spiele-offensive.de/gfx/cf/13ghosts/13ghosts-rules.pdf",
-      "title": "13 Ghosts — Artipia Games English rulebook mirror",
-      "publisher": "Artipia Games (document); Spiele-Offensive (mirror host)",
+      "url": "https://artipiagames.gr/files/13_ghosts/13_ghosts_rulebook.pdf",
+      "title": "13 Ghosts — Artipia Games English rulebook",
+      "publisher": "Artipia Games",
       "printedPages": [],
-      "pdfPagesOneBased": [2, 3, 4, 5, 6, 8],
-      "location": "Opening-player instruction on PDF page 2; subsequent-round and player-count variants on pages 3–6; publisher imprint on page 8",
+      "pdfPagesOneBased": [1, 2, 3, 4],
+      "location": "2-Player Rules; 3-Player Rules; 4-Player Rules; 2017 publisher imprint",
       "checkedAt": "2026-09-24"
     }
   ],
-  "internalEvidence": "The current Artipia product page links a legacy English rulebook URL that could not be retrieved at this checkpoint. An Artipia-branded eight-page English booklet from a retailer mirror was retrieved, all pages rendered and visually inspected. Product page: https://www.artipiagames.com/13-ghosts/ ; linked but unavailable original: https://www.artipiagames.gr/files/13_ghosts/13_ghosts_rulebook.pdf . Local mirror source: research/source-files/fudacoma-artipia/13-ghosts-en-mirror.pdf; SHA-256 b0d439dddcdf74e39affea4c0b491fef7889ae0395d38df73e2dd9b0c0372701. Draft held for provenance and variant review; mirror pagination may differ from the linked publisher file.",
+  "internalEvidence": "The Artipia product page links the publisher's four-page English rulebook. Its indexed text confirms the ghost criterion, the three-player instruction to use the two-player rules with clockwise order, and the four-player instruction to use the two-player rules with clockwise and alternating-team order. The Artipia-branded eight-page retailer mirror was also retrieved and visually inspected; its pagination differs. Product page: https://www.artipiagames.com/13-ghosts/ ; publisher PDF: https://artipiagames.gr/files/13_ghosts/13_ghosts_rulebook.pdf ; local mirror source: research/source-files/fudacoma-artipia/13-ghosts-en-mirror.pdf; mirror SHA-256 b0d439dddcdf74e39affea4c0b491fef7889ae0395d38df73e2dd9b0c0372701. Editorial review 2026-09-23: Compared the publisher-indexed rule passages with the rendered Artipia-branded booklet. Owner authorized assistant review on 2026-09-22.",
   "uncertainty": [
-    "The current publisher-linked rulebook could not be compared with the retailer-hosted mirror.",
-    "The opening criterion is stated in the two-player instructions; application to the three-player and four-player variants should be confirmed before public approval.",
+    "The publisher PDF was available through its indexed text, but its original bytes could not be retrieved for a file-hash comparison with the mirror.",
     "No tie-break is stated alongside the first-round ghost criterion."
   ],
   "status": "draft",

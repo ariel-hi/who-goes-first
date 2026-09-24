@@ -1,0 +1,36 @@
+{
+  "id": "ceres-artipia-en",
+  "slug": "ceres-artipia-en",
+  "gameName": "Ceres",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Artipia Games English base-game rulebook, 2023 edition",
+  "firstPlayerRule": "Whoever most recently went stargazing starts. The rulebook also accepts another way of choosing the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with that player, place player-order markers in clockwise order on the Player Order track.",
+    "This is the multiplayer setup; the Automa has its own separate rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://artipiagames.gr/files/Ceres/CERES_RULEBOOK_ENGLISH.pdf",
+      "title": "Ceres — Artipia Games English base-game rules",
+      "publisher": "Artipia Games",
+      "printedPages": ["6"],
+      "pdfPagesOneBased": [6],
+      "location": "Setup III: Determine the Player Order",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The Artipia publisher rules library links the English base-game PDF. Publisher-indexed text on printed page 6 says the most recent stargazer starts and expressly accepts any other method, followed by clockwise placement of player-order markers. The product page confirms the 2023 English stand-alone edition; the publisher lists Automa separately. Product page: https://www.artipiagames.com/product/ceres/ . The original PDF bytes could not be retrieved for a file hash. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The printed rule is for the cited multiplayer base game; expansion and Automa instructions may differ."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

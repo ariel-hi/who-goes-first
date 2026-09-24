@@ -1,6 +1,6 @@
 # Thames & Kosmos source batch — 2026-09-23 UTC
 
-Eight new draft entries were written after inspecting rendered publisher manual pages: Aqualin, Catch the Moon, Lost Cities: Rivals, Lost Cities: Roll & Write, The Pillars of the Earth, Targi, Switch & Signal and Kahuna. These are searchable in the local directory and eligible for its random-rule draw. None has human publication approval.
+Eight research entries were written after inspecting rendered publisher manual pages: Aqualin, Catch the Moon, Lost Cities: Rivals, Lost Cities: Roll & Write, The Pillars of the Earth, Targi, Switch & Signal and Kahuna. Codex completed owner-authorized editorial review of all eight on 2026-09-23; exact approved revisions are under `src/content/games/`. Random-mix eligibility is tracked separately.
 
 The [US publisher manual index](https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs) links some manuals through publisher-controlled redirects or public Google Drive files. Downloads were followed only to explicit permitted hosts. The [UK Switch & Signal](https://www.thamesandkosmos.co.uk/product/switch-and-signal/) and [Kahuna](https://www.thamesandkosmos.co.uk/product/kahuna/) product pages supplied the other two manuals. No account, credentials, form submission or paid service was used.
 

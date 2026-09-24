@@ -4,7 +4,7 @@ Eight new researched answers are available locally: 3 Chapters, Abluxxen, Armadi
 
 ## Source review
 
-AMIGO's current product download panels link six English manuals used here. The old US catalog was unavailable. Explicit publisher download URLs and panel provenance are preserved in `amigo-source-queue.json`; `amigo-batch.json` contains the six manually written answers. All cited starting instructions were inspected on rendered PDF pages.
+AMIGO's current product download panels link six English manuals used here. The old US catalog was unavailable. Explicit publisher download URLs and panel provenance are preserved in `amigo-source-queue.json`; `amigo-batch.json` contains the six manually written answers. All cited starting instructions were inspected on rendered PDF pages, and Codex completed owner-authorized editorial review of the six records on 2026-09-23.
 
 - 3 Chapters begins with simultaneous drafting. Its rabbit criterion selects the first trick leader in Chapter II for three to six players. The two-player section instead tells the players to decide who starts. Both instructions are retained.
 - Abluxxen's AMIGO file has 2022 copyright and version 1.0. The lynx observer takes the paw and starts. The two-player variant preserves that instruction. Linko is a discovery alias, not a claim about every edition.

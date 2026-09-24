@@ -1,0 +1,40 @@
+{
+  "id": "lost-seas-blue-orange-fr-summary-en",
+  "slug": "lost-seas-blue-orange-fr-summary-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d8cbef7ae4efd56273fd6727321bc08562a11a027328d0d441797e83d6269b23",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Lost Seas",
+  "aliases": [],
+  "editionLabel": "French rules · English summary of the four-page publisher PDF",
+  "firstPlayerRule": "Whoever most recently went to sea starts and takes the first-player token.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This answer translates the French instruction. The publisher's English download link returned a French rulebook during this check; the edition label reflects the file actually inspected."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2023/04/LostSeas-Rules-FR.pdf",
+      "title": "Lost Seas — Blue Orange rules",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Déroulement du jeu, Tour de jeu; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://blueorangegames.eu/en/resources/game-rules/. Finding: Whoever most recently went to sea starts and takes the first-player token. Local source SHA-256: d00ebfeaafc98632b142999264a852436aa47d8d14a03efdd80dd95ee61e9435. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "An English-language edition has not been checked against this French instruction.",
+    "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

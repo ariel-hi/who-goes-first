@@ -1,0 +1,48 @@
+{
+  "id": "quacks-of-quedlinburg-schmidt-de-summary",
+  "slug": "quacks-of-quedlinburg-schmidt-de-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "840663b70127f2a080749c9e426ab68a7157ec7ebb776ba0c9866550f2143eda",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "The Quacks of Quedlinburg",
+  "aliases": [
+    "Die Quacksalber von Quedlinburg",
+    "Quacks of Quedlinburg"
+  ],
+  "editionLabel": "Schmidt Spiele German base-game rules, article 49341, English summary",
+  "firstPlayerRule": "Whoever most recently cooked something is the first round's starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player shuffles the fortune-teller cards, keeps the deck, and reads the opening card aloud.",
+    "Players brew their potions simultaneously; the starting-player role does not mean drawing ingredients before everyone else."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Produkte/4/49341%20-%20Die%20Quacksalber%20von%20Quedlinburg/49341_Quacksalber_Anleitung_DE.pdf",
+      "title": "The Quacks of Quedlinburg — Schmidt Spiele rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Spielvorbereitung; Wahrsagekarten; Die Trank-Zubereitung; PDF pages 2, 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever most recently cooked something is the first round's starting player. Local source SHA-256: ffa07536d1e5081f59605a8736ef865078f977cfdb74869f6fbc352faf3fa539. German starting instruction checked on printed/PDF page 2, round-start card reader on page 3, simultaneous brewing on page 4. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition and opening-turn context against the German publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

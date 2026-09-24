@@ -1,0 +1,43 @@
+{
+  "id": "unrest-pandasaurus-en",
+  "slug": "unrest-pandasaurus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "fda499244bcb43d2ddc4e7499c01f1504ac91823f3f68e9f1b9900dd07c1ac53",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Unrest",
+  "aliases": [],
+  "editionLabel": "Pandasaurus Games English rules, copyright 2023",
+  "firstPlayerRule": "Choose who plays the Rebellion and who plays the Empire. The Rebellion acts first, choosing two adjacent Districts to target.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rules suggest giving the Rebellion to whoever most recently broke a rule. This is an example for choosing roles, not a mandatory test.",
+    "Each round begins with the Rebellion selecting the target Districts and planning an operation before the Empire defends."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/hazr207can4fz1t/PANUNRESTCORE-BaseGameRules-v14.pdf?dl=0",
+      "title": "Unrest — Pandasaurus Games rules",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [
+        "2",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5
+      ],
+      "location": "Setup step 1; Gameplay steps 1–2; PDF pages 2, 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/unrest. Finding: Choose who plays the Rebellion and who plays the Empire. The Rebellion acts first, choosing two adjacent Districts to target. Local source SHA-256: 33a90eae0e39a06309b69c18f0f8c56679ecf164812fb53e41fcb6d753496ebc. Rendered setup page 2, gameplay page 5 and the unnumbered back-page summary were inspected. The roles have asymmetric steps; no alternating first-player choice is invented. The publisher product links BGG 387248. Copyright 2023 is in the page 15 credits. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative, role and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

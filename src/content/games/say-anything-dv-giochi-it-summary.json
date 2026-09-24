@@ -1,0 +1,39 @@
+{
+  "id": "say-anything-dv-giochi-it-summary",
+  "slug": "say-anything-dv-giochi-it-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ce23a5427f9d79a1097b18b100f3ba3e1cea0041bdd44a1312771ed9346384d9",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Say Anything",
+  "aliases": [],
+  "editionLabel": "dV Giochi Italian rules, English summary",
+  "firstPlayerRule": "The youngest player is the first judge.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The judge draws a card and reads one question aloud. The other players write their answers; the youngest-player rule assigns the judge, not the first answerer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/say-anything/download/SayAnything_Rules_ITA_WEB.pdf",
+      "title": "Say Anything — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Preparazione, step 4; Come giocare, steps 1 and 2; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: The youngest player is the first judge. Local source SHA-256: f3e7eec7ceefd6d600333d80f58bd4081ec518636def6b8a4c2f618472f1b767. Italian edition with 80 question cards and eight cloud-shaped answer boards. Pages are unnumbered; source references use PDF page positions. Editorial review 2026-09-23: Rechecked the cited starting instruction, role and opening-turn context against the publisher PDF, including rendered image-only pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -54,15 +54,20 @@ export function auditSeo(output: string, files: string[], origin: string, produc
       items.forEach((item, index) => { assert.equal(item.position, index + 1); assert.ok(item.name); assert.ok(item.item.startsWith(origin + '/')); });
       assert.equal(items.at(-1)?.item, canonical);
     }
-    return { file, nodes, canonical, title, description, indexable };
+    // Keep only the fields needed for cross-page checks. Retaining every parsed
+    // DOM makes the audit's memory grow with the full board-game directory.
+    const links = tags('a').map(node => ({ href: attr(node, 'href'), label: text(node).trim(), ariaLabel: attr(node, 'aria-label') }));
+    const ids = new Set(nodes.map(node => attr(node, 'id')).filter((id): id is string => Boolean(id)));
+    return { file, links, ids, canonical, title, description, indexable };
   });
   assert.equal(new Set(pages.map(page => page.title)).size, pages.length, 'Duplicate page titles');
   assert.equal(new Set(pages.map(page => page.description)).size, pages.length, 'Duplicate meta descriptions');
+  const pagesByCanonical = new Map(pages.map(page => [page.canonical, page]));
   let links = 0;
-  for (const page of pages) for (const anchor of page.nodes.filter(node => node.tagName === 'a')) {
-    const href = attr(anchor, 'href');
+  for (const page of pages) for (const anchor of page.links) {
+    const href = anchor.href;
     assert.ok(href && !/^javascript:/i.test(href), `${page.file}: non-crawlable link`);
-    assert.ok(text(anchor).trim() || attr(anchor, 'aria-label'), `${page.file}: unnamed link`);
+    assert.ok(anchor.label || anchor.ariaLabel, `${page.file}: unnamed link`);
     const url = new URL(href, page.canonical);
     if (url.origin !== origin) continue;
     links++;
@@ -71,8 +76,8 @@ export function auditSeo(output: string, files: string[], origin: string, produc
     const targetFile = existsSync(target) && statSync(target).isDirectory() ? join(target, 'index.html') : target;
     assert.ok(existsSync(targetFile), `${page.file}: broken internal link ${href}`);
     if (url.hash) {
-      const targetNodes = pages.find(other => other.canonical === `${url.origin}${url.pathname}`)?.nodes;
-      assert.ok(targetNodes?.some(node => attr(node, 'id') === decodeURIComponent(url.hash.slice(1))), `${page.file}: broken fragment ${href}`);
+      const targetIds = pagesByCanonical.get(`${url.origin}${url.pathname}`)?.ids;
+      assert.ok(targetIds?.has(decodeURIComponent(url.hash.slice(1))), `${page.file}: broken fragment ${href}`);
     }
   }
   const sitemap = readFileSync(join(output, 'sitemap.xml'), 'utf8');

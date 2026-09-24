@@ -1,0 +1,43 @@
+{
+  "id": "smash-up-comprehensive-en",
+  "slug": "smash-up-comprehensive-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "57cb44d5fce5e42a3501e19bc469841dfad480de6d4882ebb5703b58b8954036",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Smash Up",
+  "aliases": [
+    "Smash Up!",
+    "Smash Up Bigger Geekier Box"
+  ],
+  "editionLabel": "Bigger Geekier Box comprehensive rules, English, thirty-two-page publisher PDF",
+  "firstPlayerRule": "Check these fantasy events in order: alien abduction, pirate press-ganging, a vampire bite, dragon burns, a princess's kiss, Cthulhu-induced madness, a teddy-bear attack, or being eaten by an orc. The most recent match to the first applicable event starts.",
+  "officialTieBreak": "If none of the events applies, the group decides who starts.",
+  "houseFallback": null,
+  "clarifications": [
+    "These are the comprehensive rulebook's playful criteria, in priority order.",
+    "The separate formal faction-drafting procedure chooses its first drafter randomly."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/SmashUp_BiggerGeekierBox_Rulebook_Optimized.pdf",
+      "title": "Smash Up — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setup, final paragraph and Kickin’ It Queensberry sidebar; PDF pages 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/smash-up/. Finding: Check these fantasy events in order: alien abduction, pirate press-ganging, a vampire bite, dragon burns, a princess's kiss, Cthulhu-induced madness, a teddy-bear attack, or being eaten by an orc. The most recent match to the first applicable event starts. Local source SHA-256: ce5f852fd2bccdaca0b8d438f6726dc96eb7db8c4a59a65d8c1fa3f88b9cdb77. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

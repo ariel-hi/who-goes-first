@@ -3,7 +3,7 @@ import { graphemeCount, hasControls } from './roster';
 // Avoid even Zod's caught eval-capability probe under the site's strict CSP.
 // Preference records are tiny; the runtime parser needs no generated code.
 z.config({ jitless: true });
-export const modes = ['instant', 'quick', 'balloon', 'spinner', 'cards', 'tower', 'straws', 'dice', 'race'] as const;
+export const modes = ['instant', 'quick', 'balloon', 'spinner', 'cards', 'tower', 'straws', 'dice', 'coin', 'shells'] as const;
 export type Mode = typeof modes[number];
 export const storageKey = 'wgf:preferences:v1';
 const player = z.object({ id: z.string().regex(/^player-\d+$/), label: z.string().min(1).max(500).refine(s => s.trim() === s && graphemeCount(s) <= 24 && !hasControls(s)) }).strict();

@@ -2,7 +2,7 @@
 
 The official [Gamewright rules index](https://gamewright.com/rules/) linked 91 PDF manuals initially matched by name to 88 distinct inventory titles. All 91 were downloaded successfully for local research. Multiple PDFs for the same title were treated as alternatives, not extra games. A later identity review found that Gamewright's Chomp! is unrelated to inventory game 377449, Allplay's dinosaur Chomp. That name match is now explicitly excluded; the Gamewright answer remains a valid separate entry outside this inventory.
 
-86 titles now have actual researched starting answers under `research/games/*-gamewright-en.json`. They are searchable at `/dev/games/`, included in its random-rule draw, and reviewable with evidence/revision hashes at `/dev/review/`. They remain unapproved and are excluded from all static builds.
+86 titles now have actual researched starting answers under `research/games/*-gamewright-en.json`. They are searchable in the research queue with evidence and revision hashes. The publisher-backed answers that completed editorial review appear in the public game directory; unresolved entries remain in research.
 
 Answers were written from the source instructions, not copied from First Player Fun. Each record identifies the publisher URL, exact PDF page, actual check date, and SHA-256 of the downloaded manual. English portions of multilingual files were used. Edition labels identify these specific publisher files; they do not assert a year that was not checked. Relevant page regions were rendered for visual review; image-only and unusually encoded files were inspected directly. For example, text extraction missed the starting instructions in Sushi Go: Spin Some for Dim Sum and Zeus on the Loose, which were read from the rendered page.
 

@@ -2,7 +2,7 @@
 
 The official US [rules index](https://www.blueorangegames.com/games/download-rules) and European [rules index](https://blueorangegames.eu/en/resources/game-rules/) yielded 18 PDF manuals matching 12 distinct titles in the discovery inventory. All 18 downloaded successfully. Alternate manuals are not counted as extra game identities.
 
-13 edition-specific records are now under `research/games/`. The starting instructions were inspected visually; contextual text distinguishes initial roles, simultaneous actions and variants. All are drafts without any human approval or publication. Source pages, actual check dates and downloaded-file hashes are included. The records are available in local search and the random-rule draw.
+13 edition-specific research records are under `research/games/`. The starting instructions were inspected visually; contextual text distinguishes initial roles, simultaneous actions and variants. Codex completed owner-authorized editorial review of all 13 against rendered publisher pages and source hashes on 2026-09-23; exact approved revisions are under `src/content/games/`. Source pages, actual check dates and downloaded-file hashes are included. Random-mix eligibility is tracked separately.
 
 | Game | Primary file / one-based PDF page | Research result |
 |---|---|---|

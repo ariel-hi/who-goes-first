@@ -1,0 +1,38 @@
+{
+  "id": "stop-abacus-en",
+  "slug": "stop-abacus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "dfd4077cef4334c5d926ff8f7f6e5782f9e84192c7227161482ff1e07a389f82",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "STOP",
+  "aliases": [],
+  "editionLabel": "ABACUSSPIELE English rules, 112-card edition, copyright 2001",
+  "firstPlayerRule": "The player who has read the rules deals and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Normal turns proceed clockwise. The game also permits an out-of-turn play when a number card matches the discard's color and number."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2021/01/STOP_Regel_GB.pdf",
+      "title": "STOP — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Set-up; Course of the Game; Exception: Playing out of turn; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/stop/. Finding: The player who has read the rules deals and takes the first turn. Local source SHA-256: baf35e7c842e60340303cce3ed2dd1f236f5a8189dadb05089cbf75a2a8e8757. The rule assigns the dealer to the person who read the rules and then explicitly says the dealer begins. It does not say the latest reader or the player to the dealer's left. The matching-number-card interruption is preserved. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

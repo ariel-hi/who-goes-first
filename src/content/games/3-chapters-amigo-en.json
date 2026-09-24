@@ -1,0 +1,45 @@
+{
+  "id": "3-chapters-amigo-en",
+  "slug": "3-chapters-amigo-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "fda467e501962d3aff4c72429fa6a9003d2a0d921723a2895bee8a7d6fbb717b",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "3 Chapters",
+  "aliases": [],
+  "editionLabel": "English AMIGO rules, 24-page publisher booklet",
+  "firstPlayerRule": "With three to six players, whoever most recently saw a rabbit leads the first trick in Chapter II. With two players, agree who will lead that first trick.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Chapter I begins with simultaneous card choices. This starting instruction applies to the trick-taking chapter that follows.",
+    "The rabbit criterion belongs to the three-to-six-player rules; the two-player section gives its own instruction."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02451-GB-AmigoRule.pdf",
+      "title": "3 Chapters — AMIGO rules",
+      "publisher": "AMIGO",
+      "printedPages": [
+        "4",
+        "6",
+        "14"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        14
+      ],
+      "location": "Chapter I drafting; Chapter II first trick; Chapter II in the two-player rules; PDF pages 4, 6, 14",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2451&select=downloads. Finding: With three to six players, whoever most recently saw a rabbit leads the first trick in Chapter II. With two players, agree who will lead that first trick. Local source SHA-256: 823b6b4dbc9eafa6a63a98fa01bbebe5f3bd80e8e73ccf491a6a2622d9a88210. Rendered pages 4, 6 and 14 were inspected. The two-player Chapter II says to decide which player will start; it does not repeat the rabbit criterion. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

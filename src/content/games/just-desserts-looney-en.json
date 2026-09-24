@@ -1,0 +1,40 @@
+{
+  "id": "just-desserts-looney-en",
+  "slug": "just-desserts-looney-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8f2115f7575b02ede51d673898b8070906a79adc167c0165d826f3f486ba3d37",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Just Desserts",
+  "aliases": [],
+  "editionLabel": "Looney Labs English rules, copyright 2015, publisher's updated long sheet",
+  "firstPlayerRule": "Whoever most recently served dessert to the group in real life goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Serving dessert selects the starter; simply being the most recent person to eat dessert does not."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/JustDessertsRules.pdf%2020-39-41-783.pdf",
+      "title": "Just Desserts — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Who Goes First; Draw Phase; reverse-side credits; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/just-desserts. Finding: Whoever most recently served dessert to the group in real life goes first. Local source SHA-256: 74b4330adaf1d59bf35d0e7eb41155b253182d9abc629006d852d96039174410. The initial download was incomplete. A complete retrieval was rendered and read before creating this draft; its byte count matches the server's Content-Length. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition identification and applicable mode or tie context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The instruction does not specify a fallback if nobody has served dessert to the group.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

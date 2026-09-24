@@ -1,0 +1,38 @@
+{
+  "id": "oath-of-the-brotherhood",
+  "slug": "oath-of-the-brotherhood",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1c8abd80d4c55bc7101c4fe9309452e79ee1170210ade14e19b92e7a016b4362",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Oath of the Brotherhood",
+  "aliases": [],
+  "editionLabel": "English AEG rules, twelve-page publisher PDF",
+  "firstPlayerRule": "The player whose appearance is most like a pirate's goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2016/12/ootb_rulebook_small.pdf",
+      "title": "Oath of the Brotherhood — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Setup step 5; PDF pages 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/oathofthebrotherhood/. Finding: The player whose appearance is most like a pirate's goes first. Local source SHA-256: 501fafacdb99b64ae3c62214cf536702db891f0364aff3eafec6632e1b0f97df. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

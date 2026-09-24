@@ -14,7 +14,7 @@ Nine additional draft records cover eight further discovery identities. The loca
 | Small World Underground | Printed pages 4–5, PDF page 3 | Most recent cave or cellar visit; separate from Small World |
 | Small World of Warcraft | Printed/PDF page 4 plus both unnumbered team-sheet pages | Most recent video-game play in the base game; faction order for Battle for Azeroth |
 
-All cited opening passages were inspected as rendered images, with surrounding setup/variant context. The base queues, manually written reviewed batches, and hash-checked intake manifests are kept separately. Records remain `draft` with null approval fields.
+All cited opening passages were inspected as rendered images, with surrounding setup/variant context. Codex completed owner-authorized editorial review of all nine records on 2026-09-23; exact approved revisions are under `src/content/games/`. The base queues, manually written reviewed batches, and hash-checked intake manifests are kept separately.
 
 The current refreshed Ticket to Ride: Europe download contains four PDF pages despite referring to a later page. The HTTP response was complete, and the first-player instruction on page 3 is legible and complete. The review notes preserve that limitation; neither the file's naming date nor its upload path is treated as an edition/publication date. The complete eight-page 15th Anniversary source has a different starting criterion. Both sources are linked from both edition records so reviewers can inspect the difference.
 

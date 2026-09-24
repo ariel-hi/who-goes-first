@@ -12,8 +12,14 @@ export interface PlayerReveal {
   flipAt: number;
   flipDuration: number;
   matchTilt: number;
+  matchAt: number;
+  diceAt: number;
+  spinnerTurns: number;
+  spinnerOffset: number;
+  coin: { delay: number; duration: number; lift: number; tilt: number; turn: number; drift: number };
+  balloon: { style: number; driftX: number; driftY: number; turn: number; bobDelay: number; bobDuration: number; bobX: number; bobY: number; bobTurn: number };
+  shell: { delay: number; tilt: number };
   tower: { style: number; fallAt: number; fallDuration: number; stagger: number; drift: number };
-  race: { first: number; second: number; third: number; fourth: number; finish: number };
 }
 export type RevealPlan = Readonly<Record<string, PlayerReveal>>;
 
@@ -31,12 +37,12 @@ function shuffle<T>(values: readonly T[], random: () => number): T[] {
 export function createRevealPlan(outcome: Outcome, random: () => number = Math.random): RevealPlan {
   const plan: Record<string, PlayerReveal> = {};
   for (const player of outcome.players) {
-    const finish = player.id === outcome.winnerId ? 100 : 45 + random() * 39;
-    const third = 30 + random() * Math.min(23, finish - 34);
     plan[player.id] = {
       popAt: null, flipAt: 0, flipDuration: 900 + random() * 160, matchTilt: -8 + random() * 16,
+      matchAt: 0, diceAt: 0, spinnerTurns: 5, spinnerOffset: 0, coin: { delay: 0, duration: 0, lift: 0, tilt: 0, turn: 720, drift: 0 },
+      balloon: { style: 0, driftX: 0, driftY: 0, turn: 0, bobDelay: 0, bobDuration: 0, bobX: 0, bobY: 0, bobTurn: 0 },
+      shell: { delay: 0, tilt: 0 },
       tower: { style: 0, fallAt: 0, fallDuration: 0, stagger: 0, drift: 0 },
-      race: { first: 4 + random() * 10, second: 17 + random() * 12, third, fourth: third + (finish - third) * (.4 + random() * .2), finish },
     };
   }
   const losers = shuffle(outcome.players.filter(player => player.id !== outcome.winnerId), random);
@@ -47,6 +53,13 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
   losers.forEach((player, index) => {
     if (index) popAt += gaps[index - 1]! / gapTotal * popWindow;
     plan[player.id]!.popAt = Math.round(popAt);
+    plan[player.id]!.balloon = {
+      ...plan[player.id]!.balloon,
+      style: index % 4,
+      driftX: Math.round((random() - .5) * 26),
+      driftY: Math.round(-12 - random() * 18),
+      turn: Math.round((random() - .5) * 80),
+    };
     plan[player.id]!.tower = {
       style: index % 6,
       fallAt: Math.round(1180 + index % 6 * 110 + random() * 150),
@@ -64,5 +77,28 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
   });
   const lastLoser = Math.max(...cards.map(player => plan[player.id]!.flipAt));
   plan[outcome.winnerId]!.flipAt = lastLoser + 180;
+  for (const player of outcome.players) {
+    const piece = plan[player.id]!;
+    piece.matchAt = Math.round(random() * 190);
+    piece.diceAt = Math.round(random() * 180);
+    piece.spinnerTurns = [4, 5, 6, -4, -5, -6][Math.floor(random() * 6)]!;
+    // Keep the pointer comfortably inside the chosen slice, but rarely dead center.
+    piece.spinnerOffset = (random() < .5 ? -1 : 1) * (.09 + random() * .24);
+    // Every balloon receives motion from the same distribution, including the survivor.
+    piece.balloon.bobDelay = Math.round(-random() * 900);
+    piece.balloon.bobDuration = Math.round(1300 + random() * 550);
+    piece.balloon.bobX = Math.round((random() - .5) * 8);
+    piece.balloon.bobY = Math.round(-4 - random() * 5);
+    piece.balloon.bobTurn = Math.round((random() - .5) * 6);
+    piece.coin = {
+      delay: Math.round(110 + random() * 220),
+      duration: Math.round(1580 + random() * 270),
+      lift: Math.round(32 + random() * 22),
+      tilt: Math.round(-9 + random() * 18),
+      turn: [720, -720, 1080, -1080][Math.floor(random() * 4)]!,
+      drift: Math.round((random() - .5) * 10),
+    };
+    piece.shell = { delay: Math.round(620 + random() * 460), tilt: Math.round(-10 + random() * 20) };
+  }
   return plan;
 }

@@ -1,0 +1,41 @@
+{
+  "id": "minute-realms-dv-giochi-en",
+  "slug": "minute-realms-dv-giochi-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c0cf06dd528cf27147e12859715fda1bd040d4ebecd606c49a37d97cf3490ca6",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Minute Realms",
+  "aliases": [],
+  "editionLabel": "dV Giochi English rules",
+  "firstPlayerRule": "Whoever most recently visited a castle is the first player.",
+  "officialTieBreak": "Choose randomly if there is doubt about who qualifies.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player deals the round's cards and takes the first card-selection and building turn. Turns then proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/minute-realms/download/MinuteRealms_Rules_ENG.pdf",
+      "title": "Minute Realms — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup, First Player marker; Playing the Game, opening paragraphs; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: Whoever most recently visited a castle is the first player. Local source SHA-256: 987d0577ced8368c023a0149c34aecf948c493956ed4d06e4d0505b7ca9873cb. Image-only PDF: the actual starting instruction and official random alternative were read on rendered page 1, and turn order on rendered page 2. Editorial review 2026-09-23: Rechecked the cited starting instruction, role and opening-turn context against the publisher PDF, including rendered image-only pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

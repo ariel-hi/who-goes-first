@@ -5,7 +5,7 @@ mkdirSync(directory, { recursive: true });
 const browser = await chromium.launch();
 const errors: string[] = [];
 try {
-  const captures: [string, string, number][] = [['spinner', '.spinner-stage', 4], ['cards', '.cards-reveal', 4], ['towers', '.tower-reveal', 4], ['balloon', '.balloon-field', 4], ['straws', '.straws-reveal', 4], ['dice', '.dice-reveal', 4], ['race', '.marble-race', 4], ['race', '.marble-race', 12], ['cards', '.cards-reveal', 12], ['balloon', '.balloon-field', 12]];
+  const captures: [string, string, number][] = [['spinner', '.spinner-stage', 4], ['cards', '.cards-reveal', 4], ['towers', '.tower-reveal', 4], ['balloon', '.balloon-field', 4], ['straws', '.straws-reveal', 4], ['dice', '.dice-reveal', 4], ['coin', '.coin-reveal', 4], ['shells', '.shells-reveal', 4], ['cards', '.cards-reveal', 12], ['balloon', '.balloon-field', 12]];
   for (const [method, stage, count] of captures) {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const page = await context.newPage();
@@ -42,5 +42,5 @@ try {
     await context.close();
   }
   expect(errors).toEqual([]);
-  console.log('Captured twenty method screenshots, including twelve-player flips, pops and races. Persistent scenes, text results and mobile reflow verified; no page errors.');
+  console.log('Captured method screenshots, including twelve-player flips and pops. Persistent scenes, text results and mobile reflow verified; no page errors.');
 } finally { await browser.close(); }

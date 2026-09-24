@@ -1,0 +1,41 @@
+{
+  "id": "candy-match-pegasus-en",
+  "slug": "candy-match-pegasus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e13dc4285b6e2768095c6d8d753e0648f1747c14678489f3eb0acd3b0fa5c7c1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Candy Match",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele 2017 English rules",
+  "firstPlayerRule": "Choose the player with the biggest sweet tooth to reveal the first card.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Card revealing continues clockwise. The rules say any player may reveal next if players lose track of whose turn it is; this does not change the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://plasico.bg/resources/candy-match-rules.pdf",
+      "title": "Candy Match — English rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Sequence of Play; Notes",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The indexed text of the original Pegasus Spiele English PDF, printed page 6, names the player with the greatest liking for sweets and clockwise order; printed page 7 permits any revealer if turn order is lost. The PDF's publishing details credit Pegasus Spiele in 2017. This retailer-hosted PDF denied a direct download on 2026-09-23, so no rendered-page or file-hash check was possible. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the cited starter instruction and edition attribution.",
+  "uncertainty": [
+    "The rules do not define a tie-break for players claiming the same sweet tooth."
+  ]
+}

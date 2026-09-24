@@ -1,0 +1,41 @@
+{
+  "id": "hiroba-funnyfox-fr-summary",
+  "slug": "hiroba-funnyfox-fr-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1f1aafbc5da0d428d5c7c11891098843e805d9bd178035a717b59163370ddf71",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Hiroba",
+  "aliases": [],
+  "editionLabel": "English summary of the French Funnyfox rules, 2022 edition",
+  "firstPlayerRule": "Whoever played Sudoku most recently is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This is an English summary of the publisher's French rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://en.gigamic.com/index.php?controller=attachment&id_attachment=299",
+      "title": "Hiroba — Funnyfox rules",
+      "publisher": "Funnyfox",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Mise en place, step 4; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.gigamic.com/games-for-fun/808-hiroba-3616450000261.html. Finding: Whoever played Sudoku most recently is the first player. Local source SHA-256: 43f9a53002e3883771a76cca260c08f034913e819547ca48eb48f960bd729200. The English Gigamic product page links a French manual. Its language and edition are explicitly identified; this record does not claim to verify an English-language edition. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the cited publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "890-anno-domini-gateongames-en",
+  "slug": "890-anno-domini-gateongames-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9f75ee29b0e821dfc34784d0290ec0d0bc602eedba210afe8d4eeff2943fc37e",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "890 Anno Domini",
+  "aliases": [],
+  "editionLabel": "GateOnGames English rulebook, version 3",
+  "firstPlayerRule": "The person who most recently visited a castle is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "For starting Castle tiles, players choose in reverse turn order, beginning with the player seated to the first player's right. Gameplay turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.gateongames.com/wp-content/uploads/2023/10/890AD-rulebook-EN-v3-low.pdf",
+      "title": "890 Anno Domini — GateOnGames English rulebook, version 3",
+      "publisher": "GateOnGames",
+      "printedPages": [
+        "5",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        7
+      ],
+      "location": "Setup, step 9; Gameplay",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The publisher's rulebook download page links this English PDF. Rendered page 5, setup step 9, selects the most recent castle visitor and explicitly identifies the last player as seated to the first player's right. Page 7 confirms clockwise turns. Source SHA-256: f40915893f305ff5707ca314b15a2cd48e052e6dbfdca4429682fcd45ff666ac. Publisher downloads: https://www.gateongames.com/en/rulebooks-and-downloadable-material/. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the rendered publisher setup and turn-order pages.",
+  "uncertainty": [
+    "The rulebook does not specify a tie-break for equally recent castle visits."
+  ]
+}

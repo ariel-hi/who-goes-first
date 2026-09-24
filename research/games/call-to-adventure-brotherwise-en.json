@@ -1,0 +1,31 @@
+{
+  "id": "call-to-adventure-brotherwise-en",
+  "slug": "call-to-adventure-brotherwise-en",
+  "gameName": "Call to Adventure",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Brotherwise Games original English rulebook",
+  "firstPlayerRule": "The player who most recently finished reading a novel takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.brotherwisegames.com/s/CtA_Rulebook.pdf",
+      "title": "Call to Adventure — rulebook",
+      "publisher": "Brotherwise Games",
+      "printedPages": ["3", "Quick Start Guide"],
+      "pdfPagesOneBased": [5, 16],
+      "location": "Prepare the Story Decks; Quick Start Guide setup",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 5 (printed page 3) of the Brotherwise-hosted original rulebook and its page 16 Quick Start Guide both assign the opening turn to the person who most recently finished a novel. Source SHA-256: 5ed3b1ff6f1d3f634a911f9d41cfc79a9151ad0792e9643b7318e2a62b7f84d4. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is provided for equally recent novel completion."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

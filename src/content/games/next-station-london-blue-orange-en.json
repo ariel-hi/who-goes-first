@@ -1,0 +1,43 @@
+{
+  "id": "next-station-london-blue-orange-en",
+  "slug": "next-station-london-blue-orange-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3b7c75eb45f47ab90ffa87ec757b940fdd79d86d3068e927d12f55c8fb15f2c8",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Next Station London",
+  "aliases": [
+    "Next Station: London"
+  ],
+  "editionLabel": "English rules · 20-page publisher PDF",
+  "firstPlayerRule": "The person who most recently took the Underground is the controller for the first round.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The controller reveals the shared Station cards. All players then draw their own line section at the same time."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.blueorangegames.com/webroot/img/games/rules/Next_Station_London_rules_USA.pdf",
+      "title": "Next Station London — Blue Orange rules",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup and Build your Underground line; PDF pages 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently took the Underground is the controller for the first round. Local source SHA-256: b730e9ae69f8b12b4d92010dbedffc909904119fd2b95fe9241fce5ed57ddc73. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

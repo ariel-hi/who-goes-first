@@ -1,0 +1,41 @@
+{
+  "id": "spyfall-dv-giochi-it-summary",
+  "slug": "spyfall-dv-giochi-it-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "219ceb376d22281c4ff32f8797292c1a8c4d42dec5a909e53b4ef77bb3bcf7dc",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Spyfall",
+  "aliases": [],
+  "editionLabel": "dV Giochi Italian base-game rules, English summary",
+  "firstPlayerRule": "The dealer asks the first question, addressing another player by name.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group needs a way to choose the first dealer, agree to pick randomly. This is a house rule.",
+  "clarifications": [
+    "Setup assigns one player to deal but gives no criterion for choosing the initial dealer.",
+    "The player who answers asks the next question. They cannot immediately question the person who just asked them."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/net/spyfall/spyfall-regole.pdf",
+      "title": "Spyfall — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Preparazione; Il gioco, opening paragraph; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: The dealer asks the first question, addressing another player by name. Local source SHA-256: dbb94b17b803b6b31c4324eb4b9a5a73017cd151c4214c54ab347c5962b11ee5. Image-only starting sections were inspected directly. This is the 30-location, 240-card base game. No travel, clothing or other personal criterion was inferred. Editorial review 2026-09-23: Rechecked the cited starting instruction, role and opening-turn context against the publisher PDF, including rendered image-only pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "This source identifies the dealer as the first questioner but does not say which person must be the initial dealer.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

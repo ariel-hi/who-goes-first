@@ -1,0 +1,40 @@
+{
+  "id": "santa-monica",
+  "slug": "santa-monica",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a05cf27caebd7bf7f688a2fa3d3d642b4243a8621ef6acfbf6c608f34873c07a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Santa Monica",
+  "aliases": [],
+  "editionLabel": "English AEG base-game rules, twelve-page optimized publisher PDF",
+  "firstPlayerRule": "The player who most recently visited a beach goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Starting feature tiles are chosen in reverse turn order during setup. That does not change who takes the first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/SantaMonica_BaseGame_Rulebook_Optimized.pdf",
+      "title": "Santa Monica — Alderac Entertainment Group rules",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup steps 5–9; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/santa-monica/. Finding: The player who most recently visited a beach goes first. Local source SHA-256: 1af91bf663e3e6b7da59dc4efc9935da8aaf99735e3c11bef0cbb25534f9a3ec. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

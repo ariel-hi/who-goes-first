@@ -40,7 +40,7 @@ The shop's normal pagination URLs returned identical first-page HTML. Its public
 - Cat in the Box: latest black-cat encounter; initial trick, later rounds and two-player context distinguished.
 - Symbiose: latest frog sighting; simultaneous setup reveal distinguished from turns; duel/team modes keep the criterion.
 
-Pegasus is the source host/publisher or distributor, as applicable; editions are identified in each record. The queue and cached links provide discovery provenance, not permission to publish. German sources remain visibly labeled as English summaries.
+Pegasus is the source host/publisher or distributor, as applicable; editions are identified in each record. Codex completed owner-authorized editorial review of 16 outstanding Pegasus drafts on 2026-09-23; exact approved revisions are under `src/content/games/`. The queue and cached links provide discovery provenance. German sources remain visibly labeled as English summaries.
 
 ## Continuing work
 

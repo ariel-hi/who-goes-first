@@ -1,0 +1,40 @@
+{
+  "id": "tajuto-abacus-de-summary",
+  "slug": "tajuto-abacus-de-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "00367491843dc1504ebf9ef80c671cc69fccc4cb4f894e3661d4bc9a095e14e4",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Tajuto",
+  "aliases": [],
+  "editionLabel": "ABACUSSPIELE German rules, English summary",
+  "firstPlayerRule": "The oldest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Turns continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2020/09/Tajuto_Rules_DE_low2.pdf",
+      "title": "Tajuto — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Spielablauf, opening two sentences; PDF pages 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/tajuto/. Finding: The oldest player goes first. Local source SHA-256: bbe5d852e08776c0f149adad1b6cf366c7dde48bf53aba94728c95b487a60579. The available publisher product page links the German manual; the answer is clearly labeled as an English summary of that file. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

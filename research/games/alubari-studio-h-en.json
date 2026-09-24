@@ -1,0 +1,33 @@
+{
+  "id": "alubari-studio-h-en",
+  "slug": "alubari-studio-h-en",
+  "gameName": "Alubari: A Nice Cup of Tea",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Studio H English rulebook (2019)",
+  "firstPlayerRule": "The player who most recently drank a cup of tea is the starting player and takes the starting player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Worker placement begins with the starting player and continues clockwise. During the game, taking the last Stockyard action space gives that player the starting player marker for subsequent placement rounds."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/fa/cc/af-alubari-a-nice-cup-of-tea-rulebook.pdf",
+      "title": "Alubari: A Nice Cup of Tea — original English rulebook (archived copy)",
+      "publisher": "Studio H",
+      "printedPages": ["3", "5", "6"],
+      "pdfPagesOneBased": [3, 5, 6],
+      "location": "Game Setup, step 17; Phase 4: Assign Workers to Actions; The Stockyard",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The original illustrated English rulebook is archived by 1jour-1jeu; publisher attribution to Studio H is corroborated by the game's catalog listing. Rendered page 3 gives the tea-drinking criterion and starting marker. Page 5 confirms clockwise worker placement; page 6 says the last Stockyard action space transfers the marker. This source is a hosted copy of the rulebook rather than a current publisher download. Source SHA-256: b9781bc2620a5034a254288fb5bc02094d736b231f8dc128462703426ebcc3ca. Catalog: https://en.1jour-1jeu.com/table-game/2019-alubari-a-nice-cup-of-tea/files. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rulebook states no tie-break for players who drank tea equally recently."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,46 @@
+{
+  "id": "wordcraft-artipia-en",
+  "slug": "wordcraft-artipia-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "75c5a02267b6a601be5292210b889edf44e4e61d1291e05c2b4d075101830e86",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "WordCraft",
+  "aliases": [
+    "Wordcraft"
+  ],
+  "editionLabel": "Artipia Games English base-game rulebook, 2022 copyright",
+  "firstPlayerRule": "Whoever most recently mixed ingredients of any kind starts the first round. Turns then proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later rounds, the player with the fewest cubes on Achievement cards starts; if tied, the tied player farthest clockwise from the previous round's first player starts.",
+    "The team variant uses the same turn order, with teams taking turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://artipiagames.gr/files/wordcraft/WORDCRAFT-RULEBOOK-ENG-2022.pdf",
+      "title": "WordCraft — Artipia Games English rules",
+      "publisher": "Artipia Games",
+      "printedPages": [
+        "2",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5,
+        6
+      ],
+      "location": "Game Setup and Craft Words; Prepare for the Next Round; Teams",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The Artipia product page links the eight-page English publisher PDF. PDF page 2 names the most recent person to mix ingredients as First player and starts clockwise word-building turns. PDF page 5 selects later-round starters by Achievement-card cubes with a distance tie-break. PDF page 6 explains the team variant. The 2022 publisher imprint appears on PDF page 8. Product page: https://www.artipiagames.com/wordcraft/ . Original PDF bytes could not be retrieved for a file hash, so the indexed publisher text was reviewed. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starting rule, tie or later-round context against the publisher-linked PDF text.",
+  "uncertainty": [
+    "No tie-break is stated for equally recent mixing in the first round."
+  ]
+}

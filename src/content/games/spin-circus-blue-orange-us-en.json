@@ -1,0 +1,52 @@
+{
+  "id": "spin-circus-blue-orange-us-en",
+  "slug": "spin-circus-blue-orange-us-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "201266737698894b0acd842e416d8058831e70f4a4b3f2f827d1a6e885fe8cde",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Spin Circus",
+  "aliases": [],
+  "editionLabel": "US English rules · four-page bilingual publisher PDF",
+  "firstPlayerRule": "The person who most recently saw an acrobat starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The separate UK-flagged English publisher file uses seeing a stage instead. These are distinct source editions; check the manual supplied with your game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.blueorangegames.com/webroot/img/games/rules/247470e50a2d650252d0a7b13c398b8f-Spin-Circus.pdf",
+      "title": "Spin Circus — Blue Orange rules",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2021/12/SpinCircus-Rules-EN.pdf",
+      "title": "Spin Circus — Blue Orange rules (UK file)",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup; PDF pages 1",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently saw an acrobat starts. Local source SHA-256: 9ee1d17fad647d0424e04d9aece576b5185d3855cca86b743f62b73fae36be6c. The other English publisher file was also visually checked on PDF page 1. Its starting criterion differs. Comparison source SHA-256: 336540618626f68d41ebf20f304d21dc9978fb667adc1380421af6b55fa93468. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

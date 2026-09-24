@@ -1,0 +1,44 @@
+{
+  "id": "a-thiefs-fortune-artipia-en",
+  "slug": "a-thiefs-fortune-artipia-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a147b5e8d507cec9085f08983b256bb7ac7d687f8a9f6e43b044b06ddd4c044a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "A Thief's Fortune",
+  "aliases": [],
+  "editionLabel": "Artipia Games English base-game rulebook, 2018 publication",
+  "firstPlayerRule": "Whoever most recently borrowed something and never returned it starts the first round and takes the Starting Player token.",
+  "officialTieBreak": "If that criterion is tied, choose randomly.",
+  "houseFallback": null,
+  "clarifications": [
+    "The first player to pass during a round becomes the starting player for the next round.",
+    "The starting player begins the opening Planning and Action phases; card choices during the draft are made simultaneously."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://artipiagames.gr/files/atf/a_thiefs_fortune_rulebook.pdf",
+      "title": "A Thief's Fortune — Artipia Games English base-game rules",
+      "publisher": "Artipia Games",
+      "printedPages": [
+        "6",
+        "8",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        8,
+        9
+      ],
+      "location": "Setup; 4.1 Planning Phase; 4.3 Action Phase",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The Artipia product page links the English base-game PDF. Publisher-indexed PDF text on printed page 6 states that the player who most recently borrowed something and never returned it receives the Starting Player token, with random selection in case of a tie. Printed pages 8 and 9 describe the opening phases and passing the token to the first player to pass for the next round. Product page: https://www.artipiagames.com/atf/ . The publisher PDF was available through indexed text; its original bytes could not be retrieved for a file hash. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the setup and opening phase passages in the publisher-indexed PDF text.",
+  "uncertainty": [
+    "This answer is tied to the cited Artipia base-game edition; other printings may differ."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "beyond-baker-street-zman-en",
+  "slug": "beyond-baker-street-zman-en",
+  "gameName": "Beyond Baker Street",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Z-Man Games English rulebook",
+  "firstPlayerRule": "With Character cards, the player holding the lowest-numbered Character card starts. In the first game, when no Character cards are used, the player who most recently read a Sherlock Holmes story starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play proceeds clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.zmangames.com/us-east-1/filer_public/d3/87/d38786ef-a67a-4b81-bf15-0e4dc26d9cc0/zm7670_beyond_baker_street_rules.pdf",
+      "title": "Beyond Baker Street — Z-Man Games English rulebook",
+      "publisher": "Z-Man Games",
+      "printedPages": ["5"],
+      "pdfPagesOneBased": [5],
+      "location": "Setup: Start player",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 5 of the Z-Man-hosted English rulebook states that the lowest-numbered Character card determines the start player, with the most recent Sherlock Holmes story reader starting the introductory game without Character cards. It also confirms clockwise play. Source SHA-256: e822773db902e4fcf17a12e89bcb44a88668abc4e7f6698b4708ece60ec67f96. The legacy image host's certificate is outside its validity period; the same URL is indexed as the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is given for equally recent Sherlock Holmes reading; the Character cards are uniquely numbered."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

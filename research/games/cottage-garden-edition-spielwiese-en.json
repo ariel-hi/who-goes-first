@@ -1,0 +1,31 @@
+{
+  "id": "cottage-garden-edition-spielwiese-en",
+  "slug": "cottage-garden-edition-spielwiese-en",
+  "gameName": "Cottage Garden",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Edition Spielwiese English rulebook",
+  "firstPlayerRule": "The player who most recently weeded a garden goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["For the two-to-four-player game, turns then move clockwise. The solo rules are separate."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/0a/27/57-cottage-garden-rulebook.pdf",
+      "title": "Cottage Garden — English rulebook",
+      "publisher": "Edition Spielwiese",
+      "printedPages": ["4"],
+      "pdfPagesOneBased": [2],
+      "location": "The Game",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 (printed page 4) of the Edition Spielwiese English rulebook preserved by 1jour-1jeu. The Game names the last garden weeder and clockwise turn order for two to four players. SHA-256: a027969db89c5f6f0609fe7f5ca3358c836c11fda488cc66f4937187bbea7c98. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is provided for equally recent weeding."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

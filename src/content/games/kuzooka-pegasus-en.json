@@ -1,0 +1,42 @@
+{
+  "id": "kuzooka-pegasus-en",
+  "slug": "kuzooka-pegasus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b60569b1b5522fd693f03407b8f253b478d93d0c3bbd5cdbdc6702c1d250ac52",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "KuZOOkA",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English rules, eight-page booklet",
+  "firstPlayerRule": "Whoever most recently visited a zoo goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player receives the Megaphone and takes the first communication turn. Turns proceed clockwise in this cooperative game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/54/3b/63/1717757123/4250231729867_en_web.pdf?ts=1752574416",
+      "title": "KuZOOkA — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Game Setup, step 8; Phase 2: Communication Between Animals; PDF pages 3, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/KuZOOkA-Empfohlen-Spiel-des-Jahres-2023/51230G. Finding: Whoever most recently visited a zoo goes first. Local source SHA-256: 613bc6a4ff2a3693f058d88c30060a2920cef80295475917a956e8bb960cc6b2. The Megaphone assignment and the first ordinary turn are connected explicitly in the two inspected pages. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode context and turn order against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

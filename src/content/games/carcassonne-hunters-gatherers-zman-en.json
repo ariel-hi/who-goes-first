@@ -1,0 +1,44 @@
+{
+  "id": "carcassonne-hunters-gatherers-zman-en",
+  "slug": "carcassonne-hunters-gatherers-zman-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "069108c706d58be95e56f397d713a6c21b1ed2c02861d76dd22f76f1bca2ee79",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Carcassonne: Hunters and Gatherers",
+  "aliases": [
+    "Carcassonne: Hunters & Gatherers"
+  ],
+  "editionLabel": "Z-Man English 95-tile edition, 2020 copyright",
+  "firstPlayerRule": "The youngest player takes the first turn. Continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This is the edition with 95 land tiles, including 16 menhir tiles."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/Hunters-and-Gatherers-RUlebook.pdf",
+      "title": "Carcassonne: Hunters and Gatherers — Z-Man Games rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Contents and preparation; Playing the Game; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zmangames.com/game/carcassonne-hunters-gatherers/. Finding: The youngest player takes the first turn. Continue clockwise. Local source SHA-256: 95fa60cebe04b28cef644636e9a6de1835fee88527ac0dd462a02467cc17f511. The contents page identifies the updated tile set; the credits state 2002 and 2020 copyrights. This record does not claim to check the original 2002 rulebook. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

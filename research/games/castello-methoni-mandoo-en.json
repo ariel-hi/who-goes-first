@@ -1,0 +1,31 @@
+{
+  "id": "castello-methoni-mandoo-en",
+  "slug": "castello-methoni-mandoo-en",
+  "gameName": "Castello Methoni",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Mandoo Games 2019 English rules",
+  "firstPlayerRule": "The player who most recently visited an island goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["After the opening turn, play continues clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://studiogiochi.com/files/studiogiochi.com/2019/10/Castello-Methoni-Rules-ENG.pdf",
+      "title": "Castello Methoni — English rules",
+      "publisher": "Mandoo Games",
+      "printedPages": ["3", "4"],
+      "pdfPagesOneBased": [2, 3],
+      "location": "Game Setup step 8; The Game Turn",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 (printed page 3) of the Mandoo Games English rulebook hosted by the designer's studio, Studio Giochi. Game Setup step 8 identifies the most recent island visitor. The next page establishes clockwise order. SHA-256: af82a9fa4d6fb7f1ea2d7ff9ce86cd6044c947f5dc96fd01e57079a282724567. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rules provide no tie-break for equally recent island visits."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

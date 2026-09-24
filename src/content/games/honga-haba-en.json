@@ -1,0 +1,40 @@
+{
+  "id": "honga-haba-en",
+  "slug": "honga-haba-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9e3b0e19c59073e6241bdd006c1d681e94af7c5a16ee25bcb3c5c5d7ea9aebfe",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Honga",
+  "aliases": [],
+  "editionLabel": "English HABA USA rules, November 2019 file",
+  "firstPlayerRule": "The player with the shaggiest hair starts and receives the fire marker.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The fire marker stays with that player for the whole game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0559/3445/1810/files/Honga-Instructions.pdf?v=1738100713",
+      "title": "Honga — HABA rules",
+      "publisher": "HABA",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Game Setup, fire marker; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.habausa.com/collections/games/products/honga. Finding: The player with the shaggiest hair starts and receives the fire marker. Local source SHA-256: 476f1ae1b8a76b805c432ae1b073af969740ce2cadac10efc8ec2e67db73f152. Editorial review 2026-09-23: Rechecked the cited English HABA instruction, edition identity, and any official fallback on rendered publisher pages. Super Battle retains the rulebook's optional “can start” wording. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

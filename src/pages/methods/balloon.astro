@@ -9,7 +9,7 @@ const enabled = process.env.DISABLE_BALLOON !== 'true';
     <noscript><p class="noscript">Enable JavaScript to pick a player.</p></noscript>
     <PickerShell initialMode={enabled ? 'balloon' : 'quick'} balloonEnabled={enabled} />
     <div class="below-tool">
-      {enabled && <><h2>How Balloon Rise works</h2><p>Each player gets a balloon. The last balloon goes first. Popped balloons stay on the table until you pick again or edit the players. For more than 12 players, the picker uses Instant.</p><p>Use “Show result now” to skip the reveal. If you prefer reduced motion, the result appears immediately.</p></>}
+      {enabled && <><h2>How Balloon Rise works</h2><p>Each player gets a balloon. The last balloon goes first. Popped balloons stay on the table until you pick again or edit the players. For more than 12 players, the picker uses Quick.</p><p>If you prefer reduced motion, the result appears immediately.</p></>}
       <a class="inline-link" href="/fairness/">How the fair draw works</a><br /><a class="inline-link" href="/">Back to the starting-player picker</a>
     </div>
   </div>

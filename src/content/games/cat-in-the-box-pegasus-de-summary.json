@@ -1,0 +1,45 @@
+{
+  "id": "cat-in-the-box-pegasus-de-summary",
+  "slug": "cat-in-the-box-pegasus-de-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "62b9084d3b317c005f66e719d587915b488447f4477ad9b799fce0110ff2ea38",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Cat in the Box",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele German rules for 2–5 players, English summary",
+  "firstPlayerRule": "Whoever most recently encountered a black cat goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "That player takes the round-start card and leads the first trick. The round-start card passes clockwise for subsequent rounds.",
+    "The two-player changes leave the starting criterion unchanged."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/21/d6/20/1717756987/4250231735950_de.pdf?ts=1752574418",
+      "title": "Cat in the Box — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "3",
+        "5",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5,
+        10
+      ],
+      "location": "Vorbereitung, step 5; Ein Stich; Vorbereitungsphase der nächsten Runde; Regeländerungen für 2 Personen; PDF pages 3, 5, 10",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Cat-in-the-Box/18700G. Finding: Whoever most recently encountered a black cat goes first. Local source SHA-256: 8f66a64468d3797d5df03798d43d8b5dc037cc43079b0a9e94dcc8fb423a65f2. This entry describes the linked Pegasus 2–5-player edition, without asserting that every edition has the same instruction. The start-of-game criterion is distinct from winning and leading later tricks. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode context and turn order against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

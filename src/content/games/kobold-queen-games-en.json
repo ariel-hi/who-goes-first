@@ -1,0 +1,39 @@
+{
+  "id": "kobold-queen-games-en",
+  "slug": "kobold-queen-games-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a87d89285c4391588e0dbe646ff10de44fd7538046a8f29dc8a906760a4d65e1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Kobold",
+  "aliases": [],
+  "editionLabel": "Queen Games English rules, copyright 2018",
+  "firstPlayerRule": "Whoever most recently saw a kobold goes first.",
+  "officialTieBreak": "If the players cannot agree who should start, the youngest player goes first.",
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Turns continue clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/kobold_en.pdf",
+      "title": "Kobold — Queen Games rules",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Flow of the Game, opening paragraph; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever most recently saw a kobold goes first. Local source SHA-256: 781ea720640d83f77d681fa31bf1e5f46f3b6a49e128592ee629877a6706acbf. Editorial review 2026-09-23: Rechecked the cited starting instruction, official fallback and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

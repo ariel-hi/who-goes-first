@@ -1,0 +1,58 @@
+{
+  "id": "ticket-to-ride-europe-refreshed-days-of-wonder-en",
+  "slug": "ticket-to-ride-europe-refreshed-days-of-wonder-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "92e06322219ff2ce02cd41fd68c653f2ca8e01f6a85ef69a19eaf4d9ca8c0828",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Ticket to Ride: Europe",
+  "aliases": [
+    "Ticket to Ride Europe",
+    "TTR Europe"
+  ],
+  "editionLabel": "Days of Wonder refreshed English rules, 7281N publisher download",
+  "firstPlayerRule": "The group chooses its own method for deciding who starts. Continue clockwise from that player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This refreshed rulebook leaves the choice of starting method to the group. Choosing randomly is one way to use that permission.",
+    "Check your edition: the separate 15th Anniversary rulebook instead starts with whoever has visited the most European countries."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2026/08/7281N_TICKET2RIDEeuropeV2_RULES_EN_20250429.pdf",
+      "title": "Ticket to Ride: Europe — Days of Wonder rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "The Game Turn, opening instruction; PDF pages 3",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2023/07/t2re15-rules-EN.pdf",
+      "title": "Ticket to Ride: Europe — English 15th Anniversary rules",
+      "publisher": "Days of Wonder / Asmodee Canada",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "The Game Turn, different starting criterion in the 15th Anniversary rules",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.daysofwonder.com/game/ticket-to-ride-europe/. Finding: The group chooses its own method for deciding who starts. Continue clockwise from that player. Local source SHA-256: c2e66c703b9d1e2921dfb9e4e26718012fe6eb04a39fff48acc091fc05fb8aff. The current product page links this 7281N source. Cover, starting paragraph and final available page were inspected. A complete HTTP response and parser both yield four pages. The separate eight-page anniversary source was also viewed at pages 1, 4 and 8; the differing instructions are explicitly edition-specific. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, official alternative and variant context against publisher PDF pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The current 7281N publisher download contains four PDF pages, although page 4 references later pages. Its starting-player passage is complete and was inspected, but this is not claimed to be a complete rulebook. The filename date is not treated as a publication date.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

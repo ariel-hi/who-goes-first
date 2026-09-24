@@ -1,0 +1,41 @@
+{
+  "id": "black-gold-fantasy-flight-en",
+  "slug": "black-gold-fantasy-flight-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "676e30d718d2761363b819f4eb1a473e12b8592d1a32e819dffb51dda26b10a0",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Black Gold",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight Games English rules, copyright 2011",
+  "firstPlayerRule": "Whoever most recently filled their car with gas takes the market price die and starts the first round. If players cannot remember or prefer another method, the rules say to choose randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The die holder begins by adjusting oil prices. The die passes to the left at the end of each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/ed/1e/ed1ee371-596a-4135-a406-e782111708a0/bg_rule_book__eng_web.pdf",
+      "title": "Black Gold — Fantasy Flight Games rules",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6
+      ],
+      "location": "Setup, step 10; The Game Round and Adjust Oil Prices; PDF pages 4, 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.fantasyflightgames.com/en/more/product-document-archive/. Finding: Whoever most recently filled their car with gas takes the market price die and starts the first round. Local source SHA-256: 5f5e9b62ab4bdc318a0d515b84f861d05564be6eb5e46f17e32a79b133a5340a. Setup explicitly offers random selection when the criterion is unwanted or cannot be recalled. This is an official alternative, not a supplied house rule. Editorial review 2026-09-23: Rechecked the cited starting instruction and the applicable play sequence in the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

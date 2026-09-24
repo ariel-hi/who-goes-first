@@ -1,0 +1,39 @@
+{
+  "id": "android-fantasy-flight-en",
+  "slug": "android-fantasy-flight-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ee1aeacf488fa008bc37e712e69365ba26f2bc241baeb696e16038101e3b89fc",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Android",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight Games English board-game rulebook, 2008 copyright",
+  "firstPlayerRule": "Whoever has read the most science fiction books goes first.",
+  "officialTieBreak": "If the players cannot agree who that is, choose a player at random.",
+  "houseFallback": null,
+  "clarifications": [
+    "The selected player takes the first player token, time sheet, and time marker, and places a hero marker on the crime scene."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/Android/android-rule-book.pdf",
+      "title": "Android — Fantasy Flight Games board-game rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        11
+      ],
+      "location": "Setup, step 12: Select First Player; The Game Round",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Fantasy Flight's Android board-game product page links the English rulebook. Rendered PDF page 11 explicitly selects the player who has read the most science fiction books, provides random selection if the group cannot agree, and identifies that player's opening markers. The 2008 copyright was checked in the downloaded rulebook. This is the Android board game, not Android: Netrunner. Local source SHA-256: 47284020a835efcbb5441deb2e7aaa6ade7749fb03e3e2fa199dffd3a4f0abd1. Product page: https://www.fantasyflightgames.com/en/products/android/. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the rendered publisher setup pages.",
+  "uncertainty": [
+    "The answer applies to this identified board-game edition; other Android titles have different rules."
+  ]
+}

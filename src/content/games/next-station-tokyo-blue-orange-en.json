@@ -1,0 +1,42 @@
+{
+  "id": "next-station-tokyo-blue-orange-en",
+  "slug": "next-station-tokyo-blue-orange-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "fc8b141d51e83670f4641556b6e1c90eaa29c7da7c629c8280280001703b6ac4",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Next Station Tokyo",
+  "aliases": [
+    "Next Station: Tokyo"
+  ],
+  "editionLabel": "English rules · two-page folded publisher PDF",
+  "firstPlayerRule": "The person who most recently took the subway is the controller for the first round.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The controller reveals the shared Station cards. All players then draw their own line section at the same time."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.blueorangegames.com/webroot/img/games/rules/003567590f97e1d9010234a843a600b1-Next-Station-Tokyo-Rules-US.pdf",
+      "title": "Next Station Tokyo — Blue Orange rules",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup and Build your subway line; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently took the subway is the controller for the first round. Local source SHA-256: 11c9809f6989c099fc1d4a04032f961c09eb84640def61a641d351d6fb862b4a. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

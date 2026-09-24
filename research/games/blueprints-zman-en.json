@@ -1,0 +1,33 @@
+{
+  "id": "blueprints-zman-en",
+  "slug": "blueprints-zman-en",
+  "gameName": "Blueprints",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Z-Man Games English rulebook",
+  "firstPlayerRule": "In the first round, the player who most recently visited a building under construction goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In rounds two and three, the player whose building scored the fewest points in the previous round goes first. Play moves clockwise from the first player in every round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images.zmangames.com/filer_public/81/0a/810a04df-26f8-4b01-a2de-b561719109d2/blueprints_rules.pdf",
+      "title": "Blueprints — Z-Man Games English rulebook",
+      "publisher": "Z-Man Games",
+      "printedPages": ["2"],
+      "pdfPagesOneBased": [2],
+      "location": "A Game Round: Determine Turn Order",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 2 of the Z-Man-hosted English rulebook states the first-round construction-site criterion, assigns later round starts to the previous round's lowest-scoring building, and establishes clockwise order. Source SHA-256: ca0473d279040cd8e157f736bb5aa78f2019fed68e278cfafc73f98ef0269bad. The legacy Z-Man image host has a certificate name mismatch; the same URL is indexed as the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is specified for equally recent construction-site visits or tied low scores for a later-round start."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

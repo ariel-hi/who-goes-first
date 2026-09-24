@@ -1,0 +1,37 @@
+{
+  "id": "catch-the-moon",
+  "slug": "catch-the-moon",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "0282fc2b205daf5cd2b7158924f26f582980c735e1b79abd1546f138872cef48",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Catch the Moon",
+  "aliases": [],
+  "editionLabel": "English rules in the eight-page publisher-linked PDF",
+  "firstPlayerRule": "Whoever most recently saw a full moon starts.",
+  "officialTieBreak": "If the group cannot decide, the youngest player starts.",
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1lEdr50NiIcPMghu_w5OzW5xm_karB2sI/view",
+      "title": "Catch the Moon — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup and first-player instruction; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: Whoever most recently saw a full moon starts. Local source SHA-256: 85f1ab32873313c5c77479ebddbbfe35d4a9ae01d08c98298ee8f82af4b92e59. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

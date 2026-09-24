@@ -1,0 +1,45 @@
+{
+  "id": "disc-cover-competitive-blue-orange-us-en",
+  "slug": "disc-cover-competitive-blue-orange-us-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "2143f1a0244e1a90f0e68fa867ab22d0912350e15e4bea724a82a6ac32a80a90",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Disc Cover",
+  "aliases": [],
+  "editionLabel": "English US competitive variation · 12-page bilingual publisher PDF",
+  "firstPlayerRule": "In the competitive variant, whoever most recently listened to music becomes the first Leader.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The cooperative game does not use this selection criterion: one player starts a shuffled song, and everyone chooses a cover. The Leader's tie decision in competitive play concerns album-cover voting, not a tie over who starts."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.blueorangegames.com/webroot/img/games/rules/a8373489db0c27e07d5afc48e7551835-Disc-Cover-rules-US-FR.pdf",
+      "title": "Disc Cover — Blue Orange rules",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "location": "Cooperative rules and competitive variation setup; PDF pages 2, 3, 5, 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: In the competitive variant, whoever most recently listened to music becomes the first Leader. Local source SHA-256: 2ab0d99daffb75391fc4bec76def506a1d0cf4d48edb9b732d1f9a0de823be00. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "speculation-queen-games-en",
+  "slug": "speculation-queen-games-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "42318a7ff7f365a89148a864b5310abf73734e4da16652d72423daf764adab29",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Speculation",
+  "aliases": [],
+  "editionLabel": "Queen Games English edition by Dirk Henn, copyright 2013",
+  "firstPlayerRule": "Whoever most recently bought stock shares goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "On the opening turn, the active player uses a Trade tile and draws the movement tile randomly. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/speculation_en.pdf",
+      "title": "Speculation — Queen Games rules",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Set-up, final paragraph; Sequence of play, first-turn exception; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever most recently bought stock shares goes first. Local source SHA-256: 29626a1d90da36255ff5d0461d0b94fb91647d328fbbad5d19d126eff5987f7d. Editorial review 2026-09-23: Rechecked the cited starting instruction, official fallback and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No alternative is specified here if nobody has bought shares.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "wonder-book-dv-giochi-en",
+  "slug": "wonder-book-dv-giochi-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8e29b0037bf512eec343e8a8dd6cde5dffb2d48547e98848363359462da823d6",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Wonder Book",
+  "aliases": [],
+  "editionLabel": "dV Giochi English rules",
+  "firstPlayerRule": "Whoever most recently spotted a dragon takes the Chapter deck and reads its first card aloud.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "This chooses the opening reader. During the Players' Phase, the group chooses its turn order and may change it between phases.",
+    "For a first game, use the Chapter I deck and keep the cards in order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/wonder-book-ita/download/WB_Rulebook_WEB.pdf",
+      "title": "Wonder Book — dV Giochi rules",
+      "publisher": "dV Giochi",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        4
+      ],
+      "location": "Start the Adventure, step 3; The Players' Phase, opening paragraph; PDF pages 1, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.dvgiochi.com/area-download/. Finding: Whoever most recently spotted a dragon takes the Chapter deck and reads its first card aloud. Local source SHA-256: 24e846f9a8858dcd576571b26926f76d5f4cb78081f4d789e52e5b91743ad48f. The cooperative game supports one to four players. The opening-reader instruction does not impose a fixed turn order on the later Players' Phase. No Chapter story contents were used. Editorial review 2026-09-23: Rechecked the cited starting instruction, role and opening-turn context against the publisher PDF, including rendered image-only pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rulebook does not define what counts as spotting a dragon.",
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

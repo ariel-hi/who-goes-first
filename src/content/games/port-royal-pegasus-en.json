@@ -1,0 +1,42 @@
+{
+  "id": "port-royal-pegasus-en",
+  "slug": "port-royal-pegasus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "07019ddd2b05410478fa1d77f53fcaa71bc6927bfcd8dd324398514127831bef",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Port Royal",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English base rules, 120-card edition",
+  "firstPlayerRule": "Whoever most recently visited a harbor goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The active-player role moves clockwise. Other players may also act in the Trade & Hire phase after the active player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.pegasus.de/public/media/a3/05/52/1717755978/4250231705595_gb.pdf?ts=1752574413",
+      "title": "Port Royal — Pegasus Spiele rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Components; Flow of Play, opening paragraph; PDF pages 1, 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Port-Royal/18114G. Finding: Whoever most recently visited a harbor goes first. Local source SHA-256: 900f187092fb080a48bd7b9faef89a0b327a2ea231836ba7481fe084d08748e8. The original 120-card English base rules are identified separately from other Port Royal products. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode context and turn order against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

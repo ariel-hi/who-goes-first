@@ -1,0 +1,42 @@
+{
+  "id": "so-ein-mist-abacus-en",
+  "slug": "so-ein-mist-abacus-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4fed6145d24c2e356bfc165dfcf43f097147609e9049ccc6ab583f08e22c813d",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "So ein Mist",
+  "aliases": [],
+  "editionLabel": "ABACUSSPIELE English rules, 2019 edition",
+  "firstPlayerRule": "Whoever most recently stepped in animal poop goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first player rolls a die from the middle. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2021/01/SoEinMist_Regel_EN.pdf",
+      "title": "So ein Mist — ABACUSSPIELE rules",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Set-up of the Game, final bullet; Course of the Game, opening paragraph; PDF pages 2, 4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/so-ein-mist/. Finding: Whoever most recently stepped in animal poop goes first. Local source SHA-256: f71959d8a68c507e5f08f26f08542f8d16ddccd556a3cee23f27d94b27833bb9. This is Rüdiger Dorn's animal-path dice game; the criterion is stated in the publisher's English translation. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

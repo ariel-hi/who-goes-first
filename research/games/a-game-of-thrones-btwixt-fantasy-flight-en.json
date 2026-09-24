@@ -1,0 +1,33 @@
+{
+  "id": "a-game-of-thrones-btwixt-fantasy-flight-en",
+  "slug": "a-game-of-thrones-btwixt-fantasy-flight-en",
+  "gameName": "A Game of Thrones: B'Twixt",
+  "aliases": ["A Game of Thrones: B’Twixt"],
+  "language": "en",
+  "editionLabel": "Fantasy Flight Games English rulebook, 2022 publisher posting",
+  "firstPlayerRule": "Whoever has most recently been betrayed takes the first player token and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with that player and continuing clockwise, players choose leader cards during setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/31/41/3141aeb6-e930-4556-8c24-2e0379f42125/btw01_rulebook-compressed.pdf",
+      "title": "A Game of Thrones: B'Twixt — Fantasy Flight Games rules",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": ["2", "3"],
+      "pdfPagesOneBased": [2, 3],
+      "location": "Setup, steps 4 and 5",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The Fantasy Flight B'Twixt product page links this English rulebook with a 2022 posting. Rendered PDF page 2 states that the player most recently betrayed takes the first player token. PDF page 3 continues with clockwise leader choice from that player. The source belongs to the three-to-six-player B'Twixt card game, not the distinct Game of Thrones board game. Local source SHA-256: 83e15662fdf174c62fdcaa4910bfdce4e5f8b8d4efb3833cb6d5732cd9fad6ba. Product page: https://www.fantasyflightgames.com/en/a-game-of-thrones-btwixt/. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rulebook does not state how to resolve equally recent betrayals."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

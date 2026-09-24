@@ -1,0 +1,33 @@
+{
+  "id": "archeos-society-space-cowboys-en",
+  "slug": "archeos-society-space-cowboys-en",
+  "gameName": "Archeos Society",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Space Cowboys English rulebook",
+  "firstPlayerRule": "For the first season, the player who most recently visited an archaeological site goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later seasons, the player who drew the third monkey card in the previous season goes first. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/Rulebook-AS-EN_LIGHT.pdf",
+      "title": "Archeos Society — Space Cowboys English rulebook",
+      "publisher": "Space Cowboys",
+      "printedPages": ["4"],
+      "pdfPagesOneBased": [4],
+      "location": "Start a New Season, step 4; Playing a Season",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The Space Cowboys game page links the English rulebook. Rendered page 4 distinguishes the first-season archaeological-site criterion from later seasons, where the third monkey-card drawer starts, and confirms clockwise turns. Source SHA-256: 08c3866691e24628c809430a730e0dcc5bd16636dc1900a16ac6336f0095eddd. Game page: https://www.spacecowboys-games.com/game/archeos-society/. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rulebook states no tie-break if more than one player visited an archaeological site equally recently."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

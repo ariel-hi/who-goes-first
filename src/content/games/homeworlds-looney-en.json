@@ -1,0 +1,43 @@
+{
+  "id": "homeworlds-looney-en",
+  "slug": "homeworlds-looney-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "aa3478abdbcfb761b1106e42959537c0a78758eaca96937a911410d316527e56",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Homeworlds",
+  "aliases": [],
+  "editionLabel": "Looney Labs English Homeworlds booklet, 16 PDF spreads",
+  "firstPlayerRule": "If the players are evenly matched in skill, flip a coin. Otherwise, the less experienced player begins.",
+  "officialTieBreak": "A coin flip chooses the starter when the players' skills are evenly matched.",
+  "houseFallback": null,
+  "clarifications": [
+    "The game opens with a setup round in which each player chooses their Homeworld stars and initial ship."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.looneylabs.com/sites/default/files/literature/Homeworlds%20Rules13.pdf",
+      "title": "Homeworlds — Looney Labs rules",
+      "publisher": "Looney Labs",
+      "printedPages": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup; Who Starts?; The First Turn; PDF pages 2, 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.looneylabs.com/games/homeworlds. Finding: If the players are evenly matched in skill, flip a coin. Otherwise, the less experienced player begins. Local source SHA-256: 490af86acd33ddf6ee502a7b629e97536a7e82be1c7dae3f93cd0af1b5373f55. Who Starts and The First Turn appear on printed page 4, the left half of PDF page 3. The setup instruction is on printed page 2. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition identification and applicable mode or tie context against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}

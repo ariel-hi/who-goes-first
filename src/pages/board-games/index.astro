@@ -1,0 +1,40 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getBoardGames } from '../../lib/content/board-games';
+import { getCatalog } from '../../lib/content/catalog';
+const games = getBoardGames();
+const withRules = games.filter(game => game.rules.length > 0).length;
+const extraRules = getCatalog().filter(rule => !games.some(game => game.rules.some(linked => linked.id === rule.id)));
+---
+<Layout title="Board Game Directory — Who Goes First?" description={`Browse ${games.length} board games by name and find their starting-player rules when a checked edition is available.`} pageType="CollectionPage">
+  <div class="content-page">
+    <h1>Board games.</h1>
+    <p class="lede">Find the game you’re playing.</p>
+    <p>Browse {games.length.toLocaleString('en')} games. {withRules.toLocaleString('en')} have a sourced starting-player rule here. For the others, you can still use the <a href="/">player picker</a>.</p>
+    <div data-board-directory>
+      <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name…" autocomplete="off" maxlength="100" /></label>
+      <p class="count-label" data-count role="status">{games.length} games listed</p>
+      <ul class="game-list">{games.map(game => <li data-name={game.name} data-id={game.bggId}>
+        <a href={`/board-games/${game.bggId}/`}><span>{game.name}<small>{game.rules.length ? `${game.rules.length} sourced ${game.rules.length === 1 ? 'edition' : 'editions'}` : 'Use the player picker'}</small></span></a>
+      </li>)}</ul>
+      <p data-empty hidden>No matching game in this collection.</p>
+    </div>
+    {extraRules.length > 0 && <section class="rule-section"><h2>More sourced editions</h2><p>These editions have a starting-player rule and are listed separately from the collection above.</p><ul class="game-list">{extraRules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.gameName}<small>{rule.editionLabel}</small></span></a></li>)}</ul></section>}
+  </div>
+</Layout>
+<script>
+  import { normalizeSearch } from '../../lib/search';
+  const root = document.querySelector<HTMLElement>('[data-board-directory]')!;
+  const input = root.querySelector<HTMLInputElement>('input')!;
+  const rows = [...root.querySelectorAll<HTMLLIElement>('li')];
+  input.addEventListener('input', () => {
+    const query = normalizeSearch(input.value);
+    let count = 0;
+    for (const row of rows) {
+      row.hidden = !normalizeSearch(row.dataset.name!).includes(query) && !row.dataset.id!.includes(query);
+      if (!row.hidden) count++;
+    }
+    root.querySelector<HTMLElement>('[data-count]')!.textContent = `${count} ${count === 1 ? 'game' : 'games'} found`;
+    root.querySelector<HTMLElement>('[data-empty]')!.hidden = count > 0;
+  });
+</script>

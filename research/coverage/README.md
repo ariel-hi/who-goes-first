@@ -4,7 +4,7 @@ The owner requested the entire starting-rule compendium, not a named starter lis
 
 `discovery-index.json` records all 1,320 distinct game identities observed in First Player Fun's public collection on 2026-09-22. It contains names, BGG IDs and discovery links only; no competitor rule prose, images, application code, or inferred publisher verification. This is a useful research inventory, not an exhaustive definition of all board games. No reusable license for that site's rule prose was established in the inspected repositories.
 
-Run `npm run content:coverage` or open `/dev/coverage/` to compare the complete inventory with researched editions. At this checkpoint there are 433 researched rule records in total; 411 inventory identities match a researched edition and 909 still need primary-source research. Matching a title does not prove every edition agrees. The owner has delegated editorial review to Codex. Currently 242 exact revisions are approved for the catalog; 177 portable criteria are eligible for the random mix. Research coverage, approval and deployment remain separate.
+Run `npm run content:coverage` or open `/dev/coverage/` to compare the complete inventory with researched editions. At this checkpoint there are 468 researched rule records in total; 446 inventory identities match a researched edition and 874 still need primary-source research. Matching a title does not prove every edition agrees. The owner has delegated editorial review to Codex. All 468 researched exact revisions are approved for the catalog; 177 portable criteria are eligible for the random mix. Research coverage, approval and deployment remain separate.
 
 `identity-overrides.json` records known ambiguous names. An override's inventory IDs replace title matching for that rule; an empty list means the rule does not represent any inventory identity. Unknown rule IDs, unknown inventory IDs and duplicate override records are errors. Gamewright's Chomp! is excluded from the unrelated Allplay Chomp identity, which now has its own researched answer.
 
@@ -32,7 +32,19 @@ The 2026-09-23 UTC Gamewright batch retrieved 91 publisher-hosted manuals coveri
 
 Continue across this inventory rather than stopping at the product plan's old candidate list. For each game, locate a publisher rulebook, identify the actual edition, inspect the opening instruction and any stated tie-break, and create a separate draft under `research/games/`. The development directory includes valid drafts; the random mix requires a separate review of whether each criterion can select one player without game-specific components. Never fill a missing answer with a guess or count an identity as a rule. The owner's later authorization permits Codex to perform the editorial review and approve exact revisions for `src/content/games/`; it does not bypass source verification or authorize deployment.
 
-Fudacoma, Blue Orange and Artipia add three new research drafts. The directly publisher-hosted Fudacoma and Blue Orange records are approved. The Artipia record uses a retailer-hosted copy of an Artipia-branded booklet because the current publisher-linked file was unavailable; it remains held for provenance and variant review. See `fudacoma-blue-orange-artipia-progress.md`.
+Fudacoma, Blue Orange and Artipia add three researched editions, all now approved. The Artipia 13 Ghosts record cites the publisher rulebook and records the matching rendered booklet used for visual review. See `fudacoma-blue-orange-artipia-progress.md`.
+
+A Thief's Fortune, Ceres, Briefcase and WordCraft add four more Artipia editions. Their publisher-linked English PDFs establish the opening criteria and relevant later-round or mode rules. See `artipia-followup-progress.md`.
+
+Agent Avenue adds one Nerdlab English rulebook edition. Its two-player starter and separate team-variant setup were checked on rendered publisher pages; only the confirmed two-player answer is published.
+
+Android and A Game of Thrones: B'Twixt add two Fantasy Flight editions. Publisher-hosted English setup pages were rendered and checked; the Android board game is kept distinct from Android: Netrunner and B'Twixt from the other Game of Thrones games.
+
+Sid Meier's Civilization: The Board Game and A Column of Fire add two more publisher-manual editions. The original Civilization game is kept separate from A New Dawn; the A Column of Fire starter is fixed for the entire game.
+
+Agatha Christie: Death on the Cards, Ankh: Gods of Egypt, Archeos Society, Aquatica and Alpaca add five more publisher-manual editions. Death on the Cards retains its coin-flip tie rule; Ankh retains both official options; Archeos Society distinguishes its first season from later seasons; Alpaca's joke about an absent alpaca petter is not treated as a practical fallback.
+
+Alubari, 890 Anno Domini, 7: The Sins, Birdie, Squeaky, Blueprints, Beyond Baker Street and Bears vs Babies add eight further researched editions. Alubari uses an archived copy of its original English rulebook; the other seven use publisher-linked manuals. Birdie's second-round starter and Blueprints' later-round starter are recorded separately from their first-round criteria. Beyond Baker Street distinguishes introductory play from Character-card play. Bears vs Babies' 2023 instructions offer optional example criteria, not a mandatory one.
 
 The Blue Orange batch adds 13 records for 12 further inventory identities, from 18 retrieved publisher manuals. Two Spin Circus editions have different answers and separate entries. Image-only manuals were read visually, and the French Lost Seas manual is clearly labeled as an English summary of that edition. See `blue-orange-progress.md`.
 

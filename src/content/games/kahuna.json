@@ -1,0 +1,38 @@
+{
+  "id": "kahuna",
+  "slug": "kahuna",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "0b7e11318ec408d0f1bd57fd2ab040f82e5d30161fa3d9dc563368a77d0e86cc",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Kahuna",
+  "aliases": [],
+  "editionLabel": "English Thames & Kosmos rules, six-page publisher PDF",
+  "firstPlayerRule": "The player who needs a vacation more urgently starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.co.uk/wp-content/uploads/2020/05/691806_kahuna_manual.pdf",
+      "title": "Kahuna — Thames & Kosmos rules",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Preparation, final bullet; PDF pages 2",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.thamesandkosmos.co.uk/product/kahuna/. Finding: The player who needs a vacation more urgently starts. Local source SHA-256: 8320bbb992f2739153cd5618fb329b4dedb531aae2c20990f508e31f7bc46c06. The PDF contains clipped spread text repeated in extraction. The preparation instruction is visibly on rendered PDF page 2, not on every page where extraction repeats it. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No starting tie-break is stated alongside this instruction.",
+    "The answer applies to the identified publisher file; other editions may differ."
+  ]
+}
