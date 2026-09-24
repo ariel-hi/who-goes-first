@@ -1,0 +1,39 @@
+{
+  "id": "loco-momo-blam-en",
+  "slug": "loco-momo-blam-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Loco Momo",
+  "aliases": [],
+  "editionLabel": "BLAM! English rules",
+  "firstPlayerRule": "The player who most recently walked in a forest starts; the group may instead choose the starter at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starter takes the First Player and Sun tokens; play proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/14/ad/77-loco-momo-rulebook.pdf",
+      "title": "Loco Momo — English rulebook",
+      "publisher": "BLAM! / Wonderful World",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup, step 4; How to play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 states the forest-walk criterion, optional random choice and clockwise play. The booklet credits original publisher Wonderful World and France/world publisher BLAM!; Forest and Picture boards, animal tokens and Sun token match inventory BGG 317299. SHA-256: e3ea54811b74264dda247ebcebc8e3d24ead487c9737dfe6d968b8d937162c9b. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for a shared forest walk."
+  ]
+}

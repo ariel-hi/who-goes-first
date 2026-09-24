@@ -1,0 +1,39 @@
+{
+  "id": "maracaibo-dlp-2019-en",
+  "slug": "maracaibo-dlp-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Maracaibo",
+  "aliases": [],
+  "editionLabel": "dlp games English rules, 2019",
+  "firstPlayerRule": "The player who was most recently aboard a ship starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starter receives 8 doubloons; each following player clockwise receives one more."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/d7/d7/d9-maracaibo-rulebook.pdf",
+      "title": "Maracaibo — English rulebook",
+      "publisher": "dlp games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Player Setup, step 13",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 gives the recent-ship criterion and starting-money order. The rulebook credits dlp games; ship boards, campaign story cards and Caribbean track match inventory BGG 276025. SHA-256: a2b92b6924b916c0a5119427350ce62aca25121253784b1089137073feac4306. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for players last aboard the same ship."
+  ]
+}

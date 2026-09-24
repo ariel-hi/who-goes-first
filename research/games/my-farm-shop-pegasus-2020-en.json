@@ -1,0 +1,41 @@
+{
+  "id": "my-farm-shop-pegasus-2020-en",
+  "slug": "my-farm-shop-pegasus-2020-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "My Farm Shop",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English rules, 2020",
+  "firstPlayerRule": "The player who most recently visited a farm starts and takes the three dice.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players then take turns clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/f7/41/eb-my-farm-shop-rulebook.pdf",
+      "title": "My Farm Shop — English rulebook",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Game Setup, step 9; Summary of Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 2 states the farm-visit criterion and dice assignment; page 3 gives clockwise turns. Page 8 credits Pegasus Spiele ©2020; Farm Shop boards, Field cards, Goods and Market match inventory BGG 270636. SHA-256: 5f4afc98b2c6ca4e55bd4e427cadfe669436eb4d57cfd1905ba71341c237a4b8. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for a shared farm visit."
+  ]
+}

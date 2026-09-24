@@ -1,0 +1,42 @@
+{
+  "id": "memoarrr-stronghold-2018-en",
+  "slug": "memoarrr-stronghold-2018-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Memoarrr!",
+  "aliases": [],
+  "editionLabel": "Stronghold Games English rules, 2018",
+  "firstPlayerRule": "The player who most recently had a volcanic or emotional outburst starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later rounds, the player whose returned Volcano card has the most birds starts.",
+    "Play proceeds clockwise after the start player reveals a Location."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/92/7e/34-memoarrr-rulebook.pdf",
+      "title": "Memoarrr! — English rules",
+      "publisher": "Stronghold Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Preparation; Birds and Volcanoes",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 2 gives the initial outburst criterion and clockwise play; page 3 gives the later-round bird rule. Page 4 credits Stronghold Games ©2018; Location, Treasure and Volcano cards match inventory BGG 230383. SHA-256: ac74fa0b95a4622e99ae46bb5d0b40b4b36d3f092adb667f10c02ad92c21115f. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent outbursts."
+  ]
+}

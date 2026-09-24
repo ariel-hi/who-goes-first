@@ -1,0 +1,42 @@
+{
+  "id": "incubation-synapses-2019-en",
+  "slug": "incubation-synapses-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Incubation",
+  "aliases": [],
+  "editionLabel": "Synapses Games English rules, 2019",
+  "firstPlayerRule": "The player who most recently ate an egg starts and takes the First Player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before the first turn, players choose a Dragon Egg card in reverse order, beginning with the player to the starter’s right.",
+    "Rounds proceed clockwise from the First Player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/04/ab/8c-incubation-rulebook.pdf",
+      "title": "Incubation — English rulebook",
+      "publisher": "Synapses Games",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup, steps 7–8; Gameplay",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 states the egg criterion, First Player token and reverse-order egg selection; page 4 states clockwise rounds. Printed page 8 credits Synapses Games ©2019; incubator boards, Dragon Egg cards, market spinner and objective cards match inventory BGG 254427. SHA-256: 832a40e1800270cb1df9c24116c492ef1a224838e8e2cf18ddf77bcc2cb81d48. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for players who last ate an egg together."
+  ]
+}

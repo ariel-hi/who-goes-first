@@ -1,0 +1,39 @@
+{
+  "id": "meeple-circus-matagot-en",
+  "slug": "meeple-circus-matagot-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Meeple Circus",
+  "aliases": [],
+  "editionLabel": "Matagot English rules",
+  "firstPlayerRule": "The player who most recently saw a circus act starts the first act.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "For the next act, the player with the lowest score becomes first player; if tied, the youngest tied player starts.",
+    "Preparation choices proceed clockwise from the first player; the performance itself is simultaneous."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/0b/72/9f-meeple-circus-rulebook.pdf",
+      "title": "Meeple Circus — English rules",
+      "publisher": "Matagot",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        3
+      ],
+      "location": "Setup, final bullet; End of first act",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1 states the circus-act criterion. Page 3 changes the next starter to the lowest scorer, with youngest-player tiebreak. The booklet credits Matagot Editions; circus rings, Acrobat meeples, Component tiles and act tiles match inventory BGG 193214. SHA-256: 588fd9917e41b573d7b52c35af7fef0eca9e2f7db047edb92e2faf2d1ad30cf8. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent circus visits at initial setup."
+  ]
+}
