@@ -1,0 +1,36 @@
+{
+  "id": "hellapagos-gigamic-en-2017",
+  "slug": "hellapagos-gigamic-en-2017",
+  "gameName": "Hellapagos",
+  "aliases": ["Galèrapagos"],
+  "language": "en",
+  "editionLabel": "Gigamic English rulebook (2017)",
+  "firstPlayerRule": "The player who most resembles a castaway takes the First Player card and starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns clockwise within a round.",
+    "At the start of each later round, pass the First Player card to the player on the right. If the First Player is eliminated, pass the card to the player on the right."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/4b/cb/51-hellapagos-rulebook.pdf",
+      "title": "Hellapagos English rulebook",
+      "publisher": "Gigamic",
+      "printedPages": ["4"],
+      "pdfPagesOneBased": [4],
+      "location": "Playing the Game; Details of a Round of Play, step 1",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked PDF page 4 of the Gigamic-authored English rulebook mirrored by 1jour-1jeu. Gigamic's current product page links an English PDF URL that returned 404 during this check. The rule gives the castaway resemblance criterion, clockwise turns, and rightward First Player card transfer. SHA-256: 2924648c7ab64a415cc95bedffd6127ec37343ac5a11d4c32a15cc28bafbe079. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The publisher's current English download link was unavailable; this is the publisher-authored 2017 PDF hosted by a rulebook archive."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
