@@ -1,0 +1,43 @@
+{
+  "id": "trogdor-homestar-2019-en",
+  "slug": "trogdor-homestar-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Trogdor!!: The Board Game",
+  "aliases": [],
+  "editionLabel": "Homestar Runner English rules, 2019",
+  "firstPlayerRule": "Randomly choose who takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Each player receives a Keeper, an Item and an Action card before the first turn.",
+    "This is a cooperative game: players take turns controlling the same Trogdor figure.",
+    "The booklet suggests several playful ways to choose a starter, including Keeper order or chance methods."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://trogdorboardgame.homestarrunner.com/Trogdor_Rulebook.pdf",
+      "title": "Trogdor!!: The Board Game — English rulebook",
+      "publisher": "Homestar Runner",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Before the first turn; To Begin",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the rulebook from the official Trogdor board-game site. Printed/PDF page 4 assigns Keeper, Item and Action cards; page 5 says to determine the first player randomly and gives example methods. Its shared-figure cooperative turn context is explicit. SHA-256: 9366c4b5e381cb2fcd2bbe3294c4ef0681be923981c35e65ae7b8c525872668c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The example methods vary, and the booklet does not designate a single required random procedure. Random-only and cooperative instructions remain outside the portable random mix."
+  ]
+}

@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 726 game rules approved for the catalog; 311 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 731 game rules approved for the catalog; 313 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Zoo Vadis, Trogdor!!, Wilmot’s Warehouse, Wonderland’s War and the original Yedo add five checked answers. Zoo Vadis and Wonderland’s War join the random mix. Wilmot’s Warehouse identifies the first rotating cooperative supervisor, and Yedo uses a random opening order that may change later. See `research/coverage/zoo-trogdor-wilmot-wonderland-yedo-progress.md`.
 
 Rebirth has separate Scotland and Ireland starting instructions, both eligible for the random mix. The Fuzzies uses a checked German publisher booklet and is labeled as an English summary. Doodle Dungeon uses indexed text of its English publisher booklet; the publisher download was blocked, and this limit is recorded. See `research/coverage/rebirth-fuzzies-doodle-progress.md`.
 

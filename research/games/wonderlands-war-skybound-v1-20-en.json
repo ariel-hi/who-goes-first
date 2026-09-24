@@ -1,0 +1,43 @@
+{
+  "id": "wonderlands-war-skybound-v1-20-en",
+  "slug": "wonderlands-war-skybound-v1-20-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Wonderland's War",
+  "aliases": [],
+  "editionLabel": "Skybound English rules, version 1.20",
+  "firstPlayerRule": "The person who most recently had tea begins the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting Shards depend on player order and player count.",
+    "Tea Party turns proceed clockwise.",
+    "In rounds two and three, the player with the lowest score begins; ties use the fewest units in all Regions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pakufuda.store/wp-content/uploads/2025/05/SKB-WW-rulebook-1.20.pdf",
+      "title": "Wonderland's War — English rulebook",
+      "publisher": "Skybound / Druid City Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Player Set-up, step N; Tea Party — Setting the Table",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the version 1.20 English publisher-produced booklet from a retailer archive. Printed/PDF page 5 gives the tea criterion and initial Shards by order. Page 6 explains later-round starters and clockwise Tea Party turns. The battle starting-region marker is a separate rule. SHA-256: 8c59c22896ed6f79fe57c01a38453a460c5246ee863b1206947230894baebd4b. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The booklet does not specify a tie procedure for equally recent tea drinkers."
+  ]
+}

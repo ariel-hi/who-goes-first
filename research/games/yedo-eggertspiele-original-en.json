@@ -1,0 +1,41 @@
+{
+  "id": "yedo-eggertspiele-original-en",
+  "slug": "yedo-eggertspiele-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Yedo",
+  "aliases": [],
+  "editionLabel": "Eggertspiele English rules, original game",
+  "firstPlayerRule": "Determine a starting player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player places markers on the first spaces of both the Player Order and Bidding tracks; other players fill them clockwise.",
+    "The Player Order can change later in the game.",
+    "This is the original Yedo, distinct from Yedo: Deluxe Master Set."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.goblins.net/files/downloads/YEDO.pdf",
+      "title": "Yedo — English rulebook",
+      "publisher": "Eggertspiele",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Game setup — starting player and Player Order Track",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the English publisher-produced original-game rulebook from a retailer archive. Printed/PDF page 5 calls for a random starting player, initial markers in clockwise order, and notes that player order can change. The source is for inventory BGG 117915, rather than the separate Deluxe Master Set identity. SHA-256: cf449fcfd071e650691514e5c6941cde5eb436e0df3b16b4bb2f6c7a28f7319d. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No single random method is prescribed. Random-only instructions remain outside the portable random mix."
+  ]
+}
