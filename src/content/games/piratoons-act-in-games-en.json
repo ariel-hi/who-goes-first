@@ -1,0 +1,39 @@
+{
+  "id": "piratoons-act-in-games-en",
+  "slug": "piratoons-act-in-games-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ee595dd9cb801b6e6455a3e3c4311d2850997083c225b2b2f342c0e3f7634554",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Piratoons",
+  "aliases": [],
+  "editionLabel": "Act in Games English rules",
+  "firstPlayerRule": "The player who was most recently on a boat starts as captain for the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The captain role passes clockwise for each following round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e0/e9/61-piratoons-rulebook.pdf",
+      "title": "Piratoons — English rulebook",
+      "publisher": "Act in Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 gives the boat criterion and captain rotation. Page 1 shows Act in Games and the same boat, crew and equipment set as inventory BGG 172560. SHA-256: b1ca917645e1195fc725de671a2249822cc58996c9805d7833723ce7ddab300f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure."
+  ]
+}

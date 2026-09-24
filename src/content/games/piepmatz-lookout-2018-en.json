@@ -1,0 +1,41 @@
+{
+  "id": "piepmatz-lookout-2018-en",
+  "slug": "piepmatz-lookout-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1996eead649402838611d3d929be5507483f77b31d6a312811fe62215b419105",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Piepmatz",
+  "aliases": [],
+  "editionLabel": "Lookout Spiele English rules, 2018",
+  "firstPlayerRule": "The last player to see a songbird starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the first-player card, which does not change hands during the game; turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/33/49/6c-piepmatz-rulebook.pdf",
+      "title": "Piepmatz — English rulebook",
+      "publisher": "Lookout Spiele",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup, step 6; Course of Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 gives the songbird criterion and fixed first-player card; page 4 confirms the first turn and clockwise order. Page 12 credits Lookout GmbH ©2018; bird and feeder cards match inventory BGG 246200. SHA-256: 385347ceb1a4da7630312c2ec4353dd24bd311ffc8d5da0f82c440b459d91885. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure for the last songbird sighting."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ponzi-scheme-homosapiens-2015-en",
+  "slug": "ponzi-scheme-homosapiens-2015-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Ponzi Scheme",
+  "aliases": [],
+  "editionLabel": "Original English rules, 2015",
+  "firstPlayerRule": "The player who is best at keeping their word starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the Start Player marker; turns proceed clockwise. The marker passes to the player on the left in later rounds."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/0c/7f/67-ponzi-scheme-rulebook.pdf",
+      "title": "Ponzi Scheme — English rulebook",
+      "publisher": "Homosapiens Lab",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup; Pass the Marker",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 gives the keeping-one’s-word criterion and clockwise direction; page 4 explains marker handoff. Funding board, 72 Fund cards and Time wheels match inventory BGG 180899. Original publisher identity cross-checked against the BGG game record; the archived booklet itself has no publisher imprint. SHA-256: a0ab4082502fb17b3f4fb5276c001b38d2be86dbffbaadc8754590b3a955ab3d. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The subjective criterion has no objective test or tie procedure."
+  ]
+}

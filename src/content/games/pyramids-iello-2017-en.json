@@ -1,0 +1,41 @@
+{
+  "id": "pyramids-iello-2017-en",
+  "slug": "pyramids-iello-2017-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a4aa9163d3d2d591db6206ffff6f2e28c2d5c6b40404bbd095b436e280699b31",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Pyramids",
+  "aliases": [],
+  "editionLabel": "IELLO English rules, 2017",
+  "firstPlayerRule": "The last player to have seen a pyramid starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the First Player token and Construction-card deck. The token passes to the player on the left at the end of a round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/59/48/6f-pyramids-rulebook.pdf",
+      "title": "Pyramids — English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [
+        "4",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        10
+      ],
+      "location": "Setup; End of the Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 4 gives the pyramid criterion and setup handoff; page 10 passes the token for later rounds. Page 12 bears IELLO ©2017; God tiles and Construction cards match inventory BGG 213492. SHA-256: 6619309367037c365f9cd0a3a80a9b2ca2ee9b6e3c4b2ea569a3a5caa5150459. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure."
+  ]
+}
