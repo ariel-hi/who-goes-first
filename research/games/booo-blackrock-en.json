@@ -1,0 +1,42 @@
+{
+  "id": "booo-blackrock-en",
+  "slug": "booo-blackrock-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Booo!",
+  "aliases": [],
+  "editionLabel": "Blackrock Games English rules",
+  "firstPlayerRule": "The player wearing the most white clothing is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player randomly announces which of the four routes to use.",
+    "After each turn, the first-player role moves clockwise; all players search for the ghost’s route simultaneously."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/0f/59/48-booo-rulebook.pdf",
+      "title": "Booo! — English rulebook",
+      "publisher": "Blackrock Games",
+      "printedPages": [
+        "8",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Set Up, final line; Game Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The complete Blackrock English booklet preserved by 1jour-1jeu was rendered on PDF pages 3 and 4, printed pages 8 and 9. Its ghost, castle and wall-tile components match inventory BGG 192344. The manual distinguishes the first-player setup role from simultaneous route searching. SHA-256: 6494bcd49d079c6b9da188f450dc3d42941482996d9c5e5af21f3f29d2b2d2da. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equal amounts of white clothing."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bombay-ystari-en",
+  "slug": "bombay-ystari-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Bombay",
+  "aliases": [],
+  "editionLabel": "Ystari Games English rules",
+  "firstPlayerRule": "The player who most recently saw an elephant starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player takes the Action tokens; turns proceed clockwise.",
+    "At the end of each set, the player to their left becomes the new first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/c8/0a/23-bombay-rulebook.pdf",
+      "title": "Bombay — English rulebook",
+      "publisher": "Ystari Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4
+      ],
+      "location": "Preparation, step 2; Game Turn; End of the Set",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Ystari-authored English manual was rendered on PDF pages 1, 2 and 4. Its elephant, palace and silk components and Cyril Demaegd design credit match inventory BGG 40214. The printed game-turn and end-of-set instructions establish the later starter change. SHA-256: 51012e0d9ef54fa8653795c78053f1b8761243aecce80da86aa2cec7affcbc85. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent elephant sightings."
+  ]
+}
