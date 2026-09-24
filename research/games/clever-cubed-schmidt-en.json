@@ -1,0 +1,41 @@
+{
+  "id": "clever-cubed-schmidt-en",
+  "slug": "clever-cubed-schmidt-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Clever Cubed",
+  "aliases": [],
+  "editionLabel": "Schmidt Spiele English rules",
+  "firstPlayerRule": "The unluckiest player takes the six dice and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player is the first active player; the dice then pass clockwise after each active turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/54/e6/62-clever-cubed-rulebook.pdf",
+      "title": "Clever Cubed — English rulebook",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup; end of active-player turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 2 states the unluckiest-player criterion, six dice and first active turn; page 4 gives the clockwise pass. Page 12 credits Schmidt Spiele GmbH. Game sheets, six colored dice and a silver platter match inventory BGG 316546. SHA-256: a3cb110062bb0253106ff6b4319cfae6400cb7773f068e1a4fc0ce748e6fd048. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not define “unluckiest” or a tie procedure."
+  ]
+}

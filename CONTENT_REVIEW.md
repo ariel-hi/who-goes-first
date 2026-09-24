@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 593 game rules approved for the catalog; 235 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 598 game rules approved for the catalog; 237 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Clever Cubed, Colorado, Farm Club, Finding Nessie, and Fleet Commander: Genesis add five checked English editions. Colorado preserves its official free-choice alternative; Fleet Commander preserves the nine-dice fallback for its first Pitched Battle. Clever Cubed and Finding Nessie join the random mix. The Farm Club and Colorado prompts remain game-specific, and Fleet Commander's fallback needs its dice.
 
 Circus, Cowboy Bebop: Space Serenade, Cóatl: The Card Game, Dunaïa, Dust in the Wings, and Farben add six checked English editions. Cóatl offers an open choice with a paintbrush suggestion; Farben assigns a starting role while all players choose colors together and a different player tells the first story. Four portable criteria joined the random mix. Cowboy Bebop uses a publisher-hosted manual; its first player also receives one fewer opening card.
 

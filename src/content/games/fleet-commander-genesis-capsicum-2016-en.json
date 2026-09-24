@@ -1,0 +1,40 @@
+{
+  "id": "fleet-commander-genesis-capsicum-2016-en",
+  "slug": "fleet-commander-genesis-capsicum-2016-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9cccbfc78f98abc9c3a4be1c9599cc8014990ec154c622be5f1f4bb61095c250",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Fleet Commander: Genesis",
+  "aliases": [],
+  "editionLabel": "Capsicum Games English rules, 2016, two-player Pitched Battle",
+  "firstPlayerRule": "The player who last observed gravitational waves begins; otherwise, both players roll their nine Energy dice and the player with more special-symbol results starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The opening setup shown is the two-player Pitched Battle presented for a first game.",
+    "The manual gives the dice method if neither player has observed gravitational waves."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/67/81/e9-fleet-commander-genesis-rulebook.pdf",
+      "title": "Fleet Commander: Genesis — English rulebook",
+      "publisher": "Capsicum Games",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Set Up, opening paragraph",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 5 gives the gravitational-wave criterion and more-special-results dice fallback after assigning nine dice to each player. Page 32 credits Capsicum Games ©2016. Ship miniatures, Energy Dice and Combat Zone tiles match inventory BGG 192663. SHA-256: 260fe757cb508bd1263ecfae8cbddd6c6004aba88783874381fd51e36f08b30b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The manual gives no second tie procedure if both players roll the same number of special results."
+  ]
+}

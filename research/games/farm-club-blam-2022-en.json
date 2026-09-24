@@ -1,0 +1,39 @@
+{
+  "id": "farm-club-blam-2022-en",
+  "slug": "farm-club-blam-2022-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Farm Club",
+  "aliases": [],
+  "editionLabel": "BLAM! English rules, 2022",
+  "firstPlayerRule": "The player who was most recently attacked by an animal starts; the rules say even a cat scratch counts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After that player’s turn, the next player takes a turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/8d/5f/ae-farm-club-rulebook.pdf",
+      "title": "Farm Club — English rulebook",
+      "publisher": "BLAM!",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup, after step 4",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1, printed page 2, states the recent-animal-attack criterion and cat-scratch qualification. The publisher product page identifies the BLAM! game; animal pawns, Goal and Clan cards and Farm boards match inventory BGG 358790. SHA-256: 0cc6861cbf4dca4e1ac3d0ab27860565afb486614c88c8fc9277ae87add08bca. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure or fallback is stated if no player recalls an animal attack."
+  ]
+}
