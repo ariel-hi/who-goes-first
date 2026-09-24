@@ -1,0 +1,39 @@
+{
+  "id": "death-valley-button-shy-pnp-en",
+  "slug": "death-valley-button-shy-pnp-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ea85b5d8bbd6a18ffab7a840488ed0d5cb3daf231d18b7e5672facde2cc50066",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Death Valley",
+  "aliases": [],
+  "editionLabel": "Button Shy print-and-play English rules",
+  "firstPlayerRule": "The player who most recently drank water plays first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is the two-player game. In the solo variant, the human player takes the first turn against the AI."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://tesera.ru/images/items/1936050/DeathValley-PNP.pdf",
+      "title": "Death Valley — Button Shy print-and-play rules",
+      "publisher": "Button Shy Games",
+      "printedPages": [
+        "unnumbered rules sheet"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually inspected page 1 of Button Shy's image-only print-and-play rules sheet preserved by Tesera. Setup explicitly names the player who most recently drank water. The separate solo panel says the human player plays first. SHA-256: 261430220b2b845079fa2376e6d6cecb056a99e21cdaca5f13814d53e19f1cf4. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, edition, and stated alternatives.",
+  "uncertainty": [
+    "The rule sheet provides no tie-break for players who drank water equally recently."
+  ]
+}

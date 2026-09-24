@@ -1,6 +1,6 @@
 # Content review queue
 
-**Owner-authorized assistant review: 468 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 485 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
 
 Eight HABA editions were checked against their publisher-linked English PDFs and approved on 2026-09-23: Animal Upon Animal, its Christmas Edition, Dancing Eggs, First Orchard, Honga, Rhino Hero, Rhino Hero: Super Battle, and Unicorn Glitterluck: Cloud Crystals. The Super Battle answer preserves the source's optional starter wording.
 

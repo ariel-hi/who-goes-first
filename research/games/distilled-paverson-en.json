@@ -1,0 +1,31 @@
+{
+  "id": "distilled-paverson-en",
+  "slug": "distilled-paverson-en",
+  "gameName": "Distilled",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Paverson Games English rulebook",
+  "firstPlayerRule": "Randomly choose the first player, or give the first-player token to whoever last visited a distillery.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["At the end of each round, pass the first-player token clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/7f/09/47/Rulebook-Distilled.pdf",
+      "title": "Distilled — English rulebook",
+      "publisher": "Paverson Games",
+      "printedPages": ["6", "7"],
+      "pdfPagesOneBased": [4],
+      "location": "Player Setup, step 5; Round Overview",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 4 (printed spread pages 6–7) of the Paverson English rulebook preserved by Gamers HQ. Player Setup step 5 provides random selection or the last distillery visitor; Round Overview rotates the token clockwise each round. SHA-256: a68af90f2876d5a1701876fb533c19bc81e76770f5e0005b3b22c7cbd73900aa. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,31 @@
+{
+  "id": "3-wishes-passport-en",
+  "slug": "3-wishes-passport-en",
+  "gameName": "3 Wishes",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Passport Game Studios / Strawberry Studio 2016 English rules",
+  "firstPlayerRule": "The player who most recently had a wish come true starts.",
+  "officialTieBreak": "If there is a dispute, the youngest player starts.",
+  "houseFallback": null,
+  "clarifications": ["When playing multiple games, rotate the starting player one seat clockwise each game."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ihrysko.sk/files/product_pdf/3wishes-rules-web.pdf",
+      "title": "3 Wishes — rules of play",
+      "publisher": "Passport Game Studios / Strawberry Studio",
+      "printedPages": ["unnumbered"],
+      "pdfPagesOneBased": [4],
+      "location": "Starting player; Sequence of play",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 4 of the original publisher-authored English rules preserved by ihrysko. The page gives the recent-wish criterion, the youngest-player resolution for a dispute, and clockwise starter rotation across multiple games. SHA-256: 3938ea6dd7f031cf22a8f1bbbf0ac57e9b260384524fe2717a9564ce2f2d9215. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

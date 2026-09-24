@@ -1,0 +1,46 @@
+{
+  "id": "divinity-derby-ares-en",
+  "slug": "divinity-derby-ares-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3ce8ba4f799d81462da44f42b30e78e9c10308a47f05edc78873d9755908b9de",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Divinity Derby",
+  "aliases": [],
+  "editionLabel": "Ares Games English rulebook",
+  "firstPlayerRule": "The player who most recently saw a flying creature takes the first-player token. The rules also allow the group to use the youngest player instead.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "First bets and race turns begin with the token holder and proceed clockwise.",
+    "The first-player token changes during a race at the third bet and passes left again when setting up the next race."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.studiogiochi.com/files/studiogiochi.com/2019/01/DivinityDerby-Rules-EN.pdf",
+      "title": "Divinity Derby — English rulebook",
+      "publisher": "Ares Games",
+      "printedPages": [
+        "4",
+        "7",
+        "8",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7,
+        8,
+        11
+      ],
+      "location": "Initial Set-Up; How to Play; Third Bet; Setup New Race",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 4 of the original Ares Games English rulebook preserved by designer Studio Giochi and checked pages 7, 8 and 11 for clockwise order and later token movement. Initial Set-Up provides the flying-creature criterion with an official youngest-player option. SHA-256: 7374c8777911332f8e60d72b6a8a3ffbaaf750896f0295e0c4a3509cae41334a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, turn order and edition.",
+  "uncertainty": [
+    "No tie-break is stated for equally recent flying-creature sightings; the youngest-player option is available."
+  ]
+}

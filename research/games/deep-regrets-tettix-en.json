@@ -1,0 +1,31 @@
+{
+  "id": "deep-regrets-tettix-en",
+  "slug": "deep-regrets-tettix-en",
+  "gameName": "Deep Regrets",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Tettix Games English rulebook",
+  "firstPlayerRule": "Give the first-player marker to the person who has had the most regrettable day.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The first day is spent at sea. On subsequent days, pass the first-player marker clockwise; declarations and actions proceed clockwise from the marker holder."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/6a/75/ba/Deep-Regrets-Rulebook_EN.pdf",
+      "title": "Deep Regrets — The Angler's Guide",
+      "publisher": "Tettix Games",
+      "printedPages": ["6", "8"],
+      "pdfPagesOneBased": [4, 5],
+      "location": "Player Setup; Day Phases",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Inspected publisher-authored English rulebook text preserved by Gamers HQ. Player Setup on PDF page 4 (printed page 6) assigns the first-player marker by most regrettable day; Day Phases on page 5 (printed page 8) passes it clockwise at the start of subsequent days and uses clockwise order for declarations and actions. SHA-256: 988dfcef0810544ed7b922a178ff35932ad9834e8ba1b855d7a80c8e37e39a11. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rulebook does not specify how to compare equally regrettable days."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

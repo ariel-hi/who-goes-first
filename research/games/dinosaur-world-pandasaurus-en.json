@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-world-pandasaurus-en",
+  "slug": "dinosaur-world-pandasaurus-en",
+  "gameName": "Dinosaur World",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Pandasaurus Games English rulebook",
+  "firstPlayerRule": "The player who most recently trained a raptor to respond to hand signals goes first. If no one has done that, choose the first player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Give the first-player marker to the selected player. Place the other players' turn-order markers in clockwise order; starting coins increase from first to fourth player."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/d0/fb/47-dinosaur-world-rulebook.pdf",
+      "title": "Dinosaur World — English rulebook",
+      "publisher": "Pandasaurus Games",
+      "printedPages": ["6"],
+      "pdfPagesOneBased": [6],
+      "location": "Player Area Setup, Turn Order",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 6 of the image-only publisher-authored English rulebook preserved by 1jour-1jeu. Player Area Setup step 10 gives the raptor-training criterion, explicit random fallback, clockwise turn order, and staggered starting coins. SHA-256: d9522edcfa8167791c46f1f990f43b712f60a93596d6481ab256a7afc5108b71. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

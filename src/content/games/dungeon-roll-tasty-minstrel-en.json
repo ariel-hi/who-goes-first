@@ -1,0 +1,39 @@
+{
+  "id": "dungeon-roll-tasty-minstrel-en",
+  "slug": "dungeon-roll-tasty-minstrel-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8438e57e5e8217e08511ff95909ad0639a0f32c6a43f1e3b93ebec058632e817",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Dungeon Roll",
+  "aliases": [],
+  "editionLabel": "Tasty Minstrel Games English rulebook",
+  "firstPlayerRule": "The player who was most recently underground starts as the Adventurer.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In multiplayer setup, the person to the Adventurer's left starts as the Dungeon Lord."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/76/68/4f-dungeon-roll-rulebook.pdf",
+      "title": "Dungeon Roll — Dungeon Delver's Guide",
+      "publisher": "Tasty Minstrel Games",
+      "printedPages": [
+        "unnumbered"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Game Setup, steps 3–4",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 4 of the image-only publisher-authored Dungeon Delver's Guide preserved by 1jour-1jeu. Game Setup step 3 names the most recent underground visitor as the opening Adventurer; step 4 assigns the player to their left as Dungeon Lord. SHA-256: 9e14ed28aa789585b1a1d977ebb7c61a3ef40e63296a78277aeae2bbe0a2234d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, turn order and edition.",
+  "uncertainty": [
+    "The multiplayer starting criterion has no stated tie-break."
+  ]
+}

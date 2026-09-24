@@ -1,0 +1,39 @@
+{
+  "id": "costa-rica-mayfair-en",
+  "slug": "costa-rica-mayfair-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d3710792b7a1a0777a4f12a62f3bdfc38188712717edf06f75bef138ec9a0bb9",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Costa Rica",
+  "aliases": [],
+  "editionLabel": "Mayfair Games 2016 English rules",
+  "firstPlayerRule": "Choose the first expedition leader: use the player who most recently visited a rainforest, with Costa Rica taking precedence, or randomly select someone using the explorers in one group.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Both the rainforest criterion and the explorer draw are official ways to select the opening leader."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lookout-spiele.de/upload/en_costarica.html_Rules_CostaRica_EN.pdf",
+      "title": "Costa Rica — English rules",
+      "publisher": "Mayfair Games / Lookout Spiele",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "The publisher-hosted Mayfair English PDF was indexed in the web research source; the Setup text identifies the latest rainforest visitor (Costa Rica wins) or random selection using one explorer group. Direct retrieval was denied by the publisher CDN on 2026-09-23, so no rendered page or file hash was available. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, edition, and stated alternatives.",
+  "uncertainty": [
+    "The rules do not prescribe a separate tie-break if several players visited the same rainforest at the same time; the official random method remains available."
+  ]
+}

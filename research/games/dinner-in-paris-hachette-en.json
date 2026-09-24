@@ -1,0 +1,31 @@
+{
+  "id": "dinner-in-paris-hachette-en",
+  "slug": "dinner-in-paris-hachette-en",
+  "gameName": "Dinner in Paris",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Hachette Boardgames English rulebook",
+  "firstPlayerRule": "The person who most recently ate at a restaurant goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The other players follow clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/34/27/f6-dinner-in-paris-rulebook.pdf",
+      "title": "Dinner in Paris — English rulebook",
+      "publisher": "Hachette Boardgames",
+      "printedPages": ["3"],
+      "pdfPagesOneBased": [3],
+      "location": "A Game Round",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 3 (printed page 3) of the publisher-authored English rulebook preserved by 1jour-1jeu. A Game Round names the latest restaurant diner and clockwise play. SHA-256: 361b64d2443cf0fe1fd120db7d377d6abc545ded49d69302af4b9630aea98ddd. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is stated for players who most recently ate at the same restaurant together."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

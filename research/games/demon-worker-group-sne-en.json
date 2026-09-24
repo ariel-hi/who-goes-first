@@ -1,0 +1,31 @@
+{
+  "id": "demon-worker-group-sne-en",
+  "slug": "demon-worker-group-sne-en",
+  "gameName": "Demon Worker",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Group SNE English rulebook",
+  "firstPlayerRule": "The player who has been evil most recently goes first, or choose a player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The first player takes the number 1 Turn Order card; the other players take the following cards clockwise around the table."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e4/c8/6e-demon-worker-rulebook.pdf",
+      "title": "Demon Worker — English rulebook",
+      "publisher": "Group SNE",
+      "printedPages": ["2"],
+      "pdfPagesOneBased": [2],
+      "location": "Game Setup, step 8",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered page 2 of the image-only Group SNE English rulebook preserved by 1jour-1jeu. Game Setup step 8 gives the recent-evil criterion, a random alternative, and clockwise assignment of Turn Order cards. SHA-256: f0e6af3f4e152b709d4c42ce6be6e0f1673d72a0364641c377ad1f91c391861f. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

@@ -1,0 +1,31 @@
+{
+  "id": "council-of-verona-crash-games-en",
+  "slug": "council-of-verona-crash-games-en",
+  "gameName": "Council of Verona",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Crash Games 2013 English rulebook",
+  "firstPlayerRule": "The player who was last on a balcony goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play then proceeds clockwise. In a full game, play one round per player so each player starts and finishes the turn order once."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e6/7f/00-council-of-verona-rulebook.pdf",
+      "title": "Council of Verona — English rulebook",
+      "publisher": "Crash Games",
+      "printedPages": ["2", "3", "5", "11"],
+      "pdfPagesOneBased": [2, 3, 5, 11],
+      "location": "Setup; Three Or More Players; Turn Sequence; Variant Play",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 (printed page 2) of the original Crash Games English rulebook preserved by 1jour-1jeu and checked text on pages 3, 5 and 11. Setup names the most recent balcony visitor; the turn sequence specifies clockwise play, and Full Game says each player is first and last once. SHA-256: 0f911750e240cd7ead0fae48878b273bbcd7c0416770c35678570a2b49c3063f. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is provided for equal balcony recency."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

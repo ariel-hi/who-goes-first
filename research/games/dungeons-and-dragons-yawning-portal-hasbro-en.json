@@ -1,0 +1,31 @@
+{
+  "id": "dungeons-and-dragons-yawning-portal-hasbro-en",
+  "slug": "dungeons-and-dragons-yawning-portal-hasbro-en",
+  "gameName": "Dungeons & Dragons: The Yawning Portal",
+  "aliases": ["The Yawning Portal"],
+  "language": "en",
+  "editionLabel": "Hasbro / Avalon Hill English rulebook, F6647",
+  "firstPlayerRule": "The player who last ate something goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play proceeds clockwise. The player last in turn order places the starting food tokens.", "The rule applies to multiplayer setup; solo play has separate rules."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/F6647_en-gb_dungeons-dragons-the-yawning-portal-game-d-d-strategy-board-game-for-1-4-players-ages-12.pdf",
+      "title": "Dungeons & Dragons: The Yawning Portal — game guide",
+      "publisher": "Hasbro / Avalon Hill",
+      "printedPages": ["3", "5"],
+      "pdfPagesOneBased": [2, 3],
+      "location": "Quick Setup, step 6; Setting Up the Game, step 6",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Downloaded the game guide through Hasbro's official instructions page and rendered PDF page 3 (printed spread pages 4–5). Quick Setup on PDF page 2 and Setting Up the Game on page 3 agree on the latest eater; the detailed setup gives clockwise order and the last player's starting-token task. SHA-256: aef27ade66fa255657634bb34d0b1201876ed7077a22a281eed65a8b464634a5. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["No tie-break is stated for players who ate together."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
