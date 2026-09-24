@@ -1,0 +1,43 @@
+{
+  "id": "firenze-quined-2018-en",
+  "slug": "firenze-quined-2018-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Firenze",
+  "aliases": [],
+  "editionLabel": "Quined Games second English edition, 2018",
+  "firstPlayerRule": "The person who most recently went up a tower starts and receives two white bricks.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Proceeding clockwise, each later player receives one more white brick than the preceding player.",
+    "Regular turns start with that player and proceed clockwise.",
+    "This is Quined Games’ 2018 reprint of the original 2010 design."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.quined.nl/wp-content/uploads/2018/08/Firenze-Rules-EN-WEB.pdf",
+      "title": "Firenze — English rulebook",
+      "publisher": "Quined Games",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup, step 8; turn order",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded Quined Games’ official English PDF and verified it is byte-identical to the archive copy. Rendered page 3 for the tower-climber criterion and asymmetric white-brick setup; page 4 gives clockwise ordinary turns. The credits identify the ©2018 second edition; inventory BGG 75449 groups the Firenze design. SHA-256: 07e0bc5e5e6cb268e34636521f8d855ac74e9f68eea43a331c4ee73f0f7e1cf2. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is printed for equally recent tower visits."
+  ]
+}

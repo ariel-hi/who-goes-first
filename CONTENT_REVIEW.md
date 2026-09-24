@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 747 game rules approved for the catalog; 327 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 755 game rules approved for the catalog; 334 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Bob Ross: Art of Chill Game, Bob Ross: Happy Little Accidents, The Brigade, Firenze, Inuit: The Snow Folk, My Happy Farm, Trellis and Veggie Garden add eight checked English editions. Happy Little Accidents assigns a host before simultaneous drawing and stays outside the random mix. See `research/coverage/bob-brigade-firenze-inuit-farm-trellis-veggie-progress.md`.
 
 Kenny G: Keepin' It Saxy Game, Mapmaker, Monster Crunch!, Roll for Adventure, Victorian Masterminds and Villages of Valeria add six checked English editions. Villages' main setup allows any starter and suggests a recent builder, while its quick reference says random; both are preserved. See `research/coverage/kenny-mapmaker-monster-roll-victorian-villages-progress.md`.
 

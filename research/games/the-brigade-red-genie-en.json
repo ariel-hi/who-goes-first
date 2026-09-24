@@ -1,0 +1,39 @@
+{
+  "id": "the-brigade-red-genie-en",
+  "slug": "the-brigade-red-genie-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Brigade",
+  "aliases": [],
+  "editionLabel": "Red Genie Games English base game",
+  "firstPlayerRule": "The person who most recently set something on fire starts, with play proceeding clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before that player’s first Action phase, they draw and resolve three starter Event cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/The%20Brigade.pdf",
+      "title": "The Brigade — English rulebook",
+      "publisher": "Red Genie Games",
+      "printedPages": [
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        8
+      ],
+      "location": "The First Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the publisher-authored English base-game page 8 from the archive. It gives the recent-fire criterion, clockwise play and three starter Event cards before the first Action phase. Red Genie Games identifies this as its Tinderbox firehouse game, matching inventory BGG 213503. SHA-256: d81c326e71518c812df7f7b9349a501b61c8534c1ff4d1b72d955bc074ea3bd3. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie or no-qualifier fallback is given."
+  ]
+}

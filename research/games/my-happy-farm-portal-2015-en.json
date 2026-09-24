@@ -1,0 +1,40 @@
+{
+  "id": "my-happy-farm-portal-2015-en",
+  "slug": "my-happy-farm-portal-2015-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "My Happy Farm",
+  "aliases": [],
+  "editionLabel": "Portal Games English edition, 2015 copyright",
+  "firstPlayerRule": "The person who most recently fed their pet starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise.",
+    "This is the Portal Games English edition of the game originally published by IGAMES in 2011."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/My%20Happy%20Farm.pdf",
+      "title": "My Happy Farm — English rulebook",
+      "publisher": "Portal Games",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Preparing to Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the publisher-authored Portal Games English page 4 from the archive. It gives the recent pet-feeder and clockwise order. Page 11 credits original IGAMES ©2011 and Portal Games ©2015; the publisher’s original URL is still indexed but currently returns an error. Components match inventory BGG 100734. SHA-256: 16bf3dcaf9e73805aaf743f48934b50df55ea1c88e3452b2ab1696f59c4214a0. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules give no alternative when no player has fed a pet, and no tie procedure."
+  ]
+}

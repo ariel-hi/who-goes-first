@@ -1,0 +1,44 @@
+{
+  "id": "bob-ross-happy-little-accidents-big-g-2018-en",
+  "slug": "bob-ross-happy-little-accidents-big-g-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4d9a1ebc9b932837199b53e449462e7b29b63375924d0884da7cf893c0309a45",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Bob Ross: Happy Little Accidents",
+  "aliases": [],
+  "editionLabel": "Big G Creative English edition, 2018",
+  "firstPlayerRule": "Choose the most chill player as host. The host asks one player to choose a number; then everyone draws simultaneously, so there is no opening turn to assign.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The host receives a card and keeps it unseen until play.",
+    "All players transform a doodle at the same time during each timed round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Bob%20Ross%20-%20Happy%20Little%20Accidents.pdf",
+      "title": "Bob Ross: Happy Little Accidents — English rulebook",
+      "publisher": "Big G Creative",
+      "printedPages": [
+        "2",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5
+      ],
+      "location": "Setup — host; Round 1; simultaneous drawing",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Inspected the publisher-authored English booklet from the archive. Page 2 assigns the most chill player as host; page 4 has the host select a number chooser, and page 5 has all players reveal and draw simultaneously. The ©2018 Big G Creative credits and drawing components match inventory BGG 256536. SHA-256: 6783fe07fa4f7d21d29483d06264cf904e329fde924a5df23cb8296fa8a91bd5. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "The manual gives no procedure for choosing among equally chill players. The host role is not a first-turn player."
+  ]
+}
