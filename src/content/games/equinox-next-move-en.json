@@ -1,0 +1,40 @@
+{
+  "id": "equinox-next-move-en",
+  "slug": "equinox-next-move-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c9c89e2727808737b1ce9d00a97ddd9d47224762dfd1fa0864d9421ba43aba61",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Equinox",
+  "aliases": [],
+  "editionLabel": "Next Move Games English rulebook",
+  "firstPlayerRule": "The player whose birthday is closest to the next equinox goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rulebook describes the spring equinox as on or around March 21 and the autumn equinox as on or around September 23 in the Northern Hemisphere.",
+    "Rounds proceed clockwise, starting with the first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Equinox-Rulebook_compressed.pdf",
+      "title": "Equinox — English rulebook",
+      "publisher": "Next Move Games",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Game setup, step 6; Gameplay",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked Next Move English rulebook PDF page 1; text on PDF page 2 confirms clockwise round order. Setup step 6 selects the birthday closest to the next equinox. SHA-256: 1710ee3c3ae59df30661889340d72c40ac8ba8591260ecb7a1078edeb77cb370. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
+  "uncertainty": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "eleven-football-manager-portal-en",
+  "slug": "eleven-football-manager-portal-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "87f078b00564974ba33c3cbdf630f7910cb64f7b7c42a148c13e15c959ed14ee",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Eleven: Football Manager Board Game",
+  "aliases": [
+    "Eleven"
+  ],
+  "editionLabel": "Portal Games English rulebook",
+  "firstPlayerRule": "The player who most recently scored a goal becomes the first player and receives the Stage marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Monday and Matchday are simultaneous; on Tuesday through Thursday, the first player acts first and play proceeds clockwise.",
+    "At the end of the week, the Stage marker passes to the player on the first player's left, who starts the next week."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/a9/1a/de-eleven-football-manager-board-game-rulebook.pdf",
+      "title": "Eleven: Football Manager Board Game — English rulebook",
+      "publisher": "Portal Games",
+      "printedPages": [
+        "4",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        12
+      ],
+      "location": "Setup: Transfer Area, step 10; Gameplay",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked publisher-authored English rulebook PDF page 4 preserved by 1jour-1jeu; PDF page 12 describes simultaneous stages, clockwise turns, and passing the Stage marker left at week end. Setup step 10 selects the most recent goal scorer. SHA-256: d7f33ef9e7581059b916a5a79900924f1ccae387d92a1e5f1799b0761f343fe2. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
+  "uncertainty": []
+}

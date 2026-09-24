@@ -1,0 +1,43 @@
+{
+  "id": "eclipse-new-dawn-lautapelit-en",
+  "slug": "eclipse-new-dawn-lautapelit-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "aab0e7d27503b71e6e4023ea08859ea57ab653c9cad7093f535ade3929df2547",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Eclipse",
+  "aliases": [
+    "Eclipse: New Dawn for the Galaxy"
+  ],
+  "editionLabel": "New Dawn for the Galaxy (2011) English rulebook",
+  "firstPlayerRule": "Give the Starting Player Marker to the player who has spent the least time on planet Terra (Earth). That player starts the Action Phase.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with that player and proceeding clockwise, players choose their starting hexes and boards.",
+    "If playing with alien species, species and starting hexes are chosen beginning with the player to the starting player's right and proceeding counterclockwise.",
+    "During the Action Phase, play starts with the marker holder and proceeds clockwise; the first player to pass takes the marker for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.goblins.net/files/downloads/Eclipse_rules_final_light.pdf",
+      "title": "Eclipse: New Dawn for the Galaxy — English rules",
+      "publisher": "Lautapelit.fi",
+      "printedPages": [
+        "5",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        8
+      ],
+      "location": "Game Setup; Action Phase",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked the original Lautapelit.fi 2011 English rulebook, PDF pages 5 and 8. Setup assigns the marker by least time on Terra, then chooses starting positions clockwise; alien-species setup uses reverse order. Action Phase begins with the marker holder, and the first player to pass receives it for the next round. SHA-256: 1a781d2a6e1d50ce94a139820afff89720da619e3f9c3fdef9d1a31d6c3e1cd3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
+  "uncertainty": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "electropolis-homosapiens-en",
+  "slug": "electropolis-homosapiens-en",
+  "gameName": "Electropolis",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Homosapiens Lab 2019 English translation",
+  "firstPlayerRule": "The player who has paid the biggest electricity bill most recently takes the first space on the Turn Order board.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["During setup, the other players place their Turn Order tokens clockwise in ascending-numbered spaces.", "When the game begins, the player whose token is closest to the bill icon acts first, with play continuing clockwise."],
+  "interpretation": null,
+  "sources": [{"url": "https://tesera.ru/images/items/1890031/Electropolis_-_English_rules.pdf", "title": "Electropolis — English rules", "publisher": "Homosapiens Lab", "printedPages": ["unnumbered first spread"], "pdfPagesOneBased": [1], "location": "Game setup, step 8-2; Game play, steps 3 and 5", "checkedAt": "2026-09-23"}],
+  "internalEvidence": "Visually checked image-only 2019 Homosapiens Lab English translation, first PDF spread, preserved by Tesera. Setup step 8-2 identifies the most recent biggest electricity-bill payer and assigns ascending spaces clockwise; game play starts at the bill icon. SHA-256: 210010649e135b96f93857685e17f02f8099fd1a40afeceee34513f795f13997. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft", "approvedBy": null, "approvedRevision": null, "publishedAt": null, "materiallyUpdatedAt": null
+}
