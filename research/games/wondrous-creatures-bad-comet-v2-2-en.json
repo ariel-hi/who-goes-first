@@ -1,0 +1,40 @@
+{
+  "id": "wondrous-creatures-bad-comet-v2-2-en",
+  "slug": "wondrous-creatures-bad-comet-v2-2-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Wondrous Creatures",
+  "aliases": [],
+  "editionLabel": "Bad Comet English base-game rules, version 2.2",
+  "firstPlayerRule": "The player who has befriended the most unusual animal starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise from the first player.",
+    "The first player starts with one of each resource; later players receive the extra starting resources listed by play order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1_h2Mm0AcNhPVoM91SSdgqhNsuwVpFpOU/view?usp=sharing",
+      "title": "Wondrous Creatures — English rulebook",
+      "publisher": "Bad Comet Games",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Player Setup — Play Order",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the version 2.2 base-game rulebook from the Google Drive link on Bad Comet’s Wondrous Creatures product page. Its SHA-256 matches an independently hosted copy. Rendered page 6: the Play Order note gives the unusual-animal criterion and clockwise turns; the adjacent setup text gives resources by player order. Creature cards, captains and butterfly nets match inventory BGG 400366. SHA-256: e45a47b4cd96d353aedd773dcaba8e6f37263a6b1a4289bca1b86a9e4e015778. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "“Most unusual” is subjective and the booklet gives no tie procedure; excluded from the portable random mix."
+  ]
+}
