@@ -1,0 +1,31 @@
+{
+  "id": "havalandi-pegasus-en",
+  "slug": "havalandi-pegasus-en",
+  "gameName": "Havalandi",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Edition Spielwiese / Pegasus English rulebook",
+  "firstPlayerRule": "The player who last launched something starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play then proceeds clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hras.cz/user/related_files/havalandi.pdf",
+      "title": "Havalandi English rulebook",
+      "publisher": "Edition Spielwiese / Pegasus Spiele",
+      "printedPages": ["4"],
+      "pdfPagesOneBased": [4],
+      "location": "Gameplay, opening paragraph and turn-order sentence",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked printed/PDF page 4 of the publisher-authored English rulebook hosted by Hras. It gives the last-launch criterion and clockwise turn order. Matches inventory BGG 396543. SHA-256: 6e7dfc7cc1c75d76adb705e03ef8bd8aa6484d7e174c9845ce603a295c2ba0c7. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
