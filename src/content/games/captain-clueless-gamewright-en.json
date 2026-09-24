@@ -1,0 +1,42 @@
+{
+  "id": "captain-clueless-gamewright-en",
+  "slug": "captain-clueless-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7e0b1cfa3038d1d27e24eae2ed72634138f01c7d362e2947ecb58f28c0d4132b",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Captain Clueless: Lost in the Caribbean",
+  "aliases": [
+    "Captain Clueless"
+  ],
+  "editionLabel": "Gamewright English rules, 2008",
+  "firstPlayerRule": "The team with the player who last lost their keys goes first. Each team chooses one player to be its first Captain Clueless.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play passes to the other team after each turn.",
+    "On a team's later turn, it designates a new captain."
+  ],
+  "interpretation": "The rule selects the opening team by a member's experience; it does not name the first captain within that team.",
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/CaptainClueless-RULES.pdf",
+      "title": "Captain Clueless rules of play",
+      "publisher": "Gamewright",
+      "printedPages": [
+        "English rules sheet"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Set Up; How to Play; End of a Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the Gamewright rules-index PDF, whose English page is image-based, and visually inspected the whole page. It names the team whose member last lost keys and separately tells each team to choose its first captain. It passes turns between teams and calls for a new captain on a team's later turn. The sheet shows the Lost in the Caribbean title, Gamewright branding and ©2008, matching inventory BGG 34376. SHA-256: 534c66c9d1be2565cc60bb31038110e7e29c1be1758a0d3b48afa09f4ecc3913. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity and opening instruction against the cited illustrated rule sheet.",
+  "uncertainty": [
+    "The rules do not say how to break a tie between teams whose members last lost keys together."
+  ]
+}

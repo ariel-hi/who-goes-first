@@ -1,0 +1,29 @@
+{
+  "id": "clever-keys-haba-en",
+  "slug": "clever-keys-haba-en",
+  "gameName": "Clever Keys",
+  "aliases": ["Clever Keys!"],
+  "language": "en",
+  "editionLabel": "HABA English rules in multilingual booklet",
+  "firstPlayerRule": "The last player to have visited a real castle starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play proceeds clockwise."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://studiogiochi.com/files/studiogiochi.com/2020/10/Clever-Keys_Rules_DE_EN_IT_FR_NL_ES.pdf",
+    "title": "Clever Keys multilingual rules",
+    "publisher": "HABA",
+    "printedPages": ["11"],
+    "pdfPagesOneBased": [11],
+    "location": "English How to Play opening paragraph",
+    "checkedAt": "2026-09-24"
+  }],
+  "internalEvidence": "Visually checked the English section, PDF and printed page 11, of the HABA-branded image-based multilingual booklet hosted by licensor studiogiochi. It says the last visitor to a real castle starts and confirms clockwise turns. The booklet credits Leo Colovini and Teodoro Mitidieri and depicts HABA's key-and-treasure game, matching inventory BGG 322037. SHA-256: c3bce98f6c6d394a5bdd5fa8cdbf0a8b9bcf14d3c322a9c1e7a41282a4d59188. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rules give no tie procedure for shared visits to a castle."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
