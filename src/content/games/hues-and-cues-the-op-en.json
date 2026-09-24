@@ -1,0 +1,39 @@
+{
+  "id": "hues-and-cues-the-op-en",
+  "slug": "hues-and-cues-the-op-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "5a163ca69fec5ef1f6663904be7083dc6fca692c00d81b93ede73f3dd293670f",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Hues and Cues",
+  "aliases": [],
+  "editionLabel": "The Op English rules (2020)",
+  "firstPlayerRule": "The player wearing the most colorful outfit is the cue giver for the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "For each new round, the next player clockwise becomes the cue giver."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0611/3958/3198/files/Hue_and_Cues_Rules.pdf?v=1650995573",
+      "title": "Hues and Cues rules",
+      "publisher": "The Op (USAopoly)",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Starting the game; Starting a New Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the PDF linked from The Op's Hues and Cues product page and visually checked the starting instruction on PDF page 2. Text extraction also confirms the clockwise cue-giver rotation on PDF page 3. SHA-256: fd77422f6280674d5bb66d3e8f6e50a7fa67225b00bb9e703772e4a03ef25672. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked edition, first-player instruction, absence of an official starting tie-break, and subsequent clockwise order.",
+  "uncertainty": []
+}
