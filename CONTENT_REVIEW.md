@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 491 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 495 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Expeditions: Around the World, Elevenses, Emberleaf, and Exposed add four checked English entries. Elevenses' clockwise tie rule applies to later rounds, while Emberleaf's bravest-player method is only a recommendation. Their source pages and exact revisions are recorded in the approved entries.
 
 Six more editions were checked on 2026-09-23 against their English publisher-authored rulebooks: Eclipse: New Dawn for the Galaxy, Equinox, Eleven: Football Manager Board Game, Exoplanets, Emerge, and Electropolis. Their opening criteria, official random alternative where stated, and later turn order are recorded in the exact approved revisions. The Exoplanets manual is preserved by the Dice Tower Library; Emerge and Electropolis manuals are preserved by Tesera.
 

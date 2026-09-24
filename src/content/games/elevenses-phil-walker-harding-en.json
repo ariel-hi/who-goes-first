@@ -1,0 +1,42 @@
+{
+  "id": "elevenses-phil-walker-harding-en",
+  "slug": "elevenses-phil-walker-harding-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6bfc5a83f92f04ff0410c1fa53ddcc32567bff2850bde6a247e46bf2f82810ec",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Elevenses",
+  "aliases": [],
+  "editionLabel": "2013 Phil Walker-Harding English rulebook",
+  "firstPlayerRule": "The player who most recently finished drinking a delicious cup of tea is the first start player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play moves clockwise from the start player within each round.",
+    "For later rounds, the player with the fewest sugar cubes becomes the new start player. If tied, use the tied player closest to the current start player in clockwise order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://tesera.ru/images/items/352322/ElevensesRulesWeb.pdf",
+      "title": "Elevenses: The card game of morning tea — English rules",
+      "publisher": "Phil Walker-Harding",
+      "printedPages": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3
+      ],
+      "location": "Set-up; Playing the Game; The End of a Round",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked the 2013 Phil Walker-Harding English booklet preserved by Tesera. Page 1 gives the initial tea criterion, page 2 the clockwise order, and page 3 the later-round fewest-cubes rule and its clockwise tie-break. The later-round tie-break is not an initial-start tie-break. SHA-256: 8c69cfe6331aeea2adcee8b85659dd3c789f81acb8e476569be9ecbaa1243b11. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, optional wording, and later-round context where applicable.",
+  "uncertainty": []
+}

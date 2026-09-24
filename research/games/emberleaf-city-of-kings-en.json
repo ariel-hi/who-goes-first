@@ -1,0 +1,12 @@
+{
+  "id": "emberleaf-city-of-kings-en", "slug": "emberleaf-city-of-kings-en",
+  "gameName": "Emberleaf", "aliases": [], "language": "en",
+  "editionLabel": "The City of Kings English rulebook v1.0",
+  "firstPlayerRule": "Choose a starting player; the rulebook recommends that the bravest player go first.",
+  "officialTieBreak": null, "houseFallback": null,
+  "clarifications": ["The bravest-player criterion is a recommendation, not a required method.", "The chosen starting player takes the first turn, then turns proceed clockwise."],
+  "interpretation": null,
+  "sources": [{"url": "https://thecityofkings.com/wp-content/uploads/2025/05/Emberleaf-rulebook-v1.0-compressed.pdf", "title": "Emberleaf — English rulebook v1.0", "publisher": "The City of Kings", "printedPages": ["6"], "pdfPagesOneBased": [6], "location": "Game overview", "checkedAt": "2026-09-23"}],
+  "internalEvidence": "Visually checked publisher-hosted English rulebook v1.0 PDF page 6. The rulebook leaves selection to the players, suggests the bravest player, and then states clockwise turns. SHA-256: a254fd26316897b77d7b2be5016213d213c0f759da9baad1a250e39ce7fb8781. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [], "status": "draft", "approvedBy": null, "approvedRevision": null, "publishedAt": null, "materiallyUpdatedAt": null
+}
