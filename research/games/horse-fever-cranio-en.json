@@ -1,0 +1,36 @@
+{
+  "id": "horse-fever-cranio-en",
+  "slug": "horse-fever-cranio-en",
+  "gameName": "Horse Fever",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Cranio Creations English rulebook, Family and Board Game modes",
+  "firstPlayerRule": "Roll a Sprint Die; its color selects the starting-player criterion in the rulebook's Tie-breaker Table.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Green: the player with the most missing diopters. Blue: the heaviest player. Red: the player with the most pimples on their face.",
+    "Black: the smallest player. White: the player who can do the most push-ups on one hand. Yellow: the first player to touch the Cranio Creations logo on the back of the box.",
+    "The first player takes the First Player card and both Sprint Dice. Play proceeds clockwise, and the First Player card passes clockwise at the end of each round.",
+    "The Board Game mode uses the Family Game setup, including this starter selection, except for its stated changes."
+  ],
+  "interpretation": "The rulebook calls this color-keyed starting-player chart the Tie-breaker Table. Its color criteria determine the initial starter; it does not state a separate procedure for ties within a chosen criterion.",
+  "sources": [
+    {
+      "url": "https://tesera.ru/images/items/334392/horse%20fever%20EN.pdf",
+      "title": "Horse Fever English rulebook",
+      "publisher": "Cranio Creations",
+      "printedPages": ["2", "6"],
+      "pdfPagesOneBased": [2, 6],
+      "location": "Family Game, Set Up and Tie-breaker Table; Board Game, Set up",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked PDF/printed page 2 for the Sprint Die procedure, the six-color starting table, clockwise play and later-round card passing. Read page 6 for the Board Game's reuse of Family Game setup. The publisher-authored English manual is mirrored by Tesera; its first and credits pages identify Cranio Creations. Matches inventory BGG 58110. SHA-256: e7b607a5d326814d175e01aaaa0257c9aca91766fbe3a0c8ee4299812b477f14. Owner authorized assistant review on 2026-09-22. Excluded from the portable random mix because it requires the game's Sprint Die and box logo.",
+  "uncertainty": ["The English table says 'the player who miss more diopters' for green and 'the smallest player' for black; these are reproduced conservatively without inventing a measurement method."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

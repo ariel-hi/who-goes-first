@@ -1,0 +1,31 @@
+{
+  "id": "half-pint-heroes-corax-en",
+  "slug": "half-pint-heroes-corax-en",
+  "gameName": "Half-Pint Heroes",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Corax Games English rulebook",
+  "firstPlayerRule": "The player who most recently had a black eye is the start player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The start player deals the first round.", "After each round, the next clockwise player becomes the new start player."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.spiele-offensive.de/gfx/cf/hph/rules_hph.pdf",
+      "title": "Half-Pint Heroes English rulebook",
+      "publisher": "Corax Games",
+      "printedPages": ["4", "9"],
+      "pdfPagesOneBased": [4, 9],
+      "location": "Gameplay, opening paragraph; end-of-round start-player rotation",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked printed/PDF page 4 for the black-eye criterion and first-round deal; checked page 9 for clockwise rotation after each round. This publisher-authored English rulebook is mirrored by Spiele-Offensive and credits Corax Games on page 12. Matches inventory BGG 216578. SHA-256: 2b2f8731ba8a83cda106375264cf4eb292de95367c339ba105145c6a227246f4. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
