@@ -1,0 +1,40 @@
+{
+  "id": "the-kings-guild-mirror-box-en",
+  "slug": "the-kings-guild-mirror-box-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "95279aa4cd137e3530f17786a735d5e6d4ca0ed9e017c7807255aa556a159ad1",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "The King's Guild",
+  "aliases": [],
+  "editionLabel": "Mirror Box Games English base game",
+  "firstPlayerRule": "The player who most recently had an adventure starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting coins and guild bonuses are distributed clockwise from that player.",
+    "The same player then takes the first turn, and play proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/The%20King's%20Guild.pdf",
+      "title": "The King's Guild — English rulebook",
+      "publisher": "Mirror Box Games",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Setup, steps 12–13",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Mirror Box Games rulebook names the most recent adventurer in setup step 12 and confirms that player takes the first regular turn after clockwise starting distributions. The credits identify Mirror Box Games and the game matches inventory BGG 206327. SHA-256: 30dcef99a7e16f72a3a5c01b76abf3afc332aab639cf003c583d19cc6c5c7c13. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No tie procedure or definition of an adventure is given."
+  ]
+}

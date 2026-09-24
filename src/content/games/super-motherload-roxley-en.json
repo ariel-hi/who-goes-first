@@ -1,0 +1,39 @@
+{
+  "id": "super-motherload-roxley-en",
+  "slug": "super-motherload-roxley-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3becb18a56a7a5f7e20c80204a4c100ff8613da1b4ca1fc44680a7f66a084c90",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Super Motherload",
+  "aliases": [],
+  "editionLabel": "Roxley Game Laboratory English edition",
+  "firstPlayerRule": "The person who most recently dug a hole starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The player to their right chooses which side of the first game board faces up."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Super%20Motherload.pdf",
+      "title": "Super Motherload — English rulebook",
+      "publisher": "Roxley Game Laboratory",
+      "printedPages": [
+        "2–3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup — Game Area",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Roxley rulebook explicitly chooses the most recent hole digger before game-area setup on PDF page 2. The same passage assigns the board-side choice to that player’s right-hand neighbor; the cover credits Roxley and the title matches inventory BGG 162286. SHA-256: 23edb41404ff710f0dbf9b2933c5118fb6fb8f64f96d76819396024b1fdce0bc. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No tie or no-qualifier fallback is supplied."
+  ]
+}

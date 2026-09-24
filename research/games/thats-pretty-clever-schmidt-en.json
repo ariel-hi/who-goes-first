@@ -1,0 +1,37 @@
+{
+  "id": "thats-pretty-clever-schmidt-en",
+  "slug": "thats-pretty-clever-schmidt-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "That's Pretty Clever (aka Ganz schön clever)",
+  "aliases": [],
+  "editionLabel": "Schmidt Spiele English rules",
+  "firstPlayerRule": "Choose a starting player at random; that player takes the six dice.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The opening rule only directs a random choice; it does not supply a reusable themed question."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/That's%20Pretty%20Clever!.pdf",
+      "title": "That's Pretty Clever (aka Ganz schön clever) — English rulebook",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Schmidt Spiele English rules say to randomly choose a starting player and give them six dice in setup on page 1. The Wolfgang Warsch game title and Schmidt Spiele credits match inventory BGG 244522. SHA-256: 04fa72ab515b10eb314e9745c490645f8dc582ace2de4b49b7815c9851bccf53. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": []
+}

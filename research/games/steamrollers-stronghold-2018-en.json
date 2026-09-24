@@ -1,0 +1,42 @@
+{
+  "id": "steamrollers-stronghold-2018-en",
+  "slug": "steamrollers-stronghold-2018-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "SteamRollers",
+  "aliases": [],
+  "editionLabel": "Stronghold Games English edition, 2018",
+  "firstPlayerRule": "The last player to have missed a train becomes the Start Player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player receives the Start Player marker, the black die, and white dice equal to the player count plus one.",
+    "The Start Player rolls all dice and takes the first action."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/SteamRollers.pdf",
+      "title": "SteamRollers — English rulebook",
+      "publisher": "Stronghold Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup, step 9; The Game Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Stronghold Games English booklet states the missed-train criterion in setup step 9 on page 2 and the first regular action on page 3. Page 8 credits Stronghold ©2018 under license from Flatlined Games, matching inventory BGG 182704. SHA-256: e5f431db787ac186966f7641db4ecd8d9ba958b5863ee3350bc0bef7c9978d0d. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie or no-qualifier fallback is stated."
+  ]
+}
