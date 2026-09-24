@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 577 game rules approved for the catalog; 227 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 582 game rules approved for the catalog; 229 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+A Battle through History, ARTBOX, Animotion, Café, and Casting add five checked English editions from rendered publisher-authored manuals. ARTBOX has three official ways to choose its first Maestro; Animotion and Casting assign opening acting roles. Café's base-game master differs from its auction variant. The Battle through History and Café criteria join the random mix; the three role-specific answers remain in the directory.
 
 Fresh Fruits, Gloomy Graves, Jumbo's Forbidden City, and the original Spielworxx Gentes add four checked English editions. Fresh Fruits changes its starting player after every round. Gentes leaves the initial selection method to the players and has a separate action that can change the next-round starter, so it remains directory-only. Jumbo's Forbidden City is distinct from Gùgōng.
 

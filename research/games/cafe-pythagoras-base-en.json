@@ -1,0 +1,42 @@
+{
+  "id": "cafe-pythagoras-base-en",
+  "slug": "cafe-pythagoras-base-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Café",
+  "aliases": [],
+  "editionLabel": "Pythagoras English rules, base game",
+  "firstPlayerRule": "The player who most recently had a cup of coffee is the starting master and takes the master token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The master begins each round; after that round, the master token passes to the player on the left.",
+    "This answer uses the base-game setup, not the separate auction variant."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e8/cf/8c-cafe-rulebook.pdf",
+      "title": "Café — English rulebook",
+      "publisher": "Pythagoras",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup, step 5; Game Round, steps 1 and 4",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed pages 3 and 4 of the complete Pythagoras booklet state the coffee criterion, master token and leftward rotation. Company, Initial and Plan cards match inventory BGG 284936. The booklet separately presents an auction variant on page 12. SHA-256: 8fa527dbbfa9c7268378468054b8731709cb17a6a38a4f56db34aa0597c7f0a8. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent cups of coffee."
+  ]
+}

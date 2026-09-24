@@ -1,0 +1,38 @@
+{
+  "id": "animotion-edition-spielwiese-2021-en",
+  "slug": "animotion-edition-spielwiese-2021-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Animotion",
+  "aliases": [],
+  "editionLabel": "Edition Spielwiese / Pegasus Spiele English rules, 2021",
+  "firstPlayerRule": "The biggest alpha animal in the group takes the alpha animal card and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player performs the first animal-and-expression combination while everyone else guesses simultaneously.",
+    "The alpha animal card and acting role pass clockwise for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/06/2b/1d-animotion-rulebook.pdf",
+      "title": "Animotion — English rules",
+      "publisher": "Edition Spielwiese / Pegasus Spiele",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Game Setup; Prepare for a New Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The complete illustrated English rules on rendered PDF page 1 show the biggest-alpha-animal instruction, acting role and clockwise handoff. Credits identify Edition Spielwiese and Pegasus Spiele; alpha animal card and animal/expression dice match inventory BGG 156461. SHA-256: 690b9122eee1a7884dff8864db56a87800764203b3aced814064f6c3f63c7d05. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The manual does not define “biggest alpha animal” or give a tie procedure."
+  ]
+}

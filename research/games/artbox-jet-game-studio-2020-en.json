@@ -1,0 +1,39 @@
+{
+  "id": "artbox-jet-game-studio-2020-en",
+  "slug": "artbox-jet-game-studio-2020-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "ARTBOX",
+  "aliases": [],
+  "editionLabel": "Jet Game Studio English rules, 2020",
+  "firstPlayerRule": "Choose the first Maestro as the most recent art-gallery visitor, the most experienced player, or a player selected at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Maestro leads the first round while the other players draw.",
+    "If another round is played, the player to the left of the current Maestro becomes the new Maestro."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/55/56/90-artbox-rulebook.pdf",
+      "title": "ARTBOX — English rulebook",
+      "publisher": "Jet Game Studio",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3,
+        5
+      ],
+      "location": "Setup, step 7; End of the Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF pages 3 and 5 show all three official choices and the next-round Maestro change. The booklet credits Jet Game Studio LLC ©2020; Drawings board, Number tokens and Shape cards match inventory BGG 280304. SHA-256: 3e101c11957cabcc93c4756c961284d652b2479500ba38cb7085995153d71820. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The art-gallery and experience options do not specify how to settle a tie."
+  ]
+}
