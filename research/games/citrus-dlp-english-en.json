@@ -1,0 +1,39 @@
+{
+  "id": "citrus-dlp-english-en",
+  "slug": "citrus-dlp-english-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Citrus",
+  "aliases": [],
+  "editionLabel": "dlp games English rules, 2013–2015 edition",
+  "firstPlayerRule": "The player who can dance the Flamenco best begins.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play then proceeds clockwise. The rule applies to the standard game and its shorter-board variant."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn02.plentymarkets.com/9gjbo7zbn9p8/frontend/Spiele/Spielregeln/Citrus_English.pdf",
+      "title": "Citrus — English rulebook",
+      "publisher": "dlp games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Playing the Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the English booklet linked from the publisher's Citrus page and rendered page 3. Its blue callout gives the Flamenco criterion and the adjacent paragraph establishes clockwise turns. Finca tiles, plantation market and worker colors match inventory BGG 145588. SHA-256: f4a9bc28b36b9eb6241cbb890f8b9143bfcd1078cf0347536a2a91210e995b84. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules give no way to judge dancing ability or break a tie."
+  ]
+}

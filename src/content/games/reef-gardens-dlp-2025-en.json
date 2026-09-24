@@ -1,0 +1,41 @@
+{
+  "id": "reef-gardens-dlp-2025-en",
+  "slug": "reef-gardens-dlp-2025-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1e1150713b0761d84f1ab30ef92b2163d60dda103e2132df0ce57de3a89c4561",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Reef Gardens",
+  "aliases": [],
+  "editionLabel": "dlp games English rules, 2025",
+  "firstPlayerRule": "The player who most recently went diving at a coral reef begins; otherwise choose someone at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Beginning with that player, turns proceed clockwise. The same opening instruction covers the standard game and Atolls variant."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn02.plentymarkets.com/9gjbo7zbn9p8/frontend/Spiele/Reef_Gardens/Regeln/Reef-Gardens_rules_EN_web.pdf",
+      "title": "Reef Gardens — English rulebook",
+      "publisher": "dlp games",
+      "printedPages": [
+        "1",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3
+      ],
+      "location": "Credits; Game Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the English booklet linked from the publisher's Reef Gardens page and rendered page 3. The Game Play paragraph gives both the coral-reef criterion and random fallback, plus clockwise turns. Page 1 credits dlp games ©2025. Coral tiles, divers and underwater nursery match inventory BGG 450708. SHA-256: dff5c8537c75860bc553c8a56bbf09a5e7d1492e82c014f986053cf8998d49d8. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered publisher rulebook.",
+  "uncertainty": [
+    "The booklet does not specify what qualifies as diving or how to resolve a shared most-recent dive."
+  ]
+}
