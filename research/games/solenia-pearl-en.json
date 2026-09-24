@@ -1,0 +1,43 @@
+{
+  "id": "solenia-pearl-en",
+  "slug": "solenia-pearl-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Solenia",
+  "aliases": [],
+  "editionLabel": "Pearl Games English rules, summer side",
+  "firstPlayerRule": "The player whose head is most in the clouds starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The same setup applies to the winter side; turns then proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/7e/5b/d1-solenia-rulebook.pdf",
+      "title": "Solenia — English rulebook",
+      "publisher": "Pearl Games",
+      "printedPages": [
+        "1",
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        4
+      ],
+      "location": "Setup, step 6; Playing the Game; Winter Side",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 1 gives the head-in-the-clouds criterion; page 2 gives clockwise turns and page 4 says winter setup is identical. Airship cards and Delivery tiles match inventory BGG 254018; Pearl Games publisher identity was cross-checked against the game record. SHA-256: 34f99ab6347c1a9fd6883f2d4f5edabf94f6343b666baab42a3f0c44f984545b. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The criterion is subjective and has no printed tie procedure."
+  ]
+}

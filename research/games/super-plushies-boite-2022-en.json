@@ -1,0 +1,42 @@
+{
+  "id": "super-plushies-boite-2022-en",
+  "slug": "super-plushies-boite-2022-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Super Plushies",
+  "aliases": [],
+  "editionLabel": "La Boîte de Jeu English rules, 2022",
+  "firstPlayerRule": "The player who most recently helped someone starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the first-player token; turns proceed clockwise.",
+    "In the solo variant, Mona starts instead."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/f5/ea/9c-super-plushies-rulebook.pdf",
+      "title": "Super Plushies — English rulebook",
+      "publisher": "La Boîte de Jeu",
+      "printedPages": [
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7
+      ],
+      "location": "How to Play; Solo Variant",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 4 gives the help criterion and clockwise order; page 7 says Mona starts solo and bears La Boîte de Jeu ©2022. Equipment discs and Super Plushies match inventory BGG 363984. SHA-256: b9149d0fc43ed70cf0ff7824d2ec4e673a03243320adff18b8f0bd5fb54e92f1. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for the most recent help."
+  ]
+}

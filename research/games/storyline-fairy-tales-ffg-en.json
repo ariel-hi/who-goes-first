@@ -1,0 +1,39 @@
+{
+  "id": "storyline-fairy-tales-ffg-en",
+  "slug": "storyline-fairy-tales-ffg-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "StoryLine: Fairy Tales",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight Games English rules",
+  "firstPlayerRule": "The player who most recently finished reading a book becomes the first Narrator.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the Narrator deck and begins the first round; the deck passes to the player on the left after each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/60/02/1d-storyline-fairy-tales-rulebook.pdf",
+      "title": "StoryLine: Fairy Tales — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup, step 4; Playing the Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 gives the recent-book criterion and deck handoff. Page 4 credits Fantasy Flight Games publisher Christian T. Petersen; Story and Narrator cards match inventory BGG 192924. SHA-256: 0a6fb8716324a4db5fd6cc34a4c56a5a120648898ca88cd5d0df871fdae34cdd. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure."
+  ]
+}

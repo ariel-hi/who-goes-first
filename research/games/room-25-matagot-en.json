@@ -1,0 +1,41 @@
+{
+  "id": "room-25-matagot-en",
+  "slug": "room-25-matagot-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Room 25",
+  "aliases": [],
+  "editionLabel": "Matagot English rules, original Room 25 modes",
+  "firstPlayerRule": "The player who most recently watched a reality TV show starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player’s turn marker goes first in the line; after each turn, that marker moves to the end and the player to the left becomes first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e5/6a/33-room-25-rulebook.pdf",
+      "title": "Room 25 — English rulebook",
+      "publisher": "Matagot",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup; Turn, countdown step",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 1 gives the reality-TV criterion and marker setup; page 2 describes the rotating first player. The same room tiles, reversible board and mode set match inventory BGG 127024; the BGG files listing identifies the English rules as publisher Matagot’s. SHA-256: df398ecb1df5e42ec6ee905c6fff99e2d2f258f9e5f5bb47937b1bedb0f13447. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure."
+  ]
+}

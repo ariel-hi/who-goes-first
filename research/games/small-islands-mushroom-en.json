@@ -1,0 +1,41 @@
+{
+  "id": "small-islands-mushroom-en",
+  "slug": "small-islands-mushroom-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Small Islands",
+  "aliases": [],
+  "editionLabel": "MushrooM Games English rules",
+  "firstPlayerRule": "The last player to have been on an island starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the end of a round, the player following whoever placed the Ship Tile becomes the next first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/c0/24/a0-small-islands-rulebook.pdf",
+      "title": "Small Islands — English rulebook",
+      "publisher": "MushrooM Games",
+      "printedPages": [
+        "2",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        7
+      ],
+      "location": "Set Up, step 3; New Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 2 gives the island criterion; page 7 assigns the later-round starter. Page 12 bears the MushrooM Games logo; Landscape and Ship Tiles match inventory BGG 236248. SHA-256: 1ccb4cf71e300b1fd663efb407ec0828cb51bb8f6eb10b012529e07e7abbe00f. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for the opening criterion."
+  ]
+}

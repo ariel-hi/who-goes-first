@@ -1,0 +1,38 @@
+{
+  "id": "songbirds-homosapiens-en",
+  "slug": "songbirds-homosapiens-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d7191ceaa07cf26e9fe786fff730b0f502a06df9ff7f1720a860455a0244a790",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Songbirds",
+  "aliases": [],
+  "editionLabel": "Homosapiens Lab / Jolly Thinkers English rules",
+  "firstPlayerRule": "The last player to win any game starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the cooperative variant, the player who most recently ate an egg dish starts instead."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/17/30/64-songbirds-rulebook.pdf",
+      "title": "Songbirds — English rulebook",
+      "publisher": "Homosapiens Lab / Jolly Thinkers",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup, step 5; Co-Op Variant",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1 gives the last-winner criterion for the base game; page 2 gives the separate egg-dish cooperative criterion and names Homosapiens Lab as publisher. Songbird cards and Berry tokens match inventory BGG 212765. SHA-256: 74d8922985cf6b79c04a69b265c83b040b9e4b548ac09d77b45a5e2d4ed35323. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure for players whose last win was the same game."
+  ]
+}

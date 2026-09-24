@@ -1,0 +1,41 @@
+{
+  "id": "sheriff-nottingham-arcane-cmon-2016-en",
+  "slug": "sheriff-nottingham-arcane-cmon-2016-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Sheriff of Nottingham",
+  "aliases": [],
+  "editionLabel": "Arcane Wonders / CMON English rules, 2016",
+  "firstPlayerRule": "The player carrying the highest value of actual cash becomes the first Sheriff.",
+  "officialTieBreak": "If there is a tie or nobody has money, choose the first Sheriff randomly.",
+  "houseFallback": null,
+  "clarifications": [
+    "The Sheriff does not participate in the Market phase; the merchant to the Sheriff’s left acts first, then play proceeds clockwise. The Sheriff marker passes left after each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/d3/7f/61-sheriff-of-nottingham-rulebook.pdf",
+      "title": "Sheriff of Nottingham — English rulebook",
+      "publisher": "Arcane Wonders / CMON",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Setting Up the Game; Phase 1: Market",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 5/printed page 3 gives the actual-cash criterion, tie/random alternative and Sheriff role; page 6/printed page 4 gives the first merchant action. The cover and credits identify Arcane Wonders/CMON ©2016; merchant bags and Sheriff marker match inventory BGG 157969. SHA-256: 2d3e19b9db8166355cbd80b23bdd9b4a229b52fc39f5a9a352ebf6453d0a92cf. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not define how to compare cash in different currencies."
+  ]
+}

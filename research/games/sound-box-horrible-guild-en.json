@@ -1,0 +1,43 @@
+{
+  "id": "sound-box-horrible-guild-en",
+  "slug": "sound-box-horrible-guild-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Sound Box",
+  "aliases": [],
+  "editionLabel": "Horrible Guild English rules",
+  "firstPlayerRule": "The player who most recently listened to a song on the radio becomes the first Guesser.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The other players become Soundmakers; they make sounds simultaneously. In six- or seven-player games, the player to the left of the Guesser is also the first Recorder."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e8/98/00-sound-box-rulebook.pdf",
+      "title": "Sound Box — English rulebook",
+      "publisher": "Horrible Guild",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Setup, step 8; 6/7 Players; How to Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 2 gives the radio-song criterion for the Guesser; pages 3–4 specify the Recorder and simultaneous sounds. Page 8 credits Horrible Guild; Sound cards and Soundtrack match inventory BGG 302876. SHA-256: 7589ba1d4e2872a342b1794dd68fb6306b7bf6604006f9e69d99cb53afffd2aa. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The published criterion assigns a role rather than a sequential first action."
+  ]
+}

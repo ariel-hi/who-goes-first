@@ -1,0 +1,41 @@
+{
+  "id": "solar-storm-dranda-en",
+  "slug": "solar-storm-dranda-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Solar Storm",
+  "aliases": [],
+  "editionLabel": "Dranda Games English rules",
+  "firstPlayerRule": "The player most recently burned by the Sun starts, or the group can choose a starting player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After the first turn, play proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/9a/b3/8d-solar-storm-rulebook.pdf",
+      "title": "Solar Storm — English rulebook",
+      "publisher": "Dranda Games",
+      "printedPages": [
+        "5",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        8
+      ],
+      "location": "Setup, step 13; Player Turns",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 5 gives both the Sunburn and random options; page 8 gives clockwise turns. Page 23 identifies Dranda Games as publisher; room cards, Damage deck and Energy Core match inventory BGG 274037. SHA-256: 2b6c1c73d1c8c59d184fc8f76101c78b98286775bcf2577f47f13c3546d6ddda. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for equally recent Sunburns."
+  ]
+}
