@@ -1,0 +1,41 @@
+{
+  "id": "long-shot-dice-perplext-en",
+  "slug": "long-shot-dice-perplext-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Long Shot: The Dice Game",
+  "aliases": [],
+  "editionLabel": "Perplext English rulebook, 2021",
+  "firstPlayerRule": "The player who most recently made a bet starts as the Active Player and takes both dice.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the end of each round, the Active Player passes both dice to the player on their left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://desktopgames.com.ua/games/7630/Long_Shot_The_Dice_Game_Rules_Bo.pdf",
+      "title": "Long Shot: The Dice Game — English rulebook",
+      "publisher": "Perplext",
+      "printedPages": [
+        "2",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6
+      ],
+      "location": "Setup for 2–8 Players, step 8; End of Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Perplext designer Chris Handy uploaded the English booklet to BoardGameGeek; a complete copy preserved by retailer DesktopGames was inspected. PDF page 2 was rendered and read for setup, with the later-round handoff visible on PDF page 6. The horse dice and 2021 Perplext credit match inventory BGG 295374. SHA-256: 2b9f6fb56db368ade451542e4d69d3dfb9c6e5e10c471fc42cf68027fd518c48. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for players who last made a bet together."
+  ]
+}
