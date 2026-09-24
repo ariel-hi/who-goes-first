@@ -1,0 +1,40 @@
+{
+  "id": "ancient-world-red-raven-en-first-edition",
+  "slug": "ancient-world-red-raven-en-first-edition",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b7f7d9111431773bfe8fbed554f20e0f269087a3243b781a1ac401359d8dd516",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "The Ancient World",
+  "aliases": [],
+  "editionLabel": "Red Raven Games English first-edition rules",
+  "firstPlayerRule": "The player who most recently won a game starts; the rules also allow choosing randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the first-player token. In turn order, the second player takes one extra coin and the third and fourth take two extra coins each.",
+    "This is the original edition, separate from the second-edition answer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/cf/42/d4-the-ancient-world-rulebook.pdf",
+      "title": "The Ancient World — English rulebook",
+      "publisher": "Red Raven Games",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup, step 10",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2 gives the recent-win criterion and random alternative. Its Starting Military cards, Citizen tokens, Empire cards and player-board setup match the original inventory BGG 147253, not the separately researched second edition. SHA-256: 5ea974f5bdb252edb2de94beeb44e217ff9931857735c1f3f9399f09b9334825. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "The rules specify no tie procedure for a shared recent win."
+  ]
+}

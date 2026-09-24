@@ -1,0 +1,41 @@
+{
+  "id": "bloody-inn-pearl-en",
+  "slug": "bloody-inn-pearl-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Bloody Inn",
+  "aliases": [],
+  "editionLabel": "Pearl Games English rules",
+  "firstPlayerRule": "The greediest player starts: the booklet defines this as the person with the most coins in their pockets.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the First Player card. It passes left at the end of each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/46/f5/ef-the-bloody-inn-rulebook.pdf",
+      "title": "The Bloody Inn — English rulebook",
+      "publisher": "Pearl Games",
+      "printedPages": [
+        "2",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6
+      ],
+      "location": "Setup; End of Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 2 gives the coin-count criterion and First Player card; page 6 gives the leftward handoff. The Inn board, guest cards and room keys match inventory BGG 180593. SHA-256: a78f99b8c68c91d653160118ca24d8c2293d36a8e5183aed616d8315468512d3. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for equal coin counts."
+  ]
+}

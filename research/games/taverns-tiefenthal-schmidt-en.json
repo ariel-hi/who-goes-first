@@ -1,0 +1,45 @@
+{
+  "id": "taverns-tiefenthal-schmidt-en",
+  "slug": "taverns-tiefenthal-schmidt-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Taverns of Tiefenthal",
+  "aliases": [],
+  "editionLabel": "Schmidt Spiele English rules, introductory module",
+  "firstPlayerRule": "The player who was last in a tavern starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the Beer Mug marker. In turn-order phases, play proceeds clockwise; the marker passes clockwise after each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/97/93/50-the-taverns-of-tiefenthal-rulebook.pdf",
+      "title": "The Taverns of Tiefenthal — English rulebook",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "3",
+        "4",
+        "10",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        10,
+        12
+      ],
+      "location": "Setup, step 11; phases; next round; credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered page 3 gives the tavern criterion and Beer Mug marker. Pages 4 and 10 explain turn order and handoff; page 12 credits Schmidt Spiele. The tavern boards and modules match inventory BGG 269207. SHA-256: d39f859effdbb3cc7d67ea166429fbd46270ef28e8a806fe33c2d95e19888846. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules specify no tie procedure for the most recent tavern visit."
+  ]
+}

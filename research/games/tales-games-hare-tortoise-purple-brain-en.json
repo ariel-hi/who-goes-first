@@ -1,0 +1,43 @@
+{
+  "id": "tales-games-hare-tortoise-purple-brain-en",
+  "slug": "tales-games-hare-tortoise-purple-brain-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Tales & Games: The Hare & the Tortoise",
+  "aliases": [],
+  "editionLabel": "Purple Brain Creations English rules",
+  "firstPlayerRule": "The first player to say what time it is goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the Start Player token. After a race, it passes clockwise to the next player. The apprentice variant uses the same opening rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/37/c7/89-tales-games-the-hare-the-tortoise-rulebook.pdf",
+      "title": "Tales & Games: The Hare & the Tortoise — English rulebook",
+      "publisher": "Purple Brain Creations",
+      "printedPages": [
+        "2",
+        "6",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6,
+        8
+      ],
+      "location": "Setup; end of race; apprentice variant",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered pages 2, 6, and 8 show the time-call criterion and clockwise token handoff. The track, five animal pawns, Racing cards and apprentice variant identify the Tales & Games race in inventory BGG 130176. SHA-256: 179ea1be088fe63dcaa05fb6539c0648141e60debf0bf54c8c9702dab3eaad4c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is given for simultaneous calls."
+  ]
+}
