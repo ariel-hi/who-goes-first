@@ -1,0 +1,12 @@
+{
+  "id": "four-gardens-arcane-wonders-en", "slug": "four-gardens-arcane-wonders-en",
+  "gameName": "Four Gardens", "aliases": [], "language": "en",
+  "editionLabel": "Arcane Wonders English rulebook",
+  "firstPlayerRule": "The player who last visited a pagoda is the starting player.",
+  "officialTieBreak": null, "houseFallback": null,
+  "clarifications": ["Each round proceeds clockwise, beginning with the starting player."],
+  "interpretation": null,
+  "sources": [{"url": "https://www.arcanewonders.com/wp-content/uploads/2021/05/FG_Rules_EN.pdf", "title": "Four Gardens — English rules", "publisher": "Arcane Wonders", "printedPages": ["2", "3"], "pdfPagesOneBased": [2, 3], "location": "Game Setup, step I; Game Play", "checkedAt": "2026-09-23"}],
+  "internalEvidence": "Visually checked publisher-hosted Arcane Wonders English PDF pages 2–3. Setup step I gives the last-pagoda-visitor criterion; page 3 gives clockwise round order. SHA-256: c33519a23c996c11424e8afe97dffb019bf6db3921205a0108bb428776c2046c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [], "status": "draft", "approvedBy": null, "approvedRevision": null, "publishedAt": null, "materiallyUpdatedAt": null
+}

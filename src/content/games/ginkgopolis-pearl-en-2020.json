@@ -1,0 +1,45 @@
+{
+  "id": "ginkgopolis-pearl-en-2020",
+  "slug": "ginkgopolis-pearl-en-2020",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7885a0eedcbc398aed55a61ea915efb574531ce9b7ed001c85c5cd35da7b7488",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Ginkgopolis",
+  "aliases": [],
+  "editionLabel": "Pearl Games 2020 English rulebook",
+  "firstPlayerRule": "The player who most recently planted a tree receives the First Player card and deals four cards to each player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players resolve actions starting with the First Player card holder and then clockwise.",
+    "At round end, each player takes the unused cards from the player on their right, including the First Player card if present; the card's new holder leads the next round.",
+    "In the separate game against Hal variant, the human player is always first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pearlgames.be/wp-content/uploads/2021/01/GINKGOPOLIS_RULES_ENG_31_07_20.pdf",
+      "title": "Ginkgopolis — English rules",
+      "publisher": "Pearl Games",
+      "printedPages": [
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        5,
+        6
+      ],
+      "location": "Setup, step 9; Resolve Actions; Prepare for the Next Round; Game against Hal",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked Pearl Games English rulebook PDF pages 2, 3, and 5; text on page 6 confirms the Hal variant exception. The setup instruction requires having planted a tree, not merely visited one. The First Player card travels with unused cards to the right-hand neighbor after a round. SHA-256: 5ce625380a66b44632a6454b834ee12d24732b43853b69dc8b575fbb098490b3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player instruction, optional wording, and setup-versus-play turn order.",
+  "uncertainty": []
+}

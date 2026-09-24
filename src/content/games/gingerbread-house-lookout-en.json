@@ -1,0 +1,43 @@
+{
+  "id": "gingerbread-house-lookout-en",
+  "slug": "gingerbread-house-lookout-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6a6dc032c78f6a00655d17b58dedf115e6b58ba4f02470df4c5d70f3cde3b8e0",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Gingerbread House",
+  "aliases": [
+    "Hexenhaus"
+  ],
+  "editionLabel": "Lookout Games 2018 English rulebook",
+  "firstPlayerRule": "Choose a starting witch; the rulebook suggests the player who last visited a forest as an example.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The forest-visit criterion is an example, not a requirement.",
+    "During setup, character cards are chosen beginning with the player to the starting witch's right and proceeding counterclockwise.",
+    "The starting witch takes the first game turn, followed by the other players clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Gingerbread%20House.pdf",
+      "title": "Gingerbread House — English rules",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup, steps 7–8; How to Play",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked publisher-authored Lookout English booklet pages 3–4, preserved by the Dice Tower Library. Setup step 7 leaves the starter selection open and gives a recent forest visit only as an example; step 8 reverses the character-card selection order, while play itself proceeds clockwise. The publisher's own PDF endpoint denied retrieval on 2026-09-23. SHA-256: 06360eb72a5bab05f8bda12b41b4dc423c8375bdf0de6c35a7fe62824c9f8f01. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player instruction, optional wording, and setup-versus-play turn order.",
+  "uncertainty": []
+}

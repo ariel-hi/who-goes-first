@@ -1,0 +1,37 @@
+{
+  "id": "flip-city-tmg-en",
+  "slug": "flip-city-tmg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7f3f7a8cc2893ae054d62d18ff2af943f70a128d1f9f8103f0f1f1ea2a377ee1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
+  "gameName": "Flip City",
+  "aliases": [],
+  "editionLabel": "Tasty Minstrel Games 2015 English rulebook",
+  "firstPlayerRule": "The last player to have flipped a table is the start player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The start player takes the first turn; play then proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/dtlib/base/Flip%20City.pdf",
+      "title": "Flip City — English rules",
+      "publisher": "Tasty Minstrel Games / Homosapiens Lab",
+      "printedPages": [
+        "unnumbered first spread"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Preparation, step 3",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "internalEvidence": "Visually checked publisher-authored 2015 Tasty Minstrel Games / Homosapiens Lab English rules, preserved by the Dice Tower Library. The first PDF spread states 'last player to have flipped a table' in Preparation step 3. SHA-256: 2c8f665c4aa272f523db3c408691d36f245857591ac6fb5189da4e096ec6487b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player instruction, optional wording, and setup-versus-play turn order.",
+  "uncertainty": []
+}

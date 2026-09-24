@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 501 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 505 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Four Gardens, Ginkgopolis, Flip City, and Gingerbread House add four more checked English editions. The Ginkgopolis record preserves the separate Hal variant, and Gingerbread House distinguishes its optional starting-witch example from its reverse-order character setup. Flip City's table-flipping criterion is retained as printed.
 
 Fantastic Factories, Farmageddon, Fields of Green, and Forest Shuffle add four checked English editions. Fantastic Factories uses the inspected booklet's "used a tool" wording. Fields of Green allows a farm or rural area, while Farmageddon specifies a farm. Forest Shuffle's publisher file was inaccessible at the time of review, so its publisher-authored rulebook was checked through a matching mirror and that retrieval limit remains in the evidence.
 
