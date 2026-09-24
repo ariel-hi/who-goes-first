@@ -1,0 +1,39 @@
+{
+  "id": "tucano-helvetiq-en",
+  "slug": "tucano-helvetiq-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "5359b9cf9dd05b22b62000826d55be19fb350f5577123db361d35220facea900",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Tucano",
+  "aliases": [],
+  "editionLabel": "Helvetiq English rules",
+  "firstPlayerRule": "Whoever last ate some fruit starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns clockwise from that person."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://store.pakufuda.com/wp-content/uploads/2024/04/tucano_rules-EN.pdf",
+      "title": "Tucano — English rulebook",
+      "publisher": "Helvetiq",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "How to Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the Helvetiq-branded English sheet from an archive. The Helvetiq product page links the same named English PDF and its indexed text corroborates the fruit criterion and clockwise order, but direct retrieval returned HTTP 503. SHA-256: 579d5be05d13fe52a0a0dd706e70ba4c099214e52d9bbbf9f2d8bf6534455115. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
+  "uncertainty": [
+    "The booklet gives no tie procedure for equally recent fruit eaters."
+  ]
+}

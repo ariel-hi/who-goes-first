@@ -1,0 +1,47 @@
+{
+  "id": "marco-polo-ii-hans-im-glueck-en",
+  "slug": "marco-polo-ii-hans-im-glueck-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "0fab43552e8f5364668a23846fe0b15516734877b9cf4e86d1545be83adea354",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Marco Polo II: In the Service of the Khan",
+  "aliases": [],
+  "editionLabel": "Hans im Glück English rules",
+  "firstPlayerRule": "The person who most recently returned from a journey starts and takes the first-player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with that player, turns proceed clockwise.",
+    "The separate character draft begins with the last player and moves in reverse clockwise order.",
+    "A Travel action may change who begins a later round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hans-im-glueck.de/wp-content/uploads/2023/06/Marco-Polo-II-Rulebook_EN.pdf",
+      "title": "Marco Polo II: In the Service of the Khan — English rulebook",
+      "publisher": "Hans im Glück",
+      "printedPages": [
+        "2",
+        "4",
+        "5",
+        "14"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5,
+        14
+      ],
+      "location": "Setup, step 13; starting character choice; gameplay; Travel",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the Hans im Glück English rulebook and rendered the setup page. Setup step 13 gives the recent-journey criterion and first-player marker. The later character draft and Travel action were checked separately so they are not confused with the initial turn. SHA-256: deaeba5afe0d6d9a55a95481553cfe301b7cd407a38317947e065f0b93d09ebb. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
+  "uncertainty": [
+    "No tie procedure or time limit for a journey is specified."
+  ]
+}

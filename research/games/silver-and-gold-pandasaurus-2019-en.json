@@ -1,0 +1,42 @@
+{
+  "id": "silver-and-gold-pandasaurus-2019-en",
+  "slug": "silver-and-gold-pandasaurus-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Silver & Gold",
+  "aliases": [],
+  "editionLabel": "Pandasaurus Games English rules, ©2019 Nürnberger-Spielkarten-Verlag",
+  "firstPlayerRule": "Whoever last searched for buried treasure is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player reveals an expedition card; all players mark their treasure cards simultaneously.",
+    "The first-player role then passes clockwise for the next turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://how-to-play.s3.us-east-2.amazonaws.com/270673/rules/270673_rules.pdf",
+      "title": "Silver & Gold — English rulebook",
+      "publisher": "Pandasaurus Games / Nürnberger-Spielkarten-Verlag",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Game setup; course of play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered both pages of the publisher-authored English sheet. Page 1 assigns the treasure-search starter; page 2 shows that the role passes clockwise while marking is simultaneous. The NSV-hosted English download returned HTTP 403, so the source URL points to the matching archived publisher sheet. SHA-256: 15eb2259718b91aa9f9a4c7ff8a4659a583f0035f414b0b019220a92da3c37d1. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The booklet does not specify what counts as a treasure search or how to break a tie. This is a reveal role in a simultaneous game and is excluded from the portable random mix."
+  ]
+}

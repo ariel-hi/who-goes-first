@@ -1,0 +1,42 @@
+{
+  "id": "stockpile-nauvoo-en",
+  "slug": "stockpile-nauvoo-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Stockpile",
+  "aliases": [],
+  "editionLabel": "Nauvoo Games English base-game rules",
+  "firstPlayerRule": "The person who paid the most for their previous meal starts and takes the First Player Token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The token determines clockwise player order.",
+    "The First Player Token passes to the left for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.nauvoogames.com/rules/Stockpile_Rules.pdf",
+      "title": "Stockpile — English rulebook",
+      "publisher": "Nauvoo Games",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup, step 6; player order",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rulebook linked from Nauvoo Games’ Stockpile page and rendered setup page 2. Setup step 6 supplies the previous-meal cost criterion; page 4 confirms turn order and later passing of the token. SHA-256: c289bec9af589a49a6293d4767d28fa954869739ddd07e5b5b6b52ec6ead33b7. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The booklet gives no tie procedure. Excluded from the portable random mix because it asks players to disclose a financial amount."
+  ]
+}

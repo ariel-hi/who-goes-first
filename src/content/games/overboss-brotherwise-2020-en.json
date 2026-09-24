@@ -1,0 +1,40 @@
+{
+  "id": "overboss-brotherwise-2020-en",
+  "slug": "overboss-brotherwise-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "204de05750f7bc65322c8d1f2319ff70355dc05392beba518dcadd2779df396c",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Overboss",
+  "aliases": [],
+  "editionLabel": "Brotherwise Games English base-game rules, December 2020",
+  "firstPlayerRule": "Choose a first player. The rulebook recommends whoever most recently raised a full legion of undead; if nobody has, choose randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise from the chosen player.",
+    "The undead criterion is a recommendation, not a required way to choose."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.brotherwisegames.com/s/OverbossRulebookDec2020.pdf",
+      "title": "Overboss — English rulebook",
+      "publisher": "Brotherwise Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup — first player",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered Brotherwise Games’ December 2020 base-game booklet. Setup recommends the undead theme and gives random choice if nobody qualifies. It also specifies clockwise turns. SHA-256: 390baa44c896326474d6b96f00e8ef0ed8fd057b164befb0a7b41c26743db194. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
+  "uncertainty": [
+    "The thematic suggestion does not provide an independent, usable personal-history criterion; excluded from the portable random mix."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "oh-my-goods-lookout-v1-5-en",
+  "slug": "oh-my-goods-lookout-v1-5-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "be42b567e8633ea65d123e43c5f184b540b16ce11b4cf3c46c10179e7e77c475",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Oh My Goods!",
+  "aliases": [],
+  "editionLabel": "Lookout Games English rules, version 1.5",
+  "firstPlayerRule": "The person who most recently worked the hardest becomes the first active player, or choose a player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The active player handles the Sunrise phase and deals cards; players then act in active-player order.",
+    "The active-player role passes clockwise at the end of each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lookout-spiele.de/upload/de_omg.html_Rules_OmG-V1.5_EN.pdf",
+      "title": "Oh My Goods! — English rulebook",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "2",
+        "4",
+        "6",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        6,
+        10
+      ],
+      "location": "Setup; Phases I and IV; end of round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the Lookout Games version 1.5 booklet. Setup states the hardest-worked criterion and explicitly permits random selection. The phase rules establish the active-player role and its clockwise movement. SHA-256: c6d8d816ffb7a2d002e9f42cc71b8d22479338e36a7c44a08c66df935d04bf68. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
+  "uncertainty": [
+    "“Worked the hardest” is subjective; the rulebook supplies random choice as an alternative. Excluded from the portable random mix."
+  ]
+}

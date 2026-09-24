@@ -1,0 +1,40 @@
+{
+  "id": "space-explorers-spielefaible-en",
+  "slug": "space-explorers-spielefaible-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "75ee082d72667a84ba6046912e5aac5e6455d63ace0378e36504e00336ef84f1",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Space Explorers",
+  "aliases": [],
+  "editionLabel": "Spielefaible English rules",
+  "firstPlayerRule": "The person who most recently visited outer space starts. If nobody has, the person who most recently watched or read something about space starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first-player token stays with that player for the entire game.",
+    "The token identifies where play stops after the end of the game is triggered."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://spielefaible.de/files/downloads/rules/Space_Explorers-Rules-EN.pdf",
+      "title": "Space Explorers — English rulebook",
+      "publisher": "Spielefaible",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Initial setup, step 5",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the English booklet from Spielefaible and rendered page 3. Initial setup gives the outer-space criterion, its watch-or-read fallback and the instruction to retain the first-player token. SHA-256: d296838c621c6c0eedda89fb39bb74fdd1e635c78ebbc7ef6fcf36574008a9d8. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
+  "uncertainty": [
+    "“Something about space” is broad and the booklet does not define a tie procedure."
+  ]
+}
