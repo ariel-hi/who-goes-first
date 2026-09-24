@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 582 game rules approved for the catalog; 229 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 587 game rules approved for the catalog; 231 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Abra Kazam!, ARGH, Antinomy, Aquarium, and Asteroyds add five checked English manuals. Abra Kazam! assigns a Wizard role that can change after every spell; Asteroyds assigns a player to roll dice and run the stopwatch while planning is simultaneous. Aquarium's breath-holding instruction stays in its game page. ARGH and Antinomy supply two more portable opening criteria.
 
 A Battle through History, ARTBOX, Animotion, Café, and Casting add five checked English editions from rendered publisher-authored manuals. ARTBOX has three official ways to choose its first Maestro; Animotion and Casting assign opening acting roles. Café's base-game master differs from its auction variant. The Battle through History and Café criteria join the random mix; the three role-specific answers remain in the directory.
 

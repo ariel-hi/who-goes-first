@@ -1,0 +1,42 @@
+{
+  "id": "abra-kazam-buzzy-2018-en",
+  "slug": "abra-kazam-buzzy-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "29460ffda485ad02b0d9ccd85f0659a7f599f4b865411f73a9d829335a4377a2",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Abra Kazam!",
+  "aliases": [],
+  "editionLabel": "Buzzy Games English rules",
+  "firstPlayerRule": "The last person to read a book about wizards begins as the Wizard.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Wizard takes the wand and faces the other players.",
+    "If another player guesses the spell, that player becomes the new Wizard; if no one guesses, the current Wizard chooses a new Wizard."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/28/bf/a1-abra-kazam-rulebook.pdf",
+      "title": "Abra Kazam! — English rulebook",
+      "publisher": "Buzzy Games",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "How to play?; successful and unsuccessful guesses",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed pages 4 and 5 give the opening Wizard criterion and role changes. The Buzzy Games booklet has a wooden wand, paired big and small spell cards and Book of Spells cards matching inventory BGG 245503. SHA-256: 0320e6d4a4e5579ce928a01587f3623aa87dd7fbde08fc108d29375b1c9bc656. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent wizard-book readers."
+  ]
+}

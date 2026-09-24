@@ -1,0 +1,39 @@
+{
+  "id": "asteroyds-ystari-racing-en",
+  "slug": "asteroyds-ystari-racing-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Asteroyds",
+  "aliases": [],
+  "editionLabel": "Ystari Games English rules, Racing mode",
+  "firstPlayerRule": "The player who most recently flew is player one and takes the dice and stopwatch.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Player one rolls the dice and starts the stopwatch before everyone plans simultaneously.",
+    "This answer follows the Racing mode presented first in the manual."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/b9/39/7a-asteroyds-rulebook.pdf",
+      "title": "Asteroyds — English rulebook",
+      "publisher": "Ystari Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Set Up, final bullet; Game Round, Planning",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF pages 1 and 2 of the Ystari-authored manual state the last-flown criterion and first-player dice/stopwatch duty. Status charts, spacecraft, pilot tokens and several modes match inventory BGG 65200. SHA-256: 6dd534a2f05184d544145ace3749b38383276dd44d1903cd7989a5ad7536f76a. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure or fallback is stated for a group in which no one has flown."
+  ]
+}
