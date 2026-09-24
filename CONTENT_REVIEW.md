@@ -1,10 +1,10 @@
 # Content review queue
 
-**Owner-authorized assistant review: 240 game rules approved for the catalog; 176 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 242 game rules approved for the catalog; 177 eligible for the random mix. Public house prompts: 60. No deployment performed.**
 
 The Allplay editorial pass approved High Society, Panda Panda, River Valley Glassworks, Through the Desert, Habitats, Pollen, Switchbacks, Roll to the Top: Journeys, Pies, QE, Big Top and Basketboss after rechecking publisher PDF pages and source hashes. Eight of these twelve have standalone starting criteria eligible for the random mix. High Society's random selection is an official alternative in its main answer, not a tie-break. Roll to the Top: Journeys begins with a dice-roller role and simultaneous board filling; QE, Big Top and Basketboss assign game-specific roles. See `research/coverage/allplay-review-progress.md`.
 
-Three new English research drafts cover 10 Tricks Later, 12 Gangsters and 13 Ghosts. These remain outside the approved catalog. The 13 Ghosts booklet was available through a retailer mirror while the publisher-linked file was unavailable, so its provenance and multiplayer variants remain held for comparison. See `research/coverage/fudacoma-blue-orange-artipia-progress.md`.
+Three new English research drafts cover 10 Tricks Later, 12 Gangsters and 13 Ghosts. Direct publisher PDFs support the first two approvals: 10 Tricks Later enters the portable mix, while 12 Gangsters is directory-only because it assigns the Boss role before simultaneous card play. The 13 Ghosts booklet was available through a retailer mirror while the publisher-linked file was unavailable, so its provenance and multiplayer variants remain held for comparison. See `research/coverage/fudacoma-blue-orange-artipia-progress.md`.
 
 On 2026-09-23, Codex reviewed and published 60 original house questions under the owner's authorization, including the six earlier research drafts. They are separate from publisher rules, and the question picker draws the whole pool before repeating. Exact approved revisions are in `src/content/prompts/original-questions.json`; the six draft records remain in `research/prompts/` as research history.
 

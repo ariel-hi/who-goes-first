@@ -1,5 +1,11 @@
 # Local verification — updated 2026-09-24 UTC
 
+## Fudacoma and Blue Orange approval checkpoint — 2026-09-24 UTC
+
+The directly publisher-hosted English manuals for 10 Tricks Later and 12 Gangsters were reopened after both cached files and their page renders had been inspected. The first game is approved for the public catalog and portable mix; the second is approved for the directory only because it assigns a Boss role before simultaneous card play. The Artipia-branded 13 Ghosts mirror remains a local draft. See `research/coverage/fudacoma-blue-orange-artipia-progress.md`.
+
+The catalog has **242** approved rules and **177** random-mix criteria; development research has **433 records** for **411 of 1,320 inventory identities**, leaving **909** pending. `npm run verify` passed Astro check, lint, 40 unit tests, content validation, and a **259-page** preview build. SEO/static audits passed for **2,815 internal links**. `npm run test:release` passed all five matrix cases. Nine focused browser checks passed across Chromium, Firefox and WebKit, covering every researched page, full-inventory search and reviewed-pool filtering. Evidence: ignored `artifacts/fudacoma-blue-orange-verify.log`, `artifacts/fudacoma-blue-orange-release.log` and `artifacts/fudacoma-blue-orange-browser.log`. The prior full **207/207** browser suite was run before these two content-only approvals; the nine focused tests verify the affected content paths afterward. No public deployment occurred.
+
 ## Allplay expansion and research checkpoint — 2026-09-24 00:16 UTC
 
 Nine additional Allplay draft revisions received source-backed editorial approval after their cached publisher PDF hashes and rendered rule pages were rechecked. The exact catalog has **240 approved rules**, and the portable random mix has **176** separately fingerprinted criteria. Through the Desert, Habitats, Pollen, Switchbacks and Pies enter the mix; Roll to the Top: Journeys, QE, Big Top and Basketboss remain directory-only. See `research/coverage/allplay-review-progress.md` for each source and decision.
