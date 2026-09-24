@@ -1,0 +1,42 @@
+{
+  "id": "k2-rebel-en",
+  "slug": "k2-rebel-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e3eb450197b25d2ddccf19994844dee3c2ad4adb30b9d85ecce598260b7d2c17",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "K2",
+  "aliases": [],
+  "editionLabel": "Rebel English rulebook, version 1.01",
+  "firstPlayerRule": "The player who was most recently in the mountains takes the starting player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first two phases of each turn are simultaneous. In the Action phase, the marker holder acts first, then play proceeds clockwise.",
+    "At the end of each turn, the marker passes to the player on the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://repository.rebel.pl/files/instrukcje/K2%201.01%20%5BEN%5D.pdf",
+      "title": "K2 — English instructions",
+      "publisher": "Rebel.pl",
+      "printedPages": [
+        "4",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        9
+      ],
+      "location": "Game Preparation; Sequence of Play; End of Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rebel links this English rulebook from its K2 product page. The booklet is image-based; PDF page 4 was rendered and read for the initial marker and Action phase, and page 9 for marker passing. Rebel credits Adam Kałuża and identifies K2, matching inventory BGG 73761. SHA-256: b2f4eaafb5a82905df73f82b9cd615d3813b0e04a84fe3c878a92dcce3e1049a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "No tie procedure is stated for players whose last mountain visit was together."
+  ]
+}

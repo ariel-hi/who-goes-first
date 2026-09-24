@@ -1,6 +1,6 @@
 # Content review queue
 
-**Owner-authorized assistant review: 553 game rules approved for the catalog; 209 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 557 game rules approved for the catalog; 212 eligible for the random mix. Public house prompts: 60. No deployment performed.**
 
 Fresh Fruits, Gloomy Graves, Jumbo's Forbidden City, and the original Spielworxx Gentes add four checked English editions. Fresh Fruits changes its starting player after every round. Gentes leaves the initial selection method to the players and has a separate action that can change the next-round starter, so it remains directory-only. Jumbo's Forbidden City is distinct from Gùgōng.
 

@@ -1,0 +1,37 @@
+{
+  "id": "kompromat-helvetiq-en",
+  "slug": "kompromat-helvetiq-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Kompromat",
+  "aliases": [],
+  "editionLabel": "Helvetiq English rules",
+  "firstPlayerRule": "The most suspicious-looking player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "For each new round, the starting player alternates between the two players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://helvetiq.com/media/hexaattachment/products/attachments/kompromat_rules_EN_compressed.pdf",
+      "title": "Kompromat — English rules",
+      "publisher": "Helvetiq",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "How to Play: Attempt Missions; Reset for Next Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Helvetiq-hosted English PDF was inspected at rendered PDF page 2. It gives the opening criterion and the later-round alternation. The title, spy theme and two-player format match inventory BGG 299569. SHA-256: 275ec521ab0ddf3c962b735e23ca9767e6f9d4ab3ae512b4e0ac2733938fb297. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules leave deciding who looks most suspicious to the two players and give no tie procedure."
+  ]
+}
