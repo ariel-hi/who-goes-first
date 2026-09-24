@@ -1,6 +1,6 @@
 # Content review queue
 
-**Owner-authorized assistant review: 709 game rules approved for the catalog; 301 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 714 game rules approved for the catalog; 305 eligible for the random mix. Public house prompts: 60. No deployment performed.**
 
 Fragments, Fresh Fish, Genoa, Ghooost!, Godzilla Total War, GrandBois, Human Punishment: Social Deduction 2.0, and La Cosa Nostra add eight checked English editions. Genoa keeps its first player throughout; La Cosa Nostra rotates its starter each round. Ghooost! and Human Punishment include previous-game alternatives. Four criteria from this group joined the random mix.
 
@@ -90,7 +90,7 @@ The Rio Grande and Zoch editorial pass approves fourteen existing drafts after r
 
 The Dized follow-up pass adds ten reviewed records and six portable criteria. Big Monster, Coup, Flamme Rouge and New York Slice remain directory-only with their simultaneous, prior-game or setup-role distinctions. Volcano explicitly identifies the Fiesta Caldera variant. Four official random alternatives remain in the main answers without a duplicate house-rule label. Balloon Pop's title match belongs to a different game and is not counted. See `research/coverage/dized-followup-progress.md`.
 
-`src/content/random-rule-pool.json` is an explicit reviewed allowlist, separate from the game directory. It contains 176 portable first-player criteria. It excludes simultaneous play, team/role assignment, component-dependent setup, and rules that merely say to choose randomly. Other unreviewed candidates are excluded by default. The fingerprint covers the full public answer, edition, sources, clarifications, and fallbacks. Changes invalidate eligibility until checked again. Do not refill this list automatically from every research record or from keyword matching.
+`src/content/random-rule-pool.json` is an explicit reviewed allowlist, separate from the game directory. It contains 305 portable first-player criteria. It excludes simultaneous play, team/role assignment, component-dependent setup, and rules that merely say to choose randomly. Other unreviewed candidates are excluded by default. The fingerprint covers the full public answer, edition, sources, clarifications, and fallbacks. Changes invalidate eligibility until checked again. Do not refill this list automatically from every research record or from keyword matching.
 
 The 86 Gamewright drafts added on 2026-09-23 UTC have publisher URLs, PDF page locations, source-file hashes, and individually written starting answers. Review these through the same queue. Their edition labels identify the exact linked publisher PDF without guessing a publication year. Particular review points: Imagine has an explicit youngest-player fallback; Chomp! begins simultaneously; Marshmallow Test's dealer also leads; Three of a Crime's first eyewitness and first detective are different people; Hit List has a neutral-reader option. Boochie and Hit or Miss remain unresolved source leads and have no invented answer pages. See `research/coverage/gamewright-progress.md`.
 

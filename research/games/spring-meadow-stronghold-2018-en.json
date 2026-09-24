@@ -1,0 +1,42 @@
+{
+  "id": "spring-meadow-stronghold-2018-en",
+  "slug": "spring-meadow-stronghold-2018-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Spring Meadow",
+  "aliases": [],
+  "editionLabel": "Stronghold Games English rules, 2018",
+  "firstPlayerRule": "The person who was most recently on a mountain starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with that player, turns proceed clockwise.",
+    "Each later player receives a Rock tile based on player count and order, then places it on their first turn alongside their Meadow tile."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://desktopgames.com.ua/games/5898/SH_Games_Spring_Meadow_Rulebook_.pdf",
+      "title": "Spring Meadow — English rulebook",
+      "publisher": "Stronghold Games / Edition Spielwiese",
+      "printedPages": [
+        "4",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        7
+      ],
+      "location": "Set-up, step G; The player turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the Stronghold Games English rulebook from a retailer mirror. Printed page 4 identifies the most recent mountain visitor as start player and sets later players’ initial Rock tiles; page 7 confirms clockwise play. The hiking map, signpost and meadow/rock tiles match inventory BGG 253684. A secondary review incorrectly claims a random starter, so the publisher-authored PDF governs this entry. SHA-256: ffb385ca42efb5e56ceef0de891aa7e3919eb3027bbd4bf09b41c48ff63e27fc. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The booklet gives no tie procedure or time limit for the mountain visit."
+  ]
+}
