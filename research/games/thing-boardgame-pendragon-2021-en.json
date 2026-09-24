@@ -1,0 +1,49 @@
+{
+  "id": "thing-boardgame-pendragon-2021-en",
+  "slug": "thing-boardgame-pendragon-2021-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Thing: The Boardgame",
+  "aliases": [],
+  "editionLabel": "Pendragon Game Studio English rules, 2021",
+  "firstPlayerRule": "The player who most recently watched The Thing starts as the Leader.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the Leader Sheet. The Leader handles the opening weather phase; character movement later begins with the player to the Leader’s left.",
+    "The same opening criterion is repeated in the separate one-to-three-player rules."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/77/97/7c-the-thing-the-boardgame-rulebook.pdf",
+      "title": "The Thing: The Boardgame — English rulebook",
+      "publisher": "Pendragon Game Studio / Ares Games",
+      "printedPages": [
+        "5",
+        "6",
+        "8",
+        "23",
+        "27"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        8,
+        23,
+        27
+      ],
+      "location": "Setup, step 21; Game Overview; Character Movement; one-to-three-player setup; credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 5 gives the recent-film criterion and Leader Sheet; page 6 defines the Leader’s first phase. Page 23 repeats the setup rule for one to three players, and page 27 credits Pendragon ©2021 and Ares as English distributor. The character sheets, Dog Infection tokens and Leader Sheet match inventory BGG 295293. SHA-256: f7589cb8b47b9eebac38ea09a26628030d47770d441c83ce39a96d91c692ae7c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The printed rule assigns the first Leader role, while character movement begins with their left neighbor.",
+    "No tie procedure is given for the most recent viewing."
+  ]
+}

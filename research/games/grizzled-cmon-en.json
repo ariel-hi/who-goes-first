@@ -1,0 +1,48 @@
+{
+  "id": "grizzled-cmon-en",
+  "slug": "grizzled-cmon-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Grizzled",
+  "aliases": [],
+  "editionLabel": "CMON English rules",
+  "firstPlayerRule": "The hairiest player becomes the first Mission Leader and starts the first mission.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Mission Leader chooses mission intensity and receives cards first. Actions then begin with that player and continue clockwise.",
+    "After the Morale Drop, the Mission Leader token moves to the next player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/94/6c/ee-the-grizzled-rulebook.pdf",
+      "title": "The Grizzled — English rulebook",
+      "publisher": "CMON",
+      "printedPages": [
+        "3",
+        "4",
+        "6",
+        "9",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        6,
+        9,
+        12
+      ],
+      "location": "Setup; Preparation; The Actions; next mission; credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 3 gives the hairiest-player criterion. Pages 4 and 6 show the Mission Leader preparing and acting first; page 9 gives the handoff. The English booklet is also listed at CMON’s official rulebook URL. Grizzled cards, Support tiles and the Mission Leader token match inventory BGG 171668. SHA-256: 1d49c3daf3ffeb749f812bc30154bb3220be84ab72648833fc680603b48629e1. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not define how to compare hairiness or break a tie."
+  ]
+}
