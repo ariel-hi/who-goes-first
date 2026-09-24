@@ -1,0 +1,40 @@
+{
+  "id": "regicide-badgers-2021-en",
+  "slug": "regicide-badgers-2021-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "aff38c3d4790899aeea6992faac8f0fedc3756048268d5e7b23e57c8ccc4eb61",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Regicide",
+  "aliases": [],
+  "editionLabel": "Badgers From Mars English rules",
+  "firstPlayerRule": "The person who most recently committed regicide takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players cooperate to defeat the Castle deck.",
+    "With one player, that player begins by default."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.regicidegame.com/site_files/33132/upload_files/RegicideRulesA4.pdf?dl=1",
+      "title": "Regicide — English rulebook",
+      "publisher": "Badgers From Mars",
+      "printedPages": [
+        "Front sheet"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup — sentence after the hand-size table",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the official English rules from Regicide’s How to Play page and rendered the first sheet. The setup explicitly names the most recent regicide committer; the surrounding text identifies cooperative play and includes solo hand-size setup. SHA-256: 46a7fb460b38f29e7644094267bf5bf097552258be5fdc43f35c25c123ba54be. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction, game identity and edition.",
+  "uncertainty": [
+    "The criterion is a joke with no practical fallback or tie procedure in the source. It is excluded from the portable random mix."
+  ]
+}

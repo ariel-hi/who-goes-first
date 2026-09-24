@@ -1,0 +1,42 @@
+{
+  "id": "on-tour-boardgametables-2019-en",
+  "slug": "on-tour-boardgametables-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d33148624ba8fde0286cd6801179120756b05cbbb8edebe0221f06cc2d1513d6",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "On Tour",
+  "aliases": [],
+  "editionLabel": "BoardGameTables.com English rules, February 2019",
+  "firstPlayerRule": "The person with the best music taste rolls the dice first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player handles the first card reveal and dice roll; all players write the resulting numbers on their maps simultaneously.",
+    "After everyone writes, pass the dice to the next person."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://juegosrollandwrite.com/wp-content/uploads/2020/01/On_Tour_Rules_English_Feb_4_2019.pdf",
+      "title": "On Tour — English rulebook",
+      "publisher": "BoardGameTables.com",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup, step 9; Gameplay; Next Turn",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the BoardGameTables.com English rules from an archived copy. Page 2 names the best-music-taste first roller and states that everyone writes simultaneously; page 3 passes the dice after each turn. The source is the On Tour map game BGG 251412. SHA-256: b1133ba0f22367a50feb08ad4d02b5a4f5bd20afd09d2a055430f2fd0e128aa9. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction, game identity and edition.",
+  "uncertainty": [
+    "“Best music taste” is subjective and selects a rolling duty while mapping is simultaneous; excluded from the portable random mix."
+  ]
+}

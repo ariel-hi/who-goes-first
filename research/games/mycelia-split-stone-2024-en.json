@@ -1,0 +1,43 @@
+{
+  "id": "mycelia-split-stone-2024-en",
+  "slug": "mycelia-split-stone-2024-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Mycelia",
+  "aliases": [],
+  "editionLabel": "Split Stone Games English strategic mushroom game, 2024",
+  "firstPlayerRule": "The person who most recently saw a mushroom in the wild starts. Alternatively, draw one spore from each player from a hat and use the first one drawn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before play, place Mother mushrooms in reverse turn order.",
+    "Ordinary turns then proceed clockwise.",
+    "This is the Split Stone Games strategy title BGG 378476, separate from Ravensburger’s deck-building game of the same name."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bghub.org/r/mycelia.pdf",
+      "title": "Mycelia — English rulebook",
+      "publisher": "Split Stone Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "First Player; Mother Mushroom; turn sequence",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the Split Stone Games English publisher-produced rulebook from an archive. PDF page 3 is a printed-page 4–5 spread; printed page 5 gives the recent wild-mushroom criterion, spore-draw alternative and reverse-order Mother mushroom setup. PDF page 4 gives clockwise ordinary turns. Mushroom cards, spore counters and Mother mushrooms establish the distinct BGG 378476 identity. SHA-256: 518bb8a0f6d3cc588b3bec407e0fb01f4f281b5856b812d7cdf29de09732ca77. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not give a tie procedure for equally recent wild-mushroom sightings; their humorous suggestion to argue for 15 minutes is not presented as a formal tie-break."
+  ]
+}

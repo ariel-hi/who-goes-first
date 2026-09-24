@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 731 game rules approved for the catalog; 313 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 735 game rules approved for the catalog; 315 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Regicide, On Tour, Rock Hard: 1977 and the Split Stone Games Mycelia add four checked English editions. On Tour’s best-music-taste criterion selects the first roller while everyone writes simultaneously. Rock Hard’s publisher permits any alternative selection method. Mycelia is kept distinct from the unrelated Ravensburger game. See `research/coverage/regicide-on-tour-rock-mycelia-progress.md`.
 
 Zoo Vadis, Trogdor!!, Wilmot’s Warehouse, Wonderland’s War and the original Yedo add five checked answers. Zoo Vadis and Wonderland’s War join the random mix. Wilmot’s Warehouse identifies the first rotating cooperative supervisor, and Yedo uses a random opening order that may change later. See `research/coverage/zoo-trogdor-wilmot-wonderland-yedo-progress.md`.
 

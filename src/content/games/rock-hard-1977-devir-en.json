@@ -1,0 +1,40 @@
+{
+  "id": "rock-hard-1977-devir-en",
+  "slug": "rock-hard-1977-devir-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "f75665259b3be9d416c216779728cd179b5e018cad5e52ad9e4cb1efcccd6801",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Rock Hard: 1977",
+  "aliases": [],
+  "editionLabel": "Devir Games English base-game rules",
+  "firstPlayerRule": "The person who most recently sang in the shower starts, or choose a first player by any other method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Place the first player’s guitar-pick turn-order token on the first space; the remaining players fill the track clockwise.",
+    "Starting with the first player, each player draws two Character cards and chooses one simultaneously with the others."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://games-for-you.oozmi-cdn.com/products/08c57e42-71a4-4a3b-b866-9e401e5df2c7/pdfs/pravila-igre-na-engleskom-jeziku.pdf",
+      "title": "Rock Hard: 1977 — English rulebook",
+      "publisher": "Devir Games",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Setup, steps 9–10",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the Devir English booklet from a retailer CDN. Its pages are image-only; rendered printed/PDF page 6 and visually checked the shower-singing criterion, any-method alternative, turn-order track and simultaneous character choice. The guitar-pick tokens and 1977 music components match inventory BGG 402679. SHA-256: eec7ac0c4a6bb47955f99065ae1821b4516e7c629af435320760c89bca8416fd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction, game identity and edition.",
+  "uncertainty": [
+    "The source does not specify a tie procedure for equally recent shower singers."
+  ]
+}
