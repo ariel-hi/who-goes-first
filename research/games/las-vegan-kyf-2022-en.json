@@ -1,0 +1,41 @@
+{
+  "id": "las-vegan-kyf-2022-en",
+  "slug": "las-vegan-kyf-2022-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Las Vegan",
+  "aliases": [],
+  "editionLabel": "KYF Edition English rules, March 2022",
+  "firstPlayerRule": "The rules do not specify who leads the opening trick. The player who took the final trick of a round starts the next round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rules say that a player begins a trick by playing a card, without giving a criterion for the initial player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/7e/1d/b3-las-vegan-rulebook.pdf",
+      "title": "Las Vegan — English rules",
+      "publisher": "KYF Edition",
+      "printedPages": [
+        "3",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        6
+      ],
+      "location": "The Game Round; End of a Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 says a player starts a trick but provides no first-player criterion; page 6 says the last trick taker starts the next round. The full eight-page leaflet was checked for another opening instruction. Page 8 credits KYF Edition, March 2022; Cabbage Machine cards and Casino tokens match inventory BGG 347702. SHA-256: b1744775ba8b0408bf8e57d7b12e4c4d0e13fa1b0a90a3d96a84620f417a8c08. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The booklet leaves the initial trick leader to the group; this entry does not turn that omission into an official selection rule."
+  ]
+}
