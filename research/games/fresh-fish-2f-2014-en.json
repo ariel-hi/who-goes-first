@@ -1,0 +1,42 @@
+{
+  "id": "fresh-fish-2f-2014-en",
+  "slug": "fresh-fish-2f-2014-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Fresh Fish",
+  "aliases": [],
+  "editionLabel": "2F-Spiele English rules, 2014",
+  "firstPlayerRule": "The player who most recently visited a weekly market starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns then proceed clockwise.",
+    "This is the 2014 edition with modular market boards and a separate classic variant."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/b0/42/a0-fresh-fish-rulebook.pdf",
+      "title": "Fresh Fish — English rulebook",
+      "publisher": "2F-Spiele",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Preparing your own components, step 10; Game play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 states the weekly-market criterion and page 4 gives clockwise play. Page 8 credits 2F-Spiele ©2014; market stalls, delivery trucks, reservation discs and modular boards match inventory BGG 1017. The classic variant is separately labeled. SHA-256: 6828b879fa7c6bcb0b973679f0cd4ee044ccae33ec92cb80ada9ca2e9678938a. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for players who visited a weekly market together."
+  ]
+}

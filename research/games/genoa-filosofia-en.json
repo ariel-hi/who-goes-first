@@ -1,0 +1,42 @@
+{
+  "id": "genoa-filosofia-en",
+  "slug": "genoa-filosofia-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Genoa",
+  "aliases": [],
+  "editionLabel": "Filosofia English rules",
+  "firstPlayerRule": "The player who most recently visited a market starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player takes the Trade tower, two dice and first-player marker.",
+    "The same person remains first player throughout the game; other players take turns clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/14/c7/60-genoa-rulebook.pdf",
+      "title": "Genoa — English rulebook",
+      "publisher": "Filosofia",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Game set-up, final bullet; Game round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 states the market-visit criterion and explicitly keeps the same first player for the whole game; page 4 shows the Trade tower passing clockwise. Page 12 lists Filosofia contact details. Trade tower, goods and game board match inventory BGG 1345. SHA-256: 4f0d56a73072159314dd36aebd18070aab0f5d3fb4ed3193a1820839275a0944. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent market visits."
+  ]
+}
