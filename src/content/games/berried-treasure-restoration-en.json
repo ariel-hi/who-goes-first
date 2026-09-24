@@ -1,0 +1,44 @@
+{
+  "id": "berried-treasure-restoration-en",
+  "slug": "berried-treasure-restoration-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "df2962c03a7afb7dfcde993c4fd1f2df16701c0592103d539cde72d771e1de6d",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Berried Treasure",
+  "aliases": [],
+  "editionLabel": "Restoration Games English rulebook, first edition",
+  "firstPlayerRule": "If a player is named Suzanne Sheldon, that player goes first. Otherwise, whoever most recently ate pie starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The same opening rule applies to the two-player game; its listed changes do not change the starter.",
+    "For rounds two and three, the player with the lowest score starts. If tied, the tied player next in the previous round's turn order starts."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://restorationgames.com/wp-content/uploads/2021/11/BerriedTreasure-rulebook.pdf",
+      "title": "Berried Treasure rulebook",
+      "publisher": "Restoration Games",
+      "printedPages": [
+        "3",
+        "9",
+        "10–11"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5,
+        6
+      ],
+      "location": "Setup step 5; Starting a New Round; 2-Player Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the English PDF directly from the Restoration Games product page and visually checked PDF pages 2 and 5. Setup names Suzanne Sheldon, otherwise the most recent pie eater. The later-round section awards the next start to the lowest scorer and breaks a tie by previous turn order. PDF page 6 lists two-player changes without changing the first-player rule. The publisher identifies its Berried Treasure restoration, matching inventory BGG 342073 rather than Sid Sackson's earlier Buried Treasure. SHA-256: 2798fd04ca9fd4e4c1b433c426891342c009d54fe0a045317b1913267499dd67. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked identity, first-player selection, and relevant later-round or variant instructions against the cited pages.",
+  "uncertainty": [
+    "The rulebook gives no tie procedure for the initial most-recent-pie criterion."
+  ]
+}

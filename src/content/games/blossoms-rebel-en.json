@@ -1,0 +1,42 @@
+{
+  "id": "blossoms-rebel-en",
+  "slug": "blossoms-rebel-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8140378dacf4487cc394dfc899e7148e597f10aba8988db782bd9244a55d2142",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Blossoms",
+  "aliases": [],
+  "editionLabel": "Rebel English rulebook, 2018",
+  "firstPlayerRule": "The player who has watered flowers most recently starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the optional three-game series, the player with fewer total points from the previous game or games starts the second and third games.",
+    "The three-player variant keeps the standard starting rule and proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://repository.rebel.pl/files/instrukcje/Blossoms_rules_ENG-compressed.pdf",
+      "title": "Blossoms English rules",
+      "publisher": "Rebel",
+      "printedPages": [
+        "2",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6
+      ],
+      "location": "Game setup; Variants: Longer game and Three-player variant",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The English rulebook is linked directly by Rebel's Blossoms product page. Visually checked pages 2 and 6 for the ordinary starter, longer series and three-player variant. The rulebook and publisher product identify the 2018 flower game, matching inventory BGG 245710. SHA-256: df308230c664e03d5664a8a63991a3bbfc1d97fc791ca41e20eeca66c9552ab0. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked identity, first-player selection, and relevant later-round or variant instructions against the cited pages.",
+  "uncertainty": [
+    "The rules give no tie procedure for the ordinary or series starting criteria."
+  ]
+}

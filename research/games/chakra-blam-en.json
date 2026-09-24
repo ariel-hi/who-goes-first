@@ -1,0 +1,29 @@
+{
+  "id": "chakra-blam-en",
+  "slug": "chakra-blam-en",
+  "gameName": "Chakra",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Blam! English rulebook",
+  "firstPlayerRule": "Give the first-player token to the player who looks the most nervous.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["The first-player token is also used to finish the current round so everyone receives the same number of turns."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://cdn.1j1ju.com/medias/a5/c8/2b-chakra-rulebook.pdf",
+    "title": "Chakra English rulebook",
+    "publisher": "Blam!",
+    "printedPages": ["2", "5"],
+    "pdfPagesOneBased": [1, 2],
+    "location": "Setup and End of the Game; the PDF places multiple printed pages on each sheet",
+    "checkedAt": "2026-09-24"
+  }],
+  "internalEvidence": "Visually checked the publisher-authored English rules mirrored by 1jour-1jeu. Printed page 2 assigns the token to the most nervous-looking player; the later end-of-game section uses the token to finish equal turns. The booklet credits Luka Krleža and Claire Conan and identifies Blam!, matching inventory BGG 267378. SHA-256: 4df203130f0be35aac460daf5fd3384359194bde8ce79c69cc00125da3c659d0. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The most-nervous criterion is subjective and the source gives no tie procedure."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
