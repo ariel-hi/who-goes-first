@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 762 game rules approved for the catalog; 339 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 770 game rules approved for the catalog; 346 eligible for the random mix. Public house prompts: 60.**
+
+Consumption: Food and Choices, The Great Fire of London 1666, The Manhattan Project: Energy Empire, Morocco, Millennium Blades, Nothing Personal, Offshore, and Queen's Necklace add eight checked English editions. Seven join the portable mix; Queen's Necklace calls for a random choice and uses jewelry only as an example. Great Fire is sourced directly from Medusa Games, whose file matches the archived copy byte for byte. See `research/coverage/consumption-greatfire-energy-morocco-millennium-nothing-offshore-queens-progress.md`.
 
 Container: 10th Anniversary Jumbo Edition!, The King's Guild, Lisboa, SteamRollers, Super Motherload, That's Pretty Clever, and VivaJava Dice add seven more checked English editions. The first five join the portable mix; the last two use a random choice or game-specific dice. See `research/coverage/container-kings-lisboa-steam-super-clever-vivajava-progress.md`.
 

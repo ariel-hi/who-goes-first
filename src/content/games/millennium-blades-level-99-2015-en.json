@@ -1,0 +1,39 @@
+{
+  "id": "millennium-blades-level-99-2015-en",
+  "slug": "millennium-blades-level-99-2015-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3982149f3db0a6b11e07756a0ace4f7d35700838556c2c64a8c3a971110ebd21",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Millennium Blades",
+  "aliases": [],
+  "editionLabel": "Level 99 Games English edition, 2015",
+  "firstPlayerRule": "Tournament turns start with the player who placed highest in the previous tournament. In the first game round or a tie, the player who most recently opened a real booster pack starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Tournament turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Millennium%20Blades.pdf",
+      "title": "Millennium Blades — English rulebook",
+      "publisher": "Level 99 Games",
+      "printedPages": [
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        11
+      ],
+      "location": "Tournament Phase — Tournament Turns, step 4",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The ©2015 Level 99 Games English rules state both the previous-tournament and real booster-pack criteria in tournament step 4. The title and credits match inventory BGG 151347. SHA-256: 5f20af1a0c811f87b2abf26b40f795d07eb178cb187769509884ed793bc5771d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook does not give a further tie procedure if booster-pack opening is tied."
+  ]
+}

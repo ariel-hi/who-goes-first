@@ -1,0 +1,37 @@
+{
+  "id": "consumption-food-and-choices-kolossal-en",
+  "slug": "consumption-food-and-choices-kolossal-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Consumption: Food and Choices",
+  "aliases": [],
+  "editionLabel": "Kolossal Games English edition",
+  "firstPlayerRule": "The player whose last meal was the healthiest or least healthy, as determined by all players, starts and takes the first-player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Consumption%20-%20Food%20and%20Choices.pdf",
+      "title": "Consumption: Food and Choices — English rulebook",
+      "publisher": "Kolossal Games",
+      "printedPages": [
+        "6–7"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setup, step 11",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The illustrated Kolossal booklet assigns the first-player marker by the group-judged last meal in setup. The booklet directs readers to Kolossal for variant rules, and its game identity matches inventory BGG 198517. SHA-256: 8c10db36c01967ec8b9fb7056b2d69631dbb6c4970e904a7f3b015a838de8d26. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The group decides whether the healthiest or least healthy last meal qualifies; no tie procedure is supplied."
+  ]
+}

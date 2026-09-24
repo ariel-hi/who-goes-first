@@ -1,0 +1,39 @@
+{
+  "id": "morocco-eagle-gryphon-2016-en",
+  "slug": "morocco-eagle-gryphon-2016-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Morocco",
+  "aliases": [],
+  "editionLabel": "Eagle-Gryphon Games English edition, 2016",
+  "firstPlayerRule": "The player who most recently traveled to Morocco starts and takes the start-player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Assign Workers phase proceeds clockwise from the first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Morocco.pdf",
+      "title": "Morocco — English rulebook",
+      "publisher": "Eagle-Gryphon Games",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup, step 11",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The English Morocco rulebook gives the most recent Morocco traveler the start-player marker in step 11. Its Ben Pinchback and Matt Riddle credits match the Eagle-Gryphon game in inventory BGG 183150. SHA-256: 8a7d638c34b0a49d6ab773e4d18817ee818567403fc6904a6e95f2a34506c20b. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie or no-qualifier fallback is given."
+  ]
+}

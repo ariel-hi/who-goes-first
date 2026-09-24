@@ -16,7 +16,9 @@
 
 Use environment variables in the shell/host. No secrets are needed. There is no production winner override, seed, or private roster URL parameter.
 
-## Cloudflare Pages deployment (owner-authorized only)
+## Cloudflare Pages deployment
+
+The current public project is `who-goes-first` in the owner's Cloudflare account, using `main` as the production branch. Its canonical address is <https://who-goes-first.pages.dev/>. The first full-site release was `0264e4e` on 2026-09-24; the deployment completed successfully and the live pages were checked. The production environment has `SITE_URL=https://who-goes-first.pages.dev`, `DEPLOY_CONTEXT=production`, `CONTACT_EMAIL=edamame.makers@gmail.com`, `PRIVACY_HOST_NAME=Cloudflare Pages`, a host request-processing disclosure, and `ASTRO_TELEMETRY_DISABLED=1`. Preview access is restricted.
 
 1. Create/connect the owner's chosen repository and Pages project. Select a production branch. Use Node 22.23.2 (or compatible Node 22 maintenance), build command `npm ci && npm run build`, output directory `dist`.
 2. Set production `SITE_URL` to the canonical HTTPS origin, `DEPLOY_CONTEXT=production`, `CONTACT_EMAIL`, `PRIVACY_HOST_NAME`, `PRIVACY_LOGGING_POLICY`, and `ASTRO_TELEMETRY_DISABLED=1`. The production build fails when any contact or hosting disclosure is missing. Keep `DEPLOY_CONTEXT=preview` for preview builds even if SITE_URL points to the canonical domain. Configure Cloudflare Access/restricted previews before sharing drafts of the site. Static build previews contain no editorial research.
@@ -25,7 +27,7 @@ Use environment variables in the shell/host. No secrets are needed. There is no 
 5. Smoke-test `/`, `/methods/balloon/`, `/games/`, a real approved rule if present, `/robots.txt`, `/sitemap.xml`, and an unknown path. Root `404.html` provides the Pages 404 response; there is no SPA catch-all redirect. Inspect network requests while entering fictional private names.
 6. Verify canonical URLs, production home `index, follow`, no preview robots header on production, and noindex for empty catalog pages. Submit the sitemap only after this passes.
 
-This document is configuration guidance, not evidence that a Cloudflare project or deployment exists. Recheck Cloudflare's current UI and terms when authorizing launch.
+For a future custom domain, update `SITE_URL`, attach the domain in Cloudflare Pages, and check the generated canonical URLs, sitemap and redirects before declaring the move complete.
 
 Primary references checked for this build: [Astro on Pages](https://developers.cloudflare.com/pages/framework-guides/deploy-an-astro-site/), [custom headers and their line limits](https://developers.cloudflare.com/pages/configuration/headers/), [production rollback](https://developers.cloudflare.com/pages/configuration/rollbacks/). The build rejects a CSP line over the documented 2,000-character limit. If a larger future catalog reaches it, use route-specific policies before release.
 
@@ -46,6 +48,6 @@ Primary references checked for this build: [Astro on Pages](https://developers.c
 
 The `/_astro/` assets have content hashes and a one-year immutable cache policy. HTML is not given an immutable policy. The local test server applies the generated route headers and gzip compression; public-host compression and actual cache behavior still need a launch smoke test. After UI or bundle changes, run the release matrix and then `npm run audit:lighthouse` for repeatable local mobile/desktop reports. Real Core Web Vitals require an authorized public release and field data.
 
-`.github/workflows/ci.yml` checks proposed changes; `.github/dependabot.yml` groups minor/patch dependency updates and leaves major upgrades for explicit review. These files have not activated a hosted job because this workspace has not been pushed. Optional weekly source checks/daily availability checks can be scheduled by the owner later; no scheduler is configured by this build.
+`.github/workflows/ci.yml` checks proposed changes; `.github/dependabot.yml` groups minor/patch dependency updates and leaves major upgrades for explicit review. GitHub Actions checks have run on the public repository. Optional weekly source checks/daily availability checks can be scheduled by the owner later; no scheduler is configured by this build.
 
 Review dependencies/source issues weekly and costs/rollback monthly. During a maintenance freeze, stop new content and integrations and retain the static picker and essential checks.

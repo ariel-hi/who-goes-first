@@ -1,14 +1,20 @@
-# Owner actions before public launch
+# Public launch record
 
-- [ ] Review and approve the visual treatment in the running site and captured screenshots. The owner chose to decide later on 2026-09-23; local screenshots and automated audits do not constitute approval.
-- [ ] Launch with the approved partial catalog, as the owner requested. Verify that the exact release contains only reviewed rules and that public copy does not claim a complete compendium. Continue the remaining factual game-rule review under the owner's standing authorization using `CONTENT_REVIEW.md`; the owner does not need to read each rule. Local draft navigation and the discovery inventory remain excluded from deployed builds. See `/dev/coverage/` and `research/coverage/README.md` for the research backlog.
-- [x] Review and approve the six original prompt candidates. Their exact revisions are published among the 60 questions in `src/content/prompts/original-questions.json` under the owner's standing editorial authorization; the earlier drafts remain in the local research archive.
-- [ ] Choose the canonical domain, confirm naming rights and budget, and authorize a Cloudflare Pages project/destination. No purchase or account change has been made.
-- [ ] Set a maintained `CONTACT_EMAIL` and the actual `PRIVACY_HOST_NAME` / `PRIVACY_LOGGING_POLICY`. Inspect the rendered Privacy page for accurate hosting and retention details; review the current local-storage behavior. The production build rejects missing values. Keep tracking and ads disabled unless separately authorized.
-- [ ] Check a physical iOS and Android device, the native share sheet, and a screen reader. Automated Chromium/Firefox/WebKit desktop engines and mobile viewport emulation are not physical-device or assistive-technology certification.
-- [ ] Configure preview access restrictions in the host, and production-only `DEPLOY_CONTEXT=production` / `SITE_URL`. Redirect alternate host/protocol forms to the chosen canonical domain.
-- [ ] Run the documented checks on the exact approved release; deploy only `dist/` after authorization.
-- [ ] Smoke-test the public URL, status codes, CSP, rule sources, canonical/index settings, sitemap, and names staying on-device. Demonstrate rollback to a previous successful deployment.
-- [ ] Optionally add Search Console and submit the sitemap after launch. No analytics, ads, outreach, payments, or hosted schedules have been activated.
+The owner authorized an initial launch with the approved partial catalog and source research continuing. The site is public at <https://who-goes-first.pages.dev/>. Contact: `edamame.makers@gmail.com`. The custom domain will follow after its name and purchase cost are agreed.
 
-The launch actions above do not block the local implementation. Technical verification evidence is in `VERIFICATION.md`.
+- [x] The release commit `0264e4e` passed the complete GitHub workflow, the production build, and the release matrix.
+- [x] Cloudflare Pages successfully deployed that exact commit from `main` on 2026-09-24. Candidate previews require Cloudflare Access.
+- [x] The initial live directory listed all 1,320 collected game identities and accurately reported 739 with sourced starting instructions. The first public release had 762 reviewed rule records and 339 portable random criteria.
+- [x] The live site serves the picker, searchable directory, sourced edition pages, contact links, Privacy disclosure, canonical URLs, sitemap, robots instructions, and a real 404. An uncovered game page is marked noindex.
+- [x] The live picker hydrated in Chrome. Directory search found Lisboa and Mercado de Lisboa, and Lisboa linked through to its sourced instruction.
+- [x] The live response includes CSP, no-referrer, and MIME protection headers. Preview builds stay noindex. The release tests also check that entered names remain in the browser.
+
+## Continuing work
+
+- [ ] Finish source research and editorial approval for the remaining collected game identities. The owner does not need to review individual rules.
+- [ ] Choose and register a custom domain with an agreed spending limit; connect it to Pages and update canonical URLs and redirects.
+- [ ] Check physical iOS and Android devices, the native share sheet, and a screen reader. Desktop engines and viewport emulation do not certify these environments.
+- [ ] Optionally add Search Console and submit the sitemap. No analytics, ads, or payments have been activated.
+- [ ] Exercise a production rollback when there is a safe maintenance window. The previous holding-page deployment remains available in Cloudflare Pages.
+
+See `VERIFICATION.md` and `RUNBOOK.md` for release evidence and recovery steps.
