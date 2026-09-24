@@ -1,0 +1,37 @@
+{
+  "id": "mmm-pegasus-2015-en",
+  "slug": "mmm-pegasus-2015-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Mmm!",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English rules, 2015",
+  "firstPlayerRule": "The bravest player takes the three dice and begins the cooperative game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players then take turns in sequence, trying to gather food before the cat reaches the pantry."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/39/5b/3f-mmm-rulebook.pdf",
+      "title": "Mmm! — English rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "I Need Your Help!, final setup sentence",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1 gives the bravest-player dice handoff immediately before the game begins. The same sheet credits Pegasus Spiele ©2015; mouse chips, wooden cat, three dice and pantry board match inventory BGG 172507. SHA-256: 4a9cf98c64afc5daec83cdcbdf38c5d86560933017dbddf405c0695f9275e613. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not define bravery or a tie procedure."
+  ]
+}

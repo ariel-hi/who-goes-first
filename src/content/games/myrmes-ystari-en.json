@@ -1,0 +1,41 @@
+{
+  "id": "myrmes-ystari-en",
+  "slug": "myrmes-ystari-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "08cc2dfe941a9b1070514802e75c62a7226a1cea2069b3e68d017b7faf507d4d",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Myrmes",
+  "aliases": [],
+  "editionLabel": "Ystari Games English rules",
+  "firstPlayerRule": "The shortest player starts and takes the First Player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The First Player token passes to the player on the current starter’s left at the end of each season."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/b1/74/66-myrmes-rulebook.pdf",
+      "title": "Myrmes — English rulebook",
+      "publisher": "Ystari Games",
+      "printedPages": [
+        "3",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6
+      ],
+      "location": "Game setup, final bullet; End of season",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 2/printed page 3 gives the shortest-player criterion and token; PDF page 6 passes it left at season end. The booklet credits Ystari Games; ant boards, pheromone tiles and Season dice match inventory BGG 126792. SHA-256: ada009dd1c2c4a4f6bf18e41855d69ed7f6596e5632acb1c58ebe1a764567a99. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "No tie procedure is stated for equally short players."
+  ]
+}

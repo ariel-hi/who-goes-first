@@ -1,0 +1,39 @@
+{
+  "id": "loot-n-run-iello-en",
+  "slug": "loot-n-run-iello-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Loot N Run",
+  "aliases": [],
+  "editionLabel": "IELLO English rules",
+  "firstPlayerRule": "The player who most recently saw a B-movie mummy starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players then take turns clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/d4/6e/c5-loot-n-run-rulebook.pdf",
+      "title": "Loot N Run — English rules",
+      "publisher": "IELLO",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup, final sentence",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF page 1, printed rules panel 2, gives the B-movie-mummy criterion and clockwise play. The sheet bears IELLO branding; room cards, guardian effects and scoring tokens match inventory BGG 185374. SHA-256: 302d9be506629dc823f250c7eb2c6b9cf6860e36c81ea6e2b9f88380146db756. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for players who saw the same mummy film."
+  ]
+}

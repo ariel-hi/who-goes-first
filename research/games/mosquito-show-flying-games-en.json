@@ -1,0 +1,39 @@
+{
+  "id": "mosquito-show-flying-games-en",
+  "slug": "mosquito-show-flying-games-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Mosquito Show",
+  "aliases": [],
+  "editionLabel": "The Flying Games English rules",
+  "firstPlayerRule": "Choose either player to start by any method you like; the rules suggest the player most recently bitten by a mosquito as an example.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starter places one animal, then the second player places one; they repeat that order for their remaining animals before movement turns begin."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/c4/78/71-mosquito-show-rulebook.pdf",
+      "title": "Mosquito Show — English rulebook",
+      "publisher": "The Flying Games",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "How to Play?, opening paragraph; Placement phase",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 4 gives the open choice, mosquito-bite example and alternating animal placement. Page 8 names The Flying Games; Chameleon, Toucan and Mosquito pieces match inventory BGG 292917. SHA-256: 0a6f86f1bcb3180c866aa6bab028ec05b15ca30e1321225c9c28d6ac8880258a. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The mosquito-bite example is optional; no tie procedure is specified."
+  ]
+}

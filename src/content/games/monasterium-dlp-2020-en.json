@@ -1,0 +1,41 @@
+{
+  "id": "monasterium-dlp-2020-en",
+  "slug": "monasterium-dlp-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "bfbf86179264f8f8e481b7bf6f2ca9eefeaaf114821d1bc840232b6a4a658b10",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Monasterium",
+  "aliases": [],
+  "editionLabel": "dlp games English rules, 2020",
+  "firstPlayerRule": "The player who most recently visited a monastery starts; if no one has or no one remembers, the youngest player starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starter takes the Chalice marker. At the end of a round, they pass it to their left neighbor for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/00/d4/06-monasterium-rulebook.pdf",
+      "title": "Monasterium — English rulebook",
+      "publisher": "dlp games",
+      "printedPages": [
+        "3",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        11
+      ],
+      "location": "Set-up, step 7; End of a round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered PDF/printed page 3 gives the monastery-visit criterion and youngest-player fallback. Page 11 passes the Chalice marker left at the end of a round. Page 12 credits dlp games ©2020; novices, Church Window tiles, dice and monastery board match inventory BGG 317231. SHA-256: 1c9c227a9494ac951308bee1d0a6245a34b7a22af8a55a0098850a82ab3ae36d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
+  "uncertainty": [
+    "No tie procedure is stated for a shared last monastery visit or equal youngest ages."
+  ]
+}
