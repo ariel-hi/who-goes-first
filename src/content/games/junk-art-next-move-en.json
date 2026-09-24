@@ -1,0 +1,41 @@
+{
+  "id": "junk-art-next-move-en",
+  "slug": "junk-art-next-move-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "733ea8d3f20496aded19a41dbc6f82910a64528e771ee0c16c8f5889a14e411b",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Junk Art",
+  "aliases": [],
+  "editionLabel": "Next Move Games English World Tour rules",
+  "firstPlayerRule": "For the first city, the last person who visited an art exhibition is the start player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give that player the Start player card unless the city uses simultaneous play.",
+    "For later cities, the player with the fewest fans starts; if tied, the start player moves to the next player clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-JunkArt-rules_compressed.pdf",
+      "title": "Junk Art — English rules",
+      "publisher": "Next Move Games",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Playing Junk Art and the Universal Rules; Setup — The First City, step 5",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Next Move/Asmodee-hosted English PDF was inspected. PDF page 2 was rendered and read. It gives a criterion for the first city, then a different fan-count procedure for later cities. The World Tour title and components match inventory BGG 193042. SHA-256: d56b5bae1865800267330caa31f258e68c1f1c190927a705ed89a825cd84ee20. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
+  "uncertainty": [
+    "Some cities use simultaneous play; their start player does not take a first individual turn.",
+    "No tie procedure is stated for people who last visited an exhibition together at the first city."
+  ]
+}
