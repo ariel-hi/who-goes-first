@@ -1,0 +1,41 @@
+{
+  "id": "archaeology-new-expedition-zman-en",
+  "slug": "archaeology-new-expedition-zman-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8ccfa4d9b1db909578a0afa50617d327006a7041fe31af6d990a585d6d0d58cf",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Archaeology: The New Expedition",
+  "aliases": [],
+  "editionLabel": "Z-Man Games English rules, 2016 edition",
+  "firstPlayerRule": "The first player is the person who last put their feet in the sand.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "With the optional Beginner's Luck variant, the player whose four starting treasure cards have the lowest total trading value takes the first turn. If tied, the tied player who last put their feet in the sand starts."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.spielezar.ch/modules/genzo_zar/views/pdf/spielregeln-archaeology-the-new-expedition-en.pdf",
+      "title": "Archaeology: The New Expedition English rules",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "5",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        12
+      ],
+      "location": "Playing the Game; Variants: Beginner's Luck",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked pages 5 and 12 of the Z-Man Games English rulebook mirrored by Spielezar. Page 5 gives the ordinary first-player criterion; page 12 changes it for the optional Beginner's Luck variant and supplies its tie procedure. Credits identify Phil Walker-Harding and Z-Man Games ©2016, matching inventory BGG 191300 rather than the earlier Archaeology: The Card Game. SHA-256: 79108d4ad8c3d58aac9a6c03cb1a711eae6d9df26d97e8c47c9054e1ba425658. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the identity, first-player selection, and cited setup and turn pages.",
+  "uncertainty": [
+    "No tie procedure is stated for the ordinary sand criterion."
+  ]
+}

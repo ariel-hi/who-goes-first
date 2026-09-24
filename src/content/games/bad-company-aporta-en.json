@@ -1,0 +1,41 @@
+{
+  "id": "bad-company-aporta-en",
+  "slug": "bad-company-aporta-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9c9d4f4d6c5a471211e4dd6b2b9f55ebd047cffc58ef003279705b8d51cdad63",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Bad Company",
+  "aliases": [],
+  "editionLabel": "Aporta Games English rulebook",
+  "firstPlayerRule": "The last player who vandalized something takes all five dice and becomes the first boss.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The boss leads the first turn. After each turn, the boss passes the dice to the player on their left, who becomes the next boss."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/b3/15/15-bad-company-rulebook.pdf",
+      "title": "Bad Company English rulebook",
+      "publisher": "Aporta Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "General Setup and Player Setup; Turn Structure",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked page 2 of the publisher-authored English rulebook mirrored by 1jour-1jeu; page 3 gives the leftward boss rotation. The booklet credits Aporta Games and depicts the gang board and police chase, matching inventory BGG 340677. SHA-256: c974b03e4c1b25830b9f134b883b730187a4839597da21d4aacf0561aa07c556. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the identity, first-player selection, and cited setup and turn pages.",
+  "uncertainty": [
+    "No tie procedure is stated for the initial vandalism criterion."
+  ]
+}

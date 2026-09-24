@@ -1,0 +1,44 @@
+{
+  "id": "anno-1800-thames-kosmos-en",
+  "slug": "anno-1800-thames-kosmos-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "3ea72d47cf4d3966f4a15b5c0af31a1747f0ca4c7510edbe9f8fd2dae442721c",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Anno 1800: The Board Game",
+  "aliases": [
+    "Anno 1800"
+  ],
+  "editionLabel": "Thames & Kosmos English rulebook",
+  "firstPlayerRule": "Whoever was abroad most recently takes the starting-player token and starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The second player receives 1 gold, the third 2 gold, and the fourth 3 gold.",
+    "Turns continue clockwise from the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/680428_Anno1800_Manual.pdf",
+      "title": "Anno 1800 English manual",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup steps 8–9; Overview of the Game",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The publisher's manual is linked from Thames & Kosmos' Product Instruction Manuals page, entry 680428. The link redirects to a publisher-shared Google Drive file. Visually checked English pages 3 and 4, including the most-recently-abroad criterion, starting-player token, gold by turn order and clockwise play. Cover identifies Anno 1800 by Martin Wallace, matching inventory BGG 311193. SHA-256: fd69daf9e3c870bfdf436ab76d82abc3fd6548a0ac85cf9e5ad2413858eddf23. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the identity, first-player selection, and cited setup and turn pages.",
+  "uncertainty": [
+    "The rulebook gives no tie procedure if multiple players were abroad together."
+  ]
+}
