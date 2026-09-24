@@ -1,0 +1,42 @@
+{
+  "id": "asara-ravensburger-2010-en",
+  "slug": "asara-ravensburger-2010-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Asara",
+  "aliases": [],
+  "editionLabel": "Ravensburger English rules, 2010",
+  "firstPlayerRule": "The person who most recently climbed a tower starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player receives the Caliph’s patronage tile and starts with 20 Asari. Each successive player clockwise begins with one more Asari than the previous player.",
+    "The starting player takes the first turn; turns then proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://lelekan.com.ua/files/rules/2760/pravila-nastilnoyi-gri-asara-asara-anglijskoyu-movoyu.0.pdf",
+      "title": "Asara — English rulebook",
+      "publisher": "Ravensburger Spieleverlag",
+      "printedPages": [
+        "1",
+        "set-up sheet"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        10
+      ],
+      "location": "How to play; Game contents and set-up instructions, step 6",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the Ravensburger ©2010 English booklet and its attached set-up sheet. The set-up sheet specifies the most recent tower climb, patronage tile and starting money; printed page 1 establishes the first turn and clockwise order. Tower sections, buyers and Caliph’s patronage match inventory BGG 72991. SHA-256: 39f5372d13332ae6e056200a3379019b82b4b1c5ccb30222056f34dbd664ff98. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not specify what counts as climbing a tower or how to break a tie."
+  ]
+}

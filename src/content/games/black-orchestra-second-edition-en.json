@@ -1,0 +1,44 @@
+{
+  "id": "black-orchestra-second-edition-en",
+  "slug": "black-orchestra-second-edition-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "95374ce0d049a600f2f9824540284b4c638c581d7f14cc79f035bba7dd578f7f",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Black Orchestra",
+  "aliases": [],
+  "editionLabel": "Black Orchestra English second-edition rules",
+  "firstPlayerRule": "The player wearing the most black starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "That player is the first active player. Subsequent turns proceed clockwise.",
+    "All conspirator pawns begin on the Berlin train station space."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gusandco.net/wp-content/uploads/2018/07/BlackO2E-Rulebook.pdf",
+      "title": "Black Orchestra — English rulebook",
+      "publisher": "Game Salute",
+      "printedPages": [
+        "3",
+        "6",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        6,
+        12
+      ],
+      "location": "Setup, step 10; Play Overview; credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered all twelve pages of the publisher-produced second-edition booklet. Page 3 places all pawns at the Berlin train station and assigns the first turn to the player wearing the most black; page 6 repeats the criterion and clockwise order. The game title, components and credits identify Black Orchestra, matching inventory BGG 156858. SHA-256: 3c9eeabf8478553638218bee85f1c7244ea418cfe9d94f353dbdd691c120f485. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rulebook.",
+  "uncertainty": [
+    "The rules do not define how to count black clothing or break a tie."
+  ]
+}

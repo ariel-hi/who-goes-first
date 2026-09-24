@@ -1,0 +1,44 @@
+{
+  "id": "australia-ravensburger-en",
+  "slug": "australia-ravensburger-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Australia",
+  "aliases": [],
+  "editionLabel": "Ravensburger English rules, game no. 26358-5",
+  "firstPlayerRule": "The player who thinks they know the most about Australia goes first, or the group may choose a starter by any method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The youngest player takes the first setup card, with setup picks continuing around the table; this does not determine who takes the first game turn.",
+    "The simple and full games use the same opening rule. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://fgbradleys.com/wp-content/uploads/rules/Australia%20-%20rules.pdf",
+      "title": "Australia — English rulebook",
+      "publisher": "Ravensburger Spieleverlag",
+      "printedPages": [
+        "19",
+        "20",
+        "23"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        7
+      ],
+      "location": "Preparation; Simple Game; Full game additional rules",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Read the eight-page English Ravensburger booklet through the indexed PDF. Its cover identifies Ravensburger game no. 26358-5. PDF page 3 gives the youngest player first setup-card selection; page 4 gives the Australia-knowledge criterion, open choice and clockwise turns. Page 7 states that the full game uses the simple-game rules except for listed additions. Rangers, aeroplanes and conservation/industrialization tiles match inventory BGG 15033. The source host denied a direct file download, so no file hash is asserted. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "Knowledge of Australia is self-assessed; the rules prescribe no comparison or tie procedure. The alternative is intentionally open-ended."
+  ]
+}
