@@ -1,6 +1,6 @@
 # Content review queue
 
-**Owner-authorized assistant review: 523 game rules approved for the catalog; 186 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 526 game rules approved for the catalog; 188 eligible for the random mix. Public house prompts: 60. No deployment performed.**
 
 Four Gardens, Ginkgopolis, Flip City, and Gingerbread House add four more checked English editions. The Ginkgopolis record preserves the separate Hal variant, and Gingerbread House distinguishes its optional starting-witch example from its reverse-order character setup. Flip City's table-flipping criterion is retained as printed.
 

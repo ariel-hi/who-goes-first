@@ -1,0 +1,31 @@
+{
+  "id": "skulls-of-sedlec-button-shy-pnp-en",
+  "slug": "skulls-of-sedlec-button-shy-pnp-en",
+  "gameName": "Skulls of Sedlec",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Button Shy English print-and-play rules",
+  "firstPlayerRule": "The player who most recently visited a cemetery or graveyard goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["After the first player, turns proceed clockwise."],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://tesera.ru/images/items/2380547/SOS-PNP.pdf",
+      "title": "Skulls of Sedlec print-and-play rules",
+      "publisher": "Button Shy Games",
+      "printedPages": ["Rules sheet"],
+      "pdfPagesOneBased": [1],
+      "location": "Setup and Gameplay panels on the rules sheet",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked the publisher-authored print-and-play rules sheet mirrored by Tesera, rotated to read the setup panels. The sheet names the recent cemetery or graveyard visitor and clockwise turn order; its Button Shy and designer Dustin Dobson branding match inventory BGG 303553. SHA-256: 52930127ca2388d83efeb28e075958b5f49fe740d23b536942542805a819c8f4. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rules do not provide a tie procedure when multiple players visited together."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

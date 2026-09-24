@@ -1,0 +1,31 @@
+{
+  "id": "isle-of-trains-all-aboard-dranda-en",
+  "slug": "isle-of-trains-all-aboard-dranda-en",
+  "gameName": "Isle of Trains: All Aboard",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Dranda Games English rulebook",
+  "firstPlayerRule": "The rulebook does not specify how to choose the first player.",
+  "officialTieBreak": null,
+  "houseFallback": "Choose a first player at random. This is a house rule.",
+  "clarifications": ["After each turn, play passes to the player on the left."],
+  "interpretation": "The initial-player omission was determined by reviewing the complete rulebook; it is not a publisher instruction to choose randomly.",
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1VVNBGc5qr3ZOIXfJ33CsVFFl2_AhRwcY/view?usp=sharing",
+      "title": "Isle of Trains: All Aboard rulebook",
+      "publisher": "Dranda Games",
+      "printedPages": ["3", "4", "10"],
+      "pdfPagesOneBased": [3, 4, 10],
+      "location": "Complete rulebook reviewed; Setup, How to Play, and end-of-turn instruction",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded the official English PDF linked from Dranda Games' Isle of Trains: All Aboard product page and reviewed all 24 pages, with setup, play and turn continuation pages visually checked. The seven setup steps and the rest of the rulebook never identify an initial player or a selection method. Page 10 passes later turns to the player on the left. The file identifies the All Aboard edition, matching inventory BGG 355224 and distinct from the original Isle of Trains BGG 149451. SHA-256: 737cc9f16b9cfa658ee83f5f3b68aea2602e8c1a91e5cd92325bcffd164e7d14. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The official rulebook does not state an initial player; the suggested random selection is explicitly a house rule."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

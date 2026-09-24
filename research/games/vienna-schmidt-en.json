@@ -1,0 +1,35 @@
+{
+  "id": "vienna-schmidt-en",
+  "slug": "vienna-schmidt-en",
+  "gameName": "Vienna",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Schmidt Spiele English rules, Johannes Schmidauer-König edition",
+  "firstPlayerRule": "The last person to have visited Vienna takes the start card (clock) and begins the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players then choose their other start cards in counterclockwise order.",
+    "The start player rolls first; play proceeds clockwise.",
+    "In later rounds, whoever holds the start card begins."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ggnf.de/spielanleitungen/vienna/vienna.pdf",
+      "title": "Vienna English rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": ["17", "21"],
+      "pdfPagesOneBased": [17, 21],
+      "location": "Getting started and How to play; Next round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Visually checked English pages 17 and 21 of the publisher-authored rulebook mirrored by GGnF. Page 17 names the last Vienna visitor, awards the clock start card, specifies counterclockwise start-card choice and clockwise turns, and says the start player rolls first. Page 21 says the clock holder starts the next round. Cover and credits identify the Schmidt Spiele game by Johannes Schmidauer-König, matching inventory BGG 171492, distinct from Queen Games' later Stefan Feld City Collection game BGG 368974. SHA-256: 854f67c2bf3c7c2c5a638915cb6355529f96115fede449b82944081f4b2dd760. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": ["The rulebook gives no tie procedure for players who last visited Vienna together."],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
