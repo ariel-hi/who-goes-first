@@ -1,0 +1,44 @@
+{
+  "id": "monster-crunch-big-g-2018-en",
+  "slug": "monster-crunch-big-g-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6373ef440f8905b390b8402a516420e580acd6f5a85b8407a2b725553cefec31",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Monster Crunch! The Breakfast Battle Game",
+  "aliases": [],
+  "editionLabel": "Big G Creative English edition, 2018",
+  "firstPlayerRule": "The person who most recently ate a real bowl of cereal starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The last player remaining in a round starts the next round.",
+    "The player who ran out of cards in the previous hand starts the next hand."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Monster%20Crunch%21%20The%20Breakfast%20Battle%20Game.pdf",
+      "title": "Monster Crunch! The Breakfast Battle Game — English rulebook",
+      "publisher": "Big G Creative",
+      "printedPages": [
+        "2",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5,
+        6
+      ],
+      "location": "Set Up, step 5; new round; End of the Hand",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered publisher-authored page 2 from the archive and read pages 5–6. Setup names the recent real-cereal eater; later rounds start with the last remaining player and later hands with the player who emptied their cards. Credits identify Big G Creative and ©2018, matching inventory BGG 256541. SHA-256: 4c5b5069a2d7052d862a62b520b0ecc628881efa18b44b2f46cc179070777779. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent cereal eaters."
+  ]
+}

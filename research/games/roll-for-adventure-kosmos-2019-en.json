@@ -1,0 +1,39 @@
+{
+  "id": "roll-for-adventure-kosmos-2019-en",
+  "slug": "roll-for-adventure-kosmos-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Roll for Adventure",
+  "aliases": [],
+  "editionLabel": "Thames & Kosmos English edition, 2019",
+  "firstPlayerRule": "The player the group determines to be the most heroic starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This cooperative game gives the selected player the first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/692988_Roll_for_Adventure_Manual.pdf",
+      "title": "Roll for Adventure — English rulebook",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Game Setup — final paragraph",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Downloaded and rendered the publisher-hosted English manual page 2. The last setup paragraph selects the player determined to be most heroic. The four territory boards, hero dice and product code 692988 identify inventory BGG 255683. SHA-256: f12107adcf2c1ffa875b267e8fd3a8ed6d737f92885b1434b73545e4ea8f0cf8. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The manual does not define a heroism test or a tie procedure."
+  ]
+}

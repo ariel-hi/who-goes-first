@@ -1,0 +1,44 @@
+{
+  "id": "kenny-g-keepin-it-saxy-big-g-2019-en",
+  "slug": "kenny-g-keepin-it-saxy-big-g-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "32219ab3ee3dab8fd77cbf25e59c90169cf0561b8892c2fa7488def11f499f7f",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Kenny G: Keepin' It Saxy Game",
+  "aliases": [],
+  "editionLabel": "Big G Creative English edition, 2019",
+  "firstPlayerRule": "The person who most recently played a musical instrument starts with the saxophone First Player Marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Sax phase begins with the marker holder and proceeds clockwise.",
+    "At the end of each round, pass the marker to the next player on the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Kenny%20G%20-%20Keepin%27%20It%20Saxy%20Game.pdf",
+      "title": "Kenny G: Keepin' It Saxy Game — English rulebook",
+      "publisher": "Big G Creative",
+      "printedPages": [
+        "3",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        5
+      ],
+      "location": "Setup, step 7; Sax Phase; round end",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the publisher-authored English rulebook page 3 from the archive and read pages 4–5. Setup gives the musical-instrument criterion, the Sax phase starts with the marker holder, and page 5 passes the marker. The booklet credits Big G Creative and ©2019; its components match inventory BGG 283217. SHA-256: 6d042ab602c55fe84a233e467fc7aca242a8148627a13a9912aff90a81904fe3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "No tie procedure is given for equally recent instrument playing."
+  ]
+}

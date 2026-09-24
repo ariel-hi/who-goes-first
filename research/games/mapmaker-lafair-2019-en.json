@@ -1,0 +1,39 @@
+{
+  "id": "mapmaker-lafair-2019-en",
+  "slug": "mapmaker-lafair-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Mapmaker: The Gerrymandering Game",
+  "aliases": [],
+  "editionLabel": "Lafair Family Games English edition, 2019",
+  "firstPlayerRule": "The person who voted most recently takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player places one district border, the second places two, the next places three, and turns thereafter place four borders."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Mapmaker%20-%20The%20Gerrymandering%20Game.pdf",
+      "title": "Mapmaker: The Gerrymandering Game — English rulebook",
+      "publisher": "Lafair Family Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Gameplay — first paragraph",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered the publisher-authored English rulebook PDF page 3 from the archive. Its left printed page 3 gives the recent-voter criterion and the escalating initial placement counts. The booklet credits Lafair Family Games ©2018 and matches the 2019 inventory game BGG 252997. SHA-256: c3bb4954665c6c47cea0fabbaaf4ea5106c0141d1fc6ee10c7b8fd8514c4cb97. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated if players voted equally recently."
+  ]
+}

@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 741 game rules approved for the catalog; 321 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+**Owner-authorized assistant review: 747 game rules approved for the catalog; 327 eligible for the random mix. Public house prompts: 60. No deployment performed.**
+
+Kenny G: Keepin' It Saxy Game, Mapmaker, Monster Crunch!, Roll for Adventure, Victorian Masterminds and Villages of Valeria add six checked English editions. Villages' main setup allows any starter and suggests a recent builder, while its quick reference says random; both are preserved. See `research/coverage/kenny-mapmaker-monster-roll-victorian-villages-progress.md`.
 
 Paperback, Petrichor, Herbaceous, Foothills, Rumble Nation and Megaland add six checked English editions. Herbaceous has a separate team-variant starter; Foothills prints its garden-digging criterion as an example; Rumble Nation's 2019 booklet is distinct from the later Deluxe printing. See `research/coverage/paperback-petrichor-herbaceous-foothills-rumble-megaland-progress.md`.
 

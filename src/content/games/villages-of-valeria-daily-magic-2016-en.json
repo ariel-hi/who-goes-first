@@ -1,0 +1,42 @@
+{
+  "id": "villages-of-valeria-daily-magic-2016-en",
+  "slug": "villages-of-valeria-daily-magic-2016-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "350baaff48f6b8f59755df87b213a2544a1684ed90cb2fef8a66c04ab8e4b444",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Villages of Valeria",
+  "aliases": [],
+  "editionLabel": "Daily Magic Games English edition, 2016",
+  "firstPlayerRule": "Choose the starting player however you wish. The main setup suggests the person who most recently built something; the quick reference says to choose at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give the chosen player the Active Player Token and Action Selection Card.",
+    "The main setup and quick reference use different examples, so neither is treated as the only permitted method."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Villages%20of%20Valeria.pdf",
+      "title": "Villages of Valeria — English rulebook",
+      "publisher": "Daily Magic Games",
+      "printedPages": [
+        "3",
+        "Quick Play Reference"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        9
+      ],
+      "location": "Setup, step 2; Quick Play Reference — Setup",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "Rendered both the main setup page and final quick-reference page in the publisher-authored English booklet preserved by the archive. The main setup allows any method and suggests the recent builder; the quick reference says random. It credits Daily Magic Games ©2016 and matches inventory BGG 180040. SHA-256: fbaf035371fd2fd4ab17a9cadc1a28a63703261e611b28f02512c815490dd623. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
+  "uncertainty": [
+    "The two printed setup summaries offer different suggestions; neither overrides the main setup’s any-method instruction."
+  ]
+}
