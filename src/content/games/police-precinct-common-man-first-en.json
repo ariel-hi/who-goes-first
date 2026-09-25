@@ -1,0 +1,42 @@
+{
+  "id": "police-precinct-common-man-first-en",
+  "slug": "police-precinct-common-man-first-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "54c7531dd2f00a760d04930ac8e524b055fcf40b7f195be55797fe2d247efd4f",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Police Precinct",
+  "aliases": [],
+  "editionLabel": "Common Man Games first-edition English rulebook",
+  "firstPlayerRule": "The player most recently in contact with law enforcement chooses a character first. Character choice continues clockwise; the last player to choose a character receives the First Player Shield and starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The law-enforcement criterion chooses the first character picker, not the game’s first turn.",
+    "The First Player Shield holder advances the Turn Track at the start of their turns, except on the first turn of the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Police%20Precinct.pdf",
+      "title": "Police Precinct — English rulebook",
+      "publisher": "Common Man Games",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Game Components and Detailed Set Up; First Player",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Common Man Games English rulebook assigns character choice to the most recent law-enforcement contact, then explicitly gives the First Player Shield to the last character chooser. The publisher describes the original first-edition rulebook as CMG-PP-R-1.0 and distinguishes its later revision; title and Ole Steiness credits match inventory BGG 118536. SHA-256: 4d9c9c6053867f46fd8569b9857e215154aeb9f6628d1a781c97ab019988141a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent law-enforcement contact."
+  ]
+}

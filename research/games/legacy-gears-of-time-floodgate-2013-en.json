@@ -1,0 +1,39 @@
+{
+  "id": "legacy-gears-of-time-floodgate-2013-en",
+  "slug": "legacy-gears-of-time-floodgate-2013-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Legacy: Gears of Time",
+  "aliases": [],
+  "editionLabel": "Floodgate Games English edition, 2013",
+  "firstPlayerRule": "Randomly choose a player to pick their position in the opening player order first. The rulebook suggests comparing watches and giving first choice to the player whose watch shows the earliest time. The chosen player may select any position, so this step does not itself determine who takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns in the order indicated on the Player Order track.",
+    "For later rounds, the player with the fewest Influence Cubes chooses an order position first; ties use lowest score, then the previous round’s order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Legacy%20-%20Gears%20of%20Time.pdf",
+      "title": "Legacy: Gears of Time — English rulebook",
+      "publisher": "Floodgate Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4,
+        6
+      ],
+      "location": "Player Setup; Prepare for the Next Round",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The ©2013 Floodgate Games English rulebook randomly awards first choice of player-order position, with earliest watch time only as a suggestion. It separately states turn order and later-round position choice. Its title and publisher credits match inventory BGG 119781. SHA-256: 37d40b282d41973417cbc879b8909a005a13bd684cdc574516af8950adc09dd8. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The source does not specify how remaining players choose opening order positions after the first choice."
+  ]
+}

@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 770 game rules approved for the catalog; 346 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 774 game rules approved for the catalog; 347 eligible for the random mix. Public house prompts: 60.**
+
+Dead Man's Cabal, Legacy: Gears of Time, Merchants of Muziris, and Police Precinct add four checked English editions. Merchants joins the portable mix. Dead Man's Cabal has an unspecified fallback that most groups will need; Legacy randomly chooses who selects an order position first, and Police Precinct's law-enforcement criterion chooses the first character picker while the last picker takes the first game turn. These three stay in the catalog only. See `research/coverage/deadman-legacy-merchants-police-progress.md`.
 
 Consumption: Food and Choices, The Great Fire of London 1666, The Manhattan Project: Energy Empire, Morocco, Millennium Blades, Nothing Personal, Offshore, and Queen's Necklace add eight checked English editions. Seven join the portable mix; Queen's Necklace calls for a random choice and uses jewelry only as an example. Great Fire is sourced directly from Medusa Games, whose file matches the archived copy byte for byte. See `research/coverage/consumption-greatfire-energy-morocco-millennium-nothing-offshore-queens-progress.md`.
 

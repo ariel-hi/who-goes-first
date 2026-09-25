@@ -1,0 +1,42 @@
+{
+  "id": "dead-mans-cabal-pandasaurus-2019-en",
+  "slug": "dead-mans-cabal-pandasaurus-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dead Man's Cabal",
+  "aliases": [],
+  "editionLabel": "Pandasaurus Games English edition, 2019",
+  "firstPlayerRule": "The last player to have raised the dead becomes the first Active Player and takes the Skull Draw Bag. If no one has performed necromantic magic recently, choose the first Active Player by another method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Active Player takes the first Private Action.",
+    "The bag passes left to the next Active Player after each round; public actions proceed clockwise from the Active Player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Dead%20Man's%20Cabal.pdf",
+      "title": "Dead Man's Cabal — English rulebook",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [
+        "4–6"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        6
+      ],
+      "location": "Setup, step 10; Gameplay steps 1–2",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The ©2019 Pandasaurus Games English rulebook names the last necromancer, gives a fallback, and describes the Active Player taking the first Private Action and passing the bag left. Its title and credits match inventory BGG 264321. SHA-256: accb21e54065cc885a697d96cb2e9bcb60095acd45b329ac716e64eb771794e7. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The fallback calls for a more mundane selection method but does not specify one."
+  ]
+}
