@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 774 game rules approved for the catalog; 347 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 778 game rules approved for the catalog; 351 eligible for the random mix. Public house prompts: 60.**
+
+Brew Crafters, the 2015 Fire & Axe: A Viking Saga, Plague Inc.: The Board Game, and Portal: The Uncooperative Cake Acquisition Game add four image-based English rulebooks checked on rendered pages. Their opening criteria join the portable mix. See `research/coverage/brew-fire-progress.md`.
 
 Dead Man's Cabal, Legacy: Gears of Time, Merchants of Muziris, and Police Precinct add four checked English editions. Merchants joins the portable mix. Dead Man's Cabal has an unspecified fallback that most groups will need; Legacy randomly chooses who selects an order position first, and Police Precinct's law-enforcement criterion chooses the first character picker while the last picker takes the first game turn. These three stay in the catalog only. See `research/coverage/deadman-legacy-merchants-police-progress.md`.
 

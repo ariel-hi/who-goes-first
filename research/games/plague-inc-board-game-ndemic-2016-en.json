@@ -1,0 +1,42 @@
+{
+  "id": "plague-inc-board-game-ndemic-2016-en",
+  "slug": "plague-inc-board-game-ndemic-2016-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Plague Inc.: The Board Game",
+  "aliases": [],
+  "editionLabel": "Ndemic Creations English edition, 2016",
+  "firstPlayerRule": "The person who washed their hands most recently starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play then proceeds clockwise.",
+    "Starting DNA Points depend on turn order: the first player starts at 0, the second at 1, the third at 2, and the fourth at 3."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Plague%20Inc%20-%20The%20Board%20Game.pdf",
+      "title": "Plague Inc.: The Board Game — English rulebook",
+      "publisher": "Ndemic Creations Ltd",
+      "printedPages": [
+        "2",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        8
+      ],
+      "location": "Turn Order and Starting DNA Points; credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The image-based ©2016 Ndemic Creations English rulebook was rendered and visually checked. Printed page 2 chooses the most recent hand-washer, gives clockwise play, and specifies position-based opening DNA. Page 8 credits Ndemic Creations. The title matches inventory BGG 195162. SHA-256: f734c21dccfae2aef18ab55b63e198db898a8c7122cc0d2e261f8baa55761a5c. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "No tie procedure is stated for equally recent hand washing."
+  ]
+}
