@@ -1,0 +1,45 @@
+{
+  "id": "tigris-euphrates-ffg-2014-en",
+  "slug": "tigris-euphrates-ffg-2014-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "61ede854d93d9e7a5ef6929098ab49d2f13ce660a9e56798822ab232c3626cbb",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Tigris & Euphrates",
+  "aliases": [
+    "Tigris and Euphrates",
+    "Euphrat & Tigris",
+    "T&E"
+  ],
+  "editionLabel": "Fantasy Flight Games English rulebook, 2014",
+  "firstPlayerRule": "Choose a starting player at random: place all players' unification tiles face down, mix them, and pick one. Play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Each player takes the unification tile bearing their own dynastic symbol during setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/bf/e1/bfe1ae7d-d41c-44d4-910b-86cd59324b38/kn25_rulebook_web.pdf",
+      "title": "Tigris & Euphrates — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        16
+      ],
+      "location": "Page 4, Setup step 1; page 16, credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rulebook from Fantasy Flight Games' CDN (https://images-cdn.fantasyflightgames.com/filer_public/bf/e1/bfe1ae7d-d41c-44d4-910b-86cd59324b38/kn25_rulebook_web.pdf), SHA-256 e6484d330ff7c7d020bf17d9da5f48257dece9886bdbfa4b2c1b9d0fec1da9d6, and extracted the text of all 16 pages. Page 4, Setup: choose a starting player at random by placing all of the players' unification tiles with the dynastic symbols facedown, mixing them, and picking one; play proceeds clockwise. Page 16 (rendered and read visually), Credits: game design Reiner Knizia, copyright 2014 Fantasy Flight Publishing and Dr. Reiner Knizia, Euro Classics line, matching BGG 42. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "BoardGameGeek lists this edition as 2015; the rulebook's copyright line reads 2014."
+  ]
+}
