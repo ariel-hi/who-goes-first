@@ -1,0 +1,44 @@
+{
+  "id": "clue-hasbro-2023-en",
+  "slug": "clue-hasbro-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "e4173c93bbf75a676ca9ee025c5f40b42b86baa6a6fbf7e62a993c8c875a17f2",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Clue",
+  "aliases": [
+    "Cluedo"
+  ],
+  "editionLabel": "Hasbro US rules (2–6 players), 2023",
+  "firstPlayerRule": "Roll one of the six-sided dice to determine who goes first. After each turn, the player to the left goes next.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This edition has a two-player (or team) variation that only changes setup and room cards; the starting instruction is unchanged."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/F6420_en-us_f6420-clue-board-game.pdf",
+      "title": "Clue Board Game (2–6 players) — English instructions",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Let's Play, first line; end of On Your Turn; Two-Player (or Team) Game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Hasbro US instructions for the 2023 Clue board game (2–6 players, Clue cards, victim Mr. Black) from the Hasbro instructions site page f6420-clue-board-game and extracted the text with pdftotext. PDF page 4 (printed page 5) begins \"Let's Play\" with the instruction to roll one of the six-sided dice to determine who goes first, and ends the turn sequence with the player to your left going next; printed page 6 describes the two-player variation. The sheet shows © 2023 Hasbro. SHA-256: c66199be2095ee44a7b1b3c43a7c0dd3dde893f8278cedb9fb822281ff7dba2a. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rules do not say whether the highest or lowest roll wins, or how to settle ties.",
+    "One die face shows a magnifying glass, which counts as 1 for movement; the rules do not say how to read it when rolling for first player.",
+    "Older Clue editions use a different rule (Miss Scarlet goes first); check which edition you own."
+  ]
+}

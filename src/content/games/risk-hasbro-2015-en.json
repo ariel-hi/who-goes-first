@@ -1,0 +1,48 @@
+{
+  "id": "risk-hasbro-2015-en",
+  "slug": "risk-hasbro-2015-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "ad0b8bd6eff217a9cf0b70e963a6a9982a529430d072c7fad656db5ab16c2fd1",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Risk",
+  "aliases": [
+    "Risk: The Game of Strategic Conquest"
+  ],
+  "editionLabel": "Hasbro English rules (2–5 players), 2015",
+  "firstPlayerRule": "In Secret Mission Risk, each player rolls one die and whoever rolls the highest number goes first. In Classic Risk, the highest roller places the first Infantry and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In Secret Mission setup, the youngest player starts the extra Infantry placement; the die roll then decides the first turn.",
+    "In Classic setup, territory claiming continues to the left of the highest roller. Capital Risk deploys troops as in Classic Risk.",
+    "At the end of your turn, pass the dice to your left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/B7404_en-in_hasbro-risk-game.pdf",
+      "title": "Risk Game — English game guide",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "5",
+        "12",
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        7
+      ],
+      "location": "Game 1 Secret Mission Setup steps 6 and 8; Game 2 Classic Risk Setup steps 2 and 5; Game 3 Risk for 2 Players",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English game guide for the Hasbro Risk game with Secret Mission, Classic, 2-player and Capital modes (product page hasbro-risk-game on the Hasbro instructions site, English/India locale) and extracted the text with pdftotext. PDF page 3 (printed page 5), Secret Mission setup step 8: each player rolls one die and the highest number goes first; step 6 has the youngest player start extra Infantry placement. PDF page 7 (printed page 12), Classic Risk setup step 2: the highest roller places the first Infantry, and step 5: whoever placed the first troop takes the first turn; printed page 13 says the 2-player game is otherwise the same as Classic Risk. Copyright © 2015 Hasbro. SHA-256: c3b689502aa50ae9ad8928f4a691ddb865a3aea8820dbb37777bc6d45f5da2c1. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No tie-break is given for equal highest rolls.",
+    "The 2-player game uses a dealt setup and does not restate how the first turn is chosen; it says the rest is the same as Classic Risk.",
+    "This guide was taken from Hasbro's English (India) product page; older US editions of Risk use different setup rules."
+  ]
+}

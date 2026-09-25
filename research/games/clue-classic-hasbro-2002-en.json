@@ -1,0 +1,43 @@
+{
+  "id": "clue-classic-hasbro-2002-en",
+  "slug": "clue-classic-hasbro-2002-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Clue",
+  "aliases": [
+    "Cluedo",
+    "Clue Classic Detective Game"
+  ],
+  "editionLabel": "Hasbro classic US rules (3–6 players), 2002",
+  "firstPlayerRule": "Miss Scarlet always goes first. Play then proceeds, in turn, to the first player's left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Unused suspect pawns still go on their Start spaces, because they remain suspects."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/00045_en-us_clue-game.pdf",
+      "title": "Clue — Classic Detective Game English/French instructions",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup, step 7 (English column)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Hasbro US instructions for the classic Clue game (3–6 players; Miss Scarlet, Colonel Mustard, Mrs. White, Mr. Green, Mrs. Peacock, Professor Plum; Case File envelope) from the Hasbro instructions site page clue-game and extracted the text with pdftotext. PDF page 2 is a bilingual spread; the English Setup step 7 in the right-hand column (printed page 3) reads that Miss Scarlet always goes first and play proceeds to the first player's left. Cover copyright © 1986, 1998, 2002 Hasbro. SHA-256: 509db5d047e69536ba1b3ba29fcb2683a049005434075871d40cb0b67105789d. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rule sheet does not say who starts if no one is playing Miss Scarlet.",
+    "The newer 2023 Clue edition uses a die roll instead; check which edition you own."
+  ]
+}

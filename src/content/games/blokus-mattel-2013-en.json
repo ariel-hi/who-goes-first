@@ -1,0 +1,40 @@
+{
+  "id": "blokus-mattel-2013-en",
+  "slug": "blokus-mattel-2013-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "c3ba4e95c8734776d6ddd5f2f6c9fcef93840b8cf057d209d4d06f878a86897d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Blokus",
+  "aliases": [
+    "Blokus Classic"
+  ],
+  "editionLabel": "Mattel English rules, 2013",
+  "firstPlayerRule": "Choose a player to go first. Play then proceeds clockwise around the board.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the two- and three-player variations, the playing order is blue, yellow, red, green."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/BJV44-Eng.pdf",
+      "title": "Blokus Game — English instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        4
+      ],
+      "location": "Setting Up; Game Variations (Two Players, Three Players)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English instruction sheet linked from Mattel's customer service product page for the Blokus Game (product BJV44; 2–4 players, 84 pieces in four colors, 21 per color) and extracted the text with pdftotext. PDF page 1, Setting Up: choose a player to go first; play proceeds clockwise. PDF page 4, Game Variations: for two and three players the playing order is blue, yellow, red, green. Copyright ©2013 Mattel; Blokus credited to Bernard Tavitian. SHA-256: d149cfb8582d8a894891403ef7d637a14835e7a61e208d6ffe0881c032da2a8f. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rules do not give a method for choosing the first player in the four-player game."
+  ]
+}
