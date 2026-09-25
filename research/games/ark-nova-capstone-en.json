@@ -1,0 +1,42 @@
+{
+  "id": "ark-nova-capstone-en",
+  "slug": "ark-nova-capstone-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Ark Nova",
+  "aliases": [
+    "Arche Nova"
+  ],
+  "editionLabel": "Capstone Games English rulebook, 2021",
+  "firstPlayerRule": "Randomly determine a start player. Turn order is clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Appeal counters start by turn order: the start player on space 0, the second player on 1, the third on 2 and the fourth on 3.",
+    "The solo game uses its own setup and turn tracking."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://capstone-games.com/cdn/shop/files/Ark-Nova-Rulebook.pdf?v=15269496103518830006",
+      "title": "Ark Nova — English rulebook",
+      "publisher": "Capstone Games / Feuerland Spiele",
+      "printedPages": [
+        "5",
+        "20"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        20
+      ],
+      "location": "Page 5, Setup step 7 and player setup C1; solo rules and copyright on page 20",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the rulebook linked from the publisher page https://capstone-games.com/products/ark-nova. SHA-256: f6b4eedc68e993f61b4c5cb5d99bb4af399da0be3de4781321bcba1ba44516f6. Rendered and read PDF page 5: setup step 7 says to randomly determine a start player with clockwise turn order; step C1 staggers starting appeal by turn order. Page 20 gives solo-game changes and © 2021 Feuerland Verlagsgesellschaft mbH with the Capstone Ark Nova URL, identifying the base game Ark Nova (BGG 342942). Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": []
+}
