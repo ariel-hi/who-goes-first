@@ -52,7 +52,8 @@ for (const path of files.filter(path => /[\\/]games[\\/].+[\\/]index.html$/.test
   const html = readFileSync(path, 'utf8');
   if (/astro-island|component-url|BalloonRise/.test(html)) throw new Error('Static answer eagerly loads picker');
 }
-const csp = `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
+const googleSources = settings.production ? ' https://www.googletagmanager.com https://*.google-analytics.com' : '';
+const csp = `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
 if (`  Content-Security-Policy: ${csp}`.length > 2000) throw new Error('CSP exceeds Cloudflare Pages header line limit; split policies by route before expanding the catalog.');
 writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 console.log(`Build audit passed (${settings.production ? 'production' : 'preview'}): private-content exclusion, canonicals, indexing, headers, static answer isolation.\nConservative gzip budgets: initial JS ${initialJs} B; Balloon ${optionalJs} B; basic home ${aboveFold} B.`);
