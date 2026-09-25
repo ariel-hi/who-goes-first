@@ -1,6 +1,6 @@
 # Remaining-inventory source review — 2026-09-25
 
-This batch covers 41 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the twenty-two intake queues preserve the retrieval URLs. Dragon Farkle, INK and Honey supply three portable criteria; the other entries remain catalog-only where qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
+This batch covers 43 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the twenty-three intake queues preserve the retrieval URLs. Dragon Farkle, INK and Honey supply three portable criteria; the other entries remain catalog-only where qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
 
 | Identity | Publisher/manual reviewed | Opening instruction and scope |
 | --- | --- | --- |
@@ -109,4 +109,13 @@ The cited pages and edition credits were rendered and visually checked. Dragon F
 
 The cited pages and publisher credits were rendered and visually checked. These answers remain catalog-only: Chupacabra has an optional subjective selection, Boochie's initial regular throwing order is unspecified, and Caterpillar Dice may have no qualifying observer. **Held:** The Deep Sea Adventure English PDF found so far is a fan transliteration; the located Arcadia Quest booklet includes placeholder text; the 1001 Karawane source could not be retrieved for a page check. No rule was published from those leads.
 
-After this follow-up, `npm run content:validate` passes with 859 approved game rules and 359 eligible random rules. `npm run content:coverage` reports 818 of 1,333 discovered identities with a researched edition and 515 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+## Two publisher-linked manuals
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| Chartae | Board Game Circus German edition, publisher-linked PDF | The two players decide who begins; no selection method is prescribed. This is an English summary of the German instruction. |
+| Ruthless | Alley Cat Games English booklet linked by Board Game Circus | The most piratical “Arrrr!” maker takes the starting token. Cards are drawn together before their first clockwise turn; the token passes clockwise after each round. |
+
+The setup and turn-order pages and edition credits were rendered and visually checked. Both remain catalog-only because Chartae leaves the choice open and Ruthless asks for a subjective performance.
+
+After this follow-up, `npm run content:validate` passes with 861 approved game rules and 359 eligible random rules. `npm run content:coverage` reports 820 of 1,333 discovered identities with a researched edition and 513 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.

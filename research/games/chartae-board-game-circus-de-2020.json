@@ -1,0 +1,41 @@
+{
+  "id": "chartae-board-game-circus-de-2020",
+  "slug": "chartae-board-game-circus-de-2020",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9c925f66192b6cb62459a3a3f8a1301fb991ec9f5c4fb61062aa69bf301c8eeb",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Chartae",
+  "aliases": [],
+  "editionLabel": "Board Game Circus German rules (2020); English summary",
+  "firstPlayerRule": "Choose together who begins. The rules do not prescribe a selection method.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is a two-player game. After the first player takes a turn, the other player takes the next turn, and they continue alternating."
+  ],
+  "interpretation": "English summary of the German Board Game Circus edition's setup instruction, 'Bestimmt, wer das Spiel beginnt.'",
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/s/s2ulfn1kgaymajm/Chartae%20Spielanleitung%20DE.pdf?dl=1",
+      "title": "Chartae — German rules",
+      "publisher": "Board Game Circus / XV Games",
+      "printedPages": [
+        "2",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        4
+      ],
+      "location": "Vorbereitung; Spielablauf; German-edition credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The Board Game Circus German-edition PDF linked from its store's Downloads page was retrieved for inventory BGG identity 269257. PDF page 1 (printed page 2) and PDF page 4 (printed page 6) were rendered and visually checked. Setup step 4 says to determine who begins, without naming a method; the gameplay paragraph says players take turns one after the other. The back page credits Board Game Circus ©2020 under XV Games license. Publisher-linked Dropbox PDF SHA-256: fd5bd3b0788de2eaeaa328d3259d7b8e3b1e1f0889c6a09ad763efba1d0e058d. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The inspected German edition gives no procedure for choosing between the players or resolving disagreement. Other editions may differ."
+  ]
+}
