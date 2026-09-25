@@ -1,0 +1,45 @@
+{
+  "id": "6-nimmt-amigo-2024-en",
+  "slug": "6-nimmt-amigo-2024-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "5a1708d6b2d80060ab12c9879629facfa84c966ddbbd332b560289543056fa66",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "6 nimmt!",
+  "aliases": [
+    "Take 5",
+    "Take 5!",
+    "6 nimmt"
+  ],
+  "editionLabel": "AMIGO 30th Anniversary Edition English rules, 2024",
+  "firstPlayerRule": "There is no first player: everyone chooses a card face down at the same time. After the reveal, the player who played the lowest card places it first, then the next lowest, and so on.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This reveal-and-place step repeats ten times per round, so placement order is set anew by card values every turn.",
+    "Cards are only revealed once every player has put a card face down."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02401-GB-AmigoRule.pdf",
+      "title": "6 nimmt! 30th Anniversary Edition — English rules",
+      "publisher": "AMIGO Spiel + Freizeit",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        28
+      ],
+      "location": "PDF page 4, Playing the Game step 1; PDF page 28, copyright line",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules from AMIGO's rules server (https://blog.amigo-spiele.de/content/ap/rule/02401-GB-AmigoRule.pdf), SHA-256 062b65e6e45874697efd6b23545dd655c75d91d94a3ffc312aed4553933f7488, and extracted the text of all 28 pages. PDF page 4 (printed 4), Playing the Game: each player picks a card and puts it face down; cards are revealed after all players have cards in front of them; the player who played the lowest card goes first and places it, then the second-lowest, until the highest. The cover credits Wolfgang Kramer; the text describes the 104-card bull-head game and calls itself the 30th Anniversary edition, matching BGG 432. Last page: AMIGO Spiel + Freizeit GmbH, 2024, Version 1.0. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This is the 30th Anniversary edition with added special cards; the checked base-game playing step is what this record covers. Other English editions sold as Take 5 were not checked."
+  ]
+}
