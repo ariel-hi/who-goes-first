@@ -1,0 +1,67 @@
+{
+  "id": "twilight-imperium-fourth-edition-ffg-en",
+  "slug": "twilight-imperium-fourth-edition-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "717b10e19faa81b5e4a10bba56f5a2c7db8776628f59d9282ae1895666829b98",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Twilight Imperium",
+  "aliases": [
+    "Twilight Imperium: Fourth Edition",
+    "Twilight Imperium 4",
+    "TI4"
+  ],
+  "editionLabel": "Fourth Edition, Fantasy Flight Games English rules",
+  "firstPlayerRule": "Randomly determine one player to take the speaker token. The speaker goes first when the game begins.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the strategy phase, players choose strategy cards starting with the speaker and going clockwise.",
+    "In the action phase, turns follow initiative order: the numbers on the chosen strategy cards, starting with 1.",
+    "The speaker token can change hands during the game through the Politics strategy card."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/c4/f0/c4f03c19-f9da-422f-b162-73f393e64a28/ti-k0289_learn_to_play_2020_web.pdf",
+      "title": "Twilight Imperium Fourth Edition — Learn to Play",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "6",
+        "8",
+        "24"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        8,
+        24
+      ],
+      "location": "Page 6, First-Game Setup step 1 (Determine Speaker); page 8, Strategy Phase; page 24, Quick Reference",
+      "checkedAt": "2026-09-25"
+    },
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/3a/fc/3afce41b-b757-4dc8-b005-3a5efffd0fad/ti4_living_rules_reference_v1_1.pdf",
+      "title": "Twilight Imperium Fourth Edition — Living Rules Reference v1.1",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "20",
+        "25"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        20,
+        25
+      ],
+      "location": "Complete Setup step 1; rule 57 (Politics); rule 69 (Speaker)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Both PDFs are hosted on Fantasy Flight Games’ own CDN. Downloaded and text-extracted the 24-page Learn to Play (SHA-256 ac91632f142898db6c784be2bb4287875b31b7a3b4d6836bcef95f5e070d647d) and the Living Rules Reference v1.1 (SHA-256 c96015b37833df50636e787b597b7f76c97112c2a2c8886d7f0f9bce23af084f). Learn to Play page 6, First-Game Setup step 1: randomly determine one player to take the speaker token; the speaker goes first. Page 8: strategy cards are chosen beginning with the speaker clockwise, and the action phase uses initiative order. Rules Reference Complete Setup step 1 and rule 69.5 repeat the random speaker; rules 57 and 69.6 cover passing the token via Politics. Game identity: Twilight Imperium Fourth Edition components and factions (BGG 233078). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The speaker picks strategy cards first, but action-phase turn order follows initiative numbers on strategy cards, so the speaker does not necessarily take the first action.",
+    "The Prophecy of Kings expansion and later rules reference versions were not reviewed."
+  ]
+}

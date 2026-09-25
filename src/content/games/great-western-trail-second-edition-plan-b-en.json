@@ -1,0 +1,49 @@
+{
+  "id": "great-western-trail-second-edition-plan-b-en",
+  "slug": "great-western-trail-second-edition-plan-b-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "d835ccdc8435865fbbb9feeeaf65c00d86017690b95c54612fc3234d0ae7f259",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Great Western Trail",
+  "aliases": [
+    "Great Western Trail: Second Edition",
+    "GWT"
+  ],
+  "editionLabel": "Second Edition English rulebook, 2021",
+  "firstPlayerRule": "Determine a starting player; the rulebook doesn’t say how, so choose any way your group agrees on. The other players follow in clockwise order.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting money and hand size depend on seat: the 1st player gets 6 dollars and 4 cards, the 2nd 7 and 5, the 3rd 8 and 6, the 4th 9 and 7. Each player also gets 1 exchange token.",
+    "Beginning with the starting player (the one with only 6 dollars), players take turns in clockwise order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/de/cb/bb-great-western-trail-second-edition-rulebook.pdf",
+      "title": "Great Western Trail: Second Edition — English rulebook",
+      "publisher": "eggertspiele / Plan B Games",
+      "printedPages": [
+        "5",
+        "6",
+        "20"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        20
+      ],
+      "location": "Page 5, Setup step 17; page 6, Gameplay; credits on page 20",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "No English rulebook download was found on the current publisher sites (planbgames.com redirects to Next Move Games; eggertspiele.com redirects elsewhere), so the publisher-authored PDF hosted by 1jour-1jeu was used. Downloaded and text-extracted all 20 PDF pages. Cover: Alexander Pfister, Second Edition Rulebook. Page 5 setup step 17: determine a starting player, others follow clockwise, with seat-based starting capital. Page 6: the starting player (6 dollars) begins, then clockwise. Page 20 credits: © 2021 Plan B Games Europe GmbH, EGGERTSPIELE is a brand of Plan B Games, matching BGG 341169. SHA-256: 794f9d9e573d3a8f34444d6c88a8a1fbe7f76019ec0722212cffcea3d13c737e. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no method for choosing the starting player.",
+    "The file is hosted by a third-party rules archive rather than the publisher; its credits page still carries a localization placeholder (\"Your logo and address in this section\").",
+    "Solo mode uses separate rules that were not reviewed. The 2016 first edition was not reviewed."
+  ]
+}
