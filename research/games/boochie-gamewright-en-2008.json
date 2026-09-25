@@ -1,0 +1,39 @@
+{
+  "id": "boochie-gamewright-en-2008",
+  "slug": "boochie-gamewright-en-2008",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4848d16ef7a72bb52b008be93e952b93eab6efeaf1bd18153a666c80bfcb287c",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Boochie",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (2008)",
+  "firstPlayerRule": "The player with the cleanest shoes throws the Boochie Ball to set the first target. The rules say players then take turns tossing their objects, but do not specify who makes the first object toss.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later rounds, the highest scorer from the previous round throws the Boochie Ball to a new target distance. The player who went second in the previous round takes the first object toss."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Boochie-RULES.pdf",
+      "title": "Boochie — English rules",
+      "publisher": "Gamewright",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Set Up; Playing the Game; Starting a New Round; publisher credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The Gamewright rules PDF linked from the publisher product page was retrieved for inventory BGG identity 38680 and its single page was rendered and visually checked. Set Up assigns the first target-ball toss to the player with the cleanest shoes. Playing the Game only says to take turns tossing objects; it does not assign the first ordinary toss, so the public answer states that limit. Starting a New Round gives the target toss to the previous round's highest scorer and the first ordinary toss to the previous round's second player. Credits identify Gamewright ©2008. Publisher PDF SHA-256: a1610c13c06c8e92c90f2349c9fe9bba5d2a0d868088cfe5db0ce61f6f4c5bf3. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The initial cleanest-shoes selection is for throwing the target ball during setup; the rules do not explicitly assign the first ordinary object toss or break a cleanest-shoes tie."
+  ]
+}

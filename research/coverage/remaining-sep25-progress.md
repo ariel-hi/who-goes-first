@@ -1,6 +1,6 @@
 # Remaining-inventory source review — 2026-09-25
 
-This batch covers 38 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the nineteen intake queues preserve the retrieval URLs. Three standalone criteria from the latest four manuals join the portable random mix; the earlier entries and Hera and Zeus remain catalog-only where qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
+This batch covers 41 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the twenty-two intake queues preserve the retrieval URLs. Dragon Farkle, INK and Honey supply three portable criteria; the other entries remain catalog-only where qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
 
 | Identity | Publisher/manual reviewed | Opening instruction and scope |
 | --- | --- | --- |
@@ -99,4 +99,14 @@ Their cited pages were rendered and visually checked, with hashes and source loc
 
 The cited pages and edition credits were rendered and visually checked. Dragon Farkle, INK and Honey have standalone criteria in the random mix; the available booklet does not prescribe a tie-break for any of them. **Held:** the El Gaucho mirror did not resolve, and no alternative complete edition manual has been checked.
 
-After this follow-up, `npm run content:validate` passes with 856 approved game rules and 359 eligible random rules. `npm run content:coverage` reports 815 of 1,333 discovered identities with a researched edition and 518 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+## Three further English booklets
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| Chupacabra: Survive the Night | Steve Jackson Games official English PDF, version 2.1 | The previous game's winner or best Chupacabra-noise maker starts; everyone rolls together before the starter attacks or passes. Later rounds begin to the prior starter's left. |
+| Boochie | Gamewright official English PDF | Cleanest-shoes player throws the target ball in setup. The booklet does not name the first ordinary object thrower; later rounds have a specified rotation. |
+| Caterpillar Dice | HABA-authored English section of a multilingual booklet at Ludism | Most recent caterpillar viewer starts by rolling; play proceeds clockwise. |
+
+The cited pages and publisher credits were rendered and visually checked. These answers remain catalog-only: Chupacabra has an optional subjective selection, Boochie's initial regular throwing order is unspecified, and Caterpillar Dice may have no qualifying observer. **Held:** The Deep Sea Adventure English PDF found so far is a fan transliteration; the located Arcadia Quest booklet includes placeholder text; the 1001 Karawane source could not be retrieved for a page check. No rule was published from those leads.
+
+After this follow-up, `npm run content:validate` passes with 859 approved game rules and 359 eligible random rules. `npm run content:coverage` reports 818 of 1,333 discovered identities with a researched edition and 515 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.

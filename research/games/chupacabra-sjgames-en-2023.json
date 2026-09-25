@@ -1,0 +1,44 @@
+{
+  "id": "chupacabra-sjgames-en-2023",
+  "slug": "chupacabra-sjgames-en-2023",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "a11f512352a1ed4ed75d61da568cd05d18604ee2fdbb1576ac4c2a2f508bf7c2",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Chupacabra: Survive the Night",
+  "aliases": [
+    "Chupacabra"
+  ],
+  "editionLabel": "Steve Jackson Games English rules, version 2.1 (2023)",
+  "firstPlayerRule": "The player who won the last game starts, or choose whoever makes the best Chupacabra noise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Everyone rolls their dice simultaneously at the start of a round. The first player then attacks or passes, followed by the player to their left.",
+    "Each later round begins with the player to the left of whoever began the previous round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.sjgames.com/dice/chupacabra/img/chupacabra_rules.pdf",
+      "title": "Chupacabra: Survive the Night — English rules, version 2.1",
+      "publisher": "Steve Jackson Games",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Starting the Game; How to Play a Round; publisher and version credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The Steve Jackson Games PDF linked from its Chupacabra product page was retrieved for inventory BGG identity 120515. Both pages were rendered and visually checked. Page 1 offers the previous-game winner or best Chupacabra noise as the initial starter; all players roll simultaneously, then attacks or passes proceed left from the first player. A later round begins left of the previous round's starter. Page 2 identifies Steve Jackson Games rules version 2.1 (September 2023). Official PDF SHA-256: cad8a21571a413998ab7d9f9b0681637b4995e2e1a74c7b411603d550df8cea8. An earlier version 2.0 mirror was checked separately and gives the same opening selection. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet does not say how to resolve disagreement over the best Chupacabra noise or how to proceed if there was no previous game."
+  ]
+}
