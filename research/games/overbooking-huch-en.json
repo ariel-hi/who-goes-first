@@ -1,0 +1,46 @@
+{
+  "id": "overbooking-huch-en",
+  "slug": "overbooking-huch-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "570d55cd7e8fd3ee3c49ed0407fb484d645c2d25915adf7ed8236ed3955f3fb1",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Overbooking",
+  "aliases": [
+    "OverbooKing"
+  ],
+  "editionLabel": "HUCH! English rules (2022)",
+  "firstPlayerRule": "The player who most recently stayed in a hotel receives the starting-player marker and starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the card-playing phase, turns proceed clockwise from the starting player.",
+    "Pass the starting-player marker clockwise when preparing the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://studiogiochi.com/files/studiogiochi.com/2022/09/OverbooKing_Rules_EN.pdf",
+      "title": "OverbooKing — English rules",
+      "publisher": "HUCH!",
+      "printedPages": [
+        "9",
+        "10",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        8
+      ],
+      "location": "Setup, Phase 1 — Play cards, and Phase 3 — Prepare for the next round",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Designer agency Studio Giochi's publication page https://studiogiochi.com/en/publications/overbooking/ identifies HUCH!'s 2022 first edition and links this HUCH!-authored English manual for BGG identity 354328. Printed pages 9, 10, and 16 (PDF pages 1, 2, and 8) were rendered and visually checked. Designer-hosted PDF SHA-256: a97e8baddf2a84a6dacadacede0d3e711d3980f409371b1e84a8cb60a5138a56. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "No tie-break or fallback is stated if more than one player stayed in a hotel most recently."
+  ]
+}

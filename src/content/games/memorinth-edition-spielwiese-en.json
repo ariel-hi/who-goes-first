@@ -1,0 +1,39 @@
+{
+  "id": "memorinth-edition-spielwiese-en",
+  "slug": "memorinth-edition-spielwiese-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "1b64e3de333884d79d052d22ef7f01f5e50c60fdc33b2ee301a74dbd85c62b93",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Memorinth",
+  "aliases": [],
+  "editionLabel": "Edition Spielwiese English rules (2020)",
+  "firstPlayerRule": "The last person to have read a fairy tale becomes the starting player and receives the starting-player card, bright side up. They take the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After the first turn, play proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.brdgmz.nl/wp-content/uploads/Spelregels-Memorinth-English.pdf",
+      "title": "Memorinth — English rules",
+      "publisher": "Edition Spielwiese",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup, final paragraph",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The Pegasus North America publisher-hosted English manual at https://pegasusna.com/media/pdf/c5/67/1e/WEB_Memorinth_Rules_EN.pdf redirected to a Pegasus CDN and returned HTTP 403 locally. A publisher-authored English booklet was retrieved from the BoardGameZ mirror. PDF page 1 was rendered and visually checked; it identifies the starting-player card and exact fairy-tale criterion. Its footer dates the booklet 13.01.20. BGG identity 298018. Mirror PDF SHA-256: 2b45ff49e49fd4c8b7646dc1c9b7f15ef1a60cbb81c5cefa63b171d781511c99. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rules do not give a tie-break for players who read a fairy tale at the same time or a fallback if nobody remembers reading one."
+  ]
+}

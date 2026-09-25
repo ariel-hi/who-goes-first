@@ -1,6 +1,6 @@
 # Remaining-inventory source review — 2026-09-25
 
-This batch covers 26 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the fifteen intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
+This batch covers 30 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the seventeen intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
 
 | Identity | Publisher/manual reviewed | Opening instruction and scope |
 | --- | --- | --- |
@@ -66,4 +66,15 @@ The cited PDF pages were rendered and visually checked. Local source hashes and 
 
 All cited pages were rendered and visually checked; source hashes and edition identity evidence are in the private drafts. Feya's Swamp remains pending because its indexed English rulebook differs from the later Grail Games English/French printing; a specific publisher edition needs a verified opening instruction. The five entries are catalog-only.
 
-After this follow-up, `npm run content:validate` passes with 844 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 803 of 1,333 discovered identities with a researched edition and 530 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+## Four further visually checked manuals
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| MLEM: Space Agency | Asmodee Canada, official English PDF | Most recent litter-box cleaner starts the first expedition and holds its rocket board; the board passes left after each expedition. |
+| Memorinth | Edition Spielwiese, English booklet at BoardGameZ mirror | Last person to read a fairy tale receives the starting-player card and takes the first clockwise turn. The Pegasus download redirected to a CDN that denied direct retrieval. |
+| Penguin Party | AMIGO-authorized English rules at Gamers HQ mirror | Last to see a real penguin begins; each player starts one round, but the later starter order is not prescribed. |
+| Overbooking | HUCH! English rules linked by designer agency Studio Giochi | Most recent hotel guest takes the marker; card play begins with them clockwise, and the marker passes clockwise between rounds. |
+
+The cited pages were rendered and visually checked. The two official PDFs, two publisher-authored mirrors, source SHA-256 values, and edition limits are documented in the private records. These four entries are catalog-only; the initial criteria can leave a group without a clear qualifying player.
+
+After this follow-up, `npm run content:validate` passes with 848 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 807 of 1,333 discovered identities with a researched edition and 526 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
