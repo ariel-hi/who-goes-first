@@ -9,7 +9,7 @@ export default defineConfig({
   use: { baseURL: STATIC, trace: 'retain-on-failure', screenshot: 'only-on-failure' },
   webServer: [
     { command: 'npm run test:serve', env: { PORT: String(staticPort) }, url: STATIC, reuseExistingServer: false, timeout: 30000 },
-    { command: `node ./node_modules/astro/bin/astro.mjs dev --host 127.0.0.1 --port ${devPort} --ignore-lock`, url: DEV, reuseExistingServer: !process.env.CI, timeout: 60000 },
+    { command: `node ./node_modules/astro/bin/astro.mjs dev --host 127.0.0.1 --port ${devPort} --ignore-lock`, url: DEV, reuseExistingServer: false, timeout: 60000 },
   ],
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },

@@ -5,7 +5,7 @@ const port = (name: string, fallback: number) => {
 };
 
 export const staticPort = port('STATIC_PORT', 53222);
-export const devPort = port('DEV_PORT', 4321);
+export const devPort = port('DEV_PORT', 53221);
 if (staticPort === devPort) throw new Error('Browser test static and dev ports must differ');
 
 export const STATIC = `http://127.0.0.1:${staticPort}`;

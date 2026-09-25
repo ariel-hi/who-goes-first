@@ -12,7 +12,7 @@ npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:4321/. Local Game rules navigation opens the searchable draft directory at `/dev/games/`; the 60 published original questions are at `/house-rules/` and `/dev/house-rules/`. Source evidence and revision hashes are at `/dev/review/`. `/dev/coverage/` tracks all 1,320 discovered game identities and explicitly distinguishes missing rules from researched editions. Method pages are `/methods/balloon/`, `/methods/spinner/`, `/methods/cards/`, `/methods/towers/`, `/methods/straws/`, `/methods/dice/`, `/methods/coin/`, and `/methods/shells/`.
+Open http://127.0.0.1:4321/. Local Game rules navigation opens the searchable draft directory at `/dev/games/`; the 60 published original questions are at `/house-rules/` and `/dev/house-rules/`. Source evidence and revision hashes are at `/dev/review/`. `/dev/coverage/` tracks all 1,333 discovered game identities and explicitly distinguishes missing rules from researched editions. Method pages are `/methods/balloon/`, `/methods/spinner/`, `/methods/cards/`, `/methods/towers/`, `/methods/straws/`, `/methods/dice/`, `/methods/coin/`, and `/methods/shells/`.
 
 Use Node 22.23.2 or a later Node 22 maintenance release. A project-local Node 22 dev dependency supplies the compatible runtime for npm scripts on this machine (the system runtime was 22.16.0). TypeScript 6 is pinned to the compatible major supported by the current Astro checker. npm and `package-lock.json` are authoritative.
 
@@ -52,7 +52,7 @@ npm run audit:lighthouse
 npm run links:check
 ```
 
-`npm run verify` runs type checking, lint, unit tests, content validation, build, and artifact audits. Build before running browser tests. The browser suite starts its own static server on port 53222 and reuses the development server on port 4321 when one is running. Set `STATIC_PORT` and `DEV_PORT` to different free ports to override these defaults; all browser tests use the same settings. The release test copies the site to an isolated ignored directory; synthetic approval fixtures never enter `src/content/` in this project. With `npm run dev` running, `npm run test:dev-release` verifies a fresh development browser can pick before and after the complete release matrix. Astro and Vite caches are project-local and separated by command, so release fixtures cannot invalidate the running preview's dependency URLs.
+`npm run verify` runs type checking, lint, unit tests, content validation, build, and artifact audits. Build before running browser tests. The browser suite starts its own static server on port 53222 and development server on port 53221. Set `STATIC_PORT` and `DEV_PORT` to different free ports to override these defaults; all browser tests use the same settings. The release test copies the site to an isolated ignored directory; synthetic approval fixtures never enter `src/content/` in this project. With `npm run dev` running, `npm run test:dev-release` verifies a fresh development browser can pick before and after the complete release matrix. Astro and Vite caches are project-local and separated by command, so release fixtures cannot invalidate the running preview's dependency URLs.
 
 To inspect the static output manually: `npm run test:serve`. `npm run preview` is Astro’s ordinary static preview and does not simulate Cloudflare headers. With the dev and static servers running, `npm run screenshots` captures deterministic states in `artifacts/screenshots/` and renders the original social SVG to PNG.
 
