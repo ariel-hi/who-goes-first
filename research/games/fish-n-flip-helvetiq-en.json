@@ -1,0 +1,35 @@
+{
+  "id": "fish-n-flip-helvetiq-en",
+  "slug": "fish-n-flip-helvetiq-en",
+  "gameName": "Fish 'n' Flip",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Helvetiq English rulebook, cooperative base game",
+  "firstPlayerRule": "In the cooperative game, the player who last spotted a dolphin starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play then continues clockwise. The separate competitive version has everyone act simultaneously and does not use this starting-player instruction."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://helvetiq.com/media/hexaattachment/products/attachments/FishnFlip_Rules_EN.pdf",
+      "title": "Fish 'n' Flip — English rules",
+      "publisher": "Helvetiq",
+      "printedPages": [],
+      "pdfPagesOneBased": [3, 4, 12],
+      "location": "Cooperative setup and Turn overview; Competitive version",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted 16-page English booklet. PDF page 3 assigns the start to the last dolphin spotter; page 4 confirms clockwise turns; page 12 describes simultaneous play in the separate competitive version. Pages 3 and 12 were rendered and read. Downloaded source SHA-256: a307b50497d18969a4527c710e9dc661b6a3f62ad56e07e8a4f0fd08c6708ae5. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet does not provide a tie-break or a method when nobody has spotted a dolphin."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
