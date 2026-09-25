@@ -25,7 +25,7 @@ Use Node 22.23.2 or a later Node 22 maintenance release. A project-local Node 22
 - Optional local group memory, forget/reset, reduced motion, keyboard controls, and clean sharing with manual fallback.
 - Alphabetical static game index, local alias/prefix/typo search, random game-rule draw with skip, edition pages, answer-first source template, and revision-bound editorial approval validation.
 - Sixty published original house-rule questions, drawn without repeats until the pool is exhausted, with skip and an explicit random tie-break. The six original research drafts remain in the local review archive.
-- About, Fairness, Privacy, true 404, canonical/social metadata, sitemap/robots controls, CSP headers, disabled analytics interface, CI and operational docs.
+- About, Fairness, Privacy, true 404, canonical/social metadata, sitemap/robots controls, CSP headers, optional GA4 page views, CI and operational docs.
 
 Public builds contain no unapproved editorial content. All 780 researched rule records in this checkout have completed editorial approval, alongside 60 published original house questions. The board game directory lists the complete 1,320-game collection and links each game to its sourced editions when available. The random mix contains 353 individually reviewed portable criteria in this checkout; cooperative role assignments, simultaneous play, component-dependent setup and random-only instructions remain outside it. Distinct Spin Circus, Valley of the Kings, Ticket to Ride: Europe and Incan Gold editions retain their different starting instructions.
 
