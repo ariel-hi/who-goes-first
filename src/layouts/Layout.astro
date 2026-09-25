@@ -24,6 +24,7 @@ const structuredData = {
     <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title><meta name="description" content={description} />
     <meta name="robots" content={indexed ? 'index, follow' : 'noindex, follow'} />
+    {settings.production && <meta name="google-site-verification" content="gbg2p2mY7uE14dpXQRVZwcuSwcLOaNaV4gA82UQd-z4" />}
     <link rel="canonical" href={canonical} /><meta name="theme-color" content="#f7f5ee" /><meta name="color-scheme" content="light" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:type" content="website" /><meta property="og:site_name" content="Who Goes First?" />
@@ -32,6 +33,7 @@ const structuredData = {
     <meta property="og:image" content={new URL('/social.png', settings.url).href} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="Who Goes First? A fair draw for your next board game." />
     <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={new URL('/social.png', settings.url).href} /><meta name="twitter:image:alt" content="Who Goes First? A fair draw for your next board game." />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />
+    {settings.production && <script src="/analytics-consent.js" defer></script>}
     <slot name="head" />
   </head>
   <body>
@@ -41,7 +43,8 @@ const structuredData = {
       <nav class="site-nav" aria-label="Main navigation"><a href="/board-games/" aria-current={path.startsWith('/board-games/') ? 'page' : undefined}>Board games</a><a href={gamesPath} aria-current={path.startsWith('/games/') || path.startsWith('/dev/games/') || path.startsWith('/dev/rules/') ? 'page' : undefined}>Game rules</a><a href="/about/" aria-current={path === '/about/' ? 'page' : undefined}>About</a></nav>
     </header>
     <main id="main" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><nav aria-label="Footer"><a href="/fairness/">How it works</a><a href="/privacy/">Privacy</a>{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
+    <footer class="site-footer"><nav aria-label="Footer"><a href="/fairness/">How it works</a><a href="/privacy/">Privacy</a>{settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
+    {settings.production && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit analytics? Google Analytics receives the page address without search parameters and basic device information, and may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
   </body>
 </html>
 

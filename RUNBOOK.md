@@ -10,7 +10,7 @@
 | `PRIVACY_HOST_NAME` | unset | Actual public hosting provider name shown on Privacy; required for production |
 | `PRIVACY_LOGGING_POLICY` | unset | Reviewed sentence describing the host's request logging and retention; required for production |
 | `DISABLE_BALLOON` | false | `true` removes mode selection/navigation; direct route retains the basic picker with an explanatory notice and noindex |
-| `ASTRO_TELEMETRY_DISABLED` | set `1` in CI | Disables Astro tooling telemetry; unrelated to site analytics, which is always disabled |
+| `ASTRO_TELEMETRY_DISABLED` | set `1` in CI | Disables Astro tooling telemetry; unrelated to the optional visitor analytics |
 | `BUILD_OUT_DIR` | `dist` | Test/build output directory; normally leave unset |
 | `PORT` | 4322 | Header-aware local static test server only |
 
@@ -18,7 +18,7 @@ Use environment variables in the shell/host. No secrets are needed. There is no 
 
 ## Cloudflare Pages deployment
 
-The current public project is `who-goes-first` in the owner's Cloudflare account, using `main` as the production branch. Its canonical address is <https://who-goes-first.pages.dev/>. The first full-site release was `0264e4e` on 2026-09-24; the deployment completed successfully and the live pages were checked. The production environment has `SITE_URL=https://who-goes-first.pages.dev`, `DEPLOY_CONTEXT=production`, `CONTACT_EMAIL=edamame.makers@gmail.com`, `PRIVACY_HOST_NAME=Cloudflare Pages`, a host request-processing disclosure, and `ASTRO_TELEMETRY_DISABLED=1`. Preview access is restricted.
+The current public project is `who-goes-first` in the owner's Cloudflare account, using `main` as the production branch. Its canonical address is <https://whogoesfirst.fun/>. The first full-site release was `0264e4e` on 2026-09-24; the custom domain went live on 2026-09-24. The production environment has `SITE_URL=https://whogoesfirst.fun`, `DEPLOY_CONTEXT=production`, `CONTACT_EMAIL=edamame.makers@gmail.com`, `PRIVACY_HOST_NAME=Cloudflare Pages`, a host request-processing disclosure, and `ASTRO_TELEMETRY_DISABLED=1`. Preview access is restricted.
 
 1. Create/connect the owner's chosen repository and Pages project. Select a production branch. Use Node 22.23.2 (or compatible Node 22 maintenance), build command `npm ci && npm run build`, output directory `dist`.
 2. Set production `SITE_URL` to the canonical HTTPS origin, `DEPLOY_CONTEXT=production`, `CONTACT_EMAIL`, `PRIVACY_HOST_NAME`, `PRIVACY_LOGGING_POLICY`, and `ASTRO_TELEMETRY_DISABLED=1`. The production build fails when any contact or hosting disclosure is missing. Keep `DEPLOY_CONTEXT=preview` for preview builds even if SITE_URL points to the canonical domain. Configure Cloudflare Access/restricted previews before sharing drafts of the site. Static build previews contain no editorial research.
@@ -27,7 +27,7 @@ The current public project is `who-goes-first` in the owner's Cloudflare account
 5. Smoke-test `/`, `/methods/balloon/`, `/games/`, a real approved rule if present, `/robots.txt`, `/sitemap.xml`, and an unknown path. Root `404.html` provides the Pages 404 response; there is no SPA catch-all redirect. Inspect network requests while entering fictional private names.
 6. Verify canonical URLs, production home `index, follow`, no preview robots header on production, and noindex for empty catalog pages. Submit the sitemap only after this passes.
 
-For a future custom domain, update `SITE_URL`, attach the domain in Cloudflare Pages, and check the generated canonical URLs, sitemap and redirects before declaring the move complete.
+The domain is registered at Cloudflare and uses a proxied apex CNAME to `who-goes-first.pages.dev`. Zone Redirect Rules send HTTP and HTTPS requests for `www.whogoesfirst.fun` to the apex with a 301, preserving paths and queries; a proxied `www` A record enables those rules. An account Bulk Redirect sends the production `who-goes-first.pages.dev` hostname to the apex with a 301, subpath matching, path suffix and query preservation. Do not enable subdomain matching on that list: deployment preview hostnames remain access restricted. After changing routing, verify the apex, redirects, canonical URLs, sitemap and HTTPS end to end.
 
 Primary references checked for this build: [Astro on Pages](https://developers.cloudflare.com/pages/framework-guides/deploy-an-astro-site/), [custom headers and their line limits](https://developers.cloudflare.com/pages/configuration/headers/), [production rollback](https://developers.cloudflare.com/pages/configuration/rollbacks/). The build rejects a CSP line over the documented 2,000-character limit. If a larger future catalog reaches it, use route-specific policies before release.
 
@@ -38,13 +38,13 @@ Primary references checked for this build: [Astro on Pages](https://developers.c
 - Broken release: in Pages, promote the previous known-good deployment using its rollback control. Smoke-test again. Keep the corresponding source revision and lockfile. No hosted rollback has been attempted locally.
 - Broken optional mode: set `DISABLE_BALLOON=true`, rebuild, inspect and redeploy. Instant/Quick remain usable. Re-enable only after its tests pass.
 - Source issue: run `npm run links:check -- --approved-only` for the public catalog, or omit the flag to include research drafts. It checks up to 250 unique sources with three workers, each with an 8-second deadline, up to three HTTPS redirects, no retries and no content mutation. It reports total/checked counts and a continuation command if a larger collection requires another batch (`--offset`/`--limit`). A 403/405/timeout may be server policy; manually inspect before changing a fact. Verification dates are never refreshed by a link check.
-- Privacy incident: disable any subsequently added adapter/script first, rebuild and redeploy; investigate the actual payload. The delivered default has no external telemetry sink.
+- Privacy incident: remove the Google tag loader or disable it with a release, then investigate the actual payload. The picker event sink remains disabled.
 - Corrupt storage: the interface recovers to a new four-seat table and explains it. Forget/reset are in Preferences. Browser site-data clearing is the fallback when storage access itself is blocked.
 - Restore: fresh checkout, compatible Node, `npm ci`, `npm run verify`, browser install and tests, then the release configuration checks. Serve only the generated directory.
 
 ## Optional integrations and maintenance
 
-`src/lib/analytics.ts` is disabled by default. A future approved sink must use the existing field-by-field allowlists and approved public game IDs. No names, searches, winner IDs, form capture, session replay, or raw URLs. Never emit pageviews for picks. Revisit Privacy, consent, CSP and network tests before any activation.
+The public site uses Google Analytics 4 property **Who Goes First?** (measurement ID `G-XDVR78FJXY`) for page views only. The tag loads after a visitor allows analytics; the choice is stored under `wgf:analytics-choice:v1` and can be changed from the footer. GA4 enhanced measurement is limited to page views. The site's Google tag sends a page address without query or fragment, turns off Google Signals and ad personalization, and does not send picker events. `src/lib/analytics.ts` remains disabled. Keep player names, searches, winner IDs, and form interactions out of telemetry. The Search Console URL-prefix property is `https://whogoesfirst.fun/`; its verification meta tag is in the production layout. The sitemap at `https://whogoesfirst.fun/sitemap.xml` was submitted after ownership verification. Its live URL test passed while the initial Sitemaps report still showed “Couldn't fetch”; check that report again after Google processes the file.
 
 The `/_astro/` assets have content hashes and a one-year immutable cache policy. HTML is not given an immutable policy. The local test server applies the generated route headers and gzip compression; public-host compression and actual cache behavior still need a launch smoke test. After UI or bundle changes, run the release matrix and then `npm run audit:lighthouse` for repeatable local mobile/desktop reports. Real Core Web Vitals require an authorized public release and field data.
 

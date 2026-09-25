@@ -98,7 +98,7 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
       turn: [720, -720, 1080, -1080][Math.floor(random() * 4)]!,
       drift: Math.round((random() - .5) * 10),
     };
-    piece.shell = { delay: Math.round(620 + random() * 460), tilt: Math.round(-10 + random() * 20) };
+    piece.shell = { delay: Math.round(500 + random() * 360), tilt: Math.round(-10 + random() * 20) };
   }
   return plan;
 }

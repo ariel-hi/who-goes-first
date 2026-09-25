@@ -18,6 +18,7 @@ test('large groups keep the compact reveals and result timing follows the last v
   expect(revealDuration('dice', plan)).toBe(Math.max(...pieces.map(piece => piece.diceAt + 1920)) + 120);
   expect(revealDuration('balloon', plan)).toBeLessThan(3600);
   expect(revealDuration('dice', plan)).toBeLessThan(2300);
+  expect(revealDuration('shells', plan)).toBeLessThan(1900);
   expect(revealDuration('quick', plan)).toBe(1242);
   const large = select(seats(50), 2, () => 12);
   expect(revealDuration('quick', createRevealPlan(large, () => .5))).toBe(1530);
@@ -68,7 +69,7 @@ test('every animation finishes within its deadline', () => {
       expect(Math.abs(p.spinnerOffset)).toBeGreaterThanOrEqual(.09);
       expect(Math.abs(p.spinnerOffset)).toBeLessThan(.34);
       expect(p.balloon.bobDuration).toBeGreaterThanOrEqual(1300);
-      expect(p.shell.delay + 820).toBeLessThan(2700);
+      expect(p.shell.delay + 820).toBeLessThan(1700);
       if (player.id !== outcome.winnerId) {
         expect(star.flipAt).toBeGreaterThan(p.flipAt);
         expect(star.flipAt + star.flipDuration).toBeGreaterThan(p.flipAt + p.flipDuration);

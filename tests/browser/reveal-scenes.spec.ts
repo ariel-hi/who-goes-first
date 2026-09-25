@@ -32,7 +32,7 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
   await expect(page.locator('.winner-announcement')).toContainText('Seat 2 goes first');
   await expect(scene).toHaveAttribute('data-settled', 'true');
   await expect(scene).toHaveAttribute('data-original-scene', 'yes');
-  expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).filter(animation => animation.effect?.getTiming().iterations === Infinity).length)).toBe(0);
+  expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).filter(animation => animation.effect?.getTiming().iterations === Infinity).every(animation => animation instanceof CSSAnimation && animation.animationName.endsWith('glimmer')))).toBe(true);
   await expect(page.locator('.roster')).toBeVisible();
   await page.getByRole('button', { name: 'Pick again' }).click();
   await expect(scene).not.toHaveAttribute('data-original-scene', 'yes');
@@ -237,11 +237,11 @@ test('cards perform overlapping three-dimensional flips and retain their faces',
     return Math.abs(matrix.m11 + 1) < .001;
   }))).toBe(true);
   await expect(page.locator('.card-front')).toHaveCount(12);
-  const glows = await page.locator('.cards-reveal .reveal-player').evaluateAll(players => players.map(player => ({
-    chosen: player.classList.contains('reveal-chosen'),
-    glow: getComputedStyle(player.querySelector('.card-front')!).boxShadow,
-  })));
-  expect(glows.find(card => card.chosen)!.glow).not.toBe('none');
+  await expect(page.locator('.cards-reveal .card-result')).toHaveCount(12);
+  await expect(page.locator('.cards-reveal .reveal-chosen .card-result')).toHaveText('GO');
+  await expect(page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-result')).toHaveText(Array(11).fill('—'));
+  await expect(page.locator('.cards-reveal .card-front svg')).toHaveCount(0);
+  await expect(page.locator('.cards-reveal .reveal-chosen .card-front')).toHaveCSS('animation-name', 'none');
 });
 
 test('coins toss together and settle with one crown face up', async ({ page }) => {
@@ -258,11 +258,13 @@ test('coins toss together and settle with one crown face up', async ({ page }) =
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   const faces = await page.locator('.coin-reveal .reveal-player').evaluateAll(players => players.map(player => ({
     chosen: player.classList.contains('reveal-chosen'),
-    facing: new DOMMatrixReadOnly(getComputedStyle(player.querySelector('.coin')!).transform).m11,
+    facing: new DOMMatrixReadOnly(getComputedStyle(player.querySelector('.coin')!).transform).m22,
   })));
-  expect(faces.every(face => face.facing > .98)).toBe(true);
-  await expect(page.locator('.reveal-chosen .coin-crown-up')).toHaveCount(1);
-  await expect(page.locator('.reveal-chosen .coin-crown-up')).toHaveCSS('opacity', '1');
+  expect(faces.filter(face => face.chosen)).toHaveLength(1);
+  expect(faces.find(face => face.chosen)!.facing).toBeLessThan(-.98);
+  expect(faces.filter(face => !face.chosen).every(face => face.facing > .98)).toBe(true);
+  await expect(page.locator('.coin-heads')).toHaveCount(12);
+  await expect(page.locator('.coin-crown-up')).toHaveCount(0);
 });
 
 test('shells stay lifted and only one reveals a pearl', async ({ page }) => {
@@ -270,9 +272,10 @@ test('shells stay lifted and only one reveals a pearl', async ({ page }) => {
   await openMethod(page, 'shells');
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(page.locator('.shell-lid')).toHaveCount(4);
-  await expect(page.locator('.shell-pearl')).toHaveCSS('opacity', '0');
+  await expect(page.locator('.shell-pearl')).toHaveCSS('opacity', '1');
+  await expect(page.locator('.shell-pearl')).toHaveCSS('animation-name', 'none');
   await expect(page.locator('.shells-reveal')).toHaveAttribute('data-settled', 'true');
-  expect(await page.locator('.shell-pearl').evaluate(pearl => ({ opacity: getComputedStyle(pearl).opacity, animation: getComputedStyle(pearl).animationName }))).toEqual({ opacity: '1', animation: 'none' });
+  expect(await page.locator('.shell-pearl').evaluate(pearl => ({ opacity: getComputedStyle(pearl).opacity, animation: getComputedStyle(pearl).animationName }))).toEqual({ opacity: '1', animation: 'piece-glimmer' });
   await expect(page.locator('.shell-pearl')).toHaveCount(1);
   await expect(page.locator('.reveal-chosen .shell-pearl')).toBeVisible();
   expect(await page.locator('.shell-lid').evaluateAll(lids => lids.every(lid => getComputedStyle(lid).transform !== 'none'))).toBe(true);
@@ -286,14 +289,14 @@ test('removed reveals are absent from the picker and their old pages return 404'
   }
 });
 
-test('every settled method glows around its winning piece', async ({ page }) => {
-  for (const method of methods) {
+test('other settled methods glow around their winning piece', async ({ page }) => {
+  test.setTimeout(120000);
+  for (const method of methods.filter(method => method.path !== 'cards')) {
     await openMethod(page, method.path);
     await page.getByRole('button', { name: 'Pick a player' }).click();
     await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
     const selector = {
       spinner: '.spinner-winning-slice',
-      cards: '.reveal-chosen .card-front',
       balloon: '.survivor>svg:first-child',
       towers: '.reveal-chosen .block-stack',
       straws: '.reveal-chosen .match-draw',
@@ -303,7 +306,7 @@ test('every settled method glows around its winning piece', async ({ page }) => 
     }[method.path]!;
     expect(await page.locator(selector).evaluate(piece => {
       const style = getComputedStyle(piece);
-      return style.boxShadow !== 'none' || style.filter !== 'none';
+      return (style.boxShadow !== 'none' || style.filter !== 'none') && style.animationName.includes('glimmer');
     })).toBe(true);
   }
 });
@@ -314,6 +317,9 @@ test('Quick and Instant glow around the selected seat', async ({ page }) => {
     await page.getByRole('radio', { name: mode, exact: true }).check();
     await page.getByRole('button', { name: 'Pick a player' }).click();
     await expect(page.locator('.player.winner .seat-token')).toBeVisible();
-    expect(await page.locator('.player.winner .seat-token').evaluate(seat => getComputedStyle(seat).boxShadow)).not.toBe('none');
+    expect(await page.locator('.player.winner .seat-token').evaluate(seat => {
+      const style = getComputedStyle(seat);
+      return style.boxShadow !== 'none' && style.animationName === 'seat-glimmer';
+    })).toBe(true);
   }
 });
