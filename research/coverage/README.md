@@ -128,3 +128,5 @@ Amalfi, Age of Civilization, Bardwood Grove and Arboretum add four researched id
 
 1923 Cotton Club, Around the World in 80 Days, Asante, Betta, Bombay, Booo!, Chaudron Party and Chinatown add eight researched identities. Seven criteria join the portable mix; Booo! assigns an opening role before simultaneous route searching. The inspected manuals preserve the 2016 Purple Brain identity of Around the World in 80 Days, Betta's Staff Members mode, Bombay's later set rotation and the official alternatives in Around the World in 80 Days and Chaudron Party. Z-Man hosts the Chinatown booklet; the other complete publisher-authored English manuals are preserved by a rulebook archive. Rendered pages and source hashes are recorded in the drafts.
 
+The 30 popular-game priority titles now have approved records. Twelve were added on `main` while this branch was in progress; 18 additional titles receive reviewed English-edition rules on this branch. The new records distinguish role assignments, simultaneous phases, initiative and random selection, so none joins the portable random mix. See [popular-thirty-progress.md](popular-thirty-progress.md).
+
