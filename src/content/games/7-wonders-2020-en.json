@@ -3,8 +3,8 @@
   "slug": "7-wonders-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8d045feb5b0fa022fc617cab91083fbf8c5600d86e154f5ba2908fe3d8576c5b",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "57b2e5abd0ae948fa48ccbf174fa109fec0c92198f4469817a08f0cb3887de12",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "7 Wonders",
@@ -12,7 +12,7 @@
     "Seven Wonders",
     "7 Wonders base game"
   ],
-  "editionLabel": "English base game · 2020 edition",
+  "editionLabel": "Repos Production English base game · 2020 edition",
   "firstPlayerRule": "Everyone chooses a card at the same time, then reveals and plays it together. There is no single starting player in normal play.",
   "officialTieBreak": "Not applicable: players choose and play simultaneously.",
   "houseFallback": null,
@@ -38,7 +38,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Read the publisher PDF and visually checked page 4. Card choice and reveal are simultaneous, with a separate teaching recommendation. Credits identify the 2020 edition. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\7-wonders-e5bb1311.pdf; SHA-256 b65a797b0bf8ef586d0d6a7b2f74fbc04ad310cbd28a102ed90ba539f4ba6779. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. Normal card selection and play are simultaneous; the teaching suggestion does not appoint a starter.",
+  "internalEvidence": "Read the publisher PDF and visually checked page 4. Card choice and reveal are simultaneous, with a separate teaching recommendation. Credits identify the 2020 edition. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\7-wonders-e5bb1311.pdf; SHA-256 b65a797b0bf8ef586d0d6a7b2f74fbc04ad310cbd28a102ed90ba539f4ba6779. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. Normal card selection and play are simultaneous; the teaching suggestion does not appoint a starter. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "Do not apply turn-order rules from Duel or expansions."
   ]

@@ -3,13 +3,13 @@
   "slug": "verso-gigamic-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "26357f59c6a6c7605fda2a814faa96e455e4287038c49e27fdc1961d672829fb",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "c407b10db98e2c4ff8a6a3a3b42e57361db65a640b637cd801282e4f82270bbe",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Verso",
   "aliases": [],
-  "editionLabel": "English Gigamic rules, two-sheet publisher file, multiplayer setup",
+  "editionLabel": "English Gigamic rules, multiplayer setup",
   "firstPlayerRule": "The player who went on a journey most recently takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.gigamic.com/family-games/1237-verso.html. Finding: The player who went on a journey most recently takes the first turn. Local source SHA-256: c377bf18ea74a80bc9502ec8c41cd3242073bb26aef17e5048420326945965cc. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode and opening-turn context against rendered publisher PDFs. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.gigamic.com/family-games/1237-verso.html. Finding: The player who went on a journey most recently takes the first turn. Local source SHA-256: c377bf18ea74a80bc9502ec8c41cd3242073bb26aef17e5048420326945965cc. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode and opening-turn context against rendered publisher PDFs. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

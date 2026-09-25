@@ -1,0 +1,29 @@
+{
+  "id": "the-magic-labyrinth-schmidt-de-summary",
+  "slug": "the-magic-labyrinth-schmidt-de-summary",
+  "gameName": "The Magic Labyrinth",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Schmidt Spiele/Drei Magier German rules summarized in English",
+  "firstPlayerRule": "The player who most recently got lost begins.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play then proceeds in turn order. This is the standard magnetic labyrinth board game; the publisher also lists a separate travel edition."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/40848_Das_magische_Labyrinth_DE_GB_FR_IT.pdf",
+    "title": "Das magische Labyrinth — Schmidt Spiele/Drei Magier rules",
+    "publisher": "Schmidt Spiele",
+    "printedPages": ["6"],
+    "pdfPagesOneBased": [6],
+    "location": "German section, Spielverlauf, opening sentence",
+    "checkedAt": "2026-09-25"
+  }],
+  "internalEvidence": "The current Schmidt Spiele product page https://www.schmidtspiele.de/details/produkt/das-magische-labyrinth.html links article 40848. The linked 16-page image-only booklet was rendered and German printed page 6 read visually. Under Spielverlauf it states 'Gespielt wird reihum. Der Spieler, der sich zuletzt verlaufen hat, beginnt.' The three-language booklet shows German, French and Italian sections despite GB in its filename. This answer is an English summary of the German text. Downloaded PDF SHA-256: 9066d634cdaa53ef1fae843c926636b6d8ed8eb367166e878dee339b50d434d3. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": ["The German source does not state a tie-break or fallback for players who cannot identify a most-recent time they got lost.", "Other editions may differ."],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "79972912bc9821449025fe2405c87f1a82a6691e20c095bd6340dd0b59586bb9",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

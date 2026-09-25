@@ -1,10 +1,15 @@
 {
   "id": "pies-allplay-en",
   "slug": "pies-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "bf1a764c3bbece7bffe7410285fff1592316337aae89e1ab2a63662b4112284e",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Pies",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "The player who most recently ate a piece of pie leads the first trick.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -26,14 +31,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/pies. Finding: The player who most recently ate a piece of pie leads the first trick. Local source SHA-256: 0cc24d41ec8f99ceb9c02139007cf0f650e36ab33f8b251715a8481ac953c6b7. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; the last person to eat pie leads the first trick, while later leaders follow the order-token rules. Random mix: include; the personal-history criterion independently selects an opening player.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/pies. Finding: The player who most recently ate a piece of pie leads the first trick. Local source SHA-256: 0cc24d41ec8f99ceb9c02139007cf0f650e36ab33f8b251715a8481ac953c6b7. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; the last person to eat pie leads the first trick, while later leaders follow the order-token rules. Random mix: include; the personal-history criterion independently selects an opening player. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7e4f19ba49a7cf2fd316a9b0a2524573255eee749681dbe548643f658b9ca8b1",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

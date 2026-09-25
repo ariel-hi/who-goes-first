@@ -3,13 +3,13 @@
   "slug": "santa-monica",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a05cf27caebd7bf7f688a2fa3d3d642b4243a8621ef6acfbf6c608f34873c07a",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "ed07e8db7a1804eee7ebd2c3ec2c0529f68103d1973e45380c78681f5ff85aeb",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Santa Monica",
   "aliases": [],
-  "editionLabel": "English AEG base-game rules, twelve-page optimized publisher PDF",
+  "editionLabel": "English AEG base-game rules",
   "firstPlayerRule": "The player who most recently visited a beach goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/santa-monica/. Finding: The player who most recently visited a beach goes first. Local source SHA-256: 1af91bf663e3e6b7da59dc4efc9935da8aaf99735e3c11bef0cbb25534f9a3ec. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/santa-monica/. Finding: The player who most recently visited a beach goes first. Local source SHA-256: 1af91bf663e3e6b7da59dc4efc9935da8aaf99735e3c11bef0cbb25534f9a3ec. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

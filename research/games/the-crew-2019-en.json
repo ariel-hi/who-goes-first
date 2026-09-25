@@ -1,12 +1,19 @@
 {
   "id": "the-crew-2019-en",
+  "slug": "the-crew-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "The Crew: The Quest for Planet Nine",
   "aliases": [
     "The Crew",
     "Quest for Planet Nine",
     "The Crew Planet Nine"
   ],
-  "editionLabel": "English base game · copyright 2019, standard 3–5 player rules",
+  "editionLabel": "Thames & Kosmos English base game · copyright 2019, standard 3–5 player rules",
   "firstPlayerRule": "Whoever holds the four-rocket card becomes the commander. The commander chooses the first task and leads the first trick.",
   "officialTieBreak": "Not applicable: only one player holds the four-rocket card.",
   "houseFallback": null,
@@ -14,12 +21,6 @@
     "The commander also leads the opening trick when the mission has no task cards. After that, the winner of each trick leads the next.",
     "This entry covers the original Planet Nine game’s standard rules, not Mission Deep Sea or the two-player variant."
   ],
-  "internalEvidence": "Read the official product manual; visually checked page 10. Page 8 assigns command to the four-rocket holder; page 10 gives the commander the opening lead, including task-free missions.",
-  "uncertainty": [
-    "Randomly replacing the commander would change the official card-based setup."
-  ],
-  "slug": "the-crew-2019-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -40,9 +41,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Read the official product manual; visually checked page 10. Page 8 assigns command to the four-rocket holder; page 10 gives the commander the opening lead, including task-free missions.",
+  "uncertainty": [
+    "Randomly replacing the commander would change the official card-based setup."
+  ]
 }

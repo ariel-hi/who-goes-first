@@ -6,7 +6,7 @@ import { clearPreferences, defaults, readPreferences, writePreferences, type Mod
 import { analytics } from '../lib/analytics';
 import { cleanLink, shareLink } from '../lib/share';
 import { playChime } from '../lib/sound';
-import { presentations, revealDuration, supportsGroup } from '../lib/presentations';
+import { presentations, primaryModes, revealDuration, supportsGroup } from '../lib/presentations';
 import { createRevealPlan, playerColor, type RevealPlan } from '../lib/reveal-plan';
 import ModeIcon from './ModeIcon';
 import PlayerName from './PlayerName';
@@ -35,6 +35,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const [manualLink, setManualLink] = useState('');
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [bulkOpen, setBulkOpen] = useState(false);
+  const [moreModes, setMoreModes] = useState(false);
   const [revealPlan, setRevealPlan] = useState<RevealPlan | null>(null);
   const [state, dispatch] = useReducer(pickerReducer, { phase: 'ready', outcome: null });
   const draw = useRef(0);
@@ -51,6 +52,11 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const reduced = systemReduced || prefs.motion === 'reduce';
   const busy = state.phase === 'revealing';
   const effectiveMode = supportsGroup(mode, eligible.length) ? mode : 'quick';
+  // Primary methods first, so opening "More methods" only appends and nothing shifts.
+  const available = presentations.filter(option => (balloonEnabled || option.id !== 'balloon') && supportsGroup(option.id, eligible.length))
+    .sort((a, b) => Number(!primaryModes.includes(a.id)) - Number(!primaryModes.includes(b.id)));
+  // A short first row avoids a wall of choices; a saved or linked method stays visible.
+  const showAllModes = moreModes || !primaryModes.includes(effectiveMode) || available.length <= primaryModes.length + 1;
   const winner = state.outcome?.players.find(p => p.id === state.outcome?.winnerId);
   const winnerLabel = winner && state.outcome ? displayLabel(winner, state.outcome.players) : '';
 
@@ -193,15 +199,15 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         <fieldset disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Your players</legend>
           <div className="players-heading">
+            <div className="roster-tools">
+              <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { if (state.phase === 'result') edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
+            </div>
             <div className="stepper">
               <button type="button" aria-label="Remove a player" disabled={players.length <= 2} onClick={() => resizeGroup(players.length - 1)}>−</button>
               <label className="sr-only" htmlFor="player-count">Player count</label>
               <input id="player-count" type="text" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={countDraft} onChange={e => typeCount(e.target.value)} onBlur={() => setCountDraft(String(players.length))} onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); if (e.key === 'Escape') { setCountDraft(String(players.length)); e.currentTarget.blur(); } }} />
               <button type="button" aria-label="Add a player" disabled={players.length >= 50} onClick={() => resizeGroup(players.length + 1)}>+</button>
             </div>
-          </div>
-          <div className="roster-tools">
-            <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { if (state.phase === 'result') edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
           </div>
           {bulkOpen && <div className="name-editor" id="bulk-names">
             <label htmlFor="names">Player names <span className="muted small">One per line · up to 24 characters.</span></label>
@@ -224,10 +230,11 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         <fieldset className="reveal-options" disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Choose your reveal</legend>
           <div className="segmented">
-            {presentations.filter(option => (balloonEnabled || option.id !== 'balloon') && supportsGroup(option.id, eligible.length)).map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
+            {available.filter(option => showAllModes || primaryModes.includes(option.id)).map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
               <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onChange={() => { setMode(option.id); if (state.phase === 'result') { lastStart.current = -Infinity; dispatch({ type: 'EDIT', valid: !errors.length }); } }} />
               <ModeIcon mode={option.id} /><span>{option.label}</span>
             </label>)}
+            {!showAllModes && <button type="button" className="more-modes" onClick={e => { const group = e.currentTarget.parentElement!; const shown = group.querySelectorAll('input').length; setMoreModes(true); requestAnimationFrame(() => group.querySelectorAll('input')[shown]?.focus()); }}><span aria-hidden="true">•••</span><span>More methods</span></button>}
           </div>
         </fieldset>
         {error && <p role="alert" className="error">{error}</p>}

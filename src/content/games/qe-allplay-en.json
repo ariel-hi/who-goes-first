@@ -1,13 +1,18 @@
 {
   "id": "qe-allplay-en",
   "slug": "qe-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "89b51a0c86c61ea697ccae93c91f942f57273705bfcad20defa3a8fe02b3e76a",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "QE",
   "aliases": [
     "Q.E.",
     "Quantitative Easing"
   ],
-  "language": "en",
-  "editionLabel": "English rules linked by Allplay, publisher file labeled 2019 EN",
+  "editionLabel": "English rules linked by Allplay",
   "firstPlayerRule": "Whoever visited a bank most recently is the first auctioneer and takes the First Auctioneer Token.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,14 +35,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/qe. Finding: Whoever visited a bank most recently is the first auctioneer and takes the First Auctioneer Token. Local source SHA-256: 36d719457c9aff11290fa60fc40d536c3a4817e0fd27e1123311b8d474a96f6f. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF page 1, setup step 5; the recent bank visitor receives the First Auctioneer Token, which stays with that player as a round-start reminder. Random mix: exclude; this assigns a game-specific auctioneer role.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/qe. Finding: Whoever visited a bank most recently is the first auctioneer and takes the First Auctioneer Token. Local source SHA-256: 36d719457c9aff11290fa60fc40d536c3a4817e0fd27e1123311b8d474a96f6f. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF page 1, setup step 5; the recent bank visitor receives the First Auctioneer Token, which stays with that player as a round-start reminder. Random mix: exclude; this assigns a game-specific auctioneer role. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "cc01a281c4bd88b21f4af6ee6b474f97acb13c9f2bedb5a71da5039f6d3012ec",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

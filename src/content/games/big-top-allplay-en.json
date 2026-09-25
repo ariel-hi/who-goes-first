@@ -1,10 +1,15 @@
 {
   "id": "big-top-allplay-en",
   "slug": "big-top-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "922fd784c0567e10a6f612ef63abd26bb91ed9b94ecc65f93cc4bbae8cc96f33",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Big Top",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "The person most afraid of clowns becomes the first auctioneer.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -27,14 +32,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/big-top. Finding: The person most afraid of clowns becomes the first auctioneer. Local source SHA-256: 3c3bd3aa5db835ca826db11b8ee00d6bc8a05d401ddd18b8ac8669884214f7e2. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; the person most afraid of clowns becomes first auctioneer and opens the first auction. This is distinct from Gamewright Big Top. Random mix: exclude; this assigns a game-specific auctioneer role.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/big-top. Finding: The person most afraid of clowns becomes the first auctioneer. Local source SHA-256: 3c3bd3aa5db835ca826db11b8ee00d6bc8a05d401ddd18b8ac8669884214f7e2. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; the person most afraid of clowns becomes first auctioneer and opens the first auction. This is distinct from Gamewright Big Top. Random mix: exclude; this assigns a game-specific auctioneer role. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "35303538b5f374736d418f8a8de758363b05adc84091230026c67de92db50737",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

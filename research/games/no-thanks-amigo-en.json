@@ -1,10 +1,15 @@
 {
   "id": "no-thanks-amigo-en",
   "slug": "no-thanks-amigo-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "No Thanks!",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English AMIGO rules, 20-page publisher booklet",
+  "editionLabel": "English AMIGO rules",
   "firstPlayerRule": "Whoever said “No thanks!” most recently starts by revealing the top card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -25,14 +30,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2455&select=downloads. Finding: Whoever said “No thanks!” most recently starts by revealing the top card. Local source SHA-256: f7f336d00662ec5dfd682aa56a1e7a64810ea9a262f519a931cabc48beb74b2e. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2455&select=downloads. Finding: Whoever said “No thanks!” most recently starts by revealing the top card. Local source SHA-256: f7f336d00662ec5dfd682aa56a1e7a64810ea9a262f519a931cabc48beb74b2e.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

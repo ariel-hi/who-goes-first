@@ -1,12 +1,17 @@
 {
   "id": "trans-siberian-railroad-rio-grande-en",
   "slug": "trans-siberian-railroad-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Trans-Siberian Railroad",
   "aliases": [
     "Trans Siberian Railroad"
   ],
-  "language": "en",
-  "editionLabel": "English rules · TSR-Rules-20200811 publisher file",
+  "editionLabel": "Rio Grande Games English rules, 2020",
   "firstPlayerRule": "The person who most recently visited Russia opens the initial auction, unless the group agrees on another method.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -34,14 +39,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/trans-siberian-railroad/. Finding: The person who most recently visited Russia opens the initial auction, unless the group agrees on another method. Local source SHA-256: cc4ef537d190ffda626e11f28c45d717944788afe219d64d04301c9697d13839. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/trans-siberian-railroad/. Finding: The person who most recently visited Russia opens the initial auction, unless the group agrees on another method. Local source SHA-256: cc4ef537d190ffda626e11f28c45d717944788afe219d64d04301c9697d13839.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

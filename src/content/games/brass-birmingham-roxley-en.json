@@ -1,0 +1,45 @@
+{
+  "id": "brass-birmingham-roxley-en",
+  "slug": "brass-birmingham-roxley-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "925197bb27fea5f12f43b6ba50849dbf67b74bc99e5b85909d88a8a884ff4b7d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Brass: Birmingham",
+  "aliases": [
+    "Brass Birmingham"
+  ],
+  "editionLabel": "Roxley English rulebook, 2018",
+  "firstPlayerRule": "During setup, shuffle all players’ Character tiles and place them in a random order on the Turn Order Track. Players take turns in that order in the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the end of each round, the player who spent the least money that round goes first next round and the biggest spender goes last. Players who spent equal amounts keep their relative order.",
+    "In the first round of the Canal Era, each player takes only one action instead of two."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0246/2190/8043/files/Brass-Birmingham-Rulebook.pdf?v=1758826281",
+      "title": "Brass: Birmingham — English rulebook",
+      "publisher": "Roxley Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4
+      ],
+      "location": "Page 5, Player Area Setup; page 6, Rounds, Player Turns and End of Round step 1 (Determine turn order); copyright on the components page",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rulebook linked from the publisher page https://roxley.com/products/brass-birmingham (roxley.com/brass-birmingham-rulebook redirects there). SHA-256: bb627a11c769957fbb5f26a210e3957ae27a2bad054ba9cb3b4fadc6c2ba73e5. The PDF uses two-page spreads: PDF page 3 is printed pages 4–5 and PDF page 4 is printed pages 6–7. Rendered and read printed page 5 (Player Area Setup: shuffle Character tiles into random order on the Turn Order Track) and page 6 (turns follow the Turn Order Track; end-of-round reordering by least money spent, ties keep relative order; one action in the first Canal Era round). PDF page 1 states Copyright 2018 Roxley Games, Rulebook v2018.11, identifying Brass: Birmingham (BGG 224517). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook describes itself as a living document; this record reflects the v2018.11 file hosted on the publisher page."
+  ]
+}

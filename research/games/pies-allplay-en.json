@@ -1,10 +1,15 @@
 {
   "id": "pies-allplay-en",
   "slug": "pies-allplay-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Pies",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "The player who most recently ate a piece of pie leads the first trick.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,10 +35,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

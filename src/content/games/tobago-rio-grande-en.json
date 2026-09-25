@@ -3,13 +3,13 @@
   "slug": "tobago-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "c29895436ff34e1182c0e9922585ced951fcc5fc66e3bda91efb5310ec6a76f5",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "29d2a2b6442e4fa54489cfe7e6a8d57f6d48dcde781d59c2e75d4de6b729a5d9",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Tobago",
   "aliases": [],
-  "editionLabel": "English rules · two-page folded publisher PDF",
+  "editionLabel": "Rio Grande Games English rules",
   "firstPlayerRule": "The person who most recently visited an island starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/tobago-2/. Finding: The person who most recently visited an island starts. Local source SHA-256: 31f4b5805ee4c39c22352c6435c228d3574c5f61e8b8dba5216fa085982fe204. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. An island visit selects the first regular-turn player; clockwise play and the printed panel number were checked. Later treasure-distribution order is separate.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/tobago-2/. Finding: The person who most recently visited an island starts. Local source SHA-256: 31f4b5805ee4c39c22352c6435c228d3574c5f61e8b8dba5216fa085982fe204. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. An island visit selects the first regular-turn player; clockwise play and the printed panel number were checked. Later treasure-distribution order is separate. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

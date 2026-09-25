@@ -3,13 +3,13 @@
   "slug": "alchemists-cge-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "126809a58443a95937b974e6eaa3c1f1e5720096b23d0cdca07163e932ada625",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "67cf07859b31b45eb2bafeea6632d85bfc6a27c2444fca1487e32771a68d33c4",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Alchemists",
   "aliases": [],
-  "editionLabel": "English CGE base-game rules, 20-page publisher booklet",
+  "editionLabel": "English CGE base-game rules",
   "firstPlayerRule": "Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -37,7 +37,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/alchemists. Finding: Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first. Local source SHA-256: e81afad5ffb257d5c7cb433455e6977ff61bfcccdab82e3fcedcd572d5bf57a3. Editorial recheck 2026-09-23: Re-read the listed setup and gameplay pages and opened each rendered page. Selects the order-space chooser; separate ordering determines action declaration and resolution. Cached source: research\\source-files\\cge\\alchemists-49da6848.pdf; SHA-256 e81afad5ffb257d5c7cb433455e6977ff61bfcccdab82e3fcedcd572d5bf57a3. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; Selects the order-space chooser; separate ordering determines action declaration and resolution.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/alchemists. Finding: Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first. Local source SHA-256: e81afad5ffb257d5c7cb433455e6977ff61bfcccdab82e3fcedcd572d5bf57a3. Editorial recheck 2026-09-23: Re-read the listed setup and gameplay pages and opened each rendered page. Selects the order-space chooser; separate ordering determines action declaration and resolution. Cached source: research\\source-files\\cge\\alchemists-49da6848.pdf; SHA-256 e81afad5ffb257d5c7cb433455e6977ff61bfcccdab82e3fcedcd572d5bf57a3. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; Selects the order-space chooser; separate ordering determines action declaration and resolution. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

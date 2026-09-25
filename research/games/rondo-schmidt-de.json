@@ -1,0 +1,40 @@
+{
+  "id": "rondo-schmidt-de",
+  "slug": "rondo-schmidt-de",
+  "gameName": "Rondo",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English summary of Schmidt Spiele German rules for Reiner Knizia's Rondo",
+  "firstPlayerRule": "The 'roundest' player begins.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play then continues clockwise.",
+    "The booklet does not define how the players should judge who is 'roundest.'"
+  ],
+  "interpretation": "Translated from the German instruction: Der 'rundeste' Spieler beginnt das Spiel.",
+  "sources": [
+    {
+      "url": "https://www.brettspiele-report.de/images/r/rondo/Spielanleitung-Rondo.pdf",
+      "title": "Rondo — Spielanleitung",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Spielablauf",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The Schmidt Spiele German booklet preserved by Brettspiele-Report identifies Reiner Knizia's Rondo for 2–4 players, matching BGG identity 129614. Its cover and printed/PDF page 2 were rendered and visually checked. Mirror PDF SHA-256: 32f7bacdb19ebf49ca36c42dc2cabbad18fee97e8e9f464174cf3ef28ee4a62f. This is an English summary of a German manual, not an English publisher edition. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The subjective 'roundest' criterion has no stated tie-break or fallback."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ff8cd595f6894c8e9851bc28c7ec44fd6b8bc03cc61c3e337ea5c09dac548be5",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

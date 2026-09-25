@@ -3,13 +3,13 @@
   "slug": "cat-lady",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "08d07c46b43d39543d687b547d12f10993fdf6f8835df9e1bce50f7cb9cda0ed",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "fbcc3926e7b0c0a70e1e63d33e8bd13dbf1e8b54f55cbfe9a086a8d4be9151a3",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Cat Lady",
   "aliases": [],
-  "editionLabel": "English AEG base-game rules, eight-page optimized publisher PDF",
+  "editionLabel": "English AEG base-game rules",
   "firstPlayerRule": "The player who has the most cats in real life starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/cat-lady/. Finding: The player who has the most cats in real life starts. Local source SHA-256: 6c3164c3001e4a90a5f59d1b8d2c894ba1c55742f163f662241ed8e9d90441fe. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/cat-lady/. Finding: The player who has the most cats in real life starts. Local source SHA-256: 6c3164c3001e4a90a5f59d1b8d2c894ba1c55742f163f662241ed8e9d90441fe. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

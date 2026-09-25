@@ -1,10 +1,15 @@
 {
   "id": "cloud-city-blue-orange-us-en",
   "slug": "cloud-city-blue-orange-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Cloud City",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English US rules · two-page folded publisher PDF",
+  "editionLabel": "Blue Orange English US rules",
   "firstPlayerRule": "The player whose head is most in the clouds starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,10 +37,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The player whose head is most in the clouds starts. Local source SHA-256: 5778f02f57c3e7203ca5dbda269ab338040d2b28a2c90b9e91244ba6317a86e7.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

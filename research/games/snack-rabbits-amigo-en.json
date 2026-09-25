@@ -1,10 +1,15 @@
 {
   "id": "snack-rabbits-amigo-en",
   "slug": "snack-rabbits-amigo-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Snack Rabbits",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English AMIGO rules, two-sheet publisher PDF",
+  "editionLabel": "English AMIGO rules",
   "firstPlayerRule": "The player who most enjoys nibbling carrots starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -27,10 +32,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

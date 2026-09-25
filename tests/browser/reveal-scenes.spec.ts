@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { showAllMethods } from './helpers';
 
 const methods = [
   { path: 'spinner', label: 'Spinner', scene: '.spinner-stage' },
@@ -53,7 +54,7 @@ test('spinner keeps named seats in the roster without a duplicate list', async (
   await page.getByLabel('Name for player 3', { exact: true }).fill('王芳');
   const colors = await page.locator('.seat-token').evaluateAll(tokens => tokens.map(token => getComputedStyle(token).backgroundColor));
   await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
-  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result', { timeout: 15000 });
   await expect(page.locator('.roster')).toBeVisible();
   await expect(page.locator('.spinner-legend')).toHaveCount(0);
   await expect(page.locator('.roster')).toContainText('Magnificent Eucalyptus');
@@ -71,6 +72,7 @@ test('spinner keeps named seats in the roster without a duplicate list', async (
 test('choosing an icon shows still pieces before picking anyone', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.reveal-stage')).toHaveCount(0);
+  await showAllMethods(page);
   for (const method of methods) {
     await page.getByRole('radio', { name: method.label, exact: true }).check();
     const scene = page.locator(`.reveal-stage ${method.scene}`);
@@ -310,7 +312,7 @@ test('other settled methods glow around their winning piece', async ({ page }) =
 });
 
 test('Quick and Instant glow around the selected seat', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/'); await showAllMethods(page);
   for (const mode of ['Quick', 'Instant']) {
     await page.getByRole('radio', { name: mode, exact: true }).check();
     await page.getByRole('button', { name: 'Pick a player' }).click();

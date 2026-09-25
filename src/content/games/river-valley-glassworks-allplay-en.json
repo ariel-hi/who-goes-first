@@ -1,10 +1,15 @@
 {
   "id": "river-valley-glassworks-allplay-en",
   "slug": "river-valley-glassworks-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "3394c169813192413c222dfe00d1eca56e4ff4effdde0dcb0a2bd1b270a4b5ee",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "River Valley Glassworks",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay multiplayer rules, four-page publisher PDF",
+  "editionLabel": "English Allplay multiplayer rules",
   "firstPlayerRule": "Whoever saw a river most recently takes the first-player marker and starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -23,14 +28,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/river-valley-glassworks. Finding: Whoever saw a river most recently takes the first-player marker and starts. Local source SHA-256: 37928acf1d3f606534f4dea384b2018cb2dadf9af6174bc30b1cef71867c65fb. The extracted text misnumbers this instruction as step 2; rendered page shows step 5. This is the multiplayer manual, not the separate solo rulebook. Codex editorial review under the owner's 2026-09-22 authorization: visually checked setup step 5 on PDF page 1 and sequential clockwise game turns on PDF page 2. Random mix: include; the river-sighting criterion independently selects the first player.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/river-valley-glassworks. Finding: Whoever saw a river most recently takes the first-player marker and starts. Local source SHA-256: 37928acf1d3f606534f4dea384b2018cb2dadf9af6174bc30b1cef71867c65fb. The extracted text misnumbers this instruction as step 2; rendered page shows step 5. This is the multiplayer manual, not the separate solo rulebook. Codex editorial review under the owner's 2026-09-22 authorization: visually checked setup step 5 on PDF page 1 and sequential clockwise game turns on PDF page 2. Random mix: include; the river-sighting criterion independently selects the first player. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "eab91e801927e91f515839938a74f6bf431bcb13da86ffac2d8771eafb234007",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

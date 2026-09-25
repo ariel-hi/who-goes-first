@@ -1,12 +1,17 @@
 {
   "id": "valley-of-the-kings-premium-en",
   "slug": "valley-of-the-kings-premium-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Valley of the Kings",
   "aliases": [
     "Valley of the Kings Premium Edition"
   ],
-  "language": "en",
-  "editionLabel": "Premium Edition, English AEG rules, eight-page publisher PDF",
+  "editionLabel": "Premium Edition, English AEG rules",
   "firstPlayerRule": "Choose the starting player randomly.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -42,14 +47,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/valley-of-the-kings/. Finding: Choose the starting player randomly. Local source SHA-256: e4a69917ee1bfdfb958ba57d48fb1692a7ea654ec0efbc4ee058c04230ed3c01. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/valley-of-the-kings/. Finding: Choose the starting player randomly. Local source SHA-256: e4a69917ee1bfdfb958ba57d48fb1692a7ea654ec0efbc4ee058c04230ed3c01.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

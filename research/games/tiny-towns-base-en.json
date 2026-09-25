@@ -1,13 +1,40 @@
 {
-  "id": "tiny-towns-base-en", "slug": "tiny-towns-base-en", "gameName": "Tiny Towns", "aliases": [], "language": "en",
-  "editionLabel": "English base game · eight-page publisher rulebook",
+  "id": "tiny-towns-base-en",
+  "slug": "tiny-towns-base-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Tiny Towns",
+  "aliases": [],
+  "editionLabel": "Alderac Entertainment Group English base game · copyright 2019",
   "firstPlayerRule": "Give the Master Builder hammer to whoever built something most recently outside the game. That person starts.",
   "officialTieBreak": null,
   "houseFallback": "If the group cannot identify a starter, agree to choose one randomly. This is a house rule.",
-  "clarifications": ["This entry describes the normal multiplayer setup, not the Town Hall or solo variant."],
+  "clarifications": [
+    "This entry describes the normal multiplayer setup, not the Town Hall or solo variant."
+  ],
   "interpretation": null,
-  "sources": [{"url": "https://www.alderac.com/wp-content/uploads/2024/05/Tiny_Towns_Rulebook_WEB.pdf", "title": "Tiny Towns — English rulebook", "publisher": "Alderac Entertainment Group", "printedPages": ["2"], "pdfPagesOneBased": [2], "location": "Page 2, Setup step 9", "checkedAt": "2026-09-22"}],
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2024/05/Tiny_Towns_Rulebook_WEB.pdf",
+      "title": "Tiny Towns — English rulebook",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Page 2, Setup step 9",
+      "checkedAt": "2026-09-22"
+    }
+  ],
   "internalEvidence": "The PDF linked on https://www.alderac.com/tiny-towns/ was downloaded and Setup step 9 visually inspected on printed/PDF page 2. It selects the person who most recently constructed something in real life and gives that player the hammer. This PDF is rasterized; text extraction alone did not expose the instruction.",
-  "uncertainty": ["No construction-recency tie-break is stated in step 9.", "The URL's 2024 date is not asserted to be the game's edition year."],
-  "status": "draft", "approvedBy": null, "approvedRevision": null, "publishedAt": null, "materiallyUpdatedAt": null
+  "uncertainty": [
+    "No construction-recency tie-break is stated in step 9.",
+    "The URL's 2024 date is not asserted to be the game's edition year."
+  ]
 }

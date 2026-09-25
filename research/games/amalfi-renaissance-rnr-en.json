@@ -1,10 +1,15 @@
 {
   "id": "amalfi-renaissance-rnr-en",
   "slug": "amalfi-renaissance-rnr-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Amalfi: Renaissance",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English R&R Games Renaissance rules, 24-page publisher booklet",
+  "editionLabel": "English R&R Games Renaissance rules",
   "firstPlayerRule": "Whoever most recently visited the ocean receives the wind-rose marker and starts the game.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,14 +35,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/amalfi-renaissance. Finding: Whoever most recently visited the ocean receives the wind-rose marker and starts the game. Local source SHA-256: 605a60e024a7f2b5aa5cbb6f8438e092e444fe7bb1ff6b1a1e3ea593ad3a137d. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/amalfi-renaissance. Finding: Whoever most recently visited the ocean receives the wind-rose marker and starts the game. Local source SHA-256: 605a60e024a7f2b5aa5cbb6f8438e092e444fe7bb1ff6b1a1e3ea593ad3a137d.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

@@ -1,10 +1,17 @@
 {
   "id": "wingspan-online-en",
+  "slug": "wingspan-online-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Wingspan",
   "aliases": [
     "Wingspan base game"
   ],
-  "editionLabel": "English base game · official online rules, standard multiplayer",
+  "editionLabel": "Stonemaier Games English base game · official online rules, standard multiplayer",
   "firstPlayerRule": "Choose the starting player at random and give that player the first-player token.",
   "officialTieBreak": "A single random selection determines the starting player; no qualifying personal trait is required.",
   "houseFallback": null,
@@ -12,12 +19,6 @@
     "This entry covers standard play with human opponents. Automa, Duet and Flock modes have their own setup instructions.",
     "The random selection is the official setup instruction, not an added house rule."
   ],
-  "internalEvidence": "Stonemaier’s Wingspan rules page links Rulepop. Inspected the live setup with expansion sets disabled and standard human multiplayer selected; the first-player token instruction requires random selection.",
-  "uncertainty": [
-    "The online reference is live rather than a dated print edition; review future changes before updating this record."
-  ],
-  "slug": "wingspan-online-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -30,9 +31,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Stonemaier’s Wingspan rules page links Rulepop. Inspected the live setup with expansion sets disabled and standard human multiplayer selected; the first-player token instruction requires random selection.",
+  "uncertainty": [
+    "The online reference is live rather than a dated print edition; review future changes before updating this record."
+  ]
 }

@@ -3,15 +3,15 @@
   "slug": "fur-die-katz-zoch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f14b84ffdd3d871a8829e512f4063f33957db8bf751cc2f6cc28daf42339a95a",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "e7cb3e8eb1e50570bca1b58779d56c3af06d665726c182fa09a611a1acc84a63",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Für die Katz",
   "aliases": [
     "Fuer die Katz"
   ],
-  "editionLabel": "English section · twenty-page multilingual publisher PDF",
+  "editionLabel": "Zoch English rules",
   "firstPlayerRule": "The person who most recently petted a cat is the first cat seeker.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -36,7 +36,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/board-games/fuer-die-katz-601105158-en.html. Finding: The person who most recently petted a cat is the first cat seeker. Local source SHA-256: ba0aac8f731627f8968085acfa4ff323840abfcb846706b5a1975d1dd291c663. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The instruction assigns the cat-seeker role in a cooperative activity. The other players guide that person together.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/board-games/fuer-die-katz-601105158-en.html. Finding: The person who most recently petted a cat is the first cat seeker. Local source SHA-256: ba0aac8f731627f8968085acfa4ff323840abfcb846706b5a1975d1dd291c663. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The instruction assigns the cat-seeker role in a cooperative activity. The other players guide that person together. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

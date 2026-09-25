@@ -3,13 +3,13 @@
   "slug": "trismegistus-ultimate-formula-board-dice-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d6abd679e5252e74b1b3011346a35f2f1841477161a4fd8a9d71a3bc5f930002",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "3d3ef22ecf92e372e3785a81e79873a788e6a4e6db487f30d64dd09849c21545",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Trismegistus: The Ultimate Formula",
   "aliases": [],
-  "editionLabel": "English original Board&Dice rules, 28-page booklet",
+  "editionLabel": "English original Board&Dice rules",
   "firstPlayerRule": "For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -40,7 +40,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/trismegistus-the-ultimate-formula/. Finding: For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative. Local source SHA-256: 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036. Editorial recheck 2026-09-23: Opened and visually inspected each listed source-page render from the publisher-linked cached PDF. Rechecked starting role, mode and edition scope. Official alternatives remain in the main answer and are not mislabeled as tie-breaks. Cached source: research\\source-files\\board-dice\\trismegistus-the-ultimate-formula-74a6b0ed.pdf; SHA-256 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The full answer branches between introductory and standard setups, including an undefined alchemical-transmutation criterion. Keep that context in the directory.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/trismegistus-the-ultimate-formula/. Finding: For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative. Local source SHA-256: 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036. Editorial recheck 2026-09-23: Opened and visually inspected each listed source-page render from the publisher-linked cached PDF. Rechecked starting role, mode and edition scope. Official alternatives remain in the main answer and are not mislabeled as tie-breaks. Cached source: research\\source-files\\board-dice\\trismegistus-the-ultimate-formula-74a6b0ed.pdf; SHA-256 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The full answer branches between introductory and standard setups, including an undefined alchemical-transmutation criterion. Keep that context in the directory. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The standard setup does not define what qualifies as an alchemical transmutation.",
     "The answer applies to the identified publisher file; other editions may differ."

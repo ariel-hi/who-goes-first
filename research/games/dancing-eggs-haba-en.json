@@ -1,10 +1,15 @@
 {
   "id": "dancing-eggs-haba-en",
   "slug": "dancing-eggs-haba-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Dancing Eggs",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English HABA rules, eight-page publisher booklet",
+  "editionLabel": "English HABA rules",
   "firstPlayerRule": "The player who can jump the highest makes the first die roll.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -25,14 +30,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.habausa.com/collections/games/products/dancing-eggs. Finding: The player who can jump the highest makes the first die roll. Local source SHA-256: 14b976bcf41a2d2601caab1c02fa163fb5d79ad6263150ae25d376bdb0fe7b80. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.habausa.com/collections/games/products/dancing-eggs. Finding: The player who can jump the highest makes the first die roll. Local source SHA-256: 14b976bcf41a2d2601caab1c02fa163fb5d79ad6263150ae25d376bdb0fe7b80.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

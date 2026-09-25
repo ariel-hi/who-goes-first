@@ -1,0 +1,50 @@
+{
+  "id": "agricola-revised-edition-lookout-en",
+  "slug": "agricola-revised-edition-lookout-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "63edd42a01901878e5e3a0a3bd5c774fbed42866838035386db379d09f2bcce3",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Agricola",
+  "aliases": [
+    "Agricola: Revised Edition",
+    "Agricola (Revised Edition)"
+  ],
+  "editionLabel": "Revised Edition, Lookout Games English rules, 2016",
+  "firstPlayerRule": "Randomly determine who gets the starting player token. That player gets 2 food; each other player gets 3 food.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In each work phase, players place people beginning with the starting player and continuing clockwise.",
+    "The starting player does not change automatically. A player becomes starting player by using the “Meeting Place” action space; if no one uses it, the token stays put.",
+    "In the solo game you start with 0 food."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lookout-spiele.de/upload/en_agricolare.html_Rules_Agricola-RE_EN.pdf",
+      "title": "Agricola (Revised Edition) — English rulebook",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "1",
+        "3",
+        "6",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "location": "Page 3, Setup (starting player token); page 6, Work Phase; page 12, Starting Player and Solo Game; copyright on page 1",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Lookout’s Agricola (Revised Edition 2016) page https://www.lookout-spiele.de/en/games/agricolare.html hosts this English rulebook. Downloaded and text-extracted all 12 PDF pages. Page 3: randomly determine who gets the starting player token; that player gets 2 food, others 3. Page 6: work phase begins with the starting player, clockwise. Page 12: starting player changes only via Meeting Place; solo player starts with 0 food. Page 1: © 2016 Lookout GmbH, 1 to 4 players, matching BGG 200680. SHA-256: 1aa612ed43bdde109a0bfff900cf9322bae02e5b53f4ee3fe9f37d264ca8bc70. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This entry covers the 2016 Revised Edition. The original 2007 edition was not reviewed."
+  ]
+}

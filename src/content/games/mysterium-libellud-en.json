@@ -1,0 +1,47 @@
+{
+  "id": "mysterium-libellud-en",
+  "slug": "mysterium-libellud-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "3ee6730e0cca4be654eabb22fc0fbe9bfbbea2d11d27ba08f3533edf29291ef8",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Mysterium",
+  "aliases": [],
+  "editionLabel": "Libellud English rulebook, current website version",
+  "firstPlayerRule": "The rulebook doesn't say how to choose roles: assign one player as the ghost and everyone else as psychics. The game begins with the ghost's turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Mysterium is cooperative. During their turn, the ghost chooses which psychic to give each Vision to.",
+    "Psychics can start discussing as soon as they receive their first Vision.",
+    "With 3 players, each psychic plays two colours."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/07/MYST_REFRESH_RULES_EN-1_compressed.pdf",
+      "title": "Mysterium — English rulebook",
+      "publisher": "Libellud",
+      "printedPages": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Page 2, Game Setup roles and 3-Player variant; page 4, How to play a game round; pages 5–6, ghost and psychic turns",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the \"Rulebook English\" linked on the Libellud Mysterium page (https://www.libellud.com/game/mysterium/). SHA-256 bb1e3e38440599ad104d051efb33452be940fe63816a3b3f6cfe5f66ab50610d. The PDF stores two-page spreads; rendered PDF pages 2 and 3 and read them visually. Printed page 2: \"Before you begin playing, assign each player one of the following roles\" (one ghost, the rest psychics), with no selection method. Printed page 4: \"The game begins with the ghost's turn.\" Credits name Oleksandr Nevskiy and Oleg Sidorenko, matching BGG 181304. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No method for choosing the ghost is given; the group chooses.",
+    "No copyright year was found in the PDF text. The hosting path contains 2026, which is not treated as an edition date."
+  ]
+}

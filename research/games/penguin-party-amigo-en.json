@@ -1,0 +1,41 @@
+{
+  "id": "penguin-party-amigo-en",
+  "slug": "penguin-party-amigo-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "64dd08aa81f856b162eb056e047a6411ec05bf09043abe6f69bb37e7d9b3d53c",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Penguin Party",
+  "aliases": [],
+  "editionLabel": "AMIGO English rules",
+  "firstPlayerRule": "The player who has most recently seen a real penguin begins the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise.",
+    "The game has as many rounds as players, and the rules say each player starts once. They do not specify the order in which later-round starters are chosen.",
+    "The two-player variant changes the cards dealt and pyramid size; all other rules remain the same."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/57/82/47/Penguin_Party_rules.pdf",
+      "title": "Penguin Party — English rules",
+      "publisher": "AMIGO Spiele",
+      "printedPages": [
+        "unpaginated single sheet"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Preparation, End of the round, and Two-player variant",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "BGG file page https://boardgamegeek.com/filepage/170492/official-rules-for-pinguin-party-in-english-german describes official English and German Pinguin Party rules shared with AMIGO's permission. The English rule sheet was retrieved from Gamers HQ, rendered, and visually checked. BGG identity 56933. Mirror PDF SHA-256: a28550394e2fcf62dc1c8aab7db215badaec44c324b8e83f12ad1b63541f994e. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rules provide no tie-break or fallback for the real-penguin criterion, and no fixed order for later-round starting players."
+  ]
+}

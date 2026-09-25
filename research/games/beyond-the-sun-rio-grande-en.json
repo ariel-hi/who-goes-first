@@ -1,10 +1,15 @@
 {
   "id": "beyond-the-sun-rio-grande-en",
   "slug": "beyond-the-sun-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Beyond the Sun",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English base game · combined rules and setup sheet",
+  "editionLabel": "Rio Grande Games English base game · combined rules and setup sheet",
   "firstPlayerRule": "The person who most recently went to space starts.",
   "officialTieBreak": "Choose randomly if there is a tie.",
   "houseFallback": null,
@@ -29,10 +34,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/beyond-the-sun/. Finding: The person who most recently went to space starts. Local source SHA-256: 3495b2c7ec9e2ea50de64d4a37c14a1b89d286dc581fcb620391af27309963b9. The product's separate 24-page main rulebook omits the setup sheet. This record cites the publisher-hosted combined file, found through primary-source search, whose final two pages were both inspected.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

@@ -1,0 +1,42 @@
+{
+  "id": "copper-country-cmx-en",
+  "slug": "copper-country-cmx-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e7d6a7be3b533c40bf864e8135eba0f8362a8c195f00c0f9f1f0cddd61a273ff",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Copper Country",
+  "aliases": [],
+  "editionLabel": "CMX Games English rules",
+  "firstPlayerRule": "The player with the oldest penny goes first. The rules also explicitly allow the group to choose who starts by any method they prefer.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with the chosen player and continuing clockwise, each player contracts one miner during setup.",
+    "Once all players have a miner, the same starting player takes the first regular turn; play then continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/uc?export=download&id=1ujQziJLbT6wjLUUrwtOk-G6VWaGsT0Cl",
+      "title": "Copper Country — English rules",
+      "publisher": "CMX Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Setup, step 12 and footnote; Playing the Game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "CMX Games' Copper Country page https://www.cmxgames.com/copper-country/ embeds a Google Drive rulebook download for BGG identity 147206. The publisher-linked English PDF was retrieved after its authorized Googleusercontent redirect. Printed/PDF pages 5–6 were rendered and visually checked. Page 5 names the oldest penny and expressly allows any other selection method; page 6 confirms the first normal turn. Publisher-linked PDF SHA-256: f5bb705934303025f3246fac0fd4a500a9f14c37fa1657bb088c05afbae9e4bb. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The oldest-penny method gives no tie-break; the official any-method alternative lets groups resolve an unavailable or tied penny."
+  ]
+}

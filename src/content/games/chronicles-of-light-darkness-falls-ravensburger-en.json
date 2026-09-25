@@ -3,8 +3,8 @@
   "slug": "chronicles-of-light-darkness-falls-ravensburger-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d0a26a863684bf908c1eb8e0323a0db3180c682c5e33a8c5b1bbeff997f35db9",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "11eeacb9884280d251be735d2f6be50f8e41487c59291fbd2b9bdd5c0cd810ef",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Chronicles of Light: Darkness Falls – Disney Edition",
@@ -12,7 +12,7 @@
     "Chronicles of Light",
     "Chronicles of Light Darkness Falls"
   ],
-  "editionLabel": "Ravensburger English rules, copyright 2024, EN01",
+  "editionLabel": "Ravensburger English rules, copyright 2024",
   "firstPlayerRule": "There are no individual turns. Whoever most recently watched a Disney movie becomes the first round's Leader.",
   "officialTieBreak": null,
   "houseFallback": "If the movie criterion does not suit your group, agree to choose the first Leader randomly. This is a house rule.",
@@ -42,7 +42,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/strategy-games/chronicles-of-light-darkness-falls-60001971. Finding: There are no individual turns. Whoever most recently watched a Disney movie becomes the first round's Leader. Local source SHA-256: 25831970440009dd6490504b405c6c39516bc749ea11636841f8175c19ffee30. All four cited pages were inspected as rendered images. The movie criterion assigns the Leader rather than a conventional first turn. Later-round leadership has not been conflated with initial setup. The source footer identifies copyright 2024 and EN01. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Directory only: cooperative action choices have no individual turns; the movie criterion assigns a Leader.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/strategy-games/chronicles-of-light-darkness-falls-60001971. Finding: There are no individual turns. Whoever most recently watched a Disney movie becomes the first round's Leader. Local source SHA-256: 25831970440009dd6490504b405c6c39516bc749ea11636841f8175c19ffee30. All four cited pages were inspected as rendered images. The movie criterion assigns the Leader rather than a conventional first turn. Later-round leadership has not been conflated with initial setup. The source footer identifies copyright 2024 and EN01. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Directory only: cooperative action choices have no individual turns; the movie criterion assigns a Leader. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

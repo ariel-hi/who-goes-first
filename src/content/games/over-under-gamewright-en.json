@@ -3,13 +3,13 @@
   "slug": "over-under-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "45b9bd308d742f48847a47837ab19b798af01165ffabc682e63cb476babcf678",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "2889c9866d5b83fa0bcb3ab6ab3ef407298204d588c839574863ef0095398c70",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Over/Under",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 1-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "Whoever most recently walked under a bridge is the first question master.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever most recently walked under a bridge is the first question master. Local source SHA-256: 8c7e11a0ef97c8575ee7e6d7774f7f23022f40398870cbfd1fa289eb2d5fc362. Editorial review 2026-09-23: Rechecked the cited instruction, role and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever most recently walked under a bridge is the first question master. Local source SHA-256: 8c7e11a0ef97c8575ee7e6d7774f7f23022f40398870cbfd1fa289eb2d5fc362. Editorial review 2026-09-23: Rechecked the cited instruction, role and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

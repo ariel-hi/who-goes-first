@@ -3,8 +3,8 @@
   "slug": "smash-up-comprehensive-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "57cb44d5fce5e42a3501e19bc469841dfad480de6d4882ebb5703b58b8954036",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "bd70aa760272759df710237ca8a6ef84ebb6d4e12af1e1adda1d38fc77c2b929",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Smash Up",
@@ -12,7 +12,7 @@
     "Smash Up!",
     "Smash Up Bigger Geekier Box"
   ],
-  "editionLabel": "Bigger Geekier Box comprehensive rules, English, thirty-two-page publisher PDF",
+  "editionLabel": "Bigger Geekier Box comprehensive rules, English",
   "firstPlayerRule": "Check these fantasy events in order: alien abduction, pirate press-ganging, a vampire bite, dragon burns, a princess's kiss, Cthulhu-induced madness, a teddy-bear attack, or being eaten by an orc. The most recent match to the first applicable event starts.",
   "officialTieBreak": "If none of the events applies, the group decides who starts.",
   "houseFallback": null,
@@ -36,7 +36,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/smash-up/. Finding: Check these fantasy events in order: alien abduction, pirate press-ganging, a vampire bite, dragon burns, a princess's kiss, Cthulhu-induced madness, a teddy-bear attack, or being eaten by an orc. The most recent match to the first applicable event starts. Local source SHA-256: ce5f852fd2bccdaca0b8d438f6726dc96eb7db8c4a59a65d8c1fa3f88b9cdb77. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/smash-up/. Finding: Check these fantasy events in order: alien abduction, pirate press-ganging, a vampire bite, dragon burns, a princess's kiss, Cthulhu-induced madness, a teddy-bear attack, or being eaten by an orc. The most recent match to the first applicable event starts. Local source SHA-256: ce5f852fd2bccdaca0b8d438f6726dc96eb7db8c4a59a65d8c1fa3f88b9cdb77. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
   ]

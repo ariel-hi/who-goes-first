@@ -1,0 +1,42 @@
+{
+  "id": "captain-carcass-bombyx-en",
+  "slug": "captain-carcass-bombyx-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "92261627e507ba311c9a1eab137c9d74e33518f0b576fd760acf22ccaf41c629",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Captain Carcass",
+  "aliases": [],
+  "editionLabel": "Bombyx English rules (2015)",
+  "firstPlayerRule": "The player who saw the ocean most recently starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the end of each turn, play passes clockwise to the player on the left.",
+    "The optional Diver cards change card effects, but the same initial ocean criterion appears after that optional setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://studiobombyx.com/assets/CAPTAINECARCASSE_rulebook_US.pdf",
+      "title": "Captain Carcass — English rules",
+      "publisher": "Bombyx",
+      "printedPages": [
+        "unpaginated booklet pages"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        6,
+        8
+      ],
+      "location": "Setup, Starting Player; End of Turn; publisher credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Bombyx hosts this English Captain Carcass booklet for BGG identity 149155. PDF pages 3 and 6 were rendered and visually checked for starting selection and clockwise next turn; the booklet's PDF page 8 credits Bombyx copyright 2015. The manual identifies Captain Carcass as the tabletop version of Dead Man's Draw, rather than the separate digital title. Official PDF SHA-256: fff46c7a8258a7147dfc80877abdc7a30c7264ec8701dfc14aded966a94d9862. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rules do not specify a tie-break or fallback for the most-recent-ocean-sighting criterion."
+  ]
+}

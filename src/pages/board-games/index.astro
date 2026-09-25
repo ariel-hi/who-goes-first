@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getBoardGames } from '../../lib/content/board-games';
 import { getCatalog } from '../../lib/content/catalog';
-const games = getBoardGames();
+const games = getBoardGames().toSorted((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }));
 const withRules = games.filter(game => game.rules.length > 0).length;
 const extraRules = getCatalog().filter(rule => !games.some(game => game.rules.some(linked => linked.id === rule.id)));
 ---
@@ -10,12 +10,12 @@ const extraRules = getCatalog().filter(rule => !games.some(game => game.rules.so
   <div class="content-page">
     <h1>Board games.</h1>
     <p class="lede">Find the game you’re playing.</p>
-    <p>Browse {games.length.toLocaleString('en')} games. {withRules.toLocaleString('en')} have a sourced starting-player rule here. For the others, you can still use the <a href="/">player picker</a>.</p>
+    <p>{withRules.toLocaleString('en')} of these {games.length.toLocaleString('en')} games have their official starting-player rule here. For the rest, use the <a href="/">player picker</a>.</p>
     <div data-board-directory>
       <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name…" autocomplete="off" maxlength="100" /></label>
-      <p class="count-label" data-count role="status">{games.length} games listed</p>
+      <p class="count-label" data-count role="status">{games.length.toLocaleString('en')} games listed</p>
       <ul class="game-list">{games.map(game => <li data-name={game.name} data-id={game.bggId}>
-        <a href={`/board-games/${game.bggId}/`}><span>{game.name}<small>{game.rules.length ? `${game.rules.length} sourced ${game.rules.length === 1 ? 'edition' : 'editions'}` : 'Use the player picker'}</small></span></a>
+        <a href={game.rules.length === 1 ? `/games/${game.rules[0]!.slug}/` : `/board-games/${game.bggId}/`}><span>{game.name}<small>{game.rules.length > 1 ? `${game.rules.length} editions` : game.rules.length ? 'Official rule' : 'No rule yet'}</small></span></a>
       </li>)}</ul>
       <p data-empty hidden>No matching game in this collection.</p>
     </div>

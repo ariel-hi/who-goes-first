@@ -3,13 +3,13 @@
   "slug": "for-sale-spiel-das-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "330436d5e991060e59708ccab15be22a27d7e49ebb63c1b0c03ef41bbe132b8c",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "aebd5e2177224973b0463e5426612c60045705548dbfd16dc5fee3504793698f",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "For Sale",
   "aliases": [],
-  "editionLabel": "SPIEL DAS! / IELLO German rules, ©2023, v1 file; English summary",
+  "editionLabel": "SPIEL DAS! / IELLO German rules, ©2023; English summary",
   "firstPlayerRule": "Choose the starting player randomly.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -41,7 +41,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Choose the starting player randomly. Local source SHA-256: 66d4237436f549c40b3e918af2cf8a38a316d2bc46a751f0bc09efc5a6d1e9fa. The Hutter Trade download identifies SPIEL DAS! and IELLO in its colophon. This file explicitly uses random selection; a personal real-estate criterion from another edition was not substituted. Editorial recheck 2026-09-23: Rechecked the cached German publisher/distributor PDF and all five listed renders. The 2023 colophon, random initial selection, later auction-winner priority and simultaneous selling remain distinct. The English IELLO PDF's text corroborates the initial rule but is not substituted for this edition. Cached source: research\\source-files\\hutter\\for-sale-7b3def5e.pdf; SHA-256 66d4237436f549c40b3e918af2cf8a38a316d2bc46a751f0bc09efc5a6d1e9fa. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; A random-only instruction provides no different selection criterion for the random-rule mix.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://hutter-trade.com/downloads/. Finding: Choose the starting player randomly. Local source SHA-256: 66d4237436f549c40b3e918af2cf8a38a316d2bc46a751f0bc09efc5a6d1e9fa. The Hutter Trade download identifies SPIEL DAS! and IELLO in its colophon. This file explicitly uses random selection; a personal real-estate criterion from another edition was not substituted. Editorial recheck 2026-09-23: Rechecked the cached German publisher/distributor PDF and all five listed renders. The 2023 colophon, random initial selection, later auction-winner priority and simultaneous selling remain distinct. The English IELLO PDF's text corroborates the initial rule but is not substituted for this edition. Cached source: research\\source-files\\hutter\\for-sale-7b3def5e.pdf; SHA-256 66d4237436f549c40b3e918af2cf8a38a316d2bc46a751f0bc09efc5a6d1e9fa. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; A random-only instruction provides no different selection criterion for the random-rule mix. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

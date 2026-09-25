@@ -1,0 +1,29 @@
+{
+  "id": "armonia-skellig-en",
+  "slug": "armonia-skellig-en",
+  "gameName": "Armonia",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Skellig Games English rules",
+  "firstPlayerRule": "Whoever most recently sang, hummed, or whistled like a cute little gnome is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play proceeds clockwise from the starting player.", "To balance the starting-player advantage, the second and third players each move one Sound disc forward during setup; the fourth player moves two."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://www.skellig-rules.de/rules/0047-0006/Armonia_Rules_EN.pdf",
+    "title": "Armonia — English rules",
+    "publisher": "Skellig Games",
+    "printedPages": ["4", "6"],
+    "pdfPagesOneBased": [4, 6],
+    "location": "Game Setup and Playing the Game",
+    "checkedAt": "2026-09-25"
+  }],
+  "internalEvidence": "Skellig Games' Armonia product page https://www.skellig-games.de/armonia.html identifies article 0047-0006, links the English manual, and links BGG identity 341009. Printed/PDF pages 4 and 6 were rendered and visually checked. Downloaded PDF SHA-256: d3c9357b3e433404c3a285dddf9ffbd8f1b6e0673f5565102d91eb7ff4e68bb5. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": ["No tie-break or fallback is stated if several players share the most recent qualifying act."],
+  "status": "approved",
+  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "7ca1073ab19271629a37f755e4b33c3e6678e48f7a6149feb5a184bdadd0d0f7",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

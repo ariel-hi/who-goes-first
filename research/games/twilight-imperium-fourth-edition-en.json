@@ -1,0 +1,39 @@
+{
+  "id": "twilight-imperium-fourth-edition-en",
+  "slug": "twilight-imperium-fourth-edition-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Twilight Imperium",
+  "aliases": [
+    "Twilight Imperium: Fourth Edition"
+  ],
+  "editionLabel": "Fantasy Flight Games Fourth Edition Rules Reference",
+  "firstPlayerRule": "Randomly choose a speaker during setup. The speaker chooses the first strategy card; during the action phase, the player holding the lowest-numbered strategy card acts first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The speaker does not automatically take the first action. Initiative follows the chosen strategy cards; with multiple cards, use a player's lowest-numbered card."
+  ],
+  "interpretation": "The opening strategy choice and the opening action have different priority rules.",
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/c2/69/c269b9e2-8d9a-420b-a807-2b164dd54977/ti-k0289_rules_referencecompressed.pdf",
+      "title": "Twilight Imperium — Fantasy Flight Games Fourth Edition Rules Reference",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        14,
+        23
+      ],
+      "location": "Setup; §43 Initiative; §69 Strategy Phase",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 2, 14, 23, including the cited setup and turn-sequence text. Local source PDF SHA-256: 3111c1857435c8fc8726814c18fab3296d05a6cc5f3b92da10e4cfed114890dc. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "uncertainty": []
+}

@@ -1,11 +1,18 @@
 {
   "id": "uno-10020-sn70-en",
+  "slug": "uno-10020-sn70-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "UNO",
   "aliases": [
     "Uno classic",
     "UNO 112 cards"
   ],
-  "editionLabel": "English 112-card edition · 10020-SN70_G1 (2017)",
+  "editionLabel": "Mattel English 112-card edition, 2017",
   "firstPlayerRule": "The dealer’s left neighbor normally starts. An opening action card can change this.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -15,17 +22,11 @@
     "Opening Wild, Wild Shuffle Hands or Wild Customizable: the dealer’s left neighbor chooses the color. Return an opening Wild Draw Four to the deck and draw another card.",
     "Rules vary by edition. Match the cited 112-card set to yours."
   ],
-  "internalEvidence": "Read the English setup and action-card text and inspected the rendered sheet. Older 42001 instructions differ.",
-  "uncertainty": [
-    "Dealer-selection ties are unspecified."
-  ],
-  "slug": "uno-10020-sn70-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
       "url": "https://service.mattel.com/instruction_sheets/10020-SN70_G1_4XN_IS_Uno.pdf",
-      "title": "UNO — 10020-SN70_G1 multilingual instruction sheet, English panel",
+      "title": "UNO — Mattel multilingual instructions, English panel",
       "publisher": "Mattel",
       "printedPages": [],
       "pdfPagesOneBased": [
@@ -35,9 +36,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Read the English setup and action-card text and inspected the rendered sheet. Older 42001 instructions differ.",
+  "uncertainty": [
+    "Dealer-selection ties are unspecified."
+  ]
 }

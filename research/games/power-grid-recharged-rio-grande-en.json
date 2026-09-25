@@ -1,0 +1,51 @@
+{
+  "id": "power-grid-recharged-rio-grande-en",
+  "slug": "power-grid-recharged-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Power Grid",
+  "aliases": [
+    "Power Grid Recharged",
+    "Funkenschlag"
+  ],
+  "editionLabel": "Rio Grande Games Recharged English rules, 2018",
+  "firstPlayerRule": "At the start of the game, player order is set randomly by placing one house from each player on the player order track. Order is re-determined once after the first round's power plant auction and at the start of every later round: the player with the most connected cities goes first.",
+  "officialTieBreak": "When re-determining order, if players are tied for most cities, the one with the biggest power plant goes first.",
+  "houseFallback": null,
+  "clarifications": [
+    "Because the first order was random, players re-determine player order once at the end of the first auction phase, before buying resources.",
+    "In the two-player \"Against the Trust\" variant, randomly determine the first player; the Trust is always second in order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf",
+      "title": "Power Grid (Recharged Version) — English rules",
+      "publisher": "Rio Grande Games / 2F-Spiele",
+      "printedPages": [
+        "2",
+        "4",
+        "5",
+        "9",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5,
+        9,
+        10
+      ],
+      "location": "Page 2, Preparation step 4; page 4, Phase 1: Determine Player Order; page 5, first-round exception; page 9, Against the Trust preparation; page 10, credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Recharged rules PDF from riograndegames.com. SHA-256 e90d321d233b3fbffac8a1900d6a5cb96ffccd29b1a215e2889c5eacb995e73f. Extracted text of the 12-page PDF and confirmed printed folios match PDF pages. Page 2, step 4: \"Take one house from each player and randomly determine the player order\". Page 4, Phase 1: most cities is first, ties go to the biggest power plant; \"At the beginning of the game, players determine the player order randomly.\" Page 5: first-round exception, re-determine order once after the auction. Page 9, Against the Trust step 2: randomly determine the first player. Page 10: copyright 2018 2F-Spiele, author Friedemann Friese, Rio Grande Games. Matches BGG 2651. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "This record covers the Recharged rules; older and Deluxe editions were not checked."
+  ]
+}

@@ -1,12 +1,17 @@
 {
   "id": "the-pillars-of-the-earth",
   "slug": "the-pillars-of-the-earth",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "The Pillars of the Earth",
   "aliases": [
     "Pillars of the Earth"
   ],
-  "language": "en",
-  "editionLabel": "English Thames & Kosmos rules, eight-page publisher PDF",
+  "editionLabel": "English Thames & Kosmos rules",
   "firstPlayerRule": "The player who most recently saw a cathedral starts the first round.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -33,10 +38,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

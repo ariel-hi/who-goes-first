@@ -1,0 +1,45 @@
+{
+  "id": "antler-island-fragor-en",
+  "slug": "antler-island-fragor-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9f415403932cc4cccec99228e5ff5e1d81321bfb7471cf9064e1358152fb61e3",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Antler Island",
+  "aliases": [],
+  "editionLabel": "Fragor Games English rules",
+  "firstPlayerRule": "The player carrying the most money is the starting player and takes the starting-player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rulebook calls this player the 'dearest player'; it specifies money on the player, not money in an account.",
+    "The starter places their stag first. Other players place theirs clockwise, and the starter reveals the first action after everyone chooses actions simultaneously.",
+    "At the start of each later round, move the starting-player marker clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://download.svet-deskovych-her.cz/rules/Antler_Island_En.pdf",
+      "title": "Antler Island — English rules",
+      "publisher": "Fragor Games",
+      "printedPages": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3
+      ],
+      "location": "Setup; Playing a round; Start of a new round",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The English Fragor Games booklet for BGG identity 30483 was preserved by Svet Deskovych Her. It carries the Fragor Games website and is distinct from other similarly named island games. Printed/PDF pages 1–3 were rendered and visually checked. The setup selects the person with the most money physically on them, and the round rules rotate the marker clockwise. Mirror PDF SHA-256: 38848f8dbbd88a56510fee6e54ae5682220e9c643c894c2ff50509895a5d8054. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet does not specify a tie-break for equal amounts of money."
+  ]
+}

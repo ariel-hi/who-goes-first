@@ -1,10 +1,15 @@
 {
   "id": "through-the-desert-allplay-en",
   "slug": "through-the-desert-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "39775078ee5957b133d99c55f9b00ad0409711c38479f0d3752063cf7952658e",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Through the Desert",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay base-game rules, four-page publisher PDF",
+  "editionLabel": "English Allplay base-game rules",
   "firstPlayerRule": "The person who most recently drank water goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -26,14 +31,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/through-the-desert. Finding: The person who most recently drank water goes first. Local source SHA-256: 29f616938c141349df2c99983e6d1efb6de04172a6b6fc0ef5f4d1e253d9b87a. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; the recent-water criterion picks the first leader placer, and ordinary turns continue clockwise. Random mix: include; standalone personal-history criterion.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/through-the-desert. Finding: The person who most recently drank water goes first. Local source SHA-256: 29f616938c141349df2c99983e6d1efb6de04172a6b6fc0ef5f4d1e253d9b87a. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; the recent-water criterion picks the first leader placer, and ordinary turns continue clockwise. Random mix: include; standalone personal-history criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6fcec1edaa339d10ad69e9a35e8acf60cf3c619e3f2ee3498188382d49c393ca",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

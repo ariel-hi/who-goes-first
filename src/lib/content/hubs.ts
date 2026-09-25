@@ -42,8 +42,8 @@ export function publisherHubs(catalog: PublicRule[]) {
  * entries in name order (wrapping) spreads internal links evenly across a hub
  * instead of pointing every page at the same alphabetically-first games.
  */
-export function similarRules(rule: PublicRule, catalog: PublicRule[], exclude: ReadonlySet<string>, count = 5) {
-  const hub = themeHubs(catalog).find(candidate => candidate.pattern.test(rule.firstPlayerRule));
+export function similarRules(rule: PublicRule, catalog: PublicRule[], exclude: ReadonlySet<string>, count = 5, hubs = themeHubs(catalog)) {
+  const hub = hubs.find(candidate => candidate.pattern.test(rule.firstPlayerRule));
   if (!hub) return { hub: undefined, rules: [] };
   const members = hub.rules.toSorted((a, b) => a.gameName.localeCompare(b.gameName) || a.id.localeCompare(b.id));
   const start = members.findIndex(member => member.id === rule.id);
@@ -53,6 +53,21 @@ export function similarRules(rule: PublicRule, catalog: PublicRule[], exclude: R
     if (candidate.id !== rule.id && !exclude.has(candidate.id)) rules.push(candidate);
   }
   return { hub, rules };
+}
+
+/** Hub links for every rule page, with hubs computed once per build. */
+export function hubContext(catalog: PublicRule[]) {
+  const themes = themeHubs(catalog);
+  const publishers = new Map(publisherHubs(catalog).map(hub => [hub.slug, hub]));
+  return (rule: PublicRule, related: PublicRule[]) => {
+    const similar = similarRules(rule, catalog, new Set(related.map(game => game.id)), 5, themes);
+    const publisher = publishers.get(slugify(publisherOf(rule)));
+    return {
+      similar: similar.rules,
+      similarHub: similar.hub && { slug: similar.hub.slug, about: similar.hub.about },
+      publisherHub: publisher && { slug: publisher.slug, name: publisher.name, count: publisher.rules.length },
+    };
+  };
 }
 
 /** Groups portable criteria for the "ways to pick" page; each rule appears once. */

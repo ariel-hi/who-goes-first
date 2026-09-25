@@ -1,10 +1,15 @@
 {
   "id": "chomp-allplay-en",
   "slug": "chomp-allplay-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Chomp",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay dinosaur game rules, four-page publisher PDF",
+  "editionLabel": "English Allplay dinosaur game rules",
   "firstPlayerRule": "The first player to name their own favorite dinosaur goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -29,10 +34,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

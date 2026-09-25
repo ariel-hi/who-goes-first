@@ -1,10 +1,17 @@
 {
   "id": "cascadia-base-en",
+  "slug": "cascadia-base-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Cascadia",
   "aliases": [
     "Cascadia base game"
   ],
-  "editionLabel": "English base game · 16-page publisher rulebook",
+  "editionLabel": "Flatout Games English base game",
   "firstPlayerRule": "The person who most recently saw one of the game’s wildlife starts. The rulebook also explicitly allows choosing the starting player randomly.",
   "officialTieBreak": "No separate tie-break is stated; random selection is an official alternative.",
   "houseFallback": null,
@@ -12,12 +19,6 @@
     "Play continues clockwise.",
     "Choosing randomly is part of the printed setup, not an added house rule."
   ],
-  "internalEvidence": "AEG’s Cascadia page links this PDF. It is image-based, so setup pages 4 and 5 were rendered and visually read. Step 8 gives wildlife observation or random selection; page 5 says clockwise.",
-  "uncertainty": [
-    "The source does not define whether a sighting must be in person. The URL’s 2025 upload path is not treated as an edition date."
-  ],
-  "slug": "cascadia-base-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -36,9 +37,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "AEG’s Cascadia page links this PDF. It is image-based, so setup pages 4 and 5 were rendered and visually read. Step 8 gives wildlife observation or random selection; page 5 says clockwise.",
+  "uncertainty": [
+    "The source does not define whether a sighting must be in person. The URL’s 2025 upload path is not treated as an edition date."
+  ]
 }

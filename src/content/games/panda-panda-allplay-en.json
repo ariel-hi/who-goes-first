@@ -1,10 +1,15 @@
 {
   "id": "panda-panda-allplay-en",
   "slug": "panda-panda-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "61b864ef927262577a8f691426915491b40c4b99d4117503f248a17db6edacb1",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Panda Panda",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, two-sheet publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "The player who saw a panda most recently starts. Seeing one in a picture or video counts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -25,14 +30,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/panda-panda. Finding: The player who saw a panda most recently starts. Seeing one in a picture or video counts. Local source SHA-256: 84db83bf945050a9c951ef1ad303df139e35b570647104ee55c660e40c2dcded. Codex editorial review under the owner's 2026-09-22 authorization: visually checked setup and opening-round turn order on PDF page 1 and later-round winner start on PDF page 2. Random mix: include; the recent-sighting criterion independently selects an opening player.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/panda-panda. Finding: The player who saw a panda most recently starts. Seeing one in a picture or video counts. Local source SHA-256: 84db83bf945050a9c951ef1ad303df139e35b570647104ee55c660e40c2dcded. Codex editorial review under the owner's 2026-09-22 authorization: visually checked setup and opening-round turn order on PDF page 1 and later-round winner start on PDF page 2. Random mix: include; the recent-sighting criterion independently selects an opening player. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5cbae5e0a79457f2f5c78e676a01fd364980b7d1ad40201e9c76f9d66cfe2558",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

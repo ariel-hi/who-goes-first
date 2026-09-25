@@ -1,0 +1,41 @@
+---
+interface Props { ruleCount: number }
+const { ruleCount } = Astro.props;
+---
+<div class="rule-lookup" data-rule-lookup>
+  <label class="search-box"><span>Search {ruleCount.toLocaleString('en')} games</span><input type="search" placeholder="e.g. Catan, Wingspan, Azul…" autocomplete="off" maxlength="100" /></label>
+  <ul class="rule-lookup-results" data-results hidden></ul>
+  <p class="small muted" data-lookup-status role="status"></p>
+</div>
+<script>
+  import { searchRank } from '../lib/search';
+  type Entry = { n: string; a: string[]; e: string; s: string };
+  document.querySelectorAll<HTMLElement>('[data-rule-lookup]').forEach(root => {
+    const input = root.querySelector('input')!;
+    const list = root.querySelector<HTMLUListElement>('[data-results]')!;
+    const status = root.querySelector<HTMLElement>('[data-lookup-status]')!;
+    let entries: Promise<Entry[]> | undefined;
+    const load = () => entries ??= fetch('/rule-index.json').then(response => { if (!response.ok) throw new Error(); return response.json() as Promise<Entry[]>; });
+    input.addEventListener('focus', () => { load().catch(() => {}); }, { once: true });
+    input.addEventListener('input', async () => {
+      const query = input.value;
+      let all: Entry[];
+      try { all = await load(); } catch { entries = undefined; status.textContent = 'Search is unavailable right now. Browse the full list instead.'; return; }
+      if (query !== input.value) return;
+      list.replaceChildren();
+      if (!query.trim()) { list.hidden = true; status.textContent = ''; return; }
+      const matches = all.map(entry => ({ entry, rank: searchRank({ gameName: entry.n, aliases: entry.a, editionLabel: entry.e }, query) }))
+        .filter(match => Number.isFinite(match.rank)).sort((a, b) => a.rank - b.rank || a.entry.n.localeCompare(b.entry.n)).slice(0, 6);
+      const names = new Map<string, number>();
+      for (const { entry } of matches) names.set(entry.n, (names.get(entry.n) ?? 0) + 1);
+      for (const { entry } of matches) {
+        const item = document.createElement('li'); const link = document.createElement('a');
+        link.href = `/games/${entry.s}/`; link.textContent = entry.n;
+        if ((names.get(entry.n) ?? 0) > 1) { const edition = document.createElement('small'); edition.textContent = entry.e; link.append(edition); }
+        item.append(link); list.append(item);
+      }
+      list.hidden = matches.length === 0;
+      status.textContent = matches.length ? '' : 'No rule for that game yet. Use the picker above, or browse the full list.';
+    });
+  });
+</script>

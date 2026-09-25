@@ -1,10 +1,15 @@
 {
   "id": "tempel-des-schreckens-schmidt-de-summary",
   "slug": "tempel-des-schreckens-schmidt-de-summary",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Tempel des Schreckens",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "Schmidt Spiele German rules, article 75046, English summary",
+  "editionLabel": "Schmidt Spiele German rules, English summary",
   "firstPlayerRule": "Whoever most recently found a gold treasure takes the key card and starts. If nobody has, the rules jokingly say everyone loses immediately, then offer the youngest player as an alternative starter.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -29,10 +34,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever most recently found a gold treasure takes the key card and starts. Local source SHA-256: 221b9b513a3d8fcbaed842b89a520de0ca440d98eef4d7d7f4318d4977706f3d. Both the unusual immediate-loss sentence and the youngest-player alternative are explicitly in the source. The latter is not an invented fallback.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

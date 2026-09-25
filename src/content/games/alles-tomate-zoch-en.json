@@ -3,13 +3,13 @@
   "slug": "alles-tomate-zoch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d0286fc22f82729510c8c7b840bdcb8cd536352c5e42ec70cad50205174132c3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "878deb881f9eb791d53e330720ad1a7d7c2f0ac66afac3614906d1a4e90644c2",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Alles Tomate!",
   "aliases": [],
-  "editionLabel": "English section · four-page multilingual publisher PDF",
+  "editionLabel": "Zoch English rules",
   "firstPlayerRule": "The person who most recently ate a tomato reveals the first card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/children-s-games/alles-tomate-601105035-en.html. Finding: The person who most recently ate a tomato reveals the first card. Local source SHA-256: 7a165d81aa428f7f0694ca56684bab1a92c52e03226ee3fd6f71fd44fd39ec81. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The selected person reveals a card to all players; answering begins simultaneously. This assigns an opening reveal, not a first answering turn.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/children-s-games/alles-tomate-601105035-en.html. Finding: The person who most recently ate a tomato reveals the first card. Local source SHA-256: 7a165d81aa428f7f0694ca56684bab1a92c52e03226ee3fd6f71fd44fd39ec81. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The selected person reveals a card to all players; answering begins simultaneously. This assigns an opening reveal, not a first answering turn. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

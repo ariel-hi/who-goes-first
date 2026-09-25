@@ -1,10 +1,15 @@
 {
   "id": "switchbacks-allplay-en",
   "slug": "switchbacks-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "9c03ee774007a770e35e86fff0c430232694de3da1a428c7757918e18783bb35",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Switchbacks",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "Whoever went hiking most recently goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -23,14 +28,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/switchbacks. Finding: Whoever went hiking most recently goes first. Local source SHA-256: 8f50d2ff24743123040fa9da7cc7ff09d6c337158b412f19225182fadd3a5bf7. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF page 2, setup step 4; the last person to hike is the first player. Random mix: include; standalone personal-history criterion.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/switchbacks. Finding: Whoever went hiking most recently goes first. Local source SHA-256: 8f50d2ff24743123040fa9da7cc7ff09d6c337158b412f19225182fadd3a5bf7. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF page 2, setup step 4; the last person to hike is the first player. Random mix: include; standalone personal-history criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a3c6e3b7c9200ea4aeb780d8fea413136bff611c34dc846e5a181ff0ae2b2393",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

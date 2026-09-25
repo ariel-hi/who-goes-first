@@ -1,10 +1,15 @@
 {
   "id": "neoville-blue-orange-us-en",
   "slug": "neoville-blue-orange-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Neoville",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English rules · 16-page publisher PDF",
+  "editionLabel": "Blue Orange English rules",
   "firstPlayerRule": "The person who most recently spent time in nature starts and receives Equity tile 1.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -28,10 +33,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently spent time in nature starts and receives Equity tile 1. Local source SHA-256: 37c237031871eb228be68af820f40ea8512cff3f1349fda48f8c2e056a67ba2b.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

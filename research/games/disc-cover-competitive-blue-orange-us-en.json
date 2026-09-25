@@ -1,10 +1,15 @@
 {
   "id": "disc-cover-competitive-blue-orange-us-en",
   "slug": "disc-cover-competitive-blue-orange-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Disc Cover",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English US competitive variation · 12-page bilingual publisher PDF",
+  "editionLabel": "Blue Orange English US competitive variation",
   "firstPlayerRule": "In the competitive variant, whoever most recently listened to music becomes the first Leader.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -36,10 +41,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: In the competitive variant, whoever most recently listened to music becomes the first Leader. Local source SHA-256: 2ab0d99daffb75391fc4bec76def506a1d0cf4d48edb9b732d1f9a0de823be00.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

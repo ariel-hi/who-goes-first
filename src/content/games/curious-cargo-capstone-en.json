@@ -3,13 +3,13 @@
   "slug": "curious-cargo-capstone-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9b9edacfa478e3313bab50a1a76efbec64ca89a42209837a440c7a1cb5922b83",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "867c7d7846e2b3272cf28415476b928f0891c6db55344de8caa88806706b8519",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Curious Cargo",
   "aliases": [],
-  "editionLabel": "Capstone English rules, 12-page publisher PDF",
+  "editionLabel": "Capstone English rules",
   "firstPlayerRule": "Whoever most recently rode in a truck has the initial turn-order priority.",
   "officialTieBreak": null,
   "houseFallback": "If the group cannot distinguish who rode in a truck most recently, agree to choose the initial top Forklift randomly. This is this site’s suggested house rule.",
@@ -42,7 +42,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 2, 4, 5, 6, 12. Rendered page 2 puts the latest truck rider on top of the initial stack; it says ridden, not driven. Page 4 defines phase priority and allows simultaneous Construction while preserving sequential resolution of track movement. Pages 5 and 6 show how Construction movement can alter the leader before Trucking. Page 12's Night Shift variant changes components, not the initial criterion. No printing year is inferred. Publisher discovery URL: https://capstone-games.com/products/curious-cargo. Local source SHA-256: 3caafc0a2961f6f4d0e8961ff9652786ad543c4f75baa40bb3f7671b4a62c223. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. This sets initial phase priority in a game that permits simultaneous Construction. It is not an unconditional individual first-action criterion.",
+  "internalEvidence": "Complete publisher-linked PDF retrieved; relevant setup, opening-turn, variant and edition pages read and visually inspected. Reviewed PDF pages: 2, 4, 5, 6, 12. Rendered page 2 puts the latest truck rider on top of the initial stack; it says ridden, not driven. Page 4 defines phase priority and allows simultaneous Construction while preserving sequential resolution of track movement. Pages 5 and 6 show how Construction movement can alter the leader before Trucking. Page 12's Night Shift variant changes components, not the initial criterion. No printing year is inferred. Publisher discovery URL: https://capstone-games.com/products/curious-cargo. Local source SHA-256: 3caafc0a2961f6f4d0e8961ff9652786ad543c4f75baa40bb3f7671b4a62c223. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. This sets initial phase priority in a game that permits simultaneous Construction. It is not an unconditional individual first-action criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The linked manual does not identify a printing year.",
     "The Forklift stacking tie-break governs track position, not a tie in the initial truck-ride criterion.",

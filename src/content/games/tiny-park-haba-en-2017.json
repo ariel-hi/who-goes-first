@@ -1,0 +1,29 @@
+{
+  "id": "tiny-park-haba-en-2017",
+  "slug": "tiny-park-haba-en-2017",
+  "gameName": "Tiny Park",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "HABA multilingual rules, English section, 2017",
+  "firstPlayerRule": "The player who most recently rode a roller coaster begins.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["That player rolls all five dice; play continues clockwise."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://www.provincedeliege.be/sites/default/files/media/15553/Tiny%20park%20-%20R%C3%A8gle.pdf",
+    "title": "Tiny Park — multilingual HABA rules",
+    "publisher": "HABA",
+    "printedPages": ["8"],
+    "pdfPagesOneBased": [8],
+    "location": "English section, How to play, opening sentences",
+    "checkedAt": "2026-09-25"
+  }],
+  "internalEvidence": "A HABA-authored original booklet is preserved by the Province of Liège. The 28-page PDF identifies © HABA Spiele Bad Rodach 2017, Tiny Park by Marco Teubner. The English section on printed page 8/PDF page 8 was rendered and read visually. Downloaded PDF SHA-256: 28ef121080dc66048dc2e4ac3699be94fc3443fdbb6054ac9258afe15593e511. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": ["The booklet does not specify a tie-break or fallback when nobody has ridden a roller coaster."],
+  "status": "approved",
+  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "2df71b8dc30f596a5e1bc8d608d2acb105941e479e6df7b806c40060de98fc8b",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

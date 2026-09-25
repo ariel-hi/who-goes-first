@@ -3,13 +3,13 @@
   "slug": "chicken-chicken-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "400ee5a8f122b878108840732c9370569b9c72ade93dbec34561d115387686f6",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "806ae46b5a347c18bf70f32cae1c5bb25d848c0080b514c5de85ff513ef3bdd1",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Chicken Chicken",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "Whoever most recently fed any kind of bird becomes the first Head Farmer and reveals the cards.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever most recently fed any kind of bird becomes the first Head Farmer and reveals the cards. Local source SHA-256: 7e108f2e7f1f97552718167efdd14a48b218fe932bb757d3ed660560b7a71803. Editorial review 2026-09-23: Rechecked the cited instruction and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever most recently fed any kind of bird becomes the first Head Farmer and reveals the cards. Local source SHA-256: 7e108f2e7f1f97552718167efdd14a48b218fe932bb757d3ed660560b7a71803. Editorial review 2026-09-23: Rechecked the cited instruction and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

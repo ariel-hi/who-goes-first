@@ -3,13 +3,13 @@
   "slug": "amalfi-renaissance-rnr-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "093efbdec65961c7ec9a22a20dde4b72718073eadf5a1db0c7eed3b53682ec23",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "ccf0ec0f1ecd55e64201d154eda3e3edab82241da5b71f1eeb764a97237f681e",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Amalfi: Renaissance",
   "aliases": [],
-  "editionLabel": "English R&R Games Renaissance rules, 24-page publisher booklet",
+  "editionLabel": "English R&R Games Renaissance rules",
   "firstPlayerRule": "Whoever most recently visited the ocean receives the wind-rose marker and starts the game.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -39,7 +39,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/amalfi-renaissance. Finding: Whoever most recently visited the ocean receives the wind-rose marker and starts the game. Local source SHA-256: 605a60e024a7f2b5aa5cbb6f8438e092e444fe7bb1ff6b1a1e3ea593ad3a137d. Editorial recheck 2026-09-23: Inspected rendered PDF pages 6, 11 and 22. Page 6 identifies the latest ocean visitor, initial granary amounts and reverse-order starting-hand choice; page 11 confirms clockwise action turns and first-passer priority for the next period; page 22 puts the human first in solo play. Cached source: research\\source-files\\rnr\\amalfi-renaissance-190c4fe8.pdf; SHA-256 605a60e024a7f2b5aa5cbb6f8438e092e444fe7bb1ff6b1a1e3ea593ad3a137d. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal criterion selects the initial turn without game components.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/amalfi-renaissance. Finding: Whoever most recently visited the ocean receives the wind-rose marker and starts the game. Local source SHA-256: 605a60e024a7f2b5aa5cbb6f8438e092e444fe7bb1ff6b1a1e3ea593ad3a137d. Editorial recheck 2026-09-23: Inspected rendered PDF pages 6, 11 and 22. Page 6 identifies the latest ocean visitor, initial granary amounts and reverse-order starting-hand choice; page 11 confirms clockwise action turns and first-passer priority for the next period; page 22 puts the human first in solo play. Cached source: research\\source-files\\rnr\\amalfi-renaissance-190c4fe8.pdf; SHA-256 605a60e024a7f2b5aa5cbb6f8438e092e444fe7bb1ff6b1a1e3ea593ad3a137d. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal criterion selects the initial turn without game components. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

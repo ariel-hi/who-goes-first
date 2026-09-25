@@ -3,15 +3,15 @@
   "slug": "switch-and-signal",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8bb2e94e5a5b7a9bf2c0c7fb3737660d71e7c7c3d0ec95b909ea5b885b60ed43",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "ed5729f952f3725b596505f942215bf50e820432e63e50d19d0adc4928db9137",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Switch & Signal",
   "aliases": [
     "Switch and Signal"
   ],
-  "editionLabel": "English UK publisher rules, eight-page PDF",
+  "editionLabel": "English UK publisher rules",
   "firstPlayerRule": "The person who most recently had to wait for a train is the first active player. If nobody has had to wait for one, the group decides who starts.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -34,7 +34,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.thamesandkosmos.co.uk/product/switch-and-signal/. Finding: The person who most recently had to wait for a train is the first active player. Local source SHA-256: 2d1f80a0244dc4155a3472f664e6d951f313b34815257dff1fd7123a09010d45. Used the publisher's UK file. The separate US download was not used as evidence because it exceeded the retrieval size limit. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.thamesandkosmos.co.uk/product/switch-and-signal/. Finding: The person who most recently had to wait for a train is the first active player. Local source SHA-256: 2d1f80a0244dc4155a3472f664e6d951f313b34815257dff1fd7123a09010d45. Used the publisher's UK file. The separate US download was not used as evidence because it exceeded the retrieval size limit. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
   ]

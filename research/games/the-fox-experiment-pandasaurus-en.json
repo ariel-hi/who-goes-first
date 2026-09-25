@@ -1,12 +1,17 @@
 {
   "id": "the-fox-experiment-pandasaurus-en",
   "slug": "the-fox-experiment-pandasaurus-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "The Fox Experiment",
   "aliases": [
     "Fox Experiment"
   ],
-  "language": "en",
-  "editionLabel": "Pandasaurus Games English updated v2 rules, copyright 2023",
+  "editionLabel": "Pandasaurus Games English updated rules, copyright 2023",
   "firstPlayerRule": "Give the first turn-order token to whoever has the friendliest pet, or choose that player randomly. Assign the remaining tokens clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -40,10 +45,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pandasaurusgames.com/products/the-fox-experiment. Finding: Give the first turn-order token to whoever has the friendliest pet, or choose that player randomly. Assign the remaining tokens clockwise. Local source SHA-256: 609200c1944008788287a2d535c04cec5994189990201ddf2ea9877291528d57. All four cited rendered pages were inspected. The publisher filename identifies the updated v2 manual, and the credits on page 33 state copyright 2023. The official product links BGG 368432. The solo opponent's second token makes the human first; it is not selected using the pet criterion.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

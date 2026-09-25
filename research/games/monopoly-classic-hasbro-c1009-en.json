@@ -1,0 +1,35 @@
+{
+  "id": "monopoly-classic-hasbro-c1009-en",
+  "slug": "monopoly-classic-hasbro-c1009-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Monopoly",
+  "aliases": [],
+  "editionLabel": "Hasbro Classic Monopoly C1009 English instructions (2015)",
+  "firstPlayerRule": "Each player rolls both dice. The player with the highest total goes first, and play then passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/C1009_en-my_monopoly-classic-game.pdf",
+      "title": "Monopoly — Hasbro Classic Monopoly C1009 English instructions (2015)",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Play, opening turn",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 2, including the cited setup and turn-sequence text. Local source PDF SHA-256: 26acdfa0536781e16e08b9f5f10efc84257c28d9d3ce6c32a1787c9a64759cf3. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "uncertainty": [
+    "The instructions do not give a tie-break for equal highest opening rolls."
+  ]
+}

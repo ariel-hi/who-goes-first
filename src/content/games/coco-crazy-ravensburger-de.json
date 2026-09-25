@@ -3,13 +3,13 @@
   "slug": "coco-crazy-ravensburger-de",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e2fd72dba0097a35743e6f7f722c195f93324aab570e337b2a3778a65ddede05",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "a528ae3eec0c12ded9b5beb7636ebd3f73e1c95a99496ccf209d8a2f99f3655f",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Coco Crazy",
   "aliases": [],
-  "editionLabel": "Ravensburger German rules, article 20 902 6; English summary",
+  "editionLabel": "Ravensburger German rules; English summary",
   "firstPlayerRule": "Whoever makes the cheekiest monkey face goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -31,7 +31,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/service/game-instructions. Finding: Whoever makes the cheekiest monkey face goes first. Local source SHA-256: e9f2fc36eb5d77a0f77eab7bfbe71f68117a9ab714627c0ffef58b28bc0a61c4. The rendered German cover and page 4 were inspected. The rule refers specifically to a monkey grimace. The Italian text instead refers to a monkey sound, so the different language instructions have not been merged into a universal criterion. No clockwise direction is inferred from the German word reihum. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/service/game-instructions. Finding: Whoever makes the cheekiest monkey face goes first. Local source SHA-256: e9f2fc36eb5d77a0f77eab7bfbe71f68117a9ab714627c0ffef58b28bc0a61c4. The rendered German cover and page 4 were inspected. The rule refers specifically to a monkey grimace. The Italian text instead refers to a monkey sound, so the different language instructions have not been merged into a universal criterion. No clockwise direction is inferred from the German word reihum. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "Other language sections use different wording; this record applies only to the identified German instruction.",
     "No starting tie-break is stated alongside this instruction.",

@@ -1,0 +1,43 @@
+{
+  "id": "ink-final-score-en-2025",
+  "slug": "ink-final-score-en-2025",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c81a88dfbfaa2459f63f86a8fe5472192f50ffb4a56e17bf19a3d553ca4c3f94",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "INK",
+  "aliases": [
+    "Ink"
+  ],
+  "editionLabel": "Final Score Games English rules (2025)",
+  "firstPlayerRule": "The player who most recently wrote or painted using ink starts and takes the first-player quill token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns clockwise from the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2025/11/FSGINK01FREN-INK-EN-RULES.pdf",
+      "title": "INK — English rules",
+      "publisher": "Final Score Games / Asmodee Canada",
+      "printedPages": [
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup and Gameplay; publisher credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Asmodee Canada's INK product page https://www.asmodee.ca/en/product/ink/ points to an official English PDF on its CDN for inventory BGG identity 437301. The PDF has facing-page spreads; printed page 2 is on PDF page 2 and the ©2025 Final Score Games credits on printed page 4 are on PDF page 3. Those pages were rendered and visually checked. Setup specifies the last person to write or paint with ink and the quill token; Gameplay specifies clockwise turns. Official PDF SHA-256: 0a6fdbd9ca11d087cf1b9bd7218e0185b8008df354b56d2941e9d725c061954f. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rules give no tie-break or fallback if nobody remembers using ink or the latest occasion was shared."
+  ]
+}

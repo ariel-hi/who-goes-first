@@ -3,8 +3,8 @@
   "slug": "catan-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5ad64683da39e5ef276eee2eec42508487cbcebe2cedd807782a451eb7c9261d",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "344c6d3080455faffd9386dabef89091ee9302159e8cbc59157f2c77d537ca76",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "CATAN",
@@ -12,7 +12,7 @@
     "The Settlers of Catan",
     "Settlers of Catan"
   ],
-  "editionLabel": "English base game · fifth-edition credits, copyright 2020",
+  "editionLabel": "CATAN Studio English base game · fifth-edition credits, copyright 2020",
   "firstPlayerRule": "For the beginner setup, the oldest player starts. For variable setup, everyone rolls both dice; the highest roller starts setup and takes the first regular turn after setup.",
   "officialTieBreak": null,
   "houseFallback": "If the starting instruction leaves your group tied, you can agree to pick randomly. This is the site’s house-rule fallback, not a tie-break supplied by this manual.",
@@ -41,7 +41,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Visually inspected local Poppler renders of PDF pages 4, 12, 13, and 15 on 2026-09-19. Page 12: ‘Each player rolls both dice. The player who rolls highest is the starting player and begins.’ Page 13 specifies oldest player for beginners. The note under Round Two on page 12 connects the setup starter to the first regular turn. Page 15 credits fifth-edition development and copyright 2020. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\catan-85ca3ff7.pdf; SHA-256 3fed941bf202314ed462d4d0cdfb0384c97fe04166b48a7186833b3f6f4ac024. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The complete answer distinguishes beginner and variable setup. The latter needs both dice and preserves reverse settlement placement before the first regular turn.",
+  "internalEvidence": "Visually inspected local Poppler renders of PDF pages 4, 12, 13, and 15 on 2026-09-19. Page 12: ‘Each player rolls both dice. The player who rolls highest is the starting player and begins.’ Page 13 specifies oldest player for beginners. The note under Round Two on page 12 connects the setup starter to the first regular turn. Page 15 credits fifth-edition development and copyright 2020. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\catan-85ca3ff7.pdf; SHA-256 3fed941bf202314ed462d4d0cdfb0384c97fe04166b48a7186833b3f6f4ac024. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The complete answer distinguishes beginner and variable setup. The latter needs both dice and preserves reverse settlement placement before the first regular turn. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The cited highest-roll and oldest-player instructions do not provide a tie resolution.",
     "This draft covers the specific 2020-copyright English manual, not every CATAN edition."

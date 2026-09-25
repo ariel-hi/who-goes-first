@@ -1,0 +1,35 @@
+{
+  "id": "clue-classic-hasbro-en",
+  "slug": "clue-classic-hasbro-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Clue",
+  "aliases": [],
+  "editionLabel": "Hasbro classic Clue English instructions",
+  "firstPlayerRule": "The player using Miss Scarlet takes the first turn. Play then passes to the player on the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Miss Scarlet is the red suspect token; the first player is determined by that role, not by a roll."
+  ],
+  "interpretation": "The first-player rule applies to the classic edition represented by this Hasbro instruction sheet.",
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/clueins.pdf",
+      "title": "Clue — Hasbro classic Clue English instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Playing the Game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 2, including the cited setup and turn-sequence text. Local source PDF SHA-256: 1f2e29d5cef9f86999506347d14cb83abe0b20c53df4554fd5301417c19f8a16. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "uncertainty": []
+}

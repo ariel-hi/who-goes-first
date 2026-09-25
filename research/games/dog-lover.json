@@ -1,10 +1,15 @@
 {
   "id": "dog-lover",
   "slug": "dog-lover",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Dog Lover",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English AEG base-game rules, sixteen-page optimized publisher PDF",
+  "editionLabel": "English AEG base-game rules",
   "firstPlayerRule": "Choose randomly, or let the player who owns the most dogs in real life start.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -27,14 +32,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/doglover/. Finding: Choose randomly, or let the player who owns the most dogs in real life start. Local source SHA-256: efb8a0db7c64e5b29f2038d93d8b72f40a579b32a9a021167315bbfa7e35380f. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/doglover/. Finding: Choose randomly, or let the player who owns the most dogs in real life start. Local source SHA-256: efb8a0db7c64e5b29f2038d93d8b72f40a579b32a9a021167315bbfa7e35380f.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

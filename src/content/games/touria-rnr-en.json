@@ -3,13 +3,13 @@
   "slug": "touria-rnr-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "94a25c58d8217b1bd57ccd99737b3c52f888b3c24028aa9dfcedfedafd20e988",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "34b70aaeaae4eda0cfedf93d556f4a6c8d3518538cc6206c9b8dc488fcfeacd2",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Touria",
   "aliases": [],
-  "editionLabel": "English rules distributed by R&R Games, eight-page publisher PDF",
+  "editionLabel": "English rules distributed by R&R Games",
   "firstPlayerRule": "The player most eager to get married starts; the rules alternatively suggest whoever got married most recently.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -34,7 +34,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/touria. Finding: The player most eager to get married starts; the rules alternatively suggest whoever got married most recently. Local source SHA-256: 5fd9ae1bb9c3d45db611ca4d949da7d4d9fe95d356421675194baf7263f5c2b9. PDF pages 3–4 are printed pages 11–12. Both alternative criteria appear in the same setup sentence. Editorial recheck 2026-09-23: Inspected rendered PDF pages 3 and 4, printed pages 11 and 12. Most eager to marry and most recently married are alternative criteria in one sentence, not ordered tie-breaks. The starter gets no setup bonus and begins the clockwise shared-figure turns. Cached source: research\\source-files\\rnr\\touria-132d6b2e.pdf; SHA-256 5fd9ae1bb9c3d45db611ca4d949da7d4d9fe95d356421675194baf7263f5c2b9. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal criterion selects the initial turn without game components.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/touria. Finding: The player most eager to get married starts; the rules alternatively suggest whoever got married most recently. Local source SHA-256: 5fd9ae1bb9c3d45db611ca4d949da7d4d9fe95d356421675194baf7263f5c2b9. PDF pages 3–4 are printed pages 11–12. Both alternative criteria appear in the same setup sentence. Editorial recheck 2026-09-23: Inspected rendered PDF pages 3 and 4, printed pages 11 and 12. Most eager to marry and most recently married are alternative criteria in one sentence, not ordered tie-breaks. The starter gets no setup bonus and begins the clockwise shared-figure turns. Cached source: research\\source-files\\rnr\\touria-132d6b2e.pdf; SHA-256 5fd9ae1bb9c3d45db611ca4d949da7d4d9fe95d356421675194baf7263f5c2b9. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal criterion selects the initial turn without game components. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

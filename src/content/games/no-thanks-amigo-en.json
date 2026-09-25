@@ -3,13 +3,13 @@
   "slug": "no-thanks-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "93ada2a749c89f0f66bef7d4eb6ff2987dd64693d724365adde5d05917d9fc2c",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "51494f629e58492305c6f3b9b8f8a9543d2be7fcdf39c5f32ef6a0a2f361e152",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "No Thanks!",
   "aliases": [],
-  "editionLabel": "English AMIGO rules, 20-page publisher booklet",
+  "editionLabel": "English AMIGO rules",
   "firstPlayerRule": "Whoever said “No thanks!” most recently starts by revealing the top card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2455&select=downloads. Finding: Whoever said “No thanks!” most recently starts by revealing the top card. Local source SHA-256: f7f336d00662ec5dfd682aa56a1e7a64810ea9a262f519a931cabc48beb74b2e. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2455&select=downloads. Finding: Whoever said “No thanks!” most recently starts by revealing the top card. Local source SHA-256: f7f336d00662ec5dfd682aa56a1e7a64810ea9a262f519a931cabc48beb74b2e. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

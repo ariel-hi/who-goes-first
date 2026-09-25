@@ -1,10 +1,15 @@
 {
   "id": "mech-a-dream-blue-orange-us-en",
   "slug": "mech-a-dream-blue-orange-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Mech A Dream",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English rules · 20-page bilingual publisher PDF",
+  "editionLabel": "Blue Orange English rules",
   "firstPlayerRule": "The person who most recently dreamed about robots starts and takes the phase pawn, Sun side up.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -28,10 +33,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently dreamed about robots starts and takes the phase pawn, Sun side up. Local source SHA-256: 68300b74b01ecf02e54ed97c801dc9b70264ef0cafd8ebe8e93dadf9efa203e9.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

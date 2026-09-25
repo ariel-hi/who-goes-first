@@ -1,0 +1,43 @@
+{
+  "id": "caterpillar-dice-haba-en-2014",
+  "slug": "caterpillar-dice-haba-en-2014",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6501b87950dd9f207dc77832886edc1bf936b350a82e3785d777a25619b7fe35",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Caterpillar Dice",
+  "aliases": [
+    "Raupenwürfeln"
+  ],
+  "editionLabel": "HABA English section of multilingual rules (2014)",
+  "firstPlayerRule": "Whoever most recently saw a caterpillar begins by rolling the die.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise. The memory variant uses the basic rules with changes to the body pieces, not to the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ludism.fr/regles_files/fr/upload/301318-raupenwuerfeln_2014.pdf",
+      "title": "Caterpillar Dice — multilingual rules, English section",
+      "publisher": "HABA / Habermaaß GmbH",
+      "printedPages": [
+        "5",
+        "15"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        15
+      ],
+      "location": "English How to Play; publisher credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The HABA-authored multilingual booklet preserved by Ludism was retrieved for inventory BGG identity 30098. PDF page 4 (printed page 5) and PDF page 15 were rendered and visually checked. The English How to Play section says the last person to see a caterpillar begins by rolling, and play is clockwise. The memory variant follows the basic rules except its stated component changes. The back page identifies Habermaaß GmbH and a January 2014 printing. Mirror PDF SHA-256: aa4e7be070584bbcf47a57c495053cd6208390d1afd0002e6d630bf4870a6642. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet does not provide a fallback if no player recalls seeing a caterpillar or two players saw one together."
+  ]
+}

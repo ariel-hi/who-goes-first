@@ -1,10 +1,15 @@
 {
   "id": "nanofictionary-looney-en",
   "slug": "nanofictionary-looney-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Nanofictionary",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "Looney Labs English rules, 2017 edition, item LOO-079",
+  "editionLabel": "Looney Labs English rules, 2017 edition",
   "firstPlayerRule": "The player with the shortest name takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,10 +35,5 @@
     "The source does not specify whether to compare first names, full names or another form of name.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

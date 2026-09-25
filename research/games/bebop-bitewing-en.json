@@ -1,0 +1,41 @@
+{
+  "id": "bebop-bitewing-en",
+  "slug": "bebop-bitewing-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e27bcb07c9f3d72114a2f388a634c244742bec8554444dadfa725ade2454d5be",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Bebop",
+  "aliases": [],
+  "editionLabel": "Bitewing Games English rules (2024)",
+  "firstPlayerRule": "The player who most recently went to a concert is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise from that player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/2d/4b/35/bebop-rules_small.pdf",
+      "title": "Bebop — English rules",
+      "publisher": "Bitewing Games",
+      "printedPages": [
+        "5",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        12
+      ],
+      "location": "Gameplay and publisher credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Allplay's Bebop product page https://allplay.com/board-games/bebop identifies the Bitewing Games edition for BGG identity 414349. The Bitewing-authored booklet was retrieved from Gamers HQ; its printed/PDF pages 5 and 12 were rendered and visually checked. Page 5 states the concert criterion and clockwise order. The credits on page 12 identify Bitewing Games and 2024. The 36-plus-MB PDF exceeded the default intake cap and was retrieved using its 150-MB bounded option. Mirror PDF SHA-256: 99244a9c1a8bc644373e8bce97d78800e663a945640ee699c62b14abf005a8e7. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rules give no tie-break or fallback if nobody has been to a concert or several players last went together."
+  ]
+}

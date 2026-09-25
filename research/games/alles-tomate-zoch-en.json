@@ -1,10 +1,15 @@
 {
   "id": "alles-tomate-zoch-en",
   "slug": "alles-tomate-zoch-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Alles Tomate!",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English section · four-page multilingual publisher PDF",
+  "editionLabel": "Zoch English rules",
   "firstPlayerRule": "The person who most recently ate a tomato reveals the first card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -25,14 +30,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/children-s-games/alles-tomate-601105035-en.html. Finding: The person who most recently ate a tomato reveals the first card. Local source SHA-256: 7a165d81aa428f7f0694ca56684bab1a92c52e03226ee3fd6f71fd44fd39ec81. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/children-s-games/alles-tomate-601105035-en.html. Finding: The person who most recently ate a tomato reveals the first card. Local source SHA-256: 7a165d81aa428f7f0694ca56684bab1a92c52e03226ee3fd6f71fd44fd39ec81.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

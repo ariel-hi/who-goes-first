@@ -1,10 +1,15 @@
 {
   "id": "chomp-gamewright-en",
   "slug": "chomp-gamewright-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Chomp!",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "There is no single starting player: everyone turns over a card at the same time.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -29,10 +34,5 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

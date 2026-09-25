@@ -1,10 +1,15 @@
 {
   "id": "bot-factory-eagle-gryphon-en-v21",
   "slug": "bot-factory-eagle-gryphon-en-v21",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Bot Factory",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "Eagle-Gryphon English v21 public rules, ©2022",
+  "editionLabel": "Eagle-Gryphon English public rules, ©2022",
   "firstPlayerRule": "The person who last bought a robot starts the first worker-placement phase. You may instead choose that player randomly.",
   "officialTieBreak": "Random selection is an official alternative; it is not restricted to a tie.",
   "houseFallback": null,
@@ -38,10 +43,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.eagle-gryphon.com/products/bot-factory. Finding: The person who last bought a robot starts the first worker-placement phase. You may instead choose that player randomly. Local source SHA-256: f5a6d4812138fce3fff1fc39e5d79023495e586bd7499587d6276db45b27b240. Rendered pages 3, 4, 10, 11 and 12 inspected. The criterion selects the initial Move Workers turn, not necessarily the first subsequent Perform Actions turn. The file explicitly offers random selection.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

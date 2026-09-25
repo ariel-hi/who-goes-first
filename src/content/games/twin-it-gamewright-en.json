@@ -3,13 +3,13 @@
   "slug": "twin-it-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e723906802b5e70ec305ac2c6d6d06e9cc2f88393d144a28bf552748e550a287",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "6393d24852d2a3e4b6a58d25f064964d42d7e65789f08ab92362cf491b0cfa46",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Twin It!",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 1-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "The person wearing the greatest number of colors starts by revealing a card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in Competitive mode: How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The person wearing the greatest number of colors starts by revealing a card. Local source SHA-256: d6ba4232eff0a2bfe35cffc21e6cb1377ac7678409536c68175a6bbd4dca165f. Editorial review 2026-09-23: Rechecked the cited instruction, role and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "The English starting instruction in Competitive mode: How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The person wearing the greatest number of colors starts by revealing a card. Local source SHA-256: d6ba4232eff0a2bfe35cffc21e6cb1377ac7678409536c68175a6bbd4dca165f. Editorial review 2026-09-23: Rechecked the cited instruction, role and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

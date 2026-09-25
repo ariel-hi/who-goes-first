@@ -1,12 +1,17 @@
 {
   "id": "icecool-brain-games-en",
   "slug": "icecool-brain-games-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "ICECOOL",
   "aliases": [
     "Ice Cool"
   ],
-  "language": "en",
-  "editionLabel": "English Brain Games rules, ten-page publisher download",
+  "editionLabel": "English Brain Games rules",
   "firstPlayerRule": "Whoever saw a penguin most recently is the first catcher. The player to that person's left takes the first flick, and turns continue clockwise.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -55,10 +60,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

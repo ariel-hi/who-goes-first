@@ -1,12 +1,17 @@
 {
   "id": "next-station-tokyo-blue-orange-en",
   "slug": "next-station-tokyo-blue-orange-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Next Station Tokyo",
   "aliases": [
     "Next Station: Tokyo"
   ],
-  "language": "en",
-  "editionLabel": "English rules · two-page folded publisher PDF",
+  "editionLabel": "Blue Orange English rules",
   "firstPlayerRule": "The person who most recently took the subway is the controller for the first round.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -33,10 +38,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently took the subway is the controller for the first round. Local source SHA-256: 11c9809f6989c099fc1d4a04032f961c09eb84640def61a641d351d6fb862b4a.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

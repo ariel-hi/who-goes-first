@@ -1,0 +1,40 @@
+{
+  "id": "sol-last-days-elephant-en",
+  "slug": "sol-last-days-elephant-en",
+  "gameName": "Sol: Last Days of a Star",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Elephant Laboratories English rulebook",
+  "firstPlayerRule": "Whoever has been closest to the Sun most recently is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The optional Vestigial Structures setup places gates and stations in turn order, beginning from the chosen first player.",
+    "In a solo game there is no multiplayer starting order to select."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://elephantlaboratories.com/sol-rulebook.pdf",
+      "title": "Sol: Last Days of a Star — rulebook",
+      "publisher": "Elephant Laboratories",
+      "printedPages": [
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Setup and Vestigial Structures variant",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Elephant Laboratories' media page https://elephantlaboratories.com/sol/media links this official manual. Its 51 MB size exceeded the bounded intake script's 35 MB cap; the file was streamed separately and printed/PDF page 5 was rendered and visually checked. Official PDF SHA-256: c22bfac9bd6b5619274c7b9178002a75ab06fdf85f2b9683e2b59e905b815830. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rules do not define how to compare how close players have been to the Sun or state a tie-break."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "b74f4263187fd02454259164f05a353a009330749b72225928d43f5b51579b5a",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

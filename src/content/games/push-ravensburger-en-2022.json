@@ -1,0 +1,29 @@
+{
+  "id": "push-ravensburger-en-2022",
+  "slug": "push-ravensburger-en-2022",
+  "gameName": "PUSH",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Ravensburger English rules, 2022",
+  "firstPlayerRule": "Whoever sat down first starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["Play continues clockwise."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/228531_26828_X_EN.pdf?ossl=pds_text_Spielanleitung",
+    "title": "PUSH — English rules",
+    "publisher": "Ravensburger",
+    "printedPages": ["1"],
+    "pdfPagesOneBased": [1],
+    "location": "SET UP, final two sentences",
+    "checkedAt": "2026-09-25"
+  }],
+  "internalEvidence": "Ravensburger's publisher-hosted English PDF identifies PUSH and article 26828. Page 1 was rendered and the SET UP passage visually read. The file's copyright notice on page 2 reads ©2022. Downloaded PDF SHA-256: b4a1f05b18a10e92776be1611fa1b615473e647a530f1099973cc4d82a83bf10. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": ["No tie-break is stated for players who sat down at the same time."],
+  "status": "approved",
+  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "02edcb37b9dda246bbe60c632a8dc5a93ff6ade6609ce4377bcaf05117382faf",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

@@ -3,13 +3,13 @@
   "slug": "bloom-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "beafdd3bcf28fd6f210c3cbf5ef37eb287c07ec794de3c5a2a5a622116f2d6f0",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "b8423b36ebc9753b7eb878ccc9ce8ef0c56a6e0358a05c218a52c26b818fd6c4",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Bloom",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "Whoever received a flower most recently starts the first round.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever received a flower most recently starts the first round. Local source SHA-256: ea71655385b7b7ff3a02103523b0fb19a753f865b9151bf36cc1ad99f436d523. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion.",
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Whoever received a flower most recently starts the first round. Local source SHA-256: ea71655385b7b7ff3a02103523b0fb19a753f865b9151bf36cc1ad99f436d523. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

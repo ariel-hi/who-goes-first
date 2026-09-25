@@ -1,10 +1,15 @@
 {
   "id": "parks-keymaster-en-v12",
   "slug": "parks-keymaster-en-v12",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "PARKS",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "Keymaster original-edition English rules, version 1.2",
+  "editionLabel": "Keymaster original-edition English rules",
   "firstPlayerRule": "Whoever most recently went on a hike takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -48,10 +53,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

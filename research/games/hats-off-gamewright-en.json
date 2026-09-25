@@ -1,10 +1,15 @@
 {
   "id": "hats-off-gamewright-en",
   "slug": "hats-off-gamewright-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Hats Off",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "The player with the longest hair turns over the first card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -27,10 +32,5 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

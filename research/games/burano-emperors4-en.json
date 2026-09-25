@@ -1,10 +1,15 @@
 {
   "id": "burano-emperors4-en",
   "slug": "burano-emperors4-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Burano",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English EmperorS4 rules, twenty-page publisher-linked PDF",
+  "editionLabel": "English EmperorS4 rules",
   "firstPlayerRule": "Whoever visited Italy most recently starts. If nobody has ever been there, choose the starting player randomly.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -30,13 +35,8 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.emperors4.com/game/burano. Finding: Whoever visited Italy most recently starts. If nobody has ever been there, choose the starting player randomly. Local source SHA-256: 07e1da202de25491371c2922fabed5c84a0a765b3376da77a030860640462a53. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.emperors4.com/game/burano. Finding: Whoever visited Italy most recently starts. If nobody has ever been there, choose the starting player randomly. Local source SHA-256: 07e1da202de25491371c2922fabed5c84a0a765b3376da77a030860640462a53.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

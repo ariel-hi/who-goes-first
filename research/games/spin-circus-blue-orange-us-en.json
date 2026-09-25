@@ -1,10 +1,15 @@
 {
   "id": "spin-circus-blue-orange-us-en",
   "slug": "spin-circus-blue-orange-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Spin Circus",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "US English rules · four-page bilingual publisher PDF",
+  "editionLabel": "Blue Orange US English rules",
   "firstPlayerRule": "The person who most recently saw an acrobat starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -28,7 +33,7 @@
     },
     {
       "url": "https://blueorangegames.eu/wp-content/uploads/2021/12/SpinCircus-Rules-EN.pdf",
-      "title": "Spin Circus — Blue Orange rules (UK file)",
+      "title": "Spin Circus — Blue Orange UK rules",
       "publisher": "Blue Orange",
       "printedPages": [
         "1"
@@ -43,10 +48,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: The person who most recently saw an acrobat starts. Local source SHA-256: 9ee1d17fad647d0424e04d9aece576b5185d3855cca86b743f62b73fae36be6c. The other English publisher file was also visually checked on PDF page 1. Its starting criterion differs. Comparison source SHA-256: 336540618626f68d41ebf20f304d21dc9978fb667adc1380421af6b55fa93468.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

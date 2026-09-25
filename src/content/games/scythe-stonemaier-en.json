@@ -1,0 +1,46 @@
+{
+  "id": "scythe-stonemaier-en",
+  "slug": "scythe-stonemaier-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "4c00d843f63e4a39422ebd637f701d405c8bce31aa47d3053c4d8e86aaf825d4",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Scythe",
+  "aliases": [],
+  "editionLabel": "Stonemaier Games English rulebook, 2015",
+  "firstPlayerRule": "The player whose Player Mat has the lowest number on its label goes first. Player Mats are dealt randomly during setup.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise from the starting player.",
+    "Faction Mats and Player Mats are shuffled and one of each is dealt to every player; the Rusviet/Industrial and Crimea/Patriotic combinations are banned and redrawn.",
+    "The designer notes that higher-numbered Player Mats have slightly better starting track positions to offset the likely extra turn for the first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fo/ulyfze69rb24tsgip7mn7/AIzx8vU3w5KrCrBacGp8Kb4/Scythe/Rulebook%20(many%20languages)?rlkey=0ejidzd7lktoa5hyrbkmy9xse&dl=0&preview=ScytheRules_15th_r24.pdf",
+      "title": "Scythe — English rulebook",
+      "publisher": "Stonemaier Games",
+      "printedPages": [
+        "2",
+        "6",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6,
+        8,
+        32
+      ],
+      "location": "Page 6, Faction Selection; page 8, Setup continued — Starting Player and Designer’s Note; page 2 quick-reference step 18; copyright on the back page",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Stonemaier’s official rules page https://stonemaiergames.com/games/scythe/rules/ links a Dropbox folder of multiplayer rulebooks; downloaded the English file ScytheRules_15th_r24.pdf from that folder. SHA-256: a9c19c124dfee07d643c410a2c8eac9513cc687e0d4e0f5226533534951a95ff. Rendered and read PDF page 8: under Starting Player, the player with the lowest number on their Player Mat label goes first and play proceeds clockwise; the Designer’s Note explains the higher-numbered mats’ compensation. Page 6: Faction Mats and Player Mats are shuffled and dealt, with two banned combinations. Page 2 quick-reference step 18 repeats the rule. Back page (PDF 32) shows © 2015 Stonemaier LLC, identifying the base game Scythe (BGG 169786). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This covers the multiplayer base game. The separate Automa solo rules and expansions (which add Player Mats) were not reviewed."
+  ]
+}

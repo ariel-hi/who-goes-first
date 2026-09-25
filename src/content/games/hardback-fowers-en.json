@@ -3,13 +3,13 @@
   "slug": "hardback-fowers-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f0eddb31be81f4e882c8a0551afd34079d1173097237cfbd7b50b9b8fe68cd23",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "8ae2c6c948976ab004ae82cb94a400e710955f6392f8219f273573666cc0f1ba",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Hardback",
   "aliases": [],
-  "editionLabel": "English Fowers Games rules, 20-page Skellig-hosted PDF",
+  "editionLabel": "English Fowers Games rules",
   "firstPlayerRule": "Whoever last used a pen takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If there is a tie or this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -41,7 +41,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Inspected rendered setup, game-end, cooperative-variant and credit pages. The pen criterion selects the first normal human turn. No printing year was inferred from the host path. Cached source: research\\source-files\\skellig-direwolf\\hardback-0e4042f1.pdf; SHA-256 c7edb06a2cf8e57859e7ccab9eb87da7864cc44d98c33efc2075cb7a1f972c45. Discovery: https://www.skellig-games.de/hardback.html. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal-history criterion that selects the first ordinary turn without game components.",
+  "internalEvidence": "Inspected rendered setup, game-end, cooperative-variant and credit pages. The pen criterion selects the first normal human turn. No printing year was inferred from the host path. Cached source: research\\source-files\\skellig-direwolf\\hardback-0e4042f1.pdf; SHA-256 c7edb06a2cf8e57859e7ccab9eb87da7864cc44d98c33efc2075cb7a1f972c45. Discovery: https://www.skellig-games.de/hardback.html. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal-history criterion that selects the first ordinary turn without game components. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated beside the pen criterion.",
     "The answer applies to the identified publisher file; other editions may differ."

@@ -1,12 +1,47 @@
 {
-  "id": "kingdomino-2016-en", "slug": "kingdomino-2016-en", "gameName": "Kingdomino", "aliases": ["King Domino"], "language": "en",
-  "editionLabel": "English base game · copyright 2016, six-page publisher PDF",
+  "id": "kingdomino-2016-en",
+  "slug": "kingdomino-2016-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Kingdomino",
+  "aliases": [
+    "King Domino"
+  ],
+  "editionLabel": "Blue Orange English base game · copyright 2016",
   "firstPlayerRule": "During setup, draw kings blindly one at a time and place each on an available domino. Once play begins, the owner of the king on the lowest-numbered domino takes the first turn.",
-  "officialTieBreak": null, "houseFallback": null,
-  "clarifications": ["The initial king placement and the first regular turn are different steps.", "At two players, each person has two kings. Later turn order follows the domino positions, rather than clockwise seating."],
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The initial king placement and the first regular turn are different steps.",
+    "At two players, each person has two kings. Later turn order follows the domino positions, rather than clockwise seating."
+  ],
   "interpretation": "A separate random starting-player draw does not replace the king-and-domino setup in this edition.",
-  "sources": [{"url": "https://blueorangegames.eu/wp-content/uploads/2023/04/Kingdomino-Rules-EN.pdf", "title": "Kingdomino — English rules", "publisher": "Blue Orange", "printedPages": ["2", "3", "4"], "pdfPagesOneBased": [2, 3, 4], "location": "Page 2, Set-up B; page 3, Playing the Game; copyright on page 4", "checkedAt": "2026-09-22"}],
+  "sources": [
+    {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2023/04/Kingdomino-Rules-EN.pdf",
+      "title": "Kingdomino — English rules",
+      "publisher": "Blue Orange",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Page 2, Set-up B; page 3, Playing the Game; copyright on page 4",
+      "checkedAt": "2026-09-22"
+    }
+  ],
   "internalEvidence": "Publisher PDF inspected: setup draws kings from a hand, potentially another player's color, and places each on an unoccupied domino. Page 3 specifies the king on the lowest numbered domino starts. Pages 2 and 3 visually inspected; copyright 2016 read on PDF page 4.",
-  "uncertainty": ["Do not generalize this setup wording to later editions or Kingdomino Origins.", "The 2023 hosting directory is not an edition date."],
-  "status": "draft", "approvedBy": null, "approvedRevision": null, "publishedAt": null, "materiallyUpdatedAt": null
+  "uncertainty": [
+    "Do not generalize this setup wording to later editions or Kingdomino Origins.",
+    "The 2023 hosting directory is not an edition date."
+  ]
 }

@@ -1,10 +1,15 @@
 {
   "id": "imagine-gamewright-en",
   "slug": "imagine-gamewright-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Imagine",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Gamewright rules · 8-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "The person considered most creative starts.",
   "officialTieBreak": "If the group cannot decide, the youngest player starts.",
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -26,10 +31,5 @@
   "internalEvidence": "The English starting instruction in How to Play on PDF page 4 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The person considered most creative starts. Official fallback: If the group cannot decide, the youngest player starts. Local source SHA-256: 963ad3172570912e277c3f17bc14565a1a1cd69edebd7ac5a374d37b2183e775.",
   "uncertainty": [
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

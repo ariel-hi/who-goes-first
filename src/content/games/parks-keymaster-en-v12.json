@@ -3,13 +3,13 @@
   "slug": "parks-keymaster-en-v12",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "289a6a97637111f81fa58a910ad790559f8bb705094f7a1d60dc07cc536226c9",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "64573d690d77e5ccb5a9ecd4814e77e2fbd7a9f92b8f4c560565c21a6272c3bf",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "PARKS",
   "aliases": [],
-  "editionLabel": "Keymaster original-edition English rules, version 1.2",
+  "editionLabel": "Keymaster original-edition English rules",
   "firstPlayerRule": "Whoever most recently went on a hike takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -49,7 +49,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://keymaster.fun/pages/how-to-play-parks. Finding: Whoever most recently went on a hike takes the first turn. Local source SHA-256: 002b335f7bbd6cb9864d7a484f6ed393d48f5a4d456f6afa9bd3777260737da1. The publisher’s original PARKS how-to-play page directly links this complete version 1.2 PDF. It is distinct from the current second-edition version 1.1 PDF and must not be represented as that edition. PDF pages are spreads; no publication year was inferred from the download URL. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: this personal-history criterion selects the first multiplayer action turn without game-specific components.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://keymaster.fun/pages/how-to-play-parks. Finding: Whoever most recently went on a hike takes the first turn. Local source SHA-256: 002b335f7bbd6cb9864d7a484f6ed393d48f5a4d456f6afa9bd3777260737da1. The publisher’s original PARKS how-to-play page directly links this complete version 1.2 PDF. It is distinct from the current second-edition version 1.1 PDF and must not be represented as that edition. PDF pages are spreads; no publication year was inferred from the download URL. Editorial review 2026-09-23: Codex inspected the rendered starting passage, edition, relevant mode and round context, source-page references and visible qualifications. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: this personal-history criterion selects the first multiplayer action turn without game-specific components. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

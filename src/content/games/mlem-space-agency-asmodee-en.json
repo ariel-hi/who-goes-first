@@ -1,0 +1,42 @@
+{
+  "id": "mlem-space-agency-asmodee-en",
+  "slug": "mlem-space-agency-asmodee-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9a8d7ae66fdfd58b81aa22aa475a144496a0a9ffd60eaa475f8e2f25879fb334",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "MLEM: Space Agency",
+  "aliases": [],
+  "editionLabel": "Asmodee Canada English rules",
+  "firstPlayerRule": "The player who most recently cleaned the litter box starts the first space expedition. Give that player the rocket board, rocket marker, and all the dice.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starting player is the initial commander of the expedition; the other players place astronauts clockwise in rocket-board order.",
+    "After each expedition, pass the rocket board to the player on the left. That player starts the next expedition."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2024/01/MLEM_Space_Agency_rules_ENG_www.pdf",
+      "title": "MLEM: Space Agency — English rules",
+      "publisher": "Asmodee Canada",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Game preparation and starting a new expedition",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Asmodee Canada's product page https://www.asmodee.ca/en/product/mlem-space-agency/ links the English rulebook for BGG identity 387378. Printed/PDF pages 5–6 were rendered and visually checked. Official PDF SHA-256: 8007f623a5ddf77160b28e64bc2318ba94f516911f92bb00da70714c6e806310. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The rulebook gives no tie-break or fallback if the most recent litter-box cleaning is tied or nobody qualifies."
+  ]
+}

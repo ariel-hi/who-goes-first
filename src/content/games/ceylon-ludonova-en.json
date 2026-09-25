@@ -3,13 +3,13 @@
   "slug": "ceylon-ludonova-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6cb87b6075d1b559877ddfd92d90bc41ea16286b1ac6e466e8eeddf6bf8f0a05",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "c184d3ed8798c901093a379747a753b053f3ca45bf27e3e970d91d3b942ab6d5",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Ceylon",
   "aliases": [],
-  "editionLabel": "English Ludonova rules, publisher file Rules_Ceylon_2.0_low.pdf",
+  "editionLabel": "English Ludonova rules",
   "firstPlayerRule": "In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -37,7 +37,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/ceylon/. Finding: In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts. Local source SHA-256: 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. Editorial recheck 2026-09-23: Opened and visually inspected each listed source-page render from the publisher-linked cached PDF. Rechecked starting role, mode and edition scope. Official alternatives remain in the main answer and are not mislabeled as tie-breaks. Corrected the original draft clarification: the variant uses ascending tile order for initial placement, not standard clockwise setup order. Cached source: research\\source-files\\ludonova\\ceylon-1454d869.pdf; SHA-256 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The main answer includes an experienced-player variant requiring numbered starting tiles.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/ceylon/. Finding: In standard play, whoever drank tea most recently starts, or choose randomly. In the optional experienced-player variant, the lowest-numbered starting tile determines who starts. Local source SHA-256: 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. Editorial recheck 2026-09-23: Opened and visually inspected each listed source-page render from the publisher-linked cached PDF. Rechecked starting role, mode and edition scope. Official alternatives remain in the main answer and are not mislabeled as tie-breaks. Corrected the original draft clarification: the variant uses ascending tile order for initial placement, not standard clockwise setup order. Cached source: research\\source-files\\ludonova\\ceylon-1454d869.pdf; SHA-256 6eb6688e1d160ce141bcee2cef6cf11ddfac70e8198930dbc0f6536b0d64da6f. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: exclude; The main answer includes an experienced-player variant requiring numbered starting tiles. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
   ]

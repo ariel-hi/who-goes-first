@@ -1,12 +1,17 @@
 {
   "id": "basketboss-allplay-en",
   "slug": "basketboss-allplay-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "864f0974f5bdfe893100d4214a1744171008b9c9e0a6b105e14430a24823be80",
+  "publishedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Basketboss",
   "aliases": [
     "Basket Boss"
   ],
-  "language": "en",
-  "editionLabel": "English rules linked by Allplay, four-page publisher PDF",
+  "editionLabel": "English rules linked by Allplay",
   "firstPlayerRule": "The tallest person takes the Referee Advisor card and makes the first contract offer or passes.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -29,14 +34,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/basketboss. Finding: The tallest person takes the Referee Advisor card and makes the first contract offer or passes. Local source SHA-256: a319034da32072d8c51151af429fcf306bef2bc08c411964a00d3b9bf11acfc2. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; setup gives the tallest Manager the Referee Advisor card for a $2m return, and the lowest-numbered Advisor holder opens the first Offer Contracts phase. Random mix: exclude; first action depends on the game-specific Advisor card.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/basketboss. Finding: The tallest person takes the Referee Advisor card and makes the first contract offer or passes. Local source SHA-256: a319034da32072d8c51151af429fcf306bef2bc08c411964a00d3b9bf11acfc2. Codex editorial review under the owner authorization of 2026-09-22: visually rechecked PDF pages 1 and 2; setup gives the tallest Manager the Referee Advisor card for a $2m return, and the lowest-numbered Advisor holder opens the first Offer Contracts phase. Random mix: exclude; first action depends on the game-specific Advisor card. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ce4752ed35d59017916e8640cee1b7b1dd6b29986c8657a8601872b634ef0a50",
-  "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23"
+  ]
 }

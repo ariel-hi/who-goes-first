@@ -3,13 +3,13 @@
   "slug": "tiny-towns-base-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "05da351543f762285da9a8559688542b6813433752665918c1dd7c5571f25ac5",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "5be0e8c69adbbf87a5bdf1397c8de97dab0b991a9dc51c111fea622cb95884e0",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Tiny Towns",
   "aliases": [],
-  "editionLabel": "English base game · copyright 2019, eight-page publisher rulebook",
+  "editionLabel": "Alderac Entertainment Group English base game · copyright 2019",
   "firstPlayerRule": "Whoever most recently built something in real life receives the Master Builder hammer and names the first resource. Everyone then places that resource simultaneously.",
   "officialTieBreak": null,
   "houseFallback": "If the group cannot identify a starter, agree to choose one randomly. This is a house rule.",
@@ -39,7 +39,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The PDF linked on https://www.alderac.com/tiny-towns/ was downloaded and Setup step 9 visually inspected on printed/PDF page 2. It selects the person who most recently constructed something in real life and gives that player the hammer. This PDF is rasterized; text extraction alone did not expose the instruction. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\tiny-towns-07150c1e.pdf; SHA-256 48e8cc0791880df6b58e8d5f53a85bab6f1f764f162a7a9026ff8a722e2ea791. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. Construction recency appoints the first Master Builder to name a resource. Placement and construction are simultaneous. Town Hall and solo use different procedures.",
+  "internalEvidence": "The PDF linked on https://www.alderac.com/tiny-towns/ was downloaded and Setup step 9 visually inspected on printed/PDF page 2. It selects the person who most recently constructed something in real life and gives that player the hammer. This PDF is rasterized; text extraction alone did not expose the instruction. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\tiny-towns-07150c1e.pdf; SHA-256 48e8cc0791880df6b58e8d5f53a85bab6f1f764f162a7a9026ff8a722e2ea791. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. Construction recency appoints the first Master Builder to name a resource. Placement and construction are simultaneous. Town Hall and solo use different procedures. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No construction-recency tie-break is stated in step 9.",
     "The URL's 2024 date is not asserted to be the game's edition year."

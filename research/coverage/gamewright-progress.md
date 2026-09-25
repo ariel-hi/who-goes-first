@@ -20,7 +20,7 @@ Important distinctions retained:
 
 | Title | Primary source inspected | Finding and remaining work |
 |---|---|---|
-| Boochie | [Publisher manual](https://gamewright.com/pdfs/Rules/Boochie-RULES.pdf), PDF page 1 | Cleanest shoes determines who tosses the target Boochie Ball in setup. The following section says players take turns throwing their objects but does not explicitly connect that throwing order to the setup toss. Do not silently call it the first ordinary turn. Seek an official clarification or another identified edition. |
+| Boochie | [Publisher manual](https://gamewright.com/pdfs/Rules/Boochie-RULES.pdf), PDF page 1 | Cleanest shoes determines who tosses the target Boochie Ball in setup. The following section says players take turns throwing their objects but does not explicitly connect that throwing order to the setup toss. The approved catalog answer states both the setup instruction and the unspecified first ordinary turn; it does not infer that the setup thrower plays first. |
 | Hit or Miss | [Publisher manual](https://gamewright.com/pdfs/Rules/HitorMissTM-RULES.pdf), both PDF pages, copyright 2006 visible | A Leader draws the category and starts scoring; leadership passes left in later rounds. Neither inspected page says how to choose the initial Leader. Seek another primary edition or clarification. No criterion was fabricated. |
 
 These are open research items, not fabricated game-answer pages or approvals.
