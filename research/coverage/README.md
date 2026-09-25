@@ -4,7 +4,7 @@ The owner requested the entire starting-rule compendium, not a named starter lis
 
 `discovery-index.json` records 1,333 distinct game identities: 1,320 observed in First Player Fun's public collection on 2026-09-22, plus 13 popular identities added with sourced rules on 2026-09-25. It contains names, BGG IDs and discovery links only; no competitor rule prose, images, application code, or inferred publisher verification. This is a useful research inventory, not an exhaustive definition of all board games. No reusable license for that site's rule prose was established in the inspected repositories.
 
-Run `npm run content:coverage` or open `/dev/coverage/` to compare the complete inventory with researched editions. At this checkpoint there are 833 researched rule records in total; 792 of 1,333 inventory identities match a researched edition and 541 still need primary-source research. Matching a title does not prove every edition agrees. The owner has delegated editorial review to Codex. All 833 researched exact revisions are approved for the catalog; 356 portable criteria are eligible for the random mix. Research coverage, approval and deployment remain separate.
+Run `npm run content:coverage` or open `/dev/coverage/` to compare the complete inventory with researched editions. At this checkpoint there are 839 researched rule records in total; 798 of 1,333 inventory identities match a researched edition and 535 still need primary-source research. Matching a title does not prove every edition agrees. The owner has delegated editorial review to Codex. All 839 researched exact revisions are approved for the catalog; 356 portable criteria are eligible for the random mix. Research coverage, approval and deployment remain separate.
 
 `identity-overrides.json` records known ambiguous names. An override's inventory IDs replace title matching for that rule; an empty list means the rule does not represent any inventory identity. Unknown rule IDs, unknown inventory IDs and duplicate override records are errors. Gamewright's Chomp! is excluded from the unrelated Allplay Chomp identity, which now has its own researched answer.
 
@@ -76,7 +76,7 @@ Other research leads inspected: [Rulebook](https://github.com/mohitagw15856/rule
 
 The inventory, coverage route and source files are private development material and are excluded from static deployment artifacts. `npm run build` audits that exclusion.
 
-The 2026-09-25 remaining-inventory pass adds 13 publisher-manual editions, including the mode-specific Fish 'n' Flip and Nibble Munch Crunch answers, the German Magic Labyrinth summary, and the explicit Minecraft and Rosalie fallbacks. Blocked downloads and a Glasgow/Glascow lookalike remain pending. See `remaining-sep25-progress.md`.
+The 2026-09-25 remaining-inventory pass adds 21 publisher-manual editions, including the mode-specific Fish 'n' Flip, Nibble Munch Crunch and Tipperary answers, the German Magic Labyrinth and Rondo summaries, and explicit official alternatives. Blocked downloads and lookalike editions remain pending. See `remaining-sep25-progress.md`.
 
 Eagle-Gryphon, Ludonaute and 2F-Spiele add ten reviewed edition records for nine more identities. The two Incan Gold editions share simultaneous decisions but differ in Guide-selection wording. Mercado de Lisboa was checked visually because its PDF has no extracted text. On Mars, Escape Plan, Bot Factory and Inventions preserve their phase/player-count distinctions. See `eagle-ludonaute-2f-progress.md`.
 

@@ -1,0 +1,42 @@
+{
+  "id": "treelings-edition-spielwiese-en",
+  "slug": "treelings-edition-spielwiese-en",
+  "gameName": "Treelings",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Edition Spielwiese English rules",
+  "firstPlayerRule": "The tallest player receives the starting-player card and starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise.",
+    "The starting player keeps the card until the end of the game; after the firefly festival card appears, play ends before that player would take another turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/dd/02/b8/Treelings-EN.pdf",
+      "title": "Treelings — English rules",
+      "publisher": "Edition Spielwiese",
+      "printedPages": [
+        "3",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5
+      ],
+      "location": "How to play and final round",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The publisher-authored English booklet was retrieved from the Gamers HQ mirror; BGG identity 298017 identifies Treelings and lists official rules uploaded by the publisher, and Pegasus' ludography confirms Edition Spielwiese. Printed/PDF pages 3 and 5 were rendered and visually checked. PDF SHA-256: 7bb07d587f615447b992fe22243dd953d6d4472c6d1890e3dc5a89149a572676. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet does not specify a tie-break for players of equal height."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ab7e7532ad8d04d84884eae39ab33e58e31860a3e7f87c27f10877a99ae276ab",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

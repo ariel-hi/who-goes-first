@@ -1,0 +1,46 @@
+{
+  "id": "tipperary-lookout-en",
+  "slug": "tipperary-lookout-en",
+  "gameName": "Tipperary",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Lookout Games English rules",
+  "firstPlayerRule": "The player who most recently saw a living sheep takes the cloth bag and spins the wheel first. The rules also allow the group to choose the bag holder randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the standard placement phase, everyone selects and places landscape tiles simultaneously after the bag holder spins the wheel; the bag holder is an opening role, not the only player to place a tile.",
+    "The optional sequential placement variant starts with the bag holder and proceeds clockwise.",
+    "The cloth bag passes clockwise to the next player at the end of each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.spielezar.ch/modules/genzo_zar/views/pdf/spielregeln-tipperary.pdf",
+      "title": "Tipperary — English rules",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "2",
+        "3",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        11
+      ],
+      "location": "Setup, Placement Phase, and End of Round",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Lookout Games' product page https://www.lookout-spiele.de/en/games/tipperary.html identifies the game and links an English PDF. Direct publisher download returned HTTP 403, so the publisher-authored English booklet was retrieved from the Spielezar mirror. Printed/PDF pages 2, 3, and 11 were rendered and visually checked. Mirror PDF SHA-256: 8114d18f5d3c174ea7304216399f7ec2acb946235c943fd6fe5387ef47e1a343. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The mirrored booklet was not byte-compared with the blocked publisher download; the publisher product page's indexed English text matches the reviewed rule.",
+    "The rules give random selection as an alternative and state no separate tie-break for equally recent sheep sightings."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "80b39136813617d41b93e47e57d379f1199a9875294f02d6325055d92bad4773",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}
