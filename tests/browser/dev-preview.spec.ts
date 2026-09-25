@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { showAllMethods } from './helpers';
 import { readFileSync, readdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { contentRevision, ruleSchema } from '../../src/lib/content/schema';
 
@@ -15,6 +16,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await expect(page.locator('.player')).toHaveCount(5);
   await page.getByRole('button', { name: 'Paste a list' }).click();
   await page.getByLabel('Player names').fill('Mina\nAlex\nJo');
+  await showAllMethods(page);
   for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) {
     await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();
     await page.getByRole('button', { name: 'Pick a player' }).click();
@@ -125,9 +127,10 @@ test('random-rule controls wait for their script and recover from unavailable ra
 
 test('random game rule, skip and source navigation work without treating a rule as an equal-chance draw', async ({ page }) => {
   await page.goto('http://127.0.0.1:4321/');
-  await expect(page.getByRole('heading', { name: 'Board game rules' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Playing a specific game?' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveAttribute('href', '/dev/games/');
-  await page.locator('.home-rule-picker summary').click();
+  await page.getByRole('link', { name: 'Try a random rule' }).click();
+  await expect(page).toHaveURL('http://127.0.0.1:4321/dev/games/#random-rule');
   await page.getByRole('button', { name: 'Pick a rule' }).click();
   const answer = await page.locator('[data-rule-answer]').textContent();
   const priorLink = await page.locator('[data-rule-link]').getAttribute('href');

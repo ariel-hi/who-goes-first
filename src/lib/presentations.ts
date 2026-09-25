@@ -13,6 +13,9 @@ export const presentations = [
   { id: 'shells', label: 'Shell Game', duration: 2700 },
 ] as const;
 
+// Shown before "More methods"; the rest stay one tap away.
+export const primaryModes: readonly string[] = ['quick', 'spinner', 'cards', 'balloon'];
+
 export function supportsGroup(mode: string, count: number): boolean {
   return count <= 12 || mode === 'quick' || mode === 'instant' || (count <= 24 && (mode === 'dice' || mode === 'coin'));
 }

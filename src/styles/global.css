@@ -225,3 +225,20 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 }
 
 
+
+/* Reveal methods: four up front, the rest behind "More methods". */
+.segmented .more-modes{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:70px;padding:7px 2px;border:1px dashed var(--line);border-radius:14px;background:transparent;color:var(--muted);font:inherit;font-size:11px;line-height:1.2;cursor:pointer}
+.segmented .more-modes:hover{background:#f5f0f5}
+.segmented .more-modes span[aria-hidden]{font-size:15px;letter-spacing:1px;line-height:24px}
+
+/* Home: rule lookup under the picker. */
+.home-rules .rule-lookup .search-box{margin-top:0}
+.home-rules .rule-lookup input{background:var(--paper)}
+.rule-lookup-results{list-style:none;padding:0;margin:10px 0 0;border:1px solid #d8cbd9;border-radius:15px;background:var(--paper);overflow:hidden}
+.rule-lookup-results li+li{border-top:1px solid var(--line)}
+.rule-lookup-results a{display:block;padding:12px 16px;min-height:44px;text-decoration:none;font-weight:600}
+.rule-lookup-results a:hover,.rule-lookup-results a:focus-visible{background:#f7f2f7;text-decoration:underline}
+.rule-lookup-results small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.rule-lookup [data-lookup-status]:empty{display:none}
+.home-rules-links{list-style:none;display:flex;flex-wrap:wrap;gap:4px 22px;padding:0;margin:16px 0 0;font-size:14px}
+.home-rules-links a{display:flex;align-items:center;min-height:44px}

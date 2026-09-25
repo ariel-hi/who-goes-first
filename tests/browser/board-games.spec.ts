@@ -5,8 +5,10 @@ test('all board games are searchable and lead to the right game page', async ({ 
   await expect(page.locator('[data-board-directory] li')).toHaveCount(1320);
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Azul');
   await expect(page.locator('[data-board-directory] li:visible').first()).toContainText('Azul');
+  // A game with one sourced edition links straight to its rule.
   await page.locator('[data-board-directory] li:visible').filter({ hasText: 'Azul' }).first().getByRole('link').click();
-  await expect(page.getByRole('link', { name: /English base game/ })).toHaveAttribute('href', '/games/azul-2018-en/');
+  await expect(page).toHaveURL(/\/games\/azul-2018-en\/$/);
+  await page.goBack();
   await page.setViewportSize({ width: 320, height: 750 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.goto('/board-games/174476/');

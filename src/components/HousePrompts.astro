@@ -3,9 +3,9 @@ interface Props { prompts: { id: string; prompt: string }[] }
 const { prompts } = Astro.props;
 ---
 {prompts.length > 0 && <div data-house-prompts data-prompts={JSON.stringify(prompts)}>
-  <div class="prompt-stage"><span class="eyebrow">Your group decides who qualifies</span><blockquote aria-live="polite" aria-atomic="true" data-prompt>Choose a question to start.</blockquote><div class="prompt-actions"><button class="primary" data-next disabled>Choose a question</button><button class="text-button" data-skip disabled>Skip</button></div><p class="small error" data-prompt-error hidden></p></div>
-  <p><a class="inline-link" href="/">Nobody / tied? Choose a random tie-break</a></p>
-  <details><summary>See all {prompts.length} original house rules</summary><ul class="prompt-list">{prompts.map(prompt => <li>{prompt.prompt}</li>)}</ul></details>
+  <div class="prompt-stage"><span class="eyebrow">Whoever fits best goes first</span><blockquote aria-live="polite" aria-atomic="true" data-prompt>Choose a question to start.</blockquote><div class="prompt-actions"><button class="primary" data-next disabled>Choose a question</button><button class="text-button" data-skip disabled>Skip</button></div><p class="small error" data-prompt-error hidden></p></div>
+  <p><a class="inline-link" href="/">Nobody fits, or it’s a tie? Pick a player at random</a></p>
+  <details><summary>See all {prompts.length} questions</summary><ul class="prompt-list">{prompts.map(prompt => <li>{prompt.prompt}</li>)}</ul></details>
 </div>}
 <script>
   import { shuffledPromptDeck } from '../lib/prompt-deck';

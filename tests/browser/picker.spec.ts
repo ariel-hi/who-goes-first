@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import { showAllMethods } from './helpers';
 
 async function controlledRandom(page: Page, value = 2) {
   await page.addInitScript((word: number) => {
@@ -68,7 +69,7 @@ test('reduced motion preserves the result and settled visual', async ({ page }) 
 });
 
 for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) test(`${mode} reveals the same preselected outcome`, async ({ page }) => {
-  await controlledRandom(page, 1); await ready(page);
+  await controlledRandom(page, 1); await ready(page); await showAllMethods(page);
   await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(announcement(page)).toContainText('Seat 2 goes first.');
@@ -96,7 +97,7 @@ test('Unicode, duplicate disambiguation, invalid input and literal HTML', async 
   await expect(page.locator('.player')).toHaveCount(5);
   await expect(page.getByText(/Matching names are separate/)).toBeVisible();
   await expect(page.locator('.player img')).toHaveCount(0);
-  await page.getByRole('radio', { name: /^Instant/ }).check();
+  await showAllMethods(page); await page.getByRole('radio', { name: /^Instant/ }).check();
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(announcement(page)).toContainText('Sam · #');
   await page.getByLabel('Player names').fill('Only me');
@@ -325,7 +326,7 @@ test('reviewed catalog, local drafts, aliases, house prompts and real 404s', asy
   await page.getByRole('button', { name: 'Choose a question' }).click();
   const before = await page.locator('[data-prompt]').textContent(); await page.getByRole('button', { name: 'Skip', exact: true }).click();
   await expect(page.locator('[data-prompt]')).not.toHaveText(before!);
-  await expect(page.getByRole('link', { name: /Nobody \/ tied/ })).toHaveAttribute('href', '/');
+  await expect(page.getByRole('link', { name: /Nobody fits/ })).toHaveAttribute('href', '/');
   const draft = await request.get('http://127.0.0.1:4321/dev/rules/azul-2018-en/');
   expect(await draft.text()).toContain('The player whose visit to Portugal was most recent starts.');
   expect(await draft.text()).not.toContain('astro-island');
