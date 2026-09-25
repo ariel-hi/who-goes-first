@@ -1,0 +1,51 @@
+{
+  "id": "dune-imperium-dire-wolf-en",
+  "slug": "dune-imperium-dire-wolf-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "b92bd64b28a160dff977e86a70808277646ea007085f93ac0c59bd474162bc28",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Dune: Imperium",
+  "aliases": [
+    "Dune Imperium"
+  ],
+  "editionLabel": "Dire Wolf English rulebook, 2020",
+  "firstPlayerRule": "Determine a first player randomly. That player takes the First Player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with the player who has the First Player marker, players take turns clockwise.",
+    "At the end of each round, the First Player marker passes clockwise to the next player.",
+    "In a solo game, the Rival on your left takes the First Player marker. In a two-player game, House Hagal acts after each of the first player’s Agent turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_Rules_2020_10_26.pdf",
+      "title": "Dune: Imperium — English rulebook",
+      "publisher": "Dire Wolf Digital",
+      "printedPages": [
+        "5",
+        "8",
+        "13",
+        "19",
+        "20"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        8,
+        13,
+        19,
+        20
+      ],
+      "location": "Page 5, Setup step H; page 8, Round Structure; page 13, Recall (First Player marker passes); pages 19–20, House Hagal two-player and solo rules",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Dire Wolf’s official rules page https://www.direwolfdigital.com/dune-imperium/resources/rules/ links this PDF. Downloaded and text-extracted all 20 PDF pages. Page 5 setup step H: determine a first player randomly; they take the First Player marker. Page 8: turns start with the First Player marker holder and go clockwise. Page 13: the marker passes clockwise each round. Page 20 solo setup: the Rival on your left takes the First Player marker. Page 15 credits: Copyright 2020 Dire Wolf Digital, designer Paul Dennen, confirming the base game (BGG 316554). SHA-256: a689f19e7bda36ec03240ba19cbc481dd4d681f55837529cd8170ec9d19be6db. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This entry covers the base game rulebook dated 2020-10-26; Dune: Imperium – Uprising and expansions were not reviewed."
+  ]
+}

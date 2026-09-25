@@ -1,0 +1,51 @@
+{
+  "id": "viticulture-essential-edition-stonemaier-en",
+  "slug": "viticulture-essential-edition-stonemaier-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Viticulture",
+  "aliases": [
+    "Viticulture: Essential Edition",
+    "Viticulture Essential Edition"
+  ],
+  "editionLabel": "Essential Edition, Stonemaier English rulebook",
+  "firstPlayerRule": "Shake the players’ rooster tokens in your hand and randomly pick one. That player is first and takes the first player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting choices on the blue cards are made clockwise starting with the first player.",
+    "Each spring, starting with the first player and going clockwise, players place roosters on the wake-up chart, which sets turn order for the rest of the year.",
+    "At the end of each year, the first player token rotates counter-clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fo/ulyfze69rb24tsgip7mn7/AA9wkPcZyt06-ZAF3gM34Ow/Viticulture/VitiRulebook_EssEd_2nd_r15_web.pdf?rlkey=0ejidzd7lktoa5hyrbkmy9xse&dl=0",
+      "title": "Viticulture Essential Edition — English rulebook",
+      "publisher": "Stonemaier Games",
+      "printedPages": [
+        "4",
+        "6",
+        "17",
+        "18"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        17,
+        18
+      ],
+      "location": "Page 4, Setup (First Player); page 6, Spring and wake-up chart; page 17, Year End; page 18, Automa solo rules",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Stonemaier’s Viticulture rules page https://stonemaiergames.com/games/viticulture/rules/ links its public “Rules and Other Public Files” Dropbox; the Viticulture folder holds VitiRulebook_EssEd_2nd_r15_web.pdf (modified Jun 22, 2025). Downloaded and text-extracted all 20 PDF pages. Page 4: randomly pick one of the claimed rooster tokens; that color is first player and takes the first player token. Page 6: spring wake-up placement starts with the first player, clockwise. Page 17: the first player token rotates counter-clockwise at year end. Page 18 is the official Automa solo rulesheet. Page 20: © 2015 Stonemaier LLC, matching BGG 183394. SHA-256: 958ab0ebea4866baa1c4c41359352e5d95b701593fccf43662f543532af8faa7. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "After the first spring, summer and winter turn order follows the wake-up chart rather than seating.",
+    "The Tuscany expansion was not reviewed."
+  ]
+}
