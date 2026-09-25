@@ -1,0 +1,40 @@
+{
+  "id": "monopoly-hasbro-2025-en",
+  "slug": "monopoly-hasbro-2025-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Monopoly",
+  "aliases": [
+    "Monopoly Classic"
+  ],
+  "editionLabel": "Hasbro US rules, 2025",
+  "firstPlayerRule": "Each player rolls both dice. The highest roller starts, and play moves to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before play, choose someone to be the Banker; the Banker can play too.",
+    "At the end of your turn, pass the dice to your left. Rolling doubles gives you another turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/G0009_en-us_monopoly-board-game-classic-game-with-storage-tray-and-larger-tokens-family-games-8.pdf",
+      "title": "Monopoly Board Game, Classic Game with Storage Tray and Larger Tokens — English instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Who goes first?\" box beside the setup steps; \"On your turn\" step 4",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English (US) instruction sheet for the classic Monopoly board game (Hasbro instructions site page monopoly-board-game-classic-game-with-storage-tray-and-larger-tokens-family-games-8) and extracted its text with pdftotext. PDF page 1 has the heading \"Who goes first?\" followed by: each player rolls both dice, the highest roller starts, and play moves to the left; turn step 4 says to pass the dice to your left. The sheet carries © 1935, 2025 Hasbro and the standard Monopoly components (Banker, Title Deeds, houses and hotels). SHA-256: 91e4e4548cda68d1d58b4f813605c3821dc75a5e3e679502d4fded6039fb5ca5. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rules do not say what to do if several players tie for the highest roll."
+  ]
+}
