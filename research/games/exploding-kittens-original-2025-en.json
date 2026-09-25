@@ -1,0 +1,41 @@
+{
+  "id": "exploding-kittens-original-2025-en",
+  "slug": "exploding-kittens-original-2025-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Exploding Kittens",
+  "aliases": [
+    "Exploding Kittens Original Edition"
+  ],
+  "editionLabel": "Exploding Kittens Original Edition English rules, 2025",
+  "firstPlayerRule": "Pick a player to go first. The rules offer joke suggestions, such as whoever is most excited to go first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play continues clockwise around the table."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0345/9180/1483/files/ekoe-instructions-english.pdf",
+      "title": "Exploding Kittens Original Edition — the rules",
+      "publisher": "Exploding Kittens",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 6 and Taking Your Turn on the rules side; copyright on the Field Guide side",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Rules PDF linked from the official How to Play page https://www.explodingkittens.com/pages/rules-kittens. SHA-256 1e65ea5b7550a75b7e76493a7b756c9eaeccb81f74a1d4b7209b7014bd06a4ad. Extracted text of PDF page 1: setup step 6 says to pick a player to go first, with humorous sample criteria; Taking Your Turn says play continues clockwise. PDF page 2 shows ©2025 Exploding Kittens. The sheet is marked Original Edition, 2-5 players. An older 2022 Original Edition sheet on a publisher CDN gives the same instruction. BGG 172225. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The sample criteria are jokes, not a required method.",
+    "Other editions (Party Pack, NSFW and others) were not checked."
+  ]
+}
