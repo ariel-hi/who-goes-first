@@ -163,11 +163,11 @@ test('all researched games are searchable but only reviewed portable rules enter
   await page.goto(`${DEV}/dev/games/`);
   await page.getByRole('searchbox').fill('Spin Circus');
   await expect(page.locator('.game-list li:visible')).toHaveCount(2);
-  await page.getByRole('link', { name: /Spin Circus US English/ }).click();
+  await page.locator('.game-list li:visible a[href="/games/spin-circus-blue-orange-us-en/"]').click();
   await expect(page.locator('.rule-answer')).toContainText('acrobat');
   await page.goBack();
   await page.getByRole('searchbox').fill('Spin Circus');
-  await page.getByRole('link', { name: /Spin Circus UK English/ }).click();
+  await page.locator('.game-list li:visible a[href="/games/spin-circus-blue-orange-uk-en/"]').click();
   await expect(page.locator('.rule-answer')).toContainText('stage');
   await page.goto(`${DEV}/dev/games/`);
   // Force the final index, beyond the picker roster limit. This catches truncation

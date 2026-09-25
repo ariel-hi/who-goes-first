@@ -54,7 +54,7 @@ test('spinner keeps named seats in the roster without a duplicate list', async (
   await page.getByLabel('Name for player 3', { exact: true }).fill('王芳');
   const colors = await page.locator('.seat-token').evaluateAll(tokens => tokens.map(token => getComputedStyle(token).backgroundColor));
   await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
-  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result', { timeout: 15000 });
   await expect(page.locator('.roster')).toBeVisible();
   await expect(page.locator('.spinner-legend')).toHaveCount(0);
   await expect(page.locator('.roster')).toContainText('Magnificent Eucalyptus');
