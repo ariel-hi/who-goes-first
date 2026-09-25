@@ -1,0 +1,41 @@
+{
+  "id": "king-of-tokyo-iello-2023-en",
+  "slug": "king-of-tokyo-iello-2023-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "King of Tokyo",
+  "aliases": [
+    "KoT"
+  ],
+  "editionLabel": "IELLO English rulebook, 2023",
+  "firstPlayerRule": "Everyone rolls the 6 black dice. Whoever rolls the most Smash (claw) results goes first.",
+  "officialTieBreak": "If players tie, they roll dice again until one player has the most Smash results.",
+  "houseFallback": null,
+  "clarifications": [
+    "The game plays clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://iellogames.com/wp-content/uploads/2021/10/KOT_Rules_EN_11-2023_Light.pdf",
+      "title": "King of Tokyo — English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4,
+        7
+      ],
+      "location": "Start of How to Play, above the Turn Overview; credits and copyright on PDF page 7",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The IELLO-hosted English rulebook (linked from https://iellogames.com/games/king-of-tokyo/) was unreachable from this network on 2026-09-25, so the identical URL was retrieved through the Internet Archive (id_ raw capture). SHA-256 8ad8bba7f868b3925bb82ba206bd5cc8eab9a1c5d08e2b36fccad615af57e5fe. PDF page 4 was rendered and visually checked: each player rolls the 6 black dice, whoever has the most claw-icon results goes first, and ties roll until one player has the greatest number. The same page labels the claw icon Smash. PDF page 7 shows ©2011-2023 IELLO, Richard Garfield design, lot KOTEN112023. BGG 70323. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rulebook does not say whether only the tied players reroll.",
+    "King of Tokyo: Dark Edition and Origins were not checked."
+  ]
+}

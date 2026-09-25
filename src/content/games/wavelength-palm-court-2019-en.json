@@ -1,0 +1,43 @@
+{
+  "id": "wavelength-palm-court-2019-en",
+  "slug": "wavelength-palm-court-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "84074d6ca6f4825e696bf64add58d18598177a1ed36a6909172a8bdeab09e20d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Wavelength",
+  "aliases": [],
+  "editionLabel": "Palm Court English rulebook, 2019",
+  "firstPlayerRule": "The rulebook doesn’t say which team goes first, so agree on a starting team. The team that goes first starts at 0 points and the other team starts at 1 point.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After forming two teams, each team decides who will be its Psychic for the first round.",
+    "Teams then alternate rounds with a new Psychic each time. If the Psychic’s team scores 4 points and is still behind, it immediately takes another turn with a different Psychic.",
+    "In cooperative mode everyone plays as one team."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://officialgamerules.org/wp-content/uploads/2025/02/Wavelength_rules.pdf",
+      "title": "Wavelength — rulebook",
+      "publisher": "Palm Court (now CMYK)",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        9,
+        15,
+        22,
+        23
+      ],
+      "location": "Setup Notes; How the Game Progresses and Catch Up Rule; Cooperative Mode; credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "CMYK’s Wavelength product page and wavelength.zone do not host the rules, so this uses a copy of the publisher rulebook hosted by officialgamerules.org. PDF metadata: Adobe InDesign, created 2019-07-23; 24 pages; credits on PDF page 23 name Wolfgang Warsch, Alex Hague and Justin Vickers with publishing by Palm Court. SHA-256 f24b2d9f3ae1faba7a2b75984601578175dee1386fc018ef1f34889553d287cb. Extracted text of PDF page 9: divide into 2 teams, decide the first-round Psychics, first team starts at 0 points and second at 1 point; no method for choosing the first team is given. PDF page 15: teams alternate, new Psychic each time, catch-up rule. PDF page 22: cooperative mode. BGG 262543. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no method for choosing which team goes first.",
+    "The cited PDF is a third-party-hosted copy of the 2019 Palm Court rulebook; later CMYK printings were not checked."
+  ]
+}

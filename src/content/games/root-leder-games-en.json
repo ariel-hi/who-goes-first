@@ -1,0 +1,47 @@
+{
+  "id": "root-leder-games-en",
+  "slug": "root-leder-games-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "bf76e6ce0a3d8e6b94c550d46bb4bb9008ec6a6f99b2a100b1de4e6fc127a345",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Root",
+  "aliases": [
+    "Root: A Game of Woodland Might and Right"
+  ],
+  "editionLabel": "Leder Games Law of Root, October 2025",
+  "firstPlayerRule": "Choose the starting player and the seating order at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Standard Setup assigns factions in any way, then randomizes the starting player and seating order. Advanced Setup also seats players and picks the first player randomly.",
+    "Factions set up in setup order (A, B, C, and so on), which is separate from turn order.",
+    "After a player ends Evening, the next clockwise player begins their turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf",
+      "title": "The Law of Root",
+      "publisher": "Leder Games",
+      "printedPages": [
+        "2",
+        "5",
+        "22"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5,
+        22
+      ],
+      "location": "Page 2, 1.4.1 Turn Structure; page 5, 5.1.1 Step 1: Assign Factions and Starting Player and 5.1.7; page 22, A.4 Step 4: Seat Players",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Law of Root PDF linked from the Leder Games resources page (https://ledergames.com/pages/resources), dated October 13, 2025 on its contents page. SHA-256 d32c8c0681d5bac6d2b483fb75d77efb47e78deaa36cb798bc527a605909c045. Extracted text of PDF pages 2, 5 and 22 (page footers match). 5.1.1: assign factions in any way, then determine the starting player and seating order randomly. A.4 (Advanced Setup): determine the seating order and the first player randomly. 1.4.1: after Evening, the next clockwise player begins. The Learn to Play booklet (October 2020) was also searched and gives no different starting rule. Game identity confirmed by title, factions and publisher; BGG 237182. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The Law does not specify how to randomize the starting player."
+  ]
+}
