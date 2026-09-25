@@ -3,13 +3,13 @@
   "slug": "ist-da-wer-zoch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "b006ed7a8e476a3e052f48286db966c5aaf26e9d94f12542c9535830bb4d6ff0",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "9965fa43e9c415541e4988449c2b4c7925046b6bdb782d93eb506b17f099895b",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Ist da wer?!",
   "aliases": [],
-  "editionLabel": "English section · sixteen-page multilingual publisher PDF",
+  "editionLabel": "Zoch English rules",
   "firstPlayerRule": "The person who most recently petted an animal shakes the thicket first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/activity-reaction-games/ist-da-wer-601105137-en.html. Finding: The person who most recently petted an animal shakes the thicket first. Local source SHA-256: 2f33b067afd3dd25bbcdd8f3fcf2e16a2c1083dfbb74de98ff55d9322b7c76c1. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The instruction selects the opening shaker before all players grab animals at the same time.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/activity-reaction-games/ist-da-wer-601105137-en.html. Finding: The person who most recently petted an animal shakes the thicket first. Local source SHA-256: 2f33b067afd3dd25bbcdd8f3fcf2e16a2c1083dfbb74de98ff55d9322b7c76c1. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The instruction selects the opening shaker before all players grab animals at the same time. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

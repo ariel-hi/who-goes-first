@@ -249,3 +249,7 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 .rule-lookup [data-lookup-status]:empty{display:none}
 .home-rules-links{list-style:none;display:flex;flex-wrap:wrap;gap:4px 22px;padding:0;margin:16px 0 0;font-size:14px}
 .home-rules-links a{display:flex;align-items:center;min-height:44px}
+
+/* Player count and "Paste a list" share one row. */
+.players-heading{justify-content:space-between;margin-bottom:12px}
+.players-heading .roster-tools{margin:0}

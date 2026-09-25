@@ -1,12 +1,17 @@
 {
   "id": "wilson-and-shep-blue-orange-us-en",
   "slug": "wilson-and-shep-blue-orange-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Wilson & Shep",
   "aliases": [
     "Wilson and Shep"
   ],
-  "language": "en",
-  "editionLabel": "US English rules · two-page folded publisher PDF",
+  "editionLabel": "Blue Orange US English rules",
   "firstPlayerRule": "Whoever most recently saw a sheep plays Wilson in the first round. Wilson makes the first swapping move; the person on their left makes Shep's first move.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -34,10 +39,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://www.blueorangegames.com/games/download-rules. Finding: Whoever most recently saw a sheep plays Wilson in the first round. Wilson makes the first swapping move; the person on their left makes Shep's first move. Local source SHA-256: eff395cdcf98bf1d9326063d32d90d0b66e213c4b55d142ae3e936df3066dd98.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

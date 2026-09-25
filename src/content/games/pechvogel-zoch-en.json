@@ -3,13 +3,13 @@
   "slug": "pechvogel-zoch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9ae482860ce6894e4914deab2159585cfc6e0b45a2ea6e6ee6a06a79779cc9f3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "637ff51b71a8c4ed9358bd55758d9ae04fa68b73db34269057920647ffdd9a07",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Pechvogel",
   "aliases": [],
-  "editionLabel": "English section · thirty-two-page multilingual publisher PDF",
+  "editionLabel": "Zoch English rules",
   "firstPlayerRule": "Whoever lives nearest to 13 Calamity Lane in Bakersfield, California starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/social-parlour-games/pechvogel-601105125-en.html. Finding: Whoever lives nearest to 13 Calamity Lane in Bakersfield, California starts. Local source SHA-256: b0f93ab04438c8f7a5de9b82b37222f91f1d19a7f4a724798e2809ebf4a90585. The complete publisher rulebook was used, not the separate print-and-play adaptation or smartphone-stand template also linked by the product page. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The English manual explicitly names the Bakersfield address. Its existence and a usable distance comparison were not independently established, so the exact attributed answer is catalog-only. No geolocation or address data is requested.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/social-parlour-games/pechvogel-601105125-en.html. Finding: Whoever lives nearest to 13 Calamity Lane in Bakersfield, California starts. Local source SHA-256: b0f93ab04438c8f7a5de9b82b37222f91f1d19a7f4a724798e2809ebf4a90585. The complete publisher rulebook was used, not the separate print-and-play adaptation or smartphone-stand template also linked by the product page. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The English manual explicitly names the Bakersfield address. Its existence and a usable distance comparison were not independently established, so the exact attributed answer is catalog-only. No geolocation or address data is requested. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

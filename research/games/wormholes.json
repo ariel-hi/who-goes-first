@@ -1,10 +1,15 @@
 {
   "id": "wormholes",
   "slug": "wormholes",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Wormholes",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English AEG rules, eight-page publisher PDF",
+  "editionLabel": "English AEG rules",
   "firstPlayerRule": "The player who most recently went through a doorway starts. The rules also allow choosing randomly.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -25,14 +30,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/wormholes/. Finding: The player who most recently went through a doorway starts. The rules also allow choosing randomly. Local source SHA-256: b67a024d8a551f44ec75c6e8520da71aaf9b6e2a4a49533826162af601a81310. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/wormholes/. Finding: The player who most recently went through a doorway starts. The rules also allow choosing randomly. Local source SHA-256: b67a024d8a551f44ec75c6e8520da71aaf9b6e2a4a49533826162af601a81310.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

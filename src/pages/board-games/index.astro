@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getBoardGames } from '../../lib/content/board-games';
 import { getCatalog } from '../../lib/content/catalog';
-const games = getBoardGames();
+const games = getBoardGames().toSorted((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }));
 const withRules = games.filter(game => game.rules.length > 0).length;
 const extraRules = getCatalog().filter(rule => !games.some(game => game.rules.some(linked => linked.id === rule.id)));
 ---

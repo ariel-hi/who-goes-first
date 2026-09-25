@@ -3,8 +3,8 @@
   "slug": "dont-go-in-there-r2i-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "fc1a862f298131c89f918dc37cad84636d5480999ee2be610934525889297a11",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "1bdfb12f05c47a23d5187ad1395b519cffdfa022a0a562d82be84cec87308b5e",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Don't Go In There",
@@ -12,7 +12,7 @@
     "Don't Go In There!",
     "Dont Go In There"
   ],
-  "editionLabel": "English R2i rules, publisher web file labeled 20231023",
+  "editionLabel": "English R2i rules",
   "firstPlayerRule": "A player brave enough to take the opening turn goes first; play then continues clockwise.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -33,7 +33,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/dont-go-in-there. Finding: A player brave enough to take the opening turn goes first; play then continues clockwise. Local source SHA-256: 8c183427acc6ad94758c8a937c6b1d0cf17f30fba618dd822b5bfe82eff55015. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the rendered publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/dont-go-in-there. Finding: A player brave enough to take the opening turn goes first; play then continues clockwise. Local source SHA-256: 8c183427acc6ad94758c8a937c6b1d0cf17f30fba618dd822b5bfe82eff55015. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the rendered publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

@@ -3,13 +3,13 @@
   "slug": "dweebies-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "42d5d12b796286b544b3a366600eba04f45379d86653694ddd88bbe466c7e667",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "81f8ce2748380e87510260aeaf66655ee9d64c6afabef908e05bbfd59f4e3a29",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Dweebies",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 6-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "The player with the least hair starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The player with the least hair starts. Local source SHA-256: 6b51693e4eeb37b4f660c3f82555949f1cc2e03abb32d11642ec205424b85b2b. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion.",
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The player with the least hair starts. Local source SHA-256: 6b51693e4eeb37b4f660c3f82555949f1cc2e03abb32d11642ec205424b85b2b. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

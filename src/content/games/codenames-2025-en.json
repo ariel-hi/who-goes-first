@@ -3,15 +3,15 @@
   "slug": "codenames-2025-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "973b55e9d825e04ab87da900e586b236d1c216549103ee37b2973a759971a06f",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "6bda1b17ce69f7f65ed0afbbdb8cb0a0822759709691bd9914307acdb5a10c3b",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Codenames",
   "aliases": [
     "Code Names"
   ],
-  "editionLabel": "English base game · 2025 revision (CN rulebook EN 30)",
+  "editionLabel": "Czech Games Edition English base game · 2025 revision",
   "firstPlayerRule": "The key card determines the starting team: its edge indicators show that team’s color. That team’s spymaster gives the first clue.",
   "officialTieBreak": "Not applicable: the key card identifies the starting team.",
   "houseFallback": null,
@@ -40,7 +40,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Located through the publisher’s Codenames rules-download widget. Visually checked setup page 2 and read play instructions and 2015–2025 credits. The key determines the team; the spymaster starts its turn. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\codenames-06a225e7.pdf; SHA-256 4eed97595b2cd61f8bcd28351ebf22110b7e4af733f85b64fa1ac5c0fdefd1dc. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. A random key identifies a starting team; its spymaster gives the opening clue. It does not choose an individual for another game.",
+  "internalEvidence": "Located through the publisher’s Codenames rules-download widget. Visually checked setup page 2 and read play instructions and 2015–2025 credits. The key determines the team; the spymaster starts its turn. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\codenames-06a225e7.pdf; SHA-256 4eed97595b2cd61f8bcd28351ebf22110b7e4af733f85b64fa1ac5c0fdefd1dc. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. A random key identifies a starting team; its spymaster gives the opening clue. It does not choose an individual for another game. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The example key is not a rule that a particular color always starts."
   ]

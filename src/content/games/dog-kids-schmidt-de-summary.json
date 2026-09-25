@@ -3,13 +3,13 @@
   "slug": "dog-kids-schmidt-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ba915da931f8cac5698443c307b9ea87fda406800f68308d17d32f47507ae004",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "1f8cb3dd4105089d658a12f87f55c15f63d46b923ca99749e2c418d549ca8e4f",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "DOG Kids",
   "aliases": [],
-  "editionLabel": "Schmidt Spiele DOG Kids, article 40554, German rules summarized in English",
+  "editionLabel": "Schmidt Spiele DOG Kids, German rules summarized in English",
   "firstPlayerRule": "Whoever can bark the loudest goes first.",
   "officialTieBreak": null,
   "houseFallback": "If anyone prefers to skip the barking, agree to pick randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever can bark the loudest goes first. Local source SHA-256: eb99a2ea3bfeb2bb879944c42f28aada3bc3752baed704c2d00ea23368295754. The publisher's observed URL contains a registered-sign character in its directory name; the queue percent-encodes the original UTF-8 path. This is article 40554, not the separate travel edition. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition and opening-turn context against the German publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.schmidtspiele.de/spielanleitungen.html. Finding: Whoever can bark the loudest goes first. Local source SHA-256: eb99a2ea3bfeb2bb879944c42f28aada3bc3752baed704c2d00ea23368295754. The publisher's observed URL contains a registered-sign character in its directory name; the queue percent-encodes the original UTF-8 path. This is article 40554, not the separate travel edition. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition and opening-turn context against the German publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

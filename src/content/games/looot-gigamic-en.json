@@ -3,13 +3,13 @@
   "slug": "looot-gigamic-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0600870b25ecd5ef74d8df0432fd7c6e9a60f4123bb842b881529523416df0fd",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "bd0155d592f394b5d18199f5890dda3b6662620eee6e082f341e9ee220fba353",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Looot",
   "aliases": [],
-  "editionLabel": "English Gigamic rules, eight-page publisher booklet",
+  "editionLabel": "English Gigamic rules",
   "firstPlayerRule": "The player whose home is farthest north takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.gigamic.com/accueil-fr/1136-looot.html. Finding: The player whose home is farthest north takes the first turn. Local source SHA-256: f92b925c52a90122415a2effeea4f71d765587d6924e7b41bb295aefe0818c50. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode and opening-turn context against rendered publisher PDFs. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://en.gigamic.com/accueil-fr/1136-looot.html. Finding: The player whose home is farthest north takes the first turn. Local source SHA-256: f92b925c52a90122415a2effeea4f71d765587d6924e7b41bb295aefe0818c50. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode and opening-turn context against rendered publisher PDFs. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

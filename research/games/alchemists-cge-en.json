@@ -1,10 +1,15 @@
 {
   "id": "alchemists-cge-en",
   "slug": "alchemists-cge-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Alchemists",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English CGE base-game rules, 20-page publisher booklet",
+  "editionLabel": "English CGE base-game rules",
   "firstPlayerRule": "Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,14 +35,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/alchemists. Finding: Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first. Local source SHA-256: e81afad5ffb257d5c7cb433455e6977ff61bfcccdab82e3fcedcd572d5bf57a3. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.czechgames.com/games/alchemists. Finding: Whoever was most recently in a laboratory receives the starting-player token and chooses an order space first. Local source SHA-256: e81afad5ffb257d5c7cb433455e6977ff61bfcccdab82e3fcedcd572d5bf57a3.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

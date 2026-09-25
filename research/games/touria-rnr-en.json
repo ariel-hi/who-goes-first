@@ -1,10 +1,15 @@
 {
   "id": "touria-rnr-en",
   "slug": "touria-rnr-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Touria",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English rules distributed by R&R Games, eight-page publisher PDF",
+  "editionLabel": "English rules distributed by R&R Games",
   "firstPlayerRule": "The player most eager to get married starts; the rules alternatively suggest whoever got married most recently.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -33,10 +38,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

@@ -1,10 +1,15 @@
 {
   "id": "tobago-rio-grande-en",
   "slug": "tobago-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Tobago",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English rules · two-page folded publisher PDF",
+  "editionLabel": "Rio Grande Games English rules",
   "firstPlayerRule": "The person who most recently visited an island starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -27,14 +32,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/tobago-2/. Finding: The person who most recently visited an island starts. Local source SHA-256: 31f4b5805ee4c39c22352c6435c228d3574c5f61e8b8dba5216fa085982fe204. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/tobago-2/. Finding: The person who most recently visited an island starts. Local source SHA-256: 31f4b5805ee4c39c22352c6435c228d3574c5f61e8b8dba5216fa085982fe204.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

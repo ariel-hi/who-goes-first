@@ -1,10 +1,15 @@
 {
   "id": "beasty-bar-zoch-en",
   "slug": "beasty-bar-zoch-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Beasty Bar",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English section · twenty-page bilingual publisher PDF",
+  "editionLabel": "Zoch English rules",
   "firstPlayerRule": "Whoever has the wildest outfit starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -27,14 +32,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/family-games/beasty-bar-601105155-en.html. Finding: Whoever has the wildest outfit starts. Local source SHA-256: f2b30ff45dcba3caf8405bb289e48fe794ecbcc8b76351a132bd7ff9105b5ad2. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.zoch-verlag.com/zoch_en/categories/family-games/beasty-bar-601105155-en.html. Finding: Whoever has the wildest outfit starts. Local source SHA-256: f2b30ff45dcba3caf8405bb289e48fe794ecbcc8b76351a132bd7ff9105b5ad2.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

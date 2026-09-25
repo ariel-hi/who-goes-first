@@ -1,10 +1,15 @@
 {
   "id": "siege-of-runedar-ludonova-en",
   "slug": "siege-of-runedar-ludonova-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "The Siege of Runedar",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Ludonova rules, 16-page publisher booklet",
+  "editionLabel": "English Ludonova rules",
   "firstPlayerRule": "The shortest player starts, or choose the starter randomly.",
   "officialTieBreak": "The rulebook permits random selection as an alternative; it does not require a height tie first.",
   "houseFallback": null,
@@ -27,13 +32,8 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/the-siege-of-runedar/. Finding: The shortest player starts, or choose the starter randomly. Local source SHA-256: 212c8d47c55c3c74b1a99dee24a7a57978ee846a159e69581191f2ea305aead2. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://ludonova.com/en/juego/the-siege-of-runedar/. Finding: The shortest player starts, or choose the starter randomly. Local source SHA-256: 212c8d47c55c3c74b1a99dee24a7a57978ee846a159e69581191f2ea305aead2.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

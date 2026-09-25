@@ -3,13 +3,13 @@
   "slug": "septima-mindclash-en-20230324",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "41a3e093360527d218f82bf6d748ea2ce4b2f938c4a61b702fd0a766e894a80c",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "4cfc930edd93134a84492484669821d5bead42794ca471a93e99716b28fc6e9c",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Septima",
   "aliases": [],
-  "editionLabel": "Mindclash English rules, ©2023, file version 20230324",
+  "editionLabel": "Mindclash English rules, ©2023",
   "firstPlayerRule": "In multiplayer, whoever most recently made a mixed drink is the starting player.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -49,7 +49,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/septima/. Finding: In multiplayer, whoever most recently made a mixed drink is the starting player. Local source SHA-256: b8d6ab497a41729c10bc9c9b669b28b9d35f913b0d51424f21c9c1d334b60edc. The publisher directly links the public Dropbox manual. The first bounded download exceeded 70 MB and was not used. A complete 113,488,684-byte retrieval succeeded under a 120 MB limit; its hash was recorded. All six listed pages were visually inspected. The mixed-drink instruction is part of both Basic and Full setup, outside the Full Game-only box. No alcoholic-content condition or definition of mixed drink was invented. Ordered action resolution distinguishes this from an entirely simultaneous game. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the explicitly scoped main answer selects a multiplayer starter using personal history, without game-specific components. Optional variant instructions remain separate.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://mindclashgames.com/our-games/septima/. Finding: In multiplayer, whoever most recently made a mixed drink is the starting player. Local source SHA-256: b8d6ab497a41729c10bc9c9b669b28b9d35f913b0d51424f21c9c1d334b60edc. The publisher directly links the public Dropbox manual. The first bounded download exceeded 70 MB and was not used. A complete 113,488,684-byte retrieval succeeded under a 120 MB limit; its hash was recorded. All six listed pages were visually inspected. The mixed-drink instruction is part of both Basic and Full setup, outside the Full Game-only box. No alcoholic-content condition or definition of mixed drink was invented. Ordered action resolution distinguishes this from an entirely simultaneous game. Editorial review 2026-09-23: Codex inspected rendered source pages, edition, setup versus action sequence, relevant variants and source-page references. The owner authorized factual review on 2026-09-22 in task Reload localhost. Included in the random mix: the explicitly scoped main answer selects a multiplayer starter using personal history, without game-specific components. Optional variant instructions remain separate. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

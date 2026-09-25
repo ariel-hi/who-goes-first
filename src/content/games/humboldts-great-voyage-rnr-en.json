@@ -3,13 +3,13 @@
   "slug": "humboldts-great-voyage-rnr-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ff959564a4233c6fbb4d89886f8ff06023cb091108498a222604a45bc8ddefa5",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "73c724167c1668f116a1360d0e5cfaaaccb49da9d141b0e97ad2c7afb78b55a1",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Humboldt's Great Voyage",
   "aliases": [],
-  "editionLabel": "English rules distributed by R&R Games, nine-page publisher PDF",
+  "editionLabel": "English rules distributed by R&R Games",
   "firstPlayerRule": "Whoever most recently went on a journey starts and takes the travel journal and knowledge-disk bag.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/humboldts-great-voyage. Finding: Whoever most recently went on a journey starts and takes the travel journal and knowledge-disk bag. Local source SHA-256: 61e005c8816086f66980245383e988be8c56998c8218a800cffd576622831a71. PDF page 3 is printed page 11, not printed page 3. Editorial recheck 2026-09-23: Inspected rendered PDF page 3, printed page 11. Latest journey selects the starter, who receives the journal and knowledge-disk bag; the same player begins the optional setup card exchange and cargo-tile draw. Play continues clockwise. Cached source: research\\source-files\\rnr\\humboldt-s-great-voyage-f5b20648.pdf; SHA-256 61e005c8816086f66980245383e988be8c56998c8218a800cffd576622831a71. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal criterion selects the initial turn without game components.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rnrgames.com/humboldts-great-voyage. Finding: Whoever most recently went on a journey starts and takes the travel journal and knowledge-disk bag. Local source SHA-256: 61e005c8816086f66980245383e988be8c56998c8218a800cffd576622831a71. PDF page 3 is printed page 11, not printed page 3. Editorial recheck 2026-09-23: Inspected rendered PDF page 3, printed page 11. Latest journey selects the starter, who receives the journal and knowledge-disk bag; the same player begins the optional setup card exchange and cargo-tile draw. Play continues clockwise. Cached source: research\\source-files\\rnr\\humboldt-s-great-voyage-f5b20648.pdf; SHA-256 61e005c8816086f66980245383e988be8c56998c8218a800cffd576622831a71. Codex editorial review under the owner's 2026-09-22 authorization. Random mix: include; A personal criterion selects the initial turn without game components. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

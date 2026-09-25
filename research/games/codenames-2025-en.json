@@ -1,10 +1,17 @@
 {
   "id": "codenames-2025-en",
+  "slug": "codenames-2025-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Codenames",
   "aliases": [
     "Code Names"
   ],
-  "editionLabel": "English base game · 2025 revision (CN rulebook EN 30)",
+  "editionLabel": "Czech Games Edition English base game · 2025 revision",
   "firstPlayerRule": "The key card determines the starting team: its edge indicators show that team’s color. That team’s spymaster gives the first clue.",
   "officialTieBreak": "Not applicable: the key card identifies the starting team.",
   "houseFallback": null,
@@ -13,12 +20,6 @@
     "The first move belongs to a team; do not replace the key card’s assignment with a random individual player.",
     "This is the base game, not Codenames: Duet or Pictures."
   ],
-  "internalEvidence": "Located through the publisher’s Codenames rules-download widget. Visually checked setup page 2 and read play instructions and 2015–2025 credits. The key determines the team; the spymaster starts its turn.",
-  "uncertainty": [
-    "The example key is not a rule that a particular color always starts."
-  ],
-  "slug": "codenames-2025-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -39,9 +40,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Located through the publisher’s Codenames rules-download widget. Visually checked setup page 2 and read play instructions and 2015–2025 credits. The key determines the team; the spymaster starts its turn.",
+  "uncertainty": [
+    "The example key is not a rule that a particular color always starts."
+  ]
 }

@@ -1,11 +1,18 @@
 {
   "id": "7-wonders-2020-en",
+  "slug": "7-wonders-2020-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "7 Wonders",
   "aliases": [
     "Seven Wonders",
     "7 Wonders base game"
   ],
-  "editionLabel": "English base game · 2020 edition",
+  "editionLabel": "Repos Production English base game · 2020 edition",
   "firstPlayerRule": "Everyone chooses a card at the same time, then reveals and plays it together. There is no single starting player in normal play.",
   "officialTieBreak": "Not applicable: players choose and play simultaneously.",
   "houseFallback": null,
@@ -13,12 +20,6 @@
     "For a first learning game, the rulebook recommends playing cards one at a time to explain their effects. It does not name a starting player for that teaching suggestion.",
     "This entry covers the multiplayer base game, not 7 Wonders Duel."
   ],
-  "internalEvidence": "Read the publisher PDF and visually checked page 4. Card choice and reveal are simultaneous, with a separate teaching recommendation. Credits identify the 2020 edition.",
-  "uncertainty": [
-    "Do not apply turn-order rules from Duel or expansions."
-  ],
-  "slug": "7-wonders-2020-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -37,9 +38,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Read the publisher PDF and visually checked page 4. Card choice and reveal are simultaneous, with a separate teaching recommendation. Credits identify the 2020 edition.",
+  "uncertainty": [
+    "Do not apply turn-order rules from Duel or expansions."
+  ]
 }

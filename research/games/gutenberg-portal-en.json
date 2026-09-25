@@ -1,10 +1,15 @@
 {
   "id": "gutenberg-portal-en",
   "slug": "gutenberg-portal-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Gutenberg",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "Granna English rules distributed by Portal Games, copyright 2022, code 11393/3 UK",
+  "editionLabel": "Granna English rules distributed by Portal Games, copyright 2022",
   "firstPlayerRule": "Compare the books each player most recently read. Whoever read the thickest of those books receives the first-player token.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -40,10 +45,5 @@
     "The book criterion does not specify how to compare thickness or resolve equally thick books.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

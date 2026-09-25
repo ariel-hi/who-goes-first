@@ -1,10 +1,15 @@
 {
   "id": "alpaca-gateongames-en",
   "slug": "alpaca-gateongames-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Alpaca",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "GateOnGames English rulebook, version 10 (2023)",
+  "editionLabel": "GateOnGames English rulebook",
   "firstPlayerRule": "The person who most recently petted an alpaca goes first and takes the alpaca miniature.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -17,17 +22,20 @@
       "url": "https://www.gateongames.com/wp-content/uploads/2023/11/Alpaca-rulebook-EN-v10-low.pdf",
       "title": "Alpaca — GateOnGames English rulebook, version 10",
       "publisher": "GateOnGames",
-      "printedPages": ["4", "6"],
-      "pdfPagesOneBased": [4, 6],
+      "printedPages": [
+        "4",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6
+      ],
       "location": "Setup, step 5; Gameplay",
       "checkedAt": "2026-09-23"
     }
   ],
   "internalEvidence": "The publisher's downloads page offers the English Alpaca rulebook. Rendered page 4, setup step 5, specifies the most recent alpaca petter and the first-player miniature. Rendered page 6 confirms clockwise turns. Source SHA-256: 15af1b285a14b8035cd65f33023788332479e3d4430b6d31c168b849a7dadabe. Publisher downloads: https://www.gateongames.com/en/rulebooks-and-downloadable-material/. Owner authorized assistant review on 2026-09-22.",
-  "uncertainty": ["The rulebook has no practical alternate starter when no one has petted an alpaca, and no tie-break for equally recent petting."],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "uncertainty": [
+    "The rulebook has no practical alternate starter when no one has petted an alpaca, and no tie-break for equally recent petting."
+  ]
 }

@@ -1,12 +1,17 @@
 {
   "id": "lost-cities-roll-and-write",
   "slug": "lost-cities-roll-and-write",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Lost Cities: Roll & Write",
   "aliases": [
     "Lost Cities Roll and Write"
   ],
-  "language": "en",
-  "editionLabel": "English rules in the eight-page publisher-linked PDF",
+  "editionLabel": "Thames & Kosmos English rules",
   "firstPlayerRule": "The group's greatest adventurer takes the first turn.",
   "officialTieBreak": "If you are unsure who that is, the player who most recently went hiking starts.",
   "houseFallback": null,
@@ -29,13 +34,8 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The group's greatest adventurer takes the first turn. Local source SHA-256: 72aa5e0f5a5f1f4533d52fec34ffa1f31ab04fd65e3fd7c9c63bd8b012cc422d. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The group's greatest adventurer takes the first turn. Local source SHA-256: 72aa5e0f5a5f1f4533d52fec34ffa1f31ab04fd65e3fd7c9c63bd8b012cc422d.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

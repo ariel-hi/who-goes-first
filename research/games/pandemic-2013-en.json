@@ -1,10 +1,17 @@
 {
   "id": "pandemic-2013-en",
+  "slug": "pandemic-2013-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Pandemic",
   "aliases": [
     "Pandemic base game"
   ],
-  "editionLabel": "English base game · copyright 2013, eight-page rulebook",
+  "editionLabel": "Z-Man Games English base game · copyright 2013",
   "firstPlayerRule": "Look at the City cards in your opening hands. Whoever holds the card showing the largest city population takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If the printed populations do not settle it, your group can agree to choose randomly. This is an optional house rule.",
@@ -12,12 +19,6 @@
     "Compare individual City cards, not each hand’s combined population or the players’ home cities.",
     "Use the population printed on the cards. This entry does not cover Pandemic Legacy or Hot Zone."
   ],
-  "internalEvidence": "Publisher product page links the eight-page PDF. Visually checked setup step 6 on page 3; it uses the largest City-card population. Page 8 has copyright 2013.",
-  "uncertainty": [
-    "The starting instruction supplies no population tie-break."
-  ],
-  "slug": "pandemic-2013-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -36,9 +37,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Publisher product page links the eight-page PDF. Visually checked setup step 6 on page 3; it uses the largest City-card population. Page 8 has copyright 2013.",
+  "uncertainty": [
+    "The starting instruction supplies no population tie-break."
+  ]
 }

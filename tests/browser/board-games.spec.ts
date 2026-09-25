@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 
 test('all board games are searchable and lead to the right game page', async ({ page }) => {
   await page.goto('/board-games/');
-  await expect(page.locator('[data-board-directory] li')).toHaveCount(1320);
+  const inventory = JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8')) as { games: unknown[] };
+  await expect(page.locator('[data-board-directory] li')).toHaveCount(inventory.games.length);
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Azul');
   await expect(page.locator('[data-board-directory] li:visible').first()).toContainText('Azul');
   // A game with one sourced edition links straight to its rule.

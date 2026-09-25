@@ -1,10 +1,15 @@
 {
   "id": "wonder-woods-blue-orange-en",
   "slug": "wonder-woods-blue-orange-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Wonder Woods",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English rules · four-page publisher PDF",
+  "editionLabel": "Blue Orange English rules",
   "firstPlayerRule": "The person who most recently went mushroom picking starts and takes the first-player token.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -28,10 +33,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://blueorangegames.eu/en/resources/game-rules/. Finding: The person who most recently went mushroom picking starts and takes the first-player token. Local source SHA-256: b4310b63d23595f9b0d984b56a627060fb1a3cc2f068d1ea519f2c255995a691.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

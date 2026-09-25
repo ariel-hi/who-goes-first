@@ -3,13 +3,13 @@
   "slug": "hello-my-name-is-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f8e0cd50daefae55d73c920456890161bcf104ba9d2671576bed62ffd5b7a219",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "46ccc0d4b3a69a3b322f1f0029e8012cebdbe0136f0ae7f14c0266e2bb5caac2",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Hello My Name Is",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 2-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "The person with the longest name is the first active player.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The person with the longest name is the first active player. Local source SHA-256: 189bbd3b27655aeb68a1a94590dc81a2ac9e6b24917fc2bfa679db63769a32ef. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion.",
+  "internalEvidence": "The English starting instruction in How to Play on PDF page 1 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: The person with the longest name is the first active player. Local source SHA-256: 189bbd3b27655aeb68a1a94590dc81a2ac9e6b24917fc2bfa679db63769a32ef. Editorial review 2026-09-23: checked the cited publisher starting instruction, edition scope, clarification and fallback. Owner authorized assistant review on 2026-09-22. Approved as a portable starting-player criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

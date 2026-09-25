@@ -1,10 +1,15 @@
 {
   "id": "happy-city-gamewright-en",
   "slug": "happy-city-gamewright-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Happy City",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Gamewright rules · 5-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "Give the First Player card to whoever most recently visited another city. That player starts throughout the game.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -27,10 +32,5 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

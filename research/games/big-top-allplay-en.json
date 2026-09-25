@@ -1,10 +1,15 @@
 {
   "id": "big-top-allplay-en",
   "slug": "big-top-allplay-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Big Top",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, four-page publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "The person most afraid of clowns becomes the first auctioneer.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -31,10 +36,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

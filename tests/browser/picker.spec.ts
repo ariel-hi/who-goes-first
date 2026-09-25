@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import { showAllMethods } from './helpers';
+import { showAllMethods, DEV, STATIC } from './helpers';
 
 async function controlledRandom(page: Page, value = 2) {
   await page.addInitScript((word: number) => {
@@ -225,7 +225,7 @@ test('no Balloon code before use, no sound by default, and failed share has a cl
   expect(assets.some(url => url.includes('BalloonRise'))).toBe(false);
   expect(await page.evaluate(() => (window as unknown as { audioCalls: number }).audioCalls)).toBe(0);
   await page.getByRole('button', { name: 'Share', exact: true }).click();
-  await expect(page.getByRole('textbox', { name: 'Clean sharing link' })).toHaveValue('http://127.0.0.1:4322/');
+  await expect(page.getByRole('textbox', { name: 'Clean sharing link' })).toHaveValue(`${STATIC}/`);
 });
 
 test('slow hydration leaves a labeled disabled tool until it is ready', async ({ page }) => {
@@ -276,9 +276,9 @@ test('names never enter requests or clean sharing', async ({ page }) => {
   await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
   await page.evaluate(() => history.replaceState(null, '', '/?unrelated=1#fragment'));
   await page.getByRole('button', { name: 'Share', exact: true }).click();
-  expect(await page.evaluate(() => (window as unknown as { shared: unknown }).shared)).toEqual({ title: 'Who Goes First?', url: 'http://127.0.0.1:4322/' });
+  expect(await page.evaluate(() => (window as unknown as { shared: unknown }).shared)).toEqual({ title: 'Who Goes First?', url: `${STATIC}/` });
   expect(payloads.join('\n')).not.toMatch(/PRIVATE_ZEBRA|PRIVATE_BADGER/);
-  expect(payloads.every(payload => payload.startsWith('http://127.0.0.1:4322/'))).toBe(true);
+  expect(payloads.every(payload => payload.startsWith(`${STATIC}/`))).toBe(true);
 });
 
 test('mobile and reflow have no horizontal overflow; core accessibility checks', async ({ page }) => {
@@ -297,7 +297,7 @@ test('mobile and reflow have no horizontal overflow; core accessibility checks',
 test('static help and navigation remain usable without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
   const page = await context.newPage();
-  await page.goto('http://127.0.0.1:4322/');
+  await page.goto(`${STATIC}/`);
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a player');
   await expect(page.locator('.noscript')).toBeVisible();
   await expect(page.locator('.noscript')).toContainText('Enable JavaScript to pick a player on your device.');
@@ -317,7 +317,7 @@ test('reviewed catalog, local drafts, aliases, house prompts and real 404s', asy
   await expect(page.locator('.rule-answer')).toContainText('no single player starts');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, follow');
   for (const path of ['/games/not-a-game/', '/dev/review/', '/research/games/azul-2018-en.json']) expect((await request.get(path)).status()).toBe(404);
-  await page.goto('http://127.0.0.1:4321/dev/review/');
+  await page.goto(`${DEV}/dev/review/`);
   await expect(page.getByText('Development only · Not approved for publication')).toBeVisible();
   await page.getByRole('searchbox').fill('TTR');
   await expect(page.locator('.game-list li:visible')).toHaveCount(3);
@@ -327,7 +327,7 @@ test('reviewed catalog, local drafts, aliases, house prompts and real 404s', asy
   const before = await page.locator('[data-prompt]').textContent(); await page.getByRole('button', { name: 'Another question' }).click();
   await expect(page.locator('[data-prompt]')).not.toHaveText(before!);
   await expect(page.getByRole('link', { name: /Nobody fits/ })).toHaveAttribute('href', '/');
-  const draft = await request.get('http://127.0.0.1:4321/dev/rules/azul-2018-en/');
+  const draft = await request.get(`${DEV}/dev/rules/azul-2018-en/`);
   expect(await draft.text()).toContain('The player whose visit to Portugal was most recent starts.');
   expect(await draft.text()).not.toContain('astro-island');
 });

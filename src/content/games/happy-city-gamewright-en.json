@@ -3,13 +3,13 @@
   "slug": "happy-city-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "025f7581ead900a3f1a1091d089dda70e6f102b85d8072ed2866c13764efec91",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "a875567069db84bc6503a22f81bbaafbd2a79718b94b08d306860d4178eeeb22",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Happy City",
   "aliases": [],
-  "editionLabel": "English Gamewright rules · 5-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "Give the First Player card to whoever most recently visited another city. That player starts throughout the game.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "The English starting instruction in Setup; Action Phase on PDF page 2 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Give the First Player card to whoever most recently visited another city. That player starts throughout the game. Local source SHA-256: 5049bd36c0f3af11d78276d3622dc96217a4d8769ef5f857c8e40a2318b2463c. Editorial review 2026-09-23: Rechecked the cited instruction and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "The English starting instruction in Setup; Action Phase on PDF page 2 was read from the manual linked in the publisher index https://gamewright.com/rules/. Research finding: Give the First Player card to whoever most recently visited another city. That player starts throughout the game. Local source SHA-256: 5049bd36c0f3af11d78276d3622dc96217a4d8769ef5f857c8e40a2318b2463c. Editorial review 2026-09-23: Rechecked the cited instruction and opening-turn context against the rendered publisher manual. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."

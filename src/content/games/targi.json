@@ -3,13 +3,13 @@
   "slug": "targi",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "56c9e30a7a5de6e1743849948d62ba4b7210b010811bcc44664652fcfbe536cb",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "97cf7894173003373155ef5c154fd8f0ded2bf456bbd99b183ce2ed36fab7da1",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Targi",
   "aliases": [],
-  "editionLabel": "English Thames & Kosmos rules, six-page spread PDF",
+  "editionLabel": "English Thames & Kosmos rules",
   "firstPlayerRule": "The player who most recently ate dates goes first. If neither player has ever eaten dates, the player using blue starts.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The player who most recently ate dates goes first. Local source SHA-256: 499462e863c1ba9ef3b9b2a6a07b86f1038765e732a4dda933ce834abb5ee727. The fallback applies when neither player has eaten dates; the source does not state a separate tie-break for both having eaten them together. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The player who most recently ate dates goes first. Local source SHA-256: 499462e863c1ba9ef3b9b2a6a07b86f1038765e732a4dda933ce834abb5ee727. The fallback applies when neither player has eaten dates; the source does not state a separate tie-break for both having eaten them together. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
   ]

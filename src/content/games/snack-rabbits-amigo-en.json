@@ -3,13 +3,13 @@
   "slug": "snack-rabbits-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "779b0fe0c48219456b6b3de5a2bb8474e62cdf31c639fc11c87e5452b1070400",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "e4c13fb8ccdb1757bace82555dd4984be1ff8d79d14219e115bd09b955c61f9e",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Snack Rabbits",
   "aliases": [],
-  "editionLabel": "English AMIGO rules, two-sheet publisher PDF",
+  "editionLabel": "English AMIGO rules",
   "firstPlayerRule": "The player who most enjoys nibbling carrots starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -28,7 +28,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2405&select=downloads. Finding: The player who most enjoys nibbling carrots starts. Local source SHA-256: 21e2cc45664fdf95d9014a8a4b0a979f24860b44e67d786c2546ff2ffd91d511. The criterion concerns liking carrots, not who last ate one or who eats the most. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2405&select=downloads. Finding: The player who most enjoys nibbling carrots starts. Local source SHA-256: 21e2cc45664fdf95d9014a8a4b0a979f24860b44e67d786c2546ff2ffd91d511. The criterion concerns liking carrots, not who last ate one or who eats the most. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

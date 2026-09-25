@@ -3,13 +3,13 @@
   "slug": "trains",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "3eec90db9e7249ecba5073997ad660bffc70501617d6b187d1c5396fc10f1ceb",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "d46eedf2623713bb05a108fc7246e0f64037b5736582ee38e1503fcd5d38cb58",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Trains",
   "aliases": [],
-  "editionLabel": "English AEG base-game rules, twelve-page publisher PDF",
+  "editionLabel": "English AEG base-game rules",
   "firstPlayerRule": "The player who most recently traveled by train starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/destination-fun/trains/. Finding: The player who most recently traveled by train starts. Local source SHA-256: 97aafa33c2ac89991a657457f7616a008ec046d85a282e6d39a13d8793970afd. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/destination-fun/trains/. Finding: The player who most recently traveled by train starts. Local source SHA-256: 97aafa33c2ac89991a657457f7616a008ec046d85a282e6d39a13d8793970afd. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

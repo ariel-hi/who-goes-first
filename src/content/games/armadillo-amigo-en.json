@@ -3,13 +3,13 @@
   "slug": "armadillo-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "848edf21473ddbc6ca0cb98bb126c2c184b9cedc2c75e80e45397e7f010f1696",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "f775f963b1a81c9ea3e2fa8b2c54d117e9fd70a4cccb513536aa8475cdee70a8",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Armadillo",
   "aliases": [],
-  "editionLabel": "English AMIGO rules, two-sheet publisher PDF",
+  "editionLabel": "English AMIGO rules",
   "firstPlayerRule": "The player who can count down from ten fastest takes the first turn of round one.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2254&select=downloads. Finding: The player who can count down from ten fastest takes the first turn of round one. Local source SHA-256: 4ff0de29e418ad6ad8d2fa7749c803e6ab470a7f55198bc0a95affded8fd3f2b. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://blog.amigo-spiele.de/content/ws/plenty.php?id=2254&select=downloads. Finding: The player who can count down from ten fastest takes the first turn of round one. Local source SHA-256: 4ff0de29e418ad6ad8d2fa7749c803e6ab470a7f55198bc0a95affded8fd3f2b. Editorial review 2026-09-23: Rechecked the cited starting instruction, player-count distinction and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

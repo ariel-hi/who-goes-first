@@ -199,15 +199,15 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         <fieldset disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Your players</legend>
           <div className="players-heading">
+            <div className="roster-tools">
+              <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { if (state.phase === 'result') edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
+            </div>
             <div className="stepper">
               <button type="button" aria-label="Remove a player" disabled={players.length <= 2} onClick={() => resizeGroup(players.length - 1)}>−</button>
               <label className="sr-only" htmlFor="player-count">Player count</label>
               <input id="player-count" type="text" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={countDraft} onChange={e => typeCount(e.target.value)} onBlur={() => setCountDraft(String(players.length))} onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); if (e.key === 'Escape') { setCountDraft(String(players.length)); e.currentTarget.blur(); } }} />
               <button type="button" aria-label="Add a player" disabled={players.length >= 50} onClick={() => resizeGroup(players.length + 1)}>+</button>
             </div>
-          </div>
-          <div className="roster-tools">
-            <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { if (state.phase === 'result') edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
           </div>
           {bulkOpen && <div className="name-editor" id="bulk-names">
             <label htmlFor="names">Player names <span className="muted small">One per line · up to 24 characters.</span></label>

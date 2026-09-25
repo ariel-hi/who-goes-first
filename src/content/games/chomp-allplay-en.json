@@ -3,13 +3,13 @@
   "slug": "chomp-allplay-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "b9c873b6d3334e520ee48f76760abd97c116ae9ec229d0c1fb1c8f4eeb9dedbe",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "d345912f5b555577674d073bd6516f07e1b0fc76d07da24f86bc65cf12a36882",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Chomp",
   "aliases": [],
-  "editionLabel": "English Allplay dinosaur game rules, four-page publisher PDF",
+  "editionLabel": "English Allplay dinosaur game rules",
   "firstPlayerRule": "The first player to name their own favorite dinosaur goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/chomp. Finding: The first player to name their own favorite dinosaur goes first. Local source SHA-256: 753339d95fffa3d62732b36cf464ad1b83f9e7bee89d41c54f905fa538d05bd3. Identity was checked against the Allplay product page linked to BGG 377449. This rule belongs to that dinosaur game, not Gamewright's simultaneous card game. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the cited publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://allplay.com/board-games/chomp. Finding: The first player to name their own favorite dinosaur goes first. Local source SHA-256: 753339d95fffa3d62732b36cf464ad1b83f9e7bee89d41c54f905fa538d05bd3. Identity was checked against the Allplay product page linked to BGG 377449. This rule belongs to that dinosaur game, not Gamewright's simultaneous card game. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the cited publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

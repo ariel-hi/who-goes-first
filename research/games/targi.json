@@ -1,10 +1,15 @@
 {
   "id": "targi",
   "slug": "targi",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Targi",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Thames & Kosmos rules, six-page spread PDF",
+  "editionLabel": "English Thames & Kosmos rules",
   "firstPlayerRule": "The player who most recently ate dates goes first. If neither player has ever eaten dates, the player using blue starts.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -30,10 +35,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The player who most recently ate dates goes first. Local source SHA-256: 499462e863c1ba9ef3b9b2a6a07b86f1038765e732a4dda933ce834abb5ee727. The fallback applies when neither player has eaten dates; the source does not state a separate tie-break for both having eaten them together.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

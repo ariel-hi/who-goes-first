@@ -3,13 +3,13 @@
   "slug": "hamburgum-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8c6f952bd911a5614c18800804c446c43afdf28cf3e827adc4e8de08e9233785",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "35b983ee9f82c6e4a41c46ecb25f1bbfcebb2aa1de370851e42f6ef4c995afea",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Hamburgum",
   "aliases": [],
-  "editionLabel": "English rules · Hamburgum Rules V2 publisher file",
+  "editionLabel": "Rio Grande Games English rules",
   "firstPlayerRule": "The person who most recently visited a church starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -30,7 +30,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/hamburgum/. Finding: The person who most recently visited a church starts. Local source SHA-256: f45b1bfe4c84c673aaf4524e244dd8f6d56ab03e147da736ef429bfdd3a9942a. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. Church-visit recency is the opening criterion. Setup resources follow that order; the separate endgame money tie-break is not a starting tie-break.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.riograndegames.com/games/hamburgum/. Finding: The person who most recently visited a church starts. Local source SHA-256: f45b1bfe4c84c673aaf4524e244dd8f6d56ab03e147da736ef429bfdd3a9942a. Editorial review 2026-09-23: Codex checked the listed rendered PDF pages, publisher provenance, identity and edition, initial action versus setup, relevant mode context and tie-break scope. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. Church-visit recency is the opening criterion. Setup resources follow that order; the separate endgame money tie-break is not a starting tie-break. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

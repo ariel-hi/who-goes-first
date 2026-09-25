@@ -1,13 +1,18 @@
 {
   "id": "disney-hocus-pocus-the-game-ravensburger-en",
   "slug": "disney-hocus-pocus-the-game-ravensburger-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Disney Hocus Pocus: The Game",
   "aliases": [
     "Hocus Pocus",
     "Hocus Pocus The Game"
   ],
-  "language": "en",
-  "editionLabel": "Ravensburger English rulebook, file 26946",
+  "editionLabel": "Ravensburger English rulebook",
   "firstPlayerRule": "Whoever last lit a candle starts. Play proceeds clockwise.",
   "officialTieBreak": "If there is doubt about who should start, choose the oldest player.",
   "houseFallback": null,
@@ -37,10 +42,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/strategy-games/disney-hocus-pocus-the-game-60001875. Finding: Whoever last lit a candle starts. Play proceeds clockwise. Local source SHA-256: 056261e139f930020b9e2486ce7007f3ca6855ac096d5cd4f8f8dbadfafd2233. All three cited pages were inspected as rendered images. The oldest-player instruction belongs to initial setup. The left-neighbor rule applies to later rounds. No publication year has been inferred from the download URL.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

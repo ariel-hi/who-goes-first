@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import { showAllMethods } from './helpers';
+import { showAllMethods, DEV, STATIC } from './helpers';
 import { readFileSync, readdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { contentRevision, ruleSchema } from '../../src/lib/content/schema';
 
@@ -10,7 +10,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   page.on('pageerror', error => failures.push(error.message));
   page.on('response', response => { if (response.status() >= 400) failures.push(`${response.status()} ${response.url()}`); });
   page.on('console', message => { if (message.type() === 'error') failures.push(message.text()); });
-  await page.goto('http://127.0.0.1:4321/');
+  await page.goto(`${DEV}/`);
   await expect(page.getByRole('button', { name: 'Pick a player' })).toBeEnabled();
   await page.getByRole('button', { name: 'Add a player' }).click();
   await expect(page.locator('.player')).toHaveCount(5);
@@ -29,7 +29,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await page.reload();
   await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Mina'); await expect(page.getByLabel('Name for player 3', { exact: true })).toHaveValue('Jo');
   await page.getByRole('link', { name: 'Game rules', exact: true }).click();
-  await expect(page).toHaveURL('http://127.0.0.1:4321/dev/games/');
+  await expect(page).toHaveURL(`${DEV}/dev/games/`);
   await page.getByRole('searchbox').fill('TTR');
   // The abbreviation matches the original game and two researched Europe editions.
   await expect(page.locator('.game-list li:visible')).toHaveCount(3);
@@ -49,7 +49,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
 test('the full researched catalog is listed and representative sourced pages work', async ({ page, request }) => {
   test.setTimeout(90000);
   const count = readdirSync('research/games').filter(name => name.endsWith('.json')).length;
-  await page.goto('http://127.0.0.1:4321/dev/games/');
+  await page.goto(`${DEV}/dev/games/`);
   await expect(page.getByText(`Local preview · ${count} game rules`)).toBeVisible();
   await expect(page.locator('.game-list li')).toHaveCount(count);
   const links = await page.locator('.game-list a').evaluateAll(items => items.map(item => (item as HTMLAnchorElement).href));
@@ -70,7 +70,7 @@ test('the full researched catalog is listed and representative sourced pages wor
   await expect(page.getByRole('link', { name: 'Read the publisher' })).toHaveAttribute('href', /^https:\/\//);
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
   for (const path of ['/dev/games/', '/dev/house-rules/', '/dev/coverage/']) {
-    expect((await request.get(`http://127.0.0.1:4322${path}`)).status()).toBe(404);
+    expect((await request.get(`${STATIC}${path}`)).status()).toBe(404);
   }
   // A reviewed record can move into the public catalog without weakening the
   // exclusion check for the remaining drafts.
@@ -78,13 +78,13 @@ test('the full researched catalog is listed and representative sourced pages wor
   const remainingDraft = readdirSync('research/games').find(file => file.endsWith('.json') && !approvedFiles.has(file));
   if (remainingDraft) {
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${remainingDraft}`, 'utf8')));
-    expect((await request.get(`http://127.0.0.1:4322/games/${draft.slug}/`)).status()).toBe(404);
+    expect((await request.get(`${STATIC}/games/${draft.slug}/`)).status()).toBe(404);
   }
 });
 
 test('full discovery inventory is searchable and never counted as finished rules', async ({ page }) => {
   const inventory = JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8'));
-  await page.goto('http://127.0.0.1:4321/dev/coverage/');
+  await page.goto(`${DEV}/dev/coverage/`);
   await expect(page.locator('.coverage-list li')).toHaveCount(inventory.games.length);
   await expect(page.getByText('Game identities are not verified starting rules.')).toBeVisible();
   await page.getByRole('searchbox').fill('265736');
@@ -114,7 +114,7 @@ test('random-rule controls wait for their script and recover from unavailable ra
   let release!: () => void;
   const loaded = new Promise<void>(resolve => { release = resolve; });
   await page.route(/\/src\/components\/RandomRule\.astro\?/, async route => { await loaded; await route.continue(); });
-  await page.goto('http://127.0.0.1:4321/dev/games/', { waitUntil: 'commit' });
+  await page.goto(`${DEV}/dev/games/`, { waitUntil: 'commit' });
   try { await expect(page.getByRole('button', { name: 'Pick a rule' })).toBeDisabled(); }
   finally { release(); }
   await expect(page.getByRole('button', { name: 'Pick a rule' })).toBeEnabled();
@@ -126,11 +126,11 @@ test('random-rule controls wait for their script and recover from unavailable ra
 });
 
 test('random game rule redraw and source navigation work without treating a rule as an equal-chance draw', async ({ page }) => {
-  await page.goto('http://127.0.0.1:4321/');
+  await page.goto(`${DEV}/`);
   await expect(page.getByRole('heading', { name: 'Playing a specific game?' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveAttribute('href', '/dev/games/');
   await page.getByRole('link', { name: 'Try a random rule' }).click();
-  await expect(page).toHaveURL('http://127.0.0.1:4321/dev/games/#random-rule');
+  await expect(page).toHaveURL(`${DEV}/dev/games/#random-rule`);
   await page.getByRole('button', { name: 'Pick a rule' }).click();
   const answer = await page.locator('[data-rule-answer]').textContent();
   const priorLink = await page.locator('[data-rule-link]').getAttribute('href');
@@ -147,7 +147,7 @@ test('random game rule redraw and source navigation work without treating a rule
 });
 
 test('all researched games are searchable but only reviewed portable rules enter the random mix', async ({ page }) => {
-  await page.goto('http://127.0.0.1:4321/dev/games/');
+  await page.goto(`${DEV}/dev/games/`);
   const choices = JSON.parse((await page.locator('[data-random-rule]').getAttribute('data-choices'))!) as { id: string; name: string; rule: string; href: string }[];
   expect(choices.length).toBeGreaterThan(50);
   expect(new Set(choices.map(choice => choice.id)).size).toBe(choices.length);
@@ -158,9 +158,9 @@ test('all researched games are searchable but only reviewed portable rules enter
   await page.getByRole('searchbox').fill('Imagine');
   await page.locator('.game-list li:visible a').click();
   await expect(page.getByRole('heading', { name: 'Official tie-break or fallback' }).locator('..')).toContainText('youngest');
-  await page.goto('http://127.0.0.1:4321/games/targi/');
+  await page.goto(`${DEV}/games/targi/`);
   await expect(page.locator('.rule-answer')).toContainText('If neither player has ever eaten dates');
-  await page.goto('http://127.0.0.1:4321/dev/games/');
+  await page.goto(`${DEV}/dev/games/`);
   await page.getByRole('searchbox').fill('Spin Circus');
   await expect(page.locator('.game-list li:visible')).toHaveCount(2);
   await page.getByRole('link', { name: /Spin Circus US English/ }).click();
@@ -169,7 +169,7 @@ test('all researched games are searchable but only reviewed portable rules enter
   await page.getByRole('searchbox').fill('Spin Circus');
   await page.getByRole('link', { name: /Spin Circus UK English/ }).click();
   await expect(page.locator('.rule-answer')).toContainText('stage');
-  await page.goto('http://127.0.0.1:4321/dev/games/');
+  await page.goto(`${DEV}/dev/games/`);
   // Force the final index, beyond the picker roster limit. This catches truncation
   // or accidentally using the player RNG helper for the much larger compendium.
   await page.evaluate(word => {
@@ -186,7 +186,7 @@ test('all researched games are searchable but only reviewed portable rules enter
 test('draft additions, edits and removal are available without restarting the dev server', async ({ request, browserName }) => {
   const slug = `automated-live-route-fixture-${browserName}`;
   const path = `research/games/${slug}.json`;
-  const url = `http://127.0.0.1:4321/dev/rules/${slug}/`;
+  const url = `${DEV}/dev/rules/${slug}/`;
   expect((await request.get(url)).status()).toBe(404);
   const first = readdirSync('research/games').find(name => name.endsWith('.json'))!;
   const fixture = { ...JSON.parse(readFileSync(`research/games/${first}`, 'utf8')), id: slug, slug,
@@ -213,7 +213,7 @@ test('draft additions, edits and removal are available without restarting the de
 test('reviewed catalog additions, edits and removal work without restarting development', async ({ request, browserName }) => {
   const slug = `automated-live-approved-fixture-${browserName}`;
   const path = `src/content/games/${slug}.json`;
-  const url = `http://127.0.0.1:4321/games/${slug}/`;
+  const url = `${DEV}/games/${slug}/`;
   expect((await request.get(url)).status()).toBe(404);
   const first = readdirSync('research/games').find(name => name.endsWith('.json'))!;
   const date = new Date().toISOString().slice(0, 10);

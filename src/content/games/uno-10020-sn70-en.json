@@ -3,8 +3,8 @@
   "slug": "uno-10020-sn70-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "540fd1ac162f9a0681ac67e11e591ee3e294e2c04f06754e638273c086b9dc07",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "63b05f87f93e14218d7cef1c04710cc6ce0ad5bf1c541027eaa047c9bb9e46fd",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "UNO",
@@ -12,7 +12,7 @@
     "Uno classic",
     "UNO 112 cards"
   ],
-  "editionLabel": "English 112-card edition · 10020-SN70_G1 (2017)",
+  "editionLabel": "Mattel English 112-card edition, 2017",
   "firstPlayerRule": "The dealer’s left neighbor normally starts. An opening action card can change this.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -36,7 +36,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Read the English setup and action-card text and inspected the rendered sheet. Older 42001 instructions differ. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\uno-6920681b.pdf; SHA-256 6353789db42dc78174cf04c1811ad8ba39ffeabfd9731afd8c3f4be4037cd521. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The dealer and opening action card determine the first turn; Reverse, Skip and Draw Two exceptions remain explicit. This is the 112-card 2017 sheet.",
+  "internalEvidence": "Read the English setup and action-card text and inspected the rendered sheet. Older 42001 instructions differ. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\uno-6920681b.pdf; SHA-256 6353789db42dc78174cf04c1811ad8ba39ffeabfd9731afd8c3f4be4037cd521. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The dealer and opening action card determine the first turn; Reverse, Skip and Draw Two exceptions remain explicit. This is the 112-card 2017 sheet. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "Dealer-selection ties are unspecified."
   ]

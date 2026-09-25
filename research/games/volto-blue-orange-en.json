@@ -1,10 +1,15 @@
 {
   "id": "volto-blue-orange-en",
   "slug": "volto-blue-orange-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Volto",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English rules · six-page publisher PDF",
+  "editionLabel": "Blue Orange English rules",
   "firstPlayerRule": "The most cunning player starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -28,10 +33,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://blueorangegames.eu/en/resources/game-rules/. Finding: The most cunning player starts. Local source SHA-256: 9747d71d8f9f3442228c05f78bcc1f6d418828fc086390d670c119abe6b0d83d.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

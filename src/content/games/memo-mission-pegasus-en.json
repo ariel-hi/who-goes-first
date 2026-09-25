@@ -3,13 +3,13 @@
   "slug": "memo-mission-pegasus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "88aecc5f60ef44852a0b504b00d9484a4df5f7c7fb2da97ca50e70b83564077f",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "546d5097a81da835c0cbb36e9f98014c6a45f2e1570c40a2cd901862c12f1d6a",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Memo Mission",
   "aliases": [],
-  "editionLabel": "Pegasus Spiele English rules, four-page booklet",
+  "editionLabel": "Pegasus Spiele English rules",
   "firstPlayerRule": "Whoever most recently read a fairy tale goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -32,7 +32,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Memo-Mission/66029G. Finding: Whoever most recently read a fairy tale goes first. Local source SHA-256: de360ef86bb72883ad55e1f304d800cd896f8894871c53a040a0802549cde423. The English manual was rendered and read. This replaces an initial German-source draft selected by a filename filter that failed to match the hyphen in _en-min.pdf. The publisher supplied correctly labeled files. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode context and turn order against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://pegasus.de/Memo-Mission/66029G. Finding: Whoever most recently read a fairy tale goes first. Local source SHA-256: de360ef86bb72883ad55e1f304d800cd896f8894871c53a040a0802549cde423. The English manual was rendered and read. This replaces an initial German-source draft selected by a filename filter that failed to match the hyphen in _en-min.pdf. The publisher supplied correctly labeled files. Editorial review 2026-09-23: Rechecked the cited starting instruction, mode context and turn order against the publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

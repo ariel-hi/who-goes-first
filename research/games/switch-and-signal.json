@@ -1,12 +1,17 @@
 {
   "id": "switch-and-signal",
   "slug": "switch-and-signal",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Switch & Signal",
   "aliases": [
     "Switch and Signal"
   ],
-  "language": "en",
-  "editionLabel": "English UK publisher rules, eight-page PDF",
+  "editionLabel": "English UK publisher rules",
   "firstPlayerRule": "The person who most recently had to wait for a train is the first active player. If nobody has had to wait for one, the group decides who starts.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -32,10 +37,5 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.thamesandkosmos.co.uk/product/switch-and-signal/. Finding: The person who most recently had to wait for a train is the first active player. Local source SHA-256: 2d1f80a0244dc4155a3472f664e6d951f313b34815257dff1fd7123a09010d45. Used the publisher's UK file. The separate US download was not used as evidence because it exceeded the retrieval size limit.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

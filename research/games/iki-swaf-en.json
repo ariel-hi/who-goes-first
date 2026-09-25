@@ -1,12 +1,17 @@
 {
   "id": "iki-swaf-en",
   "slug": "iki-swaf-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "IKI",
   "aliases": [
     "IKI: A Game of Edo Artisans"
   ],
-  "language": "en",
-  "editionLabel": "English Sorry We Are French edition, 2021 publisher file",
+  "editionLabel": "English Sorry We Are French edition",
   "firstPlayerRule": "With three or four players, whoever visited Japan most recently is the first month's starting player; choose randomly if nobody has visited Japan. With two players, randomly assign the Sun and Moon tokens; the Sun player starts the first month.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -38,10 +43,5 @@
   "uncertainty": [
     "No separate tie-break is stated for equally recent visits to Japan.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

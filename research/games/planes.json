@@ -1,10 +1,15 @@
 {
   "id": "planes",
   "slug": "planes",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Planes",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English AEG rules, sixteen-page publisher PDF",
+  "editionLabel": "English AEG rules",
   "firstPlayerRule": "The player who most recently traveled by plane starts. The reference sheet also permits a random choice.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -31,10 +36,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

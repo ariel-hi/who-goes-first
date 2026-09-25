@@ -3,8 +3,8 @@
   "slug": "disney-hocus-pocus-the-game-ravensburger-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a96baa91c47a5789330b9f3c1d61eeefe31606b9fd1b9ff0d476703c3f5f4ac5",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "e8feaf08e46125b59999f9455aa451254dd5e74ea79a823a675989a08daca8c9",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Disney Hocus Pocus: The Game",
@@ -12,7 +12,7 @@
     "Hocus Pocus",
     "Hocus Pocus The Game"
   ],
-  "editionLabel": "Ravensburger English rulebook, file 26946",
+  "editionLabel": "Ravensburger English rulebook",
   "firstPlayerRule": "Whoever last lit a candle starts. Play proceeds clockwise.",
   "officialTieBreak": "If there is doubt about who should start, choose the oldest player.",
   "houseFallback": null,
@@ -39,7 +39,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/strategy-games/disney-hocus-pocus-the-game-60001875. Finding: Whoever last lit a candle starts. Play proceeds clockwise. Local source SHA-256: 056261e139f930020b9e2486ce7007f3ca6855ac096d5cd4f8f8dbadfafd2233. All three cited pages were inspected as rendered images. The oldest-player instruction belongs to initial setup. The left-neighbor rule applies to later rounds. No publication year has been inferred from the download URL. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/products/games/strategy-games/disney-hocus-pocus-the-game-60001875. Finding: Whoever last lit a candle starts. Play proceeds clockwise. Local source SHA-256: 056261e139f930020b9e2486ce7007f3ca6855ac096d5cd4f8f8dbadfafd2233. All three cited pages were inspected as rendered images. The oldest-player instruction belongs to initial setup. The left-neighbor rule applies to later rounds. No publication year has been inferred from the download URL. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
   ]

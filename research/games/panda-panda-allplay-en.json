@@ -1,10 +1,15 @@
 {
   "id": "panda-panda-allplay-en",
   "slug": "panda-panda-allplay-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Panda Panda",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Allplay rules, two-sheet publisher PDF",
+  "editionLabel": "English Allplay rules",
   "firstPlayerRule": "The player who saw a panda most recently starts. Seeing one in a picture or video counts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -29,10 +34,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

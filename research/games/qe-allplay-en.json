@@ -1,13 +1,18 @@
 {
   "id": "qe-allplay-en",
   "slug": "qe-allplay-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "QE",
   "aliases": [
     "Q.E.",
     "Quantitative Easing"
   ],
-  "language": "en",
-  "editionLabel": "English rules linked by Allplay, publisher file labeled 2019 EN",
+  "editionLabel": "English rules linked by Allplay",
   "firstPlayerRule": "Whoever visited a bank most recently is the first auctioneer and takes the First Auctioneer Token.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -34,10 +39,5 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

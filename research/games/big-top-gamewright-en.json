@@ -1,14 +1,21 @@
 {
   "id": "big-top-gamewright-en",
   "slug": "big-top-gamewright-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Big Top",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English Gamewright rules · 1-page publisher PDF",
+  "editionLabel": "English Gamewright rules",
   "firstPlayerRule": "The youngest player reveals the first yellow card. Everyone then races to identify the missing animal and color.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
-  "clarifications": ["This is Gamewright's animal-and-color recognition game. Allplay's Big Top is a different circus auction game."],
+  "clarifications": [
+    "This is Gamewright's animal-and-color recognition game. Allplay's Big Top is a different circus auction game."
+  ],
   "interpretation": null,
   "sources": [
     {
@@ -27,10 +34,5 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

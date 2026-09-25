@@ -1,10 +1,15 @@
 {
   "id": "trismegistus-ultimate-formula-board-dice-en",
   "slug": "trismegistus-ultimate-formula-board-dice-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Trismegistus: The Ultimate Formula",
   "aliases": [],
-  "language": "en",
-  "editionLabel": "English original Board&Dice rules, 28-page booklet",
+  "editionLabel": "English original Board&Dice rules",
   "firstPlayerRule": "For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative.",
   "officialTieBreak": "Both setup methods explicitly permit random selection; neither makes it conditional on a tie.",
   "houseFallback": null,
@@ -35,14 +40,9 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/trismegistus-the-ultimate-formula/. Finding: For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative. Local source SHA-256: 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036. ",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://boardanddice.com/trismegistus-the-ultimate-formula/. Finding: For the introductory game, choose randomly or let the most experienced player start. Standard setup instead names the last player to perform an alchemical transmutation, with random selection as an alternative. Local source SHA-256: 831037567c45285d5474aba41a287c71882e4cabbb55fd0106844cb331292036.",
   "uncertainty": [
     "The standard setup does not define what qualifies as an alchemical transmutation.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  ]
 }

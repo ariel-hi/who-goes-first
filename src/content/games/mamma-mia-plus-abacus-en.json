@@ -3,13 +3,13 @@
   "slug": "mamma-mia-plus-abacus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7050ead15aa451f5bfed0e9ce1d6a76b34365b65ac16972e84eac90d950bcdf9",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "3ab877e30177bc3535a9c35ec99df676f9942cadcb9702cb1fbce62ff00acdd1",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "Mamma Mia! Plus",
   "aliases": [],
-  "editionLabel": "ABACUSSPIELE English Plus rules, four-page PDF",
+  "editionLabel": "ABACUSSPIELE English Plus rules",
   "firstPlayerRule": "The hungriest player goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -31,7 +31,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/mamma-mia-plus/. Finding: The hungriest player goes first. Local source SHA-256: 2738e06fbf673e18157ae14e64f2a51715dbe622ca54ea01a8d1e4de6c9609e7. The Plus edition is kept distinct from the original Mamma Mia! game. The later-round instruction about the last card drawn is not used as the initial starting criterion. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://abacusspiele.de/produkt/mamma-mia-plus/. Finding: The hungriest player goes first. Local source SHA-256: 2738e06fbf673e18157ae14e64f2a51715dbe622ca54ea01a8d1e4de6c9609e7. The Plus edition is kept distinct from the original Mamma Mia! game. The later-round instruction about the last card drawn is not used as the initial starting criterion. Editorial review 2026-09-23: Rechecked the cited starting instruction and relevant setup or turn-order context against the rendered publisher PDF; confirmed the English summary where the source is German. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."

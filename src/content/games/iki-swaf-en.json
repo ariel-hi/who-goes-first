@@ -3,15 +3,15 @@
   "slug": "iki-swaf-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "22903e3a4cfbd08b3f33f4037c0ba5a25de00f5735bac7c51a554e2b3068fe7c",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "647d6844303897ebc15b76f2fda0d1ae2aadb50280c07811994ae36b0e764af6",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-23",
   "gameName": "IKI",
   "aliases": [
     "IKI: A Game of Edo Artisans"
   ],
-  "editionLabel": "English Sorry We Are French edition, 2021 publisher file",
+  "editionLabel": "English Sorry We Are French edition",
   "firstPlayerRule": "With three or four players, whoever visited Japan most recently is the first month's starting player; choose randomly if nobody has visited Japan. With two players, randomly assign the Sun and Moon tokens; the Sun player starts the first month.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
@@ -39,7 +39,7 @@
       "checkedAt": "2026-09-23"
     }
   ],
-  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://sorryweare.fr/en/game/iki-en/. Finding: With three or four players, whoever visited Japan most recently is the first month's starting player. With two players, randomly assign the Sun and Moon tokens; the Sun player starts the first month. Local source SHA-256: ea5660781800497d4ebd6f8f8d44ca7702da72f343894a519f4f1ac5ee327682. The publisher PDF's text layer is garbled. Player setup, phase order and the two-player Sun/Moon override were read from rendered pages. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the rendered publisher PDF. Owner authorized assistant review on 2026-09-22.",
+  "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://sorryweare.fr/en/game/iki-en/. Finding: With three or four players, whoever visited Japan most recently is the first month's starting player. With two players, randomly assign the Sun and Moon tokens; the Sun player starts the first month. Local source SHA-256: ea5660781800497d4ebd6f8f8d44ca7702da72f343894a519f4f1ac5ee327682. The publisher PDF's text layer is garbled. Player setup, phase order and the two-player Sun/Moon override were read from rendered pages. Editorial review 2026-09-23: Rechecked the cited starting instruction and edition context in the rendered publisher PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No separate tie-break is stated for equally recent visits to Japan.",
     "The answer applies to the identified publisher file; other editions may differ."

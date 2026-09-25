@@ -1,22 +1,23 @@
 {
   "id": "carcassonne-2021-en",
+  "slug": "carcassonne-2021-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
   "gameName": "Carcassonne",
   "aliases": [
     "Carcassonne base game"
   ],
-  "editionLabel": "English base game · 2021 copyright (V3 rulebook)",
+  "editionLabel": "Z-Man Games English base game · 2021 copyright",
   "firstPlayerRule": "The youngest player takes the first turn. Play then continues clockwise.",
   "officialTieBreak": null,
   "houseFallback": "If age does not settle it, your group can agree to choose randomly. This is a house rule, not a tie-break supplied by this rulebook.",
   "clarifications": [
     "This entry covers the base game in the cited V3 rulebook, not expansions or other Carcassonne games."
   ],
-  "internalEvidence": "Publisher product page links this V3 PDF. Page 3 was rendered and visually checked; the starting instruction names the youngest player. Page 6 carries copyright 2000 and 2021.",
-  "uncertainty": [
-    "No tie between equally young players is resolved in the cited starting instruction."
-  ],
-  "slug": "carcassonne-2021-en",
-  "language": "en",
   "interpretation": null,
   "sources": [
     {
@@ -35,9 +36,8 @@
       "checkedAt": "2026-09-22"
     }
   ],
-  "status": "draft",
-  "approvedBy": null,
-  "approvedRevision": null,
-  "publishedAt": null,
-  "materiallyUpdatedAt": null
+  "internalEvidence": "Publisher product page links this V3 PDF. Page 3 was rendered and visually checked; the starting instruction names the youngest player. Page 6 carries copyright 2000 and 2021.",
+  "uncertainty": [
+    "No tie between equally young players is resolved in the cited starting instruction."
+  ]
 }
