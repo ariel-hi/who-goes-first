@@ -36,7 +36,10 @@
     if (value === 'decline' && choice === 'allow') {
       for (const cookie of document.cookie.split(';')) {
         const name = cookie.trim().split('=')[0];
-        if (/^_ga(?:_|$)/.test(name)) document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax; Secure`;
+        if (!/^_ga(?:_|$)/.test(name)) continue;
+        for (const domain of ['', `; Domain=${location.hostname}`, `; Domain=.${location.hostname}`]) {
+          document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax; Secure${domain}`;
+        }
       }
       location.reload();
     }
