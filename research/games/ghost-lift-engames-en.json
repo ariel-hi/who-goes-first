@@ -1,0 +1,44 @@
+{
+  "id": "ghost-lift-engames-en",
+  "slug": "ghost-lift-engames-en",
+  "gameName": "Ghost Lift",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Engames English rules (2025)",
+  "firstPlayerRule": "The person who most recently had a scare becomes the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns clockwise from the first player.",
+    "In later rounds, the player to the left of whoever emptied their hand in the previous round starts.",
+    "The booklet includes a two-player variant and simplified rules for three to six players; neither changes the initial scare criterion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://tesera.ru/images/items/2538324/ghostlift_rulebook_EN.pdf",
+      "title": "Ghost Lift — English rules",
+      "publisher": "Engames",
+      "printedPages": [
+        "1",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup, step 8; Gameplay; End of the Round; variants",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Engames' product page https://www.engames-s.com/product/3749 links an English Ghost Lift manual uploaded by Engames_JP to BGG identity 450112. The Engames-authored English booklet was preserved at Tesera; a browser-style request retrieved it after the bounded intake request returned HTTP 403. Both PDF spreads were rendered and visually checked. The booklet credits Engames and onegear and is distinct from the earlier The Ghost Lift edition. Mirror PDF SHA-256: c3e3f3c12d07df0c6ec753c07d6b40259a4f9e05cf153bfc48fcd9a11152a7f4. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "No tie-break or fallback is stated if several players had their most recent scare at the same time or none remembers one."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9759901a2b317d310678a5a318475e111ba71690cfa0e721a82ace72da12a7fb",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

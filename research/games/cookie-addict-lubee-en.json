@@ -1,0 +1,41 @@
+{
+  "id": "cookie-addict-lubee-en",
+  "slug": "cookie-addict-lubee-en",
+  "gameName": "Cookie Addict",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Lubee Edition English rules",
+  "firstPlayerRule": "The player who last ate a cookie starts the game by choosing a character token and placing it in front of a row or column.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The other player places their token perpendicular to the first player's choice and activates the first tile. The cookie eater makes the first placement but the other player takes the first tile action.",
+    "The same opening rule is used with both the classic and quick setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lubee-edition.com/cdn/storage/contents-files/GBsf7j9kXuLbXMk4z/original/GBsf7j9kXuLbXMk4z.pdf",
+      "title": "Cookie Addict — English rules",
+      "publisher": "Lubee Edition",
+      "printedPages": [
+        "unpaginated gameplay pages"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Gameplay, steps 1–4",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Lubee Edition's product page https://shop.lubee-edition.com/products/cookie-addict confirms the title and publisher for BGG identity 306032. The publisher-hosted English manual's PDF pages 2–3 were rendered and visually checked. Page 2 names the cookie eater as player 1; page 3 explicitly gives player 2 the first tile activation. PDF SHA-256: ef436be9329389d9810c560a0ede25bfcfb265855746981758ed64023b903cbe. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "No tie-break or fallback is stated if both players most recently ate a cookie at the same time or neither remembers."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "23e624d1645d766b55567b40c93d23eb6bcc43b167efbfe7745ff569ba890404",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}
