@@ -1,0 +1,45 @@
+{
+  "id": "betrayal-at-house-on-the-hill-avalon-hill-2e-en",
+  "slug": "betrayal-at-house-on-the-hill-avalon-hill-2e-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "b8e1858be6aa4fc1a3321cbf3f508c35db29dd4888c1a4ebe78399ba3e711eb2",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Betrayal at House on the Hill",
+  "aliases": [
+    "Betrayal",
+    "BaHotH",
+    "Betrayal 2nd Edition"
+  ],
+  "editionLabel": "Avalon Hill (Hasbro) English rules, second edition",
+  "firstPlayerRule": "The explorer with the next birthday goes first. Use the birthday printed on each explorer’s character card, not the players’ own birthdays.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns clockwise (to the left) following the first explorer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/F3148_en-us_avalon-hill-betrayal-at-house-on-the-hill-second-edition-cooperative-board-game.pdf",
+      "title": "Betrayal at House on the Hill Second Edition — Rules & Instructions",
+      "publisher": "Avalon Hill / Hasbro",
+      "printedPages": [
+        "4–5"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3
+      ],
+      "location": "Setup, final bullet “See who goes first”, and How to Play (PDF page 3, printed spread 4–5); copyright on PDF page 1",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://instructions.hasbro.com/api/download/F3148_en-us_avalon-hill-betrayal-at-house-on-the-hill-second-edition-cooperative-board-game.pdf, the English (US) rules listed on Hasbro’s official instructions page https://instructions.hasbro.com/en-us/instruction/avalon-hill-betrayal-at-house-on-the-hill-second-edition-cooperative-board-game. SHA-256: 94afbab9b3fc51c7a4a0098f9d583c64aaee398b84093be58c12a5523b3af596. Read the extracted text of PDF pages 1 and 3. PDF page 3 (printed spread 4–5), setup: ‘See who goes first. The explorer who has the next birthday goes first. (Look on your explorer’s character card…)’, then turns go clockwise; How to Play repeats that turns start with the first player and go left. PDF page 1 shows Betrayal at House on the Hill, Avalon Hill and © 2021 Hasbro, item F3148 Second Edition, identifying the game (BGG 10547). For comparison, the official Hasbro 3rd-edition English (en-gb, F4541) rulebook setup step 13 also gives the first turn to the explorer with the next birthday; it is a separate BGG entry and not covered by this record. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no tie-break, but each explorer card shows a different birthday.",
+    "The first edition (2004) and third edition (2022) have their own rulebooks; this record covers the second edition."
+  ]
+}
