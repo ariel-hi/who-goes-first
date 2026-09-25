@@ -1,0 +1,41 @@
+{
+  "id": "pirates-vs-dinosaurs-jolly-roger-en",
+  "slug": "pirates-vs-dinosaurs-jolly-roger-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Pirates vs Dinosaurs",
+  "aliases": [],
+  "editionLabel": "Jolly Roger Games English edition",
+  "firstPlayerRule": "The rules suggest that the player who looks most like a pirate starts. If players cannot agree who makes the most convincing pirate, the oldest player starts.",
+  "officialTieBreak": "If players cannot agree who looks most like a pirate, the oldest player starts.",
+  "houseFallback": null,
+  "clarifications": [
+    "Players may make pirate faces and growl “arrrr matey” to help make the choice.",
+    "Play proceeds clockwise from the first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Pirates%20vs%20Dinosaurs.pdf",
+      "title": "Pirates vs Dinosaurs — English rulebook",
+      "publisher": "Jolly Roger Games",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        8
+      ],
+      "location": "Stage 1: Outfitting Your Party, step 1; publisher credits",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The image-based Jolly Roger Games English rulebook was rendered and visually checked. Printed page 6 suggests the pirate-look choice, gives the oldest-player fallback if the group cannot agree, and specifies clockwise play. PDF page 2 identifies Jolly Roger Games as publisher and Richard Launius as designer; the title and designer match inventory BGG 73472. SHA-256: 745adbed524ed88f1af1a878d72f9bc8ea4ced562f6715b512fdf5a034831228. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The pirate-appearance choice is suggested rather than mandatory; the rules do not specify another required selection method."
+  ]
+}

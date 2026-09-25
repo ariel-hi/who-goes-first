@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 778 game rules approved for the catalog; 351 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 780 game rules approved for the catalog; 353 eligible for the random mix. Public house prompts: 60.**
+
+Pirates vs Dinosaurs and Shaolia: Warring States add two image-based English rulebooks checked on rendered pages. Pirates suggests the most pirate-looking player and supplies an oldest-player fallback if the group cannot agree; Shaolia picks the most regal-looking player. See `research/coverage/pirates-shaolia-progress.md`.
 
 Brew Crafters, the 2015 Fire & Axe: A Viking Saga, Plague Inc.: The Board Game, and Portal: The Uncooperative Cake Acquisition Game add four image-based English rulebooks checked on rendered pages. Their opening criteria join the portable mix. See `research/coverage/brew-fire-progress.md`.
 
