@@ -1,0 +1,53 @@
+{
+  "id": "dead-of-winter-plaid-hat-2014-en",
+  "slug": "dead-of-winter-plaid-hat-2014-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "e8af09c73be9a3b77ad3b68b5c25fa970575db58fc2d1e94c6690d73d9e306dd",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Dead of Winter: A Crossroads Game",
+  "aliases": [
+    "Dead of Winter",
+    "DoW"
+  ],
+  "editionLabel": "Plaid Hat Games English rulebook, 2014",
+  "firstPlayerRule": "The player whose group leader has the highest influence value takes the first player token and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Group leaders are chosen during setup: each player is dealt 4 survivors, keeps 2, and makes one of them their group leader.",
+    "Player turns go clockwise (to the left), starting with the first player.",
+    "At the end of each round, the first player passes the first player token to the player on their right.",
+    "The first player also breaks all ties during the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://media.plaidhatgames.com/old_images/games/dead-of-winter/rules.pdf",
+      "title": "Dead of Winter: A Crossroads Game — Rulebook",
+      "publisher": "Plaid Hat Games",
+      "printedPages": [
+        "4",
+        "6",
+        "8",
+        "13",
+        "credits page"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        8,
+        13,
+        20
+      ],
+      "location": "Page 4, First Player Token; page 6, Game Setup steps 9–14; page 8, Player Turns; page 13, Pass First Player Token; copyright on PDF page 20",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://www.plaidhatgames.com/images/games/dead-of-winter/rules.pdf (publisher Plaid Hat Games), which redirects to https://media.plaidhatgames.com/old_images/games/dead-of-winter/rules.pdf. SHA-256: 41f37d18f07bf04303c364916dcc0bab62d379b85373661650b0118be5812ca7. Read the extracted text of PDF pages 4, 6, 8, 13 and 20. Page 6, setup step 14: the player whose group leader has the highest influence value receives the first player token and takes the first turn of the game. Page 4: the first player goes first in a round and breaks all ties. Page 8: turns go clockwise from the first player. Page 13, step 7: the first player passes the token to the player on their right. PDF page 20 shows © 2014 Plaid Hat Games, identifying the original Dead of Winter: A Crossroads Game (BGG 150376). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The setup instruction does not say what to do if group leaders share the highest influence value."
+  ]
+}
