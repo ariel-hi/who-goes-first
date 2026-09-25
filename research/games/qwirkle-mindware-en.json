@@ -1,0 +1,35 @@
+{
+  "id": "qwirkle-mindware-en",
+  "slug": "qwirkle-mindware-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Qwirkle",
+  "aliases": [],
+  "editionLabel": "MindWare Qwirkle English instructions",
+  "firstPlayerRule": "Each player states the largest number of tiles they can play in one color or one shape without duplicates. The player with the largest such group plays those tiles first.",
+  "officialTieBreak": "If players have equally large opening groups, the oldest of those players goes first.",
+  "houseFallback": null,
+  "clarifications": [
+    "Play then continues clockwise."
+  ],
+  "interpretation": "The same tiles cannot repeat a color and shape within the claimed opening group.",
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/fd/7f/11-qwirkle-rulebook.pdf",
+      "title": "Qwirkle — MindWare Qwirkle English instructions",
+      "publisher": "MindWare",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Starting the game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 1, including the cited setup and turn-sequence text. A publisher-authored copy is hosted by the rulebook archive. Local source PDF SHA-256: 6efe30dad28f2f39566b0ed2d457a880df23a0862a4a57aa7f3f19d3fa9d8cb8. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "uncertainty": []
+}

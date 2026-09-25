@@ -1,0 +1,37 @@
+{
+  "id": "scrabble-mattel-53639-en",
+  "slug": "scrabble-mattel-53639-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Scrabble",
+  "aliases": [],
+  "editionLabel": "Mattel Scrabble 53639 English instructions",
+  "firstPlayerRule": "Each player draws one tile. The player whose tile is nearest the start of the alphabet plays first; a blank tile beats A.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Return the drawn tiles to the bag, mix them, and draw seven tiles each. Play proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/53639-ENG.pdf",
+      "title": "Scrabble — Mattel Scrabble 53639 English instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Getting Started",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 2, including the cited setup and turn-sequence text. Local source PDF SHA-256: 3a3d7c8822233590ae17c3bab364c108acea741dc1bda8f371bf4c078fc7380c. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "uncertainty": [
+    "The instructions do not specify how to resolve equal nearest-letter draws."
+  ]
+}

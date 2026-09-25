@@ -1,8 +1,10 @@
 # Content review queue
 
-**Owner-authorized assistant review: 813 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 831 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
 
 Thirteen more identities from the remaining discovery inventory have visually checked publisher-authored manuals and exact approved catalog revisions. Mode and edition limits, publisher-hosted versus preserved manual sources, official fallbacks, and blocked leads are recorded in `research/coverage/remaining-sep25-progress.md`. These thirteen entries are catalog-only.
+
+Eighteen popular-game titles have checked rulebooks and approved catalog revisions. The other twelve titles from the priority list were already covered. Edition and source details are recorded in `research/coverage/popular-thirty-progress.md`. These eighteen entries are catalog-only.
 
 Basilica, Battle Merchants, Braggart, Campaign Manager 2008, Chromino, Buccaneer Bones, and Bomb Squad add seven checked English rulebooks. Braggart, Chromino, and Buccaneer Bones join the portable random mix. Bomb Squad uses individual clockwise turns, but its robot-experience criterion has no fallback when nobody qualifies, so it remains directory-only. See `research/coverage/basilica-battle-braggart-campaign-chromino-buccaneer-bomb-progress.md`.
 
@@ -175,4 +177,6 @@ Age of Dirt and nine existing Czech Games Edition drafts add ten approved catalo
 The Fowers, Dire Wolf and Isle of Trains batch adds five researched and approved records, four portable, after inspection of 30 rendered source pages. See `research/coverage/skellig-direwolf-trains-progress.md`.
 
 The R&R Games pass approves five existing drafts, four portable, after inspection of ten rendered source pages. Pyramid Poker retains its setup-phase instruction in the catalog. See `research/coverage/rnr-review-progress.md`.
+
+The 30 popular-game priority titles are now covered: 12 titles were approved on `main` during this work, and this branch adds the other 18. The new records distinguish fixed starters from simultaneous phases, initiative, team and role openings, and setup order. None supplies a standalone portable criterion for the random mix. Each new record includes a rulebook page and source hash; see `research/coverage/popular-thirty-progress.md`.
 
