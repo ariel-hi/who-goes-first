@@ -4,10 +4,12 @@ test('fun questions use the full pool before repeating', async ({ page }) => {
   test.slow();
   await page.goto('/house-rules/');
   await expect(page.locator('.prompt-list li')).toHaveCount(60);
-  const draw = page.getByRole('button', { name: 'Choose a question' });
+  const draw = page.locator('[data-next]');
+  await expect(page.getByRole('button', { name: 'Skip', exact: true })).toHaveCount(0);
   const seen = new Set<string>();
   for (let i = 0; i < 60; i++) {
     await draw.click();
+    await expect(draw).toHaveText('Another question');
     const question = await page.locator('[data-prompt]').textContent();
     expect(seen.has(question!)).toBe(false);
     seen.add(question!);

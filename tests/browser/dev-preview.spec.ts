@@ -41,7 +41,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await page.getByRole('link', { name: 'Try the original house rules' }).click();
   await page.getByRole('button', { name: 'Choose a question' }).click();
   const prompt = await page.locator('[data-prompt]').textContent();
-  await page.getByRole('button', { name: 'Skip', exact: true }).click();
+  await page.getByRole('button', { name: 'Another question' }).click();
   await expect(page.locator('[data-prompt]')).not.toHaveText(prompt!);
   expect(failures).toEqual([]);
 });
@@ -125,7 +125,7 @@ test('random-rule controls wait for their script and recover from unavailable ra
   expect(await page.locator('.game-list a').count()).toBeGreaterThan(0);
 });
 
-test('random game rule, skip and source navigation work without treating a rule as an equal-chance draw', async ({ page }) => {
+test('random game rule redraw and source navigation work without treating a rule as an equal-chance draw', async ({ page }) => {
   await page.goto('http://127.0.0.1:4321/');
   await expect(page.getByRole('heading', { name: 'Playing a specific game?' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveAttribute('href', '/dev/games/');
@@ -136,7 +136,8 @@ test('random game rule, skip and source navigation work without treating a rule 
   const priorLink = await page.locator('[data-rule-link]').getAttribute('href');
   await expect(page.locator('[data-rule-answer]')).not.toBeEmpty();
   await expect(page.getByText('These criteria give people different chances.', { exact: false })).toBeVisible();
-  await page.getByRole('button', { name: 'Skip this rule' }).click();
+  await expect(page.getByRole('button', { name: 'Skip this rule' })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Another rule' }).click();
   await expect(page.locator('[data-rule-link]')).not.toHaveAttribute('href', priorLink!);
   // Different games may legitimately share the same rule; compare identity too.
   const nextName = await page.locator('[data-rule-game]').textContent();

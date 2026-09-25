@@ -324,7 +324,7 @@ test('reviewed catalog, local drafts, aliases, house prompts and real 404s', asy
   await page.getByRole('searchbox').fill('Azl'); await expect(page.locator('.game-list li:visible')).toHaveCount(1);
   await page.getByRole('searchbox').fill('unlisted game'); await expect(page.getByText('No matching rule yet.')).toBeVisible();
   await page.getByRole('button', { name: 'Choose a question' }).click();
-  const before = await page.locator('[data-prompt]').textContent(); await page.getByRole('button', { name: 'Skip', exact: true }).click();
+  const before = await page.locator('[data-prompt]').textContent(); await page.getByRole('button', { name: 'Another question' }).click();
   await expect(page.locator('[data-prompt]')).not.toHaveText(before!);
   await expect(page.getByRole('link', { name: /Nobody fits/ })).toHaveAttribute('href', '/');
   const draft = await request.get('http://127.0.0.1:4321/dev/rules/azul-2018-en/');

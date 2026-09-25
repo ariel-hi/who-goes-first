@@ -11,7 +11,7 @@ const choices = games.filter(randomRuleEligible).map(game => ({ id: game.id, nam
   <div data-rule-result hidden>
     <div role="status" aria-live="polite" aria-atomic="true"><p class="random-rule-game" data-rule-game></p><p class="random-rule-answer" data-rule-answer></p></div>
     <p class="small muted" data-rule-edition></p>
-    <div class="random-rule-actions"><a href={prefix === '/dev/rules/' ? '/dev/games/' : '/games/'} data-rule-link>Source & details</a><button class="text-button" data-skip-rule>Skip this rule</button><a href="/">Pick a player</a></div>
+    <div class="random-rule-actions"><a href={prefix === '/dev/rules/' ? '/dev/games/' : '/games/'} data-rule-link>Source & details</a><a href="/">Pick a player</a></div>
     <p class="small muted">These criteria give people different chances. If there’s a tie or nobody qualifies, pick another rule or use the player picker.</p>
   </div>
   <p role="alert" class="error" data-rule-error hidden></p>
@@ -22,10 +22,10 @@ const choices = games.filter(randomRuleEligible).map(game => ({ id: game.id, nam
   document.querySelectorAll<HTMLElement>('[data-random-rule]').forEach(root => {
     const choices: { id: string; name: string; edition: string; rule: string; href: string }[] = JSON.parse(root.dataset.choices!);
     let current: string | undefined;
-    function draw(skip: boolean) {
+    function draw() {
       const error = root.querySelector<HTMLElement>('[data-rule-error]')!;
       try {
-        const eligible = choices.filter(choice => !skip || choices.length === 1 || choice.id !== current);
+        const eligible = choices.filter(choice => choices.length === 1 || choice.id !== current);
         const choice = eligible[randomCollectionIndex(eligible.length)]!;
         root.querySelector<HTMLElement>('[data-rule-game]')!.textContent = choice.name;
         root.querySelector<HTMLElement>('[data-rule-answer]')!.textContent = choice.rule;
@@ -33,14 +33,14 @@ const choices = games.filter(randomRuleEligible).map(game => ({ id: game.id, nam
         root.querySelector<HTMLAnchorElement>('[data-rule-link]')!.href = choice.href;
         root.querySelector<HTMLElement>('[data-rule-result]')!.hidden = false;
         error.hidden = true; current = choice.id;
+        button.textContent = 'Another rule';
       } catch {
         error.textContent = 'The random draw is unavailable. Choose a rule from the list below.';
         error.hidden = false;
       }
     }
     const button = root.querySelector<HTMLButtonElement>('[data-draw-rule]')!;
-    button.addEventListener('click', () => draw(false));
+    button.addEventListener('click', draw);
     button.disabled = choices.length === 0;
-    root.querySelector('[data-skip-rule]')!.addEventListener('click', () => draw(true));
   });
 </script>
