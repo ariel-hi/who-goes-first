@@ -1,0 +1,35 @@
+{
+  "id": "survive-the-island-zygomatic-en-2024",
+  "slug": "survive-the-island-zygomatic-en-2024",
+  "gameName": "Survive the Island",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Zygomatic English rulebook, 2024",
+  "firstPlayerRule": "The last person to return safe and sound from an island is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player is chosen before players place Adventurers and Rafts in clockwise order. The game itself also proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2024/07/ZYGSTI01EN_RULES_20240227-low.pdf",
+      "title": "Survive the Island — English rules",
+      "publisher": "Zygomatic / Asmodee",
+      "printedPages": ["2", "3"],
+      "pdfPagesOneBased": [2, 3],
+      "location": "Setup; How to Play",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The Asmodee Canada product page https://www.asmodee.ca/en/product/survive-the-island/ links this Zygomatic manual. Printed/PDF page 2 directly assigns first player and the subsequent clockwise placement order; page 3 confirms clockwise game turns. Page 2 was rendered and read. The PDF's print date is 27 February 2024. Downloaded source SHA-256: 60e447bd8d8f7d93835e9eb43760c82cdb9648d9321123f1cfed775a59630c0a. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet does not specify a tie-break or a method if nobody has returned from an island."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

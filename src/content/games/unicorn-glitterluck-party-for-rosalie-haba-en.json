@@ -1,0 +1,29 @@
+{
+  "id": "unicorn-glitterluck-party-for-rosalie-haba-en",
+  "slug": "unicorn-glitterluck-party-for-rosalie-haba-en",
+  "gameName": "Unicorn Glitterluck: A Party for Rosalie",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "HABA English rules, retailer-hosted booklet",
+  "firstPlayerRule": "The player who most recently dreamed about a unicorn may begin.",
+  "officialTieBreak": "If the players cannot agree, the youngest player begins.",
+  "houseFallback": null,
+  "clarifications": ["The starter rolls the die first; turns continue clockwise."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://s3-ap-southeast-1.amazonaws.com/assets-eng-prod/products/attachments/Glittlerluck%20Unicorn%20Rosalie.pdf",
+    "title": "Unicorn Glitterluck: A Party for Rosalie — English instructions",
+    "publisher": "HABA",
+    "printedPages": ["5", "6"],
+    "pdfPagesOneBased": [1, 2],
+    "location": "English section, How to play, opening paragraph",
+    "checkedAt": "2026-09-25"
+  }],
+  "internalEvidence": "A retailer attachment preserves the HABA-authored three-page English excerpt, with HABA branding visible on the rendered pages. Printed page 5 names the game and printed page 6 states the first player, official youngest fallback and clockwise order. These pages were visually inspected. Downloaded PDF SHA-256: c8dca0f182981c627970670b0214b9f84947ea4d28f4174125007e3af9978732. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": ["The source does not say how to resolve a tie between equally young players."],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "e52a49fcd80241ae1bbdf67704b0564a0fba906b1f09df165476a0986977f7cb",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

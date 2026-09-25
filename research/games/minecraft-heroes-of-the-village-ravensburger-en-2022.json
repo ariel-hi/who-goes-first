@@ -1,0 +1,29 @@
+{
+  "id": "minecraft-heroes-of-the-village-ravensburger-en-2022",
+  "slug": "minecraft-heroes-of-the-village-ravensburger-en-2022",
+  "gameName": "Minecraft: Heroes of the Village",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Ravensburger US English rules, 2022, article 20914",
+  "firstPlayerRule": "The player who most recently tamed an animal in Minecraft starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": ["If nobody qualifies, the youngest player begins. The starting player receives the white Illagers die during setup."],
+  "interpretation": null,
+  "sources": [{
+    "url": "https://product-files.ravensburger.cloud/manuals/663230.pdf",
+    "title": "Minecraft: Heroes of the Village — English rules",
+    "publisher": "Ravensburger",
+    "printedPages": ["3", "4"],
+    "pdfPagesOneBased": [3, 4],
+    "location": "Game Setup step 8 and How to Play opening paragraph",
+    "checkedAt": "2026-09-25"
+  }],
+  "internalEvidence": "Ravensburger's US product page https://www.ravensburger.us/en-US/pdp/20914 links this 44-page multilingual manual. The English cover identifies article 20914. PDF page 3 assigns the Illagers die to the starter and PDF page 4 states the animal-taming criterion and youngest-player fallback. Page 4 was rendered and read visually. ©2022 is on the product page. Downloaded PDF SHA-256: d08ba47e07e9d2af2d2d8a3cdf2ede180fc8adb45b9a39bf3b276686adaafa40. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": ["The rules do not state a tie-break when two players last tamed an animal at the same time."],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "bf7d788fbab405511ceb11932ce8cf2a3e6914088c279862651aaffc804fb394",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}
