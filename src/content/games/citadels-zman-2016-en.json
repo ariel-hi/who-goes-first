@@ -1,0 +1,53 @@
+{
+  "id": "citadels-zman-2016-en",
+  "slug": "citadels-zman-2016-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "186a1128c9315a7b36eec2cd74ccb371646c07df9d68330f4f7a8d41fbaadce7",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Citadels",
+  "aliases": [
+    "Citadels 2016 Edition",
+    "Ohne Furcht und Adel"
+  ],
+  "editionLabel": "Z-Man Games English rulebook, 2016 edition",
+  "firstPlayerRule": "The oldest player takes the crown. The crowned player is first to choose a character card.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Characters are chosen clockwise: the crowned player picks one, then passes the rest to the player on their left.",
+    "Turns are not taken clockwise. The crowned player calls characters in ascending rank order, and whoever revealed that character takes their turn.",
+    "The crown moves during the game: the rank 4 character (King, Emperor or Patrician) takes or passes it, and the new crowned player chooses first next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/zc01-rulebook_web.pdf",
+      "title": "Citadels — Rulebook",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "3",
+        "4",
+        "8",
+        "12",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        8,
+        12,
+        16
+      ],
+      "location": "Page 3, Setup step 5 and Selection Phase; page 4, Turn Phase; page 8, Complete Setup step 7; page 12, rank 4 characters; credits on page 16",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/zc01-rulebook_web.pdf, the English rulebook linked from the publisher page https://www.zmangames.com/game/citadels/. SHA-256: 36bc4ea9f079c803c01a4cddc66d5d6506c617970e22793db22bb3f7d516a539. Read the extracted text of PDF pages 3, 4, 8, 12 and 16. Page 3, first-game setup step 5: ‘The oldest player takes the crown’; the crowned player chooses a character first and passes the rest left. Page 8, Complete Setup step 7 repeats that the oldest player takes the crown. Page 4: turns follow ascending character rank as called by the crowned player. Page 12: the King and Patrician take the crown and the Emperor gives it to another player. Page 16 credits Bruno Faidutti and name Citadels (2016 Edition), identifying the game (BGG 478). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no tie-break for players of the same age.",
+    "Earlier editions (Fantasy Flight Games) may word setup differently; this record covers the 2016 Z-Man edition."
+  ]
+}
