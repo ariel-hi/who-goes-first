@@ -1,0 +1,48 @@
+{
+  "id": "hive-gen42-en",
+  "slug": "hive-gen42-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "c53785ca706e4911914fb9ac518f5555015b77f1fea34c292ba268f53f820483",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Hive",
+  "aliases": [],
+  "editionLabel": "Gen42 English rulebook, 2010",
+  "firstPlayerRule": "The rulebook doesn't name a first player. Play begins with one player placing a piece in the centre of the table, then the other player places one of their own pieces touching it edge to edge.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After the first two pieces, players take turns to either place a new piece or move one of their pieces.",
+    "Each player must place their Queen Bee by their fourth turn at the latest."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.gen42.com/wp-content/uploads/Hive-rules.pdf",
+      "title": "Hive — English rules",
+      "publisher": "Gen42 Games",
+      "printedPages": [
+        "cover",
+        "1",
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "location": "Cover, copyright; page 1, Preparation; page 2, Playing the Game; page 3, Placing your Queen Bee",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules linked from the Gen42 Hive product page (https://www.gen42.com/product/hive/). SHA-256 acf2ad802be54c177273baeb7bec234654084c7e4afac7611b3b4ea6ef0f7f8c. The 12-page PDF is image-only, so all pages were rendered with PyMuPDF and read visually. Cover: copyright 2010 Gen42 Games, author John Yianni. Printed page 1 (PDF 2), Preparation: each player takes all 11 pieces of one colour. Printed page 2 (PDF 3): \"Play begins with one player placing a piece\" in the centre, then the next player joins one of theirs. No page names which player or colour starts. Identity matches BGG 2655. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook does not say which player or colour goes first; choose any player.",
+    "Tournament conventions for who starts are not part of this rulebook.",
+    "This 2010 rulebook covers the base 11-piece set; expansion pieces are not covered."
+  ]
+}
