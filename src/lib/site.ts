@@ -14,5 +14,14 @@ export function siteSettings(env: Record<string, string | undefined> = process.e
   if (production && (!privacyHost || !privacyLogging)) {
     throw new Error('A production release requires PRIVACY_HOST_NAME and PRIVACY_LOGGING_POLICY.');
   }
-  return { url: site.origin, production, contact, privacyHost, privacyLogging };
+  // Revenue settings are optional and inert until set. Each is validated so a
+  // typo fails the build instead of shipping a broken ad tag or affiliate link.
+  const adsenseClient = env.ADSENSE_CLIENT?.trim() || '';
+  const amazonTag = env.AMAZON_ASSOCIATES_TAG?.trim() || '';
+  const tipUrl = env.TIP_JAR_URL?.trim() || '';
+  if (adsenseClient && !/^ca-pub-\d{10,20}$/.test(adsenseClient)) throw new Error('ADSENSE_CLIENT must look like ca-pub-1234567890123456.');
+  if (amazonTag && !/^[a-z0-9-]{3,40}-\d{2}$/i.test(amazonTag)) throw new Error('AMAZON_ASSOCIATES_TAG must look like yourtag-20.');
+  if (tipUrl && !/^https:\/\/[^\s/?#]+\.[^\s/?#]+\/\S*$/.test(tipUrl)) throw new Error('TIP_JAR_URL must be an HTTPS link.');
+  // Ads never run in previews: AdSense serves only on the approved public domain.
+  return { url: site.origin, production, contact, privacyHost, privacyLogging, adsenseClient: production ? adsenseClient : '', amazonTag, tipUrl };
 }

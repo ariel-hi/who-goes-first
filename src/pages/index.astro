@@ -12,7 +12,7 @@ const drafts = localPreview ? readRecords('research/games').map(record => public
 const games = [...approved, ...drafts].filter((game, index, all) => all.findIndex(other => other.id === game.id) === index);
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
 ---
-<Layout title="Who Goes First? Random First Player Picker" description="Choose who goes first in your board game. A free, fair random picker for 2–50 players, with names or numbered seats. No account or download needed.">
+<Layout ads={false} title="Who Goes First? Random First Player Picker" description="Choose who goes first in your board game. A free, fair random picker for 2–50 players, with names or numbered seats. No account or download needed.">
   <div class="tool-page home-page">
     <noscript><p class="noscript">Enable JavaScript to pick a player on your device. You can still browse the static rules and fairness pages.</p></noscript>
     <div class="home-layout">

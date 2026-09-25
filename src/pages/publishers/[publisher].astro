@@ -1,0 +1,16 @@
+---
+import HubPage from '../../components/HubPage.astro';
+import { getCatalog } from '../../lib/content/catalog';
+import { publisherHubs } from '../../lib/content/hubs';
+export function getStaticPaths() { return publisherHubs(getCatalog()).map(hub => ({ params: { publisher: hub.slug }, props: { hub } })); }
+const { hub } = Astro.props as { hub: ReturnType<typeof publisherHubs>[number] };
+const count = hub.rules.length;
+---
+<HubPage
+  title={`${hub.name} Games: Who Goes First? ${count} Starting-Player Rules`}
+  description={`Who goes first in ${count} games from ${hub.name} rulebooks, with the source edition for each starting-player rule.`}
+  heading={`Who goes first in ${hub.name} games?`}
+  lede={`${count} starting-player rules checked against ${hub.name} rulebooks.`}
+  crumb={hub.name}
+  rules={hub.rules}
+><p class="small"><a href="/publishers/">All publishers</a></p></HubPage>

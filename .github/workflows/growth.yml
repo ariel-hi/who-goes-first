@@ -1,0 +1,67 @@
+name: Growth automation
+# Schedules run only from the default branch. Each job skips itself cleanly
+# when its secrets are not configured yet.
+on:
+  schedule:
+    - cron: '17 15 * * *' # daily rule of the day (15:17 UTC)
+    - cron: '41 6 * * 1'  # weekly search demand + report (Mondays)
+  workflow_dispatch:
+    inputs:
+      task:
+        description: Which job to run
+        type: choice
+        options: [post, weekly]
+        default: weekly
+concurrency:
+  group: growth-${{ github.event.schedule || inputs.task }}
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  post:
+    if: github.event.schedule == '17 15 * * *' || inputs.task == 'post'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      SITE_URL: ${{ vars.SITE_URL || 'https://whogoesfirst.fun' }}
+      BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+      BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+      MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
+      MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/post-rule.ts
+  weekly:
+    if: github.event.schedule == '41 6 * * 1' || inputs.task == 'weekly'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      SITE_URL: ${{ vars.SITE_URL || 'https://whogoesfirst.fun' }}
+      GSC_PROPERTY: ${{ vars.GSC_PROPERTY || 'sc-domain:whogoesfirst.fun' }}
+      GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/growth-weekly.ts
+      # research/ never deploys; [skip ci] keeps this data commit from
+      # triggering a site build on Cloudflare Pages or the CI workflow.
+      - name: Commit research queue
+        run: |
+          git add research/demand
+          if git diff --cached --quiet; then echo "No demand changes."; exit 0; fi
+          git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update search demand research queue [skip ci]"
+          git push

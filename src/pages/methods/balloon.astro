@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import PickerShell from '../../components/PickerShell.astro';
 const enabled = process.env.DISABLE_BALLOON !== 'true';
 ---
-<Layout title={enabled ? 'Balloon Rise: Random Player Picker — Who Goes First?' : 'Balloon Rise unavailable — Who Goes First?'} description={enabled ? 'Choose a starting player with Balloon Rise. Each player gets a balloon and an equal chance. The last balloon floating reveals who goes first.' : 'Balloon Rise is currently unavailable. You can still pick a starting player with Quick, Instant or another reveal.'} noindex={!enabled}>
+<Layout ads={false} title={enabled ? 'Balloon Rise: Random Player Picker — Who Goes First?' : 'Balloon Rise unavailable — Who Goes First?'} description={enabled ? 'Choose a starting player with Balloon Rise. Each player gets a balloon and an equal chance. The last balloon floating reveals who goes first.' : 'Balloon Rise is currently unavailable. You can still pick a starting player with Quick, Instant or another reveal.'} noindex={!enabled}>
   <div class="tool-page">
     <div class="intro"><h1>Who goes first?</h1>{!enabled && <p>Balloon Rise is unavailable. You can still pick a player.</p>}</div>
     <noscript><p class="noscript">Enable JavaScript to pick a player.</p></noscript>

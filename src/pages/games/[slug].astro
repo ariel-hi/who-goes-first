@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import GameArticle from '../../components/GameArticle.astro';
 import NotFound from '../404.astro';
 import { getCatalog } from '../../lib/content/catalog';
+import { publisherHubs, publisherOf, similarRules, slugify } from '../../lib/content/hubs';
 import { siteSettings } from '../../lib/site';
 export function getStaticPaths() { return getCatalog().map(rule => ({ params: { slug: rule.slug }, props: { rule } })); }
 const catalog = getCatalog();
@@ -10,9 +11,11 @@ const rule = Astro.props.rule ?? catalog.find(game => game.slug === Astro.params
 if (!rule) Astro.response.status = 404;
 const family = (name: string) => name.split(':', 1)[0]!.trim().toLocaleLowerCase('en');
 const related = catalog.filter(game => game.id !== rule?.id && rule && family(game.gameName) === family(rule.gameName)).slice(0, 5);
+const similar = rule ? similarRules(rule, catalog, new Set(related.map(game => game.id))) : { hub: undefined, rules: [] };
+const publisher = rule ? publisherHubs(catalog).find(hub => hub.slug === slugify(publisherOf(rule))) : undefined;
 const site = siteSettings().url;
 ---
-{rule ? <Layout title={`Who goes first in ${rule.gameName}? ${rule.editionLabel}`} description={`${rule.gameName} — ${rule.editionLabel}: ${rule.firstPlayerRule}`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)}>
+{rule ? <Layout title={`Who goes first in ${rule.gameName}? ${rule.editionLabel}`} description={`${rule.gameName} — ${rule.editionLabel}: ${rule.firstPlayerRule}`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)} image={`/og/${rule.slug}.png`} imageAlt={`Who goes first in ${rule.gameName}? ${rule.firstPlayerRule}`}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: rule.gameName, item: `${site}/games/${rule.slug}/` }] }).replace(/</g, '\\u003c')} />
-  <div class="content-page"><GameArticle rule={rule} related={related} /></div>
+  <div class="content-page"><GameArticle rule={rule} related={related} similar={similar.rules} similarHub={similar.hub && { slug: similar.hub.slug, about: similar.hub.about }} publisherHub={publisher && { slug: publisher.slug, name: publisher.name, count: publisher.rules.length }} /></div>
 </Layout> : <NotFound />}

@@ -3,6 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 import GameDirectory from '../../components/GameDirectory.astro';
 import RandomRule from '../../components/RandomRule.astro';
 import { getCatalog } from '../../lib/content/catalog';
+import { publisherHubs, themeHubs } from '../../lib/content/hubs';
 const games = getCatalog();
+const themes = themeHubs(games);
+const publishers = publisherHubs(games);
 ---
-<Layout title="Board Game Starting-Player Rules — Who Goes First?" description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}><div class="content-page"><h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p><p>Browse the sourced editions available so far, or <a href="/board-games/">find your game in the full board game directory</a>.</p><RandomRule games={games} /><GameDirectory games={games} /></div></Layout>
+<Layout title="Board Game Starting-Player Rules — Who Goes First?" description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}><div class="content-page"><h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p><p>Browse the sourced editions available so far, or <a href="/board-games/">find your game in the full board game directory</a>.</p><RandomRule games={games} />{themes.length > 0 && <nav class="hub-nav" aria-label="Browse rules"><h2>Browse by kind of rule</h2><ul class="theme-links">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}</a></li>)}<li><a href="/ways-to-pick-who-goes-first/">Fun ways to pick</a></li>{publishers.length > 0 && <li><a href="/publishers/">By publisher</a></li>}</ul></nav>}<GameDirectory games={games} /></div></Layout>

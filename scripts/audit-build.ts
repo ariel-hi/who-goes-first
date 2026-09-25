@@ -52,8 +52,23 @@ for (const path of files.filter(path => /[\\/]games[\\/].+[\\/]index.html$/.test
   const html = readFileSync(path, 'utf8');
   if (/astro-island|component-url|BalloonRise/.test(html)) throw new Error('Static answer eagerly loads picker');
 }
+const ads = settings.adsenseClient;
+if (ads) {
+  const adFree = files.filter(path => /^(index\.html|404\.html|methods\/[^/]+\/index\.html)$/.test(relative(output, path).replaceAll('\\', '/')));
+  for (const path of adFree) if (!readFileSync(path, 'utf8').includes('data-ads="off"')) throw new Error(`Picker or error page would load ads: ${relative(output, path)}`);
+}
 const googleSources = settings.production ? ' https://www.googletagmanager.com https://*.google-analytics.com' : '';
-const csp = `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
+// AdSense, its consent message, and ad frames load from many Google hosts and
+// report to ad-tech partners, so ads mode allows HTTPS images/beacons broadly.
+// Scripts and frames stay limited to Google's ad and consent hosts.
+const adScripts = ads ? ' https://pagead2.googlesyndication.com https://*.googlesyndication.com https://fundingchoicesmessages.google.com https://*.adtrafficquality.google https://www.googletagservices.com https://*.doubleclick.net https://www.google.com https://*.gstatic.com' : '';
+const adFrames = ads ? '; frame-src https://*.googlesyndication.com https://*.doubleclick.net https://www.google.com https://*.google.com https://fundingchoicesmessages.google.com https://*.adtrafficquality.google' : '';
+const csp = ads
+  ? `default-src 'none'; script-src 'self' ${[...hashes].join(' ')} https://www.googletagmanager.com${adScripts}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https:${adFrames}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`
+  : `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
 if (`  Content-Security-Policy: ${csp}`.length > 2000) throw new Error('CSP exceeds Cloudflare Pages header line limit; split policies by route before expanding the catalog.');
-writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
+// Google's AdSense seller ID is fixed; ads.txt authorizes only this publisher account.
+if (ads) writeFileSync(join(output, 'ads.txt'), `google.com, ${ads.slice(3)}, DIRECT, f08c47fec0942fa0\n`);
+// Ad requests need the page's origin; full paths still never leave the site.
+writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: ${ads ? 'strict-origin-when-cross-origin' : 'no-referrer'}\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 console.log(`Build audit passed (${settings.production ? 'production' : 'preview'}): private-content exclusion, canonicals, indexing, headers, static answer isolation.\nConservative gzip budgets: initial JS ${initialJs} B; Balloon ${optionalJs} B; basic home ${aboveFold} B.`);

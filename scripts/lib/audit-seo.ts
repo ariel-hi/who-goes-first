@@ -31,7 +31,10 @@ export function auditSeo(output: string, files: string[], origin: string, produc
     assert.equal(attr(one(meta('og:url'), 'og:url'), 'content'), canonical, `${file}: social URL must match canonical`);
     for (const name of ['og:title', 'twitter:title']) assert.equal(attr(one(meta(name), name), 'content'), title, `${file}: ${name}`);
     for (const name of ['og:description', 'twitter:description']) assert.equal(attr(one(meta(name), name), 'content'), description, `${file}: ${name}`);
-    for (const name of ['og:image', 'twitter:image']) assert.equal(attr(one(meta(name), name), 'content'), `${origin}/social.png`, `${file}: local social image`);
+    for (const name of ['og:image', 'twitter:image']) {
+      const image = attr(one(meta(name), name), 'content')!;
+      assert.ok(image === `${origin}/social.png` || (/^\/og\/[a-z0-9-]+\.png$/.test(image.slice(origin.length)) && image.startsWith(`${origin}/`) && existsSync(join(output, image.slice(origin.length)))), `${file}: ${name} must be a local generated social image`);
+    }
     const robots = attr(one(meta('robots'), 'robots'), 'content')!;
     const indexable = !robots.split(/[,\s]+/).includes('noindex');
     if (!production || file === '404.html') assert.equal(indexable, false, `${file}: must not be indexed`);
