@@ -1,6 +1,6 @@
 # Remaining-inventory source review — 2026-09-25
 
-This batch covers 30 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the seventeen intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
+This batch covers 34 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the eighteen intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
 
 | Identity | Publisher/manual reviewed | Opening instruction and scope |
 | --- | --- | --- |
@@ -77,4 +77,15 @@ All cited pages were rendered and visually checked; source hashes and edition id
 
 The cited pages were rendered and visually checked. The two official PDFs, two publisher-authored mirrors, source SHA-256 values, and edition limits are documented in the private records. These four entries are catalog-only; the initial criteria can leave a group without a clear qualifying player.
 
-After this follow-up, `npm run content:validate` passes with 848 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 807 of 1,333 discovered identities with a researched edition and 526 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+## Four more English booklets
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| Bebop | Bitewing Games English booklet at Gamers HQ mirror | Most recent concertgoer starts; turns proceed clockwise. The 36-plus-MB booklet required the bounded 150-MB intake option. |
+| Antler Island | Fragor Games English booklet at Svet Deskovych Her mirror | Player carrying the most money takes the starting marker; setup and play proceed clockwise, and the marker moves clockwise each round. |
+| Captain Carcass | Bombyx official English booklet | Most recent ocean viewer starts; turns pass left after each dive. The optional Diver cards do not alter that setup step. |
+| Copper Country | CMX Games English PDF embedded on its product page | Oldest-penny holder starts; any selection method is an official alternative. That player both hires a miner first and takes the first regular turn. |
+
+Their cited pages were rendered and visually checked, with hashes and source locations in the private drafts. **Held:** the Cat Blues: The Big Gig archive returned HTTP 403, and the Pegasus-hosted Dali the Fox manual redirected to a CDN that denied retrieval. The older CULTivate creator PDF returned 404; an archived booklet has known revisions relative to the boxed edition, so no answer was published from it. These four verified entries remain catalog-only.
+
+After this follow-up, `npm run content:validate` passes with 852 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 811 of 1,333 discovered identities with a researched edition and 522 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
