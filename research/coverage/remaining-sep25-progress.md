@@ -20,6 +20,15 @@ This batch covers 13 additional identities outside the separate 30-title priorit
 
 The source pages for these entries were rendered and visually checked. Source and edition boundaries are explicit in each record, especially Fish 'n' Flip's modes, Nibble Munch Crunch's two games, the Magic Labyrinth's German-language source, the FoxMind localized cards, and Rosalie's printed-page/PDF-page difference.
 
+## Follow-up: two more identities
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| Roll 'em Fold 'em | Schmidt Spiele, English PDF, article 88348 | Most recent person to fold something starts and receives both dice; solo play has no player order. |
+| Armonia | Skellig Games, English PDF, article 0047-0006 | Most recent person to sing, hum or whistle like a cute little gnome starts; the rule gives setup advances to later players. |
+
+Both manuals were linked from their publishers' product pages and their cited pages were rendered and visually checked. The seventh and eighth source queues preserve their official URLs. Both entries stay outside the portable random mix because their criteria require subjective judgments or can leave a group without a qualifying player. Their individual records preserve the actual rule without adding an invented fallback.
+
 ## Held leads
 
 - **Monster Mania** (Piatnik 2009): all four image-only booklet pages were rendered and inspected. No initial-player selection instruction was found; this is still pending a source that can support a useful edition answer.
@@ -27,5 +36,7 @@ The source pages for these entries were rendered and visually checked. Source an
 - **Rhino Hero: Missing Match**: the HABA-authored manual is indexed, but the retailer mirror returned HTTP 429 and the alternate mirror returned 403. Its start rule was not published without a reliable rendered-page check.
 - **Glascow**: the Lookout Glasgow manual found during research is for a different identity, so it was rejected. The inventory title is *Glascow* (BGG 301716), not *Glasgow* (BGG 292615).
 - **Gnome Hollow**: the publisher product page lists a rule book but its download link currently points to `#`; no rule was inferred from the page.
+- **Vegas** (BGG 1255): the located Ravensburger/alea *Vegas* PDF is for Rüdiger Dorn's 2012 game (BGG 117959), not this Reiner Knizia inventory identity. The same-title manual was rejected.
+- **Deep Sea Adventure**: the readily indexed English PDF is credited as a fan transliteration by Jeff Hohner, not the Oink Games booklet. The original publisher source remains to be inspected.
 
-After rebasing on the updated main branch, `npm run content:validate` passes with 813 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 790 of 1,333 discovered identities with a researched edition and 543 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+After this follow-up, `npm run content:validate` passes with 815 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 792 of 1,333 discovered identities with a researched edition and 541 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.

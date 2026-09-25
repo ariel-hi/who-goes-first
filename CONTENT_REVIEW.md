@@ -1,8 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 813 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 815 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
 
-Thirteen more identities from the remaining discovery inventory have visually checked publisher-authored manuals and exact approved catalog revisions. Mode and edition limits, publisher-hosted versus preserved manual sources, official fallbacks, and blocked leads are recorded in `research/coverage/remaining-sep25-progress.md`. These thirteen entries are catalog-only.
+Fifteen more identities from the remaining discovery inventory have visually checked publisher-authored manuals and exact approved catalog revisions. Mode and edition limits, publisher-hosted versus preserved manual sources, official fallbacks, and blocked leads are recorded in `research/coverage/remaining-sep25-progress.md`. These fifteen entries are catalog-only.
 
 Basilica, Battle Merchants, Braggart, Campaign Manager 2008, Chromino, Buccaneer Bones, and Bomb Squad add seven checked English rulebooks. Braggart, Chromino, and Buccaneer Bones join the portable random mix. Bomb Squad uses individual clockwise turns, but its robot-experience criterion has no fallback when nobody qualifies, so it remains directory-only. See `research/coverage/basilica-battle-braggart-campaign-chromino-buccaneer-bomb-progress.md`.
 
