@@ -1,0 +1,49 @@
+{
+  "id": "stone-age-zman-en",
+  "slug": "stone-age-zman-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Stone Age",
+  "aliases": [],
+  "editionLabel": "Z-Man Games English rulebook",
+  "firstPlayerRule": "The youngest player takes the First player token and starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Figure placement, and then taking actions, both start with the first player and go clockwise.",
+    "At the end of each round, the First player token passes to the next player clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/zm7260_stone_age_rules.pdf",
+      "title": "Stone Age — Rulebook",
+      "publisher": "Z-Man Games / Hans im Glück",
+      "printedPages": [
+        "2",
+        "4",
+        "5",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "location": "Page 2, Setup step 13; pages 4–5, Game overview and phases 1–2; page 7, end of round; copyright on page 8",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/zm7260_stone_age_rules.pdf, the English rulebook linked from the publisher page https://www.zmangames.com/game/stone-age/. SHA-256: 52b745af7e502b5d9d99b34a4b0472669790d4a62312db9fcc8cdbd8802c7ca8. Read the extracted text of PDF pages 2, 4, 5, 7 and 8. Page 2, setup step 13: ‘The youngest player takes the First player token’. Pages 4–5: the first player places first, then clockwise; actions also start with the first player. Page 7: the First player token passes clockwise at the end of the round. Page 8 shows © 2008–2014 Hans im Glück and © 2013 F2Z Entertainment, identifying the Stone Age base game (BGG 34635). Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rulebook gives no tie-break for players of the same age.",
+    "The 2024 in the hosting path is an upload date, not an edition date."
+  ]
+}
