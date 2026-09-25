@@ -1,0 +1,46 @@
+{
+  "id": "twilight-struggle-gmt-deluxe-en",
+  "slug": "twilight-struggle-gmt-deluxe-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Twilight Struggle",
+  "aliases": [
+    "TS",
+    "Twilight Struggle Deluxe Edition"
+  ],
+  "editionLabel": "GMT Games Deluxe Edition rules, 2015",
+  "firstPlayerRule": "The USSR player goes first: they set up Influence first and always take the first Action Round of each turn. Each turn’s Headline cards are chosen and revealed simultaneously before that.",
+  "officialTieBreak": "If both Headline cards have the same Operations value, the US player’s Headline event takes effect first.",
+  "houseFallback": null,
+  "clarifications": [
+    "In the Headline Phase, the card with the higher Operations value takes effect first. Scoring cards count as 0 and take effect second; if both are scoring cards, the US card goes first.",
+    "After the Headline Phase, the players alternate Action Rounds, USSR first, then US.",
+    "The rules do not say how players choose sides. The optional tournament rules offer secret bidding for sides, with extra Influence for the player who gets the other side."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.gmtgames.com/nnts/TS_Rules-2015.pdf",
+      "title": "Twilight Struggle — Deluxe Edition rules",
+      "publisher": "GMT Games",
+      "printedPages": [
+        "4",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        11
+      ],
+      "location": "Page 4, sections 3.0 Game Setup and 4.5 turn structure (C. Headline Phase, D. Action Rounds); page 11, section 11.1.4 (optional tournament bidding)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://www.gmtgames.com/nnts/TS_Rules-2015.pdf from the publisher GMT Games’ site. SHA-256: d5c827cf78fc4800e0993c1e3313ec909d3c7da2c1b03b735ccf0042a0c4ac8e. Read the extracted text of PDF pages 4 and 11. Page 4, 3.2: ‘The USSR player sets up first’; 3.3 the US sets up second. 4.5 C: Headline cards are revealed simultaneously; higher Operations value first, ties to the US player’s headline. 4.5 D: ‘The USSR player always takes his or her Action Round first’. Page 11, 11.0 Tournament Play (optional) and 11.1.4: bidding may be used to determine sides. Pages are footed © 2015 GMT Games, LLC and titled Twilight Struggle Deluxe Edition, identifying the game (BGG 12333). Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "Outside the optional tournament bidding rule, the rulebook does not say how players decide who plays the USSR."
+  ]
+}
