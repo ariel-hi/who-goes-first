@@ -1,0 +1,62 @@
+{
+  "id": "gaia-project-feuerland-2017-en",
+  "slug": "gaia-project-feuerland-2017-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "74aae880c201952db941189d4166815d9417f8a642d246be7600f43923d1ba50",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Gaia Project",
+  "aliases": [
+    "Gaia Project: A Terra Mystica Game"
+  ],
+  "editionLabel": "Feuerland / Z-Man Games English rulebook, 2017",
+  "firstPlayerRule": "Determine a first player using any method you like; that player takes the first player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Actions go clockwise from the first player each round.",
+    "The first player to pass in a round takes the first player marker.",
+    "In a solo game against the Automa, you take the first player marker.",
+    "An optional variable turn order uses the turn order card instead of clockwise order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.feuerland-spiele.de/fileadmin/game/Gaia_Project/GAIA_PROJECT_EN_rules_Web.pdf",
+      "title": "Gaia Project — English rulebook",
+      "publisher": "Feuerland Spiele / Z-Man Games",
+      "printedPages": [
+        "4",
+        "10",
+        "16",
+        "19"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        10,
+        16,
+        19
+      ],
+      "location": "Page 4, Setup; page 10, Phase III: Actions; page 16, Pass; page 19, Variable Turn Order; credits on PDF page 3",
+      "checkedAt": "2026-09-25"
+    },
+    {
+      "url": "https://www.feuerland-spiele.de/fileadmin/game/Gaia_Project/Gaia_Project_Automa_rules_EN_Web.pdf",
+      "title": "Gaia Project — English Automa rules",
+      "publisher": "Feuerland Spiele",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rulebook linked from the Feuerland Spiele English homepage (https://www.feuerland-spiele.de/fileadmin/game/Gaia_Project/GAIA_PROJECT_EN_rules_Web.pdf), SHA-256 f42faccfd5c821200436e733c6f9368559ba2741fc55abc44f4016088e0084cc, and extracted the text of all PDF pages. Page 4, Setup: determine a first player using the method of your choice; that player takes the first player marker. Page 10, Phase III: starting with the first player and continuing clockwise. Page 16: the first time a player passes during a round, that player takes the first player marker. Page 19: optional variable turn order with the turn order card. PDF page 3 credits Helge Ostertag and Jens Drögemüller, copyright 2017 Feuerland Verlagsgesellschaft, and Z-Man Games, matching BGG 220308. Also downloaded the English Automa rules from the same site (SHA-256 3117492183ae3349ff33f54eae3351737a2f8cb430cacf1b0e8683885d810604); PDF page 3, Setup: you take the first player marker. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook leaves the method for choosing the first player to the group."
+  ]
+}
