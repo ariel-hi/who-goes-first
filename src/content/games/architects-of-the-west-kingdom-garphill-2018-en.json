@@ -1,0 +1,49 @@
+{
+  "id": "architects-of-the-west-kingdom-garphill-2018-en",
+  "slug": "architects-of-the-west-kingdom-garphill-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "7611bc68508e50db8f52cc690ac79f0c1a0883f443ceab8262b8428597a6d346",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Architects of the West Kingdom",
+  "aliases": [
+    "AotWK"
+  ],
+  "editionLabel": "Garphill Games English rulebook with appendix, 2018",
+  "firstPlayerRule": "Randomly choose a starting player. With the Variable Setup (side 2 of the Player Boards), the player with the most Virtue starts instead.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Turns proceed clockwise from the starting player.",
+    "In the standard setup the starting player receives 3 Silver, the 2nd player 4 Silver, and so on; in Variable Setup players do not gain extra Silver for turn order.",
+    "In solo play you always take your turn first, followed by the Byzantine opponent."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.garphill.com/cdn/shop/files/ArchitectsRulebook-WithAppendix.pdf",
+      "title": "Architects of the West Kingdom — Rulebook with Appendix",
+      "publisher": "Garphill Games",
+      "printedPages": [
+        "5",
+        "6",
+        "Appendix 7",
+        "Appendix 8"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        27,
+        28
+      ],
+      "location": "Rulebook page 5, Setup step 13; page 6, Playing the Game; Appendix page 7, solo Playing the Game; Appendix page 8, Variable Setup",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the rulebook linked from the Garphill Games product page (https://garphill.com/products/architects-of-the-west-kingdom) at https://www.garphill.com/cdn/shop/files/ArchitectsRulebook-WithAppendix.pdf, SHA-256 f554366cdf4eda79e2855ef4dc8efc13b51217fcbdc1d17258ac47cc346d5fa1, and extracted the text of all 28 pages. Page 5, Setup step 13: randomly choose a starting player; they receive 3 Silver and the 2nd player 4 Silver. Page 6: proceeding clockwise from the starting player. Appendix page 7 (PDF 27), solo: you will always take your turn first, followed by your opponent. Appendix page 8 (PDF 28), Variable Setup: the player with the most Virtue starts the game, followed clockwise; players do not gain additional Silver based on turn order. Cover credits Shem Phillips and S J Macdonald, copyright 2018 Garphill Games, matching BGG 236457. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The Variable Setup rule gives no tie-break if several players start with the same, highest Virtue."
+  ]
+}
