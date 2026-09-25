@@ -1,6 +1,6 @@
 # Remaining-inventory source review — 2026-09-25
 
-This batch covers 21 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the twelve intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
+This batch covers 26 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the fifteen intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
 
 | Identity | Publisher/manual reviewed | Opening instruction and scope |
 | --- | --- | --- |
@@ -54,4 +54,16 @@ The cited PDF pages were rendered and visually checked. Local source hashes and 
 
 **Held:** The available Topiary prototype PDF has different draft mechanics, the publisher's final rulebook URL returns 404, and a retailer final-rule PDF could not be resolved. The Great Heartland Hauling Co. publisher file is labeled work-in-progress version 0.52. Neither received a published rule without a checked final edition.
 
-After this follow-up, `npm run content:validate` passes with 839 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 798 of 1,333 discovered identities with a researched edition and 535 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+## Next source review: five identities
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| First Giants | Space Cowboys, official English PDF | Most recent dinosaur encounter takes the first-player token. The official PDF uses printed-page spreads. |
+| Eternitium | Haumea Games, official French PDF | Most recent real or fictional time traveler, or witness, starts; choose randomly if nobody qualifies. English summary of French rules. |
+| Belladone Bluff | Lubee Edition, official English leaflet titled *Belladonna Bluff* | Most recent person to take a medicinal ingredient starts. The French leaflet instead says medicine. |
+| Cookie Addict | Lubee Edition, official English PDF | Last cookie eater places the first token, but the other player activates the first tile. |
+| Ghost Lift | Engames-authored English booklet at Tesera mirror | Most recent person to have a scare starts; later rounds start with the previous winner's left neighbor. |
+
+All cited pages were rendered and visually checked; source hashes and edition identity evidence are in the private drafts. Feya's Swamp remains pending because its indexed English rulebook differs from the later Grail Games English/French printing; a specific publisher edition needs a verified opening instruction. The five entries are catalog-only.
+
+After this follow-up, `npm run content:validate` passes with 844 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 803 of 1,333 discovered identities with a researched edition and 530 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.

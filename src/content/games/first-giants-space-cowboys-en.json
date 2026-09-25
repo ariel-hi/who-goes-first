@@ -1,0 +1,41 @@
+{
+  "id": "first-giants-space-cowboys-en",
+  "slug": "first-giants-space-cowboys-en",
+  "gameName": "First Giants",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Space Cowboys English rules (2026)",
+  "firstPlayerRule": "The player who most recently encountered a dinosaur takes the first-player token and starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players then take turns clockwise, starting with the first player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2026/02/FG_RULES_EN.pdf",
+      "title": "First Giants — English rules",
+      "publisher": "Space Cowboys",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup, step 6, and Game Turn",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Space Cowboys' product page https://www.spacecowboys-games.com/fr/game/first-giants/ links this official English manual for BGG identity 462464. The PDF uses facing-page spreads; printed page 3 appears on PDF page 2 and printed page 4 on PDF page 3. Those pages were rendered and visually checked. Official PDF SHA-256: 57df32262201469d57f08baf3dd0dfc620e9a0f2887e2b860068c39ea4b4bd5f. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "No definition of 'encountered a dinosaur' or tie-break is stated."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "d363c8e32879f4fa7ce9d1c0378b4cca06b3e626f514fd4b13a817fd9d79cb1c",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}

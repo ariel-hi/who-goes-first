@@ -1,0 +1,41 @@
+{
+  "id": "eternitium-haumea-fr-summary",
+  "slug": "eternitium-haumea-fr-summary",
+  "gameName": "Eternitium",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "English summary of Haumea Games French rules (2024)",
+  "firstPlayerRule": "The most recent player to travel back in time, or to see someone do so, starts. The journey or sighting may be fictional. If nobody qualifies, choose a starting player at random.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Beginning with the first player and continuing clockwise, each player chooses a starting Basic Technology card before the first turn.",
+    "Multiplayer turns also proceed clockwise from that player; the solo mode uses its own setup."
+  ],
+  "interpretation": "English summary of the French booklet; 'fictivement ou non' expressly allows a fictional example.",
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0595/8536/4175/files/Regles_FR_Eternitium.pdf?v=1762606657",
+      "title": "Eternitium — règles du jeu",
+      "publisher": "Haumea Games",
+      "printedPages": [
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Préparation du jeu and Tour de jeu",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Haumea Games' product page https://www.haumeagames.com/products/eternitium links this official French booklet, matching BGG identity 402324. Its PDF page 4 spans printed pages 6–7 and was rendered and visually checked. The publisher-uploaded English rulebook listed on BGG and independently indexed English text corroborate the same opening instruction, but this record cites the locally inspected French edition. Official French PDF SHA-256: 68cb0fe92f036b071d56d17db5ccfb33df73da683a6521a92efff13a3ef58538. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "No separate tie rule is given when multiple players claim the same most recent fictional or real event; the random choice is explicitly provided when nobody is designated."
+  ],
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "7c1112c19989565da7d6a8f143705803c9f0304129a080f9e2e9799e181f49cc",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25"
+}
