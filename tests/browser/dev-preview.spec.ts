@@ -33,7 +33,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await page.getByRole('searchbox').fill('TTR');
   // The abbreviation matches the original game and two researched Europe editions.
   await expect(page.locator('.game-list li:visible')).toHaveCount(3);
-  await page.locator('.game-list li:visible a').filter({ hasText: '7281N' }).click();
+  await page.locator('.game-list li:visible a').filter({ hasText: 'refreshed' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Ticket to Ride');
   await expect(page.locator('.rule-answer')).toContainText('chooses its own method');
   await page.getByRole('link', { name: 'Home', exact: true }).click();
