@@ -1,0 +1,49 @@
+{
+  "id": "gloomhaven-second-edition-cephalofair-en",
+  "slug": "gloomhaven-second-edition-cephalofair-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "6a2d015a36b21bb34e65f408fb46449681e79e64d6d7dff5c7a859d505541248",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Gloomhaven",
+  "aliases": [
+    "Gloomhaven: Second Edition",
+    "Gloomhaven 2E"
+  ],
+  "editionLabel": "Cephalofair Second Edition English rulebook",
+  "firstPlayerRule": "There is no fixed first player. Each round, characters and monsters act in initiative order, and whoever revealed the lowest initiative value goes first.",
+  "officialTieBreak": "If characters tie, compare the initiative values of their second played cards; if still tied, the party decides. A character acts before a monster set with the same initiative. In all other ties, the party decides.",
+  "houseFallback": null,
+  "clarifications": [
+    "At the start of each round, each character secretly picks two ability cards and marks one as the initiative card; the initiative value on that card sets their position.",
+    "A character who declares a long rest acts on initiative 99.",
+    "Initiative order is recalculated every round, so the first actor can change each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/16TmmCKa6zVVObj2qM-vIj9RcEAC3nfMT/view",
+      "title": "Gloomhaven — Rulebook (Second Edition)",
+      "publisher": "Cephalofair Games",
+      "printedPages": [
+        "16",
+        "17",
+        "72"
+      ],
+      "pdfPagesOneBased": [
+        16,
+        17,
+        72
+      ],
+      "location": "Page 16, Playing a Scenario and 1. Card Selection; page 17, 2. Ordering of Initiative and Resolving Ties; credits on page 72",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The publisher page https://cephalofair.com/pages/gloomhaven links “Read the Gloomhaven Rulebook” to Google Drive file 16TmmCKa6zVVObj2qM-vIj9RcEAC3nfMT; downloaded it (image-only PDF, 74 pages). SHA-256: a8bb3b2e3d875f325d12da48ca4c6fd7807876b3b0353bf4052a74678d339f27. Visually read rendered PDF pages 2 (contents), 16 (round structure and card selection) and 17 (ordering of initiative, lowest to highest, with the Resolving Ties rules). Page 72 credits list Second Edition designers Drew Penn and Dennis Vögele, identifying Gloomhaven: Second Edition (BGG 390478); the same publisher page links the Second Edition FAQ. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This record covers the Second Edition rulebook; the original 2017 edition was not reviewed.",
+    "The rulebook PDF has no printed year; its file title suggests 2025 but that is not treated as the edition date."
+  ]
+}

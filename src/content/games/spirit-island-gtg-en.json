@@ -1,0 +1,43 @@
+{
+  "id": "spirit-island-gtg-en",
+  "slug": "spirit-island-gtg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "b975b356a00b7f8951e70fdf4b9b0b7d4027b72f56c11c79b17cbf387259d75f",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Spirit Island",
+  "aliases": [],
+  "editionLabel": "Greater Than Games English core rulebook, 2016–2018",
+  "firstPlayerRule": "Spirit Island has no first player. It is cooperative, and all players act simultaneously within each phase of every turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Each turn runs Spirit Phase, Fast Power Phase, Invader Phase, Slow Power Phase and Time Passes; players confer freely.",
+    "When timing matters, players resolve Powers in whatever order they want, as long as no Power interrupts another partway through.",
+    "If a group decision cannot be agreed and it does not come from a Power or a land, the game owner or organizer makes the call."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/5wzghwnbsi39msyy6vvox/Spirit-Island-CORE-Rulebook.pdf?rlkey=86i7aofqbzhulezjr7z0ssyff&dl=0",
+      "title": "Spirit Island — core rulebook",
+      "publisher": "Greater Than Games",
+      "printedPages": [
+        "8",
+        "28"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        28
+      ],
+      "location": "Page 8, Sequence of Play, Fast Power Phase and the “Who Decides?” sidebar; copyright on page 28",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The publisher’s product page https://shop.greaterthangames.com/products/spirit-island links the Dropbox file Spirit-Island-CORE-Rulebook.pdf; downloaded it. SHA-256: 64012c21460d3aee0f5c2c0d1048811a4dd4b4aebd03284ee4706a6a1f8e630e. Rendered and read PDF page 8: players play simultaneously within each phase; Powers may be resolved in any order players want when timing matters; the “Who Decides?” sidebar gives the game owner/organizer the final call when agreement is impossible. Searched the full text for first/start player instructions and found none; the page 32 reference also states all play is simultaneous. Page 28 shows © 2016–2018 Greater Than Games, identifying the core game Spirit Island (BGG 162886). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook does not name a first player because turns are simultaneous; the Fear-card “each player” effects are resolved one player after another without a specified order."
+  ]
+}

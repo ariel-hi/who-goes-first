@@ -1,0 +1,48 @@
+{
+  "id": "terraforming-mars-fryxgames-en",
+  "slug": "terraforming-mars-fryxgames-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "236fc1a99e29ab66b50a9d3f45fa607593d45bcd4c0dbd8175f7c434dfb756e3",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Terraforming Mars",
+  "aliases": [
+    "TM"
+  ],
+  "editionLabel": "FryxGames English rulebook, 2016",
+  "firstPlayerRule": "The player who most recently won a game of Terraforming Mars takes the first player marker and starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The first generation skips the player order and research phases, so the first player simply begins the action phase.",
+    "In the action phase, play proceeds clockwise until everyone has passed.",
+    "From the second generation on, the first player marker shifts one step clockwise at the start of each generation."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://fryxgames.se/wp-content/uploads/2023/04/TMRULESFINAL.pdf",
+      "title": "Terraforming Mars — English rules",
+      "publisher": "FryxGames",
+      "printedPages": [
+        "7",
+        "8",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        8,
+        16
+      ],
+      "location": "Page 7, Setup step 4 (Players) and step 8 (Start the game); page 8, Generations — Player Order phase and Action phase; credits on page 16",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://fryxgames.se/wp-content/uploads/2023/04/TMRULESFINAL.pdf, which is the English rules PDF linked from the publisher page https://fryxgames.se/product/terraforming-mars/. SHA-256: 87b27f8741ed4e77ca6d029c224c8113e1d2227dc7541eb487f2a46ba12c5255. Rendered and read PDF page 7 (Setup): step 4 gives the first player marker to the player who most recently won a game of Terraforming Mars; step 8 says the first generation starts directly with the action phase. Page 8: the first player marker shifts one step clockwise each Player Order phase (skipped in generation 1), and action-phase play proceeds clockwise. Page 16 credits show © 2016 FryxGames and © 2016 Stronghold Games, identifying the original base game (BGG 167791). Page 13 variants (Corporate Era, solo) do not change the starting-player instruction. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no tie-break if nobody, or more than one player, qualifies as the most recent winner.",
+    "The 2023 in the hosting path is an upload date, not an edition date."
+  ]
+}
