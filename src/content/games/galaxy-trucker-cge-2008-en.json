@@ -1,0 +1,47 @@
+{
+  "id": "galaxy-trucker-cge-2008-en",
+  "slug": "galaxy-trucker-cge-2008-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "d37eace73359bbfdce38cdbdc12157707d18ab8db9e2fe235b392b608b8fd9aa",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Galaxy Trucker",
+  "aliases": [],
+  "editionLabel": "Czech Games Edition English rules, 2008 (original edition)",
+  "firstPlayerRule": "There is no first player for building: when everyone is ready, the boldest player says \"Go!\" and everyone builds at the same time. The first player to finish building takes number tile 1 and becomes the leader for the flight.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In a full game, the boldest player also starts the timer in Round 1; in Rounds 2 and 3 that job falls to the player who landed first in the previous round.",
+    "During the flight, the leader (initially the holder of tile 1) turns up each adventure card, and players generally resolve cards in flight order starting with the leader."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://czechgames.com/files/rules/galaxy-trucker-old-version-rules-en.pdf",
+      "title": "Galaxy Trucker — English rules (old version)",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "2",
+        "5",
+        "7",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5,
+        7,
+        11
+      ],
+      "location": "Grabbing Components; placing ships by number tile; the leader and adventure cards; Saying \"Go!\" and the timer",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "The CGE URL currently serves a web app, so the file was retrieved from the Internet Archive capture of 2021-09-02 of https://czechgames.com/files/rules/galaxy-trucker-old-version-rules-en.pdf; SHA-256 6d9f7f82fbf087444b7dee65881e3972c0556c1b672099c4099a5860d07b024f, 16 pages. PDF page 2: when everyone is ready the boldest player says 'Go!' and everyone grabs components; page 5: tile 1 places its ship first and the player in front is the leader; page 7: the leader, initially the player with tile number 1, turns up the first adventure card; page 11: in Round 1 the boldest player says 'Go!', in Rounds 2 and 3 the player who landed first in the previous round, and the first player to finish takes tile 1. Page 16 reads Czech Games Edition, August 2008, matching the original Galaxy Trucker (BGG 31481). Printed page numbers were not visible in the text layer and are assumed to follow PDF order. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This is the original edition. The 2021 revised edition also has everyone build simultaneously, but its wording was not separately recorded here.",
+    "\"Boldest player\" only decides who says \"Go!\"; it does not give anyone a head start."
+  ]
+}
