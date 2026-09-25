@@ -1,0 +1,47 @@
+{
+  "id": "the-resistance-indie-boards-cards-en",
+  "slug": "the-resistance-indie-boards-cards-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Resistance",
+  "aliases": [
+    "Resistance"
+  ],
+  "editionLabel": "Indie Boards & Cards consolidated English rules, v1.1",
+  "firstPlayerRule": "Randomly select a Leader, who takes the Leader token and proposes the first Mission Team.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "If a proposed Mission Team is rejected, leadership passes clockwise and team building is repeated.",
+    "After each Mission, the Leader token passes clockwise for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/78/dd/0a/The_Resisance_consolidated_rules_v1-1.pdf",
+      "title": "The Resistance — consolidated rules with Hostile Intent, Hidden Agenda and The Plot Thickens, v1.1",
+      "publisher": "Indie Boards & Cards",
+      "printedPages": [
+        "2",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5
+      ],
+      "location": "Page 2, setup; page 4, Mission Team Vote; page 5, Conduct the Mission",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Indie Boards & Cards consolidated rules v1.1 (retailer-hosted copy of the publisher document; footer on page 25 names indieboardsandcards.com and the consolidated-rules version) and extracted text from pages 2, 4, 5 and 6. Page 2: 'Randomly select a Leader; the Leader receives the Leader Token.' Pages 4-5: the Leader passes clockwise after a rejected team and after each Mission. Contents list a Leader Token and Vote Tokens, matching the current token-based base game (BGG 41114); an older card-based rulebook (cdn.1j1ju.com) gives the same random-Leader instruction. The publisher product page links no rules PDF. SHA-256: 8a8da8145b5fb786a012d7c8aac3257bab99662d8ee70e076ae4554068d6da9d. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The cited PDF is hosted by a retailer, not on the publisher's own site; its text identifies it as the Indie Boards & Cards consolidated rules.",
+    "The rules do not say how to choose the Leader randomly."
+  ]
+}
