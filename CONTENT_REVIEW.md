@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 780 game rules approved for the catalog; 353 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 787 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
+
+Basilica, Battle Merchants, Braggart, Campaign Manager 2008, Chromino, Buccaneer Bones, and Bomb Squad add seven checked English rulebooks. Braggart, Chromino, and Buccaneer Bones join the portable random mix. Bomb Squad uses individual clockwise turns, but its robot-experience criterion has no fallback when nobody qualifies, so it remains directory-only. See `research/coverage/basilica-battle-braggart-campaign-chromino-buccaneer-bomb-progress.md`.
 
 Pirates vs Dinosaurs and Shaolia: Warring States add two image-based English rulebooks checked on rendered pages. Pirates suggests the most pirate-looking player and supplies an oldest-player fallback if the group cannot agree; Shaolia picks the most regal-looking player. See `research/coverage/pirates-shaolia-progress.md`.
 

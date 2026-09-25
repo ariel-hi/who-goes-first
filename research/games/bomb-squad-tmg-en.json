@@ -1,0 +1,41 @@
+{
+  "id": "bomb-squad-tmg-en",
+  "slug": "bomb-squad-tmg-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Bomb Squad",
+  "aliases": [],
+  "editionLabel": "Tasty Minstrel Games English rulebook",
+  "firstPlayerRule": "The player who most recently played with a robot is the start player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Beginning with that player, each player takes one action on their turn, proceeding clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://upload.snakesandlattes.com/rules/b/BombSquad.pdf",
+      "title": "Bomb Squad — English rulebook",
+      "publisher": "Tasty Minstrel Games",
+      "printedPages": [
+        "5",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        7
+      ],
+      "location": "Setup step 9; Game Play",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The finished illustrated English rulebook preserved by Snakes & Lattes was rendered and visually checked. Page 5 gives the robot criterion and page 7 confirms clockwise individual turns. The cover credits Dan Keltner and David Short and matches inventory BGG 142267. The BoardGameGeek file listing distinguishes official TMG English rules from an older 2014 prototype; this illustrated booklet is not that text-only Version 9 prototype. SHA-256: b30d0586fb6232074f04c78061196bd74faa124c778389534edc0cdfe9e8a506. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The rules do not specify a fallback if nobody has played with a robot or a tie procedure."
+  ]
+}

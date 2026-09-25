@@ -1,0 +1,40 @@
+{
+  "id": "basilica-portal-games-2022-en",
+  "slug": "basilica-portal-games-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8584f64627e227b5b86b04ad4d8a4678c927b08ec41156a085b0c834db715c11",
+  "publishedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-24",
+  "gameName": "Basilica",
+  "aliases": [],
+  "editionLabel": "Portal Games revised English edition, 2022",
+  "firstPlayerRule": "The player who most recently visited a cathedral, basilica, or medieval church takes the first turn. If neither player has, consider any other temple or sacred place. If both visited such a place at the same time, the younger player starts.",
+  "officialTieBreak": "If both players visited such a place at the same time, the younger player starts.",
+  "houseFallback": null,
+  "clarifications": [
+    "This is the Portal Games two-player edition, which includes the Festum Fatuorum expansion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://portalgames.blob.core.windows.net/basilica/Basilica_rulebook_EN_www.pdf",
+      "title": "Basilica — English rulebook",
+      "publisher": "Portal Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3
+      ],
+      "location": "Game Start; cover and components",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The publisher-hosted revised English manual was rendered and visually checked. Printed page 3 states the cathedral/basilica/medieval-church criterion, expands it to other sacred places when neither qualifies, and names the younger player when both visited at the same time. The cover credits Łukasz M. Pogoda and the components include Festum Fatuorum, matching inventory BGG 368079, the Portal Games 2022 edition. SHA-256: 60d79ff99c853d5248f29af6422a328c91bf7eff7ed1db859810cfeed80208bd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the rendered pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rule does not state what to do if neither player has visited any temple or sacred place."
+  ]
+}

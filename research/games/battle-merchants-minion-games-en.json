@@ -1,0 +1,42 @@
+{
+  "id": "battle-merchants-minion-games-en",
+  "slug": "battle-merchants-minion-games-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Battle Merchants",
+  "aliases": [],
+  "editionLabel": "Minion Games English edition",
+  "firstPlayerRule": "The player who most recently sold a weapon to an orc takes the first turn. If nobody has, choose the starting player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later seasons, the player who triggered the end of the previous season takes the first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamers-hq.de/media/pdf/2c/45/72/Battle_Merchants.pdf",
+      "title": "Battle Merchants — English rulebook",
+      "publisher": "Minion Games",
+      "printedPages": [
+        "2",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        10
+      ],
+      "location": "Setup; Season Ends; cover",
+      "checkedAt": "2026-09-24"
+    }
+  ],
+  "internalEvidence": "The Minion Games English manual, hosted by retailer Gamer’s HQ, was rendered and visually checked. Printed page 2 gives the most-recent orc-weapon seller and an explicit random fallback. Printed page 10 assigns the first turn in a new season to the previous season-ending player. The title, Minion Games logo, and weapon-crafting game match inventory BGG 59936. SHA-256: 1232505de20dbed942f8ff9f0e41488464b2a3964053abf2b93b957348923058. Owner authorized assistant review on 2026-09-22.",
+  "uncertainty": [
+    "The manual supplies a random fallback if nobody has sold a weapon to an orc, but does not specify a tie procedure among qualifying players."
+  ]
+}
