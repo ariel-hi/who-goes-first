@@ -1,0 +1,39 @@
+{
+  "id": "chess-fide-laws-2023-en",
+  "slug": "chess-fide-laws-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "3f4e79720605db4ccc81aeff32c0f6eaa5734c2905b5d89766d91d8555473ce1",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Chess",
+  "aliases": [
+    "FIDE chess",
+    "Western chess"
+  ],
+  "editionLabel": "FIDE Laws of Chess, effective 1 January 2023",
+  "firstPlayerRule": "The player with the light-coloured pieces (White) makes the first move. The Laws of Chess do not say how players are assigned White or Black.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After White's first move, the players move alternately, with Black making the next move.",
+    "If a game has started with colours reversed and fewer than 10 moves have been made by both players, it is discontinued and a new game is played with the correct colours; after 10 or more moves, it continues."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://handbook.fide.com/chapter/E012023",
+      "title": "FIDE Laws of Chess taking effect from 1 January 2023",
+      "publisher": "FIDE (International Chess Federation)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Basic Rules of Play, Article 1.2; Article 7.3",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the FIDE Handbook page E.01 'FIDE Laws of Chess taking effect from 1 January 2023' (page title confirms the effective date; a September 2026 search found no newer Laws of Chess). Article 1.2: 'The player with the light-coloured pieces (White) makes the first move, then the players move alternately'. Article 7.3 covers games started with colours reversed. Searched the page for rules on assigning colours and found none. Identity: standard chess, BGG 171. SHA-256 of the saved HTML: e0c8bee28c2dee07b724357b9802fee8591e9d11efd2a910b38e9bd21d3c7643. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The Laws leave colour assignment to the event or the players; tournaments set colours through their own pairing rules. For a casual game, players need to agree who takes White."
+  ]
+}
