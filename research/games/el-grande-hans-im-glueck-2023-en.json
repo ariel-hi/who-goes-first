@@ -1,0 +1,49 @@
+{
+  "id": "el-grande-hans-im-glueck-2023-en",
+  "slug": "el-grande-hans-im-glueck-2023-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "El Grande",
+  "aliases": [],
+  "editionLabel": "Hans im Glück English rulebook, 2023",
+  "firstPlayerRule": "The player who visited Spain most recently takes the First Player marker and plays the first Power card.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "Power cards are played in clockwise order from the First Player marker; turns are then taken from the highest Power card down.",
+    "At the end of each round, whoever played the lowest Power card takes the First Player marker.",
+    "In the two-player game, the dummy never gets the First Player marker."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hans-im-glueck.de/wp-content/uploads/2023/07/ElGrande_2023_rule_EN_20-07-23-komprimiert.pdf",
+      "title": "El Grande — English rulebook",
+      "publisher": "Hans im Glück",
+      "printedPages": [
+        "3",
+        "4",
+        "7",
+        "9",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        7,
+        9,
+        12
+      ],
+      "location": "Page 3, Setup step 10; page 4, Play Power cards; page 7, end of round; page 9, two-player dummy; page 12, credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rulebook from hans-im-glueck.de (https://www.hans-im-glueck.de/wp-content/uploads/2023/07/ElGrande_2023_rule_EN_20-07-23-komprimiert.pdf), SHA-256 414db220f71e3ab7e8735ee71945f960ea36e36f0a348ef91a55558d4f2097a3, and extracted the text of all 12 pages. Page 3, Setup step 10: whoever visited Spain most recently takes the First Player marker. Page 4: the player with the First Player marker begins playing Power cards, then clockwise; turns follow from the highest Power card. Page 7: whoever played the lowest Power card takes the First Player marker. Page 9, two-player rules: the dummy never gets the First Player marker. Page 12 credits: copyright 1995, 2023 Hans im Glück, designers Wolfgang Kramer and Richard Ulrich, matching BGG 93. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rulebook gives no tie-break if several players visited Spain equally recently or nobody has visited."
+  ]
+}
