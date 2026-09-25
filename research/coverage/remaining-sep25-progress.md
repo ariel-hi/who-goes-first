@@ -1,6 +1,6 @@
 # Remaining-inventory source review — 2026-09-25
 
-This batch covers 34 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the eighteen intake queues preserve the retrieval URLs. No criterion in this batch was added to the portable random mix because qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
+This batch covers 38 additional identities outside the separate 30-title priority list. Each approved catalog entry has a matching research draft, a source page reference, a source SHA-256 in its private evidence, and an exact approval revision. The PDF source cache under `research/source-files/` is ignored by Git; the nineteen intake queues preserve the retrieval URLs. Three standalone criteria from the latest four manuals join the portable random mix; the earlier entries and Hera and Zeus remain catalog-only where qualifying or selecting one player can be ambiguous, requires game context, or assigns a specific role.
 
 | Identity | Publisher/manual reviewed | Opening instruction and scope |
 | --- | --- | --- |
@@ -88,4 +88,15 @@ The cited pages were rendered and visually checked. The two official PDFs, two p
 
 Their cited pages were rendered and visually checked, with hashes and source locations in the private drafts. **Held:** the Cat Blues: The Big Gig archive returned HTTP 403, and the Pegasus-hosted Dali the Fox manual redirected to a CDN that denied retrieval. The older CULTivate creator PDF returned 404; an archived booklet has known revisions relative to the boxed edition, so no answer was published from it. These four verified entries remain catalog-only.
 
-After this follow-up, `npm run content:validate` passes with 852 approved game rules and 356 eligible random rules. `npm run content:coverage` reports 811 of 1,333 discovered identities with a researched edition and 522 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.
+## Four more English manuals
+
+| Identity | Publisher/manual reviewed | Opening instruction and scope |
+| --- | --- | --- |
+| Hera and Zeus | Rio Grande Games / Kosmos English booklet preserved by Jokerbird | Latest Greek-restaurant visitor starts; Hera starts if neither player has ever visited one. This role fallback keeps it catalog-only. |
+| Dragon Farkle | Z-Man Games English booklet preserved by LINCC library | Player who brought the most snacks starts, deals opening cards and plays clockwise. |
+| INK | Final Score Games English booklet hosted by Asmodee Canada | Last person to write or paint with ink starts and takes the quill token; turns proceed clockwise. |
+| Honey | Pegasus Spiele official English booklet | Last honey eater starts; turns proceed clockwise. |
+
+The cited pages and edition credits were rendered and visually checked. Dragon Farkle, INK and Honey have standalone criteria in the random mix; the available booklet does not prescribe a tie-break for any of them. **Held:** the El Gaucho mirror did not resolve, and no alternative complete edition manual has been checked.
+
+After this follow-up, `npm run content:validate` passes with 856 approved game rules and 359 eligible random rules. `npm run content:coverage` reports 815 of 1,333 discovered identities with a researched edition and 518 still awaiting primary-source research. Coverage counts do not assert that every edition is verified.

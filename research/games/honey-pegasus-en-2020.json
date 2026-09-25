@@ -1,0 +1,39 @@
+{
+  "id": "honey-pegasus-en-2020",
+  "slug": "honey-pegasus-en-2020",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "ab0fa41228c9f962986ebc229abfb7971de2bebe2580cd4900ba955ccf9946d9",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Honey",
+  "aliases": [],
+  "editionLabel": "Pegasus Spiele English rules (2020)",
+  "firstPlayerRule": "The player who most recently ate honey starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pegasus.de/en/NetiMedia/download?mediaId=018e5c2852b973588c462da076ccdcb0",
+      "title": "Honey — English rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "How to play and publisher credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Pegasus Spiele's English two-page booklet was retrieved from its official download for inventory BGG identity 299630. Printed/PDF page 2 was rendered and visually checked. Its opening How to Play sentence selects the last honey eater and specifies clockwise play; the same page credits Pegasus Spiele ©2020. Official PDF SHA-256: 06b59c11a4890ebd442bc87d849b8bdaa2a5b0169bda826e461743918fc62077. Owner-authorized Codex editorial review, 2026-09-25.",
+  "uncertainty": [
+    "The booklet gives no tie-break or fallback if the latest honey-eating occasion was shared or no player remembers eating honey."
+  ]
+}
