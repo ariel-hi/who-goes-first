@@ -1,6 +1,6 @@
 # Who Goes First?
 
-An Astro + strict TypeScript site, with one React picker island and static editorial pages. The [public site](https://who-goes-first.pages.dev/) lists all 1,320 identities in the collected board game index. The full starting-rule compendium is still in progress. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 780 reviewed game rules, with 353 standalone criteria in the random mix. The initial public release had 762 rules and 339 random-mix criteria. See `CONTENT_REVIEW.md` for the current review process.
+An Astro + strict TypeScript site, with one React picker island and static editorial pages. The [public site](https://whogoesfirst.fun/) lists all 1,320 identities in the collected board game index. The full starting-rule compendium is still in progress. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 780 reviewed game rules, with 353 standalone criteria in the random mix. The initial public release had 762 rules and 339 random-mix criteria. See `CONTENT_REVIEW.md` for the current review process.
 
 ## Run
 
