@@ -1,0 +1,49 @@
+{
+  "id": "puerto-rico-deluxe-rio-grande-en",
+  "slug": "puerto-rico-deluxe-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Puerto Rico",
+  "aliases": [
+    "Puerto Rico Deluxe"
+  ],
+  "editionLabel": "Rio Grande Games Deluxe English rules, 2019",
+  "firstPlayerRule": "The players choose a starting player by any method they like. That player takes the governor placard and a small indigo tile.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The other players take starting plantations in clockwise order, depending on player count.",
+    "At the end of each round, the governor placard passes to the left, and the new governor begins the next round.",
+    "In the two-player game, the start player takes the indigo plantation and the governor placard; the second player takes corn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2019/08/Puerto-Rico-Deluxe-Rules.pdf",
+      "title": "Puerto Rico Deluxe — English rules",
+      "publisher": "Rio Grande Games / Ravensburger",
+      "printedPages": [
+        "2",
+        "3",
+        "12",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        12,
+        16
+      ],
+      "location": "Page 2, Preparation (basic game); page 3, Playing the Game; page 12, The Game for Two; page 16, credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Deluxe rules PDF from riograndegames.com. SHA-256 d55058bde864f4216eecd14e2d3fabd244955972f3176e1b3bf64e5ed7afa697. Extracted text and rendered pages 2 and 12 for visual checks. Page 2: \"The players choose a starting player using any method they choose. This player takes the governor placard and a small indigo tile.\" Page 3 and page 7 describe the governor placard passing to the left each round. Page 12, The Game for Two: start player takes indigo plus the governor placard. Page 16 credits Andreas Seyfarth and copyright 2002/11/13/19 Ravensburger, with Rio Grande Games contact. Matches BGG 3076. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "This record covers the Deluxe English rules; the 1897 special edition was not checked."
+  ]
+}

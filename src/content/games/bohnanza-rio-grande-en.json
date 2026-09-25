@@ -1,0 +1,45 @@
+{
+  "id": "bohnanza-rio-grande-en",
+  "slug": "bohnanza-rio-grande-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "176660fd8d3099a8e243b06db17dd385e553d1c81cecf3e12ab6c1c73458b93d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Bohnanza",
+  "aliases": [],
+  "editionLabel": "Rio Grande Games English rules, 2016",
+  "firstPlayerRule": "Pick a starting player and give them the starting player card. The rulebook does not say how to pick.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starting player is the first active player; turns then go clockwise.",
+    "The starting player keeps the starting player card all game: a tie for most gold goes to the tied player sitting furthest clockwise from the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/Bohnanza-Rules.pdf",
+      "title": "Bohnanza — English rules",
+      "publisher": "Rio Grande Games / AMIGO",
+      "printedPages": [
+        "2",
+        "3",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        6
+      ],
+      "location": "Page 2, Contents & Setup; page 3, Playing the Game; page 6, end of game and credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the rules PDF from riograndegames.com. SHA-256 c0c14fc97fe28df6fd3f315ca7d6ad1b5469c91131307b867877682b50ad610f. Rendered pages 2 and 3 and read them visually; extracted text of all 8 pages. Page 2: \"Pick a starting player and give them the starting player card.\" Page 3: the starting player is the first active player, then clockwise. Page 6: end-game tie rule relative to the starting player; copyright AMIGO MCMXCVII, MMXVI, version 5.0, Rio Grande Games contact. Page 8 two-player Bean Duel refers to the starting player without a different selection rule. Matches BGG 11. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no method for picking the starting player.",
+    "The hosting path contains 2013; the edition date used is the 2016 copyright line."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "jaipur-space-cowboys-en",
+  "slug": "jaipur-space-cowboys-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Jaipur",
+  "aliases": [],
+  "editionLabel": "Space Cowboys English rulebook, 2019",
+  "firstPlayerRule": "The rulebook just says to pick a starting player, without naming a method. In each later round, the player who lost the previous round starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Jaipur is a two-player game; players alternate turns.",
+    "A new round is set up again whenever neither player yet has 2 Seals of Excellence."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/Rules-JAIPUR-12x17-Version-EN_BD.pdf",
+      "title": "Jaipur — English rulebook",
+      "publisher": "Space Cowboys",
+      "printedPages": [
+        "3",
+        "6",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        6,
+        8
+      ],
+      "location": "PDF page 3, end of Setup; PDF page 6, New Round; PDF page 8, credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rulebook linked as \"Rulebook English\" from the Space Cowboys Jaipur page (https://www.spacecowboys-games.com/jaipur-english). SHA-256 f831fa5f2764abfdae25cb28af9f52b435d7cbc383753a602731c17efa6cef2c. Extracted text of the 8-page PDF. Page 3 ends Setup with \"Pick a starting player.\" Page 6, New Round: \"The player who lost the previous round starts.\" Page 8 credits JD Editions - SPACE Cowboys, copyright 2019. The rulebook describes the two-player Seals of Excellence trading game, matching BGG 54043. Page numbers are PDF positions; printed folios were not confirmed. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rulebook gives no method for choosing the first-round starting player.",
+    "The hosting path contains 2025; the edition date used is the 2019 copyright line."
+  ]
+}
