@@ -1,0 +1,46 @@
+{
+  "id": "eldritch-horror-ffg-en",
+  "slug": "eldritch-horror-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "036ecfa033636d31d18718ac0a3c1c56c47310c300daeba9815a337b94fdaf52",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Eldritch Horror",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight Games English core rulebook",
+  "firstPlayerRule": "Players agree on one player to receive the Lead Investigator token. If they cannot decide, give it to a random player, for example by rolling a die.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with the Lead Investigator and going clockwise, each player chooses and places an investigator.",
+    "In the Action and Encounter Phases the Lead Investigator acts first, then play proceeds to the left; the Lead Investigator resolves the Mythos card.",
+    "At the end of each Mythos Phase, the Lead Investigator may pass the token to any player of their choice."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/eldritch-horror/EH01%20Rulebook.pdf",
+      "title": "Eldritch Horror — Rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        7
+      ],
+      "location": "Page 4, Setup step 3 'Choose and Place Investigators'; page 6, game round overview; page 7, Action Phase",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the EH01 core rulebook from Fantasy Flight Games' own CDN and extracted text from PDF pages 4, 6, 7 and 9. Page 4 setup step 3: 'Players agree upon one player to receive the Lead Investigator token. If they cannot decide, players assign this token to a random player as they see fit (for example, by rolling a die).' Page 6: the Lead Investigator may pass the token at the end of each Mythos Phase. Pages 7 and 9: Action and Encounter Phases start with the Lead Investigator, then to the left. The FFG Reference Guide (EH01 Reference Guide.pdf, 'Lead Investigator' entry, page 8) agrees. EH01 is the base game, BGG 146021. SHA-256: 8147dc576209e4f23b9b376bb667656e622dfb8c93837d5b98d0066f96262883. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No copyright year was found in the extracted text of this PDF.",
+    "Cooperative game: the Lead Investigator token can change hands every round."
+  ]
+}
