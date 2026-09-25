@@ -14,7 +14,8 @@ The owner authorized an initial launch with the approved partial catalog and sou
 - [ ] Finish source research and editorial approval for the remaining collected game identities. The owner does not need to review individual rules.
 - [x] The owner chose and registered `whogoesfirst.fun` on 2026-09-24. It is connected to Pages; the production build uses the new canonical origin. HTTPS, the sitemap, and path-preserving redirects from `www` and the Pages hostname were checked live.
 - [ ] Check physical iOS and Android devices, the native share sheet, and a screen reader. Desktop engines and viewport emulation do not certify these environments.
-- [ ] Verify Search Console ownership and submit the sitemap. Opt-in page visit analytics are configured; no ads or payments have been activated.
+- [x] Verified the `https://whogoesfirst.fun/` Search Console property, submitted `/sitemap.xml`, and requested indexing for the home page. Google’s live URL test can fetch the sitemap, but the Sitemaps report initially showed “Couldn't fetch”; check again after Google processes it.
+- [x] Activated consent-based GA4 page views on the public site and observed visitors in Realtime. No ads or payments have been activated.
 - [ ] Exercise a production rollback when there is a safe maintenance window. The previous holding-page deployment remains available in Cloudflare Pages.
 
 See `VERIFICATION.md` and `RUNBOOK.md` for release evidence and recovery steps.
