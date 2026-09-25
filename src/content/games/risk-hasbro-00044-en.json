@@ -1,0 +1,38 @@
+{
+  "id": "risk-hasbro-00044-en",
+  "slug": "risk-hasbro-00044-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "4249ff702cf4a150dd54d796396f7c3ac3eed06ee36571ad1e22921d7df9dbdc",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Risk",
+  "aliases": [],
+  "editionLabel": "Hasbro Risk 00044 Global Domination English instructions",
+  "firstPlayerRule": "During initial army placement, every player rolls one die. The highest roller places the first infantry unit; placement then continues clockwise. That same player takes the first regular turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is the Global Domination game for three to six players; the rulebook has other modes with different setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/00044_en-us_risk-board-game.pdf",
+      "title": "Risk — Hasbro Risk 00044 Global Domination English instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Global Domination setup; first turn",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 3, 4, including the cited setup and turn-sequence text. Local source PDF SHA-256: 8fe6ed5644777bfe6105ec1636548c3c1c46b114627a30960c850a171b878afd. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "uncertainty": [
+    "The instructions do not state a tie-break for the opening die roll."
+  ]
+}
