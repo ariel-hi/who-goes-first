@@ -1,8 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 831 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 833 game rules approved for the catalog; 356 eligible for the random mix. Public house prompts: 60.**
 
-Thirteen more identities from the remaining discovery inventory have visually checked publisher-authored manuals and exact approved catalog revisions. Mode and edition limits, publisher-hosted versus preserved manual sources, official fallbacks, and blocked leads are recorded in `research/coverage/remaining-sep25-progress.md`. These thirteen entries are catalog-only.
+Fifteen more identities from the remaining discovery inventory have visually checked publisher-authored manuals and exact approved catalog revisions. Mode and edition limits, publisher-hosted versus preserved manual sources, official fallbacks, and blocked leads are recorded in `research/coverage/remaining-sep25-progress.md`. These fifteen entries are catalog-only.
 
 Eighteen popular-game titles have checked rulebooks and approved catalog revisions. The other twelve titles from the priority list were already covered. Edition and source details are recorded in `research/coverage/popular-thirty-progress.md`. These eighteen entries are catalog-only.
 
