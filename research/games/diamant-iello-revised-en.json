@@ -1,0 +1,41 @@
+{
+  "id": "diamant-iello-revised-en",
+  "slug": "diamant-iello-revised-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Diamant",
+  "aliases": [],
+  "editionLabel": "IELLO English revised edition",
+  "firstPlayerRule": "Players choose whether to continue exploring or return to camp, then reveal their Decision cards simultaneously. There is no individual first decision turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Reveal the top Expedition card before the group’s first decision. Repeat the simultaneous decisions before revealing each subsequent Expedition card."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://iellogames.com/wp-content/uploads/2016/10/Diamant_Rulebook_EN_V1_Light.pdf",
+      "title": "Diamant — English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Gameplay — Cave exploration; Player decisions",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official IELLO English revised manual with idol cover and Continue/Return cards. Rendered5 establishes shared expedition reveal then Player Decisions;6 explicitly simultaneous decision-card reveal. No oldest or youngest criterion borrowed from another edition. Source custody: research/source-files/popular-sep26-06/diamant.pdf; SHA-256 ac855646c15bcb86b7b6f4cbebaa417857d8a54ef388477fedbcdf623f9a1d84. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The manual does not designate a first player to reveal the shared Expedition cards."
+  ]
+}
