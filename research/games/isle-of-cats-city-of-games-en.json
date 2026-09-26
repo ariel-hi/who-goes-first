@@ -1,0 +1,56 @@
+{
+  "id": "isle-of-cats-city-of-games-en",
+  "slug": "isle-of-cats-city-of-games-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Isle of Cats",
+  "aliases": [],
+  "editionLabel": "The City of Games English base game",
+  "firstPlayerRule": "Randomly choose the starting player. Beginning with that player, go around the table choosing cat figures and placing them on the island in turn order.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The initial starting player draws the first day’s cat tiles. Before rescuing cats, players reveal their Rescue cards and reorder their cat figures by speed; the fastest rescues first.",
+    "Tied speeds keep the tied players’ relative order.",
+    "In the family game, choose the initial starting player randomly too. That player draws the tiles and chooses first; move their cat figure to the end of the order after each day."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://thecityofkings.com/wp-content/uploads/2021/05/The-Isle-of-Cats-Rulebook-v1.1-compressed.pdf",
+      "title": "The Isle of Cats — English rulebook",
+      "publisher": "The City of Games",
+      "printedPages": [
+        "4",
+        "8",
+        "12",
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        8,
+        12,
+        13
+      ],
+      "location": "Player setup B; Fill the fields; Rescue cats — Speed",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://thecityofkings.com/wp-content/uploads/2019/12/TIOC-Family-Release-v1.0.pdf",
+      "title": "The Isle of Cats — English family rules",
+      "publisher": "The City of Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Player setup B; Gameplay steps 1–4",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official City of Games rules page links both standard and family manuals. Rendered standard4 establishes random initial order,8 tile drawing,12 speed reorder and tie preservation,13 first rescue. Family PDF1 independently gives random starter and rotation. These distinctions prevent treating initial setup order as the first rescue order. Source custody: research/source-files/popular-sep26-05/cats.pdf; SHA-256 aa27c861838c4cd8334c0ba49d999a7ac56c6ca6855fae926b2f66defbec8e30; research/source-files/popular-sep26-05/cats-family.pdf; SHA-256 d86ae47133c2c11321e23fe42b7f8a1d6734dfaaf3332e1825f37b13e5e7face. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
