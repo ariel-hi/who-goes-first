@@ -4,6 +4,8 @@
 
 The three original 1000 × 1500 images in `public/pins/` lead to specific, useful pages. Rebuild them with `node marketing/create-pins.mjs`. Their RSS feed is `/pinterest.xml`; it contains only these curated items, not the entire game catalog. The feed must be published on the claimed domain before it can be connected to a Pinterest business account. Use a public board such as “Board game night ideas.” Pinterest may create Pins after a feed is connected, so inspect the live feed and images first.
 
+The production picker, rule directory and house-question pages also offer a plain **Save on Pinterest** link. It opens Pinterest's Save interface with the matching original image, a fixed description and a clean canonical destination. A visitor chooses a board and confirms on Pinterest. The link does not load Pinterest scripts, replay private player state, or report that a Pin was saved. Previews do not expose this action. This visitor action is separate from the owner's account launch below. A live preview of the documented link format loaded the correct image and description on 2026-09-26 UTC; no Pin was saved during verification. See [Pinterest's Save button documentation](https://developers.pinterest.com/docs/web-features/buttons/).
+
 | Pin | Destination | Purpose |
 | --- | --- | --- |
 | `first-player-picker.png` | `/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_player_picker` | Direct tool visit |
