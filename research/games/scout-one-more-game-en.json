@@ -1,0 +1,39 @@
+{
+  "id": "scout-one-more-game-en",
+  "slug": "scout-one-more-game-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "SCOUT",
+  "aliases": [],
+  "editionLabel": "One More Game English original edition",
+  "firstPlayerRule": "Choose the starting player by any method you like.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise. The next round starts with the player to the left of the previous round’s starting player.",
+    "This is the original SCOUT! edition for three to five players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://onemoregame.cloud-line.com/files/SCOUT!_v2.1_English_open.pdf",
+      "title": "SCOUT — English rulebook",
+      "publisher": "One More Game!",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Game Setup; Turn Procedure; Next Round Setup",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted original English rules credit Kei Kajino and One More Game. Game Setup permits any starting-player method; the reverse gives clockwise round rotation. Source custody: research/source-files/popular-sep26-02/scout.pdf; SHA-256 f8e866181f729ed7c4b801d8b4e50cbf8459358f00a0b50ab5cb934d54387e4d. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The reviewed rules are the original One More Game edition, not the later Oink Games edition."
+  ]
+}
