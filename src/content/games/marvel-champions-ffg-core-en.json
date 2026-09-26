@@ -1,0 +1,39 @@
+{
+  "id": "marvel-champions-ffg-core-en",
+  "slug": "marvel-champions-ffg-core-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "56cfeaf64a87334575641e752a5d93bb56018ee73e826064c8fe24d1d10d8dec",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Marvel Champions: The Card Game",
+  "aliases": [],
+  "editionLabel": "FFG English core set",
+  "firstPlayerRule": "As a group, choose a first player and give that player the first-player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the end of each villain phase, pass the first-player token clockwise to begin the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/ab/be/abbef836-d5ef-4241-b2bd-1062df73f367/mvc01_learn_to_play_eng-compressed.pdf",
+      "title": "Marvel Champions: The Card Game — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "17"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        17
+      ],
+      "location": "Setup step 3; Step five — Pass the first player token and end the round",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "FFG-hosted core-set Learn to Play, setup step 3 on page 4. The group chooses the first player without a specified themed or random selection criterion. Page 17 confirms clockwise token rotation at round end. Source custody: research/source-files/popular-sep26-02/marvel.pdf; SHA-256 357c9be2010723dd3e8831e81eb140567d0d93f83b803a9040dcad2b8f2730b9. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
