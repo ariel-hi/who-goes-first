@@ -1,0 +1,39 @@
+{
+  "id": "seventh-continent-serious-poulp-classic-en",
+  "slug": "seventh-continent-serious-poulp-classic-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The 7th Continent",
+  "aliases": [],
+  "editionLabel": "Serious Poulp English Classic edition",
+  "firstPlayerRule": "The group chooses an active player for the first turn. Players collectively choose who acts on every turn, and the same person may act again if everyone agrees.",
+  "officialTieBreak": null,
+  "houseFallback": "If the group cannot agree on the first active player, choose one at random.",
+  "clarifications": [
+    "On later turns, if the group cannot agree, the player to the left of the previous active player takes over."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://7thcontinent.seriouspoulp.com/documents/t7c/The7thContinent_Classic_rulebook_EN_final.pdf",
+      "title": "The 7th Continent — English rulebook",
+      "publisher": "Serious Poulp",
+      "printedPages": [
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        10
+      ],
+      "location": "Turn sequence — Choose the active player",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official SeriousPoulp downloads page links Classic English manual. Rendered10 verifies collective choice, repeat turns by agreement and fallback only relative to previous active player. Distinguish voluntary active-player choice from simultaneous play. Source custody: research/source-files/popular-sep26-09/continent.pdf; SHA-256 8312987925995c99a8ebf5d2ff6857c0454c4896cde621cf7895ed0eadb71f1e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The clockwise fallback refers to a previous active player, so it does not settle a disagreement before the first turn."
+  ]
+}
