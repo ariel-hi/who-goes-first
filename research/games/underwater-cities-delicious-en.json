@@ -1,0 +1,39 @@
+{
+  "id": "underwater-cities-delicious-en",
+  "slug": "underwater-cities-delicious-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Underwater Cities",
+  "aliases": [],
+  "editionLabel": "Delicious Games English base game",
+  "firstPlayerRule": "Randomly arrange the play-order markers on the play-order track for the first round. The player in space 1 goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Place the Federation markers in the opposite order during setup. Follow the play-order track for the entire first round; later rounds use the Federation system to determine a new order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets.deliciousgames.org/rules/UnderwaterCities-rules-ENG-web.pdf",
+      "title": "Underwater Cities — English rulebook",
+      "publisher": "Delicious Games",
+      "printedPages": [
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7
+      ],
+      "location": "Player setup — Order of play; Gameplay — Play order",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current Delicious Games catalog links official assets domain English manual. Rendered page6 random first-round track and explicit space1first, page7fixedtrackorderwithinround. Component-specific randomized full order, excluded from random mix. Source custody: research/source-files/popular-sep26-08/underwater.pdf; SHA-256 7a413cefb5417f56b80c863e7fb134263017f006658aa42e715f40b02dd19114. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
