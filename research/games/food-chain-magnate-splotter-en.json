@@ -1,0 +1,44 @@
+{
+  "id": "food-chain-magnate-splotter-en",
+  "slug": "food-chain-magnate-splotter-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Food Chain Magnate",
+  "aliases": [],
+  "editionLabel": "Splotter English base game",
+  "firstPlayerRule": "Shuffle the restaurant chains’ turn-order markers and draw them to form the initial order. Starting restaurants are placed in reverse order, beginning with the last player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During play, Restructuring is simultaneous. In Order of Business, players choose positions on the turn-order track; most open company slots chooses first, with ties resolved by the previous turn order.",
+    "The first restaurant-placement pass permits passing. Those who passed must place in a second pass, in turn order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://splottercon.com/wp-content/uploads/2023/07/FCM_Rules_EN_v3.pdf",
+      "title": "Food Chain Magnate — English rulebook",
+      "publisher": "Splotter Spellen",
+      "printedPages": [
+        "1",
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        7,
+        8
+      ],
+      "location": "Colofon; Initial order of play; Placing the first restaurants; Phase 2 — Order of business",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher credits and third-printing provenance verified on PDF2 printed1. PDF7 printed6 distinguishes shuffled initial order, reverse restaurant placement, simultaneous first phase and position selection in Phase2. PDF8 printed7 uses chosen order for Working9-5. This is the original Splotter base game, not a deluxe or expansion ruleset. Source custody: research/source-files/popular-sep26-08/food.pdf; SHA-256 95831b0165f4d0c6b9bd4187280dbeeded4df0d40973fd886b9c947aef4a2ddd. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The Splotter-authored manual is preserved by the Splottercon archive. The current publisher product page did not provide a direct rulebook download."
+  ]
+}
