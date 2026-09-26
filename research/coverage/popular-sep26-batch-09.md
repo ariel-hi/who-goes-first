@@ -18,3 +18,5 @@ Publisher product links distinguished the original six-villain set from Villaino
 Strict target coverage is 358/1,062, with 704 remaining. Next target: Hey, That's My Fish!, rank 205. Integration added one missing directory identity. Content validation passed with 1,025 rules and 383 portable methods; check and lint passed; all 154 tests passed. The production build and audits passed with 1,192 pages and 31,880 internal links. Live verification follows deployment.
 
 The first test run caught the full Thames Murders title not matching the shorter directory name. An explicit reviewed mapping to existing BGG2511 and a regression assertion resolve that without matching other Sherlock Holmes boxes.
+
+Deployed as 7dacd39 and verified live: rule index 1,025, directory index 5,018, all eight article pages HTTP 200 with correct canonicals/indexing and directory links. Home, directory, robots and sitemap checks passed. Evidence: ignored artifacts/popular-sep26-09-live-check.json.
