@@ -29,3 +29,16 @@ A replacement must match the reviewed edition and rulebook pages. The current Z-
 The 19 HTTP 403 responses include Australia at F.G. Bradley's, Candy Match at Plasico, one Pegasus North America PDF, twelve Tesera PDFs, and four Lookout PDFs (Bärenpark, Oh My Goods!, Costa Rica and Agricola Revised). These responses may depend on server access policy. They remain unresolved availability checks, not confirmed missing sources.
 
 Local raw results and rendered Briefcase pages are under the ignored `artifacts/` directory (`growth-source-links.log`, `growth-source-get-check.json`, `growth-remaining-source-links.json`, and `source-link-replacements/`).
+
+## Browser follow-up — 2026-09-26 UTC
+
+Four of the 19 access-denied results loaded as real PDFs in ordinary Chrome, with certificate validation intact and no security-warning bypass:
+
+| Citation | Browser result |
+| --- | --- |
+| Bärenpark | Publisher product page links the cited English PDF; the browser follows to the `www` hostname and renders six pages. Page 3 visually confirms setup step 8 and clockwise play. |
+| Oh My Goods! v1.5 | Exact cited URL renders a 12-page English booklet. |
+| Costa Rica | Exact cited URL renders a four-page English Mayfair booklet. |
+| Agricola Revised Edition | Exact cited URL renders a 12-page English booklet. |
+
+The original checker counts above remain the audit snapshot. The four Lookout links are browser-accessible; the other 15 access-denied results remain unverified. Do not replace the Lookout citations or refresh catalog review dates solely because the automated requests failed. This follow-up is an availability check, except for the explicitly described Bärenpark page inspection; it is not a new full editorial review of the other three answers.
