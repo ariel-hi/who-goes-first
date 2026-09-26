@@ -14,6 +14,21 @@
   try { choice = window.localStorage.getItem(choiceKey); } catch { /* Browsers can block storage. */ }
 
   function loadAnalytics() {
+    // Campaign labels are fixed editorial identifiers, never user or player input.
+    // Remove the complete query before loading the tag so unrelated parameters
+    // cannot be collected by the tag's automatic URL handling.
+    const params = new window.URLSearchParams(location.search);
+    const source = params.get('utm_source');
+    const medium = params.get('utm_medium');
+    const name = params.get('utm_campaign');
+    const campaigns = new Set(['first_player_picker', 'game_rules', 'house_questions', 'choose_first_player']);
+    const campaign = ['pinterest', 'bluesky'].includes(source) && medium === 'organic_social' && campaigns.has(name)
+      ? { campaign_source: source, campaign_medium: medium, campaign_name: name }
+      : {};
+    if (location.search) {
+      try { window.history.replaceState(window.history.state, '', location.pathname + location.hash); }
+      catch { return; /* Do not load a tag that could read an unfiltered query. */ }
+    }
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
@@ -22,6 +37,7 @@
       page_title: document.title,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
+      ...campaign,
     });
     const script = document.createElement('script');
     script.async = true;
