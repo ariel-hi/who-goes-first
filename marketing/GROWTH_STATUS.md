@@ -29,6 +29,8 @@ Allow time for discovery and look for a meaningful change through the existing f
 
 ## Measurement and economics
 
+The Pages build command was changed to `npm run build` and the saved configuration was verified on 2026-09-26 UTC. The prior production log showed an automatic dependency install followed by a second `npm ci` in the custom command. Removing that duplicate follows [Cloudflare's Astro build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/). The next deployment must confirm one install and a successful build; a shorter duration or lower bill has not yet been established.
+
 The public GitHub repository's About section now links directly to `https://whogoesfirst.fun/`, describes the free picker, sourced rules and printable cards, and has five relevant topics: board-games, tabletop-games, random-picker, astro and typescript. The saved homepage and topics were verified through GitHub's public repository API. This makes the existing project a usable referral entry point; no visitor or search-ranking lift is established by the metadata change alone. The README update puts visitor destinations before development instructions.
 
 The GA4 home report for September 18–24 shows three active users, three direct sessions and zero key events. This small consented sample may include internal activity. It does not establish external acquisition, retention or paid return.
