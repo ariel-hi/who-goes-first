@@ -1,0 +1,40 @@
+{
+  "id": "hey-thats-my-fish-next-move-en",
+  "slug": "hey-thats-my-fish-next-move-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Hey, That's My Fish!",
+  "aliases": [],
+  "editionLabel": "Next Move English edition",
+  "firstPlayerRule": "The youngest player goes first, and turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, choose randomly between them.",
+  "clarifications": [
+    "The youngest player also places the first penguin during setup, with placement continuing clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/2024/05/EN-HTMF-Rulebook-lowres.pdf",
+      "title": "Hey, That's My Fish! — English rulebook",
+      "publisher": "Next Move / Plan B Games",
+      "printedPages": [
+        "unnumbered"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official NextMove CDN English rulebook with2023PlanBcredits. RenderedPDF2setup and3playbothyoungestclockwise. Distinct from older FFG edition; portable criterion approved. Source custody: research/source-files/popular-sep26-10/fish.pdf; SHA-256 971fad4ea5274fab1be6001f54fb36ef94fe5aa4e3b25ea4bd862265f1398665. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The rulebook does not give a tie-break for players of the same age."
+  ]
+}
