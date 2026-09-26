@@ -1,0 +1,43 @@
+{
+  "id": "white-castle-devir-en",
+  "slug": "white-castle-devir-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "9db4c676b881c271f90dee056f00396e11eb2cf50c31acbe21219e78845df8d1",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "The White Castle",
+  "aliases": [],
+  "editionLabel": "Devir English edition",
+  "firstPlayerRule": "Stack the Influence markers in random order, then arrange the Heron tokens in that same order. The player whose Influence marker is on top plays first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Choose starting card pairs in reverse turn order during setup. During play, follow the Heron tokens on the Turn Order track."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://officialgamerules.org/wp-content/uploads/2025/08/WHITE_CASTLE_ENG.pdf",
+      "title": "The White Castle — English rulebook",
+      "publisher": "Devir",
+      "printedPages": [
+        "3",
+        "4",
+        "19"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        19
+      ],
+      "location": "Player setup steps 11–13; Playing the game; credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Image-only manual reviewed visually: page3 step11 random Influence stack establishes Heron turn order; step13 reverses initial card selection. Page4 first on track starts. Page19 Devir publisher credits, authors Sheila Santos and Israel Cendrero, English translator Andrew Campbell. Not White Castle Duel. Source custody: research/source-files/popular-sep26-07/castle.pdf; SHA-256 dd14099d0194afad2402875e6eb6a27e0b8fbdc631713b16eca1026ad4b225b2. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The Devir-authored English manual is preserved by a rulebook archive. A direct publisher download was not available from the reviewed product page."
+  ]
+}
