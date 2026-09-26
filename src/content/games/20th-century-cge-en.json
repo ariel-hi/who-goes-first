@@ -4,12 +4,12 @@
   "language": "en",
   "status": "approved",
   "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8a0142767b3dad6985a3cf52b1e2b413f20ef30822d74483f9673ed38ac58783",
+  "approvedRevision": "8c5d441a6945a1b88dc8d66e97ad9f93da520cf2931c006f3282e234714357ed",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-26",
   "gameName": "20th Century",
   "aliases": [],
-  "editionLabel": "Czech Games Edition English rulebook",
+  "editionLabel": "Czech Games Edition English rulebook (October 2010)",
   "firstPlayerRule": "The player who is most fastidious about sorting garbage starts the first round.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -20,9 +20,9 @@
   "interpretation": null,
   "sources": [
     {
-      "url": "https://czechgames.com/files/rules/20th-century-rules-en.pdf",
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/20th-Century-Rules.pdf",
       "title": "20th Century — English rules",
-      "publisher": "Czech Games Edition",
+      "publisher": "Czech Games Edition; PDF hosted by Rio Grande Games",
       "printedPages": [
         "2",
         "4",
@@ -30,14 +30,13 @@
       ],
       "pdfPagesOneBased": [
         2,
-        4,
-        5
+        3
       ],
       "location": "Player Setup; Phase 1: Setup; Phase 2: Land Auction",
-      "checkedAt": "2026-09-23"
+      "checkedAt": "2026-09-26"
     }
   ],
-  "internalEvidence": "The publisher's indexed English PDF text was inspected for Player Setup (PDF page 2), later-round Setup (page 4), and Land Auction (page 5). It specifies the garbage-sorting criterion, worst-catastrophe later-round starter, and auction opening order. The publisher URL returned a 404 to direct retrieval on 2026-09-23, so no rendered page or source hash was available. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, edition, and stated alternatives.",
+  "internalEvidence": "Original review used indexed text of the CGE PDF; its download returned HTTP 404 on 2026-09-23 and again in the 2026-09-26 availability audit. Codex source repair and exact-revision review, 2026-09-26, under the owner's 2026-09-22 standing authorization: downloaded the English manual directly from Rio Grande Games with normal certificate validation (HTTP 200, application/pdf, 7 PDF pages). Rendered and visually checked PDF pages 2, 3 and 7: printed pages 2-3 give Player Setup; printed pages 4-5 give Phase 1: Setup and Phase 2: Land Auction; printed page 12 credits Czech Games Edition, October 2010, Vladimir Suchy and translator Jason Holt. The existing public answer and both clarifications match those instructions. No starting-player tie-break is specified. This copy uses two-page spreads, so corrected one-based PDF references to 2 and 3 while retaining printed references 2, 4 and 5. SHA-256: cf6db3164aac817ffd470e3fe50cafba3b5c03f78d7d08c14d8361aa33fb6dc8. The old unavailable file cannot be compared byte for byte; the cited source and its edition are now explicit.",
   "uncertainty": [
     "No tie-break is stated if several players are equally fastidious about sorting garbage."
   ]
