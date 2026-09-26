@@ -1,0 +1,42 @@
+{
+  "id": "imperial-settlers-portal-en",
+  "slug": "imperial-settlers-portal-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "d4d77e17af95908ace033607aaa05d0773b4942008d36237a38cc047a7e5428f",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Imperial Settlers",
+  "aliases": [],
+  "editionLabel": "Portal Games English base game",
+  "firstPlayerRule": "Randomly choose the First Player and give them the First Player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The First Player chooses first in the opening card draft, which proceeds clockwise; the second draft goes in reverse order.",
+    "Production and action turns begin with the First Player and proceed clockwise. Pass the marker clockwise during cleanup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://portalgames.blob.core.windows.net/imperial-settlers/Imperial-Settlers-Rulebook.pdf",
+      "title": "Imperial Settlers — English rulebook",
+      "publisher": "Portal Games",
+      "printedPages": [
+        "5",
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        7
+      ],
+      "location": "Setup step 6; Lookout phase; Action phase; Cleanup phase",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Portal shop links publisher Azure-hosted English base manual. Its HTML download href had a stray quote and target attribute; removed those markup characters to retrieve the linked PDF. Rendered5–7 establish random initial starter, forward/reverse drafting and clockwise action order and marker rotation. Source custody: research/source-files/popular-sep26-05/settlers.pdf; SHA-256 98c7e716c460934f725a9fbbf55445e39807b4c9241dccfface50f98cf283574. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
