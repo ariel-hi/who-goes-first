@@ -1,0 +1,39 @@
+{
+  "id": "teotihuacan-board-dice-en",
+  "slug": "teotihuacan-board-dice-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Teotihuacan: City of Gods",
+  "aliases": [],
+  "editionLabel": "Board & Dice English base game",
+  "firstPlayerRule": "Choose the first player at random and give them the Player Order token marked 1. Play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/fc/ee/c7-teotihuacan-city-of-gods-rulebook.pdf",
+      "title": "Teotihuacan: City of Gods — English rulebook",
+      "publisher": "Board & Dice",
+      "printedPages": [
+        "6",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Player setup step 2; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "RenderedPDF4printed6randomstartertoken1,PDF5printed9clockwise. Credits explicitly Board&Dice2018, EnglishrulesTurczi/Novac/Kubacki. BaseEnglishmanual fromarchive; Board&Dice current download hub checked and onlyDeluxe/expansionmanualsfound. Source custody: research/source-files/popular-sep26-11/teo.pdf; SHA-256 ee2128aa0a11f9c7764891ce65256b61e9618040732ae312d92813816676796d. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The Board & Dice-authored English base-game manual is preserved by a rulebook archive. The current publisher download page supplies the Deluxe rules separately; those are not substituted here."
+  ]
+}
