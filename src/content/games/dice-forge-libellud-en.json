@@ -1,0 +1,42 @@
+{
+  "id": "dice-forge-libellud-en",
+  "slug": "dice-forge-libellud-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "d28f43700f564f2946e2e48a6972040a91c10addcfaedb2f6f36db22f6e80678",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Dice Forge",
+  "aliases": [],
+  "editionLabel": "Libellud English base game",
+  "firstPlayerRule": "The youngest player takes the First Player token and is the first active player.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "Each turn begins with all players rolling their dice simultaneously for Divine Blessings. The active player then resolves their own remaining steps.",
+    "The next player clockwise becomes active. The first player keeps the token for the whole game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/08/DF_RULES_EN-1.pdf",
+      "title": "Dice Forge — English rulebook",
+      "publisher": "Libellud",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 5; Playing a round; Active player turn",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Libellud game page links current English two-sheet rules. Rendered1 setup5 establishes youngest and fixed token;2 distinguishes simultaneous blessings from active-player actions and clockwise succession. Source custody: research/source-files/popular-sep26-06/forge.pdf; SHA-256 de151a99d0febc7daf68a0632f56b7260b26db957744d71d0cdbd29cb23d7d9b. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "No tie-break for equally young players is specified."
+  ]
+}
