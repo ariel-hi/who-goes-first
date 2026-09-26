@@ -1,0 +1,55 @@
+{
+  "id": "dino-garden-uchibacoya-en-rulebook",
+  "slug": "dino-garden-uchibacoya-en-rulebook",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8937c3c926ca0815ea74c475b29e53caf50eeebf009a900b7935ee9c86e5f768",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Dino Garden",
+  "aliases": [],
+  "editionLabel": "UCHIBACOYA · English base-game manual · multiplayer opening · 2–4 players",
+  "firstPlayerRule": "Choose the starting player by any method. Put their Owner token on the “1st” space of the Standby track, then place the other players’ tokens above it in clockwise seating order.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group wants a quick way to make that choice, pick a player at random.",
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The initial seating order sets up the tokens. During the Action phase, the Owner token farthest behind on the Main track acts next and can act again if still farthest behind; turns do not necessarily follow seating order.",
+    "At the start of a round, a lower Owner token on the Standby track counts as farther behind. An Owner token cannot stop on a space occupied by another Owner token.",
+    "After moving to Standby, that player takes no further Action-phase turn that round. Next Round Preparation begins the next round with the Owner token at the bottom of the Standby track.",
+    "Two-player play uses an unused-color dummy Owner token called Lucy, initially on the third Standby position. When Lucy is farthest behind, move Lucy to the nearest possible space ahead on the Main track; if none is available, move Lucy to the lowest available Standby space. This does not replace the initial human starter choice.",
+    "Solo play uses the stated three-player setup and play rules with solo changes, no Lucy and only your own Owner token moving. A multiplayer starter choice is inapplicable.",
+    "The source link opens the publisher-linked shared folder. Select “«Зоосад. Дино» правила на Английском языке.pdf.pdf”; the starting instruction is on PDF spread 3, printed page 4, setup step 22."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://disk.yandex.ru/d/_tSRueefX4dKjQ",
+      "title": "Dino Garden — English rulebook: «Зоосад. Дино» правила на Английском языке.pdf.pdf",
+      "publisher": "UCHIBACOYA; distributed through the official CrowD-linked folder",
+      "printedPages": [
+        "4",
+        "6–7",
+        "16–17",
+        "20 and adjacent unnumbered cover/credits"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        8,
+        9,
+        1
+      ],
+      "location": "Folder filename «Зоосад. Дино» правила на Английском языке.pdf.pdf; Player Setup step22 (PDF spread3, left/printed4); Action turn order (spread4); Next Round Preparation phase (spread8, left, no visible printed numeral); Two-Player and Solo Rules (spread9, printed16–17); cover/credits beside printed20 (spread1)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root independent source review2026-09-26 under standing owner authorization2026-09-22. Complete original English PDF research\\source-files\\sep26-crowd-yandex-folder-manual-intake\\pdf-04-dino.pdf, 30749725bytes, SHA256 ac69fa6dc39b92e145e0c9e5e01983e28a5fe25719eef9dfc5cac98cd0eeef2b; intake manifest39ea700f62a8bafa0fad81f7d3c07cba72998d42d09d3e6cebdfc822d8988dd7. Root opened all19 complete contact sheets covering74pages (Aqua8/Dino10 imposed spreads; Harrow56 pages), plus full-resolution Aqua1/3 and Dino1/3/8. Source extractor warning means original PDFs/renders are authoritative. Root independently rehashed all242 sealed intake members/216827410bytes,49 original prior manual-source members and7 current inputs/887 approved files at HEAD27cdd1fd013562c15b561f4f67ce79522ced37d4; publisher bodies, exact historical anchor index/byte context, folder response, verbatim resource path and complete PDF hash checked. Public citation is stable sourceUrl plus literal filename; signed resource addresses remain private. Historical source bindings remain unchanged. Initial4GET batch and explicit6GET PDF continuation have separate bounds; browser subrequest count is unknown. Root made no new GET. All saved identity decisions, false rule-transfer flags, source proposals, earlier holds and catalog files remain unchanged. Root independently derived the exact public answer, variant/order/edition boundaries and locator precision; this research record preserves needs-review/null lifecycle, and an approved copy will bind only its exact final revision. No random-pool approval, edition transfer or deployment.",
+  "uncertainty": [
+    "No numbered edition or visible copyright year was established. PDF metadata and December2025 timestamps are file facts, not publication-date evidence.",
+    "This rule was independently read from Dino Garden’s complete English manual. Aqua Garden’s matching starter instruction does not authorize transferring its turn rules: Aqua’s Lucy moves one space ahead of the farthest-forward token, whereas Dino’s Lucy uses the nearest possible empty space.",
+    "The original source proposal labels the next-round passage printed15. Root and independent review corrected the catalog locator to PDF spread8, left page, Next Round Preparation phase; no printed numeral is visible there. Printed15 on the right gives final scoring and shared score winners, not a starter tie.",
+    "The stable citation is the shared folder and verbatim double-.pdf filename. No Russian rules, expansion, FAQ, later revision or other printing is approved. Optional random choice is a house method, not an official specific criterion."
+  ]
+}

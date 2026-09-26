@@ -33,7 +33,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   </div>
 </Layout>
 <script>
-  import { normalizeSearch } from '../../lib/search';
+  import { directorySearchKey } from '../../lib/search';
   import { directorySearchHref, readDirectorySearchState, type DirectoryFilter } from '../../lib/directory-search';
   type SearchEntry = { name: string; id: string; ruleCount: number; slug?: string; terms?: string[] };
   type SearchGame = { name: string; nameKey: string; id: string; href: string; search: string; hasRule: boolean; ruleCount: number };
@@ -47,7 +47,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   let loading: Promise<SearchGame[]> | undefined;
   let filter: DirectoryFilter = 'all';
   let revision = 0;
-  const compact = (value: string) => normalizeSearch(value).replace(/[^\p{L}\p{N}]+/gu, '');
+  const compact = directorySearchKey;
   const load = () => loading ??= fetch('/board-games/search.json').then(response => {
     if (!response.ok) throw new Error(`Search unavailable (${response.status})`);
     return response.json() as Promise<SearchEntry[]>;

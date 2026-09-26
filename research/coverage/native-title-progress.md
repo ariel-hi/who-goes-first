@@ -4,6 +4,8 @@ Retrieved and reviewed on 2026-09-26 UTC. The supplementary corpus and identity 
 
 The [latest CrowD checkpoint](sep26-crowd-four-identities-progress.md) adds Stars of Akarios, Aqua Garden and Harrow County with separately observed exact primary numeric hrefs, plus Dino Garden through semantic publisher/native-title/product corroboration with Wikidata-only numeric authority. Octex retains a reviewed human/musician misassociation hold. Dino's unbound image collection href remains distinct from numeric title proof; original sealed proposals and complete prior decisions are preserved. Below, the25-reviewed/18-accepted section and tables record the initial pass, not the current totals.
 
+The subsequent [manual and native-search checkpoint](sep26-native-search-three-manual-progress.md) approves three separately reviewed English rules and enables search by66 distinct saved alternate titles across21 accepted native identities. Display names,36 accepted identities, all held decisions and rule-transfer flags remain unchanged. Alternate search terms never participate in edition assignment.
+
 ## Complete current pool
 
 `wikidata-native-title-leads.json` preserves the complete current numeric P2339 pool for which no corresponding Wikidata item has an English label. The query has no limit. All 288 raw IDs and all 288 associated entities are retained, including native and `mul` labels, aliases, descriptions, P1476 original titles, every claim and qualifier/reference, item revisions and modification times. The saved query response, entity responses, canonical statement/entity maps and each entity have SHA-256 metadata.

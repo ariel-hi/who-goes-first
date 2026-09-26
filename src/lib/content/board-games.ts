@@ -2,6 +2,7 @@ import { readFileSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import { getCatalog } from './catalog';
+import { uniqueDirectorySearchTerms } from '../search';
 
 const inventorySchema = z.object({
   discoveredAt: z.string(),
@@ -94,6 +95,22 @@ function canonical(value: unknown): string {
   return JSON.stringify(value)!;
 }
 const sha256 = (text: string) => createHash('sha256').update(text).digest('hex');
+type InventoryGame = z.infer<typeof inventorySchema>['games'][number] & { searchNames?: string[] };
+
+function nativeTitleExists(title: z.infer<typeof nativeTitleSchema>, entity: Record<string, unknown>) {
+  const labels = entity.labels as Record<string, { language: string; value: string }> | undefined;
+  if (title.source === 'label') return labels?.[title.language]?.value === title.text && labels[title.language]!.language === title.language;
+  const originalTitles = (entity.claims as Record<string, unknown[]> | undefined)?.P1476 ?? [];
+  const schema = z.object({
+    id: z.string(), rank: z.enum(['normal', 'preferred', 'deprecated']),
+    mainsnak: z.object({ property: z.literal('P1476'), snaktype: z.literal('value'), datavalue: z.object({ type: z.literal('monolingualtext'), value: z.object({ text: z.string(), language: z.string() }) }) }),
+  });
+  return originalTitles.some(value => {
+    const parsed = schema.safeParse(value);
+    return parsed.success && parsed.data.id === title.statementId && parsed.data.rank !== 'deprecated'
+      && parsed.data.mainsnak.datavalue.value.text === title.text && parsed.data.mainsnak.datavalue.value.language === title.language;
+  });
+}
 
 export function nativeIdentityAdditions(snapshotText: string, decisionsText: string, existing: readonly { name: string; bggId: string }[]) {
   const snapshot = nativeSnapshotSchema.parse(JSON.parse(snapshotText));
@@ -111,7 +128,7 @@ export function nativeIdentityAdditions(snapshotText: string, decisionsText: str
   if (decisions.size !== candidates.size || [...decisions.keys()].some(id => !candidates.has(id))) throw new Error('Incomplete native identity decisions');
   const ids = new Set(existing.map(game => game.bggId));
   const names = new Set(existing.map(game => nameKey(game.name)));
-  const additions: z.infer<typeof inventorySchema>['games'] = [];
+  const additions: InventoryGame[] = [];
   for (const decision of review.decisions) {
     if (decision.decision !== 'accept') continue;
     const candidate = candidates.get(decision.bggId)!;
@@ -123,20 +140,7 @@ export function nativeIdentityAdditions(snapshotText: string, decisionsText: str
       || !item || !item.titleOptions.some(title => canonical(title) === canonical(selectedTitle))
       || decision.displayName !== selectedTitle.text) throw new Error(`Invalid native identity title: ${decision.bggId}`);
     if (decision.sourceIds.some(id => !review.sources[id] || review.sources[id]!.status !== 'retrieved')) throw new Error(`Unknown or unavailable native primary source: ${decision.bggId}`);
-    const labels = item.entity.labels as Record<string, { language: string; value: string }> | undefined;
-    const originalTitles = (item.entity.claims as Record<string, unknown[]> | undefined)?.P1476 ?? [];
-    const originalTitleSchema = z.object({
-      id: z.string(), rank: z.string(), mainsnak: z.object({ datavalue: z.object({ type: z.string(), value: z.object({ text: z.string(), language: z.string() }) }) }),
-    });
-    const sourceTitleExists = selectedTitle.source === 'label'
-      ? labels?.[selectedTitle.language]?.value === selectedTitle.text && labels[selectedTitle.language]!.language === selectedTitle.language
-      : originalTitles.some(value => {
-        const parsed = originalTitleSchema.safeParse(value);
-        return parsed.success && parsed.data.id === selectedTitle.statementId && parsed.data.rank !== 'deprecated'
-          && parsed.data.mainsnak.datavalue.type === 'monolingualtext'
-          && parsed.data.mainsnak.datavalue.value.text === selectedTitle.text && parsed.data.mainsnak.datavalue.value.language === selectedTitle.language;
-      });
-    if (!sourceTitleExists) throw new Error(`Missing native entity title: ${decision.bggId}`);
+    if (!nativeTitleExists(selectedTitle, item.entity)) throw new Error(`Missing native entity title: ${decision.bggId}`);
     for (const entityItem of candidate.items) {
       const entity = entityItem.entity;
       const claimRecords = (entity.claims as Record<string, unknown> | undefined)?.P2339;
@@ -150,20 +154,29 @@ export function nativeIdentityAdditions(snapshotText: string, decisionsText: str
         || canonical(provenance.statements) !== canonical(matching.map(claim => claim.id))) throw new Error(`Invalid native P2339 evidence: ${decision.bggId}`);
     }
     if (decision.idProvenance.length !== candidate.items.length || !decision.idProvenance.some(value => value.wikidataId === selectedQid)) throw new Error(`Invalid native identity provenance: ${decision.bggId}`);
+    // Search-only titles belong to this accepted numeric identity. They never
+    // participate in the rule-name matching below or establish edition scope.
+    const searchNames = uniqueDirectorySearchTerms(decision.displayName, candidate.items.flatMap(entityItem => entityItem.titleOptions.map(title => {
+      if (!nativeTitleExists(title, entityItem.entity)) throw new Error(`Missing native alternate title: ${decision.bggId}`);
+      return title.text;
+    })));
     if (ids.has(decision.bggId) || names.has(nameKey(decision.displayName))) throw new Error(`Duplicate native board game identity: ${decision.bggId}`);
     ids.add(decision.bggId); names.add(nameKey(decision.displayName));
-    additions.push({ name: decision.displayName, bggId: decision.bggId, discoveryUrl: `https://boardgamegeek.com/boardgame/${decision.bggId}`, status: 'needs-primary-source' });
+    additions.push({ name: decision.displayName, bggId: decision.bggId, discoveryUrl: `https://boardgamegeek.com/boardgame/${decision.bggId}`, status: 'needs-primary-source', ...(searchNames.length ? { searchNames } : {}) });
   }
   return { games: additions, retrievedOn: snapshot.retrievedOn };
 }
 
 let cachedInventory: z.infer<typeof inventorySchema> | undefined;
+let cachedSearchNames = new Map<string, string[]>();
 let inventoryRevision = '';
 export function getBoardGameInventory() {
-  const revision = ['research/coverage/discovery-index.json', 'research/coverage/wikidata-board-games.json', 'research/coverage/wikidata-identity-review.json', nativeSnapshotPath, nativeDecisionsPath].map(path => {
+  const nativeSnapshotText = readFileSync(nativeSnapshotPath, 'utf8');
+  const nativeDecisionsText = readFileSync(nativeDecisionsPath, 'utf8');
+  const revision = ['research/coverage/discovery-index.json', 'research/coverage/wikidata-board-games.json', 'research/coverage/wikidata-identity-review.json'].map(path => {
     const file = statSync(path);
     return `${file.mtimeMs}:${file.size}`;
-  }).join('|');
+  }).concat(sha256(nativeSnapshotText), sha256(nativeDecisionsText)).join('|');
   if (cachedInventory && revision === inventoryRevision) return cachedInventory;
   const original = inventorySchema.parse(JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8')));
   const wikidata = wikidataSchema.parse(JSON.parse(readFileSync('research/coverage/wikidata-board-games.json', 'utf8')));
@@ -196,8 +209,11 @@ export function getBoardGameInventory() {
     if (names.has(key) || addedNames.has(key)) throw new Error(`Wikidata discovery label needs qualification: ${game.name}`);
     addedNames.add(key);
   }
-  const native = nativeIdentityAdditions(readFileSync(nativeSnapshotPath, 'utf8'), readFileSync(nativeDecisionsPath, 'utf8'), [...original.games, ...additions]);
-  cachedInventory = { ...original, scope: `${original.scope} Plus ${additions.length} English-labeled Wikidata P2339 identity leads from ${wikidata.retrievedOn}, including accepted identity reviews; plus ${native.games.length} native and language-neutral identities corroborated by primary sources from ${native.retrievedOn}; no rule text imported.`, games: [...original.games, ...additions, ...native.games] };
+  const native = nativeIdentityAdditions(nativeSnapshotText, nativeDecisionsText, [...original.games, ...additions]);
+  cachedSearchNames = new Map(native.games.filter(game => game.searchNames?.length).map(game => [game.bggId, game.searchNames!]));
+  // Preserve the discovery/coverage getter's strict identity-only contract.
+  const nativeGames = native.games.map(({ name, bggId, discoveryUrl, status }) => ({ name, bggId, discoveryUrl, status }));
+  cachedInventory = { ...original, scope: `${original.scope} Plus ${additions.length} English-labeled Wikidata P2339 identity leads from ${wikidata.retrievedOn}, including accepted identity reviews; plus ${native.games.length} native and language-neutral identities corroborated by primary sources from ${native.retrievedOn}; no rule text imported.`, games: [...original.games, ...additions, ...nativeGames] };
   inventoryRevision = revision;
   return cachedInventory;
 }
@@ -225,5 +241,5 @@ export function getBoardGames() {
     if (matches.length > 1 && !explicit) throw new Error(`Ambiguous board game identity for ${rule.id}: ${matches.join(', ')}; add an explicit identity override`);
     for (const id of matches) byRule.get(id)!.push(rule);
   }
-  return inventory.games.map(game => ({ name: game.name, bggId: game.bggId, discoveryUrl: game.discoveryUrl, rules: byRule.get(game.bggId)! }));
+  return inventory.games.map(game => ({ name: game.name, bggId: game.bggId, discoveryUrl: game.discoveryUrl, searchNames: cachedSearchNames.get(game.bggId) ?? [], rules: byRule.get(game.bggId)! }));
 }

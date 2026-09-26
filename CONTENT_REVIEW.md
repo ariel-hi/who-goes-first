@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 887 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 890 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+
+Aqua Garden, Dino Garden and Harrow County add three independently reviewed exact English manual answers. Root opened all74 complete rendered PDF pages and rehashed242 sealed intake members plus49 earlier source members. Aqua/Dino retain open choice, track-based turns and different Lucy movement; Harrow retains tile-revealer setup, fixed tutorial opening and changing token order. Stable shared-folder citations include verbatim filenames and honest PDF/printed-page locators. All three stay outside the portable mix. Exact revisions and scope are recorded in `research/coverage/sep26-native-search-three-manual-progress.md`.
 
 Final Titan adds a separately source-reviewed English summary of the Russian GaGa ©2026 manual, scoped to main competitive play with3–5 players. Youngest setup drafting, highest-speed main opening, successive bench-speed ties/lots, arena speed/contender priority and later restart remain distinct. Root opened21 complete PDF pages and rehashed53 manual-intake files plus40 identity-intake files. The literal Russian title alias is source-bound. It stays outside the portable mix. See `research/coverage/sep26-final-titan-directory-history-progress.md`.
 

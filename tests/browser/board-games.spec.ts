@@ -108,6 +108,48 @@ test('board games are browsable without search and searchable on demand', async 
   await expect(page.getByRole('link', { name: /Eagle-Gryphon English rules, ©2018/ })).toHaveAttribute('href', '/games/incan-gold-eagle-gryphon-en-2018/');
 });
 
+for (const width of [320, 1280]) {
+  test(`accepted native names preserve their directory identity and rule status at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto('/board-games/');
+    const input = page.getByRole('searchbox', { name: 'Search board games' });
+    for (const [query, id, name, slug] of [
+      ['ЗВЕЗДЫ АКАРИОСА', '273910', 'Stars of Akarios', null],
+      ['Зоосад: Вода', '322421', 'Aqua Garden', 'aqua-garden-uchibacoya-en-rulebook'],
+      ['Округ Хэрроу: Готическое противостояние', '360899', 'Harrow County: The Game of Gothic Conflict', 'harrow-county-off-the-page-en-2023-full'],
+      ['Зоосад Дино', '447999', 'Dino Garden', 'dino-garden-uchibacoya-en-rulebook'],
+    ] as const) {
+      await input.fill(query);
+      const results = page.locator('[data-results] li');
+      await expect(results).toHaveCount(1);
+      await expect(results).toHaveAttribute('data-id', id);
+      await expect(results).toHaveAttribute('data-has-rule', String(slug !== null));
+      if (slug) {
+        await expect(results.locator('a[href^="/games/"]')).toHaveAttribute('href', `/games/${slug}/`);
+        await expect(results.locator('a[href^="/games/"]')).toContainText(name);
+        await expect(results.locator('summary')).toHaveCount(0);
+      } else {
+        await expect(results.locator('summary')).toHaveText(`${name}No checked starting rule yet`);
+        await results.locator('summary').click();
+        await expect(results.getByRole('link', { name: 'Pick a player', exact: true })).toHaveAttribute('href', '/');
+        await expect(results.getByRole('link', { name: /View game on BoardGameGeek/ })).toHaveAttribute('href', `https://boardgamegeek.com/boardgame/${id}`);
+        await expect(results.locator('a[href^="/games/"]')).toHaveCount(0);
+      }
+      await expect(page.locator('[data-count]')).toHaveText('1 game found');
+    }
+    await page.getByRole('button', { name: 'With a rule', exact: true }).click();
+    await expect(page.locator('[data-results] li[data-id="447999"]')).toBeVisible();
+    await page.getByRole('button', { name: 'Awaiting a rule', exact: true }).click();
+    await expect(page.getByRole('heading', { name: 'No matching games', exact: true })).toBeVisible();
+    await input.fill('Звёзды Акариоса');
+    await expect(page.locator('[data-results] li[data-id="273910"]')).toBeVisible();
+    await input.fill('Брасс: Питтсбург');
+    await expect(page.locator('[data-results] li')).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'No matching games', exact: true })).toBeVisible();
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  });
+}
+
 test('a sourced article links directly to its checked PDF passage and retains the complete rulebook', async ({ page }) => {
   await page.goto('/games/beyond-the-sun-rio-grande-en/');
   await expect(page.getByRole('link', { name: 'View cited page (PDF page 25)', exact: true })).toHaveAttribute('href', /Beyond-the-Sun-Combined-Rules\.pdf#page=25$/);

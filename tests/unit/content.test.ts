@@ -1,9 +1,11 @@
-import { expect, test } from 'vitest';
+import { expect, test, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { getCatalog, readRecords } from '../../src/lib/content/catalog';
+import * as catalogModule from '../../src/lib/content/catalog';
 import { assertPublishable, contentRevision, publicRule, ruleSchema } from '../../src/lib/content/schema';
-import { searchRank } from '../../src/lib/search';
+import { directorySearchKey, searchRank } from '../../src/lib/search';
+import { GET as directorySearch } from '../../src/pages/board-games/search.json';
 import { getCoverage } from '../../src/lib/content/coverage';
 import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/board-games';
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
@@ -75,7 +77,8 @@ test('native and language-neutral identities enroll only after primary identity 
   ] as const) {
     const game = games.find(game => game.bggId === id);
     expect(game?.name).toBe(name);
-    expect(game?.rules).toEqual([]);
+    const expected = ({ '322421': 'aqua-garden-uchibacoya-en-rulebook', '360899': 'harrow-county-off-the-page-en-2023-full', '447999': 'dino-garden-uchibacoya-en-rulebook' } as Record<string, string>)[id];
+    expect(game?.rules.map(rule => rule.id)).toEqual(expected ? [expected] : []);
   }
   expect(games).toHaveLength(4992);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
@@ -99,6 +102,50 @@ test('native identity validation rejects stale or unsupported acceptance evidenc
   expect(mutateDecision(review => { review.decisions.push(review.decisions[0]); })).toThrow('Duplicate native');
   expect(() => nativeIdentityAdditions(snapshotText, decisionsText, [{ name: 'Existing game', bggId: '156' }])).toThrow('Duplicate native');
   expect(() => nativeIdentityAdditions(snapshotText, decisionsText, [{ name: 'SKYJO', bggId: '999999' }])).toThrow('Duplicate native');
+});
+
+test('accepted native alternate names are search-only and deduped without held identity leakage', async () => {
+  const games = getBoardGames();
+  const identities = nativeIdentityAdditions(readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8'), readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'), []).games;
+  const entries = await directorySearch().json() as Array<{ name: string; id: string; ruleCount: number; terms?: string[]; slug?: string }>;
+  for (const [id, name, alternate] of [
+    ['273910', 'Stars of Akarios', 'Звёзды Акариоса'],
+    ['322421', 'Aqua Garden', 'Зоосад: Вода'],
+    ['360899', 'Harrow County: The Game of Gothic Conflict', 'Округ Хэрроу: Готическое противостояние'],
+    ['447999', 'Dino Garden', 'Зоосад: Дино'],
+  ] as const) {
+    expect(identities.find(game => game.bggId === id)).toMatchObject({ name, searchNames: expect.arrayContaining([alternate]), status: 'needs-primary-source' });
+    expect(identities.find(game => game.bggId === id)).not.toHaveProperty('rules');
+    const game = games.find(game => game.bggId === id)!;
+    expect(game).toMatchObject({ name, searchNames: expect.arrayContaining([alternate]) });
+    const entry = entries.find(entry => entry.id === id)!;
+    expect(entry).toMatchObject({ name, ruleCount: game.rules.length, terms: expect.arrayContaining([alternate]) });
+    if (game.rules.length === 1) expect(entry.slug).toBe(game.rules[0]!.slug);
+    else expect(entry).not.toHaveProperty('slug');
+    expect(entries.filter(entry => entry.terms?.some(term => directorySearchKey(term) === directorySearchKey(alternate))).map(entry => entry.id)).toEqual([id]);
+  }
+  expect(games.find(game => game.bggId === '273910')!.rules).toEqual([]);
+  expect(games.find(game => game.bggId === '396790')!.searchNames.filter(name => name === 'Nukleum')).toHaveLength(1);
+  expect(games.find(game => game.bggId === '258779')!.searchNames.filter(name => name === 'プラネット アンノウン')).toHaveLength(1);
+  expect(games.find(game => game.bggId === '245476')!.searchNames).toEqual([]);
+  const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
+  const heldIds = new Set(review.decisions.filter((decision: { decision: string }) => decision.decision === 'hold').map((decision: { bggId: string }) => decision.bggId));
+  expect(games.filter(game => heldIds.has(game.bggId)).every(game => game.searchNames.length === 0)).toBe(true);
+  expect(entries.some(entry => entry.terms?.includes('Брасс: Питтсбург'))).toBe(false);
+  expect(entries.some(entry => entry.id === '452264')).toBe(false);
+  for (const entry of entries) {
+    const keys = [entry.name, ...(entry.terms ?? [])].map(directorySearchKey);
+    expect(new Set(keys).size).toBe(keys.length);
+    expect(Object.keys(entry).every(key => ['name', 'id', 'ruleCount', 'terms', 'slug'].includes(key))).toBe(true);
+  }
+  // Alternate names cannot attach another game's rule or move an approved edition.
+  expect(games.flatMap(game => game.rules.map(rule => rule.id)).toSorted()).toEqual(getCatalog().map(rule => rule.id).toSorted());
+  const catalog = getCatalog();
+  const searchOnlyRule = { ...catalog[0]!, id: 'test-search-only-title', gameName: 'Зоосад: Вода', aliases: [] };
+  const catalogSpy = vi.spyOn(catalogModule, 'getCatalog').mockReturnValue([...catalog, searchOnlyRule]);
+  try {
+    expect(getBoardGames().some(game => game.rules.some(rule => rule.id === searchOnlyRule.id))).toBe(false);
+  } finally { catalogSpy.mockRestore(); }
 });
 test('native acceptance distinguishes semantic and direct numeric proof while retaining prior holds', () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
@@ -238,6 +285,11 @@ test('native identity validation checks the preserved entity and actual nondepre
   expect(changedEntity(item => { item.entity.claims.P2339[0].mainsnak.datavalue.value = '999999'; item.bggIdClaims[0].mainsnak.datavalue.value = '999999'; })).toThrow('P2339 evidence');
   expect(changedEntity(item => { item.entity.lastrevid += 1; })).toThrow('P2339 evidence');
   expect(changedEntity(item => { item.entity.labels.de.value = 'Invented title'; })).toThrow('Missing native entity title');
+  expect(changedEntity(item => { item.titleOptions.push({ text: 'Invented search name', language: 'ru', source: 'label' }); })).toThrow('Missing native alternate title');
+  expect(changedEntity(item => {
+    item.titleOptions.push({ text: 'Deprecated search name', language: 'ru', source: 'P1476', statementId: `${item.wikidataId}$test-title` });
+    item.entity.claims.P1476 = [{ id: `${item.wikidataId}$test-title`, rank: 'deprecated', mainsnak: { property: 'P1476', snaktype: 'value', datavalue: { type: 'monolingualtext', value: { text: 'Deprecated search name', language: 'ru' } } } }];
+  })).toThrow('Missing native alternate title');
 });
 test('coverage does not merge unrelated games with identical or punctuation-equivalent names', () => {
   const coverage = getCoverage();
@@ -263,6 +315,39 @@ test('the three manual approvals bind exact revisions and remain outside the por
     expect(raw.tieBreakApplicable).toBe(false);
   }
 });
+test('CrowD shared-folder manual approvals bind exact revisions and three independent edition assignments', () => {
+  const games = getBoardGames();
+  const catalog = getCatalog();
+  expect(catalog).toHaveLength(890);
+  expect(games.filter(game => game.rules.length > 0)).toHaveLength(884);
+  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4108);
+  for (const [id, ruleId, firstPage, folder] of [
+    ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
+    ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
+    ['360899', 'harrow-county-off-the-page-en-2023-full', 19, 'IjsvmsDwtKGLPQ'],
+  ] as const) {
+    const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${ruleId}.json`, 'utf8')));
+    const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${ruleId}.json`, 'utf8')));
+    expect(contentRevision(draft)).toBe(raw.approvedRevision);
+    expect(draft).toMatchObject({ status: 'needs-review', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
+    expect(games.find(game => game.bggId === id)?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(raw.sources[0]).toMatchObject({ url: `https://disk.yandex.ru/d/${folder}`, pdfPagesOneBased: expect.arrayContaining([firstPage]) });
+    expect(raw.sources[0]!.pdfPagesOneBased[0]).toBe(firstPage);
+    expect(raw.tieBreakApplicable).toBe(false);
+    expect(raw.officialTieBreak).toBeNull();
+    expect(randomRuleEligible(catalog.find(rule => rule.id === ruleId)!)).toBe(false);
+    expect(() => assertPublishable({ ...raw, firstPlayerRule: 'Different opening' })).toThrow('stale');
+  }
+  const dino = catalog.find(rule => rule.id === 'dino-garden-uchibacoya-en-rulebook')!;
+  expect(dino.sources[0]!.location).toContain('spread8, left, no visible printed numeral');
+  expect(dino.clarifications.join(' ')).toContain('space ahead on the Main track');
+  const harrow = catalog.find(rule => rule.id === 'harrow-county-off-the-page-en-2023-full')!;
+  expect(harrow.editionLabel).toContain('full two-player');
+  expect(harrow.clarifications.join(' ')).toContain('Training Game');
+  expect(harrow.clarifications.join(' ')).toContain('Fair Folk');
+  expect(harrow.houseFallback).toContain('who reveals the first setup tile');
+});
+
 test('drafts cannot publish and approval is bound to the exact content', () => {
   const draft = ruleSchema.parse(readRecords('research/games')[0]);
   expect(() => assertPublishable(draft)).toThrow('not approved');

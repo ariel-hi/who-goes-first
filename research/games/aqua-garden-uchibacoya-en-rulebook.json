@@ -1,0 +1,57 @@
+{
+  "id": "aqua-garden-uchibacoya-en-rulebook",
+  "slug": "aqua-garden-uchibacoya-en-rulebook",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Aqua Garden",
+  "aliases": [],
+  "editionLabel": "UCHIBACOYA · English base-game manual · multiplayer opening · 2–4 players",
+  "firstPlayerRule": "Choose the starting player by any method. Put their Owner token on the “1st” space of the Standby track, then place the other players’ tokens above it in clockwise seating order.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group wants a quick way to make that choice, pick a player at random.",
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "This is the initial setup order. During play, the Owner token farthest behind on the Main track acts next; that player can take another turn if still farthest behind. Turns do not simply continue around the table.",
+    "At the start of a round, Owner tokens are on the Standby track. A lower token counts as farther behind. Owner tokens cannot end a move on an occupied space.",
+    "Moving to Standby ends that player’s actions for the round. The next round begins with the Owner token at the bottom of the Standby track, so the initial seating order does not determine every later opening.",
+    "In the two-player rules, an unused-color Owner token called Lucy starts in the third Standby position. Lucy is a dummy token, not a third human or a separate test for choosing the human starter.",
+    "Solo play has its own changes: use four-player setup and three-player play rules as directed, with no Lucy and only your own Owner token moving. Multiplayer starter selection does not apply.",
+    "The source link opens the publisher-linked shared folder. Select “«Зоосад. Вода» правила на Английском языке.pdf”; the starting instruction is on PDF spread 3, printed page 5, setup step 16."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://disk.yandex.ru/d/_tSRueefX4dKjQ",
+      "title": "Aqua Garden — English rulebook: «Зоосад. Вода» правила на Английском языке.pdf",
+      "publisher": "UCHIBACOYA; distributed through the official CrowD-linked folder",
+      "printedPages": [
+        "5",
+        "6–7",
+        "12",
+        "14",
+        "16",
+        "unnumbered cover/credits beside page 16"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        7,
+        8,
+        1
+      ],
+      "location": "Folder filename «Зоосад. Вода» правила на Английском языке.pdf; Player Setup step16 (PDF spread3, right/printed5); Action turn order (spread4); Preparation phase (spread7, left/printed12); Two-Player Rules (spread8, left/printed14); Solo Rules and cover/credits (spread1)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root independent source review2026-09-26 under standing owner authorization2026-09-22. Complete original English PDF research\\source-files\\sep26-crowd-yandex-folder-manual-intake\\pdf-02-aqua.pdf, 8168421bytes, SHA256 a333e2d2a6105577d4c645ec29e2ca4148f24a01b7d7ecc4260d4919419fd0bb; intake manifest39ea700f62a8bafa0fad81f7d3c07cba72998d42d09d3e6cebdfc822d8988dd7. Root opened all19 complete contact sheets covering74pages (Aqua8/Dino10 imposed spreads; Harrow56 pages), plus full-resolution Aqua1/3 and Dino1/3/8. Source extractor warning means original PDFs/renders are authoritative. Root independently rehashed all242 sealed intake members/216827410bytes,49 original prior manual-source members and7 current inputs/887 approved files at HEAD27cdd1fd013562c15b561f4f67ce79522ced37d4; publisher bodies, exact historical anchor index/byte context, folder response, verbatim resource path and complete PDF hash checked. Public citation is stable sourceUrl plus literal filename; signed resource addresses remain private. Historical source bindings remain unchanged. Initial4GET batch and explicit6GET PDF continuation have separate bounds; browser subrequest count is unknown. Root made no new GET. All saved identity decisions, false rule-transfer flags, source proposals, earlier holds and catalog files remain unchanged. Root independently derived the exact public answer, variant/order/edition boundaries and locator precision; this research record preserves needs-review/null lifecycle, and an approved copy will bind only its exact final revision. No random-pool approval, edition transfer or deployment.",
+  "uncertainty": [
+    "The reviewed English PDF does not visually establish a numbered edition or copyright year. Metadata title EN_AquaGarden2_rulebooks and December2025 file timestamps do not prove a second edition or publication date.",
+    "This answer is scoped to the complete preserved English base manual in the CrowD-linked folder. No Russian rule text, expansion, FAQ, later revision or universal printing equivalence was reviewed.",
+    "Random choice is our optional method for the manual’s open choice, not a specific official selection criterion. No separate tie procedure is needed for that open choice.",
+    "The PDF is imposed in spreads: PDF page1 has printed16 plus the unnumbered cover; the opening is on PDF3/printed5. The signed download address is custody evidence only, so the stable public citation is the folder plus exact filename."
+  ]
+}

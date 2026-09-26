@@ -1,6 +1,16 @@
 export type Searchable = { gameName: string; aliases: string[]; editionLabel: string };
 export type PreparedSearch = { titles: string[]; edition: string };
 export const normalizeSearch = (value: string) => value.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().trim();
+export const directorySearchKey = (value: string) => normalizeSearch(value).replace(/[^\p{L}\p{N}]+/gu, '');
+export function uniqueDirectorySearchTerms(name: string, terms: readonly string[]): string[] {
+  const seen = new Set([directorySearchKey(name)]);
+  return terms.filter(term => {
+    const key = directorySearchKey(term);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
 // A snapshot for catalogs whose names do not change while the page is open.
 export function prepareSearch(record: Searchable): PreparedSearch {
   return { titles: [record.gameName, ...record.aliases].map(normalizeSearch), edition: normalizeSearch(record.editionLabel) };
