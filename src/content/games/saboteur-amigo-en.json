@@ -1,0 +1,38 @@
+{
+  "id": "saboteur-amigo-en",
+  "slug": "saboteur-amigo-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "1d67eca47db041beb6812fdf2296662a123745520204da7aea2e6bf28ca7579d",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Saboteur",
+  "aliases": [],
+  "editionLabel": "AMIGO English base game",
+  "firstPlayerRule": "The youngest player goes first. Play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly between them. This is a house rule, not a tie-break supplied by the manual.",
+  "clarifications": [
+    "For the next round, the player to the left of whoever played the preceding round's final card starts."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/04900-GB-AmigoRule.pdf",
+      "title": "Saboteur — English rules",
+      "publisher": "AMIGO Spiel + Freizeit",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Playing the Game on the first sheet; Starting a New Round on the second sheet",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted English rules, copyright 2004, 2012, 2025. Opening instruction: 'The youngest player goes first.' The second sheet supplies a separate later-round starter. Source custody: research/source-files/popular-sep26/saboteur.pdf; SHA-256 fdb825d5b130af36bf930deb755837798636654f1b0956ca5cacbb3e4989756a. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The youngest-player instruction supplies no age-tie procedure. This review does not cover Saboteur 2 or anniversary variants."
+  ]
+}
