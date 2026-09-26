@@ -5,6 +5,7 @@ import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { z } from 'zod';
 import { contentRevision, publicRule, ruleSchema } from '../src/lib/content/schema';
 import { randomRuleRevision } from '../src/lib/content/random-rules';
+import { getBoardGameInventory } from '../src/lib/content/board-games';
 
 const manifest = z.array(z.object({ id: z.string(), name: z.string(), bggId: z.string().regex(/^\d+$/).nullable().optional(), random: z.boolean() }).loose());
 const inventoryPath = 'research/coverage/discovery-index.json';
@@ -12,7 +13,11 @@ const poolPath = 'src/content/random-rule-pool.json';
 const inventory = JSON.parse(readFileSync(inventoryPath, 'utf8'));
 const pool = JSON.parse(readFileSync(poolPath, 'utf8'));
 const nameKey = (name: string) => name.normalize('NFKD').replace(/\p{M}/gu, '').toLocaleLowerCase('en').replace(/[^\p{L}\p{N}]/gu, '');
-const known = new Set<string>(inventory.games.map((game: { bggId: string }) => game.bggId));
+// Reviewed identity sources also feed the directory. Do not add a second copy
+// to the discovery file when a newly sourced rule matches one of those games.
+const directory = getBoardGameInventory();
+const known = new Set(directory.games.map(game => game.bggId));
+const knownNames = new Set(directory.games.map(game => nameKey(game.name)));
 let added = 0, pooled = 0, repaired = 0;
 
 for (const file of readdirSync('research/claude-batches').filter(name => name.endsWith('.json') && name !== 'targets.json').sort()) {
@@ -28,9 +33,9 @@ for (const file of readdirSync('research/claude-batches').filter(name => name.en
       repaired++;
     }
     if (entry.name !== record.gameName) console.warn(`${entry.id}: manifest name "${entry.name}" differs from "${record.gameName}"`);
-    if (entry.bggId && !known.has(entry.bggId) && !inventory.games.some((game: { name: string }) => nameKey(game.name) === nameKey(record.gameName))) {
+    if (entry.bggId && !known.has(entry.bggId) && !knownNames.has(nameKey(record.gameName))) {
       inventory.games.push({ name: record.gameName, bggId: entry.bggId, discoveryUrl: `https://boardgamegeek.com/boardgame/${entry.bggId}`, status: 'needs-primary-source' });
-      known.add(entry.bggId); added++;
+      known.add(entry.bggId); knownNames.add(nameKey(record.gameName)); added++;
     }
     if (entry.random && !pool.revisions[record.id]) { pool.revisions[record.id] = randomRuleRevision(publicRule(record)); pooled++; }
   }

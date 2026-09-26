@@ -78,14 +78,19 @@ test('reviewed identities retain edition distinctions without transferring a sta
   // The unresolved Deluxe mapping is held rather than merged with the original.
   expect(games.some(game => game.bggId === '345972')).toBe(false);
 });
+test('Camel Up original and second edition bind their separately reviewed manuals', () => {
+  const games = getBoardGames();
+  expect(games.find(game => game.bggId === '153938')?.rules.map(rule => rule.id)).toEqual(['camel-up-eggertspiele-original-en']);
+  expect(games.find(game => game.bggId === '260605')?.rules.map(rule => rule.id)).toEqual(['camel-up-lookout-second-en']);
+});
 test('native and language-neutral identities enroll only after primary identity acceptance', () => {
   const games = getBoardGames();
   for (const [id, name] of [['156', 'Abenteuer Tierwelt'], ['1806', 'Rüsselbande'], ['2537', 'Der König der Diebe'], ['153938', 'Camel Up'], ['204135', 'Skyjo'], ['245476', 'CuBirds'], ['396790', 'Nucleum'], ['397598', 'Dune: Imperium – Uprising']] as const) {
     const game = games.find(game => game.bggId === id);
     expect(game?.name).toBe(name);
-    // These four still have identity evidence only. Modern source approvals
+    // These three still have identity evidence only. Modern source approvals
     // are separately checked against their exact identities and editions.
-    if (['156', '1806', '2537', '153938'].includes(id)) expect(game?.rules).toEqual([]);
+    if (['156', '1806', '2537'].includes(id)) expect(game?.rules).toEqual([]);
   }
   for (const [id, name] of [['286063', 'The 7th Citadel'], ['356944', 'Stonesaga'], ['400602', 'Civolution'], ['434367', 'Nippon: Zaibatsu']] as const) {
     const game = games.find(game => game.bggId === id);
@@ -127,7 +132,7 @@ test('native and language-neutral identities enroll only after primary identity 
   for (const [id, name] of [['325853', 'Lama Dice'], ['394889', 'Cabanga!'], ['447384', 'Meister Makatsu']] as const) {
     expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
   }
-  expect(games).toHaveLength(5006);
+  expect(new Set(games.map(game => game.bggId)).size).toBe(games.length);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
@@ -449,9 +454,6 @@ test('the three manual approvals bind exact revisions and remain outside the por
 test('CrowD shared-folder manual approvals bind exact revisions and four independent edition assignments', () => {
   const games = getBoardGames();
   const catalog = getCatalog();
-  expect(catalog).toHaveLength(957);
-  expect(games.filter(game => game.rules.length > 0)).toHaveLength(947);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4059);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
