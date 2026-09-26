@@ -1,0 +1,41 @@
+{
+  "id": "dominant-species-gmt-en",
+  "slug": "dominant-species-gmt-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dominant Species",
+  "aliases": [],
+  "editionLabel": "GMT English base game",
+  "firstPlayerRule": "The animal furthest left on the Initiative track makes the first action-pawn placement. Set the initial track in reverse Food Chain order: insects, arachnids, amphibians, birds, reptiles, then mammals, using only the animals in play.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Planning proceeds from left to right along the Initiative track. Action resolution later follows the action display from top to bottom and left to right."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.gmtgames.com/living_rules/DS3_Rulebook-web_FINAL.pdf",
+      "title": "Dominant Species — English rulebook",
+      "publisher": "GMT Games",
+      "printedPages": [
+        "3",
+        "4",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        9
+      ],
+      "location": "Food chain; Game setup — Animals and Begin play; Planning phase",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "OfficialGMTliving-rulesmanual thirdprinting2012. Rendered4reverseFoodChainandexplicitBeginPlayfirstAP,9planningversusexecution;page3textdefinesfullFoodChain. Game-specific animalorder,not generic simultaneous despite overviewlanguage. Source custody: research/source-files/popular-sep26-10/species.pdf; SHA-256 a2e935b6256694655e57651a6f639d943600edc74a62bc29a65cc505e7372c48. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
