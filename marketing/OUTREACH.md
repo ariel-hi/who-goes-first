@@ -24,6 +24,8 @@ The PDF response declares the printable page as its preferred canonical using an
 
 ## Bluesky drafts
 
+Production rule pages and the printable-card page offer a plain **Share on Bluesky** action beside their existing sharing control. It opens an editable draft with the public title and clean canonical link; the visitor still confirms publication. No Bluesky script or new analytics event is loaded. Previews and draft rules do not expose this action. This visitor workflow does not choose the owner's launch account. See [Bluesky's action intent documentation](https://bsky.network/docs/intent-links/).
+
 Publish from the site's own account when available. Use one post at a time, with an accurate landing page and the corresponding image. Keep the link intact so consented visits can be attributed. Suggested posts:
 
 1. “Game night stuck on who starts? We made a free first-player picker for 2–50 people. Add names or just use numbered seats; every entry gets the same chance.” `https://whogoesfirst.fun/?utm_source=bluesky&utm_medium=organic_social&utm_campaign=first_player_picker` — attach `first-player-picker.png` or let the link preview show the site's social card.

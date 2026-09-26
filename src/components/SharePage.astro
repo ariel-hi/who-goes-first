@@ -1,11 +1,15 @@
 ---
-interface Props { label?: string }
-const { label = 'Share this page' } = Astro.props;
+import BlueskyShare from './BlueskyShare.astro';
+interface Props { label?: string; title?: string }
+const { label = 'Share this page', title } = Astro.props;
 ---
+<div class="sharing-actions">
 <div class="page-share" data-page-share hidden>
   <button type="button" class="text-button" data-share-button>{label}</button>
   <span class="small muted" role="status" data-share-status></span>
   <input type="url" readonly hidden aria-label="Clean sharing link" data-share-link />
+</div>
+<BlueskyShare title={title} />
 </div>
 <script>
   import { cleanLink, shareLink } from '../lib/share';
@@ -30,7 +34,8 @@ const { label = 'Share this page' } = Astro.props;
   });
 </script>
 <style>
-  .page-share{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:12px}
+  .sharing-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:12px}
+  .page-share{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;max-width:100%}
   .page-share[hidden]{display:none}
   input{flex:1;min-width:220px;max-width:100%}
 </style>
