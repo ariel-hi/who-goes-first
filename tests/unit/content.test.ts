@@ -69,16 +69,24 @@ test('native and language-neutral identities enroll only after primary identity 
     expect(game?.name).toBe(name);
     expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
   }
-  expect(games).toHaveLength(4988);
+  for (const [id, name] of [
+    ['273910', 'Stars of Akarios'], ['322421', 'Aqua Garden'],
+    ['360899', 'Harrow County: The Game of Gothic Conflict'], ['447999', 'Dino Garden'],
+  ] as const) {
+    const game = games.find(game => game.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules).toEqual([]);
+  }
+  expect(games).toHaveLength(4992);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
-  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '452264']) {
+  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '452264']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
 });
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(32);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(36);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -102,12 +110,28 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 32, hold: 256, reviewed: 42, unreviewed: 246 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(32);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(256);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(42);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(246);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(10);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 36, hold: 252, reviewed: 47, unreviewed: 241 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(36);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(252);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(47);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(241);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(11);
+  for (const id of ['41829', '273910', '322421', '360899', '447999']) {
+    const decision = review.decisions.find((item: {bggId:string}) => item.bggId === id);
+    expect(decision).toMatchObject({ decision: id === '41829' ? 'hold' : 'accept', reviewed:true, startingRuleApproved:false, editionRuleTransferApproved:false });
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision:'hold', reviewed:false, selectedTitle:decision.selectedTitle, idProvenance:decision.idProvenance });
+    expect(decision.rootIdentityReview.applicationHead).toBe('8021cfce8468e3937d2b494c95ae0ffd83b54973');
+    expect(decision.sourceIds.every((sourceId:string) => review.sources[sourceId]?.status === 'retrieved')).toBe(true);
+    if (['273910','322421','360899'].includes(id)) {
+      expect(decision.idEvidenceStatus).toBe('primary-href-and-wikidata-statement');
+      expect(decision.independentRawIdEvidence).toHaveLength(1);
+      expect(decision.independentRawIdEvidence[0]).toMatchObject({rawId:id,exactCandidateId:true,destinationFetched:false});
+    } else expect(decision.independentRawIdEvidence).toEqual([]);
+  }
+  const dino = review.decisions.find((item:{bggId:string}) => item.bggId === '447999');
+  expect(dino.semanticIdentityEvidence).not.toHaveProperty('primaryNumericHrefObserved');
+  expect(dino.semanticIdentityEvidence).toMatchObject({primaryProductNumericHrefObserved:false,primaryNumericTitleBindingEstablished:false,observedUnboundCollectionHref:{href:'https://boardgamegeek.com/boardgame/447999/dino-garden',titleBindingEstablished:false,destinationFetched:false}});
   for (const id of ['359029', '387388', '422374', '428280']) {
     const decision = review.decisions.find((item: {bggId: string}) => item.bggId === id);
     expect(decision).toMatchObject({ decision: id === '428280' ? 'accept' : 'hold', reviewed: true, idEvidenceStatus: 'wikidata-statement-only', independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });

@@ -1,6 +1,8 @@
 # Supplementary native-title discovery
 
-Retrieved and reviewed on 2026-09-26 UTC. The supplementary corpus and identity review remain separate from the original English snapshot and its existing review. Runtime enrollment explicitly consumes only the 18 primary-supported accepts. No starting-player rule, source draft, identity override, random-rule pool, or published count document is changed by this work.
+Retrieved and reviewed on 2026-09-26 UTC. The supplementary corpus and identity review remain separate from the original English snapshot and its existing review. The initial checkpoint enrolled18 primary-supported accepts. Subsequent reviews now enroll **36 accepts /252 holds /47 reviewed /241 unreviewed**, bringing the effective directory to **4,992 identities**. Every native identity decision still has false starting-rule and edition-transfer approval flags; approved rules use their separate exact-revision workflow.
+
+The [latest CrowD checkpoint](sep26-crowd-four-identities-progress.md) adds Stars of Akarios, Aqua Garden and Harrow County with separately observed exact primary numeric hrefs, plus Dino Garden through semantic publisher/native-title/product corroboration with Wikidata-only numeric authority. Octex retains a reviewed human/musician misassociation hold. Dino's unbound image collection href remains distinct from numeric title proof; original sealed proposals and complete prior decisions are preserved. Below, the25-reviewed/18-accepted section and tables record the initial pass, not the current totals.
 
 ## Complete current pool
 
@@ -51,9 +53,9 @@ Only the official [Wikidata Query Service](https://query.wikidata.org/) and [Wik
 
 ## Separate primary identity decisions
 
-`wikidata-native-title-decisions.json` records one decision for every candidate. The 13 previous unheld leads were independently reviewed, as were 12 additional straightforward or potentially ambiguous products. There are 18 identity accepts and 270 holds. Of the 25 reviewed identities, seven remain held; 263 others are unreviewed. Every decision has `startingRuleApproved: false` and `editionRuleTransferApproved: false`.
+`wikidata-native-title-decisions.json` records one decision for every candidate. In the initial pass, the13 previous unheld leads were independently reviewed, as were12 additional straightforward or potentially ambiguous products. That pass had18 identity accepts and270 holds:25 reviewed identities, seven reviewed holds and263 unreviewed. Every decision has `startingRuleApproved: false` and `editionRuleTransferApproved: false`; current totals are recorded above.
 
-Accept is bounded to discovery identity/name evidence. It does not establish a starting-player rule, original publication year, localization or edition equivalence. The runtime now enrolls these 18 accepted discovery identities and excludes all held/unreviewed candidates. Source IDs, exact selected title/language, raw ID/QID, revision, matching P2339 statement IDs and hashes are recorded. Raw primary responses remain under ignored `artifacts/native-title-full-sept26/primary`.
+Accept is bounded to discovery identity/name evidence. It does not establish a starting-player rule, original publication year, localization or edition equivalence. The runtime enrolled these18 initial identities and continues to exclude held/unreviewed candidates; later reviewed accepts are recorded above. Source IDs, exact selected title/language, raw ID/QID, revision, matching P2339 statement IDs and hashes are recorded. Initial raw primary responses remain under ignored `artifacts/native-title-full-sept26/primary`; later checkpoints bind their separate preserved source bundles.
 
 ### Previous 13 unheld leads
 
