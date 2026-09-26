@@ -1,0 +1,47 @@
+{
+  "id": "star-wars-x-wing-ffg-original-en",
+  "slug": "star-wars-x-wing-ffg-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "0af7d1500439683195a964b9cc991b52ff2f7fb4b86a93e85e59d1da46cc6272",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Star Wars: X-Wing Miniatures Game",
+  "aliases": [],
+  "editionLabel": "FFG English original core set",
+  "firstPlayerRule": "Players plan maneuvers simultaneously. In the Activation phase, the ship with the lowest pilot skill activates first; in Combat, the ship with the highest pilot skill attacks first.",
+  "officialTieBreak": "When opposing ships share a pilot skill, the player with initiative resolves their ships at that skill first. A player chooses the order among their own ships with the same pilot skill.",
+  "houseFallback": null,
+  "clarifications": [
+    "In this original core rulebook, the Imperial player normally has initiative. Under its squad-building rules, the player with the lower squad-point total has initiative; equal totals give it to the Imperial player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.fantasyflightgames.com/ffg_content/x-wing/support/SWX01_XwingCoreRulebook_lowres.pdf",
+      "title": "Star Wars: X-Wing Miniatures Game — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "6",
+        "7",
+        "10",
+        "16",
+        "18"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7,
+        10,
+        16,
+        18
+      ],
+      "location": "Planning phase; Activation phase — Breaking ties; Combat phase; Initiative; Initiative when squad building",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official FFG original core PDF. Rendered6 simultaneous planning;7 ascending pilot skill activation;10 descending skill combat;16 initiative resolves equal skill;18 original squad-building lower-points rule and Imperial equal-point fallback. These historical core rules were not substituted with Force Awakens or second-edition procedures. Source custody: research/source-files/popular-sep26-05/xwing.pdf; SHA-256 c6ffb914f97414a67128d86dbf7099583ce3e28076e60cffdd6f268165ac2172. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This record covers the original core rulebook. Later first-edition revisions, tournament rules and the second edition are outside its scope."
+  ]
+}
