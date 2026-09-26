@@ -1,0 +1,56 @@
+{
+  "id": "yami-crowd-ru-training-manual",
+  "slug": "yami-crowd-ru-training-manual",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root — full primary-source review 2026-09-26 under owner authorization 2026-09-22; independent review /root/catalog_audit",
+  "approvedRevision": "d65c92e7471235bad42322b5cfd64888bdbd65c138a5abbe87de657437c91aa9",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Yami",
+  "aliases": [],
+  "editionLabel": "CrowD Games · English summary of the Russian base rules · opening training mission · 2–4 players",
+  "firstPlayerRule": "For the opening training mission, choose the first player by any method and give them the Kakapo pawn. That player leads the first trick; with two human players and Automa, a human must start.",
+  "officialTieBreak": null,
+  "houseFallback": "Choose one of the human players at random to lead the opening trick.",
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The first player leads any spirit card from their hand, then participants play clockwise. Follow the led color if possible; otherwise play any card.",
+    "In a two-player game, Automa is an artificial third participant. It receives ten cards: six form a face-down deck and four are face up on its board. The Kakapo pawn belongs to a human, who makes Automa’s decisions.",
+    "Cards are dealt before the first player is selected. The four-player setup deals nine cards to each of the first three recipients and eight to the fourth; that hand-size table does not appoint the opening leader.",
+    "If another round is needed within the mission, the previous trick winner leads it. Automa may lead a later trick, but never receives the Kakapo pawn; when it leads, the human holding the pawn chooses its play.",
+    "This answer covers the opening teaching setup and basic trick order in the main manual. The separate travel journal, later mission instructions, envelope contents, kingdom-map file and promotional campaign material were not reviewed.",
+    "The source link opens the publisher-linked folder. Select “Ями. Правила игры.pdf”; first-player choice and the human-only opening exception are on PDF and printed page 4, with later-round and Automa rules on pages 5–6."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://disk.yandex.ru/d/zNyTWDsIvJsItA",
+      "title": "Yami — Russian rules: Ями. Правила игры.pdf",
+      "publisher": "CrowD Games — Russian edition and official shared-folder distribution; MUSOKA STUDIO imprint",
+      "printedPages": [
+        "2–7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        3,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2
+      ],
+      "location": "Folder file Ями. Правила игры.pdf. Opening teaching setup, 2–4-player deal and two-player Automa (PDF/printed 3–4); any-method first-player selection, Kakapo pawn and clockwise first trick (4); Automa controller and possible later lead (5–6); later trick winner leads (6); transition to separately referenced travel journal (7). PDF page 8 has unnumbered Russian CrowD Games credits and MUSOKA STUDIO logo with no visible copyright year; PDF page 1 is unnumbered.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Independent /root/held_identity_review read the complete eight-page original Russian manual and opened every 120-dpi full-page Poppler render at original detail on 2026-09-26. Original get-04-yami-pdf.pdf: 14037743 bytes, SHA256 f858e7b411af5b37e2d1eba7e11228f769ad6cd0a9073c9e542a9b030b2906e7. The bytes match the exact prior folder-reported size. The visible cover says Ями; the unnumbered last page identifies the Russian publisher Crowd Games and MUSOKA STUDIO. The complete sealed CrowD product rules anchor points to zNyTWDsIvJsItA; its observed root listing identifies exact Ями. Правила игры.pdf resource91aa4f6cff384830b7a68df5802baec5afb9d8084ef348009f03440cfdc317e4 and literal public resource path. A double-click on that named public row and its Скачать control exposed a literal original-file download iframe; no viewer/API URL was invented. Two direct GETs, including one literal HTTPS redirect, yielded the complete original PDF. Browser subrequests are separate and unknown; both owned tabs closed. Main step9 on p4 follows p3 hand dealing and explicitly permits any selection method, with a human-only two-player opening. The first trick goes clockwise. Pp5–6 let Automa lead later after winning a trick while a human retains the Kakapo pawn/controller role. The opening answer is scoped to the training mission because p7 sends later campaign play to a separate travel journal. Yami452684 is bound only to its distinct accepted native identity; the product title The Kakapo: Buddy & Party and related Kakapo410097 identity do not establish alias, merge or rules transfer. Promo/more missions, without-box SKU, separate map, journal and envelope contents are not reviewed. All891 catalog hashes/42 overrides and current inputs remain historical snapshots at HEADdf5af118a302065d3da00eceb1af0608f0a3b820. Draft lifecycle remains unapproved/unpublished and outside the portable random pool.",
+  "uncertainty": [
+    "English paraphrase of the exact Russian main manual. No visible copyright year, numbered edition or revision imprint was found; metadata/file/marketing dates are not used to infer one.",
+    "Scope is the opening training mission and the main manual’s basic trick order. The separate travel journal, later campaign mission rules, envelope contents and promotional missions were not retrieved or reviewed.",
+    "Yami452684 and Kakapo410097 remain distinct. Product-title metadata discrepancy and saved Wikidata relationship do not authorize aliasing or edition/rule transfer.",
+    "The separately observed unlabeled Yami collection folder OMg4FXqFabLpeA, without-box SKU and kingdom-map PDF were not fetched; no equivalence to the main rules folder is claimed.",
+    "The official setup permits any first-player selection method and supplies no priority criterion or tied-choice procedure. A random human choice is an optional house method, not a required official roll."
+  ]
+}

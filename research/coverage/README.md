@@ -2,7 +2,9 @@
 
 The owner requested the entire starting-rule compendium, not a named starter list. That objective remains unfinished.
 
-The [latest identity and focus checkpoint](sep26-three-native-focus-progress.md) has **4,995 identities /891 approved editions /885 sourced /4,110 pending**, with361 portable criteria and60 house prompts. Spectacular, The Great Library and Yami add distinct pending identities and five validated native search names. Yami and Kakapo remain separate. Home rule-search links now retain a complete inset keyboard focus ring.
+The [latest manual and native rule-search checkpoint](sep26-two-manual-rule-search-progress.md) has **4,995 identities /893 approved editions /887 sourced /4,108 pending**, with361 portable criteria and60 house prompts. Spectacular and Yami add exact reviewed Russian manual summaries, scoped to ordinary simultaneous play and the opening training mission respectively. Their identities remain distinct; Great Library still awaits a final source. Validated native names now reach existing checked editions directly from the home lookup and public rules library, with unchanged approved record aliases and assignments.
+
+The [preceding identity and focus checkpoint](sep26-three-native-focus-progress.md) has **4,995 identities /891 approved editions /885 sourced /4,110 pending**, with361 portable criteria and60 house prompts. Spectacular, The Great Library and Yami add distinct pending identities and five validated native search names. Yami and Kakapo remain separate. Home rule-search links now retain a complete inset keyboard focus ring.
 
 The [preceding Akarios and home-continuity checkpoint](sep26-akarios-home-continuity-progress.md) has **4,992 identities /891 approved editions /885 sourced /4,107 pending**, with361 portable criteria and60 house prompts. Stars of Akarios adds an exact reviewed English summary of the Russian main manual, scoped to free pilot action order in combat/world exploration. Separate scenario and FAQ/errata limits remain explicit. Native decisions and source proposals are unchanged.
 

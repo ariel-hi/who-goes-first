@@ -1,0 +1,59 @@
+{
+  "id": "spectacular-crowd-ru-base-manual",
+  "slug": "spectacular-crowd-ru-base-manual",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Spectacular",
+  "aliases": [],
+  "editionLabel": "CrowD Games · English summary of the Russian base rules · 2–6 players",
+  "firstPlayerRule": "Players act simultaneously, completing each phase together. If you need to see opponents’ component choices, choose components in ascending order of the numbers on the supply boards currently in front of you.",
+  "officialTieBreak": null,
+  "houseFallback": "Agree on a phase coordinator, or choose one at random if nobody volunteers. This role does not give that player the first move.",
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The rules ask you to choose a coordinator who checks that everyone has finished a phase and announces the next one. They do not give the coordinator priority when choosing or placing components.",
+    "The three phases are choosing components, building your reserve, and preparing the next turn. The numbered-board exception applies to component selection; it does not turn all phases into individual turns.",
+    "Setup gives each player a random player board and supply board. Before play, each player may swap one starting animal tile with one from their personal set and reroll any of their personal-set dice once; these options do not select a starter.",
+    "Supply boards pass clockwise after each turn, including after the eighth and final turn of round one. If sequential selection is needed again, use the numbers on the boards currently held, not a permanent seating order.",
+    "This answer covers ordinary multiplayer play. The manual has separate solo setup and a five-step solo turn on pages 10–12; it does not use a multiplayer starter.",
+    "The source link opens the publisher-linked folder. Select “Заповедник. Исчезающие виды. Правила игры.pdf”; the simultaneous phases, coordinator and selection-order exception are on PDF and printed page 6."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://disk.yandex.ru/d/avf_1T19WUChTg",
+      "title": "Spectacular — Russian rules: Заповедник. Исчезающие виды. Правила игры.pdf",
+      "publisher": "CrowD Games — Russian edition; Chilifox Games original imprint",
+      "printedPages": [
+        "3–8",
+        "10–11"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        12,
+        1
+      ],
+      "location": "Folder file Заповедник. Исчезающие виды. Правила игры.pdf. Multiplayer range (PDF/printed 3); random boards and setup (4–5); simultaneous phases, coordinator and conditional ascending supply-board selection (6); clockwise board passing and round transition (7–8); separate solo rules (10–12). PDF page 12 has unnumbered credits identifying the Russian CrowD Games edition and ©2024 Chilifox Games imprint; PDF page 1 is the unnumbered cover.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Independent /root/held_identity_review read the complete 12-page original Russian manual and opened every 120-dpi full-page Poppler render at original detail on 2026-09-26. Original get-02-spectacular-pdf.pdf: 40736303 bytes, SHA256 241cdccf73865b6992ab1b798ad51095c23be358e852c20713695308161f10b3. The bytes match the exact folder-reported size; all PDF contents are Russian. The complete sealed CrowD collection/product bodies identify Spectacular and its Russian title; the product rules anchor literally points to avf_1T19WUChTg. Prior complete folder state exposes exact filename/resource71593ed416a659995f25855db3fda9d6906cdab50edfa12cee6e405f73556720 and literal short URL https://yadi.sk/i/U64qBNimYzk-Zg. The public browser Download control exposed an exact DOM iframe original URL; no viewer URL or download API was invented. Two direct GETs, including one literal HTTPS redirect, yielded the complete original PDF. Browser subrequests are separate and unknown, with both owned tabs closed. Read the complete relevant setup pp3–5, phase/exception p6, board/round pp7–8, scoring tie p9, solo pp10–12 and visible credits p12. Scoring ties do not choose a starter. No fixed first mover, lowest seat, board1 requirement, age criterion or official random choice was invented. Current-input bindings preserve HEADdf5af118a302065d3da00eceb1af0608f0a3b820, exact cc38ea826a434ee3c588263c64ae82a580e8ce78694204a74dfe6c3ddb619230 native decisions, all891 catalog hashes and42 overrides. This draft is not approved, enrolled, published or eligible for any random pool; only exact content may be independently approved later.",
+  "uncertainty": [
+    "English paraphrase of this exact Russian base manual, not a review of the original English edition, an expansion or a revised printing.",
+    "The visible ©2024 line identifies the Chilifox imprint; PDF metadata dates and publisher marketing do not establish a numbered edition, Russian release year or revision equivalence.",
+    "The separately listed reference-aid PDF was not fetched; solo rules were read for boundaries but the main answer covers 2–6-player play.",
+    "The coordinator has no official selection criterion. Agreement/random selection in houseFallback is an optional house method, not an official first-player rule.",
+    "The conditional numbered-board sequence applies only when players need to see opponents’ selections; simultaneous play remains the stated default."
+  ]
+}

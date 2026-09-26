@@ -6,6 +6,7 @@ import * as catalogModule from '../../src/lib/content/catalog';
 import { assertPublishable, contentRevision, publicRule, ruleSchema } from '../../src/lib/content/schema';
 import { directorySearchKey, searchRank } from '../../src/lib/search';
 import { GET as directorySearch } from '../../src/pages/board-games/search.json';
+import { GET as ruleSearch } from '../../src/pages/rule-index.json';
 import { getCoverage } from '../../src/lib/content/coverage';
 import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/board-games';
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
@@ -81,8 +82,11 @@ test('native and language-neutral identities enroll only after primary identity 
     expect(game?.rules.map(rule => rule.id)).toEqual(expected ? [expected] : []);
   }
   for (const [id, name] of [['415147', 'Spectacular'], ['432834', 'The Great Library'], ['452684', 'Yami']] as const) {
-    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
+    expect(games.find(game => game.bggId === id)?.name).toBe(name);
   }
+  expect(games.find(game => game.bggId === '432834')?.rules).toEqual([]);
+  expect(games.find(game => game.bggId === '415147')?.rules.map(rule => rule.id)).toEqual(['spectacular-crowd-ru-base-manual']);
+  expect(games.find(game => game.bggId === '452684')?.rules.map(rule => rule.id)).toEqual(['yami-crowd-ru-training-manual']);
   expect(games.find(game => game.bggId === '410097')).toMatchObject({ name: 'The Kakapo: Buddy & Party', rules: [] });
   expect(games).toHaveLength(4995);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
@@ -158,6 +162,42 @@ test('accepted native alternate names are search-only and deduped without held i
     expect(getBoardGames().some(game => game.rules.some(rule => rule.id === searchOnlyRule.id))).toBe(false);
   } finally { catalogSpy.mockRestore(); }
 });
+test('checked rule search follows assigned native identities without changing approved content', async () => {
+  const catalog = getCatalog();
+  const before = JSON.stringify(catalog);
+  const entries = await ruleSearch().json() as Array<{ n: string; a: string[]; e: string; s: string }>;
+  expect(entries.map(entry => entry.s)).toEqual(catalog.map(rule => rule.slug));
+  for (const game of getBoardGames()) {
+    for (const rule of game.rules) {
+      const entry = entries.find(entry => entry.s === rule.slug)!;
+      expect(entry).toMatchObject({ n: rule.gameName, e: rule.editionLabel });
+      for (const name of rule.aliases) {
+        expect(searchRank({ gameName: entry.n, aliases: entry.a, editionLabel: entry.e }, name)).toBe(0);
+      }
+      for (const name of game.searchNames) {
+        expect(Number.isFinite(searchRank({ gameName: entry.n, aliases: entry.a, editionLabel: entry.e }, name))).toBe(true);
+      }
+      expect(entry.a.slice(0, rule.aliases.length)).toEqual(rule.aliases);
+      const addedKeys = entry.a.slice(rule.aliases.length).map(directorySearchKey);
+      expect(new Set(addedKeys).size).toBe(addedKeys.length);
+      const originalKeys = [entry.n, ...rule.aliases].map(directorySearchKey);
+      expect(addedKeys.every(key => !originalKeys.includes(key))).toBe(true);
+    }
+  }
+  expect(entries.find(entry => entry.s === 'stars-of-akarios-crowd-ru-base-manual')!.a).toContain('Звёзды Акариоса');
+  expect(entries.some(entry => entry.a.includes('Брасс: Питтсбург'))).toBe(false);
+  expect(entries.some(entry => entry.a.includes('Великая библиотека'))).toBe(false);
+  expect(JSON.stringify(getCatalog())).toBe(before);
+  expect(catalog.find(rule => rule.id === 'stars-of-akarios-crowd-ru-base-manual')!.aliases).toEqual([]);
+
+  const unmapped = { ...catalog[0]!, id: 'test-unmapped-search', slug: 'test-unmapped-search', gameName: 'Unmapped fixture', aliases: ['Fixture alias'] };
+  const catalogSpy = vi.spyOn(catalogModule, 'getCatalog').mockReturnValue([...catalog, unmapped]);
+  try {
+    const withFixture = await ruleSearch().json() as typeof entries;
+    expect(withFixture.find(entry => entry.s === unmapped.slug)).toMatchObject({ n: unmapped.gameName, a: unmapped.aliases });
+  } finally { catalogSpy.mockRestore(); }
+});
+
 test('native acceptance distinguishes semantic and direct numeric proof while retaining prior holds', () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const decisions = review.decisions as Array<{
@@ -341,9 +381,9 @@ test('the three manual approvals bind exact revisions and remain outside the por
 test('CrowD shared-folder manual approvals bind exact revisions and four independent edition assignments', () => {
   const games = getBoardGames();
   const catalog = getCatalog();
-  expect(catalog).toHaveLength(891);
-  expect(games.filter(game => game.rules.length > 0)).toHaveLength(885);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4110);
+  expect(catalog).toHaveLength(893);
+  expect(games.filter(game => game.rules.length > 0)).toHaveLength(887);
+  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4108);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
@@ -376,6 +416,35 @@ test('CrowD shared-folder manual approvals bind exact revisions and four indepen
   expect(akarios.sources[0]!.pdfPagesOneBased.slice(0, 2)).toEqual([13, 37]);
   expect(akarios.clarifications.join(' ')).toContain('first choose a space-event option together');
   expect(akarios.clarifications.join(' ')).toContain('separate scenario book was not reviewed');
+});
+
+test('Spectacular and Yami bind exact Russian manual openings without portable or related-game transfer', () => {
+  const catalog = getCatalog();
+  for (const [id, page, folder] of [
+    ['spectacular-crowd-ru-base-manual', 6, 'avf_1T19WUChTg'],
+    ['yami-crowd-ru-training-manual', 4, 'zNyTWDsIvJsItA'],
+  ] as const) {
+    const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
+    const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
+    expect(contentRevision(draft)).toBe(raw.approvedRevision);
+    expect(draft).toMatchObject({ status: 'needs-review', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
+    expect(raw.sources[0]!.url).toBe(`https://disk.yandex.ru/d/${folder}`);
+    expect(raw.sources[0]!.pdfPagesOneBased[0]).toBe(page);
+    expect(raw.tieBreakApplicable).toBe(false);
+    expect(raw.officialTieBreak).toBeNull();
+    expect(raw.aliases).toEqual([]);
+    expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(false);
+    expect(() => assertPublishable({ ...raw, editionLabel: 'Unreviewed English edition' })).toThrow('stale');
+  }
+  const spectacular = catalog.find(rule => rule.id === 'spectacular-crowd-ru-base-manual')!;
+  expect(spectacular.firstPlayerRule).toContain('simultaneously');
+  expect(spectacular.firstPlayerRule).toContain('numbers on the supply boards currently');
+  expect(spectacular.houseFallback).toContain('does not give that player the first move');
+  const yami = catalog.find(rule => rule.id === 'yami-crowd-ru-training-manual')!;
+  expect(yami.editionLabel).toContain('opening training mission');
+  expect(yami.firstPlayerRule).toContain('a human must start');
+  expect(yami.clarifications.join(' ')).toContain('Automa may lead a later trick, but never receives the Kakapo pawn');
+  expect(getBoardGames().find(game => game.bggId === '410097')!.rules).toEqual([]);
 });
 
 test('drafts cannot publish and approval is bound to the exact content', () => {
