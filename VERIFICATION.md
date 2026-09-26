@@ -1,4 +1,16 @@
-# Local verification — updated 2026-09-25 UTC
+# Local verification — updated 2026-09-26 UTC
+
+## Scalable directory and motion checkpoint — 2026-09-26 UTC
+
+The active directory now lists **4,940 game identities**, adding **3,572** unflagged, name-distinct Wikidata P2339 leads. The reproducible CC0 snapshot retains QID provenance, the exact query and a statement hash; its offline validator passed. Flagged and title-colliding leads remain held for review. All **861 approved rule records** still map to exactly one identity; **855 identities** have a researched edition and **4,085** need primary-source research. No new starting-rule prose was imported, and this is not proof of every board game worldwide.
+
+The directory landing page now links to **42 static letter pages**, each with at most 180 identities. Search loads its local JSON index only after input. Single-edition games link to their sourced answer; six multi-edition choosers remain separate pages. **1,362 legacy identity URLs** receive generated 301 redirects to a sourced answer or the corresponding letter page. The build audit verifies every identity appears exactly once, all internal links work, and sitemap/indexable-page parity is exact. The Cloudflare artifact gate checks the [20,000-file Free plan limit](https://developers.cloudflare.com/pages/platform/limits/) and the [2,000 static redirect limit](https://developers.cloudflare.com/pages/configuration/redirects/).
+
+The directory HTML shrank from **383,575 to 7,802 bytes** before compression (98% smaller). Removing redundant fields reduced the lazy search payload from **757,580 to 347,428 bytes**; normalized search keys are computed once on the device. Astro builds after route optimization measured **4.12–11.34 seconds** on this shared host. The final preview contains **926 pages** and **14,039 audited internal links**, compared with 2,246 pages at the prior checkpoint. These are local build measurements, not field performance or SEO ranking claims.
+
+Motion fixes give long winner names their own space at narrow widths, fade dice placeholders with an actual keyframe, hide decorative duplicate rosters from assistive technology and announce reveal progress. The balloon survivor captures its final transform and lands over 320ms; a Chromium frame sample preserved x=-0.724/y=-7.161 at the result boundary, then eased to y=-5.408 after 50ms. Reduced-motion settings disable this landing. Desktop and 320px directory captures plus the long-name mobile result capture were opened and inspected without visible clipping or overlapping controls.
+
+The final `npm run verify` passed: 94 Astro files with zero diagnostics, lint, **45 unit tests**, content validation, and static/SEO/budget audits. **12 focused browser tests passed** across Chromium, Firefox and WebKit for public browsing/search, complete development inventory, narrow long-name results and dice placeholder/accessibility behavior. The release matrix passed after the directory architecture changes; later landing/copy changes passed verification and the focused browser run. The smaller search payload passed a subsequent final verification and its public-search browser rerun. No new Lighthouse run, physical-device check, manual screen-reader check or full browser-suite pass is claimed. No deployment occurred. The perpetual improvement goal remains active.
 
 ## Board directory and motion checkpoint — 2026-09-25 UTC
 

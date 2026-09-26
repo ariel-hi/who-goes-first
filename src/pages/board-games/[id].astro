@@ -4,7 +4,9 @@ import { getBoardGames } from '../../lib/content/board-games';
 import { siteSettings } from '../../lib/site';
 export function getStaticPaths() {
   const games = getBoardGames();
-  return games.map(game => ({ params: { id: game.bggId }, props: { game, namesake: games.filter(other => other.name === game.name).length > 1 } }));
+  const nameCounts = new Map<string, number>();
+  for (const game of games) nameCounts.set(game.name, (nameCounts.get(game.name) ?? 0) + 1);
+  return games.filter(game => game.rules.length > 1).map(game => ({ params: { id: game.bggId }, props: { game, namesake: (nameCounts.get(game.name) ?? 0) > 1 } }));
 }
 const game = Astro.props.game as ReturnType<typeof getBoardGames>[number];
 const site = siteSettings().url;

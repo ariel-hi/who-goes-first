@@ -1,9 +1,10 @@
 import { expect, test } from 'vitest';
-import { readRecords } from '../../src/lib/content/catalog';
+import { getCatalog, readRecords } from '../../src/lib/content/catalog';
 import { assertPublishable, contentRevision, publicRule, ruleSchema } from '../../src/lib/content/schema';
 import { searchRank } from '../../src/lib/search';
 import { getCoverage } from '../../src/lib/content/coverage';
 import { getBoardGames } from '../../src/lib/content/board-games';
+import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
 test('public board game directory includes every discovered identity and links only approved matching rules', () => {
   const games = getBoardGames();
   expect(games.length).toBeGreaterThanOrEqual(1320);
@@ -11,6 +12,18 @@ test('public board game directory includes every discovered identity and links o
   expect(games.find(game => game.name === 'Azul')?.rules.map(rule => rule.id)).toContain('azul-2018-en');
   expect(games.find(game => game.bggId === '377449')?.rules.map(rule => rule.id)).not.toContain('chomp-gamewright-en');
   expect(games.some(game => game.rules.length === 0)).toBe(true);
+  const assignments = games.flatMap(game => game.rules.map(rule => rule.id));
+  expect(assignments.toSorted()).toEqual(getCatalog().map(rule => rule.id).toSorted());
+  expect(games.find(game => game.bggId === '209418')?.rules.map(rule => rule.id)).toContain('dominion-2021-en');
+  expect(games.find(game => game.bggId === '36218')?.rules).toEqual([]);
+});
+test('browse shelves include each identity once within a bounded page size', () => {
+  const { games, shelves } = getBrowseShelves();
+  const listed = shelves.flatMap(shelf => shelf.games);
+  expect(listed.length).toBe(games.length);
+  expect(new Set(listed.map(game => game.bggId)).size).toBe(games.length);
+  expect(shelves.every(shelf => shelf.games.length > 0 && shelf.games.length <= BROWSE_PAGE_SIZE)).toBe(true);
+  expect(games.length).toBeGreaterThan(4900);
 });
 test('coverage does not merge unrelated games with identical or punctuation-equivalent names', () => {
   const coverage = getCoverage();

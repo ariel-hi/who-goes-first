@@ -3,6 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { showAllMethods, DEV, STATIC } from './helpers';
 import { readFileSync, readdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { contentRevision, ruleSchema } from '../../src/lib/content/schema';
+import { getBoardGameInventory } from '../../src/lib/content/board-games';
 
 test('actual dev preview hydrates and supports all reveals, names and preferences', async ({ page }) => {
   test.setTimeout(90000);
@@ -83,7 +84,7 @@ test('the full researched catalog is listed and representative sourced pages wor
 });
 
 test('full discovery inventory is searchable and never counted as finished rules', async ({ page }) => {
-  const inventory = JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8'));
+  const inventory = getBoardGameInventory();
   await page.goto(`${DEV}/dev/coverage/`);
   await expect(page.locator('.coverage-list li')).toHaveCount(inventory.games.length);
   await expect(page.getByText('Game identities are not verified starting rules.')).toBeVisible();

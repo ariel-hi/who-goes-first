@@ -7,10 +7,12 @@ import { readRecords } from '../src/lib/content/catalog';
 import { ruleSchema, promptSchema } from '../src/lib/content/schema';
 import { auditSeo } from './lib/audit-seo';
 import { editorialGuard } from './lib/audit-editorial';
+import { boardGameHref, getBrowseShelves, shelfHref } from '../src/lib/content/board-game-browse';
 const output = process.env.BUILD_OUT_DIR || 'dist';
 const settings = siteSettings();
 function walk(dir: string): string[] { return readdirSync(dir).flatMap(name => { const path = join(dir, name); return statSync(path).isDirectory() ? walk(path) : [path]; }); }
 const files = walk(output);
+if (files.length + 2 > 20_000) throw new Error(`Build has ${files.length + 2} files; Cloudflare Pages Free supports at most 20,000 files. Keep unverified identities on browse shelves rather than generating one page per game.`);
 const checkEditorial = editorialGuard(
   readRecords('src/content/games').map(raw => ruleSchema.parse(raw)),
   readRecords('src/content/prompts').flatMap(raw => Array.isArray(raw) ? raw : [raw]).map(raw => promptSchema.parse(raw)),
@@ -56,4 +58,21 @@ const googleSources = settings.production ? ' https://www.googletagmanager.com h
 const csp = `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
 if (`  Content-Security-Policy: ${csp}`.length > 2000) throw new Error('CSP exceeds Cloudflare Pages header line limit; split policies by route before expanding the catalog.');
 writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
+// Previous builds emitted a thin /board-games/<id>/ page for every original
+// identity. Redirect those URLs to the researched answer or the exact browse
+// shelf, while retaining only multi-edition chooser pages as HTML assets.
+const browse = getBrowseShelves();
+const searchEntries = JSON.parse(readFileSync(join(output, 'board-games/search.json'), 'utf8')) as { id: string }[];
+const searchIds = new Set(searchEntries.map(game => game.id));
+if (searchEntries.length !== browse.games.length || searchIds.size !== browse.games.length || browse.games.some(game => !searchIds.has(game.bggId))) throw new Error('Search index must include every board-game identity exactly once');
+const shelvesById = new Map(browse.shelves.flatMap(shelf => shelf.games.map(game => [game.bggId, shelfHref(shelf.letter, shelf.page)] as const)));
+const gamesById = new Map(browse.games.map(game => [game.bggId, game]));
+const originalIds = (JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8')) as { games: { bggId: string }[] }).games.map(game => game.bggId);
+const redirects = originalIds.flatMap(id => {
+  const game = gamesById.get(id)!;
+  if (game.rules.length > 1) return [];
+  return [`/board-games/${id}/ ${game.rules.length ? boardGameHref(game) : shelvesById.get(id)!} 301`];
+});
+if (redirects.length > 2_000) throw new Error('Legacy board-game redirects exceed the Cloudflare Pages static redirect limit');
+writeFileSync(join(output, '_redirects'), `${redirects.join('\n')}\n`);
 console.log(`Build audit passed (${settings.production ? 'production' : 'preview'}): private-content exclusion, canonicals, indexing, headers, static answer isolation.\nConservative gzip budgets: initial JS ${initialJs} B; Balloon ${optionalJs} B; basic home ${aboveFold} B.`);

@@ -1,82 +1,105 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getBoardGames } from '../../lib/content/board-games';
+import { getBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
 import { getCatalog } from '../../lib/content/catalog';
-const games = getBoardGames().toSorted((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }));
+const { games, letters } = getBrowseShelves();
 const withRules = games.filter(game => game.rules.length > 0).length;
 const linkedRuleIds = new Set(games.flatMap(game => game.rules.map(rule => rule.id)));
 const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
-const groupName = (name: string) => {
-  const first = name.normalize('NFKD').replace(/\p{M}/gu, '').charAt(0).toUpperCase();
-  return /^[A-Z]$/.test(first) ? first : /^\d$/.test(first) ? '0–9' : 'Other';
-};
-const groups = [...new Set(games.map(game => groupName(game.name)))].map(letter => ({
-  letter,
-  id: `games-${letter === '0–9' ? 'numbers' : letter.toLowerCase()}`,
-  games: games.filter(game => groupName(game.name) === letter),
-}));
 ---
 <Layout title="Board Game Directory — Who Goes First?" description={`Browse ${games.length} board games by name and find their starting-player rules when a checked edition is available.`} pageType="CollectionPage">
   <div class="content-page">
     <h1>Board games.</h1>
     <p class="lede">Find the game you’re playing.</p>
-    <p>{withRules.toLocaleString('en')} of these {games.length.toLocaleString('en')} games have a sourced starting-player rule here. For the rest, use the <a href="/">player picker</a>.</p>
+    <p>Browse {games.length.toLocaleString('en')} games and editions. {withRules.toLocaleString('en')} have a sourced starting-player rule here. If yours is still awaiting one, use the <a href="/">player picker</a>.</p>
     <div data-board-directory>
-      <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name…" autocomplete="off" maxlength="100" /></label>
-      <div class="directory-filters" data-filters role="group" aria-label="Filter board games">
-        <button type="button" data-filter="all" aria-pressed="true" disabled>All games <span>{games.length.toLocaleString('en')}</span></button>
-        <button type="button" data-filter="rules" aria-pressed="false" disabled>With a rule <span>{withRules.toLocaleString('en')}</span></button>
-        <button type="button" data-filter="pending" aria-pressed="false" disabled>Awaiting a rule <span>{(games.length - withRules).toLocaleString('en')}</span></button>
+      <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name or BGG number…" autocomplete="off" maxlength="100" disabled /></label>
+      <div class="directory-filters" data-filters role="group" aria-label="Filter search results" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">All matches</button>
+        <button type="button" data-filter="rules" aria-pressed="false">With a rule</button>
+        <button type="button" data-filter="pending" aria-pressed="false">Awaiting a rule</button>
       </div>
-      <nav class="directory-alphabet" aria-label="Jump to game names">{groups.map(group => <a href={`#${group.id}`} aria-label={`Games starting with ${group.letter}`}>{group.letter}</a>)}</nav>
-      <p class="count-label" data-count role="status">{games.length.toLocaleString('en')} games listed</p>
-      {groups.map(group => <section class="directory-group" id={group.id} aria-labelledby={`${group.id}-heading`}>
-        <h2 id={`${group.id}-heading`}>{group.letter}</h2>
-        <ul class="game-list">{group.games.map(game => <li data-search={[game.name, ...game.rules.flatMap(rule => [...rule.aliases, rule.editionLabel])].join(' ')} data-id={game.bggId} data-has-rule={game.rules.length > 0 ? 'true' : 'false'}>
-          <a href={game.rules.length === 1 ? `/games/${game.rules[0]!.slug}/` : `/board-games/${game.bggId}/`}><span>{game.name}<small>{game.rules.length > 1 ? `${game.rules.length} sourced editions` : game.rules.length ? 'Starting rule available' : 'Awaiting a sourced rule'}</small></span><span class="directory-arrow" aria-hidden="true">→</span></a>
-        </li>)}</ul>
-      </section>)}
+      <p class="count-label" data-count role="status" hidden></p>
+      <ul class="game-list directory-results" data-results hidden></ul>
       <p data-empty hidden>No matching game in this collection.</p>
-      <noscript><p class="small muted">The complete list and letter links work without JavaScript. Search and filters need JavaScript.</p></noscript>
+      <noscript><p class="small muted">Browse the letter pages below. Search needs JavaScript.</p></noscript>
     </div>
+    <h2 class="directory-browse-heading">Browse by name</h2>
+    <nav class="directory-letter-grid" aria-label="Browse game names by letter">
+      {letters.map(({ letter, count }) => <a href={shelfHref(letter)} aria-label={`Browse ${shelfLabel(letter)} games`}><strong>{shelfLabel(letter)}</strong><span>{count.toLocaleString('en')} {count === 1 ? 'game' : 'games'}</span></a>)}
+    </nav>
+    <p class="small muted">This collection is growing. Additional game names come from <a href="https://www.wikidata.org/wiki/Property:P2339">Wikidata</a> under CC0. Starting rules are checked against publisher sources. Names without a rule open BoardGameGeek.</p>
     {extraRules.length > 0 && <section class="rule-section"><h2>More sourced editions</h2><p>These editions have a starting-player rule and are listed separately from the collection above.</p><ul class="game-list">{extraRules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.gameName}<small>{rule.editionLabel}</small></span></a></li>)}</ul></section>}
   </div>
 </Layout>
 <script>
   import { normalizeSearch } from '../../lib/search';
+  type SearchEntry = { name: string; id: string; ruleCount: number; slug?: string; terms?: string[] };
+  type SearchGame = { name: string; nameKey: string; id: string; href: string; search: string; hasRule: boolean; ruleCount: number };
   const root = document.querySelector<HTMLElement>('[data-board-directory]')!;
   const input = root.querySelector<HTMLInputElement>('input')!;
-  const rows = [...root.querySelectorAll<HTMLLIElement>('.directory-group li')].map(row => ({
-    row,
-    name: normalizeSearch(row.dataset.search!).replace(/[^\p{L}\p{N}]+/gu, ''),
-    id: row.dataset.id!,
-    hasRule: row.dataset.hasRule === 'true',
-  }));
-  const groups = [...root.querySelectorAll<HTMLElement>('.directory-group')];
   const filters = root.querySelector<HTMLElement>('[data-filters]')!;
-  const alphabet = root.querySelector<HTMLElement>('.directory-alphabet')!;
+  const count = root.querySelector<HTMLElement>('[data-count]')!;
+  const results = root.querySelector<HTMLUListElement>('[data-results]')!;
+  const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+  let data: SearchGame[] | undefined;
+  let loading: Promise<SearchGame[]> | undefined;
   let filter = 'all';
-  for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.disabled = false;
-  const update = () => {
-    const query = normalizeSearch(input.value).replace(/[^\p{L}\p{N}]+/gu, '');
-    let count = 0;
-    for (const { row, name, id, hasRule } of rows) {
-      const matchesQuery = name.includes(query) || id.includes(query);
-      const matchesFilter = filter === 'all' || hasRule === (filter === 'rules');
-      row.hidden = !matchesQuery || !matchesFilter;
-      if (!row.hidden) count++;
+  let revision = 0;
+  const compact = (value: string) => normalizeSearch(value).replace(/[^\p{L}\p{N}]+/gu, '');
+  const load = () => loading ??= fetch('/board-games/search.json').then(response => {
+    if (!response.ok) throw new Error(`Search unavailable (${response.status})`);
+    return response.json() as Promise<SearchEntry[]>;
+  }).then(entries => data = entries.map(game => ({
+    name: game.name, nameKey: compact(game.name), id: game.id, ruleCount: game.ruleCount,
+    hasRule: game.ruleCount > 0,
+    href: game.ruleCount === 1 ? `/games/${game.slug}/` : game.ruleCount > 1 ? `/board-games/${game.id}/` : `https://boardgamegeek.com/boardgame/${game.id}`,
+    search: compact([game.name, ...(game.terms ?? [])].join(' ')),
+  }))).catch(error => { loading = undefined; throw error; });
+  const render = async () => {
+    const thisRevision = ++revision;
+    const query = compact(input.value);
+    results.replaceChildren();
+    if (!query) {
+      results.hidden = true; filters.hidden = true; count.hidden = true; empty.hidden = true;
+      return;
     }
-    for (const group of groups) group.hidden = !group.querySelector('li:not([hidden])');
-    alphabet.hidden = Boolean(query) || filter !== 'all';
-    root.querySelector<HTMLElement>('[data-count]')!.textContent = `${count.toLocaleString('en')} ${count === 1 ? 'game' : 'games'} ${query || filter !== 'all' ? 'found' : 'listed'}`;
-    root.querySelector<HTMLElement>('[data-empty]')!.hidden = count > 0;
+    count.hidden = false; count.textContent = 'Searching…';
+    try { await load(); } catch {
+      if (thisRevision === revision) count.textContent = 'Search is unavailable. Browse by letter below.';
+      return;
+    }
+    if (thisRevision !== revision) return;
+    const matches = data!.filter(game => (game.search.includes(query) || game.id.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
+    matches.sort((a, b) => {
+      const rank = (game: SearchGame) => game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
+      return rank(a) - rank(b) || a.name.localeCompare(b.name, 'en', { numeric: true });
+    });
+    const fragment = document.createDocumentFragment();
+    for (const game of matches.slice(0, 80)) {
+      const item = document.createElement('li');
+      item.dataset.id = game.id;
+      item.dataset.hasRule = String(game.hasRule);
+      const link = document.createElement('a'); link.href = game.href;
+      const label = document.createElement('span'); label.textContent = game.name;
+      const status = document.createElement('small'); status.textContent = game.ruleCount > 1 ? `${game.ruleCount} sourced editions` : game.hasRule ? 'Starting rule available' : 'Awaiting a sourced rule · View game identity';
+      label.append(status); link.append(label);
+      const arrow = document.createElement('span'); arrow.className = 'directory-arrow'; arrow.ariaHidden = 'true'; arrow.textContent = '→'; link.append(arrow);
+      item.append(link); fragment.append(item);
+    }
+    results.append(fragment);
+    results.hidden = matches.length === 0;
+    filters.hidden = false;
+    empty.hidden = matches.length !== 0;
+    count.textContent = `${matches.length.toLocaleString('en')} ${matches.length === 1 ? 'game' : 'games'} found${matches.length > 80 ? ' · showing first 80; add more letters to narrow your search' : ''}`;
   };
-  input.addEventListener('input', update);
+  input.disabled = false;
+  input.addEventListener('input', render);
   filters.addEventListener('click', event => {
     const button = (event.target as Element).closest<HTMLButtonElement>('button[data-filter]');
     if (!button) return;
     filter = button.dataset.filter!;
     for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice === button));
-    update();
+    render();
   });
 </script>

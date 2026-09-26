@@ -23,6 +23,18 @@ async function openMethod(page: Page, path: string) {
   await expect(page.getByRole('button', { name: 'Pick a player' })).toBeEnabled();
 }
 
+test('dice placeholders fade before the final pips and the scene is decorative to assistive tech', async ({ page }) => {
+  await openMethod(page, 'dice');
+  await page.getByRole('button', { name: 'Pick a player' }).click();
+  await expect(page.locator('.dice-reveal')).toBeVisible();
+  await expect(page.locator('.reveal-stage')).toHaveAttribute('aria-hidden', 'true');
+  const animation = await page.locator('.die').first().evaluate(element => getComputedStyle(element, '::after').animationName);
+  expect(animation).toBe('hide-placeholder');
+  await expect(page.locator('.winner-announcement')).toContainText('Seat 2 goes first');
+  const opacity = await page.locator('.die').first().evaluate(element => getComputedStyle(element, '::after').opacity);
+  expect(opacity).toBe('0');
+});
+
 for (const method of methods) test(`${method.label} keeps the scene after completion and replay`, async ({ page }) => {
   await openMethod(page, method.path);
   await page.getByRole('button', { name: 'Pick a player' }).click();

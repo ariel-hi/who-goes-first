@@ -7,7 +7,7 @@ const coverage = getCoverage();
   <div class="content-page">
     <div class="preview-banner"><strong>Research inventory · development only</strong><br/>Game identities are not verified starting rules.</div>
     <h1>Collection coverage.</h1>
-    <p>{coverage.games.length.toLocaleString('en')} game identities from <a href={coverage.indexSource}>First Player Fun</a>, discovered {coverage.discoveredAt}. This is the full inventory of that collection, not a claim to cover every board game.</p>
+    <p>{coverage.games.length.toLocaleString('en')} game identities from the <a href={coverage.indexSource}>original discovery collection</a>, individually checked additions, and <a href="https://www.wikidata.org/wiki/Property:P2339">Wikidata</a>. This growing research inventory does not cover every board game.</p>
     <p><strong>{coverage.researched}</strong> have a researched edition here. <strong>{coverage.pending}</strong> still need a primary source. <a href="/dev/games/">Open the {coverage.ruleCount} researched rules</a></p>
     <p class="small muted">Matches use titles, aliases and reviewed identity corrections. They do not approve a rule or establish that all editions agree. Discovery links identify games; they are not publisher evidence.</p>
     <div data-coverage>

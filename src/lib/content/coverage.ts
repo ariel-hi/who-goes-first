@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { z } from 'zod';
 import { getCatalog, readRecords } from './catalog';
 import { ruleSchema } from './schema';
+import { getBoardGameInventory } from './board-games';
 
 const discoverySchema = z.object({
   discoveredAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
@@ -20,7 +21,7 @@ const identityOverrideSchema = z.array(z.object({
 // Server-only, imported exclusively by development routes and the review CLI.
 // A matched name means at least one edition is researched, never every edition.
 export function getCoverage() {
-  const inventory = discoverySchema.parse(JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8')));
+  const inventory = discoverySchema.parse(getBoardGameInventory());
   if (new Set(inventory.games.map(game => game.bggId)).size !== inventory.games.length) throw new Error('Duplicate discovery identity');
   const drafts = readRecords('research/games').map(rule => ruleSchema.parse(rule));
   const rules = [
@@ -32,10 +33,17 @@ export function getCoverage() {
   for (const item of overrides) {
     if (!rules.some(rule => rule.id === item.ruleId) || item.inventoryIds.some(id => !inventory.games.some(game => game.bggId === id))) throw new Error('Unknown identity override reference');
   }
-  const games = inventory.games.map(game => ({ ...game, editions: rules.filter(rule => {
-    const override = overrides.find(item => item.ruleId === rule.id);
-    return override ? override.inventoryIds.includes(game.bggId) : [rule.gameName, ...rule.aliases].some(name => key(name) === key(game.name));
-  }) }));
+  const byName = new Map<string, string[]>();
+  for (const game of inventory.games) byName.set(key(game.name), [...(byName.get(key(game.name)) ?? []), game.bggId]);
+  const byId = new Map(inventory.games.map(game => [game.bggId, [] as typeof rules]));
+  const overrideMap = new Map(overrides.map(item => [item.ruleId, item.inventoryIds]));
+  for (const rule of rules) {
+    const explicit = overrideMap.get(rule.id);
+    const matches = explicit ?? [...new Set([rule.gameName, ...rule.aliases].flatMap(name => byName.get(key(name)) ?? []))];
+    if (matches.length > 1 && !explicit) throw new Error(`Ambiguous coverage identity for ${rule.id}: ${matches.join(', ')}`);
+    for (const id of matches) byId.get(id)!.push(rule);
+  }
+  const games = inventory.games.map(game => ({ ...game, editions: byId.get(game.bggId)! }));
   const researched = games.filter(game => game.editions.length > 0).length;
   return { ...inventory, games, researched, pending: games.length - researched, ruleCount: rules.length };
 }

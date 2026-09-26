@@ -105,6 +105,12 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const finish = useCallback(() => {
     const outcome = locked.current;
     if (!outcome || completed.current === outcome.drawId) return;
+    if (eventMode.current === 'balloon') {
+      try {
+        const balloon = document.querySelector<SVGElement>('.balloon-field .survivor>svg:first-child');
+        if (balloon) balloon.style.setProperty('--balloon-land-from', getComputedStyle(balloon).transform);
+      } catch { /* A decorative landing cannot delay the selected result. */ }
+    }
     completed.current = outcome.drawId;
     dispatch({ type: 'FINISH', drawId: outcome.drawId });
   }, []);
@@ -225,7 +231,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
           </ul>
         </fieldset>
         <div className={`result-area ${state.phase === 'result' ? 'has-result' : busy ? 'is-revealing' : 'is-ready'}`}>
-          <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement" data-long={winnerLabel.length > 18}>{state.phase === 'result' && winner && <p><bdi>{winnerLabel}</bdi> goes first.</p>}</div>
+          <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement" data-long={winnerLabel.length > 18}>{busy && <span className="sr-only">Revealing the selected player…</span>}{state.phase === 'result' && winner && <p><bdi>{winnerLabel}</bdi> goes first.</p>}</div>
         </div>
         <fieldset className="reveal-options" disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Choose your reveal</legend>
@@ -239,7 +245,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         </fieldset>
         {error && <p role="alert" className="error">{error}</p>}
         {busy ? <button type="button" className="primary" disabled>Revealing…</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
-        {visualMode && scene && <div className="reveal-stage"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
+        {visualMode && scene && <div className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
           <Suspense fallback={<div className="reveal-loading">One moment…</div>}>
             {effectiveMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
           </Suspense>

@@ -79,6 +79,24 @@ test('the in-app motion setting stops the winner glow', async ({ page }) => {
   await expect(page.locator('.player.winner .seat-token')).toHaveCSS('animation-name', 'none');
 });
 
+test('a long winner name has its own space on a narrow phone', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 750 });
+  await controlledRandom(page, 0);
+  await ready(page);
+  await page.getByLabel('Name for player 1', { exact: true }).fill('Magnificent Eucalyptus');
+  await showAllMethods(page);
+  await page.getByRole('radio', { name: /^Instant/ }).check();
+  await page.getByRole('button', { name: 'Pick a player' }).click();
+  await expect(announcement(page)).toContainText('Magnificent Eucalyptus');
+  const boxes = await page.evaluate(() => {
+    const winner = document.querySelector('.winner-announcement p')!.getBoundingClientRect();
+    const tools = document.querySelector('.roster-tools')!.getBoundingClientRect();
+    return { winnerTop: winner.top, toolsBottom: tools.bottom, width: document.documentElement.scrollWidth, viewport: innerWidth };
+  });
+  expect(boxes.winnerTop).toBeGreaterThan(boxes.toolsBottom);
+  expect(boxes.width).toBeLessThanOrEqual(boxes.viewport);
+});
+
 for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) test(`${mode} reveals the same preselected outcome`, async ({ page }) => {
   await controlledRandom(page, 1); await ready(page); await showAllMethods(page);
   await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();
