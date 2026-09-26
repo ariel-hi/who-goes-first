@@ -1,0 +1,39 @@
+{
+  "id": "kingdom-builder-queen-en",
+  "slug": "kingdom-builder-queen-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "25498017ffe4a99458c3db6e3e3440f86005484ff429073b981e4cdd455f211c",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Kingdom Builder",
+  "aliases": [],
+  "editionLabel": "Queen Games English base game",
+  "firstPlayerRule": "The oldest player takes the start-player tile and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If the oldest players are tied, choose randomly among them.",
+  "clarifications": [
+    "Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/kingdom-builder_en.pdf",
+      "title": "Kingdom Builder — English rulebook",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup — Distribution of game components; Sequence of play",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted English base rules. Rendered printed/PDF3 directly connects oldest to first turn and clockwise order. Source custody: research/source-files/popular-sep26-06/kingdom.pdf; SHA-256 d38cf0cb3d004bdd40e6fed1da43f23daf62e01ed6a4226b639b75fe3a5c1012. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The rules do not specify a tie-break for equally old players."
+  ]
+}
