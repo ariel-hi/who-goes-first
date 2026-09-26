@@ -22,7 +22,7 @@ export function pageContentDigest(html: string): string {
     const bytes = Buffer.from(encoded, 'hex');
     try {
       const decoded = new TextDecoder('utf-8', { fatal: true }).decode(bytes.subarray(1).map(byte => byte ^ bytes[0]!));
-      if (!decoded || /[\u0000-\u001f\u007f]/.test(decoded)) continue;
+      if (!decoded || [...decoded].some(char => char.charCodeAt(0) < 32 || char.charCodeAt(0) === 127)) continue;
       changes.push({ start: location.startOffset, end: location.endOffset, text: `href=${JSON.stringify(`mailto:${decoded}`)}` });
     } catch { /* Keep invalid encodings in the hash unchanged. */ }
   }
