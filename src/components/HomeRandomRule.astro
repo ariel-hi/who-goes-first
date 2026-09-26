@@ -23,8 +23,11 @@ const initial = pool.find(game => game.gameName === 'Azul: Master Chocolatier') 
     const button = root.querySelector<HTMLButtonElement>('[data-home-draw-rule]')!;
     const error = root.querySelector<HTMLElement>('[data-home-rule-error]')!;
     let current = root.dataset.current;
+    let busy = false;
     button.addEventListener('click', async () => {
-      button.disabled = true;
+      if (busy) return;
+      busy = true;
+      button.setAttribute('aria-disabled', 'true');
       root.setAttribute('aria-busy', 'true');
       try {
         const pool = (await loadRuleIndex()).filter(rule => rule.p);
@@ -40,7 +43,8 @@ const initial = pool.find(game => game.gameName === 'Azul: Master Chocolatier') 
         error.textContent = 'Another rule is unavailable right now. Try again, or browse the game rules.';
         error.hidden = false;
       } finally {
-        button.disabled = false;
+        busy = false;
+        button.removeAttribute('aria-disabled');
         root.removeAttribute('aria-busy');
       }
     });

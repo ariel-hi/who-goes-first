@@ -12,12 +12,12 @@ import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/bo
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
 import { randomRuleEligible } from '../../src/lib/content/random-rules';
 
-test('Amigo identities retain complete holds and numeric provenance without borrowing rules', async () => {
+test('Amigo identities retain numeric provenance while exact independently reviewed editions supply rules', async () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const games = getBoardGames();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; terms?: string[]; slug?: string }>;
-  const checked = await ruleSearch().json() as Array<{ n: string; a: string[] }>;
-  for (const [id, name] of [['325853', 'Lama Dice'], ['394889', 'Cabanga!'], ['447384', 'Meister Makatsu']] as const) {
+  const checked = await ruleSearch().json() as Array<{ n: string; a: string[]; s: string; p: boolean }>;
+  for (const [id, name, ruleId] of [['325853', 'Lama Dice', 'lama-dice-amigo-en-v1-0'], ['394889', 'Cabanga!', 'cabanga-amigo-en-v1-0'], ['447384', 'Meister Makatsu', 'meister-makatsu-amigo-en-v1-0']] as const) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
     expect(decision).toMatchObject({ decision: 'accept', reviewed: true, priorBoundedDisposition: null, idEvidenceStatus: 'wikidata-statement-only', independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
     expect(decision.identityReviewHistory).toHaveLength(1);
@@ -33,17 +33,58 @@ test('Amigo identities retain complete holds and numeric provenance without borr
         expect(createHash('sha256').update(raw).digest('hex')).toBe(source.sha256);
       }
     }
+    expect(games.find(game => game.bggId === id)?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(directory.find(entry => entry.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+    expect(checked.find(entry => entry.s === ruleId)).toMatchObject({ n: name, p: id !== '447384' });
+  }
+  expect(games.find(game => game.bggId === '447384')?.searchNames).toEqual(['Maître Makatsu']);
+  expect(checked.find(entry => entry.s === 'meister-makatsu-amigo-en-v1-0')?.a).toEqual(['Maître Makatsu']);
+  for (const [id, name] of [['15828', 'Schnapp, Land, Fluss!'], ['146149', 'Speed Cups'], ['433340', 'Fischfutter']] as const) {
+    const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
+    expect(decision).toMatchObject({ decision: 'accept', reviewed: true, priorBoundedDisposition: null, idEvidenceStatus: 'wikidata-statement-only', primaryHostedNumericBggHrefObserved: false, independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision: 'hold', reviewed: false, selectedTitle: decision.selectedTitle, idProvenance: decision.idProvenance, priorBoundedDisposition: null });
     expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
     expect(directory.find(entry => entry.id === id)).toMatchObject({ name, ruleCount: 0 });
     expect(directory.find(entry => entry.id === id)).not.toHaveProperty('slug');
     expect(checked.some(entry => entry.n === name || entry.a.includes(name))).toBe(false);
+    for (const sourceId of decision.sourceIds) {
+      const source = review.sources[sourceId];
+      expect(source.sha256).toMatch(/^[a-f0-9]{64}$/);
+      expect(source.byteCount).toBeGreaterThan(0);
+      if (existsSync(source.cacheFile)) {
+        const raw = readFileSync(source.cacheFile);
+        expect(raw.length).toBe(source.byteCount);
+        expect(createHash('sha256').update(raw).digest('hex')).toBe(source.sha256);
+      }
+    }
   }
-  expect(games.find(game => game.bggId === '447384')?.searchNames).toEqual(['Maître Makatsu']);
-  expect(checked.some(entry => entry.a.includes('Maître Makatsu'))).toBe(false);
-  for (const id of ['15828', '38195', '40234', '146149', '191473', '205766', '257957', '433340', '451923']) {
+  for (const id of ['38195', '40234', '191473', '205766', '257957', '451923']) {
     expect(review.decisions.find((item: { bggId: string }) => item.bggId === id)).toMatchObject({ decision: 'hold', reviewed: false });
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
+});
+
+test('Amigo manual approvals preserve initial versus later order and the figure-dependent portable exclusion', () => {
+  const catalog = getCatalog();
+  for (const [id, file, revision, opening, portable] of [
+    ['lama-dice-amigo-en-v1-0', '02103-GB-AmigoRule.pdf', 'cb8bfd005f72d5f6b3db3ce2591915a10750af8fa83e13ab8ea54c18dd252a74', 'The youngest player starts the first round.', true],
+    ['cabanga-amigo-en-v1-0', '02353-GB-AmigoRule.pdf', '78f15eaaebe0b3b5f7bad9f884b20b1513651fb9163ad7c0d15aa659e6c10899', 'The first player to spell Cabanga! backwards starts the first round.', true],
+    ['meister-makatsu-amigo-en-v1-0', '02553-GB-AmigoRule.pdf', '515061d6472f19409ce42ebd6799878ab04208e41619cf8775d4a6930354881e', 'The player who most recently meditated takes the Meister Makatsu figure and starts the first round.', false],
+  ] as const) {
+    const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
+    const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
+    expect(raw).toMatchObject({ aliases: [], editionLabel: 'AMIGO English rules, Version 1.0', firstPlayerRule: opening, officialTieBreak: null, approvedRevision: revision });
+    expect(raw.houseFallback).toContain('This is a house rule.');
+    expect(raw.sources[0]).toMatchObject({ url: `https://blog.amigo-spiele.de/content/ap/rule/${file}`, pdfPagesOneBased: [1, 2], printedPages: [], checkedAt: '2026-09-26' });
+    expect(contentRevision(draft)).toBe(revision);
+    expect(draft).toMatchObject({ status: 'draft', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
+    expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(portable);
+    expect(() => assertPublishable({ ...raw, firstPlayerRule: 'Another opening' })).toThrow('stale');
+  }
+  expect(catalog.find(rule => rule.id === 'lama-dice-amigo-en-v1-0')?.clarifications.join(' ')).toContain('last player to take an action');
+  expect(catalog.find(rule => rule.id === 'cabanga-amigo-en-v1-0')?.clarifications.join(' ')).toContain('left');
+  expect(catalog.find(rule => rule.id === 'meister-makatsu-amigo-en-v1-0')?.clarifications.join(' ')).toContain('purple');
 });
 
 test('public board game directory includes every discovered identity and links only approved matching rules', () => {
@@ -129,8 +170,8 @@ test('native and language-neutral identities enroll only after primary identity 
   expect(games.find(game => game.bggId === '452684')?.rules.map(rule => rule.id)).toEqual(['yami-crowd-ru-training-manual']);
   expect(games.find(game => game.bggId === '410097')).toMatchObject({ name: 'The Kakapo: Buddy & Party', rules: [] });
   expect(games.find(game => game.bggId === '452264')).toMatchObject({ name: 'Brass: Pittsburgh', rules: [] });
-  for (const [id, name] of [['325853', 'Lama Dice'], ['394889', 'Cabanga!'], ['447384', 'Meister Makatsu']] as const) {
-    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
+  for (const [id, ruleId] of [['325853', 'lama-dice-amigo-en-v1-0'], ['394889', 'cabanga-amigo-en-v1-0'], ['447384', 'meister-makatsu-amigo-en-v1-0']] as const) {
+    expect(games.find(game => game.bggId === id)?.rules.map(rule => rule.id)).toEqual([ruleId]);
   }
   expect(new Set(games.map(game => game.bggId)).size).toBe(games.length);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
@@ -141,7 +182,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(43);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(46);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -255,11 +296,11 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 43, hold: 245, reviewed: 55, unreviewed: 233, additionalAccepted: 33 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(43);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(245);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(55);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(233);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 46, hold: 242, reviewed: 58, unreviewed: 230, additionalAccepted: 36 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(46);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(242);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(58);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(230);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
   for (const id of ['452264', '418683']) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
