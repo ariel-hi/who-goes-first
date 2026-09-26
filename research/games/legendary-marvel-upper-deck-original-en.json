@@ -1,0 +1,39 @@
+{
+  "id": "legendary-marvel-upper-deck-original-en",
+  "slug": "legendary-marvel-upper-deck-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Legendary: A Marvel Deck Building Game",
+  "aliases": [],
+  "editionLabel": "Upper Deck English original core set",
+  "firstPlayerRule": "Choose a player to go first. Turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At the start of a turn, play the top card of the Villain Deck before playing cards from your hand."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://theupperdeckco.wpenginepowered.com/wp-content/uploads/2024/05/Legendary_Rules-Core_Set.pdf",
+      "title": "Legendary: A Marvel Deck Building Game — English rulebook",
+      "publisher": "Upper Deck",
+      "printedPages": [
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Starting the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Upper Deck2024 tournament policy PDF links the original core manual on theupperdeckco.wpenginepowered.com. Followed that embedded publisher hyperlink and retrieved the13-page spread PDF. RenderedPDF5 printed7 explicitly choose a player, clockwise. Do not substitute current2026second-edition manual. Source custody: research/source-files/popular-sep26-08/legendary.pdf; SHA-256 5f19b2412eaea4e7e760ccbcbe57b83fbb15f2ef481ae8ffd6589ea9db9b63e3. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This is the original core-set manual. The newer second-edition core set has a separate rulebook and is not covered by this record."
+  ]
+}
