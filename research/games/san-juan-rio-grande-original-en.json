@@ -1,0 +1,38 @@
+{
+  "id": "san-juan-rio-grande-original-en",
+  "slug": "san-juan-rio-grande-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "San Juan",
+  "aliases": [],
+  "editionLabel": "Rio Grande English original edition",
+  "firstPlayerRule": "Choose a starting player by any method and give them the governor placard. The governor chooses the first role.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The governor performs the chosen role action first, followed clockwise by the other players. The next player clockwise then chooses a role.",
+    "At the end of the round, pass the governor placard left. With two players, the governor chooses a second role after the opponent."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/SanJuan.pdf",
+      "title": "San Juan — English rulebook",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Preparation; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Rio Grande hosted original manual. Printed/PDF2 visually verified any-method selection, first role/action, clockwise sequence and next-round governor rotation. Separate from the later second edition. Source custody: research/source-files/popular-sep26-07/sanjuan.pdf; SHA-256 cb7acfb8433ee28dfbb9a2812bc9bff0f52bbb2f31a7438d1a474ad46ff8765e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
