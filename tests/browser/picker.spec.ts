@@ -117,6 +117,8 @@ test('unsupported selected and remembered methods explain their player limits', 
   await expect(spinnerNotice).toHaveCount(0);
   await expect(page.getByRole('radio', { name: 'Spinner', exact: true })).toBeChecked();
   await ready(page, '/methods/coin/');
+  await expect(page.locator('.picker')).toHaveAttribute('data-count', '12');
+  await expect(count).toHaveValue('12');
   await count.fill('25'); await count.blur();
   await expect(page.getByText('Coin Flip fits up to 24 players. Quick is selected for your group of 25.', { exact: true })).toBeVisible();
 });
@@ -189,7 +191,7 @@ test('a fully visible desktop reveal and Quick draws do not request reveal scrol
   expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
   await page.setViewportSize({ width: 320, height: 844 });
   await page.getByRole('radio', { name: 'Quick', exact: true }).check();
-  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await page.getByRole('button', { name: 'Pick again', exact: true }).click();
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
 });

@@ -59,6 +59,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const reduced = systemReduced || prefs.motion === 'reduce';
   const busy = state.phase === 'revealing';
   const effectiveMode = supportsGroup(mode, eligible.length) ? mode : 'quick';
+  // Preferences choose the next draw; an existing outcome keeps its own reveal.
+  const renderedMode = state.outcome ? eventMode.current : effectiveMode;
   const fallbackLimit = mode !== effectiveMode ? Math.max(...Array.from({ length: 50 }, (_, index) => index + 1).filter(count => supportsGroup(mode, count))) : null;
   const chosenMethod = presentations.find(option => option.id === mode)!;
   // Primary methods first, so opening "More methods" only appends and nothing shifts.
@@ -276,7 +278,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     if (result === 'copied' || result === 'shared') analytics.emit('share_completed', { kind: 'tool' });
   }
 
-  const visualMode = !['instant', 'quick'].includes(effectiveMode);
+  const visualMode = !['instant', 'quick'].includes(renderedMode);
   const preview = visualMode && state.outcome === null && eligible.length >= 2 && errors.length === 0;
   // A deterministic plan supplies the pieces with layout values only. Preview
   // mode suppresses every winner marker and animation; no draw takes place.
@@ -294,7 +296,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
           <legend className="sr-only">Your players</legend>
           <div className="players-heading">
             <div className="roster-tools">
-              <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { if (state.phase === 'result') edited(players); setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
+              <button type="button" className="text-button" aria-expanded={bulkOpen} aria-controls={bulkOpen ? 'bulk-names' : undefined} onClick={() => { setText(players.map(p => p.label).join('\n')); setBulkOpen(!bulkOpen); }}>{bulkOpen ? 'Done' : 'Paste a list'}</button>
             </div>
             <div className="stepper">
               <button type="button" aria-label="Remove a player" disabled={players.length <= 2} onClick={() => resizeGroup(players.length - 1)}>−</button>
@@ -309,7 +311,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
           </div>}
           <div id="input-errors" className="input-errors">{errors.map(message => <p key={message} className="error" role="alert">{message}</p>)}</div>
           {duplicate && <p className="small notice">Matching names are separate players, marked with # numbers.</p>}
-          <ul className={`roster ${eligible.length > 8 ? 'roster-compact' : ''} ${busy && effectiveMode === 'quick' && !reduced ? 'quick-reveal' : ''}`} aria-label="Players in this draw" style={{ '--players': Math.min(eligible.length, 6), '--mobile-players': Math.min(eligible.length, 4), '--tiny-players': Math.min(eligible.length, 3) } as React.CSSProperties}>
+          <ul className={`roster ${eligible.length > 8 ? 'roster-compact' : ''} ${busy && renderedMode === 'quick' && !reduced ? 'quick-reveal' : ''}`} aria-label="Players in this draw" style={{ '--players': Math.min(eligible.length, 6), '--mobile-players': Math.min(eligible.length, 4), '--tiny-players': Math.min(eligible.length, 3) } as React.CSSProperties}>
             {players.map((player, i) => <li key={player.id} className={state.phase === 'result' && winner?.id === player.id ? 'player winner' : 'player'} style={{ '--seat': i, '--piece': playerColor(player) } as React.CSSProperties}>
               <span className="seat-token" aria-hidden="true">{i + 1}</span>
               <PlayerName player={player} index={i} errors={errors.length > 0} onRename={rename} />
@@ -326,7 +328,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
           <legend className="sr-only">Choose your reveal</legend>
           <div className="segmented">
             {available.filter(option => showAllModes || primaryModes.includes(option.id)).map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
-              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onChange={() => { setMode(option.id); if (state.phase === 'result') { lastStart.current = -Infinity; dispatch({ type: 'EDIT', valid: !errors.length }); } }} />
+              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onChange={() => setMode(option.id)} />
               <ModeIcon mode={option.id} /><span>{option.label}</span>
             </label>)}
             {!showAllModes && <button type="button" className="more-modes" onClick={e => { const group = e.currentTarget.parentElement!; const shown = group.querySelectorAll('input').length; setMoreModes(true); requestAnimationFrame(() => group.querySelectorAll('input')[shown]?.focus()); }}><span aria-hidden="true">•••</span><span>More methods</span></button>}
@@ -335,9 +337,9 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         {fallbackLimit !== null && <p className="small notice">{chosenMethod.label} fits up to {fallbackLimit} players. Quick is selected for your group of {eligible.length}.</p>}
         {error && <p role="alert" className="error">{error}</p>}
         <button type="button" className="primary" disabled={!hydrated || errors.length > 0} aria-disabled={busy} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={pick}>{!hydrated ? 'Getting ready…' : busy ? 'Revealing…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
-        {visualMode && scene && <div ref={revealStage} className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
-          <Suspense fallback={<RevealLoading mode={effectiveMode} players={scene.outcome.players} />}>
-            {effectiveMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
+        {visualMode && scene && <div ref={revealStage} className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${renderedMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
+          <Suspense fallback={<RevealLoading mode={renderedMode} players={scene.outcome.players} />}>
+            {renderedMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={renderedMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
           </Suspense>
         </EffectBoundary></div>}
       </div>
