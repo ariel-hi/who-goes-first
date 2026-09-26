@@ -1,0 +1,39 @@
+{
+  "id": "dixit-odyssey-libellud-refreshed-en",
+  "slug": "dixit-odyssey-libellud-refreshed-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dixit: Odyssey",
+  "aliases": [],
+  "editionLabel": "Libellud English refreshed edition",
+  "firstPlayerRule": "The first player to think of a clue for a card in their hand becomes the first storyteller.",
+  "officialTieBreak": null,
+  "houseFallback": "If two players are ready together, choose randomly between them.",
+  "clarifications": [
+    "After each turn, the player to the storyteller’s left becomes the next storyteller."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-libellud/uploads/2024/04/ODYSSEY_REFRESH_RULES_EN.pdf",
+      "title": "Dixit: Odyssey — English rulebook",
+      "publisher": "Libellud",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "How to play — Create the riddle; End of turn",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Libellud refreshed Odyssey English PDF. Rendered2exactfirsttofindcluecriterion and storytellerpassesleft. Requires game cards, excluded from portable random pool. Source custody: research/source-files/popular-sep26-09/dixit.pdf; SHA-256 a3d0b2c61420c8ad04147a323143bf5885b26b92040cf2bc83d9e9211265a4db. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The rulebook does not specify a tie-break if two players think of a clue at the same time."
+  ]
+}
