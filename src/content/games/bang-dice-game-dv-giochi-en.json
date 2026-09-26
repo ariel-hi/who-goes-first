@@ -1,0 +1,39 @@
+{
+  "id": "bang-dice-game-dv-giochi-en",
+  "slug": "bang-dice-game-dv-giochi-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "3c8de24de3abd9191a3eb6fbe861d0d78c73d0d0d1a41ae24b41b6fde15e35e2",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "BANG! The Dice Game",
+  "aliases": [],
+  "editionLabel": "dV Giochi English edition",
+  "firstPlayerRule": "The Sheriff takes all five dice and starts the game. With three players, the Deputy starts instead.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise. Roles are dealt randomly; the three-player game uses Deputy, Outlaw and Renegade, with no Sheriff."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/bangtdg/download/BANG!%20Dice%20Game_Rules_ENG.pdf",
+      "title": "BANG! The Dice Game — English rulebook",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Preparation step 8; The game; Special rules for 3 players",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official dV Giochi product page links this English two-sheet rulebook. The first sheet gives Sheriff-first and clockwise play; the reverse explicitly replaces the first player with the Deputy in the three-player variant. These role-dependent criteria are excluded from the random method pool. Source custody: research/source-files/popular-sep26-03/bang.pdf; SHA-256 14ffae86e32ca38cfd60d8b5b573573db4067b403e5d12d18d5ac27c942ddc5e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
