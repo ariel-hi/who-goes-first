@@ -19,13 +19,17 @@ The performance report still says it is processing data and to check again in a 
 
 ### Discovery beyond Google
 
-Cloudflare's domain Caching → Configuration page shows **Crawler Hints enabled** for `whogoesfirst.fun` on 2026-09-26 UTC. [Cloudflare documents that this feature supports IndexNow](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/). No setting was changed, no new terms were accepted, and no separate IndexNow key or duplicate submission script was added.
+Cloudflare's domain Caching → Configuration page shows **Crawler Hints enabled** for `whogoesfirst.fun` on 2026-09-26 UTC. [Cloudflare documents that this feature supports IndexNow](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/). No setting was changed and no new terms were accepted.
+
+Live HTML responses showed `CF-Cache-Status: DYNAMIC`, while Cloudflare documents a cache-MISS trigger. This does not establish that any particular page was notified. An optional, explicit `search:notify` command now checks selected live canonical pages and can record an IndexNow receipt after a meaningful content release. Its live dry run passed without sending a notification. Setup does not justify resubmitting older pages; no live notification has been sent. See the release procedure and limits in `RUNBOOK.md`.
 
 The live `/robots.txt` returned HTTP 200, allows all paths, and advertises the canonical sitemap. `/sitemap.xml` returned HTTP 200. Bing's exact `url:https://whogoesfirst.fun/` lookup returned no result during this check. This is an observed lack of a homepage result, not a diagnosis of a crawling failure or evidence about every catalog page.
 
 Allow time for discovery and look for a meaningful change through the existing follow-up. If Bing remains absent, a verified Bing Webmaster Tools account can provide its own crawl diagnostics. Do not import Google properties or authorize a new account connection without the owner's approval. Native IndexNow support does not prove that a particular URL was submitted or indexed. The [IndexNow FAQ](https://www.indexnow.org/faq) recommends sitemaps for the full inventory and notifications for meaningful recent changes; it does not support repeated bulk submissions of unchanged pages as a substitute for discovery.
 
 ## Measurement and economics
+
+The Pages build command was changed to `npm run build` and the saved configuration was verified on 2026-09-26 UTC. The prior production log showed an automatic dependency install followed by a second `npm ci` in the custom command. Removing that duplicate follows [Cloudflare's Astro build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/). The next deployment must confirm one install and a successful build; a shorter duration or lower bill has not yet been established.
 
 The public GitHub repository's About section now links directly to `https://whogoesfirst.fun/`, describes the free picker, sourced rules and printable cards, and has five relevant topics: board-games, tabletop-games, random-picker, astro and typescript. The saved homepage and topics were verified through GitHub's public repository API. This makes the existing project a usable referral entry point; no visitor or search-ranking lift is established by the metadata change alone. The README update puts visitor destinations before development instructions.
 
