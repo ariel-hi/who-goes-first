@@ -56,7 +56,7 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 .stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:3px;overflow:hidden}
 .stepper button{border:0;background:none;font-size:22px;width:44px}
 .stepper button:hover{background:var(--soft)}
-.stepper input[type=text]{width:40px;text-align:center;background:none;border:0;border-radius:0;font-size:16px;font-weight:650;padding:0}
+.stepper input[type=text]{width:44px;text-align:center;background:none;border:0;border-radius:0;font-size:16px;font-weight:650;padding:0}
 .roster{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .player{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;gap:10px;padding:17px 6px 13px;border:1px solid transparent;background:transparent;border-radius:3px;text-align:center;font-size:13px;line-height:1.4}
 .seat-token{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#e5eadf;color:#4c6354;font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:20px;font-variant-numeric:tabular-nums;box-shadow:0 3px 0 #d1dbca}

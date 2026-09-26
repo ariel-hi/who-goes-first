@@ -2,7 +2,9 @@
 
 The owner requested the entire starting-rule compendium, not a named starter list. That objective remains unfinished.
 
-The [latest Brass and remembered-count checkpoint](sep26-brass-and-remembered-count-progress.md) enrolls Brass Pittsburgh as an identity only and keeps En Route's competing numeric identity held after complete review. Coverage is **4,996 identities /893 approved editions /887 sourced /4,109 pending**. The picker restores remembered roster and count together; independent native-time checks reproduced and then verified correction of early count edits being overwritten.
+The [latest Amigo and Quick-result checkpoint](sep26-amigo-and-quick-progress.md) adds Lama Dice, Cabanga! and Meister Makatsu as distinct pending identities. Coverage is **4,999 identities /893 approved editions /887 sourced /4,112 pending**. The picker has44×44 player-count targets and brings offscreen Quick/Instant results into view after completion, respecting reduced motion and keyboard focus.
+
+The [preceding Brass and remembered-count checkpoint](sep26-brass-and-remembered-count-progress.md) enrolls Brass Pittsburgh as an identity only and keeps En Route's competing numeric identity held after complete review. Its coverage is historical. The picker restores remembered roster and count together; independent native-time checks reproduced and then verified correction of early count edits being overwritten.
 
 The [preceding picker continuity checkpoint](sep26-picker-result-continuity-progress.md) keeps completed answers and artwork through method changes and unchanged list disclosures; actual new draws use the selected next method, while roster edits clear stale results. Its coverage and unenrolled Brass proposal remain historical.
 

@@ -81,8 +81,8 @@
   .picker-card { position:relative; border:1px solid #e8e0db; border-radius:28px; background:var(--paper); padding:20px 24px 24px; box-shadow:0 7px 24px #5e454705; display:flex; flex-direction:column; }
   .players-heading { justify-content:flex-end; margin:0; }
   .stepper { border:0; background:#f1ece8; border-radius:18px; }
-  .stepper button { width:40px; }
-  .stepper input[type=text] { font-size:15px; font-weight:500; width:34px; }
+  .stepper button { width:44px; flex:none; }
+  .stepper input[type=text] { font-size:15px; font-weight:500; width:44px; flex:none; }
   .stepper input[type=text]:focus-visible { outline:none; }
   .stepper:has(input[type=text]:focus-visible) { outline:2px solid var(--green); outline-offset:3px; }
   .roster-tools { display:flex; justify-content:space-between; align-items:center; gap:10px; font-size:12px; color:var(--muted); margin:4px 0 12px; }

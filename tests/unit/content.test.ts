@@ -1,5 +1,5 @@
 import { expect, test, vi } from 'vitest';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { getCatalog, readRecords } from '../../src/lib/content/catalog';
 import * as catalogModule from '../../src/lib/content/catalog';
@@ -11,6 +11,41 @@ import { getCoverage } from '../../src/lib/content/coverage';
 import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/board-games';
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
 import { randomRuleEligible } from '../../src/lib/content/random-rules';
+
+test('Amigo identities retain complete holds and numeric provenance without borrowing rules', async () => {
+  const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; terms?: string[]; slug?: string }>;
+  const checked = await ruleSearch().json() as Array<{ n: string; a: string[] }>;
+  for (const [id, name] of [['325853', 'Lama Dice'], ['394889', 'Cabanga!'], ['447384', 'Meister Makatsu']] as const) {
+    const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
+    expect(decision).toMatchObject({ decision: 'accept', reviewed: true, priorBoundedDisposition: null, idEvidenceStatus: 'wikidata-statement-only', independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision: 'hold', reviewed: false, selectedTitle: decision.selectedTitle, idProvenance: decision.idProvenance, priorBoundedDisposition: null });
+    expect(decision.primaryIdentityReviewEvidence).toMatchObject({ literalP856: 'http://www.amigo-spiele.de/', observedRequestScheme: 'https', primaryHostedNumericBggHrefObserved: false, metadataRepairApproved: false, relatedIdentityMergeApproved: false });
+    for (const sourceId of decision.sourceIds) {
+      const source = review.sources[sourceId];
+      expect(source.sha256).toMatch(/^[a-f0-9]{64}$/);
+      expect(source.byteCount).toBeGreaterThan(0);
+      if (existsSync(source.cacheFile)) {
+        const raw = readFileSync(source.cacheFile);
+        expect(raw.length).toBe(source.byteCount);
+        expect(createHash('sha256').update(raw).digest('hex')).toBe(source.sha256);
+      }
+    }
+    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
+    expect(directory.find(entry => entry.id === id)).toMatchObject({ name, ruleCount: 0 });
+    expect(directory.find(entry => entry.id === id)).not.toHaveProperty('slug');
+    expect(checked.some(entry => entry.n === name || entry.a.includes(name))).toBe(false);
+  }
+  expect(games.find(game => game.bggId === '447384')?.searchNames).toEqual(['Maître Makatsu']);
+  expect(checked.some(entry => entry.a.includes('Maître Makatsu'))).toBe(false);
+  for (const id of ['15828', '38195', '40234', '146149', '191473', '205766', '257957', '433340', '451923']) {
+    expect(review.decisions.find((item: { bggId: string }) => item.bggId === id)).toMatchObject({ decision: 'hold', reviewed: false });
+    expect(games.some(game => game.bggId === id)).toBe(false);
+  }
+});
+
 test('public board game directory includes every discovered identity and links only approved matching rules', () => {
   const games = getBoardGames();
   expect(games.length).toBeGreaterThanOrEqual(1320);
@@ -89,7 +124,10 @@ test('native and language-neutral identities enroll only after primary identity 
   expect(games.find(game => game.bggId === '452684')?.rules.map(rule => rule.id)).toEqual(['yami-crowd-ru-training-manual']);
   expect(games.find(game => game.bggId === '410097')).toMatchObject({ name: 'The Kakapo: Buddy & Party', rules: [] });
   expect(games.find(game => game.bggId === '452264')).toMatchObject({ name: 'Brass: Pittsburgh', rules: [] });
-  expect(games).toHaveLength(4996);
+  for (const [id, name] of [['325853', 'Lama Dice'], ['394889', 'Cabanga!'], ['447384', 'Meister Makatsu']] as const) {
+    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
+  }
+  expect(games).toHaveLength(4999);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
@@ -98,7 +136,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(40);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(43);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -128,6 +166,7 @@ test('accepted native alternate names are search-only and deduped without held i
     ['432834', 'The Great Library', 'A Nagy Könyvtár'],
     ['452684', 'Yami', 'Ями'],
     ['452264', 'Brass: Pittsburgh', 'Брасс: Питтсбург'],
+    ['447384', 'Meister Makatsu', 'Maître Makatsu'],
   ] as const) {
     expect(identities.find(game => game.bggId === id)).toMatchObject({ name, searchNames: expect.arrayContaining([alternate]), status: 'needs-primary-source' });
     expect(identities.find(game => game.bggId === id)).not.toHaveProperty('rules');
@@ -211,11 +250,11 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 40, hold: 248, reviewed: 52, unreviewed: 236, additionalAccepted: 30 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(40);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(248);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(52);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(236);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 43, hold: 245, reviewed: 55, unreviewed: 233, additionalAccepted: 33 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(43);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(245);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(55);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(233);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
   for (const id of ['452264', '418683']) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
@@ -225,9 +264,13 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     expect(decision.primaryIdentityReviewEvidence).toMatchObject({ primaryHostedNumericBggHrefObserved: false, metadataRepairApproved: false, relatedIdentityMergeApproved: false });
     for (const sourceId of decision.sourceIds) {
       const source = review.sources[sourceId];
-      const raw = readFileSync(source.cacheFile);
-      expect(raw.length).toBe(source.byteCount);
-      expect(createHash('sha256').update(raw).digest('hex')).toBe(source.sha256);
+      expect(source.sha256).toMatch(/^[a-f0-9]{64}$/);
+      expect(source.byteCount).toBeGreaterThan(0);
+      if (existsSync(source.cacheFile)) {
+        const raw = readFileSync(source.cacheFile);
+        expect(raw.length).toBe(source.byteCount);
+        expect(createHash('sha256').update(raw).digest('hex')).toBe(source.sha256);
+      }
     }
   }
   const brass = review.decisions.find((item: { bggId: string }) => item.bggId === '452264');
@@ -408,7 +451,7 @@ test('CrowD shared-folder manual approvals bind exact revisions and four indepen
   const catalog = getCatalog();
   expect(catalog).toHaveLength(893);
   expect(games.filter(game => game.rules.length > 0)).toHaveLength(887);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4109);
+  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4112);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],

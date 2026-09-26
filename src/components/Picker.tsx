@@ -30,6 +30,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const countPressCleanup = useRef<() => void>(() => {});
   const revealStage = useRef<HTMLDivElement>(null);
   const scrolledDraw = useRef<number | null>(null);
+  const resultArea = useRef<HTMLDivElement>(null);
+  const scrolledQuickDraw = useRef<number | null>(null);
   const [text, setText] = useState('');
   const [inputMode, setInputMode] = useState<'seats' | 'names'>('seats');
   const [mode, setMode] = useState<Mode>(initialMode);
@@ -164,6 +166,23 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     });
     return () => cancelAnimationFrame(frame);
   }, [state.outcome, reduced]);
+
+  useEffect(() => {
+    const outcome = state.outcome;
+    if (state.phase !== 'result' || !outcome || !['quick', 'instant'].includes(eventMode.current) || scrolledQuickDraw.current === outcome.drawId) return;
+    const frame = requestAnimationFrame(() => {
+      const announcement = resultArea.current?.querySelector('p');
+      if (!announcement) return;
+      scrolledQuickDraw.current = outcome.drawId;
+      if (document.hidden) return;
+      const rect = announcement.getBoundingClientRect();
+      const margin = 16;
+      if (rect.top >= margin && rect.bottom <= innerHeight - margin) return;
+      const top = rect.top < margin ? rect.top - margin : rect.bottom - innerHeight + margin;
+      window.scrollBy({ top, behavior: reduced ? 'auto' : 'smooth' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [state.phase, state.outcome, reduced]);
 
   function edited(nextPlayers: Player[], valid = true) {
     if (busy) return;
@@ -319,7 +338,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
             </li>)}
           </ul>
         </fieldset>
-        <div className={`result-area ${state.phase === 'result' ? 'has-result' : busy ? 'is-revealing' : 'is-ready'}`}>
+        <div ref={resultArea} className={`result-area ${state.phase === 'result' ? 'has-result' : busy ? 'is-revealing' : 'is-ready'}`}>
           <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement" data-long={winnerLabel.length > 18}>{busy && <span className="sr-only">Revealing the selected player…</span>}{state.phase === 'result' && winner && <p><bdi>{winnerLabel}</bdi> goes first.</p>}</div>
           {busy && <div className="result-placeholder" data-long={winnerLabel.length > 18} aria-hidden="true"><p><bdi>{winnerLabel}</bdi> goes first.</p></div>}
         </div>
