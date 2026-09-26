@@ -1,0 +1,14 @@
+---
+import { boardGameHref, type BoardGame } from '../lib/content/board-game-browse';
+interface Props { game: BoardGame }
+const { game } = Astro.props;
+---
+<li data-id={game.bggId} data-has-rule={game.rules.length > 0 ? 'true' : 'false'}>
+  {game.rules.length > 0 ? <a href={boardGameHref(game)}><span>{game.name}<small>{game.rules.length > 1 ? `${game.rules.length} sourced editions` : 'Starting rule available'}</small></span><span class="directory-arrow" aria-hidden="true">→</span></a> : <details class="directory-pending">
+    <summary><span>{game.name}<small>No checked starting rule yet</small></span><span class="directory-disclosure" aria-hidden="true"></span></summary>
+    <div class="directory-pending-help">
+      <p>We haven’t checked this game’s starting rule yet. Follow the rulebook in your box, or give every player an equal chance with the picker.</p>
+      <div class="directory-pending-actions"><a class="directory-picker-link" href="/">Pick a player</a><a href={game.discoveryUrl}>View game on BoardGameGeek <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </details>}
+</li>

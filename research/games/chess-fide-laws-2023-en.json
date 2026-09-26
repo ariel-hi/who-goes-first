@@ -1,0 +1,37 @@
+{
+  "id": "chess-fide-laws-2023-en",
+  "slug": "chess-fide-laws-2023-en",
+  "gameName": "Chess",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Standard chess - FIDE Laws of Chess effective 1 January 2023 (English)",
+  "firstPlayerRule": "White, the player with the light-colored pieces, makes the first move. Black moves next, and the players then alternate turns.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "This instruction identifies the starting color after colors have been assigned; the cited Laws do not provide a universal method for choosing who receives White.",
+    "For clocked competitive play, Article 6.6 says to start White's clock at the scheduled beginning."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "title": "FIDE Laws of Chess effective 1 January 2023",
+      "publisher": "International Chess Federation (FIDE)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Introduction 0.1; Articles 1.1-1.3, 2.1-2.3 and 6.5-6.7",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Read the publisher-hosted English HTML in context: Introduction 0.1 identifies over-the-board scope and effective date; Article 1.2 assigns the opening move to White; Article 2 establishes standard setup; Article 6.6 corroborates the clock start. No color-allocation procedure is inferred. This draft is limited to standard chess and is not a general variant or tournament pairing answer. Complete source cached at research/source-files/traditional-games/chess-fide-2023.html, SHA-256 9fe02370c6d15f6b0988ca45e47e1c40f90f049a1942d9c1d6b495a97fa0161f. HTML source has no PDF page numbers. Identity: Wikidata Q718 / BGG 171. No approval or portable-pool eligibility granted.",
+  "uncertainty": [
+    "The cited Laws prescribe White as the starting color but do not choose the person who receives that color; event-specific pairings or a separately agreed method are outside this record."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

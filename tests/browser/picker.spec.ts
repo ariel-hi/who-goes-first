@@ -16,6 +16,178 @@ async function controlledRandom(page: Page, value = 2) {
 async function ready(page: Page, url = '/') { await page.goto(url); await expect(page.getByRole('button', { name: 'Pick a player' })).toBeEnabled(); }
 const announcement = (page: Page) => page.locator('.winner-announcement');
 
+test('typed counts commit once without losing named players during partial input', async ({ page }) => {
+  await ready(page);
+  await page.getByRole('button', { name: 'Paste a list' }).click();
+  const names = Array.from({ length: 24 }, (_, i) => `Named player ${i + 1}`);
+  await page.getByLabel('Player names').fill(names.join('\n'));
+  await page.getByRole('button', { name: 'Done', exact: true }).click();
+  const count = page.getByLabel('Player count', { exact: true });
+  await count.fill('');
+  await count.pressSequentially('30');
+  await expect(page.locator('.player')).toHaveCount(24);
+  await expect(page.getByLabel('Name for player 24', { exact: true })).toHaveValue(names[23]!);
+  await count.press('Enter');
+  await expect(page.locator('.player')).toHaveCount(30);
+  for (let i = 0; i < names.length; i++) {
+    await expect(page.getByLabel(`Name for player ${i + 1}`, { exact: true })).toHaveValue(names[i]!);
+  }
+  await count.fill('3');
+  await count.press('Escape');
+  await expect(count).toHaveValue('30');
+  await expect(page.locator('.player')).toHaveCount(30);
+  await count.fill('12');
+  await count.blur();
+  await expect(page.locator('.player')).toHaveCount(12);
+  await page.getByRole('button', { name: 'Remove a player', exact: true }).click();
+  await expect(page.locator('.player')).toHaveCount(11);
+  await page.getByRole('button', { name: 'Add a player', exact: true }).click();
+  await expect(page.locator('.player')).toHaveCount(12);
+});
+
+for (const method of ['spinner', 'balloon']) test(`${method} stays usable while a pasted roster is empty or invalid`, async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await ready(page, `/methods/${method}/`);
+  await page.getByRole('button', { name: 'Paste a list' }).click();
+  const names = page.getByLabel('Player names');
+  await names.fill('');
+  await expect(page.locator('.picker')).toBeVisible();
+  await expect(page.getByRole('alert')).toContainText('Add at least two players.');
+  await expect(page.getByRole('button', { name: 'Pick a player', exact: true })).toBeDisabled();
+  await expect(page.locator('.reveal-stage')).toHaveCount(0);
+  await names.fill('Only one');
+  await expect(page.getByRole('button', { name: 'Pick a player', exact: true })).toBeDisabled();
+  await names.fill('Mina\nAlex');
+  await expect(page.getByRole('button', { name: 'Pick a player', exact: true })).toBeEnabled();
+  await expect(page.locator('.reveal-stage')).toBeVisible();
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect(announcement(page)).toContainText(/(?:Mina|Alex) goes first\./);
+  expect(errors).toEqual([]);
+});
+
+test.describe('count commits on first activation', () => {
+  test.use({ hasTouch: true });
+  for (const activation of ['click', 'tap'] as const) test(`the first ${activation === 'click' ? 'pointer click' : 'touch tap'} after a typed count draws from the committed named group`, async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await controlledRandom(page, 11);
+  await ready(page, '/methods/spinner/');
+  await page.getByLabel('Name for player 1', { exact: true }).fill('Mina');
+  const count = page.getByLabel('Player count', { exact: true });
+  await count.fill('12');
+  await expect(page.locator('.player')).toHaveCount(4);
+  // A real pointer press must reach the same button before and after input blur.
+  await page.getByRole('button', { name: 'Pick a player', exact: true })[activation]();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(page.locator('.player')).toHaveCount(12);
+  await expect(count).toHaveValue('12');
+  await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Mina');
+  await expect(announcement(page)).toContainText('Seat 12 goes first.');
+  expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(1);
+  });
+});
+
+test('an abandoned Pick press commits the typed count without drawing', async ({ page }) => {
+  await ready(page, '/methods/spinner/');
+  await page.getByLabel('Player count', { exact: true }).fill('12');
+  const button = await page.getByRole('button', { name: 'Pick a player', exact: true }).boundingBox();
+  await page.mouse.move(button!.x + button!.width / 2, button!.y + button!.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(button!.x - 20, button!.y + button!.height / 2);
+  await page.mouse.up();
+  await expect(page.locator('.player')).toHaveCount(12);
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'ready');
+  await expect(announcement(page)).toBeEmpty();
+});
+
+test('unsupported selected and remembered methods explain their player limits', async ({ page }) => {
+  await ready(page, '/methods/spinner/');
+  await page.getByRole('button', { name: 'Preferences', exact: true }).click();
+  await page.getByLabel('Remember this group').check();
+  const count = page.getByLabel('Player count', { exact: true });
+  await count.fill('13'); await count.blur();
+  const spinnerNotice = page.getByText('Spinner fits up to 12 players. Quick is selected for your group of 13.', { exact: true });
+  await expect(spinnerNotice).toBeVisible();
+  await expect(page.getByRole('radio', { name: 'Quick', exact: true })).toBeChecked();
+  expect(await spinnerNotice.evaluate(element => element.closest('[aria-live], [role="status"]'))).toBeNull();
+  await ready(page);
+  await expect(spinnerNotice).toBeVisible();
+  await count.fill('12'); await count.blur();
+  await expect(spinnerNotice).toHaveCount(0);
+  await expect(page.getByRole('radio', { name: 'Spinner', exact: true })).toBeChecked();
+  await ready(page, '/methods/coin/');
+  await count.fill('25'); await count.blur();
+  await expect(page.getByText('Coin Flip fits up to 24 players. Quick is selected for your group of 25.', { exact: true })).toBeVisible();
+});
+
+for (const motion of ['no-preference', 'reduce'] as const) test(`mobile visual reveal scrolls into view once with ${motion} motion`, async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.emulateMedia({ reducedMotion: motion });
+  await page.addInitScript(() => {
+    const original = window.scrollBy.bind(window);
+    (window as unknown as { revealScrolls: ScrollToOptions[] }).revealScrolls = [];
+    window.scrollBy = ((options: ScrollToOptions) => {
+      (window as unknown as { revealScrolls: ScrollToOptions[] }).revealScrolls.push(options);
+      original(options);
+    }) as typeof window.scrollBy;
+  });
+  await ready(page, '/methods/coin/');
+  await expect(page.locator('.coin-reveal')).toBeVisible();
+  expect(await page.locator('.reveal-stage').evaluate(element => element.getBoundingClientRect().bottom > innerHeight)).toBe(true);
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect.poll(() => page.locator('.reveal-stage').evaluate(element => {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= innerHeight;
+  })).toBe(true);
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  const scrolls = await page.evaluate(() => (window as unknown as { revealScrolls: ScrollToOptions[] }).revealScrolls);
+  expect(scrolls).toHaveLength(1);
+  expect(scrolls[0]!.behavior).toBe(motion === 'reduce' ? 'auto' : 'smooth');
+});
+
+for (const motion of ['no-preference', 'reduce'] as const) test(`tall mobile visual reveals keep the single winner announcement visible with ${motion} motion`, async ({ page }) => {
+  test.setTimeout(60000);
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.emulateMedia({ reducedMotion: motion });
+  await controlledRandom(page, 11);
+  for (const method of ['coin', 'cards', 'spinner']) {
+    await ready(page, `/methods/${method}/`);
+    await page.getByLabel('Player count', { exact: true }).fill('12');
+    await page.getByLabel('Player count', { exact: true }).blur();
+    await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+    await expect(announcement(page)).toContainText('Seat 12 goes first.');
+    await expect.poll(() => announcement(page).evaluate(element => {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.bottom <= innerHeight;
+    })).toBe(true);
+    await expect(page.locator('.winner-announcement[aria-live="polite"]')).toHaveCount(1);
+  }
+});
+
+test('a fully visible desktop reveal and Quick draws do not request reveal scrolling', async ({ page }) => {
+  await page.setViewportSize({ width: 1366, height: 1400 });
+  await page.addInitScript(() => {
+    (window as unknown as { revealScrolls: number }).revealScrolls = 0;
+    const original = window.scrollBy.bind(window);
+    window.scrollBy = ((options: ScrollToOptions) => {
+      (window as unknown as { revealScrolls: number }).revealScrolls++;
+      original(options);
+    }) as typeof window.scrollBy;
+  });
+  await ready(page, '/methods/coin/');
+  await expect(page.locator('.coin-reveal')).toBeVisible();
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.getByRole('radio', { name: 'Quick', exact: true }).check();
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
+});
+
 test('default seats, rapid activation and one winner announcement', async ({ page }) => {
   await controlledRandom(page); await ready(page);
   await expect(page.locator('.player')).toHaveCount(4);
@@ -39,6 +211,7 @@ test('inline names survive count changes; large groups reflow without an interna
     await page.setViewportSize({ width, height: 844 });
     for (const count of [2, 5, 8, 12, 20, 50, 4]) {
       await page.getByLabel('Player count', { exact: true }).fill(String(count));
+      await page.getByLabel('Player count', { exact: true }).blur();
       await expect(page.locator('.player')).toHaveCount(count);
       await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Magnificent Eucalyptus');
       await expect(page.getByLabel('Name for player 2', { exact: true })).toHaveValue('王芳');
@@ -144,14 +317,14 @@ test('counts 2, 12, 13, 50 and 51 never drop a player', async ({ page }) => {
   await count.fill('1'); await expect(page.locator('.player')).toHaveCount(4);
   await count.fill('51'); await expect(page.locator('.player')).toHaveCount(4);
   await count.blur(); await expect(count).toHaveValue('4');
-  await count.fill('2'); await expect(page.locator('.player')).toHaveCount(2);
+  await count.fill('2'); await count.blur(); await expect(page.locator('.player')).toHaveCount(2);
   await expect(page.getByRole('button', { name: 'Remove a player' })).toBeDisabled();
-  await count.fill('12'); await expect(page.getByRole('radio', { name: /^Balloon Rise/ })).toBeEnabled();
-  await count.fill('13'); await expect(page.locator('input[value=quick]')).toBeChecked();
+  await count.fill('12'); await count.blur(); await expect(page.getByRole('radio', { name: /^Balloon Rise/ })).toBeEnabled();
+  await count.fill('13'); await count.blur(); await expect(page.locator('input[value=quick]')).toBeChecked();
   await expect(page.getByRole('radio', { name: 'Dice Roll' })).toBeEnabled();
   await expect(page.getByRole('radio', { name: 'Coin Flip' })).toBeEnabled();
   await expect(page.locator('input[name=presentation]')).toHaveCount(4);
-  await count.fill('50'); await expect(page.locator('.player')).toHaveCount(50);
+  await count.fill('50'); await count.blur(); await expect(page.locator('.player')).toHaveCount(50);
   await expect(page.locator('input[name=presentation]')).toHaveCount(2);
   await expect(page.getByRole('radio', { name: 'Quick' })).toBeEnabled();
   await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
@@ -164,6 +337,7 @@ test('larger groups can use dice and coins while the toolbar stays visible durin
   await page.setViewportSize({ width: 390, height: 844 });
   await controlledRandom(page, 12); await ready(page);
   await page.getByLabel('Player count').fill('13');
+  await page.getByLabel('Player count').blur();
   await page.getByRole('radio', { name: 'Dice Roll' }).check();
   const toolbar = page.locator('.roster-tools');
   const before = await toolbar.locator('button').evaluate(button => getComputedStyle(button).opacity);
@@ -177,6 +351,7 @@ test('larger groups can use dice and coins while the toolbar stays visible durin
   await expect(announcement(page)).toContainText('Seat 13 goes first');
   await expect(page.locator('.dice-reveal .reveal-player')).toHaveCount(13);
   await page.getByLabel('Player count').fill('24');
+  await page.getByLabel('Player count').blur();
   await page.getByRole('radio', { name: 'Coin Flip' }).check();
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(announcement(page)).toContainText('Seat 13 goes first');

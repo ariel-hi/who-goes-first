@@ -1,0 +1,2338 @@
+{
+  "reviewedOn": "2026-09-26",
+  "sourceSnapshot": "research/coverage/wikidata-board-games.json",
+  "sourceSnapshotStatementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
+  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review.",
+  "method": "Read CC0 Wikidata item facts using wbgetentities and saved revisions, then corroborate accepted game/edition identities with original designer, publisher, federation, or association-hosted federation sources. Per-ID edition qualifiers are distinguished from item-wide publication years. Qualified display names prevent merging identical names. Holds retain unresolved ambiguity.",
+  "factsAudit": "research/coverage/wikidata-identity-facts.json",
+  "counts": {
+    "reviewed": 52,
+    "accept": 23,
+    "hold": 29,
+    "reject": 0,
+    "newlyEligibleHeldIdentities": 16,
+    "alreadyEnrolledClassicConfirmations": 7
+  },
+  "sources": {
+    "fide": {
+      "kind": "primary-federation",
+      "title": "FIDE Laws of Chess",
+      "url": "https://handbook.fide.com/chapter/e012023",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Articles 1 and 2 identify the traditional chess game and board."
+    },
+    "go": {
+      "kind": "primary-federation",
+      "title": "British Go Association interpretation of AGA rules",
+      "url": "https://www.britgo.org/rules/bgainterpretation.html",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The association identifies Go and its adopted American Go Association rules."
+    },
+    "shogi": {
+      "kind": "primary-federation",
+      "title": "Japan Shogi Association rules",
+      "url": "https://www.shogi.or.jp/match/taikyoku_rules/",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Chapter 2 identifies Shogi as a two-player game with a shogi board and king objective."
+    },
+    "checkers": {
+      "kind": "primary-association-hosted-federation-text",
+      "title": "WCDF English rules hosted by North Carolina Checkers Association",
+      "url": "https://nccheckers.org/NCCA/WCDF%20Checker%20-%20Draughts%20-%20English%20Rules.htm",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The official text identifies checkers/draughts under English rules; this does not establish a universal rule for all draughts variants."
+    },
+    "mahjong": {
+      "kind": "primary-federation",
+      "title": "European Mahjong Association rule variants",
+      "url": "https://mahjong-europe.org/portal/index.php?Itemid=101&id=12&option=com_content&view=category",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The association distinguishes Riichi Competition Rules from Mahjong Competition Rules."
+    },
+    "xiangqi": {
+      "kind": "primary-federation",
+      "title": "World Xiangqi Federation rules",
+      "url": "https://www.wxf-xiangqi.org/index.php?Itemid=291&id=269&lang=en&option=com_content&view=article",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The federation describes the published World Xiangqi Rules and its competition standard."
+    },
+    "backgammon": {
+      "kind": "primary-federation",
+      "title": "U.S. Backgammon Federation basics",
+      "url": "https://usbgf.org/backgammon-basics-how-to-play/",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Identifies standard two-player Backgammon played with fifteen checkers per player on twenty-four points."
+    },
+    "cribbage": {
+      "kind": "primary-federation",
+      "title": "American Cribbage Congress rules",
+      "url": "https://www.cribbage.org/NewSite/rules/default.asp",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The governing association publishes official Cribbage tournament rules."
+    },
+    "samurai": {
+      "kind": "primary-designer",
+      "title": "Reiner Knizia game list",
+      "url": "https://knizia.de/wp-content/uploads/reiner/pdfs/List-Games-Sept-2015.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Designer list identifies Samurai, including its Fantasy Flight publication."
+    },
+    "samuraiManual": {
+      "kind": "primary-publisher",
+      "title": "Fantasy Flight Games Samurai manual",
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/58/58/5858c0b8-3ceb-49ab-880e-565e9c4eaadc/kn26_rulebook.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The publisher manual credits Reiner Knizia for Samurai."
+    },
+    "duneHistory": {
+      "kind": "primary-designer",
+      "title": "Future Pastimes Dune edition history",
+      "url": "https://futurepastimes.com/intro-copy-1-1",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The original designers distinguish the 1979 Avalon Hill design from the Gale Force Nine edition launched in late 2019."
+    },
+    "dune2019": {
+      "kind": "primary-publisher",
+      "title": "Gale Force Nine Dune manual",
+      "url": "https://www.gf9games.com/dunegame/wp-content/uploads/Dune-Rulebook.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Credits the original design team and identifies Gale Force Nine game design copyright 2019."
+    },
+    "around": {
+      "kind": "primary-publisher",
+      "title": "Rio Grande Games Gone Fishing manual author biography",
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/Gone-Fishing-Rules.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The 2005 publisher manual identifies Around the World in 80 Days as another Rio Grande game by Michael Rieneck."
+    },
+    "shogun": {
+      "kind": "primary-publisher",
+      "title": "Queen Games Shogun manual",
+      "url": "https://rules.queen-games.com/shogun_en.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Cover credits Dirk Henn; the game uses Japanese provinces and a battle tower."
+    },
+    "push": {
+      "kind": "primary-publisher-designer",
+      "title": "Steffen Spiele founder ludography",
+      "url": "https://steffen-spiele.com/de/pages/founder-steffen-muhlhauser",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Steffen Muehlhaeuser lists Push under 2001."
+    },
+    "pushRavensburger": {
+      "kind": "primary-publisher",
+      "title": "Ravensburger PUSH product",
+      "url": "https://www.ravensburger.de/de-AT/produkte/spiele/kartenspiele/push-26828",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Ravensburger identifies its PUSH as a two-to-six-player card game, distinct from the older Steffen Spiele design."
+    },
+    "summoner": {
+      "kind": "primary-publisher",
+      "title": "Plaid Hat Games Second Edition announcement",
+      "url": "https://www.plaidhatgames.com/news/2021/03/01/announcing-summoner-wars-second-edition/",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Dated March 1, 2021; distinguishes the new second edition from the 2009 game."
+    },
+    "summonerFAQ": {
+      "kind": "primary-publisher",
+      "title": "Plaid Hat Games Summoner Wars 2.0 FAQ",
+      "url": "https://media.plaidhatgames.com/filer_public/62/f3/62f371da-85d8-4a71-a866-bab21b65f27d/faq.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Explains that first and second editions are incompatible and identifies the first edition as the 2009 design."
+    },
+    "london": {
+      "kind": "primary-publisher",
+      "title": "Osprey gaming resources",
+      "url": "https://www.ospreypublishing.com/uk/discover/gaming-resources/board-card-games/",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Explicitly labels the available rulebook London: Second Edition."
+    },
+    "londonCatalogue": {
+      "kind": "primary-publisher",
+      "title": "Osprey 2019 catalogue",
+      "url": "https://www.ospreypublishing.com/media/roqjiouq/osg-jan-june-2019-catalogue-digital.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Identifies London: Second Edition by Martin Wallace, ISBN 9781472822222."
+    },
+    "john": {
+      "kind": "primary-designer-publisher",
+      "title": "Wehrlegig John Company edition explanation",
+      "url": "https://wehrlegig.com/blogs/essays/john-company-second-edition-launch-whats-all-this-then",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Cole Wehrle identifies completion of the first edition in 2017 and explains the redesigned second edition."
+    },
+    "trajan": {
+      "kind": "primary-publisher",
+      "title": "Hutter Trade Trajan",
+      "url": "https://hutter-trade.com/en/product-range/product/trajan/",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Credits Stefan Feld and describes the ancient Rome development game with six action types."
+    },
+    "theGame": {
+      "kind": "primary-publisher",
+      "title": "Pandasaurus The Game",
+      "url": "https://pandasaurusgames.com/products/the-game-kwanchai-moriya-edition",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Identifies the cooperative numbered-card game. The publisher page links directly to boardgame/173090/the-game; only the publisher HTML link was inspected."
+    },
+    "gloomhaven": {
+      "kind": "primary-publisher",
+      "title": "Cephalofair company history",
+      "url": "https://cephalofair.com/pages/about",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Identifies Isaac Childres and Gloomhaven as the company title published in early 2017."
+    },
+    "gloomhaven2": {
+      "kind": "primary-publisher",
+      "title": "Cephalofair Second Edition announcement",
+      "url": "https://cephalofair.com/blogs/chronicle/cephalofair-games-announces-gloomhaven-second-edition",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Describes a revised second edition with redesigned classes, items and scenarios."
+    },
+    "cryhavoc": {
+      "kind": "primary-publisher",
+      "title": "Portal Games Cry Havoc manual",
+      "url": "https://portalgames.pl/files/rules/cryhavoc_rules_www.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Identifies a science-fiction asymmetric area-control game with races, Crystals and Trogs."
+    },
+    "cryhavocDate": {
+      "kind": "primary-publisher",
+      "title": "Portal Games Cry Havoc FAQ",
+      "url": "https://portalgames.pl/files/rules/cryhavoc_faq_EN.pdf",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The publisher FAQ is dated August 19, 2016."
+    },
+    "catDeluxe": {
+      "kind": "primary-publisher",
+      "title": "Bezier Cat in the Box edition comparison",
+      "url": "https://beziergames.com/blogs/news/trick-taking-with-a-healthy-dose-of-area-control",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The August 8, 2022 article distinguishes a Japanese original from Bezier Deluxe Edition, but does not expose an inspected identifier cross-link."
+    }
+  },
+  "decisions": [
+    {
+      "bggId": "3",
+      "wikidataId": "Q4994200",
+      "snapshotName": "Samurai",
+      "displayName": "Samurai (Reiner Knizia)",
+      "decision": "accept",
+      "reason": "The single-ID Q4994200 board-game item and designer/publisher Samurai evidence distinguish this Knizia design from the held same-name Q64736129 item. No rules are transferred between titles.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q4994200",
+            "url": "https://www.wikidata.org/wiki/Q4994200",
+            "revision": 2529341862,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q4994200&oldid=2529341862",
+            "label": "Samurai",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "3",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "samurai",
+          "samuraiManual"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "15",
+      "wikidataId": "Q634477",
+      "snapshotName": "Cosmic Encounter",
+      "displayName": "Cosmic Encounter",
+      "decision": "hold",
+      "reason": "Q634477 maps four unqualified IDs across several publisher/year statements. The reviewed facts do not bind this particular ID to one edition.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q634477",
+            "url": "https://www.wikidata.org/wiki/Q634477",
+            "revision": 2529344671,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q634477&oldid=2529344671",
+            "label": "Cosmic Encounter",
+            "description": "science fiction board game",
+            "bggIdClaims": [
+              {
+                "value": "15",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "39463",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40529",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40531",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "24",
+      "wikidataId": "Q3542535",
+      "snapshotName": "Twilight Imperium",
+      "displayName": "Twilight Imperium",
+      "decision": "hold",
+      "reason": "Q3542535 maps both 24 and 12493 while listing several publication years without identifier edition qualifiers. A primary edition-to-ID link is still needed.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q3542535",
+            "url": "https://www.wikidata.org/wiki/Q3542535",
+            "revision": 2512962535,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q3542535&oldid=2512962535",
+            "label": "Twilight Imperium",
+            "description": "Science-fiction themed board game",
+            "bggIdClaims": [
+              {
+                "value": "12493",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "24",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "45",
+      "wikidataId": "Q205906",
+      "snapshotName": "Liar's Dice",
+      "displayName": "Liar's Dice",
+      "decision": "hold",
+      "reason": "Both the Richard Borg item Q205906 and generic Liars dice item Q20825977 map 45. The latter adds a Perudo title qualifier; the reviewed evidence does not choose a definitive commercial/traditional identity.",
+      "snapshotReviewFlags": [
+        "multiple-wikidata-items-for-id",
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q205906",
+            "url": "https://www.wikidata.org/wiki/Q205906",
+            "revision": 2512981046,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q205906&oldid=2512981046",
+            "label": "Liar's Dice",
+            "description": "dice game by Richard Borg",
+            "bggIdClaims": [
+              {
+                "value": "184502",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "45",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q20825977",
+            "url": "https://www.wikidata.org/wiki/Q20825977",
+            "revision": 2485065289,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q20825977&oldid=2485065289",
+            "label": "Liar's dice",
+            "description": "dice game",
+            "bggIdClaims": [
+              {
+                "value": "45",
+                "rank": "normal",
+                "qualifiers": {
+                  "P1810": [
+                    {
+                      "snaktype": "value",
+                      "property": "P1810",
+                      "hash": "63bf1910ea374194a621bd6a47414b83888bf23d",
+                      "datavalue": {
+                        "value": "Perudo (1800)",
+                        "type": "string"
+                      },
+                      "datatype": "string"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "63",
+      "wikidataId": "Q64736129",
+      "snapshotName": "Samurai",
+      "displayName": "Samurai",
+      "decision": "hold",
+      "reason": "The item has one ID, but its description contains scraped-looking numeric rating/shop text. That description is excluded from the audit facts and is not acceptable edition evidence. No inspected primary source resolves this lead.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q64736129",
+            "url": "https://www.wikidata.org/wiki/Q64736129",
+            "revision": 1392965341,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q64736129&oldid=1392965341",
+            "label": "Samurai",
+            "description": null,
+            "bggIdClaims": [
+              {
+                "value": "63",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "121",
+      "wikidataId": "Q389078",
+      "snapshotName": "Dune",
+      "displayName": "Dune (Avalon Hill, 1979)",
+      "decision": "accept",
+      "reason": "Q389078 identifies the 1979 Avalon Hill board game with one P2339 ID. The original designers independently distinguish this edition from the 2019 redesign.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q389078",
+            "url": "https://www.wikidata.org/wiki/Q389078",
+            "revision": 2372176932,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q389078&oldid=2372176932",
+            "label": "Dune",
+            "description": "board game from 1979",
+            "bggIdClaims": [
+              {
+                "value": "121",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "duneHistory"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "171",
+      "wikidataId": "Q718",
+      "snapshotName": "chess",
+      "displayName": "Chess",
+      "decision": "accept",
+      "reason": "Canonical Q718 P2339 identifies the traditional board game. FIDE supplies primary corroboration of the physical game identity.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q718",
+            "url": "https://www.wikidata.org/wiki/Q718",
+            "revision": 2546786045,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q718&oldid=2546786045",
+            "label": "chess",
+            "description": "strategy board game",
+            "bggIdClaims": [
+              {
+                "value": "171",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "fide"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "173",
+      "wikidataId": "Q1437815",
+      "snapshotName": "Formula D",
+      "displayName": "Formula D",
+      "decision": "hold",
+      "reason": "Q1437815 maps 173 and 37904 without edition qualifiers. The shared label cannot identify the older Formula De versus later Formula D edition.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1437815",
+            "url": "https://www.wikidata.org/wiki/Q1437815",
+            "revision": 2529341073,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1437815&oldid=2529341073",
+            "label": "Formula D",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "173",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "37904",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "188",
+      "wikidataId": "Q11413",
+      "snapshotName": "go",
+      "displayName": "Go",
+      "decision": "accept",
+      "reason": "Canonical Q11413 identifies the traditional two-player board game. Association evidence corroborates Go; this acceptance does not pick one regional ruleset.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q11413",
+            "url": "https://www.wikidata.org/wiki/Q11413",
+            "revision": 2547428744,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q11413&oldid=2547428744",
+            "label": "go",
+            "description": "board game for two players that originated in China more than 2,500 years ago",
+            "bggIdClaims": [
+              {
+                "value": "188",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "go"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "221",
+      "wikidataId": "Q2219088",
+      "snapshotName": "Shogun",
+      "displayName": "Shogun",
+      "decision": "hold",
+      "reason": "Q2219088 describes a 1986 game and differs from Q2279759, but no inspected primary source confirms the precise edition for this lead.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q2219088",
+            "url": "https://www.wikidata.org/wiki/Q2219088",
+            "revision": 2529341432,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q2219088&oldid=2529341432",
+            "label": "Shogun",
+            "description": "1986 board game",
+            "bggIdClaims": [
+              {
+                "value": "221",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "741",
+      "wikidataId": "Q130322705",
+      "snapshotName": "Trajan",
+      "displayName": "Trajan",
+      "decision": "hold",
+      "reason": "Q130322705 describes a 1991 game and differs from Q22662590. It must remain separate from Stefan Felds 2011 game; no inspected primary evidence confirms this older lead.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q130322705",
+            "url": "https://www.wikidata.org/wiki/Q130322705",
+            "revision": 2529348973,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q130322705&oldid=2529348973",
+            "label": "Trajan",
+            "description": "1991 board game",
+            "bggIdClaims": [
+              {
+                "value": "741",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "1323",
+      "wikidataId": "Q1142198",
+      "snapshotName": "Cry Havoc",
+      "displayName": "Cry Havoc",
+      "decision": "hold",
+      "reason": "Q1142198 explicitly differs from the 2016 Portal game Q105846573. No inspected primary source resolves the older game and edition sufficiently for acceptance.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1142198",
+            "url": "https://www.wikidata.org/wiki/Q1142198",
+            "revision": 2529340819,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1142198&oldid=2529340819",
+            "label": "Cry Havoc",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "1323",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "1498",
+      "wikidataId": "Q7156725",
+      "snapshotName": "Paydirt",
+      "displayName": "Paydirt",
+      "decision": "hold",
+      "reason": "Original inventory 125050 normalizes to the same title. Q7156725 supplies a generic board-game description and one ID but no inspected primary edition/designer evidence resolves the collision.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "125050"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q7156725",
+            "url": "https://www.wikidata.org/wiki/Q7156725",
+            "revision": 2529344931,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q7156725&oldid=2529344931",
+            "label": "Paydirt",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "1498",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "2043",
+      "wikidataId": "Q2279759",
+      "snapshotName": "Shogun",
+      "displayName": "Shogun",
+      "decision": "hold",
+      "reason": "Q2279759 describes a 1976 Shogun, while other Shogun items describe 1986 and 2006 games. Primary confirmation of the older game is still needed.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q2279759",
+            "url": "https://www.wikidata.org/wiki/Q2279759",
+            "revision": 2547511935,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q2279759&oldid=2547511935",
+            "label": "Shogun",
+            "description": "1976 board game",
+            "bggIdClaims": [
+              {
+                "value": "2043",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "2065",
+      "wikidataId": "Q131375",
+      "snapshotName": "shogi",
+      "displayName": "Shogi",
+      "decision": "accept",
+      "reason": "Canonical Q131375 identifies Japanese Shogi. The Japan Shogi Association corroborates the game identity.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q131375",
+            "url": "https://www.wikidata.org/wiki/Q131375",
+            "revision": 2521231410,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q131375&oldid=2521231410",
+            "label": "shogi",
+            "description": "Japanese strategy board game",
+            "bggIdClaims": [
+              {
+                "value": "2065",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "shogi"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "2083",
+      "wikidataId": "Q1293",
+      "snapshotName": "checkers",
+      "displayName": "Checkers",
+      "decision": "accept",
+      "reason": "Canonical Q1293 identifies the checkers/draughts game family. The association-hosted WCDF text corroborates English checkers as one variant; future rule research must name the variant.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1293",
+            "url": "https://www.wikidata.org/wiki/Q1293",
+            "revision": 2548242369,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1293&oldid=2548242369",
+            "label": "checkers",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "2083",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "checkers"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "2093",
+      "wikidataId": "Q12263",
+      "snapshotName": "mahjong",
+      "displayName": "Mahjong",
+      "decision": "accept",
+      "reason": "Canonical Q12263 identifies the multiplayer tile game and explicitly differs from mahjong solitaire. The primary association documents multiple rulesets, which must be scoped in future rules.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q12263",
+            "url": "https://www.wikidata.org/wiki/Q12263",
+            "revision": 2540153273,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q12263&oldid=2540153273",
+            "label": "mahjong",
+            "description": "game",
+            "bggIdClaims": [
+              {
+                "value": "2093",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "mahjong"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "2136",
+      "wikidataId": "Q545129",
+      "snapshotName": "Mensch ärgere dich nicht",
+      "displayName": "Mensch ärgere dich nicht",
+      "decision": "hold",
+      "reason": "Five mapped Wikidata items include Mensch aergere dich nicht, Ludo, Pachisi and Chopat. Their shared ID is not evidence that their game identities or rules are interchangeable.",
+      "snapshotReviewFlags": [
+        "multiple-wikidata-items-for-id"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q545129",
+            "url": "https://www.wikidata.org/wiki/Q545129",
+            "revision": 2518368621,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q545129&oldid=2518368621",
+            "label": "Mensch ärgere dich nicht",
+            "description": "German board dice-and-pieces game, based on Pachisi (Indian origin)",
+            "bggIdClaims": [
+              {
+                "value": "2136",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q796171",
+            "url": "https://www.wikidata.org/wiki/Q796171",
+            "revision": 2538484841,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q796171&oldid=2538484841",
+            "label": "Pachisi",
+            "description": "board game that originated in medieval India",
+            "bggIdClaims": [
+              {
+                "value": "2136",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q1030283",
+            "url": "https://www.wikidata.org/wiki/Q1030283",
+            "revision": 2529342886,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1030283&oldid=2529342886",
+            "label": "Ludo",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "2136",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q1115820",
+            "url": "https://www.wikidata.org/wiki/Q1115820",
+            "revision": 2487037039,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1115820&oldid=2487037039",
+            "label": "Chopat",
+            "description": null,
+            "bggIdClaims": [
+              {
+                "value": "2136",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q1511387",
+            "url": "https://www.wikidata.org/wiki/Q1511387",
+            "revision": 2512970432,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1511387&oldid=2512970432",
+            "label": "Pachisi",
+            "description": "abstract strategy game",
+            "bggIdClaims": [
+              {
+                "value": "2136",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "2348",
+      "wikidataId": "Q6685094",
+      "snapshotName": "Lotus",
+      "displayName": "Lotus",
+      "decision": "hold",
+      "reason": "Q6685094 describes a Dominique Tellier game, while original inventory 198525 has the same name. No inspected primary evidence resolves the earlier identity sufficiently to select a display name or rule mapping.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "198525"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q6685094",
+            "url": "https://www.wikidata.org/wiki/Q6685094",
+            "revision": 2512983197,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q6685094&oldid=2512983197",
+            "label": "Lotus",
+            "description": "board game designed by Dominique Tellier",
+            "bggIdClaims": [
+              {
+                "value": "2348",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "2393",
+      "wikidataId": "Q191448",
+      "snapshotName": "xiangqi",
+      "displayName": "Xiangqi",
+      "decision": "accept",
+      "reason": "Canonical Q191448 identifies Xiangqi. The World Xiangqi Federation supplies primary corroboration.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q191448",
+            "url": "https://www.wikidata.org/wiki/Q191448",
+            "revision": 2512946615,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q191448&oldid=2512946615",
+            "label": "xiangqi",
+            "description": "chess variant native to China",
+            "bggIdClaims": [
+              {
+                "value": "2393",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "xiangqi"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "2397",
+      "wikidataId": "Q11411",
+      "snapshotName": "backgammon",
+      "displayName": "Backgammon",
+      "decision": "accept",
+      "reason": "Select Q11411 as the canonical standard Backgammon identity. The second mapped item Q968853 is Tavli; it is not used as an interchangeable rule identity. Primary Backgammon evidence corroborates the standard game.",
+      "snapshotReviewFlags": [
+        "multiple-wikidata-items-for-id"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q11411",
+            "url": "https://www.wikidata.org/wiki/Q11411",
+            "revision": 2538925289,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q11411&oldid=2538925289",
+            "label": "backgammon",
+            "description": "one of the oldest board games for two players",
+            "bggIdClaims": [
+              {
+                "value": "2397",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q968853",
+            "url": "https://www.wikidata.org/wiki/Q968853",
+            "revision": 2547512180,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q968853&oldid=2547512180",
+            "label": "Tavli",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "2397",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "backgammon"
+        ]
+      },
+      "startingRuleApproved": false,
+      "selectedWikidataId": "Q11411",
+      "excludedInterchangeableRuleItems": [
+        "Q968853"
+      ]
+    },
+    {
+      "bggId": "2398",
+      "wikidataId": "Q1139885",
+      "snapshotName": "cribbage",
+      "displayName": "Cribbage",
+      "decision": "accept",
+      "reason": "Canonical Q1139885 identifies the card-and-peg-board game. American Cribbage Congress supplies primary corroboration.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1139885",
+            "url": "https://www.wikidata.org/wiki/Q1139885",
+            "revision": 2512948629,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1139885&oldid=2512948629",
+            "label": "cribbage",
+            "description": "English two-player card game using a wooden board with pegs",
+            "bggIdClaims": [
+              {
+                "value": "2398",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "cribbage"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "2853",
+      "wikidataId": "Q116029133",
+      "snapshotName": "Liftoff!",
+      "displayName": "Liftoff!",
+      "decision": "hold",
+      "reason": "Q116029133 describes a 1989 game, while original inventory 260757 Lift Off normalizes to the same name. The date indicates a separate lead, but primary confirmation of the older identity remains needed.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "260757"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q116029133",
+            "url": "https://www.wikidata.org/wiki/Q116029133",
+            "revision": 2529348436,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q116029133&oldid=2529348436",
+            "label": "Liftoff!",
+            "description": "1989 Board Game",
+            "bggIdClaims": [
+              {
+                "value": "2853",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "2932",
+      "wikidataId": "Q750693",
+      "snapshotName": "tafl games",
+      "displayName": "tafl games",
+      "decision": "hold",
+      "reason": "The ID maps both the tafl-game family Q750693 and fidchell Q9439618. This does not identify one ruleset or prove the two are interchangeable; canonical game/variant scope remains unresolved.",
+      "snapshotReviewFlags": [
+        "multiple-wikidata-items-for-id"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q750693",
+            "url": "https://www.wikidata.org/wiki/Q750693",
+            "revision": 2514183892,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q750693&oldid=2514183892",
+            "label": "tafl games",
+            "description": "group of asymmetric boardgames",
+            "bggIdClaims": [
+              {
+                "value": "2932",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          },
+          {
+            "wikidataId": "Q9439618",
+            "url": "https://www.wikidata.org/wiki/Q9439618",
+            "revision": 2545235320,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q9439618&oldid=2545235320",
+            "label": "fidchell",
+            "description": "ancient Celtic board game",
+            "bggIdClaims": [
+              {
+                "value": "2932",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "3062",
+      "wikidataId": "Q72147825",
+      "snapshotName": "Pyramis",
+      "displayName": "Pyramis",
+      "decision": "hold",
+      "reason": "Q72147825 supplies only a strategy-game description and one ID. Original inventory 460461 has the same name; no inspected primary evidence resolves the designer/edition collision.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "460461"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q72147825",
+            "url": "https://www.wikidata.org/wiki/Q72147825",
+            "revision": 2512963752,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q72147825&oldid=2512963752",
+            "label": "Pyramis",
+            "description": "strategy game",
+            "bggIdClaims": [
+              {
+                "value": "3062",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "9963",
+      "wikidataId": "Q4179219",
+      "snapshotName": "Santorini",
+      "displayName": "Santorini",
+      "decision": "hold",
+      "reason": "Q4179219 maps 9963 and 194655 with no identifier edition qualifiers. An edition-specific primary source binding one ID is still needed.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q4179219",
+            "url": "https://www.wikidata.org/wiki/Q4179219",
+            "revision": 2512969142,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q4179219&oldid=2512969142",
+            "label": "Santorini",
+            "description": "strategy board game",
+            "bggIdClaims": [
+              {
+                "value": "194655",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "9963",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "10510",
+      "wikidataId": "Q44602991",
+      "snapshotName": "Piepmatz",
+      "displayName": "Piepmatz",
+      "decision": "hold",
+      "reason": "Q44602991 describes a 1995 childrens board game, while original inventory 246200 has the same name. This is not enough primary identity evidence to approve the earlier lead.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "246200"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q44602991",
+            "url": "https://www.wikidata.org/wiki/Q44602991",
+            "revision": 2529343687,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q44602991&oldid=2529343687",
+            "label": "Piepmatz",
+            "description": "children's board game",
+            "bggIdClaims": [
+              {
+                "value": "10510",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "12005",
+      "wikidataId": "Q1544528",
+      "snapshotName": "Around the World in 80 Days",
+      "displayName": "Around the World in 80 Days (Michael Rieneck, 2004)",
+      "decision": "accept",
+      "reason": "Q1544528 has a single ID and a 2004 publication statement. Contemporary publisher-authored evidence credits Michael Rieneck for this title; the qualified display name prevents automatic merging with inventory 204599.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "204599"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1544528",
+            "url": "https://www.wikidata.org/wiki/Q1544528",
+            "revision": 2529341107,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1544528&oldid=2529341107",
+            "label": "Around the World in 80 Days",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "12005",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "around"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "12493",
+      "wikidataId": "Q3542535",
+      "snapshotName": "Twilight Imperium",
+      "displayName": "Twilight Imperium",
+      "decision": "hold",
+      "reason": "Q3542535 maps 24 and 12493 with multiple publication years and no per-ID edition qualification. An exact primary edition link is still needed.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q3542535",
+            "url": "https://www.wikidata.org/wiki/Q3542535",
+            "revision": 2512962535,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q3542535&oldid=2512962535",
+            "label": "Twilight Imperium",
+            "description": "Science-fiction themed board game",
+            "bggIdClaims": [
+              {
+                "value": "12493",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "24",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "20551",
+      "wikidataId": "Q2279754",
+      "snapshotName": "Shogun",
+      "displayName": "Shogun (Dirk Henn, 2006)",
+      "decision": "accept",
+      "reason": "Q2279754 identifies the 2006 Dirk Henn game with one ID. The Queen Games manual independently credits Henn and identifies the province-and-battle-tower game; Q2219088 and Q2279759 are separate titles.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q2279754",
+            "url": "https://www.wikidata.org/wiki/Q2279754",
+            "revision": 2385331366,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q2279754&oldid=2385331366",
+            "label": "Shogun",
+            "description": "2006 board game designed by Dirk Henn",
+            "bggIdClaims": [
+              {
+                "value": "20551",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "shogun"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "23033",
+      "wikidataId": "Q1749762",
+      "snapshotName": "Push",
+      "displayName": "Push (Steffen Mühlhäuser, 2001)",
+      "decision": "accept",
+      "reason": "Q1749762 has one ID, a 2001 publication statement and a Steffen Spiele official URL. The designer ludography corroborates 2001; the qualified name separates it from inventory 265256 and Ravensburger card-game PUSH.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "265256"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1749762",
+            "url": "https://www.wikidata.org/wiki/Q1749762",
+            "revision": 2547512370,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1749762&oldid=2547512370",
+            "label": "Push",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "23033",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "push",
+          "pushRavensburger"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "26990",
+      "wikidataId": "Q5164883",
+      "snapshotName": "Container",
+      "displayName": "Container",
+      "decision": "hold",
+      "reason": "Q5164883 identifies an economic game and 2007 publication, while original inventory 453740 shares the title. No inspected primary edition evidence resolves original/new edition naming sufficiently here.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "453740"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q5164883",
+            "url": "https://www.wikidata.org/wiki/Q5164883",
+            "revision": 2512967693,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q5164883&oldid=2512967693",
+            "label": "Container",
+            "description": "economic simulation board game",
+            "bggIdClaims": [
+              {
+                "value": "26990",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "37904",
+      "wikidataId": "Q1437815",
+      "snapshotName": "Formula D",
+      "displayName": "Formula D",
+      "decision": "hold",
+      "reason": "Q1437815 maps 173 and 37904 without edition qualifiers. The reviewed evidence does not independently bind this ID to the modern Formula D edition.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1437815",
+            "url": "https://www.wikidata.org/wiki/Q1437815",
+            "revision": 2529341073,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1437815&oldid=2529341073",
+            "label": "Formula D",
+            "description": "board game",
+            "bggIdClaims": [
+              {
+                "value": "173",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "37904",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "39463",
+      "wikidataId": "Q634477",
+      "snapshotName": "Cosmic Encounter",
+      "displayName": "Cosmic Encounter",
+      "decision": "hold",
+      "reason": "Q634477 attaches four unqualified IDs to Cosmic Encounter. Publisher/year facts exist but are not attached to these identifiers; the Fantasy Flight product page was inaccessible during review.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q634477",
+            "url": "https://www.wikidata.org/wiki/Q634477",
+            "revision": 2529344671,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q634477&oldid=2529344671",
+            "label": "Cosmic Encounter",
+            "description": "science fiction board game",
+            "bggIdClaims": [
+              {
+                "value": "15",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "39463",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40529",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40531",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "40529",
+      "wikidataId": "Q634477",
+      "snapshotName": "Cosmic Encounter",
+      "displayName": "Cosmic Encounter",
+      "decision": "hold",
+      "reason": "Q634477 attaches four unqualified IDs to Cosmic Encounter. No inspected primary source independently identifies the edition represented by 40529.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q634477",
+            "url": "https://www.wikidata.org/wiki/Q634477",
+            "revision": 2529344671,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q634477&oldid=2529344671",
+            "label": "Cosmic Encounter",
+            "description": "science fiction board game",
+            "bggIdClaims": [
+              {
+                "value": "15",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "39463",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40529",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40531",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "40531",
+      "wikidataId": "Q634477",
+      "snapshotName": "Cosmic Encounter",
+      "displayName": "Cosmic Encounter",
+      "decision": "hold",
+      "reason": "Q634477 attaches four unqualified IDs to Cosmic Encounter. No inspected primary source independently identifies the edition represented by 40531.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q634477",
+            "url": "https://www.wikidata.org/wiki/Q634477",
+            "revision": 2529344671,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q634477&oldid=2529344671",
+            "label": "Cosmic Encounter",
+            "description": "science fiction board game",
+            "bggIdClaims": [
+              {
+                "value": "15",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "39463",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40529",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "40531",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "58281",
+      "wikidataId": "Q101598916",
+      "snapshotName": "Summoner Wars",
+      "displayName": "Summoner Wars (first edition, 2009)",
+      "decision": "accept",
+      "reason": "Q101598916 describes the 2009 game and maps one ID. Plaid Hat explicitly distinguishes its 2009 first edition from the new second edition; no edition rules are inherited.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q101598916",
+            "url": "https://www.wikidata.org/wiki/Q101598916",
+            "revision": 2529350084,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q101598916&oldid=2529350084",
+            "label": "Summoner Wars",
+            "description": "2009 board game",
+            "bggIdClaims": [
+              {
+                "value": "58281",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "summoner",
+          "summonerFAQ"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "63141",
+      "wikidataId": "Q291330",
+      "snapshotName": "Speculation",
+      "displayName": "Speculation",
+      "decision": "hold",
+      "reason": "Q291330 describes a card game with one ID. Original inventory 1036 shares the name; no inspected primary source resolves this traditional/commercial identity collision.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "1036"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q291330",
+            "url": "https://www.wikidata.org/wiki/Q291330",
+            "revision": 2517081943,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q291330&oldid=2517081943",
+            "label": "Speculation",
+            "description": "card game",
+            "bggIdClaims": [
+              {
+                "value": "63141",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "65781",
+      "wikidataId": "Q96359278",
+      "snapshotName": "London",
+      "displayName": "London",
+      "decision": "hold",
+      "reason": "Q96359278 identifies a 2010 London separately from the 2017 second-edition item. The inspected Osprey evidence covers Second Edition; it does not confirm the original publication sufficiently for acceptance.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q96359278",
+            "url": "https://www.wikidata.org/wiki/Q96359278",
+            "revision": 2529342798,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q96359278&oldid=2529342798",
+            "label": "London",
+            "description": "2010 board game",
+            "bggIdClaims": [
+              {
+                "value": "65781",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "102680",
+      "wikidataId": "Q22662590",
+      "snapshotName": "Trajan",
+      "displayName": "Trajan (Stefan Feld, 2011)",
+      "decision": "accept",
+      "reason": "Q22662590 has one ID, a 2011 publication statement and a different-from relation to Q130322705. Publisher evidence identifies the Stefan Feld Roman development game; the 1991 same-name lead remains held.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q22662590",
+            "url": "https://www.wikidata.org/wiki/Q22662590",
+            "revision": 2546923853,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q22662590&oldid=2546923853",
+            "label": "Trajan",
+            "description": "2011 board game",
+            "bggIdClaims": [
+              {
+                "value": "102680",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "trajan"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "173090",
+      "wikidataId": "Q28842705",
+      "snapshotName": "The Game",
+      "displayName": "The Game (Steffen Benndorf, 2015)",
+      "decision": "accept",
+      "reason": "Q28842705 identifies Benndorf and 2015. The primary publisher page independently links to ID 173090 and describes the cooperative numbered-card design.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q28842705",
+            "url": "https://www.wikidata.org/wiki/Q28842705",
+            "revision": 2474759739,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q28842705&oldid=2474759739",
+            "label": "The Game",
+            "description": "2015 card game",
+            "bggIdClaims": [
+              {
+                "value": "173090",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "theGame"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "174430",
+      "wikidataId": "Q36816341",
+      "snapshotName": "Gloomhaven",
+      "displayName": "Gloomhaven (first edition, 2017)",
+      "decision": "accept",
+      "reason": "Q36816341 has one ID and 2017 publication statements. Cephalofair confirms its original 2017 title and separately describes a redesigned second edition. Keep this identity separate from inventory 390478.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "390478"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q36816341",
+            "url": "https://www.wikidata.org/wiki/Q36816341",
+            "revision": 2547511968,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q36816341&oldid=2547511968",
+            "label": "Gloomhaven",
+            "description": "2017 board game",
+            "bggIdClaims": [
+              {
+                "value": "174430",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "gloomhaven",
+          "gloomhaven2"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "184502",
+      "wikidataId": "Q205906",
+      "snapshotName": "Liar's Dice",
+      "displayName": "Liar's Dice",
+      "decision": "hold",
+      "reason": "The Richard Borg item Q205906 maps both 45 and 184502 without edition qualification. Do not silently choose one commercial edition from the shared item.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q205906",
+            "url": "https://www.wikidata.org/wiki/Q205906",
+            "revision": 2512981046,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q205906&oldid=2512981046",
+            "label": "Liar's Dice",
+            "description": "dice game by Richard Borg",
+            "bggIdClaims": [
+              {
+                "value": "184502",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "45",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "192457",
+      "wikidataId": "Q105846573",
+      "snapshotName": "Cry Havoc",
+      "displayName": "Cry Havoc (Portal Games, 2016)",
+      "decision": "accept",
+      "reason": "Q105846573 has one ID, Portal Games publisher, 2016 publication and an explicit different-from relation to Q1142198. Publisher manual and dated FAQ corroborate this science-fiction game.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q105846573",
+            "url": "https://www.wikidata.org/wiki/Q105846573",
+            "revision": 1717037661,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q105846573&oldid=1717037661",
+            "label": "Cry Havoc",
+            "description": "2016 board wargame",
+            "bggIdClaims": [
+              {
+                "value": "192457",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "cryhavoc",
+          "cryhavocDate"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "194655",
+      "wikidataId": "Q4179219",
+      "snapshotName": "Santorini",
+      "displayName": "Santorini",
+      "decision": "hold",
+      "reason": "Q4179219 maps both 9963 and 194655 without edition qualifiers. The reviewed structured facts do not select the earlier versus later production.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q4179219",
+            "url": "https://www.wikidata.org/wiki/Q4179219",
+            "revision": 2512969142,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q4179219&oldid=2512969142",
+            "label": "Santorini",
+            "description": "strategy board game",
+            "bggIdClaims": [
+              {
+                "value": "194655",
+                "rank": "normal",
+                "qualifiers": {}
+              },
+              {
+                "value": "9963",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "211716",
+      "wikidataId": "Q122238495",
+      "snapshotName": "John Company",
+      "displayName": "John Company (first edition, 2017)",
+      "decision": "accept",
+      "reason": "Q122238495 P2339 211716 explicitly carries edition-number P393 value 1. The designer/publisher confirms the 2017 first edition and distinguishes its later redesign.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q122238495",
+            "url": "https://www.wikidata.org/wiki/Q122238495",
+            "revision": 2152571886,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q122238495&oldid=2152571886",
+            "label": "John Company",
+            "description": "2017 board game by Cole Wehrle",
+            "bggIdClaims": [
+              {
+                "value": "211716",
+                "rank": "normal",
+                "qualifiers": {
+                  "P393": [
+                    {
+                      "snaktype": "value",
+                      "property": "P393",
+                      "hash": "b5add4b6e7969c37155ccceb4815a31ff80dfe2a",
+                      "datavalue": {
+                        "value": "1",
+                        "type": "string"
+                      },
+                      "datatype": "string"
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "332686",
+                "rank": "normal",
+                "qualifiers": {
+                  "P393": [
+                    {
+                      "snaktype": "value",
+                      "property": "P393",
+                      "hash": "cead6500aa2aaf49e91b0489cca077f8b00b7077",
+                      "datavalue": {
+                        "value": "2",
+                        "type": "string"
+                      },
+                      "datatype": "string"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "john"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "236191",
+      "wikidataId": "Q96359290",
+      "snapshotName": "London",
+      "displayName": "London: Second Edition (2017)",
+      "decision": "accept",
+      "reason": "Q96359290 identifies the 2017 second edition with one ID and publication year. Osprey labels its manual Second Edition and credits Martin Wallace in its catalogue.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q96359290",
+            "url": "https://www.wikidata.org/wiki/Q96359290",
+            "revision": 2512975110,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q96359290&oldid=2512975110",
+            "label": "London",
+            "description": "2017 second edition board game",
+            "bggIdClaims": [
+              {
+                "value": "236191",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "london",
+          "londonCatalogue"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "283355",
+      "wikidataId": "Q124838447",
+      "snapshotName": "Dune",
+      "displayName": "Dune (Gale Force Nine, 2019)",
+      "decision": "accept",
+      "reason": "Q124838447 identifies 2019 and is based on Q389078. The original designers distinguish the late-2019 GF9 release, whose manual credits GF9 2019. This is separate from ID 121.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q124838447",
+            "url": "https://www.wikidata.org/wiki/Q124838447",
+            "revision": 2547513466,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q124838447&oldid=2547513466",
+            "label": "Dune",
+            "description": "board game (2019)",
+            "bggIdClaims": [
+              {
+                "value": "283355",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "duneHistory",
+          "dune2019"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "323609",
+      "wikidataId": "Q139575458",
+      "snapshotName": "Bomb Squad",
+      "displayName": "Bomb Squad",
+      "decision": "hold",
+      "reason": "Q139575458 describes a 2020 board game, while original inventory 142267 shares the title. No inspected primary source establishes the newer game/designer edition.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "142267"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q139575458",
+            "url": "https://www.wikidata.org/wiki/Q139575458",
+            "revision": 2547513611,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q139575458&oldid=2547513611",
+            "label": "Bomb Squad",
+            "description": "2020 board game",
+            "bggIdClaims": [
+              {
+                "value": "323609",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "332686",
+      "wikidataId": "Q122238495",
+      "snapshotName": "John Company",
+      "displayName": "John Company: Second Edition",
+      "decision": "accept",
+      "reason": "Q122238495 P2339 332686 explicitly carries edition-number P393 value 2. The designer/publisher describes the redesign as Second Edition.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q122238495",
+            "url": "https://www.wikidata.org/wiki/Q122238495",
+            "revision": 2152571886,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q122238495&oldid=2152571886",
+            "label": "John Company",
+            "description": "2017 board game by Cole Wehrle",
+            "bggIdClaims": [
+              {
+                "value": "211716",
+                "rank": "normal",
+                "qualifiers": {
+                  "P393": [
+                    {
+                      "snaktype": "value",
+                      "property": "P393",
+                      "hash": "b5add4b6e7969c37155ccceb4815a31ff80dfe2a",
+                      "datavalue": {
+                        "value": "1",
+                        "type": "string"
+                      },
+                      "datatype": "string"
+                    }
+                  ]
+                }
+              },
+              {
+                "value": "332686",
+                "rank": "normal",
+                "qualifiers": {
+                  "P393": [
+                    {
+                      "snaktype": "value",
+                      "property": "P393",
+                      "hash": "cead6500aa2aaf49e91b0489cca077f8b00b7077",
+                      "datavalue": {
+                        "value": "2",
+                        "type": "string"
+                      },
+                      "datatype": "string"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "john"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "332800",
+      "wikidataId": "Q112957982",
+      "snapshotName": "Summoner Wars",
+      "displayName": "Summoner Wars: Second Edition (2021)",
+      "decision": "accept",
+      "reason": "Q112957982 describes the 2021 game and maps one ID. Plaid Hat announced Second Edition in March 2021 and states incompatibility with the 2009 first edition.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q112957982",
+            "url": "https://www.wikidata.org/wiki/Q112957982",
+            "revision": 2529350337,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q112957982&oldid=2529350337",
+            "label": "Summoner Wars",
+            "description": "2021 board game",
+            "bggIdClaims": [
+              {
+                "value": "332800",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": [
+          "summoner",
+          "summonerFAQ"
+        ]
+      },
+      "startingRuleApproved": false
+    },
+    {
+      "bggId": "345972",
+      "wikidataId": "Q124386210",
+      "snapshotName": "Cat in the Box",
+      "displayName": "Cat in the Box",
+      "decision": "hold",
+      "reason": "Q124386210 describes a 2022 game but does not explicitly label it Deluxe Edition. Bezier distinguishes its 2022 Deluxe product from a Japanese original; no inspected primary identifier cross-link independently binds 345972, so the collision with inventory 324345 stays held.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [
+        "324345"
+      ],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q124386210",
+            "url": "https://www.wikidata.org/wiki/Q124386210",
+            "revision": 2529350775,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q124386210&oldid=2529350775",
+            "label": "Cat in the Box",
+            "description": "2022 board game",
+            "bggIdClaims": [
+              {
+                "value": "345972",
+                "rank": "normal",
+                "qualifiers": {}
+              }
+            ]
+          }
+        ],
+        "primarySourceIds": []
+      },
+      "startingRuleApproved": false,
+      "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    }
+  ]
+}

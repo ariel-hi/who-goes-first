@@ -1,0 +1,44 @@
+{
+  "id": "go-bga-tournament-rules-2009-en",
+  "slug": "go-bga-tournament-rules-2009-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "8800e38ff754171d50216d0e123f222e84e166e7c9dec4606d0e5566138a2966",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Go",
+  "aliases": [],
+  "editionLabel": "BGA Tournament rules of play · 31 March 2009 (English)",
+  "firstPlayerRule": "In an even game, Black moves first from an empty board. In a handicap game, White moves first after all handicap stones have been placed.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Colors must already have been assigned; the cited setup and play sections do not select who receives Black or White.",
+    "Section 4 places handicap stones on the star points in the traditional Japanese pattern unless otherwise stated. Handicap placement is completed before White's first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.britgo.org/files/rules/rulesofplayfull.pdf",
+      "title": "British Go Association Tournament rules of play, 31/03/2009",
+      "publisher": "British Go Association",
+      "printedPages": [
+        "2",
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1
+      ],
+      "location": "Cover date; Audience and Purpose; Sections 1 (The Board, Stones, and Game Start), 2 (Play), 3 (Komi) and 4 (Handicap)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Read the complete relevant setup, play and handicap passages, not an isolated opening sentence. The eight-page publisher-hosted PDF was extracted; PDF/printed pages 1 and 2 were rendered with Poppler and visually inspected. The cover says 31/03/2009. Page 2 scopes this document to BGA tournament play, giving it priority over its referenced AGA rules if meanings conflict. Section 2 explicitly separates an empty-board even start from the post-handicap White turn; Section 4 specifies default placement. Cached at research/source-files/traditional-games/go-bga-2009.pdf, SHA-256 f514d26efe7ba0edf4ce4e7e4f6aef1473be5b2e12bd65791a549edd204aab76. Identity Q11413 / BGG 188. This is a draft, with no approval or portable-pool eligibility. Editorial review 2026-09-26: Codex reopened the BGA PDF, checked its eight-page extent and saved hash, and visually inspected complete cover and page 2. Sections 1–4 distinguish even and handicap starts and do not assign colors. Public wording preserves the handicap placement default and dated BGA scope. Fixed-role tie-break applicability is false. Cited page order begins with the opening passage on page 2, followed by cover provenance on page 1. Directory-only: starting color depends on game context. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is now approved for the catalog; initial draft-only notes above describe intake status. No deployment or random-mix approval.",
+  "uncertainty": [
+    "The inspected dated document is the BGA 31 March 2009 ruleset, not a claim about the latest rules or every national Go ruleset.",
+    "The cited opening sections do not supply a color-selection method, so no coin toss, nigiri procedure or weaker-player assignment is invented."
+  ]
+}

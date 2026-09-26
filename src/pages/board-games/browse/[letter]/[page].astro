@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../../layouts/Layout.astro';
-import { boardGameHref, getBrowseShelves, shelfHref, shelfLabel, BROWSE_PAGE_SIZE } from '../../../../lib/content/board-game-browse';
+import BoardGameRow from '../../../../components/BoardGameRow.astro';
+import { getBrowseShelves, shelfHref, shelfLabel, BROWSE_PAGE_SIZE } from '../../../../lib/content/board-game-browse';
 export function getStaticPaths() {
   const { letters, shelves } = getBrowseShelves();
   return shelves.map((shelf, index) => ({ params: { letter: shelf.letter, page: String(shelf.page) }, props: {
@@ -22,13 +23,13 @@ const last = first + shelf.games.length - 1;
     <p class="lede">{first.toLocaleString('en')}–{last.toLocaleString('en')} of {shelf.total.toLocaleString('en')} names in this section.</p>
     <nav class="directory-alphabet" aria-label="Browse game names by letter">{letters.map(item => <a href={shelfHref(item.letter)} aria-label={`Browse ${shelfLabel(item.letter)} games`} aria-current={item.letter === shelf.letter ? 'page' : undefined}>{shelfLabel(item.letter)}</a>)}</nav>
     <ul class="game-list directory-shelf" data-directory-shelf>
-      {shelf.games.map(game => <li data-id={game.bggId} data-has-rule={game.rules.length > 0 ? 'true' : 'false'}><a href={boardGameHref(game)}><span>{game.name}<small>{game.rules.length > 1 ? `${game.rules.length} sourced editions` : game.rules.length ? 'Starting rule available' : 'Awaiting a sourced rule · View game identity'}</small></span><span class="directory-arrow" aria-hidden="true">→</span></a></li>)}
+      {shelf.games.map(game => <BoardGameRow game={game} />)}
     </ul>
     <nav class="directory-pagination" aria-label="Directory pages">
       {previous && <a href={shelfHref(previous.letter, previous.page)}>← {previous.letter === shelf.letter ? 'Previous page' : shelfLabel(previous.letter)}</a>}
       <span>Page {shelf.page} of {pages}</span>
       {next && <a href={shelfHref(next.letter, next.page)}>{next.letter === shelf.letter ? 'Next page' : shelfLabel(next.letter)} →</a>}
     </nav>
-    <p class="small muted">Game names link to a sourced rule when available. Other names link to their BoardGameGeek identity.</p>
+    <p class="small muted">Game names link to a sourced rule when available. Open other names for a fair-draw option and a link to the game’s identity.</p>
   </div>
 </Layout>

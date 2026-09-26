@@ -23,6 +23,12 @@ class EffectBoundary extends Component<{ children: ReactNode; onFail: () => void
 export default function Picker({ initialMode = 'quick', balloonEnabled = true }: { initialMode?: Mode; balloonEnabled?: boolean }) {
   const [players, setPlayers] = useState<Player[]>(seats(4));
   const [countDraft, setCountDraft] = useState('4');
+  const cancelCountCommit = useRef(false);
+  const countInput = useRef<HTMLInputElement>(null);
+  const heldCountCommit = useRef(false);
+  const countPressCleanup = useRef<() => void>(() => {});
+  const revealStage = useRef<HTMLDivElement>(null);
+  const scrolledDraw = useRef<number | null>(null);
   const [text, setText] = useState('');
   const [inputMode, setInputMode] = useState<'seats' | 'names'>('seats');
   const [mode, setMode] = useState<Mode>(initialMode);
@@ -52,6 +58,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const reduced = systemReduced || prefs.motion === 'reduce';
   const busy = state.phase === 'revealing';
   const effectiveMode = supportsGroup(mode, eligible.length) ? mode : 'quick';
+  const fallbackLimit = mode !== effectiveMode ? Math.max(...Array.from({ length: 50 }, (_, index) => index + 1).filter(count => supportsGroup(mode, count))) : null;
+  const chosenMethod = presentations.find(option => option.id === mode)!;
   // Primary methods first, so opening "More methods" only appends and nothing shifts.
   const available = presentations.filter(option => (balloonEnabled || option.id !== 'balloon') && supportsGroup(option.id, eligible.length))
     .sort((a, b) => Number(!primaryModes.includes(a.id)) - Number(!primaryModes.includes(b.id)));
@@ -63,6 +71,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   useEffect(() => {
     setCountDraft(String(players.length));
   }, [players.length]);
+
+  useEffect(() => () => countPressCleanup.current(), []);
 
   useEffect(() => {
     try {
@@ -130,6 +140,25 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     return () => { clearTimeout(timer); document.removeEventListener('visibilitychange', interrupted); window.removeEventListener('pagehide', finish); };
   }, [state.phase, finish, reduced, revealPlan]);
 
+  useEffect(() => {
+    const outcome = state.outcome;
+    if (!outcome || ['quick', 'instant'].includes(eventMode.current) || scrolledDraw.current === outcome.drawId) return;
+    scrolledDraw.current = outcome.drawId;
+    const frame = requestAnimationFrame(() => {
+      const stage = revealStage.current;
+      if (!stage) return;
+      const rect = stage.getBoundingClientRect();
+      const margin = 16;
+      const available = Math.max(0, Math.min(rect.bottom, innerHeight - margin) - Math.max(rect.top, margin));
+      const needed = Math.min(rect.height, innerHeight - margin * 2);
+      if (available >= needed * .9) return;
+      const top = rect.height > innerHeight - margin * 2 || rect.top < margin
+        ? rect.top - margin : rect.bottom - innerHeight + margin;
+      window.scrollBy({ top, behavior: reduced ? 'auto' : 'smooth' });
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [state.outcome, reduced]);
+
   function edited(nextPlayers: Player[], valid = true) {
     if (busy) return;
     locked.current = null; lastStart.current = -Infinity; setPlayers(nextPlayers); setError('');
@@ -139,17 +168,57 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     const next = parseNames(value, players);
     setText(value); edited(next.players, next.errors.length === 0);
   }
-  function resizeGroup(count: number) {
+  function resizedPlayers(count: number) {
     const next = players.slice(0, count);
     let id = Math.max(0, ...players.map(p => Number(p.id.replace('player-', ''))));
     while (next.length < count) next.push({ id: `player-${++id}`, label: `Seat ${next.length + 1}` });
+    return next;
+  }
+  function resizeGroup(count: number) {
+    const next = resizedPlayers(count);
     edited(next); setText(next.map(p => p.label).join('\n'));
   }
   function typeCount(value: string) {
     if (!/^\d{0,2}$/.test(value)) return;
     setCountDraft(value);
-    const count = Number(value);
-    if (count >= 2 && count <= 50 && count !== players.length) resizeGroup(count);
+  }
+  function commitCount() {
+    if (cancelCountCommit.current) {
+      cancelCountCommit.current = false;
+      setCountDraft(String(players.length));
+      return;
+    }
+    const count = Number(countDraft);
+    if (count >= 2 && count <= 50) {
+      if (count !== players.length) resizeGroup(count);
+      setCountDraft(String(count));
+    } else setCountDraft(String(players.length));
+  }
+  function holdCountForPick(button: HTMLButtonElement) {
+    if (document.activeElement !== countInput.current) return;
+    countPressCleanup.current();
+    heldCountCommit.current = true;
+    const cleanup = () => {
+      window.removeEventListener('click', clicked, true);
+      window.removeEventListener('pointercancel', cancelled);
+    };
+    const cancelled = () => {
+      cleanup();
+      heldCountCommit.current = false;
+      commitCount();
+    };
+    const clicked = (event: MouseEvent) => {
+      cleanup();
+      // Wait for the native click target, including delayed mobile taps. A
+      // released press outside Pick commits the count without starting a draw.
+      if (!button.contains(event.target as Node)) {
+        heldCountCommit.current = false;
+        commitCount();
+      }
+    };
+    countPressCleanup.current = cleanup;
+    window.addEventListener('click', clicked, true);
+    window.addEventListener('pointercancel', cancelled);
   }
   function rename(id: string, label: string) {
     setInputMode('names');
@@ -159,15 +228,27 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   }
   function pick() {
     if (!hydrated || busy || errors.length || performance.now() - lastStart.current < 450) return;
+    const countFocused = document.activeElement === countInput.current;
+    const commitDraft = countFocused || heldCountCommit.current;
+    const count = Number(countDraft);
+    const drawPlayers = commitDraft && count >= 2 && count <= 50 ? resizedPlayers(count) : players;
+    // Keep the button in place for the entire pointer press. The completed click
+    // commits the count and draws from that same roster, even if the layout grows.
+    heldCountCommit.current = false;
+    countPressCleanup.current();
+    if (countFocused) countInput.current?.blur();
+    else if (commitDraft) commitCount();
+    const drawEligible = drawPlayers.map((player, index) => ({ ...player, label: player.label.trim() || `Seat ${index + 1}` }));
+    const drawingMode = supportsGroup(mode, drawEligible.length) ? mode : 'quick';
     lastStart.current = performance.now();
     try {
-      const outcome = select(eligible, ++draw.current);
+      const outcome = select(drawEligible, ++draw.current);
       setRevealPlan(createRevealPlan(outcome));
-      locked.current = outcome; eventMode.current = effectiveMode;
+      locked.current = outcome; eventMode.current = drawingMode;
       setError(''); dispatch({ type: 'START', outcome });
-      analytics.emit('pick_started', { mode: effectiveMode, policy: 'equal-chance' });
+      analytics.emit('pick_started', { mode: drawingMode, policy: 'equal-chance' });
       if (prefs.sound && !document.hidden) void playChime();
-      if (effectiveMode === 'instant' || reduced) finish();
+      if (drawingMode === 'instant' || reduced) finish();
     } catch {
       setError('Secure randomness is unavailable. No player was selected. Try again, or reload this page.');
       locked.current = null;
@@ -189,7 +270,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   }
 
   const visualMode = !['instant', 'quick'].includes(effectiveMode);
-  const preview = visualMode && state.outcome === null;
+  const preview = visualMode && state.outcome === null && eligible.length >= 2 && errors.length === 0;
   // A deterministic plan supplies the pieces with layout values only. Preview
   // mode suppresses every winner marker and animation; no draw takes place.
   const previewScene = useMemo(() => {
@@ -198,7 +279,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     return { outcome, plan: createRevealPlan(outcome, () => .5) };
   }, [preview, players]);
   const scene = state.outcome && revealPlan ? { outcome: state.outcome, plan: revealPlan } : previewScene;
-  return <section className="picker" aria-label="Starting-player picker" data-phase={state.phase} data-count={eligible.length} data-large={eligible.length > 12} data-reduced={reduced}>
+  return <section className="picker" aria-label="Starting-player picker" data-phase={state.phase} data-count={eligible.length} data-large={eligible.length > 12} data-reduced={reduced} data-visual={visualMode}>
     {/* Firefox otherwise restores dynamic disabled states before hydration. */}
     <form autoComplete="off" onSubmit={event => event.preventDefault()}>
       <div className="picker-card">
@@ -211,7 +292,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
             <div className="stepper">
               <button type="button" aria-label="Remove a player" disabled={players.length <= 2} onClick={() => resizeGroup(players.length - 1)}>−</button>
               <label className="sr-only" htmlFor="player-count">Player count</label>
-              <input id="player-count" type="text" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={countDraft} onChange={e => typeCount(e.target.value)} onBlur={() => setCountDraft(String(players.length))} onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); if (e.key === 'Escape') { setCountDraft(String(players.length)); e.currentTarget.blur(); } }} />
+              <input ref={countInput} id="player-count" type="text" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={countDraft} onChange={e => typeCount(e.target.value)} onBlur={() => { if (!heldCountCommit.current) commitCount(); }} onKeyDown={e => { if (e.key === 'Enter') e.currentTarget.blur(); if (e.key === 'Escape') { cancelCountCommit.current = true; e.currentTarget.blur(); } }} />
               <button type="button" aria-label="Add a player" disabled={players.length >= 50} onClick={() => resizeGroup(players.length + 1)}>+</button>
             </div>
           </div>
@@ -243,9 +324,10 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
             {!showAllModes && <button type="button" className="more-modes" onClick={e => { const group = e.currentTarget.parentElement!; const shown = group.querySelectorAll('input').length; setMoreModes(true); requestAnimationFrame(() => group.querySelectorAll('input')[shown]?.focus()); }}><span aria-hidden="true">•••</span><span>More methods</span></button>}
           </div>
         </fieldset>
+        {fallbackLimit !== null && <p className="small notice">{chosenMethod.label} fits up to {fallbackLimit} players. Quick is selected for your group of {eligible.length}.</p>}
         {error && <p role="alert" className="error">{error}</p>}
-        {busy ? <button type="button" className="primary" disabled>Revealing…</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
-        {visualMode && scene && <div className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
+        {busy ? <button type="button" className="primary" disabled>Revealing…</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
+        {visualMode && scene && <div ref={revealStage} className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
           <Suspense fallback={<div className="reveal-loading">One moment…</div>}>
             {effectiveMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
           </Suspense>

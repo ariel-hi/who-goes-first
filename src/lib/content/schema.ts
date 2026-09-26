@@ -13,6 +13,7 @@ export const ruleSchema = z.object({
   ...identity, ...approval,
   gameName: nonempty, aliases: z.array(nonempty), editionLabel: nonempty,
   firstPlayerRule: nonempty, officialTieBreak: nonempty.nullable(), houseFallback: nonempty.nullable(),
+  tieBreakApplicable: z.boolean().optional(),
   clarifications: z.array(nonempty), interpretation: nonempty.nullable(),
   sources: z.array(z.object({
     url: z.url().refine(value => new URL(value).protocol === 'https:' && !new URL(value).username && !new URL(value).password),
@@ -43,12 +44,14 @@ export function assertPublishable(record: Record): void {
   const publicCopy = 'firstPlayerRule' in record ? [record.firstPlayerRule, record.gameName, record.editionLabel, ...record.clarifications].join(' ') : record.prompt;
   if (/\b(TODO|TBD|placeholder|lorem ipsum)\b/i.test(publicCopy)) throw new Error(`${record.id}: placeholder content cannot be published`);
 }
-export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt'>;
+export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt'>;
 export function publicRule(record: RuleRecord): PublicRule {
   return {
     id: record.id, slug: record.slug, gameName: record.gameName, aliases: record.aliases,
     editionLabel: record.editionLabel, language: record.language, firstPlayerRule: record.firstPlayerRule,
-    officialTieBreak: record.officialTieBreak, houseFallback: record.houseFallback, clarifications: record.clarifications,
+    officialTieBreak: record.officialTieBreak, houseFallback: record.houseFallback,
+    ...(record.tieBreakApplicable === undefined ? {} : { tieBreakApplicable: record.tieBreakApplicable }),
+    clarifications: record.clarifications,
     interpretation: record.interpretation, sources: record.sources, materiallyUpdatedAt: record.materiallyUpdatedAt,
   };
 }

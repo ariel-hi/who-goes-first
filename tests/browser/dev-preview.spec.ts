@@ -1,9 +1,25 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { showAllMethods, DEV, STATIC } from './helpers';
-import { readFileSync, readdirSync, writeFileSync, unlinkSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync, unlinkSync, mkdirSync } from 'node:fs';
 import { contentRevision, ruleSchema } from '../../src/lib/content/schema';
 import { getBoardGameInventory } from '../../src/lib/content/board-games';
+
+test('saving publisher evidence does not reload an active picker session', async ({ page }) => {
+  await page.goto(`${DEV}/`);
+  await expect(page.getByRole('button', { name: 'Pick a player', exact: true })).toBeEnabled();
+  await page.getByLabel('Name for player 1', { exact: true }).fill('Mina');
+  await page.evaluate(() => { (window as unknown as { researchWatchSession: boolean }).researchWatchSession = true; });
+  mkdirSync('research/source-files', { recursive: true });
+  const canary = `research/source-files/browser-watch-${process.pid}-${Date.now()}.txt`;
+  try {
+    writeFileSync(canary, 'Browser test: local source evidence is outside the application.\n', { flag: 'wx' });
+    // Vite's watcher must have time to deliver any unintended page reload.
+    await page.waitForTimeout(1200);
+    expect(await page.evaluate(() => (window as unknown as { researchWatchSession: boolean }).researchWatchSession)).toBe(true);
+    await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Mina');
+  } finally { unlinkSync(canary); }
+});
 
 test('actual dev preview hydrates and supports all reveals, names and preferences', async ({ page }) => {
   test.setTimeout(90000);
@@ -84,7 +100,7 @@ test('the full researched catalog is listed and representative sourced pages wor
 });
 
 test('full discovery inventory is searchable and never counted as finished rules', async ({ page }) => {
-  const inventory = getBoardGameInventory();
+const inventory = getBoardGameInventory();
   await page.goto(`${DEV}/dev/coverage/`);
   await expect(page.locator('.coverage-list li')).toHaveCount(inventory.games.length);
   await expect(page.getByText('Game identities are not verified starting rules.')).toBeVisible();

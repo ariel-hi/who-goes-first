@@ -13,8 +13,9 @@ export default defineConfig({
   trailingSlash: 'always',
   devToolbar: { enabled: false },
   // Local release fixtures contain their own package/config files; copying them
-  // must not restart the live editorial preview during a browser check.
-  vite: { server: { watch: { ignored: ['**/artifacts/**', '**/test-results/**', '**/playwright-report/**'] } } },
+  // must not restart the live editorial preview during a browser check. Saved
+  // publisher evidence is also outside the app; keep actual research records live.
+  vite: { server: { watch: { ignored: ['**/artifacts/**', '**/test-results/**', '**/playwright-report/**', '**/research/source-files/**'] } } },
   integrations: [react(), {
     name: 'local-editorial-preview',
     hooks: { 'astro:config:setup': ({ command, config, updateConfig, injectRoute }) => {

@@ -202,6 +202,7 @@ test('twelve colors stay distinct and consistent between roster and reveals', as
   for (const method of methods.filter(m => m.path !== 'spinner')) {
     await openMethod(page, method.path);
     await page.getByLabel('Player count', { exact: true }).fill('12');
+    await page.getByLabel('Player count', { exact: true }).blur();
     const colors = await page.locator('.seat-token').evaluateAll(tokens => tokens.map(token => getComputedStyle(token).backgroundColor));
     expect(new Set(colors).size).toBe(12);
     await page.getByRole('button', { name: 'Pick a player' }).click();

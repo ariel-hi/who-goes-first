@@ -21,14 +21,14 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       </div>
       <p class="count-label" data-count role="status" hidden></p>
       <ul class="game-list directory-results" data-results hidden></ul>
-      <p data-empty hidden>No matching game in this collection.</p>
+      <div class="directory-empty" data-empty hidden><h2>No matching games</h2><p>Try a shorter name or another filter. You can also <a href="/">pick a starting player</a> now.</p></div>
       <noscript><p class="small muted">Browse the letter pages below. Search needs JavaScript.</p></noscript>
     </div>
     <h2 class="directory-browse-heading">Browse by name</h2>
     <nav class="directory-letter-grid" aria-label="Browse game names by letter">
       {letters.map(({ letter, count }) => <a href={shelfHref(letter)} aria-label={`Browse ${shelfLabel(letter)} games`}><strong>{shelfLabel(letter)}</strong><span>{count.toLocaleString('en')} {count === 1 ? 'game' : 'games'}</span></a>)}
     </nav>
-    <p class="small muted">This collection is growing. Additional game names come from <a href="https://www.wikidata.org/wiki/Property:P2339">Wikidata</a> under CC0. Starting rules are checked against publisher sources. Names without a rule open BoardGameGeek.</p>
+    <p class="small muted">This collection is growing. Additional game names come from <a href="https://www.wikidata.org/wiki/Property:P2339">Wikidata</a> under CC0. Starting rules are checked against publisher sources. Open a name without a rule for a fair-draw option.</p>
     {extraRules.length > 0 && <section class="rule-section"><h2>More sourced editions</h2><p>These editions have a starting-player rule and are listed separately from the collection above.</p><ul class="game-list">{extraRules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.gameName}<small>{rule.editionLabel}</small></span></a></li>)}</ul></section>}
   </div>
 </Layout>
@@ -80,12 +80,25 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       const item = document.createElement('li');
       item.dataset.id = game.id;
       item.dataset.hasRule = String(game.hasRule);
-      const link = document.createElement('a'); link.href = game.href;
       const label = document.createElement('span'); label.textContent = game.name;
-      const status = document.createElement('small'); status.textContent = game.ruleCount > 1 ? `${game.ruleCount} sourced editions` : game.hasRule ? 'Starting rule available' : 'Awaiting a sourced rule · View game identity';
-      label.append(status); link.append(label);
-      const arrow = document.createElement('span'); arrow.className = 'directory-arrow'; arrow.ariaHidden = 'true'; arrow.textContent = '→'; link.append(arrow);
-      item.append(link); fragment.append(item);
+      const status = document.createElement('small'); status.textContent = game.ruleCount > 1 ? `${game.ruleCount} sourced editions` : game.hasRule ? 'Starting rule available' : 'No checked starting rule yet';
+      label.append(status);
+      if (game.hasRule) {
+        const link = document.createElement('a'); link.href = game.href; link.append(label);
+        const arrow = document.createElement('span'); arrow.className = 'directory-arrow'; arrow.ariaHidden = 'true'; arrow.textContent = '→'; link.append(arrow);
+        item.append(link);
+      } else {
+        const details = document.createElement('details'); details.className = 'directory-pending';
+        const summary = document.createElement('summary'); summary.append(label);
+        const disclosure = document.createElement('span'); disclosure.className = 'directory-disclosure'; disclosure.ariaHidden = 'true'; summary.append(disclosure);
+        const help = document.createElement('div'); help.className = 'directory-pending-help';
+        const explanation = document.createElement('p'); explanation.textContent = 'We haven’t checked this game’s starting rule yet. Follow the rulebook in your box, or give every player an equal chance with the picker.';
+        const actions = document.createElement('div'); actions.className = 'directory-pending-actions';
+        const picker = document.createElement('a'); picker.className = 'directory-picker-link'; picker.href = '/'; picker.textContent = 'Pick a player';
+        const identity = document.createElement('a'); identity.href = game.href; identity.textContent = 'View game on BoardGameGeek ↗';
+        actions.append(picker, identity); help.append(explanation, actions); details.append(summary, help); item.append(details);
+      }
+      fragment.append(item);
     }
     results.append(fragment);
     results.hidden = matches.length === 0;

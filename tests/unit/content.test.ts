@@ -25,6 +25,18 @@ test('browse shelves include each identity once within a bounded page size', () 
   expect(shelves.every(shelf => shelf.games.length > 0 && shelf.games.length <= BROWSE_PAGE_SIZE)).toBe(true);
   expect(games.length).toBeGreaterThan(4900);
 });
+test('reviewed identities retain edition distinctions without transferring a starting rule', () => {
+  const games = getBoardGames();
+  expect(games.find(game => game.bggId === '2397')?.name).toBe('Backgammon');
+  expect(games.find(game => game.bggId === '121')?.name).toBe('Dune (Avalon Hill, 1979)');
+  expect(games.find(game => game.bggId === '283355')?.name).toBe('Dune (Gale Force Nine, 2019)');
+  expect(games.find(game => game.bggId === '211716')?.name).toBe('John Company (first edition, 2017)');
+  expect(games.find(game => game.bggId === '332686')?.name).toBe('John Company: Second Edition');
+  expect(games.find(game => game.bggId === '121')?.rules).toEqual([]);
+  expect(games.find(game => game.bggId === '2397')?.rules.map(rule => rule.id)).toEqual(['backgammon-usbgf-basics-standard-en']);
+  // The unresolved Deluxe mapping is held rather than merged with the original.
+  expect(games.some(game => game.bggId === '345972')).toBe(false);
+});
 test('coverage does not merge unrelated games with identical or punctuation-equivalent names', () => {
   const coverage = getCoverage();
   const chomp = coverage.games.find(game => game.bggId === '377449');

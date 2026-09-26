@@ -1,0 +1,38 @@
+{
+  "id": "backgammon-usbgf-basics-standard-en",
+  "slug": "backgammon-usbgf-basics-standard-en",
+  "gameName": "Backgammon",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Standard two-player Backgammon - USBGF Backgammon Basics: How To Play (English, checked 2026-09-26)",
+  "firstPlayerRule": "Each player rolls one die. Whoever rolls the higher number takes the first turn, using both numbers from that opening roll without rolling again.",
+  "officialTieBreak": "If the opening dice match, both players roll again until their numbers differ.",
+  "houseFallback": null,
+  "clarifications": [
+    "After the opening turn, the players alternate turns and each rolls two dice. The opening turn cannot be doubles because matching opening numbers are rerolled.",
+    "The optional automatic-doubles rule changes the stake when the opening dice match; it does not choose a starter. The source says players commonly agree to a maximum of one automatic double per game.",
+    "The source excludes automatic doubles, beavers and the Jacoby rule from match play."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://usbgf.org/backgammon-basics-how-to-play/",
+      "title": "Backgammon Basics: How To Play",
+      "publisher": "U.S. Backgammon Federation, USBGF Education Team",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Standard setup; Movement of the Checkers (opening paragraph); Optional Rules (Automatic doubles); Common Questions: Who goes first?, automatic doubles discussion, and What is match play?",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Read the complete relevant setup, opening-movement paragraph, first-player FAQ and optional-doubles/match-play passages in the federation-hosted English HTML. The opening dice simultaneously select the starter and that starter's moves; a second roll would be incorrect. Tied opening dice require both players to reroll. The optional stake increase remains separate. Source cached at research/source-files/traditional-games/backgammon-usbgf-basics.html, SHA-256 bd4fcf95d27407e66a0e40cf905496e308bf39cdfe5746aed75dee55f3eb20f0. HTML has no PDF page numbers. Canonical standard-game identity Q11411 / BGG 2397; no rule transfer to Tavli Q968853. Draft only; no portable-pool eligibility.",
+  "uncertainty": [
+    "The inspected federation education page does not show a rulebook edition/date; the label records retrieval and standard-game scope rather than inventing a revision year.",
+    "This is the inspected standard-game educational ruleset, not a claim that all regional Backgammon variants or tournament documents have identical provisions."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}
