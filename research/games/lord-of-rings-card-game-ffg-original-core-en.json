@@ -1,0 +1,44 @@
+{
+  "id": "lord-of-rings-card-game-ffg-original-core-en",
+  "slug": "lord-of-rings-card-game-ffg-original-core-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Lord of the Rings: The Card Game",
+  "aliases": [],
+  "editionLabel": "FFG English original core set",
+  "firstPlayerRule": "Choose a first player and give them the first-player token. If the group cannot decide, select the first player randomly.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player gets the first opportunity to play cards during Planning, followed by the other players clockwise.",
+    "Pass the first-player token clockwise during the Refresh phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/ed/c7/edc7c539-c4d4-461c-b998-17fa2451a303/learn_to_play.pdf",
+      "title": "The Lord of the Rings: The Card Game — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "7",
+        "9",
+        "17"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        9,
+        17
+      ],
+      "location": "Setup step 4; Planning phase; Refresh phase step 3",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official FFG English Learn to Play PDF. Rendered7 explicit choose-or-random opening,9 planning order,17 token rotation. Page2 describes one-to-two players from one core set and up to four with a second; page31 credits2017 revised manual, so scope is original core rather than2022 expanded Revised Core Set. Source custody: research/source-files/popular-sep26-06/lotr.pdf; SHA-256 c9878acdae645f7b9edb9536b4e7717064ae37f6a078c3b4f5fa8c25317a21db. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This is the revised Learn to Play for the original core set, not the later expanded core set."
+  ]
+}
