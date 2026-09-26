@@ -1,0 +1,44 @@
+{
+  "id": "captain-sonar-matagot-second-en",
+  "slug": "captain-sonar-matagot-second-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "4ef79e7ecd363fe835ed82e732a00e0b19debb96116ff2c1f4aa5c85cb876896",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Captain Sonar",
+  "aliases": [],
+  "editionLabel": "Matagot English second edition",
+  "firstPlayerRule": "In real-time play, both Captains call “Dive!” to begin, then each Captain gives orders at their own pace. There is no individual first player.",
+  "officialTieBreak": null,
+  "houseFallback": "For turn-by-turn play, agree which team starts before beginning.",
+  "clarifications": [
+    "The turn-by-turn mode alternates between Captains; each must let the opponent finish before announcing a new direction."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.northstreetgames.com/images/Rulebooks/Captain-Sonar-Rules-v5.pdf",
+      "title": "Captain Sonar — English rulebook",
+      "publisher": "Matagot",
+      "printedPages": [
+        "1",
+        "2",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        8
+      ],
+      "location": "Game overview; The Captain; publisher credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "PDF1 game modes and player count, PDF2 both Captains Dive and real-time/turn-by-turn distinction inspected visually. PDF8 extracted credits explicitly Matagot2022. Publisher product confirms two modes; source custody is the archived publisher manual, not a community rules summary. Source custody: research/source-files/popular-sep26-07/sonar.pdf; SHA-256 5993bf8537092353749cd44a3877459fb797c50f668f8280721413c5f4019a45. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The reviewed turn-by-turn instructions do not specify which team takes the first turn.",
+    "This is the Matagot-authored second-edition manual, preserved by a game retailer; the current publisher product page did not provide a direct English download."
+  ]
+}
