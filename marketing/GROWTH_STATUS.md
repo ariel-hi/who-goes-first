@@ -9,6 +9,7 @@ Last checked: 2026-09-26 UTC. This is an observation log, not a claim of traffic
 - Picker, rule and printable-page sharing uses clean links. Optional measurement counts successful handoffs only after the expanded analytics consent.
 - The printable page and its PDF responded anonymously with HTTP 200. The PDF matches the reviewed file and declares the page as its preferred canonical using a `Link` response header.
 - The Briefcase publisher citation is repaired. Four Lookout citations that denied automated requests loaded as PDFs in Chrome; see the source-availability audit.
+- The live printable page was checked in Chrome at a 320 × 568 viewport with its real analytics prompt open. Both consent buttons fit and could be reached. After “No thanks,” the prompt closed and the download action and sheet preview remained readable without horizontal clipping. No Google analytics consent was granted for this check; the temporary viewport was reset.
 
 ## Search discovery
 
