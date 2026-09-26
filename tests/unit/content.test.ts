@@ -101,6 +101,7 @@ test('public board game directory includes every discovered identity and links o
   expect(games.find(game => game.bggId === '15512')?.rules.map(rule => rule.id)).toEqual(expect.arrayContaining([
     'diamant-iello-revised-en', 'incan-gold-eagle-gryphon-en-2018',
   ]));
+  expect(games.find(game => game.bggId === '2511')?.rules.map(rule => rule.id)).toContain('sherlock-thames-murders-space-cowboys-en');
 });
 test('browse shelves include each identity once within a bounded page size', () => {
   const { games, shelves } = getBrowseShelves();

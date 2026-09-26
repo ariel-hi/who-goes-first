@@ -18,3 +18,5 @@ Food Chain Magnate separates setup, simultaneous restructuring and chosen action
 Strict target coverage is 350/1,062, with 712 remaining. Next target: Friday, rank 196. Integration added one missing directory identity.
 
 All required gates passed: content validation (1,017 approved rules, 383 portable methods), zero Astro diagnostics, lint, all 154 tests in 16 files, and production build (1,183 pages, 31,703 internal links). SEO and production audits passed. Logs are retained in ignored artifacts. Deployment and live verification follow.
+
+Deployed as f7ce235 and verified live: rule index 1,017, directory index 5,017, all eight article pages HTTP 200 with correct canonicals/indexing and directory links. Home, directory, robots and sitemap checks passed. Evidence: ignored artifacts/popular-sep26-08-live-check.json.
