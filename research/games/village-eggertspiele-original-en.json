@@ -1,0 +1,42 @@
+{
+  "id": "village-eggertspiele-original-en",
+  "slug": "village-eggertspiele-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Village",
+  "aliases": [],
+  "editionLabel": "Eggertspiele English original edition",
+  "firstPlayerRule": "The oldest player takes the starting-player marker and starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the oldest players are tied, choose randomly among them.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/2b/4d/41-village-rulebook.pdf",
+      "title": "Village — English rulebook",
+      "publisher": "Eggertspiele / Pegasus Spiele",
+      "printedPages": [
+        "3",
+        "4",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        12
+      ],
+      "location": "Setup step 13; Playing a round; publisher credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Archive manual visibly credits Eggertspiele 2011 and Pegasus on page12. Setup3 step13 names oldest; page4 explicitly starts actions with marker holder. Current publisher page did not provide a retrievable original English manual. Source custody: research/source-files/popular-sep26-07/village.pdf; SHA-256 997a1e886225eab14b06373867972b6a84164af4e7cabb7adc716a6d5c6b53cb. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The original publisher-authored manual is preserved by a rulebook archive; this source covers the original edition, not the Big Box.",
+    "The setup does not resolve equal ages."
+  ]
+}
