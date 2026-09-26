@@ -17,4 +17,6 @@ Survive's original anniversary manual is distinct from the newer Survive the Isl
 
 Strict name/alias coverage: 310/1,062 targets covered, 752 remaining. Next uncovered target is Suburbia at rank 151.
 
-Required checks passed: content validation (974 approved rules, 375 usable random methods), Astro (zero errors/warnings/hints), lint, all 153 tests in 16 files, and production build with the live canonical origin, owner contact and Cloudflare privacy variables. Production audits passed for 1,137 pages and 30,720 internal links. Live verification follows deployment.
+Required checks passed: content validation (974 approved rules, 375 usable random methods), Astro (zero errors/warnings/hints), lint, all 153 tests in 16 files, and production build with the live canonical origin, owner contact and Cloudflare privacy variables. Production audits passed for 1,137 pages and 30,720 internal links.
+
+Pushed as 4d57327 and verified live on 2026-09-26: all eight new edition pages returned HTTP 200, appear in the 974-record rule index, and link correctly from the 5,009-entry directory index. Canonicals and indexability passed, no internal source-cache details leaked, and home, directory, robots and sitemap returned HTTP 200.
