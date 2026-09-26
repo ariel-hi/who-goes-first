@@ -1,0 +1,40 @@
+{
+  "id": "rising-sun-cmon-en",
+  "slug": "rising-sun-cmon-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "2d2dcc68f60cefc732e5dbf19a0348714894b2d969bd0322279db11124994c53",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Rising Sun",
+  "aliases": [],
+  "editionLabel": "CMON English base game",
+  "firstPlayerRule": "The player whose Clan has the lowest-numbered Starting Honor Rank takes the first Mandate Turn. Their Clan starts at the top of the Honor track.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Seat players clockwise in increasing Starting Honor Rank. The seating order stays fixed.",
+    "This identifies the first Political Mandate turn; the opening Tea Ceremony is for players to negotiate alliances."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://resources.cmon.com/Rising_Sun_Rulebook.pdf",
+      "title": "Rising Sun — English rulebook",
+      "publisher": "CMON",
+      "printedPages": [
+        "8",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        12
+      ],
+      "location": "Setup — Sitting order and Prepare your Clan; Political phase — Mandate turns",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official CMON-hosted English rulebook. PDF/printed8 gives lowest-numbered rank first and clockwise seating, while12 links top Honor to first Mandate. Game-specific Clan selection, not a portable criterion. Source custody: research/source-files/popular-sep26-08/rising.pdf; SHA-256 87dbc85299369476bfa980ebdcd1fbc5ddaef72ebd98a1884e51529e3706b556. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
