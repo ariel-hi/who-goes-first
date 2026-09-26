@@ -1,0 +1,41 @@
+{
+  "id": "istanbul-pegasus-big-box-en",
+  "slug": "istanbul-pegasus-big-box-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Istanbul",
+  "aliases": [],
+  "editionLabel": "Pegasus English Big Box — base game",
+  "firstPlayerRule": "Choose a starting player randomly. Give that player the starting-player marker and 2 Lira; take turns clockwise from them.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In clockwise order, each subsequent player starts with one more Lira than the player to their right."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pegasus.de/en/NetiMedia/download?mediaId=018e5c281b7e7160a3162d5b353d7352",
+      "title": "Istanbul Big Box — English rules",
+      "publisher": "Pegasus Spiele",
+      "printedPages": [
+        "6",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        8
+      ],
+      "location": "Setup step 12; Flow of Play",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted English Big Box manual: base-game setup step 12 randomly assigns the starter and starting money; Flow of Play confirms clockwise turns. Source custody: research/source-files/popular-sep26/istanbul.pdf; SHA-256 529230ae52ba385cb21621dc0a7d86feb2118ce54cc7e420ab0d81d78ed8affb. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This record covers base-game play using the Big Box manual, not the separate dice or Choose & Write games."
+  ]
+}
