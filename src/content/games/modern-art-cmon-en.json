@@ -1,0 +1,37 @@
+{
+  "id": "modern-art-cmon-en",
+  "slug": "modern-art-cmon-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "5502e901b3f203b911aebcfe20f8d3214b0068d264937ecf478c3fb2e6bd9d71",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Modern Art",
+  "aliases": [],
+  "editionLabel": "CMON English edition",
+  "firstPlayerRule": "The youngest player holds the first auction, choosing a painting from their hand to offer for sale.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "The Auctioneer passes the Hammer token left after a painting is sold. The opening bidder and bidding order depend on the auction type."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/MA_Rulebbok_Artbook_v18-low.pdf",
+      "title": "Modern Art — English rulebook",
+      "publisher": "CMON",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Running auctions",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official CMON product page links this rulebook and artbook. Visually inspected PDF3 Running Auctions: youngest begins as Auctioneer; bidding need not begin with that player. Unnumbered page cited by PDF position. Source custody: research/source-files/popular-sep26-05/modern.pdf; SHA-256 87702ae43337c2adcf1ea5d163ab8573b62aa00f0eae1e049aad5738f3566b9e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The rules do not specify a tie-break for equally young players."
+  ]
+}
