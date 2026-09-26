@@ -77,7 +77,7 @@ test('native and language-neutral identities enroll only after primary identity 
   ] as const) {
     const game = games.find(game => game.bggId === id);
     expect(game?.name).toBe(name);
-    const expected = ({ '322421': 'aqua-garden-uchibacoya-en-rulebook', '360899': 'harrow-county-off-the-page-en-2023-full', '447999': 'dino-garden-uchibacoya-en-rulebook' } as Record<string, string>)[id];
+    const expected = ({ '273910': 'stars-of-akarios-crowd-ru-base-manual', '322421': 'aqua-garden-uchibacoya-en-rulebook', '360899': 'harrow-county-off-the-page-en-2023-full', '447999': 'dino-garden-uchibacoya-en-rulebook' } as Record<string, string>)[id];
     expect(game?.rules.map(rule => rule.id)).toEqual(expected ? [expected] : []);
   }
   expect(games).toHaveLength(4992);
@@ -124,7 +124,7 @@ test('accepted native alternate names are search-only and deduped without held i
     else expect(entry).not.toHaveProperty('slug');
     expect(entries.filter(entry => entry.terms?.some(term => directorySearchKey(term) === directorySearchKey(alternate))).map(entry => entry.id)).toEqual([id]);
   }
-  expect(games.find(game => game.bggId === '273910')!.rules).toEqual([]);
+  expect(games.find(game => game.bggId === '273910')!.rules.map(rule => rule.id)).toEqual(['stars-of-akarios-crowd-ru-base-manual']);
   expect(games.find(game => game.bggId === '396790')!.searchNames.filter(name => name === 'Nukleum')).toHaveLength(1);
   expect(games.find(game => game.bggId === '258779')!.searchNames.filter(name => name === 'プラネット アンノウン')).toHaveLength(1);
   expect(games.find(game => game.bggId === '245476')!.searchNames).toEqual([]);
@@ -315,16 +315,17 @@ test('the three manual approvals bind exact revisions and remain outside the por
     expect(raw.tieBreakApplicable).toBe(false);
   }
 });
-test('CrowD shared-folder manual approvals bind exact revisions and three independent edition assignments', () => {
+test('CrowD shared-folder manual approvals bind exact revisions and four independent edition assignments', () => {
   const games = getBoardGames();
   const catalog = getCatalog();
-  expect(catalog).toHaveLength(890);
-  expect(games.filter(game => game.rules.length > 0)).toHaveLength(884);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4108);
+  expect(catalog).toHaveLength(891);
+  expect(games.filter(game => game.rules.length > 0)).toHaveLength(885);
+  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4107);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['360899', 'harrow-county-off-the-page-en-2023-full', 19, 'IjsvmsDwtKGLPQ'],
+    ['273910', 'stars-of-akarios-crowd-ru-base-manual', 13, 'G5NtVcPiXbqCKw'],
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${ruleId}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${ruleId}.json`, 'utf8')));
@@ -346,6 +347,12 @@ test('CrowD shared-folder manual approvals bind exact revisions and three indepe
   expect(harrow.clarifications.join(' ')).toContain('Training Game');
   expect(harrow.clarifications.join(' ')).toContain('Fair Folk');
   expect(harrow.houseFallback).toContain('who reveals the first setup tile');
+  const akarios = catalog.find(rule => rule.id === 'stars-of-akarios-crowd-ru-base-manual')!;
+  expect(akarios.editionLabel).toContain('English summary of the Russian base manual');
+  expect(akarios.firstPlayerRule).toContain('No fixed starting player');
+  expect(akarios.sources[0]!.pdfPagesOneBased.slice(0, 2)).toEqual([13, 37]);
+  expect(akarios.clarifications.join(' ')).toContain('first choose a space-event option together');
+  expect(akarios.clarifications.join(' ')).toContain('separate scenario book was not reviewed');
 });
 
 test('drafts cannot publish and approval is bound to the exact content', () => {

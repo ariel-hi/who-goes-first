@@ -1,0 +1,66 @@
+{
+  "id": "stars-of-akarios-crowd-ru-base-manual",
+  "slug": "stars-of-akarios-crowd-ru-base-manual",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "c306ccb03d3d76385e5bf2fc635c4397b3348769d803133149f23623d1016aec",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Stars of Akarios",
+  "aliases": [],
+  "editionLabel": "CrowD Games · English summary of the Russian base manual · combat and world exploration · 1–4 players",
+  "firstPlayerRule": "No fixed starting player is required: during pilot actions in combat or world exploration, players may act simultaneously or take actions in any order.",
+  "officialTieBreak": null,
+  "houseFallback": "If your group wants to decide who resolves a shared interaction first, agree on a player or pick one at random. This does not set an order for later actions.",
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Players can interleave their actions; one player does not have to finish all their available actions before another begins. Resolve interactions with the same hex or enemy in combat, or the same object in world exploration, one at a time.",
+    "In combat, the pilot phase has three steps: roll dice, place dice and perform actions, then update combat effects. Everyone finishes the current step before the next begins. Rolling and updating effects can be simultaneous.",
+    "World exploration has its own round phases: reduce vigor, perform pilot actions, then end the round. Everyone finishes the current phase before moving on; the first and third phases can be simultaneous.",
+    "Campaign setup lets each player choose a starting pilot and ship. It does not specify a priority for those choices or appoint a starting leader. Read the scenario's setup and special rules before beginning; the separate scenario book was not reviewed for this answer.",
+    "Players first choose a space-event option together. If they cannot agree, page 35 has each player roll four action dice: most stress faces decides, with tied players rerolling. This settles that event choice; it does not choose the first player or create a general initiative tie-break.",
+    "This summarizes the preserved Russian main manual. Expansion rules and the separately listed FAQ and errata were not reviewed; follow your scenario and any applicable corrections.",
+    "The source link opens the publisher-linked shared folder. Select “Звёзды Акариоса. Правила игры v2.pdf”; the combat and world-exploration action-order instructions are on PDF and printed pages 13 and 37."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://disk.yandex.ru/d/G5NtVcPiXbqCKw",
+      "title": "Stars of Akarios — Russian rules: Звёзды Акариоса. Правила игры v2.pdf",
+      "publisher": "CrowD Games — Russian edition and official shared-folder distribution",
+      "printedPages": [
+        "2",
+        "4",
+        "6–8",
+        "11",
+        "13",
+        "26",
+        "35–37"
+      ],
+      "pdfPagesOneBased": [
+        13,
+        37,
+        4,
+        6,
+        7,
+        8,
+        11,
+        26,
+        35,
+        36,
+        2
+      ],
+      "location": "Folder file Звёзды Акариоса. Правила игры v2.pdf; Russian imprint (2); cooperative participant range (4); campaign pilot/ship choices and scenario-book start (6–8); scenario-specific setup (11); combat pilot action order (13); separate enemy order (26); space-event decision only (35); world setup and action order (36–37). Printed numbers match PDF indices.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root independently reviewed the complete original Russian manual on 2026-09-26 under standing owner source-review authorization of 2026-09-22. Preserved PDF research/source-files/sep26-akarios-manual-folder-intake/get-04-pdf.pdf, 17753547 bytes, 52 pages, SHA256 ac99fe4fba1b2a12faa1702fdbe692969c5f83309aceca607c78ebdc308453bd. Root opened all 13 complete contact sheets covering all 52 pages, plus original-resolution pages 2,13,37. Original PDF/renders govern over extraction: ABBYY page3 contains additional hidden text and Poppler gave a font-weight warning. Root rehashed all 161 source members/57435327 bytes, source manifest be41dc9d8eb0818b87dc78d0ac4d8af20b8ba18b35f33c9df99f37fb5f3123ff, all 49 preceding source members and four byte-exact parent copies. Root checked complete official CrowD collection body18934cdd0b24cd518f8aee745ad01eced51e95eb6077ae3adee3ae13b58c77ad, exact publisher anchors42/62 with raw byte contexts, stable folder body/listing, literal resource path/ID, observed download custody and all four complete request body/header hashes. No invented product-page fetch, English-source equivalence or signed public link. Root binding at HEAD141de8d3168af2d279846cbfe73c1200e24a2784 preserves seven current input hashes and all890 catalog hashes in artifacts/sep26-akarios-root-bindings.json. Original proposals and historical source bindings remain unchanged. Intake used four bounded CLI GETs, no retries; browser subrequest count is unknown and separate; root made no new network requests. Pages13/37 explicitly permit simultaneous or arbitrary sequential/interleaved pilot actions; shared combat hex/enemy or world object interactions serialize. Page35 disagreement rolls apply only to space-event decisions; p26 enemy ordering is separate. Setup pilot/ship selection and scenario-book opening are not assigned an invented priority. Source reviewer memo/proof is retained separately in artifacts/sep26-akarios-manual-independent-review/. This research draft retains null approval/publication fields; approval can bind only its exact final separately reviewed revision. Directory-only, no random-pool eligibility, no edition transfer and no deployment.",
+  "uncertainty": [
+    "This is an English paraphrase of the exact Russian manual; no original English manual was listed or retrieved in this intake. No rule transfer to English 1.5 or marketing almost 2.0 is established.",
+    "The filename's v2, ABBYY metadata dates and product marketing do not establish a formal numbered edition, copyright year or integration of current errata. The visible imprint identifies the Russian edition and CrowD distribution.",
+    "The separate scenario book, event cards, expansion manuals and listed FAQ/errata were not retrieved or reviewed. The answer covers the explicit general pilot-action order in this preserved main manual; specific scenario overrides remain outside this approval.",
+    "No fixed player leader, campaign pilot-choice priority or generic initiative tie-break was invented. Optional agreement/random choice only helps serialize a shared interaction; it is not an official random-starter requirement.",
+    "Public citation uses the publisher-linked stable folder and verbatim filename, with honest plain PDF/printed-page locators. The observed signed download address remains private custody evidence."
+  ]
+}

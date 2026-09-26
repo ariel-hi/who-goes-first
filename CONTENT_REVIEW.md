@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 890 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 891 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+
+Stars of Akarios adds an independently reviewed English summary of the complete52-page Russian main manual. Root and a separate source reviewer read all52 pages; all161 sealed intake members,49 preceding members and exact publisher/folder/file custody were checked. Combat/world pilot actions allow simultaneous or arbitrary interleaved order, while shared interactions serialize. Enemy activation and the space-event disagreement dice do not select a starter. Scenario-book/FAQ/errata/expansion and English-version transfers remain outside approval. Its exact revised record stays outside the portable mix; see `research/coverage/sep26-akarios-home-continuity-progress.md`.
 
 Aqua Garden, Dino Garden and Harrow County add three independently reviewed exact English manual answers. Root opened all74 complete rendered PDF pages and rehashed242 sealed intake members plus49 earlier source members. Aqua/Dino retain open choice, track-based turns and different Lucy movement; Harrow retains tile-revealer setup, fixed tutorial opening and changing token order. Stable shared-folder citations include verbatim filenames and honest PDF/printed-page locators. All three stay outside the portable mix. Exact revisions and scope are recorded in `research/coverage/sep26-native-search-three-manual-progress.md`.
 

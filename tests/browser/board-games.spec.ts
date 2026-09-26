@@ -114,7 +114,7 @@ for (const width of [320, 1280]) {
     await page.goto('/board-games/');
     const input = page.getByRole('searchbox', { name: 'Search board games' });
     for (const [query, id, name, slug] of [
-      ['ЗВЕЗДЫ АКАРИОСА', '273910', 'Stars of Akarios', null],
+      ['ЗВЕЗДЫ АКАРИОСА', '273910', 'Stars of Akarios', 'stars-of-akarios-crowd-ru-base-manual'],
       ['Зоосад: Вода', '322421', 'Aqua Garden', 'aqua-garden-uchibacoya-en-rulebook'],
       ['Округ Хэрроу: Готическое противостояние', '360899', 'Harrow County: The Game of Gothic Conflict', 'harrow-county-off-the-page-en-2023-full'],
       ['Зоосад Дино', '447999', 'Dino Garden', 'dino-garden-uchibacoya-en-rulebook'],
@@ -142,7 +142,10 @@ for (const width of [320, 1280]) {
     await page.getByRole('button', { name: 'Awaiting a rule', exact: true }).click();
     await expect(page.getByRole('heading', { name: 'No matching games', exact: true })).toBeVisible();
     await input.fill('Звёзды Акариоса');
-    await expect(page.locator('[data-results] li[data-id="273910"]')).toBeVisible();
+    await expect(page.locator('[data-results] li[data-id="273910"]')).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'No matching games', exact: true })).toBeVisible();
+    await page.getByRole('button', { name: 'With a rule', exact: true }).click();
+    await expect(page.locator('[data-results] li[data-id="273910"] a')).toHaveAttribute('href', '/games/stars-of-akarios-crowd-ru-base-manual/');
     await input.fill('Брасс: Питтсбург');
     await expect(page.locator('[data-results] li')).toHaveCount(0);
     await expect(page.getByRole('heading', { name: 'No matching games', exact: true })).toBeVisible();

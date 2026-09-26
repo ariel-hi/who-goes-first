@@ -202,7 +202,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     } else setCountDraft(String(players.length));
   }
   function holdCountForPick(button: HTMLButtonElement) {
-    if (document.activeElement !== countInput.current) return;
+    if (busy || document.activeElement !== countInput.current) return;
     countPressCleanup.current();
     heldCountCommit.current = true;
     const cleanup = () => {
@@ -334,7 +334,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         </fieldset>
         {fallbackLimit !== null && <p className="small notice">{chosenMethod.label} fits up to {fallbackLimit} players. Quick is selected for your group of {eligible.length}.</p>}
         {error && <p role="alert" className="error">{error}</p>}
-        {busy ? <button type="button" className="primary" disabled>Revealing…</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
+        <button type="button" className="primary" disabled={!hydrated || errors.length > 0} aria-disabled={busy} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={pick}>{!hydrated ? 'Getting ready…' : busy ? 'Revealing…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
         {visualMode && scene && <div ref={revealStage} className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
           <Suspense fallback={<RevealLoading mode={effectiveMode} players={scene.outcome.players} />}>
             {effectiveMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
