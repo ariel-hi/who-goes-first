@@ -1,22 +1,32 @@
 [
   {
+    "ruleId": "7-wonders-2020-en",
+    "inventoryIds": ["316377"],
+    "reason": "The Repos Production 2020 manual covers the second edition, not the original 7 Wonders identity."
+  },
+  {
+    "ruleId": "the-castles-of-burgundy-alea-2019-en",
+    "inventoryIds": ["271320"],
+    "reason": "The reviewed alea 2019 manual covers the 2019 edition identity, not the earlier Castles of Burgundy release."
+  },
+  {
     "ruleId": "ancient-world-red-raven-en-second-edition",
-    "inventoryIds": [],
+    "inventoryIds": ["259298"],
     "reason": "Red Raven's linked manual explicitly covers The Ancient World Second Edition (BGG 259298), a reimplementation of the original inventory identity 147253. Its optional variants resembling the first edition are not evidence for that original game's starting instruction."
   },
   {
     "ruleId": "chomp-gamewright-en",
-    "inventoryIds": [],
+    "inventoryIds": ["5367"],
     "reason": "Gamewright's Chomp! is a simultaneous card game. The inventory's Chomp (377449) is the unrelated dinosaur tile game shown on AEG's Chomp product page. Similar punctuation-normalized names do not establish identity."
   },
   {
     "ruleId": "big-top-gamewright-en",
-    "inventoryIds": [],
-    "reason": "Gamewright's Big Top is an animal-and-color recognition card game. The inventory's Big Top (369899) is Allplay's circus auction game. The two publisher manuals describe different games, not editions of one game."
+    "inventoryIds": ["486"],
+    "reason": "Gamewright's animal-and-color recognition game Big Top is an edition of Barnyard Buddies (BGG 486). Allplay's unrelated circus auction Big Top is BGG 369899; BGG 7048 is a third, unrelated circus card game."
   },
   {
     "ruleId": "trismegistus-new-edition-board-dice-en",
-    "inventoryIds": [],
+    "inventoryIds": ["440942"],
     "reason": "The publisher's revised Trismegistus New Edition is distinct from the inventory's Trismegistus: The Ultimate Formula (281442). Its potion criterion is not evidence for the original game's transmutation/introductory setup. The original has its own researched record."
   },
   {

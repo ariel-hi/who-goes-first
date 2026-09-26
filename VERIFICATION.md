@@ -1,4 +1,12 @@
-# Local verification — updated 2026-09-24 UTC
+# Local verification — updated 2026-09-25 UTC
+
+## Board directory and motion checkpoint — 2026-09-25 UTC
+
+The directory now contains 1,368 distinct BGG identities. All 861 approved rule records link to exactly one identity; 855 identities have a sourced edition and 513 still need primary-source research. The 35 newly enrolled approved rules include explicit mappings for lookalike titles and editions. Gamewright's Big Top is correctly linked to Barnyard Buddies (BGG 486), rather than the unrelated BGG 7048 or Allplay's Big Top (369899).
+
+Directory search now matches known aliases and punctuation variants, with alphabetical jumps and source-status filters. The in-app Reduce motion setting stops the winner's continuing glow while preserving the selected result. Desktop and 390px mobile directory screenshots were opened and checked; the mobile page had no horizontal overflow.
+
+On this checkout, `npm run verify` passed Astro check, lint, all 44 unit tests, content validation, and the 2,246-page preview build. Static and SEO audits passed for 26,535 internal links. Nine focused browser checks passed across Chromium, Firefox and WebKit. The complete release matrix passed. Fresh production-fixture Lighthouse runs scored 100 in accessibility, best practices and SEO for every tested template; performance was 99–100 on three mobile home runs and 100 on desktop home, Balloon, the board directory and the synthetic rule page. The full directory's mobile CLS was 0. These are local lab results, not field performance or a ranking claim. No deployment occurred in this checkpoint.
 
 ## Fudacoma and Blue Orange approval checkpoint — 2026-09-24 UTC
 

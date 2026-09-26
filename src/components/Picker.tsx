@@ -192,7 +192,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     return { outcome, plan: createRevealPlan(outcome, () => .5) };
   }, [preview, players]);
   const scene = state.outcome && revealPlan ? { outcome: state.outcome, plan: revealPlan } : previewScene;
-  return <section className="picker" aria-label="Starting-player picker" data-phase={state.phase} data-count={eligible.length} data-large={eligible.length > 12}>
+  return <section className="picker" aria-label="Starting-player picker" data-phase={state.phase} data-count={eligible.length} data-large={eligible.length > 12} data-reduced={reduced}>
     {/* Firefox otherwise restores dynamic disabled states before hydration. */}
     <form autoComplete="off" onSubmit={event => event.preventDefault()}>
       <div className="picker-card">

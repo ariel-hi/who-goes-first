@@ -22,7 +22,7 @@ The audit follows primary guidance from [Google's SEO starter guide](https://dev
 
 ## Reproducible measurement
 
-Run `npm run verify`, `npm run test:release`, then `npm run test:browser`. For the local production audit, run `npm run audit:lighthouse` within an hour of the release matrix. It starts an isolated local server and browser, measures three simulated mobile home loads, one desktop home load, Balloon, and a clearly synthetic rule-page fixture, then closes its processes. JSON and HTML reports are written under `artifacts/lighthouse/`.
+Run `npm run verify`, `npm run test:release`, then `npm run test:browser`. For the local production audit, run `npm run audit:lighthouse` within an hour of the release matrix. It starts an isolated local server and browser, measures three simulated mobile home loads, one desktop home load, Balloon, the full board-game directory, and a clearly synthetic rule-page fixture, then closes its processes. JSON and HTML reports are written under `artifacts/lighthouse/`.
 
 The audit exits unsuccessfully if SEO, accessibility, or best practices score below 100, or performance below 90. Reports are saved before that gate so failures can be investigated. Browser storage validation uses Zod's non-evaluating parser to avoid CSP violations; the policy does not allow `unsafe-eval`.
 

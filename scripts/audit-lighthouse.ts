@@ -24,7 +24,7 @@ let lighthouseVersion = '';
 try {
   for (const [name, path, desktop] of [
     ['home-mobile-1', '/', false], ['home-mobile-2', '/', false], ['home-mobile-3', '/', false],
-    ['home-desktop', '/', true], ['balloon-mobile', '/methods/balloon/', false], ['rule-mobile', '/games/synthetic-fixture/', false],
+    ['home-desktop', '/', true], ['balloon-mobile', '/methods/balloon/', false], ['board-games-mobile', '/board-games/', false], ['rule-mobile', '/games/synthetic-fixture/', false],
   ] as const) {
     const result = await lighthouse(base + path, { port: debugAddress.port, output: ['json', 'html'], logLevel: 'error', onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'] }, desktop ? desktopConfig : undefined);
     assert.ok(result && !result.lhr.runtimeError, `${name}: Lighthouse did not complete`);

@@ -68,6 +68,17 @@ test('reduced motion preserves the result and settled visual', async ({ page }) 
   await expect(page.locator('.table-reveal')).toHaveAttribute('data-settled', 'true');
 });
 
+test('the in-app motion setting stops the winner glow', async ({ page }) => {
+  await controlledRandom(page, 1);
+  await ready(page);
+  await page.getByRole('button', { name: 'Preferences' }).click();
+  await page.getByLabel('Reduce motion').check();
+  await page.getByRole('button', { name: 'Pick a player' }).click();
+  await expect(announcement(page)).toContainText('Seat 2 goes first');
+  await expect(page.locator('.picker')).toHaveAttribute('data-reduced', 'true');
+  await expect(page.locator('.player.winner .seat-token')).toHaveCSS('animation-name', 'none');
+});
+
 for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) test(`${mode} reveals the same preselected outcome`, async ({ page }) => {
   await controlledRandom(page, 1); await ready(page); await showAllMethods(page);
   await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();

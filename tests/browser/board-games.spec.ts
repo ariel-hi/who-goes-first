@@ -5,8 +5,16 @@ test('all board games are searchable and lead to the right game page', async ({ 
   await page.goto('/board-games/');
   const inventory = JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8')) as { games: unknown[] };
   await expect(page.locator('[data-board-directory] li')).toHaveCount(inventory.games.length);
+  await page.getByRole('link', { name: 'Games starting with A' }).click();
+  await expect(page).toHaveURL(/#games-a$/);
+  await page.getByRole('button', { name: /Awaiting a rule/ }).click();
+  await expect(page.locator('[data-board-directory] li:visible').first()).toHaveAttribute('data-has-rule', 'false');
+  await page.getByRole('button', { name: /All games/ }).click();
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Azul');
   await expect(page.locator('[data-board-directory] li:visible').first()).toContainText('Azul');
+  await page.getByRole('searchbox', { name: 'Search board games' }).fill('10 to kill');
+  await expect(page.locator('[data-board-directory] li:visible')).toHaveCount(1);
+  await page.getByRole('searchbox', { name: 'Search board games' }).fill('Azul');
   // A game with one sourced edition links straight to its rule.
   await page.locator('[data-board-directory] li:visible').filter({ hasText: 'Azul' }).first().getByRole('link').click();
   await expect(page).toHaveURL(/\/games\/azul-2018-en\/$/);

@@ -21,6 +21,26 @@
   .home-rules-browse { display:flex; align-items:center; justify-content:space-between; min-height:54px; padding:10px 16px; border:1px solid #d8cbd9; border-radius:15px; background:var(--paper); font-size:15px; font-weight:600; text-decoration:none; }
   .home-rules-browse:hover { background:#fff; text-decoration:underline; }
   .home-rules-pending { margin:18px 0 0!important; color:var(--muted); }
+  .directory-filters { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 16px; }
+  .directory-alphabet[hidden], .directory-group[hidden] { display:none; }
+  .directory-filters button { min-height:42px; padding:7px 13px; border:1px solid #d8cbd9; border-radius:999px; background:var(--paper); color:var(--muted); font-size:13px; }
+  .directory-filters button:hover { background:#f7f2f7; }
+  .directory-filters button[aria-pressed=true] { background:var(--green); border-color:var(--green); color:#fff; }
+  .directory-filters button span { margin-left:5px; font-variant-numeric:tabular-nums; }
+  .directory-alphabet { display:flex; flex-wrap:wrap; gap:3px; padding:9px 0 13px; border-bottom:1px solid var(--line); }
+  .directory-alphabet a { display:grid; place-items:center; min-width:36px; min-height:44px; padding:0 5px; border-radius:9px; color:var(--green); font-size:13px; font-weight:600; text-decoration:none; }
+  .directory-alphabet a:hover { background:#eae0eb; }
+  .directory-group { margin-top:25px; scroll-margin-top:18px; }
+  .directory-group h2 { display:flex; align-items:center; gap:14px; color:var(--green); font-size:24px; margin:0 0 5px; }
+  .directory-group h2::after { content:""; flex:1; border-top:1px solid var(--line); }
+  .directory-group .game-list { margin:0; }
+  .directory-group .game-list a { min-height:64px; padding:10px 12px; border-radius:9px; color:var(--ink); }
+  .directory-group .game-list a span:first-child { min-width:0; overflow-wrap:anywhere; }
+  .directory-group .game-list a:hover { background:#eee7ef; text-decoration:none; }
+  .directory-group .game-list a:hover span:first-child { text-decoration:underline; text-decoration-color:var(--green); text-underline-offset:4px; }
+  .directory-arrow { flex:none; color:var(--green); font-size:20px; opacity:.65; transition:transform .18s ease, opacity .18s ease; }
+  .directory-group .game-list a:hover .directory-arrow { transform:translateX(3px); opacity:1; }
+  @media(prefers-reduced-motion:reduce) { .directory-arrow { transition:none; } }
   .home-picker-heading { margin:0 0 12px 4px; }
   .home-picker-heading h1 { font-size:27px; margin:0; }
   .home-rule-picker { margin-top:8px; border:1px solid var(--line); border-radius:18px; background:var(--paper); }
@@ -174,6 +194,7 @@
   @keyframes balloon-float { from { transform:translate(calc(var(--bob-x) * -.5),1px) rotate(calc(var(--bob-turn) * -.5)); } to { transform:translate(var(--bob-x),var(--bob-y)) rotate(var(--bob-turn)); } }
   @keyframes drop-scraps { from { opacity:0; transform:translate(var(--pop-x),var(--pop-y)) rotate(var(--pop-turn)); } to { opacity:1; transform:translateX(calc(var(--pop-x) * .35)) rotate(calc(var(--pop-turn) * .2)); } }
   .reveal-stage { margin:14px 0 0; padding:12px 14px; border:1px solid var(--line); border-radius:18px; background:#faf7f4; pointer-events:none; }
+  .picker[data-reduced=true] *, .picker[data-reduced=true] *::before, .picker[data-reduced=true] *::after { animation:none!important; transition:none!important; }
   .reveal-stage :is(.spinner-stage,.table-reveal,.balloon-field) { margin-top:0; }
   .reveal-stage [data-preview=true] * { animation:none!important; }
   .reveal-stage [data-preview=true] .die svg { opacity:1; }
@@ -250,6 +271,11 @@
     .home-layout { grid-template-columns:1fr; gap:24px; }
   }
   @media(max-width:650px) {
+    .directory-filters { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px; }
+    .directory-filters button { min-height:56px; padding:5px 4px; font-size:11px; line-height:1.25; }
+    .directory-filters button span { display:block; margin:3px 0 0; font-size:12px; }
+    .directory-alphabet { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:thin; }
+    .directory-alphabet a { flex:none; min-width:38px; }
     .table-reveal[data-count="4"], .balloon-field[data-count="4"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .tool-page { margin-top:12px; padding:0 16px; }
     .intro { margin-bottom:20px; }
