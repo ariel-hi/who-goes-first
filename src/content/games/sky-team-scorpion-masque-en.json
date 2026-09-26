@@ -1,0 +1,43 @@
+{
+  "id": "sky-team-scorpion-masque-en",
+  "slug": "sky-team-scorpion-masque-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "db546b52f91bbb402b802ea403a290888efed6e58ec336f6cb37f181546f41db",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Sky Team",
+  "aliases": [],
+  "editionLabel": "Scorpion Masqué English base game",
+  "firstPlayerRule": "The Pilot, using the blue dice, places the first die in the opening round. The players then alternate placing one die at a time.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The arrow in the Current Altitude screen determines who starts each round.",
+    "Setup assigns the Pilot to the blue side of the control panel and the Co-Pilot to the orange side.",
+    "Strategy discussion and hidden dice rolls happen before dice placement."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://scorpionmasque.com/sites/scorpionmasque.com/files/st_rules01_en_06jun2023.pdf",
+      "title": "Sky Team — Landing Procedure",
+      "publisher": "Le Scorpion Masqué",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Before Each Game; Dice Placement, General Rules A",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The publisher's English Landing Procedure gives the blue Pilot the opening placement. The board's altitude arrow controls later rounds. Downloaded successfully from the publisher's non-www host after local DNS failed for www. Source custody: research/source-files/popular-sep26/sky-team.pdf; SHA-256 d5e46e0cb6a715cbed3f2fb16eb05e405c1de40e5e7f0f95d876c015ab8b24e5. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "Scoped to the introductory Montreal setup in Landing Procedure. Advanced modules and expansion scenarios are not reviewed here."
+  ]
+}
