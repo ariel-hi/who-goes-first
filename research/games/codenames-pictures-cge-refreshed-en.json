@@ -1,0 +1,37 @@
+{
+  "id": "codenames-pictures-cge-refreshed-en",
+  "slug": "codenames-pictures-cge-refreshed-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Codenames: Pictures",
+  "aliases": [],
+  "editionLabel": "CGE English refreshed edition",
+  "firstPlayerRule": "The triangles on the randomly drawn key card show which team starts. That team’s Spymaster gives the first clue.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The starting team receives the double-agent tile and must find one more picture than the other team. Teams alternate turns.",
+    "Each team chooses its Spymaster during setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/codenames-pictures/rules/CP%20rulebook%20EN%2021.pdf",
+      "title": "Codenames: Pictures — English rulebook",
+      "publisher": "Czech Games Edition",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        4
+      ],
+      "location": "Setup — Give the double agent to the starting team; How to play",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current CGE product page loads its manuals through the public filemanager rules API. Retrieved the English entry, not the legacy URL that redirects to HTML. RenderedPDF2 and4 show refreshed orange/purple teams and key-card triangles selecting starter. No individual first-Spymaster criterion was invented. Source custody: research/source-files/popular-sep26-06/pictures.pdf; SHA-256 2b2bca2056a49e8d4f9718418be839fd74c1549b9f9b248a61049ba48464c40e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
