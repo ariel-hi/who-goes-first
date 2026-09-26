@@ -1,0 +1,42 @@
+{
+  "id": "roborally-wizards-revised-en",
+  "slug": "roborally-wizards-revised-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "06be360d4fd90b037841937368595cece7557a662ebd6e23d3704929c512ee60",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "RoboRally",
+  "aliases": [],
+  "editionLabel": "Avalon Hill English revised edition",
+  "firstPlayerRule": "Randomly choose who places first: that player puts their robot and Archive marker on Dock 1. The other players place clockwise on the remaining docks.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This chooses starting dock assignments. Players program their robots together; during execution, a higher Program-card priority number moves before a lower one when order matters."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://desktopgames.com.ua/games/381/roborally_rules_en.pdf",
+      "title": "RoboRally — English rulebook",
+      "publisher": "Wizards of the Coast / Avalon Hill",
+      "printedPages": [
+        "3",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        8,
+        36
+      ],
+      "location": "Setup step 5; Priority; publisher credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Visually inspected PDF5 printed3 setup5, PDF8 printed6 Priority, and PDF36 unnumbered Wizards copyright2005 and revision credits. Current Hasbro product manual is a later edition, so it was not substituted. Source custody: research/source-files/popular-sep26-07/robo.pdf; SHA-256 42e0664e774ee4f6ba50694e436e27a631629e0c726daaeaf13337b801393219. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This is the publisher-authored 2005 revision, preserved by a game retailer. Later Hasbro and Renegade editions have different rules and are not covered here."
+  ]
+}
