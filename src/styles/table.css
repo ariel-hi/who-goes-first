@@ -21,6 +21,7 @@
   .home-rules-browse { display:flex; align-items:center; justify-content:space-between; min-height:54px; padding:10px 16px; border:1px solid #d8cbd9; border-radius:15px; background:var(--paper); font-size:15px; font-weight:600; text-decoration:none; }
   .home-rules-browse:hover { background:#fff; text-decoration:underline; }
   .home-rules-pending { margin:18px 0 0!important; color:var(--muted); }
+  .rule-lookup-results a:focus-visible { outline-offset:-8px; }
   .directory-filters { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 16px; }
   .directory-alphabet[hidden], .directory-group[hidden], .directory-filters[hidden], .directory-results[hidden], .directory-empty[hidden] { display:none; }
   .directory-filters button { min-height:42px; padding:7px 13px; border:1px solid #d8cbd9; border-radius:999px; background:var(--paper); color:var(--muted); font-size:13px; }

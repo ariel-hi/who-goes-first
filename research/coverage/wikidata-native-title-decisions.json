@@ -6,16 +6,16 @@
   "sourceSnapshotStatementSha256": "65ce20420ac25bf7bd9421378470d07ce39f5e7c8040b541cea310f1cf95ab5b",
   "sourceSnapshotEntitiesSha256": "fcca4c520fc5a80f8ff01a9c9ef00977a6dfb2a3f9d61d47beac037436f489f9",
   "scope": "Supplementary identity-only decisions for the complete native/mul/P1476 pool. Accept means direct primary identity evidence corroborates a discovery name for exact runtime inventory enrollment; it approves no starting-player rule, edition transfer or deployment. Every other candidate is held. Numeric identifiers and QID provenance are official Wikidata CC0. Primary publisher/author title and authorship facts are individually observed, not a BoardGameGeek corpus. No BoardGameGeek destination, API or page content was fetched.",
-  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained. A subsequent independently reviewed Super Meeple product page resolved the Ironwood hold through its literal exact 407343 numeric href and preserved publisher/domain bridge. The full prior hold and age/edition limits remain retained; no rule approval or saved creator claim was transferred. A subsequent root-reviewed Frosted Wroth/Groll partnership bridge and Super Meeple Beyond the Horizon literal numeric href resolved the remaining two holds from the ten-candidate review. Wroth retains Wikidata-only numeric provenance; Horizon retains its primary-hosted exact href. Complete prior holds and all mode/age/year/creator limits remain preserved, with no rule or claim repair. Root independently reviewed Northgard: Uncharted Lands, ImmunoWars and Townsfolk Tussle from six preserved primary bodies with complete prior holds; exact native titles and saved P2339 mapping retained. Semantic identity enrollment only, without primary numeric reconfirmation, edition rules or qualified metadata repair. Root independently reviewed a new six-GET GaGa intake: Final Titan accepted from an exact saved publisher/domain/schedule/product native-title bridge; Nekojima, Nanatoridori and Lone Wolves retain target-context holds after the inspected endpoints. All four prior unreviewed holds, immutable snapshots and numeric provenance remain preserved. The future product date and age/time/creator limits are explicit; no rule or claim repair. Root independently reviewed complete saved native entities and primary CrowD context: Stars of Akarios, Aqua Garden and Harrow County accepted with separately observed exact primary numeric hrefs; Dino Garden accepted through the exact native publisher/title/physical-product bridge with Wikidata-only numeric authority. Octex retains a reviewed human/musician misassociation hold. Complete prior holds and source/metadata/edition limits are preserved. Dino unbound collection numeric href remains an observation, not a verified title binding. No rule or claim repair.",
+  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained. A subsequent independently reviewed Super Meeple product page resolved the Ironwood hold through its literal exact 407343 numeric href and preserved publisher/domain bridge. The full prior hold and age/edition limits remain retained; no rule approval or saved creator claim was transferred. A subsequent root-reviewed Frosted Wroth/Groll partnership bridge and Super Meeple Beyond the Horizon literal numeric href resolved the remaining two holds from the ten-candidate review. Wroth retains Wikidata-only numeric provenance; Horizon retains its primary-hosted exact href. Complete prior holds and all mode/age/year/creator limits remain preserved, with no rule or claim repair. Root independently reviewed Northgard: Uncharted Lands, ImmunoWars and Townsfolk Tussle from six preserved primary bodies with complete prior holds; exact native titles and saved P2339 mapping retained. Semantic identity enrollment only, without primary numeric reconfirmation, edition rules or qualified metadata repair. Root independently reviewed a new six-GET GaGa intake: Final Titan accepted from an exact saved publisher/domain/schedule/product native-title bridge; Nekojima, Nanatoridori and Lone Wolves retain target-context holds after the inspected endpoints. All four prior unreviewed holds, immutable snapshots and numeric provenance remain preserved. The future product date and age/time/creator limits are explicit; no rule or claim repair. Root independently reviewed complete saved native entities and primary CrowD context: Stars of Akarios, Aqua Garden and Harrow County accepted with separately observed exact primary numeric hrefs; Dino Garden accepted through the exact native publisher/title/physical-product bridge with Wikidata-only numeric authority. Octex retains a reviewed human/musician misassociation hold. Complete prior holds and source/metadata/edition limits are preserved. Dino unbound collection numeric href remains an observation, not a verified title binding. No rule or claim repair. Root-reviewed Spectacular 415147, The Great Library 432834 and Yami 452684 as distinct identities using complete saved entities, exact primary numeric collection hrefs and physical publisher product context. Original null priorBoundedDisposition is retained with complete old holds in identityReviewHistory. Six sources have project-relative cacheFile bindings. Yami product-title conflict and P144 relationship to Kakapo remain explicit; no merge, rules, metadata repair or edition transfer.",
   "counts": {
     "totalCandidates": 288,
-    "reviewed": 47,
-    "unreviewed": 241,
-    "accept": 36,
-    "hold": 252,
+    "reviewed": 50,
+    "unreviewed": 238,
+    "accept": 39,
+    "hold": 249,
     "priorUnheldReviewed": 13,
     "priorUnheldAccepted": 10,
-    "additionalAccepted": 26
+    "additionalAccepted": 29
   },
   "sources": {
     "kramer-author": {
@@ -994,6 +994,84 @@
       "cacheFile": "research/source-files/sep26-crowd-garden-primary-discovery-intake/dino-product.html",
       "retrievedOn": "2026-09-26",
       "observedEvidence": "Complete observed official physical dinosaur base-game product, literal Russian title,1–4 players,36 cards and detailed components. Future November2026 preorder and age15vs14+ conflict retained. No BGG anchor or starting-rule approval."
+    },
+    "crowd-spectacular-collection-sep26-three-native": {
+      "url": "https://www.crowdgames.ru/collection/zapovednik-ischezayuschie-vidy",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "0bcebdeca810a2bcd43b58798178833a4f0c984a9c740c2211981261b3e43704",
+      "completeBodyPath": "get-01-spectacular-collection.html",
+      "completeResponseHeadersPath": "get-01-spectacular-collection-headers.txt",
+      "getNumber": 1,
+      "bytes": 390878,
+      "retrievedAt": "2026-09-26T12:39:22.662050+00:00",
+      "cacheFile": "research/source-files/sep26-three-crowd-native-identities-intake/get-01-spectacular-collection.html",
+      "byteCount": 390878
+    },
+    "crowd-spectacular-product-sep26-three-native": {
+      "url": "https://www.crowdgames.ru/collection/shop/product/zapovednik-ischezayuschie-vidy",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "8e79c2cc60fbeafb3ba0187302c59793589701a60f33c9933a244cffe2d58087",
+      "completeBodyPath": "get-04-spectacular-product.html",
+      "completeResponseHeadersPath": "get-04-spectacular-product-headers.txt",
+      "getNumber": 4,
+      "bytes": 886442,
+      "retrievedAt": "2026-09-26T12:43:31.683996+00:00",
+      "cacheFile": "research/source-files/sep26-three-crowd-native-identities-intake/get-04-spectacular-product.html",
+      "byteCount": 886442
+    },
+    "crowd-great-library-collection-sep26-three-native": {
+      "url": "https://www.crowdgames.ru/collection/velikaya-biblioteka",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "712fb4a36cae618bfc4553b033b14376e0a648ebca0fcdeaff6f981037508ae6",
+      "completeBodyPath": "get-02-great-library-collection.html",
+      "completeResponseHeadersPath": "get-02-great-library-collection-headers.txt",
+      "getNumber": 2,
+      "bytes": 477202,
+      "retrievedAt": "2026-09-26T12:39:25.494965+00:00",
+      "cacheFile": "research/source-files/sep26-three-crowd-native-identities-intake/get-02-great-library-collection.html",
+      "byteCount": 477202
+    },
+    "crowd-great-library-product-sep26-three-native": {
+      "url": "https://www.crowdgames.ru/collection/velikaya-biblioteka/product/nastolnaya-igra-velikaya-biblioteka-predzakaz",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "eb0fabb5f3ea61a35ccdbcd01aaf5e4313b5edc1171705f5e5516f6fcf3df89e",
+      "completeBodyPath": "get-05-great-library-product.html",
+      "completeResponseHeadersPath": "get-05-great-library-product-headers.txt",
+      "getNumber": 5,
+      "bytes": 625790,
+      "retrievedAt": "2026-09-26T12:43:34.281408+00:00",
+      "cacheFile": "research/source-files/sep26-three-crowd-native-identities-intake/get-05-great-library-product.html",
+      "byteCount": 625790
+    },
+    "crowd-yami-collection-sep26-three-native": {
+      "url": "https://www.crowdgames.ru/collection/yami",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "ee8acb2505ef346f634a8b676825a5e178ead68b2eca4dc125539e74836512ff",
+      "completeBodyPath": "get-03-yami-collection.html",
+      "completeResponseHeadersPath": "get-03-yami-collection-headers.txt",
+      "getNumber": 3,
+      "bytes": 322177,
+      "retrievedAt": "2026-09-26T12:39:27.686943+00:00",
+      "cacheFile": "research/source-files/sep26-three-crowd-native-identities-intake/get-03-yami-collection.html",
+      "byteCount": 322177
+    },
+    "crowd-yami-product-sep26-three-native": {
+      "url": "https://www.crowdgames.ru/collection/shop/product/yami",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "938756e36a6ae6c0bd83801e05d6e9164fab0dca7f03f2058c5a6fad1d51c7ff",
+      "completeBodyPath": "get-06-yami-product.html",
+      "completeResponseHeadersPath": "get-06-yami-product-headers.txt",
+      "getNumber": 6,
+      "bytes": 729724,
+      "retrievedAt": "2026-09-26T12:43:36.784720+00:00",
+      "cacheFile": "research/source-files/sep26-three-crowd-native-identities-intake/get-06-yami-product.html",
+      "byteCount": 729724
     }
   },
   "unusableAttemptNotes": [
@@ -21430,12 +21508,21 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root-reviewed identity-only acceptance: complete saved nondeprecated P2339 is independently corroborated by the literal numeric publisher collection href and distinct matching physical game context; all saved labels and aliases checked against the current catalog and inventory.",
+      "identityEvidence": [
+        "CrowD collection https://www.crowdgames.ru/collection/zapovednik-ischezayuschie-vidy explicitly identifies Spectacular as the game and contains literal href https://boardgamegeek.com/boardgame/415147/spectacular; exact numeric ID 415147 independently corroborates the complete saved nondeprecated P2339 statement(s). BGG destination was not fetched.",
+        "Observed main product anchor on that complete collection led to https://www.crowdgames.ru/collection/shop/product/zapovednik-ischezayuschie-vidy; the product identifies the matching Russian game and describes a board game with physical components. Complete HTML bodies, headers, title/h1 locators and all literal anchors are retained."
+      ],
+      "sourceIds": [
+        "crowd-spectacular-collection-sep26-three-native",
+        "crowd-spectacular-product-sep26-three-native"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.crowdgames.ru/collection/zapovednik-ischezayuschie-vidy",
+        "https://www.crowdgames.ru/collection/shop/product/zapovednik-ischezayuschie-vidy"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -21449,7 +21536,145 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "identityReviewHistory": [
+        {
+          "reviewedOn": "2026-09-26",
+          "fullPreviousDecision": {
+            "bggId": "415147",
+            "wikidataItems": [
+              "Q133868856"
+            ],
+            "displayName": "Spectacular",
+            "selectedTitle": {
+              "wikidataId": "Q133868856",
+              "text": "Spectacular",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q133868856",
+                "revision": 2529351573,
+                "entitySha256": "2cd1f36d5a2661c2c43ccd53decac22b760c2728bc31e2d24da863de8f511823",
+                "statements": [
+                  "Q133868856$5646FA67-ED64-418E-9EA1-CE5995F7D807"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          },
+          "reason": "Root review of the complete saved entity, publisher domain, exact primary numeric href and distinct physical product."
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "identityCorroborationStatus": "primary-numeric-corroboration",
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "crowd-spectacular-collection-sep26-three-native",
+          "href": "https://boardgamegeek.com/boardgame/415147/spectacular",
+          "rawId": "415147",
+          "exactCandidateId": true,
+          "anchorIndexZeroBased": 60,
+          "byteStart": 131470,
+          "byteEnd": 131583,
+          "sourceSha256": "0bcebdeca810a2bcd43b58798178833a4f0c984a9c740c2211981261b3e43704",
+          "visibleAnchorText": "BoardGameGeek",
+          "destinationFetched": false
+        }
+      ],
+      "primaryIdentityReviewEvidence": {
+        "publisherQid": "Q125680931",
+        "publisherRevision": 2439014095,
+        "publisherCanonicalSha256": "98ad731c5875b8dfb6e469bcd1aca3d7d147a9a2797d534d5eb7ef824ffb2727",
+        "gamePublisherStatement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P123",
+            "hash": "c5dd5d21120861ca1609f38c88158ba058c4415e",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 125680931,
+                "id": "Q125680931"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q133868856$75462AFB-599B-412B-B7A0-94ECEB088966",
+          "rank": "normal"
+        },
+        "publisherDomainStatement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P856",
+            "hash": "a77665c0e4054dbec311145f24f2d51923fc10c0",
+            "datavalue": {
+              "value": "https://www.crowdgames.ru",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P407": [
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 7737,
+                    "id": "Q7737"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P407"
+          ],
+          "id": "Q125680931$e976cf71-4a77-341c-12b8-7d786ccb424a",
+          "rank": "normal"
+        },
+        "primaryHostedNumericBggHrefObserved": true,
+        "completePrimaryHtmlTitles": [
+          "«Заповедник» (Spectacular) — настольная игра Crowd Games",
+          "Купить настольную игру «Заповедник. Исчезающие виды» (Spectacular) — издательство Crowd Games (Крауд Геймс)"
+        ],
+        "metadataRepairApproved": false,
+        "relatedIdentityMergeApproved": false
+      },
+      "editionNotes": [
+        "Identity review only. No starting rule, edition equivalence, saved claim repair, manual review, purchase recommendation, pricing or availability claim is approved.",
+        "Application precision correction: retain original priorBoundedDisposition null and preserve the complete previous hold in identityReviewHistory. The sealed unapproved proposal remains unchanged."
+      ],
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "applicationHead": "88a9e8d097a52322dbded4e3a1f5a0cda7f8e87b",
+        "baselineDecisionsSha256": "26bcf9e4e0545c4e0774d87f3c993cbdbc9bfe28c81ca17b64e8abd91293f565",
+        "originalIntakeManifestSha256": "2a638cf69827710281900905bad2f275db15da6c67ed8d0040352c9c0869ec12",
+        "originalProposalSha256": "616382e390f844cdb0d75d1e7dca69d62ba45b1b2b4d76b7e20754442d3c5076",
+        "independentReviewFile": "artifacts/sep26-three-crowd-native-independent-review/memo.md",
+        "independentMemoSha256": "69f5df135fc48cd921f74bc9a0661fab4bc3909c4d6b8d95360e40c9fabfb9a4",
+        "independentProofSha256": "23ba9728d302497f1196b2da7873764d82b62f0656eb4f2e30fed57c0b073f63",
+        "scope": "Three distinct identity-only accepts. All other 285 native decisions and all 891 rule files remain unchanged."
+      }
     },
     {
       "bggId": "415517",
@@ -24511,12 +24736,21 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root-reviewed identity-only acceptance: complete saved nondeprecated P2339 is independently corroborated by the literal numeric publisher collection href and distinct matching physical game context; all saved labels and aliases checked against the current catalog and inventory.",
+      "identityEvidence": [
+        "CrowD collection https://www.crowdgames.ru/collection/velikaya-biblioteka explicitly identifies The Great Library as the game and contains literal href https://boardgamegeek.com/boardgame/432834/the-great-library; exact numeric ID 432834 independently corroborates the complete saved nondeprecated P2339 statement(s). BGG destination was not fetched.",
+        "Observed main product anchor on that complete collection led to https://www.crowdgames.ru/collection/velikaya-biblioteka/product/nastolnaya-igra-velikaya-biblioteka-predzakaz; the product identifies the matching Russian game and describes a board game with physical components. Complete HTML bodies, headers, title/h1 locators and all literal anchors are retained."
+      ],
+      "sourceIds": [
+        "crowd-great-library-collection-sep26-three-native",
+        "crowd-great-library-product-sep26-three-native"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.crowdgames.ru/collection/velikaya-biblioteka",
+        "https://www.crowdgames.ru/collection/velikaya-biblioteka/product/nastolnaya-igra-velikaya-biblioteka-predzakaz"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -24530,7 +24764,146 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "identityReviewHistory": [
+        {
+          "reviewedOn": "2026-09-26",
+          "fullPreviousDecision": {
+            "bggId": "432834",
+            "wikidataItems": [
+              "Q138653271"
+            ],
+            "displayName": "The Great Library",
+            "selectedTitle": {
+              "wikidataId": "Q138653271",
+              "text": "The Great Library",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q138653271",
+                "revision": 2547514319,
+                "entitySha256": "87d6880b9b5f0b8d995b7c640563960102965e0b77b70d13fa2a6b3fc4ee8565",
+                "statements": [
+                  "Q138653271$370033E3-EDA1-4677-B3B8-719CD4D4A862"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          },
+          "reason": "Root review of the complete saved entity, publisher domain, exact primary numeric href and distinct physical product."
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "identityCorroborationStatus": "primary-numeric-corroboration",
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "crowd-great-library-collection-sep26-three-native",
+          "href": "https://boardgamegeek.com/boardgame/432834/the-great-library",
+          "rawId": "432834",
+          "exactCandidateId": true,
+          "anchorIndexZeroBased": 87,
+          "byteStart": 136653,
+          "byteEnd": 136939,
+          "sourceSha256": "712fb4a36cae618bfc4553b033b14376e0a648ebca0fcdeaff6f981037508ae6",
+          "visibleAnchorText": "",
+          "destinationFetched": false
+        }
+      ],
+      "primaryIdentityReviewEvidence": {
+        "publisherQid": "Q125680931",
+        "publisherRevision": 2439014095,
+        "publisherCanonicalSha256": "98ad731c5875b8dfb6e469bcd1aca3d7d147a9a2797d534d5eb7ef824ffb2727",
+        "gamePublisherStatement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P123",
+            "hash": "c5dd5d21120861ca1609f38c88158ba058c4415e",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 125680931,
+                "id": "Q125680931"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q138653271$0be8f939-4805-a064-fbaa-47f9f8bf4a1b",
+          "rank": "normal"
+        },
+        "publisherDomainStatement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P856",
+            "hash": "a77665c0e4054dbec311145f24f2d51923fc10c0",
+            "datavalue": {
+              "value": "https://www.crowdgames.ru",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P407": [
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 7737,
+                    "id": "Q7737"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P407"
+          ],
+          "id": "Q125680931$e976cf71-4a77-341c-12b8-7d786ccb424a",
+          "rank": "normal"
+        },
+        "primaryHostedNumericBggHrefObserved": true,
+        "completePrimaryHtmlTitles": [
+          "«Великая библиотека» (The Great Library) — настольная игра Crowd Games",
+          "Оформить предзаказ на настольную игру «Великая библиотека» (The Great Library) — издательство Crowd Games (Крауд Геймс)"
+        ],
+        "metadataRepairApproved": false,
+        "relatedIdentityMergeApproved": false
+      },
+      "editionNotes": [
+        "Identity review only. No starting rule, edition equivalence, saved claim repair, manual review, purchase recommendation, pricing or availability claim is approved.",
+        "Application precision correction: retain original priorBoundedDisposition null and preserve the complete previous hold in identityReviewHistory. The sealed unapproved proposal remains unchanged.",
+        "The publisher preorder estimates October 2026 warehouse delivery; this is not a publication date or an inspected edition imprint. Saved campaign and marketing amounts differ and are not imported."
+      ],
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "applicationHead": "88a9e8d097a52322dbded4e3a1f5a0cda7f8e87b",
+        "baselineDecisionsSha256": "26bcf9e4e0545c4e0774d87f3c993cbdbc9bfe28c81ca17b64e8abd91293f565",
+        "originalIntakeManifestSha256": "2a638cf69827710281900905bad2f275db15da6c67ed8d0040352c9c0869ec12",
+        "originalProposalSha256": "616382e390f844cdb0d75d1e7dca69d62ba45b1b2b4d76b7e20754442d3c5076",
+        "independentReviewFile": "artifacts/sep26-three-crowd-native-independent-review/memo.md",
+        "independentMemoSha256": "69f5df135fc48cd921f74bc9a0661fab4bc3909c4d6b8d95360e40c9fabfb9a4",
+        "independentProofSha256": "23ba9728d302497f1196b2da7873764d82b62f0656eb4f2e30fed57c0b073f63",
+        "scope": "Three distinct identity-only accepts. All other 285 native decisions and all 891 rule files remain unchanged."
+      }
     },
     {
       "bggId": "433007",
@@ -26354,12 +26727,22 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root-reviewed identity-only acceptance: complete saved nondeprecated P2339 is independently corroborated by the literal numeric publisher collection href and distinct matching physical game context; all saved labels and aliases checked against the current catalog and inventory.",
+      "identityEvidence": [
+        "CrowD collection https://www.crowdgames.ru/collection/yami explicitly identifies Yami as the game and contains literal href https://boardgamegeek.com/boardgame/452684/yami; exact numeric ID 452684 independently corroborates the complete saved nondeprecated P2339 statement(s). BGG destination was not fetched.",
+        "Observed main product anchor on that complete collection led to https://www.crowdgames.ru/collection/shop/product/yami; the product identifies the matching Russian game and describes a board game with physical components. Complete HTML bodies, headers, title/h1 locators and all literal anchors are retained.",
+        "Yami product metadata names The Kakapo: Buddy & Party, which is a separate saved identity 410097. The collection names Yami and directly links 452684. This accept proposal is bounded to Yami 452684; Kakapo aliases, merging, rules, promotional scenarios and edition equivalence are expressly held."
+      ],
+      "sourceIds": [
+        "crowd-yami-collection-sep26-three-native",
+        "crowd-yami-product-sep26-three-native"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.crowdgames.ru/collection/yami",
+        "https://www.crowdgames.ru/collection/shop/product/yami"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -26373,7 +26756,146 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "identityReviewHistory": [
+        {
+          "reviewedOn": "2026-09-26",
+          "fullPreviousDecision": {
+            "bggId": "452684",
+            "wikidataItems": [
+              "Q140033893"
+            ],
+            "displayName": "Yami",
+            "selectedTitle": {
+              "wikidataId": "Q140033893",
+              "text": "Yami",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q140033893",
+                "revision": 2529351817,
+                "entitySha256": "e394db06604548fb10229b998c76d473367d9b679236d2cfef41144f38920dbb",
+                "statements": [
+                  "Q140033893$B0DC0966-1F20-4563-9343-17E293DF78C7"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          },
+          "reason": "Root review of the complete saved entity, publisher domain, exact primary numeric href and distinct physical product."
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "identityCorroborationStatus": "primary-numeric-corroboration",
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "crowd-yami-collection-sep26-three-native",
+          "href": "https://boardgamegeek.com/boardgame/452684/yami",
+          "rawId": "452684",
+          "exactCandidateId": true,
+          "anchorIndexZeroBased": 53,
+          "byteStart": 93253,
+          "byteEnd": 93514,
+          "sourceSha256": "ee8acb2505ef346f634a8b676825a5e178ead68b2eca4dc125539e74836512ff",
+          "visibleAnchorText": "",
+          "destinationFetched": false
+        }
+      ],
+      "primaryIdentityReviewEvidence": {
+        "publisherQid": "Q125680931",
+        "publisherRevision": 2439014095,
+        "publisherCanonicalSha256": "98ad731c5875b8dfb6e469bcd1aca3d7d147a9a2797d534d5eb7ef824ffb2727",
+        "gamePublisherStatement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P123",
+            "hash": "c5dd5d21120861ca1609f38c88158ba058c4415e",
+            "datavalue": {
+              "value": {
+                "entity-type": "item",
+                "numeric-id": 125680931,
+                "id": "Q125680931"
+              },
+              "type": "wikibase-entityid"
+            },
+            "datatype": "wikibase-item"
+          },
+          "type": "statement",
+          "id": "Q140033893$BBBD28F6-D72E-494E-A54D-6BB621C27729",
+          "rank": "normal"
+        },
+        "publisherDomainStatement": {
+          "mainsnak": {
+            "snaktype": "value",
+            "property": "P856",
+            "hash": "a77665c0e4054dbec311145f24f2d51923fc10c0",
+            "datavalue": {
+              "value": "https://www.crowdgames.ru",
+              "type": "string"
+            },
+            "datatype": "url"
+          },
+          "type": "statement",
+          "qualifiers": {
+            "P407": [
+              {
+                "snaktype": "value",
+                "property": "P407",
+                "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                "datavalue": {
+                  "value": {
+                    "entity-type": "item",
+                    "numeric-id": 7737,
+                    "id": "Q7737"
+                  },
+                  "type": "wikibase-entityid"
+                },
+                "datatype": "wikibase-item"
+              }
+            ]
+          },
+          "qualifiers-order": [
+            "P407"
+          ],
+          "id": "Q125680931$e976cf71-4a77-341c-12b8-7d786ccb424a",
+          "rank": "normal"
+        },
+        "primaryHostedNumericBggHrefObserved": true,
+        "completePrimaryHtmlTitles": [
+          "Настольная игра «Ями» (Yami) с промо — издательство Crowd Games",
+          "Купить настольную игру «Ями» (The Kakapo: Buddy & Party) — издательство Crowd Games (Крауд Геймс)"
+        ],
+        "metadataRepairApproved": false,
+        "relatedIdentityMergeApproved": false
+      },
+      "editionNotes": [
+        "Identity review only. No starting rule, edition equivalence, saved claim repair, manual review, purchase recommendation, pricing or availability claim is approved.",
+        "Application precision correction: retain original priorBoundedDisposition null and preserve the complete previous hold in identityReviewHistory. The sealed unapproved proposal remains unchanged.",
+        "The product HTML title pairs Ями with The Kakapo: Buddy & Party, while the collection title pairs Ями with Yami and contains exact 452684/yami. Preserve the competing title and saved P144 relationship to Q140033891. Yami 452684 remains distinct from existing Kakapo 410097; no Kakapo alias, merge, promotional mission, without-box SKU, rule or edition equivalence is approved."
+      ],
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "applicationHead": "88a9e8d097a52322dbded4e3a1f5a0cda7f8e87b",
+        "baselineDecisionsSha256": "26bcf9e4e0545c4e0774d87f3c993cbdbc9bfe28c81ca17b64e8abd91293f565",
+        "originalIntakeManifestSha256": "2a638cf69827710281900905bad2f275db15da6c67ed8d0040352c9c0869ec12",
+        "originalProposalSha256": "616382e390f844cdb0d75d1e7dca69d62ba45b1b2b4d76b7e20754442d3c5076",
+        "independentReviewFile": "artifacts/sep26-three-crowd-native-independent-review/memo.md",
+        "independentMemoSha256": "69f5df135fc48cd921f74bc9a0661fab4bc3909c4d6b8d95360e40c9fabfb9a4",
+        "independentProofSha256": "23ba9728d302497f1196b2da7873764d82b62f0656eb4f2e30fed57c0b073f63",
+        "scope": "Three distinct identity-only accepts. All other 285 native decisions and all 891 rule files remain unchanged."
+      }
     },
     {
       "bggId": "454598",

@@ -182,7 +182,7 @@ for (const width of [320, 1280]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   });
 
-  test(`home bookmarks, hash changes and cached pageshow reuse bounded search at ${width}px`, async ({ page }) => {
+  test(`home bookmarks, hash changes and cached pageshow reuse bounded search at ${width}px`, async ({ page, browserName }) => {
     await page.setViewportSize({ width, height: 844 });
     const query = '四季 + &filter=rules 🧩';
     const lookup = page.locator('[data-rule-lookup]');
@@ -225,6 +225,24 @@ for (const width of [320, 1280]) {
       expect(await cachedLink!.evaluate(node => node.isConnected && node === document.querySelector('[data-rule-lookup] [data-results] a'))).toBe(true);
       expect(await hrefs(links)).toEqual(azulLinks);
     } finally { await cachedLink?.dispose(); }
+    await input.focus();
+    for (const link of await links.all()) {
+      // Use native Tab where anchors participate. Default WebKit skips links;
+      // establish keyboard modality before native DOM focus in that engine.
+      if (browserName === 'webkit') { await page.keyboard.press('Shift'); await link.focus(); }
+      else await page.keyboard.press('Tab');
+      await expect(link).toBeFocused();
+      const bounds = await link.evaluate(node => {
+        const row = node.getBoundingClientRect(), list = node.closest('ul')!.getBoundingClientRect(), style = getComputedStyle(node);
+        const outset = parseFloat(style.outlineWidth) + parseFloat(style.outlineOffset);
+        return { visible: node.matches(':focus-visible'), width: parseFloat(style.outlineWidth), height: row.height,
+          inside: row.left - outset >= list.left && row.right + outset <= list.right && row.top - outset >= list.top && row.bottom + outset <= list.bottom };
+      });
+      expect(bounds.visible).toBe(true);
+      expect(bounds.width).toBeGreaterThan(0);
+      expect(bounds.height).toBeGreaterThanOrEqual(44);
+      expect(bounds.inside).toBe(true);
+    }
     await page.getByRole('link', { name: 'Skip to content', exact: true }).focus();
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(/\/#main$/);
