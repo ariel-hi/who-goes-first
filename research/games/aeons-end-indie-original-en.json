@@ -1,0 +1,43 @@
+{
+  "id": "aeons-end-indie-original-en",
+  "slug": "aeons-end-indie-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Aeon's End",
+  "aliases": [],
+  "editionLabel": "Indie English original base game",
+  "firstPlayerRule": "Draw the top card of the shuffled turn-order deck to determine who takes the first turn. It can be a player or the nemesis.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Draw another turn-order card after each player or nemesis turn. If the deck is empty, shuffle the discarded turn-order cards to form a new deck.",
+    "In a three-player game, if the wild turn-order card appears, the players decide who takes that turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/3f/5c/9e-aeons-end-rulebook.pdf",
+      "title": "Aeon's End — English rulebook",
+      "publisher": "Indie Boards & Cards / Action Phase Games",
+      "printedPages": [
+        "7",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        12,
+        1
+      ],
+      "location": "Turn order deck setup; Gameplay — Turn order; credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "PDF1 credits original 2016 manual, Indie and Action Phase logos. PDF8 printed7 deck setup shuffles four player cards plus two nemesis; PDF12 printed11 draws at game start and after each turn. Publisher site returned406, so the publisher-authored archival manual is disclosed. Source custody: research/source-files/popular-sep26-07/aeon.pdf; SHA-256 d4496bf1b1a69d52d59a1bfb544f1b220465ffbfcc453d1fb2834706d7cf423b. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This is the original base-game manual, preserved by a rulebook archive. It does not cover later standalone boxes or revised editions."
+  ]
+}
