@@ -71,10 +71,6 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const winner = state.outcome?.players.find(p => p.id === state.outcome?.winnerId);
   const winnerLabel = winner && state.outcome ? displayLabel(winner, state.outcome.players) : '';
 
-  useEffect(() => {
-    setCountDraft(String(players.length));
-  }, [players.length]);
-
   useEffect(() => () => countPressCleanup.current(), []);
 
   useEffect(() => {
@@ -85,6 +81,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
       setMode(restoredMode === 'balloon' && !balloonEnabled ? 'quick' : restoredMode);
       if (restoredMode === 'balloon' && !balloonEnabled) setWarning('Balloon Rise is temporarily unavailable. Quick is selected.');
       if (saved.value.remember && saved.value.roster) {
+        setCountDraft(String(saved.value.roster.length));
         setPlayers(saved.value.roster); setInputMode(saved.value.inputMode);
         setText(saved.value.roster.map(p => p.label).join('\n'));
       }
@@ -170,6 +167,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
 
   function edited(nextPlayers: Player[], valid = true) {
     if (busy) return;
+    // Commit roster and count together; a later effect could overwrite typing.
+    if (nextPlayers.length !== players.length) setCountDraft(String(nextPlayers.length));
     locked.current = null; lastStart.current = -Infinity; setPlayers(nextPlayers); setError('');
     dispatch({ type: 'EDIT', valid });
   }

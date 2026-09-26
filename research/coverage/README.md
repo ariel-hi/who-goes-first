@@ -2,7 +2,9 @@
 
 The owner requested the entire starting-rule compendium, not a named starter list. That objective remains unfinished.
 
-The [latest picker continuity checkpoint](sep26-picker-result-continuity-progress.md) keeps completed answers and artwork through method changes and unchanged list disclosures; actual new draws use the selected next method, while roster edits clear stale results. Coverage remains **4,995 identities /893 approved editions /887 sourced /4,108 pending**. Brass Pittsburgh has a separately reviewed pending identity proposal, still unenrolled; En Route's competing numeric identity remains held.
+The [latest Brass and remembered-count checkpoint](sep26-brass-and-remembered-count-progress.md) enrolls Brass Pittsburgh as an identity only and keeps En Route's competing numeric identity held after complete review. Coverage is **4,996 identities /893 approved editions /887 sourced /4,109 pending**. The picker restores remembered roster and count together; independent native-time checks reproduced and then verified correction of early count edits being overwritten.
+
+The [preceding picker continuity checkpoint](sep26-picker-result-continuity-progress.md) keeps completed answers and artwork through method changes and unchanged list disclosures; actual new draws use the selected next method, while roster edits clear stale results. Its coverage and unenrolled Brass proposal remain historical.
 
 The [latest manual and native rule-search checkpoint](sep26-two-manual-rule-search-progress.md) has **4,995 identities /893 approved editions /887 sourced /4,108 pending**, with361 portable criteria and60 house prompts. Spectacular and Yami add exact reviewed Russian manual summaries, scoped to ordinary simultaneous play and the opening training mission respectively. Their identities remain distinct; Great Library still awaits a final source. Validated native names now reach existing checked editions directly from the home lookup and public rules library, with unchanged approved record aliases and assignments.
 

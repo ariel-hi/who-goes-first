@@ -88,16 +88,17 @@ test('native and language-neutral identities enroll only after primary identity 
   expect(games.find(game => game.bggId === '415147')?.rules.map(rule => rule.id)).toEqual(['spectacular-crowd-ru-base-manual']);
   expect(games.find(game => game.bggId === '452684')?.rules.map(rule => rule.id)).toEqual(['yami-crowd-ru-training-manual']);
   expect(games.find(game => game.bggId === '410097')).toMatchObject({ name: 'The Kakapo: Buddy & Party', rules: [] });
-  expect(games).toHaveLength(4995);
+  expect(games.find(game => game.bggId === '452264')).toMatchObject({ name: 'Brass: Pittsburgh', rules: [] });
+  expect(games).toHaveLength(4996);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
-  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '452264']) {
+  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
 });
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(39);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(40);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -126,6 +127,7 @@ test('accepted native alternate names are search-only and deduped without held i
     ['432834', 'The Great Library', 'Великая библиотека'],
     ['432834', 'The Great Library', 'A Nagy Könyvtár'],
     ['452684', 'Yami', 'Ями'],
+    ['452264', 'Brass: Pittsburgh', 'Брасс: Питтсбург'],
   ] as const) {
     expect(identities.find(game => game.bggId === id)).toMatchObject({ name, searchNames: expect.arrayContaining([alternate]), status: 'needs-primary-source' });
     expect(identities.find(game => game.bggId === id)).not.toHaveProperty('rules');
@@ -146,8 +148,9 @@ test('accepted native alternate names are search-only and deduped without held i
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const heldIds = new Set(review.decisions.filter((decision: { decision: string }) => decision.decision === 'hold').map((decision: { bggId: string }) => decision.bggId));
   expect(games.filter(game => heldIds.has(game.bggId)).every(game => game.searchNames.length === 0)).toBe(true);
-  expect(entries.some(entry => entry.terms?.includes('Брасс: Питтсбург'))).toBe(false);
-  expect(entries.some(entry => entry.id === '452264')).toBe(false);
+  expect(entries.find(entry => entry.id === '452264')).toMatchObject({ name: 'Brass: Pittsburgh', ruleCount: 0, terms: ['Брасс: Питтсбург'] });
+  expect(entries.some(entry => ['418683', '406454'].includes(entry.id))).toBe(false);
+  expect(entries.some(entry => entry.terms?.includes('Маршрут построен: Расширенное издание'))).toBe(false);
   for (const entry of entries) {
     const keys = [entry.name, ...(entry.terms ?? [])].map(directorySearchKey);
     expect(new Set(keys).size).toBe(keys.length);
@@ -208,12 +211,34 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 39, hold: 249, reviewed: 50, unreviewed: 238, additionalAccepted: 29 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(39);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(249);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(50);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(238);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(11);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 40, hold: 248, reviewed: 52, unreviewed: 236, additionalAccepted: 30 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(40);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(248);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(52);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(236);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
+  for (const id of ['452264', '418683']) {
+    const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
+    expect(decision).toMatchObject({ decision: id === '452264' ? 'accept' : 'hold', reviewed: true, priorBoundedDisposition: null, startingRuleApproved: false, editionRuleTransferApproved: false, independentRawIdEvidence: [] });
+    expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision: 'hold', reviewed: false, selectedTitle: decision.selectedTitle, idProvenance: decision.idProvenance, priorBoundedDisposition: null });
+    expect(decision.rootIdentityReview.applicationHead).toBe('749eab519d18af679eab64224b9028bc5fe8cc9c');
+    expect(decision.primaryIdentityReviewEvidence).toMatchObject({ primaryHostedNumericBggHrefObserved: false, metadataRepairApproved: false, relatedIdentityMergeApproved: false });
+    for (const sourceId of decision.sourceIds) {
+      const source = review.sources[sourceId];
+      const raw = readFileSync(source.cacheFile);
+      expect(raw.length).toBe(source.byteCount);
+      expect(createHash('sha256').update(raw).digest('hex')).toBe(source.sha256);
+    }
+  }
+  const brass = review.decisions.find((item: { bggId: string }) => item.bggId === '452264');
+  expect(brass.idEvidenceStatus).toBe('wikidata-statement-only');
+  const enRoute = review.decisions.find((item: { bggId: string }) => item.bggId === '418683');
+  expect(enRoute.idEvidenceStatus).toBe('wikidata-statement-only-with-competing-primary-href');
+  expect(enRoute.primaryIdentityReviewEvidence.completePrimaryContexts[0].numericBggAnchors[0].attributes).toContainEqual(['href', 'https://boardgamegeek.com/boardgame/406454/en-route']);
+  const brassGames = getBoardGames().filter(game => ['452264', '224517', '28720'].includes(game.bggId));
+  expect(brassGames).toHaveLength(3);
+  expect(brassGames.find(game => game.bggId === '452264')?.rules).toEqual([]);
+  expect(brassGames.filter(game => game.bggId !== '452264').every(game => !game.searchNames.includes('Брасс: Питтсбург'))).toBe(true);
   for (const id of ['415147', '432834', '452684']) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
     expect(decision).toMatchObject({ decision: 'accept', reviewed: true, priorBoundedDisposition: null, idEvidenceStatus: 'primary-href-and-wikidata-statement', startingRuleApproved: false, editionRuleTransferApproved: false });
@@ -383,7 +408,7 @@ test('CrowD shared-folder manual approvals bind exact revisions and four indepen
   const catalog = getCatalog();
   expect(catalog).toHaveLength(893);
   expect(games.filter(game => game.rules.length > 0)).toHaveLength(887);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4108);
+  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4109);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],

@@ -1,0 +1,59 @@
+# Brass identity and remembered-count correction — 2026-09-26 UTC
+
+Baseline HEAD `749eab519d18af679eab64224b9028bc5fe8cc9c`. This local checkpoint advances the perpetual overhaul; the worldwide compendium and commercial outcomes remain unfinished. No deployment occurred.
+
+## Current coverage
+
+| Measure | Before | Current |
+| --- | ---: | ---: |
+| Accepted game identities | 4,995 | 4,996 |
+| Approved edition records | 893 | 893 |
+| Identities with researched editions | 887 | 887 |
+| Pending identities | 4,108 | 4,109 |
+| Portable random criteria / house prompts | 361 / 60 | 361 / 60 |
+| Explicit identity overrides | 44 | 44 |
+| Native accepts / holds | 39 / 249 | 40 / 248 |
+| Native reviewed / unreviewed | 50 / 238 | 52 / 236 |
+| Native alternate terms / identities exposing them | 71 / 24 | 72 / 25 |
+
+### Brass: Pittsburgh 452264
+
+Root reviewed the complete saved Q135970205 entity (revision2529351613), all labels/claims/provenance, original hold, complete publisher collection and collector-product bodies/texts, CrowD's complete saved publisher/domain evidence, source intake, reassessment and fresh collisions. Independent parsing verifies both complete visible texts and seven raw semantic locators. The named collection, native title and distinct physical Pittsburgh/Gilded Age/oil product context support identity-only acceptance.
+
+Numeric452264 remains **Wikidata-statement-only**: neither complete primary body has a numeric BGG href. Saved `Brass: Pittsburgh` and primary `Brass: Pittsburg` remain distinct recorded spellings; no extra alias or spelling repair is inferred. The only added search term is saved Russian `Брасс: Питтсбург`. Birmingham224517, Lancashire28720, collector/original printings, accessories and bundles remain separate. Conflicting saved2026/2027 years, minimum-player1/2,60/120-minute claims and all creator/publisher/related QIDs remain untouched. Estimated August2027 warehouse arrival is not publication/imprint/current-availability proof. **No starting rule or edition transfer is approved.** Brass is searchable and browsable as pending, with native disclosure, BGG and picker links.
+
+### En Route: Special Edition 418683
+
+Root completed the entire long collection and product context, all saved Q133868854 claims/revision2547513562 and the complete original hold. Independent complete-body parsing verifies both texts, seven locators and the sole collection BGG anchor, index62/end-exclusive bytes189023–189133, pointing to **406454/en-route**. Product Russian Expanded Edition context, eleven cities and physical components do not resolve the saved418683/primary406454 conflict, absent exact primary English Special Edition label, or saved2024/primary2025 difference. It remains **held, now reviewed**. No406454 insertion, unsaved creator mapping, rule, metadata repair or edition equivalence is inferred.
+
+Exactly two decisions changed; all286 others are exact. Both complete old unreviewed holds remain under identityReviewHistory, original null priorBoundedDisposition remains, independentRawIdEvidence arrays remain empty and both rule flags remain false. Four exact cached publisher sources were appended; existing sources and original sealed proposals remain unchanged. All893 approved records/drafts,44 overrides, discovery snapshots, source schema and existing rule assignments remain unchanged.
+
+Root prepared an ignored clone, ran both native Python validators and the actual exported runtime importer before guarded application. Active CRLF decisions SHA **3db62a8c575b5b435a009129fe700ef71a99c496b1bf297bc3fcccb0576414fd**. Independent post-application getters/public directory+rule-index projections and full-body custody confirm the actual counts and exclusion/assignment limits above. Memo SHA **0d3e5b839d2e2712a8b3e850300628ae385bc1ac6fa16031a0124c87df7e9dfe**, proof **8633631f51884b407c43664c93f24c16675d3dd4effbe1597ffbf081b315c7a7**, manifest **915dcf9b56064076125506d009b914f2f74699d5d68a8700e3c4934590858d22**. Root read the complete memo. Evidence: artifacts/sep26-two-native-root*, sep26-en-route-root-review*, sep26-brass-root-review*, sep26-two-crowd-native-{preapplication,postapplication}-review/.
+
+Original intake64-member manifest **bd387182255a7019a17440fe1d06d6d79aaac2c641462ecccf8d77478b2b1a0b** and separate reassessment manifest **e46ec78187b4e2d4ddfdae265ad845bbfb6b061bbdbad17a257338c007e6ad7c** remain frozen. Root EnRoute proof **0907a7d4735d201881aa140d0cb21a0e2523daf50b180a8b35cb56cada61dadb**; preceding Brass proof **578849ffbe3cb7c93bd1827a7b995a0f1e8e58f14e787a3f83f5a1cc21196dc5**. No new publisher/BGG/PDF request was needed for application.
+
+## Early remembered-count edits
+
+The preceding browser trace ended at12 after a quick25 edit but did not establish causation. A new independent native-time diagnostic reproduced **two focused25→12 overwrites** in WebKit, including a fresh confirmation. One exact sequence: enabled roster12/field4 at273ms; focus290; real input25 at295; mutation replaces field12 while focused305; blur323 observes12. All Chromium/Firefox controls, settled WebKit and native keyboard controls passed. Original15-case observations/traces and five opened PNGs remain sealed; no population incidence is claimed.
+
+The small fix removes the passive players.length→countDraft effect. Remembered restoration batches roster and draft before enabling controls; edited() synchronizes count only when actual roster length changes. These are the only setPlayers paths. Same-length renames preserve a partial draft as before; resize, changed pasted rosters and Forget synchronize immediately. Enter/Escape/blur, pointer-held commits, randomness, reveal deadlines, artwork and CSS remain unchanged. Picker source SHA **8ee5c4177c05969d133acba2e2a7e40ddb5481a83d07a894957b93d1b6e57a4d**.
+
+Independent source review and identical corrected **15/15** native-time diagnostics passed in Chromium/Firefox/WebKit: every first-enabled restored state was roster12/field12, every real25 edit persisted through blur/Preferences. Explicit synthetic saved12-player preferences and passive observations are documented; native clocks, selection randomness and app code were unchanged. Own compiled output, all contexts/browsers/ephemeral servers closed. Original report SHA **7cd03304703cf333ddaff21cd0e5da913452eada7908857561449f78bbd677a3**, manifest **ef12403bc16b13e55ff18e796a8976e3c66537bcecec55506af46450cde22160**. Corrected report **638ab33cce931970266834ed81936ca618e3c62bfca2117d0708258860802e59**, manifest **cbd0c73071f6a037df24f3fed71a785fb1248f8ae1036447fe833ea564110f0b**. Missing generated headers in the first ignored serving attempt stopped before measurement; its negative remains preserved. This isolated build preceded Brass enrollment and verifies Picker readiness, not final catalog coverage.
+
+## Verification
+
+Full **npm run verify passed**:124 checked files/zero diagnostics, lint,126 unit tests/12 files, content validation,958 pages/19,152 internal links, exact canonicals, unique metadata, structured data, sitemap parity, indexing/private-content/security/cache/static-answer checks. Build18.68s. Gzip budgets111,621 initial JS /1,161 Balloon /128,479 basic home bytes (+5/0/+5 versus preceding continuity build). **Release matrix passed** empty preview/production, isolated synthetic content, disabled Balloon and missing configuration rejection. Final check/lint again passed124 files/zero diagnostics after final test corrections. Seven tests/three checked files belong to unrelated pre-existing growth work.
+
+Selected browser gate **45/45 /169.564s** in Chromium/Firefox/WebKit:24 new cases (early remembered fill/per-key typing at320/1280; English/native Brass search/filter/distinct identities/held exclusion; JavaScript-disabled shelves) plus21 existing count/resize/pointer/touch/abandoned-press/fallback/scrolling cases. A separate complete result-continuity gate passed **36/36 /331.874s**, at320/1280 with normal/reduced motion, covering retained scenes/live nodes/answers, next-draw preference, lazy reveal loading, actual name/list edits, fallback and Forget. **81 selected cases passed across the two runs**, with no retry, skip, flaky or failure; this is not an uninterrupted81-case or full-suite run. Explicit count fixtures do not change app randomness or clocks.
+
+Frozen final build:987 compiled files/958HTML;1,045 exact source copies, including tracked build scripts and the two new browser files. Build seal **fa6b04c7ab48da156b8ea0f025f2d816453c087c491b8c36454cce780ea3e579**, site manifest **46e3e7b684b8e10d7aab05f2c49bac3786935d3e377478443012c3658bf6d241**, source manifest **860e36ff2b1970ed95cc4e03ebf65b4789c947531e1251a597aa4a489cd0e2f4**. Historical seals and incomplete-review notes remain unchanged. Full-suite/physical-device/assistive-speech/field-performance/ranking/revenue results are not established by these local gates.
+
+Final frozen Chromium visual audit covers8 contexts/14 captured states/28 PNGs, all28 opened by the independent reviewer. Twelve successful scenario states cover native pending search/filter/disclosure, distinct Birmingham/Lancashire article→Back, held exclusion, real no-JS B2 shelves and cold12→25 edits at320/1280. Two original harness negatives incorrectly expected three broad Brass matches; the legitimate normalized substring Quatre Bras30022 adds a fourth result. The catalog-only continuation derives the expected set from frozen index bytes and passes without app changes. Original negatives remain under attempt-01. Root read the complete memo and opened five representative captures, including readable no-JS viewport detail.
+
+No horizontal overflow, console/page/HTTP errors or attempted external requests; all8 contexts/two browsers/two owned ephemeral servers closed. Fields/count/steppers≥44px high, but count34px and stepper40px wide; no44×44 claim. The mobile expanded BGG link extends6px below the initial844px viewport and remains reachable by ordinary scrolling. Focus details are ordinary keyboard/pointer/refocus observations, not assistive speech or universal completion focus. Report **2d00228abfbdde34e386c6d773a346119e648ba4be353c6806656a955d5cdcf8**, manifest **87fc1baa3e8e0f6f338d59fe3357118a301520ad0ab38b1546c30ad3a83c037c**. Evidence: artifacts/sep26-brass-and-count-independent-visual/.
+
+Root independently rehashed all987 final compiled files against current dist, all1,045 source copies against current inputs,1,228 evidence members and all893 unchanged approved/draft files plus44 overrides. Report **508a7ca545f641ff8049b2e7b58d11550e5c47189a3c93be1325a98d6b1cb4ea**, seal **b3713d370301bca509501ac500e929833f9052cf2a20bd22eeadc03d60d23ef6**, evidence manifest **a2689538cc858ca713a1ba2e3ed169f5bd33e9b87618817a16fe4285c13a6cd1**. Directory search355,844 raw/90,246 gzip bytes, +100/+52 versus exact preceding compiled bytes; checked-rule index103,736 raw/27,908 gzip bytes is unchanged. Logs/results: artifacts/sep26-brass-and-count-{verify,release,browser,continuity-browser,final-check,final-lint,freeze,root-rehash}*. Final scope checks bind exactly ten owned files and source/evidence hashes before commit.
+
+The first ignored staged-scope helper exceeded Node's default output buffer while reading the complete >1MB native decisions through git show; it performed no mutation. Its original helper/log remain preserved. The corrected helper uses a16MB output allowance and verifies the complete staged bytes, exact ten-file scope, all source/evidence bindings, two-decision delta and81 passing cases.
+
+Five unrelated marketing/growth files remain unchanged and unstaged. Shared unrelated server4173/PID24812 remains untouched. The next bounded Amigo candidate intake is separate, unapproved and unenrolled; all remaining worldwide game and rule research remains active.
