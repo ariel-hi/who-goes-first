@@ -12,12 +12,8 @@ const site = siteSettings();
 const destination = new URL('https://www.pinterest.com/pin/create/button/');
 destination.search = new URLSearchParams({ url: new URL(item.path, site.url).href, media: new URL(item.image, site.url).href, description: item.description }).toString();
 ---
-{site.production && <div class="pinterest-save">
-  <a href={destination.href} target="_blank" rel="noopener noreferrer">Save on Pinterest <span class="sr-only">(opens in a new tab)</span></a>
-  <span class="small muted">Keep it for your next game night.</span>
-</div>}
+{site.production && <a class="pinterest-save" href={destination.href} target="_blank" rel="noopener noreferrer">Save on Pinterest <span class="sr-only">(opens in a new tab)</span></a>}
 <style>
-  .pinterest-save{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:16px 0}
   a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:7px;font-weight:600;color:var(--green);text-decoration:none}
   a:hover{text-decoration:underline}
 </style>

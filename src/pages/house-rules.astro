@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HousePrompts from '../components/HousePrompts.astro';
-import PinterestSave from '../components/PinterestSave.astro';
+import SocialLinks from '../components/SocialLinks.astro';
 import { getPrompts } from '../lib/content/catalog';
 const prompts = getPrompts();
+const title = 'Fun questions to decide who goes first — Who Goes First?';
 ---
-<Layout title="Fun questions to decide who goes first — Who Goes First?" description="Let your table choose a playful starting criterion. Original house-rule questions are separate from equal-chance player selection." noindex={!prompts.length}><div class="content-page"><h1>Fun questions</h1><p class="lede">Let a silly question decide who starts.</p><p>Draw a question, and whoever fits it best goes first. These are our own house rules, not official game rules, and they aren’t equal-chance. Choose another if you don’t like one. If it’s a tie, use the picker.</p>{prompts.length > 0 && <PinterestSave kind="questions" />}{prompts.length ? <HousePrompts prompts={prompts} /> : <div class="empty-state"><h2>No questions published yet</h2><p>No house-rule prompts have been approved for publication yet.</p><a class="inline-link" href="/">Give every player an equal chance</a></div>}</div></Layout>
+<Layout title={title} description="Let your table choose a playful starting criterion. Original house-rule questions are separate from equal-chance player selection." noindex={!prompts.length}><div class="content-page"><h1>Fun questions</h1><p class="lede">Let a silly question decide who starts.</p><p>Draw a question, and whoever fits it best goes first. These are our own house rules, not official game rules, and they aren’t equal-chance. Choose another if you don’t like one. If it’s a tie, use the picker.</p>{prompts.length > 0 && <SocialLinks kind="questions" title={title} />}{prompts.length ? <HousePrompts prompts={prompts} /> : <div class="empty-state"><h2>No questions published yet</h2><p>No house-rule prompts have been approved for publication yet.</p><a class="inline-link" href="/">Give every player an equal chance</a></div>}</div></Layout>
