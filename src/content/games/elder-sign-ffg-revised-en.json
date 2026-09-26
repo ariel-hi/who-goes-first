@@ -1,0 +1,39 @@
+{
+  "id": "elder-sign-ffg-revised-en",
+  "slug": "elder-sign-ffg-revised-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "c5a69201ebf783c1b03e754daac4685d8e8fadaf97ba9c1da7289207c0b6d8b0",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Elder Sign",
+  "aliases": [],
+  "editionLabel": "FFG English revised edition",
+  "firstPlayerRule": "Shuffle the chosen investigator markers and randomly select one. The player controlling that investigator goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player shuffles the Mythos deck and draws its initial card during setup. Regular turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.fantasyflightgames.com/ffg_content/Elder%20Sign/support/SL05_ES_Revised_Rulebook.pdf",
+      "title": "Elder Sign — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Setup step 10; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official FFG revised English manual. Visually verified setup step10 on printed/PDF5 selects a marker randomly; page6 confirms clockwise turns beginning with that player. Source custody: research/source-files/popular-sep26-04/elder.pdf; SHA-256 48e88cebf54adbe8a472559a01d8115a51ecb807f1015b41561d01e501d914d8. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
