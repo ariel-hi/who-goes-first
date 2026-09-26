@@ -1,0 +1,43 @@
+{
+  "id": "caylus-ystari-en",
+  "slug": "caylus-ystari-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Caylus",
+  "aliases": [],
+  "editionLabel": "Ystari Games English rules",
+  "firstPlayerRule": "One player takes everyone's turn-order markers and places them randomly on the numbered turn-order spaces; this sets the order of play for the first turn, starting with the player on space 1.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting money depends on the random order: space 1 takes 5 deniers, spaces 2 and 3 take 6, spaces 4 and 5 take 7.",
+    "Later turn order changes when players place workers in the stables.",
+    "In the two-player game both players start with 5 deniers, turn order alternates at the beginning of each turn, and the stables are not used."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ystari.com/caylus/CayUS.pdf",
+      "title": "Caylus — English rules",
+      "publisher": "Ystari Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3,
+        5,
+        8
+      ],
+      "location": "Preparation; the stables; Caylus for 2 players",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules from Ystari's site (www.ystari.com/caylus/CayUS.pdf; served over HTTP, and the HTTPS address returns the same file but with an untrusted certificate), SHA-256 5217a7b7eaf10992e4c6b652357ce28fb2e68e75c259f5ccadd808c899949eb7, and extracted the text of all 8 PDF pages. PDF page 3, Preparation: one of the players takes all the markers placed next to the turn order scale and puts them randomly on the numbered spaces to determine the order of play for the first turn; space 1 takes 5 deniers, spaces 2 and 3 take 6, spaces 4 and 5 take 7. PDF page 5, the stables: placing a worker on stable circles changes turn order. PDF page 8, Caylus for 2 players: both start with 5 deniers; turn order changes at the beginning of each turn; stables not used. PDF page 3 credits a game by William Attia, matching BGG 18602. No copyright year appears in the text. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The publisher's site presents an untrusted HTTPS certificate, so browsers may warn when opening the source link.",
+    "The two-player section does not separately say how the first turn's order is set; the general random placement is the only instruction given.",
+    "The rules file carries no edition year."
+  ]
+}

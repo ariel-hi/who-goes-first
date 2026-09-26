@@ -1,0 +1,47 @@
+{
+  "id": "roll-for-the-galaxy-rio-grande-en",
+  "slug": "roll-for-the-galaxy-rio-grande-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "5d1f3d1cb2f384c571160ce3350a927b351cd3e394b2bf8d249e212daca085ac",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Roll for the Galaxy",
+  "aliases": [
+    "RftG"
+  ],
+  "editionLabel": "Rio Grande Games English rulebook, 2014",
+  "firstPlayerRule": "There is no first player: everyone plays each round at the same time. Only when strict timing matters, a phase is done in clockwise order starting with the player whose faction tile has the lowest number.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "All players roll, select phases and carry out phases simultaneously; there are no separate player turns.",
+    "Strict clockwise order is only needed in rare cases, such as when someone might reach 12 tile squares or the VP chip pool might run out."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/Roll-for-the-Galaxy-Rules.pdf",
+      "title": "Roll for the Galaxy — English rulebook",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "3",
+        "9",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        9,
+        12
+      ],
+      "location": "Page 3, round overview; page 9, Timing; page 12, Frequently Overlooked Rules and credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the rulebook from riograndegames.com (https://www.riograndegames.com/wp-content/uploads/2013/02/Roll-for-the-Galaxy-Rules.pdf), SHA-256 b0860e211ab7fd01a414e5d587d614e7e50f5e4d4ac6027eb1394a926a408689, and extracted the text of all 12 pages. Page 3 says each step is done simultaneously by all players. Page 9, Timing: most play is simultaneous; when strict timing is needed, do the phase in clockwise player order, starting with the player with the lowest numbered faction tile. Page 12, Frequently Overlooked Rules: play is simultaneous with no separate player turns; credits show copyright 2014 Wei-Hwa Huang, Tom Lehmann and 2014, 2020 Rio Grande Games. The dice-and-tiles space empire game by Huang and Lehmann matches BGG 132531. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The lowest-faction-number order applies only when timing matters; the rulebook has no general starting player.",
+    "The hosting path contains 2013; the edition date used is the 2014 copyright line (the file also lists 2020 for Rio Grande Games)."
+  ]
+}
