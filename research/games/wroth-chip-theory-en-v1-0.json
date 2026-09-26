@@ -1,0 +1,53 @@
+{
+  "id": "wroth-chip-theory-en-v1-0",
+  "slug": "wroth-chip-theory-en-v1-0",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Wroth",
+  "aliases": [],
+  "editionLabel": "Chip Theory Games · English Rules of Play v1.0 · ©2025 · 2–4 players",
+  "firstPlayerRule": "Randomly choose the first player and give them the First Player token. That player starts the clockwise drafting and Action Phase turn order.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Keep the token with the chosen player in Round 1. In each later round, pass it to the next clockwise player during Maintenance.",
+    "Maintenance and Spoils precede Groundwork, which players may perform simultaneously; drafting follows Groundwork.",
+    "This entry covers standard player-versus-player mode. Solo and cooperative games use separate human-player setup and AI turn rules."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/57ypiy0v9i7fyyau461js/WR_Paper_Rulebook.pdf?rlkey=jxxq43assbvxdcg15x8jzy11y&st=6md0rdae&dl=0",
+      "title": "Wroth — Rules of Play v1.0 (English)",
+      "publisher": "Chip Theory Games",
+      "printedPages": [
+        "8",
+        "9",
+        "10",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        9,
+        10,
+        3,
+        1,
+        20,
+        7
+      ],
+      "location": "Setup — Determine first player; Maintenance; Groundwork and Draft; Actions; Modes of play; unnumbered cover/version and final copyright page",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Exact saved identity 414117; original proposal retained unchanged in research/source-files/sep26-three-modern-rule-proposals/wroth-chip-theory-en-v1-0.proposal.json. Independent Codex root source review on 2026-09-26: complete PDF pages 1, 3, 7–10 and 20 opened visually, full-text context checked, all public fields reviewed. English Chip Theory Rules of Play v1.0, ©2025, standard 2–4-player mode chooses the opening token randomly and rotates it during later Maintenance. Root independently inspected seven complete pages and exact publisher-linked PDF custody. No German Groll, solo/cooperative scenario, expansion or FAQ transfer. Original PDF SHA-256 f96436af8ac28665c5391a6612c38c70e551a4dfafd87e2bf35b9d442901e339. Source request bodies, observed redirects, publisher anchors and ten historical copies independently rehashed; original/final PDF page counts checked. Evidence: artifacts/sep26-three-manual-root-check.json; bundle manifest SHA-256 cdc18b7603c68b99b71f864d8a1d179a8ed250179952304ceeda9787236beb05. The source edition has no inferred year/version beyond explicit printed facts. Fixed faction/random choices are catalog-only; no portable personal criterion. Standing owner authorization for factual review: 2026-09-22. This research copy retains null lifecycle fields; the approved catalog copy will bind the exact reviewed revision. No deployment.",
+  "uncertainty": [
+    "The source URL serves a Dropbox HTML viewer; transient signed retrieval URLs are evidence only, not proposed public source URLs.",
+    "Copyright 2025 is an imprint fact, not a guarantee of printing date or newest revision. No current FAQ or scenario deck was fetched or reviewed.",
+    "No procedure for randomly choosing the starting player is specified. The low-VP last-die tie rule is a drafting rule, not an opening tie-break."
+  ]
+}

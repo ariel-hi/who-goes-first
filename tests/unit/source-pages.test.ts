@@ -23,6 +23,8 @@ describe('cited PDF page links', () => {
     'https://publisher.example/book.pdf/contents',
     'https://publisher.example/book.pdf.html',
     'https://drive.google.com/file/d/example/view',
+    'https://www.dropbox.com/scl/fi/example/Rules.pdf?rlkey=example&dl=0',
+    'https://dropbox.com/s/example/Rules.pdf',
     'http://publisher.example/book.pdf',
     'https://user:password@publisher.example/book.pdf',
     'javascript:book.pdf',
@@ -42,6 +44,10 @@ describe('cited PDF page links', () => {
       { page: 1, href: 'https://publisher.example/rules.pdf#page=1' },
     ]);
     expect(pages).toEqual([5, 8, 15, 19, 1, 8]);
+  });
+
+  test('keeps an actual Dropbox content-host PDF distinct from a sharing viewer', () => {
+    expect(pdfPageHref('https://example.dropboxusercontent.com/book.pdf', 8)).toBe('https://example.dropboxusercontent.com/book.pdf#page=8');
   });
 
   test.each([0, -1, 1.5, NaN, Infinity, Number.MAX_SAFE_INTEGER + 1])('rejects invalid page %s', page => {

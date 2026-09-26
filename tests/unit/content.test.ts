@@ -7,6 +7,7 @@ import { searchRank } from '../../src/lib/search';
 import { getCoverage } from '../../src/lib/content/coverage';
 import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/board-games';
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
+import { randomRuleEligible } from '../../src/lib/content/random-rules';
 test('public board game directory includes every discovered identity and links only approved matching rules', () => {
   const games = getBoardGames();
   expect(games.length).toBeGreaterThanOrEqual(1320);
@@ -58,9 +59,15 @@ test('native and language-neutral identities enroll only after primary identity 
     expect(game?.name).toBe(name);
     expect(game?.rules).toEqual([]);
   }
-  expect(games.find(game => game.bggId === '407343')).toMatchObject({ name: 'Ironwood', rules: [] });
-  expect(games.find(game => game.bggId === '414117')).toMatchObject({ name: 'Wroth', rules: [] });
-  expect(games.find(game => game.bggId === '421310')).toMatchObject({ name: 'Beyond the Horizon', rules: [] });
+  for (const [id, name, ruleId] of [
+    ['407343', 'Ironwood', 'ironwood-mindclash-en-publisher-rulebook'],
+    ['414117', 'Wroth', 'wroth-chip-theory-en-v1-0'],
+    ['421310', 'Beyond the Horizon', 'beyond-the-horizon-super-meeple-fr-rulebook'],
+  ] as const) {
+    const game = games.find(game => game.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+  }
   expect(games).toHaveLength(4984);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '452264']) {
@@ -200,6 +207,19 @@ test('coverage does not merge unrelated games with identical or punctuation-equi
   expect(bigTop!.editions.map(rule => rule.id)).toEqual(['big-top-allplay-en']);
   expect(coverage.games.find(game => game.bggId === '265736')!.editions.map(rule => rule.id)).toContain('tiny-towns-base-en');
   expect(coverage.researched + coverage.pending).toBe(coverage.games.length);
+});
+test('the three manual approvals bind exact revisions and remain outside the portable mix', () => {
+  const catalog = getCatalog();
+  const drafts = readRecords('research/games').map(record => ruleSchema.parse(record));
+  for (const id of ['ironwood-mindclash-en-publisher-rulebook', 'wroth-chip-theory-en-v1-0', 'beyond-the-horizon-super-meeple-fr-rulebook']) {
+    const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
+    const draft = drafts.find(record => record.id === id)!;
+    expect(contentRevision(draft)).toBe(raw.approvedRevision);
+    expect(draft).toMatchObject({ status: 'needs-review', approvedBy: null, approvedRevision: null, publishedAt: null });
+    expect(() => assertPublishable({ ...raw, editionLabel: 'Another edition' })).toThrow('stale');
+    expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(false);
+    expect(raw.tieBreakApplicable).toBe(false);
+  }
 });
 test('drafts cannot publish and approval is bound to the exact content', () => {
   const draft = ruleSchema.parse(readRecords('research/games')[0]);

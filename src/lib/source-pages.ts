@@ -3,6 +3,9 @@ export function isPdfSource(sourceUrl: string, citedPages: readonly number[] = [
   try {
     const url = new URL(sourceUrl);
     if (url.protocol !== 'https:' || url.username || url.password || /\p{Cc}/u.test(sourceUrl)) return false;
+    // Dropbox sharing URLs can end in .pdf while serving an HTML viewer.
+    // A filename alone cannot establish a supported PDF page fragment there.
+    if (['dropbox.com', 'www.dropbox.com'].includes(url.hostname)) return false;
     if (/\.pdf$/i.test(url.pathname)) return true;
     // These export/download forms lack a .pdf suffix. Reviewed PDF page
     // metadata is required; a Google download URL alone does not imply a PDF.

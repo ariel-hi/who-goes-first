@@ -1,5 +1,41 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 import { getBrowseShelves } from '../../src/lib/content/board-game-browse';
+
+// Reviewed Dropbox sharing viewers retain their exact source URLs and plain citations.
+// Keep explicit fixtures independent of the production PDF detection helper.
+const sharingViewerSources: Record<string, readonly { href: string; pages: readonly number[] }[]> = {
+  'john-company-second-edition-wehrlegig-en': [
+    { href: 'https://www.dropbox.com/scl/fi/v1p712l0dkgiqa0jx0vr8/John-Company-Rules.pdf?dl=0&rlkey=xtek9x06fla1cb5d8b8ov3q7b', pages: [13, 10, 11, 4, 5, 2, 43, 44, 48] },
+  ],
+  'the-game-pandasaurus-kwanchai-moriya-en': [
+    { href: 'https://www.dropbox.com/scl/fi/rux1sfbevshr8x593n0a2/P_TG_Rulebook_Print.pdf?dl=0&rlkey=6bbw1wlsych1lrxznas12g6ty&st=sn56zvzr', pages: [1, 2] },
+  ],
+  'cubirds-pandasaurus-en-2023': [
+    { href: 'https://www.dropbox.com/scl/fi/gzz5r4pttiz304zkgymcg/PANCUBIRCORE-cubirds_rules_ENG-1st_Printing.pdf?dl=0&rlkey=e92ddts66hwvxdnb93yn3iiuv', pages: [2, 3, 8, 1] },
+  ],
+  'nucleum-board-and-dice-2023-en': [
+    { href: 'https://www.dropbox.com/scl/fi/6mtcwklpiuanocyk7tia4/nucleum_rulebook_ENG_web.pdf?rlkey=dhh8nrsnw8dgk33tu4j4y36zv&e=1&dl=0', pages: [5, 6, 8, 4, 1, 27] },
+    { href: 'https://www.dropbox.com/scl/fi/fyptmj5kkcb70slql68zi/nucleum_rulebook_solo_ENG_web.pdf?rlkey=adhuw09dzhrxfsugq0vnzo6u6&e=1&dl=0', pages: [2, 1, 4] },
+  ],
+};
+
+async function expectReviewedSourceCitation(page: Page, slug: string, pdfPage: number) {
+  const documents = sharingViewerSources[slug];
+  if (!documents) {
+    await expect(page.getByRole('link', { name: `View cited page (PDF page ${pdfPage})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${pdfPage}$`));
+    return;
+  }
+  await expect(page.getByRole('link', { name: /View cited page/ })).toHaveCount(0);
+  await expect(page.locator('.source-cited-pages')).toHaveCount(0);
+  await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', documents[0]!.href);
+  const sources = page.locator('.source-list > li');
+  await expect(sources).toHaveCount(documents.length);
+  for (const [index, document] of documents.entries()) {
+    const source = sources.nth(index);
+    await expect(source.locator('.source-document')).toHaveAttribute('href', document.href);
+    await expect(source.getByText(`Cited PDF pages: ${document.pages.join(', ')}`, { exact: true })).toBeVisible();
+  }
+}
 
 test('mobile alphabet keeps keyboard focus visible at horizontal scroll edges', async ({ page, browserName }) => {
   await page.setViewportSize({ width: 320, height: 750 });
@@ -78,6 +114,23 @@ test('a sourced article links directly to its checked PDF passage and retains th
   await expect(page.getByRole('link', { name: 'Read the publisher’s rulebook', exact: true })).toHaveAttribute('href', /Beyond-the-Sun-Combined-Rules\.pdf$/);
 });
 
+test('three reviewed manuals preserve edition scope and viewer citations', async ({ page }) => {
+  await page.goto('/games/ironwood-mindclash-en-publisher-rulebook/');
+  await expect(page.locator('.rule-answer')).toContainText('Woodwalker Chieftain goes first');
+  await expect(page.getByRole('link', { name: 'View cited page (PDF page 4)', exact: true })).toHaveAttribute('href', /Ironwood-rulebook-websafe\.pdf#page=4$/);
+  await page.goto('/games/wroth-chip-theory-en-v1-0/');
+  await expect(page.locator('.rule-answer')).toContainText('Randomly choose');
+  await expect(page.getByText('Keep the token with the chosen player in Round 1.', { exact: false })).toBeVisible();
+  await expect(page.getByRole('link', { name: /View cited page/ })).toHaveCount(0);
+  await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', /www\.dropbox\.com\/scl\/fi\/.+&dl=0$/);
+  await expect(page.getByText('Cited PDF pages: 8, 9, 10, 3, 1, 20, 7', { exact: true })).toBeVisible();
+  await page.goto('/games/beyond-the-horizon-super-meeple-fr-rulebook/');
+  await expect(page.getByText(/English summary of French rules/)).toBeVisible();
+  await expect(page.locator('.rule-answer')).toContainText('Play proceeds clockwise');
+  await expect(page.getByText(/begin with the last player, then continue counterclockwise/)).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(0);
+});
+
 test('traditional rules preserve fixed roles, handicap starts and actual opening ties', async ({ page }) => {
   await page.goto('/games/chess-fide-laws-2023-en/');
   await expect(page.locator('.rule-answer')).toContainText('White');
@@ -125,7 +178,7 @@ test('six reviewed editions retain their opening instructions and direct source 
     await page.goto(`/games/${slug}/`);
     await expect(page.locator('.rule-answer')).toContainText(opening);
     await expect(page.locator('.rule-answer')).toContainText(context);
-    await expect(page.getByRole('link', { name: `View cited page (PDF page ${pdfPage})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${pdfPage}$`));
+    await expectReviewedSourceCitation(page, slug, pdfPage);
     if (slug.startsWith('shogun-')) {
       await expect(page.locator('.opening-tie')).toContainText('shuffle the tied');
       await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText('oldest player begins claiming');
@@ -149,7 +202,7 @@ test('modern editions distinguish first turns, later rounds and variant limits',
     await page.goto(`/games/${slug}/`);
     await expect(page.locator('.rule-answer')).toContainText(opening);
     await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText(details.replace('’', "'"));
-    await expect(page.getByRole('link', { name: `View cited page (PDF page ${pdfPage})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${pdfPage}$`));
+    await expectReviewedSourceCitation(page, slug, pdfPage);
     await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(tieApplicable ? 1 : 0);
   }
 });

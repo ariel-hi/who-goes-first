@@ -1,0 +1,53 @@
+{
+  "id": "ironwood-mindclash-en-publisher-rulebook",
+  "slug": "ironwood-mindclash-en-publisher-rulebook",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "2c42c870cd299ac5641feb86b20b2f28a3bf13c68a428ce7799a066dac2371ef",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Ironwood",
+  "aliases": [],
+  "editionLabel": "Mindclash Games · English publisher rulebook · 2 players",
+  "firstPlayerRule": "Choose or randomly assign the factions. The Woodwalker Chieftain goes first whenever a phase step requires turn order; the Ironclad Commander goes second.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "In the Action Phase, the Woodwalker acts first, then players alternate until each has played three cards.",
+    "The same faction order applies in later rounds, including removing ongoing-card markers and recruiting Fighters when those steps require turn order.",
+    "This entry covers the two-player setup. The two solo opponents have separate setup and round-summary rules."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://mindclashgames.com/wp-content/uploads/2024/06/Ironwood-rulebook-websafe.pdf",
+      "title": "Ironwood — English publisher rulebook",
+      "publisher": "Mindclash Games",
+      "printedPages": [
+        "6",
+        "9",
+        "10",
+        "11",
+        "2",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        6,
+        2,
+        3
+      ],
+      "location": "Setup step 1; Round steps — Turn order; Action Phase; Round End Phase; credits and overview",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Exact saved identity 407343; original proposal retained unchanged in research/source-files/sep26-three-modern-rule-proposals/ironwood-mindclash-en-publisher-rulebook.proposal.json. Independent Codex root source review on 2026-09-26: complete PDF pages 1–6 and 19 opened visually, full-text context checked, all public fields reviewed. English Mindclash publisher-linked manual fixes Woodwalker first for ordered steps in the two-player game. Faction choice/random assignment precedes play. Root independently inspected seven complete pages and exact source bytes; no Super Meeple French, bot, expansion or FAQ transfer. Original PDF SHA-256 23de74c6759bac4ec94e00bf505f2577ffe8cf74b93185b205f007a684c56e4d. Source request bodies, observed redirects, publisher anchors and ten historical copies independently rehashed; original/final PDF page counts checked. Evidence: artifacts/sep26-three-manual-root-check.json; bundle manifest SHA-256 cdc18b7603c68b99b71f864d8a1d179a8ed250179952304ceeda9787236beb05. The source edition has no inferred year/version beyond explicit printed facts. Fixed faction/random choices are catalog-only; no portable personal criterion. Standing owner authorization for factual review: 2026-09-22. This research copy retains null lifecycle fields; the approved catalog copy will bind the exact reviewed revision. No deployment.",
+  "uncertainty": [
+    "The reviewed English PDF has no identified printed version or copyright year on its inspected cover, credits or final page. Upload path and PDF metadata dates are not edition-year proof.",
+    "Only the listed relevant pages were visually reviewed; this is not a claim of complete card, combat, bot behavior, expansion or FAQ review.",
+    "The manual permits choosing or randomizing factions without prescribing a randomization procedure. No opening comparison tie exists."
+  ]
+}

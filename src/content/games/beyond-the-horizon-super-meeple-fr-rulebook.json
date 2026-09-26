@@ -1,0 +1,49 @@
+{
+  "id": "beyond-the-horizon-super-meeple-fr-rulebook",
+  "slug": "beyond-the-horizon-super-meeple-fr-rulebook",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "65e6f20b50886589b615912b37cab52e9398f2bb282fa2e169ae1a44ca9571b0",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Beyond the Horizon",
+  "aliases": [],
+  "editionLabel": "Super Meeple / Cranio Creations · English summary of French rules · 2–4 players",
+  "firstPlayerRule": "Choose the first player randomly and give them the First Player token. Play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "During setup, Government cards are chosen in the opposite direction: begin with the last player, then continue counterclockwise. This does not change the clockwise play order.",
+    "On your first turn, place your Action pawn on a base Action space.",
+    "Each turn proceeds through Action, Expansion, Production and Objective phases, then passes to the next clockwise player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.supermeeple.com/wp-content/uploads/2015/02/Beyond-the-Horizon_FR.pdf",
+      "title": "Beyond the Horizon — Règles du jeu (French)",
+      "publisher": "Super Meeple / Cranio Creations",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        12,
+        1,
+        4
+      ],
+      "location": "Setup steps 11–12; How to play and Action phase; unnumbered credits and publisher imprint at PDF12; cover and full setup context",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Exact saved identity 421310; original proposal retained unchanged in research/source-files/sep26-three-modern-rule-proposals/beyond-the-horizon-super-meeple-fr-rulebook.proposal.json. Independent Codex root source review on 2026-09-26: complete PDF pages 1, 4–6, 11 and 12 opened visually, full-text context checked, all public fields reviewed. English summary of the exact French Super Meeple / Cranio Creations manual, 2–4 players: random first player, reverse Government setup draft and clockwise play. Root independently inspected six complete pages and exact source bytes. No Capstone English, other localization, solo, expansion or FAQ transfer. Original PDF SHA-256 115a1e7d1d0ec0bc17df148d7cd9a0857ddf91c607e7b9e053734d3697f65731. Source request bodies, observed redirects, publisher anchors and ten historical copies independently rehashed; original/final PDF page counts checked. Evidence: artifacts/sep26-three-manual-root-check.json; bundle manifest SHA-256 cdc18b7603c68b99b71f864d8a1d179a8ed250179952304ceeda9787236beb05. The source edition has no inferred year/version beyond explicit printed facts. Fixed faction/random choices are catalog-only; no portable personal criterion. Standing owner authorization for factual review: 2026-09-22. This research copy retains null lifecycle fields; the approved catalog copy will bind the exact reviewed revision. No deployment.",
+  "uncertainty": [
+    "This entry summarizes a French Super Meeple / Cranio Creations manual in English; its rules are not claimed for another localized edition.",
+    "No printed manual version or copyright year was identified on the inspected cover or credits. The2015/02 upload directory and2024 PDF metadata dates are not edition-year proof.",
+    "Random starting-player selection has no prescribed procedure or comparison tie. Endgame scoring tie criteria on PDF11 are unrelated. No solo, expansion or FAQ scope is asserted."
+  ]
+}
