@@ -4,21 +4,27 @@ import GameArticle from '../../components/GameArticle.astro';
 import NotFound from '../404.astro';
 import { getCatalog } from '../../lib/content/catalog';
 import { ruleContext } from '../../lib/content/related';
+import { hubContext } from '../../lib/content/hubs';
 import { siteSettings } from '../../lib/site';
 type Rule = ReturnType<typeof getCatalog>[number];
+type Links = ReturnType<ReturnType<typeof hubContext>>;
 export function getStaticPaths() {
   const catalog = getCatalog();
-  return catalog.map(rule => ({ params: { slug: rule.slug }, props: { rule, ...ruleContext(catalog, rule) } }));
+  const links = hubContext(catalog);
+  // getStaticPaths runs in isolation: only imports are in scope here.
+  return catalog.map(rule => { const base = ruleContext(catalog, rule); return { params: { slug: rule.slug }, props: { rule, ...base, ...links(rule, base.related) } }; });
 }
 // The local preview renders this route on demand, without getStaticPaths props.
 const catalog = Astro.props.rule ? [] : getCatalog();
 const rule: Rule | undefined = Astro.props.rule ?? catalog.find(game => game.slug === Astro.params.slug);
 if (!rule) Astro.response.status = 404;
-const { related, shared } = Astro.props.rule ? Astro.props as { related: Rule[]; shared: boolean } : rule ? ruleContext(catalog, rule) : { related: [], shared: false };
+const { related, shared, similar, similarHub, publisherHub } = Astro.props.rule
+  ? Astro.props as { related: Rule[]; shared: boolean } & Links
+  : rule ? (base => ({ ...base, ...hubContext(catalog)(rule, base.related) }))(ruleContext(catalog, rule)) : { related: [], shared: false, similar: [], similarHub: undefined, publisherHub: undefined };
 const site = siteSettings().url;
 const title = rule ? `Who goes first in ${rule.gameName}? ${shared ? rule.editionLabel : 'Official rule'}` : '';
 ---
-{rule ? <Layout title={title} description={`Who starts in ${rule.gameName}: ${rule.firstPlayerRule} (${rule.editionLabel})`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)}>
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: rule.gameName, item: `${site}/games/${rule.slug}/` }] }).replace(/</g, '\\u003c')} />
-  <div class="content-page"><GameArticle rule={rule} related={related} /></div>
+{rule ? <Layout title={title} description={`Who starts in ${rule.gameName}: ${rule.firstPlayerRule} (${rule.editionLabel})`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)} image={`/og/${rule.slug}.png`} imageAlt={`Who goes first in ${rule.gameName}? ${rule.firstPlayerRule}`}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: rule.gameName, item: `${site}/games/${rule.slug}/` }] }).replace(/</g, '\u003c')} />
+  <div class="content-page"><GameArticle rule={rule} related={related} similar={similar} similarHub={similarHub} publisherHub={publisherHub} /></div>
 </Layout> : <NotFound />}

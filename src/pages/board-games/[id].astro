@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getBoardGames } from '../../lib/content/board-games';
 import { siteSettings } from '../../lib/site';
+import { amazonDisclosure, amazonSearchUrl } from '../../lib/affiliate';
 export function getStaticPaths() {
   const games = getBoardGames();
   const nameCounts = new Map<string, number>();
@@ -9,7 +10,8 @@ export function getStaticPaths() {
   return games.filter(game => game.rules.length > 1).map(game => ({ params: { id: game.bggId }, props: { game, namesake: (nameCounts.get(game.name) ?? 0) > 1 } }));
 }
 const game = Astro.props.game as ReturnType<typeof getBoardGames>[number];
-const site = siteSettings().url;
+const { url: site, amazonTag } = siteSettings();
+const buyLink = amazonTag && game.rules.length ? amazonSearchUrl(game.name, amazonTag) : '';
 // Only games with several editions need their own chooser page in search results;
 // the directory links single-edition games straight to the rule.
 const namesake = Astro.props.namesake as boolean;
@@ -21,6 +23,7 @@ const label = namesake ? `${game.name} (BoardGameGeek ${game.bggId})` : game.nam
     <a class="back-link" href="/board-games/">← All board games</a>
     <h1>{game.name}</h1>
     {game.rules.length > 0 ? <><p class="lede">{game.rules.length === 1 ? 'Starting-player rule' : 'Choose your edition'}</p><ul class="game-list">{game.rules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.editionLabel}<small>See who goes first</small></span></a></li>)}</ul></> : <><p class="lede">A sourced starting-player rule is not available for this game yet.</p><p>Use the fair <a href="/">player picker</a> to get started.</p></>}
+    {buyLink && <aside class="buy-game" aria-label="Find this game"><a href={buyLink} rel="sponsored nofollow noopener" target="_blank">Find {game.name} on Amazon</a><small>{amazonDisclosure}</small></aside>}
     <p class="small muted">Game identity: <a href={game.discoveryUrl}>BoardGameGeek {game.bggId}</a>.</p>
   </div>
 </Layout>

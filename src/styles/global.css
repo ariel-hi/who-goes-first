@@ -123,6 +123,20 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 .analytics-consent{position:fixed;z-index:20;inset:auto 16px 16px auto;width:min(440px,calc(100vw - 32px));padding:18px 20px;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 30px #20292330;border-radius:5px;font-size:13px}
 .analytics-consent[hidden]{display:none}
 .analytics-consent p{margin:0 0 12px}
+.site-footer nav{flex-wrap:wrap;column-gap:20px;row-gap:0}
+.rule-list small{font-size:13px;line-height:1.45;margin-top:3px}
+.rule-list small.edition{font-size:11px;margin-top:1px}
+.theme-links{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.theme-links a{display:inline-flex;align-items:center;min-height:36px;padding:0 13px;border:1px solid var(--line);border-radius:18px;background:var(--paper);font-size:13px;text-decoration:none}
+.theme-links a:hover{border-color:var(--green)}
+.hub-nav{margin-top:26px}
+.hub-nav h2{font-size:16px}
+.similar-rules{padding-left:20px}
+.similar-rules li{margin-bottom:10px}
+.similar-rules small{display:block;color:var(--muted);font-size:13px}
+.buy-game{margin-top:25px;padding:16px 18px;border:1px solid var(--line);border-radius:3px;background:var(--paper);font-size:14px}
+.buy-game a{font-weight:600}
+.buy-game small{display:block;margin-top:6px;color:var(--muted);font-size:11px}
 .analytics-consent div{display:flex;gap:10px;flex-wrap:wrap}
 .analytics-consent button{padding:7px 14px;border:1px solid var(--green);border-radius:3px;background:var(--green);color:#fff;font-size:13px}
 .analytics-consent [data-analytics-decline]{background:transparent;color:var(--green)}

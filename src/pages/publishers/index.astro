@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCatalog } from '../../lib/content/catalog';
+import { publisherHubs } from '../../lib/content/hubs';
+import { siteSettings } from '../../lib/site';
+const hubs = publisherHubs(getCatalog());
+const site = siteSettings().url;
+---
+<Layout title="Board Game Starting Rules by Publisher — Who Goes First?" description={`Browse sourced starting-player rules from ${hubs.length} board game publishers, from each publisher’s own rulebooks.`} pageType="CollectionPage" noindex={hubs.length === 0}>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: 'Publishers', item: `${site}/publishers/` }] }).replace(/</g, '\\u003c')} />
+  <div class="content-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/games/">Game rules</a> / Publishers</nav>
+    <h1>Starting rules by publisher</h1>
+    <p class="lede">Publishers with at least three sourced starting-player rules.</p>
+    <ul class="game-list">{hubs.map(hub => <li><a href={`/publishers/${hub.slug}/`}><span>{hub.name}<small>{hub.rules.length} rules</small></span></a></li>)}</ul>
+  </div>
+</Layout>

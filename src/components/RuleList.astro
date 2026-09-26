@@ -1,0 +1,8 @@
+---
+import type { PublicRule } from '../lib/content/schema';
+interface Props { rules: PublicRule[] }
+const { rules } = Astro.props;
+// Editions are named only where one list holds several editions of a game.
+const repeated = new Set(rules.map(rule => rule.gameName).filter((name, index, all) => all.indexOf(name) !== index));
+---
+<ul class="game-list rule-list">{rules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.gameName}{repeated.has(rule.gameName) && <small class="edition">{rule.editionLabel}</small>}<small>{rule.firstPlayerRule}</small></span></a></li>)}</ul>

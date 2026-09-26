@@ -105,3 +105,12 @@ test('release config rejects placeholders and private URL state', () => {
   expect(() => siteSettings({ ...release, PRIVACY_LOGGING_POLICY: '' })).toThrow('PRIVACY_LOGGING_POLICY');
   expect(siteSettings(release)).toMatchObject({ production: true, contact: release.CONTACT_EMAIL, privacyHost: release.PRIVACY_HOST_NAME, privacyLogging: release.PRIVACY_LOGGING_POLICY });
 });
+test('revenue settings are optional, validated, and ads stay out of previews', () => {
+  const release = { DEPLOY_CONTEXT: 'production', SITE_URL: 'https://firstplayer.site', CONTACT_EMAIL: 'owner@firstplayer.site', PRIVACY_HOST_NAME: 'Example Host', PRIVACY_LOGGING_POLICY: 'Access logs are deleted after 30 days.' };
+  expect(siteSettings(release)).toMatchObject({ adsenseClient: '', amazonTag: '', tipUrl: '' });
+  expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456', AMAZON_ASSOCIATES_TAG: 'wgf-20', TIP_JAR_URL: 'https://ko-fi.com/wgf' })).toMatchObject({ adsenseClient: 'ca-pub-1234567890123456', amazonTag: 'wgf-20', tipUrl: 'https://ko-fi.com/wgf' });
+  expect(siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456' }).adsenseClient).toBe('');
+  expect(() => siteSettings({ ADSENSE_CLIENT: 'pub-123' })).toThrow('ADSENSE_CLIENT');
+  expect(() => siteSettings({ AMAZON_ASSOCIATES_TAG: 'wgf' })).toThrow('AMAZON_ASSOCIATES_TAG');
+  expect(() => siteSettings({ TIP_JAR_URL: 'http://ko-fi.com/wgf' })).toThrow('TIP_JAR_URL');
+});

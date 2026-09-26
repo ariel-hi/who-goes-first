@@ -15,6 +15,6 @@ export function getStaticPaths() {
 }
 const { mode, name, description, detail } = Astro.props as { mode: Mode; name: string; description: string; detail: string };
 ---
-<Layout title={`${name}: First Player Picker — Who Goes First?`} description={description}>
+<Layout ads={false} title={`${name}: First Player Picker — Who Goes First?`} description={description}>
   <div class="tool-page"><div class="intro"><h1>Who goes first?</h1></div><noscript><p class="noscript">Enable JavaScript to pick a player.</p></noscript><PickerShell initialMode={mode} /><div class="below-tool"><h2>How {name} works</h2><p>{detail}</p><p>Most reveals fit 2–12 players; Dice and Coin fit up to 24. Quick and Instant fit larger groups. Reduced motion shows the result immediately.</p><a class="inline-link" href="/fairness/">How the draw works</a><br/><a class="inline-link" href="/">Back to the picker</a></div></div>
 </Layout>

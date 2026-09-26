@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import RuleList from '../components/RuleList.astro';
+import { getCatalog } from '../lib/content/catalog';
+import { randomRuleEligible } from '../lib/content/random-rules';
+import { groupByTheme } from '../lib/content/hubs';
+// Only the individually reviewed portable criteria: each works at any table
+// without that game's components, setup roles, or simultaneous play.
+const rules = getCatalog().filter(randomRuleEligible);
+const { groups, other } = groupByTheme(rules);
+const count = rules.length;
+---
+<Layout title={`${count} Fun Ways to Decide Who Goes First, From Real Rulebooks`} description={`Need a fun way to choose who goes first? ${count} starting-player rules from published board games that work at any table, grouped by theme.`} pageType="CollectionPage" noindex={count === 0}>
+  <div class="content-page">
+    <span class="eyebrow">From publishers’ rulebooks</span>
+    <h1>{count} fun ways to decide who goes first</h1>
+    <p class="lede">Borrow a starting rule from another game. Every idea below comes from a published board game rulebook and works without that game’s pieces.</p>
+    <p>Prefer a fair draw? <a href="/">Pick a starting player at random</a>. Or <a href="/games/">look up the rule for your own game</a>.</p>
+    <nav aria-label="Themes on this page"><ul class="theme-links">{groups.map(group => <li><a href={`#${group.theme.slug}`}>{group.theme.label}</a></li>)}{other.length > 0 && <li><a href="#more-ideas">More ideas</a></li>}</ul></nav>
+    {groups.map(group => <section class="rule-section" id={group.theme.slug}><h2>{group.theme.label}</h2><RuleList rules={group.rules} /></section>)}
+    {other.length > 0 && <section class="rule-section" id="more-ideas"><h2>More ideas</h2><RuleList rules={other} /></section>}
+    <p class="small muted rule-section">A borrowed rule doesn’t bring its game’s tie-break with it. If several people qualify, or nobody does, <a href="/">use the random picker</a> to settle it fairly.</p>
+  </div>
+</Layout>

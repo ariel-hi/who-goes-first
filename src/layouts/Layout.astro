@@ -5,14 +5,19 @@ import '../styles/home.css';
 import '../styles/theme.css';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import { siteSettings } from '../lib/site';
-interface Props { title: string; description: string; noindex?: boolean; canonicalPath?: string; pageType?: 'WebPage' | 'AboutPage' | 'CollectionPage'; modified?: string; citations?: string[] }
-const { title, description, noindex = false, canonicalPath = Astro.url.pathname, pageType = 'WebPage', modified, citations } = Astro.props;
+// `ads` is false on the picker and error pages: a tool used mid-game night is no place for
+// ads that shift layout or invite accidental taps, and AdSense disallows ads on error pages.
+interface Props { title: string; description: string; noindex?: boolean; canonicalPath?: string; pageType?: 'WebPage' | 'AboutPage' | 'CollectionPage'; modified?: string; citations?: string[]; image?: string; imageAlt?: string; ads?: boolean }
+const { title, description, noindex = false, canonicalPath = Astro.url.pathname, pageType = 'WebPage', modified, citations, image = '/social.png', imageAlt = 'Who Goes First? A fair draw for your next board game.', ads = true } = Astro.props;
 const settings = siteSettings();
 const canonical = new URL(canonicalPath, settings.url).href;
 const path = Astro.url.pathname;
 const localPreview = import.meta.env.DEV && !settings.production;
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
 const indexed = settings.production && !noindex;
+const imageUrl = new URL(image, settings.url).href;
+// With AdSense configured, Google's certified consent message replaces the analytics banner.
+const googleAds = settings.production && Boolean(settings.adsenseClient);
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -42,10 +47,10 @@ const structuredData = {
     <meta property="og:type" content="website" /><meta property="og:site_name" content="Who Goes First?" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL('/social.png', settings.url).href} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="Who Goes First? A fair draw for your next board game." />
-    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={new URL('/social.png', settings.url).href} /><meta name="twitter:image:alt" content="Who Goes First? A fair draw for your next board game." />
+    <meta property="og:image" content={imageUrl} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content={imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={imageUrl} /><meta name="twitter:image:alt" content={imageAlt} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />
-    {settings.production && <script src="/analytics-consent.js" defer></script>}
+    {googleAds ? <script src="/google-tags.js" data-client={settings.adsenseClient} data-ads={ads ? 'on' : 'off'} async></script> : settings.production && <script src="/analytics-consent.js" defer></script>}
     <slot name="head" />
   </head>
   <body>
@@ -56,8 +61,8 @@ const structuredData = {
       <ThemeToggle />
     </header>
     <main id="main" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><nav aria-label="Footer"><a href="/choose-who-goes-first/">Choosing a starter</a><a href="/fairness/">How it works</a><a href="/privacy/">Privacy</a>{settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
-    {settings.production && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit analytics? Google Analytics receives the page address without search parameters, basic device information, and fixed campaign labels if you used one of our social links. It may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
+    <footer class="site-footer"><nav aria-label="Footer"><a href="/choose-who-goes-first/">Choosing a starter</a><a href="/fairness/">How it works</a><a href="/ways-to-pick-who-goes-first/">Ways to pick</a><a href="/privacy/">Privacy</a>{settings.tipUrl && <a href={settings.tipUrl} rel="noopener">Support the site</a>}{googleAds ? <a href="/privacy/#choices">Privacy choices</a> : settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
+    {settings.production && !googleAds && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit analytics? Google Analytics receives the page address without search parameters, basic device information, and fixed campaign labels if you used one of our social links. It may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
   </body>
 </html>
 

@@ -1,0 +1,20 @@
+---
+import HubPage from '../../../components/HubPage.astro';
+import { getCatalog } from '../../../lib/content/catalog';
+import { themeHubs } from '../../../lib/content/hubs';
+export function getStaticPaths() {
+  // A rule slugged "themes" would collide with this hub directory.
+  if (getCatalog().some(rule => rule.slug === 'themes')) throw new Error('The rule slug "themes" is reserved for theme hubs.');
+  return themeHubs(getCatalog()).map(hub => ({ params: { theme: hub.slug }, props: { hub } }));
+}
+const { hub } = Astro.props as { hub: ReturnType<typeof themeHubs>[number] };
+const count = hub.rules.length;
+---
+<HubPage
+  title={`${hub.title}: ${count} Board Games — Who Goes First?`}
+  description={`${count} board games whose starting-player rules mention ${hub.about}. Each answer is checked against the publisher’s rulebook for that edition.`}
+  heading={`Starting rules about ${hub.about}`}
+  lede={`${count} sourced board game rules that mention ${hub.about} when choosing who goes first.`}
+  crumb={hub.label}
+  rules={hub.rules}
+/>

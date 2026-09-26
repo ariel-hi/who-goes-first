@@ -1,0 +1,41 @@
+{
+  "id": "scrabble-hasbro-2021-en",
+  "slug": "scrabble-hasbro-2021-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "678e147952024508730eeb3b2c6a958e91e9f02aa3253651e750c72443f3b872",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Scrabble",
+  "aliases": [
+    "Scrabble Classic",
+    "Scrabble Crossword Game"
+  ],
+  "editionLabel": "Hasbro US rules, 2021",
+  "firstPlayerRule": "Everyone draws one tile. The player with the letter closest to A goes first, and a blank tile beats any letter.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play moves clockwise.",
+    "All drawn tiles go back in the bag, then everyone takes seven tiles in playing order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://instructions.hasbro.com/api/download/F4204_en-us_scrabble-board-game-classic-word-game-for-kids-ages-8-and-up-fun-family-game-for-2-4-players-the-classic-crossword-game.pdf",
+      "title": "Scrabble Classic — English instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup steps 4–5 (unnumbered folded sheet)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Hasbro US instructions for Scrabble Classic (2–4 players, 100 letter tiles, drawstring bag) from the Hasbro instructions site page scrabble-board-game-classic-word-game-for-kids-ages-8-and-up-fun-family-game-for-2-4-players-the-classic-crossword-game and extracted the text with pdftotext. PDF page 1, numbered setup step 4: everyone draws one tile, the letter closest to A goes first, a blank beats any letter, play moves clockwise; step 5 returns the tiles and deals seven each in playing order. The sheet shows © 2021 Hasbro. SHA-256: ec355b8231b5965afdb83dd802f1ad7d66300acd9e1198c2df96d5696ac62128. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rules do not say what happens if two players draw the same letter or both draw blanks."
+  ]
+}
