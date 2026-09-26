@@ -1,0 +1,39 @@
+{
+  "id": "shadows-over-camelot-days-of-wonder-en",
+  "slug": "shadows-over-camelot-days-of-wonder-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Shadows over Camelot",
+  "aliases": [],
+  "editionLabel": "Days of Wonder English base game",
+  "firstPlayerRule": "The player playing King Arthur starts. If King Arthur is not in play, the youngest player starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If King Arthur is absent and the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/sc_rules_2015_en.pdf",
+      "title": "Shadows over Camelot — English rulebook",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        9
+      ],
+      "location": "Game turn — First player; Order of the turn",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Days of Wonder English manual. Printed and PDF page 9 explicitly prioritizes King Arthur and uses the youngest player only when Arthur is not in play. This is a character-dependent rule, so it is excluded from the random method pool. Source custody: research/source-files/popular-sep26-02/shadows.pdf; SHA-256 1e3f5abb3938be9c7ede217405f96b750a92234c2e2ad962d9fff77408a3d950. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The rulebook does not resolve equal ages when King Arthur is absent."
+  ]
+}
