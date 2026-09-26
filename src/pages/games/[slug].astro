@@ -8,14 +8,11 @@ import { hubContext } from '../../lib/content/hubs';
 import { siteSettings } from '../../lib/site';
 type Rule = ReturnType<typeof getCatalog>[number];
 type Links = ReturnType<ReturnType<typeof hubContext>>;
-function context(catalog: Rule[], links: ReturnType<typeof hubContext>, rule: Rule) {
-  const base = ruleContext(catalog, rule);
-  return { ...base, ...links(rule, base.related) };
-}
 export function getStaticPaths() {
   const catalog = getCatalog();
   const links = hubContext(catalog);
-  return catalog.map(rule => ({ params: { slug: rule.slug }, props: { rule, ...context(catalog, links, rule) } }));
+  // getStaticPaths runs in isolation: only imports are in scope here.
+  return catalog.map(rule => { const base = ruleContext(catalog, rule); return { params: { slug: rule.slug }, props: { rule, ...base, ...links(rule, base.related) } }; });
 }
 // The local preview renders this route on demand, without getStaticPaths props.
 const catalog = Astro.props.rule ? [] : getCatalog();
@@ -23,7 +20,7 @@ const rule: Rule | undefined = Astro.props.rule ?? catalog.find(game => game.slu
 if (!rule) Astro.response.status = 404;
 const { related, shared, similar, similarHub, publisherHub } = Astro.props.rule
   ? Astro.props as { related: Rule[]; shared: boolean } & Links
-  : rule ? context(catalog, hubContext(catalog), rule) : { related: [], shared: false, similar: [], similarHub: undefined, publisherHub: undefined };
+  : rule ? (base => ({ ...base, ...hubContext(catalog)(rule, base.related) }))(ruleContext(catalog, rule)) : { related: [], shared: false, similar: [], similarHub: undefined, publisherHub: undefined };
 const site = siteSettings().url;
 const title = rule ? `Who goes first in ${rule.gameName}? ${shared ? rule.editionLabel : 'Official rule'}` : '';
 ---
