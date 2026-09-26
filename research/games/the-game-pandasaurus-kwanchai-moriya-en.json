@@ -1,0 +1,44 @@
+{
+  "id": "the-game-pandasaurus-kwanchai-moriya-en",
+  "slug": "the-game-pandasaurus-kwanchai-moriya-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The Game",
+  "aliases": [
+    "The Game: Are You Ready to Play?",
+    "The Game — Kwanchai Moriya Edition"
+  ],
+  "editionLabel": "Pandasaurus English rules · Kwanchai Moriya edition",
+  "firstPlayerRule": "In a multiplayer game, each player looks at their hand, and the group agrees who goes first. Turns then proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "For the standard multiplayer setup, deal seven cards each with two players, or six cards each with three to five players, before agreeing on the starter.",
+    "In solo play, deal yourself eight cards and take the turns yourself.",
+    "The expert option increases the minimum cards played per turn and can reduce hand size by one card per player; it retains the multiplayer starting agreement."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/rux1sfbevshr8x593n0a2/P_TG_Rulebook_Print.pdf?dl=1&rlkey=6bbw1wlsych1lrxznas12g6ty&st=sn56zvzr",
+      "title": "The Game — Pandasaurus English rulebook",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Getting Started and How to Play on unnumbered PDF page 1; solo hand refill, Permissible Communication, and For Experts Only on PDF page 2",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Reopened Pandasaurus Games' official The Game: Kwanchai Moriya Edition product page and followed its Rulebook link to the Dropbox PDF. The record uses the stable linked file URL with dl=1 rather than the transient download redirect. A live download matched cached SHA-256 50f458a3d4d7950cf85287fb6dad9884443a84bec640c05a6cd88691d4d52aa5. Inspected both complete rendered PDF pages and their full extracted text. Page 1 gives hand sizes, then has players inspect their hands and collectively decide the starter before proceeding clockwise. Solo setup gives the single player eight cards; page 2 continues that solo refill rule. The expert section changes minimum cards played and optionally hand size while otherwise retaining the preceding rules. The cooperative ending and communication section supply no starting tie or ranked-hand criterion. No year or version is visible in this reviewed manual; edition identification comes from the official product link and matching artwork.",
+  "uncertainty": [
+    "The reviewed rules do not specify a tie breaker or procedure when the group cannot agree on a starter.",
+    "The manual is undated. This draft assigns no publication year and makes no claim about other editions."
+  ]
+}

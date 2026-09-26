@@ -60,6 +60,11 @@ test('traditional rules preserve fixed roles, handicap starts and actual opening
   await expect(page.locator('.rule-answer')).toContainText('without rolling again');
   await expect(page.getByRole('heading', { name: 'Official tie-break or fallback', exact: true })).toBeVisible();
   await expect(page.getByText('If the opening dice match, both players roll again until their numbers differ.', { exact: true })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', 'https://usbgf.org/backgammon-basics-how-to-play/');
+  // Resolve the opening before optional stake and match-play details.
+  expect(await page.locator('.opening-tie').evaluate(section => Boolean(section.compareDocumentPosition(document.querySelector('.rule-section:not(.opening-tie)')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+  const sourceTarget = await page.getByRole('navigation', { name: 'Rulebook source', exact: true }).getByRole('link').boundingBox();
+  expect(sourceTarget!.height).toBeGreaterThanOrEqual(44);
 });
 
 test('pending game help works on static shelves without JavaScript', async ({ browser }) => {
@@ -74,4 +79,28 @@ test('pending game help works on static shelves without JavaScript', async ({ br
   await expect(page).toHaveURL(/\/$/);
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await context.close();
+});
+
+test('six reviewed editions retain their opening instructions and direct source pages', async ({ page }) => {
+  const cases = [
+    ['samurai-fantasy-flight-2015-en', 5, 'The youngest player', 'clockwise'],
+    ['shogun-queen-2006-en', 9, 'earliest turn-order position', 'special cards'],
+    ['john-company-second-edition-wehrlegig-en', 13, 'skip the London Season', 'Chairman'],
+    ['summoner-wars-second-edition-plaid-hat-en-v1-2', 5, 'Randomly choose', 'opponent begins with 3 magic'],
+    ['london-second-edition-osprey-en-2017', 6, 'player who set up the game', 'clockwise'],
+    ['the-game-pandasaurus-kwanchai-moriya-en', 1, 'group agrees', 'clockwise'],
+  ] as const;
+  for (const [slug, pdfPage, opening, context] of cases) {
+    await page.goto(`/games/${slug}/`);
+    await expect(page.locator('.rule-answer')).toContainText(opening);
+    await expect(page.locator('.rule-answer')).toContainText(context);
+    await expect(page.getByRole('link', { name: `View cited page (PDF page ${pdfPage})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${pdfPage}$`));
+    if (slug.startsWith('shogun-')) {
+      await expect(page.locator('.opening-tie')).toContainText('shuffle the tied');
+      await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText('oldest player begins claiming');
+    }
+    if (slug.startsWith('john-company-') || slug.startsWith('summoner-wars-') || slug.startsWith('the-game-')) {
+      await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(0);
+    }
+  }
 });

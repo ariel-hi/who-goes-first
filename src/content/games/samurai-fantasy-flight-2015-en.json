@@ -1,0 +1,45 @@
+{
+  "id": "samurai-fantasy-flight-2015-en",
+  "slug": "samurai-fantasy-flight-2015-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "059ef573aab34dab2532b27d67382f5b2d0c65ac3d227c255d3e6b511eab4269",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Samurai (Reiner Knizia)",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight edition · 2015 (English)",
+  "firstPlayerRule": "The youngest player takes the first turn. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During standard setup, the youngest player also begins placing caste pieces in cities. Village placement continues with the next player after the final city placement.",
+    "The optional Basic Setup for first-time players randomizes starting hands and caste placement. Regular play still follows the printed youngest-player start."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/58/58/5858c0b8-3ceb-49ab-880e-565e9c4eaadc/kn26_rulebook.pdf",
+      "title": "Samurai rulebook, Fantasy Flight Games English edition (2015)",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "5",
+        "4",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        4,
+        8
+      ],
+      "location": "Playing the Game / Turn Sequence; Setup steps 8-9 and Basic Setup sidebar; credits and 2015 imprint",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The complete setup and turn-sequence pages were extracted, rendered with Poppler and visually inspected, including the Basic Setup sidebar and the continuation from city to village placement. The credits page was also visually inspected and identifies Reiner Knizia and the 2015 Fantasy Flight edition. The publisher CDN source was refetched on 2026-09-26 and its bytes match the cached eight-page PDF at research/source-files/pending-eight-discovery/samurai-ffg-2015.pdf: SHA-256 021578b5b57f06b83752f6c5a01403dc1f9b69db69815beb9445d205c7a3b005. Accepted identity reference: Q4994200 / BGG 3, display label Samurai (Reiner Knizia). No approval or portable-pool enrollment is created by this draft. Editorial review 2026-09-26: The complete setup, opening-turn and imprint pages distinguish city/village placement from regular clockwise play. Youngest is also a standalone portable criterion; equal age has no official tie-break. Codex independently inspected the cited source context and all public fields. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is approved for the catalog; earlier draft-only statements describe intake history. No deployment approval.",
+  "uncertainty": [
+    "The inspected start passages do not specify how to resolve an equal-age tie for youngest player.",
+    "This answer is scoped to the inspected 2015 Fantasy Flight English manual. Other printings require their own source review."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "samurai-fantasy-flight-2015-en",
+  "slug": "samurai-fantasy-flight-2015-en",
+  "gameName": "Samurai (Reiner Knizia)",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Fantasy Flight Games English edition - 2015",
+  "firstPlayerRule": "The youngest player takes the first turn. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During standard setup, the youngest player also begins placing caste pieces in cities. Village placement continues with the next player after the final city placement.",
+    "The optional Basic Setup for first-time players randomizes starting hands and caste placement. Regular play still follows the printed youngest-player start."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/58/58/5858c0b8-3ceb-49ab-880e-565e9c4eaadc/kn26_rulebook.pdf",
+      "title": "Samurai rulebook, Fantasy Flight Games English edition (2015)",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": ["5", "4", "8"],
+      "pdfPagesOneBased": [5, 4, 8],
+      "location": "Playing the Game / Turn Sequence; Setup steps 8-9 and Basic Setup sidebar; credits and 2015 imprint",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The complete setup and turn-sequence pages were extracted, rendered with Poppler and visually inspected, including the Basic Setup sidebar and the continuation from city to village placement. The credits page was also visually inspected and identifies Reiner Knizia and the 2015 Fantasy Flight edition. The publisher CDN source was refetched on 2026-09-26 and its bytes match the cached eight-page PDF at research/source-files/pending-eight-discovery/samurai-ffg-2015.pdf: SHA-256 021578b5b57f06b83752f6c5a01403dc1f9b69db69815beb9445d205c7a3b005. Accepted identity reference: Q4994200 / BGG 3, display label Samurai (Reiner Knizia). No approval or portable-pool enrollment is created by this draft.",
+  "uncertainty": [
+    "The inspected start passages do not specify how to resolve an equal-age tie for youngest player.",
+    "This answer is scoped to the inspected 2015 Fantasy Flight English manual. Other printings require their own source review."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

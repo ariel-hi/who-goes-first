@@ -133,7 +133,11 @@ for (const motion of ['no-preference', 'reduce'] as const) test(`mobile visual r
     }) as typeof window.scrollBy;
   });
   await ready(page, '/methods/coin/');
-  await expect(page.locator('.coin-reveal')).toBeVisible();
+  // React's streamed server preview also exists in a hidden island container
+  // during cold hydration. Inspect the mounted picker and require one visible scene.
+  await expect(page.locator('.picker .coin-reveal')).toHaveCount(1);
+  await expect(page.locator('.picker .coin-reveal')).toBeVisible();
+  await expect(page.locator('.coin-reveal:visible')).toHaveCount(1);
   expect(await page.locator('.reveal-stage').evaluate(element => element.getBoundingClientRect().bottom > innerHeight)).toBe(true);
   await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
   await expect.poll(() => page.locator('.reveal-stage').evaluate(element => {
@@ -177,7 +181,9 @@ test('a fully visible desktop reveal and Quick draws do not request reveal scrol
     }) as typeof window.scrollBy;
   });
   await ready(page, '/methods/coin/');
-  await expect(page.locator('.coin-reveal')).toBeVisible();
+  await expect(page.locator('.picker .coin-reveal')).toHaveCount(1);
+  await expect(page.locator('.picker .coin-reveal')).toBeVisible();
+  await expect(page.locator('.coin-reveal:visible')).toHaveCount(1);
   await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
@@ -357,6 +363,28 @@ test('larger groups can use dice and coins while the toolbar stays visible durin
   await expect(announcement(page)).toContainText('Seat 13 goes first');
   await expect(page.locator('.coin-reveal .reveal-player')).toHaveCount(24);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('twelve-player mobile cards, dice and coins show the last winning seat', async ({ page }) => {
+  test.setTimeout(90000);
+  await page.setViewportSize({ width: 320, height: 844 });
+  await controlledRandom(page, 11);
+  for (const reducedMotion of ['no-preference', 'reduce'] as const) {
+    await page.emulateMedia({ reducedMotion });
+    for (const mode of ['cards', 'dice', 'coin']) {
+      await ready(page, `/methods/${mode}/`);
+      await page.getByLabel('Player count', { exact: true }).fill('12');
+      await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+      await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+      await expect(announcement(page)).toContainText('Seat 12 goes first');
+      await expect(page.locator('.reveal-player')).toHaveCount(12);
+      await expect.poll(() => page.locator('.reveal-chosen').evaluate(piece => {
+        const rect = piece.getBoundingClientRect();
+        return rect.top >= 0 && rect.bottom <= innerHeight;
+      })).toBe(true);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    }
+  }
 });
 
 test('secure RNG failure is recoverable with no fallback winner', async ({ page }) => {

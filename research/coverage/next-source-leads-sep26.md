@@ -1,5 +1,7 @@
 # Next source leads — 2026-09-26 UTC
 
+**Follow-up completed:** the six reachable manuals below now have independently reviewed, exact approved catalog copies and edition-specific identity overrides. Samurai also joins the portable random mix. The bounded native-title discovery was expanded to a complete live 288-ID snapshot; 18 primary-corroborated identities are now enrolled and 270 held. See [sep26-six-native-mobile-progress.md](sep26-six-native-mobile-progress.md) and [native-title-progress.md](native-title-progress.md). The remaining text preserves the earlier discovery-only handoff and its counts.
+
 Discovery only. These leads add no active identities, starting-rule drafts or approvals. The stable checkpoint remains 4,956 identities and 864 approved catalog records.
 
 ## Six reachable primary manuals

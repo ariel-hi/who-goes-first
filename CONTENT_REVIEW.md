@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 864 game rules approved for the catalog; 359 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 870 game rules approved for the catalog; 360 eligible for the random mix. Public house prompts: 60.**
+
+Six more source-reviewed editions cover Samurai, Shogun, John Company Second Edition, Summoner Wars Second Edition, London Second Edition and The Game. Explicit identity overrides prevent alias-based edition transfer. Samurai adds one portable youngest-player criterion; the other five retain their component, role, setup or agreement context in the catalog. Source versions and scope are recorded in `research/coverage/sep26-six-native-mobile-progress.md`.
 
 Chess, Backgammon and Go add three source-reviewed traditional-game answers. FIDE's 2023 Laws assign White the first move; USBGF's standard two-player education rules use both opening dice and reroll ties; the BGA's dated 2009 rules distinguish even and handicap openings. They remain directory-only. Chess and Go set `tieBreakApplicable: false` because their starting colors have no player-selection tie; existing records keep their current tie-break behavior when that optional field is absent. Exact revisions and scope are recorded in `research/coverage/traditional-games-progress.md`.
 

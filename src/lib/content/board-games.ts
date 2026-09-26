@@ -1,4 +1,5 @@
 import { readFileSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import { getCatalog } from './catalog';
 
@@ -45,10 +46,121 @@ const reviewSchema = z.object({
   })),
 });
 
+const nativeSnapshotPath = 'research/coverage/wikidata-native-title-leads.json';
+const nativeDecisionsPath = 'research/coverage/wikidata-native-title-decisions.json';
+const hashSchema = z.string().regex(/^[a-f0-9]{64}$/);
+const qidSchema = z.string().regex(/^Q\d+$/);
+const nativeTitleSchema = z.looseObject({ text: z.string().min(1), language: z.string().min(1), source: z.enum(['label', 'P1476']) });
+const nativeSnapshotSchema = z.object({
+  retrievedOn: z.string(),
+  source: z.object({ statementSha256: hashSchema, entitiesSha256: hashSchema }),
+  candidates: z.array(z.object({
+    bggId: z.string().regex(/^\d+$/), alreadyListed: z.boolean(), reviewFlags: z.array(z.string()),
+    startingRuleApproved: z.literal(false),
+    items: z.array(z.object({
+      wikidataId: qidSchema, revision: z.number().int().positive(), entitySha256: hashSchema,
+      titleOptions: z.array(nativeTitleSchema), bggIdClaims: z.array(z.record(z.string(), z.unknown())),
+      entity: z.record(z.string(), z.unknown()),
+    })).min(1),
+  })),
+});
+const nativeDecisionsSchema = z.object({
+  sourceSnapshot: z.literal(nativeSnapshotPath), sourceSnapshotSha256: hashSchema,
+  sourceSnapshotStatementSha256: hashSchema, sourceSnapshotEntitiesSha256: hashSchema,
+  sources: z.record(z.string(), z.object({
+    url: z.url(), kind: z.enum(['primary-author', 'primary-publisher', 'primary-author-publisher']),
+    status: z.string(), sha256: hashSchema,
+  })),
+  decisions: z.array(z.object({
+    bggId: z.string().regex(/^\d+$/), wikidataItems: z.array(qidSchema).min(1),
+    displayName: z.string().min(1), selectedTitle: nativeTitleSchema.extend({ wikidataId: qidSchema }),
+    decision: z.enum(['accept', 'hold']), reviewed: z.boolean(), identityEvidence: z.array(z.string()),
+    sourceIds: z.array(z.string()), snapshotReviewFlags: z.array(z.string()),
+    idProvenance: z.array(z.object({ wikidataId: qidSchema, revision: z.number().int().positive(), entitySha256: hashSchema, statements: z.array(z.string()) })),
+    startingRuleApproved: z.literal(false), editionRuleTransferApproved: z.literal(false),
+  })),
+});
+const nativeClaimSchema = z.object({
+  id: z.string(), rank: z.enum(['normal', 'preferred', 'deprecated']),
+  mainsnak: z.object({ property: z.literal('P2339'), snaktype: z.string(), datavalue: z.object({ type: z.string(), value: z.unknown() }).optional() }),
+});
+// Match Python's canonical CC0 snapshot hashing without losing unknown entity fields.
+function canonical(value: unknown): string {
+  if (Array.isArray(value)) return `[${value.map(canonical).join(',')}]`;
+  if (value !== null && typeof value === 'object') {
+    const record = value as Record<string, unknown>;
+    return `{${Object.keys(record).sort().map(key => `${JSON.stringify(key)}:${canonical(record[key])}`).join(',')}}`;
+  }
+  return JSON.stringify(value)!;
+}
+const sha256 = (text: string) => createHash('sha256').update(text).digest('hex');
+
+export function nativeIdentityAdditions(snapshotText: string, decisionsText: string, existing: readonly { name: string; bggId: string }[]) {
+  const snapshot = nativeSnapshotSchema.parse(JSON.parse(snapshotText));
+  const review = nativeDecisionsSchema.parse(JSON.parse(decisionsText));
+  const entities = Object.fromEntries(snapshot.candidates.flatMap(candidate => candidate.items.map(item => [item.wikidataId, item.entity])));
+  const statements = snapshot.candidates.flatMap(candidate => candidate.items.map(item => [candidate.bggId, item.wikidataId]));
+  if (review.sourceSnapshotSha256 !== sha256(snapshotText)
+    || review.sourceSnapshotStatementSha256 !== snapshot.source.statementSha256
+    || review.sourceSnapshotEntitiesSha256 !== snapshot.source.entitiesSha256
+    || snapshot.source.statementSha256 !== sha256(canonical(statements))
+    || snapshot.source.entitiesSha256 !== sha256(canonical(entities))) throw new Error('Native identity review belongs to a different snapshot');
+  const candidates = new Map(snapshot.candidates.map(candidate => [candidate.bggId, candidate]));
+  const decisions = new Map(review.decisions.map(decision => [decision.bggId, decision]));
+  if (candidates.size !== snapshot.candidates.length || decisions.size !== review.decisions.length) throw new Error('Duplicate native identity reference');
+  if (decisions.size !== candidates.size || [...decisions.keys()].some(id => !candidates.has(id))) throw new Error('Incomplete native identity decisions');
+  const ids = new Set(existing.map(game => game.bggId));
+  const names = new Set(existing.map(game => nameKey(game.name)));
+  const additions: z.infer<typeof inventorySchema>['games'] = [];
+  for (const decision of review.decisions) {
+    if (decision.decision !== 'accept') continue;
+    const candidate = candidates.get(decision.bggId)!;
+    const item = candidate.items.find(item => item.wikidataId === decision.selectedTitle.wikidataId);
+    const { wikidataId: selectedQid, ...selectedTitle } = decision.selectedTitle;
+    if (!decision.reviewed || !decision.identityEvidence.length || !decision.sourceIds.length
+      || candidate.alreadyListed || candidate.reviewFlags.length || decision.snapshotReviewFlags.length
+      || canonical(decision.wikidataItems) !== canonical(candidate.items.map(item => item.wikidataId))
+      || !item || !item.titleOptions.some(title => canonical(title) === canonical(selectedTitle))
+      || decision.displayName !== selectedTitle.text) throw new Error(`Invalid native identity title: ${decision.bggId}`);
+    if (decision.sourceIds.some(id => !review.sources[id] || review.sources[id]!.status !== 'retrieved')) throw new Error(`Unknown or unavailable native primary source: ${decision.bggId}`);
+    const labels = item.entity.labels as Record<string, { language: string; value: string }> | undefined;
+    const originalTitles = (item.entity.claims as Record<string, unknown[]> | undefined)?.P1476 ?? [];
+    const originalTitleSchema = z.object({
+      id: z.string(), rank: z.string(), mainsnak: z.object({ datavalue: z.object({ type: z.string(), value: z.object({ text: z.string(), language: z.string() }) }) }),
+    });
+    const sourceTitleExists = selectedTitle.source === 'label'
+      ? labels?.[selectedTitle.language]?.value === selectedTitle.text && labels[selectedTitle.language]!.language === selectedTitle.language
+      : originalTitles.some(value => {
+        const parsed = originalTitleSchema.safeParse(value);
+        return parsed.success && parsed.data.id === selectedTitle.statementId && parsed.data.rank !== 'deprecated'
+          && parsed.data.mainsnak.datavalue.type === 'monolingualtext'
+          && parsed.data.mainsnak.datavalue.value.text === selectedTitle.text && parsed.data.mainsnak.datavalue.value.language === selectedTitle.language;
+      });
+    if (!sourceTitleExists) throw new Error(`Missing native entity title: ${decision.bggId}`);
+    for (const entityItem of candidate.items) {
+      const entity = entityItem.entity;
+      const claimRecords = (entity.claims as Record<string, unknown> | undefined)?.P2339;
+      const claims = z.array(nativeClaimSchema).parse(claimRecords);
+      const matching = claims.filter(claim => claim.rank !== 'deprecated' && claim.mainsnak.snaktype === 'value'
+        && claim.mainsnak.datavalue?.type === 'string' && claim.mainsnak.datavalue.value === decision.bggId);
+      const provenance = decision.idProvenance.find(value => value.wikidataId === entityItem.wikidataId);
+      if (entity.id !== entityItem.wikidataId || entity.lastrevid !== entityItem.revision
+        || sha256(canonical(entity)) !== entityItem.entitySha256 || canonical(claimRecords) !== canonical(entityItem.bggIdClaims)
+        || !matching.length || !provenance || provenance.revision !== entityItem.revision || provenance.entitySha256 !== entityItem.entitySha256
+        || canonical(provenance.statements) !== canonical(matching.map(claim => claim.id))) throw new Error(`Invalid native P2339 evidence: ${decision.bggId}`);
+    }
+    if (decision.idProvenance.length !== candidate.items.length || !decision.idProvenance.some(value => value.wikidataId === selectedQid)) throw new Error(`Invalid native identity provenance: ${decision.bggId}`);
+    if (ids.has(decision.bggId) || names.has(nameKey(decision.displayName))) throw new Error(`Duplicate native board game identity: ${decision.bggId}`);
+    ids.add(decision.bggId); names.add(nameKey(decision.displayName));
+    additions.push({ name: decision.displayName, bggId: decision.bggId, discoveryUrl: `https://boardgamegeek.com/boardgame/${decision.bggId}`, status: 'needs-primary-source' });
+  }
+  return { games: additions, retrievedOn: snapshot.retrievedOn };
+}
+
 let cachedInventory: z.infer<typeof inventorySchema> | undefined;
 let inventoryRevision = '';
 export function getBoardGameInventory() {
-  const revision = ['research/coverage/discovery-index.json', 'research/coverage/wikidata-board-games.json', 'research/coverage/wikidata-identity-review.json'].map(path => {
+  const revision = ['research/coverage/discovery-index.json', 'research/coverage/wikidata-board-games.json', 'research/coverage/wikidata-identity-review.json', nativeSnapshotPath, nativeDecisionsPath].map(path => {
     const file = statSync(path);
     return `${file.mtimeMs}:${file.size}`;
   }).join('|');
@@ -84,7 +196,8 @@ export function getBoardGameInventory() {
     if (names.has(key) || addedNames.has(key)) throw new Error(`Wikidata discovery label needs qualification: ${game.name}`);
     addedNames.add(key);
   }
-  cachedInventory = { ...original, scope: `${original.scope} Plus ${additions.length} English-labeled Wikidata P2339 identity leads from ${wikidata.retrievedOn}, including accepted identity reviews; no rule text imported.`, games: [...original.games, ...additions] };
+  const native = nativeIdentityAdditions(readFileSync(nativeSnapshotPath, 'utf8'), readFileSync(nativeDecisionsPath, 'utf8'), [...original.games, ...additions]);
+  cachedInventory = { ...original, scope: `${original.scope} Plus ${additions.length} English-labeled Wikidata P2339 identity leads from ${wikidata.retrievedOn}, including accepted identity reviews; plus ${native.games.length} native and language-neutral identities corroborated by primary sources from ${native.retrievedOn}; no rule text imported.`, games: [...original.games, ...additions, ...native.games] };
   inventoryRevision = revision;
   return cachedInventory;
 }

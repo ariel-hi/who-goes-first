@@ -75,7 +75,8 @@ test('the full researched catalog is listed and representative sourced pages wor
     const response = await request.get(url);
     expect(response.status(), url).toBe(200);
     const html = await response.text();
-    expect(html).toContain(url.includes('/dev/rules/') ? 'Draft rule · not approved' : 'From the publisher’s rulebook');
+    if (url.includes('/dev/rules/')) expect(html).toContain('Draft rule · not approved');
+    else expect(html).toMatch(/From the (?:publisher’s rulebook|source rules)/);
     expect(html).toContain('rule-answer');
     expect(html).toMatch(/Source (?:&|&amp;) edition/);
     expect(html).not.toContain('astro-island');

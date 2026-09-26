@@ -1,0 +1,39 @@
+{
+  "id": "john-company-second-edition-wehrlegig-en",
+  "slug": "john-company-second-edition-wehrlegig-en",
+  "gameName": "John Company: Second Edition",
+  "aliases": [],
+  "language": "en",
+  "editionLabel": "Wehrlegig Games English Second Edition, Second Printing - 2023; multiplayer without the Crown",
+  "firstPlayerRule": "On the first game turn, skip the London Season and begin with the Family phase. The player holding the Chairman title takes the first Family action, then players continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Choose a scenario and use its setup cards to assign the initial offices. The optional Draft Variant lets players select one setup card and pass the remaining cards left, repeating until all cards are chosen.",
+    "This answer covers multiplayer play without the Crown. Solo and two-player play has additional setup and AI rules, including a separate Crown Handbook.",
+    "The Chairman start described here governs the Family action step. Later phases use their own office and role procedures."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/v1p712l0dkgiqa0jx0vr8/John-Company-Rules.pdf?dl=0&rlkey=xtek9x06fla1cb5d8b8ov3q7b",
+      "title": "John Company: Second Edition, Rules of Play, Second Printing (2023)",
+      "publisher": "Wehrlegig Games",
+      "printedPages": ["13", "10", "11", "4", "5", "2", "43", "44", "48"],
+      "pdfPagesOneBased": [13, 10, 11, 4, 5, 2, 43, 44, 48],
+      "location": "II. Family / Family Action (page 13); Sequence of Play and first-turn London Season exception (pages 10-11); scenario, office setup and Draft Variant (pages 4-5); Crown scope and setup (pages 2, 43-44); Second Printing 2023 imprint (page 48)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Wehrlegig's official resources page at https://wehrlegig.com/pages/resources was reopened; its John Company Second Edition rules link leads to this exact Dropbox file. A fresh download on 2026-09-26 matches the cached forty-eight-page PDF at research/source-files/pending-eight-discovery/john-company-second.pdf: SHA-256 29fdc157234951b517190c82298ea578a543d25f183224e9fa86c1ca8c470dd0. Complete rendered PDF pages 1-2, 4-5, 10-11, 13, 43-44 and 48 were visually inspected. Page 48 explicitly identifies Second Edition, Second Printing, 2023. Joint reading of the sequence and first-turn exception makes Family the opening phase; page 13 assigns the first Family action to the Chairman. Crown setup and Player Button rules remain outside this answer. Accepted identity reference: Q122238495 P2339 value 332686, qualified edition number 2; no transfer to first-edition value 211716. This is an unapproved draft with no portable-pool enrollment.",
+  "uncertainty": [
+    "The Crown Handbook was not reviewed for a solo or two-player answer. Those modes remain held for separate research.",
+    "The inspected PDF is the explicitly marked 2023 second printing; this draft does not claim that its wording is the latest revision."
+  ],
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null
+}

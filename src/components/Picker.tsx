@@ -313,6 +313,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         </fieldset>
         <div className={`result-area ${state.phase === 'result' ? 'has-result' : busy ? 'is-revealing' : 'is-ready'}`}>
           <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement" data-long={winnerLabel.length > 18}>{busy && <span className="sr-only">Revealing the selected player…</span>}{state.phase === 'result' && winner && <p><bdi>{winnerLabel}</bdi> goes first.</p>}</div>
+          {busy && <div className="result-placeholder" data-long={winnerLabel.length > 18} aria-hidden="true"><p><bdi>{winnerLabel}</bdi> goes first.</p></div>}
         </div>
         <fieldset className="reveal-options" disabled={!hydrated} inert={busy}>
           <legend className="sr-only">Choose your reveal</legend>

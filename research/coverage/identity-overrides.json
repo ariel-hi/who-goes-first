@@ -1,77 +1,149 @@
 [
   {
     "ruleId": "dominion-2021-en",
-    "inventoryIds": ["209418"],
+    "inventoryIds": [
+      "209418"
+    ],
     "reason": "The reviewed publisher manual is explicitly Dominion Second Edition. Its 2021 revision belongs to the second-edition identity, rather than the original Dominion release."
   },
   {
     "ruleId": "great-western-trail-second-edition-en",
-    "inventoryIds": ["341169"],
+    "inventoryIds": [
+      "341169"
+    ],
     "reason": "The reviewed rulebook is Great Western Trail: Second Edition, which has its own identity separate from the original game."
   },
   {
     "ruleId": "seti-cge-en",
-    "inventoryIds": ["418059"],
+    "inventoryIds": [
+      "418059"
+    ],
     "reason": "The Czech Games Edition SETI: Search for Extraterrestrial Intelligence rulebook describes the 2024 space-exploration game, not the unrelated older game called Seti."
   },
   {
     "ruleId": "sid-meiers-civilization-board-game-ffg-en",
-    "inventoryIds": ["77130"],
+    "inventoryIds": [
+      "77130"
+    ],
     "reason": "The Fantasy Flight Games manual is for Sid Meier's Civilization: The Board Game, not the distinct older Civilization: The Boardgame identity."
   },
   {
     "ruleId": "viticulture-essential-stonemaier-en",
-    "inventoryIds": ["183394"],
+    "inventoryIds": [
+      "183394"
+    ],
     "reason": "The reviewed Stonemaier rulebook covers Viticulture Essential Edition, which is a separate identity from the original Viticulture game."
   },
   {
     "ruleId": "7-wonders-2020-en",
-    "inventoryIds": ["316377"],
+    "inventoryIds": [
+      "316377"
+    ],
     "reason": "The Repos Production 2020 manual covers the second edition, not the original 7 Wonders identity."
   },
   {
     "ruleId": "the-castles-of-burgundy-alea-2019-en",
-    "inventoryIds": ["271320"],
+    "inventoryIds": [
+      "271320"
+    ],
     "reason": "The reviewed alea 2019 manual covers the 2019 edition identity, not the earlier Castles of Burgundy release."
   },
   {
     "ruleId": "ancient-world-red-raven-en-second-edition",
-    "inventoryIds": ["259298"],
+    "inventoryIds": [
+      "259298"
+    ],
     "reason": "Red Raven's linked manual explicitly covers The Ancient World Second Edition (BGG 259298), a reimplementation of the original inventory identity 147253. Its optional variants resembling the first edition are not evidence for that original game's starting instruction."
   },
   {
     "ruleId": "chomp-gamewright-en",
-    "inventoryIds": ["5367"],
+    "inventoryIds": [
+      "5367"
+    ],
     "reason": "Gamewright's Chomp! is a simultaneous card game. The inventory's Chomp (377449) is the unrelated dinosaur tile game shown on AEG's Chomp product page. Similar punctuation-normalized names do not establish identity."
   },
   {
     "ruleId": "big-top-gamewright-en",
-    "inventoryIds": ["486"],
+    "inventoryIds": [
+      "486"
+    ],
     "reason": "Gamewright's animal-and-color recognition game Big Top is an edition of Barnyard Buddies (BGG 486). Allplay's unrelated circus auction Big Top is BGG 369899; BGG 7048 is a third, unrelated circus card game."
   },
   {
     "ruleId": "trismegistus-new-edition-board-dice-en",
-    "inventoryIds": ["440942"],
+    "inventoryIds": [
+      "440942"
+    ],
     "reason": "The publisher's revised Trismegistus New Edition is distinct from the inventory's Trismegistus: The Ultimate Formula (281442). Its potion criterion is not evidence for the original game's transmutation/introductory setup. The original has its own researched record."
   },
   {
     "ruleId": "vienna-city-collection-queen-games-en",
-    "inventoryIds": ["368974"],
+    "inventoryIds": [
+      "368974"
+    ],
     "reason": "The Queen Games manual identifies Stefan Feld City Collection 5, with secret agents, bribes and a city crest. It represents the newer Vienna identity (368974), not the older Schmidt Spiele dice-placement game (171492) with the identical title."
   },
   {
     "ruleId": "vienna-schmidt-en",
-    "inventoryIds": ["171492"],
+    "inventoryIds": [
+      "171492"
+    ],
     "reason": "The Schmidt Spiele rulebook credits Johannes Schmidauer-König and describes the older dice-placement game with a clock start card. It belongs to inventory identity 171492, not Queen Games' later Stefan Feld City Collection game 368974 with the identical title."
   },
   {
     "ruleId": "perseverance-episode-1-mindclash-en-2021",
-    "inventoryIds": ["256997"],
+    "inventoryIds": [
+      "256997"
+    ],
     "reason": "The publisher's Episode 1 cover identifies Episodes 1 & 2 as two standalone games in the same Castaway Chronicles box. Episode 1 has its own boat-based starting criterion. Both episode records belong to the single combined-box inventory identity."
   },
   {
     "ruleId": "perseverance-episode-2-mindclash-en-2021",
-    "inventoryIds": ["256997"],
+    "inventoryIds": [
+      "256997"
+    ],
     "reason": "The publisher's Episode 2 manual and Episode 1 cover identify this as the other standalone episode in the same Episodes 1 & 2 box. Its nature-adventure starting criterion differs, but a second answer does not create a second inventory identity."
+  },
+  {
+    "ruleId": "samurai-fantasy-flight-2015-en",
+    "inventoryIds": [
+      "3"
+    ],
+    "reason": "The complete setup, opening-turn and imprint pages distinguish city/village placement from regular clockwise play. Youngest is also a standalone portable criterion; equal age has no official tie-break. The inspected source belongs specifically to inventory identity 3; aliases do not authorize transfer to other identities."
+  },
+  {
+    "ruleId": "shogun-queen-2006-en",
+    "inventoryIds": [
+      "20551"
+    ],
+    "reason": "The complete setup, bidding, special-card selection and action-order context distinguishes oldest province claiming from regular Daimyo-position order. The official tied-bid shuffle is preserved. Component-dependent; excluded from the portable pool. The inspected source belongs specifically to inventory identity 20551; aliases do not authorize transfer to other identities."
+  },
+  {
+    "ruleId": "john-company-second-edition-wehrlegig-en",
+    "inventoryIds": [
+      "332686"
+    ],
+    "reason": "Sequence, first-turn London Season exception, Family action and scenario/Crown scope were jointly reviewed. Chairman is an assigned office, not a personal selection criterion. Crown play and first-edition rules remain excluded. The inspected source belongs specifically to inventory identity 332686; aliases do not authorize transfer to other identities."
+  },
+  {
+    "ruleId": "summoner-wars-second-edition-plaid-hat-en-v1-2",
+    "inventoryIds": [
+      "332800"
+    ],
+    "reason": "The linked PDF itself identifies v1.2 despite the current publisher link label. Setup selects randomly after hands and assigns 2 versus 3 magic; complete turns alternate. No newest-version claim or first-edition transfer. Random choice and component compensation exclude portable enrollment. The inspected source belongs specifically to inventory identity 332800; aliases do not authorize transfer to other identities."
+  },
+  {
+    "ruleId": "london-second-edition-osprey-en-2017",
+    "inventoryIds": [
+      "236191"
+    ],
+    "reason": "Complete setup, clockwise turn sequence, credits and endgame context reviewed. The person who set up the game starts. Endgame tie-breaks are not transferred to starting-player selection. First edition remains separate; setup-dependent, excluded from the portable pool. The inspected source belongs specifically to inventory identity 236191; aliases do not authorize transfer to other identities."
+  },
+  {
+    "ruleId": "the-game-pandasaurus-kwanchai-moriya-en",
+    "inventoryIds": [
+      "173090"
+    ],
+    "reason": "Both complete sheets reviewed for hand inspection, collective agreement and clockwise play, solo and expert context. No ranked-hand criterion, date or disagreement procedure is invented. Agreement is not a portable personal criterion. The inspected source belongs specifically to inventory identity 173090; aliases do not authorize transfer to other identities."
   }
 ]

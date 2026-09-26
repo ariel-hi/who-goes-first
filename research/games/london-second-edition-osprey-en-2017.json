@@ -1,0 +1,46 @@
+{
+  "id": "london-second-edition-osprey-en-2017",
+  "slug": "london-second-edition-osprey-en-2017",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "London: Second Edition",
+  "aliases": [
+    "London",
+    "London Second Edition",
+    "London 2nd Edition"
+  ],
+  "editionLabel": "Osprey Games English Second Edition · edition copyright 2017",
+  "firstPlayerRule": "The player who set up the game goes first. Play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During setup, each player receives £5 and six city cards.",
+    "The starting player begins their turn by drawing one city card, then chooses an action."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ospreypublishing.com/media/hgkdrmhp/london_rulebook_web.pdf",
+      "title": "London: Second Edition — English rulebook",
+      "publisher": "Osprey Games / Osprey Publishing",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        6,
+        7,
+        12,
+        11
+      ],
+      "location": "Setup and starting player on unnumbered PDF page 6; How to Play and clockwise turns on PDF page 7; publication and edition credits on PDF page 12; endgame tie context on PDF page 11",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Reopened Osprey Publishing's official Board & Card Games resources page and followed the rulebook link under London: Second Edition. A live download matched cached SHA-256 3d9a0507f453dcc20b2251a8818af0c1d16417f3e2b70e9df9a77f11b7f709db. Inspected complete rendered PDF pages 6, 7, 11 and 12 and searched the full extracted manual for starting and tie context. The final setup paragraph assigns first play to the person who set up the game; page 7 gives clockwise turns and the opening card draw. Page 11's tie breakers determine the endgame winner and do not resolve starting-player selection. Page 12 explicitly identifies first publication and this edition's copyright as 2017. The inspected pages have no printed page numbers.",
+  "uncertainty": [
+    "The reviewed rulebook gives no procedure for choosing the starter when multiple players helped set up the game.",
+    "This entry is scoped to the Osprey Second Edition rulebook; a different edition's starting instruction requires separate review."
+  ]
+}

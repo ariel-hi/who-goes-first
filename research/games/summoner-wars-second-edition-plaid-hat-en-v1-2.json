@@ -1,0 +1,49 @@
+{
+  "id": "summoner-wars-second-edition-plaid-hat-en-v1-2",
+  "slug": "summoner-wars-second-edition-plaid-hat-en-v1-2",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Summoner Wars: Second Edition",
+  "aliases": [
+    "Summoner Wars Second Edition",
+    "Summoner Wars 2nd Edition"
+  ],
+  "editionLabel": "Plaid Hat Games English Second Edition rulebook v1.2",
+  "firstPlayerRule": "Randomly choose which player goes first. The starting player begins with 2 magic, and the opponent begins with 3 magic.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Set up each player's starting cards and draw five cards before choosing the starting player and assigning starting magic.",
+    "Players alternate complete turns. After completing the five phases of a turn, draw back up to five cards before the opponent takes a turn.",
+    "The setup instruction covers both faction decks and custom decks in this rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://media.plaidhatgames.com/filer_public/7d/07/7d075572-2254-4248-bdb5-464ef4b97180/ph3600-rulebook-v1_2.pdf",
+      "title": "Summoner Wars: Second Edition — English rulebook v1.2",
+      "publisher": "Plaid Hat Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        1,
+        20
+      ],
+      "location": "Game Setup steps 3–6, printed/PDF page 5; Turn Sequence, printed/PDF page 6; version on PDF cover page 1; credits on PDF page 20",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Reopened Plaid Hat Games' official Summoner Wars page and followed its rulebook link. Its current label says v2, but the linked file is ph3600-rulebook-v1_2.pdf and its cover identifies v1.2; this record is scoped to that file. A live download matched cached SHA-256 560161fb72f4c36f3dc6e23259061ab51ce480bd6acc4dbf19575ff96cb8bb50. Inspected complete rendered PDF pages 1, 5, 6 and 20, plus searched the full extracted manual for starting and turn-order context. Setup step 6 randomly selects the starter and gives that player 2 magic versus the opponent's 3; preceding steps cover deck choice, starting cards and five-card hands. Page 6 specifies alternating complete turns and refilling to five. Page 20 has a 2021 copyright, which is not treated as a v1.2 release date.",
+  "uncertainty": [
+    "The reviewed manual does not prescribe the random selection method or a separate starting-player tie procedure.",
+    "The publisher's link label and the PDF version differ. This draft makes no claim about the newest rulebook or other editions."
+  ]
+}

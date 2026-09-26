@@ -1,0 +1,58 @@
+{
+  "id": "shogun-queen-2006-en",
+  "slug": "shogun-queen-2006-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "91f0f7fb73e1c96f1c7d996b5caf0a0ecfdb1f06b5590e596ab539ebd5142cbf",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Shogun (Dirk Henn, 2006)",
+  "aliases": [],
+  "editionLabel": "Queen base game · 2006 (English)",
+  "firstPlayerRule": "Regular actions start with the player whose Daimyo card occupies the earliest turn-order position. Players establish those positions by choosing special cards after bidding and replacing them with their Daimyo cards.",
+  "officialTieBreak": "For equal bids, shuffle the tied players' Daimyo cards and reveal them one at a time to determine their order of choosing special cards.",
+  "houseFallback": null,
+  "clarifications": [
+    "The oldest player begins claiming starting provinces during setup, followed by the other players in turn.",
+    "The highest bidder chooses a special card first. Province-card bids choose before zero-chest bids, and players who bid no card choose last.",
+    "Special-card positions determine action order, with empty positions ignored in games with three or four players. Each action is carried out by all players in that order before the next action begins.",
+    "Players plan their individual actions and bids simultaneously before turn order is determined.",
+    "Players may skip province claiming and use the supplement's predetermined starting setup. That beginner option is for the sun side of the board."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/shogun_en.pdf",
+      "title": "Shogun English rules and supplement (2006 base game)",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "9",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "12",
+        "unnumbered supplement: Predetermined Starting Setup"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13
+      ],
+      "location": "Determine Turn Order and Carry Out Actions (page 9); Preparation / Claiming Starting Provinces (pages 4-5); Playing the Game / special-card positions / planning and bidding (pages 6-8); 2006 imprint (page 12); Predetermined Starting Setup (PDF page 13)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The complete setup, planning, bidding, turn-order and action-order context on PDF pages 4-9 was read and visually inspected from Poppler renders. PDF pages 12-13 were inspected for the 2006 English imprint and the optional sun-side predetermined setup. Page 9's examples distinguish choosing a card first from occupying the first action position. Its tied-bid procedure determines card-selection order. The official source was reopened and refetched on 2026-09-26; it matches the cached fourteen-page base-game PDF at research/source-files/pending-eight-discovery/shogun-base.pdf: SHA-256 3fd95cff5cdd33207eed65432746104575a8854bbf5a2292b8f4de6787a50631. Accepted identity reference: Q2279754 / BGG 20551. This draft adds no approval or portable-pool enrollment. Editorial review 2026-09-26: The complete setup, bidding, special-card selection and action-order context distinguishes oldest province claiming from regular Daimyo-position order. The official tied-bid shuffle is preserved. Component-dependent; excluded from the portable pool. Codex independently inspected the cited source context and all public fields. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is approved for the catalog; earlier draft-only statements describe intake history. No deployment approval.",
+  "uncertainty": [
+    "The province-claiming passage does not specify a tie-break between equally old players or a direction beyond proceeding in turn.",
+    "The tie-break above applies to bids for special cards. This answer uses the 2006 base-game manual and does not cover Big Box expansion setup."
+  ]
+}
