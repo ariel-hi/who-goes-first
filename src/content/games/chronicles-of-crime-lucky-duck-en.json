@@ -1,0 +1,43 @@
+{
+  "id": "chronicles-of-crime-lucky-duck-en",
+  "slug": "chronicles-of-crime-lucky-duck-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "213817a0358ebc0732bc2d3944d510bbafee58e7c3ceff7c252c1972dcd5455d",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Chronicles of Crime",
+  "aliases": [],
+  "editionLabel": "Lucky Duck English base game",
+  "firstPlayerRule": "There is no fixed first-player turn. Launch a scenario in the app, then discuss as a group which card to scan.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During a scene search, one player looks at the scene and describes it while the others find matching Evidence Category cards. After the timer ends, the group may let another player search or stop."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/c7/75/a6-chronicles-of-crime-rulebook.pdf",
+      "title": "Chronicles of Crime — English rulebook",
+      "publisher": "Lucky Duck Games",
+      "printedPages": [
+        "3",
+        "4",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        6
+      ],
+      "location": "Game objective; Start the game; How to play; Search for evidence",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Lucky Duck current base-game page offers only a Polish manual. Two search-indexed publisher CDN PDFs proved to be Redview and2400 on visual inspection and were rejected. Reviewed the actual base English manual from1jour1jeu: London characters and board, printed3 shared objective,4 group scan choices,6 rotating optional scene searches. No individual starter inferred. Source custody: research/source-files/popular-sep26-06/crime.pdf; SHA-256 5ec93758d83371eab3374d52e31ea465fef87dbfb69819f9930d7bcce551e3cf. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The publisher-authored base-game English rulebook is preserved by a third-party rules archive. It does not prescribe who operates the app or searches a scene first."
+  ]
+}
