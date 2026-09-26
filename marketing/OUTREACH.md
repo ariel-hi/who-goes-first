@@ -34,6 +34,12 @@ Publish from the site's own account when available. Use one post at a time, with
 
 Do not claim universal rule coverage, guaranteed search placement, certified randomness, or an official publisher relationship. The first two posts can work independently; space them so replies can be answered rather than publishing a batch without engagement.
 
+## Returning visitors
+
+The production picker offers home-screen shortcut metadata with the site's original dice mark in 180, 192 and 512 pixel PNG icons. Its manifest launches the clean homepage in a browser. Only the homepage links that manifest, so saving an individual rule page keeps ordinary page-bookmark behavior. About explains how to bookmark the picker or look for **Add to Home Screen** in a phone browser's share/menu options, and says an internet connection is needed to reopen it.
+
+Rebuild the icons with `node marketing/create-home-icons.mjs`. This adds no install prompt, service worker, notifications or new analytics event. A manifest is browser metadata, not evidence that someone saved or reopened the site. Physical iOS and Android installation remain outside the desktop release checks. See [Apple's home-screen icon guidance](https://developer.apple.com/videos/play/wwdc2022/10048/) and the [web app manifest reference](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest).
+
 ## What to measure
 
 In GA4, compare consented sessions and engaged visits for the fixed `pinterest / organic_social` and `bluesky / organic_social` campaigns. Also use Pinterest's outbound clicks and Bluesky's own engagement counts, since GA4 does not count visitors who decline analytics. Search Console can show clicks, queries, and indexing for the picker, guide, directory, and sourced rule pages. Review at least a week of data before changing copy or spending money; this site has no demonstrated paid acquisition return yet.

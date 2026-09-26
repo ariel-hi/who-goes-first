@@ -21,7 +21,7 @@ const hashes = new Set<string>();
 for (const path of files) {
   const file = relative(output, path).replaceAll('\\', '/');
   if (/(^|\/)(research|dev|node_modules)(\/|$)|\.map$/.test(file)) throw new Error(`Private path leaked: ${file}`);
-  if (!/\.(html|js|css|json|xml|txt|svg)$/.test(file)) continue;
+  if (!/\.(html|js|css|json|xml|txt|svg|webmanifest)$/.test(file)) continue;
   const text = readFileSync(path, 'utf8');
   checkEditorial(file, text);
   if (file.endsWith('.html')) {
@@ -53,7 +53,7 @@ for (const path of files.filter(path => /[\\/]games[\\/].+[\\/]index.html$/.test
   if (/astro-island|component-url|BalloonRise/.test(html)) throw new Error('Static answer eagerly loads picker');
 }
 const googleSources = settings.production ? ' https://www.googletagmanager.com https://*.google-analytics.com' : '';
-const csp = `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
+const csp = `default-src 'none'; manifest-src 'self'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
 if (`  Content-Security-Policy: ${csp}`.length > 2000) throw new Error('CSP exceeds Cloudflare Pages header line limit; split policies by route before expanding the catalog.');
-writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/indexnow-key.txt\n  X-Robots-Tag: noindex\n\n/downloads/who-goes-first-game-night-cards.pdf\n  Link: <${settings.url}/printable-game-night/>; rel="canonical"\n\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
+writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/site.webmanifest\n  Content-Type: application/manifest+json\n  X-Robots-Tag: noindex\n\n/indexnow-key.txt\n  X-Robots-Tag: noindex\n\n/downloads/who-goes-first-game-night-cards.pdf\n  Link: <${settings.url}/printable-game-night/>; rel="canonical"\n\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 console.log(`Build audit passed (${settings.production ? 'production' : 'preview'}): private-content exclusion, canonicals, indexing, headers, static answer isolation.\nConservative gzip budgets: initial JS ${initialJs} B; Balloon ${optionalJs} B; basic home ${aboveFold} B.`);
