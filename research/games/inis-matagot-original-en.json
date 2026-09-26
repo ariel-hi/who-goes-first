@@ -1,0 +1,46 @@
+{
+  "id": "inis-matagot-original-en",
+  "slug": "inis-matagot-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Inis",
+  "aliases": [],
+  "editionLabel": "Matagot English original edition",
+  "firstPlayerRule": "Give the Brenn marker to a random player for setup. In the Season phase, the current Brenn plays the first card, which must be a Season card.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The setup Brenn chooses the Capital and flips the Flock of Crows token. Initial clan placement begins with the Brenn and follows the token’s direction.",
+    "Before each Season, the Assembly gives the Brenn marker to the Capital’s chieftain, if there is one; otherwise the current Brenn keeps it. The Assembly also flips the Flock of Crows token to set turn direction."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/46/41/fc-inis-rulebook.pdf",
+      "title": "Inis — English rulebook",
+      "publisher": "Matagot",
+      "printedPages": [
+        "5",
+        "6",
+        "7",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        7,
+        11
+      ],
+      "location": "Setup; Assembly — Assign Brenn; Season; credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Archive preserves Matagot original English manual, Christian Martinez credits at11. Rendered5 random setup Brenn,6 reassignment to Capital chieftain and direction flip,7 mandatory first Season card. Do not imply the random setup holder necessarily remains Brenn after the first Assembly. Source custody: research/source-files/popular-sep26-08/inis.pdf; SHA-256 d9d61fbd41af15b4bf907c3fc3a78bbbae878168b62e85e892ee6058e9b8ff46. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The original Matagot-authored English manual is preserved by a rulebook archive. A direct English download was not available from the reviewed publisher product page."
+  ]
+}
