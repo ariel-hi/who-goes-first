@@ -148,10 +148,10 @@
   @keyframes turn-wheel { to { transform:rotate(var(--turn)); } }
   @keyframes keep-label-upright { to { transform:rotate(calc(-1 * var(--turn))); } }
   @keyframes pin-tick { 0%,100% { transform:none; } 50% { transform:rotate(6deg); } }
-  .table-reveal { display:grid; grid-template-columns:repeat(auto-fit,minmax(80px,1fr)); gap:16px 10px; padding:16px 0 8px; }
-  .reveal-player { min-width:0; display:flex; flex-direction:column; align-items:center; gap:8px; font-size:12px; text-align:center; }
-  .reveal-player bdi { overflow-wrap:anywhere; width:100%; }
-  .draw-card { width:70px; height:98px; perspective:650px; position:relative; color:var(--ink); animation:deal-card .52s var(--deal-delay) cubic-bezier(.2,.7,.2,1) both; }
+  .table-reveal, .loading-table { display:grid; grid-template-columns:repeat(auto-fit,minmax(80px,1fr)); gap:16px 10px; padding:16px 0 8px; }
+  .reveal-player, .loading-player { min-width:0; display:flex; flex-direction:column; align-items:center; gap:8px; font-size:12px; text-align:center; }
+  .reveal-player bdi, .loading-player bdi { overflow-wrap:anywhere; width:100%; }
+  .draw-card, .loading-piece[data-method="cards"] { width:70px; height:98px; perspective:650px; position:relative; color:var(--ink); animation:deal-card .52s var(--deal-delay) cubic-bezier(.2,.7,.2,1) both; }
   .card-flipper { width:100%; height:100%; position:relative; transform-style:preserve-3d; animation:flip-card var(--flip-duration) var(--flip-delay) cubic-bezier(.35,.05,.3,1) both; }
   .card-face { position:absolute; inset:0; display:grid; place-items:center; border:1px solid #d4cbd5; border-radius:8px; backface-visibility:hidden; -webkit-backface-visibility:hidden; box-shadow:0 2px 5px #39343b14; }
   .card-back { background:var(--piece); }
@@ -163,15 +163,15 @@
   .reveal-chosen .card-result { color:var(--green); }
   @keyframes flip-card { from { transform:rotateY(0deg); } to { transform:rotateY(180deg); } }
   @keyframes deal-card { 0% { transform:translateY(var(--deal-entry,-18px)) rotate(-6deg) scale(.94); opacity:.65; } 68% { transform:translateY(3px) rotate(2deg) scale(1.02); opacity:1; } 100% { transform:none; opacity:1; } }
-  .tower-reveal { grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); }
-  .block-stack { height:114px; width:110px; position:relative; transform-origin:50% 100%; animation:stack-wobble .45s .57s ease-in-out both; }
+  .tower-reveal, .loading-table[data-method="tower"] { grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); }
+  .block-stack, .loading-piece[data-method="tower"] { height:114px; width:110px; position:relative; transform-origin:50% 100%; animation:stack-wobble .45s .57s ease-in-out both; }
   .block-stack i { display:block; position:absolute; bottom:calc(var(--block) * 19px + 6px); left:25px; width:60px; height:16px; animation:block-rise .3s ease-in-out both; animation-delay:calc(var(--block) * 100ms); }
   .block-stack i span { display:block; height:100%; background:var(--piece); border:1px solid #62506f30; border-radius:4px; transform:rotate(calc((var(--block) - 2) * 1deg)); }
   .reveal-player:not(.reveal-chosen) .block-stack i:nth-child(n+3) span { animation:fall-block var(--fall-duration) var(--fall-delay) cubic-bezier(.28,.12,.5,1) forwards; }
   @keyframes block-rise { 0%,100% { transform:none; } 50% { transform:translateY(-7px); } }
   @keyframes stack-wobble { 0%,100% { transform:none; } 35% { transform:rotate(-2deg); } 70% { transform:rotate(2deg); } }
   @keyframes fall-block { 35% { transform:translate(var(--fall-mid-x),var(--fall-mid-y)) rotate(var(--fall-mid-angle)); } to { transform:translate(var(--fall-x),var(--fall-y)) rotate(var(--fall-angle)); } }
-  .match-draw { height:124px; width:80px; position:relative; overflow:hidden; }
+  .match-draw, .loading-piece[data-method="straws"] { height:124px; width:80px; position:relative; overflow:hidden; }
   .matchstick { position:absolute; top:8px; left:31px; width:18px; height:104px; transform-origin:50% 12px; animation:lift-match .8s calc(1.18s + var(--match-delay)) both; }
   .match-wood { position:absolute; top:16px; bottom:0; left:4px; width:10px; border:1px solid #bc985f; border-radius:0 0 2px 2px; background:linear-gradient(90deg,#d8b783,#f2d7a6 35%,#dec18d 60%,#f0d19b 85%,#c9a66c); }
   .match-head { position:absolute; top:0; left:0; width:18px; height:24px; border:1px solid #39343b55; border-radius:48% 48% 40% 43%; background:radial-gradient(ellipse at 32% 25%,#ffffff70,transparent 45%),linear-gradient(0deg,#39343b30,transparent 65%),var(--piece); box-shadow:inset -2px -2px 2px #39343b18; }
@@ -181,8 +181,8 @@
   .match-cover-strike { position:absolute; top:16px; left:0; right:0; height:20px; background:repeating-linear-gradient(45deg,#8d6b50 0 2px,#a48162 2px 4px); border-block:1px solid #765b45; }
   @keyframes uncover-match { to { transform:translateY(100%); } }
   @keyframes lift-match { from { transform:none; } 55% { transform:translateY(-7px) rotate(-3deg); } to { transform:rotate(var(--match-tilt)); } }
-  .dice-pair { height:114px; display:flex; align-items:center; gap:4px; }
-  .die { display:block; position:relative; width:36px; height:36px; border:1px solid #a89aab; border-radius:7px; background:var(--piece); box-shadow:0 3px 0 #62506f24; animation:roll-die 1.65s var(--dice-delay) ease-in-out both; }
+  .dice-pair, .loading-piece[data-method="dice"] { height:114px; display:flex; align-items:center; gap:4px; }
+  .die, .loading-die { display:block; position:relative; width:36px; height:36px; border:1px solid #a89aab; border-radius:7px; background:var(--piece); box-shadow:0 3px 0 #62506f24; animation:roll-die 1.65s var(--dice-delay) ease-in-out both; }
   .die:nth-child(2) { animation-direction:reverse; animation-delay:calc(var(--dice-delay) + 90ms); }
   .die svg { width:100%; fill:#39343b; opacity:0; animation:show-pips .18s calc(1.65s + var(--dice-delay)) forwards; }
   .die:nth-child(2) svg { animation-delay:calc(1.74s + var(--dice-delay)); }
@@ -191,7 +191,7 @@
   @keyframes roll-die { 0%,100% { transform:none; } 18% { transform:translateY(-18px) rotate(105deg); } 42% { transform:translateY(1px) rotate(-75deg); } 66% { transform:translateY(-10px) rotate(30deg); } 84% { transform:translateY(0) rotate(-11deg); } 92% { transform:translateY(-3px) rotate(5deg); } }
   @keyframes show-pips { to { opacity:1; } }
   @keyframes hide-placeholder { to { opacity:0; } }
-  .coin-toss { width:86px; height:112px; position:relative; perspective:540px; }
+  .coin-toss, .loading-piece[data-method="coin"] { width:86px; height:112px; position:relative; perspective:540px; }
   .coin-shadow { position:absolute; left:17px; bottom:9px; width:52px; height:12px; border-radius:50%; background:#4f3e4f3d; opacity:.55; filter:blur(4px); animation:coin-shadow var(--coin-duration) var(--coin-delay) ease-in-out both; }
   .coin-flight { position:absolute; top:22px; left:9px; width:68px; height:68px; transform-style:preserve-3d; animation:coin-flight var(--coin-duration) var(--coin-delay) ease-in-out both; }
   .coin { position:absolute; inset:0; transform-style:preserve-3d; animation:coin-flip var(--coin-duration) var(--coin-delay) cubic-bezier(.24,.62,.27,1) both; }
@@ -206,9 +206,9 @@
   @keyframes coin-flight { 0% { transform:none; } 47% { transform:translateY(var(--coin-apex)); } 88% { transform:translateY(1px); } 94% { transform:translateY(-4px); } 100% { transform:translateX(var(--coin-drift)); } }
   @keyframes coin-flip { from { transform:none; } to { transform:rotateX(var(--coin-turn)) rotateZ(var(--coin-tilt)); } }
   @keyframes coin-shadow { 0%,100% { opacity:.55; transform:scale(1); } 50% { opacity:.15; transform:scale(.55); } }
-  .shells-reveal { grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); }
-  .shells-reveal .reveal-player { border:1px solid color-mix(in srgb,var(--piece) 21%,#e8ded8); border-radius:17px; background:radial-gradient(ellipse at 50% 15%,#fffdf9 0 30%,transparent 80%),color-mix(in srgb,var(--piece) 9%,#fffdf9); padding:9px 3px 10px; }
-  .shell-scene { position:relative; width:110px; height:112px; perspective:400px; }
+  .shells-reveal, .loading-table[data-method="shells"] { grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); }
+  .shells-reveal .reveal-player, .loading-table[data-method="shells"] .loading-player { border:1px solid color-mix(in srgb,var(--piece) 21%,#e8ded8); border-radius:17px; background:radial-gradient(ellipse at 50% 15%,#fffdf9 0 30%,transparent 80%),color-mix(in srgb,var(--piece) 9%,#fffdf9); padding:9px 3px 10px; }
+  .shell-scene, .loading-piece[data-method="shells"] { position:relative; width:110px; height:112px; perspective:400px; }
   .shell-shadow { position:absolute; bottom:2px; left:18px; width:75px; height:12px; border-radius:50%; background:#54454b24; filter:blur(3px); }
   .shell-bed { position:absolute; inset:0; width:110px; height:112px; }
   .shell-bed { z-index:0; filter:drop-shadow(0 3px 2px #3c2e391f); }
@@ -219,8 +219,8 @@
   .shell-pearl { position:absolute; z-index:1; bottom:33px; left:43px; width:24px; height:24px; border:1px solid #a690a3; border-radius:50%; background:radial-gradient(circle at 30% 24%,#fff 0 16%,#f9f3fa 38%,#dbcfe1 75%,#b9a6bd); box-shadow:inset -3px -4px 5px #8d7b9a36; }
   @keyframes shell-wiggle { 0%,100% { transform:none; } 35% { transform:translateX(-3px) rotate(-4deg); } 70% { transform:translateX(2px) rotate(3deg); } }
   @keyframes shell-open { 0%,10% { transform:none; } 35% { transform:translateY(2px) rotate(2deg); } 72% { transform:translateY(-31px) rotateX(-43deg) rotate(var(--shell-tilt)); } to { transform:translateY(-26px) rotateX(-38deg) rotate(var(--shell-tilt)); } }
-  .balloon-field { padding:16px 0 8px; gap:12px; }
-  .balloon-player { position:relative; }
+  .balloon-field, .loading-balloon { padding:16px 0 8px; gap:12px; }
+  .balloon-player, .loading-balloon-player { position:relative; }
   .balloon-player>svg:first-child { animation:balloon-float var(--bob-duration) var(--bob-delay) ease-in-out infinite alternate; transform-origin:50% 95%; }
   .balloon-player svg.balloon-scraps { position:absolute; top:0; opacity:0; animation:drop-scraps .6s var(--delay) forwards; }
   .balloon-player.pop .balloon-shape { animation:pop-varied .32s var(--delay) cubic-bezier(.2,.5,.4,1) forwards; }
@@ -233,8 +233,13 @@
   @keyframes balloon-float { from { transform:translate(calc(var(--bob-x) * -.5),1px) rotate(calc(var(--bob-turn) * -.5)); } to { transform:translate(var(--bob-x),var(--bob-y)) rotate(var(--bob-turn)); } }
   @keyframes drop-scraps { from { opacity:0; transform:translate(var(--pop-x),var(--pop-y)) rotate(var(--pop-turn)); } to { opacity:1; transform:translateX(calc(var(--pop-x) * .35)) rotate(calc(var(--pop-turn) * .2)); } }
   .reveal-stage { margin:14px 0 0; padding:12px 14px; border:1px solid var(--line); border-radius:18px; background:#faf7f4; pointer-events:none; }
+  /* Hidden cells reuse real grid, slot and label layout without loading artwork. */
+  .reveal-loading.reveal-layout-loading { display:block; place-items:normal; position:relative; min-height:0; font:inherit; }
+  .reveal-layout-loading :is(.loading-table,.loading-balloon) { visibility:hidden; }
+  .reveal-layout-loading *, .reveal-layout-loading *::before, .reveal-layout-loading *::after { animation:none!important; transition:none!important; }
+  .loading-message { position:absolute; inset:0; display:grid; place-items:center; color:var(--muted); font-size:14px; }
   .picker[data-reduced=true] *, .picker[data-reduced=true] *::before, .picker[data-reduced=true] *::after { animation:none!important; transition:none!important; }
-  .reveal-stage :is(.spinner-stage,.spinner-loading,.table-reveal,.balloon-field) { margin-top:0; }
+  .reveal-stage :is(.spinner-stage,.spinner-loading,.table-reveal,.balloon-field,.loading-table,.loading-balloon) { margin-top:0; }
   .reveal-stage [data-preview=true] * { animation:none!important; }
   .reveal-stage [data-preview=true] .die svg { opacity:1; }
   .reveal-stage [data-preview=true] .die::after { display:none; }
@@ -320,7 +325,7 @@
     .directory-alphabet { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:thin; }
     .directory-alphabet a { flex:none; min-width:38px; }
     .directory-alphabet a:focus-visible { outline-offset:-8px; }
-    .table-reveal[data-count="4"], .balloon-field[data-count="4"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .table-reveal[data-count="4"], .balloon-field[data-count="4"], .loading-table[data-count="4"], .loading-balloon[data-count="4"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .tool-page { margin-top:12px; padding:0 16px; }
     .intro { margin-bottom:20px; }
     .home-rules { padding:20px; border-radius:23px; }
@@ -356,12 +361,12 @@
     .winner-announcement:not(:empty) { position:static; }
     .winner-announcement p { margin:0; overflow-wrap:anywhere; }
     /* Keep every short-name seat in view for a twelve-player reveal. */
-    :is(.cards-reveal,.dice-reveal,.coin-reveal)[data-many=true] { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px 8px; }
-    .cards-reveal[data-many=true] .draw-card { width:60px; height:84px; --deal-entry:-10px; }
-    .dice-reveal[data-many=true] .dice-pair { height:88px; }
-    .dice-reveal[data-many=true] .die { width:32px; height:32px; }
-    .coin-reveal[data-many=true] { row-gap:16px; }
-    .coin-reveal[data-many=true] .coin-toss { width:74px; height:98px; }
+    :is(.cards-reveal,.dice-reveal,.coin-reveal)[data-many=true], .loading-table:is([data-method="cards"],[data-method="dice"],[data-method="coin"])[data-many=true] { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px 8px; }
+    .cards-reveal[data-many=true] .draw-card, .loading-table[data-method="cards"][data-many=true] .loading-piece { width:60px; height:84px; --deal-entry:-10px; }
+    .dice-reveal[data-many=true] .dice-pair, .loading-table[data-method="dice"][data-many=true] .loading-piece { height:88px; }
+    .dice-reveal[data-many=true] .die, .loading-table[data-method="dice"][data-many=true] .loading-die { width:32px; height:32px; }
+    .coin-reveal[data-many=true], .loading-table[data-method="coin"][data-many=true] { row-gap:16px; }
+    .coin-reveal[data-many=true] .coin-toss, .loading-table[data-method="coin"][data-many=true] .loading-piece { width:74px; height:98px; }
     .coin-reveal[data-many=true] .coin-flight { top:18px; left:3px; --coin-apex:-30px; }
     .coin-reveal[data-many=true] .coin-shadow { left:11px; }
   }

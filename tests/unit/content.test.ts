@@ -68,7 +68,7 @@ test('native and language-neutral identities enroll only after primary identity 
     expect(game?.name).toBe(name);
     expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
   }
-  expect(games).toHaveLength(4984);
+  expect(games).toHaveLength(4987);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '452264']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
@@ -77,7 +77,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(28);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(31);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -101,11 +101,11 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 28, hold: 260, reviewed: 35, unreviewed: 253 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(28);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(260);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(35);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(253);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 31, hold: 257, reviewed: 38, unreviewed: 250 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(31);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(257);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(38);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(250);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(7);
   for (const id of ['276182', '380619', '421606']) {
     const decision = decisions.find(item => item.bggId === id)!;
@@ -114,6 +114,15 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     expect(decision.identityReviewHistory).toHaveLength(1);
     expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision).toMatchObject({ decision: 'hold', independentRawIdEvidence: [] });
     expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision.idProvenance).toEqual(decision.idProvenance);
+  }
+  for (const [id, name] of [['274124', 'Northgard: Uncharted Lands'], ['340980', 'ImmunoWars'], ['312859', 'Townsfolk Tussle']]) {
+    const decision = review.decisions.find((item: {bggId: string}) => item.bggId === id);
+    expect(decision).toMatchObject({ decision: 'accept', reviewed: true, displayName: name, selectedTitle: {text: name, language: 'mul', source: 'label'}, idEvidenceStatus: 'wikidata-statement-only', identityCorroborationStatus: 'primary-semantic-corroboration', independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
+    expect(decision.semanticIdentityEvidence.primaryNumericHrefObserved).toBe(false);
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision: 'hold', reviewed: false, idProvenance: decision.idProvenance, selectedTitle: decision.selectedTitle });
+    expect(decision.rootIndependentReview.priorDecisionsSha256).toBe('a68386a3d07f12cdbe0ad1697ac06a09823e981814236f12c9c1667812697174');
+    expect(decision.sourceIds.every((sourceId: string) => review.sources[sourceId]?.status === 'retrieved')).toBe(true);
   }
   const ironwood = decisions.find(decision => decision.bggId === '407343')!;
   expect(ironwood).toMatchObject({ decision: 'accept', reviewed: true, idEvidenceStatus: 'primary-href-and-wikidata-statement', startingRuleApproved: false, editionRuleTransferApproved: false });

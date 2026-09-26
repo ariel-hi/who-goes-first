@@ -10,6 +10,7 @@ import { presentations, primaryModes, revealDuration, supportsGroup } from '../l
 import { createRevealPlan, playerColor, type RevealPlan } from '../lib/reveal-plan';
 import ModeIcon from './ModeIcon';
 import PlayerName from './PlayerName';
+import RevealLoading from './RevealLoading';
 
 const BalloonRise = lazy(() => import('./modes/BalloonRise'));
 const TableReveals = lazy(() => import('./modes/TableReveals'));
@@ -329,7 +330,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
         {error && <p role="alert" className="error">{error}</p>}
         {busy ? <button type="button" className="primary" disabled>Revealing…</button> : <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={pick}>{!hydrated ? 'Getting ready…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>}
         {visualMode && scene && <div ref={revealStage} className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${effectiveMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
-          <Suspense fallback={<div className={`reveal-loading${effectiveMode === 'spinner' ? ' spinner-loading' : ''}`}>One moment…</div>}>
+          <Suspense fallback={<RevealLoading mode={effectiveMode} players={scene.outcome.players} />}>
             {effectiveMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={effectiveMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
           </Suspense>
         </EffectBoundary></div>}

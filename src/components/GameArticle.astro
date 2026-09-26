@@ -17,6 +17,7 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
   <p class="rule-answer">{rule.firstPlayerRule}</p>
   {rule.tieBreakApplicable !== false && rule.officialTieBreak && <section class="rule-section opening-tie"><h2>Official tie-break or fallback</h2><p>{rule.officialTieBreak}</p></section>}
   <nav class="source-actions" aria-label="Rulebook source">{passageUrl && <a href={passageUrl} rel="noreferrer">View cited page (PDF page {firstPage})</a>}<a href={firstSource.url} rel="noreferrer">{sourceIsPdf ? 'Read the publisher’s rulebook' : 'Read the source rules'}</a></nav>
+  {!rule.houseFallback && <p class="small muted">If your rules call for a random choice, <a class="inline-link" href="/">use the player picker</a>.</p>}
   {rule.clarifications.length > 0 && <section class="rule-section"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
   {rule.interpretation && <section class="rule-section"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   {rule.tieBreakApplicable !== false && !rule.officialTieBreak && <section class="rule-section"><h2>If there’s a tie</h2><p>{rule.houseFallback ? 'The rulebook doesn’t say.' : <>The rulebook doesn’t say. If you need a tie-break, <a href="/">pick a player at random</a>.</>}</p></section>}
