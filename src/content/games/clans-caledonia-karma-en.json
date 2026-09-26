@@ -1,0 +1,38 @@
+{
+  "id": "clans-caledonia-karma-en",
+  "slug": "clans-caledonia-karma-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "87f0cb318eed3602747bea2a9a67aea41fc439635c76467323714cb7a2157f26",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Clans of Caledonia",
+  "aliases": [],
+  "editionLabel": "Karma Games English base game",
+  "firstPlayerRule": "Choose the starting player at random. The first round proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Choose Clans in reverse turn order, starting with the last player. Place the first Workers in clockwise order from the starting player, then place the second Workers in reverse order.",
+    "Later rounds follow the order in which players passed."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/uc?export=download&id=142s-B0kbK45WLsG04PLhIvK0fyAhCLV-",
+      "title": "Clans of Caledonia — English rulebook",
+      "publisher": "Karma Games",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Player setup — Turn order; Clans; Placing the first workers",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current publisher clans-rules page links English GoogleDrive142s-B0kbK45WLsG04PLhIvK0fyAhCLV-. Downloaded directly from that public file, rendered3fullturnorder/setup. Random first round is distinct from reverse Clanchoice and worker snake order. Source custody: research/source-files/popular-sep26-09/clans.pdf; SHA-256 bad3d52d7d7eb0c278a4373b386e8912031909c9a45369fb7fe51618a79ada05. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
