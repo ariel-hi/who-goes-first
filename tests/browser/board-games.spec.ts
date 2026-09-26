@@ -82,15 +82,18 @@ test('board games are browsable without search and searchable on demand', async 
   await expect(page.locator('[data-empty]').getByRole('link', { name: 'pick a starting player' })).toHaveAttribute('href', '/');
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Azul');
   await expect(page.locator('[data-results] li').first()).toContainText('Azul');
-  await page.getByRole('searchbox', { name: 'Search board games' }).fill('Acquire');
+  // Acquire now has a checked rule; keep this flow on a verified pending identity.
+  expect(games.find(game => game.routeKey === '452264')?.rules).toEqual([]);
+  await page.getByRole('searchbox', { name: 'Search board games' }).fill('Brass: Pittsburgh');
   await page.getByRole('button', { name: 'Awaiting a rule' }).click();
-  await expect(page.locator('[data-results] li').first()).toHaveAttribute('data-has-rule', 'false');
-  const pending = page.locator('[data-results] li').first();
+  await expect(page.locator('[data-results] li')).toHaveCount(1);
+  const pending = page.locator('[data-results] li[data-id="452264"]');
+  await expect(pending).toHaveAttribute('data-has-rule', 'false');
   await pending.locator('summary').focus();
   await page.keyboard.press('Enter');
   await expect(pending.getByRole('link', { name: 'Pick a player', exact: true })).toHaveAttribute('href', '/');
-  await expect(pending.getByRole('link', { name: /View game on BoardGameGeek/ })).toHaveAttribute('href', /boardgamegeek\.com\/boardgame\/\d+/);
-  await expect(page).toHaveURL(/\/board-games\/#q=Acquire&filter=pending$/);
+  await expect(pending.getByRole('link', { name: /View game on BoardGameGeek/ })).toHaveAttribute('href', 'https://boardgamegeek.com/boardgame/452264');
+  await expect(page).toHaveURL(/\/board-games\/#q=Brass%3A%20Pittsburgh&filter=pending$/);
   await page.getByRole('button', { name: 'All matches' }).click();
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Backgammon');
   await expect(page.locator('[data-results] li[data-id="2397"]')).toContainText('Backgammon');
