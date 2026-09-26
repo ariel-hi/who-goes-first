@@ -1,0 +1,44 @@
+{
+  "id": "time-stories-space-cowboys-en",
+  "slug": "time-stories-space-cowboys-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "T.I.M.E Stories",
+  "aliases": [],
+  "editionLabel": "Space Cowboys English base game",
+  "firstPlayerRule": "Choose a player at random to read the Base’s card A aloud. Each player then reads one of the following cards in turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During play, players choose the order in which they resolve actions for each temporal unit; there is no fixed sequence of individual turns.",
+    "When changing locations, pass the Time Captain die to the player on the current captain’s left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/59baa2_9bb13aab86d249c6a886f1baa61cdba5.pdf",
+      "title": "T.I.M.E Stories — English rulebook",
+      "publisher": "Space Cowboys",
+      "printedPages": [
+        "9",
+        "10",
+        "15"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        10,
+        15
+      ],
+      "location": "And you’re ready to start, step 5; All for 1 TU; Change the Time Captain",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher-linked English base-game manual. Visually inspected page 15 step 5: random first Base reader, then each player reads a following card. PDF extraction includes hidden French text that instead names a first Time Captain; that hidden text was not used as the English rule. Visible pages 9 and 10 establish flexible action order and captain rotation. Source custody: research/source-files/popular-sep26-02/time.pdf; SHA-256 14341ff680887525a330e8249eb62ce7f0a914d9a9a67ad4f955ca780809c3b6. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The visible English setup names the first reader but does not explicitly identify that reader as the first Time Captain."
+  ]
+}
