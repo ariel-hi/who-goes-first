@@ -52,7 +52,7 @@ for (const width of [320, 1280]) {
         await page.goto(`${route}#q=${encodeURIComponent(query)}`);
         await expect(root.getByRole('searchbox')).toHaveValue(query);
         await expect(links).toHaveCount(1);
-        await expect(links).toHaveText(name);
+        await expect(home ? links.locator('span').first() : links).toHaveText(name);
         await expect(links).toHaveAttribute('href', `/games/${slug}/`);
         await links.click();
         await expect(page.getByRole('heading', {level:1})).toHaveText(`Who goes first in ${name}?`);

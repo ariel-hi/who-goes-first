@@ -127,7 +127,7 @@ test('native and language-neutral identities enroll only after primary identity 
   for (const [id, name] of [['325853', 'Lama Dice'], ['394889', 'Cabanga!'], ['447384', 'Meister Makatsu']] as const) {
     expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
   }
-  expect(games).toHaveLength(4999);
+  expect(games).toHaveLength(5006);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
@@ -449,9 +449,9 @@ test('the three manual approvals bind exact revisions and remain outside the por
 test('CrowD shared-folder manual approvals bind exact revisions and four independent edition assignments', () => {
   const games = getBoardGames();
   const catalog = getCatalog();
-  expect(catalog).toHaveLength(893);
-  expect(games.filter(game => game.rules.length > 0)).toHaveLength(887);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4112);
+  expect(catalog).toHaveLength(957);
+  expect(games.filter(game => game.rules.length > 0)).toHaveLength(947);
+  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4059);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],

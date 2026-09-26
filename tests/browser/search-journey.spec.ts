@@ -9,14 +9,14 @@ test('repeated rule searches retain ranked links and clearing restores the compl
   expect(original.length).toBeGreaterThan(800);
   await search.fill('TTR');
   const matches = rules.locator('.game-list li:visible a');
-  await expect(matches).toHaveCount(3);
+  await expect(matches).toHaveCount(4);
   await expect(search).toBeFocused();
   const aliases = await matches.evaluateAll(links => links.map(link => link.getAttribute('href')));
   await search.fill('Azl');
   await expect(matches).toHaveCount(1);
   await expect(matches.first()).toHaveAttribute('href', '/games/azul-2018-en/');
   await search.fill('TTR');
-  await expect(matches).toHaveCount(3);
+  await expect(matches).toHaveCount(4);
   expect(await matches.evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(aliases);
   await search.fill('');
   await expect(rules.locator('.game-list li:visible')).toHaveCount(original.length);

@@ -189,7 +189,10 @@ export function getBoardGameInventory() {
   if (decisions.size !== review.decisions.length) throw new Error('Duplicate Wikidata identity review');
   for (const decision of review.decisions) {
     const game = snapshotById.get(decision.bggId);
-    if (!game || ids.has(decision.bggId) || decision.snapshotName !== game.name || !game.wikidataItems.some(item => item.id === decision.wikidataId)) throw new Error(`Invalid Wikidata review reference: ${decision.bggId}`);
+    // A later, independently sourced discovery entry can already contain this
+    // numeric identity. Retain and validate its historical snapshot review; the
+    // additions filter below ensures it still appears only once in the directory.
+    if (!game || decision.snapshotName !== game.name || !game.wikidataItems.some(item => item.id === decision.wikidataId)) throw new Error(`Invalid Wikidata review reference: ${decision.bggId}`);
     if (decision.evidence.primarySourceIds.some(id => !review.sources[id])) throw new Error(`Unknown Wikidata review source: ${decision.bggId}`);
     if (decision.decision === 'accept' && (!decision.evidence.primarySourceIds.length || !decision.evidence.wikidata.some(item => item.wikidataId === decision.wikidataId && item.bggIdClaims.some(claim => claim.value === decision.bggId)))) throw new Error(`Missing accepted identity evidence: ${decision.bggId}`);
   }

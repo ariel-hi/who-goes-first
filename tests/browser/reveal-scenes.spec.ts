@@ -328,7 +328,8 @@ test('Quick and Instant glow around the selected seat', async ({ page }) => {
   await page.goto('/'); await showAllMethods(page);
   for (const mode of ['Quick', 'Instant']) {
     await page.getByRole('radio', { name: mode, exact: true }).check();
-    await page.getByRole('button', { name: 'Pick a player' }).click();
+    await page.getByRole('button', { name: /^Pick (a player|again)$/ }).click();
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
     await expect(page.locator('.player.winner .seat-token')).toBeVisible();
     expect(await page.locator('.player.winner .seat-token').evaluate(seat => {
       const style = getComputedStyle(seat);

@@ -606,7 +606,7 @@ test('reviewed catalog, local drafts, aliases, house prompts and real 404s', asy
   await page.goto(`${DEV}/dev/review/`);
   await expect(page.getByText('Development only · Not approved for publication')).toBeVisible();
   await page.getByRole('searchbox').fill('TTR');
-  await expect(page.locator('.game-list li:visible')).toHaveCount(3);
+  await expect(page.locator('.game-list li:visible')).toHaveCount(4);
   await page.getByRole('searchbox').fill('Azl'); await expect(page.locator('.game-list li:visible')).toHaveCount(1);
   await page.getByRole('searchbox').fill('unlisted game'); await expect(page.getByText('No matching rule yet.')).toBeVisible();
   await page.getByRole('button', { name: 'Choose a question' }).click();

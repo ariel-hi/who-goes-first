@@ -30,8 +30,9 @@ for (const destination of ['dev', 'public'] as const) {
       await expect(page.locator('[data-game-directory] .game-list li:visible')).toHaveCount(initialCount);
       releaseModule();
       // Do not dispatch a second input event: startup must consume the old value.
-      await expect(page.locator('[data-game-directory] .game-list li:visible')).toHaveCount(destination === 'dev' ? 3 : 0);
-      await expect(page.locator('[data-game-directory] [data-count]')).toHaveText(destination === 'dev' ? '3 rules found' : '0 rules found');
+      // TTR finds its three editions and the new Through the Ages TTA alias as a typo match.
+      await expect(page.locator('[data-game-directory] .game-list li:visible')).toHaveCount(destination === 'dev' ? 4 : 0);
+      await expect(page.locator('[data-game-directory] [data-count]')).toHaveText(destination === 'dev' ? '4 rules found' : '0 rules found');
       await expect(input).toHaveValue(query);
       expect(new URL(page.url()).hash).toBe('#main');
       if (destination === 'public') {

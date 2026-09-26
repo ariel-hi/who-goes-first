@@ -10,11 +10,29 @@
   if (!/^ca-pub-\d{10,20}$/.test(client)) return;
   const publisher = client.slice(3);
   const measurementId = 'G-XDVR78FJXY';
-  const analyticsKey = 'wgf:analytics-choice:v1';
+  const analyticsKey = 'wgf:analytics-choice:v2';
   const regulated = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'CH'];
 
   let declined = false;
-  try { declined = window.localStorage.getItem(analyticsKey) === 'decline'; } catch { /* Browsers can block storage. */ }
+  try {
+    const choice = window.localStorage.getItem(analyticsKey) ?? window.localStorage.getItem('wgf:analytics-choice:v1');
+    declined = choice === 'decline';
+  } catch { /* Browsers can block storage. */ }
+
+  // Match the analytics-only loader: preserve fixed editorial campaign labels,
+  // and remove arbitrary query values before any Google script can inspect them.
+  const params = new window.URLSearchParams(location.search);
+  const source = params.get('utm_source');
+  const medium = params.get('utm_medium');
+  const name = params.get('utm_campaign');
+  const campaigns = new Set(['first_player_picker', 'game_rules', 'house_questions', 'choose_first_player']);
+  const campaign = ['pinterest', 'bluesky'].includes(source) && medium === 'organic_social' && campaigns.has(name)
+    ? { campaign_source: source, campaign_medium: medium, campaign_name: name }
+    : {};
+  if (location.search) {
+    try { window.history.replaceState(window.history.state, '', location.pathname + location.hash); }
+    catch { return; /* Do not load tags that could read an unfiltered query. */ }
+  }
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
@@ -23,7 +41,8 @@
   // A visitor who turned analytics off keeps it off everywhere.
   gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: declined ? 'denied' : 'granted' });
   gtag('js', new Date());
-  gtag('config', measurementId, { page_location: location.origin + location.pathname, page_title: document.title, allow_google_signals: false });
+  window[`ga-disable-${measurementId}`] = declined;
+  if (!declined) gtag('config', measurementId, { page_location: location.origin + location.pathname, page_title: document.title, allow_google_signals: false, allow_ad_personalization_signals: false, ...campaign });
 
   function load(src, crossOrigin) {
     const script = document.createElement('script');
@@ -31,7 +50,7 @@
     if (crossOrigin) script.crossOrigin = 'anonymous';
     document.head.append(script);
   }
-  load(`https://www.googletagmanager.com/gtag/js?id=${measurementId}`);
+  if (!declined) load(`https://www.googletagmanager.com/gtag/js?id=${measurementId}`);
   // The consent message runs on every page, including ad-free ones.
   load(`https://fundingchoicesmessages.google.com/i/${publisher}?ers=1`);
   (function signalGooglefcPresent() {
@@ -54,10 +73,14 @@
     }
     if (target?.closest('[data-analytics-off]')) {
       try { window.localStorage.setItem(analyticsKey, 'decline'); } catch { /* The current page still honors the choice. */ }
+      window[`ga-disable-${measurementId}`] = true;
       gtag('consent', 'update', { analytics_storage: 'denied' });
       for (const cookie of document.cookie.split(';')) {
         const name = cookie.trim().split('=')[0];
-        if (/^_ga(?:_|$)/.test(name)) document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax; Secure`;
+        if (!/^_ga(?:_|$)/.test(name)) continue;
+        for (const domain of ['', `; Domain=${location.hostname}`, `; Domain=.${location.hostname}`]) {
+          document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax; Secure${domain}`;
+        }
       }
       const status = document.querySelector('[data-analytics-status]');
       if (status) status.textContent = 'Analytics is off on this device.';

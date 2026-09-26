@@ -6,11 +6,17 @@ import { amazonSearchUrl } from '../../src/lib/affiliate';
 import { clip } from '../../src/lib/og-image';
 import { rankDemand } from '../../scripts/lib/demand';
 import { postText, ruleForDay } from '../../scripts/lib/social';
+import { ruleSchema } from '../../src/lib/content/schema';
 
 const rule = (id: string, firstPlayerRule: string, publisher = 'Fixture Games', gameName = id): PublicRule => ({
   id, slug: id, gameName, aliases: [], editionLabel: 'Fixture edition', language: 'en', firstPlayerRule, officialTieBreak: null, houseFallback: null,
   clarifications: [], interpretation: null, materiallyUpdatedAt: '2026-09-24',
   sources: [{ url: 'https://example.org/rules.pdf', title: 'Rules', publisher, printedPages: ['2'], pdfPagesOneBased: [2], location: 'Setup', checkedAt: '2026-09-24' }],
+});
+
+test('the theme hub namespace cannot be used by a rule', () => {
+  expect(ruleSchema.shape.slug.safeParse('themes').success).toBe(false);
+  expect(ruleSchema.shape.slug.safeParse('theme-park').success).toBe(true);
 });
 
 test('theme hubs match the approved instruction itself and skip thin groups', () => {

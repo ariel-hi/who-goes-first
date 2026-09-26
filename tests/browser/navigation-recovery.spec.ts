@@ -100,7 +100,7 @@ test('rules bookmarks restore Unicode and keep ordinary anchors separate', async
   await page.goto('/games/#q=%00');
   await expect(search).toHaveValue('');
   await expect(directory.locator('[data-empty]')).toBeHidden();
-  await expect(directory.locator('.game-list li:visible')).toHaveCount(887);
+  await expect(directory.locator('.game-list li:visible')).toHaveCount(await directory.locator('.game-list li').count());
 });
 
 test('blocked rules history writes leave native search and clearing usable', async ({ page }) => {
@@ -114,6 +114,6 @@ test('blocked rules history writes leave native search and clearing usable', asy
   await expect(search).toBeFocused();
   await expect(directory.locator('.game-list li:visible')).toHaveCount(3);
   await search.fill('');
-  await expect(directory.locator('.game-list li:visible')).toHaveCount(887);
+  await expect(directory.locator('.game-list li:visible')).toHaveCount(await directory.locator('.game-list li').count());
   expect(errors).toEqual([]);
 });

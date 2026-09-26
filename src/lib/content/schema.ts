@@ -11,6 +11,7 @@ const approval = {
 const identity = { id: nonempty.regex(/^[a-z0-9-]+$/), slug: nonempty.regex(/^[a-z0-9-]+$/), language: z.literal('en') };
 export const ruleSchema = z.object({
   ...identity, ...approval,
+  slug: identity.slug.refine(value => value !== 'themes', 'The rule slug themes is reserved for theme hubs'),
   gameName: nonempty, aliases: z.array(nonempty), editionLabel: nonempty,
   firstPlayerRule: nonempty, officialTieBreak: nonempty.nullable(), houseFallback: nonempty.nullable(),
   tieBreakApplicable: z.boolean().optional(),

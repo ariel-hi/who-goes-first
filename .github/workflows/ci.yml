@@ -9,7 +9,9 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # The serial three-browser suite also mutates live content fixtures; allow
+    # the expanded catalog and release matrix to finish on cold CI runners.
+    timeout-minutes: 60
     env:
       ASTRO_TELEMETRY_DISABLED: '1'
     steps:

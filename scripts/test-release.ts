@@ -21,7 +21,7 @@ const origin = 'https://who-goes-first.release-check.net';
 const releaseDetails = { CONTACT_EMAIL: 'owner@release-check.net', PRIVACY_HOST_NAME: 'Fixture Host', PRIVACY_LOGGING_POLICY: 'Fixture access logs are deleted after 30 days.' };
 function build(name: string, extra: Record<string, string>) {
   const out = join(fixtureRoot, name);
-  const env = { ...process.env, ASTRO_TELEMETRY_DISABLED: '1', DEPLOY_CONTEXT: 'preview', SITE_URL: origin, BUILD_OUT_DIR: out, ...extra };
+  const env = { ...process.env, ADSENSE_CLIENT: '', AMAZON_ASSOCIATES_TAG: '', TIP_JAR_URL: '', ASTRO_TELEMETRY_DISABLED: '1', DEPLOY_CONTEXT: 'preview', SITE_URL: origin, BUILD_OUT_DIR: out, ...extra };
   const result = spawnSync(node, [astro, 'build'], { cwd: fixtureRoot, env, encoding: 'utf8' });
   if (result.status !== 0) throw new Error(result.stdout + result.stderr);
   const audit = spawnSync(node, [tsx, 'scripts/audit-build.ts'], { cwd: fixtureRoot, env, encoding: 'utf8' });
@@ -34,6 +34,8 @@ assert.match(readFileSync(join(preview, 'index.html'), 'utf8'), /content="noinde
 assert.doesNotMatch(readFileSync(join(preview, 'sitemap.xml'), 'utf8'), /<loc>/);
 assert.match(readFileSync(join(preview, '_headers'), 'utf8'), /X-Robots-Tag: noindex/);
 const production = build('production-empty', { DEPLOY_CONTEXT: 'production', ...releaseDetails });
+assert.equal(existsSync(join(production, 'ads.txt')), false);
+assert.doesNotMatch(readFileSync(join(production, '_headers'), 'utf8'), /googlesyndication|strict-origin-when-cross-origin/);
 assert.match(readFileSync(join(production, 'index.html'), 'utf8'), /content="index, follow"/);
 assert.match(readFileSync(join(production, 'games/index.html'), 'utf8'), /content="noindex, follow"/);
 assert.doesNotMatch(readFileSync(join(production, 'sitemap.xml'), 'utf8'), /\/games\/|\/house-rules\/|\/dev\//);
@@ -79,6 +81,29 @@ assert.match(readFileSync(join(populated, 'sitemap.xml'), 'utf8'), /\/games\/syn
 assert.match(readFileSync(join(populated, 'sitemap.xml'), 'utf8'), /\/house-rules\//);
 assert.match(readFileSync(join(populated, 'house-rules/index.html'), 'utf8'), /Which fictional test participant volunteers/);
 assert.doesNotMatch(readFileSync(join(populated, 'house-rules/index.html'), 'utf8'), /PRIVATE_PROMPT_CANARY/);
+const monetized = build('production-growth-fixtures', {
+  DEPLOY_CONTEXT: 'production', ...releaseDetails,
+  ADSENSE_CLIENT: 'ca-pub-1234567890123456', AMAZON_ASSOCIATES_TAG: 'fixture-20', TIP_JAR_URL: 'https://ko-fi.com/fixture',
+});
+assert.equal(readFileSync(join(monetized, 'ads.txt'), 'utf8'), 'google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0\n');
+const adHeaders = readFileSync(join(monetized, '_headers'), 'utf8');
+assert.match(adHeaders, /Referrer-Policy: strict-origin-when-cross-origin/);
+assert.match(adHeaders, /https:\/\/pagead2\.googlesyndication\.com/);
+assert.match(adHeaders, /manifest-src 'self'/);
+for (const file of ['index.html', '404.html', ...['balloon', 'spinner', 'cards', 'towers', 'straws', 'dice', 'coin', 'shells'].map(mode => `methods/${mode}/index.html`)]) {
+  const html = readFileSync(join(monetized, file), 'utf8');
+  assert.match(html, /src="\/google-tags\.js"[^>]*data-ads="off"/);
+  assert.doesNotMatch(html, /data-ads="on"|src="\/analytics-consent\.js"|data-analytics-consent/);
+}
+const growthAnswer = readFileSync(join(monetized, 'games/synthetic-fixture/index.html'), 'utf8');
+assert.match(growthAnswer, /data-ads="on"/);
+assert.match(growthAnswer, /\/og\/synthetic-fixture\.png/);
+assert.match(growthAnswer, /href="\/publishers\/test-fixture\/"/);
+assert.match(growthAnswer, /rel="sponsored nofollow noopener"/);
+assert.match(growthAnswer, /Support the site/);
+assert.match(growthAnswer, /Privacy choices/);
+assert.doesNotMatch(growthAnswer.match(/<p class="rule-answer">([^]*?)<\/p>/)![1]!, /<a\b/);
+assert.match(readFileSync(join(monetized, 'sitemap.xml'), 'utf8'), /\/publishers\/test-fixture\//);
 const disabled = build('balloon-disabled', { DISABLE_BALLOON: 'true' });
 assert.doesNotMatch(readFileSync(join(disabled, 'index.html'), 'utf8'), /href="\/methods\/balloon\/"|value="balloon"/);
 const disabledBalloon = readFileSync(join(disabled, 'methods/balloon/index.html'), 'utf8');

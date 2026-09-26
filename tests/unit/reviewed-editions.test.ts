@@ -3,6 +3,19 @@ import { getBoardGames } from '../../src/lib/content/board-games';
 import { getCatalog } from '../../src/lib/content/catalog';
 import { randomRuleEligible } from '../../src/lib/content/random-rules';
 
+test('merged discovery entries stay unique and broad aliases do not cross edition identities', () => {
+  const games = getBoardGames();
+  expect(games.filter(game => game.bggId === '171')).toHaveLength(1);
+  for (const [ruleId, id] of [
+    ['agricola-revised-edition-lookout-en', '200680'],
+    ['agricola-zman-original-en', '31260'],
+    ['android-netrunner-ffg-2012-en', '124742'],
+    ['mage-knight-wizkids-en', '96848'],
+  ]) {
+    expect(games.filter(game => game.rules.some(rule => rule.id === ruleId)).map(game => game.bggId)).toEqual([id]);
+  }
+});
+
 test('reviewed editions keep their starting rules on the correct identities', () => {
   const games = getBoardGames();
   const reviewed = [

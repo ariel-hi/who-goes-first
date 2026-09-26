@@ -1,6 +1,6 @@
 # Content review queue
 
-**Owner-authorized assistant review: 893 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 957 game rules approved for the catalog; 370 eligible for the random mix. Public house prompts: 60.**
 
 Spectacular and Yami add two exact reviewed English summaries of Russian manuals. Root and an independent reviewer read all20 pages and retained simultaneous/coordinator/conditional board order for Spectacular, and the human-only initial choice, clockwise first trick, later Automa lead and training scope for Yami. All891 preceding rules,42 preceding overrides and native decisions remain unchanged. The directory has4,995 identities,887 sourced and4,108 pending. Both records stay outside the portable mix. Validated native names now also reach existing checked editions through home and public library search; approved record aliases and rule assignments remain separate. See `research/coverage/sep26-two-manual-rule-search-progress.md`.
 

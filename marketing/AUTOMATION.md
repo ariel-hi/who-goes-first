@@ -10,6 +10,8 @@ If nothing changed and the weekly review is not due, stop. Avoid broad browsing,
 
 ## Weekly review
 
+Start with `research/demand/search-console.json` when the Monday growth workflow has produced it. Research `missingRules` in ranked order before other inventory games; verify names in `unmatchedQueries` before treating them as new identities; use `lowClickPages` to improve page titles and descriptions. Demand sets priority only. Primary sources and the exact-revision review in `CONTENT_REVIEW.md` remain required for every rule.
+
 Review available Search Console, consented GA4, channel, and actual cost/revenue evidence. Select at most one measurable experiment: a high-demand rule page, a rule-to-picker journey improvement, a useful distribution asset, or a relevant channel test. Write its hypothesis, baseline, measure, time cost, and evaluation date to `artifacts/growth/experiments.md`. Missing baselines are explicit limitations. Keep an experiment pending until it has useful evidence; do not create a replacement every week because results are unavailable.
 
 After completing a review, set `weeklyReviewAt` in `artifacts/growth/state.json` to the current ISO timestamp, preserving its fingerprint. The checker never marks the review done just because it ran. If access is unavailable, record that once, use the available evidence, and finish the review without inventing metrics. Stay quiet until there is a material finding, completed improvement, failure, or required action.

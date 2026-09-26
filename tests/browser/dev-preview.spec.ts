@@ -36,7 +36,8 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await showAllMethods(page);
   for (const mode of ['Instant', 'Quick', 'Spinner', 'Card Draw', 'Balloon Rise', 'Towers', 'Shortest Match', 'Dice Roll', 'Coin Flip', 'Shell Game']) {
     await page.getByRole('radio', { name: new RegExp(`^${mode}`) }).check();
-    await page.getByRole('button', { name: 'Pick a player' }).click();
+    await page.getByRole('button', { name: /^Pick (a player|again)$/ }).click();
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
     await expect(page.locator('.winner-announcement')).toContainText(/(Mina|Alex|Jo) goes first/);
     // The double-activation guard is intentional for successive immediate picks.
     await page.waitForTimeout(500);
@@ -50,8 +51,8 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await page.getByRole('link', { name: 'Game rules', exact: true }).click();
   await expect(page).toHaveURL(`${DEV}/dev/games/`);
   await page.getByRole('searchbox').fill('TTR');
-  // The abbreviation matches the original game and two researched Europe editions.
-  await expect(page.locator('.game-list li:visible')).toHaveCount(3);
+  // Three Ticket to Ride editions rank ahead of the fuzzy TTA alias match.
+  await expect(page.locator('.game-list li:visible')).toHaveCount(4);
   await page.locator('.game-list li:visible a').filter({ hasText: 'refreshed' }).click();
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Ticket to Ride');
   await expect(page.locator('.rule-answer')).toContainText('chooses its own method');
@@ -86,8 +87,9 @@ test('the full researched catalog is listed and representative sourced pages wor
     expect(html).not.toContain('astro-island');
   }
   await page.getByRole('searchbox').fill('Seven Wonders');
-  await expect(page.locator('.game-list li:visible')).toHaveCount(1);
-  await page.locator('.game-list li:visible a').click();
+  // The shared alias now matches both the original game and 7 Wonders Duel.
+  await expect(page.locator('.game-list li:visible')).toHaveCount(2);
+  await page.locator('.game-list li:visible a[href="/games/7-wonders-2020-en/"]').click();
   await expect(page.locator('.rule-answer')).toContainText('no single starting player');
   await expect(page.getByRole('link', { name: 'Read the publisher' })).toHaveAttribute('href', /^https:\/\//);
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
@@ -148,6 +150,8 @@ test('random-rule controls wait for their script and recover from unavailable ra
 });
 
 test('random game rule redraw and source navigation work without treating a rule as an equal-chance draw', async ({ page }) => {
+  // Desktop now draws rules inline; mobile retains the directory shortcut.
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${DEV}/`);
   await expect(page.getByRole('heading', { name: 'Playing a specific game?' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveAttribute('href', '/dev/games/');
