@@ -28,6 +28,8 @@ In GA4, compare consented sessions and engaged visits for the fixed `pinterest /
 
 The tag receives only one of the fixed campaign source, medium, and name combinations after consent. It removes the rest of the query before loading analytics. No player data or search terms are included. Share links remain clean.
 
+The recommended GA4 [`share` event](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#share) counts a completed clean-link handoff after consent. The picker has “Share” and sourced rule pages have “Share this rule.” Compare users who trigger `share` with consented active users for each acquisition campaign. A copied link or accepted browser sharing interface is a handoff signal, not proof of a social post or a new visitor. Track subsequent channel visits separately. The event uses only fixed labels (`method: link`, `content_type: tool`, `item_id: first_player_picker` for the picker; `content_type: page`, `item_id: site_page` for a rule page); no roster, winner, reveal choice, or recipient is sent. Previous actions are discarded, and the expanded consent choice uses version 2 so earlier page-view consent is not reused.
+
 ## Economics decision gate
 
 The current site is a new, free utility with no ads or affiliate links. Keep acquisition organic while the first few weeks of indexing and channel data settle. Record visits, engaged visits, and any real referral clicks before buying traffic. Paid impressions alone do not establish that people used the picker or found a rule.

@@ -1,0 +1,36 @@
+---
+interface Props { label?: string }
+const { label = 'Share this page' } = Astro.props;
+---
+<div class="page-share" data-page-share hidden>
+  <button type="button" class="text-button" data-share-button>{label}</button>
+  <span class="small muted" role="status" data-share-status></span>
+  <input type="url" readonly hidden aria-label="Clean sharing link" data-share-link />
+</div>
+<script>
+  import { cleanLink, shareLink } from '../lib/share';
+  import { analytics } from '../lib/analytics';
+  document.querySelectorAll<HTMLElement>('[data-page-share]').forEach(root => {
+    const button = root.querySelector<HTMLButtonElement>('[data-share-button]')!;
+    const status = root.querySelector<HTMLElement>('[data-share-status]')!;
+    const input = root.querySelector<HTMLInputElement>('[data-share-link]')!;
+    input.addEventListener('focus', () => input.select());
+    button.addEventListener('click', async () => {
+      button.disabled = true;
+      try {
+        const url = cleanLink(window.location.href);
+        const result = await shareLink(url, document.title);
+        input.hidden = result !== 'unavailable';
+        input.value = result === 'unavailable' ? url : '';
+        status.textContent = result === 'copied' ? 'Link copied.' : result === 'unavailable' ? 'Copy this link:' : '';
+        if (result === 'copied' || result === 'shared') analytics.emit('share_completed', { kind: 'page' });
+      } finally { button.disabled = false; }
+    });
+    root.hidden = false;
+  });
+</script>
+<style>
+  .page-share{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:12px}
+  .page-share[hidden]{display:none}
+  input{flex:1;min-width:220px;max-width:100%}
+</style>

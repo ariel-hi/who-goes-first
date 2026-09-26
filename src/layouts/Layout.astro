@@ -44,7 +44,7 @@ const structuredData = {
     </header>
     <main id="main" tabindex="-1"><slot /></main>
     <footer class="site-footer"><nav aria-label="Footer"><a href="/choose-who-goes-first/">Choosing a starter</a><a href="/fairness/">How it works</a><a href="/privacy/">Privacy</a>{settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
-    {settings.production && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit analytics? Google Analytics receives the page address without search parameters, basic device information, and fixed campaign labels if you used one of our social links. It may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
+    {settings.production && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit and sharing analytics? Google Analytics receives the page address without search parameters, basic device information, fixed social campaign labels, and successful Share actions. It may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
   </body>
 </html>
 
