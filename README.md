@@ -1,6 +1,6 @@
 # Who Goes First?
 
-An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 4,988 discovered game identities; the [public site](https://whogoesfirst.fun/) may be on an earlier release. The full starting-rule compendium is still in progress: 881 identities have researched editions and 4,107 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 887 approved edition records, with 361 standalone criteria in the random mix and 60 house prompts. The initial public release had 762 rules and 339 random-mix criteria. See `CONTENT_REVIEW.md` for the current review process and [the latest source checkpoint](research/coverage/sep26-final-titan-directory-history-progress.md) for source limits.
+An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 4,988 discovered game identities; the [public site](https://whogoesfirst.fun/) may be on an earlier release. The full starting-rule compendium is still in progress: 881 identities have researched editions and 4,107 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 887 approved edition records, with 361 standalone criteria in the random mix and 60 house prompts. The initial public release had 762 rules and 339 random-mix criteria. See `CONTENT_REVIEW.md` for the current review process and [the latest navigation and source checkpoint](research/coverage/sep26-navigation-and-crowd-intake-progress.md) for source limits.
 
 ## Run
 
@@ -24,6 +24,7 @@ Use Node 22.23.2 or a later Node 22 maintenance release. A project-local Node 22
 - Player colors follow their IDs across all methods. Each draw gets fresh balloon timings, overlapping card flips, and varied spinner and coin turns. Shortest Match uses wooden matches with colored heads; its existing `/methods/straws/` URL and saved preference remain compatible.
 - Optional local group memory, forget/reset, reduced motion, keyboard controls, and clean sharing with manual fallback.
 - Alphabetical static game index, local alias/prefix/typo search, random game-rule draw with skip, edition pages, answer-first source template, and revision-bound editorial approval validation.
+- Public directory and rules searches survive reload, Back and bookmarks. Long alphabet shelves have native pagination above and below the list; Privacy has a direct return to the picker.
 - Sixty published original house-rule questions, drawn without repeats until the pool is exhausted, with skip and an explicit random tie-break. The six original research drafts remain in the local review archive.
 - About, Fairness, Privacy, true 404, canonical/social metadata, sitemap/robots controls, CSP headers, optional GA4 page views, CI and operational docs.
 

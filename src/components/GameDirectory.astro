@@ -1,11 +1,11 @@
 ---
 import type { PublicRule } from '../lib/content/schema';
-interface Props { games: PublicRule[]; prefix?: string; approvedIds?: string[]; enableDirectorySearch?: boolean }
-const { games, prefix = '/games/', approvedIds = [], enableDirectorySearch = false } = Astro.props;
+interface Props { games: PublicRule[]; prefix?: string; approvedIds?: string[]; enableDirectorySearch?: boolean; enableSearchHistory?: boolean }
+const { games, prefix = '/games/', approvedIds = [], enableDirectorySearch = false, enableSearchHistory = false } = Astro.props;
 // Edition labels are long; show them only where they tell entries apart.
 const shared = new Set(games.filter((game, index) => games.findIndex(other => other.gameName === game.gameName) !== index).map(game => game.gameName));
 ---
-<div data-game-directory>
+<div data-game-directory data-search-history={enableSearchHistory ? 'true' : undefined}>
   <label class="search-box"><span>Search by game or another name</span><input type="search" name="game-search" placeholder="Find a game…" autocomplete="off" maxlength="100" /></label>
   <p class="count-label" data-count aria-live="polite">{games.length} {games.length === 1 ? 'rule' : 'rules'} available</p>
   <ul class="game-list">{games.map(game => <li data-game={JSON.stringify({ gameName: game.gameName, aliases: game.aliases, editionLabel: game.editionLabel })}><a href={`${approvedIds.includes(game.id) ? '/games/' : prefix}${game.slug}/`}><span>{game.gameName}{shared.has(game.gameName) && <small>{game.editionLabel}</small>}</span></a></li>)}</ul>
@@ -14,12 +14,13 @@ const shared = new Set(games.filter((game, index) => games.findIndex(other => ot
 </div>
 <script>
   import { createSearchRanker, prepareSearch } from '../lib/search';
-  import { directorySearchHref } from '../lib/directory-search';
+  import { directorySearchHref, readDirectorySearchFragment } from '../lib/directory-search';
   document.querySelectorAll<HTMLElement>('[data-game-directory]').forEach(directory => {
     const input = directory.querySelector<HTMLInputElement>('input')!;
     const list = directory.querySelector<HTMLUListElement>('ul')!;
     const items = [...list.querySelectorAll<HTMLLIElement>('li')].map(item => ({ item, search: prepareSearch(JSON.parse(item.dataset.game!)) }));
     const bridge = directory.querySelector<HTMLAnchorElement>('[data-directory-search]');
+    const historyEnabled = directory.dataset.searchHistory === 'true';
     const render = () => {
       if (bridge) bridge.href = directorySearchHref(input.value);
       const rank = createSearchRanker(input.value);
@@ -64,8 +65,28 @@ const shared = new Set(games.filter((game, index) => games.findIndex(other => ot
       directory.querySelector<HTMLElement>('[data-count]')!.textContent = `${count} ${count === 1 ? 'rule' : 'rules'} found`;
       directory.querySelector<HTMLElement>('[data-empty]')!.hidden = count > 0;
     };
-    input.addEventListener('input', render);
-    // Typing or browser restoration can happen before this module starts.
-    if (input.value.trim()) render();
+    const saveSearch = () => {
+      const hash = directorySearchHref(input.value).slice('/board-games/'.length);
+      if (hash === location.hash) return;
+      try { history.replaceState(history.state, '', location.pathname + location.search + hash); }
+      catch { /* Keep native search usable when history writes are blocked. */ }
+    };
+    const restoreSearch = () => {
+      if (location.hash && !location.hash.startsWith('#q=')) return;
+      const { query } = readDirectorySearchFragment(location.hash);
+      input.value = query;
+      render();
+    };
+    input.addEventListener('input', () => {
+      if (historyEnabled) saveSearch();
+      render();
+    });
+    if (historyEnabled) {
+      // Preserve input entered before this module starts on a plain page.
+      if (location.hash.startsWith('#q=')) restoreSearch();
+      else if (input.value.trim()) { if (!location.hash) saveSearch(); render(); }
+      window.addEventListener('hashchange', restoreSearch);
+      window.addEventListener('pageshow', event => { if (event.persisted) restoreSearch(); });
+    } else if (input.value.trim()) render();
   });
 </script>

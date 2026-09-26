@@ -1,0 +1,17 @@
+---
+import { shelfHref, shelfLabel } from '../lib/content/board-game-browse';
+interface Props {
+  letter: string;
+  page: number;
+  pages: number;
+  previous?: { letter: string; page: number };
+  next?: { letter: string; page: number };
+  label: string;
+}
+const { letter, page, pages, previous, next, label } = Astro.props;
+---
+<nav class="directory-pagination" aria-label={label}>
+  {previous && <a href={shelfHref(previous.letter, previous.page)}>← {previous.letter === letter ? 'Previous page' : shelfLabel(previous.letter)}</a>}
+  <span>Page {page} of {pages}</span>
+  {next && <a href={shelfHref(next.letter, next.page)}>{next.letter === letter ? 'Next page' : shelfLabel(next.letter)} →</a>}
+</nav>

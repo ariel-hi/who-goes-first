@@ -90,7 +90,7 @@ test('board games are browsable without search and searchable on demand', async 
   await page.keyboard.press('Enter');
   await expect(pending.getByRole('link', { name: 'Pick a player', exact: true })).toHaveAttribute('href', '/');
   await expect(pending.getByRole('link', { name: /View game on BoardGameGeek/ })).toHaveAttribute('href', /boardgamegeek\.com\/boardgame\/\d+/);
-  await expect(page).toHaveURL(/\/board-games\/$/);
+  await expect(page).toHaveURL(/\/board-games\/#q=Acquire&filter=pending$/);
   await page.getByRole('button', { name: 'All matches' }).click();
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Backgammon');
   await expect(page.locator('[data-results] li[data-id="2397"]')).toContainText('Backgammon');
