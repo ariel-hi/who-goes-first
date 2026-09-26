@@ -1,0 +1,49 @@
+{
+  "id": "race-for-the-galaxy-rio-grande-2e-en",
+  "slug": "race-for-the-galaxy-rio-grande-2e-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "972faed10979919b3352460fd3dcaa6eba598000d24887bdbef3025b995a83e8",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Race for the Galaxy",
+  "aliases": [
+    "RftG",
+    "RFTG"
+  ],
+  "editionLabel": "Rio Grande Games English rules, second edition, 2018",
+  "firstPlayerRule": "Nobody goes first. Each round, all players secretly choose an action card at the same time and reveal them together, then everyone performs the chosen phases.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play is mostly simultaneous. When order matters (for example, few cards left in the supply or VP chips running out), resolve the phase clockwise, starting with the player who has the lowest-numbered original start world.",
+    "Start worlds are dealt randomly during setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/RFTG_2e_rules.pdf",
+      "title": "Race for the Galaxy — Second Edition rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "2",
+        "3",
+        "8",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        8,
+        12
+      ],
+      "location": "Page 2, Setup; page 3, Playing the Game; page 8, Timing; credits on page 12",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://www.riograndegames.com/wp-content/uploads/2013/02/RFTG_2e_rules.pdf from the publisher Rio Grande Games site. SHA-256: a43d7ee00276e963ea7afd327711cd52cee609712a8128e0f4a164290c2754d4. Read the extracted text of PDF pages 2, 3, 8 and 12. Page 2 (Setup) deals start worlds randomly and names no first player. Page 3: at the start of a round, players simultaneously and secretly choose one action card and reveal them together. Page 8 (Timing): mostly simultaneous; when player order matters, resolve clockwise from the player with the lowest-numbered (original) start world. Page 12 shows version 2.01, © 2007, 2018 Rio Grande Games, designer Tom Lehmann, identifying the base game (BGG 28143). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "Expansions may add rules that depend on player order; this record covers the base game only."
+  ]
+}

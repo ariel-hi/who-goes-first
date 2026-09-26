@@ -1,0 +1,43 @@
+{
+  "id": "munchkin-sjgames-en",
+  "slug": "munchkin-sjgames-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "e9b777d22f1a574056ef96942278b98de6addcb9c5f7a9fa078baddba6f55abb",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Munchkin",
+  "aliases": [],
+  "editionLabel": "Steve Jackson Games English rules, version 1.8 (2019)",
+  "firstPlayerRule": "Decide who goes first by rolling the die (and, the rules joke, arguing about the results).",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "When the first player finishes a turn, the player to the left takes a turn, and so on.",
+    "The game includes one six-sided die."
+  ],
+  "interpretation": "The rules do not say whether high or low wins the roll; the instruction is deliberately tongue-in-cheek.",
+  "sources": [
+    {
+      "url": "https://munchkin.game/site-munchkin/assets/files/1138/munchkin_rules-1.pdf",
+      "title": "Munchkin — Rules",
+      "publisher": "Steve Jackson Games",
+      "printedPages": [
+        "1",
+        "back page"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        6
+      ],
+      "location": "Page 1, Starting and Finishing the Game; credits and rules version on PDF page 6",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://munchkin.game/site-munchkin/assets/files/1138/munchkin_rules-1.pdf from Steve Jackson Games’ official Munchkin site. SHA-256: 26c797604dc0f28788461e4545cc4ea8a434cde90773719fb5ffd35b1bd8fb65. Read the extracted text of PDF pages 1 and 6. Page 1, Starting and Finishing the Game: decide who goes first by rolling the dice and arguing about the results (a joke sentence), and play then passes to the left. Page 1 also says the game includes 168 cards and one six-sided die. PDF page 6 credits Steve Jackson (design) and John Kovalic (art), with Rules version 1.8 (July 2019), identifying the original Munchkin card game (BGG 1927). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No tie-break or high/low convention is given for the roll.",
+    "Other Munchkin sets and expansions have their own rulesheets; this record covers the base game."
+  ]
+}

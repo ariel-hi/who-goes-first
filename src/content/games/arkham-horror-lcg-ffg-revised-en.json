@@ -1,0 +1,53 @@
+{
+  "id": "arkham-horror-lcg-ffg-revised-en",
+  "slug": "arkham-horror-lcg-ffg-revised-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "14365532f00d2c698342b8e886217939141220b85a5cf6ab1ccb20668a823b63",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Arkham Horror: The Card Game",
+  "aliases": [
+    "Arkham Horror LCG",
+    "AHLCG",
+    "Arkham LCG"
+  ],
+  "editionLabel": "Fantasy Flight Games English Learn to Play, revised core set, 2021",
+  "firstPlayerRule": "There is no fixed first player. During setup the group chooses a lead investigator, and each investigation phase the investigators decide together who takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The lead investigator holds the lead investigator token, breaks ties and makes decisions for the group if there is a conflict.",
+    "In the investigation phase, the group chooses who goes first. After each turn, they choose who goes next, until every investigator has had a turn.",
+    "When the rules say “in player order”, the lead investigator goes first, then the others clockwise.",
+    "In the first round, skip the mythos phase and begin with the investigation phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/dd/78/dd7818fe-0c9a-4a6c-b685-e32ab55b1702/ahc60_learn_to_play_web.pdf",
+      "title": "Arkham Horror: The Card Game — Learn to Play",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "6",
+        "11",
+        "credits page"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        11,
+        23
+      ],
+      "location": "Page 4, Lead Investigator and “In Player Order”; page 6, setup step 3 (Choose Lead Investigator); page 11, The Investigation Phase; copyright on PDF page 23",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://images-cdn.fantasyflightgames.com/filer_public/dd/78/dd7818fe-0c9a-4a6c-b685-e32ab55b1702/ahc60_learn_to_play_web.pdf from Fantasy Flight Games’ official file CDN. SHA-256: f82790f81af3731f11f0a7ddc267feb0644b47d20842a973f1023de709568ab0. Read the extracted text of PDF pages 4, 6, 11 and 23. Page 6, setup step 3: choose one of the investigators to be the lead investigator and give that player the token and the Campaign Guide. Page 4: the lead investigator breaks ties; “in player order” means the lead investigator first, then clockwise. Page 11: the investigators, as a group, choose which investigator takes the first turn, then choose each next investigator; skip the mythos phase in round one. PDF page 23 shows © 2021 Fantasy Flight Games; the product code AHC60 is the revised core set of Arkham Horror: The Card Game (BGG 205637). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rules do not say how to pick the lead investigator; the group simply chooses.",
+    "This record uses the revised core set Learn to Play; the 2016 core set is not separately checked here."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "pandemic-legacy-season-1-zman-en",
+  "slug": "pandemic-legacy-season-1-zman-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Pandemic Legacy: Season 1",
+  "aliases": [
+    "Pandemic Legacy",
+    "Pandemic Legacy Season 1",
+    "PL1"
+  ],
+  "editionLabel": "Z-Man Games English rulebook, 2015",
+  "firstPlayerRule": "Take all the pawns and blindly draw one. That pawn’s player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This is the last setup step (“Begin play”), done at the start of each game in the campaign.",
+    "Play proceeds clockwise: after a player finishes infecting cities, the player on their left goes next."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/zm7170_zm7171_rules_web.pdf",
+      "title": "Pandemic Legacy: Season 1 — Rulebook (Blue)",
+      "publisher": "Z-Man Games",
+      "printedPages": [
+        "7",
+        "15"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        15
+      ],
+      "location": "Page 7, Setup step 10 (Begin play) and Play; copyright on page 15",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/zm7170_zm7171_rules_web.pdf, the English Legacy 1 Rulebook (Blue) linked from the publisher page https://www.zmangames.com/game/pandemic-legacy-season-1/ (the page says the Red rulebook has the same contents). SHA-256: 409b7121d6a7c6afcf307d6aaf7d081271a4d2bb1b0325db5c72d00fdffab3a6. Read the extracted text of PDF pages 7 and 15. Page 7, setup step 10 Begin play: take all the pawns and blindly select one; that player goes first and play proceeds clockwise. Page 15 shows © 2015, 2018 Z-Man Games, identifying Pandemic Legacy: Season 1 (BGG 161936). An older Red rulebook on the Z-Man CDN had the same wording. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "Legacy stickers and packages added during the campaign could change rules; the unmodified rulebook’s starting instruction is recorded here.",
+    "The 2024 in the hosting path is an upload date, not an edition date."
+  ]
+}
