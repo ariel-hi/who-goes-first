@@ -12,6 +12,7 @@ function runCampaign(search: string, savedChoice: string | null) {
     focus() { /* no click in this test */ },
   }]));
   const document = {
+    addEventListener() { /* share bridge tested separately */ },
     title: 'Who Goes First?',
     head: { append() { order.push('tag requested'); } },
     createElement() { return { async: false, src: '' }; },
