@@ -1,0 +1,45 @@
+{
+  "id": "seasons-libellud-en",
+  "slug": "seasons-libellud-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Seasons",
+  "aliases": [],
+  "editionLabel": "Libellud English base game",
+  "firstPlayerRule": "The youngest player starts the first Tournament round by rolling the Season dice and choosing a die first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "Before the Tournament, players draft their Power cards in the Prelude by choosing cards simultaneously and passing the rest left.",
+    "After the first player chooses a die, the others choose clockwise. Individual turns then proceed clockwise from the first player.",
+    "The player to the current first player’s left starts the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/08/SEASONS_RULES_EN_compressed.pdf",
+      "title": "Seasons — English rulebook",
+      "publisher": "Libellud",
+      "printedPages": [
+        "5",
+        "6",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        9
+      ],
+      "location": "Player material; Beginning of the round; Choosing your Season die; Choosing a new first player",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current official Libellud resource page links this English base-game manual. Rendered5 explicitly repeats youngest as first Tournament starter after simultaneous Prelude drafting;6 gives dice selection and turn order;9 rotates starter left. Source custody: research/source-files/popular-sep26-03/seasons.pdf; SHA-256 d472b553073497a6f0900d427b9eff77051ed5d5f5ce28ba98d29504f71bdca1. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "No opening tie-break for equal ages is specified."
+  ]
+}
