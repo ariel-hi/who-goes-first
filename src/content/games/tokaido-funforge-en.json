@@ -1,0 +1,46 @@
+{
+  "id": "tokaido-funforge-en",
+  "slug": "tokaido-funforge-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "2e1bd6d0d7677c59112bcf8a21acdc5f810fc529f2744d455cc9424729b50ba9",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Tokaido",
+  "aliases": [],
+  "editionLabel": "Funforge English original edition",
+  "firstPlayerRule": "Randomly line up the Traveler pieces at the starting inn in Kyoto. The Traveler farthest behind on the route moves first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Traveler farthest behind takes each turn; a player can therefore take consecutive turns.",
+    "With two players, add a neutral Traveler to the random starting lineup. When that Traveler is last, the player whose own Traveler is in front moves it.",
+    "Choose Traveler tiles before determining the starting order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/9d/6c/0d-tokaido-rulebook.pdf",
+      "title": "Tokaido — English rulebook",
+      "publisher": "Funforge",
+      "printedPages": [
+        "2",
+        "3",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5
+      ],
+      "location": "Set-up; Playing the game; Special rules for two-player games; Preparations",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The primary document is the publisher-authored Funforge English rulebook, mirrored by 1jour-1jeu. Its visible credits identify Antoine Bauza, Funforge Studio and copyright Funforge 2012. Printed pages 2–3 on PDF page 2 give random setup and the rearmost Traveler turn rule; printed page 7 gives the two-player neutral Traveler. Publisher sites could not be retrieved; mirror hosting is disclosed. Source custody: research/source-files/popular-sep26-02/tokaido.pdf; SHA-256 3f0f9d024b71fb8173fe07e131c8972423f032989cf0516e5bef6033581fa0e5. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The source is Funforge’s original English rulebook preserved by a third-party rules archive; the current Stonemaier edition was not verified."
+  ]
+}
