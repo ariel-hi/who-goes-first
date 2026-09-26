@@ -1,0 +1,43 @@
+{
+  "id": "res-arcana-sand-castle-en",
+  "slug": "res-arcana-sand-castle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "1daff52c97e602d3c2ac19542f1d06bc6f3d1622313270c2beddd99734af305f",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Res Arcana",
+  "aliases": [],
+  "editionLabel": "Sand Castle Games English base game",
+  "firstPlayerRule": "Choose a First Player and give them the First Player token. After collecting essences, that player takes the first action.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During setup, players choose magic items counterclockwise starting with the player to the First Player’s right; the First Player chooses last.",
+    "Essences are normally collected simultaneously. Any player may request clockwise collection starting with the First Player.",
+    "Action turns proceed clockwise. The first player to pass takes the First Player token for the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/40/6f/1b-res-arcana-rulebook.pdf",
+      "title": "Res Arcana — English rulebook",
+      "publisher": "Sand Castle Games",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Setup steps 5 and 7; Play; Collect",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Sand Castle Games English base-game rulebook preserved by 1jour-1jeu. Publisher website did not expose a working base-game manual link. Rendered4 and5 distinguish reverse magic-item selection, simultaneous collection and clockwise action order. Base-game opening only; optional two-player match rules are outside this record. Source custody: research/source-files/popular-sep26-04/resarcana.pdf; SHA-256 79eca4421a36e2b547b06132f32cdc31fbfbd417ac4f73a5eb6130db472d9886. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The publisher-authored rulebook is preserved by a third-party rules archive. It gives no criterion for selecting the initial First Player."
+  ]
+}
