@@ -1,0 +1,45 @@
+{
+  "id": "decrypto-scorpion-masque-en",
+  "slug": "decrypto-scorpion-masque-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "ef1f8bcbf2b3f51f561d9e1715dbee9768eba1675429e902ca3f9118ce07b878",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Decrypto",
+  "aliases": [],
+  "editionLabel": "Le Scorpion Masqué English edition",
+  "firstPlayerRule": "Both teams choose an Encryptor and prepare their clues at the same time. The White team’s Encryptor reads their clues first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After the White team’s sequence, repeat the clue-reading and guessing sequence for the Black team.",
+    "Neither team attempts an interception in the first round. Team members take turns as Encryptor in later rounds.",
+    "This describes the standard game with two teams of two to four players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://scorpionmasque.com/sites/scorpionmasque.com/files/decrypto_en_rules_20sep2019.pdf",
+      "title": "Decrypto — English rulebook",
+      "publisher": "Le Scorpion Masqué",
+      "printedPages": [
+        "1",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3
+      ],
+      "location": "Game principles; Gameplay steps 1–3; Repeat steps 3–7",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher-hosted English rules, linked by the official Decrypto product page. Printed page 3 (PDF page 2) explicitly makes clue composition simultaneous and White clue reading first; printed page 4 then repeats the sequence with Black. Source custody: research/source-files/popular-sep26-02/decrypto.pdf; SHA-256 2d7c6cbb59b147c449ba4281ceee89ef782e18a75cc475552f92225b463e1cca. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The rules let each team appoint its Encryptor; they do not prescribe a criterion for choosing the initial Encryptors."
+  ]
+}
