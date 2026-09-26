@@ -1,0 +1,70 @@
+{
+  "id": "the-7th-citadel-serious-poulp-en-2023",
+  "slug": "the-7th-citadel-serious-poulp-en-2023",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "The 7th Citadel",
+  "aliases": [],
+  "editionLabel": "Serious Poulp base · ©2023 · Errata 2.0 (English)",
+  "firstPlayerRule": "The group collectively chooses the active player for the first turn. The base rules do not assign a fixed first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Collectively choose the active player on every turn. That player chooses an available action.",
+    "On a later turn, the previous active player may act again if everyone agrees. If the group cannot agree on the next active player, the player to the left of the last active player takes that turn. This fallback does not select the first player.",
+    "Solo play uses one adventurer; multiplayer supports 2–4 adventurers.",
+    "Choose your character and starting skills during the introductory scenario. Follow its booklet and any specific card or scenario instructions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://media.seriouspoulp.com/rules/The7thCitadel_rulebook_EN.pdf",
+      "title": "The 7th Citadel — English base rulebook",
+      "publisher": "Serious Poulp",
+      "printedPages": [
+        "10",
+        "3",
+        "7",
+        "25",
+        "26"
+      ],
+      "pdfPagesOneBased": [
+        10,
+        3,
+        7,
+        25,
+        26
+      ],
+      "location": "Turn sequence steps 1 and 4; overview; beginning and joining an adventure; imprint",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://media.seriouspoulp.com/downloads/The7thCitadel_Errata_notice_EN.pdf",
+      "title": "The 7th Citadel — Errata 2.0",
+      "publisher": "Serious Poulp",
+      "printedPages": [
+        "cover",
+        "unnumbered corrections page 1",
+        "unnumbered corrections page 2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        3
+      ],
+      "location": "Complete notice: component, booklet and dialogue corrections",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Unapproved proposal from the unchanged publisher English base PDF, SHA-256 f25dcdf48b9f1b8c86153a2a154e351641989732524e691eff11e8f15a6adc7d. Complete opening/setup pages 1–10, saving/joining and imprint pages 24–28 were previously rendered and inspected; full 28-page text is retained. Printed/PDF p10 step 1 specifies collective active-player choice each turn. Step 4 applies left-neighbor fallback only after a last active player exists. P3 gives solo and 2–4 adventurers; p7 delegates initial character/skill selection to A new beginning, booklet p3. P26 identifies Serious Poulp and ©2023; no numbered base-book version is established. Errata 2.0 original three-page PDF, SHA-256 bd6452f9663e25d70804f8a6b6ef0f1fb6aa87095176ed5b785c0af5cae72f37, was completely inspected; its card/booklet/dialogue corrections do not replace p10 turn selection. Current cached publisher FAQ was also inspected. PDF metadata modified November 7, 2024 and errata metadata February 23, 2026 are cache metadata, not inferred printing dates. Exact cache, page renders, identity reference and hashes are bound in evidence.json. Root independently opened complete base PDF3/7/10/25/26 and all three Errata 2.0 pages, rechecked original source byte hashes and literal publisher download links, and read every public field. The introductory booklet is still unreviewed, so this is the base turn-sequence answer only. Primary context is preserved in artifacts/sep26-next-primary-root-context.log. Final root source review is authorized by the owner’s standing factual-review delegation of 2026-09-22. The original unapproved proposal remains byte-preserved as historical intake; this reviewed intake copy still has null approval/publication fields. No deployment occurs.",
+  "uncertainty": [
+    "The introductory scenario booklet was not independently retrieved. This answer summarizes the base turn sequence, not every scenario’s opening instructions.",
+    "No first-turn disagreement procedure is stated on p10; the later-turn left-neighbor fallback cannot be applied before there has been an active player.",
+    "The book has no numbered version; no expansion or other-printing rule transfer is approved."
+  ]
+}

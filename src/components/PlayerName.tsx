@@ -8,7 +8,15 @@ export default function PlayerName({ player, index, errors, onRename }: { player
     const field = ref.current;
     if (!field) return;
     let width = -1;
-    const size = () => { if (field.clientWidth === width) return; width = field.clientWidth; field.style.height = '0px'; field.style.height = `${Math.max(44, field.scrollHeight)}px`; };
+    const size = () => {
+      if (field.clientWidth === width) return;
+      width = field.clientWidth;
+      field.style.height = '0px';
+      const style = getComputedStyle(field);
+      // scrollHeight includes padding, but a border-box height includes borders too.
+      const borders = style.boxSizing === 'border-box' ? parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth) : 0;
+      field.style.height = `${Math.max(44, Math.ceil(field.scrollHeight + borders))}px`;
+    };
     size();
     // Defer the write outside ResizeObserver's delivery cycle. Changing the
     // field height also resizes its parent, which otherwise loops in WebKit.

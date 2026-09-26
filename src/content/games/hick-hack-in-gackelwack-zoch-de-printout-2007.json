@@ -1,0 +1,56 @@
+{
+  "id": "hick-hack-in-gackelwack-zoch-de-printout-2007",
+  "slug": "hick-hack-in-gackelwack-zoch-de-printout-2007",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "53518b30e06106be9860b105d88c980853fcba3e4b399d7fe9cbf29af7005d96",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Hick Hack in Gackelwack",
+  "aliases": [],
+  "editionLabel": "Zoch German web rules (archived 2007; English summary)",
+  "firstPlayerRule": "Everyone secretly chooses a hand card, and the cards are revealed only after all players have chosen. The rules do not assign a first player or a turn order for this selection phase.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Before card selection, one player distributes a random grain to each farm without looking. The rules do not specify who performs this supply task, and it does not confer a first card-playing turn.",
+    "With two or three players, everyone starts with six cards and secretly selects two per round. You may not select a poultry card and a fox card of the same color together. Reveal only once everyone has selected.",
+    "Dice duels, including rerolls by tied contenders, decide who takes food at a farm. They do not select a starting player.",
+    "After feeding is resolved, replenish the farms and draw one replacement card per player, or two with two or three players. The next round uses the same secret-selection and reveal procedure."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.spiele4us.de/wp-content/uploads/2022/10/hick-hack-im-gackelwack-gebraucht-g004400070.pdf",
+      "title": "Hick Hack in Gackelwack — archived German web rules",
+      "publisher": "Zoch Verlag, author Stefan H. Dorra; copy hosted by Spiele4us",
+      "printedPages": [
+        "2 von 6",
+        "1 von 6",
+        "3 von 6",
+        "4 von 6",
+        "5 von 6",
+        "6 von 6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "location": "Der Spielablauf, phases 1–2: supply and secret card selection/reveal (p2); setup (p1); feeding and duels (p3–5); Eine neue Runde beginnt and publisher/author imprint (p6)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Historical unapproved proposal for identity BGG 2569; no BGG request made. Independently visually inspected all 6 pages. Header shows the truncated former primary HTTP address http://www.zoch-verlag.com/de/spiele/hickhack/regel/cont...; the missing ending is not reconstructed. Each page is dated 20.08.2007 12:54 Uhr. Page 1 identifies the native title Hick Hack in Gackelwack, author Stefan H. Dorra and 2–6 players; mirror filename says im rather than the document's in. Page 6 credits ©2001, Erschienen im Zoch Verlag, Autor Stefan H. Dorra. The date is a preserved print timestamp, not a publication/revision guarantee. Pages 1–2 give five initial cards for four to six players, six for two or three, a random grain helper with no selection criterion, one hidden selected card per player (two with two or three), and reveal after everyone plays. Pages 3–5 describe poultry/fox feeding, negotiations and dice duels. Tied contenders repeat duels; these are feeding resolution, not a first-player tie-break. Page 6 replenishes each farm, retains leftover grain, and gives one replacement card (two for two or three), before the next iteration; left-to-right grain distribution in the final-round condition is not a player-turn direction. Preserved PDF SHA-256 c1ce960af07f3c3f729eee73abbdce6fd3122bdb3fec914211ab31fb14b8320e, 144694 bytes. Cached retailer mirror URL and final URL match; no live primary chain authenticating the exact printout is established. No official English manual was inspected or inferred from a translated edition. Full metadata and provenance limits are in verification.json and report.md. No approval, publication or pool transfer was granted at intake. Root independently opened and read all six complete original page renders on 2026-09-26 UTC. Root confirmed setup, unassigned supply helper and secret selection/reveal on PDF1–2; feeding/duels/tied rerolls on PDF3–5; complete new-round procedure and publisher/author/copyright imprint on PDF6. Exact original 144,694-byte PDF rehashes to the recorded SHA-256 and is byte-identical to the prior preserved cache. Every public field was independently read. Archived publisher-authored web-rule custody remains the retailer mirror; the visibly truncated primary URL is not reconstructed, and no latest/revision/translation equivalence is asserted. No first-player or portable criterion is inferred from the supply task or feeding duels. Owner factual-review delegation dated 2026-09-22 authorizes subsequent exact approval after schema/revision review. At preparation this reviewed proposal had null approval/publication fields; subsequent catalog enrollment is recorded separately. Original intake is unchanged.",
+  "uncertainty": [
+    "The original publisher URL is visibly truncated in the printout; the full address and a live primary link to the exact file are not established.",
+    "The ©2001 credit and 20 August 2007 print timestamp identify this preserved source without proving original-printing or latest-revision equivalence.",
+    "No rule selects the grain-distribution helper. The simultaneous secret-selection procedure does not require an individual first-player tie-break.",
+    "Other languages and separately titled editions are outside this record's scope."
+  ]
+}

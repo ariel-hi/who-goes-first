@@ -1,14 +1,14 @@
 ---
 import type { PublicRule } from '../lib/content/schema';
 import { siteSettings } from '../lib/site';
+import { citedPdfPages, isPdfSource, pdfPageHref } from '../lib/source-pages';
 interface Props { rule: PublicRule; related?: PublicRule[]; preview?: boolean }
 const { rule, related = [], preview = false } = Astro.props;
 const { contact } = siteSettings();
 const firstSource = rule.sources[0]!;
 const firstPage = firstSource.pdfPagesOneBased[0];
-const sourceIsPdf = /\.pdf$/i.test(new URL(firstSource.url).pathname);
-const passageUrl = sourceIsPdf && firstPage && !new URL(firstSource.url).hash
-  ? `${firstSource.url}#page=${firstPage}` : null;
+const sourceIsPdf = isPdfSource(firstSource.url, firstSource.pdfPagesOneBased);
+const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
 ---
 <article class="game-article">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href={preview ? '/dev/games/' : '/games/'}>Game rules</a> / {rule.gameName}</nav>
@@ -20,7 +20,10 @@ const passageUrl = sourceIsPdf && firstPage && !new URL(firstSource.url).hash
   {rule.clarifications.length > 0 && <section class="rule-section"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
   {rule.interpretation && <section class="rule-section"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   {rule.tieBreakApplicable !== false && !rule.officialTieBreak && <section class="rule-section"><h2>If there’s a tie</h2><p>{rule.houseFallback ? 'The rulebook doesn’t say.' : <>The rulebook doesn’t say. If you need a tie-break, <a href="/">pick a player at random</a>.</>}</p></section>}
-  <section class="rule-section"><h2>Source & edition</h2><ul class="source-list">{rule.sources.map(source => <li><a href={source.url} rel="noreferrer">{source.title}</a><small>{source.publisher} · {source.location} · Checked {source.checkedAt}</small></li>)}</ul></section>
+  <section class="rule-section"><h2>Source & edition</h2><ul class="source-list">{rule.sources.map(source => {
+    const pages = citedPdfPages(source.url, source.pdfPagesOneBased);
+    return <li><a class="source-document" href={source.url} rel="noreferrer">{source.title}</a><small>{source.publisher} · {source.location} · Checked {source.checkedAt}</small>{pages.length > 0 && <nav class="source-cited-pages" aria-label={`Cited PDF pages for ${source.title}`}>{pages.map(({ page, href }) => <a href={href} rel="noreferrer">PDF page {page}</a>)}</nav>}</li>;
+  })}</ul></section>
   {rule.houseFallback && <aside class="fallback"><span class="eyebrow">Optional house rule</span><h2>Not working for your group?</h2><p>{rule.houseFallback}</p><a class="primary" href="/">Pick a player at random</a></aside>}
   <section class="rule-section"><h2>{related.length ? 'Related games and editions' : 'More starting rules'}</h2>{related.length > 0 && <ul>{related.map(game => <li><a href={`/games/${game.slug}/`}>{game.gameName} — {game.editionLabel}</a></li>)}</ul>}<a class="inline-link" href={preview ? '/dev/games/' : '/games/'}>Browse available game rules</a></section>
   <p class="small muted rule-section">Found a different instruction in your edition? {contact ? <a href={`mailto:${contact}?subject=${encodeURIComponent(`Rule correction: ${rule.id}`)}`}>Send a correction with the game, edition, and source.</a> : 'Check your own rulebook’s edition. A public correction contact will be listed here when the site launches.'}</p>

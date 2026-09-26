@@ -1,0 +1,87 @@
+{
+  "id": "stonesaga-open-owl-en-rulebook-1-1",
+  "slug": "stonesaga-open-owl-en-rulebook-1-1",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Stonesaga",
+  "aliases": [],
+  "editionLabel": "Open Owl Studios rulebook v1.1 (English)",
+  "firstPlayerRule": "During the day phase, any player may take the first turn. Continue one at a time in any order; a player may take several turns in a row.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "On a turn, perform one action or pass. A player who passes cannot take more actions that day; continue until everyone has passed.",
+    "Groups may choose simultaneous day turns. Resolve conflicting effects using the group’s chosen conflict-resolution system.",
+    "Multi-character solo controls two or more characters. Hardcore solo controls one character and an animal companion, with a separate continuation procedure after that character perishes.",
+    "Resolve effects that occur at the start of the day before taking day actions. The Dawn Rule and optional Dusk Rule resolve uncertainty about conflicting effects and timing."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=14EfqsIbeFudnJltnWzlNq3hKV3uuoxwW&export=download&confirm=t",
+      "title": "Stonesaga — Rulebook v1.1",
+      "publisher": "Open Owl Studios",
+      "printedPages": [
+        "24",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "98",
+        "100",
+        "101",
+        "107"
+      ],
+      "pdfPagesOneBased": [
+        24,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        98,
+        100,
+        101,
+        107
+      ],
+      "location": "Day phase; complete setup; timing and Dawn Rule; simultaneous and solo modes; Dusk Rule; imprint",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://docs.google.com/document/d/17SKgAs0-sOVsJ03L0mYUAiabDA3JsLKqkCtT7zXqsj8/export?format=pdf",
+      "title": "Stonesaga — publisher FAQ and errata, cover v1.3.1 updated 5.22.2026",
+      "publisher": "Open Owl Studios",
+      "printedPages": [
+        "unnumbered export page 2",
+        "unnumbered export pages 4–11"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "location": "Displayed version and complete base Rulebook Errata & Clarifications section",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Unapproved proposal from exact publisher-linked Drive file Stonesaga Rulebook v1.1.pdf, ID 14EfqsIbeFudnJltnWzlNq3hKV3uuoxwW, original SHA-256 eb906725a652447273e070f40a2a230c0652ba3c139adf20d8a261cf88ee2c05. Complete opening/setup pages 1–13, day context 23–25, clarification/variant/imprint pages 98–108 were previously rendered and inspected; full 108-page text is retained. Printed/PDF p24 explicitly permits any order and repeated turns; p98 handles effect conflicts and timing, p100 optional simultaneous play and both solo modes, p101 optional Dusk and hardcore continuation. P107 credits Open Owl Studios ©2025. Publisher-linked FAQ/errata original PDF export, SHA-256 aa950e3579c3edfea54e2e6ed41077ce1e81ef833c5703314168a1c9b8d3c4f0, has 151 fully extracted pages; complete pp1–11 and p151 were rendered and inspected for relevant base-rule corrections. Cover visually says v1.3.1 updated 5.22.2026, while internal entries include v1.3.2. Setup and Game Modifications errata have no entries; no p24 turn-order correction appears in the reviewed base-rule errata. March 16, 2026 rulebook PDF metadata is not treated as a printing date. Exact publisher-page/folder/FAQ provenance, page renders, identity reference and hashes are bound in evidence.json. Root independently opened complete base PDF1/6–12/23/24/98/100/101/107 and all FAQ export PDF1–11, rechecked all original source byte hashes and publisher-linked folder/file identity, and read every public field. The folder explicitly names Stonesaga Rulebook v1.1.pdf; file metadata dates do not assert printing date. Root confirmed the FAQ cover version on PDF2 differs from v1.3.2 entries on PDF5/7, with no day-order correction in the inspected base errata. Blank/title-only pages remain reviewed context but need no gameplay citation. The direct download and Docs export URLs preserve exact original cached sources. Final root source review is authorized by the owner’s standing factual-review delegation of 2026-09-22. The original unapproved proposal remains byte-preserved as historical intake; this reviewed intake copy still has null approval/publication fields. No deployment occurs.",
+  "uncertainty": [
+    "FAQ cover v1.3.1 and internal v1.3.2 entries disagree; both labels are retained, without assigning a new version.",
+    "Campaign/challenge instructions, Endless Mode, Meals & Myths and Nature of the Beast remain separate; no expansion-rule transfer is approved.",
+    "Simultaneous and hardcore solo play are optional modes rather than a replacement for default day turns."
+  ]
+}

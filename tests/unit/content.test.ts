@@ -48,15 +48,26 @@ test('native and language-neutral identities enroll only after primary identity 
     // are separately checked against their exact identities and editions.
     if (['156', '1806', '2537', '153938'].includes(id)) expect(game?.rules).toEqual([]);
   }
+  for (const [id, name] of [['286063', 'The 7th Citadel'], ['356944', 'Stonesaga'], ['400602', 'Civolution'], ['434367', 'Nippon: Zaibatsu']] as const) {
+    const game = games.find(game => game.bggId === id);
+    expect(game?.name).toBe(name);
+    if (id === '434367') expect(game?.rules).toEqual([]);
+  }
+  for (const [id, name] of [['276182', 'Dead Reckoning'], ['380619', 'Cyclades: Legendary Edition'], ['421606', 'Knitting Circle']] as const) {
+    const game = games.find(game => game.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules).toEqual([]);
+  }
+  expect(games).toHaveLength(4981);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
-  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '452264']) {
+  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '407343', '414117', '421310', '452264']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
 });
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(18);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(25);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -69,6 +80,41 @@ test('native identity validation rejects stale or unsupported acceptance evidenc
   expect(mutateDecision(review => { review.decisions.push(review.decisions[0]); })).toThrow('Duplicate native');
   expect(() => nativeIdentityAdditions(snapshotText, decisionsText, [{ name: 'Existing game', bggId: '156' }])).toThrow('Duplicate native');
   expect(() => nativeIdentityAdditions(snapshotText, decisionsText, [{ name: 'SKYJO', bggId: '999999' }])).toThrow('Duplicate native');
+});
+test('semantic native acceptance retains Wikidata-only numeric evidence and the prior holds', () => {
+  const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
+  const decisions = review.decisions as Array<{
+    bggId: string; decision: string; reviewed: boolean; independentRawIdEvidence: unknown[];
+    idEvidenceStatus: string; identityCorroborationStatus?: string;
+    startingRuleApproved: boolean; editionRuleTransferApproved: boolean;
+    identityReviewHistory?: Array<{ fullPreviousDecision: { decision: string; idProvenance: unknown; independentRawIdEvidence: unknown[] } }>;
+    idProvenance: unknown;
+    semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
+  }>;
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 25, hold: 263, reviewed: 35, unreviewed: 253 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(25);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(263);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(35);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(253);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(10);
+  for (const id of ['276182', '380619', '421606']) {
+    const decision = decisions.find(item => item.bggId === id)!;
+    expect(decision).toMatchObject({ decision: 'accept', reviewed: true, idEvidenceStatus: 'wikidata-statement-only', identityCorroborationStatus: 'primary-semantic-corroboration', independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
+    expect(decision.semanticIdentityEvidence?.primaryNumericHrefObserved).toBe(false);
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision).toMatchObject({ decision: 'hold', independentRawIdEvidence: [] });
+    expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision.idProvenance).toEqual(decision.idProvenance);
+  }
+  for (const id of ['407343', '414117', '421310']) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'hold', reviewed: true });
+  }
+  const sesame = decisions.find(decision => decision.bggId === '380619')?.semanticIdentityEvidence?.relatedQidResolution.entities.find(entity => entity.wikidataId === 'Q134451123');
+  expect(sesame?.hasEnglishLabel).toBe(false);
+  expect(sesame?.labels).not.toHaveProperty('en');
+  const snapshot = JSON.parse(readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8'));
+  const knitting = snapshot.candidates.find((candidate: { bggId: string }) => candidate.bggId === '421606');
+  expect(knitting.items[0].entity.claims).not.toHaveProperty('P170');
+  expect(knitting.items[0].entity.claims).not.toHaveProperty('P178');
 });
 test('native identity validation checks the preserved entity and actual nondeprecated ID statement', () => {
   const originalSnapshot = JSON.parse(readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8'));

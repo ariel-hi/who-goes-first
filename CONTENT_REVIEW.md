@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 876 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 881 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+
+The 7th Citadel, Stonesaga, Civolution, Magalon and Hick Hack in Gackelwack add five exact source-reviewed editions with explicit identity mappings. The first three cite publisher-linked or hosted English sources; the latter two are clearly labeled English summaries of archived publisher-authored German manuals with mirror custody preserved. Cooperative turns, initial versus later-era selection, card-selection versus action order and hidden simultaneous choices remain distinct. None joins the portable mix. See `research/coverage/sep26-next-native-source-pages-progress.md` for exact revisions, source hashes, scope and combined verification.
 
 CuBirds, SKYJO, Samurai Sword, Nucleum, Spicy and Dune: Imperium – Uprising add six independently reviewed editions with explicit identity mappings and exact approval fingerprints. Spicy alone adds a portable youngest-player criterion. Dealer, role, marker, later-round and player-count distinctions remain explicit; Uprising currently covers three/four players. Intake copies retain draft history. See `research/coverage/sep26-modern-search-progress.md` for source provenance, scope and verification.
 

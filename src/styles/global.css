@@ -155,7 +155,12 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 .source-actions a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:10px 13px;border:1px solid var(--line);border-radius:4px;background:var(--paper);font-size:13px;line-height:1.45;text-decoration:none}
 .source-actions a:hover{border-color:var(--green);background:var(--soft);text-decoration:underline}
 .source-list{padding-left:20px;font-size:14px}
+.source-list li+li{margin-top:18px}
+.source-list .source-document{display:inline-flex;align-items:center;min-height:44px;min-width:44px;max-width:100%;padding:7px 0;overflow-wrap:anywhere}
 .source-list small{display:block;color:var(--muted)}
+.source-cited-pages{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.source-cited-pages a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;max-width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:var(--paper);font-size:13px;line-height:1.45;text-decoration:none;overflow-wrap:anywhere}
+.source-cited-pages a:hover{border-color:var(--green);background:var(--soft);text-decoration:underline}
 .fallback{background:#edf1e8;border-radius:3px;padding:23px;margin-top:25px}
 .fallback p{font-size:14px}
 .fallback .primary{max-width:270px}

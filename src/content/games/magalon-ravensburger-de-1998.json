@@ -1,0 +1,51 @@
+{
+  "id": "magalon-ravensburger-de-1998",
+  "slug": "magalon-ravensburger-de-1998",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "aca163c8100f2aec14e929207bdc658c40690fbd1b7a545d96ae2348610b67c1",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Magalon",
+  "aliases": [],
+  "editionLabel": "Ravensburger ©1998 (German summary; archived)",
+  "firstPlayerRule": "The youngest player begins the first round's faceup magic-card selection, which continues clockwise. Everyone must select a different card value. Once all cards are chosen, the player with the highest value takes the first action turn, followed by the others in descending value order.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Being youngest selects who chooses a card first; it does not guarantee the first action turn.",
+    "In later rounds, the player who acted last in the previous round, with the lowest selected card, begins card selection. The others choose clockwise, and action turns again follow descending card values.",
+    "If all of a player's available card values have already been selected in a round, that player sits out the round and begins card selection in the next round.",
+    "Players may choose the order of their own permitted actions within a turn. This does not change the descending-value order of player turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gesellschaftsspiele.spielen.de/uploads/files/1278/54ec94fd84706.pdf",
+      "title": "Magalon — preserved Ravensburger German manual, ©1998",
+      "publisher": "Ravensburger Spieleverlag; copy hosted by spielen.de",
+      "printedPages": [
+        "4",
+        "5",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        10,
+        2,
+        3,
+        1
+      ],
+      "location": "Spielablauf, first-round card selection and action order (p4); next-round selection (p5); Sonderfälle/Hinweise and publisher imprint (p10); setup (p2–3)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Historical unapproved proposal for identity BGG 429; no BGG request made. Independently visually inspected all 11 cached manual pages, preserved as magalon-page-1.png through magalon-page-11.png in this folder. Page 4 distinguishes clockwise first-round card selection, begun by the youngest, from descending selected-value action order; card values must differ. Page 5 assigns later-round first selection to the previous last actor/lowest card. Page 10 specifies the unable-to-select exception and identifies Ravensburger Spiele Nr.26 137 6, author Wolfgang Kramer, illustrations Tim Gill and Mark Holiday, and ©1998 Ravensburger Spieleverlag. Pages 6–9 describe card effects, movement and board contexts without another opening rule; page 11 is an artifact reference. Preserved PDF SHA-256 8523aa6544a308264bd00b1c360df33c51e32def9e92109f351a078fee39c731, 2146257 bytes. PDF creation 2004-09-27 16:19:00 +02:00 and modification 16:19:14 +02:00 are conversion metadata, not an edition date. Cached mirror URL and final URL match; original publisher delivery of this exact file is not independently established. Full metadata and provenance limits are in verification.json and report.md. No approval, publication or pool transfer was granted at intake. Root independently opened and read every complete original render PDF1–11 on 2026-09-26 UTC. Root confirmed card-selection order versus action order on PDF4, later-round selection on PDF5, unavailable-card exception and the complete publisher/author/product/copyright imprint on PDF10; other pages supply full setup/card/action context. Exact original 2,146,257-byte PDF rehashes to the recorded SHA-256 and is byte-identical to the earlier preserved cache. Every public field was independently read. This is an English summary of the identified archived German manual; source custody is explicitly a third-party mirror, with no live primary delivery or latest/printing equivalence asserted. Youngest governs card selection, not the first action turn, so no portable pool enrollment is approved. Owner factual-review delegation dated 2026-09-22 authorizes subsequent exact approval after schema/revision review. At preparation this reviewed proposal had null approval/publication fields; subsequent catalog enrollment is recorded separately. Original intake is unchanged.",
+  "uncertainty": [
+    "The manual gives no tie-break for players tied as youngest.",
+    "This is a preserved publisher-imprinted manual on a mirror. A live publisher link to this exact PDF has not been established, and it is not claimed to be the latest version.",
+    "No equivalence with another language, printing or revision is established."
+  ]
+}

@@ -1,4 +1,85 @@
 import { test, expect } from '@playwright/test';
+import { DEV } from './urls';
+
+test('a rules-page no-match search finds an unreviewed Unicode game through a keyboard directory link', async ({ page }) => {
+  const query = 'Unreviewed 四季 Étoile & 🧩';
+  const directoryRequests: string[] = [];
+  page.on('request', request => {
+    if (['/board-games/', '/board-games/search.json'].includes(new URL(request.url()).pathname)) directoryRequests.push(request.url());
+  });
+  await page.route('**/board-games/search.json', route => route.fulfill({ json: [{ name: query, id: '999999999', ruleCount: 0 }] }));
+  await page.goto('/games/');
+  const rules = page.locator('[data-game-directory]');
+  await rules.getByRole('searchbox').fill(`  ${query}  `);
+  await expect(rules.locator('[data-count]')).toHaveText('0 rules found');
+  await expect(rules.locator('[data-empty]')).toBeVisible();
+  const bridge = rules.getByRole('link', { name: 'Find this game in the directory' });
+  await expect(bridge).toHaveAttribute('href', `/board-games/#q=${encodeURIComponent(query)}`);
+  expect((await bridge.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+  await expect(rules.getByRole('link', { name: 'Pick a starting player instead' })).toHaveAttribute('href', '/');
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/games\/$/);
+  await bridge.focus();
+  await page.keyboard.press('Enter');
+  await expect(page.getByRole('searchbox', { name: 'Search board games' })).toHaveValue(query);
+  await expect(page.locator('[data-results] li')).toHaveCount(1);
+  await expect(page.locator('[data-results]')).toContainText(query);
+  await expect(page.locator('[data-count]')).toHaveText('1 game found');
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/board-games\/$/);
+  expect(directoryRequests.length).toBeGreaterThanOrEqual(2);
+  for (const request of directoryRequests) {
+    expect(new URL(request).search).toBe('');
+    expect(new URL(request).hash).toBe('');
+  }
+});
+
+test('rules-page recovery follows the latest query and bounds its Unicode fragment', async ({ page }) => {
+  await page.goto('/games/');
+  const rules = page.locator('[data-game-directory]');
+  const search = rules.getByRole('searchbox');
+  const bridge = rules.locator('[data-directory-search]');
+  await search.fill('Synthetic missing Alpha');
+  await search.fill('Synthetic missing Beta');
+  await expect(bridge).toHaveAttribute('href', '/board-games/#q=Synthetic%20missing%20Beta');
+  // Exercise the bridge's bound even if a script bypasses the input maxlength.
+  await search.evaluate((input: HTMLInputElement, value) => {
+    input.value = value;
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  }, 'x'.repeat(99) + '🧩');
+  await expect(bridge).toHaveAttribute('href', `/board-games/#q=${'x'.repeat(99)}`);
+  await search.fill('');
+  await expect(bridge).toHaveAttribute('href', '/board-games/');
+  await expect(rules.locator('[data-empty]')).toBeHidden();
+  await expect(rules.locator('.game-list li:visible').first()).toBeVisible();
+});
+
+test('draft rule directories do not acquire the public directory recovery', async ({ page }) => {
+  await page.goto(`${DEV}/dev/games/`);
+  const rules = page.locator('[data-game-directory]');
+  await rules.getByRole('searchbox').fill('Synthetic missing 四季');
+  await expect(rules.locator('[data-empty]')).toBeVisible();
+  await expect(rules.locator('[data-directory-search]')).toHaveCount(0);
+  await expect(rules.getByRole('link', { name: 'Find this game in the directory', includeHidden: true })).toHaveCount(0);
+  await expect(rules.getByRole('link', { name: 'Pick a starting player instead' })).toHaveAttribute('href', '/');
+});
+
+test('rules-page directory recovery remains an ordinary link without JavaScript', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  try {
+    const page = await context.newPage();
+    await page.goto('/games/');
+    const rules = page.locator('[data-game-directory]');
+    await expect(rules.locator('.game-list li').first()).toBeVisible();
+    const bridge = rules.getByRole('link', { name: 'Find this game in the directory' });
+    await expect(bridge).toHaveAttribute('href', '/board-games/');
+    expect((await bridge.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+    await bridge.click();
+    await page.getByRole('link', { name: 'Browse A games' }).click();
+    await expect(page).toHaveURL(/\/board-games\/browse\/a\/1\/$/);
+    await expect(page.locator('[data-directory-shelf] li').first()).toBeVisible();
+  } finally {
+    await context.close();
+  }
+});
 
 test('a home no-match search carries Unicode to the directory through a keyboard link', async ({ page }) => {
   const query = '四季 Étoile & 🧩';

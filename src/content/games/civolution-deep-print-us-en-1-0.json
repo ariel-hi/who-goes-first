@@ -1,0 +1,84 @@
+{
+  "id": "civolution-deep-print-us-en-1-0",
+  "slug": "civolution-deep-print-us-en-1-0",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "183035293ce7ab6c7850c2322b45f79077e323c9c815f52a808c23709ad87d6d",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Civolution",
+  "aliases": [],
+  "editionLabel": "Deep Print Games US v1.0 · ©2024 (English)",
+  "firstPlayerRule": "Determine a starting civilization and give it the starting monolith. The multiplayer setup does not state how to choose that civilization.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The multiplayer setup covers 2–4 civilizations. In the action phase, each action round starts with the civilization holding the starting monolith and continues clockwise.",
+    "Advanced starting-chip selection runs counter-clockwise from the civilization to the starter’s right. That setup selection is separate from the clockwise action-round order.",
+    "In Phase 7, give the monolith to the civilization that scored the most success points in that era’s scoring category. If tied, including at zero, pass it to the tied civilization next in clockwise seating order after the outgoing starter. A sole winning starter keeps it.",
+    "Solo play sets up the human under steps 12–16 and adds the V.I.C.I rival separately. During solo action rounds, the human and V.I.C.I alternate, with the starting-monolith holder going first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.deep-print-games.com/wp-content/uploads/2025/01/Civolution_Rules_US_web_v1_0.pdf",
+      "title": "Civolution — US English rules v1.0",
+      "publisher": "Deep Print Games",
+      "printedPages": [
+        "10",
+        "13",
+        "35",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "2",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        10,
+        13,
+        35,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        2,
+        6,
+        7,
+        8,
+        9
+      ],
+      "location": "Initial setup steps 15–16; action rounds; Phase 7D later starting civilization and ties; complete V.I.C.I solo section; imprint",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://www.deep-print-games.com/wp-content/uploads/2026/02/Civolution_Errata_EN_v_1.pdf",
+      "title": "Civolution — first-edition US/EU errata, updated 10/01/2024",
+      "publisher": "Deep Print Games",
+      "printedPages": [
+        "unnumbered errata sheet"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Complete errata list",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Unapproved proposal from unchanged publisher US English rules v1.0 PDF, SHA-256 dcd90405697524634b0ef7650d92b1fb3ca09e647209021bc6ff20f3e15d5eac. Complete opening/setup pages 1–13 and complete solo/imprint pages 39–44 were previously rendered and inspected; all 44 pages extracted. P10 setup step15 gives the monolith to a determined starting civilization without a criterion. Step16’s advanced chip draft is counter-clockwise from the starter’s right. P13 action rounds begin with the starting civilization and proceed clockwise. P39 tells solo players to perform steps12–16 only for themselves before setting up V.I.C.I, then alternate from the monolith holder. P44 explicitly shows v1.0, Deep Print Games ©2024. Complete one-page first-edition US/EU errata, SHA-256 f5fc6ce51b931099481ecbdf041e7ffab9591ca0efca81d8e6767691d68fb090, visibly updated 10/01/2024, corrects rulebook p33 and glossary pp3,6,9 without changing initial selection. The original glossary v1.1, overview v1.0 and all six solo-card pages remain cached as supporting context. The errata’s 2026 URL directory is not treated as its printed date. Exact cache, page renders, identity reference and hashes are bound in evidence.json. Root independently opened complete base PDF2/6–10/13/35/39–44 and the complete errata sheet, rechecked exact original source bytes, and read every public field. Root rendered the unchanged original PDF35 into artifacts/sep26-civolution-era-source-page-35.png and confirmed later-era Phase7D: most success points in that tile category, tied next in seating order, sole incumbent winner remains. PDF43 preserves the same Phase7D in solo. This later-era criterion and tie are distinct from unspecified initial selection; no portable criterion or invented initial fallback is approved. Final root source review is authorized by the owner’s standing factual-review delegation of 2026-09-22. The original unapproved proposal remains byte-preserved as historical intake; this reviewed intake copy still has null approval/publication fields. No deployment occurs.",
+  "uncertainty": [
+    "Initial multiplayer selection is unspecified in the inspected rulebook and errata. No random, youngest or other criterion is inferred.",
+    "The printed errata date 10/01/2024 is preserved without resolving its date-format ambiguity.",
+    "This answer is limited to the identified US English v1.0/first-edition sources; no different printing or solo-to-multiplayer transfer is approved."
+  ]
+}

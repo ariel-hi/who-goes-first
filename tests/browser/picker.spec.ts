@@ -365,6 +365,58 @@ test('larger groups can use dice and coins while the toolbar stays visible durin
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
+for (const width of [320, 1366]) for (const motion of ['no-preference', 'reduce'] as const) test(`large named groups keep a separate visible result at ${width}px with ${motion} motion`, async ({ page }) => {
+  test.setTimeout(90000);
+  await page.setViewportSize({ width, height: 844 });
+  await page.emulateMedia({ reducedMotion: motion });
+  await controlledRandom(page, 49);
+  for (const scenario of [
+    { label: 'Instant', count: 50 },
+    { label: 'Quick', count: 50 },
+    { label: 'Dice Roll', count: 13 },
+    { label: 'Coin Flip', count: 24 },
+  ]) {
+    await ready(page);
+    await page.getByRole('button', { name: 'Paste a list', exact: true }).click();
+    await page.getByLabel('Player names').fill(Array.from({ length: scenario.count }, (_, i) => `Person${String(i + 1).padStart(2, '0')}abcdefghijklmnop`).join('\n'));
+    await page.getByRole('button', { name: 'Done', exact: true }).click();
+    await expect(page.locator('#bulk-names')).toHaveCount(0);
+    await expect.poll(() => page.locator('.player-name').evaluateAll(fields => fields.every(field => field.scrollHeight <= field.clientHeight + 2))).toBe(true);
+    await page.getByRole('radio', { name: scenario.label, exact: true }).check();
+    await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+    const during = motion === 'no-preference' && scenario.label !== 'Instant'
+      ? await page.locator('.picker').evaluate(picker => {
+        const result = picker.querySelector('.result-area')!.getBoundingClientRect();
+        const roster = picker.querySelector('.roster')!.getBoundingClientRect();
+        return { phase: picker.getAttribute('data-phase'), resultHeight: result.height, rosterDocumentTop: roster.top + scrollY };
+      }) : null;
+    if (during) expect(during.phase, `${scenario.label} measurement occurs before completion`).toBe('revealing');
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+    const winnerName = `Person${String(49 % scenario.count + 1).padStart(2, '0')}abcdefghijklmnop`;
+    await expect(announcement(page)).toContainText(`${winnerName} goes first.`);
+    await expect(page.locator('.player')).toHaveCount(scenario.count);
+    await expect(page.locator('.winner-announcement[aria-live="polite"]')).toHaveCount(1);
+    await expect.poll(() => page.evaluate(() => {
+      const winner = document.querySelector('.winner-announcement p')!.getBoundingClientRect();
+      const button = document.querySelector('.picker-card>.primary')!.getBoundingClientRect();
+      const intersectionWidth = Math.max(0, Math.min(winner.right, button.right) - Math.max(winner.left, button.left));
+      const intersectionHeight = Math.max(0, Math.min(winner.bottom, button.bottom) - Math.max(winner.top, button.top));
+      return winner.top >= 0 && winner.bottom <= innerHeight && winner.left >= 0 && winner.right <= innerWidth
+        && intersectionWidth * intersectionHeight === 0;
+    }), { message: `${scenario.label} winner is visible and does not overlap Pick again` }).toBe(true);
+    if (during) {
+      const after = await page.locator('.picker').evaluate(picker => {
+        const result = picker.querySelector('.result-area')!.getBoundingClientRect();
+        const roster = picker.querySelector('.roster')!.getBoundingClientRect();
+        return { resultHeight: result.height, rosterDocumentTop: roster.top + scrollY };
+      });
+      expect(Math.abs(after.resultHeight - during.resultHeight), `${scenario.label} reserves the completed result height`).toBeLessThanOrEqual(1);
+      expect(Math.abs(after.rosterDocumentTop - during.rosterDocumentTop), `${scenario.label} does not move the roster at completion`).toBeLessThanOrEqual(1);
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});
+
 test('twelve-player mobile cards, dice and coins show the last winning seat', async ({ page }) => {
   test.setTimeout(90000);
   await page.setViewportSize({ width: 320, height: 844 });

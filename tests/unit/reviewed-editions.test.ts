@@ -43,3 +43,39 @@ test('modern native identities keep component and portable rules in their review
   expect(games.find(game => game.bggId === '20551')!.rules.map(rule => rule.id)).toEqual(['shogun-queen-2006-en']);
   expect(games.find(game => game.bggId === '316554')!.rules.some(rule => rule.id.startsWith('dune-imperium-uprising-'))).toBe(false);
 });
+
+test('new native source approvals keep cooperative choices and era order on their exact identities', () => {
+  const games = getBoardGames();
+  const catalog = getCatalog();
+  for (const [ruleId, identityId] of [
+    ['the-7th-citadel-serious-poulp-en-2023', '286063'],
+    ['stonesaga-open-owl-en-rulebook-1-1', '356944'],
+    ['civolution-deep-print-us-en-1-0', '400602'],
+  ]) {
+    expect(games.filter(game => game.rules.some(rule => rule.id === ruleId)).map(game => game.bggId)).toEqual([identityId]);
+    expect(randomRuleEligible(catalog.find(rule => rule.id === ruleId)!)).toBe(false);
+  }
+  const civolution = catalog.find(rule => rule.id === 'civolution-deep-print-us-en-1-0')!;
+  expect(civolution.firstPlayerRule).toContain('does not state how');
+  expect(civolution.clarifications.join(' ')).toContain('that era’s scoring category');
+  expect(civolution.clarifications.join(' ')).toContain('including at zero');
+  expect(games.find(game => game.bggId === '434367')!.rules).toEqual([]);
+});
+
+test('archived German summaries retain selection phases and their exact native identities', () => {
+  const games = getBoardGames();
+  const catalog = getCatalog();
+  for (const [ruleId, identityId] of [
+    ['magalon-ravensburger-de-1998', '429'],
+    ['hick-hack-in-gackelwack-zoch-de-printout-2007', '2569'],
+  ]) {
+    expect(games.filter(game => game.rules.some(rule => rule.id === ruleId)).map(game => game.bggId)).toEqual([identityId]);
+    expect(randomRuleEligible(catalog.find(rule => rule.id === ruleId)!)).toBe(false);
+  }
+  const magalon = catalog.find(rule => rule.id === 'magalon-ravensburger-de-1998')!;
+  expect(magalon.firstPlayerRule).toContain('highest value takes the first action turn');
+  expect(magalon.clarifications.join(' ')).toContain('does not guarantee the first action turn');
+  const hick = catalog.find(rule => rule.id === 'hick-hack-in-gackelwack-zoch-de-printout-2007')!;
+  expect(hick.firstPlayerRule).toContain('only after all players have chosen');
+  expect(hick.tieBreakApplicable).toBe(false);
+});

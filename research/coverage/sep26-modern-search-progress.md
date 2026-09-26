@@ -46,3 +46,7 @@ Final output: 971 files, 42 shelves; directory landing 7,931 raw / 2,229 gzip by
 The next bounded product changes are a query-preserving directory action from `/games/` no-match results and ordinary links to every already-cited PDF page. Ignored `artifacts/sep26-next-seo-economics-audit.md` records verified code paths, scope and retention tradeoffs. No release-fixture cleanup was performed.
 
 Further coverage, variant review, visual/motion improvements, SEO and economics work remain active. No deployment, ranking gain, revenue gain, physical-device check or manual screen-reader result is asserted.
+
+## Subsequent local checkpoint — 2026-09-26 UTC
+
+The earlier pending observations above retain their date and preparation scope. The four identity proposals were subsequently enrolled, followed by three independently reviewed semantic identities. Citadel, Stonesaga and Civolution received exact rule approvals after root completed their source context; root also reviewed every Magalon and Hick Hack page and approved their explicitly archived German summaries. Rules-page directory recovery and complete cited-PDF-page navigation were implemented, with a separate startup-race and large-group result follow-up. The final combined evidence is recorded in [the next source and UX checkpoint](sep26-next-native-source-pages-progress.md). Nippon's final manual, Rüsselbande proof-to-final equivalence, Uprising variants and other historical proposals remain held.

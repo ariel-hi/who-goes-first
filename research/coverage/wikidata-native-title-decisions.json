@@ -5,17 +5,17 @@
   "sourceSnapshotSha256": "d13f929adfeb2a0b8a163497b5b45ff3627c7914e7381c86a74152fa575e31b0",
   "sourceSnapshotStatementSha256": "65ce20420ac25bf7bd9421378470d07ce39f5e7c8040b541cea310f1cf95ab5b",
   "sourceSnapshotEntitiesSha256": "fcca4c520fc5a80f8ff01a9c9ef00977a6dfb2a3f9d61d47beac037436f489f9",
-  "scope": "Supplementary identity-only decisions for the complete native/mul/P1476 pool. Accept means direct primary identity evidence corroborates a discovery name; it approves no rule, edition transfer, active inventory enrollment or deployment. Every other candidate is held. Numeric identifiers and QID provenance are official Wikidata CC0. Primary publisher/author title and authorship facts are individually observed, not a BoardGameGeek corpus. No BoardGameGeek destination, API or page content was fetched.",
-  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held.",
+  "scope": "Supplementary identity-only decisions for the complete native/mul/P1476 pool. Accept means direct primary identity evidence corroborates a discovery name for exact runtime inventory enrollment; it approves no starting-player rule, edition transfer or deployment. Every other candidate is held. Numeric identifiers and QID provenance are official Wikidata CC0. Primary publisher/author title and authorship facts are individually observed, not a BoardGameGeek corpus. No BoardGameGeek destination, API or page content was fetched.",
+  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained.",
   "counts": {
     "totalCandidates": 288,
-    "reviewed": 25,
-    "unreviewed": 263,
-    "accept": 18,
-    "hold": 270,
+    "reviewed": 35,
+    "unreviewed": 253,
+    "accept": 25,
+    "hold": 263,
     "priorUnheldReviewed": 13,
     "priorUnheldAccepted": 10,
-    "additionalAccepted": 8
+    "additionalAccepted": 15
   },
   "sources": {
     "kramer-author": {
@@ -281,6 +281,360 @@
       "inspectedOn": "2026-09-26",
       "observedEvidence": "Current rendered/raw product collection redirects to a general collection and references Original and Bingo. Territory and edition identity are not established for the Wikidata 2022 ID.",
       "use": "Identity facts only; no starting-player text is approved or copied."
+    },
+    "deepprint-civolution": {
+      "sourceId": "deepprint-civolution",
+      "candidateId": "400602",
+      "url": "https://www.deep-print-games.com/en/spiele/civolution/",
+      "retrievedAt": "2026-09-26T04:16:45.421257+00:00",
+      "finalUrl": "https://www.deep-print-games.com/en/spiele/civolution/",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/deepprint-civolution.html",
+      "byteCount": 262545,
+      "sha256": "6ef2c592897757e1c72d201dd4a1804328354aa2d32b768a24b0066638f7a96a",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/400602/civolution",
+          "rawId": "400602",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "kind": "primary-publisher",
+      "identityFacts": "The original publisher identifies Civolution with Stefan Feld and Dennis Lohausen, October 2024. Its direct game-ID href is 400602.",
+      "startingRuleApproved": false,
+      "title": "Civolution – Deep Print Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The original publisher identifies Civolution with Stefan Feld and Dennis Lohausen, October 2024. Its direct game-ID href is 400602.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "mindclash-ironwood": {
+      "sourceId": "mindclash-ironwood",
+      "candidateId": "407343",
+      "url": "https://mindclashgames.com/news/introducing-ironwood/",
+      "retrievedAt": "2026-09-26T04:16:45.422268+00:00",
+      "finalUrl": "https://mindclashgames.com/news/introducing-ironwood/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/mindclash-ironwood.html",
+      "byteCount": 68168,
+      "sha256": "bf79424707e4ef39f3aa57045ce14a025ae5d82021f4d54f78b8d75e23fb1bf4",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher identifies Ironwood; no matching raw numeric game ID found in fetched content.",
+      "startingRuleApproved": false,
+      "title": "Ironwood - Mindclash Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher identifies Ironwood; no matching raw numeric game ID found in fetched content.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "mindclash-ironwood-shop": {
+      "sourceId": "mindclash-ironwood-shop",
+      "candidateId": "407343",
+      "url": "https://us.shop.mindclashgames.com/product/ironwood/",
+      "retrievedAt": "2026-09-26T04:16:45.422268+00:00",
+      "finalUrl": "https://us.shop.mindclashgames.com/product/ironwood/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/mindclash-ironwood-shop.html",
+      "byteCount": 134420,
+      "sha256": "ef2779a374f7ab75c9913a99e360ac072b1cfdd651d034eb6a304abe302df01c",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher sells Ironwood as a main game and separately lists the Promo Pack. No independent numeric game ID found.",
+      "startingRuleApproved": false,
+      "title": "Ironwood – Mindclash Games – Webshop – US&Canada",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher sells Ironwood as a main game and separately lists the Promo Pack. No independent numeric game ID found.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "capstone-horizon": {
+      "sourceId": "capstone-horizon",
+      "candidateId": "421310",
+      "url": "https://capstone-games.com/products/beyond-the-horizon",
+      "retrievedAt": "2026-09-26T04:16:45.423268+00:00",
+      "finalUrl": "https://capstone-games.com/products/beyond-the-horizon",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/capstone-horizon.html",
+      "byteCount": 726592,
+      "sha256": "ff242569506078bdf6cc06591991559b36c6eb08252685d9d9d563b2cd435877",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher names Beyond the Horizon as a product. No independent numeric game ID found.",
+      "startingRuleApproved": false,
+      "title": "Beyond the Horizon – Capstone Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher names Beyond the Horizon as a product. No independent numeric game ID found.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "crowd-nippon": {
+      "sourceId": "crowd-nippon",
+      "candidateId": "434367",
+      "url": "https://crowdgames.us/our-products/nippon-zaibatsu/",
+      "retrievedAt": "2026-09-26T04:16:45.719331+00:00",
+      "finalUrl": "https://crowdgames.us/our-products/nippon-zaibatsu/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/crowd-nippon.html",
+      "byteCount": 211275,
+      "sha256": "a2eb568fdeb2b4027f1b1056a00ab3d59bdf52c53a57b650b6d10e7e86cdbb5b",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/434367/nippon-zaibatsu/files",
+          "rawId": "434367",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        },
+        {
+          "href": "https://boardgamegeek.com/boardgame/434367/nippon-zaibatsu",
+          "rawId": "434367",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher identifies Nippon: Zaibatsu as its enhanced/reimagined edition made with Paulo Soledade and Nuno Bizarro Sentieiro, distinct from 2015 Nippon. It exposes exact 434367 game-ID hrefs.",
+      "startingRuleApproved": false,
+      "title": "Nippon: Zaibatsu – CrowD Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher identifies Nippon: Zaibatsu as its enhanced/reimagined edition made with Paulo Soledade and Nuno Bizarro Sentieiro, distinct from 2015 Nippon. It exposes exact 434367 game-ID hrefs.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "flatout-knitting": {
+      "sourceId": "flatout-knitting",
+      "candidateId": "421606",
+      "url": "https://www.flatout.games/knitting-circle",
+      "retrievedAt": "2026-09-26T04:16:45.948343+00:00",
+      "finalUrl": "https://www.flatout.games/knitting-circle",
+      "contentType": "text/html;charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/flatout-knitting.html",
+      "byteCount": 72380,
+      "sha256": "53395683e6bd19964e71ae5f63b7f16f512b3335931347000ecc2106ada85bea",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher calls Knitting Circle a standalone follow-up to Calico. No independent numeric game ID found.",
+      "startingRuleApproved": false,
+      "title": "Knitting Circle — FLATOUT GAMES",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher calls Knitting Circle a standalone follow-up to Calico. No independent numeric game ID found.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "aeg-knitting": {
+      "sourceId": "aeg-knitting",
+      "candidateId": "421606",
+      "url": "https://www.alderac.com/knitting-circle/",
+      "retrievedAt": "2026-09-26T04:16:46.071569+00:00",
+      "finalUrl": "https://www.alderac.com/knitting-circle/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/aeg-knitting.html",
+      "byteCount": 332585,
+      "sha256": "a00a54ca28d56ee8f77d7791adec3c56ea1ab823c71b5e7756f5464bd6e10c2a",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher identifies Knitting Circle and Emily Vincent. No independent numeric game ID found.",
+      "startingRuleApproved": false,
+      "title": "Knitting Circle - ALDERAC ENTERTAINMENT GROUP",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher identifies Knitting Circle and Emily Vincent. No independent numeric game ID found.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "serious-citadel": {
+      "sourceId": "serious-citadel",
+      "candidateId": "286063",
+      "url": "https://the7thcitadel.seriouspoulp.com/",
+      "retrievedAt": "2026-09-26T04:16:46.991466+00:00",
+      "finalUrl": "https://the7thcitadel.seriouspoulp.com/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/serious-citadel.html",
+      "byteCount": 42085,
+      "sha256": "e5d920bbb73177d22c25112392ea8dffb8f24dc3abd40f2b89d935a7732d8832",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/286063/7th-citadel",
+          "rawId": "286063",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "kind": "primary-publisher",
+      "identityFacts": "The original publisher identifies The 7th Citadel as its new cooperative adventure game, distinct from The 7th Continent, with a direct 286063 game-ID href.",
+      "startingRuleApproved": false,
+      "title": "The 7th Citadel - Serious Poulp",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The original publisher identifies The 7th Citadel as its new cooperative adventure game, distinct from The 7th Continent, with a direct 286063 game-ID href.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "chip-wroth": {
+      "sourceId": "chip-wroth",
+      "candidateId": "414117",
+      "url": "https://chiptheorygames.com/products/wroth-base-game",
+      "retrievedAt": "2026-09-26T04:16:47.005190+00:00",
+      "finalUrl": "https://chiptheorygames.com/products/wroth-base-game",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/chip-wroth.html",
+      "byteCount": 369732,
+      "sha256": "acc2243c6a8b69b7a0e0ba63e51b3ea06b5d24bb1db673d99e0f2386523a6b90",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher’s shop identifies Wroth as a Neon Knight Games base game. No independent numeric game ID found.",
+      "startingRuleApproved": false,
+      "title": "Wroth – Chip Theory Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher’s shop identifies Wroth as a Neon Knight Games base game. No independent numeric game ID found.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "chip-wroth-support": {
+      "sourceId": "chip-wroth-support",
+      "candidateId": "414117",
+      "url": "https://chiptheorygames.com/pages/support/wroth",
+      "retrievedAt": "2026-09-26T04:16:47.430096+00:00",
+      "finalUrl": "https://chiptheorygames.com/pages/support/wroth",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/chip-wroth-support.html",
+      "byteCount": 306843,
+      "sha256": "e274a13f1829d86fb6dce9dc9d66b7d0351fc7bf5608c7239360b99e90f68a20",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher’s Wroth support page is reachable but has no exact numeric game-ID href in fetched content.",
+      "startingRuleApproved": false,
+      "title": "Wroth – Chip Theory Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher’s Wroth support page is reachable but has no exact numeric game-ID href in fetched content.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "aeg-reckoning": {
+      "sourceId": "aeg-reckoning",
+      "candidateId": "276182",
+      "url": "https://www.alderac.com/dead-reckoning/",
+      "retrievedAt": "2026-09-26T04:16:47.746141+00:00",
+      "finalUrl": "https://www.alderac.com/dead-reckoning/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/aeg-reckoning.html",
+      "byteCount": 480163,
+      "sha256": "526b41ff61d1bd4abf7ea37ad7e96f740ff272d4e8179a84db493f065f6385f2",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher identifies Dead Reckoning. Its designer-diary links are thread IDs, not raw game ID 276182, and are not treated as game-ID evidence.",
+      "startingRuleApproved": false,
+      "title": "Dead Reckoning - ALDERAC ENTERTAINMENT GROUP",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher identifies Dead Reckoning. Its designer-diary links are thread IDs, not raw game ID 276182, and are not treated as game-ID evidence.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "sesame-cyclades": {
+      "sourceId": "sesame-cyclades",
+      "candidateId": "380619",
+      "url": "https://open-sesame.games/cyclades-legendary-edition/",
+      "retrievedAt": "2026-09-26T04:16:48.044800+00:00",
+      "finalUrl": "https://open-sesame.games/cyclades-legendary-edition/",
+      "contentType": "text/html; charset=UTF-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/sesame-cyclades.html",
+      "byteCount": 115135,
+      "sha256": "bd744c179cdb9885b5a118dcd60b9c9e1e2cdc570faa5a8d3e49d4bec85e064d",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher identifies Cyclades Legendary Edition as its reworked base game. No independent numeric game ID found; not merged with original Cyclades.",
+      "startingRuleApproved": false,
+      "title": "Cyclades Legendary Edition – Open Sesame Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher identifies Cyclades Legendary Edition as its reworked base game. No independent numeric game ID found; not merged with original Cyclades.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "hachette-cyclades": {
+      "sourceId": "hachette-cyclades",
+      "candidateId": "380619",
+      "url": "https://www.hachetteboardgames.com/products/cyclades",
+      "retrievedAt": "2026-09-26T04:16:48.108029+00:00",
+      "finalUrl": "https://www.hachetteboardgames.com/products/cyclades",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/hachette-cyclades.html",
+      "byteCount": 352234,
+      "sha256": "8ff0ec6e82bd1b860ed0bcc63f6015e84a52723e7be1723b46ef7f2c3dfc6e77",
+      "externalIdEvidence": [],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher/distributor identifies the Legendary Edition product under a shorter Cyclades heading. No independent numeric game ID found.",
+      "startingRuleApproved": false,
+      "title": "Cyclades – Hachette Boardgames US",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher/distributor identifies the Legendary Edition product under a shorter Cyclades heading. No independent numeric game ID found.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "owl-stonesaga": {
+      "sourceId": "owl-stonesaga",
+      "candidateId": "356944",
+      "url": "https://openowlstudios.com/products/stonesaga",
+      "retrievedAt": "2026-09-26T04:17:34.747026+00:00",
+      "finalUrl": "https://openowlstudios.com/products/stonesaga",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/owl-stonesaga.html",
+      "byteCount": 305744,
+      "sha256": "a74cf959685b8a80be9afbc6594d64b782ba375c46e9910e5992103dbcf75efb",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/356944/stonesaga",
+          "rawId": "356944",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        },
+        {
+          "href": "https://boardgamegeek.com/boardgame/356944/stonesaga",
+          "rawId": "356944",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "kind": "primary-publisher",
+      "identityFacts": "The original publisher identifies Stonesaga as a base product, separately listing its expansions, and contains an exact 356944 game-ID href.",
+      "startingRuleApproved": false,
+      "title": "Stonesaga – Open Owl Studios",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "The original publisher identifies Stonesaga as a base product, separately listing its expansions, and contains an exact 356944 game-ID href.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "owl-stonesaga-story": {
+      "sourceId": "owl-stonesaga-story",
+      "candidateId": "356944",
+      "url": "https://openowlstudios.com/pages/stonesaga-1",
+      "retrievedAt": "2026-09-26T04:17:35.233021+00:00",
+      "finalUrl": "https://openowlstudios.com/pages/stonesaga-1",
+      "contentType": "text/html; charset=utf-8",
+      "status": "retrieved",
+      "cacheFile": "research/source-files/native-next-identities/owl-stonesaga-story.html",
+      "byteCount": 203840,
+      "sha256": "cd11d8f4b5c372b74d7c535f8d7d34a13fa9816f4402e08743edf64bd28c6344",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/356944/stonesaga",
+          "rawId": "356944",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "kind": "primary-publisher",
+      "identityFacts": "Publisher identifies Stonesaga with Max Brooke and Luke Eddy and exposes the exact 356944 game-ID href.",
+      "startingRuleApproved": false,
+      "title": "Stonesaga – Open Owl Studios",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Publisher identifies Stonesaga with Max Brooke and Luke Eddy and exposes the exact 356944 game-ID href.",
+      "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
     }
   },
   "unusableAttemptNotes": [
@@ -6488,12 +6842,23 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root independently corroborated the preserved discovery identity through exact primary creator/publisher/product facts. Numeric ID provenance remains the unchanged Wikidata P2339 statement; no independently observed primary numeric BGG href.",
+      "identityEvidence": [
+        "Strong semantic identity corroboration: exact title, designer/developer, publisher and independently matching Kickstarter project identifier. The preserved Wikidata P2339 remains the numeric-ID source; no primary-hosted BGG href is claimed.",
+        "Exact named main game in the publisher's own product description, not a review or another promoted game.",
+        "Related official QID label John D Clair matches the primary design credit. Saved property is developer (P178); primary calls him game designer, so this is a person identity match without rewriting the saved role.",
+        "Saved publisher resolves to Alderac Entertainment Group; official QID website alderac.com matches the primary host and named rights holder. Copyright 2020 is not treated as release date.",
+        "Primary-hosted literal anchor preserves the exact saved campaign/project slug; /posts is campaign context, not a different project. Destination not requested.",
+        "Primary product facts are 14+,1–4 players,90 minutes. Saved claims are14+,1–4 and90/150 minutes.90 agrees;150 is not corroborated by this page."
+      ],
+      "sourceIds": [
+        "aeg-reckoning"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.alderac.com/dead-reckoning/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -6507,7 +6872,269 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/183",
+        "candidateSha256": "487de4e91a4ff0a58d784b66d25c5c9075b4581e810654f2b8d4f9384b3dd1ea",
+        "wikidataId": "Q125603185",
+        "revision": 2547514067,
+        "modified": "2026-09-18T17:57:58Z",
+        "entitySha256": "9ed5c971fa46e542457083027ed669af160ca907e331b2cff5b9bd1f1770ab51",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "0d91e630f7293807e5262e361e8d1239c5110bc0",
+              "datavalue": {
+                "value": "276182",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q125603185$44bc2cf0-442a-cf8d-70b4-161dafe246e0",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "Base named identity only. Separately listed Sea Dogs/Saga/solo content and localized printings receive no rule or edition transfer.",
+        "Saved2022 publication year and Lavka Games2025 regional qualifier are not independently established by this current page.",
+        "No direct numeric BGG href: semantic item corroboration and preserved official P2339, not independent numeric re-verification."
+      ],
+      "identityReviewHistory": [
+        {
+          "stage": "initial-exact-numeric-href-review",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "f4a51ee9b6068bb9f118a8f4f1d1f88b215395669823791975ff9c12e8df1376",
+          "fullPreviousDecision": {
+            "bggId": "276182",
+            "wikidataItems": [
+              "Q125603185"
+            ],
+            "displayName": "Dead Reckoning",
+            "selectedTitle": {
+              "wikidataId": "Q125603185",
+              "text": "Dead Reckoning",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": true,
+            "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+            "identityEvidence": [
+              "Publisher identifies Dead Reckoning. Its designer-diary links are thread IDs, not raw game ID 276182, and are not treated as game-ID evidence."
+            ],
+            "sourceIds": [
+              "aeg-reckoning"
+            ],
+            "attemptedPrimaryUrls": [
+              "https://www.alderac.com/dead-reckoning/"
+            ],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q125603185",
+                "revision": 2547514067,
+                "entitySha256": "9ed5c971fa46e542457083027ed669af160ca907e331b2cff5b9bd1f1770ab51",
+                "statements": [
+                  "Q125603185$44bc2cf0-442a-cf8d-70b4-161dafe246e0"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false,
+            "independentRawIdEvidence": [],
+            "idEvidenceStatus": "wikidata-statement-only",
+            "snapshotReference": {
+              "path": "research/coverage/wikidata-native-title-leads.json",
+              "jsonPointer": "/candidates/183",
+              "candidateSha256": "487de4e91a4ff0a58d784b66d25c5c9075b4581e810654f2b8d4f9384b3dd1ea",
+              "wikidataId": "Q125603185",
+              "revision": 2547514067,
+              "modified": "2026-09-18T17:57:58Z",
+              "entitySha256": "9ed5c971fa46e542457083027ed669af160ca907e331b2cff5b9bd1f1770ab51",
+              "matchingP2339Statements": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2339",
+                    "hash": "0d91e630f7293807e5262e361e8d1239c5110bc0",
+                    "datavalue": {
+                      "value": "276182",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q125603185$44bc2cf0-442a-cf8d-70b4-161dafe246e0",
+                  "rank": "normal"
+                }
+              ]
+            },
+            "editionNotes": []
+          }
+        }
+      ],
+      "identityCorroborationStatus": "primary-semantic-corroboration",
+      "semanticIdentityEvidence": {
+        "scope": "Discovery identity only; no rule, printing/date equivalence, or deployment approval.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "aeg-reckoning",
+            "url": "https://www.alderac.com/dead-reckoning/",
+            "finalUrl": "https://www.alderac.com/dead-reckoning/",
+            "retrievedAt": "2026-09-26T04:16:47.746141+00:00",
+            "cacheFile": "research/source-files/native-next-identities/aeg-reckoning.html",
+            "sha256": "526b41ff61d1bd4abf7ea37ad7e96f740ff272d4e8179a84db493f065f6385f2",
+            "byteCount": 480163,
+            "externalIdEvidence": []
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q125603185",
+          "revision": 2547514067,
+          "modified": "2026-09-18T17:57:58Z",
+          "entitySha256": "9ed5c971fa46e542457083027ed669af160ca907e331b2cff5b9bd1f1770ab51",
+          "snapshotJsonPointer": "/candidates/183",
+          "candidateSha256": "487de4e91a4ff0a58d784b66d25c5c9075b4581e810654f2b8d4f9384b3dd1ea"
+        },
+        "sourceBoundComparisons": {
+          "file": "research/source-files/native-held-crosscheck/findings.json",
+          "sha256": "583e03c126a8170ff384bef1d8cfec2ddca1cc4cb7a1f20d2e0e8b17902c64df",
+          "jsonPointer": "/findings/0/checks"
+        },
+        "relatedQidResolution": {
+          "source": "official-wikidata-api",
+          "requestUrl": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q82411%7CQ993139%7CQ1932592%7CQ2832284%7CQ2866722%7CQ9265444%7CQ18816824%7CQ56815985%7CQ66439215%7CQ67809208%7CQ104159841%7CQ107975047%7CQ123159223%7CQ124827469%7CQ125395837%7CQ125601246%7CQ125601272%7CQ125680931%7CQ126540283%7CQ126908283%7CQ133868821%7CQ134451123&props=labels%7Caliases%7Cdescriptions%7Cclaims%7Cinfo&format=json",
+          "finalUrl": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q82411%7CQ993139%7CQ1932592%7CQ2832284%7CQ2866722%7CQ9265444%7CQ18816824%7CQ56815985%7CQ66439215%7CQ67809208%7CQ104159841%7CQ107975047%7CQ123159223%7CQ124827469%7CQ125395837%7CQ125601246%7CQ125601272%7CQ125680931%7CQ126540283%7CQ126908283%7CQ133868821%7CQ134451123&props=labels%7Caliases%7Cdescriptions%7Cclaims%7Cinfo&format=json",
+          "retrievedAt": "2026-09-26T05:15:46.026800+00:00",
+          "requestMetadataFile": "research/source-files/native-held-crosscheck/related-qids-request.json",
+          "requestMetadataSha256": "21346e6e882c75ee82cfdb5a5ad4834565e4b8a5f18eca18b296a6d950a348de",
+          "responseFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "responseSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141",
+          "responseByteCount": 259337,
+          "entities": [
+            {
+              "wikidataId": "Q2832284",
+              "revision": 2542580893,
+              "modified": "2026-09-09T06:46:18Z",
+              "entitySha256": "42348d8131eb3b385b1512e63748ff163b5f9bbbee3e32564b57635890d0f777",
+              "labels": {
+                "fr": {
+                  "language": "fr",
+                  "value": "Alderac Entertainment Group"
+                },
+                "en": {
+                  "language": "en",
+                  "value": "Alderac Entertainment Group"
+                },
+                "nl": {
+                  "language": "nl",
+                  "value": "Alderac Entertainment Group"
+                },
+                "it": {
+                  "language": "it",
+                  "value": "Alderac Entertainment Group"
+                },
+                "de": {
+                  "language": "de",
+                  "value": "Alderac Entertainment Group"
+                },
+                "es": {
+                  "language": "es",
+                  "value": "Alderac Entertainment Group"
+                },
+                "mul": {
+                  "language": "mul",
+                  "value": "Alderac Entertainment Group"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "f3052dbe1db14327df851441091f01bcc4e8cd16",
+                    "datavalue": {
+                      "value": "http://www.alderac.com/",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 1860,
+                            "id": "Q1860"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q2832284$CAAF73A0-3C27-479B-B2B3-0CCCC0381702",
+                  "rank": "normal"
+                }
+              ],
+              "responseJsonPointer": "/entities/Q2832284"
+            },
+            {
+              "wikidataId": "Q125601272",
+              "revision": 2181769588,
+              "modified": "2024-06-17T01:41:46Z",
+              "entitySha256": "121f94e3e833e29a8407e7b1e301ef9006cff3942e1f2ca342ffe8702d706571",
+              "labels": {
+                "en": {
+                  "language": "en",
+                  "value": "John D Clair"
+                },
+                "ru": {
+                  "language": "ru",
+                  "value": "Джон Клэр"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [],
+              "responseJsonPointer": "/entities/Q125601272"
+            }
+          ]
+        },
+        "independentReview": {
+          "memo": "artifacts/sep26-native-held-root-review.md",
+          "sha256": "68b5c37d7a46f5ef3fca1beb48135d7c6657e55645fc94e0735f3fd7eed67aff",
+          "reviewedOn": "2026-09-26",
+          "decision": "accept-discovery-identity-after-frozen-run"
+        },
+        "crosscheckManifest": {
+          "file": "research/source-files/native-held-crosscheck/manifest.json",
+          "sha256": "b5d8bb232bdbb38897e24e9cf3440244bd68d46868b5786f41c1fadd5e93cbdb"
+        },
+        "limits": [
+          "Base named identity only. Separately listed Sea Dogs/Saga/solo content and localized printings receive no rule or edition transfer.",
+          "Saved2022 publication year and Lavka Games2025 regional qualifier are not independently established by this current page.",
+          "No direct numeric BGG href: semantic item corroboration and preserved official P2339, not independent numeric re-verification."
+        ]
+      }
     },
     {
       "bggId": "279203",
@@ -6554,12 +7181,18 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Direct primary identity evidence independently reviewed; exact discovery identity enrollment only.",
+      "identityEvidence": [
+        "The original publisher identifies The 7th Citadel as its new cooperative adventure game, distinct from The 7th Continent, with a direct 286063 game-ID href."
+      ],
+      "sourceIds": [
+        "serious-citadel"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://the7thcitadel.seriouspoulp.com/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -6573,7 +7206,47 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "serious-citadel",
+          "href": "https://boardgamegeek.com/boardgame/286063/7th-citadel",
+          "rawId": "286063",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/185",
+        "candidateSha256": "f056e58b5f4fe540beba65115be6ce5142736bbac6aeaf134e2de26f77bd8675",
+        "wikidataId": "Q140461922",
+        "revision": 2547513637,
+        "modified": "2026-09-18T17:55:35Z",
+        "entitySha256": "d93b38e9f71609010dbd63c3ccd2040ce81ef28d62f12813dc4781db1116924d",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "e335a1fa7fd789e23202dc5b502652f652cd7645",
+              "datavalue": {
+                "value": "286063",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q140461922$36c5744c-4f63-563f-1c2f-9da952ad36bb",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "The 7th Citadel is distinct from The 7th Continent; no rule transfer is approved."
+      ]
     },
     {
       "bggId": "299169",
@@ -7432,12 +8105,21 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Direct primary identity evidence independently reviewed; exact discovery identity enrollment only.",
+      "identityEvidence": [
+        "The original publisher identifies Stonesaga as a base product, separately listing its expansions, and contains an exact 356944 game-ID href.",
+        "Publisher identifies Stonesaga with Max Brooke and Luke Eddy and exposes the exact 356944 game-ID href."
+      ],
+      "sourceIds": [
+        "owl-stonesaga",
+        "owl-stonesaga-story"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://openowlstudios.com/products/stonesaga",
+        "https://openowlstudios.com/pages/stonesaga-1"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -7451,7 +8133,63 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "owl-stonesaga",
+          "href": "https://boardgamegeek.com/boardgame/356944/stonesaga",
+          "rawId": "356944",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        },
+        {
+          "sourceId": "owl-stonesaga",
+          "href": "https://boardgamegeek.com/boardgame/356944/stonesaga",
+          "rawId": "356944",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        },
+        {
+          "sourceId": "owl-stonesaga-story",
+          "href": "https://boardgamegeek.com/boardgame/356944/stonesaga",
+          "rawId": "356944",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/211",
+        "candidateSha256": "83b48d9fdefe0b64f648548b46c81e61e2e66bcb8f16ccf0f9aafaff76216518",
+        "wikidataId": "Q140019373",
+        "revision": 2529351803,
+        "modified": "2026-08-09T21:05:39Z",
+        "entitySha256": "f627408c02676936d92390c6141c72a84fb95ca615c14e9399c9958d03b78b94",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "1d06360acdea147ce7f65b269435ab3f9686eb8a",
+              "datavalue": {
+                "value": "356944",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q140019373$D3E206B1-0062-4BB3-9F92-17F4F3BC7076",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "The source independently maps the game ID but does not independently establish the item-wide 2026 publication year for every territory or printing."
+      ]
     },
     {
       "bggId": "359029",
@@ -7964,12 +8702,27 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root independently corroborated the preserved discovery identity through exact primary creator/publisher/product facts. Numeric ID provenance remains the unchanged Wikidata P2339 statement; no independently observed primary numeric BGG href.",
+      "identityEvidence": [
+        "Strong edition-specific semantic match: exact Legendary Edition title, both creators, illustrator, Open Sesame publisher and explicit reworking of original Cyclades. No original-game merger or direct numeric href is claimed.",
+        "Exact Legendary Edition product body distinguishes the redesigned base game from its original and expansions.",
+        "Official related QID Bruno Cathala matches one named creator.",
+        "Official related QID Ludovic Maublanc matches the other named creator.",
+        "Official publisher QID Open Sesame Games has P856 https://open-sesame.games, matching this publisher-hosted product and OSG authorship markers.",
+        "Official related QID Miguel Coimbra matches the primary illustration credit.",
+        "Saved based-on target resolves to original Cyclades; primary authors explicitly rework original Cyclades and its expansions. Relation corroborates separate identity, not original-game equivalence.",
+        "Distributor product body matches2–6 players,13+,60–90 minutes and explicitly identifies Legendary Edition despite shorter Cyclades heading."
+      ],
+      "sourceIds": [
+        "sesame-cyclades",
+        "hachette-cyclades"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://open-sesame.games/cyclades-legendary-edition/",
+        "https://www.hachetteboardgames.com/products/cyclades"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -7983,7 +8736,863 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/227",
+        "candidateSha256": "3b79afcf8abeac1cb70f450e809f566b38b52245af91c8cd54091d9b0cfa072f",
+        "wikidataId": "Q133273087",
+        "revision": 2529351488,
+        "modified": "2026-08-09T21:04:28Z",
+        "entitySha256": "230029ef273a00109a3d1a9e39f1b8e11d52ec2aedc27d0e54b74dcdaf613b9a",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "7c0fd44fe80a80bd3a4bb405418349b2b6604972",
+              "datavalue": {
+                "value": "380619",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q133273087$DE1B26E0-8413-4B40-B2C0-6B4C52008565",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "Legendary Edition is separately identified; original Cyclades and its expansions are not assumed equivalent.",
+        "Saved P5772024 is not substituted for Hachette's April16,2025 product release. Different territory/printing context is possible but not independently resolved.",
+        "Hachette lists Studio H; original Open Sesame publisher identity is separately verified against Q134451123. No corporate relationship is inferred from those distinct brands.",
+        "Classic/team/two-player configurations are product identity context, not reviewed opening rules.",
+        "No numeric BGG href: numeric claim provenance remains the preserved official statement."
+      ],
+      "identityReviewHistory": [
+        {
+          "stage": "initial-exact-numeric-href-review",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "f4a51ee9b6068bb9f118a8f4f1d1f88b215395669823791975ff9c12e8df1376",
+          "fullPreviousDecision": {
+            "bggId": "380619",
+            "wikidataItems": [
+              "Q133273087"
+            ],
+            "displayName": "Cyclades: Legendary Edition",
+            "selectedTitle": {
+              "wikidataId": "Q133273087",
+              "text": "Cyclades: Legendary Edition",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": true,
+            "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+            "identityEvidence": [
+              "Publisher identifies Cyclades Legendary Edition as its reworked base game. No independent numeric game ID found; not merged with original Cyclades.",
+              "Publisher/distributor identifies the Legendary Edition product under a shorter Cyclades heading. No independent numeric game ID found."
+            ],
+            "sourceIds": [
+              "sesame-cyclades",
+              "hachette-cyclades"
+            ],
+            "attemptedPrimaryUrls": [
+              "https://open-sesame.games/cyclades-legendary-edition/",
+              "https://www.hachetteboardgames.com/products/cyclades"
+            ],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q133273087",
+                "revision": 2529351488,
+                "entitySha256": "230029ef273a00109a3d1a9e39f1b8e11d52ec2aedc27d0e54b74dcdaf613b9a",
+                "statements": [
+                  "Q133273087$DE1B26E0-8413-4B40-B2C0-6B4C52008565"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false,
+            "independentRawIdEvidence": [],
+            "idEvidenceStatus": "wikidata-statement-only",
+            "snapshotReference": {
+              "path": "research/coverage/wikidata-native-title-leads.json",
+              "jsonPointer": "/candidates/227",
+              "candidateSha256": "3b79afcf8abeac1cb70f450e809f566b38b52245af91c8cd54091d9b0cfa072f",
+              "wikidataId": "Q133273087",
+              "revision": 2529351488,
+              "modified": "2026-08-09T21:04:28Z",
+              "entitySha256": "230029ef273a00109a3d1a9e39f1b8e11d52ec2aedc27d0e54b74dcdaf613b9a",
+              "matchingP2339Statements": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2339",
+                    "hash": "7c0fd44fe80a80bd3a4bb405418349b2b6604972",
+                    "datavalue": {
+                      "value": "380619",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q133273087$DE1B26E0-8413-4B40-B2C0-6B4C52008565",
+                  "rank": "normal"
+                }
+              ]
+            },
+            "editionNotes": [
+              "Legendary Edition is separately identified; original Cyclades and its expansions are not assumed equivalent."
+            ]
+          }
+        }
+      ],
+      "identityCorroborationStatus": "primary-semantic-corroboration",
+      "semanticIdentityEvidence": {
+        "scope": "Discovery identity only; no rule, printing/date equivalence, or deployment approval.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "sesame-cyclades",
+            "url": "https://open-sesame.games/cyclades-legendary-edition/",
+            "finalUrl": "https://open-sesame.games/cyclades-legendary-edition/",
+            "retrievedAt": "2026-09-26T04:16:48.044800+00:00",
+            "cacheFile": "research/source-files/native-next-identities/sesame-cyclades.html",
+            "sha256": "bd744c179cdb9885b5a118dcd60b9c9e1e2cdc570faa5a8d3e49d4bec85e064d",
+            "byteCount": 115135,
+            "externalIdEvidence": []
+          },
+          {
+            "sourceId": "hachette-cyclades",
+            "url": "https://www.hachetteboardgames.com/products/cyclades",
+            "finalUrl": "https://www.hachetteboardgames.com/products/cyclades",
+            "retrievedAt": "2026-09-26T04:16:48.108029+00:00",
+            "cacheFile": "research/source-files/native-next-identities/hachette-cyclades.html",
+            "sha256": "8ff0ec6e82bd1b860ed0bcc63f6015e84a52723e7be1723b46ef7f2c3dfc6e77",
+            "byteCount": 352234,
+            "externalIdEvidence": []
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q133273087",
+          "revision": 2529351488,
+          "modified": "2026-08-09T21:04:28Z",
+          "entitySha256": "230029ef273a00109a3d1a9e39f1b8e11d52ec2aedc27d0e54b74dcdaf613b9a",
+          "snapshotJsonPointer": "/candidates/227",
+          "candidateSha256": "3b79afcf8abeac1cb70f450e809f566b38b52245af91c8cd54091d9b0cfa072f"
+        },
+        "sourceBoundComparisons": {
+          "file": "research/source-files/native-held-crosscheck/findings.json",
+          "sha256": "583e03c126a8170ff384bef1d8cfec2ddca1cc4cb7a1f20d2e0e8b17902c64df",
+          "jsonPointer": "/findings/1/checks"
+        },
+        "relatedQidResolution": {
+          "source": "official-wikidata-api",
+          "requestUrl": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q82411%7CQ993139%7CQ1932592%7CQ2832284%7CQ2866722%7CQ9265444%7CQ18816824%7CQ56815985%7CQ66439215%7CQ67809208%7CQ104159841%7CQ107975047%7CQ123159223%7CQ124827469%7CQ125395837%7CQ125601246%7CQ125601272%7CQ125680931%7CQ126540283%7CQ126908283%7CQ133868821%7CQ134451123&props=labels%7Caliases%7Cdescriptions%7Cclaims%7Cinfo&format=json",
+          "finalUrl": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q82411%7CQ993139%7CQ1932592%7CQ2832284%7CQ2866722%7CQ9265444%7CQ18816824%7CQ56815985%7CQ66439215%7CQ67809208%7CQ104159841%7CQ107975047%7CQ123159223%7CQ124827469%7CQ125395837%7CQ125601246%7CQ125601272%7CQ125680931%7CQ126540283%7CQ126908283%7CQ133868821%7CQ134451123&props=labels%7Caliases%7Cdescriptions%7Cclaims%7Cinfo&format=json",
+          "retrievedAt": "2026-09-26T05:15:46.026800+00:00",
+          "requestMetadataFile": "research/source-files/native-held-crosscheck/related-qids-request.json",
+          "requestMetadataSha256": "21346e6e882c75ee82cfdb5a5ad4834565e4b8a5f18eca18b296a6d950a348de",
+          "responseFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "responseSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141",
+          "responseByteCount": 259337,
+          "entities": [
+            {
+              "wikidataId": "Q82411",
+              "revision": 2522915789,
+              "modified": "2026-07-26T13:24:43Z",
+              "entitySha256": "0f61fac0b0fd6bda395eeed6d7fd75869147ca23eaf7a6e34b6262497b56b410",
+              "labels": {
+                "af": {
+                  "language": "af",
+                  "value": "Ludovic Maublanc"
+                },
+                "an": {
+                  "language": "an",
+                  "value": "Ludovic Maublanc"
+                },
+                "ast": {
+                  "language": "ast",
+                  "value": "Ludovic Maublanc"
+                },
+                "bar": {
+                  "language": "bar",
+                  "value": "Ludovic Maublanc"
+                },
+                "bm": {
+                  "language": "bm",
+                  "value": "Ludovic Maublanc"
+                },
+                "br": {
+                  "language": "br",
+                  "value": "Ludovic Maublanc"
+                },
+                "ca": {
+                  "language": "ca",
+                  "value": "Ludovic Maublanc"
+                },
+                "co": {
+                  "language": "co",
+                  "value": "Ludovic Maublanc"
+                },
+                "cs": {
+                  "language": "cs",
+                  "value": "Ludovic Maublanc"
+                },
+                "cy": {
+                  "language": "cy",
+                  "value": "Ludovic Maublanc"
+                },
+                "da": {
+                  "language": "da",
+                  "value": "Ludovic Maublanc"
+                },
+                "de": {
+                  "language": "de",
+                  "value": "Ludovic Maublanc"
+                },
+                "de-at": {
+                  "language": "de-at",
+                  "value": "Ludovic Maublanc"
+                },
+                "de-ch": {
+                  "language": "de-ch",
+                  "value": "Ludovic Maublanc"
+                },
+                "en": {
+                  "language": "en",
+                  "value": "Ludovic Maublanc"
+                },
+                "en-ca": {
+                  "language": "en-ca",
+                  "value": "Ludovic Maublanc"
+                },
+                "en-gb": {
+                  "language": "en-gb",
+                  "value": "Ludovic Maublanc"
+                },
+                "eo": {
+                  "language": "eo",
+                  "value": "Ludovic Maublanc"
+                },
+                "es": {
+                  "language": "es",
+                  "value": "Ludovic Maublanc"
+                },
+                "et": {
+                  "language": "et",
+                  "value": "Ludovic Maublanc"
+                },
+                "eu": {
+                  "language": "eu",
+                  "value": "Ludovic Maublanc"
+                },
+                "fi": {
+                  "language": "fi",
+                  "value": "Ludovic Maublanc"
+                },
+                "fo": {
+                  "language": "fo",
+                  "value": "Ludovic Maublanc"
+                },
+                "fr": {
+                  "language": "fr",
+                  "value": "Ludovic Maublanc"
+                },
+                "frc": {
+                  "language": "frc",
+                  "value": "Ludovic Maublanc"
+                },
+                "frp": {
+                  "language": "frp",
+                  "value": "Ludovic Maublanc"
+                },
+                "fur": {
+                  "language": "fur",
+                  "value": "Ludovic Maublanc"
+                },
+                "ga": {
+                  "language": "ga",
+                  "value": "Ludovic Maublanc"
+                },
+                "gd": {
+                  "language": "gd",
+                  "value": "Ludovic Maublanc"
+                },
+                "gl": {
+                  "language": "gl",
+                  "value": "Ludovic Maublanc"
+                },
+                "gsw": {
+                  "language": "gsw",
+                  "value": "Ludovic Maublanc"
+                },
+                "hr": {
+                  "language": "hr",
+                  "value": "Ludovic Maublanc"
+                },
+                "hu": {
+                  "language": "hu",
+                  "value": "Ludovic Maublanc"
+                },
+                "ia": {
+                  "language": "ia",
+                  "value": "Ludovic Maublanc"
+                },
+                "id": {
+                  "language": "id",
+                  "value": "Ludovic Maublanc"
+                },
+                "ie": {
+                  "language": "ie",
+                  "value": "Ludovic Maublanc"
+                },
+                "io": {
+                  "language": "io",
+                  "value": "Ludovic Maublanc"
+                },
+                "is": {
+                  "language": "is",
+                  "value": "Ludovic Maublanc"
+                },
+                "it": {
+                  "language": "it",
+                  "value": "Ludovic Maublanc"
+                },
+                "jam": {
+                  "language": "jam",
+                  "value": "Ludovic Maublanc"
+                },
+                "kab": {
+                  "language": "kab",
+                  "value": "Ludovic Maublanc"
+                },
+                "kg": {
+                  "language": "kg",
+                  "value": "Ludovic Maublanc"
+                },
+                "kl": {
+                  "language": "kl",
+                  "value": "Ludovic Maublanc"
+                },
+                "lb": {
+                  "language": "lb",
+                  "value": "Ludovic Maublanc"
+                },
+                "li": {
+                  "language": "li",
+                  "value": "Ludovic Maublanc"
+                },
+                "lij": {
+                  "language": "lij",
+                  "value": "Ludovic Maublanc"
+                },
+                "lt": {
+                  "language": "lt",
+                  "value": "Ludovic Maublanc"
+                },
+                "lv": {
+                  "language": "lv",
+                  "value": "Ludovic Maublanc"
+                },
+                "mg": {
+                  "language": "mg",
+                  "value": "Ludovic Maublanc"
+                },
+                "min": {
+                  "language": "min",
+                  "value": "Ludovic Maublanc"
+                },
+                "ms": {
+                  "language": "ms",
+                  "value": "Ludovic Maublanc"
+                },
+                "nap": {
+                  "language": "nap",
+                  "value": "Ludovic Maublanc"
+                },
+                "nb": {
+                  "language": "nb",
+                  "value": "Ludovic Maublanc"
+                },
+                "nds": {
+                  "language": "nds",
+                  "value": "Ludovic Maublanc"
+                },
+                "nds-nl": {
+                  "language": "nds-nl",
+                  "value": "Ludovic Maublanc"
+                },
+                "nl": {
+                  "language": "nl",
+                  "value": "Ludovic Maublanc"
+                },
+                "nn": {
+                  "language": "nn",
+                  "value": "Ludovic Maublanc"
+                },
+                "nrm": {
+                  "language": "nrm",
+                  "value": "Ludovic Maublanc"
+                },
+                "oc": {
+                  "language": "oc",
+                  "value": "Ludovic Maublanc"
+                },
+                "pap": {
+                  "language": "pap",
+                  "value": "Ludovic Maublanc"
+                },
+                "pcd": {
+                  "language": "pcd",
+                  "value": "Ludovic Maublanc"
+                },
+                "pl": {
+                  "language": "pl",
+                  "value": "Ludovic Maublanc"
+                },
+                "pms": {
+                  "language": "pms",
+                  "value": "Ludovic Maublanc"
+                },
+                "prg": {
+                  "language": "prg",
+                  "value": "Ludovic Maublanc"
+                },
+                "pt": {
+                  "language": "pt",
+                  "value": "Ludovic Maublanc"
+                },
+                "pt-br": {
+                  "language": "pt-br",
+                  "value": "Ludovic Maublanc"
+                },
+                "rgn": {
+                  "language": "rgn",
+                  "value": "Ludovic Maublanc"
+                },
+                "rm": {
+                  "language": "rm",
+                  "value": "Ludovic Maublanc"
+                },
+                "ro": {
+                  "language": "ro",
+                  "value": "Ludovic Maublanc"
+                },
+                "ru": {
+                  "language": "ru",
+                  "value": "Людовик Монблан"
+                },
+                "sc": {
+                  "language": "sc",
+                  "value": "Ludovic Maublanc"
+                },
+                "scn": {
+                  "language": "scn",
+                  "value": "Ludovic Maublanc"
+                },
+                "sco": {
+                  "language": "sco",
+                  "value": "Ludovic Maublanc"
+                },
+                "sk": {
+                  "language": "sk",
+                  "value": "Ludovic Maublanc"
+                },
+                "sl": {
+                  "language": "sl",
+                  "value": "Ludovic Maublanc"
+                },
+                "sr-el": {
+                  "language": "sr-el",
+                  "value": "Ludovic Maublanc"
+                },
+                "sv": {
+                  "language": "sv",
+                  "value": "Ludovic Maublanc"
+                },
+                "sw": {
+                  "language": "sw",
+                  "value": "Ludovic Maublanc"
+                },
+                "tr": {
+                  "language": "tr",
+                  "value": "Ludovic Maublanc"
+                },
+                "vec": {
+                  "language": "vec",
+                  "value": "Ludovic Maublanc"
+                },
+                "vi": {
+                  "language": "vi",
+                  "value": "Ludovic Maublanc"
+                },
+                "vls": {
+                  "language": "vls",
+                  "value": "Ludovic Maublanc"
+                },
+                "vmf": {
+                  "language": "vmf",
+                  "value": "Ludovic Maublanc"
+                },
+                "vo": {
+                  "language": "vo",
+                  "value": "Ludovic Maublanc"
+                },
+                "wa": {
+                  "language": "wa",
+                  "value": "Ludovic Maublanc"
+                },
+                "wo": {
+                  "language": "wo",
+                  "value": "Ludovic Maublanc"
+                },
+                "zu": {
+                  "language": "zu",
+                  "value": "Ludovic Maublanc"
+                },
+                "mul": {
+                  "language": "mul",
+                  "value": "Ludovic Maublanc"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [],
+              "responseJsonPointer": "/entities/Q82411"
+            },
+            {
+              "wikidataId": "Q993139",
+              "revision": 2504671487,
+              "modified": "2026-06-11T16:34:30Z",
+              "entitySha256": "afb0e29e4c47a41ceab651eeeb4ade7b3c7ff77c62e2ca7838571236b1b99a45",
+              "labels": {
+                "ast": {
+                  "language": "ast",
+                  "value": "Bruno Cathala"
+                },
+                "ca": {
+                  "language": "ca",
+                  "value": "Bruno Cathala"
+                },
+                "cs": {
+                  "language": "cs",
+                  "value": "Bruno Cathala"
+                },
+                "da": {
+                  "language": "da",
+                  "value": "Bruno Cathala"
+                },
+                "de": {
+                  "language": "de",
+                  "value": "Bruno Cathala"
+                },
+                "en": {
+                  "language": "en",
+                  "value": "Bruno Cathala"
+                },
+                "es": {
+                  "language": "es",
+                  "value": "Bruno Cathala"
+                },
+                "fr": {
+                  "language": "fr",
+                  "value": "Bruno Cathala"
+                },
+                "hu": {
+                  "language": "hu",
+                  "value": "Bruno Cathala"
+                },
+                "it": {
+                  "language": "it",
+                  "value": "Bruno Cathala"
+                },
+                "nb": {
+                  "language": "nb",
+                  "value": "Bruno Cathala"
+                },
+                "nl": {
+                  "language": "nl",
+                  "value": "Bruno Cathala"
+                },
+                "nn": {
+                  "language": "nn",
+                  "value": "Bruno Cathala"
+                },
+                "pt": {
+                  "language": "pt",
+                  "value": "Bruno Cathala"
+                },
+                "pt-br": {
+                  "language": "pt-br",
+                  "value": "Bruno Cathala"
+                },
+                "ru": {
+                  "language": "ru",
+                  "value": "Бруно Катала"
+                },
+                "sl": {
+                  "language": "sl",
+                  "value": "Bruno Cathala"
+                },
+                "sv": {
+                  "language": "sv",
+                  "value": "Bruno Cathala"
+                },
+                "tr": {
+                  "language": "tr",
+                  "value": "Bruno Cathala"
+                },
+                "uk": {
+                  "language": "uk",
+                  "value": "Бруно Катала"
+                },
+                "mul": {
+                  "language": "mul",
+                  "value": "Bruno Cathala"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "1a874275eab2cec3470f52fe7b4cabfe1a568fff",
+                    "datavalue": {
+                      "value": "https://www.brunocathala.com/",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "d197d0a5efa4b4c23a302a829dd3ef43684fe002",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 150,
+                            "id": "Q150"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q993139$cedb9ca4-4de7-75a6-5248-30454e349c5e",
+                  "rank": "normal"
+                }
+              ],
+              "responseJsonPointer": "/entities/Q993139"
+            },
+            {
+              "wikidataId": "Q1932592",
+              "revision": 2523184497,
+              "modified": "2026-07-27T01:51:43Z",
+              "entitySha256": "7884c8cabb037b44f5ff3934508cbc980d463eeee956a55b6651d19c7c9eda21",
+              "labels": {
+                "ast": {
+                  "language": "ast",
+                  "value": "Miguel Coimbra"
+                },
+                "ca": {
+                  "language": "ca",
+                  "value": "Miguel Coimbra"
+                },
+                "cs": {
+                  "language": "cs",
+                  "value": "Miguel Coimbra"
+                },
+                "de": {
+                  "language": "de",
+                  "value": "Miguel Coimbra"
+                },
+                "en": {
+                  "language": "en",
+                  "value": "Miguel Coimbra"
+                },
+                "es": {
+                  "language": "es",
+                  "value": "Miguel Coimbra"
+                },
+                "fr": {
+                  "language": "fr",
+                  "value": "Miguel Coimbra"
+                },
+                "hu": {
+                  "language": "hu",
+                  "value": "Miguel Coimbra"
+                },
+                "nl": {
+                  "language": "nl",
+                  "value": "Miguel Coimbra"
+                },
+                "sl": {
+                  "language": "sl",
+                  "value": "Miguel Coimbra"
+                },
+                "sq": {
+                  "language": "sq",
+                  "value": "Miguel Coimbra"
+                },
+                "tr": {
+                  "language": "tr",
+                  "value": "Miguel Coimbra"
+                },
+                "mul": {
+                  "language": "mul",
+                  "value": "Miguel Coimbra"
+                },
+                "ru": {
+                  "language": "ru",
+                  "value": "Мигель Коимбра"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [],
+              "responseJsonPointer": "/entities/Q1932592"
+            },
+            {
+              "wikidataId": "Q66439215",
+              "revision": 2547513850,
+              "modified": "2026-09-18T17:56:45Z",
+              "entitySha256": "080ec7d6b0bfc580ec3b7a6352c47589d277985ed4779b68d7096e7b2f28ee9b",
+              "labels": {
+                "en": {
+                  "language": "en",
+                  "value": "Cyclades"
+                },
+                "de": {
+                  "language": "de",
+                  "value": "Kyklades"
+                },
+                "fr": {
+                  "language": "fr",
+                  "value": "Cyclades"
+                },
+                "ru": {
+                  "language": "ru",
+                  "value": "Киклады"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "0c74a5349543874299709c5b722bf8329ffaceb8",
+                    "datavalue": {
+                      "value": "https://www.matagot.com/en/catalog/details/expert-games/1/cyclades/795",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "id": "Q66439215$7ec10498-4ddb-6cbb-1dfe-fd2802d3c1b9",
+                  "rank": "normal"
+                }
+              ],
+              "responseJsonPointer": "/entities/Q66439215"
+            },
+            {
+              "wikidataId": "Q134451123",
+              "revision": 2524180088,
+              "modified": "2026-07-29T04:02:02Z",
+              "entitySha256": "aff50a2a57b74d25872fedc3b0fe485471f5de4d13f8c999564ecb8343e1964b",
+              "labels": {
+                "mul": {
+                  "language": "mul",
+                  "value": "Open Sesame Games"
+                }
+              },
+              "hasEnglishLabel": false,
+              "officialWebsiteClaims": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "260876e57ccad525841b2c8e9c115ad57d3b75fd",
+                    "datavalue": {
+                      "value": "https://open-sesame.games",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 1860,
+                            "id": "Q1860"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      },
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "d197d0a5efa4b4c23a302a829dd3ef43684fe002",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 150,
+                            "id": "Q150"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q134451123$54E411B6-26B4-4E93-A5DD-FAB42EB0441A",
+                  "rank": "normal"
+                }
+              ],
+              "responseJsonPointer": "/entities/Q134451123"
+            }
+          ]
+        },
+        "independentReview": {
+          "memo": "artifacts/sep26-native-held-root-review.md",
+          "sha256": "68b5c37d7a46f5ef3fca1beb48135d7c6657e55645fc94e0735f3fd7eed67aff",
+          "reviewedOn": "2026-09-26",
+          "decision": "accept-discovery-identity-after-frozen-run"
+        },
+        "crosscheckManifest": {
+          "file": "research/source-files/native-held-crosscheck/manifest.json",
+          "sha256": "b5d8bb232bdbb38897e24e9cf3440244bd68d46868b5786f41c1fadd5e93cbdb"
+        },
+        "limits": [
+          "Saved P5772024 is not substituted for Hachette's April16,2025 product release. Different territory/printing context is possible but not independently resolved.",
+          "Hachette lists Studio H; original Open Sesame publisher identity is separately verified against Q134451123. No corporate relationship is inferred from those distinct brands.",
+          "Classic/team/two-player configurations are product identity context, not reviewed opening rules.",
+          "No numeric BGG href: numeric claim provenance remains the preserved official statement."
+        ]
+      }
     },
     {
       "bggId": "381246",
@@ -8440,12 +10049,18 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Direct primary identity evidence independently reviewed; exact discovery identity enrollment only.",
+      "identityEvidence": [
+        "The original publisher identifies Civolution with Stefan Feld and Dennis Lohausen, October 2024. Its direct game-ID href is 400602."
+      ],
+      "sourceIds": [
+        "deepprint-civolution"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.deep-print-games.com/en/spiele/civolution/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -8459,7 +10074,47 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "deepprint-civolution",
+          "href": "https://boardgamegeek.com/boardgame/400602/civolution",
+          "rawId": "400602",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/241",
+        "candidateSha256": "61bc0312f80b30c4d9b6cae4397a700e1c9460fb546ad9575bdca2ce17e8948b",
+        "wikidataId": "Q137917184",
+        "revision": 2547513604,
+        "modified": "2026-09-18T17:55:24Z",
+        "entitySha256": "d63c006c05bcfff22185744ccd8f2cd8ad37a64356644bf1980dd1bb82f331c9",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "589349d6abe85af0851ed47301c3fa7cdfa47216",
+              "datavalue": {
+                "value": "400602",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q137917184$7323565d-433b-2954-5e46-11efbde6a523",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "Base-game discovery identity only; expansion, solo and errata claims require separate rule-source review."
+      ]
     },
     {
       "bggId": "401885",
@@ -8577,11 +10232,20 @@
         "source": "label"
       },
       "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "reviewed": true,
+      "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+      "identityEvidence": [
+        "Publisher identifies Ironwood; no matching raw numeric game ID found in fetched content.",
+        "Publisher sells Ironwood as a main game and separately lists the Promo Pack. No independent numeric game ID found."
+      ],
+      "sourceIds": [
+        "mindclash-ironwood",
+        "mindclash-ironwood-shop"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://mindclashgames.com/news/introducing-ironwood/",
+        "https://us.shop.mindclashgames.com/product/ironwood/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -8595,7 +10259,36 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/245",
+        "candidateSha256": "30ddb8249999059bc1032cee2520833f55e878e4f552d6b66ca8e7a898b9c2ff",
+        "wikidataId": "Q139784741",
+        "revision": 2529351790,
+        "modified": "2026-08-09T21:05:36Z",
+        "entitySha256": "f39500272e76ba1a8c28834185a9cab280f4066786ce329cb5c574d3b773f858",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "a5131c2ee5237e24617f8881c19ba9c1bc9fe3c8",
+              "datavalue": {
+                "value": "407343",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q139784741$9CFE09C4-12CB-477E-ADBA-84FA887D7301",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": []
     },
     {
       "bggId": "408236",
@@ -8676,11 +10369,20 @@
         "source": "label"
       },
       "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "reviewed": true,
+      "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+      "identityEvidence": [
+        "Publisher’s shop identifies Wroth as a Neon Knight Games base game. No independent numeric game ID found.",
+        "Publisher’s Wroth support page is reachable but has no exact numeric game-ID href in fetched content."
+      ],
+      "sourceIds": [
+        "chip-wroth",
+        "chip-wroth-support"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://chiptheorygames.com/products/wroth-base-game",
+        "https://chiptheorygames.com/pages/support/wroth"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -8694,7 +10396,36 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/248",
+        "candidateSha256": "cc3b2d1df9c8a4d7a4ef6a47ff1d99f0bfc19d9677d9337ee10e0f26ccced2ed",
+        "wikidataId": "Q139784744",
+        "revision": 2529351794,
+        "modified": "2026-08-09T21:05:37Z",
+        "entitySha256": "5b14aa4f8a2fc49191b649494e803245aff2437c2372b19acd42e52a4e39b5cd",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "61d51e792e37604bfb9af3a7304ed7242801cffa",
+              "datavalue": {
+                "value": "414117",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q139784744$CDDF1D4E-4073-4D1E-B580-3CBA167B8339",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": []
     },
     {
       "bggId": "415147",
@@ -8940,11 +10671,17 @@
         "source": "label"
       },
       "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "reviewed": true,
+      "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+      "identityEvidence": [
+        "Publisher names Beyond the Horizon as a product. No independent numeric game ID found."
+      ],
+      "sourceIds": [
+        "capstone-horizon"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://capstone-games.com/products/beyond-the-horizon"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -8958,7 +10695,36 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/256",
+        "candidateSha256": "c1929754f608c6fc8525ce5f5b885d590bf79228968c6b4d52b46e63bee40816",
+        "wikidataId": "Q133868609",
+        "revision": 2529351550,
+        "modified": "2026-08-09T21:04:38Z",
+        "entitySha256": "e9303de03436a883485769e6f37c4915a515eb1da9eb9d0d723d741458f3eb14",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "84d09a944dbfa5eea58257262c4bdcaa6ea4f7b6",
+              "datavalue": {
+                "value": "421310",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q133868609$D95735EB-4648-4215-AEA5-03168560077B",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": []
     },
     {
       "bggId": "421606",
@@ -8972,12 +10738,25 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root independently corroborated the preserved discovery identity through exact primary creator/publisher/product facts. Numeric ID provenance remains the unchanged Wikidata P2339 statement; no independently observed primary numeric BGG href.",
+      "identityEvidence": [
+        "Semantic corroboration beyond name: preserved publisher Q2832284 resolves to AEG's primary host, the exact game name and1–4/30–45-minute claims match, and AEG identifies Emily Vincent/Flatout CoLab's distinctive physical tile-knitting base game. No Wikidata designer claim is invented.",
+        "Own product body, with cat/yarn/garment components, identifies the exact physical game.",
+        "Official related publisher QID AEG has alderac.com website. Primary page host and named rights holder match the preserved publisher claim; footer2023 is not release date.",
+        "Matches both player quantities and both30/45-minute claims, independently of the exact title.",
+        "Primary designer/development credits distinguish the named product. Saved entity has no P170/P178; do not claim these are a Wikidata creator match.",
+        "Original development publisher separately describes Knitting Circle as a standalone Calico follow-up, despite containing a free Calico mini-expansion. The main game is not cataloged as Calico expansion or merged with Calico."
+      ],
+      "sourceIds": [
+        "flatout-knitting",
+        "aeg-knitting"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.flatout.games/knitting-circle",
+        "https://www.alderac.com/knitting-circle/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -8991,7 +10770,265 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/257",
+        "candidateSha256": "888a814c7ab23f1faf3b69cf541f8b1e0a1771dae3689c84ae0ed83ec3eaeb53",
+        "wikidataId": "Q137989191",
+        "revision": 2529351753,
+        "modified": "2026-08-09T21:05:31Z",
+        "entitySha256": "707ff809c59c033de48c6e1003045e5144695722ae6840ff9ae5950c8213a4f6",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "7a6db64eca0ac36fc8fa49b7566ff079cdf5f56e",
+              "datavalue": {
+                "value": "421606",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q137989191$60E6C193-4093-4643-88EA-1F10C563E654",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "Saved2025 publication and10+ minimum age are not corroborated by the inspected body text; they are not added to a discovery claim.",
+        "Flatout's Kickstarter edition/promos and AEG retail product may differ in content. Propose only generic named discovery identity, not cross-edition rule equivalence.",
+        "No direct independent numeric BGG href. Mapping uses preserved official P2339 plus independently corroborated publisher and product facts.",
+        "This proposal has less creator-claim redundancy than Dead Reckoning/Cyclades; root must explicitly review the exact publisher/product match before changing disposition."
+      ],
+      "identityReviewHistory": [
+        {
+          "stage": "initial-exact-numeric-href-review",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "f4a51ee9b6068bb9f118a8f4f1d1f88b215395669823791975ff9c12e8df1376",
+          "fullPreviousDecision": {
+            "bggId": "421606",
+            "wikidataItems": [
+              "Q137989191"
+            ],
+            "displayName": "Knitting Circle",
+            "selectedTitle": {
+              "wikidataId": "Q137989191",
+              "text": "Knitting Circle",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": true,
+            "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+            "identityEvidence": [
+              "Publisher calls Knitting Circle a standalone follow-up to Calico. No independent numeric game ID found.",
+              "Publisher identifies Knitting Circle and Emily Vincent. No independent numeric game ID found."
+            ],
+            "sourceIds": [
+              "flatout-knitting",
+              "aeg-knitting"
+            ],
+            "attemptedPrimaryUrls": [
+              "https://www.flatout.games/knitting-circle",
+              "https://www.alderac.com/knitting-circle/"
+            ],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q137989191",
+                "revision": 2529351753,
+                "entitySha256": "707ff809c59c033de48c6e1003045e5144695722ae6840ff9ae5950c8213a4f6",
+                "statements": [
+                  "Q137989191$60E6C193-4093-4643-88EA-1F10C563E654"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false,
+            "independentRawIdEvidence": [],
+            "idEvidenceStatus": "wikidata-statement-only",
+            "snapshotReference": {
+              "path": "research/coverage/wikidata-native-title-leads.json",
+              "jsonPointer": "/candidates/257",
+              "candidateSha256": "888a814c7ab23f1faf3b69cf541f8b1e0a1771dae3689c84ae0ed83ec3eaeb53",
+              "wikidataId": "Q137989191",
+              "revision": 2529351753,
+              "modified": "2026-08-09T21:05:31Z",
+              "entitySha256": "707ff809c59c033de48c6e1003045e5144695722ae6840ff9ae5950c8213a4f6",
+              "matchingP2339Statements": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2339",
+                    "hash": "7a6db64eca0ac36fc8fa49b7566ff079cdf5f56e",
+                    "datavalue": {
+                      "value": "421606",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q137989191$60E6C193-4093-4643-88EA-1F10C563E654",
+                  "rank": "normal"
+                }
+              ]
+            },
+            "editionNotes": []
+          }
+        }
+      ],
+      "identityCorroborationStatus": "primary-semantic-corroboration",
+      "semanticIdentityEvidence": {
+        "scope": "Discovery identity only; no rule, printing/date equivalence, or deployment approval.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "flatout-knitting",
+            "url": "https://www.flatout.games/knitting-circle",
+            "finalUrl": "https://www.flatout.games/knitting-circle",
+            "retrievedAt": "2026-09-26T04:16:45.948343+00:00",
+            "cacheFile": "research/source-files/native-next-identities/flatout-knitting.html",
+            "sha256": "53395683e6bd19964e71ae5f63b7f16f512b3335931347000ecc2106ada85bea",
+            "byteCount": 72380,
+            "externalIdEvidence": []
+          },
+          {
+            "sourceId": "aeg-knitting",
+            "url": "https://www.alderac.com/knitting-circle/",
+            "finalUrl": "https://www.alderac.com/knitting-circle/",
+            "retrievedAt": "2026-09-26T04:16:46.071569+00:00",
+            "cacheFile": "research/source-files/native-next-identities/aeg-knitting.html",
+            "sha256": "a00a54ca28d56ee8f77d7791adec3c56ea1ab823c71b5e7756f5464bd6e10c2a",
+            "byteCount": 332585,
+            "externalIdEvidence": []
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q137989191",
+          "revision": 2529351753,
+          "modified": "2026-08-09T21:05:31Z",
+          "entitySha256": "707ff809c59c033de48c6e1003045e5144695722ae6840ff9ae5950c8213a4f6",
+          "snapshotJsonPointer": "/candidates/257",
+          "candidateSha256": "888a814c7ab23f1faf3b69cf541f8b1e0a1771dae3689c84ae0ed83ec3eaeb53"
+        },
+        "sourceBoundComparisons": {
+          "file": "research/source-files/native-held-crosscheck/findings.json",
+          "sha256": "583e03c126a8170ff384bef1d8cfec2ddca1cc4cb7a1f20d2e0e8b17902c64df",
+          "jsonPointer": "/findings/5/checks"
+        },
+        "relatedQidResolution": {
+          "source": "official-wikidata-api",
+          "requestUrl": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q82411%7CQ993139%7CQ1932592%7CQ2832284%7CQ2866722%7CQ9265444%7CQ18816824%7CQ56815985%7CQ66439215%7CQ67809208%7CQ104159841%7CQ107975047%7CQ123159223%7CQ124827469%7CQ125395837%7CQ125601246%7CQ125601272%7CQ125680931%7CQ126540283%7CQ126908283%7CQ133868821%7CQ134451123&props=labels%7Caliases%7Cdescriptions%7Cclaims%7Cinfo&format=json",
+          "finalUrl": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q82411%7CQ993139%7CQ1932592%7CQ2832284%7CQ2866722%7CQ9265444%7CQ18816824%7CQ56815985%7CQ66439215%7CQ67809208%7CQ104159841%7CQ107975047%7CQ123159223%7CQ124827469%7CQ125395837%7CQ125601246%7CQ125601272%7CQ125680931%7CQ126540283%7CQ126908283%7CQ133868821%7CQ134451123&props=labels%7Caliases%7Cdescriptions%7Cclaims%7Cinfo&format=json",
+          "retrievedAt": "2026-09-26T05:15:46.026800+00:00",
+          "requestMetadataFile": "research/source-files/native-held-crosscheck/related-qids-request.json",
+          "requestMetadataSha256": "21346e6e882c75ee82cfdb5a5ad4834565e4b8a5f18eca18b296a6d950a348de",
+          "responseFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "responseSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141",
+          "responseByteCount": 259337,
+          "entities": [
+            {
+              "wikidataId": "Q2832284",
+              "revision": 2542580893,
+              "modified": "2026-09-09T06:46:18Z",
+              "entitySha256": "42348d8131eb3b385b1512e63748ff163b5f9bbbee3e32564b57635890d0f777",
+              "labels": {
+                "fr": {
+                  "language": "fr",
+                  "value": "Alderac Entertainment Group"
+                },
+                "en": {
+                  "language": "en",
+                  "value": "Alderac Entertainment Group"
+                },
+                "nl": {
+                  "language": "nl",
+                  "value": "Alderac Entertainment Group"
+                },
+                "it": {
+                  "language": "it",
+                  "value": "Alderac Entertainment Group"
+                },
+                "de": {
+                  "language": "de",
+                  "value": "Alderac Entertainment Group"
+                },
+                "es": {
+                  "language": "es",
+                  "value": "Alderac Entertainment Group"
+                },
+                "mul": {
+                  "language": "mul",
+                  "value": "Alderac Entertainment Group"
+                }
+              },
+              "hasEnglishLabel": true,
+              "officialWebsiteClaims": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "f3052dbe1db14327df851441091f01bcc4e8cd16",
+                    "datavalue": {
+                      "value": "http://www.alderac.com/",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 1860,
+                            "id": "Q1860"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q2832284$CAAF73A0-3C27-479B-B2B3-0CCCC0381702",
+                  "rank": "normal"
+                }
+              ],
+              "responseJsonPointer": "/entities/Q2832284"
+            }
+          ]
+        },
+        "independentReview": {
+          "memo": "artifacts/sep26-native-held-root-review.md",
+          "sha256": "68b5c37d7a46f5ef3fca1beb48135d7c6657e55645fc94e0735f3fd7eed67aff",
+          "reviewedOn": "2026-09-26",
+          "decision": "accept-discovery-identity-after-frozen-run"
+        },
+        "crosscheckManifest": {
+          "file": "research/source-files/native-held-crosscheck/manifest.json",
+          "sha256": "b5d8bb232bdbb38897e24e9cf3440244bd68d46868b5786f41c1fadd5e93cbdb"
+        },
+        "limits": [
+          "Saved2025 publication and10+ minimum age are not corroborated by the inspected body text; they are not added to a discovery claim.",
+          "Flatout's Kickstarter edition/promos and AEG retail product may differ in content. Propose only generic named discovery identity, not cross-edition rule equivalence.",
+          "No direct independent numeric BGG href. Mapping uses preserved official P2339 plus independently corroborated publisher and product facts.",
+          "This proposal has less creator-claim redundancy than Dead Reckoning/Cyclades; root must explicitly review the exact publisher/product match before changing disposition."
+        ]
+      }
     },
     {
       "bggId": "422374",
@@ -9405,12 +11442,18 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Direct primary identity evidence independently reviewed; exact discovery identity enrollment only.",
+      "identityEvidence": [
+        "Publisher identifies Nippon: Zaibatsu as its enhanced/reimagined edition made with Paulo Soledade and Nuno Bizarro Sentieiro, distinct from 2015 Nippon. It exposes exact 434367 game-ID hrefs."
+      ],
+      "sourceIds": [
+        "crowd-nippon"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://crowdgames.us/our-products/nippon-zaibatsu/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -9424,7 +11467,55 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "crowd-nippon",
+          "href": "https://boardgamegeek.com/boardgame/434367/nippon-zaibatsu/files",
+          "rawId": "434367",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        },
+        {
+          "sourceId": "crowd-nippon",
+          "href": "https://boardgamegeek.com/boardgame/434367/nippon-zaibatsu",
+          "rawId": "434367",
+          "exactCandidateId": true,
+          "location": "literal anchor href on fetched primary page",
+          "destinationFetched": false
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/270",
+        "candidateSha256": "f4646d58db4046e21c0a1c9303a6594ff55bde58cf0c1d7077834ea521d7f15c",
+        "wikidataId": "Q138835769",
+        "revision": 2529351773,
+        "modified": "2026-08-09T21:05:34Z",
+        "entitySha256": "9bc3db88bea6bbbc54d06178b5aab9f26e5c2c955498aecc3725d0fde26b6f56",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "a9f10b12568bc51c96603ea35f1ab8600c00e5e1",
+              "datavalue": {
+                "value": "434367",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q138835769$13D69F29-2127-4D76-9182-F4EA3EE11153",
+            "rank": "normal"
+          }
+        ]
+      },
+      "editionNotes": [
+        "Preserve the item’s 2026 P577 separately from the publisher’s 2025 campaign/10th-anniversary discussion; campaign year is not asserted as release year. Do not merge with original Nippon 154809."
+      ]
     },
     {
       "bggId": "435341",

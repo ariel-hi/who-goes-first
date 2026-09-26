@@ -103,6 +103,13 @@
   .roster-compact .player-name { text-align:left; flex:1; }
   .picker[data-large=true] .primary { order:-2; margin-bottom:16px; }
   .picker[data-large=true] .reveal-options { order:-1; margin:0 0 14px; }
+  /* Keep large-group results beside the reordered draw controls. */
+  .picker[data-large=true] .result-area { order:-1; }
+  .picker[data-large=true] .result-area:is(.is-revealing,.has-result) { height:auto; margin:0 0 14px; }
+  .picker[data-large=true] .winner-announcement:not(:empty) { position:static; }
+  .picker[data-large=true] .result-placeholder { display:block; }
+  .picker[data-large=true][data-visual=true] .result-area:is(.is-revealing,.has-result) { position:sticky; top:12px; z-index:2; padding:8px 10px; border:1px solid var(--line); border-radius:12px; background:var(--paper); box-shadow:0 3px 14px #51425c12; }
+  .picker[data-large=true][data-visual=true] .result-area.is-revealing { border-color:transparent; background:transparent; box-shadow:none; }
   .reveal-options { margin:14px 0 12px; }
   .segmented { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:5px; border:0; }
   .segmented:has(>label:nth-child(4):last-child) { grid-template-columns:repeat(4,minmax(0,1fr)); }

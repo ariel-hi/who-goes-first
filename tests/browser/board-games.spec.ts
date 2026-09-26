@@ -122,3 +122,29 @@ test('modern editions distinguish first turns, later rounds and variant limits',
     await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(tieApplicable ? 1 : 0);
   }
 });
+
+test('new native rule articles preserve cooperative choice and later-era distinctions', async ({ page }) => {
+  for (const [slug, pageNumber, opening, detail] of [
+    ['the-7th-citadel-serious-poulp-en-2023', 10, 'collectively chooses', 'On a later turn'],
+    ['stonesaga-open-owl-en-rulebook-1-1', 24, 'any player may take the first turn', 'simultaneous day turns'],
+    ['civolution-deep-print-us-en-1-0', 10, 'does not state how', 'that era’s scoring category'],
+  ] as const) {
+    await page.goto(`/games/${slug}/`);
+    await expect(page.locator('.rule-answer')).toContainText(opening);
+    await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText(detail);
+    await expect(page.getByRole('link', { name: `View cited page (PDF page ${pageNumber})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${pageNumber}$`));
+    await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(0);
+  }
+});
+
+test('archived German summaries distinguish opening selection from action and feeding order', async ({ page }) => {
+  await page.goto('/games/magalon-ravensburger-de-1998/');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');
+  await expect(page.locator('.rule-answer')).toContainText('highest value takes the first action turn');
+  await expect(page.locator('.game-article > p').first()).toContainText('German summary; archived');
+  await expect(page.locator('.source-actions a').first()).toHaveAttribute('href', /#page=4$/);
+  await page.goto('/games/hick-hack-in-gackelwack-zoch-de-printout-2007/');
+  await expect(page.locator('.rule-answer')).toContainText('only after all players have chosen');
+  await expect(page.locator('.source-actions a').first()).toHaveAttribute('href', /#page=2$/);
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+});
