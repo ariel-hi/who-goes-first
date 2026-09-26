@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
+import { ruleHeading } from './rule-copy';
 
 // Bundled OFL fonts make images identical on every build machine; the pages
 // themselves still use system fonts only.
@@ -38,7 +39,7 @@ export async function renderRuleImage(gameName: string, answer: string, host: st
       el('div', { fontFamily: 'Serif', fontSize: 30, color: '#62506f' }, 'Who goes first?'),
     ]),
     el('div', { display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center' }, [
-      el('div', { fontFamily: 'Serif', fontSize: titleSize, lineHeight: 1.1, letterSpacing: -1.5, marginBottom: 26 }, `Who goes first in ${title}?`),
+      el('div', { fontFamily: 'Serif', fontSize: titleSize, lineHeight: 1.1, letterSpacing: -1.5, marginBottom: 26 }, ruleHeading(gameName, title)),
       el('div', { fontSize: bodySize, lineHeight: 1.35, color: '#4d4550' }, body),
     ]),
     el('div', { display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid #e2dae0', paddingTop: 26, fontSize: 24, color: '#62506f' }, [

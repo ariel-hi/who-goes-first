@@ -1,0 +1,45 @@
+{
+  "id": "fischfutter-amigo-en-v1-0-base",
+  "slug": "fischfutter-amigo-en-v1-0-base",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Fischfutter",
+  "aliases": [],
+  "editionLabel": "AMIGO English rules, Version 1.0 — competitive base game (2–5 players)",
+  "firstPlayerRule": "In the competitive base game, the bravest player goes first. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If the group cannot agree who is bravest, choose a player randomly. This is an original house convention.",
+  "clarifications": [
+    "Base-game setup uses 36 double-sided piranha cards, one hand card and five bandage tokens per player, a central draw deck and an initial pond card whose two sides are shown. The four protection cards are only for the cooperative variant; 36 piranha cards plus four protection cards explain the 40-card component total.",
+    "The active player plays a card, flips matching other pond cards, resolves attacks, draws a replacement card, then passes clockwise. Reshuffling set-aside cards when the deck runs out does not introduce a new starting-player criterion.",
+    "The cooperative Super-Bitey variant uses shared steps and four protection cards. It does not assign an individual starter, and the competitive bravery criterion and clockwise turns are not transferred to it.",
+    "In Super-Bitey, a tie for the majority color before the flip lets the group choose one of the tied colors to flip. A tie for the most piranhas after the flip means there is no attack and the challenge continues.",
+    "The product describes luck or memory approaches, but this manual does not define separate Luck/Memory modes with their own opening rules.",
+    "In the competitive game, players tied for the most remaining bandages share victory. The optional scoring over several games does not specify a winner-starts or other carry-over opening rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02503-GB-AmigoRule.pdf",
+      "title": "Fischfutter — English rules, Version 1.0",
+      "publisher": "AMIGO Spiel + Freizeit GmbH",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "PDF page 1: cover/Components → Setup → Playing the Game (opening sentence and clockwise continuation) → Attack. PDF page 2: attack/deck continuation; The End of the Game and consecutive-game scoring; Cooperative Variant → Super-Bitey steps 1–4/outcomes A–C; Version 1.0/copyright footer. Two complete tall pages with no visible printed page numbers; circled 1–4 are cooperative example steps.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root /root completed full original-page, source-custody, complete-record and exact public-fingerprint review on 2026-09-26 under the owner's 2026-09-22 delegated source-review authorization. Source agent read both complete original 180 dpi page renders; independent /root/motion_polish_audit reproduced and read both full pages. Original PDF research/source-files/sep26-fischfutter-english-manual-intake/get-01-433340-english-manual.pdf, 2,494,897 bytes, SHA256 d1302fa16d8dade807a17a27189dff91d2c9385c4c123acfc3008de22e030d31. Complete source intake54 manifest SHA256 9ed27c8733224f70228541fbe99998d78b5236fed9f1263fbc40a5df2f065eab; exact observed related-product → Fischfutter product → literal download iframe → Manual en anchor/PDF chain retained through immutable73/80/102. Independent source-review18 evidence-manifest SHA256 4fc7f7ae5597206a54443879da51b2feb6593517b31641102cb21202bb30d7a3. Full opening/setup/turn/deck/endgame/consecutive scoring/cooperative shared-step and pre/post-flip ties/components/credit/imprint contexts reviewed; original complete visual pages outrank extraction order. Cover lightbulb name Michael Modler and pen name Bernhard Speh are manual literals, not creator-QID repairs. Root separately approved the exact base bravery public fingerprint for portable inclusion: individual opener without game-specific selection setup, subjective agreement and optional labeled house fallback; no bravery challenge or test invented. Root exact source and package approval is complete; application is pending this separately sealed package. Saved Wikidata P2339 supplies the numeric inventory identity only. Publisher article/filename numbers are not BGG corroboration. No translated alias, other language/version, older printing, creator-QID repair or universal edition transfer is proposed.",
+  "uncertainty": [
+    "The source does not define how to measure bravery, run a challenge or resolve equal claims. The random fallback is an optional original house convention, not an official procedure.",
+    "Version 1.0 and copyright 2025 are visible, but no printing year is established. December 2024 PDF metadata, November 2025 listing/response dates and the saved Wikidata year do not prove a printing.",
+    "This exact English competitive base rule is reviewed. Super-Bitey has no individual starter; other languages/versions, formal Luck/Memory variants, translated aliases and creator or numeric metadata repairs are not proposed."
+  ]
+}

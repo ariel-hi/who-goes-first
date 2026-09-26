@@ -32,6 +32,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
   const scrolledDraw = useRef<number | null>(null);
   const resultArea = useRef<HTMLDivElement>(null);
   const scrolledQuickDraw = useRef<number | null>(null);
+  const navigatedQuickDraw = useRef<number | null>(null);
   const [text, setText] = useState('');
   const [inputMode, setInputMode] = useState<'seats' | 'names'>('seats');
   const [mode, setMode] = useState<Mode>(initialMode);
@@ -169,12 +170,46 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
 
   useEffect(() => {
     const outcome = state.outcome;
+    if (state.phase !== 'revealing' || !outcome || eventMode.current !== 'quick') return;
+    // A user navigation during the reveal takes priority over result recovery.
+    const navigated = (event: Event) => {
+      if (event.isTrusted) navigatedQuickDraw.current = outcome.drawId;
+    };
+    const keyed = (event: KeyboardEvent) => {
+      if (['Tab', 'PageUp', 'PageDown', 'Home', 'End'].includes(event.key)) {
+        navigated(event);
+        return;
+      }
+      if (!['ArrowUp', 'ArrowDown', ' '].includes(event.key) || event.defaultPrevented) return;
+      const target = event.target;
+      // These keys may edit text or operate native controls instead of scrolling.
+      if (target instanceof HTMLElement && (target.isContentEditable || target.closest('input,textarea,select'))) return;
+      if (event.key === ' ' && target instanceof Element && target.closest('button,summary,[role="button"]')) return;
+      navigated(event);
+    };
+    const pointed = (event: PointerEvent) => {
+      if (event.target instanceof Element && !event.target.closest('.picker')) navigated(event);
+    };
+    window.addEventListener('wheel', navigated, { passive: true });
+    window.addEventListener('touchmove', navigated, { passive: true });
+    window.addEventListener('keydown', keyed);
+    window.addEventListener('pointerdown', pointed);
+    return () => {
+      window.removeEventListener('wheel', navigated);
+      window.removeEventListener('touchmove', navigated);
+      window.removeEventListener('keydown', keyed);
+      window.removeEventListener('pointerdown', pointed);
+    };
+  }, [state.phase, state.outcome]);
+
+  useEffect(() => {
+    const outcome = state.outcome;
     if (state.phase !== 'result' || !outcome || !['quick', 'instant'].includes(eventMode.current) || scrolledQuickDraw.current === outcome.drawId) return;
     const frame = requestAnimationFrame(() => {
       const announcement = resultArea.current?.querySelector('p');
       if (!announcement) return;
       scrolledQuickDraw.current = outcome.drawId;
-      if (document.hidden) return;
+      if (document.hidden || navigatedQuickDraw.current === outcome.drawId) return;
       const rect = announcement.getBoundingClientRect();
       const margin = 16;
       if (rect.top >= margin && rect.bottom <= innerHeight - margin) return;

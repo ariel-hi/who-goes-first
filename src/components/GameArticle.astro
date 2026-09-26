@@ -1,5 +1,6 @@
 ---
 import SharePage from './SharePage.astro';
+import { ruleHeading } from '../lib/rule-copy';
 import type { PublicRule } from '../lib/content/schema';
 import { siteSettings } from '../lib/site';
 import { amazonDisclosure, amazonSearchUrl } from '../lib/affiliate';
@@ -16,12 +17,12 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
 <article class="game-article">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href={preview ? '/dev/games/' : '/games/'}>Game rules</a> / {rule.gameName}</nav>
   <span class="eyebrow">{preview ? 'Draft rule · not approved' : sourceIsPdf ? 'From the publisher’s rulebook' : 'From the source rules'}</span>
-  <h1>Who goes first in {rule.gameName}?</h1><p class="small muted">{rule.editionLabel}{!/\bEnglish\b/i.test(rule.editionLabel) && ' · English'}</p>
+  <h1>{ruleHeading(rule.gameName)}</h1><p class="small muted">{rule.editionLabel}{!/\bEnglish\b/i.test(rule.editionLabel) && ' · English'}</p>
   <p class="rule-answer">{rule.firstPlayerRule}</p>
   {rule.tieBreakApplicable !== false && rule.officialTieBreak && <section class="rule-section opening-tie"><h2>Official tie-break or fallback</h2><p>{rule.officialTieBreak}</p></section>}
   <nav class="source-actions" aria-label="Rulebook source">{passageUrl && <a href={passageUrl} rel="noreferrer">View cited page (PDF page {firstPage})</a>}<a href={firstSource.url} rel="noreferrer">{sourceIsPdf ? 'Read the publisher’s rulebook' : 'Read the source rules'}</a></nav>
   {!rule.houseFallback && <p class="small muted">If your rules call for a random choice, <a class="inline-link" href="/">use the player picker</a>.</p>}
-  {!preview && <SharePage label="Share this rule" title={`Who goes first in ${rule.gameName}?`} />}
+  {!preview && <SharePage label="Share this rule" title={ruleHeading(rule.gameName)} />}
   {rule.clarifications.length > 0 && <section class="rule-section"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
   {rule.interpretation && <section class="rule-section"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   {rule.tieBreakApplicable !== false && !rule.officialTieBreak && <section class="rule-section"><h2>If there’s a tie</h2><p>{rule.houseFallback ? 'The rulebook doesn’t say.' : <>The rulebook doesn’t say. If you need a tie-break, <a href="/">pick a player at random</a>.</>}</p></section>}
@@ -33,5 +34,5 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
   {buyLink && <aside class="buy-game" aria-label="Find this game"><a href={buyLink} rel="sponsored nofollow noopener" target="_blank">Find {rule.gameName} on Amazon</a><small>{amazonDisclosure} Links never affect which rules we publish.</small></aside>}
   <section class="rule-section"><h2>{related.length ? 'Related games and editions' : 'More starting rules'}</h2>{related.length > 0 && <ul>{related.map(game => <li><a href={`/games/${game.slug}/`}>{game.gameName} — {game.editionLabel}</a></li>)}</ul>}<a class="inline-link" href={preview ? '/dev/games/' : '/games/'}>Browse available game rules</a></section>
   {similar.length > 0 && similarHub && <section class="rule-section"><h2>Games with a similar starting rule</h2><ul class="similar-rules">{similar.map(game => <li><a href={`/games/${game.slug}/`}>{game.gameName}</a><small>{game.firstPlayerRule}</small></li>)}</ul><a class="inline-link" href={`/games/themes/${similarHub.slug}/`}>More starting rules about {similarHub.about}</a></section>}
-  <p class="small muted rule-section">Found a different instruction in your edition? {contact ? <a href={`mailto:${contact}?subject=${encodeURIComponent(`Rule correction: ${rule.id}`)}`}>Send a correction with the game, edition, and source.</a> : 'Check your own rulebook’s edition. A public correction contact will be listed here when the site launches.'}</p>
+  <p class="small muted rule-section">Found a different instruction in your edition? {contact ? <a href={`mailto:${contact}?subject=${encodeURIComponent(`Rule correction: ${rule.id}`)}`}>Send a correction with the game, edition, and source.</a> : 'Check the source and edition listed above against your own rulebook.'}</p>
 </article>
