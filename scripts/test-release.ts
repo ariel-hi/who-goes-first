@@ -37,7 +37,17 @@ const production = build('production-empty', { DEPLOY_CONTEXT: 'production', ...
 assert.match(readFileSync(join(production, 'index.html'), 'utf8'), /content="index, follow"/);
 assert.match(readFileSync(join(production, 'games/index.html'), 'utf8'), /content="noindex, follow"/);
 assert.doesNotMatch(readFileSync(join(production, 'sitemap.xml'), 'utf8'), /\/games\/|\/house-rules\/|\/dev\//);
-assert.doesNotMatch(readFileSync(join(production, '_headers'), 'utf8'), /X-Robots-Tag/);
+const productionHeaders = readFileSync(join(production, '_headers'), 'utf8');
+assert.doesNotMatch(productionHeaders.split('\n\n')[0]!, /X-Robots-Tag/);
+assert.match(productionHeaders, /\n\/indexnow-key\.txt\n {2}X-Robots-Tag: noindex\n/);
+// A manifest needs its own CSP permission under default-src 'none'. Only the
+// production picker offers the shared homepage shortcut, preserving ordinary
+// page bookmarks and avoiding shortcut promotion on editorial previews.
+assert.match(productionHeaders, /manifest-src 'self'/);
+assert.match(readFileSync(join(production, 'index.html'), 'utf8'), /rel="manifest" href="\/site\.webmanifest"/);
+assert.doesNotMatch(readFileSync(join(production, 'about/index.html'), 'utf8'), /rel="manifest"/);
+assert.doesNotMatch(readFileSync(join(preview, 'index.html'), 'utf8'), /rel="manifest"|rel="apple-touch-icon"/);
+assert.equal(readFileSync(join(production, 'indexnow-key.txt'), 'utf8'), readFileSync(join(root, 'public/indexnow-key.txt'), 'utf8'));
 const record = ruleSchema.parse({
   id: 'synthetic-fixture', slug: 'synthetic-fixture', gameName: 'Synthetic Fixture Game', aliases: ['Fixture Alias'], editionLabel: 'Invented test edition', language: 'en',
   firstPlayerRule: 'This synthetic answer exists only to exercise a build test.', officialTieBreak: null, houseFallback: 'Use the test picker.', clarifications: ['Synthetic setup clarification.'], interpretation: null,

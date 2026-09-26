@@ -1,0 +1,42 @@
+{
+  "id": "a-feast-for-odin-feuerland-en",
+  "slug": "a-feast-for-odin-feuerland-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "A Feast for Odin",
+  "aliases": [],
+  "editionLabel": "Feuerland English base game",
+  "firstPlayerRule": "Randomly choose who receives the starting-player moose. That player begins the first action phase, followed by the others clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later rounds, whoever placed Vikings last in the action phase receives the moose and starts the next action phase.",
+    "This opening procedure is for two to four players; solo play has no competing starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.feuerland-spiele.de/fileadmin/game/Ein_Fest_fuer_Odin/ODIN_EN_rules_2nd_Web.pdf",
+      "title": "A Feast for Odin — English rulebook",
+      "publisher": "Feuerland Spiele",
+      "printedPages": [
+        "8",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        9
+      ],
+      "location": "Course of Play; Phase 5: Actions; Phase 6: Determine Start Player",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Read the English rulebook hosted by Feuerland. Course of Play assigns the moose randomly; phases 5 and 6 connect it to action order and the next round's starter. Source custody: research/source-files/popular-sep26/odin.pdf; SHA-256 e1280d095d2df7da6cb1cfd9cd7c0b7befcce2d8c495e3a541bc9ef64c2d9e36. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The rulebook does not prescribe a particular random selection method. Expansion changes are outside this review."
+  ]
+}

@@ -1,5 +1,25 @@
 # Who Goes First?
 
+Pick a starting player for game night, find your board game's starting rule, or try an original question for the table. Free to use in your browser, with no account or app installation.
+
+**[Open the first-player picker →](https://whogoesfirst.fun/)**
+
+## For your next game night
+
+| What you need | Open |
+| --- | --- |
+| A random starting player | [First-player picker](https://whogoesfirst.fun/) — use 2–50 numbered seats or names; every entry gets the same chance. |
+| Your game's starting instruction | [Sourced game rules](https://whogoesfirst.fun/games/) — search by game and edition, with rulebook citations. |
+| A playful question for the table | [Original house-rule questions](https://whogoesfirst.fun/house-rules/) — skip any prompt and use a random tie-break when needed. |
+| A shortcut for club or café tables | [Printable QR table cards](https://whogoesfirst.fun/printable-game-night/) — download a one-page PDF with two cards. |
+| Help choosing a method | [Three ways to choose who goes first](https://whogoesfirst.fun/choose-who-goes-first/) — a game's own rule, an equal-chance pick, or a house question. |
+
+The rule directory is growing. Answers identify the reviewed edition, cite their sources, and distinguish official instructions from interpretation or a house fallback. A game appearing in the wider board-game index does not mean its rule has been reviewed yet.
+
+Sharing copies a clean link without your player list or pick. Analytics is optional; you can use the site and download the cards without allowing it. See [Privacy](https://whogoesfirst.fun/privacy/) and [How the picker works](https://whogoesfirst.fun/fairness/).
+
+## Development and content coverage
+
 An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 4,999 discovered game identities; the [public site](https://whogoesfirst.fun/) may be on an earlier release. The full starting-rule compendium is still in progress: 887 identities have researched editions and 4,112 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 893 approved edition records, with 361 standalone criteria in the random mix and 60 house prompts. The initial public release had 762 rules and 339 random-mix criteria. See `CONTENT_REVIEW.md` for the current review process, [the latest Amigo and Quick-result checkpoint](research/coverage/sep26-amigo-and-quick-progress.md) and [the preceding picker continuity checkpoint](research/coverage/sep26-picker-result-continuity-progress.md) for source limits.
 
 ## Run

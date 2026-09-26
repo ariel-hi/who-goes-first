@@ -25,5 +25,10 @@ export function createAnalytics(sink?: (event: string, context: Record<string, s
     try { sink(event, clean); } catch { /* telemetry must never affect a draw */ }
   } };
 }
-// No sink is configured. Enabling one requires owner approval and a privacy review.
-export const analytics = createAnalytics();
+// The growth measurement bridge accepts only a successful clean-link handoff.
+// The consent script decides whether to forward it; earlier actions are discarded.
+export const analytics = createAnalytics((event, context) => {
+  if (event === 'share_completed' && typeof document !== 'undefined') {
+    document.dispatchEvent(new CustomEvent('wgf:share-completed', { detail: context.kind }));
+  }
+});

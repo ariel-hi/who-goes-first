@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SharePage from '../components/SharePage.astro';
+---
+<Layout title="Free Printable Game Night QR Cards — Who Goes First?" description="Print two free table cards with a QR shortcut to the first-player picker. A one-page PDF for game nights, board-game clubs and cafés.">
+  <div class="content-page prose">
+    <p class="eyebrow">For game-night hosts</p>
+    <h1>A shortcut for your table</h1>
+    <p class="lede">Put a card beside the games. Anyone can scan it to pick a starting player, without an account or an app to install.</p>
+
+    <div class="card-download">
+      <div>
+        <h2>Print two game-night cards</h2>
+        <p>A single page with two cut-out cards. Each has a QR code and the site address, so guests can scan it or type the address themselves.</p>
+        <a class="download-link" href="/downloads/who-goes-first-game-night-cards.pdf" download>Download the table cards</a>
+        <p class="small muted">PDF · 1 page · US Letter · 5 KB</p>
+        <SharePage title="Free printable game-night QR cards — Who Goes First?" />
+      </div>
+      <img src="/downloads/game-night-cards.png" width="612" height="792" alt="Preview of the printable sheet: two Who Goes First table cards with a QR code on each." />
+    </div>
+
+    <h2>From printer to first turn</h2>
+    <ol>
+      <li><strong>Print in portrait.</strong> Use US Letter at actual size. For A4 paper, choose fit to page. Black-and-white printing works too.</li>
+      <li><strong>Cut out the cards.</strong> Cut the sheet in two along the dotted divider and place a card where your group can reach it. Try scanning it before guests arrive.</li>
+      <li><strong>Scan and pick.</strong> Open the <a href="/">first-player picker</a>, add 2–50 numbered seats or names, then tap Pick. Each listed entry has the same chance.</li>
+    </ol>
+
+    <h2>For a club, café or casual game night</h2>
+    <p>You’re welcome to print the cards for your tables or share the PDF with other hosts. Keep the QR code and site address visible. The code opens the picker; it does not contain anyone’s names or a saved result. Guests need an internet connection to open the site.</p>
+    <p>Before choosing randomly, check whether your game has its own starting instruction. Browse the <a href="/games/">sourced game rules</a>, or read <a href="/choose-who-goes-first/">three ways to choose who goes first</a>. For a playful alternative, try an <a href="/house-rules/">original house-rule question</a>.</p>
+    <a class="inline-link" href="/">Try the picker</a>
+  </div>
+</Layout>
+<style>
+  .card-download{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,240px);gap:28px;align-items:start;margin:32px 0 40px}
+  .card-download img{width:100%;height:auto;border:1px solid var(--line);border-radius:4px;background:white;box-shadow:0 3px 12px #2029230a}
+  .download-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin:4px 0 10px;padding:10px 18px;border:1px solid var(--green);border-radius:8px;background:var(--green);color:white;font-weight:600;text-align:center;text-decoration:none}
+  .download-link:hover{filter:brightness(.92)}
+  li{margin-bottom:12px}
+  @media(max-width:560px){.card-download{grid-template-columns:1fr;gap:22px}.card-download img{max-width:280px;margin-inline:auto}}
+</style>

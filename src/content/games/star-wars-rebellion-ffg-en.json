@@ -1,0 +1,61 @@
+{
+  "id": "star-wars-rebellion-ffg-en",
+  "slug": "star-wars-rebellion-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "ad6faf4689a69e7b6abf89452d1d96090338294f3e90568355fe66b4ed151429",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Star Wars: Rebellion",
+  "aliases": [
+    "SW Rebellion",
+    "Rebellion"
+  ],
+  "editionLabel": "Fantasy Flight Games English rules, 2016",
+  "firstPlayerRule": "Players first choose who controls the Rebels and who controls the Imperials (randomly if they cannot decide). The Rebel player goes first: they assign leaders to missions first and take the first turn of each Command Phase.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the Assignment Phase, the Rebel player assigns leaders first, then the Imperial player.",
+    "In the Command Phase, starting with the Rebel player, players alternate turns activating a system or revealing a mission.",
+    "The Rebel player also deploys units first during the Refresh Phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/0b/07/0b07601a-6ac3-4333-ac41-b6d1b9a979da/sw03_learn_to_play_web.pdf",
+      "title": "Star Wars: Rebellion — Learn to Play",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        6,
+        7
+      ],
+      "location": "Page 4, Setup step 1 (Choose Factions); page 6, Assignment Phase; page 7, Command Phase",
+      "checkedAt": "2026-09-25"
+    },
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/d9/76/d97645d4-3973-41b6-ad78-6c9b927d3bc1/sw03_rules_reference_web.pdf",
+      "title": "Star Wars: Rebellion — Rules Reference",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Page 6, Command Phase: the Rebel player takes the first turn",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Fantasy Flight Games Learn to Play (SHA-256 b26b98139d694e9f42cb36060ec82fdc3000ab753d29809be03b7bc44d8598fc, 20 pages) and Rules Reference (SHA-256 0b5af3a28bc4bc29a16f84456ed3a6543bf4d6a141461971e6fb170c6afba35a, 16 pages); both links were taken from an archived copy of the FFG Star Wars: Rebellion product page. Learn to Play page 4: players choose Imperial/Rebel sides, randomly if they cannot decide; page 6: the Rebel player starts by assigning leaders, then the Imperial player; page 7: starting with the Rebel player, players alternate Command Phase turns. Rules Reference page 6 confirms the Rebel player takes the first Command Phase turn. Game identity confirmed by title, faction content and FFG product page (BGG 187645). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The Team Game variant uses the initiative numbers on the faction sheets to order team members; it is not covered here."
+  ]
+}

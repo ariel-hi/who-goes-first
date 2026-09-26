@@ -5,7 +5,7 @@ import { gzipSync } from 'node:zlib';
 
 export function staticServer(directory: string) {
   const root = resolve(directory);
-  const types: Record<string, string> = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.txt': 'text/plain', '.xml': 'application/xml' };
+  const types: Record<string, string> = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.pdf': 'application/pdf', '.txt': 'text/plain', '.xml': 'application/xml', '.webmanifest': 'application/manifest+json' };
   return createServer((request, response) => {
     let pathname: string;
     try { pathname = decodeURIComponent(new URL(request.url || '/', 'http://local').pathname); } catch { response.writeHead(400).end(); return; }

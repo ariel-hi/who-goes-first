@@ -1,0 +1,46 @@
+{
+  "id": "mansions-of-madness-second-edition-ffg-en",
+  "slug": "mansions-of-madness-second-edition-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "188798160e8843ca86cf9aff16b4bb83793789e4ad974cfe733deff70a7524cf",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Mansions of Madness: Second Edition",
+  "aliases": [
+    "Mansions of Madness",
+    "MoM 2e",
+    "MoM2"
+  ],
+  "editionLabel": "Fantasy Flight Games English Rules Reference, 2016",
+  "firstPlayerRule": "There is no set first player. In each investigator phase, the investigators each take one turn in the order of their choice.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Each round has an investigator phase followed by a mythos phase run by the app.",
+    "On their turn, an investigator performs up to two actions; after all investigators have taken a turn, one of them presses the app's end phase button."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/a6/c1/a6c1ba76-bc7e-4a4c-ba6c-dd72574b431d/mansions_of_madness_second_editon_rules_reference.pdf",
+      "title": "Mansions of Madness Second Edition — Rules Reference",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "11",
+        "18"
+      ],
+      "pdfPagesOneBased": [
+        11,
+        18
+      ],
+      "location": "Page 11, Investigator Phase; page 18, Turn",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Rules Reference from Fantasy Flight Games' own CDN and extracted text from PDF pages 11 and 18, whose printed numbers match. Investigator Phase: 'the investigators each take one turn in the order of their choice'. Turn: 'investigators take turns in the order of their choice'. The same wording appears in the quick-reference on the back page. Setup (page 3) names no first player. App-driven cooperative game, BGG 205059. SHA-256: e1eb4e53196a7399f4974c5cfc3d94222aaf45d276ab77309ba2e9da8c7dc4fe. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "Cooperative game: the order can change every round because the group chooses it each investigator phase."
+  ]
+}

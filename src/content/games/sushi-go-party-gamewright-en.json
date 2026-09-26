@@ -1,0 +1,41 @@
+{
+  "id": "sushi-go-party-gamewright-en",
+  "slug": "sushi-go-party-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "1d9a316dda3f13c2c0705191d3b5a65fdaee3b24a72f426f583ac1f39315a136",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Sushi Go Party!",
+  "aliases": [
+    "Sushi Go Party"
+  ],
+  "editionLabel": "Gamewright English rules, 2016",
+  "firstPlayerRule": "No one goes first: turns happen simultaneously. Everyone secretly chooses one card to keep, places it face-down, and all players reveal together.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After revealing, each player passes their remaining hand face-down to the player on their left, so hands move clockwise.",
+    "The game lasts 3 rounds."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/SushiGoPartyTM-RULES.pdf",
+      "title": "Rules of Sushi Go Party!",
+      "publisher": "Gamewright",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Starting a Round and simultaneous turns (printed pages 4-5, PDF spread 3)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Gamewright-hosted rules PDF (search result title 'rules of Sushi Go Party!', linked for the Gamewright product page) and extracted text from PDF page 3, a spread of printed pages 4-5: 'Turns in Sushi Go Party! happen simultaneously. Each player chooses 1 card ... everyone reveals their chosen cards', then hands pass face-down to the left (clockwise). The back page shows ©2016 Gamewright. This is the deluxe Party version (menu tiles, 2-8 players), BGG 192291, distinct from the existing Sushi Go! record. SHA-256: 5c252689af1a27d0839874af133a11d98c06e65fae71ac23b2fd8e3e97b49628. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": []
+}

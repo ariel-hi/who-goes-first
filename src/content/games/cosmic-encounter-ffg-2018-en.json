@@ -1,0 +1,41 @@
+{
+  "id": "cosmic-encounter-ffg-2018-en",
+  "slug": "cosmic-encounter-ffg-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "f4fd1bf926c5ab994fa7a5a20106e283f209e4066eed66e5d5774bfcd45b7d3d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Cosmic Encounter",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight Games English rulebook, 2018",
+  "firstPlayerRule": "In the players' first game, the youngest player is the first player. Otherwise, reveal cards from the destiny deck until one matches a player's color; that player is the first player. Then shuffle the destiny deck.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns in clockwise order starting with the first player; on each turn the active player has an encounter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/a8/bf/a8bfc766-193c-4f40-a4ea-9864b8ae7953/ce01_rulebook_web.pdf",
+      "title": "Cosmic Encounter — Rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "5",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        7
+      ],
+      "location": "Page 5, Setup step 7 (Choose First Player); page 7, The Game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the FFG-hosted rulebook https://images-cdn.fantasyflightgames.com/filer_public/a8/bf/a8bfc766-193c-4f40-a4ea-9864b8ae7953/ce01_rulebook_web.pdf; SHA-256 e6c7dd8db6ad8e4161e60ebffc5345e28862f62250ddb6eb2bfdd0e6631b9798, 20 pages. Page 5, setup step 7: first game the youngest player is first; otherwise reveal destiny cards until one matches a player's color, then shuffle. Page 7: turns go clockwise from the first player. Credits read 2018 Fantasy Flight Games, published under license from Eon Products, matching Cosmic Encounter BGG 39463. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rules give no tie-break if two players are equally young in a first game."
+  ]
+}

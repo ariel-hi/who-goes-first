@@ -1,0 +1,16 @@
+---
+import { siteSettings } from '../lib/site';
+interface Props { title?: string }
+const { title = 'Who Goes First?' } = Astro.props;
+const site = siteSettings();
+const page = new URL(Astro.url.pathname, site.url).href;
+const graphemes = new Intl.Segmenter('en', { granularity: 'grapheme' });
+const proposed = `${title}\n${page}`;
+const text = [...graphemes.segment(proposed)].length <= 300 ? proposed : `Who Goes First?\n${page}`;
+const destination = new URL('https://bsky.app/intent/compose');
+destination.search = new URLSearchParams({ text }).toString();
+---
+{site.production && <a class="bluesky-share" href={destination.href} target="_blank" rel="noopener noreferrer">Share on Bluesky <span class="sr-only">(opens in a new tab)</span></a>}
+<style>
+  .bluesky-share{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;font-weight:600;color:var(--green)}
+</style>

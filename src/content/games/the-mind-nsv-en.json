@@ -1,0 +1,38 @@
+{
+  "id": "the-mind-nsv-en",
+  "slug": "the-mind-nsv-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "29df19aa3205ff1cf13e93a1eee0e88d8d2207cd5c1f65a8171e0e1a8fddff1a",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "The Mind",
+  "aliases": [],
+  "editionLabel": "Nürnberger-Spielkarten-Verlag English rules",
+  "firstPlayerRule": "No one goes first: players do not take turns in any particular order. After everyone signals they are ready, whoever believes they hold the lowest available card simply plays it.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Before each level, each ready player places one hand palm down on the table; once everyone is ready, hands are removed and play begins.",
+    "Each player must always play the lowest card they hold, one card at a time, without sharing any information."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/4c/1e/25-the-mind-rulebook.pdf",
+      "title": "The Mind — English rules",
+      "publisher": "Nürnberger-Spielkarten-Verlag",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Introduction and Course of the game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules sheet from the 1j1ju rulebook library (the Pandasaurus product page links its rulebook only through a Dropbox work-preview link) and extracted the text of both PDF pages. Introduction and Course of the game: 'The players do not take turns in any particular order. Whoever wants to put down a card, simply does so' and 'Whoever believes they have the lowest card currently available, simply plays it.' Readiness is signalled by a hand on the table. The sheet credits Wolfgang Warsch and ends with the NSV address (nsv.de), matching BGG 244992. SHA-256: 06a5c4cda30b4c7fc4b4530da800d84c1078575e8f5ca5681242f7ec7c3e1a0a. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The cited PDF is a third-party-hosted copy of the NSV English sheet, not a publisher-hosted file; the Pandasaurus North American rulebook was not directly accessible."
+  ]
+}

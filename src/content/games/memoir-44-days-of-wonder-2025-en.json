@@ -1,0 +1,44 @@
+{
+  "id": "memoir-44-days-of-wonder-2025-en",
+  "slug": "memoir-44-days-of-wonder-2025-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "21e913281376b8901b866fef44738038f0cf0cd9a590ef3e98cfe32ef1cee0f0",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Memoir '44",
+  "aliases": [
+    "Memoir 44",
+    "M44"
+  ],
+  "editionLabel": "Days of Wonder English rulebook, 2025 refresh",
+  "firstPlayerRule": "The scenario's briefing notes name which side plays first; that side's player begins by playing a command card (in Pegasus Bridge, the Allies). Players then alternate turns.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Choosing sides is separate from turn order: the rulebook recommends playing each scenario twice, swapping sides.",
+    "In the 3-4 player Operation Alliance team mode, sides still alternate starting with the side named by the scenario; the 1st player of the starting team goes first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/09/M44_REFRESH_RULES_EN_LD.pdf",
+      "title": "Memoir '44 — English rulebook",
+      "publisher": "Days of Wonder",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        12,
+        13
+      ],
+      "location": "Setup steps 9 and 13; Game Turn; Operation Alliance team mode, Game Turn; copyright line",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules linked from the Days of Wonder Memoir '44 page (https://www.daysofwonder.com/game/memoir44/), SHA-256 12af03e45c15e160c546bbd2e783e3003d9beea349dd691310f080cab51be160, and extracted the text of all 14 PDF pages. The PDF uses two-page spreads, so only PDF positions are cited. PDF page 3, Setup step 13: the starting player, as indicated in the scenario's briefing notes (in Pegasus Bridge, the Allies), begins play by playing one command card; step 9 recommends playing from both sides. PDF page 4, Game Turn: each scenario indicates which side plays first; players then alternate turns. PDF page 12, Operation Alliance team mode: sides alternate turns starting with the side indicated in the scenario setup; the 1st player of the starting team goes first. PDF page 13 shows copyright 2025 Days of Wonder. The WWII command-card hex battle game matches BGG 10630. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The starting side varies by scenario; the rulebook does not say how to decide which person plays which side beyond recommending playing both sides."
+  ]
+}

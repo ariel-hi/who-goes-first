@@ -1,0 +1,44 @@
+{
+  "id": "colt-express-ludonaute-2016-en",
+  "slug": "colt-express-ludonaute-2016-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Colt Express",
+  "aliases": [],
+  "editionLabel": "Ludonaute English rules, 2016",
+  "firstPlayerRule": "After everyone chooses a character, take the chosen characters' bandit figures and pick one at random; that bandit's player is the First Player for the first round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting with the First Player and going clockwise, players place their bandits in the caboose and the adjacent car.",
+    "Within a round, turns start with the First Player and go clockwise.",
+    "At the end of each round, the player to the left of the First Player takes the Round deck and becomes the new First Player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.data.ludonaute.fr/Colt_Express/RULES/Colt_Express_Rules_2016_EN.pdf",
+      "title": "Colt Express — English rules",
+      "publisher": "Ludonaute",
+      "printedPages": [
+        "3",
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Page 3, Setup: Placing the Bandits; pages 4-5, Phase 1 (Schemin') and end of round",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules from Ludonaute's data server (same folder as the French 2016 rules linked from https://www.ludonaute.fr/portfolio/colt-express/); SHA-256 99a7b3e1bd71c738bbedef6cc1a01215200e9d5b5902377f25b80dc78d3d1645, 7 PDF pages laid out as two-page spreads. Printed page 3 (PDF 2): take the chosen characters' bandit figures, randomly choose 1, and that player is the First Player for the first round; bandits are placed clockwise from the First Player. Printed pages 4-5 (PDF 3): turns start with the First Player clockwise, and the player to the left of the First Player becomes the new First Player at round end. Credits read 2016 Ludonaute; train, bandits and Marshal match Colt Express BGG 158899. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The 2-bandits-per-player variant for 2-3 players was not checked for a different opening procedure."
+  ]
+}

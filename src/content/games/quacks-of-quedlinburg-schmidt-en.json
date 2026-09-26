@@ -1,0 +1,51 @@
+{
+  "id": "quacks-of-quedlinburg-schmidt-en",
+  "slug": "quacks-of-quedlinburg-schmidt-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "6ccd01dc5d714ceb523e16fdac188a282b058e88990be8d85acfa962c44d75e6",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "The Quacks of Quedlinburg",
+  "aliases": [
+    "Quacks",
+    "Quacks of Quedlinburg"
+  ],
+  "editionLabel": "Schmidt English base game",
+  "firstPlayerRule": "Whoever most recently cooked something is the first starting player. They hold the Fortune Teller deck and read its opening card; everyone brews potions at the same time.",
+  "officialTieBreak": null,
+  "houseFallback": "If the cooking criterion leaves a tie, agree to choose randomly. This is a house rule, not an official tie-break.",
+  "clarifications": [
+    "The starting-player role passes clockwise with the Fortune Teller deck after each round.",
+    "During ordinary brewing, players do not have individual turns or have to draw chips in lockstep. In the final round, the starter calls for everyone to draw together."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/88220_Quack_rules_english_2024.pdf",
+      "title": "The Quacks of Quedlinburg — English rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "2",
+        "3",
+        "4",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "location": "Setup; Fortune Teller Cards; Potions Phase; End of Turn; final-round instructions",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Schmidt's English product page lists this manual using a broken relative link; the same file resolves at the publisher's root files directory. Setup: 'The last person to cook something goes first.' The role coordinates shared play. Source custody: research/source-files/popular-sep26/quacks.pdf; SHA-256 ede9a812597305729aaf73891941e10e9052270aaf1b164a371c124a48c95851. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "No cooking tie-break is supplied. This English Schmidt edition is distinct from the catalog's German-manual summary and does not assert rules for CMYK's revised artwork edition."
+  ]
+}

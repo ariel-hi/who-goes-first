@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import PickerShell from '../components/PickerShell.astro';
 import RuleLookup from '../components/RuleLookup.astro';
+import SocialLinks from '../components/SocialLinks.astro';
 import HomeRandomRule from '../components/HomeRandomRule.astro';
 import { getCatalog } from '../lib/content/catalog';
 import { siteSettings } from '../lib/site';
@@ -10,8 +11,9 @@ const balloonEnabled = process.env.DISABLE_BALLOON !== 'true';
 const approved = getCatalog();
 const gameCount = new Set(approved.map(rule => rule.gameName)).size;
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
+const title = 'Who Goes First? Random First Player Picker';
 ---
-<Layout ads={false} title="Who Goes First? Random First Player Picker" description="Choose who goes first in your board game. A free, fair random picker for 2–50 players, with names or numbered seats. No account or download needed.">
+<Layout ads={false} title={title} description="Choose who goes first in your board game. A free, fair random picker for 2–50 players, with names or numbered seats. No account or download needed.">
   <div class="tool-page home-page">
     <noscript><p class="noscript">Enable JavaScript to pick a player on your device. You can still browse the static rules and fairness pages.</p></noscript>
     <div class="home-layout">
@@ -30,6 +32,7 @@ const gamesPath = localPreview ? '/dev/games/' : '/games/';
           <li><a href="/house-rules/">Fun questions</a></li>
           <li><a href="/choose-who-goes-first/">How to choose who starts</a></li>
         </ul>
+        <SocialLinks kind="picker" title={title} />
       </section>
     </div>
   </div>

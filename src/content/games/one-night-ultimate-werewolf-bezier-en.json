@@ -1,0 +1,42 @@
+{
+  "id": "one-night-ultimate-werewolf-bezier-en",
+  "slug": "one-night-ultimate-werewolf-bezier-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "1b9a21d2b8f350f8d803c5f53ad57426c66aebd22327ea98214b238fa5eaef1e",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "One Night Ultimate Werewolf",
+  "aliases": [
+    "ONUW",
+    "One Night"
+  ],
+  "editionLabel": "Bezier Games English Getting Started Guide",
+  "firstPlayerRule": "There is no first player. At night, roles wake up in a fixed order called out by the Announcer (one designated player) or by the free app; during the day, everyone discusses freely and then all players vote at the same time.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Roles with a night action are called in the order set by the rules (the numbers on the role tokens show the wake order).",
+    "The guide says one player is designated the Announcer but gives no method for choosing that player; the app can replace the Announcer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0740/4855/files/ONUW_Getting_Started_for_BGG.pdf",
+      "title": "One Night Ultimate Werewolf — Getting Started Guide",
+      "publisher": "Bezier Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "First Game Setup and Night; Day, Get the Free App, and Using Role Tokens",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Getting Started Guide linked from the Bezier Games product page (https://beziergames.com/products/one-night-ultimate-werewolf), SHA-256 16b053afb9243aa15b2f1c59078acb6522983300f426648b11e982e63c7895ed. The PDF has no text layer, so all 4 pages were rendered and read visually. Page 2, Night: one player is designated the Announcer and announces each role in order, with a sample script. Page 3, Day: players discuss, then on 'Everyone, three, two, one, VOTE!' each player points to another player; the free app can replace the Announcer; role token numbers correspond to the night wake order. Also checked the role rulebook linked from the same page (ONUW_rules-updated_for_BGG.pdf, SHA-256 3ed5be0765f50779139a4cec7dd765ded77a1d68cc6473c919375b9a067986a4), pages 2-3, which describes role wake order only. The werewolf social-deduction game with one night and one day matches BGG 147949. No copyright year was visible in the guide. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The guide does not say how to choose the Announcer."
+  ]
+}

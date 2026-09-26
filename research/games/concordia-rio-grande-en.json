@@ -1,0 +1,39 @@
+{
+  "id": "concordia-rio-grande-en",
+  "slug": "concordia-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Concordia",
+  "aliases": [],
+  "editionLabel": "Rio Grande Games / PD-Verlag English rules, version 1.1",
+  "firstPlayerRule": "Determine the start player randomly. The last player (to the right of the start player) receives the Praefectus Magnus card.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns in clockwise order, each playing one personality card per turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/10/Concordia_rules_eng_1_1.pdf",
+      "title": "Concordia — Game Rules (English)",
+      "publisher": "Rio Grande Games / PD-Verlag",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Page 1, Game Overview: Game setup and Game flow",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://www.riograndegames.com/wp-content/uploads/2013/10/Concordia_rules_eng_1_1.pdf from the English publisher Rio Grande Games’ site. SHA-256: 0a0c875e81c00f09f82930a8fdf271ec41f852c110c5512db0d26a63f6c21f50. Read the extracted text of all 4 PDF pages; the start-player text is on page 1. Page 1, Game setup: ‘After randomly determining the start player, the last player (player to the right of the start player) receives the Praefectus Magnus.’ Game flow: turns go clockwise. The material list (Imperium/Italia board, 65 personality cards, Praefectus Magnus card) and final scoring by personality gods identify Mac Gerdts’ Concordia base game (BGG 124361). The file name marks rules version 1.1. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "These rules say detailed setup is in a separate quick intro, which was not checked; it may add seat-based starting details."
+  ]
+}

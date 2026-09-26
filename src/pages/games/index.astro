@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import GameDirectory from '../../components/GameDirectory.astro';
 import RandomRule from '../../components/RandomRule.astro';
+import SocialLinks from '../../components/SocialLinks.astro';
 import { getCatalog } from '../../lib/content/catalog';
 import { publisherHubs, themeHubs } from '../../lib/content/hubs';
 import { getRuleSearchAliases } from '../../lib/content/rule-search';
@@ -10,5 +11,6 @@ const searchAliases = getRuleSearchAliases();
 const themes = themeHubs(games);
 const publishers = publisherHubs(games);
 const gameCount = new Set(games.map(game => game.gameName)).size;
+const title = 'Board Game Starting-Player Rules — Who Goes First?';
 ---
-<Layout title="Board Game Starting-Player Rules — Who Goes First?" description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}><div class="content-page"><h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p><p>{games.length.toLocaleString('en')} starting-player rules for {gameCount.toLocaleString('en')} games, each checked against the publisher’s rules. Can’t find yours? Try the <a href="/board-games/">full board game list</a> or the <a href="/">player picker</a>.</p><RandomRule games={games} />{themes.length > 0 && <nav class="hub-nav" aria-label="Browse rules"><h2>Browse by kind of rule</h2><ul class="theme-links">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}</a></li>)}<li><a href="/ways-to-pick-who-goes-first/">Fun ways to pick</a></li>{publishers.length > 0 && <li><a href="/publishers/">By publisher</a></li>}</ul></nav>}<GameDirectory games={games} searchAliases={searchAliases} enableDirectorySearch enableSearchHistory /></div></Layout>
+<Layout title={title} description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}><div class="content-page"><h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p><p>{games.length.toLocaleString('en')} starting-player rules for {gameCount.toLocaleString('en')} games, each checked against the publisher’s rules. Can’t find yours? Try the <a href="/board-games/">full board game list</a> or the <a href="/">player picker</a>.</p>{games.length > 0 && <SocialLinks kind="rules" title={title} />}<RandomRule games={games} />{themes.length > 0 && <nav class="hub-nav" aria-label="Browse rules"><h2>Browse by kind of rule</h2><ul class="theme-links">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}</a></li>)}<li><a href="/ways-to-pick-who-goes-first/">Fun ways to pick</a></li>{publishers.length > 0 && <li><a href="/publishers/">By publisher</a></li>}</ul></nav>}<GameDirectory games={games} searchAliases={searchAliases} enableDirectorySearch enableSearchHistory /></div></Layout>

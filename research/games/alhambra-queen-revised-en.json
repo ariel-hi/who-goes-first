@@ -1,0 +1,44 @@
+{
+  "id": "alhambra-queen-revised-en",
+  "slug": "alhambra-queen-revised-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Alhambra",
+  "aliases": [
+    "Alhambra Revised Edition"
+  ],
+  "editionLabel": "Queen Games English rules, revised edition 2019",
+  "firstPlayerRule": "After everyone is dealt starting money (cards dealt one at a time until each player has 20 or more), the player with the fewest money cards starts.",
+  "officialTieBreak": "If players have the same number of cards, the one with the lowest total money starts; if still tied, the younger player starts.",
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds clockwise, beginning with the starting player.",
+    "In the two-player game the imaginary third player, Dirk, never takes turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rules.queen-games.com/alhambra_designer_revised_en.pdf",
+      "title": "Alhambra — English rules (revised edition)",
+      "publisher": "Queen Games",
+      "printedPages": [
+        "2",
+        "3",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        6
+      ],
+      "location": "Page 2, Getting ready to play (starting money and starting player); page 3, How to play; page 6, two-player rules and copyright",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Queen Games rules file https://rules.queen-games.com/alhambra_designer_revised_en.pdf; SHA-256 a11a580e764693fa29e078b2bdd6e70d0399312d52303edd15d10921f52afa25, 6 pages. Page 2: starting money dealt until 20 or more; fewest cards starts, then lowest amount of money, then the younger player. Page 3: play proceeds clockwise from the starting player. Page 6: two-player Dirk rules and 'Copyright 2003/2019 Queen Games'. Rulebook names Dirk Henn, 2-6 players, matching Alhambra BGG 6249. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": []
+}

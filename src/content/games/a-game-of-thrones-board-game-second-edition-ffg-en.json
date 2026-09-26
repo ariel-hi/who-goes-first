@@ -1,0 +1,47 @@
+{
+  "id": "a-game-of-thrones-board-game-second-edition-ffg-en",
+  "slug": "a-game-of-thrones-board-game-second-edition-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "90e1b063dade99fdf37beb85d00d8b9911472c4306a1175fa6282eb61e0db210",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "A Game of Thrones: The Board Game (Second Edition)",
+  "aliases": [
+    "A Game of Thrones: The Board Game",
+    "AGoT 2nd Edition",
+    "Game of Thrones board game"
+  ],
+  "editionLabel": "Fantasy Flight Games second edition English rulebook, 2011",
+  "firstPlayerRule": "Turn order follows the Iron Throne Influence track: the House whose token is in position 1 goes first. Starting positions are set by each House's player screen during setup.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players choose their Houses, or may determine them randomly, before placing Influence tokens.",
+    "With fewer than six players, Influence tokens slide left to fill empty positions on each track.",
+    "The House in position 1 on the Iron Throne track holds the Iron Throne token and decides most ties; the track can change when Clash of Kings bidding happens."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/agot-bg-2nd-ed/support/VA65_AGoT2_Rulebook_web.pdf",
+      "title": "A Game of Thrones: The Board Game — Rulebook (Second Edition)",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        11
+      ],
+      "location": "Page 4, Setup steps 6 and 8; page 11, The Iron Throne Track",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the second-edition rulebook (VA65) from Fantasy Flight Games' own CDN and extracted text from PDF pages 4, 5, 10 and 11. Page 4 setup step 6: players select Houses or randomly determine them; step 8: 'Each player places his Victory, Supply, and Influence tokens on the game board tracks as instructed by his player screen', shifting left with fewer than six players. Page 11: 'The order of Influence tokens on the Iron Throne Influence track determines the turn order ... always start with the player whose token is in the \"1\" position'. Copyright 2011 Fantasy Flight Publishing; product code VA65 is the second edition, BGG 103343. The player-screen start positions themselves were not checked. SHA-256: 6063393641108ddf388d0621aa89ffdd973184d1dbc3be3710229a74004532e8. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook text does not name which House starts in position 1; that comes from the printed player screens, which were not checked."
+  ]
+}

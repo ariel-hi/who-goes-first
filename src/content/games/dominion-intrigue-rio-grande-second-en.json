@@ -1,0 +1,51 @@
+{
+  "id": "dominion-intrigue-rio-grande-second-en",
+  "slug": "dominion-intrigue-rio-grande-second-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "5851900222fe3716ebba47de9c76697c5b5431cedfdb182809bcec3ba07c6fb6",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Dominion: Intrigue",
+  "aliases": [],
+  "editionLabel": "Rio Grande English second edition",
+  "firstPlayerRule": "Choose the starting player randomly. If you just played a game of Dominion that did not end in a tie, the previous winner plays last and the player to their left starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Intrigue's second edition requires the basic cards and rulebook supplied by Dominion; the starting instruction comes from those base rules.",
+    "The earlier standalone first edition is not the edition reviewed here."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2022/03/Dominion-Rules-Intrigue-2nd-Edition.pdf",
+      "title": "Dominion: Intrigue — second-edition rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Introduction specifies the required basic cards and Dominion rulebook",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf",
+      "title": "Dominion — second-edition rules",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Preparation, opening paragraph on page 4",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Reviewed Intrigue's explicit dependency on the base rulebook and Dominion's random-start instruction with its preceding-winner exception. Source custody: research/source-files/popular-sep26/intrigue.pdf; SHA-256 59f89a7e28a23044def0e3914522daa725f4feb44e893211926c86c2c96beee1; research/source-files/popular-sep26/dominion.pdf; SHA-256 4c109459b5253acc7611bb2c14f98a90a4f60f7cce3311bfab6cbac7ab3e8ac9. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "Other expansions or special card effects may add setup instructions; they are outside this record's scope."
+  ]
+}

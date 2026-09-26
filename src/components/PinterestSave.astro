@@ -1,0 +1,19 @@
+---
+import { siteSettings } from '../lib/site';
+
+interface Props { kind: 'picker' | 'rules' | 'questions' }
+const items = {
+  picker: { path: '/', image: '/pins/first-player-picker.png', description: 'Start game night with an equal-chance draw for 2–50 players. Use numbered seats or names. Free, with no account needed.' },
+  rules: { path: '/games/', image: '/pins/starting-rules.png', description: 'Search publisher-checked starting-player rules by board game and edition. Each answer links to its source.' },
+  questions: { path: '/house-rules/', image: '/pins/fun-questions.png', description: 'Try an original house-rule question for a playful start to game night. Break ties with the fair picker.' },
+};
+const item = items[Astro.props.kind];
+const site = siteSettings();
+const destination = new URL('https://www.pinterest.com/pin/create/button/');
+destination.search = new URLSearchParams({ url: new URL(item.path, site.url).href, media: new URL(item.image, site.url).href, description: item.description }).toString();
+---
+{site.production && <a class="pinterest-save" href={destination.href} target="_blank" rel="noopener noreferrer">Save on Pinterest <span class="sr-only">(opens in a new tab)</span></a>}
+<style>
+  a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:7px;font-weight:600;color:var(--green);text-decoration:none}
+  a:hover{text-decoration:underline}
+</style>

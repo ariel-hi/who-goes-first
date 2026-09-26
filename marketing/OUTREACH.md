@@ -4,6 +4,8 @@
 
 The three original 1000 × 1500 images in `public/pins/` lead to specific, useful pages. Rebuild them with `node marketing/create-pins.mjs`. Their RSS feed is `/pinterest.xml`; it contains only these curated items, not the entire game catalog. The feed must be published on the claimed domain before it can be connected to a Pinterest business account. Use a public board such as “Board game night ideas.” Pinterest may create Pins after a feed is connected, so inspect the live feed and images first.
 
+The production picker, rule directory and house-question pages also offer a plain **Save on Pinterest** link. It opens Pinterest's Save interface with the matching original image, a fixed description and a clean canonical destination. A visitor chooses a board and confirms on Pinterest. The link does not load Pinterest scripts, replay private player state, or report that a Pin was saved. Previews do not expose this action. This visitor action is separate from the owner's account launch below. A live preview of the documented link format loaded the correct image and description on 2026-09-26 UTC; no Pin was saved during verification. See [Pinterest's Save button documentation](https://developers.pinterest.com/docs/web-features/buttons/).
+
 | Pin | Destination | Purpose |
 | --- | --- | --- |
 | `first-player-picker.png` | `/?utm_source=pinterest&utm_medium=organic_social&utm_campaign=first_player_picker` | Direct tool visit |
@@ -12,7 +14,19 @@ The three original 1000 × 1500 images in `public/pins/` lead to specific, usefu
 
 Pinterest requires a claimed website to connect an RSS feed. A Pinterest business account can claim `whogoesfirst.fun` using a personalized HTML tag, an HTML file at the domain root, or a DNS TXT record. Do not add a guessed verification value. After claim, connect `https://whogoesfirst.fun/pinterest.xml` in Pinterest's bulk creation settings. The feed links and images must resolve on the claimed domain. See [Pinterest's claim instructions](https://help.pinterest.com/en/business/article/claim-your-website) and [RSS instructions](https://help.pinterest.com/en/business/article/auto-publish-pins-from-your-rss-feed).
 
+## Printable table cards
+
+The public `/printable-game-night/` page offers a one-page PDF with two cut-out QR cards for clubs, cafés and casual hosts. The code points to the clean picker URL, `https://whogoesfirst.fun/`, and includes no roster, saved result or campaign identifier. Print in portrait on US Letter, or fit to A4. The page explains how to test the code, includes a sheet preview and links back to the picker and sourced rules.
+
+Hosts can download and print without analytics consent or a signup. The page’s optional Share button uses the existing consented `share` event and fixed `site_page` label. A share handoff or a printed card does not prove an acquired visitor; clean QR visits cannot be separated from other direct visits. Keep channel claims limited to observed evidence.
+
+The PDF response declares the printable page as its preferred canonical using an absolute `Link` HTTP header. This points search engines toward the page with the download and printing instructions; it is a preference, not a guarantee of indexing or ranking. See [Google’s canonical-header guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls).
+
 ## Bluesky drafts
+
+The production picker, rule directory and populated house-question page also offer **Share on Bluesky** beside Pinterest. Their draft text uses the public page title and canonical link. These links share a public page, never a roster, selected question, search query or result.
+
+Production rule pages and the printable-card page offer a plain **Share on Bluesky** action beside their existing sharing control. It opens an editable draft with the public title and clean canonical link; the visitor still confirms publication. No Bluesky script or new analytics event is loaded. Previews and draft rules do not expose this action. This visitor workflow does not choose the owner's launch account. See [Bluesky's action intent documentation](https://bsky.network/docs/intent-links/).
 
 Publish from the site's own account when available. Use one post at a time, with an accurate landing page and the corresponding image. Keep the link intact so consented visits can be attributed. Suggested posts:
 
@@ -22,11 +36,19 @@ Publish from the site's own account when available. Use one post at a time, with
 
 Do not claim universal rule coverage, guaranteed search placement, certified randomness, or an official publisher relationship. The first two posts can work independently; space them so replies can be answered rather than publishing a batch without engagement.
 
+## Returning visitors
+
+The production picker offers home-screen shortcut metadata with the site's original dice mark in 180, 192 and 512 pixel PNG icons. Its manifest launches the clean homepage in a browser. Only the homepage links that manifest, so saving an individual rule page keeps ordinary page-bookmark behavior. About explains how to bookmark the picker or look for **Add to Home Screen** in a phone browser's share/menu options, and says an internet connection is needed to reopen it.
+
+Rebuild the icons with `node marketing/create-home-icons.mjs`. This adds no install prompt, service worker, notifications or new analytics event. A manifest is browser metadata, not evidence that someone saved or reopened the site. Physical iOS and Android installation remain outside the desktop release checks. See [Apple's home-screen icon guidance](https://developer.apple.com/videos/play/wwdc2022/10048/) and the [web app manifest reference](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest).
+
 ## What to measure
 
 In GA4, compare consented sessions and engaged visits for the fixed `pinterest / organic_social` and `bluesky / organic_social` campaigns. Also use Pinterest's outbound clicks and Bluesky's own engagement counts, since GA4 does not count visitors who decline analytics. Search Console can show clicks, queries, and indexing for the picker, guide, directory, and sourced rule pages. Review at least a week of data before changing copy or spending money; this site has no demonstrated paid acquisition return yet.
 
 The tag receives only one of the fixed campaign source, medium, and name combinations after consent. It removes the rest of the query before loading analytics. No player data or search terms are included. Share links remain clean.
+
+The recommended GA4 [`share` event](https://developers.google.com/analytics/devguides/collection/ga4/reference/events#share) counts a completed clean-link handoff after consent. The picker has “Share” and sourced rule pages have “Share this rule.” Compare users who trigger `share` with consented active users for each acquisition campaign. A copied link or accepted browser sharing interface is a handoff signal, not proof of a social post or a new visitor. Track subsequent channel visits separately. The event uses only fixed labels (`method: link`, `content_type: tool`, `item_id: first_player_picker` for the picker; `content_type: page`, `item_id: site_page` for a rule page); no roster, winner, reveal choice, or recipient is sent. Previous actions are discarded, and the expanded consent choice uses version 2 so earlier page-view consent is not reused.
 
 ## Economics decision gate
 

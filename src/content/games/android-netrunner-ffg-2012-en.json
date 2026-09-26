@@ -1,0 +1,42 @@
+{
+  "id": "android-netrunner-ffg-2012-en",
+  "slug": "android-netrunner-ffg-2012-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "cedd96547ec73de2d6805292770bba2bcc4fe7f09062486d27ea416dfdb12ed7",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Android: Netrunner",
+  "aliases": [
+    "Netrunner",
+    "ANR"
+  ],
+  "editionLabel": "Fantasy Flight Games Core Set English rulebook, 2012",
+  "firstPlayerRule": "The Corporation (Corp) player always takes the first turn of the game. The Corp and the Runner then alternate turns.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "At setup, the players decide who will play as the Runner and who will play as the Corporation; whoever takes the Corporation goes first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/android-netrunner/support/android-netrunner-core-rules.pdf",
+      "title": "Android: Netrunner — Core Set rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        5,
+        12,
+        34
+      ],
+      "location": "Setup step 1, Choose Sides; Playing the Game; credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Core Set rulebook from Fantasy Flight Games' support CDN (https://images-cdn.fantasyflightgames.com/ffg_content/android-netrunner/support/android-netrunner-core-rules.pdf), SHA-256 e07e9076e7e7da7c90f079ae5e7f5e695d49f93b457d9a069a69077d7f8393f1, and extracted the text of all 36 PDF pages. PDF page 5, Setup step 1, Choose Sides: the players decide who will play as the Runner and who will play as the Corporation. PDF page 12, Playing the Game: the Corporation and the Runner alternate taking turns; the Corporation always takes the first turn of the game. PDF page 34 credits original game design Richard Garfield and development Lukas Litzsinger; component art carries copyright 2012 Wizards of the Coast LLC / FFG, matching BGG 124742. Also checked the Revised Core Set Rules Reference v1.1 (2018, SHA-256 080d5727043a9438078deabe2ac75924897a9e9c965df23f255b4ccda5cc70a0); it shows the same Corp-turn structure but no contradicting first-turn rule was found. Printed folios were not confirmed in the text extract, so PDF positions are cited. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "Fantasy Flight Games has ended the product; later community-run versions of Netrunner were not checked."
+  ]
+}

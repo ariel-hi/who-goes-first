@@ -1,0 +1,46 @@
+{
+  "id": "santorini-roxley-en",
+  "slug": "santorini-roxley-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "ce6ad0c4be1fa92ffde5d9719b71d641ab917f9c5e574c393027647ff035868d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Santorini",
+  "aliases": [],
+  "editionLabel": "Roxley Games English rulebook, 2017 print",
+  "firstPlayerRule": "The youngest player is the Start Player. They place their two Workers first, and play begins with the Start Player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The other player(s) then place their Workers, and players take turns starting with the Start Player.",
+    "With God Powers, the Challenger (the most \"god-like\" player) picks the God Powers, everyone else chooses one clockwise, and the Challenger then chooses the Start Player, possibly themself.",
+    "In the 4-player team game, a team's first player places the Workers and the team's second player takes the first turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0246/2190/8043/files/Santorini_-_Rulebook_-_Print_-_2017.02.05_WEB.pdf?v=1702056099",
+      "title": "Santorini — Rulebook",
+      "publisher": "Roxley Games",
+      "printedPages": [
+        "1",
+        "2",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2,
+        6
+      ],
+      "location": "Page 1, Setup step 3 and How to Play; page 2, God Power setup steps 3 and 7; page 6, 4 Players (Team Game)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the rulebook linked from Roxley's own product page (roxley.com/products/santorini, Shopify CDN) and extracted text from pages 1, 2 and 6. Page 1 setup step 3: 'The youngest player is the Start Player', who places 2 Workers first; players take turns starting with the Start Player. Page 2: the Challenger, 'determined by who is the most \"god-like\"', chooses God Powers and later chooses a Start Player including themself. Page 6: team-game worker placement and first turn. The older files.roxley.com 2016 web rulebook has the same start instruction. Copyright 2016 Roxley Games; filename marks the 2017 print. Matches BGG 194655. SHA-256: f485d9488bb129169d33d07c45ac7f97b51b84258b59431dd4463d7e0b01ff0f. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No tie-break is given if players are the same age.",
+    "Games using God Powers use the Challenger's choice instead of the youngest player."
+  ]
+}

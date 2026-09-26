@@ -1,0 +1,58 @@
+{
+  "id": "star-realms-white-wizard-en",
+  "slug": "star-realms-white-wizard-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Star Realms",
+  "aliases": [
+    "Star Realms Deckbuilding Game"
+  ],
+  "editionLabel": "White Wizard Games English rules sheet, 2013",
+  "firstPlayerRule": "Randomly determine who plays first. The first player starts with a 3-card hand; the second player draws 5.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the two-player game, players alternate turns.",
+    "Free-For-All and Hunter (3+ players): randomly choose the first player, who draws 3 cards; play goes clockwise, the second player draws 4, and everyone else draws 5.",
+    "Hydra team games: randomly choose which team goes first; that team’s players draw 3 cards and the other team’s draw 5.",
+    "Raid: play starts with the Boss and proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.starrealms.com/images/content/learn-to-play/StarRealmsRules1.webp",
+      "title": "Star Realms — Two Player Rules (page 1)",
+      "publisher": "White Wizard Games (now Wise Wizard Games)",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Page 1, Setup (final paragraph) and Play",
+      "checkedAt": "2026-09-25"
+    },
+    {
+      "url": "https://www.starrealms.com/images/content/learn-to-play/StarRealmsRules3.webp",
+      "title": "Star Realms — Multiplayer Rules",
+      "publisher": "White Wizard Games (now Wise Wizard Games)",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Multiplayer Rules: Free-For-All, Hunter, Hydra, Emperor and Raid",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Viewed the official rules sheet images linked from the publisher page https://www.starrealms.com/learn-to-play/. SHA-256 of StarRealmsRules1.webp: 08dd5035b0344c7233dbebe101fae5b804d1884d16516719485ee010b4b44370; StarRealmsRules3.webp: f92dc1d03fe0dc3078a8071f5b8b3a7aed9f47d27a47d897db221d0ba2326ace. Page 1 (Two Player Rules): ‘Randomly determine which player will play first. That player draws three cards … The player going second draws five cards’, then players alternate turns. Page 3 (Multiplayer Rules): Free-For-All and Hunter randomly determine the first player (3/4/5-card hands, clockwise); Hydra randomly determines the first team; Emperor gives Team A three cards; Raid starts with the Boss. Both sheets are footed Star Realms © 2013 White Wizard Games LLC and list 80 Trade Deck cards, identifying the base Star Realms deckbuilding game (BGG 147020). Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The rules sheet is published as images on the official site rather than a PDF, so page numbers refer to the sheet pages.",
+    "The rules do not say how the Emperor format decides which team is Team A."
+  ]
+}

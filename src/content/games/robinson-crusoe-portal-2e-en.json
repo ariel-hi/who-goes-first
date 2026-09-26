@@ -1,0 +1,51 @@
+{
+  "id": "robinson-crusoe-portal-2e-en",
+  "slug": "robinson-crusoe-portal-2e-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "2c5ff2ba251f57ef07fb1968872f53e645f03b6eb17ca7e5d375e2ab1c5f11d1",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Robinson Crusoe: Adventures on the Cursed Island",
+  "aliases": [
+    "Robinson Crusoe"
+  ],
+  "editionLabel": "Portal Games English rulebook, second edition",
+  "firstPlayerRule": "The youngest player becomes the First Player and takes the First Player token.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "At the end of each round, the First Player token passes clockwise to the next player.",
+    "The First Player draws Event cards (from round 2), handles morale, and alone fights any combat an Event demands."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://web.archive.org/web/20250420003705/https://portalgames.pl/files/rules/robinson_crusoe_rulebook.pdf",
+      "title": "Robinson Crusoe: Adventures on the Cursed Island — Rulebook (archived publisher copy)",
+      "publisher": "Portal Games",
+      "printedPages": [
+        "5",
+        "8",
+        "9",
+        "23",
+        "37"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        8,
+        9,
+        23,
+        37
+      ],
+      "location": "Page 5, setup step 17; pages 8–9, Event and Morale phases; page 23, Night phase step 6; credits on page 37",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Portal Games’ English game page https://en.portalgames.pl/all-game-list/robinson-crusoe-adventures-on-the-cursed-island/ and shop page still link https://portalgames.pl/files/rules/robinson_crusoe_rulebook.pdf, which now returns 404. Downloaded the Internet Archive capture of that exact publisher file (snapshot 20250420003705; the archive lists the same content digest for all captures 2020–2025). SHA-256: 56b2d6b149e98f1e4ebcb58401c37c951f506404197d20a243fbc9a579e06c3c. Read the extracted text of PDF pages 5, 8, 9, 23, 26 and 37. Page 5, setup step 17: ‘The youngest player becomes the First Player and receives the First Player token.’ Pages 8–9: the First Player draws Event cards from round 2 and checks morale. Page 23: at the end of the round, pass the First Player token clockwise. Page 26: 2-player and solo variants add Friday (and the Dog in solo) without changing the start. Page 37 credits designer Ignacy Trzewiczek, game manual by Simon Reitenbach, publisher Portal Games, identifying the revised English rulebook of Robinson Crusoe: Adventures on the Cursed Island (BGG 121921). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook gives no tie-break for players of the same age.",
+    "The publisher’s own link is currently broken, so the source is an Internet Archive copy of the publisher file."
+  ]
+}

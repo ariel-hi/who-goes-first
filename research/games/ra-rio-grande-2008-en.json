@@ -1,0 +1,42 @@
+{
+  "id": "ra-rio-grande-2008-en",
+  "slug": "ra-rio-grande-2008-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Ra",
+  "aliases": [],
+  "editionLabel": "Rio Grande Games English rules, 2008",
+  "firstPlayerRule": "Players randomly decide who gets which group of Sun tiles; the player with the highest-numbered Sun begins. Play then continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Sun groups are dealt out at random during setup, so the starting player is effectively chosen at random.",
+    "At the start of each later epoch, the player who now has the highest-numbered Sun begins."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://world-of-board-games.com.sg/docs/Ra.pdf",
+      "title": "Ra — English rules (Rio Grande Games)",
+      "publisher": "Rio Grande Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        6,
+        8
+      ],
+      "location": "PDF page 2, Sun setup; PDF page 3, Playing the Game; PDF page 6, end of epoch; PDF page 8, credits",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "No rules download was found on the Rio Grande Games or 25th Century Games product pages. Downloaded the Rio Grande Games English rules as hosted by retailer World of Board Games Singapore (https://world-of-board-games.com.sg/docs/Ra.pdf), SHA-256 140b4147310254e1619231abebe8d5dd46e8561865f27a22127530091f97fd2b, and extracted the text of all 8 pages. The page slugs read SPR_RG_RA_ENG, and PDF page 8 lists Rio Grande Games, Rio Rancho NM, copyright 1998 Reiner Knizia and 2008 Rio Grande Games, Inc. PDF page 2: the players decide randomly which player receives which group of Suns. PDF page 3: the player with the highest numbered sun begins; play continues clockwise. PDF page 6: the player with the highest numbered sun begins the next epoch. Sun groups for 2 to 5 players and the tile-auction play match BGG 12. Page layout made printed folios unreliable in the text extract, so only PDF positions are cited. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "The file is the Rio Grande Games rules hosted by a retailer, not on the publisher's own site.",
+    "The newer 25th Century Games edition rulebook was not available from the publisher and was not checked."
+  ]
+}

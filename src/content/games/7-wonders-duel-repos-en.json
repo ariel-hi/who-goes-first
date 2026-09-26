@@ -1,0 +1,50 @@
+{
+  "id": "7-wonders-duel-repos-en",
+  "slug": "7-wonders-duel-repos-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "d730ac65af62e1043060cab34692cadbbc31536a95cf58ad6b19e8643612480d",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "7 Wonders Duel",
+  "aliases": [
+    "7WD",
+    "Seven Wonders Duel"
+  ],
+  "editionLabel": "Repos Production English rulebook, 2015",
+  "firstPlayerRule": "The rulebook simply says to choose a first player; it gives no method. That player starts the Wonders selection and begins Age I.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the Wonders selection, the first player chooses 1 of 4 Wonders, the second player chooses 2, and the first player takes the last one. The second group of 4 starts with the second player.",
+    "Players then alternate turns, and the first player begins Age I.",
+    "At the start of Age II and Age III, the player with the weaker military (the Conflict pawn is on their side) chooses who begins. If the pawn is in the middle, the player who played the last card of the previous Age chooses."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-duel/en/7du-rules-us-15990558193s5I6.pdf",
+      "title": "7 Wonders Duel — English rules",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "7",
+        "10",
+        "11",
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        10,
+        11,
+        13
+      ],
+      "location": "Page 7, Wonders Selection Phase; page 10, Game Overview; page 11, End of an Age; credits on page 13",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-duel/en/7du-rules-us-15990558193s5I6.pdf, the English rules linked from the publisher page https://www.rprod.com/en/games/7-wonders-duel. SHA-256: 09b2939823df80444da078e0713d0cc400da95d2f1e96edb86dc023c4dc956f2. Read the extracted text of PDF pages 7, 10, 11 and 13. Page 7 (Wonders Selection Phase) opens with ‘Choose a first player’ and no method; the first player picks 1 Wonder, the second picks 2. Page 10: ‘The first player begins Age I.’ Page 11 (End of an Age): the player with the weakest military chooses who begins the next Age; if the pawn is in the middle, the last active player chooses. Page 13 credits show Repos Production 2015, identifying the two-player 7 Wonders Duel base game (BGG 173346). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rulebook does not say how to choose the first player, so any method your group agrees on fits the rules."
+  ]
+}

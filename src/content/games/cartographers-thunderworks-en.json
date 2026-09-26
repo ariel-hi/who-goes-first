@@ -1,0 +1,45 @@
+{
+  "id": "cartographers-thunderworks-en",
+  "slug": "cartographers-thunderworks-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "7e4dcc003f9ee70d486c8e61ab63c9e2dd5a07616f53ec3c48501212d26774c2",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Cartographers",
+  "aliases": [
+    "Cartographers: A Roll Player Tale"
+  ],
+  "editionLabel": "Thunderworks English base game",
+  "firstPlayerRule": "There is no individual starting turn. Reveal an explore card for everyone; all players then choose and draw their terrain and shape at the same time.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Each turn follows the shared Explore, Draw and Check phases."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/CART-Rulebook-Web.pdf?v=1684163799",
+      "title": "Cartographers — English rulebook",
+      "publisher": "Thunderworks Games",
+      "printedPages": [
+        "4",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        6
+      ],
+      "location": "Game Setup; How to Play; Explore Phase and Draw Phase",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Downloaded through the publisher's Cartographers product page. Setup names no starter, and the Draw Phase explicitly has everyone draw together. Source custody: research/source-files/popular-sep26/cartographers.pdf; SHA-256 5ff41fba4bab125d919366f8df56c8f98ff802a10b3b65f678cd88aad4461d09. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The manual does not assign a particular player to reveal the shared explore cards. This answer covers the base game."
+  ]
+}

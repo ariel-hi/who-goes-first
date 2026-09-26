@@ -1,0 +1,46 @@
+{
+  "id": "gloomhaven-jaws-of-the-lion-cephalofair-en",
+  "slug": "gloomhaven-jaws-of-the-lion-cephalofair-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "4a0bb667498f3abd5691f9b73dc576ab93840055b42806d328c2b308591ac3ca",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Gloomhaven: Jaws of the Lion",
+  "aliases": [
+    "Jaws of the Lion",
+    "JotL"
+  ],
+  "editionLabel": "Cephalofair Games English Learn-to-Play guide, 2020",
+  "firstPlayerRule": "There is no fixed first player. Each round, players secretly choose two ability cards, and figures then act in initiative order, starting with the lowest initiative.",
+  "officialTieBreak": "If a character ties with a monster, the character goes first. If two characters tie, compare the initiative value of their second card.",
+  "houseFallback": null,
+  "clarifications": [
+    "Of the two cards each player selects, one is chosen as the initiative card that sets the character's place in the round.",
+    "Initiative order is set again every round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/c1/6f/d7-gloomhaven-jaws-of-the-lion-rulebook.pdf",
+      "title": "Gloomhaven: Jaws of the Lion — Learn to Play guide",
+      "publisher": "Cephalofair Games",
+      "printedPages": [
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7
+      ],
+      "location": "Page 6, Card Selection; page 7, Ordering of Initiative",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded a copy of the Cephalofair Jaws of the Lion Learn-to-Play guide from the 1j1ju rulebook library (cephalofair.com links no JotL rules PDF; its Gloomhaven page links only the Gloomhaven second-edition rulebook) and extracted text from PDF pages 6, 7 and 31. Page 6: players privately and simultaneously select two cards, one as the initiative card. Page 7: arrange initiative tokens low to high; character-monster ties go to the character; character-character ties use the second card's initiative; the round starts with the lowest initiative. PDF page 31 credits Isaac Childres and Cephalofair Games, copyright 2020, matching BGG 291457. SHA-256: 5ece90b8054527a29ba56600d99a9b88c02fb567ee8334aac9bf9f70978f8fcb. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The cited PDF is a third-party-hosted copy of the publisher's guide, not a file on cephalofair.com.",
+    "This is a cooperative game; the guide describes per-round initiative, not a starting player."
+  ]
+}
