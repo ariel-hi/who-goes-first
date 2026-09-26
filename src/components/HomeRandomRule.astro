@@ -1,0 +1,49 @@
+---
+import type { PublicRule } from '../lib/content/schema';
+import { randomRuleEligible } from '../lib/content/random-rules';
+interface Props { games: PublicRule[] }
+const { games } = Astro.props;
+const pool = games.filter(randomRuleEligible);
+const initial = pool.find(game => game.gameName === 'Azul: Master Chocolatier') ?? pool[0];
+---
+{initial && <section class="home-random-rule" data-home-random-rule data-current={initial.slug} aria-labelledby="home-random-heading">
+  <h3 id="home-random-heading">Try a random rule</h3>
+  <div role="status" aria-live="polite" aria-atomic="true">
+    <p class="home-random-game" data-home-rule-game>{initial.gameName}</p>
+    <p class="home-random-answer" data-home-rule-answer>{initial.firstPlayerRule}</p>
+  </div>
+  <div class="home-random-actions"><button type="button" data-home-draw-rule disabled>Another rule</button><a href={`/games/${initial.slug}/`} data-home-rule-source>Source &amp; details</a></div>
+  <p class="home-random-note">These rules give players different chances. If tied, use the player picker.</p>
+  <p class="error" role="alert" data-home-rule-error hidden></p>
+</section>}
+<script>
+  import { loadRuleIndex } from '../lib/rule-index';
+  import { randomCollectionIndex } from '../lib/selection';
+  document.querySelectorAll<HTMLElement>('[data-home-random-rule]').forEach(root => {
+    const button = root.querySelector<HTMLButtonElement>('[data-home-draw-rule]')!;
+    const error = root.querySelector<HTMLElement>('[data-home-rule-error]')!;
+    let current = root.dataset.current;
+    button.addEventListener('click', async () => {
+      button.disabled = true;
+      root.setAttribute('aria-busy', 'true');
+      try {
+        const pool = (await loadRuleIndex()).filter(rule => rule.p);
+        const choices = pool.filter(rule => pool.length === 1 || rule.s !== current);
+        if (!choices.length) throw new Error('No eligible rules');
+        const choice = choices[randomCollectionIndex(choices.length)]!;
+        root.querySelector<HTMLElement>('[data-home-rule-game]')!.textContent = choice.n;
+        root.querySelector<HTMLElement>('[data-home-rule-answer]')!.textContent = choice.r;
+        root.querySelector<HTMLAnchorElement>('[data-home-rule-source]')!.href = `/games/${choice.s}/`;
+        current = choice.s;
+        error.hidden = true;
+      } catch {
+        error.textContent = 'Another rule is unavailable right now. Try again, or browse the game rules.';
+        error.hidden = false;
+      } finally {
+        button.disabled = false;
+        root.removeAttribute('aria-busy');
+      }
+    });
+    button.disabled = false;
+  });
+</script>

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import PickerShell from '../components/PickerShell.astro';
 import RuleLookup from '../components/RuleLookup.astro';
+import HomeRandomRule from '../components/HomeRandomRule.astro';
 import { getCatalog } from '../lib/content/catalog';
 import { siteSettings } from '../lib/site';
 const localPreview = import.meta.env.DEV && !siteSettings().production;
@@ -22,9 +23,10 @@ const gamesPath = localPreview ? '/dev/games/' : '/games/';
         <h2 id="home-rules-heading">Playing a specific game?</h2>
         <p>Many rulebooks say who starts. Look it up, straight from the publisher’s rules.</p>
         {approved.length > 0 && <RuleLookup ruleCount={gameCount} />}
+        <HomeRandomRule games={approved} />
         <ul class="home-rules-links">
           <li><a href={gamesPath}>Browse game rules</a></li>
-          <li><a href={`${gamesPath}#random-rule`}>Try a random rule</a></li>
+          <li class="mobile-random-link"><a href={`${gamesPath}#random-rule`}>Try a random rule</a></li>
           <li><a href="/house-rules/">Fun questions</a></li>
           <li><a href="/choose-who-goes-first/">How to choose who starts</a></li>
         </ul>

@@ -1,0 +1,38 @@
+.site-nav { margin-left:auto; }
+.theme-toggle { display:grid; place-items:center; flex:none; width:38px; min-height:38px; height:38px; border:1px solid var(--line); border-radius:50%; padding:0; color:var(--green); background:transparent; }
+.theme-toggle:hover { background:var(--soft); }
+.theme-toggle .theme-sun { display:none; }
+:root[data-theme=dark] .theme-toggle .theme-moon { display:none; }
+:root[data-theme=dark] .theme-toggle .theme-sun { display:block; }
+@media(max-width:650px) {
+  .theme-toggle { order:1; margin-left:auto; }
+  .site-nav { order:2; margin-left:0; }
+}
+
+:root[data-theme=dark] { --green:#bba1ca; --ink:#f4edf4; --muted:#c6b7ca; --line:#57475b; --paper:#332c36; --soft:#3b3140; background:#262129; color:var(--ink); }
+:root[data-theme=dark] body { background:#262129; }
+:root[data-theme=dark] :is(input[type=search],input[type=text],input[readonly],textarea,.settings,.prompt-stage) { background:var(--paper); border-color:var(--line); color:var(--ink); }
+:root[data-theme=dark] .home-rules { background:var(--soft); border-color:var(--line); }
+:root[data-theme=dark] .picker-card { border-color:var(--line); }
+:root[data-theme=dark] .stepper { background:#262129; }
+:root[data-theme=dark] .stepper input[type=text] { background:transparent; }
+:root[data-theme=dark] textarea.player-name { background:transparent; border-color:transparent; }
+:root[data-theme=dark] .player-name:hover { background:#ffffff0b; }
+:root[data-theme=dark] .player-name:focus { background:var(--paper); border-color:var(--green); }
+:root[data-theme=dark] .segmented label.selected { color:var(--ink); background:#4b3a54; border-color:#6a5576; }
+:root[data-theme=dark] :is(.segmented label:hover,.segmented .more-modes:hover) { background:var(--soft); }
+:root[data-theme=dark] .primary { background:var(--green); color:#28212c; }
+:root[data-theme=dark] .primary:hover { background:#ccb3da; }
+:root[data-theme=dark] .primary.pick-again { background:var(--soft); color:var(--green); border-color:var(--line); }
+:root[data-theme=dark] :is(.winner-announcement p,.result-placeholder p) { color:var(--green); }
+:root[data-theme=dark] :is(.reveal-stage,.fallback,.home-rule-picker,.directory-empty,.home-rules-browse) { background:var(--paper); border-color:var(--line); }
+:root[data-theme=dark] .rule-lookup-results { border-color:var(--line); }
+:root[data-theme=dark] :is(.rule-lookup-results a:hover,.rule-lookup-results a:focus-visible,.directory-group .game-list a:hover,.directory-shelf a:hover,.directory-results a:hover,.directory-letter-grid a:hover,.directory-pending summary:hover,.directory-pending[open] summary,.directory-filters button:hover,.directory-alphabet a:hover) { background:var(--soft); }
+:root[data-theme=dark] .prose p { color:var(--ink); }
+:root[data-theme=dark] .error { background:#502f32; color:#ffcec2; }
+:root[data-theme=dark] .notice { background:#443a27; color:#edddaa; }
+:root[data-theme=dark] .preview-banner { background:#443a27; color:#edddaa; border-color:#82704b; }
+:root[data-theme=dark] :is(.directory-filters button[aria-pressed=true],.directory-pending-actions a.directory-picker-link,.analytics-consent button) { color:#28212c; background:var(--green); }
+:root[data-theme=dark] .analytics-consent [data-analytics-decline] { color:var(--green); background:transparent; }
+/* The painted pieces and their ink retain their physical colors in either theme. */
+:root[data-theme=dark] .card-front { color:var(--ink); }

@@ -11,7 +11,7 @@ const { ruleCount } = Astro.props;
 <script>
   import { createSearchRanker, prepareSearch, type PreparedSearch } from '../lib/search';
   import { directorySearchHref, readDirectorySearchFragment } from '../lib/directory-search';
-  type Entry = { n: string; a: string[]; e: string; s: string };
+  import { loadRuleIndex, type RuleIndexEntry as Entry } from '../lib/rule-index';
   type IndexedEntry = { entry: Entry; search: PreparedSearch };
   document.querySelectorAll<HTMLElement>('[data-rule-lookup]').forEach(root => {
     const input = root.querySelector('input')!;
@@ -21,7 +21,7 @@ const { ruleCount } = Astro.props;
     let entries: Promise<IndexedEntry[]> | undefined;
     let revision = 0;
     let renderedQuery: string | undefined;
-    const load = () => entries ??= fetch('/rule-index.json').then(response => { if (!response.ok) throw new Error(); return response.json() as Promise<Entry[]>; })
+    const load = () => entries ??= loadRuleIndex()
       .then(all => all.map(entry => ({ entry, search: prepareSearch({ gameName: entry.n, aliases: entry.a, editionLabel: entry.e }) })))
       .catch(error => { entries = undefined; throw error; });
     input.addEventListener('focus', () => { load().catch(() => {}); }, { once: true });
@@ -47,8 +47,10 @@ const { ruleCount } = Astro.props;
       for (const { entry } of matches) names.set(entry.n, (names.get(entry.n) ?? 0) + 1);
       for (const { entry } of matches) {
         const item = document.createElement('li'); const link = document.createElement('a');
-        link.href = `/games/${entry.s}/`; link.textContent = entry.n;
+        link.href = `/games/${entry.s}/`;
+        const name = document.createElement('span'); name.textContent = entry.n; link.append(name);
         if ((names.get(entry.n) ?? 0) > 1) { const edition = document.createElement('small'); edition.textContent = entry.e; link.append(edition); }
+        if (entry.r) { const answer = document.createElement('span'); answer.className = 'rule-lookup-answer'; answer.textContent = entry.r; link.append(answer); }
         item.append(link); list.append(item);
       }
       list.hidden = matches.length === 0;
