@@ -19,4 +19,6 @@ Guillotine (rank 215, BGG116) remains uncovered. A BGG-listed Wizards of the Coa
 
 Strict target coverage is 366/1,062, with 696 remaining. Integration reused the existing directory identities. Acquire (rank 218) is the next unblocked target.
 
-All required gates passed: content validation (1,033 approved rules, 384 portable methods), zero Astro diagnostics, lint, all 154 tests in 16 files, and production build (1,201 pages, 32,064 internal links). SEO and production audits passed. Logs are retained in ignored artifacts. Deployment and live verification follow.
+All required gates passed: content validation (1,033 approved rules, 384 portable methods), zero Astro diagnostics, lint, all 154 tests in 16 files, and production build (1,201 pages, 32,064 internal links). SEO and production audits passed. Logs are retained in ignored artifacts.
+
+Commit 0a17b859543d6959e3bbd39f5c2c5ad9b6146b14 was pushed to main and verified live: all eight articles returned 200 with correct canonicals, indexable robots metadata, directory associations, and no internal source-cache evidence exposed. Home, directory, robots and sitemap checks passed. Evidence: ignored `artifacts/popular-sep26-10-live-check.json`. Guillotine's source gap was subsequently resolved for batch 11.
