@@ -1,0 +1,40 @@
+{
+  "id": "its-wonderful-world-la-boite-en",
+  "slug": "its-wonderful-world-la-boite-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "4cb2bcf22af80a8a1599ec40bcad874ac498818d5323e82c12d40b65a3d77e20",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "It's a Wonderful World",
+  "aliases": [],
+  "editionLabel": "La Boîte de Jeu English edition",
+  "firstPlayerRule": "Everyone plays at the same time; there is no starting player. Begin by drafting one card each from the seven-card hands.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players reveal their chosen cards together. Pass the remaining cards left in rounds 1 and 3, and right in rounds 2 and 4.",
+    "Planning is simultaneous. Each Production step is also simultaneous, following the printed resource sequence."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.laboitedejeu.fr/wp-content/uploads/2021/01/ITS-EN-STD-rules-web.pdf",
+      "title": "It's a Wonderful World — English rulebook",
+      "publisher": "La Boîte de Jeu / Origames",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Playing the game; Draft, Planning and Production phases",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official publisher product-linked English manual. Page3 explicitly says every phase is simultaneous and there are no turns; draft reveal and pass direction verified. Page4 production resource sequence is not a player order. Source custody: research/source-files/popular-sep26-08/wonderful.pdf; SHA-256 908ec6beab114db5a0d4f3889b8eeacf43447775cc00236e05897e9881581123. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
