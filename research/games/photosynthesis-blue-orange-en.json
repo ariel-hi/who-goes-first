@@ -1,0 +1,44 @@
+{
+  "id": "photosynthesis-blue-orange-en",
+  "slug": "photosynthesis-blue-orange-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Photosynthesis",
+  "aliases": [],
+  "editionLabel": "Blue Orange English base game",
+  "firstPlayerRule": "The youngest player takes the first-player token and starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "The first player begins the two clockwise small-tree placement circuits during setup.",
+    "During each Life Cycle phase, players take their turns clockwise from the first player. Pass the first-player token clockwise at the end of the round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2019/01/PHOTOSYNTHESIS_rules_UK.pdf",
+      "title": "Photosynthesis — English rulebook",
+      "publisher": "Blue Orange Games",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Setting up the game F–G; Life cycle phase; Ending the round",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Blue Orange English PDF. Rendered2–4 verify youngest token recipient, initial tree-placement sequence, Life Cycle turn order and token rotation. Source custody: research/source-files/popular-sep26-04/photosynthesis.pdf; SHA-256 bc174536426d3ce80926da20f2db526f45f70246ea77c971b82a8124de18dd03. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The rules do not resolve a tie for youngest player."
+  ]
+}
