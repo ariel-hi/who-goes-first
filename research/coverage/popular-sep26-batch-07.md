@@ -18,3 +18,5 @@ Archived hosting is disclosed. RoboRally does not import later-edition rules; Vi
 Strict target coverage is 342/1,062, with 720 remaining. Next target: Space Base, rank 188. Integration added one missing directory identity and one portable method.
 
 All required gates passed: content validation (1,009 approved rules, 383 portable methods), zero Astro diagnostics, lint, all 154 tests in 16 files, and production build (1,175 pages, 31,538 internal links). SEO and production audits passed. Logs are retained in ignored artifacts. Deployment and live verification follow.
+
+Deployed as b871d24 and verified live: rule index 1,009, directory index 5,016, all eight article pages HTTP 200 with correct canonicals/indexing and directory links. Home, directory, robots and sitemap checks passed. Evidence: ignored artifacts/popular-sep26-07-live-check.json.
