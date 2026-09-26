@@ -1,0 +1,42 @@
+{
+  "id": "castles-mad-king-ludwig-bezier-second-en",
+  "slug": "castles-mad-king-ludwig-bezier-second-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Castles of Mad King Ludwig",
+  "aliases": [],
+  "editionLabel": "Bezier Games English second edition",
+  "firstPlayerRule": "Randomly choose the Master Builder, who begins by arranging the rooms and setting their prices. The player on the Master Builder’s left gets the first buying turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Buying proceeds clockwise, with the Master Builder buying last. Pass the Master Builder token left for the next round.",
+    "The setup suggests spinning the Master Builder token to choose its first holder."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0740/4855/files/CAS2_online_rules.pdf?v=1717602100",
+      "title": "Castles of Mad King Ludwig — English rulebook",
+      "publisher": "Bezier Games",
+      "printedPages": [
+        "5",
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        7
+      ],
+      "location": "Player setup steps 9 and 12; Round overview; Buy rooms",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The publisher product page links this second-edition manual. Image-only PDF pages were rendered and inspected: setup9 chooses Master Builder randomly, setup12 gives them price-setting first, and pages6-7 distinguish the first buyer to their left. Excluded from the random pool because the answer depends on the pricing and purchasing roles. Source custody: research/source-files/popular-sep26-03/castles.pdf; SHA-256 d2c0da64be128fd018b5efa256a14037c417ecc95e1386599c06d28c2943aa81. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
