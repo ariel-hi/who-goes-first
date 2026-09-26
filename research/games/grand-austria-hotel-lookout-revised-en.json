@@ -1,0 +1,42 @@
+{
+  "id": "grand-austria-hotel-lookout-revised-en",
+  "slug": "grand-austria-hotel-lookout-revised-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Grand Austria Hotel",
+  "aliases": [],
+  "editionLabel": "Lookout English revised edition",
+  "firstPlayerRule": "Randomly choose a start player and give them the turn-order tile showing 1. That player rolls the dice and gets the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Give the remaining turn-order tiles clockwise. During play, follow their numbers in increasing order.",
+    "The setup guest selection starts with the player to the start player’s right and proceeds counterclockwise, so the start player chooses last."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lookout-spiele.de/upload/de_grandaustriahotel.html_GAH_Retail21_Rules_152_EN_WEB.pdf",
+      "title": "Grand Austria Hotel — English rulebook",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "4",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        6
+      ],
+      "location": "Personal play area step 7; Setup step 11; Course of play",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Lookout product page links the revised English retail rulebook. Rendered4 setup7 chooses starter randomly;5 distinguishes reverse initial guest selection;6 connects tile1 holder to dice rolling and first turn. Source custody: research/source-files/popular-sep26-05/hotel.pdf; SHA-256 7fd17c0fe0a3f96e7629f6102bc94bb7ae70f284f309ab58e2e001d8d142c711. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
