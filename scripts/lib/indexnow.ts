@@ -11,7 +11,25 @@ function elements(node: Node): Element[] {
 }
 const attr = (node: Element, name: string) => node.attrs.find(value => value.name === name)?.value;
 const excluded = /\b(?:noindex|none)\b/i;
-export interface PageDigest { url: string; digest: string }
+/** Cloudflare randomizes email-link encoding; hash its decoded destination instead. */
+export function pageContentDigest(html: string): string {
+  const changes: { start: number; end: number; text: string }[] = [];
+  for (const node of elements(parse(html, { sourceCodeLocationInfo: true }))) {
+    const href = attr(node, 'href');
+    const encoded = node.tagName === 'a' && href?.match(/^\/cdn-cgi\/l\/email-protection#((?:[a-f0-9]{2}){2,})$/i)?.[1];
+    const location = node.sourceCodeLocation?.attrs?.href;
+    if (!encoded || !location) continue;
+    const bytes = Buffer.from(encoded, 'hex');
+    try {
+      const decoded = new TextDecoder('utf-8', { fatal: true }).decode(bytes.subarray(1).map(byte => byte ^ bytes[0]!));
+      if (!decoded || [...decoded].some(char => char.charCodeAt(0) < 32 || char.charCodeAt(0) === 127)) continue;
+      changes.push({ start: location.startOffset, end: location.endOffset, text: `href=${JSON.stringify(`mailto:${decoded}`)}` });
+    } catch { /* Keep invalid encodings in the hash unchanged. */ }
+  }
+  for (const change of changes.sort((a, b) => b.start - a.start)) html = html.slice(0, change.start) + change.text + html.slice(change.end);
+  return createHash('sha256').update(html).digest('hex');
+}
+export interface PageDigest { url: string; digest: string; digestAlgorithm?: 'email-link-normalized-v1' }
 export interface SubmissionReceipt { checkedAt: string; endpoint: string; keyLocation: string; pages: PageDigest[]; status: 200 | 202 | null }
 
 /** Select live canonical pages explicitly; never send visitor input or tracking URLs. */
@@ -39,7 +57,7 @@ export async function notifyChangedPages(paths: string[], key: string, send = fa
     const canonicals = nodes.filter(node => node.tagName === 'link' && attr(node, 'rel')?.split(/\s+/).includes('canonical'));
     const robots = nodes.filter(node => node.tagName === 'meta' && /^(?:robots|bingbot)$/i.test(attr(node, 'name') || ''));
     if (canonicals.length !== 1 || attr(canonicals[0]!, 'href') !== url || !robots.length || robots.some(node => excluded.test(attr(node, 'content') || ''))) throw new Error('Canonical or indexing preflight failed; nothing was submitted.');
-    pages.push({ url, digest: createHash('sha256').update(html).digest('hex') });
+    pages.push({ url, digest: pageContentDigest(html), digestAlgorithm: 'email-link-normalized-v1' });
   }
   if (send && pages.some(page => previous.some(old => old.url === page.url && old.digest === page.digest))) throw new Error('An unchanged page was already received from this checkout; nothing was resubmitted.');
   let status: SubmissionReceipt['status'] = null;
