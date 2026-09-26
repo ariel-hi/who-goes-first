@@ -1,0 +1,39 @@
+{
+  "id": "codenames-duet-cge-refreshed-en",
+  "slug": "codenames-duet-cge-refreshed-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Codenames: Duet",
+  "aliases": [],
+  "editionLabel": "CGE English refreshed edition",
+  "firstPlayerRule": "Either player can give the opening clue. The first player to find a good clue gives it and starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The players alternate giving clues and guessing. This opening describes the two-player game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://filemanager.czechgames.com/storage/files/codenames-duet/rules/codenames-duet-rules-en.pdf",
+      "title": "Codenames: Duet — English rulebook",
+      "publisher": "Czech Games Edition",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "How to play — Either of you can be the clue-giver on the first turn; On the next turn, the roles switch",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current CGE filemanager English manual, with refreshed artwork and copyright2017–2025. The legacy URL returned an unrelated webpage, so it was discarded. Actual PDF bytes and rendered pages4-5 verify the first-good-clue instruction and role switching; page11 credits establish the refreshed edition. Source custody: research/source-files/popular-sep26-03/duet.pdf; SHA-256 41d6f77835b5717fc5bcae7a5b944bf6ffde744ed77e857b96ec0add4b00f3fe. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
