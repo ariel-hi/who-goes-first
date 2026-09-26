@@ -19,7 +19,9 @@ The performance report still says it is processing data and to check again in a 
 
 ### Discovery beyond Google
 
-Cloudflare's domain Caching → Configuration page shows **Crawler Hints enabled** for `whogoesfirst.fun` on 2026-09-26 UTC. [Cloudflare documents that this feature supports IndexNow](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/). No setting was changed, no new terms were accepted, and no separate IndexNow key or duplicate submission script was added.
+Cloudflare's domain Caching → Configuration page shows **Crawler Hints enabled** for `whogoesfirst.fun` on 2026-09-26 UTC. [Cloudflare documents that this feature supports IndexNow](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/). No setting was changed and no new terms were accepted.
+
+Live HTML responses showed `CF-Cache-Status: DYNAMIC`, while Cloudflare documents a cache-MISS trigger. This does not establish that any particular page was notified. An optional, explicit `search:notify` command now checks selected live canonical pages and can record an IndexNow receipt after a meaningful content release. Its live dry run passed without sending a notification. Setup does not justify resubmitting older pages; no live notification has been sent. See the release procedure and limits in `RUNBOOK.md`.
 
 The live `/robots.txt` returned HTTP 200, allows all paths, and advertises the canonical sitemap. `/sitemap.xml` returned HTTP 200. Bing's exact `url:https://whogoesfirst.fun/` lookup returned no result during this check. This is an observed lack of a homepage result, not a diagnosis of a crawling failure or evidence about every catalog page.
 

@@ -24,6 +24,7 @@
     "content:review": "tsx scripts/review-content.ts",
     "content:coverage": "tsx scripts/check-coverage.ts",
     "links:check": "tsx scripts/check-links.ts",
+    "search:notify": "tsx scripts/notify-search.ts",
     "verify": "npm run check && npm run lint && npm test && npm run build",
     "audit:lighthouse": "tsx scripts/audit-lighthouse.ts"
   },
