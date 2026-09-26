@@ -17,6 +17,7 @@ const { contact, production, privacyHost, privacyLogging } = siteSettings();
     <p>Searches are filtered on your device and are not logged. Publisher source links open an external website only when you follow them; that website has its own privacy practices. There are no ads, AI calls, accounts, or session recording.</p>
     <h2>Sharing</h2><p>“Share” shares or copies a clean link. It removes query strings and fragments and includes no names, group settings, or winner. Your browser or operating system handles its own sharing interface.</p>
     {production && <p>“Save on Pinterest” opens Pinterest with a public image, description, and page link. You choose a board and confirm there. Player names and results are not included, and we do not track whether you save a Pin. Pinterest handles its own account and privacy settings.</p>}
+    {production && <p>“Share on Bluesky” opens a draft with the public page title and a clean page link. You can edit it and choose whether to publish on Bluesky. Player names and results are not included, and we do not track whether you publish. Bluesky handles its own account and privacy settings.</p>}
     <h2>Questions</h2><p>{contact ? <a href={`mailto:${contact}`}>Contact the owner</a> : 'An owner contact address and public hosting details must be added before launch.'}</p><p class="small muted">Implementation policy · 26 September 2026.</p>
   </div>
 </Layout>

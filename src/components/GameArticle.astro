@@ -12,7 +12,7 @@ const { contact } = siteSettings();
   <h1>Who goes first in {rule.gameName}?</h1><p class="small muted">{rule.editionLabel}{!/\bEnglish\b/i.test(rule.editionLabel) && ' · English'}</p>
   <p class="rule-answer">{rule.firstPlayerRule}</p>
   <p class="small"><a href={rule.sources[0]!.url} rel="noreferrer">Read the publisher’s rulebook</a></p>
-  {!preview && <SharePage label="Share this rule" />}
+  {!preview && <SharePage label="Share this rule" title={`Who goes first in ${rule.gameName}?`} />}
   {rule.clarifications.length > 0 && <section class="rule-section"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
   {rule.interpretation && <section class="rule-section"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   <section class="rule-section"><h2>{rule.officialTieBreak ? 'Official tie-break or fallback' : 'If there’s a tie'}</h2><p>{rule.officialTieBreak || (rule.houseFallback ? 'The rulebook doesn’t say.' : <>The rulebook doesn’t say. If you need a tie-break, <a href="/">pick a player at random</a>.</>)}</p></section>
