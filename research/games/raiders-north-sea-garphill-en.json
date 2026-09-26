@@ -1,0 +1,41 @@
+{
+  "id": "raiders-north-sea-garphill-en",
+  "slug": "raiders-north-sea-garphill-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Raiders of the North Sea",
+  "aliases": [],
+  "editionLabel": "Garphill English edition",
+  "firstPlayerRule": "Each player rolls both dice. The player with the highest roll starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the highest roll is tied, the tied players roll both dice again until one wins.",
+  "clarifications": [
+    "Players take complete turns clockwise from the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.garphill.com/cdn/shop/files/Raiders_Web_Rulebook_Spread.pdf?v=3702995972290410344",
+      "title": "Raiders of the North Sea — English rulebook",
+      "publisher": "Garphill Games",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup step 11; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Garphill product page links the English rulebook. Printed5 (PDF3) setup11 gives both-dice highest-roll selection; printed6 (PDF4) confirms clockwise turns. Source custody: research/source-files/popular-sep26-03/raiders.pdf; SHA-256 6df978bf953d0829658dfdf560331d1fb7bb52199869012c7b3820c40c624274. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The setup does not state how to break a tied highest roll."
+  ]
+}
