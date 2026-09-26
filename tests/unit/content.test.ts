@@ -59,10 +59,40 @@ test('Amigo identities retain numeric provenance while exact independently revie
       }
     }
   }
-  for (const id of ['38195', '40234', '191473', '205766', '257957', '451923']) {
+  for (const id of ['38195', '40234', '191473', '205766', '451923']) {
     expect(review.decisions.find((item: { bggId: string }) => item.bggId === id)).toMatchObject({ decision: 'hold', reviewed: false });
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
+});
+
+test('new native identities attach exact editions while keeping phase and portable distinctions', () => {
+  const games = getBoardGames();
+  const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
+  for (const [id, rules, portable] of [
+    ['257957', ['x-code-amigo-en-v1-0-training'], []],
+    ['354892', ['auch-schon-clever-schmidt-de-40625'], ['auch-schon-clever-schmidt-de-40625']],
+    ['409498', ['grosse-kleine-edelsteine-schmidt-de-40656'], []],
+    ['423232', ['topp-die-torte-schmidt-de-40659-placement'], []],
+    ['25097', ['mausefalle-schmidt-de-40505', 'mausefalle-schmidt-de-compact-51405'], ['mausefalle-schmidt-de-40505']],
+  ] as const) {
+    const game = games.find(game => game.bggId === id)!;
+    expect(game.rules.map(rule => rule.id).toSorted()).toEqual([...rules].toSorted());
+    expect(game.rules.filter(randomRuleEligible).map(rule => rule.id)).toEqual(portable);
+    const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
+    expect(decision).toMatchObject({ decision: 'accept', reviewed: true, idEvidenceStatus: 'wikidata-statement-only',
+      startingRuleApproved: false, editionRuleTransferApproved: false, independentRawIdEvidence: [] });
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision: 'hold', reviewed: false, idProvenance: decision.idProvenance });
+  }
+  const editions = games.find(game => game.bggId === '25097')!.rules;
+  const standard = editions.find(rule => rule.id === 'mausefalle-schmidt-de-40505')!;
+  const compact = editions.find(rule => rule.id === 'mausefalle-schmidt-de-compact-51405')!;
+  expect(standard.editionLabel).toContain('standard article 40505');
+  expect(compact.editionLabel).toContain('compact article 51405');
+  expect(standard.clarifications[1]).toContain('does not specify');
+  expect(compact.clarifications[1]).toContain('clockwise');
+  expect(standard.sources[0]!.pdfPagesOneBased[0]).toBe(1);
+  expect(compact.sources[0]!.pdfPagesOneBased[0]).toBe(2);
 });
 
 test('Amigo manual approvals preserve initial versus later order and the figure-dependent portable exclusion', () => {
@@ -117,7 +147,7 @@ test('Amigo multi-mode manuals preserve reveal roles, original PDF order and com
 test('public board game directory includes every discovered identity and links only approved matching rules', () => {
   const games = getBoardGames();
   expect(games.length).toBeGreaterThanOrEqual(1320);
-  expect(new Set(games.map(game => game.bggId)).size).toBe(games.length);
+  expect(new Set(games.map(game => game.identityId)).size).toBe(games.length);
   expect(games.find(game => game.name === 'Azul')?.rules.map(rule => rule.id)).toContain('azul-2018-en');
   expect(games.find(game => game.bggId === '377449')?.rules.map(rule => rule.id)).not.toContain('chomp-gamewright-en');
   expect(games.some(game => game.rules.length === 0)).toBe(true);
@@ -134,7 +164,7 @@ test('browse shelves include each identity once within a bounded page size', () 
   const { games, shelves } = getBrowseShelves();
   const listed = shelves.flatMap(shelf => shelf.games);
   expect(listed.length).toBe(games.length);
-  expect(new Set(listed.map(game => game.bggId)).size).toBe(games.length);
+  expect(new Set(listed.map(game => game.identityId)).size).toBe(games.length);
   expect(shelves.every(shelf => shelf.games.length > 0 && shelf.games.length <= BROWSE_PAGE_SIZE)).toBe(true);
   expect(games.length).toBeGreaterThan(4900);
 });
@@ -204,7 +234,7 @@ test('native and language-neutral identities enroll only after primary identity 
   for (const [id, ruleId] of [['325853', 'lama-dice-amigo-en-v1-0'], ['394889', 'cabanga-amigo-en-v1-0'], ['447384', 'meister-makatsu-amigo-en-v1-0']] as const) {
     expect(games.find(game => game.bggId === id)?.rules.map(rule => rule.id)).toEqual([ruleId]);
   }
-  expect(new Set(games.map(game => game.bggId)).size).toBe(games.length);
+  expect(new Set(games.map(game => game.identityId)).size).toBe(games.length);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
@@ -213,7 +243,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(46);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(51);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -263,22 +293,28 @@ test('accepted native alternate names are search-only and deduped without held i
   expect(games.find(game => game.bggId === '245476')!.searchNames).toEqual([]);
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const heldIds = new Set(review.decisions.filter((decision: { decision: string }) => decision.decision === 'hold').map((decision: { bggId: string }) => decision.bggId));
-  expect(games.filter(game => heldIds.has(game.bggId)).every(game => game.searchNames.length === 0)).toBe(true);
+  expect(games.filter(game => heldIds.has(game.bggId ?? '')).every(game => game.searchNames.length === 0)).toBe(true);
   expect(entries.find(entry => entry.id === '452264')).toMatchObject({ name: 'Brass: Pittsburgh', ruleCount: 0, terms: ['Брасс: Питтсбург'] });
   expect(entries.some(entry => ['418683', '406454'].includes(entry.id))).toBe(false);
   expect(entries.some(entry => entry.terms?.includes('Маршрут построен: Расширенное издание'))).toBe(false);
   for (const entry of entries) {
     const keys = [entry.name, ...(entry.terms ?? [])].map(directorySearchKey);
     expect(new Set(keys).size).toBe(keys.length);
-    expect(Object.keys(entry).every(key => ['name', 'id', 'ruleCount', 'terms', 'slug'].includes(key))).toBe(true);
+    const publicKeys = /^[1-9]\d*$/.test(entry.id) ? ['name', 'id', 'ruleCount', 'terms', 'slug'] : ['name', 'id', 'ruleCount', 'terms', 'slug', 'href', 'bggId', 'reference'];
+    expect(Object.keys(entry).every(key => publicKeys.includes(key))).toBe(true);
   }
   // Alternate names cannot attach another game's rule or move an approved edition.
   expect(games.flatMap(game => game.rules.map(rule => rule.id)).toSorted()).toEqual(getCatalog().map(rule => rule.id).toSorted());
-  const catalog = getCatalog();
-  const searchOnlyRule = { ...catalog[0]!, id: 'test-search-only-title', gameName: 'Зоосад: Вода', aliases: [] };
-  const catalogSpy = vi.spyOn(catalogModule, 'getCatalog').mockReturnValue([...catalog, searchOnlyRule]);
+  const records = catalogModule.getPublishableRuleRecords();
+  // Valid synthetic publication input exercises the actual resolver boundary;
+  // no fixture is written into the active catalog or approved as a real source.
+  const searchOnlyRecord = { ...records[0]!, id: 'test-search-only-title', slug: 'test-search-only-title', gameName: 'Зоосад: Вода', aliases: [],
+    approvedBy: 'OFFLINE UNIT TEST — NOT SOURCE APPROVAL', internalEvidence: 'Synthetic alternate-title fixture only; never enroll this example.' };
+  const searchOnlyRule = ruleSchema.parse({ ...searchOnlyRecord, approvedRevision: contentRevision(searchOnlyRecord) });
+  const catalogSpy = vi.spyOn(catalogModule, 'getPublishableRuleRecords').mockReturnValue([...records, searchOnlyRule]);
   try {
     expect(getBoardGames().some(game => game.rules.some(rule => rule.id === searchOnlyRule.id))).toBe(false);
+    expect(catalogSpy).toHaveBeenCalled();
   } finally { catalogSpy.mockRestore(); }
 });
 test('checked rule search follows assigned native identities without changing approved content', async () => {
@@ -327,11 +363,11 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 46, hold: 242, reviewed: 58, unreviewed: 230, additionalAccepted: 36 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(46);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(242);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(58);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(230);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 51, hold: 237, reviewed: 63, unreviewed: 225, additionalAccepted: 41 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(51);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(237);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(63);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(225);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
   for (const id of ['452264', '418683']) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
@@ -355,7 +391,7 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
   const enRoute = review.decisions.find((item: { bggId: string }) => item.bggId === '418683');
   expect(enRoute.idEvidenceStatus).toBe('wikidata-statement-only-with-competing-primary-href');
   expect(enRoute.primaryIdentityReviewEvidence.completePrimaryContexts[0].numericBggAnchors[0].attributes).toContainEqual(['href', 'https://boardgamegeek.com/boardgame/406454/en-route']);
-  const brassGames = getBoardGames().filter(game => ['452264', '224517', '28720'].includes(game.bggId));
+  const brassGames = getBoardGames().filter(game => ['452264', '224517', '28720'].includes(game.bggId ?? ''));
   expect(brassGames).toHaveLength(3);
   expect(brassGames.find(game => game.bggId === '452264')?.rules).toEqual([]);
   expect(brassGames.filter(game => game.bggId !== '452264').every(game => !game.searchNames.includes('Брасс: Питтсбург'))).toBe(true);

@@ -70,7 +70,7 @@ test('mobile alphabet keeps keyboard focus visible at horizontal scroll edges', 
 
 test('board games are browsable without search and searchable on demand', async ({ page }) => {
   const { games, shelves } = getBrowseShelves();
-  expect(shelves.flatMap(shelf => shelf.games).map(game => game.bggId).toSorted()).toEqual(games.map(game => game.bggId).toSorted());
+  expect(shelves.flatMap(shelf => shelf.games).map(game => game.routeKey).toSorted()).toEqual(games.map(game => game.routeKey).toSorted());
   await page.goto('/board-games/');
   await expect(page.getByRole('link', { name: 'Browse A games' })).toBeVisible();
   await page.getByRole('link', { name: 'Browse A games' }).click();

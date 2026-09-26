@@ -1,0 +1,49 @@
+{
+  "id": "mausefalle-schmidt-de-40505",
+  "slug": "mausefalle-schmidt-de-40505",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root; original sources and exact proposals corroborated by /root/held_identity_review",
+  "approvedRevision": "3364c3d78fc4ef13d308a2c816e61d6faafb427a96a92791b88eeb01b77663bf",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Mausefalle",
+  "aliases": [],
+  "editionLabel": "English summary of Schmidt Spiele German rules, standard article 40505",
+  "firstPlayerRule": "The youngest player starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "Each player receives a mouse and puts it on the start field.",
+    "After the youngest player begins, players take turns rolling the die. The German rulebook does not specify clockwise or counterclockwise order.",
+    "The youngest-player instruction selects the initial starter. No separate later-round starter or alternative mode is supplied.",
+    "This answer summarizes the German page of the standard article 40505 manual for two to six players. The compact article 51405 edition is a separate source and is not covered by this answer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Produkte/4/40505 - Mausefalle/40505_Mausefalle_DE_FR_IT_NL.pdf",
+      "title": "Mausefalle — Schmidt Spiele multilingual standard rules, article 40505 (German summary)",
+      "publisher": "Schmidt Spiele GmbH",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        4,
+        2,
+        3
+      ],
+      "location": "PDF page 1, German Spielverlauf: youngest starts, then reihum rolling and start-field setup; page 4, Dutch text and article 40505 publisher/designer imprint; pages 2–3, French and Italian opening comparison. No visible printed page numbers. German page controls this English summary; non-opening Italian collision wording differs.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root-approved exact English summary of Schmidt Spiele German Mausefalle article 40505 on 2026-09-26. Root and /root/held_identity_review each individually read all twelve original uncropped standard/compact page images, full text and metadata, exact final pairs and prior identity/source chronology. Independent rerender reproduced all twelve source images byte-exact; text comparison was whitespace-qualified. Original standard source48 includes complete four-page standard and a still-incomplete 20MB compact prefix. Separate source57 complete eight-page compact retrieval supplies new original bytes without rewriting the old attempt. Identity-only approval precedes and remains distinct from this exact manual/edition approval. Root explicitly attaches both distinct article records to one semantic Mausefalle25097 using the primary compact product's compact-format statement plus the same literal designer and detailed die-mouse-hole-trap-cheese structure. Numeric25097 remains solely saved own normal Wikidata P2339; no primary publisher numeric bridge, creator-QID repair, aliases, printing/version or identical-rules assertion. Standard40505 has two to six/six mice, receives/setup and direction-unspecified turns; compact51405 has two to four/four mice, chooses/setup and clockwise turns. Each German summary preserves its own public scope, source locators and rules, without other-language gameplay transfer. Standard-only portable inclusion intentionally avoids double-weighting this same-game youngest criterion; compact is valid in isolation but excluded by opt-in editorial deduplication. Application is pending a fresh preservation guard. Original sealed proposal evidence remains historical and unchanged.",
+  "uncertainty": [
+    "No official initial tie-break is provided. Random selection is the proposed house fallback, not publisher text.",
+    "No visible printing year or version. Metadata dates, product URL2013 and saved Wikidata dates do not identify the printing.",
+    "English summary is limited to the German standard40505 source. Other-language titles are not approved aliases; unrelated Italian collision wording is not harmonized.",
+    "The original compact 20MB response remains incomplete. A separately retrieved complete compact manual has now been read and approved; neither historical packet is rewritten.",
+    "Root explicitly reviewed the two distinct editions as one semantic game, while retaining separate rule records. Numeric25097 remains saved Wikidata evidence only; no publisher numeric, printing, creator-QID or alias transfer is claimed.",
+    "Source, exact German-summary record and edition correspondence have completed separate root and independent review. Application and release checks remain pending; the research copy stays lifecycle-null history."
+  ]
+}

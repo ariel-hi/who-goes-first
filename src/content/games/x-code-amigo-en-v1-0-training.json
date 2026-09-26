@@ -1,0 +1,58 @@
+{
+  "id": "x-code-amigo-en-v1-0-training",
+  "slug": "x-code-amigo-en-v1-0-training",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root; complete original source reading corroborated by /root/motion_polish_audit on original source/proposal; owner delegated source review on 2026-09-22",
+  "approvedRevision": "3c31ea6511f401c342e3a61fc5d767b3d88c62bc6e0e9730a293c08dddf3e333",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "X-Code",
+  "aliases": [],
+  "editionLabel": "AMIGO English rules, Version 1.0 — training missions 1–4 (2–8 players)",
+  "firstPlayerRule": "Everyone starts at the same time once all players are ready and the timer is turned over. There is no individual first player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "This answer covers the English Version 1.0 training rules for 2–8 players. The four training missions are levels, not player counts or distinct first-player rules.",
+    "For the first training mission, put the Code board and Time board in the center. Return three Wild cards to the box, shuffle the remaining cards and deal three to each player. Place the remaining cards face down as the draw pile on the Time board and put the timer on its round space.",
+    "Once everyone is ready, turn over the timer and begin. The source does not assign the timer flip to a selected individual or choose a starter, leader, seating order or tie-break.",
+    "Everyone acts simultaneously and may draw one card, discard exactly three cards, swap one card with a neighbor to the left or right, or play a set of three cards as often as they like. Swapping requires both offered cards to be on the table and their arrows to allow the exchange; these actions are not individual turns.",
+    "The first-training hand limit is ten cards with two players, nine with three, eight with four, seven with five, six with six and five with seven or eight. At the limit, a player may not draw; exceeding it means immediately discarding their entire hand face up.",
+    "A matching set of three Code cards goes on its Code-board space. A set of three Time cards goes on the Time board and immediately turns the timer over. Wild cards may replace Code or Time cards in a set, but a set cannot consist of three Wild cards.",
+    "Training mission 2 uses no Wild cards and nine Time cards, with the same hand limits. Mission 3 uses no Wild cards and six Time cards, reducing each hand limit by one. Mission 4 uses six Wild cards and three Time cards, restores the mission-2 hand limits and requires sets of four to crack parts of the code. These changes do not introduce an individual starting player.",
+    "The team wins together if it completes every Code-board space before time runs out; otherwise it loses together and may try again. This is a shared outcome, not a tie-break for an individual starter.",
+    "After the fourth training mission, the manual introduces using a key to open Mission Blue. The later secret mission rules are outside this four-page training source and this answer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/01852-GB-AmigoRule.pdf",
+      "title": "X-Code — English training rules, Version 1.0",
+      "publisher": "AMIGO Spiel + Freizeit GmbH",
+      "printedPages": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1,
+        3,
+        4
+      ],
+      "location": "PDF page 2, visible printed page 2: Setup final paragraph → all-ready timer start; Playing the Game → simultaneous actions and hand limits. PDF page 1, printed page 1: cover/TRAINING/2–8 players/The Idea of the Game/components/credits. PDF page 3, printed page 3: neighbor swapping, Code and Time sets. PDF page 4, printed page 4: Wild Cards/End of the Game/Other Training Missions/More Missions; AMIGO imprint, ©MMXVIII and Version 1.0 footer. All four full original pages read; PDF and visible printed locators match.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Codex /root completed original source, full entity/history, complete record and revised citation review on 2026-09-26 under the owner's source-review delegation recorded 2026-09-22. All four complete original English AMIGO Version 1.0 training pages and complete extraction were read. Original source74 manifest ad752d57c45c9830408fc183d091483ee1f9ae22a17e3a0fed75ed932727bf3f binds the single direct official-domain PDF GET, raw 4,513,181-byte PDF SHA256 aff6d01c62cdcb4d13416cbacd34af051f5ab242401c226dc8810bbd1c117b88, response custody, rendered pages and full source/entity/hold history. Independent original-source28 and original-proposal5 corroboration completed; revised page2-first citation was separately checked by root against the original pages, with no independent revised-citation review claimed. Root rehashed final candidate46 and all original74/130/28/5 members; reading and custody are recorded in artifacts/sep26-x-code-root-provenance-review and artifacts/sep26-next-stage-root-review.json. Exact English Version 1.0 training missions1–4 cover simultaneous all-ready timer start for2–8 players. No individual starter, timer-flipper choice, official opener tie-break or house fallback is supplied. Mission4 changes Code sets to four; Time sets remain three. Secret Mission Blue rules are outside scope. Exact numeric257957 provenance remains saved Q60685132 own normal P2339; own P123 and full AMIGO publisher P856 separately support the publisher domain. Publisher01852 filename is not numeric BGG proof. No printing year, alias merge, creator-QID repair or other language/version/mission transfer is approved. Root approves this exact catalog revision and separately approves the identity/source/mapping and explicit portable exclusion in this immutable package. Shared application remains a subsequent guarded action; the retained research counterpart remains lifecycle-null draft.",
+  "uncertainty": [
+    "No individual first player or timer-flipper selection criterion is assigned. An age, speed, bravery or random opening-player convention would be invented; the source starts everyone simultaneously when ready.",
+    "Only the exact English Version 1.0 training manual is in scope. Later secret Mission Blue content, other missions beyond training 1–4, other languages and versions are not transferred.",
+    "No printing year is established. The visible imprint shows copyright MMXVIII (2018) and Version 1.0; PDF creation/modification metadata and the HTTP Last-Modified date do not establish a printing or identity release year.",
+    "The saved native entity supplies the numeric257957 P2339 mapping only. The AMIGO PDF gives physical title/publisher context but no independent numeric BGG evidence. Literal Kasper Lapp/Barbara Spelger credits are not creator-QID repair or alias merging.",
+    "Independent original-source and original-proposal corroboration is complete. Root separately reviewed the final page2-first citation and exact approved package. No independent peer review of that revised citation is claimed. Source approval establishes this exact English training scope only; the retained draft is not a separately publishable record."
+  ]
+}

@@ -10,12 +10,17 @@ export function browseLetter(name: string) {
 
 export function boardGameHref(game: BoardGame) {
   return game.rules.length === 1 ? `/games/${game.rules[0]!.slug}/`
-    : game.rules.length > 1 ? `/board-games/${game.bggId}/`
-    : game.discoveryUrl;
+    : game.rules.length > 1 ? `/board-games/${game.routeKey}/`
+    : game.reference?.url;
 }
 
 export function getBrowseShelves() {
-  const games = getBoardGames().toSorted((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true }) || Number(a.bggId) - Number(b.bggId));
+  return buildBrowseShelves(getBoardGames());
+}
+
+export function buildBrowseShelves(input: readonly BoardGame[]) {
+  const games = input.toSorted((a, b) => a.name.localeCompare(b.name, 'en', { numeric: true })
+    || (a.origin === 'legacy' && b.origin === 'legacy' ? Number(a.bggId) - Number(b.bggId) : a.identityId.localeCompare(b.identityId)));
   const byLetter = new Map<string, BoardGame[]>();
   for (const game of games) {
     const letter = browseLetter(game.name);

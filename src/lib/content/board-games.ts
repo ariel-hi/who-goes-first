@@ -1,8 +1,11 @@
 import { readFileSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { z } from 'zod';
-import { getCatalog } from './catalog';
+import { getPublishableRuleRecords } from './catalog';
+import { assertPublishable, publicRule, type RuleRecord } from './schema';
+import { resolveIdentityAssignments, scopeLegacyOverrides } from './identity-assignments';
 import { uniqueDirectorySearchTerms } from '../search';
+import { createIdentityRegistry, type RegistryIdentity } from './identity-registry';
 
 const inventorySchema = z.object({
   discoveredAt: z.string(),
@@ -15,9 +18,6 @@ const inventorySchema = z.object({
     status: z.literal('needs-primary-source'),
   }).strict()),
 }).strict();
-const overridesSchema = z.array(z.object({
-  ruleId: z.string(), inventoryIds: z.array(z.string()), reason: z.string(),
-}).strict());
 const nameKey = (name: string) => name.normalize('NFKD').replace(/\p{M}/gu, '').toLocaleLowerCase('en').replace(/[^\p{L}\p{N}]/gu, '');
 
 const wikidataSchema = z.object({
@@ -221,28 +221,24 @@ export function getBoardGameInventory() {
   return cachedInventory;
 }
 
-export function getBoardGames() {
+export function getBoardGameRegistry() {
   const inventory = getBoardGameInventory();
-  const overrides = overridesSchema.parse(JSON.parse(readFileSync('research/coverage/identity-overrides.json', 'utf8')));
-  const rules = getCatalog();
-  const ids = new Set(inventory.games.map(game => game.bggId));
-  if (ids.size !== inventory.games.length) throw new Error('Duplicate board game identity');
-  for (const override of overrides) {
-    if (!rules.some(rule => rule.id === override.ruleId)) continue;
-    if (override.inventoryIds.some(id => !ids.has(id))) throw new Error(`Unknown board game identity for ${override.ruleId}`);
-  }
-  const byName = new Map<string, string[]>();
-  for (const game of inventory.games) {
-    const key = nameKey(game.name);
-    byName.set(key, [...(byName.get(key) ?? []), game.bggId]);
-  }
-  const byRule = new Map(inventory.games.map(game => [game.bggId, [] as typeof rules]));
-  const overridesByRule = new Map(overrides.map(item => [item.ruleId, item.inventoryIds]));
-  for (const rule of rules) {
-    const explicit = overridesByRule.get(rule.id);
-    const matches = explicit ?? [...new Set([rule.gameName, ...rule.aliases].flatMap(name => byName.get(nameKey(name)) ?? []))];
-    if (matches.length > 1 && !explicit) throw new Error(`Ambiguous board game identity for ${rule.id}: ${matches.join(', ')}; add an explicit identity override`);
-    for (const id of matches) byRule.get(id)!.push(rule);
-  }
-  return inventory.games.map(game => ({ name: game.name, bggId: game.bggId, discoveryUrl: game.discoveryUrl, searchNames: cachedSearchNames.get(game.bggId) ?? [], rules: byRule.get(game.bggId)! }));
+  return createIdentityRegistry(inventory.games.map(game => ({ ...game, searchNames: cachedSearchNames.get(game.bggId) ?? [] })),
+    JSON.parse(readFileSync('research/coverage/publisher-identities.json', 'utf8')));
+}
+
+export function getBoardGames() {
+  return buildBoardGames(getBoardGameRegistry(), getPublishableRuleRecords(),
+    JSON.parse(readFileSync('research/coverage/identity-overrides.json', 'utf8')),
+    JSON.parse(readFileSync('research/coverage/identity-assignments.json', 'utf8')));
+}
+
+/** Pure projection also permits offline synthetic journeys without active enrollment. */
+export function buildBoardGames(identities: readonly RegistryIdentity[], records: readonly RuleRecord[], overrides: unknown, assignments: unknown) {
+  records.forEach(assertPublishable);
+  const resolved = resolveIdentityAssignments(identities, records, scopeLegacyOverrides(overrides, records), assignments);
+  const rules = records.map(publicRule).sort((a, b) => a.gameName.localeCompare(b.gameName));
+  const byId = new Map(identities.map(identity => [identity.identityId, [] as typeof rules]));
+  for (const rule of rules) for (const id of resolved.get(rule.id) ?? []) byId.get(id)!.push(rule);
+  return identities.map(identity => ({ ...identity, discoveryUrl: identity.origin === 'legacy' ? identity.reference?.url : undefined, rules: byId.get(identity.identityId)! }));
 }

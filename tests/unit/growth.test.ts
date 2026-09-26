@@ -72,7 +72,7 @@ test('share image text clips at word boundaries', () => {
 });
 
 test('search demand ranks games without rules by starting-rule queries only', () => {
-  const games = [{ name: 'Ticket to Ride', bggId: '1', hasRule: false }, { name: 'Ticket to Ride: Europe', bggId: '2', hasRule: false }, { name: 'Azul', bggId: '3', hasRule: true }, { name: 'Go', bggId: '4', hasRule: false }];
+  const games = [{ identityId: 'bgg-1', name: 'Ticket to Ride', bggId: '1', hasRule: false }, { identityId: 'bgg-2', name: 'Ticket to Ride: Europe', bggId: '2', hasRule: false }, { identityId: 'bgg-3', name: 'Azul', bggId: '3', hasRule: true }, { identityId: 'bgg-4', name: 'Go', bggId: '4', hasRule: false }];
   const row = (query: string, impressions: number) => ({ keys: [query], impressions, clicks: 1, ctr: 0, position: 5 });
   const demand = rankDemand([row('who goes first in ticket to ride europe', 40), row('ticket to ride first player', 30), row('ticket to ride price', 900), row('azul who starts', 50), row('who goes first in go', 70), row('who goes first in brand new game', 12)], [
     { keys: ['https://whogoesfirst.fun/games/azul-2018-en/'], impressions: 400, clicks: 2, ctr: 0.005, position: 6 },

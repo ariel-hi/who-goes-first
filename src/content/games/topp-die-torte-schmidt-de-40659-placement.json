@@ -1,0 +1,55 @@
+{
+  "id": "topp-die-torte-schmidt-de-40659-placement",
+  "slug": "topp-die-torte-schmidt-de-40659-placement",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root; complete original source and exact candidate reading corroborated by /root/motion_polish_audit; owner delegated factual review on 2026-09-22",
+  "approvedRevision": "71b37db6d9275744fda9e05ba8bb0023cc53e28ccdfa6dfe33667a9fda2ff576",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Topp die Torte!",
+  "aliases": [],
+  "editionLabel": "English summary of Schmidt Spiele German rules, article 40659 — phase 2 cake placement",
+  "firstPlayerRule": "Everyone chooses a cake piece simultaneously. For phase 2, placing the pieces, whoever most recently ate a piece of cake begins the first and every later round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "In phase 1, everyone chooses one of their two face-up cake pieces simultaneously and marks it with their figure. This happens before anyone places a piece.",
+    "Phase 2 proceeds clockwise from the cake-based starter. The same placement starter begins the first and all later rounds.",
+    "In phase 3, everyone passes their unused face-up piece to the person on their left and draws another piece simultaneously. This does not appoint a new placement starter.",
+    "The usual game lasts seven rounds. In the final round there is only one remaining piece to place, which may still be rotated. The optional six- or eight-piece game changes the length, not the stated placement-start criterion.",
+    "Final scoring has separate clockwise steps for golden sugar cubes and points. Those instructions do not supply a new opening criterion or starting-player tie-break."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/40659_Topp_die_Torte!_D.pdf",
+      "title": "Topp die Torte! — Schmidt Spiele German rules, article 40659",
+      "publisher": "Schmidt Spiele GmbH",
+      "printedPages": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1,
+        3,
+        4
+      ],
+      "location": "PDF/printed page 2: phase 1 simultaneous choice and phase 2 clockwise placement, last-cake criterion for the first and all later rounds. Page 1: setup and three-phase overview. Page 3: simultaneous phase 3 passing/drawing and last-round piece. Page 4: clockwise final scoring, six/eight-piece variant and article 40659 publisher imprint. Visible printed pages 1–4 match PDF pages 1–4.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root-approved exact English summary of Schmidt Spiele German article 40659 manual on 2026-09-26. /root read all four complete original page renders, full texts and metadata plus exact catalog/draft proposals; /root/motion_polish_audit independently read all twelve originals and all six final candidates, finding no factual/citation/scope blocker. Root approved source custody, exact rule and edition mapping separately from the earlier native identity approval. The original intake/proposal chronology remains immutable in source82/final11 packets and their independent review. Numeric 423232 remains saved own normal Wikidata P2339 only; no publisher numeric bridge, creator-QID repair, printing/version correction, alias merge or other edition/language transfer. Original PDF bytes, named publisher anchor/base, page and source/mode/tie notes retained in research/source-files/sep26-schmidt-three-rulebooks-intake. No shared application has occurred at approval time. Phase 2 cake placement follows simultaneous phase 1 and is explicitly excluded from the portable pool.",
+  "uncertainty": [
+    "The cake criterion selects the phase2 placement starter only, after simultaneous phase1. Phase3 is also simultaneous. It is not an individual overall game opener.",
+    "No official placement-starter tie-break or fallback is supplied. Both fields remain null; no random house convention is proposed. The manual also gives no explicit final-score tie resolution.",
+    "This is an English summary of the exact German article40659 manual. No visible version identifier or printing year was found; PDF metadata, copyright assumptions, publisher product dates, awards and saved P577 are not printing proof.",
+    "The PDF’s two-person setup illustration is not a complete player-count range. The separate product page lists2–4, but that is not attributed to the PDF or turned into a distinct mode.",
+    "Numeric423232 remains exact saved own normal Wikidata P2339 only. Article40659, literal creator credit and title punctuation do not approve numeric/creator-QID/alias/edition repair.",
+    "The exact source, English-summary record and identity mapping have completed separate root and independent source review. The retained research copy remains lifecycle-null history; application requires a fresh promoted-baseline preservation check."
+  ]
+}

@@ -101,9 +101,9 @@ for (const route of expectedCachePolicies.keys()) {
 const browse = getBrowseShelves();
 const searchEntries = JSON.parse(readFileSync(join(output, 'board-games/search.json'), 'utf8')) as { id: string }[];
 const searchIds = new Set(searchEntries.map(game => game.id));
-if (searchEntries.length !== browse.games.length || searchIds.size !== browse.games.length || browse.games.some(game => !searchIds.has(game.bggId))) throw new Error('Search index must include every board-game identity exactly once');
-const shelvesById = new Map(browse.shelves.flatMap(shelf => shelf.games.map(game => [game.bggId, shelfHref(shelf.letter, shelf.page)] as const)));
-const gamesById = new Map(browse.games.map(game => [game.bggId, game]));
+if (searchEntries.length !== browse.games.length || searchIds.size !== browse.games.length || browse.games.some(game => !searchIds.has(game.routeKey))) throw new Error('Search index must include every board-game identity exactly once');
+const shelvesById = new Map(browse.shelves.flatMap(shelf => shelf.games.map(game => [game.routeKey, shelfHref(shelf.letter, shelf.page)] as const)));
+const gamesById = new Map(browse.games.map(game => [game.routeKey, game]));
 const originalIds = (JSON.parse(readFileSync('research/coverage/discovery-index.json', 'utf8')) as { games: { bggId: string }[] }).games.map(game => game.bggId);
 const redirects = originalIds.flatMap(id => {
   const game = gamesById.get(id)!;

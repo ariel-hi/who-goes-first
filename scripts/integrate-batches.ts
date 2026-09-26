@@ -5,7 +5,7 @@ import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { z } from 'zod';
 import { contentRevision, publicRule, ruleSchema } from '../src/lib/content/schema';
 import { randomRuleRevision } from '../src/lib/content/random-rules';
-import { getBoardGameInventory } from '../src/lib/content/board-games';
+import { getBoardGameRegistry } from '../src/lib/content/board-games';
 
 const manifest = z.array(z.object({ id: z.string(), name: z.string(), bggId: z.string().regex(/^\d+$/).nullable().optional(), random: z.boolean() }).loose());
 const inventoryPath = 'research/coverage/discovery-index.json';
@@ -15,13 +15,14 @@ const pool = JSON.parse(readFileSync(poolPath, 'utf8'));
 const nameKey = (name: string) => name.normalize('NFKD').replace(/\p{M}/gu, '').toLocaleLowerCase('en').replace(/[^\p{L}\p{N}]/gu, '');
 // Reviewed identity sources also feed the directory. Do not add a second copy
 // to the discovery file when a newly sourced rule matches one of those games.
-const directory = getBoardGameInventory();
-const known = new Set(directory.games.map(game => game.bggId));
-const knownNames = new Set(directory.games.map(game => nameKey(game.name)));
+const directory = getBoardGameRegistry();
+const known = new Set(directory.flatMap(game => game.bggId ? [game.bggId] : []));
+const knownNames = new Set(directory.map(game => nameKey(game.name)));
 let added = 0, pooled = 0, repaired = 0;
 
 for (const file of readdirSync('research/claude-batches').filter(name => name.endsWith('.json') && name !== 'targets.json').sort()) {
   for (const entry of manifest.parse(JSON.parse(readFileSync(`research/claude-batches/${file}`, 'utf8')))) {
+    if (!entry.bggId) console.warn(`${entry.id}: no numeric directory enrollment; publisher-only identities and assignments require separate explicit review`);
     const path = `src/content/games/${entry.id}.json`;
     if (!existsSync(path)) { console.warn(`${file}: ${entry.id} has no published record; skipped`); continue; }
     let record = ruleSchema.parse(JSON.parse(readFileSync(path, 'utf8')));

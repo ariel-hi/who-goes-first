@@ -6,11 +6,12 @@ const targets = JSON.parse(readFileSync('research/claude-batches/targets.json', 
 for (const target of targets) {
   const match = games.find(game => [game.gameName, ...game.aliases].some(name => key(name) === key(target.name)));
   target.covered = !!match;
-  delete target.coverageMatch;
+  if (match) target.coverageMatch = 'Title-only research lead; edition correspondence requires independent review';
+  else delete target.coverageMatch;
   if (match) target.coveredBy = match.id;
   else delete target.coveredBy;
 }
 writeFileSync('research/claude-batches/targets.json', JSON.stringify(targets, null, 2) + '\n');
 const missing = targets.filter(target => !target.covered).sort((a, b) => (a.rank ?? Infinity) - (b.rank ?? Infinity));
-console.log(`${targets.length - missing.length}/${targets.length} targets covered; ${missing.length} remain.`);
+console.log(`${targets.length - missing.length}/${targets.length} targets have title-matched rule leads; ${missing.length} remain.`);
 console.log(missing.slice(0, 16).map(target => `${target.rank ?? 'classic'}: ${target.name}`).join('\n'));

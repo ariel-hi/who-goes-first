@@ -1,0 +1,48 @@
+{
+  "id": "auch-schon-clever-schmidt-de-40625",
+  "slug": "auch-schon-clever-schmidt-de-40625",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Auch schon clever",
+  "aliases": [],
+  "editionLabel": "English summary of Schmidt Spiele German rules, article 40625",
+  "firstPlayerRule": "Whoever most recently had a birthday starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "Give each player a sheet from the pad and a pencil. The initial starter takes all five dice.",
+    "Each turn has two actions: the active player rolls and chooses dice first, then the other players use the unused dice. Several players may choose the same unused dice.",
+    "After everyone has finished marking, pass the dice clockwise. The recipient becomes the next active player; the birthday criterion selects only the initial starter.",
+    "Equal rainbow-star totals at the end produce multiple winners. This is final scoring, not a starting-player tie-break."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/40625_Auch_schon_clever_D.pdf",
+      "title": "Auch schon clever — Schmidt Spiele German rules, article 40625",
+      "publisher": "Schmidt Spiele GmbH",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "location": "PDF page 1: visible Vor dem Spiel, initial birthday starter and setup; page 3: clockwise passing after everyone marks; page 2: active-player/other-player actions; page 4: end scoring/shared tied winners and article 40625 publisher imprint. No visible printed page numbers; diagram callouts 1–4 on the final page are not page locators.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root-approved exact English summary of Schmidt Spiele German article 40625 manual on 2026-09-26. /root read all four complete original page renders, full texts and metadata plus exact catalog/draft proposals; /root/motion_polish_audit independently read all twelve originals and all six final candidates, finding no factual/citation/scope blocker. Root approved source custody, exact rule and edition mapping separately from the earlier native identity approval. The original intake/proposal chronology remains immutable in source82/final11 packets and their independent review. Numeric 354892 remains saved own normal Wikidata P2339 only; no publisher numeric bridge, creator-QID repair, printing/version correction, alias merge or other edition/language transfer. Original PDF bytes, named publisher anchor/base, page and source/mode/tie notes retained in research/source-files/sep26-schmidt-three-rulebooks-intake. No shared application has occurred at approval time. Only the standalone initial birthday roller criterion is approved for the portable pool; the random fallback remains expressly a site house rule.",
+  "uncertainty": [
+    "No official starting-player tie-break is supplied. The random fallback is this site’s proposed house rule, not publisher text.",
+    "This is an English summary of the exact German article 40625 manual; no visible version identifier or printing year was found. PDF title/creation/modification dates and saved P577 year are not a printing or release correction.",
+    "Starting criterion applies to the initial roller. Later active roller changes clockwise after everyone marks; final score ties produce multiple winners.",
+    "Numeric354892 remains exact saved own normal Wikidata P2339 only. The article40625 imprint is not BGG evidence; no alias/creator-QID/other-language/edition transfer is approved.",
+    "The exact source, English-summary record and identity mapping have completed separate root and independent source review. The retained research copy remains lifecycle-null history; application requires a fresh promoted-baseline preservation check."
+  ]
+}

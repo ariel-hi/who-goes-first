@@ -14,9 +14,9 @@ const coverage = getCoverage();
       <label class="search-box"><span>Search the full inventory</span><input type="search" placeholder="Game name or BGG number…" autocomplete="off" maxlength="100" disabled /></label>
       <label>Research status <select data-filter disabled><option value="all">All games</option><option value="pending">Needs a primary source</option><option value="researched">Has a researched edition</option></select></label>
       <p class="count-label" data-coverage-count role="status">{coverage.games.length} identities listed</p>
-      <ul class="coverage-list">{coverage.games.map(game => <li data-search={`${game.name} ${game.bggId}`} data-status={game.editions.length ? 'researched' : 'pending'}>
-        <div><strong>{game.name}</strong><small>BGG {game.bggId} · {game.editions.length ? 'Researched edition available' : 'Needs a primary source'}</small></div>
-        <div>{game.editions.map(edition => <a href={edition.href}>{edition.editionLabel}</a>)}<a href={game.discoveryUrl}>Discovery reference</a></div>
+      <ul class="coverage-list">{coverage.games.map(game => <li data-search={[game.name, ...game.searchNames, game.bggId ?? ''].join(' ')} data-status={game.editions.length ? 'researched' : 'pending'}>
+        <div><strong>{game.name}</strong><small>{game.bggId && `BGG ${game.bggId} · `}{game.editions.length ? 'Researched edition available' : 'Needs a primary source'}</small></div>
+        <div>{game.editions.map(edition => <a href={edition.href}>{edition.editionLabel}</a>)}{game.reference && <a href={game.reference.url}>{game.origin === 'legacy' ? 'Discovery reference' : game.reference.label}</a>}</div>
       </li>)}</ul>
       <p data-coverage-empty hidden>No matching game in this inventory.</p>
       <noscript><p>All identities are listed above. Browser find works without JavaScript.</p></noscript>

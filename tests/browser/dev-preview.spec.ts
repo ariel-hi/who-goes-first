@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { showAllMethods, DEV, STATIC } from './helpers';
 import { readFileSync, readdirSync, writeFileSync, unlinkSync, mkdirSync } from 'node:fs';
 import { contentRevision, ruleSchema } from '../../src/lib/content/schema';
-import { getBoardGameInventory } from '../../src/lib/content/board-games';
+import { getBoardGameRegistry } from '../../src/lib/content/board-games';
 
 test('saving publisher evidence does not reload an active picker session', async ({ page }) => {
   await page.goto(`${DEV}/`);
@@ -107,7 +107,7 @@ test('the full researched catalog is listed and representative sourced pages wor
 });
 
 test('full discovery inventory is searchable and never counted as finished rules', async ({ page }) => {
-const inventory = getBoardGameInventory();
+const inventory = { games: getBoardGameRegistry() };
   await page.goto(`${DEV}/dev/coverage/`);
   await expect(page.locator('.coverage-list li')).toHaveCount(inventory.games.length);
   await expect(page.getByText('Game identities are not verified starting rules.')).toBeVisible();

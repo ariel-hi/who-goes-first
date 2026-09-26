@@ -5,9 +5,9 @@ export const words = (text: string) => text.normalize('NFKD').replace(/\p{M}/gu,
 // prices) are not evidence that people want its starting rule.
 const intent = /\b(who goes first|who starts|who plays first|goes first|go first|first player|starting player|start player|first turn|who begins|how to start|how do you start)\b/;
 
-type Game = { name: string; bggId: string; hasRule: boolean };
+type Game = { identityId: string; name: string; bggId?: string; hasRule: boolean };
 export type Demand = {
-  missingRules: { name: string; bggId: string; impressions: number; clicks: number; queries: string[] }[];
+  missingRules: { identityId: string; name: string; bggId?: string; impressions: number; clicks: number; queries: string[] }[];
   unmatchedQueries: { query: string; impressions: number }[];
   lowClickPages: { page: string; impressions: number; clicks: number; ctr: number; position: number }[];
 };
@@ -26,13 +26,15 @@ export function rankDemand(queryRows: SearchRow[], pageRows: SearchRow[], games:
     const query = words(row.keys[0] ?? '');
     if (!intent.test(query)) continue;
     const padded = ` ${query} `;
-    const game = candidates.find(candidate => padded.includes(` ${candidate.key} `));
+    const matches = candidates.filter(candidate => padded.includes(` ${candidate.key} `));
+    const longest = matches.filter(candidate => candidate.key.length === matches[0]?.key.length);
+    const game = longest.length === 1 ? longest[0] : undefined;
     if (!game) { unmatched.set(query, (unmatched.get(query) ?? 0) + row.impressions); continue; }
     if (game.hasRule) continue;
-    const entry = missing.get(game.bggId) ?? { name: game.name, bggId: game.bggId, impressions: 0, clicks: 0, queries: [] };
+    const entry = missing.get(game.identityId) ?? { identityId: game.identityId, name: game.name, ...(game.bggId ? { bggId: game.bggId } : {}), impressions: 0, clicks: 0, queries: [] };
     entry.impressions += row.impressions; entry.clicks += row.clicks;
     if (entry.queries.length < 5 && !entry.queries.includes(query)) entry.queries.push(query);
-    missing.set(game.bggId, entry);
+    missing.set(game.identityId, entry);
   }
   // Rule pages that already rank but rarely get chosen: their titles and
   // descriptions are the first thing to revisit.

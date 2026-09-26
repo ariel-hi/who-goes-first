@@ -35,8 +35,8 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
 <script>
   import { directorySearchKey } from '../../lib/search';
   import { directorySearchHref, readDirectorySearchState, type DirectoryFilter } from '../../lib/directory-search';
-  type SearchEntry = { name: string; id: string; ruleCount: number; slug?: string; terms?: string[] };
-  type SearchGame = { name: string; nameKey: string; id: string; href: string; search: string; hasRule: boolean; ruleCount: number };
+  import { directoryEntryLinks, type DirectoryEntry } from '../../lib/directory-entry';
+  type SearchGame = { name: string; nameKey: string; id: string; href?: string; reference?: { url: string; label: string }; numericId?: string; search: string; hasRule: boolean; ruleCount: number };
   const root = document.querySelector<HTMLElement>('[data-board-directory]')!;
   const input = root.querySelector<HTMLInputElement>('input')!;
   const filters = root.querySelector<HTMLElement>('[data-filters]')!;
@@ -51,11 +51,11 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   const compact = directorySearchKey;
   const load = () => loading ??= fetch('/board-games/search.json').then(response => {
     if (!response.ok) throw new Error(`Search unavailable (${response.status})`);
-    return response.json() as Promise<SearchEntry[]>;
+    return response.json() as Promise<DirectoryEntry[]>;
   }).then(entries => data = entries.map(game => ({
     name: game.name, nameKey: compact(game.name), id: game.id, ruleCount: game.ruleCount,
     hasRule: game.ruleCount > 0,
-    href: game.ruleCount === 1 ? `/games/${game.slug}/` : game.ruleCount > 1 ? `/board-games/${game.id}/` : `https://boardgamegeek.com/boardgame/${game.id}`,
+    ...directoryEntryLinks(game),
     search: compact([game.name, ...(game.terms ?? [])].join(' ')),
   }))).catch(error => { loading = undefined; throw error; });
   const render = async () => {
@@ -77,7 +77,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       return;
     }
     if (thisRevision !== revision) return;
-    const matches = data!.filter(game => (game.search.includes(query) || game.id.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
+    const matches = data!.filter(game => (game.search.includes(query) || game.numericId?.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
     matches.sort((a, b) => {
       const rank = (game: SearchGame) => game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
       return rank(a) - rank(b) || a.name.localeCompare(b.name, 'en', { numeric: true });
@@ -91,7 +91,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       const status = document.createElement('small'); status.textContent = game.ruleCount > 1 ? `${game.ruleCount} sourced editions` : game.hasRule ? 'Starting rule available' : 'No checked starting rule yet';
       label.append(status);
       if (game.hasRule) {
-        const link = document.createElement('a'); link.href = game.href; link.append(label);
+        const link = document.createElement('a'); link.href = game.href!; link.append(label);
         const arrow = document.createElement('span'); arrow.className = 'directory-arrow'; arrow.ariaHidden = 'true'; arrow.textContent = '→'; link.append(arrow);
         item.append(link);
       } else {
@@ -102,8 +102,13 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
         const explanation = document.createElement('p'); explanation.textContent = 'We haven’t checked this game’s starting rule yet. Follow the rulebook in your box, or give every player an equal chance with the picker.';
         const actions = document.createElement('div'); actions.className = 'directory-pending-actions';
         const picker = document.createElement('a'); picker.className = 'directory-picker-link'; picker.href = '/'; picker.textContent = 'Pick a player';
-        const identity = document.createElement('a'); identity.href = game.href; identity.textContent = 'View game on BoardGameGeek ↗';
-        actions.append(picker, identity); help.append(explanation, actions); details.append(summary, help); item.append(details);
+        actions.append(picker);
+        if (game.reference) {
+          const identity = document.createElement('a'); identity.href = game.reference.url;
+          identity.textContent = game.reference.label === 'BoardGameGeek' ? 'View game on BoardGameGeek ↗' : `${game.reference.label} ↗`;
+          actions.append(identity);
+        }
+        help.append(explanation, actions); details.append(summary, help); item.append(details);
       }
       fragment.append(item);
     }

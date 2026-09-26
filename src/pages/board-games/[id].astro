@@ -8,7 +8,7 @@ export function getStaticPaths() {
   const games = getBoardGames();
   const nameCounts = new Map<string, number>();
   for (const game of games) nameCounts.set(game.name, (nameCounts.get(game.name) ?? 0) + 1);
-  return games.filter(game => game.rules.length > 1).map(game => ({ params: { id: game.bggId }, props: { game, namesake: (nameCounts.get(game.name) ?? 0) > 1 } }));
+  return games.filter(game => game.rules.length > 1).map(game => ({ params: { id: game.routeKey }, props: { game, namesake: (nameCounts.get(game.name) ?? 0) > 1 } }));
 }
 const game = Astro.props.game as ReturnType<typeof getBoardGames>[number];
 const { url: site, amazonTag } = siteSettings();
@@ -16,15 +16,15 @@ const buyLink = amazonTag && game.rules.length ? amazonSearchUrl(game.name, amaz
 // Only games with several editions need their own chooser page in search results;
 // the directory links single-edition games straight to the rule.
 const namesake = Astro.props.namesake as boolean;
-const label = namesake ? `${game.name} (BoardGameGeek ${game.bggId})` : game.name;
+const label = namesake ? game.origin === 'legacy' ? `${game.name} (BoardGameGeek ${game.bggId})` : `${game.name} (${game.publisher} — ${game.identityScope})` : game.name;
 ---
 <Layout title={game.rules.length > 1 ? `${ruleHeading(label)} Choose your edition` : game.rules.length ? `${label}: starting-player rule — Who Goes First?` : `${label} — Who Goes First?`} description={game.rules.length ? `${ruleHeading(label)} Choose your edition to see the starting-player rule from the publisher’s rulebook.` : `${label} doesn’t have a sourced starting-player rule here yet. Use the fair player picker instead.`} noindex={game.rules.length < 2}>
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Board games', item: `${site}/board-games/` }, { '@type': 'ListItem', position: 3, name: game.name, item: `${site}/board-games/${game.bggId}/` }] }).replace(/</g, '\\u003c')} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Board games', item: `${site}/board-games/` }, { '@type': 'ListItem', position: 3, name: game.name, item: `${site}/board-games/${game.routeKey}/` }] }).replace(/</g, '\\u003c')} />
   <div class="content-page">
     <a class="back-link" href="/board-games/">← All board games</a>
     <h1>{game.name}</h1>
     {game.rules.length > 0 ? <><p class="lede">{game.rules.length === 1 ? 'Starting-player rule' : 'Choose your edition'}</p><ul class="game-list">{game.rules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.editionLabel}<small>See who goes first</small></span></a></li>)}</ul></> : <><p class="lede">A sourced starting-player rule is not available for this game yet.</p><p>Use the fair <a href="/">player picker</a> to get started.</p></>}
     {buyLink && <aside class="buy-game" aria-label="Find this game"><a href={buyLink} rel="sponsored nofollow noopener" target="_blank">Find {game.name} on Amazon</a><small>{amazonDisclosure}</small></aside>}
-    <p class="small muted">Game identity: <a href={game.discoveryUrl}>BoardGameGeek {game.bggId}</a>.</p>
+    {game.reference && <p class="small muted">Game identity: <a href={game.reference.url}>{game.origin === 'legacy' ? `BoardGameGeek ${game.bggId}` : game.reference.label}</a>.</p>}
   </div>
 </Layout>

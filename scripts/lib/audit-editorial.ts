@@ -10,6 +10,8 @@ export function editorialGuard(approvedRules: RuleRecord[], approvedPrompts: Pro
   const publicPrompts = new Set(approvedPrompts.map(record => record.prompt));
   const markers = [...new Set([
     'internalEvidence', 'internalReviewNotes', 'approvedBy', 'approvedRevision',
+    'identityEvidence', 'publisherReferenceSourceId', 'collisionReviews', 'acceptedRevision',
+    'identityRevision', 'ruleRevision', 'research-only', 'draft-identity-assignments.json',
     '/dev/review', '/dev/rules/', '/dev/games', '/dev/house-rules', '/dev/coverage',
     'discovery-index.json', 'needs-primary-source',
     ...[...approvedRules, ...researchRules].map(record => record.internalEvidence),

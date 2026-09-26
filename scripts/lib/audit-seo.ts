@@ -2,7 +2,7 @@ import { parse, type DefaultTreeAdapterMap } from 'parse5';
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { join, relative, resolve, sep } from 'node:path';
 import assert from 'node:assert/strict';
-import { getBoardGameInventory } from '../../src/lib/content/board-games';
+import { getBoardGameRegistry } from '../../src/lib/content/board-games';
 
 type Node = DefaultTreeAdapterMap['node'];
 type Element = DefaultTreeAdapterMap['element'];
@@ -69,7 +69,7 @@ export function auditSeo(output: string, files: string[], origin: string, produc
   assert.equal(new Set(pages.map(page => page.description)).size, pages.length, 'Duplicate meta descriptions');
   const pagesByCanonical = new Map(pages.map(page => [page.canonical, page]));
   const listedIds = pages.flatMap(page => page.listedGameIds);
-  const inventoryIds = getBoardGameInventory().games.map(game => game.bggId);
+  const inventoryIds = getBoardGameRegistry().map(game => game.routeKey);
   assert.equal(listedIds.length, inventoryIds.length, 'Every game identity must appear in exactly one browse shelf');
   assert.deepEqual(listedIds.toSorted(), inventoryIds.toSorted(), 'Browse shelves must cover every identity without duplicates');
   let links = 0;
