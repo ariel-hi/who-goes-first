@@ -12,6 +12,14 @@ The three original 1000 × 1500 images in `public/pins/` lead to specific, usefu
 
 Pinterest requires a claimed website to connect an RSS feed. A Pinterest business account can claim `whogoesfirst.fun` using a personalized HTML tag, an HTML file at the domain root, or a DNS TXT record. Do not add a guessed verification value. After claim, connect `https://whogoesfirst.fun/pinterest.xml` in Pinterest's bulk creation settings. The feed links and images must resolve on the claimed domain. See [Pinterest's claim instructions](https://help.pinterest.com/en/business/article/claim-your-website) and [RSS instructions](https://help.pinterest.com/en/business/article/auto-publish-pins-from-your-rss-feed).
 
+## Printable table cards
+
+The public `/printable-game-night/` page offers a one-page PDF with two cut-out QR cards for clubs, cafés and casual hosts. The code points to the clean picker URL, `https://whogoesfirst.fun/`, and includes no roster, saved result or campaign identifier. Print in portrait on US Letter, or fit to A4. The page explains how to test the code, includes a sheet preview and links back to the picker and sourced rules.
+
+Hosts can download and print without analytics consent or a signup. The page’s optional Share button uses the existing consented `share` event and fixed `site_page` label. A share handoff or a printed card does not prove an acquired visitor; clean QR visits cannot be separated from other direct visits. Keep channel claims limited to observed evidence.
+
+The PDF response declares the printable page as its preferred canonical using an absolute `Link` HTTP header. This points search engines toward the page with the download and printing instructions; it is a preference, not a guarantee of indexing or ranking. See [Google’s canonical-header guidance](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls).
+
 ## Bluesky drafts
 
 Publish from the site's own account when available. Use one post at a time, with an accurate landing page and the corresponding image. Keep the link intact so consented visits can be attributed. Suggested posts:
