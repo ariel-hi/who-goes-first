@@ -27,6 +27,8 @@ Allow time for discovery and look for a meaningful change through the existing f
 
 ## Measurement and economics
 
+The public GitHub repository's About section now links directly to `https://whogoesfirst.fun/`, describes the free picker, sourced rules and printable cards, and has five relevant topics: board-games, tabletop-games, random-picker, astro and typescript. The saved homepage and topics were verified through GitHub's public repository API. This makes the existing project a usable referral entry point; no visitor or search-ranking lift is established by the metadata change alone. The README update puts visitor destinations before development instructions.
+
 The GA4 home report for September 18–24 shows three active users, three direct sessions and zero key events. This small consented sample may include internal activity. It does not establish external acquisition, retention or paid return.
 
 The live website stream (`G-XDVR78FJXY`) lists Page views as its only active enhanced measurement. This matches the site's privacy notice. Fixed consented sharing is implemented separately by the site. Automatic form, site-search, outbound-click, scroll, video and download collection should remain off under the present consent scope.

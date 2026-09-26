@@ -1,13 +1,34 @@
 # Who Goes First?
 
+Pick a starting player for game night, find your board game's starting rule, or try an original question for the table. Free to use in your browser, with no account or app installation.
+
+**[Open the first-player picker →](https://whogoesfirst.fun/)**
+
+## For your next game night
+
+| What you need | Open |
+| --- | --- |
+| A random starting player | [First-player picker](https://whogoesfirst.fun/) — use 2–50 numbered seats or names; every entry gets the same chance. |
+| Your game's starting instruction | [Sourced game rules](https://whogoesfirst.fun/games/) — search by game and edition, with rulebook citations. |
+| A playful question for the table | [Original house-rule questions](https://whogoesfirst.fun/house-rules/) — skip any prompt and use a random tie-break when needed. |
+| A shortcut for club or café tables | [Printable QR table cards](https://whogoesfirst.fun/printable-game-night/) — download a one-page PDF with two cards. |
+| Help choosing a method | [Three ways to choose who goes first](https://whogoesfirst.fun/choose-who-goes-first/) — a game's own rule, an equal-chance pick, or a house question. |
+
+The rule directory is growing. Answers identify the reviewed edition, cite their sources, and distinguish official instructions from interpretation or a house fallback. A game appearing in the wider board-game index does not mean its rule has been reviewed yet.
+
+Sharing copies a clean link without your player list or pick. Analytics is optional; you can use the site and download the cards without allowing it. See [Privacy](https://whogoesfirst.fun/privacy/) and [How the picker works](https://whogoesfirst.fun/fairness/).
+
+## Development and content coverage
+
 An Astro + strict TypeScript site, with one React picker island and static editorial pages. The [public site](https://whogoesfirst.fun/) lists all 1,333 identities in the collected board game index. The full starting-rule compendium is still in progress. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 861 reviewed game rules, with 359 standalone criteria in the random mix. The initial public release had 762 rules and 339 random-mix criteria. See `CONTENT_REVIEW.md` for the current review process.
 
 ## Run
 
-From this project in PowerShell:
+From a fresh checkout in PowerShell:
 
 ```powershell
-cd C:\Users\hirsc\Downloads\Antigravity\first
+git clone https://github.com/ariel-hi/who-goes-first.git
+cd who-goes-first
 npm ci
 npm run dev
 ```
@@ -25,7 +46,7 @@ Use Node 22.23.2 or a later Node 22 maintenance release. A project-local Node 22
 - Optional local group memory, forget/reset, reduced motion, keyboard controls, and clean sharing with manual fallback.
 - Alphabetical static game index, local alias/prefix/typo search, random game-rule draw with skip, edition pages, answer-first source template, and revision-bound editorial approval validation.
 - Sixty published original house-rule questions, drawn without repeats until the pool is exhausted, with skip and an explicit random tie-break. The six original research drafts remain in the local review archive.
-- About, Fairness, Privacy, true 404, canonical/social metadata, sitemap/robots controls, CSP headers, optional GA4 page views, CI and operational docs.
+- About, Fairness, Privacy, true 404, canonical/social metadata, sitemap/robots controls, CSP headers, optional consented GA4 page visits and successful sharing, CI and operational docs.
 
 Public builds contain no unapproved editorial content. All 861 researched rule records in this checkout have completed editorial approval, alongside 60 published original house questions. The board game directory lists the complete 1,333-game collection and links each game to its sourced editions when available. The random mix contains 359 individually reviewed portable criteria in this checkout; cooperative role assignments, simultaneous play, component-dependent setup and random-only instructions remain outside it. Distinct Spin Circus, Valley of the Kings, Ticket to Ride: Europe and Incan Gold editions retain their different starting instructions.
 
