@@ -1,0 +1,39 @@
+{
+  "id": "rummikub-original-en",
+  "slug": "rummikub-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "af078eb796a9dcb85c1389e8c6f361113ba09337552ebce6239ea87ad4ccaa95",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Rummikub",
+  "aliases": [],
+  "editionLabel": "Original Rummikub English edition",
+  "firstPlayerRule": "Each player draws one tile from the mixed, face-down tiles. Whoever draws the highest number goes first. Return those tiles and mix them again before dealing the racks.",
+  "officialTieBreak": null,
+  "houseFallback": "If a joker is drawn, replace it with a numbered tile. Players tied for the highest number draw again until one has the highest number.",
+  "clarifications": [
+    "Play passes to the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://rummikub.com/wp-content/uploads/2019/12/2600-English.pdf",
+      "title": "Rummikub — English rulebook",
+      "publisher": "Lemada Light Industries",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Set-up; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Officialrummikub.comEnglishmanual. Rendered1exacthighestnumbertile,return/remixthen14tiles;leftdirection. No inventedcolorpriority/tie rule; houseprocedureexplicitlyseparate. Source custody: research/source-files/popular-sep26-10/rummikub.pdf; SHA-256 88a6f8b14c119b19b641dcfd13352f9eca3364f1b1a4219459b0f8f1b506ab00. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The reviewed manual does not specify what happens when the highest drawn numbers are equal or a player draws a joker during this selection."
+  ]
+}
