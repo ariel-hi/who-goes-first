@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 957 game rules approved for the catalog; 370 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 960 game rules approved for the catalog; 372 eligible for the random mix. Public house prompts: 60.**
+
+Lama Dice, Cabanga! and Meister Makatsu add three exact AMIGO English Version1.0 manual answers after root and independent review of all six complete PDF pages. Opening and later-round order remain distinct; the first two alone join the portable mix. Meister Makatsu retains its figure assignment and remains directory-only. Three further independently reviewed identities—Schnapp, Land, Fluss!, Speed Cups and Fischfutter—await separate rule approval. Actual getters now report5,009 identities,950 sourced and4,059 pending. Numeric identity evidence remains Wikidata-only and complete previous holds remain preserved. The home random-rule button now preserves native keyboard focus while loading and supports keyboard retry without reclaiming focus from a user who tabs away. See `research/coverage/sep26-amigo-manuals-keyboard-progress.md` for exact source revisions and verification.
 
 Spectacular and Yami add two exact reviewed English summaries of Russian manuals. Root and an independent reviewer read all20 pages and retained simultaneous/coordinator/conditional board order for Spectacular, and the human-only initial choice, clockwise first trick, later Automa lead and training scope for Yami. All891 preceding rules,42 preceding overrides and native decisions remain unchanged. The directory has4,995 identities,887 sourced and4,108 pending. Both records stay outside the portable mix. Validated native names now also reach existing checked editions through home and public library search; approved record aliases and rule assignments remain separate. See `research/coverage/sep26-two-manual-rule-search-progress.md`.
 

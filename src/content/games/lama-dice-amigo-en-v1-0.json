@@ -1,0 +1,42 @@
+{
+  "id": "lama-dice-amigo-en-v1-0",
+  "slug": "lama-dice-amigo-en-v1-0",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root — full primary-source review 2026-09-26 under owner authorization 2026-09-22; independent review /root/held_identity_review",
+  "approvedRevision": "cb8bfd005f72d5f6b3db3ce2591915a10750af8fa83e13ab8ea54c18dd252a74",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Lama Dice",
+  "aliases": [],
+  "editionLabel": "AMIGO English rules, Version 1.0",
+  "firstPlayerRule": "The youngest player starts the first round.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "These English rules cover 2–6 players. Play proceeds clockwise.",
+    "In later rounds, the last player to take an action in the previous round starts.",
+    "The instructions for the last active player apply during a round after everyone else has quit."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02103-GB-AmigoRule.pdf",
+      "title": "Lama Dice — AMIGO English rules, Version 1.0",
+      "publisher": "AMIGO Spiel + Freizeit GmbH",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "PDF page 1: Setting Up the Game and Playing the Game. PDF page 2: Scoring, final paragraph before The End of the Game, and copyright/version footer; no visible printed page numbers.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Codex root reviewed both complete original PDF pages at original image detail on 2026-09-26 and read the complete proposed draft. Exact publisher product → literal public download iframe → Manual en PDF chain retained in research/source-files/sep26-amigo-three-manual-intake; intake manifest SHA256 c32db30d407a611acc61ba7ce5b38e67b119539435dedc61bcf2c97633095a9d, all98 members/27,297,820 bytes independently verified. Original PDF SHA256 f8f819c91980e6c77ff02184bf2b0285f12a36679d8b880a6cd084c51a620411. Root offline chain/page proof artifacts/sep26-amigo-manual-root-review/proof.json SHA256 5616a6d985dc35b2ebeaa9242c5144b5cb34af00e48e3985bbb209f2af3a02e8. Full visual reading establishes opening and later-round context; machine extraction is supporting evidence only. Version1.0 and copyright footer observed; metadata/listing/copyright dates do not establish printing year. Original intake proposals remain unchanged. Only this exact English file is reviewed; no language, printing, variant, alias or rule transfer. Standing owner review authorization is recorded in CONTENT_REVIEW.md. Independent complete source and public-copy review by /root/held_identity_review is sealed at artifacts/sep26-amigo-manual-independent-review/manifest.json SHA256 d71fa09cccb46bd6110f473a6e0b822c3ee18c7d41b207b9945d38c5ec51d276; memo 4d087cb50cec0efdf41fa05b0948a9c9f38be93671a01ff22b9289b49b44fe3b, final-copy addendum 88affd29e5979c0ef254acd41632853e0938525cee85b55507a02c1d84700582. Root read that complete memo/addendum, source-chain/page assessments and seal, and independently rehashed all25 review members/8,224,583 bytes. No factual blocker. Root approves the exact revised content under the standing owner authorization; shared catalog application and deployment are separate. The original historical intake proposals and guards remain unchanged.",
+  "uncertainty": [
+    "No official opening tie-break is stated for the initial criterion.",
+    "Scope is the exact identified English publisher file; no transfer to an unfetched German, French, US or other printing/version is approved.",
+    "The footer copyright year and file/listing dates do not establish a printing year."
+  ]
+}
