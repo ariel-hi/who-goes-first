@@ -13,18 +13,54 @@ const shared = new Set(games.filter((game, index) => games.findIndex(other => ot
   <noscript><p class="small muted">Search needs JavaScript. All available rules are listed above as ordinary links.</p>{enableDirectorySearch && <p><a class="inline-link" href="/board-games/">Find this game in the directory</a></p>}</noscript>
 </div>
 <script>
-  import { searchRank } from '../lib/search';
+  import { createSearchRanker, prepareSearch } from '../lib/search';
   import { directorySearchHref } from '../lib/directory-search';
   document.querySelectorAll<HTMLElement>('[data-game-directory]').forEach(directory => {
     const input = directory.querySelector<HTMLInputElement>('input')!;
     const list = directory.querySelector<HTMLUListElement>('ul')!;
-    const items = [...list.querySelectorAll<HTMLLIElement>('li')];
+    const items = [...list.querySelectorAll<HTMLLIElement>('li')].map(item => ({ item, search: prepareSearch(JSON.parse(item.dataset.game!)) }));
     const bridge = directory.querySelector<HTMLAnchorElement>('[data-directory-search]');
     const render = () => {
       if (bridge) bridge.href = directorySearchHref(input.value);
-      const ranked = items.map(item => ({ item, rank: searchRank(JSON.parse(item.dataset.game!), input.value) })).sort((a, b) => a.rank - b.rank);
+      const rank = createSearchRanker(input.value);
+      const ranked = items.map(({ item, search }) => ({ item, rank: rank(search) })).sort((a, b) => a.rank - b.rank);
       let count = 0;
-      for (const { item, rank } of ranked) { item.hidden = !Number.isFinite(rank); if (!item.hidden) count++; list.append(item); }
+      const newlyHidden = ranked.filter(({ item, rank }) => !item.hidden && !Number.isFinite(rank)).length;
+      const stage = newlyHidden > items.length / 2;
+      const parent = list.parentNode!;
+      const anchor = list.nextSibling;
+      // A large collapse is cheaper with the list detached. The focused search
+      // input stays connected; the same list and link nodes are restored.
+      if (stage) list.remove();
+      try {
+        for (const { item, rank } of ranked) {
+          const hidden = !Number.isFinite(rank);
+          if (item.hidden !== hidden) item.hidden = hidden;
+          if (!hidden) count++;
+        }
+        if (!input.value.trim()) {
+          // Restore from the end without shifting every row after a match.
+          let next: Element | null = null;
+          for (let index = items.length - 1; index >= 0; index--) {
+            const item = items[index]!.item;
+            if (item.nextElementSibling !== next) list.insertBefore(item, next);
+            next = item;
+          }
+        } else {
+          // Only visible links need ranking; hidden rows keep their positions.
+          let next = list.firstElementChild as HTMLLIElement | null;
+          while (next?.hidden) next = next.nextElementSibling as HTMLLIElement | null;
+          for (const { item, rank } of ranked) {
+            if (!Number.isFinite(rank)) break;
+            if (item === next) {
+              next = next.nextElementSibling as HTMLLIElement | null;
+              while (next?.hidden) next = next.nextElementSibling as HTMLLIElement | null;
+            } else list.insertBefore(item, next);
+          }
+        }
+      } finally {
+        if (stage) parent.insertBefore(list, anchor);
+      }
       directory.querySelector<HTMLElement>('[data-count]')!.textContent = `${count} ${count === 1 ? 'rule' : 'rules'} found`;
       directory.querySelector<HTMLElement>('[data-empty]')!.hidden = count > 0;
     };

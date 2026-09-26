@@ -58,16 +58,19 @@ test('native and language-neutral identities enroll only after primary identity 
     expect(game?.name).toBe(name);
     expect(game?.rules).toEqual([]);
   }
-  expect(games).toHaveLength(4981);
+  expect(games.find(game => game.bggId === '407343')).toMatchObject({ name: 'Ironwood', rules: [] });
+  expect(games.find(game => game.bggId === '414117')).toMatchObject({ name: 'Wroth', rules: [] });
+  expect(games.find(game => game.bggId === '421310')).toMatchObject({ name: 'Beyond the Horizon', rules: [] });
+  expect(games).toHaveLength(4984);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
-  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '407343', '414117', '421310', '452264']) {
+  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '452264']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
 });
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(25);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(28);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -81,7 +84,7 @@ test('native identity validation rejects stale or unsupported acceptance evidenc
   expect(() => nativeIdentityAdditions(snapshotText, decisionsText, [{ name: 'Existing game', bggId: '156' }])).toThrow('Duplicate native');
   expect(() => nativeIdentityAdditions(snapshotText, decisionsText, [{ name: 'SKYJO', bggId: '999999' }])).toThrow('Duplicate native');
 });
-test('semantic native acceptance retains Wikidata-only numeric evidence and the prior holds', () => {
+test('native acceptance distinguishes semantic and direct numeric proof while retaining prior holds', () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const decisions = review.decisions as Array<{
     bggId: string; decision: string; reviewed: boolean; independentRawIdEvidence: unknown[];
@@ -91,12 +94,12 @@ test('semantic native acceptance retains Wikidata-only numeric evidence and the 
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 25, hold: 263, reviewed: 35, unreviewed: 253 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(25);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(263);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 28, hold: 260, reviewed: 35, unreviewed: 253 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(28);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(260);
   expect(decisions.filter(decision => decision.reviewed)).toHaveLength(35);
   expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(253);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(10);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(7);
   for (const id of ['276182', '380619', '421606']) {
     const decision = decisions.find(item => item.bggId === id)!;
     expect(decision).toMatchObject({ decision: 'accept', reviewed: true, idEvidenceStatus: 'wikidata-statement-only', identityCorroborationStatus: 'primary-semantic-corroboration', independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
@@ -105,9 +108,33 @@ test('semantic native acceptance retains Wikidata-only numeric evidence and the 
     expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision).toMatchObject({ decision: 'hold', independentRawIdEvidence: [] });
     expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision.idProvenance).toEqual(decision.idProvenance);
   }
-  for (const id of ['407343', '414117', '421310']) {
-    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'hold', reviewed: true });
+  const ironwood = decisions.find(decision => decision.bggId === '407343')!;
+  expect(ironwood).toMatchObject({ decision: 'accept', reviewed: true, idEvidenceStatus: 'primary-href-and-wikidata-statement', startingRuleApproved: false, editionRuleTransferApproved: false });
+  expect(ironwood.independentRawIdEvidence).toEqual([{
+    sourceId: 'supermeeple-ironwood', href: 'https://boardgamegeek.com/boardgame/407343/ironwood', rawId: '407343', exactCandidateId: true,
+    location: 'literal product-page anchor 145 (zero-based)', destinationFetched: false,
+  }]);
+  expect(review.sources['supermeeple-ironwood']).toMatchObject({ url: 'https://www.supermeeple.com/nos-jeux/ironwood/', kind: 'primary-publisher', status: 'retrieved', sha256: 'db64e0d26d34e414daafbae75084da39d3ebb2a98d8d567665041f8099df0ae7', byteCount: 177624 });
+  expect(ironwood.identityReviewHistory).toHaveLength(1);
+  expect(ironwood.identityReviewHistory?.[0]?.fullPreviousDecision).toMatchObject({ decision: 'hold', independentRawIdEvidence: [] });
+  expect(ironwood.identityReviewHistory?.[0]?.fullPreviousDecision.idProvenance).toEqual(ironwood.idProvenance);
+  for (const id of ['414117', '421310']) {
+    const decision = decisions.find(item => item.bggId === id)!;
+    expect(decision).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+    expect(decision.identityReviewHistory).toHaveLength(1);
+    expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision).toMatchObject({ decision: 'hold', independentRawIdEvidence: [] });
+    expect(decision.identityReviewHistory?.[0]?.fullPreviousDecision.idProvenance).toEqual(decision.idProvenance);
   }
+  const wroth = review.decisions.find((decision: { bggId: string }) => decision.bggId === '414117');
+  expect(wroth).toMatchObject({ idEvidenceStatus: 'wikidata-statement-only', identityCorroborationStatus: 'primary-semantic-corroboration', independentRawIdEvidence: [] });
+  expect(wroth.primaryIdentityReviewEvidence).toMatchObject({ primaryHostedNumericBggHrefObserved: false, numericClaimSource: 'preserved-wikidata-p2339-only', preservedLocalizedLabel: { language: 'de', value: 'Groll' }, creatorClaimRepairApproved: false, quantityYearOrTerritoryRepairApproved: false });
+  expect(wroth.sourceIds).toEqual(['chip-wroth', 'chip-wroth-support', 'frosted-wroth-announcement', 'frosted-groll-product']);
+  expect(review.sources['frosted-wroth-announcement']).toMatchObject({ url: 'https://frostedgames.de/die-gamefound-kampagne-zu-wroth-startet/2024/03/', sha256: '5efc183985061e391882dcedfdcd6c7e84a6f34ff310bc471a5a3da93ed1ab63', byteCount: 119476, externalIdEvidence: [] });
+  expect(review.sources['frosted-groll-product']).toMatchObject({ url: 'https://frostedgames.de/shop/groll/', sha256: '6d301afe5c657fe72cc3d144bad3d76655b5655b21ce73f2558838fcf96cbec4', byteCount: 185584, externalIdEvidence: [] });
+  const horizon = review.decisions.find((decision: { bggId: string }) => decision.bggId === '421310');
+  expect(horizon).toMatchObject({ idEvidenceStatus: 'primary-href-and-wikidata-statement', identityCorroborationStatus: 'primary-hosted-numeric-href' });
+  expect(horizon.independentRawIdEvidence).toEqual([{ sourceId: 'supermeeple-horizon-product', href: 'https://boardgamegeek.com/boardgame/421310/beyond-the-horizon', rawId: '421310', exactCandidateId: true, location: 'literal product-page anchor 145 (zero-based), original byte offset 148359', destinationFetched: false }]);
+  expect(review.sources['supermeeple-horizon-product']).toMatchObject({ url: 'https://www.supermeeple.com/nos-jeux/beyondthehorizon/', sha256: 'ad10e1046d444917c7939bff7f0322ebf38874a87507f0fa866460a937b97040', byteCount: 176722 });
   const sesame = decisions.find(decision => decision.bggId === '380619')?.semanticIdentityEvidence?.relatedQidResolution.entities.find(entity => entity.wikidataId === 'Q134451123');
   expect(sesame?.hasEnglishLabel).toBe(false);
   expect(sesame?.labels).not.toHaveProperty('en');
@@ -115,6 +142,24 @@ test('semantic native acceptance retains Wikidata-only numeric evidence and the 
   const knitting = snapshot.candidates.find((candidate: { bggId: string }) => candidate.bggId === '421606');
   expect(knitting.items[0].entity.claims).not.toHaveProperty('P170');
   expect(knitting.items[0].entity.claims).not.toHaveProperty('P178');
+  const savedIronwood = snapshot.candidates.find((candidate: { bggId: string }) => candidate.bggId === '407343');
+  expect(savedIronwood.items[0].entity.claims).not.toHaveProperty('P170');
+  expect(savedIronwood.items[0].entity.claims).not.toHaveProperty('P178');
+  expect(savedIronwood.items[0].entity.claims).not.toHaveProperty('P110');
+  expect(savedIronwood.items[0].entity.claims.P2899[0].mainsnak.datavalue.value.amount).toBe('+12');
+  const ironwoodRecord = review.decisions.find((decision: { bggId: string }) => decision.bggId === '407343');
+  expect(ironwoodRecord.editionNotes).toContain('Identity only: French product age14+ differs from saved12; no printing/release dates, rule text, creator claim or edition equivalence inferred. The unfetched FR manual filename is not reviewed date evidence.');
+  for (const id of ['414117', '421310']) {
+    const saved = snapshot.candidates.find((candidate: { bggId: string }) => candidate.bggId === id).items[0].entity;
+    expect(saved.claims).not.toHaveProperty('P170');
+    expect(saved.claims).not.toHaveProperty('P178');
+  }
+  const savedWroth = snapshot.candidates.find((candidate: { bggId: string }) => candidate.bggId === '414117').items[0].entity;
+  expect(savedWroth.claims.P2899[0].mainsnak.datavalue.value.amount).toBe('+13');
+  expect(savedWroth.claims.P1872[0].mainsnak.datavalue.value.amount).toBe('+1');
+  expect(wroth.editionNotes).toContain('German page explicitly offers solo/cooperative modes and scenario components; original cached base page says2–4. This supports only German page mode scope, not English base solo equivalence or rule transfer.');
+  expect(wroth.editionNotes).toContain('Saved2025 publication is not corroborated:2024 announcement is a campaign date; German shop2026 is its own product context.');
+  expect(horizon.editionNotes).toContain('Saved2024 year and alternative90-minute claim remain uncorroborated by the fetched page.');
 });
 test('native identity validation checks the preserved entity and actual nondeprecated ID statement', () => {
   const originalSnapshot = JSON.parse(readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8'));

@@ -6,16 +6,16 @@
   "sourceSnapshotStatementSha256": "65ce20420ac25bf7bd9421378470d07ce39f5e7c8040b541cea310f1cf95ab5b",
   "sourceSnapshotEntitiesSha256": "fcca4c520fc5a80f8ff01a9c9ef00977a6dfb2a3f9d61d47beac037436f489f9",
   "scope": "Supplementary identity-only decisions for the complete native/mul/P1476 pool. Accept means direct primary identity evidence corroborates a discovery name for exact runtime inventory enrollment; it approves no starting-player rule, edition transfer or deployment. Every other candidate is held. Numeric identifiers and QID provenance are official Wikidata CC0. Primary publisher/author title and authorship facts are individually observed, not a BoardGameGeek corpus. No BoardGameGeek destination, API or page content was fetched.",
-  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained.",
+  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained. A subsequent independently reviewed Super Meeple product page resolved the Ironwood hold through its literal exact 407343 numeric href and preserved publisher/domain bridge. The full prior hold and age/edition limits remain retained; no rule approval or saved creator claim was transferred. A subsequent root-reviewed Frosted Wroth/Groll partnership bridge and Super Meeple Beyond the Horizon literal numeric href resolved the remaining two holds from the ten-candidate review. Wroth retains Wikidata-only numeric provenance; Horizon retains its primary-hosted exact href. Complete prior holds and all mode/age/year/creator limits remain preserved, with no rule or claim repair.",
   "counts": {
     "totalCandidates": 288,
     "reviewed": 35,
     "unreviewed": 253,
-    "accept": 25,
-    "hold": 263,
+    "accept": 28,
+    "hold": 260,
     "priorUnheldReviewed": 13,
     "priorUnheldAccepted": 10,
-    "additionalAccepted": 15
+    "additionalAccepted": 18
   },
   "sources": {
     "kramer-author": {
@@ -635,6 +635,81 @@
       "inspectedOn": "2026-09-26",
       "observedEvidence": "Publisher identifies Stonesaga with Max Brooke and Luke Eddy and exposes the exact 356944 game-ID href.",
       "use": "Discovery identity facts only; no starting-player or edition-rule approval. Exact numeric hrefs are primary-hosted observations; destinations were not fetched."
+    },
+    "supermeeple-ironwood": {
+      "url": "https://www.supermeeple.com/nos-jeux/ironwood/",
+      "finalUrl": "https://www.supermeeple.com/nos-jeux/ironwood/",
+      "status": "retrieved",
+      "sha256": "db64e0d26d34e414daafbae75084da39d3ebb2a98d8d567665041f8099df0ae7",
+      "cacheFile": "research/source-files/ironwood-license-crosscheck/supermeeple-ironwood.html",
+      "byteCount": 177624,
+      "kind": "primary-publisher",
+      "retrievedAt": "2026-09-26T06:33:06.168222+00:00",
+      "title": "Fiche Jeu Ironwood",
+      "identityFacts": "Saved publisher Super Meeple identifies French Ironwood and hosts the exact literal game-ID href 407343. Its product credits Qistina Khalidah and describes the same distinctive factions as original Mindclash context.",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/407343/ironwood",
+          "rawId": "407343",
+          "exactCandidateId": true,
+          "location": "literal product-page anchor 145 (zero-based)",
+          "destinationFetched": false
+        }
+      ],
+      "startingRuleApproved": false
+    },
+    "frosted-wroth-announcement": {
+      "url": "https://frostedgames.de/die-gamefound-kampagne-zu-wroth-startet/2024/03/",
+      "finalUrl": "https://frostedgames.de/die-gamefound-kampagne-zu-wroth-startet/2024/03/",
+      "status": "retrieved",
+      "sha256": "5efc183985061e391882dcedfdcd6c7e84a6f34ff310bc471a5a3da93ed1ab63",
+      "cacheFile": "research/source-files/native-two-license-crosscheck/frosted-wroth-announcement.html",
+      "byteCount": 119476,
+      "kind": "primary-publisher",
+      "retrievedAt": "2026-09-26T06:49:58.328396+00:00",
+      "retrievalStartedAt": "2026-09-26T06:49:56.095844+00:00",
+      "title": "Die Gamefound-Kampagne zu Wroth startet!",
+      "identityFacts": "Explicit original/localized product partnership bridge from saved publisher Frosted Games; exact saved German label Groll and title Wroth; distinctive base components/factions corroborate the prior original product.",
+      "externalIdEvidence": [],
+      "startingRuleApproved": false
+    },
+    "frosted-groll-product": {
+      "url": "https://frostedgames.de/shop/groll/",
+      "finalUrl": "https://frostedgames.de/shop/groll/",
+      "status": "retrieved",
+      "sha256": "6d301afe5c657fe72cc3d144bad3d76655b5655b21ce73f2558838fcf96cbec4",
+      "cacheFile": "research/source-files/native-two-license-crosscheck/frosted-groll-product.html",
+      "byteCount": 185584,
+      "kind": "primary-publisher",
+      "retrievedAt": "2026-09-26T06:49:57.456215+00:00",
+      "retrievalStartedAt": "2026-09-26T06:49:56.099528+00:00",
+      "title": "Groll – Schlacht um Tzorn",
+      "identityFacts": "Explicit original/localized product partnership bridge from saved publisher Frosted Games; exact saved German label Groll and title Wroth; distinctive base components/factions corroborate the prior original product.",
+      "externalIdEvidence": [],
+      "startingRuleApproved": false
+    },
+    "supermeeple-horizon-product": {
+      "url": "https://www.supermeeple.com/nos-jeux/beyondthehorizon/",
+      "finalUrl": "https://www.supermeeple.com/nos-jeux/beyondthehorizon/",
+      "status": "retrieved",
+      "sha256": "ad10e1046d444917c7939bff7f0322ebf38874a87507f0fa866460a937b97040",
+      "cacheFile": "research/source-files/native-two-license-crosscheck/supermeeple-horizon-product.html",
+      "byteCount": 176722,
+      "kind": "primary-publisher",
+      "retrievedAt": "2026-09-26T06:49:59.217375+00:00",
+      "retrievalStartedAt": "2026-09-26T06:49:56.101314+00:00",
+      "title": "Fiche Jeu Beyond the Horizon",
+      "identityFacts": "Exact numeric BGG href in the full product resource block on the saved Super Meeple publisher official domain, with exact original title Beyond the Horizon.",
+      "externalIdEvidence": [
+        {
+          "href": "https://boardgamegeek.com/boardgame/421310/beyond-the-horizon",
+          "rawId": "421310",
+          "exactCandidateId": true,
+          "location": "literal product-page anchor 145 (zero-based), original byte offset 148359",
+          "destinationFetched": false
+        }
+      ],
+      "startingRuleApproved": false
     }
   },
   "unusableAttemptNotes": [
@@ -10231,20 +10306,23 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
+      "decision": "accept",
       "reviewed": true,
-      "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+      "reason": "Exact literal game-ID href on preserved publisher Super Meeple product page independently corroborates the unchanged Wikidata P2339 identity. Root independently reviewed the original source, publisher/domain bridge and prior hold; exact discovery identity enrollment only.",
       "identityEvidence": [
         "Publisher identifies Ironwood; no matching raw numeric game ID found in fetched content.",
-        "Publisher sells Ironwood as a main game and separately lists the Promo Pack. No independent numeric game ID found."
+        "Publisher sells Ironwood as a main game and separately lists the Promo Pack. No independent numeric game ID found.",
+        "Saved publisher Super Meeple identifies French Ironwood and hosts the exact literal game-ID href 407343. Its product credits Qistina Khalidah and describes the same distinctive factions as original Mindclash context."
       ],
       "sourceIds": [
         "mindclash-ironwood",
-        "mindclash-ironwood-shop"
+        "mindclash-ironwood-shop",
+        "supermeeple-ironwood"
       ],
       "attemptedPrimaryUrls": [
         "https://mindclashgames.com/news/introducing-ironwood/",
-        "https://us.shop.mindclashgames.com/product/ironwood/"
+        "https://us.shop.mindclashgames.com/product/ironwood/",
+        "https://www.supermeeple.com/nos-jeux/ironwood/"
       ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
@@ -10260,8 +10338,17 @@
       ],
       "startingRuleApproved": false,
       "editionRuleTransferApproved": false,
-      "independentRawIdEvidence": [],
-      "idEvidenceStatus": "wikidata-statement-only",
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "supermeeple-ironwood",
+          "href": "https://boardgamegeek.com/boardgame/407343/ironwood",
+          "rawId": "407343",
+          "exactCandidateId": true,
+          "location": "literal product-page anchor 145 (zero-based)",
+          "destinationFetched": false
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
       "snapshotReference": {
         "path": "research/coverage/wikidata-native-title-leads.json",
         "jsonPointer": "/candidates/245",
@@ -10288,7 +10375,98 @@
           }
         ]
       },
-      "editionNotes": []
+      "editionNotes": [
+        "Identity only: French product age14+ differs from saved12; no printing/release dates, rule text, creator claim or edition equivalence inferred. The unfetched FR manual filename is not reviewed date evidence."
+      ],
+      "identityReviewHistory": [
+        {
+          "stage": "prior-reviewed-hold",
+          "decisionsFileSha256": "88fdda0593e4d37073b3ec096e922e8e1b76575955c8234b41fe14b0eb5b2621",
+          "fullPreviousDecision": {
+            "bggId": "407343",
+            "wikidataItems": [
+              "Q139784741"
+            ],
+            "displayName": "Ironwood",
+            "selectedTitle": {
+              "wikidataId": "Q139784741",
+              "text": "Ironwood",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": true,
+            "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+            "identityEvidence": [
+              "Publisher identifies Ironwood; no matching raw numeric game ID found in fetched content.",
+              "Publisher sells Ironwood as a main game and separately lists the Promo Pack. No independent numeric game ID found."
+            ],
+            "sourceIds": [
+              "mindclash-ironwood",
+              "mindclash-ironwood-shop"
+            ],
+            "attemptedPrimaryUrls": [
+              "https://mindclashgames.com/news/introducing-ironwood/",
+              "https://us.shop.mindclashgames.com/product/ironwood/"
+            ],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q139784741",
+                "revision": 2529351790,
+                "entitySha256": "f39500272e76ba1a8c28834185a9cab280f4066786ce329cb5c574d3b773f858",
+                "statements": [
+                  "Q139784741$9CFE09C4-12CB-477E-ADBA-84FA887D7301"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false,
+            "independentRawIdEvidence": [],
+            "idEvidenceStatus": "wikidata-statement-only",
+            "snapshotReference": {
+              "path": "research/coverage/wikidata-native-title-leads.json",
+              "jsonPointer": "/candidates/245",
+              "candidateSha256": "30ddb8249999059bc1032cee2520833f55e878e4f552d6b66ca8e7a898b9c2ff",
+              "wikidataId": "Q139784741",
+              "revision": 2529351790,
+              "modified": "2026-08-09T21:05:36Z",
+              "entitySha256": "f39500272e76ba1a8c28834185a9cab280f4066786ce329cb5c574d3b773f858",
+              "matchingP2339Statements": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2339",
+                    "hash": "a5131c2ee5237e24617f8881c19ba9c1bc9fe3c8",
+                    "datavalue": {
+                      "value": "407343",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q139784741$9CFE09C4-12CB-477E-ADBA-84FA887D7301",
+                  "rank": "normal"
+                }
+              ]
+            },
+            "editionNotes": []
+          }
+        }
+      ],
+      "independentIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "scope": "Discovery identity only; no rule, date, license-contract or printing equivalence approval.",
+        "memo": "artifacts/sep26-ironwood-root-review.md",
+        "memoSha256": "4cfb62c8b8a2fd43eaedbe73467fd870d2e948052d5519588926090d9a09e850",
+        "correctedOfflineCheckLog": "artifacts/sep26-ironwood-root-check-corrected.log",
+        "correctedOfflineCheckLogSha256": "9a1ad1f024a3961d0e2b2c6b874d8e2afe25c4d9f271d7fdf994d50a9e34e9da",
+        "evidenceManifest": "research/source-files/ironwood-license-crosscheck/manifest.json",
+        "evidenceManifestSha256": "3f1bd43edf05795fd91e7834086bb63d50e3fdc665d50c97463f31b1320e238d",
+        "identityContext": "research/source-files/ironwood-license-crosscheck/identity-context.json",
+        "identityContextSha256": "70fb606275f3db3888ee5adb5538b4b07d46b7b0e75c66ff4f57e0ad35646b8f"
+      }
     },
     {
       "bggId": "408236",
@@ -10368,20 +10546,25 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
+      "decision": "accept",
       "reviewed": true,
-      "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+      "reason": "Root independently reviewed the exact primary publisher/product bridge and complete preserved entity/P2339 provenance; discovery identity enrollment only.",
       "identityEvidence": [
         "Publisher’s shop identifies Wroth as a Neon Knight Games base game. No independent numeric game ID found.",
-        "Publisher’s Wroth support page is reachable but has no exact numeric game-ID href in fetched content."
+        "Publisher’s Wroth support page is reachable but has no exact numeric game-ID href in fetched content.",
+        "Explicit original/localized product partnership bridge from saved publisher Frosted Games; exact saved German label Groll and title Wroth; distinctive base components/factions corroborate the prior original product."
       ],
       "sourceIds": [
         "chip-wroth",
-        "chip-wroth-support"
+        "chip-wroth-support",
+        "frosted-wroth-announcement",
+        "frosted-groll-product"
       ],
       "attemptedPrimaryUrls": [
         "https://chiptheorygames.com/products/wroth-base-game",
-        "https://chiptheorygames.com/pages/support/wroth"
+        "https://chiptheorygames.com/pages/support/wroth",
+        "https://frostedgames.de/die-gamefound-kampagne-zu-wroth-startet/2024/03/",
+        "https://frostedgames.de/shop/groll/"
       ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
@@ -10425,7 +10608,287 @@
           }
         ]
       },
-      "editionNotes": []
+      "editionNotes": [
+        "No literal primary numeric 414117 href observed in the two fetched Frosted pages; numeric provenance remains saved Wikidata.",
+        "Saved age13 is not corroborated: German product age10+, original cached line internally says14+ and10 years or older. Do not repair or declare edition equivalence.",
+        "Saved2025 publication is not corroborated:2024 announcement is a campaign date; German shop2026 is its own product context.",
+        "German page explicitly offers solo/cooperative modes and scenario components; original cached base page says2–4. This supports only German page mode scope, not English base solo equivalence or rule transfer.",
+        "Current shop duration30 per person and announcementapprox60 are distinct stated contexts; do not normalize or repair saved60.",
+        "No saved creator/developer exists to compare against newly credited Manny Trembley. Do not fabricate that comparison."
+      ],
+      "identityCorroborationStatus": "primary-semantic-corroboration",
+      "identityReviewHistory": [
+        {
+          "stage": "prior-reviewed-hold",
+          "decisionsFileSha256": "9f8e8e222a67c02251d205a55bf28f5ff722131027d84bc2cdd8ace43c54f05c",
+          "fullPreviousDecision": {
+            "bggId": "414117",
+            "wikidataItems": [
+              "Q139784744"
+            ],
+            "displayName": "Wroth",
+            "selectedTitle": {
+              "wikidataId": "Q139784744",
+              "text": "Wroth",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": true,
+            "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+            "identityEvidence": [
+              "Publisher’s shop identifies Wroth as a Neon Knight Games base game. No independent numeric game ID found.",
+              "Publisher’s Wroth support page is reachable but has no exact numeric game-ID href in fetched content."
+            ],
+            "sourceIds": [
+              "chip-wroth",
+              "chip-wroth-support"
+            ],
+            "attemptedPrimaryUrls": [
+              "https://chiptheorygames.com/products/wroth-base-game",
+              "https://chiptheorygames.com/pages/support/wroth"
+            ],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q139784744",
+                "revision": 2529351794,
+                "entitySha256": "5b14aa4f8a2fc49191b649494e803245aff2437c2372b19acd42e52a4e39b5cd",
+                "statements": [
+                  "Q139784744$CDDF1D4E-4073-4D1E-B580-3CBA167B8339"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false,
+            "independentRawIdEvidence": [],
+            "idEvidenceStatus": "wikidata-statement-only",
+            "snapshotReference": {
+              "path": "research/coverage/wikidata-native-title-leads.json",
+              "jsonPointer": "/candidates/248",
+              "candidateSha256": "cc3b2d1df9c8a4d7a4ef6a47ff1d99f0bfc19d9677d9337ee10e0f26ccced2ed",
+              "wikidataId": "Q139784744",
+              "revision": 2529351794,
+              "modified": "2026-08-09T21:05:37Z",
+              "entitySha256": "5b14aa4f8a2fc49191b649494e803245aff2437c2372b19acd42e52a4e39b5cd",
+              "matchingP2339Statements": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2339",
+                    "hash": "61d51e792e37604bfb9af3a7304ed7242801cffa",
+                    "datavalue": {
+                      "value": "414117",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q139784744$CDDF1D4E-4073-4D1E-B580-3CBA167B8339",
+                  "rank": "normal"
+                }
+              ]
+            },
+            "editionNotes": []
+          }
+        }
+      ],
+      "primaryIdentityReviewEvidence": {
+        "scope": "Exact discovery identity only; no rule, creator/quantity/year repair or edition/territory equivalence.",
+        "identityBasis": "Explicit original/localized product partnership bridge from saved publisher Frosted Games; exact saved German label Groll and title Wroth; distinctive base components/factions corroborate the prior original product.",
+        "primaryHostedNumericBggHrefObserved": false,
+        "numericClaimSource": "preserved-wikidata-p2339-only",
+        "evidenceProposal": "research/source-files/native-two-license-crosscheck/proposal-414117.json",
+        "evidenceProposalSha256": "504b40b2163644c75238a69081f19d1aed2355f071ee848a52fb2b825a45b792",
+        "snapshotJsonPointer": "/candidates/248",
+        "candidateSha256": "cc3b2d1df9c8a4d7a4ef6a47ff1d99f0bfc19d9677d9337ee10e0f26ccced2ed",
+        "exactSavedPublisherStatements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P123",
+              "hash": "4a8e38f63d63dfee45a0dfbd2e87464258688bfd",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 133868821,
+                  "id": "Q133868821"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q139784744$2140E4C4-6091-4193-8516-6552F208CFF8",
+            "rank": "normal"
+          }
+        ],
+        "relatedPublisher": {
+          "wikidataId": "Q133868821",
+          "revision": 2522085773,
+          "modified": "2026-07-24T12:26:47Z",
+          "entitySha256": "247cfed62e626fad0b0d31bcd1790deef158734c6466463f2ce47598acc00510",
+          "labels": {
+            "mul": {
+              "language": "mul",
+              "value": "Frosted Games"
+            }
+          },
+          "websiteStatements": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "c724f2cd49b2addc353c59e1cbf5603e74049a2a",
+                "datavalue": {
+                  "value": "https://frostedgames.de",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "46bfd327b830f66f7061ea92d1be430c135fa91f",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 188,
+                        "id": "Q188"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q133868821$95866B7E-6082-432D-8AF5-08C42DB751E2",
+              "rank": "normal"
+            }
+          ],
+          "originalResponseFile": "research/source-files/native-two-license-crosscheck/prior-related-qids-response.json",
+          "originalResponseSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141"
+        },
+        "sourceLocators": [
+          {
+            "source": "frosted-wroth-announcement",
+            "derivedTextFile": "frosted-wroth-announcement.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 24,
+                "completeLine": "Wroth ist das neueste Spiel unseres Partners Chip Theory Games und wird bei uns Groll – Schlacht um Tzorn heißen. Es ist ein asymmetrisches Area-Control-Spiel mit Würfel-Draft Mechanismus. Das Spiel ist für 1 – 4 Spieler:innen, kann dabei sowohl kooperativ als auch kompetitiv gespielt werden und die Spieldauer beträgt ca. 60 Minuten. Das Spiel sowie fantastische Artwork für Groll – Schlacht um Tzorn stammt von Manny Trembley, der unter anderem auch für das Artwork von Wonderland’s War verantwortlich ist."
+              }
+            ]
+          },
+          {
+            "source": "frosted-wroth-announcement",
+            "derivedTextFile": "frosted-wroth-announcement.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 30,
+                "completeLine": "Ihr bekommt bei uns das Grundspiel und die beiden Erweiterungen, die jeweils eine neue Fraktion mit sich bringen.."
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 85,
+                "completeLine": "PartnerChip Theory Games"
+              },
+              {
+                "lineOneBased": 132,
+                "completeLine": "PartnerChip Theory Games"
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 89,
+                "completeLine": "VertriebFrosted Games"
+              },
+              {
+                "lineOneBased": 136,
+                "completeLine": "VertriebFrosted Games"
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 92,
+                "completeLine": "• 5 Fraktions-Matten"
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 94,
+                "completeLine": "• 39 Elite-Krieger (Würfel)"
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 95,
+                "completeLine": "• 130 Standard-Krieger (Figuren mit sechseckigem Sockel)"
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 73,
+                "completeLine": "GROLL kommt mit einem ausgeklügelten Solo- und Koop-Modus"
+              }
+            ]
+          },
+          {
+            "source": "frosted-groll-product",
+            "derivedTextFile": "frosted-groll-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 77,
+                "completeLine": "Zum jetzigen Zeitpunkt gibt es schon eine Menge Feedback zum Regelheft der englischen Originalversion von Chip Theory Games. Wir konnten die meistgestellten Fragen und Unklarheiten bereits für die redaktionelle Bearbeitung der deutschen Anleitung berücksichtigen."
+              }
+            ]
+          }
+        ],
+        "independentRootCheckLog": "artifacts/sep26-two-identity-root-check-corrected.log",
+        "independentRootCheckLogSha256": "71397f4b4e22257c2fba21c6a1d6d7b5f68214dec38653aaaa0876cc0958a3c3",
+        "evidenceManifest": "research/source-files/native-two-license-crosscheck/manifest.json",
+        "evidenceManifestSha256": "41281b538aa6d30cc21a47a2d677777a5d4dbd74177f340fdfe1f1e01f967690",
+        "startingRuleApproved": false,
+        "editionRuleTransferApproved": false,
+        "creatorClaimRepairApproved": false,
+        "quantityYearOrTerritoryRepairApproved": false,
+        "preservedLocalizedLabel": {
+          "language": "de",
+          "value": "Groll"
+        }
+      }
     },
     {
       "bggId": "415147",
@@ -10670,17 +11133,20 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
+      "decision": "accept",
       "reviewed": true,
-      "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+      "reason": "Root independently reviewed the exact primary publisher/product bridge and complete preserved entity/P2339 provenance; discovery identity enrollment only.",
       "identityEvidence": [
-        "Publisher names Beyond the Horizon as a product. No independent numeric game ID found."
+        "Publisher names Beyond the Horizon as a product. No independent numeric game ID found.",
+        "Exact numeric BGG href in the full product resource block on the saved Super Meeple publisher official domain, with exact original title Beyond the Horizon."
       ],
       "sourceIds": [
-        "capstone-horizon"
+        "capstone-horizon",
+        "supermeeple-horizon-product"
       ],
       "attemptedPrimaryUrls": [
-        "https://capstone-games.com/products/beyond-the-horizon"
+        "https://capstone-games.com/products/beyond-the-horizon",
+        "https://www.supermeeple.com/nos-jeux/beyondthehorizon/"
       ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
@@ -10696,8 +11162,17 @@
       ],
       "startingRuleApproved": false,
       "editionRuleTransferApproved": false,
-      "independentRawIdEvidence": [],
-      "idEvidenceStatus": "wikidata-statement-only",
+      "independentRawIdEvidence": [
+        {
+          "sourceId": "supermeeple-horizon-product",
+          "href": "https://boardgamegeek.com/boardgame/421310/beyond-the-horizon",
+          "rawId": "421310",
+          "exactCandidateId": true,
+          "location": "literal product-page anchor 145 (zero-based), original byte offset 148359",
+          "destinationFetched": false
+        }
+      ],
+      "idEvidenceStatus": "primary-href-and-wikidata-statement",
       "snapshotReference": {
         "path": "research/coverage/wikidata-native-title-leads.json",
         "jsonPointer": "/candidates/256",
@@ -10724,7 +11199,267 @@
           }
         ]
       },
-      "editionNotes": []
+      "editionNotes": [
+        "The numeric primary href corroborates this identity; no BGG destination content was read or transferred.",
+        "Saved2024 year and alternative90-minute claim remain uncorroborated by the fetched page.",
+        "Fetched French page states14+,2–4 and120 minutes; those values are its product context, not automatic English/Italian/Russian edition equivalence.",
+        "No explicit Capstone license relationship is claimed from this page; the direct numeric link makes such a relationship unnecessary for this identity proposal.",
+        "Its four credited authors/illustrators are new primary credits, not comparison with nonexistent saved creator/developer claims. No claim repair or new creator QID mapping is proposed."
+      ],
+      "identityCorroborationStatus": "primary-hosted-numeric-href",
+      "identityReviewHistory": [
+        {
+          "stage": "prior-reviewed-hold",
+          "decisionsFileSha256": "9f8e8e222a67c02251d205a55bf28f5ff722131027d84bc2cdd8ace43c54f05c",
+          "fullPreviousDecision": {
+            "bggId": "421310",
+            "wikidataItems": [
+              "Q133868609"
+            ],
+            "displayName": "Beyond the Horizon",
+            "selectedTitle": {
+              "wikidataId": "Q133868609",
+              "text": "Beyond the Horizon",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": true,
+            "reason": "Reachable primary product records confirm a named game, but no independent exact raw numeric game-ID href was found in the inspected content. Wikidata ID statement is preserved; a similar title alone is not used to approve its mapping.",
+            "identityEvidence": [
+              "Publisher names Beyond the Horizon as a product. No independent numeric game ID found."
+            ],
+            "sourceIds": [
+              "capstone-horizon"
+            ],
+            "attemptedPrimaryUrls": [
+              "https://capstone-games.com/products/beyond-the-horizon"
+            ],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q133868609",
+                "revision": 2529351550,
+                "entitySha256": "e9303de03436a883485769e6f37c4915a515eb1da9eb9d0d723d741458f3eb14",
+                "statements": [
+                  "Q133868609$D95735EB-4648-4215-AEA5-03168560077B"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false,
+            "independentRawIdEvidence": [],
+            "idEvidenceStatus": "wikidata-statement-only",
+            "snapshotReference": {
+              "path": "research/coverage/wikidata-native-title-leads.json",
+              "jsonPointer": "/candidates/256",
+              "candidateSha256": "c1929754f608c6fc8525ce5f5b885d590bf79228968c6b4d52b46e63bee40816",
+              "wikidataId": "Q133868609",
+              "revision": 2529351550,
+              "modified": "2026-08-09T21:04:38Z",
+              "entitySha256": "e9303de03436a883485769e6f37c4915a515eb1da9eb9d0d723d741458f3eb14",
+              "matchingP2339Statements": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2339",
+                    "hash": "84d09a944dbfa5eea58257262c4bdcaa6ea4f7b6",
+                    "datavalue": {
+                      "value": "421310",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q133868609$D95735EB-4648-4215-AEA5-03168560077B",
+                  "rank": "normal"
+                }
+              ]
+            },
+            "editionNotes": []
+          }
+        }
+      ],
+      "primaryIdentityReviewEvidence": {
+        "scope": "Exact discovery identity only; no rule, creator/quantity/year repair or edition/territory equivalence.",
+        "identityBasis": "Exact numeric BGG href in the full product resource block on the saved Super Meeple publisher official domain, with exact original title Beyond the Horizon.",
+        "primaryHostedNumericBggHrefObserved": true,
+        "numericClaimSource": "unchanged-wikidata-p2339-plus-primary-literal-href",
+        "evidenceProposal": "research/source-files/native-two-license-crosscheck/proposal-421310.json",
+        "evidenceProposalSha256": "3bfb9580904114a49b3566f446fd8ff23a218c95a6ffb6bd329ec652506a9275",
+        "snapshotJsonPointer": "/candidates/256",
+        "candidateSha256": "c1929754f608c6fc8525ce5f5b885d590bf79228968c6b4d52b46e63bee40816",
+        "exactSavedPublisherStatements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P123",
+              "hash": "b98dd32eed61eecdf05d6a2bfce85f11d1747263",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 107975047,
+                  "id": "Q107975047"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q133868609$8EC61D11-4DE8-4A23-A6A2-4B83BF4A50DA",
+            "rank": "normal"
+          }
+        ],
+        "relatedPublisher": {
+          "wikidataId": "Q107975047",
+          "revision": 2356926789,
+          "modified": "2025-06-04T19:29:31Z",
+          "entitySha256": "6b905e953b4d0772a3e2e63bcdc4935a1abcf65b02aadcabafb28d5f8b40f06f",
+          "labels": {
+            "fr": {
+              "language": "fr",
+              "value": "Super Meeple"
+            },
+            "mul": {
+              "language": "mul",
+              "value": "Super Meeple"
+            }
+          },
+          "websiteStatements": [
+            {
+              "mainsnak": {
+                "snaktype": "value",
+                "property": "P856",
+                "hash": "f78d764a5eba023ba15e14a990b01a2c3f33bb99",
+                "datavalue": {
+                  "value": "https://www.supermeeple.com",
+                  "type": "string"
+                },
+                "datatype": "url"
+              },
+              "type": "statement",
+              "qualifiers": {
+                "P407": [
+                  {
+                    "snaktype": "value",
+                    "property": "P407",
+                    "hash": "d197d0a5efa4b4c23a302a829dd3ef43684fe002",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 150,
+                        "id": "Q150"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  }
+                ]
+              },
+              "qualifiers-order": [
+                "P407"
+              ],
+              "id": "Q107975047$75d6d57e-4473-1021-9e43-92fc446cad64",
+              "rank": "normal"
+            }
+          ],
+          "originalResponseFile": "research/source-files/native-two-license-crosscheck/prior-related-qids-response.json",
+          "originalResponseSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141"
+        },
+        "sourceLocators": [
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 150,
+                "completeLine": "BEYOND THE HORIZON"
+              }
+            ]
+          },
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 148,
+                "completeLine": "BGGBoard Game Geek"
+              }
+            ]
+          },
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 142,
+                "completeLine": "Langue FR"
+              }
+            ]
+          },
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 140,
+                "completeLine": "Auteurs Dennis K. Chan, Adam Hill, Ben Pinchback, Matt Riddle"
+              }
+            ]
+          },
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 151,
+                "completeLine": "120 min"
+              }
+            ]
+          },
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 152,
+                "completeLine": "14+"
+              }
+            ]
+          },
+          {
+            "source": "supermeeple-horizon-product",
+            "derivedTextFile": "supermeeple-horizon-product.txt",
+            "matchedLines": [
+              {
+                "lineOneBased": 153,
+                "completeLine": "2 à 4 joueurs"
+              }
+            ]
+          }
+        ],
+        "independentRootCheckLog": "artifacts/sep26-two-identity-root-check-corrected.log",
+        "independentRootCheckLogSha256": "71397f4b4e22257c2fba21c6a1d6d7b5f68214dec38653aaaa0876cc0958a3c3",
+        "evidenceManifest": "research/source-files/native-two-license-crosscheck/manifest.json",
+        "evidenceManifestSha256": "41281b538aa6d30cc21a47a2d677777a5d4dbd74177f340fdfe1f1e01f967690",
+        "startingRuleApproved": false,
+        "editionRuleTransferApproved": false,
+        "creatorClaimRepairApproved": false,
+        "quantityYearOrTerritoryRepairApproved": false,
+        "literalPrimaryHref": {
+          "value": "https://boardgamegeek.com/boardgame/421310/beyond-the-horizon",
+          "source": "supermeeple-horizon-product",
+          "anchorArrayJsonPointer": "/145",
+          "anchor": {
+            "href": "https://boardgamegeek.com/boardgame/421310/beyond-the-horizon",
+            "text": "Board Game Geek"
+          },
+          "originalByteOffsetZeroBased": 148359,
+          "rawHtmlContext": "-direction:column;gap:8px\"><div style=\"display:flex;align-items:center;gap:8px\"><span style=\"background:#333;color:#fff;padding:3px 8px;font-size:10px;font-weight:bold;border-radius:2px;flex-shrink:0\">BGG</span><a href=\"https://boardgamegeek.com/boardgame/421310/beyond-the-horizon\" target=\"_blank\" style=\"color:#333;text-decoration:none;font-size:13px;font-weight:bold\">Board Game Geek</a></div><div style=\"display:flex;align-items:center;gap:8px\"><span style=\"background:#333;color:#fff;padding:3px 8px;font-size:10px;font-weight:bold;border-radius:2px;flex-shrink:0\">Les Meeples",
+          "destinationFetched": false
+        }
+      }
     },
     {
       "bggId": "421606",

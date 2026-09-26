@@ -1,6 +1,61 @@
 import { test, expect } from '@playwright/test';
 import { DEV } from './urls';
 
+test('repeated rule searches retain ranked links and clearing restores the complete original order', async ({ page, browserName }) => {
+  await page.goto('/games/');
+  const rules = page.locator('[data-game-directory]');
+  const search = rules.getByRole('searchbox');
+  const original = await rules.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')));
+  expect(original.length).toBeGreaterThan(800);
+  await search.fill('TTR');
+  const matches = rules.locator('.game-list li:visible a');
+  await expect(matches).toHaveCount(3);
+  await expect(search).toBeFocused();
+  const aliases = await matches.evaluateAll(links => links.map(link => link.getAttribute('href')));
+  await search.fill('Azl');
+  await expect(matches).toHaveCount(1);
+  await expect(matches.first()).toHaveAttribute('href', '/games/azul-2018-en/');
+  await search.fill('TTR');
+  await expect(matches).toHaveCount(3);
+  expect(await matches.evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(aliases);
+  await search.fill('');
+  await expect(rules.locator('.game-list li:visible')).toHaveCount(original.length);
+  expect(await rules.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(original);
+  await search.fill('Azul');
+  await expect(matches.first()).toHaveAttribute('href', '/games/azul-2018-en/');
+  // Windows WebKit skips anchors on Tab; still require native link focus and
+  // keyboard activation. Chromium/Firefox additionally verify sequential order.
+  if (browserName === 'webkit') await matches.first().focus();
+  else await search.press('Tab');
+  await expect(matches.first()).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/\/games\/azul-2018-en\/$/);
+});
+
+test('home search ranks prepared names, aliases and edition labels across repeated input', async ({ page }) => {
+  await page.route('**/rule-index.json', route => route.fulfill({ json: [
+    { n: 'Azul: Summer Pavilion', a: [], e: 'English', s: 'prefix' },
+    { n: 'Azl', a: [], e: 'English', s: 'fuzzy' },
+    { n: 'My Azul', a: [], e: 'English', s: 'contained' },
+    { n: 'Azul', a: ['Blå'], e: 'Édition française', s: 'exact' },
+  ] }));
+  await page.goto('/');
+  const home = page.locator('[data-rule-lookup]');
+  const search = home.getByRole('searchbox');
+  const results = home.locator('[data-results] a');
+  await search.fill('Azul');
+  await expect(results).toHaveCount(4);
+  expect(await results.evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(['/games/exact/', '/games/prefix/', '/games/contained/', '/games/fuzzy/']);
+  for (const [query, count] of [['BLA', 1], ['francaise', 1], ['Azul', 4]] as const) {
+    await search.fill(query);
+    await expect(results).toHaveCount(count);
+    await expect(results.first()).toHaveAttribute('href', '/games/exact/');
+  }
+  await search.fill('');
+  await expect(home.locator('[data-results]')).toBeHidden();
+  await expect(home.getByRole('link', { name: 'Browse all board games' })).toHaveAttribute('href', '/board-games/');
+});
+
 test('a rules-page no-match search finds an unreviewed Unicode game through a keyboard directory link', async ({ page }) => {
   const query = 'Unreviewed 四季 Étoile & 🧩';
   const directoryRequests: string[] = [];

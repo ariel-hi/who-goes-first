@@ -318,6 +318,7 @@
     .directory-filters button span { display:block; margin:3px 0 0; font-size:12px; }
     .directory-alphabet { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:thin; }
     .directory-alphabet a { flex:none; min-width:38px; }
+    .directory-alphabet a:focus-visible { outline-offset:-8px; }
     .table-reveal[data-count="4"], .balloon-field[data-count="4"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .tool-page { margin-top:12px; padding:0 16px; }
     .intro { margin-bottom:20px; }

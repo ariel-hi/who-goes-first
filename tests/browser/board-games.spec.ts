@@ -1,6 +1,37 @@
 import { test, expect } from '@playwright/test';
 import { getBrowseShelves } from '../../src/lib/content/board-game-browse';
 
+test('mobile alphabet keeps keyboard focus visible at horizontal scroll edges', async ({ page, browserName }) => {
+  await page.setViewportSize({ width: 320, height: 750 });
+  await page.goto('/board-games/browse/a/1/');
+  const letters = page.locator('.directory-alphabet a');
+  const count = await letters.count();
+  for (const target of [6, count - 2]) {
+    await page.keyboard.press('Tab');
+    if (browserName === 'webkit') {
+      // This runner skips ordinary links on Tab. Check native anchor focus and
+      // its keyboard indicator; sequential traversal is covered below elsewhere.
+      await letters.nth(target).focus();
+    } else {
+      await letters.first().focus();
+      for (let step = 0; step < target; step++) await page.keyboard.press('Tab');
+    }
+    await expect(letters.nth(target)).toBeFocused();
+    const ring = await letters.nth(target).evaluate(link => {
+      const tile = link.getBoundingClientRect();
+      const viewport = link.closest('.directory-alphabet')!.getBoundingClientRect();
+      const style = getComputedStyle(link);
+      const outer = parseFloat(style.outlineOffset) + parseFloat(style.outlineWidth);
+      return { visible: link.matches(':focus-visible'), thickness: parseFloat(style.outlineWidth), height: tile.height, left: tile.left - outer, right: tile.right + outer, viewportLeft: viewport.left, viewportRight: viewport.right };
+    });
+    expect(ring.visible).toBe(true);
+    expect(ring.thickness).toBeGreaterThanOrEqual(3);
+    expect(ring.height).toBeGreaterThanOrEqual(44);
+    expect(ring.left).toBeGreaterThanOrEqual(ring.viewportLeft);
+    expect(ring.right).toBeLessThanOrEqual(ring.viewportRight);
+  }
+});
+
 test('board games are browsable without search and searchable on demand', async ({ page }) => {
   const { games, shelves } = getBrowseShelves();
   expect(shelves.flatMap(shelf => shelf.games).map(game => game.bggId).toSorted()).toEqual(games.map(game => game.bggId).toSorted());
