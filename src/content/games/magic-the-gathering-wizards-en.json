@@ -1,0 +1,42 @@
+{
+  "id": "magic-the-gathering-wizards-en",
+  "slug": "magic-the-gathering-wizards-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "d769094ee257df8faf98d9532d8a7759419f252d0d4802182fbdf4e96a10d991",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Magic: The Gathering",
+  "aliases": [
+    "MTG"
+  ],
+  "editionLabel": "Wizards English rules — two-player game",
+  "firstPlayerRule": "For the first game, agree on a method to select who chooses the starting player, such as a coin flip or dice roll. That person decides who takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later games of a match, the previous game's loser chooses the starter. After a draw, the same person who chose last time chooses again.",
+    "In a two-player game, the starting player skips their first draw step.",
+    "Special formats and card effects can override the ordinary opening procedure."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://media.wizards.com/2026/downloads/MagicCompRules%2020260925.pdf",
+      "title": "Magic: The Gathering — Comprehensive Rules",
+      "publisher": "Wizards of the Coast",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        8,
+        10
+      ],
+      "location": "Rules 103.1 and 103.8a; PDF pages 8 and 10",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The official rules page links the September 25, 2026 comprehensive rules. Rule 103.1 selects a chooser, not necessarily the starter; 103.8a gives the two-player draw-step exception. Source custody: research/source-files/popular-sep26/magic.pdf; SHA-256 674241213075cd581dd3255567ebeec7b40ffae3a27c6a3bd99218af6b2b6659. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "Scoped to ordinary two-player play; tournament seeding, multiplayer variants and specific card overrides require their own applicable rules."
+  ]
+}
