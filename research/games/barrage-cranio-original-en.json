@@ -1,0 +1,44 @@
+{
+  "id": "barrage-cranio-original-en",
+  "slug": "barrage-cranio-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Barrage",
+  "aliases": [],
+  "editionLabel": "Cranio English base game",
+  "firstPlayerRule": "For the full game, randomly choose who selects a Company first, then let players select clockwise. Reverse that selection order for play: the last player to choose takes the first action turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In the introductory setup, the prescribed order is USA, Germany, Italy, then France, using the companies for the player count.",
+    "The opening Income and Headstreams phase may be simultaneous. Action turns follow the Turn Order markers."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/30/06/87-barrage-rulebook.pdf",
+      "title": "Barrage — English rulebook",
+      "publisher": "Cranio Creations",
+      "printedPages": [
+        "10",
+        "11",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        7,
+        15
+      ],
+      "location": "Introductory player setup; Full-game setup box; Actions; publisher credits",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Image-only archivePDF. RenderedPDF6printed10introtable and11fullgamerandomdraftreverseplay;PDF7printed12simultaneousIncomeandmarkeractions;PDF15CranioandEnglishtranslatorcredits. Do not equate firstdraftselector withfirstactionplayer. Source custody: research/source-files/popular-sep26-11/barrage.pdf; SHA-256 05404a582e2de001828c5cbffb49c22679025719c747699c6b78a35f49471fd3. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The Cranio Creations-authored English manual is preserved by a rulebook archive; a direct current English publisher download was not retrieved."
+  ]
+}
