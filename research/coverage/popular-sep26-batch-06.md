@@ -20,3 +20,5 @@ Strict target coverage is 334/1,062, with 728 remaining. Next target: Village, r
 The first test run caught Diamant's unmatched directory title: identity 15512 is already listed as Incan Gold. Added an explicit reviewed edition mapping and a regression assertion, retaining both independently sourced Incan Gold records and the IELLO Diamant record under that single identity.
 
 After the mapping fix, all required gates passed: content validation (1,001 approved rules, 382 portable methods), zero Astro diagnostics, lint, all 154 tests in 16 files, and production build (1,166 pages, 31,357 internal links). SEO and production audits passed. Logs are retained in ignored artifacts. Deployment and live verification follow.
+
+Deployed as 0910f6c and verified live: rule index 1,001, directory index 5,015, all eight article pages HTTP 200 with correct canonicals/indexing and directory links. Diamant appears on the shared multi-edition identity page. Home, directory, robots and sitemap checks passed. Evidence: ignored artifacts/popular-sep26-06-live-check.json.
