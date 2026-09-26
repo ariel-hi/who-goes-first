@@ -1,0 +1,42 @@
+{
+  "id": "isle-of-skye-lookout-mayfair-en",
+  "slug": "isle-of-skye-lookout-mayfair-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Isle of Skye: From Chieftain to King",
+  "aliases": [],
+  "editionLabel": "Lookout and Mayfair English edition",
+  "firstPlayerRule": "The youngest player takes the starting-player marker and goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "Players set tile prices simultaneously before buying. The starting player gets the first buying opportunity, followed by the other players clockwise.",
+    "Pass the starting-player marker clockwise after each round’s scoring."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://lookout-spiele.de/upload/en_isleofskye.html_Rules_IsleOfSkye_EN.pdf",
+      "title": "Isle of Skye: From Chieftain to King — English rulebook",
+      "publisher": "Lookout Games / Mayfair Games",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup V; Course of play — Buy a tile; End of round and scoring",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Lookout product page links the English manual with Lookout and Mayfair2015 credits. PDF page1 holds printed2-4: youngest in setup, simultaneous pricing, clockwise buying and starter rotation. Source custody: research/source-files/popular-sep26-03/skye.pdf; SHA-256 b0e7e1c3998b6b9b1041426b35aa54ad7ce4ab0fb2e94625a29831f98c9d0d16. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The setup does not specify a tie-break for equally young players."
+  ]
+}
