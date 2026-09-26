@@ -1,0 +1,41 @@
+{
+  "id": "space-base-aeg-en",
+  "slug": "space-base-aeg-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Space Base",
+  "aliases": [],
+  "editionLabel": "AEG English base game",
+  "firstPlayerRule": "Each player draws a random Level 1 ship during setup. Whoever draws the highest sector number takes the starting-player card and goes first.",
+  "officialTieBreak": "Players tied for the highest sector number roll the dice; the highest total goes first.",
+  "houseFallback": "If tied players also tie for the highest dice total, have those players reroll.",
+  "clarifications": [
+    "Buy and install the drawn ship as instructed during setup. Turns proceed clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.alderac.com/wp-content/uploads/2025/04/SpaceBase_BaseGame_Rulebook_Optimized.pdf",
+      "title": "Space Base — English rulebook",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "10",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        10,
+        12
+      ],
+      "location": "Setup step 5; How to play",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher product page links this image-only base-game PDF. Rendered printed/PDF10 shows highest drawn sector, dice-total tie-break and setup purchase. Page12 connects marker to first regular turn and clockwise order. No game-component criterion enters random mix. Source custody: research/source-files/popular-sep26-08/space.pdf; SHA-256 7530aae98d8579a28c55b0beefe58a860837ec8ebbf1131b8d99bc88861e6297. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The setup does not say what to do if the tie-breaking dice totals are also equal."
+  ]
+}
