@@ -1,5 +1,15 @@
 # Local verification — updated 2026-09-26 UTC
 
+## AMIGO modes, article copy and user navigation — 2026-09-26 UTC
+
+Local successor to `51964f1`: **5,009 identities / 963 approved editions / 953 sourced / 4,056 pending / 373 portable criteria / 60 prompts**. Three exact approvals add Schnapp! English V4.1 Family, Speed Cups English V2.0, and Fischfutter English V1.0 competitive. Only Fisch joins the portable mix. All 1,920 preceding catalog/draft files, 51 mapping objects, 372 portable fingerprints and the entire native file remain unchanged. Article headings, sharing, metadata and OG punctuation are consistent. Quick completion respects user navigation for each draw; valid unchanged cached directory states retain their existing DOM. See the [complete checkpoint](research/coverage/sep26-amigo-modes-article-scroll-progress.md).
+
+The first combined verify passed **154 units / 16 files**, lint, content/build/static/SEO audits, **1,125 pages / 30,455 links**, release fixtures and **81/81 affected browser cases** across three engines. Final key/directory source separately passed the 162-file type check with zero diagnostics, lint and the same page/link build audit, then **90/90 affected cases in 172.612 seconds**, with no retries, skips or flakes. The owned frozen server and child closed; every compiled member remained unchanged. Gzip budgets: initial JS 116,039 B; Balloon 1,182 B; basic home 135,060 B.
+
+These gates cover separate scopes. Directory cached preservation uses explicitly simulated events; all six observed native Back events were `persisted:false`. Root inspected actual articles, OG images and navigation/focus/disclosure captures. This checkpoint does not establish a full browser-suite run, physical-device or screen-reader behavior, or field performance/revenue/ranking changes.
+
+Logs: `artifacts/sep26-amigo-modes-article-scroll-{verify,release,browser}.log`, `artifacts/sep26-final-keys-directory-{check,lint,build}.log`, and `artifacts/sep26-final-keys-directory-browser/`. Fresh preservation: `artifacts/sep26-final-preservation.json`. The unapproved X-Code proposal is excluded. Isolated integration against held main `0a17b85` follows this local checkpoint; the goal remains active.
+
 ## Three AMIGO manuals, three identities and native keyboard focus — 2026-09-26 UTC
 
 Applied to clean integration baseline `547f896`: **5,009 identities /960 approved editions /950 sourced /4,059 pending /372 portable criteria /60 house prompts**. Exact English Version1.0 approvals add Lama Dice, Cabanga! and Meister Makatsu after root/independent full-page and final-record review. Only the first two join the portable mix. Three separate semantic identity accepts add Schnapp, Land, Fluss!, Speed Cups and Fischfutter without borrowing rules, printing years or numeric publisher authority. Complete previous holds and false native rule-transfer flags remain preserved. See [the complete checkpoint](research/coverage/sep26-amigo-manuals-keyboard-progress.md).

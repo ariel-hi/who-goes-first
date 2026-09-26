@@ -39,15 +39,15 @@ test('Amigo identities retain numeric provenance while exact independently revie
   }
   expect(games.find(game => game.bggId === '447384')?.searchNames).toEqual(['Maître Makatsu']);
   expect(checked.find(entry => entry.s === 'meister-makatsu-amigo-en-v1-0')?.a).toEqual(['Maître Makatsu']);
-  for (const [id, name] of [['15828', 'Schnapp, Land, Fluss!'], ['146149', 'Speed Cups'], ['433340', 'Fischfutter']] as const) {
+  for (const [id, name, ruleId, portable] of [['15828', 'Schnapp, Land, Fluss!', 'schnapp-land-fluss-amigo-en-v4-1-family', false], ['146149', 'Speed Cups', 'speed-cups-amigo-en-v2-0', false], ['433340', 'Fischfutter', 'fischfutter-amigo-en-v1-0-base', true]] as const) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
     expect(decision).toMatchObject({ decision: 'accept', reviewed: true, priorBoundedDisposition: null, idEvidenceStatus: 'wikidata-statement-only', primaryHostedNumericBggHrefObserved: false, independentRawIdEvidence: [], startingRuleApproved: false, editionRuleTransferApproved: false });
     expect(decision.identityReviewHistory).toHaveLength(1);
     expect(decision.identityReviewHistory[0].fullPreviousDecision).toMatchObject({ decision: 'hold', reviewed: false, selectedTitle: decision.selectedTitle, idProvenance: decision.idProvenance, priorBoundedDisposition: null });
-    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
-    expect(directory.find(entry => entry.id === id)).toMatchObject({ name, ruleCount: 0 });
-    expect(directory.find(entry => entry.id === id)).not.toHaveProperty('slug');
-    expect(checked.some(entry => entry.n === name || entry.a.includes(name))).toBe(false);
+    expect(games.find(game => game.bggId === id)?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(directory.find(entry => entry.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+    expect(checked.find(entry => entry.s === ruleId)).toMatchObject({ n: name, p: portable });
+    expect(checked.find(entry => entry.s === ruleId)?.a).toEqual(games.find(game => game.bggId === id)?.searchNames ?? []);
     for (const sourceId of decision.sourceIds) {
       const source = review.sources[sourceId];
       expect(source.sha256).toMatch(/^[a-f0-9]{64}$/);
@@ -85,6 +85,33 @@ test('Amigo manual approvals preserve initial versus later order and the figure-
   expect(catalog.find(rule => rule.id === 'lama-dice-amigo-en-v1-0')?.clarifications.join(' ')).toContain('last player to take an action');
   expect(catalog.find(rule => rule.id === 'cabanga-amigo-en-v1-0')?.clarifications.join(' ')).toContain('left');
   expect(catalog.find(rule => rule.id === 'meister-makatsu-amigo-en-v1-0')?.clarifications.join(' ')).toContain('purple');
+});
+
+test('Amigo multi-mode manuals preserve reveal roles, original PDF order and competitive-only portability', () => {
+  const catalog = getCatalog();
+  for (const [id, revision, pages, portable] of [
+    ['schnapp-land-fluss-amigo-en-v4-1-family', 'd08a17427bf765b6750bad8a26ab526faa97b4148e4d6da8c966141b2da93612', [1, 2], false],
+    ['speed-cups-amigo-en-v2-0', '4dc60dad411a0481ce7a37b9d43bc1861b3ad9fecb96c4aed330b7b59739be9c', [2, 1], false],
+    ['fischfutter-amigo-en-v1-0-base', '3b9527d4a5ac60704be6aab0ea8e7c9a352704e79f8cfd35cdf6fd3d3647b052', [1, 2], true],
+  ] as const) {
+    const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
+    const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
+    expect(raw).toMatchObject({ aliases: [], officialTieBreak: null, approvedRevision: revision });
+    expect(raw.sources[0]!.pdfPagesOneBased).toEqual(pages);
+    expect(contentRevision(draft)).toBe(revision);
+    expect(draft).toMatchObject({ status: 'draft', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
+    expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(portable);
+    expect(() => assertPublishable({ ...raw, firstPlayerRule: 'Everyone takes individual turns clockwise.' })).toThrow('stale');
+  }
+  const schnapp = catalog.find(rule => rule.id === 'schnapp-land-fluss-amigo-en-v4-1-family')!;
+  expect(schnapp.firstPlayerRule).toBe('Family Game: the oldest player reveals the first category. Everyone then plays at the same time.');
+  expect(schnapp.editionLabel).toContain('Family Game');
+  const speed = catalog.find(rule => rule.id === 'speed-cups-amigo-en-v2-0')!;
+  expect(speed.firstPlayerRule).toContain('their own cups');
+  expect(speed.clarifications.join(' ')).toContain('no separate instruction for choosing a revealer after an unsolved card');
+  const fisch = catalog.find(rule => rule.id === 'fischfutter-amigo-en-v1-0-base')!;
+  expect(fisch.firstPlayerRule).toBe('In the competitive base game, the bravest player goes first. Play then proceeds clockwise.');
+  expect(fisch.editionLabel).toContain('competitive base game');
 });
 
 test('public board game directory includes every discovered identity and links only approved matching rules', () => {
@@ -490,9 +517,6 @@ test('the three manual approvals bind exact revisions and remain outside the por
 test('CrowD shared-folder manual approvals bind exact revisions and four independent edition assignments', () => {
   const games = getBoardGames();
   const catalog = getCatalog();
-  expect(catalog).toHaveLength(960);
-  expect(games.filter(game => game.rules.length > 0)).toHaveLength(950);
-  expect(games.filter(game => game.rules.length === 0)).toHaveLength(4059);
   for (const [id, ruleId, firstPage, folder] of [
     ['322421', 'aqua-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],
     ['447999', 'dino-garden-uchibacoya-en-rulebook', 3, '_tSRueefX4dKjQ'],

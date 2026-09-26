@@ -1,0 +1,49 @@
+{
+  "id": "speed-cups-amigo-en-v2-0",
+  "slug": "speed-cups-amigo-en-v2-0",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root; complete original source reading corroborated by /root/held_identity_review; owner delegated source review on 2026-09-22",
+  "approvedRevision": "4dc60dad411a0481ce7a37b9d43bc1861b3ad9fecb96c4aed330b7b59739be9c",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Speed Cups",
+  "aliases": [],
+  "editionLabel": "AMIGO English rules, Version 2.0 (2–4 players)",
+  "firstPlayerRule": "The fastest player to build a tower with their own cups reveals the first card. Everyone then arranges their cups at the same time.",
+  "officialTieBreak": null,
+  "houseFallback": "If the tower race cannot select one opening revealer, agree to choose that revealer randomly. This is an original house convention; everyone still arranges cups at the same time after the reveal.",
+  "clarifications": [
+    "These rules cover 2–4 players. Each receives five cups in five different colors; put the bell in the middle and the shuffled face-down card deck beside it. The opening tower uses each player’s own cups.",
+    "After each reveal, everyone arranges their cups simultaneously to match the picture. Check bell ringers in ringing order; the first correct arrangement earns the card. This task-award procedure does not supply an opening tower-race tie-break.",
+    "Leave cups as they are for the next round. The person who won the last card reveals the next card; the opening tower race is not repeated as a stated later-round rule.",
+    "If nobody solves a task, put its card aside and continue. The source gives no separate instruction for choosing a revealer after an unsolved card; its last-card-winner instruction remains the stated continuation rule.",
+    "At game end, tied highest card totals share the win. This is separate from choosing the opening revealer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/03780-GB-AmigoRule.pdf",
+      "title": "Speed Cups — English rules, Version 2.0",
+      "publisher": "AMIGO Spiel + Freizeit GmbH",
+      "printedPages": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1
+      ],
+      "location": "PDF page 2 first: left printed page 2, Preparation → How to Play (own-cups opening tower/first reveal); right printed page 3, arrangement and bell-order correctness. PDF page 1: left printed page 4, unsolved card/last-card-winner continuation/End of the Game/Version 2.0 copyright footer; right printed page 1, cover/components/credits. Original two-page imposed spreads, not PDF-page equals printed-page.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root /root completed full original-page, source-custody, complete-record and exact public-fingerprint review on 2026-09-26 under the owner's 2026-09-22 delegated source-review authorization. Source agent read both complete original 180 dpi imposed-spread renders; independent /root/held_identity_review reproduced and read both full pages. Original PDF research/source-files/sep26-amigo-schnapp-speed-manual-intake/get-02-146149-english-manual.pdf, 643,459 bytes, SHA256 c7aae5b7b9af8f0c93ff7fce28b4c1dd3bfc4868f980cc9f070f371bb2824ab8. Complete source intake73 manifest SHA256 3cec92b81d10a57af36461c44b338cf1c9b71735103bef5805d454f4c9ce6d98; exact product → literal download iframe → Manual en anchor/PDF retained through parent80 and parent102. Independent source-review16 manifest SHA256 ad4981480adb3e073b3ab77ae275322c6ab9eecddeb96d4e9e4b7f4a0429f95c. PDF2 printed2–3 precedes PDF1 printed4–1 for reading and citation; complete setup, simultaneous play, bell-award procedure, unsolved-card passage, last-card-winner continuation, shared endgame wins, cover and imprint reviewed. No opening tower color sequence, extra challenge protocol, clockwise order or invented no-winner fallback. Game-specific cups/reveal role/simultaneous play explicitly exclude this record from the portable one-person mix. Root exact source and package approval is complete; application is pending this separately sealed package. Saved Wikidata P2339 supplies the numeric inventory identity only. Publisher article/filename numbers are not BGG corroboration. No translated alias, other language/version, older printing, creator-QID repair or universal edition transfer is proposed.",
+  "uncertainty": [
+    "No official equal-speed opening tower-race tie-break is stated. The optional random house convention chooses only the opening revealer and does not resolve later no-winner cases or endgame wins.",
+    "No printing year is established: Version 2.0 and copyright 2013, 2023 are visible; 2025 file metadata/listing dates do not establish a printing or original 2013-rule equivalence.",
+    "The exact standard 2–4-player English manual is reviewed. Speed Cups 6, alternate languages, earlier versions, translated search titles and other editions are outside this proposal."
+  ]
+}
