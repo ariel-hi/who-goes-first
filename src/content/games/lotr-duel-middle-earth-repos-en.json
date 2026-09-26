@@ -1,0 +1,40 @@
+{
+  "id": "lotr-duel-middle-earth-repos-en",
+  "slug": "lotr-duel-middle-earth-repos-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "38b3eeb1c7b1c9d1280b84864d923973b1fa01d6b04c2c3ac094a69c97bd3df7",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "The Lord of the Rings: Duel for Middle-earth",
+  "aliases": [],
+  "editionLabel": "Repos English base game",
+  "firstPlayerRule": "The Sauron player takes the first turn. Players then alternate turns.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Choose or randomly determine who plays Sauron and who plays the Fellowship during setup.",
+    "Turn alternation continues across chapter boundaries; the player who ends one chapter does not automatically start the next."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/7-wonders-LOTR/rules/7dume-en01-rules-1725540544zdnes.pdf",
+      "title": "The Lord of the Rings: Duel for Middle-earth — English rulebook",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setup step 1; Turn overview; End of chapter",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "CurrentReposduel-for-middle-earthGBpublisherdownload. Rendered2choose/randomsideand3Sauronfirst,alternateacrosschapters. No inferred rule from7WondersDuelorotherLOTRgames. Source custody: research/source-files/popular-sep26-11/duel.pdf; SHA-256 4c0e32ba164b92754db2c62e91ac300d995fe2ccb878ad97e13959eae90c39c3. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
