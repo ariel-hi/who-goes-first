@@ -1,0 +1,67 @@
+{
+  "id": "townsfolk-tussle-frosted-2024-de-base",
+  "slug": "townsfolk-tussle-frosted-2024-de-base",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Townsfolk Tussle",
+  "aliases": [],
+  "editionLabel": "Frosted Games · English summary of the German base-game manual · ©2024 · standard four-round mode · 2–5 players",
+  "firstPlayerRule": "The first Village phase starts with the villager at the bottom of the turn-order track and proceeds upward. Combat runs downward from the top, with the villain acting first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "During setup, arrange the villager tokens on the order track and leave the top villain slot empty. The manual recommends seating order, placing the biggest troublemaker at the top of the villager positions.",
+    "The opening Village phase starts by drawing three Feats per villager in shopping order; Town Events and shopping follow that same order.",
+    "After a fight, move the top villager token to the bottom and slide the other villagers upward before the next Village phase.",
+    "This English summary covers the reviewed German base-game manual in the standard four-round mode. Solo, Double, Swap and three-round modes are separate variants."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://frostedgames.de/wp-content/uploads/2023/04/Townsfolk_Tussle_Anleitung_WEB.pdf",
+      "title": "Townsfolk Tussle - Anleitung & Schicksale, German publisher manual",
+      "publisher": "Frosted Games, under license from Panic Roll",
+      "printedPages": [
+        "11",
+        "6",
+        "12",
+        "13",
+        "22",
+        "34"
+      ],
+      "pdfPagesOneBased": [
+        11,
+        6,
+        12,
+        13,
+        22,
+        34
+      ],
+      "location": "Dorf-Phase - phase order and initial Feats; Spielaufbau step5; Town Events and shopping; Kampfbeginn; post-fight order-track update; German credits and variants",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://frostedgames.de/shop/townsfolk-tussle/",
+      "title": "Townsfolk Tussle - official German base-game product",
+      "publisher": "Frosted Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Player count2-5; base game identified as the German version of the English second edition; German language and Panic Roll partnership",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Exact enrolled identity 312859; original unapproved proposal preserved unchanged in research/source-files/sep26-enrolled-three-manual-intake/townsfolk-tussle-frosted-2024-de-base.proposal.json. Independent Codex root source review on 2026-09-26: all21 complete rendered manual pages opened visually (ImmunoWars PDF1,5,9,13,14,15,27,29,32; Townsfolk PDF1,3,6,11,12,13,16,22,32,34,35,36), full extracted opening/mode/tie context and exact publisher anchors checked. All72 intake files and all41 preceding identity-source files independently rehashed; original PDF bytes match captured HTTP bodies. Intake manifest SHA-256 87519739b021ac1f58636fdf57209d40b776b75f9852cf5f0436ab7c45768e7c. Original PDF SHA-256 3662a6fdaa673cda780b3ed2643d1624743314d857c468f575f6e63eed6f2f22. English summary of the exact German localized standard four-round2–5 base game: bottom-up Village opening, recommended troublemaker-at-top arrangement, villain-first top-down combat and later top-villager-to-bottom rotation checked separately. German copyright2024 is printed onPDF34; metadata2025 and upload path2023 are not printing-date proof. Product establishes localization of English second edition; no English rules substituted. All public fields independently reviewed. Identity decisions, saved numeric provenance, unresolved metadata, prior holds, and rule-transfer flags remain unchanged. Standing owner authorization for factual review2026-09-22. This research copy retains null lifecycle fields; approved copy binds the exact reviewed revision. Both records remain outside the portable mix. No deployment.",
+  "uncertainty": [
+    "The source establishes the German localized base-game scope, not independently reviewed English first- or second-edition rule text.",
+    "Biggest-troublemaker placement is a recommendation; no objective measurement or mandatory unique-player comparison is prescribed. The established token order governs the opening, so no ranked-player opening tie procedure is asserted.",
+    "The source lists Solo, Double, Swap and three-round variants on page34. They were inspected as scope boundaries, but no variant rule record or portable approval is proposed.",
+    "The linked separate FAQ, replacement cards and expansion manuals were not retrieved or reviewed. Individual card exceptions and boss-specific setup are outside this opening summary.",
+    "Saved identity minimum1 and duration200 minutes remain untouched. The primary product describes2-5,40-120; this manual includes a separate solo variant. No conflict is silently repaired.",
+    "No printed edition number was identified in the manual; second-edition localization is established by the complete saved product body. Printed copyright2024 does not establish a precise release or printing date."
+  ]
+}

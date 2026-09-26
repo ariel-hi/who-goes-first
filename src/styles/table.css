@@ -97,7 +97,7 @@
   .player.winner { outline:2px solid var(--winner-edge); background:color-mix(in srgb,var(--piece) 26%,var(--paper)); border:0; }
   .winner-dot { top:-5px; right:-4px; background:var(--winner-edge); }
   .duplicate-id { font-size:12px; margin-top:-10px; }
-  .roster-compact { grid-template-columns:repeat(auto-fit,minmax(115px,1fr)); gap:8px; padding:4px 0; }
+  .roster-compact { grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr)); gap:8px; padding:4px 0; }
   .roster-compact .player { flex-direction:row; padding:4px 8px; gap:4px; }
   .roster-compact .seat-token { flex:none; width:27px; height:29px; font-size:14px; }
   .roster-compact .player-name { text-align:left; flex:1; }
@@ -237,7 +237,7 @@
   .reveal-loading.reveal-layout-loading { display:block; place-items:normal; position:relative; min-height:0; font:inherit; }
   .reveal-layout-loading :is(.loading-table,.loading-balloon) { visibility:hidden; }
   .reveal-layout-loading *, .reveal-layout-loading *::before, .reveal-layout-loading *::after { animation:none!important; transition:none!important; }
-  .loading-message { position:absolute; inset:0; display:grid; place-items:center; color:var(--muted); font-size:14px; }
+  .loading-message { position:absolute; inset:0; display:grid; place-items:center; align-items:start; padding-top:16px; color:var(--muted); font-size:14px; }
   .picker[data-reduced=true] *, .picker[data-reduced=true] *::before, .picker[data-reduced=true] *::after { animation:none!important; transition:none!important; }
   .reveal-stage :is(.spinner-stage,.spinner-loading,.table-reveal,.balloon-field,.loading-table,.loading-balloon) { margin-top:0; }
   .reveal-stage [data-preview=true] * { animation:none!important; }
@@ -340,7 +340,8 @@
     .player { padding:10px 0 4px; border-radius:14px; }
     .seat-token { width:38px; height:39px; font-size:20px; }
     textarea.player-name { font-size:12px; }
-    .roster-compact { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .picker[data-count="4"] .roster { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .roster-compact { grid-template-columns:1fr; }
     .segmented { grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px; }
     .segmented label { min-height:70px; font-size:10px; flex-direction:column; gap:4px; }
     .segmented svg { width:23px; height:23px; }
@@ -387,7 +388,7 @@
     .tool-page { padding:0 12px; }
     .picker-card { padding:14px 12px 16px; }
     .roster { grid-template-columns:repeat(var(--tiny-players),minmax(0,1fr)); }
-    .roster-compact { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .roster-compact { grid-template-columns:1fr; }
     .segmented { grid-template-columns:repeat(5,minmax(0,1fr)); gap:2px; }
     .segmented label { font-size:10px; gap:3px; }
     .segmented svg { width:20px; }

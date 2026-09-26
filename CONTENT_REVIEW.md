@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 884 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 886 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+
+ImmunoWars and Townsfolk Tussle add two independently reviewed exact-edition answers. Root opened21 complete manual pages and rehashed72 intake files and41 prior identity-source files. ImmunoWars explicitly selects the startup hand draw; its first normal-turn identity and tied-roll procedure remain unspecified. Townsfolk is labeled an English summary of the German standard base game, with bottom-up Village order, top-down villain-first combat and later token rotation. Both stay outside the portable mix. Northgard remains pending because the inspected primary path exposed no manual. See `research/coverage/sep26-enrolled-manuals-readable-roster-progress.md`.
 
 Ironwood, Wroth and Beyond the Horizon add three independently reviewed exact-edition answers. Root inspected 20 complete cached manual pages and verified original bytes and publisher links. Fixed faction order, later-round token rotation and reverse setup drafting remain explicit. Beyond the Horizon is labeled as an English summary of French rules. Wroth retains the publisher-linked Dropbox viewer with visible page references; the site no longer invents PDF fragment shortcuts for Dropbox sharing pages. All three stay outside the portable mix. See `research/coverage/sep26-three-manual-progress.md`.
 

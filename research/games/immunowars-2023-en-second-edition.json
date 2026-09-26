@@ -1,0 +1,53 @@
+{
+  "id": "immunowars-2023-en-second-edition",
+  "slug": "immunowars-2023-en-second-edition",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "ImmunoWars",
+  "aliases": [],
+  "editionLabel": "ImmunoWars - English 2023 second edition - 2 to 6 players",
+  "firstPlayerRule": "All players roll one die. The highest roller begins the startup turn by drawing their initial hand.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "During the startup turn, each player draws four cards from either deck, replacing any Trapcards or Random Events drawn. Normal play starts once everyone has completed this startup turn.",
+    "The shared startup instructions follow both Normal and Blitzkrieg preparation; those modes begin with different health and energy values.",
+    "The startup draw is separate from a normal turn, which begins by gaining energy before taking three actions.",
+    "The booklet does not separately identify who takes the first normal turn after these draws."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0764/2470/8437/files/Rulebook_IW_2nd_Edition_compressed.pdf?v=1693038384",
+      "title": "ImmunoWars - The Most Infectious Rulebook, 2023 second edition",
+      "publisher": "ImmunoWars",
+      "printedPages": [
+        "13",
+        "9",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        13,
+        9,
+        14,
+        5,
+        1
+      ],
+      "location": "How to Play - Preparation and Startup Turn; A Pair of Dice; normal turn diagram; General Info; cover edition imprint",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Exact enrolled identity 340980; original unapproved proposal preserved unchanged in research/source-files/sep26-enrolled-three-manual-intake/immunowars-2023-en-second-edition.proposal.json. Independent Codex root source review on 2026-09-26: all21 complete rendered manual pages opened visually (ImmunoWars PDF1,5,9,13,14,15,27,29,32; Townsfolk PDF1,3,6,11,12,13,16,22,32,34,35,36), full extracted opening/mode/tie context and exact publisher anchors checked. All72 intake files and all41 preceding identity-source files independently rehashed; original PDF bytes match captured HTTP bodies. Intake manifest SHA-256 87519739b021ac1f58636fdf57209d40b776b75f9852cf5f0436ab7c45768e7c. Original PDF SHA-256 2a503e70eef90798a87baafa080255862091a7ae781f5dac255f89e9f71b25c7. The highest one-die roll starts the explicitly named startup hand draw; no tied-roll procedure, normal-turn direction or separately named first normal turn is invented. Cover explicitly prints2023/second edition;2–6 scope onPDF5. Normal and Blitzkrieg preparation precede the same startup section. Public clarification exposes the normal-turn selection gap. All public fields independently reviewed. Identity decisions, saved numeric provenance, unresolved metadata, prior holds, and rule-transfer flags remain unchanged. Standing owner authorization for factual review2026-09-22. This research copy retains null lifecycle fields; approved copy binds the exact reviewed revision. Both records remain outside the portable mix. No deployment. Final locator correction after independent review: PDF14 has no visible printed numeral; retain PDF page14 as a document position and omit printedPages14. The four-card clarification permits either deck without implying that both decks must supply cards. Original ignored proposal remains unchanged; the final exact revision is recalculated after these corrections.",
+  "uncertainty": [
+    "The inspected startup rules do not specify how tied highest opening rolls are resolved. No house procedure is supplied.",
+    "The inspected opening instructions do not separately name who takes the first normal action after all startup draws; the proposed answer is limited to the explicit startup selection.",
+    "The only explicit clockwise statement located concerns Random Event resolution on page27, so it is not used as proof of normal turn direction. No later-round starter reselection is prescribed in the inspected opening passages.",
+    "The manual states age16+ on page5, while the previously saved primary product context says12+. Preserve this edition-specific discrepancy without repairing catalog identity claims.",
+    "The online FAQ and booster expansions were not retrieved or reviewed. No first-edition, later printing or current/latest-version equivalence is claimed."
+  ]
+}

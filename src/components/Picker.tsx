@@ -149,12 +149,18 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
       const stage = revealStage.current;
       if (!stage) return;
       const rect = stage.getBoundingClientRect();
-      const margin = 16;
-      const available = Math.max(0, Math.min(rect.bottom, innerHeight - margin) - Math.max(rect.top, margin));
-      const needed = Math.min(rect.height, innerHeight - margin * 2);
+      const bottomMargin = 16;
+      const result = stage.parentElement?.querySelector<HTMLElement>('.result-area');
+      const resultStyle = result && getComputedStyle(result);
+      // Sticky results occupy the top of the viewport while the scene scrolls.
+      const margin = result && resultStyle?.position === 'sticky'
+        ? Math.max(16, (parseFloat(resultStyle.top) || 0) + result.getBoundingClientRect().height + 16)
+        : 16;
+      const available = Math.max(0, Math.min(rect.bottom, innerHeight - bottomMargin) - Math.max(rect.top, margin));
+      const needed = Math.min(rect.height, innerHeight - margin - bottomMargin);
       if (available >= needed * .9) return;
-      const top = rect.height > innerHeight - margin * 2 || rect.top < margin
-        ? rect.top - margin : rect.bottom - innerHeight + margin;
+      const top = rect.height > innerHeight - margin - bottomMargin || rect.top < margin
+        ? rect.top - margin : rect.bottom - innerHeight + bottomMargin;
       window.scrollBy({ top, behavior: reduced ? 'auto' : 'smooth' });
     });
     return () => cancelAnimationFrame(frame);
