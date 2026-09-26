@@ -1,0 +1,57 @@
+{
+  "id": "spicy-heidelbaer-en-2020",
+  "slug": "spicy-heidelbaer-en-2020",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Spicy",
+  "aliases": [
+    "SPICY"
+  ],
+  "editionLabel": "HeidelBÄR base game · ©2020 (English)",
+  "firstPlayerRule": "The youngest player takes the first turn. Play proceeds clockwise until a card is challenged.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Any player may challenge the top card. The challenge loser draws two cards and starts the next spicy stack; the youngest-player rule selects the opening turn only.",
+    "The standard game sets aside the Spice It Up! cards. That variant adds cards to the normal setup: Copy Cat lets a player copy another player's declaration, after which play continues with the player to the copy cat's left. Start It Up! changes allowed number declarations, not who takes the opening turn.",
+    "The rulebook's shared victory for tied final scores is an endgame rule, not a tie-break for selecting the youngest player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://ylskxrt.heidelbaer.de/out/media/Spicy_Rules-ENG_low.pdf",
+      "title": "Spicy — HeidelBÄR Games English rules, ©2020",
+      "publisher": "HeidelBÄR Games",
+      "printedPages": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "location": "Setup step 6; Gameplay; Challenge a Card; Trophies; Scoring and Credits; Spice It Up! variant",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Proposed draft for BGG 299169, Spicy, distinct from Sweet & Spicy. Independently read complete rendered PDF pages 2–8 from research/source-files/native-accepted-modern/spicy-host-original.pdf. Page 2 setup step 6 names the youngest player. Page 3 specifies clockwise play until a challenge; page 4 makes the challenge loser draw two cards and begin a new stack; page 5 preserves trophy context. Page 6 confirms ©2020 HeidelBÄR Games and identifies the tied-score shared victory as endgame scoring. Pages 7–8 retain the normal setup for Spice It Up! and distinguish Start It Up! declarations from the Copy Cat interruption and left-neighbor continuation. Source SHA-256: fa71ac97b6fc2daa71ad08bbe0dfc2c88159550d51eb788767e0bb9e8dce89ff. Cached publisher page https://error.heidelbaer.de/en/heidelbaer-games/spicy/ redirects to https://error.heidelbaer.de/eu/heidelbaer-games/spicy/ and links https://shop.heidelbaer.de/out/media/Spicy_Rules-ENG_low.pdf, which returned HTTP 404. The same filename was retrieved with HTTP 200 from the publisher subdomain ylskxrt.heidelbaer.de; it was not represented as a redirect from the broken download or as a current/latest-version guarantee. discovery.json, spicy-host-original.json and root-review-start.md preserve the source-cache provenance and independent root review. This file remains an unapproved proposal; no publication or portable-pool enrollment is granted. Editorial source review 2026-09-26: Complete PDF pages 2–8 preserve youngest for the opening, clockwise turns until challenge and the challenge loser for a new stack. Spice It Up! exceptions and final-score shared victories do not resolve an opening age tie. The reachable publisher-subdomain file is not represented as a redirect from the broken legacy download. Youngest is separately reviewed as a portable criterion. Codex independently inspected the source context and all public fields under the owner delegation of 2026-09-22. This reviewed record belongs only to inventory identity 299169. Earlier draft-only statements describe intake history. No deployment authorization.",
+  "uncertainty": [
+    "No tie-break for players tied as youngest is stated in the inspected setup instruction.",
+    "The legacy product-page download is broken. The reachable manual is hosted on another HeidelBÄR publisher subdomain, but no current-printing or latest-revision equivalence has been established.",
+    "Other language editions and Sweet & Spicy are outside this record's scope."
+  ]
+}

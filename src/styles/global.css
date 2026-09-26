@@ -252,6 +252,7 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 .rule-lookup-results a{display:block;padding:12px 16px;min-height:44px;text-decoration:none;font-weight:600}
 .rule-lookup-results a:hover,.rule-lookup-results a:focus-visible{background:#f7f2f7;text-decoration:underline}
 .rule-lookup-results small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.rule-lookup [data-lookup-status]{margin-top:12px}
 .rule-lookup [data-lookup-status]:empty{display:none}
 .home-rules-links{list-style:none;display:flex;flex-wrap:wrap;gap:4px 22px;padding:0;margin:16px 0 0;font-size:14px}
 .home-rules-links a{display:flex;align-items:center;min-height:44px}

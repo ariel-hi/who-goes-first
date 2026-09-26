@@ -39,6 +39,8 @@ The final application passed 50 unit tests, 261/261 browser cases, the release m
 
 ## Next bounded work
 
+**Follow-up checkpoint, 2026-09-26 UTC:** the six proposed modern editions and home-search bridge described below have now been independently reviewed and implemented. The catalog has 876 approved edition records and 361 portable criteria; short public-index caching is also implemented. See [the modern-source and search checkpoint](sep26-modern-search-progress.md) for exact scope, source fingerprints, verification and the next held work. The paragraphs below preserve this earlier checkpoint's handoff history.
+
 Six proposed records remain unapproved in ignored `artifacts/sep26-next-drafts/`: CuBirds, SKYJO, Samurai Sword, Nucleum, Spicy, and Dune: Imperium – Uprising. Primary link contexts, byte hashes and rendered pages are in ignored `research/source-files/native-accepted-modern/`; `root-review-start.md` records the root's actual independent inspection. Uprising's proposal covers three/four players; separately reviewed variants still need their own final scope decision. Camel Up's original edition and Planet Unknown remain provenance-held mirrors. Historical Arbos/Cosmic Eidex primary HTML and Magalon/Rüsselbande/Hick Hack mirror leads remain in `research/source-files/native-accepted-historical/report.md`. Drafts and reachable evidence do not confer approval.
 
 The next product audit recommends linking an unsuccessful home rule search to the full directory while carrying the bounded query in a URL fragment. See ignored `artifacts/sep26-next-product-audit.md`. Optional saved rules and explicit short index caching are later candidates, with no measured retention or cost-saving claim.

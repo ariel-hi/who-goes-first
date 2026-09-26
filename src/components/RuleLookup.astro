@@ -6,24 +6,35 @@ const { ruleCount } = Astro.props;
   <label class="search-box"><span>Search {ruleCount.toLocaleString('en')} games</span><input type="search" placeholder="e.g. Catan, Wingspan, Azul…" autocomplete="off" maxlength="100" /></label>
   <ul class="rule-lookup-results" data-results hidden></ul>
   <p class="small muted" data-lookup-status role="status"></p>
+  <a class="inline-link" data-directory-search href="/board-games/">Browse all board games</a>
 </div>
 <script>
   import { searchRank } from '../lib/search';
+  import { directorySearchHref } from '../lib/directory-search';
   type Entry = { n: string; a: string[]; e: string; s: string };
   document.querySelectorAll<HTMLElement>('[data-rule-lookup]').forEach(root => {
     const input = root.querySelector('input')!;
     const list = root.querySelector<HTMLUListElement>('[data-results]')!;
     const status = root.querySelector<HTMLElement>('[data-lookup-status]')!;
+    const directory = root.querySelector<HTMLAnchorElement>('[data-directory-search]')!;
     let entries: Promise<Entry[]> | undefined;
-    const load = () => entries ??= fetch('/rule-index.json').then(response => { if (!response.ok) throw new Error(); return response.json() as Promise<Entry[]>; });
+    let revision = 0;
+    const load = () => entries ??= fetch('/rule-index.json').then(response => { if (!response.ok) throw new Error(); return response.json() as Promise<Entry[]>; }).catch(error => { entries = undefined; throw error; });
     input.addEventListener('focus', () => { load().catch(() => {}); }, { once: true });
     input.addEventListener('input', async () => {
+      const thisRevision = ++revision;
       const query = input.value;
+      list.replaceChildren(); list.hidden = true;
+      directory.href = directorySearchHref(query);
+      directory.textContent = query.trim() ? 'Find this game in the directory' : 'Browse all board games';
+      if (!query.trim()) { status.textContent = ''; return; }
+      status.textContent = 'Searching checked rules…';
       let all: Entry[];
-      try { all = await load(); } catch { entries = undefined; status.textContent = 'Search is unavailable right now. Browse the full list instead.'; return; }
-      if (query !== input.value) return;
-      list.replaceChildren();
-      if (!query.trim()) { list.hidden = true; status.textContent = ''; return; }
+      try { all = await load(); } catch {
+        if (thisRevision === revision) status.textContent = 'Rule search is unavailable right now. Search the full board game directory instead.';
+        return;
+      }
+      if (thisRevision !== revision) return;
       const matches = all.map(entry => ({ entry, rank: searchRank({ gameName: entry.n, aliases: entry.a, editionLabel: entry.e }, query) }))
         .filter(match => Number.isFinite(match.rank)).sort((a, b) => a.rank - b.rank || a.entry.n.localeCompare(b.entry.n)).slice(0, 6);
       const names = new Map<string, number>();
@@ -35,7 +46,7 @@ const { ruleCount } = Astro.props;
         item.append(link); list.append(item);
       }
       list.hidden = matches.length === 0;
-      status.textContent = matches.length ? '' : 'No rule for that game yet. Use the picker above, or browse the full list.';
+      status.textContent = matches.length ? `${matches.length} ${matches.length === 1 ? 'checked rule' : 'checked rules'} shown.` : 'No checked rule matches. Find your game in the full directory, or use the picker above.';
     });
   });
 </script>

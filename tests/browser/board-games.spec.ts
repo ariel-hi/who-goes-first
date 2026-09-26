@@ -104,3 +104,21 @@ test('six reviewed editions retain their opening instructions and direct source 
     }
   }
 });
+
+test('modern editions distinguish first turns, later rounds and variant limits', async ({ page }) => {
+  const cases = [
+    ['cubirds-pandasaurus-en-2023', 2, 'dealer takes the first turn', 'becomes the new dealer', false],
+    ['skyjo-magilano-en', 4, 'highest total goes first', 'ended the preceding round', true],
+    ['samurai-sword-dv-undated-en', 4, 'Shogun role', 'With three players', false],
+    ['nucleum-board-and-dice-2023-en', 5, 'choose the first player at random', 'human takes the First Player marker', false],
+    ['spicy-heidelbaer-en-2020', 2, 'youngest player', 'challenge loser', true],
+    ['dune-imperium-uprising-dire-wolf-en-2023', 5, 'randomly dealt Objective', 'outside this answer’s scope', false],
+  ] as const;
+  for (const [slug, pdfPage, opening, details, tieApplicable] of cases) {
+    await page.goto(`/games/${slug}/`);
+    await expect(page.locator('.rule-answer')).toContainText(opening);
+    await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText(details.replace('’', "'"));
+    await expect(page.getByRole('link', { name: `View cited page (PDF page ${pdfPage})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${pdfPage}$`));
+    await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(tieApplicable ? 1 : 0);
+  }
+});

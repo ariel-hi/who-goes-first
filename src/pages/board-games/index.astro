@@ -34,6 +34,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
 </Layout>
 <script>
   import { normalizeSearch } from '../../lib/search';
+  import { readDirectorySearchFragment } from '../../lib/directory-search';
   type SearchEntry = { name: string; id: string; ruleCount: number; slug?: string; terms?: string[] };
   type SearchGame = { name: string; nameKey: string; id: string; href: string; search: string; hasRule: boolean; ruleCount: number };
   const root = document.querySelector<HTMLElement>('[data-board-directory]')!;
@@ -60,6 +61,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     const thisRevision = ++revision;
     const query = compact(input.value);
     results.replaceChildren();
+    results.hidden = true; filters.hidden = true; empty.hidden = true;
     if (!query) {
       results.hidden = true; filters.hidden = true; count.hidden = true; empty.hidden = true;
       return;
@@ -115,4 +117,18 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice === button));
     render();
   });
+  const restoreFragmentSearch = () => {
+    if (!location.hash.startsWith('#q=')) return;
+    const { query, invalid } = readDirectorySearchFragment(location.hash);
+    input.value = query;
+    filter = 'all';
+    for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice.dataset.filter === 'all'));
+    void render();
+    if (invalid) {
+      count.hidden = false;
+      count.textContent = 'This search link could not be read. Search by name or browse by letter below.';
+    }
+  };
+  restoreFragmentSearch();
+  window.addEventListener('hashchange', restoreFragmentSearch);
 </script>

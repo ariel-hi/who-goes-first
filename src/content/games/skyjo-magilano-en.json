@@ -1,0 +1,47 @@
+{
+  "id": "skyjo-magilano-en",
+  "slug": "skyjo-magilano-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "9b611bd1d25c6ea55332c3d1491089e36497b36ee69debbe76305a58d6306ecb",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "SKYJO",
+  "aliases": [
+    "Skyjo",
+    "Classic SKYJO"
+  ],
+  "editionLabel": "Magilano classic edition (English)",
+  "firstPlayerRule": "For the first round, the player whose two face-up cards have the highest total goes first. Play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Deal each player twelve cards face down in a four-column, three-row layout. Each player then turns over two cards of their choice before comparing the totals.",
+    "For each subsequent round, the player who ended the preceding round goes first."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0019/1696/0881/files/SKYJO.pdf?v=1739260165",
+      "title": "SKYJO — Magilano multilingual rulebook, English section",
+      "publisher": "Magilano",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        24
+      ],
+      "location": "Preparing a Game Round, The Start of a Game Round, and clockwise Course of the Game on printed/PDF page 4; complete English continuation and scoring example on printed/PDF page 5; Magilano publisher and classic 150-card deck on unnumbered PDF page 24",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Proposed intake record for native identity BGG 204135. The official Magilano download page, https://magilano.com/pages/download, links the classic SKYJO.pdf separately from SKYJO ACTION and Junior. Cached linked PDF has 24 pages, 5242928 bytes, and SHA-256 fed1d1b9616a3bf3f5e2a9b42c2a83e2a9e7ccd37078885b179e57788d21f5bd; the hash was rechecked for this draft. The download without its optional version query was HTTP 200 and matched the same publisher PDF found on a retailer mirror. Root independently inspected the complete English pages 4–5 and publisher/deck page 24; authoring review also checked those full renders and complete extracted context. Page 4 has players reveal two freely chosen cards after setup, compares their summed values for the first round, then assigns subsequent rounds to the preceding round's ending player. It also states clockwise turns. Pages 4–5's equal-score example concerns a round-ending score penalty, not equal opening totals. No year or numbered version is visible in the reviewed English section or publisher page, so the proposal is undated and makes no newest-printing claim. The card-sum criterion depends on SKYJO's own setup and is not proposed for portable random-pool use. No approval or publication is granted by this proposal. Editorial source review 2026-09-26: Complete English pages 4–5 and publisher/deck page 24 preserve the highest sum of two revealed cards for the first round and the preceding round-ending player for later rounds. Equal-score penalty examples do not supply an opening tie-break. The undated classic booklet is distinct from ACTION and Junior. Codex independently inspected the source context and all public fields under the owner delegation of 2026-09-22. This reviewed record belongs only to inventory identity 204135. Earlier draft-only statements describe intake history. No deployment authorization.",
+  "uncertainty": [
+    "The reviewed English rules do not specify who starts when players tie for the highest total of their two opening face-up cards.",
+    "The reviewed booklet is undated; SKYJO ACTION, SKYJO Junior, and other rulebook revisions require separate source review."
+  ]
+}

@@ -41,10 +41,12 @@ test('reviewed identities retain edition distinctions without transferring a sta
 });
 test('native and language-neutral identities enroll only after primary identity acceptance', () => {
   const games = getBoardGames();
-  for (const [id, name] of [['156', 'Abenteuer Tierwelt'], ['1806', 'Rüsselbande'], ['2537', 'Der König der Diebe'], ['153938', 'Camel Up'], ['204135', 'Skyjo'], ['245476', 'CuBirds'], ['396790', 'Nucleum'], ['397598', 'Dune: Imperium – Uprising']]) {
+  for (const [id, name] of [['156', 'Abenteuer Tierwelt'], ['1806', 'Rüsselbande'], ['2537', 'Der König der Diebe'], ['153938', 'Camel Up'], ['204135', 'Skyjo'], ['245476', 'CuBirds'], ['396790', 'Nucleum'], ['397598', 'Dune: Imperium – Uprising']] as const) {
     const game = games.find(game => game.bggId === id);
     expect(game?.name).toBe(name);
-    expect(game?.rules).toEqual([]);
+    // These four still have identity evidence only. Modern source approvals
+    // are separately checked against their exact identities and editions.
+    if (['156', '1806', '2537', '153938'].includes(id)) expect(game?.rules).toEqual([]);
   }
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
   for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '84732', '150145', '205597', '318243', '452264']) {

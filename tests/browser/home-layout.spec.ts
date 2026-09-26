@@ -16,7 +16,8 @@ test('home starts with the picker, then a game-rule lookup below it', async ({ p
   await search.fill('catan');
   await expect(page.locator('.rule-lookup-results a').first()).toHaveAttribute('href', '/games/catan-2020-en/');
   await search.fill('qqqzzzz');
-  await expect(page.locator('[data-lookup-status]')).toContainText('No rule for that game yet');
+  await expect(page.locator('[data-lookup-status]')).toContainText('No checked rule matches');
+  await expect(page.getByRole('link', { name: 'Find this game in the directory' })).toHaveAttribute('href', '/board-games/#q=qqqzzzz');
   await expect(page.locator('.rule-lookup-results')).toBeHidden();
   await search.fill('');
   await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveAttribute('href', '/games/#random-rule');

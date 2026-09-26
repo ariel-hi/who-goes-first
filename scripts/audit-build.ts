@@ -57,7 +57,31 @@ for (const path of files.filter(path => /[\\/]games[\\/].+[\\/]index.html$/.test
 const googleSources = settings.production ? ' https://www.googletagmanager.com https://*.google-analytics.com' : '';
 const csp = `default-src 'none'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
 if (`  Content-Security-Policy: ${csp}`.length > 2000) throw new Error('CSP exceeds Cloudflare Pages header line limit; split policies by route before expanding the catalog.');
-writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
+writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/rule-index.json\n  Cache-Control: public, max-age=300, must-revalidate\n\n/board-games/search.json\n  Cache-Control: public, max-age=300, must-revalidate\n`);
+// Audit the emitted host policy: public caching is confined to hashed assets
+// and these short-lived lookup indexes, never an HTML or private-path wildcard.
+const expectedCachePolicies = new Map([
+  ['/_astro/*', 'public, max-age=31536000, immutable'],
+  ['/rule-index.json', 'public, max-age=300, must-revalidate'],
+  ['/board-games/search.json', 'public, max-age=300, must-revalidate'],
+]);
+const cachedRoutes = new Set<string>();
+let headerRoute = '';
+for (const line of readFileSync(join(output, '_headers'), 'utf8').split('\n')) {
+  if (!line.trim()) continue;
+  if (!/^\s/.test(line)) { headerRoute = line.trim(); continue; }
+  const header = line.match(/^\s+([^:]+):\s*(.*?)\s*$/);
+  if (!header) throw new Error(`Malformed emitted header: ${line}`);
+  if (header[1]!.trim().toLowerCase() !== 'cache-control') continue;
+  const expected = expectedCachePolicies.get(headerRoute);
+  if (!expected) throw new Error(`Public caching must not apply to ${headerRoute || 'an unspecified route'}`);
+  if (cachedRoutes.has(headerRoute)) throw new Error(`Duplicate cache policy for ${headerRoute}`);
+  if (header[2] !== expected) throw new Error(`Wrong cache policy for ${headerRoute}: ${header[2]}`);
+  cachedRoutes.add(headerRoute);
+}
+for (const route of expectedCachePolicies.keys()) {
+  if (!cachedRoutes.has(route)) throw new Error(`Missing cache policy for ${route}`);
+}
 // Previous builds emitted a thin /board-games/<id>/ page for every original
 // identity. Redirect those URLs to the researched answer or the exact browse
 // shelf, while retaining only multi-edition chooser pages as HTML assets.

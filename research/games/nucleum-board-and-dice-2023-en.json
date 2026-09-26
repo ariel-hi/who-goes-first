@@ -1,0 +1,71 @@
+{
+  "id": "nucleum-board-and-dice-2023-en",
+  "slug": "nucleum-board-and-dice-2023-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Nucleum",
+  "aliases": [],
+  "editionLabel": "Board&Dice base game · ©2023 (English)",
+  "firstPlayerRule": "For two to four players, choose the first player at random and give them the First Player marker. That player takes the opening turn, and play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "During multiplayer setup, the last player chooses an Experiment first, followed by the others counterclockwise. Main turns begin with the designated first player and proceed clockwise.",
+    "In solo play against Baron von Automat, the human takes the First Player marker and begins. The solo setup lets you choose your own Experiment and assigns a random Experiment to the Baron.",
+    "The base-game setup strongly recommends starting with three Workers instead of two for your first few games; that recommendation does not change the designated starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/6mtcwklpiuanocyk7tia4/nucleum_rulebook_ENG_web.pdf?rlkey=dhh8nrsnw8dgk33tu4j4y36zv&e=1&dl=0",
+      "title": "Nucleum English base-game rulebook (©2023)",
+      "publisher": "Board&Dice",
+      "printedPages": [
+        "5",
+        "6",
+        "8",
+        "4",
+        "unnumbered cover",
+        "unnumbered credits (PDF page 27)"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        8,
+        4,
+        1,
+        27
+      ],
+      "location": "Main Board setup step 11: random first player and marker (page 5); Player Board setup step 13: counterclockwise Experiment selection and first turn (page 6); Gameplay and Turn Structure: clockwise main turns (page 8); player-count setup (page 4); cover and ©2023 credits (PDF pages 1 and 27)",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://www.dropbox.com/scl/fi/fyptmj5kkcb70slql68zi/nucleum_rulebook_solo_ENG_web.pdf?rlkey=adhuw09dzhrxfsugq0vnzo6u6&e=1&dl=0",
+      "title": "Nucleum: Baron von Automat English solo rules",
+      "publisher": "Board&Dice",
+      "printedPages": [
+        "2",
+        "1",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1,
+        4
+      ],
+      "location": "Setup steps 1 and 6: Experiment selection and human First Player marker (page 2); one or two Baron opponents (page 1); Your Turns and General Gameplay (page 4)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The official publisher landing page https://boardanddice.com/nucleum/ was reopened on 2026-09-26. Its Rule Book and Solo Rule Book links identify these exact Dropbox files and rlkeys, with dl=0; the cited dl=1 URLs request the same files as direct downloads. Fresh HTTP200 downloads match research/source-files/native-accepted-modern/nucleum.pdf, SHA-256 4ff09d604f1e8d2d6e98af39d21925e48f23b9f6f7bd62c668c91649cd202931, and nucleum-solo.pdf, SHA-256 38845c6a6061319f8eb33318a56c1a7c052c685d53f7806f7d8003f9d9d3d661. Complete rendered main PDF pages 1, 4-8 and 27, and solo PDF pages 1, 2 and 4 were independently visually inspected. Main setup step 11 selects the first player randomly; step 13 uses reverse selection order only for Experiments; page 8 expressly uses clockwise main turns. Solo setup step 6 independently gives the human the marker, and page 1 allows one or two copies of the Baron. Solo Logic-card ties choose AI cities/actions and do not select the starter. The ©2023 imprint is PDF page 27 (unnumbered credits), not page 28 (icons). The main file has no separate printing/revision label and its cover carries a living-rules pledge. Accepted identity reference Q139576232 / BGG396790, Board&Dice, Dávid Turczi and Simone Luciani; expansions and promos are outside scope. Proposed draft only: no approval or portable-pool eligibility. Editorial source review 2026-09-26: Complete core PDF pages 1, 4, 5, 6, 7, 8 and 27 and solo pages 1, 2 and 4 distinguish random multiplayer marker assignment, reverse Experiment selection, clockwise play and the human solo marker. Page 27 is the actual copyright page. The living-rules pledge is not a latest-revision guarantee. Codex independently inspected the source context and all public fields under the owner delegation of 2026-09-22. This reviewed record belongs only to inventory identity 396790. Earlier draft-only statements describe intake history. No deployment authorization.",
+  "uncertainty": [
+    "The multiplayer rule specifies random selection without prescribing a particular randomizing method.",
+    "The main manual has a ©2023 imprint but no separate printing/revision label. The linked solo file is separately cited; no solo printing date is asserted.",
+    "Expansion and promo setup rules were not reviewed and are not transferred to this base-game answer."
+  ]
+}

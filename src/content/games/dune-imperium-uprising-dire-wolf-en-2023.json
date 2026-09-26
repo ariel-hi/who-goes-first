@@ -1,0 +1,55 @@
+{
+  "id": "dune-imperium-uprising-dire-wolf-en-2023",
+  "slug": "dune-imperium-uprising-dire-wolf-en-2023",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "150f5fd8d4d76c123e44c7c041b4f0d4ab0e41815afb144da8d68da1c3ff936c",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Dune: Imperium – Uprising",
+  "aliases": [
+    "Dune: Imperium - Uprising",
+    "Dune Imperium Uprising"
+  ],
+  "editionLabel": "Dire Wolf · ©2023 · 3–4 players (English)",
+  "firstPlayerRule": "For three or four players, the player whose randomly dealt Objective shows the First Player marker takes that marker and begins the Player Turns phase. Turns continue clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Before dealing Objectives, remove cards marked for other player counts, shuffle the remaining cards, and give each player one at random.",
+    "The Round Start phase reveals a Conflict card and has each player draw their hand before the Player Turns phase begins.",
+    "When preparing another round, pass the First Player marker clockwise to the next player.",
+    "This answer covers the main three- and four-player setup. One-, two-, and six-player games require the separate Rivals or Six-Player Games supplements and are outside this answer's scope."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_UPRISING_Main_Rulebook_23-10-12.pdf",
+      "title": "Dune: Imperium – Uprising — Dire Wolf English main rulebook, ©2023",
+      "publisher": "Dire Wolf Digital",
+      "printedPages": [
+        "5",
+        "8",
+        "15",
+        "19"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        8,
+        15,
+        19,
+        1
+      ],
+      "location": "Setup H and opening-player passage; additional-player-count notice; Round Structure and Player Turns; Recall; Credits and imprint; Cover",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Proposed draft for BGG 397598, Dune: Imperium – Uprising, distinct from original Dune: Imperium and Dune. Independently read complete rendered main-rulebook PDF pages 1, 5, 8, 15 and 19 from research/source-files/native-accepted-modern/dune-uprising.pdf. Setup H on page 5 filters Objectives marked 1–3P or 4/6P to the player count and has each player draw one randomly; the Objective depicting the First Player marker assigns its holder. The notice on the same page directs one-, two- and six-player games to supplements. Page 8 separates Round Start from clockwise Player Turns beginning with the marker holder. Page 15 passes the marker clockwise only when another round is prepared; endgame scoring ties are not a starting selection procedure. The actual imprint on page 19 confirms ©2023 Dire Wolf Digital; it does not prove a printing or latest revision. Main source SHA-256: 0a8daa36f73c09316143d05bbd5d845183d1ae6f56ce211d93c59b360074f7db. The cached official publisher resources page https://www.direwolfdigital.com/dune-imperium/resources/ links the exact main CDN PDF and the separate English supplements PDF, DUNE_IMPERIUM_UPRISING_Rules_Supplements_23-10-12.pdf (cached SHA-256 454ea3ef442f0622f4bf5b83b8368b24e34aaf4f0dc0f02d93dfba66e690c075). Supplement setup and gameplay claims are deliberately not incorporated into this main three/four-player proposal; those modes remain held for a separately scoped full-page review. discovery.json, dune-publisher.json and root-review-start.md preserve the linkage and independent root review. No opening instruction was transferred from original Imperium. This file remains an unapproved proposal; no publication or portable-pool enrollment is granted. Editorial source review 2026-09-26: Complete main PDF pages 1, 4, 5, 8, 15 and 19 identify the randomly dealt Objective with the unique First Player marker, separate Round Start from Player Turns, and preserve clockwise marker passing for another round. The actual imprint is page 19. Solo, two- and six-player supplements and combinations remain held for separate review. Codex independently inspected the source context and all public fields under the owner delegation of 2026-09-22. This reviewed record belongs only to inventory identity 397598. Earlier draft-only statements describe intake history. No deployment authorization.",
+  "uncertainty": [
+    "The one-, two- and six-player openings, including alternate Rival or streamlined rules, are not covered by this answer; their supplements need a separately scoped review before any variant answer is added.",
+    "The file identifies a ©2023 English manual, but no specific printing or latest-version claim has been established.",
+    "Combinations with earlier Dune: Imperium products and expansion modules are outside this record's scope."
+  ]
+}

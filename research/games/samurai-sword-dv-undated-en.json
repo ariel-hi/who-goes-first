@@ -1,0 +1,51 @@
+{
+  "id": "samurai-sword-dv-undated-en",
+  "slug": "samurai-sword-dv-undated-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Samurai Sword",
+  "aliases": [],
+  "editionLabel": "dV Giochi base game (English)",
+  "firstPlayerRule": "The player dealt the Shogun role takes the first turn. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "For four to seven players, shuffle the Role cards appropriate to the player count and deal one facedown to each player. The Shogun reveals that role; the other roles remain secret.",
+    "In the four-to-seven-player setup, starting hands depend on position: the Shogun receives four cards, the second and third players clockwise receive five each, the fourth and fifth receive six each, and the sixth and seventh receive seven each, when those seats are present.",
+    "With three players, randomly deal one player the Shogun role; the other two are Ninjas. Normal turn order still applies, while the Shogun starts with six Honor Points and each Ninja with three. The Shogun also draws one additional card during each draw phase."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/samuraisword/download/Samurai%20Sword_Rules_EN.pdf",
+      "title": "Samurai Sword English base-game rules (undated)",
+      "publisher": "dV Giochi / daVinci Editrice",
+      "printedPages": [
+        "4",
+        "3",
+        "8",
+        "unnumbered cover",
+        "unnumbered credits (PDF page 12)"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        3,
+        8,
+        1,
+        12
+      ],
+      "location": "The Game: Shogun begins and clockwise turns (page 4); Setup: role deal and starting hands (page 3); Special Rules for 3 Players (page 8); cover: 3-7 players (PDF page 1); undated publisher and English-translation credits (PDF page 12)",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The official dV download landing page https://www.dvgiochi.com/area-download/?key=S was reopened on 2026-09-26; its Samurai Sword English link leads to this exact PDF (the space is percent-encoded in the source URL). A fresh HTTP200 download matches research/source-files/native-accepted-modern/samurai-sword.pdf, SHA-256 159bc0efd0850889e9e4bf584007a285087c938157022a2d0259ac0c4962be4f. Complete rendered PDF pages 1, 3, 4, 8 and 12 were independently visually inspected. Page 3 has one Shogun in every listed player-count role set; page 4 gives that role the opening turn. Page 8 explicitly randomly deals the Shogun for three players and retains normal play subject to listed exceptions, none changing the starter. Starting-hand copy is scoped to the four-to-seven-player setup passage. The unique dealt Shogun role makes a selection tie inapplicable; game-end score ties on page 8 are not starting-player selection. The manual identifies Emiliano Sciarra and the BANG! Game System, and is undated in its copyright line. Accepted identity reference Q134132409 / BGG128667; distinct from Queen Games Shogun BGG20551 and Samurai BGG3. Rising Sun and tournament rules are not transferred. Proposed draft only: no approval or portable-pool eligibility. Editorial source review 2026-09-26: Complete PDF pages 1, 3, 4, 8 and 12 identify the unique dealt Shogun and clockwise turns, with the separate three-player role, Honor and draw exceptions. Four-to-seven-player hand compensation is kept in its own scope. The manual is undated; Rising Sun is excluded. Codex independently inspected the source context and all public fields under the owner delegation of 2026-09-22. This reviewed record belongs only to inventory identity 128667. Earlier draft-only statements describe intake history. No deployment authorization.",
+  "uncertainty": [
+    "The English manual has no printed year or edition/revision identifier; this answer is bound to the inspected file hash.",
+    "This draft covers the 3-7-player base game. Rising Sun expansion and tournament rules were not reviewed."
+  ]
+}

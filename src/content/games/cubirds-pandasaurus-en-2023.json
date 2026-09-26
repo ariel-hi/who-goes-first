@@ -1,0 +1,49 @@
+{
+  "id": "cubirds-pandasaurus-en-2023",
+  "slug": "cubirds-pandasaurus-en-2023",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
+  "approvedRevision": "6444bf7560c0fe6e029cf1013a12e785fa7699353398f84a35621825b3bad96a",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "CuBirds",
+  "aliases": [
+    "Cubirds",
+    "Cu Birds"
+  ],
+  "editionLabel": "Pandasaurus first printing · ©2023 (English)",
+  "firstPlayerRule": "Randomly choose a dealer. The dealer takes the first turn, and play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The dealer sets up the shared rows, deals each player eight cards, and deals each player one face-up card to start their collection.",
+    "At the end of a turn, a player with no cards left in hand ends the round. If the game continues, that player becomes the new dealer and takes the first turn of the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dropbox.com/scl/fi/gzz5r4pttiz304zkgymcg/PANCUBIRCORE-cubirds_rules_ENG-1st_Printing.pdf?dl=0&rlkey=e92ddts66hwvxdnb93yn3iiuv",
+      "title": "CuBirds — Pandasaurus English first-printing rulebook",
+      "publisher": "Pandasaurus Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        8,
+        1
+      ],
+      "location": "Setup and random dealer on printed/PDF page 2; dealer's opening turn and clockwise play on printed/PDF page 3; subsequent-round dealer and ©2023 imprint on unnumbered PDF page 8; 2–5-player scope on cover PDF page 1",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Proposed intake record for native identity BGG 245476. The official Pandasaurus product page, https://pandasaurusgames.com/products/cubirds, links PANCUBIRCORE-cubirds_rules_ENG-1st_Printing.pdf. Cached publisher-linked PDF has 8 pages, 3437797 bytes, and SHA-256 4396599b2a799024470ad3d1658e5fd5bc3aca177aa367b6f49845b11b4722d3; the hash was rechecked for this draft. Full extracted setup and turn-order context and complete rendered pages are cached under research/source-files/native-accepted-modern. Root independently inspected complete PDF pages 1, 2, 3 and 8; authoring review also checked the setup and complete final-page render. Page 2 randomly appoints the dealer; page 3 gives that dealer the opening turn and clockwise play. Page 8 replaces the dealer for a subsequent round with the player who just emptied their hand, checked at turn end. Its shared-victory text concerns the endgame, not initial starter selection. The linked filename supports first-printing scope, and the visible imprint explicitly states ©2023; that copyright is not treated as the game's original release date. No approval, publication, or pool enrollment is granted by this proposal. Editorial source review 2026-09-26: Complete PDF pages 1, 2, 3 and 8 distinguish the randomly selected initial dealer from the later dealer who emptied their hand. The unique dealer has no opening selection tie. Copyright and linked first-printing scope are not an original-release or latest-version claim. Codex independently inspected the source context and all public fields under the owner delegation of 2026-09-22. This reviewed record belongs only to inventory identity 245476. Earlier draft-only statements describe intake history. No deployment authorization.",
+  "uncertainty": [
+    "The reviewed manual does not prescribe a random-selection method or separate opening tie procedure.",
+    "This answer is scoped to the linked Pandasaurus English first-printing file; other editions require separate source review."
+  ]
+}

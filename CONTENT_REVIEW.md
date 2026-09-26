@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 870 game rules approved for the catalog; 360 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 876 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+
+CuBirds, SKYJO, Samurai Sword, Nucleum, Spicy and Dune: Imperium – Uprising add six independently reviewed editions with explicit identity mappings and exact approval fingerprints. Spicy alone adds a portable youngest-player criterion. Dealer, role, marker, later-round and player-count distinctions remain explicit; Uprising currently covers three/four players. Intake copies retain draft history. See `research/coverage/sep26-modern-search-progress.md` for source provenance, scope and verification.
 
 Six more source-reviewed editions cover Samurai, Shogun, John Company Second Edition, Summoner Wars Second Edition, London Second Edition and The Game. Explicit identity overrides prevent alias-based edition transfer. Samurai adds one portable youngest-player criterion; the other five retain their component, role, setup or agreement context in the catalog. Source versions and scope are recorded in `research/coverage/sep26-six-native-mobile-progress.md`.
 
