@@ -1,0 +1,14 @@
+---
+import PinterestSave from './PinterestSave.astro';
+import BlueskyShare from './BlueskyShare.astro';
+import { siteSettings } from '../lib/site';
+interface Props { kind: 'picker' | 'rules' | 'questions'; title: string }
+const { kind, title } = Astro.props;
+---
+{siteSettings().production && <div class="social-links">
+  <PinterestSave kind={kind} />
+  <BlueskyShare title={title} />
+</div>}
+<style>
+  .social-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin:16px 0}
+</style>

@@ -24,6 +24,8 @@ The PDF response declares the printable page as its preferred canonical using an
 
 ## Bluesky drafts
 
+The production picker, rule directory and populated house-question page also offer **Share on Bluesky** beside Pinterest. Their draft text uses the public page title and canonical link. These links share a public page, never a roster, selected question, search query or result.
+
 Production rule pages and the printable-card page offer a plain **Share on Bluesky** action beside their existing sharing control. It opens an editable draft with the public title and clean canonical link; the visitor still confirms publication. No Bluesky script or new analytics event is loaded. Previews and draft rules do not expose this action. This visitor workflow does not choose the owner's launch account. See [Bluesky's action intent documentation](https://bsky.network/docs/intent-links/).
 
 Publish from the site's own account when available. Use one post at a time, with an accurate landing page and the corresponding image. Keep the link intact so consented visits can be attributed. Suggested posts:
