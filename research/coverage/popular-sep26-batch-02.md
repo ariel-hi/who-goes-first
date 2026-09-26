@@ -24,4 +24,4 @@ Integration added eight directory identities and two portable methods (Camel Up 
 
 ## Verification
 
-Pending final gates and production deployment. No application UI files were changed by this batch.
+The batch passed content validation (934 approved rules, 370 usable random rules), Astro checks with zero errors/warnings/hints, ESLint, and all 55 tests in nine files. The production build passed its audits across 2,358 pages and 30,309 internal links, using the live canonical origin, owner contact and Cloudflare privacy disclosure. Deployment is queued behind the concurrent main-branch integration; final integration and live checks will follow. No application UI files were changed by this batch.
