@@ -1,0 +1,44 @@
+{
+  "id": "skull-space-cowboys-pink-en",
+  "slug": "skull-space-cowboys-pink-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "98e599aa82412ea6ea76fcd82edf9e43afb27d0261d9c0ea1466b94025187d80",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Skull",
+  "aliases": [],
+  "editionLabel": "Space Cowboys English pink edition",
+  "firstPlayerRule": "The player who most recently gave someone flowers (or a skull) is the first player.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody qualifies, choose randomly. If the most recent gift is tied, choose randomly among the tied players.",
+  "clarifications": [
+    "Before turns begin, everyone places a disc facedown. The first player waits until the others have placed theirs before choosing their own. Turns then proceed clockwise.",
+    "In later rounds, the previous Challenger starts unless eliminated. If eliminated by another player’s skull, its owner starts; after self-elimination, the Challenger chooses the next starter."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/SKULL_RULES_EN.pdf",
+      "title": "Skull — English rulebook",
+      "publisher": "Space Cowboys",
+      "printedPages": [
+        "3",
+        "4",
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4,
+        9
+      ],
+      "location": "Setup; Game round; New round",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The current publisher game page links this English manual with the Last Chance disc. Setup on page 3 gives the gift criterion; page 4 distinguishes opening disc placement from the first decision turn. Source custody: research/source-files/popular-sep26-02/skull.pdf; SHA-256 1e72b6040a1bd0f0fa62de96765b9f88ce922069cc8d393f0a881ef8a44d0d90. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The setup gives no tie-break or alternative when nobody has given either gift."
+  ]
+}
