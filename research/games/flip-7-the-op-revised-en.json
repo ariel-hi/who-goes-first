@@ -1,0 +1,43 @@
+{
+  "id": "flip-7-the-op-revised-en",
+  "slug": "flip-7-the-op-revised-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Flip 7",
+  "aliases": [],
+  "editionLabel": "The Op English revised edition",
+  "firstPlayerRule": "Choose a dealer for the round. The dealer gives each player, including themselves, a face-up card in turn order.",
+  "officialTieBreak": null,
+  "houseFallback": "Agree who receives the first card and the direction of play before dealing.",
+  "clarifications": [
+    "The dealer then offers active players the choice to hit or stay in turn order.",
+    "The next round’s dealer is the player to the current dealer’s left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0611/3958/3198/files/25_FLIP_7_TB_RULES_C_Rev_9_2_25_ND.pdf?v=1756935535",
+      "title": "Flip 7 — English rulebook",
+      "publisher": "The Op",
+      "printedPages": [
+        "3",
+        "4",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup; Starting a round; Next round",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The Op dedicated Flip7 rules page links this revised English foldout manual. Both PDF sheets were rendered and inspected. Printed3 chooses dealer without a criterion; printed4 deals in turn order without naming first recipient; printed12 passes dealer left. Dealer-left-first was not inferred. Source custody: research/source-files/popular-sep26-04/flip.pdf; SHA-256 c17884d1cde5317ba3e67fae27e06b071a60134788fe0950d2712f8a078394f9. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The rules do not specify how to choose the initial dealer, who receives the first card, or which direction the initial turn order runs."
+  ]
+}
