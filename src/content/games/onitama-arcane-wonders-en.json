@@ -1,0 +1,35 @@
+{
+  "id": "onitama-arcane-wonders-en",
+  "slug": "onitama-arcane-wonders-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "15939f412add347b72fdddc344b74e7c1ced07fc05e3ee875a452ba688deacb8",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Onitama",
+  "aliases": [],
+  "editionLabel": "Arcane Wonders English edition",
+  "firstPlayerRule": "After dealing two Move cards to each player, reveal one more card. The player whose pawns match the colored stamp in that card’s lower-right corner goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Place the extra card to the starting player’s right."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.arcanewonders.com/wp-content/uploads/2021/05/Onitama-Rulebook.pdf",
+      "title": "Onitama — English rulebook",
+      "publisher": "Arcane Wonders",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        5
+      ],
+      "location": "Game setup — Extra Move card",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Arcane Wonders English PDF successfully retrieved using normal browser request headers after the default client received403. RenderedPDF5 explicitly uses the fifth card stamp. Discarded an archive result for the original Conception edition with different setup; did not mix editions. Source custody: research/source-files/popular-sep26-06/onitama.pdf; SHA-256 96032a873f5bade1bcfbf64b975c614f9d88f8f4346e9c93f6be6699b35fa231. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
