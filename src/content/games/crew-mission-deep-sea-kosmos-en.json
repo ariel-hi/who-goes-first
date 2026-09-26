@@ -1,0 +1,40 @@
+{
+  "id": "crew-mission-deep-sea-kosmos-en",
+  "slug": "crew-mission-deep-sea-kosmos-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "6c991e9f845af43132bf0e49fb07f8d5d259b47db9b7ab295e3687b7b6fd02b3",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "The Crew: Mission Deep Sea",
+  "aliases": [],
+  "editionLabel": "Kosmos English edition",
+  "firstPlayerRule": "The player holding the four-submarine card is the captain and leads the first trick.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The captain also starts task selection, which proceeds clockwise. Mission-specific task-allocation instructions still apply.",
+    "The captain leads the first trick even in missions without tasks. The winner of each trick leads the next."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://drive.google.com/file/d/1cnCJVjgkz0HScuYfdpwpq_fVGQR9UO-4/view",
+      "title": "The Crew: Mission Deep Sea — English rulebook",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "9",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        11
+      ],
+      "location": "Mission preparation; After task allocation",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher support instruction-manual index links the Google Drive PDF. Downloaded actual PDF bytes using its Drive download endpoint and rendered pages9 and11. Both captain selection and first trick are explicit. Excluded from random method pool because the criterion depends on a dealt game card. Source custody: research/source-files/popular-sep26-04/crew.pdf; SHA-256 0d830a54b7f98433a2f78d032db943bc5fc76dffa773b02995a364f3b4e97776. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
