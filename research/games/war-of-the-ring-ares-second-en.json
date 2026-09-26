@@ -1,0 +1,42 @@
+{
+  "id": "war-of-the-ring-ares-second-en",
+  "slug": "war-of-the-ring-ares-second-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "War of the Ring: Second Edition",
+  "aliases": [],
+  "editionLabel": "Ares English second edition",
+  "firstPlayerRule": "In the two-player game, the Free Peoples player takes the first action in the Action Resolution phase. The two sides then alternate actions.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Earlier phases handle card draws, the Fellowship, Hunt allocation and rolling Action dice.",
+    "In the four-player game, the non-Leading Free Peoples player acts first. On the first turn, that is the Rohan player; Gondor begins with the Leading Player token."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://warofthering.eu/WotR_2nd_Edition_Rules.pdf",
+      "title": "War of the Ring: Second Edition — English rulebook",
+      "publisher": "Ares Games",
+      "printedPages": [
+        "18",
+        "45"
+      ],
+      "pdfPagesOneBased": [
+        18,
+        45
+      ],
+      "location": "The game turn — Phase 5; Multiplayer rules — Action resolution",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Ares second-edition product and rules pages identify the English rulebook. Ares download returned403, so used the complete Ares-authored English manual on warofthering.eu. Rendered18 explicitly Free Peoples first for action resolution;45 identifies initial Leading players and non-Leading Free Peoples first. Scope distinguishes standard two-player opening from four-player team action order. Source custody: research/source-files/popular-sep26-05/ring.pdf; SHA-256 696181ef27ea6da267b24aab7174b9f773fec57c1b27adca5b379511543804f6. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The Ares-hosted download was unavailable. The cited publisher-authored manual is hosted on the dedicated War of the Ring website."
+  ]
+}
