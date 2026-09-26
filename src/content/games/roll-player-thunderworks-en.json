@@ -1,0 +1,37 @@
+{
+  "id": "roll-player-thunderworks-en",
+  "slug": "roll-player-thunderworks-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "e05a1083ce235c63bad75093fd3179ee110bc3426cc6ec844011539a84c7a400",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Roll Player",
+  "aliases": [],
+  "editionLabel": "Thunderworks English base game",
+  "firstPlayerRule": "Everyone rolls a die. The player with the highest result is the starting player.",
+  "officialTieBreak": null,
+  "houseFallback": "Players tied for the highest roll reroll until one wins.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/RollPlayer-Rulebook-Web.pdf?v=1700487079",
+      "title": "Roll Player — English rulebook",
+      "publisher": "Thunderworks Games",
+      "printedPages": [
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        7
+      ],
+      "location": "Game setup steps 1 and 13",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current Thunderworks RollPlayer product links Shopify-hosted English base manual. Rendered7step1highestroll andstep13start. Generic dice choice excluded from portable-criterion pool. Source custody: research/source-files/popular-sep26-10/roll.pdf; SHA-256 7e807b176db257a265bb9dd799dd73904f5039994661befe2c3e69bb78daf3b8. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "The setup does not specify how to resolve equal highest rolls."
+  ]
+}
