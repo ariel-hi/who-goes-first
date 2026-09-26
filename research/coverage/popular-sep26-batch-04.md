@@ -19,4 +19,6 @@ After the shared release, the Claude/Codex same-name audit still shows only dist
 
 Strict coverage is 318/1,062 targets, with 744 remaining. Next uncovered target: Modern Art, rank 160.
 
-Required gates passed: content validation (982 approved rules, 376 random methods), Astro (zero errors/warnings/hints), lint, all 153 tests in 16 files, and production build using the live canonical origin, owner contact and Cloudflare privacy disclosure. The build audited 1,146 pages and 30,901 internal links, with private-content exclusion and canonical/indexing checks passing. Live verification follows deployment.
+Required gates passed: content validation (982 approved rules, 376 random methods), Astro (zero errors/warnings/hints), lint, all 153 tests in 16 files, and production build using the live canonical origin, owner contact and Cloudflare privacy disclosure. The build audited 1,146 pages and 30,901 internal links, with private-content exclusion and canonical/indexing checks passing.
+
+Pushed as 46abdd8 and verified live on 2026-09-26: all eight edition pages returned HTTP 200 with correct canonicals and indexability, appeared in the 982-record rule index, and linked correctly from the 5,009-entry directory index. No internal source-cache content appeared publicly. Home, directory, robots and sitemap also returned HTTP 200.
