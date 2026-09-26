@@ -4,9 +4,9 @@
   "language": "en",
   "status": "approved",
   "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a4ec906beac562f0c6f01591ef3dfb9e2bc55b6ce66a2185e8010f36de339794",
+  "approvedRevision": "a30b9f140db0565028ce5d0e10356d6cf8cc705d2ab3214e361348bb17a5616f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-26",
   "gameName": "Briefcase",
   "aliases": [],
   "editionLabel": "Artipia Games English base-game rulebook",
@@ -17,7 +17,7 @@
   "interpretation": null,
   "sources": [
     {
-      "url": "https://www.artipiagames.gr/files/Briefcase/Briefcase_ENG_Rulebook.pdf",
+      "url": "https://artipiagames.gr/files/Briefcase/Briefcase_ENG_Rulebook.pdf",
       "title": "Briefcase — Artipia Games English rules",
       "publisher": "Artipia Games",
       "printedPages": [
@@ -29,10 +29,10 @@
         3
       ],
       "location": "3. Setup: Setting up the player area; 4. Playing the Game",
-      "checkedAt": "2026-09-23"
+      "checkedAt": "2026-09-26"
     }
   ],
-  "internalEvidence": "The Artipia product page links this 12-page English publisher PDF. Its Setup section on PDF page 2 selects the most recent business-meeting attendee, states random selection in case of a tie, and says play continues clockwise. PDF page 3 confirms sequential turns. Product page: https://www.artipiagames.com/briefcase/ . The PDF was read through the publisher-linked indexed text; original bytes were unavailable for a hash. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starting rule, tie or later-round context against the publisher-linked PDF text.",
+  "internalEvidence": "The Artipia product page links this 12-page English publisher PDF. Its Setup section on PDF page 2 selects the most recent business-meeting attendee, states random selection in case of a tie, and says play continues clockwise. PDF page 3 confirms sequential turns. Product page: https://www.artipiagames.com/briefcase/ . The PDF was read through the publisher-linked indexed text; original bytes were unavailable for a hash. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starting rule, tie or later-round context against the publisher-linked PDF text. Citation maintenance review 2026-09-26: The www hostname no longer resolves, while the same publisher path on artipiagames.gr returns the original 12-page English PDF. Downloaded original bytes and visually rechecked rendered PDF pages 2 and 3: the business-meeting criterion, random tie-break, clockwise play and sequential turns match the published answer. SHA-256: 7b4b187ef75f1925e1d30ae6c2c6c7ee37e23b0069b3f051753a00ab30c66794. Only the citation and its review evidence changed; the rule answer remains unchanged. Review performed by Codex under the owner's standing authorization dated 2026-09-22.",
   "uncertainty": [
     "Other printings may differ from the cited English booklet."
   ]
