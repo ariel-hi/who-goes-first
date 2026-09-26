@@ -1,6 +1,8 @@
 # Content review queue
 
-**Owner-authorized assistant review: 886 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+**Owner-authorized assistant review: 887 game rules approved for the catalog; 361 eligible for the random mix. Public house prompts: 60.**
+
+Final Titan adds a separately source-reviewed English summary of the Russian GaGa ©2026 manual, scoped to main competitive play with3–5 players. Youngest setup drafting, highest-speed main opening, successive bench-speed ties/lots, arena speed/contender priority and later restart remain distinct. Root opened21 complete PDF pages and rehashed53 manual-intake files plus40 identity-intake files. The literal Russian title alias is source-bound. It stays outside the portable mix. See `research/coverage/sep26-final-titan-directory-history-progress.md`.
 
 ImmunoWars and Townsfolk Tussle add two independently reviewed exact-edition answers. Root opened21 complete manual pages and rehashed72 intake files and41 prior identity-source files. ImmunoWars explicitly selects the startup hand draw; its first normal-turn identity and tied-roll procedure remain unspecified. Townsfolk is labeled an English summary of the German standard base game, with bottom-up Village order, top-down villain-first combat and later token rotation. Both stay outside the portable mix. Northgard remains pending because the inspected primary path exposed no manual. See `research/coverage/sep26-enrolled-manuals-readable-roster-progress.md`.
 

@@ -34,7 +34,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
 </Layout>
 <script>
   import { normalizeSearch } from '../../lib/search';
-  import { readDirectorySearchFragment } from '../../lib/directory-search';
+  import { directorySearchHref, readDirectorySearchState, type DirectoryFilter } from '../../lib/directory-search';
   type SearchEntry = { name: string; id: string; ruleCount: number; slug?: string; terms?: string[] };
   type SearchGame = { name: string; nameKey: string; id: string; href: string; search: string; hasRule: boolean; ruleCount: number };
   const root = document.querySelector<HTMLElement>('[data-board-directory]')!;
@@ -45,7 +45,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   const empty = root.querySelector<HTMLElement>('[data-empty]')!;
   let data: SearchGame[] | undefined;
   let loading: Promise<SearchGame[]> | undefined;
-  let filter = 'all';
+  let filter: DirectoryFilter = 'all';
   let revision = 0;
   const compact = (value: string) => normalizeSearch(value).replace(/[^\p{L}\p{N}]+/gu, '');
   const load = () => loading ??= fetch('/board-games/search.json').then(response => {
@@ -108,21 +108,38 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     empty.hidden = matches.length !== 0;
     count.textContent = `${matches.length.toLocaleString('en')} ${matches.length === 1 ? 'game' : 'games'} found${matches.length > 80 ? ' · showing first 80; add more letters to narrow your search' : ''}`;
   };
+  const showFilter = () => {
+    for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice.dataset.filter === filter));
+  };
+  const saveSearch = () => {
+    const href = directorySearchHref(input.value, filter);
+    const hash = href.slice('/board-games/'.length);
+    if (hash === location.hash) return;
+    // Keep one directory visit in Back history. Fragments stay out of HTTP
+    // requests and canonical URLs; preserve any unrelated history state.
+    try { history.replaceState(history.state, '', location.pathname + location.search + hash); }
+    catch { /* Search still works when the browser blocks history writes. */ }
+  };
   input.disabled = false;
-  input.addEventListener('input', render);
+  input.addEventListener('input', () => {
+    if (!input.value.trim()) { filter = 'all'; showFilter(); }
+    saveSearch();
+    void render();
+  });
   filters.addEventListener('click', event => {
     const button = (event.target as Element).closest<HTMLButtonElement>('button[data-filter]');
     if (!button) return;
-    filter = button.dataset.filter!;
-    for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice === button));
-    render();
+    filter = button.dataset.filter as DirectoryFilter;
+    showFilter();
+    saveSearch();
+    void render();
   });
   const restoreFragmentSearch = () => {
-    if (!location.hash.startsWith('#q=')) return;
-    const { query, invalid } = readDirectorySearchFragment(location.hash);
+    if (location.hash && !location.hash.startsWith('#q=')) return;
+    const { query, filter: restoredFilter, invalid } = readDirectorySearchState(location.hash);
     input.value = query;
-    filter = 'all';
-    for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice.dataset.filter === 'all'));
+    filter = restoredFilter;
+    showFilter();
     void render();
     if (invalid) {
       count.hidden = false;
@@ -131,4 +148,5 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   };
   restoreFragmentSearch();
   window.addEventListener('hashchange', restoreFragmentSearch);
+  window.addEventListener('pageshow', event => { if (event.persisted) restoreFragmentSearch(); });
 </script>

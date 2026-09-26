@@ -4,7 +4,7 @@ import { runInNewContext } from 'node:vm';
 
 const script = readFileSync('public/analytics-consent.js', 'utf8');
 
-function runCampaign(search: string, savedChoice: string | null) {
+function runCampaign(search: string, savedChoice: string | null, hash = '', pathname = '/games/') {
   const order: string[] = [];
   const elements = new Map(['[data-analytics-consent]', '[data-analytics-settings]', '[data-analytics-allow]', '[data-analytics-decline]'].map(selector => [selector, {
     hidden: true,
@@ -17,7 +17,7 @@ function runCampaign(search: string, savedChoice: string | null) {
     createElement() { return { async: false, src: '' }; },
     querySelector(selector: string) { return elements.get(selector); },
   };
-  const location = { origin: 'https://whogoesfirst.fun', pathname: '/games/', search, hash: '' };
+  const location = { origin: 'https://whogoesfirst.fun', pathname, search, hash };
   const window = {
     document,
     location,
@@ -53,5 +53,16 @@ describe('consented campaign attribution', () => {
     expect(result.config).toBeUndefined();
     expect(result.order).toEqual([]);
     expect(result.panel.hidden).toBe(false);
+  });
+
+  test('initial consented configuration excludes bookmarked searches and keeps their fragment during campaign cleanup', () => {
+    const hash = '#q=%E5%9B%9B%E5%AD%A3%20private&filter=pending';
+    const result = runCampaign('?utm_source=bluesky&utm_medium=organic_social&utm_campaign=game_rules&private=secret', 'allow', hash, '/board-games/');
+    expect(result.config?.page_location).toBe('https://whogoesfirst.fun/board-games/');
+    expect(JSON.stringify(result.config)).not.toMatch(/private|secret|filter|%E5/);
+    expect(result.order).toEqual([`cleaned /board-games/${hash}`, 'tag requested']);
+    const unconsented = runCampaign('', null, hash, '/board-games/');
+    expect(unconsented.config).toBeUndefined();
+    expect(unconsented.order).toEqual([]);
   });
 });

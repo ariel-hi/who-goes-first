@@ -6,16 +6,16 @@
   "sourceSnapshotStatementSha256": "65ce20420ac25bf7bd9421378470d07ce39f5e7c8040b541cea310f1cf95ab5b",
   "sourceSnapshotEntitiesSha256": "fcca4c520fc5a80f8ff01a9c9ef00977a6dfb2a3f9d61d47beac037436f489f9",
   "scope": "Supplementary identity-only decisions for the complete native/mul/P1476 pool. Accept means direct primary identity evidence corroborates a discovery name for exact runtime inventory enrollment; it approves no starting-player rule, edition transfer or deployment. Every other candidate is held. Numeric identifiers and QID provenance are official Wikidata CC0. Primary publisher/author title and authorship facts are individually observed, not a BoardGameGeek corpus. No BoardGameGeek destination, API or page content was fetched.",
-  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained. A subsequent independently reviewed Super Meeple product page resolved the Ironwood hold through its literal exact 407343 numeric href and preserved publisher/domain bridge. The full prior hold and age/edition limits remain retained; no rule approval or saved creator claim was transferred. A subsequent root-reviewed Frosted Wroth/Groll partnership bridge and Super Meeple Beyond the Horizon literal numeric href resolved the remaining two holds from the ten-candidate review. Wroth retains Wikidata-only numeric provenance; Horizon retains its primary-hosted exact href. Complete prior holds and all mode/age/year/creator limits remain preserved, with no rule or claim repair. Root independently reviewed Northgard: Uncharted Lands, ImmunoWars and Townsfolk Tussle from six preserved primary bodies with complete prior holds; exact native titles and saved P2339 mapping retained. Semantic identity enrollment only, without primary numeric reconfirmation, edition rules or qualified metadata repair.",
+  "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained. A subsequent independently reviewed Super Meeple product page resolved the Ironwood hold through its literal exact 407343 numeric href and preserved publisher/domain bridge. The full prior hold and age/edition limits remain retained; no rule approval or saved creator claim was transferred. A subsequent root-reviewed Frosted Wroth/Groll partnership bridge and Super Meeple Beyond the Horizon literal numeric href resolved the remaining two holds from the ten-candidate review. Wroth retains Wikidata-only numeric provenance; Horizon retains its primary-hosted exact href. Complete prior holds and all mode/age/year/creator limits remain preserved, with no rule or claim repair. Root independently reviewed Northgard: Uncharted Lands, ImmunoWars and Townsfolk Tussle from six preserved primary bodies with complete prior holds; exact native titles and saved P2339 mapping retained. Semantic identity enrollment only, without primary numeric reconfirmation, edition rules or qualified metadata repair. Root independently reviewed a new six-GET GaGa intake: Final Titan accepted from an exact saved publisher/domain/schedule/product native-title bridge; Nekojima, Nanatoridori and Lone Wolves retain target-context holds after the inspected endpoints. All four prior unreviewed holds, immutable snapshots and numeric provenance remain preserved. The future product date and age/time/creator limits are explicit; no rule or claim repair.",
   "counts": {
     "totalCandidates": 288,
-    "reviewed": 38,
-    "unreviewed": 250,
-    "accept": 31,
-    "hold": 257,
+    "reviewed": 42,
+    "unreviewed": 246,
+    "accept": 32,
+    "hold": 256,
     "priorUnheldReviewed": 13,
     "priorUnheldAccepted": 10,
-    "additionalAccepted": 21
+    "additionalAccepted": 22
   },
   "sources": {
     "kramer-author": {
@@ -794,6 +794,76 @@
       "inspectedOn": "2026-09-26",
       "observedEvidence": "Publisher editorial diary2024-01-19 links exact base product,describes same Heureka villagers/villains setting and separates base/expansion/bundle preorders. Embedded recordings uninspected.",
       "use": "Semantic discovery identity and qualified localized-edition context only; no original/other-edition rule transfer or creator/metadata repair."
+    },
+    "gaga-home": {
+      "url": "https://www.gaga-games.com",
+      "finalUrl": "https://www.gaga-games.com/",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "295f50b1bbd9da297da469d811076021ebed61007b583ccaecef85e80e754fed",
+      "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-home.html",
+      "byteCount": 704471,
+      "retrievedAt": "2026-09-26T10:11:42.551690+00:00",
+      "title": "Главная - GaGa Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+      "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+    },
+    "gaga-future": {
+      "url": "https://www.gaga-games.com/grafik-izdatelstva/",
+      "finalUrl": "https://www.gaga-games.com/grafik-izdatelstva/",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "8e93ac197f4e5c6a32dd9248927d03572348de830a0b3087aac0f879bde69138",
+      "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-future.html",
+      "byteCount": 1727535,
+      "retrievedAt": "2026-09-26T10:14:43.859057+00:00",
+      "title": "График Издательства - GaGa Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Complete official publisher schedule, last updated08.09.2026, links Последний Титан directly to the literal Final Titan product URL; approximate expected arrival November2026. Original bytes and complete link context preserved.",
+      "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+    },
+    "final-titan": {
+      "url": "https://gaga.ru/game/final-titan/",
+      "finalUrl": "https://gaga.ru/game/final-titan/",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "12a19f088f0a2d1e5cf78a9606eeafd498fdde616dbc3f28cf496d40aa188d16",
+      "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/final-titan.html",
+      "byteCount": 1143211,
+      "retrievedAt": "2026-09-26T10:15:15.008477+00:00",
+      "title": "Настольная игра Последний Титан - обзор, отзывы, фотографии | GaGaGames - магазин настольных игр в Санкт-Петербурге",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Complete publisher-linked CP1251 product pairs Последний Титан (Final Titan), physical cards/tokens/aids/dice and1-5 players. Forthcoming November2026 status and metadata discrepancies retained; no numeric ID or opening rule proved by this page.",
+      "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+    },
+    "gaga-wholesale": {
+      "url": "https://www.gaga-games.com/igry-optom/",
+      "finalUrl": "https://www.gaga-games.com/igry-optom/",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "d93199a2ba94ee9530ab7a9a949f1883f482e0ea1fd9d6861378a5beeba360be",
+      "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-wholesale.html",
+      "byteCount": 498979,
+      "retrievedAt": "2026-09-26T10:15:22.332863+00:00",
+      "title": "Игры оптом - GaGa Games",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+      "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+    },
+    "gaga-catalog": {
+      "url": "https://gaga.ru/games/",
+      "finalUrl": "https://gaga.ru/nastolnie-igri/",
+      "kind": "primary-publisher",
+      "status": "retrieved",
+      "sha256": "689ae42745e50a3766217fc3eb47490d4912592eb768679e24382f344a7695df",
+      "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-catalog.html",
+      "byteCount": 1169632,
+      "retrievedAt": "2026-09-26T10:16:38.667846+00:00",
+      "title": "Настольные игры — Купить в интернет-магазине GaGa — СПБ, Москва, доставка по всей России",
+      "inspectedOn": "2026-09-26",
+      "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+      "use": "Identity research only; no rule, numeric mapping or metadata transfer."
     }
   },
   "unusableAttemptNotes": [
@@ -13411,11 +13481,25 @@
         "source": "label"
       },
       "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "reviewed": true,
+      "reason": "Bounded primary intake reached the exact saved GaGa publisher host and inspected observed home, schedule, wholesale and first catalog page, but obtained no target-specific original product context or observed target link. Identity remains held; no inference from title, publisher alone or uninspected pages.",
+      "identityEvidence": [
+        "Full saved P123→GaGa Q124827469→preserved exact P856 host chain verified and preserved; establishes a concrete publisher lead only.",
+        "Complete inspected original HTML provides no target-specific product link; eight-page catalog and dynamic controls are observed but not crawled."
+      ],
+      "sourceIds": [
+        "gaga-home",
+        "gaga-future",
+        "gaga-wholesale",
+        "gaga-catalog"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.gaga-games.com",
+        "https://www.gaga-games.com/grafik-izdatelstva/",
+        "https://gaga.ru/game/final-titan/",
+        "https://www.gaga-games.com/igry-optom/",
+        "https://gaga.ru/games/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -13429,7 +13513,953 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/212",
+        "candidateSha256": "f990dd5c96dd27079f61af62f01e67e2584261928ee1ac9f96cd6249671a5133",
+        "wikidataId": "Q134077703",
+        "revision": 2529351582,
+        "modified": "2026-08-09T21:04:43Z",
+        "entitySha256": "eea320ab72fbee12ed4666ca360c27ae74fbfc3b8eb489041a11c83a27e70131",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "880d90d3837123744dddc0a28af46cfb67867804",
+              "datavalue": {
+                "value": "359029",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q134077703$325E1B1D-6B98-42E5-8641-B8D362CD036F",
+            "rank": "normal"
+          }
+        ]
+      },
+      "identityReviewHistory": [
+        {
+          "stage": "pre-primary-review-unreviewed-hold",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+          "fullPreviousDecision": {
+            "bggId": "359029",
+            "wikidataItems": [
+              "Q134077703"
+            ],
+            "displayName": "Nekojima",
+            "selectedTitle": {
+              "wikidataId": "Q134077703",
+              "text": "Nekojima",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q134077703",
+                "revision": 2529351582,
+                "entitySha256": "eea320ab72fbee12ed4666ca360c27ae74fbfc3b8eb489041a11c83a27e70131",
+                "statements": [
+                  "Q134077703$325E1B1D-6B98-42E5-8641-B8D362CD036F"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          }
+        }
+      ],
+      "identityCorroborationStatus": "held-primary-target-context-missing",
+      "editionNotes": [
+        "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+        "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+        "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+        "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+        "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+        "No standalone literal target title or exact target product anchor appears in the observed complete publisher home/schedule/wholesale/current catalog HTML. Catalog response is page1 of8; no pagination crawl, dynamic search, AJAX query, invented product path or manual fetched.",
+        "Other saved P123 publisher targets are preserved but not newly resolved or fetched.",
+        "No primary exact board/card-game edition, creator/license/content bridge obtained in this intake; entity metadata remains uncorroborated."
+      ],
+      "semanticIdentityEvidence": {
+        "scope": "Root independently reviewed saved native claims and complete preserved primary context; identity evidence only, without rule approval or metadata repair.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "gaga-home",
+            "url": "https://www.gaga-games.com",
+            "finalUrl": "https://www.gaga-games.com/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "295f50b1bbd9da297da469d811076021ebed61007b583ccaecef85e80e754fed",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-home.html",
+            "byteCount": 704471,
+            "retrievedAt": "2026-09-26T10:11:42.551690+00:00",
+            "title": "Главная - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-future",
+            "url": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "finalUrl": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "8e93ac197f4e5c6a32dd9248927d03572348de830a0b3087aac0f879bde69138",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-future.html",
+            "byteCount": 1727535,
+            "retrievedAt": "2026-09-26T10:14:43.859057+00:00",
+            "title": "График Издательства - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-wholesale",
+            "url": "https://www.gaga-games.com/igry-optom/",
+            "finalUrl": "https://www.gaga-games.com/igry-optom/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "d93199a2ba94ee9530ab7a9a949f1883f482e0ea1fd9d6861378a5beeba360be",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-wholesale.html",
+            "byteCount": 498979,
+            "retrievedAt": "2026-09-26T10:15:22.332863+00:00",
+            "title": "Игры оптом - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-catalog",
+            "url": "https://gaga.ru/games/",
+            "finalUrl": "https://gaga.ru/nastolnie-igri/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "689ae42745e50a3766217fc3eb47490d4912592eb768679e24382f344a7695df",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-catalog.html",
+            "byteCount": 1169632,
+            "retrievedAt": "2026-09-26T10:16:38.667846+00:00",
+            "title": "Настольные игры — Купить в интернет-магазине GaGa — СПБ, Москва, доставка по всей России",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q134077703",
+          "revision": 2529351582,
+          "modified": "2026-08-09T21:04:43Z",
+          "entitySha256": "eea320ab72fbee12ed4666ca360c27ae74fbfc3b8eb489041a11c83a27e70131",
+          "snapshotJsonPointer": "/candidates/212",
+          "candidateSha256": "f990dd5c96dd27079f61af62f01e67e2584261928ee1ac9f96cd6249671a5133"
+        },
+        "comparedPublisherClaims": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P123",
+              "hash": "a0b57eefad65d962a9a3a4653a05b9292a8e4d37",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 124827469,
+                  "id": "Q124827469"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q134077703$30E58311-FE70-4B4D-98DC-9BB6D15A640D",
+            "rank": "normal"
+          }
+        ],
+        "relatedPublisher": {
+          "qid": "Q124827469",
+          "revision": 2524351714,
+          "modified": "2026-07-29T14:42:41Z",
+          "entitySha256": "d7cf68535f315ca54b2af7074d19eecda89f6bc0854c406c4daea7497498e7cf",
+          "fullSavedRelatedEntity": {
+            "pageid": 119012251,
+            "ns": 0,
+            "title": "Q124827469",
+            "lastrevid": 2524351714,
+            "modified": "2026-07-29T14:42:41Z",
+            "type": "item",
+            "id": "Q124827469",
+            "labels": {
+              "mul": {
+                "language": "mul",
+                "value": "GaGa Games"
+              }
+            },
+            "descriptions": {
+              "ru": {
+                "language": "ru",
+                "value": "российское издательство настольных игр"
+              },
+              "en": {
+                "language": "en",
+                "value": "Russian game publisher"
+              },
+              "ar": {
+                "language": "ar",
+                "value": "دار نشر"
+              },
+              "bn": {
+                "language": "bn",
+                "value": "রুশ গেম প্রকাশক"
+              },
+              "as": {
+                "language": "as",
+                "value": "ৰাছিয়ান গেম প্ৰকাশক"
+              }
+            },
+            "aliases": {
+              "ru": [
+                {
+                  "language": "ru",
+                  "value": "ГаГа Геймз"
+                }
+              ]
+            },
+            "claims": {
+              "P31": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "hash": "08a73e4fc61a702f6d8dd4ade02b9ac608dc875d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 3579158,
+                        "id": "Q3579158"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c77f5d57-4e5a-eb2b-e5cf-dbd86f68ea7e",
+                  "rank": "normal"
+                }
+              ],
+              "P17": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P17",
+                    "hash": "4f09cb257b93cfd07b9283d0e0855f03e240f152",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 159,
+                        "id": "Q159"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$1e710911-4088-0f02-d9b5-69882292c23d",
+                  "rank": "normal"
+                }
+              ],
+              "P856": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "9fba56c21748e6ee6780ce64d55fcb63067bbb25",
+                    "datavalue": {
+                      "value": "https://www.gaga-games.com",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 7737,
+                            "id": "Q7737"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q124827469$a905b714-42c5-0890-be18-af602a7fe6ca",
+                  "rank": "normal"
+                }
+              ],
+              "P6160": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P6160",
+                    "hash": "da453cd592906b785eec158e7ad3e05b36116b3a",
+                    "datavalue": {
+                      "value": "29194",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$7fafbc6a-4d19-d58f-266c-2523a7d7f3d6",
+                  "rank": "normal"
+                }
+              ],
+              "P7011": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P7011",
+                    "hash": "8f79be54dee92b6eafa7da9ba1a452190db17eb3",
+                    "datavalue": {
+                      "value": "1117847174158",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$2e311989-4057-0101-d431-b610aae7cfeb",
+                  "rank": "normal"
+                }
+              ],
+              "P159": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P159",
+                    "hash": "0ad37235dbdc8b7e4dde6a8b964b7d8347e5a24a",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 656,
+                        "id": "Q656"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c28599d6-464a-1210-a957-90aea348e450",
+                  "rank": "normal"
+                }
+              ],
+              "P8687": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "8d059c4984c7421fff5cee64384bdf5a9e25278e",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+153233",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$77e56b7c-414a-9cc9-f319-9c3b5ef56cac",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "92103d8fea0ec9bd137c8018907b82f97ec16376",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+8782",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$7d5d1fea-4fe6-4d64-881c-18ba5ad7d0c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "31b9c9c686f610d2724d7fbfc151468cb85d63b2",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+21400",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$1160965d-453b-5c42-e592-e856bb6191b9",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "ae5a758fbe3241fa8bdd59bcff6ff0420b80829d",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+22800",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$c19a4d2c-4fe0-4938-f24c-701b940de4c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "e275b1cbee2d8d262d76765bc91eaaf614d518c0",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+11600",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$14fb65c9-4528-db41-f080-2bc09dfc337b",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "b33b8dfd2d5d4cc8f45d943d5a4225f3f7e533be",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+159713",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$f43f7a53-47d5-a9b6-147c-957ade916d7d",
+                  "rank": "normal"
+                }
+              ],
+              "P3185": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3185",
+                    "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                    "datavalue": {
+                      "value": "gagagames",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "54e4cee2bd67fc45060c6b1b33406d3764eb6e1c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2010-03-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580"
+                  ],
+                  "id": "Q124827469$77a366f3-4b7e-3123-2240-78961b730e24",
+                  "rank": "normal"
+                }
+              ],
+              "P3789": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3789",
+                    "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                    "datavalue": {
+                      "value": "gaga_games",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$25b55451-45bb-df35-bd9f-35cd1a2eefe2",
+                  "rank": "normal"
+                }
+              ],
+              "P11245": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P11245",
+                    "hash": "aabc4e3220b039a04a69007036578e9fca84674a",
+                    "datavalue": {
+                      "value": "pitergaga",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P2397"
+                  ],
+                  "id": "Q124827469$e70efcfa-49a6-5a5c-34e9-5c50630a0d51",
+                  "rank": "normal"
+                }
+              ],
+              "P2397": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2397",
+                    "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                    "datavalue": {
+                      "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "d260f3a7941585dd9735846f1f294e523f6cfb3c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2011-07-19T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P1810": [
+                      {
+                        "snaktype": "value",
+                        "property": "P1810",
+                        "hash": "ab5c1db31e22532c29a9b370166bee71ed9a6511",
+                        "datavalue": {
+                          "value": "Настольные игры с GaGa Games",
+                          "type": "string"
+                        },
+                        "datatype": "string"
+                      }
+                    ],
+                    "P3744": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3744",
+                        "hash": "b47d075f6023bf5d37ae1717c316d7c2dc239eb6",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+21400",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P3740": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3740",
+                        "hash": "88b16b700c1a41e857fe94a755f19332e6ce81a8",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+427",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P5436": [
+                      {
+                        "snaktype": "value",
+                        "property": "P5436",
+                        "hash": "ef4ec8587eaf3e329f6021125cec2c02b73cb541",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+10397067",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "2808ea324838815f16609d96542691ce7521718f",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-16T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580",
+                    "P1810",
+                    "P3744",
+                    "P3740",
+                    "P5436",
+                    "P585"
+                  ],
+                  "id": "Q124827469$e783dd0c-4877-dc69-4332-6314f6ab2981",
+                  "rank": "normal"
+                }
+              ],
+              "P2391": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2391",
+                    "hash": "d47ead41657b33c680df7af8332bbfa795f673f8",
+                    "datavalue": {
+                      "value": "90877221",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$88bac42b-46e9-6b3d-5ba9-449eba1af387",
+                  "rank": "normal"
+                }
+              ]
+            }
+          },
+          "cacheFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "cacheSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141"
+        },
+        "limits": [
+          "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+          "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+          "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+          "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+          "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+          "No standalone literal target title or exact target product anchor appears in the observed complete publisher home/schedule/wholesale/current catalog HTML. Catalog response is page1 of8; no pagination crawl, dynamic search, AJAX query, invented product path or manual fetched.",
+          "Other saved P123 publisher targets are preserved but not newly resolved or fetched.",
+          "No primary exact board/card-game edition, creator/license/content bridge obtained in this intake; entity metadata remains uncorroborated."
+        ]
+      },
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "baselineDecisionsSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+        "originalIntakeManifestSha256": "9c4c89748444ed41866193d86307774753260742ce931fef0b9db47735cdd6a2",
+        "originalProposalSha256": "a9df1aecb2c1b29b3634d35f70238d0463825899721703347a150961d4d547cf",
+        "scope": "Semantic identity acceptance for Final Titan; three bounded holds. Exact saved P2339 remains the only numeric ID proof. No starting-rule or edition-transfer approval."
+      }
     },
     {
       "bggId": "360899",
@@ -14979,11 +16009,25 @@
         "source": "label"
       },
       "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "reviewed": true,
+      "reason": "Bounded primary intake reached the exact saved GaGa publisher host and inspected observed home, schedule, wholesale and first catalog page, but obtained no target-specific original product context or observed target link. Identity remains held; no inference from title, publisher alone or uninspected pages.",
+      "identityEvidence": [
+        "Full saved P123→GaGa Q124827469→preserved exact P856 host chain verified and preserved; establishes a concrete publisher lead only.",
+        "Complete inspected original HTML provides no target-specific product link; eight-page catalog and dynamic controls are observed but not crawled."
+      ],
+      "sourceIds": [
+        "gaga-home",
+        "gaga-future",
+        "gaga-wholesale",
+        "gaga-catalog"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.gaga-games.com",
+        "https://www.gaga-games.com/grafik-izdatelstva/",
+        "https://gaga.ru/game/final-titan/",
+        "https://www.gaga-games.com/igry-optom/",
+        "https://gaga.ru/games/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -14997,7 +16041,953 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/233",
+        "candidateSha256": "698014585c0b7ceab99667f1e8aaea4ac2ed781c9a59d4c2df2d9d94ba3b8a29",
+        "wikidataId": "Q134085902",
+        "revision": 2445322880,
+        "modified": "2025-12-22T03:44:03Z",
+        "entitySha256": "10db6515a8e8db5fa749ee93012829527fd6d5d4c3e049e664593fd6204ab5c9",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "d80cf5adf60927e98008398057d3cd33de91ab66",
+              "datavalue": {
+                "value": "387388",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q134085902$01EA88BE-74EF-4243-B940-582F558C72C5",
+            "rank": "normal"
+          }
+        ]
+      },
+      "identityReviewHistory": [
+        {
+          "stage": "pre-primary-review-unreviewed-hold",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+          "fullPreviousDecision": {
+            "bggId": "387388",
+            "wikidataItems": [
+              "Q134085902"
+            ],
+            "displayName": "Nanatoridori",
+            "selectedTitle": {
+              "wikidataId": "Q134085902",
+              "text": "Nanatoridori",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q134085902",
+                "revision": 2445322880,
+                "entitySha256": "10db6515a8e8db5fa749ee93012829527fd6d5d4c3e049e664593fd6204ab5c9",
+                "statements": [
+                  "Q134085902$01EA88BE-74EF-4243-B940-582F558C72C5"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          }
+        }
+      ],
+      "identityCorroborationStatus": "held-primary-target-context-missing",
+      "editionNotes": [
+        "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+        "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+        "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+        "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+        "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+        "No standalone literal target title or exact target product anchor appears in the observed complete publisher home/schedule/wholesale/current catalog HTML. Catalog response is page1 of8; no pagination crawl, dynamic search, AJAX query, invented product path or manual fetched.",
+        "Other saved P123 publisher targets are preserved but not newly resolved or fetched.",
+        "No primary exact board/card-game edition, creator/license/content bridge obtained in this intake; entity metadata remains uncorroborated."
+      ],
+      "semanticIdentityEvidence": {
+        "scope": "Root independently reviewed saved native claims and complete preserved primary context; identity evidence only, without rule approval or metadata repair.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "gaga-home",
+            "url": "https://www.gaga-games.com",
+            "finalUrl": "https://www.gaga-games.com/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "295f50b1bbd9da297da469d811076021ebed61007b583ccaecef85e80e754fed",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-home.html",
+            "byteCount": 704471,
+            "retrievedAt": "2026-09-26T10:11:42.551690+00:00",
+            "title": "Главная - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-future",
+            "url": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "finalUrl": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "8e93ac197f4e5c6a32dd9248927d03572348de830a0b3087aac0f879bde69138",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-future.html",
+            "byteCount": 1727535,
+            "retrievedAt": "2026-09-26T10:14:43.859057+00:00",
+            "title": "График Издательства - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-wholesale",
+            "url": "https://www.gaga-games.com/igry-optom/",
+            "finalUrl": "https://www.gaga-games.com/igry-optom/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "d93199a2ba94ee9530ab7a9a949f1883f482e0ea1fd9d6861378a5beeba360be",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-wholesale.html",
+            "byteCount": 498979,
+            "retrievedAt": "2026-09-26T10:15:22.332863+00:00",
+            "title": "Игры оптом - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-catalog",
+            "url": "https://gaga.ru/games/",
+            "finalUrl": "https://gaga.ru/nastolnie-igri/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "689ae42745e50a3766217fc3eb47490d4912592eb768679e24382f344a7695df",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-catalog.html",
+            "byteCount": 1169632,
+            "retrievedAt": "2026-09-26T10:16:38.667846+00:00",
+            "title": "Настольные игры — Купить в интернет-магазине GaGa — СПБ, Москва, доставка по всей России",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q134085902",
+          "revision": 2445322880,
+          "modified": "2025-12-22T03:44:03Z",
+          "entitySha256": "10db6515a8e8db5fa749ee93012829527fd6d5d4c3e049e664593fd6204ab5c9",
+          "snapshotJsonPointer": "/candidates/233",
+          "candidateSha256": "698014585c0b7ceab99667f1e8aaea4ac2ed781c9a59d4c2df2d9d94ba3b8a29"
+        },
+        "comparedPublisherClaims": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P123",
+              "hash": "a0b57eefad65d962a9a3a4653a05b9292a8e4d37",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 124827469,
+                  "id": "Q124827469"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q134085902$84A35FA9-65B7-4C64-89B5-C57F95AC5538",
+            "rank": "normal"
+          }
+        ],
+        "relatedPublisher": {
+          "qid": "Q124827469",
+          "revision": 2524351714,
+          "modified": "2026-07-29T14:42:41Z",
+          "entitySha256": "d7cf68535f315ca54b2af7074d19eecda89f6bc0854c406c4daea7497498e7cf",
+          "fullSavedRelatedEntity": {
+            "pageid": 119012251,
+            "ns": 0,
+            "title": "Q124827469",
+            "lastrevid": 2524351714,
+            "modified": "2026-07-29T14:42:41Z",
+            "type": "item",
+            "id": "Q124827469",
+            "labels": {
+              "mul": {
+                "language": "mul",
+                "value": "GaGa Games"
+              }
+            },
+            "descriptions": {
+              "ru": {
+                "language": "ru",
+                "value": "российское издательство настольных игр"
+              },
+              "en": {
+                "language": "en",
+                "value": "Russian game publisher"
+              },
+              "ar": {
+                "language": "ar",
+                "value": "دار نشر"
+              },
+              "bn": {
+                "language": "bn",
+                "value": "রুশ গেম প্রকাশক"
+              },
+              "as": {
+                "language": "as",
+                "value": "ৰাছিয়ান গেম প্ৰকাশক"
+              }
+            },
+            "aliases": {
+              "ru": [
+                {
+                  "language": "ru",
+                  "value": "ГаГа Геймз"
+                }
+              ]
+            },
+            "claims": {
+              "P31": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "hash": "08a73e4fc61a702f6d8dd4ade02b9ac608dc875d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 3579158,
+                        "id": "Q3579158"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c77f5d57-4e5a-eb2b-e5cf-dbd86f68ea7e",
+                  "rank": "normal"
+                }
+              ],
+              "P17": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P17",
+                    "hash": "4f09cb257b93cfd07b9283d0e0855f03e240f152",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 159,
+                        "id": "Q159"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$1e710911-4088-0f02-d9b5-69882292c23d",
+                  "rank": "normal"
+                }
+              ],
+              "P856": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "9fba56c21748e6ee6780ce64d55fcb63067bbb25",
+                    "datavalue": {
+                      "value": "https://www.gaga-games.com",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 7737,
+                            "id": "Q7737"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q124827469$a905b714-42c5-0890-be18-af602a7fe6ca",
+                  "rank": "normal"
+                }
+              ],
+              "P6160": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P6160",
+                    "hash": "da453cd592906b785eec158e7ad3e05b36116b3a",
+                    "datavalue": {
+                      "value": "29194",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$7fafbc6a-4d19-d58f-266c-2523a7d7f3d6",
+                  "rank": "normal"
+                }
+              ],
+              "P7011": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P7011",
+                    "hash": "8f79be54dee92b6eafa7da9ba1a452190db17eb3",
+                    "datavalue": {
+                      "value": "1117847174158",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$2e311989-4057-0101-d431-b610aae7cfeb",
+                  "rank": "normal"
+                }
+              ],
+              "P159": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P159",
+                    "hash": "0ad37235dbdc8b7e4dde6a8b964b7d8347e5a24a",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 656,
+                        "id": "Q656"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c28599d6-464a-1210-a957-90aea348e450",
+                  "rank": "normal"
+                }
+              ],
+              "P8687": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "8d059c4984c7421fff5cee64384bdf5a9e25278e",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+153233",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$77e56b7c-414a-9cc9-f319-9c3b5ef56cac",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "92103d8fea0ec9bd137c8018907b82f97ec16376",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+8782",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$7d5d1fea-4fe6-4d64-881c-18ba5ad7d0c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "31b9c9c686f610d2724d7fbfc151468cb85d63b2",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+21400",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$1160965d-453b-5c42-e592-e856bb6191b9",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "ae5a758fbe3241fa8bdd59bcff6ff0420b80829d",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+22800",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$c19a4d2c-4fe0-4938-f24c-701b940de4c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "e275b1cbee2d8d262d76765bc91eaaf614d518c0",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+11600",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$14fb65c9-4528-db41-f080-2bc09dfc337b",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "b33b8dfd2d5d4cc8f45d943d5a4225f3f7e533be",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+159713",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$f43f7a53-47d5-a9b6-147c-957ade916d7d",
+                  "rank": "normal"
+                }
+              ],
+              "P3185": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3185",
+                    "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                    "datavalue": {
+                      "value": "gagagames",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "54e4cee2bd67fc45060c6b1b33406d3764eb6e1c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2010-03-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580"
+                  ],
+                  "id": "Q124827469$77a366f3-4b7e-3123-2240-78961b730e24",
+                  "rank": "normal"
+                }
+              ],
+              "P3789": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3789",
+                    "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                    "datavalue": {
+                      "value": "gaga_games",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$25b55451-45bb-df35-bd9f-35cd1a2eefe2",
+                  "rank": "normal"
+                }
+              ],
+              "P11245": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P11245",
+                    "hash": "aabc4e3220b039a04a69007036578e9fca84674a",
+                    "datavalue": {
+                      "value": "pitergaga",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P2397"
+                  ],
+                  "id": "Q124827469$e70efcfa-49a6-5a5c-34e9-5c50630a0d51",
+                  "rank": "normal"
+                }
+              ],
+              "P2397": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2397",
+                    "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                    "datavalue": {
+                      "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "d260f3a7941585dd9735846f1f294e523f6cfb3c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2011-07-19T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P1810": [
+                      {
+                        "snaktype": "value",
+                        "property": "P1810",
+                        "hash": "ab5c1db31e22532c29a9b370166bee71ed9a6511",
+                        "datavalue": {
+                          "value": "Настольные игры с GaGa Games",
+                          "type": "string"
+                        },
+                        "datatype": "string"
+                      }
+                    ],
+                    "P3744": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3744",
+                        "hash": "b47d075f6023bf5d37ae1717c316d7c2dc239eb6",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+21400",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P3740": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3740",
+                        "hash": "88b16b700c1a41e857fe94a755f19332e6ce81a8",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+427",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P5436": [
+                      {
+                        "snaktype": "value",
+                        "property": "P5436",
+                        "hash": "ef4ec8587eaf3e329f6021125cec2c02b73cb541",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+10397067",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "2808ea324838815f16609d96542691ce7521718f",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-16T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580",
+                    "P1810",
+                    "P3744",
+                    "P3740",
+                    "P5436",
+                    "P585"
+                  ],
+                  "id": "Q124827469$e783dd0c-4877-dc69-4332-6314f6ab2981",
+                  "rank": "normal"
+                }
+              ],
+              "P2391": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2391",
+                    "hash": "d47ead41657b33c680df7af8332bbfa795f673f8",
+                    "datavalue": {
+                      "value": "90877221",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$88bac42b-46e9-6b3d-5ba9-449eba1af387",
+                  "rank": "normal"
+                }
+              ]
+            }
+          },
+          "cacheFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "cacheSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141"
+        },
+        "limits": [
+          "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+          "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+          "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+          "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+          "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+          "No standalone literal target title or exact target product anchor appears in the observed complete publisher home/schedule/wholesale/current catalog HTML. Catalog response is page1 of8; no pagination crawl, dynamic search, AJAX query, invented product path or manual fetched.",
+          "Other saved P123 publisher targets are preserved but not newly resolved or fetched.",
+          "No primary exact board/card-game edition, creator/license/content bridge obtained in this intake; entity metadata remains uncorroborated."
+        ]
+      },
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "baselineDecisionsSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+        "originalIntakeManifestSha256": "9c4c89748444ed41866193d86307774753260742ce931fef0b9db47735cdd6a2",
+        "originalProposalSha256": "a9df1aecb2c1b29b3634d35f70238d0463825899721703347a150961d4d547cf",
+        "scope": "Semantic identity acceptance for Final Titan; three bounded holds. Exact saved P2339 remains the only numeric ID proof. No starting-rule or edition-transfer approval."
+      }
     },
     {
       "bggId": "391137",
@@ -16910,11 +18900,25 @@
         "source": "label"
       },
       "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "reviewed": true,
+      "reason": "Bounded primary intake reached the exact saved GaGa publisher host and inspected observed home, schedule, wholesale and first catalog page, but obtained no target-specific original product context or observed target link. Identity remains held; no inference from title, publisher alone or uninspected pages.",
+      "identityEvidence": [
+        "Full saved P123→GaGa Q124827469→preserved exact P856 host chain verified and preserved; establishes a concrete publisher lead only.",
+        "Complete inspected original HTML provides no target-specific product link; eight-page catalog and dynamic controls are observed but not crawled."
+      ],
+      "sourceIds": [
+        "gaga-home",
+        "gaga-future",
+        "gaga-wholesale",
+        "gaga-catalog"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.gaga-games.com",
+        "https://www.gaga-games.com/grafik-izdatelstva/",
+        "https://gaga.ru/game/final-titan/",
+        "https://www.gaga-games.com/igry-optom/",
+        "https://gaga.ru/games/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -16928,7 +18932,958 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/258",
+        "candidateSha256": "eb39b5f56f9f47853c12c72a0ccfa12f20229312071dad3771b3bb3e8c627a88",
+        "wikidataId": "Q136089421",
+        "revision": 2400038426,
+        "modified": "2025-09-03T17:35:24Z",
+        "entitySha256": "d5642fbf1f0af5af2ed8df691d4b69a6864820bd5b101f26432fbad329d16437",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "54c2f43c671fa714a71e720e17a94d8b270fb0cd",
+              "datavalue": {
+                "value": "422374",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q136089421$6C393FF0-9E12-456C-96CD-FCB0B0A879D5",
+            "rank": "normal"
+          }
+        ]
+      },
+      "identityReviewHistory": [
+        {
+          "stage": "pre-primary-review-unreviewed-hold",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+          "fullPreviousDecision": {
+            "bggId": "422374",
+            "wikidataItems": [
+              "Q136089421"
+            ],
+            "displayName": "Lone Wolves",
+            "selectedTitle": {
+              "wikidataId": "Q136089421",
+              "text": "Lone Wolves",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q136089421",
+                "revision": 2400038426,
+                "entitySha256": "d5642fbf1f0af5af2ed8df691d4b69a6864820bd5b101f26432fbad329d16437",
+                "statements": [
+                  "Q136089421$6C393FF0-9E12-456C-96CD-FCB0B0A879D5"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          }
+        }
+      ],
+      "identityCorroborationStatus": "held-primary-target-context-missing",
+      "editionNotes": [
+        "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+        "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+        "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+        "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+        "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+        "No standalone literal target title or exact target product anchor appears in the observed complete publisher home/schedule/wholesale/current catalog HTML. Catalog response is page1 of8; no pagination crawl, dynamic search, AJAX query, invented product path or manual fetched.",
+        "Other saved P123 publisher targets are preserved but not newly resolved or fetched.",
+        "No primary exact board/card-game edition, creator/license/content bridge obtained in this intake; entity metadata remains uncorroborated.",
+        "Russian label Стая is generic and exact source identity needs more than an unbound same-title product. Other native labels Terres de Loups and Magányos farkasok are preserved, without translated-alias enrollment.",
+        "Raw substring Стая appears only inside unrelated city-selector Толстая Дубрава in product/catalog bodies; no standalone title or target anchor. Full original context preserved in held-title-scan.json.",
+        "Root clarification: the sealed scan also records non-standalone substring noise in Чистая Дуброва and простая; none is a target product title. The earlier narrow report examples are not an exhaustive list of substrings."
+      ],
+      "semanticIdentityEvidence": {
+        "scope": "Root independently reviewed saved native claims and complete preserved primary context; identity evidence only, without rule approval or metadata repair.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "gaga-home",
+            "url": "https://www.gaga-games.com",
+            "finalUrl": "https://www.gaga-games.com/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "295f50b1bbd9da297da469d811076021ebed61007b583ccaecef85e80e754fed",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-home.html",
+            "byteCount": 704471,
+            "retrievedAt": "2026-09-26T10:11:42.551690+00:00",
+            "title": "Главная - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-future",
+            "url": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "finalUrl": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "8e93ac197f4e5c6a32dd9248927d03572348de830a0b3087aac0f879bde69138",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-future.html",
+            "byteCount": 1727535,
+            "retrievedAt": "2026-09-26T10:14:43.859057+00:00",
+            "title": "График Издательства - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-wholesale",
+            "url": "https://www.gaga-games.com/igry-optom/",
+            "finalUrl": "https://www.gaga-games.com/igry-optom/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "d93199a2ba94ee9530ab7a9a949f1883f482e0ea1fd9d6861378a5beeba360be",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-wholesale.html",
+            "byteCount": 498979,
+            "retrievedAt": "2026-09-26T10:15:22.332863+00:00",
+            "title": "Игры оптом - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "gaga-catalog",
+            "url": "https://gaga.ru/games/",
+            "finalUrl": "https://gaga.ru/nastolnie-igri/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "689ae42745e50a3766217fc3eb47490d4912592eb768679e24382f344a7695df",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-catalog.html",
+            "byteCount": 1169632,
+            "retrievedAt": "2026-09-26T10:16:38.667846+00:00",
+            "title": "Настольные игры — Купить в интернет-магазине GaGa — СПБ, Москва, доставка по всей России",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q136089421",
+          "revision": 2400038426,
+          "modified": "2025-09-03T17:35:24Z",
+          "entitySha256": "d5642fbf1f0af5af2ed8df691d4b69a6864820bd5b101f26432fbad329d16437",
+          "snapshotJsonPointer": "/candidates/258",
+          "candidateSha256": "eb39b5f56f9f47853c12c72a0ccfa12f20229312071dad3771b3bb3e8c627a88"
+        },
+        "comparedPublisherClaims": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P123",
+              "hash": "a0b57eefad65d962a9a3a4653a05b9292a8e4d37",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 124827469,
+                  "id": "Q124827469"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q136089421$7C6DEEAA-14CA-45F0-800A-03AD874087E5",
+            "rank": "normal"
+          }
+        ],
+        "relatedPublisher": {
+          "qid": "Q124827469",
+          "revision": 2524351714,
+          "modified": "2026-07-29T14:42:41Z",
+          "entitySha256": "d7cf68535f315ca54b2af7074d19eecda89f6bc0854c406c4daea7497498e7cf",
+          "fullSavedRelatedEntity": {
+            "pageid": 119012251,
+            "ns": 0,
+            "title": "Q124827469",
+            "lastrevid": 2524351714,
+            "modified": "2026-07-29T14:42:41Z",
+            "type": "item",
+            "id": "Q124827469",
+            "labels": {
+              "mul": {
+                "language": "mul",
+                "value": "GaGa Games"
+              }
+            },
+            "descriptions": {
+              "ru": {
+                "language": "ru",
+                "value": "российское издательство настольных игр"
+              },
+              "en": {
+                "language": "en",
+                "value": "Russian game publisher"
+              },
+              "ar": {
+                "language": "ar",
+                "value": "دار نشر"
+              },
+              "bn": {
+                "language": "bn",
+                "value": "রুশ গেম প্রকাশক"
+              },
+              "as": {
+                "language": "as",
+                "value": "ৰাছিয়ান গেম প্ৰকাশক"
+              }
+            },
+            "aliases": {
+              "ru": [
+                {
+                  "language": "ru",
+                  "value": "ГаГа Геймз"
+                }
+              ]
+            },
+            "claims": {
+              "P31": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "hash": "08a73e4fc61a702f6d8dd4ade02b9ac608dc875d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 3579158,
+                        "id": "Q3579158"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c77f5d57-4e5a-eb2b-e5cf-dbd86f68ea7e",
+                  "rank": "normal"
+                }
+              ],
+              "P17": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P17",
+                    "hash": "4f09cb257b93cfd07b9283d0e0855f03e240f152",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 159,
+                        "id": "Q159"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$1e710911-4088-0f02-d9b5-69882292c23d",
+                  "rank": "normal"
+                }
+              ],
+              "P856": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "9fba56c21748e6ee6780ce64d55fcb63067bbb25",
+                    "datavalue": {
+                      "value": "https://www.gaga-games.com",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 7737,
+                            "id": "Q7737"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q124827469$a905b714-42c5-0890-be18-af602a7fe6ca",
+                  "rank": "normal"
+                }
+              ],
+              "P6160": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P6160",
+                    "hash": "da453cd592906b785eec158e7ad3e05b36116b3a",
+                    "datavalue": {
+                      "value": "29194",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$7fafbc6a-4d19-d58f-266c-2523a7d7f3d6",
+                  "rank": "normal"
+                }
+              ],
+              "P7011": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P7011",
+                    "hash": "8f79be54dee92b6eafa7da9ba1a452190db17eb3",
+                    "datavalue": {
+                      "value": "1117847174158",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$2e311989-4057-0101-d431-b610aae7cfeb",
+                  "rank": "normal"
+                }
+              ],
+              "P159": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P159",
+                    "hash": "0ad37235dbdc8b7e4dde6a8b964b7d8347e5a24a",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 656,
+                        "id": "Q656"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c28599d6-464a-1210-a957-90aea348e450",
+                  "rank": "normal"
+                }
+              ],
+              "P8687": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "8d059c4984c7421fff5cee64384bdf5a9e25278e",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+153233",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$77e56b7c-414a-9cc9-f319-9c3b5ef56cac",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "92103d8fea0ec9bd137c8018907b82f97ec16376",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+8782",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$7d5d1fea-4fe6-4d64-881c-18ba5ad7d0c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "31b9c9c686f610d2724d7fbfc151468cb85d63b2",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+21400",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$1160965d-453b-5c42-e592-e856bb6191b9",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "ae5a758fbe3241fa8bdd59bcff6ff0420b80829d",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+22800",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$c19a4d2c-4fe0-4938-f24c-701b940de4c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "e275b1cbee2d8d262d76765bc91eaaf614d518c0",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+11600",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$14fb65c9-4528-db41-f080-2bc09dfc337b",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "b33b8dfd2d5d4cc8f45d943d5a4225f3f7e533be",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+159713",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$f43f7a53-47d5-a9b6-147c-957ade916d7d",
+                  "rank": "normal"
+                }
+              ],
+              "P3185": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3185",
+                    "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                    "datavalue": {
+                      "value": "gagagames",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "54e4cee2bd67fc45060c6b1b33406d3764eb6e1c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2010-03-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580"
+                  ],
+                  "id": "Q124827469$77a366f3-4b7e-3123-2240-78961b730e24",
+                  "rank": "normal"
+                }
+              ],
+              "P3789": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3789",
+                    "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                    "datavalue": {
+                      "value": "gaga_games",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$25b55451-45bb-df35-bd9f-35cd1a2eefe2",
+                  "rank": "normal"
+                }
+              ],
+              "P11245": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P11245",
+                    "hash": "aabc4e3220b039a04a69007036578e9fca84674a",
+                    "datavalue": {
+                      "value": "pitergaga",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P2397"
+                  ],
+                  "id": "Q124827469$e70efcfa-49a6-5a5c-34e9-5c50630a0d51",
+                  "rank": "normal"
+                }
+              ],
+              "P2397": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2397",
+                    "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                    "datavalue": {
+                      "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "d260f3a7941585dd9735846f1f294e523f6cfb3c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2011-07-19T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P1810": [
+                      {
+                        "snaktype": "value",
+                        "property": "P1810",
+                        "hash": "ab5c1db31e22532c29a9b370166bee71ed9a6511",
+                        "datavalue": {
+                          "value": "Настольные игры с GaGa Games",
+                          "type": "string"
+                        },
+                        "datatype": "string"
+                      }
+                    ],
+                    "P3744": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3744",
+                        "hash": "b47d075f6023bf5d37ae1717c316d7c2dc239eb6",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+21400",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P3740": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3740",
+                        "hash": "88b16b700c1a41e857fe94a755f19332e6ce81a8",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+427",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P5436": [
+                      {
+                        "snaktype": "value",
+                        "property": "P5436",
+                        "hash": "ef4ec8587eaf3e329f6021125cec2c02b73cb541",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+10397067",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "2808ea324838815f16609d96542691ce7521718f",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-16T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580",
+                    "P1810",
+                    "P3744",
+                    "P3740",
+                    "P5436",
+                    "P585"
+                  ],
+                  "id": "Q124827469$e783dd0c-4877-dc69-4332-6314f6ab2981",
+                  "rank": "normal"
+                }
+              ],
+              "P2391": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2391",
+                    "hash": "d47ead41657b33c680df7af8332bbfa795f673f8",
+                    "datavalue": {
+                      "value": "90877221",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$88bac42b-46e9-6b3d-5ba9-449eba1af387",
+                  "rank": "normal"
+                }
+              ]
+            }
+          },
+          "cacheFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "cacheSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141"
+        },
+        "limits": [
+          "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+          "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+          "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+          "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+          "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+          "No standalone literal target title or exact target product anchor appears in the observed complete publisher home/schedule/wholesale/current catalog HTML. Catalog response is page1 of8; no pagination crawl, dynamic search, AJAX query, invented product path or manual fetched.",
+          "Other saved P123 publisher targets are preserved but not newly resolved or fetched.",
+          "No primary exact board/card-game edition, creator/license/content bridge obtained in this intake; entity metadata remains uncorroborated.",
+          "Russian label Стая is generic and exact source identity needs more than an unbound same-title product. Other native labels Terres de Loups and Magányos farkasok are preserved, without translated-alias enrollment.",
+          "Raw substring Стая appears only inside unrelated city-selector Толстая Дубрава in product/catalog bodies; no standalone title or target anchor. Full original context preserved in held-title-scan.json."
+        ]
+      },
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "baselineDecisionsSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+        "originalIntakeManifestSha256": "9c4c89748444ed41866193d86307774753260742ce931fef0b9db47735cdd6a2",
+        "originalProposalSha256": "a9df1aecb2c1b29b3634d35f70238d0463825899721703347a150961d4d547cf",
+        "scope": "Semantic identity acceptance for Final Titan; three bounded holds. Exact saved P2339 remains the only numeric ID proof. No starting-rule or edition-transfer approval."
+      }
     },
     {
       "bggId": "422732",
@@ -17111,12 +20066,30 @@
         "language": "mul",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Root-reviewed semantic identity acceptance: exact saved mul title Final Titan and Russian localized title are paired by the publisher-linked physical tabletop product. The complete saved GaGa P123/P856 chain and publisher schedule bind that product. Numeric mapping remains Wikidata-only; forthcoming release, age/duration differences, unresolved creator and edition limits remain explicit. No starting rule or edition transfer is approved by this identity review.",
+      "identityEvidence": [
+        "Exact mul label Final Titan is literal in primary product H1 parenthesis at CP1251 byte1099710 and repeated at byte1107248; localized Russian Последний Титан corresponds to saved Russian label after capitalization only.",
+        "Saved normal P123 Q139969586$DA7ADE72-DD40-43F0-A136-102CEA5E4D79 targets preserved GaGa Games Q124827469. Its normal P856 Q124827469$a905b714-42c5-0890-be18-af602a7fe6ca supplies the original official host.",
+        "Publisher schedule (last updated08.09.2026) has exact product anchors73-76 to https://gaga.ru/game/final-titan/ under Последний Титан, with November2026 expected arrival. Product footer links back to the preserved publisher host.",
+        "Complete primary product explicitly calls it a tabletop game, pairs Final Titan with localized title, lists100 titan cards,50 reinforcement cards,88 tokens,5 reference aids and2dice, and describes drafting champions and dice duels. This is distinct physical base-product evidence, beyond title alone.",
+        "Primary1-5 agrees with saved P1872/P1873. Expected November2026 arrival is compatible with saved year2026 but establishes no exact release/printing date.",
+        "Primary age10 differs from saved age8;0.5-1hour differs from saved minute quantities30/45. Preserve both as edition/product metadata differences without repairs.",
+        "Saved P170 Q139969586$1774D88D-CFC6-40A4-9420-1EB1268027F9 targets Q459719. No complete saved related creator record or primary creator credit is used; its name remains unresolved.",
+        "No primary literal428280 or numeric href; preserved P2339 numeric mapping remains Wikidata-only."
+      ],
+      "sourceIds": [
+        "gaga-future",
+        "final-titan"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.gaga-games.com",
+        "https://www.gaga-games.com/grafik-izdatelstva/",
+        "https://gaga.ru/game/final-titan/",
+        "https://www.gaga-games.com/igry-optom/",
+        "https://gaga.ru/games/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -17130,7 +20103,929 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "independentRawIdEvidence": [],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "snapshotReference": {
+        "path": "research/coverage/wikidata-native-title-leads.json",
+        "jsonPointer": "/candidates/264",
+        "candidateSha256": "3b0771eb30bb1b50408ae3c91a3eb235a9ab3a868eead577f347206d5f274705",
+        "wikidataId": "Q139969586",
+        "revision": 2498886405,
+        "modified": "2026-05-28T19:45:26Z",
+        "entitySha256": "e8e02d13fef863712ac1dd6c22808892a696672499a24806db9970b4c66e074d",
+        "matchingP2339Statements": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2339",
+              "hash": "d9f0d87c6c23f051edc4a6e5f1875cff25f19d1b",
+              "datavalue": {
+                "value": "428280",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q139969586$36670A33-6DAE-481F-938A-64CD18FC1C2E",
+            "rank": "normal"
+          }
+        ]
+      },
+      "identityReviewHistory": [
+        {
+          "stage": "pre-primary-review-unreviewed-hold",
+          "reviewedOn": "2026-09-26",
+          "decisionsFileSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+          "fullPreviousDecision": {
+            "bggId": "428280",
+            "wikidataItems": [
+              "Q139969586"
+            ],
+            "displayName": "Final Titan",
+            "selectedTitle": {
+              "wikidataId": "Q139969586",
+              "text": "Final Titan",
+              "language": "mul",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q139969586",
+                "revision": 2498886405,
+                "entitySha256": "e8e02d13fef863712ac1dd6c22808892a696672499a24806db9970b4c66e074d",
+                "statements": [
+                  "Q139969586$36670A33-6DAE-481F-938A-64CD18FC1C2E"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          }
+        }
+      ],
+      "identityCorroborationStatus": "primary-semantic-corroboration",
+      "editionNotes": [
+        "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+        "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+        "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+        "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+        "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+        "Russian publisher/product context is a forthcoming product listing, expected arrival November2026; no claim of released stock, original/latest edition or precise imprint.",
+        "Manual anchor https://gaga.ru/gaga/files/pdf/rules/ru/8181.pdf (6.1MB display) observed at anchor6388 but not retrieved; no opening or mode claim.",
+        "Physical contents and draft/dice description are primary product facts; do not equate unresolved saved genre/class QIDs with inferred labels.",
+        "Preserve saved age8 versus product10 and saved30/45-minute quantities versus product0.5-1hour.",
+        "Saved Q459719 creator label unresolved; no name, authorship repair or invented creator comparison.",
+        "Product placeholder box dimensions0cm and100g are not adopted as factual metadata."
+      ],
+      "semanticIdentityEvidence": {
+        "scope": "Root independently reviewed saved native claims and complete preserved primary context; identity evidence only, without rule approval or metadata repair.",
+        "numericIdSource": "preserved-wikidata-p2339-only",
+        "primaryNumericHrefObserved": false,
+        "primarySources": [
+          {
+            "sourceId": "gaga-future",
+            "url": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "finalUrl": "https://www.gaga-games.com/grafik-izdatelstva/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "8e93ac197f4e5c6a32dd9248927d03572348de830a0b3087aac0f879bde69138",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/gaga-future.html",
+            "byteCount": 1727535,
+            "retrievedAt": "2026-09-26T10:14:43.859057+00:00",
+            "title": "График Издательства - GaGa Games",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          },
+          {
+            "sourceId": "final-titan",
+            "url": "https://gaga.ru/game/final-titan/",
+            "finalUrl": "https://gaga.ru/game/final-titan/",
+            "kind": "primary-publisher",
+            "status": "retrieved",
+            "sha256": "12a19f088f0a2d1e5cf78a9606eeafd498fdde616dbc3f28cf496d40aa188d16",
+            "cacheFile": "research/source-files/sep26-native-gaga-four-identity-intake/final-titan.html",
+            "byteCount": 1143211,
+            "retrievedAt": "2026-09-26T10:15:15.008477+00:00",
+            "title": "Настольная игра Последний Титан - обзор, отзывы, фотографии | GaGaGames - магазин настольных игр в Санкт-Петербурге",
+            "inspectedOn": "2026-09-26",
+            "observedEvidence": "Original complete publisher-linked HTML preserved and inspected; see source-contexts.json for exact context and bounded limitations.",
+            "use": "Identity research only; no rule, numeric mapping or metadata transfer."
+          }
+        ],
+        "savedGameEntity": {
+          "wikidataId": "Q139969586",
+          "revision": 2498886405,
+          "modified": "2026-05-28T19:45:26Z",
+          "entitySha256": "e8e02d13fef863712ac1dd6c22808892a696672499a24806db9970b4c66e074d",
+          "snapshotJsonPointer": "/candidates/264",
+          "candidateSha256": "3b0771eb30bb1b50408ae3c91a3eb235a9ab3a868eead577f347206d5f274705"
+        },
+        "comparedPublisherClaims": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P123",
+              "hash": "a0b57eefad65d962a9a3a4653a05b9292a8e4d37",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 124827469,
+                  "id": "Q124827469"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q139969586$DA7ADE72-DD40-43F0-A136-102CEA5E4D79",
+            "rank": "normal"
+          }
+        ],
+        "relatedPublisher": {
+          "qid": "Q124827469",
+          "revision": 2524351714,
+          "modified": "2026-07-29T14:42:41Z",
+          "entitySha256": "d7cf68535f315ca54b2af7074d19eecda89f6bc0854c406c4daea7497498e7cf",
+          "fullSavedRelatedEntity": {
+            "pageid": 119012251,
+            "ns": 0,
+            "title": "Q124827469",
+            "lastrevid": 2524351714,
+            "modified": "2026-07-29T14:42:41Z",
+            "type": "item",
+            "id": "Q124827469",
+            "labels": {
+              "mul": {
+                "language": "mul",
+                "value": "GaGa Games"
+              }
+            },
+            "descriptions": {
+              "ru": {
+                "language": "ru",
+                "value": "российское издательство настольных игр"
+              },
+              "en": {
+                "language": "en",
+                "value": "Russian game publisher"
+              },
+              "ar": {
+                "language": "ar",
+                "value": "دار نشر"
+              },
+              "bn": {
+                "language": "bn",
+                "value": "রুশ গেম প্রকাশক"
+              },
+              "as": {
+                "language": "as",
+                "value": "ৰাছিয়ান গেম প্ৰকাশক"
+              }
+            },
+            "aliases": {
+              "ru": [
+                {
+                  "language": "ru",
+                  "value": "ГаГа Геймз"
+                }
+              ]
+            },
+            "claims": {
+              "P31": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P31",
+                    "hash": "08a73e4fc61a702f6d8dd4ade02b9ac608dc875d",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 3579158,
+                        "id": "Q3579158"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c77f5d57-4e5a-eb2b-e5cf-dbd86f68ea7e",
+                  "rank": "normal"
+                }
+              ],
+              "P17": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P17",
+                    "hash": "4f09cb257b93cfd07b9283d0e0855f03e240f152",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 159,
+                        "id": "Q159"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$1e710911-4088-0f02-d9b5-69882292c23d",
+                  "rank": "normal"
+                }
+              ],
+              "P856": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P856",
+                    "hash": "9fba56c21748e6ee6780ce64d55fcb63067bbb25",
+                    "datavalue": {
+                      "value": "https://www.gaga-games.com",
+                      "type": "string"
+                    },
+                    "datatype": "url"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P407": [
+                      {
+                        "snaktype": "value",
+                        "property": "P407",
+                        "hash": "d291ddb7cd77c94a7bd709a8395934147e0864fc",
+                        "datavalue": {
+                          "value": {
+                            "entity-type": "item",
+                            "numeric-id": 7737,
+                            "id": "Q7737"
+                          },
+                          "type": "wikibase-entityid"
+                        },
+                        "datatype": "wikibase-item"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P407"
+                  ],
+                  "id": "Q124827469$a905b714-42c5-0890-be18-af602a7fe6ca",
+                  "rank": "normal"
+                }
+              ],
+              "P6160": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P6160",
+                    "hash": "da453cd592906b785eec158e7ad3e05b36116b3a",
+                    "datavalue": {
+                      "value": "29194",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$7fafbc6a-4d19-d58f-266c-2523a7d7f3d6",
+                  "rank": "normal"
+                }
+              ],
+              "P7011": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P7011",
+                    "hash": "8f79be54dee92b6eafa7da9ba1a452190db17eb3",
+                    "datavalue": {
+                      "value": "1117847174158",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$2e311989-4057-0101-d431-b610aae7cfeb",
+                  "rank": "normal"
+                }
+              ],
+              "P159": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P159",
+                    "hash": "0ad37235dbdc8b7e4dde6a8b964b7d8347e5a24a",
+                    "datavalue": {
+                      "value": {
+                        "entity-type": "item",
+                        "numeric-id": 656,
+                        "id": "Q656"
+                      },
+                      "type": "wikibase-entityid"
+                    },
+                    "datatype": "wikibase-item"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$c28599d6-464a-1210-a957-90aea348e450",
+                  "rank": "normal"
+                }
+              ],
+              "P8687": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "8d059c4984c7421fff5cee64384bdf5a9e25278e",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+153233",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$77e56b7c-414a-9cc9-f319-9c3b5ef56cac",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "92103d8fea0ec9bd137c8018907b82f97ec16376",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+8782",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$7d5d1fea-4fe6-4d64-881c-18ba5ad7d0c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "31b9c9c686f610d2724d7fbfc151468cb85d63b2",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+21400",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "a3c26b78d85d463d95d416f5385c27217531886e",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$1160965d-453b-5c42-e592-e856bb6191b9",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "ae5a758fbe3241fa8bdd59bcff6ff0420b80829d",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+22800",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P2397"
+                  ],
+                  "id": "Q124827469$c19a4d2c-4fe0-4938-f24c-701b940de4c4",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "e275b1cbee2d8d262d76765bc91eaaf614d518c0",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+11600",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3789": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3789",
+                        "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                        "datavalue": {
+                          "value": "gaga_games",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3789"
+                  ],
+                  "id": "Q124827469$14fb65c9-4528-db41-f080-2bc09dfc337b",
+                  "rank": "normal"
+                },
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P8687",
+                    "hash": "b33b8dfd2d5d4cc8f45d943d5a4225f3f7e533be",
+                    "datavalue": {
+                      "value": {
+                        "amount": "+159713",
+                        "unit": "1"
+                      },
+                      "type": "quantity"
+                    },
+                    "datatype": "quantity"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "981925cc887b95122e69b09f6ed9475e801ec771",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2025-04-01T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P3185": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3185",
+                        "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                        "datavalue": {
+                          "value": "gagagames",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P585",
+                    "P3185"
+                  ],
+                  "id": "Q124827469$f43f7a53-47d5-a9b6-147c-957ade916d7d",
+                  "rank": "normal"
+                }
+              ],
+              "P3185": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3185",
+                    "hash": "ac21c64e9da0a9700ae6cee530520b8d51ee9242",
+                    "datavalue": {
+                      "value": "gagagames",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "54e4cee2bd67fc45060c6b1b33406d3764eb6e1c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2010-03-15T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580"
+                  ],
+                  "id": "Q124827469$77a366f3-4b7e-3123-2240-78961b730e24",
+                  "rank": "normal"
+                }
+              ],
+              "P3789": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P3789",
+                    "hash": "0619062c26a47cbdb67944efa16f09fa239ffd1a",
+                    "datavalue": {
+                      "value": "gaga_games",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$25b55451-45bb-df35-bd9f-35cd1a2eefe2",
+                  "rank": "normal"
+                }
+              ],
+              "P11245": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P11245",
+                    "hash": "aabc4e3220b039a04a69007036578e9fca84674a",
+                    "datavalue": {
+                      "value": "pitergaga",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P2397": [
+                      {
+                        "snaktype": "value",
+                        "property": "P2397",
+                        "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                        "datavalue": {
+                          "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                          "type": "string"
+                        },
+                        "datatype": "external-id"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P2397"
+                  ],
+                  "id": "Q124827469$e70efcfa-49a6-5a5c-34e9-5c50630a0d51",
+                  "rank": "normal"
+                }
+              ],
+              "P2397": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2397",
+                    "hash": "c630bc6ea486cbe09d1e652f7f18159218e62ee6",
+                    "datavalue": {
+                      "value": "UCb4IXRZxOiIsgNp9p1A9HEA",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "qualifiers": {
+                    "P580": [
+                      {
+                        "snaktype": "value",
+                        "property": "P580",
+                        "hash": "d260f3a7941585dd9735846f1f294e523f6cfb3c",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2011-07-19T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ],
+                    "P1810": [
+                      {
+                        "snaktype": "value",
+                        "property": "P1810",
+                        "hash": "ab5c1db31e22532c29a9b370166bee71ed9a6511",
+                        "datavalue": {
+                          "value": "Настольные игры с GaGa Games",
+                          "type": "string"
+                        },
+                        "datatype": "string"
+                      }
+                    ],
+                    "P3744": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3744",
+                        "hash": "b47d075f6023bf5d37ae1717c316d7c2dc239eb6",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+21400",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P3740": [
+                      {
+                        "snaktype": "value",
+                        "property": "P3740",
+                        "hash": "88b16b700c1a41e857fe94a755f19332e6ce81a8",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+427",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P5436": [
+                      {
+                        "snaktype": "value",
+                        "property": "P5436",
+                        "hash": "ef4ec8587eaf3e329f6021125cec2c02b73cb541",
+                        "datavalue": {
+                          "value": {
+                            "amount": "+10397067",
+                            "unit": "1"
+                          },
+                          "type": "quantity"
+                        },
+                        "datatype": "quantity"
+                      }
+                    ],
+                    "P585": [
+                      {
+                        "snaktype": "value",
+                        "property": "P585",
+                        "hash": "2808ea324838815f16609d96542691ce7521718f",
+                        "datavalue": {
+                          "value": {
+                            "time": "+2024-06-16T00:00:00Z",
+                            "timezone": 0,
+                            "before": 0,
+                            "after": 0,
+                            "precision": 11,
+                            "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                          },
+                          "type": "time"
+                        },
+                        "datatype": "time"
+                      }
+                    ]
+                  },
+                  "qualifiers-order": [
+                    "P580",
+                    "P1810",
+                    "P3744",
+                    "P3740",
+                    "P5436",
+                    "P585"
+                  ],
+                  "id": "Q124827469$e783dd0c-4877-dc69-4332-6314f6ab2981",
+                  "rank": "normal"
+                }
+              ],
+              "P2391": [
+                {
+                  "mainsnak": {
+                    "snaktype": "value",
+                    "property": "P2391",
+                    "hash": "d47ead41657b33c680df7af8332bbfa795f673f8",
+                    "datavalue": {
+                      "value": "90877221",
+                      "type": "string"
+                    },
+                    "datatype": "external-id"
+                  },
+                  "type": "statement",
+                  "id": "Q124827469$88bac42b-46e9-6b3d-5ba9-449eba1af387",
+                  "rank": "normal"
+                }
+              ]
+            }
+          },
+          "cacheFile": "research/source-files/native-held-crosscheck/related-qids-response.json",
+          "cacheSha256": "ef88494f7c7123342445051e012efa78cb19c0992bf4cf5354f8a019b7e8c141"
+        },
+        "limits": [
+          "Identity research only; no rule approval, edition-rule transfer or saved-claim repair.",
+          "Selected mul title remains exactly preserved; there is no P1476 claim, English label or alias invented.",
+          "Numeric mapping remains the exact preserved normal P2339 statement. All five complete original primary HTML bodies contain none of the four candidate numeric literals or BGG hrefs.",
+          "Game P856 absent. Matching saved P123 to Q124827469 is bridged through its complete preserved normal P856 https://www.gaga-games.com statement with Russian qualifier.",
+          "No duplicate matches in read-only effective inventory names, all catalog names/aliases or identity overrides at bound HEAD.",
+          "Russian publisher/product context is a forthcoming product listing, expected arrival November2026; no claim of released stock, original/latest edition or precise imprint.",
+          "Manual anchor https://gaga.ru/gaga/files/pdf/rules/ru/8181.pdf (6.1MB display) observed at anchor6388 but not retrieved; no opening or mode claim.",
+          "Physical contents and draft/dice description are primary product facts; do not equate unresolved saved genre/class QIDs with inferred labels.",
+          "Preserve saved age8 versus product10 and saved30/45-minute quantities versus product0.5-1hour.",
+          "Saved Q459719 creator label unresolved; no name, authorship repair or invented creator comparison.",
+          "Product placeholder box dimensions0cm and100g are not adopted as factual metadata."
+        ]
+      },
+      "rootIdentityReview": {
+        "reviewedOn": "2026-09-26",
+        "reviewer": "Codex source review, authorized by the owner",
+        "baselineDecisionsSha256": "c36fcc87bdca413817b7b66a4996ad55ec64bf71d0f44e9b823baabbf3728e88",
+        "originalIntakeManifestSha256": "9c4c89748444ed41866193d86307774753260742ce931fef0b9db47735cdd6a2",
+        "originalProposalSha256": "a9df1aecb2c1b29b3634d35f70238d0463825899721703347a150961d4d547cf",
+        "scope": "Semantic identity acceptance for Final Titan; three bounded holds. Exact saved P2339 remains the only numeric ID proof. No starting-rule or edition-transfer approval."
+      }
     },
     {
       "bggId": "430533",

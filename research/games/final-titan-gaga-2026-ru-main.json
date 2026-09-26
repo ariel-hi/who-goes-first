@@ -1,0 +1,91 @@
+{
+  "id": "final-titan-gaga-2026-ru-main",
+  "slug": "final-titan-gaga-2026-ru-main",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Final Titan",
+  "aliases": [
+    "Последний Титан"
+  ],
+  "editionLabel": "GaGa Games · English summary of the Russian base-game manual · ©2026 · main competitive mode · 3–5 players",
+  "firstPlayerRule": "The player whose titan has the highest speed takes the first main turn. Phase 1 then proceeds clockwise.",
+  "officialTieBreak": "If the highest speeds tie, compare the tied players' second-fastest bench titans, then their next-fastest titans. If the tie remains, draw lots.",
+  "houseFallback": null,
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "The youngest player starts the setup draft, choosing one titan from three face-up cards; drafting proceeds clockwise until each player has three titans. For a first game, the manual instead says to deal three titan cards to each player.",
+    "After titan selection, players apply their titans' Start of Game abilities in turn, beginning with the player whose titan has the highest speed, before entering Phase 1.",
+    "Once two titans are on the arena, the faster arena titan's player acts first in enhancement and combat; if their speeds tie, the contender acts first. This is a separate order from the initial main turn.",
+    "After a duel, return to Phase 1 with the player to the left of the previous contender. If that player also fought in the previous duel, start with the player to their left; the remaining champion does not take part in this phase.",
+    "This English summary covers the main competitive opening in the reviewed Russian manual. The two-player, two-versus-two, solo/cooperative, challenge and expansion rules are separate scopes.",
+    "Follow a titan or enhancement card if its text overrides a general rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gaga.ru/gaga/files/pdf/rules/ru/8181.pdf",
+      "title": "Последний Титан - Правила, Russian publisher manual",
+      "publisher": "GaGa Games / ООО «ГаГа Трейд»",
+      "printedPages": [
+        "9",
+        "8",
+        "7",
+        "11",
+        "12",
+        "14",
+        "35",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        8,
+        7,
+        11,
+        12,
+        14,
+        35,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        5
+      ],
+      "location": "Determine the First Player and Phase 1 opening, then titan-selection setup, arena combat order, next-contender restart, Russian imprint and separate mode/expansion boundaries; Golden Rules: card text overrides general rules",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://gaga.ru/game/final-titan/",
+      "title": "Последний Титан (Final Titan) - official publisher-linked Russian product",
+      "publisher": "GaGa Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Literal Russian/Final Titan title pair, 1-5 product count, Russian manual anchor and expected November 2026 arrival",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Historical unapproved intake note, preserved before root review:\nUNAPPROVED ignored research record for preserved identity candidate 428280 / Q139969586 / snapshot /candidates/264; no root approval or runtime enrollment asserted. Exact original product anchor 6388 binds this complete 36-page PDF; full retrieval/hash and original bytes preserved in final-titan-manual-source.json. One GET of two, HTTP 200, no redirect or retries, 6,400,583 bytes. Complete full text and all 36 uncropped Poppler renders retained; visually inspected complete pages recorded in render-manifest.json. PDF 9 gives highest speed, successive next-fastest bench comparison and draw lots; PDF 8 distinguishes youngest setup draft and first-game deal from highest-speed Start-game effects. PDF 11-12 give separate arena speed/contender tie order and first combat turn; PDF 14 gives left-of-previous-contender restart and previous-fighter exception. PDF 35 identifies Russian edition prepared by GaGa Games and copyright ООО «ГаГа Трейд», 2026. Main 3-5 scope uses the primary product 1-5 maximum and excludes solo/cooperative and dedicated two-player/team modes; no manual-wide heading literally says 3-5. PDF metadata epoch dates are not edition evidence. Frozen identity evidence remains unchanged. No saved creator, age, time, year or numeric claim repaired; no other-language or edition transfer.\nRoot independently read the complete extracted manual context and opened21 complete PDF pages:1,4,5,6,7,8,9,10,11,12,14,15,28,29,30,31,32,33,34,35,36. Printed numerals for all cited pages were visually confirmed; opening PDF9 is distinct from youngest drafting PDF8. The literal Russian title alias is from the publisher-linked product and manual cover, not a guessed translation. Main3–5 is an explicitly bounded subset, not a quoted manual-wide range. Root approved only the final catalog revision under standing owner authorization; this research copy preserves a separate needs-review lifecycle. Full original unapproved proposal and manifest remain immutable.",
+  "uncertainty": [
+    "This is an English summary of the Russian GaGa manual; no original or English manual, latest revision, printed edition number, release day or universal edition equivalence was established.",
+    "Main 3-5 scope combines the publisher-linked product 1-5 range with the separately described solo/cooperative, duel and team modes. The manual does not provide a main-mode 3-5 heading.",
+    "The source says to draw lots for a remaining opening speed tie without prescribing a particular random device. No house fallback is supplied.",
+    "Individual titan/card rules can override the general manual. Unique effects and card timing exceptions are outside this opening summary.",
+    "Two-player mode gives five enhancement cards and four titans per player and forces Challenge. In two-versus-two, allies jointly choose the replacement titan after their titan loses. Solo/cooperative play starts with the opponent champion and humans agree who sends a titan. These modes are excluded from this record.",
+    "Optional betting is placed between Phase 1 and Phase 2 and reveals bets simultaneously; it does not establish the initial main starter. Pantheon and Mindbug expansions are not proposed for approval.",
+    "PDF metadata epoch CreationDate/ModDate are file facts only; printed Russian copyright 2026 is the edition label evidence. The product is still an expected November 2026 listing at retrieval.",
+    "PDF credits list Кристиан Кудаль and Ричард Гарфилд as authors. No saved Q459719 label was independently resolved, and no identity creator claim was repaired. Saved age 8 versus product 10 and saved 30/45 minutes versus product 0.5-1 hour remain unchanged."
+  ]
+}
