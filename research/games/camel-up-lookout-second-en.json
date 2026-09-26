@@ -1,0 +1,41 @@
+{
+  "id": "camel-up-lookout-second-en",
+  "slug": "camel-up-lookout-second-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Camel Up",
+  "aliases": [],
+  "editionLabel": "Lookout English second edition",
+  "firstPlayerRule": "The youngest player takes the starting-player marker and goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are tied, choose randomly among them.",
+  "clarifications": [
+    "The marker holder begins the first leg by taking one action; play then proceeds clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lookout-spiele.de/upload/en_camelup.html_CamelUp_PZE30070_Rules_EN_WEB_240305.pdf",
+      "title": "Camel Up — English rulebook",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup step 9; Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "The official Lookout product page links this English second-edition rulebook. Printed page 2 is PDF page 1. Setup step 9 gives the marker to the youngest player, and printed page 3 connects it to the opening action. Source custody: research/source-files/popular-sep26-02/camel.pdf; SHA-256 594a2c074124037ad4ebaca8b76f8f4f1bd464ab913c20f488eb54d749373cdd. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The cited setup does not give a tie-break if players are equally young."
+  ]
+}
