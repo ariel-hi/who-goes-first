@@ -1,0 +1,55 @@
+{
+  "id": "star-wars-imperial-assault-ffg-en",
+  "slug": "star-wars-imperial-assault-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "c89b4efcadc29f23b6683c9ee1e11424744361fd65cacaf88835bbb30d2430b0",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Star Wars: Imperial Assault",
+  "aliases": [],
+  "editionLabel": "FFG English core game",
+  "firstPlayerRule": "In campaign play, the Rebels choose one of their figures to activate first. In a skirmish, the player whose army has the lower total Deployment cost chooses who starts with initiative; that player activates first.",
+  "officialTieBreak": "In a skirmish with equal total Deployment costs, determine initiative randomly.",
+  "houseFallback": null,
+  "clarifications": [
+    "Campaign play alternates a Rebel figure’s activation with an Imperial group’s activation.",
+    "In a skirmish, players alternate activating deployment groups. Pass initiative to the opponent at the end of the round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/84/fc/84fcff54-eafe-45ec-acf4-538a86e1acfc/imperial_assault_learn_to_play_guide.pdf",
+      "title": "Star Wars: Imperial Assault — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4",
+        "5",
+        "11"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5,
+        11
+      ],
+      "location": "Learn to Play — Playing a mission; Activating a figure; Playing campaign missions",
+      "checkedAt": "2026-09-26"
+    },
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/40/bf/40bf75d2-abf8-4919-b3e2-da1f98bf269c/imperial_assault_skirmish_guide.pdf",
+      "title": "Star Wars: Imperial Assault — English Skirmish Guide",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Skirmish setup — Determine initiative; Playing a skirmish",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official FFG Learn to Play and Skirmish Guide PDFs. Rendered Learn to Play4–5 establish Rebels-first and their choice of figure;11 applies the same activation phase to campaign missions. Rendered Skirmish Guide4 separately establishes lowest army cost choosing initiative, random equal-cost tie, initiative-first activation and round-end transfer. These distinct modes are stated explicitly. Source custody: research/source-files/popular-sep26-04/imperial.pdf; SHA-256 31e496fdc97b9df7a8f38ccbd36561dc16265c142ff1cc3597fe6217f4707cc9; research/source-files/popular-sep26-04/skirmish.pdf; SHA-256 df19d7bcf77054e6ae04ed8b8281e05862c9d756d9b6f578377525724a8fc1ed. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
