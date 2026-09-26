@@ -3,12 +3,15 @@
   "slug": "thats-pretty-clever-schmidt-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7271d349aa563049d9912469b87a66ffe5f203959a38927b74ba12fd3d85d696",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "00b3a43ebc9801d98a2bf819b46daafb90859a66e4e5ad1b77255597d59c694a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-26",
   "gameName": "That's Pretty Clever (aka Ganz schön clever)",
-  "aliases": [],
+  "aliases": [
+    "That's Pretty Clever!",
+    "Ganz schön clever"
+  ],
   "editionLabel": "Schmidt Spiele English rules",
   "firstPlayerRule": "Choose a starting player at random; that player takes the six dice.",
   "officialTieBreak": null,
@@ -32,6 +35,6 @@
       "checkedAt": "2026-09-24"
     }
   ],
-  "internalEvidence": "The Schmidt Spiele English rules say to randomly choose a starting player and give them six dice in setup on page 1. The Wolfgang Warsch game title and Schmidt Spiele credits match inventory BGG 244522. SHA-256: 04fa72ab515b10eb314e9745c490645f8dc582ace2de4b49b7815c9851bccf53. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
+  "internalEvidence": "The Schmidt Spiele English rules say to randomly choose a starting player and give them six dice in setup on page 1. The Wolfgang Warsch game title and Schmidt Spiele credits match inventory BGG 244522. SHA-256: 04fa72ab515b10eb314e9745c490645f8dc582ace2de4b49b7815c9851bccf53. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition. Alias review 2026-09-26: re-downloaded source bytes match the recorded SHA-256; visually checked the cover title Ganz schön clever (That’s Pretty Clever!). Added both standalone names for exact normalized discovery matching; no duplicate edition created.",
   "uncertainty": []
 }
