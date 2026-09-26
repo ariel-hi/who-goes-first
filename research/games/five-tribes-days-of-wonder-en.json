@@ -1,0 +1,44 @@
+{
+  "id": "five-tribes-days-of-wonder-en",
+  "slug": "five-tribes-days-of-wonder-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Five Tribes: The Djinns of Naqala",
+  "aliases": [
+    "Five Tribes"
+  ],
+  "editionLabel": "Days of Wonder English base game",
+  "firstPlayerRule": "Randomly place the turn markers on the Bid Order track. The marker in position 1 bids first; after bidding, the highest bid takes the first action turn.",
+  "officialTieBreak": "Positive bids must use different spaces. Among zero bids, the last marker placed acts first; the first zero bidder acts last.",
+  "houseFallback": null,
+  "clarifications": [
+    "With two players, each player uses two turn markers and takes two action turns per round.",
+    "Bidding is repeated each round. Initial bid order does not by itself determine who takes the first action."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/8401-FT-Rules-EN.pdf",
+      "title": "Five Tribes — English rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Setting up the game; Game turn and Bid for Turn Order",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Publisher product page links this English manual. Setup randomizes bid markers; the bidding section distinguishes bidding priority from action priority and resolves zero-bid order. Source custody: research/source-files/popular-sep26/five-tribes.pdf; SHA-256 4c2d44130025cbfc8ce52228a7609bd1fda8f7133f193913190d16fbc7d39231. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This record covers the base game; expansion rules are outside this review."
+  ]
+}
