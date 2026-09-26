@@ -1,0 +1,65 @@
+{
+  "id": "mage-knight-wizkids-en",
+  "slug": "mage-knight-wizkids-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "94efe5299bbb8bf20c0f000fd1e3ad4a3d2aa3e0ba38427990ebd345916d1457",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Mage Knight Board Game",
+  "aliases": [
+    "Mage Knight"
+  ],
+  "editionLabel": "WizKids English Rulebook and Walkthrough, 2011",
+  "firstPlayerRule": "Each Round, the player who took the lowest-numbered Tactic card takes the first turn. Before that, players pick Tactics in order of lowest Fame; at the start everyone has 0 Fame, so ties go to the player whose Round Order token is lower in the column.",
+  "officialTieBreak": "Ties in Fame when choosing Tactics go to the player whose Round Order token is in the lower position.",
+  "houseFallback": null,
+  "clarifications": [
+    "Full game: players determine an order for choosing Heroes (the Rulebook gives no method), and Round Order tokens are stacked in that order with the first picker on top.",
+    "First (Walkthrough) game: the Round Order tokens are randomized during setup, and the player whose token is last picks a Tactic first.",
+    "After Tactics are chosen, the Round Order tokens are rearranged by Tactic number, lowest on top; that is the play order for the whole Round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://wizkidsgames.com/wp-content/uploads/mage/MK_rulebook_ENG_searchable-mar2012.pdf",
+      "title": "Mage Knight Board Game — Rulebook",
+      "publisher": "WizKids",
+      "printedPages": [
+        "1",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        3,
+        4
+      ],
+      "location": "Page 1, Player Order/Hero Selection; page 3, Round Order tokens in setup; page 4, Preparing a Round (Tactic selection)",
+      "checkedAt": "2026-09-25"
+    },
+    {
+      "url": "https://wizkidsgames.com/wp-content/uploads/mage/MK_walkthrough_ENG_searchable-mar2012.pdf",
+      "title": "Mage Knight Board Game — Game Walkthrough",
+      "publisher": "WizKids",
+      "printedPages": [
+        "5",
+        "7",
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        7,
+        13
+      ],
+      "location": "Page 5, Round Order Token (randomize); page 7, Choosing Tactics and Taking Turns; page 13, Tactics",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Both PDFs are linked from the WizKids Mage Knight page (https://wizkids.com/mage-knight/); the wizkidsgames.com host no longer answered, so Internet Archive captures of the same URLs were downloaded. Rulebook SHA-256 d33d79b9dd202bea756bc8055bff9bff11885b5b17381941c81aab3f9b268b73 (20 pages); Walkthrough SHA-256 4b05da2e8e916a5bb0af369559225e1ef20be7f83a156b81d520771a85e2187e (20 pages). Rulebook page 1: determine an order for Hero selection, Round Order tokens stacked by pick order; page 4: lowest Fame picks a Tactic first, ties to the lower Round Order token, then tokens rearranged lowest Tactic number on top. Walkthrough page 5: randomize the Round Order tokens for now; page 7: lowest Tactic number goes first; page 13: token last in the random order picks first. Content matches Mage Knight Board Game BGG 96848. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The full-game Rulebook does not say how to determine the Hero selection order.",
+    "Solo and cooperative scenarios with the dummy player were not checked for different Tactic rules; the Ultimate Edition rulebook was not checked."
+  ]
+}

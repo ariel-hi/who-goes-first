@@ -1,0 +1,45 @@
+{
+  "id": "bang-dv-giochi-en",
+  "slug": "bang-dv-giochi-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "4612db5c77b1c14f8ddf81cdac380a0f841fc908bfd64111df7492d3bc1a8367",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "BANG!",
+  "aliases": [
+    "Bang",
+    "BANG! card game"
+  ],
+  "editionLabel": "dV Giochi English rules, fourth edition",
+  "firstPlayerRule": "Roles are dealt at random and the Sheriff reveals their role card. The Sheriff begins.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Play proceeds in turns in clockwise order from the Sheriff.",
+    "The Sheriff plays with one extra bullet (life point) beyond their character card."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dvgiochi.com/giochi/bang/download/Bang_rules_ENG.pdf",
+      "title": "BANG! — English rules",
+      "publisher": "dV Giochi",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Page 2, Setup (roles and Sheriff reveal); page 3, The Game",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the dV Giochi English rules, https://www.dvgiochi.com/giochi/bang/download/Bang_rules_ENG.pdf; SHA-256 08001b2c4ebb606cb1a0831b85e1a1c1a61e85a3dbd64bc2ae14d1ce8425871d, 12 pages. Page 2: role cards are shuffled and dealt face down, and the Sheriff reveals himself. Page 3, The Game: 'The Sheriff begins. The game is played in turns, in clockwise order.' Credits name Emiliano Sciarra and daVinci Editrice (dV Giochi), matching BANG! BGG 3955; the credits label the rules 'BANG! - Fourth edition'. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The PDF names the fourth edition but gives no year."
+  ]
+}

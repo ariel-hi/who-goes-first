@@ -1,0 +1,44 @@
+{
+  "id": "orleans-dlp-2014-en",
+  "slug": "orleans-dlp-2014-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "3a8f983fd61447982f43afe02d575231ce4f4d547806db1355f13b4a9257592f",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Orléans",
+  "aliases": [
+    "Orleans"
+  ],
+  "editionLabel": "dlp games English rules, 2014",
+  "firstPlayerRule": "The youngest player receives the Start Player Token and starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "In the Actions phase, players act one at a time beginning with the Start Player and going clockwise.",
+    "At the end of each round (Phase 7) the Start Player passes the Start Player Token to the player on their left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.dlp-games.de/tpl/download/Orleans_EN.pdf",
+      "title": "Orléans — English rules",
+      "publisher": "dlp games",
+      "printedPages": [
+        "14",
+        "15"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Page 14, Course of Play; page 15, Phase 5 (Actions) and Phase 7 (Start Player)",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules from the dlp games site (https://www.dlp-games.de/tpl/download/Orleans_EN.pdf); SHA-256 267ac223f04cba34b686f4dcdcb47460af3c9813a8f644b7ba46950f94750fad, 14 PDF pages carrying printed pages 12-24. Printed page 14: 'The youngest player receives the Start Player Token.' Printed page 15: actions begin with the Start Player clockwise; Phase 7 passes the token left. Credits read dlp games 2014; content (18 rounds, Hour Glass tiles, Place Tiles) matches Orléans BGG 164928. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "The rules give no tie-break if two players are equally young."
+  ]
+}
