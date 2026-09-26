@@ -1,0 +1,37 @@
+{
+  "id": "acquire-renegade-en",
+  "slug": "acquire-renegade-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Acquire",
+  "aliases": [],
+  "editionLabel": "Renegade English edition",
+  "firstPlayerRule": "Each player draws a building tile and places it on its matching board space. The player whose tile is closest to 1A goes first; play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Compare the letter before the number: the rulebook gives 9A as closer to 1A than 1B. Leave the drawn tiles on the board."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Acquire/Acquire_RGS_Rulebook_WEB.pdf",
+      "title": "Acquire — English rulebook",
+      "publisher": "Renegade Game Studios",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setup step 8",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Renegade English rulebook. RenderedPDF4printed2step8 closest1A and explicit9Abefore1B. This is a board-coordinate order, not geometric distance. Source custody: research/source-files/popular-sep26-11/acquire.pdf; SHA-256 37102dbf63f53dd9cd8f46ef19e6c43a30dcbdeae0ed59c493e5211c87cb3998. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
