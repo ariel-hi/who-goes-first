@@ -1,0 +1,45 @@
+{
+  "id": "battlestar-galactica-ffg-en",
+  "slug": "battlestar-galactica-ffg-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Battlestar Galactica: The Board Game",
+  "aliases": [
+    "Battlestar Galactica",
+    "BSG"
+  ],
+  "editionLabel": "Fantasy Flight Games English rulebook",
+  "firstPlayerRule": "Randomly choose a player to be the first player and give them the current player token. That player chooses their character first and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Character selection proceeds clockwise from the first player.",
+    "The starting player does not draw Skill Cards during setup; everyone else draws three.",
+    "Players take complete turns clockwise; at the end of a turn, the current player token passes to the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/Battlestar_Galactica/bsg-rulebook-web.pdf",
+      "title": "Battlestar Galactica: The Board Game — Rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        5,
+        6,
+        9,
+        11
+      ],
+      "location": "Setup steps 3, 4 and 8; Game Turn; end of the Crisis step",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the base-game rulebook from Fantasy Flight Games' own CDN and extracted text from PDF pages 5, 6, 9 and 11. Setup step 3 'Determine First Player: Randomly choose a player to be the first player, and give him the current player token. This player will choose his character first and take the first turn of the game.' Step 8: the starting player receives no Skill Cards during setup. Page 9: turns start with the first player and proceed clockwise; page 11: the current player token passes to the left. Credits list NBC Universal and SCI FI; this is the base game, BGG 37111, not the Pegasus/Exodus/Daybreak expansion rulebooks. SHA-256: ffea025b0bb70fb68c6137c51512103c0e43be3faf559e138a8a26b618a930ff. Owner authorized assistant review on 2026-09-25.",
+  "uncertainty": [
+    "No copyright year was found in the extracted text of this PDF."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "caverna-cave-farmers-lookout-en",
+  "slug": "caverna-cave-farmers-lookout-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "4fc99e3c0f898767590023e886c7cbbe7352f04911005b6121bfea5d370e5de5",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Caverna: The Cave Farmers",
+  "aliases": [
+    "Caverna"
+  ],
+  "editionLabel": "Lookout Games English rulebook",
+  "firstPlayerRule": "Randomly determine the player who gets the Starting player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Starting Food depends on turn order: the Starting player and the player to their left get 1 Food, the third player gets 2, and each other player gets 3.",
+    "In the Work phase, the Starting player places first, then play continues clockwise.",
+    "The token is not passed at the end of a round; a player becomes Starting player only by using the \"Starting player\" Action space."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.lookout-spiele.de/upload/en_caverna.html_Rules_Caverna_EN.pdf",
+      "title": "Caverna: The Cave Farmers — Rules",
+      "publisher": "Lookout Games",
+      "printedPages": [
+        "2",
+        "8",
+        "22"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        8,
+        22
+      ],
+      "location": "Page 2, setup (Starting player token and Food); page 8, Work phase; page 22, Action space: Starting player",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the English rules linked from Lookout Games' Caverna: The Cave Farmers page (lookout-spiele.de/en/games/caverna.html) and extracted text from PDF pages 1, 2, 8 and 22. Page 2: 'Randomly determine the player who gets the Starting player token', followed by the Food-by-position rule. Page 8: work phase begins with the Starting player, clockwise. Page 22: the token is not passed at round end; only the Starting player Action space changes it. Components (7 Home boards, Dwarf discs, Ruby gems) match the full base game, BGG 102794, not the two-player Cave vs Cave. SHA-256: 78ff760339bfaded920800e685d78c8b663ec78b187613e2a0251ba3e739e635. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No copyright year was found in the extracted text of this PDF.",
+    "The solo game is not covered by this record."
+  ]
+}

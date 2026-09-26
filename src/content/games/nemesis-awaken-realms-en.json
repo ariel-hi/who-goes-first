@@ -1,0 +1,44 @@
+{
+  "id": "nemesis-awaken-realms-en",
+  "slug": "nemesis-awaken-realms-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "54f34bb975c8be30362b8f141790f8366e607e3417a4e97d755420f6d41a4c48",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Nemesis",
+  "aliases": [],
+  "editionLabel": "Awaken Realms English rulebook",
+  "firstPlayerRule": "Deal one numbered Help card to each player at random. Player 1 gets the First Player token.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The Help card numbers also set the order for choosing Characters: Player 1 drafts first, then Player 2, and so on.",
+    "Starting with the first player and going clockwise, each player takes a turn of 2 Actions.",
+    "The First Player token passes to the left each round, except in the first turn of the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.nemesisgames.eu/documents/nemesis/Rulebook.pdf",
+      "title": "Nemesis — Game Manual",
+      "publisher": "Awaken Realms",
+      "printedPages": [
+        "8",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        8,
+        10
+      ],
+      "location": "Page 8, Game Setup steps 14, 17 and 19 (Crew Setup); page 10, Player Phase and First Player Token",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the Nemesis English rulebook from nemesisgames.eu (Awaken Realms' Nemesis site) and extracted text from PDF pages 3, 8 and 10, whose printed page numbers match. Page 8 step 14: 'Take as many Help cards as there are players and deal one to each player at random. These cards determine the order of choosing'; step 19: 'Player 1 gets the First Player token.' Page 10: the token passes left each round but not in the first turn; turns go clockwise from the first player. The designer's note names Adam Kwapiński's game and Awaken Realms, matching base game BGG 167355. SHA-256: 361b7df733bd97f40df76ff002063433724fb0d96a3307de0171cdbb00f84ae2. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "No printed edition year was found in the extracted text.",
+    "In the optional Intruder-player mode, the Intruder player never takes the First Player token."
+  ]
+}

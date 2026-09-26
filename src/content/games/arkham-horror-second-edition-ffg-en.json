@@ -1,0 +1,47 @@
+{
+  "id": "arkham-horror-second-edition-ffg-en",
+  "slug": "arkham-horror-second-edition-ffg-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
+  "approvedRevision": "573da8c765b88af615c0662e2da77072c3ee4a077d7e6eec3ced775dc9499343",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-25",
+  "gameName": "Arkham Horror",
+  "aliases": [
+    "Arkham Horror Second Edition",
+    "Arkham Horror 2e",
+    "AH2"
+  ],
+  "editionLabel": "Fantasy Flight Games second edition English rulebook, 2005",
+  "firstPlayerRule": "Select one player at random to be the first player and give them the first player marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "During each phase, every player acts in turn, starting with the first player and continuing clockwise.",
+    "At the end of each game turn, after the Mythos Phase, the first player marker passes to the player on the left.",
+    "The first player also makes group decisions when players cannot agree, such as monster placement."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/e8/17/e817095d-ac80-482b-867b-41b2e41a57f1/arkham_horror_core_rulebook.pdf",
+      "title": "Arkham Horror — Rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "5",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        12
+      ],
+      "location": "Page 5, Setup step 3 'Choose First Player' and The Game Turn; page 12, Turn End",
+      "checkedAt": "2026-09-25"
+    }
+  ],
+  "internalEvidence": "Downloaded the rulebook from Fantasy Flight Games' own CDN and extracted text from PDF pages 2, 4, 5 and 12. Page 5 setup step 3: 'Select one player at random to be the first player. Give the first player marker to that player.' Page 5 The Game Turn: each phase starts with the first player and continues clockwise; the marker passes left at the end of each turn. Page 12 Turn End repeats the pass to the left. Copyright line reads 2005, 2006 Fantasy Flight Publishing; this is the FFG second edition (Richard Launius/Kevin Wilson), BGG 15987, not the 2018 third edition. SHA-256: 97bd20dd2dca5fe7c07206fe25966937b453cd54404749712f3ed5aff2c6f9e5. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "uncertainty": [
+    "This record covers the 2005 second edition only; Arkham Horror third edition (2018) and the 1987 Chaosium original have separate rulebooks."
+  ]
+}
