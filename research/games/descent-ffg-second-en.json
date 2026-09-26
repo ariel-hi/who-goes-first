@@ -1,0 +1,37 @@
+{
+  "id": "descent-ffg-second-en",
+  "slug": "descent-ffg-second-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Descent: Journeys in the Dark (Second Edition)",
+  "aliases": [],
+  "editionLabel": "FFG English second edition",
+  "firstPlayerRule": "The hero players decide together which hero takes the first turn. All heroes take their turns before the overlord.",
+  "officialTieBreak": "If the heroes cannot agree on an order, they play clockwise starting with the player to the overlord’s left.",
+  "houseFallback": null,
+  "clarifications": [
+    "The heroes may agree on a different order each round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.fantasyflightgames.com/ffg_content/descent-second-ed/support/DJ01_Rulebook_ENG.pdf",
+      "title": "Descent: Journeys in the Dark (Second Edition) — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        7
+      ],
+      "location": "Playing the game",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official FFG English second-edition rulebook. Rendered printed/PDF7 explicitly starts with a hero, permits group-selected hero order each round and places overlord after all heroes. The separate choice of the overlord at setup does not choose the starting player. Source custody: research/source-files/popular-sep26-04/descent.pdf; SHA-256 389c7b1b5fe5548e6bf055bee102295b4828ccc6795d81aad6ae27602e628c0d. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
