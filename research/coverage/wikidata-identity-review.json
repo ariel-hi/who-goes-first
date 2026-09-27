@@ -2,12 +2,12 @@
   "reviewedOn": "2026-09-27",
   "sourceSnapshot": "research/coverage/wikidata-board-games.json",
   "sourceSnapshotStatementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
-  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule.",
+  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule. Additional identity-only review distinguishes 153 / Q1628545 as Hornochsen! (Take 5!) using separately preserved full Wikidata entity claims and normalized official AMIGO product/article 08940 evidence. The 53 earlier decisions and their historical scopes are retained; no starting-rule or edition transfer is authorized.",
   "method": "Read CC0 Wikidata item facts using wbgetentities and saved revisions, then corroborate accepted game/edition identities with original designer, publisher, federation, or association-hosted federation sources. Per-ID edition qualifiers are distinguished from item-wide publication years. Qualified display names prevent merging identical names. Holds retain unresolved ambiguity. Additional 315200 title review corroborates the saved P2339 identity binding with the official publisher expansion classification and qualified canonical BGG indexed item evidence. Failed destination opens and mixed Wikidata metadata remain explicit; no raw BGG HTTP, physical manual or printing correspondence is approved.",
   "factsAudit": "research/coverage/wikidata-identity-facts.json",
   "counts": {
-    "reviewed": 53,
-    "accept": 24,
+    "reviewed": 54,
+    "accept": 25,
     "hold": 29,
     "reject": 0,
     "newlyEligibleHeldIdentities": 16,
@@ -237,6 +237,22 @@
         "context": "Complete root web-tool search response; exact canonical numeric item result was crawled today by provider, not direct HTTP custody."
       },
       "approvalStatus": "reviewed-identity-evidence-only"
+    },
+    "hornochsenAmigoProduct": {
+      "kind": "primary-publisher",
+      "title": "Hornochsen! — official AMIGO product",
+      "url": "https://www.amigo-spiele.de/hornochsen_8940_1216",
+      "inspectedOn": "2026-09-27",
+      "observedEvidence": "AMIGO product title Hornochsen!, Wolfgang Kramer designer, Franz Vohwinkel artist; 98 playing cards and 12 special cards. Publisher expressly describes a different game derived from 6 nimmt!, collecting positive green and avoiding negative red values.",
+      "evidenceScope": "Normalized official web product identity observation; no raw HTTP or HTML-byte custody asserted"
+    },
+    "hornochsenAmigoGermanRules": {
+      "kind": "primary-publisher",
+      "title": "Hornochsen! — AMIGO German rules, article 08940, version 2.5",
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/08940-DE-AmigoRule.pdf",
+      "inspectedOn": "2026-09-27",
+      "observedEvidence": "Normalized two-page official German manual identifies article 08940, Wolfgang Kramer and Franz Vohwinkel, 2–6 players, 98 numbered cards and 12 special cards. Page 2 imprint carries 1998 and 2012 and version 2.5. This corroborates physical game identity; no PDF byte hash, visual page inspection, starting rule or translation/printing correspondence is approved.",
+      "evidenceScope": "Normalized web PDF text; full 170 extracted lines read, screenshot calls yielded only metadata without visible images"
     }
   },
   "decisions": [
@@ -2397,6 +2413,51 @@
       "reviewedBy": "root-primary-identity-review",
       "reviewedOn": "2026-09-27",
       "sourceEvidenceScope": "normalized-publisher-and-qualified-primary-indexed-identity-only"
+    },
+    {
+      "bggId": "153",
+      "wikidataId": "Q1628545",
+      "snapshotName": "Take 5!",
+      "displayName": "Hornochsen! (Take 5!)",
+      "decision": "accept",
+      "reason": "The unique normal-rank saved P2339 statement binds 153 to Q1628545, whose German label is Hornochsen! and whose description/2–6 player quantities distinguish a strategic successor from Q258972. Official AMIGO product and German article 08940 manual corroborate Hornochsen!, Wolfgang Kramer, and a distinct 98-numbered-card plus 12-special-card game. Qualified display name separates this identity from existing 432 / 6 nimmt!, whose checked 2024 anniversary rule remains separately scoped. Item-wide 1998/1999 dates are not synthesized into a release-year label; no starting rule, printing transfer or rule association is accepted.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1628545",
+            "url": "https://www.wikidata.org/wiki/Q1628545",
+            "revision": 2427362476,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1628545&oldid=2427362476",
+            "label": "Take 5!",
+            "description": "1998 card game, more strategic version of Take 5 (1994)",
+            "bggIdClaims": [
+              {
+                "value": "153",
+                "rank": "normal",
+                "qualifiers": {},
+                "statementId": "Q1628545$098F3D0C-5820-411B-A1EF-A35049771DB4"
+              }
+            ],
+            "nativeLabel": {
+              "language": "de",
+              "value": "Hornochsen!"
+            },
+            "rawResponseSha256": "14489a5d2ec9adcac9c3aa62c9f0bfae602c84f3cd854857c0447b7678c0e60d"
+          }
+        ],
+        "primarySourceIds": [
+          "hornochsenAmigoProduct",
+          "hornochsenAmigoGermanRules"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "requiredFollowup": "Exact German-manual or other-language starting-rule research requires separate source custody, complete visual review and an independently reviewed rule/identity association. Preserve the existing 432 checked rule and its aliases."
     }
   ]
 }

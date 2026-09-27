@@ -1,0 +1,32 @@
+import {test,expect} from '@playwright/test';
+
+for (const width of [320,1280]) {
+  for (const [id,name] of [['266083','L.A.M.A.'],['318195','Biss 20'],['153','Hornochsen! (Take 5!)']] as const) {
+    test(`pending identity ${id} remains distinct and usable at ${width}px`,async ({page,request})=>{
+      const expectedHead=process.env.WGF_CATALOG_EXPECTED_HEAD;
+      const marker=async()=>{if(expectedHead){const response=await request.get(`/release.json?verify=${Date.now()}`);expect(response.status()).toBe(200);expect(await response.json()).toEqual({commit:expectedHead});}};
+      await marker();
+      const pageErrors:string[]=[];page.on('pageerror',error=>pageErrors.push(error.message));
+      await page.setViewportSize({width,height:844});
+      await page.goto('/board-games/');
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href','https://whogoesfirst.fun/board-games/');
+      await page.getByRole('searchbox',{name:'Search board games'}).fill(id);
+      await page.getByRole('button',{name:'Awaiting a rule',exact:true}).click();
+      const row=page.locator(`[data-results] li[data-id="${id}"]`);
+      await expect(row).toHaveCount(1);
+      await expect(row).toHaveAttribute('data-has-rule','false');
+      await expect(row.locator('summary')).toContainText(name);
+      await expect(row).toContainText('No checked starting rule yet');
+      await row.locator('summary').focus();await page.keyboard.press('Enter');
+      await expect(row.getByRole('link',{name:'Pick a player',exact:true})).toBeVisible();
+      await expect(row.getByRole('link',{name:'Pick a player',exact:true})).toHaveAttribute('href','/');
+      await expect(row.getByRole('link',{name:/View game on BoardGameGeek/})).toHaveAttribute('href',`https://boardgamegeek.com/boardgame/${id}`);
+      await expect(row.locator('a[href^="/games/"]')).toHaveCount(0);
+      expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+      await page.getByRole('button',{name:'With a rule',exact:true}).click();
+      await expect(page.locator('[data-results] li')).toHaveCount(0);
+      await expect(page.getByRole('heading',{name:'No matching games'})).toBeVisible();
+      expect(pageErrors).toEqual([]);await marker();
+    });
+  }
+}

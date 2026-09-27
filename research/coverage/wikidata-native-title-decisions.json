@@ -9,13 +9,13 @@
   "method": "Reviewed all 13 previously unheld bounded leads against accessible official author/publisher identity sources, plus a small explicit set of modern mul-label products. Preserved native text/language without translated-title guesses. A literal external-ID hyperlink on a primary page is treated as evidence from that page alone; its destination is never requested. Ambiguous edition cases remain held. A subsequent independent root review reconciled ten additional exact mul-label candidates against cached original publisher context and matching nondeprecated P2339 claims: four accepted identities with literal primary-hosted numeric hrefs, six reviewed holds without independent exact numeric mapping. Intake bundles retain their original decisions-file hash as historical evidence. A subsequent root semantic identity review resolved three already reviewed holds using exact saved creator/publisher/product and related official-QID domain evidence. Numeric ID provenance for those three remains Wikidata-only; earlier hold dispositions and the independently reviewed caches are retained. A subsequent independently reviewed Super Meeple product page resolved the Ironwood hold through its literal exact 407343 numeric href and preserved publisher/domain bridge. The full prior hold and age/edition limits remain retained; no rule approval or saved creator claim was transferred. A subsequent root-reviewed Frosted Wroth/Groll partnership bridge and Super Meeple Beyond the Horizon literal numeric href resolved the remaining two holds from the ten-candidate review. Wroth retains Wikidata-only numeric provenance; Horizon retains its primary-hosted exact href. Complete prior holds and all mode/age/year/creator limits remain preserved, with no rule or claim repair. Root independently reviewed Northgard: Uncharted Lands, ImmunoWars and Townsfolk Tussle from six preserved primary bodies with complete prior holds; exact native titles and saved P2339 mapping retained. Semantic identity enrollment only, without primary numeric reconfirmation, edition rules or qualified metadata repair. Root independently reviewed a new six-GET GaGa intake: Final Titan accepted from an exact saved publisher/domain/schedule/product native-title bridge; Nekojima, Nanatoridori and Lone Wolves retain target-context holds after the inspected endpoints. All four prior unreviewed holds, immutable snapshots and numeric provenance remain preserved. The future product date and age/time/creator limits are explicit; no rule or claim repair. Root independently reviewed complete saved native entities and primary CrowD context: Stars of Akarios, Aqua Garden and Harrow County accepted with separately observed exact primary numeric hrefs; Dino Garden accepted through the exact native publisher/title/physical-product bridge with Wikidata-only numeric authority. Octex retains a reviewed human/musician misassociation hold. Complete prior holds and source/metadata/edition limits are preserved. Dino unbound collection numeric href remains an observation, not a verified title binding. No rule or claim repair. Root-reviewed Spectacular 415147, The Great Library 432834 and Yami 452684 as distinct identities using complete saved entities, exact primary numeric collection hrefs and physical publisher product context. Original null priorBoundedDisposition is retained with complete old holds in identityReviewHistory. Six sources have project-relative cacheFile bindings. Yami product-title conflict and P144 relationship to Kakapo remain explicit; no merge, rules, metadata repair or edition transfer. Root completed both full primary reviews: Brass 452264 is accepted by semantic publisher/native physical-product context with numeric evidence remaining Wikidata-only; En Route 418683 stays held because primary 406454 and 2024/2025 edition scope remain unresolved. Four cached sources appended; 286 other decisions, all 893 rule records and 44 overrides unchanged. Root completed full Amigo publisher/entity/product reviews: Lama Dice325853, Cabanga394889 and Meister Makatsu447384 accepted as identities only; numerical provenance remains saved Wikidata-only. Three cached sources appended; 285 other decisions, all893 approved/draft records and44 overrides unchanged. Nine other saved Amigo candidates remain unreviewed; pool not exhausted. Root and an independent reviewer completed all three primary/entity/hold/collision reviews for Schnapp, Land, Fluss!15828, Speed Cups146149 and Fischfutter433340. Semantic identity acceptance only; numeric IDs remain saved Wikidata-only. Fisch is supported by the complete preserved publisher index, not its fresh404. Three complete previous holds and all creator/year/printing/alias/edition limits remain preserved. Six other saved AMIGO candidates remain unreviewed; broader inventory is unfinished. Root-approved X-Code257957 and Schmidt Auch schon clever354892, Große kleine Edelsteine409498 and Topp die Torte!423232 exact physical identities and separate English-summary manual mappings applied from immutable reviewed packages. Numeric evidence remains saved own Wikidata P2339 only; all four complete previous holds, source bytes and language/printing/creator/alias/edition limits remain preserved. Only the standalone Auch initial birthday roller criterion joins the portable pool; simultaneous X-Code/Edel and phase2 Torte remain excluded. Mausefalle25097 is outside this application. Root-approved semantic Mausefalle25097 native identity and distinct standard40505/compact51405 German-summary rule mappings applied from exact immutable packages and explicit edition correspondence. Numeric evidence remains own saved normal Wikidata P2339 only; complete prior hold and distinct setup/player/order/source contexts preserved. No identical-rules, printing/version, creator-QID or alias transfer. Only standard40505 enters the portable pool; compact remains searchable as a separate edition but is intentionally excluded to avoid double weight. Root separately approved Shadow Cards after full primary and independent identity/rule review. Complete prior hold remains preserved, numeric identity remains Wikidata-only, and semantic approval flags do not transfer edition rules. The exact catalog answer is approved separately and excluded from the portable pool.",
   "counts": {
     "totalCandidates": 288,
-    "reviewed": 65,
-    "unreviewed": 223,
-    "accept": 53,
-    "hold": 235,
+    "reviewed": 67,
+    "unreviewed": 221,
+    "accept": 55,
+    "hold": 233,
     "priorUnheldReviewed": 13,
     "priorUnheldAccepted": 10,
-    "additionalAccepted": 43
+    "additionalAccepted": 45
   },
   "sources": {
     "kramer-author": {
@@ -1351,6 +1351,118 @@
       "cacheFile": "research/source-files/sep26-shadow-cards-root-intake/german-manual.pdf",
       "retrievedAt": "2026-09-26T21:20:06.801651+00:00",
       "scope": "Root-reviewed primary physical identity and exact German Version2.0 manual source. Numeric identity remains saved Wikidata-only; no alias/printing/creator-QID or language/version transfer."
+    },
+    "amigo-lama-product": {
+      "url": "https://www.amigo-spiele.de/lama_1907_1090",
+      "finalUrl": "https://www.amigo-spiele.de/lama_1907_1090",
+      "status": "retrieved",
+      "sha256": "55f4f42cf4f317dee28b60c4770425c82478884645cd4a06edb8a444f4b742e6",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/amigo-lama-product.html",
+      "byteCount": 238259,
+      "kind": "primary-publisher",
+      "observedEvidence": "Literal publisher LAMA product: Reiner Knizia; 56 cards and 70 chips. Syndicated third-party reviews in the body are excluded from identity authority.",
+      "retrievedAt": "2026-09-27T16:26:19.1720258Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/amigo-lama-product.receipt.json",
+      "retrievalReceiptSha256": "e65db402696171e93c6b947e927fa4d1f36066647d3ce82fabf44eb23fd111a2",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "amigo-lama-own-title-bridge-2019": {
+      "url": "https://blog.amigo-spiele.de/2019/06/24/spielezeit-5-saison-2019/",
+      "finalUrl": "https://blog.amigo-spiele.de/2019/06/24/spielezeit-5-saison-2019/",
+      "status": "retrieved",
+      "sha256": "8121c9bd46d9265cd409a5a5f121eab69e1d8dc28722a171647e0db828f49f66",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/amigo-lama-own-title-bridge-2019.html",
+      "byteCount": 72974,
+      "kind": "primary-publisher",
+      "observedEvidence": "Publisher own 2019 prose uses L.A.M.A. and LAMA for its card game; acronym expansion supplies the native-name bridge.",
+      "retrievedAt": "2026-09-27T16:26:25.1462815Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/amigo-lama-own-title-bridge-2019.receipt.json",
+      "retrievalReceiptSha256": "b783f9d796b3444535044dee6d155f2715a61a52822ab03479dca97fe345c0f4",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "amigo-lama-own-title-bridge-2026": {
+      "url": "https://blog.amigo-spiele.de/2026/08/20/spiele-fuer-die-mittagspause/",
+      "finalUrl": "https://blog.amigo-spiele.de/2026/08/20/spiele-fuer-die-mittagspause/",
+      "status": "retrieved",
+      "sha256": "7f695fdcf9fce75fa428a5659a11c1c957451f1526659e192062e0ff46392579",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/amigo-lama-own-title-bridge-2026.html",
+      "byteCount": 78406,
+      "kind": "primary-publisher",
+      "observedEvidence": "Publisher own 2026 prose links literal L.A.M.A. to the exact lama_1907_1090 product URL and describes the card game.",
+      "retrievedAt": "2026-09-27T16:26:30.3431378Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/amigo-lama-own-title-bridge-2026.receipt.json",
+      "retrievalReceiptSha256": "35ed26148a141fef32fba3956ed6dbc762bb32377b89efff8b84601264b7099f",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "amigo-lama-family-boundary": {
+      "url": "https://blog.amigo-spiele.de/2021/11/16/lama_weltweit/",
+      "finalUrl": "https://blog.amigo-spiele.de/2021/11/16/lama_weltweit/",
+      "status": "retrieved",
+      "sha256": "2d0fffd33e22adca9139215e23b99d157ea9646b88b6dab56c37a960fddd913f",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/amigo-lama-family-boundary.html",
+      "byteCount": 76340,
+      "kind": "primary-publisher",
+      "observedEvidence": "Publisher own family article separately names/links base LAMA, Party and Dice. No manual, printing, localization, rules or family identity merge inferred.",
+      "retrievedAt": "2026-09-27T16:26:35.8457535Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/amigo-lama-family-boundary.receipt.json",
+      "retrievalReceiptSha256": "913783216489551d4e79ea3a4f4e57aaa3e23f666e0dfc1cf15b38a3c033dced",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "schmidt-biss20-product-de": {
+      "url": "https://www.schmidtspiele.de/details/produkt/biss-20.html",
+      "finalUrl": "https://www.schmidtspiele.de/details/produkt/biss-20.html",
+      "status": "retrieved",
+      "sha256": "727fd41cd6367e6315d75f0d20ff61119d0e2803437bf697816112b0803ffbfd",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-product-de.html",
+      "byteCount": 32958,
+      "kind": "primary-publisher",
+      "observedEvidence": "Literal Biss 20; Lena and Guenter Burkhardt; article 40890; 2-8 players; Fritz bat counting/memory product. This source has a direct English language link.",
+      "retrievedAt": "2026-09-27T16:26:37.2428673Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-product-de.receipt.json",
+      "retrievalReceiptSha256": "df4be08e84e81b8a1bca6b6e0426e04d9f0351810e7c231bc8a9f73269921c10",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "schmidt-biss20-product-en": {
+      "url": "https://www.schmidtspiele.de/detail/product/biss-20-up-to-the-bite.html",
+      "finalUrl": "https://www.schmidtspiele.de/detail/product/biss-20-up-to-the-bite.html",
+      "status": "retrieved",
+      "sha256": "61fbf3eb9d26b8c1fff62e967e786794ff3302ae4be32079327ba795348119a1",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-product-en.html",
+      "byteCount": 24931,
+      "kind": "primary-publisher",
+      "observedEvidence": "Literal BISS 20 - Up to the Bite; same coauthors/article 40890 and instruction filename; reciprocal German link. Malformed English player prose is not used to infer a different count.",
+      "retrievedAt": "2026-09-27T16:26:38.7098358Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-product-en.receipt.json",
+      "retrievalReceiptSha256": "c89cd8a0e3138eff01427547066da52e31dc5a824b67045191cc42c78f4f7854",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "schmidt-biss20-lena-bio": {
+      "url": "https://www.schmidtspiele.de/details-95/lena-burkhardt.html",
+      "finalUrl": "https://www.schmidtspiele.de/details-95/lena-burkhardt.html",
+      "status": "retrieved",
+      "sha256": "33c8a30b9898e353a6424a7a1b32db401aaa3b714941c92f24f2175387428994",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-lena-bio.html",
+      "byteCount": 29613,
+      "kind": "primary-publisher",
+      "observedEvidence": "Official biography associates Lena and Guenter Burkhardt with Biss 20 and says 2021. This conflicts with saved 2020 and the official launch; no release year synthesized.",
+      "retrievedAt": "2026-09-27T16:26:39.8604013Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-lena-bio.receipt.json",
+      "retrievalReceiptSha256": "cdf74012f0c58bbc28369ee1d40bcf3a3937337530f843564f0c5a1fc34443d4",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
+    },
+    "schmidt-biss20-2020-launch": {
+      "url": "https://www.schmidtspiele.de/details-93/herbstneuheit-bei-biss-20-wird-z%C3%A4hlen-zur-echten-herausforderung.html",
+      "finalUrl": "https://www.schmidtspiele.de/details-93/herbstneuheit-bei-biss-20-wird-z%C3%A4hlen-zur-echten-herausforderung.html",
+      "status": "retrieved",
+      "sha256": "5e0bc9f8a62b4ce0d5dc64674ec5923f1eacc0fc56549fa06f365e8e5f3e93f2",
+      "cacheFile": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-2020-launch.html",
+      "byteCount": 27603,
+      "kind": "primary-publisher",
+      "observedEvidence": "Official September 2020 launch identifies Biss 20 counting/memory game. Published prose itself ends with an ellipsis; complete transport is not complete manual/press copy.",
+      "retrievedAt": "2026-09-27T16:26:40.9632343Z",
+      "retrievalReceipt": "research/source-files/sep27-native-two-primary-html/schmidt-biss20-2020-launch.receipt.json",
+      "retrievalReceiptSha256": "4115618767e0852acbce8a137a5cc6a159563ea2198091f050bee8a090211fe3",
+      "use": "Identity facts only; numeric ID authority remains exact saved Wikidata P2339. No starting rule or edition transfer."
     }
   },
   "unusableAttemptNotes": [
@@ -7792,12 +7904,26 @@
         "language": "de",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Semantic native identity acceptance from the saved exact nondeprecated P2339 and the matching primary publisher native-title/creator/product context; numeric mapping remains Wikidata-only. No starting rule, edition transfer, metadata repair or related-identity merge.",
+      "identityEvidence": [
+        "Complete saved Q63411699 at revision 2547514361 has normal string P2339 266083, statement Q63411699$966ce1c6-46bc-74d8-ea11-021587f6a7ec. This is the sole numeric authority; the complete publisher bodies contain no independently observed BGG numeric href.",
+        "AMIGO product LAMA names Reiner Knizia and 56 cards/70 chips. Publisher own prose uses L.A.M.A. and LAMA; the 2026 own article literally links L.A.M.A. to the exact product URL. Syndicated reviews are excluded from semantic evidence.",
+        "Native display title L.A.M.A. is the unchanged saved German label, not an invented translation. Publisher family context distinguishes Party/Dice; existing Lama Dice 325853 stays separate. No manual, component-rule, printing, localization or existing-rule correspondence accepted."
+      ],
+      "sourceIds": [
+        "amigo-lama-product",
+        "amigo-lama-own-title-bridge-2019",
+        "amigo-lama-own-title-bridge-2026",
+        "amigo-lama-family-boundary"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.amigo-spiele.de/lama_1907_1090",
+        "https://blog.amigo-spiele.de/2019/06/24/spielezeit-5-saison-2019/",
+        "https://blog.amigo-spiele.de/2026/08/20/spiele-fuer-die-mittagspause/",
+        "https://blog.amigo-spiele.de/2021/11/16/lama_weltweit/"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -7811,7 +7937,53 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "identityReviewHistory": [
+        {
+          "fullPreviousDecision": {
+            "bggId": "266083",
+            "wikidataItems": [
+              "Q63411699"
+            ],
+            "displayName": "L.A.M.A.",
+            "selectedTitle": {
+              "wikidataId": "Q63411699",
+              "text": "L.A.M.A.",
+              "language": "de",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q63411699",
+                "revision": 2547514361,
+                "entitySha256": "3a40847591a15d7b1db5882775248b33791d655861466a4c196b11580c1abbc8",
+                "statements": [
+                  "Q63411699$966ce1c6-46bc-74d8-ea11-021587f6a7ec"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          },
+          "reason": "Complete prior unreviewed hold preserved."
+        }
+      ],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "independentRawIdEvidence": [],
+      "identityCorroborationStatus": "primary-publisher-native-title-creator-and-product-context",
+      "primaryHostedNumericBggHrefObserved": false,
+      "editionNotes": [
+        "AMIGO/Reiner Knizia physical base card game L.A.M.A./LAMA, 56 cards and 70 chips. Separate from enrolled Lama Dice (325853), Party and Kadabra. No localization/printing/rule merger.",
+        "No rules, public/research leaf, legacy override, assignment, alias merge or related identity is added by this proposed change."
+      ]
     },
     {
       "bggId": "270314",
@@ -12122,12 +12294,26 @@
         "language": "de",
         "source": "label"
       },
-      "decision": "hold",
-      "reviewed": false,
-      "reason": "No direct primary identity review completed in this bounded pass.",
-      "identityEvidence": [],
-      "sourceIds": [],
-      "attemptedPrimaryUrls": [],
+      "decision": "accept",
+      "reviewed": true,
+      "reason": "Semantic native identity acceptance from the saved exact nondeprecated P2339 and the matching primary publisher native-title/creator/product context; numeric mapping remains Wikidata-only. No starting rule, edition transfer, metadata repair or related-identity merge.",
+      "identityEvidence": [
+        "Complete saved Q106888540 at revision 1423554739 has normal string P2339 318195, statement Q106888540$eec173de-45e1-aefe-62e3-38b2bf15fa5a. This is the sole numeric authority; article 40890 is a publisher SKU, not a numeric-ID bridge.",
+        "Schmidt German Biss 20 and English BISS 20 - Up to the Bite identify Lena and Guenter Burkhardt, article 40890 and the same Fritz bat counting/memory product. Exact reciprocal language links corroborate product context; shared instruction filename is not manual or printing approval.",
+        "Native display title Biss 20 is the unchanged saved German label. Saved 2020, official September 2020 launch and biography 2021 are retained as conflicting observations; no asserted release year, creator-QID repair, complete component count, manual or edition-rule transfer."
+      ],
+      "sourceIds": [
+        "schmidt-biss20-product-de",
+        "schmidt-biss20-product-en",
+        "schmidt-biss20-lena-bio",
+        "schmidt-biss20-2020-launch"
+      ],
+      "attemptedPrimaryUrls": [
+        "https://www.schmidtspiele.de/details/produkt/biss-20.html",
+        "https://www.schmidtspiele.de/detail/product/biss-20-up-to-the-bite.html",
+        "https://www.schmidtspiele.de/details-95/lena-burkhardt.html",
+        "https://www.schmidtspiele.de/details-93/herbstneuheit-bei-biss-20-wird-z%C3%A4hlen-zur-echten-herausforderung.html"
+      ],
       "priorBoundedDisposition": null,
       "snapshotReviewFlags": [],
       "idProvenance": [
@@ -12141,7 +12327,53 @@
         }
       ],
       "startingRuleApproved": false,
-      "editionRuleTransferApproved": false
+      "editionRuleTransferApproved": false,
+      "identityReviewHistory": [
+        {
+          "fullPreviousDecision": {
+            "bggId": "318195",
+            "wikidataItems": [
+              "Q106888540"
+            ],
+            "displayName": "Biss 20",
+            "selectedTitle": {
+              "wikidataId": "Q106888540",
+              "text": "Biss 20",
+              "language": "de",
+              "source": "label"
+            },
+            "decision": "hold",
+            "reviewed": false,
+            "reason": "No direct primary identity review completed in this bounded pass.",
+            "identityEvidence": [],
+            "sourceIds": [],
+            "attemptedPrimaryUrls": [],
+            "priorBoundedDisposition": null,
+            "snapshotReviewFlags": [],
+            "idProvenance": [
+              {
+                "wikidataId": "Q106888540",
+                "revision": 1423554739,
+                "entitySha256": "45f1c47204553baaa4da4b4af3b2606ca6fced5d25a72dcb6426768a9a88fcbc",
+                "statements": [
+                  "Q106888540$eec173de-45e1-aefe-62e3-38b2bf15fa5a"
+                ]
+              }
+            ],
+            "startingRuleApproved": false,
+            "editionRuleTransferApproved": false
+          },
+          "reason": "Complete prior unreviewed hold preserved."
+        }
+      ],
+      "idEvidenceStatus": "wikidata-statement-only",
+      "independentRawIdEvidence": [],
+      "identityCorroborationStatus": "primary-publisher-native-title-creator-and-product-context",
+      "primaryHostedNumericBggHrefObserved": false,
+      "editionNotes": [
+        "Schmidt/Drei Magier cooperative Biss 20 counting/memory card game by Lena and Guenter Burkhardt, article 40890. German/English product bridge only, with no asserted release year or manual/printing equivalence.",
+        "No rules, public/research leaf, legacy override, assignment, alias merge or related identity is added by this proposed change."
+      ]
     },
     {
       "bggId": "318243",
