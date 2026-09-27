@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod/mini';
 import { graphemeCount, hasControls } from './roster';
 // Avoid even Zod's caught eval-capability probe under the site's strict CSP.
 // Preference records are tiny; the runtime parser needs no generated code.
@@ -6,13 +6,17 @@ z.config({ jitless: true });
 export const modes = ['instant', 'quick', 'balloon', 'spinner', 'cards', 'tower', 'straws', 'dice', 'coin', 'shells'] as const;
 export type Mode = typeof modes[number];
 export const storageKey = 'wgf:preferences:v1';
-const player = z.object({ id: z.string().regex(/^player-\d+$/), label: z.string().min(1).max(500).refine(s => s.trim() === s && graphemeCount(s) <= 24 && !hasControls(s)) }).strict();
-const schema = z.object({
-  version: z.literal(1), remember: z.boolean(), roster: z.array(player).min(2).max(50).nullable(),
-  inputMode: z.enum(['seats', 'names']), mode: z.enum(modes).catch('quick'),
+const player = z.strictObject({
+  id: z.string().check(z.regex(/^player-\d+$/)),
+  label: z.string().check(z.minLength(1), z.maxLength(500), z.refine<string>(s => s.trim() === s && graphemeCount(s) <= 24 && !hasControls(s))),
+});
+const record = z.strictObject({
+  version: z.literal(1), remember: z.boolean(), roster: z.nullable(z.array(player).check(z.minLength(2), z.maxLength(50))),
+  inputMode: z.enum(['seats', 'names']), mode: z.catch(z.enum(modes), 'quick'),
   sound: z.boolean(), motion: z.enum(['system', 'reduce']),
-}).strict().refine(p => !p.roster || new Set(p.roster.map(x => x.id)).size === p.roster.length)
-  .refine(p => p.remember || p.roster === null);
+});
+const schema = record.check(z.refine<z.infer<typeof record>>(p => !p.roster || new Set(p.roster.map(x => x.id)).size === p.roster.length))
+  .check(z.refine<z.infer<typeof record>>(p => p.remember || p.roster === null));
 export type Preferences = z.infer<typeof schema>;
 export const defaults: Preferences = { version: 1, remember: false, roster: null, inputMode: 'seats', mode: 'quick', sound: false, motion: 'system' };
 export interface StoragePort { getItem(key: string): string | null; setItem(key: string, value: string): void; removeItem(key: string): void }
