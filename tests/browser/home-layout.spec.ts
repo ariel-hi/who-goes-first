@@ -5,6 +5,8 @@ test('social icons keep accessible labels and share clean public links', async (
   await page.goto('/?private=names#private-result');
   const shares = page.getByRole('group', { name: 'Share this page', exact: true });
   test.skip(await shares.count() === 0, 'Social links only appear in production builds.');
+  const decline = page.getByRole('button', { name: 'No thanks', exact: true });
+  if (await decline.isVisible()) await decline.click();
   for (const name of ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook']) {
     const link = shares.getByRole('link', { name: new RegExp(name) });
     await expect(link).toBeVisible();
