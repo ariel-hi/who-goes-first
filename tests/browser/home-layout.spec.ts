@@ -69,7 +69,7 @@ test('comma-separated names work and shell cards follow the dark theme', async (
 test('home pairs the picker with rules on desktop and preserves the mobile stack', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
-  await expect(page.locator('#home-picker-heading')).toHaveClass('sr-only');
+  await expect(page.locator('#home-picker-heading')).toBeVisible();
   const picker = await page.locator('.home-picker').boundingBox();
   const directory = await page.locator('.home-rules').boundingBox();
   expect(directory!.x).toBeGreaterThanOrEqual(picker!.x + picker!.width);
@@ -103,6 +103,10 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   const button = await page.getByRole('button', { name: 'Pick a player', exact: true }).boundingBox();
   expect(button!.y + button!.height).toBeLessThan(844);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  const winnerSize = await page.locator('.winner-announcement p').evaluate(element => parseFloat(getComputedStyle(element).fontSize));
+  expect(winnerSize).toBeGreaterThanOrEqual(21);
   await page.screenshot({ path: test.info().outputPath('home-mobile.png'), fullPage: true });
 });
 

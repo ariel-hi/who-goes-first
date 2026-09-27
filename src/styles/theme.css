@@ -1,4 +1,8 @@
 .site-nav { margin-left:auto; }
+.site-nav a, .theme-toggle, .primary, .segmented label, .segmented .more-modes, .stepper button { transition:background-color .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease; }
+.site-nav a { position:relative; }
+.site-nav a::after { content:""; position:absolute; left:0; right:0; bottom:6px; height:1px; background:currentColor; transform:scaleX(0); transform-origin:left; transition:transform .18s ease; }
+.site-nav a:is(:hover,:focus-visible,[aria-current=page])::after { transform:scaleX(1); }
 .theme-toggle { display:grid; place-items:center; flex:none; width:38px; min-height:38px; height:38px; border:1px solid var(--line); border-radius:50%; padding:0; color:var(--green); background:transparent; }
 .theme-toggle:hover { background:var(--soft); }
 .theme-toggle .theme-sun { display:none; }
@@ -36,3 +40,6 @@
 :root[data-theme=dark] .analytics-consent [data-analytics-decline] { color:var(--green); background:transparent; }
 /* The painted pieces and their ink retain their physical colors in either theme. */
 :root[data-theme=dark] .card-front { color:var(--ink); }
+@media(prefers-reduced-motion:reduce) {
+  .site-nav a, .site-nav a::after, .theme-toggle, .primary, .segmented label, .segmented .more-modes, .stepper button { transition:none; }
+}
