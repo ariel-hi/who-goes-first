@@ -154,7 +154,8 @@ test('public board game directory includes every discovered identity and links o
   const assignments = games.flatMap(game => game.rules.map(rule => rule.id));
   expect(assignments.toSorted()).toEqual(getCatalog().map(rule => rule.id).toSorted());
   expect(games.find(game => game.bggId === '209418')?.rules.map(rule => rule.id)).toContain('dominion-2021-en');
-  expect(games.find(game => game.bggId === '36218')?.rules).toEqual([]);
+  expect(games.find(game => game.bggId === '36218')?.rules.map(rule => rule.id)).toEqual(['dominion-rio-grande-original-en']);
+  expect(games.find(game => game.bggId === '209418')?.rules.map(rule => rule.id)).not.toContain('dominion-rio-grande-original-en');
   expect(games.find(game => game.bggId === '15512')?.rules.map(rule => rule.id)).toEqual(expect.arrayContaining([
     'diamant-iello-revised-en', 'incan-gold-eagle-gryphon-en-2018',
   ]));

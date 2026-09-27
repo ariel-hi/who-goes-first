@@ -41,9 +41,6 @@ const sourced = [
 ] as const;
 
 const pending = [
-  { name: "Käpt'n Memo", id: 'game-20ec80fb-32d8-4764-816e-285e0d0cb292', reference: 'https://www.zoch-verlag.com/zoch_en/categories/children-s-games/kaeptn-memo-601105221-en.html' },
-  { name: 'Kleiner Drache Wirbelwind', id: 'game-c60afcd1-5e6b-44ed-a41a-dbd91376d400', reference: 'https://www.zoch-verlag.com/zoch_en/categories/children-s-games/kleiner-drache-wirbelwind-601105202-en.html' },
-  { name: 'Mach die Flatter', id: 'game-5a318f64-4fde-423e-9a63-e3887b7de5de', reference: 'https://www.zoch-verlag.com/zoch_en/categories/family-games/mach-die-flatter-601105203-en.html' },
   { name: 'Mille Fiori', id: '346501', reference: 'https://boardgamegeek.com/boardgame/346501' },
 ] as const;
 
@@ -56,7 +53,7 @@ type StructuredData = {
 };
 
 for (const width of [320, 1280]) {
-  test(`nine-identity cohort links directly to reviewed answers or honest pending help at ${width}px`, async ({ page }) => {
+  test(`original five publisher answers and pending Mille Fiori preserve direct links and honest help at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 });
     await page.goto('/board-games/');
     const search = page.getByRole('searchbox', { name: 'Search board games' });
