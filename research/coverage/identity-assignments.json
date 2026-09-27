@@ -145,6 +145,31 @@
       "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
       "reviewedAt": "2026-09-26",
       "acceptedRevision": "f1b681d1721ad36c8787ab3ef1cd70feb175352f5d35e979a3fc515e391b0deb"
+    },
+    {
+      "ruleId": "kaeptn-memo-en",
+      "ruleRevision": "8e702b60ecfc59a77dd44aed38a7f0e05baded7ecd7116f4af69ed4a484eb2e6",
+      "identityId": "game-20ec80fb-32d8-4764-816e-285e0d0cb292",
+      "identityRevision": "fc23d09d1a89e1179a54e052191a6c9a2ddf592974f7e23478aec90936fe12c5",
+      "editionScope": "English summary of Zoch German rules, article 601105221",
+      "evidence": [
+        {
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/children-s-games/kaeptn-memo-601105221-en.html",
+          "sha256": "55757a2f5aad998e1c6eb100e0fae1ed634ca30271a40fcbfbff33411d8c1d1d",
+          "location": "Complete saved focal title/article/Product context and exact original manual anchors at raw byte ranges [[151145, 151503], [152077, 152656]]; preserved literal URL differs from transport only in percent encoding, without Unicode normalization.",
+          "correspondence": "Saved official product names Käpt'n Memo, article 601105221, and literally links the original complete PDF. Original native-title logo and article imprint support this exact German-source English summary assignment to the existing accepted opaque identity only. No numeric/translated alias/reissue/printing transfer."
+        },
+        {
+          "url": "https://pim.simba-dickie.com/Product/Zoch/Family/601105221%20K%C3%A4pt%27n%20Memo/007%20Artwork-Manual/601105221-Ka%CC%88ptnMemo-Rules-Zoch-DE.pdf",
+          "sha256": "a968d95c8c1dc8385f0463d96f594ff4e4e02066cab2abf0c95ba1bd0e22b702",
+          "location": "PDF/printed page 2, Spielvorbereitung: first captain and voyage departure; page1 native title/count; page4 sailors’ decision order and lone captain; page5 next captain to the left and final-score ties; page6 article/imprint.",
+          "correspondence": "Saved official product names Käpt'n Memo, article 601105221, and literally links the original complete PDF. Original native-title logo and article imprint support this exact German-source English summary assignment to the existing accepted opaque identity only. No numeric/translated alias/reissue/printing transfer."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "d77b628b11ed8b08a971fe0bff486396fb3f73adc630509b42ad6b68fa4f8138"
     }
   ]
 }

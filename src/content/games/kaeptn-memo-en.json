@@ -1,0 +1,54 @@
+{
+  "id": "kaeptn-memo-en",
+  "slug": "kaeptn-memo",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+  "approvedRevision": "8e702b60ecfc59a77dd44aed38a7f0e05baded7ecd7116f4af69ed4a484eb2e6",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Käpt'n Memo",
+  "aliases": [],
+  "editionLabel": "English summary of Zoch German rules, article 601105221",
+  "firstPlayerRule": "The player who most recently disembarked from a ship becomes captain of the first voyage.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first captain places their figure at the front of the ship; the other players join as sailors.",
+    "For each later voyage, the player to the left of the current captain becomes the new captain.",
+    "During a voyage, sailors make their decisions in any order after the captain sets the course and before the next tile is revealed.",
+    "A captain left alone on the ship continues that voyage; this is not a separate solo mode. The rules list 2–5 players.",
+    "Final-score ties compare rubies, then treasure chests, then barrels. These comparisons do not choose the first captain."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Family/601105221%20K%C3%A4pt%27n%20Memo/007%20Artwork-Manual/601105221-Ka%CC%88ptnMemo-Rules-Zoch-DE.pdf",
+      "title": "Käpt'n Memo: official German rules, summarized in English",
+      "publisher": "Zoch Verlag",
+      "printedPages": [
+        "2",
+        "1",
+        "4",
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        1,
+        4,
+        5,
+        6
+      ],
+      "location": "PDF/printed page 2, Spielvorbereitung: first captain and voyage departure; page1 native title/count; page4 sailors’ decision order and lone captain; page5 next captain to the left and final-score ties; page6 article/imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Codex /root independently read all original uncropped180dpi German pages (1, 2, 3, 4, 5, 6) and all complete corresponding plain-text extracts, all exact catalog/research proposals and assignment/source-reading notes. Codex /root/inventory_sources separately read all58 multilingual original pages; Codex /root/held_identity_review independently read the same19 authority original pages and texts for this cohort. Root and peer do not claim original-image reading of the other39 language pages. Exact original PDF SHA256 a968d95c8c1dc8385f0463d96f594ff4e4e02066cab2abf0c95ba1bd0e22b702; PDF page2 controls the opening criterion; visible original images control duplicated/rotated-layout extraction artifacts and printed locators. Native title, article601105221, existing accepted primary product and literal official product-to-PDF anchor chain establish this exact source scope only for game-20ec80fb-32d8-4764-816e-285e0d0cb292, identity revision fc23d09d1a89e1179a54e052191a6c9a2ddf592974f7e23478aec90936fe12c5. The public edition explicitly discloses an English summary of German rules. First voyage captain and later left-neighbor captain are distinguished; final scoring ties do not choose the first captain. No initial tie or no-history procedure, external numeric identity, translated alias, reissue or printing bridge is inferred. Root approves this exact rule and explicit public assignment under standing owner authorization. Matching research pair remains lifecycle-null; no research association, identity modification, new UUID or portable addition is authorized.",
+  "uncertainty": [
+    "This is an English summary of the complete German manual; no English source section is present.",
+    "No official initial-criterion tie or no-history procedure is stated.",
+    "The visible2025 imprint and PDF document-info dates do not establish a printing or named version.",
+    "No external numeric identity, creator identifier, translated alias or reissue correspondence is inferred."
+  ]
+}
