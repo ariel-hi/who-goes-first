@@ -31,7 +31,7 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 
 @layer components {
   .table-notes{margin:0 0 36px}.table-notes h2{font-size:22px;margin-bottom:15px}.table-notes details{border-top:1px solid var(--line);padding:5px 0}.table-notes details:last-child{border-bottom:1px solid var(--line)}.table-notes summary{display:list-item;padding:10px 0;cursor:pointer;font-size:14px;font-weight:500}.table-notes p{font-size:14px;color:var(--muted);margin:4px 0 14px;max-width:60ch}.content-page.prose{max-width:700px}.prose p,.rule-section p{max-width:65ch}
-  .skip-link{position:fixed;left:16px;top:12px;background:#fff;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;white-space:nowrap;z-index:10}
+  .skip-link{position:fixed;left:16px;top:12px;background:#fff;color:#202923;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;white-space:nowrap;z-index:10}
 .skip-link:focus{width:auto;height:auto;clip-path:none;overflow:visible;padding:12px 20px}
 
   .site-header{max-width:1040px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid var(--line);gap:18px}
