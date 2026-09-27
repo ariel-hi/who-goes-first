@@ -169,3 +169,27 @@ test('reviewed Zoch editions attach only to their allocated publisher identities
     expect(games.find(game => game.identityId === identityId)).toMatchObject({ rules: [], searchNames: [], reference: { label: 'Publisher reference' } });
   }
 }, 120_000);
+
+test('reviewed Grail identities stay publisher-only pending games with exact product links', () => {
+  const games = getBoardGames();
+  for (const [identityId, name, productPath] of [
+    ['game-8d56f43f-7ccd-4c1c-999b-02f29b16b10b', 'Aeterna', 'aeterna'],
+    ['game-d20b9c60-4071-42ae-8123-3f22d137b627', 'The Gardens', 'thegardens'],
+    ['game-fb31080c-fd3a-4018-ac6d-9d21d3e78d70', 'Harvest Valley', 'harvest-valley'],
+    ['game-df4a14f0-ca55-4b1e-9412-4002aed07606', 'Hibachi', 'hibachi'],
+    ['game-7156daab-3ee2-4e52-9f9f-77af7f8a83de', 'One Zero One', 'one-zero-one'],
+    ['game-806c297f-f156-4024-baf2-4ee39025f248', 'Scoville', 'scoville'],
+    ['game-fc1c68b1-7462-41b8-a023-b3fc885921f6', 'Silicon Valley', 'silicon-valley'],
+    ['game-a1d2166b-9a0f-4581-a68c-0c1767290430', 'Snowcrest', 'snowcrest'],
+    ['game-d9976717-7827-46e1-8774-a455d72c98b2', 'Tango', 'tango'],
+    ['game-57bb804a-0e45-4152-bda3-abb73ec20321', 'Farm Hand', 'farm-hand'],
+  ] as const) {
+    const matching = games.filter(game => game.identityId === identityId);
+    expect(matching).toHaveLength(1);
+    expect(matching[0]).toMatchObject({
+      name, routeKey: identityId, searchNames: [], rules: [],
+      reference: { url: `https://www.grailgames.games/our-games/${productPath}`, label: 'Publisher reference' },
+    });
+    expect(matching[0]).not.toHaveProperty('bggId');
+  }
+}, 120_000);

@@ -275,6 +275,416 @@
       "acceptedRevision": "b979df234963805de458bfe9e4119c5211e9c486f49b01fb84143355107c852d",
       "identityId": "game-132a548d-b00a-46ce-a29b-6c40525c452b",
       "routeKey": "game-132a548d-b00a-46ce-a29b-6c40525c452b"
+    },
+    {
+      "name": "Aeterna",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Physical tabletop game offered in French by Grail Games on this exact product page; no English or earlier edition correspondence.",
+      "identityEvidence": "Roman-family prestige game across three eras, governing seven hills, constructing monuments, avoiding revolts and obtaining Roman favor. The focal product description explicitly offers Æterna in French; Martin Wallace is credited locally.",
+      "publisherReferenceSourceId": "grail-aeterna",
+      "sources": [
+        {
+          "id": "grail-aeterna",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/aeterna",
+          "sha256": "c1fc0b94e3dfd24640af96f2a6e059365b9b8433d929c509edf238718e0cb350",
+          "byteCount": 1273696,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-aeterna-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "c9726ebd39dc0dbbd3d37956ea60705818272936f515fb521d8869e6d6a6bdd0",
+      "identityId": "game-8d56f43f-7ccd-4c1c-999b-02f29b16b10b",
+      "routeKey": "game-8d56f43f-7ccd-4c1c-999b-02f29b16b10b"
+    },
+    {
+      "name": "The Gardens",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games physical card-drafting base-game product with included modules; no different printing or separately sold extension correspondence.",
+      "identityEvidence": "Players draft garden-feature cards to build a three-row tableau of Sydney’s Royal Botanic Garden and score visitors. Included modules provide Opera House and Harbour Bridge landmarks. Matthew Dunstan and Brett Gilbert are credited locally.",
+      "publisherReferenceSourceId": "grail-thegardens",
+      "sources": [
+        {
+          "id": "grail-thegardens",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/thegardens",
+          "sha256": "24bae6eaa25531d2a712c14cc8e620f6b3da0770b98029bcab270f15c0ac7dcd",
+          "byteCount": 815711,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-thegardens-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "4efa9642953d7d632a9d841fd5715ba533042fed2ce92662f2bbe8e53c90d3d6",
+      "identityId": "game-d20b9c60-4071-42ae-8123-3f22d137b627",
+      "routeKey": "game-d20b9c60-4071-42ae-8123-3f22d137b627"
+    },
+    {
+      "name": "Harvest Valley",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Announced Grail Games physical farming card-game product on this exact page; release/availability and printing not established.",
+      "identityEvidence": "Cards are placed in a farm grid or used to build farmhouses while neighboring farmers, boars and crows affect crops. The complete focal publisher description presents a self-contained farming card game and credits Bruno Faidutti.",
+      "publisherReferenceSourceId": "grail-harvest-valley",
+      "sources": [
+        {
+          "id": "grail-harvest-valley",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/harvest-valley",
+          "sha256": "1c9273ec9035eaab8dea8010ba2634a4f8378c1df53c4b27ec427e51ca855fce",
+          "byteCount": 205311,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-harvest-valley-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "13af3fa9ceb9c69425862449e41ada8b7427f8081467ac5bc121954b557859b2",
+      "identityId": "game-fb31080c-fd3a-4018-ac6d-9d21d3e78d70",
+      "routeKey": "game-fb31080c-fd3a-4018-ac6d-9d21d3e78d70"
+    },
+    {
+      "name": "Hibachi",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games physical dexterity base-game product; Hot & Spicy and fifth-player expansion excluded from this identity scope.",
+      "identityEvidence": "Teppanyaki chefs throw poker-chip discs onto a board, then buy or sell ingredients and cook customer orders. Publisher explicitly calls Hibachi: Hot & Spicy an expansion. Marco Teubner is credited locally.",
+      "publisherReferenceSourceId": "grail-hibachi",
+      "sources": [
+        {
+          "id": "grail-hibachi",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/hibachi",
+          "sha256": "ccef043c79342bd6168fc2e320328a799c2e6972407f8f70f432648533fbf976",
+          "byteCount": 866271,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-hibachi-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "6d306ee11828bbc5fe1a878e5232f12beb6c2a5e1b2515ea14c63ff5c093160b",
+      "identityId": "game-df4a14f0-ca55-4b1e-9412-4002aed07606",
+      "routeKey": "game-df4a14f0-ca55-4b1e-9412-4002aed07606"
+    },
+    {
+      "name": "One Zero One",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games physical abstract-strategy card-game product; no software identity or printing/year correspondence.",
+      "identityEvidence": "Two identical 16-card decks, one for zeros and one for ones, are played into a program display to control scoring rows. The publisher explicitly calls this an abstract strategy card game and credits David Harding.",
+      "publisherReferenceSourceId": "grail-one-zero-one",
+      "sources": [
+        {
+          "id": "grail-one-zero-one",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/one-zero-one",
+          "sha256": "f180b89ef0412c515980d2a58c967079392ec223ea8a0be7ea20bad431930e92",
+          "byteCount": 200498,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-one-zero-one-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "c06ba1ecde8632663e70d10821ad0b5acc38d0356b3e67f4cc78d9dd0b9091fa",
+      "identityId": "game-7156daab-3ee2-4e52-9f9f-77af7f8a83de",
+      "routeKey": "game-7156daab-3ee2-4e52-9f9f-77af7f8a83de"
+    },
+    {
+      "name": "Scoville",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games French physical base-game product containing LABS expansion and solo mode; no original English printing or expansion-only correspondence.",
+      "identityEvidence": "Pepper growers compete through auctions, a farmer market and the Scoville Chili Contest. Focal description explicitly offers Scoville in French and says LABS expansion and solo mode are contained. Ed Marriott is credited locally. An unresolved same-title legacy ranking target exists outside the active registry. That title-only queue does not bind a numeric ID or earlier edition to this French Grail product; a future active same-name identity needs explicit correspondence adjudication.",
+      "publisherReferenceSourceId": "grail-scoville",
+      "sources": [
+        {
+          "id": "grail-scoville",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/scoville",
+          "sha256": "12b37e486aefd05014307f70f88a88241284fed02d5638dd81ec1508ed101d93",
+          "byteCount": 1252113,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-scoville-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "63e7d4a267992938d72da39eedc3f6871bb3e812543740b17371c9943ead3ce5",
+      "identityId": "game-806c297f-f156-4024-baf2-4ee39025f248",
+      "routeKey": "game-806c297f-f156-4024-baf2-4ee39025f248"
+    },
+    {
+      "name": "Silicon Valley",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games physical polyomino startup-management base-game product described here; no other edition/printing correspondence.",
+      "identityEvidence": "Players hire staff, form products with polyomino patterns, seek funding and expand headquarters; the first company valued at a billion wins. Focal publisher description credits Scott Almes and says a solo mode is included.",
+      "publisherReferenceSourceId": "grail-silicon-valley",
+      "sources": [
+        {
+          "id": "grail-silicon-valley",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/silicon-valley",
+          "sha256": "831b0d450aed8cf523695ebfb14415a10b33c46c48e9b221f93e2844207d7191",
+          "byteCount": 1185339,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-silicon-valley-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "b2e5a55e42f4b5fbd46bb59f4eaad1457ae30358b8f9111158d73fcfd7542b81",
+      "identityId": "game-fc1c68b1-7462-41b8-a023-b3fc885921f6",
+      "routeKey": "game-fc1c68b1-7462-41b8-a023-b3fc885921f6"
+    },
+    {
+      "name": "Snowcrest",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games physical village-and-monastery base-game product on this exact page; no different printing correspondence or digital companion transfer.",
+      "identityEvidence": "Players lead village and monastery factions of priests, farmers and laborers, building structures, harvesting barley/juniper and overcoming guardians. Philip duBarry is credited locally; publisher labels it out now.",
+      "publisherReferenceSourceId": "grail-snowcrest",
+      "sources": [
+        {
+          "id": "grail-snowcrest",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/snowcrest",
+          "sha256": "5b00cdf25ac9ca01fda331053c676f77b5e2c171cd3e6c9a905bc91331a54c44",
+          "byteCount": 209362,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-snowcrest-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "be25fec405741d6f1c7669824d27560e56cc9459dac0f936a22c06fefa64c5bd",
+      "identityId": "game-a1d2166b-9a0f-4581-a68c-0c1767290430",
+      "routeKey": "game-a1d2166b-9a0f-4581-a68c-0c1767290430"
+    },
+    {
+      "name": "Tango",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail Games physical two-player trick-taking card-game product; no other Tango title, digital game or printing correspondence.",
+      "identityEvidence": "Players perform dance steps by playing cards from their hands and face-up displays in a two-player trick-taking game. Matthew Sims and David Harding are credited locally.",
+      "publisherReferenceSourceId": "grail-tango",
+      "sources": [
+        {
+          "id": "grail-tango",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/tango",
+          "sha256": "28123e98c8ee090307105555c0293215ff47f9e383eea2cb490ac47bbbce4835",
+          "byteCount": 919899,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-tango-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "43eb27340e170b431f76949092c4f4eb617fb3199ca1a7c1a4509887a2c541b9",
+      "identityId": "game-d9976717-7827-46e1-8774-a455d72c98b2",
+      "routeKey": "game-d9976717-7827-46e1-8774-a455d72c98b2"
+    },
+    {
+      "name": "Farm Hand",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Announced Grail Games physical 21-card trick-taking base-game product on this exact page; release/printing not established.",
+      "identityEvidence": "A game of prediction and detection uses 21 numbered cards, with players trying to win a target number of tricks while opponents know some of their hand. Craig Somerton is credited locally.",
+      "publisherReferenceSourceId": "grail-farm-hand",
+      "sources": [
+        {
+          "id": "grail-farm-hand",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/farm-hand",
+          "sha256": "29587a274731d8abb7e2c35ef1284268435bc47cc1c239b2442ddf1d8ff597c6",
+          "byteCount": 1414760,
+          "location": "Focal H1/product description/credit and metadata blocks; exact raw locators in grail-farm-hand-full-source-context.json; neighbor product headings and testimonials excluded."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Complete Our Games 30-entry inventory; literal selected product anchor and associated title, exact byte/hash locators in product-request-plan.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Grail Games publishing-house description and publisher footer, exact raw blocks in grail-about-full-source-context.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner's standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "eff326bb771bba38f1decf1d598f18d62bf1d258b1c1db9ee9ef803038fc8436",
+      "identityId": "game-57bb804a-0e45-4152-bda3-abb73ec20321",
+      "routeKey": "game-57bb804a-0e45-4152-bda3-abb73ec20321"
     }
   ]
 }

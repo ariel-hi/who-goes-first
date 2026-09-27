@@ -314,6 +314,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
     } catch {
       setError('Secure randomness is unavailable. No player was selected. Try again, or reload this page.');
       locked.current = null;
+      dispatch({ type: 'EDIT', valid: true });
     }
   }
   function forget() {
