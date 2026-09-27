@@ -11,7 +11,7 @@ export const sitemapSections: SitemapSection[] = ['pages', 'rules', 'board-games
 /** Canonical URLs grouped by section. One source for the flat sitemap, the index and each section file. */
 export function sitemapEntries(): Record<SitemapSection, Entry[]> {
   const games = getCatalog(); const publishers = publisherHubs(games);
-  const pages = ['/', '/about/', '/fairness/', '/privacy/', '/choose-who-goes-first/', '/printable-game-night/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/embed/', '/methods/spinner/', '/methods/cards/', '/methods/towers/', '/methods/straws/', '/methods/dice/', '/methods/coin/', '/methods/shells/', ...(process.env.DISABLE_BALLOON !== 'true' ? ['/methods/balloon/'] : []), ...(getPrompts().length ? ['/house-rules/'] : [])];
+  const pages = ['/', '/about/', '/fairness/', '/privacy/', '/tools/', '/choose-who-goes-first/', '/printable-game-night/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/embed/', '/methods/spinner/', '/methods/cards/', '/methods/towers/', '/methods/straws/', '/methods/dice/', '/methods/coin/', '/methods/shells/', ...(process.env.DISABLE_BALLOON !== 'true' ? ['/methods/balloon/'] : []), ...(getPrompts().length ? ['/house-rules/'] : [])];
   const hubs = [...(games.length ? ['/games/'] : []), ...themeHubs(games).map(hub => `/games/themes/${hub.slug}/`), ...(publishers.length ? ['/publishers/'] : []), ...publishers.map(hub => `/publishers/${hub.slug}/`), ...(games.some(randomRuleEligible) ? ['/ways-to-pick-who-goes-first/'] : [])];
   return {
     pages: pages.map(path => ({ path })),

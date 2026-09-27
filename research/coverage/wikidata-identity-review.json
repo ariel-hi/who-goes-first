@@ -2,12 +2,12 @@
   "reviewedOn": "2026-09-27",
   "sourceSnapshot": "research/coverage/wikidata-board-games.json",
   "sourceSnapshotStatementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
-  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule. Additional identity-only review distinguishes 153 / Q1628545 as Hornochsen! (Take 5!) using separately preserved full Wikidata entity claims and normalized official AMIGO product/article 08940 evidence. The 53 earlier decisions and their historical scopes are retained; no starting-rule or edition transfer is authorized. Additional proposed identity-only review qualifies 200 / Q1344436 as Entdecker (Goldsieber) and 550 / Q646550 as Barbarossa (Klaus Teuber), using saved own normal Wikidata P2339 and complete CATAN author/licensing-company retrospective bodies. The preceding 54 decisions and their historical scopes are retained. Same-title peers 1334 and 72809 and Merchant of Venus 230/131646 remain excluded pending correspondence; no rule, alias, year, printing or edition transfer is authorized.",
+  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule. Additional identity-only review distinguishes 153 / Q1628545 as Hornochsen! (Take 5!) using separately preserved full Wikidata entity claims and normalized official AMIGO product/article 08940 evidence. The 53 earlier decisions and their historical scopes are retained; no starting-rule or edition transfer is authorized. Additional proposed identity-only review qualifies 200 / Q1344436 as Entdecker (Goldsieber) and 550 / Q646550 as Barbarossa (Klaus Teuber), using saved own normal Wikidata P2339 and complete CATAN author/licensing-company retrospective bodies. The preceding 54 decisions and their historical scopes are retained. Same-title peers 1334 and 72809 and Merchant of Venus 230/131646 remain excluded pending correspondence; no rule, alias, year, printing or edition transfer is authorized. Additional source-only identity review proposes 71 / Q1094512 as Civilization (1980 game), 68 / Q118942141 as Successors (Avalon Hill), and 551 / Q2891792 as Battle Cry (Richard Borg), based on complete saved official publisher/association HTML and own normal saved Wikidata P2339. All preceding 56 decisions, 37 sources and historical scope qualifications remain intact. Successors publication-year conflict is preserved; no alias, year, player-count, printing, starting-rule or edition-rule transfer is authorized. Wiz-War 589/104710, Knightmare Chess 227/30966 and unresolved same-title peers 26457/2428 remain excluded.",
   "method": "Read CC0 Wikidata item facts using wbgetentities and saved revisions, then corroborate accepted game/edition identities with original designer, publisher, federation, or association-hosted federation sources. Per-ID edition qualifiers are distinguished from item-wide publication years. Qualified display names prevent merging identical names. Holds retain unresolved ambiguity. Additional 315200 title review corroborates the saved P2339 identity binding with the official publisher expansion classification and qualified canonical BGG indexed item evidence. Failed destination opens and mixed Wikidata metadata remain explicit; no raw BGG HTTP, physical manual or printing correspondence is approved.",
   "factsAudit": "research/coverage/wikidata-identity-facts.json",
   "counts": {
-    "reviewed": 56,
-    "accept": 27,
+    "reviewed": 59,
+    "accept": 30,
     "hold": 29,
     "reject": 0,
     "newlyEligibleHeldIdentities": 16,
@@ -341,6 +341,94 @@
         }
       ],
       "evidenceScope": "Complete saved decoded HTTP200 HTML and ordered parsed response headers. Complete authority/about and ludography static texts, and the listed complete focal period blocks, were read. Static text is regex transcription, not browser/HTML5 visibility; unrelated period sections were not all independently read. No assets or manuals fetched."
+    },
+    "civilizationGibsonsHistory": {
+      "kind": "primary-publisher",
+      "title": "Gibsons official game history — Civilization section",
+      "url": "https://gibsonsgames.co.uk/blogs/news/games-like-monopoly",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "28085b2fad2c8734355d8bca76fe1e5a7328e16bc1954e432aed99e037830c1b",
+      "byteCount": 395045,
+      "sourceIntakeManifestSha256": "0866467f3fe9d4a124b18039472c677457d7595317dcb3dd091e5b77ab690599",
+      "sourceIntakeSealSha256": "68d8528cf52b35caa74adb7c578c65335e1bb8e94d45258bc9ca33fba679ada2",
+      "observedEvidence": "The complete official publisher article explicitly identifies the game originally published in 1980 and its later Gibsons redesign/relaunch. The complete Civilization focal paragraph describes developing ancient nations; unrelated Monopoly/L'Attaque assertions are excluded.",
+      "focalByteLocators": [
+        {
+          "name": "visible-civilization-section",
+          "byteStart": 114705,
+          "byteEndExclusive": 115753,
+          "sha256": "9dbda69b9b65137396428e333f0b795a627a5dfd721a76dc4a44c0603ee4b0f7"
+        }
+      ],
+      "numericEvidenceScope": "No exact numeric BGG game href was observed in this primary page; numeric correspondence is the separately bound own normal saved Wikidata P2339 statement.",
+      "evidenceScope": "Complete decoded HTTP200 body and ordered parsed response/content headers preserved. Complete static transcript and critical original HTML sections were read. Regex/HTMLParser extraction is not browser or HTML5 visibility; no image, asset, manual, PDF or BGG page/API fetched. No starting-rule approval."
+    },
+    "civilizationGibsonsProduct": {
+      "kind": "primary-publisher",
+      "title": "Gibsons official Civilization physical product",
+      "url": "https://gibsonsgames.co.uk/collections/all-games/products/civilization",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "56d728b0141333bc40dae0c495f5d41841d9cbe66a27dd5e4676c4c7495f86f1",
+      "byteCount": 765344,
+      "sourceIntakeManifestSha256": "0866467f3fe9d4a124b18039472c677457d7595317dcb3dd091e5b77ab690599",
+      "sourceIntakeSealSha256": "68d8528cf52b35caa74adb7c578c65335e1bb8e94d45258bc9ca33fba679ada2",
+      "observedEvidence": "The complete physical product description explicitly identifies a later Gibsons re-release of the classic civilization-development game. Product metadata/Shopify dates and its 2018 re-release statement are not transferred as original printing, edition or identical-rules authority.",
+      "focalByteLocators": [
+        {
+          "name": "first-literal-game-details",
+          "byteStart": 170319,
+          "byteEndExclusive": 171503,
+          "sha256": "bafd62e1680fea884b315da3270d50c78944222a37372974b5b6e75fe350465c"
+        }
+      ],
+      "numericEvidenceScope": "No exact numeric BGG game href was observed in this primary page; numeric correspondence is the separately bound own normal saved Wikidata P2339 statement.",
+      "evidenceScope": "Complete decoded HTTP200 body and ordered parsed response/content headers preserved. Complete static transcript and critical original HTML sections were read. Regex/HTMLParser extraction is not browser or HTML5 visibility; no image, asset, manual, PDF or BGG page/API fetched. No starting-rule approval."
+    },
+    "successorsGMTHistory": {
+      "kind": "primary-publisher",
+      "title": "GMT official Successors description — original Avalon Hill and third-edition distinction",
+      "url": "https://www.gmtgames.com/p-117-successors.aspx",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "f781a1d87eaf92e86116259b75ff35520c18d321bae01e8b8c2b965938136e00",
+      "byteCount": 65031,
+      "sourceIntakeManifestSha256": "0866467f3fe9d4a124b18039472c677457d7595317dcb3dd091e5b77ab690599",
+      "sourceIntakeSealSha256": "68d8528cf52b35caa74adb7c578c65335e1bb8e94d45258bc9ca33fba679ada2",
+      "observedEvidence": "The complete official Description identifies Successors' wars after Alexander, original Avalon Hill publication, subsequent second-edition rulebook and updated third edition, with changed map/cards/rules. Source says 1995 whereas the saved item description says 1997; no chronology repair is made. All seven customer reviews are captured/read but excluded as primary authority.",
+      "focalByteLocators": [
+        {
+          "name": "official-description",
+          "byteStart": 40025,
+          "byteEndExclusive": 42069,
+          "sha256": "f0488b807130987c107c9518c8b723ffe51f194e9ddce0690b95e0af3abf932f"
+        }
+      ],
+      "numericEvidenceScope": "No exact numeric BGG game href was observed in this primary page. Numeric correspondence is the separately bound own normal saved Wikidata P2339 statement. GMT's generic BGG publisher52 footer is not a game-ID binding.",
+      "evidenceScope": "Complete decoded HTTP200 body and ordered parsed response/content headers preserved. Complete static transcript and critical original HTML sections were read. Regex/HTMLParser extraction is not browser or HTML5 visibility; no image, asset, manual, PDF or BGG page/API fetched. No starting-rule approval."
+    },
+    "battleCryIGA2001": {
+      "kind": "primary-association",
+      "title": "International Gamers Awards official 2001 two-player winner — Battle Cry",
+      "url": "https://www.internationalgamersawards.net/winners/2001-winners",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "a3ac1a4dcab9c5d00bf6c471a69298351e4b419530d836176f929089545e03a4",
+      "byteCount": 164227,
+      "sourceIntakeManifestSha256": "0866467f3fe9d4a124b18039472c677457d7595317dcb3dd091e5b77ab690599",
+      "sourceIntakeSealSha256": "68d8528cf52b35caa74adb7c578c65335e1bb8e94d45258bc9ca33fba679ada2",
+      "observedEvidence": "The complete official award entry places Battle Cry in the 2001 two-player winner category and names Richard Borg, U.S. Civil War battles and Avalon Hill/Hasbro. The award year is not a publication/printing year; no anniversary or opening rules are transferred.",
+      "focalByteLocators": [
+        {
+          "name": "two-player-winner",
+          "byteStart": 154391,
+          "byteEndExclusive": 158607,
+          "sha256": "c240ebb5219ee4c43489704b3a5b6a92d541b27064f7532f4868c1c16c4dba6e"
+        }
+      ],
+      "numericEvidenceScope": "No exact numeric BGG game href was observed in this primary page; numeric correspondence is the separately bound own normal saved Wikidata P2339 statement.",
+      "evidenceScope": "Complete decoded HTTP200 body and ordered parsed response/content headers preserved. Complete static transcript and critical original HTML sections were read. Regex/HTMLParser extraction is not browser or HTML5 visibility; no image, asset, manual, PDF or BGG page/API fetched. No starting-rule approval."
     }
   },
   "decisions": [
@@ -2658,6 +2746,293 @@
         "Disambiguating parenthetical is an editorial label, not a publisher title or a new alias. No manual or opening answer reviewed."
       ],
       "requiredFollowup": "Any starting-rule or exact printing/edition association requires separate complete manual custody and approval; qualified discovery label and saved numeric statement establish no rule attachment."
+    },
+    {
+      "bggId": "71",
+      "wikidataId": "Q1094512",
+      "snapshotName": "Civilization",
+      "displayName": "Civilization (1980 game)",
+      "decision": "accept",
+      "reason": "The saved item identifies the 1980 board game and has one normal P2339 value, 71. Gibsons explicitly describes its physical Civilization as a redesign/relaunch of the game originally published in 1980; current product context is consistent with developing ancient nations. The qualified label distinguishes the classic game from the active Sid Meier title at 77130.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1094512",
+            "url": "https://www.wikidata.org/wiki/Q1094512",
+            "revision": 2529340731,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1094512&oldid=2529340731",
+            "label": "Civilization",
+            "description": "1980 board game",
+            "bggIdClaims": [
+              {
+                "value": "71",
+                "rank": "normal",
+                "qualifiers": {},
+                "statementId": "Q1094512$C5C11C44-822F-43F2-BFB8-A22ACF85C926"
+              }
+            ],
+            "fullOwnP2339Statements": [
+              {
+                "mainsnak": {
+                  "snaktype": "value",
+                  "property": "P2339",
+                  "hash": "e8ecad470c15ec2d722ae2744ee847f765dfdd55",
+                  "datavalue": {
+                    "value": "71",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                },
+                "type": "statement",
+                "id": "Q1094512$C5C11C44-822F-43F2-BFB8-A22ACF85C926",
+                "rank": "normal",
+                "references": [
+                  {
+                    "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                    "snaks": {
+                      "P143": [
+                        {
+                          "snaktype": "value",
+                          "property": "P143",
+                          "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                          "datavalue": {
+                            "value": {
+                              "entity-type": "item",
+                              "numeric-id": 328,
+                              "id": "Q328"
+                            },
+                            "type": "wikibase-entityid"
+                          },
+                          "datatype": "wikibase-item"
+                        }
+                      ]
+                    },
+                    "snaks-order": [
+                      "P143"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canonicalEntitySha256": "bd80899af4f3bca72e165661912ac9be2d54777efb2b3ebd137d0635f50aba99",
+            "rawResponseSha256": "14489a5d2ec9adcac9c3aa62c9f0bfae602c84f3cd854857c0447b7678c0e60d"
+          }
+        ],
+        "primarySourceIds": [
+          "civilizationGibsonsHistory",
+          "civilizationGibsonsProduct"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "identityLimits": [
+        "The publisher product is a later re-release, not authority for identical rules or an original printing. The 2018 re-release statement and Shopify created_at/published_at fields are not imported as release/printing metadata.",
+        "The saved P50/P123 QIDs are preserved but their entity labels/domain bindings were not retrieved; no designer label or original publisher identity is inferred from them.",
+        "77130 retains its existing title and rule attachment. Advanced Civilization177 and other Civilization-titled identities stay separate.",
+        "Disambiguating parenthetical is an editorial display qualifier, not a new alias or publisher title. Numeric publication identifier remains Wikidata-only; no fetched primary source proves that external number."
+      ],
+      "requiredFollowup": "Inspect a complete official manual for the intended printing before any rule attachment."
+    },
+    {
+      "bggId": "68",
+      "wikidataId": "Q118942141",
+      "snapshotName": "Successors",
+      "displayName": "Successors (Avalon Hill)",
+      "decision": "accept",
+      "reason": "The saved item uniquely binds normal P2339 value 68 and describes Avalon Hill Successors. GMT directly identifies the original Avalon Hill publication and distinguishes its updated third edition, with a changed map/cards and revised rules. The original-lineage label is supported without treating GMT third-edition rules as original rules.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q118942141",
+            "url": "https://www.wikidata.org/wiki/Q118942141",
+            "revision": 2156684900,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q118942141&oldid=2156684900",
+            "label": "Successors",
+            "description": "board game published by Avalon Hill in 1997",
+            "bggIdClaims": [
+              {
+                "value": "68",
+                "rank": "normal",
+                "qualifiers": {},
+                "statementId": "Q118942141$3726CD21-8FF9-43CC-A57C-37A4EB4E2C1B"
+              }
+            ],
+            "fullOwnP2339Statements": [
+              {
+                "mainsnak": {
+                  "snaktype": "value",
+                  "property": "P2339",
+                  "hash": "a059e528c880d4676e3e22158e9044a434842057",
+                  "datavalue": {
+                    "value": "68",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                },
+                "type": "statement",
+                "id": "Q118942141$3726CD21-8FF9-43CC-A57C-37A4EB4E2C1B",
+                "rank": "normal",
+                "references": [
+                  {
+                    "hash": "6e07e5f261080a5fd865062001f5f03e3cd3572f",
+                    "snaks": {
+                      "P813": [
+                        {
+                          "snaktype": "value",
+                          "property": "P813",
+                          "hash": "3ec6f320fcfee3fbd5d4c04317410eea9762a888",
+                          "datavalue": {
+                            "value": {
+                              "time": "+2024-05-17T00:00:00Z",
+                              "timezone": 0,
+                              "before": 0,
+                              "after": 0,
+                              "precision": 11,
+                              "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                            },
+                            "type": "time"
+                          },
+                          "datatype": "time"
+                        }
+                      ],
+                      "P4656": [
+                        {
+                          "snaktype": "value",
+                          "property": "P4656",
+                          "hash": "ed4705ab81fe64aff83783c4ba7bc1a7f81efbef",
+                          "datavalue": {
+                            "value": "https://en.wikipedia.org/w/index.php?title=Successors_(board_game)&oldid=1163010461",
+                            "type": "string"
+                          },
+                          "datatype": "url"
+                        }
+                      ]
+                    },
+                    "snaks-order": [
+                      "P813",
+                      "P4656"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canonicalEntitySha256": "78c45460b02573dd5a411e8bf29e444f93674359780b3b63d92b6bd868a39547",
+            "rawResponseSha256": "14489a5d2ec9adcac9c3aa62c9f0bfae602c84f3cd854857c0447b7678c0e60d"
+          }
+        ],
+        "primarySourceIds": [
+          "successorsGMTHistory"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "identityLimits": [
+        "A concrete chronology conflict remains: saved English description says 1997; GMT official description says first published 1995. No year field, date-qualified title or printing inference is proposed.",
+        "Same-title snapshot peer 26457/Q124450320 is not assigned an edition here. Its complete entity was not in the saved 20 and was not fetched. It remains flagged and excluded; no merge/alias or rule transfer.",
+        "The source body contains seven customer reviews and a generic GMT BoardGameGeek publisher 52 footer link. Reviews are excluded as primary authority; that publisher link establishes no numeric game correspondence.",
+        "Disambiguating parenthetical is an editorial display qualifier, not a new alias or publisher title. Numeric publication identifier remains Wikidata-only; no fetched primary source proves that external number."
+      ],
+      "requiredFollowup": "For rule research, obtain the original Avalon Hill manual; for peer 26457, require complete independently saved identity and edition authority."
+    },
+    {
+      "bggId": "551",
+      "wikidataId": "Q2891792",
+      "snapshotName": "Battle Cry",
+      "displayName": "Battle Cry (Richard Borg)",
+      "decision": "accept",
+      "reason": "The saved item uniquely binds normal P2339 value 551 and describes an American Civil War board wargame. The official IGA2001 two-player winner entry names Battle Cry, Richard Borg, Civil War battles and Avalon Hill/Hasbro. That correspondence supports the qualified semantic identity.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q2891792",
+            "url": "https://www.wikidata.org/wiki/Q2891792",
+            "revision": 2491657553,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q2891792&oldid=2491657553",
+            "label": "Battle Cry",
+            "description": "board wargame based on the American Civil War",
+            "bggIdClaims": [
+              {
+                "value": "551",
+                "rank": "normal",
+                "qualifiers": {},
+                "statementId": "Q2891792$A9F8A9A1-D6CD-4695-950E-CD50C61B3969"
+              }
+            ],
+            "fullOwnP2339Statements": [
+              {
+                "mainsnak": {
+                  "snaktype": "value",
+                  "property": "P2339",
+                  "hash": "c69139b6e2b344dca7f8d415872986730257e968",
+                  "datavalue": {
+                    "value": "551",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                },
+                "type": "statement",
+                "id": "Q2891792$A9F8A9A1-D6CD-4695-950E-CD50C61B3969",
+                "rank": "normal",
+                "references": [
+                  {
+                    "hash": "fa278ebfc458360e5aed63d5058cca83c46134f1",
+                    "snaks": {
+                      "P143": [
+                        {
+                          "snaktype": "value",
+                          "property": "P143",
+                          "hash": "e4f6d9441d0600513c4533c672b5ab472dc73694",
+                          "datavalue": {
+                            "value": {
+                              "entity-type": "item",
+                              "numeric-id": 328,
+                              "id": "Q328"
+                            },
+                            "type": "wikibase-entityid"
+                          },
+                          "datatype": "wikibase-item"
+                        }
+                      ]
+                    },
+                    "snaks-order": [
+                      "P143"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canonicalEntitySha256": "e0df368b9d6a3bd3445202149928f3e082aec09f7e3f15c35d4ce282eac44457",
+            "rawResponseSha256": "14489a5d2ec9adcac9c3aa62c9f0bfae602c84f3cd854857c0447b7678c0e60d"
+          }
+        ],
+        "primarySourceIds": [
+          "battleCryIGA2001"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "identityLimits": [
+        "The 2001 award page does not establish a publication year, printing, anniversary edition or starting rule. Saved P577 1999 is preserved only as an item claim and not repaired/imported.",
+        "Same-title peer 2428/Q4870030 remains flagged and excluded. Its complete entity was not in this intake; no creator, year or rule correspondence is inferred for it.",
+        "Association corroboration is primary award-organization evidence, not a fetched current publisher storefront or a P123-to-domain entity chain.",
+        "Disambiguating parenthetical is an editorial display qualifier, not a new alias or publisher title. Numeric publication identifier remains Wikidata-only; no fetched primary source proves that external number."
+      ],
+      "requiredFollowup": "A complete official publisher/manual source for the intended original or anniversary printing is required before any rule attachment."
     }
   ]
 }

@@ -244,7 +244,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('qualified pending identities remain distinct without borrowing related rules', async () => {
   const coverage = getCoverage();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; terms?: string[]; slug?: string }>;
-  for (const [id, name] of [['266083', 'L.A.M.A.'], ['318195', 'Biss 20'], ['153', 'Hornochsen! (Take 5!)'], ['200', 'Entdecker (Goldsieber)'], ['550', 'Barbarossa (Klaus Teuber)']] as const) {
+  for (const [id, name] of [['266083', 'L.A.M.A.'], ['318195', 'Biss 20'], ['153', 'Hornochsen! (Take 5!)'], ['200', 'Entdecker (Goldsieber)'], ['550', 'Barbarossa (Klaus Teuber)'], ['71', 'Civilization (1980 game)'], ['68', 'Successors (Avalon Hill)'], ['551', 'Battle Cry (Richard Borg)']] as const) {
     expect(coverage.games.filter(game => game.bggId === id)).toHaveLength(1);
     expect(coverage.games.find(game => game.bggId === id)).toMatchObject({ name, editions: [] });
     const entry = directory.find(game => game.id === id)!;
@@ -257,7 +257,7 @@ test('qualified pending identities remain distinct without borrowing related rul
   expect(directory.find(game => game.id === '325853')).toMatchObject({ name: 'Lama Dice', ruleCount: 1, slug: 'lama-dice-amigo-en-v1-0' });
   expect(coverage.games.find(game => game.bggId === '432')?.editions.map(rule => rule.id)).toEqual(['6-nimmt-amigo-2024-en']);
   expect(directory.find(game => game.id === '432')).toMatchObject({ name: '6 nimmt!', ruleCount: 1, slug: '6-nimmt-amigo-2024-en' });
-  for (const id of ['1334', '72809', '230', '131646']) {
+  for (const id of ['1334', '72809', '230', '131646', '589', '104710', '227', '30966', '26457', '2428']) {
     expect(coverage.games.some(game => game.bggId === id)).toBe(false);
     expect(directory.some(game => game.id === id)).toBe(false);
   }

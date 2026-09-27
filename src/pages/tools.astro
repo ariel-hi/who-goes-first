@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteSettings } from '../lib/site';
+const localPreview = import.meta.env.DEV && !siteSettings().production;
+const gamesPath = localPreview ? '/dev/games/' : '/games/';
+const tools = [
+  { href: '/', name: 'First-player picker', use: 'Choose among 2–50 players, with names or numbered seats.' },
+  { href: '/finger-chooser/', name: 'Finger chooser', use: 'Use a touch screen to choose a starter or a full turn order.' },
+  { href: '/coin-flip/', name: 'Coin flip', use: 'Make a fair heads-or-tails decision between two choices.' },
+  { href: '/random-team-generator/', name: 'Random team generator', use: 'Split up to 200 names into 2–10 evenly sized random teams.' },
+  { href: '/rock-paper-scissors/', name: 'Rock paper scissors', use: 'Two players choose in secret, then reveal both throws together.' },
+];
+---
+<Layout ads={false} title="Free Game-Night Decision Tools — Who Goes First?" description="Choose a starting player, flip a coin, make random teams or play rock paper scissors. Find the right free browser tool for your game night." pageType="CollectionPage">
+  <div class="content-page">
+    <h1>Decision tools.</h1>
+    <p class="lede">Pick a starter, settle a choice, or split your group into teams.</p>
+    <p>Playing a specific board game? <a href={gamesPath}>Check its starting-player rule</a> first.</p>
+    <ul class="game-list" aria-label="Decision tools">
+      {tools.map(tool => <li><a href={tool.href}><span>{tool.name}<small>{tool.use}</small></span></a></li>)}
+    </ul>
+    <p>Prefer a spinning reveal? Try the <a class="inline-link" href="/methods/spinner/">spinner in the first-player picker</a>.</p>
+  </div>
+</Layout>
