@@ -1,5 +1,5 @@
 ---
-interface Props { name: 'pinterest' | 'bluesky' | 'x' | 'facebook' | 'instagram' }
+interface Props { name: 'pinterest' | 'bluesky' | 'x' | 'facebook' | 'instagram' | 'whatsapp' | 'telegram' | 'reddit' | 'linkedin' | 'threads' | 'email' }
 const { name } = Astro.props;
 ---
 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -8,4 +8,11 @@ const { name } = Astro.props;
   {name === 'x' && <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-7.4L5.4 22H2.2l7.2-8.3L1 2h6.4l4.5 6.7L18.9 2Zm-1.1 18h1.7L6.4 3.9H4.6L17.8 20Z" />}
   {name === 'facebook' && <path d="M14 22v-9h3l.5-4H14V6.8c0-1.2.3-1.8 1.8-1.8H18V1.4c-.4-.1-1.8-.2-3.3-.2-3.2 0-5.2 1.9-5.2 5.4V9H6v4h3.5v9H14Z" />}
   {name === 'instagram' && <g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" /></g>}
+
+  {name === 'telegram' && <path d="m2 11 19-8-4 18-6-5-3 3v-5l10-8-12 7-4-2Z" />}
+  {name === 'whatsapp' && <g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17a9 9 0 1 1 3 3l-5 2 2-5Z" /><path d="M8 7c-3 4 5 12 9 9l-3-3-2 1-2-2 1-2-3-3Z" /></g>}
+  {name === 'reddit' && <g fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="15" rx="9" ry="6" /><path d="m12 9 2-6 5 1M7 17q5 4 10 0" /><circle cx="20" cy="4" r="2" /><circle cx="8" cy="13" r="1" fill="currentColor" /><circle cx="16" cy="13" r="1" fill="currentColor" /></g>}
+  {name === 'linkedin' && <g><rect x="3" y="9" width="4" height="12" /><circle cx="5" cy="5" r="2" /><path d="M10 9h4v2c3-4 7-2 7 2v8h-4v-7c0-3-3-3-3 0v7h-4V9Z" /></g>}
+  {name === 'threads' && <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 8C19 0 3 0 3 12c0 12 18 12 18 3 0-7-13-7-13-2 0 5 9 4 9-2 0-5-6-6-8-3" /></g>}
+  {name === 'email' && <g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m3 5 9 8 9-8" /></g>}
 </svg>

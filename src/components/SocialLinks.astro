@@ -3,27 +3,48 @@ import PinterestSave from './PinterestSave.astro';
 import BlueskyShare from './BlueskyShare.astro';
 import { siteSettings } from '../lib/site';
 import SocialIcon from './SocialIcon.astro';
-interface Props { kind: 'picker' | 'rules' | 'questions'; title: string }
-const { kind, title } = Astro.props;
+import PageShareButton from './PageShareButton.astro';
+import '../styles/social.css';
+interface Props { kind: 'picker' | 'rules' | 'questions'; title: string; shareLabel?: string; description?: string }
+const { kind, title, shareLabel, description = title } = Astro.props;
 const page = new URL(Astro.url.pathname, siteSettings().url).href;
 const x = new URL('https://twitter.com/intent/tweet');
 x.search = new URLSearchParams({ text: title, url: page }).toString();
 const facebook = new URL('https://www.facebook.com/sharer/sharer.php');
 facebook.search = new URLSearchParams({ u: page }).toString();
+const intent = (base: string, params: Record<string, string>) => {
+  const destination = new URL(base);
+  destination.search = new URLSearchParams(params).toString();
+  return destination.href;
+};
+const platforms = [
+  { name: 'whatsapp', label: 'WhatsApp', href: intent('https://wa.me/', { text: title + '\n' + page }) },
+  { name: 'telegram', label: 'Telegram', href: intent('https://t.me/share/url', { url: page, text: title }) },
+  { name: 'reddit', label: 'Reddit', href: intent('https://www.reddit.com/submit', { url: page, title }) },
+  { name: 'linkedin', label: 'LinkedIn', href: intent('https://www.linkedin.com/sharing/share-offsite/', { url: page }) },
+  { name: 'threads', label: 'Threads', href: intent('https://www.threads.com/intent/post', { text: title + '\n' + page }) },
+] as const;
+const email = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(title + '\n' + page)}`;
 ---
-{siteSettings().production && <div class="social-links" role="group" aria-label="Share this page">
-  <PinterestSave kind={kind} />
+<div class="social-links sharing-actions" role="group" aria-label="Share this page">
+  <PageShareButton label={shareLabel} />
+  {siteSettings().production && <>
+  <PinterestSave kind={kind} path={Astro.url.pathname} description={description} />
   <BlueskyShare title={title} />
   <a href={x.href} target="_blank" rel="noopener noreferrer" title="Share on X" aria-label="Share on X (opens in a new tab)"><SocialIcon name="x" /></a>
   <a href={facebook.href} target="_blank" rel="noopener noreferrer" title="Share on Facebook" aria-label="Share on Facebook (opens in a new tab)"><SocialIcon name="facebook" /></a>
+  {platforms.map(platform => <a href={platform.href} target="_blank" rel="noopener noreferrer" title={`Share on ${platform.label}`} aria-label={`Share on ${platform.label} (opens in a new tab)`}><SocialIcon name={platform.name} /></a>)}
+  <a href={email} title="Share by email" aria-label="Share by email"><SocialIcon name="email" /></a>
   <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-instagram-open title="Open Instagram and copy link" aria-label="Open Instagram and copy link (opens in a new tab)"><SocialIcon name="instagram" /></a>
   <span class="share-status small muted" role="status" data-instagram-status></span>
   <input type="url" readonly hidden aria-label="Link to copy for Instagram" data-instagram-link />
-</div>}
+  </>}
+</div>
 <script>
   import { cleanLink } from '../lib/share';
   document.querySelectorAll<HTMLElement>('.social-links').forEach(root => {
-    const link = root.querySelector<HTMLAnchorElement>('[data-instagram-open]')!;
+    const link = root.querySelector<HTMLAnchorElement>('[data-instagram-open]');
+    if (!link) return;
     const status = root.querySelector<HTMLElement>('[data-instagram-status]')!;
     const input = root.querySelector<HTMLInputElement>('[data-instagram-link]')!;
     input.addEventListener('focus', () => input.select());
@@ -43,8 +64,8 @@ facebook.search = new URLSearchParams({ u: page }).toString();
   });
 </script>
 <style>
-  .social-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0}
-  a,button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--green);text-decoration:none;padding:0}
+  .social-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0;max-width:100%}
+  a,button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--green);text-decoration:none;padding:0}
   a:hover,button:hover{background:var(--paper)}
   .share-status:empty{display:none}
   .share-status,input{flex-basis:100%;max-width:100%}

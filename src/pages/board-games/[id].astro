@@ -1,4 +1,5 @@
 ---
+import SharePage from "../../components/SharePage.astro";
 import Layout from '../../layouts/Layout.astro';
 import { getBoardGames } from '../../lib/content/board-games';
 import { siteSettings } from '../../lib/site';
@@ -25,6 +26,7 @@ const label = namesake ? game.origin === 'legacy' ? `${game.name} (BoardGameGeek
     <a class="back-link" href="/board-games/">← All board games</a>
     <h1>{game.name}</h1>
     {game.rules.length > 0 ? <><p class="lede">{game.rules.length === 1 ? 'Starting-player rule' : 'Choose your edition'}</p><ul class="game-list">{game.rules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.editionLabel}<small>See who goes first</small></span></a></li>)}</ul></> : <><p class="lede">A sourced starting-player rule is not available for this game yet.</p><p>Use the fair <a href="/">player picker</a> to get started.</p></>}
+    <SharePage title={ruleHeading(label)} />
     {buyLink && <BuyGame href={buyLink} name={game.name} />}
     {game.reference && <p class="small muted">Game identity: <a href={game.reference.url}>{game.origin === 'legacy' ? `BoardGameGeek ${game.bggId}` : game.reference.label}</a>.</p>}
   </div>

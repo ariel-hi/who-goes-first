@@ -1,4 +1,5 @@
 ---
+import SharePage from "../../../../components/SharePage.astro";
 import Layout from '../../../../layouts/Layout.astro';
 import BoardGameRow from '../../../../components/BoardGameRow.astro';
 import DirectoryPagination from '../../../../components/DirectoryPagination.astro';
@@ -22,6 +23,7 @@ const last = first + shelf.games.length - 1;
     <a class="back-link" href="/board-games/">← Board game directory</a>
     <h1>{label} board games.</h1>
     <p class="lede">{first.toLocaleString('en')}–{last.toLocaleString('en')} of {shelf.total.toLocaleString('en')} names in this section.</p>
+    <SharePage title={`Board games ${label} · Page ${shelf.page} — Who Goes First?`} />
     <nav class="directory-alphabet" aria-label="Browse game names by letter">{letters.map(item => <a href={shelfHref(item.letter)} aria-label={`Browse ${shelfLabel(item.letter)} games`} aria-current={item.letter === shelf.letter ? 'page' : undefined}>{shelfLabel(item.letter)}</a>)}</nav>
     {pages > 1 && <DirectoryPagination letter={shelf.letter} page={shelf.page} pages={pages} previous={previous} next={next} label="Directory pages above games" />}
     <ul class="game-list directory-shelf" data-directory-shelf>

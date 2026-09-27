@@ -1,4 +1,5 @@
 ---
+import SharePage from "../../components/SharePage.astro";
 import Layout from '../../layouts/Layout.astro';
 import { getBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
 import { getCatalog } from '../../lib/content/catalog';
@@ -12,6 +13,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     <h1>Board games.</h1>
     <p class="lede">Find the game you’re playing.</p>
     <p>{withRules.toLocaleString('en')} games with sourced starting-player rules. Browse the wider list of {games.length.toLocaleString('en')} games and editions below. If yours is still awaiting one, use the <a href="/">player picker</a>.</p>
+    <SharePage title="Board Game Directory — Who Goes First?" />
     <div data-board-directory>
       <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name or BGG number…" autocomplete="off" maxlength="100" disabled /></label>
       <div class="directory-filters" data-filters role="group" aria-label="Filter search results" hidden>
