@@ -1,0 +1,41 @@
+{
+  "id": "tikal-rio-grande-en",
+  "slug": "tikal-rio-grande-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Tikal",
+  "aliases": [],
+  "editionLabel": "Rio Grande English edition",
+  "firstPlayerRule": "In the standard game, the oldest player goes first. Play then continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "Choose randomly between players tied for oldest.",
+  "clarifications": [
+    "In the auction version, the oldest player opens the first bidding. The highest bidder takes the first turn; if everyone passes, the first player to pass takes that turn for free."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2013/02/Tikal-Rules.pdf",
+      "title": "Tikal — English rulebook",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "4",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        12
+      ],
+      "location": "Playing the game; Auction version — Bidding for the first turn",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Rio Grande English PDF. Rendered page 4 oldest and clockwise; page 12 auction starts oldest but winner takes first action, with all-pass free-turn rule. Do not apply standard first-turn criterion directly to auction action order. Source custody: research/source-files/popular-sep26-12/tikal.pdf; SHA-256 6d14dd596ff00e0d8d44ef24d9eed1025111527a6e083907423e986eb19173e7. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The rulebook does not specify how to settle an age tie when selecting the oldest player."
+  ]
+}
