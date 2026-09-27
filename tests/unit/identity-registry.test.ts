@@ -150,6 +150,11 @@ test('reviewed Zoch editions attach only to their allocated publisher identities
     ['game-442193d6-20c4-41d7-a261-37b34b8c19dc', 'Über den Wolken', 'ueber-den-wolken-zoch-601105207-en'],
     ['game-bab1eb8c-f3f5-4b38-a0d6-3cf63c41e407', 'Flitze Flatze Bärentatze', 'flitze-flatze-baerentatze-zoch-601105211-en'],
     ['game-60b6d1ae-767a-42cb-bce2-df3a41f28efb', 'Gigi Gacker am Würfelacker', 'gigi-gacker-am-wuerfelacker-zoch-601105222-en'],
+    ['game-2300274b-4a9d-448b-97fa-836b973bd8bf', 'Beethupferl', 'beethupferl-en'],
+    ['game-132a548d-b00a-46ce-a29b-6c40525c452b', 'Mirakel Mix', 'mirakel-mix-en'],
+    ['game-20ec80fb-32d8-4764-816e-285e0d0cb292', "Käpt'n Memo", 'kaeptn-memo-en'],
+    ['game-c60afcd1-5e6b-44ed-a41a-dbd91376d400', 'Kleiner Drache Wirbelwind', 'kleiner-drache-wirbelwind-en'],
+    ['game-5a318f64-4fde-423e-9a63-e3887b7de5de', 'Mach die Flatter', 'mach-die-flatter-en'],
   ] as const) {
     const attached = games.filter(game => game.rules.some(rule => rule.id === ruleId));
     expect(attached.map(game => game.identityId)).toEqual([identityId]);
@@ -157,9 +162,7 @@ test('reviewed Zoch editions attach only to their allocated publisher identities
     expect(attached[0]).not.toHaveProperty('bggId');
   }
   for (const identityId of [
-    'game-20ec80fb-32d8-4764-816e-285e0d0cb292',
-    'game-c60afcd1-5e6b-44ed-a41a-dbd91376d400',
-    'game-5a318f64-4fde-423e-9a63-e3887b7de5de',
+    'game-1266d398-3f70-4bb8-bac8-3c96fce358a8',
   ]) {
     expect(games.find(game => game.identityId === identityId)).toMatchObject({ rules: [], searchNames: [], reference: { label: 'Publisher reference' } });
   }
