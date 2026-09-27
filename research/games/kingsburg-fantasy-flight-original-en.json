@@ -1,0 +1,39 @@
+{
+  "id": "kingsburg-fantasy-flight-original-en",
+  "slug": "kingsburg-fantasy-flight-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Kingsburg",
+  "aliases": [],
+  "editionLabel": "Fantasy Flight English original edition",
+  "firstPlayerRule": "Place the players’ tokens on the Turn Order Chart randomly during setup. When the first productive season begins, everyone rolls their dice; the lowest total takes the first advisor-influence turn, followed by the other totals in ascending order.",
+  "officialTieBreak": "If dice totals are equal, retain their relative order from the previous season, or from the random setup order in the first season.",
+  "houseFallback": null,
+  "clarifications": [
+    "The first phase is Aid from the King. In the first year, all players receive one good because they are tied; the first advisor choices come afterward."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/Kingsburg/kingsburg-rules.pdf",
+      "title": "Kingsburg — English rulebook",
+      "publisher": "Fantasy Flight Games",
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup; Phase 2: Spring — Roll dice and adjust the Turn Order Chart",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official FFG original English manual, not later Z-Man revised/third edition. Rendered PDF 2 original year-one all-tied aid exception and productive season lowest total, including white dice; setup PDF 1 random chart. Official tie uses previous position or initial random placement. Source custody: research/source-files/popular-sep26-13/kingsburg.pdf; SHA-256 d35a413c7107cd495d6ebfd1497fca99131d32bfd87287d4db554cd4e3e07f50. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": []
+}
