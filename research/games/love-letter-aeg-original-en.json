@@ -1,0 +1,41 @@
+{
+  "id": "love-letter-aeg-original-en",
+  "slug": "love-letter-aeg-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Love Letter",
+  "aliases": [],
+  "editionLabel": "AEG English original edition",
+  "firstPlayerRule": "The player who most recently went on a date starts.",
+  "officialTieBreak": "If players are tied for the most recent date, the younger player starts.",
+  "houseFallback": "Choose randomly among any tied players, or among everyone if nobody can meet the dating criterion.",
+  "clarifications": [
+    "The winner of the previous round starts the next round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://alderac.com/wp-content/uploads/2017/11/Love_Letter_Rules_Final.pdf",
+      "title": "Love Letter — English rulebook",
+      "publisher": "Alderac Entertainment Group",
+      "printedPages": [
+        "9",
+        "14"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        14
+      ],
+      "location": "Setup; A New Round",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official AEG English original Tempest booklet. Rendered PDF7 confirms16 game cards, PDF9 exact recent-date selector and younger tie, PDF14 previous-round winner, PDF23 AEG2012 copyright. This is the original129622 target, not the21-card revised277085 identity or Premium Edition. Existing2025 bag record is preserved separately and requires its own correspondence correction before this original record is published. Source custody: research/source-files/popular-originals-intake/love-original.pdf; SHA-256 b0f2dd6a6f28075ac5b4625d486f2b871ac4a30b142e936ce1e9de0c77a4fcc3. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": [
+    "The opening rule does not give a further tie-break if date recency and age are both tied, or a method for a group in which nobody has been on a date."
+  ]
+}
