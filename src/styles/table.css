@@ -8,7 +8,8 @@
   .brand-mark rect { fill:var(--green); }
   .site-nav { gap:20px; }
   main { min-height:0; }
-  #main:focus { outline:3px solid var(--green); outline-offset:-3px; }
+  #main:focus { outline:none; }
+  #main:focus-visible { outline:3px solid var(--green); outline-offset:-3px; }
   .tool-page { max-width:1080px; margin:18px auto 0; padding:0 24px; }
   .tool-page:has(.picker[data-large=true]) { max-width:1000px; }
   .intro { text-align:center; margin-bottom:24px; }
