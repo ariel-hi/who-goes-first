@@ -10,9 +10,9 @@ const paths = ['/', '/games/', '/house-rules/', '/board-games/', shelfHref(shelf
 const labels = ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook', 'Share on WhatsApp', 'Share on Telegram', 'Share on Reddit', 'Share on LinkedIn', 'Share on Threads', 'Share by email'];
 
 for (const width of [320, 1280]) {
-  test(`sharing is consistent and points to the current page at ${width}px`, async ({ page }) => {
-    await page.setViewportSize({ width, height: 900 });
-    for (const path of paths) {
+  for (const path of paths) {
+    test(`sharing is consistent and points to the current page at ${width}px on ${path}`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 900 });
       await page.goto(path + '?names=PrivatePlayer&utm_source=test#private-winner');
       const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
       await expect(toolbar).toHaveCount(1);
@@ -48,8 +48,8 @@ for (const width of [320, 1280]) {
         await toolbar.scrollIntoViewIfNeeded();
         await page.screenshot({ path: 'artifacts/sharing-mobile-' + test.info().project.name + '.png', fullPage: false });
       }
-    }
-  });
+    });
+  }
 }
 
 test('sharing copies a clean link and offers a selectable fallback when clipboard fails', async ({ page }) => {
