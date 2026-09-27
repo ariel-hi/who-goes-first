@@ -50,10 +50,24 @@ if (initialJs > 120 * 1024) throw new Error(`Initial JS exceeds 120 KiB: ${initi
 if (optionalJs > 200 * 1024) throw new Error(`Balloon exceeds 200 KiB: ${optionalJs}`);
 const aboveFold = initialJs + css + gzipSync(home).length + statSync(join(output, 'favicon.svg')).size;
 if (aboveFold > 350 * 1024) throw new Error(`Home exceeds 350 KiB: ${aboveFold}`);
+let largestRulePayload = 0;
 for (const path of files.filter(path => /[\\/]games[\\/].+[\\/]index.html$/.test(path))) {
   const html = readFileSync(path, 'utf8');
   if (/astro-island|component-url|BalloonRise/.test(html)) throw new Error('Static answer eagerly loads picker');
+  // Keep the same conservative 350 KiB allowance when licensed art is added.
+  // Inline SVG is already included in compressed HTML; count each local image once.
+  const images = new Set([...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map(match => match[1]!));
+  let imageBytes = 0;
+  for (const image of images) {
+    if (!image.startsWith('/') || image.startsWith('//')) throw new Error(`Rule artwork must be local: ${image}`);
+    const bytes = readFileSync(join(output, image));
+    imageBytes += image.endsWith('.svg') ? gzipSync(bytes).length : bytes.length;
+  }
+  const payload = initialJs + css + gzipSync(html).length + imageBytes + statSync(join(output, 'favicon.svg')).size;
+  if (payload > 350 * 1024) throw new Error(`Rule page exceeds 350 KiB: ${path} (${payload} B)`);
+  largestRulePayload = Math.max(largestRulePayload, payload);
 }
+console.log(`Largest conservative rule-page payload: ${largestRulePayload} B (350 KiB limit).`);
 const ads = settings.adsenseRuleSlot ? settings.adsenseClient : '';
 if (ads) {
   const adFree = files.filter(path => /^(index\.html|404\.html|methods\/[^/]+\/index\.html)$/.test(relative(output, path).replaceAll('\\', '/')));

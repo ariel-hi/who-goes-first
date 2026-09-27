@@ -1,11 +1,13 @@
 import { getCatalog, getPrompts, readRecords } from '../src/lib/content/catalog';
 import { ruleSchema, promptSchema } from '../src/lib/content/schema';
+import { validateRuleImageAsset } from '../src/lib/content/image-assets';
 import { randomRuleRevision } from '../src/lib/content/random-rules';
 import randomRulePool from '../src/content/random-rule-pool.json';
 import { readFileSync } from 'node:fs';
 import { getBoardGames, getBoardGameRegistry } from '../src/lib/content/board-games';
 import { resolveResearchIdentityAssignments, validateLegacyOverrideReferences } from '../src/lib/content/identity-assignments';
 const games = getCatalog(); const prompts = getPrompts();
+for (const game of games) validateRuleImageAsset(game.image);
 for (const group of [games, prompts]) {
   if (new Set(group.map(record => record.id)).size !== group.length) throw new Error('Duplicate public content ID');
 }

@@ -5,6 +5,7 @@ interface Props { rule: PublicRule; thumbnail?: boolean }
 const { rule, thumbnail = false } = Astro.props;
 const { label, motif, pattern, color } = gameArt(rule.gameName, rule.firstPlayerRule);
 ---
+{rule.image ? <img class:list={['game-art', 'game-art-image', { 'game-art-thumb': thumbnail }]} src={rule.image.file} alt={thumbnail ? '' : rule.image.alt} width={rule.image.width} height={rule.image.height} loading={thumbnail ? 'lazy' : 'eager'} decoding="async" /> :
 <svg class:list={['game-art', { 'game-art-thumb': thumbnail }]} viewBox="0 0 160 192" width="160" height="192" aria-hidden="true" focusable="false" style={`--art-color:${color}`}>
   <rect width="160" height="192" rx="18" fill="var(--art-color)" />
   <g fill="none" stroke="#fffef9" stroke-width="2" opacity=".16">
@@ -20,4 +21,4 @@ const { label, motif, pattern, color } = gameArt(rule.gameName, rule.firstPlayer
   </g>
   <text x="80" y="127" text-anchor="middle" fill="#fffef9" font-family="Georgia, 'Times New Roman', serif" font-size={label.length > 6 ? '22' : '34'}>{label}</text>
   <path d="M58 153h44" stroke="#fffef9" stroke-width="2" opacity=".5" />
-</svg>
+</svg>}

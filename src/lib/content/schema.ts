@@ -9,10 +9,26 @@ const approval = {
   publishedAt: date.nullable(), materiallyUpdatedAt: date.nullable(),
 };
 const identity = { id: nonempty.regex(/^[a-z0-9-]+$/), slug: nonempty.regex(/^[a-z0-9-]+$/), language: z.literal('en') };
+const imageSourceUrl = z.url().refine(value => {
+  const url = new URL(value);
+  return url.protocol === 'https:' && !url.username && !url.password
+    && !/(^|\.)(boardgamegeek\.com|bgg\.cc|geekdo-images\.com|amazon\.[a-z.]+|media-amazon\.com|ssl-images-amazon\.com|google\.[a-z.]+|bing\.com)$/.test(url.hostname);
+}, 'Use the publisher or rights holder source; Amazon API images need a separate URL-only integration');
+export const ruleImageSchema = z.object({
+  file: z.string().regex(/^\/images\/games\/[a-z0-9-]+\.(png|jpe?g|webp|avif)$/),
+  alt: nonempty, width: z.number().int().positive(), height: z.number().int().positive(),
+  source: z.object({ url: imageSourceUrl, publisher: nonempty }).strict(),
+  licence: z.object({
+    name: nonempty, url: imageSourceUrl, rightsHolder: nonempty, attribution: nonempty,
+    reviewedAt: date, localEditorialUse: z.literal(true),
+  }).strict(),
+}).strict();
+export type RuleImage = z.infer<typeof ruleImageSchema>;
 export const ruleSchema = z.object({
   ...identity, ...approval,
   slug: identity.slug.refine(value => value !== 'themes', 'The rule slug themes is reserved for theme hubs'),
   gameName: nonempty, aliases: z.array(nonempty), editionLabel: nonempty,
+  image: ruleImageSchema.optional(),
   firstPlayerRule: nonempty, officialTieBreak: nonempty.nullable(), houseFallback: nonempty.nullable(),
   tieBreakApplicable: z.boolean().optional(),
   clarifications: z.array(nonempty), interpretation: nonempty.nullable(),
@@ -45,11 +61,12 @@ export function assertPublishable(record: Record): void {
   const publicCopy = 'firstPlayerRule' in record ? [record.firstPlayerRule, record.gameName, record.editionLabel, ...record.clarifications].join(' ') : record.prompt;
   if (/\b(TODO|TBD|placeholder|lorem ipsum)\b/i.test(publicCopy)) throw new Error(`${record.id}: placeholder content cannot be published`);
 }
-export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt'>;
+export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt' | 'image'>;
 export function publicRule(record: RuleRecord): PublicRule {
   return {
     id: record.id, slug: record.slug, gameName: record.gameName, aliases: record.aliases,
     editionLabel: record.editionLabel, language: record.language, firstPlayerRule: record.firstPlayerRule,
+    ...(record.image === undefined ? {} : { image: record.image }),
     officialTieBreak: record.officialTieBreak, houseFallback: record.houseFallback,
     ...(record.tieBreakApplicable === undefined ? {} : { tieBreakApplicable: record.tieBreakApplicable }),
     clarifications: record.clarifications,
