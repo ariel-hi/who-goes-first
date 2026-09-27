@@ -42,16 +42,16 @@ for (const game of games) {
   });
 }
 
-test('popular batch 13 stays searchable in the rule library and homepage', async ({ page }) => {
-  for (const path of ['/games/', '/']) {
+for (const path of ['/games/', '/']) {
+  test(`popular batch 13 stays searchable on ${path}`, async ({ page }) => {
     await page.goto(path);
     const surface = page.locator(path === '/' ? '[data-rule-lookup]' : '[data-game-directory]');
     for (const game of games) {
       await surface.getByRole('searchbox').fill(game.rule.gameName);
       await expect(surface.locator(`a[href="/games/${game.id}/"]`).first()).toBeVisible();
     }
-  }
-});
+  });
+}
 
 test('original editions and later editions retain separate directory destinations', async ({ request }) => {
   const rows = await (await request.get('/board-games/search.json')).json() as { id: string; ruleCount: number; slug?: string }[];

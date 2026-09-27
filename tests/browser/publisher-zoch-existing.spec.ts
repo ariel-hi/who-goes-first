@@ -56,12 +56,12 @@ type StructuredData = {
 };
 
 for (const width of [320, 1280]) {
-  test(`existing Zoch identities lead to the exact scoped article and restore native Back at ${width}px`, async ({ page }) => {
+  for (const game of games) test(`${game.ruleId} leads to its exact scoped article and restores native Back at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 });
     await page.goto('/board-games/');
     const search = page.getByRole('searchbox', { name: 'Search board games' });
     const rows = page.locator('[data-board-directory] [data-results] > li');
-    for (const game of games) {
+    {
       await search.fill(game.name);
       await expect(rows).toHaveCount(1);
       await expect(rows).toHaveAttribute('data-id', game.identityId);
