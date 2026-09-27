@@ -16,23 +16,23 @@ facebook.search = new URLSearchParams({ u: page }).toString();
   <BlueskyShare title={title} />
   <a href={x.href} target="_blank" rel="noopener noreferrer" title="Share on X" aria-label="Share on X (opens in a new tab)"><SocialIcon name="x" /></a>
   <a href={facebook.href} target="_blank" rel="noopener noreferrer" title="Share on Facebook" aria-label="Share on Facebook (opens in a new tab)"><SocialIcon name="facebook" /></a>
-  <button type="button" data-instagram-copy title="Copy link for Instagram" aria-label="Copy link for Instagram"><SocialIcon name="instagram" /></button>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-instagram-open title="Open Instagram and copy link" aria-label="Open Instagram and copy link (opens in a new tab)"><SocialIcon name="instagram" /></a>
   <span class="share-status small muted" role="status" data-instagram-status></span>
   <input type="url" readonly hidden aria-label="Link to copy for Instagram" data-instagram-link />
 </div>}
 <script>
   import { cleanLink } from '../lib/share';
   document.querySelectorAll<HTMLElement>('.social-links').forEach(root => {
-    const button = root.querySelector<HTMLButtonElement>('[data-instagram-copy]')!;
+    const link = root.querySelector<HTMLAnchorElement>('[data-instagram-open]')!;
     const status = root.querySelector<HTMLElement>('[data-instagram-status]')!;
     const input = root.querySelector<HTMLInputElement>('[data-instagram-link]')!;
     input.addEventListener('focus', () => input.select());
-    button.addEventListener('click', async () => {
+    link.addEventListener('click', async () => {
       const url = cleanLink(window.location.href);
       try {
         await navigator.clipboard.writeText(url);
         input.hidden = true;
-        status.textContent = 'Link copied — paste it into Instagram.';
+        status.textContent = 'Link copied. Instagram opened in a new tab.';
       } catch {
         input.value = url;
         input.hidden = false;
