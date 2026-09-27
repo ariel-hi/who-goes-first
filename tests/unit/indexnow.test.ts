@@ -1,5 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { notifyChangedPages, pageContentDigest, searchOrigin, indexNowEndpoint, keyLocation } from '../../scripts/lib/indexnow';
+import { assertPublishedCandidate, publishedPage } from '../../scripts/lib/publish-pages';
 const key = '1234567890abcdef1234567890abcdef';
 const page = `${searchOrigin}/printable-game-night/`;
 function fixture(robots = 'index, follow', canonical = page, content = '') {
@@ -14,6 +15,14 @@ function fixture(robots = 'index, follow', canonical = page, content = '') {
   return { requests, fetcher };
 }
 describe('changed-page search notifications', () => {
+  test('canonical old apex content cannot acknowledge an undeployed candidate revision', async () => {
+    const live = fixture('index, follow', page, '<main>Old answer</main>');
+    const candidate = `<html><head><meta name="robots" content="index, follow"><link rel="canonical" href="${page}"></head><body><main>New answer</main></body></html>`;
+    const expected = new Map([[page, publishedPage(candidate)!.digest]]);
+    await expect(notifyChangedPages([page], key, true, [], live.fetcher,
+      (url, html) => assertPublishedCandidate(expected, url, html))).rejects.toThrow('does not match');
+    expect(live.requests.some(request => request.method === 'POST')).toBe(false);
+  });
   const emailLink = (destination: string, seed: number) => `<a href="/cdn-cgi/l/email-protection#${Buffer.from([seed, ...Buffer.from(destination).map(byte => byte ^ seed)]).toString('hex')}">Send a correction</a>`;
   test('refuses a duplicate when only the email encoding seed changes', async () => {
     const first = fixture('index, follow', page, emailLink('editor@example.com?subject=Rule correction', 10));

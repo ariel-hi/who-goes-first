@@ -75,8 +75,8 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   const mobilePicker = await page.locator('.home-picker').boundingBox();
   const mobileRules = await page.locator('.home-rules').boundingBox();
   expect(mobileRules!.y).toBeGreaterThanOrEqual(mobilePicker!.y + mobilePicker!.height);
-  await expect(page.locator('[data-home-random-rule]')).toBeHidden();
-  await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveAttribute('href', '/games/#random-rule');
+  await expect(page.locator('[data-home-random-rule]')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveCount(0);
   const button = await page.getByRole('button', { name: 'Pick a player', exact: true }).boundingBox();
   expect(button!.y + button!.height).toBeLessThan(844);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

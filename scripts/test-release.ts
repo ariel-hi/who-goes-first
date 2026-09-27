@@ -27,7 +27,7 @@ const origin = 'https://who-goes-first.release-check.net';
 const releaseDetails = { CONTACT_EMAIL: 'owner@release-check.net', PRIVACY_HOST_NAME: 'Fixture Host', PRIVACY_LOGGING_POLICY: 'Fixture access logs are deleted after 30 days.' };
 function build(name: string, extra: Record<string, string>) {
   const out = join(fixtureRoot, name);
-  const env = { ...process.env, ADSENSE_CLIENT: '', AMAZON_ASSOCIATES_TAG: '', TIP_JAR_URL: '', ASTRO_TELEMETRY_DISABLED: '1', DEPLOY_CONTEXT: 'preview', SITE_URL: origin, BUILD_OUT_DIR: out, ...extra };
+  const env = { ...process.env, ADSENSE_CLIENT: '', ADSENSE_RULE_SLOT: '', AMAZON_ASSOCIATES_TAG: '', TIP_JAR_URL: '', ASTRO_TELEMETRY_DISABLED: '1', DEPLOY_CONTEXT: 'preview', SITE_URL: origin, BUILD_OUT_DIR: out, ...extra };
   const result = spawnSync(node, [astro, 'build'], { cwd: fixtureRoot, env, encoding: 'utf8' });
   if (result.status !== 0) throw new Error(result.stdout + result.stderr);
   const audit = spawnSync(node, [tsx, 'scripts/audit-build.ts'], { cwd: fixtureRoot, env, encoding: 'utf8' });
@@ -89,7 +89,7 @@ assert.match(readFileSync(join(populated, 'house-rules/index.html'), 'utf8'), /W
 assert.doesNotMatch(readFileSync(join(populated, 'house-rules/index.html'), 'utf8'), /PRIVATE_PROMPT_CANARY/);
 const monetized = build('production-growth-fixtures', {
   DEPLOY_CONTEXT: 'production', ...releaseDetails,
-  ADSENSE_CLIENT: 'ca-pub-1234567890123456', AMAZON_ASSOCIATES_TAG: 'fixture-20', TIP_JAR_URL: 'https://ko-fi.com/fixture',
+  ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1234567890', AMAZON_ASSOCIATES_TAG: 'fixture-20', TIP_JAR_URL: 'https://ko-fi.com/fixture',
 });
 assert.equal(readFileSync(join(monetized, 'ads.txt'), 'utf8'), 'google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0\n');
 const adHeaders = readFileSync(join(monetized, '_headers'), 'utf8');
@@ -102,6 +102,9 @@ for (const file of ['index.html', '404.html', ...['balloon', 'spinner', 'cards',
   assert.doesNotMatch(html, /data-ads="on"|src="\/analytics-consent\.js"|data-analytics-consent/);
 }
 const growthAnswer = readFileSync(join(monetized, 'games/synthetic-fixture/index.html'), 'utf8');
+assert.equal([...growthAnswer.matchAll(/<ins\b[^>]*data-ad-slot=/g)].length, 1);
+assert.ok(growthAnswer.indexOf('class="rule-ad"') > growthAnswer.indexOf('class="source-actions"'));
+assert.match(growthAnswer, /height:250px/);
 assert.match(growthAnswer, /data-ads="on"/);
 assert.match(growthAnswer, /\/og\/synthetic-fixture\.png/);
 assert.match(growthAnswer, /href="\/publishers\/test-fixture\/"/);

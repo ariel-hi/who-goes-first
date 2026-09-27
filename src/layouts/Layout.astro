@@ -8,7 +8,7 @@ import { siteSettings } from '../lib/site';
 // `ads` is false on the picker and error pages: a tool used mid-game night is no place for
 // ads that shift layout or invite accidental taps, and AdSense disallows ads on error pages.
 interface Props { title: string; description: string; noindex?: boolean; canonicalPath?: string; pageType?: 'WebPage' | 'AboutPage' | 'CollectionPage'; modified?: string; citations?: string[]; image?: string; imageAlt?: string; ads?: boolean }
-const { title, description, noindex = false, canonicalPath = Astro.url.pathname, pageType = 'WebPage', modified, citations, image = '/social.png', imageAlt = 'Who Goes First? A fair draw for your next board game.', ads = true } = Astro.props;
+const { title, description, noindex = false, canonicalPath = Astro.url.pathname, pageType = 'WebPage', modified, citations, image = '/social.png', imageAlt = 'Who Goes First? A fair draw for your next board game.', ads = false } = Astro.props;
 const settings = siteSettings();
 const canonical = new URL(canonicalPath, settings.url).href;
 const path = Astro.url.pathname;
@@ -17,7 +17,7 @@ const gamesPath = localPreview ? '/dev/games/' : '/games/';
 const indexed = settings.production && !noindex;
 const imageUrl = new URL(image, settings.url).href;
 // With AdSense configured, Google's certified consent message replaces the analytics banner.
-const googleAds = settings.production && Boolean(settings.adsenseClient);
+const googleAds = settings.production && Boolean(settings.adsenseClient && settings.adsenseRuleSlot);
 const structuredData = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -52,7 +52,7 @@ const structuredData = {
     <meta property="og:image" content={imageUrl} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content={imageAlt} />
     <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={imageUrl} /><meta name="twitter:image:alt" content={imageAlt} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />
-    {googleAds ? <script src="/google-tags.js" data-client={settings.adsenseClient} data-ads={ads ? 'on' : 'off'} async></script> : settings.production && <script src="/analytics-consent.js" defer></script>}
+    {googleAds ? <script src="/google-tags.js" data-client={settings.adsenseClient} data-ads={ads ? 'on' : 'off'} defer></script> : settings.production && <script src="/analytics-consent.js" defer></script>}
     <slot name="head" />
   </head>
   <body>

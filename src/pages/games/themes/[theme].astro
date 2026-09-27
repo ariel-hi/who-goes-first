@@ -9,6 +9,12 @@ export function getStaticPaths() {
 }
 const { hub } = Astro.props as { hub: ReturnType<typeof themeHubs>[number] };
 const count = hub.rules.length;
+const context: Record<string, string> = {
+  'youngest-player': 'Age can decide the first turn, resolve a tie, or determine who chooses the starter. The answers below preserve those differences: open the game to check the exact instruction for your edition. If your table wants equal chances instead, use the random player picker.',
+  'oldest-player': 'Some rulebooks give the oldest player the opening turn; others use age only as a fallback. Check the answer and edition below before applying an age rule to your game.',
+  birthdays: 'A birthday rule may depend on the next birthday, the most recent birthday, or the date itself. Read the exact condition below rather than assuming all birthday rules choose the same person.',
+  'most-recently': 'These rules turn a recent experience into a starting-player question. Ask the exact question in the answer, then open the game for any official tie-break. A rule that works for one edition may change in another.',
+};
 ---
 <HubPage
   title={`${hub.title}: ${count} Board Games — Who Goes First?`}
@@ -17,4 +23,6 @@ const count = hub.rules.length;
   lede={`${count} sourced board game rules that mention ${hub.about} when choosing who goes first.`}
   crumb={hub.label}
   rules={hub.rules}
-/>
+>
+  {context[hub.slug] && <p>{context[hub.slug]}</p>}
+</HubPage>

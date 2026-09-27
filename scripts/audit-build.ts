@@ -54,10 +54,19 @@ for (const path of files.filter(path => /[\\/]games[\\/].+[\\/]index.html$/.test
   const html = readFileSync(path, 'utf8');
   if (/astro-island|component-url|BalloonRise/.test(html)) throw new Error('Static answer eagerly loads picker');
 }
-const ads = settings.adsenseClient;
+const ads = settings.adsenseRuleSlot ? settings.adsenseClient : '';
 if (ads) {
   const adFree = files.filter(path => /^(index\.html|404\.html|methods\/[^/]+\/index\.html)$/.test(relative(output, path).replaceAll('\\', '/')));
   for (const path of adFree) if (!readFileSync(path, 'utf8').includes('data-ads="off"')) throw new Error(`Picker or error page would load ads: ${relative(output, path)}`);
+}
+for (const file of files.filter(path => path.endsWith('.html'))) {
+  const html = readFileSync(file, 'utf8');
+  const route = relative(output, file).replaceAll('\\', '/');
+  const units = [...html.matchAll(/<ins\b[^>]*data-ad-slot=/g)].length;
+  if (units && (!ads || units !== 1 || !/^games\/[^/]+\/index\.html$/.test(route))) throw new Error(`Unexpected ad unit: ${route}`);
+  if (units && html.indexOf('class="rule-ad"') < html.indexOf('class="source-actions"')) throw new Error(`Ad precedes the answer source: ${route}`);
+  if (!ads && /src="\/google-tags\.js"/.test(html)) throw new Error(`Ad loader enabled without an explicit rule slot: ${route}`);
+  if (/^board-games\/browse\//.test(route) && !html.includes('content="noindex, follow"')) throw new Error(`Indexable directory shelf: ${route}`);
 }
 const googleSources = settings.production ? ' https://www.googletagmanager.com https://*.google-analytics.com' : '';
 // AdSense, its consent message, and ad frames load from many Google hosts and
@@ -69,8 +78,15 @@ const csp = ads
   ? `default-src 'none'; manifest-src 'self'; script-src 'self' ${[...hashes].join(' ')} https://www.googletagmanager.com${adScripts}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https:${adFrames}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`
   : `default-src 'none'; manifest-src 'self'; script-src 'self' ${[...hashes].join(' ')}${settings.production ? ' https://www.googletagmanager.com' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${googleSources}; font-src 'self'; connect-src 'self'${googleSources}; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'`;
 if (`  Content-Security-Policy: ${csp}`.length > 2000) throw new Error('CSP exceeds Cloudflare Pages header line limit; split policies by route before expanding the catalog.');
-if (ads) writeFileSync(join(output, 'ads.txt'), `google.com, ${ads.slice(3)}, DIRECT, f08c47fec0942fa0\n`);
-writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: ${ads ? 'strict-origin-when-cross-origin' : 'no-referrer'}\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/site.webmanifest\n  Content-Type: application/manifest+json\n  X-Robots-Tag: noindex\n\n/indexnow-key.txt\n  X-Robots-Tag: noindex\n\n/downloads/who-goes-first-game-night-cards.pdf\n  Link: <${settings.url}/printable-game-night/>; rel="canonical"\n\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/rule-index.json\n  Cache-Control: public, max-age=300, must-revalidate\n\n/board-games/search.json\n  Cache-Control: public, max-age=300, must-revalidate\n`);
+if (settings.adsenseClient) writeFileSync(join(output, 'ads.txt'), `google.com, ${settings.adsenseClient.slice(3)}, DIRECT, f08c47fec0942fa0\n`);
+// Bind automated notifications to the actual apex deployment, not a preview
+// check sharing the same Git commit. Cloudflare supplies this public commit ID.
+const releaseCommit = process.env.CF_PAGES_COMMIT_SHA;
+if (settings.production && releaseCommit) {
+  if (!/^[a-f0-9]{40}$/i.test(releaseCommit)) throw new Error('Invalid Cloudflare release commit');
+  writeFileSync(join(output, 'release.json'), `${JSON.stringify({ commit: releaseCommit })}\n`);
+}
+writeFileSync(join(output, '_headers'), `/*\n  Content-Security-Policy: ${csp}\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: ${ads ? 'strict-origin-when-cross-origin' : 'no-referrer'}\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n${!settings.production ? '  X-Robots-Tag: noindex, follow\n' : ''}\n/site.webmanifest\n  Content-Type: application/manifest+json\n  X-Robots-Tag: noindex\n\n/indexnow-key.txt\n  X-Robots-Tag: noindex\n\n/release.json\n  X-Robots-Tag: noindex\n\n/downloads/who-goes-first-game-night-cards.pdf\n  Link: <${settings.url}/printable-game-night/>; rel="canonical"\n\n/_astro/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/rule-index.json\n  Cache-Control: public, max-age=300, must-revalidate\n\n/board-games/search.json\n  Cache-Control: public, max-age=300, must-revalidate\n`);
 // Audit the emitted host policy: public caching is confined to hashed assets
 // and these short-lived lookup indexes, never an HTML or private-path wildcard.
 const expectedCachePolicies = new Map([

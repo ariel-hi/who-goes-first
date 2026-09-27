@@ -17,7 +17,7 @@ const pages = letters.find(item => item.letter === shelf.letter)!.pages;
 const first = (shelf.page - 1) * BROWSE_PAGE_SIZE + 1;
 const last = first + shelf.games.length - 1;
 ---
-<Layout title={`Board games ${label} · Page ${shelf.page} — Who Goes First?`} description={`Browse board games starting with ${label}, names ${first} through ${last} of ${shelf.total}. Find a sourced starting-player rule when available.`} pageType="CollectionPage">
+<Layout title={`Board games ${label} · Page ${shelf.page} — Who Goes First?`} description={`Browse board games starting with ${label}, names ${first} through ${last} of ${shelf.total}. Find a sourced starting-player rule when available.`} pageType="CollectionPage" noindex={true}>
   <div class="content-page">
     <a class="back-link" href="/board-games/">← Board game directory</a>
     <h1>{label} board games.</h1>

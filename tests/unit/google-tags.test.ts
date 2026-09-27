@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 
 const script = readFileSync('public/google-tags.js', 'utf8');
-function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = false) {
+function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = false, hasSlot = true) {
   const order: string[] = [];
   const scripts: string[] = [];
   const dataLayer: IArguments[] = [];
@@ -15,7 +15,9 @@ function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = fa
     title: 'Public rule', cookie: '_ga=old',
     head: { append(node: { src: string }) { order.push('script'); scripts.push(node.src); } },
     createElement() { return {}; },
-    querySelector() { return status; },
+    readyState: 'complete',
+    querySelector(selector: string) { return selector.startsWith('ins.') ? (hasSlot ? {} : null) : status; },
+    querySelectorAll() { return hasSlot ? [{}] : []; },
     addEventListener(type: string, callback: (event: { target: Element }) => void) { listeners.set(type, callback); },
   };
   const window = {
@@ -52,4 +54,8 @@ test('ads mode preserves current and legacy analytics opt-outs', () => {
   expect(page.saved['wgf:analytics-choice:v2']).toBe('decline');
   expect(page.window).toHaveProperty('ga-disable-G-XDVR78FJXY', true);
   expect(page.status.textContent).toBe('Analytics is off on this device.');
+});
+
+test('an ad-enabled marker without an explicit unit never loads AdSense', () => {
+  expect(run(true, {}, false, false).scripts.some(url => url.includes('adsbygoogle'))).toBe(false);
 });

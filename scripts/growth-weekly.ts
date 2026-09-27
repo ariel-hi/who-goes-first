@@ -12,7 +12,7 @@ import { adNetworkReadiness } from './lib/ad-network-readiness';
 //   GA4_PROPERTY_ID              optional numeric GA4 property ID
 //   SITE_URL                     canonical origin
 const credentials = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
-const property = process.env.GSC_PROPERTY || 'sc-domain:whogoesfirst.fun';
+const property = process.env.GSC_PROPERTY || 'https://whogoesfirst.fun/';
 const gaProperty = process.env.GA4_PROPERTY_ID?.trim();
 const origin = new URL(process.env.SITE_URL || 'https://whogoesfirst.fun').origin;
 if (!credentials) { console.log('GOOGLE_SERVICE_ACCOUNT_JSON is not set; skipping the weekly growth job.'); process.exit(0); }

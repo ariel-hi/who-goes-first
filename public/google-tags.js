@@ -61,7 +61,18 @@
     frame.name = 'googlefcPresent'; frame.title = 'Consent signal'; frame.setAttribute('aria-hidden', 'true');
     document.body.append(frame);
   })();
-  if (tag.dataset.ads === 'on') load(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}`, true);
+  // Load the ad library only for an explicit unit below a rule answer.
+  // Auto ads must also remain disabled in the AdSense account.
+  if (tag.dataset.ads === 'on' && document.querySelector('ins.adsbygoogle[data-ad-slot]')) {
+    load(`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}`, true);
+    const initialize = () => {
+      document.querySelectorAll('ins.adsbygoogle[data-ad-slot]').forEach(() => {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      });
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });
+    else initialize();
+  }
 
   // Privacy page controls.
   document.addEventListener('click', event => {
