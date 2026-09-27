@@ -1,0 +1,41 @@
+{
+  "id": "dominion-rio-grande-original-en",
+  "slug": "dominion-rio-grande-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Dominion",
+  "aliases": [],
+  "editionLabel": "Rio Grande English original edition",
+  "firstPlayerRule": "Choose the starting player randomly, then take turns clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If everyone won the previous game, choose the next starting player randomly among all players.",
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "When playing multiple games, the player to the left of the previous winner starts. If the previous game was tied, randomly choose among the players who did not win."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/59/e6/c2-dominion-rulebook.pdf",
+      "title": "Dominion — English rulebook",
+      "publisher": "Rio Grande Games",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "Playing the Game — Starting Player",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Original Rio Grande English rules plus card reference in one16pagePDF, with original removedcards Chancellor/Woodcutter/Spy/Thief. Rendered PDF6 printed6 exact initialrandom, previouswinnerleft, nonwinnerchoice on previous tie, clockwise. PDF16 cardreferenceprinted8 RioGrande credits and original recommended sets. Separate from existing2021second-edition record; new explicit mapping36218 required. Source custody: research/source-files/popular-originals-intake/dominion-original.pdf; SHA-256 8ca916e9888b243b15624d4d5060a67670d51615cf8c404d954f0ebc5f3bd203. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": [
+    "The publisher-authored original English rules are preserved by a rulebook archive. The official first-edition product page returned an access error.",
+    "The rules do not specify a selection method if every player tied for victory in the previous game."
+  ]
+}
