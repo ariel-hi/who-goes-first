@@ -1,10 +1,15 @@
 import { test, expect } from '@playwright/test';
 
 for (const width of [320, 1280]) {
-  test(`rules search survives reload and native article Back at ${width}px`, async ({ page }) => {
+  test(`rules search survives reload and native article Back at ${width}px`, async ({ page, baseURL }, testInfo) => {
     await page.setViewportSize({ width, height: 844 });
     const requests: string[] = [];
-    page.on('request', request => requests.push(request.url()));
+    const thirdPartyRequests: string[] = [];
+    const firstPartyOrigin = new URL(baseURL!).origin;
+    page.on('request', request => {
+      const url = new URL(request.url());
+      (url.origin === firstPartyOrigin ? requests : thirdPartyRequests).push(url.href);
+    });
     await page.goto('/');
     await page.goto('/games/');
     const directory = page.locator('[data-game-directory]');
@@ -34,6 +39,12 @@ for (const width of [320, 1280]) {
     await expect(directory.locator('.game-list li:visible')).toHaveCount(original.length);
     expect(await directory.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(original);
     expect(requests.every(url => !new URL(url).search && !new URL(url).hash)).toBe(true);
+    // Production providers use their own configuration queries. A search
+    // fragment must remain private across every first- and third-party request.
+    expect([...requests, ...thirdPartyRequests].every(url => !decodeURIComponent(url).includes('#q=Azul'))).toBe(true);
+    await testInfo.attach('rules-navigation-requests.json', {
+      body: JSON.stringify({ firstParty: requests, thirdParty: thirdPartyRequests }, null, 2), contentType: 'application/json',
+    });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   });
 
