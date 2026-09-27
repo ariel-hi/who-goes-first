@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { expect, test } from 'vitest';
 import { createIdentityRegistry, identityReviewRevision, publisherIdentitySchema, type PublisherIdentityRecord } from '../../src/lib/content/identity-registry';
-import { assignmentReviewRevision, identityAssignmentSchema, resolveIdentityAssignments } from '../../src/lib/content/identity-assignments';
+import { assignmentReviewRevision, identityAssignmentSchema, resolveIdentityAssignments, scopeLegacyOverrides, validateLegacyOverrideReferences } from '../../src/lib/content/identity-assignments';
 import { getBoardGameInventory, getBoardGameRegistry, getBoardGames } from '../../src/lib/content/board-games';
 import { contentRevision, ruleSchema, type RuleRecord } from '../../src/lib/content/schema';
 import { readRecords } from '../../src/lib/content/catalog';
@@ -136,7 +136,9 @@ test('active publisher identities preserve every numeric identity and explicit r
   const rules = readRecords('src/content/games').map(record => ruleSchema.parse(record));
   const assignments = JSON.parse(readFileSync('research/coverage/identity-assignments.json', 'utf8'));
   const overrides = JSON.parse(readFileSync('research/coverage/identity-overrides.json', 'utf8'));
-  const resolved = resolveIdentityAssignments(registry, rules, overrides, assignments);
+  const researchRules = readRecords('research/games').map(record => ruleSchema.parse(record));
+  validateLegacyOverrideReferences(registry, [...rules, ...researchRules], overrides);
+  const resolved = resolveIdentityAssignments(registry, rules, scopeLegacyOverrides(overrides, rules), assignments);
   const actual = new Map(rules.map(rule => [rule.id, publicGames.filter(game => game.rules.some(attached => attached.id === rule.id)).map(game => game.identityId)]));
   expect(resolved).toEqual(actual);
   expect(registry.map(identity => identity.searchNames)).toEqual(publicGames.map(game => game.searchNames));
