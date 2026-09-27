@@ -1,0 +1,38 @@
+{
+  "id": "mice-mystics-plaid-hat-en",
+  "slug": "mice-mystics-plaid-hat-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Mice and Mystics",
+  "aliases": [],
+  "editionLabel": "Plaid Hat English base game",
+  "firstPlayerRule": "Shuffle the initiative cards for the mice and the minion types that will be on the board at the start of the encounter. Deal them onto the initiative track in order; the card in the highest position takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "A minion card can take the first turn. Initiative follows the cards, rather than a fixed player seated at the table.",
+    "Follow any chapter-specific setup instructions before determining the opening initiative order."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://media.plaidhatgames.com/old_images/games/mice-and-mystics/mmrulebook.pdf",
+      "title": "Mice and Mystics — English rulebook",
+      "publisher": "Plaid Hat Games",
+      "printedPages": [
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        9
+      ],
+      "location": "Game round; Determining initiative order",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Official Plaid Hat media host preserves base manual. Rendered PDF 9 printed 7 explicitly covers beginning-of-chapter shuffle, first dealt card slot 1, and highest track position first. Collin Born to Lead grants cheese if not first; it does not automatically make him first. Source custody: research/source-files/popular-sep26-13/mice.pdf; SHA-256 2eb230647b2a4e4c081f943f9b9389a89802beb966bd5d46ed0ce73a90486e6e. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
