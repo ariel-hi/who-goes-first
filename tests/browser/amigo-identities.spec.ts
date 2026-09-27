@@ -143,7 +143,7 @@ async function expectArticle(page: Page, game: Reviewed) {
   await expect(page).toHaveURL(new RegExp(`/games/${game.slug}/$`));
   const article = page.locator('.game-article');
   await expect(article.getByRole('heading', { level: 1 })).toHaveText(game.name === 'Cabanga!' ? 'Starting rule for Cabanga!' : game.name === 'Schnapp, Land, Fluss!' ? 'Starting rule for Schnapp, Land, Fluss!' : `Who goes first in ${game.name}?`);
-  await expect(page.locator('.game-article > p').first()).toHaveText(game.edition);
+  await expect(page.locator('.game-article .rule-edition')).toHaveText(game.edition);
   await expect(article.locator('.rule-answer')).toHaveText(game.opening);
   const details = article.locator('.rule-section').filter({ has: page.getByRole('heading', { name: 'Rule details', exact: true }) });
   await expect(details.locator('p')).toHaveText([...game.clarifications]);

@@ -12,7 +12,7 @@ for (const game of cases) test(`${game.query} search leads to its scoped source 
   await expect(answer).toHaveAttribute('href', `/games/${game.slug}/`);
   await answer.click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(game.title);
-  await expect(page.locator('.game-article > p').first()).toContainText(game.edition);
+  await expect(page.locator('.game-article .rule-edition')).toContainText(game.edition);
   await expect(page.locator('.rule-answer')).toContainText(game.opening);
   await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText(game.detail);
   await expect(page.getByRole('link', { name: `View cited page (PDF page ${game.page})`, exact: true })).toHaveAttribute('href', new RegExp(`#page=${game.page}$`));
@@ -31,7 +31,7 @@ test('reviewed editions and Northgard pending guidance work without JavaScript',
       await page.goto(`${baseURL}/games/${game.slug}/`);
       await expect(page.getByRole('heading', { level: 1 })).toHaveText(game.title);
       await expect(page.locator('.rule-answer')).toContainText(game.opening);
-      await expect(page.locator('.game-article > p').first()).toContainText(game.edition);
+      await expect(page.locator('.game-article .rule-edition')).toContainText(game.edition);
       await expect(page.getByRole('link', { name: `View cited page (PDF page ${game.page})`, exact: true })).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     }

@@ -273,7 +273,7 @@ test('archived German summaries distinguish opening selection from action and fe
   await page.goto('/games/magalon-ravensburger-de-1998/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');
   await expect(page.locator('.rule-answer')).toContainText('highest value takes the first action turn');
-  await expect(page.locator('.game-article > p').first()).toContainText('German summary; archived');
+  await expect(page.locator('.game-article .rule-edition')).toContainText('German summary; archived');
   await expect(page.locator('.source-actions a').first()).toHaveAttribute('href', /#page=4$/);
   await page.goto('/games/hick-hack-in-gackelwack-zoch-de-printout-2007/');
   await expect(page.locator('.rule-answer')).toContainText('only after all players have chosen');
