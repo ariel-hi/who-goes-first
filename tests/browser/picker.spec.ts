@@ -584,7 +584,7 @@ test('static help and navigation remain usable without JavaScript', async ({ bro
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
   const page = await context.newPage();
   await page.goto(`${STATIC}/`);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a player');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
   await expect(page.locator('.noscript')).toBeVisible();
   await expect(page.locator('.noscript')).toContainText('Enable JavaScript to pick a player on your device.');
   await page.getByRole('link', { name: 'How it works', exact: true }).click();

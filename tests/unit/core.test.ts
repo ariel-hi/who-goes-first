@@ -49,6 +49,14 @@ describe('uniform selection', () => {
   });
 });
 describe('roster', () => {
+  test('commas and mixed line endings preserve names and duplicate identities', () => {
+    const parsed = parseNames(' 王芳, Sam,\r\nSam\r👨‍👩‍👧‍👦, ,');
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.players.map(player => player.label)).toEqual(['王芳', 'Sam', 'Sam', '👨‍👩‍👧‍👦']);
+    expect(parsed.duplicate).toBe(true);
+    const reordered = parseNames('Sam,王芳,Sam,Family', parsed.players);
+    expect(reordered.players.map(player => player.id)).toEqual(['player-2', 'player-1', 'player-3', 'player-4']);
+  });
   test('Unicode, blank lines, stable IDs and duplicate labels', () => {
     const parsed = parseNames('  王芳\r\n\r\nSam\nSam\n👨‍👩‍👧‍👦');
     expect(parsed.errors).toEqual([]); expect(parsed.players).toHaveLength(4); expect(parsed.duplicate).toBe(true);

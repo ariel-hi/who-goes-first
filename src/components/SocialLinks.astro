@@ -2,13 +2,51 @@
 import PinterestSave from './PinterestSave.astro';
 import BlueskyShare from './BlueskyShare.astro';
 import { siteSettings } from '../lib/site';
+import SocialIcon from './SocialIcon.astro';
 interface Props { kind: 'picker' | 'rules' | 'questions'; title: string }
 const { kind, title } = Astro.props;
+const page = new URL(Astro.url.pathname, siteSettings().url).href;
+const x = new URL('https://twitter.com/intent/tweet');
+x.search = new URLSearchParams({ text: title, url: page }).toString();
+const facebook = new URL('https://www.facebook.com/sharer/sharer.php');
+facebook.search = new URLSearchParams({ u: page }).toString();
 ---
-{siteSettings().production && <div class="social-links">
+{siteSettings().production && <div class="social-links" role="group" aria-label="Share this page">
   <PinterestSave kind={kind} />
   <BlueskyShare title={title} />
+  <a href={x.href} target="_blank" rel="noopener noreferrer" title="Share on X" aria-label="Share on X (opens in a new tab)"><SocialIcon name="x" /></a>
+  <a href={facebook.href} target="_blank" rel="noopener noreferrer" title="Share on Facebook" aria-label="Share on Facebook (opens in a new tab)"><SocialIcon name="facebook" /></a>
+  <button type="button" data-instagram-copy title="Copy link for Instagram" aria-label="Copy link for Instagram"><SocialIcon name="instagram" /></button>
+  <span class="share-status small muted" role="status" data-instagram-status></span>
+  <input type="url" readonly hidden aria-label="Link to copy for Instagram" data-instagram-link />
 </div>}
+<script>
+  import { cleanLink } from '../lib/share';
+  document.querySelectorAll<HTMLElement>('.social-links').forEach(root => {
+    const button = root.querySelector<HTMLButtonElement>('[data-instagram-copy]')!;
+    const status = root.querySelector<HTMLElement>('[data-instagram-status]')!;
+    const input = root.querySelector<HTMLInputElement>('[data-instagram-link]')!;
+    input.addEventListener('focus', () => input.select());
+    button.addEventListener('click', async () => {
+      const url = cleanLink(window.location.href);
+      try {
+        await navigator.clipboard.writeText(url);
+        input.hidden = true;
+        status.textContent = 'Link copied — paste it into Instagram.';
+      } catch {
+        input.value = url;
+        input.hidden = false;
+        status.textContent = 'Copy this link for Instagram:';
+        input.focus();
+      }
+    });
+  });
+</script>
 <style>
   .social-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0}
+  a,button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--green);text-decoration:none;padding:0}
+  a:hover,button:hover{background:var(--paper)}
+  .share-status:empty{display:none}
+  .share-status,input{flex-basis:100%;max-width:100%}
+  input[hidden]{display:none}
 </style>

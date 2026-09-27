@@ -2,7 +2,7 @@
 .home-page { max-width:1024px; }
 .home-layout { grid-template-columns:minmax(0,1.62fr) minmax(0,1fr); gap:22px; align-items:start; }
 .home-picker, .home-rules { min-width:0; }
-.home-rules { margin-top:43px; }
+.home-rules { margin-top:0; }
 .home-page:has(.picker[data-large=true]) .home-layout { grid-template-columns:1fr; }
 .home-page:has(.picker[data-large=true]) .home-rules { margin-top:0; }
 .rule-lookup-answer { display:block; margin-top:4px; font-size:13px; font-weight:400; line-height:1.45; color:var(--muted); }
