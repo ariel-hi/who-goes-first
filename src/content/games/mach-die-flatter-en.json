@@ -1,0 +1,57 @@
+{
+  "id": "mach-die-flatter-en",
+  "slug": "mach-die-flatter",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+  "approvedRevision": "571547ae37bb127ec3b8a9ef1d09df4a05beafecc7094a67e2d741d221a8c086",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Mach die Flatter",
+  "aliases": [],
+  "editionLabel": "Zoch English rules in multilingual booklet, article 601105203",
+  "firstPlayerRule": "The player who last saw a parrot starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Players take turns after the opener; the English rules do not specify a clockwise or counterclockwise direction.",
+    "During a binocular-card turn, everyone reveals their chosen location card simultaneously, then checks the locations one after another. This does not make the game opening simultaneous.",
+    "The player who reveals the last card still completes that turn before the final own-parrot scoring phase.",
+    "If players tie for the most feathers at final scoring, they share the win. This is not a tie-break for the opening criterion.",
+    "If the feather supply runs out, everyone returns the same number of feathers and play continues; no new starter is selected."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Young%20%26%20Wild/601105203%20Mach%20die%20Flatter/099%20Middleware%20%28Import%20only%29/601105203-MachDie_Flatter-Rules.pdf",
+      "title": "Mach die Flatter: official multilingual rules, English section",
+      "publisher": "Zoch Verlag",
+      "printedPages": [
+        "11",
+        "9",
+        "12",
+        "13",
+        "14",
+        "16"
+      ],
+      "pdfPagesOneBased": [
+        11,
+        9,
+        12,
+        13,
+        14,
+        16
+      ],
+      "location": "PDF/printed page11, Course of the Game: last-parrot opener and turns; page9 native title/count/components; pages12–13 simultaneous location reveal within binocular resolution; page14 last-card completion and final scoring phase; page16 shared final-score winners/article/imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Codex /root independently read all original uncropped180dpi English pages (9, 10, 11, 12, 13, 14, 15, 16) and all complete corresponding plain-text extracts, all exact catalog/research proposals and assignment/source-reading notes. Codex /root/inventory_sources separately read all58 multilingual original pages; Codex /root/held_identity_review independently read the same19 authority original pages and texts for this cohort. Root and peer do not claim original-image reading of the other39 language pages. Exact original PDF SHA256 4452672cd3093a268c68afed02ca21bf3b6b3a485b4929f01089b5a8859a8a8a; PDF page11 controls the opening criterion; visible original images control duplicated/rotated-layout extraction artifacts and printed locators. Native title, article601105203, existing accepted primary product and literal official product-to-PDF anchor chain establish this exact source scope only for game-5a318f64-4fde-423e-9a63-e3887b7de5de, identity revision 51527bcd3372e2b9a2da70ed0b4011f0d7bc6a45b69987298315936a001247cd. The last-parrot sighting opener is distinguished from simultaneous location reveal within a later binocular turn and shared final-score winners. Exact original EnglishPDF9 visibly lists72 feathers versus the saved primary product80; correspondence is scoped to this literal attached PDF, without identical-component or printing equivalence. French/Italian clockwise wording is retained as a source-agent note and not transferred into English. No initial tie or no-history procedure, external numeric identity, translated alias, reissue or printing bridge is inferred. Root approves this exact rule and explicit public assignment under standing owner authorization. Matching research pair remains lifecycle-null; no research association, identity modification, new UUID or portable addition is authorized.",
+  "uncertainty": [
+    "The original English manual lists72 feathers, while the saved official product page advertises80. Exact title/article and literal download chain support this PDF-scoped proposal, not identical components or printing equivalence.",
+    "No official initial-criterion tie or no-history procedure is stated.",
+    "French PDF19 and Italian PDF27 explicitly say clockwise; the English PDF11 says in turn, so directional detail is not transferred.",
+    "The visible2025 imprint and PDF document-info dates do not establish a printing or named version.",
+    "No external numeric identity, creator identifier, translated alias or reissue correspondence is inferred."
+  ]
+}

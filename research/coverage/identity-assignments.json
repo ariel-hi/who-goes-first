@@ -195,6 +195,31 @@
       "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
       "reviewedAt": "2026-09-26",
       "acceptedRevision": "4c24f2e4ab95dad2f647f47a9b57f26b4fabd5af994276f1cc503ef4abdbc3eb"
+    },
+    {
+      "ruleId": "mach-die-flatter-en",
+      "ruleRevision": "571547ae37bb127ec3b8a9ef1d09df4a05beafecc7094a67e2d741d221a8c086",
+      "identityId": "game-5a318f64-4fde-423e-9a63-e3887b7de5de",
+      "identityRevision": "51527bcd3372e2b9a2da70ed0b4011f0d7bc6a45b69987298315936a001247cd",
+      "editionScope": "Zoch English rules in multilingual booklet, article 601105203",
+      "evidence": [
+        {
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/family-games/mach-die-flatter-601105203-en.html",
+          "sha256": "cd48b5426e853fa92a7247ca5286e14359de64a8d69c3d416e221983c5e38b73",
+          "location": "Complete saved focal title/article/Product context and exact original manual anchors at raw byte ranges [[151450, 151815], [152390, 152980]]; preserved literal URL differs from transport only in percent encoding, without Unicode normalization.",
+          "correspondence": "Saved official product names Mach die Flatter, article 601105203, and literally links the original complete PDF. Original native-title logo and article imprint support this exact English section in multilingual booklet assignment to the existing accepted opaque identity only. No numeric/translated alias/reissue/printing transfer. Product advertises80 feathers while this original manual lists72; physical title/article/PDF authority correspond, but exact components/printing equivalence is not claimed."
+        },
+        {
+          "url": "https://pim.simba-dickie.com/Product/Zoch/Young%20%26%20Wild/601105203%20Mach%20die%20Flatter/099%20Middleware%20%28Import%20only%29/601105203-MachDie_Flatter-Rules.pdf",
+          "sha256": "4452672cd3093a268c68afed02ca21bf3b6b3a485b4929f01089b5a8859a8a8a",
+          "location": "PDF/printed page11, Course of the Game: last-parrot opener and turns; page9 native title/count/components; pages12–13 simultaneous location reveal within binocular resolution; page14 last-card completion and final scoring phase; page16 shared final-score winners/article/imprint.",
+          "correspondence": "Saved official product names Mach die Flatter, article 601105203, and literally links the original complete PDF. Original native-title logo and article imprint support this exact English section in multilingual booklet assignment to the existing accepted opaque identity only. No numeric/translated alias/reissue/printing transfer. Product advertises80 feathers while this original manual lists72; physical title/article/PDF authority correspond, but exact components/printing equivalence is not claimed."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "d5ddf7d323a14b039a9dbe49aed66741fc312542da12a3e5c079bb32456f6156"
     }
   ]
 }
