@@ -1,16 +1,16 @@
 ---
-import BrandIcon from './BrandIcon.astro';
 import { amazonDisclosure } from '../lib/affiliate';
 interface Props { href: string; name: string }
 const { href, name } = Astro.props;
 ---
 <aside class="buy-game" aria-label="Find this game">
   <a class="buy-card" href={href} rel="sponsored nofollow noopener" target="_blank">
-    <span class="buy-icon"><BrandIcon name="bag" /></span>
+    <span class="amazon-badge"><img src="/brand/available-at-amazon.png" alt="Available at Amazon" width="1500" height="723" decoding="async" /></span>
     <span class="buy-text"><span class="buy-kicker">Don’t own it yet?</span><span class="buy-title">Find {name} on Amazon</span></span>
     <span class="buy-arrow" aria-hidden="true">↗</span>
   </a>
   <small>{amazonDisclosure}</small>
+  <small>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</small>
 </aside>
 <style is:global>
   .buy-game{margin-top:28px;padding:0;border:0;background:none}
@@ -18,8 +18,10 @@ const { href, name } = Astro.props;
   .buy-card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:#ff9900}
   .buy-card:hover{transform:translateY(-1px);box-shadow:0 6px 18px color-mix(in srgb,var(--ink) 12%,transparent)}
   .buy-card:focus-visible{outline:3px solid var(--green);outline-offset:3px}
-  .buy-icon{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:14px;background:color-mix(in srgb,#ff9900 18%,var(--paper));color:#b86a00}
-  .buy-icon .brand-icon{width:22px;height:22px}
+  /* Official stacked lockup: 96 CSS px (192 device px at 2x), with clear space
+     greater than the Amazon lettering height. Keep the supplied PNG unmodified. */
+  .amazon-badge{display:block;flex:none;padding:24px;background:#fff;border-radius:14px}
+  .amazon-badge img{display:block;width:96px;height:auto;max-width:none}
   .buy-text{display:flex;flex-direction:column;gap:2px;min-width:0}
   .buy-kicker{font-size:12px;color:var(--muted)}
   .buy-title{font-size:16px;font-weight:650;color:var(--ink);overflow-wrap:anywhere}
