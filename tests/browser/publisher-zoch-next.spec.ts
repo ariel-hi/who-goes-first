@@ -129,7 +129,7 @@ for (const width of [320, 1280]) {
       await page.goto(`/games/${game.slug}/`);
       const article = page.locator('.game-article');
       await expect(article.getByRole('heading', { level: 1 })).toHaveText(`Who goes first in ${game.name}?`);
-      await expect(page.locator('.game-article .rule-edition')).toHaveText(`Zoch English rules in multilingual booklet, article ${game.article}`);
+      await expect(page.locator('.game-article .rule-edition')).toHaveText('Zoch English rules in multilingual booklet');
       await expect(article.locator('.rule-answer')).toHaveText(game.answer);
       const details = article.locator('.rule-section').filter({ has: page.getByRole('heading', { name: 'Rule details', exact: true }) });
       await expect(details).toContainText(game.detail);

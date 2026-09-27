@@ -7,7 +7,7 @@ const games = [
   {
     name: "Käpt'n Memo", identityId: 'game-20ec80fb-32d8-4764-816e-285e0d0cb292',
     ruleId: 'kaeptn-memo-en', slug: 'kaeptn-memo', openingPage: 2,
-    edition: 'English summary of Zoch German rules, article 601105221',
+    edition: 'English summary of Zoch German rules',
     answer: 'The player who most recently disembarked from a ship becomes captain of the first voyage.',
     details: [
       'For each later voyage, the player to the left of the current captain becomes the new captain.',
@@ -21,7 +21,7 @@ const games = [
   {
     name: 'Kleiner Drache Wirbelwind', identityId: 'game-c60afcd1-5e6b-44ed-a41a-dbd91376d400',
     ruleId: 'kleiner-drache-wirbelwind-en', slug: 'kleiner-drache-wirbelwind', openingPage: 7,
-    edition: 'Zoch English rules in multilingual booklet, article 601105202',
+    edition: 'Zoch English rules in multilingual booklet',
     answer: 'The player with the sunniest smile may choose who starts.',
     details: [
       'that person is not automatically the first player.',
@@ -36,7 +36,7 @@ const games = [
   {
     name: 'Mach die Flatter', identityId: 'game-5a318f64-4fde-423e-9a63-e3887b7de5de',
     ruleId: 'mach-die-flatter-en', slug: 'mach-die-flatter', openingPage: 11,
-    edition: 'Zoch English rules in multilingual booklet, article 601105203',
+    edition: 'Zoch English rules in multilingual booklet',
     answer: 'The player who last saw a parrot starts.',
     details: [
       'the English rules do not specify a clockwise or counterclockwise direction.',
