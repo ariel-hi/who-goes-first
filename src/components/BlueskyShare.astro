@@ -1,6 +1,6 @@
 ---
 import { siteSettings } from '../lib/site';
-import BrandIcon from './BrandIcon.astro';
+import SocialIcon from './SocialIcon.astro';
 interface Props { title?: string }
 const { title = 'Who Goes First?' } = Astro.props;
 const site = siteSettings();
@@ -11,4 +11,4 @@ const text = [...graphemes.segment(proposed)].length <= 300 ? proposed : `Who Go
 const destination = new URL('https://bsky.app/intent/compose');
 destination.search = new URLSearchParams({ text }).toString();
 ---
-{site.production && <a class="share-pill share-icon share-bluesky" title="Share on Bluesky" aria-label="Share on Bluesky (opens in a new tab)" href={destination.href} target="_blank" rel="noopener noreferrer"><BrandIcon name="bluesky" /></a>}
+{site.production && <a class="share-pill share-icon share-bluesky" title="Share on Bluesky" aria-label="Share on Bluesky (opens in a new tab)" href={destination.href} target="_blank" rel="noopener noreferrer"><SocialIcon name="bluesky" /></a>}
