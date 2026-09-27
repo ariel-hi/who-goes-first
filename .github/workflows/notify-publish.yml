@@ -1,8 +1,6 @@
 name: Notify search after publication
 on:
-  workflow_run:
-    workflows: [Check the site]
-    types: [completed]
+  push:
     branches: [main]
 permissions:
   contents: read
@@ -11,7 +9,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   notify:
-    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
@@ -30,14 +27,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 2
-      - name: Verify this is the current successful production deployment
+      - name: Verify this is the current live production deployment
         id: deployed
         uses: actions/github-script@v7
         with:
           script: |
-            const sha = context.payload.workflow_run.head_sha;
+            const sha = context.sha;
             for (let attempt = 0; attempt < 40; attempt++) {
               const main = await github.rest.repos.getCommit({ ...context.repo, ref: 'main' });
               if (main.data.sha !== sha) { core.notice('Superseded release; no stale URLs submitted.'); return; }
@@ -57,7 +53,7 @@ jobs:
         if: steps.deployed.outputs.ready == 'true'
         with:
           path: artifacts/indexnow
-          key: indexnow-production-v1-${{ github.event.workflow_run.head_sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: indexnow-production-v1-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: indexnow-production-v1-
       - name: Build current content and the initial baseline when needed
         if: steps.deployed.outputs.ready == 'true'
@@ -76,7 +72,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const sha = context.payload.workflow_run.head_sha;
+            const sha = context.sha;
             const main = await github.rest.repos.getCommit({ ...context.repo, ref: 'main' });
             const live = await fetch(`https://whogoesfirst.fun/release.json?expected=${sha}`, { cache: 'no-store' });
             if (main.data.sha === sha && live.ok && (await live.json()).commit === sha) core.setOutput('ready', 'true');
@@ -89,7 +85,7 @@ jobs:
         if: always() && steps.notify.outcome != 'skipped' && steps.deployed.outputs.ready == 'true'
         with:
           path: artifacts/indexnow
-          key: indexnow-production-v1-${{ github.event.workflow_run.head_sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          key: indexnow-production-v1-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
       - uses: actions/upload-artifact@v4
         if: always() && steps.deployed.outputs.ready == 'true'
         with:
