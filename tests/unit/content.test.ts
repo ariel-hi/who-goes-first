@@ -59,7 +59,7 @@ test('Amigo identities retain numeric provenance while exact independently revie
       }
     }
   }
-  for (const id of ['38195', '40234', '191473', '205766', '451923']) {
+  for (const id of ['38195', '40234', '191473', '205766']) {
     expect(review.decisions.find((item: { bggId: string }) => item.bggId === id)).toMatchObject({ decision: 'hold', reviewed: false });
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
@@ -243,7 +243,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(52);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(53);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -363,12 +363,18 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 52, hold: 236, reviewed: 64, unreviewed: 224, additionalAccepted: 42 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(52);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(236);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(64);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(224);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 53, hold: 235, reviewed: 65, unreviewed: 223, additionalAccepted: 43 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(53);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(235);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(65);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(223);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
+  const shadow = review.decisions.find((item: { bggId: string }) => item.bggId === '451923');
+  expect(shadow).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+  expect(shadow.identityReviewHistory[0].previousDecision).toMatchObject({ decision: 'hold', reviewed: false });
+  const shadowRules = getBoardGames().find(game => game.bggId === '451923')!.rules;
+  expect(shadowRules.map(rule => rule.id)).toEqual(['shadow-cards-amigo-de-v2-0']);
+  expect(randomRuleEligible(shadowRules[0]!)).toBe(false);
   for (const id of ['452264', '418683']) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
     expect(decision).toMatchObject({ decision: id === '452264' ? 'accept' : 'hold', reviewed: true, priorBoundedDisposition: null, startingRuleApproved: false, editionRuleTransferApproved: false, independentRawIdEvidence: [] });
