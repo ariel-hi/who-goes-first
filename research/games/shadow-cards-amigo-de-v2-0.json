@@ -1,0 +1,44 @@
+{
+  "id": "shadow-cards-amigo-de-v2-0",
+  "slug": "shadow-cards-amigo-de-v2-0",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Shadow Cards",
+  "aliases": [],
+  "editionLabel": "English summary of AMIGO German rules",
+  "firstPlayerRule": "The player who most recently had a vision leads the first trick and marks this on the score pad.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "clarifications": [
+    "The German manual covers 2–5 players. Before playing tricks, everyone simultaneously chooses cards for a secret points prediction. The opening criterion selects who leads the first trick.",
+    "The first trick leader plays one card. The others each play one card clockwise. The winner of a trick leads the next trick.",
+    "For each later round, the next person clockwise after the previous round's starting player leads its first trick. The vision criterion is not repeated to choose each later trick or round.",
+    "With 3–5 players, the game lasts three rounds. The 2-player rules use four rounds and three prediction cards; the second round uses the two remaining undealt piles instead of reshuffling. The same trick-play instructions apply.",
+    "The gradual introduction in a group's first game changes scoring across the first three rounds; it does not supply a different opening selector. Shared winners on a final-score tie are not an opening tie-break."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/02551-DE-AmigoRule.pdf",
+      "title": "Shadow Cards — AMIGO German rules, Version 2.0",
+      "publisher": "AMIGO Spiel + Freizeit GmbH",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "PDF page 1: simultaneous prediction and 3. Stiche spielen. PDF page 2: next-trick leader, later-round rotation, first-game scoring, Spiel zu zweit and Version 2.0 footer. Neither page has a visible printed page number.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root-approved exact English summary of AMIGO German Shadow Cards Version 2.0, 2026-09-26. Root and /root/held_identity_review each read both complete original uncropped PDF pages at original image detail, complete extracted text, physical product context, saved Q137351777 and complete prior hold. Independent two-page rerender reproduced original PNG bytes exactly. Exact v2 public wording is preserved. Direct literal official-domain search URLs and complete200 product/PDF responses are retained; the PDF imprint matches product02551, with no HTML-to-PDF anchor assertion. First-trick vision criterion follows simultaneous prediction; winner leads next trick and clockwise later-round rotation remain distinct. Two-player four-round/three-prediction-card exception and first-session scoring context are retained. No official opening tie, definition of vision or printing inferred; random fallback is clearly a house rule. Numeric451923 remains saved own normal Wikidata P2339 only. Own AMIGO publisher statement plus preserved publisher/domain context and primary physical mechanics support semantic correspondence, without creator-QID/alias/year/printing/other-language/version repair. Catalog approval and identity approval are separate; portable pool remains excluded by opt-in editorial scope. Current shared hold/content remain unchanged until separately guarded application and release. Root successor approval shortens only the human edition label to comply with the owner's no-version-strings label requirement. Version2.0 remains explicit in unchanged source title and uncertainty; exact German Version2.0 scope, all starting instructions, locators and original evidence remain unchanged.",
+  "uncertainty": [
+    "No official tie-break is stated for the most-recent-vision opening criterion.",
+    "Scope is this exact German Version 2.0 manual, summarized in English. No English, French, US, other version or printing transfer is approved.",
+    "The printed copyright 2025 and PDF metadata dates do not establish printing year."
+  ]
+}
