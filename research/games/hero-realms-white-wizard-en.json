@@ -1,0 +1,41 @@
+{
+  "id": "hero-realms-white-wizard-en",
+  "slug": "hero-realms-white-wizard-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Hero Realms",
+  "aliases": [],
+  "editionLabel": "White Wizard English base game",
+  "firstPlayerRule": "Choose the first player randomly, then play clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "In a two-player game, the first player draws three cards and the second draws five. With three or more players in the standard free-for-all game, the first player draws three, the second four, and everyone else five."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/68/25/3e-hero-realms-rulebook.pdf",
+      "title": "Hero Realms — English rulebook",
+      "publisher": "White Wizard Games",
+      "printedPages": [
+        "unnumbered"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Setup; How to play; Multiplayer — Free-for-all",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Rendered archive publisher rule sheet PDF 1 random first/clockwise/3-and-5 opening hands; PDF 2 text multiplayer 3/4/5. Official https://www.herorealms.com/base-game-rules/ was read and saved and matches the base setup. Campaign rulebooks found in search were rejected for scope. Source custody: research/source-files/popular-sep26-13/hero.pdf; SHA-256 5e9f80ac096cd880ce21bbebaf83a789e1b671d0f6f2746b1707565108ca79f8. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": [
+    "The publisher-authored English rule sheet is preserved by a rulebook archive; the publisher’s online base-game rules independently confirm the two-player setup. This record covers standard competitive play, not team or campaign formats."
+  ]
+}
