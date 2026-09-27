@@ -1,0 +1,25 @@
+---
+import { embedSnippet } from '../lib/embed';
+import { siteSettings } from '../lib/site';
+import type { PublicRule } from '../lib/content/schema';
+interface Props { rule: PublicRule; open?: boolean }
+const snippet = embedSnippet(Astro.props.rule, siteSettings().url);
+---
+<details class="rule-section embed-rule" open={Astro.props.open}>
+  <summary>Embed this answer on your site</summary>
+  <p class="small muted">Copy this HTML into a blog post, forum or game café page. It’s plain text with a link back to this rule, so it works almost anywhere. <a href="/embed/">More embed options</a></p>
+  <textarea class="embed-snippet" readonly rows="6" aria-label="Embed code for this rule" data-embed-snippet>{snippet}</textarea>
+  <button type="button" class="text-button" data-embed-copy>Copy embed code</button>
+</details>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-embed-copy]').forEach(button => button.addEventListener('click', async () => {
+    const field = button.parentElement!.querySelector<HTMLTextAreaElement>('[data-embed-snippet]')!;
+    field.select();
+    try { await navigator.clipboard.writeText(field.value); button.textContent = 'Copied'; } catch { button.textContent = 'Press Ctrl+C or ⌘C to copy'; }
+  }));
+</script>
+<style is:global>
+  .embed-rule summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--green);font-size:14px}
+  .embed-rule .embed-snippet{width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);font:12px/1.5 ui-monospace,Consolas,monospace}
+  .embed-rule .text-button{border:0;background:none;padding:10px 0;color:var(--green);font:inherit;font-size:14px;text-decoration:underline;min-height:44px;cursor:pointer}
+</style>

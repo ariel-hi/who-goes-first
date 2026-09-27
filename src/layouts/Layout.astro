@@ -13,6 +13,8 @@ const settings = siteSettings();
 const canonical = new URL(canonicalPath, settings.url).href;
 const path = Astro.url.pathname;
 const localPreview = import.meta.env.DEV && !settings.production;
+// The picker and standalone tools offer home-screen install; content pages do not.
+const installable = ['/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/'].includes(path) || path.startsWith('/methods/');
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
 const indexed = settings.production && !noindex;
 const imageUrl = new URL(image, settings.url).href;
@@ -45,7 +47,8 @@ const structuredData = {
     </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     {settings.production && <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />}
-    {settings.production && path === '/' && <link rel="manifest" href="/site.webmanifest" />}
+    {settings.production && installable && <link rel="manifest" href="/site.webmanifest" />}
+    {settings.production && <script src="/register-sw.js" defer></script>}
     <meta property="og:type" content="website" /><meta property="og:site_name" content="Who Goes First?" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
@@ -63,7 +66,7 @@ const structuredData = {
       <ThemeToggle />
     </header>
     <main id="main" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><nav aria-label="Footer"><a href="/choose-who-goes-first/">Choosing a starter</a><a href="/printable-game-night/">Print table cards</a><a href="/fairness/">How it works</a><a href="/ways-to-pick-who-goes-first/">Ways to pick</a><a href="/privacy/">Privacy</a>{settings.tipUrl && <a href={settings.tipUrl} rel="noopener">Support the site</a>}{googleAds ? <a href="/privacy/#choices">Privacy choices</a> : settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
+    <footer class="site-footer"><nav aria-label="Footer"><a href="/choose-who-goes-first/">Choosing a starter</a><a href="/printable-game-night/">Print table cards</a><a href="/fairness/">How it works</a><a href="/ways-to-pick-who-goes-first/">Ways to pick</a><a href="/privacy/">Privacy</a>{settings.tipUrl && <a href={settings.tipUrl} rel="noopener">Support the site</a>}{googleAds ? <a href="/privacy/#choices">Privacy choices</a> : settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav><nav aria-label="More tools"><a href="/finger-chooser/">Finger chooser</a><a href="/coin-flip/">Coin flip</a><a href="/methods/spinner/">Spin the wheel</a><a href="/random-team-generator/">Team generator</a><a href="/rock-paper-scissors/">Rock paper scissors</a><a href="/embed/">Embed a rule</a></nav></footer>
     {settings.production && !googleAds && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit and sharing analytics? Google Analytics receives the page address without search parameters, basic device information, fixed social campaign labels, and successful Share actions. It may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
   </body>
 </html>

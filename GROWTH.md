@@ -35,7 +35,9 @@ After changing a variable, trigger a new deployment.
 ### GitHub repository settings (Settings → Secrets and variables → Actions)
 | Name | Kind | Needed for |
 | --- | --- | --- |
-| `GOOGLE_SERVICE_ACCOUNT_JSON` | secret | Weekly job. A Google Cloud service-account key; add its email as a **Restricted user** in Search Console, and as a **Viewer** in GA4. Enable the Search Console API and the Google Analytics Data API in that Cloud project. |
+| `GCP_WORKLOAD_IDENTITY_PROVIDER`, `GCP_SERVICE_ACCOUNT` | variables | **Configured 2026-09-27 (keyless, preferred).** Google Cloud project `who-goes-first-growth` trusts only this repository's GitHub OIDC tokens and lets the weekly job act as `growth-reader@who-goes-first-growth.iam.gserviceaccount.com` (Search Console: Restricted user). No key exists to leak. |
+| `GOOGLE_SERVICE_ACCOUNT_JSON` | secret | Fallback only; not needed with the keyless variables. |
+| (key setup, if ever needed) | — | Weekly job. A Google Cloud service-account key; add its email as a **Restricted user** in Search Console, and as a **Viewer** in GA4. Enable the Search Console API and the Google Analytics Data API in that Cloud project. |
 | `GSC_PROPERTY` | variable | Defaults to `sc-domain:whogoesfirst.fun`. Use `https://whogoesfirst.fun/` if the property is URL-prefix. |
 | `GA4_PROPERTY_ID` | variable | Optional numeric GA4 property ID (Admin → Property details). Enables traffic totals and ad-network readiness. |
 | `BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD` | secrets | Daily post. Use an app password (Settings → Privacy and security → App passwords), never the account password. |

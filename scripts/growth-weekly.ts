@@ -7,7 +7,8 @@ import { adNetworkReadiness } from './lib/ad-network-readiness';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
-//   GOOGLE_SERVICE_ACCOUNT_JSON  service account key (added as a user in Search Console / GA)
+//   GOOGLE_ACCESS_TOKEN          short-lived token from keyless GitHub OIDC auth (preferred)
+//   GOOGLE_SERVICE_ACCOUNT_JSON  or a service account key (added as a user in Search Console / GA)
 //   GSC_PROPERTY                 e.g. sc-domain:whogoesfirst.fun
 //   GA4_PROPERTY_ID              optional numeric GA4 property ID
 //   SITE_URL                     canonical origin
@@ -15,9 +16,10 @@ const credentials = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
 const property = process.env.GSC_PROPERTY || 'sc-domain:whogoesfirst.fun';
 const gaProperty = process.env.GA4_PROPERTY_ID?.trim();
 const origin = new URL(process.env.SITE_URL || 'https://whogoesfirst.fun').origin;
-if (!credentials) { console.log('GOOGLE_SERVICE_ACCOUNT_JSON is not set; skipping the weekly growth job.'); process.exit(0); }
+const federatedToken = process.env.GOOGLE_ACCESS_TOKEN?.trim();
+if (!federatedToken && !credentials) { console.log('No Google credentials are configured; skipping the weekly growth job.'); process.exit(0); }
 
-const token = await googleAccessToken(credentials, ['https://www.googleapis.com/auth/webmasters.readonly', ...(gaProperty ? ['https://www.googleapis.com/auth/analytics.readonly'] : [])]);
+const token = federatedToken || await googleAccessToken(credentials!, ['https://www.googleapis.com/auth/webmasters.readonly', ...(gaProperty ? ['https://www.googleapis.com/auth/analytics.readonly'] : [])]);
 const end = daysAgo(3);
 const window28 = { start: daysAgo(30), end };
 const [queries, pages, thisWeek, lastWeek] = await Promise.all([

@@ -29,6 +29,10 @@ The live `/robots.txt` returned HTTP 200, allows all paths, and advertises the c
 
 Allow time for discovery and look for a meaningful change through the existing follow-up. If Bing remains absent, a verified Bing Webmaster Tools account can provide its own crawl diagnostics. Do not import Google properties or authorize a new account connection without the owner's approval. Native IndexNow support does not prove that a particular URL was submitted or indexed. The [IndexNow FAQ](https://www.indexnow.org/faq) recommends sitemaps for the full inventory and notifications for meaningful recent changes; it does not support repeated bulk submissions of unchanged pages as a substitute for discovery.
 
+### Bing Webmaster Tools (2026-09-27)
+
+`https://whogoesfirst.fun/` was imported from Search Console into Bing Webmaster Tools under the owner's Google sign-in (other Search Console properties were deliberately not imported). Bing listed `sitemap.xml` as Processing. Check its Site Explorer and URL Inspection for crawl or index issues before changing configuration.
+
 ## Measurement and economics
 
 The Pages build command was changed to `npm run build` and the saved configuration was verified on 2026-09-26 UTC. The prior production log showed an automatic dependency install followed by a second `npm ci` in the custom command. Removing that duplicate follows [Cloudflare's Astro build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/). Preview deployment `db806029` succeeded in 53 seconds with one dependency install, and the following production deployment `397ce3ef` succeeded. These are observations from different builds, not a controlled speed comparison or evidence of a lower bill. Production and preview now have `NODE_VERSION=22.23.2` saved; the effective runtime still needs deployment-log confirmation.

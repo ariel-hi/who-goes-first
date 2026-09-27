@@ -1,0 +1,17 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import FingerChooser from '../components/tools/FingerChooser';
+---
+<ToolPage current="/finger-chooser/" title="Finger Chooser: Everyone Touch the Screen to Pick a Player — Who Goes First?" description="Free online finger chooser. Everyone puts a finger on the phone; after a moment one is picked at random. Choose a first player or a full turn order. No app or download." heading="Finger chooser" lede="Everyone puts one finger on the screen. Hold still, and one finger is chosen at random.">
+  <FingerChooser client:load />
+  <Fragment slot="about">
+    <h2>How the finger chooser works</h2>
+    <p>Place the phone or tablet flat in the middle of the table. Each player touches the box with one finger. When at least two fingers are down and nobody moves on or off for two seconds, the chooser draws a winner. The chosen finger lights up; the others fade. Lift every finger to go again.</p>
+    <p>Switch to <b>Full turn order</b> to number every finger instead: 1 goes first, 2 goes second, and so on.</p>
+    <h2>Is it fair?</h2>
+    <p>Yes. Where your finger lands, how fast you touch and your finger’s color make no difference. The draw uses your browser’s secure random number generator, the same one behind our <a href="/fairness/">first-player picker</a>, so every finger on the screen has the same chance.</p>
+    <h2>How many players?</h2>
+    <p>Most phones track five to ten touches at once; tablets usually track more. If someone’s finger doesn’t appear, your screen has reached its limit. Use the <a href="/">picker</a> with names for a bigger group.</p>
+    <p>It works in the browser like a finger-picker app, with nothing to install. To keep it one tap away, add this page to your home screen.</p>
+  </Fragment>
+</ToolPage>

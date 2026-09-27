@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/tools.css';
+interface Props { title: string; description: string; heading: string; lede: string; current: string }
+const { title, description, heading, lede, current } = Astro.props;
+const toolLinks = [
+  { href: '/', label: 'First-player picker' },
+  { href: '/finger-chooser/', label: 'Finger chooser' },
+  { href: '/coin-flip/', label: 'Coin flip' },
+  { href: '/methods/spinner/', label: 'Spin the wheel' },
+  { href: '/random-team-generator/', label: 'Team generator' },
+  { href: '/rock-paper-scissors/', label: 'Rock paper scissors' },
+];
+---
+<Layout ads={false} title={title} description={description}>
+  <div class="tool-page">
+    <div class="intro"><h1>{heading}</h1><p>{lede}</p></div>
+    <noscript><p class="noscript">Enable JavaScript to use this tool.</p></noscript>
+    <slot />
+    <div class="below-tool prose">
+      <slot name="about" />
+      <h2>More ways to decide</h2>
+      <p>{toolLinks.filter(link => link.href !== current).map((link, i) => <>{i > 0 && ' · '}<a href={link.href}>{link.label}</a></>)}</p>
+      <p>Playing a board game? <a href="/games/">Look up the official starting-player rule</a> for your edition first.</p>
+    </div>
+  </div>
+</Layout>

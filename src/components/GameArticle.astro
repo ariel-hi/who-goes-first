@@ -1,11 +1,12 @@
 ---
 import SharePage from './SharePage.astro';
 import BuyGame from './BuyGame.astro';
+import EmbedRule from './EmbedRule.astro';
 import GameArt from './GameArt.astro';
 import { ruleHeading } from '../lib/rule-copy';
 import type { PublicRule } from '../lib/content/schema';
 import { siteSettings } from '../lib/site';
-import { amazonSearchUrl } from '../lib/affiliate';
+import { amazonSearchUrl, gearLinks } from '../lib/affiliate';
 import { citedPdfPages, isPdfSource, pdfPageHref } from '../lib/source-pages';
 import '../styles/rule-page.css';
 interface Props { rule: PublicRule; related?: PublicRule[]; similar?: PublicRule[]; similarHub?: { slug: string; about: string }; publisherHub?: { slug: string; name: string; count: number }; preview?: boolean }
@@ -33,7 +34,7 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
   {rule.clarifications.length > 0 && <section class="rule-section rule-card"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
   {rule.interpretation && <section class="rule-section rule-card"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   {rule.tieBreakApplicable !== false && !rule.officialTieBreak && <section class="rule-section rule-card"><h2>If there’s a tie</h2><p>{rule.houseFallback ? 'The rulebook doesn’t say.' : <>The rulebook doesn’t say. If you need a tie-break, <a href="/">pick a player at random</a>.</>}</p></section>}
-  {buyLink && <BuyGame href={buyLink} name={rule.gameName} />}
+  {buyLink && <BuyGame href={buyLink} name={rule.gameName} gear={gearLinks(amazonTag!)} />}
   {rule.houseFallback && <aside class="fallback"><span class="eyebrow rule-chip">Optional house rule</span><h2>Not working for your group?</h2><p>{rule.houseFallback}</p><a class="primary" href="/">Pick a player at random</a></aside>}
   <section class="rule-section rule-card source-card"><h2>Source & edition</h2><ul class="source-list">{rule.sources.map(source => {
     const pages = citedPdfPages(source.url, source.pdfPagesOneBased);
@@ -41,5 +42,6 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
   })}</ul>{publisherHub && <a class="inline-link" href={`/publishers/${publisherHub.slug}/`}>All {publisherHub.count} {publisherHub.name} starting rules</a>}</section>
   <section class="rule-section"><h2>{related.length ? 'Related games and editions' : 'More starting rules'}</h2>{related.length > 0 && <ul class="rule-links">{related.map(game => <li><a href={`/games/${game.slug}/`}><GameArt rule={game} thumbnail /><span>{game.gameName}<small>{game.editionLabel}</small></span></a></li>)}</ul>}<a class="inline-link" href={preview ? '/dev/games/' : '/games/'}>Browse available game rules</a></section>
   {similar.length > 0 && similarHub && <section class="rule-section"><h2>Games with a similar starting rule</h2><ul class="similar-rules">{similar.map(game => <li><a href={`/games/${game.slug}/`}><GameArt rule={game} thumbnail /><span>{game.gameName}<small>{game.firstPlayerRule}</small></span></a></li>)}</ul><a class="inline-link" href={`/games/themes/${similarHub.slug}/`}>More starting rules about {similarHub.about}</a></section>}
+  {!preview && <EmbedRule rule={rule} />}
   <p class="small muted rule-section">Found a different instruction in your edition? {contact ? <a href={`mailto:${contact}?subject=${encodeURIComponent(`Rule correction: ${rule.id}`)}`}>Send a correction with the game, edition, and source.</a> : 'Check the source and edition listed above against your own rulebook.'}</p>
 </article>

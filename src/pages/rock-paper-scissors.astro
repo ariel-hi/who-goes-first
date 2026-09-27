@@ -1,0 +1,13 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import RockPaperScissors from '../components/tools/RockPaperScissors';
+---
+<ToolPage current="/rock-paper-scissors/" title="Rock Paper Scissors on One Phone: Two-Player Decider — Who Goes First?" description="Play rock paper scissors on one phone. Each player picks in secret, then both throws are revealed together. A quick, fair way to decide who goes first." heading="Rock paper scissors" lede="Two players, one phone. Each picks in secret, then both throws are revealed together.">
+  <RockPaperScissors client:load />
+  <Fragment slot="about">
+    <h2>How to play</h2>
+    <p>Player 1 picks rock, paper or scissors while Player 2 looks away. Pass the phone, and Player 2 picks. Both throws appear at once: rock beats scissors, scissors beats paper, and paper beats rock. A tie means throw again. The winner goes first, or play best of three.</p>
+    <p>Choices are hidden until both are in, so nobody can react to the other’s throw the way they sometimes can with hands.</p>
+    <p>Need a draw that doesn’t depend on strategy? The <a href="/">first-player picker</a> gives every player an equal chance.</p>
+  </Fragment>
+</ToolPage>

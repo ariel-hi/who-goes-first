@@ -1,0 +1,14 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import TeamGenerator from '../components/tools/TeamGenerator';
+---
+<ToolPage current="/random-team-generator/" title="Random Team Generator: Split Names into Fair Teams — Who Goes First?" description="Paste a list of names and split them into 2–10 random, evenly sized teams. Free, private and instant. Great for party games, trivia and team board games." heading="Random team generator" lede="Paste your players, pick how many teams, and get evenly sized random teams.">
+  <TeamGenerator client:load />
+  <Fragment slot="about">
+    <h2>How the teams are made</h2>
+    <p>The generator shuffles your list with an unbiased shuffle, then deals the names round-robin like cards. Every arrangement is equally likely, and team sizes never differ by more than one player.</p>
+    <p>Names stay in your browser. Nothing you type is sent to us or saved.</p>
+    <h2>Great for</h2>
+    <p>Team games like <a href="/games/">Codenames and other party games</a>, trivia nights, classrooms and sports. Once you have teams, use the <a href="/coin-flip/">coin flip</a> to decide which team starts.</p>
+  </Fragment>
+</ToolPage>

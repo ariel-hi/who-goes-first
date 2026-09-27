@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import EmbedRule from '../components/EmbedRule.astro';
+import { getCatalog } from '../lib/content/catalog';
+import { badgeSnippet } from '../lib/embed';
+import { siteSettings } from '../lib/site';
+const games = getCatalog();
+const sample = games.find(game => game.slug === 'catan-2020-en') ?? games[0];
+const badge = badgeSnippet(siteSettings().url);
+---
+<Layout title="Embed Starting-Player Rules on Your Site — Who Goes First?" description="Free copy-and-paste embeds for bloggers, publishers and game cafés: a game’s official starting-player rule with its source, or a button that opens the first-player picker.">
+  <div class="content-page prose">
+    <h1>Embed a starting rule</h1>
+    <p class="lede">Writing a review, a how-to-play guide or a café game list? Add the official “who goes first” answer, with its edition and a link to the source. It’s free.</p>
+    <h2>A game’s starting rule</h2>
+    <p>Every <a href="/games/">rule page</a> has an <b>Embed this answer</b> section near the bottom. The code is plain HTML, with no script or tracking, so it works in WordPress, Squarespace, Blogger, forums and most newsletters. Here is the one for {sample?.gameName}:</p>
+    {sample && <EmbedRule rule={sample} open />}
+    <h2>A “Who goes first?” button</h2>
+    <p>For game cafés, club sites and publishers: a small badge that opens our free first-player picker.</p>
+    <p><img src="/badge.svg" alt="Who goes first? Pick a player" width="220" height="48" /></p>
+    <textarea class="embed-snippet" readonly rows="4" aria-label="Badge embed code">{badge}</textarea>
+    <h2>Publishers</h2>
+    <p>If we cite your rulebook, your games are grouped on a <a href="/publishers/">publisher page</a>. Linking to it from your rules-download or FAQ page helps players find the right edition’s answer. If a rule needs a correction, the link at the bottom of each rule page reaches us directly.</p>
+    <p>Prefer a printed version? The <a href="/printable-game-night/">printable table cards</a> have a QR code for the picker.</p>
+  </div>
+</Layout>
+<style>
+  .embed-snippet{width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);font:12px/1.5 ui-monospace,Consolas,monospace}
+  .content-page :global(details.embed-rule){border:1px solid var(--line);border-radius:12px;padding:4px 14px 10px}
+</style>

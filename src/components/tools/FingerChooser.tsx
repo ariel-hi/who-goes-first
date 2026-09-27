@@ -1,0 +1,101 @@
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { randomCollectionIndex } from '../../lib/selection';
+import { shuffle } from '../../lib/tools';
+
+type Finger = { x: number; y: number; color: string };
+type Phase = 'waiting' | 'counting' | 'done';
+type Mode = 'first' | 'order';
+const colors = ['#e4572e', '#2e86ab', '#f2a541', '#6a4c93', '#3bb273', '#e84393', '#17bebb', '#8d6a9f', '#c0ca33', '#ff7f11'];
+const settleMs = 2000;
+
+// Pointer events give one id per finger on touch screens. The draw uses the
+// same secure source as the picker; timing and finger position never affect it.
+export default function FingerChooser() {
+  const area = useRef<HTMLDivElement>(null);
+  const fingers = useRef(new Map<number, Finger>());
+  const timer = useRef<number | undefined>(undefined);
+  const [, setTick] = useState(0);
+  const [phase, setPhase] = useState<Phase>('waiting');
+  const [mode, setMode] = useState<Mode>('first');
+  const [ranks, setRanks] = useState<Map<number, number>>(new Map());
+  const [touchCapable, setTouchCapable] = useState(true);
+  const phaseRef = useRef(phase); phaseRef.current = phase;
+  const modeRef = useRef(mode); modeRef.current = mode;
+  const render = () => setTick(tick => tick + 1);
+
+  useEffect(() => { setTouchCapable(navigator.maxTouchPoints > 0); return () => clearTimeout(timer.current); }, []);
+
+  const pick = useCallback(() => {
+    const ids = [...fingers.current.keys()];
+    if (ids.length < 2) { setPhase('waiting'); return; }
+    const order = modeRef.current === 'first' ? [ids[randomCollectionIndex(ids.length)]!] : shuffle(ids);
+    setRanks(new Map(order.map((id, index) => [id, index + 1])));
+    setPhase('done');
+    navigator.vibrate?.(60);
+  }, []);
+
+  const rearm = useCallback(() => {
+    clearTimeout(timer.current);
+    if (phaseRef.current === 'done') return;
+    if (fingers.current.size >= 2) { setPhase('counting'); timer.current = window.setTimeout(pick, settleMs); }
+    else setPhase('waiting');
+  }, [pick]);
+
+  const position = (event: React.PointerEvent) => {
+    const box = area.current!.getBoundingClientRect();
+    return { x: event.clientX - box.left, y: event.clientY - box.top };
+  };
+  const down = (event: React.PointerEvent) => {
+    if (phaseRef.current === 'done') return;
+    event.preventDefault();
+    const used = new Set([...fingers.current.values()].map(finger => finger.color));
+    fingers.current.set(event.pointerId, { ...position(event), color: colors.find(color => !used.has(color)) ?? colors[fingers.current.size % colors.length]! });
+    render(); rearm();
+  };
+  const move = (event: React.PointerEvent) => {
+    const finger = fingers.current.get(event.pointerId);
+    if (!finger) return;
+    Object.assign(finger, position(event)); render();
+  };
+  const up = (event: React.PointerEvent) => {
+    if (!fingers.current.delete(event.pointerId)) return;
+    if (phaseRef.current === 'done' && fingers.current.size === 0) { setRanks(new Map()); setPhase('waiting'); }
+    render(); rearm();
+  };
+
+  const count = fingers.current.size;
+  const status = phase === 'done'
+    ? (mode === 'first' ? 'Chosen! The highlighted finger goes first. Lift all fingers to play again.' : 'Turn order is set. Lift all fingers to play again.')
+    : phase === 'counting' ? `${count} fingers. Hold still…`
+    : count === 1 ? 'One finger down. Waiting for at least one more…'
+    : 'Everyone put one finger on the screen and hold still.';
+
+  return (
+    <div className="finger-tool">
+      <div className="tool-options" role="group" aria-label="What to choose">
+        <button type="button" aria-pressed={mode === 'first'} onClick={() => setMode('first')} disabled={phase !== 'waiting' || count > 0}>First player</button>
+        <button type="button" aria-pressed={mode === 'order'} onClick={() => setMode('order')} disabled={phase !== 'waiting' || count > 0}>Full turn order</button>
+      </div>
+      <div
+        ref={area}
+        className={`finger-area finger-${phase}`}
+        onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} onLostPointerCapture={up}
+        onContextMenu={event => event.preventDefault()}
+        aria-describedby="finger-status"
+      >
+        {count === 0 && <p className="finger-hint" aria-hidden="true">{touchCapable ? 'Touch here' : 'Open this page on a phone or tablet'}</p>}
+        {[...fingers.current.entries()].map(([id, finger]) => {
+          const rank = ranks.get(id);
+          const state = phase !== 'done' ? '' : mode === 'first' ? (rank ? ' finger-winner' : ' finger-out') : ' finger-ranked';
+          return (
+            <span key={id} className={`finger-dot${state}`} style={{ left: finger.x, top: finger.y, '--finger': finger.color } as React.CSSProperties}>
+              {phase === 'done' && mode === 'order' && rank && <b>{rank}</b>}
+            </span>
+          );
+        })}
+      </div>
+      <p id="finger-status" className="tool-status" role="status" aria-live="polite">{status}</p>
+      {!touchCapable && <p className="small muted">This chooser needs a touch screen. On a computer, use the <a href="/">first-player picker</a> with names or seats.</p>}
+    </div>
+  );
+}
