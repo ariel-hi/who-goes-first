@@ -34,5 +34,8 @@
 :root[data-theme=dark] .preview-banner { background:#443a27; color:#edddaa; border-color:#82704b; }
 :root[data-theme=dark] :is(.directory-filters button[aria-pressed=true],.directory-pending-actions a.directory-picker-link,.analytics-consent button) { color:#28212c; background:var(--green); }
 :root[data-theme=dark] .analytics-consent [data-analytics-decline] { color:var(--green); background:transparent; }
+/* Fixed Pinterest red falls under the 3:1 icon-contrast floor against the dark paper background; lighten it slightly, keeping the brand recognizable. */
+:root[data-theme=dark] .share-pinterest .brand-icon { color:#eb334f; }
+:root[data-theme=dark] .share-pinterest:hover { border-color:#eb334f; }
 /* The painted pieces and their ink retain their physical colors in either theme. */
 :root[data-theme=dark] .card-front { color:var(--ink); }
