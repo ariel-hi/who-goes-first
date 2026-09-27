@@ -75,7 +75,7 @@ for (const width of [320, 1280]) {
 
       const article = page.locator('.game-article');
       await expect(article.getByRole('heading', { level: 1 })).toHaveText(`Who goes first in ${game.name}?`);
-      await expect(article.locator(':scope > p').first()).toHaveText(game.edition);
+      await expect(article.locator('.rule-edition')).toHaveText(game.edition);
       await expect(article.locator('.rule-answer')).toHaveText(game.answer);
       const details = article.locator('.rule-section').filter({ has: page.getByRole('heading', { name: 'Rule details', exact: true }) });
       for (const detail of game.details) await expect(details).toContainText(detail);
