@@ -1,0 +1,291 @@
+{
+  "scope": "Source-only proposal; ready publication12 is unchanged. Root review and release hold still apply. No claim that all other directory assignments have completed edition audits.",
+  "corrections": [
+    {
+      "ruleId": "citadels-zman-2016-en",
+      "currentRecordSha256": "123d36ead3809f733532ab7bda948aa0f7f08ec27ed64ca4e10542dd17d45f8a",
+      "currentApprovedRevision": "186a1128c9315a7b36eec2cd74ccb371646c07df9d68330f4f7a8d41fbaadce7",
+      "currentNameAttachment": "478",
+      "proposedBggId": "205398",
+      "existingReviewTargets": [
+        {
+          "rank": 37,
+          "name": "Citadels",
+          "bggId": "478",
+          "year": 2000,
+          "bggRank": 597,
+          "usersRated": 57498,
+          "covered": true,
+          "coveredBy": "citadels-zman-2016-en"
+        },
+        {
+          "rank": 290,
+          "name": "Citadels",
+          "bggId": "205398",
+          "year": 2016,
+          "bggRank": 574,
+          "usersRated": 17723,
+          "covered": true,
+          "coveredBy": "citadels-zman-2016-en"
+        }
+      ],
+      "targetListProvenance": {
+        "path": "research/claude-batches/targets.json",
+        "description": "Existing research queue, referenced by the user; these numeric IDs were not separately supplied or verified by the owner.",
+        "documentedOrigin": "research/claude-batches/targets-summary.md documents the 2026-09-25 beefsack/bgg-ranking-historicals CSV. This proposal uses the existing queue and does not claim to have independently re-fetched that CSV.",
+        "summarySha256": "9e86b10dd77ac5da85e6f33323f157b82e1a42e520e7c5b70e765ec9b011c763"
+      },
+      "savedWikidataAudit": {
+        "snapshot": "research/coverage/wikidata-board-games.json",
+        "snapshotSha256": "de0029fd03cb573786ff401306d227902f6f4818d79820ea574b148c229fc4e1",
+        "statementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
+        "matchingRevisedRows": [],
+        "matchingOriginalRows": [
+          {
+            "bggId": "478",
+            "name": "Citadels",
+            "wikidataId": "Q981029",
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q981029",
+            "wikidataItems": [
+              {
+                "id": "Q981029",
+                "name": "Citadels"
+              }
+            ],
+            "alreadyListed": false,
+            "reviewFlags": []
+          }
+        ],
+        "identityReview": "research/coverage/wikidata-identity-review.json",
+        "identityReviewSha256": "277155938d55649a28d249c61b5378d94eb87a10194fb1b6e6658e58804438cc",
+        "revisedIdPresentInReview": false,
+        "conclusion": "Neither later ID is present in the saved English P2339 snapshot or identity review. These files do not establish the later numeric assignments."
+      },
+      "publisherRuleSource": {
+        "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/10/zc01-rulebook_web.pdf",
+        "title": "Citadels — Rulebook",
+        "publisher": "Z-Man Games",
+        "printedPages": [
+          "3",
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "pdfPagesOneBased": [
+          3,
+          4,
+          8,
+          12,
+          16
+        ],
+        "location": "Page 3, Setup step 5 and Selection Phase; page 4, Turn Phase; page 8, Complete Setup step 7; page 12, rank 4 characters; credits on page 16",
+        "checkedAt": "2026-09-25"
+      },
+      "savedPublisherPdf": "research/source-files/popular-originals-intake/citadels-new-custody.pdf",
+      "savedPublisherPdfSha256": "36bc4ea9f079c803c01a4cddc66d5d6506c617970e22793db22bb3f7d516a539",
+      "originalManual": {
+        "url": "https://images-cdn.fantasyflightgames.com/filer_public/f2/e7/f2e74a36-bed7-4a38-aff4-c2e968a1c369/citadels-rules-english.pdf",
+        "sha256": "91e5accb78adce831e9118e58013bc6b7c9bdc24e767adedd2ebf2e2057f4b49",
+        "pages": 11
+      },
+      "editionFacts": "Existing Z-Man manual has the 2016 character format and its credits explicitly label the 2016 edition. Original Fantasy Flight manual has eight base characters and ten optional Dark City characters; its copyright is 2010.",
+      "numericIdentityEvidence": {
+        "kind": "BGG own-item indexed identity metadata, cross-checked against separately reviewed publisher manuals; existing queue is only a research lead",
+        "url": "https://boardgamegeek.com/boardgame/205398",
+        "observedVia": "web search on2026-09-26; direct page access returned403; no starting-rule prose imported",
+        "facts": "The BGG own-item search result identifies205398 as Citadels2016 and describes27characters, with the original and DarkCity listed separately as predecessors.",
+        "savedFactualExtraction": "research/source-files/popular-originals-intake/bgg-edition-identity-facts.json",
+        "savedFactualExtractionSha256": "90c94943c5f3bea9b04c961dcba810f56eb7f6256b74c814ee8d261aa5e59a47",
+        "identityMetadata": {
+          "bggId": "205398",
+          "url": "https://boardgamegeek.com/boardgame/205398",
+          "name": "Citadels",
+          "year": 2016,
+          "players": "2–8",
+          "designer": "Bruno Faidutti",
+          "characterCards": 27,
+          "editionComposition": "Eight characters from the original game, ten from Dark City and nine additional characters.",
+          "predecessorNames": [
+            "Citadels",
+            "Citadels: The Dark City"
+          ],
+          "officialLinkLabel": "Product Page on Z-Man Games",
+          "explicitItemIdObserved": true
+        },
+        "publisherNumericHyperlinkClaim": false
+      },
+      "enrollment": {
+        "authority": "Legacy BGG discovery inventory; not a new publisher-only or native Wikidata identity",
+        "name": "Citadels (2016 Edition)",
+        "bggId": "205398",
+        "discoveryUrl": "https://boardgamegeek.com/boardgame/205398",
+        "status": "needs-primary-source"
+      },
+      "override": {
+        "ruleId": "citadels-zman-2016-en",
+        "inventoryIds": [
+          "205398"
+        ],
+        "reason": "Separately reviewed publisher manual matches the edition facts in BGG own-item indexed metadata. The numeric ID was an existing research-queue lead, not owner-verified or established by the saved Wikidata snapshot. The original identity remains reserved for its separately reviewed original manual."
+      },
+      "publicCopyChange": false,
+      "existingAliasesChange": false,
+      "existingPortableFingerprintChange": false,
+      "privateEvidenceChange": "Correct obsolete Citadels478 statement and append checked edition correspondence; restamp exact content revision under actual reviewer.",
+      "applied": false
+    },
+    {
+      "ruleId": "love-letter-2025-en",
+      "currentRecordSha256": "04a17d4496cb95401351abe66af7c9df89538cea6c66eb255e13da2a78c246c2",
+      "currentApprovedRevision": "251bd91114e46ad85ea7543d268317d7b1b621e915a49dbdc4d85af3c1248ba3",
+      "currentNameAttachment": "129622",
+      "proposedBggId": "277085",
+      "existingReviewTargets": [
+        {
+          "rank": 20,
+          "name": "Love Letter",
+          "bggId": "129622",
+          "year": 2012,
+          "bggRank": 372,
+          "usersRated": 72399,
+          "covered": true,
+          "coveredBy": "love-letter-2025-en"
+        },
+        {
+          "rank": 315,
+          "name": "Love Letter",
+          "bggId": "277085",
+          "year": 2019,
+          "bggRank": 315,
+          "usersRated": 16807,
+          "covered": true,
+          "coveredBy": "love-letter-2025-en"
+        }
+      ],
+      "targetListProvenance": {
+        "path": "research/claude-batches/targets.json",
+        "description": "Existing research queue, referenced by the user; these numeric IDs were not separately supplied or verified by the owner.",
+        "documentedOrigin": "research/claude-batches/targets-summary.md documents the 2026-09-25 beefsack/bgg-ranking-historicals CSV. This proposal uses the existing queue and does not claim to have independently re-fetched that CSV.",
+        "summarySha256": "9e86b10dd77ac5da85e6f33323f157b82e1a42e520e7c5b70e765ec9b011c763"
+      },
+      "savedWikidataAudit": {
+        "snapshot": "research/coverage/wikidata-board-games.json",
+        "snapshotSha256": "de0029fd03cb573786ff401306d227902f6f4818d79820ea574b148c229fc4e1",
+        "statementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
+        "matchingRevisedRows": [],
+        "matchingOriginalRows": [
+          {
+            "bggId": "129622",
+            "name": "Love Letter",
+            "wikidataId": "Q18456969",
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q18456969",
+            "wikidataItems": [
+              {
+                "id": "Q18456969",
+                "name": "Love Letter"
+              }
+            ],
+            "alreadyListed": true,
+            "reviewFlags": []
+          }
+        ],
+        "identityReview": "research/coverage/wikidata-identity-review.json",
+        "identityReviewSha256": "277155938d55649a28d249c61b5378d94eb87a10194fb1b6e6658e58804438cc",
+        "revisedIdPresentInReview": false,
+        "conclusion": "Neither later ID is present in the saved English P2339 snapshot or identity review. These files do not establish the later numeric assignments."
+      },
+      "publisherRuleSource": {
+        "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2026/04/LL_Rulebook_with_Bag.pdf",
+        "title": "Love Letter — rulebook supplied with bag edition",
+        "publisher": "Z-Man Games",
+        "printedPages": [
+          "3",
+          "4",
+          "7",
+          "15"
+        ],
+        "pdfPagesOneBased": [
+          3,
+          4,
+          7,
+          15
+        ],
+        "location": "Setup page 3; taking a turn page 4; starting the next round page 7; credits page 15",
+        "checkedAt": "2026-09-22"
+      },
+      "savedPublisherPdf": "research/source-files/popular-originals-intake/love-new-cached.pdf",
+      "savedPublisherPdfSha256": "c04dc5e6a060e9a625939cd634d438fac2cee4f59a0373ebf17d41cdb96731fa",
+      "originalManual": {
+        "url": "https://alderac.com/wp-content/uploads/2017/11/Love_Letter_Rules_Final.pdf",
+        "sha256": "b0f2dd6a6f28075ac5b4625d486f2b871ac4a30b142e936ce1e9de0c77a4fcc3",
+        "pages": 24
+      },
+      "editionFacts": "Existing Z-Man booklet contains21 character cards, supports2–6 players, credits AndrewBosley artwork and copyright2025. The original AEG booklet contains16 game cards and copyright2012.",
+      "numericIdentityEvidence": {
+        "kind": "BGG own-item indexed identity metadata, cross-checked against separately reviewed publisher manuals; existing queue is only a research lead",
+        "url": "https://boardgamegeek.com/boardgame/277085",
+        "observedVia": "web search on2026-09-26; direct page access returned403; no starting-rule prose imported",
+        "facts": "The BGG own-item search result identifies277085 as LoveLetter2019 and explicitly includes its2025 edition, AndrewBosley artwork,21cards and up to6players; the2012game is listed as a predecessor.",
+        "savedFactualExtraction": "research/source-files/popular-originals-intake/bgg-edition-identity-facts.json",
+        "savedFactualExtractionSha256": "90c94943c5f3bea9b04c961dcba810f56eb7f6256b74c814ee8d261aa5e59a47",
+        "identityMetadata": {
+          "bggId": "277085",
+          "url": "https://boardgamegeek.com/boardgame/277085/love-letter",
+          "name": "Love Letter",
+          "year": 2019,
+          "players": "2–6",
+          "designer": "Seiji Kanai",
+          "artist": "Andrew Bosley",
+          "publisher": "Z-Man Games",
+          "characterCards": 21,
+          "laterEditionExplicitlyIncluded": 2025,
+          "editionComposition": "The 2025 edition retains the five additional cards introduced in 2019, allowing up to six players.",
+          "predecessorNames": [
+            "Love Letter"
+          ],
+          "officialLinkLabel": "Z-Man Shop page",
+          "explicitItemIdObserved": true
+        },
+        "publisherNumericHyperlinkClaim": false
+      },
+      "enrollment": {
+        "authority": "Legacy BGG discovery inventory; not a new publisher-only or native Wikidata identity",
+        "name": "Love Letter (revised edition)",
+        "bggId": "277085",
+        "discoveryUrl": "https://boardgamegeek.com/boardgame/277085",
+        "status": "needs-primary-source"
+      },
+      "override": {
+        "ruleId": "love-letter-2025-en",
+        "inventoryIds": [
+          "277085"
+        ],
+        "reason": "Separately reviewed publisher manual matches the edition facts in BGG own-item indexed metadata. The numeric ID was an existing research-queue lead, not owner-verified or established by the saved Wikidata snapshot. The original identity remains reserved for its separately reviewed original manual."
+      },
+      "publicCopyChange": false,
+      "existingAliasesChange": false,
+      "existingPortableFingerprintChange": false,
+      "privateEvidenceChange": "Append checked edition correspondence and restamp exact content revision under actual reviewer.",
+      "applied": false
+    }
+  ],
+  "originalOverrides": [
+    {
+      "ruleId": "citadels-fantasy-flight-original-en",
+      "inventoryIds": [
+        "478"
+      ]
+    },
+    {
+      "ruleId": "love-letter-aeg-original-en",
+      "inventoryIds": [
+        "129622"
+      ]
+    }
+  ],
+  "additionalPublicRecords": 2,
+  "newDirectoryIdentities": 2,
+  "nativeDecisionChanges": 0,
+  "publisherRegistryChanges": 0
+}

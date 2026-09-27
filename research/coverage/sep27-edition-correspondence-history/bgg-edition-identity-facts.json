@@ -1,0 +1,36 @@
+{
+  "observedOn": "2026-09-26",
+  "access": "BoardGameGeek own-item metadata returned by web search. Direct page requests subsequently returned HTTP 403. This is a factual identity extraction, not a saved direct-HTTP page or a publisher numeric cross-link.",
+  "scope": "Only edition identity facts are used. No starting-player instruction or game-rule prose from BGG is imported.",
+  "items": [
+    {
+      "bggId": "205398",
+      "url": "https://boardgamegeek.com/boardgame/205398",
+      "name": "Citadels",
+      "year": 2016,
+      "players": "2–8",
+      "designer": "Bruno Faidutti",
+      "characterCards": 27,
+      "editionComposition": "Eight characters from the original game, ten from Dark City and nine additional characters.",
+      "predecessorNames": ["Citadels", "Citadels: The Dark City"],
+      "officialLinkLabel": "Product Page on Z-Man Games",
+      "explicitItemIdObserved": true
+    },
+    {
+      "bggId": "277085",
+      "url": "https://boardgamegeek.com/boardgame/277085/love-letter",
+      "name": "Love Letter",
+      "year": 2019,
+      "players": "2–6",
+      "designer": "Seiji Kanai",
+      "artist": "Andrew Bosley",
+      "publisher": "Z-Man Games",
+      "characterCards": 21,
+      "laterEditionExplicitlyIncluded": 2025,
+      "editionComposition": "The 2025 edition retains the five additional cards introduced in 2019, allowing up to six players.",
+      "predecessorNames": ["Love Letter"],
+      "officialLinkLabel": "Z-Man Shop page",
+      "explicitItemIdObserved": true
+    }
+  ]
+}
