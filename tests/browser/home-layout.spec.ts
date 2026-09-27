@@ -115,6 +115,11 @@ test('appearance persists across reloads and answer pages with accessible dark c
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
+  // The skip-link is visually hidden until focused, so axe only sees its real
+  // contrast once something actually tabs to it.
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
+  expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
   await page.getByRole('searchbox', { name: /Search .* games/ }).fill('Wingspan');
   await page.locator('.rule-lookup-results a').first().click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
