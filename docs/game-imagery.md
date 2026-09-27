@@ -61,7 +61,7 @@ results. If permission is unclear, keep the original SVG.
 `content:validate` rejects absent files and files over 64 KiB. The production
 audit counts inline SVG within compressed HTML and local images once per page,
 using the existing conservative 350 KiB allowance (including all non-optional
-JavaScript and CSS). Adding or changing any image or licence changes the rule's
+JavaScript and CSS). Adding or changing image metadata or its licence changes the rule's
 editorial revision and requires a fresh approval through the existing review
 process. No existing approval hashes have been changed for this preparation.
 
