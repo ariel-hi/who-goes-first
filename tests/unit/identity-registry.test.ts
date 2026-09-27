@@ -183,6 +183,15 @@ test('reviewed Grail identities stay publisher-only pending games with exact pro
     ['game-a1d2166b-9a0f-4581-a68c-0c1767290430', 'Snowcrest', 'snowcrest'],
     ['game-d9976717-7827-46e1-8774-a455d72c98b2', 'Tango', 'tango'],
     ['game-57bb804a-0e45-4152-bda3-abb73ec20321', 'Farm Hand', 'farm-hand'],
+    ['game-78e5b4d8-34e3-4608-a386-a29f9cd1c10b', 'Night Soil', 'night-soil'],
+    ['game-73f2328a-1f15-4581-8a46-1d298c1cbad5', 'Aliens Attack!', 'aliens-attack'],
+    ['game-8cd57a82-7678-4bc1-9af8-a2772bfc87de', 'A Walk in the Park', 'a-walk-in-the-park'],
+    ['game-69eed274-424b-4709-b3e9-52533519cc16', 'Boomerang: Australia', 'boomerang-australia'],
+    ['game-e1f6a151-a9ff-4bb3-83e3-56fb607cfaad', 'Boomerang: Europe', 'boomerang-europe'],
+    ['game-c00a4d16-5378-451a-9e70-ca55d73b8598', 'Elevenses: The Guilty Party', 'elevenses-guilty-party'],
+    ['game-fd09a2f1-4667-4328-88b8-62393fce2d13', 'Fantasy Brewers', 'fantasy-brewers'],
+    ['game-69031e34-9cc8-4142-9f19-1a035d5ee624', 'Level 10', 'level-10'],
+    ['game-63f99b7a-7e6c-457f-8c78-eb5d33097653', 'Ohio Bob', 'ohio-bob'],
   ] as const) {
     const matching = games.filter(game => game.identityId === identityId);
     expect(matching).toHaveLength(1);

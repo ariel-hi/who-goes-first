@@ -22,7 +22,8 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
         <button type="button" data-filter="pending" aria-pressed="false">Awaiting a rule</button>
       </div>
       <p class="count-label" data-count role="status" hidden></p>
-      <ul class="game-list directory-results" data-results hidden></ul>
+      <ul id="directory-results" class="game-list directory-results" data-results hidden></ul>
+      <button type="button" class="directory-more" data-more aria-controls="directory-results" hidden>Show more games</button>
       <div class="directory-empty" data-empty hidden><h2>No matching games</h2><p>Try a shorter name or another filter. You can also <a href="/">pick a starting player</a> now.</p></div>
       <noscript><p class="small muted">Browse the letter pages below. Search needs JavaScript.</p></noscript>
     </div>
@@ -44,12 +45,17 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   const filters = root.querySelector<HTMLElement>('[data-filters]')!;
   const count = root.querySelector<HTMLElement>('[data-count]')!;
   const results = root.querySelector<HTMLUListElement>('[data-results]')!;
+  const more = root.querySelector<HTMLButtonElement>('[data-more]')!;
   const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+  const batchSize = 80;
   let data: SearchGame[] | undefined;
   let loading: Promise<SearchGame[]> | undefined;
+  let matchedGames: SearchGame[] = [];
+  let shown = 0;
   let filter: DirectoryFilter = 'all';
   let revision = 0;
   let renderedState: { query: string; filter: DirectoryFilter } | undefined;
+  let showNext: (() => HTMLLIElement | undefined) | undefined;
   const compact = directorySearchKey;
   const load = () => loading ??= fetch('/board-games/search.json').then(response => {
     if (!response.ok) throw new Error(`Search unavailable (${response.status})`);
@@ -66,6 +72,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     const renderedFilter = filter;
     const query = compact(rawQuery);
     renderedState = undefined;
+    matchedGames = []; shown = 0; showNext = undefined; more.hidden = true;
     results.replaceChildren();
     results.hidden = true; filters.hidden = true; empty.hidden = true;
     if (!query) {
@@ -79,48 +86,62 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       return;
     }
     if (thisRevision !== revision) return;
-    const matches = data!.filter(game => (game.search.includes(query) || game.numericId?.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
-    matches.sort((a, b) => {
+    matchedGames = data!.filter(game => (game.search.includes(query) || game.numericId?.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
+    matchedGames.sort((a, b) => {
       const rank = (game: SearchGame) => game.numericId === query || game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
       return rank(a) - rank(b) || a.name.localeCompare(b.name, 'en', { numeric: true });
     });
-    const fragment = document.createDocumentFragment();
-    for (const game of matches.slice(0, 80)) {
-      const item = document.createElement('li');
-      item.dataset.id = game.id;
-      item.dataset.hasRule = String(game.hasRule);
-      const label = document.createElement('span'); label.textContent = game.name;
-      const status = document.createElement('small'); status.textContent = game.ruleCount > 1 ? `${game.ruleCount} sourced editions` : game.hasRule ? 'Starting rule available' : 'No checked starting rule yet';
-      label.append(status);
-      if (game.hasRule) {
-        const link = document.createElement('a'); link.href = game.href!; link.append(label);
-        const arrow = document.createElement('span'); arrow.className = 'directory-arrow'; arrow.ariaHidden = 'true'; arrow.textContent = '→'; link.append(arrow);
-        item.append(link);
-      } else {
-        const details = document.createElement('details'); details.className = 'directory-pending';
-        const summary = document.createElement('summary'); summary.append(label);
-        const disclosure = document.createElement('span'); disclosure.className = 'directory-disclosure'; disclosure.ariaHidden = 'true'; summary.append(disclosure);
-        const help = document.createElement('div'); help.className = 'directory-pending-help';
-        const explanation = document.createElement('p'); explanation.textContent = 'We haven’t checked this game’s starting rule yet. Follow the rulebook in your box, or give every player an equal chance with the picker.';
-        const actions = document.createElement('div'); actions.className = 'directory-pending-actions';
-        const picker = document.createElement('a'); picker.className = 'directory-picker-link'; picker.href = '/'; picker.textContent = 'Pick a player';
-        actions.append(picker);
-        if (game.reference) {
-          const identity = document.createElement('a'); identity.href = game.reference.url;
-          identity.textContent = game.reference.label === 'BoardGameGeek' ? 'View game on BoardGameGeek ↗' : `${game.reference.label} ↗`;
-          actions.append(identity);
+    showNext = () => {
+      const next = matchedGames.slice(shown, shown + batchSize);
+      const fragment = document.createDocumentFragment();
+      let first: HTMLLIElement | undefined;
+      for (const game of next) {
+        const item = document.createElement('li');
+        first ??= item;
+        item.dataset.id = game.id;
+        item.dataset.hasRule = String(game.hasRule);
+        const label = document.createElement('span'); label.textContent = game.name;
+        const status = document.createElement('small'); status.textContent = game.ruleCount > 1 ? `${game.ruleCount} sourced editions` : game.hasRule ? 'Starting rule available' : 'No checked starting rule yet';
+        label.append(status);
+        if (game.hasRule) {
+          const link = document.createElement('a'); link.href = game.href!; link.append(label);
+          const arrow = document.createElement('span'); arrow.className = 'directory-arrow'; arrow.ariaHidden = 'true'; arrow.textContent = '→'; link.append(arrow);
+          item.append(link);
+        } else {
+          const details = document.createElement('details'); details.className = 'directory-pending';
+          const summary = document.createElement('summary'); summary.append(label);
+          const disclosure = document.createElement('span'); disclosure.className = 'directory-disclosure'; disclosure.ariaHidden = 'true'; summary.append(disclosure);
+          const help = document.createElement('div'); help.className = 'directory-pending-help';
+          const explanation = document.createElement('p'); explanation.textContent = 'We haven’t checked this game’s starting rule yet. Follow the rulebook in your box, or give every player an equal chance with the picker.';
+          const actions = document.createElement('div'); actions.className = 'directory-pending-actions';
+          const picker = document.createElement('a'); picker.className = 'directory-picker-link'; picker.href = '/'; picker.textContent = 'Pick a player';
+          actions.append(picker);
+          if (game.reference) {
+            const identity = document.createElement('a'); identity.href = game.reference.url;
+            identity.textContent = game.reference.label === 'BoardGameGeek' ? 'View game on BoardGameGeek ↗' : `${game.reference.label} ↗`;
+            actions.append(identity);
+          }
+          help.append(explanation, actions); details.append(summary, help); item.append(details);
         }
-        help.append(explanation, actions); details.append(summary, help); item.append(details);
+        fragment.append(item);
       }
-      fragment.append(item);
-    }
-    results.append(fragment);
-    results.hidden = matches.length === 0;
+      results.append(fragment);
+      shown += next.length;
+      more.hidden = shown >= matchedGames.length;
+      if (!more.hidden) more.textContent = `Show next ${Math.min(batchSize, matchedGames.length - shown)} games`;
+      count.textContent = `${matchedGames.length.toLocaleString('en')} ${matchedGames.length === 1 ? 'game' : 'games'} found${more.hidden ? '' : ` · showing ${shown.toLocaleString('en')}`}`;
+      return first;
+    };
+    showNext();
+    results.hidden = matchedGames.length === 0;
     filters.hidden = false;
-    empty.hidden = matches.length !== 0;
-    count.textContent = `${matches.length.toLocaleString('en')} ${matches.length === 1 ? 'game' : 'games'} found${matches.length > 80 ? ' · showing first 80; add more letters to narrow your search' : ''}`;
+    empty.hidden = matchedGames.length !== 0;
     renderedState = { query: rawQuery, filter: renderedFilter };
   };
+  more.addEventListener('click', () => {
+    const first = showNext?.();
+    first?.querySelector<HTMLElement>('a, summary')?.focus();
+  });
   const showFilter = () => {
     for (const choice of filters.querySelectorAll<HTMLButtonElement>('button')) choice.setAttribute('aria-pressed', String(choice.dataset.filter === filter));
   };

@@ -1,5 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 import { getBrowseShelves } from '../../src/lib/content/board-game-browse';
+import { directorySearchKey } from '../../src/lib/search';
 
 // Reviewed Dropbox sharing viewers retain their exact source URLs and plain citations.
 // Keep explicit fixtures independent of the production PDF detection helper.
@@ -111,6 +112,42 @@ test('board games are browsable without search and searchable on demand', async 
   await expect(page.getByRole('link', { name: /Eagle-Gryphon English rules, ©2018/ })).toHaveAttribute('href', '/games/incan-gold-eagle-gryphon-en-2018/');
 });
 
+test('broad directory searches reveal every match in keyboard-accessible batches', async ({ page }) => {
+  const response = await page.request.get('/board-games/search.json');
+  expect(response.ok()).toBe(true);
+  const entries = await response.json() as { id: string; name: string; terms?: string[] }[];
+  const matches = entries.filter(game => directorySearchKey([game.name, ...(game.terms ?? [])].join(' ')).includes('war'));
+  expect(matches.length).toBeGreaterThan(160);
+
+  await page.goto('/board-games/');
+  const input = page.getByRole('searchbox', { name: 'Search board games' });
+  const rows = page.locator('[data-results] li');
+  const more = page.getByRole('button', { name: /Show next \d+ games/ });
+  await input.fill('war');
+  await expect(rows).toHaveCount(80);
+  await expect(more).toHaveText('Show next 80 games');
+  await expect(page.locator('[data-count]')).toHaveText(`${matches.length} games found · showing 80`);
+
+  let shown = 80;
+  while (shown < matches.length) {
+    const next = Math.min(80, matches.length - shown);
+    await expect(more).toHaveText(`Show next ${next} games`);
+    await more.click();
+    await expect(rows).toHaveCount(shown + next);
+    await expect(rows.nth(shown).locator('a, summary').first()).toBeFocused();
+    shown += next;
+  }
+  await expect(more).toBeHidden();
+  await expect(page.locator('[data-count]')).toHaveText(`${matches.length} games found`);
+  expect((await rows.evaluateAll(items => items.map(item => item.getAttribute('data-id')))).toSorted())
+    .toEqual(matches.map(game => game.id).toSorted());
+
+  await input.fill('Azul');
+  await expect(rows.first()).toContainText('Azul');
+  await expect(more).toBeHidden();
+  await expect(page.locator('[data-count]')).not.toContainText('showing');
+});
+
 for (const width of [320, 1280]) {
   test(`accepted native names preserve their directory identity and rule status at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 });
@@ -173,7 +210,7 @@ test('three reviewed manuals preserve edition scope and viewer citations', async
   await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', /www\.dropbox\.com\/scl\/fi\/.+&dl=0$/);
   await expect(page.getByText('Cited PDF pages: 8, 9, 10, 3, 1, 20, 7', { exact: true })).toBeVisible();
   await page.goto('/games/beyond-the-horizon-super-meeple-fr-rulebook/');
-  await expect(page.getByText(/English summary of French rules/)).toBeVisible();
+  await expect(page.locator('.rule-edition')).toContainText('English summary of French rules');
   await expect(page.locator('.rule-answer')).toContainText('Play proceeds clockwise');
   await expect(page.getByText(/begin with the last player, then continue counterclockwise/)).toBeVisible();
   await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(0);
