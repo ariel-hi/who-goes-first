@@ -17,11 +17,20 @@ const { name } = Astro.props;
 const icons = { pinterest, bluesky, x, facebook, instagram, whatsapp, telegram, reddit, linkedin, threads };
 const darkIcon = name === 'x' ? xWhite : name === 'threads' ? threadsWhite : null;
 ---
-{name === 'email' ? <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m3 5 9 8 9-8" /></svg> : <Image class:list={['social-icon', { 'mono-light': darkIcon }]} src={icons[name]} width={24} densities={[1, 2]} alt="" aria-hidden="true" />}
-{darkIcon && <Image class="social-icon mono-dark" src={darkIcon} width={24} alt="" aria-hidden="true" />}
+{name === 'email' ? <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m3 5 9 8 9-8" /></svg> : <Image class:list={['social-icon', `social-icon-${name}`, { 'mono-light': darkIcon }]} src={icons[name]} width={24} densities={[1, 2]} alt="" aria-hidden="true" />}
+{darkIcon && <Image class:list={['social-icon', `social-icon-${name}`, 'mono-dark']} src={darkIcon} width={24} alt="" aria-hidden="true" />}
 <style>
   .social-icon{display:block;width:24px;height:24px;object-fit:contain;flex:none}
   .mono-dark{display:none}
   :global(html[data-theme="dark"]) .mono-light{display:none}
   :global(html[data-theme="dark"]) .mono-dark{display:block}
+  /* WhatsApp, Bluesky and Instagram ship as a flat mark with no backing of their
+     own, unlike the other brand assets here (Pinterest, Telegram, Facebook,
+     Reddit, LinkedIn all include their own circular badge). Their official
+     colors don't reliably meet icon contrast against every page background, so
+     give just these three the same kind of circular backing the others already
+     have built in. WhatsApp's green fails contrast against white too (~2:1),
+     so it gets a dark backing instead; Bluesky and Instagram read fine on white. */
+  :is(.social-icon-bluesky,.social-icon-instagram){background:#fff;border-radius:50%;padding:2px;box-sizing:border-box}
+  .social-icon-whatsapp{background:#000;border-radius:50%;padding:2px;box-sizing:border-box}
 </style>
