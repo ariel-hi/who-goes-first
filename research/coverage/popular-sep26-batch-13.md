@@ -1,6 +1,6 @@
 # Popular publication 13 and reviewed Zoch cohort
 
-Seventeen new answers and two private edition-correspondence corrections, based on the released focus-fix parent f0ab9397970b3cde19cefaf06be6b59caae4945f. Glow and focus-fix source files are unchanged. No UI, ads/consent source, workflow, or revenue-setting changes.
+Seventeen new answers and two private edition-correspondence corrections, finally rebased onto released parent 7bf6f451314249033ad8453c3f2b67426b86f164. All twelve intervening Claude source/test files, glow, and focus-fix sources are preserved exactly. This content batch makes no additional UI, ads/consent source, workflow, or revenue-setting changes. Historical validation below is retained; final verification follows.
 
 The final root-approved READY packages supplied all 19 exact catalog/research pairs: 12 popular originals/priority games, five Zoch answers, and the two corrected existing records. Original manual reviews remain attributed to the source-owning task; root reviewed record correspondence and public projection, not those manual images. Original v1/v2 proposals and historical incorrect metadata remain preserved. Final package manifests: popular02fe22d7801fca9d5653a22628579a6808f51155db6c12b9675e4787a06e30e2; Zoch-three/two11bc0ced2a08fd7d0566de8b135fb485f832940930e818fe6c78712e6d5163cb; Zoch-existing416370552029fe5906e4eeca2424f8ecd2e4efd2e66c9d8a53f97aa6f3e62295.
 
@@ -43,3 +43,13 @@ c00d9ff Integrate reviewed popular and Zoch cohort with edition regressions
 96c115b Verify all reviewed Zoch assignments and retain pending Ananda
 1f38d20 Separate independent search surfaces and edition navigation browser cases
 ```
+
+## Final publication-parent verification
+
+The initial promotion guard stopped before a push when main advanced to 0937184c5044f19b1e628e65ffd7bfd3f288943a. A second external advance to 7bf6f451314249033ad8453c3f2b67426b86f164 occurred during verification. All 28 local commits rebased cleanly onto that latest parent. All twelve intervening source/test files are identical to the parent, preserving the hero design, rulebook pills, Amazon placement and wording-based similar-game ranking. The exact content and preservation checks were repeated after rebasing.
+
+The new article header required seven edition-locator replacements across six browser specs: `.rule-edition` replaces the old direct-paragraph locator. Every expected edition string remains unchanged. The incomplete first rebound run and its selector failures are retained separately; it is not a terminal pass. After correction, all 111 focused cases passed across three engines, followed by all 39 affected historical edition cases (2.2 minutes). Those historical selector results carry forward across the final parent's unchanged edition markup; final article behavior and styling are covered by the fresh 111-case run below.
+
+Actual production observations and independently read Cloudflare settings confirmed ADSENSE_CLIENT=ca-pub-5752718417003865 and AMAZON_ASSOCIATES_TAG=whogoesfirstf-20. The initial rebound runner was stopped before building to include the observed Amazon value; that partial unit log is not a pass. The final parent passed content validation, Astro check with zero diagnostics, global lint, all 180 unit tests, the production build and full build audit, exact checks of all 19 affected articles, the release matrix, and a fresh 111 focused browser cases across Chromium, Firefox and WebKit. Separate final logs use batch13-final-*, popular-sep26-13-final-production-build.log and combined17-final-*. Counts remain 1086 rules, 5043 directory identities and 393 portable rules.
+
+The earlier copied-registry fixture's 12-case pass is carried forward: neither intervening parent changes identity, enrollment, filtering or chooser logic. It is not represented as a fresh post-rebase fixture run; fixture output is never deployed. All prior negative and positive receipts remain available. The full hosted workflow, test deadlines and retries remain unchanged; 942 hosted browser cases are expected. Atomic publication, actual live verification, the single 17-page notification and complete owned-runtime closure are recorded separately after this report commit.
