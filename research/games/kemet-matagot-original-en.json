@@ -1,0 +1,42 @@
+{
+  "id": "kemet-matagot-original-en",
+  "slug": "kemet-matagot-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Kemet",
+  "aliases": [],
+  "editionLabel": "Matagot English original edition",
+  "firstPlayerRule": "Determine the entire first turn order randomly. Use that order for initial pyramid allocation and the first cycle of play.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Later turn orders are chosen by the player with the fewest victory points. If tied, the tied player who acted earlier in the previous order chooses."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/07/25/66-kemet-rulebook.pdf",
+      "title": "Kemet — English rulebook",
+      "publisher": "Matagot",
+      "printedPages": [
+        "2",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3
+      ],
+      "location": "Game setup; Night phase — Determining the turn order",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Rendered original English Matagot booklet 2 random initial turn order then pyramid allocation, 3 explicit first-turn random exception to later lowest-VP choice. PDF 8 Matagot contact/FAQ and translation credits. Publisher BGG original rules reference distinguishes original from 1.5 and Blood and Sand. Source custody: research/source-files/popular-sep26-13/kemet.pdf; SHA-256 fbf19c7d76be6875f31f6079314164e339d383b12cdda24f70c88b0690758523. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": [
+    "The original Matagot-authored English rulebook is preserved by a rulebook archive. This record does not cover Kemet: Blood and Sand or later revised rules."
+  ]
+}
