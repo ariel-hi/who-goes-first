@@ -1,0 +1,29 @@
+---
+import BrandIcon from './BrandIcon.astro';
+import { amazonDisclosure } from '../lib/affiliate';
+interface Props { href: string; name: string }
+const { href, name } = Astro.props;
+---
+<aside class="buy-game" aria-label="Find this game">
+  <a class="buy-card" href={href} rel="sponsored nofollow noopener" target="_blank">
+    <span class="buy-icon"><BrandIcon name="bag" /></span>
+    <span class="buy-text"><span class="buy-kicker">Don’t have it yet?</span><span class="buy-title">Find {name} on Amazon</span></span>
+    <span class="buy-arrow" aria-hidden="true">↗</span>
+  </a>
+  <small>{amazonDisclosure}</small>
+</aside>
+<style is:global>
+  .buy-game{margin-top:28px;padding:0;border:0;background:none}
+  .buy-card{position:relative;display:flex;align-items:center;gap:14px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--paper);color:var(--ink);text-decoration:none;overflow:hidden;box-shadow:0 2px 0 color-mix(in srgb,var(--line) 80%,transparent);transition:transform .15s ease,box-shadow .15s ease}
+  .buy-card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:#ff9900}
+  .buy-card:hover{transform:translateY(-1px);box-shadow:0 6px 18px color-mix(in srgb,var(--ink) 12%,transparent)}
+  .buy-card:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+  .buy-icon{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:14px;background:color-mix(in srgb,#ff9900 18%,var(--paper));color:#b86a00}
+  .buy-icon .brand-icon{width:22px;height:22px}
+  .buy-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .buy-kicker{font-size:12px;color:var(--muted)}
+  .buy-title{font-size:16px;font-weight:650;color:var(--ink);overflow-wrap:anywhere}
+  .buy-arrow{margin-left:auto;font-size:18px;color:var(--muted)}
+  .buy-game small{display:block;margin:8px 4px 0;color:var(--muted);font-size:11px}
+  @media (prefers-reduced-motion:reduce){.buy-card{transition:none}.buy-card:hover{transform:none}}
+</style>

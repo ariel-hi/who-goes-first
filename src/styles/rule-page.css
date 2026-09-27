@@ -1,0 +1,38 @@
+/* Rule pages: the answer sits on a layered card; supporting sections are soft cards. */
+.rule-hero{position:relative;isolation:isolate;margin:0 0 18px;padding:26px 24px 22px;border:1px solid var(--line);border-radius:26px;background:var(--paper);box-shadow:8px 8px 0 color-mix(in srgb,var(--green) 16%,transparent);overflow:hidden}
+.rule-hero-shape{position:absolute;z-index:-1;pointer-events:none;border-radius:50%}
+.rule-hero-shape-a{width:220px;height:220px;right:-70px;top:-90px;background:color-mix(in srgb,var(--green) 13%,transparent)}
+.rule-hero-shape-b{width:120px;height:120px;right:60px;top:40px;border-radius:28px;transform:rotate(18deg);background:color-mix(in srgb,#e8a33d 16%,transparent)}
+.rule-hero h1{margin:4px 0 6px;max-width:30ch}
+.rule-edition{margin:0}
+.rule-hero .rule-answer{position:relative;margin:20px 0 18px;padding:16px 18px 16px 20px;border-radius:16px;background:color-mix(in srgb,var(--green) 9%,var(--paper));font-family:Georgia,"Times New Roman",serif;font-size:clamp(21px,4.4vw,26px);font-weight:400;line-height:1.4;letter-spacing:-.3px;color:var(--ink)}
+.rule-hero .rule-answer::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;border-radius:0 4px 4px 0;background:var(--green)}
+.rule-hero .opening-tie{margin:0 0 16px}
+.rule-hero .source-actions{margin:0}
+.rule-chip{display:inline-flex;align-items:center;gap:6px;margin:0;padding:5px 11px 5px 9px;border-radius:999px;background:color-mix(in srgb,var(--green) 12%,var(--paper));font-size:10px}
+.rule-chip .brand-icon{width:14px;height:14px}
+
+.game-article .rule-card{margin-top:16px;padding:18px 20px;border:1px solid var(--line);border-top:1px solid var(--line);border-radius:18px;background:var(--paper)}
+.game-article .rule-card h2{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:15px}
+.game-article .rule-card h2 .brand-icon{color:var(--green)}
+.game-article .rule-card p:last-child{margin-bottom:0}
+.source-card{background:color-mix(in srgb,var(--soft) 55%,var(--paper))!important}
+.source-card .source-list{padding-left:0;list-style:none}
+
+.game-article .fallback{position:relative;overflow:hidden;margin-top:16px;padding:22px 22px 20px;border-radius:20px;background:color-mix(in srgb,var(--green) 10%,var(--paper));border:1px dashed color-mix(in srgb,var(--green) 35%,var(--line))}
+.game-article .fallback h2{margin:8px 0 6px;font-size:18px}
+
+.rule-links{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.rule-links a{display:flex;flex-direction:column;gap:2px;height:100%;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--paper);font-weight:600;text-decoration:none}
+.rule-links a:hover{border-color:var(--green)}
+.rule-links small{font-weight:400;color:var(--muted);font-size:12px}
+
+@media (max-width:520px){
+  .rule-hero{padding:22px 18px 18px;border-radius:22px;box-shadow:5px 5px 0 color-mix(in srgb,var(--green) 16%,transparent)}
+  .rule-hero-shape-b{display:none}
+}
+
+.game-article .similar-rules{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.game-article .similar-rules li{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
+.game-article .similar-rules a{font-weight:650}
+.game-article .similar-rules small{color:var(--muted);font-size:13px;line-height:1.45}

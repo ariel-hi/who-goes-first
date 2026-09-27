@@ -1,0 +1,12 @@
+/* Share and save buttons: soft pills with each brand's mark in its own color. */
+.share-pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px 8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;box-shadow:0 1px 0 color-mix(in srgb,var(--line) 70%,transparent);transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+.share-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--ink) 12%,transparent);text-decoration:none}
+.share-pill:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+.share-pill:disabled{opacity:.6;cursor:progress}
+.share-pill .brand-icon{flex:none}
+.share-link .brand-icon{color:var(--green)}
+.share-bluesky .brand-icon{color:#1185fe}
+.share-bluesky:hover{border-color:#1185fe}
+.share-pinterest .brand-icon{color:#e60023}
+.share-pinterest:hover{border-color:#e60023}
+@media (prefers-reduced-motion:reduce){.share-pill{transition:none}.share-pill:hover{transform:none}}
