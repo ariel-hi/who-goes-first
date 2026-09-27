@@ -120,6 +120,31 @@
       "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
       "reviewedAt": "2026-09-26",
       "acceptedRevision": "f985f9abf64450742de660996367dabc39dfa6d1c386342c3f2610d07ed89366"
+    },
+    {
+      "ruleId": "mirakel-mix-en",
+      "ruleRevision": "b87192a9bdd2db036a6d0f2cd89093f54cfe1bbd7175afe1fc0a993291398b86",
+      "identityId": "game-132a548d-b00a-46ce-a29b-6c40525c452b",
+      "identityRevision": "b979df234963805de458bfe9e4119c5211e9c486f49b01fb84143355107c852d",
+      "editionScope": "Zoch English rules in multilingual booklet, article 601105187",
+      "evidence": [
+        {
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/board-games/mirakel-mix-601105187-en.html",
+          "sha256": "30e710e8a387a1cfada3bbaa044e3fdd798991d2f94ba70f97623936976f98ec",
+          "location": "Focal title/article/actual Product metadata; literal direct official manual anchor at raw byte ranges [[147198, 147502], [148076, 148605]].",
+          "correspondence": "Literal primary product names Mirakel Mix and article 601105187; its exact raw observed download anchor leads to this complete original multilingual PDF. Original English title, article imprint, components and physical mode correspond. Proposed assignment is only to the already once-allocated opaque identity and exact English section; no numeric, translated/reissue, printing or alias transfer."
+        },
+        {
+          "url": "https://cdn.simba-dickie-group.de/downloads/601105187/601105187-MirakelMix-rules-Zoch.pdf",
+          "sha256": "fb18bc2afdcc602b46b26c076c68726b276e831013f77df9dbb183374250bd36",
+          "location": "PDF/printed page 9, The exciting run through the cave: last colored drink, unoccupied starting spaces and unchanged order; page 7 title/count; page 8 setup by player count; page 10 active-first and clockwise eligible movement; page 12 example next turn, immediate ending and article imprint.",
+          "correspondence": "Literal primary product names Mirakel Mix and article 601105187; its exact raw observed download anchor leads to this complete original multilingual PDF. Original English title, article imprint, components and physical mode correspond. Proposed assignment is only to the already once-allocated opaque identity and exact English section; no numeric, translated/reissue, printing or alias transfer."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "f1b681d1721ad36c8787ab3ef1cd70feb175352f5d35e979a3fc515e391b0deb"
     }
   ]
 }

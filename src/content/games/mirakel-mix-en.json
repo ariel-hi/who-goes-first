@@ -1,0 +1,54 @@
+{
+  "id": "mirakel-mix-en",
+  "slug": "mirakel-mix",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+  "approvedRevision": "b87192a9bdd2db036a6d0f2cd89093f54cfe1bbd7175afe1fc0a993291398b86",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Mirakel Mix",
+  "aliases": [],
+  "editionLabel": "Zoch English rules in multilingual booklet, article 601105187",
+  "firstPlayerRule": "The player who last had a colored drink starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "Place apprentices on unoccupied starting spaces in turn, then keep the same turn order.",
+    "For 2 or 3 players, use the board side with three apprentice symbols; for 4 players, use the side with four.",
+    "When completed potions cause movement, the active player moves first. Eligible other players then move clockwise, beginning with the active player’s left neighbor.",
+    "The worked example passes the next normal turn to the active player’s left neighbor. Cauldron rotation instructions are separate from player order.",
+    "The game ends immediately when an apprentice leaves the cave; that player wins. Do not finish the round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.simba-dickie-group.de/downloads/601105187/601105187-MirakelMix-rules-Zoch.pdf",
+      "title": "Mirakel Mix: official multilingual rules, English section",
+      "publisher": "Zoch Verlag",
+      "printedPages": [
+        "9",
+        "7",
+        "8",
+        "10",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        7,
+        8,
+        10,
+        12
+      ],
+      "location": "PDF/printed page 9, The exciting run through the cave: last colored drink, unoccupied starting spaces and unchanged order; page 7 title/count; page 8 setup by player count; page 10 active-first and clockwise eligible movement; page 12 example next turn, immediate ending and article imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Codex /root independently read every original uncropped 180 dpi English page (7, 8, 9, 10, 11, 12) and the complete corresponding English extracts, both exact catalog/research proposals, assignment evidence and source-reading notes. Codex /root/inventory_sources read all original multilingual pages; the independent /root/held_identity_review also read all ten original English pages for both titles. Root does not claim an independent reading of the other language sections. Exact original PDF SHA256 fb18bc2afdcc602b46b26c076c68726b276e831013f77df9dbb183374250bd36; PDF/printed page 9 controls the opening criterion. Original images control duplicate/adjacent-number extraction artifacts. Exact English title, physical components, article 601105187, accepted primary product and literal official product-to-manual anchors establish this reviewed English-section correspondence only to game-132a548d-b00a-46ce-a29b-6c40525c452b, identity revision b979df234963805de458bfe9e4119c5211e9c486f49b01fb84143355107c852d. Setup, continuing play, variants, player movement and ending are distinguished in the reviewed clarifications. No initial tie/no-history procedure, new later-game opener, external numeric identity, translated/reissued correspondence or printing is inferred. Root approves this exact rule and public assignment under the owner's standing authorization. Research pair remains lifecycle-null; no research association or portable addition is authorized.",
+  "uncertainty": [
+    "No visible named version or printing date. Imprint 2024 and document-info dates are not printing evidence.",
+    "No official initial colored-drink criterion tie/no-history procedure or later-game opener found.",
+    "Opening paragraph specifies unchanged order rather than naming a rotation. Clockwise wording concerns eligible movement resolution; ordinary next turn to left neighbor is in worked example.",
+    "No external numeric ID, translated alias, creator identifier or reissue correspondence is inferred."
+  ]
+}
