@@ -1,0 +1,38 @@
+{
+  "id": "innovation-asmadi-fourth-en",
+  "slug": "innovation-asmadi-fourth-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Innovation",
+  "aliases": [],
+  "editionLabel": "Asmadi English fourth edition",
+  "firstPlayerRule": "After everyone simultaneously melds one of their two starting Age 1 cards, the player whose melded card title comes first alphabetically takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The first player takes only one action on their initial turn. In a game with four or more players, the first two players take only one action on their initial turns."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://asmadigames.com/rules/Inno4E_Base_Rulebook_Spreads.pdf",
+      "title": "Innovation — English rulebook",
+      "publisher": "Asmadi Games",
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup steps 6–8",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current official Asmadi Innovation page links fourth-edition base rulebook separately from Ultimate rules. Rendered PDF 3 printed 4–5 setup steps 6–8. BGG explicitly lists fourth edition under the original 63888 identity, rather than a separate base-game identity. Unique initial Age 1 cards; no invented title tie. Source custody: research/source-files/popular-sep26-13/innovation.pdf; SHA-256 9c9639e085908f333eaf25148b487f516e89e49a9481fe872788bcb637c5dcd5. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
