@@ -95,6 +95,31 @@
       "reviewedBy": "Codex /root",
       "reviewedAt": "2026-09-26",
       "acceptedRevision": "0d00b4ed6f45b7249cb1b43dcbb0e907043d6887ae025e143a19b7c34474932a"
+    },
+    {
+      "ruleId": "beethupferl-en",
+      "ruleRevision": "4e4b558ed69577e515482306e41bdef65c0c501bc81f683ae6c6689ab13dd24f",
+      "identityId": "game-2300274b-4a9d-448b-97fa-836b973bd8bf",
+      "identityRevision": "5d77f4e6db1426b618652169603631dadfca81debc1529bd5b38c36af17c617e",
+      "editionScope": "Zoch English rules in multilingual booklet, article 601105172",
+      "evidence": [
+        {
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/children-s-games/beethupferl-601105172-en.html",
+          "sha256": "312450459edda5960ae1f802ce4c4e0be188bc9baa44f306336d3487a93c847e",
+          "location": "Focal title/article/actual Product metadata; literal direct official manual anchor at raw byte ranges [[139140, 139441], [140015, 140542]].",
+          "correspondence": "Literal primary product names Beethupferl and article 601105172; its exact raw observed download anchor leads to this complete original multilingual PDF. Original English title, article imprint, components and physical mode correspond. Proposed assignment is only to the already once-allocated opaque identity and exact English section; no numeric, translated/reissue, printing or alias transfer."
+        },
+        {
+          "url": "https://cdn.simba-dickie-group.de/downloads/601105172/601105172-Beethupferl-Anl-Zoch.pdf",
+          "sha256": "813cadd7b1d09b88b775005c95687904e2b11e3b7f35e0ac757b90374198f53a",
+          "location": "PDF/printed page 6, Course of the Game: last carrot, turns and watering versions; page 5 title/count and first-use preparation; page 7 continuing play and joint final-score winners; page 8 cooperative/solo variant and article imprint.",
+          "correspondence": "Literal primary product names Beethupferl and article 601105172; its exact raw observed download anchor leads to this complete original multilingual PDF. Original English title, article imprint, components and physical mode correspond. Proposed assignment is only to the already once-allocated opaque identity and exact English section; no numeric, translated/reissue, printing or alias transfer."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "f985f9abf64450742de660996367dabc39dfa6d1c386342c3f2610d07ed89366"
     }
   ]
 }
