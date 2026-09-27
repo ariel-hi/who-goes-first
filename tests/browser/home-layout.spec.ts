@@ -14,8 +14,10 @@ test('social icons keep accessible labels and share clean public links', async (
     const destination = new URL((await link.getAttribute('href'))!);
     expect(destination.href).not.toContain('private');
     const box = await link.boundingBox();
-    expect(box!.width).toBe(44);
-    expect(box!.height).toBe(44);
+    expect(box!.width).toBeCloseTo(44, 3);
+    expect(box!.height).toBeCloseTo(44, 3);
+    expect(await link.evaluate(element => getComputedStyle(element).width)).toBe('44px');
+    expect(await link.evaluate(element => getComputedStyle(element).height)).toBe('44px');
   }
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (value: string) => { Object.assign(window, { copiedInstagramLink: value }); } } }));
   const instagramRequests: string[] = [];
