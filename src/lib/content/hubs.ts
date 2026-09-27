@@ -37,21 +37,30 @@ export function publisherHubs(catalog: PublicRule[]) {
   return [...groups].map(([slug, group]) => ({ slug, ...group })).filter(hub => hub.rules.length >= minimumPublisherSize).sort((a, b) => a.name.localeCompare(b.name));
 }
 
+const stopWords = new Set('a an and are as at be by each first for from game goes has have if in is it its of on or player players plays rule rules starts start takes that the their then this to turn who whoever with'.split(' '));
+const words = (text: string) => new Set(text.toLocaleLowerCase('en').match(/[a-z]+/g)?.filter(word => word.length > 2 && !stopWords.has(word)) ?? []);
+// A stable per-pair number, so ties spread across the hub instead of favouring early names.
+const pairOrder = (a: string, b: string) => { let h = 2166136261; for (const c of a + '|' + b) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; };
+
 /**
- * Up to `count` neighbours in the rule's first qualifying theme. Taking the next
- * entries in name order (wrapping) spreads internal links evenly across a hub
- * instead of pointing every page at the same alphabetically-first games.
+ * Up to `count` rules from the same theme whose wording is closest to this one
+ * (shared meaningful words), so "oldest player starts" sits beside other plain
+ * oldest-player rules rather than the next names in the alphabet.
  */
 export function similarRules(rule: PublicRule, catalog: PublicRule[], exclude: ReadonlySet<string>, count = 5, hubs = themeHubs(catalog)) {
   const hub = hubs.find(candidate => candidate.pattern.test(rule.firstPlayerRule));
   if (!hub) return { hub: undefined, rules: [] };
-  const members = hub.rules.toSorted((a, b) => a.gameName.localeCompare(b.gameName) || a.id.localeCompare(b.id));
-  const start = members.findIndex(member => member.id === rule.id);
-  const rules: PublicRule[] = [];
-  for (let step = 1; step < members.length && rules.length < count; step++) {
-    const candidate = members[(start + step) % members.length]!;
-    if (candidate.id !== rule.id && !exclude.has(candidate.id)) rules.push(candidate);
-  }
+  const own = words(rule.firstPlayerRule);
+  const score = (other: PublicRule) => {
+    const theirs = words(other.firstPlayerRule);
+    let shared = 0; for (const word of theirs) if (own.has(word)) shared++;
+    return shared / (own.size + theirs.size - shared || 1);
+  };
+  const rules = hub.rules
+    .filter(candidate => candidate.id !== rule.id && candidate.gameName !== rule.gameName && !exclude.has(candidate.id))
+    .map(candidate => ({ candidate, similarity: score(candidate), order: pairOrder(rule.id, candidate.id) }))
+    .sort((a, b) => b.similarity - a.similarity || a.order - b.order)
+    .slice(0, count).map(item => item.candidate);
   return { hub, rules };
 }
 

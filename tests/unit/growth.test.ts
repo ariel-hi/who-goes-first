@@ -32,9 +32,17 @@ test('theme hubs match the approved instruction itself and skip thin groups', ()
   expect(themeHubs([...catalog, ...['1', '2', '3', '4'].map(id => rule(`g${id}`, 'The group chooses a first player.'))]).find(hub => hub.slug === 'group-choice')?.rules.map(item => item.id)).not.toContain('sweet');
 });
 
-test('similar rules rotate through a hub, excluding the page and its related editions', () => {
-  const catalog = ['a', 'b', 'c', 'd', 'e', 'f', 'g'].map(id => rule(id, 'The player who most recently ate cheese starts.'));
-  expect(similarRules(catalog[5]!, catalog, new Set(['a']), 3).rules.map(item => item.id)).toEqual(['g', 'b', 'c']);
+test('similar rules prefer the closest wording, excluding the page and its related editions', () => {
+  const catalog = [
+    rule('a', 'The player who most recently ate cheese starts.'), rule('b', 'The player who most recently ate cheese starts.'),
+    rule('c', 'The player who most recently visited a museum starts.'), rule('d', 'The player who most recently ate cheese pizza starts.'),
+    rule('e', 'The player who most recently swam starts.'), rule('f', 'Whoever most recently ate cheese goes first.'),
+  ];
+  const picks = similarRules(catalog[0]!, catalog, new Set(['b']), 3).rules.map(item => item.id);
+  expect(picks.slice(0, 2).toSorted()).toEqual(['d', 'f']);
+  expect(picks).not.toContain('a');
+  expect(picks).not.toContain('b');
+  expect(similarRules(catalog[0]!, catalog, new Set(['b']), 3).rules.map(item => item.id)).toEqual(picks);
   expect(similarRules(rule('solo', 'Take turns.'), catalog, new Set()).rules).toEqual([]);
 });
 
