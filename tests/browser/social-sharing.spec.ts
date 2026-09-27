@@ -14,11 +14,19 @@ for (const width of [320, 1280]) {
     test(`sharing is consistent and points to the current page at ${width}px on ${path}`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(path + '?names=PrivatePlayer&utm_source=test#private-winner');
+      const consent = page.getByRole('button', { name: 'No thanks', exact: true });
+      if (await consent.isVisible()) await consent.click();
       const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
       await expect(toolbar).toHaveCount(1);
       await expect(toolbar.locator('[data-share-button]')).toBeVisible();
+      expect((await toolbar.boundingBox())!.height).toBeLessThanOrEqual(44);
       const production = await page.locator('meta[name="google-site-verification"]').count() > 0;
       if (production) {
+        await expect(toolbar.locator('.share-options')).not.toHaveAttribute('open', '');
+        await expect(toolbar.locator('[data-instagram-open]')).toBeHidden();
+        await toolbar.locator('summary').focus();
+        await page.keyboard.press('Enter');
+        await expect(toolbar.locator('.share-options')).toHaveAttribute('open', '');
         const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
         await expect(toolbar.getByRole('link', { name: 'Open Instagram and copy link (opens in a new tab)' })).toBeVisible();
         for (const label of labels) {
@@ -35,9 +43,18 @@ for (const width of [320, 1280]) {
             await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
           }
           const box = await link.boundingBox();
-          expect(Math.round(box!.width)).toBeGreaterThanOrEqual(44);
-          expect(Math.round(box!.height)).toBeGreaterThanOrEqual(44);
+          const target = width <= 640 ? 44 : 36;
+          expect(Math.round(box!.width)).toBe(target);
+          expect(Math.round(box!.height)).toBe(target);
+          await link.hover();
+          const appearance = await link.evaluate(element => ({ shadow: getComputedStyle(element).boxShadow, transform: getComputedStyle(element).transform, background: getComputedStyle(element).backgroundColor }));
+          expect(appearance.shadow).toBe('none');
+          expect(appearance.transform).toBe('none');
+          await toolbar.locator('[data-share-button]').hover();
+          expect(appearance.background).toBe(await toolbar.locator('[data-share-button]').evaluate(element => getComputedStyle(element).backgroundColor));
         }
+        await toolbar.locator('summary').click();
+        await expect(toolbar.locator('[data-instagram-open]')).toBeHidden();
       } else {
         await expect(toolbar.getByRole('link')).toHaveCount(0);
       }
@@ -58,6 +75,8 @@ test('sharing copies a clean link and offers a selectable fallback when clipboar
     Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (text: string) => { (window as unknown as { copied: string }).copied = text; } } });
   });
   await page.goto(`/games/${rule.slug}/?names=PrivatePlayer#private-winner`);
+  const consent = page.getByRole('button', { name: 'No thanks', exact: true });
+  if (await consent.isVisible()) await consent.click();
   const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
   await toolbar.locator('[data-share-button]').click();
   await expect(toolbar.locator('[data-share-status]')).toHaveText('Link copied.');
@@ -69,6 +88,7 @@ test('sharing copies a clean link and offers a selectable fallback when clipboar
   await expect(toolbar.locator('[data-share-link]')).toBeVisible();
   await expect(toolbar.locator('[data-share-link]')).toHaveValue(new URL(`/games/${rule.slug}/`, page.url()).href);
   if (await toolbar.locator('[data-instagram-open]').count()) {
+    await toolbar.locator('summary').click();
     const instagramRequests: string[] = [];
     const instagramRoute = async (route: import('@playwright/test').Route) => {
       instagramRequests.push(route.request().url());

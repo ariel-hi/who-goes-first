@@ -1,11 +1,18 @@
-/* Share and save buttons: soft pills with each brand's mark in its own color. */
-.share-pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px 8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font:inherit;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;box-shadow:0 1px 0 color-mix(in srgb,var(--line) 70%,transparent);transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
-.share-pill:hover{transform:translateY(-1px);box-shadow:0 4px 12px color-mix(in srgb,var(--ink) 12%,transparent);text-decoration:none}
-.share-pill:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+/* One compact sharing pattern for picker, rules, directories and printables. */
+.social-links{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin:12px 0;max-width:100%}
+.share-pill,.share-platforms>a{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:36px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;font-weight:600;text-decoration:none;padding:6px 10px;cursor:pointer;box-shadow:none}
+.share-pill:hover,.share-platforms>a:hover{background:var(--soft);border-color:var(--muted);color:var(--ink);text-decoration:none;box-shadow:none;transform:none}
+.share-pill:focus-visible,.share-platforms>a:focus-visible{outline:2px solid var(--green);outline-offset:2px}
 .share-pill:disabled{opacity:.6;cursor:progress}
-.share-pill .brand-icon{flex:none}
-.share-link .brand-icon{color:var(--green)}
-.share-bluesky:hover{border-color:#006aff}
-.share-pinterest:hover{border-color:#e60023}
-@media (prefers-reduced-motion:reduce){.share-pill{transition:none}.share-pill:hover{transform:none}}
-.share-pill.share-icon{width:44px;height:44px;padding:0;justify-content:center;gap:0}
+.share-link .brand-icon{color:var(--green);flex:none}
+.share-options{min-width:0;max-width:100%}
+.share-options[open]{flex-basis:100%}
+.share-more{width:max-content;list-style:none;user-select:none}
+.share-more::-webkit-details-marker{display:none}
+.share-more span{font-size:16px;line-height:1}
+.share-options[open] .share-more span{transform:rotate(180deg)}
+.share-platforms{display:grid;grid-template-columns:repeat(auto-fill,36px);gap:6px;max-width:300px;margin-top:8px}
+.share-platforms>a{width:36px;height:36px;padding:0}
+.share-platforms .share-status,.share-platforms input{grid-column:1/-1;min-width:0;max-width:100%}
+.share-status:empty,.share-platforms input[hidden]{display:none}
+@media (max-width:640px),(pointer:coarse){.share-pill,.share-platforms>a{min-height:44px}.share-platforms{grid-template-columns:repeat(auto-fill,44px)}.share-platforms>a{width:44px;height:44px}}

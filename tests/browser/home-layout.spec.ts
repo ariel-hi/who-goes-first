@@ -5,19 +5,19 @@ test('social icons keep accessible labels and share clean public links', async (
   await page.goto('/?private=names#private-result');
   const shares = page.getByRole('group', { name: 'Share this page', exact: true });
   const instagramLink = shares.getByRole('link', { name: 'Open Instagram and copy link (opens in a new tab)', exact: true });
-  test.skip(await instagramLink.count() === 0, 'Social links only appear in production builds.');
+  test.skip(await shares.locator('[data-instagram-open]').count() === 0, 'Social links only appear in production builds.');
   const decline = page.getByRole('button', { name: 'No thanks', exact: true });
   if (await decline.isVisible()) await decline.click();
+  await shares.locator('summary').click();
   for (const name of ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook']) {
     const link = shares.getByRole('link', { name: new RegExp(name) });
     await expect(link).toBeVisible();
     const destination = new URL((await link.getAttribute('href'))!);
     expect(destination.href).not.toContain('private');
     const box = await link.boundingBox();
-    expect(box!.width).toBeCloseTo(44, 3);
-    expect(box!.height).toBeCloseTo(44, 3);
-    expect(await link.evaluate(element => getComputedStyle(element).width)).toBe('44px');
-    expect(await link.evaluate(element => getComputedStyle(element).height)).toBe('44px');
+    const target = await page.evaluate(() => matchMedia('(max-width:640px),(pointer:coarse)').matches ? 44 : 36);
+    expect(box!.width).toBeCloseTo(target, 3);
+    expect(box!.height).toBeCloseTo(target, 3);
   }
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (value: string) => { Object.assign(window, { copiedInstagramLink: value }); } } }));
   const instagramRequests: string[] = [];

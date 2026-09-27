@@ -1,10 +1,10 @@
 ---
 import BrandIcon from './BrandIcon.astro';
 interface Props { label?: string }
-const { label = 'Share this page' } = Astro.props;
+const { label = 'Share' } = Astro.props;
 ---
 <div class="page-share" data-page-share hidden>
-  <button type="button" class="share-pill share-link" data-share-button><BrandIcon name="link" />{label}</button>
+  <button type="button" class="share-pill share-link" data-share-button aria-label={label === 'Share' ? 'Share this page' : label}><BrandIcon name="link" />{label}</button>
   <span class="small muted" role="status" data-share-status></span>
   <input type="url" readonly hidden aria-label="Clean sharing link" data-share-link />
 </div>
@@ -31,7 +31,8 @@ const { label = 'Share this page' } = Astro.props;
   });
 </script>
 <style>
-  .page-share{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;max-width:100%}
+  .page-share{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;max-width:100%}
   .page-share[hidden]{display:none}
-  input{flex:1;min-width:220px;max-width:100%}
+  [role="status"]:empty{display:none}
+  input{flex-basis:100%;width:min(260px,100%);min-width:0;max-width:100%}
 </style>
