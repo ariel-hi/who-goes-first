@@ -1,4 +1,205 @@
 {
   "formatVersion": 1,
-  "records": []
+  "records": [
+    {
+      "identityId": "game-0eba6647-2448-47d5-b70e-850ff0545067",
+      "routeKey": "game-0eba6647-2448-47d5-b70e-850ff0545067",
+      "name": "Die Zausel vom Zauberwald",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105206, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical memory board game with tilting forest paths, stumbling tiles, Zausel figures, caps and a color die. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105206",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105206",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/board-games/die-zausel-vom-zauberwald-601105206-en.html",
+          "sha256": "4acb8de739508ae5264df63f8ca994a2f2938686076ee2a201631ee354060217",
+          "byteCount": 259057,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "988771cd76929414192c428bc3bc9c82c33024b86ff72b3b61c4e1e8e9290c11"
+    },
+    {
+      "identityId": "game-866dabc4-1dd7-4557-bc7b-f87f68a59e72",
+      "routeKey": "game-866dabc4-1dd7-4557-bc7b-f87f68a59e72",
+      "name": "Das Schloss der 7 Schlösser",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105204, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical deduction board game using seven locks, different key lengths and tower depths, with acoustic and visual clues. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105204",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105204",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/children-s-games/das-schloss-der-7-schloesser-601105204-en.html",
+          "sha256": "edefb1674550cbe18268318873ebd807b4be02a423951980a95959a48de85c85",
+          "byteCount": 272352,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "e2a5091e9e6c58796552a26cb3e68885e9567db53acb90061f84038d7b4d29ac"
+    },
+    {
+      "identityId": "game-bab1eb8c-f3f5-4b38-a0d6-3cf63c41e407",
+      "routeKey": "game-bab1eb8c-f3f5-4b38-a0d6-3cf63c41e407",
+      "name": "Flitze Flatze Bärentatze",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105211, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical river and salmon board game using overlapping rotating net boards, colored salmon and Babbel the bear. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105211",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105211",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/board-games/flitze-flatze-baerentatze-601105211-en.html",
+          "sha256": "63c332753bd76c3324db92ea39652af6cd8fea44c1d772d3e99be0560b259390",
+          "byteCount": 277511,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "886570a20536c0b9932ff8d68f88240ae04f6289668b8bddbd32331e40802624"
+    },
+    {
+      "identityId": "game-60b6d1ae-767a-42cb-bce2-df3a41f28efb",
+      "routeKey": "game-60b6d1ae-767a-42cb-bce2-df3a41f28efb",
+      "name": "Gigi Gacker am Würfelacker",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105222, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical chicken-and-worm dice game using fifteen dice, a wooden worm and scoring pieces. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105222",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105222",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/family-games/gigi-gacker-am-wuerfelacker-601105222-en.html",
+          "sha256": "c84d4f4f778a983a86e24aabba603b7e5d4cba08c3bf1ef50f32da2517ef5917",
+          "byteCount": 256708,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "2f204d72fed28c86a5ddedf70fea3f1193b2a129d14db7fd373ede7a8fa2ba24"
+    },
+    {
+      "identityId": "game-20ec80fb-32d8-4764-816e-285e0d0cb292",
+      "routeKey": "game-20ec80fb-32d8-4764-816e-285e0d0cb292",
+      "name": "Käpt'n Memo",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105221, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical pirate memory game with a ship, sailors, sea tiles, barrels, coins and treasure chests; marketing describes captain/sailor roles. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105221",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105221",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/children-s-games/kaeptn-memo-601105221-en.html",
+          "sha256": "55757a2f5aad998e1c6eb100e0fae1ed634ca30271a40fcbfbff33411d8c1d1d",
+          "byteCount": 269500,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "fc23d09d1a89e1179a54e052191a6c9a2ddf592974f7e23478aec90936fe12c5"
+    },
+    {
+      "identityId": "game-c60afcd1-5e6b-44ed-a41a-dbd91376d400",
+      "routeKey": "game-c60afcd1-5e6b-44ed-a41a-dbd91376d400",
+      "name": "Kleiner Drache Wirbelwind",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105202, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical cooperative cloud-bridge dexterity game using a pendulum dragon, wooden bridge, sun wizards, rain goblins and weather cards. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105202",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105202",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/children-s-games/kleiner-drache-wirbelwind-601105202-en.html",
+          "sha256": "4c5cffcb749992632581069dc4d7c60cd3170e7fa9387daee4dec8ce5d4a0adc",
+          "byteCount": 255478,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "6cc438a19a7f2725d6b61735065eefc809e0af22f7c2f37771b45638a19e6bcf"
+    },
+    {
+      "identityId": "game-5a318f64-4fde-423e-9a63-e3887b7de5de",
+      "routeKey": "game-5a318f64-4fde-423e-9a63-e3887b7de5de",
+      "name": "Mach die Flatter",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105203, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical parrot memory card game with landing trays and feathers, including a bird-of-paradise mechanism. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105203",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105203",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/family-games/mach-die-flatter-601105203-en.html",
+          "sha256": "cd48b5426e853fa92a7247ca5286e14359de64a8d69c3d416e221983c5e38b73",
+          "byteCount": 265734,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "51527bcd3372e2b9a2da70ed0b4011f0d7bc6a45b69987298315936a001247cd"
+    },
+    {
+      "identityId": "game-442193d6-20c4-41d7-a261-37b34b8c19dc",
+      "routeKey": "game-442193d6-20c4-41d7-a261-37b34b8c19dc",
+      "name": "Über den Wolken",
+      "searchNames": [],
+      "publisher": "Zoch Verlag",
+      "identityScope": "Physical base-game product, Zoch article 601105207, as named by this complete English shop response. No translated-name, reprint or different article correspondence.",
+      "identityEvidence": "A physical bird-migration formation board game with maneuver/nest cards, bird tiles, action cubes and a main board plus two included expansion boards. Publisher H1, article number and Zoch-branded Product metadata concur. All rule/version/printing and numeric-ID limits remain pending.",
+      "publisherReferenceSourceId": "zoch-primary-article-601105207",
+      "sources": [
+        {
+          "id": "zoch-primary-article-601105207",
+          "kind": "primary-publisher",
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/family-games/ueber-den-wolken-601105207-en.html",
+          "sha256": "7bdbc34ed0b79a03c22678abddf746c33dcab97559e6a62fb594d30954f57401",
+          "byteCount": 277344,
+          "location": "Focal H1; Article number; Product information and components; Product JSON-LD brand/name/sku; publisher Manufacturer Shop context. See raw proofs."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "b37b107c9fdf83cd4cf38555fac11cf3a6b9b9fe2be2cabce3a7183db253a3a2"
+    }
+  ]
 }

@@ -1,0 +1,51 @@
+{
+  "id": "die-zausel-vom-zauberwald-zoch-601105206-en",
+  "slug": "die-zausel-vom-zauberwald-zoch-601105206-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Die Zausel vom Zauberwald",
+  "aliases": [],
+  "editionLabel": "Zoch English rules",
+  "firstPlayerRule": "The player who most recently stumbled starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "The starter rolls the die and places a one-ring hat in the clearing of the rolled color. A star lets them choose any clearing.",
+    "During setup, each player puts a hatless Zausel in the hut. After the first hat is placed, turns proceed clockwise: move your Zausel first, then you may relocate a forest ghost.",
+    "The interruptions when the first two-ring and three-ring hats are placed rotate unoccupied trip traps; play then continues as usual. They do not select a new starting player.",
+    "The most-rings, then most-hats tie-break belongs to final scoring. It does not resolve a tie in the opening criterion.",
+    "These Zoch English rules cover two to four players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Kids/601105206%20Die%20Zausel%20vom%20Zauberwald/007%20Artwork-Manual/601105206-DieZauselVomZauberwald-Rules-Zoch-EN.pdf",
+      "title": "Die Zausel vom Zauberwald — Zoch English rules, article 601105206",
+      "publisher": "Zoch Verlag / Simba Toys GmbH & Co. KG",
+      "printedPages": [
+        "8",
+        "6–7",
+        "9–10"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "location": "PDF page 3 (printed 8), opening hat placement, Game Play and setup; pages 1–2 (printed 6–7), player range and physical setup; page 4 (printed 9), Rotating the trip traps; page 5 (printed 10), Relocate a forest ghost, final scoring and article/publisher imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root exact-rule and correspondence approval 2026-09-26. Root and /root/held_identity_review independently read all 5 complete uncropped original180dpi English manual pages and full extracted text, cover/player range, setup, initial criterion/ties, subsequent turn/stage/variant and final scoring. Original sourceSHA256 887247eb007d49cc804203bbfc314a9ae031759f091a00237466a69484208d08; exact official product anchor and percent-encoded transport remain bound to source53 and product108 packets. Visible printed pagination controls locators. Native title and article imprint match the separately accepted publisher product with persisted opaque identity game-0eba6647-2448-47d5-b70e-850ff0545067; no external number, translated alias or rule transfer is asserted. Source footer copyright is retained as a literal line, not printing/version proof. Zausel interrupts/resumes for trap rotations; Schloss left-neighbor order and special fifth-tower guess remain separate from keymaster clockwise movement; Über repeats front-row/front-two-row/random criterion at each stage. Exact public wording was fully read after human-label polishing. Identity approval predates this rule/association approval. Shared content and registry remain unchanged pending fresh guarded application and release.",
+  "uncertainty": [
+    "No official opening tie-break is supplied; the random fallback is a proposed house rule.",
+    "The publisher footer reads 2026 Zoch Verlag, but no printing or version is identified. PDF metadata and HTTP Last-Modified dates are not printing evidence."
+  ]
+}

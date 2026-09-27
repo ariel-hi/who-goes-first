@@ -1,0 +1,53 @@
+{
+  "id": "flitze-flatze-baerentatze-zoch-601105211-en",
+  "slug": "flitze-flatze-baerentatze-zoch-601105211-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root",
+  "approvedRevision": "65ca77e2e60512b41b2f7ab72fc53004c71da35592ac0c48bf093a4ec853fcfc",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Flitze Flatze Bärentatze",
+  "aliases": [],
+  "editionLabel": "Zoch English rules",
+  "firstPlayerRule": "The player who most recently saw a fish in the water starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "During setup, shuffle the 36 net boards into two face-up stacks of 18 and put the top board from each stack in the center. Each player secretly draws a fish-color tile; return unused tiles to the box without looking at them.",
+    "On your turn, place a net board, move the salmon indicated by the visible fish, then move Babbling Bear if the required fish appear. Players take turns afterward; the English instructions do not specify a direction for player turns.",
+    "The clockwise arrow governs Babbling Bear’s movement. It does not specify the direction of player turns.",
+    "The cover lists two to four players. A setup note also permits five players; with five, every fish color belongs to a player.",
+    "The final-score tie-breaks compare fish left in rivers, then the fish closest to a spawning ground; several winners are possible. These do not resolve the opening criterion.",
+    "These Zoch English rules list two to four players, with an additional five-player option described during setup."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Kids/601105211%20Flitze%20Flatze%20B%C3%A4rentatze/007%20Artwork-Manual/601105211-FlitzeFlatzeB%C3%A4rentatze-Rules-Zoch.pdf",
+      "title": "Flitze Flatze Bärentatze — English rules, article 601105211",
+      "publisher": "Zoch Verlag / Simba Toys GmbH & Co. KG",
+      "printedPages": [
+        "9",
+        "7–8",
+        "10–12"
+      ],
+      "pdfPagesOneBased": [
+        9,
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "location": "PDF page 9 (printed 9), Course of the Game and Place a net board; pages 7–8 (printed 7–8), cover range and Set-up of the Game including the five-player note; pages 10–11 (printed 10–11), salmon movement; page 12 (printed 12), Babbling Bear movement, End of the Game, Winning the Game and publisher/article imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root exact English-rule and correspondence approval 2026-09-26. Original draft revision 17ab28db8ebd13b6916310c6eb36d192544a516f804fb584e758f2563024a4be, exact source packet research/source-files/sep26-zoch-flitze-gigi-manual-intake, original PDF SHA256 ac6e8b1ddee754e4fe707ec4a3c5d64bccffea7bda104e6865fcd230ab1f16a2, 4013276 bytes, 24 total multilingual pages. Root independently read full English text and all uncropped original180dpi English page images 7,8,9,10,11,12; root did NOT read other language images. Independent source reviewer read all original multilingual pages. Most recently saw a fish in water starts; player-turn direction unspecified, clockwise applies to bear only. Five-player setup note and final-score ties stay separate. Native title, article imprint, physical components and official product anchor agree with separately accepted once-allocated publisher identity game-bab1eb8c-f3f5-4b38-a0d6-3cf63c41e407; no external number, translated alias, printing or other-edition transfer. Footer copyright remains a literal source line, not printing/version proof. No official opening tie-break; random fallback explicitly house-labeled. Public labels stay human-readable; exact article remains in citation. Only public assignment is approved: published research counterpart stays historical, no active research association is added. Portable pool inclusion is not approved in this catalog-only batch. Existing identity/source packets and original Gigi size hold remain immutable. Live enrollment/application/release remains pending.",
+  "uncertainty": [
+    "No official opening tie-break is supplied; the random fallback is a proposed house rule.",
+    "The footer reads 2026 Zoch Verlag. No printing or rule version is identified; PDF metadata and HTTP Last-Modified dates are not printing evidence."
+  ]
+}

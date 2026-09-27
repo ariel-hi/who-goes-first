@@ -1,0 +1,57 @@
+{
+  "id": "ueber-den-wolken-zoch-601105207-en",
+  "slug": "ueber-den-wolken-zoch-601105207-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Über den Wolken",
+  "aliases": [],
+  "editionLabel": "Zoch English rules",
+  "firstPlayerRule": "The player with the most of their birds in the front row of the flock starts.",
+  "officialTieBreak": "If tied, the player with the most of their birds in the front two rows starts. If still tied, determine the starting player randomly.",
+  "houseFallback": null,
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "Choose the starter after the shuffled initial birds have been placed in the triangular formation. The front row is the row at the arrows; count each player’s own birds.",
+    "Players take turns clockwise. On a turn with action dice available, perform a standard action, play a maneuver card or pass. These are sequential turns, not a simultaneous opening.",
+    "After a stage ends, score the landing, recover action dice and prepare the next stage. Choose its starter from the new formation using the same front-row, front-two-rows and random tie-break procedure.",
+    "The fewer-birds-on-the-board tie-break belongs to the final score after stage three. It does not replace the starting-player tie-break.",
+    "These Zoch English rules cover two to four players. Use one included board extension for three players and both for four; use neither for two."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Family/601105207%20%C3%9Cber%20den%20Wolken/007%20Artwork-Manual/601105207-UeberDenWolken-Regel-low-EN.pdf",
+      "title": "Über den Wolken — Zoch English rules, article 601105207",
+      "publisher": "Zoch Verlag / Simba Toys GmbH & Co. KG",
+      "printedPages": [
+        "9",
+        "11",
+        "14",
+        "8",
+        "10",
+        "12–13"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        4,
+        7,
+        1,
+        3,
+        5,
+        6
+      ],
+      "location": "PDF page 2 (printed 9), Setup and complete initial starting-player tie-break; page 4 (printed 11), clockwise action turns; page 7 (printed 14), Preparing the Next Stage, repeated starting-player tie-break, final scoring and imprint; pages 1, 3, 5–6 (printed 8, 10, 12–13), components, concepts, actions and landing context.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root exact-rule and correspondence approval 2026-09-26. Root and /root/held_identity_review independently read all 7 complete uncropped original180dpi English manual pages and full extracted text, cover/player range, setup, initial criterion/ties, subsequent turn/stage/variant and final scoring. Original sourceSHA256 6f42540fc0dd9059529274da649cb569b5da212b28ffab6065d58279a1cd18e7; exact official product anchor and percent-encoded transport remain bound to source53 and product108 packets. Visible printed pagination controls locators. Native title and article imprint match the separately accepted publisher product with persisted opaque identity game-442193d6-20c4-41d7-a261-37b34b8c19dc; no external number, translated alias or rule transfer is asserted. Source footer copyright is retained as a literal line, not printing/version proof. Zausel interrupts/resumes for trap rotations; Schloss left-neighbor order and special fifth-tower guess remain separate from keymaster clockwise movement; Über repeats front-row/front-two-row/random criterion at each stage. Exact public wording was fully read after human-label polishing. Identity approval predates this rule/association approval. Shared content and registry remain unchanged pending fresh guarded application and release.",
+  "uncertainty": [
+    "The random choice after two tied bird-count comparisons is official, but the manual does not prescribe a particular random-selection device.",
+    "The publisher footer reads 2025 Zoch Verlag, but no printing or version is identified. PDF metadata and HTTP Last-Modified dates are not printing evidence.",
+    "The English prose calls the game Above the Clouds while the cover retains Über den Wolken. This draft keeps the native cover title and enrolls no translated alias, BGG number or other edition correspondence."
+  ]
+}

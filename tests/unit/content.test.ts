@@ -243,7 +243,7 @@ test('native and language-neutral identities enroll only after primary identity 
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(51);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(52);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -363,11 +363,11 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 51, hold: 237, reviewed: 63, unreviewed: 225, additionalAccepted: 41 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(51);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(237);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(63);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(225);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 52, hold: 236, reviewed: 64, unreviewed: 224, additionalAccepted: 42 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(52);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(236);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(64);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(224);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
   for (const id of ['452264', '418683']) {
     const decision = review.decisions.find((item: { bggId: string }) => item.bggId === id);
@@ -386,6 +386,30 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
       }
     }
   }
+  const milleFiori = review.decisions.find((item: { bggId: string }) => item.bggId === '346501');
+  expect(milleFiori).toMatchObject({ decision: 'accept', reviewed: true, displayName: 'Mille Fiori', selectedTitle: { wikidataId: 'Q123760478', text: 'Mille Fiori', language: 'de', source: 'label' }, idEvidenceStatus: 'wikidata-statement-only', primaryHostedNumericBggHrefObserved: false, startingRuleApproved: false, editionRuleTransferApproved: false });
+  expect(milleFiori.sourceIds).toEqual(['schmidt-mille-fiori-base-press-sep26-native']);
+  expect(review.sources['schmidt-mille-fiori-base-press-sep26-native']).toMatchObject({
+    url: 'https://www.schmidtspiele.de/details-93/herbstneuheit-gemeinsam-geht-es-in-diesem-herbst-auf-rettungsmission-der-schleich-dinosaurs-kopie.html',
+    kind: 'primary-publisher', status: 'retrieved', sha256: '8899bf4b23a3bbff1ae8d50f94c55407cf1120d1fffd6328d0a2bf2134e93144', byteCount: 28388,
+  });
+  expect(milleFiori.primaryIdentityReviewEvidence).toMatchObject({
+    path: 'research/source-files/sep26-six-held-fresh-primary-root-intake/mille-fiori-base-press.html',
+    bytes: 28388, sha256: '8899bf4b23a3bbff1ae8d50f94c55407cf1120d1fffd6328d0a2bf2134e93144',
+    creatorClaimProperty: 'P50', creatorQidLabelBridgeApproved: false, printingApproved: false, aliasMergeApproved: false,
+    startingRuleApproved: false, editionRuleTransferApproved: false,
+  });
+  expect(milleFiori.idProvenance).toEqual([{
+    wikidataId: 'Q123760478', revision: 2028615496, entitySha256: '926ded765f0a2bb78c59b6912fe9072298f41d53cd09b4bb78fcf7412628501f',
+    statements: ['Q123760478$ec59683e-4651-c56e-b767-1350d8c0c6c8'],
+  }]);
+  expect(milleFiori.identityReviewHistory).toHaveLength(1);
+  expect(milleFiori.identityReviewHistory[0].fullPreviousDecision).toEqual({
+    bggId: '346501', wikidataItems: ['Q123760478'], displayName: 'Mille Fiori', selectedTitle: milleFiori.selectedTitle,
+    decision: 'hold', reviewed: false, reason: 'No direct primary identity review completed in this bounded pass.',
+    identityEvidence: [], sourceIds: [], attemptedPrimaryUrls: [], priorBoundedDisposition: null, snapshotReviewFlags: [],
+    idProvenance: milleFiori.idProvenance, startingRuleApproved: false, editionRuleTransferApproved: false,
+  });
   const brass = review.decisions.find((item: { bggId: string }) => item.bggId === '452264');
   expect(brass.idEvidenceStatus).toBe('wikidata-statement-only');
   const enRoute = review.decisions.find((item: { bggId: string }) => item.bggId === '418683');

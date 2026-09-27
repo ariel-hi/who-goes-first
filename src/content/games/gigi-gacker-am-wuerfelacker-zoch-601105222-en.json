@@ -1,0 +1,52 @@
+{
+  "id": "gigi-gacker-am-wuerfelacker-zoch-601105222-en",
+  "slug": "gigi-gacker-am-wuerfelacker-zoch-601105222-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root",
+  "approvedRevision": "e6b12fefacb82e72561552371c56cf166e00a55ffe4bf25d9891a2fa7d232490",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Gigi Gacker am Würfelacker",
+  "aliases": [],
+  "editionLabel": "Zoch English rules",
+  "firstPlayerRule": "The player with the biggest appetite takes the starting-player worm and goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "During setup, each player gets three dice in one color. With fewer than five players, return one zero-value worm morsel to the box before shuffling the others face down.",
+    "Begin each round by revealing a buffet of one worm morsel per player, except in the two-player game. On your first turn, roll your three dice and set one aside, then your left neighbor takes a turn.",
+    "After everyone has completed three turns and the buffet has been distributed, pass the starting-player worm clockwise for the next round. Do not choose the biggest appetite again between rounds.",
+    "With two players, add three dice for the Robo chicken and reveal three worm morsels each round. The human starting player rolls one die for it after both humans’ first roll, and likewise after the second and third roll. The Robo chicken never gets the starting-player worm, never uses worm-morsel actions, and loses tied dice totals; remove the morsel it wins from the game.",
+    "Tied dice totals are resolved clockwise from the current starting player when distributing the buffet. Final-score ties compare the number of worm morsels, then share victory if still tied. Neither rule breaks a tie in the opening appetite criterion.",
+    "These Zoch English rules cover two to five players. They do not cover the shorter title Gigi Gacker."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Young%20&%20Wild/601105222%20Gigi%20Gacker%20am%20W%C3%BCrfelacker/099%20Middleware%20(Import%20only)/601105222-GGamWuerfelacker-Regel.pdf",
+      "title": "Gigi Gacker am Würfelacker — English rules, article 601105222",
+      "publisher": "Zoch Verlag / Simba Toys GmbH & Co. KG",
+      "printedPages": [
+        "7",
+        "6",
+        "8–10"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        6,
+        8,
+        9,
+        10
+      ],
+      "location": "PDF page 7 (printed 7), Set-up of the Game and Course of the Game; page 6 (printed 6), title, player range and components; page 8 (printed 8), Rolling the dice, Distributing the worm morsels and clockwise starting-player worm transfer; page 9 (printed 9), Actions; page 10 (printed 10), End of the Game, Game for Two Players and publisher/article imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root exact English-rule and correspondence approval 2026-09-26. Original draft revision 1625bc8e678bf7cf943b9da9929619c3d665a8446d5ff571a514c7ed5881c4b2, exact source packet research/source-files/sep26-zoch-gigi-size-continuation, original PDF SHA256 0ed3cb384d26979b5dd4c1082c4cc9c359597a5577db640e9e84028c4ea4913a, 11200825 bytes, 20 total multilingual pages. Root independently read full English text and all uncropped original180dpi English page images 6,7,8,9,10; root did NOT read other language images. Independent source reviewer read all original multilingual pages. Biggest appetite takes initial worm and starts; ordinary left-neighbor turns, later clockwise starter rotation, buffet dice ties, two-player Robo chicken and final-score ties remain separate. Robo chicken never starts. Native title, article imprint, physical components and official product anchor agree with separately accepted once-allocated publisher identity game-60b6d1ae-767a-42cb-bce2-df3a41f28efb; no external number, translated alias, printing or other-edition transfer. Footer copyright remains a literal source line, not printing/version proof. No official opening tie-break; random fallback explicitly house-labeled. Public labels stay human-readable; exact article remains in citation. Only public assignment is approved: published research counterpart stays historical, no active research association is added. Portable pool inclusion is not approved in this catalog-only batch. Existing identity/source packets and original Gigi size hold remain immutable. Live enrollment/application/release remains pending.",
+  "uncertainty": [
+    "No official tie-break for the biggest-appetite criterion is supplied; the random fallback is a proposed house rule.",
+    "The footer reads 2025 Zoch Verlag, but no printing or rule version is identified. PDF metadata and HTTP Last-Modified dates are not printing evidence."
+  ]
+}

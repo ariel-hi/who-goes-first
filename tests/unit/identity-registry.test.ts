@@ -125,15 +125,42 @@ test('legacy exclusions and numeric attachments remain explicit; conflicting ass
   expect(() => resolveIdentityAssignments(registry, [edition, edition], [], empty)).toThrow('Duplicate');
 });
 
-test('empty active publisher files preserve every current numeric identity and legacy attachment', () => {
+test('active publisher identities preserve every numeric identity and explicit rule attachment', () => {
   const registry = getBoardGameRegistry(), inventory = getBoardGameInventory(), publicGames = getBoardGames();
-  expect(registry.map(identity => [identity.identityId, identity.routeKey, identity.bggId, identity.name])).toEqual(inventory.games.map(game => [`bgg-${game.bggId}`, game.bggId, game.bggId, game.name]));
-  expect(registry.every(identity => identity.origin === 'legacy')).toBe(true);
+  const numeric = registry.filter(identity => identity.origin === 'legacy');
+  expect(numeric.map(identity => [identity.identityId, identity.routeKey, identity.bggId, identity.name])).toEqual(inventory.games.map(game => [`bgg-${game.bggId}`, game.bggId, game.bggId, game.name]));
+  const publisherRecords = JSON.parse(readFileSync('research/coverage/publisher-identities.json', 'utf8')).records as PublisherIdentityRecord[];
+  const acceptedRecords = publisherRecords.filter(record => record.decision === 'accept');
+  expect(registry.filter(identity => identity.origin === 'publisher').map(identity => [identity.identityId, identity.routeKey, identity.bggId, identity.name, identity.identityRevision, identity.reference])).toEqual(acceptedRecords.map(record => [record.identityId, record.routeKey, record.bggId, record.name, record.acceptedRevision, { url: record.sources.find(source => source.id === record.publisherReferenceSourceId)!.url, label: 'Publisher reference' }]));
+  expect(registry).toHaveLength(inventory.games.length + acceptedRecords.length);
   const rules = readRecords('src/content/games').map(record => ruleSchema.parse(record));
   const assignments = JSON.parse(readFileSync('research/coverage/identity-assignments.json', 'utf8'));
   const overrides = JSON.parse(readFileSync('research/coverage/identity-overrides.json', 'utf8'));
   const resolved = resolveIdentityAssignments(registry, rules, overrides, assignments);
-  const actual = new Map(rules.map(rule => [rule.id, publicGames.filter(game => game.rules.some(attached => attached.id === rule.id)).map(game => `bgg-${game.bggId}`)]));
+  const actual = new Map(rules.map(rule => [rule.id, publicGames.filter(game => game.rules.some(attached => attached.id === rule.id)).map(game => game.identityId)]));
   expect(resolved).toEqual(actual);
   expect(registry.map(identity => identity.searchNames)).toEqual(publicGames.map(game => game.searchNames));
+}, 120_000);
+
+test('reviewed Zoch editions attach only to their allocated publisher identities', () => {
+  const games = getBoardGames();
+  for (const [identityId, name, ruleId] of [
+    ['game-0eba6647-2448-47d5-b70e-850ff0545067', 'Die Zausel vom Zauberwald', 'die-zausel-vom-zauberwald-zoch-601105206-en'],
+    ['game-866dabc4-1dd7-4557-bc7b-f87f68a59e72', 'Das Schloss der 7 Schlösser', 'das-schloss-der-7-schloesser-zoch-601105204-en'],
+    ['game-442193d6-20c4-41d7-a261-37b34b8c19dc', 'Über den Wolken', 'ueber-den-wolken-zoch-601105207-en'],
+    ['game-bab1eb8c-f3f5-4b38-a0d6-3cf63c41e407', 'Flitze Flatze Bärentatze', 'flitze-flatze-baerentatze-zoch-601105211-en'],
+    ['game-60b6d1ae-767a-42cb-bce2-df3a41f28efb', 'Gigi Gacker am Würfelacker', 'gigi-gacker-am-wuerfelacker-zoch-601105222-en'],
+  ] as const) {
+    const attached = games.filter(game => game.rules.some(rule => rule.id === ruleId));
+    expect(attached.map(game => game.identityId)).toEqual([identityId]);
+    expect(attached[0]).toMatchObject({ name, routeKey: identityId, searchNames: [], reference: { label: 'Publisher reference' } });
+    expect(attached[0]).not.toHaveProperty('bggId');
+  }
+  for (const identityId of [
+    'game-20ec80fb-32d8-4764-816e-285e0d0cb292',
+    'game-c60afcd1-5e6b-44ed-a41a-dbd91376d400',
+    'game-5a318f64-4fde-423e-9a63-e3887b7de5de',
+  ]) {
+    expect(games.find(game => game.identityId === identityId)).toMatchObject({ rules: [], searchNames: [], reference: { label: 'Publisher reference' } });
+  }
 }, 120_000);

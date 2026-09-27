@@ -12,6 +12,12 @@ for (const name of ['src', 'public', 'research', 'scripts']) cpSync(join(root, n
 for (const kind of ['games', 'prompts']) for (const name of readdirSync(join(fixtureRoot, 'src/content', kind))) {
   if (name.endsWith('.json')) unlinkSync(join(fixtureRoot, 'src/content', kind, name));
 }
+// The catalog above is deliberately empty, so its real publisher assignments
+// cannot accompany it. Reset only the copied assignment scopes; keep real
+// publisher identities and all live review/approval inputs unchanged.
+for (const name of ['identity-assignments', 'draft-identity-assignments']) {
+  writeFileSync(join(fixtureRoot, 'research/coverage', `${name}.json`), JSON.stringify({ formatVersion: 1, records: [] }, null, 2) + '\n');
+}
 for (const name of ['astro.config.ts', 'tsconfig.json', 'package.json']) cpSync(join(root, name), join(fixtureRoot, name));
 if (!existsSync(join(fixtureRoot, 'node_modules'))) symlinkSync(join(root, 'node_modules'), join(fixtureRoot, 'node_modules'), 'junction');
 const node = process.execPath;

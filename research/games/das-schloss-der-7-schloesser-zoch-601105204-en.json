@@ -1,0 +1,54 @@
+{
+  "id": "das-schloss-der-7-schloesser-zoch-601105204-en",
+  "slug": "das-schloss-der-7-schloesser-zoch-601105204-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Das Schloss der 7 Schlösser",
+  "aliases": [],
+  "editionLabel": "Zoch English rules",
+  "firstPlayerRule": "The player who most recently opened a lock starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "The starting player places the keymaster in front of a tower of their choice, then distributes fourteen pearls: one into each of the seven towers, followed by a second into each. Everyone listens before play begins.",
+    "On a turn, roll the die, add pearls, move the keymaster and try a key. The keymaster moves clockwise; the player-order instruction passes the die to your left neighbor.",
+    "After the fifth tower opens, players may make the one-time enchanted-key guess in order, beginning with the player who opened that tower. Ordinary play then resumes in unchanged order with that player’s left neighbor.",
+    "The strategist variant changes coat-of-arms withdrawals during tower opening, not the initial starting-player criterion. The rematch for tied winners belongs to final scoring.",
+    "These Zoch English rules cover two to four players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Family/601105204%20Das%20Schloss%20der%207%20Schl%C3%B6sser/007%20Artwork-Manual/601105204-Sd7S-Rules-Zoch-EN.pdf",
+      "title": "Das Schloss der 7 Schlösser — Zoch English rules, article 601105204",
+      "publisher": "Zoch Verlag / Simba Toys GmbH & Co. KG",
+      "printedPages": [
+        "12",
+        "9–11",
+        "13–16"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "location": "PDF page 4 (printed 12), final setup bullets and opening criterion; pages 1–3 (printed 9–11), player range and physical setup; page 5 (printed 13), Course of the Game and strategist variant; pages 6–7 (printed 14–15), pearl sharing, left-neighbor order and enchanted-key guess; page 8 (printed 16), final scoring and article/publisher imprint.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Root exact-rule and correspondence approval 2026-09-26. Root and /root/held_identity_review independently read all 8 complete uncropped original180dpi English manual pages and full extracted text, cover/player range, setup, initial criterion/ties, subsequent turn/stage/variant and final scoring. Original sourceSHA256 db127096d34b7de13c1b70c7115f1495367651548c7b3f19860eaed2054d1d3d; exact official product anchor and percent-encoded transport remain bound to source53 and product108 packets. Visible printed pagination controls locators. Native title and article imprint match the separately accepted publisher product with persisted opaque identity game-866dabc4-1dd7-4557-bc7b-f87f68a59e72; no external number, translated alias or rule transfer is asserted. Source footer copyright is retained as a literal line, not printing/version proof. Zausel interrupts/resumes for trap rotations; Schloss left-neighbor order and special fifth-tower guess remain separate from keymaster clockwise movement; Über repeats front-row/front-two-row/random criterion at each stage. Exact public wording was fully read after human-label polishing. Identity approval predates this rule/association approval. Shared content and registry remain unchanged pending fresh guarded application and release.",
+  "uncertainty": [
+    "No official opening tie-break is supplied; the random fallback is a proposed house rule.",
+    "The publisher footer reads 2025 Zoch Verlag, but no printing or version is identified. PDF metadata and HTTP Last-Modified dates are not printing evidence."
+  ]
+}
