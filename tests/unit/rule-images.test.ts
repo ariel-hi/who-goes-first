@@ -2,6 +2,7 @@ import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
 import { expect, test } from 'vitest';
+import sharp from 'sharp';
 import { readRecords } from '../../src/lib/content/catalog';
 import { assertPublishable, contentRevision, publicRule, ruleImageSchema, ruleSchema } from '../../src/lib/content/schema';
 import { validateRuleImageAsset } from '../../src/lib/content/image-assets';
@@ -41,18 +42,36 @@ test('image metadata and licence edits are bound to editorial approval', () => {
   expect(contentRevision({ ...illustrated, image: { ...image, licence: { ...image.licence, attribution: 'Changed credit' } } })).not.toBe(contentRevision(illustrated));
 });
 
-test('publication rejects missing and oversized licensed files', () => {
+test('publication decodes real rasters and rejects missing, malformed, mismatched and oversized files', async () => {
   const directory = mkdtempSync(join(tmpdir(), 'wgf-image-test-'));
   if (dirname(directory) !== resolve(tmpdir()) || !basename(directory).startsWith('wgf-image-test-')) throw new Error('Unexpected test directory');
   try {
     mkdirSync(join(directory, 'images/games'), { recursive: true });
-    expect(() => validateRuleImageAsset(undefined, directory)).not.toThrow();
-    expect(() => validateRuleImageAsset(image, directory)).toThrow('Missing licensed image');
+    await expect(validateRuleImageAsset(undefined, directory)).resolves.toBeUndefined();
+    await expect(validateRuleImageAsset(image, directory)).rejects.toThrow('Missing licensed image');
     const path = join(directory, 'images/games/test-box.png');
     writeFileSync(path, Buffer.alloc(64 * 1024));
-    expect(() => validateRuleImageAsset(image, directory)).not.toThrow();
+    await expect(validateRuleImageAsset(image, directory)).rejects.toThrow();
     writeFileSync(path, Buffer.alloc(64 * 1024 + 1));
-    expect(() => validateRuleImageAsset(image, directory)).toThrow('exceeds 64 KiB');
+    await expect(validateRuleImageAsset(image, directory)).rejects.toThrow('exceeds 64 KiB');
+    const synthetic = () => sharp({ create: { width: 3, height: 4, channels: 3, background: '#336655' } });
+    for (const extension of ['png', 'jpg', 'jpeg', 'webp', 'avif'] as const) {
+      const file = `/images/games/test-box.${extension}`;
+      const bytes = await synthetic().toFormat(extension === 'jpg' ? 'jpeg' : extension).toBuffer();
+      writeFileSync(join(directory, `.${file}`), bytes);
+      const record = { ...image, file, width: 3, height: 4 };
+      await expect(validateRuleImageAsset(record, directory)).resolves.toBeUndefined();
+      await expect(validateRuleImageAsset({ ...record, width: 4 }, directory)).rejects.toThrow('dimensions');
+    }
+    writeFileSync(path, await synthetic().webp().toBuffer());
+    await expect(validateRuleImageAsset({ ...image, width: 3, height: 4 }, directory)).rejects.toThrow('format');
+    writeFileSync(path, await synthetic().gif().toBuffer());
+    await expect(validateRuleImageAsset({ ...image, width: 3, height: 4 }, directory)).rejects.toThrow('format');
+    const damaged = (await synthetic().jpeg().toBuffer()).subarray(0, -10);
+    // A readable header must not let damaged compressed pixels through.
+    await expect(sharp(damaged).metadata()).resolves.toMatchObject({ width: 3, height: 4 });
+    writeFileSync(join(directory, 'images/games/test-box.jpg'), damaged);
+    await expect(validateRuleImageAsset({ ...image, file: '/images/games/test-box.jpg', width: 3, height: 4 }, directory)).rejects.toThrow();
   } finally {
     rmSync(directory, { recursive: true, force: true });
   }

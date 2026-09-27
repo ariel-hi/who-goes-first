@@ -58,7 +58,10 @@ attribution and modification conditions; prepare a small asset only if the terms
 permit it. Do not copy artwork from BoardGameGeek, its image CDN, or search
 results. If permission is unclear, keep the original SVG.
 
-`content:validate` rejects absent files and files over 64 KiB. The production
+`content:validate` uses Sharp (already supplied by Astro) to decode every image;
+it rejects malformed pixels, unsupported or mismatched file types, animated images,
+incorrect dimensions, files over 64 KiB, and images above four million pixels.
+No decoder runs in the browser. The production
 audit counts inline SVG within compressed HTML and local images once per page,
 using the existing conservative 350 KiB allowance (including all non-optional
 JavaScript and CSS). Adding or changing image metadata or its licence changes the rule's
