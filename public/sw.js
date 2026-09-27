@@ -1,8 +1,4 @@
 /* global self, caches, Response */
-// Offline support for game night. Pages are network-first, so a deploy is seen on
-// the next online visit; the cache only answers when the network fails.
-// Hashed /_astro/ assets never change, so they are cache-first. Cross-origin
-// requests (ads, analytics) and non-GET requests are never touched.
 const CACHE = 'wgf-v1';
 const PRECACHE = ['/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/methods/spinner/'];
 
