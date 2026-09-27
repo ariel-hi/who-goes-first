@@ -80,7 +80,8 @@ test('sharing copies a clean link and offers a selectable fallback when clipboar
     const instagram = await opened;
     try {
       await expect(instagram).toHaveURL('https://www.instagram.com/');
-      expect(await instagram.opener()).toBeNull();
+      await instagram.waitForLoadState('domcontentloaded');
+      expect(await instagram.evaluate(() => window.opener === null)).toBe(true);
       expect(instagramRequests).toEqual(['https://www.instagram.com/']);
     } finally {
       await instagram.close();

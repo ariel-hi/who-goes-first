@@ -30,7 +30,8 @@ test('social icons keep accessible labels and share clean public links', async (
     const popup = await opened;
     try {
       await expect(popup).toHaveURL('https://www.instagram.com/');
-      expect(await popup.opener()).toBeNull();
+      await popup.waitForLoadState('domcontentloaded');
+      expect(await popup.evaluate(() => window.opener === null)).toBe(true);
     }
     finally { await popup.close(); }
   };
