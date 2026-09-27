@@ -54,7 +54,9 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
       const frames = effect.getKeyframes();
       if (!(target instanceof Element) || frames.length < 2) return false;
       // Settled objects keep their geometry: only light color/opacity varies.
-      const stripColors = (value: string) => value.replace(/(?:rgba?|color|oklch|oklab|lab|lch)\([^)]*\)/g, '').replace(/\s+/g, ' ').replace(/\s*,\s*/g, ', ').trim();
+      // Firefox retains color-mix(...rgb(...)...) in native keyframes, while
+      // Chromium/WebKit resolve it. Strip only supported complete color values.
+      const stripColors = (value: string) => value.replace(/(?:rgba?|color(?:-mix)?|oklch|oklab|lab|lch)\((?:[^()]|\([^()]*\))*\)/g, '').replace(/\s+/g, ' ').replace(/\s*,\s*/g, ', ').trim();
       const onlyProperty = (property: string) => frames.every(frame => Object.keys(frame).every(key => ['offset', 'computedOffset', 'easing', 'composite', property].includes(key)));
       if (animation.animationName === 'piece-glimmer') {
         return target.matches('.table-reveal[data-settled="true"] .reveal-chosen :is(.card-front,.shell-pearl)') && !effect.pseudoElement
@@ -72,8 +74,8 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
         if (!(target instanceof HTMLElement) || !target.matches('.table-reveal[data-settled="true"] .reveal-chosen :is(.card-front,.block-stack i>span,.match-wood,.match-head,.die,.coin-face,.shell-pearl)') || effect.pseudoElement !== '::before') return false;
         return frames.every(frame => {
           if (!Object.keys(frame).every(key => ['offset', 'computedOffset', 'easing', 'composite', 'backgroundPosition', 'backgroundPositionX', 'backgroundPositionY'].includes(key))) return false;
-          if (typeof frame.backgroundPosition === 'string') return /^(?:0|100)% 0(?:%|px)?$/.test(frame.backgroundPosition);
-          return typeof frame.backgroundPositionX === 'string' && /^(?:0|100)%$/.test(frame.backgroundPositionX)
+          if (typeof frame.backgroundPosition === 'string') return /^(?:100%|0(?:%|px)?) 0(?:%|px)?$/.test(frame.backgroundPosition);
+          return typeof frame.backgroundPositionX === 'string' && /^(?:100%|0(?:%|px)?)$/.test(frame.backgroundPositionX)
             && typeof frame.backgroundPositionY === 'string' && /^0(?:%|px)?$/.test(frame.backgroundPositionY);
         });
       }
