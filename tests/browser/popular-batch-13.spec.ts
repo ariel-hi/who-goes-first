@@ -11,7 +11,7 @@ const noOpeningTie = new Set(["7-wonders-repos-original-en", "micromacro-crime-c
 const officialTieRequired = new Set(['gloomhaven-cephalofair-original-en', 'kingsburg-fantasy-flight-original-en', 'love-letter-aeg-original-en']);
 
 for (const game of games) {
-  test(`popular batch 13: ${game.rule.gameName} keeps its exact directory answer and clean share`, async ({ page, request }) => {
+  test(`popular batch 13: ${game.id} keeps its exact directory answer and clean share`, async ({ page, request }) => {
     await page.setViewportSize({ width: 320, height: 844 });
     await page.addInitScript(() => Object.defineProperty(navigator, 'share', { configurable: true, value: async (data: { url: string }) => { document.documentElement.dataset.sharedUrl = data.url; } }));
     const directory = await (await request.get('/board-games/search.json')).json() as { id: string; ruleCount: number; slug?: string }[];
