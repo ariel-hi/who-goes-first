@@ -1,0 +1,49 @@
+{
+  "id": "kleiner-drache-wirbelwind-en",
+  "slug": "kleiner-drache-wirbelwind",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+  "approvedRevision": "5f2fe31f816573bab37fc718a85039a087fa51c0082cecf6fe29778e2bfffea1",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Kleiner Drache Wirbelwind",
+  "aliases": [],
+  "editionLabel": "Zoch English rules in multilingual booklet, article 601105202",
+  "firstPlayerRule": "The player with the sunniest smile may choose who starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The smile criterion chooses who may nominate the starter; that person is not automatically the first player.",
+    "Players take turns; the English rules do not specify a clockwise or counterclockwise direction.",
+    "When all weather tiles have been revealed, turn them face down, mix them and continue playing. This does not select a new starter.",
+    "The game is cooperative: the players win or lose together, rather than comparing individual final scores.",
+    "The rules list 1–5 players. With one player, there is no first-player choice to make; no separate solo opening procedure is given."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://pim.simba-dickie.com/Product/Zoch/Family/601105202%20Kleiner%20Drache%20Wirbelwind/099%20Middleware%20%28Import%20only%29/601105202-Wirbelwind-Regel.pdf",
+      "title": "Kleiner Drache Wirbelwind: official multilingual rules, English section",
+      "publisher": "Zoch Verlag",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        6,
+        9,
+        10
+      ],
+      "location": "PDF page7, Set-up: sunniest-smile chooser, Course of the Game: play in turn and weather refresh continues; PDF/printed page6 native title/player count; PDF page9 later turns; PDF page10 cooperative ending/article/imprint. PDF7–10 have no visible printed page numbers.",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Codex /root independently read all original uncropped180dpi English pages (6, 7, 8, 9, 10) and all complete corresponding plain-text extracts, all exact catalog/research proposals and assignment/source-reading notes. Codex /root/inventory_sources separately read all58 multilingual original pages; Codex /root/held_identity_review independently read the same19 authority original pages and texts for this cohort. Root and peer do not claim original-image reading of the other39 language pages. Exact original PDF SHA256 3c8e5e769d72cc13e6a972427d12849dcf015f9f56e5627cd1609680e7523903; PDF page7 controls the opening criterion; visible original images control duplicated/rotated-layout extraction artifacts and printed locators. Native title, article601105202, existing accepted primary product and literal official product-to-PDF anchor chain establish this exact source scope only for game-c60afcd1-5e6b-44ed-a41a-dbd91376d400, identity revision 6cc438a19a7f2725d6b61735065eefc809e0af22f7c2f37771b45638a19e6bcf. The sunniest-smile player may choose the starter, rather than automatically starting. PDF7–10 have no visible printed page numbers; the source citation retains printed6 only for the cover. English player rotation is not inferred; cooperative/solo boundaries are scoped. No initial tie or no-history procedure, external numeric identity, translated alias, reissue or printing bridge is inferred. Root approves this exact rule and explicit public assignment under standing owner authorization. Matching research pair remains lifecycle-null; no research association, identity modification, new UUID or portable addition is authorized.",
+  "uncertainty": [
+    "No official tie procedure for the sunniest-smile chooser is stated.",
+    "The visible2025 imprint and PDF document-info dates do not establish a printing or named version.",
+    "English PDF7–10 are unnumbered visibly; PDF positions are distinct from printed locators.",
+    "No external numeric identity, creator identifier, translated alias or reissue correspondence is inferred."
+  ]
+}

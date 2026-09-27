@@ -170,6 +170,31 @@
       "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
       "reviewedAt": "2026-09-26",
       "acceptedRevision": "d77b628b11ed8b08a971fe0bff486396fb3f73adc630509b42ad6b68fa4f8138"
+    },
+    {
+      "ruleId": "kleiner-drache-wirbelwind-en",
+      "ruleRevision": "5f2fe31f816573bab37fc718a85039a087fa51c0082cecf6fe29778e2bfffea1",
+      "identityId": "game-c60afcd1-5e6b-44ed-a41a-dbd91376d400",
+      "identityRevision": "6cc438a19a7f2725d6b61735065eefc809e0af22f7c2f37771b45638a19e6bcf",
+      "editionScope": "Zoch English rules in multilingual booklet, article 601105202",
+      "evidence": [
+        {
+          "url": "https://www.zoch-verlag.com/zoch_en/categories/children-s-games/kleiner-drache-wirbelwind-601105202-en.html",
+          "sha256": "4c5cffcb749992632581069dc4d7c60cd3170e7fa9387daee4dec8ce5d4a0adc",
+          "location": "Complete saved focal title/article/Product context and exact original manual anchors at raw byte ranges [[152702, 153051], [153626, 154205]]; preserved literal URL differs from transport only in percent encoding, without Unicode normalization.",
+          "correspondence": "Saved official product names Kleiner Drache Wirbelwind, article 601105202, and literally links the original complete PDF. Original native-title logo and article imprint support this exact English section in multilingual booklet assignment to the existing accepted opaque identity only. No numeric/translated alias/reissue/printing transfer."
+        },
+        {
+          "url": "https://pim.simba-dickie.com/Product/Zoch/Family/601105202%20Kleiner%20Drache%20Wirbelwind/099%20Middleware%20%28Import%20only%29/601105202-Wirbelwind-Regel.pdf",
+          "sha256": "3c8e5e769d72cc13e6a972427d12849dcf015f9f56e5627cd1609680e7523903",
+          "location": "PDF page7, Set-up: sunniest-smile chooser, Course of the Game: play in turn and weather refresh continues; PDF/printed page6 native title/player count; PDF page9 later turns; PDF page10 cooperative ending/article/imprint. PDF7–10 have no visible printed page numbers.",
+          "correspondence": "Saved official product names Kleiner Drache Wirbelwind, article 601105202, and literally links the original complete PDF. Original native-title logo and article imprint support this exact English section in multilingual booklet assignment to the existing accepted opaque identity only. No numeric/translated alias/reissue/printing transfer."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
+      "reviewedAt": "2026-09-26",
+      "acceptedRevision": "4c24f2e4ab95dad2f647f47a9b57f26b4fabd5af994276f1cc503ef4abdbc3eb"
     }
   ]
 }
