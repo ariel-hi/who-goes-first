@@ -69,11 +69,23 @@ test('sharing copies a clean link and offers a selectable fallback when clipboar
   await expect(toolbar.locator('[data-share-link]')).toBeVisible();
   await expect(toolbar.locator('[data-share-link]')).toHaveValue(new URL(`/games/${rule.slug}/`, page.url()).href);
   if (await toolbar.locator('[data-instagram-open]').count()) {
-    const opened = page.waitForEvent('popup');
+    const instagramRequests: string[] = [];
+    const instagramRoute = async (route: import('@playwright/test').Route) => {
+      instagramRequests.push(route.request().url());
+      await route.fulfill({status:200,contentType:'text/html',body:'<!doctype html><title>Owned Instagram test tab</title>'});
+    };
+    await page.context().route('https://www.instagram.com/**', instagramRoute);
+    const opened = page.context().waitForEvent('page');
     await toolbar.locator('[data-instagram-open]').click();
     const instagram = await opened;
-    expect(instagram.url()).toMatch(/^https:\/\/www\.instagram\.com\//);
-    await instagram.close();
+    try {
+      await expect(instagram).toHaveURL('https://www.instagram.com/');
+      expect(await instagram.opener()).toBeNull();
+      expect(instagramRequests).toEqual(['https://www.instagram.com/']);
+    } finally {
+      await instagram.close();
+      await page.context().unroute('https://www.instagram.com/**',instagramRoute);
+    }
     await expect(toolbar.locator('[data-instagram-link]')).toBeFocused();
     await expect(toolbar.locator('[data-instagram-link]')).toHaveValue(new URL(`/games/${rule.slug}/`, page.url()).href);
   }

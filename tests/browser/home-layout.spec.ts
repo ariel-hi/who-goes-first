@@ -4,7 +4,8 @@ import AxeBuilder from '@axe-core/playwright';
 test('social icons keep accessible labels and share clean public links', async ({ page }) => {
   await page.goto('/?private=names#private-result');
   const shares = page.getByRole('group', { name: 'Share this page', exact: true });
-  test.skip(await shares.count() === 0, 'Social links only appear in production builds.');
+  const instagramLink = shares.getByRole('link', { name: 'Open Instagram and copy link (opens in a new tab)', exact: true });
+  test.skip(await instagramLink.count() === 0, 'Social links only appear in production builds.');
   const decline = page.getByRole('button', { name: 'No thanks', exact: true });
   if (await decline.isVisible()) await decline.click();
   for (const name of ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook']) {
@@ -17,12 +18,31 @@ test('social icons keep accessible labels and share clean public links', async (
     expect(box!.height).toBe(44);
   }
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (value: string) => { Object.assign(window, { copiedInstagramLink: value }); } } }));
-  await shares.getByRole('button', { name: 'Copy link for Instagram' }).click();
-  await expect(shares.getByRole('status')).toHaveText('Link copied — paste it into Instagram.');
-  expect(await page.evaluate(() => (window as unknown as { copiedInstagramLink: string }).copiedInstagramLink)).toBe(new URL('/', page.url()).href);
-  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new Error('Clipboard denied'); } } }));
-  await shares.getByRole('button', { name: 'Copy link for Instagram' }).click();
-  await expect(shares.getByRole('textbox', { name: 'Link to copy for Instagram' })).toHaveValue(new URL('/', page.url()).href);
+  const instagramRequests: string[] = [];
+  const instagramRoute = async (route: import('@playwright/test').Route) => {
+    instagramRequests.push(route.request().url());
+    await route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>Owned Instagram test tab</title>' });
+  };
+  await page.context().route('https://www.instagram.com/**', instagramRoute);
+  const openInstagram = async () => {
+    const opened = page.context().waitForEvent('page');
+    await instagramLink.click();
+    const popup = await opened;
+    try {
+      await expect(popup).toHaveURL('https://www.instagram.com/');
+      expect(await popup.opener()).toBeNull();
+    }
+    finally { await popup.close(); }
+  };
+  try {
+    await openInstagram();
+    await expect(shares.locator('[data-instagram-status]')).toHaveText('Link copied. Instagram opened in a new tab.');
+    expect(await page.evaluate(() => (window as unknown as { copiedInstagramLink: string }).copiedInstagramLink)).toBe(new URL('/', page.url()).href);
+    await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new Error('Clipboard denied'); } } }));
+    await openInstagram();
+    await expect(shares.getByRole('textbox', { name: 'Link to copy for Instagram' })).toHaveValue(new URL('/', page.url()).href);
+    expect(instagramRequests).toEqual(['https://www.instagram.com/', 'https://www.instagram.com/']);
+  } finally { await page.context().unroute('https://www.instagram.com/**', instagramRoute); }
 });
 
 test('comma-separated names work and shell cards follow the dark theme', async ({ page }) => {
