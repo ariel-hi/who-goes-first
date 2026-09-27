@@ -1,8 +1,5 @@
 /* Rule pages: the answer sits on a layered card; supporting sections are soft cards. */
 .rule-hero{position:relative;isolation:isolate;margin:0 0 18px;padding:26px 24px 22px;border:1px solid var(--line);border-radius:26px;background:var(--paper);box-shadow:8px 8px 0 color-mix(in srgb,var(--green) 16%,transparent);overflow:hidden}
-.rule-hero-shape{position:absolute;z-index:-1;pointer-events:none;border-radius:50%}
-.rule-hero-shape-a{width:220px;height:220px;right:-70px;top:-90px;background:color-mix(in srgb,var(--green) 13%,transparent)}
-.rule-hero-shape-b{width:120px;height:120px;right:60px;top:40px;border-radius:28px;transform:rotate(18deg);background:color-mix(in srgb,#e8a33d 16%,transparent)}
 .rule-hero h1{margin:4px 0 6px;max-width:30ch}
 .rule-edition{margin:0}
 .rule-hero .rule-answer{position:relative;margin:20px 0 18px;padding:16px 18px 16px 20px;border-radius:16px;background:color-mix(in srgb,var(--green) 9%,var(--paper));font-family:Georgia,"Times New Roman",serif;font-size:clamp(21px,4.4vw,26px);font-weight:400;line-height:1.4;letter-spacing:-.3px;color:var(--ink)}
@@ -29,7 +26,6 @@
 
 @media (max-width:520px){
   .rule-hero{padding:22px 18px 18px;border-radius:22px;box-shadow:5px 5px 0 color-mix(in srgb,var(--green) 16%,transparent)}
-  .rule-hero-shape-b{display:none}
 }
 
 .game-article .similar-rules{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
@@ -46,3 +42,13 @@
 .game-article .sharing-actions{margin:14px 0 4px}
 .game-article .fallback .primary{border-radius:999px;min-height:44px;max-width:260px;font-size:14px}
 .buy-game{margin-top:16px}
+.rule-hero-heading{display:grid;grid-template-columns:minmax(0,1fr) 120px;align-items:start;gap:20px}
+.game-art{display:block;width:120px;height:auto;border-radius:18px;box-shadow:3px 4px 0 color-mix(in srgb,var(--ink) 12%,transparent)}
+.game-art-thumb{width:48px;flex:none;border-radius:6px;box-shadow:none}
+.rule-links a,.game-article .similar-rules a{display:flex;flex-direction:row;align-items:center;gap:12px;text-decoration:none}
+.rule-links a>span,.similar-rules a>span{min-width:0;overflow-wrap:anywhere}
+.rule-links small,.similar-rules small{display:block;margin-top:3px;font-weight:400}
+.game-article .similar-rules li{padding:0}
+.game-article .similar-rules a{padding:14px 16px;height:100%;border-radius:16px}
+.game-article .similar-rules li:hover{border-color:var(--green)}
+@media(max-width:520px){.rule-hero-heading{grid-template-columns:minmax(0,1fr) 76px;gap:12px}.rule-hero-heading>.game-art{width:76px}.rule-hero-heading h1{font-size:clamp(28px,8vw,36px)}.rule-hero-heading .rule-chip{font-size:9px;letter-spacing:1px}}

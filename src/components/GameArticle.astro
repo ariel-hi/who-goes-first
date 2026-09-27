@@ -1,6 +1,7 @@
 ---
 import SharePage from './SharePage.astro';
 import BuyGame from './BuyGame.astro';
+import GameArt from './GameArt.astro';
 import { ruleHeading } from '../lib/rule-copy';
 import type { PublicRule } from '../lib/content/schema';
 import { siteSettings } from '../lib/site';
@@ -19,9 +20,10 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
 <article class="game-article">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href={preview ? '/dev/games/' : '/games/'}>Game rules</a> / {rule.gameName}</nav>
   <header class="rule-hero">
-    <span class="rule-hero-shape rule-hero-shape-a" aria-hidden="true"></span><span class="rule-hero-shape rule-hero-shape-b" aria-hidden="true"></span>
+    <div class="rule-hero-heading"><div>
     <span class="eyebrow rule-chip">{preview ? 'Draft rule · not approved' : sourceIsPdf ? 'From the publisher’s rulebook' : 'From the source rules'}</span>
     <h1>{ruleHeading(rule.gameName)}</h1><p class="small muted rule-edition">{rule.editionLabel}{!/\bEnglish\b/i.test(rule.editionLabel) && ' · English'}</p>
+    </div><GameArt rule={rule} /></div>
     <p class="rule-answer">{rule.firstPlayerRule}</p>
     {rule.tieBreakApplicable !== false && rule.officialTieBreak && <section class="rule-section opening-tie"><h2>Official tie-break or fallback</h2><p>{rule.officialTieBreak}</p></section>}
     <nav class="source-actions" aria-label="Rulebook source">{passageUrl && <a href={passageUrl} rel="noreferrer">View cited page (PDF page {firstPage})</a>}<a href={firstSource.url} rel="noreferrer">{sourceIsPdf ? 'Read the publisher’s rulebook' : 'Read the source rules'}</a></nav>
@@ -37,7 +39,7 @@ const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
     const pages = citedPdfPages(source.url, source.pdfPagesOneBased);
     return <li><a class="source-document" href={source.url} rel="noreferrer">{source.title}</a><small>{source.publisher} · {source.location} · Checked {source.checkedAt}</small>{pages.length > 0 ? <nav class="source-cited-pages" aria-label={`Cited PDF pages for ${source.title}`}>{pages.map(({ page, href }) => <a href={href} rel="noreferrer">PDF page {page}</a>)}</nav> : source.pdfPagesOneBased.length > 0 && <small>Cited PDF pages: {[...new Set(source.pdfPagesOneBased)].join(', ')}</small>}</li>;
   })}</ul>{publisherHub && <a class="inline-link" href={`/publishers/${publisherHub.slug}/`}>All {publisherHub.count} {publisherHub.name} starting rules</a>}</section>
-  <section class="rule-section"><h2>{related.length ? 'Related games and editions' : 'More starting rules'}</h2>{related.length > 0 && <ul class="rule-links">{related.map(game => <li><a href={`/games/${game.slug}/`}>{game.gameName}<small>{game.editionLabel}</small></a></li>)}</ul>}<a class="inline-link" href={preview ? '/dev/games/' : '/games/'}>Browse available game rules</a></section>
-  {similar.length > 0 && similarHub && <section class="rule-section"><h2>Games with a similar starting rule</h2><ul class="similar-rules">{similar.map(game => <li><a href={`/games/${game.slug}/`}>{game.gameName}</a><small>{game.firstPlayerRule}</small></li>)}</ul><a class="inline-link" href={`/games/themes/${similarHub.slug}/`}>More starting rules about {similarHub.about}</a></section>}
+  <section class="rule-section"><h2>{related.length ? 'Related games and editions' : 'More starting rules'}</h2>{related.length > 0 && <ul class="rule-links">{related.map(game => <li><a href={`/games/${game.slug}/`}><GameArt rule={game} thumbnail /><span>{game.gameName}<small>{game.editionLabel}</small></span></a></li>)}</ul>}<a class="inline-link" href={preview ? '/dev/games/' : '/games/'}>Browse available game rules</a></section>
+  {similar.length > 0 && similarHub && <section class="rule-section"><h2>Games with a similar starting rule</h2><ul class="similar-rules">{similar.map(game => <li><a href={`/games/${game.slug}/`}><GameArt rule={game} thumbnail /><span>{game.gameName}<small>{game.firstPlayerRule}</small></span></a></li>)}</ul><a class="inline-link" href={`/games/themes/${similarHub.slug}/`}>More starting rules about {similarHub.about}</a></section>}
   <p class="small muted rule-section">Found a different instruction in your edition? {contact ? <a href={`mailto:${contact}?subject=${encodeURIComponent(`Rule correction: ${rule.id}`)}`}>Send a correction with the game, edition, and source.</a> : 'Check the source and edition listed above against your own rulebook.'}</p>
 </article>

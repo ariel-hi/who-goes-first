@@ -1,0 +1,23 @@
+---
+import { gameArt } from '../lib/game-art';
+import type { PublicRule } from '../lib/content/schema';
+interface Props { rule: PublicRule; thumbnail?: boolean }
+const { rule, thumbnail = false } = Astro.props;
+const { label, motif, pattern, color } = gameArt(rule.gameName, rule.firstPlayerRule);
+---
+<svg class:list={['game-art', { 'game-art-thumb': thumbnail }]} viewBox="0 0 160 192" width="160" height="192" aria-hidden="true" focusable="false" style={`--art-color:${color}`}>
+  <rect width="160" height="192" rx="18" fill="var(--art-color)" />
+  <g fill="none" stroke="#fffef9" stroke-width="2" opacity=".16">
+    {pattern === 0 ? <><circle cx="138" cy="32" r="44" /><circle cx="138" cy="32" r="62" /><circle cx="22" cy="172" r="48" /></> : pattern === 1 ? <path d="M0 48 48 0M0 96 96 0M0 144 144 0M0 192 160 32M48 192 160 80M96 192 160 128" /> : <><path d="m16 16 32 32-32 32-32-32Zm128 96 32 32-32 32-32-32Z" /><circle cx="128" cy="30" r="18" /><circle cx="32" cy="156" r="20" /></>}
+  </g>
+  <rect x="10" y="10" width="140" height="172" rx="12" fill="none" stroke="#fffef9" opacity=".3" />
+  <g transform="translate(56 32)" fill="none" stroke="#fffef9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
+    {motif === 'dice' && <><rect x="4" y="4" width="40" height="40" rx="9" /><path d="M15 15h.1M33 15h.1M24 24h.1M15 33h.1M33 33h.1" stroke-width="5" /></>}
+    {motif === 'cards' && <><path d="m12 6-7 2a4 4 0 0 0-3 5l7 29a4 4 0 0 0 5 3l10-3" /><rect x="17" y="3" width="28" height="38" rx="4" /><path d="m31 14 7 8-7 8-7-8Z" /></>}
+    {motif === 'clock' && <><circle cx="24" cy="24" r="20" /><path d="M24 11v13l9 6M24 4v3M44 24h-3M24 44v-3M4 24h3" /></>}
+    {motif === 'leaf' && <><path d="M9 38C-1 13 22 3 43 5c2 23-9 44-34 33ZM8 41 32 16M19 30v-9M19 30h10" /></>}
+    {motif === 'crown' && <><path d="m5 13 10 10L24 6l9 17 10-10-4 26H9ZM10 45h28" /><circle cx="24" cy="4" r="2" /></>}
+  </g>
+  <text x="80" y="127" text-anchor="middle" fill="#fffef9" font-family="Georgia, 'Times New Roman', serif" font-size={label.length > 6 ? '22' : '34'}>{label}</text>
+  <path d="M58 153h44" stroke="#fffef9" stroke-width="2" opacity=".5" />
+</svg>

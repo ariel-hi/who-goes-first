@@ -48,5 +48,6 @@ export async function renderRuleImage(gameName: string, answer: string, host: st
     ]),
   ]);
   const svg = await satori(tree as unknown as Parameters<typeof satori>[0], { width: 1200, height: 630, fonts: loadFonts() });
-  return new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } }).render().asPng();
+  // Satori embeds bundled-font glyphs as paths; scanning system fonts is redundant.
+  return new Resvg(svg, { fitTo: { mode: 'width', value: 1200 }, font: { loadSystemFonts: false } }).render().asPng();
 }
