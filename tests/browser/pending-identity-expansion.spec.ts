@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 
 for (const width of [320,1280]) {
-  for (const [id,name] of [['266083','L.A.M.A.'],['318195','Biss 20'],['153','Hornochsen! (Take 5!)']] as const) {
+  for (const [id,name] of [['266083','L.A.M.A.'],['318195','Biss 20'],['153','Hornochsen! (Take 5!)'],['200','Entdecker (Goldsieber)'],['550','Barbarossa (Klaus Teuber)']] as const) {
     test(`pending identity ${id} remains distinct and usable at ${width}px`,async ({page,request})=>{
       const expectedHead=process.env.WGF_CATALOG_EXPECTED_HEAD;
       const marker=async()=>{if(expectedHead){const response=await request.get(`/release.json?verify=${Date.now()}`);expect(response.status()).toBe(200);expect(await response.json()).toEqual({commit:expectedHead});}};

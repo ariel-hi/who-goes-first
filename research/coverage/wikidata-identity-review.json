@@ -2,12 +2,12 @@
   "reviewedOn": "2026-09-27",
   "sourceSnapshot": "research/coverage/wikidata-board-games.json",
   "sourceSnapshotStatementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
-  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule. Additional identity-only review distinguishes 153 / Q1628545 as Hornochsen! (Take 5!) using separately preserved full Wikidata entity claims and normalized official AMIGO product/article 08940 evidence. The 53 earlier decisions and their historical scopes are retained; no starting-rule or edition transfer is authorized.",
+  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule. Additional identity-only review distinguishes 153 / Q1628545 as Hornochsen! (Take 5!) using separately preserved full Wikidata entity claims and normalized official AMIGO product/article 08940 evidence. The 53 earlier decisions and their historical scopes are retained; no starting-rule or edition transfer is authorized. Additional proposed identity-only review qualifies 200 / Q1344436 as Entdecker (Goldsieber) and 550 / Q646550 as Barbarossa (Klaus Teuber), using saved own normal Wikidata P2339 and complete CATAN author/licensing-company retrospective bodies. The preceding 54 decisions and their historical scopes are retained. Same-title peers 1334 and 72809 and Merchant of Venus 230/131646 remain excluded pending correspondence; no rule, alias, year, printing or edition transfer is authorized.",
   "method": "Read CC0 Wikidata item facts using wbgetentities and saved revisions, then corroborate accepted game/edition identities with original designer, publisher, federation, or association-hosted federation sources. Per-ID edition qualifiers are distinguished from item-wide publication years. Qualified display names prevent merging identical names. Holds retain unresolved ambiguity. Additional 315200 title review corroborates the saved P2339 identity binding with the official publisher expansion classification and qualified canonical BGG indexed item evidence. Failed destination opens and mixed Wikidata metadata remain explicit; no raw BGG HTTP, physical manual or printing correspondence is approved.",
   "factsAudit": "research/coverage/wikidata-identity-facts.json",
   "counts": {
-    "reviewed": 54,
-    "accept": 25,
+    "reviewed": 56,
+    "accept": 27,
     "hold": 29,
     "reject": 0,
     "newlyEligibleHeldIdentities": 16,
@@ -253,6 +253,94 @@
       "inspectedOn": "2026-09-27",
       "observedEvidence": "Normalized two-page official German manual identifies article 08940, Wolfgang Kramer and Franz Vohwinkel, 2–6 players, 98 numbered cards and 12 special cards. Page 2 imprint carries 1998 and 2012 and version 2.5. This corroborates physical game identity; no PDF byte hash, visual page inspection, starting rule or translation/printing correspondence is approved.",
       "evidenceScope": "Normalized web PDF text; full 170 extracted lines read, screenshot calls yielded only metadata without visible images"
+    },
+    "catanAuthorCompany": {
+      "kind": "primary-author-licensing-company",
+      "title": "CATAN Klaus Teuber retrospective — catan-about",
+      "url": "https://www.catan.de/ueber-uns",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "cc58c555a09162c1801fbc48e1f64bba0bf31be4613e8b5d803277b493b712d4",
+      "byteCount": 52741,
+      "sourceIntakeManifestSha256": "c99d3c5882cf692ba92eae5adff5d30983437905599fd6cc2399a3d34221949d",
+      "observedEvidence": "CATAN GmbH identifies Klaus Teuber and its family-company development, marketing and licensing of his games; it is the author/licensing-company authority, not the original Goldsieber or ASS store.",
+      "focalByteLocators": [],
+      "evidenceScope": "Complete saved decoded HTTP200 HTML and ordered parsed response headers. Complete authority/about and ludography static texts, and the listed complete focal period blocks, were read. Static text is regex transcription, not browser/HTML5 visibility; unrelated period sections were not all independently read. No assets or manuals fetched."
+    },
+    "catanTeuberLudography": {
+      "kind": "primary-author-licensing-company",
+      "title": "CATAN Klaus Teuber retrospective — catan-ludography",
+      "url": "https://www.catan.de/catan-entdecken/ludographie",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "c27ba6af7115ca2f5f9a45a4bbdd3fbb80cc453a36d07653bcd1849f337ffca6",
+      "byteCount": 55566,
+      "sourceIntakeManifestSha256": "c99d3c5882cf692ba92eae5adff5d30983437905599fd6cc2399a3d34221949d",
+      "observedEvidence": "CATAN labels this as Klaus Teuber game history and supplies literal links to the historical periods. Complete static text was read; a mislabeled unrelated 2006–2010 navigation block is not used as identity evidence.",
+      "focalByteLocators": [],
+      "evidenceScope": "Complete saved decoded HTTP200 HTML and ordered parsed response headers. Complete authority/about and ludography static texts, and the listed complete focal period blocks, were read. Static text is regex transcription, not browser/HTML5 visibility; unrelated period sections were not all independently read. No assets or manuals fetched."
+    },
+    "catanOriginalBarbarossa": {
+      "kind": "primary-author-licensing-company",
+      "title": "CATAN Klaus Teuber retrospective — catan-1988-1990",
+      "url": "https://www.catan.de/1988-1990",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "b7bdede9a35b2d052c426b04a5515f11320585af1480ecf4e5022bb481486ca0",
+      "byteCount": 60567,
+      "sourceIntakeManifestSha256": "c99d3c5882cf692ba92eae5adff5d30983437905599fd6cc2399a3d34221949d",
+      "observedEvidence": "The complete Barbarossa (ASS) block states Klaus Teuber first published the game with ASS in 1988, then names 1998 KOSMOS and 2005 Classics reissues and a 2015 Knätsel successor. Credited third-party images are not primary identity evidence.",
+      "focalByteLocators": [
+        {
+          "heading": "Barbarossa (ASS)",
+          "byteStart": 39981,
+          "byteEndExclusive": 44244
+        }
+      ],
+      "evidenceScope": "Complete saved decoded HTTP200 HTML and ordered parsed response headers. Complete authority/about and ludography static texts, and the listed complete focal period blocks, were read. Static text is regex transcription, not browser/HTML5 visibility; unrelated period sections were not all independently read. No assets or manuals fetched."
+    },
+    "catanOriginalEntdecker": {
+      "kind": "primary-author-licensing-company",
+      "title": "CATAN Klaus Teuber retrospective — catan-1996-2000",
+      "url": "https://www.catan.de/catan-entdecken/ludographie/1996-2000",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "4c0b695cbc8a952c774ed72cc1d65c4324dcf7653c792a9a863820fa168bacca",
+      "byteCount": 154999,
+      "sourceIntakeManifestSha256": "c99d3c5882cf692ba92eae5adff5d30983437905599fd6cc2399a3d34221949d",
+      "observedEvidence": "The complete Entdecker block names Goldsieber and shows age/player/time metadata plus a 1996 award context. It is used for semantic original-game correspondence, not exact printing or opening rules.",
+      "focalByteLocators": [
+        {
+          "heading": "Entdecker",
+          "byteStart": 135251,
+          "byteEndExclusive": 138676
+        }
+      ],
+      "evidenceScope": "Complete saved decoded HTTP200 HTML and ordered parsed response headers. Complete authority/about and ludography static texts, and the listed complete focal period blocks, were read. Static text is regex transcription, not browser/HTML5 visibility; unrelated period sections were not all independently read. No assets or manuals fetched."
+    },
+    "catanLaterRevisions": {
+      "kind": "primary-author-licensing-company",
+      "title": "CATAN Klaus Teuber retrospective — catan-2001-2005",
+      "url": "https://www.catan.de/2001-2005",
+      "inspectedOn": "2026-09-27",
+      "status": "retrieved",
+      "sha256": "62790b23819500787ec62a41a42a5542372a061fc82e679b870c2f980b05ad16",
+      "byteCount": 227635,
+      "sourceIntakeManifestSha256": "c99d3c5882cf692ba92eae5adff5d30983437905599fd6cc2399a3d34221949d",
+      "observedEvidence": "Distinct complete blocks name Die neuen Entdecker under KOSMOS and Barbarossa (Klaus Teuber Classics). The 2005 Barbarossa description explicitly changes board/rules. Press quotations and unfetched manual links are not used to transfer editions or opening rules.",
+      "focalByteLocators": [
+        {
+          "heading": "Die neuen Entdecker",
+          "byteStart": 193423,
+          "byteEndExclusive": 200305
+        },
+        {
+          "heading": "Barbarossa (Klaus Teuber Classics)",
+          "byteStart": 47138,
+          "byteEndExclusive": 52099
+        }
+      ],
+      "evidenceScope": "Complete saved decoded HTTP200 HTML and ordered parsed response headers. Complete authority/about and ludography static texts, and the listed complete focal period blocks, were read. Static text is regex transcription, not browser/HTML5 visibility; unrelated period sections were not all independently read. No assets or manuals fetched."
     }
   },
   "decisions": [
@@ -2458,6 +2546,118 @@
       "startingRuleApproved": false,
       "editionRuleTransferApproved": false,
       "requiredFollowup": "Exact German-manual or other-language starting-rule research requires separate source custody, complete visual review and an independently reviewed rule/identity association. Preserve the existing 432 checked rule and its aliases."
+    },
+    {
+      "bggId": "200",
+      "wikidataId": "Q1344436",
+      "snapshotName": "Entdecker",
+      "displayName": "Entdecker (Goldsieber)",
+      "decision": "accept",
+      "reason": "Official author/licensing-company retrospective lists the original Goldsieber Entdecker in its 1996 period and separately lists Die neuen Entdecker under KOSMOS in 2001. Saved item describes the Klaus Teuber game and has one normal P2339=200. This supports the original semantic identity without assigning or merging the other saved same-title identity 1334/Q1219090.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q1344436",
+            "url": "https://www.wikidata.org/wiki/Q1344436",
+            "revision": 2544044415,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q1344436&oldid=2544044415",
+            "label": "Entdecker",
+            "description": "table top game by Klaus Teuber",
+            "nativeLabel": {
+              "language": "de",
+              "value": "Entdecker"
+            },
+            "bggIdClaims": [
+              {
+                "value": "200",
+                "rank": "normal",
+                "qualifiers": {},
+                "statementId": "Q1344436$81bb91bf-402d-2e03-afa9-f7125ad8ee1f"
+              }
+            ],
+            "rawResponseSha256": "14489a5d2ec9adcac9c3aa62c9f0bfae602c84f3cd854857c0447b7678c0e60d"
+          }
+        ],
+        "primarySourceIds": [
+          "catanAuthorCompany",
+          "catanTeuberLudography",
+          "catanOriginalEntdecker",
+          "catanLaterRevisions"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "aliases": [],
+      "year": null,
+      "printing": null,
+      "identityLimits": [
+        "Number supplied only by saved own Wikidata P2339; no primary numeric BGG href observed.",
+        "CATAN is an author/licensing-company primary retrospective, not the original Goldsieber store or a current in-stock product.",
+        "1334/Q1219090 remains unreviewed; no claim that the newly read 2001 page establishes that number.",
+        "No manual, opening answer, alias, language/printing, publisher-QID-label or edition approval transfer."
+      ],
+      "requiredFollowup": "Any starting-rule or exact printing/edition association requires separate complete manual custody and approval; qualified discovery label and saved numeric statement establish no rule attachment."
+    },
+    {
+      "bggId": "550",
+      "wikidataId": "Q646550",
+      "snapshotName": "Barbarossa",
+      "displayName": "Barbarossa (Klaus Teuber)",
+      "decision": "accept",
+      "reason": "The official author-company pages explicitly identify Klaus Teuber and Barbarossa und die Rätselmeister, first ASS publication and subsequent KOSMOS/Classics revisions. The saved item has this exact German title, one normal P2339=550 and matching item-wide 1988 context. It is a standalone board game, with subsequent revisions kept as distinct rule scopes.",
+      "snapshotReviewFlags": [
+        "title-shared-by-multiple-ids"
+      ],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": false,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q646550",
+            "url": "https://www.wikidata.org/wiki/Q646550",
+            "revision": 2533730504,
+            "permanentUrl": "https://www.wikidata.org/w/index.php?title=Q646550&oldid=2533730504",
+            "label": "Barbarossa",
+            "description": "board game",
+            "nativeLabel": {
+              "language": "de",
+              "value": "Barbarossa und die Rätselmeister"
+            },
+            "bggIdClaims": [
+              {
+                "value": "550",
+                "rank": "normal",
+                "qualifiers": {},
+                "statementId": "Q646550$E91A525C-70EA-4DB8-B2B2-E4462E79125A"
+              }
+            ],
+            "rawResponseSha256": "14489a5d2ec9adcac9c3aa62c9f0bfae602c84f3cd854857c0447b7678c0e60d"
+          }
+        ],
+        "primarySourceIds": [
+          "catanAuthorCompany",
+          "catanTeuberLudography",
+          "catanOriginalBarbarossa",
+          "catanLaterRevisions"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "aliases": [],
+      "year": null,
+      "printing": null,
+      "identityLimits": [
+        "Number supplied only by saved own Wikidata P2339; no primary numeric BGG href observed.",
+        "72809/Q137739161 remains held; its complete entity was not present in this 20-QID intake and was not fetched. No semantic claim about that other game is made.",
+        "The primary site explicitly says the 2005 version changes board/rules. No identical-rules, exact-printing, or 2005-to-original transfer.",
+        "Disambiguating parenthetical is an editorial label, not a publisher title or a new alias. No manual or opening answer reviewed."
+      ],
+      "requiredFollowup": "Any starting-rule or exact printing/edition association requires separate complete manual custody and approval; qualified discovery label and saved numeric statement establish no rule attachment."
     }
   ]
 }
