@@ -1,0 +1,43 @@
+{
+  "id": "hanamikoji-emperors4-en",
+  "slug": "hanamikoji-emperors4-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "660f40c72c3b180bf088a2f4ceb4d270eee664a6f259b4f93baac78f015b2752",
+  "publishedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-27",
+  "gameName": "Hanamikoji",
+  "aliases": [],
+  "editionLabel": "EmperorS4 English edition",
+  "firstPlayerRule": "The younger player starts. Players then alternate turns.",
+  "officialTieBreak": null,
+  "houseFallback": "If both players are the same age, choose randomly between them.",
+  "clarifications": [
+    "If another round is needed, the previous round’s second player becomes the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/e0/90/0c-hanamikoji-rulebook.pdf",
+      "title": "Hanamikoji — English rulebook",
+      "publisher": "EmperorS4",
+      "printedPages": [
+        "2",
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Game setup step 5; Phase 2: Action; Phase 3: Scoring and update",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Rendered original EmperorS4 2016 English booklet: PDF 2 printed 2 setup step 5 younger starts, printed 3 alternating turns; PDF 1 printed 4 changes starter between rounds and credits publisher/translator. This is not the later Deep Water edition. Source custody: research/source-files/popular-sep26-12/hanamikoji.pdf; SHA-256 662765d0f77dd24235ec59f6c00b629ac69078a62e7fbd044a803bb7458326a2. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
+  "uncertainty": [
+    "The EmperorS4-authored English rulebook is preserved by a rulebook archive.",
+    "The rulebook does not give a tie-break for players of the same age."
+  ]
+}
