@@ -11,7 +11,6 @@ const { href, name, gear = [] } = Astro.props;
   </a>
   {gear.length > 0 && <><h2 class="gear-heading">Game night gear</h2><ul class="gear-list">{gear.map(item => <li><a href={item.href} rel="sponsored nofollow noopener" target="_blank">{item.label}<small>{item.note}</small></a></li>)}</ul></>}
   <small>{amazonDisclosure}</small>
-  <small>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</small>
 </aside>
 <style is:global>
   .buy-game{margin-top:28px;padding:0;border:0;background:none}

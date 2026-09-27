@@ -9,7 +9,6 @@ export function amazonSearchUrl(gameName: string, tag: string): string {
 }
 export const amazonDisclosure = 'As an Amazon Associate, we earn from qualifying purchases. Amazon and its logo are trademarks of Amazon.com, Inc. or its affiliates.';
 
-
 // Readers of a rule page usually own the game already, so accessories fit better
 // than the box itself. Generic search terms only; no reader data in the URL.
 const gear = [
