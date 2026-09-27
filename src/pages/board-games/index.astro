@@ -81,7 +81,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     if (thisRevision !== revision) return;
     const matches = data!.filter(game => (game.search.includes(query) || game.numericId?.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
     matches.sort((a, b) => {
-      const rank = (game: SearchGame) => game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
+      const rank = (game: SearchGame) => game.numericId === query || game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
       return rank(a) - rank(b) || a.name.localeCompare(b.name, 'en', { numeric: true });
     });
     const fragment = document.createDocumentFragment();

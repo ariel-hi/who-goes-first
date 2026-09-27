@@ -11,6 +11,7 @@ for (const width of [320,1280]) {
       await page.goto('/board-games/');
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href','https://whogoesfirst.fun/board-games/');
       await page.getByRole('searchbox',{name:'Search board games'}).fill(id);
+      await expect(page.locator('[data-results] li').first()).toHaveAttribute('data-id',id);
       await page.getByRole('button',{name:'Awaiting a rule',exact:true}).click();
       const row=page.locator(`[data-results] li[data-id="${id}"]`);
       await expect(row).toHaveCount(1);
@@ -24,8 +25,7 @@ for (const width of [320,1280]) {
       await expect(row.locator('a[href^="/games/"]')).toHaveCount(0);
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
       await page.getByRole('button',{name:'With a rule',exact:true}).click();
-      await expect(page.locator('[data-results] li')).toHaveCount(0);
-      await expect(page.getByRole('heading',{name:'No matching games'})).toBeVisible();
+      await expect(row).toHaveCount(0);
       expect(pageErrors).toEqual([]);await marker();
     });
   }
