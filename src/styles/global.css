@@ -65,7 +65,7 @@ input[type=checkbox],input[type=radio]{accent-color:var(--green)}
 .player:nth-child(4n+4) .seat-token{background:#f0dfd6;color:#75503f;box-shadow:0 3px 0 #e4cbbd}
 .player.winner{border:1.5px solid var(--green);background:#edf5ef}
 .player.winner .seat-token{background:var(--green);color:white;box-shadow:0 3px 0 #174d40}
-.winner-dot{position:absolute;top:-7px;right:-5px;display:grid;place-items:center;width:21px;height:21px;background:var(--green);border:2px solid white;border-radius:50%;font-size:11px;color:#fff}
+.winner-dot{position:absolute;top:-7px;right:-5px;display:grid;place-items:center;width:21px;height:21px;background:var(--green);border:2px solid white;border-radius:50%;font-size:11px;color:#fff;text-shadow:0 0 1.5px rgba(0,0,0,.9)}
 .roster-compact{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;max-height:300px;overflow:auto;padding:5px}
 .roster-compact .player{padding:8px 4px;gap:5px}
 .roster-compact .seat-token{width:30px;height:30px;font-size:12px}
