@@ -1,10 +1,52 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
+test('social icons keep accessible labels and share clean public links', async ({ page }) => {
+  await page.goto('/?private=names#private-result');
+  const shares = page.getByRole('group', { name: 'Share this page', exact: true });
+  test.skip(await shares.count() === 0, 'Social links only appear in production builds.');
+  const decline = page.getByRole('button', { name: 'No thanks', exact: true });
+  if (await decline.isVisible()) await decline.click();
+  for (const name of ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook']) {
+    const link = shares.getByRole('link', { name: new RegExp(name) });
+    await expect(link).toBeVisible();
+    const destination = new URL((await link.getAttribute('href'))!);
+    expect(destination.href).not.toContain('private');
+    const box = await link.boundingBox();
+    expect(box!.width).toBe(44);
+    expect(box!.height).toBe(44);
+  }
+  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (value: string) => { Object.assign(window, { copiedInstagramLink: value }); } } }));
+  await shares.getByRole('button', { name: 'Copy link for Instagram' }).click();
+  await expect(shares.getByRole('status')).toHaveText('Link copied — paste it into Instagram.');
+  expect(await page.evaluate(() => (window as unknown as { copiedInstagramLink: string }).copiedInstagramLink)).toBe(new URL('/', page.url()).href);
+  await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async () => { throw new Error('Clipboard denied'); } } }));
+  await shares.getByRole('button', { name: 'Copy link for Instagram' }).click();
+  await expect(shares.getByRole('textbox', { name: 'Link to copy for Instagram' })).toHaveValue(new URL('/', page.url()).href);
+});
+
+test('comma-separated names work and shell cards follow the dark theme', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Paste a list' }).click();
+  await page.getByRole('textbox', { name: /Player names/ }).fill('Ada, Bo, Cy, Dee');
+  await expect(page.locator('.roster .player-name')).toHaveCount(4);
+  await expect(page.locator('.roster .player-name').first()).toHaveValue('Ada');
+  await page.getByRole('button', { name: 'Done', exact: true }).click();
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await page.getByRole('button', { name: 'More methods' }).click();
+  await page.getByLabel('Shell Game', { exact: true }).check();
+  const card = page.locator('.shells-reveal .reveal-player').first();
+  await expect(card).toBeVisible();
+  const background = await card.evaluate(element => getComputedStyle(element).backgroundColor);
+  expect(background).not.toBe('rgb(255, 253, 249)');
+  expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
+  await page.screenshot({ path: test.info().outputPath('shells-dark.png'), fullPage: true });
+});
+
 test('home pairs the picker with rules on desktop and preserves the mobile stack', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a player');
-  await expect(page.getByRole('heading', { name: 'Who goes first?', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
+  await expect(page.locator('#home-picker-heading')).toHaveClass('sr-only');
   const picker = await page.locator('.home-picker').boundingBox();
   const directory = await page.locator('.home-rules').boundingBox();
   expect(directory!.x).toBeGreaterThanOrEqual(picker!.x + picker!.width);
@@ -33,8 +75,8 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   const mobilePicker = await page.locator('.home-picker').boundingBox();
   const mobileRules = await page.locator('.home-rules').boundingBox();
   expect(mobileRules!.y).toBeGreaterThanOrEqual(mobilePicker!.y + mobilePicker!.height);
-  await expect(page.locator('[data-home-random-rule]')).toBeHidden();
-  await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveAttribute('href', '/games/#random-rule');
+  await expect(page.locator('[data-home-random-rule]')).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveCount(0);
   const button = await page.getByRole('button', { name: 'Pick a player', exact: true }).boundingBox();
   expect(button!.y + button!.height).toBeLessThan(844);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

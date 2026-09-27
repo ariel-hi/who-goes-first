@@ -6,13 +6,13 @@ export const hasControls = (text: string) => [...text].some(char => { const poin
 export const seats = (count: number): Player[] => Array.from({ length: count }, (_, i) => ({ id: `player-${i + 1}`, label: `Seat ${i + 1}` }));
 
 export function parseNames(text: string, previous: readonly Player[] = []): { players: Player[]; errors: string[]; duplicate: boolean } {
-  const names = text.split(/\r?\n|\r/u).map(name => name.trim()).filter(Boolean);
+  const names = text.split(/[,\r\n]+/u).map(name => name.trim()).filter(Boolean);
   const errors: string[] = [];
   if (text.length > 20000) errors.push('This list is too large. Use up to 50 names, with 24 characters per name.');
   if (names.length < 2) errors.push('Add at least two players.');
   if (names.length > 50) errors.push(`There are ${names.length} players. The limit is 50; no one has been removed. Shorten the list to continue.`);
   const tooLong = names.findIndex(n => graphemeCount(n) > 24);
-  if (tooLong >= 0) errors.push(`Name on line ${tooLong + 1} is longer than 24 characters. Shorten it to continue; it has not been cut off.`);
+  if (tooLong >= 0) errors.push(`Name ${tooLong + 1} is longer than 24 characters. Shorten it to continue; it has not been cut off.`);
   if (names.some(hasControls)) errors.push('Remove invisible control characters from the names.');
   // Reuse exact entries first (including reordered names), then edited rows.
   const used = new Set<string>();

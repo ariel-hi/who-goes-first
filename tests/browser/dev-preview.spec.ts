@@ -150,13 +150,15 @@ test('random-rule controls wait for their script and recover from unavailable ra
 });
 
 test('random game rule redraw and source navigation work without treating a rule as an equal-chance draw', async ({ page }) => {
-  // Desktop now draws rules inline; mobile retains the directory shortcut.
+  // The homepage draws rules inline on mobile and desktop.
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${DEV}/`);
   await expect(page.getByRole('heading', { name: 'Playing a specific game?' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveAttribute('href', '/dev/games/');
-  await page.getByRole('link', { name: 'Try a random rule' }).click();
-  await expect(page).toHaveURL(`${DEV}/dev/games/#random-rule`);
+  await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Another rule' }).click();
+  await expect(page.locator('[data-home-rule-answer]')).not.toBeEmpty();
+  await page.getByRole('link', { name: 'Browse game rules' }).click();
   await page.getByRole('button', { name: 'Pick a rule' }).click();
   const answer = await page.locator('[data-rule-answer]').textContent();
   const priorLink = await page.locator('[data-rule-link]').getAttribute('href');

@@ -7,11 +7,11 @@ const withRules = games.filter(game => game.rules.length > 0).length;
 const linkedRuleIds = new Set(games.flatMap(game => game.rules.map(rule => rule.id)));
 const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
 ---
-<Layout title="Board Game Directory — Who Goes First?" description={`Browse ${games.length} board games by name and find their starting-player rules when a checked edition is available.`} pageType="CollectionPage">
+<Layout title="Board Game Directory — Who Goes First?" description={`Find official starting-player rules for ${withRules} board games, or browse the wider game directory by name.`} pageType="CollectionPage">
   <div class="content-page">
     <h1>Board games.</h1>
     <p class="lede">Find the game you’re playing.</p>
-    <p>Browse {games.length.toLocaleString('en')} games and editions. {withRules.toLocaleString('en')} have a sourced starting-player rule here. If yours is still awaiting one, use the <a href="/">player picker</a>.</p>
+    <p>{withRules.toLocaleString('en')} games with sourced starting-player rules. Browse the wider list of {games.length.toLocaleString('en')} games and editions below. If yours is still awaiting one, use the <a href="/">player picker</a>.</p>
     <div data-board-directory>
       <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name or BGG number…" autocomplete="off" maxlength="100" disabled /></label>
       <div class="directory-filters" data-filters role="group" aria-label="Filter search results" hidden>

@@ -49,6 +49,14 @@ describe('uniform selection', () => {
   });
 });
 describe('roster', () => {
+  test('commas and mixed line endings preserve names and duplicate identities', () => {
+    const parsed = parseNames(' 王芳, Sam,\r\nSam\r👨‍👩‍👧‍👦, ,');
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.players.map(player => player.label)).toEqual(['王芳', 'Sam', 'Sam', '👨‍👩‍👧‍👦']);
+    expect(parsed.duplicate).toBe(true);
+    const reordered = parseNames('Sam,王芳,Sam,Family', parsed.players);
+    expect(reordered.players.map(player => player.id)).toEqual(['player-2', 'player-1', 'player-3', 'player-4']);
+  });
   test('Unicode, blank lines, stable IDs and duplicate labels', () => {
     const parsed = parseNames('  王芳\r\n\r\nSam\nSam\n👨‍👩‍👧‍👦');
     expect(parsed.errors).toEqual([]); expect(parsed.players).toHaveLength(4); expect(parsed.duplicate).toBe(true);
@@ -110,6 +118,11 @@ test('revenue settings are optional, validated, and ads stay out of previews', (
   expect(siteSettings(release)).toMatchObject({ adsenseClient: '', amazonTag: '', tipUrl: '' });
   expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456', AMAZON_ASSOCIATES_TAG: 'wgf-20', TIP_JAR_URL: 'https://ko-fi.com/wgf' })).toMatchObject({ adsenseClient: 'ca-pub-1234567890123456', amazonTag: 'wgf-20', tipUrl: 'https://ko-fi.com/wgf' });
   expect(siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456' }).adsenseClient).toBe('');
+  expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456' }).adsenseRuleSlot).toBe('');
+  expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1509819871' }).adsenseRuleSlot).toBe('1509819871');
+  expect(siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1509819871' }).adsenseRuleSlot).toBe('');
+  expect(() => siteSettings({ ADSENSE_RULE_SLOT: '1509819871' })).toThrow('ADSENSE_RULE_SLOT');
+  expect(() => siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: 'invalid' })).toThrow('ADSENSE_RULE_SLOT');
   expect(() => siteSettings({ ADSENSE_CLIENT: 'pub-123' })).toThrow('ADSENSE_CLIENT');
   expect(() => siteSettings({ AMAZON_ASSOCIATES_TAG: 'wgf' })).toThrow('AMAZON_ASSOCIATES_TAG');
   expect(() => siteSettings({ TIP_JAR_URL: 'http://ko-fi.com/wgf' })).toThrow('TIP_JAR_URL');

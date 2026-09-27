@@ -25,7 +25,7 @@ const { related, shared, similar, similarHub, publisherHub } = Astro.props.rule
 const site = siteSettings().url;
 const title = rule ? `${ruleHeading(rule.gameName)} ${shared ? rule.editionLabel : 'Official rule'}` : '';
 ---
-{rule ? <Layout title={title} description={`Who starts in ${rule.gameName}: ${rule.firstPlayerRule} (${rule.editionLabel})`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)} image={`/og/${rule.slug}.png`} imageAlt={`${ruleHeading(rule.gameName)} ${rule.firstPlayerRule}`}>
+{rule ? <Layout ads={true} title={title} description={`Who starts in ${rule.gameName}: ${rule.firstPlayerRule} (${rule.editionLabel})`} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)} image={`/og/${rule.slug}.png`} imageAlt={`${ruleHeading(rule.gameName)} ${rule.firstPlayerRule}`}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: rule.gameName, item: `${site}/games/${rule.slug}/` }] }).replace(/</g, '\u003c')} />
   <div class="content-page"><GameArticle rule={rule} related={related} similar={similar} similarHub={similarHub} publisherHub={publisherHub} /></div>
 </Layout> : <NotFound />}

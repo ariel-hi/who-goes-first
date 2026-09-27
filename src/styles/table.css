@@ -211,7 +211,7 @@
   @keyframes coin-flip { from { transform:none; } to { transform:rotateX(var(--coin-turn)) rotateZ(var(--coin-tilt)); } }
   @keyframes coin-shadow { 0%,100% { opacity:.55; transform:scale(1); } 50% { opacity:.15; transform:scale(.55); } }
   .shells-reveal, .loading-table[data-method="shells"] { grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); }
-  .shells-reveal .reveal-player, .loading-table[data-method="shells"] .loading-player { border:1px solid color-mix(in srgb,var(--piece) 21%,#e8ded8); border-radius:17px; background:radial-gradient(ellipse at 50% 15%,#fffdf9 0 30%,transparent 80%),color-mix(in srgb,var(--piece) 9%,#fffdf9); padding:9px 3px 10px; }
+  .shells-reveal .reveal-player, .loading-table[data-method="shells"] .loading-player { border:1px solid color-mix(in srgb,var(--piece) 21%,var(--line)); border-radius:17px; background:color-mix(in srgb,var(--piece) 9%,var(--paper)); padding:9px 3px 10px; }
   .shell-scene, .loading-piece[data-method="shells"] { position:relative; width:110px; height:112px; perspective:400px; }
   .shell-shadow { position:absolute; bottom:2px; left:18px; width:75px; height:12px; border-radius:50%; background:#54454b24; filter:blur(3px); }
   .shell-bed { position:absolute; inset:0; width:110px; height:112px; }

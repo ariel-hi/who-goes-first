@@ -12,7 +12,7 @@ function elements(node: Node): Element[] {
 const attr = (node: Element, name: string) => node.attrs.find(value => value.name === name)?.value;
 const excluded = /\b(?:noindex|none)\b/i;
 /** Cloudflare randomizes email-link encoding; hash its decoded destination instead. */
-export function pageContentDigest(html: string): string {
+export function normalizedEmailLinks(html: string): string {
   const changes: { start: number; end: number; text: string }[] = [];
   for (const node of elements(parse(html, { sourceCodeLocationInfo: true }))) {
     const href = attr(node, 'href');
@@ -27,13 +27,16 @@ export function pageContentDigest(html: string): string {
     } catch { /* Keep invalid encodings in the hash unchanged. */ }
   }
   for (const change of changes.sort((a, b) => b.start - a.start)) html = html.slice(0, change.start) + change.text + html.slice(change.end);
-  return createHash('sha256').update(html).digest('hex');
+  return html;
 }
-export interface PageDigest { url: string; digest: string; digestAlgorithm?: 'email-link-normalized-v1' }
+export function pageContentDigest(html: string): string {
+  return createHash('sha256').update(normalizedEmailLinks(html)).digest('hex');
+}
+export interface PageDigest { url: string; digest: string; digestAlgorithm?: 'email-link-normalized-v1'; editorialDigest?: string; editorialDigestAlgorithm?: 'published-editorial-email-v1' }
 export interface SubmissionReceipt { checkedAt: string; endpoint: string; keyLocation: string; pages: PageDigest[]; status: 200 | 202 | null }
 
 /** Select live canonical pages explicitly; never send visitor input or tracking URLs. */
-export async function notifyChangedPages(paths: string[], key: string, send = false, previous: PageDigest[] = [], fetcher: typeof fetch = fetch): Promise<SubmissionReceipt> {
+export async function notifyChangedPages(paths: string[], key: string, send = false, previous: PageDigest[] = [], fetcher: typeof fetch = fetch, validatePage?: (url: string, html: string) => void): Promise<SubmissionReceipt> {
   if (!/^[a-f0-9]{32}$/i.test(key)) throw new Error('Invalid local IndexNow verification key.');
   const urls = [...new Set(paths.map(path => {
     if (!path.startsWith('/') && !path.startsWith(`${searchOrigin}/`)) throw new Error('Use clean production URLs or absolute paths.');
@@ -57,6 +60,7 @@ export async function notifyChangedPages(paths: string[], key: string, send = fa
     const canonicals = nodes.filter(node => node.tagName === 'link' && attr(node, 'rel')?.split(/\s+/).includes('canonical'));
     const robots = nodes.filter(node => node.tagName === 'meta' && /^(?:robots|bingbot)$/i.test(attr(node, 'name') || ''));
     if (canonicals.length !== 1 || attr(canonicals[0]!, 'href') !== url || !robots.length || robots.some(node => excluded.test(attr(node, 'content') || ''))) throw new Error('Canonical or indexing preflight failed; nothing was submitted.');
+    validatePage?.(url, html);
     pages.push({ url, digest: pageContentDigest(html), digestAlgorithm: 'email-link-normalized-v1' });
   }
   if (send && pages.some(page => previous.some(old => old.url === page.url && old.digest === page.digest))) throw new Error('An unchanged page was already received from this checkout; nothing was resubmitted.');

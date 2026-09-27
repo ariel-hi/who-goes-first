@@ -359,7 +359,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
             </div>
           </div>
           {bulkOpen && <div className="name-editor" id="bulk-names">
-            <label htmlFor="names">Player names <span className="muted small">One per line · up to 24 characters.</span></label>
+            <label htmlFor="names">Player names <span className="muted small">Separate with commas or new lines · up to 24 characters each.</span></label>
             <textarea id="names" rows={Math.max(3, players.length)} value={text} onChange={e => { setInputMode('names'); editNames(e.target.value); }} spellCheck={false} aria-invalid={errors.length > 0} aria-describedby="input-errors" />
           </div>}
           <div id="input-errors" className="input-errors">{errors.map(message => <p key={message} className="error" role="alert">{message}</p>)}</div>

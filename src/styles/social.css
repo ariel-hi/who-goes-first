@@ -10,3 +10,4 @@
 .share-pinterest .brand-icon{color:#e60023}
 .share-pinterest:hover{border-color:#e60023}
 @media (prefers-reduced-motion:reduce){.share-pill{transition:none}.share-pill:hover{transform:none}}
+.share-pill.share-icon{width:44px;height:44px;padding:0;justify-content:center;gap:0}

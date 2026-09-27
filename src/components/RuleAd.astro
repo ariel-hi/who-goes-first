@@ -1,0 +1,12 @@
+---
+import { siteSettings } from '../lib/site';
+const { adsenseClient, adsenseRuleSlot } = siteSettings();
+---
+{adsenseClient && adsenseRuleSlot && <aside class="rule-ad" aria-label="Advertisement">
+  <small>Advertisement</small>
+  <ins class="adsbygoogle" style="display:block;width:100%;height:250px" data-ad-client={adsenseClient} data-ad-slot={adsenseRuleSlot}></ins>
+</aside>}
+<style>
+  .rule-ad { margin: 2rem 0; height: 274px; overflow: hidden; }
+  .rule-ad small { display: block; color: var(--muted); font-size: .75rem; margin-bottom: .25rem; }
+</style>

@@ -1,6 +1,5 @@
 import { getCatalog, getPrompts } from './content/catalog';
 import { getBoardGames } from './content/board-games';
-import { getBrowseShelves, shelfHref } from './content/board-game-browse';
 import { publisherHubs, themeHubs } from './content/hubs';
 import { randomRuleEligible } from './content/random-rules';
 import { siteSettings } from './site';
@@ -17,7 +16,7 @@ export function sitemapEntries(): Record<SitemapSection, Entry[]> {
   return {
     pages: pages.map(path => ({ path })),
     rules: games.map(game => ({ path: `/games/${game.slug}/`, lastmod: game.materiallyUpdatedAt ?? undefined })),
-    'board-games': ['/board-games/', ...getBrowseShelves().shelves.map(shelf => shelfHref(shelf.letter, shelf.page)), ...getBoardGames().filter(game => game.rules.length > 1).map(game => `/board-games/${game.routeKey}/`)].map(path => ({ path })),
+    'board-games': ['/board-games/', ...getBoardGames().filter(game => game.rules.length > 1).map(game => `/board-games/${game.routeKey}/`)].map(path => ({ path })),
     hubs: hubs.map(path => ({ path })),
   };
 }

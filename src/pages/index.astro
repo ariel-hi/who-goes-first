@@ -18,7 +18,7 @@ const title = 'Who Goes First? Random First Player Picker';
     <noscript><p class="noscript">Enable JavaScript to pick a player on your device. You can still browse the static rules and fairness pages.</p></noscript>
     <div class="home-layout">
       <section class="home-picker" aria-labelledby="home-picker-heading">
-        <div class="home-picker-heading"><h1 id="home-picker-heading">Pick a player</h1></div>
+        <h1 id="home-picker-heading" class="sr-only">Who goes first?</h1>
         <PickerShell balloonEnabled={balloonEnabled} />
       </section>
       <section class="home-rules" aria-labelledby="home-rules-heading">
@@ -28,7 +28,6 @@ const title = 'Who Goes First? Random First Player Picker';
         <HomeRandomRule games={approved} />
         <ul class="home-rules-links">
           <li><a href={gamesPath}>Browse game rules</a></li>
-          <li class="mobile-random-link"><a href={`${gamesPath}#random-rule`}>Try a random rule</a></li>
           <li><a href="/house-rules/">Fun questions</a></li>
           <li><a href="/choose-who-goes-first/">How to choose who starts</a></li>
         </ul>
