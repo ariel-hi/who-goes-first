@@ -1,0 +1,43 @@
+{
+  "id": "gloomhaven-cephalofair-original-en",
+  "slug": "gloomhaven-cephalofair-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
+  "approvedRevision": "0de9cd7cfe5a7e150e31ca53b7ceaa63c14b641f1b3736b720a515f0cd2ec6f6",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "Gloomhaven",
+  "aliases": [],
+  "editionLabel": "Cephalofair English original edition",
+  "firstPlayerRule": "Players secretly choose two cards and select one as their leading card. Reveal those initiatives and a card for each monster type present; the lowest initiative acts first.",
+  "officialTieBreak": "For tied players, compare their non-leading cards; if still tied, the players decide. A player acts before a monster type with the same initiative. Players decide ties between monster types.",
+  "houseFallback": null,
+  "clarifications": [
+    "Initiative is determined again each round. A long rest has initiative 99; it can only be chosen when the character has at least two cards in their discard pile."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://centexboardgameminiatures.org/wp-content/uploads/2021/07/gloomhaven-rulebook.pdf",
+      "title": "Gloomhaven — English rulebook",
+      "publisher": "Cephalofair Games",
+      "printedPages": [
+        "16",
+        "17",
+        "18"
+      ],
+      "pdfPagesOneBased": [
+        16,
+        17,
+        18
+      ],
+      "location": "Round Overview; Card Selection; Determining Initiative",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Original52page Cephalofair manual with Brute/Tinkerer/Spellweaver/Scoundrel/Cragheart/Mindthief classes, original RoundOverview and IsaacChildres credits onPDF51. Rendered16/17/18 confirms two-card secret selection, leadingcard, lowerinitiative and fulltie ladder. Current officialGloomhaven product links74page2025second-edition manual already used by existingrecord; that download rejected fororiginal. New174430override without changing later390478assignment. Source custody: research/source-files/popular-originals-intake/gloomhaven-archive.pdf; SHA-256 9965c76dfc747c82a4013d645e95f5ffc64692865617527734199b064a2117fe. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": [
+    "The publisher-authored original English manual is preserved by a board-game club archive."
+  ]
+}
