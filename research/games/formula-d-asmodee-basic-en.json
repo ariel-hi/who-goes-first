@@ -1,0 +1,42 @@
+{
+  "id": "formula-d-asmodee-basic-en",
+  "slug": "formula-d-asmodee-basic-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Formula D",
+  "aliases": [],
+  "editionLabel": "Asmodee English basic rules",
+  "firstPlayerRule": "Each player rolls the black die for their starting position. The highest roll takes pole position and starts at the front; place the other cars in descending order of their rolls.",
+  "officialTieBreak": "Players with equal rolls reroll the die to settle their starting positions.",
+  "houseFallback": null,
+  "clarifications": [
+    "Race turns follow the cars’ positions on the track. If two cars are level, the higher gear goes first; if their gears are equal, the car nearest the inside for the next or current corner goes first.",
+    "The separate roll under “Start” determines whether the engine stalls or the car gets a good start; it does not choose the starting grid."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://images-cdn.asmodee.us/filer_public/59/36/59368703-d2ec-40c5-9ecc-c89cb3c11fef/fd01_basic_rules.pdf",
+      "title": "Formula D — English rulebook",
+      "publisher": "Asmodee / Play Machines",
+      "printedPages": [
+        "3",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5
+      ],
+      "location": "Order of play; Preparation for play — Start formation",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Inspected actual image-only Asmodee-hosted basic rulebook, rendered 3 order of play and 5 start formation. Page 8 credits Play Machines 2011 and translator Birgit Irgang. Public read-only legacy CDN retrieval used a request-local TLS certificate exception; file hash preserved. Also inspected publisher advanced page 5 which agrees on grid selection; optional advanced variants outside record scope. Rejected 121 KB archive PDF because it was a Universal Head summary, not publisher rules. Source custody: research/source-files/popular-sep26-13/formula-official.pdf; SHA-256 58cb80e2c9f7effd7cedf4764142446e35b9a3977e042f4e0edc1b2d14d095d0. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": [
+    "This record covers the basic rules. The publisher’s legacy download server reported an expired security certificate when checked."
+  ]
+}
