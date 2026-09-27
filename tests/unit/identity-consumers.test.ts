@@ -9,6 +9,9 @@ import { directorySearchEntries } from '../../src/pages/board-games/search.json'
 import { directoryEntryLinks } from '../../src/lib/directory-entry';
 import { rankDemand } from '../../scripts/lib/demand';
 import { buildRuleSearchAliases } from '../../src/lib/content/rule-search';
+import { searchRank } from '../../src/lib/search';
+import { contentRevision, publicRule } from '../../src/lib/content/schema';
+import { randomRuleRevision } from '../../src/lib/content/random-rules';
 
 test('the copied-site fixture binds all four states without any real enrollment or portable approval', () => {
   const fixture = publisherJourneyFixture();
@@ -55,7 +58,47 @@ test('a rule attached to several reviewed legacy identities retains all search a
   const registry = createIdentityRegistry([{ ...legacy[0], searchNames: ['First alternate'] }, { ...legacy[0], name: 'Second Game', bggId: '13', discoveryUrl: 'https://boardgamegeek.com/boardgame/13', searchNames: ['Second alternate'] }], empty);
   const edition = rule({ gameName: 'Legacy Game', aliases: ['Approved alias'] });
   const games = buildBoardGames(registry, [edition], [{ ruleId: edition.id, inventoryIds: ['12', '13'], reason: 'Synthetic independently reviewed shared rule attachment' }], empty);
-  expect(buildRuleSearchAliases(games).get(edition.id)).toEqual(['Approved alias', 'First alternate', 'Second alternate']);
+  expect(buildRuleSearchAliases(games).get(edition.id)).toEqual(['Approved alias', 'First alternate', 'Second Game', 'Second alternate']);
+});
+
+
+test('the assigned second-edition identity is searchable without attaching its rule to the original title', () => {
+  // Synthetic scope fixtures exercise the existing 316377 override; never source approval or enrollment.
+  const registry = createIdentityRegistry([
+    { ...legacy[0], name: '7 Wonders', bggId: '68448', discoveryUrl: 'https://boardgamegeek.com/boardgame/68448' },
+    { ...legacy[0], name: '7 Wonders (Second Edition)', bggId: '316377', discoveryUrl: 'https://boardgamegeek.com/boardgame/316377' },
+  ], empty);
+  const edition = rule({ id: '7-wonders-2020-en', slug: '7-wonders-2020-en', gameName: '7 Wonders',
+    aliases: ['Seven Wonders', '7 Wonders base game'], editionLabel: 'Synthetic test of the existing 2020 edition scope' });
+  const before = structuredClone(edition), beforeContent = contentRevision(edition), beforePortable = randomRuleRevision(publicRule(edition));
+  const games = buildBoardGames(registry, [edition], [{ ruleId: edition.id, inventoryIds: ['316377'], reason: 'Synthetic test of the existing explicit second-edition scope' }], empty);
+  expect(games.find(game => game.identityId === 'bgg-68448')?.rules).toEqual([]);
+  expect(games.find(game => game.identityId === 'bgg-316377')?.rules.map(rule => rule.id)).toEqual([edition.id]);
+  const aliases = buildRuleSearchAliases(games).get(edition.id)!;
+  expect(aliases).toEqual(['Seven Wonders', '7 Wonders base game', '7 Wonders (Second Edition)']);
+  expect(searchRank({ ...publicRule(edition), aliases }, '7 Wonders (Second Edition)')).toBe(0);
+  expect(edition).toEqual(before);
+  expect(contentRevision(edition)).toBe(beforeContent);
+  expect(randomRuleRevision(publicRule(edition))).toBe(beforePortable);
+});
+
+test('an assigned opaque publisher name is discoverable with or without an evidenced external number', () => {
+  for (const withExternalNumber of [false, true]) {
+    const identity = accepted({ name: 'Publisher Qualified Base', searchNames: ['Publisher alternate', 'PUBLISHER ALTERNATE'],
+      ...(withExternalNumber ? { bggId: '999999', bggIdEvidence: { value: '999999', sourceId: 'product', location: 'Synthetic explicit external claim' } } : {}) });
+    const edition = rule({ gameName: 'Approved Edition Title', aliases: ['Approved alias'] });
+    const before = structuredClone(edition), beforeContent = contentRevision(edition), beforePortable = randomRuleRevision(publicRule(edition));
+    const registry = createIdentityRegistry([], { formatVersion: 1, records: [identity] });
+    const games = buildBoardGames(registry, [edition], [], { formatVersion: 1, records: [assignment(identity, edition)] });
+    expect(games[0]!.routeKey).toBe(gameId);
+    expect(games[0]!.bggId).toBe(withExternalNumber ? '999999' : undefined);
+    const aliases = buildRuleSearchAliases(games).get(edition.id)!;
+    expect(aliases).toEqual(['Approved alias', 'Publisher Qualified Base', 'Publisher alternate']);
+    expect(searchRank({ ...publicRule(edition), aliases }, identity.name)).toBe(0);
+    expect(edition).toEqual(before);
+    expect(contentRevision(edition)).toBe(beforeContent);
+    expect(randomRuleRevision(publicRule(edition))).toBe(beforePortable);
+  }
 });
 
 test('adding an evidenced external number leaves the allocated route and attachment stable', () => {

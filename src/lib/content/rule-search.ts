@@ -11,7 +11,7 @@ export function buildRuleSearchAliases(games: readonly BoardGame[]): ReadonlyMap
   const aliases = new Map<string, string[]>();
   for (const game of games) for (const rule of game.rules) {
     const current = aliases.get(rule.id) ?? [...rule.aliases];
-    aliases.set(rule.id, [...current, ...uniqueDirectorySearchTerms(rule.gameName, [...current, ...game.searchNames]).filter(term => !current.includes(term))]);
+    aliases.set(rule.id, [...current, ...uniqueDirectorySearchTerms(rule.gameName, [...current, game.name, ...game.searchNames]).filter(term => !current.includes(term))]);
   }
   return aliases;
 }
