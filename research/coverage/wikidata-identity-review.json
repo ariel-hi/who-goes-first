@@ -1,13 +1,13 @@
 {
-  "reviewedOn": "2026-09-26",
+  "reviewedOn": "2026-09-27",
   "sourceSnapshot": "research/coverage/wikidata-board-games.json",
   "sourceSnapshotStatementSha256": "cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2",
-  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review.",
-  "method": "Read CC0 Wikidata item facts using wbgetentities and saved revisions, then corroborate accepted game/edition identities with original designer, publisher, federation, or association-hosted federation sources. Per-ID edition qualifiers are distinguished from item-wide publication years. Qualified display names prevent merging identical names. Holds retain unresolved ambiguity.",
+  "scope": "Bounded identity-only review: 52 leads, comprising 33 new flagged leads, all 12 normalized original-name collisions, and seven already-enrolled unflagged classics. Accept means identity research is sufficient for a qualified discovery label; it approves no starting rule, portable criterion, edition transfer, or deployment. No BoardGameGeek API, bulk dataset, or page content was fetched; identifiers come from Wikidata CC0 and one observed primary publisher hyperlink. Unknown original collision editions are not relabeled by this review. Additional review on 2026-09-27 qualifies the existing unflagged 315200/Q106948984 display name as Fantasy Realms: The Cursed Hoard using normalized official publisher context and a directly inspected primary BGG indexed numeric/title result. The preceding 52-lead scope and fetch-method statements describe that historical review; this addition imports no identity or rule.",
+  "method": "Read CC0 Wikidata item facts using wbgetentities and saved revisions, then corroborate accepted game/edition identities with original designer, publisher, federation, or association-hosted federation sources. Per-ID edition qualifiers are distinguished from item-wide publication years. Qualified display names prevent merging identical names. Holds retain unresolved ambiguity. Additional 315200 title review corroborates the saved P2339 identity binding with the official publisher expansion classification and qualified canonical BGG indexed item evidence. Failed destination opens and mixed Wikidata metadata remain explicit; no raw BGG HTTP, physical manual or printing correspondence is approved.",
   "factsAudit": "research/coverage/wikidata-identity-facts.json",
   "counts": {
-    "reviewed": 52,
-    "accept": 23,
+    "reviewed": 53,
+    "accept": 24,
     "hold": 29,
     "reject": 0,
     "newlyEligibleHeldIdentities": 16,
@@ -209,6 +209,34 @@
       "url": "https://beziergames.com/blogs/news/trick-taking-with-a-healthy-dose-of-area-control",
       "inspectedOn": "2026-09-26",
       "observedEvidence": "The August 8, 2022 article distinguishes a Japanese original from Bezier Deluxe Edition, but does not expose an inspected identifier cross-link."
+    },
+    "fantasyRealmsCursedHoardPublisher": {
+      "kind": "primary-publisher",
+      "title": "WizKids Fantasy Realms: The Cursed Hoard product",
+      "url": "https://wizkids.com/fantasy-realms-the-cursed-hoard/",
+      "inspectedOn": "2026-09-27",
+      "observedEvidence": "Publisher product labels The Cursed Hoard as a modular expansion of the original Fantasy Realms, with Cursed Items and New Suits modules. This establishes expansion scope rather than the base-game rule scope.",
+      "custody": {
+        "packet": "research/source-files/sep27-fantasy-realms-identity",
+        "member": "root-primary-pages.txt",
+        "sha256": "9326d3d98cd60f391af53a323135831bb2a71416ed5efe63b6e761ec5b566d23",
+        "context": "Complete root web-tool normalized response, Cursed Hoard product 155 lines and separate base product 166 lines; not raw HTTP."
+      },
+      "approvalStatus": "reviewed-identity-evidence-only"
+    },
+    "fantasyRealmsCursedHoardBggIndexed": {
+      "kind": "primary-database-search-index",
+      "title": "BoardGameGeek indexed Fantasy Realms: The Cursed Hoard /315200",
+      "url": "https://boardgamegeek.com/boardgame/315200",
+      "inspectedOn": "2026-09-27",
+      "observedEvidence": "Root directly inspected the rich primary indexed canonical result: BGG Item ID 315200, Fantasy Realms: The Cursed Hoard (2021), modular expansion. Its scope agrees with the official WizKids expansion product. Destination opens in the prior intake failed; this is qualified indexed evidence, not a successful raw current page fetch.",
+      "custody": {
+        "packet": "research/source-files/sep27-fantasy-realms-identity",
+        "member": "root-numeric-search.txt",
+        "sha256": "8e9a89fa59a21cab9f7d19feb7bec2f22116e903233ff3feb11dd8e9824f5253",
+        "context": "Complete root web-tool search response; exact canonical numeric item result was crawled today by provider, not direct HTTP custody."
+      },
+      "approvalStatus": "reviewed-identity-evidence-only"
     }
   },
   "decisions": [
@@ -2333,6 +2361,42 @@
       },
       "startingRuleApproved": false,
       "requiredFollowup": "Find primary game/edition evidence and an identifier binding or explicit Wikidata edition qualification before enrolling this held lead."
+    },
+    {
+      "bggId": "315200",
+      "wikidataId": "Q106948984",
+      "snapshotName": "Fantasy Realms",
+      "displayName": "Fantasy Realms: The Cursed Hoard",
+      "decision": "accept",
+      "reason": "Identity-only display qualification for the already enrolled unflagged 315200/Q106948984. Exact saved P2339 binding and directly reviewed primary BGG indexed numeric/title result identify The Cursed Hoard; official publisher context independently identifies it as a modular expansion of Fantasy Realms. Mixed item-wide base-game metadata does not authorize attaching base 223040 rules to this expansion.",
+      "snapshotReviewFlags": [],
+      "originalNameCollisionIds": [],
+      "alreadyIncludedByUnflaggedImport": true,
+      "evidence": {
+        "wikidata": [
+          {
+            "wikidataId": "Q106948984",
+            "url": "https://www.wikidata.org/wiki/Q106948984",
+            "label": "Fantasy Realms",
+            "bggIdClaims": [
+              {
+                "value": "315200"
+              }
+            ],
+            "provenance": "Exact saved P2339query snapshot research/coverage/wikidata-board-games.json:53082–53095, statementSHA cdf21a7288e92cee747e813b962fe6042a2fe2d614fde529e272f91cefea4db2. Root's2026-09-27normalizedQpage reports same P2339value and CursedHoardalias with mixed2017description. No entity revision, rank, qualifiers, references or permanentURL invented."
+          }
+        ],
+        "primarySourceIds": [
+          "fantasyRealmsCursedHoardPublisher",
+          "fantasyRealmsCursedHoardBggIndexed"
+        ]
+      },
+      "startingRuleApproved": false,
+      "editionRuleTransferApproved": false,
+      "requiredFollowup": "Starting-rule research remains pending. Any expansion or base-game rule needs its own exact identity and edition evidence; no rule, alias, printing or portable transfer is approved by this title review.",
+      "reviewedBy": "root-primary-identity-review",
+      "reviewedOn": "2026-09-27",
+      "sourceEvidenceScope": "normalized-publisher-and-qualified-primary-indexed-identity-only"
     }
   ]
 }
