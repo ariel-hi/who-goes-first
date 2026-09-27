@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import { useId } from 'react';
 import type { Outcome } from '../../lib/selection';
 import { displayLabel } from '../../lib/roster';
 import { spinnerRotation } from '../../lib/presentations';
@@ -18,6 +19,7 @@ const towerFalls: readonly (readonly (readonly [number, number, number])[])[] = 
 // Decorative SVG/CSS only. Selection, timing, skip and interruptions belong to
 // the picker. These components cannot choose or change a winner.
 export default function TableReveals({ outcome, plan, mode, settled, preview = false }: { outcome: Outcome; plan: RevealPlan; mode: 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'; settled: boolean; preview?: boolean }) {
+  const sheenId = useId();
   const chosen = preview ? -1 : outcome.players.findIndex(p => p.id === outcome.winnerId);
   if (mode === 'spinner') {
     const count = outcome.players.length;
@@ -29,11 +31,19 @@ export default function TableReveals({ outcome, plan, mode, settled, preview = f
     };
     return <div className="spinner-stage" role="img" aria-label={preview ? 'Spinner preview' : settled ? 'Spinner result' : 'Spinner turning'} data-settled={settled} data-preview={preview} data-winner-index={preview ? undefined : chosen} style={preview ? undefined : { '--piece': playerColor(outcome.players[chosen]!) } as CSSProperties}>
       <div className="spinner-disc"><svg viewBox="0 0 280 280" className="spinner-wheel" aria-hidden="true" style={{ '--turn': preview ? '0deg' : `${spinnerRotation(chosen, count, plan[outcome.winnerId]!.spinnerTurns, plan[outcome.winnerId]!.spinnerOffset)}deg` } as CSSProperties}>
+        {outcome.players.map((player, i) => <g key={player.id}><path d={slicePath(i)} fill={playerColor(player)} stroke="#fffaf4" strokeWidth="2"/></g>)}
+        {settled && chosen >= 0 && <>
+          <defs>
+            <linearGradient id={`${sheenId}-light`} x1="0" y1="0" x2="1" y2=".35"><stop offset="35%" stopColor="#fffdf9" stopOpacity="0"/><stop offset="50%" stopColor="#fffdf9" stopOpacity=".65"/><stop offset="65%" stopColor="#fffdf9" stopOpacity="0"/></linearGradient>
+            <clipPath id={`${sheenId}-slice`}><path d={slicePath(chosen)}/></clipPath>
+          </defs>
+          <g clipPath={`url(#${sheenId}-slice)`} pointerEvents="none"><rect className="spinner-sheen" x="-280" y="0" width="280" height="280" fill={`url(#${sheenId}-light)`}/></g>
+        </>}
+        {chosen >= 0 && <path className="spinner-winning-slice" d={slicePath(chosen)} fill="none" stroke="none" pointerEvents="none"/>}
         {outcome.players.map((player, i) => {
           const [tx, ty] = point(i * step, 82);
-          return <g key={player.id}><path d={slicePath(i)} fill={playerColor(player)} stroke="#fffaf4" strokeWidth="2"/><text x={tx} y={ty} dy=".35em" textAnchor="middle" fill="#34342f" fontSize="17" fontFamily="Georgia">{i + 1}</text></g>;
+          return <text key={player.id} x={tx} y={ty} dy=".35em" textAnchor="middle" fill="#34342f" fontSize="17" fontFamily="Georgia">{i + 1}</text>;
         })}
-        {chosen >= 0 && <path className="spinner-winning-slice" d={slicePath(chosen)} fill="none" stroke="none" pointerEvents="none"/>}
         <circle cx="140" cy="140" r="17" fill="#fffaf4"/>
       </svg></div>
       <svg viewBox="0 0 24 32" className="spinner-pin" aria-hidden="true"><path d="M3 3Q12-1 21 3L12 29Z" fill="#61566f"/></svg>

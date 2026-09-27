@@ -48,19 +48,57 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
     .filter(animation => animation.effect?.getTiming().iterations === Infinity)
     .every(animation => {
       if (!(animation instanceof CSSAnimation)) return false;
-      if (animation.animationName.endsWith('glimmer')) return true;
       const effect = animation.effect;
-      if (!allowBalloonSheen || animation.animationName !== 'balloon-shimmer' || !(effect instanceof KeyframeEffect)) return false;
+      if (!(effect instanceof KeyframeEffect) || effect.getTiming().duration !== 6000) return false;
       const target = effect.target;
-      if (!(target instanceof SVGRectElement) || !target.matches('.balloon-field[data-settled="true"] .survivor .balloon-shape .balloon-sheen') || effect.getTiming().duration !== 6000) return false;
-      // Only the contained horizontal sheen may move after the reveal settles.
       const frames = effect.getKeyframes();
-      return frames.length >= 2 && frames.every(frame => {
+      if (!(target instanceof Element) || frames.length < 2) return false;
+      // Settled objects keep their geometry: only light color/opacity varies.
+      const stripColors = (value: string) => value.replace(/(?:rgba?|color|oklch|oklab|lab|lch)\([^)]*\)/g, '').replace(/\s+/g, ' ').replace(/\s*,\s*/g, ', ').trim();
+      const onlyProperty = (property: string) => frames.every(frame => Object.keys(frame).every(key => ['offset', 'computedOffset', 'easing', 'composite', property].includes(key)));
+      if (animation.animationName === 'piece-glimmer') {
+        return target.matches('.table-reveal[data-settled="true"] .reveal-chosen :is(.card-front,.shell-pearl)') && !effect.pseudoElement
+          && onlyProperty('boxShadow') && frames.every(frame => typeof frame.boxShadow === 'string' && stripColors(frame.boxShadow) === '0px 0px 0px 1.5px, 0px 0px 8px 2px');
+      }
+      if (animation.animationName === 'filter-glimmer') {
+        return target.matches('.spinner-stage[data-settled="true"] .spinner-winning-slice,.table-reveal[data-settled="true"] .reveal-chosen :is(.block-stack,.match-draw,.dice-pair,.coin-toss,.shell-scene),.balloon-field[data-settled="true"] .survivor>svg:first-child') && !effect.pseudoElement
+          && onlyProperty('filter') && frames.every(frame => typeof frame.filter === 'string' && stripColors(frame.filter).replace(/\( /g, '(').replace(/ \)/g, ')') === 'drop-shadow(0px 0px 1px) drop-shadow(0px 0px 5px)');
+      }
+      if (animation.animationName === 'shell-glimmer') {
+        return target.matches('.shells-reveal[data-settled="true"] .reveal-chosen .shell-sheen') && !effect.pseudoElement
+          && onlyProperty('opacity') && frames.every(frame => typeof frame.opacity === 'string' && Number(frame.opacity) >= .27 && Number(frame.opacity) <= .65);
+      }
+      if (animation.animationName === 'surface-shimmer') {
+        if (!(target instanceof HTMLElement) || !target.matches('.table-reveal[data-settled="true"] .reveal-chosen :is(.card-front,.block-stack i>span,.match-wood,.match-head,.die,.coin-face,.shell-pearl)') || effect.pseudoElement !== '::before') return false;
+        return frames.every(frame => {
+          if (!Object.keys(frame).every(key => ['offset', 'computedOffset', 'easing', 'composite', 'backgroundPosition', 'backgroundPositionX', 'backgroundPositionY'].includes(key))) return false;
+          if (typeof frame.backgroundPosition === 'string') return /^(?:0|100)% 0(?:%|px)?$/.test(frame.backgroundPosition);
+          return typeof frame.backgroundPositionX === 'string' && /^(?:0|100)%$/.test(frame.backgroundPositionX)
+            && typeof frame.backgroundPositionY === 'string' && /^0(?:%|px)?$/.test(frame.backgroundPositionY);
+        });
+      }
+      const balloon = allowBalloonSheen && animation.animationName === 'balloon-shimmer';
+      const spinner = animation.animationName === 'spinner-shimmer';
+      if (!balloon && !spinner || !(target instanceof SVGRectElement)) return false;
+      if (!target.matches(balloon ? '.balloon-field[data-settled="true"] .survivor .balloon-shape .balloon-sheen' : '.spinner-stage[data-settled="true"] .spinner-sheen')) return false;
+      const clip = target.parentElement?.getAttribute('clip-path')?.match(/^url\(#(.+)\)$/)?.[1];
+      if (!clip || !document.getElementById(clip)?.matches('clipPath')) return false;
+      const outline = element.querySelector(balloon ? '.survivor .balloon-shape>path:first-child' : '.spinner-winning-slice');
+      if (!outline || document.getElementById(clip)?.querySelector('path')?.getAttribute('d') !== outline.getAttribute('d')) return false;
+      // Only the contained horizontal sheen may move after the reveal settles.
+      return onlyProperty('transform') && frames.every(frame => {
         if (typeof frame.transform !== 'string') return false;
         const matrix = new DOMMatrix(frame.transform);
-        return matrix.is2D && matrix.a === 1 && matrix.b === 0 && matrix.c === 0 && matrix.d === 1 && matrix.f === 0 && matrix.e >= 0 && matrix.e <= 180;
+        return matrix.is2D && matrix.a === 1 && matrix.b === 0 && matrix.c === 0 && matrix.d === 1 && matrix.f === 0 && matrix.e >= 0 && matrix.e <= (balloon ? 180 : 560);
       });
     }), method.path === 'balloon')).toBe(true);
+  if (method.path !== 'spinner' && method.path !== 'balloon') {
+    const surfaces = ({ cards: '.card-front', towers: '.block-stack i>span', straws: '.match-wood,.match-head', dice: '.die', coin: '.coin-face', shells: '.shell-pearl' } as Record<string, string>)[method.path]!;
+    const reflections = await scene.locator(`.reveal-chosen :is(${surfaces})`).evaluateAll(elements => elements.map(element => getComputedStyle(element, '::before').animationName));
+    expect(reflections.length).toBeGreaterThan(0);
+    expect(reflections.every(name => name === 'surface-shimmer')).toBe(true);
+    expect(await scene.locator(`.reveal-player:not(.reveal-chosen) :is(${surfaces})`).evaluateAll(elements => elements.every(element => getComputedStyle(element, '::before').animationName === 'none'))).toBe(true);
+  }
   await expect(page.locator('.roster')).toBeVisible();
   await page.getByRole('button', { name: 'Pick again' }).click();
   await expect(scene).not.toHaveAttribute('data-original-scene', 'yes');
@@ -71,6 +109,19 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
   await page.getByLabel('Name for player 1', { exact: true }).fill('Edited player');
   await expect(scene).toHaveAttribute('data-preview', 'true');
   await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Edited player');
+});
+
+for (const mode of ['Quick', 'Instant']) test(`${mode} reflects light only on the winning seat and stops with reduced motion`, async ({ page }) => {
+  await page.goto('/');
+  await showAllMethods(page);
+  await page.getByRole('radio', { name: mode, exact: true }).check();
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(page.locator('.player.winner')).toHaveCount(1);
+  expect(await page.locator('.player.winner .seat-token').evaluate(element => getComputedStyle(element, '::after').animationName)).toBe('surface-shimmer');
+  expect(await page.locator('.player:not(.winner) .seat-token').evaluateAll(elements => elements.every(element => getComputedStyle(element, '::after').animationName === 'none'))).toBe(true);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  expect(await page.locator('.picker').evaluate(element => element.getAnimations({ subtree: true }).length)).toBe(0);
 });
 
 test('spinner keeps named seats in the roster without a duplicate list', async ({ page }) => {
@@ -270,7 +321,9 @@ test('cards perform overlapping three-dimensional flips and retain their faces',
   await expect(page.locator('.cards-reveal .reveal-chosen .card-result')).toHaveText('GO');
   await expect(page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-result')).toHaveText(Array(11).fill('—'));
   await expect(page.locator('.cards-reveal .card-front svg')).toHaveCount(0);
-  await expect(page.locator('.cards-reveal .reveal-chosen .card-front')).toHaveCSS('animation-name', 'none');
+  await expect(page.locator('.cards-reveal .reveal-chosen .card-front')).toHaveCSS('animation-name', 'piece-glimmer');
+  expect(await page.locator('.cards-reveal .reveal-chosen .card-front').evaluate(element => getComputedStyle(element, '::before').animationName)).toBe('surface-shimmer');
+  expect(await page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-front').evaluateAll(elements => elements.every(element => getComputedStyle(element).animationName === 'none'))).toBe(true);
 });
 
 test('coins toss together and settle with one crown face up', async ({ page }) => {
