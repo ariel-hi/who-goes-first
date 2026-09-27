@@ -272,34 +272,44 @@
   /* The winner remains visible in the final scene. */
   .player.winner, .reveal-chosen, .survivor, .spinner-stage {
     --winner-edge:color-mix(in srgb,var(--piece) 65%,#51415b);
-    --winner-halo:color-mix(in srgb,var(--piece) 86%,transparent);
-    --winner-soft:color-mix(in srgb,var(--piece) 65%,transparent);
+    --winner-halo:color-mix(in srgb,var(--piece) 45%,transparent);
+    --winner-soft:color-mix(in srgb,var(--piece) 32%,transparent);
   }
   .player.winner .seat-token {
-    box-shadow:0 0 0 1.5px #fffdf9,0 0 0 3px var(--winner-edge),0 0 13px 7px var(--winner-soft),0 0 25px 10px var(--winner-halo);
-    animation:seat-glimmer 3.6s ease-in-out infinite;
+    position:relative;
+    box-shadow:0 0 0 1.5px #fffdf9,0 0 6px 2px var(--winner-soft);
+    animation:seat-glimmer 6s ease-in-out infinite;
+  }
+  .player.winner .seat-token::after {
+    content:''; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+    background:linear-gradient(110deg,transparent 37%,#fffdf92e 50%,transparent 63%);
+    background-size:300% 100%; background-position:100% 0;
+    animation:surface-shimmer 6s ease-in-out infinite;
   }
   .shells-reveal[data-settled=true] .reveal-chosen .shell-pearl {
-    box-shadow:0 0 0 3px #fffdf9,0 0 0 6px var(--winner-edge),0 0 16px 9px var(--winner-soft),0 0 30px 12px var(--winner-halo);
-    animation:piece-glimmer 3.6s ease-in-out infinite;
+    box-shadow:0 0 0 1.5px #fffdf9,0 0 6px 2px var(--winner-soft);
+    animation:piece-glimmer 6s ease-in-out infinite;
   }
   .spinner-stage[data-settled=true] .spinner-winning-slice {
     stroke:var(--winner-edge); stroke-width:4px;
-    filter:drop-shadow(0 0 4px #fffdf9) drop-shadow(0 0 9px var(--winner-halo)) drop-shadow(0 0 17px var(--winner-soft));
-    animation:filter-glimmer 3.6s ease-in-out infinite;
+    filter:drop-shadow(0 0 1px #fffdf980) drop-shadow(0 0 4px var(--winner-soft));
+    animation:filter-glimmer 6s ease-in-out infinite;
   }
   .table-reveal[data-settled=true] .reveal-chosen :is(.block-stack,.match-draw,.dice-pair,.coin-toss),
   .shells-reveal[data-settled=true] .reveal-chosen .shell-scene {
-    filter:drop-shadow(0 0 4px #fffdf9) drop-shadow(0 0 9px var(--winner-halo)) drop-shadow(0 0 17px var(--winner-soft));
-    animation:filter-glimmer 3.6s ease-in-out infinite;
+    filter:drop-shadow(0 0 1px #fffdf980) drop-shadow(0 0 4px var(--winner-soft));
+    animation:filter-glimmer 6s ease-in-out infinite;
   }
   .balloon-field[data-settled=true] .survivor>svg:first-child {
-    filter:drop-shadow(0 0 4px #fffdf9) drop-shadow(0 0 9px var(--winner-halo)) drop-shadow(0 0 17px var(--winner-soft));
-    animation:balloon-land .32s ease-out both, filter-glimmer 3.6s .32s ease-in-out infinite;
+    filter:drop-shadow(0 0 1px #fffdf980) drop-shadow(0 0 4px var(--winner-soft));
+    animation:balloon-land .32s ease-out both, filter-glimmer 6s .32s ease-in-out infinite;
   }
-  @keyframes seat-glimmer { 0%,100% { box-shadow:0 0 0 1.5px #fffdf9,0 0 0 3px var(--winner-edge),0 0 13px 7px var(--winner-soft),0 0 25px 10px var(--winner-halo); } 50% { box-shadow:0 0 0 1.5px #fffdf9,0 0 0 3px var(--winner-edge),0 0 17px 9px var(--winner-soft),0 0 31px 12px var(--winner-halo); } }
-  @keyframes piece-glimmer { 0%,100% { box-shadow:0 0 0 3px #fffdf9,0 0 0 6px var(--winner-edge),0 0 16px 9px var(--winner-soft),0 0 30px 12px var(--winner-halo); } 50% { box-shadow:0 0 0 3px #fffdf9,0 0 0 6px var(--winner-edge),0 0 20px 11px var(--winner-soft),0 0 36px 14px var(--winner-halo); } }
-  @keyframes filter-glimmer { 0%,100% { filter:drop-shadow(0 0 4px #fffdf9) drop-shadow(0 0 9px var(--winner-halo)) drop-shadow(0 0 17px var(--winner-soft)); } 50% { filter:drop-shadow(0 0 5px #fffdf9) drop-shadow(0 0 12px var(--winner-halo)) drop-shadow(0 0 21px var(--winner-soft)); } }
+  .balloon-sheen { animation:balloon-shimmer 6s ease-in-out infinite; }
+  @keyframes seat-glimmer { 0%,100% { box-shadow:0 0 0 1.5px #fffdf9,0 0 6px 2px var(--winner-soft); } 50% { box-shadow:0 0 0 1.5px #fffdf9,0 0 6px 2px var(--winner-halo); } }
+  @keyframes piece-glimmer { 0%,100% { box-shadow:0 0 0 1.5px #fffdf9,0 0 6px 2px var(--winner-soft); } 50% { box-shadow:0 0 0 1.5px #fffdf9,0 0 6px 2px var(--winner-halo); } }
+  @keyframes filter-glimmer { 0%,100% { filter:drop-shadow(0 0 1px #fffdf980) drop-shadow(0 0 4px var(--winner-soft)); } 50% { filter:drop-shadow(0 0 1px #fffdf980) drop-shadow(0 0 4px var(--winner-halo)); } }
+  @keyframes surface-shimmer { 0%,30% { background-position:100% 0; } 80%,100% { background-position:0% 0; } }
+  @keyframes balloon-shimmer { 0%,30% { transform:translateX(0); } 80%,100% { transform:translateX(180px); } }
   .preview-banner { border-radius:14px; }
   .random-rule { margin:24px 0 32px; border:1px solid var(--line); border-radius:24px; background:var(--paper); padding:22px; scroll-margin-top:16px; }
   .random-rule-heading { display:flex; justify-content:space-between; align-items:center; gap:20px; }

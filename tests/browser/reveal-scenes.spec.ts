@@ -44,7 +44,23 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
   await expect(page.locator('.winner-announcement')).toContainText('Seat 2 goes first');
   await expect(scene).toHaveAttribute('data-settled', 'true');
   await expect(scene).toHaveAttribute('data-original-scene', 'yes');
-  expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).filter(animation => animation.effect?.getTiming().iterations === Infinity).every(animation => animation instanceof CSSAnimation && animation.animationName.endsWith('glimmer')))).toBe(true);
+  expect(await scene.evaluate((element, allowBalloonSheen) => element.getAnimations({ subtree: true })
+    .filter(animation => animation.effect?.getTiming().iterations === Infinity)
+    .every(animation => {
+      if (!(animation instanceof CSSAnimation)) return false;
+      if (animation.animationName.endsWith('glimmer')) return true;
+      const effect = animation.effect;
+      if (!allowBalloonSheen || animation.animationName !== 'balloon-shimmer' || !(effect instanceof KeyframeEffect)) return false;
+      const target = effect.target;
+      if (!(target instanceof SVGRectElement) || !target.matches('.balloon-field[data-settled="true"] .survivor .balloon-shape .balloon-sheen') || effect.getTiming().duration !== 6000) return false;
+      // Only the contained horizontal sheen may move after the reveal settles.
+      const frames = effect.getKeyframes();
+      return frames.length >= 2 && frames.every(frame => {
+        if (typeof frame.transform !== 'string') return false;
+        const matrix = new DOMMatrix(frame.transform);
+        return matrix.is2D && matrix.a === 1 && matrix.b === 0 && matrix.c === 0 && matrix.d === 1 && matrix.f === 0 && matrix.e >= 0 && matrix.e <= 180;
+      });
+    }), method.path === 'balloon')).toBe(true);
   await expect(page.locator('.roster')).toBeVisible();
   await page.getByRole('button', { name: 'Pick again' }).click();
   await expect(scene).not.toHaveAttribute('data-original-scene', 'yes');
