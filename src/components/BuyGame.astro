@@ -32,5 +32,6 @@ const { href, name, gear = [] } = Astro.props;
   .gear-list a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;font-size:14px}
   .gear-list a:hover{border-color:var(--green)}
   .gear-list small{display:block;margin:2px 0 0;color:var(--muted);font-size:12px}
+  @media (max-width:480px){.buy-card{display:grid;grid-template-columns:minmax(0,1fr) auto}.amazon-badge{grid-column:1/-1;justify-self:start}}
   @media (prefers-reduced-motion:reduce){.buy-card{transition:none}.buy-card:hover{transform:none}}
 </style>
