@@ -19,6 +19,15 @@ describe('decision tools', () => {
   it('parses names from lines and commas', () => {
     expect(parseNames('Alex, Sam\n\n  Jordan \n,')).toEqual(['Alex', 'Sam', 'Jordan']);
   });
+  it('detects extra names without building an unbounded roster', () => {
+    const roster = Array.from({ length: 5000 }, (_, i) => 'Player ' + (i + 1)).join(',\n');
+    const names = parseNames(roster, true);
+    expect(names).toHaveLength(201);
+    expect(names[200]).toBe('Player 201');
+    expect(parseNames(roster)).toHaveLength(200);
+    expect(parseNames(' 王芳,👨‍👩‍👧‍👦\n王芳 ', true)).toEqual(['王芳', '👨‍👩‍👧‍👦', '王芳']);
+    expect(parseNames(' ,\n ' + Array.from({ length: 200 }, (_, i) => 'Player ' + (i + 1)).join(', ,\n'), true)).toHaveLength(200);
+  });
   it('flips both sides', () => {
     expect(flipCoin(() => 0)).toBe('heads');
     expect(flipCoin(() => 1)).toBe('tails');

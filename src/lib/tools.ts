@@ -19,9 +19,18 @@ export function splitTeams(names: readonly string[], teamCount: number, word: Ra
   return teams;
 }
 
-/** One name per line or comma; blank entries are dropped. Duplicates stay: two lines are two entries. */
-export function parseNames(text: string): string[] {
-  return text.split(/[\n,]/).map(name => name.trim()).filter(Boolean).slice(0, 200);
+export const MAX_TEAM_NAMES = 200;
+
+/** Blank entries are dropped; duplicates stay. Request one extra entry to detect overflow. */
+export function parseNames(text: string, detectOverflow = false): string[] {
+  const limit = detectOverflow ? MAX_TEAM_NAMES + 1 : MAX_TEAM_NAMES;
+  const names: string[] = [];
+  for (const entry of text.matchAll(/[^\n,]+/g)) {
+    const name = entry[0].trim();
+    if (name) names.push(name);
+    if (names.length === limit) break;
+  }
+  return names;
 }
 
 export type Side = 'heads' | 'tails';
