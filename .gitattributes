@@ -3,3 +3,7 @@
 research/coverage/wikidata-native-title-leads.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/coverage/wikidata-native-title-decisions.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.pdf binary
+
+# Preserve the exact reviewed pending record and helper bytes across checkouts.
+research/games/7-wonders-architects-repos-en.json -text
+scripts/reviewed-next-six-cutover.mjs -text
