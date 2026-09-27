@@ -1,0 +1,43 @@
+{
+  "id": "7-wonders-architects-repos-en",
+  "slug": "7-wonders-architects-repos-en",
+  "language": "en",
+  "status": "needs-review",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "7 Wonders: Architects",
+  "aliases": [],
+  "editionLabel": "Repos Production English base rules",
+  "firstPlayerRule": "The youngest player starts, and play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After finishing a turn, the player to your left takes the next turn.",
+    "Choosing a Wonder tray randomly during setup does not choose the starting player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders-architects/Rules/rules-architects-en-1639490431DeqhF.pdf",
+      "title": "7 Wonders: Architects — English rulebook",
+      "publisher": "Repos Production",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Turn overview",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "UNAPPROVED / UNAPPLIED candidate. The cached batch26 official PDF architects-official.pdf is 21,772,954 bytes, SHA-256 cd70b3200afcc866adcc0406773c2f1b6c800141d925eaaa803e04ee6407a9e3; metadata records three PDF spreads. On 2026-09-27 UTC, Codex /root/inventory_sources independently read all three complete uncropped official spreads: PDF1 (printed1–2), PDF2 (printed3–4), and root-rendered PDF3 (printed5–6). Official PDF2, printed3, Turn overview supports youngest then clockwise and left-neighbor continuation. Official PDF1, printed2, offers random tray choice during setup, separate from starter selection. Root rendered only the remaining cached PDF3 at180dpi, zero network, with exit0 and reported process closure at2026-09-27T05:08:50.8102357Z; its32,856,735-byte PNG SHA-256 is9aeaeca346198c705fe3ffff6959f45ecb8c8bc52ab32ca7052f4ea64e60465a. Root reports complete PDF3 reading; this agent subsequently opened/read the entire same original PNG, displayed12638×8415→3892×2592 by the viewer. Printed5 confines score ties to most constructed stages, then shared victory; the two-player change affects battle only. Printed6 Wonder/progress effects introduce no starting-player override. The full official manual supplies no opening-age tie or house fallback. Credits visibly name Bauza, Hebinger and Repos Production, copyright2021; this is not printing/version proof. Official28-byte extraction still contains only page headings, so complete official-source review is visual, not a claimed complete text extraction. The separately read archived2-fold copy and its full10593-byte extraction, SHA-25666c4c9ca8f19b2ffb26dd882a86a48f6508c1335ba2254bea8c7b5eb27377041, remain distinct corroboration rather than official-byte equivalence. The complete Repos normalized product and GB link54 resolve this exact CDN URL; the web reader declined the large body. No new raw HTTP equality, original headers or EOF custody is asserted. Primary BGG indexed canonical item346703 names Architects, Bauza, Hebinger and Repos, separately supporting existing346703/Q113130566 legacy correspondence; original68448 and Second Edition316377 stay distinct. Historical source review manifest e205bbb367f106083edd98734153d12837ad9d1b9aa4b16bb6087c659cf5f079 remains immutable; new complete-page evidence is separately sealed at artifacts/sep27-architects-official-page3-independent-addendum. This pair has static field-shape inspection only. Actual schema/revision validation and final independent/root exact-package approval remain pending; no alias, edition transfer, approval or portable inclusion is authorized. The original citation checkedAt2026-09-26 is retained.",
+  "uncertainty": [
+    "Copyright2021 is visible, but printing/version remains unverified; the timestamped URL does not establish a printing.",
+    "The complete official manual does not specify an opening-age tie method or house fallback. Endgame score ties are separate.",
+    "Numeric346703 correspondence relies on indexed primary BGG and the saved legacy row, separate from publisher rule authority; no current raw BGG response custody.",
+    "Original ordered HTTP headers/EOF custody are not preserved in the inspected batch; the cached PDF hash matches prepared metadata/manifest and the current normalized publisher link, not a newly downloaded body."
+  ]
+}
