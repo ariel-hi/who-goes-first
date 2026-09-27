@@ -1,0 +1,42 @@
+{
+  "id": "paladins-west-kingdom-garphill-en",
+  "slug": "paladins-west-kingdom-garphill-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
+  "approvedRevision": "a1447175417dd67ad4c3ad04947ca2b362550f3eca43b30104d5f7a0ac861574",
+  "publishedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-27",
+  "gameName": "Paladins of the West Kingdom",
+  "aliases": [],
+  "editionLabel": "Garphill English base game",
+  "firstPlayerRule": "Randomly choose the starting player and give them the Start Player Marker. They reveal their Paladin and choose a Tavern card first, then take the first action; play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The initial Townsfolk recruitment during setup runs in reverse turn order, starting to the right of the chosen first player.",
+    "Ignore the marker-passing step in the first round. In later rounds, pass the Start Player Marker clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.garphill.com/cdn/shop/files/PaladinsRulebook.pdf?v=12376641406797324139",
+      "title": "Paladins of the West Kingdom — English rulebook",
+      "publisher": "Garphill Games / Renegade Game Studios",
+      "printedPages": [
+        "7",
+        "8",
+        "10"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        8,
+        10
+      ],
+      "location": "Setup steps 13–14; Round structure steps 1, 5 and 6",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Current Garphill product directly links publisher Shopify English base PDF. Rendered 7 random starter and reverse setup recruitment, 10 clockwise Paladin/Tavern selection and first action; page 8 explicitly ignores pass-marker in first round. Solo section is separate. Source custody: research/source-files/popular-sep26-12/paladins.pdf; SHA-256 97533b80a78eec1c1e17665d4975c81d25d998e252f53b80680b6c2a882c2fbd. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "uncertainty": []
+}
