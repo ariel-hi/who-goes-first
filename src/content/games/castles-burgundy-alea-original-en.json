@@ -1,0 +1,42 @@
+{
+  "id": "castles-burgundy-alea-original-en",
+  "slug": "castles-burgundy-alea-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
+  "approvedRevision": "55ec8fa5d9201e127e69cb00128de40bf59537b8057badc5e05359159c42b449",
+  "publishedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-26",
+  "gameName": "The Castles of Burgundy",
+  "aliases": [],
+  "editionLabel": "alea English original edition",
+  "firstPlayerRule": "Roll dice to determine the starting player. Give that player the white die and place their marker on top of the initial turn-order stack.",
+  "officialTieBreak": null,
+  "houseFallback": "Agree before rolling that the highest roll starts, and reroll any tie for highest.",
+  "clarifications": [
+    "At the start of a round, all players roll their dice. The starting player places the goods tile using the white die and takes the first turn; other turns follow the turn-order track."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.1j1ju.com/medias/04/f5/f9-the-castles-of-burgundy-rulebook.pdf",
+      "title": "The Castles of Burgundy — English rulebook",
+      "publisher": "alea / Ravensburger",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Game Setup; The Five Game Rounds",
+      "checkedAt": "2026-09-26"
+    }
+  ],
+  "internalEvidence": "Original alea English12page manual, rendered PDF3 setup roll-dice and markerstack, PDF4 rounds and actual firstturn; PDF12 PatrickKorner translation, alea contact and Ravensburger2011 copyright. Did not infer highest roll as official. Rejected RavensburgerBurgundy27000.pdf because DutchSpecialEdition; original84876 is separate from existing2019edition and newerSpecialEdition. Source custody: research/source-files/popular-originals-intake/burgundy-archive.pdf; SHA-256 6fb4eb68f7fc788d9c68f325e310648def996faf16016aa81140c6f3dc798b1c. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
+  "uncertainty": [
+    "The publisher-authored original English manual is preserved by a rulebook archive.",
+    "The setup instruction does not specify whether high or low wins the starting roll, or how to resolve equal rolls."
+  ]
+}
