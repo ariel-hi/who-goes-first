@@ -3,10 +3,10 @@
   "slug": "dino-garden-uchibacoya-en-rulebook",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8937c3c926ca0815ea74c475b29e53caf50eeebf009a900b7935ee9c86e5f768",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex edition and image-rights review, owner-authorized 2026-09-28",
+  "approvedRevision": "cc36b3b972a960c186d6dc3202278bd316792d85ecc1ac5d46921031c0457c1e",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dino Garden",
   "aliases": [],
   "editionLabel": "UCHIBACOYA · English base-game manual · multiplayer opening · 2–4 players",
@@ -51,5 +51,22 @@
     "This rule was independently read from Dino Garden’s complete English manual. Aqua Garden’s matching starter instruction does not authorize transferring its turn rules: Aqua’s Lucy moves one space ahead of the farthest-forward token, whereas Dino’s Lucy uses the nearest possible empty space.",
     "The original source proposal labels the next-round passage printed15. Root and independent review corrected the catalog locator to PDF spread8, left page, Next Round Preparation phase; no printed numeral is visible there. Printed15 on the right gives final scoring and shared score winners, not a starter tie.",
     "The stable citation is the shared folder and verbatim double-.pdf filename. No Russian rules, expansion, FAQ, later revision or other printing is approved. Optional random choice is a house method, not an official specific criterion."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dino-garden-uchibacoya-en-rulebook-cover.jpg",
+    "alt": "UCHIBACOYA Dino Garden box with red dinosaurs in a colorful valley",
+    "width": 419,
+    "height": 416,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.uchibacoya.com/cdn/shop/files/garden3_7911a50d-c15f-4c54-8a15-65136c7a7abc.jpg?v=1748856957&width=1780",
+      "publisher": "UCHIBACOYA official Garden Trilogy product photograph"
+    },
+    "fairUse": {
+      "rightsHolder": "UCHIBACOYA and Tatsuki Asano",
+      "rationale": "Reduced game packaging image used to identify the cited game in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://store.uchibacoya.com/. The publisher homepage photographs Dino Garden alongside Aqua Garden and Sky Garden. This crop isolates the Dino Garden box; the publisher has described trilogy preview visuals as illustrative, so no printing identity is inferred. Original image URL: https://store.uchibacoya.com/cdn/shop/files/garden3_7911a50d-c15f-4c54-8a15-65136c7a7abc.jpg?v=1748856957&width=1780",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

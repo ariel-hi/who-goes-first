@@ -3,10 +3,10 @@
   "slug": "crossing-moonster-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9ef62ff702c143c4e23c13de0ef6f8c7afc8e481c434cc7b5ac3deba7962317e",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and image-rights review, owner-authorized 2026-09-28",
+  "approvedRevision": "2594a780d44b901de2961e640a8256632be35053117eb18c5006b6f42a41b7a7",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Crossing",
   "aliases": [],
   "editionLabel": "Moonster Games English rules",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 2 names the optional banker/jewelry distributor and states the simultaneous count-and-point first turn. The booklet credits Moonster Games on page 5; mushroom tiles, character tiles and life stones match inventory BGG 172971. SHA-256: b696033a17410eada23361d78df9d69079bf3f92dc50596789de88dce742c842. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The setup role has no tie procedure; simultaneous play needs no first-player tie."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/crossing-moonster-en-cover.jpg",
+    "alt": "Original Crossing box with a large orange mushroom and fantasy characters",
+    "width": 359,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cocktailgames.com/wp-content/uploads/2016/03/Crossing_boite_3D_BD.jpg",
+      "publisher": "Cocktail Games official archived Crossing product visual"
+    },
+    "fairUse": {
+      "rightsHolder": "Moonster Games, Cocktail Games, Space Cowboys and Charlène le Scanff",
+      "rationale": "Reduced game packaging image used to identify the cited game in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.cocktailgames.com/jeux-arretes/. Co-publisher archive displays this original Crossing box visual beside the game rules. The pictured box has French side text; the cited Moonster manual is in English. Original image URL: https://www.cocktailgames.com/wp-content/uploads/2016/03/Crossing_boite_3D_BD.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
