@@ -3,10 +3,10 @@
   "slug": "keyflower-huch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "32b08b7ab3cd78a4764f81bc6dd28ddf646b191af30764e7826892ee69037d53",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d7da36c5e74dc0cc44de7f703d188d3f4b1a4e12f29260334b7086d3c5314cac",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Keyflower",
   "aliases": [],
   "editionLabel": "HUCH! English edition",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "English HUCH/R&D manual hosted by official distributor FoxMind, whose product/catalog identifies Keyflower. Rendered2 random home-tile distribution and lowest tile starter;3 repeats spring rule, clockwise play and later-season auction selection. Lowest home tile is a game-component-dependent criterion, excluded from portable random methods. Source custody: research/source-files/popular-sep26-06/keyflower.pdf; SHA-256 e4bb0a13321fa50a3248e3850924e01cefce6325ea9da968dbf9b2f38016ca38. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/keyflower-huch-en-cover.jpg",
+    "alt": "Keyflower official game box cover",
+    "width": 306,
+    "height": 249,
+    "presentation": "cover",
+    "source": {
+      "url": "https://hutter-trade.com/en/product-range/product/keyflower/",
+      "publisher": "HUCH! / Hutter Trade"
+    },
+    "fairUse": {
+      "rightsHolder": "HUCH!, R&D Games, and cover artist Juliet Breese (precise ownership split not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Hutter Trade official HUCH! product page lists item 400166 and illustrator Juliet Breese; its box image https://produkte.hutter-trade.com//files/products/448/100/en/large/Keyflower_Box_72dpi_B.jpg shows the English Keyflower/HUCH! packaging matching the cited edition. Cropped surrounding whitespace; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

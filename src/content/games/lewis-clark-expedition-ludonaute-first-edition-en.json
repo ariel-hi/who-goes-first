@@ -3,8 +3,8 @@
   "slug": "lewis-clark-expedition-ludonaute-first-edition-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
-  "approvedRevision": "4a33acb2777049e0554cde8103d931e0b4bd9acb538fe2b7fa6e15b5324918b1",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "9553ca7144eb5e56063ac3f31bcb16c451e51977a9c7e7a4f6065a98010b7788",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lewis & Clark: The Expedition",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "The publisher does not prescribe a specific randomizer.",
     "No second-edition starting rule is inferred from this first-edition source."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lewis-clark-expedition-ludonaute-first-edition-en-cover.jpg",
+    "alt": "Lewis & Clark: The Expedition official game box cover",
+    "width": 401,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.data.ludonaute.fr/Lewis_%26_Clark/PRESS_RELEASE/Lewis_%26_Clark_presskit_EN.pdf",
+      "publisher": "Ludonaute"
+    },
+    "fairUse": {
+      "rightsHolder": "Ludonaute and cover artist Vincent Dutrait (precise ownership split not stated in press kit)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Cropped original 2013 game-box photograph from page 1 of Ludonaute English press kit https://www.data.ludonaute.fr/Lewis_%26_Clark/PRESS_RELEASE/Lewis_%26_Clark_presskit_EN.pdf. The 2013 release date and first-edition rules link in the same kit identify this as the cited edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
