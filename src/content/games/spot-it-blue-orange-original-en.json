@@ -3,8 +3,8 @@
   "slug": "spot-it-blue-orange-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "4c1d4fc62d4ac36ed960e66b1a6470dca9734e90a8c7112b1c670363e5fd3df6",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "1236b2196c1d84d91e216420f84cd9d48a0492e5f07efa7b7c259a53ba913673",
   "publishedAt": "2026-09-26",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Spot it!",
@@ -38,5 +38,22 @@
   "internalEvidence": "Retailer preserves2012BlueOrange55-cardfive-minigamebooklet. RenderedPDF1copyrightcredits,originalDobbleidentity and explicitsimultaneousplay;PDF2eachvariantstarttogether. Publisher-hosted search results were themedLotRandDobbleConnect, rejected forwrongscope. Source custody: research/source-files/popular-sep26-10/spot.pdf; SHA-256 b436cf627743d6d14a8787d1daf85ccd718f3057149b77ea762bb9911af107de. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The Blue Orange-authored English booklet is preserved by a retailer archive. This record covers the original five mini-games, not themed editions or Dobble Connect."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/spot-it-blue-orange-original-en-cover.jpg",
+    "alt": "Spot It! original Blue Orange Games round tin",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/b/jpg500/bog00410.jpg",
+      "publisher": "Blue Orange Games (tin image via Noble Knight Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Orange Games / Igor Polouchine",
+      "rationale": "Reduced-size exact-edition identifying package art is used in an independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://www.nobleknight.com/P/2147430585/Spot-It. Image: https://image.nobleknight.com/b/jpg500/bog00410.jpg. Noble Knight lists the original Blue Orange Games Spot It! item, image file bog00410. Its red and yellow round tin matches the 2012 Blue Orange 55-card, five-mini-game booklet cited in this record and the original SP410 tin listed in the Asmodee catalog.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
