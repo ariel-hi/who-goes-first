@@ -3,13 +3,30 @@
   "slug": "dominant-species-gmt-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "c418983b1db75d165a1fc6a5660f6859e4a527a900efd833e6595409ea475e66",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "7876043c80fa49de9fae2ca5891e8dcc264ef1d07e19f22e9279fafbaeb18029",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dominant Species",
   "aliases": [],
   "editionLabel": "GMT English base game",
+  "image": {
+    "file": "/images/games/dominant-species-gmt-en-cover.jpg",
+    "alt": "Cover page of the official Dominant Species rulebook",
+    "width": 340,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.gmtgames.com/living_rules/DS3_Rulebook-web_FINAL.pdf",
+      "publisher": "GMT Games"
+    },
+    "fairUse": {
+      "rightsHolder": "GMT Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official GMT Games rulebook PDF: https://www.gmtgames.com/living_rules/DS3_Rulebook-web_FINAL.pdf. The illustrated cover displays the game title and matches the cited edition: GMT English base game. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The animal furthest left on the Initiative track makes the first action-pawn placement. Set the initial track in reverse Food Chain order: insects, arachnids, amphibians, birds, reptiles, then mammals, using only the animals in play.",
   "officialTieBreak": null,
   "houseFallback": null,

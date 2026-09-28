@@ -3,10 +3,10 @@
   "slug": "betrayal-at-house-on-the-hill-avalon-hill-2e-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "b8e1858be6aa4fc1a3321cbf3f508c35db29dd4888c1a4ebe78399ba3e711eb2",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "f140c858a220ccbd8fc10c50ebfb8e82fca278573a8f1efc2e39318e869f1fbc",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Betrayal at House on the Hill",
   "aliases": [
     "Betrayal",
@@ -14,6 +14,23 @@
     "Betrayal 2nd Edition"
   ],
   "editionLabel": "Avalon Hill (Hasbro) English rules, second edition",
+  "image": {
+    "file": "/images/games/betrayal-at-house-on-the-hill-avalon-hill-2e-en-cover.jpg",
+    "alt": "Cover page of the official Betrayal at House on the Hill rulebook",
+    "width": 440,
+    "height": 339,
+    "presentation": "cover",
+    "source": {
+      "url": "https://instructions.hasbro.com/api/download/F3148_en-us_avalon-hill-betrayal-at-house-on-the-hill-second-edition-cooperative-board-game.pdf",
+      "publisher": "Avalon Hill / Hasbro"
+    },
+    "fairUse": {
+      "rightsHolder": "Avalon Hill / Hasbro and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Avalon Hill / Hasbro rulebook PDF: https://instructions.hasbro.com/api/download/F3148_en-us_avalon-hill-betrayal-at-house-on-the-hill-second-edition-cooperative-board-game.pdf. The illustrated cover displays the game title and matches the cited edition: Avalon Hill (Hasbro) English rules, second edition. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The explorer with the next birthday goes first. Use the birthday printed on each explorer’s character card, not the players’ own birthdays.",
   "officialTieBreak": null,
   "houseFallback": null,

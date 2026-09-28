@@ -3,13 +3,30 @@
   "slug": "call-to-adventure-brotherwise-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "94a7eee30dd28da35657f4ec71b13503d8de5381bf30b8bec4e03c23442321f1",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "70c25b39eee9f7bdf0f5c8702c1ca0545d721cdc536c7556c3721b0e7577f7eb",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Call to Adventure",
   "aliases": [],
   "editionLabel": "Brotherwise Games original English rulebook",
+  "image": {
+    "file": "/images/games/call-to-adventure-brotherwise-en-cover.jpg",
+    "alt": "Cover page of the official Call to Adventure rulebook",
+    "width": 304,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.brotherwisegames.com/s/CtA_Rulebook.pdf",
+      "publisher": "Brotherwise Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Brotherwise Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Brotherwise Games rulebook PDF: https://www.brotherwisegames.com/s/CtA_Rulebook.pdf. The illustrated cover displays the game title and matches the cited edition: Brotherwise Games original English rulebook. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently finished reading a novel takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,

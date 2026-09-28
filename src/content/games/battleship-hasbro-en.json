@@ -3,13 +3,30 @@
   "slug": "battleship-hasbro-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "4c562ecffbe2ce090edc1c92b104780184df990ee72f0e87bf7f1f7e1f86ff7d",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "f90da6623918712bc93afaac304e61f9c3b4fa009dd66be84877138bf776dedb",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Battleship",
   "aliases": [],
   "editionLabel": "Hasbro English board game, item 080814674102",
+  "image": {
+    "file": "/images/games/battleship-hasbro-en-cover.jpg",
+    "alt": "Cover page of the official Battleship rulebook",
+    "width": 440,
+    "height": 335,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.hasbro.com/common/documents/430e4f3f6bfd10148a8ef35124427085/D58EFD5350569047F55BF8E284269834.pdf",
+      "publisher": "Hasbro"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Hasbro rulebook PDF: https://www.hasbro.com/common/documents/430e4f3f6bfd10148a8ef35124427085/D58EFD5350569047F55BF8E284269834.pdf. The illustrated cover displays the game title and matches the cited edition: Hasbro English board game, item 080814674102. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The rules leave it open: after both players position their fleets, you simply \"decide who's going first,\" then take turns calling out coordinates.",
   "officialTieBreak": null,
   "houseFallback": "This site's house-rule fallback is to pick randomly.",
@@ -22,8 +39,12 @@
       "url": "https://www.hasbro.com/common/documents/430e4f3f6bfd10148a8ef35124427085/D58EFD5350569047F55BF8E284269834.pdf",
       "title": "Battleship — Instructions",
       "publisher": "Hasbro",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "\"Attack!\" section, step 1",
       "checkedAt": "2026-09-27"
     }

@@ -3,15 +3,32 @@
   "slug": "clue-hasbro-2023-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e4173c93bbf75a676ca9ee025c5f40b42b86baa6a6fbf7e62a993c8c875a17f2",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "8b71db657ba1f7192eb313dadd1d10b5e8bde07dea4e523032dd1559f68a48f0",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Clue",
   "aliases": [
     "Cluedo"
   ],
   "editionLabel": "Hasbro US rules (2–6 players), 2023",
+  "image": {
+    "file": "/images/games/clue-hasbro-2023-en-cover.jpg",
+    "alt": "Cover page of the official Clue rulebook",
+    "width": 440,
+    "height": 348,
+    "presentation": "cover",
+    "source": {
+      "url": "https://instructions.hasbro.com/api/download/F6420_en-us_f6420-clue-board-game.pdf",
+      "publisher": "Hasbro"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Hasbro rulebook PDF: https://instructions.hasbro.com/api/download/F6420_en-us_f6420-clue-board-game.pdf. The illustrated cover displays the game title and matches the cited edition: Hasbro US rules (2–6 players), 2023. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Roll one of the six-sided dice to determine who goes first. After each turn, the player to the left goes next.",
   "officialTieBreak": null,
   "houseFallback": null,

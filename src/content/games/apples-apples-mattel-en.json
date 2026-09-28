@@ -3,13 +3,30 @@
   "slug": "apples-apples-mattel-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "25fd1a8cda7dd4901193bfd4f6b4daa53e2e739a997a8ff5b98365615f62f2e2",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "f3d080a97aff39bb52dd48157d09e00e661a4c2f9d012d1ed4b7cb45ae88b130",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Apples to Apples",
   "aliases": [],
   "editionLabel": "Mattel English edition",
+  "image": {
+    "file": "/images/games/apples-apples-mattel-en-cover.jpg",
+    "alt": "Cover page of the official Apples to Apples rulebook",
+    "width": 282,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://service.mattel.com/instruction_sheets/BGG15-Eng.pdf",
+      "publisher": "Mattel"
+    },
+    "fairUse": {
+      "rightsHolder": "Mattel and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Mattel rulebook PDF: https://service.mattel.com/instruction_sheets/BGG15-Eng.pdf. The illustrated cover displays the game title and matches the cited edition: Mattel English edition. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose a player to be the first judge. That player deals the cards, then reveals a Green Apple card and reads one of its words aloud.",
   "officialTieBreak": null,
   "houseFallback": null,

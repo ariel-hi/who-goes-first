@@ -3,13 +3,30 @@
   "slug": "aquatica-arcane-wonders-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4196d7d540390caf4784caae90ba2074455c4ae3b45c7ed28a9c5647141578b8",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "78b0a896768cf1fc9e462c574b5fbbbfe09c7859c9cb82a4d46269504bd458ea",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Aquatica",
   "aliases": [],
   "editionLabel": "Arcane Wonders English rulebook, base game",
+  "image": {
+    "file": "/images/games/aquatica-arcane-wonders-en-cover.jpg",
+    "alt": "Cover page of the official Aquatica rulebook",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.arcanewonders.com/wp-content/uploads/2021/05/AQUATICA_rules_200x200_JANUARY.pdf",
+      "publisher": "Arcane Wonders"
+    },
+    "fairUse": {
+      "rightsHolder": "Arcane Wonders and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Arcane Wonders rulebook PDF: https://www.arcanewonders.com/wp-content/uploads/2021/05/AQUATICA_rules_200x200_JANUARY.pdf. The illustrated cover displays the game title and matches the cited edition: Arcane Wonders English rulebook, base game. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently dived in the sea is first in turn order.",
   "officialTieBreak": null,
   "houseFallback": null,

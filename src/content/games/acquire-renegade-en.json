@@ -3,13 +3,30 @@
   "slug": "acquire-renegade-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "3eee073208698f6fbda0050b6e2a4d86f35c5ee92cf1bbc5d0240b1c93826837",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "44d9205a5de8987f2de0f7e64e2cf395c0c2b286ecef034119312f0eebdb788a",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Acquire",
   "aliases": [],
   "editionLabel": "Renegade English edition",
+  "image": {
+    "file": "/images/games/acquire-renegade-en-cover.jpg",
+    "alt": "Cover page of the official Acquire rulebook",
+    "width": 285,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Acquire/Acquire_RGS_Rulebook_WEB.pdf",
+      "publisher": "Renegade Game Studios"
+    },
+    "fairUse": {
+      "rightsHolder": "Renegade Game Studios and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Renegade Game Studios rulebook PDF: https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Acquire/Acquire_RGS_Rulebook_WEB.pdf. The illustrated cover displays the game title and matches the cited edition: Renegade English edition. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Each player draws a building tile and places it on its matching board space. The player whose tile is closest to 1A goes first; play passes to the left.",
   "officialTieBreak": null,
   "houseFallback": null,

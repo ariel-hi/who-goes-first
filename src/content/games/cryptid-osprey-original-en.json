@@ -3,13 +3,30 @@
   "slug": "cryptid-osprey-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "f5c5bcc2079b239c09190106e3c649b65dbf7d7e208f4c9624ced2f58191faf8",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "cd509a6dc54474bb2f92063cf298d5118aad0df702806bc04e90edbf05153d74",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cryptid",
   "aliases": [],
   "editionLabel": "Osprey Games original English base game",
+  "image": {
+    "file": "/images/games/cryptid-osprey-original-en-cover.jpg",
+    "alt": "Cover page of the official Cryptid rulebook",
+    "width": 293,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.ospreypublishing.com/media/xjhnf54a/cryptid-rulebook-english.pdf",
+      "publisher": "Osprey Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Osprey Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Osprey Games rulebook PDF: https://www.ospreypublishing.com/media/xjhnf54a/cryptid-rulebook-english.pdf. The illustrated cover displays the game title and matches the cited edition: Osprey Games original English base game. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose a starting player; the rulebook suggests the person who set up the map. That player places the first information cube and takes the first turn, with play continuing clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -27,7 +44,10 @@
       "title": "Cryptid — original English rulebook",
       "publisher": "Osprey Games",
       "printedPages": [],
-      "pdfPagesOneBased": [4, 5],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
       "location": "Setup; Playing the Game, initial sharing and first turn",
       "checkedAt": "2026-09-28"
     }
