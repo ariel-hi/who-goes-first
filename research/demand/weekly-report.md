@@ -23,6 +23,9 @@ This checks six named URLs in Google's indexed data, not the current live pages 
 - Named US/CA/GB/AU subtotal: 1,746 sessions. Five-country US/CA/GB/AU/NZ subtotal: 2,955 screen/page views. These are GA4 observations, not ad-network qualification.
 
 
+## Traffic acquisition (GA4)
+_GA4 acquisition report unavailable._
+
 ## Ad network requirements and observations
 Official policies checked 2026-09-28; confirm current requirements before an application. Totals alone do not establish eligibility or approval.
 
