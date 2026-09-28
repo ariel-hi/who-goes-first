@@ -3,10 +3,10 @@
   "slug": "paperback-fowers-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "aa53a93e187fb7f797df297040579bb268fb2be4eadd2e3b33d27c9ef1340e1f",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "2b4cb5ad4374654eca29c2818c5ed6054e0e041ea4f7829f44b87bfd0d91af4f",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Paperback",
   "aliases": [],
   "editionLabel": "Fowers Games original English edition, 2014",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered the image-only publisher-authored original English rulebook from the archive. Page 4 names the recent novel reader, the five-card initial hand and clockwise play. The booklet’s starting deck and Fame card setup match inventory BGG 141572. SHA-256: 0dab6b4d70d0d99c288c426d38b86769cd156c113d7c5c0e731885e6eb100433. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
   "uncertainty": [
     "The booklet states no tie procedure for players who finished novels at the same time."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/paperback-fowers-original-en-cover.jpg",
+    "alt": "Paperback original game title artwork by illustrator Ryan Goldsberry, showing Paige Turner at a typewriter",
+    "width": 360,
+    "height": 257,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.myportfolio.com/d10d67c79094aeb0ca07480d67a5fb70/a0c21ed5-109f-43d5-879a-ce5834f043fd_rw_1920.jpg?h=c486853034b0f025cbe71c80fc36f8f0",
+      "publisher": "Ryan Goldsberry, original game illustrator"
+    },
+    "fairUse": {
+      "rightsHolder": "Fowers Games / Ryan Goldsberry",
+      "rationale": "Small artist-hosted title artwork identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Ryan Goldsberry hosts this title illustration on his own Paperback The Game portfolio page https://ryangoldsberry.com/paperback-the-game. The portfolio dates the project to 2014 and also shows the original Fowers Games book-shaped box. The character, typewriter, and title visually match the original game identity; this image is artist promotional artwork, not a photo of the box. Reduced to 360 pixels wide for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
