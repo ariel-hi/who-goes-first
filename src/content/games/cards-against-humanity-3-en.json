@@ -3,13 +3,30 @@
   "slug": "cards-against-humanity-3-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "770b5d3d6bc9e6912878590cff935e8348c9781f316fe1bd6752ea3b39e20ddb",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "db3748bf734ff4295db01484da096b92424249bfecf900c34e3dac1dd073e4a1",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cards Against Humanity",
   "aliases": [],
   "editionLabel": "Cards Against Humanity 3.0 English rules",
+  "image": {
+    "file": "/images/games/cards-against-humanity-3-en-cover.jpg",
+    "alt": "Official product image showing the Cards Against Humanity game box",
+    "width": 440,
+    "height": 396,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.sanity.io/images/vc07edlh/production/378671dbd5448946b68dd0a4abf60b5dac6162ff-1400x1260.png?w=800&q=75",
+      "publisher": "Cards Against Humanity"
+    },
+    "fairUse": {
+      "rightsHolder": "Cards Against Humanity",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Cards Against Humanity product page: https://www.cardsagainsthumanity.com/products/cards-against-humanity. Edition match: current base-game box shown on publisher product page; its publisher homepage links the exact cited Game Rules 3.0 PDF. Original image URL: https://cdn.sanity.io/images/vc07edlh/production/378671dbd5448946b68dd0a4abf60b5dac6162ff-1400x1260.png?w=800&q=75. Processing note: publisher homepage https://www.cardsagainsthumanity.com/ links the exact cited rules file",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently pooped serves as the first Card Czar and begins the first round. If Hugh Jackman is playing, the printed rules give him priority regardless of that criterion.",
   "officialTieBreak": null,
   "houseFallback": null,
