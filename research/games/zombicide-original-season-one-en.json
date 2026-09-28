@@ -1,0 +1,37 @@
+{
+  "id": "zombicide-original-season-one-en",
+  "slug": "zombicide-original-season-one-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Zombicide",
+  "aliases": [],
+  "editionLabel": "Classic Zombicide — original Season 1 English rules",
+  "firstPlayerRule": "Decide together who starts, then give that player the first-player token. The rulebook explicitly says not to choose randomly because Zombicide is cooperative. The token holder takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "After everyone has taken a turn, the first-player token passes to the player on the left for the next game turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-zombicide-season-1.pdf",
+      "title": "Classic Zombicide — original Season 1 English rulebook",
+      "publisher": "Guillotine Games / CMON",
+      "printedPages": ["4"],
+      "pdfPagesOneBased": [4],
+      "location": "Setup step 10 and Game Overview, Players’ Phase and End Phase",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Complete official Season 1 English PDF linked by zombicide.com/game-rules/ and hosted by Asmodee CDN. SHA-256 ce9ff2e0c32b2b2fc983304a549f3ef3b19dc11810aba6bd8534a63c7cbd600c, 10451292 bytes. Codex visually inspected the cover and PDF page 4 (printed 4): setup step 10 asks the group to decide and says not to pick randomly; Game Overview gives the token holder the first turn and passes the token left at the end phase. Source review packet: artifacts/pending-rules-followup-sep28/REVIEW.md. Exact BGG 113924 / Wikidata Q18573786 directory identity; no edition transfer. Excluded from the portable random mix because the source discourages a random choice.",
+  "uncertainty": [
+    "This answer covers the original Season 1 rulebook, not Zombicide: 2nd Edition or a themed standalone game."
+  ]
+}

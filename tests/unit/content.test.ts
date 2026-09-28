@@ -12,6 +12,24 @@ import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/bo
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
 import { randomRuleEligible } from '../../src/lib/content/random-rules';
 
+test('exact original editions keep cooperative choice and component turn order out of random suggestions', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
+  const checked = await ruleSearch().json() as Array<{ s: string; p: boolean }>;
+  for (const [id, name, ruleId] of [
+    ['113924', 'Zombicide', 'zombicide-original-season-one-en'],
+    ['144733', 'Russian Railroads', 'russian-railroads-hig-2013-en'],
+  ] as const) {
+    const game = games.find(item => item.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]).toMatchObject({ tieBreakApplicable: false, pickerSuggestionApplicable: false });
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(false);
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+    expect(checked.find(item => item.s === ruleId)?.p).toBe(false);
+  }
+});
+
 test('Amigo identities retain numeric provenance while exact independently reviewed editions supply rules', async () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const games = getBoardGames();

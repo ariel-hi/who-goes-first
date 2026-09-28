@@ -1,0 +1,40 @@
+{
+  "id": "russian-railroads-hig-2013-en",
+  "slug": "russian-railroads-hig-2013-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "3e78a7a9b22d3bedf97b2ec1bd93fc759800e3332050f4a2b04d654e06e6253d",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Russian Railroads",
+  "aliases": [],
+  "editionLabel": "Hans im Glück / Z-Man 2013 English base game",
+  "firstPlayerRule": "Shuffle the four numbered Turn Order cards and deal one face up to each player. Put each player’s pawn on the matching turn-order space. The player in the leftmost occupied position takes the first turn; the others follow track order rather than clockwise seating order.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "The rulebook recommends dealing the cards blindly because their backs differ.",
+    "The two- and three-player setup changes do not replace the turn-order card method.",
+    "Later rounds can reorganize turn order through spaces on the track."
+  ],
+  "interpretation": "With fewer than four players, use the leftmost occupied turn-order position. This follows the track-order rule when some numbered spaces are empty.",
+  "sources": [
+    {
+      "url": "https://www.hans-im-glueck.de/_Resources/Persistent/3519279e01e92a55671e94ef8cf567c7e41e81f3/RRR_rules_en.pdf",
+      "title": "Russian Railroads — original English rulebook",
+      "publisher": "Hans im Glück / Z-Man Games",
+      "printedPages": ["4", "5", "14", "15", "21"],
+      "pdfPagesOneBased": [3, 8, 11],
+      "location": "Setup step 8 and pawn placement; Turn Order; Playing with 2 or 3 Players",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Complete original English PDF hosted by Hans im Glück. SHA-256 63ff49cc1732960b3d8f8e2d858d1197a8b1985aa81603b7da5f94e30582a312, 15203699 bytes. Codex visually inspected PDF page 3 (printed 4–5) setup steps 8–9; PDF page 8 (printed 14–15) explains that the turn-order track, not clockwise seating, sets player order; PDF page 11 (printed 20–21) lists two- and three-player changes without replacing that setup. Cover names Helmut Ohley and Leonhard Orgler. Source review packet: artifacts/pending-rules-followup-sep28/REVIEW.md. Exact BGG 144733 / Wikidata Q25386738 directory identity; not Ultimate Railroads. Excluded from the portable random mix because numbered components set the full turn order.",
+  "uncertainty": [
+    "The printed setup illustration is for four players. The lower-player section changes other setup quantities but does not restate the turn-order deal.",
+    "This answer does not cover Ultimate Railroads or expansions."
+  ]
+}

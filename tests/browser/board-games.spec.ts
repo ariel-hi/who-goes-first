@@ -362,6 +362,19 @@ test('new native rule articles preserve cooperative choice and later-era distinc
   }
 });
 
+test('original Zombicide and Russian Railroads keep their source-specific opening instructions', async ({ page }) => {
+  for (const [slug, opening, pdfPage] of [
+    ['zombicide-original-season-one-en', 'not to choose randomly', 4],
+    ['russian-railroads-hig-2013-en', 'Turn Order cards', 3],
+  ] as const) {
+    await page.goto(`/games/${slug}/`);
+    await expect(page.locator('.rule-answer')).toContainText(opening);
+    await expectReviewedSourceCitation(page, slug, pdfPage);
+    await expect(page.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(0);
+    await expect(page.getByText('If your rules call for a random choice,')).toHaveCount(0);
+  }
+});
+
 test('archived German summaries distinguish opening selection from action and feeding order', async ({ page }) => {
   await page.goto('/games/magalon-ravensburger-de-1998/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');
