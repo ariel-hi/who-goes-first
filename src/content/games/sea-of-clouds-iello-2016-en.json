@@ -3,10 +3,10 @@
   "slug": "sea-of-clouds-iello-2016-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6ab9e857ee8011eb532374ee697418017475f3413c2b4def0e1d9b835346947c",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "416a17eddbd4e851f8c53f247ec610f2fbca190605ce31c0b3a93211993d5525",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sea of Clouds",
   "aliases": [],
   "editionLabel": "IELLO English rules, 2016",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered PDF/printed page 7 gives the rum criterion and both tokens; page 6 says the first player keeps the Hat. Page 12 bears IELLO ©2016 and the booklet’s Loot, Captain and Parrot pieces match inventory BGG 189052. SHA-256: d05c18e8b3979b1afebd121d6c71cde365aa101495363334602107b3d2a6784f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/sea-of-clouds-iello-2016-en-cover.jpg",
+    "alt": "Sea of Clouds original 2016 English IELLO box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://zatu.com/cdn/shop/files/Sea-of-Clouds.jpg?v=1760985302&width=1200",
+      "publisher": "IELLO (box image via Zatu Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO / Miguel Coimbra",
+      "rationale": "Reduced-size exact-edition box photograph identifies the game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://zatu.com/products/sea-of-clouds. Box photograph: https://zatu.com/cdn/shop/files/Sea-of-Clouds.jpg?v=1760985302&width=1200. Zatu SKU IEL51293 identifies the IELLO base game. The box has the English title, IELLO imprint, and the 2016 artwork consistent with the IELLO English rulebook in this record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
