@@ -1,21 +1,21 @@
 ---
 import SharePage from "../../components/SharePage.astro";
 import Layout from '../../layouts/Layout.astro';
-import { getBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
-import { getCatalog } from '../../lib/content/catalog';
+import { buildBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
+import { getPublicCounts } from '../../lib/content/public-counts';
 import { siteSettings } from '../../lib/site';
 import { gameRequestHref } from '../../lib/game-request';
-const { games, letters } = getBrowseShelves();
+const { boardGames, rules, identities, identitiesWithRules, identitiesAwaitingRules, ruleEditions } = getPublicCounts();
+const { games, letters } = buildBrowseShelves(boardGames);
 const { contact } = siteSettings();
-const withRules = games.filter(game => game.rules.length > 0).length;
 const linkedRuleIds = new Set(games.flatMap(game => game.rules.map(rule => rule.id)));
-const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
+const extraRules = rules.filter(rule => !linkedRuleIds.has(rule.id));
 ---
-<Layout title="Board Game Directory — Who Goes First?" description={`Find official starting-player rules for ${withRules} board games, or browse the wider game directory by name.`} pageType="CollectionPage">
+<Layout title="Board Game Directory — Who Goes First?" description={`Find sourced starting-player rules for ${identitiesWithRules} documented board games, or browse the wider directory by name.`} pageType="CollectionPage">
   <div class="content-page">
-    <h1>All board games.</h1>
+    <h1>Board game directory.</h1>
     <p class="lede">Find the game you’re playing.</p>
-    <p>{withRules.toLocaleString('en')} games with sourced starting-player rules. Browse the wider list of {games.length.toLocaleString('en')} games and editions below. If yours is still awaiting one, use the <a href="/">player picker</a>.</p>
+    <p>{identities.toLocaleString('en')} documented game identities: {identitiesWithRules.toLocaleString('en')} with a sourced starting-player rule and {identitiesAwaitingRules.toLocaleString('en')} awaiting one. The <a href="/games/">rule catalog</a> has {ruleEditions.toLocaleString('en')} checked edition records; some games have more than one edition. If yours is still awaiting a rule, use the <a href="/">player picker</a>.</p>
     <div data-board-directory>
       <label class="search-box"><span>Search board games</span><input type="search" placeholder="Game name or BGG number…" autocomplete="off" maxlength="100" disabled /></label>
       <div class="directory-filters" data-filters role="group" aria-label="Filter search results" hidden>
