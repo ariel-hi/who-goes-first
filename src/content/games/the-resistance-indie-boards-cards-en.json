@@ -3,10 +3,10 @@
   "slug": "the-resistance-indie-boards-cards-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "6c77cbeb938c6a9ad685f2dba343e0d96918e7ad14759a65477b12fa05051d03",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "43d577b8d90fc3becaac0f968d6d1f5f796f09c41ef6cbe8f6934b134ea7dff7",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Resistance",
   "aliases": [
     "Resistance"
@@ -43,5 +43,22 @@
   "uncertainty": [
     "The cited PDF is hosted by a retailer, not on the publisher's own site; its text identifies it as the Indie Boards & Cards consolidated rules.",
     "The rules do not say how to choose the Leader randomly."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-resistance-indie-boards-cards-en-cover.jpg",
+    "alt": "The Resistance cover artwork for the Indie Boards & Cards edition",
+    "width": 512,
+    "height": 512,
+    "presentation": "cover",
+    "source": {
+      "url": "https://assets.dized.app/game/f4e6861f-5be4-4ff7-a53c-eb4d5cac2fe3/en-US/9c0c67a4c9c0ef3aa4c350177f864e12/52b7a95b-15cc-494f-abdd-4479375e5233-53d395ea898558c0533ce2c78148d358.jpg?datafp=3d516f53ba990364f2febd6dd8014384",
+      "publisher": "Indie Game Studios / Indie Boards & Cards"
+    },
+    "fairUse": {
+      "rightsHolder": "Indie Game Studios / Indie Boards & Cards",
+      "rationale": "Reduced-size official game art identifies the specific game or containing set discussed in this independent rules article. It links to the publisher-verified rules source and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher-verified Dized introduction: https://rules.dized.com/game/9OaGH1vkT_elPOtNXKwv4w/the-resistance. Dized-hosted exact image: https://assets.dized.app/game/f4e6861f-5be4-4ff7-a53c-eb4d5cac2fe3/en-US/9c0c67a4c9c0ef3aa4c350177f864e12/52b7a95b-15cc-494f-abdd-4479375e5233-53d395ea898558c0533ce2c78148d358.jpg?datafp=3d516f53ba990364f2febd6dd8014384. The publisher-verified Dized page displays the original red The Resistance art with the blonde agent, matching the Indie Boards & Cards consolidated edition in this article. Visually reviewed against this article edition (Indie Boards & Cards consolidated English rules, v1.1).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
