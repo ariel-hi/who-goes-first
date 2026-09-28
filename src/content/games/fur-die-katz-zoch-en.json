@@ -3,10 +3,10 @@
   "slug": "fur-die-katz-zoch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e7cb3e8eb1e50570bca1b58779d56c3af06d665726c182fa09a611a1acc84a63",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7f67eebfaf7118f6a5d7b307ac69c690831920dc5a810885a5810164f44c172f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Für die Katz",
   "aliases": [
     "Fuer die Katz"
@@ -40,5 +40,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fur-die-katz-zoch-en-cover.jpg",
+    "alt": "Für die Katz official game box cover",
+    "width": 330,
+    "height": 275,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.zoch-verlag.com/zoch_de/kategorien/kinderspiele/fuer-die-katz-601105158-de.html",
+      "publisher": "Zoch Verlag"
+    },
+    "fairUse": {
+      "rightsHolder": "Zoch Verlag and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.zoch-verlag.com/zoch_de/kategorien/kinderspiele/fuer-die-katz-601105158-de.html supplies original product image https://image-cache.simba-dickie.com/aemEYZ60HKhShhdgxpJ3KbdXydLTSyGitinJ7AY2cMI/max_bytes:500000/fn:ZnVlci1kaWUta2F0ei02MDExMDUxNTgtZGVfMDA:1/cb:MTYyMDAyMzk4NQ/aHR0cHM6Ly9jZG4uc2ltYmEtZGlja2llLWdyb3VwLmRlL21lZGlhX25ldy9zaG9wLXpvY2gvcHJvZHVjdHMvNjAxMTA1MTU4LzAwL2RldGFpbF9tb2JpbGUvZnVlci1kaWUta2F0ei02MDExMDUxNTgtZGVfMDAuanBlZz92PTE2MjAwMjM5ODU/fuer-die-katz-601105158-de_00.v1.avif. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

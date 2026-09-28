@@ -3,10 +3,10 @@
   "slug": "herbaceous-pencil-first-2017-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e06cf46c35ae99d2d32c035a263094a3bf8b51cecbaffa754eb8a482b26506fe",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d5d4b8e51f3a290f6bdea636567b3bc18ee052811a193ebd61fe1b243e9649dc",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Herbaceous",
   "aliases": [],
   "editionLabel": "Pencil First Games English base game, 2017",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered the publisher-authored English rulebook pages 4 and 7 from the archive. Page 4 gives the regular herb criterion and clockwise order; page 7 gives the separate team rule. The credits name Pencil First Games and 2017; components match inventory BGG 195314. SHA-256: 12869f43c88fe08fb13dab850f5bc4b48e23e6e66fd152e74c57bd066d38497e. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
   "uncertainty": [
     "Neither mode gives an official tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/herbaceous-pencil-first-2017-en-cover.jpg",
+    "alt": "Herbaceous official game box cover",
+    "width": 300,
+    "height": 169,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.pencilfirstgames.com/products/herbaceous",
+      "publisher": "Pencil First Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Pencil First Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://shop.pencilfirstgames.com/products/herbaceous supplies original product image https://shop.pencilfirstgames.com/cdn/shop/products/Herbaceous-Flat-Box-Front_300x300.png?v=1663859683. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

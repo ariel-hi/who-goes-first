@@ -3,10 +3,10 @@
   "slug": "kawaii-helvetiq-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "82eb55ef109c12d49762160986d46920c322108387667288e7ae7fd51315ffc4",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "719d9f8df6be43f054c2a4caf1b5bf672089ea1a07ba784cec7a8dcb5ff92f24",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kawaii",
   "aliases": [],
   "editionLabel": "Helvetiq multilingual rules, English sheet",
@@ -35,5 +35,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kawaii-helvetiq-en-cover.jpg",
+    "alt": "Kawaii official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://helvetiq.com/us/kawaii",
+      "publisher": "Helvetiq"
+    },
+    "fairUse": {
+      "rightsHolder": "Helvetiq and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://helvetiq.com/us/kawaii supplies original product image https://helvetiq.com/media/catalog/product/k/a/kawaii_mockup_1000x1000.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

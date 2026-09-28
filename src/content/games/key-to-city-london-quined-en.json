@@ -3,10 +3,10 @@
   "slug": "key-to-city-london-quined-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "cdb64ff1c3684be3d6b244af90b56c6d1fc8394257042b1656c47a0fd23c581a",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "cb6012915fa79ceb8e58b52485360597e598013a5cf7a6d633ca4d2d24d629c6",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Key to the City: London",
   "aliases": [],
   "editionLabel": "Quined Games English rulebook, 2016",
@@ -37,5 +37,22 @@
   "internalEvidence": "Quined’s product page links an English PDF, but that link currently fails; a complete publisher-authored copy preserved by a rulebook archive was inspected. PDF pages 3–4 were rendered and read. The booklet credits Quined Games and the Bleasdale/Breese design, matching inventory BGG 205507. SHA-256: cf23149f1f62552c9029ce71c57f2ec630fa58ee82d1fc02df7fbdbfff0c6ae8. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The London-visit criterion is a suggestion, not a requirement. The rules leave the choice to players and give no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/key-to-city-london-quined-en-cover.jpg",
+    "alt": "Key to the City: London official game box cover",
+    "width": 356,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.quined.nl/featured_item/key-to-the-city-london/",
+      "publisher": "Quined Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Quined Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.quined.nl/featured_item/key-to-the-city-london/ supplies original product image https://www.quined.nl/wp-content/uploads/2016/12/cover-kttc-1140x1600.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

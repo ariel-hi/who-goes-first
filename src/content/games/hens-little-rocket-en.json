@@ -3,10 +3,10 @@
   "slug": "hens-little-rocket-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c24cc588c1f5a486aa17045bbfe6508b02834781889b9e0e31b5feed8aa24a49",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b4abaeb52eb8b917fae0c802aac066bb971c1cb72655e676c3db5f0a06522cda",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hens",
   "aliases": [],
   "editionLabel": "Little Rocket Games English rulebook",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Visually checked page 4 of the publisher-hosted English version 2 PDF. It gives the last-barnyard-visitor criterion, random fallback when nobody has visited, and clockwise play. SHA-256: afa570097b71d5b967057f2e44847ddf4db6bf2c04829fabcae2eda2cab4dfb4. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the BGG identity against the publisher and the starting criterion against the cited pages. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/hens-little-rocket-en-cover.jpg",
+    "alt": "Hens official game box cover",
+    "width": 360,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.littlerocketgames.com/product/hens/",
+      "publisher": "Little Rocket Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Little Rocket Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.littlerocketgames.com/product/hens/ supplies original product image https://www.littlerocketgames.com/wp-content/uploads/2022/08/HENS-3D.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "good-cop-bad-cop-pull-the-pin-4e-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "694c4a3a82f1663fc02a0dd486936df1982d7e45136c4e7bdec591f950fa2b49",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4465958cb5ff9c463eb79868fdc7c19fdbe0845f788d0f6516ce92cb78f5addb",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Good Cop Bad Cop",
   "aliases": [],
   "editionLabel": "Pull the Pin Games English fourth-edition rules, 2023",
@@ -35,5 +35,22 @@
   "internalEvidence": "The publisher product page links this image-only PDF. Both sides were rendered and read; setup step 7 gives the unusual criterion, and the turn section says play proceeds clockwise. The sheet identifies the 2023 Pull the Pin edition and matches inventory BGG 153064. SHA-256: 446707fc37d6b28d2f00dbead11ddbd520216ce3a96d96f505b77fdaf9eb0158. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
   "uncertainty": [
     "The rulebook gives no instruction when no player has been shot or multiple players share the most recent occurrence."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/good-cop-bad-cop-pull-the-pin-4e-en-cover.jpg",
+    "alt": "Good Cop Bad Cop official game box cover",
+    "width": 225,
+    "height": 300,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pullthepingames.com/Games/GoodCopBadCop/",
+      "publisher": "Pull the Pin Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Pull the Pin Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://pullthepingames.com/Games/GoodCopBadCop/ supplies original product image https://pullthepingames.com/images/games/goodcopbadcop/4th/pinbox_no_shadow_225_300.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "indian-summer-spielwiese-en-2018",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "762c6386370b17ae9514a9ff78748891eed580ce53e1596067e632890b3f8f00",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "caa09b1f632feb38c2d56c40c93c912041052a4f90252d01104d3bcc989f27f2",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Indian Summer",
   "aliases": [],
   "editionLabel": "Edition Spielwiese English rulebook (2018)",
@@ -36,5 +36,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF pages 3 and 4 (printed pages 4 and 5) of the publisher-authored English rulebook mirrored by 1jour-1jeu. Set-up step K gives the forest-stroll criterion and Hiking Shoes; game flow gives clockwise turns. PDF page 14 credits Edition Spielwiese and 2018. Matches inventory BGG 233678. SHA-256: ab1b3b66395b84025b2560efa54e0d23f215856694bfc79723f0c65068ec8d4d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, and starting rule against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/indian-summer-spielwiese-en-2018-cover.jpg",
+    "alt": "Indian Summer official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://edition-spielwiese.de/spiel/indian-summer/",
+      "publisher": "Edition Spielwiese"
+    },
+    "fairUse": {
+      "rightsHolder": "Edition Spielwiese and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://edition-spielwiese.de/spiel/indian-summer/ supplies original product image https://edition-spielwiese.de/wp-content/uploads/2025/06/Indian-Summer-Front900x900.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
