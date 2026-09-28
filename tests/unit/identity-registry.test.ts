@@ -188,6 +188,7 @@ test('reviewed Grail identities stay publisher-only pending games with exact pro
     ['game-8cd57a82-7678-4bc1-9af8-a2772bfc87de', 'A Walk in the Park', 'a-walk-in-the-park'],
     ['game-69eed274-424b-4709-b3e9-52533519cc16', 'Boomerang: Australia', 'boomerang-australia'],
     ['game-e1f6a151-a9ff-4bb3-83e3-56fb607cfaad', 'Boomerang: Europe', 'boomerang-europe'],
+    ['game-9f004293-d07c-41d5-838e-9a723d6d2b12', 'Boomerang: USA', 'boomerang-usa'],
     ['game-c00a4d16-5378-451a-9e70-ca55d73b8598', 'Elevenses: The Guilty Party', 'elevenses-guilty-party'],
     ['game-fd09a2f1-4667-4328-88b8-62393fce2d13', 'Fantasy Brewers', 'fantasy-brewers'],
     ['game-69031e34-9cc8-4142-9f19-1a035d5ee624', 'Level 10', 'level-10'],

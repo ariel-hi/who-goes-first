@@ -1054,6 +1054,47 @@
       "reviewedBy": "Codex /root, under the owner’s standing improvement and publisher identity review authorization",
       "reviewedAt": "2026-09-27",
       "acceptedRevision": "c6511925f0a2397c5b1ba798db631ba50939df6344b8a1cc1ecf357b14ed5449"
+    },
+    {
+      "identityId": "game-9f004293-d07c-41d5-838e-9a723d6d2b12",
+      "routeKey": "game-9f004293-d07c-41d5-838e-9a723d6d2b12",
+      "name": "Boomerang: USA",
+      "searchNames": [],
+      "publisher": "Grail Games",
+      "identityScope": "Grail physical USA draft-and-write stand-alone family game; publisher describes rules differences and new scoring. No Australia, Europe, generic Boomerang, or digital implementation merge.",
+      "identityEvidence": "The official product H1 and complete description name Boomerang: USA, call it stand-alone, identify its sister games, and describe the coast-connecting scoring feature. A separate publisher catalog card supplies the exact product link.",
+      "publisherReferenceSourceId": "grail-boomerang-usa",
+      "sources": [
+        {
+          "id": "grail-boomerang-usa",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games/boomerang-usa",
+          "sha256": "43bdbd55f076b35196c466ed8465470732bd8128398879abd3f6ffac1e89d325",
+          "byteCount": 936633,
+          "location": "Focal H1, full product description, credit and publisher footer blocks; raw offsets and hashes in grail-boomerang-usa-full-source-context.json."
+        },
+        {
+          "id": "grail-catalog",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/our-games",
+          "sha256": "cce2159b3d34115be92044ffae3933afa8baa694ece67330d12092d53dad6cd4",
+          "byteCount": 745389,
+          "location": "Original sealed thirty-entry Our Games catalog; literal title/product anchor in catalog-complete-link-inventory.json."
+        },
+        {
+          "id": "grail-about",
+          "kind": "primary-publisher",
+          "url": "https://www.grailgames.games/about",
+          "sha256": "4db517b9d347f509909b8ed76eebabb01f3f655d5bc634aaa3ab2a1f465a2b4c",
+          "byteCount": 171713,
+          "location": "Original sealed publisher About body; publisher identity only."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root, under the owner’s standing improvement and publisher identity review authorization",
+      "reviewedAt": "2026-09-27",
+      "acceptedRevision": "a0b22fc542eaabcecd7a4e355a320c742452b71268a7e9f2de64ffdfcdf19bfa"
     }
   ]
 }

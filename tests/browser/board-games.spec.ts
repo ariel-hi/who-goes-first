@@ -81,8 +81,19 @@ test('board games are browsable without search and searchable on demand', async 
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('zzzz-no-matching-game');
   await expect(page.getByRole('heading', { name: 'No matching games' })).toBeVisible();
   await expect(page.locator('[data-empty]').getByRole('link', { name: 'pick a starting player' })).toHaveAttribute('href', '/');
+  const requestGame = page.locator('[data-request-game]');
+  if (await requestGame.count()) {
+    await expect(requestGame).toBeVisible();
+    await expect(requestGame).toHaveAttribute('href', /subject=Board%20game%20request%3A%20zzzz-no-matching-game/);
+    await expect(requestGame).toHaveAttribute('href', /body=Game%3A%20zzzz-no-matching-game%0AOfficial%20publisher%20link%3A/);
+  }
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Azul');
   await expect(page.locator('[data-results] li').first()).toContainText('Azul');
+  await page.getByRole('searchbox', { name: 'Search board games' }).fill('Boomerang: USA');
+  const boomerangUsa = page.locator('[data-results] li[data-id="game-9f004293-d07c-41d5-838e-9a723d6d2b12"]');
+  await expect(boomerangUsa).toHaveAttribute('data-has-rule', 'false');
+  await boomerangUsa.locator('summary').click();
+  await expect(boomerangUsa.getByRole('link', { name: 'Publisher reference' })).toHaveAttribute('href', 'https://www.grailgames.games/our-games/boomerang-usa');
   // Acquire now has a checked rule; keep this flow on a verified pending identity.
   expect(games.find(game => game.routeKey === '452264')?.rules).toEqual([]);
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Brass: Pittsburgh');

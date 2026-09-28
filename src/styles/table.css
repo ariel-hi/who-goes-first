@@ -71,6 +71,8 @@
   .directory-empty { margin:16px 0; padding:18px; border:1px solid var(--line); border-radius:14px; background:var(--paper); }
   .directory-empty h2 { font-size:17px; margin:0 0 7px; }
   .directory-empty p { font-size:14px; margin:0; }
+  .directory-empty p + p { margin-top:12px; }
+  .directory-request[hidden] { display:none; }
   .directory-pagination { display:flex; align-items:center; justify-content:space-between; gap:12px; margin:24px 0; }
   .directory-pagination a { display:inline-flex; align-items:center; min-height:44px; }
   .directory-pagination span { color:var(--muted); font-size:13px; text-align:center; }

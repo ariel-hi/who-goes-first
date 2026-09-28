@@ -3,7 +3,9 @@ import SharePage from "../../components/SharePage.astro";
 import Layout from '../../layouts/Layout.astro';
 import { getBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
 import { getCatalog } from '../../lib/content/catalog';
+import { siteSettings } from '../../lib/site';
 const { games, letters } = getBrowseShelves();
+const { contact } = siteSettings();
 const withRules = games.filter(game => game.rules.length > 0).length;
 const linkedRuleIds = new Set(games.flatMap(game => game.rules.map(rule => rule.id)));
 const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
@@ -24,7 +26,11 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       <p class="count-label" data-count role="status" hidden></p>
       <ul id="directory-results" class="game-list directory-results" data-results hidden></ul>
       <button type="button" class="directory-more" data-more aria-controls="directory-results" hidden>Show more games</button>
-      <div class="directory-empty" data-empty hidden><h2>No matching games</h2><p>Try a shorter name or another filter. You can also <a href="/">pick a starting player</a> now.</p></div>
+      <div class="directory-empty" data-empty hidden>
+        <h2>No matching games</h2>
+        <p>Try a shorter name or another filter. You can also <a href="/">pick a starting player</a> now.</p>
+        {contact && <p class="directory-request" data-request-prompt>Still missing? <a data-request-game data-contact={contact} href={`mailto:${contact}?subject=Board%20game%20request`}>Request this game</a>. Include an official publisher link and the edition if you know them.</p>}
+      </div>
       <noscript><p class="small muted">Browse the letter pages below. Search needs JavaScript.</p></noscript>
     </div>
     <h2 class="directory-browse-heading">Browse by name</h2>
@@ -47,6 +53,8 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   const results = root.querySelector<HTMLUListElement>('[data-results]')!;
   const more = root.querySelector<HTMLButtonElement>('[data-more]')!;
   const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+  const requestPrompt = root.querySelector<HTMLElement>('[data-request-prompt]');
+  const requestGame = root.querySelector<HTMLAnchorElement>('[data-request-game]');
   const batchSize = 80;
   let data: SearchGame[] | undefined;
   let loading: Promise<SearchGame[]> | undefined;
@@ -69,6 +77,10 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   const render = async () => {
     const thisRevision = ++revision;
     const rawQuery = input.value;
+    if (requestGame) {
+      const game = rawQuery.trim();
+      requestGame.href = `mailto:${requestGame.dataset.contact}?subject=${encodeURIComponent(`Board game request: ${game}`)}&body=${encodeURIComponent(`Game: ${game}\nOfficial publisher link:\nEdition (if known):\n`)}`;
+    }
     const renderedFilter = filter;
     const query = compact(rawQuery);
     renderedState = undefined;
@@ -87,6 +99,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     }
     if (thisRevision !== revision) return;
     matchedGames = data!.filter(game => (game.search.includes(query) || game.numericId?.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
+    if (requestPrompt) requestPrompt.hidden = filter !== 'all';
     matchedGames.sort((a, b) => {
       const rank = (game: SearchGame) => game.numericId === query || game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
       return rank(a) - rank(b) || a.name.localeCompare(b.name, 'en', { numeric: true });
