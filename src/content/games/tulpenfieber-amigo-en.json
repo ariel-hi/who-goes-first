@@ -3,10 +3,10 @@
   "slug": "tulpenfieber-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "8b98b3466c54a7dc65795dc20198476afaf017dd5d035eaee710beac2d78fd72",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "c2d60cb4212ad90b87db7d16d88e6edc8df92ad55c0025a6ae0743bcf4abf447",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tulpenfieber",
   "aliases": [],
   "editionLabel": "English AMIGO rules",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tulpenfieber-amigo-en-cover.jpg",
+    "alt": "Tulpenfieber AMIGO Games box cover",
+    "width": 560,
+    "height": 552,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/2153/full/02153-schachtel-20082025.jpg",
+      "publisher": "AMIGO Games"
+    },
+    "fairUse": {
+      "rightsHolder": "AMIGO Games / illustrator Roberto Freire",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official AMIGO Games product listing: https://www.amigo-spiele.de/familienspiele/tulpenfieber_2153_1183. Exact official shop image: https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/2153/full/02153-schachtel-20082025.jpg. Product number 02153 matches the AMIGO English rule PDF cited by this article, and the title and artwork were visually checked against its first page (English AMIGO rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
