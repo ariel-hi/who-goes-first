@@ -3,10 +3,10 @@
   "slug": "star-realms-white-wizard-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "f2616cf9e820b2b86f0e98079a37408b87d02b85f26ad29dbede330bbc1e67a9",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "120746ccc857c1a359187833095294e8155bd80a6977de2c8d392a9b185dca04",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Star Realms",
   "aliases": [
     "Star Realms Deckbuilding Game"
@@ -54,5 +54,22 @@
   "uncertainty": [
     "The rules sheet is published as images on the official site rather than a PDF, so page numbers refer to the sheet pages.",
     "The rules do not say how the Emperor format decides which team is Team A."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/star-realms-white-wizard-en-cover.jpg",
+    "alt": "Star Realms original core-set box cover",
+    "width": 429,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.starrealms.com/images/products/box_base_set.webp",
+      "publisher": "Wise Wizard Games (formerly White Wizard Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "Wise Wizard Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Star Realms game site owned by Wise Wizard Games, formerly White Wizard Games: https://www.starrealms.com/. Exact publisher-hosted core-set package image: https://www.starrealms.com/images/products/box_base_set.webp. The original Star Realms Deckbuilding Game core box was visually reviewed against the article edition (White Wizard Games English rules sheet, 2013); the same site hosts the referenced original rules sheet.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
