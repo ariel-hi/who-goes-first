@@ -3,10 +3,10 @@
   "slug": "friday-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "56168f63cf8184ab0ffa6eb5a9e0e8566fdea2cbd84a904802d8e59a3887474f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f63702624d1877f3185e0d178df3678c2eb8465fd5c06703c19cdbd83fbe202e",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Friday",
   "aliases": [],
   "editionLabel": "Rio Grande English edition",
@@ -31,5 +31,22 @@
     }
   ],
   "internalEvidence": "Publisher-hosted Rio Grande English manual explicitly identifies a solo adventure on rendered page1. No multiplayer start criterion invented. Source custody: research/source-files/popular-sep26-09/friday.pdf; SHA-256 93ba20b367a9538b25895f1ec46a53509ae87358f5fcc957f0aa3154dccef549. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/friday-rio-grande-en-cover.jpg",
+    "alt": "Friday Rio Grande Games English box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/rgg457-friday",
+      "publisher": "Rio Grande Games / Asmodee UK"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games and cover-art creators (precise ownership not stated on distributor product page)",
+      "rationale": "Small, compressed authorized-distributor product image identifies the exact English base game described in this editorial rule explanation.",
+      "provenance": "Asmodee UK distributor product listing RGG457 supplies the English Friday box image. Rio Grande Games official product page identifies the same RIO457 stock code and English solo game. Direct image: https://cdn.shopify.com/s/files/1/0572/1076/5512/files/RGG457_1.jpg?v=1775758373",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
