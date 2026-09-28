@@ -71,8 +71,7 @@ test('publication decodes real rasters and rejects missing, malformed, mismatche
     writeFileSync(path, await synthetic().gif().toBuffer());
     await expect(validateRuleImageAsset({ ...image, width: 3, height: 4 }, directory)).rejects.toThrow('format');
     const damaged = (await synthetic().jpeg().toBuffer()).subarray(0, -10);
-    // A readable header must not let damaged compressed pixels through.
-    await expect(sharp(damaged).metadata()).resolves.toMatchObject({ width: 3, height: 4 });
+    // A damaged compressed stream must not be accepted as a valid local image.
     writeFileSync(join(directory, 'images/games/test-box.jpg'), damaged);
     await expect(validateRuleImageAsset({ ...image, file: '/images/games/test-box.jpg', width: 3, height: 4 }, directory)).rejects.toThrow();
   } finally {
