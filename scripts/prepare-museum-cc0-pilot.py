@@ -45,6 +45,10 @@ NYPL_GAME_ITEMS = {
     "70355b00-74a7-0130-b7e9-58d385a7bbd0",
     "4e1055b0-74a7-0130-1d05-58d385a7bbd0",
 }
+LATER_ACCEPTED_NAMES = {
+    "The Road to the Temple of Honour and Fame (J. Harris 1811)",
+    "The Telephone Game (Ideal Spellbinders No. 2410)",
+}
 
 
 def name_key(value: str) -> str:
@@ -81,14 +85,17 @@ def existing_names() -> set[str]:
                "searchNames": [title["text"] for item in native_candidates[row["bggId"]]["items"]
                                for title in item["titleOptions"]]}
               for row in native_decisions if row["decision"] == "accept"]
-    publisher = [row for row in rows("publisher-identities.json", "records") if row["decision"] == "accept"]
-    # These are the inventory enrollment decisions in board-games.ts and
-    # identity-registry.ts, plus the two accepted records in sibling 522165e2.
-    if len(original) + len(wikidata) + len(native) + len(publisher) + 2 != 5246:
+    publisher = [row for row in rows("publisher-identities.json", "records")
+                 if row["decision"] == "accept" and row["name"] not in LATER_ACCEPTED_NAMES]
+    # Reproduce the fixed pre-museum-pilot 5,246 comparison set, whether the
+    # two sibling records have been merged into this checkout or not.
+    sibling = [("Above and Below", []), ("Escape the Dark Castle (First Edition)", ["Escape the Dark Castle"])]
+    missing_sibling = [(name, aliases) for name, aliases in sibling if all(row["name"] != name for row in publisher)]
+    if len(original) + len(wikidata) + len(native) + len(publisher) + len(missing_sibling) != 5246:
         raise ValueError("5,246-identity comparison baseline changed")
     names = {name_key(title) for row in [*original, *wikidata, *native, *publisher]
              for title in (row["name"], *row.get("searchNames", []))}
-    names.update(map(name_key, ("Above and Below", "Escape the Dark Castle (First Edition)", "Escape the Dark Castle")))
+    names.update(name_key(title) for name, aliases in missing_sibling for title in (name, *aliases))
     return names
 
 

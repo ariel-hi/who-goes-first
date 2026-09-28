@@ -13,6 +13,9 @@ from the discovery list, accepted Wikidata decisions, accepted native-title
 decisions, and accepted publisher records, then adds those two sibling records.
 The normalized-name check also includes publisher search aliases and all title
 options attached to accepted native identities as a conservative alias guard.
+The later [original-artifact follow-up](sep28-museum-primary-review.md) resolves
+two of these holds after inspecting the separately served scans; this initial
+50-record decision file remains a fixed record of the metadata-only pass.
 
 ## Smithsonian: 50 official API hits
 
