@@ -3,13 +3,30 @@
   "slug": "revive-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5869fb2902399f52ddd67103705d8183b45fa98193d798d567a7419c679e56f9",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "5cec63acdbfbe5f5e701cd12709b4f558ef78bc0026017403aa78150c02af773",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Revive",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German rules, English summary",
+  "image": {
+    "file": "/images/games/revive-pegasus-de-summary-cover.jpg",
+    "alt": "Revive game cover, Pegasus Spiele edition",
+    "width": 317,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/b0/f9/22/1717753759/4250231735561.jpg?ts=1767598660",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the first product image on Pegasus Spiele's page https://pegasus.de/en/Revive/53071G. The product title and article number identify the edition corresponding to this rule; reduced to 317 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose the starter with a quantum random generator, or another method the group considers sufficiently random if one is unavailable.",
   "officialTieBreak": "Without a quantum random generator, the rules explicitly allow any other method with a degree of randomness the group accepts.",
   "houseFallback": null,

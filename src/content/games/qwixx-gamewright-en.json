@@ -3,13 +3,30 @@
   "slug": "qwixx-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "a6fe8efde3bd4eac6775d62a6f962d40e0fd8022bd0b79e3d48df8713f97a509",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "0a6c73ff89dbfa2d0f4994117e0311436592ffa0266005f91d6bf326de3cf79d",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Qwixx",
   "aliases": [],
   "editionLabel": "Gamewright English Rules of Play",
+  "image": {
+    "file": "/images/games/qwixx-gamewright-en-cover.jpg",
+    "alt": "Qwixx game cover, Gamewright edition",
+    "width": 260,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/GAMEWRIGHT-1201.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright / Ceaco",
+      "rationale": "Small publisher-sourced cover identifies the exact game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the high-resolution image linked on Gamewright's product page https://gamewright.com/product/Qwixx. The publisher product name and stock number identify the game covered by this Gamewright rule edition; reduced to 260 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The first player to roll a 6 (on any of the six dice, during ordinary play) takes on the role of \"active player\" for that roll; whoever becomes active player first effectively starts the game, since play only proceeds once someone rolls a 6.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -22,8 +39,12 @@
       "url": "https://gamewright.com/gamewright/pdfs/Rules/QwixxTM-RULES.pdf",
       "title": "Qwixx — A Fast Family Dice Game — Rules of Play",
       "publisher": "Gamewright",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "\"How to Play\" section, first paragraph",
       "checkedAt": "2026-09-27"
     }

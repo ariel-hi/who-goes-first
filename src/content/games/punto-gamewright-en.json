@@ -3,13 +3,30 @@
   "slug": "punto-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4fd3a0b60fb87a76e9122ebc2641a16b9e0b488ab85cda47a6fae509dc1c8bda",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "fa3aa801fd8cccfd4df4713a095d2ac63c4490ce3992334877af9b027115f475",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Punto",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/punto-gamewright-en-cover.jpg",
+    "alt": "Punto game cover, Gamewright edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/punto_box.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright / Ceaco",
+      "rationale": "Small publisher-sourced cover identifies the exact game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the high-resolution image linked on Gamewright's product page https://gamewright.com/product/punto. The publisher product name and stock number identify the game covered by this Gamewright rule edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The person with the most freckles starts by revealing their top card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",

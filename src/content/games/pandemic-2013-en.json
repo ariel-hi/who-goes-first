@@ -3,15 +3,32 @@
   "slug": "pandemic-2013-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "d6cb95e80191b5d9f589fe140b7310a652fc2109af956e83d371ab79cdfe4663",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "d49f4487fa46c5d7b9e6c5c9240ba8f612b6ae38a27a12c18c1a56e05875fd89",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Pandemic",
   "aliases": [
     "Pandemic base game"
   ],
   "editionLabel": "Z-Man Games English base game · copyright 2013",
+  "image": {
+    "file": "/images/games/pandemic-2013-en-cover.jpg",
+    "alt": "Pandemic game cover, Z-Man Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2024/08/ZM7101-1_720x.webp",
+      "publisher": "Z-Man Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games / Asmodee",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the first game image on Z-Man Games' product page https://www.zmangames.com/game/pandemic/. The publisher product title corresponds to this rule edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Look at the City cards in your opening hands. Whoever holds the card showing the largest city population takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": "If the printed populations do not settle it, your group can agree to choose randomly. This is an optional house rule.",

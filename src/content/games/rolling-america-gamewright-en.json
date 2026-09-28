@@ -3,13 +3,30 @@
   "slug": "rolling-america-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "0a023cbbeae944b1c230328ccfdabcd216aee784704aa0159342392d5a79aebd",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "6249601f9baa9428e634d1fdfcfe8378e22dbd606f249758937b406d3bb20179",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Rolling America",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/rolling-america-gamewright-en-cover.jpg",
+    "alt": "Rolling America game cover, Gamewright edition",
+    "width": 360,
+    "height": 310,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/GAMEWRIGHT-1204.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright / Ceaco",
+      "rationale": "Small publisher-sourced cover identifies the exact game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the high-resolution image linked on Gamewright's product page https://gamewright.com/product/Rolling-America. The publisher product name and stock number identify the game covered by this Gamewright rule edition; reduced to 360 × 310 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently visited another state draws and rolls the first two dice. Everyone then uses those dice simultaneously.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",

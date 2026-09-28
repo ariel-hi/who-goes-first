@@ -3,13 +3,30 @@
   "slug": "pandemic-legacy-season-two-zman-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "b607fb38943191c0acb483204e5a8246c6225639b0e9af649c3907ac20c474da",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "2eeead77aa3cd06140de2f99443ca3a7726c581cf8ee49ca52e7f19f47c1949d",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Pandemic Legacy: Season 2",
   "aliases": [],
   "editionLabel": "Z-Man original English Season 2 base rulebook",
+  "image": {
+    "file": "/images/games/pandemic-legacy-season-two-zman-en-cover.jpg",
+    "alt": "Pandemic Legacy: Season 2 game cover, Z-Man Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2024/08/zm7172_box_front-combined.webp",
+      "publisher": "Z-Man Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games / Asmodee",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the first game image on Z-Man Games' product page https://www.zmangames.com/game/pandemic-legacy-season-2/. The publisher product title corresponds to this rule edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Take all the players’ pawns and randomly select one. That pawn’s player takes the first turn, then play proceeds clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -24,8 +41,12 @@
       "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/pandemic_legacy_season_2_rules.pdf",
       "title": "Pandemic Legacy: Season 2 — English rulebook",
       "publisher": "Z-Man Games",
-      "printedPages": ["9"],
-      "pdfPagesOneBased": [9],
+      "printedPages": [
+        "9"
+      ],
+      "pdfPagesOneBased": [
+        9
+      ],
       "location": "Setup steps 8–9, Select Characters and Begin Play",
       "checkedAt": "2026-09-28"
     }

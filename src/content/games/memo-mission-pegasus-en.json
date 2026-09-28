@@ -3,13 +3,30 @@
   "slug": "memo-mission-pegasus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "546d5097a81da835c0cbb36e9f98014c6a45f2e1570c40a2cd901862c12f1d6a",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "4d60c7ecc5575cdebe953a79a8523be9a0895b8bcf3af0c4dc4b372908bf8540",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Memo Mission",
   "aliases": [],
   "editionLabel": "Pegasus Spiele English rules",
+  "image": {
+    "file": "/images/games/memo-mission-pegasus-en-cover.jpg",
+    "alt": "Memo Mission game cover, Pegasus Spiele edition",
+    "width": 297,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/5e/63/2e/1772561653/4250231731716.png?ts=1772561659",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the first product image on Pegasus Spiele's page https://pegasus.de/en/Memo-Mission/66029G. The product title and article number identify the edition corresponding to this rule; reduced to 297 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently read a fairy tale goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",

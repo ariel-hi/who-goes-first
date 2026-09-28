@@ -3,13 +3,30 @@
   "slug": "port-royal-pegasus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "07019ddd2b05410478fa1d77f53fcaa71bc6927bfcd8dd324398514127831bef",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "1a4b878f78638f2f2d7dcc9bc416dee332e5b3236566feeab70862dc39f9a49b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Port Royal",
   "aliases": [],
   "editionLabel": "Pegasus Spiele English base rules, 120-card edition",
+  "image": {
+    "file": "/images/games/port-royal-pegasus-en-cover.jpg",
+    "alt": "Port Royal game cover, Pegasus Spiele edition",
+    "width": 234,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/6d/4c/1a/1717755098/42502317055955mcgyg7t7ezfm.jpg?ts=1767598649",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the first product image on Pegasus Spiele's page https://pegasus.de/en/Port-Royal/18114G. The product title and article number identify the edition corresponding to this rule; reduced to 234 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently visited a harbor goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",

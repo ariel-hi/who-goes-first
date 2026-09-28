@@ -3,10 +3,10 @@
   "slug": "pandemic-legacy-season-1-zman-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "8f29ebb49fd035229679b5e81da4d951ef8a5f1ec5c6046d538208ff1bacea17",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "f39e379662b56140a72bc8932345a410e3753ff7095441f728d18db007f3ebdc",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Pandemic Legacy: Season 1",
   "aliases": [
     "Pandemic Legacy",
@@ -14,6 +14,23 @@
     "PL1"
   ],
   "editionLabel": "Z-Man Games English rulebook, 2015",
+  "image": {
+    "file": "/images/games/pandemic-legacy-season-1-zman-en-cover.jpg",
+    "alt": "Pandemic Legacy: Season 1 game cover, Z-Man Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2024/08/zm7170_combined_front_left_520px.webp",
+      "publisher": "Z-Man Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games / Asmodee",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the first game image on Z-Man Games' product page https://www.zmangames.com/game/pandemic-legacy-season-1/. The publisher product title corresponds to this rule edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Take all the pawns and blindly draw one. That pawn’s player goes first.",
   "officialTieBreak": null,
   "houseFallback": null,
