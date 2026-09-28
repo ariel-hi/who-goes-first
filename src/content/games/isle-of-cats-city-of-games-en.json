@@ -3,10 +3,10 @@
   "slug": "isle-of-cats-city-of-games-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "1e0b8d989e78493e1676d3b2be0efed48e64280a30358259270a6c43551e20a7",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8fe9e98320575f070648acebede37941fffff2f34a4e7d00a29078b24cb91634",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Isle of Cats",
   "aliases": [],
   "editionLabel": "The City of Games English base game",
@@ -52,5 +52,22 @@
     }
   ],
   "internalEvidence": "Official City of Games rules page links both standard and family manuals. Rendered standard4 establishes random initial order,8 tile drawing,12 speed reorder and tie preservation,13 first rescue. Family PDF1 independently gives random starter and rotation. These distinctions prevent treating initial setup order as the first rescue order. Source custody: research/source-files/popular-sep26-05/cats.pdf; SHA-256 aa27c861838c4cd8334c0ba49d999a7ac56c6ca6855fae926b2f66defbec8e30; research/source-files/popular-sep26-05/cats-family.pdf; SHA-256 d86ae47133c2c11321e23fe42b7f8a1d6734dfaaf3332e1825f37b13e5e7face. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/isle-of-cats-city-of-games-en-cover.jpg",
+    "alt": "The Isle of Cats official game box cover",
+    "width": 394,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://us.thecityofkings.com/collections/our-games/products/the-isle-of-cats",
+      "publisher": "The City of Games"
+    },
+    "fairUse": {
+      "rightsHolder": "The City of Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://us.thecityofkings.com/collections/our-games/products/the-isle-of-cats supplies original product image https://us.thecityofkings.com/cdn/shop/files/625_79588c56-c248-4c85-bc04-82b600ebaf2a.jpg?v=1747749645. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

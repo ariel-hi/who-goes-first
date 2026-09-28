@@ -3,10 +3,10 @@
   "slug": "legacy-gears-of-time-floodgate-2013-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f92dae79fb4a664e42b15b19de716739a35c4ef5b976bcd7b943725243e48eb8",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "927221686224034507cffd6954f532df9d22b383f3d7e9113be5f8cdc7d41a13",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Legacy: Gears of Time",
   "aliases": [],
   "editionLabel": "Floodgate Games English edition, 2013",
@@ -35,5 +35,22 @@
   "internalEvidence": "The ©2013 Floodgate Games English rulebook randomly awards first choice of player-order position, with earliest watch time only as a suggestion. It separately states turn order and later-round position choice. Its title and publisher credits match inventory BGG 119781. SHA-256: 37d40b282d41973417cbc879b8909a005a13bd684cdc574516af8950adc09dd8. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The source does not specify how remaining players choose opening order positions after the first choice."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/legacy-gears-of-time-floodgate-2013-en-cover.jpg",
+    "alt": "Legacy: Gears of Time official game box cover",
+    "width": 319,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://floodgate.games/products/legacy-gears-of-time",
+      "publisher": "Floodgate Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Floodgate Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://floodgate.games/products/legacy-gears-of-time supplies original product image https://floodgate.games/cdn/shop/products/LGT02-3D-Box.png?v=1504138868&width=1200. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

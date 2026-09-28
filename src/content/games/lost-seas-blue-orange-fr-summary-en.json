@@ -3,10 +3,10 @@
   "slug": "lost-seas-blue-orange-fr-summary-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "3d992c9aa29109857f4114e17aea45d7b248adaa374265f2701327e41be3dac3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "aba095e861994df2e80d46fd87e736812ed13db9f4e1a6ac21d65753a780bd97",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lost Seas",
   "aliases": [],
   "editionLabel": "Blue Orange French rules, English summary",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "An English-language edition has not been checked against this French instruction.",
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lost-seas-blue-orange-fr-summary-en-cover.jpg",
+    "alt": "Lost Seas official game box cover",
+    "width": 500,
+    "height": 375,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blueorangegames.eu/en/games/lost-seas/",
+      "publisher": "Blue Orange Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Orange Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://blueorangegames.eu/en/games/lost-seas/ supplies original product image https://blueorangegames.eu/wp-content/uploads/2021/12/LostSeas-3DBox-thegem-blog-timeline-large.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

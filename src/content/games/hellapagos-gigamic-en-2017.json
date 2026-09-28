@@ -3,10 +3,10 @@
   "slug": "hellapagos-gigamic-en-2017",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5dff31321dedd37596eea3cc516162c2a97dfa6fa974bf8508918852dbc8535a",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0d86bb08e7c2e5da35fce2528152612f2374618c51ee93cb1165d81eaa2c0028",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hellapagos",
   "aliases": [
     "Galèrapagos"
@@ -38,5 +38,22 @@
   "internalEvidence": "Visually checked PDF page 4 of the Gigamic-authored English rulebook mirrored by 1jour-1jeu. Gigamic's current product page links an English PDF URL that returned 404 during this check. The rule gives the castaway resemblance criterion, clockwise turns, and rightward First Player card transfer. SHA-256: 2924648c7ab64a415cc95bedffd6127ec37343ac5a11d4c32a15cc28bafbe079. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked game identity, edition, first-player criterion, and later-round order against the cited source.",
   "uncertainty": [
     "The publisher's current English download link was unavailable; this is the publisher-authored 2017 PDF hosted by a rulebook archive."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hellapagos-gigamic-en-2017-cover.jpg",
+    "alt": "Hellapagos official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://en.gigamic.com/games-for-fun/462-hellapagos.html",
+      "publisher": "Gigamic"
+    },
+    "fairUse": {
+      "rightsHolder": "Gigamic and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://en.gigamic.com/games-for-fun/462-hellapagos.html supplies original product image https://en.gigamic.com/2324-large_default/hellapagos.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

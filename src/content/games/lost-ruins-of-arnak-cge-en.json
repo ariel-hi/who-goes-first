@@ -3,10 +3,10 @@
   "slug": "lost-ruins-of-arnak-cge-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "d5576a48f01416e940695a964a9603f9c62a4ae8525cc8ee1299a2ba730f307f",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c967cab65b7f036d9d9b6dcd764358f16a2559d1325050dc4921f1f806e05bc1",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lost Ruins of Arnak",
   "aliases": [],
   "editionLabel": "English CGE base-game rules",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lost-ruins-of-arnak-cge-en-cover.jpg",
+    "alt": "Lost Ruins of Arnak official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.czechgames.com/products/lost-ruins-of-arnak",
+      "publisher": "Czech Games Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Czech Games Edition and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.czechgames.com/products/lost-ruins-of-arnak supplies original product image https://store.czechgames.com/cdn/shop/files/Lost_Ruins_of_Arnak_Box_Front.png?v=1732050200. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "john-company-second-edition-wehrlegig-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "cdecbdeac71f39c1f4f2815412e467c17c1e16c282b64303299995bcb3b77550",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c23ecf8d0b2f2682723f00b4f1c2e629ed06b47c2ea7bcfd7e35f38d1c96bdba",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "John Company: Second Edition",
   "aliases": [],
   "editionLabel": "Wehrlegig Second Edition · second printing, 2023 (English)",
@@ -55,5 +55,22 @@
   "uncertainty": [
     "The Crown Handbook was not reviewed for a solo or two-player answer. Those modes remain held for separate research.",
     "The inspected PDF is the explicitly marked 2023 second printing; this answer does not claim that its wording is the latest revision."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/john-company-second-edition-wehrlegig-en-cover.jpg",
+    "alt": "John Company: Second Edition official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://wehrlegig.com/products/john-company-second-edition",
+      "publisher": "Wehrlegig Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Wehrlegig Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://wehrlegig.com/products/john-company-second-edition supplies original product image https://wehrlegig.com/cdn/shop/files/JohnCompanyBoxTransparent.png?v=1742496617. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

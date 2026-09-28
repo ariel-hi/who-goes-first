@@ -3,10 +3,10 @@
   "slug": "isle-of-trains-all-aboard-dranda-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "3c644c4a569445955bdd29888c27f1bab96dbdd90979d4304d2d5a8a0717911b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "98eabe8d2846b4edda6c0edf046e90b363b236da46c959dfb4130b42751546ad",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Isle of Trains: All Aboard",
   "aliases": [],
   "editionLabel": "Dranda Games English rulebook",
@@ -39,5 +39,22 @@
   "internalEvidence": "Downloaded the official English PDF linked from Dranda Games' Isle of Trains: All Aboard product page and reviewed all 24 pages, with setup, play and turn continuation pages visually checked. The seven setup steps and the rest of the rulebook never identify an initial player or a selection method. Page 10 passes later turns to the player on the left. The file identifies the All Aboard edition, matching inventory BGG 355224 and distinct from the original Isle of Trains BGG 149451. SHA-256: 737cc9f16b9cfa658ee83f5f3b68aea2602e8c1a91e5cd92325bcffd164e7d14. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked identity, edition, and the cited pages against the downloaded source.",
   "uncertainty": [
     "The official rulebook does not state an initial player; the suggested random selection is explicitly a house rule."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/isle-of-trains-all-aboard-dranda-en-cover.jpg",
+    "alt": "Isle of Trains: All Aboard official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/drnit001-isle-of-trains-all-aboard",
+      "publisher": "Dranda Games / Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Dranda Games / Asmodee and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.asmodee.co.uk/products/drnit001-isle-of-trains-all-aboard supplies original product image https://www.asmodee.co.uk/cdn/shop/files/DRNIT001_1_fffe3fa3-b445-4f83-9fcc-78f2e085f126.jpg?crop=center&height=1200&v=1775517128&width=1200. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

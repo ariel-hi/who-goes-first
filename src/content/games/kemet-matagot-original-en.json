@@ -3,10 +3,10 @@
   "slug": "kemet-matagot-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "eff8b541faf50c9f3aafd96e4450874aae51dde9a344de22750a2d70d3a90d10",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3e244dc2ee33c36be0bb11668ac845632ead4d43fa753fa9db5d567147e227f9",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kemet",
   "aliases": [],
   "editionLabel": "Matagot English original edition",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered original English Matagot booklet 2 random initial turn order then pyramid allocation, 3 explicit first-turn random exception to later lowest-VP choice. PDF 8 Matagot contact/FAQ and translation credits. Publisher BGG original rules reference distinguishes original from 1.5 and Blood and Sand. Source custody: research/source-files/popular-sep26-13/kemet.pdf; SHA-256 fbf19c7d76be6875f31f6079314164e339d383b12cdda24f70c88b0690758523. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
   "uncertainty": [
     "The original Matagot-authored English rulebook is preserved by a rulebook archive. This record does not cover Kemet: Blood and Sand or later revised rules."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kemet-matagot-original-en-cover.jpg",
+    "alt": "Kemet official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.matagot.com/en/expert-games/206-340-kemet.html",
+      "publisher": "Matagot"
+    },
+    "fairUse": {
+      "rightsHolder": "Matagot and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.matagot.com/en/expert-games/206-340-kemet.html supplies original product image https://www.matagot.com/516-large_default/kemet.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

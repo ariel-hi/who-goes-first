@@ -3,10 +3,10 @@
   "slug": "inventions-evolution-of-ideas-eagle-gryphon-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "b29a8f9bbdddfe1314f861c216b9f50a42b9b9dce33bcff0b43eca10da560201",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d96156a28946139c9fc418cc46c259a2ff88408984caccc30c6d58df995e2ef1",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Inventions: Evolution of Ideas",
   "aliases": [
     "Inventions"
@@ -50,5 +50,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/inventions-evolution-of-ideas-eagle-gryphon-en-cover.jpg",
+    "alt": "Inventions: Evolution of Ideas official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.eagle-gryphon.com/products/inventions-evolution-of-ideas",
+      "publisher": "Eagle-Gryphon Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Eagle-Gryphon Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.eagle-gryphon.com/products/inventions-evolution-of-ideas supplies original product image https://www.eagle-gryphon.com/cdn/shop/files/102420-2_1200x1200.png?v=1747772538. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

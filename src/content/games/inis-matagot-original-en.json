@@ -3,10 +3,10 @@
   "slug": "inis-matagot-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "8dc3a78fbd6c6bcb622be9ce27615cc40d2b6043931e1d4dc538d6dbedb0ae96",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f2dda2fdb12af26307c19bab30c90ec3565203c34a12f151ceeee16fc932dda5",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Inis",
   "aliases": [],
   "editionLabel": "Matagot English original edition",
@@ -42,5 +42,22 @@
   "internalEvidence": "Archive preserves Matagot original English manual, Christian Martinez credits at11. Rendered5 random setup Brenn,6 reassignment to Capital chieftain and direction flip,7 mandatory first Season card. Do not imply the random setup holder necessarily remains Brenn after the first Assembly. Source custody: research/source-files/popular-sep26-08/inis.pdf; SHA-256 d9d61fbd41af15b4bf907c3fc3a78bbbae878168b62e85e892ee6058e9b8ff46. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The original Matagot-authored English manual is preserved by a rulebook archive. A direct English download was not available from the reviewed publisher product page."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/inis-matagot-original-en-cover.jpg",
+    "alt": "Inis official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.matagot.com/en/expert-games/210-329-inis.html",
+      "publisher": "Matagot"
+    },
+    "fairUse": {
+      "rightsHolder": "Matagot and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.matagot.com/en/expert-games/210-329-inis.html supplies original product image https://www.matagot.com/545-large_default/inis.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

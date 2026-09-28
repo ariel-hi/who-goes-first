@@ -3,10 +3,10 @@
   "slug": "incan-gold-eagle-gryphon-en-2018",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6bf44260c94f5c4db5c3d9048879349536f635be1f072395d29079a8173b31f7",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "58c0d62d4ee4d969af78ee5b1117541c80dc2b2d416abcd63eda430532e74c09",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Incan Gold",
   "aliases": [],
   "editionLabel": "Eagle-Gryphon English rules, ©2018, meeple edition",
@@ -40,5 +40,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/incan-gold-eagle-gryphon-en-2018-cover.jpg",
+    "alt": "Incan Gold official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.eagle-gryphon.com/products/incan-gold-2018",
+      "publisher": "Eagle-Gryphon Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Eagle-Gryphon Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.eagle-gryphon.com/products/incan-gold-2018 supplies original product image https://www.eagle-gryphon.com/cdn/shop/files/102197-2_1200x1200.png?v=1747772534. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

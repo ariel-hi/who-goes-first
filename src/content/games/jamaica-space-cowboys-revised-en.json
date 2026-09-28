@@ -3,10 +3,10 @@
   "slug": "jamaica-space-cowboys-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "3f28b2f5d6bf8c471c35b1b4ae2b7cf461983f1a0285cc03bb3531953eac2805",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b37da1efca7eea5ee36ad820708736c6ff85aae402c82e4e84cd5ed7db91d180",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Jamaica",
   "aliases": [],
   "editionLabel": "Space Cowboys English revised edition",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "OfficialSpaceCowboysCDN revisedEnglishbooklet. RenderedPDF5setup12randomCaptain,6dice/secretcardchoice/Captainfirstresolutionandpassleft. Publisherauthoredhostverified. Source custody: research/source-files/popular-sep26-10/jamaica.pdf; SHA-256 8fc343754f97a3a3aa8d0476219a1ee04962d3876687ff197d29a12b765c86a5. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/jamaica-space-cowboys-revised-en-cover.jpg",
+    "alt": "Jamaica official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/jamaica",
+      "publisher": "Space Cowboys / Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Space Cowboys / Asmodee and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.asmodee.com/products/jamaica supplies original product image https://store.asmodee.com/cdn/shop/products/JCA03.jpg?v=1690572222. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

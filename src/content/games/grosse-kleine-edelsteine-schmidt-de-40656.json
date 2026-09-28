@@ -3,8 +3,8 @@
   "slug": "grosse-kleine-edelsteine-schmidt-de-40656",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "1e9ef4e220f88b98866b6d13c339d758c199bb051cefe9198925c12aef358686",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "cdc5f6d6ee34d28253ae90f7fc6ca7c712561f1277fa5d89963f272c00110196",
   "publishedAt": "2026-09-26",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Große kleine Edelsteine",
@@ -46,5 +46,22 @@
     "The manual shows a four-person setup and four-player exception but does not visibly print the complete2–4player range. That range belongs to the separate preserved product page and is not attributed to this PDF.",
     "Numeric409498 remains exact saved own normal Wikidata P2339 only. Article40656, literal Wolfgang Warsch credit and saved foreign titles do not approve numeric/creator-QID/alias/edition repair.",
     "The exact source, English-summary record and identity mapping have completed separate root and independent source review. The retained research copy remains lifecycle-null history; application requires a fresh promoted-baseline preservation check."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/grosse-kleine-edelsteine-schmidt-de-40656-cover.jpg",
+    "alt": "Große kleine Edelsteine official game box cover",
+    "width": 265,
+    "height": 265,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.schmidtspiele-shop.de/grosse-kleine-edelsteine",
+      "publisher": "Schmidt Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Schmidt Spiele and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.schmidtspiele-shop.de/grosse-kleine-edelsteine supplies original product image https://www.schmidtspiele-shop.de/media/catalog/product/cache/cb43cb9f09d909f93a62d7fc0a63abf7/4/0/40656_packshot_nomksdj_logo-min.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

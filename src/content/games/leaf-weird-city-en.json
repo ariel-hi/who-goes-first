@@ -3,10 +3,10 @@
   "slug": "leaf-weird-city-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "2497f170aef31a4b52d99c13f4b0a0fbbdd91fef922831669699b12d44591ef4",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "79f89131500c5468782e6970289235bc769bc8c12b98936220e33f6137896c54",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Leaf",
   "aliases": [],
   "editionLabel": "Weird City Games English rules",
@@ -31,5 +31,22 @@
   "internalEvidence": "A complete Leaf rulebook preserved by a rules archive was inspected at rendered PDF page 2. Its leaf, animal and tree components match Weird City Games’ Leaf product description and inventory BGG 368676. SHA-256: 03e63de09ce4e433a8e7b3b33ab0c849397bbffa02db30f1273fc6fc020e8a7e. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie procedure is stated for people who touched the same tree at the same time."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/leaf-weird-city-en-cover.jpg",
+    "alt": "Leaf official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.weirdcitygames.com/products/leaf-board-game-standard",
+      "publisher": "Weird City Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Weird City Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.weirdcitygames.com/products/leaf-board-game-standard supplies original product image https://www.weirdcitygames.com/cdn/shop/files/1.png?v=1728242529. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

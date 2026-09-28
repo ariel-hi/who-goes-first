@@ -3,10 +3,10 @@
   "slug": "looot-gigamic-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "bd0155d592f394b5d18199f5890dda3b6662620eee6e082f341e9ee220fba353",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "846ddbb92ad4ab7232c21d2f39c58622f3b023dc3d904f6ad322b4c29c58f295",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Looot",
   "aliases": [],
   "editionLabel": "English Gigamic rules",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/looot-gigamic-en-cover.jpg",
+    "alt": "Looot official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://en.gigamic.com/accueil-fr/1136-looot.html",
+      "publisher": "Gigamic"
+    },
+    "fairUse": {
+      "rightsHolder": "Gigamic and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://en.gigamic.com/accueil-fr/1136-looot.html supplies original product image https://en.gigamic.com/2974-large_default/looot.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

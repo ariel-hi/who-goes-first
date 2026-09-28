@@ -3,10 +3,10 @@
   "slug": "fresh-fruits-huch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4b1a01ea7cdbc69cc0b931268d6af8db851e576ce91be2582ff5d73bce6c890b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "569d3d68f63dec8444b520c6ab2fb706efa6afa3ec79c7dd967bb3006dfc33e7",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fresh Fruits",
   "aliases": [],
   "editionLabel": "HUCH! English rules in the 2022 multilingual booklet",
@@ -37,5 +37,22 @@
   "internalEvidence": "The Hutter Trade product page links this multilingual PDF. Its English pages 6–7 were rendered and read. They identify the most recent melon eater for round one and pass the starting role clockwise after each round. The title, HUCH! branding and designer match inventory BGG 354324. SHA-256: 5260f6bdad3d66b8713fcc105ba5567254d4485024b89b707796a5ffc38541d0. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for people who last ate melon together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fresh-fruits-huch-en-cover.jpg",
+    "alt": "Fresh Fruits official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://hutter-trade.com/sortiment/produkt/fresh-fruits-von-huch/",
+      "publisher": "HUCH! / Hutter Trade"
+    },
+    "fairUse": {
+      "rightsHolder": "HUCH! / Hutter Trade and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://hutter-trade.com/sortiment/produkt/fresh-fruits-von-huch/ supplies original product image https://produkte.hutter-trade.com//files/products/733/100/de/medium/Familienspiel-FreshFruits-von-huch-4260071882639_A_Box-1500.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

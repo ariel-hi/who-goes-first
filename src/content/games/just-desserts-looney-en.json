@@ -3,10 +3,10 @@
   "slug": "just-desserts-looney-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8f2115f7575b02ede51d673898b8070906a79adc167c0165d826f3f486ba3d37",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "aad5810179d589048e9049a7485c79d3e2ecbf703d5668c6857b3543cf216eaf",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Just Desserts",
   "aliases": [],
   "editionLabel": "Looney Labs English rules, copyright 2015, publisher's updated long sheet",
@@ -36,5 +36,22 @@
     "The instruction does not specify a fallback if nobody has served dessert to the group.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/just-desserts-looney-en-cover.jpg",
+    "alt": "Just Desserts official game box cover",
+    "width": 288,
+    "height": 292,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.looneylabs.com/products/just-desserts",
+      "publisher": "Looney Labs"
+    },
+    "fairUse": {
+      "rightsHolder": "Looney Labs and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.looneylabs.com/products/just-desserts supplies original product image https://store.looneylabs.com/cdn/shop/products/bb829c88d84757ee59627409d5e8858a_1200x1200.png?v=1596570080. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "long-shot-dice-perplext-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "05f01c985065457c8ffd1973d5184b284d8d0a08c2898c4e63f33d862ffd7685",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e756471f05d8759e2f9bb91a8d3fadde0d00694b3fd744301e2f494aa1c8e8e5",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Long Shot: The Dice Game",
   "aliases": [],
   "editionLabel": "Perplext English rulebook, 2021",
@@ -37,5 +37,22 @@
   "internalEvidence": "Perplext designer Chris Handy uploaded the English booklet to BoardGameGeek; a complete copy preserved by retailer DesktopGames was inspected. PDF page 2 was rendered and read for setup, with the later-round handoff visible on PDF page 6. The horse dice and 2021 Perplext credit match inventory BGG 295374. SHA-256: 2b9f6fb56db368ade451542e4d69d3dfb9c6e5e10c471fc42cf68027fd518c48. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who last made a bet together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/long-shot-dice-perplext-en-cover.jpg",
+    "alt": "Long Shot: The Dice Game official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.perplext.com/long-shot-dice-game/long-shot-dice-game-retail",
+      "publisher": "Perplext"
+    },
+    "fairUse": {
+      "rightsHolder": "Perplext and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.perplext.com/long-shot-dice-game/long-shot-dice-game-retail supplies original product image http://static1.squarespace.com/static/52b1e69ce4b0e33e9a993b6d/590e3539d2b8578e646a48c1/619d3b20bfed884c8c85edd0/1772646098616/Long_Shot_The_Dice_Game_Box.png?format=1500w. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
