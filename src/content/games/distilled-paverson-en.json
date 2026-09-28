@@ -3,13 +3,30 @@
   "slug": "distilled-paverson-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "00f1c3b15e68ee3d71f4bf9606268a7db90b7c7700cd33ebcf1021fdbaaf29fe",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "4e20bf825f2c63ce576153ccfc154e1cf0aea03b3488327c82d4889f4cd15c3c",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Distilled",
   "aliases": [],
   "editionLabel": "Paverson Games English rulebook",
+  "image": {
+    "file": "/images/games/distilled-paverson-en-cover.jpg",
+    "alt": "Official product image showing the Distilled game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://paversongames.com/cdn/shop/files/Distilled-Board-Game_1_FullRes_2166bddc-55b5-42ab-9130-45f1a8c3122d.png?v=1700665138&width=1520",
+      "publisher": "Paverson Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Paverson Games; Erik Evensen",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Paverson Games product page: https://paversongames.com/en-ca/products/distilled-board-game. Edition match: Distilled original English base-game box shares title artwork and publisher with the cited English manual. Original image URL: https://paversongames.com/cdn/shop/files/Distilled-Board-Game_1_FullRes_2166bddc-55b5-42ab-9130-45f1a8c3122d.png?v=1700665138&width=1520",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly choose the first player, or give the first-player token to whoever last visited a distillery.",
   "officialTieBreak": null,
   "houseFallback": null,
