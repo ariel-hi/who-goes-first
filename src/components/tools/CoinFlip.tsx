@@ -23,8 +23,15 @@ export default function CoinFlip() {
   const label = side && !spinning ? (side === 'heads' ? 'Heads' : 'Tails') : spinning ? 'Flipping…' : 'Ready';
   return (
     <div className="coin-tool">
-      <div className={`coin${spinning ? ' coin-spinning' : ''}${side === 'tails' ? ' coin-tails' : ''}`} aria-hidden="true">
-        <span className="coin-face coin-heads-face">H</span><span className="coin-face coin-tails-face">T</span>
+      <div className="tool-coin-stage" aria-hidden="true">
+        <span className={`tool-coin-shadow${spinning ? ' tool-coin-shadow-moving' : ''}`} />
+        <span className={`tool-coin-flight${spinning ? ' tool-coin-flight-moving' : ''}`}>
+          <span className={`tool-coin-disc${spinning ? ` tool-coin-spinning tool-coin-spin-${side}` : side === 'tails' ? ' tool-coin-show-tails' : ''}`}>
+            {[-6, -4, -2, 0, 2, 4, 6].map(depth => <span className="tool-coin-rim" key={depth} style={{ transform: `translateZ(${depth}px)` }} />)}
+            <span className="tool-coin-face tool-coin-heads-face"><span className="tool-coin-face-inner"><span className="tool-coin-ornament">✦</span><strong>H</strong><small>HEADS</small></span></span>
+            <span className="tool-coin-face tool-coin-tails-face"><span className="tool-coin-face-inner"><span className="tool-coin-ornament">✦</span><strong>T</strong><small>TAILS</small></span></span>
+          </span>
+        </span>
       </div>
       <p className="tool-result" role="status" aria-live="polite">{label}</p>
       <button type="button" className="primary" onClick={flip} disabled={spinning}>{side ? 'Flip again' : 'Flip the coin'}</button>

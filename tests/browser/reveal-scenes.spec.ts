@@ -247,7 +247,7 @@ test('fairness links open the same picker heading with the requested method sele
   for (const method of methods) {
     await page.goto('/fairness/');
     await page.locator(`.prose a[href="/methods/${method.path}/"]`).click();
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(method.label);
     await expect(page.getByRole('radio', { name: method.label, exact: true })).toBeChecked();
     await expect(page.locator('body')).not.toContainText(/[↗→]/);
   }
@@ -282,7 +282,7 @@ test('twelve colors stay distinct and consistent between roster and reveals', as
     expect(new Set(colors).size).toBe(12);
     await page.getByRole('button', { name: 'Pick a player' }).click();
     await expect(page.locator(method.scene)).toBeVisible();
-    const pieces = method.path === 'balloon' ? '.balloon-shape>path:first-child' : method.path === 'shells' ? '.shell-lid path:first-child' : method.path === 'straws' ? '.match-head' : method.path === 'cards' ? '.card-back' : method.path === 'towers' ? '.block-stack i:first-child span' : method.path === 'coin' ? '.coin-tails' : '.die:first-child';
+    const pieces = method.path === 'balloon' ? '.balloon-shape>path:first-child' : method.path === 'shells' ? '.shell-lid path:first-child' : method.path === 'straws' ? '.match-head' : method.path === 'cards' ? '.card-back' : method.path === 'towers' ? '.block-stack i:first-child span' : method.path === 'coin' ? '.coin-tails' : '.die:first-child .die-face-front';
     const revealedColors = await page.locator(pieces).evaluateAll(pieces => pieces.map(piece => {
       const style = getComputedStyle(piece);
       return piece.tagName === 'path' ? style.fill : style.backgroundColor;

@@ -202,14 +202,25 @@
   .match-cover-strike { position:absolute; top:16px; left:0; right:0; height:20px; background:repeating-linear-gradient(45deg,#8d6b50 0 2px,#a48162 2px 4px); border-block:1px solid #765b45; }
   @keyframes uncover-match { to { transform:translateY(100%); } }
   @keyframes lift-match { from { transform:none; } 55% { transform:translateY(-7px) rotate(-3deg); } to { transform:rotate(var(--match-tilt)); } }
-  .dice-pair, .loading-piece[data-method="dice"] { height:114px; display:flex; align-items:center; gap:4px; }
-  .die, .loading-die { display:block; position:relative; width:36px; height:36px; border:1px solid #a89aab; border-radius:7px; background:var(--piece); box-shadow:0 3px 0 #62506f24; animation:roll-die 1.65s var(--dice-delay) ease-in-out both; }
-  .die:nth-child(2) { animation-direction:reverse; animation-delay:calc(var(--dice-delay) + 90ms); }
-  .die svg { width:100%; fill:#39343b; opacity:0; animation:show-pips .18s calc(1.65s + var(--dice-delay)) forwards; }
+  .dice-pair, .loading-piece[data-method="dice"] { height:114px; display:flex; align-items:center; gap:10px; }
+  .die { --die-size:40px; display:block; position:relative; width:var(--die-size); height:var(--die-size); flex:none; perspective:320px; animation:die-bounce 1.65s var(--dice-delay) ease-in-out both; }
+  .die:nth-child(2) { animation-delay:calc(var(--dice-delay) + 90ms); }
+  .die-cube { position:absolute; inset:0; display:block; transform-style:preserve-3d; transform:rotateX(calc(var(--die-end-x) + 12deg)) rotateY(calc(var(--die-end-y) - 18deg)); animation:roll-die-3d 1.65s var(--dice-delay) cubic-bezier(.22,.72,.25,1) both; }
+  .die:nth-child(2) .die-cube { animation-delay:calc(var(--dice-delay) + 90ms); }
+  .die-face { position:absolute; inset:0; display:grid; place-items:center; border:1px solid #8c7d93; border-radius:5px; background-color:var(--piece); background-image:radial-gradient(circle at 27% 20%,#fffdf9b3,transparent 48%),linear-gradient(145deg,color-mix(in srgb,var(--piece) 55%,#fff),transparent 65%,color-mix(in srgb,var(--piece) 75%,#655071)); box-shadow:inset 2px 2px 3px #fffdf9b0,inset -3px -4px 5px #51415b35; backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+  .die-face-front { transform:translateZ(calc(var(--die-size) / 2)); }
+  .die-face-back { transform:rotateY(180deg) translateZ(calc(var(--die-size) / 2)); }
+  .die-face-right { transform:rotateY(90deg) translateZ(calc(var(--die-size) / 2)); }
+  .die-face-left { transform:rotateY(-90deg) translateZ(calc(var(--die-size) / 2)); }
+  .die-face-top { transform:rotateX(90deg) translateZ(calc(var(--die-size) / 2)); }
+  .die-face-bottom { transform:rotateX(-90deg) translateZ(calc(var(--die-size) / 2)); }
+  .die svg { width:100%; height:100%; fill:#423447; filter:drop-shadow(0 1px #fffdf970); opacity:0; animation:show-pips .18s calc(1.65s + var(--dice-delay)) forwards; }
   .die:nth-child(2) svg { animation-delay:calc(1.74s + var(--dice-delay)); }
-  .die::after { content:''; position:absolute; inset:12px; border:2px dotted #62506f; border-radius:50%; animation:hide-placeholder .18s calc(1.65s + var(--dice-delay)) forwards; }
+  .die::after { content:''; position:absolute; z-index:1; top:calc(50% - 7px); left:calc(50% - 7px); width:14px; height:14px; border:2px dotted #62506f; border-radius:50%; animation:hide-placeholder .18s calc(1.65s + var(--dice-delay)) forwards; }
   .die:nth-child(2)::after { animation-delay:calc(1.74s + var(--dice-delay)); }
-  @keyframes roll-die { 0%,100% { transform:none; } 18% { transform:translateY(-18px) rotate(105deg); } 42% { transform:translateY(1px) rotate(-75deg); } 66% { transform:translateY(-10px) rotate(30deg); } 84% { transform:translateY(0) rotate(-11deg); } 92% { transform:translateY(-3px) rotate(5deg); } }
+  .loading-die { display:block; width:40px; height:40px; border:1px solid #a89aab; border-radius:8px; background:var(--piece); }
+  @keyframes die-bounce { 0%,100% { transform:none; } 20% { transform:translateY(-20px); } 42% { transform:translateY(1px); } 67% { transform:translateY(-12px); } 85% { transform:translateY(0); } 93% { transform:translateY(-4px); } }
+  @keyframes roll-die-3d { 0% { transform:rotateX(calc(var(--die-end-x) + 700deg)) rotateY(calc(var(--die-end-y) + 680deg)); } 24% { transform:rotateX(calc(var(--die-end-x) + 510deg)) rotateY(calc(var(--die-end-y) + 490deg)); } 50% { transform:rotateX(calc(var(--die-end-x) + 335deg)) rotateY(calc(var(--die-end-y) + 290deg)); } 78% { transform:rotateX(calc(var(--die-end-x) + 98deg)) rotateY(calc(var(--die-end-y) + 72deg)); } 100% { transform:rotateX(calc(var(--die-end-x) + 12deg)) rotateY(calc(var(--die-end-y) - 18deg)); } }
   @keyframes show-pips { to { opacity:1; } }
   @keyframes hide-placeholder { to { opacity:0; } }
   .coin-toss, .loading-piece[data-method="coin"] { width:86px; height:112px; position:relative; perspective:540px; }
@@ -264,6 +275,7 @@
   .reveal-stage [data-preview=true] * { animation:none!important; }
   .reveal-stage [data-preview=true] .die svg { opacity:1; }
   .reveal-stage [data-preview=true] .die::after { display:none; }
+  .reveal-stage [data-preview=true] .die-cube { animation:none; }
   /* A completed reveal keeps the final scene still. */
   [data-settled=true] .spinner-wheel { animation:none; transform:rotate(var(--turn)); }
   [data-settled=true] .spinner-wheel text { animation:none; transform:rotate(calc(-1 * var(--turn))); }
@@ -271,6 +283,7 @@
   [data-settled=true] .draw-card, [data-settled=true] .block-stack { animation:none; transform:none; }
   [data-settled=true] .card-flipper { animation:none; transform:rotateY(180deg); }
   [data-settled=true] .block-stack i, [data-settled=true] .die, .balloon-field[data-settled=true] .balloon-player>svg { animation:none; transform:none; }
+  [data-settled=true] .die-cube { animation:none; transform:rotateX(calc(var(--die-end-x) + 12deg)) rotateY(calc(var(--die-end-y) - 18deg)); }
   @keyframes balloon-land { from { transform:var(--balloon-land-from, none); } to { transform:none; } }
   [data-settled=true] .die::after { animation:none; opacity:0; }
   [data-settled=true] .reveal-player:not(.reveal-chosen) .block-stack i:nth-child(n+3) span { animation:none; transform:translate(var(--fall-x),var(--fall-y)) rotate(var(--fall-angle)); }
@@ -411,7 +424,8 @@
     :is(.cards-reveal,.dice-reveal,.coin-reveal)[data-many=true], .loading-table:is([data-method="cards"],[data-method="dice"],[data-method="coin"])[data-many=true] { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px 8px; }
     .cards-reveal[data-many=true] .draw-card, .loading-table[data-method="cards"][data-many=true] .loading-piece { width:60px; height:84px; --deal-entry:-10px; }
     .dice-reveal[data-many=true] .dice-pair, .loading-table[data-method="dice"][data-many=true] .loading-piece { height:88px; }
-    .dice-reveal[data-many=true] .die, .loading-table[data-method="dice"][data-many=true] .loading-die { width:32px; height:32px; }
+    .dice-reveal[data-many=true] .die { --die-size:32px; }
+    .loading-table[data-method="dice"][data-many=true] .loading-die { width:32px; height:32px; }
     .coin-reveal[data-many=true], .loading-table[data-method="coin"][data-many=true] { row-gap:16px; }
     .coin-reveal[data-many=true] .coin-toss, .loading-table[data-method="coin"][data-many=true] .loading-piece { width:74px; height:98px; }
     .coin-reveal[data-many=true] .coin-flight { top:18px; left:3px; --coin-apex:-30px; }

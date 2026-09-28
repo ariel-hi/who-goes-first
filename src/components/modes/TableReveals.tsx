@@ -100,5 +100,9 @@ function ShellArt({ winner }: { winner: boolean }) {
 
 function Die({ value }: { value: number }) {
   const pips: Record<number, number[]> = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
-  return <span className="die"><svg viewBox="0 0 36 36">{pips[value]!.map(pip => <circle key={pip} cx={9 + pip % 3 * 9} cy={9 + Math.floor(pip / 3) * 9} r="2.5" />)}</svg></span>;
+  const orientation: Record<number, readonly [number, number]> = { 1: [0, 0], 2: [-90, 0], 3: [0, -90], 4: [0, 90], 5: [90, 0], 6: [0, 180] };
+  const faces = [['front', 1], ['back', 6], ['right', 3], ['left', 4], ['top', 2], ['bottom', 5]] as const;
+  return <span className="die" style={{ '--die-end-x': `${orientation[value]![0]}deg`, '--die-end-y': `${orientation[value]![1]}deg` } as CSSProperties}>
+    <span className="die-cube">{faces.map(([face, faceValue]) => <span className={`die-face die-face-${face}`} key={face}><svg viewBox="0 0 36 36" aria-hidden="true">{pips[faceValue]!.map(pip => <circle key={pip} cx={9 + pip % 3 * 9} cy={9 + Math.floor(pip / 3) * 9} r="2.7" />)}</svg></span>)}</span>
+  </span>;
 }
