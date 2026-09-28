@@ -3,10 +3,10 @@
   "slug": "team3-green-brain-games-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d970386271da3ab75e8b2c21d863d39b24ed51655afc9ebc77d66474d346ddcc",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "6febbeb66c7e668b2bf8d8b6223e4657cb9a0357f08c3ab74f39e24305e42090",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "TEAM3 Green",
   "aliases": [
     "TEAM3 GREEN",
@@ -40,5 +40,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/team3-green-brain-games-en-cover.jpg",
+    "alt": "TEAM3 Green game box cover",
+    "width": 411,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://brain-games.com/cdn/shop/files/team3-green-party-board-game-brain-games_3.jpg?v=1702983829&width=1445",
+      "publisher": "Brain Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Brain Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Brain Games product page: https://brain-games.com/products/team3-green-party-board-game. Exact publisher-hosted package image: https://brain-games.com/cdn/shop/files/team3-green-party-board-game-brain-games_3.jpg?v=1702983829&width=1445. The package and game identity were visually reviewed against the article edition (English Green edition, Brain Games rules with 2019 copyright).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
