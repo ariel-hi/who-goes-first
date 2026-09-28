@@ -367,7 +367,10 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
           <div id="input-errors" className="input-errors">{errors.map(message => <p key={message} className="error" role="alert">{message}</p>)}</div>
           {duplicate && <p className="small notice">Matching names are separate players, marked with # numbers.</p>}
           <ul className={`roster ${eligible.length > 8 ? 'roster-compact' : ''} ${busy && renderedMode === 'quick' && !reduced ? 'quick-reveal' : ''}`} aria-label="Players in this draw" style={{ '--players': Math.min(eligible.length, 6), '--mobile-players': Math.min(eligible.length, 4), '--tiny-players': Math.min(eligible.length, 3) } as React.CSSProperties}>
-            {players.map((player, i) => <li key={player.id} className={state.phase === 'result' && winner?.id === player.id ? 'player winner' : 'player'} style={{ '--seat': i, '--piece': playerColor(player) } as React.CSSProperties}>
+            {players.map((player, i) => <li key={player.id} className={state.phase === 'result' && winner?.id === player.id ? 'player winner' : 'player'} style={{ '--seat': i, '--piece': playerColor(player) } as React.CSSProperties} onClick={event => {
+              if (event.target instanceof HTMLTextAreaElement) return;
+              event.currentTarget.querySelector('textarea')?.focus();
+            }}>
               <span className="seat-token" aria-hidden="true">{i + 1}</span>
               <PlayerName player={player} index={i} errors={errors.length > 0} onRename={rename} />
               {duplicate && <span className="duplicate-id">#{player.id.replace('player-', '')}</span>}

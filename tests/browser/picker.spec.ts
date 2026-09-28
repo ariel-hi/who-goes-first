@@ -209,6 +209,23 @@ test('default seats, rapid activation and one winner announcement', async ({ pag
   await expect(announcement(page)).toContainText('Seat 3 goes first.');
 });
 
+test('clicking anywhere on a seat card edits its name', async ({ page }) => {
+  await ready(page);
+  const card = page.locator('.player').first();
+  const name = page.getByLabel('Name for player 1', { exact: true });
+  await card.locator('.seat-token').click();
+  await expect(name).toBeFocused();
+  await page.keyboard.type('Mina');
+  await expect(name).toHaveValue('Mina');
+  await name.blur();
+  const bounds = await card.boundingBox();
+  expect(bounds).not.toBeNull();
+  await card.click({ position: { x: bounds!.width / 2, y: 5 } });
+  await expect(name).toBeFocused();
+  await name.click();
+  await expect(name).toBeFocused();
+});
+
 test('inline names survive count changes; large groups reflow without an internal scrollbar', async ({ page }) => {
   test.setTimeout(90000);
   const errors: string[] = []; page.on('pageerror', error => errors.push(error.message));
