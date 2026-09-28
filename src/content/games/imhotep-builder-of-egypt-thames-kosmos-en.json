@@ -3,8 +3,8 @@
   "slug": "imhotep-builder-of-egypt-thames-kosmos-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
-  "approvedRevision": "698730c20dd8b46e13be0027bf345f966774fe0c468c760beba51d9ab1dd4818",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2afc89f7dc8ac30b2fa52a3527b0d74ba757eb9d4e0ce1ffa4d21df6b2a52dcf",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Imhotep: Builder of Egypt",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "The publisher leaves the initial choice method to the group; random selection is not an official instruction.",
     "The rule is limited to the initial setup in this base-game manual."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/imhotep-builder-of-egypt-thames-kosmos-en-cover.jpg",
+    "alt": "Imhotep: Builder of Egypt Thames & Kosmos rulebook cover",
+    "width": 375,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.thamesandkosmos.com/manuals/full/692384_imhotep_manual.pdf",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Thames & Kosmos rulebook https://www.thamesandkosmos.com/manuals/full/692384_imhotep_manual.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

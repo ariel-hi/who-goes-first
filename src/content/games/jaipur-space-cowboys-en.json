@@ -3,10 +3,10 @@
   "slug": "jaipur-space-cowboys-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "7f52a4e1de3db9a2febee5492c78146caace58909492fbdc9502ffadba4bfe71",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4643ae7e7348b857a70102503398ad8fea71576398d0f48e490406566e9e72fd",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Jaipur",
   "aliases": [],
   "editionLabel": "Space Cowboys English rulebook, 2019",
@@ -41,5 +41,22 @@
   "uncertainty": [
     "The rulebook gives no method for choosing the first-round starting player.",
     "The hosting path contains 2025; the edition date used is the 2019 copyright line."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/jaipur-space-cowboys-en-cover.jpg",
+    "alt": "Jaipur Space Cowboys rulebook cover",
+    "width": 353,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/Rules-JAIPUR-12x17-Version-EN_BD.pdf",
+      "publisher": "Space Cowboys"
+    },
+    "fairUse": {
+      "rightsHolder": "Space Cowboys and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Space Cowboys rulebook https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/Rules-JAIPUR-12x17-Version-EN_BD.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

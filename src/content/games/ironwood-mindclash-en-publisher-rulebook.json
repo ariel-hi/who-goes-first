@@ -3,10 +3,10 @@
   "slug": "ironwood-mindclash-en-publisher-rulebook",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "2c42c870cd299ac5641feb86b20b2f28a3bf13c68a428ce7799a066dac2371ef",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "95753ed6216b6df0b24b4fc5a62ab396792f65e457d95db51605bbd1188afa6c",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ironwood",
   "aliases": [],
   "editionLabel": "Mindclash Games · English publisher rulebook · 2 players",
@@ -49,5 +49,22 @@
     "The reviewed English PDF has no identified printed version or copyright year on its inspected cover, credits or final page. Upload path and PDF metadata dates are not edition-year proof.",
     "Only the listed relevant pages were visually reviewed; this is not a claim of complete card, combat, bot behavior, expansion or FAQ review.",
     "The manual permits choosing or randomizing factions without prescribing a randomization procedure. No opening comparison tie exists."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ironwood-mindclash-en-publisher-rulebook-cover.jpg",
+    "alt": "Ironwood Mindclash Games rulebook cover",
+    "width": 375,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://mindclashgames.com/wp-content/uploads/2024/06/Ironwood-rulebook-websafe.pdf",
+      "publisher": "Mindclash Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Mindclash Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Mindclash Games rulebook https://mindclashgames.com/wp-content/uploads/2024/06/Ironwood-rulebook-websafe.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

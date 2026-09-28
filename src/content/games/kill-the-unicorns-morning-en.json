@@ -3,10 +3,10 @@
   "slug": "kill-the-unicorns-morning-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "537634e00dd54ce3c1903fb55f402636460c2cf0a9e2326521d1fec334b44a8c",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "efa1b1d21f1cd6b406c20e0cc16c3899413d74ec094fd2cf3407f89637fa1525",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kill The Unicorns",
   "aliases": [],
   "editionLabel": "Morning English rulebook",
@@ -37,5 +37,22 @@
   "internalEvidence": "Don’t Panic Games hosts the Morning-branded English PDF. PDF page 7 was rendered and read for the opening rule; page 16 text states the hunt-winner transfer. The hunt cards, scheme cards and title match inventory BGG 204602. SHA-256: f0bb6dca8353ded1f162b98f562c59be432826c04d6a0e388472c8540e04857b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The manual does not provide a workable initial fallback for players who have never seen a real unicorn."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kill-the-unicorns-morning-en-cover.jpg",
+    "alt": "Kill The Unicorns Morning / Don’t Panic Games rulebook cover",
+    "width": 499,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dontpanicgames.com/static/MORNING-KTU-Rulebook-EN.pdf",
+      "publisher": "Morning / Don’t Panic Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Morning / Don’t Panic Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Morning / Don’t Panic Games rulebook https://www.dontpanicgames.com/static/MORNING-KTU-Rulebook-EN.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "juicy-fruits-deep-print-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0fc08711c5f764d8aeba0ddac859234c880bc15bb2cf82df3a2b41782d8819ca",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8b0c1951c120ea6622a0af64e1e430faab34e120ab7f44663faf7fdd6e30102f",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Juicy Fruits",
   "aliases": [],
   "editionLabel": "Deep Print Games English rulebook, 2021",
@@ -36,5 +36,22 @@
   "internalEvidence": "Deep Print Games links this English PDF on its Juicy Fruits product page. PDF page 4 was rendered and read. The printed title, Christian Stöhr design credit and 2021 publisher credit match inventory BGG 325698; the collected title typo has been corrected. SHA-256: a4ceef359c055b86653a08b13d67d1188de95d533f7e0872182096c3af74f0e1. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for people who most recently ate fruit together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/juicy-fruits-deep-print-en-cover.jpg",
+    "alt": "Juicy Fruits Deep Print Games rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.deep-print-games.com/wp-content/uploads/2025/01/JuicyFruits_Rulebook_US.pdf",
+      "publisher": "Deep Print Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Deep Print Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Deep Print Games rulebook https://www.deep-print-games.com/wp-content/uploads/2025/01/JuicyFruits_Rulebook_US.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

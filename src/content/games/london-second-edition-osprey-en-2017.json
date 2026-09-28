@@ -3,10 +3,10 @@
   "slug": "london-second-edition-osprey-en-2017",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ae109cb8fc7e951e0798bd0c7cacb26f29bdf6284b9bda0d5d639ea3e9e87f6f",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "819151101bcc62db956bbc13be171760183f214cb4a0d95cdda2af5a7241dbb8",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "London: Second Edition",
   "aliases": [
     "London",
@@ -42,5 +42,22 @@
   "uncertainty": [
     "The reviewed rulebook gives no procedure for choosing the starter when multiple players helped set up the game.",
     "This entry is scoped to the Osprey Second Edition rulebook; a different edition's starting instruction requires separate review."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/london-second-edition-osprey-en-2017-cover.jpg",
+    "alt": "London: Second Edition Osprey Games / Osprey Publishing rulebook cover",
+    "width": 380,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.ospreypublishing.com/media/hgkdrmhp/london_rulebook_web.pdf",
+      "publisher": "Osprey Games / Osprey Publishing"
+    },
+    "fairUse": {
+      "rightsHolder": "Osprey Games / Osprey Publishing and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Osprey Games / Osprey Publishing rulebook https://www.ospreypublishing.com/media/hgkdrmhp/london_rulebook_web.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

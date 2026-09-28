@@ -3,10 +3,10 @@
   "slug": "k2-rebel-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "3d22697e03d98c494a086bbb753eb2afd735c125af16b94176f00f148a206266",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "6432ce9887ec86141da75c3d784ca73712a4cab8d773bc5b0d3d942c01563701",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "K2",
   "aliases": [],
   "editionLabel": "Rebel English rulebook",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rebel links this English rulebook from its K2 product page. The booklet is image-based; PDF page 4 was rendered and read for the initial marker and Action phase, and page 9 for marker passing. Rebel credits Adam Kałuża and identifies K2, matching inventory BGG 73761. SHA-256: b2f4eaafb5a82905df73f82b9cd615d3813b0e04a84fe3c878a92dcce3e1049a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie procedure is stated for players whose last mountain visit was together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/k2-rebel-en-cover.jpg",
+    "alt": "K2 Rebel.pl rulebook cover",
+    "width": 357,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://repository.rebel.pl/files/instrukcje/K2%201.01%20%5BEN%5D.pdf",
+      "publisher": "Rebel.pl"
+    },
+    "fairUse": {
+      "rightsHolder": "Rebel.pl and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Rebel.pl rulebook https://repository.rebel.pl/files/instrukcje/K2%201.01%20%5BEN%5D.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

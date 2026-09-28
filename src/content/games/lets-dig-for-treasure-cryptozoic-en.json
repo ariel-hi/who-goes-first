@@ -3,10 +3,10 @@
   "slug": "lets-dig-for-treasure-cryptozoic-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "eec120d75bcfafc8bb43ff4e401a6954fbd6631e77394d26de35cc65a2292bfc",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "98acec1fe19a21d502b82fb82f0959f202bab18bee261fba753cd5987953c863",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Let's Dig for Treasure",
   "aliases": [],
   "editionLabel": "Cryptozoic / Dynomite Games English rulebook, 2022",
@@ -35,5 +35,22 @@
   "internalEvidence": "Cryptozoic links this PDF directly from its product page. PDF page 2, printed page 1, was rendered and read. The 120-card contents and publisher credits match inventory BGG 325828. SHA-256: ed7baf9045956fdd70fffa9200de90403bfaa56cfa217d13061159b85e2f4c61. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules leave judging who is dirtiest to the players and give no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lets-dig-for-treasure-cryptozoic-en-cover.jpg",
+    "alt": "Let's Dig for Treasure Cryptozoic Entertainment / Dynomite Games rulebook cover",
+    "width": 337,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0464/6961/1676/files/LETS.DIG.3.75x5.5.RULEBOOK.pdf?v=1638206525",
+      "publisher": "Cryptozoic Entertainment / Dynomite Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Cryptozoic Entertainment / Dynomite Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Cryptozoic Entertainment / Dynomite Games rulebook https://cdn.shopify.com/s/files/1/0464/6961/1676/files/LETS.DIG.3.75x5.5.RULEBOOK.pdf?v=1638206525. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

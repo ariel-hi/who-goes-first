@@ -3,10 +3,10 @@
   "slug": "innovation-asmadi-fourth-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "29decb10fc461b56aca1e93ca0ac382a64a8dc6645e8c719916102501c559e49",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7a7939d7f0cb167287af0fa3baa959bc67dc7f14d24e9d5fee5f2dd3c717b4a0",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Innovation",
   "aliases": [],
   "editionLabel": "Asmadi English fourth edition",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Current official Asmadi Innovation page links fourth-edition base rulebook separately from Ultimate rules. Rendered PDF 3 printed 4–5 setup steps 6–8. BGG explicitly lists fourth edition under the original 63888 identity, rather than a separate base-game identity. Unique initial Age 1 cards; no invented title tie. Source custody: research/source-files/popular-sep26-13/innovation.pdf; SHA-256 9c9639e085908f333eaf25148b487f516e89e49a9481fe872788bcb637c5dcd5. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/innovation-asmadi-fourth-en-cover.jpg",
+    "alt": "Innovation Asmadi Games rulebook cover",
+    "width": 357,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://asmadigames.com/rules/Inno4E_Base_Rulebook_Spreads.pdf",
+      "publisher": "Asmadi Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Asmadi Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Asmadi Games rulebook https://asmadigames.com/rules/Inno4E_Base_Rulebook_Spreads.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

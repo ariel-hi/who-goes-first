@@ -3,10 +3,10 @@
   "slug": "kingdom-builder-queen-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "25498017ffe4a99458c3db6e3e3440f86005484ff429073b981e4cdd455f211c",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c9d886523d6557913bcf03720687849c8529038c7317cfba0349516945e904a9",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kingdom Builder",
   "aliases": [],
   "editionLabel": "Queen Games English base game",
@@ -35,5 +35,22 @@
   "internalEvidence": "Publisher-hosted English base rules. Rendered printed/PDF3 directly connects oldest to first turn and clockwise order. Source custody: research/source-files/popular-sep26-06/kingdom.pdf; SHA-256 d38cf0cb3d004bdd40e6fed1da43f23daf62e01ed6a4226b639b75fe3a5c1012. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
   "uncertainty": [
     "The rules do not specify a tie-break for equally old players."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kingdom-builder-queen-en-cover.jpg",
+    "alt": "Kingdom Builder Queen Games rulebook cover",
+    "width": 369,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://rules.queen-games.com/kingdom-builder_en.pdf",
+      "publisher": "Queen Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Queen Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Queen Games rulebook https://rules.queen-games.com/kingdom-builder_en.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

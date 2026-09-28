@@ -3,10 +3,10 @@
   "slug": "last-will-cge-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "04e9ca9c567109f50fd4fc1fb9eb64d5c678249da4a5ae4e8bceddf4799866cd",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "64d087d9b69ebd363bcd9e3e783822c1e67762b83e4ff66516ee28b6ff6ba576",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Last Will",
   "aliases": [],
   "editionLabel": "English CGE base-game publisher rules",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/last-will-cge-en-cover.jpg",
+    "alt": "Last Will Czech Games Edition rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://filemanager.czechgames.com/storage/files/last-will/rules/last-will-rules-en.pdf",
+      "publisher": "Czech Games Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Czech Games Edition and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Czech Games Edition rulebook https://filemanager.czechgames.com/storage/files/last-will/rules/last-will-rules-en.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

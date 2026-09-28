@@ -3,10 +3,10 @@
   "slug": "just-wild-helvetiq-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "33dc05e11fc62173021900a8cbc9190e826b61e7baa0f80f0cd139a9d4876c6b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3dae482ee56d8865ddda5038d0945be4117e55f305e6c3f328d97d62a6d06c3f",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Just Wild",
   "aliases": [],
   "editionLabel": "Helvetiq English rules",
@@ -33,5 +33,22 @@
   "internalEvidence": "Helvetiq links this English PDF on its Just Wild product page. PDF page 3 was rendered and read. Game title and designers Marco Franchin and Leo Colovini identify inventory BGG 341934. SHA-256: 68b90b8d590250d6a40d6d0b0b0d29457c71aaac14f49ff8dd801a27ec298fd5. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who spotted a wild animal together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/just-wild-helvetiq-en-cover.jpg",
+    "alt": "Just Wild Helvetiq rulebook cover",
+    "width": 500,
+    "height": 304,
+    "presentation": "cover",
+    "source": {
+      "url": "https://helvetiq.com/media/hexaattachment/products/attachments/JustWild_Rules_EN.pdf",
+      "publisher": "Helvetiq"
+    },
+    "fairUse": {
+      "rightsHolder": "Helvetiq and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Helvetiq rulebook https://helvetiq.com/media/hexaattachment/products/attachments/JustWild_Rules_EN.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

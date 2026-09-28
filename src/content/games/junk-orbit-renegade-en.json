@@ -3,10 +3,10 @@
   "slug": "junk-orbit-renegade-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "331ab77905d2561829e6cbd160bca90b34d31570d21345b480547d0939e44e78",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "22ee281b115ef7dd5441cb6273263c496f526874c7fd84c53f791a541a77e601",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Junk Orbit",
   "aliases": [],
   "editionLabel": "Renegade English rulebook, 2023 copyright, with solo mode",
@@ -40,5 +40,22 @@
   "uncertainty": [
     "The fallback is for nobody having taken out the garbage; the rule does not separately resolve equally recent garbage trips.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/junk-orbit-renegade-en-cover.jpg",
+    "alt": "Junk Orbit Renegade Game Studios rulebook cover",
+    "width": 381,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Junk%20Orbit/JunkOrbit2_Rulebook_WEB.pdf",
+      "publisher": "Renegade Game Studios"
+    },
+    "fairUse": {
+      "rightsHolder": "Renegade Game Studios and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Renegade Game Studios rulebook https://renegadegamestudios.com/content/File%20Storage%20for%20site/Rulebooks/Junk%20Orbit/JunkOrbit2_Rulebook_WEB.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

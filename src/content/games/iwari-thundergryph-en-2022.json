@@ -3,10 +3,10 @@
   "slug": "iwari-thundergryph-en-2022",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f9027df0793bcf3db6d7f5f8f91eef08ce77423221216267d76874aca4374055",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "ce6a3fd067637a9450630d4abdaab65f8c9d3a403c793592963228b71c29456a",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Iwari",
   "aliases": [],
   "editionLabel": "ThunderGryph English retail rules, ©2022",
@@ -49,5 +49,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/iwari-thundergryph-en-2022-cover.jpg",
+    "alt": "Iwari ThunderGryph Games rulebook cover",
+    "width": 254,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thundergryph.com/wp-content/uploads/2023/01/iwari-retail-rulebook_en.pdf",
+      "publisher": "ThunderGryph Games"
+    },
+    "fairUse": {
+      "rightsHolder": "ThunderGryph Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited ThunderGryph Games rulebook https://thundergryph.com/wp-content/uploads/2023/01/iwari-retail-rulebook_en.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

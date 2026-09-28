@@ -3,10 +3,10 @@
   "slug": "immunowars-2023-en-second-edition",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "275e5a699a5776941bedcced9edcd0f7012e15885798b91a9dfc5210cd14f908",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "273666ca9ae6d675098ee0bcca356b4a09e5a557772de0522ee26ce73a6a4d0f",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "ImmunoWars",
   "aliases": [],
   "editionLabel": "ImmunoWars - English 2023 second edition - 2 to 6 players",
@@ -49,5 +49,22 @@
     "The only explicit clockwise statement located concerns Random Event resolution on page27, so it is not used as proof of normal turn direction. No later-round starter reselection is prescribed in the inspected opening passages.",
     "The manual states age16+ on page5, while the previously saved primary product context says12+. Preserve this edition-specific discrepancy without repairing catalog identity claims.",
     "The online FAQ and booster expansions were not retrieved or reviewed. No first-edition, later printing or current/latest-version equivalence is claimed."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/immunowars-2023-en-second-edition-cover.jpg",
+    "alt": "ImmunoWars ImmunoWars rulebook cover",
+    "width": 352,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0764/2470/8437/files/Rulebook_IW_2nd_Edition_compressed.pdf?v=1693038384",
+      "publisher": "ImmunoWars"
+    },
+    "fairUse": {
+      "rightsHolder": "ImmunoWars and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited ImmunoWars rulebook https://cdn.shopify.com/s/files/1/0764/2470/8437/files/Rulebook_IW_2nd_Edition_compressed.pdf?v=1693038384. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "lord-of-rings-card-game-ffg-original-core-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "407eb5f02ea1137bed9ea1c0804873d2d86847e260f0adbe51f1dbbb4690fb94",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b0da5408fc417a400527a65b11d3491319fb330381181ed35cc66038dd90ccf7",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Lord of the Rings: The Card Game",
   "aliases": [],
   "editionLabel": "FFG English original core set",
@@ -40,5 +40,22 @@
   "internalEvidence": "Official FFG English Learn to Play PDF. Rendered7 explicit choose-or-random opening,9 planning order,17 token rotation. Page2 describes one-to-two players from one core set and up to four with a second; page31 credits2017 revised manual, so scope is original core rather than2022 expanded Revised Core Set. Source custody: research/source-files/popular-sep26-06/lotr.pdf; SHA-256 c9878acdae645f7b9edb9536b4e7717064ae37f6a078c3b4f5fa8c25317a21db. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "This is the revised Learn to Play for the original core set, not the later expanded core set."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lord-of-rings-card-game-ffg-original-core-en-cover.jpg",
+    "alt": "The Lord of the Rings: The Card Game Fantasy Flight Games rulebook cover",
+    "width": 395,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/ed/c7/edc7c539-c4d4-461c-b998-17fa2451a303/learn_to_play.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Fantasy Flight Games rulebook https://images-cdn.fantasyflightgames.com/filer_public/ed/c7/edc7c539-c4d4-461c-b998-17fa2451a303/learn_to_play.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

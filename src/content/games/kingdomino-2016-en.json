@@ -3,10 +3,10 @@
   "slug": "kingdomino-2016-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "1041f810e6c19b86fc21acc98ca4f403f5fb3f85157e27edc9f11b64eaa09926",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d68913a70e88658bf20fdfbba4f7f7b891c68dcba06f16b9fa5ccb3026d6fcee",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kingdomino",
   "aliases": [
     "King Domino"
@@ -43,5 +43,22 @@
   "uncertainty": [
     "Do not generalize this setup wording to later editions or Kingdomino Origins.",
     "The 2023 hosting directory is not an edition date."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kingdomino-2016-en-cover.jpg",
+    "alt": "Kingdomino Blue Orange rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2023/04/Kingdomino-Rules-EN.pdf",
+      "publisher": "Blue Orange"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Orange and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Blue Orange rulebook https://blueorangegames.eu/wp-content/uploads/2023/04/Kingdomino-Rules-EN.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
