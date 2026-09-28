@@ -18,6 +18,8 @@
     const choice = window.localStorage.getItem(analyticsKey) ?? window.localStorage.getItem('wgf:analytics-choice:v2') ?? window.localStorage.getItem('wgf:analytics-choice:v1');
     declined = choice === 'decline';
   } catch { /* Browsers can block storage. */ }
+  // Test runs and local previews must not be counted as visitors.
+  if (!/^(www\.)?whogoesfirst\.fun$/.test(location.hostname)) declined = true;
 
   // Match the analytics-only loader: preserve fixed editorial campaign labels,
   // and remove arbitrary query values before any Google script can inspect them.

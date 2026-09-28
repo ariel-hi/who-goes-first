@@ -44,6 +44,9 @@
   });
 
   function loadAnalytics() {
+    // Test runs and local previews build the production site too; only the live
+    // hostname may reach Google Analytics.
+    if (!/^(www\.)?whogoesfirst\.fun$/.test(location.hostname)) return;
     // Campaign labels are fixed editorial identifiers, never user or player input.
     // Remove the complete query before loading the tag so unrelated parameters
     // cannot be collected by the tag's automatic URL handling.

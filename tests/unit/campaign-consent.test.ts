@@ -18,7 +18,7 @@ function runCampaign(search: string, savedChoice: string | null, hash = '', path
     createElement() { return { async: false, src: '' }; },
     querySelector(selector: string) { return elements.get(selector); },
   };
-  const location = { origin: 'https://whogoesfirst.fun', pathname, search, hash };
+  const location = { origin: 'https://whogoesfirst.fun', hostname: 'whogoesfirst.fun', pathname, search, hash };
   const window = {
     document,
     location,
