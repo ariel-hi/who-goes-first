@@ -51,10 +51,14 @@ test('BGG, search results, and Amazon images cannot supply locally hosted rule a
 });
 
 test('image metadata and licence edits are bound to editorial approval', () => {
-  const unillustrated = readRecords('src/content/games').find(record =>
-    typeof record === 'object' && record !== null && !('image' in record));
-  if (!unillustrated) throw new Error('Expected an unillustrated rule for the fallback test');
-  const rule = ruleSchema.parse(unillustrated);
+  const approved = readRecords('src/content/games').map(record => ruleSchema.safeParse(record))
+    .find(result => result.success && result.data.status === 'approved' && result.data.image);
+  if (!approved?.success) throw new Error('Expected an illustrated approved rule for the fallback test');
+  const unillustrated = { ...approved.data };
+  delete unillustrated.image;
+  delete unillustrated.additionalImages;
+  const draft = ruleSchema.parse(unillustrated);
+  const rule = ruleSchema.parse({ ...draft, approvedRevision: contentRevision(draft) });
   expect(() => assertPublishable(rule)).not.toThrow();
   expect(publicRule(rule)).not.toHaveProperty('image');
   const illustrated = ruleSchema.parse({ ...rule, image });
