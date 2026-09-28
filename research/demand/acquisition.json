@@ -1,7 +1,73 @@
 {
-  "status": "unavailable",
+  "status": "available",
   "periodStart": "2026-08-29",
   "periodEnd": "2026-09-27",
-  "reason": "GA4 acquisition report unavailable",
-  "generatedAt": "2026-09-28T19:13:15.887Z"
+  "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
+  "totalSessions": 1748,
+  "rowSessions": 2019,
+  "rowTotalDifference": 271,
+  "subjectToThresholding": false,
+  "dataLossFromOtherRow": false,
+  "dataTruncation": false,
+  "rowCount": 5,
+  "channels": [
+    {
+      "name": "Direct",
+      "sessions": 1707,
+      "engagedSessions": 255
+    },
+    {
+      "name": "Unassigned",
+      "sessions": 306,
+      "engagedSessions": 0
+    },
+    {
+      "name": "Organic Search",
+      "sessions": 4,
+      "engagedSessions": 0
+    },
+    {
+      "name": "Cross-network",
+      "sessions": 1,
+      "engagedSessions": 0
+    },
+    {
+      "name": "Referral",
+      "sessions": 1,
+      "engagedSessions": 0
+    }
+  ],
+  "topSources": [
+    {
+      "name": "(direct) / (none)",
+      "channel": "Direct",
+      "sessions": 1707,
+      "engagedSessions": 255
+    },
+    {
+      "name": "(not set)",
+      "channel": "Unassigned",
+      "sessions": 306,
+      "engagedSessions": 0
+    },
+    {
+      "name": "google / organic",
+      "channel": "Organic Search",
+      "sessions": 4,
+      "engagedSessions": 0
+    },
+    {
+      "name": "(data not available)",
+      "channel": "Cross-network",
+      "sessions": 1,
+      "engagedSessions": 0
+    },
+    {
+      "name": "bsky.app / referral",
+      "channel": "Referral",
+      "sessions": 1,
+      "engagedSessions": 0
+    }
+  ],
+  "generatedAt": "2026-09-28T19:50:18.341Z"
 }

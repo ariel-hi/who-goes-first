@@ -24,7 +24,20 @@ This checks six named URLs in Google's indexed data, not the current live pages 
 
 
 ## Traffic acquisition (GA4)
-_GA4 acquisition report unavailable._
+- Direct: 1,707 reported row sessions, 255 engaged row sessions.
+- Unassigned: 306 reported row sessions, 0 engaged row sessions.
+- Organic Search: 4 reported row sessions, 0 engaged row sessions.
+- Cross-network: 1 reported row sessions, 0 engaged row sessions.
+- Referral: 1 reported row sessions, 0 engaged row sessions.
+
+Top source / medium pairs:
+- \(direct\) / \(none\) (Direct): 1,707 reported row sessions.
+- \(not set\) (Unassigned): 306 reported row sessions.
+- google / organic (Organic Search): 4 reported row sessions.
+- \(data not available\) (Cross-network): 1 reported row sessions.
+- bsky\.app / referral (Referral): 1 reported row sessions.
+
+Dimension rows sum to 2,019, which is 271 above the undimensioned 1,748 sessions. Do not add row counts or interpret them as unique-session shares. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
 ## Ad network requirements and observations
 Official policies checked 2026-09-28; confirm current requirements before an application. Totals alone do not establish eligibility or approval.
