@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+const canonicalOrigin = process.env.EXPECTED_SITE_ORIGIN ?? process.env.SITE_URL ?? 'http://localhost:4321';
 
 for (const width of [320,1280]) {
   for (const [id,name] of [['266083','L.A.M.A.'],['318195','Biss 20'],['153','Hornochsen! (Take 5!)'],['200','Entdecker (Goldsieber)'],['550','Barbarossa (Klaus Teuber)'],['71','Civilization (1980 game)'],['68','Successors (Avalon Hill)'],['551','Battle Cry (Richard Borg)']] as const) {
@@ -9,7 +10,7 @@ for (const width of [320,1280]) {
       const pageErrors:string[]=[];page.on('pageerror',error=>pageErrors.push(error.message));
       await page.setViewportSize({width,height:844});
       await page.goto('/board-games/');
-      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href','https://whogoesfirst.fun/board-games/');
+      await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href',`${canonicalOrigin}/board-games/`);
       await page.getByRole('searchbox',{name:'Search board games'}).fill(id);
       await expect(page.locator('[data-results] li').first()).toHaveAttribute('data-id',id);
       await page.getByRole('button',{name:'Awaiting a rule',exact:true}).click();

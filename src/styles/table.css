@@ -404,9 +404,9 @@
     .segmented label { min-height:70px; flex-direction:column; gap:4px; }
     .result-area.has-result { height:auto; min-height:0; margin:12px 0 0; }
     .winner-announcement:not(:empty) { position:static; }
-    .winner-announcement p { margin:0; overflow-wrap:anywhere; }
-    .picker .winner-announcement p { font-size:clamp(21px,6vw,25px); line-height:1.24; }
-    .picker .winner-announcement[data-long=true] p { font-size:clamp(18px,5vw,21px); }
+    .winner-announcement p, .result-placeholder p { margin:0; overflow-wrap:anywhere; }
+    .picker .winner-announcement p, .picker .result-placeholder p { font-size:clamp(21px,6vw,25px); line-height:1.24; }
+    .picker .winner-announcement[data-long=true] p, .picker .result-placeholder[data-long=true] p { font-size:clamp(18px,5vw,21px); }
     /* Keep every short-name seat in view for a twelve-player reveal. */
     :is(.cards-reveal,.dice-reveal,.coin-reveal)[data-many=true], .loading-table:is([data-method="cards"],[data-method="dice"],[data-method="coin"])[data-many=true] { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px 8px; }
     .cards-reveal[data-many=true] .draw-card, .loading-table[data-method="cards"][data-many=true] .loading-piece { width:60px; height:84px; --deal-entry:-10px; }
