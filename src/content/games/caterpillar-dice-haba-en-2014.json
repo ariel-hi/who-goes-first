@@ -3,10 +3,10 @@
   "slug": "caterpillar-dice-haba-en-2014",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6501b87950dd9f207dc77832886edc1bf936b350a82e3785d777a25619b7fe35",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d9cec221cf39b0d24f7aa9b4ec6b73473bc6df3e1b662762962e125b64c2bad0",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Caterpillar Dice",
   "aliases": [
     "Raupenwürfeln"
@@ -39,5 +39,22 @@
   "internalEvidence": "The HABA-authored multilingual booklet preserved by Ludism was retrieved for inventory BGG identity 30098. PDF page 4 (printed page 5) and PDF page 15 were rendered and visually checked. The English How to Play section says the last person to see a caterpillar begins by rolling, and play is clockwise. The memory variant follows the basic rules except its stated component changes. The back page identifies Habermaaß GmbH and a January 2014 printing. Mirror PDF SHA-256: aa4e7be070584bbcf47a57c495053cd6208390d1afd0002e6d630bf4870a6642. Owner-authorized Codex editorial review, 2026-09-25.",
   "uncertainty": [
     "The booklet does not provide a fallback if no player recalls seeing a caterpillar or two players saw one together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/caterpillar-dice-haba-en-2014-cover.jpg",
+    "alt": "HABA Caterpillar Dice 2014 instructions cover with colorful caterpillars",
+    "width": 340,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.ludism.fr/regles_files/fr/upload/301318-raupenwuerfeln_2014.pdf",
+      "publisher": "HABA multilingual 2014 instructions preserved by Ludism"
+    },
+    "fairUse": {
+      "rightsHolder": "HABA and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.ludism.fr/regles_files/fr/upload/301318-raupenwuerfeln_2014.pdf. This is page 1 of the original HABA 2014 multilingual instructions, not box packaging. It includes the Caterpillar Dice English title. Original image URL: https://www.ludism.fr/regles_files/fr/upload/301318-raupenwuerfeln_2014.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

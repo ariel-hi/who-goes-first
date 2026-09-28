@@ -3,10 +3,10 @@
   "slug": "cafe-pythagoras-base-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6b2669fc698e7780688043af454a9123f1cebc684e8a27f1f09bb721ef560060",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1603eec1d80a8b98172bafce10d62b6e95b4ecc710623db28a29382ce7b9e822",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Café",
   "aliases": [],
   "editionLabel": "Pythagoras English rules, base game",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered PDF/printed pages 3 and 4 of the complete Pythagoras booklet state the coffee criterion, master token and leftward rotation. Company, Initial and Plan cards match inventory BGG 284936. The booklet separately presents an auction variant on page 12. SHA-256: 8fa527dbbfa9c7268378468054b8731709cb17a6a38a4f56db34aa0597c7f0a8. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for equally recent cups of coffee."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/cafe-pythagoras-base-en-cover.jpg",
+    "alt": "Pythagoras Café box art with geometric figures pouring coffee",
+    "width": 418,
+    "height": 302,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/p/jpg500/pyg0011b.jpg",
+      "publisher": "Noble Knight Games listing for Pythagoras Café base game"
+    },
+    "fairUse": {
+      "rightsHolder": "Pythagoras and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147889854/Cafe. Seller identifies the Pythagoras 2021 base game, part PYG0011; cover matches the cited English base-game rules. Original image URL: https://image.nobleknight.com/p/jpg500/pyg0011b.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
