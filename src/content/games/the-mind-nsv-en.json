@@ -3,10 +3,10 @@
   "slug": "the-mind-nsv-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "29df19aa3205ff1cf13e93a1eee0e88d8d2207cd5c1f65a8171e0e1a8fddff1a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5051982e30dd27a3d55c64d68dcf1c0824999e5d26e901b98ebfb71852fbc50e",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Mind",
   "aliases": [],
   "editionLabel": "Nürnberger-Spielkarten-Verlag English rules",
@@ -34,5 +34,22 @@
   "internalEvidence": "Downloaded the English rules sheet from the 1j1ju rulebook library (the Pandasaurus product page links its rulebook only through a Dropbox work-preview link) and extracted the text of both PDF pages. Introduction and Course of the game: 'The players do not take turns in any particular order. Whoever wants to put down a card, simply does so' and 'Whoever believes they have the lowest card currently available, simply plays it.' Readiness is signalled by a hand on the table. The sheet credits Wolfgang Warsch and ends with the NSV address (nsv.de), matching BGG 244992. SHA-256: 06a5c4cda30b4c7fc4b4530da800d84c1078575e8f5ca5681242f7ec7c3e1a0a. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The cited PDF is a third-party-hosted copy of the NSV English sheet, not a publisher-hosted file; the Pandasaurus North American rulebook was not directly accessible."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-mind-nsv-en-cover.jpg",
+    "alt": "The Mind original English NSV box with glowing rabbit figure",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/cdn/shop/files/CSGMIND10_1.jpg?crop=center&height=1200&v=1775063123&width=1200",
+      "publisher": "Nürnberger-Spielkarten-Verlag / Asmodee UK"
+    },
+    "fairUse": {
+      "rightsHolder": "Nürnberger-Spielkarten-Verlag",
+      "rationale": "Reduced-size authorized distributor product-box photograph identifies the original game discussed in this independent rules article. It is contextual to the game, links to the product page, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Asmodee UK listing for The Mind, identifying NSV as publisher: https://www.asmodee.co.uk/products/csgmind10-the-mind. Its English-language NSV box image: https://www.asmodee.co.uk/cdn/shop/files/CSGMIND10_1.jpg?crop=center&height=1200&v=1775063123&width=1200. Visually reviewed original rabbit/logo artwork and English packaging; the shown box has a sales-count sticker but is the original game, not Natureline or an expansion.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
