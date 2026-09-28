@@ -1,0 +1,59 @@
+{
+  "reviewedOn": "2026-09-28",
+  "sourceSnapshot": "research/coverage/wikidata-unlinked-board-games.json",
+  "sourceSnapshotSha256": "0f938828960c7c6f0735f8548ab057a66f55bbd6bbddd29f41597bd7919edb25",
+  "scope": "A bounded identity-only review of ten direct-P31 board-game items without P2339. A publisher-confirmed physical product may enter the pending-rule directory. A shared Wikidata title does not prove an edition match. No BoardGameGeek API, export, site page or scraper was used.",
+  "counts": { "reviewed": 10, "acceptedNewIdentities": 2, "held": 8, "startingRulesApproved": 0 },
+  "decisions": [
+    {
+      "wikidataId": "Q124639487", "snapshotLabel": "Earth", "decision": "hold", "existingIdentityId": "bgg-350184",
+      "reason": "The full runtime registry already enrolls Earth as bgg-350184 from the earlier P2339 Wikidata import. Inside Up Games confirms the physical base product as SKU IUG011, but the no-P2339 item and publisher page do not justify a second directory identity.",
+      "primarySource": { "url": "https://insideupgames.com/product/earth-board-game/", "sha256": "80fb7949c68734656eb49b96b27060b55cdb93c55268da815ee12f732e9ae911", "byteCount": 188338, "location": "Focal product title, SKU IUG011 and Board Games category" }
+    },
+    {
+      "wikidataId": "Q137785419", "snapshotLabel": "Above and Below", "decision": "accept", "identityId": "game-2f551211-4e97-464a-9edc-7c471ab34e35", "ruleStatus": "pending",
+      "reason": "Red Raven's own store lists the physical Above and Below product; its game page independently identifies the first Arzium Storybook Series game and links its rulebook.",
+      "primarySource": { "url": "https://red-raven-board-games.myshopify.com/products/above-and-below", "sha256": "384db6161d27343d0be134823336cb59f258234f93f79778a99f60f99e28a6ff", "byteCount": 138677, "location": "Focal product heading and store listing; separate game-page evidence is in the identity record" }
+    },
+    {
+      "wikidataId": "Q137756823", "snapshotLabel": "Escape the Dark Castle", "decision": "accept", "identityId": "game-04af0ef9-cf38-4e9f-9c22-5a274fec0134", "ruleStatus": "pending",
+      "reason": "Themeborne explicitly sells a physical First Edition base game and lists its components. The broader Wikidata item does not bind an edition; the directory identity is limited to the publisher's First Edition product.",
+      "primarySource": { "url": "https://themeborne.com/products/escape-the-dark-castle", "sha256": "3a191794cb027f7afe940f856ca5e9b99e0f7f08d57a9978dbb3b2c37591ad2e", "byteCount": 278567, "location": "First Edition H1, edition notice and Contains section" }
+    },
+    {
+      "wikidataId": "Q140619898", "snapshotLabel": "Codenames Duet", "decision": "hold", "existingIdentityId": "bgg-224037",
+      "reason": "The existing directory already has Codenames: Duet. CGE confirms a standalone physical game, but punctuation in the Wikidata label is no basis for another identity.",
+      "primarySource": { "url": "https://www.czechgames.com/games/codenames-duet-2017", "sha256": "0fc328b90c117bc4f6a0eb8e8c48240a220eb292044bd627255242537ce1a561", "byteCount": 209196, "location": "Codenames: Duet heading, standalone-play statement and component list" }
+    },
+    {
+      "wikidataId": "Q5051420", "snapshotLabel": "Catan Historical Scenarios I: Alexander and Cheops", "decision": "hold",
+      "reason": "CATAN says the historical scenarios need the CATAN base game. The item is an expansion/scenario product, not a standalone game identity.",
+      "primarySource": { "url": "https://www.catan.com/explore-catan/ludography/1996-2000", "sha256": "273accf16576cd96556cf8145e7d64d219dbf36ab1b484999d84d5a20be4e498", "byteCount": 114934, "location": "Historical scenarios section states that the CATAN base game is needed" }
+    },
+    {
+      "wikidataId": "Q105972367", "snapshotLabel": "51st State", "decision": "hold",
+      "reason": "The full runtime registry already contains 51st State bgg-73369, Master Set bgg-192458 and Ultimate Edition bgg-357726. Portal describes Master Set as a rebalanced later product containing cards from the original base game and two expansions. The no-P2339 item does not justify an added or merged edition identity.",
+      "primarySource": { "url": "https://en.portalgames.pl/buy-51st-state-master-set/", "sha256": "13c276fb9df519e05973704acd30ba76e8d0b3d63beee7f941aa37bf749535cd", "byteCount": 98235, "location": "Master Set heading and original-base-game/expansion card composition" }
+    },
+    {
+      "wikidataId": "Q135739747", "snapshotLabel": "Agemonia", "decision": "hold",
+      "reason": "The publisher's English third-printing product URL returned a client challenge to the saved HTTP request. Indexed publisher text suggests a physical game, but no complete focal primary body was available for a source-bound identity review; printing correspondence remains unverified.",
+      "attempt": { "url": "https://en.lautapelit.fi/product/36830/", "result": "HTTP 200 Client Challenge", "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea", "byteCount": 3038 }
+    },
+    {
+      "wikidataId": "Q117455357", "snapshotLabel": "Fallout: The Board Game", "decision": "hold",
+      "reason": "The Fantasy Flight product request failed or redirected to the generic product-lines page. No complete focal publisher product body was preserved for exact identity review, despite indexed publisher descriptions.",
+      "attempt": { "url": "https://www.fantasyflightgames.com/en/fallout/products/fallout/", "result": "HTTP 404; alternate product path redirected to /productlines/" }
+    },
+    {
+      "wikidataId": "Q136868608", "snapshotLabel": "Checkers Plus", "decision": "hold",
+      "reason": "The revisioned Wikidata description calls this a digital board game and includes platform data. No original publisher evidence of a standalone physical product was found in this review.",
+      "identifierSource": { "url": "https://www.wikidata.org/wiki/Special:EntityData/Q136868608.json?revision=2539661926", "sha256": "49b859c9b0f1a64e4e64135bd62888b230c6452d7392aa54dd7c27002076afbe", "byteCount": 5303, "location": "English description and P400 platform claim" }
+    },
+    {
+      "wikidataId": "Q140478682", "snapshotLabel": "Gods of Rome", "decision": "hold",
+      "reason": "The revisioned Wikidata description identifies a 2015 Gameloft video game. The direct board-game class appears to be a misclassification for this directory; no physical product was verified.",
+      "identifierSource": { "url": "https://www.wikidata.org/wiki/Special:EntityData/Q140478682.json?revision=2539675997", "sha256": "9b3e6a55bbcf787c6b56632fde497dc583f71e999f69050b7ccf18933f4be0d7", "byteCount": 18989, "location": "English description and digital-game identifiers" }
+    }
+  ]
+}

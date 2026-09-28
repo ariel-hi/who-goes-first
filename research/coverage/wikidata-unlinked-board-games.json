@@ -1,0 +1,6024 @@
+{
+  "retrievedAtUtc": "2026-09-28T23:05:47.270885+00:00",
+  "source": {
+    "name": "Wikidata Query Service",
+    "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+WHERE+%7B%0A++%3Fitem+wdt%3AP31+wd%3AQ131436+.%0A++FILTER+NOT+EXISTS+%7B+%3Fitem+wdt%3AP2339+%3FbggId+%7D%0A++OPTIONAL+%7B+%3Fitem+rdfs%3Alabel+%3Flabel+.+FILTER%28LANG%28%3Flabel%29+%3D+%22en%22%29+%7D%0A%7D&format=json",
+    "query": "SELECT ?item ?label WHERE {\n  ?item wdt:P31 wd:Q131436 .\n  FILTER NOT EXISTS { ?item wdt:P2339 ?bggId }\n  OPTIONAL { ?item rdfs:label ?label . FILTER(LANG(?label) = \"en\") }\n}",
+    "class": "https://www.wikidata.org/wiki/Q131436",
+    "excludedProperty": "https://www.wikidata.org/wiki/Property:P2339",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Copyright",
+    "rawResponseSha256": "24ed211a40e5b2c51a47f8a1dc61a0a4ae71559da62e3fb1e09afdde8e9e26b5",
+    "statementSha256": "45a9d2ff75b8ce52cb7416da5e2ef2b0604a4ad3e2c18abd1a5c86d685b8497e"
+  },
+  "registryInputs": {
+    "research/coverage/discovery-index.json": "d537e07288fbb47ab43a3d46520920fa48b20c37cd1de28cf19e9bf4b8a02b0f",
+    "research/coverage/publisher-identities.json": "7caa71d710f8f6eb0fd9be10598796571d0635dd95e289424454f9bbee817659",
+    "research/coverage/wikidata-board-games.json": "de0029fd03cb573786ff401306d227902f6f4818d79820ea574b148c229fc4e1",
+    "research/coverage/wikidata-native-title-leads.json": "d13f929adfeb2a0b8a163497b5b45ff3627c7914e7381c86a74152fa575e31b0",
+    "research/coverage/wikidata-identity-review.json": "c154eecdc0caf7d4798d864a910bd51cf542eef55f2cb8cca15ade298fada0f3",
+    "research/coverage/wikidata-native-title-decisions.json": "cc91ae7fa48c274f834db2f67c1892d18d26a0fe764362a66069c015adbf74c9"
+  },
+  "scope": "Direct P31 board-game items lacking P2339 at query time. Labels are English where present. Registry item/name matches are discovery collision flags, not a claim that any two editions are identical. No starting-player rules are approved.",
+  "counts": {
+    "items": 841,
+    "englishLabeled": 598,
+    "registryItemMatches": 6,
+    "registryNameMatches": 47
+  },
+  "games": [
+    {
+      "wikidataId": "Q229398",
+      "labelEn": "three-dimensional chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q229398",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q268563",
+      "labelEn": "Ba-awa",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q268563",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q431840",
+      "labelEn": "Andada",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q431840",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q530076",
+      "labelEn": "Kings of War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q530076",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q593466",
+      "labelEn": "Enkeshui",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q593466",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q945556",
+      "labelEn": "Parchís",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q945556",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1083528",
+      "labelEn": "Heroscape",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1083528",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1128406",
+      "labelEn": "correspondence chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1128406",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1238788",
+      "labelEn": "Patchesi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1238788",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1328529",
+      "labelEn": "Sevens",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1328529",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1393717",
+      "labelEn": "Rengo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1393717",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1609062",
+      "labelEn": "Marienbad",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1609062",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1637382",
+      "labelEn": "Hounds and Jackals",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1637382",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1704181",
+      "labelEn": "Shipka Pass",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1704181",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1718703",
+      "labelEn": "Sowing",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1718703",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1721871",
+      "labelEn": "Kakelorum",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1721871",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1734010",
+      "labelEn": "Karma",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1734010",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1785416",
+      "labelEn": "Kotra",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1785416",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q1993164",
+      "labelEn": "Ninuki-renju",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q1993164",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2041780",
+      "labelEn": "Ouril",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2041780",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2067556",
+      "labelEn": "shovel board",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2067556",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2133573",
+      "labelEn": "Diamond Chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2133573",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2366504",
+      "labelEn": "sungka",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2366504",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2434060",
+      "labelEn": "Matjok",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2434060",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2438248",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2438248",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2538557",
+      "labelEn": "Push Puppet",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2538557",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2642425",
+      "labelEn": "Verquere",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2642425",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2827928",
+      "labelEn": "Ail ger",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2827928",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2845117",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2845117",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2860692",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2860692",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2864500",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2864500",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2875219",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2875219",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2882381",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2882381",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2895069",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2895069",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2904276",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2904276",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2922114",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2922114",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2926286",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2926286",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2934734",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2934734",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q2964589",
+      "labelEn": "Chouine",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q2964589",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3003725",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3003725",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3006377",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3006377",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3035575",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3035575",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3064587",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3064587",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3073749",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3073749",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3143300",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3143300",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3160379",
+      "labelEn": "jacquet",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3160379",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3162110",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3162110",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3177931",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3177931",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3177933",
+      "labelEn": "Tiger game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3177933",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3194370",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3194370",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3199012",
+      "labelEn": "Korsar",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3199012",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3207897",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3207897",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3208378",
+      "labelEn": "Jeu de la drogue",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3208378",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3209764",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3209764",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3221358",
+      "labelEn": "Le Château Lafortune",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3221358",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3230409",
+      "labelEn": "Les Aigles",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3230409",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3277759",
+      "labelEn": "simplified mahjong",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3277759",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3278021",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3278021",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3285710",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3285710",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3287191",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3287191",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3304665",
+      "labelEn": "Plakoto",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3304665",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3321227",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3321227",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3324194",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3324194",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3368625",
+      "labelEn": "Patamania",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3368625",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3381544",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3381544",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3395940",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3395940",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3400300",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3400300",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3418042",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3418042",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3521217",
+      "labelEn": "Pallanguzhi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3521217",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3532546",
+      "labelEn": "multicolor turtle",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3532546",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3541350",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3541350",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3556188",
+      "labelEn": "Verso Recto",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3556188",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3561499",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3561499",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3575501",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3575501",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3577425",
+      "labelEn": "patrol chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3577425",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3620522",
+      "labelEn": "Anywoli",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3620522",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3631287",
+      "labelEn": "Aw-li On-nam Ot-tjin",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3631287",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3631385",
+      "labelEn": "Endodoi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3631385",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3636683",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3636683",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3656653",
+      "labelEn": "Omweso",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3656653",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3696414",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3696414",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3701206",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3701206",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3768560",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3768560",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3803278",
+      "labelEn": "isolo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3803278",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3815110",
+      "labelEn": "Kiela",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3815110",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3815553",
+      "labelEn": "Kiothi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3815553",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3827461",
+      "labelEn": "Latho",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3827461",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3840568",
+      "labelEn": "Lukho",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3840568",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3874210",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3874210",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3880640",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3880640",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3932151",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3932151",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3959191",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3959191",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3977666",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3977666",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q3980878",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q3980878",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4154149",
+      "labelEn": "Daldøs",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4154149",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4157232",
+      "labelEn": "business chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4157232",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4184740",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4184740",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4355918",
+      "labelEn": "Kimble",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4355918",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4459110",
+      "labelEn": "Tobit",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4459110",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4462948",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4462948",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4545492",
+      "labelEn": "Owela",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4545492",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4673330",
+      "labelEn": "acey-deucey",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4673330",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4673651",
+      "labelEn": "Achi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4673651",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4685865",
+      "labelEn": "Adugo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4685865",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4688395",
+      "labelEn": "aeroplane chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4688395",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4787376",
+      "labelEn": "Archworld",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4787376",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4805925",
+      "labelEn": "Ashta Chamma",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4805925",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4810552",
+      "labelEn": "Astar",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4810552",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4814195",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4814195",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4830073",
+      "labelEn": "Awithlaknannai Mosona",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4830073",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4841737",
+      "labelEn": "Bagh bandi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4841737",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4921439",
+      "labelEn": "Black Path Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4921439",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4927268",
+      "labelEn": "Blockhead!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4927268",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q4929406",
+      "labelEn": "Blue Marble Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q4929406",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5030335",
+      "labelEn": "Canadian Monopoly",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5030335",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5051420",
+      "labelEn": "Catan Historical Scenarios I: Alexander and Cheops",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5051420",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5141535",
+      "labelEn": "Coin Hopping--Washington D.C.",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5141535",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5149050",
+      "labelEn": "Colorforms",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5149050",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5210146",
+      "labelEn": "Dala",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5210146",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5221971",
+      "labelEn": "Dara",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5221971",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5315162",
+      "labelEn": "Dungeoneer",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5315162",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5347839",
+      "labelEn": "egg dance",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5347839",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5357597",
+      "labelEn": "Electric football",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5357597",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5398614",
+      "labelEn": "Eson xorgol",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5398614",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5420351",
+      "labelEn": "Existensminimum",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5420351",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5445895",
+      "labelEn": "Fetaix",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5445895",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5508322",
+      "labelEn": "Fullrigger",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5508322",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5520120",
+      "labelEn": "Games played with Mahjong equipment",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5520120",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5551245",
+      "labelEn": "German Solo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5551245",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5643705",
+      "labelEn": "Halusa",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5643705",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5755777",
+      "labelEn": "high jump",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5755777",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q5965039",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q5965039",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6017915",
+      "labelEn": "The Chaco War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6017915",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6022041",
+      "labelEn": "Star Wars Monopoly",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6022041",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6100735",
+      "labelEn": "Okey 101",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6100735",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6305576",
+      "labelEn": "jul-gonu",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6305576",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6343087",
+      "labelEn": "Ka-Bala",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6343087",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6400316",
+      "labelEn": "Khanhoo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6400316",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6412857",
+      "labelEn": "KingsRow",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6412857",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6427846",
+      "labelEn": "Kolowis Awithlaknannai",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6427846",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6428330",
+      "labelEn": "Komikan",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6428330",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6454061",
+      "labelEn": "København",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6454061",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6460635",
+      "labelEn": "La'b Hakimi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6460635",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6460636",
+      "labelEn": "La'b Madjnuni",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6460636",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6526858",
+      "labelEn": "Leopard hunt game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6526858",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6541180",
+      "labelEn": "Liberian Queah",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6541180",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6667718",
+      "labelEn": "Logo Board Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6667718",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6670757",
+      "labelEn": "Shengguan Tu",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6670757",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6738536",
+      "labelEn": "Mak-yek",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6738536",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6783368",
+      "labelEn": "Mask Trilogy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6783368",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6802970",
+      "labelEn": "Alkkagi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6802970",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6804428",
+      "labelEn": "MechWarrior: Dark Age",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6804428",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q6979851",
+      "labelEn": "Nations: A Simulation Game in International Politics",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q6979851",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7067576",
+      "labelEn": "Nsolo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7067576",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7141601",
+      "labelEn": "Pasang",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7141601",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7301337",
+      "labelEn": "Realm of the Desert Sons",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7301337",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7334395",
+      "labelEn": "Rimau",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7334395",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7334945",
+      "labelEn": "Ringo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7334945",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7443660",
+      "labelEn": "Second World War at Sea series",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7443660",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7600591",
+      "labelEn": "Star",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7600591",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-11997"
+      ]
+    },
+    {
+      "wikidataId": "Q7600997",
+      "labelEn": "Star Trek: Starship Tactical Combat Simulator",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7600997",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7601107",
+      "labelEn": "Star Wars: The Interactive Video Board Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7601107",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7677772",
+      "labelEn": "Take On You",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7677772",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7733398",
+      "labelEn": "The Fantasy Trip",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7733398",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7735721",
+      "labelEn": "The Game of Jaws",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7735721",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7759063",
+      "labelEn": "The Quest of the Philosopher's Stone",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7759063",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7785448",
+      "labelEn": "Thiruthamizh",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7785448",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7809794",
+      "labelEn": "Titanic: The Board Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7809794",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7835919",
+      "labelEn": "Travel Go",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7835919",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7851856",
+      "labelEn": "Tuknanavuhpi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7851856",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q7939584",
+      "labelEn": "Voice of the Mummy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q7939584",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q8034323",
+      "labelEn": "Word chain",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q8034323",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9379227",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9379227",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9381964",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9381964",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9384973",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9384973",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9419505",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9419505",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9520514",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9520514",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9696418",
+      "labelEn": "Cara a Cara",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9696418",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9798894",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9798894",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q9936071",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q9936071",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10050812",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10050812",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10281673",
+      "labelEn": "Ferris Bueller's Day Off",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10281673",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10296924",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10296924",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10297268",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10297268",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10299005",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10299005",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10301825",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10301825",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10309750",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10309750",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10309857",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10309857",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10378381",
+      "labelEn": "Taule",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10378381",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10390400",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10390400",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10420488",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10420488",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10429103",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10429103",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10432853",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10432853",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10434836",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10434836",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10441369",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10441369",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10483595",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10483595",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10495294",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10495294",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10500988",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10500988",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10514298",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10514298",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10520341",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10520341",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10533017",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10533017",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10539874",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10539874",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10540256",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10540256",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10544902",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10544902",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10545162",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10545162",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10551488",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10551488",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10561845",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10561845",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10563998",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10563998",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10564102",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10564102",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10564439",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10564439",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10566101",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10566101",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10566115",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10566115",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10862903",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10862903",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10866715",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10866715",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10882221",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10882221",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10889453",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10889453",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10892445",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10892445",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10896796",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10896796",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10899275",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10899275",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10901525",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10901525",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10902600",
+      "labelEn": "Northern Zhou Xiangxi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10902600",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10908727",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10908727",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10931587",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10931587",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10937275",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10937275",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10942102",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10942102",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10942104",
+      "labelEn": "Towers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10942104",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q10956218",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q10956218",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11059982",
+      "labelEn": "parji",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11059982",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11075985",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11075985",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11080528",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11080528",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11092730",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11092730",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11111041",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11111041",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11121096",
+      "labelEn": "Chupu",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11121096",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11175674",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11175674",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11179922",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11179922",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11180654",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11180654",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11225032",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11225032",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11342802",
+      "labelEn": "Miracle Five",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11342802",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11581612",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11581612",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11581687",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11581687",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11637377",
+      "labelEn": "Gunjin Shōgi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11637377",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11985301",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11985301",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q11990178",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q11990178",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q12004949",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q12004949",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q12031134",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q12031134",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q12345476",
+      "labelEn": "Bakio",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q12345476",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q12885754",
+      "labelEn": "Fevga",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q12885754",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q13135481",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q13135481",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q13846048",
+      "labelEn": "Wolf and Sheep",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q13846048",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15900664",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15900664",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15930072",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15930072",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15935427",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15935427",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15937919",
+      "labelEn": "Abacus checkers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15937919",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15940469",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15940469",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15942069",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15942069",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15943045",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15943045",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15944063",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15944063",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15946937",
+      "labelEn": "369 Qí",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15946937",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15955786",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15955786",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q15956491",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q15956491",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16070466",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16070466",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16136683",
+      "labelEn": "Padavettu",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16136683",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16382802",
+      "labelEn": "Bisca",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16382802",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16382990",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16382990",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16544877",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16544877",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16564615",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16564615",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16596837",
+      "labelEn": "RisiKo!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16596837",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16680652",
+      "labelEn": "Tourne Case",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16680652",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16681322",
+      "labelEn": "Truc y flou",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16681322",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16737825",
+      "labelEn": "petteia",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16737825",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16965499",
+      "labelEn": "hypergammon",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16965499",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16980392",
+      "labelEn": "Makonn",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16980392",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q16994258",
+      "labelEn": "Hong Kong Monopoly",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q16994258",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17019557",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17019557",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17023523",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17023523",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17025341",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17025341",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17030905",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17030905",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17031612",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17031612",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17032586",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17032586",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17036220",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17036220",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17039458",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17039458",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17039714",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17039714",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17040831",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17040831",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17041273",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17041273",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17062549",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17062549",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17191718",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17191718",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q17995309",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q17995309",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q18289515",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q18289515",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q19709287",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q19709287",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q20010260",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q20010260",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q20825816",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q20825816",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q21083039",
+      "labelEn": "La Fallera Calavera",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q21083039",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q21190017",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q21190017",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q21190021",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q21190021",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q21427882",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q21427882",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q22914921",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q22914921",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q22994179",
+      "labelEn": "quantum chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q22994179",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q24273193",
+      "labelEn": "Kaplansky's game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q24273193",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q25231017",
+      "labelEn": "Gomocup",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q25231017",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q25295950",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q25295950",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q25339298",
+      "labelEn": "Damath",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q25339298",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q25401093",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q25401093",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q26772524",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q26772524",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q26849174",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q26849174",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q26877612",
+      "labelEn": "Mörderische Dinnerparty",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q26877612",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q27791801",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q27791801",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q27961632",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q27961632",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q28004625",
+      "labelEn": "Petsamo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q28004625",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q28465647",
+      "labelEn": "Sampo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q28465647",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q28482434",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q28482434",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q31890103",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q31890103",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48756075",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48756075",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48976784",
+      "labelEn": "Panzer Pranks",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48976784",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997108",
+      "labelEn": "Mind War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997108",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997207",
+      "labelEn": "The War of the Worlds II",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997207",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997323",
+      "labelEn": "4000 A.D.",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997323",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-1435"
+      ]
+    },
+    {
+      "wikidataId": "Q48997330",
+      "labelEn": "Starguard!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997330",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997334",
+      "labelEn": "StarSoldier",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997334",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997460",
+      "labelEn": "Warriors of the Green Planet Trilogy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997460",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997576",
+      "labelEn": "Annihilator & One World",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997576",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997862",
+      "labelEn": "Double Star",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997862",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997933",
+      "labelEn": "Forest Wars of the Haven",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997933",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997938",
+      "labelEn": "Space Future",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997938",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997995",
+      "labelEn": "Earth Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997995",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48997997",
+      "labelEn": "Final Frontier",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48997997",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998221",
+      "labelEn": "Lords & Wizards",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998221",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998377",
+      "labelEn": "Death and Destruction",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998377",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998381",
+      "labelEn": "MAATAC",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998381",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998423",
+      "labelEn": "Magic Wood",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998423",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998450",
+      "labelEn": "Dimension Demons",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998450",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998590",
+      "labelEn": "Knights and Knaves",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998590",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998717",
+      "labelEn": "Space Warrior",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998717",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q48998896",
+      "labelEn": "Duel Arcane",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q48998896",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q49000076",
+      "labelEn": "Dark Stars",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q49000076",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q49000200",
+      "labelEn": "Space Raid!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q49000200",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q49001490",
+      "labelEn": "The Hammer of Thor: The Game of Norse Mythology",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q49001490",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q49001491",
+      "labelEn": "I.C.B.M.",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q49001491",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q50813776",
+      "labelEn": "Snakes and Ladders game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q50813776",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q50926281",
+      "labelEn": "neoclassical chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q50926281",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55517246",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55517246",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55611459",
+      "labelEn": "Fantasy Land (board game)",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55611459",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55624904",
+      "labelEn": "Nebula 19",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55624904",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55628168",
+      "labelEn": "Outpost Gamma",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55628168",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55633657",
+      "labelEn": "Spacefarers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55633657",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55633904",
+      "labelEn": "Starfire III: Empires",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55633904",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55634502",
+      "labelEn": "Sword Lords",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55634502",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55635173",
+      "labelEn": "The Dragonlords",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55635173",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55636523",
+      "labelEn": "Undead (board game)",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55636523",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q55643152",
+      "labelEn": "Lourche",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q55643152",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q56276037",
+      "labelEn": "Highway 2000",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q56276037",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q56347268",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q56347268",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q60469324",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q60469324",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q60790812",
+      "labelEn": "Vallco Professional Drag Racing",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q60790812",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q60792205",
+      "labelEn": "Battle Damage: Code Red",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q60792205",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q60792237",
+      "labelEn": "Attack Force",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q60792237",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q60792244",
+      "labelEn": "Escape from Altassar",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q60792244",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q60792805",
+      "labelEn": "Interstellar Wars",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q60792805",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61070249",
+      "labelEn": "tabula lusoria",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61070249",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61722445",
+      "labelEn": "Brian Clough's Football Fortunes",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61722445",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61747865",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61747865",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61747936",
+      "labelEn": "Taktillinen partiopeli",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61747936",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61747988",
+      "labelEn": "Suomen vapaussota",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61747988",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61748020",
+      "labelEn": "Lentokilpailu-peli",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61748020",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61749108",
+      "labelEn": "Matka kotiin jouluksi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61749108",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61749798",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61749798",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754497",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754497",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754498",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754498",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754499",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754499",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754500",
+      "labelEn": "Metsämies",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754500",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754501",
+      "labelEn": "Kilpa-ajo-peli 1887",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754501",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754502",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754502",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754503",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754503",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754504",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754504",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754505",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754505",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754507",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754507",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754508",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754508",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754509",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754509",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754510",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754510",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754511",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754511",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754512",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754512",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754513",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754513",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754515",
+      "labelEn": "Belägrings-spelet",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754515",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754516",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754516",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754517",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754517",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754518",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754518",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754519",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754519",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754520",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754520",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754521",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754521",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754522",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754522",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754523",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754523",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754524",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754524",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754525",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754525",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754526",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754526",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754527",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754527",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754528",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754528",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754529",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754529",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754530",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754530",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754531",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754531",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754532",
+      "labelEn": "Robinson Crusoe",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754532",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754533",
+      "labelEn": "Maantieteellinen seurapeli",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754533",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754534",
+      "labelEn": "Svenskt Historiskt Sällskap Spel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754534",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754535",
+      "labelEn": "Sveaborg",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754535",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754537",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754537",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754539",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754539",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754540",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754540",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754541",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754541",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754542",
+      "labelEn": "Råttfällan",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754542",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754543",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754543",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754544",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754544",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754546",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754546",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754548",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754548",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754549",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754549",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61754550",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61754550",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q61776714",
+      "labelEn": "Maailmansota itäisellä sotanäyttämöllä",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q61776714",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q62273715",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q62273715",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q62280997",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q62280997",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q62395850",
+      "labelEn": "Tank Attack",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q62395850",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q62912363",
+      "labelEn": "Boekenspel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q62912363",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q63871380",
+      "labelEn": "Empire I",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q63871380",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65043497",
+      "labelEn": "Cloudships & Gunboats",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65043497",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65043509",
+      "labelEn": "Space 1889 Adversaries",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65043509",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65058669",
+      "labelEn": "Hammer's Slammers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65058669",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65061008",
+      "labelEn": "The Watersdown Affair",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65061008",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65061028",
+      "labelEn": "Star Trek III Starship Combat Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65061028",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65064412",
+      "labelEn": "Battlestar Galactica",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65064412",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65074378",
+      "labelEn": "Thunde-Rin Guns, Game of the Wild West",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65074378",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65084550",
+      "labelEn": "Star Wars: X-Wing Second Edition",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65084550",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65087787",
+      "labelEn": "Starship Duel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65087787",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65088648",
+      "labelEn": "BattleDroids",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65088648",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65118305",
+      "labelEn": "Iron Horse",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65118305",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q65197501",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q65197501",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q72345293",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q72345293",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q74108510",
+      "labelEn": "Battle Cattle",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q74108510",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q84354304",
+      "labelEn": "The X-Files Trivia Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q84354304",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q85747507",
+      "labelEn": "Black Death",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85747507",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q85754614",
+      "labelEn": "Critter Commandos",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85754614",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q85756086",
+      "labelEn": "Deathwing",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85756086",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q85762986",
+      "labelEn": "Genestealer",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85762986",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q85765622",
+      "labelEn": "Hands Down",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85765622",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q85850897",
+      "labelEn": "Keyflower",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85850897",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-122515"
+      ]
+    },
+    {
+      "wikidataId": "Q85948026",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q85948026",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q90374278",
+      "labelEn": "The X-Files Board Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q90374278",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q96378908",
+      "labelEn": "Fuzzy Heroes",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96378908",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q96378909",
+      "labelEn": "Fuzzy Sooper Heroes",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96378909",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q96387203",
+      "labelEn": "Legions of the Petal Throne",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96387203",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q96401259",
+      "labelEn": "Rapier & Dagger",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96401259",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-7770"
+      ]
+    },
+    {
+      "wikidataId": "Q96405493",
+      "labelEn": "Shasn",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96405493",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q96405566",
+      "labelEn": "Shockforce: Battles in the Remnants of America",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96405566",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q96756890",
+      "labelEn": "Kunglig ludo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q96756890",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q97206370",
+      "labelEn": "Flight 501",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q97206370",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q97260584",
+      "labelEn": "Ayoayo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q97260584",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q97358349",
+      "labelEn": "The Golden Horde",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q97358349",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q97552352",
+      "labelEn": "Bad Bitches Only",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q97552352",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q97738499",
+      "labelEn": "Starfall",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q97738499",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-2743"
+      ]
+    },
+    {
+      "wikidataId": "Q97959831",
+      "labelEn": "Pizza Wars Imperium",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q97959831",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q98113752",
+      "labelEn": "The Final Campaign",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q98113752",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q102227151",
+      "labelEn": "Talisman City",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q102227151",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q102227152",
+      "labelEn": "Talisman The Adventure",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q102227152",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q102420346",
+      "labelEn": "Seunggyeongdo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q102420346",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104821894",
+      "labelEn": "Indian Ocean Adventure: The Japanese Raids on Ceylon",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104821894",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104849533",
+      "labelEn": "The Worlds of Boris Vallejo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104849533",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104862954",
+      "labelEn": "Dark Blades",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104862954",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104863626",
+      "labelEn": "Ellery Queen's Mystery Magazine Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104863626",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104866501",
+      "labelEn": "Ellery Queen's Operation: Murder",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104866501",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104866504",
+      "labelEn": "Agatha Christie: Behind the Screen",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104866504",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104881052",
+      "labelEn": "Sea Hawks",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104881052",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q104881836",
+      "labelEn": "Exorbitare",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q104881836",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q105426641",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q105426641",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q105540752",
+      "labelEn": "Drive on Stalingrad: Battle for Southern Russia Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q105540752",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q105540788",
+      "labelEn": "Firefight: Modern U.S. and Soviet Small Unit Tactics",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q105540788",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q105737640",
+      "labelEn": "The Great Wall Street Fortune Hunt",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q105737640",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q105956098",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q105956098",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q105972367",
+      "labelEn": "51st State",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q105972367",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-73369"
+      ]
+    },
+    {
+      "wikidataId": "Q106532627",
+      "labelEn": "Koenigspiel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q106532627",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q106533310",
+      "labelEn": "Neue Kriegsspiel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q106533310",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q106533473",
+      "labelEn": "Neu-erfundenes grosses Koenig-Spiel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q106533473",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q107462494",
+      "labelEn": "Save the President",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q107462494",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108391746",
+      "labelEn": "Vultures",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108391746",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108391763",
+      "labelEn": "Open Fire: Solitaire Tank Combat in WWII",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108391763",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108443426",
+      "labelEn": "Man the Lifeboat",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108443426",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108443458",
+      "labelEn": "Seaside Frolics",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108443458",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108567507",
+      "labelEn": "Jeu de la guerre",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108567507",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569819",
+      "labelEn": "Presidential Campaign",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569819",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569820",
+      "labelEn": "Election",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569820",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569821",
+      "labelEn": "Mr. Trucker",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569821",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569823",
+      "labelEn": "Bewitched",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569823",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569824",
+      "labelEn": "Orgy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569824",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569826",
+      "labelEn": "Who Can Beat Nixon?",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569826",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569828",
+      "labelEn": "Slick!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569828",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108569832",
+      "labelEn": "Insider Dealing",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108569832",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108760001",
+      "labelEn": "Wicketz",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108760001",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108760005",
+      "labelEn": "Test of Arms",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108760005",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108760018",
+      "labelEn": "Desert Falcons",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108760018",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108803372",
+      "labelEn": "The Last Hurrah",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108803372",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108803374",
+      "labelEn": "The Peninsular War 1808-14",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108803374",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108838181",
+      "labelEn": "Destiny Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108838181",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108841148",
+      "labelEn": "The Way of War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108841148",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108872177",
+      "labelEn": "Victory: World War II",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108872177",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108898170",
+      "labelEn": "Onslaught",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108898170",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108898175",
+      "labelEn": "City",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108898175",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q108898193",
+      "labelEn": "The Emperor Returns",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q108898193",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q109330171",
+      "labelEn": "Mathesso",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q109330171",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q109404024",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q109404024",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q109448287",
+      "labelEn": "Bergnein",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q109448287",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110164219",
+      "labelEn": "1812",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110164219",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110245462",
+      "labelEn": "Train",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110245462",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110263361",
+      "labelEn": "Fight for the Sky",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110263361",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110269336",
+      "labelEn": "Europe Aflame",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110269336",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110300608",
+      "labelEn": "Napoleon's Battles",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110300608",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110323964",
+      "labelEn": "Red Barricades: ASL Historical Module 1",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110323964",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110386890",
+      "labelEn": "Assarmot",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110386890",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110442527",
+      "labelEn": "Usuthu! The Battle Of Rorke's Drift 1879",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110442527",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110442640",
+      "labelEn": "Modern Naval Battles II: The Campaign Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110442640",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110442960",
+      "labelEn": "Patton's 3rd Army",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110442960",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110497523",
+      "labelEn": "1851 Agidingbi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110497523",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110633758",
+      "labelEn": "Air Force",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110633758",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-3608"
+      ]
+    },
+    {
+      "wikidataId": "Q110707261",
+      "labelEn": "Escape from the Hidden Castle (dup)",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110707261",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110911065",
+      "labelEn": "two-player chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110911065",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110911067",
+      "labelEn": "seven-player chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110911067",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q110911174",
+      "labelEn": "one-player chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q110911174",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111168475",
+      "labelEn": "Five Lines",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111168475",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111937806",
+      "labelEn": "Blitzkrieg Module System",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111937806",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111939696",
+      "labelEn": "Cromwell",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111939696",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111939964",
+      "labelEn": "'CA': Tactical Naval Warfare in the Pacific 1941-43",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111939964",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111941212",
+      "labelEn": "Combined Arms",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111941212",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111942617",
+      "labelEn": "Crimea: The Dawn of Modern Warfare",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111942617",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111943631",
+      "labelEn": "Chaco",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111943631",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111944840",
+      "labelEn": "The Battles of Bull Run",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111944840",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111944928",
+      "labelEn": "The Marne: Home Before the Leaves Fall",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111944928",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111945032",
+      "labelEn": "The Conquerors",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111945032",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111945910",
+      "labelEn": "Napoleon at Bay",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111945910",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111972969",
+      "labelEn": "The East is Red: The Sino Soviet War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111972969",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111973106",
+      "labelEn": "Destruction of Army Group Center",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111973106",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q111982543",
+      "labelEn": "1812: The Campaign of Napoleon in Russia",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q111982543",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112039558",
+      "labelEn": "El Alamein: Battles in North Africa, 1942",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112039558",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112078115",
+      "labelEn": "Foxbat & Phantom",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112078115",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112119038",
+      "labelEn": "Global War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112119038",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112161071",
+      "labelEn": "Island War: Four Pacific Battles",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112161071",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112169014",
+      "labelEn": "KampfPanzer: Armored Combat, 1937–40",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112169014",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112221296",
+      "labelEn": "Kriegspiel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112221296",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-22008"
+      ]
+    },
+    {
+      "wikidataId": "Q112221333",
+      "labelEn": "Kursk: Operation Zitadelle",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112221333",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112248579",
+      "labelEn": "Donjons & Dominos",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112248579",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112274260",
+      "labelEn": "Lee vs. Meade",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112274260",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112294931",
+      "labelEn": "Chessboard and chess pieces used by Napoleon and his entourage at Longwood, Saint Helena",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112294931",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112567580",
+      "labelEn": "Leipzig: The Battle of Nations",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112567580",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112683368",
+      "labelEn": "Minuteman: The Second American Revolution",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112683368",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q112724767",
+      "labelEn": "Modern Battles: Four Contemporary Conflicts",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q112724767",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113212355",
+      "labelEn": "Battle for Midway: Decision in the Pacific, 1942",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113212355",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113213776",
+      "labelEn": "1918",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113213776",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113245125",
+      "labelEn": "Khalkhin-Gol",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113245125",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113269049",
+      "labelEn": "Nordlingen",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113269049",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113289102",
+      "labelEn": "Lützen",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113289102",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113331498",
+      "labelEn": "Freiburg",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113331498",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113499559",
+      "labelEn": "Anzio Beachhead",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113499559",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113541119",
+      "labelEn": "Arnhem",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113541119",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113541138",
+      "labelEn": "COIN",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113541138",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113555061",
+      "labelEn": "Tsushima",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113555061",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113555273",
+      "labelEn": "Westwall: Four Battles to Germany",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113555273",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113576172",
+      "labelEn": "Burma",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113576172",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113641773",
+      "labelEn": "Blue & Gray II",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113641773",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113641892",
+      "labelEn": "Bar-Lev",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113641892",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113800799",
+      "labelEn": "Cambrai, 1917: The First Blitzkrieg",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113800799",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113859734",
+      "labelEn": "Custer's Last Stand",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113859734",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113946939",
+      "labelEn": "Chariot: Tactical Warfare in the Biblical Age, 3000-500 B.C.",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113946939",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113961760",
+      "labelEn": "Eagles",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113961760",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113987324",
+      "labelEn": "The Fall of Rome",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113987324",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113987824",
+      "labelEn": "EuroFront",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113987824",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q113993406",
+      "labelEn": "Frigate: Sea War in the Age of Sail",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q113993406",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q114043974",
+      "labelEn": "Guilford Courthouse",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q114043974",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q114207098",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q114207098",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q114397496",
+      "labelEn": "Hurtgen Forest",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q114397496",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q114564643",
+      "labelEn": "stone kernoi",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q114564643",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115328463",
+      "labelEn": "Monopoly - Paris",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115328463",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115516909",
+      "labelEn": "Gioul",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115516909",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115556318",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115556318",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115802692",
+      "labelEn": "The Keep",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115802692",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115804824",
+      "labelEn": "Hannibal",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115804824",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115814407",
+      "labelEn": "Tannenberg",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115814407",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115857816",
+      "labelEn": "Legion: Tactical Warfare in the Roman Age, 100BC-700AD",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115857816",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115861928",
+      "labelEn": "Topple",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115861928",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115862326",
+      "labelEn": "Leningrad: The Advance of Army Group North, Summer 1941",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115862326",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115925635",
+      "labelEn": "Excalibur",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115925635",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115925636",
+      "labelEn": "Thomas the Tank Engine Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115925636",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115937423",
+      "labelEn": "Counter Intelligence",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115937423",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115937425",
+      "labelEn": "Hookipa",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115937425",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115945677",
+      "labelEn": "Traber Derby Spiel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115945677",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115945678",
+      "labelEn": "Grosz Jakosa",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115945678",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115945680",
+      "labelEn": "A la carte",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115945680",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-217"
+      ]
+    },
+    {
+      "wikidataId": "Q115978896",
+      "labelEn": "Oil War: American Intervention in the Persian Gulf",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115978896",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q115978903",
+      "labelEn": "Normandy: The Invasion of Europe 1944",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q115978903",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116006453",
+      "labelEn": "Echelon",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116006453",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116006455",
+      "labelEn": "Temple of the Beastmen",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116006455",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116029127",
+      "labelEn": "Clubhouse Baseball",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116029127",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116029128",
+      "labelEn": "Chamelequin",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116029128",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116044163",
+      "labelEn": "Rise and Fall",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116044163",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116055589",
+      "labelEn": "Flux",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116055589",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116055592",
+      "labelEn": "Star Wars: Escape From The Death Star",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116055592",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116106367",
+      "labelEn": "Cover Up",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116106367",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116106390",
+      "labelEn": "Murphy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116106390",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116106427",
+      "labelEn": "Fidchell: Celtic Chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116106427",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116169495",
+      "labelEn": "Death By Diet",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116169495",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116188217",
+      "labelEn": "Roller Coaster Hippo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116188217",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-4587"
+      ]
+    },
+    {
+      "wikidataId": "Q116507336",
+      "labelEn": "Tactics II",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116507336",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116507462",
+      "labelEn": "War in the East",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116507462",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116626323",
+      "labelEn": "Monopoly: Scott the Woz Edition",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116626323",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116671904",
+      "labelEn": "Clue: Scott the Woz Edition",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116671904",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q116922372",
+      "labelEn": "Crescendo of Doom",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q116922372",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117019386",
+      "labelEn": "Acre: Richard Lionheart's Siege",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117019386",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117100636",
+      "labelEn": "The Godfather Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117100636",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117272412",
+      "labelEn": "Gimel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117272412",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117272414",
+      "labelEn": "Sirius",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117272414",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117286227",
+      "labelEn": "Touch and Go",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117286227",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117312621",
+      "labelEn": "Okinawa: The Last Battle",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117312621",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117317268",
+      "labelEn": "Space Lines",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117317268",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117387476",
+      "labelEn": "Organized Crime",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117387476",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117455357",
+      "labelEn": "Fallout: The Board Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117455357",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q117461811",
+      "labelEn": "Gregory Horror Show",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q117461811",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118875809",
+      "labelEn": "Noble Armada",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118875809",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118896581",
+      "labelEn": "Crimea",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118896581",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118897093",
+      "labelEn": "The Fall of South Vietnam",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118897093",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118898769",
+      "labelEn": "The China War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118898769",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118900212",
+      "labelEn": "Chinese Civil War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118900212",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118901696",
+      "labelEn": "Objective: Atlanta",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118901696",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118902282",
+      "labelEn": "Divine Wind",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118902282",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118902951",
+      "labelEn": "Le Grand Empire",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118902951",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118903545",
+      "labelEn": "Yeoman",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118903545",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118903872",
+      "labelEn": "Panzer",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118903872",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118904066",
+      "labelEn": "Viking",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118904066",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118904084",
+      "labelEn": "Von Manstein: Battles for the Ukraine",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118904084",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118904106",
+      "labelEn": "Flying Fortress I & II",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118904106",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118904243",
+      "labelEn": "PRESTAGS",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118904243",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118904565",
+      "labelEn": "Shiloh: The Battle for Tennessee",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118904565",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118904863",
+      "labelEn": "War in the Pacific",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118904863",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118911244",
+      "labelEn": "La Bataille de Valmy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118911244",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118941988",
+      "labelEn": "Lionheart",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118941988",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118947159",
+      "labelEn": "Blockword",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118947159",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118947241",
+      "labelEn": "Marvel Super Dice",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118947241",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q118947274",
+      "labelEn": "Sinai: The Arab-Israeli Wars",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q118947274",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q119555467",
+      "labelEn": "Kangaroo: The Jumping Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q119555467",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q119555480",
+      "labelEn": "Balance of Power",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q119555480",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q119603998",
+      "labelEn": "The Generals",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q119603998",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q119931956",
+      "labelEn": "Pentantastar",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q119931956",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q119999683",
+      "labelEn": "World War I: 1914–1918",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q119999683",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120107893",
+      "labelEn": "Intuition",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120107893",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120261411",
+      "labelEn": "BattleTech: Alpha Strike",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120261411",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120336446",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120336446",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120403816",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120403816",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120467666",
+      "labelEn": "Strike Force One",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120467666",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120500653",
+      "labelEn": "El nuevo coyote",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120500653",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120500699",
+      "labelEn": "El cascabelito mudo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120500699",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120682717",
+      "labelEn": "Soldiers: Tactical Combat in 1914–15",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120682717",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120756445",
+      "labelEn": "Russian Civil War 1918–1922",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120756445",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q120798844",
+      "labelEn": "Robert at Bannockburn",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q120798844",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121076621",
+      "labelEn": "World War II: European Theater of Operations",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121076621",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121298380",
+      "labelEn": "Dérive",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121298380",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121314800",
+      "labelEn": "Jeu de lices",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121314800",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121366669",
+      "labelEn": "Le Défi du Sphinx",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121366669",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121760629",
+      "labelEn": "galagapy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121760629",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121775226",
+      "labelEn": "Red Star/White Star: Tactical Combat in Europe in the 1970s",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121775226",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121811822",
+      "labelEn": "War Between the States 1861–1865",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121811822",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121862615",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121862615",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q121990358",
+      "labelEn": "Tito and his Partisan Army: Yugoslavia, 1941–45",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q121990358",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122032413",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122032413",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122057436",
+      "labelEn": "Solomons Campaign",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122057436",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122199958",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122199958",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122213129",
+      "labelEn": "Le jeu des chaises musicales",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122213129",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122213176",
+      "labelEn": "Petits Pieds... Partez !",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122213176",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122227017",
+      "labelEn": "South Africa: Vestige of Colonialism",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122227017",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122237906",
+      "labelEn": "The Flight of the Goeben",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122237906",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122290073",
+      "labelEn": "The Wilderness Campaign",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122290073",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122333714",
+      "labelEn": "The Franco-Prussian War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122333714",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122363505",
+      "labelEn": "WorldKiller: The Game of Planetary Assault",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122363505",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122956306",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122956306",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122957439",
+      "labelEn": "Dreams",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122957439",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q122975702",
+      "labelEn": "Motspeed",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q122975702",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q123010292",
+      "labelEn": "Objective Moscow",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q123010292",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q123039111",
+      "labelEn": "Fully",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q123039111",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q123039129",
+      "labelEn": "Kami",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q123039129",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q123039269",
+      "labelEn": "Gym-Jungle",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q123039269",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q123046395",
+      "labelEn": "Riviera Quest",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q123046395",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q123046566",
+      "labelEn": "Scribe Glass",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q123046566",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124268398",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124268398",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124296849",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124296849",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124304042",
+      "labelEn": "Viva!: Revolution in Mexico",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124304042",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124304056",
+      "labelEn": "SSN: Modern Tactical Submarine Warfare",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124304056",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124304059",
+      "labelEn": "Troy",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124304059",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124304063",
+      "labelEn": "The March on India, 1944",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124304063",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124304066",
+      "labelEn": "Stonewall: The Battle of Kernstown",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124304066",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124304082",
+      "labelEn": "Siege!: The Game of Siege Warfare, 50 AD-1400 AD",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124304082",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124639487",
+      "labelEn": "Earth",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124639487",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-350184"
+      ]
+    },
+    {
+      "wikidataId": "Q124736025",
+      "labelEn": "ClimaTicTac",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124736025",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124749624",
+      "labelEn": "Dien Bien Phu",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124749624",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124749702",
+      "labelEn": "Inchon",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124749702",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124759243",
+      "labelEn": "The Wilderness",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124759243",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124811520",
+      "labelEn": "La Regia Marina",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124811520",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124811635",
+      "labelEn": "West Front",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124811635",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124811639",
+      "labelEn": "Lebensraum!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124811639",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124813756",
+      "labelEn": "Otys",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124813756",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-222542"
+      ]
+    },
+    {
+      "wikidataId": "Q124830450",
+      "labelEn": "Man of War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124830450",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124937030",
+      "labelEn": "Ortona",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124937030",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q124968080",
+      "labelEn": "The One World",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q124968080",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125186329",
+      "labelEn": "Quebec Libre",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125186329",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125217091",
+      "labelEn": "With Fire and Sword",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125217091",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125217094",
+      "labelEn": "Scourge of God",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125217094",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125217279",
+      "labelEn": "Dune (Parker Brothers)",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125217279",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125243636",
+      "labelEn": "Warring States",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125243636",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125292362",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125292362",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125560133",
+      "labelEn": "Potion-making: Path of Alchemist",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125560133",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125747223",
+      "labelEn": "The Defense of Rorke's Drift",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125747223",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125748123",
+      "labelEn": "Clash of Deck",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125748123",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125796305",
+      "labelEn": "Piratissimo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125796305",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-20953"
+      ]
+    },
+    {
+      "wikidataId": "Q125856198",
+      "labelEn": "Gunslinger",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125856198",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q125881430",
+      "labelEn": "Gladiator",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q125881430",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-1693"
+      ]
+    },
+    {
+      "wikidataId": "Q126178422",
+      "labelEn": "Polis",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q126178422",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q126281370",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q126281370",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q126366883",
+      "labelEn": "Trench Crusade",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q126366883",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q126923072",
+      "labelEn": "Dragon-Slayers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q126923072",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q129906020",
+      "labelEn": "Outremer",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q129906020",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130214496",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130214496",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130252303",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130252303",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130308207",
+      "labelEn": "For The Win",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130308207",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130472851",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130472851",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130535129",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130535129",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130552281",
+      "labelEn": "7. W obronie Lwowa",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130552281",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130603482",
+      "labelEn": "GHQ",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130603482",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130734316",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130734316",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q130967226",
+      "labelEn": "Odysea Organization",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q130967226",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q131345116",
+      "labelEn": "Fortnite Monopoly",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q131345116",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q131418842",
+      "labelEn": "Marralhinha",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q131418842",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q133310214",
+      "labelEn": "The Witcher RPG",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q133310214",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q133503611",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q133503611",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q134440103",
+      "labelEn": "Monopoly: Animal Crossing",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q134440103",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q134564251",
+      "labelEn": "Chron'Autrices",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q134564251",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q135244015",
+      "labelEn": "daily chess",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q135244015",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q135495929",
+      "labelEn": "This Is Your Life",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q135495929",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q135739747",
+      "labelEn": "Agemonia",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q135739747",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q135739751",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q135739751",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q135935467",
+      "labelEn": "SPARPAGLIATI",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q135935467",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136172416",
+      "labelEn": "Goblin",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136172416",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136236298",
+      "labelEn": "Middle Passage",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136236298",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136308863",
+      "labelEn": "Het Beursspel",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136308863",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136345613",
+      "labelEn": "Edge City",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136345613",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136345614",
+      "labelEn": "Fury of the Clansmen",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136345614",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136352379",
+      "labelEn": "Australian Rails",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136352379",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136356380",
+      "labelEn": "Raiders and Traders",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136356380",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136436560",
+      "labelEn": "Monster Derby",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136436560",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136647183",
+      "labelEn": "Undersea Warriors",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136647183",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136701696",
+      "labelEn": "Settlers of the Stone Age",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136701696",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136723106",
+      "labelEn": "Phantasie",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136723106",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136762807",
+      "labelEn": "Conquest of Space",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136762807",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136841818",
+      "labelEn": "Bataille de la Marne 1914",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136841818",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136868608",
+      "labelEn": "Checkers Plus",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136868608",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136871158",
+      "labelEn": "Cold War",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136871158",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136871237",
+      "labelEn": "Yom Kippur",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136871237",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136995148",
+      "labelEn": "Ambush!: Purple Heart",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136995148",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136995152",
+      "labelEn": "Sixth Fleet: Modern Naval Combat in the Mediterranean",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136995152",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q136995155",
+      "labelEn": "Wagram 1809",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q136995155",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137049493",
+      "labelEn": "Pacific War: The Struggle Against Japan 1941-1945",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137049493",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137049514",
+      "labelEn": "Dr. Ruth's Game of Good Sex",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137049514",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137168291",
+      "labelEn": "Cargo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137168291",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137187353",
+      "labelEn": "Ost",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137187353",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137187372",
+      "labelEn": "Starship Captain",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137187372",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137217293",
+      "labelEn": "Roma",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137217293",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-16496"
+      ]
+    },
+    {
+      "wikidataId": "Q137217295",
+      "labelEn": "Western Front Tank Leader",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137217295",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137217897",
+      "labelEn": "COIN Series",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137217897",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137258658",
+      "labelEn": "Landsknecht",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137258658",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137271583",
+      "labelEn": "Dragon Hordes",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137271583",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137324796",
+      "labelEn": "Maxi Bour$e",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137324796",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137359729",
+      "labelEn": "Blue Stones",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137359729",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137360134",
+      "labelEn": "Mai '68 Le jeu",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137360134",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137360140",
+      "labelEn": "Guet-Apens",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137360140",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137375960",
+      "labelEn": "Tactical Command",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137375960",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137399912",
+      "labelEn": "Guillotine",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137399912",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-116"
+      ]
+    },
+    {
+      "wikidataId": "Q137591375",
+      "labelEn": "The Hills Rise Wild!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137591375",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137662010",
+      "labelEn": "When Darkness Comes: The Awakening",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137662010",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137731676",
+      "labelEn": "Hundred Kingdoms",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137731676",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137756823",
+      "labelEn": "Escape the Dark Castle",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137756823",
+      "registryItemMatches": [
+        "game-04af0ef9-cf38-4e9f-9c22-5a274fec0134"
+      ],
+      "registryNameMatches": [
+        "game-04af0ef9-cf38-4e9f-9c22-5a274fec0134"
+      ]
+    },
+    {
+      "wikidataId": "Q137762623",
+      "labelEn": "Boomtown",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137762623",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-10997"
+      ]
+    },
+    {
+      "wikidataId": "Q137762628",
+      "labelEn": "A Touch of Evil: The Supernatural Game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137762628",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137762646",
+      "labelEn": "Belfort",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137762646",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-50750"
+      ]
+    },
+    {
+      "wikidataId": "Q137785419",
+      "labelEn": "Above and Below",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137785419",
+      "registryItemMatches": [
+        "game-2f551211-4e97-464a-9edc-7c471ab34e35"
+      ],
+      "registryNameMatches": [
+        "game-2f551211-4e97-464a-9edc-7c471ab34e35"
+      ]
+    },
+    {
+      "wikidataId": "Q137785427",
+      "labelEn": "Ethnos",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137785427",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-206718"
+      ]
+    },
+    {
+      "wikidataId": "Q137795668",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137795668",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137800153",
+      "labelEn": "Rome: Imperium, Circus Maximus, Hannibal vs Rome",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137800153",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q137804858",
+      "labelEn": "Witchcraft",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q137804858",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-383499"
+      ]
+    },
+    {
+      "wikidataId": "Q138006110",
+      "labelEn": "JeDiBo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q138006110",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q138105698",
+      "labelEn": "ludus coriovalli",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q138105698",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q138505034",
+      "labelEn": "Halo",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q138505034",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q138545840",
+      "labelEn": "Mmm ... Brains!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q138545840",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q138789418",
+      "labelEn": "Mafiabursdag",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q138789418",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q138822505",
+      "labelEn": "MidEvil",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q138822505",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q139149320",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q139149320",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q139214762",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q139214762",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q139378955",
+      "labelEn": "You Are the President",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q139378955",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140088273",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140088273",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140133386",
+      "labelEn": "Solstis",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140133386",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140288758",
+      "labelEn": "Scooby-Doo! Thrills and Spills",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140288758",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140314738",
+      "labelEn": "Tables game",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140314738",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140315285",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140315285",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140365700",
+      "labelEn": "Musketeers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140365700",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140401280",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140401280",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140407091",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140407091",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140407280",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140407280",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140407797",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140407797",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140407806",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140407806",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140478682",
+      "labelEn": "Gods of Rome",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140478682",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140480650",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140480650",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140480658",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140480658",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140480667",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140480667",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140480670",
+      "labelEn": null,
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140480670",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140619898",
+      "labelEn": "Codenames Duet",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140619898",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-224037"
+      ]
+    },
+    {
+      "wikidataId": "Q140658863",
+      "labelEn": "Star Traders",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140658863",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140668367",
+      "labelEn": "London-Opoly",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140668367",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140668411",
+      "labelEn": "Forest City Routes/Roots",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140668411",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q140668450",
+      "labelEn": "Kellogg's Story Book of Games series",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q140668450",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q141196287",
+      "labelEn": "Wake Up Stars",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141196287",
+      "registryItemMatches": [
+        "game-56e1ca46-3953-41cf-a1c0-1ba4c6ffaa54"
+      ],
+      "registryNameMatches": [
+        "game-56e1ca46-3953-41cf-a1c0-1ba4c6ffaa54"
+      ]
+    },
+    {
+      "wikidataId": "Q141204263",
+      "labelEn": "Sumology",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141204263",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-0b11441f-bc94-4b86-87cd-3e49545ea3db"
+      ]
+    },
+    {
+      "wikidataId": "Q141204305",
+      "labelEn": "Walk the Dogs",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141204305",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "bgg-15410"
+      ]
+    },
+    {
+      "wikidataId": "Q141204342",
+      "labelEn": "Math Room",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141204342",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-7717d02c-1658-4540-bfdd-418f14c50407"
+      ]
+    },
+    {
+      "wikidataId": "Q141204575",
+      "labelEn": "Glow Spotters",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141204575",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-00e1ebcd-f843-4695-94bf-23ee002e48b5"
+      ]
+    },
+    {
+      "wikidataId": "Q141205207",
+      "labelEn": "Ice Tumble",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141205207",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-553f1008-6580-4b68-aa64-8be229354a32"
+      ]
+    },
+    {
+      "wikidataId": "Q141205230",
+      "labelEn": "Trifusion",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141205230",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-7a9e2e56-cca4-462e-b87a-152ddb294817"
+      ]
+    },
+    {
+      "wikidataId": "Q141205246",
+      "labelEn": "Owl Solve That!",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141205246",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-c5f7ea8b-d410-4f82-8614-9783b8ef7b08"
+      ]
+    },
+    {
+      "wikidataId": "Q141205392",
+      "labelEn": "Crystal Cup Rally",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141205392",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-82b39523-3d1e-4fcb-b5ce-78017daa8045"
+      ]
+    },
+    {
+      "wikidataId": "Q141244097",
+      "labelEn": "Eye to Eye",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141244097",
+      "registryItemMatches": [
+        "game-0986ac7a-25f8-4f7a-953a-0c30f8f1f3cc"
+      ],
+      "registryNameMatches": [
+        "game-0986ac7a-25f8-4f7a-953a-0c30f8f1f3cc"
+      ]
+    },
+    {
+      "wikidataId": "Q141244131",
+      "labelEn": "Dreaming Dragon",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141244131",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-8059c227-9b1e-4ddd-92e9-fb909fde62f9"
+      ]
+    },
+    {
+      "wikidataId": "Q141244169",
+      "labelEn": "Math Medalist",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141244169",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-3e55d498-4528-434e-8853-01a11798a04e"
+      ]
+    },
+    {
+      "wikidataId": "Q141244187",
+      "labelEn": "Is or Isn't",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141244187",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-0b9bc3c1-8600-4f18-8ad3-458d781f0209"
+      ]
+    },
+    {
+      "wikidataId": "Q141248825",
+      "labelEn": "Time Jumpers",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141248825",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-2d2a0577-b273-4ea6-be1f-e6520962e433"
+      ]
+    },
+    {
+      "wikidataId": "Q141248867",
+      "labelEn": "SavannaScapes",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141248867",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-3e8c9fcd-ea25-46c0-ab98-ac17850d022c"
+      ]
+    },
+    {
+      "wikidataId": "Q141248917",
+      "labelEn": "Prickly Path",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141248917",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-b42cc46b-d3cd-4685-8762-b90cd7122e10"
+      ]
+    },
+    {
+      "wikidataId": "Q141248954",
+      "labelEn": "The Climbing Knights",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141248954",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-398db21a-c0c0-44b9-80c0-804175f49b86"
+      ]
+    },
+    {
+      "wikidataId": "Q141250087",
+      "labelEn": "Dinosaur Challenge",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141250087",
+      "registryItemMatches": [
+        "game-4dc26efb-aff4-4ae0-a8b4-a00fe2dcc1dd"
+      ],
+      "registryNameMatches": [
+        "game-4dc26efb-aff4-4ae0-a8b4-a00fe2dcc1dd"
+      ]
+    },
+    {
+      "wikidataId": "Q141250153",
+      "labelEn": "Bug Crafts",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141250153",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-cfd2f4a9-975d-4627-adc0-928c61a328f6"
+      ]
+    },
+    {
+      "wikidataId": "Q141250166",
+      "labelEn": "SlideAscope",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141250166",
+      "registryItemMatches": [
+        "game-c524621f-dcc6-4648-9fac-1cf17bce3177"
+      ],
+      "registryNameMatches": [
+        "game-c524621f-dcc6-4648-9fac-1cf17bce3177"
+      ]
+    },
+    {
+      "wikidataId": "Q141414065",
+      "labelEn": "Digger's Garden Match",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141414065",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-79cd4c67-043c-4e29-870c-d95b8739d16b"
+      ]
+    },
+    {
+      "wikidataId": "Q141417106",
+      "labelEn": "Team Digger",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141417106",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-4395f721-e93a-40df-ab5e-fe6ec4b0b0bf"
+      ]
+    },
+    {
+      "wikidataId": "Q141417419",
+      "labelEn": "Poles Apart",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141417419",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-1b8a6c0e-ec44-4769-bc94-e7937034fea0"
+      ]
+    },
+    {
+      "wikidataId": "Q141417482",
+      "labelEn": "Nebulous Connections",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141417482",
+      "registryItemMatches": [],
+      "registryNameMatches": [
+        "game-14581939-4fe7-47ac-9b15-6d3ae4ff9b3c"
+      ]
+    },
+    {
+      "wikidataId": "Q141568436",
+      "labelEn": "Shinru",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141568436",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    },
+    {
+      "wikidataId": "Q141568440",
+      "labelEn": "Kinapa",
+      "wikidataUrl": "https://www.wikidata.org/wiki/Q141568440",
+      "registryItemMatches": [],
+      "registryNameMatches": []
+    }
+  ]
+}

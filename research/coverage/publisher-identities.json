@@ -3219,6 +3219,82 @@
       "reviewedBy": "Codex /root",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "e7400d10f8629255ad564fbbe9c743d409f6706cfd80220bdf53342fa9f49958"
+    },
+    {
+      "identityId": "game-2f551211-4e97-464a-9edc-7c471ab34e35",
+      "routeKey": "game-2f551211-4e97-464a-9edc-7c471ab34e35",
+      "name": "Above and Below",
+      "searchNames": [],
+      "publisher": "Red Raven Games",
+      "identityScope": "Physical base game as described by Red Raven Games and its own Above and Below store product. No Kickstarter supplement, related Arzium game, edition or BoardGameGeek-ID correspondence is asserted.",
+      "identityEvidence": "The creator-publisher store lists the standalone Above and Below product; its game page calls it the first Arzium Storybook Series game and provides a rulebook. Wikidata Q137785419 is a CC0 title/class discovery lead without P2339. Starting-player rule remains pending.",
+      "publisherReferenceSourceId": "above-product",
+      "sources": [
+        {
+          "id": "above-product",
+          "kind": "primary-publisher",
+          "url": "https://red-raven-board-games.myshopify.com/products/above-and-below",
+          "sha256": "384db6161d27343d0be134823336cb59f258234f93f79778a99f60f99e28a6ff",
+          "byteCount": 138677,
+          "location": "Focal product heading Above and Below; store product and price; village/cavern game description. Sold-out state is not interpreted as game status."
+        },
+        {
+          "id": "above-game",
+          "kind": "primary-publisher",
+          "url": "https://www.redravengames.com/above-and-below/",
+          "sha256": "809fae561c8a7011525ea25a6c4e029a80843427a46980d857b9d2f41dc8a2fa",
+          "byteCount": 2020915,
+          "location": "Focal Above and Below heading; 2–4 players; first Arzium Storybook Series game; overview and rulebook link."
+        },
+        {
+          "id": "above-wikidata",
+          "kind": "identifier-reference",
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q137785419.json?revision=2529349221",
+          "sha256": "70222bf84f79a7a07761b741e28fe47df55af77443368a028bf470defb66dcda",
+          "byteCount": 1356,
+          "location": "entities.Q137785419 revision 2529349221; English label Above and Below; English description Fantasy board game; P31 Q131436; P2339 absent."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "2fca979df4ae5fa22157d35d45fbcbda334f0ce7ca80862b0472226c0e0e1ccb"
+    },
+    {
+      "identityId": "game-04af0ef9-cf38-4e9f-9c22-5a274fec0134",
+      "routeKey": "game-04af0ef9-cf38-4e9f-9c22-5a274fec0134",
+      "name": "Escape the Dark Castle (First Edition)",
+      "searchNames": [
+        "Escape the Dark Castle"
+      ],
+      "publisher": "Themeborne",
+      "identityScope": "Themeborne physical First Edition base game only. The announced Second Edition, adventure packs and upgrade kits are outside this identity; no BoardGameGeek-ID correspondence is asserted.",
+      "identityEvidence": "The publisher product page expressly labels First Edition and lists the base game's chapter, item, character, boss and start cards plus dice and other physical components. Wikidata Q137756823 is a generic title/class discovery lead, not proof of edition correspondence. Starting-player rule remains pending.",
+      "publisherReferenceSourceId": "castle-product",
+      "sources": [
+        {
+          "id": "castle-product",
+          "kind": "primary-publisher",
+          "url": "https://themeborne.com/products/escape-the-dark-castle",
+          "sha256": "3a191794cb027f7afe940f856ca5e9b99e0f7f08d57a9978dbb3b2c37591ad2e",
+          "byteCount": 278567,
+          "location": "Product H1 Escape the Dark Castle (First Edition); first-versus-second-edition notice; Contains section with chapter/item/character/boss/start cards and dice."
+        },
+        {
+          "id": "castle-wikidata",
+          "kind": "identifier-reference",
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q137756823.json?revision=2513291712",
+          "sha256": "50de3706cc67365a718a08f93338cc30f52ec6f5c047cb6dd2e7b44eea5878f3",
+          "byteCount": 809,
+          "location": "entities.Q137756823 revision 2513291712; English label Escape the Dark Castle; English description Cooperative board game; P31 Q131436; P2339 absent."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "49d5cc9a6ff21e5747767d4e85353da863423e2b015ca1d888be6c165bb243e1"
     }
   ]
 }
