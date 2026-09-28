@@ -3,15 +3,32 @@
   "slug": "7seas-abacus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "5e55687092cfb5502b1b7754635504c705263e2b1ea1cd83501e45fa9e0de355",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "6289ea9a6d942fc6afd9acc4629e6d2f8cada75225417883ca9d4711afb48cdf",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "7Seas",
   "aliases": [
     "7 Seas"
   ],
   "editionLabel": "ABACUSSPIELE English rules",
+  "image": {
+    "file": "/images/games/7seas-abacus-en-cover.jpg",
+    "alt": "Official product image showing the 7Seas game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://abacusspiele.de/wp-content/uploads/2022/01/7Seas_Bild01_Cover3D_sRGB.jpg",
+      "publisher": "ABACUSSPIELE"
+    },
+    "fairUse": {
+      "rightsHolder": "ABACUSSPIELE; cover art by Johannes Hench and Arve D. Fühler",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official ABACUSSPIELE product page: https://abacusspiele.de/produkt/7seas/. Edition match: Publisher box image for 7Seas article 08211 with German/English rules, matching the cited English rules.. Original image URL: https://abacusspiele.de/wp-content/uploads/2022/01/7Seas_Bild01_Cover3D_sRGB.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently went to sea goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",

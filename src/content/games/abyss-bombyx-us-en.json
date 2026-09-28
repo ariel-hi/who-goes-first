@@ -3,13 +3,30 @@
   "slug": "abyss-bombyx-us-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
-  "approvedRevision": "31d2b64783151d6547ae8ae89d04db78f9680a13d10a321347beee7ad0763320",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "c67ffa14fba2ba7de0ef34ad2b34cce09f3f03da423d43fcd5893856952c3851",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Abyss",
   "aliases": [],
   "editionLabel": "Bombyx original English US base-game rulebook",
+  "image": {
+    "file": "/images/games/abyss-bombyx-us-en-cover.jpg",
+    "alt": "Official product image showing the Abyss game box",
+    "width": 440,
+    "height": 248,
+    "presentation": "cover",
+    "source": {
+      "url": "https://studiobombyx.com/assets/AbyssBox_3D-1920x1080.png",
+      "publisher": "Bombyx"
+    },
+    "fairUse": {
+      "rightsHolder": "Bombyx; artwork by Xavier Collette",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Bombyx product page: https://studiobombyx.com/produit/abyss/. Edition match: Publisher box image for the original Abyss base game, matching the cited US base-game rules.. Original image URL: https://studiobombyx.com/assets/AbyssBox_3D-1920x1080.png",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly determine the starting player. Play then proceeds clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,

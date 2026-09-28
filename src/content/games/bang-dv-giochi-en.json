@@ -3,16 +3,33 @@
   "slug": "bang-dv-giochi-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4612db5c77b1c14f8ddf81cdac380a0f841fc908bfd64111df7492d3bc1a8367",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "5f83da95395f522249c2377e110bb5e69f3b55f89a10172840f6353de28b6cf4",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "BANG!",
   "aliases": [
     "Bang",
     "BANG! card game"
   ],
   "editionLabel": "dV Giochi English rules, fourth edition",
+  "image": {
+    "file": "/images/games/bang-dv-giochi-en-cover.jpg",
+    "alt": "Official product image showing the BANG! game box",
+    "width": 406,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dvgiochi.com/giochi/bang/box.jpg",
+      "publisher": "dV Giochi"
+    },
+    "fairUse": {
+      "rightsHolder": "dV Giochi",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official dV Giochi product page: https://www.dvgiochi.com/catalogo/bang/?lang=eng. Edition match: Publisher core BANG! box associated with its fourth-edition English rules page.. Original image URL: https://www.dvgiochi.com/giochi/bang/box.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Roles are dealt at random and the Sheriff reveals their role card. The Sheriff begins.",
   "officialTieBreak": null,
   "houseFallback": null,

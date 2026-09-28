@@ -3,13 +3,30 @@
   "slug": "arcs-leder-base-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
-  "approvedRevision": "2f7d09f629d12e5af6f9d239c7f510a51df12b8fefd2d28f1da3e91aff5f971a",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "36d88106138e2e36056afe0d66b7f8ee6adb972d1dd268f5f1892f354c7c6e88",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Arcs",
   "aliases": [],
   "editionLabel": "Leder Games English base-game rulebook",
+  "image": {
+    "file": "/images/games/arcs-leder-base-en-cover.jpg",
+    "alt": "Cover page of the official Arcs rulebook",
+    "width": 305,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Arcs_Base_Rulebook.pdf",
+      "publisher": "Leder Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Leder Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Leder Games rulebook PDF: https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Arcs_Base_Rulebook.pdf. The illustrated cover displays the game title and matches the cited edition: Leder Games English base-game rulebook. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Give the initiative marker to a randomly chosen player. The player with initiative takes the first turn of the opening round.",
   "officialTieBreak": null,
   "houseFallback": null,
