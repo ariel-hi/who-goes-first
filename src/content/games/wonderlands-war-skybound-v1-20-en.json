@@ -3,10 +3,10 @@
   "slug": "wonderlands-war-skybound-v1-20-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "63f1911e8238d50c4b41d1b490034f7a386e5d8d8c42606558370e9d1395dc77",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "16242972bb9fdac306a0f961dfdc20c27f28479f9ef1fcab0a001865e392c490",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wonderland's War",
   "aliases": [],
   "editionLabel": "Skybound English rules",
@@ -39,5 +39,22 @@
   "internalEvidence": "Downloaded and rendered the version 1.20 English publisher-produced booklet from a retailer archive. Printed/PDF page 5 gives the tea criterion and initial Shards by order. Page 6 explains later-round starters and clockwise Tea Party turns. The battle starting-region marker is a separate rule. SHA-256: 8c59c22896ed6f79fe57c01a38453a460c5246ee863b1206947230894baebd4b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction and edition against the rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The booklet does not specify a tie procedure for equally recent tea drinkers."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wonderlands-war-skybound-v1-20-en-cover.jpg",
+    "alt": "Wonderland’s War game box cover artwork",
+    "width": 534,
+    "height": 536,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5973c49529687fd9f2a82292/52b2e9c8-0840-4c0d-9801-d4bc11c2bcf1/Screenshot+%2815%29.png?format=750w",
+      "publisher": "Druid City Games / Skybound Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Druid City Games / Skybound Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Druid City Games / Skybound Games product page: https://www.druidcitygames.com/wonderlands-war. Exact publisher-hosted package image: https://images.squarespace-cdn.com/content/v1/5973c49529687fd9f2a82292/52b2e9c8-0840-4c0d-9801-d4bc11c2bcf1/Screenshot+%2815%29.png?format=750w. The package and game identity were visually reviewed against the article edition (Skybound English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

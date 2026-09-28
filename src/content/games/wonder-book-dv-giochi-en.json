@@ -3,10 +3,10 @@
   "slug": "wonder-book-dv-giochi-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8e29b0037bf512eec343e8a8dd6cde5dffb2d48547e98848363359462da823d6",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "abd4ccdf4b9097ca03adc0c9031eec1c716a63924cb7dbc712d1b73ac785fce4",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wonder Book",
   "aliases": [],
   "editionLabel": "dV Giochi English rules",
@@ -37,5 +37,22 @@
     "The rulebook does not define what counts as spotting a dragon.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wonder-book-dv-giochi-en-cover.jpg",
+    "alt": "Wonder Book English game box cover",
+    "width": 476,
+    "height": 516,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dvgiochi.com/giochi/wonder-book-eng/box.jpg",
+      "publisher": "dV Games"
+    },
+    "fairUse": {
+      "rightsHolder": "dV Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official dV Games product page: https://www.dvgiochi.com/catalogo/wonder-book-english/?lang=eng. Exact publisher-hosted package image: https://www.dvgiochi.com/giochi/wonder-book-eng/box.jpg. The package and game identity were visually reviewed against the article edition (dV Giochi English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
