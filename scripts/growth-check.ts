@@ -21,7 +21,15 @@ const checks = await Promise.all(paths.map(async path => {
 
 let metrics: Metrics | null = null;
 let metricsIssue: string | null = null;
-try { metrics = validateMetrics(JSON.parse(await readFile(new URL('metrics.json', output), 'utf8'))); }
+try {
+  let raw: string;
+  try { raw = await readFile(new URL('metrics.json', output), 'utf8'); }
+  catch (error) {
+    if (!(error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT')) throw error;
+    raw = await readFile(new URL('../research/demand/traffic-metrics.json', import.meta.url), 'utf8');
+  }
+  metrics = validateMetrics(JSON.parse(raw));
+}
 catch (error) {
   if (!(error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT')) metricsIssue = error instanceof Error ? error.message : 'Unreadable metrics';
 }

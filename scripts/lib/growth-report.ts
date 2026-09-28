@@ -5,11 +5,18 @@ type Element = DefaultTreeAdapterMap['element'];
 export type Probe = { path: string; status: number; url: string; body: string; robots: string; error?: string };
 export type Metrics = {
   periodStart: string; periodEnd: string; source: string;
-  scope: 'all-sessions' | 'consented-sessions';
+  scope: 'all-sessions' | 'consented-sessions' | 'ga4-reported-sessions';
   sessions: number | null; pageviews: number | null;
   cashRevenueUsd: number | null; cashCostsUsd: number | null;
   laborHours: number | null; laborHourlyUsd: number | null;
 };
+export function ga4TrafficMetrics(periodStart: string, periodEnd: string, sessions: number, screenPageViews: number): Metrics {
+  return validateMetrics({
+    periodStart, periodEnd, source: 'Google Analytics 4 Data API (screenPageViews)', scope: 'ga4-reported-sessions',
+    sessions, pageviews: screenPageViews,
+    cashRevenueUsd: null, cashCostsUsd: null, laborHours: null, laborHourlyUsd: null,
+  });
+}
 function elements(node: Node): Element[] {
   return [...('tagName' in node ? [node] : []), ...('childNodes' in node ? node.childNodes.flatMap(elements) : [])];
 }
@@ -57,7 +64,7 @@ export function validateMetrics(input: unknown): Metrics {
   }
   if (String(data.periodEnd) < String(data.periodStart)) throw new Error('Metrics period is reversed');
   if (typeof data.source !== 'string' || !data.source.trim()) throw new Error('Metrics source is required');
-  if (!['all-sessions', 'consented-sessions'].includes(String(data.scope))) throw new Error('Metrics scope is required');
+  if (!['all-sessions', 'consented-sessions', 'ga4-reported-sessions'].includes(String(data.scope))) throw new Error('Metrics scope is required');
   for (const field of ['sessions', 'pageviews', 'cashRevenueUsd', 'cashCostsUsd', 'laborHours', 'laborHourlyUsd']) {
     const value = data[field];
     if (value !== null && (typeof value !== 'number' || !Number.isFinite(value) || value < 0)) throw new Error(`Invalid ${field}; use null for unknown`);

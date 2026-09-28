@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { economics, inspectProbe, validateMetrics, type Metrics, type Probe } from '../../scripts/lib/growth-report';
+import { economics, ga4TrafficMetrics, inspectProbe, validateMetrics, type Metrics, type Probe } from '../../scripts/lib/growth-report';
 
 const origin = 'https://whogoesfirst.fun';
 const probe = (body: string, extra: Partial<Probe> = {}): Probe => ({ path: '/', status: 200, url: `${origin}/`, body, robots: '', ...extra });
@@ -31,6 +31,11 @@ describe('observed economics', () => {
     expect(economics({ ...metrics, scope: 'consented-sessions', cashCostsUsd: null })).toEqual({ cashContributionUsd: null, contributionAfterLaborUsd: null, revenuePerSessionUsd: null });
     expect(economics({ ...metrics, sessions: 0 }).revenuePerSessionUsd).toBeNull();
     expect(economics({ ...metrics, cashRevenueUsd: 0, cashCostsUsd: 0 }).cashContributionUsd).toBe(0);
+  });
+  it('records GA4 traffic with an exact period without claiming total sessions or revenue', () => {
+    const observed = ga4TrafficMetrics('2026-08-29', '2026-09-27', 1730, 2909);
+    expect(observed).toMatchObject({ periodStart: '2026-08-29', periodEnd: '2026-09-27', scope: 'ga4-reported-sessions', sessions: 1730, pageviews: 2909, cashRevenueUsd: null });
+    expect(economics({ ...observed, cashRevenueUsd: 10 }).revenuePerSessionUsd).toBeNull();
   });
   it('rejects malformed periods, missing values, and extra fields', () => {
     expect(() => validateMetrics({ ...metrics, periodEnd: '2026-02-30' })).toThrow('Invalid periodEnd');

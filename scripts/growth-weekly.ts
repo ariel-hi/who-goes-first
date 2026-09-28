@@ -4,6 +4,7 @@ import { getCatalog } from '../src/lib/content/catalog';
 import { analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
 import { rankDemand } from './lib/demand';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
+import { ga4TrafficMetrics } from './lib/growth-report';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
@@ -33,12 +34,14 @@ const demand = rankDemand(queries, pages, games, origin);
 const sum = (rows: SearchRow[]) => rows.reduce((total, row) => ({ clicks: total.clicks + row.clicks, impressions: total.impressions + row.impressions }), { clicks: 0, impressions: 0 });
 const weekNow = sum(thisWeek); const weekBefore = sum(lastWeek);
 let traffic: AnalyticsTotals | undefined;
+const trafficWindow = { start: daysAgo(30), end: daysAgo(1) };
 if (gaProperty) {
-  try { traffic = await analyticsTotals(token, gaProperty, '30daysAgo', 'yesterday'); }
+  try { traffic = await analyticsTotals(token, gaProperty, trafficWindow.start, trafficWindow.end); }
   catch (error) { console.warn(`GA4 report skipped: ${(error as Error).message}`); }
 }
 
 mkdirSync('research/demand', { recursive: true });
+if (traffic) writeFileSync('research/demand/traffic-metrics.json', `${JSON.stringify(ga4TrafficMetrics(trafficWindow.start, trafficWindow.end, traffic.sessions, traffic.screenPageViews), null, 2)}\n`);
 writeFileSync('research/demand/search-console.json', `${JSON.stringify({
   generatedAt: new Date().toISOString(), property, window: window28,
   note: 'Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.',
