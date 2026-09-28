@@ -3,10 +3,10 @@
   "slug": "exoplanets-board-and-dice-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "670a90984b32ebd6a5d02351a551dbeb08120d489391c6b1535c6a771845ec3a",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "5f5ba46df47a0c13518723e4e5fcdb36fcb8fb63d6ef65bdb3b35300a6056c8f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Exoplanets",
   "aliases": [],
   "editionLabel": "Board&Dice English Architecture of the Universe rulebook",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Visually checked Board&Dice English rulebook PDF page 6 (printed page 4) from the Dice Tower Library archive. It explicitly permits any random method as an alternative and states play passes left. The wording does not resolve an equal count of named moons. SHA-256: 84a0b0917d328886941e9059e30fa62afd27b352f1243dc61b359c90332ca97c. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/exoplanets-board-and-dice-en-cover.jpg",
+    "alt": "Exoplanets 2015 Board & Dice original box from publisher campaign",
+    "width": 465,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://boardanddice.znadplanszy.pl/2015/05/22/exoplanets-ruszyl-projekt-gry-na-kickstarterze/",
+      "publisher": "Publisher or edition-identified retailer as specified in provenance"
+    },
+    "fairUse": {
+      "rightsHolder": "Board & Dice and Przemysław Świerczyński",
+      "rationale": "Small, compressed edition-identifying image supports this editorial rule explanation and does not substitute for the game, rulebook, or original artwork.",
+      "provenance": "Image https://boardanddice.znadplanszy.pl/wp-content/uploads/sites/58/2015/05/Kick.jpg; Board & Dice 2015 Kickstarter base-game box, with a segmented planet on dark blue background. Visual title and publisher checks performed. Distinct editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

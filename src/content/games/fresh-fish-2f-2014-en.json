@@ -3,10 +3,10 @@
   "slug": "fresh-fish-2f-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "fe64014e36f2c17b807442dc6f243aa5309fc1e58704216db8810394bfec5196",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c87533d1a1a941c1af8c203b64d1692214822b46dcd3c149e075ecd693ec742b",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fresh Fish",
   "aliases": [],
   "editionLabel": "2F-Spiele English rules, 2014",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered PDF/printed page 3 states the weekly-market criterion and page 4 gives clockwise play. Page 8 credits 2F-Spiele ©2014; market stalls, delivery trucks, reservation discs and modular boards match inventory BGG 1017. The classic variant is separately labeled. SHA-256: 6828b879fa7c6bcb0b973679f0cd4ee044ccae33ec92cb80ada9ca2e9678938a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who visited a weekly market together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fresh-fish-2f-2014-en-cover.jpg",
+    "alt": "Frischfisch 2014 2F-Spiele box for the Fresh Fish English rules",
+    "width": 364,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147966344/Frischfisch-Fresh-Fish-German-Edition",
+      "publisher": "Publisher or edition-identified retailer as specified in provenance"
+    },
+    "fairUse": {
+      "rightsHolder": "2F-Spiele and Harald Lieske",
+      "rationale": "Small, compressed edition-identifying image supports this editorial rule explanation and does not substitute for the game, rulebook, or original artwork.",
+      "provenance": "Image https://image.nobleknight.com/2/jpg1500/2208271085lf.jpg; original German-titled 2014 2F-Spiele box paired with its 2014 English rulebook; not the later English-box reissue. Visual title and publisher checks performed. Distinct editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

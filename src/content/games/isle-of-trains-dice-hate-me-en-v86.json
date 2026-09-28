@@ -3,10 +3,10 @@
   "slug": "isle-of-trains-dice-hate-me-en-v86",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "24bf1858668cca3d4f3e06dcb92a6eef23a85dcd41dd2a0be19480fc4be507b3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0b7b11b93e1fdefdc8ec197d675eeef4834a5051a8c9f4e3c4c37f782b0a9cae",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Isle of Trains",
   "aliases": [],
   "editionLabel": "Dice Hate Me English rules and reference",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "The instruction does not explain a case where no player has the green-shaded engine; the suggested random alternative is explicitly a house rule.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/isle-of-trains-dice-hate-me-en-v86-cover.jpg",
+    "alt": "Isle of Trains original Dice Hate Me Games box",
+    "width": 317,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147576077/Isle-of-Trains",
+      "publisher": "Publisher or edition-identified retailer as specified in provenance"
+    },
+    "fairUse": {
+      "rightsHolder": "Dice Hate Me Games and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed edition-identifying image supports this editorial rule explanation and does not substitute for the game, rulebook, or original artwork.",
+      "provenance": "Image https://image.nobleknight.com/d/jpg1500/dhmisle.jpg; original Dice Hate Me Games box matching its publisher-hosted v8.6 English rules. Visual title and publisher checks performed. Distinct editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

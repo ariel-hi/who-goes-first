@@ -3,10 +3,10 @@
   "slug": "gentes-spielworxx-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "312767e4b37a8098ca78facdfaf8d3396d9f78ec82ed299195ee6e2fa1ac806c",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4b16350947fa5555d78f833d10bd3e06b7444272ae89e440bceb95dce7cc6806",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gentes",
   "aliases": [],
   "editionLabel": "Spielworxx original English rulebook, 2017",
@@ -38,5 +38,22 @@
   "internalEvidence": "A complete publisher-authored English booklet preserved by a game-rule archive was rendered and read at pages 5 and 11. Page 12 credits Spielworxx ©2017. Preparation leaves the initial selection method to the players; the later action changes the next-round starter. Matches inventory BGG 217780. SHA-256: e44829b826c0de1dd9dec480056c3252611dbea407f20302d82c0c5eb1455059. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No specific initial selection method is prescribed."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gentes-spielworxx-en-cover.jpg",
+    "alt": "Gentes 2017 Spielworxx English rulebook cover",
+    "width": 337,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://sde0b16cbef51efc3.jimcontent.com/download/version/1565089271/module/13340471227/name/Gentes_Rules_EN_1.1.pdf",
+      "publisher": "Publisher or edition-identified retailer as specified in provenance"
+    },
+    "fairUse": {
+      "rightsHolder": "Spielworxx and Harald Lieske",
+      "rationale": "Small, compressed edition-identifying image supports this editorial rule explanation and does not substitute for the game, rulebook, or original artwork.",
+      "provenance": "Image https://sde0b16cbef51efc3.jimcontent.com/download/version/1565089271/module/13340471227/name/Gentes_Rules_EN_1.1.pdf; first page of publisher-hosted 2017 Spielworxx English rulebook, identified as a rulebook cover rather than a box. Visual title and publisher checks performed. Distinct editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

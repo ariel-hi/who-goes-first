@@ -3,10 +3,10 @@
   "slug": "lisboa-eagle-gryphon-2017-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0f3fe08b173beb80c69efe2aa4b82f1dd8e28241d7c7354ec2af594cedb82be9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "11821b9d0df9741db78dc2d8da707746defee0255e70aaada5055e59c3c77ea0",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lisboa",
   "aliases": [],
   "editionLabel": "Eagle-Gryphon Games English edition, 2017",
@@ -36,5 +36,22 @@
   "internalEvidence": "The ©2017 Eagle-Gryphon Games English rulebook gives the most recent Lisboa visitor, Starting Player marker, clockwise play, and order-based Influence positions on page 5. Its title and Vital Lacerda credits match inventory BGG 161533. SHA-256: 922fd98bcb77b0dfd91eff6df88d5227dfc25abedfd2e58b8fb9817a2383b94e. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "No tie procedure is given for equally recent visitors."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lisboa-eagle-gryphon-2017-en-cover.jpg",
+    "alt": "Lisboa 2017 original Eagle-Gryphon Games box",
+    "width": 313,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147674351/Lisboa",
+      "publisher": "Publisher or edition-identified retailer as specified in provenance"
+    },
+    "fairUse": {
+      "rightsHolder": "Eagle-Gryphon Games and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed edition-identifying image supports this editorial rule explanation and does not substitute for the game, rulebook, or original artwork.",
+      "provenance": "Image https://image.nobleknight.com/f/jpg1500/frd102108.jpg; 2017 Eagle-Gryphon original SKU EAG102108, cross-checked with publisher https://www.eagle-gryphon.com/products/lisboa-upgrade-pack; excludes the later deluxe edition. Visual title and publisher checks performed. Distinct editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

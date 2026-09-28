@@ -3,10 +3,10 @@
   "slug": "eclipse-new-dawn-lautapelit-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "aab0e7d27503b71e6e4023ea08859ea57ab653c9cad7093f535ade3929df2547",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f2c7c300c3d816608c6d334ef40e3fce1697f697459b27948e648d2a712a5f5e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Eclipse",
   "aliases": [
     "Eclipse: New Dawn for the Galaxy"
@@ -39,5 +39,22 @@
     }
   ],
   "internalEvidence": "Visually checked the original Lautapelit.fi 2011 English rulebook, PDF pages 5 and 8. Setup assigns the marker by least time on Terra, then chooses starting positions clockwise; alien-species setup uses reverse order. Action Phase begins with the marker holder, and the first player to pass receives it for the next round. SHA-256: 1a781d2a6e1d50ce94a139820afff89720da619e3f9c3fdef9d1a31d6c3e1cd3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/eclipse-new-dawn-lautapelit-en-cover.jpg",
+    "alt": "Eclipse: New Dawn for the Galaxy original 2011 Lautapelit.fi box",
+    "width": 500,
+    "height": 354,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147462915/Eclipse---New-Dawn-for-the-Galaxy",
+      "publisher": "Publisher or edition-identified retailer as specified in provenance"
+    },
+    "fairUse": {
+      "rightsHolder": "Lautapelit.fi and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed edition-identifying image supports this editorial rule explanation and does not substitute for the game, rulebook, or original artwork.",
+      "provenance": "Image https://image.nobleknight.com/2/jpg1500/23286770018lf.jpg; Lautapelit.fi 2011 English first edition, cross-checked with https://www.lautapelit.fi/product/15090. Visual title and publisher checks performed. Distinct editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
