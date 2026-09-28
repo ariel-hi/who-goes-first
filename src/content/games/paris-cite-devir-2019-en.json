@@ -3,13 +3,30 @@
   "slug": "paris-cite-devir-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4eccb11f6b7031f9fa432f4a7dce2e302e89dbc30d0db2fdfc8135f262c3e3c0",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "949cacefc66821aecc7aba25aa4902180dc825830e633295e49e42f1d3de1457",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Paris: La Cité de la Lumière",
   "aliases": [],
   "editionLabel": "Devir English rules, 2019",
+  "image": {
+    "file": "/images/games/paris-cite-devir-2019-en-cover.jpg",
+    "alt": "Paris: La Cité de la Lumière game cover, Devir Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://devirinvestments.s3.eu-west-1.amazonaws.com/img/catalog/product/8436017228397-1200-face3d.jpg",
+      "publisher": "Devir Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Devir Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://devirgames.com/paris-la-cite-de-la-lumiere. The Devir product page identifies the original Paris: La Cité de la Lumière base game, matching the English 2019 rule record. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who lost the last game of Paris starts Phase 1. For the first game of the day, the last player to switch on a light in any room starts instead.",
   "officialTieBreak": null,
   "houseFallback": null,

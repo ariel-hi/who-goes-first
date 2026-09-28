@@ -3,13 +3,30 @@
   "slug": "roll-player-thunderworks-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "e05a1083ce235c63bad75093fd3179ee110bc3426cc6ec844011539a84c7a400",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "a18c1155cf3fa746419d3a1cf814ac6706566c04f0c9b8fb45b43755645c6cf7",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Roll Player",
   "aliases": [],
   "editionLabel": "Thunderworks English base game",
+  "image": {
+    "file": "/images/games/roll-player-thunderworks-en-cover.jpg",
+    "alt": "Roll Player game cover, Thunderworks Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thunderworksgames.com/cdn/shop/files/Roll-Player-normalized.png?v=1761779619",
+      "publisher": "Thunderworks Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Thunderworks Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://thunderworksgames.com/products/roll-player. The product page identifies the original Roll Player base game, matching the English base-game rules. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Everyone rolls a die. The player with the highest result is the starting player.",
   "officialTieBreak": null,
   "houseFallback": "Players tied for the highest roll reroll until one wins.",

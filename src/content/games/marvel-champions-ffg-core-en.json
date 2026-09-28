@@ -3,13 +3,30 @@
   "slug": "marvel-champions-ffg-core-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "56cfeaf64a87334575641e752a5d93bb56018ee73e826064c8fe24d1d10d8dec",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "033c85776abab0a5c5ce6f768182fb3283a55865248221180fda48df7b198514",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Marvel Champions: The Card Game",
   "aliases": [],
   "editionLabel": "FFG English core set",
+  "image": {
+    "file": "/images/games/marvel-champions-ffg-core-en-cover.jpg",
+    "alt": "Marvel Champions: The Card Game game cover, Fantasy Flight Games edition",
+    "width": 300,
+    "height": 300,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/mc01en_main.webp",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games / Marvel",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.fantasyflightgames.com/product/marvel-champions-the-card-game/. The publisher page identifies the Marvel Champions English core set MC01EN, matching the core rules record. Reduced to 300 × 300 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "As a group, choose a first player and give that player the first-player token.",
   "officialTieBreak": null,
   "houseFallback": null,

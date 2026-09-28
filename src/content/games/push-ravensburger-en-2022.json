@@ -5,25 +5,52 @@
   "aliases": [],
   "language": "en",
   "editionLabel": "Ravensburger English rules, 2022",
+  "image": {
+    "file": "/images/games/push-ravensburger-en-2022-cover.jpg",
+    "alt": "PUSH game cover, Ravensburger edition",
+    "width": 281,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ravensburger.cloud/images/produktseiten/600x600/26828.webp",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger Verlag GmbH",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.ravensburger.us/en-US/products/games/family-games/push-26828. The official product article 26828 and Push base-game card box match the English rule record. Reduced to 281 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever sat down first starts.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["Play continues clockwise."],
+  "clarifications": [
+    "Play continues clockwise."
+  ],
   "interpretation": null,
-  "sources": [{
-    "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/228531_26828_X_EN.pdf?ossl=pds_text_Spielanleitung",
-    "title": "PUSH — English rules",
-    "publisher": "Ravensburger",
-    "printedPages": ["1"],
-    "pdfPagesOneBased": [1],
-    "location": "SET UP, final two sentences",
-    "checkedAt": "2026-09-25"
-  }],
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/228531_26828_X_EN.pdf?ossl=pds_text_Spielanleitung",
+      "title": "PUSH — English rules",
+      "publisher": "Ravensburger",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "SET UP, final two sentences",
+      "checkedAt": "2026-09-25"
+    }
+  ],
   "internalEvidence": "Ravensburger's publisher-hosted English PDF identifies PUSH and article 26828. Page 1 was rendered and the SET UP passage visually read. The file's copyright notice on page 2 reads ©2022. Downloaded PDF SHA-256: b4a1f05b18a10e92776be1611fa1b615473e647a530f1099973cc4d82a83bf10. Owner-authorized Codex editorial review, 2026-09-25.",
-  "uncertainty": ["No tie-break is stated for players who sat down at the same time."],
+  "uncertainty": [
+    "No tie-break is stated for players who sat down at the same time."
+  ],
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "02edcb37b9dda246bbe60c632a8dc5a93ff6ade6609ce4377bcaf05117382faf",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "601057db966821deeb6512e6446f74a4da5a40b8ac14fd5a8832d89900f238e9",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  "materiallyUpdatedAt": "2026-09-28"
 }

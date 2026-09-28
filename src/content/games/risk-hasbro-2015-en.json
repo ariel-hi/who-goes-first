@@ -3,15 +3,32 @@
   "slug": "risk-hasbro-2015-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ad0b8bd6eff217a9cf0b70e963a6a9982a529430d072c7fad656db5ab16c2fd1",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "fdb83401b25330a0948e95163738b8e227e2c50d2e18e2c8901ac6da964d1ae3",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Risk",
   "aliases": [
     "Risk: The Game of Strategic Conquest"
   ],
   "editionLabel": "Hasbro English rules (2–5 players), 2015",
+  "image": {
+    "file": "/images/games/risk-hasbro-2015-en-cover.jpg",
+    "alt": "Risk game cover, Hasbro / Avalon Hill edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://instructions.hasbro.com/_next/image?url=https%3A%2F%2Fwww.hasbro.com%2Fcommon%2Fproductimages%2Fen_CA%2F2C7C6F5250569047F5DDEB8AC273BA4C%2F6638640d58a272c86e85ac7964950e27cebbaa84.jpg&w=750&q=75",
+      "publisher": "Hasbro / Avalon Hill"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro, Inc.",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://instructions.hasbro.com/en-ca/instruction/hasbro-risk-game. The Hasbro instruction page identifies article B7404 and the 2–5 player Risk box, matching the 2015 rules record. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "In Secret Mission Risk, each player rolls one die and whoever rolls the highest number goes first. In Classic Risk, the highest roller places the first Infantry and takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,

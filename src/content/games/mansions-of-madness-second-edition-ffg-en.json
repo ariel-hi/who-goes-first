@@ -3,10 +3,10 @@
   "slug": "mansions-of-madness-second-edition-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "188798160e8843ca86cf9aff16b4bb83793789e4ad974cfe733deff70a7524cf",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "159beef20cf4138cf49433e7fcb934a3e2633383fd2314110d276d5196223c97",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Mansions of Madness: Second Edition",
   "aliases": [
     "Mansions of Madness",
@@ -14,6 +14,23 @@
     "MoM2"
   ],
   "editionLabel": "Fantasy Flight Games English Rules Reference, 2016",
+  "image": {
+    "file": "/images/games/mansions-of-madness-second-edition-ffg-en-cover.jpg",
+    "alt": "Mansions of Madness: Second Edition game cover, Fantasy Flight Games edition",
+    "width": 300,
+    "height": 300,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/mad20_main.webp",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games / Asmodee",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.fantasyflightgames.com/product/mansions-of-madness-second-edition/. The publisher page identifies SKU MAD20 for Mansions of Madness Second Edition, matching the 2016 rules reference. Reduced to 300 × 300 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "There is no set first player. In each investigator phase, the investigators each take one turn in the order of their choice.",
   "officialTieBreak": null,
   "houseFallback": null,

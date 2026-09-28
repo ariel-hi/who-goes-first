@@ -3,13 +3,30 @@
   "slug": "meeple-circus-matagot-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "c527c1c5fcaa055222a4ee8417ea8762793e406bc5d82268a7ab1bccc74ed46b",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "10235a0af1cea50fb53b00eec1768431c23a01bd997f80829af4652e73ace553",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Meeple Circus",
   "aliases": [],
   "editionLabel": "Matagot English rules",
+  "image": {
+    "file": "/images/games/meeple-circus-matagot-en-cover.jpg",
+    "alt": "Meeple Circus game cover, Matagot edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.matagot.com/189-large_default/meeple-circus.jpg",
+      "publisher": "Matagot"
+    },
+    "fairUse": {
+      "rightsHolder": "Matagot",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.matagot.com/en/family-games/81-meeple-circus.html. The Matagot product page identifies Meeple Circus as a multilingual EN/FR/RU base game, matching the English rules record. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently saw a circus act starts the first act.",
   "officialTieBreak": null,
   "houseFallback": null,

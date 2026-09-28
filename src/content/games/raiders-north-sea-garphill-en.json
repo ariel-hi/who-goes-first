@@ -3,13 +3,30 @@
   "slug": "raiders-north-sea-garphill-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "7c383fb9c1449b57f407d5162271334abbd67325248210b9777200952805d3c3",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "73764238894fb8ccebea127c41e47268a9b02144e888902de8e2a5d7f578bbe0",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Raiders of the North Sea",
   "aliases": [],
   "editionLabel": "Garphill English edition",
+  "image": {
+    "file": "/images/games/raiders-north-sea-garphill-en-cover.jpg",
+    "alt": "Raiders of the North Sea game cover, Garphill Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.garphill.com/cdn/shop/files/RaidersOfTheNorthSea-Boxshot.png?v=1781668155",
+      "publisher": "Garphill Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Garphill Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.garphill.com/products/raiders-of-the-north-sea. The publisher product page identifies Raiders of the North Sea base game; its box art matches this English rule edition. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Each player rolls both dice. The player with the highest roll starts.",
   "officialTieBreak": null,
   "houseFallback": "If the highest roll is tied, the tied players roll both dice again until one wins.",

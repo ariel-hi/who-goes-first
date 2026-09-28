@@ -3,13 +3,30 @@
   "slug": "paladins-west-kingdom-garphill-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "a1447175417dd67ad4c3ad04947ca2b362550f3eca43b30104d5f7a0ac861574",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "c26015240dfbba10cd5d1d073b1afe0d7d7d027bcaf5d73c9ab0879f1c6fd10d",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Paladins of the West Kingdom",
   "aliases": [],
   "editionLabel": "Garphill English base game",
+  "image": {
+    "file": "/images/games/paladins-west-kingdom-garphill-en-cover.jpg",
+    "alt": "Paladins of the West Kingdom game cover, Garphill Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.garphill.com/cdn/shop/files/PaladinsOfTheWestKingdom-Boxshot.png?v=1780459034",
+      "publisher": "Garphill Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Garphill Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.garphill.com/products/paladins-of-the-west-kingdom. The publisher product page identifies Paladins of the West Kingdom base game; its box art matches this English rule edition. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly choose the starting player and give them the Start Player Marker. They reveal their Paladin and choose a Tavern card first, then take the first action; play proceeds clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,

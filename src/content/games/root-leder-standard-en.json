@@ -3,13 +3,30 @@
   "slug": "root-leder-standard-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "86c92a6f2b3c7a9b697a7becc004ae9b06455b1c3df22fff020c02d311f3ce90",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "1db6437c3f1142ce75cbf5fb960003918a2cc8f3ed913d479da934e69d8aae21",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Root",
   "aliases": [],
   "editionLabel": "Leder Games Law of Root, September 2024, standard setup",
+  "image": {
+    "file": "/images/games/root-leder-standard-en-cover.jpg",
+    "alt": "Root game cover, Leder Games edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ledergames.com/cdn/shop/products/1-RootGameBox-Edit-Web.png?v=1595294735",
+      "publisher": "Leder Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Leder Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://ledergames.com/products/root-a-game-of-woodland-might-and-right. The product page identifies this as the Root base game, matching the standard Law of Root record. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "During standard setup, assign factions and determine the starting player and seating order randomly.",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -5,25 +5,54 @@
   "aliases": [],
   "language": "en",
   "editionLabel": "Ravensburger US English rules, 2022",
+  "image": {
+    "file": "/images/games/minecraft-heroes-of-the-village-ravensburger-en-2022-cover.jpg",
+    "alt": "Minecraft: Heroes of the Village game cover, Ravensburger edition",
+    "width": 344,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ravensburger.cloud/images/produktseiten/600x600/20914.webp",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger Verlag GmbH / Mojang AB",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.ravensburger.us/en-US/products/games/games-for-kids/minecraft-heroes-of-the-village-20914. The official product article 20914 and Minecraft Heroes of the Village box match the English rule record. Reduced to 344 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently tamed an animal in Minecraft starts.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["If nobody qualifies, the youngest player begins. The starting player receives the white Illagers die during setup."],
+  "clarifications": [
+    "If nobody qualifies, the youngest player begins. The starting player receives the white Illagers die during setup."
+  ],
   "interpretation": null,
-  "sources": [{
-    "url": "https://product-files.ravensburger.cloud/manuals/663230.pdf",
-    "title": "Minecraft: Heroes of the Village — English rules",
-    "publisher": "Ravensburger",
-    "printedPages": ["3", "4"],
-    "pdfPagesOneBased": [3, 4],
-    "location": "Game Setup step 8 and How to Play opening paragraph",
-    "checkedAt": "2026-09-25"
-  }],
+  "sources": [
+    {
+      "url": "https://product-files.ravensburger.cloud/manuals/663230.pdf",
+      "title": "Minecraft: Heroes of the Village — English rules",
+      "publisher": "Ravensburger",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Game Setup step 8 and How to Play opening paragraph",
+      "checkedAt": "2026-09-25"
+    }
+  ],
   "internalEvidence": "Ravensburger's US product page https://www.ravensburger.us/en-US/pdp/20914 links this 44-page multilingual manual. The English cover identifies article 20914. PDF page 3 assigns the Illagers die to the starter and PDF page 4 states the animal-taming criterion and youngest-player fallback. Page 4 was rendered and read visually. ©2022 is on the product page. Downloaded PDF SHA-256: d08ba47e07e9d2af2d2d8a3cdf2ede180fc8adb45b9a39bf3b276686adaafa40. Owner-authorized Codex editorial review, 2026-09-25.",
-  "uncertainty": ["The rules do not state a tie-break when two players last tamed an animal at the same time."],
+  "uncertainty": [
+    "The rules do not state a tie-break when two players last tamed an animal at the same time."
+  ],
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "1255d2ca72932a9337e5703454a02f655dbd949c5032018f5cb3a4c3ef58791c",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "cc21d4d7e5ba8e5168b88e69f0d34b510775fca63270945c6e6de212d88b36d3",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  "materiallyUpdatedAt": "2026-09-28"
 }
