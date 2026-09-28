@@ -3,10 +3,10 @@
   "slug": "imperial-settlers-portal-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "d4d77e17af95908ace033607aaa05d0773b4942008d36237a38cc047a7e5428f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "075425e6a02b2f0433401940efcc7dc58f637de2290d3f14b914f5cd1767586a",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Imperial Settlers",
   "aliases": [],
   "editionLabel": "Portal Games English base game",
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Official Portal shop links publisher Azure-hosted English base manual. Its HTML download href had a stray quote and target attribute; removed those markup characters to retrieve the linked PDF. Rendered5–7 establish random initial starter, forward/reverse drafting and clockwise action order and marker rotation. Source custody: research/source-files/popular-sep26-05/settlers.pdf; SHA-256 98c7e716c460934f725a9fbbf55445e39807b4c9241dccfface50f98cf283574. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/imperial-settlers-portal-en-cover.jpg",
+    "alt": "Imperial Settlers official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.portalgames.pl/Imperial-Settlers",
+      "publisher": "Portal Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Portal Games and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher store page identifies English base game, product code IMPSETENKOMPLET, and supplies 2018 English box photograph https://shop.portalgames.pl/environment/cache/images/productGfx_3614_500_500/3006-is-en-box2018-sklep.jpg?overlay=1. Title, Portal mark, and base-game description match the cited rules; precise printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
