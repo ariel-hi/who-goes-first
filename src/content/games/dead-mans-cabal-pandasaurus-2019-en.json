@@ -3,10 +3,10 @@
   "slug": "dead-mans-cabal-pandasaurus-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6c84d502cfd26bd6d39f231d66b2c5e44598a7d7145fc3194050b9721f4678e0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "378392aa8ffdaca54e68852b24302e2f5d4d9939528906e018f2511d3c3be745",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dead Man's Cabal",
   "aliases": [],
   "editionLabel": "Pandasaurus Games English edition, 2019",
@@ -38,5 +38,22 @@
   "internalEvidence": "The ©2019 Pandasaurus Games English rulebook names the last necromancer, gives a fallback, and describes the Active Player taking the first Private Action and passing the bag left. Its title and credits match inventory BGG 264321. SHA-256: accb21e54065cc885a697d96cb2e9bcb60095acd45b329ac716e64eb771794e7. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The fallback calls for a more mundane selection method but does not specify one."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dead-mans-cabal-pandasaurus-2019-en-cover.jpg",
+    "alt": "Dead Man's Cabal rulebook title page with crowned skull",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Dead%20Man's%20Cabal.pdf",
+      "publisher": "Pandasaurus Games English rulebook archived by University of Waterloo"
+    },
+    "fairUse": {
+      "rightsHolder": "Pandasaurus Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Dead%20Man's%20Cabal.pdf. This is the illustrated first page of the Pandasaurus English rulebook, not box packaging. Original image URL: https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Dead%20Man's%20Cabal.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

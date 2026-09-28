@@ -3,10 +3,10 @@
   "slug": "dragon-castle-horrible-games-cmon-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "0808475f3d734d233f1d6ef6ea1d1affaef0acb26f285d4670e5642486164227",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "02e890162d969e2e8f782f84580d2d263375f0022c6305e97d177af9884071a7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dragon Castle",
   "aliases": [],
   "editionLabel": "Horrible Games / CMON English rulebook",
@@ -40,5 +40,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dragon-castle-horrible-games-cmon-en-cover.jpg",
+    "alt": "Dragon Castle rulebook title page with golden dragon and castle",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cmon-files.s3.amazonaws.com/pdf/assets_item/resource/112/DRC001_Rulebook_website.pdf",
+      "publisher": "CMON official English Dragon Castle rulebook"
+    },
+    "fairUse": {
+      "rightsHolder": "Horrible Games, CMON and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://cmon-files.s3.amazonaws.com/pdf/assets_item/resource/112/DRC001_Rulebook_website.pdf. This is page 1 of the original CMON and Horrible Games English rulebook, not box packaging. Original image URL: https://cmon-files.s3.amazonaws.com/pdf/assets_item/resource/112/DRC001_Rulebook_website.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

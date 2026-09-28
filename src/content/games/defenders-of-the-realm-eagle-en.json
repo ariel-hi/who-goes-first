@@ -3,10 +3,10 @@
   "slug": "defenders-of-the-realm-eagle-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "044e77a943f3e808023deb9d7af9f618660069fa5aa4f5884b07ffb2b2d9b6ff",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "af325bd8f44ca040df70fbe240e1303306c29629c54e85eda5b2817c83e2f13b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Defenders of the Realm",
   "aliases": [],
   "editionLabel": "Eagle Games English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered page 5 of the original English rules preserved by Goblins.net. Playing the Game assigns the most aggressive player first, offers a dice roll when the group cannot decide, and specifies clockwise order. SHA-256: 70fffcb5f752b057190680bee030e68e11e1309bd9b6be4d3f9e6cfbd45baa72. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, official alternative and turn order.",
   "uncertainty": [
     "The rulebook does not specify which die or how to resolve a tied dice roll."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/defenders-of-the-realm-eagle-en-cover.jpg",
+    "alt": "Eagle Defenders of the Realm box with heroes fighting a blue dragon",
+    "width": 500,
+    "height": 439,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.eagle-gryphon.com/cdn/shop/files/101253-2_1200x1200.png?v=1746776753",
+      "publisher": "Eagle-Gryphon Games official product page"
+    },
+    "fairUse": {
+      "rightsHolder": "Eagle-Gryphon Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.eagle-gryphon.com/products/defenders-of-the-realm. The official publisher page shows original box artwork and SKU 101253, corresponding to the 2010 boxed game. Original image URL: https://www.eagle-gryphon.com/cdn/shop/files/101253-2_1200x1200.png?v=1746776753",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

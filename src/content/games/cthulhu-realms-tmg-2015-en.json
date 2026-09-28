@@ -3,10 +3,10 @@
   "slug": "cthulhu-realms-tmg-2015-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "31dfe5f23f204ce87c0169c42d7cf0ddb26f9427fe088a0140b390c57477928f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f95c67c38515dd4db2ec72a005b9667153c86d46f5fa0de3a6e8fb0c2aa67595",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cthulhu Realms",
   "aliases": [],
   "editionLabel": "Tasty Minstrel Games English rules, 2015",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 1 states the printed criterion, clockwise order and opening hand difference. Page 2 credits White Wizard Games LLC ©2015 under license to Tasty Minstrel Games LLC. Player mats, Sanity markers and Initiate cards match inventory BGG 179303. SHA-256: 329afc23f4b46ec34e9e4877340cf7d0d5cab12693fa7efd714eb7bbc56eff03. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The manual does not define the criterion or provide a tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/cthulhu-realms-tmg-2015-en-cover.jpg",
+    "alt": "Original TMG Cthulhu Realms box with green monster over city",
+    "width": 316,
+    "height": 444,
+    "presentation": "cover",
+    "source": {
+      "url": "https://mothmeeple.wordpress.com/wp-content/uploads/2017/11/20171124_182240-1.jpg?w=663",
+      "publisher": "Moth Meeple 2017 unboxing of Tasty Minstrel Games 2015 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Tasty Minstrel Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://mothmeeple.wordpress.com/2017/11/28/unboxing-cthulhu-realms/. The dated 2017 unboxing identifies Tasty Minstrel Games 2015. The photographed box bears the TMG logo. Original image URL: https://mothmeeple.wordpress.com/wp-content/uploads/2017/11/20171124_182240-1.jpg?w=663",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
