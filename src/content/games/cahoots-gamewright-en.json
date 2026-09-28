@@ -3,13 +3,30 @@
   "slug": "cahoots-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "aee4516385a8da611e39d7d0867d1786133485c4a24d0cd545cf73f6c63aa977",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "90abb2c0a68fde44160919f5490c09a237416e0537ee57f09de8e91c7370cfe3",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cahoots",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/cahoots-gamewright-en-cover.jpg",
+    "alt": "Official product image showing the Cahoots game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/cahootsproductshot2.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and any separately credited artwork creators",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Gamewright product source: https://gamewright.com/product/Cahoots. Edition match: Same named Gamewright English product as the cited Gamewright rule sheet. Original image URL: https://gamewright.com/images/twenty/cahootsproductshot2.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Start with whoever most recently ate an orange-colored food.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",

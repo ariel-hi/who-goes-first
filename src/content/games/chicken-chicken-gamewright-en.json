@@ -3,13 +3,30 @@
   "slug": "chicken-chicken-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "806ae46b5a347c18bf70f32cae1c5bb25d848c0080b514c5de85ff513ef3bdd1",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "d5756a2f391bc11902aa65a23fb244c8ef1624641627f87f3b3d26df6f7e6a1b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Chicken Chicken",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/chicken-chicken-gamewright-en-cover.jpg",
+    "alt": "Official product image showing the Chicken Chicken game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/chickenchicken-productshot.png",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and any separately credited artwork creators",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Gamewright product source: https://gamewright.com/product/chicken-chicken. Edition match: Same named Gamewright English product as the cited Gamewright rule sheet. Original image URL: https://gamewright.com/images/twenty/chickenchicken-productshot.png",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently fed any kind of bird becomes the first Head Farmer and reveals the cards.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",

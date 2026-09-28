@@ -3,8 +3,8 @@
   "slug": "7-wonders-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "7a0b5cbbf937f1443fe5c4af8c95a7e8bce583f07429361a4c66430c1316b4af",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "0f4b0188ac5ac2681d1e39b03e954bd41102b02309694537ad592a25b4a2fa5f",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "7 Wonders",
@@ -13,6 +13,23 @@
     "7 Wonders base game"
   ],
   "editionLabel": "Repos Production English base game · 2020 edition",
+  "image": {
+    "file": "/images/games/7-wonders-2020-en-cover.jpg",
+    "alt": "Official product image showing the 7 Wonders game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0694/1402/7563/files/SV01-image1_2000.jpg?v=1690406357",
+      "publisher": "Repos Production"
+    },
+    "fairUse": {
+      "rightsHolder": "Repos Production and the credited cover illustrator, Miguel Coimbra",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Repos Production product source: https://store.asmodee.com/products/7-wonders-new-edition. Edition match: English new edition (2020), Asmodee SKU SV01EN. Original image URL: https://cdn.shopify.com/s/files/1/0694/1402/7563/files/SV01-image1_2000.jpg?v=1690406357",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Everyone chooses a card at the same time, then reveals and plays it together. There is no single starting player in normal play.",
   "officialTieBreak": "Not applicable: players choose and play simultaneously.",
   "houseFallback": null,

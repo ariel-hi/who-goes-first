@@ -3,13 +3,30 @@
   "slug": "cube-quest-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "68d6d67279f8379f59f316473d1e8ba8bcabfdf31681173c176dd30b3f72e52d",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "c6e4d01db7d86bcee58ba725f0de46060960617884925a2dbf1ec17760b36324",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cube Quest",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/cube-quest-gamewright-en-cover.jpg",
+    "alt": "Official product image showing the Cube Quest game box",
+    "width": 440,
+    "height": 281,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/GAMEWRIGHT-414.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and any separately credited artwork creators",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Gamewright product source: https://gamewright.com/product/Cube-Quest. Edition match: Same named Gamewright English product as the cited Gamewright rule sheet. Original image URL: https://gamewright.com/images/twenty/GAMEWRIGHT-414.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player whose head is more square-shaped starts the first bout.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
