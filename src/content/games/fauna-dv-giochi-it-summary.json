@@ -3,10 +3,10 @@
   "slug": "fauna-dv-giochi-it-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f08298641b2292efe69ad82c14fa088886ff3a50498313cbca442def726c89b3",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "26d604700077bb4c2b9e70b2c9abe19ae77ef739e363b4357c8ada361a2ef87c",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fauna",
   "aliases": [],
   "editionLabel": "dV Giochi Italian rules, English summary",
@@ -39,5 +39,22 @@
     "The source does not define how to compare how exotic the animals are, or give a special rule for a group without animals at home.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fauna-dv-giochi-it-summary-cover.jpg",
+    "alt": "Fauna dV Giochi rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dvgiochi.com/net/fauna/fauna_regole.pdf",
+      "publisher": "dV Giochi"
+    },
+    "fairUse": {
+      "rightsHolder": "dV Giochi and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited dV Giochi rulebook https://www.dvgiochi.com/net/fauna/fauna_regole.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

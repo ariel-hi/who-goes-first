@@ -3,10 +3,10 @@
   "slug": "flamecraft-cardboard-alchemy-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "7432c69a52b5b96d38a6ea7d2bd2bd1bbf0f033b2756241f79db82d9d2848b60",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "edd8f6fca5427810ea97e7189b333f29ebdb65bc849123b84be147ea38bfcea0",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Flamecraft",
   "aliases": [],
   "editionLabel": "Cardboard Alchemy English base game",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Official CardboardAlchemy currentEnglishmanual. Rendered5randomReputationmarker and6clockwise. No assumed themedcriterion; originalgamecomponents determine randomchoice. Source custody: research/source-files/popular-sep26-11/flame.pdf; SHA-256 d66cb8acd689e43959e8a78eecb1125fd378a77c6fd93ba2693c1a08a2f659b8. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/flamecraft-cardboard-alchemy-en-cover.jpg",
+    "alt": "Flamecraft Cardboard Alchemy rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cardboardalchemy.com/wp-content/uploads/FC_EN_Rulebook_sm.pdf",
+      "publisher": "Cardboard Alchemy"
+    },
+    "fairUse": {
+      "rightsHolder": "Cardboard Alchemy and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Cardboard Alchemy rulebook https://cardboardalchemy.com/wp-content/uploads/FC_EN_Rulebook_sm.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

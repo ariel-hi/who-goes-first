@@ -3,10 +3,10 @@
   "slug": "fliptoons-thunderworks-en-2025",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "1b5fadceb28a5b568848fb11d3421cb7c9ad680824c9ffb6162d52641f533f6b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "396e594f4619fd92c4a6e767211ce7adc3d7e75dd69da7ef2c6e1a7c791635b2",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "FlipToons",
   "aliases": [
     "Flip Toons"
@@ -50,5 +50,22 @@
   "uncertainty": [
     "The source gives no tie-break for assigning the initial first player card.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fliptoons-thunderworks-en-2025-cover.jpg",
+    "alt": "FlipToons Thunderworks Games rulebook cover",
+    "width": 330,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/FT_Rulebook_10_reduced.pdf?v=1747929807",
+      "publisher": "Thunderworks Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Thunderworks Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Thunderworks Games rulebook https://cdn.shopify.com/s/files/1/0525/7753/4134/files/FT_Rulebook_10_reduced.pdf?v=1747929807. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

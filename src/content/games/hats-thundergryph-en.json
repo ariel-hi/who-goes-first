@@ -3,10 +3,10 @@
   "slug": "hats-thundergryph-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "655de2f7a4664c6f1635559c5c2a09400e7697a7c172aa3ce7c20f61b777bcc1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "354cab625f6e51b40633ce73b8d4b6e07fa402dbde72078cd4c416b5b89b8390",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hats",
   "aliases": [],
   "editionLabel": "ThunderGryph multilingual rulebook, English section",
@@ -31,5 +31,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF page 4 of the publisher-hosted multilingual rulebook. English setup step 5 names the most recent cookie eater as starter. Matches inventory BGG 281658. SHA-256: 70eb40c33a367b7e9b4445819bf4499a2b40a9b8b11454a78a41f0f21d0d01e9. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, and starting rule against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/hats-thundergryph-en-cover.jpg",
+    "alt": "Hats ThunderGryph Games rulebook cover",
+    "width": 347,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thundergryph.com/wp-content/uploads/2023/01/hats-rulebook-multi-language.pdf",
+      "publisher": "ThunderGryph Games"
+    },
+    "fairUse": {
+      "rightsHolder": "ThunderGryph Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited ThunderGryph Games rulebook https://thundergryph.com/wp-content/uploads/2023/01/hats-rulebook-multi-language.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

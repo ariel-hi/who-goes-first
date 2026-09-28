@@ -3,10 +3,10 @@
   "slug": "garden-rush-space-cowboys-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ba5915fe0441669b6f8cd31c6061db76611cd065595a935757a5eb8676f1a0b3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "9bcbe23b23f776c495581fb251e046fff2c5c79e61d09cfe698023301b590d1e",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Garden Rush",
   "aliases": [],
   "editionLabel": "Space Cowboys English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Publisher-hosted Asmodee/Space Cowboys PDF page 3 was rendered and read. Step 4 identifies the tomato eater and persistent marker. Matches inventory BGG 327082. SHA-256: d39a2ceea08392f05247c6c86caebbee2800e8f05f5dffaa4e0184e698e1b27b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie procedure is given for people who ate a tomato at the same time."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/garden-rush-space-cowboys-en-cover.jpg",
+    "alt": "Garden Rush Space Cowboys rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/SCGR01EN_GARDENRUSH_RULES_20240903_compressed-1.pdf",
+      "publisher": "Space Cowboys"
+    },
+    "fairUse": {
+      "rightsHolder": "Space Cowboys and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Space Cowboys rulebook https://cdn.svc.asmodee.net/production-spacecowboys/uploads/2025/11/SCGR01EN_GARDENRUSH_RULES_20240903_compressed-1.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "final-titan-gaga-2026-ru-main",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "447b9cd350edd3d1de9ba22116b9db21567f75e29f8a47343c3ebe841a88a86c",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3f680efaa1058edccc3967283e7720a0ab8a588a580a0058f39e4a3f1b591f4b",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Final Titan",
   "aliases": [
     "Последний Титан"
@@ -87,5 +87,22 @@
     "Optional betting is placed between Phase 1 and Phase 2 and reveals bets simultaneously; it does not establish the initial main starter. Pantheon and Mindbug expansions are not proposed for approval.",
     "PDF metadata epoch CreationDate/ModDate are file facts only; printed Russian copyright 2026 is the edition label evidence. The product is still an expected November 2026 listing at retrieval.",
     "PDF credits list Кристиан Кудаль and Ричард Гарфилд as authors. No saved Q459719 label was independently resolved, and no identity creator claim was repaired. Saved age 8 versus product 10 and saved 30/45 minutes versus product 0.5-1 hour remain unchanged."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/final-titan-gaga-2026-ru-main-cover.jpg",
+    "alt": "Final Titan GaGa Games / ООО «ГаГа Трейд» rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gaga.ru/gaga/files/pdf/rules/ru/8181.pdf",
+      "publisher": "GaGa Games / ООО «ГаГа Трейд»"
+    },
+    "fairUse": {
+      "rightsHolder": "GaGa Games / ООО «ГаГа Трейд» and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited GaGa Games / ООО «ГаГа Трейд» rulebook https://gaga.ru/gaga/files/pdf/rules/ru/8181.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

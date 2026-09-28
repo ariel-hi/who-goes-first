@@ -3,10 +3,10 @@
   "slug": "flock-together-sea-cow-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "7e1367afd34c1501efb486ea14c5dcdf0d05e87f18dca2069649c419ba61d8be",
+  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "99297c27853bf54b895e8ee1b92e6c196d357490e6201c9ff4df2ffed6a9d562",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Flock Together",
   "aliases": [],
   "editionLabel": "Sea Cow Games English rulebook",
@@ -37,5 +37,22 @@
   "internalEvidence": "Sea Cow Games links this PDF from its How To Play page. PDF pages 9–10 were rendered and read; the rule assigns last place to the most recent chicken eater and the first turn to their left-hand neighbor, continuing clockwise each day. Matches inventory BGG 383360. SHA-256: 81c8f052e466b8e8172bd12b107ec4780a0a3b0db5c02687175c475ea3241deb. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules do not state a tie procedure if multiple players most recently ate chicken together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/flock-together-sea-cow-en-cover.jpg",
+    "alt": "Flock Together Sea Cow Games rulebook cover",
+    "width": 387,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.seacowboardgames.com/s/Flock-Together-Rulebook.pdf",
+      "publisher": "Sea Cow Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Sea Cow Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Sea Cow Games rulebook https://www.seacowboardgames.com/s/Flock-Together-Rulebook.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "forbidden-city-jumbo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "1c593e4c5b785f5a7c3ee3623f82f768d54d6daf1e062ec7ad83797e0c388d67",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "6da5d4fb48894e850eb9908505b3d4e83f808c73ad8635d332c72d84572e10f2",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Forbidden City",
   "aliases": [],
   "editionLabel": "Jumbo English rules in the 2018 multilingual booklet",
@@ -36,5 +36,22 @@
   "internalEvidence": "Jumbo-hosted 24-page multilingual PDF was inspected. The English Starting the Game page is PDF page 20, printed page 18; it was rendered and read. The title, product code 19700 and Knizia identity match inventory BGG 246316, distinct from Gùgōng. SHA-256: 4494868d9a3834205fcb703c0c85eb3feac2762a818f1b2b9aab459faf5f45dd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules give no tie procedure for equally close travel."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/forbidden-city-jumbo-en-cover.jpg",
+    "alt": "Forbidden City Jumbo rulebook cover",
+    "width": 373,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://assets.jumboplay.com/19700_Manual.pdf",
+      "publisher": "Jumbo"
+    },
+    "fairUse": {
+      "rightsHolder": "Jumbo and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Jumbo rulebook https://assets.jumboplay.com/19700_Manual.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

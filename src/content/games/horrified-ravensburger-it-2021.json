@@ -3,10 +3,10 @@
   "slug": "horrified-ravensburger-it-2021",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "19363a1c5e496cad747c2cf785ccd472b2e871804c3aef6b5de93226931e31c3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "75065cff02560a149d06cfd4068d47333909e8d8a5fabcf8372b04b9c936c80e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Horrified",
   "aliases": [
     "Horrified Universal Monsters",
@@ -44,5 +44,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/horrified-ravensburger-it-2021-cover.jpg",
+    "alt": "Horrified Ravensburger rulebook cover",
+    "width": 374,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://product-files.ravensburger.cloud/manuals/663852.pdf",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Ravensburger rulebook https://product-files.ravensburger.cloud/manuals/663852.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

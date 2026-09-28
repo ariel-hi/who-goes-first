@@ -3,10 +3,10 @@
   "slug": "fearsome-floors-2f-de-2017",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "616e73b83b99a33fa2330fb6a797138bcdb49e4763b718867c66c952a9b54818",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "006ffe4115a5dfe4159f90cfdbfc9bec1bca40457f7b956a3b8b9ef8775ef175",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fearsome Floors",
   "aliases": [
     "Finstere Flure"
@@ -43,5 +43,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fearsome-floors-2f-de-2017-cover.jpg",
+    "alt": "Fearsome Floors 2F-Spiele rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://2f-spiele.de/pdf/finstereflure-anleitung_de_2017.pdf",
+      "publisher": "2F-Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "2F-Spiele and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited 2F-Spiele rulebook https://2f-spiele.de/pdf/finstereflure-anleitung_de_2017.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

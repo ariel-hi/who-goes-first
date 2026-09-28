@@ -3,10 +3,10 @@
   "slug": "goblin-vaults-thunderworks-en-2022",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e2274283e2e092d0ce60488c73255c434e8024c452b960bccf30d0c2dd1c97e3",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "6866965cc302327fd35e817ee384958b83c367e325bd61c6d7df2c68cf4eedc3",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Goblin Vaults",
   "aliases": [],
   "editionLabel": "Thunderworks English rules, ©2022",
@@ -48,5 +48,22 @@
   "uncertainty": [
     "The subjective resemblance criterion has no stated judging method or initial-start tie-break.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/goblin-vaults-thunderworks-en-2022-cover.jpg",
+    "alt": "Goblin Vaults Thunderworks Games rulebook cover",
+    "width": 346,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0525/7753/4134/files/GV-Rulebook-Web.pdf?v=1700499168",
+      "publisher": "Thunderworks Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Thunderworks Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Thunderworks Games rulebook https://cdn.shopify.com/s/files/1/0525/7753/4134/files/GV-Rulebook-Web.pdf?v=1700499168. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

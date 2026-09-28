@@ -3,10 +3,10 @@
   "slug": "gutenberg-portal-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "3c0c7791506520344569202bd33914ede62bc19c0aacc6bc359097d7d1565533",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "bb243fa93676c784bfa4370ab51372f5727d552658aad928e733e5b8ad399da4",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gutenberg",
   "aliases": [],
   "editionLabel": "Granna English rules distributed by Portal Games, copyright 2022",
@@ -45,5 +45,22 @@
     "The book criterion does not specify how to compare thickness or resolve equally thick books.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gutenberg-portal-en-cover.jpg",
+    "alt": "Gutenberg Portal Games rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://portalgames-media-files.s3.eu-central-1.amazonaws.com/wp-content/uploads/2022/06/GUTENBER_RULEBOOK.pdf",
+      "publisher": "Portal Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Portal Games and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Portal Games rulebook https://portalgames-media-files.s3.eu-central-1.amazonaws.com/wp-content/uploads/2022/06/GUTENBER_RULEBOOK.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

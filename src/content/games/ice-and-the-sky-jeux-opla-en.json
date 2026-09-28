@@ -3,10 +3,10 @@
   "slug": "ice-and-the-sky-jeux-opla-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "21869280d13ddc6ddd777b905850b8c1a46649cc4a4d5bb3638e835c62cea98b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b9ebd2556a188519602f610c15599dc244be0df204856355df24f4dea65edd1a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ice and the Sky",
   "aliases": [],
   "editionLabel": "Jeux Opla English rulebook",
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF/printed pages 6–8 of the publisher-hosted, image-only English rulebook. Page 6 names the last person to put hands in snow and gives them the First Player card; page 7 says turns go clockwise; page 8 passes the card left between generations. Cover identifies Jeux Opla. Matches inventory BGG 180938. SHA-256: c884db49314cd54b078c494d268b48897a5e1c6b161fd78c8d8af3e403e570eb. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, initial starter, and later role rotation against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/ice-and-the-sky-jeux-opla-en-cover.jpg",
+    "alt": "Ice and the Sky Jeux Opla rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.jeux-opla.fr/wp-content/uploads/Ice-and-the-Sky-english-livret.pdf",
+      "publisher": "Jeux Opla"
+    },
+    "fairUse": {
+      "rightsHolder": "Jeux Opla and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Jeux Opla rulebook https://www.jeux-opla.fr/wp-content/uploads/Ice-and-the-Sky-english-livret.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

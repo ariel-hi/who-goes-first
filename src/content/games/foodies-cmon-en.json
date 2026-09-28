@@ -3,10 +3,10 @@
   "slug": "foodies-cmon-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "00e82d16caae9215bd5afc6474eea564b9b520ca7e3ac2026d4aa44711177d34",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b5993213f3dbb61541ec140bdec0824f74e8ee0dfec2546b7848e3f325606ebc",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Foodies",
   "aliases": [],
   "editionLabel": "CMON English rulebook",
@@ -36,5 +36,22 @@
   "internalEvidence": "Publisher product page links this image-based PDF. Rendered page 3 was read visually; setup step 4 states the international-restaurant criterion and persistent token. Matches inventory BGG 280896. SHA-256: 3a38b3e232ecfbc19f3720d9bddb9b09b2ae9664c7821aa0287c26660f7936e7. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules do not specify a tie procedure for players who ate together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/foodies-cmon-en-cover.jpg",
+    "alt": "Foodies CMON rulebook cover",
+    "width": 430,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/Foodies-Rulebook-.pdf",
+      "publisher": "CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "CMON and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited CMON rulebook https://www.cmon.com/wp-content/uploads/2023/06/Foodies-Rulebook-.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "first-orchard-haba-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "cd2f857f847b3f6dec987c10696db942c1bb0a96757ba2d84241d6828aa70955",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "11942f039518a21d085d6e889e7b601dd18eac5e55bd54ebdaee9a664184a8c4",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "First Orchard",
   "aliases": [
     "My Very First Games: First Orchard"
@@ -37,5 +37,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.habausa.com/collections/games/products/my-very-first-games-first-orchard. Finding: Whoever ate an apple most recently takes the first turn. Local source SHA-256: 8bb37c3ce442daa33d2419e783a7b4e7f0a58ab9957362bfe303e88de5552b17. Editorial review 2026-09-23: Rechecked the cited English HABA instruction, edition identity, and any official fallback on rendered publisher pages. Super Battle retains the rulebook's optional “can start” wording. Owner authorized assistant review on 2026-09-22.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/first-orchard-haba-en-cover.jpg",
+    "alt": "First Orchard HABA rulebook cover",
+    "width": 352,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0559/3445/1810/files/First-Orchard-PDF.pdf?v=1738080924",
+      "publisher": "HABA"
+    },
+    "fairUse": {
+      "rightsHolder": "HABA and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited HABA rulebook https://cdn.shopify.com/s/files/1/0559/3445/1810/files/First-Orchard-PDF.pdf?v=1738080924. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "ghost-stories-repos-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "c595045c06c6fb8ce5bed1fe4a65413a767693a60929f7f49563190b0aa48cea",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "fe042e3af3338e223ae20af91a4ff1a8d0c65ddd084d3bde690e333c7af8d0e9",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ghost Stories",
   "aliases": [],
   "editionLabel": "Repos Production English rules, copyright 2008–2009",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ghost-stories-repos-en-cover.jpg",
+    "alt": "Ghost Stories Repos Production rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/Ghost-Stories/gs-rules-us-16118426030fANr.pdf",
+      "publisher": "Repos Production"
+    },
+    "fairUse": {
+      "rightsHolder": "Repos Production and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited Repos Production rulebook https://cdn.svc.asmodee.net/production-rprod/storage/games/Ghost-Stories/gs-rules-us-16118426030fANr.pdf. The visible title and design identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
