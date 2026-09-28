@@ -29,11 +29,13 @@ Downloaded 2026-09-27 from the download linked by
 Keep this file unchanged. Recheck the official guidelines before changing its
 placement or replacing the asset.
 
-## Optional licensed box art (prepared, disabled)
+## Reviewed local photographs
 
-No rule currently contains `image`; no third-party box art is installed. Omit the
-field to keep the original SVG. When present, the image replaces the SVG in the
-hero and thumbnails, with the image credit, publisher source, and licence linked
+Three traditional games now have rights-reviewed photographs of generic equipment;
+see [the file-by-file review](open-game-art.md). These are not photographs of the
+exact cited rulebook edition or publisher packaging. Omit the `image` field for
+any other rule to keep the original SVG. When present, the image replaces the SVG in the
+hero and thumbnails, with the image credit, source host, and licence linked
 in the rule's Source & edition card. Hero images have descriptive alt text;
 thumbnails are decorative beside the linked game name. Images are contained
 without stretching, with explicit dimensions to reserve space.
@@ -44,19 +46,22 @@ Each rule's optional `image` object requires:
 | --- | --- |
 | `file` | A local `/images/games/<name>.png`, `.jpg`, `.jpeg`, `.webp`, or `.avif` file in `public` |
 | `alt`, `width`, `height` | Description and actual source pixel dimensions |
-| `source.url`, `source.publisher` | HTTPS publisher/rights-holder source page and name |
+| `source.url`, `source.publisher` | HTTPS rights-holder file page or source host and its display name; for these photographs the host is Wikimedia Commons, not the rulebook publisher |
 | `licence.name`, `licence.url` | Licence name and the exact terms or permission reference |
 | `licence.rightsHolder`, `licence.attribution` | Rights holder and required public credit |
 | `licence.reviewedAt` | Date the actual permission was reviewed, `YYYY-MM-DD` |
 | `licence.localEditorialUse` | Must be `true`; a reviewer must establish that local hosting and editorial display are permitted |
 
 Before adding an image, confirm that the grant covers this commercial,
-affiliate-supported site, the precise edition, local hosting, and the proposed
+affiliate-supported site, local hosting, and the proposed
 hero/thumbnail placement. Keep a copy of the terms or written permission in the
 editorial evidence. A public press kit by itself is not permission. Honour its
 attribution and modification conditions; prepare a small asset only if the terms
 permit it. Do not copy artwork from BoardGameGeek, its image CDN, or search
-results. If permission is unclear, keep the original SVG.
+results. Where artwork depicts an edition or box, confirm rights in the depicted
+design and match the edition; generic traditional-game equipment may instead be
+labelled as illustration, without claiming an exact-edition match. If permission
+is unclear, keep the original SVG.
 
 `content:validate` uses Sharp (already supplied by Astro) to decode every image;
 it rejects malformed pixels, unsupported or mismatched file types, animated images,
@@ -66,7 +71,7 @@ audit counts inline SVG within compressed HTML and local images once per page,
 using the existing conservative 350 KiB allowance (including all non-optional
 JavaScript and CSS). Adding or changing image metadata or its licence changes the rule's
 editorial revision and requires a fresh approval through the existing review
-process. No existing approval hashes have been changed for this preparation.
+process. The three enabled records carry new image-review evidence and approvals.
 
 ### Future Amazon integration
 

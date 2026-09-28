@@ -3,10 +3,10 @@
   "slug": "go-bga-tournament-rules-2009-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8800e38ff754171d50216d0e123f222e84e166e7c9dec4606d0e5566138a2966",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex image-rights review, owner-authorized 2026-09-27",
+  "approvedRevision": "776b481dd7cb32904afffe333be116f0875cc13c1a7b64947fb2db0dd383543e",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-27",
   "gameName": "Go",
   "aliases": [],
   "editionLabel": "BGA Tournament rules of play · 31 March 2009 (English)",
@@ -36,9 +36,27 @@
       "checkedAt": "2026-09-26"
     }
   ],
-  "internalEvidence": "Read the complete relevant setup, play and handicap passages, not an isolated opening sentence. The eight-page publisher-hosted PDF was extracted; PDF/printed pages 1 and 2 were rendered with Poppler and visually inspected. The cover says 31/03/2009. Page 2 scopes this document to BGA tournament play, giving it priority over its referenced AGA rules if meanings conflict. Section 2 explicitly separates an empty-board even start from the post-handicap White turn; Section 4 specifies default placement. Cached at research/source-files/traditional-games/go-bga-2009.pdf, SHA-256 f514d26efe7ba0edf4ce4e7e4f6aef1473be5b2e12bd65791a549edd204aab76. Identity Q11413 / BGG 188. This is a draft, with no approval or portable-pool eligibility. Editorial review 2026-09-26: Codex reopened the BGA PDF, checked its eight-page extent and saved hash, and visually inspected complete cover and page 2. Sections 1–4 distinguish even and handicap starts and do not assign colors. Public wording preserves the handicap placement default and dated BGA scope. Fixed-role tie-break applicability is false. Cited page order begins with the opening passage on page 2, followed by cover provenance on page 1. Directory-only: starting color depends on game context. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is now approved for the catalog; initial draft-only notes above describe intake status. No deployment or random-mix approval.",
+  "internalEvidence": "Read the complete relevant setup, play and handicap passages, not an isolated opening sentence. The eight-page publisher-hosted PDF was extracted; PDF/printed pages 1 and 2 were rendered with Poppler and visually inspected. The cover says 31/03/2009. Page 2 scopes this document to BGA tournament play, giving it priority over its referenced AGA rules if meanings conflict. Section 2 explicitly separates an empty-board even start from the post-handicap White turn; Section 4 specifies default placement. Cached at research/source-files/traditional-games/go-bga-2009.pdf, SHA-256 f514d26efe7ba0edf4ce4e7e4f6aef1473be5b2e12bd65791a549edd204aab76. Identity Q11413 / BGG 188. This is a draft, with no approval or portable-pool eligibility. Editorial review 2026-09-26: Codex reopened the BGA PDF, checked its eight-page extent and saved hash, and visually inspected complete cover and page 2. Sections 1–4 distinguish even and handicap starts and do not assign colors. Public wording preserves the handicap placement default and dated BGA scope. Fixed-role tie-break applicability is false. Cited page order begins with the opening passage on page 2, followed by cover provenance on page 1. Directory-only: starting color depends on game context. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is now approved for the catalog; initial draft-only notes above describe intake status. No deployment or random-mix approval.\n\nImage rights review 2026-09-27: https://commons.wikimedia.org/wiki/File:Gfp-go-board.jpg states Public-domain dedication; photographer/rightsholder Yinan Chen. The asset is a reduced JPEG of traditional game equipment, not copied box art. Source and licence links are public on the rule page. See docs/open-game-art.md.",
   "uncertainty": [
     "The inspected dated document is the BGA 31 March 2009 ruleset, not a claim about the latest rules or every national Go ruleset.",
     "The cited opening sections do not supply a color-selection method, so no coin toss, nigiri procedure or weaker-player assignment is invented."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/go-commons.jpg",
+    "alt": "A wooden Go board",
+    "width": 400,
+    "height": 252,
+    "source": {
+      "url": "https://commons.wikimedia.org/wiki/File:Gfp-go-board.jpg",
+      "publisher": "Wikimedia Commons"
+    },
+    "licence": {
+      "name": "Public-domain dedication",
+      "url": "https://www.goodfreephotos.com/pages/creative-commons-license-terms/",
+      "rightsHolder": "Yinan Chen",
+      "attribution": "Yinan Chen / Wikimedia Commons (public domain; resized)",
+      "reviewedAt": "2026-09-27",
+      "localEditorialUse": true
+    }
+  }
 }
