@@ -39,6 +39,9 @@ Top source / medium pairs:
 
 Dimension rows sum to 2,019, which is 271 above the undimensioned 1,748 sessions. Do not add row counts or interpret them as unique-session shares. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
+## Affiliate link opens (GA4)
+_No completed GA4 measurement day since affiliate tracking began._
+
 ## Ad network requirements and observations
 Official policies checked 2026-09-28; confirm current requirements before an application. Totals alone do not establish eligibility or approval.
 
