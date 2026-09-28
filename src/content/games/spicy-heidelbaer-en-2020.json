@@ -3,10 +3,10 @@
   "slug": "spicy-heidelbaer-en-2020",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0680a756a1f39234ef39ca5656bea5f89f03df58392b95b42b42ec2d1b14a3d6",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "b4881322debf82c5de77788fe184ba3238d552341efabd22ca4972be3f50bc8d",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Spicy",
   "aliases": [
     "SPICY"
@@ -53,5 +53,22 @@
     "No tie-break for players tied as youngest is stated in the inspected setup instruction.",
     "The legacy product-page download is broken. The reachable manual is hosted on another HeidelBÄR publisher subdomain, but no current-printing or latest-revision equivalence has been established.",
     "Other language editions and Sweet & Spicy are outside this record's scope."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/spicy-heidelbaer-en-2020-cover.jpg",
+    "alt": "Spicy game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn3.zohoecommerce.com/product-images/HBG_Spicy_ENG_Cover.webp/342974000010355867/800x800?storefront_domain=shop.heidelbaer.de&format=webp",
+      "publisher": "HeidelBÄR Games"
+    },
+    "fairUse": {
+      "rightsHolder": "HeidelBÄR Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher or distributor page: https://shop.heidelbaer.de/products/spicy-english/342974000000073535. Exact publisher-hosted package image: https://cdn3.zohoecommerce.com/product-images/HBG_Spicy_ENG_Cover.webp/342974000010355867/800x800?storefront_domain=shop.heidelbaer.de&format=webp. The package and game identity were visually reviewed against the article edition (HeidelBÄR base game · ©2020 (English)).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "switch-and-signal",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ed5729f952f3725b596505f942215bf50e820432e63e50d19d0adc4928db9137",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "946e07550fe21ab7acc56954aa430efff718556f7c980541054e592d2e09c02e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Switch & Signal",
   "aliases": [
     "Switch and Signal"
@@ -37,5 +37,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.thamesandkosmos.co.uk/product/switch-and-signal/. Finding: The person who most recently had to wait for a train is the first active player. Local source SHA-256: 2d1f80a0244dc4155a3472f664e6d951f313b34815257dff1fd7123a09010d45. Used the publisher's UK file. The separate US download was not used as evidence because it exceeded the retrieval size limit. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/switch-and-signal-cover.jpg",
+    "alt": "Switch & Signal game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.thamesandkosmos.co.uk/wp-content/uploads/2022/03/694265_SwitchSignal_boxfront-1024x1024.jpg",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher or distributor page: https://www.thamesandkosmos.co.uk/image_sets/switch-and-signal/. Exact publisher-hosted package image: https://www.thamesandkosmos.co.uk/wp-content/uploads/2022/03/694265_SwitchSignal_boxfront-1024x1024.jpg. The package and game identity were visually reviewed against the article edition (English UK publisher rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
