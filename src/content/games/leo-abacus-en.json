@@ -3,10 +3,10 @@
   "slug": "leo-abacus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6c2de6090352080cbc34b6bea75ef7fc682c06bebfd458e618ed3d75914ad8d0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8cb69d36660ddbb5b4980ae02d505fc3adfc5cac2238f66378fe8687fddfde36",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Leo",
   "aliases": [
     "Leo Goes to the Barber",
@@ -44,5 +44,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/leo-abacus-en-cover.jpg",
+    "alt": "Leo muss zum Friseur official ABACUSSPIELE game box",
+    "width": 361,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://abacusspiele.de/produkt/leo-muss-zum-friseur/",
+      "publisher": "ABACUSSPIELE"
+    },
+    "fairUse": {
+      "rightsHolder": "ABACUSSPIELE and cover artist Michael Menzel (precise ownership split not stated)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "ABACUSSPIELE product page for item 04161 provides this game-box image https://abacusspiele.de/wp-content/uploads/2020/04/Leo_3DBox_ohneKSdJ_RGB-600x600.png and links both DE and GB rulebooks for the same bilingual-rules product. The German box title is Leo muss zum Friseur, listed as an alias on this English answer; the English rulebook is the cited source. Cropped surrounding white space.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
