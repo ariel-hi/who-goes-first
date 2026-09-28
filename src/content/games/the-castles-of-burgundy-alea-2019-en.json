@@ -3,10 +3,10 @@
   "slug": "the-castles-of-burgundy-alea-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "24bd2bd2a77deecc8c5781a4802291398d15525447bbb4b18f2ba85b52f7ae07",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "1f77f91661e03d807a564efae48c384a9694546a0558393cc66971c0693c6c38",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Castles of Burgundy",
   "aliases": [],
   "editionLabel": "alea English rulebook (2019 edition)",
@@ -34,5 +34,22 @@
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 3, 5, including the cited setup and turn-sequence text. A publisher-authored copy is hosted by the rulebook archive. Local source PDF SHA-256: 6fb4eb68f7fc788d9c68f325e310648def996faf16016aa81140c6f3dc798b1c. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
   "uncertainty": [
     "The setup text does not prescribe a dice-roll tie-break."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-castles-of-burgundy-alea-2019-en-cover.jpg",
+    "alt": "The Castles of Burgundy alea reissued game box cover",
+    "width": 384,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ravensburger.cloud/images/product-cover/600x600/Strategy-Game-The-Castles-of-Burgundy-Game-for-kids-12-years-up-26925.webp",
+      "publisher": "Ravensburger / alea"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger / alea",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Ravensburger / alea product page: https://www.ravensburger.us/en-US/products/games/family-games/the-castles-of-burgundy-26925. Exact publisher-hosted package image: https://ravensburger.cloud/images/product-cover/600x600/Strategy-Game-The-Castles-of-Burgundy-Game-for-kids-12-years-up-26925.webp. The package and game identity were visually reviewed against the article edition (alea English rulebook (2019 edition)).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
