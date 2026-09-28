@@ -3,10 +3,10 @@
   "slug": "gnomopolis-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e93373ba2bf72317cda09deabef744434593f9299a0c3a058a02f1a9e86fcc06",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "5cc437ad032f9858ef55e1388e0a5b0e1c648de453f58aaefd2101e26dfa87bd",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gnomopolis",
   "aliases": [],
   "editionLabel": "English Gnomopolis rulebook",
@@ -36,5 +36,22 @@
   "internalEvidence": "The English publisher-authored booklet preserved by a game-rule archive was rendered and read at page 1; the opening assignment and official random alternative are printed after setup. Page 2 confirms clockwise order. The designer names and components match inventory BGG 202819. SHA-256: ba9012f8dd24fec48079858b71e5b544977b77b883f9ddec58544bceec26c02d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
   "uncertainty": [
     "The booklet does not separately say how equally short players should decide if they decline the random alternative."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gnomopolis-en-cover.jpg",
+    "alt": "Conclave Editora Gnomopolis box with gnomes, mechanical helper and town",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://commerceplus.com.br/uploads/produto_fotos/20190405184012_gnomopolis01.jpg",
+      "publisher": "Paladins Games listing for Conclave Editora edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Conclave Editora and credited artists",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://paladinsgames.com.br/produto/286694/gnomopolis. The seller listing identifies Conclave Editora; the photographed box bears its logo and the English game title and subtitle. This is the original Conclave game covered by the English Conclave rules. Original image URL: https://commerceplus.com.br/uploads/produto_fotos/20190405184012_gnomopolis01.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

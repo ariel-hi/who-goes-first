@@ -3,10 +3,10 @@
   "slug": "incubation-synapses-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6025d81d4175006fd547365c1a7d21f92b2909c330006958a748b0d2eb977bf4",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "a8f1f6e02388d6fe3abd160b466c07220698f3e6c4f8cb9e6b308f663bd1d68d",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Incubation",
   "aliases": [],
   "editionLabel": "Synapses Games English rules, 2019",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered PDF/printed page 3 states the egg criterion, First Player token and reverse-order egg selection; page 4 states clockwise rounds. Printed page 8 credits Synapses Games ©2019; incubator boards, Dragon Egg cards, market spinner and objective cards match inventory BGG 254427. SHA-256: 832a40e1800270cb1df9c24116c492ef1a224838e8e2cf18ddf77bcc2cb81d48. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who last ate an egg together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/incubation-synapses-2019-en-cover.jpg",
+    "alt": "Synapses Games Incubation box showing a red dragon hatching in a cave",
+    "width": 369,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.myshoptet.com/usr/www.tlamagames.com/user/shop/big/29014_synapses-games-incubation.png?ff=1&x=1024&y=768&q=85&ts=6041f9fb&sg=161563f2",
+      "publisher": "TLAMA Games listing for 2019 Synapses Games bilingual edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Synapses Games and Katy Grierson",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.tlamagames.com/en/board-games/incubation/. The seller lists Synapses Games, 2019, and an English/French rulebook. The box photo bears the Synapses logo and matches the cited 2019 rules. Original image URL: https://cdn.myshoptet.com/usr/www.tlamagames.com/user/shop/big/29014_synapses-games-incubation.png?ff=1&x=1024&y=768&q=85&ts=6041f9fb&sg=161563f2",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

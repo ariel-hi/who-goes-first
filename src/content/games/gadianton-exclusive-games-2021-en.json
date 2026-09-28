@@ -3,10 +3,10 @@
   "slug": "gadianton-exclusive-games-2021-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "942b745a97ad7d277057329266c3b17e6546f69c3d64bd122965ad746fc4d751",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d35ca8450dab38585c0d2c7898b8878d9a66d3f34d04afcf088c98cee886ebd5",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gadianton",
   "aliases": [],
   "editionLabel": "Exclusive Games English rules, 2021",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 1 states the crown-or-hat criterion and initial Thief placement in clockwise order. The English/French booklet shows the Thief and Guard figures, crowns and doors listed for inventory BGG 340346; its publisher is Exclusive Games. SHA-256: ac1bc6342340f1e607550152cf0895eb6c91160cc1dd067bfc07584e5dfed710. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for equally recent crown or hat wearing."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gadianton-exclusive-games-2021-en-cover.jpg",
+    "alt": "Gadianton game box with jungle temple and thieves",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://embedded.parkage.com/files/img/products/jeux_de_societe/ghi/g/gadianton.jpg",
+      "publisher": "Parkage product listing for Exclusive Games 2021 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Exclusive Games and Frédéric Poëncin",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.parkage.com/fr/0947629-gadianton-francais. Parkage identifies Exclusive Games as the publisher and Frédéric Poëncin as illustrator. The photographed box shows the Gadianton title and matches the 2021 multilingual edition cited here. Original image URL: https://embedded.parkage.com/files/img/products/jeux_de_societe/ghi/g/gadianton.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

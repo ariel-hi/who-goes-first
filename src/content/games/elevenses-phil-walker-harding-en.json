@@ -3,10 +3,10 @@
   "slug": "elevenses-phil-walker-harding-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6bfc5a83f92f04ff0410c1fa53ddcc32567bff2850bde6a247e46bf2f82810ec",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7c758073ed986b685515399caf40a835ece280199a2560ef3359b5d13c43f073",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Elevenses",
   "aliases": [],
   "editionLabel": "2013 Phil Walker-Harding English rulebook",
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Visually checked the 2013 Phil Walker-Harding English booklet preserved by Tesera. Page 1 gives the initial tea criterion, page 2 the clockwise order, and page 3 the later-round fewest-cubes rule and its clockwise tie-break. The later-round tie-break is not an initial-start tie-break. SHA-256: 8c69cfe6331aeea2adcee8b85659dd3c789f81acb8e476569be9ecbaa1243b11. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, optional wording, and later-round context where applicable.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/elevenses-phil-walker-harding-en-cover.jpg",
+    "alt": "Original Adventureland Games Elevenses card-game box, showing a woman serving morning tea",
+    "width": 303,
+    "height": 331,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.wopc.co.uk/images/contributors/adamwintle/3733-elevenses-by-adventureland-games/da01d35d7ad160b486c950f8d1e11479_large.jpg",
+      "publisher": "The World of Playing Cards, 2013 feature of Adventureland Games original edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Adventureland Games and T. J. Lubrano",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.wopc.co.uk/australia/elevenses-by-adventureland-games. Cropped the original 2013 Adventureland Games promotional image to its game box at left. The 2013 feature identifies the Adventureland Games Kickstarter and credits T. J. Lubrano; this is not the later Grail Games edition. Original image URL: https://www.wopc.co.uk/images/contributors/adamwintle/3733-elevenses-by-adventureland-games/da01d35d7ad160b486c950f8d1e11479_large.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

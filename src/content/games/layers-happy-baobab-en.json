@@ -3,10 +3,10 @@
   "slug": "layers-happy-baobab-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "b2dbf9590bf5138b0af3dfb91419174d7cdc1beb1957b6e63f091d864a0fb743",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f13df45088ca452c9ad70eaa4bde158402b66023b47223af9d3e0d0be52f4160",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Layers",
   "aliases": [],
   "editionLabel": "Happy Baobab English rules",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 2 lists all setup steps without selecting a first player. Page 4 assigns round-tile reveal and mission-deck selection to a first player without explaining the choice. All eight PDF pages were checked; page 7 credits Happy Baobab. Layers, mission cards and round tiles match inventory BGG 242616. SHA-256: b0a7dea4b20f923add306c179a7340da2d76603a8ef0ad7e4f92cc7313fa6860. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No official initial first-player method is printed in this booklet."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/layers-happy-baobab-en-cover.jpg",
+    "alt": "Cover page of the original Happy Baobab Layers English rulebook",
+    "width": 498,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://happybaobabfiles.s3.ap-northeast-2.amazonaws.com/Rules_ENG/Layers_rules_EN_web.pdf",
+      "publisher": "Happy Baobab English rulebook"
+    },
+    "fairUse": {
+      "rightsHolder": "Happy Baobab and credited artists",
+      "rationale": "Reduced publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://happybaobabfiles.s3.ap-northeast-2.amazonaws.com/Rules_ENG/Layers_rules_EN_web.pdf. Page 1 of the publisher-hosted original Layers English rules, showing the title and colored pattern pieces. This is a rulebook title page, not game box art; it matches the cited rules and is distinct from Layers Plus. Original image URL: https://happybaobabfiles.s3.ap-northeast-2.amazonaws.com/Rules_ENG/Layers_rules_EN_web.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
