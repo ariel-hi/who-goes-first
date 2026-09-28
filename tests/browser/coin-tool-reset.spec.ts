@@ -18,20 +18,23 @@ for (const motion of ['no-preference', 'reduce'] as const) test('coin reset canc
     if (motion === 'reduce') expect(animations).toEqual([]);
     else {
       expect(animations).toHaveLength(1);
-      expect(animations[0]!.name).toMatch(/^tool-coin-(heads|tails)$/);
-      expect(animations[0]!.duration).toBe(1100);
+      expect(animations[0]!.name).toBe('tool-coin-flip');
+      expect(animations[0]!.duration).toBe(1800);
     }
   };
   await firstFlip.click();
   await expect(status).toHaveText(/^(Heads|Tails)$/);
+  const firstSide = await status.innerText();
   await expect(tool.locator('.tool-tally')).toContainText(/This session: (1 heads, 0 tails|0 heads, 1 tails)\./);
   await expect(coin).not.toHaveClass(/tool-coin-spinning/);
+  expect(await coin.evaluate(element => Math.sign(new DOMMatrixReadOnly(getComputedStyle(element).transform).m22))).toBe(firstSide === 'Heads' ? 1 : -1);
 
   // Pause after a completed flip. Its removed animation must restart on the next draw.
   await page.clock.pauseAt(await page.evaluate(() => Date.now() + 1000));
   if (await decline.isVisible()) await decline.click();
   await tool.getByRole('button', { name: 'Flip again', exact: true }).click();
   await expect(status).toHaveText(motion === 'reduce' ? /^(Heads|Tails)$/ : 'Flipping…');
+  if (motion !== 'reduce') expect(await coin.evaluate(element => element.style.getPropertyValue('--coin-start'))).toBe(firstSide === 'Heads' ? '0deg' : '180deg');
   await checkAnimation();
   await tool.getByRole('button', { name: 'Reset', exact: true }).click();
   await expect(status).toHaveText('Ready');
@@ -47,8 +50,10 @@ for (const motion of ['no-preference', 'reduce'] as const) test('coin reset canc
   await firstFlip.click();
   await expect(status).toHaveText(motion === 'reduce' ? /^(Heads|Tails)$/ : 'Flipping…');
   await checkAnimation();
-  await page.clock.runFor(1100);
+  await page.clock.runFor(1800);
   await expect(status).toHaveText(/^(Heads|Tails)$/);
   await expect(coin).not.toHaveClass(/tool-coin-spinning/);
+  const finalSide = await status.innerText();
+  expect(await coin.evaluate(element => Math.sign(new DOMMatrixReadOnly(getComputedStyle(element).transform).m22))).toBe(finalSide === 'Heads' ? 1 : -1);
   await expect(tool.locator('.tool-tally')).toContainText(/This session: (1 heads, 0 tails|0 heads, 1 tails)\./);
 });
