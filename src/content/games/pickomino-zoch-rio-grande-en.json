@@ -3,10 +3,10 @@
   "slug": "pickomino-zoch-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6e97aa70c401a569835c00a773f3519599b29747673bc4485dcaf6b80f408083",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "70d76511da69125659b700775fb08aa706aa967c0ac77235428ebe910d525d4e",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Pickomino",
   "aliases": [],
   "editionLabel": "Zoch Verlag / Rio Grande Games English rules",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Rendered PDF/printed page 2 gives the youngest-player criterion and clockwise direction. Page 8 bears Rio Grande Games and Zoch Verlag credits; eight dice and worm helpings match inventory BGG 15818. SHA-256: f3ca70de7159e01ec408ad62afa1b2aab2a2630a67455b2b48bfa22568c15e75. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/pickomino-zoch-rio-grande-en-cover.jpg",
+    "alt": "Original Pickomino box front with three cartoon chickens, dice and worm tiles",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/r/jpg1500/rio271.jpg",
+      "publisher": "Noble Knight Games, product image of Rio Grande RGG271"
+    },
+    "fairUse": {
+      "rightsHolder": "Zoch Verlag / Rio Grande Games; original package illustrator",
+      "rationale": "Small clean box-front image identifies the exact 2005 English Pickomino edition discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "Noble Knight listing https://www.nobleknight.com/P/2147350031/Pickomino identifies this cover with Rio Grande Games 2005 manufacturer part RGG271. Reiner Knizia independently lists Pickomino (Heckmeck am Bratwurmeck English) as Rio Grande 2005 in his game list https://www.knizia.de/wp-content/uploads/reiner/pdfs/List-Games.pdf. The Zoch/Rio Grande publisher-imprinted English rules dated 2005 at https://cdn.1j1ju.com/medias/85/5e/7c-pickomino-rulebook.pdf confirm this same publication pairing. The box front bears the original Zoch logo, consistent with co-publication; the retailer source does not imply permission. White margin trimmed and reduced to 360 pixels.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

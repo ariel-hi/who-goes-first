@@ -3,10 +3,10 @@
   "slug": "ra-rio-grande-2008-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "3dd271ec9b2dd5d71d216f14ce8b43a226a164c8f359ed265dfe260ac849f69e",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "7eb07e83dcf657f2ec7668d1bcb9ddb2e032848f0e6b125d853324d4399db397",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ra",
   "aliases": [],
   "editionLabel": "Rio Grande Games English rules, 2008",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "The file is the Rio Grande Games rules hosted by a retailer, not on the publisher's own site.",
     "The newer 25th Century Games edition rulebook was not available from the publisher and was not checked."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ra-rio-grande-2008-en-cover.jpg",
+    "alt": "Rio Grande Ra late-2000s box front with two Egyptian figures, palm tree and blue Ra title",
+    "width": 360,
+    "height": 259,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/r/jpg1500/rio119b.jpg",
+      "publisher": "Noble Knight Games, product image of Rio Grande RGG119-09"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games / Reiner Knizia; original illustrator Franz Vohwinkel",
+      "rationale": "Small clean box-front image identifies the Rio Grande Ra printing tied to the English rules in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "Noble Knight lists the photographed Ra box as Rio Grande RGG119-09 at https://www.nobleknight.com/P/2147414146/Ra-2009-Edition, with the same 180 tiles, 16 suns, 48 VP tokens, Ra figure and cloth bag listed in the publisher-authored English rules at https://world-of-board-games.com.sg/docs/Ra.pdf. A parallel Rio Grande/Abacus publisher-authored German rules printing at https://www.ggnf.de/spielanleitungen/ra/ra.pdf carries ©2008 Rio Grande Games. The retailer calls this stocked printing 2009 while the rules copyright and catalog version date are 2008; the cover is identified as the late-2000s Rio Grande edition, not the separate 1999 box. The retailer image does not imply publisher permission. White margin trimmed and reduced to 360 pixels wide.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

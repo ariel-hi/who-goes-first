@@ -3,10 +3,10 @@
   "slug": "ninja-dice-greenbrier-v1-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "f377c968eb0d1d51664ba09cd77ff7896c056aca0e2079345b950786408c2949",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "05c69b5382d462001de1513965f43b53f2bef19df0a2a7ec764811fd15f2dc2b",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ninja Dice",
   "aliases": [],
   "editionLabel": "Greenbrier Games English rules",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 1 states the recent-ninja-movie criterion and initial Skill/House Dice distribution. Page 2 credits Greenbrier Games LLP and labels the rules version 1.0; dice and treasure tokens match inventory BGG 136587. SHA-256: b31f4c265924433a7ba0f8c41e46f79d3dcacd3a334d1647808ee56c749e7a6a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No tie procedure is stated for players who last watched the same ninja movie."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ninja-dice-greenbrier-v1-en-cover.jpg",
+    "alt": "Original Greenbrier Ninja Dice black zippered ninja-head pouch with white mask",
+    "width": 260,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/g/jpg1500/gng0022a.jpg",
+      "publisher": "Noble Knight Games, product image of Greenbrier Games GBR0022"
+    },
+    "fairUse": {
+      "rightsHolder": "Greenbrier Games; original package artwork",
+      "rationale": "Small crop of the original game container identifies the exact Greenbrier product discussed in this starting-rule article. It is used for editorial reference with no more package imagery than needed for identification.",
+      "provenance": "Noble Knight listing https://www.nobleknight.com/P/2147578823/Ninja-Dice identifies the Greenbrier base game as manufacturer part GBR0022 and shows this original black ninja-head pouch with its rules and dice. Greenbrier's creator-led original Kickstarter https://www.kickstarter.com/projects/greenbriergames/ninja-dice/ and its English v1 rules identify the original game. A 2014 convention report https://www.ucon-gaming.org/2014/07/greenbrier-games-ninja-dice/ documents the same ninja-head holder supplied by Greenbrier at its booth. The image is cropped from a retailer product photo, not publisher-hosted, and no permission is implied. The retailer dates its stocked base game 2015 while the first campaign and package debuted in 2013-14; no claim is made that the photographed insert is the v1 rules sheet.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "penguin-party-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "64dd08aa81f856b162eb056e047a6411ec05bf09043abe6f69bb37e7d9b3d53c",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "bf6628328d7c86b725154f5d6ac2a83295e6c6eb0c2b46f7a3b6f80c6129a552",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Penguin Party",
   "aliases": [],
   "editionLabel": "AMIGO English rules",
@@ -37,5 +37,22 @@
   "internalEvidence": "BGG file page https://boardgamegeek.com/filepage/170492/official-rules-for-pinguin-party-in-english-german describes official English and German Pinguin Party rules shared with AMIGO's permission. The English rule sheet was retrieved from Gamers HQ, rendered, and visually checked. BGG identity 56933. Mirror PDF SHA-256: a28550394e2fcf62dc1c8aab7db215badaec44c324b8e83f12ad1b63541f994e. Owner-authorized Codex editorial review, 2026-09-25.",
   "uncertainty": [
     "The rules provide no tie-break or fallback for the real-penguin criterion, and no fixed order for later-round starting players."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/penguin-party-amigo-en-cover.jpg",
+    "alt": "AMIGO 2008 Pinguin-Party box with penguins forming a pyramid in an icy scene",
+    "width": 312,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://i.otto.de/i/otto/e386379f-65ec-5d8c-a663-0653414a1691/amigo-spiel-amigo-spiele-8910-pingu-party.jpg?%24formatz%24=",
+      "publisher": "Otto / Game World, photo of AMIGO item 8910"
+    },
+    "fairUse": {
+      "rightsHolder": "AMIGO Spiel + Freizeit GmbH; original illustrator Markus Wagner",
+      "rationale": "Small clean product box photograph identifies the exact AMIGO multilingual edition discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "Retail listing https://www.otto.de/p/amigo-spiel-amigo-spiele-8910-pingu-party-S0FB00NW/ identifies AMIGO item 8910, Reiner Knizia and the pictured original Pinguin-Party box. Reiner Knizia independently lists Pingu-Party (German, English, French, Italian) as AMIGO 2008 at https://www.knizia.de/pdfs/List-Games-Website-2501.pdf. The AMIGO English rules sheet used by this record matches the same 36-card/36-chip game. The retailer photo does not imply publisher permission. Reduced to 360 pixels high.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
