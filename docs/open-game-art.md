@@ -17,7 +17,7 @@ Wikidata's `P18` statements are discovery leads, not licences. Most modern
 board-game photos cannot be used merely because their photographer chose a
 free licence: the box or board may contain separate copyrighted artwork.
 BoardGameGeek's default API terms also exclude this ad-supported site.
-Original title artwork remains the fallback for every game lacking a separately
-reviewed image. For these historic-game photographs, the source link identifies
+Games without a separately reviewed image use a text-only layout. For these
+historic-game photographs, the source link identifies
 the photographer's file page or original host rather than the publisher of the
 rulebook.

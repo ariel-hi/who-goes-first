@@ -50,14 +50,6 @@
   .directory-shelf, .directory-results { margin-top:10px; }
   .directory-entry { display:flex; align-items:center; gap:12px; min-width:0; text-align:left; }
   .directory-entry>span:last-child { min-width:0; overflow-wrap:anywhere; }
-  .directory-art { position:relative; isolation:isolate; display:grid; place-items:center; flex:none; width:42px; height:42px; overflow:hidden; border-radius:10px; color:#fff; font:600 20px Georgia,serif; box-shadow:2px 2px 0 color-mix(in srgb,var(--ink) 12%,transparent); }
-  .directory-art::before { content:""; position:absolute; z-index:-1; width:49px; height:49px; border:1px solid #ffffff55; border-radius:13px; transform:rotate(25deg); }
-  .directory-art::after { content:""; position:absolute; z-index:-1; top:-12px; right:-12px; width:31px; height:31px; border:1px solid #ffffff66; border-radius:50%; }
-  .directory-art-0 { background:#246b5b; }
-  .directory-art-1 { background:#725339; }
-  .directory-art-2 { background:#455f79; }
-  .directory-art-3 { background:#755467; }
-  .directory-art-4 { background:#58613d; }
   .directory-more { display:block; min-height:44px; margin:16px auto 24px; padding:8px 18px; border:1px solid var(--line); border-radius:10px; background:var(--paper); color:var(--green); font:inherit; font-size:14px; font-weight:600; cursor:pointer; }
   .directory-more:hover { background:var(--soft); }
   .directory-more:focus-visible { outline:3px solid var(--green); outline-offset:3px; }

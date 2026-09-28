@@ -1,11 +1,11 @@
 # Rule-page imagery
 
-## Original game cards
+## Artwork policy
 
-`GameArt.astro` draws original geometric cards, seeded by the game name, with a
-simple motif drawn from the starting rule. These are decorative site artwork,
-not reproductions of packaging or publisher logos. The inline SVGs add no
-requests, fonts, dependencies, or client JavaScript.
+Rule pages show a photograph only when its local file and rights record have
+passed editorial review. Other rules and directory entries use a text layout.
+Generated SVG cards and initial tiles were removed after visual review; they
+were not useful representations of the games.
 
 ## Official Amazon badge
 
@@ -31,14 +31,13 @@ placement or replacing the asset.
 
 ## Reviewed local photographs
 
-Three traditional games now have rights-reviewed photographs of generic equipment;
+Three traditional games have rights-reviewed photographs of generic equipment;
 see [the file-by-file review](open-game-art.md). These are not photographs of the
 exact cited rulebook edition or publisher packaging. Omit the `image` field for
-any other rule to keep the original SVG. When present, the image replaces the SVG in the
-hero and thumbnails, with the image credit, source host, and licence linked
-in the rule's Source & edition card. Hero images have descriptive alt text;
-thumbnails are decorative beside the linked game name. Images are contained
-without stretching, with explicit dimensions to reserve space.
+any other rule. When present, the photograph runs at the full hero content width
+below the rule answer, with its source host and licence linked in the Source &
+edition card. Images keep their natural aspect ratio without cropping or padding.
+Related rules and directory entries use readable text without placeholder art.
 
 Each rule's optional `image` object requires:
 
@@ -61,7 +60,7 @@ permit it. Do not copy artwork from BoardGameGeek, its image CDN, or search
 results. Where artwork depicts an edition or box, confirm rights in the depicted
 design and match the edition; generic traditional-game equipment may instead be
 labelled as illustration, without claiming an exact-edition match. If permission
-is unclear, keep the original SVG.
+is unclear, use the text-only layout.
 
 `content:validate` uses Sharp (already supplied by Astro) to decode every image;
 it rejects malformed pixels, unsupported or mismatched file types, animated images,
@@ -88,6 +87,6 @@ edition/ASIN matching, preserve the returned Amazon product link and its
 parameters, refresh references within the permitted period, and provide the
 required adjacent link/disclosures. Keep credentials on the server. Review the
 current licence, CSP, page budgets, and refresh/failure behavior before enabling;
-expired or unavailable API images should fall back to the original SVG. There are
+expired or unavailable API images should fall back to the text-only layout. There are
 no API credentials, downloads, API calls, remote image allowances, or scheduled
 jobs in this implementation.

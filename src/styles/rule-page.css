@@ -42,15 +42,12 @@
 .game-article .sharing-actions{margin:14px 0 4px}
 .game-article .fallback .primary{border-radius:999px;min-height:44px;max-width:260px;font-size:14px}
 .buy-game{margin-top:16px}
-.rule-hero-heading{display:grid;grid-template-columns:minmax(0,1fr) 120px;align-items:start;gap:20px}
-.game-art{display:block;width:120px;height:auto;border-radius:18px;box-shadow:3px 4px 0 color-mix(in srgb,var(--ink) 12%,transparent)}
-.game-art-thumb{width:48px;flex:none;border-radius:6px;box-shadow:none}
-.game-art-image{aspect-ratio:5/6;object-fit:contain;padding:8px;background:var(--paper);border:1px solid var(--line)}
-.game-art-image.game-art-thumb{padding:4px}
-.rule-links a,.game-article .similar-rules a{display:flex;flex-direction:row;align-items:center;gap:12px;text-decoration:none}
+.rule-hero-photo{margin:20px 0 0}
+.rule-hero-photo img{display:block;width:100%;height:auto;border-radius:16px}
+.rule-links a,.game-article .similar-rules a{display:flex;flex-direction:row;align-items:center;text-decoration:none}
 .rule-links a>span,.similar-rules a>span{min-width:0;overflow-wrap:anywhere}
 .rule-links small,.similar-rules small{display:block;margin-top:3px;font-weight:400}
 .game-article .similar-rules li{padding:0}
 .game-article .similar-rules a{padding:14px 16px;height:100%;border-radius:16px}
 .game-article .similar-rules li:hover{border-color:var(--green)}
-@media(max-width:520px){.rule-hero-heading{grid-template-columns:minmax(0,1fr) 76px;gap:12px}.rule-hero-heading>.game-art{width:76px}.rule-hero-heading h1{font-size:clamp(28px,8vw,36px)}.rule-hero-heading .rule-chip{font-size:9px;letter-spacing:1px}}
+@media(max-width:520px){.rule-hero-photo{margin-top:18px}.rule-hero-photo img{border-radius:12px}.rule-hero-heading h1{font-size:clamp(28px,8vw,36px)}.rule-hero-heading .rule-chip{font-size:9px;letter-spacing:1px}}
