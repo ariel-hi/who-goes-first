@@ -52,6 +52,36 @@ test('dice leave more room when the group reaches five players', async ({ page }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
+for (const [width, motion] of [[320, 'no-preference'], [390, 'reduce']] as const) test(`24-player dice keep every result readable at ${width}px with ${motion} motion`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 844 });
+  await page.emulateMedia({ reducedMotion: motion });
+  await page.addInitScript(() => Object.defineProperty(crypto, 'getRandomValues', { configurable: true, value: (array: Uint32Array) => { array[0] = 23; return array; } }));
+  await page.goto('/methods/dice/');
+  await expect(page.getByRole('button', { name: 'Pick a player' })).toBeEnabled();
+  const count = page.getByLabel('Player count', { exact: true });
+  await count.fill('24');
+  await count.blur();
+  await page.getByRole('button', { name: 'Pick a player' }).click();
+  const scene = page.locator('.dice-reveal');
+  await expect(scene.locator('.reveal-player')).toHaveCount(24);
+  await expect(scene.locator('.die-flat')).toHaveCount(48);
+  await expect(scene.locator('.die-cube')).toHaveCount(0);
+  await expect(scene.locator('.reveal-player bdi')).toHaveText(Array.from({ length: 24 }, (_, i) => `Seat ${i + 1}`));
+  expect(await scene.locator('.die-flat-face').evaluateAll(faces => faces.every(face => getComputedStyle(face, '::before').backgroundImage.includes('radial-gradient')))).toBe(true);
+  await expect(page.locator('.reveal-stage')).toHaveAttribute('aria-hidden', 'true');
+  if (motion === 'no-preference') {
+    await expect.poll(() => scene.locator('.die-flat').evaluateAll(dice => dice.every(die => die.getAnimations().every(animation => animation.playState === 'finished')))).toBe(true);
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'revealing');
+  }
+  await expect(scene).toHaveAttribute('data-settled', 'true');
+  await expect(page.locator('.winner-announcement')).toContainText('Seat 24 goes first');
+  await expect(scene.locator('.reveal-chosen')).toHaveCount(1);
+  await expect(scene.locator('.reveal-chosen .die-flat')).toHaveCount(2);
+  expect(await scene.locator('.reveal-chosen .die-flat').evaluateAll(dice => dice.every(die => die.getAttribute('data-value') === '6'))).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  if (motion === 'reduce') expect(await page.locator('.picker').evaluate(picker => picker.getAnimations({ subtree: true }).length)).toBe(0);
+});
+
 for (const method of methods) test(`${method.label} keeps the scene after completion and replay`, async ({ page }) => {
   test.setTimeout(60000);
   await openMethod(page, method.path);

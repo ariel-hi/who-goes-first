@@ -62,7 +62,7 @@ export default function TableReveals({ outcome, plan, mode, settled, preview = f
         return <i key={j} style={{ '--block': j, '--fall-x': `${fallX}px`, '--fall-y': `${fallY}px`, '--fall-angle': `${angle}deg`, '--fall-mid-x': `${fallX * .5}px`, '--fall-mid-y': `${Math.max(-7, fallY * .2 - 12)}px`, '--fall-mid-angle': `${angle * .4}deg`, '--fall-delay': `${tower.fallAt + stagger * tower.stagger}ms`, '--fall-duration': `${tower.fallDuration}ms` } as CSSProperties}><span /></i>;
       })}</div>}
       {mode === 'straws' && <div className="match-draw" aria-hidden="true"><div className="matchstick"><span className="match-wood" /><span className="match-head" /></div><div className="match-cover"><span className="match-cover-strike" /></div></div>}
-      {mode === 'dice' && <div className="dice-pair" aria-hidden="true">{[0, 1].map(die => <Die key={die} value={i === chosen ? 6 : 1 + (i * 3 + die * 2 + outcome.drawId) % (die ? 6 : 5)} />)}</div>}
+      {mode === 'dice' && <div className="dice-pair" aria-hidden="true">{[0, 1].map(die => <Die key={die} compact={outcome.players.length > 12} value={i === chosen ? 6 : 1 + (i * 3 + die * 2 + outcome.drawId) % (die ? 6 : 5)} />)}</div>}
       {mode === 'coin' && <div className="coin-toss" aria-hidden="true"><span className="coin-shadow"/><span className="coin-flight"><span className="coin"><span className="coin-body">{[-7, -3, 0, 3, 7].map(depth => <span className="coin-edge" key={depth} style={{ '--depth': `${depth}px` } as CSSProperties}/>)}<span className="coin-face coin-tails"><span className="coin-number">{i + 1}</span></span><span className="coin-face coin-heads"><CrownEmblem /></span></span></span></span></div>}
       {mode === 'shells' && <ShellArt winner={i === chosen} />}
       <bdi>{displayLabel(player, outcome.players)}</bdi>
@@ -98,7 +98,10 @@ function ShellArt({ winner }: { winner: boolean }) {
   </div>;
 }
 
-function Die({ value }: { value: number }) {
+function Die({ value, compact }: { value: number; compact: boolean }) {
+  if (compact) return <span className="die die-flat" data-value={value}>
+    <span className="die-face die-flat-face"/>
+  </span>;
   const pips: Record<number, number[]> = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
   const orientation: Record<number, readonly [number, number]> = { 1: [0, 0], 2: [-90, 0], 3: [0, -90], 4: [0, 90], 5: [90, 0], 6: [0, 180] };
   const faces = [['front', 1], ['back', 6], ['right', 3], ['left', 4], ['top', 2], ['bottom', 5]] as const;

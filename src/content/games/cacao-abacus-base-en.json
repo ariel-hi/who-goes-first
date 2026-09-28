@@ -1,0 +1,41 @@
+{
+  "id": "cacao-abacus-base-en",
+  "slug": "cacao-abacus-base-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
+  "approvedRevision": "0f4cc6968382dd1240dfa120d029270379998ea51159cd49f52513fe91e534c3",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Cacao",
+  "aliases": [],
+  "editionLabel": "ABACUSSPIELE English base game, item 04151",
+  "firstPlayerRule": "The oldest player starts. Play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "This comes from the base-game Course of the Game section, not either expansion."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://abacusspiele.de/wp-content/uploads/2021/01/Cacao_Regel_GB.pdf",
+      "title": "Cacao — English base-game instructions",
+      "publisher": "ABACUSSPIELE",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Course of the Game, opening paragraph",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Source packet prepared at Git commit c4049161450b928526436c067ffe6ef0f7b97413; active clean directory identity BGG 171499. Complete publisher English manual: 2670379 bytes, 4 PDF pages, SHA-256 9c15d9c87438a9699bd4cc290827a0fb9bc47952ba63b59dab481fe3ec55c782. Original publisher page: https://abacusspiele.de/produkt/cacao/. Visually inspected source pages 3; exact location: Course of the Game, opening paragraph. Sealed source packet: artifacts/pending-rules-followup-sep28l/REVIEW.md; SHA-256 of packet SHA256SUMS.txt e286192b7bc3146cf61620ed070cb21c82be3c1dffdf8b41d84de845338eb1c1. Editorial review on 2026-09-28 approved the cited starting rule for this exact edition only.",
+  "uncertainty": [
+    "The publisher does not specify a tie-break if players are equally old."
+  ],
+  "pickerSuggestionApplicable": false
+}

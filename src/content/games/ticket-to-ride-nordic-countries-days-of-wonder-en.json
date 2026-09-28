@@ -1,0 +1,41 @@
+{
+  "id": "ticket-to-ride-nordic-countries-days-of-wonder-en",
+  "slug": "ticket-to-ride-nordic-countries-days-of-wonder-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
+  "approvedRevision": "2194a92cadb71bff327e400e373b01dd69bacbcf696b6ca17ab38ef0b6ed01af",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Ticket to Ride: Nordic Countries",
+  "aliases": [],
+  "editionLabel": "Days of Wonder Nordic Countries standalone English game (2018 rulebook PDF)",
+  "firstPlayerRule": "The most experienced traveler goes first. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "This opening criterion is printed in the Nordic Countries standalone game's own rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/staging-daysofwonder/uploads/2024/07/7208-T2RNC-Rules-EN.pdf",
+      "title": "Ticket to Ride: Nordic Countries — English rules",
+      "publisher": "Days of Wonder",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "The Game Turn, first paragraph",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Source packet prepared at Git commit c4049161450b928526436c067ffe6ef0f7b97413; active clean directory identity BGG 31627. Complete publisher English manual: 2611960 bytes, 3 PDF pages, SHA-256 7f7b18297e7e29038cdafb153d194d29306dd58ad377a5ad8094857a6a4168e8. Original publisher page: https://www.daysofwonder.com/game/ticket-to-ride-nordic-countries/. Visually inspected source pages 2; exact location: The Game Turn, first paragraph. Sealed source packet: artifacts/pending-rules-followup-sep28l/REVIEW.md; SHA-256 of packet SHA256SUMS.txt e286192b7bc3146cf61620ed070cb21c82be3c1dffdf8b41d84de845338eb1c1. Editorial review on 2026-09-28 approved the cited starting rule for this exact edition only.",
+  "uncertainty": [
+    "The publisher does not define how to compare travel experience or break a tie."
+  ],
+  "pickerSuggestionApplicable": false
+}

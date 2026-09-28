@@ -1,0 +1,43 @@
+{
+  "id": "fort-leder-2020-en",
+  "slug": "fort-leder-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
+  "approvedRevision": "283e5a444a1b25eb9075d80600f6253dcfe669f3d09940435b7e93dcf9eff186",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Fort",
+  "aliases": [],
+  "editionLabel": "Leder Games 2020 English base game",
+  "firstPlayerRule": "Determine the starting player and seating order randomly. Give that player the first player card; that player begins, then turns proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": true,
+  "clarifications": [
+    "The Basic Setup instruction applies before the optional advanced starting-card draft."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Fort_Final_Rulebook_web_Oct_15_2020.pdf?v=1603136739",
+      "title": "Fort — English base-game rulebook",
+      "publisher": "Leder Games",
+      "printedPages": [
+        "2",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        6
+      ],
+      "location": "Basic Setup, step 1; How to Play, first paragraph",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Source packet prepared at Git commit c4049161450b928526436c067ffe6ef0f7b97413; active clean directory identity BGG 296912. Complete publisher English manual: 1813616 bytes, 16 PDF pages, SHA-256 ff0849cc7d2cc2268a3dc5827664cd13668d77394b5dbaf5d3c0130d466775ef. Original publisher page: https://ledergames.com/pages/resources. Visually inspected source pages 2, 6; exact location: Basic Setup, step 1; How to Play, first paragraph. Sealed source packet: artifacts/pending-rules-followup-sep28l/REVIEW.md; SHA-256 of packet SHA256SUMS.txt e286192b7bc3146cf61620ed070cb21c82be3c1dffdf8b41d84de845338eb1c1. Editorial review on 2026-09-28 approved the cited starting rule for this exact edition only.",
+  "uncertainty": [
+    "The publisher does not prescribe a particular method for randomizing players or seats."
+  ]
+}

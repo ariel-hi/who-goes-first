@@ -1,0 +1,44 @@
+{
+  "id": "ethnos-cmon-original-2017-en",
+  "slug": "ethnos-cmon-original-2017-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
+  "approvedRevision": "56ae58ca427992ead09c286cd8652a4658da29a17c03f1b88c21935c49ea9be7",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Ethnos",
+  "aliases": [],
+  "editionLabel": "CMON original 2017 English game (first edition)",
+  "firstPlayerRule": "For the First Age, choose the first player at random. Play then proceeds to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": true,
+  "clarifications": [
+    "The random choice applies to the First Age. Later Ages start with the player who has the least Glory, with a separate printed tie rule."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/Rulebook_Ethnos.pdf",
+      "title": "Ethnos — original English rulebook",
+      "publisher": "CMON",
+      "printedPages": [
+        "5",
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        5,
+        6
+      ],
+      "location": "Beginning a New Age, first-player paragraph; Playing Through an Age, first paragraph",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Source packet prepared at Git commit c4049161450b928526436c067ffe6ef0f7b97413; active clean directory identity BGG 206718. Complete publisher English manual: 15476112 bytes, 16 PDF pages, SHA-256 4a7800346a7fd751fdc81b5677df6da8e1d6ab44f049d617e52bfe06c1c4505e. Original publisher page: https://www.cmon.com/products/ethnos/. Visually inspected source pages 5, 6; exact location: Beginning a New Age, first-player paragraph; Playing Through an Age, first paragraph. Sealed source packet: artifacts/pending-rules-followup-sep28l/REVIEW.md; SHA-256 of packet SHA256SUMS.txt e286192b7bc3146cf61620ed070cb21c82be3c1dffdf8b41d84de845338eb1c1. Editorial review on 2026-09-28 approved the cited starting rule for this exact edition only.",
+  "uncertainty": [
+    "The publisher does not prescribe a particular randomizer.",
+    "This source is the original Ethnos booklet; CMON's separate 2nd Edition is outside this rule."
+  ]
+}

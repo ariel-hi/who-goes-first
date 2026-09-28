@@ -201,6 +201,16 @@
   .die:nth-child(2) { animation-delay:calc(var(--dice-delay) + 90ms); }
   .die-cube { position:absolute; inset:0; display:block; transform-style:preserve-3d; transform:rotateX(calc(var(--die-end-x) + 12deg)) rotateY(calc(var(--die-end-y) - 18deg)); animation:roll-die-3d 1.65s var(--dice-delay) cubic-bezier(.22,.72,.25,1) both; }
   .die:nth-child(2) .die-cube { animation-delay:calc(var(--dice-delay) + 90ms); }
+  /* A crowded table gets one painted face and one short toss per die. */
+  .die-flat { perspective:none; --pip-radius:calc(var(--die-size) * .075); animation:flat-die-toss 1.1s var(--dice-delay) cubic-bezier(.24,.7,.25,1) both; }
+  .die-flat:nth-child(2) { animation-delay:calc(var(--dice-delay) + 90ms); }
+  .die-flat-face::before { content:''; position:absolute; inset:0; background-image:var(--pips); }
+  .die-flat[data-value="1"] { --pips:radial-gradient(circle var(--pip-radius) at 50% 50%,#423447 96%,transparent); }
+  .die-flat[data-value="2"] { --pips:radial-gradient(circle var(--pip-radius) at 25% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 75%,#423447 96%,transparent); }
+  .die-flat[data-value="3"] { --pips:radial-gradient(circle var(--pip-radius) at 25% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 50% 50%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 75%,#423447 96%,transparent); }
+  .die-flat[data-value="4"] { --pips:radial-gradient(circle var(--pip-radius) at 25% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 25% 75%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 75%,#423447 96%,transparent); }
+  .die-flat[data-value="5"] { --pips:radial-gradient(circle var(--pip-radius) at 25% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 50% 50%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 25% 75%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 75%,#423447 96%,transparent); }
+  .die-flat[data-value="6"] { --pips:radial-gradient(circle var(--pip-radius) at 25% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 25%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 25% 50%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 50%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 25% 75%,#423447 96%,transparent),radial-gradient(circle var(--pip-radius) at 75% 75%,#423447 96%,transparent); }
   .die-face { position:absolute; inset:0; display:grid; place-items:center; border:1px solid #8c7d93; border-radius:5px; background-color:var(--piece); background-image:radial-gradient(circle at 27% 20%,#fffdf9b3,transparent 48%),linear-gradient(145deg,color-mix(in srgb,var(--piece) 55%,#fff),transparent 65%,color-mix(in srgb,var(--piece) 75%,#655071)); box-shadow:inset 2px 2px 3px #fffdf9b0,inset -3px -4px 5px #51415b35; backface-visibility:hidden; -webkit-backface-visibility:hidden; }
   .die-face-front { transform:translateZ(calc(var(--die-size) / 2)); }
   .die-face-back { transform:rotateY(180deg) translateZ(calc(var(--die-size) / 2)); }
@@ -212,6 +222,7 @@
   .loading-die { display:block; width:38px; height:38px; border:1px solid #a89aab; border-radius:8px; background:var(--piece); }
   .loading-table[data-method="dice"][data-five=true] .loading-die { width:36px; height:36px; }
   @keyframes die-bounce { 0%,100% { transform:none; } 20% { transform:translateY(-20px); } 42% { transform:translateY(1px); } 67% { transform:translateY(-12px); } 85% { transform:translateY(0); } 93% { transform:translateY(-4px); } }
+  @keyframes flat-die-toss { 0% { transform:translateY(-4px) rotate(-24deg) scale(.94); } 38% { transform:translateY(-13px) rotate(15deg) scale(1.03); } 72% { transform:translateY(1px) rotate(-5deg); } 100% { transform:none; } }
   @keyframes roll-die-3d { 0% { transform:rotateX(calc(var(--die-end-x) + 700deg)) rotateY(calc(var(--die-end-y) + 680deg)); } 24% { transform:rotateX(calc(var(--die-end-x) + 510deg)) rotateY(calc(var(--die-end-y) + 490deg)); } 50% { transform:rotateX(calc(var(--die-end-x) + 335deg)) rotateY(calc(var(--die-end-y) + 290deg)); } 78% { transform:rotateX(calc(var(--die-end-x) + 98deg)) rotateY(calc(var(--die-end-y) + 72deg)); } 100% { transform:rotateX(calc(var(--die-end-x) + 12deg)) rotateY(calc(var(--die-end-y) - 18deg)); } }
   .coin-toss, .loading-piece[data-method="coin"] { width:86px; height:112px; position:relative; perspective:540px; }
   .coin-shadow { position:absolute; left:17px; bottom:9px; width:52px; height:12px; border-radius:50%; background:#4f3e4f3d; opacity:.55; filter:blur(4px); animation:coin-shadow var(--coin-duration) var(--coin-delay) ease-in-out both; }
