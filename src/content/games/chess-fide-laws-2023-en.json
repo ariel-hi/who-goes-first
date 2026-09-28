@@ -3,13 +3,31 @@
   "slug": "chess-fide-laws-2023-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex image-rights review, owner-authorized 2026-09-27",
-  "approvedRevision": "a6a3322dcb8a0e7f4870248eaa9a64a4221edeee59cd6c2671a98e44ac878d92",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22; Codex image-rights review, owner-authorized 2026-09-27; Codex image-resolution review, owner-authorized 2026-09-27",
+  "approvedRevision": "bf3cf943de3057cf70c8d2df1da8bebfb5b70052ec5246acf127d0997cd3beca",
   "publishedAt": "2026-09-26",
   "materiallyUpdatedAt": "2026-09-27",
   "gameName": "Chess",
   "aliases": [],
   "editionLabel": "FIDE Laws effective 1 January 2023 · standard chess (English)",
+  "image": {
+    "file": "/images/games/chess-commons.jpg",
+    "alt": "Black and white chess pieces on a board",
+    "width": 960,
+    "height": 643,
+    "source": {
+      "url": "https://commons.wikimedia.org/wiki/File:Image_Chess.jpg",
+      "publisher": "Wikimedia Commons"
+    },
+    "licence": {
+      "name": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsHolder": "Devcore",
+      "attribution": "Devcore / Wikimedia Commons (CC0 1.0; resized)",
+      "reviewedAt": "2026-09-27",
+      "localEditorialUse": true
+    }
+  },
   "firstPlayerRule": "White, the player with the light-colored pieces, makes the first move. Black moves next, and the players then alternate turns.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -30,26 +48,8 @@
       "checkedAt": "2026-09-26"
     }
   ],
-  "internalEvidence": "Read the publisher-hosted English HTML in context: Introduction 0.1 identifies over-the-board scope and effective date; Article 1.2 assigns the opening move to White; Article 2 establishes standard setup; Article 6.6 corroborates the clock start. No color-allocation procedure is inferred. This draft is limited to standard chess and is not a general variant or tournament pairing answer. Complete source cached at research/source-files/traditional-games/chess-fide-2023.html, SHA-256 9fe02370c6d15f6b0988ca45e47e1c40f90f049a1942d9c1d6b495a97fa0161f. HTML source has no PDF page numbers. Identity: Wikidata Q718 / BGG 171. No approval or portable-pool eligibility granted. Editorial review 2026-09-26: Codex reopened FIDE Introduction and Articles 1–2 and 6.6, checked the fixed White opening and color-allocation scope, and reviewed every public field. Fixed-role tie-break applicability is false. Directory-only: this is a starting color, not a portable person-selection criterion. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is now approved for the catalog; initial draft-only notes above describe intake status. No deployment or random-mix approval.\n\nImage rights review 2026-09-27: https://commons.wikimedia.org/wiki/File:Image_Chess.jpg states CC0 1.0; photographer/rightsholder Devcore. The asset is a reduced JPEG of traditional game equipment, not copied box art. Source and licence links are public on the rule page. See docs/open-game-art.md.",
+  "internalEvidence": "Read the publisher-hosted English HTML in context: Introduction 0.1 identifies over-the-board scope and effective date; Article 1.2 assigns the opening move to White; Article 2 establishes standard setup; Article 6.6 corroborates the clock start. No color-allocation procedure is inferred. This draft is limited to standard chess and is not a general variant or tournament pairing answer. Complete source cached at research/source-files/traditional-games/chess-fide-2023.html, SHA-256 9fe02370c6d15f6b0988ca45e47e1c40f90f049a1942d9c1d6b495a97fa0161f. HTML source has no PDF page numbers. Identity: Wikidata Q718 / BGG 171. No approval or portable-pool eligibility granted. Editorial review 2026-09-26: Codex reopened FIDE Introduction and Articles 1–2 and 6.6, checked the fixed White opening and color-allocation scope, and reviewed every public field. Fixed-role tie-break applicability is false. Directory-only: this is a starting color, not a portable person-selection criterion. Owner authorization: factual review delegated to Codex on 2026-09-22. This exact reviewed revision is now approved for the catalog; initial draft-only notes above describe intake status. No deployment or random-mix approval.\n\nImage rights review 2026-09-27: https://commons.wikimedia.org/wiki/File:Image_Chess.jpg states CC0 1.0; photographer/rightsholder Devcore. The asset is a reduced JPEG of traditional game equipment, not copied box art. Source and licence links are public on the rule page. See docs/open-game-art.md.\n\nImage resolution review 2026-09-27: replaced the previous 400-pixel Wikimedia thumbnail with the unmodified 960 × 643 JPEG thumbnail from the same CC0 Commons source. This reduces visible upscaling in the full-width hero. SHA-256 and file size are recorded in docs/open-game-art.md.",
   "uncertainty": [
     "The cited Laws prescribe White as the starting color but do not choose the person who receives that color; event-specific pairings or a separately agreed method are outside this record."
-  ],
-  "image": {
-    "file": "/images/games/chess-commons.jpg",
-    "alt": "Black and white chess pieces on a board",
-    "width": 400,
-    "height": 268,
-    "source": {
-      "url": "https://commons.wikimedia.org/wiki/File:Image_Chess.jpg",
-      "publisher": "Wikimedia Commons"
-    },
-    "licence": {
-      "name": "CC0 1.0",
-      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "rightsHolder": "Devcore",
-      "attribution": "Devcore / Wikimedia Commons (CC0 1.0; resized)",
-      "reviewedAt": "2026-09-27",
-      "localEditorialUse": true
-    }
-  }
+  ]
 }

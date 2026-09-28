@@ -3,10 +3,10 @@
   "slug": "scrabble-mattel-53639-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex public-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "94053e58e445955581dbdc9706425c7b8194922a0fc8effdba8e24dfcfd135e0",
+  "approvedBy": "Codex public-label review, authorized by the owner on 2026-09-25; Codex image-rights review, owner-authorized 2026-09-27",
+  "approvedRevision": "dd5749e24c3e03a3851104fd48d8c8ed4c65aee6a7e0677a41382d244881146d",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-27",
   "gameName": "Scrabble",
   "aliases": [],
   "editionLabel": "Mattel Scrabble English instructions",
@@ -30,8 +30,26 @@
       "checkedAt": "2026-09-25"
     }
   ],
-  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 2, including the cited setup and turn-sequence text. Local source PDF SHA-256: 3a3d7c8822233590ae17c3bab364c108acea741dc1bda8f371bf4c078fc7380c. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
+  "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 2, including the cited setup and turn-sequence text. Local source PDF SHA-256: 3a3d7c8822233590ae17c3bab364c108acea741dc1bda8f371bf4c078fc7380c. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.\n\nImage rights review 2026-09-27: https://commons.wikimedia.org/wiki/File:Wooden_srcabble_tiles.jpg credits original photographer WOKANDAPIX and documents the 2016 Pixabay CC0 release; Commons verified the grant in 2025. The locally hosted file is the historical 500 × 357 JPEG from that file history, unmodified. It shows ordinary wooden letter tiles without box art and illustrates Scrabble generally, not the precise Hasbro or Mattel edition. The source and CC0 grant appear in the public credit. See docs/open-game-art.md.",
   "uncertainty": [
     "The instructions do not specify how to resolve equal nearest-letter draws."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/scrabble-tiles-commons.jpg",
+    "alt": "A pile of wooden Scrabble letter tiles",
+    "width": 500,
+    "height": 357,
+    "source": {
+      "url": "https://commons.wikimedia.org/wiki/File:Wooden_srcabble_tiles.jpg",
+      "publisher": "Wikimedia Commons"
+    },
+    "licence": {
+      "name": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsHolder": "WOKANDAPIX",
+      "attribution": "WOKANDAPIX / Wikimedia Commons",
+      "reviewedAt": "2026-09-27",
+      "localEditorialUse": true
+    }
+  }
 }

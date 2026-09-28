@@ -31,13 +31,14 @@ placement or replacing the asset.
 
 ## Reviewed local photographs
 
-Three traditional games have rights-reviewed photographs of generic equipment;
+Chess, Backgammon, Go, and both Scrabble editions have rights-reviewed photographs of physical equipment;
 see [the file-by-file review](open-game-art.md). These are not photographs of the
 exact cited rulebook edition or publisher packaging. Omit the `image` field for
 any other rule. When present, the photograph runs at the full hero content width
 below the rule answer, with its source host and licence linked in the Source &
 edition card. Images keep their natural aspect ratio without cropping or padding.
-Related rules and directory entries use readable text without placeholder art.
+Related and similar rule links show a small photograph when that destination has
+one; other links and directory entries use readable text without placeholder art.
 
 Each rule's optional `image` object requires:
 
@@ -64,7 +65,7 @@ is unclear, use the text-only layout.
 
 `content:validate` uses Sharp (already supplied by Astro) to decode every image;
 it rejects malformed pixels, unsupported or mismatched file types, animated images,
-incorrect dimensions, files over 64 KiB, and images above four million pixels.
+incorrect dimensions, files over 128 KiB, and images above four million pixels.
 No decoder runs in the browser. The production
 audit counts inline SVG within compressed HTML and local images once per page,
 using the existing conservative 350 KiB allowance (including all non-optional

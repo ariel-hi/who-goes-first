@@ -55,8 +55,8 @@ test('publication decodes real rasters and rejects missing, malformed, mismatche
     const path = join(directory, 'images/games/test-box.png');
     writeFileSync(path, Buffer.alloc(64 * 1024));
     await expect(validateRuleImageAsset(image, directory)).rejects.toThrow();
-    writeFileSync(path, Buffer.alloc(64 * 1024 + 1));
-    await expect(validateRuleImageAsset(image, directory)).rejects.toThrow('exceeds 64 KiB');
+    writeFileSync(path, Buffer.alloc(128 * 1024 + 1));
+    await expect(validateRuleImageAsset(image, directory)).rejects.toThrow('exceeds 128 KiB');
     const synthetic = () => sharp({ create: { width: 3, height: 4, channels: 3, background: '#336655' } });
     for (const extension of ['png', 'jpg', 'jpeg', 'webp', 'avif'] as const) {
       const file = `/images/games/test-box.${extension}`;

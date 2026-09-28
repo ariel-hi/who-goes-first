@@ -3,13 +3,13 @@ import { extname, resolve } from 'node:path';
 import sharp from 'sharp';
 import { ruleImageSchema, type RuleImage } from './schema';
 
-/** Local licensed artwork is optional; an absent field keeps the SVG-only page. */
+/** Local licensed artwork is optional; an absent field keeps the text-only page. */
 export async function validateRuleImageAsset(image: RuleImage | undefined, publicDirectory = 'public') {
   if (!image) return;
   const checked = ruleImageSchema.parse(image);
   const path = resolve(publicDirectory, `.${checked.file}`);
   if (!existsSync(path) || !statSync(path).isFile()) throw new Error(`Missing licensed image: ${image.file}`);
-  if (statSync(path).size > 64 * 1024) throw new Error(`Licensed image exceeds 64 KiB: ${image.file}`);
+  if (statSync(path).size > 128 * 1024) throw new Error(`Licensed image exceeds 128 KiB: ${image.file}`);
   const decoder = sharp(readFileSync(path), { failOn: 'warning', limitInputPixels: 4_000_000 });
   const metadata = await decoder.metadata();
   const extension = extname(path).slice(1);

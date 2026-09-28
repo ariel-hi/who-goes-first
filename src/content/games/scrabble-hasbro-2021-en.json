@@ -3,10 +3,10 @@
   "slug": "scrabble-hasbro-2021-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "678e147952024508730eeb3b2c6a958e91e9f02aa3253651e750c72443f3b872",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex image-rights review, owner-authorized 2026-09-27",
+  "approvedRevision": "d1f0d1f4a4371ecdd872c571e6937ffa5a7b7b7d3fb5dcf98adef0e534220d63",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-27",
   "gameName": "Scrabble",
   "aliases": [
     "Scrabble Classic",
@@ -34,8 +34,26 @@
       "checkedAt": "2026-09-25"
     }
   ],
-  "internalEvidence": "Downloaded the Hasbro US instructions for Scrabble Classic (2–4 players, 100 letter tiles, drawstring bag) from the Hasbro instructions site page scrabble-board-game-classic-word-game-for-kids-ages-8-and-up-fun-family-game-for-2-4-players-the-classic-crossword-game and extracted the text with pdftotext. PDF page 1, numbered setup step 4: everyone draws one tile, the letter closest to A goes first, a blank beats any letter, play moves clockwise; step 5 returns the tiles and deals seven each in playing order. The sheet shows © 2021 Hasbro. SHA-256: ec355b8231b5965afdb83dd802f1ad7d66300acd9e1198c2df96d5696ac62128. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
+  "internalEvidence": "Downloaded the Hasbro US instructions for Scrabble Classic (2–4 players, 100 letter tiles, drawstring bag) from the Hasbro instructions site page scrabble-board-game-classic-word-game-for-kids-ages-8-and-up-fun-family-game-for-2-4-players-the-classic-crossword-game and extracted the text with pdftotext. PDF page 1, numbered setup step 4: everyone draws one tile, the letter closest to A goes first, a blank beats any letter, play moves clockwise; step 5 returns the tiles and deals seven each in playing order. The sheet shows © 2021 Hasbro. SHA-256: ec355b8231b5965afdb83dd802f1ad7d66300acd9e1198c2df96d5696ac62128. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.\n\nImage rights review 2026-09-27: https://commons.wikimedia.org/wiki/File:Wooden_srcabble_tiles.jpg credits original photographer WOKANDAPIX and documents the 2016 Pixabay CC0 release; Commons verified the grant in 2025. The locally hosted file is the historical 500 × 357 JPEG from that file history, unmodified. It shows ordinary wooden letter tiles without box art and illustrates Scrabble generally, not the precise Hasbro or Mattel edition. The source and CC0 grant appear in the public credit. See docs/open-game-art.md.",
   "uncertainty": [
     "The rules do not say what happens if two players draw the same letter or both draw blanks."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/scrabble-tiles-commons.jpg",
+    "alt": "A pile of wooden Scrabble letter tiles",
+    "width": 500,
+    "height": 357,
+    "source": {
+      "url": "https://commons.wikimedia.org/wiki/File:Wooden_srcabble_tiles.jpg",
+      "publisher": "Wikimedia Commons"
+    },
+    "licence": {
+      "name": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsHolder": "WOKANDAPIX",
+      "attribution": "WOKANDAPIX / Wikimedia Commons",
+      "reviewedAt": "2026-09-27",
+      "localEditorialUse": true
+    }
+  }
 }
