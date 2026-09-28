@@ -3,10 +3,10 @@
   "slug": "sherlock-thames-murders-space-cowboys-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "ef575f9e52b4ed74d8d3e9285d7f59c1cdc08ca7f9836ca39b09c048adb608c0",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "3dcda242bd7087cf644dbe9afce9f32f7e02659775eb4851a7b3f16e5b761286",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases",
   "aliases": [],
   "editionLabel": "Space Cowboys English Thames Murders",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Current SpaceCowboys product the-thames-murders explicitly links SHJR_Rules_C1_EN_BD.pdf as TheThamesMurdersRuleEnglish. RenderedPDF8printed6setup and firstlead. Search previously returnedJackRippermanual, rejected and overwritten with correct publisher product-linkedThamesmanual. Source custody: research/source-files/popular-sep26-09/sherlock.pdf; SHA-256 c2198ad34225905c7e0d658f36b8e3ab52c34c988ae856962b9e125a669995bb. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/sherlock-thames-murders-space-cowboys-en-cover.jpg",
+    "alt": "Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases Space Cowboys English Thames Murders game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/cdn/shop/products/SHEH03-image0_2000.jpg?v=1690578742",
+      "publisher": "Asmodee USA"
+    },
+    "fairUse": {
+      "rightsHolder": "Space Cowboys / Asmodee",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official U.S. distributor page for the Thames Murders edition, SKU SHEH03: https://store.asmodee.com/products/sherlock-holmes-the-thames-murders-and-other-cases. Exact image: https://store.asmodee.com/cdn/shop/products/SHEH03-image0_2000.jpg?v=1690578742. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

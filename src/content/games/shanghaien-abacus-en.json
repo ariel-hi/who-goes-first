@@ -3,10 +3,10 @@
   "slug": "shanghaien-abacus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a2312a13715d1cc96374ee4e9cb53bff40f38a3d74782bd7ca2b18cb3a9cfa4b",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "d9e17a0d77245dfb51a709e85edf65049679b9ae99b373ce23e04d0b28f1b3a0",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Shanghaien",
   "aliases": [],
   "editionLabel": "ABACUSSPIELE English two-player rules",
@@ -35,5 +35,22 @@
     "The source gives no objective measure for deciding who is most rough-and-ready.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/shanghaien-abacus-en-cover.jpg",
+    "alt": "Shanghaien ABACUSSPIELE English two-player rules game box cover",
+    "width": 287,
+    "height": 287,
+    "presentation": "cover",
+    "source": {
+      "url": "https://abacusspiele.de/wp-content/uploads/2020/07/min-Shanghain_Bild01_Cover3D_sRGB.jpg",
+      "publisher": "ABACUSSPIELE"
+    },
+    "fairUse": {
+      "rightsHolder": "ABACUSSPIELE",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "ABACUSSPIELE publisher page for the two-player Shanghaien box and English rules download: https://abacusspiele.de/produkt/shanghaien/. Exact image: https://abacusspiele.de/wp-content/uploads/2020/07/min-Shanghain_Bild01_Cover3D_sRGB.jpg. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

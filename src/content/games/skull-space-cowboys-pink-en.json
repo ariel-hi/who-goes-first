@@ -3,10 +3,10 @@
   "slug": "skull-space-cowboys-pink-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "98e599aa82412ea6ea76fcd82edf9e43afb27d0261d9c0ea1466b94025187d80",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5b5b8a9ad259c12f5d66510440837dbb374b8b91fcd9fd1a7698171fe6a29bbf",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Skull",
   "aliases": [],
   "editionLabel": "Space Cowboys English pink edition",
@@ -40,5 +40,22 @@
   "internalEvidence": "The current publisher game page links this English manual with the Last Chance disc. Setup on page 3 gives the gift criterion; page 4 distinguishes opening disc placement from the first decision turn. Source custody: research/source-files/popular-sep26-02/skull.pdf; SHA-256 1e72b6040a1bd0f0fa62de96765b9f88ce922069cc8d393f0a881ef8a44d0d90. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
   "uncertainty": [
     "The setup gives no tie-break or alternative when nobody has given either gift."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/skull-space-cowboys-pink-en-cover.jpg",
+    "alt": "Skull Space Cowboys English pink edition game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/cdn/shop/files/SCSK02EN-image0_2000.jpg?v=1690571856",
+      "publisher": "Asmodee USA"
+    },
+    "fairUse": {
+      "rightsHolder": "Space Cowboys / Asmodee",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official U.S. distributor page for the pink English Skull box, SKU SCSK02EN: https://store.asmodee.com/products/skull. Exact image: https://store.asmodee.com/cdn/shop/files/SCSK02EN-image0_2000.jpg?v=1690571856. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

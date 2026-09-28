@@ -3,10 +3,10 @@
   "slug": "splendor-2024-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ac8f2b052ead77a0963bcf91f667b9671a67e4a114d65f03db9e7f6d9836bbbf",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "a41ff258d308a99ea8b86bd082d4253e5e116ef6649d343c040e1fb33427eeac",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Splendor",
   "aliases": [
     "Splendor base game"
@@ -36,5 +36,22 @@
   "internalEvidence": "Publisher product page links this PDF. Visually checked the second folded sheet: setup assigns the marker to the youngest player and Actions starts with its holder. Copyright is 2024. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research\\source-files\\core-games-review\\splendor-bb8a8def.pdf; SHA-256 6e875b7d823ee4ffeb1110d07a14ec8e49814d879aed575177b5408d3e2ee407. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: include. The youngest player receives the First Player marker and takes the first regular turn. Two- and three-player setup changes preserve the instruction. No official age tie-break is supplied. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The setup gives no tie-break between equally young players; the hosting path year is not the edition year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/splendor-2024-en-cover.jpg",
+    "alt": "Splendor Space Cowboys English base game · 2024 refresh, with First Player marker game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/cdn/shop/files/SPL01-image0_2000.jpg?v=1720014566",
+      "publisher": "Asmodee USA"
+    },
+    "fairUse": {
+      "rightsHolder": "Space Cowboys / Asmodee",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official U.S. distributor product page, SKU SPL01, describing the revamped Splendor release: https://store.asmodee.com/products/splendor. Exact image: https://store.asmodee.com/cdn/shop/files/SPL01-image0_2000.jpg?v=1720014566. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

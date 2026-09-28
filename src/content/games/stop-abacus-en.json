@@ -3,10 +3,10 @@
   "slug": "stop-abacus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "dfd4077cef4334c5d926ff8f7f6e5782f9e84192c7227161482ff1e07a389f82",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "10207980257b2c02974a56c26869f555e4270d51b034610ef30557c0f1df17c4",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "STOP",
   "aliases": [],
   "editionLabel": "ABACUSSPIELE English rules, 112-card edition, copyright 2001",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/stop-abacus-en-cover.jpg",
+    "alt": "STOP ABACUSSPIELE English rules, 112-card edition, copyright 2001 game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://abacusspiele.de/wp-content/uploads/2020/03/Stop_Bild01_Cover3D_sRGB.jpg",
+      "publisher": "ABACUSSPIELE"
+    },
+    "fairUse": {
+      "rightsHolder": "ABACUSSPIELE",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "ABACUSSPIELE publisher page, SKU 08011 and 112-card English rules download: https://abacusspiele.de/produkt/stop/. Exact image: https://abacusspiele.de/wp-content/uploads/2020/03/Stop_Bild01_Cover3D_sRGB.jpg. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

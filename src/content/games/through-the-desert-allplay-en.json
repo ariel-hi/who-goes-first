@@ -3,10 +3,10 @@
   "slug": "through-the-desert-allplay-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "39775078ee5957b133d99c55f9b00ad0409711c38479f0d3752063cf7952658e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "c40878e14deb68d83a1a7e5155d5f265371c2502ede8df8fd52ce6a0cf36bcd2",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Through the Desert",
   "aliases": [],
   "editionLabel": "English Allplay base-game rules",
@@ -35,5 +35,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/through-the-desert-allplay-en-cover.jpg",
+    "alt": "Through the Desert English Allplay base-game rules game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0143/6178/8473/files/ALLPLAY_ThroughTheDesert_Box_68a88b99-9a02-4108-acbd-803d78ac5cbf.png?v=1706732652",
+      "publisher": "Allplay"
+    },
+    "fairUse": {
+      "rightsHolder": "Allplay",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Allplay product page, also linking the cited base-game rules: https://allplay.com/board-games/through-the-desert. Exact image: https://cdn.shopify.com/s/files/1/0143/6178/8473/files/ALLPLAY_ThroughTheDesert_Box_68a88b99-9a02-4108-acbd-803d78ac5cbf.png?v=1706732652. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

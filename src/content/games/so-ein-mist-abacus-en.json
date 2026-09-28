@@ -3,10 +3,10 @@
   "slug": "so-ein-mist-abacus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4fed6145d24c2e356bfc165dfcf43f097147609e9049ccc6ab583f08e22c813d",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "aadedb1c00cfe7f2aa1773275faa99e7d39a2cd92bcc5f38c12a3edea606dfb3",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "So ein Mist",
   "aliases": [],
   "editionLabel": "ABACUSSPIELE English rules, 2019 edition",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/so-ein-mist-abacus-en-cover.jpg",
+    "alt": "So ein Mist ABACUSSPIELE English rules, 2019 edition game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://abacusspiele.de/wp-content/uploads/2020/05/SoEinMist_Bild01_Box3D.png",
+      "publisher": "ABACUSSPIELE"
+    },
+    "fairUse": {
+      "rightsHolder": "ABACUSSPIELE",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "ABACUSSPIELE publisher page, SKU 06191 and English rules download: https://abacusspiele.de/produkt/so-ein-mist/. Exact image: https://abacusspiele.de/wp-content/uploads/2020/05/SoEinMist_Bild01_Box3D.png. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

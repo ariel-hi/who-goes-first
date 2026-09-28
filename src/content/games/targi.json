@@ -3,10 +3,10 @@
   "slug": "targi",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "97cf7894173003373155ef5c154fd8f0ded2bf456bbd99b183ce2ed36fab7da1",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "a54d1e2b5aaca25ee27950e135a34f6401b0a22667cb07d0bb2f36508cde585b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Targi",
   "aliases": [],
   "editionLabel": "English Thames & Kosmos rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The player who most recently ate dates goes first. Local source SHA-256: 499462e863c1ba9ef3b9b2a6a07b86f1038765e732a4dda933ce834abb5ee727. The fallback applies when neither player has eaten dates; the source does not state a separate tie-break for both having eaten them together. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/targi-cover.jpg",
+    "alt": "Targi English Thames & Kosmos rules game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thamesandkosmos.com/cdn/shop/products/Web_Targi_3Dbox--Front_1200x1200.jpg?v=1667484504",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "KOSMOS / Thames & Kosmos",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Thames & Kosmos product page for the English base game: https://thamesandkosmos.com/products/targi. Exact image: https://thamesandkosmos.com/cdn/shop/products/Web_Targi_3Dbox--Front_1200x1200.jpg?v=1667484504. The front cover and title were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
