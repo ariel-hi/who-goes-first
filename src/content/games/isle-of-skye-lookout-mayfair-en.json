@@ -3,10 +3,10 @@
   "slug": "isle-of-skye-lookout-mayfair-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "2ff02e716d4f2368f57c7fb8038826734d028ff0968137344a0d006ace4cc4b9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "131f18e47a60ae7b444a9ce72a9cd3e7238c9b57f0494d869b1289c909fd1646",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Isle of Skye: From Chieftain to King",
   "aliases": [],
   "editionLabel": "Lookout and Mayfair English edition",
@@ -38,5 +38,22 @@
   "internalEvidence": "Official Lookout product page links the English manual with Lookout and Mayfair2015 credits. PDF page1 holds printed2-4: youngest in setup, simultaneous pricing, clockwise buying and starter rotation. Source custody: research/source-files/popular-sep26-03/skye.pdf; SHA-256 b0e7e1c3998b6b9b1041426b35aa54ad7ce4ab0fb2e94625a29831f98c9d0d16. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
   "uncertainty": [
     "The setup does not specify a tie-break for equally young players."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/isle-of-skye-lookout-mayfair-en-cover.jpg",
+    "alt": "Isle of Skye: From Chieftain to King official game box cover",
+    "width": 347,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.lookout-spiele.de/en/games/isleofskye.html",
+      "publisher": "Lookout Games / Mayfair Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games / Mayfair Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.lookout-spiele.de/en/games/isleofskye.html supplies original product image https://www.lookout-spiele.de/upload/en_isleofskye.html_CoverImage.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

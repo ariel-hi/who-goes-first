@@ -3,10 +3,10 @@
   "slug": "la-cosa-nostra-quined-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "47a7ed4976d3eb4315c0aac28f8e98dee5e6dd360f954292d5635467fcec96e5",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use rulebook-cover review, owner-authorized 2026-09-28",
+  "approvedRevision": "3ce93723449e5daea64c353e88e1df2bb3a5b59057157d3c46cd5821a3cb2afa",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "La Cosa Nostra",
   "aliases": [],
   "editionLabel": "Quined Games / Hard Boiled Games English rules, 2014",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered PDF page 3, printed page 3, gives the recent-crime criterion; PDF page 5, printed page 8, passes the starter card clockwise for the next round. Page 10 credits Quined Games and Hard Boiled Games ©2014; Boss, Gangster and Business cards match inventory BGG 151771. SHA-256: 729326c2906083919aab6e9940d63e11e83c8d54c5e947286853413f20a6250f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure or definition of the crime criterion is stated."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/la-cosa-nostra-quined-2014-en-rulebook-cover.jpg",
+    "alt": "La Cosa Nostra official rulebook cover",
+    "width": 353,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.quined.nl/wp-content/uploads/2017/06/LCN-rules_EN_QG_screen.pdf",
+      "publisher": "Quined Games / Hard Boiled Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Quined Games / Hard Boiled Games and any cover-art licensors or artists (precise ownership not stated in PDF)",
+      "rationale": "Small, compressed rulebook cover identifies the edition discussed in this editorial rule explanation and does not substitute for the rulebook or game.",
+      "provenance": "First page of official publisher rulebook PDF https://www.quined.nl/wp-content/uploads/2017/06/LCN-rules_EN_QG_screen.pdf. The title and artwork identify the cited edition. This is a rulebook cover rather than a product box image.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "gingerbread-house-lookout-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6a6dc032c78f6a00655d17b58dedf115e6b58ba4f02470df4c5d70f3cde3b8e0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c7d7e5a2c649474de738d66fa74363c2adfaa9f1cd0e4c943cab04a6b6465cbd",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gingerbread House",
   "aliases": [
     "Hexenhaus"
@@ -39,5 +39,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-authored Lookout English booklet pages 3–4, preserved by the Dice Tower Library. Setup step 7 leaves the starter selection open and gives a recent forest visit only as an example; step 8 reverses the character-card selection order, while play itself proceeds clockwise. The publisher's own PDF endpoint denied retrieval on 2026-09-23. SHA-256: 06360eb72a5bab05f8bda12b41b4dc423c8375bdf0de6c35a7fe62824c9f8f01. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player instruction, optional wording, and setup-versus-play turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/gingerbread-house-lookout-en-cover.jpg",
+    "alt": "Gingerbread House official game box cover",
+    "width": 347,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.lookout-spiele.de/en/games/gingerbreadhouse.html",
+      "publisher": "Lookout Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.lookout-spiele.de/en/games/gingerbreadhouse.html supplies original product image https://www.lookout-spiele.de/upload/en_gingerbreadhouse.html_CoverImage.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

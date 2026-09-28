@@ -3,10 +3,10 @@
   "slug": "farben-stronghold-spielwiese-2018-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "88eb8206b28e20fbdf4753e41f6220ba467042f8ad65114eb240dd3979f98304",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "674e49a97a886ebefd7c363dea1d029a40a12d05eaf447376ed15b3e9888e99d",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Farben",
   "aliases": [],
   "editionLabel": "Stronghold Games / Edition Spielwiese English rules, 2018",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 1 states the colorful-dress criterion, simultaneous Color-card choice, first storyteller and later role rotation. Page 2 credits Stronghold Games ©2018 under license from Edition Spielwiese. Word and Color cards match inventory BGG 259005. SHA-256: 095b4a43e6d20dbc42c42e2ee39d8f483b9911c0e8515c6ae56689a201c5e814. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No measure or tie procedure is stated for “most colorfully dressed.”"
-  ]
+  ],
+  "image": {
+    "file": "/images/games/farben-stronghold-spielwiese-2018-en-cover.jpg",
+    "alt": "Farben official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://edition-spielwiese.de/spiel/farben/",
+      "publisher": "Edition Spielwiese / Stronghold Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Edition Spielwiese / Stronghold Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://edition-spielwiese.de/spiel/farben/ supplies original product image https://edition-spielwiese.de/wp-content/uploads/2025/06/FARBEN-Front900x900.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

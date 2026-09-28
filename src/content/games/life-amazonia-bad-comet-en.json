@@ -3,10 +3,10 @@
   "slug": "life-amazonia-bad-comet-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "aefe3ea8e6edad9845b22d98fa3fc6b8f5869ebc1e17eff2a7b9403afcb860f8",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2c2b72da3e6c9c45609318805a513d938e6f5d0b4fc3123f917d5f2ea412ecca",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Life of the Amazonia",
   "aliases": [],
   "editionLabel": "Bad Comet Games English base-game rulebook",
@@ -36,5 +36,22 @@
   "internalEvidence": "Bad Comet links the English base-game PDF from its product page through Google Drive. A complete copy preserved by retailer Gamer’s HQ was inspected at rendered PDF page 5. The Jamie Bloom design credit and animal/resource components match inventory BGG 368305. SHA-256: 33c6fce45f3ab883f3948eadf50c32fbaf37cd0069d9c7facb41b537b53e37c0. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who most recently watched a nature documentary together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/life-amazonia-bad-comet-en-cover.jpg",
+    "alt": "Life of the Amazonia official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://badcomet.co/products/life-of-the-amazonia",
+      "publisher": "Bad Comet Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Bad Comet Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://badcomet.co/products/life-of-the-amazonia supplies original product image https://badcomet.co/cdn/shop/files/LoTA_Base-game__1.png?v=1720097664. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "grandbois-flying-origames-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "2f71ce5899d38ddd46763f6506299e62bd9e2b12ffe20a9b2bd593f5f686b83f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e409714b363b5711dcf55cfa1d9bbc958e6aa2569e19c5586b6547a679d60255",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "GrandBois",
   "aliases": [],
   "editionLabel": "The Flying Games / Origames English rules",
@@ -33,5 +33,22 @@
   "internalEvidence": "Rendered PDF page 2 gives the recent-forest-walk criterion and clockwise order. Page 4 credits The Flying Games and Origames; Clan cards, Watchtowers, River and forest tiles match inventory BGG 283584. SHA-256: 13f0668a4c526b15299f44340102934d00b81ea12e98978ae302c981fd8c0377. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for a shared forest walk."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/grandbois-flying-origames-en-cover.jpg",
+    "alt": "GrandBois official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.origames.fr/produit/grandbois/",
+      "publisher": "Origames / The Flying Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Origames / The Flying Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.origames.fr/produit/grandbois/ supplies original product image https://www.origames.fr/wp-content/uploads/2020/01/grandbois3D.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

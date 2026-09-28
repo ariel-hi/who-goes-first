@@ -3,8 +3,8 @@
   "slug": "its-wonderful-world-la-boite-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "3ad467957c70405ae741812668f888716e8d4413220d4d481716cf386cbd33d6",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4c11597eb24e26e74498f8b77db681b81695844f280f45f1b5f9549a0cd802ad",
   "publishedAt": "2026-09-26",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "It's a Wonderful World",
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Official publisher product-linked English manual. Page3 explicitly says every phase is simultaneous and there are no turns; draft reveal and pass direction verified. Page4 production resource sequence is not a player order. Source custody: research/source-files/popular-sep26-08/wonderful.pdf; SHA-256 908ec6beab114db5a0d4f3889b8eeacf43447775cc00236e05897e9881581123. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/its-wonderful-world-la-boite-en-cover.jpg",
+    "alt": "It's a Wonderful World official game box cover",
+    "width": 327,
+    "height": 350,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.laboitedejeu.fr/en/its-a-wonderful-world/",
+      "publisher": "La Boîte de Jeu / Origames"
+    },
+    "fairUse": {
+      "rightsHolder": "La Boîte de Jeu / Origames and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.laboitedejeu.fr/en/its-a-wonderful-world/ supplies original product image https://www.laboitedejeu.fr/wp-content/uploads/2019/04/IWW-FR-STD-copie-copie2-327x350.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
