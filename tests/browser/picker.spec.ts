@@ -88,6 +88,60 @@ test.describe('count commits on first activation', () => {
   });
 });
 
+test.describe('mode choice after a pending player count', () => {
+  test.use({ hasTouch: true });
+
+  for (const [activation, motion] of [['click', 'no-preference'], ['tap', 'reduce']] as const) test(`the first ${activation} selects a supported mode with ${motion} motion`, async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.emulateMedia({ reducedMotion: motion });
+    await controlledRandom(page, 23);
+    await ready(page);
+    await showAllMethods(page);
+    await page.getByLabel('Player count', { exact: true }).fill('24');
+    await expect(page.locator('.picker')).toHaveAttribute('data-count', '4');
+    const dice = page.getByRole('radio', { name: 'Dice Roll', exact: true });
+    await dice[activation]();
+    await expect(page.locator('.picker')).toHaveAttribute('data-count', '24');
+    await expect(dice).toBeChecked();
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'ready');
+    await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+    await expect(announcement(page)).toContainText('Seat 24 goes first.');
+    await expect(page.locator('.dice-reveal')).toHaveAttribute('data-settled', 'true');
+  });
+
+  test('the first click applies eligibility and also commits an already-selected mode', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await ready(page);
+    await showAllMethods(page);
+    const count = page.getByLabel('Player count', { exact: true });
+    await count.fill('25');
+    await page.getByRole('radio', { name: 'Dice Roll', exact: true }).click();
+    await expect(page.locator('.picker')).toHaveAttribute('data-count', '25');
+    await expect(page.getByRole('radio', { name: 'Quick', exact: true })).toBeChecked();
+    await expect(page.getByText('Dice Roll fits up to 24 players. Quick is selected for your group of 25.', { exact: true })).toBeVisible();
+    await count.fill('24');
+    await page.getByRole('radio', { name: 'Quick', exact: true }).click();
+    await expect(page.locator('.picker')).toHaveAttribute('data-count', '24');
+    await expect(page.getByRole('radio', { name: 'Quick', exact: true })).toBeChecked();
+  });
+
+  test('keyboard count commit retains access to the selected method', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await ready(page);
+    await showAllMethods(page);
+    const count = page.getByLabel('Player count', { exact: true });
+    await count.fill('24');
+    await count.press('Enter');
+    await expect(page.locator('.picker')).toHaveAttribute('data-count', '24');
+    const dice = page.getByRole('radio', { name: 'Dice Roll', exact: true });
+    await dice.focus();
+    await page.keyboard.press('Space');
+    await expect(dice).toBeChecked();
+    await expect(dice).toBeFocused();
+  });
+});
+
 test('an abandoned Pick press commits the typed count without drawing', async ({ page }) => {
   await ready(page, '/methods/spinner/');
   await page.getByLabel('Player count', { exact: true }).fill('12');

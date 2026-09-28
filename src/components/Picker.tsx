@@ -283,6 +283,27 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
     window.addEventListener('click', clicked, true);
     window.addEventListener('pointercancel', cancelled);
   }
+  function holdCountForMethod() {
+    if (busy || document.activeElement !== countInput.current) return;
+    countPressCleanup.current();
+    heldCountCommit.current = true;
+    const cleanup = () => {
+      window.removeEventListener('click', clicked);
+      window.removeEventListener('pointercancel', cancelled);
+    };
+    const finish = () => {
+      cleanup();
+      heldCountCommit.current = false;
+      // The radio's change handler runs before this bubble-phase listener, so
+      // the count can now resize and reorder the method controls safely.
+      commitCount();
+    };
+    const clicked = () => finish();
+    const cancelled = () => finish();
+    countPressCleanup.current = cleanup;
+    window.addEventListener('click', clicked);
+    window.addEventListener('pointercancel', cancelled);
+  }
   function rename(id: string, label: string) {
     setInputMode('names');
     const next = players.map(p => p.id === id ? { ...p, label } : p);
@@ -382,11 +403,11 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
           <div role="status" aria-live="polite" aria-atomic="true" className="winner-announcement" data-long={winnerLabel.length > 18}>{busy && <span className="sr-only">Revealing the selected player…</span>}{state.phase === 'result' && winner && <p><bdi>{winnerLabel}</bdi> goes first.</p>}</div>
           {busy && <div className="result-placeholder" data-long={winnerLabel.length > 18} aria-hidden="true"><p><bdi>{winnerLabel}</bdi> goes first.</p></div>}
         </div>
-        <fieldset className="reveal-options" disabled={!hydrated} inert={busy}>
+        <fieldset className="reveal-options" disabled={!hydrated} inert={busy} onPointerDownCapture={holdCountForMethod}>
           <legend className="sr-only">Choose your reveal</legend>
           <div className="segmented">
             {available.filter(option => showAllModes || primaryModes.includes(option.id)).map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
-              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onChange={() => setMode(option.id)} />
+              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onClick={() => { if (mode !== option.id) setMode(option.id); }} onChange={() => setMode(option.id)} />
               <ModeIcon mode={option.id} /><span>{option.label}</span>
             </label>)}
             {!showAllModes && <button type="button" className="more-modes" onClick={e => { const group = e.currentTarget.parentElement!; const shown = group.querySelectorAll('input').length; setMoreModes(true); requestAnimationFrame(() => group.querySelectorAll('input')[shown]?.focus()); }}><span aria-hidden="true">•••</span><span>More methods</span></button>}

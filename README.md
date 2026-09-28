@@ -20,7 +20,7 @@ Sharing copies a clean link without your player list or pick. Analytics is optio
 
 ## Development and content coverage
 
-An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 5,163 documented game identities. The full starting-rule compendium is still in progress: 1,097 identities have researched editions and 4,066 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 1,109 approved edition records, with 394 separately reviewed criteria in the random mix and 60 house prompts. See [the current source and coverage checkpoint](research/coverage/sep28-eleven-identities-two-rules-progress.md), [the content review process](CONTENT_REVIEW.md), and [the verification guide](VERIFICATION.md).
+An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 5,166 documented game identities. The full starting-rule compendium is still in progress: 1,099 identities have researched editions and 4,067 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 1,111 approved edition records, with 394 separately reviewed criteria in the random mix and 60 house prompts. See [the current source and coverage checkpoint](research/coverage/sep28-three-identities-two-rules-picker-progress.md), [the content review process](CONTENT_REVIEW.md), and [the verification guide](VERIFICATION.md).
 
 ## Run
 

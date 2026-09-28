@@ -44,6 +44,28 @@ test('new native and SimplyFun identities remain pending while two exact manuals
   }
   expect(games.find(game => game.bggId === '191862')?.rules[0]).toMatchObject({ pickerSuggestionApplicable: false });
   expect(games.find(game => game.bggId === '140620')?.rules[0]?.firstPlayerRule).toContain('randomly');
+}, 30000);
+
+test('three verified native titles remain pending while Bomb Busters and Watergate keep their distinct openings', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
+  for (const [id, name] of [['131000', 'Lovci pokladů'], ['136246', 'Feuer & Flamme'], ['195842', 'Kampf gegen das Bünzlitum']] as const) {
+    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
+    expect(directory.find(game => game.id === id)).toMatchObject({ name, ruleCount: 0 });
+  }
+  for (const [id, name, ruleId, pages] of [
+    ['413246', 'Bomb Busters', 'bomb-busters-cocktail-games-2024-en', [2, 5]],
+    ['274364', 'Watergate', 'watergate-capstone-2019-en', [3, 5]],
+  ] as const) {
+    const game = games.find(item => item.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]?.sources[0]?.pdfPagesOneBased).toEqual(pages);
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(false);
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+  }
+  expect(games.find(game => game.bggId === '413246')?.rules[0]?.firstPlayerRule).toContain('at random');
+  expect(games.find(game => game.bggId === '274364')?.rules[0]).toMatchObject({ pickerSuggestionApplicable: false });
 });
 
 test('exact original editions keep cooperative choice and component turn order out of random suggestions', async () => {
@@ -451,7 +473,7 @@ test('qualified pending identities remain distinct without borrowing related rul
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(143);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(146);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -571,12 +593,18 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 143, hold: 145, reviewed: 187, unreviewed: 101, additionalAccepted: 132 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(143);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(145);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(187);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(101);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(44);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 146, hold: 142, reviewed: 192, unreviewed: 96, additionalAccepted: 135 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(146);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(142);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(192);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(96);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(46);
+  for (const id of ['131000', '136246', '195842']) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+  }
+  for (const id of ['3182', '8179']) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'hold', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+  }
   for (const id of ['3141', '8273', '10709', '12237', '20834', '28905', '42636']) {
     expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
   }

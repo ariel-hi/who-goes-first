@@ -1,0 +1,45 @@
+{
+  "id": "watergate-capstone-2019-en",
+  "slug": "watergate-capstone-2019-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Watergate",
+  "aliases": [],
+  "editionLabel": "Capstone English base game (2019)",
+  "firstPlayerRule": "Decide who will play the Editor and Nixon roles. Setup points the initiative card toward the Editor, so the Editor plays the first card.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "The booklet does not specify how the two people should choose their roles.",
+    "This opening applies to the initial card phase; later initiative can change."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://capstone-games.com/cdn/shop/files/Wategate-EN-rules-lr.pdf?v=4574439098384850146",
+      "title": "Watergate — English base-game rulebook",
+      "publisher": "Capstone Games",
+      "printedPages": [
+        "3",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        5
+      ],
+      "location": "Set Up steps 1 and 6; Card phase opening paragraph",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Original Capstone Games product page links its complete English manual on the publisher CDN. PDF: 5,199,782 bytes, 24 pages, SHA-256 25ca927765d3a938aa456d0e8b0ae3d557e69298fe3d32e0a37a15d301f81b82. Root visually inspected printed/PDF page 3: choose Editor/Nixon roles and point initial initiative at Editor; page 5: player with initiative begins card phase. Exact active BGG 274364 / Wikidata Q111943790. Sealed packet artifacts/pending-rules-followup-sep28k/REVIEW.md; SHA256SUMS.txt SHA-256 e0a13c3044ff4ea2b3064531d8a478dcdb4ce40adfcbdec187c4d9a51b75a69f. No random person-selection instruction was inferred.",
+  "uncertainty": [
+    "The manual does not choose which person takes which role.",
+    "A random assignment of roles would be a group choice, not an official rule."
+  ]
+}

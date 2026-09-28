@@ -1,0 +1,45 @@
+{
+  "id": "bomb-busters-cocktail-games-2024-en",
+  "slug": "bomb-busters-cocktail-games-2024-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Bomb Busters",
+  "aliases": [],
+  "editionLabel": "Cocktail Games / Pegasus English base booklet v1.0 (2024)",
+  "firstPlayerRule": "For the first mission, designate the Captain at random. The Captain takes the first turn, then play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": true,
+  "clarifications": [
+    "For subsequent missions, the Captain responsibility passes to the player on the left before setup.",
+    "This answer covers the first mission of a new game, not the restart procedure after a failed mission."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.cocktailgames.com/wp-content/uploads/2023/10/BombBusters_rules_EN.pdf",
+      "title": "Bomb Busters — English base-game booklet v1.0",
+      "publisher": "Cocktail Games / Pegasus Spiele",
+      "printedPages": [
+        "2",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        5
+      ],
+      "location": "Setup step 2; The Game, opening sentence",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Original Cocktail Games product page links this complete English base manual. PDF: 3,176,415 bytes, 8 pages, SHA-256 b683f991b63a722a974bdc3f12636da2fa3dd5b0b7a338e5e7299dd99cf36295. Back page identifies English editorial, US 2024, version 1.0. Root visually inspected printed/PDF page 2 Setup step 2 and page 5 The Game opening: random Captain for first mission, Captain starts, clockwise play. Exact active BGG 413246 / Wikidata Q135208431. Sealed packet artifacts/pending-rules-followup-sep28k/REVIEW.md; SHA256SUMS.txt SHA-256 e0a13c3044ff4ea2b3064531d8a478dcdb4ce40adfcbdec187c4d9a51b75a69f. Random-only instruction remains outside independently reviewed portable criterion pool.",
+  "uncertainty": [
+    "The manual does not prescribe a particular randomizer.",
+    "The rule for subsequent missions is different and is not implied to be a fresh random choice."
+  ]
+}
