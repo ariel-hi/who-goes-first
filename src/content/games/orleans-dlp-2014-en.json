@@ -3,15 +3,32 @@
   "slug": "orleans-dlp-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "3a8f983fd61447982f43afe02d575231ce4f4d547806db1355f13b4a9257592f",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "6d774339ae508c998e70af0bf9ac7db58652683527c928794d452da1529cd3dc",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Orléans",
   "aliases": [
     "Orleans"
   ],
   "editionLabel": "dlp games English rules, 2014",
+  "image": {
+    "file": "/images/games/orleans-dlp-2014-en-cover.jpg",
+    "alt": "Orléans illustrated rulebook cover, dlp games bilingual edition",
+    "width": 255,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dlp-games.de/tpl/download/Orleans_EN.pdf",
+      "publisher": "dlp games"
+    },
+    "fairUse": {
+      "rightsHolder": "dlp games",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official dlp games bilingual PDF https://www.dlp-games.de/tpl/download/Orleans_EN.pdf. The front cover visibly identifies Orléans; its contents direct readers to the English rules on pages 12–21, matching the linked 2014 rules edition. Reduced to 255 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The youngest player receives the Start Player Token and starts.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
