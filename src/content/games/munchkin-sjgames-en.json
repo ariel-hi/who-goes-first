@@ -3,13 +3,30 @@
   "slug": "munchkin-sjgames-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e9b777d22f1a574056ef96942278b98de6addcb9c5f7a9fa078baddba6f55abb",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "e101baf0af1abd184c5c2f3240e7bf8076d915c8a194d7324fbf6d71055f3942",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Munchkin",
   "aliases": [],
   "editionLabel": "Steve Jackson Games English rules, version 1.8 (2019)",
+  "image": {
+    "file": "/images/games/munchkin-sjgames-en-cover.jpg",
+    "alt": "Munchkin core-set game box, Steve Jackson Games first edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://munchkin.game/site-munchkin/assets/files/1138/munchkincore_2ptbox_4.500x0.jpg",
+      "publisher": "Steve Jackson Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Steve Jackson Games / John Kovalic",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "The official Munchkin core-set product page https://munchkin.game/products/games/munchkin/ displays this first-edition box and links the exact munchkin_rules-1.pdf cited by the article; the separate 2026 second edition is a distinct product. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Decide who goes first by rolling the die (and, the rules joke, arguing about the results).",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -3,16 +3,33 @@
   "slug": "nomads-ludonaute-en-v12",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "91d73a8c67ef4e72100f0dca517308859f248f56bdb068ddc3b3c1d2ce513aa4",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "8d34eac10b65d56c5d6d998ea843d2edd9bbe60b042b4721b3856d5dbb1a78eb",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Nomads",
   "aliases": [
     "Nomades",
     "Legends of Luma: Nomads"
   ],
   "editionLabel": "Ludonaute English rules, ©2017",
+  "image": {
+    "file": "/images/games/nomads-ludonaute-en-v12-cover.jpg",
+    "alt": "Nomads English edition game box front, Ludonaute 2017",
+    "width": 360,
+    "height": 206,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.data.ludonaute.fr/Nomades/BOX/Box_Files/Nomads_Box_EN.pdf",
+      "publisher": "Ludonaute"
+    },
+    "fairUse": {
+      "rightsHolder": "Ludonaute",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Cropped only the front panel from page 1 of Ludonaute’s official English Nomads box artwork PDF. The panel and the cited 2017 English rules identify the same Nomads base game and original edition. Reduced to 360 × 206 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently told a story starts. Choosing a player at random is also an official option.",
   "officialTieBreak": "You may choose randomly instead of using the storytelling criterion; the rulebook does not limit this option to ties.",
   "houseFallback": null,
