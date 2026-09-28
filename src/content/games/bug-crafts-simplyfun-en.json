@@ -1,0 +1,40 @@
+{
+  "id": "bug-crafts-simplyfun-en",
+  "slug": "bug-crafts-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "185859dd42dad21017f8b9dd18ed0cc07834eceb4d66ccc9cf1108a7bfd869ac",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Bug Crafts",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF215",
+  "firstPlayerRule": "The first player to name a bug goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "Give that player the dice holder and all four dice."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/BugCrafts_Rules-001.pdf?v=1764707851",
+      "title": "Bug Crafts — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/bug-crafts is the accepted SimplyFun identity game-cfd2f4a9-975d-4627-adc0-928c61a328f6 (SKU SF215; accepted product response SHA-256 4deae5cc79952ba3192daf10f2c50ededa1c8e46c1b952a509631297a4a830bb). Its Rulebook link directly supplies the cited English PDF, SHA-256 1343526fcc248a3099d806eb38d69c9bc929f876d1383150227aa99f3384a563, 4614790 bytes, 8 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: The first player to name a bug goes first. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

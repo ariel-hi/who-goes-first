@@ -1,0 +1,41 @@
+{
+  "id": "ice-tumble-simplyfun-en",
+  "slug": "ice-tumble-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "21c484d76abaee4095a42f49d7607fdad70c14dcfe4bd13f2390c92184cc6e5b",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Ice Tumble",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF177",
+  "firstPlayerRule": "Whoever has traveled farthest north goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "That player begins Phase One by rolling the die. Play then proceeds clockwise.",
+    "Phase Two begins on the next player's turn after the final ice block is removed."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/IceTumble_Rules.pdf?v=1764740072",
+      "title": "Ice Tumble — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Phase One — Collecting Ice Blocks; Setup; How to Play",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/ice-tumble is the accepted SimplyFun identity game-553f1008-6580-4b68-aa64-8be229354a32 (SKU SF177; accepted product response SHA-256 5ec8309218418687ac56894f2504078c91c7266ddbb757e7c53914d972c83a38). Its Rulebook link directly supplies the cited English PDF, SHA-256 1b2694faa145bcee542c6ae8dd0b6a49ddb0ba0ec38dd3f68fafdcc110fef842, 1850897 bytes, 6 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: Whoever has traveled farthest north goes first. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

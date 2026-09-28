@@ -1,0 +1,42 @@
+{
+  "id": "dinosaur-challenge-simplyfun-en",
+  "slug": "dinosaur-challenge-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "91f27a70c186d93251bf70cd8668335a741bcf3961b72df7dd330a79af81cd06",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Dinosaur Challenge",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF138",
+  "firstPlayerRule": "The first player to name a time period from the dinosaur age starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The starter reads the top challenge disk aloud before everyone chooses a dinosaur card."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/DinosaurChallenge_Rules-002.pdf?v=1764721900",
+      "title": "Dinosaur Challenge — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup; How to Play",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/dinosaur-challenge is the accepted SimplyFun identity game-4dc26efb-aff4-4ae0-a8b4-a00fe2dcc1dd (SKU SF138; accepted product response SHA-256 bf5e5cf797ec33dd6304a8a4a47ff92572c0001e0b8375ed54369daa84e3f77f). Its Rulebook link directly supplies the cited English PDF, SHA-256 74a785d86518be0d0d26f8b0f263bb461649b2715e03ad27c7342eb30fffca86, 2117448 bytes, 8 PDF pages. Reviewed rendered opening/setup pages 3, 4 against the PDF text and product title. Opening finding: The first player to name a time period from the dinosaur age starts the game. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

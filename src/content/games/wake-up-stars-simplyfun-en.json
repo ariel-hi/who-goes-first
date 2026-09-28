@@ -1,0 +1,40 @@
+{
+  "id": "wake-up-stars-simplyfun-en",
+  "slug": "wake-up-stars-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "651b02baf582b9a65301cb536f99d5a8459f0ad1435cbab2f35ef995705b575f",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Wake Up Stars",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF176",
+  "firstPlayerRule": "The first person to make a silly face goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "Play continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/WakeUpStars_Rules.pdf?v=1764749219",
+      "title": "Wake Up Stars — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/wake-up-stars is the accepted SimplyFun identity game-56e1ca46-3953-41cf-a1c0-1ba4c6ffaa54 (SKU SF176; accepted product response SHA-256 4368ff0099178b7978c052c1b04020a9667a57cec707628e693d28dbc4523040). Its Rulebook link directly supplies the cited English PDF, SHA-256 4a926dc6511a5d7a4e612008f341fea113bf19d4ef21dc6de7906bc7b2ef397f, 879360 bytes, 6 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: The first person to make a silly face goes first. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

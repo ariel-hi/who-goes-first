@@ -1,0 +1,41 @@
+{
+  "id": "time-jumpers-simplyfun-en",
+  "slug": "time-jumpers-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "f18a5f455f726402d3cca00f1a15071fe5f3535ffcd4851c7634e734df325dd0",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Time Jumpers",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF203",
+  "firstPlayerRule": "Deal one card to each player. The player whose card is closest to 1999 goes first; a jump card counts as zero for this comparison.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The starter places their pawn on the red “Firsts” space; others place pawns clockwise on the next categories. Return the drawn cards to the deck and reshuffle.",
+    "The player on “Firsts” starts the game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/TimeJumpers_Rules_Digital.pdf?v=1764748672",
+      "title": "Time Jumpers — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/time-jumpers is the accepted SimplyFun identity game-2d2a0577-b273-4ea6-be1f-e6520962e433 (SKU SF203; accepted product response SHA-256 67e35306cb4efedc4be726aa932e6ad30c0191e7a663b6901739a027cd3458f5). Its Rulebook link directly supplies the cited English PDF, SHA-256 4bdc0d5bcca253b7263a542f00f0a970823589c04a035f330d0c1d71faecd4ba, 9601582 bytes, 10 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: Deal one card to each player. The player whose card is closest to 1999 goes first; a jump card counts as zero for this comparison. No opening tie-break identified. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

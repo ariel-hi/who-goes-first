@@ -1,0 +1,38 @@
+{
+  "id": "math-room-simplyfun-en",
+  "slug": "math-room-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "3780d75cce7846dc437e35afeb4d49ee206867492f2443ac836041891240644b",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Math Room",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF093",
+  "firstPlayerRule": "The last player to ring a doorbell goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/MathRoom_003_Rulebook.pdf?v=1764742222",
+      "title": "Math Room — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/math-room is the accepted SimplyFun identity game-7717d02c-1658-4540-bfdd-418f14c50407 (SKU SF093; accepted product response SHA-256 c6cf767b19fb213d825d06d2e25c3ea4fe4a2d04b564215a81039321f570d8bb). Its Rulebook link directly supplies the cited English PDF, SHA-256 facf36ce2b4c8c65a60c077d0143f594f572541581a2168a2c035b59a43178ff, 1108584 bytes, 6 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: The last player to ring a doorbell goes first. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

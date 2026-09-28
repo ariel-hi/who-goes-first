@@ -1,0 +1,41 @@
+{
+  "id": "savannascapes-simplyfun-en",
+  "slug": "savannascapes-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "0b589f58a533688161774419348ffe7cde311b2c805732394dc26ae15bcc9dae",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "SavannaScapes",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF197",
+  "firstPlayerRule": "Each player draws a tile from the bag. The player whose tile name comes first alphabetically goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "Turn order continues clockwise.",
+    "The manual does not specify how to resolve matching tile names."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Savannascapes_DigitalRules.pdf?v=1764745865",
+      "title": "SavannaScapes — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/savannascapes is the accepted SimplyFun identity game-3e8c9fcd-ea25-46c0-ab98-ac17850d022c (SKU SF197; accepted product response SHA-256 559d06ac2dcc3b84b5c6865b95d8fde7126d61d05d5dc9b624e2a31b4e90eb5d). Its Rulebook link directly supplies the cited English PDF, SHA-256 ce87da852fe2e13dd83b5f7ff43dbe934c79a07db486630656c24d37ddd56100, 6488607 bytes, 10 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: Each player draws a tile from the bag. The player whose tile name comes first alphabetically goes first. No opening tie-break identified. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "math-medalist-simplyfun-en",
+  "slug": "math-medalist-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "1e1d8a3dbd73b04e24adb0f5091d6848e1008ab5426a9b615a3c8e4a4f89e452",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Math Medalist",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF162",
+  "firstPlayerRule": "Choose a game first. In Multiplication Zones, the first person to multiply their age by two starts. In Field of Hundreds, the first person to add 100 + 90 + 10 starts.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The two sides of the gameboard have different opening criteria. Use the one for the game being played.",
+    "In Multiplication Zones, later rounds pass the starting role clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/MathMedalist_Rules_12.12.pdf?v=1764741893",
+      "title": "Math Medalist — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "unpaginated",
+        "unpaginated",
+        "unpaginated"
+      ],
+      "pdfPagesOneBased": [
+        2,
+        3,
+        4
+      ],
+      "location": "Multiplication Zones Setup; On Your Turn; Field of Hundreds Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/math-medalist is the accepted SimplyFun identity game-3e55d498-4528-434e-8853-01a11798a04e (SKU SF162; accepted product response SHA-256 20394cec9d86f3b12eebf90dc4c0f34f040a12a75e83c7aa7b0c56a0bd60073d). Its Rulebook link directly supplies the cited English PDF, SHA-256 d96abbed7b91cfc382e569ae22f5877c2716c584af0c78631ec20d7e2b08a09f, 19766154 bytes, 4 PDF pages. Reviewed rendered opening/setup pages 2, 3, 4 against the PDF text and product title. Opening finding: Choose a game first. In Multiplication Zones, the first person to multiply their age by two starts. In Field of Hundreds, the first person to add 100 + 90 + 10 starts. No opening tie-break identified. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "Neither game mode states how to break a tie in its speed-based opening criterion.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

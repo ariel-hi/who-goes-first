@@ -1,0 +1,43 @@
+{
+  "id": "sumology-simplyfun-en",
+  "slug": "sumology-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "098aac7081723c89a90fe27c5e3aae7148d64ebc1196aa4cd4e3d49e58c7ee3c",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Sumology",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF070",
+  "firstPlayerRule": "After everyone receives eight tiles, each player or team reveals its lowest number tile. The player or team with the lowest number goes first.",
+  "officialTieBreak": "If tied, reveal the second-lowest number, continuing through the tiles until the tie is resolved.",
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The manual permits up to four individuals or two teams of two or more; apply the comparison to the players or teams in your game.",
+    "The starter must form a valid equation using the = tile already in the middle. Play then continues clockwise."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Sumology_Rules-003.pdf?v=1764747567",
+      "title": "Sumology — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3",
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        4
+      ],
+      "location": "Setup; How to Play",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/sumology is the accepted SimplyFun identity game-0b11441f-bc94-4b86-87cd-3e49545ea3db (SKU SF070; accepted product response SHA-256 a53aaee6d6b5d0f66c0b0c87ca6bd7ff15b21c8226f90111c19845dfaa04b9d0). Its Rulebook link directly supplies the cited English PDF, SHA-256 5061ebaebf57adf141ff4ce3ce0af9269f311dd54c2386ddc8eef31b9cb54ee0, 3511570 bytes, 8 PDF pages. Reviewed rendered opening/setup pages 3, 4 against the PDF text and product title. Opening finding: After everyone receives eight tiles, each player or team reveals its lowest number tile. The player or team with the lowest number goes first. Official opening tie-break: If tied, reveal the second-lowest number, continuing through the tiles until the tie is resolved. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual does not say what to do if all eight compared numbers remain tied.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

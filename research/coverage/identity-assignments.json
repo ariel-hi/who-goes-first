@@ -220,6 +220,506 @@
       "reviewedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "398deff9fb58d1ae1af3f645ede2652ff7bf979c775742df8b2aad745190ae59"
+    },
+    {
+      "ruleId": "dinosaur-challenge-simplyfun-en",
+      "ruleRevision": "91f27a70c186d93251bf70cd8668335a741bcf3961b72df7dd330a79af81cd06",
+      "identityId": "game-4dc26efb-aff4-4ae0-a8b4-a00fe2dcc1dd",
+      "identityRevision": "6ff8c70399c591cfece054e1fb564b7bea9e0961879c33440467720aa7ca0df9",
+      "editionScope": "SimplyFun English rules linked from product SKU SF138",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/dinosaur-challenge",
+          "sha256": "bf5e5cf797ec33dd6304a8a4a47ff92572c0001e0b8375ed54369daa84e3f77f",
+          "location": "Accepted SimplyFun product page identifies Dinosaur Challenge as SKU SF138 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/DinosaurChallenge_Rules-002.pdf?v=1764721900",
+          "sha256": "74a785d86518be0d0d26f8b0f263bb461649b2715e03ad27c7342eb30fffca86",
+          "location": "PDF pages 3, 4; Setup; How to Play",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "ddba9f5f771fdeedac74135a8782ceb40945a1657383caf9166dd014f19d07a7"
+    },
+    {
+      "ruleId": "eye-to-eye-simplyfun-en",
+      "ruleRevision": "960dee901ea5df928578ade35af0048ba95799814d5082f12f716595da92eb55",
+      "identityId": "game-0986ac7a-25f8-4f7a-953a-0c30f8f1f3cc",
+      "identityRevision": "c524d07862a745633a414c463e593efc0e23eb4de712a3fe2a3dd9e3e38b5ce7",
+      "editionScope": "SimplyFun English rules linked from product SKU SF001",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/eye-to-eye",
+          "sha256": "8efbdf6b4895d309b12ef55ba74b60ecc3a990aa464b11438ec20fe59462173f",
+          "location": "Accepted SimplyFun product page identifies Eye to Eye as SKU SF001 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/eye2eye_rules.pdf?v=1764723193",
+          "sha256": "93dff60ce529b4ba3f6f6dc43078249e3f4df19dd93c5dca76720b449e26c832",
+          "location": "PDF pages 1, 2; Quick Rules step 3; Setting up the Game; Playing the Game",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "938ba39acfaff856512e132a3f4251eea3b3a9230d64e1985496885f795a2cff"
+    },
+    {
+      "ruleId": "slideascope-simplyfun-en",
+      "ruleRevision": "5403fbaef4f3e8eb9c1d37b5e3177b02a087ad9d0480d5b84400b9fdc1cee157",
+      "identityId": "game-c524621f-dcc6-4648-9fac-1cf17bce3177",
+      "identityRevision": "d86571af7452e0f500c6942b66f5553212b2af7486ffa98ec8bbc721c6fce0d4",
+      "editionScope": "SimplyFun English rules linked from product SKU SF210",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/slideascope",
+          "sha256": "c73b74aa9c075f58ec24f4eb54b1ca600ae4bd72455874a62d5e43e138d647c8",
+          "location": "Accepted SimplyFun product page identifies SlideAscope as SKU SF210 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Slideascope_001__Rules.pdf?v=1764746736",
+          "sha256": "ddab7104337a54839940cf823a566559ec1cbda26a62ad4cddf6f82de50d83a2",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "67eabffcc61f15dcc2d96584c882908a6a56db45c849a9ea4afdde995c67d533"
+    },
+    {
+      "ruleId": "wake-up-stars-simplyfun-en",
+      "ruleRevision": "651b02baf582b9a65301cb536f99d5a8459f0ad1435cbab2f35ef995705b575f",
+      "identityId": "game-56e1ca46-3953-41cf-a1c0-1ba4c6ffaa54",
+      "identityRevision": "24002e7790e940030e1adcd884777924b04f5e3b28a03e1b8963b14426006333",
+      "editionScope": "SimplyFun English rules linked from product SKU SF176",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/wake-up-stars",
+          "sha256": "4368ff0099178b7978c052c1b04020a9667a57cec707628e693d28dbc4523040",
+          "location": "Accepted SimplyFun product page identifies Wake Up Stars as SKU SF176 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/WakeUpStars_Rules.pdf?v=1764749219",
+          "sha256": "4a926dc6511a5d7a4e612008f341fea113bf19d4ef21dc6de7906bc7b2ef397f",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "557ffe51a69946b83dbe9fbe0e933b878842d732aa0900f69d68c5ef6fb73db0"
+    },
+    {
+      "ruleId": "bug-crafts-simplyfun-en",
+      "ruleRevision": "185859dd42dad21017f8b9dd18ed0cc07834eceb4d66ccc9cf1108a7bfd869ac",
+      "identityId": "game-cfd2f4a9-975d-4627-adc0-928c61a328f6",
+      "identityRevision": "ea5eaf238da24bf2db7071bc84c63d91e3d813b46ad2fe61a1485c98021b658e",
+      "editionScope": "SimplyFun English rules linked from product SKU SF215",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/bug-crafts",
+          "sha256": "4deae5cc79952ba3192daf10f2c50ededa1c8e46c1b952a509631297a4a830bb",
+          "location": "Accepted SimplyFun product page identifies Bug Crafts as SKU SF215 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/BugCrafts_Rules-001.pdf?v=1764707851",
+          "sha256": "1343526fcc248a3099d806eb38d69c9bc929f876d1383150227aa99f3384a563",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "f0203f86859caa60b2bccac525286aa2df5960d1f251c0295d80cb68283e04aa"
+    },
+    {
+      "ruleId": "crystal-cup-rally-simplyfun-en",
+      "ruleRevision": "4e716dfb0c8b4656fb1cb971b025a662b9c6ff6d28a9c2dbb9c89386ca481acc",
+      "identityId": "game-82b39523-3d1e-4fcb-b5ce-78017daa8045",
+      "identityRevision": "3556976176a4bf0dfa31e941ab8b5b3f08c6ada8dce0191341b0bfdca07273dc",
+      "editionScope": "SimplyFun English rules linked from product SKU SF180",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/crystal-cup-rally",
+          "sha256": "61371f4515058d3039b5df1af0caf432dc3d296c09b04ddc9d70fd9619c187f6",
+          "location": "Accepted SimplyFun product page identifies Crystal Cup Rally as SKU SF180 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/CrystalCupRally_RulesPages.pdf?v=1764709254",
+          "sha256": "4a4d5b34c0350390ba53eaba6a018f5cb9275c9e89d2c7c4f6f04ae62abc1436",
+          "location": "PDF pages 3; Setup; Starting Positions",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "e74a09162fabe29050c1ae38439f7efcad5bcb1491cbba27b6ef1087a3021a58"
+    },
+    {
+      "ruleId": "digger-s-garden-match-simplyfun-en",
+      "ruleRevision": "1799bd76768d8ed55548c74206cffdd62342ea31b423f2b4de9aee0e766d7787",
+      "identityId": "game-79cd4c67-043c-4e29-870c-d95b8739d16b",
+      "identityRevision": "0bbd870e406b62fff1dc2c38fef78c48d695479b2d61d91675fab7f6b1db38ca",
+      "editionScope": "SimplyFun English rules linked from product SKU SF058",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/diggers-garden-match",
+          "sha256": "64e1647a1ecac281636b8d5bf8dcc69a5a426e0bd424c6760c22d19b2063e7ff",
+          "location": "Accepted SimplyFun product page identifies Digger's Garden Match as SKU SF058 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/DiggersGardenMatchRules-005.2021.pdf?v=1764721750",
+          "sha256": "400fb5bd419ece69a8f9cca43bc471c08aa01a6e33f0d2ef54cff68435a840a3",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "9e18d80fc4775b770826d081d81908eac824f531740b723cf9375d121cef349e"
+    },
+    {
+      "ruleId": "dreaming-dragon-simplyfun-en",
+      "ruleRevision": "9c66f3dc0375caee492f1311277ce68be1643eb37060188a31079c06e8ccfc66",
+      "identityId": "game-8059c227-9b1e-4ddd-92e9-fb909fde62f9",
+      "identityRevision": "beddac2232d2d7b98f4a1f20e17c13524b73b1f766d11868edbee8baa7871453",
+      "editionScope": "SimplyFun English rules linked from product SKU SF082",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/dreaming-dragon",
+          "sha256": "df5a25e46ad117fda9ad8c922d336d2355e32350b8b31d4b6b7953a899e0c3c3",
+          "location": "Accepted SimplyFun product page identifies Dreaming Dragon as SKU SF082 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/DreamingDragon_Rules.pdf?v=1764722785",
+          "sha256": "207ffa045773feb8fe7c999eb2f9fd5008f10caa9b014b8ddbc92ac9fd084962",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "6ffe277cdbce217d1a13597edcc8444817bd13606ade951be09868b77aba061e"
+    },
+    {
+      "ruleId": "glow-spotters-simplyfun-en",
+      "ruleRevision": "835c3cc6b1130cb67b51c4f7d3915c21e62fee69725c9a991460eeccd6dcd3b6",
+      "identityId": "game-00e1ebcd-f843-4695-94bf-23ee002e48b5",
+      "identityRevision": "2be335a1124904581f5ede7c4efb74e39948b0ef5c6d6fc8a6133626795eb939",
+      "editionScope": "SimplyFun English rules linked from product SKU SF184",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/glow-spotters",
+          "sha256": "f04db8543509e00883fc878d1f52bc7c5ab3e9f45561d5d7c04dbba9fea623d4",
+          "location": "Accepted SimplyFun product page identifies Glow Spotters as SKU SF184 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/GlowSpotters_Rules_Single.pdf?v=1764730971",
+          "sha256": "8aaa3b95318c61f24f9c1959c667b6323cfcfac019757978184c8e55086c7937",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "9be917bcafa0585231f2c7c94ea9eee488997efeb62ac5d3be12636bf51ddef8"
+    },
+    {
+      "ruleId": "ice-tumble-simplyfun-en",
+      "ruleRevision": "21c484d76abaee4095a42f49d7607fdad70c14dcfe4bd13f2390c92184cc6e5b",
+      "identityId": "game-553f1008-6580-4b68-aa64-8be229354a32",
+      "identityRevision": "d3df5a6bcb0cf8680a9540e0ce116cbf6adae3aa8770fc3f00e3c9548075c4d8",
+      "editionScope": "SimplyFun English rules linked from product SKU SF177",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/ice-tumble",
+          "sha256": "5ec8309218418687ac56894f2504078c91c7266ddbb757e7c53914d972c83a38",
+          "location": "Accepted SimplyFun product page identifies Ice Tumble as SKU SF177 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/IceTumble_Rules.pdf?v=1764740072",
+          "sha256": "1b2694faa145bcee542c6ae8dd0b6a49ddb0ba0ec38dd3f68fafdcc110fef842",
+          "location": "PDF pages 3; Phase One — Collecting Ice Blocks; Setup; How to Play",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "dd5a18e2a6a3194439c9ac7d6b24c93fe026c3de035239ee8a44eb9a66378ff2"
+    },
+    {
+      "ruleId": "is-or-isn-t-simplyfun-en",
+      "ruleRevision": "67ca9af5530cea7ef85cd05f23ce6cfd351687bdbce06ae5fb85c74ef227571b",
+      "identityId": "game-0b9bc3c1-8600-4f18-8ad3-458d781f0209",
+      "identityRevision": "e8efb6fe0c881358cd5e568d7dd6a618f2a4787107640a47191af78fb263832f",
+      "editionScope": "SimplyFun English rules linked from product SKU SF192",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/is-or-isnt",
+          "sha256": "1b54780775bbe48bfaa128b850f2f144fd97fb11c4c1e1df60007ead73fd05dd",
+          "location": "Accepted SimplyFun product page identifies Is or Isn't as SKU SF192 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/IsorIsn_t_RulesBooklet_Digital.pdf?v=1764740181",
+          "sha256": "b7093e590cdf5bb309c469cff71d70573d8cd91dbbd71525c506221754f5d3fa",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "81d82c8018e21cfa15ff799f8c488a2ab6596eecbf06f7120dc6c0b8abc1b1b9"
+    },
+    {
+      "ruleId": "math-medalist-simplyfun-en",
+      "ruleRevision": "1e1d8a3dbd73b04e24adb0f5091d6848e1008ab5426a9b615a3c8e4a4f89e452",
+      "identityId": "game-3e55d498-4528-434e-8853-01a11798a04e",
+      "identityRevision": "877b333833a30937ab79de9b386188e0a757b4ada1101a6a00f8accfff3019bb",
+      "editionScope": "SimplyFun English rules linked from product SKU SF162",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/math-medalist",
+          "sha256": "20394cec9d86f3b12eebf90dc4c0f34f040a12a75e83c7aa7b0c56a0bd60073d",
+          "location": "Accepted SimplyFun product page identifies Math Medalist as SKU SF162 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/MathMedalist_Rules_12.12.pdf?v=1764741893",
+          "sha256": "d96abbed7b91cfc382e569ae22f5877c2716c584af0c78631ec20d7e2b08a09f",
+          "location": "PDF pages 2, 3, 4; Multiplication Zones Setup; On Your Turn; Field of Hundreds Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "25e630b50dcffd40019f812712e17b8c5b1bc4c50fd458e27b16fdff99298198"
+    },
+    {
+      "ruleId": "math-room-simplyfun-en",
+      "ruleRevision": "3780d75cce7846dc437e35afeb4d49ee206867492f2443ac836041891240644b",
+      "identityId": "game-7717d02c-1658-4540-bfdd-418f14c50407",
+      "identityRevision": "a529ef292f126ed06b5677c73c648a08e077e386fb42cd626da73251b28a9d38",
+      "editionScope": "SimplyFun English rules linked from product SKU SF093",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/math-room",
+          "sha256": "c6cf767b19fb213d825d06d2e25c3ea4fe4a2d04b564215a81039321f570d8bb",
+          "location": "Accepted SimplyFun product page identifies Math Room as SKU SF093 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/MathRoom_003_Rulebook.pdf?v=1764742222",
+          "sha256": "facf36ce2b4c8c65a60c077d0143f594f572541581a2168a2c035b59a43178ff",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "6be7290e7266d35b7ee4377dc22b200ddc03e7e88b367fb4035bdf4e7a628199"
+    },
+    {
+      "ruleId": "owl-solve-that-simplyfun-en",
+      "ruleRevision": "4f1196deca3933b7ac02d7a230d468566ec2e19d8b7141cf6138d04db4255b11",
+      "identityId": "game-c5f7ea8b-d410-4f82-8614-9783b8ef7b08",
+      "identityRevision": "9b6eeea9438bd60e53f7119e42fff530423f182eaff13611059b486f7094a2ff",
+      "editionScope": "SimplyFun English rules linked from product SKU SF169",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/owl-solve-that",
+          "sha256": "01f6048b968db83fb77bfed1130ae53c43cc81289883aea9e924c717e0f126e0",
+          "location": "Accepted SimplyFun product page identifies Owl Solve That! as SKU SF169 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Owl_Solve_That_Rulebook.pdf?v=1764743743",
+          "sha256": "6a2dc992f32a95c14720ed1a5f535b16b61d7c606a70d8aad521be5f7cf621d5",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "44cd404f3a7b9b1b9fc3950703c4dbe9c010d4e89902a9449df7ea337d0b7a84"
+    },
+    {
+      "ruleId": "prickly-path-simplyfun-en",
+      "ruleRevision": "71c6d6506fccad714b50032e4a226287acd442b4a1cb5eacf520a226dc8b0b78",
+      "identityId": "game-b42cc46b-d3cd-4685-8762-b90cd7122e10",
+      "identityRevision": "dedd25f856e2f47c33718b7e1c3551811d408215a53e524eaf5249ef46656fdc",
+      "editionScope": "SimplyFun English rules linked from product SKU SF207",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/prickly-path",
+          "sha256": "da9ebfe8c79d2525e707b2b85d6358e98aeb734edd584654b4772d4775f5020f",
+          "location": "Accepted SimplyFun product page identifies Prickly Path as SKU SF207 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/PricklyPath_Rules_Digital.pdf?v=1764745024",
+          "sha256": "4ca0bc8dd2a85f34f6ce373cfefcc6172a5db22180bf291cc67f98088a3b12b6",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "95813ffa0ae49c2113618f85388ccf58c05c07835813cdd6d73addc3932acdc5"
+    },
+    {
+      "ruleId": "savannascapes-simplyfun-en",
+      "ruleRevision": "0b589f58a533688161774419348ffe7cde311b2c805732394dc26ae15bcc9dae",
+      "identityId": "game-3e8c9fcd-ea25-46c0-ab98-ac17850d022c",
+      "identityRevision": "223941b9cc052b0af6d0b294f6a2a7ebff55c5d5426b223f083599552b58de94",
+      "editionScope": "SimplyFun English rules linked from product SKU SF197",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/savannascapes",
+          "sha256": "559d06ac2dcc3b84b5c6865b95d8fde7126d61d05d5dc9b624e2a31b4e90eb5d",
+          "location": "Accepted SimplyFun product page identifies SavannaScapes as SKU SF197 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Savannascapes_DigitalRules.pdf?v=1764745865",
+          "sha256": "ce87da852fe2e13dd83b5f7ff43dbe934c79a07db486630656c24d37ddd56100",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "baa425a20cadca8e3429ac07a3882ea8511653153b6eed40968f11c63f5c6d35"
+    },
+    {
+      "ruleId": "sumology-simplyfun-en",
+      "ruleRevision": "098aac7081723c89a90fe27c5e3aae7148d64ebc1196aa4cd4e3d49e58c7ee3c",
+      "identityId": "game-0b11441f-bc94-4b86-87cd-3e49545ea3db",
+      "identityRevision": "7773ba0fd26c4e5a1185bdd8a8771eda865d308bebf57ef18d3e6d2a7ea2fb1d",
+      "editionScope": "SimplyFun English rules linked from product SKU SF070",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/sumology",
+          "sha256": "a53aaee6d6b5d0f66c0b0c87ca6bd7ff15b21c8226f90111c19845dfaa04b9d0",
+          "location": "Accepted SimplyFun product page identifies Sumology as SKU SF070 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Sumology_Rules-003.pdf?v=1764747567",
+          "sha256": "5061ebaebf57adf141ff4ce3ce0af9269f311dd54c2386ddc8eef31b9cb54ee0",
+          "location": "PDF pages 3, 4; Setup; How to Play",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "af3d2ad25c43cfadde56adeffec044af05ee7c610cc300a0f6a143faf111fef0"
+    },
+    {
+      "ruleId": "the-climbing-knights-simplyfun-en",
+      "ruleRevision": "d317f0746a9761fade99e9322515439a4608af479c61451f8f83147849090b3b",
+      "identityId": "game-398db21a-c0c0-44b9-80c0-804175f49b86",
+      "identityRevision": "a060ccd38740810713a5d9db6568d283b772a2fbc28488604fa32da04e47dcfe",
+      "editionScope": "SimplyFun English rules linked from product SKU SF142",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/the-climbing-knights",
+          "sha256": "56f26efcbcf6ee3438578ac2ef6a16e9e44390acf02db7cbc01f713ca654bdf7",
+          "location": "Accepted SimplyFun product page identifies The Climbing Knights as SKU SF142 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/ClimbingKnights_Rules-002.pdf?v=1764708554",
+          "sha256": "a7f46d8b489aee62791567d15d262691a6e13a0b289ba99d23e3214e747cafcf",
+          "location": "PDF pages 3; Setup; final setup bullet",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "d1d546efea30abd60f50298516dd9684b5ec795dfd192fb1cbeb65ab362ecb55"
+    },
+    {
+      "ruleId": "time-jumpers-simplyfun-en",
+      "ruleRevision": "f18a5f455f726402d3cca00f1a15071fe5f3535ffcd4851c7634e734df325dd0",
+      "identityId": "game-2d2a0577-b273-4ea6-be1f-e6520962e433",
+      "identityRevision": "3beb3b507a63948004911b8c64df915098025e8927c3584fe2332767fac65ed9",
+      "editionScope": "SimplyFun English rules linked from product SKU SF203",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/time-jumpers",
+          "sha256": "67e35306cb4efedc4be726aa932e6ad30c0191e7a663b6901739a027cd3458f5",
+          "location": "Accepted SimplyFun product page identifies Time Jumpers as SKU SF203 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/TimeJumpers_Rules_Digital.pdf?v=1764748672",
+          "sha256": "4bdc0d5bcca253b7263a542f00f0a970823589c04a035f330d0c1d71faecd4ba",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "ed7ac5775c4b13d5482f5098445a887b8a885c1d4bd044773507fc6d4e98d5f8"
+    },
+    {
+      "ruleId": "trifusion-simplyfun-en",
+      "ruleRevision": "aa62c45d1eaadae0018bf9e493fb568ff3ad05ae42621c29c62087ce88e0618d",
+      "identityId": "game-7a9e2e56-cca4-462e-b87a-152ddb294817",
+      "identityRevision": "d4fafa88cc55bac268b31640a83eecc9ffda686593151272eb63f07eb531fecc",
+      "editionScope": "SimplyFun English rules linked from product SKU SF085",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/trifusion",
+          "sha256": "93a81dc83f148b805856ebc99a52bd7e8a6c8ae6761cdaf644e497132958d74a",
+          "location": "Accepted SimplyFun product page identifies Trifusion as SKU SF085 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and rulebook link bind this exact marketed product to the English PDF; no earlier printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Trifusion_Rules.pdf?v=1764748981",
+          "sha256": "8330b597b1cfb8c322011c6e069f7caf201cbadff3591897d4f4f5263f0e8cd8",
+          "location": "PDF pages 1, 2; Game Setup; Starting Player; Score Keeper",
+          "correspondence": "Publisher-linked English PDF names the same game and describes the matching physical components; opening rule is cited from this file."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "91aaf6879318f0d2e7429bea4f58bd848ed7b01aecd27059971f6e6c0fcc5570"
     }
   ]
 }

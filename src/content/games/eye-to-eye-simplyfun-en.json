@@ -1,0 +1,43 @@
+{
+  "id": "eye-to-eye-simplyfun-en",
+  "slug": "eye-to-eye-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "960dee901ea5df928578ade35af0048ba95799814d5082f12f716595da92eb55",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Eye to Eye",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF001",
+  "firstPlayerRule": "The person with the most unique eyes starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The starter reads the first category card; everyone then writes answers at the same time.",
+    "The manual gives no method for deciding whose eyes are most unique."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/eye2eye_rules.pdf?v=1764723193",
+      "title": "Eye to Eye — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "unpaginated",
+        "unpaginated"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Quick Rules step 3; Setting up the Game; Playing the Game",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/eye-to-eye is the accepted SimplyFun identity game-0986ac7a-25f8-4f7a-953a-0c30f8f1f3cc (SKU SF001; accepted product response SHA-256 8efbdf6b4895d309b12ef55ba74b60ecc3a990aa464b11438ec20fe59462173f). Its Rulebook link directly supplies the cited English PDF, SHA-256 93dff60ce529b4ba3f6f6dc43078249e3f4df19dd93c5dca76720b449e26c832, 593256 bytes, 3 PDF pages. Reviewed rendered opening/setup pages 1, 2 against the PDF text and product title. Opening finding: The person with the most unique eyes starts the game. No opening tie-break identified. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The unique-eyes comparison is subjective and the manual gives no way to settle disagreement.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

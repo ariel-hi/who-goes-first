@@ -1,0 +1,40 @@
+{
+  "id": "owl-solve-that-simplyfun-en",
+  "slug": "owl-solve-that-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "4f1196deca3933b7ac02d7a230d468566ec2e19d8b7141cf6138d04db4255b11",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Owl Solve That!",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF169",
+  "firstPlayerRule": "Everyone draws a random number card. The player with the highest number goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The manual does not say how to resolve equal highest numbers."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Owl_Solve_That_Rulebook.pdf?v=1764743743",
+      "title": "Owl Solve That! — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/owl-solve-that is the accepted SimplyFun identity game-c5f7ea8b-d410-4f82-8614-9783b8ef7b08 (SKU SF169; accepted product response SHA-256 01f6048b968db83fb77bfed1130ae53c43cc81289883aea9e924c717e0f126e0). Its Rulebook link directly supplies the cited English PDF, SHA-256 6a2dc992f32a95c14720ed1a5f535b16b61d7c606a70d8aad521be5f7cf621d5, 9024596 bytes, 8 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: Everyone draws a random number card. The player with the highest number goes first. No opening tie-break identified. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

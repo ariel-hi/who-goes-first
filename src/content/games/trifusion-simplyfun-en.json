@@ -1,0 +1,43 @@
+{
+  "id": "trifusion-simplyfun-en",
+  "slug": "trifusion-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "aa62c45d1eaadae0018bf9e493fb568ff3ad05ae42621c29c62087ce88e0618d",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Trifusion",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF085",
+  "firstPlayerRule": "The youngest player starts by placing any of their game tiles in the center of the table.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The oldest player keeps score with the score pad and pencil; that role is separate from starting.",
+    "The starter receives five points for their first turn as a special scoring exception."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Trifusion_Rules.pdf?v=1764748981",
+      "title": "Trifusion — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "unpaginated",
+        "unpaginated"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
+      "location": "Game Setup; Starting Player; Score Keeper",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/trifusion is the accepted SimplyFun identity game-7a9e2e56-cca4-462e-b87a-152ddb294817 (SKU SF085; accepted product response SHA-256 93a81dc83f148b805856ebc99a52bd7e8a6c8ae6761cdaf644e497132958d74a). Its Rulebook link directly supplies the cited English PDF, SHA-256 8330b597b1cfb8c322011c6e069f7caf201cbadff3591897d4f4f5263f0e8cd8, 643422 bytes, 2 PDF pages. Reviewed rendered opening/setup pages 1, 2 against the PDF text and product title. Opening finding: The youngest player starts by placing any of their game tiles in the center of the table. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

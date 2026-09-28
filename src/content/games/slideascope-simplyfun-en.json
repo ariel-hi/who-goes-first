@@ -1,0 +1,39 @@
+{
+  "id": "slideascope-simplyfun-en",
+  "slug": "slideascope-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
+  "approvedRevision": "5403fbaef4f3e8eb9c1d37b5e3177b02a087ad9d0480d5b84400b9fdc1cee157",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "SlideAscope",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF210",
+  "firstPlayerRule": "Each player draws two tiles and adds their numbers. The player with the highest sum goes first.",
+  "officialTieBreak": "If there is a tie, the tied players draw again.",
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "Give the starter the starting token, then return all drawn tiles to the bag."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Slideascope_001__Rules.pdf?v=1764746736",
+      "title": "SlideAscope — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/slideascope is the accepted SimplyFun identity game-c524621f-dcc6-4648-9fac-1cf17bce3177 (SKU SF210; accepted product response SHA-256 c73b74aa9c075f58ec24f4eb54b1ca600ae4bd72455874a62d5e43e138d647c8). Its Rulebook link directly supplies the cited English PDF, SHA-256 ddab7104337a54839940cf823a566559ec1cbda26a62ad4cddf6f82de50d83a2, 3974360 bytes, 8 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: Each player draws two tiles and adds their numbers. The player with the highest sum goes first. Official opening tie-break: If there is a tie, the tied players draw again. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
+  "uncertainty": [
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}
