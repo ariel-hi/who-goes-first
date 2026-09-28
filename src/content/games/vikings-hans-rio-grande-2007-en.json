@@ -3,10 +3,10 @@
   "slug": "vikings-hans-rio-grande-2007-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "46ba6dde7b7f22808dae333ee47d65915ebc10d295771e2d7f1140b4b495290f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b4ffc08391a51564b3312bfbd5b818cc7838ca0c5290f39dcc61ef5c8d17eb2d",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Vikings",
   "aliases": [],
   "editionLabel": "Hans im Glück / Rio Grande Games English rules, 2007",
@@ -42,5 +42,22 @@
   "internalEvidence": "Rendered page 1 gives the choose-a-player instruction and start player figure; page 2 gives the first offering and clockwise purchase order. Page 7 passes the figure, and page 8 credits Hans im Glück / Rio Grande ©2007. Viking pieces and wheel match inventory BGG 27173. SHA-256: 2512f8135e3738914a4d53dd206e0cab8ce6ad0985581f790842726a7be8e1cc. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The booklet does not prescribe how to choose the initial starter."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/vikings-hans-rio-grande-2007-en-cover.jpg",
+    "alt": "Original 2007 Rio Grande Games Vikings box with warriors and longships",
+    "width": 302,
+    "height": 410,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/2/jpg500/26127800097ug.jpg",
+      "publisher": "Noble Knight Games original 2007 Rio Grande Games Vikings box photo"
+    },
+    "fairUse": {
+      "rightsHolder": "Hans im Glück, Rio Grande Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rules masthead used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147372602/Vikings. Retail listing identifies Rio Grande Games publisher, 2007 release, Michael Kiesling, and manufacturing number RGG314. The visible Rio Grande logo confirms this is the original English box, not the later Z-Man reprint. Original image URL: https://image.nobleknight.com/2/jpg500/26127800097ug.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

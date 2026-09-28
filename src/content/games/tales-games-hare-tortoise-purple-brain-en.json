@@ -3,10 +3,10 @@
   "slug": "tales-games-hare-tortoise-purple-brain-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6df75b8659c879795ede953f71695ef638bd047cfb97a1e2cf8eb707ccf855b1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "9ca0ef89c2f1c84399b6bafb8b8a65db4a57394b8d2f36dde0eb867a4e86be6a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tales & Games: The Hare & the Tortoise",
   "aliases": [],
   "editionLabel": "Purple Brain Creations English rules",
@@ -39,5 +39,22 @@
   "internalEvidence": "Rendered pages 2, 6, and 8 show the time-call criterion and clockwise token handoff. The track, five animal pawns, Racing cards and apprentice variant identify the Tales & Games race in inventory BGG 130176. SHA-256: 179ea1be088fe63dcaa05fb6539c0648141e60debf0bf54c8c9702dab3eaad4c. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is given for simultaneous calls."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tales-games-hare-tortoise-purple-brain-en-cover.jpg",
+    "alt": "Book-shaped English Tales & Games The Hare & the Tortoise box with racing tortoise and hare",
+    "width": 322,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/i/jpg1500/iel000tbd1.jpg",
+      "publisher": "Noble Knight Games 2014 IELLO English Tales & Games box image"
+    },
+    "fairUse": {
+      "rightsHolder": "Purple Brain Creations, IELLO and Mathieu Leyssenne",
+      "rationale": "Reduced game packaging or publisher rules masthead used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147556152/Hare-and-the-Tortoise-The. Retail page identifies the 2014 IELLO English box. It is the English distribution of Purple Brain Creations’ third Tales & Games title; its book-shaped packaging and title match the cited English rules. Original image URL: https://image.nobleknight.com/i/jpg1500/iel000tbd1.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
