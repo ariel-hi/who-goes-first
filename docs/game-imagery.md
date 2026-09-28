@@ -26,8 +26,9 @@ Downloaded 2026-09-27 from the download linked by
   lettering at this scale. The solid white tile provides contrast in both themes.
 - No colour changes, filters, cropping, outlines, animation, rotation, or added
   elements inside the artwork. Padding and the tile sit outside the image.
-- The card links to Amazon, preserves the Associates disclosure immediately
-  underneath, and includes Amazon's required trademark attribution.
+- The card links to Amazon and shows the exact one-sentence Associates
+  disclosure immediately underneath. Amazon's trademark attribution appears
+  on the Privacy page.
 
 Keep this file unchanged. Recheck the official guidelines before changing its
 placement or replacing the asset.
