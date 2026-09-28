@@ -3,13 +3,30 @@
   "slug": "qwirkle-mindware-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ca3c2dae5023b4f42ef30b40115082fe99552d9497e26267f18ba66105412905",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "fa2834d1f224e72ff8847becf43f6245f7b0ec0eaf62c3a1b0c0adfbed59205e",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Qwirkle",
   "aliases": [],
   "editionLabel": "MindWare Qwirkle English instructions",
+  "image": {
+    "file": "/images/games/qwirkle-mindware-en-cover.jpg",
+    "alt": "Qwirkle game cover, MindWare edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://i.mindware.com/transform/PDPMAIN_D_MW/b967fac4-e0b3-49c4-8e68-f06b112a22aa/Qwirkle_Tile_Matching_Game_8211_AwardWinning_Strategy_Game_for_Family_Game_Night",
+      "publisher": "MindWare"
+    },
+    "fairUse": {
+      "rightsHolder": "MindWare / Susan McKinley Ross",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.mindware.orientaltrading.com/qwirkle-tile-matching-game-award-winning-strategy-game-for-family-game-night-a2-32016.fltr. The publisher product page for original Qwirkle article 32016 links the English and Spanish rules and shows the standard tile-game box, distinct from later Color Blind Friendly or Flex editions. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Each player states the largest number of tiles they can play in one color or one shape without duplicates. The player with the largest such group plays those tiles first.",
   "officialTieBreak": "If players have equally large opening groups, the oldest of those players goes first.",
   "houseFallback": null,
