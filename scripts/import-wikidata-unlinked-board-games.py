@@ -160,8 +160,9 @@ def make_snapshot(raw: bytes, retrieved_at: str):
             "rawResponseSha256": sha256(raw).hexdigest(),
             "statementSha256": sha256(canonical.encode("utf-8")).hexdigest(),
         },
-        "registryInputs": {str(path.relative_to(ROOT)).replace("\\", "/"): sha256(path.read_bytes()).hexdigest()
+        "registryInputs": {str(path.relative_to(ROOT)).replace("\\", "/"): sha256(path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
                            for path in [LEGACY, PUBLISHER, OLDER, NATIVE, REVIEW, NATIVE_REVIEW]},
+        "registryInputHashNormalization": "CRLF normalized to LF before SHA-256",
         "scope": "Direct P31 board-game items lacking P2339 at query time. Labels are English where present. Registry item/name matches are discovery collision flags, not a claim that any two editions are identical. No starting-player rules are approved.",
         "counts": {
             "items": len(games),
@@ -201,7 +202,7 @@ def main():
         snapshot = make_snapshot(fetch(), datetime.now(timezone.utc).isoformat())
     validate(snapshot)
     if not args.validate:
-        OUTPUT.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        OUTPUT.write_bytes((json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n").encode("utf-8"))
     print(json.dumps(snapshot["counts"], sort_keys=True))
     print(OUTPUT)
 

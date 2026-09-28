@@ -1,5 +1,5 @@
 {
-  "retrievedAtUtc": "2026-09-28T23:05:47.270885+00:00",
+  "retrievedAtUtc": "2026-09-28T23:26:30.101417+00:00",
   "source": {
     "name": "Wikidata Query Service",
     "url": "https://query.wikidata.org/sparql?query=SELECT+%3Fitem+%3Flabel+WHERE+%7B%0A++%3Fitem+wdt%3AP31+wd%3AQ131436+.%0A++FILTER+NOT+EXISTS+%7B+%3Fitem+wdt%3AP2339+%3FbggId+%7D%0A++OPTIONAL+%7B+%3Fitem+rdfs%3Alabel+%3Flabel+.+FILTER%28LANG%28%3Flabel%29+%3D+%22en%22%29+%7D%0A%7D&format=json",
@@ -8,17 +8,18 @@
     "excludedProperty": "https://www.wikidata.org/wiki/Property:P2339",
     "license": "CC0-1.0",
     "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Copyright",
-    "rawResponseSha256": "24ed211a40e5b2c51a47f8a1dc61a0a4ae71559da62e3fb1e09afdde8e9e26b5",
+    "rawResponseSha256": "8317e1b7caacd58e663720ff414bc6afc6211f25384642b401efa42544b58ebf",
     "statementSha256": "45a9d2ff75b8ce52cb7416da5e2ef2b0604a4ad3e2c18abd1a5c86d685b8497e"
   },
   "registryInputs": {
-    "research/coverage/discovery-index.json": "d537e07288fbb47ab43a3d46520920fa48b20c37cd1de28cf19e9bf4b8a02b0f",
-    "research/coverage/publisher-identities.json": "7caa71d710f8f6eb0fd9be10598796571d0635dd95e289424454f9bbee817659",
-    "research/coverage/wikidata-board-games.json": "de0029fd03cb573786ff401306d227902f6f4818d79820ea574b148c229fc4e1",
-    "research/coverage/wikidata-native-title-leads.json": "d13f929adfeb2a0b8a163497b5b45ff3627c7914e7381c86a74152fa575e31b0",
-    "research/coverage/wikidata-identity-review.json": "c154eecdc0caf7d4798d864a910bd51cf542eef55f2cb8cca15ade298fada0f3",
-    "research/coverage/wikidata-native-title-decisions.json": "cc91ae7fa48c274f834db2f67c1892d18d26a0fe764362a66069c015adbf74c9"
+    "research/coverage/discovery-index.json": "bfbe7b214d44eb14256ba5db56c2d2f7c6e2086dc837360aef0f505a770ab06e",
+    "research/coverage/publisher-identities.json": "8e9c50a210de0d0826b1ed8e6bcf38cb50b65bf6c2cbc932c25adbb0966c8797",
+    "research/coverage/wikidata-board-games.json": "3ddbc04d38f996a29e4e259559293b95d2a949eea5794d2cd6d54391e95323ba",
+    "research/coverage/wikidata-native-title-leads.json": "68be919618a3816e02eb9613ebffeccdaa65c49a2318e8acc25f7e7e10c8013e",
+    "research/coverage/wikidata-identity-review.json": "e1c71e3301c564c96ade5d30a14918a9699cf5bc90e263813881300809facdec",
+    "research/coverage/wikidata-native-title-decisions.json": "f3ef7cbf81f4944d9a55c093bfe21dca5198fc99a3c9e1360c805eeb63894338"
   },
+  "registryInputHashNormalization": "CRLF normalized to LF before SHA-256",
   "scope": "Direct P31 board-game items lacking P2339 at query time. Labels are English where present. Registry item/name matches are discovery collision flags, not a claim that any two editions are identical. No starting-player rules are approved.",
   "counts": {
     "items": 841,

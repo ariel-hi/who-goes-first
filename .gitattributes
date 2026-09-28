@@ -2,6 +2,7 @@
 # checkout on every platform, including Windows with core.autocrlf enabled.
 research/coverage/wikidata-native-title-leads.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 research/coverage/wikidata-native-title-decisions.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+research/coverage/wikidata-unlinked-board-games.json text eol=lf
 *.pdf binary
 
 # Preserve the exact reviewed pending record and helper bytes across checkouts.
