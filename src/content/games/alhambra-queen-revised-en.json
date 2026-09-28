@@ -3,15 +3,32 @@
   "slug": "alhambra-queen-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "9eaadc5d9b267c188e921aaabd3523189ea3a3b75ccbf91f667d74791bc933a1",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "c58e6792482df7ca1ed9c8e4c1a5e8038b3d9474739448c2ec877c98ec77e0d6",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Alhambra",
   "aliases": [
     "Alhambra Revised Edition"
   ],
   "editionLabel": "Queen Games English rules, revised edition 2019",
+  "image": {
+    "file": "/images/games/alhambra-queen-revised-en-cover.jpg",
+    "alt": "Queen Games Alhambra box front showing the palace and Revised Edition banner",
+    "width": 439,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://vortakgames.com/cdn/shop/products/alhambra.png?v=1678649191",
+      "publisher": "Vortak Games retail listing"
+    },
+    "fairUse": {
+      "rightsHolder": "Queen Games and the credited artists; retail image owner",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Vortak Games retail product listing: https://vortakgames.com/products/alhambra-revised-edition-by-queen-games. Edition match: The front explicitly says Revised Edition and displays the Queen Games logo. Queen Games' publisher-hosted English revised-edition manual cited by this record (https://rules.queen-games.com/alhambra_designer_revised_en.pdf) confirms the named 2019 rules edition.. Original image URL: https://vortakgames.com/cdn/shop/products/alhambra.png?v=1678649191. Processing note: Cropped white retail-image margins and reduced the front to a 440-pixel JPEG.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "After everyone is dealt starting money (cards dealt one at a time until each player has 20 or more), the player with the fewest money cards starts.",
   "officialTieBreak": "If players have the same number of cards, the one with the lowest total money starts; if still tied, the younger player starts.",
   "houseFallback": null,
