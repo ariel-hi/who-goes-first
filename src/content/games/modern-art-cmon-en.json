@@ -3,13 +3,30 @@
   "slug": "modern-art-cmon-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "5502e901b3f203b911aebcfe20f8d3214b0068d264937ecf478c3fb2e6bd9d71",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "901983623677b449e11e64488d2e519c2c24785fadda2979aae28e97eaec43c9",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Modern Art",
   "aliases": [],
   "editionLabel": "CMON English edition",
+  "image": {
+    "file": "/images/games/modern-art-cmon-en-cover.jpg",
+    "alt": "Modern Art illustrated rulebook cover, CMON edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/MA_Rulebbok_Artbook_v18-low.pdf",
+      "publisher": "CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "CMON",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://www.cmon.com/wp-content/uploads/2023/06/MA_Rulebbok_Artbook_v18-low.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The youngest player holds the first auction, choosing a painting from their hand to offer for sale.",
   "officialTieBreak": null,
   "houseFallback": "If the youngest players are tied, choose randomly among them.",

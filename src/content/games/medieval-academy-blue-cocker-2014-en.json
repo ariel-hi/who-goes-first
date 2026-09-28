@@ -3,13 +3,30 @@
   "slug": "medieval-academy-blue-cocker-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a9a2bf2ffa3130612d9ae040f4bca30399e5257639d9fbffeb3f7d894f149285",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "449d8582d36f98443b1f4150061a8aa15e9a5c6b4724dd605ffc66b027a4ec90",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Medieval Academy",
   "aliases": [],
   "editionLabel": "Blue Cocker Games English rules, 2014",
+  "image": {
+    "file": "/images/games/medieval-academy-blue-cocker-2014-en-cover.jpg",
+    "alt": "Medieval Academy illustrated rulebook cover, Blue Cocker Games edition",
+    "width": 252,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.bluecocker.com/jeux/medieval-academy/RULES_US.pdf",
+      "publisher": "Blue Cocker Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Cocker Games",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://www.bluecocker.com/jeux/medieval-academy/RULES_US.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 252 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who strikes the most chivalrous pose starts and takes the Excalibur pawn.",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -3,13 +3,30 @@
   "slug": "mice-mystics-plaid-hat-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "277c6d87288b1d1d94d590d2ff380508e05c0b365e2e019208af629779f4ce0a",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "ecf0c152efc33bf59603bcc9d4afd01be04fa8456b6eeeb311e91e9b34e4bfcd",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Mice and Mystics",
   "aliases": [],
   "editionLabel": "Plaid Hat English base game",
+  "image": {
+    "file": "/images/games/mice-mystics-plaid-hat-en-cover.jpg",
+    "alt": "Mice and Mystics illustrated rulebook cover, Plaid Hat Games edition",
+    "width": 274,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://media.plaidhatgames.com/old_images/games/mice-and-mystics/mmrulebook.pdf",
+      "publisher": "Plaid Hat Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Plaid Hat Games",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://media.plaidhatgames.com/old_images/games/mice-and-mystics/mmrulebook.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 274 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Shuffle the initiative cards for the mice and the minion types that will be on the board at the start of the encounter. Deal them onto the initiative track in order; the card in the highest position takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,

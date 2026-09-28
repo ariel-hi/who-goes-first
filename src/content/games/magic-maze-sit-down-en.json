@@ -3,13 +3,30 @@
   "slug": "magic-maze-sit-down-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "38048ea2f01a79827bf6bb9f337ae938223a647d9d42bb028a07ffb333b9505a",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "0cd09a1d694057c167b881cc20c1a8f0dda697adf43c01a9b9460bf126486384",
   "publishedAt": "2026-09-26",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Magic Maze",
   "aliases": [],
   "editionLabel": "Sit Down English edition",
+  "image": {
+    "file": "/images/games/magic-maze-sit-down-en-cover.jpg",
+    "alt": "Magic Maze illustrated rulebook cover, Sit Down! edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://sitdown-games.com/wp-content/uploads/2018/09/MM_Rules_EN_HR_Sept2018_LD.pdf",
+      "publisher": "Sit Down!"
+    },
+    "fairUse": {
+      "rightsHolder": "Sit Down!",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://sitdown-games.com/wp-content/uploads/2018/09/MM_Rules_EN_HR_Sept2018_LD.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "There is no individual starting player. When everyone is ready, turn over the sand timer and begin playing together in real time.",
   "officialTieBreak": null,
   "houseFallback": null,
