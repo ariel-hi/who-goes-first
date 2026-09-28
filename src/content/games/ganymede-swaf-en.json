@@ -3,10 +3,10 @@
   "slug": "ganymede-swaf-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "1533b3aadf2b5992580d3eb73c838449bf3e49aeb3617592464e0bffa2511855",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1bbc4def43dc230f4fb2b42dfae9c5cb87047b3852a608d4823cc3cf59ccb8a2",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ganymede",
   "aliases": [],
   "editionLabel": "English Sorry We Are French rules",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ganymede-swaf-en-cover.jpg",
+    "alt": "Ganymede official game box cover",
+    "width": 375,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://sorryweare.fr/fr/game/ganymede/",
+      "publisher": "Sorry We Are French"
+    },
+    "fairUse": {
+      "rightsHolder": "Sorry We Are French and cover artist Oliver Mootoo (precise ownership split not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher Ganymede page identifies artist Oliver Mootoo and links press kit https://medias.sorryweare.fr/wp-content/uploads/2021/04/GANYMEDE-DOSSIER-PRESSE.zip; the image is its internal BOX3D_GANYMEDE_V1_Gauche.png. English title and publisher branding match the cited English rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

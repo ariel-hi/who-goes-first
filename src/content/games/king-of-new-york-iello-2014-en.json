@@ -3,8 +3,8 @@
   "slug": "king-of-new-york-iello-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "a15a0fbffb49e292cefdabd436ff961f61437e2c9e7a2970dce1eaa106be8737",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "46d0351ac1c4002e448e9f9530e6a9866f8c61a909c066e053e58b8939cf1dd9",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "King of New York",
@@ -24,8 +24,12 @@
       "url": "https://iellogames.com/wp-content/uploads/2014/10/KONY-US-Rules.pdf",
       "title": "King of New York — original English rulebook",
       "publisher": "IELLO",
-      "printedPages": ["3"],
-      "pdfPagesOneBased": [2],
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
       "location": "How to Play, opening determination and clockwise order",
       "checkedAt": "2026-09-28"
     }
@@ -33,5 +37,22 @@
   "internalEvidence": "Full official English rulebook linked from IELLO's product page https://iellogames.com/games/king-of-new-york/ . PDF SHA-256 4f2350d4fbaa70e1aedde2b6d4dd9a194b9a29fab837a10658c625d9b12339ed, 4961935 bytes. Codex visually inspected PDF page 2: the How to Play passage requires all six black and two green dice, and the player with the most Attack icons starts. The same page states clockwise turns and that normal first rolls use only black dice unless a card enables green dice. Source packet: artifacts/pending-rules-followup-sep28b/REVIEW.md. Exact BGG 160499 / Wikidata Q44906199 active directory identity, separate from King of Tokyo. The opening roll is prescribed; this record is excluded from the portable random picker pool.",
   "uncertainty": [
     "The printed opening passage does not say how to resolve equal Attack totals. No reroll rule is presented as official."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/king-of-new-york-iello-2014-en-cover.jpg",
+    "alt": "King of New York official game box cover",
+    "width": 450,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/csgkony-king-of-new-york",
+      "publisher": "IELLO / Asmodee UK"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Asmodee UK IELLO product listing, SKU CSGKONY and barcode 3760175511707, supplies box image https://www.asmodee.co.uk/cdn/shop/files/CSGKONY_1.jpg?v=1775063010&width=1200. English King of New York base-game title, 2-6 players, and IELLO mark match the original 2014 cited game; the exact printing is not distinguished. Cropped surrounding whitespace.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
