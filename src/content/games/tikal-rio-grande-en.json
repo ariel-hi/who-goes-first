@@ -3,10 +3,10 @@
   "slug": "tikal-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "fed6026abe446b7e63f7323f70e34677d633c150a1ddc84b3d40f8f77feaea11",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "492013d02fa48c8d628e952fdd084929b5fc9e9174d665f157dcf0f4908f3365",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tikal",
   "aliases": [],
   "editionLabel": "Rio Grande English edition",
@@ -37,5 +37,22 @@
   "internalEvidence": "Official Rio Grande English PDF. Rendered page 4 oldest and clockwise; page 12 auction starts oldest but winner takes first action, with all-pass free-turn rule. Do not apply standard first-turn criterion directly to auction action order. Source custody: research/source-files/popular-sep26-12/tikal.pdf; SHA-256 6d14dd596ff00e0d8d44ef24d9eed1025111527a6e083907423e986eb19173e7. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
   "uncertainty": [
     "The rulebook does not specify how to settle an age tie when selecting the oldest player."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tikal-rio-grande-en-cover.jpg",
+    "alt": "Tikal original Rio Grande Games English box",
+    "width": 560,
+    "height": 402,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0274/9631/products/pic518311.jpg?v=1599628873",
+      "publisher": "Rio Grande Games (box image via Board Game Bliss)"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games / Wolfgang Kramer and Michael Kiesling box artist",
+      "rationale": "Reduced-size exact-edition box image identifies the game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://www.boardgamebliss.com/products/tikal. Box image: https://cdn.shopify.com/s/files/1/0274/9631/products/pic518311.jpg?v=1599628873. Board Game Bliss identifies the Rio Grande Games edition and SKU RIO132; its box front carries the Rio Grande imprint, matching the English publisher rulebook cited here.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

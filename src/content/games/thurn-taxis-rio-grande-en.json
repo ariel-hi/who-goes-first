@@ -3,10 +3,10 @@
   "slug": "thurn-taxis-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "347beb656dd72da66688fc94359a5d067c11b84e188373155dc29f4d7f6bed15",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "410ce7c918bea50baa5a4e5331d2bc2847b9ddde5f2009f792433c59566fc546",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Thurn and Taxis",
   "aliases": [
     "Thurn und Taxis"
@@ -37,5 +37,22 @@
   "internalEvidence": "Scalliwag Toys article links preserved original Game_188 rulebook. Rendered 1 any-method starter, PDF 2 text clockwise; rendered 4 Rio Grande logo/contact and Hans im Glueck 2006 copyright. Current publisher page and FG Bradley archive returned 403; BGG rewrites were not used. Source custody: research/source-files/popular-sep26-12/thurn.pdf; SHA-256 6d590030d8b664d1aa11233788405d50c895a651b95ce8dd8ef8395a97e46077. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The Rio Grande-authored English rulebook is preserved in a retailer’s archive."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/thurn-taxis-rio-grande-en-cover.jpg",
+    "alt": "Thurn and Taxis original Rio Grande Games English box",
+    "width": 288,
+    "height": 403,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0274/9631/products/Thurn_and_Taxis.jpg?v=1578608832",
+      "publisher": "Rio Grande Games (box image via Board Game Bliss)"
+    },
+    "fairUse": {
+      "rightsHolder": "Hans im Glück / Rio Grande Games / box artist",
+      "rationale": "Reduced-size exact-edition box image identifies the game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://www.boardgamebliss.com/products/thurn-and-taxis. Box image: https://cdn.shopify.com/s/files/1/0274/9631/products/Thurn_and_Taxis.jpg?v=1578608832. The box front carries the Rio Grande imprint and original Thurn and Taxis artwork, matching the 2006 Hans im Glück / Rio Grande rulebook cited here.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

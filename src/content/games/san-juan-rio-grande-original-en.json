@@ -3,10 +3,10 @@
   "slug": "san-juan-rio-grande-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "967923473bf286101d2465e23537896099012c9aa74d789e0d43a3b2fd5e0910",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "91cdc1be98d9365e1920b73643931914e42709ab4f59a5867f68b6e24dbc4c84",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "San Juan",
   "aliases": [],
   "editionLabel": "Rio Grande English original edition",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Official Rio Grande hosted original manual. Printed/PDF2 visually verified any-method selection, first role/action, clockwise sequence and next-round governor rotation. Separate from the later second edition. Source custody: research/source-files/popular-sep26-07/sanjuan.pdf; SHA-256 cb7acfb8433ee28dfbb9a2812bc9bff0f52bbb2f31a7438d1a474ad46ff8765e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/san-juan-rio-grande-original-en-cover.jpg",
+    "alt": "San Juan original Rio Grande Games first edition box",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0707/8658/0781/files/san-juan-card-game.jpg?v=1682454194",
+      "publisher": "Rio Grande Games (box image via All Systems Go Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "alea / Rio Grande Games / box artist",
+      "rationale": "Reduced-size exact-edition box image identifies the game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://allsystemsgo.games/products/san-juan-first-edition. Box image: https://cdn.shopify.com/s/files/1/0707/8658/0781/files/san-juan-card-game.jpg?v=1682454194. All Systems Go explicitly labels this the First Edition. The photographed box carries the original alea and Rio Grande imprints and matches the original publisher rulebook cited here.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

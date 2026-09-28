@@ -3,10 +3,10 @@
   "slug": "trans-siberian-railroad-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "04f43189f77ff1ad5e47a4964f8df2db2afe573663c38adb8d251cf1ba11552f",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "8ccf2307a78003cf4a9f5976ad759518a824e4be68fe1c44a761c90f5b0db76d",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trans-Siberian Railroad",
   "aliases": [
     "Trans Siberian Railroad"
@@ -43,5 +43,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trans-siberian-railroad-rio-grande-en-cover.jpg",
+    "alt": "Trans-Siberian Railroad Rio Grande Games box front",
+    "width": 560,
+    "height": 401,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0274/9631/products/pic5343240.jpg?v=1590644425",
+      "publisher": "Rio Grande Games (box image via Board Game Bliss)"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games / box artist",
+      "rationale": "Reduced-size exact-edition box image identifies the game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://www.boardgamebliss.com/products/trans-siberian-railroad. Box image: https://cdn.shopify.com/s/files/1/0274/9631/products/pic5343240.jpg?v=1590644425. Board Game Bliss identifies publisher Rio Grande Games and SKU RIO593. The box front carries that publisher imprint and matches its 2020 rulebook cited here.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
