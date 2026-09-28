@@ -92,3 +92,10 @@ The biggest published totals are useful for finding leads, but none of these
 totals can be added to the 5,244-directory count. At present, the freely
 reusable sources with promising expansion paths are Smithsonian and NYPL CC0
 metadata, followed by carefully corroborated federal registration facts.
+
+**Pilot update:** The [bounded Smithsonian/NYPL audit](sep28-museum-cc0-pilot.md)
+found no identity ready for acceptance under the present primary-publisher
+standard. Smithsonian had named physical objects worth following up where
+original media can be inspected. NYPL's archived snapshot yielded one
+three-item historical game collection and no immediately publishable identity;
+it is now a lower-priority bulk source.

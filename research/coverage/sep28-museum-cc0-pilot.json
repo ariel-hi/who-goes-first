@@ -1,0 +1,1024 @@
+{
+  "retrievedOn": "2026-09-28",
+  "comparisonBaseline": "c08f778e plus two accepted publisher identities from 522165e2 (5,246 reported)",
+  "sourceHashes": {
+    "smithsonian-board-game-50.json": "76cf4b22b44e6374cdf1fad240c024a95617818fb759513e9eca143181904ce7",
+    "nypl-pd-items-1.csv": "7b58984d467cc760eb5a772d6c3c89e431aee9b990a298f948b348151ccc074a",
+    "nypl-pd-items-2.csv": "fc222e027322c66c50b83058a1930257b56821bc290ac4e3f8e0c469db08c9da",
+    "nypl-pd-collections.csv": "578c09d19393055cd8b40d8bd4f1754eabb65bd3ea3ecf3b038e6ea5358f490c"
+  },
+  "smithsonian": {
+    "query": "https://api.si.edu/openaccess/api/v1.0/search?q=board%20game&rows=50&start=0&api_key=DEMO_KEY",
+    "reportedMatches": 860,
+    "reviewed": [
+      {
+        "index": 0,
+        "recordId": "slasro_154923",
+        "title": "Disaster Board Games",
+        "unit": "SLA_SRO",
+        "objectTypes": [
+          "Blog",
+          "Smithsonian staff publications"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:slasro_154923?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 1,
+        "recordId": "siris_sil_684035",
+        "title": "More board games / Desi Scarpone",
+        "unit": "SIL",
+        "objectTypes": [
+          "Catalogs"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_684035?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 2,
+        "recordId": "siris_sil_1083853",
+        "title": "It's all a game : the history of board games from Monopoly to settlers of Catan / Tristan Donovan",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_1083853?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 3,
+        "recordId": "siris_sil_591324",
+        "title": "The Oxford history of board games / David Parlett",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_591324?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 4,
+        "recordId": "siris_sil_139144",
+        "title": "Great board games / compiled by Brian Love",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_139144?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 5,
+        "recordId": "siris_sil_537282",
+        "title": "Board games : with price guide / Desi Scarpone",
+        "unit": "SIL",
+        "objectTypes": [
+          "Catalogs"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_537282?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 6,
+        "recordId": "nmah_535023",
+        "title": "board, game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board, Game"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_535023?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "generic-object-title"
+      },
+      {
+        "index": 7,
+        "recordId": "nmah_1349642",
+        "title": "board game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1349642?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "generic-object-title"
+      },
+      {
+        "index": 8,
+        "recordId": "siris_sil_551742",
+        "title": "//Hūs : an African game for all races",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_551742?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 9,
+        "recordId": "siris_sil_734732",
+        "title": "Board games / David Levinson and David Sherwood",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_734732?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 10,
+        "recordId": "siris_sil_441654",
+        "title": "Games in culture : a contextual analysis of the Swahili board game and its relevance to variation in African mankala / by Philip Townshend",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_441654?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 11,
+        "recordId": "siris_sil_548554",
+        "title": "Gabata and other board games of Ethiopia and the Horn of Africa",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_548554?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 12,
+        "recordId": "siris_sil_12817",
+        "title": "Board and table games from many civilizations Drawings by Rosalind H. Leadley, photos. by Kenneth Watson, diagrs. by the author",
+        "unit": "SIL",
+        "objectTypes": [
+          "Board games",
+          "Jeux de plateaux",
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_12817?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 13,
+        "recordId": "siris_sil_490822",
+        "title": "Mweso : the board game / R. S. Shackell",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_490822?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 14,
+        "recordId": "siris_sil_1112904",
+        "title": "Notes on the board game, known as \"mweso\" in Uganda / by E. J. Wayland",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_1112904?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 15,
+        "recordId": "siris_sil_1112892",
+        "title": "The board game in north-west Africa / by R. E. Parry",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_1112892?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 16,
+        "recordId": "nmah_1347025",
+        "title": "Electric football board game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)",
+          "Games"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1347025?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "unspecified-electric-football-edition"
+      },
+      {
+        "index": 17,
+        "recordId": "siris_sil_1054913",
+        "title": "Spin again : board games from the fifties and sixties / Rick Polizzi & Fred Schaefer ; photography by Rick Polizzi",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_1054913?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 18,
+        "recordId": "siris_sil_1111248",
+        "title": "Reconfiguring the Omweso board game : performing narratives of Buganda material culture / Rose Namubiru Kirumira",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_1111248?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 19,
+        "recordId": "nmah_740730",
+        "title": "Swahili Board Game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_740730?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 20,
+        "recordId": "siris_sil_746763",
+        "title": "The book of Greek myths : pop-up board games / illustrated by Brian Lee",
+        "unit": "SIL",
+        "objectTypes": [
+          "Specimens"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_746763?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 21,
+        "recordId": "nmah_1315497",
+        "title": "Board Game Commemorating the New York World's Fair, 1939-1940",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)",
+          "Game, Board"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1315497?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "generic-worlds-fair-title"
+      },
+      {
+        "index": 22,
+        "recordId": "nmah_1344260",
+        "title": "Intel “In The Chips” board game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1344260?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 23,
+        "recordId": "siris_sil_294719",
+        "title": "A history of board-games other than chess",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_294719?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 24,
+        "recordId": "slasro_153395",
+        "title": "Boat Models, Buoys and Board Games: Reflecting and Reliving Watermen&#39;s Work",
+        "unit": "SLA_SRO",
+        "objectTypes": [
+          "Journal Article",
+          "Smithsonian staff publications"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:slasro_153395?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 25,
+        "recordId": "nmah_1156617",
+        "title": "Board Game \"Distant Seas\"",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Game, Board"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1156617?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "maker-and-edition-unverified"
+      },
+      {
+        "index": 26,
+        "recordId": "nmnhanthropology_8450733",
+        "title": "Game Of \"Pa-Tok\": Game Board & Game Counters",
+        "unit": "NMNHANTHRO",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmnhanthropology_8450733?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "traditional-game-object-not-retail-product"
+      },
+      {
+        "index": 27,
+        "recordId": "nmah_1315489",
+        "title": "Board Game from the New York World's Fair, 1964-1965",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1315489?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "generic-worlds-fair-title"
+      },
+      {
+        "index": 28,
+        "recordId": "nmah_1315487",
+        "title": "Board Game from New York World's Fair, 1964-1965.",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1315487?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "generic-worlds-fair-title"
+      },
+      {
+        "index": 29,
+        "recordId": "siris_sil_442906",
+        "title": "Games : American boxed games and their makers, 1822-1992, with values / Bruce Whitehill",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_442906?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 30,
+        "recordId": "siris_sil_520379",
+        "title": "The board game : America at play, 1845-1945",
+        "unit": "SIL",
+        "objectTypes": [
+          "Exhibitions (events)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_520379?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 31,
+        "recordId": "nmah_1271773",
+        "title": "Amos & Sadie's Farm",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1271773?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 32,
+        "recordId": "nmnhanthropology_8401708",
+        "title": "Gaming Board",
+        "unit": "NMNHANTHRO",
+        "objectTypes": [
+          "Game Board / Game Piece"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmnhanthropology_8401708?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "traditional-game-object-not-retail-product"
+      },
+      {
+        "index": 33,
+        "recordId": "siris_sil_117692",
+        "title": "Play the game/ compiled by Brian Love",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_117692?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 34,
+        "recordId": "nmah_1291791",
+        "title": "My Family Jig-Saw Puzzle",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)",
+          "Games"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1291791?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "jigsaw-puzzle"
+      },
+      {
+        "index": 35,
+        "recordId": "siris_sil_490422",
+        "title": "Carved rock gaming-boards in Western South Nyanza, Kenya",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_490422?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 36,
+        "recordId": "nmah_2045653",
+        "title": "Pot Luck Board Game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_2045653?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 37,
+        "recordId": "nmah_1313939",
+        "title": "Columbus! The Game of Exploration Conquest and Trade",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)",
+          "Games"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1313939?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 38,
+        "recordId": "nmah_1329888",
+        "title": "Junior Executive",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1329888?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "maker-and-edition-unverified"
+      },
+      {
+        "index": 39,
+        "recordId": "nmah_1409827",
+        "title": "La Migra",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1409827?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "maker-and-edition-unverified"
+      },
+      {
+        "index": 40,
+        "recordId": "NMAI_270938",
+        "title": "Board game",
+        "unit": "NMAI",
+        "objectTypes": [
+          "Board games (game sets)",
+          "Games",
+          "Toys (recreational artifacts)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:NMAI_270938?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "generic-object-title"
+      },
+      {
+        "index": 41,
+        "recordId": "nmah_1887940",
+        "title": "TRUMP The Game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)",
+          "game, board"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1887940?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 42,
+        "recordId": "nmah_1213645",
+        "title": "Ideal \"The Telephone Game\" teacher's game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "educational toy",
+          "Board games (game sets)",
+          "Game, Board"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1213645?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 43,
+        "recordId": "siris_sil_489506",
+        "title": "Bao games from Northern Kenya and Uganda",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_489506?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 44,
+        "recordId": "siris_sil_529906",
+        "title": "The game of bao or mankala in East Africa",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_529906?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 45,
+        "recordId": "nmah_1887932",
+        "title": "G. Gordon Liddy's Hardball Politics '96",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)",
+          "game, board"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1887932?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 46,
+        "recordId": "nmah_1277701",
+        "title": "Great American Flag Game",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_1277701?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "publisher-artifact-and-edition-unverified"
+      },
+      {
+        "index": 47,
+        "recordId": "nmah_748921",
+        "title": "Trivial Pursuit Genius Edition",
+        "unit": "NMAH",
+        "objectTypes": [
+          "Board games (game sets)"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:nmah_748921?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "franchise-edition-correspondence-unverified"
+      },
+      {
+        "index": 48,
+        "recordId": "siris_sil_529908",
+        "title": "The game of bao--Lamu style",
+        "unit": "SIL",
+        "objectTypes": [
+          "Articles"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_529908?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      },
+      {
+        "index": 49,
+        "recordId": "siris_sil_710145",
+        "title": "The games we played : the golden age of board & table games / Margaret K. Hofer ; with a foreword by Kenneth T. Jackson",
+        "unit": "SIL",
+        "objectTypes": [
+          "Books"
+        ],
+        "onlineMediaCount": 0,
+        "sourceUrl": "https://api.si.edu/openaccess/api/v1.0/content/edanmdm:siris_sil_710145?api_key=DEMO_KEY",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "not-a-distinct-physical-tabletop-product"
+      }
+    ]
+  },
+  "nypl": {
+    "snapshot": "https://github.com/NYPL-publicdomain/data-and-utilities/tree/master/items",
+    "scannedItems": 190494,
+    "gameCollection": {
+      "uuid": "9a304ec0-6281-0130-61d8-58d385a7bbd0",
+      "title": "The Road to the temple of Honour and Fame: an instructive and entertaining game.",
+      "publisher": "J. Harris",
+      "date": "1811",
+      "itemCount": 3,
+      "sourceUrl": "https://digitalcollections.nypl.org/collections/9a304ec0-6281-0130-61d8-58d385a7bbd0"
+    },
+    "reviewed": [
+      {
+        "uuid": "28a69470-c538-012f-261d-58d385a7bc34",
+        "title": "Florida res., Prof. & Mrs. H. B. Stowe.",
+        "resourceType": "still image",
+        "collectionUuid": "5261fd50-c52e-012f-85ec-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/28a69470-c538-012f-261d-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "297a5010-c538-012f-a304-58d385a7bc34",
+        "title": "Mrs. H. B. Stowe's House, Fla. Mandarin.",
+        "resourceType": "still image",
+        "collectionUuid": "5261fd50-c52e-012f-85ec-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/297a5010-c538-012f-a304-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "2a4bcb90-c538-012f-6c13-58d385a7bc34",
+        "title": "Florida res., Prof. & Mrs. H. B. Stowe.",
+        "resourceType": "still image",
+        "collectionUuid": "5261fd50-c52e-012f-85ec-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/2a4bcb90-c538-012f-6c13-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "2b7635d0-c538-012f-8189-58d385a7bc34",
+        "title": "Residence of Harriet Beecher Stowe, Florida.",
+        "resourceType": "still image",
+        "collectionUuid": "5261fd50-c52e-012f-85ec-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/2b7635d0-c538-012f-8189-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "2d4a84b0-c538-012f-91f1-58d385a7bc34",
+        "title": "Residence of Prof. & Mrs. H. B. Stowe, with Family Group.",
+        "resourceType": "still image",
+        "collectionUuid": "5261fd50-c52e-012f-85ec-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/2d4a84b0-c538-012f-91f1-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "dcdff690-c574-012f-446e-58d385a7bc34",
+        "title": "Apache Indians at a game of cards.",
+        "resourceType": "still image",
+        "collectionUuid": "5261fd50-c52e-012f-85ec-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/dcdff690-c574-012f-446e-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "48db0670-c597-012f-298f-58d385a7bc34",
+        "title": "That's where my money goes",
+        "resourceType": "notated music",
+        "collectionUuid": "35301010-c58d-012f-1196-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/48db0670-c597-012f-298f-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "e80a9740-c5d1-012f-5078-58d385a7bc34",
+        "title": "Ohanasan playing \"go\" game.",
+        "resourceType": "still image",
+        "collectionUuid": "07430830-c5d1-012f-bd22-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/e80a9740-c5d1-012f-5078-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "ebf0df80-c5d1-012f-a5be-58d385a7bc34",
+        "title": "Girls playing Uta-garuta.",
+        "resourceType": "still image",
+        "collectionUuid": "07430830-c5d1-012f-bd22-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/ebf0df80-c5d1-012f-a5be-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "92944030-c5f2-012f-63c1-58d385a7bc34",
+        "title": "A street café, Jerusalem, a Bedouin and peasant playing at a game called dámeh",
+        "resourceType": "still image",
+        "collectionUuid": "860d5500-c5f2-012f-8260-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/92944030-c5f2-012f-63c1-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "fe5b4ba0-c5f2-012f-2c5a-58d385a7bc34",
+        "title": "The citadel, Damascus.  A large oblong structure surrounded by a moat. There are twelve projecting towers, two of which are shown above. In the foreground there is a café, in the upper balcony of which a turbaned player holds up a winning card exultingly.",
+        "resourceType": "still image",
+        "collectionUuid": "860d5500-c5f2-012f-8260-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/fe5b4ba0-c5f2-012f-2c5a-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "bdebd2b0-c603-012f-dd75-58d385a7bc34",
+        "title": "Fig. 1. Menphtah III offre fiori ad Amon-rê e Tamon [Neith].  Figg. 2, 3. Scene domestiche del re Ramses IV [Ramses III].",
+        "resourceType": "still image",
+        "collectionUuid": "81a85820-c603-012f-3d1a-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/bdebd2b0-c603-012f-dd75-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "035cb110-c604-012f-9b21-58d385a7bc34",
+        "title": "Altri giuochi.",
+        "resourceType": "still image",
+        "collectionUuid": "81a85820-c603-012f-3d1a-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/035cb110-c604-012f-9b21-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "686977e0-c60c-012f-df8d-58d385a7bc34",
+        "title": "Partie perdue, d'après Meissonier.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/686977e0-c60c-012f-df8d-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "68ab6770-c60c-012f-9586-58d385a7bc34",
+        "title": "Partie perdue, d'après Meissonier.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/68ab6770-c60c-012f-9586-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "68faaa40-c60c-012f-58df-58d385a7bc34",
+        "title": "Partie perdue, d'après Meissonier.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/68faaa40-c60c-012f-58df-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "6936a270-c60c-012f-02d3-58d385a7bc34",
+        "title": "Partie perdue, d'après Meissonier.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/6936a270-c60c-012f-02d3-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "698f5820-c60c-012f-bd27-58d385a7bc34",
+        "title": "Partie perdue, d'après Meissonier.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/698f5820-c60c-012f-bd27-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "f31369f0-c610-012f-d727-58d385a7bc34",
+        "title": "Joueurs de cartes, intérieur.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/f31369f0-c610-012f-d727-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "f36425d0-c610-012f-a4f4-58d385a7bc34",
+        "title": "Joueurs de cartes, intérieur.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/f36425d0-c610-012f-a4f4-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "f3c1aba0-c610-012f-b75d-58d385a7bc34",
+        "title": "Joueurs de cartes, intérieur.",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/f3c1aba0-c610-012f-b75d-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "9d929100-c612-012f-402d-58d385a7bc34",
+        "title": "Joueurs de west (3rd state)",
+        "resourceType": "still image",
+        "collectionUuid": "8d08f9f0-c60b-012f-0c69-58d385a7bc34",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/9d929100-c612-012f-402d-58d385a7bc34",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "2e90f8c0-c6c9-012f-4e39-3c075448cc4b",
+        "title": "Card players",
+        "resourceType": "still image",
+        "collectionUuid": "f5ad3520-c6c8-012f-2bed-3c075448cc4b",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/2e90f8c0-c6c9-012f-4e39-3c075448cc4b",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "3e60a6b0-c6c9-012f-9599-3c075448cc4b",
+        "title": "Evening recreation",
+        "resourceType": "still image",
+        "collectionUuid": "f5ad3520-c6c8-012f-2bed-3c075448cc4b",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/3e60a6b0-c6c9-012f-9599-3c075448cc4b",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      },
+      {
+        "uuid": "43b3ef90-6282-0130-a63f-58d385a7bbd0",
+        "title": "Game board",
+        "resourceType": "three dimensional object",
+        "collectionUuid": "9a304ec0-6281-0130-61d8-58d385a7bbd0",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/43b3ef90-6282-0130-a63f-58d385a7bbd0",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "three-items-one-product-original-imprint-unreviewed"
+      },
+      {
+        "uuid": "70355b00-74a7-0130-b7e9-58d385a7bbd0",
+        "title": "Rules and directions for playing the game",
+        "resourceType": "text",
+        "collectionUuid": "9a304ec0-6281-0130-61d8-58d385a7bbd0",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/70355b00-74a7-0130-b7e9-58d385a7bbd0",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "three-items-one-product-original-imprint-unreviewed"
+      },
+      {
+        "uuid": "4e1055b0-74a7-0130-1d05-58d385a7bbd0",
+        "title": "Game board cover.",
+        "resourceType": "still image",
+        "collectionUuid": "9a304ec0-6281-0130-61d8-58d385a7bbd0",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/4e1055b0-74a7-0130-1d05-58d385a7bbd0",
+        "exactTitleCollision": false,
+        "decision": "hold",
+        "reason": "three-items-one-product-original-imprint-unreviewed"
+      },
+      {
+        "uuid": "e6f1f730-d568-0131-f8a2-58d385a7bbd0",
+        "title": "Noon Game",
+        "resourceType": "still image",
+        "collectionUuid": "ab394b60-d4bc-0131-8bd5-58d385a7bbd0",
+        "sourceUrl": "https://digitalcollections.nypl.org/items/e6f1f730-d568-0131-f8a2-58d385a7bbd0",
+        "exactTitleCollision": false,
+        "decision": "exclude",
+        "reason": "depiction-or-other-nonproduct"
+      }
+    ]
+  }
+}
