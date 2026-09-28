@@ -3,7 +3,7 @@ interface Props { ruleCount: number }
 const { ruleCount } = Astro.props;
 ---
 <div class="rule-lookup" data-rule-lookup>
-  <label class="search-box"><span>Search {ruleCount.toLocaleString('en')} games</span><input type="search" placeholder="e.g. Catan, Wingspan, Azul…" autocomplete="off" maxlength="100" /></label>
+  <label class="search-box"><span>Search {ruleCount.toLocaleString('en')} starting rules</span><input type="search" placeholder="e.g. Catan, Wingspan, Azul…" autocomplete="off" maxlength="100" /></label>
   <ul class="rule-lookup-results" data-results hidden></ul>
   <p class="small muted" data-lookup-status role="status"></p>
   <a class="inline-link" data-directory-search href="/board-games/">Browse all board games</a>

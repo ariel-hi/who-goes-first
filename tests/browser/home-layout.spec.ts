@@ -8,16 +8,17 @@ test('social icons keep accessible labels and share clean public links', async (
   test.skip(await shares.locator('[data-instagram-open]').count() === 0, 'Social links only appear in production builds.');
   const decline = page.getByRole('button', { name: 'No thanks', exact: true });
   if (await decline.isVisible()) await decline.click();
-  await shares.locator('summary').click();
+  const more = shares.getByRole('button', { name: 'More sharing options' });
+  await more.click();
+  await expect(more).toHaveAttribute('aria-expanded', 'true');
   for (const name of ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook']) {
     const link = shares.getByRole('link', { name: new RegExp(name) });
     await expect(link).toBeVisible();
     const destination = new URL((await link.getAttribute('href'))!);
     expect(destination.href).not.toContain('private');
     const box = await link.boundingBox();
-    const target = await page.evaluate(() => matchMedia('(max-width:640px),(pointer:coarse)').matches ? 44 : 36);
-    expect(box!.width).toBeCloseTo(target, 3);
-    expect(box!.height).toBeCloseTo(target, 3);
+    expect(box!.width).toBeGreaterThanOrEqual(45);
+    expect(box!.height).toBeGreaterThanOrEqual(45);
   }
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (value: string) => { Object.assign(window, { copiedInstagramLink: value }); } } }));
   const instagramRequests: string[] = [];
@@ -81,7 +82,7 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   // The rule catalog is fetched on demand instead of being embedded in the page.
   expect((await page.content()).length).toBeLessThan(60000);
   await expect(page.locator('[data-random-rule]')).toHaveCount(0);
-  const search = page.getByRole('searchbox', { name: /Search .* games/ });
+  const search = page.getByRole('searchbox', { name: /Search .* starting rules/ });
   await search.fill('catan');
   await expect(page.locator('.rule-lookup-results a').first()).toHaveAttribute('href', '/games/catan-2020-en/');
   await expect(page.locator('.rule-lookup-answer').first()).not.toBeEmpty();
@@ -133,7 +134,7 @@ test('appearance persists across reloads and answer pages with accessible dark c
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   await expect(page.locator('.winner-dot')).toBeVisible();
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
-  await page.getByRole('searchbox', { name: /Search .* games/ }).fill('Wingspan');
+  await page.getByRole('searchbox', { name: /Search .* starting rules/ }).fill('Wingspan');
   await page.locator('.rule-lookup-results a').first().click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
@@ -150,7 +151,7 @@ test('home discovery shares the lazy search index and recovers from failed rando
   const before = await root.locator('[data-home-rule-source]').getAttribute('href');
   await root.getByRole('button', { name: 'Another rule' }).click();
   await expect(root.locator('[data-home-rule-source]')).not.toHaveAttribute('href', before!);
-  await page.getByRole('searchbox', { name: /Search .* games/ }).fill('Wingspan');
+  await page.getByRole('searchbox', { name: /Search .* starting rules/ }).fill('Wingspan');
   await expect(page.locator('.rule-lookup-answer').first()).toContainText('random');
   expect(requests).toBe(1);
   await page.evaluate(() => {

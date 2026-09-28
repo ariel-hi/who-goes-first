@@ -7,7 +7,6 @@ import HomeRandomRule from '../components/HomeRandomRule.astro';
 import { getCatalog } from '../lib/content/catalog';
 const balloonEnabled = process.env.DISABLE_BALLOON !== 'true';
 const approved = getCatalog();
-const gameCount = new Set(approved.map(rule => rule.gameName)).size;
 const quickRules = ['catan-2020-en', 'wingspan-online-en', 'azul-2018-en', 'ticket-to-ride-2015-en']
   .map(slug => approved.find(rule => rule.slug === slug))
   .filter(rule => rule !== undefined);
@@ -24,7 +23,7 @@ const title = 'Who Goes First? Random First Player Picker';
       <section class="home-rules" aria-labelledby="home-rules-heading">
         <h2 id="home-rules-heading">Playing a specific game?</h2>
         <p>Many rulebooks say who starts. Look it up, straight from the publisher’s rules.</p>
-        {approved.length > 0 && <RuleLookup ruleCount={gameCount} />}
+        {approved.length > 0 && <RuleLookup ruleCount={approved.length} />}
         {quickRules.length > 0 && <nav class="home-quick-rules" aria-label="Quick game rules"><span>Go straight to a rule:</span><ul>{quickRules.map(rule => <li><a href={`/games/${rule.slug}/`}>{rule.gameName}</a></li>)}</ul></nav>}
         <HomeRandomRule games={approved} />
         <ul class="home-rules-links">
