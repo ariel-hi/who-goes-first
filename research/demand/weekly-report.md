@@ -5,6 +5,18 @@
 - Impressions: **0** (new)
 - Published rules: 1115
 
+## Google indexing sample
+- Submitted sitemap: https://whogoesfirst.fun/sitemap-index.xml · last downloaded unknown · 0 errors, 0 warnings · processing pending
+- Submitted sitemap: https://whogoesfirst.fun/sitemap.xml · last downloaded unknown · 0 errors, 0 warnings · processing pending
+- /: PASS; Submitted and indexed; last crawl 2026-09-28T14:53:02Z; fetch SUCCESSFUL.
+- /games/: PASS; Submitted and indexed; last crawl 2026-09-27T03:01:19Z; fetch SUCCESSFUL.
+- /board-games/: NEUTRAL; URL is unknown to Google; last crawl unknown; fetch PAGE_FETCH_STATE_UNSPECIFIED.
+- /games/catan-2020-en/: NEUTRAL; URL is unknown to Google; last crawl unknown; fetch PAGE_FETCH_STATE_UNSPECIFIED.
+- /games/ticket-to-ride-2015-en/: PASS; Submitted and indexed; last crawl 2026-09-27T08:19:27Z; fetch SUCCESSFUL.
+- /games/wingspan-online-en/: PASS; Submitted and indexed; last crawl 2026-09-27T04:49:50Z; fetch SUCCESSFUL.
+
+This checks six named URLs in Google's indexed data, not the current live pages or the full site.
+
 ## Traffic (GA4, last 30 days)
 - Sessions: **1,748** · Screen/page views: **2,957** · Users: 1,719
 - Screen/page views per session: 1.69

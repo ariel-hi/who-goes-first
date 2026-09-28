@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-09-28T18:15:56.928Z",
+  "property": "https://whogoesfirst.fun/",
+  "source": "Google Search Console Sitemaps and URL Inspection APIs",
+  "scope": "Six named URLs in Google’s index; URL Inspection does not test the current live page or prove site-wide indexing.",
+  "sitemapsStatus": "available",
+  "submittedSitemaps": [
+    {
+      "path": "https://whogoesfirst.fun/sitemap-index.xml",
+      "lastSubmitted": "2026-09-27T23:27:43.006Z",
+      "lastDownloaded": null,
+      "isPending": true,
+      "errors": 0,
+      "warnings": 0,
+      "submittedUrls": null
+    },
+    {
+      "path": "https://whogoesfirst.fun/sitemap.xml",
+      "lastSubmitted": "2026-09-27T02:59:36.079Z",
+      "lastDownloaded": null,
+      "isPending": true,
+      "errors": 0,
+      "warnings": 0,
+      "submittedUrls": null
+    }
+  ],
+  "inspections": [
+    {
+      "path": "/",
+      "status": "available",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-09-28T14:53:02Z",
+      "googleCanonical": "https://whogoesfirst.fun/",
+      "userCanonical": "https://whogoesfirst.fun/",
+      "knownSitemaps": []
+    },
+    {
+      "path": "/games/",
+      "status": "available",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-09-27T03:01:19Z",
+      "googleCanonical": "https://whogoesfirst.fun/games/",
+      "userCanonical": "https://whogoesfirst.fun/games/",
+      "knownSitemaps": []
+    },
+    {
+      "path": "/board-games/",
+      "status": "available",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "knownSitemaps": []
+    },
+    {
+      "path": "/games/catan-2020-en/",
+      "status": "available",
+      "verdict": "NEUTRAL",
+      "coverageState": "URL is unknown to Google",
+      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+      "indexingState": "INDEXING_STATE_UNSPECIFIED",
+      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "knownSitemaps": []
+    },
+    {
+      "path": "/games/ticket-to-ride-2015-en/",
+      "status": "available",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-09-27T08:19:27Z",
+      "googleCanonical": "https://whogoesfirst.fun/games/ticket-to-ride-2015-en/",
+      "userCanonical": "https://whogoesfirst.fun/games/ticket-to-ride-2015-en/",
+      "knownSitemaps": []
+    },
+    {
+      "path": "/games/wingspan-online-en/",
+      "status": "available",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-09-27T04:49:50Z",
+      "googleCanonical": "https://whogoesfirst.fun/games/wingspan-online-en/",
+      "userCanonical": "https://whogoesfirst.fun/games/wingspan-online-en/",
+      "knownSitemaps": []
+    }
+  ]
+}
