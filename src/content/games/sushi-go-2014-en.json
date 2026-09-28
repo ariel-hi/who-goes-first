@@ -3,8 +3,8 @@
   "slug": "sushi-go-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "0b2f371ec0aba6ef3f2d648f5db85f222b75f3b395b5b7f9994d6f60eb5c4ae0",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "e12434337491b94b939c02f09b812f05b466e6e59a94205fff52a43c42286245",
   "publishedAt": "2026-09-23",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sushi Go!",
@@ -13,6 +13,23 @@
     "SushiGo"
   ],
   "editionLabel": "Gamewright English base game · copyright 2014",
+  "image": {
+    "file": "/images/games/sushi-go-2014-en-cover.jpg",
+    "alt": "Official Sushi Go! product image showing the game box",
+    "width": 480,
+    "height": 384,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/GAMEWRIGHT-249.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://gamewright.com/product/sushi-go. Exact downloadable high-resolution image file: https://gamewright.com/images/twenty/GAMEWRIGHT-249.jpg. Edition check: publisher product page title and box match Sushi Go! and the cited Gamewright rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Everyone chooses a card secretly at the same time. Once everyone has chosen, reveal the cards together; no single player starts.",
   "officialTieBreak": "Not applicable: selection and reveal are simultaneous.",
   "houseFallback": null,

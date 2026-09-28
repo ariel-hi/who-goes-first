@@ -3,13 +3,30 @@
   "slug": "zoinx-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "adae0b2c0a7833f4567de1f2d0e786237be958c01423d977ee268dfaa4cfb17c",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "80e676f43286ccd11941ce6dc03471c4c33fa8a0deaa88b0f555c767296b7a79",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Zoinx!",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/zoinx-gamewright-en-cover.jpg",
+    "alt": "Official Zoinx! product image showing the game box",
+    "width": 390,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/zoinx_productshot.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://gamewright.com/product/zoinx. Exact downloadable high-resolution image file: https://gamewright.com/images/twenty/zoinx_productshot.jpg. Edition check: publisher product page title and box match Zoinx! and the cited Gamewright rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player whose name is closest to Z starts as the active player.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",

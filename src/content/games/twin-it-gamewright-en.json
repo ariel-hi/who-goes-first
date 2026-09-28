@@ -3,13 +3,30 @@
   "slug": "twin-it-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "6393d24852d2a3e4b6a58d25f064964d42d7e65789f08ab92362cf491b0cfa46",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "a100d75a16fa0a5daed11d553b09d409ddfd954650733d4020391ec3d73d9d67",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Twin It!",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
+  "image": {
+    "file": "/images/games/twin-it-gamewright-en-cover.jpg",
+    "alt": "Official Twin It! product image showing the game box",
+    "width": 480,
+    "height": 386,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/images/twenty/boxandcomponents.jpg",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://gamewright.com/product/twin-it. Exact downloadable high-resolution image file: https://gamewright.com/images/twenty/boxandcomponents.jpg. Edition check: publisher product page title and box match Twin It! and the cited Gamewright rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The person wearing the greatest number of colors starts by revealing a card.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose a starting player randomly. This is a house rule.",
