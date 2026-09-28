@@ -3,10 +3,10 @@
   "slug": "flitze-flatze-baerentatze-zoch-601105211-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root",
-  "approvedRevision": "65ca77e2e60512b41b2f7ab72fc53004c71da35592ac0c48bf093a4ec853fcfc",
+  "approvedBy": "Codex /root; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "92321da7e9c8b4b5eeca667868dd91fcf4072d9fd7c637ffe8decc0f0c01f95e",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Flitze Flatze Bärentatze",
   "aliases": [],
   "editionLabel": "Zoch English rules",
@@ -49,5 +49,22 @@
   "uncertainty": [
     "No official opening tie-break is supplied; the random fallback is a proposed house rule.",
     "The footer reads 2026 Zoch Verlag. No printing or rule version is identified; PDF metadata and HTTP Last-Modified dates are not printing evidence."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/flitze-flatze-baerentatze-zoch-601105211-en-cover.jpg",
+    "alt": "Flitze Flatze Bärentatze official game box cover",
+    "width": 330,
+    "height": 275,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.zoch-verlag.com/zoch_en/categories/family-games/flitze-flatze-baerentatze-601105211-en.html",
+      "publisher": "Zoch Verlag"
+    },
+    "fairUse": {
+      "rightsHolder": "Zoch Verlag and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.zoch-verlag.com/zoch_en/categories/family-games/flitze-flatze-baerentatze-601105211-en.html supplies original product image https://image-cache.simba-dickie.com/d5pHueNy-f2ULTPm9dlM9kXkm1rEk3pNxr1PiSNUdK0/max_bytes:500000/fn:ZmxpdHplLWZsYXR6ZS1iYWVyZW50YXR6ZS02MDExMDUyMTEtZW5fMDA:1/cb:MTc3MjcyMTYxMw/aHR0cHM6Ly9jZG4uc2ltYmEtZGlja2llLWdyb3VwLmRlL21lZGlhX25ldy9zaG9wLXpvY2gvcHJvZHVjdHMvNjAxMTA1MjExLzAwL2RldGFpbF9tb2JpbGUvZmxpdHplLWZsYXR6ZS1iYWVyZW50YXR6ZS02MDExMDUyMTEtZW5fMDAuanBlZz92PTE3NzI3MjE2MTM/flitze-flatze-baerentatze-601105211-en_00.v1.avif. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

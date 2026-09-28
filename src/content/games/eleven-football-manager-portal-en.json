@@ -3,10 +3,10 @@
   "slug": "eleven-football-manager-portal-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "87f078b00564974ba33c3cbdf630f7910cb64f7b7c42a148c13e15c959ed14ee",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "63e3706c3872cb13c228c6b11c2970a1ef21e61455d5b1840a6b9506a5d589f3",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Eleven: Football Manager Board Game",
   "aliases": [
     "Eleven"
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-authored English rulebook PDF page 4 preserved by 1jour-1jeu; PDF page 12 describes simultaneous stages, clockwise turns, and passing the Stage marker left at week end. Setup step 10 selects the most recent goal scorer. SHA-256: d7f33ef9e7581059b916a5a79900924f1ccae387d92a1e5f1799b0761f343fe2. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/eleven-football-manager-portal-en-cover.jpg",
+    "alt": "Eleven: Football Manager Board Game official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shopportalgames.com/products/eleven",
+      "publisher": "Portal Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Portal Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://shopportalgames.com/products/eleven supplies original product image https://shopportalgames.com/cdn/shop/products/Obszarkompozycji2-box2_1200x.png?v=1660634210. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

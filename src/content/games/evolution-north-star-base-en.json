@@ -3,8 +3,8 @@
   "slug": "evolution-north-star-base-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
-  "approvedRevision": "8da29c3e6f62a99bcd974fe6a3ec5101db72fa229d9bf26e7c933ddf453f9510",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28; Codex edition and fair-use rulebook-cover review, owner-authorized 2026-09-28",
+  "approvedRevision": "9c6cf6b967a458cea4ac8d50422973d1a682cfb42392f8902e27d97090b527d4",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Evolution",
@@ -24,8 +24,12 @@
       "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/Evolution-Rules-Web_1.pdf?7044374637391402093",
       "title": "Evolution — North Star Games English base-game rulebook",
       "publisher": "North Star Games",
-      "printedPages": ["3"],
-      "pdfPagesOneBased": [3],
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
       "location": "Set-Up, final bullet",
       "checkedAt": "2026-09-28"
     }
@@ -34,5 +38,22 @@
   "uncertainty": [
     "The publisher does not name a particular randomizer or tie-break procedure.",
     "The cited PDF's 2017 creation metadata does not establish the rule in the 2014 first printing."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/evolution-north-star-base-en-rulebook-cover.jpg",
+    "alt": "Evolution official rulebook cover",
+    "width": 271,
+    "height": 350,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/Evolution-Rules-Web_1.pdf?7044374637391402093",
+      "publisher": "North Star Games"
+    },
+    "fairUse": {
+      "rightsHolder": "North Star Games and any cover-art licensors or artists (precise ownership not stated in PDF)",
+      "rationale": "Small, compressed rulebook cover identifies the edition discussed in this editorial rule explanation and does not substitute for the rulebook or game.",
+      "provenance": "First page of official rulebook PDF https://cdn.shopify.com/s/files/1/0283/4324/files/Evolution-Rules-Web_1.pdf?7044374637391402093. The title and artwork identify the cited edition. This is a rulebook cover rather than a product box image.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

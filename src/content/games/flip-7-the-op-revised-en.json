@@ -3,10 +3,10 @@
   "slug": "flip-7-the-op-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "1fd7225fe2ffab92480b939f3f44c12c67e61935ff456e8288ce6db9c63bd3af",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "93714b98d873e207e1be65ac1a8737e1e49b133089b3fdfe9fbf096f34ca799a",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Flip 7",
   "aliases": [],
   "editionLabel": "The Op English revised edition",
@@ -39,5 +39,22 @@
   "internalEvidence": "The Op dedicated Flip7 rules page links this revised English foldout manual. Both PDF sheets were rendered and inspected. Printed3 chooses dealer without a criterion; printed4 deals in turn order without naming first recipient; printed12 passes dealer left. Dealer-left-first was not inferred. Source custody: research/source-files/popular-sep26-04/flip.pdf; SHA-256 c17884d1cde5317ba3e67fae27e06b071a60134788fe0950d2712f8a078394f9. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The rules do not specify how to choose the initial dealer, who receives the first card, or which direction the initial turn order runs."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/flip-7-the-op-revised-en-cover.jpg",
+    "alt": "Flip 7 official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://theop.games/products/flip-7",
+      "publisher": "The Op Games"
+    },
+    "fairUse": {
+      "rightsHolder": "The Op Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://theop.games/products/flip-7 supplies original product image https://cdn.shopify.com/s/files/1/0611/3958/3198/files/2025_Flip7Peg_3DBT_FoilPhoto_Retailer_2.jpg?v=1746744561. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

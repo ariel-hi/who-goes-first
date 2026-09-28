@@ -3,10 +3,10 @@
   "slug": "hero-realms-white-wizard-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "aa4209cf0388be5d11a3651618c73e0f222bb72ad3a630e491b7568a05ff5d5b",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "55261aa11247da910490c53560c5d6666ac808ac748f60dc374782c1e0610c0f",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hero Realms",
   "aliases": [],
   "editionLabel": "White Wizard English base game",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered archive publisher rule sheet PDF 1 random first/clockwise/3-and-5 opening hands; PDF 2 text multiplayer 3/4/5. Official https://www.herorealms.com/base-game-rules/ was read and saved and matches the base setup. Campaign rulebooks found in search were rejected for scope. Source custody: research/source-files/popular-sep26-13/hero.pdf; SHA-256 5e9f80ac096cd880ce21bbebaf83a789e1b671d0f6f2746b1707565108ca79f8. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
   "uncertainty": [
     "The publisher-authored English rule sheet is preserved by a rulebook archive; the publisher’s online base-game rules independently confirm the two-player setup. This record covers standard competitive play, not team or campaign formats."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hero-realms-white-wizard-en-cover.jpg",
+    "alt": "Hero Realms official game box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.wisewizardgames.com/products/hero-realms-base-game",
+      "publisher": "Wise Wizard Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Wise Wizard Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://shop.wisewizardgames.com/products/hero-realms-base-game supplies original product image https://shop.wisewizardgames.com/cdn/shop/products/HRBaseSet_8af87590-a6c6-4815-b391-262b454bc182_480x480.jpg?v=1617741804. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

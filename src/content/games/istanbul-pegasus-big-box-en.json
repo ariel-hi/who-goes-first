@@ -3,10 +3,10 @@
   "slug": "istanbul-pegasus-big-box-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "bbf33121f6fa189bed699d7a7a21fde04e462e38b739e1cf109399f8dc798344",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "bb1acc0d3e633633302bfd0d8f86528ca62e8bf750c31417bef2a2114dee14f0",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Istanbul",
   "aliases": [],
   "editionLabel": "Pegasus English Big Box — base game",
@@ -37,5 +37,22 @@
   "internalEvidence": "Publisher-hosted English Big Box manual: base-game setup step 12 randomly assigns the starter and starting money; Flow of Play confirms clockwise turns. Source custody: research/source-files/popular-sep26/istanbul.pdf; SHA-256 529230ae52ba385cb21621dc0a7d86feb2118ce54cc7e420ab0d81d78ed8affb. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "This record covers base-game play using the Big Box manual, not the separate dice or Choose & Write games."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/istanbul-pegasus-big-box-en-cover.jpg",
+    "alt": "Istanbul official game box cover",
+    "width": 422,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pegasus.de/en/Istanbul-Big-Box/55119G",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://pegasus.de/en/Istanbul-Big-Box/55119G supplies original product image https://cdn.pegasus.de/public/media/4a/7a/9e/1784725175/4250231715532.png?ts=1784725175. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

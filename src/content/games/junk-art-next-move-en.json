@@ -3,10 +3,10 @@
   "slug": "junk-art-next-move-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "733ea8d3f20496aded19a41dbc6f82910a64528e771ee0c16c8f5889a14e411b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1ab14c87c78c2a82278725a47c1fc979eeb185b885c0728783e06377a82c65b3",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Junk Art",
   "aliases": [],
   "editionLabel": "Next Move Games English World Tour rules",
@@ -37,5 +37,22 @@
   "uncertainty": [
     "Some cities use simultaneous play; their start player does not take a first individual turn.",
     "No tie procedure is stated for people who last visited an exhibition together at the first city."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/junk-art-next-move-en-cover.jpg",
+    "alt": "Junk Art official game box cover",
+    "width": 450,
+    "height": 450,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nextmove-games.com/en/other-games/",
+      "publisher": "Next Move Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Next Move Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.nextmove-games.com/en/other-games/ supplies original product image https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/Junkartcover-450x450.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

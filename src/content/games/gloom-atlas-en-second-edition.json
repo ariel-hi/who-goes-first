@@ -3,10 +3,10 @@
   "slug": "gloom-atlas-en-second-edition",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "eba91eb84b81a708334d60b0efe043fc11eb9b97a489955554402a94905c42c5",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c0c92ed8b608439adc71970dbb496dd5102e7ad6a7831b5ed94c5fc305b53bf1",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gloom",
   "aliases": [
     "Gloom Second Edition"
@@ -38,5 +38,22 @@
   "uncertainty": [
     "The cited rule does not resolve every possible partial tie or a situation where the owner is absent.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gloom-atlas-en-second-edition-cover.jpg",
+    "alt": "Gloom official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.atlas-games.com/product_tables/AG1350",
+      "publisher": "Atlas Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Atlas Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.atlas-games.com/product_tables/AG1350 supplies original product image https://www.atlas-games.com/atlas-cms/resources/thumbs/gloomproductimg.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

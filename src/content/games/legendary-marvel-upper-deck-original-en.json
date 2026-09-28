@@ -3,10 +3,10 @@
   "slug": "legendary-marvel-upper-deck-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "3952be6e5affe375ad618ef5b0976c6add90792bdea89b9d226132fc7389d067",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e5aebe62fef50ba6515567b29afa49ec4ab3ff8be0b52e28ccfbc9fbeb5389c1",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Legendary: A Marvel Deck Building Game",
   "aliases": [],
   "editionLabel": "Upper Deck English original core set",
@@ -35,5 +35,22 @@
   "internalEvidence": "Official Upper Deck2024 tournament policy PDF links the original core manual on theupperdeckco.wpenginepowered.com. Followed that embedded publisher hyperlink and retrieved the13-page spread PDF. RenderedPDF5 printed7 explicitly choose a player, clockwise. Do not substitute current2026second-edition manual. Source custody: research/source-files/popular-sep26-08/legendary.pdf; SHA-256 5f19b2412eaea4e7e760ccbcbe57b83fbb15f2ef481ae8ffd6589ea9db9b63e3. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "This is the original core-set manual. The newer second-edition core set has a separate rulebook and is not covered by this record."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/legendary-marvel-upper-deck-original-en-cover.jpg",
+    "alt": "Legendary: A Marvel Deck Building Game official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://upperdeckstore.com/legendary-info",
+      "publisher": "Upper Deck and Marvel licensors"
+    },
+    "fairUse": {
+      "rightsHolder": "Upper Deck and Marvel licensors and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://upperdeckstore.com/legendary-info supplies original product image https://upperdeckstore.com/media/wysiwyg/legendary-box-art_1.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

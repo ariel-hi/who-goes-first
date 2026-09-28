@@ -3,10 +3,10 @@
   "slug": "fallout-shelter-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "0e9fad71252ee9419d4b11767699e8bd82cdc8be9f3ab1332c23f46d9cbd7bd6",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f7a30be7fffca66e4658c1e1eff0b75ae1096cd396b67c4e7f7e72e76de1c3de",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fallout Shelter: The Board Game",
   "aliases": [
     "Fallout Shelter"
@@ -40,5 +40,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-hosted English rulebook v2 PDF pages 3–4; text on page 6 confirms the later-round First Player icon. Setup gives the most-recently-underground criterion. This is the Fallout Shelter board game, distinct from Fallout: The Board Game. SHA-256: 6568c00ae621d0760bf374fa265e8994bbe0b5d26d8020a4b69881a30c11cc78. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the opening instruction and first-turn sequence against the rendered publisher rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/fallout-shelter-ffg-en-cover.jpg",
+    "alt": "Fallout Shelter: The Board Game official game box cover",
+    "width": 300,
+    "height": 300,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.fantasyflightgames.com/en/products/fallout-shelter-the-board-game/products/fallout-shelter-board-game/",
+      "publisher": "Fantasy Flight Games and Fallout licensors"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and Fallout licensors and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.fantasyflightgames.com/en/products/fallout-shelter-the-board-game/products/fallout-shelter-board-game/ supplies original product image https://images-cdn.fantasyflightgames.com/filer_public/be/75/be758861-0c61-4c24-8760-9e363157e217/zx06_main.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

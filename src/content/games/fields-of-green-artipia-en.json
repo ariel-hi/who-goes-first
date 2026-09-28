@@ -3,10 +3,10 @@
   "slug": "fields-of-green-artipia-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "bcbac836d48aba9b813e6fb73c96f8a65eeb96b982aca43c3509e2b22a11e82d",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c4a34c7fd9c837d3a341a0dff48f7ebec55d1d533463f4eccac433c76a28283f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fields of Green",
   "aliases": [],
   "editionLabel": "Artipia Games English rulebook",
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-hosted Artipia English PDF pages 2 and 7; PDF page 3 confirms Upkeep order. Setup step 6 permits either a farm or a rural area. The tile passes left after Harvest. SHA-256: ab32559a97effff7546499dcce79f914980020820c44e7d81d82e11bb98b324b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player wording, and stated later turn order on rendered rulebook pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/fields-of-green-artipia-en-cover.jpg",
+    "alt": "Fields of Green official game box cover",
+    "width": 449,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.artipiagames.com/fields-of-green/",
+      "publisher": "Artipia Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Artipia Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.artipiagames.com/fields-of-green/ supplies original product image https://www.artipiagames.com/wp-content/uploads/FoG-3D-BOX.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

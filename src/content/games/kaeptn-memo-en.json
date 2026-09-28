@@ -3,10 +3,10 @@
   "slug": "kaeptn-memo",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root, under the owner’s standing improvement and source-review authorization",
-  "approvedRevision": "aed74ce14e2e1fe77364913aff4ae42adb8c318a0307e418684da0304a09aab5",
+  "approvedBy": "Codex /root, under the owner’s standing improvement and source-review authorization; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "125d9d121d92ca85dc469c47557d5503dadcf7a0bcf1c48c056284b4c022f487",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Käpt'n Memo",
   "aliases": [],
   "editionLabel": "English summary of Zoch German rules",
@@ -50,5 +50,22 @@
     "No official initial-criterion tie or no-history procedure is stated.",
     "The visible2025 imprint and PDF document-info dates do not establish a printing or named version.",
     "No external numeric identity, creator identifier, translated alias or reissue correspondence is inferred."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kaeptn-memo-en-cover.jpg",
+    "alt": "Käpt'n Memo official game box cover",
+    "width": 330,
+    "height": 275,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.zoch-verlag.com/zoch_de/kategorien/familienspiele/kaeptn-memo-601105221-de.html",
+      "publisher": "Zoch Verlag"
+    },
+    "fairUse": {
+      "rightsHolder": "Zoch Verlag and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.zoch-verlag.com/zoch_de/kategorien/familienspiele/kaeptn-memo-601105221-de.html supplies original product image https://image-cache.simba-dickie.com/wm4BPEDioFg6cJaT5tvwATVv35Sg_WnETQqrwQ8mgFY/max_bytes:500000/fn:a2FlcHRuLW1lbW8tNjAxMTA1MjIxLWRlXzAw:1/cb:MTc1NDI5MTU0MA/aHR0cHM6Ly9jZG4uc2ltYmEtZGlja2llLWdyb3VwLmRlL21lZGlhX25ldy9zaG9wLXpvY2gvcHJvZHVjdHMvNjAxMTA1MjIxLzAwL2RldGFpbF9tb2JpbGUva2FlcHRuLW1lbW8tNjAxMTA1MjIxLWRlXzAwLmpwZWc_dj0xNzU0MjkxNTQw/kaeptn-memo-601105221-de_00.v1.avif. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
