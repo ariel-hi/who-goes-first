@@ -1,0 +1,44 @@
+{
+  "id": "zombicide-black-plague-original-en",
+  "slug": "zombicide-black-plague-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Zombicide: Black Plague",
+  "aliases": [],
+  "editionLabel": "Original standalone Black Plague English base game",
+  "firstPlayerRule": "Decide who starts and give that player the first-player token. The token holder takes the first turn; the next player is on their left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "The Black Plague rulebook gives no required method for deciding who receives the token.",
+    "At the end of each game round, pass the first-player token to the player on the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-black-plague.pdf",
+      "title": "Zombicide: Black Plague — original English rulebook",
+      "publisher": "Guillotine Games / CMON",
+      "printedPages": [
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        8
+      ],
+      "location": "Setup step 11; Game Overview, Players’ Phase and End Phase",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Full official English PDF linked by the Zombicide Black Plague product page https://www.zombicide.com/black-plague/ and hosted by Asmodee. SHA-256 9b15c2b0d1fc40de3b8493ee8018222e2e2ee5c5602d5d43d20858e773663101, 12759644 bytes, 56 PDF pages. Codex visually inspected PDF page 7 (printed 7): setup step 11 says decide who starts and give that person the first-player token. Extracted PDF page 8 (printed 8): token holder takes the first turn, subsequent players to the left, and token passes left at round end. Source packet: artifacts/pending-rules-followup-sep28c/REVIEW.md. Exact BGG 176189 / Wikidata Q122656061 active directory identity. The original classic Zombicide rulebook's comment about avoiding random choice is not transferred to this standalone edition. Excluded from the portable random picker pool because the source leaves selection to the group.",
+  "uncertainty": [
+    "The Black Plague rulebook does not prescribe a selection method or a tie procedure; this article does not claim the classic Season 1 edition's extra wording applies."
+  ]
+}

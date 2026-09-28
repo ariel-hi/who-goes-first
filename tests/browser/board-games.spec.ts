@@ -408,6 +408,18 @@ test('King of New York and Cryptid show the exact source opening and edition', a
   await expectReviewedSourceCitation(page, 'cryptid-osprey-original-en', 4);
 });
 
+test('Black Plague and Castle Combo show their own opening passages', async ({ page }) => {
+  await page.goto('/games/zombicide-black-plague-original-en/');
+  await expect(page.locator('.rule-answer')).toContainText('give that player the first-player token');
+  await expect(page.locator('.rule-answer')).not.toContainText('not to choose randomly');
+  await expect(page.getByText('If your rules call for a random choice,')).toHaveCount(0);
+  await expectReviewedSourceCitation(page, 'zombicide-black-plague-original-en', 7);
+  await page.goto('/games/castle-combo-asmodee-en-2024/');
+  await expect(page.locator('.rule-answer')).toContainText('Randomly choose the first player');
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+  await expectReviewedSourceCitation(page, 'castle-combo-asmodee-en-2024', 4);
+});
+
 test('archived German summaries distinguish opening selection from action and feeding order', async ({ page }) => {
   await page.goto('/games/magalon-ravensburger-de-1998/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');

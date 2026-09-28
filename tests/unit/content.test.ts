@@ -49,6 +49,25 @@ test('King of New York and Cryptid attach only their reviewed base-game openings
   expect(games.find(item => item.bggId === '246784')?.rules[0]?.tieBreakApplicable).toBe(false);
 });
 
+test('Black Plague and Castle Combo use their own source editions and keep random-pool consent explicit', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
+  for (const [id, name, ruleId, pdfPage] of [
+    ['176189', 'Zombicide: Black Plague', 'zombicide-black-plague-original-en', 7],
+    ['416851', 'Castle Combo', 'castle-combo-asmodee-en-2024', 4],
+  ] as const) {
+    const game = games.find(item => item.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]?.sources[0]?.pdfPagesOneBased[0]).toBe(pdfPage);
+    expect(game?.rules[0]?.tieBreakApplicable).toBe(false);
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(false);
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+  }
+  expect(games.find(item => item.bggId === '176189')?.rules[0]?.firstPlayerRule).not.toContain('not to choose randomly');
+  expect(games.find(item => item.bggId === '416851')?.rules[0]?.firstPlayerRule).toContain('Randomly choose');
+});
+
 test('next native title decisions add discovery identities without borrowing rules', async () => {
   const games = getBoardGames();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number }>;
