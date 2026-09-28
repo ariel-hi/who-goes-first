@@ -3,10 +3,10 @@
   "slug": "formula-d-asmodee-basic-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "548793b070487e007bbf43cbfb10f9f7a91298d374cc0a05fd40e3268de17ef5",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "643de47a09e7f771a37bc7a9c938968b0e8271f992d5d09d6249a247dfd66304",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Formula D",
   "aliases": [],
   "editionLabel": "Asmodee English basic rules",
@@ -38,5 +38,22 @@
   "internalEvidence": "Inspected actual image-only Asmodee-hosted basic rulebook, rendered 3 order of play and 5 start formation. Page 8 credits Play Machines 2011 and translator Birgit Irgang. Public read-only legacy CDN retrieval used a request-local TLS certificate exception; file hash preserved. Also inspected publisher advanced page 5 which agrees on grid selection; optional advanced variants outside record scope. Rejected 121 KB archive PDF because it was a Universal Head summary, not publisher rules. Source custody: research/source-files/popular-sep26-13/formula-official.pdf; SHA-256 58cb80e2c9f7effd7cedf4764142446e35b9a3977e042f4e0edc1b2d14d095d0. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "This record covers the basic rules. The publisher’s legacy download server reported an expired security certificate when checked."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/formula-d-asmodee-basic-en-cover.jpg",
+    "alt": "Formula D English base-game box cover",
+    "width": 400,
+    "height": 400,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.asmodee.ca/en/fd01us",
+      "publisher": "Asmodee Canada / Zygomatic"
+    },
+    "fairUse": {
+      "rightsHolder": "Asmodee / Zygomatic and cover-art creators (precise ownership not stated on product page)",
+      "rationale": "Small, compressed box cover identifies the English base game discussed in this editorial rule explanation.",
+      "provenance": "Official Asmodee Canada product page identifies English-language Formula D as product code FD01US, UPC 9782914849647, and supplies the image https://shop.asmodee.ca/img/product/FD01US_01-B.jpg. The Asmodee North America 2018 catalog independently lists the English base game as FD01 with the same UPC, while the cited official English basic-rules PDF is named fd01_basic_rules.pdf. The image is the base game rather than an expansion.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
