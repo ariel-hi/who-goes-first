@@ -3,10 +3,10 @@
   "slug": "liberation-of-rietburg-kosmos-en-2020",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "48a24b81aad4664c3689dd9d660fc38c936355a4b3608579e61bdddf8c0578d2",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "a0301738d37d70ada888ce8db22c4245037d4483d986299af4ca398578666741",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Liberation of Rietburg",
   "aliases": [
     "Legends of Andor: Liberation of Rietburg",
@@ -47,5 +47,22 @@
   "uncertainty": [
     "The subjective criterion has no stated measurement or tie-break.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/liberation-of-rietburg-kosmos-en-2020-cover.jpg",
+    "alt": "The Liberation of Rietburg English Thames & Kosmos box",
+    "width": 345,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://staging.thamesandkosmos.com/index.php/image-downloads/item/liberation-of-rietburg-product-image-downloads",
+      "publisher": "Thames & Kosmos (official product-image archive)"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos and original cover artists (precise ownership not stated on archive page)",
+      "rationale": "Small, compressed product cover identifies the English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official publisher product-image archive supplies 691746_LoA_Rietburg_3DBox.jpg at https://staging.thamesandkosmos.com/images/product_image/695064_Liberation_of_Rietburg/691746_LoA_Rietburg_3DBox.jpg. The visible English box and printed 691746 product code match the approved Thames & Kosmos English rules record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
