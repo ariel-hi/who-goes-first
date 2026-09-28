@@ -3,10 +3,10 @@
   "slug": "goblins-inc-cge-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5b0c054328d0ef6bb1457caed192163ac3fcc690a8acd83f30cffca63d20151f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "a14365fccc9b7a7614538c9ad2713d8fe022fbe1457f1fe0a4bf00a139f95643",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Goblins, Inc.",
   "aliases": [],
   "editionLabel": "English CGE rules, October 2012 copyright",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "No tie-break is stated specifically for the opening box-opener criterion.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/goblins-inc-cge-en-cover.jpg",
+    "alt": "Goblins, Inc. official game box",
+    "width": 318,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.czechgames.com/for-press-games/goblins-inc",
+      "publisher": "Czech Games Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Czech Games Edition and cover artist David Cochard (precise ownership split not stated)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Czech Games Edition publisher press page identifies Goblins, Inc., SKU CGE00020, Q4 2012 release and artist David Cochard, and displays this English game box. Its edition and art match the cited October 2012 English rules. Direct image URL: https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67ebe557c06cf55b65c9d86b_Box%20image.webp",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

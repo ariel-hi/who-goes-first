@@ -3,10 +3,10 @@
   "slug": "galaxy-trucker-cge-2008-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "d37eace73359bbfdce38cdbdc12157707d18ab8db9e2fe235b392b608b8fd9aa",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "badd01de1aa793323e3e564c47c2f8427482357d8c668174df4dbb5532fcd15e",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Galaxy Trucker",
   "aliases": [],
   "editionLabel": "Czech Games Edition English rules, 2008 (original edition)",
@@ -43,5 +43,22 @@
   "uncertainty": [
     "This is the original edition. The 2021 revised edition also has everyone build simultaneously, but its wording was not separately recorded here.",
     "\"Boldest player\" only decides who says \"Go!\"; it does not give anyone a head start."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/galaxy-trucker-cge-2008-en-cover.jpg",
+    "alt": "Galaxy Trucker original-edition official game box",
+    "width": 312,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.czechgames.com/for-press-games/galaxy-trucker-2007-version",
+      "publisher": "Czech Games Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Czech Games Edition and cover artists Tomáš Kučerovský and Radim Pech (precise ownership split not stated)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Galaxy Trucker (2007 Version) publisher press page, SKU CG00001 and Q4 2007 release, displays this original-edition box. It matches the 2008 English old-version rulebook; CGE separately lists its 2021 relaunch, which is not used here. Direct image URL: https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67ebd0b03abc66edc2eeb562_Box%20image.webp",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
