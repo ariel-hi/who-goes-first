@@ -33,6 +33,12 @@
   .directory-alphabet { display:flex; flex-wrap:wrap; gap:3px; padding:9px 0 13px; border-bottom:1px solid var(--line); }
   .directory-alphabet a { display:grid; place-items:center; min-width:36px; min-height:44px; padding:0 5px; border-radius:9px; color:var(--green); font-size:13px; font-weight:600; text-decoration:none; }
   .directory-alphabet a:hover { background:#eae0eb; }
+  .rule-alphabet-section { margin-top:25px; }
+  .rule-alphabet-section h2 { font-size:16px; margin:0 0 5px; }
+  .rule-alphabet-section .directory-alphabet { flex-wrap:wrap; overflow:visible; }
+  .rule-letter-heading { display:flex; align-items:center; gap:14px; scroll-margin-top:20px; margin:20px 0 2px; color:var(--green); font-family:Georgia,serif; font-size:22px; }
+  .rule-letter-heading::after { content:""; flex:1; border-top:1px solid var(--line); }
+  [data-game-directory][data-searching="true"] .rule-letter-heading { display:none; }
   .directory-group { margin-top:25px; scroll-margin-top:18px; }
   .directory-group h2 { display:flex; align-items:center; gap:14px; color:var(--green); font-size:24px; margin:0 0 5px; }
   .directory-group h2::after { content:""; flex:1; border-top:1px solid var(--line); }

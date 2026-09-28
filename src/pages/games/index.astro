@@ -17,7 +17,7 @@ const title = 'Board Game Starting-Player Rules — Who Goes First?';
     <h1>Starting-player rules.</h1>
     <p class="lede">Who starts, according to the rulebook.</p>
     <p>{ruleEditions.toLocaleString('en')} checked starting-player edition records linked to {identitiesWithRules.toLocaleString('en')} documented games. Some games have multiple editions, and a shared rule can apply to more than one game. Can’t find yours? Try the <a href="/board-games/">wider board game directory</a> or the <a href="/">player picker</a>.</p>
-    <GameDirectory games={games} searchAliases={searchAliases} enableDirectorySearch enableSearchHistory>
+    <GameDirectory games={games} searchAliases={searchAliases} enableDirectorySearch enableSearchHistory enableAlphabetBrowse>
       <Fragment slot="discovery">
         <RandomRule games={games} lazy />
         {themes.length > 0 && <nav class="hub-nav" aria-label="Browse rules"><h2>Browse by kind of rule</h2><ul class="theme-links">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}</a></li>)}<li><a href="/ways-to-pick-who-goes-first/">Fun ways to pick</a></li>{publishers.length > 0 && <li><a href="/publishers/">By publisher</a></li>}</ul></nav>}
