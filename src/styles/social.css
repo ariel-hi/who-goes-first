@@ -1,18 +1,22 @@
-/* One compact sharing pattern for picker, rules, directories and printables. */
-.social-links{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px;margin:12px 0;max-width:100%}
-.share-pill,.share-platforms>a{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:36px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;font-weight:600;text-decoration:none;padding:6px 10px;cursor:pointer;box-shadow:none}
-.share-pill:hover,.share-platforms>a:hover{background:var(--soft);border-color:var(--muted);color:var(--ink);text-decoration:none;box-shadow:none;transform:none}
-.share-pill:focus-visible,.share-platforms>a:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+/* Sharing stays compact until a visitor chooses a destination. */
+.social-links{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0;max-width:100%}
+.share-pill{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:36px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;font-weight:600;text-decoration:none;padding:6px 10px;cursor:pointer;box-shadow:none}
+.share-pill:hover{background:var(--soft);border-color:var(--muted);color:var(--ink);text-decoration:none;box-shadow:none;transform:none}
+.share-pill:focus-visible,.share-more:focus-visible,.share-platforms>a:focus-visible{outline:2px solid var(--green);outline-offset:2px}
 .share-pill:disabled{opacity:.6;cursor:progress}
 .share-link .brand-icon{color:var(--green);flex:none}
 .share-options{min-width:0;max-width:100%}
 .share-options[open]{flex-basis:100%}
-.share-more{width:max-content;list-style:none;user-select:none}
+.share-more{display:inline-flex;align-items:center;gap:6px;min-height:36px;list-style:none;user-select:none;cursor:pointer;color:var(--green);font-size:13px;font-weight:600;padding:4px 6px;border-radius:6px}
+.share-more:hover{background:var(--soft)}
 .share-more::-webkit-details-marker{display:none}
-.share-more span{font-size:16px;line-height:1}
+.share-more span{font-size:17px;line-height:1;transition:transform .16s ease}
 .share-options[open] .share-more span{transform:rotate(180deg)}
-.share-platforms{display:grid;grid-template-columns:repeat(auto-fill,36px);gap:6px;max-width:300px;margin-top:8px}
-.share-platforms>a{width:36px;height:36px;padding:0}
+.share-platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;width:min(340px,100%);margin-top:6px;padding:9px;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:0 8px 24px #00000012}
+.share-platforms>a{display:flex;align-items:center;justify-content:flex-start;gap:9px;min-width:0;min-height:42px;padding:7px 8px;border-radius:7px;color:var(--ink);font-size:13px;font-weight:500;line-height:1.2;text-decoration:none}
+.share-platforms>a:hover{background:var(--soft);color:var(--ink);text-decoration:none}
+.share-platforms>a .social-icon{width:22px;height:22px}
+.share-platforms>a svg{flex:none}
 .share-platforms .share-status,.share-platforms input{grid-column:1/-1;min-width:0;max-width:100%}
 .share-status:empty,.share-platforms input[hidden]{display:none}
-@media (max-width:640px),(pointer:coarse){.share-pill,.share-platforms>a{min-height:44px}.share-platforms{grid-template-columns:repeat(auto-fill,44px)}.share-platforms>a{width:44px;height:44px}}
+@media (max-width:640px),(pointer:coarse){.share-pill,.share-more{min-height:44px}.share-platforms>a{min-height:44px}}

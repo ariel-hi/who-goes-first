@@ -42,16 +42,15 @@ for (const width of [320, 1280]) {
             await expect(link).toHaveAttribute('target', '_blank');
             await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
           }
+          await expect(link).toContainText(label === 'Save on Pinterest' ? 'Pinterest' : label === 'Share by email' ? 'Email' : label.replace('Share on ', ''));
           const box = await link.boundingBox();
-          const target = width <= 640 ? 44 : 36;
-          expect(Math.round(box!.width)).toBe(target);
-          expect(Math.round(box!.height)).toBe(target);
+          expect(box!.width).toBeGreaterThan(100);
+          expect(box!.height).toBeGreaterThanOrEqual(width <= 640 ? 44 : 42);
           await link.hover();
           const appearance = await link.evaluate(element => ({ shadow: getComputedStyle(element).boxShadow, transform: getComputedStyle(element).transform, background: getComputedStyle(element).backgroundColor }));
           expect(appearance.shadow).toBe('none');
           expect(appearance.transform).toBe('none');
-          await toolbar.locator('[data-share-button]').hover();
-          expect(appearance.background).toBe(await toolbar.locator('[data-share-button]').evaluate(element => getComputedStyle(element).backgroundColor));
+          expect(appearance.background).not.toBe('rgba(0, 0, 0, 0)');
         }
         await toolbar.locator('summary').click();
         await expect(toolbar.locator('[data-instagram-open]')).toBeHidden();

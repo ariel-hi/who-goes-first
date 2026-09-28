@@ -14,4 +14,4 @@ const site = siteSettings();
 const destination = new URL('https://www.pinterest.com/pin/create/button/');
 destination.search = new URLSearchParams({ url: new URL(item.path, site.url).href, media: new URL(item.image, site.url).href, description: item.description }).toString();
 ---
-{site.production && <a class="share-pill share-icon share-pinterest" title="Save on Pinterest" aria-label="Save on Pinterest (opens in a new tab)" href={destination.href} target="_blank" rel="noopener noreferrer"><SocialIcon name="pinterest" /></a>}
+{site.production && <a class="share-platform share-pinterest" aria-label="Save on Pinterest (opens in a new tab)" href={destination.href} target="_blank" rel="noopener noreferrer"><SocialIcon name="pinterest" /><span>Pinterest</span></a>}
