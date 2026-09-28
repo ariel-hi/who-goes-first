@@ -3,13 +3,30 @@
   "slug": "monopoly-classic-hasbro-c1009-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "15f63e6017de02682d97e7542ca8c3f84d19f7030b4fac79d467b1952a4643ff",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "3509032789c6a3c9d4a67ff916e4b309db7b776e6d1b674bcf6e13d038ee4f30",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Monopoly",
   "aliases": [],
-  "editionLabel": "Hasbro Classic Monopoly C1009 English instructions (2015)",
+  "editionLabel": "Hasbro Classic Monopoly C1009 English instructions (2017)",
+  "image": {
+    "file": "/images/games/monopoly-classic-hasbro-c1009-en-cover.jpg",
+    "alt": "Monopoly Classic C1009 box, Hasbro 2017",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://instructions.hasbro.com/_next/image?url=https%3A%2F%2Fwww.hasbro.com%2Fcommon%2Fproductimages%2Fen_GB%2F7EABAF9750569047F5778F4663C79E75%2F244d7a7312de46b443a1ce3b8b8c10c2ba0f8fff.jpg&w=750&q=75",
+      "publisher": "Hasbro"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Hasbro’s C1009 product page https://instructions.hasbro.com/en-gb/instruction/monopoly-game displays this box and links the C1009 instructions cited by the article. The PDF itself has a 2/15/17 production date; the prior 2015 edition label was corrected to 2017. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Each player rolls both dice. The player with the highest total goes first, and play then passes to the left.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -18,7 +35,7 @@
   "sources": [
     {
       "url": "https://instructions.hasbro.com/api/download/C1009_en-my_monopoly-classic-game.pdf",
-      "title": "Monopoly — Hasbro Classic Monopoly C1009 English instructions (2015)",
+      "title": "Monopoly — Hasbro Classic Monopoly C1009 English instructions (2017)",
       "publisher": "Hasbro",
       "printedPages": [],
       "pdfPagesOneBased": [
