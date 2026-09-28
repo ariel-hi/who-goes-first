@@ -3,8 +3,8 @@
   "slug": "prickly-path-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "71c6d6506fccad714b50032e4a226287acd442b4a1cb5eacf520a226dc8b0b78",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex cover editorial review under owner-authorized fair-use approach",
+  "approvedRevision": "aa899ef9f2678ec0a33e5e336b73c64d63316bbedc090f45cad219efe33d82f0",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Prickly Path",
@@ -33,5 +33,22 @@
   "internalEvidence": "Publisher product https://simplyfun.com/products/prickly-path is the accepted SimplyFun identity game-b42cc46b-d3cd-4685-8762-b90cd7122e10 (SKU SF207; accepted product response SHA-256 da9ebfe8c79d2525e707b2b85d6358e98aeb734edd584654b4772d4775f5020f). Its Rulebook link directly supplies the cited English PDF, SHA-256 4ca0bc8dd2a85f34f6ce373cfefcc6172a5db22180bf291cc67f98088a3b12b6, 6835718 bytes, 8 PDF pages. Reviewed rendered opening/setup pages 3 against the PDF text and product title. Opening finding: Each player rolls the die. The highest roller goes first. Official opening tie-break: Reroll any ties. Random-rule mix: exclude; subjective comparison, game-specific components, mode dependency, or a role that is not a portable criterion. No correspondence to another printing or edition is asserted.",
   "uncertainty": [
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/prickly-path-simplyfun-en-cover.jpg",
+    "alt": "Prickly Path SimplyFun purple box with a coyote among desert cacti",
+    "width": 360,
+    "height": 272,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/pricklypath_box1500_b7821b6c-aafb-4c1e-bbd4-c9304d49bbcc.jpg?v=1747716096",
+      "publisher": "SimplyFun, official product image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and the original game/package artists",
+      "rationale": "Small publisher-sourced image of the exact product box identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "SimplyFun official listing https://simplyfun.com/products/prickly-path identifies this product as SKU SF207 and serves the photographed box as its lead image. The same listing directly links the publisher-authored English rulebook https://cdn.shopify.com/s/files/1/0669/5134/8509/files/PricklyPath_Rules_Digital.pdf?v=1764745024 cited for this rule record. The photo is cropped to the package and reduced to 360 × 272 pixels. Publisher display of the image does not imply a license for this use.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

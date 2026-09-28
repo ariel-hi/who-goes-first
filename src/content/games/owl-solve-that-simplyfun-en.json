@@ -3,8 +3,8 @@
   "slug": "owl-solve-that-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "4f1196deca3933b7ac02d7a230d468566ec2e19d8b7141cf6138d04db4255b11",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex cover editorial review under owner-authorized fair-use approach",
+  "approvedRevision": "45b3661c713933256584f70db16acef8d2c480b5f66a93f2754c113e46406581",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Owl Solve That!",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/owl-solve-that-simplyfun-en-cover.jpg",
+    "alt": "Owl Solve That! SimplyFun red box showing detective owls and number cards",
+    "width": 305,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/owlsolvethat_box.webp?v=1766773710",
+      "publisher": "SimplyFun, official product image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and the original game/package artists",
+      "rationale": "Small publisher-sourced image of the exact product box identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "SimplyFun official listing https://simplyfun.com/products/owl-solve-that identifies this product as SKU SF169 and serves the photographed box as its lead image. The same listing directly links the publisher-authored English rulebook https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Owl_Solve_That_Rulebook.pdf?v=1764743743 cited for this rule record. The photo is cropped to the package and reduced to 305 × 360 pixels. Publisher display of the image does not imply a license for this use.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

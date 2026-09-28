@@ -3,8 +3,8 @@
   "slug": "savannascapes-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "0b589f58a533688161774419348ffe7cde311b2c805732394dc26ae15bcc9dae",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex cover editorial review under owner-authorized fair-use approach",
+  "approvedRevision": "a926dc843eefeaed2edb43f1eed304926c319d121bc7298b95017170d8843116",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "SavannaScapes",
@@ -37,5 +37,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/savannascapes-simplyfun-en-cover.jpg",
+    "alt": "SavannaScapes SimplyFun brown box with giraffe, hippo, lion and other savanna animals",
+    "width": 360,
+    "height": 355,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/savannascapes_box.jpg?v=1747719206",
+      "publisher": "SimplyFun, official product image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and the original game/package artists",
+      "rationale": "Small publisher-sourced image of the exact product box identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "SimplyFun official listing https://simplyfun.com/products/savannascapes identifies this product as SKU SF197 and serves the photographed box as its lead image. The same listing directly links the publisher-authored English rulebook https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Savannascapes_DigitalRules.pdf?v=1764745865 cited for this rule record. The photo is cropped to the package and reduced to 360 × 355 pixels. Publisher display of the image does not imply a license for this use.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,8 +3,8 @@
   "slug": "math-room-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "3780d75cce7846dc437e35afeb4d49ee206867492f2443ac836041891240644b",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex cover editorial review under owner-authorized fair-use approach",
+  "approvedRevision": "74f607fd822941c334e4271821ad96974685a8fb8a31e8b640d14ba138b7a6a3",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Math Room",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/math-room-simplyfun-en-cover.jpg",
+    "alt": "Math Room SimplyFun green box with numbered houses",
+    "width": 360,
+    "height": 248,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/mathroom_box_Mar4_6e9baf8b-3cbe-40de-8864-68fa0d719334.jpg?v=1744681752",
+      "publisher": "SimplyFun, official product image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and the original game/package artists",
+      "rationale": "Small publisher-sourced image of the exact product box identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "SimplyFun official listing https://simplyfun.com/products/math-room identifies this product as SKU SF093 and serves the photographed box as its lead image. The same listing directly links the publisher-authored English rulebook https://cdn.shopify.com/s/files/1/0669/5134/8509/files/MathRoom_003_Rulebook.pdf?v=1764742222 cited for this rule record. The photo is cropped to the package and reduced to 360 × 248 pixels. Publisher display of the image does not imply a license for this use.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
