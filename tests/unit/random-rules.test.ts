@@ -28,4 +28,6 @@ test('unreviewed additions and changed answers or sources fail closed', () => {
   expect(randomRuleEligible({ ...rule, firstPlayerRule: 'Everyone starts simultaneously.' })).toBe(false);
   expect(randomRuleEligible({ ...rule, sources: [{ ...rule.sources[0]!, url: 'https://publisher.example/other-edition.pdf' }] })).toBe(false);
   expect(randomRuleEligible({ ...rule, materiallyUpdatedAt: '2026-09-19' })).toBe(true);
+  const catan = getCatalog().find(game => game.id === 'catan-2020-en')!;
+  expect(randomRuleEligible({ ...rule, image: catan.image, additionalImages: catan.additionalImages })).toBe(true);
 });
