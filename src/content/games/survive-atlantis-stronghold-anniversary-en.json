@@ -3,10 +3,10 @@
   "slug": "survive-atlantis-stronghold-anniversary-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "e3ca651a8792afce5e2e98ea64f369df1e391eb6736c6080a7d5118d53474bd7",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "341508ae4c09dcd7494a6fb1ec8c21fcd6e4b4d83084bf81f241d62cce186d7f",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Survive: Escape from Atlantis!",
   "aliases": [],
   "editionLabel": "Stronghold English anniversary edition",
@@ -35,5 +35,22 @@
   "internalEvidence": "Stronghold publisher website returned406. Its English anniversary manual was retrieved from the 1jour-1jeu archive; credits on printed/PDF7 identify Stronghold, Asmodee and anniversary artwork. Page3 setup6 explicitly permits choice or random selection; Game Overview confirms that same first player starts regular turns. This is distinct from the already-covered Zygomatic Survive the Island reimplementation. Source custody: research/source-files/popular-sep26-03/survive.pdf; SHA-256 f38dbcab30df17928d2e1102c5cfa0e8d3a1b0f8672f9ad39f616820f03c6c7c. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The cited source is the publisher-authored anniversary rulebook preserved by a third-party rules archive."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/survive-atlantis-stronghold-anniversary-en-cover.jpg",
+    "alt": "Survive: Escape from Atlantis! Stronghold Games 30th Anniversary Edition box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://zatu.com/cdn/shop/files/ZBG-SHG2002A-FRONT.jpg?v=1760985257&width=1200",
+      "publisher": "Stronghold Games (box image via Zatu Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "Stronghold Games / box artists Jean-Brice Dugait and Stéphane Gantiez",
+      "rationale": "Reduced-size product-box image identifies the exact game edition discussed in this independent rules article. The image is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://zatu.com/products/survive-escape-from-atlantis-30th-anniversary-edition. Image: https://zatu.com/cdn/shop/files/ZBG-SHG2002A-FRONT.jpg?v=1760985257&width=1200. The retailer identifies SKU SHG2002A and Stronghold Games. The photographed box visibly bears the 30th Anniversary Edition badge and matches the Stronghold anniversary rules credited in this record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "save-treasure-fairy-tales-pegasus-2016-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "758a42db406971b3acc9495bdc8fa66a5dc6716a1e66970428e352c025b568a8",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "09c3c008f0d7e60a162445f94b3a59de38513e80a92228b3273c9e6dba749481",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Save the Treasure of Fairy Tales",
   "aliases": [],
   "editionLabel": "Pegasus Spiele English rules, 2016",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF/printed page 5 gives the garden criterion and clockwise direction. Page 8 credits Pegasus Spiele ©2016; fairy tale tiles and king figure match inventory BGG 28565. SHA-256: a72bd0b70bfccd90638e009ddea3575717858d96b0bc02720e4e837108609614. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/save-treasure-fairy-tales-pegasus-2016-en-cover.jpg",
+    "alt": "Save the Treasure of Fairy Tales 2016 English Pegasus Spiele box",
+    "width": 477,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://warmongergamesmalta.com/wp-content/uploads/2018/05/STTOTFTbox.jpg",
+      "publisher": "Pegasus Spiele (box image via Warmonger Games Malta)"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele / game illustrator Anne Pätzke",
+      "rationale": "Reduced-size product-box image identifies the exact game edition discussed in this independent rules article. The image is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://warmongergamesmalta.com/shop/board-games/save-the-treasure-of-fairy-tales/. Image: https://warmongergamesmalta.com/wp-content/uploads/2018/05/STTOTFTbox.jpg. The photographed box has the English title, Pegasus Spiele mark, yellow Kids 5+ branding, and illustrated characters matching the 2016 Pegasus English rules in this record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
