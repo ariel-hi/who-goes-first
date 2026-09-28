@@ -3,10 +3,10 @@
   "slug": "tokaido-funforge-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "2e1bd6d0d7677c59112bcf8a21acdc5f810fc529f2744d455cc9424729b50ba9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "6a9f7f7486dc2809774480c773f1cb543d10d53c934d9ce7c607c7dc97a649e1",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tokaido",
   "aliases": [],
   "editionLabel": "Funforge English original edition",
@@ -42,5 +42,22 @@
   "internalEvidence": "The primary document is the publisher-authored Funforge English rulebook, mirrored by 1jour-1jeu. Its visible credits identify Antoine Bauza, Funforge Studio and copyright Funforge 2012. Printed pages 2–3 on PDF page 2 give random setup and the rearmost Traveler turn rule; printed page 7 gives the two-player neutral Traveler. Publisher sites could not be retrieved; mirror hosting is disclosed. Source custody: research/source-files/popular-sep26-02/tokaido.pdf; SHA-256 3f0f9d024b71fb8173fe07e131c8972423f032989cf0516e5bef6033581fa0e5. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The source is Funforge’s original English rulebook preserved by a third-party rules archive; the current Stonemaier edition was not verified."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tokaido-funforge-en-cover.jpg",
+    "alt": "Original Funforge Tokaido English rulebook title page with miniature Japanese landscape",
+    "width": 382,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.1j1ju.com/medias/9d/6c/0d-tokaido-rulebook.pdf",
+      "publisher": "Funforge original Tokaido English rulebook title page, archived by 1jour-1jeu"
+    },
+    "fairUse": {
+      "rightsHolder": "Funforge and Naiade",
+      "rationale": "Reduced publisher game box or rulebook title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://cdn.1j1ju.com/medias/9d/6c/0d-tokaido-rulebook.pdf. Right-hand title page of the cited original English Funforge rules; shown as rulebook cover art rather than a retail box. Original image URL: https://cdn.1j1ju.com/medias/9d/6c/0d-tokaido-rulebook.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

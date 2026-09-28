@@ -3,10 +3,10 @@
   "slug": "the-brigade-red-genie-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0ae2b8f12fda67c42d3bdd6bd820223e6a9799d1f3b510e9d406c77d6a3b9bb1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "a9884c9ed2d7366443de954247b5fd8ecb84eeb148f72283538879d8c61aa9d2",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Brigade",
   "aliases": [],
   "editionLabel": "Red Genie Games English base game",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered the publisher-authored English base-game page 8 from the archive. It gives the recent-fire criterion, clockwise play and three starter Event cards before the first Action phase. Red Genie Games identifies this as its Tinderbox firehouse game, matching inventory BGG 213503. SHA-256: d81c326e71518c812df7f7b9349a501b61c8534c1ff4d1b72d955bc074ea3bd3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
   "uncertainty": [
     "No tie or no-qualifier fallback is given."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-brigade-red-genie-en-cover.jpg",
+    "alt": "Red Genie Games The Brigade box with fantasy firefighters battling fires in Tinderbox",
+    "width": 390,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://redgeniegames.com/wp-content/uploads/2015/06/box-shot-right.png",
+      "publisher": "Red Genie Games original The Brigade box render"
+    },
+    "fairUse": {
+      "rightsHolder": "Red Genie Games and Antonio “Nunoh” Diaz",
+      "rationale": "Reduced publisher game box or rulebook title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://redgeniegames.com/the-brigade/. Original Brigade box render in the publisher media library, visually distinguished from the proposed second edition and the Way of the Wardens expansion. Original image URL: https://redgeniegames.com/wp-content/uploads/2015/06/box-shot-right.png",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "tiki-oz-editions-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "58ddf006dcde3485025302248a9cc8d8ceb4101fb13e8c03c247d6ff2c990217",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0c2d7eb85250d9914103bd297de55259a6d6e093bf2ef9c51b905eb66174a0ab",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tiki",
   "aliases": [],
   "editionLabel": "Ôz Editions English rules",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered page 3 gives the fruit criterion and turn sequence. The cover bears the Ôz Editions logo and page 8 credits the publisher; Tikis, villages and fruit match inventory BGG 214910. SHA-256: e5e3c9ec6ae8d89b97cd8851c37f9b8d728d7d1cbd224388cf6d7ef37d10c9e5. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for players who last ate fruit together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tiki-oz-editions-en-cover.jpg",
+    "alt": "Tiki English rulebook cover with islanders and tall carved tiki statues",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.1j1ju.com/medias/80/3f/29-tiki-rulebook.pdf",
+      "publisher": "Ôz Éditions English Tiki rulebook title page, archived by 1jour-1jeu"
+    },
+    "fairUse": {
+      "rightsHolder": "Ôz Éditions and Pauline Amelin",
+      "rationale": "Reduced publisher game box or rulebook title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://cdn.1j1ju.com/medias/80/3f/29-tiki-rulebook.pdf. The illustrated first page of the cited English rules bears the Ôz Éditions logo. This is rulebook cover art, not a photograph of the game box. Original image URL: https://cdn.1j1ju.com/medias/80/3f/29-tiki-rulebook.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
