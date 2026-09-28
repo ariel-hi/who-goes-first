@@ -3,10 +3,10 @@
   "slug": "camel-up-eggertspiele-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "63166c73926917ea4ba5835eef9a8887b095b448f61e25d9557e5526f66657c8",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "38d4557fe170cf8b2a28fe8a85a130b3471519e89ab4315410e7280a51417ab6",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Camel Up",
   "aliases": [],
   "editionLabel": "Eggertspiele English original edition",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "The cited setup does not give a tie-break if players are equally young.",
     "This is the original Eggertspiele manual, preserved by a rulebook archive. The former Pegasus download is unavailable. The second edition has a separate record."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/camel-up-eggertspiele-original-en-cover.jpg",
+    "alt": "Original 2014 Camel Up box with five racing camels and Pegasus Spiele logo",
+    "width": 414,
+    "height": 417,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/c/jpg500/camelup.jpg",
+      "publisher": "Noble Knight Games photograph of original Pegasus Spiele Camel Up box"
+    },
+    "fairUse": {
+      "rightsHolder": "eggertspiele, Pegasus Spiele and credited artists",
+      "rationale": "Reduced game packaging or publisher title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147588347/Camel-Up. Retail photograph shows the original 2014 Pegasus Spiele box, a co-published edition with eggertspiele; the game included German and English rules. Original image URL: https://image.nobleknight.com/c/jpg500/camelup.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

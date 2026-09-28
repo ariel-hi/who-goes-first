@@ -3,10 +3,10 @@
   "slug": "castles-burgundy-alea-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "55ec8fa5d9201e127e69cb00128de40bf59537b8057badc5e05359159c42b449",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3c4ba28472bacbd7284640b110ff07288084ecb0e04963d5db3129ea293ce1aa",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Castles of Burgundy",
   "aliases": [],
   "editionLabel": "alea English original edition",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "The publisher-authored original English manual is preserved by a rulebook archive.",
     "The setup instruction does not specify whether high or low wins the starting roll, or how to resolve equal rolls."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/castles-burgundy-alea-original-en-cover.jpg",
+    "alt": "Original alea Castles of Burgundy box with medieval valley illustration and English rules included label",
+    "width": 375,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/2/jpg1500/2117926032g.jpg",
+      "publisher": "Noble Knight Games original alea German/English edition box photograph"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger, alea and credited artists",
+      "rationale": "Reduced game packaging or publisher title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147908776/Die-Burgen-von-Burgund-The-Castles-of-Burgundy-German-English-Edition. Retail listing identifies this as the 2012 German/English printing of the original alea game, with the original box art and English rules. Original image URL: https://image.nobleknight.com/2/jpg1500/2117926032g.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

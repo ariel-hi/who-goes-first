@@ -3,10 +3,10 @@
   "slug": "cyclades-matagot-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "c6ee522068392b4291fa91964c1a9b43e44e9805c8c479170300f819060597c0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3f8850ee82531a506d6bc57631498c009fcdd957db83d8ef717aec2d70270624",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cyclades",
   "aliases": [],
   "editionLabel": "Matagot English original edition",
@@ -40,5 +40,22 @@
   "internalEvidence": "Rendered original2009Matagotmanual1randominitialtrack,3offeringorderthenGod-orderactions,6two-player4markers and publisher/translationcredits. NewLegendaryedition excluded. Source custody: research/source-files/popular-sep26-10/cyclades.pdf; SHA-256 40c36c58e5337562c79706f4fcd3a985d21fe79432c3e1c0f0a4b6d78168895a. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The original Matagot-authored English rulebook is preserved by a rulebook archive. This record does not cover Cyclades: Legendary Edition."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/cyclades-matagot-original-en-cover.jpg",
+    "alt": "Matagot Cyclades box with warriors and ships in an ancient Greek seascape",
+    "width": 500,
+    "height": 425,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.matagot.com/229-large_default/cyclades.jpg",
+      "publisher": "Matagot official Cyclades original-game product image"
+    },
+    "fairUse": {
+      "rightsHolder": "Matagot and credited artists",
+      "rationale": "Reduced game packaging or publisher title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.matagot.com/en/expert-games/110-141-cyclades.html. Publisher image shows the original Cyclades cover art matching the 2009 English rulebook, rather than the later Legendary Edition. Original image URL: https://www.matagot.com/229-large_default/cyclades.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

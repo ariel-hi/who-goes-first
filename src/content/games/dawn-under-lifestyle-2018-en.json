@@ -3,10 +3,10 @@
   "slug": "dawn-under-lifestyle-2018-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0a99eaa7ec3838e56d7e9e77d5ad9c873a7cb347e99f8a83cd9a3cfd5fb8398b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0631e4407e9f2bb2118b4ebd2a0fbdba42964820e1d96861d10dd2a313d842ea",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dawn Under",
   "aliases": [],
   "editionLabel": "Lifestyle Boardgames English rules, 2018",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF/printed page 2 gives the latest-waking criterion and clockwise order. Page 1 credits Lifestyle Boardgames ©2018; vampire, grave-lid, garlic and stake components match inventory BGG 10814. SHA-256: 4f9fdcaded2d101b505ece733648a6bbe7e4452962fd1de6a8cd44f1b583099a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who woke at the same time."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dawn-under-lifestyle-2018-en-cover.jpg",
+    "alt": "Dawn Under 2018 English rulebook title art with moonlit vampire",
+    "width": 443,
+    "height": 210,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.1j1ju.com/medias/df/75/d2-dawn-under-rulebook.pdf",
+      "publisher": "Lifestyle Boardgames 2018 English rulebook title artwork, archived by 1jour-1jeu"
+    },
+    "fairUse": {
+      "rightsHolder": "Lifestyle Boardgames and credited artists",
+      "rationale": "Reduced game packaging or publisher title artwork used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://cdn.1j1ju.com/medias/df/75/d2-dawn-under-rulebook.pdf. Crop of the English game-rules title page bearing the 2018 Lifestyle Boardgames copyright; shown as rulebook cover art rather than a box photograph. Original image URL: https://cdn.1j1ju.com/medias/df/75/d2-dawn-under-rulebook.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
