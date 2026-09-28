@@ -77,6 +77,12 @@ test('board games are browsable without search and searchable on demand', async 
   await page.getByRole('link', { name: /^A\s+\d+ games$/ }).click();
   await expect(page).toHaveURL(/\/board-games\/browse\/a\/1\/$/);
   await expect(page.locator('[data-directory-shelf] li')).toHaveCount(shelves.find(shelf => shelf.letter === 'a' && shelf.page === 1)!.games.length);
+  const staticPending = page.locator('[data-directory-shelf] li[data-has-rule="false"]').first();
+  await staticPending.locator('summary').click();
+  const staticRequest = staticPending.getByRole('link', { name: 'Request a rule' });
+  if (await staticRequest.count()) {
+    await expect(staticRequest).toHaveAttribute('href', /subject=Board%20game%20request%3A%20/);
+  }
   await page.goto('/board-games/');
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('zzzz-no-matching-game');
   await expect(page.getByRole('heading', { name: 'No matching games' })).toBeVisible();
@@ -105,6 +111,11 @@ test('board games are browsable without search and searchable on demand', async 
   await page.keyboard.press('Enter');
   await expect(pending.getByRole('link', { name: 'Pick a player', exact: true })).toHaveAttribute('href', '/');
   await expect(pending.getByRole('link', { name: /View game on BoardGameGeek/ })).toHaveAttribute('href', 'https://boardgamegeek.com/boardgame/452264');
+  const pendingRequest = pending.getByRole('link', { name: 'Request a rule' });
+  if (await pendingRequest.count()) {
+    await expect(pendingRequest).toHaveAttribute('href', /subject=Board%20game%20request%3A%20Brass%3A%20Pittsburgh/);
+    await expect(pendingRequest).toHaveAttribute('href', /Identity%20reference%3A%20https%3A%2F%2Fboardgamegeek.com%2Fboardgame%2F452264/);
+  }
   await expect(page).toHaveURL(/\/board-games\/#q=Brass%3A%20Pittsburgh&filter=pending$/);
   await page.getByRole('button', { name: 'All matches' }).click();
   await page.getByRole('searchbox', { name: 'Search board games' }).fill('Backgammon');

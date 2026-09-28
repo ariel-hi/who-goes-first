@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
 import { getCatalog } from '../../lib/content/catalog';
 import { siteSettings } from '../../lib/site';
+import { gameRequestHref } from '../../lib/game-request';
 const { games, letters } = getBrowseShelves();
 const { contact } = siteSettings();
 const withRules = games.filter(game => game.rules.length > 0).length;
@@ -28,7 +29,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
       <div class="directory-empty" data-empty hidden>
         <h2>No matching games</h2>
         <p>Try a shorter name or another filter. You can also <a href="/">pick a starting player</a> now.</p>
-        {contact && <p class="directory-request" data-request-prompt>Still missing? <a data-request-game data-contact={contact} href={`mailto:${contact}?subject=Board%20game%20request`}>Request this game</a>. Include an official publisher link and the edition if you know them.</p>}
+        {contact && <p class="directory-request" data-request-prompt>Still missing? <a data-request-game data-contact={contact} href={gameRequestHref(contact, '')}>Request this game</a>. Include an official publisher link and the edition if you know them.</p>}
       </div>
       <noscript><p class="small muted">Browse the letter pages below. Search needs JavaScript.</p></noscript>
     </div>
@@ -45,6 +46,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
   import { directorySearchKey } from '../../lib/search';
   import { directorySearchHref, readDirectorySearchState, type DirectoryFilter } from '../../lib/directory-search';
   import { directoryEntryLinks, type DirectoryEntry } from '../../lib/directory-entry';
+  import { gameRequestHref } from '../../lib/game-request';
   type SearchGame = { name: string; nameKey: string; id: string; href?: string; reference?: { url: string; label: string }; numericId?: string; search: string; hasRule: boolean; ruleCount: number };
   const root = document.querySelector<HTMLElement>('[data-board-directory]')!;
   const input = root.querySelector<HTMLInputElement>('input')!;
@@ -79,7 +81,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     const rawQuery = input.value;
     if (requestGame) {
       const game = rawQuery.trim();
-      requestGame.href = `mailto:${requestGame.dataset.contact}?subject=${encodeURIComponent(`Board game request: ${game}`)}&body=${encodeURIComponent(`Game: ${game}\nOfficial publisher link:\nEdition (if known):\n`)}`;
+      requestGame.href = gameRequestHref(requestGame.dataset.contact!, game);
     }
     const renderedFilter = filter;
     const query = compact(rawQuery);
@@ -130,6 +132,10 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
           const actions = document.createElement('div'); actions.className = 'directory-pending-actions';
           const picker = document.createElement('a'); picker.className = 'directory-picker-link'; picker.href = '/'; picker.textContent = 'Pick a player';
           actions.append(picker);
+          if (requestGame) {
+            const request = document.createElement('a'); request.href = gameRequestHref(requestGame.dataset.contact!, game.name, game.reference?.url); request.textContent = 'Request a rule';
+            actions.append(request);
+          }
           if (game.reference) {
             const identity = document.createElement('a'); identity.href = game.reference.url;
             identity.textContent = game.reference.label === 'BoardGameGeek' ? 'View game on BoardGameGeek ↗' : `${game.reference.label} ↗`;
