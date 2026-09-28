@@ -16,7 +16,7 @@ const withoutArtwork = (rule: ReturnType<typeof ruleSchema.parse>) => ruleSchema
   Object.fromEntries(Object.entries(rule).filter(([key]) => key !== 'image' && key !== 'additionalImages')),
 );
 
-test('new native and SimplyFun identities remain pending while two exact manuals supply rules', async () => {
+test('new native identities stay pending and SimplyFun manuals attach to exact products', async () => {
   const games = getBoardGames();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
   for (const [id, name] of [
@@ -28,11 +28,20 @@ test('new native and SimplyFun identities remain pending while two exact manuals
     expect(directory.find(game => game.id === id)).toMatchObject({ name, ruleCount: 0 });
   }
   const publisher = JSON.parse(readFileSync('research/coverage/publisher-identities.json', 'utf8'));
-  for (const [name, sku] of [['Dinosaur Challenge', 'SF138'], ['Eye to Eye', 'SF001'], ['SlideAscope', 'SF210'], ['Wake Up Stars', 'SF176']] as const) {
+  for (const [name, sku, ruleId, portable] of [
+    ['Dinosaur Challenge', 'SF138', 'dinosaur-challenge-simplyfun-en', true],
+    ['Eye to Eye', 'SF001', 'eye-to-eye-simplyfun-en', false],
+    ['SlideAscope', 'SF210', 'slideascope-simplyfun-en', false],
+    ['Wake Up Stars', 'SF176', 'wake-up-stars-simplyfun-en', true],
+  ] as const) {
     const identity = publisher.records.find((record: { name: string }) => record.name === name);
     expect(identity).toMatchObject({ publisher: 'SimplyFun', decision: 'accept' });
     expect(identity.identityScope).toContain(sku);
-    expect(directory.find(game => game.id === identity.routeKey)).toMatchObject({ name, ruleCount: 0 });
+    const game = games.find(item => item.identityId === identity.identityId);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]?.sources[0]?.url).toContain('cdn.shopify.com');
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(portable);
+    expect(directory.find(item => item.id === identity.routeKey)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
   }
   for (const [id, name, ruleId, url] of [
     ['191862', 'Imhotep: Builder of Egypt', 'imhotep-builder-of-egypt-thames-kosmos-en', '692384_imhotep_manual.pdf'],
