@@ -7,7 +7,10 @@ import { readFileSync } from 'node:fs';
 import { getBoardGames, getBoardGameRegistry } from '../src/lib/content/board-games';
 import { resolveResearchIdentityAssignments, validateLegacyOverrideReferences } from '../src/lib/content/identity-assignments';
 const games = getCatalog(); const prompts = getPrompts();
-for (const game of games) await validateRuleImageAsset(game.image);
+for (const game of games) {
+  await validateRuleImageAsset(game.image);
+  for (const image of game.additionalImages ?? []) await validateRuleImageAsset(image);
+}
 for (const group of [games, prompts]) {
   if (new Set(group.map(record => record.id)).size !== group.length) throw new Error('Duplicate public content ID');
 }

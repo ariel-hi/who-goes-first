@@ -22,3 +22,15 @@ Games without a separately reviewed image use a text-only layout. For these
 equipment photographs, the source link identifies
 the photographer's file page or original host rather than the publisher of the
 rulebook.
+
+## CATAN fifth-edition imagery
+
+The site owner explicitly authorized an editorial fair-use approach for game
+covers on 2026-09-28. This is a rights assessment, not a licence or a claim
+that reuse is risk-free. Both images are used only on the CATAN rule page and
+as a small thumbnail where that page is linked.
+
+| Local image | Source, rights, and processing | Resulting file |
+| --- | --- | --- |
+| `/images/games/catan-2015-cover.jpg` | Site-owner-supplied 250 × 308 PNG on 2026-09-28, matching [Wikipedia's non-free fifth-edition box-art file](https://en.wikipedia.org/wiki/File:Catan-2015-boxart.jpg). That page credits Klaus Teuber as copyright owner and lists BoardGameGeek as its original source. The file was supplied directly by the owner; nothing was downloaded from BoardGameGeek. Low-resolution display identifies the fifth-edition game discussed on this rule page. Converted to JPEG for payload size. | 250 × 308, 21,547 B, SHA-256 `94ed8ebaa0bf9e2aed15a6252ca9994960aadcc40316ddff84b774992a6787e4` |
+| `/images/games/catan-board-commons.jpg` | Site-owner-supplied 250 × 141 image matches [Yonghokim's Wikimedia Commons photograph](https://commons.wikimedia.org/wiki/File:A_game_of_Settlers_of_Catan.jpg). The local 960 × 540 image was resized/compressed from the 2,688 × 1,512 Commons original. The photograph is [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), with attribution on the page. The licence covers the photo, while display of the depicted CATAN board artwork has a separate fair-use rationale for editorial illustration of the discussed game. | 960 × 540, 90,311 B, SHA-256 `7897b913cbb7b91d82148e9982a13e205deba40bd53c4b0524a8ece5d30fd985` |

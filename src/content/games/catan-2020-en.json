@@ -3,16 +3,60 @@
   "slug": "catan-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "344c6d3080455faffd9386dabef89091ee9302159e8cbc59157f2c77d537ca76",
+  "approvedBy": "Codex image and edition review; owner authorized fair-use imagery on 2026-09-28",
+  "approvedRevision": "71531a9aeb14bbb8d9394754fd78930b5141ace8afb3bb827ea5feaedcc9e895",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "CATAN",
   "aliases": [
     "The Settlers of Catan",
     "Settlers of Catan"
   ],
   "editionLabel": "CATAN Studio English base game · fifth-edition credits, copyright 2020",
+  "image": {
+    "file": "/images/games/catan-2015-cover.jpg",
+    "alt": "Cover of the fifth-edition CATAN base game, with the title above a sunset landscape",
+    "width": 250,
+    "height": 308,
+    "presentation": "cover",
+    "source": {
+      "url": "https://en.wikipedia.org/wiki/File:Catan-2015-boxart.jpg",
+      "publisher": "Wikipedia file page"
+    },
+    "fairUse": {
+      "rightsHolder": "CATAN GmbH and CATAN Studio",
+      "rationale": "Low-resolution cover identifies the fifth-edition game whose starting rule is discussed here; no more artwork is shown than needed for identification.",
+      "provenance": "Site owner supplied a 250 × 308 PNG on 2026-09-28. It matches Wikipedia's non-free Catan-2015-boxart.jpg, which lists BoardGameGeek as its source. The local JPEG is compressed from the supplied file, not downloaded from BoardGameGeek.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
+  "additionalImages": [
+    {
+      "file": "/images/games/catan-board-commons.jpg",
+      "alt": "A game of CATAN in progress, showing the hexagonal board, roads, settlements, and robber",
+      "width": 960,
+      "height": 540,
+      "presentation": "photo",
+      "source": {
+        "url": "https://commons.wikimedia.org/wiki/File:A_game_of_Settlers_of_Catan.jpg",
+        "publisher": "Wikimedia Commons"
+      },
+      "licence": {
+        "name": "CC BY-SA 4.0 (photograph)",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "rightsHolder": "Yonghokim",
+        "attribution": "Photo by Yonghokim; resized and compressed from the Wikimedia Commons original",
+        "reviewedAt": "2026-09-28",
+        "localEditorialUse": true
+      },
+      "fairUse": {
+        "rightsHolder": "CATAN GmbH and CATAN Studio",
+        "rationale": "Board artwork appears only as needed to illustrate the components of the specific game discussed by this rule page.",
+        "provenance": "The site owner supplied a 250 × 141 copy of this Commons photograph on 2026-09-28. The local file is a resized copy of the 2688 × 1512 Commons original. The photographer's CC BY-SA grant does not license the depicted CATAN artwork.",
+        "reviewedAt": "2026-09-28"
+      }
+    }
+  ],
   "firstPlayerRule": "For the beginner setup, the oldest player starts. For variable setup, everyone rolls both dice; the highest roller starts setup and takes the first regular turn after setup.",
   "officialTieBreak": null,
   "houseFallback": "If the starting instruction leaves your group tied, you can agree to pick randomly. This is the site’s house-rule fallback, not a tie-break supplied by this manual.",

@@ -2,8 +2,11 @@
 
 ## Artwork policy
 
-Rule pages show a photograph only when its local file and rights record have
-passed editorial review. Other rules and directory entries use a text layout.
+Rule pages show an image only when its local file and rights record have
+passed editorial review. An image may have a reuse licence, a documented
+editorial fair-use assessment, or both. Fair use is a legal rationale, not a
+licence or a guarantee against a rights claim. Other rules and directory
+entries use a text layout.
 Generated SVG cards and initial tiles were removed after visual review; they
 were not useful representations of the games.
 
@@ -29,7 +32,7 @@ Downloaded 2026-09-27 from the download linked by
 Keep this file unchanged. Recheck the official guidelines before changing its
 placement or replacing the asset.
 
-## Reviewed local photographs
+## Reviewed local photographs and covers
 
 Chess, Backgammon, Go, and both Scrabble editions have rights-reviewed photographs of physical equipment;
 see [the file-by-file review](open-game-art.md). These are not photographs of the
@@ -39,6 +42,8 @@ below the rule answer, with its source host and licence linked in the Source &
 edition card. Images keep their natural aspect ratio without cropping or padding.
 Related and similar rule links show a small photograph when that destination has
 one; other links and directory entries use readable text without placeholder art.
+When `presentation` is `cover`, the image sits beside the rule heading and
+answer; other photos remain below the answer at their natural aspect ratio.
 
 Each rule's optional `image` object requires:
 
@@ -46,22 +51,33 @@ Each rule's optional `image` object requires:
 | --- | --- |
 | `file` | A local `/images/games/<name>.png`, `.jpg`, `.jpeg`, `.webp`, or `.avif` file in `public` |
 | `alt`, `width`, `height` | Description and actual source pixel dimensions |
+| `presentation` | Optional `cover` or `photo` layout; omitted images use the photo layout |
 | `source.url`, `source.publisher` | HTTPS rights-holder file page or source host and its display name; for these photographs the host is Wikimedia Commons, not the rulebook publisher |
 | `licence.name`, `licence.url` | Licence name and the exact terms or permission reference |
 | `licence.rightsHolder`, `licence.attribution` | Rights holder and required public credit |
 | `licence.reviewedAt` | Date the actual permission was reviewed, `YYYY-MM-DD` |
 | `licence.localEditorialUse` | Must be `true`; a reviewer must establish that local hosting and editorial display are permitted |
+| `fairUse.rightsHolder`, `rationale`, `provenance`, `reviewedAt` | Truthful copyright attribution, specific editorial purpose, exact source chain, and review date for an image used under fair use rather than a reuse grant |
 
-Before adding an image, confirm that the grant covers this commercial,
-affiliate-supported site, local hosting, and the proposed
-hero/thumbnail placement. Keep a copy of the terms or written permission in the
-editorial evidence. A public press kit by itself is not permission. Honour its
-attribution and modification conditions; prepare a small asset only if the terms
-permit it. Do not copy artwork from BoardGameGeek, its image CDN, or search
-results. Where artwork depicts an edition or box, confirm rights in the depicted
-design and match the edition; generic traditional-game equipment may instead be
-labelled as illustration, without claiming an exact-edition match. If permission
-is unclear, use the text-only layout.
+At least one of `licence` or `fairUse` is required. The optional
+`additionalImages` list uses the same image record and is limited to three
+photos per rule. Where a freely licensed photograph depicts protected game
+artwork, the photograph's licence and the underlying artwork's fair-use
+assessment must both be recorded.
+
+For licensed images, confirm that the grant covers this commercial,
+affiliate-supported site, local hosting, and the proposed placement. Keep a
+copy of the terms or written permission in the editorial evidence. A public
+press kit by itself is not permission. Honour attribution and modification
+conditions. For fair-use covers, document why the specific low-resolution
+image is needed to identify or comment on the edition, where it came from, and
+who holds the underlying rights. Do not describe fair use as permission. Do not
+download artwork from BoardGameGeek, its image CDN, Amazon, or search results.
+Prefer an official publisher source and match the pictured edition. A rulebook
+cover may stand in for a box cover only when clearly labelled. Generic
+traditional-game equipment may be labelled as illustration without implying
+an exact-edition match. If neither permission nor a supportable fair-use basis
+is available, use the text-only layout.
 
 `content:validate` uses Sharp (already supplied by Astro) to decode every image;
 it rejects malformed pixels, unsupported or mismatched file types, animated images,
@@ -71,7 +87,7 @@ audit counts inline SVG within compressed HTML and local images once per page,
 using the existing conservative 350 KiB allowance (including all non-optional
 JavaScript and CSS). Adding or changing image metadata or its licence changes the rule's
 editorial revision and requires a fresh approval through the existing review
-process. The three enabled records carry new image-review evidence and approvals.
+process. Enabled records carry image-review evidence and approvals.
 
 ### Future Amazon integration
 

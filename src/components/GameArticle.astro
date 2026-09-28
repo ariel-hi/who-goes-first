@@ -18,10 +18,13 @@ const firstPage = firstSource.pdfPagesOneBased[0];
 const sourceIsPdf = isPdfSource(firstSource.url, firstSource.pdfPagesOneBased);
 const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
 const houseFallbackUsesRandomChoice = /\brandom(?:ly)?\b/i.test(rule.houseFallback ?? '');
+const coverImage = rule.image?.presentation === 'cover' ? rule.image : undefined;
+const photoImages = [...(rule.image && !coverImage ? [rule.image] : []), ...(rule.additionalImages ?? [])];
+const creditedImages = [...(rule.image ? [rule.image] : []), ...(rule.additionalImages ?? [])];
 ---
 <article class="game-article">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href={preview ? '/dev/games/' : '/games/'}>Game rules</a> / {rule.gameName}</nav>
-  <header class="rule-hero">
+  <header class:list={['rule-hero', { 'rule-hero-with-cover': !!coverImage }]}>
     <div class="rule-hero-heading">
     <span class="eyebrow rule-chip">{preview ? 'Draft rule · not approved' : sourceIsPdf ? 'From the publisher’s rulebook' : 'From the source rules'}</span>
     <h1>{ruleHeading(rule.gameName)}</h1><p class="small muted rule-edition">{rule.editionLabel}{!/\bEnglish\b/i.test(rule.editionLabel) && ' · English'}</p>
@@ -29,12 +32,13 @@ const houseFallbackUsesRandomChoice = /\brandom(?:ly)?\b/i.test(rule.houseFallba
     <p class="rule-answer">{rule.firstPlayerRule}</p>
     {rule.tieBreakApplicable !== false && rule.officialTieBreak && <section class="rule-section opening-tie"><h2>Official tie-break or fallback</h2><p>{rule.officialTieBreak}</p></section>}
     <nav class="source-actions" aria-label="Rulebook source">{passageUrl && <a href={passageUrl} rel="noreferrer">View cited page (PDF page {firstPage})</a>}<a href={firstSource.url} rel="noreferrer">{sourceIsPdf ? 'Read the publisher’s rulebook' : 'Read the source rules'}</a></nav>
-    {rule.image && <figure class="rule-hero-photo"><img src={rule.image.file} alt={rule.image.alt} width={rule.image.width} height={rule.image.height} loading="eager" decoding="async" /></figure>}
+    {coverImage && <figure class="rule-hero-cover"><img src={coverImage.file} alt={coverImage.alt} width={coverImage.width} height={coverImage.height} loading="eager" decoding="async" /></figure>}
+    {photoImages.map(image => <figure class="rule-hero-photo"><img src={image.file} alt={image.alt} width={image.width} height={image.height} loading={coverImage ? 'lazy' : 'eager'} decoding="async" /></figure>)}
   </header>
   <section class="rule-section rule-card source-card"><h2>Source & edition</h2><ul class="source-list">{rule.sources.map(source => {
     const pages = citedPdfPages(source.url, source.pdfPagesOneBased);
     return <li><a class="source-document" href={source.url} rel="noreferrer">{source.title}</a><small>{source.publisher} · {source.location} · Checked {source.checkedAt}</small>{pages.length > 0 ? <nav class="source-cited-pages" aria-label={`Cited PDF pages for ${source.title}`}>{pages.map(({ page, href }) => <a href={href} rel="noreferrer">PDF page {page}</a>)}</nav> : source.pdfPagesOneBased.length > 0 && <small>Cited PDF pages: {[...new Set(source.pdfPagesOneBased)].join(', ')}</small>}</li>;
-  })}</ul>{publisherHub && <a class="inline-link" href={`/publishers/${publisherHub.slug}/`}>All {publisherHub.count} {publisherHub.name} starting rules</a>}{rule.image && <p class="small muted image-credit">Image: {rule.image.licence.attribution} · <a href={rule.image.source.url} rel="noreferrer">{rule.image.source.publisher}</a> · <a href={rule.image.licence.url} rel="noreferrer">{rule.image.licence.name}</a></p>}</section>
+  })}</ul>{publisherHub && <a class="inline-link" href={`/publishers/${publisherHub.slug}/`}>All {publisherHub.count} {publisherHub.name} starting rules</a>}{creditedImages.map(image => <p class="small muted image-credit">Image: {image.licence?.attribution ?? `© ${image.fairUse?.rightsHolder}`} · <a href={image.source.url} rel="noreferrer">{image.source.publisher}</a>{image.licence && <> · <a href={image.licence.url} rel="noreferrer">{image.licence.name}</a></>}{image.fairUse && <> · Editorial fair use ({image.fairUse.rationale})</>}</p>)}</section>
   {rule.pickerSuggestionApplicable !== false && !rule.houseFallback && <p class="small muted">If your rules call for a random choice, <a class="inline-link" href="/">use the player picker</a>.</p>}
   {!preview && <SharePage label="Share this rule" title={ruleHeading(rule.gameName)} pin={{ path: `/games/${rule.slug}/`, description: `${ruleHeading(rule.gameName)} ${rule.firstPlayerRule}` }} />}
   {rule.clarifications.length > 0 && <section class="rule-section rule-card"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}

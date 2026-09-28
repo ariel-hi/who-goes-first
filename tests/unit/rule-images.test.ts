@@ -25,6 +25,22 @@ test('optional images require complete rights information and a local raster pat
   expect(ruleImageSchema.safeParse({ ...image, licence: { ...image.licence, localEditorialUse: false } }).success).toBe(false);
 });
 
+test('editorial fair use is recorded separately from a reuse licence', () => {
+  const cover = {
+    ...image, presentation: 'cover', licence: undefined,
+    fairUse: {
+      rightsHolder: 'Example publisher and artist',
+      rationale: 'Low-resolution cover identifies the exact edition discussed.',
+      provenance: 'Supplied by the owner; matched to the publisher product page.',
+      reviewedAt: '2026-09-28',
+    },
+  };
+  expect(ruleImageSchema.parse(cover)).toEqual(cover);
+  expect(ruleImageSchema.safeParse({ ...cover, fairUse: undefined }).success).toBe(false);
+  expect(ruleImageSchema.safeParse({ ...cover, fairUse: { ...cover.fairUse, provenance: '' } }).success).toBe(false);
+  expect(ruleImageSchema.safeParse({ ...cover, licence: image.licence }).success).toBe(true);
+});
+
 test('BGG, search results, and Amazon images cannot supply locally hosted rule artwork', () => {
   for (const url of ['https://boardgamegeek.com/image/1', 'https://cf.geekdo-images.com/box.png', 'https://www.google.com/search?q=box', 'https://m.media-amazon.com/images/I/box.jpg']) {
     expect(ruleImageSchema.safeParse({ ...image, source: { ...image.source, url } }).success).toBe(false);
@@ -43,6 +59,10 @@ test('image metadata and licence edits are bound to editorial approval', () => {
   expect(contentRevision(illustrated)).not.toBe(contentRevision(rule));
   expect(() => assertPublishable(illustrated)).toThrow('stale editorial approval');
   expect(contentRevision({ ...illustrated, image: { ...image, licence: { ...image.licence, attribution: 'Changed credit' } } })).not.toBe(contentRevision(illustrated));
+  const withSecondImage = ruleSchema.parse({ ...illustrated, additionalImages: [image] });
+  expect(publicRule(withSecondImage).additionalImages).toHaveLength(1);
+  expect(contentRevision(withSecondImage)).not.toBe(contentRevision(illustrated));
+  expect(() => assertPublishable(withSecondImage)).toThrow('stale editorial approval');
 });
 
 test('publication decodes real rasters and rejects missing, malformed, mismatched and oversized files', async () => {

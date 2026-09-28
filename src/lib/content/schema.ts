@@ -17,18 +17,24 @@ const imageSourceUrl = z.url().refine(value => {
 export const ruleImageSchema = z.object({
   file: z.string().regex(/^\/images\/games\/[a-z0-9-]+\.(png|jpe?g|webp|avif)$/),
   alt: nonempty, width: z.number().int().positive(), height: z.number().int().positive(),
+  presentation: z.enum(['cover', 'photo']).optional(),
   source: z.object({ url: imageSourceUrl, publisher: nonempty }).strict(),
   licence: z.object({
     name: nonempty, url: imageSourceUrl, rightsHolder: nonempty, attribution: nonempty,
     reviewedAt: date, localEditorialUse: z.literal(true),
-  }).strict(),
-}).strict();
+  }).strict().optional(),
+  fairUse: z.object({
+    rightsHolder: nonempty, rationale: nonempty, provenance: nonempty, reviewedAt: date,
+  }).strict().optional(),
+}).strict().refine(image => image.licence !== undefined || image.fairUse !== undefined,
+  'Record either a licence, a fair-use assessment, or both');
 export type RuleImage = z.infer<typeof ruleImageSchema>;
 export const ruleSchema = z.object({
   ...identity, ...approval,
   slug: identity.slug.refine(value => value !== 'themes', 'The rule slug themes is reserved for theme hubs'),
   gameName: nonempty, aliases: z.array(nonempty), editionLabel: nonempty,
   image: ruleImageSchema.optional(),
+  additionalImages: z.array(ruleImageSchema).max(3).optional(),
   firstPlayerRule: nonempty, officialTieBreak: nonempty.nullable(), houseFallback: nonempty.nullable(),
   tieBreakApplicable: z.boolean().optional(), pickerSuggestionApplicable: z.boolean().optional(),
   clarifications: z.array(nonempty), interpretation: nonempty.nullable(),
@@ -61,12 +67,13 @@ export function assertPublishable(record: Record): void {
   const publicCopy = 'firstPlayerRule' in record ? [record.firstPlayerRule, record.gameName, record.editionLabel, ...record.clarifications].join(' ') : record.prompt;
   if (/\b(TODO|TBD|placeholder|lorem ipsum)\b/i.test(publicCopy)) throw new Error(`${record.id}: placeholder content cannot be published`);
 }
-export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'pickerSuggestionApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt' | 'image'>;
+export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'pickerSuggestionApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt' | 'image' | 'additionalImages'>;
 export function publicRule(record: RuleRecord): PublicRule {
   return {
     id: record.id, slug: record.slug, gameName: record.gameName, aliases: record.aliases,
     editionLabel: record.editionLabel, language: record.language, firstPlayerRule: record.firstPlayerRule,
     ...(record.image === undefined ? {} : { image: record.image }),
+    ...(record.additionalImages === undefined ? {} : { additionalImages: record.additionalImages }),
     officialTieBreak: record.officialTieBreak, houseFallback: record.houseFallback,
     ...(record.tieBreakApplicable === undefined ? {} : { tieBreakApplicable: record.tieBreakApplicable }),
     ...(record.pickerSuggestionApplicable === undefined ? {} : { pickerSuggestionApplicable: record.pickerSuggestionApplicable }),
