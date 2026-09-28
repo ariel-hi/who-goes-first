@@ -3,13 +3,30 @@
   "slug": "castle-combo-asmodee-en-2024",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "14644f482580b3fd537e3b3219619cbcf13d3783b94b2af7c96f5a68fd6a2cf4",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "6dafa15ebf2838c701af4b0cb170e2de442edf16803452c99bc71347d22652fd",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Castle Combo",
   "aliases": [],
   "editionLabel": "Catch Up Games / Pandasaurus 2024 English base game",
+  "image": {
+    "file": "/images/games/castle-combo-asmodee-en-2024-cover.jpg",
+    "alt": "Official product image showing the Castle Combo game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0694/1402/7563/files/PANCCCORE-image0_2000.jpg?v=1728047113",
+      "publisher": "Asmodee USA"
+    },
+    "fairUse": {
+      "rightsHolder": "Catch Up Games / Pandasaurus Games and credited cover artists",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Asmodee USA product page: https://store.asmodee.com/products/castle-combo. Edition match: English Castle Combo base-game box corresponding to the 2024 rules. Official product listing title: Castle Combo. Original image URL: https://cdn.shopify.com/s/files/1/0694/1402/7563/files/PANCCCORE-image0_2000.jpg?v=1728047113",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly choose the first player. That player takes the opening turn, then play proceeds clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -24,8 +41,14 @@
       "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2025/12/Castle_Combo_rulebook.pdf",
       "title": "Castle Combo — English rulebook",
       "publisher": "Catch Up Games / Pandasaurus Games",
-      "printedPages": ["4", "5"],
-      "pdfPagesOneBased": [4, 5],
+      "printedPages": [
+        "4",
+        "5"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
       "location": "Setup step E; Game flow and clockwise turns",
       "checkedAt": "2026-09-28"
     }
