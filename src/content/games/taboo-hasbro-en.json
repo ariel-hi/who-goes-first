@@ -3,8 +3,8 @@
   "slug": "taboo-hasbro-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "8b0c59297db851d4860a305eee856a69bf728fd5ea590d1ea4b80453b28174ac",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "8bd322c731af1dbd7a9b186a4d0a943078cf8191d4e04315444946b5908373ff",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Taboo",
@@ -23,8 +23,12 @@
       "url": "https://www.hasbro.com/common/documents/dad288731c4311ddbd0b0800200c9a66/2AA6E9045056900B10CE5D2770FBF05E.pdf",
       "title": "Taboo — Rules for 4+ Adult Players",
       "publisher": "Hasbro",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "\"Setting Up Your Game\" step 4, and \"Taking Turns\" step 1",
       "checkedAt": "2026-09-27"
     }
@@ -32,5 +36,22 @@
   "internalEvidence": "Fetched the official Hasbro-hosted PDF and extracted its text with pdftotext. \"Setting Up Your Game — 4. Divide into two teams (Team A and Team B). It doesn't matter if one team has one more player than the other.\" \"Taking Turns — 1. Team A chooses a player to be their first Clue-giver.\" No sentence in the document explains how the two teams are labeled A and B or which one begins.",
   "uncertainty": [
     "The rules never specify a criterion for which team becomes \"Team A\" and therefore goes first; it is implicitly left to the players."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/taboo-hasbro-en-cover.jpg",
+    "alt": "Taboo game box with purple cover and orange title, Hasbro Games edition",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://consumercare.hasbro.com/_next/image?url=https%3A%2F%2Fwww.hasbro.com%2Fcommon%2Fproductimages%2Fen_US%2F304c032950569047f5d18c8a886e0d35%2F7c32b5bed9f32e839b890174b26558de035c75b9.jpg&w=1920&q=75",
+      "publisher": "Hasbro Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro Games / Hersch and Company",
+      "rationale": "Reduced-size publisher product-box photograph identifies the Taboo edition discussed in this independent rules article. It is contextual to the game, links to the publisher product page, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Hasbro Games product page for item A4626: https://consumercare.hasbro.com/en-us/product/taboo-game/304C0329-5056-9047-F5D1-8C8A886E0D35. Its box image is served through Hasbro’s own image proxy: https://consumercare.hasbro.com/_next/image?url=https%3A%2F%2Fwww.hasbro.com%2Fcommon%2Fproductimages%2Fen_US%2F304c032950569047f5d18c8a886e0d35%2F7c32b5bed9f32e839b890174b26558de035c75b9.jpg&w=1920&q=75. Product description confirms the game-changer die and 162-card edition; the article source is a 2011 Hasbro instruction sheet with that die. Visually reviewed box front.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
