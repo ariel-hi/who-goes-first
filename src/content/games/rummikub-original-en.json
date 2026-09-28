@@ -3,13 +3,30 @@
   "slug": "rummikub-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "af078eb796a9dcb85c1389e8c6f361113ba09337552ebce6239ea87ad4ccaa95",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "267aedbb86e58120c3641a5387be554a09c4c7bb7b6317fd064baa2c79611058",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Rummikub",
   "aliases": [],
   "editionLabel": "Original Rummikub English edition",
+  "image": {
+    "file": "/images/games/rummikub-original-en-cover.jpg",
+    "alt": "The Original Rummikub Classic English box",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://rummikub.com/wp-content/uploads/2019/11/rummikub-classic-_1600.jpg",
+      "publisher": "Rummikub / Lemada Light Industries"
+    },
+    "fairUse": {
+      "rightsHolder": "M&M Ventures (2014) Limited / Lemada Light Industries",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rummikub’s official product page https://rummikub.com/product/rummikub-classic/ displays this English Classic box explicitly labeled “The Original.” The image was uploaded in November 2019, alongside the official English Original Rummikub rulebook cited by this article. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Each player draws one tile from the mixed, face-down tiles. Whoever draws the highest number goes first. Return those tiles and mix them again before dealing the racks.",
   "officialTieBreak": null,
   "houseFallback": "If a joker is drawn, replace it with a numbered tile. Players tied for the highest number draw again until one has the highest number.",
