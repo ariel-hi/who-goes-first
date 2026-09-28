@@ -3,10 +3,10 @@
   "slug": "thing-boardgame-pendragon-2021-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "abe0d18590d012cb69b88df34d81458a438bfdfde54513ab36d7458c0492f0b6",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "4b066f7f0d1bd8ff26cafea45e356e5017da3a7c22dd93c2fea190d07460b1ca",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Thing: The Boardgame",
   "aliases": [],
   "editionLabel": "Pendragon Game Studio English rules, 2021",
@@ -45,5 +45,22 @@
   "uncertainty": [
     "The printed rule assigns the first Leader role, while character movement begins with their left neighbor.",
     "No tie procedure is given for the most recent viewing."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/thing-boardgame-pendragon-2021-en-cover.jpg",
+    "alt": "The Thing: The Boardgame box cover",
+    "width": 520,
+    "height": 520,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pendragongamestudio.com/wp-content/uploads/2020/03/scatola2-520x520.jpg",
+      "publisher": "Pendragon Game Studio"
+    },
+    "fairUse": {
+      "rightsHolder": "Pendragon Game Studio",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Pendragon Game Studio product page: https://pendragongamestudio.com/blog/project/the-thing-the-boardgame/. Exact publisher-hosted package image: https://pendragongamestudio.com/wp-content/uploads/2020/03/scatola2-520x520.jpg. The package and game identity were visually reviewed against the article edition (Pendragon Game Studio English rules, 2021).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

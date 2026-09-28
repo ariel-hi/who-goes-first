@@ -3,8 +3,8 @@
   "slug": "welcome-to-blue-cocker-2023-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "24e8f0266bdb24096b760e47d0b4480466a5c1a6d549f1ca11e185c9124492a2",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5e22f2a1ee68d736c00d821d8eafcf7af6f422677a9e45f68765941aacf52618",
   "publishedAt": "2026-09-25",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Welcome To...",
@@ -41,5 +41,22 @@
   "internalEvidence": "Downloaded the English rulebook from the Blue Cocker site, https://bluecocker.com/wp-content/uploads/2023/08/Rulebook-EN.pdf; SHA-256 c0f6a6d8598e32187b6dd80bc7d650ecf47fd6d37e190fae6b70f097a23b1cc5, 20 pages. Page 3: each round flip the first Construction card of the 3 stacks, and 'The game round is simultaneous', with each architect selecting one of the 3 combinations at the same time. The back credits read Blue Cocker 2023; streets, pools, parks and City Plans match Welcome To... BGG 233867. No passage names a player to flip the cards. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "Solo and advanced modes in the same rulebook were not recorded here."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/welcome-to-blue-cocker-2023-en-cover.jpg",
+    "alt": "Welcome to Your Perfect Home Collector’s Edition cover",
+    "width": 270,
+    "height": 374,
+    "presentation": "cover",
+    "source": {
+      "url": "https://bluecocker.com/wp-content/uploads/2023/08/image-mise-en-avant-wec-EN.png",
+      "publisher": "Blue Cocker"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Cocker",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Blue Cocker product page: https://bluecocker.com/en/jeu/welcome-collectors-edition/. Exact publisher-hosted package image: https://bluecocker.com/wp-content/uploads/2023/08/image-mise-en-avant-wec-EN.png. The package and game identity were visually reviewed against the article edition (Blue Cocker English rulebook, 2023).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
