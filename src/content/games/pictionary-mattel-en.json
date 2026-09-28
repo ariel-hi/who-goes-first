@@ -3,8 +3,8 @@
   "slug": "pictionary-mattel-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "775c4bfeda9f30ad56752217821d1ebda14535360f5f7b13720feb402f8ccc3a",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "406f30e110534743ace15e7a75f65a2676cee8ce019a9c78bb252713ab6d4f05",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Pictionary",
@@ -23,8 +23,14 @@
       "url": "https://service.mattel.com/instruction_sheets/DKD47-Eng.pdf",
       "title": "Pictionary — Instruction Sheet (DKD47)",
       "publisher": "Mattel",
-      "printedPages": ["1", "2"],
-      "pdfPagesOneBased": [1, 2],
+      "printedPages": [
+        "1",
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        1,
+        2
+      ],
       "location": "\"Set Up\" section and \"How to Play\" opening paragraph",
       "checkedAt": "2026-09-27"
     }
@@ -32,5 +38,22 @@
   "internalEvidence": "Fetched the official Mattel instruction-sheet PDF and extracted its text with pdftotext. \"SET UP — ... Each team selects a Picturist – a player who will sketch the first word. The die is rolled to determine the order of play. The highest rolling team starts.\" \"HOW TO PLAY — The Start space is a yellow square ... so the first word to be played is from the yellow category. The die is NOT rolled to start.\" This confirms the die roll picks the starting team, while the first category is fixed by the board rather than by the roll.",
   "uncertainty": [
     "No tie-break is stated if two or more teams roll the same highest number."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/pictionary-mattel-en-cover.jpg",
+    "alt": "Mattel Pictionary DKD47 yellow box front with blue marker, erasable board and sketched figure",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://static.wixstatic.com/media/2a3608_3ec5ddbb823440acb42f571d0dfb651f~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+      "publisher": "Book Nook Bookstores, product image for Mattel DKD47"
+    },
+    "fairUse": {
+      "rightsHolder": "Mattel, Inc.",
+      "rationale": "Small clean box-front product image identifies the exact Pictionary edition discussed in this starting-rule article. It is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Book Nook retailer page https://www.booknookbookstores.com/product-page/mattel-pictionary-dkd47 labels this item Mattel Pictionary DKD47 and displays the isolated yellow box front. Mattel product support https://m.service.mattel.com/us/Technical/productDetail?prodno=DKD47 independently identifies DKD47 as the English Pictionary released in 2016 and describes its included erasable markers, boards and updated clues. The box front visually depicts the markers and erasable boards and is distinct from the later 40th Anniversary packaging. The image is retailer-hosted; no publisher permission is implied. Reduced to 360 pixels.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

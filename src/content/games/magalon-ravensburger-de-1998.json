@@ -3,10 +3,10 @@
   "slug": "magalon-ravensburger-de-1998",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "aca163c8100f2aec14e929207bdc658c40690fbd1b7a545d96ae2348610b67c1",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "9d04c46437bded3f647a1f843149e696c9fbaf913bf6ceb55c3a85f8e51b1aa4",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Magalon",
   "aliases": [],
   "editionLabel": "Ravensburger ©1998 (German summary; archived)",
@@ -47,5 +47,22 @@
     "The manual gives no tie-break for players tied as youngest.",
     "This is a preserved publisher-imprinted manual on a mirror. A live publisher link to this exact PDF has not been established, and it is not claimed to be the latest version.",
     "No equivalence with another language, printing or revision is established."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/magalon-ravensburger-de-1998-cover.jpg",
+    "alt": "Magalon 1998 Ravensburger box front, with a red title over a fantasy valley and giant face",
+    "width": 360,
+    "height": 270,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.der-spieleonkel.de/images/product_images/popup_images/NeuMagalonA.png",
+      "publisher": "Der Spieleonkel, photograph of the 1998 Ravensburger box"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger Spieleverlag; original box illustrators Tim Gill and Mark Holiday",
+      "rationale": "Small isolated box-front photograph identifies the exact historical game discussed in this starting-rule article. It is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Retailer page https://www.der-spieleonkel.de/de/magalon-neuware.html lists Magalon by Wolfgang Kramer from 1998 and shows this clean original Ravensburger box front. Independently, Ravensburger-authored rules at https://www.ravensburger.de/spielanleitungen/ecm/Spielanleitungen/26137%20anl%201948950.pdf identify Spiel Nr. 26 137 6, ©1998, the author and illustrators; the preserved publisher-imprinted manual was also inspected. The photograph is sourced from the retailer, not the publisher, and does not establish permission. Reduced to 360 pixels wide.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
