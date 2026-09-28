@@ -3,8 +3,8 @@
   "slug": "ingenious-thames-kosmos-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
-  "approvedRevision": "8247671a27d1ac8c7af2187fa95bf08d60bf8cbc6a88b1341ec758229b704d96",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "ac5788037b15df05bdb13b0bff98fed3a30b9d32c6eeff50d809423626a90a3a",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ingenious",
@@ -24,8 +24,12 @@
       "url": "https://www.thamesandkosmos.com/manuals/full/696116_Ingenious_Manual.pdf",
       "title": "Ingenious (original) — English manual",
       "publisher": "Thames & Kosmos",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "Standard Game for 2–4 Players, Play, opening sentence",
       "checkedAt": "2026-09-28"
     }
@@ -34,5 +38,22 @@
   "uncertainty": [
     "The manual does not state an official tie-break when two people are equally youngest.",
     "No starting rule is inferred for the second edition, solitaire play, or partnership variant."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ingenious-thames-kosmos-original-en-cover.jpg",
+    "alt": "Ingenious original Thames & Kosmos red box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://staging.thamesandkosmos.com/index.php/image-downloads/item/ingenious-product-image-downloads-copy",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos, KOSMOS, and cover-art creators (precise ownership not stated in product-image archive)",
+      "rationale": "Small, compressed official box photo identifies the original English edition described in this editorial rule explanation.",
+      "provenance": "Thames & Kosmos official product-image download archive identifies this set as item 696116 Ingenious; direct front-box file https://staging.thamesandkosmos.com/images/product_image/696116-Ingenious/696116_Ingenious_Box_front.jpg. The red box matches the 2018 original item 696116 whose separate original rulebook is cited by this record, rather than the later second-edition packaging.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
