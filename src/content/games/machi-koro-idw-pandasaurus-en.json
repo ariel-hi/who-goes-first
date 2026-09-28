@@ -3,10 +3,10 @@
   "slug": "machi-koro-idw-pandasaurus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "a8834c259e2aac410464b3e62944e9c353814498ea9a3aeb954b96586c53d5a7",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "1b54f686a31709d96bb0d9be3b62d3d6fbbdc078582b4ee0267c2bf3ed26d223",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Machi Koro",
   "aliases": [
     "Machi Koro base game"
@@ -38,5 +38,22 @@
   "internalEvidence": "Downloaded the rulebook linked from the Pandasaurus Games Machi Koro product page (https://pandasaurusgames.com/products/machi-koro); SHA-256 db8e242809a8c5a99facdc2940fde4a7487479f1c307314ec56f8b04302ac358, 8 pages. PDF page 4, Game Setup ends 'Determine a starting player and begin play.' with no method given; Game Flow says turns go clockwise. The rulebook has four Landmarks and credits IDW Games, copyright 2014 Grounding Inc., matching Machi Koro BGG 143884. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "This is the original English rulebook with four Landmarks. The 5th Anniversary Edition rulebook was not checked and may word setup differently."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/machi-koro-idw-pandasaurus-en-cover.jpg",
+    "alt": "Machi Koro original English IDW and Pandasaurus blue box, showing the illustrated city and mountain without anniversary branding",
+    "width": 325,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://static.wixstatic.com/media/571093_7c40f554658b4f06867159a44aee4a40~mv2.png",
+      "publisher": "Love Board Games, clean product-box image"
+    },
+    "fairUse": {
+      "rightsHolder": "Grounding Inc. / IDW Games / Pandasaurus Games; original cover illustration credited to Noboru Hotta",
+      "rationale": "Small edition-matched product-box image identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "Love Board Games product listing https://www.loveboardgames.co.uk/product-page/machi-koro supplies this clean image of the IDW Games and Pandasaurus Games box. The publisher-authored 2014 English rules at https://cdn.1j1ju.com/medias/89/cb/e8-machi-koro-rulebook.pdf credit both publishers and Noboru Hotta for the cover illustration and identify the original four-Landmark game. Toy Sense separately lists this IDW box as item LRIIDW00665, UPC 827714006650: https://www.toysense.ca/buy/lriidw00665/machi-koro. The image depicts that original edition, not Pandasaurus’s later 5th Anniversary box. The retailer photograph does not imply a license to reproduce it.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

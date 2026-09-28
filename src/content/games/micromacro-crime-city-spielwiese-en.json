@@ -3,10 +3,10 @@
   "slug": "micromacro-crime-city-spielwiese-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "01c9e587d37c85d103628adadcbab8dedb592c7bef781c91191c32a6baac97ba",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "4263a85cb606fe69799d868b83b38609e2f8d4493ec5cf75fa958be57f911d83",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "MicroMacro: Crime City",
   "aliases": [],
   "editionLabel": "Spielwiese English original edition",
@@ -36,5 +36,22 @@
   "internalEvidence": "Rendered PDF 2 designated Lead Investigator and initial start-card/first-task sequence. PDF 4 credits Edition Spielwiese 2020, Pegasus distribution, and Vanessa/Jason Abel translation. Publisher microsite was a JavaScript shell with no downloadable manual exposed; archive preserves actual illustrated booklet, not fan rewrite. Source custody: research/source-files/popular-sep26-13/micro.pdf; SHA-256 3a72dc703eb812c4b770bfd6ca22b24380c67a9dead8184bf5b2daf569842a1a. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
   "uncertainty": [
     "The publisher-authored English booklet is preserved by a rulebook archive. This record covers the original Crime City box."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/micromacro-crime-city-spielwiese-en-cover.jpg",
+    "alt": "MicroMacro: Crime City original English box with red Crime City title, 8+ icon and no later award badges",
+    "width": 254,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.guildhallnc.com/cdn/shop/files/mmcc.webp?v=1686507805",
+      "publisher": "Guildhall Games, clean English original product-box image"
+    },
+    "fairUse": {
+      "rightsHolder": "Edition Spielwiese / Hard Boiled Games; original game illustration credited to Johannes Sich, Daniel Goll and Tobias Jochinke",
+      "rationale": "Small edition-matched product-box image identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "Guildhall Games listing https://www.guildhallnc.com/products/micro-macro-crime-city supplies a clean English box render with the first-printing 8+ icon and no 2021 award seals. The creator’s official original German packshot https://micromacro-game.com/packshot%402x.ffb2c84f.jpg shows the same 8+ package layout and artwork before award badges; the English callout is the localized counterpart. Pegasus Spiele’s dated 12 October 2020 launch announcement https://news.pegasus.de/der-spieleherbst-hat-begonnen/ identifies Edition Spielwiese’s original 2020 title as 8+ with 16 cases, matching the publisher-authored English rules ©2020 at https://cdn.1j1ju.com/medias/d2/0d/2b-micromacro-crime-city-rulebook.pdf. The 2021 award-badge and later 12+ box images are different printings and were excluded. The retailer image does not imply a license to reproduce it.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
