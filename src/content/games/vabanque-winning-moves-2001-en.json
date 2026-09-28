@@ -3,10 +3,10 @@
   "slug": "vabanque-winning-moves-2001-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4b714f5e010f244117e0a5b737a25b0bebe9d1a0d679038a2e9510dcc7c414bc",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "d259bb615dbfad0300a337ca9428165da8f73653cf894e67316cf6eb5577b46b",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Vabanque",
   "aliases": [],
   "editionLabel": "Winning Moves English rules, ©2001",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 2 says to select a start player and gives the first pawn/token placement. Page 4 ranks players by wealth for the next round and credits Winning Moves ©2001. Casino tables, character cards and pawns match inventory BGG 2536. SHA-256: a9663f6a77d73aaa4872b4d18236c579625203abfd33442187f99083b4df3689. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The booklet leaves the initial selection method to the players."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/vabanque-winning-moves-2001-en-cover.jpg",
+    "alt": "Vabanque 2001 Winning Moves original German box with casino illustration",
+    "width": 350,
+    "height": 350,
+    "presentation": "cover",
+    "source": {
+      "url": "https://faidutti.com/blog/wp-content/uploads/2012/06/2219_60192969883_1149_n.jpg",
+      "publisher": "Bruno Faidutti, co-designer"
+    },
+    "fairUse": {
+      "rightsHolder": "Winning Moves / artist Marcel-André Casasola Merkle",
+      "rationale": "Reduced-size original game box art identifies the specific 2001 game discussed in this independent rules article. It is contextual to the game, links to the co-designer’s history, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Bruno Faidutti’s own history of the game: https://faidutti.com/blog/blog/2021/09/26/vabanque%e3%83%90%e3%83%90%e3%83%b3%e3%82%af/. He identifies the original 2001 Winning Moves publication as German only and credits Marcel-André Casasola Merkle’s art. Original cover image on that page: https://faidutti.com/blog/wp-content/uploads/2012/06/2219_60192969883_1149_n.jpg. This is the original German-language box associated with the English-language rules translation reviewed in the article; visually checked against the author’s three-edition comparison photograph.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
