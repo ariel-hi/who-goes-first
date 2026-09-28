@@ -3,14 +3,14 @@ import type { RevealPlan } from './reveal-plan';
 export const presentations = [
   { id: 'quick', label: 'Quick', duration: 1600 },
   { id: 'instant', label: 'Instant', duration: 0 },
-  { id: 'spinner', label: 'Spinner', duration: 3200 },
-  { id: 'cards', label: 'Card Draw', duration: 2600 },
+  { id: 'spinner', label: 'Spinner', duration: 3500 },
+  { id: 'cards', label: 'Card Draw', duration: 3400 },
   { id: 'balloon', label: 'Balloon Rise', duration: 3600 },
   { id: 'tower', label: 'Towers', duration: 3000 },
-  { id: 'straws', label: 'Shortest Match', duration: 2600 },
-  { id: 'dice', label: 'Dice Roll', duration: 2600 },
-  { id: 'coin', label: 'Coin Flip', duration: 2800 },
-  { id: 'shells', label: 'Shell Game', duration: 2700 },
+  { id: 'straws', label: 'Shortest Match', duration: 3000 },
+  { id: 'dice', label: 'Dice Roll', duration: 3400 },
+  { id: 'coin', label: 'Coin Flip', duration: 3200 },
+  { id: 'shells', label: 'Shell Game', duration: 3000 },
 ] as const;
 
 // Shown before "More methods"; the rest stay one tap away.
@@ -26,11 +26,11 @@ export function revealDuration(mode: string, plan: RevealPlan): number {
   const end = {
     instant: 0,
     quick: 1050 + Math.min((pieces.length - 1) * 24, 360),
-    spinner: 3000,
+    spinner: 3400,
     cards: last(piece => piece.flipAt + piece.flipDuration),
     balloon: last(piece => (piece.popAt ?? 0) + 600),
     tower: last(piece => piece.tower.fallAt + piece.tower.stagger * 2 + piece.tower.fallDuration),
-    straws: last(piece => piece.matchAt + 1980),
+    straws: last(piece => piece.matchAt + 1440),
     dice: last(piece => piece.diceAt + 1920),
     coin: last(piece => piece.coin.delay + piece.coin.duration),
     shells: last(piece => piece.shell.delay + 820),

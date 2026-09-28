@@ -17,8 +17,8 @@ test('large groups keep the compact reveals and result timing follows the last v
   expect(revealDuration('balloon', plan)).toBe(Math.max(...pieces.map(piece => (piece.popAt ?? 0) + 600)) + 120);
   expect(revealDuration('dice', plan)).toBe(Math.max(...pieces.map(piece => piece.diceAt + 1920)) + 120);
   expect(revealDuration('balloon', plan)).toBeLessThan(3600);
-  expect(revealDuration('dice', plan)).toBeLessThan(2300);
-  expect(revealDuration('shells', plan)).toBeLessThan(1900);
+  expect(revealDuration('dice', plan)).toBeLessThan(3400);
+  expect(revealDuration('shells', plan)).toBeLessThan(3000);
   expect(revealDuration('quick', plan)).toBe(1242);
   const large = select(seats(50), 2, () => 12);
   expect(revealDuration('quick', createRevealPlan(large, () => .5))).toBe(1530);
@@ -31,7 +31,7 @@ test('every supported player has a distinct color that follows their identity', 
   for (const player of [...players].reverse()) expect(playerColor({ ...player, label: 'Renamed' })).toBe(colors[players.indexOf(player)]);
 });
 
-test('balloons shuffle with uneven gaps; cards overlap in a fresh order each draw', () => {
+test('balloons shuffle with uneven gaps; cards turn one at a time in a fresh order each draw', () => {
   const outcome = select(seats(12), 1, () => 4);
   const plan = createRevealPlan(outcome, random(92));
   const next = createRevealPlan(outcome, random(109));
@@ -43,7 +43,8 @@ test('balloons shuffle with uneven gaps; cards overlap in a fresh order each dra
   expect(new Set(outcome.players.filter(player => player.id !== outcome.winnerId).map(player => plan[player.id]!.balloon.style)).size).toBe(4);
   const flips = outcome.players.map(player => plan[player.id]!.flipAt);
   expect(flips).not.toEqual([...flips].sort((a, b) => a - b));
-  expect(Math.max(...flips)).toBeLessThan(Math.min(...Object.values(plan).map(p => p.flipAt + p.flipDuration)));
+  const loserFlips = outcome.players.filter(player => player.id !== outcome.winnerId).map(player => plan[player.id]!.flipAt);
+  expect(Math.max(...loserFlips) - Math.min(...loserFlips)).toBeGreaterThan(600);
   expect(next).not.toEqual(plan);
   expect(outcome.winnerId).toBe('player-5');
   const star = plan[outcome.winnerId]!;
@@ -62,15 +63,24 @@ test('every animation finishes within its deadline', () => {
     for (const player of outcome.players) {
       const p = plan[player.id]!;
       if (p.popAt !== null) { expect(p.popAt).toBeGreaterThanOrEqual(1100); expect(p.popAt + 600).toBeLessThan(3600); }
-      expect(p.flipAt + p.flipDuration).toBeLessThan(2600);
-      expect(p.coin.delay + p.coin.duration).toBeLessThan(2800);
+      expect(p.flipAt + p.flipDuration).toBeLessThan(3400);
+      expect(p.coin.delay + p.coin.duration).toBeLessThan(3200);
+      expect(p.matchAt + 1440).toBeLessThan(3000);
+      expect(p.diceAt + 1920).toBeLessThan(3400);
+      expect(p.dice.every(value => value >= 1 && value <= 6)).toBe(true);
       expect(Math.abs(p.coin.turn) % 360).toBe(0);
       expect([4, 5, 6, -4, -5, -6]).toContain(p.spinnerTurns);
       expect(Math.abs(p.spinnerOffset)).toBeGreaterThanOrEqual(.09);
       expect(Math.abs(p.spinnerOffset)).toBeLessThan(.34);
       expect(p.balloon.bobDuration).toBeGreaterThanOrEqual(1300);
-      expect(p.shell.delay + 820).toBeLessThan(1700);
+      expect(p.shell.delay + 820).toBeLessThan(3000);
       if (player.id !== outcome.winnerId) {
+        // Every elimination method resolves the chosen player last, with the single highest roll.
+        expect(star.shell.delay).toBeGreaterThan(p.shell.delay);
+        expect(star.matchAt).toBeGreaterThan(p.matchAt);
+        expect(star.diceAt).toBeGreaterThan(p.diceAt);
+        expect(star.coin.delay + star.coin.duration).toBeGreaterThan(p.coin.delay + p.coin.duration);
+        expect(star.dice[0] + star.dice[1]).toBeGreaterThan(p.dice[0] + p.dice[1]);
         expect(star.flipAt).toBeGreaterThan(p.flipAt);
         expect(star.flipAt + star.flipDuration).toBeGreaterThan(p.flipAt + p.flipDuration);
       }

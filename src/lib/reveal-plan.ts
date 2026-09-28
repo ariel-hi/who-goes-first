@@ -14,6 +14,7 @@ export interface PlayerReveal {
   matchTilt: number;
   matchAt: number;
   diceAt: number;
+  dice: readonly [number, number];
   spinnerTurns: number;
   spinnerOffset: number;
   coin: { delay: number; duration: number; lift: number; tilt: number; turn: number; drift: number };
@@ -39,7 +40,7 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
   for (const player of outcome.players) {
     plan[player.id] = {
       popAt: null, flipAt: 0, flipDuration: 900 + random() * 160, matchTilt: -8 + random() * 16,
-      matchAt: 0, diceAt: 0, spinnerTurns: 5, spinnerOffset: 0, coin: { delay: 0, duration: 0, lift: 0, tilt: 0, turn: 720, drift: 0 },
+      matchAt: 0, diceAt: 0, dice: [1, 1], spinnerTurns: 5, spinnerOffset: 0, coin: { delay: 0, duration: 0, lift: 0, tilt: 0, turn: 720, drift: 0 },
       balloon: { style: 0, driftX: 0, driftY: 0, turn: 0, bobDelay: 0, bobDuration: 0, bobX: 0, bobY: 0, bobTurn: 0 },
       shell: { delay: 0, tilt: 0 },
       tower: { style: 0, fallAt: 0, fallDuration: 0, stagger: 0, drift: 0 },
@@ -68,19 +69,31 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
       drift: random() * 7 - 3.5,
     };
   });
-  // The star is the final reveal, regardless of card layout or flip speed.
-  const cards = shuffle(losers, random);
-  const flipStart = 550 + random() * 120;
-  cards.forEach((player, rank) => {
-    // All flips overlap, with shuffled start order and slightly different speeds.
-    plan[player.id]!.flipAt = Math.round(flipStart + rank / Math.max(1, cards.length) * 600 + random() * 35);
-  });
-  const lastLoser = Math.max(...cards.map(player => plan[player.id]!.flipAt));
-  plan[outcome.winnerId]!.flipAt = lastLoser + 180;
+  // Every table method eliminates the others one at a time in a fresh order,
+  // then holds a beat before the chosen player's piece resolves last.
+  const order = (window: number, perPlayer: number, start: number, hold: number, set: (piece: PlayerReveal, at: number) => void, at: (piece: PlayerReveal) => number) => {
+    const sequence = shuffle(losers, random);
+    const span = Math.min(window, perPlayer * sequence.length);
+    sequence.forEach((player, rank) => set(plan[player.id]!, Math.round(start + (sequence.length > 1 ? rank / (sequence.length - 1) : 0) * span + random() * 40)));
+    set(plan[outcome.winnerId]!, Math.max(start, ...sequence.map(player => at(plan[player.id]!))) + hold);
+  };
+  order(1000, 240, 520 + random() * 100, 480, (piece, time) => { piece.flipAt = time; }, piece => piece.flipAt);
+  order(900, 230, 80, 420, (piece, time) => { piece.matchAt = time; }, piece => piece.matchAt);
+  order(1000, 240, 0, 360, (piece, time) => { piece.diceAt = time; }, piece => piece.diceAt);
+  order(1000, 240, 420, 460, (piece, time) => { piece.shell.delay = time; }, piece => piece.shell.delay);
+  order(900, 220, 90, 380, (piece, time) => { piece.coin.delay = time; }, piece => piece.coin.delay);
+  // The chosen roll is always the single highest total; the totals themselves vary.
+  const roll = () => 1 + Math.floor(random() * 6);
+  const best = 7 + Math.floor(random() * 6);
+  const first = Math.max(best - 6, 1 + Math.floor(random() * Math.min(6, best - 1)));
+  plan[outcome.winnerId]!.dice = [first, best - first];
+  for (const player of losers) {
+    let pair: [number, number] = [roll(), roll()];
+    while (pair[0] + pair[1] >= best) pair = [roll(), roll()];
+    plan[player.id]!.dice = pair;
+  }
   for (const player of outcome.players) {
     const piece = plan[player.id]!;
-    piece.matchAt = Math.round(random() * 190);
-    piece.diceAt = Math.round(random() * 180);
     piece.spinnerTurns = [4, 5, 6, -4, -5, -6][Math.floor(random() * 6)]!;
     // Keep the pointer comfortably inside the chosen slice, but rarely dead center.
     piece.spinnerOffset = (random() < .5 ? -1 : 1) * (.09 + random() * .24);
@@ -91,14 +104,14 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
     piece.balloon.bobY = Math.round(-4 - random() * 5);
     piece.balloon.bobTurn = Math.round((random() - .5) * 6);
     piece.coin = {
-      delay: Math.round(110 + random() * 220),
-      duration: Math.round(1580 + random() * 270),
+      delay: piece.coin.delay,
+      duration: Math.round(1420 + random() * 200),
       lift: Math.round(32 + random() * 22),
       tilt: Math.round(-9 + random() * 18),
       turn: [720, -720, 1080, -1080][Math.floor(random() * 4)]!,
       drift: Math.round((random() - .5) * 10),
     };
-    piece.shell = { delay: Math.round(500 + random() * 360), tilt: Math.round(-10 + random() * 20) };
+    piece.shell.tilt = Math.round(-10 + random() * 20);
   }
   return plan;
 }

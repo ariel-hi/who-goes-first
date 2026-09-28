@@ -77,7 +77,11 @@ for (const [width, motion] of [[320, 'no-preference'], [390, 'reduce']] as const
   await expect(page.locator('.winner-announcement')).toContainText('Seat 24 goes first');
   await expect(scene.locator('.reveal-chosen')).toHaveCount(1);
   await expect(scene.locator('.reveal-chosen .die-flat')).toHaveCount(2);
-  expect(await scene.locator('.reveal-chosen .die-flat').evaluateAll(dice => dice.every(die => die.getAttribute('data-value') === '6'))).toBe(true);
+  // The chosen pair is the single highest total, and every pair shows its total.
+  const totals = await scene.locator('.reveal-player').evaluateAll(players => players.map(player => ({ chosen: player.classList.contains('reveal-chosen'), sum: [...player.querySelectorAll('.die-flat')].reduce((total, die) => total + Number(die.getAttribute('data-value')), 0), shown: Number(player.querySelector('.dice-total')?.textContent) })));
+  expect(totals.every(total => total.sum === total.shown)).toBe(true);
+  const best = totals.find(total => total.chosen)!.sum;
+  expect(totals.filter(total => !total.chosen).every(total => total.sum < best)).toBe(true);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   if (motion === 'reduce') expect(await page.locator('.picker').evaluate(picker => picker.getAnimations({ subtree: true }).length)).toBe(0);
 });
@@ -375,7 +379,7 @@ test('balloon timings persist through completion and change on a new pick', asyn
   expect(await delays()).not.toEqual(before);
 });
 
-test('cards perform overlapping three-dimensional flips and retain their faces', async ({ page }) => {
+test('cards turn one at a time in three dimensions, the chosen card last, and retain their faces', async ({ page }) => {
   await openMethod(page, 'cards');
   await page.getByLabel('Player count', { exact: true }).fill('12');
   await page.getByRole('button', { name: 'Pick a player' }).click();
@@ -385,7 +389,8 @@ test('cards perform overlapping three-dimensional flips and retain their faces',
     return { delay: parseFloat(style.animationDelay), duration: parseFloat(style.animationDuration), animation: style.animationName, depth: style.transformStyle };
   }));
   expect(new Set(timings.map(t => t.delay)).size).toBeGreaterThan(6);
-  expect(Math.max(...timings.map(t => t.delay))).toBeLessThan(Math.min(...timings.map(t => t.delay + t.duration)));
+  const chosenDelay = await page.locator('.cards-reveal .reveal-chosen .card-flipper').evaluate(card => parseFloat(getComputedStyle(card).animationDelay));
+  expect(timings.filter(t => t.delay !== chosenDelay).every(t => t.delay < chosenDelay)).toBe(true);
   expect(timings.every(t => t.animation === 'flip-card' && t.depth === 'preserve-3d')).toBe(true);
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   await expect(page.locator('.cards-reveal')).toHaveAttribute('data-settled', 'true');
@@ -403,7 +408,7 @@ test('cards perform overlapping three-dimensional flips and retain their faces',
   expect(await page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-front').evaluateAll(elements => elements.every(element => getComputedStyle(element).animationName === 'none'))).toBe(true);
 });
 
-test('coins toss together and settle with one crown face up', async ({ page }) => {
+test('coins land one at a time and settle with one GO face up', async ({ page }) => {
   await openMethod(page, 'coin');
   await page.getByLabel('Player count', { exact: true }).fill('12');
   await page.getByRole('button', { name: 'Pick a player' }).click();
@@ -423,7 +428,7 @@ test('coins toss together and settle with one crown face up', async ({ page }) =
   expect(faces.find(face => face.chosen)!.facing).toBeLessThan(-.98);
   expect(faces.filter(face => !face.chosen).every(face => face.facing > .98)).toBe(true);
   await expect(page.locator('.coin-heads')).toHaveCount(12);
-  await expect(page.locator('.coin-crown-up')).toHaveCount(0);
+  await expect(page.locator('.coin-reveal .reveal-chosen .coin-heads')).toHaveText('GO');
 });
 
 test('shells stay lifted and only one reveals a pearl', async ({ page }) => {

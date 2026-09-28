@@ -1,9 +1,10 @@
 import type { CSSProperties } from 'react';
-import { useId } from 'react';
+import { useEffect, useId, useRef } from 'react';
 import type { Outcome } from '../../lib/selection';
 import { displayLabel } from '../../lib/roster';
 import { spinnerRotation } from '../../lib/presentations';
 import { playerColor, type RevealPlan } from '../../lib/reveal-plan';
+import { tickPlayer } from '../../lib/sound';
 
 // The lower two blocks anchor the stack. Each of the six patterns sends the
 // upper blocks to different places; small sampled drift distinguishes repeats.
@@ -18,10 +19,50 @@ const towerFalls: readonly (readonly (readonly [number, number, number])[])[] = 
 
 // Decorative SVG/CSS only. Selection, timing, skip and interruptions belong to
 // the picker. These components cannot choose or change a winner.
-export default function TableReveals({ outcome, plan, mode, settled, preview = false }: { outcome: Outcome; plan: RevealPlan; mode: 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'; settled: boolean; preview?: boolean }) {
-  const sheenId = useId();
+export default function TableReveals({ outcome, plan, mode, settled, preview = false, sound = false }: { outcome: Outcome; plan: RevealPlan; mode: 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'; settled: boolean; preview?: boolean; sound?: boolean }) {
   const chosen = preview ? -1 : outcome.players.findIndex(p => p.id === outcome.winnerId);
-  if (mode === 'spinner') {
+  if (mode === 'spinner') return <Spinner outcome={outcome} plan={plan} settled={settled} preview={preview} sound={sound} chosen={chosen} />;
+  return <Table outcome={outcome} plan={plan} mode={mode} settled={settled} preview={preview} chosen={chosen} />;
+}
+
+// Seat names read along each slice and stay upright where the wheel stops.
+function sliceName(label: string, count: number): string {
+  const seat = /^Seat (\d+)$/.exec(label);
+  if (seat) return seat[1]!;
+  const limit = count <= 4 ? 11 : count <= 8 ? 9 : 7;
+  const letters = Array.from(label);
+  return letters.length > limit ? `${letters.slice(0, limit - 1).join('')}…` : label;
+}
+
+function Spinner({ outcome, plan, settled, preview, sound, chosen }: { outcome: Outcome; plan: RevealPlan; settled: boolean; preview: boolean; sound: boolean; chosen: number }) {
+  const sheenId = useId();
+  const wheel = useRef<SVGSVGElement>(null);
+  const pin = useRef<SVGSVGElement>(null);
+  const spinning = !settled && !preview;
+  // The pin flicks as each slice edge passes it, read from the running CSS animation.
+  useEffect(() => {
+    if (!spinning) return;
+    const count = outcome.players.length;
+    const step = 360 / count;
+    const tick = sound ? tickPlayer() : null;
+    let last: number | null = null;
+    let frame = requestAnimationFrame(function watch() {
+      const element = wheel.current;
+      if (element) {
+        const matrix = new DOMMatrixReadOnly(getComputedStyle(element).transform);
+        const angle = (Math.atan2(matrix.b, matrix.a) * 180 / Math.PI + 360) % 360;
+        const slice = Math.floor((angle + step / 2) / step) % count;
+        if (last !== null && slice !== last) {
+          pin.current?.animate([{ transform: 'none' }, { transform: 'rotate(-16deg)' }, { transform: 'none' }], { duration: 140, easing: 'ease-out' });
+          tick?.play();
+        }
+        last = slice;
+      }
+      frame = requestAnimationFrame(watch);
+    });
+    return () => { cancelAnimationFrame(frame); tick?.close(); };
+  }, [spinning, sound, outcome]);
+  {
     const count = outcome.players.length;
     const step = 360 / count;
     const point = (angle: number, radius = 117) => [140 + radius * Math.sin(angle * Math.PI / 180), 140 - radius * Math.cos(angle * Math.PI / 180)];
@@ -29,8 +70,10 @@ export default function TableReveals({ outcome, plan, mode, settled, preview = f
       const [x1, y1] = point(i * step - step / 2); const [x2, y2] = point(i * step + step / 2);
       return `M140 140L${x1} ${y1}A117 117 0 0 1 ${x2} ${y2}Z`;
     };
+    const turn = preview ? 0 : spinnerRotation(chosen, count, plan[outcome.winnerId]!.spinnerTurns, plan[outcome.winnerId]!.spinnerOffset);
+    const size = count <= 4 ? 16 : count <= 8 ? 14 : 12;
     return <div className="spinner-stage" role="img" aria-label={preview ? 'Spinner preview' : settled ? 'Spinner result' : 'Spinner turning'} data-settled={settled} data-preview={preview} data-winner-index={preview ? undefined : chosen} style={preview ? undefined : { '--piece': playerColor(outcome.players[chosen]!) } as CSSProperties}>
-      <div className="spinner-disc"><svg viewBox="0 0 280 280" className="spinner-wheel" aria-hidden="true" style={{ '--turn': preview ? '0deg' : `${spinnerRotation(chosen, count, plan[outcome.winnerId]!.spinnerTurns, plan[outcome.winnerId]!.spinnerOffset)}deg` } as CSSProperties}>
+      <div className="spinner-disc"><svg ref={wheel} viewBox="0 0 280 280" className="spinner-wheel" aria-hidden="true" style={{ '--turn': `${turn}deg` } as CSSProperties}>
         {outcome.players.map((player, i) => <g key={player.id}><path d={slicePath(i)} fill={playerColor(player)} stroke="#fffaf4" strokeWidth="2"/></g>)}
         {settled && chosen >= 0 && <>
           <defs>
@@ -41,14 +84,24 @@ export default function TableReveals({ outcome, plan, mode, settled, preview = f
         </>}
         {chosen >= 0 && <path className="spinner-winning-slice" d={slicePath(chosen)} fill="none" stroke="none" pointerEvents="none"/>}
         {outcome.players.map((player, i) => {
-          const [tx, ty] = point(i * step, 82);
-          return <text key={player.id} x={tx} y={ty} dy=".35em" textAnchor="middle" fill="#34342f" fontSize="17" fontFamily="Georgia">{i + 1}</text>;
+          const name = sliceName(displayLabel(player, outcome.players), count);
+          // Short labels sit upright where the wheel stops; names run along the slice.
+          if (Array.from(name).length <= 3) {
+            const [tx, ty] = point(i * step, count <= 4 ? 78 : 88);
+            return <text key={player.id} className="spinner-name" transform={`rotate(${-turn} ${tx} ${ty})`} x={tx} y={ty} dy=".35em" textAnchor="middle" fill="#34342f" fontSize={size + 2} fontFamily="Georgia">{name}</text>;
+          }
+          const rest = ((i * step + turn) % 360 + 360) % 360;
+          const flipped = rest > 180;
+          return <text key={player.id} className="spinner-name" transform={`rotate(${i * step + (flipped ? 90 : -90)} 140 140)`} x={flipped ? 32 : 248} y="140" dy=".35em" textAnchor={flipped ? 'start' : 'end'} fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
         })}
         <circle cx="140" cy="140" r="17" fill="#fffaf4"/>
       </svg></div>
-      <svg viewBox="0 0 24 32" className="spinner-pin" aria-hidden="true"><path d="M3 3Q12-1 21 3L12 29Z" fill="#61566f"/></svg>
+      <svg ref={pin} viewBox="0 0 24 32" className="spinner-pin" aria-hidden="true"><path d="M3 3Q12-1 21 3L12 29Z" fill="#61566f"/></svg>
     </div>;
   }
+}
+
+function Table({ outcome, plan, mode, settled, preview, chosen }: { outcome: Outcome; plan: RevealPlan; mode: 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'; settled: boolean; preview: boolean; chosen: number }) {
   const label = { cards: 'Cards', tower: 'Towers', straws: 'Matches', dice: 'Dice', coin: 'Coins', shells: 'Shells' }[mode];
   return <div className={`table-reveal ${mode}-reveal`} data-count={outcome.players.length} data-five={outcome.players.length >= 5} data-many={outcome.players.length > 6} data-settled={settled} data-preview={preview} aria-label={preview ? `${label} preview` : label}>
     {outcome.players.map((player, i) => <div className={`reveal-player ${i === chosen ? 'reveal-chosen' : ''}`} data-fall-style={mode === 'tower' && i !== chosen ? plan[player.id]!.tower.style : undefined} key={player.id} style={{ '--piece': playerColor(player), '--flip-delay': `${plan[player.id]!.flipAt}ms`, '--flip-duration': `${plan[player.id]!.flipDuration}ms`, '--deal-delay': `${Math.round(plan[player.id]!.flipAt * .34)}ms`, '--match-tilt': `${plan[player.id]!.matchTilt}deg`, '--match-delay': `${plan[player.id]!.matchAt}ms`, '--dice-delay': `${plan[player.id]!.diceAt}ms`, '--coin-delay': `${plan[player.id]!.coin.delay}ms`, '--coin-duration': `${plan[player.id]!.coin.duration}ms`, '--coin-apex': `-${plan[player.id]!.coin.lift}px`, '--coin-tilt': `${plan[player.id]!.coin.tilt}deg`, '--coin-turn': `${plan[player.id]!.coin.turn + (i === chosen ? Math.sign(plan[player.id]!.coin.turn) * 180 : 0)}deg`, '--coin-drift': `${plan[player.id]!.coin.drift}px`, '--shell-delay': `${plan[player.id]!.shell.delay}ms`, '--shell-tilt': `${plan[player.id]!.shell.tilt}deg` } as CSSProperties}>
@@ -61,21 +114,13 @@ export default function TableReveals({ outcome, plan, mode, settled, preview = f
         const stagger = tower.style === 3 ? j - 2 : 4 - j;
         return <i key={j} style={{ '--block': j, '--fall-x': `${fallX}px`, '--fall-y': `${fallY}px`, '--fall-angle': `${angle}deg`, '--fall-mid-x': `${fallX * .5}px`, '--fall-mid-y': `${Math.max(-7, fallY * .2 - 12)}px`, '--fall-mid-angle': `${angle * .4}deg`, '--fall-delay': `${tower.fallAt + stagger * tower.stagger}ms`, '--fall-duration': `${tower.fallDuration}ms` } as CSSProperties}><span /></i>;
       })}</span></div>}
-      {mode === 'straws' && <div className="match-draw" aria-hidden="true"><span className="match-art"><span className="matchstick"><span className="match-wood" /><span className="match-head" /></span><span className="match-cover"><span className="match-cover-strike" /></span></span></div>}
-      {mode === 'dice' && <div className="dice-pair" aria-hidden="true">{[0, 1].map(die => <Die key={die} compact={outcome.players.length > 12} value={i === chosen ? 6 : 1 + (i * 3 + die * 2 + outcome.drawId) % (die ? 6 : 5)} />)}</div>}
-      {mode === 'coin' && <div className="coin-toss" aria-hidden="true"><span className="coin-shadow"/><span className="coin-flight"><span className="coin"><span className="coin-body">{[-7, -3, 0, 3, 7].map(depth => <span className="coin-edge" key={depth} style={{ '--depth': `${depth}px` } as CSSProperties}/>)}<span className="coin-face coin-tails"><span className="coin-number">{i + 1}</span></span><span className="coin-face coin-heads"><CrownEmblem /></span></span></span></span></div>}
+      {mode === 'straws' && <div className="match-draw" aria-hidden="true"><span className="match-art"><span className="matchstick"><span className="match-wood" /><span className="match-head" />{i === chosen && <span className="match-flame" />}</span><span className="match-cover"><span className="match-cover-strike" /></span></span></div>}
+      {mode === 'dice' && <div className="dice-pair" aria-hidden="true">{plan[player.id]!.dice.map((value, die) => <Die key={die} compact={outcome.players.length > 12} value={preview ? (die ? 6 : 5) : value} />)}{!preview && <span className="dice-total">{plan[player.id]!.dice[0] + plan[player.id]!.dice[1]}</span>}</div>}
+      {mode === 'coin' && <div className="coin-toss" aria-hidden="true"><span className="coin-shadow"/><span className="coin-flight"><span className="coin"><span className="coin-body">{[-7, -3, 0, 3, 7].map(depth => <span className="coin-edge" key={depth} style={{ '--depth': `${depth}px` } as CSSProperties}/>)}<span className="coin-face coin-tails"><span className="coin-number">{i + 1}</span></span><span className="coin-face coin-heads"><span className="coin-go">GO</span></span></span></span></span></div>}
       {mode === 'shells' && <ShellArt winner={i === chosen} />}
       <bdi>{displayLabel(player, outcome.players)}</bdi>
     </div>)}
   </div>;
-}
-
-function CrownEmblem() {
-  return <svg viewBox="0 0 64 64" className="crown-emblem" fill="none" aria-hidden="true">
-    <path d="M12 23 19 43h26l7-20-13 10-7-17-7 17Z" fill="currentColor" opacity=".8"/>
-    <path d="M16 48h32M19 43h26M12 23l13 10 7-17 7 17 13-10-7 20H19Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/>
-    <circle cx="12" cy="22" r="2" fill="currentColor"/><circle cx="32" cy="15" r="2" fill="currentColor"/><circle cx="52" cy="22" r="2" fill="currentColor"/>
-  </svg>;
 }
 
 function ShellArt({ winner }: { winner: boolean }) {

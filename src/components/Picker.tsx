@@ -5,7 +5,7 @@ import { pickerReducer } from '../lib/state';
 import { clearPreferences, defaults, readPreferences, writePreferences, type Mode, type Preferences } from '../lib/preferences';
 import { analytics } from '../lib/analytics';
 import { cleanLink, shareLink } from '../lib/share';
-import { playChime } from '../lib/sound';
+import { playReveal } from '../lib/sound';
 import { presentations, primaryModes, revealDuration, supportsGroup } from '../lib/presentations';
 import { createRevealPlan, playerColor, type RevealPlan } from '../lib/reveal-plan';
 import ModeIcon from './ModeIcon';
@@ -138,8 +138,13 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
   useEffect(() => {
     if (state.phase !== 'result' || completionSent.current === state.outcome.drawId) return;
     completionSent.current = state.outcome.drawId;
+    // The reveal lands here: a soft chime when enabled and a short tap on phones.
+    if (!document.hidden) {
+      if (prefs.sound) playReveal();
+      try { if (eventMode.current !== 'instant') navigator.vibrate?.(35); } catch { /* Haptics are decorative. */ }
+    }
     analytics.emit('pick_completed', { mode: eventMode.current, duration: eventMode.current === 'instant' ? 'instant' : eventMode.current === 'quick' ? 'short' : 'long' });
-  }, [state]);
+  }, [state, prefs.sound]);
 
   useEffect(() => {
     if (state.phase !== 'revealing') return;
@@ -343,7 +348,6 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
       locked.current = outcome; eventMode.current = drawingMode;
       setError(''); dispatch({ type: 'START', outcome });
       analytics.emit('pick_started', { mode: drawingMode, policy: 'equal-chance' });
-      if (prefs.sound && !document.hidden) void playChime();
       if (drawingMode === 'instant' || reduced) finish();
     } catch {
       setError('Secure randomness is unavailable. No player was selected. Try again, or reload this page.');
@@ -460,9 +464,9 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
         <button type="button" className="primary" disabled={!hydrated || errors.length > 0} aria-disabled={busy} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={() => pick()}>{!hydrated ? 'Getting ready…' : busy ? 'Revealing…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
         {visualMode && scene && <div ref={revealStage} className="reveal-stage" data-mode={renderedMode} aria-hidden="true"><EffectBoundary key={`${renderedMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
           <Suspense fallback={<RevealLoading mode={renderedMode} players={scene.outcome.players} />}>
-            {renderedMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={renderedMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
+            {renderedMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={renderedMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} sound={prefs.sound} />}
           </Suspense>
-        </EffectBoundary></div>}
+        </EffectBoundary>{/* Reserved from the preview on, so the scene never grows when the result lands. */}<p className="stage-result" data-pending={state.phase !== 'result' || !winner} style={winner ? { '--piece': playerColor(winner) } as React.CSSProperties : undefined}><bdi>{winnerLabel || 'Seat 1'}</bdi> goes first</p></div>}
       </div>
       <div className="picker-utilities"><button type="button" className="text-button" onClick={() => setSettingsOpen(!settingsOpen)} aria-expanded={settingsOpen} aria-controls="picker-settings" disabled={!hydrated} inert={busy}>Preferences</button><a href="/fairness/">Equal chances</a>{shareInPicker && <button type="button" className="text-button" disabled={!hydrated} onClick={() => void share()}>Share</button>}</div>
       {shareInPicker && <div role="status" className="small muted share-status">{shareStatus}{manualLink && <input readOnly aria-label="Clean sharing link" value={manualLink} onFocus={e => e.target.select()} />}</div>}
