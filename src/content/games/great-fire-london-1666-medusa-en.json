@@ -3,10 +3,10 @@
   "slug": "great-fire-london-1666-medusa-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7954f07e2668539d0f3c5e305603eab7a6352b6122e2d2ad47200707caf3446f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "85368946f0ea5faad6d542b85d2e4c4575cc6c705ffd46ef7b5e09c2a7a77140",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Great Fire of London 1666",
   "aliases": [],
   "editionLabel": "Medusa Games English base game",
@@ -36,5 +36,22 @@
   "internalEvidence": "The Medusa Games publisher-hosted English PDF states the London-visit criterion and random alternative on page 3; page 4 starts placement with that player. The publisher PDF is byte-identical to the archived copy and the game identity matches inventory BGG 41569. SHA-256: bef5ca81c4e3a5e087a6f5380cd4809af6bbc6d3f25f10035eb2df9ba50766f3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "No tie procedure is stated for equally recent London visitors."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/great-fire-london-1666-medusa-en-cover.jpg",
+    "alt": "The Great Fire of London 1666 original box cover artwork",
+    "width": 500,
+    "height": 354,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.medusagames.co.uk/gfgallery.php",
+      "publisher": "Medusa Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Medusa Games and cover-art licensors or artists (precise ownership not stated on gallery page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher original-game gallery https://www.medusagames.co.uk/gfgallery.php explicitly labels https://www.medusagames.co.uk/images/pic793782_md.jpg as the full cover with box wraparound. Its original-game page pairs the 2010 release with the English rules cited in the approved entry.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
