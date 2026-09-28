@@ -3,10 +3,10 @@
   "slug": "saltfjord-huch-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4f97bc154842a9eb28e81b7034ee29b8b2cf58f8379eaca58e90497c3edb2208",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "9f27c442056efef3da65d468839f269ac55bfbe75dd1c3c77e033d8ef07d0186",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Saltfjord",
   "aliases": [],
   "editionLabel": "HUCH! German rules, English summary",
@@ -43,5 +43,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/saltfjord-huch-de-summary-cover.jpg",
+    "alt": "Saltfjord game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://produkte.hutter-trade.com/files/products/1493/100/de/large/4260071884732.jpg",
+      "publisher": "HUCH! / Hutter Trade"
+    },
+    "fairUse": {
+      "rightsHolder": "HUCH! / Hutter Trade",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher or distributor page: https://hutter-trade.com/sortiment/produkt/saltfjord/. Exact publisher-hosted package image: https://produkte.hutter-trade.com/files/products/1493/100/de/large/4260071884732.jpg. The package and game identity were visually reviewed against the article edition (HUCH! German rules, English summary).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "trellis-breaking-games-2018-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d74c3eeb9cd1777a8cb16688cac7e7b1136293a0a1fdf2278dd0806f3077caac",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "739693c0875cd9d893d0de44b30834289d7618af7328232a43fa1b4b69910c83",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trellis",
   "aliases": [],
   "editionLabel": "Breaking Games English edition, 2018",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered the image-only English rulebook setup page from the archive. It gives the plant-watering or previous-winner alternatives and says play passes left. Cover names designer Teale Fristoe and the contents match inventory BGG 202582; publisher product page identifies Breaking Games. SHA-256: 7e5daf3a8ea8123eeb1180ac3c97913d88d4620f4b90d32111fe1d8a454a0d26. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
   "uncertainty": [
     "The booklet does not rank the two options or provide a tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trellis-breaking-games-2018-en-cover.jpg",
+    "alt": "Trellis game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://breakinggames.com/cdn/shop/products/trellis-box.jpg?v=1541773419&width=1445",
+      "publisher": "Breaking Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Breaking Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher or distributor page: https://breakinggames.com/products/trellis. Exact publisher-hosted package image: https://breakinggames.com/cdn/shop/products/trellis-box.jpg?v=1541773419&width=1445. The package and game identity were visually reviewed against the article edition (Breaking Games English edition, 2018).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

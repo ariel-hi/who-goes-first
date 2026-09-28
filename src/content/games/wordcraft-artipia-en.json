@@ -3,10 +3,10 @@
   "slug": "wordcraft-artipia-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "75c5a02267b6a601be5292210b889edf44e4e61d1291e05c2b4d075101830e86",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "bb2035b9b18cbb32fc302e2c8953887de307be7f4a0cdece87d887e087c72782",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "WordCraft",
   "aliases": [
     "Wordcraft"
@@ -42,5 +42,22 @@
   "internalEvidence": "The Artipia product page links the eight-page English publisher PDF. PDF page 2 names the most recent person to mix ingredients as First player and starts clockwise word-building turns. PDF page 5 selects later-round starters by Achievement-card cubes with a distance tie-break. PDF page 6 explains the team variant. The 2022 publisher imprint appears on PDF page 8. Product page: https://www.artipiagames.com/wordcraft/ . Original PDF bytes could not be retrieved for a file hash, so the indexed publisher text was reviewed. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starting rule, tie or later-round context against the publisher-linked PDF text.",
   "uncertainty": [
     "No tie-break is stated for equally recent mixing in the first round."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wordcraft-artipia-en-cover.jpg",
+    "alt": "WordCraft game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.artipiagames.com/wp-content/uploads/2022/10/WORDCRAFT-BOXs.png",
+      "publisher": "Artipia Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Artipia Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher or distributor page: https://www.artipiagames.com/product/wordcraft/. Exact publisher-hosted package image: https://www.artipiagames.com/wp-content/uploads/2022/10/WORDCRAFT-BOXs.png. The package and game identity were visually reviewed against the article edition (Artipia Games English base-game rulebook, 2022 copyright).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
