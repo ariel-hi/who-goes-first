@@ -3,13 +3,30 @@
   "slug": "beyond-the-sun-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c76d6406225fffb02240e7ca7e007b59747a52b80458ce195ca9d59882acdda0",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "d66bfd66edd851a5a486660152341802f13b7f617fe0c93e20a94720350d1501",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Beyond the Sun",
   "aliases": [],
   "editionLabel": "Rio Grande Games English base game · combined rules and setup sheet",
+  "image": {
+    "file": "/images/games/beyond-the-sun-rio-grande-en-cover.jpg",
+    "alt": "Illustrated Beyond the Sun title page from the official Rio Grande Games English rulebook",
+    "width": 311,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-Combined-Rules.pdf",
+      "publisher": "Rio Grande Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games and credited game artist",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Rio Grande Games source page: https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-Combined-Rules.pdf. Edition match: Illustrated first page of Rio Grande's English base-game combined rules, matching the cited edition. Original image URL: https://www.riograndegames.com/wp-content/uploads/2020/08/Beyond-the-Sun-Combined-Rules.pdf. Processing note: Page 1 of the publisher PDF rendered and reduced for the cover slot",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The person who most recently went to space starts.",
   "officialTieBreak": "Choose randomly if there is a tie.",
   "houseFallback": null,
