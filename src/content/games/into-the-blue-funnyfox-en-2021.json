@@ -3,10 +3,10 @@
   "slug": "into-the-blue-funnyfox-en-2021",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "61e31ffc9035bdc009aecd527561089bf103fa4723bfe79d16a53b6de94a0ae9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2a2c29df3a297cf731f4a3896ea2124e4df46bcf1f9fb78fb0423a34ec28401a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Into the Blue",
   "aliases": [],
   "editionLabel": "Funnyfox English rulebook (2021)",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF/printed pages 2 and 3 of the publisher-authored English rulebook mirrored by 1jour-1jeu. Setup selects the most recent swimmer and gameplay proceeds clockwise. PDF page 8 credits Funnyfox and 2021. Matches inventory BGG 346950. SHA-256: c9541867b331fa6715f403384746d0e0f078e30958b73d0906c5b329f11898c4. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, and starting rule against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/into-the-blue-funnyfox-en-2021-cover.jpg",
+    "alt": "Into the Blue official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://funnyfox.fr/en/",
+      "publisher": "Funnyfox"
+    },
+    "fairUse": {
+      "rightsHolder": "Funnyfox and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher product or media page https://funnyfox.fr/en/ supplies original box image https://funnyfox.fr/app/uploads/sites/21/elementor/thumbs/3D-BOX-Right-rq2gor679k7bwxf3saajszofntpv5a6ohl4o38titk.png. Visible title and publisher packaging match the cited game; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

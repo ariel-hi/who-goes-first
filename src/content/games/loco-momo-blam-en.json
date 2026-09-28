@@ -3,10 +3,10 @@
   "slug": "loco-momo-blam-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "55317ee8c80339977da1a7f9bc767477e63dfac59034eb226a1d7b404eb70ecd",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4a0c0cd7031159e99463b465a259416cfde48be280bf823bbda8f79c5526a26f",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Loco Momo",
   "aliases": [],
   "editionLabel": "BLAM! English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 2 states the forest-walk criterion, optional random choice and clockwise play. The booklet credits original publisher Wonderful World and France/world publisher BLAM!; Forest and Picture boards, animal tokens and Sun token match inventory BGG 317299. SHA-256: e3ea54811b74264dda247ebcebc8e3d24ead487c9737dfe6d968b8d937162c9b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for a shared forest walk."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/loco-momo-blam-en-cover.jpg",
+    "alt": "Loco Momo official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blam-edition.com/en/press-room/",
+      "publisher": "BLAM!"
+    },
+    "fairUse": {
+      "rightsHolder": "BLAM! and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher product or media page https://blam-edition.com/en/press-room/ supplies original box image https://blam-edition.com/wp-content/uploads/2023/12/packshot-loco-momo_jeu-de-societe_blam-edition-600x600.png. Visible title and publisher packaging match the cited game; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
