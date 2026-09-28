@@ -3,15 +3,32 @@
   "slug": "mage-knight-wizkids-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "94efe5299bbb8bf20c0f000fd1e3ad4a3d2aa3e0ba38427990ebd345916d1457",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "84bb85f5b25e6879447174cf695a4980b1a6b32a86b7f6bbdabda1b7205a9c07",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Mage Knight Board Game",
   "aliases": [
     "Mage Knight"
   ],
   "editionLabel": "WizKids English Rulebook and Walkthrough, 2011",
+  "image": {
+    "file": "/images/games/mage-knight-wizkids-en-cover.jpg",
+    "alt": "Mage Knight Board Game standard edition box",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.wizkids.com/cdn/shop/files/70495_mage_knight_box_wht__1_41f01627-8456-4bed-a459-73e7893d91fc_1024x1024.jpg?v=1782248051",
+      "publisher": "WizKids"
+    },
+    "fairUse": {
+      "rightsHolder": "WizKids / Vlaada Chvátil",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "WizKids’ official product page https://shop.wizkids.com/products/mage-knight-board-game identifies this as SKU 70495 Standard Edition and shows the base-game box. The box is distinct from Mage Knight Ultimate Edition and matches the original 2011 rulebook and walkthrough cited by this article. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Each Round, the player who took the lowest-numbered Tactic card takes the first turn. Before that, players pick Tactics in order of lowest Fame; at the start everyone has 0 Fame, so ties go to the player whose Round Order token is lower in the column.",
   "officialTieBreak": "Ties in Fame when choosing Tactics go to the player whose Round Order token is in the lower position.",
   "houseFallback": null,
