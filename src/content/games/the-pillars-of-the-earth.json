@@ -3,10 +3,10 @@
   "slug": "the-pillars-of-the-earth",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "50ac405842e2fbcde4d8948fbbcb709eb54fd81a6117ea2f2ddee5b60aae812a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "08846f6c90892a67ad6deb97dfba42f62ac05b6e1977366f81bba0aa5fd9447e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Pillars of the Earth",
   "aliases": [
     "Pillars of the Earth"
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-pillars-of-the-earth-cover.jpg",
+    "alt": "The Pillars of the Earth English game rules illustrated cover page",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thamesandkosmos.com/manuals/full/691530_pillarsofearth_manual.pdf",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos / Kosmos",
+      "rationale": "Reduced-size publisher rulebook cover page identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Thames & Kosmos English manual, PDF page 2 (printed opening page), at https://thamesandkosmos.com/manuals/full/691530_pillarsofearth_manual.pdf. The title and artwork were visually inspected. The booklet credits Thames & Kosmos ©2017 and product number 691530, matching the article edition (English Thames & Kosmos rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
