@@ -35,7 +35,7 @@ const menuId = `share-options-${randomUUID()}`;
       <a class="share-bubble" href={whatsapp} target="_blank" rel="noopener noreferrer" title="Share on WhatsApp" aria-label="Share on WhatsApp (opens in a new tab)"><SocialIcon name="whatsapp" /></a>
       <a class="share-bubble" href={facebook.href} target="_blank" rel="noopener noreferrer" title="Share on Facebook" aria-label="Share on Facebook (opens in a new tab)"><SocialIcon name="facebook" /></a>
     </>}
-    <button type="button" class="share-more" data-share-more aria-expanded="false" aria-controls={menuId} aria-label="More sharing options"><span class="share-more-dots" aria-hidden="true">•••</span><span>More</span></button>
+    <button type="button" class="share-more" data-share-more aria-expanded="false" aria-controls={menuId} aria-label="More sharing options" disabled><span class="share-more-dots" aria-hidden="true">•••</span><span>More</span></button>
   </div>
   <div class="share-platforms" id={menuId} data-share-panel role="group" aria-label="More sharing options" hidden>
   <PageShareButton label={shareLabel} />
@@ -63,6 +63,7 @@ const menuId = `share-options-${randomUUID()}`;
     root.addEventListener('keydown', event => {
       if (event.key === 'Escape' && !panel.hidden) { close(); more.focus(); }
     });
+    more.disabled = false;
     const link = root.querySelector<HTMLAnchorElement>('[data-instagram-open]');
     if (!link) return;
     const status = root.querySelector<HTMLElement>('[data-instagram-status]')!;

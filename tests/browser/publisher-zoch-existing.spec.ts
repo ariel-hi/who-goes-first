@@ -96,7 +96,14 @@ for (const width of [320, 1280]) {
       await expect(tie).toContainText('The rulebook doesn’t say.');
       await expect(tie.getByRole('link', { name: 'pick a player at random', exact: true })).toHaveAttribute('href', '/');
       await expect(article.getByRole('link', { name: 'use the player picker', exact: true })).toHaveAttribute('href', '/');
-      const share = article.getByRole('button', { name: 'Share this rule', exact: true });
+      const sharing = article.getByRole('group', { name: 'Share this page', exact: true });
+      const more = sharing.getByRole('button', { name: 'More sharing options', exact: true });
+      await expect(more).toBeVisible();
+      await expect(more).toBeEnabled();
+      expect((await more.boundingBox())!.height).toBeGreaterThanOrEqual(44);
+      await more.click();
+      await expect(more).toHaveAttribute('aria-expanded', 'true');
+      const share = sharing.getByRole('button', { name: 'Share this rule', exact: true });
       await expect(share).toBeVisible();
       await expect(share).toBeEnabled();
       const target = await share.boundingBox();

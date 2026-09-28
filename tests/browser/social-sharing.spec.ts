@@ -21,6 +21,7 @@ for (const width of [320, 1280]) {
       await expect(toolbar).toHaveCount(1);
       const more = toolbar.getByRole('button', { name: 'More sharing options' });
       await expect(more).toBeVisible();
+      await expect(more).toBeEnabled();
       await expect(toolbar.locator('[data-share-button]')).toBeHidden();
       expect((await toolbar.boundingBox())!.height).toBeLessThanOrEqual(45);
       const production = await page.locator('meta[name="google-site-verification"]').count() > 0;
