@@ -3,10 +3,10 @@
   "slug": "gaia-project-feuerland-2017-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "74aae880c201952db941189d4166815d9417f8a642d246be7600f43923d1ba50",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4278c87d1097f099251746c9dd662b3696d3e577e41c12b4cd47dee451e53db6",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gaia Project",
   "aliases": [
     "Gaia Project: A Terra Mystica Game"
@@ -58,5 +58,22 @@
   "internalEvidence": "Downloaded the English rulebook linked from the Feuerland Spiele English homepage (https://www.feuerland-spiele.de/fileadmin/game/Gaia_Project/GAIA_PROJECT_EN_rules_Web.pdf), SHA-256 f42faccfd5c821200436e733c6f9368559ba2741fc55abc44f4016088e0084cc, and extracted the text of all PDF pages. Page 4, Setup: determine a first player using the method of your choice; that player takes the first player marker. Page 10, Phase III: starting with the first player and continuing clockwise. Page 16: the first time a player passes during a round, that player takes the first player marker. Page 19: optional variable turn order with the turn order card. PDF page 3 credits Helge Ostertag and Jens Drögemüller, copyright 2017 Feuerland Verlagsgesellschaft, and Z-Man Games, matching BGG 220308. Also downloaded the English Automa rules from the same site (SHA-256 3117492183ae3349ff33f54eae3351737a2f8cb430cacf1b0e8683885d810604); PDF page 3, Setup: you take the first player marker. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The rulebook leaves the method for choosing the first player to the group."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gaia-project-feuerland-2017-en-cover.jpg",
+    "alt": "Gaia Project original Feuerland box cover",
+    "width": 472,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.feuerland-spiele.de/en/",
+      "publisher": "Feuerland Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Feuerland Spiele and artist Dennis Lohausen (precise cover-art ownership not stated)",
+      "rationale": "Small, compressed official box image identifies the original game edition discussed in this editorial rule explanation.",
+      "provenance": "Feuerland’s English homepage presents the original Gaia Project box beside its official English rules link. The image on that homepage is a thumbnail of https://www.feuerland-spiele.de/fileadmin/game/Gaia_Project/Schachtel.jpg. Original German-market package has German subtitle “Ein Terra Mystica Spiel”; the title, original art, publisher and game components correspond to Feuerland’s 2017 English rulebook cited here. This is the original base game, distinct from the 2024 revised German package and Lost Fleet expansion.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
