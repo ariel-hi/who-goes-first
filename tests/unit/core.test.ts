@@ -120,6 +120,9 @@ test('revenue settings are optional, validated, and ads stay out of previews', (
   expect(siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456' }).adsenseClient).toBe('');
   expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456' }).adsenseRuleSlot).toBe('');
   expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1509819871' }).adsenseRuleSlot).toBe('1509819871');
+  expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1509819871' }).adUnitsEnabled).toBe(false);
+  expect(siteSettings({ ...release, ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1509819871', ADSENSE_AD_UNITS_ENABLED: 'true' }).adUnitsEnabled).toBe(true);
+  expect(() => siteSettings({ ...release, ADSENSE_AD_UNITS_ENABLED: 'true' })).toThrow(/requires ADSENSE_CLIENT/);
   expect(siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: '1509819871' }).adsenseRuleSlot).toBe('');
   expect(() => siteSettings({ ADSENSE_RULE_SLOT: '1509819871' })).toThrow('ADSENSE_RULE_SLOT');
   expect(() => siteSettings({ ADSENSE_CLIENT: 'ca-pub-1234567890123456', ADSENSE_RULE_SLOT: 'invalid' })).toThrow('ADSENSE_RULE_SLOT');

@@ -77,9 +77,10 @@ for (const file of files.filter(path => path.endsWith('.html'))) {
   const html = readFileSync(file, 'utf8');
   const route = relative(output, file).replaceAll('\\', '/');
   const units = [...html.matchAll(/<ins\b[^>]*data-ad-slot=/g)].length;
-  if (units && (!ads || units !== 1 || !/^games\/[^/]+\/index\.html$/.test(route))) throw new Error(`Unexpected ad unit: ${route}`);
+  if (units && (!ads || !settings.adUnitsEnabled || units !== 1 || !/^games\/[^/]+\/index\.html$/.test(route))) throw new Error(`Unexpected ad unit: ${route}`);
   if (units && html.indexOf('class="rule-ad"') < html.indexOf('class="source-actions"')) throw new Error(`Ad precedes the answer source: ${route}`);
   if (!ads && /src="\/google-tags\.js"/.test(html)) throw new Error(`Ad loader enabled without an explicit rule slot: ${route}`);
+  if (!settings.adUnitsEnabled && /data-ads="on"/.test(html)) throw new Error(`Ad request enabled while ad units are paused: ${route}`);
   if (/^board-games\/browse\//.test(route) && !html.includes('content="noindex, follow"')) throw new Error(`Indexable directory shelf: ${route}`);
 }
 const googleSources = settings.production ? ' https://www.googletagmanager.com https://*.google-analytics.com' : '';

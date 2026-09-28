@@ -18,12 +18,17 @@ export function siteSettings(env: Record<string, string | undefined> = process.e
   // typo fails the build instead of shipping a broken ad tag or affiliate link.
   const adsenseClient = env.ADSENSE_CLIENT?.trim() || '';
   const adsenseRuleSlot = env.ADSENSE_RULE_SLOT?.trim() || '';
+  const adUnitsSetting = env.ADSENSE_AD_UNITS_ENABLED?.trim() || '';
   const amazonTag = env.AMAZON_ASSOCIATES_TAG?.trim() || '';
   const tipUrl = env.TIP_JAR_URL?.trim() || '';
   if (adsenseClient && !/^ca-pub-\d{10,20}$/.test(adsenseClient)) throw new Error('ADSENSE_CLIENT must look like ca-pub-1234567890123456.');
   if (adsenseRuleSlot && (!/^\d{5,20}$/.test(adsenseRuleSlot) || !adsenseClient)) throw new Error('ADSENSE_RULE_SLOT requires a numeric ad unit ID and ADSENSE_CLIENT.');
+  if (adUnitsSetting && !['true', 'false'].includes(adUnitsSetting)) throw new Error('ADSENSE_AD_UNITS_ENABLED must be true or false.');
+  if (adUnitsSetting === 'true' && (!adsenseClient || !adsenseRuleSlot)) throw new Error('ADSENSE_AD_UNITS_ENABLED requires ADSENSE_CLIENT and ADSENSE_RULE_SLOT.');
   if (amazonTag && !/^[a-z0-9-]{3,40}-\d{2}$/i.test(amazonTag)) throw new Error('AMAZON_ASSOCIATES_TAG must look like yourtag-20.');
   if (tipUrl && !/^https:\/\/[^\s/?#]+\.[^\s/?#]+\/\S*$/.test(tipUrl)) throw new Error('TIP_JAR_URL must be an HTTPS link.');
-  // Ads never run in previews: AdSense serves only on the approved public domain.
-  return { url: site.origin, production, contact, privacyHost, privacyLogging, adsenseClient: production ? adsenseClient : '', adsenseRuleSlot: production ? adsenseRuleSlot : '', amazonTag, tipUrl };
+  // Keep the publisher configuration for ownership and consent, but request ad
+  // units only after the account is approved and this flag is explicitly set.
+  // Ads never run in previews.
+  return { url: site.origin, production, contact, privacyHost, privacyLogging, adsenseClient: production ? adsenseClient : '', adsenseRuleSlot: production ? adsenseRuleSlot : '', adUnitsEnabled: production && adUnitsSetting === 'true', amazonTag, tipUrl };
 }

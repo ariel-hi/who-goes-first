@@ -1,8 +1,8 @@
 ---
 import { siteSettings } from '../lib/site';
-const { adsenseClient, adsenseRuleSlot } = siteSettings();
+const { adsenseClient, adsenseRuleSlot, adUnitsEnabled } = siteSettings();
 ---
-{adsenseClient && adsenseRuleSlot && <aside class="rule-ad" aria-label="Advertisement">
+{adUnitsEnabled && adsenseClient && adsenseRuleSlot && <aside class="rule-ad" aria-label="Advertisement">
   <small>Advertisement</small>
   <ins class="adsbygoogle" style="display:block;width:100%;height:250px" data-ad-client={adsenseClient} data-ad-slot={adsenseRuleSlot}></ins>
 </aside>}
