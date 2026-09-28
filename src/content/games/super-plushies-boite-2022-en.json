@@ -3,10 +3,10 @@
   "slug": "super-plushies-boite-2022-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "68891aa91bf3e6d216a715fd38e86d1be8d6cf01e80dd20f2744b138abb1e28a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "c2c85d09210ca16b572e2ed087f940c28447291996573e96cf08d0eda2bba5ed",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Super Plushies",
   "aliases": [],
   "editionLabel": "La Boîte de Jeu English rules, 2022",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered PDF/printed page 4 gives the help criterion and clockwise order; page 7 says Mona starts solo and bears La Boîte de Jeu ©2022. Equipment discs and Super Plushies match inventory BGG 363984. SHA-256: b9149d0fc43ed70cf0ff7824d2ec4e673a03243320adff18b8f0bd5fb54e92f1. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for the most recent help."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/super-plushies-boite-2022-en-cover.jpg",
+    "alt": "Super Plushies rulebook cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.laboitedejeu.fr/wp-content/uploads/2022/05/SUPP-EN-Rules.pdf",
+      "publisher": "La Boîte de Jeu"
+    },
+    "fairUse": {
+      "rightsHolder": "La Boîte de Jeu",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher English rulebook at https://www.laboitedejeu.fr/wp-content/uploads/2022/05/SUPP-EN-Rules.pdf; rendered first page is the illustrated rulebook cover matching this edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

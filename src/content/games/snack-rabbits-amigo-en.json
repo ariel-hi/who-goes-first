@@ -3,10 +3,10 @@
   "slug": "snack-rabbits-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e4c13fb8ccdb1757bace82555dd4984be1ff8d79d14219e115bd09b955c61f9e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "4f7e0df12c0ec2ea4cdd419803836ac2e6461245098b4c12dc43f6e99c92b3aa",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Snack Rabbits",
   "aliases": [],
   "editionLabel": "English AMIGO rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/snack-rabbits-amigo-en-cover.jpg",
+    "alt": "Snack Rabbits game package cover",
+    "width": 450,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/2405/full/02405-schachtel-20082025.jpg",
+      "publisher": "AMIGO Spiel + Freizeit"
+    },
+    "fairUse": {
+      "rightsHolder": "AMIGO Spiel + Freizeit",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://www.amigo-spiele.de/familienspiele/snack-rabbits_2405_1231. Exact publisher-hosted package image: https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/2405/full/02405-schachtel-20082025.jpg. The package and game identity were visually reviewed against the article edition (English AMIGO rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "trambahn-lookout-mayfair-2015-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "1fa45597b83c284b6c1924b232cc48dd2447129221b4dd1ce1ed65a3a9eb0d3b",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5f57b06181b54b339fea7b0a4f2cc5e052df2cd360ed9f99af94eab88e16d727",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trambahn",
   "aliases": [],
   "editionLabel": "Lookout / Mayfair Games English rules, 2015",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered PDF page 1/printed page 3 gives the tram criterion, unequal initial money and scoring-pad duty. PDF page 2 credits Mayfair Games and Lookout ©2015; station and tramway cards match inventory BGG 175293. SHA-256: 8b0e05a534d2f210b279c7b533ce61c5e1a6739a2d1725caf516da8127b647c3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trambahn-lookout-mayfair-2015-en-cover.jpg",
+    "alt": "Trambahn game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.lookout-spiele.de/upload/en_trambahn.html_CoverImage.jpg",
+      "publisher": "Lookout Games / Mayfair Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games / Mayfair Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://www.lookout-spiele.de/en/games/trambahn.html. Exact publisher-hosted package image: https://www.lookout-spiele.de/upload/en_trambahn.html_CoverImage.jpg. The package and game identity were visually reviewed against the article edition (Lookout / Mayfair Games English rules, 2015).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

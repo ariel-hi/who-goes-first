@@ -3,10 +3,10 @@
   "slug": "saboteur-amigo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "1d67eca47db041beb6812fdf2296662a123745520204da7aea2e6bf28ca7579d",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "7d2d50f7c0a6fd19f90fbf13079fdf6de916a240c79a4068bd3d3e6eb1b73c2c",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Saboteur",
   "aliases": [],
   "editionLabel": "AMIGO English base game",
@@ -34,5 +34,22 @@
   "internalEvidence": "Publisher-hosted English rules, copyright 2004, 2012, 2025. Opening instruction: 'The youngest player goes first.' The second sheet supplies a separate later-round starter. Source custody: research/source-files/popular-sep26/saboteur.pdf; SHA-256 fdb825d5b130af36bf930deb755837798636654f1b0956ca5cacbb3e4989756a. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: eligible standalone criterion.",
   "uncertainty": [
     "The youngest-player instruction supplies no age-tie procedure. This review does not cover Saboteur 2 or anniversary variants."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/saboteur-amigo-en-cover.jpg",
+    "alt": "Saboteur game package cover",
+    "width": 447,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/4900/full/04900-schachtel-20082025.jpg",
+      "publisher": "AMIGO Spiel + Freizeit"
+    },
+    "fairUse": {
+      "rightsHolder": "AMIGO Spiel + Freizeit",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://www.amigo-spiele.de/saboteur_4900. Exact publisher-hosted package image: https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/4900/full/04900-schachtel-20082025.jpg. The package and game identity were visually reviewed against the article edition (AMIGO English base game).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
