@@ -20,7 +20,7 @@ const sourceIsPdf = isPdfSource(firstSource.url, firstSource.pdfPagesOneBased);
 const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
 const houseFallbackUsesRandomChoice = /\brandom(?:ly)?\b/i.test(rule.houseFallback ?? '');
 const coverImage = rule.image?.presentation === 'cover' ? rule.image : undefined;
-const insetCoverImage = coverImage && coverImage.width / coverImage.height <= 1.45 ? coverImage : undefined;
+const insetCoverImage = coverImage && (coverImage.width / coverImage.height <= 1.45 || coverImage.width < 320) ? coverImage : undefined;
 const photoImages = [...(rule.image && !insetCoverImage ? [rule.image] : []), ...(rule.additionalImages ?? [])];
 const creditedImages = [...(rule.image ? [rule.image] : []), ...(rule.additionalImages ?? [])];
 ---
