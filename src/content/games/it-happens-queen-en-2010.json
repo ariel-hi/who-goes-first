@@ -3,10 +3,10 @@
   "slug": "it-happens-queen-en-2010",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "925719daff8e78fc951402b1ce18bb59524e839a9b7ae0907a8c7a829fee154f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d91e7c4e6813145d82ecfeace5a2ab4290ba93adaa82d0953b2e53294698632d",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "It Happens",
   "aliases": [
     "It Happens.."
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF/printed page 2 for the hungriest-player start and page 3 for clockwise turn order and later-round rotation. The publisher-authored English booklet is mirrored by 1jour-1jeu and credits Queen Games with a 2010 copyright on page 4. Matches inventory BGG 66193, whose title includes two trailing periods. SHA-256: 9ca5300ea87cd3048cc900ccc9127c543adaf02eeeab4f7e1c6147f81f588940. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, start selection, and relevant later-round instruction against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/it-happens-queen-en-2010-cover.jpg",
+    "alt": "It Happens.. Queen Games multilingual English box",
+    "width": 500,
+    "height": 456,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.bekantalles.nl/product/5353444/queen-games-it-happens",
+      "publisher": "Bekant Alles retailer, Queen Games box artwork"
+    },
+    "fairUse": {
+      "rightsHolder": "Queen Games and original cover artists (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Bekant Alles product image https://primary.jwwb.nl/public/y/q/y/temp-qbdodvukhysazifzfirj/wvaa1h/Queengamesithappens.jpg shows the 2010 Queen Games box with Stefan Feld credit and a visible English flag among its six included languages, matching the approved English rule edition. The 2010 multi-language product is independently shown at https://www.usedgames.ca/it-happens.html.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

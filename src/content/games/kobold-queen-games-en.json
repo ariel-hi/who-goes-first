@@ -3,10 +3,10 @@
   "slug": "kobold-queen-games-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a87d89285c4391588e0dbe646ff10de44fd7538046a8f29dc8a906760a4d65e1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "dc78d8d7835a59cd7461218fda4de720da486aa0e6a5983b223099195d05e401",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kobold",
   "aliases": [],
   "editionLabel": "Queen Games English rules, copyright 2018",
@@ -35,5 +35,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://rules.queen-games.com/. Finding: Whoever most recently saw a kobold goes first. Local source SHA-256: 781ea720640d83f77d681fa31bf1e5f46f3b6a49e128592ee629877a6706acbf. Editorial review 2026-09-23: Rechecked the cited starting instruction, official fallback and opening-turn context against the publisher PDF. Owner authorized assistant review on 2026-09-22.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kobold-queen-games-en-cover.jpg",
+    "alt": "Kobold 2018 Queen Games box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://magicmadhouse.co.uk/queen-games-kobold",
+      "publisher": "Magic Madhouse retailer, Queen Games box artwork"
+    },
+    "fairUse": {
+      "rightsHolder": "Queen Games and original cover artists (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Magic Madhouse product image https://cdn11.bigcommerce.com/s-b4ioc4fed9/images/stencil/1280x1280/products/40080/3823439/lL8wv6QOayZA1exuJBcTYRM6p__35886.1782151228.jpg?c=1 shows the Kobold box with Queen Games logo and designers Marco Ruskowski and Marcel Süßelbeck, matching the approved 2018 Queen Games English rules at https://rules.queen-games.com/kobold_en.pdf.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
