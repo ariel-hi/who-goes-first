@@ -3,10 +3,10 @@
   "slug": "scout-one-more-game-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "5db7df90422b5611bcf1c2b81984acbf91a97e18956ff35e31b9fd2698a8c2bc",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "91a9312e16e1f91297efcb236e1448330df8050a98c52fd3b9516dab2c1f5497",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "SCOUT",
   "aliases": [],
   "editionLabel": "One More Game English original edition",
@@ -35,5 +35,22 @@
   "internalEvidence": "Publisher-hosted original English rules credit Kei Kajino and One More Game. Game Setup permits any starting-player method; the reverse gives clockwise round rotation. Source custody: research/source-files/popular-sep26-02/scout.pdf; SHA-256 f8e866181f729ed7c4b801d8b4e50cbf8459358f00a0b50ab5cb934d54387e4d. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The reviewed rules are the original One More Game edition, not the later Oink Games edition."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/scout-one-more-game-en-cover.jpg",
+    "alt": "SCOUT original One More Game package, front and back with English rulebook included",
+    "width": 560,
+    "height": 447,
+    "presentation": "cover",
+    "source": {
+      "url": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit%2Cfl_lossy%2Ch_9000%2Cw_1200%2Cf_auto%2Cq_auto/51414/635808_406415.jpeg",
+      "publisher": "One More Game!"
+    },
+    "fairUse": {
+      "rightsHolder": "One More Game! / cover artist",
+      "rationale": "Reduced-size official original-edition package art identifies the specific game discussed in this independent rules article. It is contextual to the game, links to the publisher product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Original One More Game! publisher site: https://onemoregame.mystrikingly.com/; exact publisher-hosted package image: https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit%2Cfl_lossy%2Ch_9000%2Cw_1200%2Cf_auto%2Cq_auto/51414/635808_406415.jpeg. The package back explicitly says English Rulebook Included, and the site links the English rules cited by this article. Visually reviewed against the original One More Game edition, rather than the later Oink Games reissue.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
