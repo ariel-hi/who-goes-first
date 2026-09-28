@@ -3,10 +3,10 @@
   "slug": "songbirds-homosapiens-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d7191ceaa07cf26e9fe786fff730b0f502a06df9ff7f1720a860455a0244a790",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "3ac5eff5b3ab05e4ebff65ce827e6aa214939a033ad42de9ff36878125d613dd",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Songbirds",
   "aliases": [],
   "editionLabel": "Homosapiens Lab / Jolly Thinkers English rules",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 1 gives the last-winner criterion for the base game; page 2 gives the separate egg-dish cooperative criterion and names Homosapiens Lab as publisher. Songbird cards and Berry tokens match inventory BGG 212765. SHA-256: 74d8922985cf6b79c04a69b265c83b040b9e4b548ac09d77b45a5e2d4ed35323. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for players whose last win was the same game."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/songbirds-homosapiens-en-cover.jpg",
+    "alt": "Songbirds Jolly Thinkers game box cover with English subtitle",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://img.shoplineapp.com/media/image_clips/5e9d5c1e2e7f99003639436a/original.jpg?1587371037",
+      "publisher": "Jolly Thinkers"
+    },
+    "fairUse": {
+      "rightsHolder": "Homosapiens Lab / Jolly Thinkers",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Jolly Thinkers product page: https://www.jollythinkers.com/en/products/songbirds-%E5%9C%93%E5%95%BE%E6%9C%83%E8%AD%B0. Exact distributor-hosted box image: https://img.shoplineapp.com/media/image_clips/5e9d5c1e2e7f99003639436a/original.jpg?1587371037. The package shows the English Songbirds subtitle and matches the Jolly Thinkers/Homosapiens Lab article edition (Homosapiens Lab / Jolly Thinkers English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
