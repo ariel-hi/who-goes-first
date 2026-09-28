@@ -3,10 +3,10 @@
   "slug": "fleet-commander-genesis-capsicum-2016-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9cccbfc78f98abc9c3a4be1c9599cc8014990ec154c622be5f1f4bb61095c250",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2a9ee3bc142ee70e8dc069a7674875ce6cb4c83df83acdf4b594f69569d942b3",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fleet Commander: Genesis",
   "aliases": [],
   "editionLabel": "Capsicum Games English rules, 2016, two-player Pitched Battle",
@@ -36,5 +36,22 @@
   "internalEvidence": "Rendered PDF/printed page 5 gives the gravitational-wave criterion and more-special-results dice fallback after assigning nine dice to each player. Page 32 credits Capsicum Games ©2016. Ship miniatures, Energy Dice and Combat Zone tiles match inventory BGG 192663. SHA-256: 260fe757cb508bd1263ecfae8cbddd6c6004aba88783874381fd51e36f08b30b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The manual gives no second tie procedure if both players roll the same number of special results."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fleet-commander-genesis-capsicum-2016-en-cover.jpg",
+    "alt": "Fleet Commander Genesis 2016 Capsicum Games box",
+    "width": 500,
+    "height": 407,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147746564/Fleet-Commander---Genesis",
+      "publisher": "Noble Knight Games product image of the listed publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Capsicum Games and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/f/jpg1500/fleetcommandergenesis.jpg; its listing identifies the named publisher, year, and 2016 boxed base game. The pictured publisher marks and title correspond to this record, with distinct reissues or expansions excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

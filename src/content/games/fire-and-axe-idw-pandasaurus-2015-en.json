@@ -3,10 +3,10 @@
   "slug": "fire-and-axe-idw-pandasaurus-2015-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ce3ae0f471cde3c52f51442b9bb9c0c8b26f288ea5661d3888437b8ee1900469",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "553b0f7788ab9525ca0cacbd7090916a1572106b28856ef7c0e984e237203588",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fire & Axe: A Viking Saga",
   "aliases": [],
   "editionLabel": "IDW Games / Pandasaurus Games English edition, 2015",
@@ -35,5 +35,22 @@
   "internalEvidence": "The image-based ©2015 IDW Games / Pandasaurus English manual was rendered and visually checked. Its setup step 6 permits any selection method, lists four examples, and assigns increasing bonus points clockwise. The cover credits Ragnar Brothers, IDW Games, and Pandasaurus, matching inventory BGG 12495. SHA-256: 96409b2eecd585036df4222e8ab1fd88c0e0049ba84b53dede3b4f8967e0c4cd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the rendered pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The suggested methods are examples, not required criteria; the group may choose another method."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fire-and-axe-idw-pandasaurus-2015-en-cover.jpg",
+    "alt": "Fire & Axe 2015 IDW and Pandasaurus Games box",
+    "width": 338,
+    "height": 410,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147600608/Fire-and-Axe---A-Viking-Saga-3rd-Edition",
+      "publisher": "Noble Knight Games product image of the listed publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "IDW Games, Pandasaurus Games, and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/i/jpg500/idw00850.jpg; its listing identifies the named publisher, year, and IDW00850. The pictured publisher marks and title correspond to this record, with distinct reissues or expansions excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

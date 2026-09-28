@@ -3,10 +3,10 @@
   "slug": "loot-n-run-iello-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f456ff7c163cc79824f0100c7d78e523e02030b736a20d30b447184931f7cfc6",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0ac137bdf22302fc94f509bbb2362ef3a31e80fa4be8a49204ab301a23bbdc6a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Loot N Run",
   "aliases": [],
   "editionLabel": "IELLO English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 1, printed rules panel 2, gives the B-movie-mummy criterion and clockwise play. The sheet bears IELLO branding; room cards, guardian effects and scoring tokens match inventory BGG 185374. SHA-256: 302d9be506629dc823f250c7eb2c6b9cf6860e36c81ea6e2b9f88380146db756. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who saw the same mummy film."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/loot-n-run-iello-en-cover.jpg",
+    "alt": "Loot N Run IELLO 2016 box",
+    "width": 405,
+    "height": 465,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147619183/Loot-n-Run",
+      "publisher": "Noble Knight Games product image of the identified publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/i/jpg1500/iel0048-1.jpg; the listing and pictured artwork correspond to 2016 IELLO box IEL00048. Distinct reissues and expansions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

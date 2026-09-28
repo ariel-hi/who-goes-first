@@ -3,10 +3,10 @@
   "slug": "jurassic-parts-25th-century-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7a6978787bee5d8ddec1a301846e362d4ddfa5d3b97ad5f7c235d1596fd3a611",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b6cf062b91117f5078191f4d0d8d530d88a75d1c8b578d477790ca920b6ba772",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Jurassic Parts",
   "aliases": [],
   "editionLabel": "25th Century Games English rulebook",
@@ -35,5 +35,22 @@
   "internalEvidence": "The 25th Century Games English rulebook linked by retailer Gamer’s HQ was inspected. PDF page 4 was rendered and read. The title, fossil slab components and publisher attribution match inventory BGG 259857. SHA-256: e6b2d6c9514ef6123c40c79c6a1ae727ae070e645c70cb2f6755355f13928db9. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for people who saw a dinosaur fossil together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/jurassic-parts-25th-century-en-cover.jpg",
+    "alt": "Jurassic Parts 25th Century Games box",
+    "width": 292,
+    "height": 407,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147839977/Jurassic-Parts",
+      "publisher": "Noble Knight Games product image of the listed publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "25th Century Games and Andrew Bosley",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/2/jpg500/25cgg10a.jpg; its listing identifies the named publisher, year, and 25CGG10. The pictured publisher marks and title correspond to this record, with distinct reissues or expansions excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

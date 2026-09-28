@@ -3,10 +3,10 @@
   "slug": "inuit-snow-folk-board-dice-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e38e80cf9f8dbbe21067cdde0e4414ed7d2418a780f901f23c2be2f450848909",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "de468d1b0ed8778a6e4d0d11a8925cea7d6f9eb4c75f85ecc3ebba7b96e74f5e",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Inuit: The Snow Folk",
   "aliases": [],
   "editionLabel": "Board & Dice English base game, 2019",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered the publisher-authored Board & Dice English booklet page 4 from the archive. Setup step 5 gives the cold-weather criterion and any-method alternative. An independent host’s copy is byte-identical, and the booklet credits ©2019 Board & Dice, matching inventory BGG 261009. SHA-256: 3c5a7af5a37104e5824ff28c43b76362009a013b204166712669239fc3bf0091. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
   "uncertainty": [
     "The cold-weather preference is subjective; no tie procedure is specified."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/inuit-snow-folk-board-dice-2019-en-cover.jpg",
+    "alt": "Inuit: The Snow Folk 2019 Board & Dice cover",
+    "width": 435,
+    "height": 465,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147753408/Inuit---The-Snow-Folk",
+      "publisher": "Noble Knight Games product image of the identified publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Board & Dice and cover artists (precise ownership not stated)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/b/jpg500/bndnsk026.jpg; the listing and pictured artwork correspond to 2019 Board & Dice boxed game BNDNSK026. Distinct reissues and expansions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "le-havre-lookout-2008-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "c837154c857bbf7f7c65d01c51d43cefe366e41cfcd70a55d8041c2f2b0a38b5",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f0c6922b143553695878cfcbbe6477846dced671f18ff43ac2b83e0904c35e45",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Le Havre",
   "aliases": [],
   "editionLabel": "Lookout Games original English rulebook, 2008",
@@ -36,5 +36,22 @@
   "internalEvidence": "Lookout Games lists the 2008 English rules on its Le Havre product page. A complete original Lookout booklet preserved by a rulebook archive was inspected at rendered PDF page 4. The game title, Uwe Rosenberg design and starting-player tile match inventory BGG 35677. SHA-256: a3498d20cd8c9b073bb7b5c8ac34194f22d61a57b583c0ac5aa97974ef1bc59a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules give no tie procedure for equally close homes."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/le-havre-lookout-2008-en-cover.jpg",
+    "alt": "Le Havre original Lookout Games box",
+    "width": 362,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147395095/Le-Havre-1st-Edition",
+      "publisher": "Noble Knight Games product image of the identified publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/l/jpg1500/log29.jpg; the listing and pictured artwork correspond to Lookout Games first edition LOG29, 2009 English printing of the original game. Distinct reissues and expansions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

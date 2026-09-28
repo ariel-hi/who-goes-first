@@ -3,10 +3,10 @@
   "slug": "horse-fever-cranio-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "29f386911250d27ec5244aeb9acebd3b2a4d19ca5113b35fc861000dc47b4be3",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "07eed292da7ad3100038e9d06fad73dfd98fabed74b4001f05f0fb80a5d20193",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Horse Fever",
   "aliases": [],
   "editionLabel": "Cranio Creations English rulebook, Family and Board Game modes",
@@ -40,5 +40,22 @@
   "internalEvidence": "Visually checked PDF/printed page 2 for the Sprint Die procedure, the six-color starting table, clockwise play and later-round card passing. Read page 6 for the Board Game's reuse of Family Game setup. The publisher-authored English manual is mirrored by Tesera; its first and credits pages identify Cranio Creations. Matches inventory BGG 58110. SHA-256: e7b607a5d326814d175e01aaaa0257c9aca91766fbe3a0c8ee4299812b477f14. Owner authorized assistant review on 2026-09-22. Excluded from the portable random mix because it requires the game's Sprint Die and box logo. Editorial review 2026-09-24: Rechecked the game identity, edition, start selection, and relevant later-round instruction against the cited pages.",
   "uncertainty": [
     "The English table says 'the player who miss more diopters' for green and 'the smallest player' for black; these are reproduced conservatively without inventing a measurement method."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/horse-fever-cranio-en-cover.jpg",
+    "alt": "Horse Fever 2011 Cranio Creations second-edition box",
+    "width": 500,
+    "height": 359,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147459133/Horse-Fever-2nd-Edition",
+      "publisher": "Noble Knight Games product image of the identified publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Cranio Creations and cover artist Giulia Ghigini",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/i/jpg1500/iprhorsefever.jpg; the listing and box correspond to 2011 second edition with rewritten rulebook. The box title and publisher mark were visually checked against this record; other editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

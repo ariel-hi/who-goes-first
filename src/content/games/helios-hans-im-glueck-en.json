@@ -3,10 +3,10 @@
   "slug": "helios-hans-im-glueck-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "12d05bb0184403bb54ae06cf24c99f24bc7000439a53577d82f1d33b4ab1707e",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7ed38ce90869fe0d2e890093f85954675e2750db5eeed6a9ef66f1b1283be298",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Helios",
   "aliases": [],
   "editionLabel": "Hans im Glück English rulebook (2014)",
@@ -36,5 +36,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF/printed page 3 for the most-continents criterion and starting player dragon. Checked printed page 4 for clockwise play. Publisher credit and 2014 copyright appear on page 16 of this publisher-authored English rulebook mirrored by 1jour-1jeu. Matches inventory BGG 154182. SHA-256: 14c1c73786121612601a3a6b87a27fb3bfc9cf618a821b2c53956f67263647cf. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, and starting rule against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/helios-hans-im-glueck-en-cover.jpg",
+    "alt": "Helios 2014 Hans im Gl�ck box",
+    "width": 369,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147993025/Helios-German-Edition",
+      "publisher": "Noble Knight Games product image of the identified publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Hans im Gl�ck and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/2/jpg1500/22210440020h.jpg; the listing and box correspond to 2014 Hans im Gl�ck box with English rules supported. The box title and publisher mark were visually checked against this record; other editions were excluded.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
