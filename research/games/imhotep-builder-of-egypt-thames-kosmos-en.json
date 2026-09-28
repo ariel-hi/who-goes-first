@@ -1,0 +1,43 @@
+{
+  "id": "imhotep-builder-of-egypt-thames-kosmos-en",
+  "slug": "imhotep-builder-of-egypt-thames-kosmos-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Imhotep: Builder of Egypt",
+  "aliases": [],
+  "editionLabel": "Thames & Kosmos English base game, item 692384 (2016)",
+  "firstPlayerRule": "Players decide who will start. That player takes 2 stones; the next player to the left takes 3, the third 4, and the fourth 5, when those players are present.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "The printed rules do not specify a method for deciding who starts.",
+    "This is the initial setup rule. Later rounds can change the starting player based on who sailed the fourth ship in the previous round."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/692384_imhotep_manual.pdf",
+      "title": "Imhotep: Builder of Egypt — English base-game manual",
+      "publisher": "Thames & Kosmos",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Game Preparation, last bullet",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Thames & Kosmos official manual archive identifies Imhotep: Builder of Egypt item 692384 and links this complete English base manual. Publisher-controlled PDF: 11,563,730 bytes, 12 pages, SHA-256 7779e04be1dcd59327217d3c19b0a47a5373fcde047e441d1a7b5053000b6792. Root visually inspected printed/PDF page 3: players decide who starts and receive 2/3/4/5 stones to the left. Exact active BGG 191862, Wikidata Q28547200. Sealed source packet: artifacts/pending-rules-followup-sep28j/REVIEW.md; SHA256SUMS.txt SHA-256 0eeea0697f801e8f52d5638016a9bda12d964a041efc38e30d460cfa612b2517.",
+  "uncertainty": [
+    "The publisher leaves the initial choice method to the group; random selection is not an official instruction.",
+    "The rule is limited to the initial setup in this base-game manual."
+  ]
+}

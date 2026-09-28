@@ -1095,6 +1095,154 @@
       "reviewedBy": "Codex /root, under the owner’s standing improvement and publisher identity review authorization",
       "reviewedAt": "2026-09-27",
       "acceptedRevision": "a0b22fc542eaabcecd7a4e355a320c742452b71268a7e9f2de64ffdfcdf19bfa"
+    },
+    {
+      "identityId": "game-4dc26efb-aff4-4ae0-a8b4-a00fe2dcc1dd",
+      "routeKey": "game-4dc26efb-aff4-4ae0-a8b4-a00fe2dcc1dd",
+      "name": "Dinosaur Challenge",
+      "searchNames": [],
+      "publisher": "SimplyFun",
+      "identityScope": "SimplyFun physical card games product, SKU SF138, GTIN 810122250067, as identified by the current publisher page. No BGG correspondence, first release year, prior edition, or reprint equivalence is claimed.",
+      "identityEvidence": "Original publisher H1 and Product JSON-LD bind Dinosaur Challenge to SimplyFun LLC, SKU SF138, GTIN 810122250067; components and rulebook link show a physical game. Wikidata item Q141250087 revision 2539191758 has matching English label, board-game class and SimplyFun publisher statements, without P2339. The Wikidata class is discovery evidence; the publisher page controls product scope.",
+      "publisherReferenceSourceId": "simplyfun-dinosaur-challenge-product",
+      "sources": [
+        {
+          "id": "simplyfun-dinosaur-challenge-product",
+          "kind": "primary-publisher",
+          "url": "https://simplyfun.com/products/dinosaur-challenge",
+          "sha256": "bf5e5cf797ec33dd6304a8a4a47ff92572c0001e0b8375ed54369daa84e3f77f",
+          "byteCount": 870923,
+          "location": "Canonical product page; H1; Product JSON-LD name, SimplyFun LLC brand, SKU SF138, GTIN 810122250067; Game Includes and rulebook link. Raw body dinosaur-challenge-product.html."
+        },
+        {
+          "id": "wikidata-q141250087-revision",
+          "kind": "identifier-reference",
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q141250087.json?revision=2539191758",
+          "sha256": "c3f8c388b42a82d312185919d09ddfa1b971b0aa162863246f6efbbe67beddca",
+          "byteCount": 2370,
+          "location": "entities.Q141250087: lastrevid 2539191758; labels.en; claims.P31 statement Q141250087$1e4baf5e-4089-cda0-891b-21b245a5becd = Q131436; claims.P123 statement Q141250087$32c09138-4b61-78e6-6659-e24b6d5fe437 = Q141178488; claims.P2339 absent. Raw body wikidata-Q141250087-revision-2539191758.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root/catalog_architecture",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "6ff8c70399c591cfece054e1fb564b7bea9e0961879c33440467720aa7ca0df9"
+    },
+    {
+      "identityId": "game-0986ac7a-25f8-4f7a-953a-0c30f8f1f3cc",
+      "routeKey": "game-0986ac7a-25f8-4f7a-953a-0c30f8f1f3cc",
+      "name": "Eye to Eye",
+      "searchNames": [],
+      "publisher": "SimplyFun",
+      "identityScope": "SimplyFun physical Eye to Eye base card game, SKU SF001, GTIN 810122250074. Excludes the separately sold More Eye to Eye expansion (SF048) and combined set (GS079). No BGG correspondence, original 2004 edition, or reprint equivalence is claimed.",
+      "identityEvidence": "Original publisher H1 and Product JSON-LD bind Eye to Eye to SimplyFun LLC, SKU SF001, GTIN 810122250074; components and rulebook link show a physical game. Wikidata item Q141244097 revision 2538762602 has matching English label, board-game class and SimplyFun publisher statements, without P2339. The Wikidata class is discovery evidence; the publisher page controls product scope.",
+      "publisherReferenceSourceId": "simplyfun-eye-to-eye-product",
+      "sources": [
+        {
+          "id": "simplyfun-eye-to-eye-product",
+          "kind": "primary-publisher",
+          "url": "https://simplyfun.com/products/eye-to-eye",
+          "sha256": "8efbdf6b4895d309b12ef55ba74b60ecc3a990aa464b11438ec20fe59462173f",
+          "byteCount": 824578,
+          "location": "Canonical product page; H1; Product JSON-LD name, SimplyFun LLC brand, SKU SF001, GTIN 810122250074; Game Includes and rulebook link. Raw body eye-to-eye-product.html."
+        },
+        {
+          "id": "wikidata-q141244097-revision",
+          "kind": "identifier-reference",
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q141244097.json?revision=2538762602",
+          "sha256": "576549da27bcb86489476fa35183ad94327556dcc14cca4ce2f8c4fc72508982",
+          "byteCount": 2358,
+          "location": "entities.Q141244097: lastrevid 2538762602; labels.en; claims.P31 statement Q141244097$42b44ff4-4e60-3f02-cd24-bff578e3b4a6 = Q131436; claims.P123 statement Q141244097$288df2de-4e37-af30-7aa8-61adef107d87 = Q141178488; claims.P2339 absent. Raw body wikidata-Q141244097-revision-2538762602.json."
+        },
+        {
+          "id": "simplyfun-eye-to-eye-expansion",
+          "kind": "primary-publisher",
+          "url": "https://simplyfun.com/products/eye-to-eye-expansion-more-eye-to-eye",
+          "sha256": "3d40effc75c6b0fd56970b6138a3a9b790ef529ea63296d432b6441128a0affe",
+          "byteCount": 754697,
+          "location": "H1 and Product JSON-LD distinguish distinct expansion SF048 from base SF001. Raw body eye-to-eye-expansion.html."
+        },
+        {
+          "id": "simplyfun-eye-to-eye-bundle",
+          "kind": "primary-publisher",
+          "url": "https://simplyfun.com/products/eye-to-eye-and-more-eye-to-eye-set",
+          "sha256": "1e02e6f222f7afc0ecf8c4091fac152c1393f90ee174e4a280afb42a9db21888",
+          "byteCount": 765203,
+          "location": "H1 and Product JSON-LD distinguish distinct bundle GS079 from base SF001. Raw body eye-to-eye-bundle.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root/catalog_architecture",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "c524d07862a745633a414c463e593efc0e23eb4de712a3fe2a3dd9e3e38b5ce7"
+    },
+    {
+      "identityId": "game-c524621f-dcc6-4648-9fac-1cf17bce3177",
+      "routeKey": "game-c524621f-dcc6-4648-9fac-1cf17bce3177",
+      "name": "SlideAscope",
+      "searchNames": [],
+      "publisher": "SimplyFun",
+      "identityScope": "SimplyFun physical tile games product, SKU SF210, GTIN 00810122251484, as identified by the current publisher page. No BGG correspondence, first release year, prior edition, or reprint equivalence is claimed.",
+      "identityEvidence": "Original publisher H1 and Product JSON-LD bind SlideAscope to SimplyFun LLC, SKU SF210, GTIN 00810122251484; components and rulebook link show a physical game. Wikidata item Q141250166 revision 2539198168 has matching English label, board-game class and SimplyFun publisher statements, without P2339. The Wikidata class is discovery evidence; the publisher page controls product scope.",
+      "publisherReferenceSourceId": "simplyfun-slideascope-product",
+      "sources": [
+        {
+          "id": "simplyfun-slideascope-product",
+          "kind": "primary-publisher",
+          "url": "https://simplyfun.com/products/slideascope",
+          "sha256": "c73b74aa9c075f58ec24f4eb54b1ca600ae4bd72455874a62d5e43e138d647c8",
+          "byteCount": 924908,
+          "location": "Canonical product page; H1; Product JSON-LD name, SimplyFun LLC brand, SKU SF210, GTIN 00810122251484; Game Includes and rulebook link. Raw body slideascope-product.html."
+        },
+        {
+          "id": "wikidata-q141250166-revision",
+          "kind": "identifier-reference",
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q141250166.json?revision=2539198168",
+          "sha256": "d087082e34d7511f5aa5cce096132555a9b8bfc41f95117d657a33300baa16af",
+          "byteCount": 2356,
+          "location": "entities.Q141250166: lastrevid 2539198168; labels.en; claims.P31 statement Q141250166$bdffe2d8-428f-cf4c-7954-3315e959aeb4 = Q131436; claims.P123 statement Q141250166$0e430543-47aa-d73c-857d-2ea89f3a83c0 = Q141178488; claims.P2339 absent. Raw body wikidata-Q141250166-revision-2539198168.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root/catalog_architecture",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "d86571af7452e0f500c6942b66f5553212b2af7486ffa98ec8bbc721c6fce0d4"
+    },
+    {
+      "identityId": "game-56e1ca46-3953-41cf-a1c0-1ba4c6ffaa54",
+      "routeKey": "game-56e1ca46-3953-41cf-a1c0-1ba4c6ffaa54",
+      "name": "Wake Up Stars",
+      "searchNames": [],
+      "publisher": "SimplyFun",
+      "identityScope": "SimplyFun physical board games product, SKU SF176, GTIN 810122250234, as identified by the current publisher page. No BGG correspondence, first release year, prior edition, or reprint equivalence is claimed.",
+      "identityEvidence": "Original publisher H1 and Product JSON-LD bind Wake Up Stars to SimplyFun LLC, SKU SF176, GTIN 810122250234; components and rulebook link show a physical game. Wikidata item Q141196287 revision 2537211375 has matching English label, board-game class and SimplyFun publisher statements, without P2339. The Wikidata class is discovery evidence; the publisher page controls product scope.",
+      "publisherReferenceSourceId": "simplyfun-wake-up-stars-product",
+      "sources": [
+        {
+          "id": "simplyfun-wake-up-stars-product",
+          "kind": "primary-publisher",
+          "url": "https://simplyfun.com/products/wake-up-stars",
+          "sha256": "4368ff0099178b7978c052c1b04020a9667a57cec707628e693d28dbc4523040",
+          "byteCount": 876324,
+          "location": "Canonical product page; H1; Product JSON-LD name, SimplyFun LLC brand, SKU SF176, GTIN 810122250234; Game Includes and rulebook link. Raw body wake-up-stars-product.html."
+        },
+        {
+          "id": "wikidata-q141196287-revision",
+          "kind": "identifier-reference",
+          "url": "https://www.wikidata.org/wiki/Special:EntityData/Q141196287.json?revision=2537211375",
+          "sha256": "43820c236c3fef56615b0badcd9c7fe001ef1e1a041c4a7633a5038634c6fe79",
+          "byteCount": 2349,
+          "location": "entities.Q141196287: lastrevid 2537211375; labels.en; claims.P31 statement Q141196287$dff5c8f8-4c84-cbf5-8829-e833f82a131d = Q131436; claims.P123 statement Q141196287$2f0facdc-4113-e4f6-3e28-598a4baecb2a = Q141178488; claims.P2339 absent. Raw body wikidata-Q141196287-revision-2537211375.json."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root/catalog_architecture",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "24002e7790e940030e1adcd884777924b04f5e3b28a03e1b8963b14426006333"
     }
   ]
 }

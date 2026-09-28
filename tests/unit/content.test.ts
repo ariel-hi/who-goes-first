@@ -12,6 +12,40 @@ import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/bo
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
 import { randomRuleEligible } from '../../src/lib/content/random-rules';
 
+test('new native and SimplyFun identities remain pending while two exact manuals supply rules', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
+  for (const [id, name] of [
+    ['3141', 'Alles im Eimer'], ['8273', 'Alexandros'], ['10709', 'Tjuv och polis'],
+    ['12237', 'Oljan'], ['20834', 'Husarengolf'], ['28905', 'Dostihy a sázky'],
+    ['42636', 'Gemischtes Doppel'],
+  ] as const) {
+    expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
+    expect(directory.find(game => game.id === id)).toMatchObject({ name, ruleCount: 0 });
+  }
+  const publisher = JSON.parse(readFileSync('research/coverage/publisher-identities.json', 'utf8'));
+  for (const [name, sku] of [['Dinosaur Challenge', 'SF138'], ['Eye to Eye', 'SF001'], ['SlideAscope', 'SF210'], ['Wake Up Stars', 'SF176']] as const) {
+    const identity = publisher.records.find((record: { name: string }) => record.name === name);
+    expect(identity).toMatchObject({ publisher: 'SimplyFun', decision: 'accept' });
+    expect(identity.identityScope).toContain(sku);
+    expect(directory.find(game => game.id === identity.routeKey)).toMatchObject({ name, ruleCount: 0 });
+  }
+  for (const [id, name, ruleId, url] of [
+    ['191862', 'Imhotep: Builder of Egypt', 'imhotep-builder-of-egypt-thames-kosmos-en', '692384_imhotep_manual.pdf'],
+    ['140620', 'Lewis & Clark: The Expedition', 'lewis-clark-expedition-ludonaute-first-edition-en', 'Lewis_%26_Clark_Rules_EN.pdf'],
+  ] as const) {
+    const game = games.find(item => item.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]?.sources[0]).toMatchObject({ pdfPagesOneBased: [3] });
+    expect(game?.rules[0]?.sources[0]?.url).toContain(url);
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(false);
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+  }
+  expect(games.find(game => game.bggId === '191862')?.rules[0]).toMatchObject({ pickerSuggestionApplicable: false });
+  expect(games.find(game => game.bggId === '140620')?.rules[0]?.firstPlayerRule).toContain('randomly');
+});
+
 test('exact original editions keep cooperative choice and component turn order out of random suggestions', async () => {
   const games = getBoardGames();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
@@ -417,7 +451,7 @@ test('qualified pending identities remain distinct without borrowing related rul
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(136);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(143);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -537,12 +571,18 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 136, hold: 152, reviewed: 175, unreviewed: 113, additionalAccepted: 125 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(136);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(152);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(175);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(113);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(39);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 143, hold: 145, reviewed: 187, unreviewed: 101, additionalAccepted: 132 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(143);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(145);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(187);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(101);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(44);
+  for (const id of ['3141', '8273', '10709', '12237', '20834', '28905', '42636']) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+  }
+  for (const id of ['43719', '328290', '373969', '373974', '373983']) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'hold', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+  }
   for (const id of ['27802', '83919', '91201', '373978', '373986']) {
     expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
   }

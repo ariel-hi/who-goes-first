@@ -1,0 +1,43 @@
+{
+  "id": "lewis-clark-expedition-ludonaute-first-edition-en",
+  "slug": "lewis-clark-expedition-ludonaute-first-edition-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
+  "approvedRevision": "4a33acb2777049e0554cde8103d931e0b4bd9acb538fe2b7fa6e15b5324918b1",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Lewis & Clark: The Expedition",
+  "aliases": [],
+  "editionLabel": "Ludonaute first edition (2013), English rules",
+  "firstPlayerRule": "Choose the starting player randomly. That player takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": true,
+  "clarifications": [
+    "The rulebook does not prescribe a particular random selection method.",
+    "This answer cites the first-edition rules; Ludonaute lists a separate second-edition rulebook."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.data.ludonaute.fr/Lewis_%26_Clark/RULES/Lewis_%26_Clark_Rules_EN.pdf",
+      "title": "Lewis & Clark: The Expedition — first-edition English rules",
+      "publisher": "Ludonaute",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup, step 11",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Ludonaute official downloads page explicitly separates the first-edition (2013) and second-edition (2020) rules. Its English first-edition PDF is 18,581,619 bytes, 16 pages, SHA-256 03d15a061a4eb96d71940707bb9cc56b4733d20b258f0356e8d7f7e1b25a60dd. Root visually inspected printed/PDF page 3, Setup step 11: random starting player and first turn. Exact active BGG 140620, Wikidata Q113366158. Sealed source packet: artifacts/pending-rules-followup-sep28j/REVIEW.md; SHA256SUMS.txt SHA-256 0eeea0697f801e8f52d5638016a9bda12d964a041efc38e30d460cfa612b2517. Random-only instruction remains outside the independently reviewed portable rule pool.",
+  "uncertainty": [
+    "The publisher does not prescribe a specific randomizer.",
+    "No second-edition starting rule is inferred from this first-edition source."
+  ]
+}

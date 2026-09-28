@@ -20,7 +20,7 @@ Sharing copies a clean link without your player list or pick. Analytics is optio
 
 ## Development and content coverage
 
-An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 5,035 discovered game identities; [public-site](https://whogoesfirst.fun/) releases advance independently of this local checkpoint. The full starting-rule compendium is still in progress: 1,044 identities have researched editions and 3,991 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 1,056 approved edition records, with 389 standalone criteria in the random mix and 60 house prompts. The initial public release had 762 rules and 339 random-mix criteria. See [the current registry and source checkpoint](VERIFICATION.md) for local verification and remaining release gates, [the content review process](CONTENT_REVIEW.md), and [the preceding AMIGO mode, article and scroll checkpoint](research/coverage/sep26-amigo-modes-article-scroll-progress.md) for earlier source limits.
+An Astro + strict TypeScript site, with one React picker island and static editorial pages. This checkout lists 5,163 documented game identities. The full starting-rule compendium is still in progress: 1,097 identities have researched editions and 4,066 await primary rule research. The owner has authorized Codex to review sources and approve exact content revisions; this checkout has 1,109 approved edition records, with 394 separately reviewed criteria in the random mix and 60 house prompts. See [the current source and coverage checkpoint](research/coverage/sep28-eleven-identities-two-rules-progress.md), [the content review process](CONTENT_REVIEW.md), and [the verification guide](VERIFICATION.md).
 
 ## Run
 
@@ -32,7 +32,7 @@ npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:4321/. Local Game rules navigation opens the searchable draft directory at `/dev/games/`; the 60 published original questions are at `/house-rules/` and `/dev/house-rules/`. Source evidence and revision hashes are at `/dev/review/`. `/dev/coverage/` tracks all 5,035 discovered game identities and explicitly distinguishes missing rules from researched editions. Method pages are `/methods/balloon/`, `/methods/spinner/`, `/methods/cards/`, `/methods/towers/`, `/methods/straws/`, `/methods/dice/`, `/methods/coin/`, and `/methods/shells/`.
+Open http://127.0.0.1:4321/. The searchable rule catalog is at `/games/`, and the full documented identity directory is at `/board-games/`. The 60 original questions are at `/house-rules/`. Source evidence and revision hashes are at `/dev/review/`. `/dev/coverage/` distinguishes missing rules from researched editions. Method pages are `/methods/balloon/`, `/methods/spinner/`, `/methods/cards/`, `/methods/towers/`, `/methods/straws/`, `/methods/dice/`, `/methods/coin/`, and `/methods/shells/`.
 
 Use Node 22.23.2 or a later Node 22 maintenance release. A project-local Node 22 dev dependency supplies the compatible runtime for npm scripts on this machine (the system runtime was 22.16.0). TypeScript 6 is pinned to the compatible major supported by the current Astro checker. npm and `package-lock.json` are authoritative.
 
