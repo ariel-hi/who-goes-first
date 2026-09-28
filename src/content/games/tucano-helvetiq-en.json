@@ -3,10 +3,10 @@
   "slug": "tucano-helvetiq-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5359b9cf9dd05b22b62000826d55be19fb350f5577123db361d35220facea900",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5cf69a0d7189bba036cd97ff794e14eeb6bfbfbab8089427bd07fe680e91035c",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tucano",
   "aliases": [],
   "editionLabel": "Helvetiq English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered the Helvetiq-branded English sheet from an archive. The Helvetiq product page links the same named English PDF and its indexed text corroborates the fruit criterion and clockwise order, but direct retrieval returned HTTP 503. SHA-256: 579d5be05d13fe52a0a0dd706e70ba4c099214e52d9bbbf9f2d8bf6534455115. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
   "uncertainty": [
     "The booklet gives no tie procedure for equally recent fruit eaters."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tucano-helvetiq-en-cover.jpg",
+    "alt": "Tucano game box cover",
+    "width": 406,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://helvetiq.com/media/catalog/product/t/u/tucano_mockup_1000x1000_1.png",
+      "publisher": "Helvetiq"
+    },
+    "fairUse": {
+      "rightsHolder": "Helvetiq SA",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Helvetiq publisher page for English Tucano; page links the official English rulebook; box was cropped from its publisher mockup: https://helvetiq.com/us/tucano. Exact publisher-hosted image: https://helvetiq.com/media/catalog/product/t/u/tucano_mockup_1000x1000_1.png. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

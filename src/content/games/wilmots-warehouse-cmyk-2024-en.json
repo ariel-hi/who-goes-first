@@ -3,10 +3,10 @@
   "slug": "wilmots-warehouse-cmyk-2024-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "91f07b71d4dc89f11744382a5f016644b162705c11ef22f7c103e6f5b0a1f47e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "e133a04f42c8fd7be4c2a29492d5ad9204829c9172108b7cb9a388b628bfdeed",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wilmot's Warehouse",
   "aliases": [],
   "editionLabel": "CMYK English employee handbook, 2024",
@@ -43,5 +43,22 @@
   "internalEvidence": "Downloaded and rendered the CMYK-branded employee handbook. Printed/PDF page 10 assigns Monday’s first Shift Supervisor to the most enthusiastic worker; page 12 explains their job and clockwise turns, while pages 13 and 16 distinguish role rotation from the simultaneous final customer rush. The publisher credits appear on page 18. SHA-256: d2a080b6c1d60ef5cbe03baf160b4360529212e63edf97fa23c95d4a0de55d29. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction and edition against the rulebook.",
   "uncertainty": [
     "“Most enthusiastic” is subjective. The criterion selects a rotating cooperative role and is excluded from the portable random mix."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wilmots-warehouse-cmyk-2024-en-cover.jpg",
+    "alt": "Wilmot's Warehouse game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cmyk.games/cdn/shop/files/Wilmot_sWarehouseboxshot_1024x1024.png?v=1721059154",
+      "publisher": "CMYK"
+    },
+    "fairUse": {
+      "rightsHolder": "CMYK",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher product page for Wilmot’s Warehouse base game, released in 2024: https://www.cmyk.games/products/wilmot. Exact publisher-hosted image: https://www.cmyk.games/cdn/shop/files/Wilmot_sWarehouseboxshot_1024x1024.png?v=1721059154. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

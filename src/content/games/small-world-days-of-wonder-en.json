@@ -3,10 +3,10 @@
   "slug": "small-world-days-of-wonder-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "295e31261ecc52b2c6c9d9ff7e32c4b77cba486d3ef69056026289b4be572a09",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "6715cfaa1f38faaf60d946b4628802ac77af0f0e39d1b5f2a6f2b11a22efd4cf",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Small World",
   "aliases": [],
   "editionLabel": "Days of Wonder English rules, copyright 2009–2018",
@@ -37,5 +37,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/small-world-days-of-wonder-en-cover.jpg",
+    "alt": "Small World game box cover",
+    "width": 535,
+    "height": 535,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/cdn/shop/files/DO7901-image0_2000_535x.jpg?v=1781534169",
+      "publisher": "Asmodee USA"
+    },
+    "fairUse": {
+      "rightsHolder": "Days of Wonder / Asmodee",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official U.S. distributor page, SKU DOW7901; cited Days of Wonder 2018 rules PDF is also product 7901: https://store.asmodee.com/products/small-world. Exact publisher-hosted image: https://store.asmodee.com/cdn/shop/files/DO7901-image0_2000_535x.jpg?v=1781534169. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

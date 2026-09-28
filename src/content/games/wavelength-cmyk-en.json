@@ -3,10 +3,10 @@
   "slug": "wavelength-cmyk-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4c2d13cdeaad7d5985703ee0f0c825dfa4b4ca1150c2bd106251b67198f7f567",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "57d24edb8dbc599e9a38bdeb13da41cc87b1ca74e93e9e0ca30224e34c61001a",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wavelength",
   "aliases": [],
   "editionLabel": "CMYK / Palm Court English rulebook",
@@ -34,5 +34,22 @@
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 9, 10, including the cited setup and turn-sequence text. Local source PDF SHA-256: f24b2d9f3ae1faba7a2b75984601578175dee1386fc018ef1f34889553d287cb. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
   "uncertainty": [
     "The rulebook does not mandate a method to choose the first team or its Psychic."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wavelength-cmyk-en-cover.jpg",
+    "alt": "Wavelength game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cmyk.games/cdn/shop/files/Hvass_Hannibal_007_PhotobyDavidStjernholm_1024x1024.jpg?v=1687451642",
+      "publisher": "CMYK"
+    },
+    "fairUse": {
+      "rightsHolder": "CMYK / Palm Court",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher product page for the Wavelength base game: https://www.cmyk.games/products/wavelength. Exact publisher-hosted image: https://www.cmyk.games/cdn/shop/files/Hvass_Hannibal_007_PhotobyDavidStjernholm_1024x1024.jpg?v=1687451642. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

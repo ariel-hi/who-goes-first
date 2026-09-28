@@ -3,10 +3,10 @@
   "slug": "sky-team-scorpion-masque-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "db546b52f91bbb402b802ea403a290888efed6e58ec336f6cb37f181546f41db",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5e3ab12e7ccadd49d04801ad1a5adae7d8078ebb3c47d80e3a57a7c216bc65f0",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sky Team",
   "aliases": [],
   "editionLabel": "Scorpion Masqué English base game",
@@ -39,5 +39,22 @@
   "internalEvidence": "The publisher's English Landing Procedure gives the blue Pilot the opening placement. The board's altitude arrow controls later rounds. Downloaded successfully from the publisher's non-www host after local DNS failed for www. Source custody: research/source-files/popular-sep26/sky-team.pdf; SHA-256 d5e46e0cb6a715cbed3f2fb16eb05e405c1de40e5e7f0f95d876c015ab8b24e5. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "Scoped to the introductory Montreal setup in Landing Procedure. Advanced modules and expansion scenarios are not reviewed here."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/sky-team-scorpion-masque-en-cover.jpg",
+    "alt": "Sky Team game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.scorpionmasque.com/cdn/shop/files/SkyTeamBox.jpg?v=1769116751&width=1000",
+      "publisher": "Scorpion Masqué"
+    },
+    "fairUse": {
+      "rightsHolder": "Le Scorpion Masqué",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher shop page offers the English base-game variant and links the English rulebook: https://shop.scorpionmasque.com/products/sky-team. Exact publisher-hosted image: https://shop.scorpionmasque.com/cdn/shop/files/SkyTeamBox.jpg?v=1769116751&width=1000. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
