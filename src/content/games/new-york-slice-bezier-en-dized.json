@@ -3,13 +3,30 @@
   "slug": "new-york-slice-bezier-en-dized",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5a0352275ef7ff92ff6731c8a78b1b3a88e4496c76ebce45c8e1cf844dd7436f",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "d7444b36c2bd8b3cd20facd87e32e33ee3603ac2e3f5bb7534bda43a1875b627",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "New York Slice",
   "aliases": [],
   "editionLabel": "Bezier Games English base rules, official Dized reference",
+  "image": {
+    "file": "/images/games/new-york-slice-bezier-en-dized-cover.jpg",
+    "alt": "New York Slice original base-game box, Bezier Games",
+    "width": 353,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0740/4855/files/2A2A7978_2048x.jpg?v=1661349947",
+      "publisher": "Bezier Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Bezier Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Bezier Games’ publisher interview https://beziergames.com/blogs/news/new-york-slice-designer-publisher-interview displays this original base-game box photographed alongside the original Piece o’ Cake. The article says New York Slice had multiple printings without a new base edition. Cropped only surrounding wall and table from the publisher photo. Reduced to 353 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently won any game is the first Slicer. After that player divides the pizza, their left-hand neighbor chooses the first portion.",
   "officialTieBreak": null,
   "houseFallback": "If the latest-win criterion does not select one player, agree to choose the initial Slicer randomly. This is a house rule.",
