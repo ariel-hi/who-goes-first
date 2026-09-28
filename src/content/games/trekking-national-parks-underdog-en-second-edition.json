@@ -3,10 +3,10 @@
   "slug": "trekking-national-parks-underdog-en-second-edition",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "67b379e591b591ae80592f5528bcbb5ae3b46e2438d33b9e5164aa95d6a82311",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "f3b4a3178db1befdae4bcbd3a8eff8d24c37594c7fbbc81f7cb8c9cef609680f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trekking the National Parks: Second Edition",
   "aliases": [
     "Trekking the National Parks",
@@ -49,5 +49,22 @@
   "uncertainty": [
     "The source states no initial-start tie-break and does not identify a printing year.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trekking-national-parks-underdog-en-second-edition-cover.jpg",
+    "alt": "Trekking the National Parks second-edition Underdog Games box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0008/7703/5638/files/TTNP-htp-02.png?v=1704904380",
+      "publisher": "Underdog Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Underdog Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Underdog Games How to Play archive: https://www.underdoggames.com/pages/how-to-play-nav. Exact publisher-hosted second-edition package image: https://cdn.shopify.com/s/files/1/0008/7703/5638/files/TTNP-htp-02.png?v=1704904380. The box explicitly states Second Edition and shows the Underdog Games mark; it was visually reviewed against the article edition (Underdog English second edition) and the archive links second-edition rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
