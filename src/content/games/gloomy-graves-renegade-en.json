@@ -3,10 +3,10 @@
   "slug": "gloomy-graves-renegade-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "370d9351eb85ba2dfe30410bf6c1dca556d342db74d74ba3fb5ed3392d5c6235",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "47c7db941604ef13c41e9596bc128fb47971cfb30544b6fd1134bf96141b3f6a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gloomy Graves",
   "aliases": [],
   "editionLabel": "Renegade Game Studios English rulebook, 2020",
@@ -36,5 +36,22 @@
   "internalEvidence": "A complete publisher-authored English rulebook preserved by a game-rule archive was inspected. PDF page 4 was rendered and read; setup step 8 names the graveyard visitor. Page 5 confirms clockwise rounds. Publisher credits and game identity match inventory BGG 293556. SHA-256: d8622de199a9c51d3a9b99bd2524fa8cd3ecf2ee0a25a91cd683c57596e147ea. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "No procedure is given for tied or no graveyard visits."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gloomy-graves-renegade-en-cover.jpg",
+    "alt": "Gloomy Graves Renegade Game Studios English game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://renegadegamestudios.com/gloomy-graves/",
+      "publisher": "Renegade Game Studios"
+    },
+    "fairUse": {
+      "rightsHolder": "Renegade Game Studios and cover artist David Szilagyi (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher product page https://renegadegamestudios.com/gloomy-graves/ supplies its 3D game-box image https://cdn11.bigcommerce.com/s-kftzvkkgjv/images/stencil/1280x1280/products/169/834/GloomyGraves_Box3D_2000pxls_RGB__17235.1615051325.png?c=1; cover bears the Renegade logo and matches the 2020 English rulebook edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
