@@ -3,10 +3,10 @@
   "slug": "century-spice-road-plan-b-big-box-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "f1a32cb8c170b76e6ee6d85e1c3b631014c0e7b9352043b88916fe48ebe31433",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7b2e01d1ddae19825544c5207fdefcebb434b6631c6d704963ae337e3f81009c",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Century: Spice Road",
   "aliases": [],
   "editionLabel": "Plan B English Big Box",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Official Asmodee-hosted Plan B Big Box English rulebook, credits2023. Rendered cover and printed/PDF2 establish edition and game scope. Setup6 distributes the marked Caravan board randomly; Taking a Turn confirms clockwise play. No combined-game rules inferred. Source custody: research/source-files/popular-sep26-03/century.pdf; SHA-256 58fe37c489a0a88efc50ef767496a8abe2ea22a8adb2959ff692c33f07565ac5. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/century-spice-road-plan-b-big-box-en-cover.jpg",
+    "alt": "Century Big Box English rulebook title page",
+    "width": 341,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN_Century-BB_rules_lowres.pdf",
+      "publisher": "Next Move / Plan B official English Big Box rulebook"
+    },
+    "fairUse": {
+      "rightsHolder": "Plan B Games and credited artists",
+      "rationale": "Reduced publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN_Century-BB_rules_lowres.pdf. Page 1 of the publisher-hosted English Big Box rulebook displays Century Big Box title artwork. This is a rulebook title page, not box packaging; it matches the cited Big Box edition. Original image URL: https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN_Century-BB_rules_lowres.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

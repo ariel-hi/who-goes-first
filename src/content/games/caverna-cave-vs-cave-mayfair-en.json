@@ -3,10 +3,10 @@
   "slug": "caverna-cave-vs-cave-mayfair-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "02a5bef7bbae89f85ddb3d9be9e7c497ef8aace8546a8e669e58cd281cc7d317",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "bd3b4e7e9ae03b5f929b0d0aa107da158c11e78742bf3b2f31c1b9c23526e5a4",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Caverna: Cave vs Cave",
   "aliases": [
     "Caverna: Cave vs. Cave"
@@ -39,5 +39,22 @@
   "internalEvidence": "Rendered PDF page 2 (printed page 2) of the Mayfair Games rulebook preserved by 1jour-1jeu. Setup specifies random selection or the smaller player as an alternative. Page 3 sets round order and transfers the marker after each round. SHA-256: 2b231dab47b437b5e080ef0e130e3017c9e92453d301dd76df827951ded77719. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, turn order and edition.",
   "uncertainty": [
     "The alternate size-based criterion has no tie-break if players are equally small."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/caverna-cave-vs-cave-mayfair-en-cover.jpg",
+    "alt": "Mayfair Caverna Cave vs Cave box with two dwarves at a cave entrance",
+    "width": 500,
+    "height": 499,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/m/jpg1500/mfg3525.jpg",
+      "publisher": "Noble Knight Games listing for Mayfair Games 2017 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Mayfair Games and credited artists",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147671465/Caverna---Cave-vs-Cave. Listing identifies the Mayfair 2017 core game and MFG3525 manufacturer part; the photographed box bears the Mayfair logo and Cave vs Cave title, rather than the later Big Box. Original image URL: https://image.nobleknight.com/m/jpg1500/mfg3525.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "campaign-manager-2008-zman-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ad62b2bbd655bf580c21becd6b3d097a5097225779f30c72ee5d25048e8c088e",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7b12233c88d24b9bf90c39604901dc0c7ad9f0861307c4410bc39d3406ab5dff",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Campaign Manager 2008",
   "aliases": [],
   "editionLabel": "Z-Man Games English edition",
@@ -37,5 +37,22 @@
   "internalEvidence": "The publisher-authored Z-Man Games English manual, preserved by Tesera, was rendered and visually checked. Printed page 5 gives a deck-building completion choice and a different choice when using preconstructed decks, then specifies alternating turns. Page 8 credits Z-Man Games and designers Christian Leonhard and Jason Matthews, matching inventory BGG 46255. SHA-256: 9f8b5ba148c16c0a9996fe08303b81403d587eb102cf224f75712ae814025895. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the rendered pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The rules say each eligible player “may” go first and do not state a further tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/campaign-manager-2008-zman-en-cover.jpg",
+    "alt": "Z-Man Games Campaign Manager 2008 box with U.S. election map",
+    "width": 368,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/z/jpg1500/zmg4058.jpg",
+      "publisher": "Noble Knight Games listing for Z-Man Games edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games and credited artists",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147424095/Campaign-Manager-2008. Listing identifies the Z-Man Games game; the photographed box bears the Z-Man logo and 2008 election art, matching the English rulebook. Original image URL: https://image.nobleknight.com/z/jpg1500/zmg4058.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

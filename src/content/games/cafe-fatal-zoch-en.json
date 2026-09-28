@@ -3,10 +3,10 @@
   "slug": "cafe-fatal-zoch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a8169b0b22a3fa983d371a3d52b59598c0c6df788d8f22661cba54bfb0945c32",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e0ec92d02370e199df609a1e57023f5c6635f94e554a35988637783cdb6a589d",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Café Fatal",
   "aliases": [
     "Cafe Fatal"
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered PDF page 6 (printed page 6) of the Zoch Verlag English rules states the round starter and leftward turn order. The source is hosted by the publisher's Simba Dickie Group. SHA-256: f00e83062b470c5689bc6e38c4a79eff6bf6740bca48e74454b1b38c1654b348. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the cited starter instruction and edition attribution.",
   "uncertainty": [
     "The rules do not define a tie-break if players disagree about who is hungriest."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/cafe-fatal-zoch-en-cover.jpg",
+    "alt": "Zoch Cafe Fatal box with a waitress carrying pastries",
+    "width": 380,
+    "height": 383,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/z/jpg500/zoch601105113.jpg",
+      "publisher": "Noble Knight Games listing for Zoch 2017 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Zoch Verlag and credited artists",
+      "rationale": "Reduced game packaging image used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147747435/Cafe-Fatal. Listing identifies the 2017 Zoch game, manufacturer number ZOCH601105113; the box bears the Zoch logo and Cafe Fatal title. Original image URL: https://image.nobleknight.com/z/jpg500/zoch601105113.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
