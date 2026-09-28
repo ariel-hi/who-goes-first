@@ -3,10 +3,10 @@
   "slug": "farmageddon-fifth-street-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a587bee2efa4c6471aa0fe4041dff0828c5c3dc735ae7589fd3d98f9f9b53763",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "5133efa70b9a0b2a977721faa2a60b5e6a01117c8fbfaf40f5efb3ea8b95c732",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Farmageddon",
   "aliases": [],
   "editionLabel": "5th Street Games 2012 English rules",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Visually checked 5th Street Games 2012 English rules preserved by Tesera, PDF page 1. The setup instruction selects the most recent farm visitor and explicitly orders remaining turns clockwise. SHA-256: e0b3add8e0832c566619f848ed6ab8386e2e81e3fcf7ab7209b8d4e4d0d08e1d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player wording, and stated later turn order on rendered rulebook pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/farmageddon-fifth-street-en-cover.jpg",
+    "alt": "Farmageddon original 5th Street Games box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://allsystemsgo.games/products/farmageddon",
+      "publisher": "All Systems Go Games retailer, original 5th Street Games boxed copy"
+    },
+    "fairUse": {
+      "rightsHolder": "5th Street Games, original cover artists, and product photographer All Systems Go Games (precise ownership not stated)",
+      "rationale": "Small, compressed product photo identifies the 2012 English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "All Systems Go Games product photograph https://allsystemsgo.games/cdn/shop/products/farmageddon-card-game.jpg?v=1675784227&width=800 visibly shows the original 5th Street Games logo, Farmageddon title, and Grant Rodiek credit. The approved 2012 rulebook identifies the same publisher, distinct from the later revised Farm Fresh edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
