@@ -3,10 +3,10 @@
   "slug": "trekking-world-underdog-en-first-edition",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "abb570b203d84385f78ecb1e0955d635202474f93dc7be403dae2661fd7222e2",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "66151e5cc2a5d668e27355ef6ef1410af16d658fc23065c0c953b0c43cdd1aaf",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trekking the World",
   "aliases": [
     "Trekking the World first edition"
@@ -48,5 +48,22 @@
   "uncertainty": [
     "The source states no initial-start tie-break and does not identify a printing year.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trekking-world-underdog-en-first-edition-cover.jpg",
+    "alt": "Trekking the World first-edition Underdog Games box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0008/7703/5638/files/TTW-htp-02.png?v=1704915344",
+      "publisher": "Underdog Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Underdog Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Underdog Games How to Play archive: https://www.underdoggames.com/pages/how-to-play-nav. Exact publisher-hosted first-edition package image: https://cdn.shopify.com/s/files/1/0008/7703/5638/files/TTW-htp-02.png?v=1704915344. The image appears in the archive section explicitly labeled Trekking the World (1st Edition), alongside its rules link; it was visually reviewed against the article edition (Underdog English first-edition rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
