@@ -160,6 +160,7 @@ test('broad directory searches reveal every match in keyboard-accessible batches
 });
 
 test('new native game identities remain searchable without borrowed starting rules', async ({ page }) => {
+  test.setTimeout(60000);
   await page.setViewportSize({ width: 320, height: 844 });
   await page.goto('/board-games/');
   const input = page.getByRole('searchbox', { name: 'Search board games' });
@@ -171,6 +172,14 @@ test('new native game identities remain searchable without borrowed starting rul
     ['91394', 'RinglDing'], ['191925', 'Bandido'], ['195372', 'Krazy Wordz'],
     ['205885', 'X nimmt!'], ['246639', 'Patchwork Express'], ['271774', 'Sherlock Express'],
     ['433007', 'Cascadia junior'], ['440540', 'Take Time'],
+    ['3337', 'Lobo 77'], ['16267', 'Trans Europa'], ['35652', 'Billy Biber'],
+    ['161537', '7 Steps'], ['174078', 'Holmes: Sherlock gegen Moriarty'],
+    ['177079', 'Die Legenden von Andor – Chada & Thorn'], ['232420', 'Gier'],
+    ['235922', 'Würfelkönig'], ['236484', 'Facecards'], ['243435', 'Verflucht!'],
+    ['256788', 'Detective Club'], ['256838', 'Nessos'], ['257965', 'BiberClan'],
+    ['261114', 'Men at Work'], ['264239', 'Patchwork Doodle'],
+    ['265684', 'Subtext'], ['300930', 'Schotten Totten 2'],
+    ['439742', 'Dewan'], ['456440', 'Cozy Stickerville'],
   ] as const) {
     await input.fill(name);
     const row = page.locator(`[data-results] li[data-id="${id}"]`);
@@ -180,6 +189,8 @@ test('new native game identities remain searchable without borrowed starting rul
     await row.locator('summary').click();
     await expect(row.getByRole('link', { name: 'Pick a player' })).toHaveAttribute('href', '/');
   }
+  await input.fill('Deja-Vu');
+  await expect(page.locator('[data-results] li[data-id="217321"]')).toHaveCount(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
