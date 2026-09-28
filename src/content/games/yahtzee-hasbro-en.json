@@ -3,8 +3,8 @@
   "slug": "yahtzee-hasbro-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "6d666d3cdf1e434833ce812d678b6a5cb4543e3889b795cfa7fbb89c3e1e71fe",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c055e4b4007184ca696a884c2a7fb882ade340493211bde67660cdad8d780153",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Yahtzee",
@@ -22,8 +22,12 @@
       "url": "https://www.hasbro.com/common/instruct/yahtzee.pdf",
       "title": "Instructions — 1 or More Players — Yahtzee",
       "publisher": "Milton Bradley Company / Hasbro",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "Page 1, \"How to Play\"",
       "checkedAt": "2026-09-27"
     }
@@ -31,5 +35,22 @@
   "internalEvidence": "Fetched the official Hasbro-hosted PDF (hasbro.com/common/instruct/yahtzee.pdf) and read it directly. Page 1, \"How to Play\": \"Each player takes a score card. To decide who goes first, each player in turn rolls all 5 dice. The player with the highest total goes first. Play then passes to the left.\" Page 8 credits: \"Milton Bradley Company, P.O. Box 1247, East Longmeadow, MA 01028. ©1996 Milton Bradley Company. All Rights Reserved. E0950.\" No tie-break for the roll-off is stated in the document.",
   "uncertainty": [
     "The document does not state a tie-break procedure if two or more players roll the same highest total; the house fallback above is this site's own suggestion, not the publisher's."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/yahtzee-hasbro-en-cover.jpg",
+    "alt": "1996 Milton Bradley Yahtzee box with red cup and five dice",
+    "width": 490,
+    "height": 400,
+    "presentation": "cover",
+    "source": {
+      "url": "https://i.ebayimg.com/images/g/9dMAAOSwSptj5BKp/s-l1200.jpg",
+      "publisher": "1996 Milton Bradley Yahtzee copy photographed in a resale listing"
+    },
+    "fairUse": {
+      "rightsHolder": "Milton Bradley / Hasbro and the listing photographer",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.ebay.co.uk/itm/295518380714. A photograph of an identified 1996 Milton Bradley Yahtzee set, with its instruction leaflet visible in the full source photo. This crop isolates the contemporary box; it is not a current Hasbro package. Original image URL: https://i.ebayimg.com/images/g/9dMAAOSwSptj5BKp/s-l1200.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

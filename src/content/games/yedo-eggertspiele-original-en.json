@@ -3,10 +3,10 @@
   "slug": "yedo-eggertspiele-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d4be2986b3a1b81e0ee6953b4a64a4aa7d2016195b499071a01fb60b7dffd652",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7f2b26ad574a76f6bcb171a485196a63464936259ed44a0b266e423c31167bfa",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Yedo",
   "aliases": [],
   "editionLabel": "Eggertspiele English rules, original game",
@@ -37,5 +37,22 @@
   "internalEvidence": "Downloaded and rendered the English publisher-produced original-game rulebook from a retailer archive. Printed/PDF page 5 calls for a random starting player, initial markers in clockwise order, and notes that player order can change. The source is for inventory BGG 117915, rather than the separate Deluxe Master Set identity. SHA-256: cf449fcfd071e650691514e5c6941cde5eb436e0df3b16b4bb2f6c7a28f7319d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited opening instruction and edition against the rulebook.",
   "uncertainty": [
     "No single random method is prescribed. Random-only instructions remain outside the portable random mix."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/yedo-eggertspiele-original-en-cover.jpg",
+    "alt": "Original eggertspiele and Pegasus Yedo box with shogun, geisha, and Edo castle",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.eggertspiele.de/wp-content/uploads/2021/04/Yedo-Bild-1024x1024-1-1024x1024.jpeg",
+      "publisher": "Eggertspiele.de reproduction of original Yedo box art"
+    },
+    "fairUse": {
+      "rightsHolder": "eggertspiele, Pegasus Spiele and Franz Vohwinkel",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.eggertspiele.de/yedo/. The visible eggertspiele and Pegasus marks, original title art and characters match the cited original English eggertspiele rulebook. This is the 2012 original-game box design, not Yedo Deluxe Master Set. Original image URL: https://www.eggertspiele.de/wp-content/uploads/2021/04/Yedo-Bild-1024x1024-1-1024x1024.jpeg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
