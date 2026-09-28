@@ -3,10 +3,10 @@
   "slug": "sea-scroll-renegade-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "781176e8394ee27d148e18c86578732e9f9462796cd00f071fa60d538dad4b6a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "02753d7b7cb2efd035f0cfac44e32629f14f8ae5fb9e0b90c2286dc8fbf93b2c",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sea Scroll",
   "aliases": [],
   "editionLabel": "Renegade English rulebook, 2026 copyright",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/sea-scroll-renegade-en-cover.jpg",
+    "alt": "Sea Scroll game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn11.bigcommerce.com/s-kftzvkkgjv/images/stencil/500x659/products/4602/7897/seascroll-Box-2000px-shadow-3D-v2025__42337.1775658853.png?c=1",
+      "publisher": "Renegade Game Studios"
+    },
+    "fairUse": {
+      "rightsHolder": "Renegade Game Studios",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://renegadegamestudios.com/sea-scroll/. Exact publisher-hosted box image: https://cdn11.bigcommerce.com/s-kftzvkkgjv/images/stencil/500x659/products/4602/7897/seascroll-Box-2000px-shadow-3D-v2025__42337.1775658853.png?c=1. The box and game identity were visually reviewed against the article edition (Renegade English rulebook, 2026 copyright).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

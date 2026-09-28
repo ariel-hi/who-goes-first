@@ -3,10 +3,10 @@
   "slug": "godfather-corleones-empire-cmon-2017-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "121600a59fe01075fa904176639d63fab24ded319f59c8ded5ffd44485f2628a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "7c4fee404fa8ca495f7b394678f9cc014d3b1b517995c1aed795a58a94ddf7a1",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Godfather: Corleone's Empire",
   "aliases": [],
   "editionLabel": "CMON English rules, 2017",
@@ -39,5 +39,22 @@
   "internalEvidence": "Rendered page 9 gives the film-viewing criterion and random alternative. Page 13 gives clockwise actions. Page 27 credits CMON/Spaghetti Western Games ©2017. Horse Head token and families match inventory BGG 195539. SHA-256: 4236f4033dfe2ec2f54c8089bc76f305f27f91a7d3b660ec1e8b8c3f8b015605. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for the same viewing."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/godfather-corleones-empire-cmon-2017-en-cover.jpg",
+    "alt": "The Godfather: Corleone's Empire official rulebook cover",
+    "width": 600,
+    "height": 600,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cmon-files.s3.amazonaws.com/pdf/assets_item/resource/65/GDF001-Rulebook.pdf",
+      "publisher": "CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "CMON / Paramount Pictures",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of publisher-hosted rulebook: https://cmon-files.s3.amazonaws.com/pdf/assets_item/resource/65/GDF001-Rulebook.pdf. Publisher context: https://www.cmon.com/the-godfather-corleone-s-empire-a-new-chapter-in-an-american-tale/. The identifiable cover title and artwork were visually reviewed against the article edition (CMON English rules, 2017).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

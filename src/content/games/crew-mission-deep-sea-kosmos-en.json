@@ -3,10 +3,10 @@
   "slug": "crew-mission-deep-sea-kosmos-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "6c991e9f845af43132bf0e49fb07f8d5d259b47db9b7ab295e3687b7b6fd02b3",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "4dd9022c4131e0cbc9f0dfbd4b662f6e1d337b22ae33dbf130766d68d5254544",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Crew: Mission Deep Sea",
   "aliases": [],
   "editionLabel": "Kosmos English edition",
@@ -36,5 +36,22 @@
     }
   ],
   "internalEvidence": "Publisher support instruction-manual index links the Google Drive PDF. Downloaded actual PDF bytes using its Drive download endpoint and rendered pages9 and11. Both captain selection and first trick are explicit. Excluded from random method pool because the criterion depends on a dealt game card. Source custody: research/source-files/popular-sep26-04/crew.pdf; SHA-256 0d830a54b7f98433a2f78d032db943bc5fc76dffa773b02995a364f3b4e97776. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/crew-mission-deep-sea-kosmos-en-cover.jpg",
+    "alt": "The Crew: Mission Deep Sea game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thamesandkosmos.com/cdn/shop/products/TheCrew2_3DBox_1200x1200.jpg?v=1667421638",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "KOSMOS",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://thamesandkosmos.com/products/the-crew-mission-deep-sea. Exact publisher-hosted box image: https://thamesandkosmos.com/cdn/shop/products/TheCrew2_3DBox_1200x1200.jpg?v=1667421638. The box and game identity were visually reviewed against the article edition (Kosmos English edition).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

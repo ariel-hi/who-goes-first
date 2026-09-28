@@ -3,10 +3,10 @@
   "slug": "terra-mystica-capstone-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "5bf86e95047f6991328e38fbb195cc7e1fe36e7703836f89b8da5e2740fb1c4a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "8b95fc48b52bb649e583aacad0cea20b5bb1f4f5df955ad0d799bfc1955cc50d",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Terra Mystica",
   "aliases": [],
   "editionLabel": "Capstone English base rules",
@@ -49,5 +49,22 @@
     "No initial-start tie-break is stated alongside the gardening criterion.",
     "This record does not infer a printing year or numbered edition from the download filename.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/terra-mystica-capstone-en-cover.jpg",
+    "alt": "Terra Mystica official rulebook cover",
+    "width": 364,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://capstone-games.com/cdn/shop/files/EN_terra_mystica_rules-3rd_CG_web.pdf?v=15200505769140123159",
+      "publisher": "Capstone Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Capstone Games / Feuerland Spiele",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of publisher-hosted rulebook: https://capstone-games.com/cdn/shop/files/EN_terra_mystica_rules-3rd_CG_web.pdf?v=15200505769140123159. Publisher context: https://capstone-games.com/products/terra-mystica. The identifiable cover title and artwork were visually reviewed against the article edition (Capstone English base rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

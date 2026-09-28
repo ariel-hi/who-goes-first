@@ -3,10 +3,10 @@
   "slug": "grizzled-cmon-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "b760d860e3e5b5bd91005d057e6649f320a928f642f24832a9d85829bee86b0f",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "13acc774e93bef6e9eb59d91bf0fbad7dda6e6d25624181fffca95c2aca05489",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Grizzled",
   "aliases": [],
   "editionLabel": "CMON English rules",
@@ -44,5 +44,22 @@
   "internalEvidence": "Rendered PDF page 3 gives the hairiest-player criterion. Pages 4 and 6 show the Mission Leader preparing and acting first; page 9 gives the handoff. The English booklet is also listed at CMON’s official rulebook URL. Grizzled cards, Support tiles and the Mission Leader token match inventory BGG 171668. SHA-256: 1d49c3daf3ffeb749f812bc30154bb3220be84ab72648833fc680603b48629e1. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules do not define how to compare hairiness or break a tie."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/grizzled-cmon-en-cover.jpg",
+    "alt": "The Grizzled official rulebook cover",
+    "width": 341,
+    "height": 342,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/The-Grizzled-Rulebook-US.pdf",
+      "publisher": "CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "CMON / Tignous estate",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of publisher-hosted rulebook: https://www.cmon.com/wp-content/uploads/2023/06/The-Grizzled-Rulebook-US.pdf. Publisher context: https://www.cmon.com/product-line/the-grizzled/. The identifiable cover title and artwork were visually reviewed against the article edition (CMON English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
