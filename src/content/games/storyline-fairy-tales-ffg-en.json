@@ -3,10 +3,10 @@
   "slug": "storyline-fairy-tales-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a307df769109930aa4dfbb742a09c6ef4017f8aed785535ae90bcecb5e136d69",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "8ecfc743de6dcaf8573e72c6755fd24e7455064310362b794974ea512b94b71d",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "StoryLine: Fairy Tales",
   "aliases": [],
   "editionLabel": "Fantasy Flight Games English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF/printed page 3 gives the recent-book criterion and deck handoff. Page 4 credits Fantasy Flight Games publisher Christian T. Petersen; Story and Narrator cards match inventory BGG 192924. SHA-256: 0a6fb8716324a4db5fd6cc34a4c56a5a120648898ca88cd5d0df871fdae34cdd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/storyline-fairy-tales-ffg-en-cover.jpg",
+    "alt": "StoryLine: Fairy Tales original English box lid with a musician and fox",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pendragongamestudio.com/wp-content/uploads/2016/02/SY01_BoxLid_INTL.jpg",
+      "publisher": "Pendragon Game Studio / Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Pendragon Game Studio / Asmodee",
+      "rationale": "Reduced-size original game box-lid art identifies the English game discussed in this independent rules article. It is contextual to the game, links to the co-developer release page, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Original 2016 co-developer release chronology: https://pendragongamestudio.com/in-production/. It labels the StoryLine: Fairy Tales image as SY01_BoxLid_INTL and lists English publication by Asmodee in June 2016. Original licensing announcement: https://pendragongamestudio.com/blog/storyline-licensed-to-asmodee/. Exact box-lid file: https://pendragongamestudio.com/wp-content/uploads/2016/02/SY01_BoxLid_INTL.jpg. Visually reviewed the English title, original cover art and 3–8 player marking.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
