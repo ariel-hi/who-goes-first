@@ -3,13 +3,30 @@
   "slug": "nemesis-awaken-realms-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "54f34bb975c8be30362b8f141790f8366e607e3417a4e97d755420f6d41a4c48",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "2a65c7b2ffad5e36aa0fd2204ba4b81f1cd9e5b0bf9bf26611ad2a26e89b41cd",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Nemesis",
   "aliases": [],
   "editionLabel": "Awaken Realms English rulebook",
+  "image": {
+    "file": "/images/games/nemesis-awaken-realms-en-cover.jpg",
+    "alt": "Nemesis game cover, Awaken Realms / Rebel / Asmodee edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/cdn/shop/products/NEM01-image0_2000.jpg?v=1691437612",
+      "publisher": "Awaken Realms / Rebel / Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Awaken Realms / Rebel",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://store.asmodee.com/products/nemesis. The official distributor listing identifies SKU NEM01 for the original Nemesis core game and shows its Awaken Realms/Rebel box, matching the English base-game rules. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Deal one numbered Help card to each player at random. Player 1 gets the First Player token.",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -3,13 +3,30 @@
   "slug": "oh-my-goods-lookout-v1-5-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "1b2364335b641d874e57386bc47e2440bddab9c9ab6ca65bcb73c92e2b0097c9",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "0c11bd09abaecbc10e7cde62f37aea9d25b2b23963f15b265fa9e26b06c5872b",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Oh My Goods!",
   "aliases": [],
   "editionLabel": "Lookout Games English rules",
+  "image": {
+    "file": "/images/games/oh-my-goods-lookout-v1-5-en-cover.jpg",
+    "alt": "Oh My Goods! game cover, Lookout Spiele edition",
+    "width": 274,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.lookout-spiele.de/upload/en_omg.html_GalleryImage.jpg",
+      "publisher": "Lookout Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout GmbH / atelier198",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://www.lookout-spiele.de/en/games/omg.html. The publisher product page dates the base game to 2015 and links English rules V1.5 used by the rule record; the 3D box is the base game, not the later Big Box. Reduced to 274 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The person who most recently worked the hardest becomes the first active player, or choose a player at random.",
   "officialTieBreak": null,
   "houseFallback": null,
