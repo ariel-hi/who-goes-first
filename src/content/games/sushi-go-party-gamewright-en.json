@@ -3,10 +3,10 @@
   "slug": "sushi-go-party-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "1d9a316dda3f13c2c0705191d3b5a65fdaee3b24a72f426f583ac1f39315a136",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "a84dfabd0521949b4570c99597c0921f570667e2ad23b1b37d92b0a7383fbc55",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sushi Go Party!",
   "aliases": [
     "Sushi Go Party"
@@ -15,6 +15,8 @@
   "firstPlayerRule": "No one goes first: turns happen simultaneously. Everyone secretly chooses one card to keep, places it face-down, and all players reveal together.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
     "After revealing, each player passes their remaining hand face-down to the player on their left, so hands move clockwise.",
     "The game lasts 3 rounds."

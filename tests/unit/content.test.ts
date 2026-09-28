@@ -30,6 +30,25 @@ test('exact original editions keep cooperative choice and component turn order o
   }
 });
 
+test('King of New York and Cryptid attach only their reviewed base-game openings', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
+  for (const [id, name, ruleId, pdfPage] of [
+    ['160499', 'King of New York', 'king-of-new-york-iello-2014-en', 2],
+    ['246784', 'Cryptid', 'cryptid-osprey-original-en', 4],
+  ] as const) {
+    const game = games.find(item => item.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]?.sources[0]?.pdfPagesOneBased[0]).toBe(pdfPage);
+    expect(game?.rules[0]?.pickerSuggestionApplicable).toBe(false);
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(false);
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+  }
+  expect(games.find(item => item.bggId === '160499')?.rules[0]?.clarifications.join(' ')).toContain('does not say what to do if players tie');
+  expect(games.find(item => item.bggId === '246784')?.rules[0]?.tieBreakApplicable).toBe(false);
+});
+
 test('Amigo identities retain numeric provenance while exact independently reviewed editions supply rules', async () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const games = getBoardGames();

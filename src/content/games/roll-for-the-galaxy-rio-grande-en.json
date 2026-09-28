@@ -3,10 +3,10 @@
   "slug": "roll-for-the-galaxy-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "5d1f3d1cb2f384c571160ce3350a927b351cd3e394b2bf8d249e212daca085ac",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "4fd2a7d63989afd61045a58d3a0bf5a2679a0b272ecc04c43ac2de3896de34ef",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Roll for the Galaxy",
   "aliases": [
     "RftG"
@@ -15,6 +15,8 @@
   "firstPlayerRule": "There is no first player: everyone plays each round at the same time. Only when strict timing matters, a phase is done in clockwise order starting with the player whose faction tile has the lowest number.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
     "All players roll, select phases and carry out phases simultaneously; there are no separate player turns.",
     "Strict clockwise order is only needed in rare cases, such as when someone might reach 12 tile squares or the VP chip pool might run out."

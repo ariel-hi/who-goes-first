@@ -3,10 +3,10 @@
   "slug": "welcome-to-blue-cocker-2023-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "582f1f6b7b88656c6f8865ad07851dff71e6000d15f23c8fa65bf91b20708db0",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "24e8f0266bdb24096b760e47d0b4480466a5c1a6d549f1ca11e185c9124492a2",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Welcome To...",
   "aliases": [
     "Welcome To Your Perfect Home",
@@ -16,6 +16,8 @@
   "firstPlayerRule": "There is no first player: every round is played simultaneously. Three Construction cards are flipped, then all players choose a Number-Action combination at the same time and use it on their own sheet.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
     "Several players may use the same Number-Action combination in the same round.",
     "The rulebook does not assign the card-flipping job to a particular player."

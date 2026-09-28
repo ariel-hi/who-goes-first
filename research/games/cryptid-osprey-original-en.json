@@ -1,0 +1,42 @@
+{
+  "id": "cryptid-osprey-original-en",
+  "slug": "cryptid-osprey-original-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Cryptid",
+  "aliases": [],
+  "editionLabel": "Osprey Games original English base game",
+  "firstPlayerRule": "Choose a starting player; the rulebook suggests the person who set up the map. That player places the first information cube and takes the first turn, with play continuing clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "The map setter is a suggestion, not a required starting-player criterion.",
+    "During initial sharing, each player places a cube in turn order, starting with the chosen player and continuing clockwise until everyone has placed two cubes.",
+    "The starting player then takes the first normal turn."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ospreypublishing.com/media/xjhnf54a/cryptid-rulebook-english.pdf",
+      "title": "Cryptid — original English rulebook",
+      "publisher": "Osprey Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4,
+        5
+      ],
+      "location": "Setup; Playing the Game, initial sharing and first turn",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Full official English rulebook linked from Osprey Games' gaming resources page https://www.ospreypublishing.com/ca/discover/gaming-resources/board-card-games/ . PDF SHA-256 5227ee1c21a688d740da278a4c3cc831c2e66c06d1c17a96209d864d498d0da5, 5770231 bytes. Codex visually inspected PDF page 4: choose a starting player, with whoever sets up the map suggested. PDF page 5 says that player begins initial cube placement, which proceeds left/clockwise, and then takes the first turn. Source packet: artifacts/pending-rules-followup-sep28b/REVIEW.md. Exact BGG 246784 / Wikidata Q113127939 active directory identity; not Cryptid: Urban Legends or the separate two-player rulesheet. The source does not prescribe randomness, so this record is excluded from the portable random picker pool.",
+  "uncertainty": [
+    "This article covers the original 3–5-player base game; the separate two-player rulesheet is outside its scope."
+  ]
+}

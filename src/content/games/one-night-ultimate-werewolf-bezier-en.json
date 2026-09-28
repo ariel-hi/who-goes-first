@@ -3,10 +3,10 @@
   "slug": "one-night-ultimate-werewolf-bezier-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "1b9a21d2b8f350f8d803c5f53ad57426c66aebd22327ea98214b238fa5eaef1e",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "5ab727be770c0ddaa50c61a0e77cdea982119ceb88f45ae3579373d545710935",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "One Night Ultimate Werewolf",
   "aliases": [
     "ONUW",
@@ -16,6 +16,8 @@
   "firstPlayerRule": "There is no first player. At night, roles wake up in a fixed order called out by the Announcer (one designated player) or by the free app; during the day, everyone discusses freely and then all players vote at the same time.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
     "Roles with a night action are called in the order set by the rules (the numbers on the role tokens show the wake order).",
     "The guide says one player is designated the Announcer but gives no method for choosing that player; the app can replace the Announcer."

@@ -375,6 +375,29 @@ test('original Zombicide and Russian Railroads keep their source-specific openin
   }
 });
 
+test('simultaneous openings do not offer a first-player picker or tie-break', async ({ page }) => {
+  for (const slug of ['7-wonders-2020-en', 'spirit-island-gtg-en', 'sushi-go-2014-en']) {
+    await page.goto(`/games/${slug}/`);
+    await expect(page.locator('.rule-answer')).toContainText(/simultaneous|same time|no first player/i);
+    await expect(page.getByRole('heading', { name: 'Official tie-break or fallback' })).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+    await expect(page.getByText('If your rules call for a random choice,')).toHaveCount(0);
+  }
+});
+
+test('King of New York and Cryptid show the exact source opening and edition', async ({ page }) => {
+  await page.goto('/games/king-of-new-york-iello-2014-en/');
+  await expect(page.locator('.rule-answer')).toContainText('six black dice and both green dice');
+  await expect(page.locator('.rule-answer')).toContainText('most Attack symbols');
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toBeVisible();
+  await expectReviewedSourceCitation(page, 'king-of-new-york-iello-2014-en', 2);
+  await page.goto('/games/cryptid-osprey-original-en/');
+  await expect(page.locator('.rule-answer')).toContainText('person who set up the map');
+  await expect(page.locator('.rule-answer')).toContainText('first information cube');
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+  await expectReviewedSourceCitation(page, 'cryptid-osprey-original-en', 4);
+});
+
 test('archived German summaries distinguish opening selection from action and feeding order', async ({ page }) => {
   await page.goto('/games/magalon-ravensburger-de-1998/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');

@@ -1,0 +1,41 @@
+{
+  "id": "king-of-new-york-iello-2014-en",
+  "slug": "king-of-new-york-iello-2014-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "King of New York",
+  "aliases": [],
+  "editionLabel": "IELLO original 2014 English base game",
+  "firstPlayerRule": "Each player rolls all six black dice and both green dice. Whoever rolls the most Attack symbols starts the game; turns then proceed clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "Use both green dice for this opening roll, even though ordinary turns use green dice only when a card allows it.",
+    "The rulebook does not say what to do if players tie for the most Attack symbols in the opening roll."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://iellogames.com/wp-content/uploads/2014/10/KONY-US-Rules.pdf",
+      "title": "King of New York — original English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "How to Play, opening determination and clockwise order",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Full official English rulebook linked from IELLO's product page https://iellogames.com/games/king-of-new-york/ . PDF SHA-256 4f2350d4fbaa70e1aedde2b6d4dd9a194b9a29fab837a10658c625d9b12339ed, 4961935 bytes. Codex visually inspected PDF page 2: the How to Play passage requires all six black and two green dice, and the player with the most Attack icons starts. The same page states clockwise turns and that normal first rolls use only black dice unless a card enables green dice. Source packet: artifacts/pending-rules-followup-sep28b/REVIEW.md. Exact BGG 160499 / Wikidata Q44906199 active directory identity, separate from King of Tokyo. The opening roll is prescribed; this record is excluded from the portable random picker pool.",
+  "uncertainty": [
+    "The printed opening passage does not say how to resolve equal Attack totals. No reroll rule is presented as official."
+  ]
+}

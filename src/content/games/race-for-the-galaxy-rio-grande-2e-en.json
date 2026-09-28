@@ -3,10 +3,10 @@
   "slug": "race-for-the-galaxy-rio-grande-2e-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "972faed10979919b3352460fd3dcaa6eba598000d24887bdbef3025b995a83e8",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "eac0278b95622f7210babf883ccdca7f283013dfdf807c8b10cbf49a6a5597c4",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Race for the Galaxy",
   "aliases": [
     "RftG",
@@ -16,6 +16,8 @@
   "firstPlayerRule": "Nobody goes first. Each round, all players secretly choose an action card at the same time and reveal them together, then everyone performs the chosen phases.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
     "Play is mostly simultaneous. When order matters (for example, few cards left in the supply or VP chips running out), resolve the phase clockwise, starting with the player who has the lowest-numbered original start world.",
     "Start worlds are dealt randomly during setup."
