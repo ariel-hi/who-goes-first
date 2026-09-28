@@ -1,0 +1,37 @@
+{
+  "id": "pandemic-legacy-season-two-zman-en",
+  "slug": "pandemic-legacy-season-two-zman-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
+  "approvedRevision": "b607fb38943191c0acb483204e5a8246c6225639b0e9af649c3907ac20c474da",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Pandemic Legacy: Season 2",
+  "aliases": [],
+  "editionLabel": "Z-Man original English Season 2 base rulebook",
+  "firstPlayerRule": "Take all the players’ pawns and randomly select one. That pawn’s player takes the first turn, then play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "Each player selects a character and matching pawn before the opening selection.",
+    "This is the starting instruction in the original rulebook. Follow any new instructions unlocked later in the legacy campaign."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/pandemic_legacy_season_2_rules.pdf",
+      "title": "Pandemic Legacy: Season 2 — English rulebook",
+      "publisher": "Z-Man Games",
+      "printedPages": ["9"],
+      "pdfPagesOneBased": [9],
+      "location": "Setup steps 8–9, Select Characters and Begin Play",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Full original English PDF linked from Z-Man's Pandemic Legacy: Season 2 product page https://www.zmangames.com/game/pandemic-legacy-season-2/ and hosted by Asmodee. SHA-256 6ba4c2623e00eac786b5f6c3a65d1aa99927163870551d2ea3f8f4744c334e51, 16784026 bytes, 20 PDF pages. Codex visually inspected PDF page 9 (printed 9): setup step 8 gives each player a character and corresponding pawn, and step 9 says to take all pawns, randomly select one, then have that player begin clockwise. Source packet: artifacts/pending-rules-followup-sep28d/REVIEW.md. Exact BGG 221107 / Wikidata Q96053095 directory identity, separate from ordinary Pandemic and other Legacy seasons. This answer covers the original manual's opening and does not claim later campaign materials cannot alter it. Not enrolled in the portable random pool without separate opt-in review.",
+  "uncertainty": [
+    "Later unlocked campaign rules may supersede the original manual; use those instructions when they become available."
+  ]
+}

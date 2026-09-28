@@ -1,0 +1,45 @@
+{
+  "id": "bunny-kingdom-iello-2017-en",
+  "slug": "bunny-kingdom-iello-2017-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Bunny Kingdom",
+  "aliases": [],
+  "editionLabel": "IELLO original 2017 English base game",
+  "firstPlayerRule": "No one takes an exclusive first turn. Everyone drafts and plays their opening cards simultaneously.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
+  "clarifications": [
+    "In a three- or four-player game, each player chooses two cards to play during the opening draft before passing the rest of their hand.",
+    "In a two-player game, each player chooses one card to play and one to discard; the play step remains simultaneous.",
+    "The rulebook describes Exploration, Construction, and Harvest as phases played simultaneously by all players."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://iellogames.com/wp-content/uploads/2017/09/Bunny-Kingdom-Rules-EN-Light.pdf",
+      "title": "Bunny Kingdom — original English rulebook",
+      "publisher": "IELLO",
+      "printedPages": [
+        "6",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        12
+      ],
+      "location": "How Do I Play? and Special Rules for 2 Player Games; Rules Summary",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Complete original English PDF linked from IELLO's Bunny Kingdom product page https://iellogames.com/games/bunny-kingdom/ . SHA-256 5c0adc976c949a3bd1d54e9c9034cc52e5c88363883a258e9248f55b743182c3, 19294571 bytes, 12 PDF pages. Codex visually inspected PDF page 6 (printed 6): the overview states all three phases are played simultaneously by all players, the first draft/play instructions choose two cards in the three- and four-player game, and the two-player section changes this to one card played and one discarded while retaining normal play. The PDF page 12 summary confirms simultaneous drafting and play. Source packet: artifacts/pending-rules-followup-sep28d/REVIEW.md. Exact BGG 184921 / Wikidata Q47434525 active directory identity, scoped to the original 2017 base game, not expansions. No first-player chooser is invented.",
+  "uncertainty": [
+    "This answer covers the original base game's opening; expansion-specific procedures require separate review."
+  ]
+}

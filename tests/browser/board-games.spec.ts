@@ -420,6 +420,18 @@ test('Black Plague and Castle Combo show their own opening passages', async ({ p
   await expectReviewedSourceCitation(page, 'castle-combo-asmodee-en-2024', 4);
 });
 
+test('Season 2 pawn selection and Bunny Kingdom simultaneous opening stay distinct', async ({ page }) => {
+  await page.goto('/games/pandemic-legacy-season-two-zman-en/');
+  await expect(page.locator('.rule-answer')).toContainText('randomly select one');
+  await expect(page.locator('.rule-answer')).toContainText('pawn');
+  await expectReviewedSourceCitation(page, 'pandemic-legacy-season-two-zman-en', 9);
+  await page.goto('/games/bunny-kingdom-iello-2017-en/');
+  await expect(page.locator('.rule-answer')).toContainText('simultaneously');
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+  await expect(page.getByText('If your rules call for a random choice,')).toHaveCount(0);
+  await expectReviewedSourceCitation(page, 'bunny-kingdom-iello-2017-en', 6);
+});
+
 test('archived German summaries distinguish opening selection from action and feeding order', async ({ page }) => {
   await page.goto('/games/magalon-ravensburger-de-1998/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');

@@ -68,6 +68,25 @@ test('Black Plague and Castle Combo use their own source editions and keep rando
   expect(games.find(item => item.bggId === '416851')?.rules[0]?.firstPlayerRule).toContain('Randomly choose');
 });
 
+test('Season 2 and Bunny Kingdom preserve distinct random and simultaneous openings', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
+  for (const [id, name, ruleId, pdfPage] of [
+    ['221107', 'Pandemic Legacy: Season 2', 'pandemic-legacy-season-two-zman-en', 9],
+    ['184921', 'Bunny Kingdom', 'bunny-kingdom-iello-2017-en', 6],
+  ] as const) {
+    const game = games.find(item => item.bggId === id);
+    expect(game?.name).toBe(name);
+    expect(game?.rules.map(rule => rule.id)).toEqual([ruleId]);
+    expect(game?.rules[0]?.sources[0]?.pdfPagesOneBased[0]).toBe(pdfPage);
+    expect(game?.rules[0]?.tieBreakApplicable).toBe(false);
+    expect(randomRuleEligible(game!.rules[0]!)).toBe(false);
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 1, slug: ruleId });
+  }
+  expect(games.find(item => item.bggId === '221107')?.rules[0]?.firstPlayerRule).toContain('randomly select one');
+  expect(games.find(item => item.bggId === '184921')?.rules[0]).toMatchObject({ pickerSuggestionApplicable: false });
+});
+
 test('next native title decisions add discovery identities without borrowing rules', async () => {
   const games = getBoardGames();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number }>;
