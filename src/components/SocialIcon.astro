@@ -3,7 +3,6 @@ import { Image } from 'astro:assets';
 import pinterest from '../assets/brand/pinterest.svg';
 import bluesky from '../assets/brand/bluesky.svg';
 import x from '../assets/brand/x-black.png';
-import xWhite from '../assets/brand/x-white.svg';
 import facebook from '../assets/brand/facebook.png';
 import instagram from '../assets/brand/instagram.png';
 import whatsapp from '../assets/brand/whatsapp.svg';
@@ -11,26 +10,14 @@ import telegram from '../assets/brand/telegram.svg';
 import reddit from '../assets/brand/reddit.png';
 import linkedin from '../assets/brand/linkedin.png';
 import threads from '../assets/brand/threads-black.svg';
-import threadsWhite from '../assets/brand/threads-white.svg';
 interface Props { name: 'pinterest' | 'bluesky' | 'x' | 'facebook' | 'instagram' | 'whatsapp' | 'telegram' | 'reddit' | 'linkedin' | 'threads' | 'email' }
 const { name } = Astro.props;
 const icons = { pinterest, bluesky, x, facebook, instagram, whatsapp, telegram, reddit, linkedin, threads };
-const darkIcon = name === 'x' ? xWhite : name === 'threads' ? threadsWhite : null;
 ---
-{name === 'email' ? <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m3 5 9 8 9-8" /></svg> : <Image class:list={['social-icon', `social-icon-${name}`, { 'mono-light': darkIcon }]} src={icons[name]} width={24} densities={[1, 2]} alt="" aria-hidden="true" />}
-{darkIcon && <Image class:list={['social-icon', `social-icon-${name}`, 'mono-dark']} src={darkIcon} width={24} alt="" aria-hidden="true" />}
+<span class="social-badge" aria-hidden="true">
+  {name === 'email' ? <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m3 5 9 8 9-8" /></svg> : <Image class="social-icon" src={icons[name]} width={24} densities={[1, 2]} alt="" />}
+</span>
 <style>
-  .social-icon{display:block;width:20px;height:20px;object-fit:contain;flex:none}
-  .mono-dark{display:none}
-  :global(html[data-theme="dark"]) .mono-light{display:none}
-  :global(html[data-theme="dark"]) .mono-dark{display:block}
-  /* WhatsApp, Bluesky and Instagram ship as a flat mark with no backing of their
-     own, unlike the other brand assets here (Pinterest, Telegram, Facebook,
-     Reddit, LinkedIn all include their own circular badge). Their official
-     colors don't reliably meet icon contrast against every page background, so
-     give just these three the same kind of circular backing the others already
-     have built in. WhatsApp's green fails contrast against white too (~2:1),
-     so it gets a dark backing instead; Bluesky and Instagram read fine on white. */
-  :is(.social-icon-bluesky,.social-icon-instagram){background:#fff;border-radius:50%;padding:2px;box-sizing:border-box}
-  .social-icon-whatsapp{background:#000;border-radius:50%;padding:2px;box-sizing:border-box}
+  .social-badge{display:inline-grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 1px #e8e4e8;color:#343039}
+  .social-icon{display:block;width:var(--social-size,20px);height:var(--social-size,20px);object-fit:contain;flex:none}
 </style>

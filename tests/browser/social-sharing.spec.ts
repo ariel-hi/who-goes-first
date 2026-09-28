@@ -10,6 +10,22 @@ const paths = ['/', '/games/', '/house-rules/', '/board-games/', shelfHref(shelf
 const labels = ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook', 'Share on WhatsApp', 'Share on Telegram', 'Share on Reddit', 'Share on LinkedIn', 'Share on Threads', 'Share by email'];
 const featured = new Set(['Save on Pinterest', 'Share on WhatsApp', 'Share on Facebook']);
 
+test('sharing artwork loads inside round badges in both themes', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 780 });
+  await page.goto('/');
+  const consent = page.getByRole('button', { name: 'No thanks', exact: true });
+  if (await consent.isVisible()) await consent.click();
+  const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
+  await toolbar.getByRole('button', { name: 'More sharing options' }).click();
+  await expect(toolbar.locator('.social-badge')).toHaveCount(11);
+  await expect.poll(() => toolbar.locator('img.social-icon').evaluateAll(images => images.every(element => { const image = element as HTMLImageElement; return image.complete && image.naturalWidth > 0; }))).toBe(true);
+  const instagram = toolbar.getByRole('link', { name: /^Open Instagram/ }).locator('img');
+  expect(await instagram.evaluate(image => getComputedStyle(image).borderRadius)).toBe('0px');
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await expect(toolbar.locator('.social-badge')).toHaveCount(11);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
 for (const width of [320, 1280]) {
   for (const path of paths) {
     test(`sharing is consistent and points to the current page at ${width}px on ${path}`, async ({ page }) => {

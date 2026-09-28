@@ -1,9 +1,8 @@
 /* Three direct destinations; the remaining choices open below them. */
 .social-links{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin:12px 0;max-width:100%}
 .share-quick{display:flex;align-items:center;gap:7px;max-width:100%}
-.share-bubble{box-sizing:border-box;display:inline-grid;place-items:center;flex:none;width:45px;height:45px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);text-decoration:none}
+.share-bubble{--social-size:23px;box-sizing:border-box;display:inline-grid;place-items:center;flex:none;width:45px;height:45px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);text-decoration:none}
 .share-bubble:hover{background:var(--soft);border-color:var(--muted)}
-.share-bubble .social-icon{width:24px;height:24px}
 .share-bubble:focus-visible{outline:2px solid var(--green);outline-offset:2px}
 .share-pill{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:45px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;font-weight:600;text-decoration:none;padding:6px 10px;cursor:pointer;box-shadow:none}
 .share-pill:hover{background:var(--soft);border-color:var(--muted);color:var(--ink);text-decoration:none;box-shadow:none;transform:none}
@@ -12,7 +11,8 @@
 .share-link .brand-icon{color:var(--green);flex:none}
 .share-more{box-sizing:border-box;display:inline-flex;align-items:center;gap:7px;height:45px;min-height:45px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;font-weight:600;padding:5px 12px 5px 7px;cursor:pointer}
 .share-more:hover,.share-more[aria-expanded=true]{background:var(--soft);border-color:var(--muted)}
-.share-more-dots{display:inline-grid;place-items:center;width:27px;height:27px;border-radius:50%;background:var(--green);color:var(--paper);font-size:12px;font-weight:800;letter-spacing:-1px;line-height:1;padding-bottom:5px}
+.share-more-dots{display:inline-grid;place-items:center;width:27px;height:27px;border-radius:50%;background:var(--green);color:var(--paper)}
+.share-more-dots svg{display:block;fill:currentColor}
 .share-platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;width:min(340px,100%);padding:9px;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:0 8px 24px #00000012}
 .share-platforms[hidden]{display:none}
 .share-platforms .page-share{grid-column:1/-1;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:2px}
@@ -20,7 +20,7 @@
 .share-platforms .share-link:hover{background:var(--soft);border-color:transparent}
 .share-platforms>a{display:flex;align-items:center;justify-content:flex-start;gap:9px;min-width:0;min-height:45px;padding:7px 8px;border-radius:7px;color:var(--ink);font-size:13px;font-weight:500;line-height:1.2;text-decoration:none}
 .share-platforms>a:hover{background:var(--soft);color:var(--ink);text-decoration:none}
-.share-platforms>a .social-icon{width:22px;height:22px}
+.share-platforms>a{--social-size:21px}
 .share-platforms>a svg{flex:none}
 .share-platforms .share-status,.share-platforms input{grid-column:1/-1;min-width:0;max-width:100%}
 .share-status:empty,.share-platforms input[hidden]{display:none}

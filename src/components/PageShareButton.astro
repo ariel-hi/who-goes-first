@@ -4,7 +4,7 @@ interface Props { label?: string }
 const { label = 'Share' } = Astro.props;
 ---
 <div class="page-share" data-page-share hidden>
-  <button type="button" class="share-pill share-link" data-share-button aria-label={label === 'Share' ? 'Share this page' : label}><BrandIcon name="link" />{label}</button>
+  <button type="button" class="share-pill share-link" data-share-button aria-label={label === 'Share' ? 'Share this page' : label}><BrandIcon name="share" />{label}</button>
   <span class="small muted" role="status" data-share-status></span>
   <input type="url" readonly hidden aria-label="Clean sharing link" data-share-link />
 </div>

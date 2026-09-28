@@ -1,9 +1,10 @@
 ---
 // Generic interface icons. Platform logos belong in SocialIcon with official assets.
-interface Props { name: 'link' | 'bag' | 'book' | 'page' | 'dice' | 'spark'; class?: string }
+interface Props { name: 'link' | 'share' | 'bag' | 'book' | 'page' | 'dice' | 'spark'; class?: string }
 const { name, class: className } = Astro.props;
 const paths: Record<Props['name'], string> = {
   link: 'M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a1 1 0 1 1 1.4 1.4L12 13.4a1 1 0 0 1-1.4 0ZM7.8 18.4a4.2 4.2 0 0 1-3-7.2l2.1-2.1a1 1 0 1 1 1.4 1.4l-2.1 2.1a2.2 2.2 0 0 0 3.1 3.1l2.1-2.1a1 1 0 1 1 1.4 1.4l-2.1 2.1a4.2 4.2 0 0 1-2.9 1.3Zm7.9-5.2a1 1 0 0 1-.7-1.7l2.1-2.1a2.2 2.2 0 0 0-3.1-3.1L11.9 8.4a1 1 0 1 1-1.4-1.4l2.1-2.1a4.2 4.2 0 0 1 5.9 5.9l-2.1 2.1a1 1 0 0 1-.7.3Z',
+  share: '',
   bag: 'M7 7V6a5 5 0 0 1 10 0v1h2.2a1 1 0 0 1 1 .9l1.2 13a1 1 0 0 1-1 1.1H3.6a1 1 0 0 1-1-1.1l1.2-13a1 1 0 0 1 1-.9H7Zm2 0h6V6a3 3 0 0 0-6 0v1Zm-2 2H5.7l-1 11h14.6l-1-11H17v2a1 1 0 1 1-2 0V9H9v2a1 1 0 1 1-2 0V9Z',
   book: 'M5 3h11a3 3 0 0 1 3 3v14a1 1 0 0 1-1 1H6.5A2.5 2.5 0 0 1 4 18.5V4a1 1 0 0 1 1-1Zm1 2v11.05c.16-.03.33-.05.5-.05H17V6a1 1 0 0 0-1-1H6Zm.5 13a.5.5 0 0 0 0 1H17v-1H6.5ZM8 7h6v2H8V7Z',
   page: 'M6 2h8.4L20 7.6V21a1 1 0 0 1-1 1H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 2H6v16h12V9h-5V4Zm2 .8V7h2.2L15 4.8ZM8 12h8v2H8v-2Zm0 4h8v2H8v-2Z',
@@ -12,4 +13,4 @@ const paths: Record<Props['name'], string> = {
 };
 import '../styles/social.css';
 ---
-<svg class:list={['brand-icon', className]} viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d={paths[name]} /></svg>
+<svg class:list={['brand-icon', className]} viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">{name === 'share' ? <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m0 0L7 8m5-5 5 5" /><path d="M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" /></g> : <path fill="currentColor" d={paths[name]} />}</svg>
