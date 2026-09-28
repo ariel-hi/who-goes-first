@@ -3,16 +3,33 @@
   "slug": "power-grid-recharged-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ba7e1f733aafe62b047da921f1f6e8d1381b6073267ad253835a88a3cbc439ed",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "849529323c6b89c5b4d26ef5ad671f51fbad786e64086a4c0ec3b97ee31575ae",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Power Grid",
   "aliases": [
     "Power Grid Recharged",
     "Funkenschlag"
   ],
   "editionLabel": "Rio Grande Games Recharged English rules, 2018",
+  "image": {
+    "file": "/images/games/power-grid-recharged-rio-grande-en-cover.jpg",
+    "alt": "Power Grid Recharged Rio Grande Games box, stock RIO559",
+    "width": 228,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://littlebigwars.com/cdn/shop/files/rgg_20559.jpg?v=1698953820&width=1445",
+      "publisher": "Rio Grande Games (retailer product photograph)"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games / 2F-Spiele / Lars-Arne Kalusky",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Little Big Wars’ direct product photo at https://littlebigwars.com/products/power-grid-recharged-2nd-ed-rio-grande-games-559 shows the original Recharged Edition box and lists Rio Grande stock 559. Rio Grande’s official listing https://www.riograndegames.com/games/power-grid-recharged/ confirms stock RIO559 and the Recharged rules; the publisher site currently blocks image retrieval. Reduced to 228 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "At the start of the game, player order is set randomly by placing one house from each player on the player order track. Order is re-determined once after the first round's power plant auction and at the start of every later round: the player with the most connected cities goes first.",
   "officialTieBreak": "When re-determining order, if players are tied for most cities, the one with the biggest power plant goes first.",
   "houseFallback": null,
