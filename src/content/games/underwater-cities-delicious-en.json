@@ -3,10 +3,10 @@
   "slug": "underwater-cities-delicious-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "9e2744f526eec04c8bd70ba2bee0c2c44e1462ab97a898a5bcdeff0e9b2f0a4c",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "2d6603ff5ded425d55469791e44268652af1b98b5bbe498e8079517251a9615a",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Underwater Cities",
   "aliases": [],
   "editionLabel": "Delicious Games English base game",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Current Delicious Games catalog links official assets domain English manual. Rendered page6 random first-round track and explicit space1first, page7fixedtrackorderwithinround. Component-specific randomized full order, excluded from random mix. Source custody: research/source-files/popular-sep26-08/underwater.pdf; SHA-256 7a413cefb5417f56b80c863e7fb134263017f006658aa42e715f40b02dd19114. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/underwater-cities-delicious-en-cover.jpg",
+    "alt": "Underwater Cities official rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://assets.deliciousgames.org/rules/UnderwaterCities-rules-ENG-web.pdf",
+      "publisher": "Delicious Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Delicious Games",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of the publisher-hosted rulebook: https://assets.deliciousgames.org/rules/UnderwaterCities-rules-ENG-web.pdf. The identifiable cover title and artwork were visually reviewed against the article edition (Delicious Games English base game).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

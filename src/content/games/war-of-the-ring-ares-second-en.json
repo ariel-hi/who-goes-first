@@ -3,10 +3,10 @@
   "slug": "war-of-the-ring-ares-second-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "1ad2ec4a0eb1e460aef51aa854ef6320e33d30cd78ea06cc289439c3eb0a918b",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "142d2a3bf8bba9feda228a97bfb8d3fb505814b92b53858961b83078277eab8f",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "War of the Ring: Second Edition",
   "aliases": [],
   "editionLabel": "Ares English second edition",
@@ -38,5 +38,22 @@
   "internalEvidence": "Ares second-edition product and rules pages identify the English rulebook. Ares download returned403, so used the complete Ares-authored English manual on warofthering.eu. Rendered18 explicitly Free Peoples first for action resolution;45 identifies initial Leading players and non-Leading Free Peoples first. Scope distinguishes standard two-player opening from four-player team action order. Source custody: research/source-files/popular-sep26-05/ring.pdf; SHA-256 696181ef27ea6da267b24aab7174b9f773fec57c1b27adca5b379511543804f6. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The Ares-hosted download was unavailable. The cited publisher-authored manual is hosted on the dedicated War of the Ring website."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/war-of-the-ring-ares-second-en-cover.jpg",
+    "alt": "War of the Ring: Second Edition official rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://warofthering.eu/WotR_2nd_Edition_Rules.pdf",
+      "publisher": "Ares Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Ares Games",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of the publisher-hosted rulebook: https://warofthering.eu/WotR_2nd_Edition_Rules.pdf. The identifiable cover title and artwork were visually reviewed against the article edition (Ares English second edition).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

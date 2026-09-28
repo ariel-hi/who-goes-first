@@ -3,10 +3,10 @@
   "slug": "stockpile-nauvoo-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f7842e1f8e30ffb36e637a6874b050ff019d671a59900e5b80182d4908970663",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "a4eead521140b05aaa81f554e1a3e5dd2e9c5621ac7dc6ec4329da88a587e979",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Stockpile",
   "aliases": [],
   "editionLabel": "Nauvoo Games English base-game rules",
@@ -38,5 +38,22 @@
   "internalEvidence": "Downloaded the English rulebook linked from Nauvoo Games’ Stockpile page and rendered setup page 2. Setup step 6 supplies the previous-meal cost criterion; page 4 confirms turn order and later passing of the token. SHA-256: c289bec9af589a49a6293d4767d28fa954869739ddd07e5b5b6b52ec6ead33b7. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
   "uncertainty": [
     "The booklet gives no tie procedure. Excluded from the portable random mix because it asks players to disclose a financial amount."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/stockpile-nauvoo-en-cover.jpg",
+    "alt": "Stockpile official rulebook cover",
+    "width": 387,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nauvoogames.com/rules/Stockpile_Rules.pdf",
+      "publisher": "Nauvoo Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Nauvoo Games",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of the publisher-hosted rulebook: https://www.nauvoogames.com/rules/Stockpile_Rules.pdf. The identifiable cover title and artwork were visually reviewed against the article edition (Nauvoo Games English base-game rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "squeaky-gateongames-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "39933c6b628cbe756801d8af06b35f4de71c2f69202a4aec19242616be178e04",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "ab29b6b643b07df49bf8618973a8ce8fae25f627f8595968417c919b907213dd",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Squeaky",
   "aliases": [],
   "editionLabel": "GateOnGames English rulebook",
@@ -37,5 +37,22 @@
   "internalEvidence": "The publisher's updated downloads page and Squeaky product page link this English PDF. Rendered page 5, setup step 8, gives the dried-fruit criterion. Page 6 confirms clockwise turns. Squeaky is identified by its publisher as a revised version of 7: The Sins, but has its own distinct rule and inventory identity. Source SHA-256: cadf7ef43474c474edfb72c464141477af4c514d93864fed2fd77cd3236e3478. Publisher downloads: https://www.gateongames.com/rulebook/. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the rendered publisher setup and turn-order pages. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The rulebook does not define 'excellent' dried fruit or specify a tie-break."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/squeaky-gateongames-en-cover.jpg",
+    "alt": "Squeaky official rulebook cover",
+    "width": 298,
+    "height": 420,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.gateongames.com/wp-content/uploads/2024/09/Squeaky-Rulebook-EN-v1.pdf",
+      "publisher": "GateOnGames"
+    },
+    "fairUse": {
+      "rightsHolder": "GateOnGames",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of the publisher-hosted rulebook: https://www.gateongames.com/wp-content/uploads/2024/09/Squeaky-Rulebook-EN-v1.pdf. The identifiable cover title and artwork were visually reviewed against the article edition (GateOnGames English rulebook).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
