@@ -3,15 +3,32 @@
   "slug": "magic-the-gathering-wizards-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "d769094ee257df8faf98d9532d8a7759419f252d0d4802182fbdf4e96a10d991",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "3a9181e176fc001108a2603650f57892079c20f978249427302e59241dc7ae69",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Magic: The Gathering",
   "aliases": [
     "MTG"
   ],
   "editionLabel": "Wizards English rules — two-player game",
+  "image": {
+    "file": "/images/games/magic-the-gathering-wizards-en-cover.jpg",
+    "alt": "Back of a standard physical Magic: The Gathering card",
+    "width": 258,
+    "height": 360,
+    "presentation": "photo",
+    "source": {
+      "url": "https://media.wizards.com/2022/images/daily/en_7C0yERSDK6.png",
+      "publisher": "Wizards of the Coast"
+    },
+    "fairUse": {
+      "rightsHolder": "Wizards of the Coast",
+      "rationale": "Small publisher-sourced standard physical card-back visual identifies Magic: The Gathering in an editorial starting-rule article; no specific product package is implied.",
+      "provenance": "Wizards of the Coast identifies this image as “Magic Card Back” in its official 30th-anniversary article https://magic.wizards.com/en/news/announcements/kicking-magics-30th-anniversary-celebration-2022-10-04. The record covers ordinary physical two-player play across sets and therefore has no single edition-specific package. This standard physical card back identifies the game without implying a specific product box. Reduced to 258 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "For the first game, agree on a method to select who chooses the starting player, such as a coin flip or dice roll. That person decides who takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,
