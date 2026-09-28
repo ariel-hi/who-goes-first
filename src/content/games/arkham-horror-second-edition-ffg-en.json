@@ -3,10 +3,10 @@
   "slug": "arkham-horror-second-edition-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "573da8c765b88af615c0662e2da77072c3ee4a077d7e6eec3ced775dc9499343",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "9b375e95545a60c0d747b4d614baa82bda8b6a98f71260831251c438ead55ab6",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Arkham Horror",
   "aliases": [
     "Arkham Horror Second Edition",
@@ -14,6 +14,23 @@
     "AH2"
   ],
   "editionLabel": "Fantasy Flight Games second edition English rulebook, 2005",
+  "image": {
+    "file": "/images/games/arkham-horror-second-edition-ffg-en-cover.jpg",
+    "alt": "Cover page of the official Arkham Horror rulebook",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/e8/17/e817095d-ac80-482b-867b-41b2e41a57f1/arkham_horror_core_rulebook.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Fantasy Flight Games rulebook PDF: https://images-cdn.fantasyflightgames.com/filer_public/e8/17/e817095d-ac80-482b-867b-41b2e41a57f1/arkham_horror_core_rulebook.pdf. The illustrated cover displays the game title and matches the cited edition: Fantasy Flight Games second edition English rulebook, 2005. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Select one player at random to be the first player and give them the first player marker.",
   "officialTieBreak": null,
   "houseFallback": null,

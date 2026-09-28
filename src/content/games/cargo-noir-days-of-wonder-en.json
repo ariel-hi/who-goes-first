@@ -3,13 +3,30 @@
   "slug": "cargo-noir-days-of-wonder-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "01b9c1b67727cb8e88be00242b6c2cb9231d03540b6b526bbb8677c7ef683909",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "684452c38fd5bad645b9777f77ab3aa5bcac64aa1f1e5a1ec60d36b9cdc905c0",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cargo Noir",
   "aliases": [],
   "editionLabel": "Days of Wonder English rules",
+  "image": {
+    "file": "/images/games/cargo-noir-days-of-wonder-en-cover.jpg",
+    "alt": "Cover page of the official Cargo Noir rulebook",
+    "width": 325,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/cn_rules_2015_en.pdf",
+      "publisher": "Days of Wonder"
+    },
+    "fairUse": {
+      "rightsHolder": "Days of Wonder and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Days of Wonder rulebook PDF: https://cdn.svc.asmodee.net/production-daysofwonder/uploads/2024/07/cn_rules_2015_en.pdf. The illustrated cover displays the game title and matches the cited edition: Days of Wonder English rules. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever last visited a port in real life starts and takes the first-player marker. Turns proceed clockwise.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",

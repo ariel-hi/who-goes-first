@@ -3,16 +3,33 @@
   "slug": "disney-hocus-pocus-the-game-ravensburger-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e8feaf08e46125b59999f9455aa451254dd5e74ea79a823a675989a08daca8c9",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "03ee1cf5a49481d1f32378c930dce70db8b5cd29272b4b283b79d49e020203e7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Disney Hocus Pocus: The Game",
   "aliases": [
     "Hocus Pocus",
     "Hocus Pocus The Game"
   ],
   "editionLabel": "Ravensburger English rulebook",
+  "image": {
+    "file": "/images/games/disney-hocus-pocus-the-game-ravensburger-en-cover.jpg",
+    "alt": "Cover page of the official Disney Hocus Pocus: The Game rulebook",
+    "width": 326,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26946%20Anl%20Disney%20Hocus%20Pocus.pdf?ossl=pds_text_Spielanleitung",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Ravensburger rulebook PDF: https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/26946%20Anl%20Disney%20Hocus%20Pocus.pdf?ossl=pds_text_Spielanleitung. The illustrated cover displays the game title and matches the cited edition: Ravensburger English rulebook. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever last lit a candle starts. Play proceeds clockwise.",
   "officialTieBreak": "If there is doubt about who should start, choose the oldest player.",
   "houseFallback": null,

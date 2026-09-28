@@ -3,13 +3,30 @@
   "slug": "citadels-fantasy-flight-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "5554e3d8280af2cfd62532751e82f27b79189c8ab2997a621c9cbb67b0fd803d",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "df826453c8ef0fc29bb569f7c3a045780783878ee37d4aa2106c2174e6f508bf",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Citadels",
   "aliases": [],
   "editionLabel": "Fantasy Flight English original edition",
+  "image": {
+    "file": "/images/games/citadels-fantasy-flight-original-en-cover.jpg",
+    "alt": "Cover page of the official Citadels rulebook",
+    "width": 220,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/f2/e7/f2e74a36-bed7-4a38-aff4-c2e968a1c369/citadels-rules-english.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Fantasy Flight Games rulebook PDF: https://images-cdn.fantasyflightgames.com/filer_public/f2/e7/f2e74a36-bed7-4a38-aff4-c2e968a1c369/citadels-rules-english.pdf. The illustrated cover displays the game title and matches the cited edition: Fantasy Flight English original edition. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The oldest player receives the crown and is first to choose a character card.",
   "officialTieBreak": null,
   "houseFallback": "Choose randomly among the tied oldest players.",

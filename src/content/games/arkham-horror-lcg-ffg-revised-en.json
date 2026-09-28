@@ -3,10 +3,10 @@
   "slug": "arkham-horror-lcg-ffg-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "14365532f00d2c698342b8e886217939141220b85a5cf6ab1ccb20668a823b63",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "5c3f3f570813a55b7728f02ea26f7e7ba22e4d076f852bc3e5812691ad57da77",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Arkham Horror: The Card Game",
   "aliases": [
     "Arkham Horror LCG",
@@ -14,6 +14,23 @@
     "Arkham LCG"
   ],
   "editionLabel": "Fantasy Flight Games English Learn to Play, revised core set, 2021",
+  "image": {
+    "file": "/images/games/arkham-horror-lcg-ffg-revised-en-cover.jpg",
+    "alt": "Cover page of the official Arkham Horror: The Card Game rulebook",
+    "width": 340,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/dd/78/dd7818fe-0c9a-4a6c-b685-e32ab55b1702/ahc60_learn_to_play_web.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Fantasy Flight Games rulebook PDF: https://images-cdn.fantasyflightgames.com/filer_public/dd/78/dd7818fe-0c9a-4a6c-b685-e32ab55b1702/ahc60_learn_to_play_web.pdf. The illustrated cover displays the game title and matches the cited edition: Fantasy Flight Games English Learn to Play, revised core set, 2021. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "There is no fixed first player. During setup the group chooses a lead investigator, and each investigation phase the investigators decide together who takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,

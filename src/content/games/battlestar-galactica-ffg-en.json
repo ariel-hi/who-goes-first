@@ -3,16 +3,33 @@
   "slug": "battlestar-galactica-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "690b9227698e5f0df702bb7d76434f0874de41e96f2fd78c9a6f9857c2239906",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "8431fdb95caf381f0586da7e715d2d2f84eb9a5b7b7b4e9ce6e5acd60d761840",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Battlestar Galactica: The Board Game",
   "aliases": [
     "Battlestar Galactica",
     "BSG"
   ],
   "editionLabel": "Fantasy Flight Games English rulebook",
+  "image": {
+    "file": "/images/games/battlestar-galactica-ffg-en-cover.jpg",
+    "alt": "Cover page of the official Battlestar Galactica: The Board Game rulebook",
+    "width": 340,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/Battlestar_Galactica/bsg-rulebook-web.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Fantasy Flight Games rulebook PDF: https://images-cdn.fantasyflightgames.com/ffg_content/Battlestar_Galactica/bsg-rulebook-web.pdf. The illustrated cover displays the game title and matches the cited edition: Fantasy Flight Games English rulebook. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly choose a player to be the first player and give them the current player token. That player chooses their character first and takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,

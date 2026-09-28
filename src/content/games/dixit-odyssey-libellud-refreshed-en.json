@@ -3,13 +3,30 @@
   "slug": "dixit-odyssey-libellud-refreshed-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "89a26d2207fdf44ba3a95b5e2cf4b3a4baf223caa7525cb2a9c93b29b7312348",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "feba07ad66ddd87dd4ba63a63e73b8c1658838c41afb05f892a9c3600ac8d8f3",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dixit: Odyssey",
   "aliases": [],
   "editionLabel": "Libellud English refreshed edition",
+  "image": {
+    "file": "/images/games/dixit-odyssey-libellud-refreshed-en-cover.jpg",
+    "alt": "Cover page of the official Dixit: Odyssey rulebook",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-libellud/uploads/2024/04/ODYSSEY_REFRESH_RULES_EN.pdf",
+      "publisher": "Libellud"
+    },
+    "fairUse": {
+      "rightsHolder": "Libellud and any credited cover artist",
+      "rationale": "Reduced first-page rulebook cover used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the rulebook or artwork.",
+      "provenance": "Page 1 of the official Libellud rulebook PDF: https://cdn.svc.asmodee.net/production-libellud/uploads/2024/04/ODYSSEY_REFRESH_RULES_EN.pdf. The illustrated cover displays the game title and matches the cited edition: Libellud English refreshed edition. Reviewed from the rendered PDF first page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The first player to think of a clue for a card in their hand becomes the first storyteller.",
   "officialTieBreak": null,
   "houseFallback": "If two players are ready together, choose randomly between them.",
