@@ -8,22 +8,50 @@
   "firstPlayerRule": "The person who most recently found a lost item goes first.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["Play then continues to the left.", "The illustrated cards in this FoxMind edition include Hebrew text; the rulebook itself is in English."],
+  "clarifications": [
+    "Play then continues to the left.",
+    "The illustrated cards in this FoxMind edition include Hebrew text; the rulebook itself is in English."
+  ],
   "interpretation": null,
-  "sources": [{
-    "url": "https://foxmind.co.il/wp-content/uploads/2022/11/SleepingQueens2_RULES_ENG_FM-FOR-SITE.pdf",
-    "title": "Sleeping Queens 2: The Rescue! — English Rules of Play",
-    "publisher": "FoxMind",
-    "printedPages": [],
-    "pdfPagesOneBased": [1, 3],
-    "location": "Cover and How to Play opening paragraph",
-    "checkedAt": "2026-09-25"
-  }],
+  "sources": [
+    {
+      "url": "https://foxmind.co.il/wp-content/uploads/2022/11/SleepingQueens2_RULES_ENG_FM-FOR-SITE.pdf",
+      "title": "Sleeping Queens 2: The Rescue! — English Rules of Play",
+      "publisher": "FoxMind",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1,
+        3
+      ],
+      "location": "Cover and How to Play opening paragraph",
+      "checkedAt": "2026-09-25"
+    }
+  ],
   "internalEvidence": "The FoxMind-hosted six-page PDF names Sleeping Queens 2: The Rescue! on the cover and illustrates Hebrew-language cards. The English How to Play instruction on PDF page 3 was rendered and read visually. The filename path indicates 2022/11; the matching Gamewright-authored English rules carry ©2022. Downloaded PDF SHA-256: f30082523ce931ee2ba87a5544d0a92b13ff8b23f8e0d19ca80f83b5fb76b301. Owner-authorized Codex editorial review, 2026-09-25.",
-  "uncertainty": ["The manual gives no tie-break if players found lost items equally recently.", "The answer is tied to the FoxMind edition; other editions may differ."],
+  "uncertainty": [
+    "The manual gives no tie-break if players found lost items equally recently.",
+    "The answer is tied to the FoxMind edition; other editions may differ."
+  ],
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4bdafe581d2b45d66e7701feda91225e87a86266fc522151364516990ff8484a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "ff00ba836514ce2a68c3b317412ee90e42c93ed0e12baa467a917a8bd5859e9a",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  "materiallyUpdatedAt": "2026-09-28",
+  "image": {
+    "file": "/images/games/sleeping-queens-2-foxmind-en-2022-cover.jpg",
+    "alt": "Sleeping Queens 2 Hebrew-card game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://foxmind.co.il/wp-content/uploads/2022/11/sleeping-queen2_1.jpg",
+      "publisher": "FoxMind"
+    },
+    "fairUse": {
+      "rightsHolder": "FoxMind",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official FoxMind product page: https://foxmind.co.il/product/sleeping_queens_2/. Exact publisher-hosted package image: https://foxmind.co.il/wp-content/uploads/2022/11/sleeping-queen2_1.jpg. The package and game identity were visually reviewed against the article edition (FoxMind English rules for Hebrew-card edition, 2022).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
