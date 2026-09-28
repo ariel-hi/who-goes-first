@@ -3,8 +3,8 @@
   "slug": "cartographers-thunderworks-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "2906861584ca0c6730c7666b545f260bf1445ffe7a479e9d08153939ebb1dc47",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "2bd1e16ebdce5fae9e1c9a9c16ea1b873e151a5f5ebc1fa808627ac4ec0d4c3a",
   "publishedAt": "2026-09-26",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cartographers",
@@ -12,6 +12,23 @@
     "Cartographers: A Roll Player Tale"
   ],
   "editionLabel": "Thunderworks English base game",
+  "image": {
+    "file": "/images/games/cartographers-thunderworks-en-cover.jpg",
+    "alt": "Official product image showing the Cartographers game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thunderworksgames.com/cdn/shop/files/Cartographers-normalized.png?v=1761778991",
+      "publisher": "Thunderworks Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Thunderworks Games and credited cover artists or photographers",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Thunderworks Games product page: https://thunderworksgames.com/products/cartographers-board-game. Edition match: Cartographers base game, distinct from Heroes or collector editions. Original image URL: https://thunderworksgames.com/cdn/shop/files/Cartographers-normalized.png?v=1761778991",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "There is no individual starting turn. Reveal an explore card for everyone; all players then choose and draw their terrain and shape at the same time.",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -3,15 +3,32 @@
   "slug": "baerenpark-lookout-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f5e0b586933ee310171f47b28065a89a48cb44cef2597e20b54c175f42529243",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "69c59818e9e6d9afe6d8fdc6d3e452aa16ed790dae5cac25583c6fd92b6dae45",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Bärenpark",
   "aliases": [
     "Barenpark"
   ],
   "editionLabel": "Lookout Games English rulebook",
+  "image": {
+    "file": "/images/games/baerenpark-lookout-en-cover.jpg",
+    "alt": "Official product image showing the Bärenpark game box",
+    "width": 305,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://lookout-spiele.de/upload/en_baerenpark.html_CoverImage.jpg",
+      "publisher": "Lookout Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games and credited cover artist Klemens Franz",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Lookout Games product page: https://www.lookout-spiele.de/en/games/baerenpark.html. Edition match: Original 2017 Bärenpark cover art on the publisher English product page. Original image URL: https://lookout-spiele.de/upload/en_baerenpark.html_CoverImage.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently visited an animal park starts. The rules also allow choosing the starting player at random.",
   "officialTieBreak": null,
   "houseFallback": null,
