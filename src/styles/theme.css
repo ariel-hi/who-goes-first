@@ -40,6 +40,7 @@
 :root[data-theme=dark] .analytics-consent [data-analytics-decline] { color:var(--green); background:transparent; }
 /* The painted pieces and their ink retain their physical colors in either theme. */
 :root[data-theme=dark] .card-front { color:var(--ink); }
+:root[data-theme=dark] .reveal-player:not(.reveal-chosen) .card-front { background:color-mix(in srgb,var(--piece) 15%,#493d4d); border-color:#8b788f; box-shadow:0 3px 8px #150f1b55,inset 0 1px #ffffff1a; }
 @media(prefers-reduced-motion:reduce) {
   .site-nav a, .site-nav a::after, .theme-toggle, .primary, .segmented label, .segmented .more-modes, .stepper button { transition:none; }
 }

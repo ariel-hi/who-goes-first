@@ -323,6 +323,24 @@ test('new methods fit twelve players on a narrow screen and support reduced moti
   }
 });
 
+test('large table reveals keep all twelve pieces in a compact narrow scene', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  for (const method of methods.filter(item => ['towers', 'straws', 'shells'].includes(item.path))) {
+    await openMethod(page, method.path);
+    await page.getByLabel('Player count', { exact: true }).fill('12');
+    await page.getByLabel('Player count', { exact: true }).blur();
+    await page.getByRole('button', { name: 'Pick a player' }).click();
+    const scene = page.locator(`.picker .reveal-stage ${method.scene}`);
+    await expect(scene).toHaveAttribute('data-settled', 'true');
+    await expect(scene.locator('.reveal-player')).toHaveCount(12);
+    await expect(scene.locator('.reveal-chosen')).toHaveCount(1);
+    expect((await scene.boundingBox())!.height).toBeLessThan(650);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).length)).toBe(0);
+  }
+});
+
 test('twelve colors stay distinct and consistent between roster and reveals', async ({ page }) => {
   test.setTimeout(120000);
   for (const method of methods.filter(m => m.path !== 'spinner')) {

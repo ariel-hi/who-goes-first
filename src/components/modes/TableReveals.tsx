@@ -53,15 +53,15 @@ export default function TableReveals({ outcome, plan, mode, settled, preview = f
   return <div className={`table-reveal ${mode}-reveal`} data-count={outcome.players.length} data-five={outcome.players.length >= 5} data-many={outcome.players.length > 6} data-settled={settled} data-preview={preview} aria-label={preview ? `${label} preview` : label}>
     {outcome.players.map((player, i) => <div className={`reveal-player ${i === chosen ? 'reveal-chosen' : ''}`} data-fall-style={mode === 'tower' && i !== chosen ? plan[player.id]!.tower.style : undefined} key={player.id} style={{ '--piece': playerColor(player), '--flip-delay': `${plan[player.id]!.flipAt}ms`, '--flip-duration': `${plan[player.id]!.flipDuration}ms`, '--deal-delay': `${Math.round(plan[player.id]!.flipAt * .34)}ms`, '--match-tilt': `${plan[player.id]!.matchTilt}deg`, '--match-delay': `${plan[player.id]!.matchAt}ms`, '--dice-delay': `${plan[player.id]!.diceAt}ms`, '--coin-delay': `${plan[player.id]!.coin.delay}ms`, '--coin-duration': `${plan[player.id]!.coin.duration}ms`, '--coin-apex': `-${plan[player.id]!.coin.lift}px`, '--coin-tilt': `${plan[player.id]!.coin.tilt}deg`, '--coin-turn': `${plan[player.id]!.coin.turn + (i === chosen ? Math.sign(plan[player.id]!.coin.turn) * 180 : 0)}deg`, '--coin-drift': `${plan[player.id]!.coin.drift}px`, '--shell-delay': `${plan[player.id]!.shell.delay}ms`, '--shell-tilt': `${plan[player.id]!.shell.tilt}deg` } as CSSProperties}>
       {mode === 'cards' && <div className="draw-card" aria-hidden="true"><div className="card-flipper"><div className="card-face card-back"><span className="card-back-mark">{i + 1}</span></div><div className="card-face card-front"><span className="card-number">{i + 1}</span><span className="card-result">{i === chosen ? 'GO' : '—'}</span></div></div></div>}
-      {mode === 'tower' && <div className="block-stack" aria-hidden="true">{Array.from({ length: 5 }, (_, j) => {
+      {mode === 'tower' && <div className="block-stack" aria-hidden="true"><span className="block-stack-art">{Array.from({ length: 5 }, (_, j) => {
         const tower = plan[player.id]!.tower;
         const [baseX, land, angle] = towerFalls[tower.style]![Math.max(0, j - 2)]!;
         const fallX = baseX + tower.drift;
         const fallY = j * 19 - 5 + land;
         const stagger = tower.style === 3 ? j - 2 : 4 - j;
         return <i key={j} style={{ '--block': j, '--fall-x': `${fallX}px`, '--fall-y': `${fallY}px`, '--fall-angle': `${angle}deg`, '--fall-mid-x': `${fallX * .5}px`, '--fall-mid-y': `${Math.max(-7, fallY * .2 - 12)}px`, '--fall-mid-angle': `${angle * .4}deg`, '--fall-delay': `${tower.fallAt + stagger * tower.stagger}ms`, '--fall-duration': `${tower.fallDuration}ms` } as CSSProperties}><span /></i>;
-      })}</div>}
-      {mode === 'straws' && <div className="match-draw" aria-hidden="true"><div className="matchstick"><span className="match-wood" /><span className="match-head" /></div><div className="match-cover"><span className="match-cover-strike" /></div></div>}
+      })}</span></div>}
+      {mode === 'straws' && <div className="match-draw" aria-hidden="true"><span className="match-art"><span className="matchstick"><span className="match-wood" /><span className="match-head" /></span><span className="match-cover"><span className="match-cover-strike" /></span></span></div>}
       {mode === 'dice' && <div className="dice-pair" aria-hidden="true">{[0, 1].map(die => <Die key={die} compact={outcome.players.length > 12} value={i === chosen ? 6 : 1 + (i * 3 + die * 2 + outcome.drawId) % (die ? 6 : 5)} />)}</div>}
       {mode === 'coin' && <div className="coin-toss" aria-hidden="true"><span className="coin-shadow"/><span className="coin-flight"><span className="coin"><span className="coin-body">{[-7, -3, 0, 3, 7].map(depth => <span className="coin-edge" key={depth} style={{ '--depth': `${depth}px` } as CSSProperties}/>)}<span className="coin-face coin-tails"><span className="coin-number">{i + 1}</span></span><span className="coin-face coin-heads"><CrownEmblem /></span></span></span></span></div>}
       {mode === 'shells' && <ShellArt winner={i === chosen} />}
@@ -80,21 +80,23 @@ function CrownEmblem() {
 
 function ShellArt({ winner }: { winner: boolean }) {
   return <div className="shell-scene" aria-hidden="true">
-    <span className="shell-shadow"/>
-    <svg className="shell-bed" viewBox="0 0 110 112" aria-hidden="true">
-      <path d="M14 70Q30 49 55 49T96 70C94 88 79 101 55 101S16 88 14 70Z" fill="var(--piece)" stroke="#806a73" strokeWidth="1.5"/>
-      <path className="shell-bowl" d="M17 70Q32 55 55 55T93 70C79 80 67 84 55 84S31 80 17 70Z"/>
-      <path className="shell-bowl-light" d="M22 69Q37 58 55 58T88 69C76 77 66 80 55 80S34 77 22 69Z" opacity=".85"/>
-      <path d="M55 58v23M41 60l7 20M29 64l14 14M69 60l-7 20M81 64 67 78" fill="none" stroke="#fffdf9" strokeOpacity=".68" strokeWidth="1.3" strokeLinecap="round"/>
-      <path d="M20 82Q55 106 90 82" fill="none" stroke="#fffdf9" strokeOpacity=".7" strokeWidth="1.5" strokeLinecap="round"/>
-    </svg>
-    {winner && <span className="shell-pearl"/>}
-    <span className="shell-wobble"><svg className="shell-lid" viewBox="0 0 100 88">
-      <path className="shell-fan" d="M7 69 C6 53 12 39 21 32 C19 22 29 14 39 17 C45 7 55 7 61 17 C71 14 81 22 79 32 C88 40 94 54 93 69 Q74 80 50 75 Q26 80 7 69Z" fill="var(--piece)" stroke="#806a73" strokeWidth="1.5"/>
-      <path className="shell-sheen" d="M12 66 C14 47 24 33 38 22 C31 37 27 55 26 73Z" fill="#fffdf9" opacity=".27"/>
-      <path d="M50 74 Q45 45 39 17 M50 74 Q54 44 61 17 M50 74 Q35 46 21 32 M50 74 Q66 45 79 32 M50 74 Q26 60 10 58 M50 74 Q75 57 91 58" fill="none" stroke="#fffdf9" strokeOpacity=".8" strokeWidth="2" strokeLinecap="round"/>
-      <path d="M12 69 Q50 80 88 69" fill="none" stroke="#6d5964" strokeOpacity=".5" strokeWidth="2"/>
-    </svg></span>
+    <span className="shell-art">
+      <span className="shell-shadow"/>
+      <svg className="shell-bed" viewBox="0 0 110 112" aria-hidden="true">
+        <path d="M14 70Q30 49 55 49T96 70C94 88 79 101 55 101S16 88 14 70Z" fill="var(--piece)" stroke="#806a73" strokeWidth="1.5"/>
+        <path className="shell-bowl" d="M17 70Q32 55 55 55T93 70C79 80 67 84 55 84S31 80 17 70Z"/>
+        <path className="shell-bowl-light" d="M22 69Q37 58 55 58T88 69C76 77 66 80 55 80S34 77 22 69Z" opacity=".85"/>
+        <path d="M55 58v23M41 60l7 20M29 64l14 14M69 60l-7 20M81 64 67 78" fill="none" stroke="#fffdf9" strokeOpacity=".68" strokeWidth="1.3" strokeLinecap="round"/>
+        <path d="M20 82Q55 106 90 82" fill="none" stroke="#fffdf9" strokeOpacity=".7" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+      {winner && <span className="shell-pearl"/>}
+      <span className="shell-wobble"><svg className="shell-lid" viewBox="0 0 100 88">
+        <path className="shell-fan" d="M7 69 C6 53 12 39 21 32 C19 22 29 14 39 17 C45 7 55 7 61 17 C71 14 81 22 79 32 C88 40 94 54 93 69 Q74 80 50 75 Q26 80 7 69Z" fill="var(--piece)" stroke="#806a73" strokeWidth="1.5"/>
+        <path className="shell-sheen" d="M12 66 C14 47 24 33 38 22 C31 37 27 55 26 73Z" fill="#fffdf9" opacity=".27"/>
+        <path d="M50 74 Q45 45 39 17 M50 74 Q54 44 61 17 M50 74 Q35 46 21 32 M50 74 Q66 45 79 32 M50 74 Q26 60 10 58 M50 74 Q75 57 91 58" fill="none" stroke="#fffdf9" strokeOpacity=".8" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M12 69 Q50 80 88 69" fill="none" stroke="#6d5964" strokeOpacity=".5" strokeWidth="2"/>
+      </svg></span>
+    </span>
   </div>;
 }
 
