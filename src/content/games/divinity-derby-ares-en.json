@@ -3,10 +3,10 @@
   "slug": "divinity-derby-ares-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "3ce8ba4f799d81462da44f42b30e78e9c10308a47f05edc78873d9755908b9de",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "87c81023b21e65d14f631dcf6945648becd934ed3ead3b138cbcd280d68f7080",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Divinity Derby",
   "aliases": [],
   "editionLabel": "Ares Games English rulebook",
@@ -42,5 +42,22 @@
   "internalEvidence": "Rendered page 4 of the original Ares Games English rulebook preserved by designer Studio Giochi and checked pages 7, 8 and 11 for clockwise order and later token movement. Initial Set-Up provides the flying-creature criterion with an official youngest-player option. SHA-256: 7374c8777911332f8e60d72b6a8a3ffbaaf750896f0295e0c4a3509cae41334a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, turn order and edition.",
   "uncertainty": [
     "No tie-break is stated for equally recent flying-creature sightings; the youngest-player option is available."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/divinity-derby-ares-en-cover.jpg",
+    "alt": "Ares Divinity Derby box art with mythological creatures and trophy",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.uplay.it/storage/566874/conversions/divinity-derby-foto.webp",
+      "publisher": "Uplay.it listing for Ares Games Divinity Derby"
+    },
+    "fairUse": {
+      "rightsHolder": "Ares Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.uplay.it/en/gioco-da-tavolo-divinity-derby.html. The retailer identifies the Ares game; the image bears the Ares logo and matches the original 2017 English rulebook. Original image URL: https://www.uplay.it/storage/566874/conversions/divinity-derby-foto.webp",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

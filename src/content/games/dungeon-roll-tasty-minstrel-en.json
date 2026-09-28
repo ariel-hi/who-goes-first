@@ -3,10 +3,10 @@
   "slug": "dungeon-roll-tasty-minstrel-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8438e57e5e8217e08511ff95909ad0639a0f32c6a43f1e3b93ebec058632e817",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d8bfd872905224efff9fecb5a0e17d8615054ac9fac7bd9004c16198530c040f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dungeon Roll",
   "aliases": [],
   "editionLabel": "Tasty Minstrel Games English rulebook",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 4 of the image-only publisher-authored Dungeon Delver's Guide preserved by 1jour-1jeu. Game Setup step 3 names the most recent underground visitor as the opening Adventurer; step 4 assigns the player to their left as Dungeon Lord. SHA-256: 9e14ed28aa789585b1a1d977ebb7c61a3ef40e63296a78277aeae2bbe0a2234d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, turn order and edition.",
   "uncertainty": [
     "The multiplayer starting criterion has no stated tie-break."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dungeon-roll-tasty-minstrel-en-cover.jpg",
+    "alt": "Dungeon Roll Dungeon Delver's Guide title page with dragon and dungeon",
+    "width": 500,
+    "height": 370,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.1j1ju.com/medias/76/68/4f-dungeon-roll-rulebook.pdf",
+      "publisher": "Tasty Minstrel Games Dungeon Delver's Guide mirrored by 1jour-1jeu"
+    },
+    "fairUse": {
+      "rightsHolder": "Tasty Minstrel Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://cdn.1j1ju.com/medias/76/68/4f-dungeon-roll-rulebook.pdf. This is the illustrated first page of the original Tasty Minstrel Games English guide, not box packaging. Original image URL: https://cdn.1j1ju.com/medias/76/68/4f-dungeon-roll-rulebook.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

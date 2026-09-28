@@ -3,10 +3,10 @@
   "slug": "colorado-sylex-2022-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "769a60d3a56c088e70b449eef6f92129463a576d9d7831cb48106c9c8eeffbdd",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "241b44c6ec0b395f2eafbf44ea9514892bc354c713dfa0f13d054fdb2c3caa44",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Colorado",
   "aliases": [],
   "editionLabel": "Sylex Edition English rules, 2022",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 2, printed page 3, gives the deliberately specific criterion, official open-choice alternative, Caller token and unequal opening hands. Page 8 credits Sylex Edition ©2022. Roadmaps and Reward Chart match inventory BGG 366397. SHA-256: 20003d906cc6abc4584d977b255f9e5173cc10c2b6d7339a3f4773c9e8c01f68. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is given if the mine-visit method is used."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/colorado-sylex-2022-en-cover.jpg",
+    "alt": "Sylex Colorado box with stagecoach and western landscape",
+    "width": 422,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://jeuxbarjo.com/wp-content/uploads/2024/04/PR000183-01.png-filenameUTF-8PR000183-01.png",
+      "publisher": "Jeux Barjo listing for Sylex Edition Colorado"
+    },
+    "fairUse": {
+      "rightsHolder": "Sylex Edition and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://jeuxbarjo.com/produit/colorado/. The seller shows Sylex Edition original box art. The box has a French subtitle; the cited English rules share the original art and carry a 2022 copyright. Original image URL: https://jeuxbarjo.com/wp-content/uploads/2024/04/PR000183-01.png-filenameUTF-8PR000183-01.png",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

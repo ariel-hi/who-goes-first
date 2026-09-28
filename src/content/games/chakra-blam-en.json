@@ -3,10 +3,10 @@
   "slug": "chakra-blam-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "15ec892566e40015153443bb6bb956c8f5f61357285d30b59eb763d42dae0b24",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "26d7d3993e036b003eb5b6970082b2aaf6f1f07219b21b1510892c092673a78e",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Chakra",
   "aliases": [],
   "editionLabel": "Blam! English rulebook",
@@ -37,5 +37,22 @@
   "internalEvidence": "Visually checked the publisher-authored English rules mirrored by 1jour-1jeu. Printed page 2 assigns the token to the most nervous-looking player; the later end-of-game section uses the token to finish equal turns. The booklet credits Luka Krleža and Claire Conan and identifies Blam!, matching inventory BGG 267378. SHA-256: 4df203130f0be35aac460daf5fd3384359194bde8ce79c69cc00125da3c659d0. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked identity, first-player selection, and relevant later-round or variant instructions against the cited pages.",
   "uncertainty": [
     "The most-nervous criterion is subjective and the source gives no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/chakra-blam-en-cover.jpg",
+    "alt": "Original Blam! Chakra box with a flower-haired child",
+    "width": 500,
+    "height": 419,
+    "presentation": "cover",
+    "source": {
+      "url": "https://akoatujou.fr/uploads/_thumbs/hero/2019/03/chakra_4-1024x768-1024w.jpg",
+      "publisher": "Akoatujou 2019 review photo of Blam! original"
+    },
+    "fairUse": {
+      "rightsHolder": "Blam! and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://akoatujou.fr/chakra/. The article dates the photographed Blam! box to 2019, matching the original English rulebook. The photo was cropped to the box. Original image URL: https://akoatujou.fr/uploads/_thumbs/hero/2019/03/chakra_4-1024x768-1024w.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
