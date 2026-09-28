@@ -73,8 +73,8 @@ test('board games are browsable without search and searchable on demand', async 
   const { games, shelves } = getBrowseShelves();
   expect(shelves.flatMap(shelf => shelf.games).map(game => game.routeKey).toSorted()).toEqual(games.map(game => game.routeKey).toSorted());
   await page.goto('/board-games/');
-  await expect(page.getByRole('link', { name: 'Browse A games' })).toBeVisible();
-  await page.getByRole('link', { name: 'Browse A games' }).click();
+  await expect(page.getByRole('link', { name: /^A\s+\d+ games$/ })).toBeVisible();
+  await page.getByRole('link', { name: /^A\s+\d+ games$/ }).click();
   await expect(page).toHaveURL(/\/board-games\/browse\/a\/1\/$/);
   await expect(page.locator('[data-directory-shelf] li')).toHaveCount(shelves.find(shelf => shelf.letter === 'a' && shelf.page === 1)!.games.length);
   await page.goto('/board-games/');

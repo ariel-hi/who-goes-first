@@ -149,7 +149,7 @@ test('rules-page directory recovery remains an ordinary link without JavaScript'
     await expect(bridge).toHaveAttribute('href', '/board-games/');
     expect((await bridge.boundingBox())!.height).toBeGreaterThanOrEqual(44);
     await bridge.click();
-    await page.getByRole('link', { name: 'Browse A games' }).click();
+    await page.getByRole('link', { name: /^A\s+\d+ games$/ }).click();
     await expect(page).toHaveURL(/\/board-games\/browse\/a\/1\/$/);
     await expect(page.locator('[data-directory-shelf] li').first()).toBeVisible();
   } finally {
@@ -196,7 +196,7 @@ test('unavailable home lookup still offers the directory and unavailable directo
   await home.getByRole('link', { name: 'Find this game in the directory' }).click();
   await expect(page.getByRole('searchbox', { name: 'Search board games' })).toHaveValue('Missing game');
   await expect(page.locator('[data-count]')).toHaveText('Search is unavailable. Browse by letter below.');
-  await expect(page.getByRole('link', { name: 'Browse A games' })).toBeVisible();
+  await expect(page.getByRole('link', { name: /^A\s+\d+ games$/ })).toBeVisible();
   await expect(page.locator('[data-results]')).toBeHidden();
 });
 
@@ -259,7 +259,7 @@ test('malformed and overlong fragment searches fail clearly without fetching the
     await page.goto(`/board-games/#q=${fragment}`);
     await expect(page.getByRole('searchbox', { name: 'Search board games' })).toHaveValue('');
     await expect(page.locator('[data-count]')).toContainText('This search link could not be read');
-    await expect(page.getByRole('link', { name: 'Browse A games' })).toBeVisible();
+    await expect(page.getByRole('link', { name: /^A\s+\d+ games$/ })).toBeVisible();
   }
   expect(lookups).toBe(0);
 });
@@ -272,7 +272,7 @@ test('the home directory link and static shelves remain usable without JavaScrip
     const bridge = page.locator('[data-rule-lookup]').getByRole('link', { name: 'Browse all board games' });
     await expect(bridge).toHaveAttribute('href', '/board-games/');
     await bridge.click();
-    await page.getByRole('link', { name: 'Browse A games' }).click();
+    await page.getByRole('link', { name: /^A\s+\d+ games$/ }).click();
     await expect(page).toHaveURL(/\/board-games\/browse\/a\/1\/$/);
     await expect(page.locator('[data-directory-shelf] li').first()).toBeVisible();
   } finally {
