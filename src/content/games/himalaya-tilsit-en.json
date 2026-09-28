@@ -3,10 +3,10 @@
   "slug": "himalaya-tilsit-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f6e4125f39cae55556ed19f0ea397cf2d2cd272e420f15c1fb40a9c5ae04951f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "cd0dca3ffbc982b1d36eaec01a656604ce530dec24e22c5e25551e3e8988ed5b",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Himalaya",
   "aliases": [],
   "editionLabel": "Tilsit English rulebook",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Visually checked PDF page 2 of the publisher-authored English rules mirrored by Tesera. It names the wisest player, has that player take the 20-sided die, and passes the first caravaneer position clockwise on later turns. Matches inventory BGG 3800, the original Himalaya game rather than Trek 12: Himalaya. SHA-256: c3faff35f1405a3defe16e103fa28499d2d062c4c1b20a39774bc140b3030bae. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the game identity, edition, initial starter, and later role rotation against the cited pages.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/himalaya-tilsit-en-cover.jpg",
+    "alt": "Himalaya 2006 Tilsit Collection English box",
+    "width": 348,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147364746/Himalaya",
+      "publisher": "Noble Knight Games product image of the listed publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Tilsit Editions, Clash of Arms Games, and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/e/jpg1500/ecohima2.jpg; its listing identifies the original edition and manufacturer code ECOHIMA2. The pictured publisher marks and title match the listed English-edition rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

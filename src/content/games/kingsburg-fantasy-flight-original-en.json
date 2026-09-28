@@ -3,10 +3,10 @@
   "slug": "kingsburg-fantasy-flight-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "da1a87802de6da6bde6ebae4934684982be803abf47d191d5fa754f750fc6ea7",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "278447f61e4ebe28b696065e750524d731cff2f75579e4eec35f3d37e931faf3",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kingsburg",
   "aliases": [],
   "editionLabel": "Fantasy Flight English original edition",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Official FFG original English manual, not later Z-Man revised/third edition. Rendered PDF 2 original year-one all-tied aid exception and productive season lowest total, including white dice; setup PDF 1 random chart. Official tie uses previous position or initial random placement. Source custody: research/source-files/popular-sep26-13/kingsburg.pdf; SHA-256 d35a413c7107cd495d6ebfd1497fca99131d32bfd87287d4db554cd4e3e07f50. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/kingsburg-fantasy-flight-original-en-cover.jpg",
+    "alt": "Kingsburg original Fantasy Flight Games English box",
+    "width": 500,
+    "height": 490,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147386738/Kingsburg",
+      "publisher": "Noble Knight Games product photo of Fantasy Flight Games box"
+    },
+    "fairUse": {
+      "rightsHolder": "Counter srl, Fantasy Flight Games, and cover artists (precise image ownership not stated)",
+      "rationale": "Small, compressed box image identifies the original English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games photo https://image.nobleknight.com/f/jpg1500/ffgkb01.jpg shows its listing of Kingsburg first edition, Fantasy Flight Games, manufacturer code FFGKB01, 2008. Fantasy Flight Games original English rules https://images-cdn.fantasyflightgames.com/ffg_content/Kingsburg/kingsburg-rules.pdf identify the 2007�2008 Counter rights and FFG English distribution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

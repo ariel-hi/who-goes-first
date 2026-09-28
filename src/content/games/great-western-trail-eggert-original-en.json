@@ -3,10 +3,10 @@
   "slug": "great-western-trail-eggert-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "648c6bf59452f7a051e9b5eda3f9e657514ac82993ff65e402ab4d8de43d11d7",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b0a27efb8258b1308094358e684364c52e2832fe484f5f9c5236a7c7806156de",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Great Western Trail",
   "aliases": [],
   "editionLabel": "eggertspiele English original edition",
@@ -39,5 +39,22 @@
   "internalEvidence": "Original16page eggert English manual, renderedPDF5 visiblynumbered setup17 (extractedtextmisnumbers15), PDF6 clockwise and firstturn neutralbuildingexception, PDF16 eggert2016 copyright/Pegasusdistribution/NeilCrowleyEnglishrevision. Original193738 remains separate from secondedition341169; requires new explicit override and no reassignment of existingsecond-edition record. Source custody: research/source-files/popular-originals-intake/western-original.pdf; SHA-256 cac8a877656f5d8fe56016ab13c4ab71a74baf0b4b19644502d00d8dd8a1d512. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
   "uncertainty": [
     "The publisher-authored original English manual is preserved by a rulebook archive. The setup does not prescribe a particular method for choosing the starting player."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/great-western-trail-eggert-original-en-cover.jpg",
+    "alt": "Great Western Trail original English eggertspiele and Stronghold Games box",
+    "width": 500,
+    "height": 498,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147649177/Great-Western-Trail-2016-Edition",
+      "publisher": "Noble Knight Games product image of the listed publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "eggertspiele, Stronghold Games, and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/p/jpg1500/psisg-8024.jpg; its listing identifies the original edition and manufacturer code SG8024. The pictured publisher marks and title match the listed English-edition rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

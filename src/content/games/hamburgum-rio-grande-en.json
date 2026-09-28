@@ -3,10 +3,10 @@
   "slug": "hamburgum-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "35b983ee9f82c6e4a41c46ecb25f1bbfcebb2aa1de370851e42f6ef4c995afea",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "617e35b44bbab4107808ac3881c63df9fba756dbff0d4e0f30d106149334d32b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hamburgum",
   "aliases": [],
   "editionLabel": "Rio Grande Games English rules",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hamburgum-rio-grande-en-cover.jpg",
+    "alt": "Hamburgum original Rio Grande Games box",
+    "width": 301,
+    "height": 419,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147379953/Hamburgum",
+      "publisher": "Noble Knight Games product photo of Rio Grande Games box"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games, Mac Gerdts, and cover artist (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product photo https://image.nobleknight.com/r/jpg500/rgg351.jpg shows the original blue Hamburgum box. The retailer manufacturer code RGG351 matches the official Rio Grande Games Hamburgum product page https://www.riograndegames.com/games/hamburgum/ and its English rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

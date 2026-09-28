@@ -3,10 +3,10 @@
   "slug": "ghooost-iello-2013-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "89871f1b09a706b131c4c8f64b8dc37a4634db8f8484830dc004f9887340c89e",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "ef2c5d784c42b437b9b95777530109e7a17960b255071da257a6c402381f997f",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ghooost!",
   "aliases": [],
   "editionLabel": "IELLO English rules, 2013",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF/printed page 3 states both starting branches and clockwise play. Page 8 credits IELLO ©2013 and Origames development; haunted Mansions, ghost cards, Crypt and Cemetery match inventory BGG 132251. SHA-256: 3391266bfa1ebbc31511700ae1a61517534d8cf74003fc478e04d3427769a8eb. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules give no tie procedure for equally recent scares."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ghooost-iello-2013-en-cover.jpg",
+    "alt": "Ghooost! 2013 IELLO English box",
+    "width": 412,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/2147486337/Ghooost",
+      "publisher": "Noble Knight Games product image of the listed publisher edition"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO and cover artist (precise ownership not stated)",
+      "rationale": "Small, compressed box image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games product image https://image.nobleknight.com/i/jpg1500/iel51077.jpg; its listing identifies the original edition and manufacturer code IEL51077. The pictured publisher marks and title match the listed English-edition rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
