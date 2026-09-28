@@ -3,10 +3,10 @@
   "slug": "voting-game-player-ten-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a5245de7574dbdffcaf10fe6b897cae8b352a184862f74ca984ad078a1169012",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "756f036d4d86f7a45da72978dc240c861b0e8e5f6fab37f4080abae862e9a964",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Voting Game",
   "aliases": [],
   "editionLabel": "Player Ten Games English instructions",
@@ -35,5 +35,22 @@
   "uncertainty": [
     "The rules specify no tie procedure for calls made together.",
     "The criterion chooses the first reader; voting itself is simultaneous."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/voting-game-player-ten-en-cover.jpg",
+    "alt": "The Voting Game original Player Ten Games box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/v/jpg500/votinggame.jpg",
+      "publisher": "Player Ten Games (box image via Noble Knight Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "Player Ten Games / box designer",
+      "rationale": "Reduced-size exact-edition identifying artwork is used in an independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147630995/Voting-Game-The. Image: https://image.nobleknight.com/v/jpg500/votinggame.jpg. Noble Knight explicitly identifies the publisher as Player Ten Games and publication year 2015. The photographed black original box uses the title and tagline of the Player Ten instructions cited here.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

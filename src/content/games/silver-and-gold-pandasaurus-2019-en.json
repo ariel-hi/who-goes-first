@@ -3,10 +3,10 @@
   "slug": "silver-and-gold-pandasaurus-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6bba1b77b95d00bf911268838b2279892ec8e1b225ded303ce7ad609ed6cd170",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "60c75327d7e779eda623310e8256cd95951fde0c4b77920c094c00b6de2635dd",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Silver & Gold",
   "aliases": [],
   "editionLabel": "Pandasaurus Games English rules, ©2019 Nürnberger-Spielkarten-Verlag",
@@ -38,5 +38,22 @@
   "internalEvidence": "Rendered both pages of the publisher-authored English sheet. Page 1 assigns the treasure-search starter; page 2 shows that the role passes clockwise while marking is simultaneous. The NSV-hosted English download returned HTTP 403, so the source URL points to the matching archived publisher sheet. SHA-256: 15eb2259718b91aa9f9a4c7ff8a4659a583f0035f414b0b019220a92da3c37d1. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook.",
   "uncertainty": [
     "The booklet does not specify what counts as a treasure search or how to break a tie. This is a reveal role in a simultaneous game and is excluded from the portable random mix."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/silver-and-gold-pandasaurus-2019-en-cover.jpg",
+    "alt": "Silver & Gold original Pandasaurus Games English box",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0707/8658/0781/files/silver-and-gold-board-game.jpg?v=1764794364",
+      "publisher": "Pandasaurus Games (box image via All Systems Go Games)"
+    },
+    "fairUse": {
+      "rightsHolder": "Pandasaurus Games / NSV / Oliver Freudenreich",
+      "rationale": "Reduced-size exact-edition identifying artwork is used in an independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Source page: https://allsystemsgo.games/products/silver-gold. Image: https://cdn.shopify.com/s/files/1/0707/8658/0781/files/silver-and-gold-board-game.jpg?v=1764794364. All Systems Go identifies Pandasaurus Games. Its photograph shows the English subtitle, original 2019 artwork, and Pandasaurus mark; the publisher announced product PAN201910 for November 2019.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
