@@ -3,10 +3,10 @@
   "slug": "lotr-duel-middle-earth-repos-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "38b3eeb1c7b1c9d1280b84864d923973b1fa01d6b04c2c3ac094a69c97bd3df7",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0227c7dd6cb30aa17876a8442cad0b33f8933b1fbfd9e05c4b036762061cb602",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Lord of the Rings: Duel for Middle-earth",
   "aliases": [],
   "editionLabel": "Repos English base game",
@@ -36,5 +36,22 @@
     }
   ],
   "internalEvidence": "CurrentReposduel-for-middle-earthGBpublisherdownload. Rendered2choose/randomsideand3Sauronfirst,alternateacrosschapters. No inferred rule from7WondersDuelorotherLOTRgames. Source custody: research/source-files/popular-sep26-11/duel.pdf; SHA-256 4c0e32ba164b92754db2c62e91ac300d995fe2ccb878ad97e13959eae90c39c3. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/lotr-duel-middle-earth-repos-en-cover.jpg",
+    "alt": "The Lord of the Rings: Duel for Middle-earth Repos English base-game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/rep7dumeen01-the-lord-of-the-rings-duel-for-middle-earth",
+      "publisher": "Repos Production (official Asmodee UK distributor)"
+    },
+    "fairUse": {
+      "rightsHolder": "Repos Production, Middle-earth Enterprises, and cover artist Vincent Dutrait (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official distributor listing https://www.asmodee.co.uk/products/rep7dumeen01-the-lord-of-the-rings-duel-for-middle-earth, English SKU REP7DUMEEN01 and 2024 release date, supplies box image https://www.asmodee.co.uk/cdn/shop/files/REP7DUMEEN01_1_716a9283-c49f-4a1a-a797-a3159d1a748f.jpg?crop=center&height=1200&v=1775758149&width=1200; SKU matches the English manual cited by this approved record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
