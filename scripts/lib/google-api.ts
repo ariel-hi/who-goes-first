@@ -42,5 +42,44 @@ export async function analyticsTotals(token: string, propertyId: string, startDa
   return { sessions, screenPageViews, totalUsers };
 }
 
+export type AnalyticsCountryTraffic = {
+  rows: Array<{ countryId: string; sessions: number; screenPageViews: number }>;
+  rowCount: number;
+  subjectToThresholding: boolean;
+  dataLossFromOtherRow: boolean;
+  dataTruncation: boolean;
+};
+
+/** Complete low-cardinality country report for the same window as analyticsTotals. */
+export async function analyticsCountryTraffic(token: string, propertyId: string, startDate: string, endDate: string): Promise<AnalyticsCountryTraffic> {
+  const report = await postJson<{
+    rows?: Array<{ dimensionValues?: Array<{ value?: string }>; metricValues?: Array<{ value?: string }> }>;
+    rowCount?: number;
+    metadata?: { subjectToThresholding?: boolean; dataLossFromOtherRow?: boolean; dataTruncationReasons?: unknown[] };
+  }>(`https://analyticsdata.googleapis.com/v1beta/properties/${encodeURIComponent(propertyId)}:runReport`, token, {
+    dateRanges: [{ startDate, endDate }], dimensions: [{ name: 'countryId' }],
+    metrics: [{ name: 'sessions' }, { name: 'screenPageViews' }], limit: 500,
+  });
+  const rows = (report.rows ?? []).map(row => {
+    const countryId = row.dimensionValues?.[0]?.value;
+    const sessions = Number(row.metricValues?.[0]?.value);
+    const screenPageViews = Number(row.metricValues?.[1]?.value);
+    if (!countryId || !Number.isSafeInteger(sessions) || sessions < 0 || !Number.isSafeInteger(screenPageViews) || screenPageViews < 0) {
+      throw new Error('GA4 country report has an invalid row');
+    }
+    return { countryId, sessions, screenPageViews };
+  });
+  const rowCount = report.rowCount ?? rows.length;
+  if (!Number.isSafeInteger(rowCount) || rowCount !== rows.length || new Set(rows.map(row => row.countryId)).size !== rows.length) {
+    throw new Error('GA4 country report is incomplete or contains duplicate countries');
+  }
+  return {
+    rows, rowCount,
+    subjectToThresholding: report.metadata?.subjectToThresholding === true,
+    dataLossFromOtherRow: report.metadata?.dataLossFromOtherRow === true,
+    dataTruncation: Boolean(report.metadata?.dataTruncationReasons?.length),
+  };
+}
+
 /** YYYY-MM-DD for `days` before today (UTC). Search Console data lags about 2–3 days. */
 export const daysAgo = (days: number) => new Date(Date.now() - days * 86_400_000).toISOString().slice(0, 10);

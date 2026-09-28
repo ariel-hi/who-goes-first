@@ -6,7 +6,7 @@ const row = (report: string, network: string) => report.split('\n').find(line =>
 describe('ad-network observations with totals only', () => {
   it('cannot promise eligibility from large session or view totals', () => {
     const report = adNetworkReadiness({ sessions: 1_000_000, screenPageViews: 2_000_000 });
-    expect(report).not.toMatch(/\beligible\b|apply\*\*|50,000 sessions|10,000 sessions/i);
+    expect(report.split('Sources:')[0]).not.toMatch(/\beligible\b|apply\*\*|50,000 sessions|10,000 sessions/i);
     expect(row(report, 'Journey by Mediavine')).toContain('Unknown — Tier 1 sessions not collected');
     expect(row(report, 'Mediavine')).toContain('$5,000 annual ad revenue');
     expect(row(report, 'Mediavine')).toContain('Unknown — annual ad revenue not collected');
@@ -43,10 +43,10 @@ describe('ad-network observations with totals only', () => {
 
   it('records dated primary policies and flags the actual GA4 metric limitation', () => {
     const report = adNetworkReadiness({ sessions: 0, screenPageViews: 0 });
-    expect(report).toContain('Official policies checked 2026-09-26');
+    expect(report).toContain('Official policies checked 2026-09-28');
     expect(report).toContain('screenPageViews combines screen and page views');
     expect(report).toContain('prior-calendar-year ad revenue');
     expect(report).toContain('https://www.mediavine.com/mediavine-requirements/');
-    expect(report).toContain('https://help.raptive.com/hc/en-us/articles/360031181471-Raptive-FAQs');
+    expect(report).toContain('https://help.raptive.com/hc/en-us/articles/360032840891-Who-is-eligible-for-Raptive');
   });
 });

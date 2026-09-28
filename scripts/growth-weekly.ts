@@ -1,10 +1,11 @@
 import { appendFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { getBoardGames } from '../src/lib/content/board-games';
 import { getCatalog } from '../src/lib/content/catalog';
-import { analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
+import { analyticsCountryTraffic, analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
 import { rankDemand } from './lib/demand';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
 import { ga4TrafficMetrics } from './lib/growth-report';
+import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCountryTraffic } from './lib/country-traffic';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
@@ -34,14 +35,25 @@ const demand = rankDemand(queries, pages, games, origin);
 const sum = (rows: SearchRow[]) => rows.reduce((total, row) => ({ clicks: total.clicks + row.clicks, impressions: total.impressions + row.impressions }), { clicks: 0, impressions: 0 });
 const weekNow = sum(thisWeek); const weekBefore = sum(lastWeek);
 let traffic: AnalyticsTotals | undefined;
+let country: CountryTrafficSummary | undefined;
 const trafficWindow = { start: daysAgo(30), end: daysAgo(1) };
 if (gaProperty) {
   try { traffic = await analyticsTotals(token, gaProperty, trafficWindow.start, trafficWindow.end); }
   catch (error) { console.warn(`GA4 report skipped: ${(error as Error).message}`); }
+  if (traffic) {
+    try { country = summarizeCountryTraffic(trafficWindow.start, trafficWindow.end, traffic,
+      await analyticsCountryTraffic(token, gaProperty, trafficWindow.start, trafficWindow.end)); }
+    catch (error) { console.warn(`GA4 country report skipped: ${(error as Error).message}`); }
+  }
 }
 
 mkdirSync('research/demand', { recursive: true });
 if (traffic) writeFileSync('research/demand/traffic-metrics.json', `${JSON.stringify(ga4TrafficMetrics(trafficWindow.start, trafficWindow.end, traffic.sessions, traffic.screenPageViews), null, 2)}\n`);
+const countrySnapshot = country ?? {
+  status: 'unavailable', periodStart: trafficWindow.start, periodEnd: trafficWindow.end,
+  reason: !gaProperty ? 'GA4 property not configured' : !traffic ? 'GA4 totals unavailable' : 'GA4 country report unavailable',
+} satisfies UnavailableCountryTraffic;
+writeFileSync('research/demand/country-traffic.json', `${JSON.stringify({ ...countrySnapshot, generatedAt: new Date().toISOString() }, null, 2)}\n`);
 writeFileSync('research/demand/search-console.json', `${JSON.stringify({
   generatedAt: new Date().toISOString(), property, window: window28,
   note: 'Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.',
@@ -62,8 +74,9 @@ const report = `# Weekly growth report — ${new Date().toISOString().slice(0, 1
 ${traffic ? `## Traffic (GA4, last 30 days)
 - Sessions: **${traffic.sessions.toLocaleString('en')}** · Screen/page views: **${traffic.screenPageViews.toLocaleString('en')}** · Users: ${traffic.totalUsers.toLocaleString('en')}
 - Screen/page views per session: ${traffic.sessions ? (traffic.screenPageViews / traffic.sessions).toFixed(2) : '—'}
+${country ? `- Named US/CA/GB/AU subtotal: ${country.namedJourneySessions.toLocaleString('en')} sessions. Five-country US/CA/GB/AU/NZ subtotal: ${country.raptiveCountryScreenPageViews.toLocaleString('en')} screen/page views. These are GA4 observations, not ad-network qualification.\n` : '- Country breakdown unavailable for this run.\n'}
 ` : '_GA4 totals unavailable: set GA4_PROPERTY_ID and give the service account Viewer access._\n'}
-${adNetworkReadiness(traffic)}
+${adNetworkReadiness(traffic, country)}
 ## Research queue (last 28 days)
 ${demand.missingRules.length ? demand.missingRules.slice(0, 15).map((game, index) => `${index + 1}. **${game.name}**${game.bggId ? ` (BGG ${game.bggId})` : ""} — ${game.impressions} impressions: ${game.queries.map(query => `“${query}”`).join(', ')}`).join('\n') : 'No starting-rule searches for games without a sourced rule yet.'}
 
