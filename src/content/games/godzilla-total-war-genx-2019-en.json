@@ -3,10 +3,10 @@
   "slug": "godzilla-total-war-genx-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "09d55e8a028d00fe2fa7c3b03aec4bbbcc12ebf76a46cda22cf460cc4daafcc2",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "91a81a03bf94c3627942393ba3473df4b0c08b4a9c70d7816dd3f1beeca780e7",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Godzilla Total War",
   "aliases": [],
   "editionLabel": "Gen X Games English rules, 2019",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered PDF/printed page 6 gives the open choice and Godzilla-imitation fallback; page 7 gives clockwise order. Page 16 credits Gen X Games ©2019 under Toho license; Kaiju, Playing and Building cards match inventory BGG 280742. SHA-256: 090e44dacc4207127fbf0360a29453137e2a6abcc72b5148b2402da1969cb8c7. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No objective standard or tie procedure is given for the imitation fallback."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/godzilla-total-war-genx-2019-en-cover.jpg",
+    "alt": "Godzilla Total War official Gen X Games box",
+    "width": 385,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://genxgames.es/producto/godzilla-total-war/",
+      "publisher": "Gen X Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Toho Co., Ltd. and Gen X Games under the stated license (precise cover-image ownership not stated)",
+      "rationale": "Small, compressed product cover identifies the licensed game discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Gen X Games official Godzilla Total War listing identifies Oscar Arévalo, 12 Final Wars Kaiju and publisher Gen X Games; its box image is https://genxgames.es/wp-content/uploads/2021/01/godzilla-total-war.jpg. The image features the same Godzilla pose and English title as the cited 2019 English rulebook cover, with Gen X and Toho marks. The listing does not distinguish exact printing.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
