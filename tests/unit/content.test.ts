@@ -85,6 +85,26 @@ test('next native title decisions add discovery identities without borrowing rul
   }
 });
 
+test('additional native titles remain identity-only until their own editions are sourced', async () => {
+  const games = getBoardGames();
+  const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number }>;
+  for (const [id, name] of [
+    ['396822', 'Le Clan des Souris'],
+    ['454672', 'Boss Fighters QR'],
+    ['443306', 'Deckers'],
+    ['435341', 'Sly Mole'],
+    ['445401', 'Archéo'],
+    ['440295', 'Opération Noisettes'],
+    ['419639', 'Krakel Orakel'],
+    ['383725', 'Cryptic Nature'],
+    ['381836', 'Pim Pam Pum'],
+    ['401885', 'Schätz it if you can'],
+  ] as const) {
+    expect(games.find(item => item.bggId === id)).toMatchObject({ name, rules: [] });
+    expect(directory.find(item => item.id === id)).toMatchObject({ name, ruleCount: 0 });
+  }
+});
+
 test('Amigo identities retain numeric provenance while exact independently reviewed editions supply rules', async () => {
   const review = JSON.parse(readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8'));
   const games = getBoardGames();
@@ -352,7 +372,7 @@ test('qualified pending identities remain distinct without borrowing related rul
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(113);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(123);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -472,12 +492,12 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 113, hold: 175, reviewed: 139, unreviewed: 149, additionalAccepted: 102 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(113);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(175);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(139);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(149);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(26);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 123, hold: 165, reviewed: 153, unreviewed: 135, additionalAccepted: 112 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(123);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(165);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(153);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(135);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(30);
   const shadow = review.decisions.find((item: { bggId: string }) => item.bggId === '451923');
   expect(shadow).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
   expect(shadow.identityReviewHistory[0].previousDecision).toMatchObject({ decision: 'hold', reviewed: false });
