@@ -3,10 +3,10 @@
   "slug": "tobago-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "29d2a2b6442e4fa54489cfe7e6a8d57f6d48dcde781d59c2e75d4de6b729a5d9",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "d52eff7b1ad851d92d26afd027485fbe41744b07eaecd3fe075a7c9ab3eb99d0",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tobago",
   "aliases": [],
   "editionLabel": "Rio Grande Games English rules",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tobago-rio-grande-en-cover.jpg",
+    "alt": "Tobago game box cover",
+    "width": 560,
+    "height": 467,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.simba-dickie-group.de/media_new/shop-zoch/products/601105152/00/detail_desktop/tobago-601105152-en_00.jpeg?v=1584686386",
+      "publisher": "Zoch Verlag"
+    },
+    "fairUse": {
+      "rightsHolder": "Zoch Verlag",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Zoch Verlag product page: https://www.zoch-verlag.com/zoch_en/categories/family-games/tobago-601105152-en.html. Exact publisher-hosted package image: https://cdn.simba-dickie-group.de/media_new/shop-zoch/products/601105152/00/detail_desktop/tobago-601105152-en_00.jpeg?v=1584686386. The package and game identity were visually reviewed against the article edition (Rio Grande Games English rules). The package is Zoch stock 601105152, matching the 601105152 identifier in the Rio Grande English rules PDF linked in this article; Rio Grande distributes this Zoch edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

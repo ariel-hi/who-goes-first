@@ -3,10 +3,10 @@
   "slug": "seismic-atlas-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4f261940aecd59ab2b4829eccd4f3e1779729c329b0b43bb64191e2b6bb02352",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "663843b02503357bf4429f8dd2c76e6492dc25e864624c31959eda278d217ca6",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Seismic",
   "aliases": [],
   "editionLabel": "Atlas English rules, single-sheet publisher PDF",
@@ -36,5 +36,22 @@
     "No distance-tie rule is stated for the initial starter.",
     "The linked rules sheet does not identify a printing year.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/seismic-atlas-en-cover.jpg",
+    "alt": "Seismic game box front cover",
+    "width": 560,
+    "height": 453,
+    "presentation": "cover",
+    "source": {
+      "url": "https://atlas-games.com/atlas-cms/resources/images/seismicfrontsmall.jpg",
+      "publisher": "Atlas Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Atlas Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Atlas Games product page: https://atlas-games.com/product_tables/AG1300/. Exact publisher-hosted package image: https://atlas-games.com/atlas-cms/resources/images/seismicfrontsmall.jpg. The package and game identity were visually reviewed against the article edition (Atlas English rules, single-sheet publisher PDF).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
