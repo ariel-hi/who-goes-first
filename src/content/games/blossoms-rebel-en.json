@@ -3,13 +3,30 @@
   "slug": "blossoms-rebel-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "8140378dacf4487cc394dfc899e7148e597f10aba8988db782bd9244a55d2142",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "c681930207d1d656f7e5ccb94d1f8cb62cc1a62f2f779fb415358e813e029b57",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Blossoms",
   "aliases": [],
   "editionLabel": "Rebel English rulebook, 2018",
+  "image": {
+    "file": "/images/games/blossoms-rebel-en-cover.jpg",
+    "alt": "Illustrated Blossoms title page from the official Rebel English rulebook",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://repository.rebel.pl/files/instrukcje/Blossoms_rules_ENG-compressed.pdf",
+      "publisher": "Rebel"
+    },
+    "fairUse": {
+      "rightsHolder": "Rebel and credited game artist",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Rebel source page: https://repository.rebel.pl/files/instrukcje/Blossoms_rules_ENG-compressed.pdf. Edition match: Illustrated first page of Rebel's English Blossoms rulebook, matching the 2018 edition. Original image URL: https://repository.rebel.pl/files/instrukcje/Blossoms_rules_ENG-compressed.pdf. Processing note: Page 1 of the publisher PDF rendered and reduced",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who has watered flowers most recently starts.",
   "officialTieBreak": null,
   "houseFallback": null,

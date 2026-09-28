@@ -3,16 +3,33 @@
   "slug": "dominion-2021-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6d47c32b1dea2383ab94d83476c14509084be7918072c2233fae0e4b46692bff",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "4df6772831040655efb8deabb1f43aa709e616957a0e2b08ba4db9c0c6d4599d",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dominion",
   "aliases": [
     "Dominion second edition",
     "Dominion 2nd edition"
   ],
   "editionLabel": "English second edition · 2021 rulebook revision",
+  "image": {
+    "file": "/images/games/dominion-2021-en-cover.jpg",
+    "alt": "Illustrated Dominion title page from the 2021 revision of the official Second Edition English rulebook",
+    "width": 440,
+    "height": 296,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf",
+      "publisher": "Rio Grande Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games and credited game artist",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Rio Grande Games source page: https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf. Edition match: First page of the publisher's second-edition PDF; PDF page text identifies the July 19, 2021 revision cited by this record. Original image URL: https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2nd.pdf. Processing note: Page 1 of the publisher PDF rendered; lower prose cropped",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "For a fresh game, choose the starting player randomly. If you just played Dominion and it was not a tie, the previous winner goes last; the player to their left starts.",
   "officialTieBreak": null,
   "houseFallback": null,
