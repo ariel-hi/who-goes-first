@@ -3,8 +3,8 @@
   "slug": "fort-leder-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
-  "approvedRevision": "283e5a444a1b25eb9075d80600f6253dcfe669f3d09940435b7e93dcf9eff186",
+  "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "055d7200ba5393bc48bad0e3c483bc05d1c302ccf17f42231eec9235ac854763",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fort",
@@ -39,5 +39,22 @@
   "internalEvidence": "Source packet prepared at Git commit c4049161450b928526436c067ffe6ef0f7b97413; active clean directory identity BGG 296912. Complete publisher English manual: 1813616 bytes, 16 PDF pages, SHA-256 ff0849cc7d2cc2268a3dc5827664cd13668d77394b5dbaf5d3c0130d466775ef. Original publisher page: https://ledergames.com/pages/resources. Visually inspected source pages 2, 6; exact location: Basic Setup, step 1; How to Play, first paragraph. Sealed source packet: artifacts/pending-rules-followup-sep28l/REVIEW.md; SHA-256 of packet SHA256SUMS.txt e286192b7bc3146cf61620ed070cb21c82be3c1dffdf8b41d84de845338eb1c1. Editorial review on 2026-09-28 approved the cited starting rule for this exact edition only.",
   "uncertainty": [
     "The publisher does not prescribe a particular method for randomizing players or seats."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fort-leder-2020-en-cover.jpg",
+    "alt": "Fort Leder Games 2020 English base-game box",
+    "width": 500,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ledergames.com/products/fort",
+      "publisher": "Leder Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Leder Games and cover artist Kyle Ferrin (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher product page https://ledergames.com/products/fort and its public product JSON list https://cdn.shopify.com/s/files/1/0106/0162/7706/products/100-FortGameBox-Edit-Web.png?v=1595297967 as first product image; the page also links the English rules cited for the original 2020 base game.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
