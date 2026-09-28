@@ -3,10 +3,10 @@
   "slug": "gloomhaven-cephalofair-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "0de9cd7cfe5a7e150e31ca53b7ceaa63c14b641f1b3736b720a515f0cd2ec6f6",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "6f89ed125bdb9b060ca0aede72d12da15d1e6275954aa87df09140507c4a5545",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gloomhaven",
   "aliases": [],
   "editionLabel": "Cephalofair English original edition",
@@ -39,5 +39,22 @@
   "internalEvidence": "Original52page Cephalofair manual with Brute/Tinkerer/Spellweaver/Scoundrel/Cragheart/Mindthief classes, original RoundOverview and IsaacChildres credits onPDF51. Rendered16/17/18 confirms two-card secret selection, leadingcard, lowerinitiative and fulltie ladder. Current officialGloomhaven product links74page2025second-edition manual already used by existingrecord; that download rejected fororiginal. New174430override without changing later390478assignment. Source custody: research/source-files/popular-originals-intake/gloomhaven-archive.pdf; SHA-256 9965c76dfc747c82a4013d645e95f5ffc64692865617527734199b064a2117fe. Source passages and rendered pages were reviewed by Codex in task 01a0de73-480e-7d52-8d0f-aed81f661e0e on 2026-09-26. This attribution does not claim the coordinating root read these manuals. Owner authorized assistant review and publication on 2026-09-26. Root completed full record, exact edition correspondence, public tie-section applicability and portable-scope review, corroborated by independent source-only field/provenance review. Original manual-image review remains attributed to Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e, not the coordinating root. This exact catalog revision is approved; its research counterpart remains lifecycle-null draft. Active enrollment, release gates and actual live verification remain subsequent actions.",
   "uncertainty": [
     "The publisher-authored original English manual is preserved by a board-game club archive."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gloomhaven-cephalofair-original-en-cover.jpg",
+    "alt": "Gloomhaven official game box cover",
+    "width": 500,
+    "height": 357,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cephalofair.com/blogs/chronicle/announcing-gloomhaven",
+      "publisher": "Cephalofair Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Cephalofair Games and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher original-launch article https://cephalofair.com/blogs/chronicle/announcing-gloomhaven supplies original box image https://cdn.shopify.com/s/files/1/0281/0173/8555/files/Gloomhaven-Box-Front.png. Visible title and publisher packaging match the cited game; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

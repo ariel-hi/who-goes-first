@@ -3,10 +3,10 @@
   "slug": "galactic-cruise-kinson-key-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "fbe1b1e075188db3b9059a1ab1add768db61c20595f45547ac2e6fcf11342a24",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0f0dfe41450c6a0ca0f54b9020c3fd6257e54378eeca2a29f59e119debab8866",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Galactic Cruise",
   "aliases": [],
   "editionLabel": "Kinson Key Games English Training Manual",
@@ -36,5 +36,22 @@
   "internalEvidence": "A retailer-hosted copy of the publisher-authored Training Manual was rendered and read at PDF page 7. Its cover says v1.2.5 and its text identifies Kinson Key Games. Step 11 assigns the first player; step 12 confirms clockwise setup order. The publisher site links its rulebook through BoardGameGeek. Matches inventory BGG 391137. SHA-256: b5464c16afa42e058c9470b058c891215e2460b68475863f7014a1f2e6007cc9. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The rulebook does not state how to break a tie for most recent cruise or vacation."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/galactic-cruise-kinson-key-en-cover.jpg",
+    "alt": "Galactic Cruise official game box cover",
+    "width": 372,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://kinsonkeygames.squarespace.com/",
+      "publisher": "Kinson Key Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Kinson Key Games and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher homepage https://kinsonkeygames.squarespace.com/ supplies original box image https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/f8a1dd67-f160-4469-8a83-efae78eb0f6e/GC+Alternate.png. Visible title and publisher packaging match the cited game; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

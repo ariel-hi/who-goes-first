@@ -3,10 +3,10 @@
   "slug": "journey-to-mordor-fantasy-flight-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "05f72169872afb2edc41455cc9b5aea08a78812093f1241699530b9e49332df5",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3c10a49d6cc7ffb5fcf3074c3feb6dcd9d34f461b181412a878debae9df1e78b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Lord of the Rings: Journey to Mordor",
   "aliases": [
     "Journey to Mordor"
@@ -39,5 +39,22 @@
     "No alternative is stated here for a group in which nobody has read the book.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/journey-to-mordor-fantasy-flight-en-cover.jpg",
+    "alt": "The Lord of the Rings: Journey to Mordor official game box cover",
+    "width": 400,
+    "height": 463,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.fantasyflightgames.com/en/news/2016/7/15/journey-to-mordor/",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher announcement for the 2016 release https://www.fantasyflightgames.com/en/news/2016/7/15/journey-to-mordor/ supplies original box image https://images-cdn.fantasyflightgames.com/filer_public/eb/6a/eb6ac306-c02b-407b-8d5d-5db430102c77/ltr17_box_left.png. Visible title and publisher packaging match the cited game; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
