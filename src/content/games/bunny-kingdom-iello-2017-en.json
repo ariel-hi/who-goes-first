@@ -3,13 +3,30 @@
   "slug": "bunny-kingdom-iello-2017-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "f5a6bf0353506035af690e9996c0e883d2cda92ab7f1d0e8d375a116b47a8480",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "0f550129798e6ffbc9c77dc4eaf646151af8af862622c29ddd83966905f70edb",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Bunny Kingdom",
   "aliases": [],
   "editionLabel": "IELLO original 2017 English base game",
+  "image": {
+    "file": "/images/games/bunny-kingdom-iello-2017-en-cover.jpg",
+    "alt": "Original Bunny Kingdom board and rabbit pieces in play at Gen Con 2017, photographed by IELLO",
+    "width": 440,
+    "height": 268,
+    "presentation": "photo",
+    "source": {
+      "url": "https://iello.fr/wp-content/uploads/2017/08/IMG_3511.JPG_0-scaled.jpg",
+      "publisher": "IELLO"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO; photographer not credited on the publisher page",
+      "rationale": "Reduced crop of the publisher's 2017 event photograph showing the original base game in play, used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or photo.",
+      "provenance": "Official IELLO source page: https://iello.fr/iello-a-la-gencon/. Edition match: IELLO's August 2017 Gen Con report depicts the original Bunny Kingdom base game being played with English-language cards, matching its September 2017 English release and the approved record. Original image URL: https://iello.fr/wp-content/uploads/2017/08/IMG_3511.JPG_0-scaled.jpg. Processing note: Cropped to the board and game pieces. This is a publisher event photo, not box art; the production asset was fetched through the WordPress image proxy after the exact IELLO-hosted source timed out.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "No one takes an exclusive first turn. Everyone drafts and plays their opening cards simultaneously.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -26,8 +43,14 @@
       "url": "https://iellogames.com/wp-content/uploads/2017/09/Bunny-Kingdom-Rules-EN-Light.pdf",
       "title": "Bunny Kingdom — original English rulebook",
       "publisher": "IELLO",
-      "printedPages": ["6", "12"],
-      "pdfPagesOneBased": [6, 12],
+      "printedPages": [
+        "6",
+        "12"
+      ],
+      "pdfPagesOneBased": [
+        6,
+        12
+      ],
       "location": "How Do I Play? and Special Rules for 2 Player Games; Rules Summary",
       "checkedAt": "2026-09-28"
     }
