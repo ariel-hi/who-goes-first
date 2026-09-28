@@ -3,10 +3,10 @@
   "slug": "king-of-tokyo-iello-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "590dcb0b2fb9884fb56413c476d0d7bb21b38a3a800c305ed414982bfdd629b6",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "01cef34ccd8ddcf9e8718ebb3c5253604787998f626be21d0fde3e3f6fdcdcd5",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "King of Tokyo",
   "aliases": [],
   "editionLabel": "IELLO English base game rulebook (2016)",
@@ -32,5 +32,22 @@
     }
   ],
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 4, 5, including the cited setup and turn-sequence text. A publisher-authored copy is hosted by the rulebook archive. Local source PDF SHA-256: 1068d2ebbd0fbeb8ebea983323cbcfefa386dda07db8c49cbf2f53d078b2c6fa. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/king-of-tokyo-iello-en-cover.jpg",
+    "alt": "King of Tokyo IELLO 2016 English base game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/csg-kot2016-king-of-tokyo",
+      "publisher": "IELLO / Asmodee UK"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO and cover-art creators (precise ownership not stated on distributor product page)",
+      "rationale": "Small, compressed authorized-distributor product photo identifies the 2016 English base game described in this editorial rule explanation.",
+      "provenance": "Asmodee UK distributor product listing uses SKU CSG-KOT2016 for the IELLO King of Tokyo base game and supplies this box photo at https://cdn.shopify.com/s/files/1/0572/1076/5512/files/CSG-KOT2016_1.jpg?v=1775063014. The product identity matches the approved IELLO 2016 English base rulebook.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
