@@ -3,8 +3,8 @@
   "slug": "sumology-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "098aac7081723c89a90fe27c5e3aae7148d64ebc1196aa4cd4e3d49e58c7ee3c",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "2f7abf04b50ba8fe58cc472ea0532d1d1463bcfe1c84fc4d45eb6d3b6634559b",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sumology",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "The manual does not say what to do if all eight compared numbers remain tied.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/sumology-simplyfun-en-cover.jpg",
+    "alt": "Sumology SimplyFun product box",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/sumology_box_Mar22_v2_600x600_122d9594-3b01-4894-b27d-8a6e9a0a3fd8.jpg?v=1743539485",
+      "publisher": "SimplyFun"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun / product box artist",
+      "rationale": "Reduced-size official product box image identifies the exact game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "SimplyFun product page: https://simplyfun.com/products/sumology; SKU SF070. Official box image: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/sumology_box_Mar22_v2_600x600_122d9594-3b01-4894-b27d-8a6e9a0a3fd8.jpg?v=1743539485. The product page links the English rulebook cited in this record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

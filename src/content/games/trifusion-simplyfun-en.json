@@ -3,8 +3,8 @@
   "slug": "trifusion-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "aa62c45d1eaadae0018bf9e493fb568ff3ad05ae42621c29c62087ce88e0618d",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "1f3a94fa834a0be6b334760e8f4f9079e7b0efd65efc0fb726db78137e82cee6",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trifusion",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trifusion-simplyfun-en-cover.jpg",
+    "alt": "Trifusion SimplyFun product box",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/trifusion_box.jpg?v=1744611815",
+      "publisher": "SimplyFun"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun / product box artist",
+      "rationale": "Reduced-size official product box image identifies the exact game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "SimplyFun product page: https://simplyfun.com/products/trifusion; SKU SF085. Official box image: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/trifusion_box.jpg?v=1744611815. The product page links the English rulebook cited in this record.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
