@@ -4,7 +4,7 @@
   "language": "en",
   "status": "approved",
   "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
-  "approvedRevision": "56ae58ca427992ead09c286cd8652a4658da29a17c03f1b88c21935c49ea9be7",
+  "approvedRevision": "2b8d6073fb85d0c1ff50f19e93012cc8b71e3d01cfe6d2315ffb39efa362e260",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ethnos",
@@ -40,5 +40,22 @@
   "uncertainty": [
     "The publisher does not prescribe a particular randomizer.",
     "This source is the original Ethnos booklet; CMON's separate 2nd Edition is outside this rule."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ethnos-cmon-original-2017-en-cover.jpg",
+    "alt": "Ethnos original 2017 CMON rulebook cover artwork",
+    "width": 500,
+    "height": 500,
+    "source": {
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/Rulebook_Ethnos.pdf",
+      "publisher": "CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "CMON and cover artist John Howe",
+      "rationale": "Small official first-edition cover art identifies the original game discussed in this independent rules article and does not substitute for the product or artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "The original-edition CMON page https://www.cmon.com/products/ethnos/ links this English rulebook. Its first page shows the original title, John Howe art, and CMON marks. Cropped from that publisher-hosted page, not from the separate 2nd Edition.",
+      "reviewedAt": "2026-09-28"
+    },
+    "presentation": "cover"
+  }
 }

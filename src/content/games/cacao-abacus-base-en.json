@@ -4,7 +4,7 @@
   "language": "en",
   "status": "approved",
   "approvedBy": "Codex editorial review under owner site-overhaul authorization, 2026-09-28",
-  "approvedRevision": "0f4cc6968382dd1240dfa120d029270379998ea51159cd49f52513fe91e534c3",
+  "approvedRevision": "ddc3f03d0986d9ee04931ac2c9c712bd1447ab2ef8a364e0ad4899489b2de807",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cacao",
@@ -37,5 +37,22 @@
   "uncertainty": [
     "The publisher does not specify a tie-break if players are equally old."
   ],
-  "pickerSuggestionApplicable": false
+  "pickerSuggestionApplicable": false,
+  "image": {
+    "file": "/images/games/cacao-abacus-base-en-cover.jpg",
+    "alt": "Cacao ABACUSSPIELE box cover",
+    "width": 500,
+    "height": 500,
+    "source": {
+      "url": "https://abacusspiele.de/wp-content/uploads/2020/04/Cacao_Bild01_Box3D_Spielehit_sRGB.png",
+      "publisher": "ABACUSSPIELE"
+    },
+    "fairUse": {
+      "rightsHolder": "ABACUSSPIELE and cover artist Claus Stephan",
+      "rationale": "Small official box image identifies the exact game discussed in this independent rules article and does not substitute for the product or artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page https://abacusspiele.de/produkt/cacao/ identifies article 04151 and links the English rulebook. The displayed 3D box artwork is the source image, resized for this editorial page.",
+      "reviewedAt": "2026-09-28"
+    },
+    "presentation": "cover"
+  }
 }
