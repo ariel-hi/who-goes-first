@@ -3,10 +3,10 @@
   "slug": "karmaka-hemisphere-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "87c6de49da685bdbebcc668fbed03e5d32bf9fee5beb10acd5b8d9c576048cac",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "69f8454dfbb07f5d3d52cd91cc41484bc04f50ae70132526cdc9085f021443a3",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Karmaka",
   "aliases": [],
   "editionLabel": "Hemisphere Games English printable rules, 2015",
@@ -35,5 +35,22 @@
   "internalEvidence": "The Karmaka creator/publisher links this English rules PDF from its print-and-play page. PDF page 6 was rendered and read. The game title, 64-card contents and Hemisphere Games credit match inventory BGG 172552. SHA-256: 22320d33f406d964bde1390623c6e2dcdd62d1d576a29ea8b4f40178bbe0732d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules leave judging who has the worst luck to the players and give no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/karmaka-hemisphere-en-cover.jpg",
+    "alt": "Karmaka first-edition box cover art by Marco Bucci",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.hemispheregames.com/new_blog/2016/02/05/karmakas-art-lived-multiple-lives-part-2-the-box/",
+      "publisher": "Hemisphere Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Hemisphere Games and artist Marco Bucci (precise ownership not stated in article)",
+      "rationale": "Small, compressed first-edition box art identifies the game discussed in this editorial rule explanation and does not replace the game or original art.",
+      "provenance": "Hemisphere Games blog article by box artist Marco Bucci explicitly calls this the final first-edition box art. Direct official image https://www.hemispheregames.com/images/Karmaka_box_art.png. The publisher’s karmaka-game.com homepage also shows the first-edition retail box with the same front art at https://www.karmaka-game.com/images/Karmaka_3D_Box_Front_and_Back_small.jpg; its back states ©2016 Hemisphere Games and “First Edition.” The record cites the publisher’s English printable rules prepared in 2015, and this is the resulting first-edition product art, rather than the later Chronicle release.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
