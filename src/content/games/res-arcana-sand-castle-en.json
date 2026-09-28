@@ -3,13 +3,30 @@
   "slug": "res-arcana-sand-castle-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "1daff52c97e602d3c2ac19542f1d06bc6f3d1622313270c2beddd99734af305f",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "8eba316060bc9d92b510f4fe2d3c3dde0aea1b63aa59a3d970097eacaff139c3",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Res Arcana",
   "aliases": [],
   "editionLabel": "Sand Castle Games English base game",
+  "image": {
+    "file": "/images/games/res-arcana-sand-castle-en-cover.jpg",
+    "alt": "Res Arcana game cover, Sand Castle Games / Asmodee edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/cdn/shop/products/RES01-image0_2000.jpg?v=1691446398",
+      "publisher": "Sand Castle Games / Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Sand Castle Games",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the publisher product page https://store.asmodee.com/products/res-arcana. The official Asmodee product listing shows the original Sand Castle Games RES01 base-game box, matching the English base-game rulebook. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose a First Player and give them the First Player token. After collecting essences, that player takes the first action.",
   "officialTieBreak": null,
   "houseFallback": null,
