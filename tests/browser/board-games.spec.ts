@@ -160,7 +160,7 @@ test('broad directory searches reveal every match in keyboard-accessible batches
 });
 
 test('new native game identities remain searchable without borrowed starting rules', async ({ page }) => {
-  test.setTimeout(60000);
+  test.setTimeout(120000);
   await page.setViewportSize({ width: 320, height: 844 });
   await page.goto('/board-games/');
   const input = page.getByRole('searchbox', { name: 'Search board games' });
@@ -180,6 +180,12 @@ test('new native game identities remain searchable without borrowed starting rul
     ['261114', 'Men at Work'], ['264239', 'Patchwork Doodle'],
     ['265684', 'Subtext'], ['300930', 'Schotten Totten 2'],
     ['439742', 'Dewan'], ['456440', 'Cozy Stickerville'],
+    ['55833', 'Tarantel Tango'], ['103132', 'Rapa Nui'],
+    ['117663', 'Piraten kapern'], ['154586', 'Raben stapeln'],
+    ['198740', 'Lovecraft Letter'], ['226013', 'Geisteruhr'],
+    ['232417', 'Druids'], ['245700', 'Party Bugs'],
+    ['259061', 'Skytear'], ['329839', 'So Kleever!'],
+    ['432536', 'Virus! Marvel'],
   ] as const) {
     await input.fill(name);
     const row = page.locator(`[data-results] li[data-id="${id}"]`);
@@ -191,6 +197,10 @@ test('new native game identities remain searchable without borrowed starting rul
   }
   await input.fill('Deja-Vu');
   await expect(page.locator('[data-results] li[data-id="217321"]')).toHaveCount(0);
+  for (const id of ['135378', '130877', '235940', '238094', '370598', '381246', '430533']) {
+    await input.fill(id);
+    await expect(page.locator(`[data-results] li[data-id="${id}"]`)).toHaveCount(0);
+  }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 

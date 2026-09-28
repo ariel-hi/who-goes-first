@@ -279,7 +279,7 @@ test('qualified pending identities remain distinct without borrowing related rul
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(95);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(106);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -399,12 +399,12 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 95, hold: 193, reviewed: 107, unreviewed: 181, additionalAccepted: 85 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(95);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(193);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(107);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(181);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 106, hold: 182, reviewed: 127, unreviewed: 161, additionalAccepted: 95 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(106);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(182);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(127);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(161);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(21);
   const shadow = review.decisions.find((item: { bggId: string }) => item.bggId === '451923');
   expect(shadow).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
   expect(shadow.identityReviewHistory[0].previousDecision).toMatchObject({ decision: 'hold', reviewed: false });
