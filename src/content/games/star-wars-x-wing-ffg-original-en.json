@@ -3,10 +3,10 @@
   "slug": "star-wars-x-wing-ffg-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "0af7d1500439683195a964b9cc991b52ff2f7fb4b86a93e85e59d1da46cc6272",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "b245c9bc6291b6e99faf932bc045b4e6748f9b3ba026bae12718a446418e6d84",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Star Wars: X-Wing Miniatures Game",
   "aliases": [],
   "editionLabel": "FFG English original core set",
@@ -43,5 +43,22 @@
   "internalEvidence": "Official FFG original core PDF. Rendered6 simultaneous planning;7 ascending pilot skill activation;10 descending skill combat;16 initiative resolves equal skill;18 original squad-building lower-points rule and Imperial equal-point fallback. These historical core rules were not substituted with Force Awakens or second-edition procedures. Source custody: research/source-files/popular-sep26-05/xwing.pdf; SHA-256 c6ffb914f97414a67128d86dbf7099583ce3e28076e60cffdd6f268165ac2172. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "This record covers the original core rulebook. Later first-edition revisions, tournament rules and the second edition are outside its scope."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/star-wars-x-wing-ffg-original-en-cover.jpg",
+    "alt": "Star Wars: X-Wing Miniatures Game original FFG Rules of Play cover",
+    "width": 374,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/x-wing/support/SWX01_XwingCoreRulebook_lowres.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lucasfilm / Fantasy Flight Games",
+      "rationale": "Reduced-size official rulebook title page identifies the specific original core-set edition discussed in this independent rules article. It is contextual to the game, links to the official source, and does not substitute for the game or complete rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Page 1 of Fantasy Flight Games’ original X-Wing core rulebook, hosted on its official image CDN: https://images-cdn.fantasyflightgames.com/ffg_content/x-wing/support/SWX01_XwingCoreRulebook_lowres.pdf. The cover visibly says X-Wing Miniatures Game and Rules of Play and shows original-trilogy ships; the file path matches the article’s cited SWX01 rulebook apart from its CDN host. Visually reviewed against the edition (FFG English original core set).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
