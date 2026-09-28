@@ -3,10 +3,10 @@
   "slug": "kompromat-helvetiq-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "edc87d8ef062d6b4b7ba1be40184578134ec367f50b4a877ef08670588783ba4",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3d9076bf2685ab176f720d5e5051e6c5bc046535ee2af1a8ec6f534acb9a7aff",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kompromat",
   "aliases": [],
   "editionLabel": "Helvetiq English rules",
@@ -33,5 +33,22 @@
   "internalEvidence": "The Helvetiq-hosted English PDF was inspected at rendered PDF page 2. It gives the opening criterion and the later-round alternation. The title, spy theme and two-player format match inventory BGG 299569. SHA-256: 275ec521ab0ddf3c962b735e23ca9767e6f9d4ab3ae512b4e0ac2733938fb297. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules leave deciding who looks most suspicious to the two players and give no tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kompromat-helvetiq-en-cover.jpg",
+    "alt": "Kompromat official game box cover",
+    "width": 278,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://helvetiq.com/ch_fr/kompromat-en",
+      "publisher": "Helvetiq"
+    },
+    "fairUse": {
+      "rightsHolder": "Helvetiq and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher English-edition product page; flat box image cropped to remove surrounding black margin. Source page https://helvetiq.com/ch_fr/kompromat-en supplies original box image https://helvetiq.com/media/catalog/product/k/o/kompromat_flatboxforwebsite_en_1000x1000px.png. Visible title and publisher packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

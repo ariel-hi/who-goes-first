@@ -3,10 +3,10 @@
   "slug": "just-one-repos-refresh-2025-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "43aa027e1049b303dd565672d5d3bb3a23693e2e4ea0f73b3ac11e558c0f21c1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e6a26c910ec52f53b6dd464bde5a9ceecac78c9413a963662e222d20e9b9e30e",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Just One",
   "aliases": [],
   "editionLabel": "Repos Production Just One English refreshed rulebook (2025)",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 1, 2, 4, including the cited setup and turn-sequence text. Local source PDF SHA-256: 4acf46b203e8ccb0aa2a225f4ce3bc7ed0f21da88a2ca20390b0795846ed1c94. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/just-one-repos-refresh-2025-en-cover.jpg",
+    "alt": "Just One official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/just-one-refresh",
+      "publisher": "Repos Production"
+    },
+    "fairUse": {
+      "rightsHolder": "Repos Production and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Asmodee distributor page for Repos Production SKU JO-EN02, the refreshed English edition. Source page https://store.asmodee.com/products/just-one-refresh supplies original box image https://store.asmodee.com/cdn/shop/files/JO-EN02-image0_2000.jpg?v=1748870615. Visible title and publisher packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "kluster-borderline-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "457f7f57f7a45595f7080dea5432b736ab51fdb1f9d8a8419c46713f1bab6ae0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1d399451063dd95db6564a5e608e539465c4c142b85616fdabb46b003e4907c1",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kluster",
   "aliases": [],
   "editionLabel": "Borderline Editions multilingual rules, English section",
@@ -33,5 +33,22 @@
   "internalEvidence": "Borderline Editions hosts the multilingual PDF. PDF page 1 was rendered and read in English. Its 24 stones, cord, 2019 publisher credit and Kluster title match inventory BGG 277458; the adjacent Kluster Duo product art is separate from the rules for Kluster. SHA-256: f8e7a97a7ae315d192df96c56cb9d58aaae43140fdf699563d1e0fbf0365954e. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The manual does not define “smallest” or give a tie procedure if the smallest players are equally small."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kluster-borderline-en-cover.jpg",
+    "alt": "Kluster official game box cover",
+    "width": 390,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.borderlineeditions.com/",
+      "publisher": "Borderline Editions"
+    },
+    "fairUse": {
+      "rightsHolder": "Borderline Editions and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher homepage press kit; box photo cropped from the supplied press-kit asset to remove surrounding whitespace. Source page https://www.borderlineeditions.com/ supplies original box image https://www.borderlineeditions.com/press/KLUSTER-presskit.zip (internal file kluster-box1.jpg). Visible title and publisher packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
