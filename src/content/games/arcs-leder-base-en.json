@@ -1,0 +1,43 @@
+{
+  "id": "arcs-leder-base-en",
+  "slug": "arcs-leder-base-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
+  "approvedRevision": "2f7d09f629d12e5af6f9d239c7f510a51df12b8fefd2d28f1da3e91aff5f971a",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Arcs",
+  "aliases": [],
+  "editionLabel": "Leder Games English base-game rulebook",
+  "firstPlayerRule": "Give the initiative marker to a randomly chosen player. The player with initiative takes the first turn of the opening round.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The rulebook names no particular way to choose randomly.",
+    "This is the base-game setup; Leaders & Lore and The Blighted Reach are separate modes or expansions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Arcs_Base_Rulebook.pdf",
+      "title": "Arcs — English base-game rulebook",
+      "publisher": "Leder Games",
+      "printedPages": [
+        "4",
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        4,
+        3
+      ],
+      "location": "Initiative marker and Playing a Chapter overview; Setup 1.B",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Direct Leder Games PDF, 4,687,378 bytes, 24 PDF pages, SHA-256 70bac072700011774adfd0f79b292c3ac1aa3e38b3aa4d3d84dcfabeefd5939a. Codex visually inspected PDF page 4 (printed 4): Setup 1.B says to give the initiative marker to a random player. PDF page 3 defines the initiative marker as showing who takes the first turn of a round and says a round begins with the player who has initiative. Source packet: artifacts/pending-rules-followup-sep28g/REVIEW.md, seal 37baf7e198f72502b89a0bb56224f1921700a5119e6e29674a58ee0e197b1470. Exact active BGG 359871 / Wikidata Q128199490 identity; no approved title, alias or numeric overlap at c397f243. The source PDF metadata was created in 2025; it is not evidence for the exact wording of a 2024 first printing. No expansion or mode rule is transferred. Not enrolled in the portable random pool without separate opt-in review.",
+  "uncertainty": [
+    "The PDF does not establish whether the 2024 first printing used identical wording."
+  ]
+}

@@ -443,6 +443,19 @@ test('Season 2 pawn selection and Bunny Kingdom simultaneous opening stay distin
   await expectReviewedSourceCitation(page, 'bunny-kingdom-iello-2017-en', 6);
 });
 
+test('Arcs and Abyss show their own random-start passages and publisher pages', async ({ page }) => {
+  await page.goto('/games/arcs-leder-base-en/');
+  await expect(page.locator('.rule-answer')).toContainText('initiative marker');
+  await expect(page.locator('.rule-answer')).toContainText('randomly chosen player');
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+  await expectReviewedSourceCitation(page, 'arcs-leder-base-en', 4);
+  await page.goto('/games/abyss-bombyx-us-en/');
+  await expect(page.locator('.rule-answer')).toContainText('Randomly determine the starting player');
+  await expect(page.locator('.rule-answer')).toContainText('clockwise');
+  await expect(page.getByRole('heading', { name: 'If there’s a tie' })).toHaveCount(0);
+  await expectReviewedSourceCitation(page, 'abyss-bombyx-us-en', 3);
+});
+
 test('archived German summaries distinguish opening selection from action and feeding order', async ({ page }) => {
   await page.goto('/games/magalon-ravensburger-de-1998/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first in Magalon?');

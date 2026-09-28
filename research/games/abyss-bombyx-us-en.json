@@ -1,0 +1,37 @@
+{
+  "id": "abyss-bombyx-us-en",
+  "slug": "abyss-bombyx-us-en",
+  "language": "en",
+  "status": "draft",
+  "approvedBy": null,
+  "approvedRevision": null,
+  "publishedAt": null,
+  "materiallyUpdatedAt": null,
+  "gameName": "Abyss",
+  "aliases": [],
+  "editionLabel": "Bombyx original English US base-game rulebook",
+  "firstPlayerRule": "Randomly determine the starting player. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The rulebook does not prescribe a particular random selection method.",
+    "This answer covers the base game, not the Kraken, Leviathan, or De Profundis expansions."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://studiobombyx.com/assets/ABYSS_rulebook_US.pdf",
+      "title": "Abyss — English US base-game rulebook",
+      "publisher": "Bombyx",
+      "printedPages": ["3", "4"],
+      "pdfPagesOneBased": [3, 4],
+      "location": "Contents & Setup step 9; Game Overview turn order",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Bombyx's original Abyss product page https://studiobombyx.com/en/jeu/abyss/ links this direct publisher PDF, 6,429,279 bytes, 12 PDF pages, SHA-256 8c689768124d7dd4c1fb3d6a4d9f747700bd4e8052db8cb3e5d63e68f37a2afb. Codex visually inspected PDF page 3 (printed 3): setup step 9 instructs players to randomly determine the starting player. PDF page 4 says players take turns clockwise. Source packet: artifacts/pending-rules-followup-sep28g/REVIEW.md, seal 37baf7e198f72502b89a0bb56224f1921700a5119e6e29674a58ee0e197b1470. Exact active BGG 155987 / Wikidata Q113354266 identity; no approved title, alias or numeric overlap at c397f243. No expansion rule is transferred. Not enrolled in the portable random pool without separate opt-in review.",
+  "uncertainty": [
+    "The rulebook does not specify a randomizer or tie breaker."
+  ]
+}
