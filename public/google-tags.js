@@ -10,12 +10,12 @@
   if (!/^ca-pub-\d{10,20}$/.test(client)) return;
   const publisher = client.slice(3);
   const measurementId = 'G-XDVR78FJXY';
-  const analyticsKey = 'wgf:analytics-choice:v2';
+  const analyticsKey = 'wgf:analytics-choice:v3';
   const regulated = ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IE', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'CH'];
 
   let declined = false;
   try {
-    const choice = window.localStorage.getItem(analyticsKey) ?? window.localStorage.getItem('wgf:analytics-choice:v1');
+    const choice = window.localStorage.getItem(analyticsKey) ?? window.localStorage.getItem('wgf:analytics-choice:v2') ?? window.localStorage.getItem('wgf:analytics-choice:v1');
     declined = choice === 'decline';
   } catch { /* Browsers can block storage. */ }
 
@@ -77,6 +77,14 @@
   // Privacy page controls.
   document.addEventListener('click', event => {
     const target = event.target instanceof window.Element ? event.target : null;
+    if (target?.closest('a[data-affiliate-link="amazon"]') && !window[`ga-disable-${measurementId}`]) {
+      gtag('event', 'affiliate_outbound', {
+        partner: 'amazon',
+        page_location: location.origin + location.pathname,
+        page_title: document.title,
+        send_to: measurementId,
+      });
+    }
     if (target?.closest('[data-consent-open]')) {
       window.googlefc = window.googlefc || {};
       window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];

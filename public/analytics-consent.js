@@ -2,7 +2,7 @@
 (() => {
   const window = globalThis;
   const { document, location } = window;
-  const choiceKey = 'wgf:analytics-choice:v2';
+  const choiceKey = 'wgf:analytics-choice:v3';
   const measurementId = 'G-XDVR78FJXY';
   const panel = document.querySelector('[data-analytics-consent]');
   const settings = document.querySelector('[data-analytics-settings]');
@@ -12,7 +12,13 @@
 
   let choice = null;
   let analyticsLoaded = false;
-  try { choice = window.localStorage.getItem(choiceKey); } catch { /* Browsers can block storage. */ }
+  try {
+    choice = window.localStorage.getItem(choiceKey);
+    // An earlier refusal remains a refusal; an earlier allowance did not
+    // include affiliate-link measurement and must be requested again.
+    if (choice === null && (window.localStorage.getItem('wgf:analytics-choice:v2') === 'decline'
+      || window.localStorage.getItem('wgf:analytics-choice:v1') === 'decline')) choice = 'decline';
+  } catch { /* Browsers can block storage. */ }
 
   document.addEventListener('wgf:share-completed', event => {
     if (choice !== 'allow' || !analyticsLoaded) return;
@@ -21,6 +27,16 @@
     window.gtag('event', 'share', {
       method: 'link', content_type: kind,
       item_id: kind === 'tool' ? 'first_player_picker' : 'site_page',
+      page_location: location.origin + location.pathname,
+      page_title: document.title,
+      send_to: measurementId,
+    });
+  });
+
+  document.addEventListener('click', event => {
+    if (choice !== 'allow' || !analyticsLoaded || !event.target?.closest?.('a[data-affiliate-link="amazon"]')) return;
+    window.gtag('event', 'affiliate_outbound', {
+      partner: 'amazon',
       page_location: location.origin + location.pathname,
       page_title: document.title,
       send_to: measurementId,

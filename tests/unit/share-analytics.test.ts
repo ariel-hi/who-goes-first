@@ -6,7 +6,7 @@ import { analytics } from '../../src/lib/analytics';
 const script = readFileSync('public/analytics-consent.js', 'utf8');
 
 function setup(saved: Record<string, string> = {}, cleanupFails = false) {
-  const listeners = new Map<string, (event: { detail?: unknown }) => void>();
+  const listeners = new Map<string, (event: { detail?: unknown; target?: { closest(selector: string): unknown } }) => void>();
   const clicks = new Map<string, () => void>();
   const dataLayer: IArguments[] = [];
   let reloads = 0;
@@ -18,7 +18,7 @@ function setup(saved: Record<string, string> = {}, cleanupFails = false) {
   const document = {
     title: 'Who Goes First?', cookie: '_ga=old',
     querySelector(selector: string) { return elements.get(selector); },
-    addEventListener(type: string, callback: (event: { detail?: unknown }) => void) { listeners.set(type, callback); },
+    addEventListener(type: string, callback: (event: { detail?: unknown; target?: { closest(selector: string): unknown } }) => void) { listeners.set(type, callback); },
     head: { append() {} }, createElement() { return {}; },
   };
   const window = {
@@ -29,17 +29,20 @@ function setup(saved: Record<string, string> = {}, cleanupFails = false) {
   runInNewContext(script, { globalThis: window, Date });
   return {
     share(detail: unknown) { listeners.get('wgf:share-completed')!({ detail }); },
+    affiliateClick() { listeners.get('click')!({ target: { closest(selector) { return selector === 'a[data-affiliate-link="amazon"]' ? {} : null; } } }); },
     click(name: string) { clicks.get(name)!(); },
     events: () => dataLayer.filter(args => args[0] === 'event').map(args => Array.from(args)),
     config: () => dataLayer.find(args => args[0] === 'config'),
     reloads: () => reloads,
+    panel: elements.get('[data-analytics-consent]')!,
   };
 }
 
 describe('sharing measurement consent boundary', () => {
-  test('does not replay earlier shares or accept the previous page-view-only choice', () => {
-    const app = setup({ 'wgf:analytics-choice:v1': 'allow' });
+  test('does not replay earlier actions or accept the previous sharing-only choice', () => {
+    const app = setup({ 'wgf:analytics-choice:v2': 'allow' });
     app.share('tool');
+    app.affiliateClick();
     expect(app.config()).toBeUndefined();
     app.click('allow');
     expect(app.events()).toEqual([]);
@@ -48,24 +51,41 @@ describe('sharing measurement consent boundary', () => {
       method: 'link', content_type: 'tool', item_id: 'first_player_picker',
       page_location: 'https://whogoesfirst.fun/', page_title: 'Who Goes First?', send_to: 'G-XDVR78FJXY',
     }]]);
+    app.affiliateClick();
+    expect(app.events()[1]).toEqual(['event', 'affiliate_outbound', {
+      partner: 'amazon', page_location: 'https://whogoesfirst.fun/',
+      page_title: 'Who Goes First?', send_to: 'G-XDVR78FJXY',
+    }]);
+  });
+
+  test('preserves an earlier refusal without showing analytics again', () => {
+    const app = setup({ 'wgf:analytics-choice:v2': 'decline' });
+    app.share('tool');
+    app.affiliateClick();
+    expect(app.config()).toBeUndefined();
+    expect(app.events()).toEqual([]);
+    expect(app.panel.hidden).toBe(true);
   });
 
   test('drops arbitrary payloads and stops immediately when consent is withdrawn', () => {
-    const app = setup({ 'wgf:analytics-choice:v2': 'allow' });
+    const app = setup({ 'wgf:analytics-choice:v3': 'allow' });
     app.share({ kind: 'tool', names: ['Private'] });
     app.share('Private');
     expect(app.events()).toEqual([]);
     app.share('tool');
+    app.affiliateClick();
     app.click('decline');
     app.share('tool');
-    expect(app.events()).toHaveLength(1);
+    app.affiliateClick();
+    expect(app.events()).toHaveLength(2);
     expect(JSON.stringify(app.events())).not.toMatch(/Private|winner/);
     expect(app.reloads()).toBe(1);
   });
 
   test('cannot send a share when URL cleanup prevents analytics from loading', () => {
-    const app = setup({ 'wgf:analytics-choice:v2': 'allow' }, true);
+    const app = setup({ 'wgf:analytics-choice:v3': 'allow' }, true);
     app.share('tool');
+    app.affiliateClick();
     expect(app.events()).toEqual([]);
   });
 });

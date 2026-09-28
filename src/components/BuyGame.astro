@@ -4,7 +4,7 @@ interface Props { href: string; name: string }
 const { href, name } = Astro.props;
 ---
 <aside class="buy-game" aria-label="Find this game">
-  <a class="buy-card" href={href} rel="sponsored nofollow noopener" target="_blank">
+  <a class="buy-card" href={href} rel="sponsored nofollow noopener" target="_blank" data-affiliate-link="amazon">
     <span class="amazon-badge"><img src="/brand/available-at-amazon.png" alt="Available at Amazon" width="1500" height="723" loading="lazy" decoding="async" /></span>
     <span class="buy-text"><span class="buy-kicker">Don’t own it yet?</span><span class="buy-title">Find {name} on Amazon</span></span>
     <span class="buy-arrow" aria-hidden="true">↗</span>

@@ -8,7 +8,10 @@ function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = fa
   const scripts: string[] = [];
   const dataLayer: IArguments[] = [];
   const listeners = new Map<string, (event: { target: Element }) => void>();
-  class Element { closest(selector: string) { return selector === '[data-analytics-off]'; } }
+  class Element {
+    constructor(readonly action: 'off' | 'affiliate') {}
+    closest(selector: string) { return selector === (this.action === 'off' ? '[data-analytics-off]' : 'a[data-affiliate-link="amazon"]'); }
+  }
   const status = { textContent: '' };
   const document = {
     currentScript: { dataset: { client: 'ca-pub-1234567890123456', ads: ads ? 'on' : 'off' } },
@@ -27,7 +30,11 @@ function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = fa
     history: { state: null, replaceState(_state: unknown, _title: string, url: string) { if (cleanupFails) throw Error('blocked'); order.push(url); } },
   };
   runInNewContext(script, { globalThis: window, Date });
-  return { scripts, order, dataLayer, window, saved, optOut: () => listeners.get('click')!({ target: new Element() }), status };
+  return {
+    scripts, order, dataLayer, window, saved,
+    optOut: () => listeners.get('click')!({ target: new Element('off') }),
+    affiliateClick: () => listeners.get('click')!({ target: new Element('affiliate') }), status,
+  };
 }
 
 test('ads mode keeps picker pages ad free and cleans private query values before third-party scripts', () => {
@@ -43,7 +50,7 @@ test('ads mode keeps picker pages ad free and cleans private query values before
 });
 
 test('ads mode preserves current and legacy analytics opt-outs', () => {
-  for (const key of ['wgf:analytics-choice:v1', 'wgf:analytics-choice:v2']) {
+  for (const key of ['wgf:analytics-choice:v1', 'wgf:analytics-choice:v2', 'wgf:analytics-choice:v3']) {
     const page = run(true, { [key]: 'decline' });
     expect(page.scripts.some(url => url.includes('googletagmanager'))).toBe(false);
     expect(page.dataLayer.some(args => args[0] === 'config')).toBe(false);
@@ -51,9 +58,25 @@ test('ads mode preserves current and legacy analytics opt-outs', () => {
   }
   const page = run(true);
   page.optOut();
-  expect(page.saved['wgf:analytics-choice:v2']).toBe('decline');
+  expect(page.saved['wgf:analytics-choice:v3']).toBe('decline');
   expect(page.window).toHaveProperty('ga-disable-G-XDVR78FJXY', true);
   expect(page.status.textContent).toBe('Analytics is off on this device.');
+});
+
+test('ads mode counts only consented Amazon opens with a clean fixed payload', () => {
+  const page = run(true);
+  page.affiliateClick();
+  expect(page.dataLayer.filter(args => args[0] === 'event').map(args => Array.from(args))).toEqual([['event', 'affiliate_outbound', {
+    partner: 'amazon', page_location: 'https://whogoesfirst.fun/games/test/',
+    page_title: 'Public rule', send_to: 'G-XDVR78FJXY',
+  }]]);
+  page.optOut();
+  page.affiliateClick();
+  expect(page.dataLayer.filter(args => args[0] === 'event')).toHaveLength(1);
+  expect(JSON.stringify(page.dataLayer)).not.toMatch(/Private|names=|#q=/);
+  const declined = run(true, { 'wgf:analytics-choice:v2': 'decline' });
+  declined.affiliateClick();
+  expect(declined.dataLayer.some(args => args[0] === 'event')).toBe(false);
 });
 
 test('an ad-enabled marker without an explicit unit never loads AdSense', () => {
