@@ -7,7 +7,8 @@ export function amazonSearchUrl(gameName: string, tag: string): string {
   url.searchParams.set('tag', tag);
   return url.href;
 }
-export const amazonDisclosure = 'As an Amazon Associate, we earn from qualifying purchases. Amazon and its logo are trademarks of Amazon.com, Inc. or its affiliates.';
+export const amazonDisclosure = 'As an Amazon Associate, Who Goes First? earns from qualifying purchases.';
+export const amazonTrademarkNotice = 'Amazon and its logo are trademarks of Amazon.com, Inc. or its affiliates.';
 
 // Readers of a rule page usually own the game already, so accessories fit better
 // than the box itself. Generic search terms only; no reader data in the URL.
