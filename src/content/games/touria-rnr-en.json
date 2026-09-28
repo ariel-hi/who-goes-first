@@ -3,10 +3,10 @@
   "slug": "touria-rnr-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "34b70aaeaae4eda0cfedf93d556f4a6c8d3518538cc6206c9b8dc488fcfeacd2",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5cfa72142ce25ebd85da538b0205171e66342154cfb5b286561b90cec77411ed",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Touria",
   "aliases": [],
   "editionLabel": "English rules distributed by R&R Games",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/touria-rnr-en-cover.jpg",
+    "alt": "Touria R&R Games English-edition box cover",
+    "width": 560,
+    "height": 450,
+    "presentation": "cover",
+    "source": {
+      "url": "https://rnrgames.com/images/thumbs/0001314_touria.jpeg",
+      "publisher": "R&R Games"
+    },
+    "fairUse": {
+      "rightsHolder": "R&R Games / HUCH! & friends",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product listing: https://rnrgames.com/touria. Exact publisher-hosted image: https://rnrgames.com/images/thumbs/0001314_touria.jpeg. The R&R Games product page hosts this box image and links the exact English rules cited by this article; the box displays R&R Games and HUCH! branding. Visually reviewed against the article edition (English rules distributed by R&R Games).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

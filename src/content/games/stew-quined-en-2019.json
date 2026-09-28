@@ -3,10 +3,10 @@
   "slug": "stew-quined-en-2019",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "50bc74fcc0459e0b58b5b41bc3f44385a4e6fbbee83622bd9df32a97c971c98a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "5b466657a9b5ea2926272180f0ba431859b8b0b3cfb2c0c7d9c769780becf3ac",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Stew",
   "aliases": [],
   "editionLabel": "Quined Games English rule sheet (2019)",
@@ -31,5 +31,22 @@
     }
   ],
   "internalEvidence": "Visually checked the English rule sheet image linked from Quined Games' Stew product page. The setup gives the last-stew-eater criterion and the later-round caller change. SHA-256: 81b452eda42a9b824a7e82f9be16aaaa3a00487aa887fb77ed52faefa6545721. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked game identity, edition, first-player criterion, and later-round order against the cited source.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/stew-quined-en-2019-cover.jpg",
+    "alt": "Stew Quined Games English-edition cover artwork",
+    "width": 400,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.quined.nl/wp-content/uploads/2019/07/STEfront.jpg",
+      "publisher": "Quined Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Quined Games / cover artist Loïc Billiau",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product listing: https://www.quined.nl/featured_item/stew/. Exact publisher-hosted image: https://www.quined.nl/wp-content/uploads/2019/07/STEfront.jpg. Quined Games product page features this front artwork and links the exact 2019 English rules cited by this article. The art carries Quined Games branding and is identified on the rules sheet as cover artwork. Visually reviewed against the article edition (Quined Games English rule sheet (2019)).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
