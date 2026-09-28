@@ -3,10 +3,10 @@
   "slug": "caylus-ystari-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4217cced52a22e0d943d82c0515e24a9765c736194b0c70927feb7b2b51c2415",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "ae0b4dc9234eda05a44e42764967c0f02247af8a4fc032f8496b55cdbeda4ff1",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Caylus",
   "aliases": [],
   "editionLabel": "Ystari Games English rules",
@@ -39,5 +39,22 @@
     "The publisher's site presents an untrusted HTTPS certificate, so browsers may warn when opening the source link.",
     "The two-player section does not separately say how the first turn's order is set; the general random placement is the only instruction given.",
     "The rules file carries no edition year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/caylus-ystari-en-cover.jpg",
+    "alt": "Cover page of the original Ystari Caylus English rulebook",
+    "width": 500,
+    "height": 357,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.ystari.com/caylus/CayUS.pdf",
+      "publisher": "Ystari Games official English Caylus rulebook"
+    },
+    "fairUse": {
+      "rightsHolder": "Ystari Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.ystari.com/caylus/CayUS.pdf. Page 1 of the publisher-hosted English rules shows the original Caylus parchment title design. This is a rulebook title page, not box packaging. Original image URL: https://www.ystari.com/caylus/CayUS.pdf",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

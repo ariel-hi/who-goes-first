@@ -3,10 +3,10 @@
   "slug": "chateau-roquefort-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4a7e1b6b9a8860c300feae5ff3aa641429a2c22fd21f3a57c34523ddcb6583d6",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c6572bfa1edd07003bcb24f39e3bae8ea2ab516fa46c5028540a1b10b3642635",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Chateau Roquefort",
   "aliases": [
     "Château Roquefort"
@@ -39,5 +39,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/chateau-roquefort-rio-grande-en-cover.jpg",
+    "alt": "Rio Grande Chateau Roquefort box with mouse, cheese and castle",
+    "width": 416,
+    "height": 400,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/2/jpg500/25083800009s.jpg",
+      "publisher": "Noble Knight Games listing for Rio Grande 2023 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games and Victor Boden",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2148095469/Chateau-Roquefort-2023-Edition. The cited rule sheet has a 2022 copyright, and the seller identifies this box as the 2023 Rio Grande edition, manufacturer part RGG337. The box bears the Rio Grande logo. Original image URL: https://image.nobleknight.com/2/jpg500/25083800009s.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

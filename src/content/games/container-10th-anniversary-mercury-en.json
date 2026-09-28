@@ -3,10 +3,10 @@
   "slug": "container-10th-anniversary-mercury-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "965a81fc0c6c4f409599ef586798b4b4c7e297f057efb8bcd45d536273794b7b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "35c7523d69836faf92b2787cc0977be79bb342e9da88ac9f503bfa34018474c2",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Container: 10th Anniversary Jumbo Edition!",
   "aliases": [],
   "editionLabel": "Mercury Games 10th Anniversary Jumbo English edition",
@@ -34,5 +34,22 @@
   "internalEvidence": "The Mercury Games anniversary rulebook states the container-ship criterion, an agreed random alternative, and clockwise play on PDF page 4. Its edition title and component list match inventory BGG 229892. SHA-256: 1358c975ededb5e1bf877132d21fbdaab938b2649977d768d9aeb5326011db9b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "No tie procedure is supplied for equally recent ship captains."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/container-10th-anniversary-mercury-en-cover.jpg",
+    "alt": "Mercury Container 10th Anniversary Jumbo Edition box with cargo ship",
+    "width": 500,
+    "height": 490,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/m/jpg1500/mcy1703.jpg",
+      "publisher": "Noble Knight Games listing for Mercury Games 10th Anniversary Jumbo Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Mercury Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147727024/Container---10th-Anniversary-Jumbo-Edition. Seller identifies the Mercury 10th Anniversary Jumbo Edition; photographed box explicitly says 10th Anniversary Jumbo Edition and bears the Mercury logo. Original image URL: https://image.nobleknight.com/m/jpg1500/mcy1703.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

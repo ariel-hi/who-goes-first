@@ -3,10 +3,10 @@
   "slug": "dominion-rio-grande-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication",
-  "approvedRevision": "2c4e7d0f6f2844d61246ffc6121f841c151c14355df0ae46cd4e4bdf4f8828de",
+  "approvedBy": "Codex /root exact record, edition correspondence and public projection review; original manual images reviewed by Codex task 01a0de73-480e-7d52-8d0f-aed81f661e0e; independent field/provenance review by /root/held_identity_review; owner authorized ongoing review and publication; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "ecca02af0ad3002bc6ff402263f6076688ab03cbb62bef22d1509acf5768cc08",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dominion",
   "aliases": [],
   "editionLabel": "Rio Grande English original edition",
@@ -37,5 +37,22 @@
   "uncertainty": [
     "The publisher-authored original English rules are preserved by a rulebook archive. The official first-edition product page returned an access error.",
     "The rules do not specify a selection method if every player tied for victory in the previous game."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dominion-rio-grande-original-en-cover.jpg",
+    "alt": "Rio Grande Dominion first-edition box with medieval riders and village",
+    "width": 412,
+    "height": 410,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/2/jpg500/25192780016g.jpg",
+      "publisher": "Noble Knight Games listing for Rio Grande Dominion first edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147387160/Dominion-1st-Edition. Seller identifies Dominion 1st Edition, Rio Grande part RGG370, first published 2008. Box art and Rio Grande logo match the original edition; the later award seal is on this printing of the same first edition. Original image URL: https://image.nobleknight.com/2/jpg500/25192780016g.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

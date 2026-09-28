@@ -3,10 +3,10 @@
   "slug": "concordia-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4b3c3515c7b5bdc22695c959f6faea2bf1fa130b18c83cda1a7c03c0e40bf0ba",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2942e753efd4064e2838323a76042efb3767a5a918a998e77a77c3ebb919790c",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Concordia",
   "aliases": [],
   "editionLabel": "Rio Grande Games / PD-Verlag English rules, version 1.1",
@@ -35,5 +35,22 @@
   "internalEvidence": "Downloaded https://www.riograndegames.com/wp-content/uploads/2013/10/Concordia_rules_eng_1_1.pdf from the English publisher Rio Grande Games’ site. SHA-256: 0a0c875e81c00f09f82930a8fdf271ec41f852c110c5512db0d26a63f6c21f50. Read the extracted text of all 4 PDF pages; the start-player text is on page 1. Page 1, Game setup: ‘After randomly determining the start player, the last player (player to the right of the start player) receives the Praefectus Magnus.’ Game flow: turns go clockwise. The material list (Imperium/Italia board, 65 personality cards, Praefectus Magnus card) and final scoring by personality gods identify Mac Gerdts’ Concordia base game (BGG 124361). The file name marks rules version 1.1. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "These rules say detailed setup is in a separate quick intro, which was not checked; it may add seat-based starting details."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/concordia-rio-grande-en-cover.jpg",
+    "alt": "Original Rio Grande Concordia box with Roman woman and marketplace",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/r/jpg1500/rgg499.jpg",
+      "publisher": "Noble Knight Games listing for Rio Grande first edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games, PD-Verlag and credited artists",
+      "rationale": "Reduced game packaging or publisher rulebook title page used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game, rulebook or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147538408/Concordia. The seller identifies the first Rio Grande edition; the photographed box shows the original Concordia art and PD-Verlag mark, matching the publisher rulebook version 1.1. Original image URL: https://image.nobleknight.com/r/jpg1500/rgg499.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
