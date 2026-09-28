@@ -3,10 +3,10 @@
   "slug": "the-grimm-forest-druid-city-en-dized",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "879a41315334242609e26d6b10c8ea086cd9deede1eff42219f46929369d0420",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "ab6e187fb42989e0f1c6da41623c6ad253dfc934a422fb5bccbdb2883909cb82",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Grimm Forest",
   "aliases": [
     "Grimm Forest"
@@ -81,5 +81,22 @@
   "uncertainty": [
     "No tie-break or dietary alternative is specified alongside the initial criterion.",
     "This record covers the named official online reference; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-grimm-forest-druid-city-en-dized-cover.jpg",
+    "alt": "The Grimm Forest game box cover",
+    "width": 515,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5973c49529687fd9f2a82292/1502694034814-PKZHAZFZNB5EI39MC16P/image-asset.jpeg?format=original",
+      "publisher": "Druid City Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Druid City Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Druid City Games product page: https://www.druidcitygames.com/the-grimm-forest. Exact publisher-hosted image: https://images.squarespace-cdn.com/content/v1/5973c49529687fd9f2a82292/1502694034814-PKZHAZFZNB5EI39MC16P/image-asset.jpeg?format=original. Cropped to the base game box from the publisher’s high-resolution product and components image; the box and game identity were visually reviewed against the article edition (Druid City Games English base rules, official Dized reference).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
