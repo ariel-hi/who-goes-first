@@ -3,13 +3,30 @@
   "slug": "risk-hasbro-00044-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex public-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4d965a63bdc8880ef7410063df6bd4f512a9f79582ab256353f9d26a9a59210b",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "5fd534f7fca9b26b513e8a1febbe1f43d808aac06035271b287c9035a9c3d007",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Risk",
   "aliases": [],
   "editionLabel": "Hasbro Risk Global Domination English instructions",
+  "image": {
+    "file": "/images/games/risk-hasbro-00044-en-cover.jpg",
+    "alt": "Risk Global Domination illustrated title panel from Hasbro item 00044 English rulebook",
+    "width": 229,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://instructions.hasbro.com/api/download/00044_en-us_risk-board-game.pdf",
+      "publisher": "Hasbro"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro / Parker Brothers",
+      "rationale": "Small publisher-hosted rulebook title image identifies the Risk edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Hasbro's item 00044 English PDF contains this illustrated Risk: The Game of Global Domination title panel on the first sheet, alongside a 1999 Hasbro copyright and print code 00044-1. The title panel was rotated into reading orientation and reduced to 229 × 360 pixels. This depicts the actual rulebook cover, not a game box.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "During initial army placement, every player rolls one die. The highest roller places the first infantry unit; placement then continues clockwise. That same player takes the first regular turn.",
   "officialTieBreak": null,
   "houseFallback": null,
