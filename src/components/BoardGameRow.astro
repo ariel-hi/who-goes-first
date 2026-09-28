@@ -1,11 +1,13 @@
 ---
 import { boardGameHref, type BoardGame } from '../lib/content/board-game-browse';
+import { directoryArt } from '../lib/directory-art';
 interface Props { game: BoardGame }
 const { game } = Astro.props;
+const art = directoryArt(game.name);
 ---
 <li data-id={game.routeKey} data-has-rule={game.rules.length > 0 ? 'true' : 'false'}>
-  {game.rules.length > 0 ? <a href={boardGameHref(game)}><span>{game.name}<small>{game.rules.length > 1 ? `${game.rules.length} sourced editions` : 'Starting rule available'}</small></span><span class="directory-arrow" aria-hidden="true">→</span></a> : <details class="directory-pending">
-    <summary><span>{game.name}<small>No checked starting rule yet</small></span><span class="directory-disclosure" aria-hidden="true"></span></summary>
+  {game.rules.length > 0 ? <a href={boardGameHref(game)}><span class="directory-entry"><span class={`directory-art directory-art-${art.tone}`} aria-hidden="true">{art.initial}</span><span>{game.name}<small>{game.rules.length > 1 ? `${game.rules.length} sourced editions` : 'Starting rule available'}</small></span></span><span class="directory-arrow" aria-hidden="true">→</span></a> : <details class="directory-pending">
+    <summary><span class="directory-entry"><span class={`directory-art directory-art-${art.tone}`} aria-hidden="true">{art.initial}</span><span>{game.name}<small>No checked starting rule yet</small></span></span><span class="directory-disclosure" aria-hidden="true"></span></summary>
     <div class="directory-pending-help">
       <p>We haven’t checked this game’s starting rule yet. Follow the rulebook in your box, or give every player an equal chance with the picker.</p>
       <div class="directory-pending-actions"><a class="directory-picker-link" href="/">Pick a player</a>{game.reference && <a href={game.reference.url}>{game.reference.label === 'BoardGameGeek' ? 'View game on BoardGameGeek' : game.reference.label} <span aria-hidden="true">↗</span></a>}</div>
