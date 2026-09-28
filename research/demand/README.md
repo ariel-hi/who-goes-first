@@ -17,3 +17,7 @@ The weekly job writes `indexing.json` from Search Console's Sitemaps and URL Ins
 The weekly job also writes `country-traffic.json` for the same 30-day GA4 window as `traffic-metrics.json`. It requests `countryId`, `sessions`, and `screenPageViews` and records whether Google reports thresholding, an `(other)` row, or truncation. If the country request fails, the file says `unavailable` for the current window rather than retaining a stale prior snapshot.
 
 The US/CA/GB/AU session subtotal is a **named subset** of Journey by Mediavine's Tier 1 examples, not a complete Tier 1 count or an eligibility decision. The US/CA/GB/AU/NZ view subtotal is a GA4 screen/page-view observation for comparison with Raptive's country criteria, not proof of qualifying website pageviews. Missing or suppressed country rows remain outside those subtotals. The report never estimates cash revenue or expenses from traffic.
+
+## Traffic acquisition
+
+The same weekly GA4 window also produces `acquisition.json`: session default channel group, session source/medium, sessions, and engaged sessions. This identifies which reported channels bring visitors and whether those sessions engage. The job refuses incomplete or duplicate source rows, records Google's quality flags, and explicitly counts sessions outside the returned rows. If the query fails, the current window is marked unavailable rather than carrying forward an older attribution. GA4 sessions and engagement do not establish verified human visitors, campaign profit, or revenue.

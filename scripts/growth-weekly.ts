@@ -1,12 +1,13 @@
 import { appendFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { getBoardGames } from '../src/lib/content/board-games';
 import { getCatalog } from '../src/lib/content/catalog';
-import { analyticsCountryTraffic, analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
+import { analyticsAcquisition, analyticsCountryTraffic, analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
 import { rankDemand } from './lib/demand';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
 import { ga4TrafficMetrics } from './lib/growth-report';
 import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCountryTraffic } from './lib/country-traffic';
 import { indexingReport, indexingSnapshot } from './lib/indexing-diagnostics';
+import { acquisitionReport, summarizeAcquisition, type AcquisitionSummary, type UnavailableAcquisition } from './lib/acquisition';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
@@ -38,6 +39,7 @@ const weekNow = sum(thisWeek); const weekBefore = sum(lastWeek);
 const indexing = await indexingSnapshot(token, property, origin);
 let traffic: AnalyticsTotals | undefined;
 let country: CountryTrafficSummary | undefined;
+let acquisition: AcquisitionSummary | undefined;
 const trafficWindow = { start: daysAgo(30), end: daysAgo(1) };
 if (gaProperty) {
   try { traffic = await analyticsTotals(token, gaProperty, trafficWindow.start, trafficWindow.end); }
@@ -46,6 +48,9 @@ if (gaProperty) {
     try { country = summarizeCountryTraffic(trafficWindow.start, trafficWindow.end, traffic,
       await analyticsCountryTraffic(token, gaProperty, trafficWindow.start, trafficWindow.end)); }
     catch (error) { console.warn(`GA4 country report skipped: ${(error as Error).message}`); }
+    try { acquisition = summarizeAcquisition(trafficWindow.start, trafficWindow.end, traffic,
+      await analyticsAcquisition(token, gaProperty, trafficWindow.start, trafficWindow.end)); }
+    catch (error) { console.warn(`GA4 acquisition report skipped: ${(error as Error).message}`); }
   }
 }
 
@@ -56,6 +61,11 @@ const countrySnapshot = country ?? {
   reason: !gaProperty ? 'GA4 property not configured' : !traffic ? 'GA4 totals unavailable' : 'GA4 country report unavailable',
 } satisfies UnavailableCountryTraffic;
 writeFileSync('research/demand/country-traffic.json', `${JSON.stringify({ ...countrySnapshot, generatedAt: new Date().toISOString() }, null, 2)}\n`);
+const acquisitionSnapshot = acquisition ?? {
+  status: 'unavailable', periodStart: trafficWindow.start, periodEnd: trafficWindow.end,
+  reason: !gaProperty ? 'GA4 property not configured' : !traffic ? 'GA4 totals unavailable' : 'GA4 acquisition report unavailable',
+} satisfies UnavailableAcquisition;
+writeFileSync('research/demand/acquisition.json', `${JSON.stringify({ ...acquisitionSnapshot, generatedAt: new Date().toISOString() }, null, 2)}\n`);
 writeFileSync('research/demand/indexing.json', `${JSON.stringify(indexing, null, 2)}\n`);
 writeFileSync('research/demand/search-console.json', `${JSON.stringify({
   generatedAt: new Date().toISOString(), property, window: window28,
@@ -80,6 +90,7 @@ ${traffic ? `## Traffic (GA4, last 30 days)
 - Screen/page views per session: ${traffic.sessions ? (traffic.screenPageViews / traffic.sessions).toFixed(2) : '—'}
 ${country ? `- Named US/CA/GB/AU subtotal: ${country.namedJourneySessions.toLocaleString('en')} sessions. Five-country US/CA/GB/AU/NZ subtotal: ${country.raptiveCountryScreenPageViews.toLocaleString('en')} screen/page views. These are GA4 observations, not ad-network qualification.\n` : '- Country breakdown unavailable for this run.\n'}
 ` : '_GA4 totals unavailable: set GA4_PROPERTY_ID and give the service account Viewer access._\n'}
+${acquisitionReport(acquisitionSnapshot)}
 ${adNetworkReadiness(traffic, country)}
 ## Research queue (last 28 days)
 ${demand.missingRules.length ? demand.missingRules.slice(0, 15).map((game, index) => `${index + 1}. **${game.name}**${game.bggId ? ` (BGG ${game.bggId})` : ""} — ${game.impressions} impressions: ${game.queries.map(query => `“${query}”`).join(', ')}`).join('\n') : 'No starting-rule searches for games without a sourced rule yet.'}
