@@ -1,0 +1,38 @@
+{
+  "id": "ingenious-thames-kosmos-original-en",
+  "slug": "ingenious-thames-kosmos-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
+  "approvedRevision": "8247671a27d1ac8c7af2187fa95bf08d60bf8cbc6a88b1341ec758229b704d96",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Ingenious",
+  "aliases": [],
+  "editionLabel": "Thames & Kosmos original English edition, item 696116",
+  "firstPlayerRule": "The youngest player begins. Play then proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If two or more players are equally youngest, choose among them at random. This is a house-rule suggestion, not a publisher instruction.",
+  "tieBreakApplicable": true,
+  "clarifications": [
+    "This answer covers the manual's standard game for two to four players; the solitaire and partnership variants are separate.",
+    "Thames & Kosmos lists a separate second-edition manual for the same item number. This answer cites the original manual only."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.thamesandkosmos.com/manuals/full/696116_Ingenious_Manual.pdf",
+      "title": "Ingenious (original) — English manual",
+      "publisher": "Thames & Kosmos",
+      "printedPages": ["1"],
+      "pdfPagesOneBased": [1],
+      "location": "Standard Game for 2–4 Players, Play, opening sentence",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Thames & Kosmos' official manual archive explicitly separates Ingenious (original) from Ingenious (2nd Edition), both item 696116, and links the original English PDF. The publisher-hosted original PDF is 1,497,125 bytes, two pages, SHA-256 69a84dd33991727ab241a6c5d660c68a97be71ea1564cfb5baf069b7a8449e69. Codex visually inspected PDF page 1 under Standard Game for 2–4 Players > Play: the youngest begins and play proceeds clockwise. The same manual contains solitaire and partnership sections; neither is transferred here. Sealed source packet: artifacts/pending-rules-followup-sep28i/REVIEW.md, seal e671a00bf10af7cf17696ee421a1a3c6d174fdd869d437c73ffae584f59858b1. Exact active BGG 9674 / Wikidata Q1307125 identity had no approved rule at 6146f5a or 089c464. Portable pool enrollment remains separate.",
+  "uncertainty": [
+    "The manual does not state an official tie-break when two people are equally youngest.",
+    "No starting rule is inferred for the second edition, solitaire play, or partnership variant."
+  ]
+}

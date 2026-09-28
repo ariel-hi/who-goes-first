@@ -1,0 +1,38 @@
+{
+  "id": "evolution-north-star-base-en",
+  "slug": "evolution-north-star-base-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-28",
+  "approvedRevision": "8da29c3e6f62a99bcd974fe6a3ec5101db72fa229d9bf26e7c933ddf453f9510",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Evolution",
+  "aliases": [],
+  "editionLabel": "North Star Games English base-game rulebook, PDF created 2017",
+  "firstPlayerRule": "Randomly determine the first player and give that player the First Player Marker.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "tieBreakApplicable": false,
+  "clarifications": [
+    "The rulebook does not prescribe a particular random selection method.",
+    "This answer covers the base game in the cited North Star rulebook, not Evolution: Climate or another printing."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/Evolution-Rules-Web_1.pdf?7044374637391402093",
+      "title": "Evolution — North Star Games English base-game rulebook",
+      "publisher": "North Star Games",
+      "printedPages": ["3"],
+      "pdfPagesOneBased": [3],
+      "location": "Set-Up, final bullet",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "North Star Games' English base-game PDF was obtained from the publisher's Shopify CDN, 12,386,319 bytes, 16 PDF pages, SHA-256 c212d950a5a0be466feeb55528a9f989c52bc72b612d4d15ad59e4156e6a251b. Codex visually inspected printed/PDF page 3: the final Set-Up bullet randomly determines the first player and gives them the First Player Marker. PDF metadata creation is 2017-04-05 and is not evidence for the exact wording of the original 2014 printing. Sealed source packet: artifacts/pending-rules-followup-sep28i/REVIEW.md, seal e671a00bf10af7cf17696ee421a1a3c6d174fdd869d437c73ffae584f59858b1. Exact active directory identity BGG 155703 / Wikidata Q55726378 had no approved rule at 6146f5a or 089c464. No Climate or other edition rule is transferred. A random-only instruction is excluded from the portable criterion pool.",
+  "uncertainty": [
+    "The publisher does not name a particular randomizer or tie-break procedure.",
+    "The cited PDF's 2017 creation metadata does not establish the rule in the 2014 first printing."
+  ]
+}

@@ -1,5 +1,7 @@
 # Full collection research
 
+The [2026-09-28 five-identity and two-rule checkpoint](sep28-five-identities-two-rules-progress.md) lists **5,152 identities /1,107 approved edition rules /1,095 identities with a researched edition /4,057 pending**. It also records the dated GA4 growth snapshot and a separately held CC0 discovery queue. All earlier counts below are historical checkpoints.
+
 The owner requested the entire starting-rule compendium, not a named starter list. That objective remains unfinished.
 
 The verified production checkpoint `60e61b66` (2026-09-27) contained **5,043 listed identities, 1,086 approved edition rules, 1,074 identities with a checked rule and 3,969 awaiting one**, with 393 separately reviewed portable criteria. Its full hosted verification passed 190 unit checks and 966 browser cases; three production-only social cases were skipped. These dated counts describe an incomplete inventory; they do not establish worldwide completeness. The checkpoints below retain historical counts.
