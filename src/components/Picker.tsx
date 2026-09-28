@@ -36,6 +36,9 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
   const [text, setText] = useState('');
   const [inputMode, setInputMode] = useState<'seats' | 'names'>('seats');
   const [mode, setMode] = useState<Mode>(initialMode);
+  const selectedMode = useRef<Mode>(initialMode);
+  const pendingModePick = useRef<number | null>(null);
+  const pickCurrent = useRef<(nextMode?: Mode) => void>(() => {});
   const [prefs, setPrefs] = useState<Preferences>({ ...defaults, mode: initialMode });
   const [hydrated, setHydrated] = useState(false);
   const [systemReduced, setSystemReduced] = useState(false);
@@ -74,7 +77,11 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
   const winner = state.outcome?.players.find(p => p.id === state.outcome?.winnerId);
   const winnerLabel = winner && state.outcome ? displayLabel(winner, state.outcome.players) : '';
 
-  useEffect(() => () => countPressCleanup.current(), []);
+  selectedMode.current = mode;
+  useEffect(() => () => {
+    countPressCleanup.current();
+    if (pendingModePick.current !== null) clearTimeout(pendingModePick.current);
+  }, []);
 
   useEffect(() => {
     try {
@@ -310,7 +317,11 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
     edited(next, next.every(p => graphemeCount(p.label.trim()) <= 24 && !hasControls(p.label)));
     setText(next.map(p => p.label).join('\n'));
   }
-  function pick() {
+  function pick(nextMode?: Mode) {
+    if (pendingModePick.current !== null) {
+      clearTimeout(pendingModePick.current);
+      pendingModePick.current = null;
+    }
     if (!hydrated || busy || errors.length || performance.now() - lastStart.current < 450) return;
     const countFocused = document.activeElement === countInput.current;
     const commitDraft = countFocused || heldCountCommit.current;
@@ -323,7 +334,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
     if (countFocused) countInput.current?.blur();
     else if (commitDraft) commitCount();
     const drawEligible = drawPlayers.map((player, index) => ({ ...player, label: player.label.trim() || `Seat ${index + 1}` }));
-    const drawingMode = supportsGroup(mode, drawEligible.length) ? mode : 'quick';
+    const requestedMode = nextMode ?? mode;
+    const drawingMode = supportsGroup(requestedMode, drawEligible.length) ? requestedMode : 'quick';
     lastStart.current = performance.now();
     try {
       const outcome = select(drawEligible, ++draw.current);
@@ -338,6 +350,36 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
       locked.current = null;
       dispatch({ type: 'EDIT', valid: true });
     }
+  }
+  pickCurrent.current = pick;
+  function changeMode(nextMode: Mode) {
+    if (selectedMode.current === nextMode) return;
+    selectedMode.current = nextMode;
+    const replay = state.phase === 'result' || pendingModePick.current !== null;
+    if (pendingModePick.current !== null) clearTimeout(pendingModePick.current);
+    pendingModePick.current = null;
+    setMode(nextMode);
+    if (!replay) return;
+    // Clear the previous result so the new method gets a real idle scene.
+    locked.current = null;
+    lastStart.current = -Infinity;
+    setRevealPlan(null);
+    dispatch({ type: 'EDIT', valid: true });
+    const deadline = performance.now() + 3000;
+    const startWhenPreviewIsVisible = () => {
+      const visual = nextMode !== 'quick' && nextMode !== 'instant';
+      const stage = revealStage.current;
+      const ready = !visual || (stage?.dataset.mode === nextMode && stage.querySelector('[data-preview="true"]'));
+      if (!ready && performance.now() < deadline) {
+        pendingModePick.current = window.setTimeout(startWhenPreviewIsVisible, 50);
+        return;
+      }
+      pendingModePick.current = window.setTimeout(() => {
+        pendingModePick.current = null;
+        pickCurrent.current(nextMode);
+      }, 180);
+    };
+    pendingModePick.current = window.setTimeout(startWhenPreviewIsVisible, 50);
   }
   function forget() {
     let cleared = false;
@@ -407,7 +449,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
           <legend className="sr-only">Choose your reveal</legend>
           <div className="segmented">
             {available.filter(option => showAllModes || primaryModes.includes(option.id)).map(option => <label className={effectiveMode === option.id ? 'selected' : ''} key={option.id}>
-              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onClick={() => { if (mode !== option.id) setMode(option.id); }} onChange={() => setMode(option.id)} />
+              <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onClick={() => changeMode(option.id)} onChange={() => changeMode(option.id)} />
               <ModeIcon mode={option.id} /><span>{option.label}</span>
             </label>)}
             {!showAllModes && <button type="button" className="more-modes" onClick={e => { const group = e.currentTarget.parentElement!; const shown = group.querySelectorAll('input').length; setMoreModes(true); requestAnimationFrame(() => group.querySelectorAll('input')[shown]?.focus()); }}><span aria-hidden="true">•••</span><span>More methods</span></button>}
@@ -415,8 +457,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
         </fieldset>
         {fallbackLimit !== null && <p className="small notice">{chosenMethod.label} fits up to {fallbackLimit} players. Quick is selected for your group of {eligible.length}.</p>}
         {error && <p role="alert" className="error">{error}</p>}
-        <button type="button" className="primary" disabled={!hydrated || errors.length > 0} aria-disabled={busy} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={pick}>{!hydrated ? 'Getting ready…' : busy ? 'Revealing…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
-        {visualMode && scene && <div ref={revealStage} className="reveal-stage" aria-hidden="true"><EffectBoundary key={`${renderedMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
+        <button type="button" className="primary" disabled={!hydrated || errors.length > 0} aria-disabled={busy} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={() => pick()}>{!hydrated ? 'Getting ready…' : busy ? 'Revealing…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
+        {visualMode && scene && <div ref={revealStage} className="reveal-stage" data-mode={renderedMode} aria-hidden="true"><EffectBoundary key={`${renderedMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
           <Suspense fallback={<RevealLoading mode={renderedMode} players={scene.outcome.players} />}>
             {renderedMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={renderedMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} />}
           </Suspense>

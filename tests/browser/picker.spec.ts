@@ -250,6 +250,30 @@ test('a fully visible desktop reveal and Quick draws do not request reveal scrol
   expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
 });
 
+test('switching methods after a result shows the new preview before drawing again', async ({ page }) => {
+  await controlledRandom(page);
+  await ready(page, '/methods/balloon/');
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(1);
+
+  for (const [label, mode, scene] of [
+    ['Card Draw', 'cards', '.cards-reveal'],
+    ['Spinner', 'spinner', '.spinner-stage'],
+  ] as const) {
+    await page.getByRole('radio', { name: label, exact: true }).check();
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'ready');
+    await expect(page.locator(`.reveal-stage[data-mode="${mode}"] ${scene}[data-preview="true"]`)).toBeVisible();
+    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+    await expect(page.locator(`.reveal-stage[data-mode="${mode}"] ${scene}[data-settled="true"]`)).toBeVisible();
+  }
+  expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(3);
+  await page.getByRole('button', { name: 'Pick again', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(page.locator('.reveal-stage')).toHaveAttribute('data-mode', 'spinner');
+  expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(4);
+});
+
 test('default seats, rapid activation and one winner announcement', async ({ page }) => {
   await controlledRandom(page); await ready(page);
   await expect(page.locator('.player')).toHaveCount(4);
