@@ -173,7 +173,7 @@ test('blocked history writes still allow native typing, filtering and clearing',
   await expect(page.locator('[data-empty]')).toBeVisible();
   await search.fill('');
   await expect(page.locator('[data-count]')).toBeHidden();
-  await expect(page.getByRole('link', { name: 'Browse A games' })).toBeVisible();
+  await expect(page.getByRole('link', { name: /^A\s+\d+ games$/ })).toBeVisible();
   expect(errors).toEqual([]);
 });
 

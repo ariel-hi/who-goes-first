@@ -12,7 +12,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
 ---
 <Layout title="Board Game Directory — Who Goes First?" description={`Find official starting-player rules for ${withRules} board games, or browse the wider game directory by name.`} pageType="CollectionPage">
   <div class="content-page">
-    <h1>Board games.</h1>
+    <h1>All board games.</h1>
     <p class="lede">Find the game you’re playing.</p>
     <p>{withRules.toLocaleString('en')} games with sourced starting-player rules. Browse the wider list of {games.length.toLocaleString('en')} games and editions below. If yours is still awaiting one, use the <a href="/">player picker</a>.</p>
     <SharePage title="Board Game Directory — Who Goes First?" />
@@ -35,7 +35,7 @@ const extraRules = getCatalog().filter(rule => !linkedRuleIds.has(rule.id));
     </div>
     <h2 class="directory-browse-heading">Browse by name</h2>
     <nav class="directory-letter-grid" aria-label="Browse game names by letter">
-      {letters.map(({ letter, count }) => <a href={shelfHref(letter)} aria-label={`Browse ${shelfLabel(letter)} games`}><strong>{shelfLabel(letter)}</strong><span>{count.toLocaleString('en')} {count === 1 ? 'game' : 'games'}</span></a>)}
+      {letters.map(({ letter, count }) => <a href={shelfHref(letter)}><strong>{shelfLabel(letter)}</strong><span>{count.toLocaleString('en')} {count === 1 ? 'game' : 'games'}</span></a>)}
     </nav>
     <p class="small muted">This collection is growing. Additional game names come from <a href="https://www.wikidata.org/wiki/Property:P2339">Wikidata</a> under CC0. Starting rules are checked against publisher sources. Open a name without a rule for a fair-draw option.</p>
     {extraRules.length > 0 && <section class="rule-section"><h2>More sourced editions</h2><p>These editions have a starting-player rule and are listed separately from the collection above.</p><ul class="game-list">{extraRules.map(rule => <li><a href={`/games/${rule.slug}/`}><span>{rule.gameName}<small>{rule.editionLabel}</small></span></a></li>)}</ul></section>}

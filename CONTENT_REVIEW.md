@@ -1,5 +1,7 @@
 # Content review queue
 
+**2026-09-27 site-review revision:** 37 of the 60 published original house questions were reviewed and rewritten to favor playful skills, imagined scenes, and positive table moments. Stable IDs and publication dates remain in place; each changed prompt has its own newly approved revision and material update date. The other 23 prompts and all publisher-rule records are unchanged. The full pool remains optional, skippable, and separate from equal-chance selection.
+
 **2026-09-27 catalog checkpoint: 1,087 approved edition rules; 394 eligible for the random mix; 60 public house prompts. The directory lists 5,043 identities, with 1,075 checked and 3,968 awaiting a rule. Worldwide coverage remains unfinished.**
 
 On 2026-09-27, Claude replaced all 60 published house prompts under the owner's standing authorization. The prior pool was almost entirely one template ("Who most recently spotted/saw/tried X?") and read as repetitive filler rather than fun questions. The new set keeps the same inclusive, optional, skippable, random-tie-break-eligible rules but mixes superlatives, confessions, hypotheticals and playful roasts, with only a small share of "who most recently" prompts retained. Exact approved revisions are in `src/content/prompts/original-questions.json`; the prior pool is preserved in git history.

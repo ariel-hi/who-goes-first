@@ -19,7 +19,7 @@ for (const width of [320, 1280]) {
     await expect(page.locator('[data-results] li')).toHaveCount(1);
     await expect(page).toHaveURL(/\/board-games\/#q=Townsfolk&filter=rules$/);
     const nav = page.getByRole('navigation', { name: 'Main navigation', exact: true });
-    expect(await nav.locator('a').allTextContents()).toEqual(['Board games', 'Game rules', 'Tools', 'About']);
+    expect(await nav.locator('a').allTextContents()).toEqual(['All games', 'Starting rules', 'Tools', 'About']);
     const tools = nav.getByRole('link', { name: 'Tools', exact: true });
     await tools.focus();
     await page.keyboard.press('Enter');

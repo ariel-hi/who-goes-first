@@ -1,7 +1,7 @@
 ---
 import { amazonDisclosure } from '../lib/affiliate';
-interface Props { href: string; name: string; gear?: { label: string; note: string; href: string }[] }
-const { href, name, gear = [] } = Astro.props;
+interface Props { href: string; name: string }
+const { href, name } = Astro.props;
 ---
 <aside class="buy-game" aria-label="Find this game">
   <a class="buy-card" href={href} rel="sponsored nofollow noopener" target="_blank">
@@ -9,7 +9,6 @@ const { href, name, gear = [] } = Astro.props;
     <span class="buy-text"><span class="buy-kicker">Don’t own it yet?</span><span class="buy-title">Find {name} on Amazon</span></span>
     <span class="buy-arrow" aria-hidden="true">↗</span>
   </a>
-  {gear.length > 0 && <><h2 class="gear-heading">Game night gear</h2><ul class="gear-list">{gear.map(item => <li><a href={item.href} rel="sponsored nofollow noopener" target="_blank">{item.label}<small>{item.note}</small></a></li>)}</ul></>}
   <small>{amazonDisclosure}</small>
 </aside>
 <style is:global>
@@ -27,11 +26,6 @@ const { href, name, gear = [] } = Astro.props;
   .buy-title{font-size:16px;font-weight:650;color:var(--ink);overflow-wrap:anywhere}
   .buy-arrow{margin-left:auto;font-size:18px;color:var(--muted)}
   .buy-game small{display:block;margin:8px 4px 0;color:var(--muted);font-size:11px}
-  .gear-heading{font-size:16px;font-weight:600;margin:18px 4px 0}
-  .gear-list{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
-  .gear-list a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;font-size:14px}
-  .gear-list a:hover{border-color:var(--green)}
-  .gear-list small{display:block;margin:2px 0 0;color:var(--muted);font-size:12px}
   @media (max-width:480px){.buy-card{display:grid;grid-template-columns:minmax(0,1fr) auto}.amazon-badge{grid-column:1/-1;justify-self:start}}
   @media (prefers-reduced-motion:reduce){.buy-card{transition:none}.buy-card:hover{transform:none}}
 </style>

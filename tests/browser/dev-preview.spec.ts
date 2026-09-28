@@ -48,7 +48,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await expect(page.getByLabel('Name for player 1', { exact: true })).toHaveValue('Mina'); await expect(page.getByLabel('Name for player 3', { exact: true })).toHaveValue('Jo');
   await expect(page.getByRole('radio', { name: /^Shell Game/ })).toBeChecked();
   await expect(page.locator('.shells-reveal[data-preview="true"][data-count="3"]')).toBeVisible();
-  await page.getByRole('link', { name: 'Game rules', exact: true }).click();
+  await page.getByRole('link', { name: 'Starting rules', exact: true }).click();
   await expect(page).toHaveURL(`${DEV}/dev/games/`);
   await page.getByRole('searchbox').fill('TTR');
   // Three Ticket to Ride editions rank ahead of the fuzzy TTA alias match.
@@ -59,7 +59,7 @@ test('actual dev preview hydrates and supports all reveals, names and preference
   await page.getByRole('link', { name: 'Home', exact: true }).click();
   await expect(page.getByRole('radio', { name: /^Shell Game/ })).toBeChecked();
   await expect(page.locator('.shells-reveal[data-preview="true"][data-count="3"]')).toBeVisible();
-  await page.getByRole('link', { name: 'Game rules', exact: true }).click();
+  await page.getByRole('link', { name: 'Starting rules', exact: true }).click();
   await page.getByRole('link', { name: 'Try the original house rules' }).click();
   await page.getByRole('button', { name: 'Choose a question' }).click();
   const prompt = await page.locator('[data-prompt]').textContent();

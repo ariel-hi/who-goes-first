@@ -1,5 +1,9 @@
 # Growth launch status
 
+## Priority after the 2026-09-27 site review
+
+Keep the picker and reviewed starting rules as the primary journeys. Pause new utility categories and additional affiliate placements while search discovery and returning use remain unproven. Continue correcting sources and filling high-priority missing rules. Review the existing Search Console sitemap/indexing report, then use its impressions and clicks together with consented page visits to decide which journeys merit further work. Do not add search-query or player-level tracking to answer this question.
+
 Last checked: 2026-09-26 UTC. This is an observation log, not a claim of traffic growth.
 
 ## Published and verified
