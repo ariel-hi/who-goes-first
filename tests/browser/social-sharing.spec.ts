@@ -8,6 +8,7 @@ const chooser = getBoardGames().find(game => game.rules.length > 1)!;
 const shelf = getBrowseShelves().letters[0]!;
 const paths = ['/', '/games/', '/house-rules/', '/board-games/', shelfHref(shelf.letter), `/board-games/${chooser.routeKey}/`, `/games/${rule.slug}/`, '/printable-game-night/'];
 const labels = ['Save on Pinterest', 'Share on Bluesky', 'Share on X', 'Share on Facebook', 'Share on WhatsApp', 'Share on Telegram', 'Share on Reddit', 'Share on LinkedIn', 'Share on Threads', 'Share by email'];
+const featured = new Set(['Save on Pinterest', 'Share on WhatsApp', 'Share on Facebook']);
 
 for (const width of [320, 1280]) {
   for (const path of paths) {
@@ -18,15 +19,19 @@ for (const width of [320, 1280]) {
       if (await consent.isVisible()) await consent.click();
       const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
       await expect(toolbar).toHaveCount(1);
-      await expect(toolbar.locator('[data-share-button]')).toBeVisible();
-      expect((await toolbar.boundingBox())!.height).toBeLessThanOrEqual(44);
+      const more = toolbar.getByRole('button', { name: 'More sharing options' });
+      await expect(more).toBeVisible();
+      await expect(toolbar.locator('[data-share-button]')).toBeHidden();
+      expect((await toolbar.boundingBox())!.height).toBeLessThanOrEqual(45);
       const production = await page.locator('meta[name="google-site-verification"]').count() > 0;
       if (production) {
-        await expect(toolbar.locator('.share-options')).not.toHaveAttribute('open', '');
+        await expect(toolbar.locator('.share-quick .share-bubble')).toHaveCount(3);
+        for (const label of featured) await expect(toolbar.getByRole('link', { name: new RegExp('^' + label) })).toBeVisible();
         await expect(toolbar.locator('[data-instagram-open]')).toBeHidden();
-        await toolbar.locator('summary').focus();
+        await more.focus();
         await page.keyboard.press('Enter');
-        await expect(toolbar.locator('.share-options')).toHaveAttribute('open', '');
+        await expect(more).toHaveAttribute('aria-expanded', 'true');
+        await expect(toolbar.locator('[data-share-button]')).toBeVisible();
         const canonical = await page.locator('link[rel="canonical"]').getAttribute('href');
         await expect(toolbar.getByRole('link', { name: 'Open Instagram and copy link (opens in a new tab)' })).toBeVisible();
         for (const label of labels) {
@@ -42,20 +47,24 @@ for (const width of [320, 1280]) {
             await expect(link).toHaveAttribute('target', '_blank');
             await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
           }
-          await expect(link).toContainText(label === 'Save on Pinterest' ? 'Pinterest' : label === 'Share by email' ? 'Email' : label.replace('Share on ', ''));
           const box = await link.boundingBox();
-          expect(box!.width).toBeGreaterThan(100);
-          expect(box!.height).toBeGreaterThanOrEqual(width <= 640 ? 44 : 42);
+          if (featured.has(label)) {
+            expect(Math.round(box!.width)).toBe(45);
+            expect(Math.round(box!.height)).toBe(45);
+          } else {
+            await expect(link).toContainText(label === 'Share by email' ? 'Email' : label.replace('Share on ', ''));
+            expect(box!.width).toBeGreaterThan(100);
+            expect(box!.height).toBeGreaterThanOrEqual(45);
+          }
           await link.hover();
-          const appearance = await link.evaluate(element => ({ shadow: getComputedStyle(element).boxShadow, transform: getComputedStyle(element).transform, background: getComputedStyle(element).backgroundColor }));
-          expect(appearance.shadow).toBe('none');
-          expect(appearance.transform).toBe('none');
-          expect(appearance.background).not.toBe('rgba(0, 0, 0, 0)');
         }
-        await toolbar.locator('summary').click();
+        await more.click();
+        await expect(more).toHaveAttribute('aria-expanded', 'false');
         await expect(toolbar.locator('[data-instagram-open]')).toBeHidden();
       } else {
         await expect(toolbar.getByRole('link')).toHaveCount(0);
+        await more.click();
+        await expect(toolbar.locator('[data-share-button]')).toBeVisible();
       }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
       if (path === '/games/' + rule.slug + '/' && width === 320) {
@@ -77,6 +86,7 @@ test('sharing copies a clean link and offers a selectable fallback when clipboar
   const consent = page.getByRole('button', { name: 'No thanks', exact: true });
   if (await consent.isVisible()) await consent.click();
   const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
+  await toolbar.getByRole('button', { name: 'More sharing options' }).click();
   await toolbar.locator('[data-share-button]').click();
   await expect(toolbar.locator('[data-share-status]')).toHaveText('Link copied.');
   expect(await page.evaluate(() => (window as unknown as { copied: string }).copied)).toBe(new URL(`/games/${rule.slug}/`, page.url()).href);
@@ -87,7 +97,6 @@ test('sharing copies a clean link and offers a selectable fallback when clipboar
   await expect(toolbar.locator('[data-share-link]')).toBeVisible();
   await expect(toolbar.locator('[data-share-link]')).toHaveValue(new URL(`/games/${rule.slug}/`, page.url()).href);
   if (await toolbar.locator('[data-instagram-open]').count()) {
-    await toolbar.locator('summary').click();
     const instagramRequests: string[] = [];
     const instagramRoute = async (route: import('@playwright/test').Route) => {
       instagramRequests.push(route.request().url());
