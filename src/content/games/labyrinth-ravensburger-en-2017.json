@@ -3,10 +3,10 @@
   "slug": "labyrinth-ravensburger-en-2017",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "97b15efa7f3a598711a0aa1bdac669217af2481b0f9972462f2a525060974aa3",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4c7aa528d41f529b687a73f84d1860aa77db2266175016452998353d6b798682",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Labyrinth",
   "aliases": [
     "The aMAZEing Labyrinth",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/labyrinth-ravensburger-en-2017-cover.jpg",
+    "alt": "Labyrinth official game box cover",
+    "width": 500,
+    "height": 385,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.ravensburger.us/en-US/products/games/family-games/labyrinth-26448",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher product page, article 26448, supplies cover image https://ravensburger.cloud/images/product-cover/1200x1200/Board-Game-Labyrinth-Game-for-kids-7-years-up-26448.webp; cropped surrounding whitespace. The linked English instructions bear copyright 2017 and match the game and article. Exact box printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

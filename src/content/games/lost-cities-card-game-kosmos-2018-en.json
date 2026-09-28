@@ -3,10 +3,10 @@
   "slug": "lost-cities-card-game-kosmos-2018-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e17cd4070d42eaca957158701fde0ca9613251fd5cc8ca5998ee831c50309dd1",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "13fdd2fa48b6522fb61e054d52a2c3a9ecdf286d7de1e9034e1af40cad36db2b",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lost Cities",
   "aliases": [
     "Lost Cities card game",
@@ -44,5 +44,22 @@
   "uncertainty": [
     "The rulebook gives no tie-break for players of the same age.",
     "For later games, the rules do not say whether “most points” means the previous game or the running total, or what to do if scores are tied."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lost-cities-card-game-kosmos-2018-en-cover.jpg",
+    "alt": "Lost Cities official game box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://thamesandkosmos.com/products/lost-cities-card-game-with-6th-expedition",
+      "publisher": "Thames & Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos/Kosmos and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher product image https://cdn.shopify.com/s/files/1/0104/6331/3977/products/691821_LC_Card_Game_3DBox.jpg?v=1607125008 shows SKU 691821 and the sixth-expedition badge; this matches the cited English card-game edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "gift-of-tulips-weird-giraffe-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "026aa92f4613ee192d1629c294445b846cc53335723e0df1283648c873121c7e",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0bd91572464b35415438ae6c32303af189045c110569db9002506400ee820f6b",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gift of Tulips",
   "aliases": [],
   "editionLabel": "English Weird Giraffe Games rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gift-of-tulips-weird-giraffe-en-cover.jpg",
+    "alt": "Gift of Tulips official game box cover",
+    "width": 336,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://allplay.com/board-games/gift-of-tulips",
+      "publisher": "Weird Giraffe Games / Allplay"
+    },
+    "fairUse": {
+      "rightsHolder": "Weird Giraffe Games and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Allplay product page identifies the Weird Giraffe series and supplies box image https://cdn.shopify.com/s/files/1/0143/6178/8473/files/GiftofTulips-Box_2026_3.webp. Visible Weird Giraffe mark and English title match the cited game; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

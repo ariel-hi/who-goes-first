@@ -3,10 +3,10 @@
   "slug": "joan-of-arc-orleans-capstone-en-2022",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "53eb19207529257d9f774b2b82abb5f5a61902f29fa8ad7d8e17a6c71d9f0711",
+  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "173c368d5f92cd8ab04424c7264c70ded83a74502aca6935a72407b2f258bb98",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Joan of Arc: Orléans Draw & Write",
   "aliases": [
     "Joan of Arc Orleans Draw and Write",
@@ -50,5 +50,22 @@
   "uncertainty": [
     "The cited setup specifies random selection without prescribing a particular randomization method.",
     "This answer covers the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/joan-of-arc-orleans-capstone-en-2022-cover.jpg",
+    "alt": "Joan of Arc: Orléans Draw & Write official game box cover",
+    "width": 358,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://capstone-games.com/products/joan-of-arc-orleans-draw-write",
+      "publisher": "Capstone Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Capstone Games and any cover-art licensors or artists (precise ownership not stated on source page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Capstone product gallery image https://capstone-games.com/cdn/shop/files/imgi_3_JoA-1_1000x642_acf_cropped.jpg?v=1754399403; cropped to the photographed game box. The title, Draw & Write subtitle, and Capstone Games mark match the cited English game.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
