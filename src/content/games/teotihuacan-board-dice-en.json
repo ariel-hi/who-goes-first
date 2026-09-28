@@ -3,10 +3,10 @@
   "slug": "teotihuacan-board-dice-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "6d573488fead28f7fb6782739cab2387755c2130cec44358c0a7953bcf871219",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "0c8cbcf7c4f4755ad7b98cb3175e9baeb44681b0fbc2f49bf3b1684cbf606db1",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Teotihuacan: City of Gods",
   "aliases": [],
   "editionLabel": "Board & Dice English base game",
@@ -35,5 +35,22 @@
   "internalEvidence": "RenderedPDF4printed6randomstartertoken1,PDF5printed9clockwise. Credits explicitly Board&Dice2018, EnglishrulesTurczi/Novac/Kubacki. BaseEnglishmanual fromarchive; Board&Dice current download hub checked and onlyDeluxe/expansionmanualsfound. Source custody: research/source-files/popular-sep26-11/teo.pdf; SHA-256 ee2128aa0a11f9c7764891ce65256b61e9618040732ae312d92813816676796d. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The Board & Dice-authored English base-game manual is preserved by a rulebook archive. The current publisher download page supplies the Deluxe rules separately; those are not substituted here."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/teotihuacan-board-dice-en-cover.jpg",
+    "alt": "Teotihuacan: City of Gods game package cover",
+    "width": 560,
+    "height": 448,
+    "presentation": "cover",
+    "source": {
+      "url": "https://boardanddice.com/wp-content/uploads/2022/01/Teotihuacan_Box-3D_BD-1-1000x800.png",
+      "publisher": "Board & Dice"
+    },
+    "fairUse": {
+      "rightsHolder": "Board & Dice",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://boardanddice.com/product/teotihuacan-city-of-gods/. Exact publisher-hosted package image: https://boardanddice.com/wp-content/uploads/2022/01/Teotihuacan_Box-3D_BD-1-1000x800.png. The package and game identity were visually reviewed against the article edition (Board & Dice English base game).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

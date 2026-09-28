@@ -3,10 +3,10 @@
   "slug": "wild-space-catch-up-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "c155b9c4835eed0e56155fcf0d0b52417ef3ed7bc8dcb20a6373dd35e333dc6f",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "e6eb046a3525d506b81a7d9f6d628465ffe972954da32610843d43e29d096f17",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wild Space",
   "aliases": [],
   "editionLabel": "Catch Up Games English rules, 2020",
@@ -39,5 +39,22 @@
   "internalEvidence": "Rendered page 4 gives the animal-sighting criterion, and page 5 gives clockwise turns. Page 11 credits Catch Up Games, January 2020. Planet tiles, Crew cards and Spaceship tokens match inventory BGG 298371. SHA-256: 7ffabd4aae46e545202dfd6cda7fef67f4e137cb06664bd665127cc55550d759. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for a shared sighting."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wild-space-catch-up-2020-en-cover.jpg",
+    "alt": "Wild Space game package cover",
+    "width": 225,
+    "height": 256,
+    "presentation": "cover",
+    "source": {
+      "url": "https://catchupgames.com/wp-content/uploads/2022/10/wildspace_box_3D.png",
+      "publisher": "Catch Up Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Catch Up Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://catchupgames.com/nos-jeux/wild-space/. Exact publisher-hosted package image: https://catchupgames.com/wp-content/uploads/2022/10/wildspace_box_3D.png. The package and game identity were visually reviewed against the article edition (Catch Up Games English rules, 2020).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

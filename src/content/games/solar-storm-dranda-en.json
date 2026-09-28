@@ -3,10 +3,10 @@
   "slug": "solar-storm-dranda-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f6f61236dcf8c83438bcbcdd11f325db6323d721082269b60a51b1fb22639430",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "1459e8371ac0eb57fce0dd5ef1127a08720d1607354df36b0c3ad8038fbf41ea",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Solar Storm",
   "aliases": [],
   "editionLabel": "Dranda Games English rules",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered PDF/printed page 5 gives both the Sunburn and random options; page 8 gives clockwise turns. Page 23 identifies Dranda Games as publisher; room cards, Damage deck and Energy Core match inventory BGG 274037. SHA-256: 2b6c1c73d1c8c59d184fc8f76101c78b98286775bcf2577f47f13c3546d6ddda. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for equally recent Sunburns."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/solar-storm-dranda-en-cover.jpg",
+    "alt": "Solar Storm game package cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.drandagames.co.uk/cdn/shop/files/Boxfront.jpg?v=1714991136",
+      "publisher": "Dranda Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Dranda Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://www.drandagames.co.uk/products/solar-storm-base-game. Exact publisher-hosted package image: https://www.drandagames.co.uk/cdn/shop/files/Boxfront.jpg?v=1714991136. The package and game identity were visually reviewed against the article edition (Dranda Games English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

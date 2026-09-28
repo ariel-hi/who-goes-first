@@ -3,10 +3,10 @@
   "slug": "tussie-mussie-button-shy-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "16e75d500f0627d78166afb01a0257b2580bf7c93226cbc988ea5ea1090fa26f",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "44bb7c2dbdf61bf951b1ee96e17ca143fd58096bc6da2db21093af99c95464b8",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tussie Mussie",
   "aliases": [],
   "editionLabel": "Button Shy Games English rules",
@@ -33,5 +33,22 @@
   "internalEvidence": "Rendered and rotated the booklet imposition on PDF page 1. Its Setup panel gives the flower-smelling criterion, and its Offers panel defines the first action. The sheet credits Button Shy Games and Elizabeth Hargrave; 18 Flower cards match inventory BGG 257614. SHA-256: cfda261e0af72088f150056890cf5914f52f996e00d44c9d198a183d60a76cbd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for a shared flower smell."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tussie-mussie-button-shy-en-cover.jpg",
+    "alt": "Tussie Mussie game package cover",
+    "width": 448,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://buttonshygames.com/cdn/shop/files/Tussie_Mussie_-_Promo_Wallet.png?v=1777460210",
+      "publisher": "Button Shy Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Button Shy Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher product page: https://buttonshygames.com/products/tussie-mussie. Exact publisher-hosted package image: https://buttonshygames.com/cdn/shop/files/Tussie_Mussie_-_Promo_Wallet.png?v=1777460210. The package and game identity were visually reviewed against the article edition (Button Shy Games English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
