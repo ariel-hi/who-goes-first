@@ -21,3 +21,7 @@ The US/CA/GB/AU session subtotal is a **named subset** of Journey by Mediavine's
 ## Traffic acquisition
 
 The same weekly GA4 window also produces `acquisition.json`: session default channel group, session source/medium, sessions, and engaged sessions. This identifies which reported channels bring visits and whether those sessions engage. The job refuses incomplete or duplicate source rows, records Google's quality flags, and compares the row sum with the undimensioned total. GA4 dimension row sums can differ from deduplicated totals; when counts do not reconcile, the report shows their discrepancy and withholds percentage shares. If the query fails, the current window is marked unavailable rather than carrying forward an older attribution. GA4 sessions and engagement do not establish verified human visitors, campaign profit, or revenue.
+
+## Affiliate link opens
+
+The weekly job records GA4's `affiliate_outbound` event count in `affiliate-events.json`, starting on the 2026-09-28 launch date of that measurement. The first day is partial, and analytics choices can suppress events. A missing GA4 response is `unavailable`, not zero; before the first complete reporting day it is `pending`. These events count Amazon link opens, not verified purchases, commissions, or revenue. The report does not divide them by a differently scoped session total.

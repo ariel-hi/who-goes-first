@@ -1,13 +1,14 @@
 import { appendFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { getBoardGames } from '../src/lib/content/board-games';
 import { getCatalog } from '../src/lib/content/catalog';
-import { analyticsAcquisition, analyticsCountryTraffic, analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
+import { analyticsAcquisition, analyticsAffiliateOpens, analyticsCountryTraffic, analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
 import { rankDemand } from './lib/demand';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
 import { ga4TrafficMetrics } from './lib/growth-report';
 import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCountryTraffic } from './lib/country-traffic';
 import { indexingReport, indexingSnapshot } from './lib/indexing-diagnostics';
 import { acquisitionReport, summarizeAcquisition, type AcquisitionSummary, type UnavailableAcquisition } from './lib/acquisition';
+import { affiliateEventsReport, affiliateEventsSummary, affiliateMeasurementStart, type AffiliateEventsSnapshot } from './lib/affiliate-events';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
@@ -41,6 +42,8 @@ let traffic: AnalyticsTotals | undefined;
 let country: CountryTrafficSummary | undefined;
 let acquisition: AcquisitionSummary | undefined;
 const trafficWindow = { start: daysAgo(30), end: daysAgo(1) };
+const affiliateWindow = { start: trafficWindow.start < affiliateMeasurementStart ? affiliateMeasurementStart : trafficWindow.start, end: trafficWindow.end };
+let affiliateEvents: AffiliateEventsSnapshot | undefined;
 if (gaProperty) {
   try { traffic = await analyticsTotals(token, gaProperty, trafficWindow.start, trafficWindow.end); }
   catch (error) { console.warn(`GA4 report skipped: ${(error as Error).message}`); }
@@ -51,6 +54,11 @@ if (gaProperty) {
     try { acquisition = summarizeAcquisition(trafficWindow.start, trafficWindow.end, traffic,
       await analyticsAcquisition(token, gaProperty, trafficWindow.start, trafficWindow.end)); }
     catch (error) { console.warn(`GA4 acquisition report skipped: ${(error as Error).message}`); }
+  }
+  if (affiliateWindow.start <= affiliateWindow.end) {
+    try { affiliateEvents = affiliateEventsSummary(affiliateWindow.start, affiliateWindow.end,
+      await analyticsAffiliateOpens(token, gaProperty, affiliateWindow.start, affiliateWindow.end)); }
+    catch (error) { console.warn(`GA4 affiliate event report skipped: ${(error as Error).message}`); }
   }
 }
 
@@ -66,6 +74,13 @@ const acquisitionSnapshot = acquisition ?? {
   reason: !gaProperty ? 'GA4 property not configured' : !traffic ? 'GA4 totals unavailable' : 'GA4 acquisition report unavailable',
 } satisfies UnavailableAcquisition;
 writeFileSync('research/demand/acquisition.json', `${JSON.stringify({ ...acquisitionSnapshot, generatedAt: new Date().toISOString() }, null, 2)}\n`);
+const affiliateSnapshot = affiliateEvents ?? {
+  status: affiliateWindow.start > affiliateWindow.end ? 'pending' : 'unavailable',
+  periodStart: affiliateWindow.start, periodEnd: affiliateWindow.end,
+  reason: affiliateWindow.start > affiliateWindow.end ? 'No completed GA4 measurement day since affiliate tracking began'
+    : !gaProperty ? 'GA4 property not configured' : 'GA4 affiliate event report unavailable',
+} satisfies AffiliateEventsSnapshot;
+writeFileSync('research/demand/affiliate-events.json', `${JSON.stringify({ ...affiliateSnapshot, generatedAt: new Date().toISOString() }, null, 2)}\n`);
 writeFileSync('research/demand/indexing.json', `${JSON.stringify(indexing, null, 2)}\n`);
 writeFileSync('research/demand/search-console.json', `${JSON.stringify({
   generatedAt: new Date().toISOString(), property, window: window28,
@@ -91,6 +106,7 @@ ${traffic ? `## Traffic (GA4, last 30 days)
 ${country ? `- Named US/CA/GB/AU subtotal: ${country.namedJourneySessions.toLocaleString('en')} sessions. Five-country US/CA/GB/AU/NZ subtotal: ${country.raptiveCountryScreenPageViews.toLocaleString('en')} screen/page views. These are GA4 observations, not ad-network qualification.\n` : '- Country breakdown unavailable for this run.\n'}
 ` : '_GA4 totals unavailable: set GA4_PROPERTY_ID and give the service account Viewer access._\n'}
 ${acquisitionReport(acquisitionSnapshot)}
+${affiliateEventsReport(affiliateSnapshot)}
 ${adNetworkReadiness(traffic, country)}
 ## Research queue (last 28 days)
 ${demand.missingRules.length ? demand.missingRules.slice(0, 15).map((game, index) => `${index + 1}. **${game.name}**${game.bggId ? ` (BGG ${game.bggId})` : ""} — ${game.impressions} impressions: ${game.queries.map(query => `“${query}”`).join(', ')}`).join('\n') : 'No starting-rule searches for games without a sourced rule yet.'}

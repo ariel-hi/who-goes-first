@@ -155,5 +155,34 @@ export async function analyticsAcquisition(token: string, propertyId: string, st
   };
 }
 
+export type AnalyticsAffiliateOpens = {
+  eventCount: number; subjectToThresholding: boolean; dataLossFromOtherRow: boolean; dataTruncation: boolean;
+};
+
+/** Count the site's fixed affiliate-outbound event, without treating opens as sales. */
+export async function analyticsAffiliateOpens(token: string, propertyId: string, startDate: string, endDate: string): Promise<AnalyticsAffiliateOpens> {
+  const report = await postJson<{
+    rows?: Array<{ metricValues?: Array<{ value?: string }> }>;
+    rowCount?: number;
+    metadata?: { subjectToThresholding?: boolean; dataLossFromOtherRow?: boolean; dataTruncationReasons?: unknown[] };
+  }>(`https://analyticsdata.googleapis.com/v1beta/properties/${encodeURIComponent(propertyId)}:runReport`, token, {
+    dateRanges: [{ startDate, endDate }],
+    dimensionFilter: { filter: { fieldName: 'eventName', stringFilter: { matchType: 'EXACT', value: 'affiliate_outbound' } } },
+    metrics: [{ name: 'eventCount' }],
+  });
+  const rows = report.rows ?? [];
+  if (rows.length > 1 || (report.rowCount !== undefined && report.rowCount !== rows.length)) {
+    throw new Error('GA4 affiliate event report has unexpected rows');
+  }
+  const eventCount = rows.length ? Number(rows[0]?.metricValues?.[0]?.value) : 0;
+  if (!Number.isSafeInteger(eventCount) || eventCount < 0) throw new Error('GA4 affiliate event report has an invalid count');
+  return {
+    eventCount,
+    subjectToThresholding: report.metadata?.subjectToThresholding === true,
+    dataLossFromOtherRow: report.metadata?.dataLossFromOtherRow === true,
+    dataTruncation: Boolean(report.metadata?.dataTruncationReasons?.length),
+  };
+}
+
 /** YYYY-MM-DD for `days` before today (UTC). Search Console data lags about 2–3 days. */
 export const daysAgo = (days: number) => new Date(Date.now() - days * 86_400_000).toISOString().slice(0, 10);
