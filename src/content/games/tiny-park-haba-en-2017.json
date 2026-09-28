@@ -8,22 +8,49 @@
   "firstPlayerRule": "The player who most recently rode a roller coaster begins.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["That player rolls all five dice; play continues clockwise."],
+  "clarifications": [
+    "That player rolls all five dice; play continues clockwise."
+  ],
   "interpretation": null,
-  "sources": [{
-    "url": "https://www.provincedeliege.be/sites/default/files/media/15553/Tiny%20park%20-%20R%C3%A8gle.pdf",
-    "title": "Tiny Park — multilingual HABA rules",
-    "publisher": "HABA",
-    "printedPages": ["8"],
-    "pdfPagesOneBased": [8],
-    "location": "English section, How to play, opening sentences",
-    "checkedAt": "2026-09-25"
-  }],
+  "sources": [
+    {
+      "url": "https://www.provincedeliege.be/sites/default/files/media/15553/Tiny%20park%20-%20R%C3%A8gle.pdf",
+      "title": "Tiny Park — multilingual HABA rules",
+      "publisher": "HABA",
+      "printedPages": [
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        8
+      ],
+      "location": "English section, How to play, opening sentences",
+      "checkedAt": "2026-09-25"
+    }
+  ],
   "internalEvidence": "A HABA-authored original booklet is preserved by the Province of Liège. The 28-page PDF identifies © HABA Spiele Bad Rodach 2017, Tiny Park by Marco Teubner. The English section on printed page 8/PDF page 8 was rendered and read visually. Downloaded PDF SHA-256: 28ef121080dc66048dc2e4ac3699be94fc3443fdbb6054ac9258afe15593e511. Owner-authorized Codex editorial review, 2026-09-25.",
-  "uncertainty": ["The booklet does not specify a tie-break or fallback when nobody has ridden a roller coaster."],
+  "uncertainty": [
+    "The booklet does not specify a tie-break or fallback when nobody has ridden a roller coaster."
+  ],
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "2df71b8dc30f596a5e1bc8d608d2acb105941e479e6df7b806c40060de98fc8b",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "ad673a0b704f24989cfdca5bd5bb394de8ff0d2af343119e49ba46d4d04f4164",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  "materiallyUpdatedAt": "2026-09-28",
+  "image": {
+    "file": "/images/games/tiny-park-haba-en-2017-cover.jpg",
+    "alt": "Tiny Park original HABA box, article 302743",
+    "width": 378,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0274/9631/products/pic3858210.jpg?v=1584589537",
+      "publisher": "HABA (box image via Board Game Bliss)"
+    },
+    "fairUse": {
+      "rightsHolder": "HABA / game box illustrator",
+      "rationale": "Reduced-size exact-edition product-box image identifies the game discussed in this independent rules article. It is contextual, links to its source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Retailer product page: https://www.boardgamebliss.com/products/tiny-park. Box image: https://cdn.shopify.com/s/files/1/0274/9631/products/pic3858210.jpg?v=1584589537. Retailer SKU HAB302743 matches number 302743 on photographed HABA box. It is the 2017 multilingual HABA game documented by the original rules in this record; the box photograph is German-language packaging while the cited rules use its English section.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
