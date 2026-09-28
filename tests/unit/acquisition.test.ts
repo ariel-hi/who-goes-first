@@ -17,15 +17,25 @@ describe('GA4 acquisition evidence', () => {
   it('groups session channels and keeps missing sessions outside attribution shares', () => {
     const summary = summarizeAcquisition('2026-08-29', '2026-09-27',
       { sessions: 900, screenPageViews: 1200, totalUsers: 800 }, report);
-    expect(summary).toMatchObject({ attributedSessions: 800, unattributedSessions: 100,
+    expect(summary).toMatchObject({ rowSessions: 800, rowTotalDifference: -100,
       channels: [{ name: 'Direct', sessions: 500, engagedSessions: 300 }, { name: 'Organic Social', sessions: 300, engagedSessions: 130 }] });
-    expect(acquisitionReport(summary)).toContain('Direct: 500 sessions (55.6% of GA4 sessions)');
+    expect(acquisitionReport(summary)).toContain('Direct: 500 reported row sessions');
     expect(acquisitionReport(summary)).toContain('100 sessions are outside the returned rows');
+    expect(acquisitionReport(summary)).not.toContain('% of GA4 sessions');
   });
 
-  it('rejects a report whose source sessions exceed the undimensioned total', () => {
-    expect(() => summarizeAcquisition('2026-08-29', '2026-09-27',
-      { sessions: 700, screenPageViews: 1200, totalUsers: 600 }, report)).toThrow('exceed undimensioned');
+  it('keeps excess dimension rows without claiming unique-session shares', () => {
+    const summary = summarizeAcquisition('2026-08-29', '2026-09-27',
+      { sessions: 700, screenPageViews: 1200, totalUsers: 600 }, report);
+    expect(summary.rowTotalDifference).toBe(100);
+    expect(acquisitionReport(summary)).toContain('100 above the undimensioned 700 sessions');
+    expect(acquisitionReport(summary)).not.toContain('% of GA4 sessions');
+  });
+
+  it('shows channel shares only when dimension rows reconcile exactly', () => {
+    const summary = summarizeAcquisition('2026-08-29', '2026-09-27',
+      { sessions: 800, screenPageViews: 1200, totalUsers: 700 }, report);
+    expect(acquisitionReport(summary)).toContain('Direct: 500 reported row sessions (62.5% of GA4 sessions)');
   });
 
   it('requests session-scoped dimensions and rejects incomplete API rows', async () => {
