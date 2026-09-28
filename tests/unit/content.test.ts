@@ -308,6 +308,7 @@ test('Amigo manual approvals preserve initial versus later order and the figure-
     expect(raw.houseFallback).toContain('This is a house rule.');
     expect(raw.sources[0]).toMatchObject({ url: `https://blog.amigo-spiele.de/content/ap/rule/${file}`, pdfPagesOneBased: [1, 2], printedPages: [], checkedAt: '2026-09-26' });
     expect(contentRevision(draft)).toBe(revision);
+    expect(contentRevision(withoutArtwork(raw))).toBe(revision);
     expect(contentRevision(raw)).toBe(raw.approvedRevision);
     expect(draft).toMatchObject({ status: 'draft', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
     expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(portable);
