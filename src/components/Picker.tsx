@@ -211,7 +211,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
       scrolledQuickDraw.current = outcome.drawId;
       if (document.hidden || navigatedQuickDraw.current === outcome.drawId) return;
       const rect = announcement.getBoundingClientRect();
-      const margin = 16;
+      // The winner enters with a short transform, so leave room for its final position.
+      const margin = 32;
       if (rect.top >= margin && rect.bottom <= innerHeight - margin) return;
       const top = rect.top < margin ? rect.top - margin : rect.bottom - innerHeight + margin;
       window.scrollBy({ top, behavior: reduced ? 'auto' : 'smooth' });
