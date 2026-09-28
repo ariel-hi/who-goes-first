@@ -3,8 +3,8 @@
   "slug": "is-or-isn-t-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "67ca9af5530cea7ef85cd05f23ce6cfd351687bdbce06ae5fb85c74ef227571b",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e4c17ff107211cd5a430443bc01a3f1d5e94a0d9be1e0aa28425728f1b2b89dc",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Is or Isn't",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/is-or-isn-t-simplyfun-en-cover.jpg",
+    "alt": "Is or Isn’t SimplyFun game box with colorful animals reading a book",
+    "width": 480,
+    "height": 476,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/isorisnt_box_82d32619-09ee-41aa-a8cc-4a3a562f559e.jpg?v=1745290926",
+      "publisher": "SimplyFun official product box image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and credited artists",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://simplyfun.com/products/is-or-isnt. The official Shopify product lists SKU SF192, matching this page’s edition and the publisher-linked English rulebook. Original image URL: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/isorisnt_box_82d32619-09ee-41aa-a8cc-4a3a562f559e.jpg?v=1745290926",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

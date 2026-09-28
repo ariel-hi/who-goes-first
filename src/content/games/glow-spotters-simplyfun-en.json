@@ -3,8 +3,8 @@
   "slug": "glow-spotters-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "835c3cc6b1130cb67b51c4f7d3915c21e62fee69725c9a991460eeccd6dcd3b6",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4d903e236db40b4f8140a0ede59e3e245f8f559d1cdde2e4944d25dc7264af7a",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Glow Spotters",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/glow-spotters-simplyfun-en-cover.jpg",
+    "alt": "Glow Spotters SimplyFun game box with animals and glowing lights in a forest",
+    "width": 463,
+    "height": 342,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/glowspotters_box_Mar4_10ab15ff-d31c-447b-b2fd-39f1c3a29a67.jpg?v=1747435543",
+      "publisher": "SimplyFun official product box image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and credited artists",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://simplyfun.com/products/glow-spotters. The official Shopify product lists SKU SF184, matching this page’s edition and the publisher-linked English rulebook. Original image URL: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/glowspotters_box_Mar4_10ab15ff-d31c-447b-b2fd-39f1c3a29a67.jpg?v=1747435543",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,8 +3,8 @@
   "slug": "math-medalist-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "1e1d8a3dbd73b04e24adb0f5091d6848e1008ab5426a9b615a3c8e4a4f89e452",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "ac5c9b09209b4f797f238826a5ab03cf5777907dbd187d1ebf36ccce4e789619",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Math Medalist",
@@ -41,5 +41,22 @@
   "uncertainty": [
     "Neither game mode states how to break a tie in its speed-based opening criterion.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/math-medalist-simplyfun-en-cover.jpg",
+    "alt": "Math Medalist SimplyFun game box with numbered game boards and gold medals",
+    "width": 361,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/mathmedalist_box-002.webp?v=1781735063",
+      "publisher": "SimplyFun official product box image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and credited artists",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://simplyfun.com/products/math-medalist. The official Shopify product lists SKU SF162, matching this page’s edition and the publisher-linked English rulebook. Original image URL: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/mathmedalist_box-002.webp?v=1781735063",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

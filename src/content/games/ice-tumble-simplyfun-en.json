@@ -3,8 +3,8 @@
   "slug": "ice-tumble-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "21c484d76abaee4095a42f49d7607fdad70c14dcfe4bd13f2390c92184cc6e5b",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c8e0d3a77025d40cdb65a5a3970abd118e728c922c62746d50d1c14348a35cf2",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ice Tumble",
@@ -37,5 +37,22 @@
   "uncertainty": [
     "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ice-tumble-simplyfun-en-cover.jpg",
+    "alt": "Ice Tumble SimplyFun game box with stacked ice blocks and an arctic background",
+    "width": 374,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/icetumble_box.jpg?v=1747597910",
+      "publisher": "SimplyFun official product box image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and credited artists",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://simplyfun.com/products/ice-tumble. The official Shopify product lists SKU SF177, matching this page’s edition and the publisher-linked English rulebook. Original image URL: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/icetumble_box.jpg?v=1747597910",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,8 +3,8 @@
   "slug": "eye-to-eye-simplyfun-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization",
-  "approvedRevision": "960dee901ea5df928578ade35af0048ba95799814d5082f12f716595da92eb55",
+  "approvedBy": "Codex editorial review of publisher-linked PDF, under owner's content authorization; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f604c9041fd36b63af96b22f8a29d1b875949d20a717f38d03ba40bc14df42cf",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Eye to Eye",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "The unique-eyes comparison is subjective and the manual gives no way to settle disagreement.",
     "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/eye-to-eye-simplyfun-en-cover.jpg",
+    "alt": "Blue Eye to Eye SimplyFun game box with mirrored yellow title",
+    "width": 500,
+    "height": 499,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/eyetoeye_box.jpg?v=1747415174",
+      "publisher": "SimplyFun official product box image"
+    },
+    "fairUse": {
+      "rightsHolder": "SimplyFun and credited artists",
+      "rationale": "Reduced, edition-specific game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://simplyfun.com/products/eye-to-eye. The official Shopify product lists SKU SF001, matching this page’s edition and the publisher-linked English rulebook. Original image URL: https://cdn.shopify.com/s/files/1/0669/5134/8509/files/eyetoeye_box.jpg?v=1747415174",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
