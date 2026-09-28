@@ -3,13 +3,30 @@
   "slug": "scythe-stonemaier-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "4c00d843f63e4a39422ebd637f701d405c8bce31aa47d3053c4d8e86aaf825d4",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "659179a3ce583dac585f941b763bd48b1cb13111d2829d42c33c5c583e4afef2",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Scythe",
   "aliases": [],
   "editionLabel": "Stonemaier Games English rulebook, 2015",
+  "image": {
+    "file": "/images/games/scythe-stonemaier-en-cover.jpg",
+    "alt": "Scythe box cover",
+    "width": 480,
+    "height": 479,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.stonemaiergames.com/cdn/shop/products/3d-scythe_1200x1200.png?v=1551977466",
+      "publisher": "Stonemaier Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Stonemaier Games (publisher); Jakub Różalski (credited artist)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://store.stonemaiergames.com/products/scythe. Exact image file: https://store.stonemaiergames.com/cdn/shop/products/3d-scythe_1200x1200.png?v=1551977466. Edition check: English Scythe base game, matching the cited rulebook.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player whose Player Mat has the lowest number on its label goes first. Player Mats are dealt randomly during setup.",
   "officialTieBreak": null,
   "houseFallback": null,
