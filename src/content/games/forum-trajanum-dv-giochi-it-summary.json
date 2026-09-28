@@ -3,10 +3,10 @@
   "slug": "forum-trajanum-dv-giochi-it-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a10f6377d3306dc453f120c456b7c7975688cf2125b2f6f602a27ec22a35a93f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "351193d5f07188434ec5f37d1da1224b1749712c6b48406d2918b23f90486074",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Forum Trajanum",
   "aliases": [],
   "editionLabel": "dV Giochi Italian rules, English summary",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/forum-trajanum-dv-giochi-it-summary-cover.jpg",
+    "alt": "Forum Trajanum official dV Giochi product box",
+    "width": 299,
+    "height": 314,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dvgiochi.com/news/forum-trajanum-gioco-da-tavolo/",
+      "publisher": "dV Giochi"
+    },
+    "fairUse": {
+      "rightsHolder": "HUCH! and dV Giochi; cover artist Michael Menzel (precise ownership split not stated)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "dV Giochi 23 July 2018 announcement of its Italian release shows the HUCH! Forum Trajanum game box at https://www.dvgiochi.com/imgeventinews/News-ForumTrajanum.jpg. The publisher article identifies Stefan Feld, artist Michael Menzel and the Italian-rule release; this box matches the title and dV Giochi Italian rules cited by this page. The HUCH! publisher page independently shows the same box art. Cropped surrounding article background.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
