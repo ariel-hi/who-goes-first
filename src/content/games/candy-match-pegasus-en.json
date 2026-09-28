@@ -3,10 +3,10 @@
   "slug": "candy-match-pegasus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e13dc4285b6e2768095c6d8d753e0648f1747c14678489f3eb0acd3b0fa5c7c1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "7074e46bd4b49004f534d530eed82512f8cb12bb9a54d7152cdcdeb387e49b05",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Candy Match",
   "aliases": [],
   "editionLabel": "Pegasus Spiele 2017 English rules",
@@ -37,5 +37,22 @@
   "internalEvidence": "The indexed text of the original Pegasus Spiele English PDF, printed page 6, names the player with the greatest liking for sweets and clockwise order; printed page 7 permits any revealer if turn order is lost. The PDF's publishing details credit Pegasus Spiele in 2017. This retailer-hosted PDF denied a direct download on 2026-09-23, so no rendered-page or file-hash check was possible. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the cited starter instruction and edition attribution.",
   "uncertainty": [
     "The rules do not define a tie-break for players claiming the same sweet tooth."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/candy-match-pegasus-en-cover.jpg",
+    "alt": "Pegasus Candy Match box with pink title and illustrated sweets",
+    "width": 307,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://poggers.com/cdn/shop/files/Candy-Match-Dexterity-Card-Game-2-6-Players-Ages-8-Children-Family-Pegasus-Spiele_1200x1200.webp?v=1736854710",
+      "publisher": "Poggers listing for Pegasus Spiele Candy Match"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele and credited artists",
+      "rationale": "Reduced game packaging or publisher cover art used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://poggers.com/collections/board-games/products/candy-match-dexterity-card-game-2-6-players-ages-8-children-family-pegasus-spiele. The retailer listing and photographed bilingual German/English Pegasus box match the 2017 English rules. Original image URL: https://poggers.com/cdn/shop/files/Candy-Match-Dexterity-Card-Game-2-6-Players-Ages-8-Children-Family-Pegasus-Spiele_1200x1200.webp?v=1736854710",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

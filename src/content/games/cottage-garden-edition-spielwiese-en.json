@@ -3,10 +3,10 @@
   "slug": "cottage-garden-edition-spielwiese-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a00313cea1fc9ab15c707e6c2299883ec102ff5f135059ea6e499be0aeef38f0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "5776d016f360d34496f0f40360d85f9d3fbeb92b322de030c1f6b6c566df87a7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Cottage Garden",
   "aliases": [],
   "editionLabel": "Edition Spielwiese English rulebook",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 2 (printed page 4) of the Edition Spielwiese English rulebook preserved by 1jour-1jeu. The Game names the last garden weeder and clockwise turn order for two to four players. SHA-256: a027969db89c5f6f0609fe7f5ca3358c836c11fda488cc66f4937187bbea7c98. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, turn order and edition.",
   "uncertainty": [
     "No tie-break is provided for equally recent weeding."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/cottage-garden-edition-spielwiese-en-cover.jpg",
+    "alt": "Edition Spielwiese Cottage Garden box with garden tools and flowers",
+    "width": 299,
+    "height": 417,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/2/jpg500/22286920026g.jpg",
+      "publisher": "Noble Knight Games listing for Edition Spielwiese"
+    },
+    "fairUse": {
+      "rightsHolder": "Edition Spielwiese and Andrea Boekhoff",
+      "rationale": "Reduced game packaging or publisher cover art used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2148006739/Cottage-Garden. The seller lists the Edition Spielwiese game; the photographed original box bears its logo and matches the English rules for this title. Original image URL: https://image.nobleknight.com/2/jpg500/22286920026g.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
