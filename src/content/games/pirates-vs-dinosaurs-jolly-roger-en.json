@@ -3,13 +3,30 @@
   "slug": "pirates-vs-dinosaurs-jolly-roger-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a5acc1a95e61755a0fbc1b68bdec09accef773a5c9b6221a2cfa75f6516ea2f1",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "ca841c86a6b0e8ad2b52ce7accba02b95b5c9f2c7bab3df9ab9b05be4792cc50",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Pirates vs Dinosaurs",
   "aliases": [],
   "editionLabel": "Jolly Roger Games English edition",
+  "image": {
+    "file": "/images/games/pirates-vs-dinosaurs-jolly-roger-en-cover.jpg",
+    "alt": "Pirates vs Dinosaurs illustrated rulebook cover, Jolly Roger Games",
+    "width": 279,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Pirates%20vs%20Dinosaurs.pdf",
+      "publisher": "Jolly Roger Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Jolly Roger Games",
+      "rationale": "Small publisher-authored illustrated rulebook cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Page 1 of the cited publisher-authored rulebook, English Rule of Exploration front with original game art. The image is labeled as a rulebook cover rather than a retail box. Reduced to 279 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The rules suggest that the player who looks most like a pirate starts. If players cannot agree who makes the most convincing pirate, the oldest player starts.",
   "officialTieBreak": "If players cannot agree who looks most like a pirate, the oldest player starts.",
   "houseFallback": null,

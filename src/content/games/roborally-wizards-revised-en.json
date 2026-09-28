@@ -3,13 +3,30 @@
   "slug": "roborally-wizards-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "06be360d4fd90b037841937368595cece7557a662ebd6e23d3704929c512ee60",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "eebe83125f5bfba61f925ebccd021b758550b9df3b54ed8af93ff168b8d2859f",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "RoboRally",
   "aliases": [],
   "editionLabel": "Avalon Hill English revised edition",
+  "image": {
+    "file": "/images/games/roborally-wizards-revised-en-cover.jpg",
+    "alt": "RoboRally illustrated rulebook cover, Wizards of the Coast / Avalon Hill",
+    "width": 277,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://desktopgames.com.ua/games/381/roborally_rules_en.pdf",
+      "publisher": "Wizards of the Coast / Avalon Hill"
+    },
+    "fairUse": {
+      "rightsHolder": "Wizards of the Coast / Avalon Hill",
+      "rationale": "Small publisher-authored illustrated rulebook cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Page 1 of the cited publisher-authored rulebook, revised English rulebook front with original robot and track artwork. The image is labeled as a rulebook cover rather than a retail box. Reduced to 277 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly choose who places first: that player puts their robot and Archive marker on Dock 1. The other players place clockwise on the remaining docks.",
   "officialTieBreak": null,
   "houseFallback": null,

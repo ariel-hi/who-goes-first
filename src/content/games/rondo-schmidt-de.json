@@ -5,6 +5,23 @@
   "aliases": [],
   "language": "en",
   "editionLabel": "English summary of Schmidt Spiele German rules for Reiner Knizia's Rondo",
+  "image": {
+    "file": "/images/games/rondo-schmidt-de-cover.jpg",
+    "alt": "Rondo illustrated rulebook cover, Schmidt Spiele",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.brettspiele-report.de/images/r/rondo/Spielanleitung-Rondo.pdf",
+      "publisher": "Schmidt Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Schmidt Spiele",
+      "rationale": "Small publisher-authored illustrated rulebook cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Page 1 of the cited publisher-authored rulebook, illustrated German rulebook front for the edition summarized in English. The image is labeled as a rulebook cover rather than a retail box. Reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The 'roundest' player begins.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -33,8 +50,8 @@
     "The subjective 'roundest' criterion has no stated tie-break or fallback."
   ],
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ff8cd595f6894c8e9851bc28c7ec44fd6b8bc03cc61c3e337ea5c09dac548be5",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "479c7a7619f232674b07feb6d83d8979a4097888fe91af8a4e87e39e596179bb",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  "materiallyUpdatedAt": "2026-09-28"
 }
