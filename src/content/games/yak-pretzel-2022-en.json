@@ -3,10 +3,10 @@
   "slug": "yak-pretzel-2022-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d8da8ea7811e55a944140f58f7a73dcde20697232244b8f78ac0660b0d24c047",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "57438c348bf18274447c61fce0adacb510ca412ae921e657d5b8ddb6650c5e74",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Yak",
   "aliases": [],
   "editionLabel": "Pretzel Games English rules, 2022",
@@ -40,5 +40,22 @@
   "internalEvidence": "Rendered PDF page 2/printed page 3 gives the hair criterion and Baby Yak marker. Pages 3–4 explain the first action and clockwise handoff. Carriages, food and stone towers match inventory BGG 351038; the publisher identifies the game as Yak. SHA-256: 43e5dbb868865c4bd202aaa2a92e49d992f2f2072d972575bc50026c33782382. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules do not define how to judge yak-like hairiness or break a tie."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/yak-pretzel-2022-en-cover.jpg",
+    "alt": "Yak game box with Himalayan trader and yak, Pretzel Games English edition",
+    "width": 505,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeebe/uploads/2022/08/PLAN0044_1-923x1024.png",
+      "publisher": "Pretzel Games / Asmodee Belgium"
+    },
+    "fairUse": {
+      "rightsHolder": "Pretzel Games / Asmodee",
+      "rationale": "Reduced-size publisher product-box photograph identifies the Yak edition discussed in this independent rules article. It is contextual to the game, links to the distributor product page, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Asmodee Belgium product page for Pretzel Games Yak: https://www.asmodee.be/product/yak-fr/. Its 2022 product image: https://cdn.svc.asmodee.net/production-asmodeebe/uploads/2022/08/PLAN0044_1-923x1024.png. Although the distributor page is in French, the box photograph displays a US flag on the top-right panel and matches the English 2022 base-game edition in the article; visually reviewed.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
