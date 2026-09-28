@@ -85,7 +85,7 @@ for (const width of [320, 1280]) {
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await back.click();
       await expect(page).toHaveURL(/\/$/);
-      await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
+      await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a starting player');
     } finally { await context.close(); }
   });
 }

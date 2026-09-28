@@ -79,8 +79,6 @@
   .directory-arrow { flex:none; color:var(--green); font-size:20px; opacity:.65; transition:transform .18s ease, opacity .18s ease; }
   .directory-group .game-list a:hover .directory-arrow, .directory-shelf a:is(:hover,:focus-visible) .directory-arrow, .directory-results a:is(:hover,:focus-visible) .directory-arrow { transform:translateX(3px); opacity:1; }
   @media(prefers-reduced-motion:reduce) { .directory-arrow { transition:none; } }
-  .home-picker-heading { margin:0 0 12px 4px; }
-  .home-picker-heading h1 { font-size:27px; margin:0; }
   .home-rule-picker { margin-top:8px; border:1px solid var(--line); border-radius:18px; background:var(--paper); }
   .home-rule-picker summary { padding:16px 20px; cursor:pointer; font-size:14px; }
   .home-rule-picker .random-rule { margin:0; padding:0 20px 20px; border:0; border-radius:0; background:transparent; }
@@ -367,7 +365,6 @@
     .intro { margin-bottom:20px; }
     .home-rules { padding:20px; border-radius:23px; }
     .home-rules h2 { font-size:28px; }
-    .home-picker-heading h1 { font-size:25px; }
     .site-header { padding:10px 16px; }
     .brand { font-size:16px; gap:7px; }
     .brand-mark { width:23px; }

@@ -68,8 +68,11 @@ test('comma-separated names work and shell cards follow the dark theme', async (
 
 test('home pairs the picker with rules on desktop and preserves the mobile stack', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
-  await expect(page.locator('#home-picker-heading')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a starting player');
+  await expect(page.locator('#home-picker-heading')).toHaveClass(/sr-only/);
+  await expect(page.getByRole('navigation', { name: 'Footer' }).getByRole('link', { name: 'Coin flip' })).toHaveCount(0);
+  await expect(page.locator('.picker-utilities').getByRole('button', { name: 'Share' })).toHaveCount(0);
+  await expect(page.getByRole('group', { name: 'Share this page' })).toHaveCount(1);
   const picker = await page.locator('.home-picker').boundingBox();
   const directory = await page.locator('.home-rules').boundingBox();
   expect(directory!.x).toBeGreaterThanOrEqual(picker!.x + picker!.width);

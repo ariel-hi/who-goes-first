@@ -510,7 +510,7 @@ test('no Balloon code before use, no sound by default, and failed share has a cl
   await ready(page); await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
   expect(assets.some(url => url.includes('BalloonRise'))).toBe(false);
   expect(await page.evaluate(() => (window as unknown as { audioCalls: number }).audioCalls)).toBe(0);
-  await page.getByRole('button', { name: 'Share', exact: true }).click();
+  await page.getByRole('group', { name: 'Share this page' }).getByRole('button', { name: 'Share this page' }).click();
   await expect(page.getByRole('textbox', { name: 'Clean sharing link' })).toHaveValue(`${STATIC}/`);
 });
 
@@ -561,8 +561,8 @@ test('names never enter requests or clean sharing', async ({ page }) => {
   await page.getByLabel('Player names').fill('PRIVATE_ZEBRA_927\nPRIVATE_BADGER_819');
   await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
   await page.evaluate(() => history.replaceState(null, '', '/?unrelated=1#fragment'));
-  await page.getByRole('button', { name: 'Share', exact: true }).click();
-  expect(await page.evaluate(() => (window as unknown as { shared: unknown }).shared)).toEqual({ title: 'Who Goes First?', url: `${STATIC}/` });
+  await page.getByRole('group', { name: 'Share this page' }).getByRole('button', { name: 'Share this page' }).click();
+  expect(await page.evaluate(() => (window as unknown as { shared: unknown }).shared)).toEqual({ title: 'Who Goes First? Random First Player Picker', url: `${STATIC}/` });
   expect(payloads.join('\n')).not.toMatch(/PRIVATE_ZEBRA|PRIVATE_BADGER/);
   expect(payloads.every(payload => payload.startsWith(`${STATIC}/`))).toBe(true);
 });
@@ -584,10 +584,10 @@ test('static help and navigation remain usable without JavaScript', async ({ bro
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
   const page = await context.newPage();
   await page.goto(`${STATIC}/`);
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Who goes first?');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a starting player');
   await expect(page.locator('.noscript')).toBeVisible();
   await expect(page.locator('.noscript')).toContainText('Enable JavaScript to pick a player on your device.');
-  await page.getByRole('link', { name: 'How it works', exact: true }).click();
+  await page.getByRole('link', { name: 'Equal chances', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('How the draw works');
   await page.getByRole('link', { name: 'Privacy', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Privacy');

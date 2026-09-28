@@ -1,11 +1,11 @@
 ---
 import Picker from './Picker';
 import type { Mode } from '../lib/preferences';
-interface Props { initialMode?: Mode; balloonEnabled?: boolean }
-const { initialMode = 'quick', balloonEnabled = true } = Astro.props;
+interface Props { initialMode?: Mode; balloonEnabled?: boolean; shareInPicker?: boolean }
+const { initialMode = 'quick', balloonEnabled = true, shareInPicker = true } = Astro.props;
 ---
 <div data-picker-shell>
-  <Picker client:load initialMode={initialMode} balloonEnabled={balloonEnabled} />
+  <Picker client:load initialMode={initialMode} balloonEnabled={balloonEnabled} shareInPicker={shareInPicker} />
   <p class="error" data-picker-startup-error role="alert" hidden>The picker couldn’t finish loading. No player has been selected. <a href={Astro.url.pathname}>Reload this page</a> to try again.</p>
 </div>
 <script>

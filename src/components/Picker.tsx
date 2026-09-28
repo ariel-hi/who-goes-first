@@ -21,7 +21,7 @@ class EffectBoundary extends Component<{ children: ReactNode; onFail: () => void
   render() { return this.state.failed ? <p role="status" className="reveal-unavailable">Visual unavailable. The selected player is shown below.</p> : this.props.children; }
 }
 
-export default function Picker({ initialMode = 'quick', balloonEnabled = true }: { initialMode?: Mode; balloonEnabled?: boolean }) {
+export default function Picker({ initialMode = 'quick', balloonEnabled = true, shareInPicker = true }: { initialMode?: Mode; balloonEnabled?: boolean; shareInPicker?: boolean }) {
   const [players, setPlayers] = useState<Player[]>(seats(4));
   const [countDraft, setCountDraft] = useState('4');
   const cancelCountCommit = useRef(false);
@@ -397,8 +397,8 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true }:
           </Suspense>
         </EffectBoundary></div>}
       </div>
-      <div className="picker-utilities"><button type="button" className="text-button" onClick={() => setSettingsOpen(!settingsOpen)} aria-expanded={settingsOpen} aria-controls="picker-settings" disabled={!hydrated} inert={busy}>Preferences</button><a href="/fairness/">Equal chances</a><button type="button" className="text-button" disabled={!hydrated} onClick={() => void share()}>Share</button></div>
-      <div role="status" className="small muted share-status">{shareStatus}{manualLink && <input readOnly aria-label="Clean sharing link" value={manualLink} onFocus={e => e.target.select()} />}</div>
+      <div className="picker-utilities"><button type="button" className="text-button" onClick={() => setSettingsOpen(!settingsOpen)} aria-expanded={settingsOpen} aria-controls="picker-settings" disabled={!hydrated} inert={busy}>Preferences</button><a href="/fairness/">Equal chances</a>{shareInPicker && <button type="button" className="text-button" disabled={!hydrated} onClick={() => void share()}>Share</button>}</div>
+      {shareInPicker && <div role="status" className="small muted share-status">{shareStatus}{manualLink && <input readOnly aria-label="Clean sharing link" value={manualLink} onFocus={e => e.target.select()} />}</div>}
       {settingsOpen && <fieldset id="picker-settings" className="settings" inert={busy}>
         <legend className="sr-only">Preferences</legend>
         <label className="check-row"><input type="checkbox" checked={prefs.remember} onChange={e => setPrefs({ ...prefs, remember: e.target.checked, roster: null })} /><span>Remember this group<small>Saved only on this device.</small></span></label>
