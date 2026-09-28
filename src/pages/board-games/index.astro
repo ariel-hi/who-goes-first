@@ -100,12 +100,19 @@ const extraRules = rules.filter(rule => !linkedRuleIds.has(rule.id));
       return;
     }
     if (thisRevision !== revision) return;
-    matchedGames = data!.filter(game => (game.search.includes(query) || game.numericId?.includes(query)) && (filter === 'all' || game.hasRule === (filter === 'rules')));
+    // search.json is already alphabetized by getBrowseShelves(). Keep that
+    // order within relevance groups instead of sorting thousands of broad
+    // matches with localeCompare on every keystroke.
+    const exact: SearchGame[] = [], prefix: SearchGame[] = [], other: SearchGame[] = [];
+    for (const game of data!) {
+      if (!(game.search.includes(query) || game.numericId?.includes(query))
+        || (filter !== 'all' && game.hasRule !== (filter === 'rules'))) continue;
+      if (game.numericId === query || game.nameKey === query) exact.push(game);
+      else if (game.nameKey.startsWith(query)) prefix.push(game);
+      else other.push(game);
+    }
+    matchedGames = [...exact, ...prefix, ...other];
     if (requestPrompt) requestPrompt.hidden = filter !== 'all';
-    matchedGames.sort((a, b) => {
-      const rank = (game: SearchGame) => game.numericId === query || game.nameKey === query ? 0 : game.nameKey.startsWith(query) ? 1 : 2;
-      return rank(a) - rank(b) || a.name.localeCompare(b.name, 'en', { numeric: true });
-    });
     showNext = () => {
       const next = matchedGames.slice(shown, shown + batchSize);
       const fragment = document.createDocumentFragment();

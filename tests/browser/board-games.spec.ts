@@ -170,6 +170,20 @@ test('broad directory searches reveal every match in keyboard-accessible batches
   await expect(page.locator('[data-count]')).not.toContainText('showing');
 });
 
+test('directory search keeps exact, prefix, and other matches in stable name order', async ({ page }) => {
+  await page.route('**/board-games/search.json', route => route.fulfill({ json: [
+    { name: 'Alpha', id: '101', ruleCount: 0, terms: ['chess'] },
+    { name: 'Chess', id: '102', ruleCount: 0 },
+    { name: 'Chess: 960', id: '103', ruleCount: 0 },
+    { name: 'The Chess Game', id: '104', ruleCount: 0 },
+  ] }));
+  await page.goto('/board-games/');
+  await page.getByRole('searchbox', { name: 'Search board games' }).fill('chess');
+  const rows = page.locator('[data-results] li');
+  await expect(rows).toHaveCount(4);
+  expect(await rows.evaluateAll(items => items.map(item => item.dataset.id))).toEqual(['102', '103', '101', '104']);
+});
+
 test('new native game identities remain searchable without borrowed starting rules', async ({ page }) => {
   test.setTimeout(120000);
   await page.setViewportSize({ width: 320, height: 844 });
