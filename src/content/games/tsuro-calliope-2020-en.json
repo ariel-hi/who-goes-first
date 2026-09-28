@@ -3,10 +3,10 @@
   "slug": "tsuro-calliope-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "7e6cf048e9ca393532a352ce6016623e0b3fec07432578f37a7a434945a52b03",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "98967c6dc4ee6383dbb99a55b3b95972e119b095f70f186e500a42cdcbac50db",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tsuro",
   "aliases": [
     "Tsuro: The Game of the Path"
@@ -36,5 +36,22 @@
   "internalEvidence": "Downloaded the rules PDF linked from the Calliope Games product page (https://calliopegames.com/shop/tsuro-the-game-of-the-path/) at https://www.dropbox.com/s/sth0b0vx06jbqej/Tsuro_Rules.pdf, SHA-256 06b0b76f79b4e71726bb91364a6d296396830a959177b5374107c728d99772ed. The one-page sheet has no text layer, so it was rendered and read visually. Playing the Game: the oldest player takes the first turn; the first player places a marker on a start mark, continuing clockwise until each player has placed a marker, before any tiles are played. Draw Tiles: once all players have three tiles or the pile is empty, play continues clockwise. Credits: original game design Tom McMurchie, copyright 2020 Compound Fun, Inc. (Calliope Games). The 2-8 player path-tile game matches BGG 16992. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The rules give no tie-break for players of the same age."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tsuro-calliope-2020-en-cover.jpg",
+    "alt": "Tsuro: The Game of the Path Calliope Games box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0572/1076/5512/products/CLP020_1.jpg?v=1775059653",
+      "publisher": "Calliope Games / Asmodee UK"
+    },
+    "fairUse": {
+      "rightsHolder": "Calliope Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Asmodee UK distributor product listing: https://www.asmodee.co.uk/products/clp020-tsuro. Exact distributor-hosted product image: https://cdn.shopify.com/s/files/1/0572/1076/5512/products/CLP020_1.jpg?v=1775059653. SKU CLP020 matches Calliope’s original-edition product listing https://calliopegames.com/shop/tsuro-the-game-of-the-path/, which links the 2020 rules cited by this article. The box has Calliope branding and was visually reviewed against the article edition (Calliope Games English rules, 2020).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
