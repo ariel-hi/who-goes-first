@@ -1,6 +1,27 @@
 import { test, expect } from '@playwright/test';
 import { DEV } from './urls';
 
+for (const width of [320, 1280]) {
+  test(`starting-rule search leads the page and reveals matches directly at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto('/games/');
+    const directory = page.locator('[data-game-directory]');
+    const search = directory.getByRole('searchbox');
+    const discovery = directory.locator('[data-directory-discovery]');
+    const searchBox = await search.boundingBox();
+    const randomBox = await discovery.locator('[data-random-rule]').boundingBox();
+    expect(searchBox).not.toBeNull();
+    expect(randomBox).not.toBeNull();
+    expect(searchBox!.y).toBeLessThan(844);
+    expect(searchBox!.y + searchBox!.height).toBeLessThan(randomBox!.y);
+    await search.fill('Azul');
+    await expect(discovery).toBeHidden();
+    await expect(directory.locator('.game-list li:visible').first()).toContainText('Azul');
+    await search.fill('');
+    await expect(discovery).toBeVisible();
+  });
+}
+
 test('repeated rule searches retain ranked links and clearing restores the complete original order', async ({ page, browserName }) => {
   await page.goto('/games/');
   const rules = page.locator('[data-game-directory]');
