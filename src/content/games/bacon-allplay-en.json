@@ -3,13 +3,30 @@
   "slug": "bacon-allplay-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "5e2f389cdcc2cfc27884dd4e58594c4a0fdf7ecc477059400c7011b62cf8775d",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "794ae4ccd3d351b29a3c71d982d6fff462120341e0ab135dab3ac6a50b57828c",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Bacon",
   "aliases": [],
   "editionLabel": "Allplay English online rulebook",
+  "image": {
+    "file": "/images/games/bacon-allplay-en-cover.jpg",
+    "alt": "Official product image showing the Bacon game box",
+    "width": 438,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0143/6178/8473/files/bacon.jpg?v=1684417941",
+      "publisher": "Allplay"
+    },
+    "fairUse": {
+      "rightsHolder": "Allplay and credited cover artists",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Allplay product page: https://allplay.com/board-games/bacon. Edition match: Bacon base-game box shown on the publisher product page. Original image URL: https://cdn.shopify.com/s/files/1/0143/6178/8473/files/bacon.jpg?v=1684417941",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Give the start player token to the player who most recently ate bacon.",
   "officialTieBreak": null,
   "houseFallback": null,

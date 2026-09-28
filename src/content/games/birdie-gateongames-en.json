@@ -3,13 +3,30 @@
   "slug": "birdie-gateongames-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "487c0f37d11609f41f8ddd28e07d1c053e4fbccaa07e54b91edb2e6a5a87737b",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "64caa194d95102cbdc0621e78e1b28b2ceae03d7b932b2c94ecf84d4b88b21d7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Birdie",
   "aliases": [],
   "editionLabel": "GateOnGames English rulebook",
+  "image": {
+    "file": "/images/games/birdie-gateongames-en-cover.jpg",
+    "alt": "Official product image showing the Birdie game box",
+    "width": 440,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.gateongames.com/wp-content/uploads/2024/01/Birdie-Box-siti.jpg",
+      "publisher": "GateOnGames"
+    },
+    "fairUse": {
+      "rightsHolder": "GateOnGames and credited cover artists",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official GateOnGames product page: https://www.gateongames.com/en/birdie/. Edition match: Birdie base-game box on the publisher English-language page. Original image URL: https://www.gateongames.com/wp-content/uploads/2024/01/Birdie-Box-siti.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who chirps the loudest starts the first round.",
   "officialTieBreak": null,
   "houseFallback": null,
