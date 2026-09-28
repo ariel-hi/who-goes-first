@@ -3,13 +3,30 @@
   "slug": "mapmaker-lafair-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "66b70d3f1def4d720b29924940eba648f4b97f993df0d4a470f3b5483fa97b88",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "59fd44077553f8f38e8843aad7e089990871518f69bdbcd547d11e046298a24e",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Mapmaker: The Gerrymandering Game",
   "aliases": [],
   "editionLabel": "Lafair Family Games English edition, 2019",
+  "image": {
+    "file": "/images/games/mapmaker-lafair-2019-en-cover.jpg",
+    "alt": "Mapmaker: The Gerrymandering Game illustrated rulebook cover, Lafair Family Games",
+    "width": 233,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Mapmaker%20-%20The%20Gerrymandering%20Game.pdf",
+      "publisher": "Lafair Family Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lafair Family Games",
+      "rationale": "Small publisher-authored illustrated rulebook cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Page 1 of the cited publisher-authored rulebook, illustrated Gerrymandering Manual front for the original English edition. The image is labeled as a rulebook cover rather than a retail box. Reduced to 233 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The person who voted most recently takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -3,13 +3,30 @@
   "slug": "myrmes-ystari-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "08cc2dfe941a9b1070514802e75c62a7226a1cea2069b3e68d017b7faf507d4d",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "e2a0f0f5cad4da057918733941862d73eb3a52f91939e04b5fccbf4c2fd92194",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Myrmes",
   "aliases": [],
   "editionLabel": "Ystari Games English rules",
+  "image": {
+    "file": "/images/games/myrmes-ystari-en-cover.jpg",
+    "alt": "Myrmes illustrated rulebook cover, Ystari Games",
+    "width": 255,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.1j1ju.com/medias/b1/74/66-myrmes-rulebook.pdf",
+      "publisher": "Ystari Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Ystari Games",
+      "rationale": "Small publisher-authored illustrated rulebook cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Page 1 of the cited publisher-authored rulebook, English Game Rules front with original ant-colony artwork. The image is labeled as a rulebook cover rather than a retail box. Reduced to 255 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The shortest player starts and takes the First Player token.",
   "officialTieBreak": null,
   "houseFallback": null,
