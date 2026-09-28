@@ -3,10 +3,10 @@
   "slug": "long-cow-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "005729bfb1ab125e975c4e794e81c6c85a8a9f01c57ec08e76068b6120408f8f",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2e93badbedcf13d4591f6f6a00af81a773707c913aee91a33406b4e1ad1859af",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Long Cow",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/long-cow-gamewright-en-cover.jpg",
+    "alt": "Long Cow Gamewright game box and cards",
+    "width": 500,
+    "height": 407,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/product/Long-Cow",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official product page https://gamewright.com/product/Long-Cow supplies original product image https://gamewright.com/images/twenty/longcowproductshot.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

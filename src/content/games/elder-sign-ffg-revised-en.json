@@ -3,10 +3,10 @@
   "slug": "elder-sign-ffg-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "c5a69201ebf783c1b03e754daac4685d8e8fadaf97ba9c1da7289207c0b6d8b0",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3288fe28ebb929391c742f620d2a82440273f801085662ef8af8a2f8169e9e76",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Elder Sign",
   "aliases": [],
   "editionLabel": "FFG English revised edition",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Official FFG revised English manual. Visually verified setup step10 on printed/PDF5 selects a marker randomly; page6 confirms clockwise turns beginning with that player. Source custody: research/source-files/popular-sep26-04/elder.pdf; SHA-256 48e88cebf54adbe8a472559a01d8115a51ecb807f1015b41561d01e501d914d8. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/elder-sign-ffg-revised-en-cover.jpg",
+    "alt": "Elder Sign Fantasy Flight Games game box",
+    "width": 300,
+    "height": 300,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.fantasyflightgames.com/product/elder-sign/",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any licensed artists (precise cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Fantasy Flight Games Elder Sign product page https://www.fantasyflightgames.com/product/elder-sign/ displays original box image https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/sl05_main.webp. Base-game Elder Sign title and art match the cited revised English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

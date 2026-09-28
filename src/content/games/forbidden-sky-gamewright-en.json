@@ -3,10 +3,10 @@
   "slug": "forbidden-sky-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "2660227db9a6ad371aabd68f91e9fac65c41c9a23b49110d571de10866a274ba",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1685eb31ae04d314757e2654498878fac70b9c3150150097b8a041e04310852a",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Forbidden Sky",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/forbidden-sky-gamewright-en-cover.jpg",
+    "alt": "Forbidden Sky Gamewright game box and components",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/product/forbidden-sky",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Gamewright product page https://gamewright.com/product/forbidden-sky links original product image https://gamewright.com/images/twenty/forbiddenskyproductshotwhite-web.jpg. Box and title match the cited Gamewright English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

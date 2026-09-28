@@ -3,10 +3,10 @@
   "slug": "food-chain-magnate-splotter-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "9218ff71f932eb7812452bb5f47c8fc55ff25d7fad92c8143df0d9c443eb4dea",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "69e0c2f0a2fc63ecc3e5edd273c63818c49718678ac28b18d78cb95e780d49c7",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Food Chain Magnate",
   "aliases": [],
   "editionLabel": "Splotter English base game",
@@ -40,5 +40,22 @@
   "internalEvidence": "Publisher credits and third-printing provenance verified on PDF2 printed1. PDF7 printed6 distinguishes shuffled initial order, reverse restaurant placement, simultaneous first phase and position selection in Phase2. PDF8 printed7 uses chosen order for Working9-5. This is the original Splotter base game, not a deluxe or expansion ruleset. Source custody: research/source-files/popular-sep26-08/food.pdf; SHA-256 95831b0165f4d0c6b9bd4187280dbeeded4df0d40973fd886b9c947aef4a2ddd. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The Splotter-authored manual is preserved by the Splottercon archive. The current publisher product page did not provide a direct rulebook download."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/food-chain-magnate-splotter-en-cover.jpg",
+    "alt": "Food Chain Magnate game box with diner artwork",
+    "width": 356,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.splottershop.com/products/food-chain-magnate",
+      "publisher": "Splotter Spellen"
+    },
+    "fairUse": {
+      "rightsHolder": "Splotter Spellen and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or distributor product page https://www.splottershop.com/products/food-chain-magnate supplies original cover image https://www.splottershop.com/cdn/shop/products/pic2649434.png?v=1617718800. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

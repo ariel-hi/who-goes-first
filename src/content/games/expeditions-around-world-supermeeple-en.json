@@ -3,10 +3,10 @@
   "slug": "expeditions-around-world-supermeeple-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "3ed0e8335fc99e094585e30e0161a9a11c3e83e5d7c18ca322ee19bbe523fbc9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "fadce5ad0d9b504c6153e7cca8eb11f633fc9e36757d1c1ea3920a47edcbcc94",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Expeditions: Around the World",
   "aliases": [
     "Expeditions Around the World"
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Visually checked Super Meeple English rulebook PDF pages 3–4. The page 3 setup instruction selects the player who most recently traveled abroad; page 4 confirms clockwise placement and play. This game is distinct from Stonemaier Games' Expeditions. SHA-256: c821699515d09519b67e65a91bb55a987ff4839a7612e20d38a418a262db1ade. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, optional wording, and later-round context where applicable.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/expeditions-around-world-supermeeple-en-cover.jpg",
+    "alt": "Expeditions Around the World game box with globe artwork",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.hachetteboardgames.com/products/expeditions-around-the-world",
+      "publisher": "Hachette Boardgames US"
+    },
+    "fairUse": {
+      "rightsHolder": "Super Meeple and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or distributor product page https://www.hachetteboardgames.com/products/expeditions-around-the-world supplies original cover image https://www.hachetteboardgames.com/cdn/shop/files/Expeditions-3d-box.png?v=1707147708. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

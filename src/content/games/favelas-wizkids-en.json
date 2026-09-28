@@ -3,10 +3,10 @@
   "slug": "favelas-wizkids-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "b1024cfbb12ee36ca9f5bb3be023a9cdd5eac9970633185012ee620f0ae88ebb",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "e3f909f206707c5d4fc080ef4a03d943ade3fd5f22a2cba53bb467e486a426d3",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Favelas",
   "aliases": [],
   "editionLabel": "WizKids English rules, 2017",
@@ -37,5 +37,22 @@
   "internalEvidence": "The WizKids product page links this English PDF. Rendered page 3 confirms that the youngest player only rolls the setup dice, while the most recent Rio visitor goes first and ties can be resolved randomly. The printed joke about putting the game away is not presented as a practical tie method. Page 4 confirms turn order. Matches inventory BGG 230591. SHA-256: 04ffc6b9cdb9e9851b9f78d754f0973b6bccc712ed58637825b29fcdd0080047. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
   "uncertainty": [
     "The source does not define whether a group where nobody has visited Rio counts as tied; it does explicitly permit a random choice when tied."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/favelas-wizkids-en-cover.jpg",
+    "alt": "Favelas WizKids game box with colorful buildings",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://wizkids.com/favelas/",
+      "publisher": "WizKids"
+    },
+    "fairUse": {
+      "rightsHolder": "WizKids and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official product page https://wizkids.com/favelas/ supplies original product image https://eadn-wc03-13179282.nxedge.io/wp-content/uploads/2017/07/Favelas1.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

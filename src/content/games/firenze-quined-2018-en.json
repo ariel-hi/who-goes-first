@@ -3,10 +3,10 @@
   "slug": "firenze-quined-2018-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "a4eab5ecfd88171879ac16d73143994c2c6d592913561fe704125c3d07b2ce83",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "bed552f8973c0f634d0556938be26ea01604394033358bffba157403957c1515",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Firenze",
   "aliases": [],
   "editionLabel": "Quined Games second English edition, 2018",
@@ -39,5 +39,22 @@
   "internalEvidence": "Downloaded Quined Games’ official English PDF and verified it is byte-identical to the archive copy. Rendered page 3 for the tower-climber criterion and asymmetric white-brick setup; page 4 gives clockwise ordinary turns. The credits identify the ©2018 second edition; inventory BGG 75449 groups the Firenze design. SHA-256: 07e0bc5e5e6cb268e34636521f8d855ac74e9f68eea43a331c4ee73f0f7e1cf2. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited rendered pages, opening instruction, game identity and edition.",
   "uncertainty": [
     "No tie procedure is printed for equally recent tower visits."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/firenze-quined-2018-en-cover.jpg",
+    "alt": "Firenze second edition cover showing a tower builder",
+    "width": 359,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.quined.nl/nl/featured_item/firenze-2nd-edition-2/",
+      "publisher": "Quined Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Quined Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official product page https://www.quined.nl/nl/featured_item/firenze-2nd-edition-2/ supplies original product image https://www.quined.nl/wp-content/uploads/2018/08/FIRcover-1150x1600.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

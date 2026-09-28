@@ -3,10 +3,10 @@
   "slug": "exploding-kittens-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7616332bd96e14e7ce8ec3f5ed9229fa10bbe1d86c516aaf0329c5620f67d7bb",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1b39fa73e99eabf2041845e32a2ee92155833a639b929238ac9c8f3ef50fffd0",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Exploding Kittens",
   "aliases": [],
   "editionLabel": "Exploding Kittens Original Edition English instructions",
@@ -33,5 +33,22 @@
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 1, including the cited setup and turn-sequence text. Local source PDF SHA-256: 1e65ea5b7550a75b7e76493a7b756c9eaeccb81f74a1d4b7209b7014bd06a4ad. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
   "uncertainty": [
     "The rulebook leaves the actual choice of first player to the group."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/exploding-kittens-original-en-cover.jpg",
+    "alt": "Exploding Kittens Original Edition game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.explodingkittens.com/products/exploding-kittens-original-edition",
+      "publisher": "Exploding Kittens"
+    },
+    "fairUse": {
+      "rightsHolder": "Exploding Kittens and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or distributor product page https://www.explodingkittens.com/products/exploding-kittens-original-edition supplies original cover image https://www.explodingkittens.com/cdn/shop/files/EKOEAngled.png?v=1741032953. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

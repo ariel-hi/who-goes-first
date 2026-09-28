@@ -3,10 +3,10 @@
   "slug": "el-grande-hans-im-glueck-2023-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c81eed7758d9ace2a17069ce4d7b1fa574869eb8dc89c1ef3a0761d3c051dace",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3efed922fc1c166487b4ad97bb01f428110e1e675f8dc4fa8d460b2ef3473022",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "El Grande",
   "aliases": [],
   "editionLabel": "Hans im Glück English rulebook, 2023",
@@ -45,5 +45,22 @@
   "internalEvidence": "Downloaded the English rulebook from hans-im-glueck.de (https://www.hans-im-glueck.de/wp-content/uploads/2023/07/ElGrande_2023_rule_EN_20-07-23-komprimiert.pdf), SHA-256 414db220f71e3ab7e8735ee71945f960ea36e36f0a348ef91a55558d4f2097a3, and extracted the text of all 12 pages. Page 3, Setup step 10: whoever visited Spain most recently takes the First Player marker. Page 4: the player with the First Player marker begins playing Power cards, then clockwise; turns follow from the highest Power card. Page 7: whoever played the lowest Power card takes the First Player marker. Page 9, two-player rules: the dummy never gets the First Player marker. Page 12 credits: copyright 1995, 2023 Hans im Glück, designers Wolfgang Kramer and Richard Ulrich, matching BGG 93. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The rulebook gives no tie-break if several players visited Spain equally recently or nobody has visited."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/el-grande-hans-im-glueck-2023-en-cover.jpg",
+    "alt": "El Grande 2023 game box with castle artwork",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/el-grande",
+      "publisher": "Asmodee USA"
+    },
+    "fairUse": {
+      "rightsHolder": "Hans im Glück and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or distributor product page https://store.asmodee.com/products/el-grande supplies original cover image https://store.asmodee.com/cdn/shop/files/HIGELG01EN-image0_2000.jpg?v=1701441865. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

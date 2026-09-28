@@ -3,10 +3,10 @@
   "slug": "fairy-trails-huch-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "eed456d6f559b7a4c273f4df8a05455fa4385d3e157844f1fe920d4b2d6b2f53",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "9ff63a75964085e0184e2413451e0ee6f5b3740b836d8f264ecddacfa4c2cb35",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fairy Trails",
   "aliases": [],
   "editionLabel": "HUCH! 2020 multilingual rules, English two-player section",
@@ -39,5 +39,22 @@
     "The English wording includes the thought about hidden folk; the German opening sentence in the same file mentions only the forest walk.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fairy-trails-huch-en-cover.jpg",
+    "alt": "Fairy Trails HUCH! game box with forest scene",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://hutter-trade.com/en/product-range/product/fairy-trails/",
+      "publisher": "Hutter Trade / HUCH!"
+    },
+    "fairUse": {
+      "rightsHolder": "Hutter Trade / HUCH! and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official product page https://hutter-trade.com/en/product-range/product/fairy-trails/ supplies original product image https://produkte.hutter-trade.com//files/products/47/100/en/large/Fairy Trails_A_Box_300dpi.jpg. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

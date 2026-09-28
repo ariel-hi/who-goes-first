@@ -3,10 +3,10 @@
   "slug": "federation-eagle-gryphon-en-v8",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c458afdae6f976d2a0e5cba3574147f2eb53c9e8985ff5e6120a02f101e67cbc",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "5cf9a5eabf40df7f8662dcd1dcf6d8e1497307d291c56eabd5c0a46729f4588f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Federation",
   "aliases": [
     "Federation Deluxe Edition"
@@ -43,5 +43,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/federation-eagle-gryphon-en-v8-cover.jpg",
+    "alt": "Federation Deluxe Edition game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.eagle-gryphon.com/products/federation-deluxe-edition",
+      "publisher": "Eagle-Gryphon Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Explor8 / Eagle-Gryphon Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or distributor product page https://www.eagle-gryphon.com/products/federation-deluxe-edition supplies original cover image https://www.eagle-gryphon.com/cdn/shop/files/102427-2_1200x1200.png?v=1747772448. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

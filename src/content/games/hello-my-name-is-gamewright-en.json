@@ -3,10 +3,10 @@
   "slug": "hello-my-name-is-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "46ccc0d4b3a69a3b322f1f0029e8012cebdbe0136f0ae7f14c0266e2bb5caac2",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "586139e272ff3a554c003e62b6538c984231d484876b93db8aa42ef204ae455a",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hello My Name Is",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hello-my-name-is-gamewright-en-cover.jpg",
+    "alt": "Hello My Name Is Gamewright game box and components",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/product/Hello-My-Name-Is",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Gamewright product page https://gamewright.com/product/Hello-My-Name-Is links original product image https://gamewright.com/images/twenty/hmni-product-shot.jpg. Box and title match the cited Gamewright English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

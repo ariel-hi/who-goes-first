@@ -3,10 +3,10 @@
   "slug": "hit-list-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ab5a4176ca21c09087eb253fb05e9dbcd6844dd4bfe925413e7c8116fdfefc33",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4c4f775524365b089291df7a1666955fc39bd65ec2100161ea31e6608a9d6f77",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hit List",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hit-list-gamewright-en-cover.jpg",
+    "alt": "Hit List Gamewright game box and components",
+    "width": 500,
+    "height": 441,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/product/hit-list",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Gamewright product page https://gamewright.com/product/hit-list links original product image https://gamewright.com/images/twenty/hitlistproductshot.jpg. Box and title match the cited Gamewright English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
