@@ -3,13 +3,30 @@
   "slug": "crash-octopus-itten-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f1460a4fb3b1211e24381175e99f7a140afc1909a279e31eedf5399746458992",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "531e4a7be5bfc1361089a866bb056a86fac328aa4d0d47b1822fc8a357633742",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Crash Octopus",
   "aliases": [],
   "editionLabel": "Itten English rules",
+  "image": {
+    "file": "/images/games/crash-octopus-itten-en-cover.jpg",
+    "alt": "Official product image showing the Crash Octopus game box",
+    "width": 331,
+    "height": 369,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.itten-games.com/wp/wp-content/uploads/2020/10/CO_KS-DE_01.jpg",
+      "publisher": "Itten Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Itten Games",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Itten Games product page: https://www.itten-games.com/games/co/. Edition match: original Crash Octopus box, with English title and Japanese subtitle, shown on its publisher game page. Original image URL: https://www.itten-games.com/wp/wp-content/uploads/2020/10/CO_KS-DE_01.jpg. Processing note: cropped the game box from the publisher marketing photo; small foreground components remain at the bottom",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently encountered an octopus is the starting player.",
   "officialTieBreak": null,
   "houseFallback": null,

@@ -3,13 +3,30 @@
   "slug": "beyond-baker-street-zman-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7076b6501f405d023e4c4c4b0eb6bdfcb6b64bbd8d4cf59c79fb12f501b9e8b0",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "ffa6cc32a5a997e1e8c89a2354744335d50031e96c13f00e058651f1ddf30017",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Beyond Baker Street",
   "aliases": [],
   "editionLabel": "Z-Man Games English rulebook",
+  "image": {
+    "file": "/images/games/beyond-baker-street-zman-en-cover.jpg",
+    "alt": "Illustrated first page of the official Z-Man Beyond Baker Street English rulebook",
+    "width": 293,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.zmangames.com/us-east-1/filer_public/d3/87/d38786ef-a67a-4b81-bf15-0e4dc26d9cc0/zm7670_beyond_baker_street_rules.pdf",
+      "publisher": "Z-Man Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games",
+      "rationale": "Reduced illustrated first rulebook page identifies the cited Beyond Baker Street edition in an independent first-player-rule reference; it does not substitute for the manual or artwork.",
+      "provenance": "Official Z-Man Games product page: https://images-cdn.zmangames.com/us-east-1/filer_public/d3/87/d38786ef-a67a-4b81-bf15-0e4dc26d9cc0/zm7670_beyond_baker_street_rules.pdf. Edition match: illustrated title cover is page one of the exact cited Z-Man English rulebook. Original image URL: https://images-cdn.zmangames.com/us-east-1/filer_public/d3/87/d38786ef-a67a-4b81-bf15-0e4dc26d9cc0/zm7670_beyond_baker_street_rules.pdf. Processing note: rendered page one of the publisher rulebook; publisher CDN certificate had expired, so the file was retrieved with certificate verification disabled after matching its official hostname and PDF content",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "With Character cards, the player holding the lowest-numbered Character card starts. In the first game, when no Character cards are used, the player who most recently read a Sherlock Holmes story starts.",
   "officialTieBreak": null,
   "houseFallback": null,

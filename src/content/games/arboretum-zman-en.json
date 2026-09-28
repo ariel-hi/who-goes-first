@@ -3,13 +3,30 @@
   "slug": "arboretum-zman-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "af25450d6bdb0c9ae412fa52620566c6495817c0e70967969eccb19cb8dd1d01",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "791a93153470189039a6fe5c247cf285087d6d9f4f23fd9cdad278a966ca5330",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Arboretum",
   "aliases": [],
   "editionLabel": "Z-Man Games English rules",
+  "image": {
+    "file": "/images/games/arboretum-zman-en-cover.jpg",
+    "alt": "Illustrated first page of the official Z-Man Arboretum English rulebook",
+    "width": 312,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.zmangames.com/us-east-1/filer_public/09/29/09290f24-d01b-4da1-bd55-761940330214/zm1203_arboretum_rules.pdf",
+      "publisher": "Z-Man Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games",
+      "rationale": "Reduced illustrated first rulebook page identifies the cited Arboretum edition in an independent first-player-rule reference; it does not substitute for the manual or artwork.",
+      "provenance": "Official Z-Man Games product page: https://images-cdn.zmangames.com/us-east-1/filer_public/09/29/09290f24-d01b-4da1-bd55-761940330214/zm1203_arboretum_rules.pdf. Edition match: page one of the cited Z-Man English rulebook, with original green Arboretum title artwork. Original image URL: https://images-cdn.zmangames.com/us-east-1/filer_public/09/29/09290f24-d01b-4da1-bd55-761940330214/zm1203_arboretum_rules.pdf. Processing note: rendered page one of the publisher rulebook; publisher CDN certificate had expired, so the file was retrieved with certificate verification disabled after matching its official hostname and PDF content",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who last watered a plant starts.",
   "officialTieBreak": null,
   "houseFallback": null,
