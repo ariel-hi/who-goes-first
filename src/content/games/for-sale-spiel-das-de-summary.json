@@ -3,10 +3,10 @@
   "slug": "for-sale-spiel-das-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "aebd5e2177224973b0463e5426612c60045705548dbfd16dc5fee3504793698f",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "44199d857f85feb5291d4b02abdd16a6fecf8661893486d365e8dfbd3a1cfc68",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "For Sale",
   "aliases": [],
   "editionLabel": "SPIEL DAS! / IELLO German rules, ©2023; English summary",
@@ -45,5 +45,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/for-sale-spiel-das-de-summary-cover.jpg",
+    "alt": "For Sale Hutter Trade rulebook cover",
+    "width": 322,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://produkte.hutter-trade.com//files/products/1662/200/de/for-sale-spielregel-de-v1.pdf",
+      "publisher": "Hutter Trade"
+    },
+    "fairUse": {
+      "rightsHolder": "Hutter Trade and any cover-art licensors or artists (precise ownership not stated in the rulebook)",
+      "rationale": "Small, compressed edition-specific rulebook cover identifies the game discussed in this editorial rule explanation and does not substitute for the rulebook, game, or original artwork.",
+      "provenance": "First page of the cited publisher rulebook https://produkte.hutter-trade.com//files/products/1662/200/de/for-sale-spielregel-de-v1.pdf. The visible title and art identify the same game and edition cited for the starting-player rule; reproduced at reduced resolution.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

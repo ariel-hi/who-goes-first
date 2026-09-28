@@ -3,10 +3,10 @@
   "slug": "fragments-grrre-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "0ec8f9dc96d24e01296fe65276eecffe621c8fbe32e833977df9441284887e6f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b7f30b3fc8e331df3143852ec6d40b0a80fb15d2e72d09e1b244bddc8c3a21ab",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fragments",
   "aliases": [],
   "editionLabel": "GRRRE Games English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF/printed page 1 gives the latest-déjà-vu criterion and clockwise storytelling. The booklet credits GRRRE Games on page 3; Theme, character and Word cards match inventory BGG 346228. SHA-256: ba8ab3299d41870f807d7479cc9a4a654c45697232f1ae8fd51cd5122c2d083d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for equally recent déjà vu experiences."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fragments-grrre-en-cover.jpg",
+    "alt": "Fragments game box or publisher cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.grrre-games.com/fragments-english-version/",
+      "publisher": "GRRRE Games"
+    },
+    "fairUse": {
+      "rightsHolder": "GRRRE Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.grrre-games.com/fragments-english-version/ supplies original product image https://www.grrre-games.com/wp-content/uploads/2021/11/GG013_boite_3D_droite_web.png. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

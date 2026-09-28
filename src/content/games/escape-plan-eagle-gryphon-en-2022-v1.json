@@ -3,10 +3,10 @@
   "slug": "escape-plan-eagle-gryphon-en-2022-v1",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "dc27e88e5962884e21594ec6d014d5365a285855a8bc6f91012017abc95a692d",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4ec4447af5196d3a920823de8a8c389a6681bc75a19a31b19e174d8759a4ca2a",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Escape Plan",
   "aliases": [],
   "editionLabel": "Eagle-Gryphon English 2022 Preview rules, ©2018/2022",
@@ -46,5 +46,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/escape-plan-eagle-gryphon-en-2022-v1-cover.jpg",
+    "alt": "Escape Plan game box or publisher cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.eagle-gryphon.com/products/escape-plan",
+      "publisher": "Eagle-Gryphon Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Eagle-Gryphon Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://www.eagle-gryphon.com/products/escape-plan supplies original product image https://www.eagle-gryphon.com/cdn/shop/files/102187-2_1200x1200.png?v=1747772424. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "emberleaf-city-of-kings-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "fcb0bb570b9d4f0d807f8bb10b9fbd82021ceaa995659ad159262d9f66bc2149",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "32d6ae45963f8d37c738211e89ee0262c64e951cba2033ee25c2fc7874919758",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Emberleaf",
   "aliases": [],
   "editionLabel": "The City of Kings English rulebook",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-hosted English rulebook v1.0 PDF page 6. The rulebook leaves selection to the players, suggests the bravest player, and then states clockwise turns. SHA-256: a254fd26316897b77d7b2be5016213d213c0f759da9baad1a250e39ce7fb8781. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, optional wording, and later-round context where applicable. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/emberleaf-city-of-kings-en-cover.jpg",
+    "alt": "Emberleaf game box or publisher cover art",
+    "width": 394,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.thecityofkings.com/products/emberleaf",
+      "publisher": "The City of Kings"
+    },
+    "fairUse": {
+      "rightsHolder": "The City of Kings and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://shop.thecityofkings.com/products/emberleaf supplies original product image https://shop.thecityofkings.com/cdn/shop/files/701.jpg?v=1747758875. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

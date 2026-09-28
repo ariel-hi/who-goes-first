@@ -3,10 +3,10 @@
   "slug": "grand-austria-hotel-lookout-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "affb22fc1607d65afb9f274b3f277889d61320c706af9db55ea447a81e9ccc88",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "89d3c310f964311cdd685041d1ae45e0cb88f4379377a5daf60e0c995da18519",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Grand Austria Hotel",
   "aliases": [],
   "editionLabel": "Lookout English revised edition",
@@ -38,5 +38,22 @@
     }
   ],
   "internalEvidence": "Official Lookout product page links the revised English retail rulebook. Rendered4 setup7 chooses starter randomly;5 distinguishes reverse initial guest selection;6 connects tile1 holder to dice rolling and first turn. Source custody: research/source-files/popular-sep26-05/hotel.pdf; SHA-256 7fd17c0fe0a3f96e7629f6102bc94bb7ae70f284f309ab58e2e001d8d142c711. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/grand-austria-hotel-lookout-revised-en-cover.jpg",
+    "alt": "Grand Austria Hotel game box or publisher cover art",
+    "width": 256,
+    "height": 400,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/grand-austria-hotel",
+      "publisher": "Lookout Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.asmodee.com/products/grand-austria-hotel supplies original product image https://store.asmodee.com/cdn/shop/files/lk3511-0.jpg?v=1691185243. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

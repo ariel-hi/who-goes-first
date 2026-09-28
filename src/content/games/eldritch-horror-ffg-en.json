@@ -3,10 +3,10 @@
   "slug": "eldritch-horror-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "036ecfa033636d31d18718ac0a3c1c56c47310c300daeba9815a337b94fdaf52",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "b2d0c1d146a96836ec44204258930bdf9bd7df36f108202cf540ba2aa3bb294c",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Eldritch Horror",
   "aliases": [],
   "editionLabel": "Fantasy Flight Games English core rulebook",
@@ -42,5 +42,22 @@
   "uncertainty": [
     "No copyright year was found in the extracted text of this PDF.",
     "Cooperative game: the Lead Investigator token can change hands every round."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/eldritch-horror-ffg-en-cover.jpg",
+    "alt": "Eldritch Horror game box or publisher cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/eldritch-horror",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.asmodee.com/products/eldritch-horror supplies original product image https://store.asmodee.com/cdn/shop/products/EH01-image0_2000.jpg?v=1690842440. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

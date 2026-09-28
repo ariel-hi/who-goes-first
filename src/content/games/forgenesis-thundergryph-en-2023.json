@@ -3,10 +3,10 @@
   "slug": "forgenesis-thundergryph-en-2023",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "78a84e82d3f5f7c981419eceef1f0e942217a7c4aa22ca7bf083b18c4c83ac2f",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f61847a4e5e0ad3bcc3b5e6a5c61c1e0f89296ca6ceba051955be3b7b7c7d20e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Forgenesis",
   "aliases": [],
   "editionLabel": "ThunderGryph English Soda Pop base rules, ©2023",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/forgenesis-thundergryph-en-2023-cover.jpg",
+    "alt": "Forgenesis game box or publisher cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/forgenesis",
+      "publisher": "ThunderGryph Games"
+    },
+    "fairUse": {
+      "rightsHolder": "ThunderGryph Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.asmodee.com/products/forgenesis supplies original product image https://store.asmodee.com/cdn/shop/files/FORGEN01-image0_2000.jpg?v=1764802081. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

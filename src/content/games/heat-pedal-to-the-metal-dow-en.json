@@ -3,10 +3,10 @@
   "slug": "heat-pedal-to-the-metal-dow-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "42747f434cd721a04b889d0b998c9227d9070297bffda45d4897fa27f4d6e729",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "9f9642d4a2f649cbd699651ebb82219187a822a80afd88bb3ef25da052e49364",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Heat: Pedal to the Metal",
   "aliases": [],
   "editionLabel": "Days of Wonder English rulebook",
@@ -32,5 +32,22 @@
     }
   ],
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 3, 4, including the cited setup and turn-sequence text. Local source PDF SHA-256: 26e592955597f7f23cbaa9b7ec5678d9b4d578f3fe780e49f617b771023467e9. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/heat-pedal-to-the-metal-dow-en-cover.jpg",
+    "alt": "Heat: Pedal to the Metal game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/dow9101-heat-pedal-to-the-metal",
+      "publisher": "Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Days of Wonder and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Asmodee product page https://www.asmodee.co.uk/products/dow9101-heat-pedal-to-the-metal supplies original box image https://www.asmodee.co.uk/cdn/shop/files/DOW9101_1.jpg?crop=center&height=1200&v=1775063908&width=1200. Product title and cover identify the same cited edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

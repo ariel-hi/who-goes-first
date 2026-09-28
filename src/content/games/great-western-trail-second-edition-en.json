@@ -3,10 +3,10 @@
   "slug": "great-western-trail-second-edition-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "2a66806668fb5256d5a894fcdd355a4f632ba9835a0a5e7521e4b10b84dcc97b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c0a57ff46d64be883a2f7a9ffadb0bbbce328168921004adec3ecb9f1c977202",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Great Western Trail: Second Edition",
   "aliases": [
     "Great Western Trail"
@@ -36,5 +36,22 @@
   "internalEvidence": "Reviewed the English rulebook in context at PDF page(s) 5, 6, including the cited setup and turn-sequence text. A publisher-authored copy is hosted by the rulebook archive. Local source PDF SHA-256: 794f9d9e573d3a8f34444d6c88a8a1fbe7f76019ec0722212cffcea3d13c737e. Codex editorial review on 2026-09-25 under the owner's 2026-09-22 authorization.",
   "uncertainty": [
     "The rulebook tells players to determine a starting player but does not mandate a selection method."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/great-western-trail-second-edition-en-cover.jpg",
+    "alt": "Great Western Trail Second Edition game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/great-western-trail",
+      "publisher": "Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "eggertspiele / Plan B Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Asmodee product page https://store.asmodee.com/products/great-western-trail supplies original box image https://store.asmodee.com/cdn/shop/products/ES5190.jpg?v=1691445123. Product title and cover identify the same cited edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

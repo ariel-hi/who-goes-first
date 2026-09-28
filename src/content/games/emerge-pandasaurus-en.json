@@ -3,10 +3,10 @@
   "slug": "emerge-pandasaurus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9423599db76990e77dce75522b62afa0a56977d9c03e273e3dc28c28ed7e43e3",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4605c80f681a5980ff79c9c5d861122f1394d88110bf42090854fd187cec0624",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Emerge",
   "aliases": [],
   "editionLabel": "Pandasaurus Games English first-printing rulebook",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-authored first-printing English rulebook PDF page 5 (printed 4), preserved by Tesera. PDF page 10 (printed 9) says to pass the First Player Anchor clockwise at round end. Cover bears the Pandasaurus Games mark. SHA-256: 9a4b528318d6972b41881202817845049b6425439b494bf1579d1540afd253d6. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/emerge-pandasaurus-en-cover.jpg",
+    "alt": "Emerge game box or publisher cover art",
+    "width": 500,
+    "height": 334,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pandasaurusgames.com/products/emerge",
+      "publisher": "Pandasaurus Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Pandasaurus Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://pandasaurusgames.com/products/emerge supplies original product image https://pandasaurusgames.com/cdn/shop/files/PlayTheGame_PandasaurusEmerge_07_ed6d9771-758c-4966-863c-1414760cdcf6.jpg?v=1724268424. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

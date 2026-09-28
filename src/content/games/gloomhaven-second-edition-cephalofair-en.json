@@ -3,10 +3,10 @@
   "slug": "gloomhaven-second-edition-cephalofair-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "6a2d015a36b21bb34e65f408fb46449681e79e64d6d7dff5c7a859d505541248",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d8486ab3cdc8eca3f47139983d1a287e03e501a7861e06da4f468a96b0fbc4f3",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gloomhaven",
   "aliases": [
     "Gloomhaven: Second Edition",
@@ -45,5 +45,22 @@
   "uncertainty": [
     "This record covers the Second Edition rulebook; the original 2017 edition was not reviewed.",
     "The rulebook PDF has no printed year; its file title suggests 2025 but that is not treated as the edition date."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/gloomhaven-second-edition-cephalofair-en-cover.jpg",
+    "alt": "Gloomhaven Second Edition game box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.asmodee.co.uk/products/cph0202-gloomhaven-2nd-edition",
+      "publisher": "Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Cephalofair Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Asmodee product page https://www.asmodee.co.uk/products/cph0202-gloomhaven-2nd-edition supplies original box image https://www.asmodee.co.uk/cdn/shop/files/CPH0202_1.jpg?crop=center&height=1200&v=1775062008&width=1200. Product title and cover identify the same cited edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

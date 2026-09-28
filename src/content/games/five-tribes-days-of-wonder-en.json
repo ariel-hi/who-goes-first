@@ -3,10 +3,10 @@
   "slug": "five-tribes-days-of-wonder-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "58d2a2f7770aa33431b93d07c9157273c401f77d29a02471fe783badca40c150",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8413ba5f7f40edc763a1a5614e6bf48e295769410a4a117f3ab4181da8efd2f1",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Five Tribes: The Djinns of Naqala",
   "aliases": [
     "Five Tribes"
@@ -40,5 +40,22 @@
   "internalEvidence": "Publisher product page links this English manual. Setup randomizes bid markers; the bidding section distinguishes bidding priority from action priority and resolves zero-bid order. Source custody: research/source-files/popular-sep26/five-tribes.pdf; SHA-256 4c2d44130025cbfc8ce52228a7609bd1fda8f7133f193913190d16fbc7d39231. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "This record covers the base game; expansion rules are outside this review."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/five-tribes-days-of-wonder-en-cover.jpg",
+    "alt": "Five Tribes: The Djinns of Naqala game box or publisher cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/five-tribes",
+      "publisher": "Days of Wonder"
+    },
+    "fairUse": {
+      "rightsHolder": "Days of Wonder and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.asmodee.com/products/five-tribes supplies original product image https://store.asmodee.com/cdn/shop/files/DO8401-image1_2000.jpg?v=1705501976. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

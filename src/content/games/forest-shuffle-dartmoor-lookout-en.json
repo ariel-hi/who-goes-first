@@ -3,10 +3,10 @@
   "slug": "forest-shuffle-dartmoor-lookout-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "148ac608f75333d9915d54d4fea4d3669b9e0a1ce64160ad35b19fd4fd1e4b6c",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "1921534803b37d20bd7923b61fe7db1deada6062bade630396c19e33ee9198f8",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Forest Shuffle: Dartmoor",
   "aliases": [],
   "editionLabel": "Lookout Games English Dartmoor rules, 2025",
@@ -37,5 +37,22 @@
   "internalEvidence": "The publisher-hosted English PDF page 2 was rendered and read; step 8 selects the moor visitor. The cave paragraph gives reverse setup order, and page 3 confirms clockwise turns. The cover identifies this stand-alone Dartmoor game, matching inventory BGG 438402. SHA-256: a1b23b77e64c0c4380d6212063dc32960c4134a3a50e60675bf8a32e320b2767. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
   "uncertainty": [
     "The source does not provide a tie or no-visitor procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/forest-shuffle-dartmoor-lookout-en-cover.jpg",
+    "alt": "Forest Shuffle: Dartmoor game box or publisher cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://store.asmodee.com/products/forest-shuffle-dartmoor",
+      "publisher": "Lookout Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lookout Games and any cover-art licensors or artists (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Publisher or official distributor product page https://store.asmodee.com/products/forest-shuffle-dartmoor supplies original product image https://store.asmodee.com/cdn/shop/files/LOG0156-image0_2000.jpg?v=1751982853. Visible title and packaging match the cited edition; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
