@@ -3,10 +3,10 @@
   "slug": "hera-and-zeus-rio-grande-en-2000",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "cc51c42f00c6696e161f09453558c3d0f498b81473fbc23becc39aa40576bd65",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "4eee1ea5524d6c8e7f29b8cf898d366fc779a6e5aabfdb5b53cc92ab1beac834",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hera and Zeus",
   "aliases": [
     "Hera & Zeus"
@@ -39,5 +39,22 @@
   "internalEvidence": "The English Rio Grande Games / Kosmos booklet preserved at Jokerbird was retrieved for inventory BGG identity 638. Printed/PDF page 4 and the publisher credits on page 12 were rendered and visually checked. The first paragraph of Playing the Game states the Greek-restaurant criterion, the Hera fallback if neither player has visited one, and alternating turns. Page 12 credits Kosmos ©2000 and Rio Grande Games. Mirror PDF SHA-256: 4db751de5a26afd08e6097103c084244d2839bc097ae7944febbffdd5c6d01b7. Owner-authorized Codex editorial review, 2026-09-25.",
   "uncertainty": [
     "The booklet gives no tie-break if both players visited a Greek restaurant most recently together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hera-and-zeus-rio-grande-en-2000-cover.jpg",
+    "alt": "Hera and Zeus 2000 English Rio Grande Games and Kosmos box",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.nobleknight.com/P/1687038074/Hera-and-Zeus",
+      "publisher": "Noble Knight Games retailer, Rio Grande Games / Kosmos box artwork"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games, Kosmos, and cover artist Franz Vohwinkel (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the 2000 English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Noble Knight Games listing identifies the 2000 Rio Grande Games RGG158 box and supplies image https://image.nobleknight.com/2/jpg500/25237780021g.jpg. The pictured English title and Rio Grande/Kosmos logos match the approved 2000 English rules record; BoardGameGeek English-edition entry independently identifies the same publisher, year, and artist at https://boardgamegeek.com/boardgameversion/25890/english-edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
