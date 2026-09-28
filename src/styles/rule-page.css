@@ -42,6 +42,12 @@
 .game-article .sharing-actions{margin:14px 0 4px}
 .game-article .fallback .primary{border-radius:999px;min-height:44px;max-width:260px;font-size:14px}
 .buy-game{margin-top:16px}
+.gear-links{margin-top:12px}
+.gear-links h2{margin:0 0 8px;font-size:13px;color:var(--muted);font-weight:600}
+.gear-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;padding:0;list-style:none;margin:0}
+.gear-grid a{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);text-decoration:none;font-size:13px;font-weight:600}
+.gear-grid a:hover{background:var(--soft)}
+.gear-grid small{font-weight:400;color:var(--muted)}
 .rule-hero-photo{margin:20px 0 0}
 .rule-hero-photo img{display:block;width:100%;height:auto;border-radius:16px}
 .rule-links a,.game-article .similar-rules a{display:flex;flex-direction:row;align-items:center;text-decoration:none}
