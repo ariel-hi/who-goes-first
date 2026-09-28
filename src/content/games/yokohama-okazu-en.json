@@ -3,10 +3,10 @@
   "slug": "yokohama-okazu-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "af9fe97348a73ee38555c356ea08599f0766a7c6e29c10b99e0ecb978839820e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "ac7fd6a6730bbc5c14bfa11102ff931f73d2d59e410506e344f6bca49362f4f4",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Yokohama",
   "aliases": [],
   "editionLabel": "OKAZU Brand English rules",
@@ -40,5 +40,22 @@
   "internalEvidence": "Rendered page 3 gives the Yokohama-visit criterion and flexible fallback; page 4 gives initial money. Page 16 credits OKAZU Brand. Area boards, President pawns and trading-house sites match inventory BGG 196340. SHA-256: 4a6377da566e7d1e5c2b26e9981aef48fbc0eff0ac47f959fa6db5e80aa7519f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The fallback is intentionally open-ended; the rules do not prescribe a tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/yokohama-okazu-en-cover.jpg",
+    "alt": "Yokohama original OKAZU Brand game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://okazubrand.up.seesaa.net/image/yokohama02.png",
+      "publisher": "OKAZU Brand"
+    },
+    "fairUse": {
+      "rightsHolder": "OKAZU Brand",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official OKAZU Brand product page: https://okazubrand.up.seesaa.net/page/yokohama.html. Exact publisher-hosted original package image: https://okazubrand.up.seesaa.net/image/yokohama02.png. The product page explicitly separates its 2021 revised box from the earlier 2016 original section containing this image; the artwork was visually reviewed against the article edition (OKAZU Brand English rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
