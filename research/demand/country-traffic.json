@@ -1,0 +1,31 @@
+{
+  "status": "available",
+  "periodStart": "2026-08-29",
+  "periodEnd": "2026-09-27",
+  "source": "Google Analytics 4 Data API (countryId; sessions and screenPageViews)",
+  "totalSessions": 1748,
+  "totalScreenPageViews": 2957,
+  "namedJourneySessions": 1746,
+  "raptiveCountrySessions": 1746,
+  "raptiveCountryScreenPageViews": 2955,
+  "unattributedSessions": 0,
+  "unattributedScreenPageViews": 0,
+  "reportRowCount": 2,
+  "returnedRows": 2,
+  "subjectToThresholding": false,
+  "dataLossFromOtherRow": false,
+  "dataTruncation": false,
+  "topCountries": [
+    {
+      "countryId": "US",
+      "sessions": 1746,
+      "screenPageViews": 2955
+    },
+    {
+      "countryId": "IN",
+      "sessions": 2,
+      "screenPageViews": 2
+    }
+  ],
+  "generatedAt": "2026-09-28T17:59:25.831Z"
+}
