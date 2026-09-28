@@ -3,10 +3,10 @@
   "slug": "chef-alfredo-queen-games-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6ec70e47f12c0ecf6e0c6b60ce19d7fb481d89752d23d71921f629baaedbb1b4",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8ce15b663e5d7b3bb16d18818429283d2c7abd88e9b6411097e33ea8a9672bf1",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Chef Alfredo",
   "aliases": [],
   "editionLabel": "Queen Games English rules, copyright 2015",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/chef-alfredo-queen-games-en-cover.jpg",
+    "alt": "Queen Kids Chef Alfredo box with smiling chef and cooking pots",
+    "width": 485,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/q/jpg1500/qng50041.jpg",
+      "publisher": "Noble Knight Games listing for Queen Games 2015 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Queen Games and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147650115/Chef-Alfredo. Seller identifies Queen Games 2015 part QNG50041; box bears Queen Kids logo. Original image URL: https://image.nobleknight.com/q/jpg1500/qng50041.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

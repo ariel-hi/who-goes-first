@@ -3,10 +3,10 @@
   "slug": "castell-renegade-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "742b9b8e3b2a6c61822850686201ac40dbcd40cb0fd4b4dbb57eac492e946cc3",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "a3aedcfb6299bd76576b8812835637ae80e0e18e1ad62a0181df5b24b5e59fa7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Castell",
   "aliases": [],
   "editionLabel": "Renegade Game Studios English rulebook",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered pages 5 and 6 (printed pages 4 and 5) of the Renegade-authored English rulebook. Final Steps assigns the marker to the most recent visitor to Catalonia; Round Structure defines clockwise turns and leftward marker transfer. A university-hosted copy preserves the publisher rulebook. SHA-256: 7efc514fa2d6e784d30713542bffabd9f03a23ceb907ea4391025d5747dcc2cc. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the cited starter instruction and edition attribution.",
   "uncertainty": [
     "The rulebook gives no tie-break for equally recent visits to Catalonia."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/castell-renegade-en-cover.jpg",
+    "alt": "Renegade Castell box with a human tower at a festival",
+    "width": 439,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://allsystemsgo.games/cdn/shop/files/castell-board-game.jpg?v=1710781652",
+      "publisher": "All Systems Go Games listing for Renegade Castell"
+    },
+    "fairUse": {
+      "rightsHolder": "Renegade Game Studios and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://allsystemsgo.games/products/castell. Retailer identifies Renegade edition; photographed box bears its logo. Original image URL: https://allsystemsgo.games/cdn/shop/files/castell-board-game.jpg?v=1710781652",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

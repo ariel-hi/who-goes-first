@@ -3,10 +3,10 @@
   "slug": "dragon-farkle-zman-en-2015",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7e6301dfdda9c0403b90958906043478d6647cfaa3c4a175c8faead3f969ce64",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "c628d5c0eb5120317d46a08d8fac343057517d4b3178f11ccf8c84b2dbbccf59",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dragon Farkle",
   "aliases": [],
   "editionLabel": "Z-Man Games English rules (2015)",
@@ -38,5 +38,22 @@
   "internalEvidence": "The Z-Man Games English booklet preserved by the LINCC library system was retrieved for inventory BGG identity 128174. Printed/PDF page 3 and the publisher credits on page 11 were rendered and visually checked. Page 3 selects the person who brought the most snacks, says play goes clockwise, and assigns that person the opening card deal. Page 11 identifies Z-Man Games and F2Z Entertainment ©2015. Mirror PDF SHA-256: ae211fe7db4c934764842b945a1fe02f75ec99c39e46af02096fc2248bf5d05f. Owner-authorized Codex editorial review, 2026-09-25.",
   "uncertainty": [
     "No tie-break or fallback is stated if snack quantities are equal or nobody brought snacks."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/dragon-farkle-zman-en-2015-cover.jpg",
+    "alt": "Z-Man Dragon Farkle box with gray dragon around the title",
+    "width": 333,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/z/jpg1500/zmg71510.jpg",
+      "publisher": "Noble Knight Games listing for Z-Man Games 2015 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Z-Man Games and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147594148/Dragon-Farkle. Seller identifies Z-Man 2015 part ZMGZM7510; box bears the Z-Man logo. Original image URL: https://image.nobleknight.com/z/jpg1500/zmg71510.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

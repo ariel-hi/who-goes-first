@@ -3,10 +3,10 @@
   "slug": "costa-rica-mayfair-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d3710792b7a1a0777a4f12a62f3bdfc38188712717edf06f75bef138ec9a0bb9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "fb427bc270d4f2ae0a2ed7c12851ccbbc9fb1ac79b4e138a407ac66100069b10",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Costa Rica",
   "aliases": [],
   "editionLabel": "Mayfair Games 2016 English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "The publisher-hosted Mayfair English PDF was indexed in the web research source; the Setup text identifies the latest rainforest visitor (Costa Rica wins) or random selection using one explorer group. Direct retrieval was denied by the publisher CDN on 2026-09-23, so no rendered page or file hash was available. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, edition, and stated alternatives.",
   "uncertainty": [
     "The rules do not prescribe a separate tie-break if several players visited the same rainforest at the same time; the official random method remains available."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/costa-rica-mayfair-en-cover.jpg",
+    "alt": "Mayfair Costa Rica box with rainforest explorers and toucans",
+    "width": 348,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/m/jpg1500/mfg4140.jpg",
+      "publisher": "Noble Knight Games listing for Mayfair Games 2016 edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Mayfair Games and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2147634157/Costa-Rica. Seller identifies Mayfair 2016 part MFG4140; box bears the Mayfair crest. Original image URL: https://image.nobleknight.com/m/jpg1500/mfg4140.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

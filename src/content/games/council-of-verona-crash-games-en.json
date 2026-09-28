@@ -3,10 +3,10 @@
   "slug": "council-of-verona-crash-games-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "43f537c3f925919767acdf52dbbe6337e2e016b497556ed80eedd47d672f491e",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f52bd7764f1410f552e9c18e0f5e04d8770a3308189210a775e6df8e4ad739f5",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Council of Verona",
   "aliases": [],
   "editionLabel": "Crash Games 2013 English rulebook",
@@ -41,5 +41,22 @@
   "internalEvidence": "Rendered PDF page 2 (printed page 2) of the original Crash Games English rulebook preserved by 1jour-1jeu and checked text on pages 3, 5 and 11. Setup names the most recent balcony visitor; the turn sequence specifies clockwise play, and Full Game says each player is first and last once. SHA-256: 0f911750e240cd7ead0fae48878b273bbcd7c0416770c35678570a2b49c3063f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, edition, and stated alternatives.",
   "uncertainty": [
     "No tie-break is provided for equal balcony recency."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/council-of-verona-crash-games-en-cover.jpg",
+    "alt": "Original Crash Games Council of Verona box with Romeo and Juliet figures",
+    "width": 425,
+    "height": 320,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/c/jpg500/councilofveronacollectiona.jpg",
+      "publisher": "Noble Knight Games listing for Crash Games first-edition collection"
+    },
+    "fairUse": {
+      "rightsHolder": "Crash Games and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2148047239/Council-of-Verona-1st-Edition-w-The-Poison-Expansion. Seller identifies a 2013 first-edition base game with separate Poison expansion; its product photo shows the original Crash Games base box, not the expansion. Original image URL: https://image.nobleknight.com/c/jpg500/councilofveronacollectiona.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
