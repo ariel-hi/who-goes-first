@@ -3,10 +3,10 @@
   "slug": "demon-worker-group-sne-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6f806d8bce86b600ebc732f8971f731d7677aa438b193c7f951cdad990303cf3",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "757d2288b2bbd67e6fd2c06b6bd9bc35535df927cae856873759b02d0072c070",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Demon Worker",
   "aliases": [],
   "editionLabel": "Group SNE English rulebook",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Rendered page 2 of the image-only Group SNE English rulebook preserved by 1jour-1jeu. Game Setup step 8 gives the recent-evil criterion, a random alternative, and clockwise assignment of Turn Order cards. SHA-256: f0e6af3f4e152b709d4c42ce6be6e0f1673d72a0364641c377ad1f91c391861f. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the starter instruction, official alternative and turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/demon-worker-group-sne-en-cover.jpg",
+    "alt": "Original Group SNE Demon Worker Japanese box with cartoon demons",
+    "width": 361,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.groupsne.co.jp/news/img/gm2016a/demon_3D_s.jpg",
+      "publisher": "Group SNE official original Demon Worker product page"
+    },
+    "fairUse": {
+      "rightsHolder": "Group SNE, cosaic and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.groupsne.co.jp/products/bg/demon/demon_2P.html. The official page identifies the December 2016 edition. Box text is Japanese; the cited English translation covers that original Group SNE game. Original image URL: https://www.groupsne.co.jp/news/img/gm2016a/demon_3D_s.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

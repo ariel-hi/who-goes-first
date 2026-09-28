@@ -3,10 +3,10 @@
   "slug": "diamant-iello-revised-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "829c3a5d4209f36c6b35568fbb2e5d024ccf4708c457a29710cee80be841f4ce",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d6cb8f54a69b3c316c5581a451c392d933072f65c16123359df44917a77385e0",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Diamant",
   "aliases": [],
   "editionLabel": "IELLO English revised edition",
@@ -37,5 +37,22 @@
   "internalEvidence": "Official IELLO English revised manual with idol cover and Continue/Return cards. Rendered5 establishes shared expedition reveal then Player Decisions;6 explicitly simultaneous decision-card reveal. No oldest or youngest criterion borrowed from another edition. Source custody: research/source-files/popular-sep26-06/diamant.pdf; SHA-256 ac855646c15bcb86b7b6f4cbebaa417857d8a54ef388477fedbcdf623f9a1d84. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The manual does not designate a first player to reveal the shared Expedition cards."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/diamant-iello-revised-en-cover.jpg",
+    "alt": "IELLO 2016 Diamant box with explorers in a cave",
+    "width": 451,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/i/jpg1500/iellodiamant.jpg",
+      "publisher": "Noble Knight Games listing for IELLO 2016 Diamant"
+    },
+    "fairUse": {
+      "rightsHolder": "IELLO and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.nobleknight.com/P/2148104509/. Seller identifies the 2016 IELLO edition, part IEL51332; this is the cave explorers cover used before the later stone idol reprint. Original image URL: https://image.nobleknight.com/i/jpg1500/iellodiamant.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

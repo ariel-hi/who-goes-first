@@ -3,8 +3,8 @@
   "slug": "draw-bot-jyde-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "1b608b4e50833cb22b52b81e734f7ba1c1532a9c117fc855e53cb25c5c790443",
+  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "31e39302890f8b3c79c8ef4e3ec8cf889c32d529988d2a58ac3d1ee3b0983425",
   "publishedAt": "2026-09-24",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Draw Bot",
@@ -40,5 +40,22 @@
   "internalEvidence": "Rendered PDF page 1, printed page 2, names the screwdriver user as Workshop Manager; PDF page 2, printed page 4, says the player to that manager’s left takes the role at the beginning of each turn before rolling. The same booklet says everyone plays simultaneously and credits JyDe Éditions ©2020. Factory Sheets, DRAW and BOT cards and Manufacturing dice match inventory BGG 306673. SHA-256: 4d960df50a68dc61393ef6c80c8c582244c24e4e601b57fa7a2ad1b4aca73214. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The turn-opening wording appears to shift the role immediately after setup; the answer follows that literal sequence."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/draw-bot-jyde-2020-en-cover.jpg",
+    "alt": "JyDe Draw Bot box with friendly cartoon robot",
+    "width": 462,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.vindjeu.eu/prd/wp-content/uploads/2021/07/draw-bot-p-image-75835-grande.jpg",
+      "publisher": "Vindjeu review of JyDe Editions 2020 Draw Bot"
+    },
+    "fairUse": {
+      "rightsHolder": "JyDe Editions and credited artists",
+      "rationale": "Reduced game packaging used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.vindjeu.eu/prd/2021/08/09/draw-bot/. The review identifies JyDe Editions 2020; photographed box bears its logo and matches the English 2020 rules. Original image URL: https://www.vindjeu.eu/prd/wp-content/uploads/2021/07/draw-bot-p-image-75835-grande.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
