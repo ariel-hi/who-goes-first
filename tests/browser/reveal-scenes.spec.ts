@@ -23,16 +23,33 @@ async function openMethod(page: Page, path: string) {
   await expect(page.getByRole('button', { name: 'Pick a player' })).toBeEnabled();
 }
 
-test('dice placeholders fade before the final pips and the scene is decorative to assistive tech', async ({ page }) => {
+test('dice show pips while rolling without a loading ring and stay decorative to assistive tech', async ({ page }) => {
   await openMethod(page, 'dice');
   await page.getByRole('button', { name: 'Pick a player' }).click();
   await expect(page.locator('.dice-reveal')).toBeVisible();
   await expect(page.locator('.reveal-stage')).toHaveAttribute('aria-hidden', 'true');
-  const animation = await page.locator('.die').first().evaluate(element => getComputedStyle(element, '::after').animationName);
-  expect(animation).toBe('hide-placeholder');
+  const rolling = await page.locator('.die').first().evaluate(element => ({
+    ring: getComputedStyle(element, '::after').content,
+    pips: getComputedStyle(element.querySelector('svg')!).opacity,
+  }));
+  expect(rolling).toEqual({ ring: 'none', pips: '1' });
   await expect(page.locator('.winner-announcement')).toContainText('Seat 2 goes first');
-  const opacity = await page.locator('.die').first().evaluate(element => getComputedStyle(element, '::after').opacity);
-  expect(opacity).toBe('0');
+  expect(await page.locator('.die').first().evaluate(element => getComputedStyle(element, '::after').content)).toBe('none');
+});
+
+test('dice leave more room when the group reaches five players', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await openMethod(page, 'dice');
+  const size = () => page.locator('.dice-reveal .die').first().evaluate(element => element.getBoundingClientRect().width);
+  expect(await size()).toBe(38);
+  await page.getByLabel('Player count', { exact: true }).fill('5');
+  await page.getByLabel('Player count', { exact: true }).blur();
+  await expect(page.locator('.dice-reveal')).toHaveAttribute('data-five', 'true');
+  expect(await size()).toBe(36);
+  await page.getByLabel('Player count', { exact: true }).fill('12');
+  await page.getByLabel('Player count', { exact: true }).blur();
+  expect(await size()).toBe(30);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
 for (const method of methods) test(`${method.label} keeps the scene after completion and replay`, async ({ page }) => {
@@ -72,7 +89,10 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
           && onlyProperty('opacity') && frames.every(frame => typeof frame.opacity === 'string' && Number(frame.opacity) >= .27 && Number(frame.opacity) <= .65);
       }
       if (animation.animationName === 'surface-shimmer') {
-        if (!(target instanceof HTMLElement) || !target.matches('.table-reveal[data-settled="true"] .reveal-chosen :is(.card-front,.block-stack i>span,.match-wood,.match-head,.die,.coin-face,.shell-pearl)') || effect.pseudoElement !== '::before') return false;
+        if (!(target instanceof HTMLElement)) return false;
+        const dieFace = target.matches('.dice-reveal[data-settled="true"] .reveal-chosen .die-face') && effect.pseudoElement === '::after';
+        const otherSurface = target.matches('.table-reveal[data-settled="true"] .reveal-chosen :is(.card-front,.block-stack i>span,.match-wood,.match-head,.coin-face,.shell-pearl)') && effect.pseudoElement === '::before';
+        if (!dieFace && !otherSurface) return false;
         return frames.every(frame => {
           if (!Object.keys(frame).every(key => ['offset', 'computedOffset', 'easing', 'composite', 'backgroundPosition', 'backgroundPositionX', 'backgroundPositionY'].includes(key))) return false;
           if (typeof frame.backgroundPosition === 'string') return /^(?:100%|0(?:%|px)?) 0(?:%|px)?$/.test(frame.backgroundPosition);
@@ -99,11 +119,12 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
   expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).every(animation => animation.effect?.getTiming().iterations !== Infinity))).toBe(true);
   await expect.poll(() => scene.evaluate(element => element.getAnimations({ subtree: true }).filter(animation => animation.playState === 'running').length), { timeout: 5000 }).toBe(0);
   if (method.path !== 'spinner' && method.path !== 'balloon') {
-    const surfaces = ({ cards: '.card-front', towers: '.block-stack i>span', straws: '.match-wood,.match-head', dice: '.die', coin: '.coin-face', shells: '.shell-pearl' } as Record<string, string>)[method.path]!;
-    const reflections = await scene.locator(`.reveal-chosen :is(${surfaces})`).evaluateAll(elements => elements.map(element => getComputedStyle(element, '::before').animationName));
+    const surfaces = ({ cards: '.card-front', towers: '.block-stack i>span', straws: '.match-wood,.match-head', dice: '.die-face', coin: '.coin-face', shells: '.shell-pearl' } as Record<string, string>)[method.path]!;
+    const pseudo = method.path === 'dice' ? '::after' : '::before';
+    const reflections = await scene.locator(`.reveal-chosen :is(${surfaces})`).evaluateAll((elements, pseudo) => elements.map(element => getComputedStyle(element, pseudo).animationName), pseudo);
     expect(reflections.length).toBeGreaterThan(0);
     expect(reflections.every(name => name === 'surface-shimmer')).toBe(true);
-    expect(await scene.locator(`.reveal-player:not(.reveal-chosen) :is(${surfaces})`).evaluateAll(elements => elements.every(element => getComputedStyle(element, '::before').animationName === 'none'))).toBe(true);
+    expect(await scene.locator(`.reveal-player:not(.reveal-chosen) :is(${surfaces})`).evaluateAll((elements, pseudo) => elements.every(element => getComputedStyle(element, pseudo).animationName === 'none'), pseudo)).toBe(true);
   }
   await expect(page.locator('.roster')).toBeVisible();
   await page.getByRole('button', { name: 'Pick again' }).click();
