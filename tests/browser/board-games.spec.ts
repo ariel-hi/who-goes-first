@@ -385,6 +385,16 @@ test('simultaneous openings do not offer a first-player picker or tie-break', as
   }
 });
 
+test('house fallbacks link to the picker only when they propose a random choice', async ({ page }) => {
+  for (const slug of ['captain-sonar-matagot-second-en', 'roll-player-thunderworks-en']) {
+    await page.goto(`/games/${slug}/`);
+    await expect(page.locator('.fallback')).toBeVisible();
+    await expect(page.locator('.fallback a[href="/"]')).toHaveCount(0);
+  }
+  await page.goto('/games/azul-2018-en/');
+  await expect(page.locator('.fallback a[href="/"]')).toHaveText('Pick a player at random');
+});
+
 test('King of New York and Cryptid show the exact source opening and edition', async ({ page }) => {
   await page.goto('/games/king-of-new-york-iello-2014-en/');
   await expect(page.locator('.rule-answer')).toContainText('six black dice and both green dice');
