@@ -8,6 +8,10 @@
 
 Demand only sets priority. It never substitutes for a primary source, and every rule still goes through the normal review in `CONTENT_REVIEW.md`. `weekly-report.md` is the latest human-readable summary.
 
+## Search indexing diagnostics
+
+The weekly job writes `indexing.json` from Search Console's Sitemaps and URL Inspection APIs. It checks the submitted sitemap list and six named URLs: the home page, two catalog hubs, and three established rule pages. Inspection describes Google's indexed version of each URL; it is **not** a live-page test or a site-wide indexed-page count. A missing inspection or API error is recorded as unavailable for that run instead of preserving stale data. Use the sample to investigate specific discovery, crawling, or exclusion problems before changing the public site.
+
 ## Country traffic for revenue planning
 
 The weekly job also writes `country-traffic.json` for the same 30-day GA4 window as `traffic-metrics.json`. It requests `countryId`, `sessions`, and `screenPageViews` and records whether Google reports thresholding, an `(other)` row, or truncation. If the country request fails, the file says `unavailable` for the current window rather than retaining a stale prior snapshot.

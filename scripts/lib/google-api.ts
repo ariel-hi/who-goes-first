@@ -21,6 +21,40 @@ async function postJson<T>(url: string, token: string, body: unknown): Promise<T
   return await response.json() as T;
 }
 
+async function getJson<T>(url: string, token: string): Promise<T> {
+  const response = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
+  if (!response.ok) throw new Error(`${new URL(url).host} request failed (${response.status}): ${await response.text()}`);
+  return await response.json() as T;
+}
+
+export type SearchSitemap = {
+  path: string; lastSubmitted?: string; lastDownloaded?: string;
+  isPending?: boolean; isSitemapsIndex?: boolean; errors?: string | number; warnings?: string | number;
+  contents?: Array<{ type?: string; submitted?: string | number }>;
+};
+
+/** Search Console's known submitted sitemaps; indexed URL counts are deprecated by Google. */
+export async function searchSitemaps(token: string, property: string): Promise<SearchSitemap[]> {
+  const report = await getJson<{ sitemap?: SearchSitemap[] }>(
+    `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(property)}/sitemaps`, token);
+  return report.sitemap ?? [];
+}
+
+export type IndexStatus = {
+  verdict?: string; coverageState?: string; robotsTxtState?: string; indexingState?: string;
+  pageFetchState?: string; lastCrawlTime?: string; googleCanonical?: string; userCanonical?: string;
+  sitemap?: string[];
+};
+
+/** Status of Google's indexed version; this is not a live URL test. */
+export async function inspectIndexedUrl(token: string, property: string, url: string): Promise<IndexStatus> {
+  const report = await postJson<{ inspectionResult?: { indexStatusResult?: IndexStatus } }>(
+    'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', token,
+    { inspectionUrl: url, siteUrl: property });
+  if (!report.inspectionResult?.indexStatusResult) throw new Error('Search Console URL inspection returned no index status');
+  return report.inspectionResult.indexStatusResult;
+}
+
 export type SearchRow = { keys: string[]; clicks: number; impressions: number; ctr: number; position: number };
 /** Search Console rows, paginated past the 25,000-row page size. */
 export async function searchAnalytics(token: string, property: string, startDate: string, endDate: string, dimensions: string[]): Promise<SearchRow[]> {

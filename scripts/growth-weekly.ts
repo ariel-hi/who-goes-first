@@ -6,6 +6,7 @@ import { rankDemand } from './lib/demand';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
 import { ga4TrafficMetrics } from './lib/growth-report';
 import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCountryTraffic } from './lib/country-traffic';
+import { indexingReport, indexingSnapshot } from './lib/indexing-diagnostics';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
@@ -34,6 +35,7 @@ const games = getBoardGames().map(game => ({ identityId: game.identityId, name: 
 const demand = rankDemand(queries, pages, games, origin);
 const sum = (rows: SearchRow[]) => rows.reduce((total, row) => ({ clicks: total.clicks + row.clicks, impressions: total.impressions + row.impressions }), { clicks: 0, impressions: 0 });
 const weekNow = sum(thisWeek); const weekBefore = sum(lastWeek);
+const indexing = await indexingSnapshot(token, property, origin);
 let traffic: AnalyticsTotals | undefined;
 let country: CountryTrafficSummary | undefined;
 const trafficWindow = { start: daysAgo(30), end: daysAgo(1) };
@@ -54,6 +56,7 @@ const countrySnapshot = country ?? {
   reason: !gaProperty ? 'GA4 property not configured' : !traffic ? 'GA4 totals unavailable' : 'GA4 country report unavailable',
 } satisfies UnavailableCountryTraffic;
 writeFileSync('research/demand/country-traffic.json', `${JSON.stringify({ ...countrySnapshot, generatedAt: new Date().toISOString() }, null, 2)}\n`);
+writeFileSync('research/demand/indexing.json', `${JSON.stringify(indexing, null, 2)}\n`);
 writeFileSync('research/demand/search-console.json', `${JSON.stringify({
   generatedAt: new Date().toISOString(), property, window: window28,
   note: 'Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.',
@@ -71,6 +74,7 @@ const report = `# Weekly growth report — ${new Date().toISOString().slice(0, 1
 - Impressions: **${weekNow.impressions.toLocaleString('en')}** (${change(weekNow.impressions, weekBefore.impressions)})
 - Published rules: ${getCatalog().length}
 
+${indexingReport(indexing)}
 ${traffic ? `## Traffic (GA4, last 30 days)
 - Sessions: **${traffic.sessions.toLocaleString('en')}** · Screen/page views: **${traffic.screenPageViews.toLocaleString('en')}** · Users: ${traffic.totalUsers.toLocaleString('en')}
 - Screen/page views per session: ${traffic.sessions ? (traffic.screenPageViews / traffic.sessions).toFixed(2) : '—'}
