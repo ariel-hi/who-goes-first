@@ -3,10 +3,10 @@
   "slug": "seventh-continent-serious-poulp-classic-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "307701b75c5b627608aa9425c55c75d4c161ae2e125a2d3be5a3e8c722fe3b56",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "66a5e5be752839e35fe049bab759ef5eb4c8a40189e41d4dd60aaa37cbdd1903",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The 7th Continent",
   "aliases": [],
   "editionLabel": "Serious Poulp English Classic edition",
@@ -35,5 +35,22 @@
   "internalEvidence": "Official SeriousPoulp downloads page links Classic English manual. Rendered10 verifies collective choice, repeat turns by agreement and fallback only relative to previous active player. Distinguish voluntary active-player choice from simultaneous play. Source custody: research/source-files/popular-sep26-09/continent.pdf; SHA-256 8312987925995c99a8ebf5d2ff6857c0454c4896cde621cf7895ed0eadb71f1e. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The clockwise fallback refers to a previous active player, so it does not settle a disagreement before the first turn."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/seventh-continent-serious-poulp-classic-en-cover.jpg",
+    "alt": "The 7th Continent official rulebook cover",
+    "width": 596,
+    "height": 596,
+    "presentation": "cover",
+    "source": {
+      "url": "https://7thcontinent.seriouspoulp.com/documents/t7c/The7thContinent_Classic_rulebook_EN_final.pdf",
+      "publisher": "Serious Poulp"
+    },
+    "fairUse": {
+      "rightsHolder": "Serious Poulp",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of publisher-hosted rulebook: https://7thcontinent.seriouspoulp.com/documents/t7c/The7thContinent_Classic_rulebook_EN_final.pdf. Publisher context: https://7thcontinent.seriouspoulp.com/. The identifiable cover title and artwork were visually reviewed against the article edition (Serious Poulp English Classic edition).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

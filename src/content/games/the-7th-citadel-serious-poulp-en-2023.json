@@ -3,10 +3,10 @@
   "slug": "the-7th-citadel-serious-poulp-en-2023",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "79bb40153d801bc0dc8359775de95b2e3351ac7ce9008a42397bca638c02b3f9",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "2a7fa121edcf699469411a2c5b5a758fc5adf24a04b924ff1f876f0ae6d5e7fa",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The 7th Citadel",
   "aliases": [],
   "editionLabel": "Serious Poulp base · ©2023 · Errata 2.0 (English)",
@@ -66,5 +66,22 @@
     "The introductory scenario booklet was not independently retrieved. This answer summarizes the base turn sequence, not every scenario’s opening instructions.",
     "No first-turn disagreement procedure is stated on p10; the later-turn left-neighbor fallback cannot be applied before there has been an active player.",
     "The book has no numbered version; no expansion or other-printing rule transfer is approved."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-7th-citadel-serious-poulp-en-2023-cover.jpg",
+    "alt": "The 7th Citadel official rulebook cover",
+    "width": 425,
+    "height": 600,
+    "presentation": "cover",
+    "source": {
+      "url": "https://media.seriouspoulp.com/rules/The7thCitadel_rulebook_EN.pdf",
+      "publisher": "Serious Poulp"
+    },
+    "fairUse": {
+      "rightsHolder": "Serious Poulp",
+      "rationale": "Reduced-size official rulebook cover identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official publisher source, and does not substitute for the game or full rulebook. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "First page of publisher-hosted rulebook: https://media.seriouspoulp.com/rules/The7thCitadel_rulebook_EN.pdf. Publisher context: https://7thcitadel.seriouspoulp.com/en/resources/downloads. The identifiable cover title and artwork were visually reviewed against the article edition (Serious Poulp base · ©2023 · Errata 2.0 (English)).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

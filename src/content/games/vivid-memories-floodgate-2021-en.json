@@ -3,10 +3,10 @@
   "slug": "vivid-memories-floodgate-2021-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f9c2b9205f18c1f990b7a4a7c4d66aeadf9fe50b3dcde74495ecc1c2a80eb796",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "07c21ba46556aa2d33b812d1876bf356e879b83436cfe2ac7ef10a7af78848fd",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Vivid Memories",
   "aliases": [],
   "editionLabel": "Floodgate Games English rules, 2021",
@@ -40,5 +40,22 @@
   "internalEvidence": "Rendered page 2 gives the earliest-positive-memory criterion and random option; page 3 gives the first turn. Page 8 gives the later-round handoff and Floodgate ©2021 credits. Memory fragments and moment tiles match inventory BGG 316090. SHA-256: 8b08daad916b42e26572ed21896e875b8cf6d9a870fb17b61a0aaae6917b1cb4. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for equally early recalled memories."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/vivid-memories-floodgate-2021-en-cover.jpg",
+    "alt": "Vivid Memories game box cover",
+    "width": 424,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://floodgate.games/cdn/shop/products/VividBox_right_3D.png?v=1638569241&width=1200",
+      "publisher": "Floodgate Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Floodgate Games",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher/distributor product page: https://floodgate.games/products/vivid. Exact publisher-hosted box image: https://floodgate.games/cdn/shop/products/VividBox_right_3D.png?v=1638569241&width=1200. The box and game identity were visually reviewed against the article edition (Floodgate Games English rules, 2021).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
