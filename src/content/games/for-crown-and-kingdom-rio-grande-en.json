@@ -3,10 +3,10 @@
   "slug": "for-crown-and-kingdom-rio-grande-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6d06a715baa7e343ae85a72e273331fc0e1d87455044751b207d6474f6c5e857",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2aa9e242868a0ad056cc81f4e4d0a26ae678d1399d449fce43c843a5074561f9",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "For Crown & Kingdom",
   "aliases": [
     "For Crown and Kingdom"
@@ -38,5 +38,22 @@
   "internalEvidence": "Publisher-hosted English rulebook page 5 was rendered and read. It explicitly keeps the same starter for initial character placement and regular turns. The title, publisher and designer match inventory BGG 77011. SHA-256: 23d9365d91dac0da2f7d8083109e4c6b43f7a3aea0afc93d8010f2b45379a988. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rulebook.",
   "uncertainty": [
     "No tie procedure is specified for a simultaneous trumpet sound and announcement."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/for-crown-and-kingdom-rio-grande-en-cover.jpg",
+    "alt": "For Crown & Kingdom English Rio Grande Games cover",
+    "width": 346,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.boardgamebliss.com/products/for-crown-kingdom",
+      "publisher": "Board Game Bliss retailer, Rio Grande Games cover artwork"
+    },
+    "fairUse": {
+      "rightsHolder": "Rio Grande Games and cover artist Kelly McClellan (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product cover identifies the 2016 English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Board Game Bliss product image https://www.boardgamebliss.com/cdn/shop/products/For_Crown_Kingdom.jpg?v=1578609047&width=900 shows the Dave Mansell For Crown & Kingdom art. Its Rio Grande Games SKU RIO522 matches retailer listings and the approved publisher-hosted English 2015/2016 rules at https://www.riograndegames.com/wp-content/uploads/2015/07/For-Crown-and-Kingdom-Rules.pdf.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
