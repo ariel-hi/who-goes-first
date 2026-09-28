@@ -3,10 +3,10 @@
   "slug": "trio-cocktail-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "a99bc57e30419443edcf4a0bdeb148429924c39d4de22a78499feab52ce9aad5",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "d211366f33563e2171b3a8ac8d2cde2b1d087c0662a57990dd0af517623299d9",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Trio",
   "aliases": [],
   "editionLabel": "Cocktail Games English folding rules",
@@ -41,5 +41,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/trio-cocktail-en-cover.jpg",
+    "alt": "Trio game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.cocktailgames.com/wp-content/uploads/2022/11/Trio_3D.png",
+      "publisher": "Cocktail Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Cocktail Games",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Cocktail Games base Trio box and English rules. Official publisher product page: https://www.cocktailgames.com/jeu/trio/. Exact publisher-hosted image: https://www.cocktailgames.com/wp-content/uploads/2022/11/Trio_3D.png. The box and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

@@ -3,10 +3,10 @@
   "slug": "sound-box-horrible-guild-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e50a5f71e0d073aeabfcc4a9b15ece01bf62b4945ea6cd7bc03a1ece5c2d8f44",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "cb1edfb48f5200d83f9ae879f30e4487ee1a369f9dd696c3bade4a7eba22a7f1",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sound Box",
   "aliases": [],
   "editionLabel": "Horrible Guild English rules",
@@ -39,5 +39,22 @@
   "internalEvidence": "Rendered PDF/printed page 2 gives the radio-song criterion for the Guesser; pages 3–4 specify the Recorder and simultaneous sounds. Page 8 credits Horrible Guild; Sound cards and Soundtrack match inventory BGG 302876. SHA-256: 7589ba1d4e2872a342b1794dd68fb6306b7bf6604006f9e69d99cb53afffd2aa. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The published criterion assigns a role rather than a sequential first action."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/sound-box-horrible-guild-en-cover.jpg",
+    "alt": "Sound Box game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://horribleguild.com/eu/wp-content/uploads/2021/11/SOB_WEB_Core_Box3D-600x600.png",
+      "publisher": "Horrible Guild"
+    },
+    "fairUse": {
+      "rightsHolder": "Horrible Guild",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Horrible Guild English Sound Box core game. Official publisher product page: https://horribleguild.com/eu/product/sound-box/. Exact publisher-hosted image: https://horribleguild.com/eu/wp-content/uploads/2021/11/SOB_WEB_Core_Box3D-600x600.png. The box and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

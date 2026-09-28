@@ -3,10 +3,10 @@
   "slug": "zoo-vadis-bitewing-2023-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "08bcaf5962f89a0907247c0958ee94682946e7d57b0d6c2cad4df987620355fc",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "cd2e3b2739c70fa684ee80b9bf92c5e9bed4aed394a4e12522e914fd0451c6bb",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Zoo Vadis",
   "aliases": [],
   "editionLabel": "Bitewing Games English rules, 2023",
@@ -37,5 +37,22 @@
   "internalEvidence": "Downloaded and rendered the Bitewing Games English booklet from a retailer copy. Printed/PDF page 3 states the zoo-visit rule and explicit random alternative; page 4 states clockwise turns. The booklet credits Bitewing Games ©2023. SHA-256: 75c834d30912b43d8b821c74768bb89a12dccce92537204919bfe6708202e264. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited starting instruction, game identity and edition.",
   "uncertainty": [
     "No tie procedure is given for equally recent zoo visits."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/zoo-vadis-bitewing-2023-en-cover.jpg",
+    "alt": "Zoo Vadis game box cover",
+    "width": 367,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://bitewinggames.com/wp-content/uploads/2022/07/Zoo-Vadis-Box-1-1.jpeg",
+      "publisher": "Bitewing Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Bitewing Games",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Bitewing Games 2023 Zoo Vadis base game. Official publisher product page: https://bitewinggames.com/zoo-vadis/. Exact publisher-hosted image: https://bitewinggames.com/wp-content/uploads/2022/07/Zoo-Vadis-Box-1-1.jpeg. The box and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

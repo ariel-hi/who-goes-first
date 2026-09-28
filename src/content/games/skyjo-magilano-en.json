@@ -3,10 +3,10 @@
   "slug": "skyjo-magilano-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9b611bd1d25c6ea55332c3d1491089e36497b36ee69debbe76305a58d6306ecb",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "83abb1fef20c1caabaa31ec70966115bf036500161d8eb1cb749694a6ecf481a",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "SKYJO",
   "aliases": [
     "Skyjo",
@@ -43,5 +43,22 @@
   "uncertainty": [
     "The reviewed English rules do not specify who starts when players tie for the highest total of their two opening face-up cards.",
     "The reviewed booklet is undated; SKYJO ACTION, SKYJO Junior, and other rulebook revisions require separate source review."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/skyjo-magilano-en-cover.jpg",
+    "alt": "SKYJO game box cover",
+    "width": 325,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://magilano.com/cdn/shop/files/SKYJO_CardGame_01_topbox.png?v=1713255874",
+      "publisher": "Magilano"
+    },
+    "fairUse": {
+      "rightsHolder": "Magilano",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Magilano classic SKYJO card game and English rules. Official publisher product page: https://magilano.com/products/skyjo-wholesale. Exact publisher-hosted image: https://magilano.com/cdn/shop/files/SKYJO_CardGame_01_topbox.png?v=1713255874. The box and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
