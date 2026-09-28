@@ -3,10 +3,10 @@
   "slug": "lost-cities-roll-and-write",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "91dd388d4790f6083f017fea025ab818eda74dd77b216d3fc71f453e4b3abb31",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0294ea75a0664f9823330d116ba998cafaeddc71f467628c339dc842f0a3cd9a",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lost Cities: Roll & Write",
   "aliases": [
     "Lost Cities Roll and Write"
@@ -37,5 +37,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://support.thamesandkosmos.com/hc/en-us/articles/360046967034-Product-Instruction-Manuals-Downloadable-PDFs. Finding: The group's greatest adventurer takes the first turn. Local source SHA-256: 72aa5e0f5a5f1f4533d52fec34ffa1f31ab04fd65e3fd7c9c63bd8b012cc422d. Editorial review 2026-09-23: Rechecked the cited starting instruction, official alternative and opening-turn context against the publisher-linked PDF. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lost-cities-roll-and-write-cover.jpg",
+    "alt": "Lost Cities: Roll & Write English Kosmos box",
+    "width": 380,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.brain-games.ee/products/lost-cities-roll-and-write",
+      "publisher": "Brain Games retailer, with Thames & Kosmos publisher brochure cross-check"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos / Kosmos and original cover artists (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed product cover identifies the English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Brain Games product image https://www.brain-games.ee/cdn/shop/files/lost-cities-roll-and-write.webp?v=1781777486 matches the 680589 English box on page 11 of the publisher-authored 2021 Games Brochure at https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/Autumn-Fair-2017/media/libraries/exhibitor-brochures/204979-Games%20Brochure%202021%20lr%20final.pdf.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

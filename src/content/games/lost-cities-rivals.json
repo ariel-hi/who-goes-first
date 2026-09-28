@@ -3,10 +3,10 @@
   "slug": "lost-cities-rivals",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "55bc5ac5aab35a01cca87a7cc843f84c7b15fd6cc298a726425c568f4017af8e",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "0ddcc7b05e70a07e82ae45c7f5186ccd3c84a337e04553ceae93598988b89681",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Lost Cities: Rivals",
   "aliases": [
     "Lost Cities Rivals"
@@ -36,5 +36,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/lost-cities-rivals-cover.jpg",
+    "alt": "Lost Cities: Rivals English Kosmos box",
+    "width": 361,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://rulesofplay.co.uk/products/lost-cities-rivals",
+      "publisher": "Rules of Play retailer, with Thames & Kosmos publisher brochure cross-check"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos / Kosmos and original cover artists (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed product cover identifies the English edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Rules of Play product image https://rulesofplay.co.uk/cdn/shop/files/6398_6509_5b51a2d8b461d2.14715928_lost_20cities_20rivals_20cover_large_82166a64-08c4-47ee-86c9-4a9cc45f6bed_1200x1663.jpg?v=1770812920 matches the 690335 English box on page 11 of the publisher-authored 2021 Games Brochure at https://cdn.asp.events/CLIENT_Ascentia_4E961A52_5056_B739_54289B84DF34E888/sites/Autumn-Fair-2017/media/libraries/exhibitor-brochures/204979-Games%20Brochure%202021%20lr%20final.pdf.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
