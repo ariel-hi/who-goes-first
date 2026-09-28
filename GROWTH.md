@@ -12,7 +12,7 @@ Everything here is off until its setting exists. A missing setting never breaks 
 | Rule of the day on Bluesky and/or Mastodon | `scripts/post-rule.ts` | Daily, 15:17 UTC |
 | Search-demand research queue and weekly report | `scripts/growth-weekly.ts` → `research/demand/` | Mondays, 06:41 UTC |
 | Amazon affiliate links on rule and board-game pages | `src/lib/affiliate.ts` | Every build, when the tag is set |
-| AdSense Auto ads with Google's consent message | `public/google-tags.js` | Every build, when the client ID is set |
+| One manual AdSense unit below a rule answer, with Google's consent message | `RuleAd.astro`, `public/google-tags.js` | Production builds when both the client ID and rule slot are set |
 
 Hubs only group rules by words in the approved instruction and always show that instruction. Theme hubs need 5 rules and publisher hubs need 3, so there are no thin pages. The picker, method pages and 404 never load ads (`ads={false}`), and the build audit fails if they do.
 
@@ -21,16 +21,17 @@ Hubs only group rules by words in the approved instruction and always show that 
 ### Cloudflare Pages build variables (production)
 | Variable | Example | Effect |
 | --- | --- | --- |
-| `ADSENSE_CLIENT` | `ca-pub-1234567890123456` | Loads AdSense and Google's consent message, writes `ads.txt`, widens the CSP for Google ad hosts, and switches Privacy/About to the ads wording. It replaces the custom analytics banner. Production builds only. |
+| `ADSENSE_CLIENT` | `ca-pub-1234567890123456` | Identifies the AdSense account. With `ADSENSE_RULE_SLOT`, loads Google's consent message, writes `ads.txt`, widens the CSP for Google ad hosts, and switches Privacy/About to the ads wording. Production builds only. |
+| `ADSENSE_RULE_SLOT` | `1234567890` | Numeric ID of the manual display unit reserved below the rule answer and source links. Requires `ADSENSE_CLIENT`. |
 | `AMAZON_ASSOCIATES_TAG` | `whogoesfirst-20` | Adds "Find this game on Amazon" search links with the disclosure. |
 | `TIP_JAR_URL` | `https://ko-fi.com/…` | Adds "Support the site" to the footer and About. |
 
 After changing a variable, trigger a new deployment.
 
 ### AdSense (once, in the AdSense dashboard)
-1. Add the site `whogoesfirst.fun` and wait for approval. Set `ADSENSE_CLIENT` first: the review needs the tag and `ads.txt` live.
+1. Add the site `whogoesfirst.fun` and wait for approval. Configure the production client ID and manual rule slot together, then verify the tag and `ads.txt` on the live domain.
 2. **Privacy & messaging → European regulations:** create and publish the consent message. Also publish the US state regulations message.
-3. **Ads → By site → Auto ads:** turn off vignette (full-screen) ads. Consider turning off anchor ads on mobile. Keep in-page ads on.
+3. **Ads → By site:** keep Auto ads and automatic ad optimization off. The site requests only its manual display unit after a rule answer and source links. Confirm this account setting after any AdSense change.
 
 ### GitHub repository settings (Settings → Secrets and variables → Actions)
 | Name | Kind | Needed for |
@@ -51,4 +52,4 @@ Turn on **Caching → Configuration → Crawler Hints** for `whogoesfirst.fun`. 
 ## Checking it
 - `npx tsx scripts/post-rule.ts --dry-run` prints today's post.
 - Actions → Growth automation → Run workflow runs either job on demand. The weekly job's summary page shows the report.
-- After enabling ads, open a rule page in a private window. The browser console should show no `Content-Security-Policy` errors. Ads can take a few hours after approval to appear.
+- After enabling ads, open a rule page in a private window. Confirm that its reserved ad unit follows the answer and source links, while the picker and method pages have no ad unit. The browser console should show no `Content-Security-Policy` errors. An ad request or reserved space does not prove an ad filled or earned revenue.
