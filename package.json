@@ -7,8 +7,8 @@
     "node": ">=22.12.0 <23"
   },
   "scripts": {
-    "dev": "astro dev --host 127.0.0.1",
-    "build": "npm run content:validate && astro build && tsx scripts/audit-build.ts",
+    "dev": "npm run images:prepare && astro dev --host 127.0.0.1",
+    "build": "npm run content:validate && npm run images:prepare && astro build && tsx scripts/audit-build.ts",
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check",
     "lint": "eslint .",
@@ -21,6 +21,7 @@
     "test:release": "tsx scripts/test-release.ts",
     "test:dev-release": "tsx scripts/test-dev-release.ts",
     "content:validate": "tsx scripts/validate-content.ts",
+    "images:prepare": "tsx scripts/prepare-rule-thumbnails.ts",
     "content:review": "tsx scripts/review-content.ts",
     "content:coverage": "tsx scripts/check-coverage.ts",
     "links:check": "tsx scripts/check-links.ts",

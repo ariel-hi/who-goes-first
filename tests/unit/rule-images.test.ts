@@ -6,6 +6,7 @@ import sharp from 'sharp';
 import { readRecords } from '../../src/lib/content/catalog';
 import { assertPublishable, contentRevision, publicRule, ruleImageSchema, ruleSchema } from '../../src/lib/content/schema';
 import { validateRuleImageAsset } from '../../src/lib/content/image-assets';
+import { coverThumbnailPath } from '../../src/lib/content/cover-thumbnail';
 
 // Synthetic rights metadata for schema tests only; never a publication grant.
 const image = {
@@ -39,6 +40,8 @@ test('editorial fair use is recorded separately from a reuse licence', () => {
   expect(ruleImageSchema.safeParse({ ...cover, fairUse: undefined }).success).toBe(false);
   expect(ruleImageSchema.safeParse({ ...cover, fairUse: { ...cover.fairUse, provenance: '' } }).success).toBe(false);
   expect(ruleImageSchema.safeParse({ ...cover, licence: image.licence }).success).toBe(true);
+  expect(coverThumbnailPath(ruleImageSchema.parse(cover))).toBe('/images/games/thumbs/test-box.webp');
+  expect(coverThumbnailPath(ruleImageSchema.parse(image))).toBe(image.file);
 });
 
 test('BGG, search results, and Amazon images cannot supply locally hosted rule artwork', () => {

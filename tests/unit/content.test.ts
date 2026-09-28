@@ -12,6 +12,10 @@ import { getBoardGames, nativeIdentityAdditions } from '../../src/lib/content/bo
 import { getBrowseShelves, BROWSE_PAGE_SIZE } from '../../src/lib/content/board-game-browse';
 import { randomRuleEligible } from '../../src/lib/content/random-rules';
 
+const withoutArtwork = (rule: ReturnType<typeof ruleSchema.parse>) => ruleSchema.parse(
+  Object.fromEntries(Object.entries(rule).filter(([key]) => key !== 'image' && key !== 'additionalImages')),
+);
+
 test('new native and SimplyFun identities remain pending while two exact manuals supply rules', async () => {
   const games = getBoardGames();
   const directory = await directorySearch().json() as Array<{ id: string; name: string; ruleCount: number; slug?: string }>;
@@ -300,10 +304,11 @@ test('Amigo manual approvals preserve initial versus later order and the figure-
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
-    expect(raw).toMatchObject({ aliases: [], editionLabel: 'AMIGO English rules, Version 1.0', firstPlayerRule: opening, officialTieBreak: null, approvedRevision: revision });
+    expect(raw).toMatchObject({ aliases: [], editionLabel: 'AMIGO English rules, Version 1.0', firstPlayerRule: opening, officialTieBreak: null });
     expect(raw.houseFallback).toContain('This is a house rule.');
     expect(raw.sources[0]).toMatchObject({ url: `https://blog.amigo-spiele.de/content/ap/rule/${file}`, pdfPagesOneBased: [1, 2], printedPages: [], checkedAt: '2026-09-26' });
     expect(contentRevision(draft)).toBe(revision);
+    expect(contentRevision(raw)).toBe(raw.approvedRevision);
     expect(draft).toMatchObject({ status: 'draft', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
     expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(portable);
     expect(() => assertPublishable({ ...raw, firstPlayerRule: 'Another opening' })).toThrow('stale');
@@ -322,9 +327,10 @@ test('Amigo multi-mode manuals preserve reveal roles, original PDF order and com
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
-    expect(raw).toMatchObject({ aliases: [], officialTieBreak: null, approvedRevision: revision });
+    expect(raw).toMatchObject({ aliases: [], officialTieBreak: null });
     expect(raw.sources[0]!.pdfPagesOneBased).toEqual(pages);
     expect(contentRevision(draft)).toBe(revision);
+    expect(contentRevision(raw)).toBe(raw.approvedRevision);
     expect(draft).toMatchObject({ status: 'draft', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
     expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(portable);
     expect(() => assertPublishable({ ...raw, firstPlayerRule: 'Everyone takes individual turns clockwise.' })).toThrow('stale');
@@ -830,7 +836,8 @@ test('the three manual approvals bind exact revisions and remain outside the por
   for (const id of ['ironwood-mindclash-en-publisher-rulebook', 'wroth-chip-theory-en-v1-0', 'beyond-the-horizon-super-meeple-fr-rulebook']) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
     const draft = drafts.find(record => record.id === id)!;
-    expect(contentRevision(draft)).toBe(raw.approvedRevision);
+    expect(contentRevision(draft)).toBe(contentRevision(withoutArtwork(raw)));
+    expect(contentRevision(raw)).toBe(raw.approvedRevision);
     expect(draft).toMatchObject({ status: 'needs-review', approvedBy: null, approvedRevision: null, publishedAt: null });
     expect(() => assertPublishable({ ...raw, editionLabel: 'Another edition' })).toThrow('stale');
     expect(randomRuleEligible(catalog.find(rule => rule.id === id)!)).toBe(false);
@@ -848,7 +855,8 @@ test('CrowD shared-folder manual approvals bind exact revisions and four indepen
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${ruleId}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${ruleId}.json`, 'utf8')));
-    expect(contentRevision(draft)).toBe(raw.approvedRevision);
+    expect(contentRevision(draft)).toBe(contentRevision(withoutArtwork(raw)));
+    expect(contentRevision(raw)).toBe(raw.approvedRevision);
     expect(draft).toMatchObject({ status: 'needs-review', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
     expect(games.find(game => game.bggId === id)?.rules.map(rule => rule.id)).toEqual([ruleId]);
     expect(raw.sources[0]).toMatchObject({ url: `https://disk.yandex.ru/d/${folder}`, pdfPagesOneBased: expect.arrayContaining([firstPage]) });
@@ -882,7 +890,8 @@ test('Spectacular and Yami bind exact Russian manual openings without portable o
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
-    expect(contentRevision(draft)).toBe(raw.approvedRevision);
+    expect(contentRevision(draft)).toBe(contentRevision(withoutArtwork(raw)));
+    expect(contentRevision(raw)).toBe(raw.approvedRevision);
     expect(draft).toMatchObject({ status: 'needs-review', approvedBy: null, approvedRevision: null, publishedAt: null, materiallyUpdatedAt: null });
     expect(raw.sources[0]!.url).toBe(`https://disk.yandex.ru/d/${folder}`);
     expect(raw.sources[0]!.pdfPagesOneBased[0]).toBe(page);

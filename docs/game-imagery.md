@@ -44,6 +44,11 @@ Related and similar rule links show a small photograph when that destination has
 one; other links and directory entries use readable text without placeholder art.
 When `presentation` is `cover`, the image sits beside the rule heading and
 answer; other photos remain below the answer at their natural aspect ratio.
+The build generates local 104 × 128 WebP thumbnails from approved cover files
+for those links. The small derived files preserve the complete cover and keep
+pages with several related games inside the 350 KiB payload budget. They add
+no network source and are rebuilt from the local original during development
+and production builds.
 
 Each rule's optional `image` object requires:
 
