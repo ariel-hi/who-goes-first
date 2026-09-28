@@ -3,10 +3,10 @@
   "slug": "stonesaga-open-owl-en-rulebook-1-1",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "bb11104f4287d526df0e13904a4a1008e48204bb2c63b9cf47e24e535bf9e828",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "6ad9d341a2ff07ebb1ac2d9eef7d76a868b9eb385b9c4e7f688679f55b0b4dc4",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Stonesaga",
   "aliases": [],
   "editionLabel": "Open Owl Studios rulebook v1.1 (English)",
@@ -83,5 +83,22 @@
     "FAQ cover v1.3.1 and internal v1.3.2 entries disagree; both labels are retained, without assigning a new version.",
     "Campaign/challenge instructions, Endless Mode, Meals & Myths and Nature of the Beast remain separate; no expansion-rule transfer is approved.",
     "Simultaneous and hardcore solo play are optional modes rather than a replacement for default day turns."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/stonesaga-open-owl-en-rulebook-1-1-cover.jpg",
+    "alt": "Stonesaga Open Owl Studios base game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://openowlstudios.com/cdn/shop/files/OOS_ShopifyListings_Stonesaga_Box.png?v=1780687718&width=1200",
+      "publisher": "Open Owl Studios"
+    },
+    "fairUse": {
+      "rightsHolder": "Open Owl Studios",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Open Owl Studios base game product page: https://openowlstudios.com/products/stonesaga. Exact publisher-hosted package image: https://openowlstudios.com/cdn/shop/files/OOS_ShopifyListings_Stonesaga_Box.png?v=1780687718&width=1200. The base box, Open Owl mark and designers were visually reviewed against the article edition (Open Owl Studios rulebook v1.1 (English)); the product page links the current core-game rulebook.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
