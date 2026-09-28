@@ -3,10 +3,10 @@
   "slug": "gods-love-dinosaurs-pandasaurus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "dac45cefd7f72b36ee2376ecfb53c812a4e029570956b66dd6fd946dac9af73b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2daa3fa29e36c0f69dfd18e5fac87146bc2616390c52d0853669d892f549f853",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Gods Love Dinosaurs",
   "aliases": [],
   "editionLabel": "Pandasaurus Games English rulebook",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Visually checked image-only PDF pages 3-4 of the publisher-authored English rulebook hosted by Gus & Co. Page 3 names the sharpest-teeth criterion; page 4 gives clockwise play. SHA-256: ebd4ea52cb913cda37ad5b2b03e3f1f2f62a98bbf698494afcc0ab99b364fdfd. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked edition, first-player instruction, absence of an official starting tie-break, and subsequent clockwise order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/gods-love-dinosaurs-pandasaurus-en-cover.jpg",
+    "alt": "Gods Love Dinosaurs official Pandasaurus box cover",
+    "width": 500,
+    "height": 499,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pandasaurusgames.com/pages/media-kits",
+      "publisher": "Pandasaurus Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Pandasaurus Games and cover-art creators (precise ownership not stated in media kit)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Pandasaurus Games media-kits page links its Gods Love Dinosaurs Marketing Materials Dropbox archive at https://www.dropbox.com/scl/fo/3ghtjqgvgkyvh4zq6e6ik/ABVMH72OvGXsRvdhuie_1YE?rlkey=xpjg6e03gon0orq3f3utdzvek&dl=1. This image is the archive entry 1. Box cover and back/gld cover.png, a branded English-language base-game box cover matching the cited rulebook.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
