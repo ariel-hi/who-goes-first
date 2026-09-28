@@ -3,10 +3,10 @@
   "slug": "hive-gen42-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c53785ca706e4911914fb9ac518f5555015b77f1fea34c292ba268f53f820483",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "9d8df16fbe013f80193c010fdf5c30d5ec986154e8502972a5ac4b1a7a9814db",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hive",
   "aliases": [],
   "editionLabel": "Gen42 English rulebook, 2010",
@@ -44,5 +44,22 @@
     "The rulebook does not say which player or colour goes first; choose any player.",
     "Tournament conventions for who starts are not part of this rulebook.",
     "This 2010 rulebook covers the base 11-piece set; expansion pieces are not covered."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hive-gen42-en-cover.jpg",
+    "alt": "Hive Gen42 standard-game box cover",
+    "width": 478,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.gen42.com/product/hive/",
+      "publisher": "Gen42 Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Gen42 Games and cover-art creators (precise ownership not stated on product page)",
+      "rationale": "Small, compressed product photograph identifies the standard Hive game covered by the publisher-linked English rules in this editorial explanation.",
+      "provenance": "Gen42 official Hive product page, SKU HVWX, features the standard 22-piece box at https://www.gen42.com/wp-content/uploads/hive_2015_edition_shop.png and links the 2010-copyright English rulebook cited by this record. Image filename identifies a 2015 box design; the same publisher page pairs that box with the cited rules. This is not Hive Pocket, Carbon, Ultimate, or an expansion.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
