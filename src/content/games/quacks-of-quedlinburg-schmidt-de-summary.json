@@ -3,16 +3,33 @@
   "slug": "quacks-of-quedlinburg-schmidt-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "e085b26375ac15f44e0aaad469094b61d9f97032c9cb1d72336b8d2b98f0d59f",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "a6a8cc52dd77cf35a7eb5747f1afbec85e3082f2d048d035f722a52ed3bb2419",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Quacks of Quedlinburg",
   "aliases": [
     "Die Quacksalber von Quedlinburg",
     "Quacks of Quedlinburg"
   ],
   "editionLabel": "Schmidt Spiele German base-game rules, English summary",
+  "image": {
+    "file": "/images/games/quacks-of-quedlinburg-schmidt-de-summary-cover.jpg",
+    "alt": "The Quacks of Quedlinburg game cover, Schmidt Spiele edition",
+    "width": 327,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.schmidtspiele.de/assets/images/5/49341_Packshot.cms-50216-700-auto-j2x192g03y145hn.png",
+      "publisher": "Schmidt Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Schmidt Spiele GmbH",
+      "rationale": "Small publisher-sourced cover identifies the exact game and product edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the product packshot on Schmidt Spiele's page https://www.schmidtspiele.de/details/produkt/die-quacksalber-von-quedlinburg.html. The article number and language variant on that page match this rule record; reduced to 327 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently cooked something is the first round's starting player.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",

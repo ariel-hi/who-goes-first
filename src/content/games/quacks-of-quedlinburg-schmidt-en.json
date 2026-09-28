@@ -3,16 +3,33 @@
   "slug": "quacks-of-quedlinburg-schmidt-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "6ccd01dc5d714ceb523e16fdac188a282b058e88990be8d85acfa962c44d75e6",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "7e5d279ee4e71de1fa0785bfbe0a2a0027cb6364e4c26755244d8d731b0812c5",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Quacks of Quedlinburg",
   "aliases": [
     "Quacks",
     "Quacks of Quedlinburg"
   ],
   "editionLabel": "Schmidt English base game",
+  "image": {
+    "file": "/images/games/quacks-of-quedlinburg-schmidt-en-cover.jpg",
+    "alt": "The Quacks of Quedlinburg game cover, Schmidt Spiele edition",
+    "width": 325,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.schmidtspiele.de/assets/images/e/88220_The_Quacks_of_Quedlinburg_72ppi_Packshot-k13y2ax7beewp52.jpg",
+      "publisher": "Schmidt Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Schmidt Spiele GmbH",
+      "rationale": "Small publisher-sourced cover identifies the exact game and product edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Downloaded from the product packshot on Schmidt Spiele's page https://www.schmidtspiele.de/detail/product/the-quacks-of-quedlinburg.html. The article number and language variant on that page match this rule record; reduced to 325 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever most recently cooked something is the first starting player. They hold the Fortune Teller deck and read its opening card; everyone brews potions at the same time.",
   "officialTieBreak": null,
   "houseFallback": "If the cooking criterion leaves a tie, agree to choose randomly. This is a house rule, not an official tie-break.",
