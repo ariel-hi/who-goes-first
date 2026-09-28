@@ -3,15 +3,32 @@
   "slug": "nature-northstar-en-core",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "c0379f7c82136c46d95f3dcbf3a3a5d9691ba7cae29ac6196e7edc116c7e7af4",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "f6b89e9e4c1cd0b5bb4945ffa723558e8f7aaec3a5915b0bb5b6a3d9eea743c3",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Nature",
   "aliases": [
     "Nature core game"
   ],
   "editionLabel": "NorthStar English core rules, 13-spread publisher PDF",
+  "image": {
+    "file": "/images/games/nature-northstar-en-core-cover.jpg",
+    "alt": "Nature illustrated rulebook cover, NorthStar Game Studio edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0283/4324/files/0_Nature_core_rulebook_12-27-2025.pdf?v=1772833201",
+      "publisher": "NorthStar Game Studio"
+    },
+    "fairUse": {
+      "rightsHolder": "NorthStar Game Studio",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://cdn.shopify.com/s/files/1/0283/4324/files/0_Nature_core_rulebook_12-27-2025.pdf?v=1772833201. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "In standard multiplayer play, whoever can make the most amazing animal noise goes first.",
   "officialTieBreak": null,
   "houseFallback": "If your group cannot agree on an animal noise or prefers another approach, agree to choose randomly. This is this site’s suggested house rule.",

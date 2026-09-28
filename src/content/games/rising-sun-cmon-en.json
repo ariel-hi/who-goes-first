@@ -3,13 +3,30 @@
   "slug": "rising-sun-cmon-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "2d2dcc68f60cefc732e5dbf19a0348714894b2d969bd0322279db11124994c53",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "3a5905203c8d46584694d2f0cca3f80bb39dce54474b5bdd0350016b6794450b",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Rising Sun",
   "aliases": [],
   "editionLabel": "CMON English base game",
+  "image": {
+    "file": "/images/games/rising-sun-cmon-en-cover.jpg",
+    "alt": "Rising Sun illustrated rulebook cover, CMON edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://resources.cmon.com/Rising_Sun_Rulebook.pdf",
+      "publisher": "CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "CMON",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://resources.cmon.com/Rising_Sun_Rulebook.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player whose Clan has the lowest-numbered Starting Honor Rank takes the first Mandate Turn. Their Clan starts at the top of the Honor track.",
   "officialTieBreak": null,
   "houseFallback": null,

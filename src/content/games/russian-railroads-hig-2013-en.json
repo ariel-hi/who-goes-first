@@ -3,13 +3,30 @@
   "slug": "russian-railroads-hig-2013-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "3e78a7a9b22d3bedf97b2ec1bd93fc759800e3332050f4a2b04d654e06e6253d",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "1b16bfb83c47bf5934f07c14827a9d453239be4a5a836a9109624e84c4f17269",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Russian Railroads",
   "aliases": [],
   "editionLabel": "Hans im Glück / Z-Man 2013 English base game",
+  "image": {
+    "file": "/images/games/russian-railroads-hig-2013-en-cover.jpg",
+    "alt": "Russian Railroads illustrated rulebook cover, Hans im Glück / Z-Man Games edition",
+    "width": 255,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.hans-im-glueck.de/_Resources/Persistent/3519279e01e92a55671e94ef8cf567c7e41e81f3/RRR_rules_en.pdf",
+      "publisher": "Hans im Glück / Z-Man Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Hans im Glück / Z-Man Games",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://www.hans-im-glueck.de/_Resources/Persistent/3519279e01e92a55671e94ef8cf567c7e41e81f3/RRR_rules_en.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 255 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Shuffle the four numbered Turn Order cards and deal one face up to each player. Put each player’s pawn on the matching turn-order space. The player in the leftmost occupied position takes the first turn; the others follow track order rather than clockwise seating order.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -26,8 +43,18 @@
       "url": "https://www.hans-im-glueck.de/_Resources/Persistent/3519279e01e92a55671e94ef8cf567c7e41e81f3/RRR_rules_en.pdf",
       "title": "Russian Railroads — original English rulebook",
       "publisher": "Hans im Glück / Z-Man Games",
-      "printedPages": ["4", "5", "14", "15", "21"],
-      "pdfPagesOneBased": [3, 8, 11],
+      "printedPages": [
+        "4",
+        "5",
+        "14",
+        "15",
+        "21"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        8,
+        11
+      ],
       "location": "Setup step 8 and pawn placement; Turn Order; Playing with 2 or 3 Players",
       "checkedAt": "2026-09-28"
     }

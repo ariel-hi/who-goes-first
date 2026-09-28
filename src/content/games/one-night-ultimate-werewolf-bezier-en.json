@@ -3,8 +3,8 @@
   "slug": "one-night-ultimate-werewolf-bezier-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "5ab727be770c0ddaa50c61a0e77cdea982119ceb88f45ae3579373d545710935",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "2c8e85d17981341b4ba08d55b2e910f5c81b802a4ea69626e14fb58f1c75a8d5",
   "publishedAt": "2026-09-25",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "One Night Ultimate Werewolf",
@@ -13,6 +13,23 @@
     "One Night"
   ],
   "editionLabel": "Bezier Games English Getting Started Guide",
+  "image": {
+    "file": "/images/games/one-night-ultimate-werewolf-bezier-en-cover.jpg",
+    "alt": "One Night Ultimate Werewolf illustrated rulebook cover, Bezier Games edition",
+    "width": 274,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0740/4855/files/ONUW_Getting_Started_for_BGG.pdf",
+      "publisher": "Bezier Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Bezier Games",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://cdn.shopify.com/s/files/1/0740/4855/files/ONUW_Getting_Started_for_BGG.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 274 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "There is no first player. At night, roles wake up in a fixed order called out by the Announcer (one designated player) or by the free app; during the day, everyone discusses freely and then all players vote at the same time.",
   "officialTieBreak": null,
   "houseFallback": null,

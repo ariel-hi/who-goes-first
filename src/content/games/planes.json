@@ -3,13 +3,30 @@
   "slug": "planes",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "26090541caac313acfc43005cb5dc4fe4f6d423e49ffa95e98caf4888053a4d6",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "062f312712a2b2784e1c1d7c34262db379e258d3adac6d6919effcaf0a021f66",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Planes",
   "aliases": [],
   "editionLabel": "English AEG rules",
+  "image": {
+    "file": "/images/games/planes-cover.jpg",
+    "alt": "Planes illustrated rulebook cover, Alderac Entertainment Group edition",
+    "width": 360,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2017/05/planes_rulebook-v5-2small.pdf",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group",
+      "rationale": "Small image of the publisher’s illustrated rulebook cover identifies the exact game and rules edition discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Rendered page 1 of the official publisher rules PDF https://www.alderac.com/wp-content/uploads/2017/05/planes_rulebook-v5-2small.pdf. The illustrated title page visibly identifies this game and matches the linked rules edition; reduced to 360 × 360 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently traveled by plane starts. The reference sheet also permits a random choice.",
   "officialTieBreak": null,
   "houseFallback": null,
