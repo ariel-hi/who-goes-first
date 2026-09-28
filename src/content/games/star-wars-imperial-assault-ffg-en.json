@@ -3,13 +3,30 @@
   "slug": "star-wars-imperial-assault-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "c89b4efcadc29f23b6683c9ee1e11424744361fd65cacaf88835bbb30d2430b0",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "30f4ae88c889141e4260c304f24c6f3d98f1a15fbf371127f1effae2d4af6729",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Star Wars: Imperial Assault",
   "aliases": [],
   "editionLabel": "FFG English core game",
+  "image": {
+    "file": "/images/games/star-wars-imperial-assault-ffg-en-cover.jpg",
+    "alt": "Star Wars: Imperial Assault box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/FFG_SWI01_Product-Image.webp",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lucasfilm Ltd. (Star Wars art and marks); Fantasy Flight Publishing, Inc. (game packaging)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.fantasyflightgames.com/product/star-wars-imperial-assault/. Exact image file: https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/FFG_SWI01_Product-Image.webp. Edition check: SWI01 English core set, matching the cited FFG Learn to Play and Skirmish guides.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "In campaign play, the Rebels choose one of their figures to activate first. In a skirmish, the player whose army has the lower total Deployment cost chooses who starts with initiative; that player activates first.",
   "officialTieBreak": "In a skirmish with equal total Deployment costs, determine initiative randomly.",
   "houseFallback": null,

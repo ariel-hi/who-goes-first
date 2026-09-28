@@ -1,29 +1,57 @@
 {
   "id": "the-magic-labyrinth-schmidt-de-summary",
   "slug": "the-magic-labyrinth-schmidt-de-summary",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "0dfe7e531e16f0f4ecf06dfc364bc8429fe806d2a2f363ebebec13f7c7706a1f",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Magic Labyrinth",
   "aliases": [],
-  "language": "en",
   "editionLabel": "Schmidt Spiele/Drei Magier German rules summarized in English",
+  "image": {
+    "file": "/images/games/the-magic-labyrinth-schmidt-de-summary-cover.jpg",
+    "alt": "The Magic Labyrinth box cover",
+    "width": 456,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.schmidtspiele.de/assets/images/s/40848_Das_magische_Labyrinth_Spiele_72ppi_Packshot-cbwgjrpj6hx3aw9.png",
+      "publisher": "Schmidt Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Schmidt Spiele GmbH (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.schmidtspiele.de/details/produkt/das-magische-labyrinth.html. Exact image file: https://www.schmidtspiele.de/assets/images/s/40848_Das_magische_Labyrinth_Spiele_72ppi_Packshot-cbwgjrpj6hx3aw9.png. Edition check: German Das magische Labyrinth SKU 40848, matching the cited German rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who most recently got lost begins.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["Play then proceeds in turn order. This is the standard magnetic labyrinth board game; the publisher also lists a separate travel edition."],
+  "clarifications": [
+    "Play then proceeds in turn order. This is the standard magnetic labyrinth board game; the publisher also lists a separate travel edition."
+  ],
   "interpretation": null,
-  "sources": [{
-    "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/40848_Das_magische_Labyrinth_DE_GB_FR_IT.pdf",
-    "title": "Das magische Labyrinth — Schmidt Spiele/Drei Magier rules",
-    "publisher": "Schmidt Spiele",
-    "printedPages": ["6"],
-    "pdfPagesOneBased": [6],
-    "location": "German section, Spielverlauf, opening sentence",
-    "checkedAt": "2026-09-25"
-  }],
+  "sources": [
+    {
+      "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/40848_Das_magische_Labyrinth_DE_GB_FR_IT.pdf",
+      "title": "Das magische Labyrinth — Schmidt Spiele/Drei Magier rules",
+      "publisher": "Schmidt Spiele",
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "German section, Spielverlauf, opening sentence",
+      "checkedAt": "2026-09-25"
+    }
+  ],
   "internalEvidence": "The current Schmidt Spiele product page https://www.schmidtspiele.de/details/produkt/das-magische-labyrinth.html links article 40848. The linked 16-page image-only booklet was rendered and German printed page 6 read visually. Under Spielverlauf it states 'Gespielt wird reihum. Der Spieler, der sich zuletzt verlaufen hat, beginnt.' The three-language booklet shows German, French and Italian sections despite GB in its filename. This answer is an English summary of the German text. Downloaded PDF SHA-256: 9066d634cdaa53ef1fae843c926636b6d8ed8eb367166e878dee339b50d434d3. Owner-authorized Codex editorial review, 2026-09-25.",
-  "uncertainty": ["The German source does not state a tie-break or fallback for players who cannot identify a most-recent time they got lost.", "Other editions may differ."],
-  "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "97ab39372151e41d75c962fef9ea6af81f81ebab5807e4cb4e161b8ae8dc62b7",
-  "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  "uncertainty": [
+    "The German source does not state a tie-break or fallback for players who cannot identify a most-recent time they got lost.",
+    "Other editions may differ."
+  ]
 }

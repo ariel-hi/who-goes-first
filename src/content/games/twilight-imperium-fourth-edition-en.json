@@ -3,15 +3,32 @@
   "slug": "twilight-imperium-fourth-edition-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "34287de8cbcba4b2c654ecdd9da3c4757e606ccccdd8d9e361d82769cdac8275",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "489b9b5565b47a97263e7a3cc377517633052ebef50670c00e5a2a021ed39fb9",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Twilight Imperium",
   "aliases": [
     "Twilight Imperium: Fourth Edition"
   ],
   "editionLabel": "Fantasy Flight Games Fourth Edition Rules Reference",
+  "image": {
+    "file": "/images/games/twilight-imperium-fourth-edition-en-cover.jpg",
+    "alt": "Twilight Imperium box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/08/FFG_TI07_Product-Image-1.webp",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Publishing, Inc.",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.fantasyflightgames.com/product/twilight-imperium-fourth-edition/. Exact image file: https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/08/FFG_TI07_Product-Image-1.webp. Edition check: TI07 Fourth Edition base game, matching the cited fourth-edition rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Randomly choose a speaker during setup. The speaker chooses the first strategy card; during the action phase, the player holding the lowest-numbered strategy card acts first.",
   "officialTieBreak": null,
   "houseFallback": null,

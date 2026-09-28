@@ -3,16 +3,33 @@
   "slug": "thats-pretty-clever-schmidt-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "00b3a43ebc9801d98a2bf819b46daafb90859a66e4e5ad1b77255597d59c694a",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "e44b48a96a216cdff6f8ff73d70545423f5d0652b70eccdd5e083bf9a51e181a",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "That's Pretty Clever (aka Ganz schön clever)",
   "aliases": [
     "That's Pretty Clever!",
     "Ganz schön clever"
   ],
   "editionLabel": "Schmidt Spiele English rules",
+  "image": {
+    "file": "/images/games/thats-pretty-clever-schmidt-en-cover.jpg",
+    "alt": "That's Pretty Clever (aka Ganz schön clever) box cover",
+    "width": 322,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.schmidtspiele.de/assets/images/q/88198_Thats_Pretty_Clever_72ppi_Packshot-0xs15fde7v7bewa.jpg",
+      "publisher": "Schmidt Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Schmidt Spiele GmbH (English edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.schmidtspiele.de/detail/product/that-s-pretty-clever.html. Exact image file: https://www.schmidtspiele.de/assets/images/q/88198_Thats_Pretty_Clever_72ppi_Packshot-0xs15fde7v7bewa.jpg. Edition check: English That's Pretty Clever SKU 88198 on the publisher page linking English rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose a starting player at random; that player takes the six dice.",
   "officialTieBreak": null,
   "houseFallback": null,

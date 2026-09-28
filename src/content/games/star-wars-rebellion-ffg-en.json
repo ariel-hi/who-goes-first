@@ -3,16 +3,33 @@
   "slug": "star-wars-rebellion-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "ad6faf4689a69e7b6abf89452d1d96090338294f3e90568355fe66b4ed151429",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "4a8f8a505fc0d355da9af819e927743dc0fadbdd106fb2947542660c851f6eb5",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Star Wars: Rebellion",
   "aliases": [
     "SW Rebellion",
     "Rebellion"
   ],
   "editionLabel": "Fantasy Flight Games English rules, 2016",
+  "image": {
+    "file": "/images/games/star-wars-rebellion-ffg-en-cover.jpg",
+    "alt": "Star Wars: Rebellion box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/FFG_SW03_Product-Image.webp",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Lucasfilm Ltd. (Star Wars art and marks); Fantasy Flight Publishing, Inc. (game packaging)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.fantasyflightgames.com/product/star-wars-rebellion/. Exact image file: https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/FFG_SW03_Product-Image.webp. Edition check: SW03 English base game, matching the cited FFG rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Players first choose who controls the Rebels and who controls the Imperials (randomly if they cannot decide). The Rebel player goes first: they assign leaders to missions first and take the first turn of each Command Phase.",
   "officialTieBreak": null,
   "houseFallback": null,
