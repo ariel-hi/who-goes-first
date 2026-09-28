@@ -3,10 +3,10 @@
   "slug": "solenia-pearl-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "e0cc5f0c217422075b6739724156ba2b98f81a6022067ee5fa094873e0822add",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "dfa4fbb8eb1bbaab178f6222a9dfc82b6c7c26fc7827f2b2bdad1ce02b66ef24",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Solenia",
   "aliases": [],
   "editionLabel": "Pearl Games English rules, summer side",
@@ -39,5 +39,22 @@
   "internalEvidence": "Rendered PDF/printed page 1 gives the head-in-the-clouds criterion; page 2 gives clockwise turns and page 4 says winter setup is identical. Airship cards and Delivery tiles match inventory BGG 254018; Pearl Games publisher identity was cross-checked against the game record. SHA-256: 34f99ab6347c1a9fd6883f2d4f5edabf94f6343b666baab42a3f0c44f984545b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The criterion is subjective and has no printed tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/solenia-pearl-en-cover.jpg",
+    "alt": "Solenia game package cover",
+    "width": 560,
+    "height": 536,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pearlgames.be/wp-content/uploads/2018/09/Solenia_3D_shot-2.png",
+      "publisher": "Pearl Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Pearl Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Pearl Games product page: https://pearlgames.be/boardgame/solenia-2/. Exact publisher-hosted package image: https://pearlgames.be/wp-content/uploads/2018/09/Solenia_3D_shot-2.png. The package and game identity were visually reviewed against the article edition (Pearl Games English rules, summer side).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
