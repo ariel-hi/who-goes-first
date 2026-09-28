@@ -3,13 +3,30 @@
   "slug": "android-fantasy-flight-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ee1aeacf488fa008bc37e712e69365ba26f2bc241baeb696e16038101e3b89fc",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "7c15661b16903b7ff16245fe130ecbd60251a739c03f1cf38d181118615c3f49",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Android",
   "aliases": [],
   "editionLabel": "Fantasy Flight Games English board-game rulebook, 2008 copyright",
+  "image": {
+    "file": "/images/games/android-fantasy-flight-en-cover.jpg",
+    "alt": "Original Android board-game box cropped from Fantasy Flight Games' official product image",
+    "width": 260,
+    "height": 300,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/6d/8b/6d8b7fd2-3798-4f43-91da-c53f97227b0f/ad01-feature.jpg",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Publishing and credited game cover artist Didier Poli",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Fantasy Flight Games source page: https://drafts.fantasyflightgames.com/en/products/android/products/android/. Edition match: Fantasy Flight's archived Android product page identifies SKU AD01 and 2008 copyright; the official feature image shows that original base-game box. Original image URL: https://images-cdn.fantasyflightgames.com/filer_public/6d/8b/6d8b7fd2-3798-4f43-91da-c53f97227b0f/ad01-feature.jpg. Processing note: Original game box cropped from the left of a publisher promotional banner",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever has read the most science fiction books goes first.",
   "officialTieBreak": "If the players cannot agree who that is, choose a player at random.",
   "houseFallback": null,
