@@ -1,0 +1,35 @@
+{
+  "id": "qwixx-gamewright-en",
+  "slug": "qwixx-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
+  "approvedRevision": "a6fe8efde3bd4eac6775d62a6f962d40e0fd8022bd0b79e3d48df8713f97a509",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Qwixx",
+  "aliases": [],
+  "editionLabel": "Gamewright English Rules of Play",
+  "firstPlayerRule": "The first player to roll a 6 (on any of the six dice, during ordinary play) takes on the role of \"active player\" for that roll; whoever becomes active player first effectively starts the game, since play only proceeds once someone rolls a 6.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "After a round, the player to the left of the current active player becomes the new active player and re-rolls all six dice; play does not return to needing another 6 once the game is underway."
+  ],
+  "interpretation": "The rulebook's \"How to Play\" section states the first-6-roller becomes active player without describing a group roll-off procedure; this site reports that sentence as printed rather than inferring an alternate setup method.",
+  "sources": [
+    {
+      "url": "https://gamewright.com/gamewright/pdfs/Rules/QwixxTM-RULES.pdf",
+      "title": "Qwixx — A Fast Family Dice Game — Rules of Play",
+      "publisher": "Gamewright",
+      "printedPages": ["1"],
+      "pdfPagesOneBased": [1],
+      "location": "\"How to Play\" section, first paragraph",
+      "checkedAt": "2026-09-27"
+    }
+  ],
+  "internalEvidence": "Fetched the official Gamewright rules PDF and extracted its text with pdftotext. \"HOW TO PLAY — The first player to roll a 6 takes on the role of 'active player.' The active player rolls all six dice.\" The \"END OF A ROUND\" section separately states: \"Once all players are ready, the player to the left becomes the new active player and re-rolls all six dice.\"",
+  "uncertainty": [
+    "The rulebook does not explain how dice are physically passed or who rolls first attempt in a brand-new game beyond \"the first player to roll a 6\"; it is unclear whether players take turns rolling until someone hits a 6, or all roll simultaneously."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "operation-hasbro-en",
+  "slug": "operation-hasbro-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
+  "approvedRevision": "666031a8cb7f489184d239eb207f5cc67c7a2d9c285fde405fbe8705ffc18d26",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Operation",
+  "aliases": [],
+  "editionLabel": "Hasbro English instructions, item 40198 (electronic Funatomy edition)",
+  "firstPlayerRule": "The youngest \"doctor\" goes first. Play then passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "This edition has two skill levels set by a switch on the board: Level 1 for younger players, and Level 2 (which buzzes immediately on touching the metal side of a cavity) for older or more experienced players.",
+    "The game ends when all 13 Funatomy parts have been collected; whoever collected the most wins."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/40198.pdf",
+      "title": "Operation — Instructions (item 40198)",
+      "publisher": "Hasbro",
+      "printedPages": ["1"],
+      "pdfPagesOneBased": [1],
+      "location": "\"How to Play\" section, opening sentence",
+      "checkedAt": "2026-09-27"
+    }
+  ],
+  "internalEvidence": "Fetched the official Hasbro-hosted PDF directly and extracted its text with pdftotext. \"How to Play — The youngest ‘doctor’ goes first. Play then passes to the left.\" The document is confirmed as item 40198, the electronic Funatomy-parts edition of Operation, by its parts chart (Bird Brained, Runny Nose, Ringing in the Ear, etc.) and battery/FCC compliance sections.",
+  "uncertainty": [
+    "This is the specific electronic Funatomy-parts edition (item 40198); other Operation editions may phrase or handle the starting-player rule differently."
+  ]
+}

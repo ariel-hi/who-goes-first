@@ -1,0 +1,35 @@
+{
+  "id": "battleship-hasbro-en",
+  "slug": "battleship-hasbro-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
+  "approvedRevision": "4c562ecffbe2ce090edc1c92b104780184df990ee72f0e87bf7f1f7e1f86ff7d",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Battleship",
+  "aliases": [],
+  "editionLabel": "Hasbro English board game, item 080814674102",
+  "firstPlayerRule": "The rules leave it open: after both players position their fleets, you simply \"decide who's going first,\" then take turns calling out coordinates.",
+  "officialTieBreak": null,
+  "houseFallback": "This site's house-rule fallback is to pick randomly.",
+  "clarifications": [
+    "This is the dual-drawer pegs-and-grid edition that also includes a Weapons Platform ship and a captured man to rescue, not an electronic or app-based version."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/documents/430e4f3f6bfd10148a8ef35124427085/D58EFD5350569047F55BF8E284269834.pdf",
+      "title": "Battleship — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": ["1"],
+      "pdfPagesOneBased": [1],
+      "location": "\"Attack!\" section, step 1",
+      "checkedAt": "2026-09-27"
+    }
+  ],
+  "internalEvidence": "Fetched the official Hasbro-hosted PDF and extracted its text with pdftotext. \"ATTACK! 1. Decide who's going first and take turns to guess where your opponent's boats are located.\" The document header confirms item 080814674102 and lists contents including a grid, base with drawers, 10 ships, 2 men, pegs, mission card, and a Weapons Platform ship, matching the modern reissued Battleship edition.",
+  "uncertainty": [
+    "The rulebook never names a criterion for the initial choice; it is explicitly left to the players."
+  ]
+}

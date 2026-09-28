@@ -1,0 +1,36 @@
+{
+  "id": "uno-flip-mattel-en",
+  "slug": "uno-flip-mattel-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
+  "approvedRevision": "cd9e483ab511f769aac4a43b4df85f47b3cd112b84b3d94664b39e17743da13d",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "UNO Flip!",
+  "aliases": ["UNO Flip"],
+  "editionLabel": "Mattel English instruction sheet, item GDR44",
+  "firstPlayerRule": "Each player draws a card and reveals the Light Side; the player who draws the highest number is the dealer (any card with a symbol counts as zero). The dealer shuffles and deals each player 7 cards, then the person to the left of the dealer starts play.",
+  "officialTieBreak": null,
+  "houseFallback": "If two or more players tie for the highest card when choosing the dealer, this site's house-rule fallback is to have just the tied players draw again.",
+  "clarifications": [
+    "This edition's rules do not include a special first-turn exception for an Action Card being turned up to start the discard pile beyond the game's normal Functions of Action Cards section; no Reverse-card-goes-first exception is stated."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction-sheets/files/GDR44%20UNO%20Flip[English_French_German_Spanish_Portuguese][5LG].pdf",
+      "title": "UNO Flip! Instruction Sheet (GDR44)",
+      "publisher": "Mattel",
+      "printedPages": ["1"],
+      "pdfPagesOneBased": [1],
+      "location": "Setup steps 2–5; \"Let's Play\" section",
+      "checkedAt": "2026-09-27"
+    }
+  ],
+  "internalEvidence": "Fetched the official Mattel instruction-sheet PDF and extracted its English text with pdftotext. Setup: \"2. Each player draws a card and then reveals the Light Side; the player that draws the highest number is the dealer (count any card with a symbol as zero). 3. The dealer shuffles and deals each player 7 cards.\" \"LET'S PLAY — The person to the left of the dealer starts play.\" No wording elsewhere in the document overrides this for the light or dark side.",
+  "uncertainty": [
+    "No tie-break is stated for the dealer-selection draw if two players draw equally high cards.",
+    "This English sheet does not specify a special exception when an Action Card is the first card turned face up on the discard pile beyond the general action-card rules."
+  ]
+}

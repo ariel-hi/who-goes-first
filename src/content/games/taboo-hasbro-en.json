@@ -1,0 +1,36 @@
+{
+  "id": "taboo-hasbro-en",
+  "slug": "taboo-hasbro-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
+  "approvedRevision": "8b0c59297db851d4860a305eee856a69bf728fd5ea590d1ea4b80453b28174ac",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Taboo",
+  "aliases": [],
+  "editionLabel": "Hasbro English rules for 4+ adult players",
+  "firstPlayerRule": "The rules leave it open which team goes first: players divide into Team A and Team B, and Team A chooses a player to be their first Clue-giver. The document never states how a group decides which team is \"Team A.\"",
+  "officialTieBreak": null,
+  "houseFallback": "This site's house-rule fallback is to pick which team starts randomly, such as a coin flip.",
+  "clarifications": [
+    "It doesn't matter if one team has one more player than the other.",
+    "Team B controls the buzzer and can try to catch the Clue-giver breaking a Taboo word."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/documents/dad288731c4311ddbd0b0800200c9a66/2AA6E9045056900B10CE5D2770FBF05E.pdf",
+      "title": "Taboo — Rules for 4+ Adult Players",
+      "publisher": "Hasbro",
+      "printedPages": ["1"],
+      "pdfPagesOneBased": [1],
+      "location": "\"Setting Up Your Game\" step 4, and \"Taking Turns\" step 1",
+      "checkedAt": "2026-09-27"
+    }
+  ],
+  "internalEvidence": "Fetched the official Hasbro-hosted PDF and extracted its text with pdftotext. \"Setting Up Your Game — 4. Divide into two teams (Team A and Team B). It doesn't matter if one team has one more player than the other.\" \"Taking Turns — 1. Team A chooses a player to be their first Clue-giver.\" No sentence in the document explains how the two teams are labeled A and B or which one begins.",
+  "uncertainty": [
+    "The rules never specify a criterion for which team becomes \"Team A\" and therefore goes first; it is implicitly left to the players."
+  ]
+}

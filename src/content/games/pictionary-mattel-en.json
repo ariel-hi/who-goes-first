@@ -1,0 +1,36 @@
+{
+  "id": "pictionary-mattel-en",
+  "slug": "pictionary-mattel-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
+  "approvedRevision": "775c4bfeda9f30ad56752217821d1ebda14535360f5f7b13720feb402f8ccc3a",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Pictionary",
+  "aliases": [],
+  "editionLabel": "Mattel English rules, item DKD47",
+  "firstPlayerRule": "Each team selects a Picturist, then the die is rolled to determine the order of play: the highest-rolling team starts. The Start space is always the yellow category, so the die is not rolled to choose the first word — only to decide which team begins.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not state a tie-break for equal rolls; this site's house-rule fallback is to have just the tied teams roll again.",
+  "clarifications": [
+    "The Picturist must change each time a team sketches a new word.",
+    "If a team has a younger player, that team always uses the Junior Card Deck instead of the Adult Card Deck."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/DKD47-Eng.pdf",
+      "title": "Pictionary — Instruction Sheet (DKD47)",
+      "publisher": "Mattel",
+      "printedPages": ["1", "2"],
+      "pdfPagesOneBased": [1, 2],
+      "location": "\"Set Up\" section and \"How to Play\" opening paragraph",
+      "checkedAt": "2026-09-27"
+    }
+  ],
+  "internalEvidence": "Fetched the official Mattel instruction-sheet PDF and extracted its text with pdftotext. \"SET UP — ... Each team selects a Picturist – a player who will sketch the first word. The die is rolled to determine the order of play. The highest rolling team starts.\" \"HOW TO PLAY — The Start space is a yellow square ... so the first word to be played is from the yellow category. The die is NOT rolled to start.\" This confirms the die roll picks the starting team, while the first category is fixed by the board rather than by the roll.",
+  "uncertainty": [
+    "No tie-break is stated if two or more teams roll the same highest number."
+  ]
+}
