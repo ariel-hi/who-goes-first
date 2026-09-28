@@ -3,10 +3,10 @@
   "slug": "harbour-tmg-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7ac627e5ed4e10c8ab5d588196b1a2e453003447842ba768f627d3bc0f556925",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "02fcf7d5e126a341a46452e6f6ade13cf359c4308ce70067721a55e86da610de",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Harbour",
   "aliases": [],
   "editionLabel": "Tasty Minstrel Games English rules, 2014",
@@ -33,5 +33,22 @@
   "internalEvidence": "Rendered and rotated PDF page 1 states the boat criterion and clockwise play. The same sheet credits Tasty Minstrel Games ©2014; player pawns, market board, building cards and goods markers match inventory BGG 155969. SHA-256: fefa1db3b451042edcdf6bf1d880cb964a989f8bfd85eaa170a042db431de753. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players last on the same boat."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/harbour-tmg-2014-en-cover.jpg",
+    "alt": "Harbour Tasty Minstrel Games base-game box",
+    "width": 332,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.boardgamebliss.com/products/harbour",
+      "publisher": "Board Game Bliss retailer, Tasty Minstrel Games cover artwork"
+    },
+    "fairUse": {
+      "rightsHolder": "Tasty Minstrel Games and original cover artists (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Board Game Bliss product image https://www.boardgamebliss.com/cdn/shop/products/pic2399293_lg.jpg?v=1578608991&width=900 bears Scott Almes title and TMG logo; retailer base-game SKU TTT3002 matches the 2014 Tasty Minstrel Games Harbour record, distinct from the High Tide expansion.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

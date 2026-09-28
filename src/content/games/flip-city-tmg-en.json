@@ -3,10 +3,10 @@
   "slug": "flip-city-tmg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "7f3f7a8cc2893ae054d62d18ff2af943f70a128d1f9f8103f0f1f1ea2a377ee1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "3e26cba1198a8a197385a0962b255c14c9943518ccc17785b886b4e7062643ac",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Flip City",
   "aliases": [],
   "editionLabel": "Tasty Minstrel Games 2015 English rulebook",
@@ -33,5 +33,22 @@
     }
   ],
   "internalEvidence": "Visually checked publisher-authored 2015 Tasty Minstrel Games / Homosapiens Lab English rules, preserved by the Dice Tower Library. The first PDF spread states 'last player to have flipped a table' in Preparation step 3. SHA-256: 2c8f665c4aa272f523db3c408691d36f245857591ac6fb5189da4e096ec6487b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, first-player instruction, optional wording, and setup-versus-play turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/flip-city-tmg-en-cover.jpg",
+    "alt": "Flip City 2015 Tasty Minstrel Games box",
+    "width": 334,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://rulesofplay.co.uk/products/flip-city",
+      "publisher": "Rules of Play retailer, Tasty Minstrel Games / Homosapiens Lab cover artwork"
+    },
+    "fairUse": {
+      "rightsHolder": "Tasty Minstrel Games and original cover artists (precise ownership not stated on product pages)",
+      "rationale": "Small, compressed product cover identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Rules of Play product image https://rulesofplay.co.uk/cdn/shop/products/4430_57024fd727f472.19807210_Flip_20City_20Artwork_large_98f97e20-ea5f-4999-8fae-2402148f071c_401x600.png?v=1615547974 visibly bears the Homosapiens Lab and TMG logos. Retailer SKU TTT3009 matches the 2015 Tasty Minstrel Games boxed edition at https://www.nobleknight.com/P/2147590489/Flip-City and the approved English 2015 rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
