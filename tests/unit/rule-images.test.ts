@@ -32,7 +32,8 @@ test('BGG, search results, and Amazon images cannot supply locally hosted rule a
 });
 
 test('image metadata and licence edits are bound to editorial approval', () => {
-  const unillustrated = readRecords('src/content/games').find(record => !('image' in record));
+  const unillustrated = readRecords('src/content/games').find(record =>
+    typeof record === 'object' && record !== null && !('image' in record));
   if (!unillustrated) throw new Error('Expected an unillustrated rule for the fallback test');
   const rule = ruleSchema.parse(unillustrated);
   expect(() => assertPublishable(rule)).not.toThrow();
