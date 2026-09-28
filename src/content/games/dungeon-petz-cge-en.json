@@ -3,13 +3,30 @@
   "slug": "dungeon-petz-cge-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "aa020952db0182116d41faf467d93f03d8dad63ad8a0cb44233a5e911733d805",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "db1aac1402bb5b6cc60e223cce8a1c8cee03143589b5eba94280e5a6e749a8ed",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Dungeon Petz",
   "aliases": [],
   "editionLabel": "English CGE base-game publisher rules",
+  "image": {
+    "file": "/images/games/dungeon-petz-cge-en-cover.jpg",
+    "alt": "Official product image showing the Dungeon Petz game box",
+    "width": 367,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67ebe7e7200f5ec6b483f362_Box%20image.webp",
+      "publisher": "Czech Games Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Czech Games Edition and its credited cover illustrators",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Czech Games Edition product page: https://www.czechgames.com/games/dungeon-petz. Edition match: English CGE Dungeon Petz base-game box. Original image URL: https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67ebe7e7200f5ec6b483f362_Box%20image.webp",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever fed a pet most recently receives the starting-player token. The rules also permit choosing its holder randomly or by agreement.",
   "officialTieBreak": "For shopping groups of equal size, resolve them clockwise beginning with the starting-player token holder. Choosing that token holder randomly is also an official setup alternative.",
   "houseFallback": null,

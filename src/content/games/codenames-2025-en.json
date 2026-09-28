@@ -3,15 +3,32 @@
   "slug": "codenames-2025-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex public-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "46ba5ed127acb2875fd45e46d7b7052a33e2a613d7273160be59c64c1bc78ec5",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "79eed7ed244749629e025e0ae40288751ce5c95a5d3668cdef8cbf687fc058ac",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Codenames",
   "aliases": [
     "Code Names"
   ],
   "editionLabel": "Czech Games Edition English base game · 2025 revision",
+  "image": {
+    "file": "/images/games/codenames-2025-en-cover.jpg",
+    "alt": "Official product image showing the Codenames game box",
+    "width": 293,
+    "height": 440,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/6836d01be6d1472eccb6fb20_web-box.webp",
+      "publisher": "Czech Games Edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Czech Games Edition and its credited cover illustrators",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Czech Games Edition product page: https://www.czechgames.com/games/codenames. Edition match: CGE refreshed Codenames box corresponding to the 2025 English rules. Original image URL: https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/6836d01be6d1472eccb6fb20_web-box.webp",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The key card determines the starting team: its edge indicators show that team’s color. That team’s spymaster gives the first clue.",
   "officialTieBreak": "Not applicable: the key card identifies the starting team.",
   "houseFallback": null,
