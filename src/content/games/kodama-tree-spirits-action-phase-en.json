@@ -3,10 +3,10 @@
   "slug": "kodama-tree-spirits-action-phase-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "1e835d3d411e9ab0b6b498d275302b3b523ed7080b242f89332878a2a3826f1d",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "5d11a0c8a01987aa4ae95c5836f3ecb87292ea03c058a1b8afa2450a56189a8c",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Kodama: The Tree Spirits",
   "aliases": [],
   "editionLabel": "Action Phase Games English rulebook, 2015",
@@ -38,5 +38,22 @@
   "internalEvidence": "A complete Action Phase Games booklet preserved by a game-rule archive was inspected. PDF pages 4 and 8 were rendered and read; page 8 carries the 2015 publisher credit. The title and Daniel Solis design credit match inventory BGG 181810. SHA-256: 7d2eaf995be9c2d1f6021c5d33feebaff7d0b74d6b10f2b5c5de36bfff2387b3. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the exact opening instruction, game identity and edition against the cited rendered rulebook.",
   "uncertainty": [
     "The rules give no procedure for equal amounts of green clothing at the initial selection."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/kodama-tree-spirits-action-phase-en-cover.jpg",
+    "alt": "Kodama: The Tree Spirits Action Phase and Indie Boards 2016 box cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://indieboardsandcards.com/our-games/kodama-the-tree-spirits/",
+      "publisher": "Indie Boards & Cards / Action Phase Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Indie Boards & Cards, Action Phase Games, and cover-art creators (precise ownership not stated on publisher page)",
+      "rationale": "Small, compressed publisher box image identifies the original Kodama game described in this editorial rule explanation.",
+      "provenance": "Indie Boards & Cards official game page identifies Kodama: The Tree Spirits as its 2016 release and displays an Action Phase Games-branded box. Direct publisher image: https://indieboardsandcards.com/wp-content/uploads/2019/10/Untitled-design-6.png. The approved Action Phase English rulebook carries a 2015 copyright for this original game.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
