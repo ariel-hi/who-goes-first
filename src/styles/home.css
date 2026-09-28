@@ -9,6 +9,9 @@
 .home-page:has(.picker[data-large=true]) .home-layout { grid-template-columns:1fr; }
 .home-page:has(.picker[data-large=true]) .home-rules { margin-top:0; }
 .rule-lookup-answer { display:block; margin-top:4px; font-size:13px; font-weight:400; line-height:1.45; color:var(--muted); }
+.home-quick-rules { margin-top:12px; color:var(--muted); font-size:12px; line-height:1.5; }
+.home-quick-rules ul { display:flex; flex-wrap:wrap; column-gap:12px; row-gap:4px; list-style:none; margin:3px 0 0; padding:0; }
+.home-quick-rules a { color:var(--green); }
 .home-random-rule { border-top:1px solid var(--line); margin-top:21px; padding-top:20px; }
 .home-random-rule h3 { font-family:Georgia,serif; font-size:23px; font-weight:400; letter-spacing:-.4px; margin:0 0 13px; }
 .home-random-game { color:var(--muted); font-size:12px; margin:0 0 9px; }
