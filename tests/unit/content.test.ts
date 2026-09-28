@@ -479,7 +479,7 @@ test('qualified pending identities remain distinct without borrowing related rul
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(146);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(152);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -599,12 +599,20 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 146, hold: 142, reviewed: 192, unreviewed: 96, additionalAccepted: 135 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(146);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(142);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(192);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(96);
-  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(46);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 152, hold: 136, reviewed: 201, unreviewed: 87, additionalAccepted: 141 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(152);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(136);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(201);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(87);
+  expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(49);
+  const nativeGames = getBoardGames();
+  for (const [id, name] of [['14013', 'In Extremis'], ['39406', 'Talat'], ['50912', 'Labor Chaos'], ['245371', 'Vejen'], ['255027', 'Quinque'], ['423560', 'Борщ']] as const) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ displayName: name, decision: 'accept', reviewed: true, idEvidenceStatus: 'wikidata-own-P2339-plus-primary-physical-identity', startingRuleApproved: false, editionRuleTransferApproved: false });
+    expect(nativeGames.find(game => game.bggId === id)?.rules).toEqual([]);
+  }
+  for (const id of ['1869', '41783', '266078']) {
+    expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'hold', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
+  }
   for (const id of ['131000', '136246', '195842']) {
     expect(decisions.find(decision => decision.bggId === id)).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });
   }
