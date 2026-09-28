@@ -3,10 +3,10 @@
   "slug": "farm-club-blam-2022-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "771af62eb0e0b517e194e09ff3c6dba6b5b069445948615baf2c427634a49b3b",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "bd339e80bf449a9edde41eb699585e1061434d3a9ce5258760cf683986375754",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Farm Club",
   "aliases": [],
   "editionLabel": "BLAM! English rules, 2022",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 1, printed page 2, states the recent-animal-attack criterion and cat-scratch qualification. The publisher product page identifies the BLAM! game; animal pawns, Goal and Clan cards and Farm boards match inventory BGG 358790. SHA-256: 0cc6861cbf4dca4e1ac3d0ab27860565afb486614c88c8fc9277ae87add08bca. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure or fallback is stated if no player recalls an animal attack."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/farm-club-blam-2022-en-cover.jpg",
+    "alt": "Farm Club pink game box with pig face",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blam-edition.com/en/produit/farm-club/",
+      "publisher": "BLAM!"
+    },
+    "fairUse": {
+      "rightsHolder": "BLAM! and its credited artists (precise cover-art ownership unverified)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Product page https://blam-edition.com/en/produit/farm-club/ supplies original image https://blam-edition.com/wp-content/uploads/2023/12/packshot-farm-club_jeu-de-societe_blam-edition.png. BLAM! Farm Club base-game packaging matches the English 2022 rulebook title.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

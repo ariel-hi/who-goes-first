@@ -3,10 +3,10 @@
   "slug": "hang-four-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "2385f5d5afe4cc31f0dd99f4619061d8ac7f4917f9c2c7af2e9eb747f3276c04",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "cc5c05f81e49367d1a5f297d4f79602495fdb9cb9d426ff86b63e0dce82f283e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Hang Four",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/hang-four-gamewright-en-cover.jpg",
+    "alt": "Hang Four Gamewright game box and components",
+    "width": 500,
+    "height": 455,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/product/Hang-Four",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Gamewright product page https://gamewright.com/product/Hang-Four; original high-resolution product image https://gamewright.com/images/twenty/GAMEWRIGHT-5514.jpg. Box design and game title match the cited Gamewright English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

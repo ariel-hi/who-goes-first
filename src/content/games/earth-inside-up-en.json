@@ -3,10 +3,10 @@
   "slug": "earth-inside-up-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "fc85fb30aae9a8e78d3539848dee31ad6941a2c6831b206258d6ef1f8d980ce9",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8b5f3dc6c1ab1dde06bfc402d4ba72c624e0eb17b981ee1183b90638f3cb15d4",
   "publishedAt": "2026-09-27",
-  "materiallyUpdatedAt": "2026-09-27",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Earth",
   "aliases": [],
   "editionLabel": "Inside Up English base game",
@@ -35,5 +35,22 @@
     }
   ],
   "internalEvidence": "Current Inside Up Earth product links public Drive rulebook collection. Followed Earth folder to single-page English manual. Rendered pages 3 and 5 establish random starter and clockwise active-player choice, distinct from simultaneous follower benefits. Source custody: research/source-files/popular-sep26-12/earth.pdf; SHA-256 56ab0dd3256d1331ca077d40ab282eabb3825f214ed55703986312a3f568c2ed. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/earth-inside-up-en-cover.jpg",
+    "alt": "Earth board game box with mountain and waterfall cover art",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://insideupgames.com/our-games/earth-board-game/",
+      "publisher": "Inside Up Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Inside Up Games and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed box-cover reproduction identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Inside Up Games Earth product page https://insideupgames.com/our-games/earth-board-game/; original product image https://insideupgames.com/wp-content/uploads/2023/02/Earth-product-image.jpg. English base-game box title and artwork match the cited Inside Up edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

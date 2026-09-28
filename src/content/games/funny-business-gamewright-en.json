@@ -3,10 +3,10 @@
   "slug": "funny-business-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "a3c2339f4722ab82ad43af011466d87b02a603008c47d0ee9d3057ff784322f1",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "72f8f47601d1019f9142444e64fcbe7cbbc33f08be73afe7823d3055cc551f94",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Funny Business",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -32,5 +32,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/funny-business-gamewright-en-cover.jpg",
+    "alt": "Funny Business Gamewright game box and components",
+    "width": 500,
+    "height": 428,
+    "presentation": "cover",
+    "source": {
+      "url": "https://gamewright.com/product/Funny-Business",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Gamewright product page https://gamewright.com/product/Funny-Business; original high-resolution product image https://gamewright.com/images/twenty/GAMEWRIGHT-7107.jpg. Box design and game title match the cited Gamewright English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

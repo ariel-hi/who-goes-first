@@ -3,10 +3,10 @@
   "slug": "fischfutter-amigo-en-v1-0-base",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root; complete original source reading corroborated by /root/motion_polish_audit; owner delegated source review on 2026-09-22",
-  "approvedRevision": "3b9527d4a5ac60704be6aab0ea8e7c9a352704e79f8cfd35cdf6fd3d3647b052",
+  "approvedBy": "Codex /root; complete original source reading corroborated by /root/motion_polish_audit; owner delegated source review on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "f10ecf29c818cfa468a5ff33e4bd121356b47c482c8f6eb3d4ca1b7bfdd096ff",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Fischfutter",
   "aliases": [],
   "editionLabel": "AMIGO English rules, Version 1.0 — competitive base game (2–5 players)",
@@ -41,5 +41,22 @@
     "The source does not define how to measure bravery, run a challenge or resolve equal claims. The random fallback is an optional original house convention, not an official procedure.",
     "Version 1.0 and copyright 2025 are visible, but no printing year is established. December 2024 PDF metadata, November 2025 listing/response dates and the saved Wikidata year do not prove a printing.",
     "This exact English competitive base rule is reviewed. Super-Bitey has no individual starter; other languages/versions, formal Luck/Memory variants, translated aliases and creator or numeric metadata repairs are not proposed."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/fischfutter-amigo-en-v1-0-base-cover.jpg",
+    "alt": "Fischfutter game box with green fish artwork",
+    "width": 399,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.amigo-spiele.de/fischfutter_2503_1251",
+      "publisher": "AMIGO"
+    },
+    "fairUse": {
+      "rightsHolder": "AMIGO and its credited artists (precise cover-art ownership unverified)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Product page https://www.amigo-spiele.de/fischfutter_2503_1251 supplies original image https://cdn02.plentyone.com/eyyhwht1a3iu/item/images/2503/full/02503-schachtel-20082025.jpg. AMIGO Fischfutter base-game packaging matches the cited Version 1.0 rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

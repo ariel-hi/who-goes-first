@@ -3,10 +3,10 @@
   "slug": "iota-gamewright-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "49cc0346c1e0b40040d04eb56325b71d7b39a2793c0eeb2e6418f498f9291124",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "2995476f25dd874c22e1a306e712eb7a91d081a8c879f1386296074aab85d67f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "IOTA",
   "aliases": [],
   "editionLabel": "English Gamewright rules",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No tie-break is stated alongside this starting instruction.",
     "Other editions were not compared. The edition label identifies the linked publisher PDF, not an inferred publication year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/iota-gamewright-en-cover.jpg",
+    "alt": "IOTA Gamewright game box and components",
+    "width": 500,
+    "height": 428,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.gamewright.com/product/IOTA",
+      "publisher": "Gamewright"
+    },
+    "fairUse": {
+      "rightsHolder": "Gamewright and its credited artists (specific cover-art ownership not stated on product page)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Official Gamewright product page https://www.gamewright.com/product/IOTA; original high-resolution product image https://gamewright.com/images/twenty/GAMEWRIGHT-246.jpg. Box design and game title match the cited Gamewright English rules; exact printing is not distinguished.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

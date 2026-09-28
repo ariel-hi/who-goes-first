@@ -3,10 +3,10 @@
   "slug": "everdell-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "4238e9f96eac16310086181ea4efa3f58fa7ee1ef3c9f1f5f8ffa597e05ccd10",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "88c8af5f709bb2217acddf1f4352c7ad656125135ea62b0c4c33aba161583127",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Everdell",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German base rules, English summary",
@@ -37,5 +37,22 @@
     "The German criterion is genügsamste: most content with little or least demanding. The source supplies no objective test.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/everdell-pegasus-de-summary-cover.jpg",
+    "alt": "Everdell Pegasus German edition game box with forest creatures",
+    "width": 440,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pegasus.de/Everdell/57600G",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele and its licensors/artists (precise cover-art ownership unverified)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Product page https://pegasus.de/Everdell/57600G supplies original image https://cdn.pegasus.de/public/media/cc/23/96/1717754336/4250231727238ssmzpzsj8gc1e.jpg?ts=1767598654. German Pegasus Spiele base-game packaging matches the cited German base rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

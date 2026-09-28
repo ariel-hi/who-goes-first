@@ -3,10 +3,10 @@
   "slug": "electropolis-homosapiens-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "d91caf8c0c1a85e4946b4e2be621edd8681cab141c492f14a5b43e9e972e2f04",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "35c71ddc2891a13b3e6cda69a1e5a9aea1c98db1487a9c458ff3d2bde28c0064",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Electropolis",
   "aliases": [],
   "editionLabel": "Homosapiens Lab 2019 English translation",
@@ -34,5 +34,22 @@
     }
   ],
   "internalEvidence": "Visually checked image-only 2019 Homosapiens Lab English translation, first PDF spread, preserved by Tesera. Setup step 8-2 identifies the most recent biggest electricity-bill payer and assigns ascending spaces clockwise; game play starts at the bill icon. SHA-256: 210010649e135b96f93857685e17f02f8099fd1a40afeceee34513f795f13997. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-23: Rechecked the edition, opening instruction, official alternative if present, and stated later turn order.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/electropolis-homosapiens-en-cover.jpg",
+    "alt": "Electropolis box with Chinese title and power plant graphic",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.tbd-gaming.com/en/products/electropolis",
+      "publisher": "Taiwan Boardgame Design"
+    },
+    "fairUse": {
+      "rightsHolder": "Homosapiens Lab / Taiwan Boardgame Design (precise cover-art ownership unverified)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Product page https://www.tbd-gaming.com/en/products/electropolis supplies original image https://cdn-general.cybassets.com/media/W1siZiIsIjE4MzY3L3Byb2R1Y3RzLzMzODA5MzQ5LzE2NzgxMTU0ODJfZTIwZTgxYjg3NWVhODk2ZGQwOTMucG5nIl0sWyJwIiwidGh1bWIiLCI0ODB4NDgwIl1d.png?sha=0618db5eb7580165. Original Taiwan product packaging matches the Homosapiens Lab game whose English translated rules are cited.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

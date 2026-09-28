@@ -3,10 +3,10 @@
   "slug": "first-rat-pegasus-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "39c2971d1d9451a740c6220e3ef69587e61b6ad8fb2342e0d59ee22444437b07",
+  "approvedBy": "Codex edition-label review, authorized by the owner on 2026-09-25; Codex edition and fair-use image review, owner-authorized 2026-09-28",
+  "approvedRevision": "bb20ea8d8e51a2051934ff8e2efa0fce06272e3e98d428314aacc860cd4406cd",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "First Rat",
   "aliases": [],
   "editionLabel": "Pegasus Spiele English rules, second printing",
@@ -39,5 +39,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/first-rat-pegasus-en-cover.jpg",
+    "alt": "First Rat game box with spacefaring rats",
+    "width": 339,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://pegasus.de/First-Rat/51232G",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele and its credited artists (precise cover-art ownership unverified)",
+      "rationale": "Small, compressed product image identifies the edition discussed in this editorial rule explanation and does not substitute for the game or original artwork.",
+      "provenance": "Product page https://pegasus.de/First-Rat/51232G supplies original image https://cdn.pegasus.de/public/media/3d/67/eb/1717755026/4250231729942.jpg?ts=1767598656. Pegasus First Rat base-game packaging matches the cited Pegasus English rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
