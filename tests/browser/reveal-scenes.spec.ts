@@ -36,6 +36,7 @@ test('dice placeholders fade before the final pips and the scene is decorative t
 });
 
 for (const method of methods) test(`${method.label} keeps the scene after completion and replay`, async ({ page }) => {
+  test.setTimeout(60000);
   await openMethod(page, method.path);
   await page.getByRole('button', { name: 'Pick a player' }).click();
   const scene = page.locator(method.scene);
@@ -45,11 +46,11 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
   await expect(scene).toHaveAttribute('data-settled', 'true');
   await expect(scene).toHaveAttribute('data-original-scene', 'yes');
   expect(await scene.evaluate((element, allowBalloonSheen) => element.getAnimations({ subtree: true })
-    .filter(animation => animation.effect?.getTiming().iterations === Infinity)
+    .filter(animation => animation instanceof CSSAnimation && ['piece-glimmer', 'filter-glimmer', 'shell-glimmer', 'surface-shimmer', 'balloon-shimmer', 'spinner-shimmer'].includes(animation.animationName))
     .every(animation => {
       if (!(animation instanceof CSSAnimation)) return false;
       const effect = animation.effect;
-      if (!(effect instanceof KeyframeEffect) || effect.getTiming().duration !== 6000) return false;
+      if (!(effect instanceof KeyframeEffect) || effect.getTiming().duration !== 2400 || effect.getTiming().iterations !== 1) return false;
       const target = effect.target;
       const frames = effect.getKeyframes();
       if (!(target instanceof Element) || frames.length < 2) return false;
@@ -87,13 +88,16 @@ for (const method of methods) test(`${method.label} keeps the scene after comple
       if (!clip || !document.getElementById(clip)?.matches('clipPath')) return false;
       const outline = element.querySelector(balloon ? '.survivor .balloon-shape>path:first-child' : '.spinner-winning-slice');
       if (!outline || document.getElementById(clip)?.querySelector('path')?.getAttribute('d') !== outline.getAttribute('d')) return false;
-      // Only the contained horizontal sheen may move after the reveal settles.
+      // Only the contained horizontal sheen moves during the final flourish.
       return onlyProperty('transform') && frames.every(frame => {
         if (typeof frame.transform !== 'string') return false;
         const matrix = new DOMMatrix(frame.transform);
         return matrix.is2D && matrix.a === 1 && matrix.b === 0 && matrix.c === 0 && matrix.d === 1 && matrix.f === 0 && matrix.e >= 0 && matrix.e <= (balloon ? 180 : 560);
       });
     }), method.path === 'balloon')).toBe(true);
+  expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).some(animation => animation instanceof CSSAnimation && ['piece-glimmer', 'filter-glimmer', 'shell-glimmer', 'surface-shimmer', 'balloon-shimmer', 'spinner-shimmer'].includes(animation.animationName)))).toBe(true);
+  expect(await scene.evaluate(element => element.getAnimations({ subtree: true }).every(animation => animation.effect?.getTiming().iterations !== Infinity))).toBe(true);
+  await expect.poll(() => scene.evaluate(element => element.getAnimations({ subtree: true }).filter(animation => animation.playState === 'running').length), { timeout: 5000 }).toBe(0);
   if (method.path !== 'spinner' && method.path !== 'balloon') {
     const surfaces = ({ cards: '.card-front', towers: '.block-stack i>span', straws: '.match-wood,.match-head', dice: '.die', coin: '.coin-face', shells: '.shell-pearl' } as Record<string, string>)[method.path]!;
     const reflections = await scene.locator(`.reveal-chosen :is(${surfaces})`).evaluateAll(elements => elements.map(element => getComputedStyle(element, '::before').animationName));
@@ -121,6 +125,8 @@ for (const mode of ['Quick', 'Instant']) test(`${mode} reflects light only on th
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   await expect(page.locator('.player.winner')).toHaveCount(1);
   expect(await page.locator('.player.winner .seat-token').evaluate(element => getComputedStyle(element, '::after').animationName)).toBe('surface-shimmer');
+  expect(await page.locator('.player.winner .seat-token').evaluate(element => element.getAnimations({ subtree: true }).every(animation => animation.effect?.getTiming().iterations === 1 && animation.effect?.getTiming().duration === 2400))).toBe(true);
+  await expect.poll(() => page.locator('.player.winner .seat-token').evaluate(element => element.getAnimations({ subtree: true }).filter(animation => animation.playState === 'running').length), { timeout: 5000 }).toBe(0);
   expect(await page.locator('.player:not(.winner) .seat-token').evaluateAll(elements => elements.every(element => getComputedStyle(element, '::after').animationName === 'none'))).toBe(true);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   expect(await page.locator('.picker').evaluate(element => element.getAnimations({ subtree: true }).length)).toBe(0);

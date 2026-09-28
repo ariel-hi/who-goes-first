@@ -211,6 +211,10 @@ test('native and language-neutral identities enroll only after primary identity 
     ['38195', 'Herr der Ziegen'], ['40234', 'Einauge sei wachsam'], ['191473', 'Speed Dice'],
     ['205766', 'Mino und Tauri'], ['262941', 'Dominant Species: Marine'], ['270314', 'Ohanami'],
     ['271519', 'Ecosystem'], ['300905', 'Top Ten'], ['419195', 'Fischen'], ['425549', 'Moon Colony Bloodbath'],
+    ['2086', 'Elfer raus!'], ['3119', 'Haste Worte?'], ['11973', 'Können Schweine fliegen?'],
+    ['91394', 'RinglDing'], ['191925', 'Bandido'], ['195372', 'Krazy Wordz'],
+    ['205885', 'X nimmt!'], ['246639', 'Patchwork Express'], ['271774', 'Sherlock Express'],
+    ['433007', 'Cascadia junior'], ['440540', 'Take Time'],
   ] as const) {
     expect(games.find(game => game.bggId === id)).toMatchObject({ name, rules: [] });
   }
@@ -246,7 +250,7 @@ test('native and language-neutral identities enroll only after primary identity 
   }
   expect(new Set(games.map(game => game.identityId)).size).toBe(games.length);
   // Edition ambiguities, failed primary retrievals and unreviewed labels stay excluded.
-  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2086', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
+  for (const id of ['258', '270', '281', '995', '1055', '1137', '1869', '2510', '2965', '41829', '84732', '150145', '205597', '318243', '447998', '418683', '406454']) {
     expect(games.some(game => game.bggId === id)).toBe(false);
   }
 });
@@ -275,7 +279,7 @@ test('qualified pending identities remain distinct without borrowing related rul
 test('native identity validation rejects stale or unsupported acceptance evidence', () => {
   const snapshotText = readFileSync('research/coverage/wikidata-native-title-leads.json', 'utf8');
   const decisionsText = readFileSync('research/coverage/wikidata-native-title-decisions.json', 'utf8');
-  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(65);
+  expect(nativeIdentityAdditions(snapshotText, decisionsText, []).games).toHaveLength(76);
   const mutateDecision = (change: (review: ReturnType<typeof JSON.parse>) => void) => {
     const review = JSON.parse(decisionsText); change(review);
     return () => nativeIdentityAdditions(snapshotText, JSON.stringify(review), []);
@@ -395,11 +399,11 @@ test('native acceptance distinguishes semantic and direct numeric proof while re
     idProvenance: unknown;
     semanticIdentityEvidence?: { primaryNumericHrefObserved: boolean; relatedQidResolution: { entities: Array<{ wikidataId: string; hasEnglishLabel: boolean; labels: Record<string, unknown> }> } };
   }>;
-  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 65, hold: 223, reviewed: 77, unreviewed: 211, additionalAccepted: 55 });
-  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(65);
-  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(223);
-  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(77);
-  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(211);
+  expect(review.counts).toMatchObject({ totalCandidates: 288, accept: 76, hold: 212, reviewed: 88, unreviewed: 200, additionalAccepted: 66 });
+  expect(decisions.filter(decision => decision.decision === 'accept')).toHaveLength(76);
+  expect(decisions.filter(decision => decision.decision === 'hold')).toHaveLength(212);
+  expect(decisions.filter(decision => decision.reviewed)).toHaveLength(88);
+  expect(decisions.filter(decision => !decision.reviewed)).toHaveLength(200);
   expect(decisions.filter(decision => decision.reviewed && decision.decision === 'hold')).toHaveLength(12);
   const shadow = review.decisions.find((item: { bggId: string }) => item.bggId === '451923');
   expect(shadow).toMatchObject({ decision: 'accept', reviewed: true, startingRuleApproved: false, editionRuleTransferApproved: false });

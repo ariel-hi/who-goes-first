@@ -167,6 +167,10 @@ test('new native game identities remain searchable without borrowed starting rul
     ['38195', 'Herr der Ziegen'], ['40234', 'Einauge sei wachsam'], ['191473', 'Speed Dice'],
     ['205766', 'Mino und Tauri'], ['262941', 'Dominant Species: Marine'], ['270314', 'Ohanami'],
     ['271519', 'Ecosystem'], ['300905', 'Top Ten'], ['419195', 'Fischen'], ['425549', 'Moon Colony Bloodbath'],
+    ['2086', 'Elfer raus!'], ['3119', 'Haste Worte?'], ['11973', 'Können Schweine fliegen?'],
+    ['91394', 'RinglDing'], ['191925', 'Bandido'], ['195372', 'Krazy Wordz'],
+    ['205885', 'X nimmt!'], ['246639', 'Patchwork Express'], ['271774', 'Sherlock Express'],
+    ['433007', 'Cascadia junior'], ['440540', 'Take Time'],
   ] as const) {
     await input.fill(name);
     const row = page.locator(`[data-results] li[data-id="${id}"]`);
