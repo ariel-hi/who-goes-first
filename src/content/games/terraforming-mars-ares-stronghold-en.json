@@ -3,8 +3,8 @@
   "slug": "terraforming-mars-ares-stronghold-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "2bed9ee8861a337ab182cb717b5867682d3e71caa1a6680397e9d863419f7889",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "94788b906da2723c0a9d6ab54d048d536b48d6309affe6aca56636756fd873d1",
   "publishedAt": "2026-09-27",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Terraforming Mars: Ares Expedition",
@@ -37,5 +37,22 @@
   "internalEvidence": "Image-only publisher manual inspected as rendered pages: 8 setup ends Start the game; 10 explicitly simultaneous in every step/phase and simultaneous initial phase-card choice; 20 says no turns and shows Stronghold/Indie Game Studios 2021 credits. Current Fryx product did not expose a downloadable English base manual; expansion PDFs rejected for scope. Source custody: research/source-files/popular-sep26-12/ares.pdf; SHA-256 8bf2654ca58f7e2267ab3d290ad6525d870c2b368b3a57b840dc1f1e4d6addd4. Codex inspected cited passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The Stronghold-authored English base-game rulebook is preserved by a rulebook archive. This record does not cover the expansion rulebooks."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/terraforming-mars-ares-stronghold-en-cover.jpg",
+    "alt": "Terraforming Mars: Ares Expedition game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://strongholdgames.com/wp-content/uploads/sites/2/2024/05/TM-Ares-Exp-3D-Box.png",
+      "publisher": "Stronghold Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Stronghold Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Stronghold Games product page: https://strongholdgames.com/our-games/terraforming-mars-ares-expedition/. Exact publisher-hosted package image: https://strongholdgames.com/wp-content/uploads/sites/2/2024/05/TM-Ares-Exp-3D-Box.png. The package and game identity were visually reviewed against the article edition (Stronghold English base game).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

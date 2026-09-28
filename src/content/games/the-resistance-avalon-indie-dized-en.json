@@ -3,10 +3,10 @@
   "slug": "the-resistance-avalon-indie-dized-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "b57c7b80d3c8c788cb956a62f865165c4b742f142c424ba39b62619cbeb3f454",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "17c76c61bfe1e83c45736bd6c66b4362937bb9a812818f5b9fd8fe6237f3b29a",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Resistance: Avalon",
   "aliases": [
     "Avalon",
@@ -35,5 +35,22 @@
   "internalEvidence": "Saved and read the Dized rules page for Setup step 2: 'Randomly select a player and give that player the leader token. This player will be the leader at the start of the game.' The End of round page (rules.dized.com/game/rZluqS52QmGdpoVxcmVLtg/N1CwFhVhT62DAmDo-ukZTw/end-of-round), step 4: 'Pass the leader token clockwise to the next player and begin a new round.' The Dized landing page lists publisher Indie Game Studios and states 'These official rules are maintained and verified by the game publisher(s)'; 5-10 players with Merlin, Assassin and Lady of the Lake matches BGG 128882. SHA-256 of the saved setup page HTML: 744a34ff77dfd754c7f1e121ac0de266380999d4f0db804f3fe29e42d77d8bea. Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "This is the publisher-verified Dized online version, not a printed rulebook; no print edition year is shown."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-resistance-avalon-indie-dized-en-cover.jpg",
+    "alt": "The Resistance: Avalon game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://indieboardsandcards.com/wp-content/uploads/2019/10/Untitled-design-15.png",
+      "publisher": "Indie Boards & Cards"
+    },
+    "fairUse": {
+      "rightsHolder": "Indie Boards & Cards",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Indie Boards & Cards product page: https://indieboardsandcards.com/our-games/the-resistance-avalon/. Exact publisher-hosted package image: https://indieboardsandcards.com/wp-content/uploads/2019/10/Untitled-design-15.png. The package and game identity were visually reviewed against the article edition (Indie Boards & Cards official Dized rules).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

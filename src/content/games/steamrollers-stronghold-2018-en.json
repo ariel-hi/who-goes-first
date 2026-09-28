@@ -3,10 +3,10 @@
   "slug": "steamrollers-stronghold-2018-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6e1e4ffd37ea654b6187b53ce3141e48259afdd8fa59128d878e28a7cdcd3c08",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "670f7a74b891e60b0eeda2b87bc3fd3f2eb71dda56fffc5997268aefbfb99344",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "SteamRollers",
   "aliases": [],
   "editionLabel": "Stronghold Games English edition, 2018",
@@ -38,5 +38,22 @@
   "internalEvidence": "The Stronghold Games English booklet states the missed-train criterion in setup step 9 on page 2 and the first regular action on page 3. Page 8 credits Stronghold ©2018 under license from Flatlined Games, matching inventory BGG 182704. SHA-256: e5f431db787ac186966f7641db4ecd8d9ba958b5863ee3350bc0bef7c9978d0d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "No tie or no-qualifier fallback is stated."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/steamrollers-stronghold-2018-en-cover.jpg",
+    "alt": "SteamRollers game box cover",
+    "width": 540,
+    "height": 540,
+    "presentation": "cover",
+    "source": {
+      "url": "https://strongholdgames.com/wp-content/uploads/sites/2/2020/03/SteamRollers.jpg",
+      "publisher": "Stronghold Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Stronghold Games",
+      "rationale": "Reduced-size official game package art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official Stronghold Games product page: https://strongholdgames.com/our-games/steamrollers/. Exact publisher-hosted package image: https://strongholdgames.com/wp-content/uploads/sites/2/2020/03/SteamRollers.jpg. The package and game identity were visually reviewed against the article edition (Stronghold Games English edition, 2018).",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
