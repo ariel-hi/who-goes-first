@@ -3,13 +3,30 @@
   "slug": "zombicide-original-season-one-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "ce70f5e913fe2c70c8ea9a6fd05a32b02792ed202574efb5c96fd352ca7b60c2",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "f2e2171f61d0e0ea1e4418dc24d8f25df15362c2a5658e1d9daf90810a19995c",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Zombicide",
   "aliases": [],
   "editionLabel": "Classic Zombicide — original Season 1 English rules",
+  "image": {
+    "file": "/images/games/zombicide-original-season-one-en-rulebook-cover.jpg",
+    "alt": "Zombicide publisher rulebook cover",
+    "width": 387,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-zombicide-season-1.pdf",
+      "publisher": "Guillotine Games / CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "Guillotine Games / CMON (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-zombicide-season-1.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Decide together who starts, then give that player the first-player token. The rulebook explicitly says not to choose randomly because Zombicide is cooperative. The token holder takes the first turn.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -24,8 +41,12 @@
       "url": "https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-zombicide-season-1.pdf",
       "title": "Classic Zombicide — original Season 1 English rulebook",
       "publisher": "Guillotine Games / CMON",
-      "printedPages": ["4"],
-      "pdfPagesOneBased": [4],
+      "printedPages": [
+        "4"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
       "location": "Setup step 10 and Game Overview, Players’ Phase and End Phase",
       "checkedAt": "2026-09-28"
     }

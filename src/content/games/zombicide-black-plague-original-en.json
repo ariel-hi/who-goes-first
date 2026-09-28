@@ -3,13 +3,30 @@
   "slug": "zombicide-black-plague-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "352dd0a9354f6a42638ab3db53f9307da952f90de5a9e3b92cd8305b7c56dd21",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "4f03c7893465cf77fc45aba3e2628034a205fa709fc05068f13800c110bb488c",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Zombicide: Black Plague",
   "aliases": [],
   "editionLabel": "Original standalone Black Plague English base game",
+  "image": {
+    "file": "/images/games/zombicide-black-plague-original-en-rulebook-cover.jpg",
+    "alt": "Zombicide: Black Plague publisher rulebook cover",
+    "width": 387,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-black-plague.pdf",
+      "publisher": "Guillotine Games / CMON"
+    },
+    "fairUse": {
+      "rightsHolder": "Guillotine Games / CMON (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-black-plague.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Decide who starts and give that player the first-player token. The token holder takes the first turn; the next player is on their left.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -25,8 +42,14 @@
       "url": "https://cdn.svc.asmodee.net/production-zombicide/uploads/dl/rulebook-black-plague.pdf",
       "title": "Zombicide: Black Plague — original English rulebook",
       "publisher": "Guillotine Games / CMON",
-      "printedPages": ["7", "8"],
-      "pdfPagesOneBased": [7, 8],
+      "printedPages": [
+        "7",
+        "8"
+      ],
+      "pdfPagesOneBased": [
+        7,
+        8
+      ],
       "location": "Setup step 11; Game Overview, Players’ Phase and End Phase",
       "checkedAt": "2026-09-28"
     }

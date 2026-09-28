@@ -3,10 +3,10 @@
   "slug": "tigris-euphrates-ffg-2014-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "61ede854d93d9e7a5ef6929098ab49d2f13ce660a9e56798822ab232c3626cbb",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "63b082cc3da3c22b3663e658ab7ef4ff361bca04dbb84910e634c07beb3e9634",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tigris & Euphrates",
   "aliases": [
     "Tigris and Euphrates",
@@ -14,6 +14,23 @@
     "T&E"
   ],
   "editionLabel": "Fantasy Flight Games English rulebook, 2014",
+  "image": {
+    "file": "/images/games/tigris-euphrates-ffg-2014-en-rulebook-cover.jpg",
+    "alt": "Tigris & Euphrates publisher rulebook cover",
+    "width": 387,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/filer_public/bf/e1/bfe1ae7d-d41c-44d4-910b-86cd59324b38/kn25_rulebook_web.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://images-cdn.fantasyflightgames.com/filer_public/bf/e1/bfe1ae7d-d41c-44d4-910b-86cd59324b38/kn25_rulebook_web.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose a starting player at random: place all players' unification tiles face down, mix them, and pick one. Play proceeds clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,

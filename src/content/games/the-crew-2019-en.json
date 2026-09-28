@@ -3,10 +3,10 @@
   "slug": "the-crew-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "33b490a45f6e9f57734576d5d7c0eb40ef14e085e965cfe596ac0e07bb00959e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "f3d58ae927129ad6448010fadf00512685be541fc70500898ce55cf138fbf45a",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Crew: The Quest for Planet Nine",
   "aliases": [
     "The Crew",
@@ -14,6 +14,23 @@
     "The Crew Planet Nine"
   ],
   "editionLabel": "Thames & Kosmos English base game · copyright 2019, standard 3–5 player rules",
+  "image": {
+    "file": "/images/games/the-crew-2019-en-rulebook-cover.jpg",
+    "alt": "The Crew: The Quest for Planet Nine publisher rulebook cover",
+    "width": 353,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf",
+      "publisher": "Thames & Kosmos / KOSMOS"
+    },
+    "fairUse": {
+      "rightsHolder": "Thames & Kosmos / KOSMOS (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Whoever holds the four-rocket card becomes the commander. The commander chooses the first task and leads the first trick.",
   "officialTieBreak": "Not applicable: only one player holds the four-rocket card.",
   "houseFallback": null,

@@ -1,10 +1,32 @@
 {
   "id": "survive-the-island-zygomatic-en-2024",
   "slug": "survive-the-island-zygomatic-en-2024",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "0f37de48c48695164fc8e1718d4f613eb4f36cadfea1ddb6d96b1aeac99309b3",
+  "publishedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Survive the Island",
   "aliases": [],
-  "language": "en",
   "editionLabel": "Zygomatic English rulebook, 2024",
+  "image": {
+    "file": "/images/games/survive-the-island-zygomatic-en-2024-rulebook-cover.jpg",
+    "alt": "Survive the Island publisher rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2024/07/ZYGSTI01EN_RULES_20240227-low.pdf",
+      "publisher": "Zygomatic / Asmodee"
+    },
+    "fairUse": {
+      "rightsHolder": "Zygomatic / Asmodee (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://cdn.svc.asmodee.net/production-asmodeeca/uploads/2024/07/ZYGSTI01EN_RULES_20240227-low.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The last person to return safe and sound from an island is the first player.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -32,10 +54,5 @@
   "internalEvidence": "The Asmodee Canada product page https://www.asmodee.ca/en/product/survive-the-island/ links this Zygomatic manual. Printed/PDF page 2 directly assigns first player and the subsequent clockwise placement order; page 3 confirms clockwise game turns. Page 2 was rendered and read. The PDF's print date is 27 February 2024. Downloaded source SHA-256: 60e447bd8d8f7d93835e9eb43760c82cdb9648d9321123f1cfed775a59630c0a. Owner-authorized Codex editorial review, 2026-09-25.",
   "uncertainty": [
     "The booklet does not specify a tie-break or a method if nobody has returned from an island."
-  ],
-  "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "f9cc0efac13c89816c96be4bf960063c0266947ceff871d0b7a28a9f9732414b",
-  "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25"
+  ]
 }

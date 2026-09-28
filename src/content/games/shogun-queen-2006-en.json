@@ -3,13 +3,30 @@
   "slug": "shogun-queen-2006-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "91f0f7fb73e1c96f1c7d996b5caf0a0ecfdb1f06b5590e596ab539ebd5142cbf",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "8a6b1030b72de90baa4edada521968ef69febb055ae716de70e75a8b8d6cbe6c",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Shogun (Dirk Henn, 2006)",
   "aliases": [],
   "editionLabel": "Queen base game · 2006 (English)",
+  "image": {
+    "file": "/images/games/shogun-queen-2006-en-rulebook-cover.jpg",
+    "alt": "Shogun (Dirk Henn, 2006) publisher rulebook cover",
+    "width": 354,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://rules.queen-games.com/shogun_en.pdf",
+      "publisher": "Queen Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Queen Games (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://rules.queen-games.com/shogun_en.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Regular actions start with the player whose Daimyo card occupies the earliest turn-order position. Players establish those positions by choosing special cards after bidding and replacing them with their Daimyo cards.",
   "officialTieBreak": "For equal bids, shuffle the tied players' Daimyo cards and reveal them one at a time to determine their order of choosing special cards.",
   "houseFallback": null,

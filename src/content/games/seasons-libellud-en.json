@@ -3,13 +3,30 @@
   "slug": "seasons-libellud-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "c6089a0a9493c8e2979f3223a82eab4fdd5cf5f810f9f4b325a53c7de70e3c91",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "eb02215709d8988933dc299459f36aa1bea83b0415193dd81dcf51355de66f61",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Seasons",
   "aliases": [],
   "editionLabel": "Libellud English base game",
+  "image": {
+    "file": "/images/games/seasons-libellud-en-rulebook-cover.jpg",
+    "alt": "Seasons publisher rulebook cover",
+    "width": 500,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/08/SEASONS_RULES_EN_compressed.pdf",
+      "publisher": "Libellud"
+    },
+    "fairUse": {
+      "rightsHolder": "Libellud (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/08/SEASONS_RULES_EN_compressed.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The youngest player starts the first Tournament round by rolling the Season dice and choosing a die first.",
   "officialTieBreak": null,
   "houseFallback": "If the youngest players are tied, choose randomly among them.",

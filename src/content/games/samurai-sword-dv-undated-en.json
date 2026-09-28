@@ -3,13 +3,30 @@
   "slug": "samurai-sword-dv-undated-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex source review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6e22c38e2c567177326b7970cd5d08ed90664e23d4613c7e4094c296d9b853d4",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "21f7d0a54edfbcfb1a78111812f8d8f6253a48e6930f04182c0a67b1a5653a63",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Samurai Sword",
   "aliases": [],
   "editionLabel": "dV Giochi base game (English)",
+  "image": {
+    "file": "/images/games/samurai-sword-dv-undated-en-rulebook-cover.jpg",
+    "alt": "Samurai Sword publisher rulebook cover",
+    "width": 352,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.dvgiochi.com/giochi/samuraisword/download/Samurai%20Sword_Rules_EN.pdf",
+      "publisher": "dV Giochi / daVinci Editrice"
+    },
+    "fairUse": {
+      "rightsHolder": "dV Giochi / daVinci Editrice (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://www.dvgiochi.com/giochi/samuraisword/download/Samurai%20Sword_Rules_EN.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player dealt the Shogun role takes the first turn. Play then proceeds clockwise.",
   "officialTieBreak": null,
   "houseFallback": null,

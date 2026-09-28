@@ -3,15 +3,32 @@
   "slug": "sid-meiers-civilization-board-game-ffg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "ae8a885f1e6db920d029f2dd2d23f736403ea9a2bfca327cba03f9a6de19cdc3",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "df02f4657c683bbf98215c36ea6f49c493dc90a88a8134a6cba5a19972140f3d",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sid Meier's Civilization: The Board Game",
   "aliases": [
     "Civilization: The Board Game"
   ],
   "editionLabel": "Fantasy Flight Games English original board-game rulebook",
+  "image": {
+    "file": "/images/games/sid-meiers-civilization-board-game-ffg-en-rulebook-cover.jpg",
+    "alt": "Sid Meier's Civilization: The Board Game publisher rulebook cover",
+    "width": 387,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images-cdn.fantasyflightgames.com/ffg_content/civilization/support/civilization-rules.pdf",
+      "publisher": "Fantasy Flight Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Fantasy Flight Games (publisher of the cited rules; cover art may have additional creators or rights holders)",
+      "rationale": "Reduced-size cover of the cited publisher rulebook identifies the specific rules edition discussed in this independent article. It is contextual to the game and does not substitute for the game or complete manual. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official publisher-hosted rules PDF: https://images-cdn.fantasyflightgames.com/ffg_content/civilization/support/civilization-rules.pdf. This image is rendered from page 1 of that exact PDF, which is the source cited in this article. Visual review confirmed a title and edition-identifying cover design, not a plain instruction page.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "Choose whoever can trace their family history back the farthest, or select the first player at random.",
   "officialTieBreak": null,
   "houseFallback": null,
