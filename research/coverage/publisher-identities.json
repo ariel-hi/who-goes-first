@@ -2493,6 +2493,732 @@
       "reviewedBy": "Codex /root",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "0a597a6d09e91fa2ae2bceb5da79ab209d8773170ccc858e60b9ea97c487b925"
+    },
+    {
+      "identityId": "game-b86e3f84-054a-4268-9b49-4a17fd2e6dc5",
+      "routeKey": "game-b86e3f84-054a-4268-9b49-4a17fd2e6dc5",
+      "name": "Eggsposed",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Eggsposed, linked from its English game lineup; the individual publisher page credits a 2026 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Eggsposed; its Game Description identifies egg tiles in physical play, and its Credit section states Released in 2026.",
+      "publisherReferenceSourceId": "oink-eggsposed-product",
+      "sources": [
+        {
+          "id": "oink-eggsposed-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/eggsposed/",
+          "sha256": "266ac978a70dbc31b429f64d63dfb017dc883d33f121edcde7b410a0a598377c",
+          "byteCount": 213605,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (egg tiles); Credit Released in 2026. Original response body: eggsposed-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/eggsposed/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "293d943c9248dfb72e71e3e842ae3d1a15919edac7c691293ac4d28abbac16d0"
+    },
+    {
+      "identityId": "game-381cb29f-ad70-41da-bd42-9cced5180726",
+      "routeKey": "game-381cb29f-ad70-41da-bd42-9cced5180726",
+      "name": "Loop 40",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Loop 40, linked from its English game lineup; the individual publisher page credits a 2026 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Loop 40; its Game Description identifies cards from their hand in physical play, and its Credit section states Released in 2026.",
+      "publisherReferenceSourceId": "oink-loop-40-product",
+      "sources": [
+        {
+          "id": "oink-loop-40-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/loop-40/",
+          "sha256": "f5dc9ec3c4eea1881aa017d8f64f0130b0f49c9c2449ee545fa08b05feb9ead5",
+          "byteCount": 213898,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (cards from their hand); Credit Released in 2026. Original response body: loop-40-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/loop-40/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "89bb2334a9d9b7015248e47d4b715243dbc309658f5c2cec8730d3e94be722c9"
+    },
+    {
+      "identityId": "game-dfb836f6-37b8-4bca-b289-49ede32c35a4",
+      "routeKey": "game-dfb836f6-37b8-4bca-b289-49ede32c35a4",
+      "name": "The Frozen Passage",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled The Frozen Passage, linked from its English game lineup; the individual publisher page credits a 2026 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on The Frozen Passage; its Game Description identifies hexagonal cards in physical play, and its Credit section states Released in 2026.",
+      "publisherReferenceSourceId": "oink-the-frozen-passage-product",
+      "sources": [
+        {
+          "id": "oink-the-frozen-passage-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/the-frozen-passage/",
+          "sha256": "f0d37fbddde26b41969cd6cce93dde38787845e3dbe83fa34d7a472cc19f8c2f",
+          "byteCount": 215678,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (hexagonal cards); Credit Released in 2026. Original response body: the-frozen-passage-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/the-frozen-passage/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "db248de097b25c6634705ba76eb8b6c4702ddf61489d2b7dfb1c490b0c41d306"
+    },
+    {
+      "identityId": "game-8ea2e52b-cfdc-47ce-a631-231e7ceecad3",
+      "routeKey": "game-8ea2e52b-cfdc-47ce-a631-231e7ceecad3",
+      "name": "Compress",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Compress, linked from its English game lineup; the individual publisher page credits a 2026 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Compress; its Game Description identifies eight cards in physical play, and its Credit section states Released in 2026.",
+      "publisherReferenceSourceId": "oink-compress-product",
+      "sources": [
+        {
+          "id": "oink-compress-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/compress/",
+          "sha256": "5557e8563574987bf3b038338499afe740305ebff200281430229fd470b90df1",
+          "byteCount": 213958,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (eight cards); Credit Released in 2026. Original response body: compress-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/compress/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "cf0913bee323c4ef3f918a2029537e00e63994f6c66311e60e29545e54ff6c0d"
+    },
+    {
+      "identityId": "game-a821f216-a014-413c-8d26-0efc41a47268",
+      "routeKey": "game-a821f216-a014-413c-8d26-0efc41a47268",
+      "name": "Tropichaos",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Tropichaos, linked from its English game lineup; the individual publisher page credits a 2025 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Tropichaos; its Game Description identifies fruit chip in physical play, and its Credit section states Released in 2025.",
+      "publisherReferenceSourceId": "oink-tropichaos-product",
+      "sources": [
+        {
+          "id": "oink-tropichaos-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/tropichaos/",
+          "sha256": "4e3d62cd03b6195c21369e08c9ffb8705c0c957f811356dac83d1e2d9b8c1d3c",
+          "byteCount": 213779,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (fruit chip); Credit Released in 2025. Original response body: tropichaos-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/tropichaos/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "9481ee91c1fb4f892c3b73dc2c5ba8195b28d99776ff2068d486e5e5eeb24762"
+    },
+    {
+      "identityId": "game-00b97304-979b-4bcf-a188-e1d866f5ff84",
+      "routeKey": "game-00b97304-979b-4bcf-a188-e1d866f5ff84",
+      "name": "Pick 'n Packers",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Pick 'n Packers, linked from its English game lineup; the individual publisher page credits a 2025 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Pick 'n Packers; its Game Description identifies wooden drone piece in physical play, and its Credit section states Released in 2025.",
+      "publisherReferenceSourceId": "oink-pickn-packers-product",
+      "sources": [
+        {
+          "id": "oink-pickn-packers-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/pickn-packers/",
+          "sha256": "3c00a766fb647c2b1e4ce020bafb34a24caf7acb63f1320f609d52b9b3242127",
+          "byteCount": 214070,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (wooden drone piece); Credit Released in 2025. Original response body: pickn-packers-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/pickn-packers/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "6a1140953c5c06cc35c0ed8bcaae2a745b79713c0e1e71cfe2406cb64663cad2"
+    },
+    {
+      "identityId": "game-9b4ac2f0-c701-40da-98ca-eccd0005105e",
+      "routeKey": "game-9b4ac2f0-c701-40da-98ca-eccd0005105e",
+      "name": "TRND",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled TRND, linked from its English game lineup; the individual publisher page credits a 2024 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on TRND; its Game Description identifies nine types of cards in physical play, and its Credit section states Released in 2024.",
+      "publisherReferenceSourceId": "oink-trnd-product",
+      "sources": [
+        {
+          "id": "oink-trnd-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/trnd/",
+          "sha256": "c2b450ab8f691654ba9ae3ca593b37db6f866aee5b12957832c9de2c06fd8b9a",
+          "byteCount": 211856,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (nine types of cards); Credit Released in 2024. Original response body: trnd-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/trnd/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "c05993c07b0200ecb9c368eed422cde654f30ed6c7b82d15778b4d96d1a18f8d"
+    },
+    {
+      "identityId": "game-ab48283a-89e1-40b6-9be3-286c79a640bf",
+      "routeKey": "game-ab48283a-89e1-40b6-9be3-286c79a640bf",
+      "name": "Petiquette",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Petiquette, linked from its English game lineup; the individual publisher page credits a 2025 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Petiquette; its Game Description identifies cards with combinations in physical play, and its Credit section states Released in 2025.",
+      "publisherReferenceSourceId": "oink-petiquette-product",
+      "sources": [
+        {
+          "id": "oink-petiquette-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/petiquette/",
+          "sha256": "9353c03f901996405ad7fa4270d026d69a2ddd06fde1b06e1dc7bbed92c21d7b",
+          "byteCount": 213495,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (cards with combinations); Credit Released in 2025. Original response body: petiquette-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/petiquette/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "fa3aa01245e31a5230c7531d251ec053b2d8f9e170ac5a5c8966a5ad3c1bbb50"
+    },
+    {
+      "identityId": "game-8daef334-d32a-4bc6-9447-9a9697002194",
+      "routeKey": "game-8daef334-d32a-4bc6-9447-9a9697002194",
+      "name": "Wriggle Roulette",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Wriggle Roulette, linked from its English game lineup; the individual publisher page credits a 2025 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Wriggle Roulette; its Game Description identifies snake-shaped wooden pieces in physical play, and its Credit section states Released in 2025.",
+      "publisherReferenceSourceId": "oink-wriggle-roulette-product",
+      "sources": [
+        {
+          "id": "oink-wriggle-roulette-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/wriggle-roulette/",
+          "sha256": "3b185fe79e75f04554284c25dd35549279fc2d3bff6c4b9338f8fa1a667b5529",
+          "byteCount": 212870,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (snake-shaped wooden pieces); Credit Released in 2025. Original response body: wriggle-roulette-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/wriggle-roulette/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "390513998da817a88569cd002f43f4abe4472169031e261b39a35b3e3493c1d2"
+    },
+    {
+      "identityId": "game-9a2f53a4-a9dd-4867-947c-5efb6ecbf4f2",
+      "routeKey": "game-9a2f53a4-a9dd-4867-947c-5efb6ecbf4f2",
+      "name": "Souvenirs from Venice",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Souvenirs from Venice, linked from its English game lineup; the individual publisher page credits a 2024 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Souvenirs from Venice; its Game Description identifies gondola in physical play, and its Credit section states Released in 2024.",
+      "publisherReferenceSourceId": "oink-souvenirs-from-venice-product",
+      "sources": [
+        {
+          "id": "oink-souvenirs-from-venice-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/souvenirs-from-venice/",
+          "sha256": "7e3e6fadda49a0786d75fa043b50b2dd99cf9fc5ab13290e195c9f59a84773ec",
+          "byteCount": 215171,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (gondola); Credit Released in 2024. Original response body: souvenirs-from-venice-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/souvenirs-from-venice/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "0f9f66c026690fca57dc32c33a07be18fd817adc00e35e486b07f11a5126fdc0"
+    },
+    {
+      "identityId": "game-7eb2c5e7-abae-40ff-a55e-a2e1a869d266",
+      "routeKey": "game-7eb2c5e7-abae-40ff-a55e-a2e1a869d266",
+      "name": "Dying Message",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Dying Message, linked from its English game lineup; the individual publisher page credits a 2024 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Dying Message; its Game Description identifies 15 cards in physical play, and its Credit section states Released in 2024.",
+      "publisherReferenceSourceId": "oink-dying-message-product",
+      "sources": [
+        {
+          "id": "oink-dying-message-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/dying-message/",
+          "sha256": "ff5964a443169c5cb21d0e5db889f2fcb103031501cbd3066ed878a1c00601b6",
+          "byteCount": 214413,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (15 cards); Credit Released in 2024. Original response body: dying-message-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/dying-message/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "a87bd393395f8d1dc2409cea10e2a19669ed934f7725748a7ee575d67979662a"
+    },
+    {
+      "identityId": "game-c30d0ea5-b0fa-464e-9d2e-95000e7d271f",
+      "routeKey": "game-c30d0ea5-b0fa-464e-9d2e-95000e7d271f",
+      "name": "Moving Wild",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Moving Wild, linked from its English game lineup; the individual publisher page credits a 2024 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Moving Wild; its Game Description identifies card game in physical play, and its Credit section states Released in 2024.",
+      "publisherReferenceSourceId": "oink-moving-wild-product",
+      "sources": [
+        {
+          "id": "oink-moving-wild-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/moving-wild/",
+          "sha256": "6d4cec4173d57b37bb458e481157714741a9d97a579729fcf97cc8b556e9993f",
+          "byteCount": 213916,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (card game); Credit Released in 2024. Original response body: moving-wild-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/moving-wild/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "873a9117a89432840ceb31fdbe704f63ecfdfbcd049a9614f08e3ccbd6c0f989"
+    },
+    {
+      "identityId": "game-be59d2b6-6495-4a0d-98e3-81c82241a259",
+      "routeKey": "game-be59d2b6-6495-4a0d-98e3-81c82241a259",
+      "name": "DroPolter",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled DroPolter, linked from its English game lineup; the individual publisher page credits a 2023 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on DroPolter; its Game Description identifies theme card in physical play, and its Credit section states Released in 2023.",
+      "publisherReferenceSourceId": "oink-dropolter-product",
+      "sources": [
+        {
+          "id": "oink-dropolter-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/dropolter/",
+          "sha256": "e83419b8b7860b5f6b2fd7040f549e5056d7d134bd01b5b1ac239e5fd9f32c9f",
+          "byteCount": 211985,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (theme card); Credit Released in 2023. Original response body: dropolter-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/dropolter/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "fe4f90eb0f206c7e12303d32575ef1434c19d3c09b7d82ef394b4086a3ca1b3b"
+    },
+    {
+      "identityId": "game-733f33ef-d4f0-4dd4-9ec7-0f239ffc58e2",
+      "routeKey": "game-733f33ef-d4f0-4dd4-9ec7-0f239ffc58e2",
+      "name": "Rafter Five",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Rafter Five, linked from its English game lineup; the individual publisher page credits a 2023 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Rafter Five; its Game Description identifies rafter pieces in physical play, and its Credit section states Released in 2023.",
+      "publisherReferenceSourceId": "oink-rafter-five-product",
+      "sources": [
+        {
+          "id": "oink-rafter-five-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/rafter-five/",
+          "sha256": "dc813b9aea221fff45d0980269687f2bb1a21642a00c01a1849104da62ed89a7",
+          "byteCount": 214008,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (rafter pieces); Credit Released in 2023. Original response body: rafter-five-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/rafter-five/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "33d5db33a5370c9e05cc285e06e129d0a3265acba6389a5a2892b81cc61ac4fb"
+    },
+    {
+      "identityId": "game-145a8eb9-b3d7-459d-a2af-de572fe8ae58",
+      "routeKey": "game-145a8eb9-b3d7-459d-a2af-de572fe8ae58",
+      "name": "Town 77",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Town 77, linked from its English game lineup; the individual publisher page credits a 2023 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Town 77; its Game Description identifies Place tiles in physical play, and its Credit section states Released in 2023.",
+      "publisherReferenceSourceId": "oink-town-77-product",
+      "sources": [
+        {
+          "id": "oink-town-77-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/town-77/",
+          "sha256": "23880eaca5faf0a4c958db68642bc5a883cddf5d14f9f9b65e6dc13d0ab5e012",
+          "byteCount": 212457,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (Place tiles); Credit Released in 2023. Original response body: town-77-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/town-77/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "61b598eecb1fa3b1894b97078b60b494528591560608c06233b98f03e7fa1135"
+    },
+    {
+      "identityId": "game-c55470a1-e3eb-481c-a818-e7cd692716a0",
+      "routeKey": "game-c55470a1-e3eb-481c-a818-e7cd692716a0",
+      "name": "Quickity Pickity",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Quickity Pickity, linked from its English game lineup; the individual publisher page credits a 2022 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Quickity Pickity; its Game Description identifies tile-flipping in physical play, and its Credit section states Released in 2022.",
+      "publisherReferenceSourceId": "oink-quickity-pickity-product",
+      "sources": [
+        {
+          "id": "oink-quickity-pickity-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/quickity-pickity/",
+          "sha256": "70eb04dc28e042a1ed8cc1ee8a12c9c2f022d60c02925a3d85892f6e51f55c8d",
+          "byteCount": 211577,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (tile-flipping); Credit Released in 2022. Original response body: quickity-pickity-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/quickity-pickity/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "d116a0a5adaccc00712006cd673cf9ce19c9cda3beaf4d4282fa48abff1237ad"
+    },
+    {
+      "identityId": "game-6fe561cd-4855-49e6-a39c-25f1d251785b",
+      "routeKey": "game-6fe561cd-4855-49e6-a39c-25f1d251785b",
+      "name": "Order Overload: Cafe",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Order Overload: Cafe, linked from its English game lineup; the individual publisher page credits a 2022 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Order Overload: Cafe; its Game Description identifies Cards with orders in physical play, and its Credit section states Released in 2022.",
+      "publisherReferenceSourceId": "oink-order-overload-cafe-product",
+      "sources": [
+        {
+          "id": "oink-order-overload-cafe-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/order-overload-cafe/",
+          "sha256": "3c30122f9d7438430cd6bfc4f27895ede0c23345a7942f58ffca4c1a1b96eb8d",
+          "byteCount": 212592,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (Cards with orders); Credit Released in 2022. Original response body: order-overload-cafe-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/order-overload-cafe/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "048a4a230d83cb733ed7ddfb0663c5da69b6625ea27326571d0b2ad651cac6fc"
+    },
+    {
+      "identityId": "game-e3e9fac6-14dd-4dae-a257-4dbab3d23b76",
+      "routeKey": "game-e3e9fac6-14dd-4dae-a257-4dbab3d23b76",
+      "name": "Town 66",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Town 66, linked from its English game lineup; the individual publisher page credits a 2022 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Town 66; its Game Description identifies place the tiles in physical play, and its Credit section states Released in 2022.",
+      "publisherReferenceSourceId": "oink-town-66-product",
+      "sources": [
+        {
+          "id": "oink-town-66-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/town-66/",
+          "sha256": "387c471f4092aaf3428edaffd4f3d3914e1f137544d10a0163f5bc05daffe095",
+          "byteCount": 211526,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (place the tiles); Credit Released in 2022. Original response body: town-66-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/town-66/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "181a685c6f2c1e011ff2d16d05ef80b3e1c3c5cb09c0caf961efa2522601c21c"
+    },
+    {
+      "identityId": "game-4fd5fd22-3199-4c87-887b-5c241b23e484",
+      "routeKey": "game-4fd5fd22-3199-4c87-887b-5c241b23e484",
+      "name": "The Diamond Swap",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled The Diamond Swap, linked from its English game lineup; the individual publisher page credits a 2021 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on The Diamond Swap; its Game Description identifies diamond chips in physical play, and its Credit section states Released in 2021.",
+      "publisherReferenceSourceId": "oink-the-diamond-swap-product",
+      "sources": [
+        {
+          "id": "oink-the-diamond-swap-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/the-diamond-swap/",
+          "sha256": "0649f6c13688db7c4885ed231ea75517f71a499f54b35f240b503bad31741948",
+          "byteCount": 213206,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (diamond chips); Credit Released in 2021. Original response body: the-diamond-swap-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/the-diamond-swap/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "6b926deefd65cac9897897d34683ea0bc31f4712d28bd7c88107be9d021ccce4"
+    },
+    {
+      "identityId": "game-6bc1a61f-9fc4-45e4-a510-f7d5252d930c",
+      "routeKey": "game-6bc1a61f-9fc4-45e4-a510-f7d5252d930c",
+      "name": "Dokojong",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Dokojong, linked from its English game lineup; the individual publisher page credits a 2021 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Dokojong; its Game Description identifies five tiles in physical play, and its Credit section states Released in 2021.",
+      "publisherReferenceSourceId": "oink-dokojong-product",
+      "sources": [
+        {
+          "id": "oink-dokojong-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/dokojong/",
+          "sha256": "3b18c337f802bc45cf31846fdaac017d03dc2678b326e16f4f53e8a372741411",
+          "byteCount": 215849,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (five tiles); Credit Released in 2021. Original response body: dokojong-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/dokojong/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "48f7436267ee4f7bdfa1140163b5991560e7898c6591054f0c7aebdefbd8b979"
+    },
+    {
+      "identityId": "game-4de639a7-bbe3-4a30-9d94-d27c6cf291c5",
+      "routeKey": "game-4de639a7-bbe3-4a30-9d94-d27c6cf291c5",
+      "name": "DURIAN",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled DURIAN, linked from its English game lineup; the individual publisher page credits a 2020 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on DURIAN; its Game Description identifies 1 card each in physical play, and its Credit section states Released in 2020.",
+      "publisherReferenceSourceId": "oink-durian-product",
+      "sources": [
+        {
+          "id": "oink-durian-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/durian/",
+          "sha256": "4c7d463eced91c05ccd6ec983d09f4a94dda329f5101a028717990c5d72760eb",
+          "byteCount": 213631,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (1 card each); Credit Released in 2020. Original response body: durian-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/durian/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "ee771261ece36bafb4702828c1c754e7931f3d769871c01956d5f64dec7628f4"
+    },
+    {
+      "identityId": "game-b1ef8125-e4d3-4053-b438-dc399843c758",
+      "routeKey": "game-b1ef8125-e4d3-4053-b438-dc399843c758",
+      "name": "Fafnir",
+      "searchNames": [],
+      "publisher": "Oink Games",
+      "identityScope": "Physical Oink Games analog-game product titled Fafnir, linked from its English game lineup; the individual publisher page credits a 2019 release. No other edition, printing, territory, translated rule, or BGG correspondence is claimed.",
+      "identityEvidence": "The official analog-game catalog links directly to this product page. Its HTML title and two focal headings agree on Fafnir; its Game Description identifies two stones in physical play, and its Credit section states Released in 2019.",
+      "publisherReferenceSourceId": "oink-fafnir-product",
+      "sources": [
+        {
+          "id": "oink-fafnir-product",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/analog/fafnir/",
+          "sha256": "c0e1dbab5315146872084a6659d16b2c5db5547d98a46bc3937dde430340a1af",
+          "byteCount": 215854,
+          "location": "HTML title; two focal h3 headings; Game Description physical component cue (two stones); Credit Released in 2019. Original response body: fafnir-product.html."
+        },
+        {
+          "id": "oink-analog-lineup",
+          "kind": "primary-publisher",
+          "url": "https://oinkgames.com/en/games/",
+          "sha256": "660462a45ebc241d80d84f4c97726a56842d355c75c3aee5d68860c470dd6a3f",
+          "byteCount": 183259,
+          "location": "Official English analog-game lineup link to https://oinkgames.com/en/games/analog/fafnir/. Original response body: catalog.html."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "e7400d10f8629255ad564fbbe9c743d409f6706cfd80220bdf53342fa9f49958"
     }
   ]
 }
