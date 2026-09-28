@@ -3,13 +3,30 @@
   "slug": "aqualin",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "9902723195fc470e45a2baaadb8fcbc8073fb8be2f4304cfb73e3b1bf2c7ba5a",
+  "approvedBy": "Codex editorial cover review, owner-authorized fair-use approach on 2026-09-28",
+  "approvedRevision": "090fd8d49806c3997766a9bf0a3e87745c854c9af575f84cebc501d8f3d81a24",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Aqualin",
   "aliases": [],
   "editionLabel": "English Thames & Kosmos rules",
+  "image": {
+    "file": "/images/games/aqualin-cover.jpg",
+    "alt": "Official product image showing the Aqualin game box",
+    "width": 440,
+    "height": 433,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.kosmos.de/cdn/shop/files/4002051691554.png?v=1785988112&width=2048",
+      "publisher": "Kosmos"
+    },
+    "fairUse": {
+      "rightsHolder": "Franckh-Kosmos Verlags-GmbH & Co. KG",
+      "rationale": "Reduced packaging image used to identify the cited game edition in an independent first-player-rule reference; it does not substitute for the game or the artwork.",
+      "provenance": "Official Kosmos product page: https://www.kosmos.de/products/aqualin. Edition match: Aqualin article 691554 matches the article on the English Thames & Kosmos rulebook; German-market packaging of the same base game. Original image URL: https://www.kosmos.de/cdn/shop/files/4002051691554.png?v=1785988112&width=2048",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The player who was most recently in the ocean goes first.",
   "officialTieBreak": null,
   "houseFallback": "If this criterion does not suit your group, agree to choose randomly. This is a house rule.",
