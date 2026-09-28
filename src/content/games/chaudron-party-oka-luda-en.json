@@ -3,10 +3,10 @@
   "slug": "chaudron-party-oka-luda-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "cef6dfcc3d9936ab354919593f8b80cd74495a9769106b02e9c692843ad51ebb",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "8b6ca3bf2df3d14ec205dba14707dd3acbe11181c047c7f4dedd9a5686c06054",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Chaudron Party",
   "aliases": [],
   "editionLabel": "Oka Luda English rules",
@@ -31,5 +31,22 @@
   "internalEvidence": "Rendered PDF page 1 of the complete English Oka Luda booklet states the cooking criterion and toad-imitation fallback. Grégory Germain’s design credit, Cyril Bouquet art and 54-card contents match the publisher listing and inventory BGG 319997. SHA-256: 939d734740d4f470b8ffacc450eda830d8c6b3a8ba804958008dcd1f32405b6b. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules provide no tie procedure for equally recent cooking or toad imitations."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/chaudron-party-oka-luda-en-cover.jpg",
+    "alt": "Oka Luda Chaudron Party box with witch and forest animals",
+    "width": 352,
+    "height": 500,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.gigamic.com/1929-large_default/chaudron-party.jpg",
+      "publisher": "Gigamic listing for Oka Luda Chaudron Party"
+    },
+    "fairUse": {
+      "rightsHolder": "Oka Luda and credited artists",
+      "rationale": "Reduced game packaging or publisher cover art used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://www.gigamic.com/jeux-de-memoire/837-chaudron-party-3701273300091.html. Gigamic identifies Oka Luda and shows its original box with Oka Luda logo, matching the English rules. Original image URL: https://www.gigamic.com/1929-large_default/chaudron-party.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

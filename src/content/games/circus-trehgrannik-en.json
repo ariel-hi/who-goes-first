@@ -3,10 +3,10 @@
   "slug": "circus-trehgrannik-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "2381b325cfaec8e00625999fe25f29849001ebed15d07c23f98432ff98c92da1",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "d29a536dbb83d809a52413d7d083ce805b9c50c107ab96514d061b849093819c",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Circus",
   "aliases": [],
   "editionLabel": "Trehgrannik English rules",
@@ -35,5 +35,22 @@
   "internalEvidence": "Rendered PDF page 2, printed page 2, states the most-recent circus attendee criterion and starting-player card. The complete booklet credits Trehgrannik, with performer and poster components matching inventory BGG 307830. The publisher product page also identifies this game. SHA-256: ff6726764bd7c7054f0cd5ddca2b7f86f8cc353de08faacbdaaa67932868cfc2. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "No tie procedure is stated for players who attended a circus together."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/circus-trehgrannik-en-cover.jpg",
+    "alt": "Circus cover artwork with ringmaster and performer in a lit arena",
+    "width": 220,
+    "height": 220,
+    "presentation": "cover",
+    "source": {
+      "url": "https://trehgrannik.com/sites/default/files/circus_big_0.jpg",
+      "publisher": "Trehgrannik official Circus game page"
+    },
+    "fairUse": {
+      "rightsHolder": "Trehgrannik, Amuza and credited artists",
+      "rationale": "Reduced game packaging or publisher cover art used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://trehgrannik.com/en/circus. The game designer and publisher page displays the Circus title artwork; this is promotional cover art, not a photograph of the box. Original image URL: https://trehgrannik.com/sites/default/files/circus_big_0.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

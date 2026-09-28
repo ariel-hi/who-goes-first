@@ -3,10 +3,10 @@
   "slug": "chartae-board-game-circus-de-2020",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "9c925f66192b6cb62459a3a3f8a1301fb991ec9f5c4fb61062aa69bf301c8eeb",
+  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22; Codex edition and fair-use product-image review, owner-authorized 2026-09-28",
+  "approvedRevision": "73c75f2f7144179ec5dcbf4b10e9890d54b1f178860d326fc8349ec8336675d7",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Chartae",
   "aliases": [],
   "editionLabel": "Board Game Circus German rules (2020); English summary",
@@ -37,5 +37,22 @@
   "internalEvidence": "The Board Game Circus German-edition PDF linked from its store's Downloads page was retrieved for inventory BGG identity 269257. PDF page 1 (printed page 2) and PDF page 4 (printed page 6) were rendered and visually checked. Setup step 4 says to determine who begins, without naming a method; the gameplay paragraph says players take turns one after the other. The back page credits Board Game Circus ©2020 under XV Games license. Publisher-linked Dropbox PDF SHA-256: fd5bd3b0788de2eaeaa328d3259d7b8e3b1e1f0889c6a09ad763efba1d0e058d. Owner-authorized Codex editorial review, 2026-09-25.",
   "uncertainty": [
     "The inspected German edition gives no procedure for choosing between the players or resolving disagreement. Other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/chartae-board-game-circus-de-2020-cover.jpg",
+    "alt": "Board Game Circus Chartae box in front of parchment map tiles",
+    "width": 500,
+    "height": 411,
+    "presentation": "cover",
+    "source": {
+      "url": "https://boardgamecircus.com/wp-content/uploads/2020/03/chartae_09_noborder_800px.jpg",
+      "publisher": "Board Game Circus official 2020 Chartae product photo"
+    },
+    "fairUse": {
+      "rightsHolder": "Board Game Circus and credited artists",
+      "rationale": "Reduced game packaging or publisher cover art used to identify the cited edition in an independent first-player-rule reference; it does not substitute for the game or artwork.",
+      "provenance": "Source page: https://boardgamecircus.com/blog/einfach-clever-knifflig-chartae/. Publisher 2020 article photographs its German box, matching the cited German edition. Original image URL: https://boardgamecircus.com/wp-content/uploads/2020/03/chartae_09_noborder_800px.jpg",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
