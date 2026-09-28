@@ -3,10 +3,10 @@
   "slug": "wondrous-creatures-bad-comet-v2-2-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c598a2a435d4a87fe6479e8691be45ab3d3baf8402ca1f3f7f1d97defabac69e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "3612abc3c2739f7a2b567d05beea7264d2b19f3acdc7f1fdfea63439fa87d273",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wondrous Creatures",
   "aliases": [],
   "editionLabel": "Bad Comet English base-game rules",
@@ -36,5 +36,22 @@
   "internalEvidence": "Downloaded the version 2.2 base-game rulebook from the Google Drive link on Bad Comet’s Wondrous Creatures product page. Its SHA-256 matches an independently hosted copy. Rendered page 6: the Play Order note gives the unusual-animal criterion and clockwise turns; the adjacent setup text gives resources by player order. Creature cards, captains and butterfly nets match inventory BGG 400366. SHA-256: e45a47b4cd96d353aedd773dcaba8e6f37263a6b1a4289bca1b86a9e4e015778. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the starting instruction, game identity and edition against the publisher-produced rulebook. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "“Most unusual” is subjective and the booklet gives no tie procedure; excluded from the portable random mix."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wondrous-creatures-bad-comet-v2-2-en-cover.jpg",
+    "alt": "Wondrous Creatures game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://badcomet.co/cdn/shop/files/Wondrous-Creatures_Base-game-1.png?v=1719810189&width=1000",
+      "publisher": "Bad Comet Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Bad Comet Games",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher product page for the Wondrous Creatures base game and its rulebook: https://badcomet.co/products/wondrous-creatures. Exact publisher-hosted image: https://badcomet.co/cdn/shop/files/Wondrous-Creatures_Base-game-1.png?v=1719810189&width=1000. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

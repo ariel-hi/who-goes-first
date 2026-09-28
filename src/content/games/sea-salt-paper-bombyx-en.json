@@ -3,10 +3,10 @@
   "slug": "sea-salt-paper-bombyx-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "f60a77aed09542e6ca31ae89677a854951d3026a643344ec1862b8b29471a273",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "9f85a256c12feb2e7280785b1b6a382e1a4416594ac2706f2b90518e8373a997",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sea Salt & Paper",
   "aliases": [],
   "editionLabel": "Bombyx English edition",
@@ -31,5 +31,22 @@
     }
   ],
   "internalEvidence": "Official Bombyx product-linked English sheet; visually verified setup4 and clockwise game-turn text. No themed selection criterion, excluded from random mix. Source custody: research/source-files/popular-sep26-07/sea.pdf; SHA-256 f2feb5a37efd5a7d2b4126fd301a418337a7ec7b037bd217755789fdc9f2315f. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
-  "uncertainty": []
+  "uncertainty": [],
+  "image": {
+    "file": "/images/games/sea-salt-paper-bombyx-en-cover.jpg",
+    "alt": "Sea Salt & Paper game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://studiobombyx.com/assets/SSAP_3dbox_right-2.png",
+      "publisher": "Bombyx"
+    },
+    "fairUse": {
+      "rightsHolder": "Bombyx",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Bombyx English product page for Sea Salt & Paper, also hosting the cited English rulebook: https://studiobombyx.com/en/produit/sea-salt-paper-precommande/. Exact publisher-hosted image: https://studiobombyx.com/assets/SSAP_3dbox_right-2.png. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

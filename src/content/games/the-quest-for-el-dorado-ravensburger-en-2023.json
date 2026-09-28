@@ -3,10 +3,10 @@
   "slug": "the-quest-for-el-dorado-ravensburger-en-2023",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "489a0118bca31be3b38e78e784995b288e182a3de33d99ab76129a6113b28c96",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "42a534d07261716bc6f7ea4b003d0bc306c937e46e2fcd85abd368d4b063b251",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Quest for El Dorado",
   "aliases": [
     "Quest for El Dorado"
@@ -43,5 +43,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-quest-for-el-dorado-ravensburger-en-2023-cover.jpg",
+    "alt": "The Quest for El Dorado game box cover",
+    "width": 527,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ravensburger.cloud/images/produktseiten/600x600/27456.webp",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Ravensburger Verlag GmbH",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Ravensburger US product page for the updated Quest for El Dorado box, article 27456: https://www.ravensburger.us/en-US/products/games/family-games/the-quest-for-el-dorado-27456. Exact publisher-hosted image: https://ravensburger.cloud/images/produktseiten/600x600/27456.webp. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

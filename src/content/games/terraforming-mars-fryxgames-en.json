@@ -3,10 +3,10 @@
   "slug": "terraforming-mars-fryxgames-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "236fc1a99e29ab66b50a9d3f45fa607593d45bcd4c0dbd8175f7c434dfb756e3",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "6dfb247049405c20b94fddcd8ba7fbb1ff73063ff56b5e4110d496f4ca28943b",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-09-25",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Terraforming Mars",
   "aliases": [
     "TM"
@@ -44,5 +44,22 @@
   "uncertainty": [
     "The rulebook gives no tie-break if nobody, or more than one player, qualifies as the most recent winner.",
     "The 2023 in the hosting path is an upload date, not an edition date."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/terraforming-mars-fryxgames-en-cover.jpg",
+    "alt": "Terraforming Mars game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://fryxgames.se/wp-content/uploads/2023/08/TM.png",
+      "publisher": "FryxGames"
+    },
+    "fairUse": {
+      "rightsHolder": "FryxGames / Stronghold Games",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "FryxGames product page for the English Terraforming Mars base game, matching the publisher’s base rules: https://fryxgames.se/product/terraforming-mars/. Exact publisher-hosted image: https://fryxgames.se/wp-content/uploads/2023/08/TM.png. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

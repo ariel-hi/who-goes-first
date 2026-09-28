@@ -3,10 +3,10 @@
   "slug": "star-wars-villainous-power-of-the-dark-side-ravensburger-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "86c935fe8db1156797fee75001f934f0266b798dac3e57d9d0a82efa1caade21",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "2e7969ed4f6118c03daf73b782ccfee08c40d73609d3fb54c829daeac81bd572",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Star Wars Villainous: Power of the Dark Side",
   "aliases": [
     "Star Wars Villainous"
@@ -40,5 +40,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.ravensburger.us/en-US/service/game-instructions. Finding: Use the game's playful criterion—whoever last used the Force—or let the oldest player start. Local source SHA-256: c2d1cee36951b35e9988fa4f7fbd6033c1918475f83125c904c5884c328e369c. Setup page 3, credits page 19 and the EN01 back cover were visually inspected. Page 2's clipped spread duplicates some extracted text from page 3, but the actual starting passage is visible on page 3. The oldest-player alternative is connected by or; it is not restricted to a tie. The source identifies the original five-Villain Power of the Dark Side set. Editorial review 2026-09-23: Codex checked the rendered starting passage, edition and source language, related turn context, official fallback and visible clarification. Owner delegated factual review on 2026-09-22 in task Reload localhost. Eligible for the random mix: the starting criterion needs no game-specific components or role assignment. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/star-wars-villainous-power-of-the-dark-side-ravensburger-en-cover.jpg",
+    "alt": "Star Wars Villainous: Power of the Dark Side game box cover",
+    "width": 520,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://ravensburger.cloud/images/produktseiten/600x600/60001946.webp",
+      "publisher": "Ravensburger"
+    },
+    "fairUse": {
+      "rightsHolder": "Lucasfilm Ltd. / Ravensburger Verlag GmbH",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Ravensburger US product page for the Power of the Dark Side base game, article 60001946, with the five villains cited in the English rules: https://www.ravensburger.us/en-US/products/games/family-games/star-wars-villainous-power-of-the-dark-side-60001946. Exact publisher-hosted image: https://ravensburger.cloud/images/produktseiten/600x600/60001946.webp. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

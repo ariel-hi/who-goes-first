@@ -3,8 +3,8 @@
   "slug": "spirit-island-gtg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root editorial review, owner-authorized on 2026-09-27",
-  "approvedRevision": "4cae1b1b94c0944a3051c1a2da3e6c159cc784a7499ff4a1469a0c3cbc15a8fd",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "1e2faefcb77ff53e7ecba4f46fabd378b0f7ca381d6ec7b478d74394e6fb2d70",
   "publishedAt": "2026-09-25",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Spirit Island",
@@ -41,5 +41,22 @@
   "internalEvidence": "The publisher’s product page https://shop.greaterthangames.com/products/spirit-island links the Dropbox file Spirit-Island-CORE-Rulebook.pdf; downloaded it. SHA-256: 64012c21460d3aee0f5c2c0d1048811a4dd4b4aebd03284ee4706a6a1f8e630e. Rendered and read PDF page 8: players play simultaneously within each phase; Powers may be resolved in any order players want when timing matters; the “Who Decides?” sidebar gives the game owner/organizer the final call when agreement is impossible. Searched the full text for first/start player instructions and found none; the page 32 reference also states all play is simultaneous. Page 28 shows © 2016–2018 Greater Than Games, identifying the core game Spirit Island (BGG 162886). Owner authorized assistant review on 2026-09-25. Editorial review 2026-09-25: Rechecked the source pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "The rulebook does not name a first player because turns are simultaneous; the Fear-card “each player” effects are resolved one player after another without a specified order."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/spirit-island-gtg-en-cover.jpg",
+    "alt": "Spirit Island game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://shop.greaterthangames.com/cdn/shop/files/SISL-CORE-1.jpg?v=1764774526&width=1000",
+      "publisher": "Greater Than Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Greater Than Games",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher product page for the Spirit Island English core game, released in 2017; page links the core rulebook: https://shop.greaterthangames.com/products/spirit-island. Exact publisher-hosted image: https://shop.greaterthangames.com/cdn/shop/files/SISL-CORE-1.jpg?v=1764774526&width=1000. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

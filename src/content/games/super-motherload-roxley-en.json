@@ -3,10 +3,10 @@
   "slug": "super-motherload-roxley-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "3becb18a56a7a5f7e20c80204a4c100ff8613da1b4ca1fc44680a7f66a084c90",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "ea8d763e97c642b8607acd35d667faf5f0b82d20f4dc0bf292e8f795dbe9824c",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Super Motherload",
   "aliases": [],
   "editionLabel": "Roxley Game Laboratory English edition",
@@ -35,5 +35,22 @@
   "internalEvidence": "The Roxley rulebook explicitly chooses the most recent hole digger before game-area setup on PDF page 2. The same passage assigns the board-side choice to that player’s right-hand neighbor; the cover credits Roxley and the title matches inventory BGG 162286. SHA-256: 23edb41404ff710f0dbf9b2933c5118fb6fb8f64f96d76819396024b1fdce0bc. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the cited pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "No tie or no-qualifier fallback is supplied."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/super-motherload-roxley-en-cover.jpg",
+    "alt": "Super Motherload game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0246/2190/8043/products/top-section-product-image_7cc5e3c9-53bf-4e35-8978-f883b373a2c2.png?v=1583427061",
+      "publisher": "Roxley Games"
+    },
+    "fairUse": {
+      "rightsHolder": "Roxley Game Laboratory",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Publisher product page for Super Motherload, product code ROX100, linking the English 2015 rulebook: https://roxley.com/products/super-motherload. Exact publisher-hosted image: https://cdn.shopify.com/s/files/1/0246/2190/8043/products/top-section-product-image_7cc5e3c9-53bf-4e35-8978-f883b373a2c2.png?v=1583427061. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

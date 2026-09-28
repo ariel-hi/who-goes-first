@@ -3,12 +3,14 @@
   "slug": "uno-flip-mattel-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "cd9e483ab511f769aac4a43b4df85f47b3cd112b84b3d94664b39e17743da13d",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "873902c2975fa655d6a236bbb507883fdd7923cf1a89a3331d9275b501f58a03",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "UNO Flip!",
-  "aliases": ["UNO Flip"],
+  "aliases": [
+    "UNO Flip"
+  ],
   "editionLabel": "Mattel English instruction sheet, item GDR44",
   "firstPlayerRule": "Each player draws a card and reveals the Light Side; the player who draws the highest number is the dealer (any card with a symbol counts as zero). The dealer shuffles and deals each player 7 cards, then the person to the left of the dealer starts play.",
   "officialTieBreak": null,
@@ -22,8 +24,12 @@
       "url": "https://service.mattel.com/instruction-sheets/files/GDR44%20UNO%20Flip[English_French_German_Spanish_Portuguese][5LG].pdf",
       "title": "UNO Flip! Instruction Sheet (GDR44)",
       "publisher": "Mattel",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "Setup steps 2–5; \"Let's Play\" section",
       "checkedAt": "2026-09-27"
     }
@@ -32,5 +38,22 @@
   "uncertainty": [
     "No tie-break is stated for the dealer-selection draw if two players draw equally high cards.",
     "This English sheet does not specify a special exception when an Action Card is the first card turned face up on the discard pile beyond the general action-card rules."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/uno-flip-mattel-en-cover.jpg",
+    "alt": "UNO Flip! game box cover",
+    "width": 560,
+    "height": 560,
+    "presentation": "cover",
+    "source": {
+      "url": "https://images.mattel.net/image/upload/w_646,f_auto,c_scale/shop-us-prod/files/t0kdypdgh42agclpuf8o.png",
+      "publisher": "Mattel"
+    },
+    "fairUse": {
+      "rightsHolder": "Mattel, Inc.",
+      "rationale": "Reduced-size box art identifies the specific game and edition discussed in this independent rules article. It is contextual to the game, links to the official product source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Mattel product page for item GDR44, identical to the code on the cited English instruction sheet: https://shop.mattel.com/products/uno-flip-gdr44. Exact publisher-hosted image: https://images.mattel.net/image/upload/w_646,f_auto,c_scale/shop-us-prod/files/t0kdypdgh42agclpuf8o.png. The cover and game identity were visually reviewed against the article edition and cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
