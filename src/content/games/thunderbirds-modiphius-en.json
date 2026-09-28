@@ -3,10 +3,10 @@
   "slug": "thunderbirds-modiphius-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "1d52ed7423d427c74294321939b921c83f6e2a6266718622a004802645161fa2",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "08ed3e72cebe831aef7fbe4f9535d91bfb07ebf1e6b23269514656d67fb7fa94",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Thunderbirds",
   "aliases": [],
   "editionLabel": "Modiphius English cooperative board-game rules",
@@ -37,5 +37,22 @@
   "internalEvidence": "Rendered page 3 gives the TV-viewing criterion and dice handoff; page 5 gives the clockwise turn sequence. The Tracy characters, Thunderbirds machines, Hood Track and cooperative setup match inventory BGG 160610. Modiphius identifies itself as publisher of Matt Leacock’s Thunderbirds game. SHA-256: b67e0dd497053e7e1b2372a0d7f8ab65e4765798e9711e96535eff89b862850d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules specify no tie procedure for the most recent viewing."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/thunderbirds-modiphius-en-cover.jpg",
+    "alt": "Official 2015 Thunderbirds co-operative board game launch graphic with Thunderbird 2",
+    "width": 350,
+    "height": 350,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.shopify.com/s/files/1/0225/4035/files/7572212.jpg?v=1571661340",
+      "publisher": "Modiphius Entertainment"
+    },
+    "fairUse": {
+      "rightsHolder": "Modiphius Entertainment / ITC Entertainment Group",
+      "rationale": "Reduced-size publisher launch title artwork identifies the original co-operative game discussed in this independent rules article. It is contextual to the game, links to the publisher announcement, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Archived official Modiphius announcement of its 2015 Thunderbirds co-operative tabletop game with Matt Leacock: https://modiphius.net/blogs/press-releases-archived/thunderbirds-are-go-for-co-operative-tabletop-game-by-matt-leacock. Embedded Shopify-hosted launch graphic: https://cdn.shopify.com/s/files/1/0225/4035/files/7572212.jpg?v=1571661340. The graphic says launching Autumn 2015 and displays the game title, Modiphius branding, and Thunderbird 2. This is promotional title artwork rather than a photograph of the retail box; visually reviewed.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
