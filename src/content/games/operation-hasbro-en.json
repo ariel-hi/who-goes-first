@@ -3,13 +3,30 @@
   "slug": "operation-hasbro-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-28",
-  "approvedRevision": "666031a8cb7f489184d239eb207f5cc67c7a2d9c285fde405fbe8705ffc18d26",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "1f13e9d50d60d19cddd388af3f1e4627c4aa67afc8a377dca07721e3aa7f5f59",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Operation",
   "aliases": [],
   "editionLabel": "Hasbro English instructions, item 40198 (electronic Funatomy edition)",
+  "image": {
+    "file": "/images/games/operation-hasbro-en-cover.jpg",
+    "alt": "Operation Silly Skill Game box with sound effects, Hasbro item 40198",
+    "width": 360,
+    "height": 252,
+    "presentation": "cover",
+    "source": {
+      "url": "https://instructions.hasbro.com/_next/image?url=http%3A%2F%2Fwww.hasbro.com%2Fcommon%2Fproductimages%2Fes_CL%2F93c250626d4010148bf09efbf894f9d4%2F85a3908eab15fd6dd769f1fa6e3a07dafab73e23.jpg&w=750&q=75",
+      "publisher": "Hasbro"
+    },
+    "fairUse": {
+      "rightsHolder": "Hasbro / Milton Bradley",
+      "rationale": "Small publisher-sourced cover identifies the game discussed in this starting-rule article; it is used for editorial reference with no more artwork than needed for identification.",
+      "provenance": "Hasbro’s official instructions page https://instructions.hasbro.com/es-cl/instruction/operation-silly-skill-game identifies item 40198 and displays this English-text 2008 Funatomy sound-effects box. The cited English rules at https://www.hasbro.com/common/instruct/40198.pdf describe the same 13 Funatomy parts and electronic game. Reduced to 360 × 252 pixels for display.",
+      "reviewedAt": "2026-09-28"
+    }
+  },
   "firstPlayerRule": "The youngest \"doctor\" goes first. Play then passes to the left.",
   "officialTieBreak": null,
   "houseFallback": null,
@@ -23,8 +40,12 @@
       "url": "https://www.hasbro.com/common/instruct/40198.pdf",
       "title": "Operation — Instructions (item 40198)",
       "publisher": "Hasbro",
-      "printedPages": ["1"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "\"How to Play\" section, opening sentence",
       "checkedAt": "2026-09-27"
     }
