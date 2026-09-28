@@ -3,10 +3,10 @@
   "slug": "smash-up-cease-and-desist",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "6919cd3e7ed2178a81c26a0bda63fcd487baa0d1d922eea57814d98a618ab533",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "02a8009f6ce5a4d258a13ef356af7ddb61cd39991200f9fe27373e8316bb314e",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Smash Up: Cease and Desist",
   "aliases": [],
   "editionLabel": "Cease and Desist, English AEG expansion rules",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/smash-up-cease-and-desist-cover.jpg",
+    "alt": "Smash Up: Cease and Desist box cover",
+    "width": 329,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2016/08/SmashUpCeaseAndDesist3DBox.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/smash-up-home/smash-up-base-cease-desist/. Exact image file: https://www.alderac.com/wp-content/uploads/2016/08/SmashUpCeaseAndDesist3DBox.png. Edition check: The dedicated Cease & Desist expansion page depicts this box and links the expansion rulebook.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

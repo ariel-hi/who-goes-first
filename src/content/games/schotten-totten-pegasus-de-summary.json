@@ -3,10 +3,10 @@
   "slug": "schotten-totten-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "0dded2f4dcc4503d42976c1e412f40de752c8a21722b5d0a1f9c9c83db7ed8cb",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "169f85d726dfc47fd1e0d998e3556383311b9676681bb153992ddd45da24d7df",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Schotten Totten",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German rules, ©2024; English summary",
@@ -45,5 +45,22 @@
     "The source does not define how close a place must be to count as near Scotland.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/schotten-totten-pegasus-de-summary-cover.jpg",
+    "alt": "Schotten Totten box cover",
+    "width": 316,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/f8/e1/3b/1751290591/4250231740657_web.jpg?ts=1751290591",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH (German edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://pegasus.de/Schotten-Totten/57261G. Exact image file: https://cdn.pegasus.de/public/media/f8/e1/3b/1751290591/4250231740657_web.jpg?ts=1751290591. Edition check: The product page lists the 2024 German Schotten Totten edition corresponding to the cited German rulebook.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

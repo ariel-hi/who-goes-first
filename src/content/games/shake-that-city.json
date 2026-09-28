@@ -3,10 +3,10 @@
   "slug": "shake-that-city",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "31833ca61658c457871d930afa724d1f7bfd4ca5395adcb1a7c93397f0437134",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "f68cd980dc181342ef756a2cdb1a07d4563b134fc4d1abd17ed4c8ff6fba35cd",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Shake That City",
   "aliases": [],
   "editionLabel": "English AEG base-game rules",
@@ -38,5 +38,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/shake-that-city-cover.jpg",
+    "alt": "Shake That City box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2023/06/STC-Box-Compressed.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/shake-that-city/. Exact image file: https://www.alderac.com/wp-content/uploads/2023/06/STC-Box-Compressed.png. Edition check: The publisher's Shake That City base-game page links the cited rules and labels this image 'STC Box'.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

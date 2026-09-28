@@ -3,10 +3,10 @@
   "slug": "the-vale-of-eternity-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "2dc4e01159c1d6419f702b73a4eed56bcb401c80f858fec08488db9fcb088a6d",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "4b5e81ba90514dc80301e31901757d20ef45916d83cccec38f26072576400331",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "The Vale of Eternity",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German rules, English summary",
@@ -36,5 +36,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/the-vale-of-eternity-pegasus-de-summary-cover.jpg",
+    "alt": "The Vale of Eternity box cover",
+    "width": 406,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/0f/c1/a7/1772611935/4250231738890.png?ts=1772611941",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH (German edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://pegasus.de/The-Vale-of-Eternity/51330G. Exact image file: https://cdn.pegasus.de/public/media/0f/c1/a7/1772611935/4250231738890.png?ts=1772611941. Edition check: Product EAN 4250231738890 matches the German rule PDF filename and box edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

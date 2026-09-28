@@ -3,10 +3,10 @@
   "slug": "space-base-aeg-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-26",
-  "approvedRevision": "d18b7680156a2c44b3b78745dd892e5ad289cec15caed90cd26a954e0d0a7e50",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "875ac5b76682f61e565cd0d80d719805223751465ebaf32e4303a768662b0455",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-26",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Space Base",
   "aliases": [],
   "editionLabel": "AEG English base game",
@@ -37,5 +37,22 @@
   "internalEvidence": "Publisher product page links this image-only base-game PDF. Rendered printed/PDF10 shows highest drawn sector, dice-total tie-break and setup purchase. Page12 connects marker to first regular turn and clockwise order. No game-component criterion enters random mix. Source custody: research/source-files/popular-sep26-08/space.pdf; SHA-256 7530aae98d8579a28c55b0beefe58a860837ec8ebbf1131b8d99bc88861e6297. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
   "uncertainty": [
     "The setup does not say what to do if the tie-breaking dice totals are also equal."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/space-base-aeg-en-cover.jpg",
+    "alt": "Space Base box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2024/01/Space-base_angulo.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/space-base/. Exact image file: https://www.alderac.com/wp-content/uploads/2024/01/Space-base_angulo.png. Edition check: The Space Base base-game page labels this image 'Space Base Box' and links the cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

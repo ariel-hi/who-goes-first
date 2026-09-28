@@ -3,10 +3,10 @@
   "slug": "sagrada-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "8fb2245960f15fc17b6ecf676e7ba17dad685760f17bc080731628507180eaf1",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "86b1e7f153f0bf8537c02cea05a68a905e404e67bd5570648ac81eda7610bf82",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Sagrada",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German Sagrada rules, English summary",
@@ -38,5 +38,22 @@
     "This German file gives no fallback if nobody has visited Barcelona.",
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/sagrada-pegasus-de-summary-cover.jpg",
+    "alt": "Sagrada box cover",
+    "width": 340,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/d5/43/02/1717755645/4250231715877jnggyu3kzzamh.jpg?ts=1767598649",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH (German edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://pegasus.de/Sagrada/51120G. Exact image file: https://cdn.pegasus.de/public/media/d5/43/02/1717755645/4250231715877jnggyu3kzzamh.jpg?ts=1767598649. Edition check: German product EAN 4250231715877 matches the official rule PDF filename and Sagrada packaging.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

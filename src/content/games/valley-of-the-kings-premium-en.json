@@ -3,10 +3,10 @@
   "slug": "valley-of-the-kings-premium-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "04199485d9d63e258cd32e5bef36948282889c1c956f63c895a566da9f2b0c6e",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "8a580a7341f3028eb0b38da46e138bc4876d36c1923f8cda5fec9ead4804e1d7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Valley of the Kings",
   "aliases": [
     "Valley of the Kings Premium Edition"
@@ -51,5 +51,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/valley-of-the-kings-premium-en-cover.jpg",
+    "alt": "Valley of the Kings box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2019/03/VotK-Premium-1F.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (Premium Edition publisher); illustration credited to Banu Andaru",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/valley-of-the-kings/. Exact image file: https://www.alderac.com/wp-content/uploads/2019/03/VotK-Premium-1F.png. Edition check: The current product page is specifically for Premium Edition and links its rules; the box differs from the original edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

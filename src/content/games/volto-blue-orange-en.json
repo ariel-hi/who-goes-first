@@ -3,10 +3,10 @@
   "slug": "volto-blue-orange-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "872e3f06b3e9dbb1aa5d589d8dfd51f8c6c34a3d958b4d27aeb328a32ebd3c04",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "9b243845e5e8fe762d32b4e1a330e9775c3d1bba36c812165f01a7a3b86b3082",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Volto",
   "aliases": [],
   "editionLabel": "Blue Orange English rules",
@@ -33,5 +33,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://blueorangegames.eu/en/resources/game-rules/. Finding: The most cunning player starts. Local source SHA-256: 9747d71d8f9f3442228c05f78bcc1f6d418828fc086390d670c119abe6b0d83d. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/volto-blue-orange-en-cover.jpg",
+    "alt": "Volto box cover",
+    "width": 480,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2022/07/Volto-3DBox.jpg",
+      "publisher": "Blue Orange"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Orange Edition",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://blueorangegames.eu/en/games/volto/. Exact image file: https://blueorangegames.eu/wp-content/uploads/2022/07/Volto-3DBox.jpg. Edition check: English rules and publisher product page show the same Volto box design.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

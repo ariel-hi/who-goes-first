@@ -3,10 +3,10 @@
   "slug": "symbiose-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "bfd69c39a6c6223fc53fe59e7ea4e19e94cd7cc5d7191e9538a81a0bc64e084b",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "893af4548cb3c6cd1a4e09c3dccb83765d967cdd41651394ae6a9b23b808e5c7",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Symbiose",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German rules, English summary",
@@ -41,5 +41,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/symbiose-pegasus-de-summary-cover.jpg",
+    "alt": "Symbiose box cover",
+    "width": 305,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/0f/e4/7b/1768292037/4250231744761.png?ts=1768292037",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH (German edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://pegasus.de/Symbiose/18709G. Exact image file: https://cdn.pegasus.de/public/media/0f/e4/7b/1768292037/4250231744761.png?ts=1768292037. Edition check: The publisher's Symbiose product page lists the same German edition and 2026 release as the cited rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

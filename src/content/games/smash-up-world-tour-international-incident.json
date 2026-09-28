@@ -3,10 +3,10 @@
   "slug": "smash-up-world-tour-international-incident",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "75ba61406ca7e4aeae739e625233b99bcfa3fabb495bd88349bee414c3d59c53",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "0447f16119e678637b4dd78681feaf2db653bd672803408320f6722952323b92",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Smash Up: World Tour – International Incident",
   "aliases": [
     "Smash Up World Tour International Incident"
@@ -40,5 +40,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/smash-up-world-tour-international-incident-cover.jpg",
+    "alt": "Smash Up: World Tour – International Incident box cover",
+    "width": 364,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2019/08/Smash-Up-World-Tour-International-Incident-3DBox_nopadding.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/smash-up-home/smash-up-world-tour-international-incident/. Exact image file: https://www.alderac.com/wp-content/uploads/2019/08/Smash-Up-World-Tour-International-Incident-3DBox_nopadding.png. Edition check: The dedicated World Tour: International Incident page depicts this box and links its rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

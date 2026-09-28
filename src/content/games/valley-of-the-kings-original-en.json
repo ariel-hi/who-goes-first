@@ -3,10 +3,10 @@
   "slug": "valley-of-the-kings-original-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "c9a2acd2687862d4b174335b9efab0b698d84a1963fde6777468220c20706ff4",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "cb32a39242001517021d46d57714b30b648ede66f875c9d35c958fb84edb8e0d",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Valley of the Kings",
   "aliases": [],
   "editionLabel": "Original edition, English AEG rules",
@@ -49,5 +49,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/valley-of-the-kings-original-en-cover.jpg",
+    "alt": "Valley of the Kings box cover",
+    "width": 480,
+    "height": 418,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2017/02/valley-of-the-kings-3d-box.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (original edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/valley-of-the-kings-old/valley-of-the-kings/. Exact image file: https://www.alderac.com/wp-content/uploads/2017/02/valley-of-the-kings-3d-box.png. Edition check: The archived original-edition page depicts this box and links the original rules, distinct from Premium Edition.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

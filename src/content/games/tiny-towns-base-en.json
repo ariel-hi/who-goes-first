@@ -3,10 +3,10 @@
   "slug": "tiny-towns-base-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "5be0e8c69adbbf87a5bdf1397c8de97dab0b991a9dc51c111fea622cb95884e0",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "018142e02dbf11e725b0f7aebab1589d80a4f0d8156aaf14707f2e7c88f1c368",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tiny Towns",
   "aliases": [],
   "editionLabel": "Alderac Entertainment Group English base game · copyright 2019",
@@ -43,5 +43,22 @@
   "uncertainty": [
     "No construction-recency tie-break is stated in step 9.",
     "The URL's 2024 date is not asserted to be the game's edition year."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tiny-towns-base-en-cover.jpg",
+    "alt": "Tiny Towns box cover",
+    "width": 480,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2023/02/Tiny-towns_angulo.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/tiny-towns/. Exact image file: https://www.alderac.com/wp-content/uploads/2023/02/Tiny-towns_angulo.png. Edition check: The Tiny Towns base-game page labels this image as its box and links base-game rules.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

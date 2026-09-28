@@ -3,10 +3,10 @@
   "slug": "wonder-woods-blue-orange-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "f7554739064c072591da31b1f31a927f05014ac20c399e6c0ede09c71048bbc1",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "c8b53d5d051dfd56fb1e5719078bcf9c3437a8a8ab1644b4a670820932c12426",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Wonder Woods",
   "aliases": [],
   "editionLabel": "Blue Orange English rules",
@@ -33,5 +33,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages; relevant mode context was read from the manual linked by https://blueorangegames.eu/en/resources/game-rules/. Finding: The person who most recently went mushroom picking starts and takes the first-player token. Local source SHA-256: b4310b63d23595f9b0d984b56a627060fb1a3cc2f068d1ea519f2c255995a691. Editorial review 2026-09-23: Rechecked the cited starting instruction, edition, variant and opening-turn context against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction. The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/wonder-woods-blue-orange-en-cover.jpg",
+    "alt": "Wonder Woods box cover",
+    "width": 480,
+    "height": 360,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blueorangegames.eu/wp-content/uploads/2022/06/WonderWoods-3DBox.jpg",
+      "publisher": "Blue Orange"
+    },
+    "fairUse": {
+      "rightsHolder": "Blue Orange Edition",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://blueorangegames.eu/en/games/wonder-woods/. Exact image file: https://blueorangegames.eu/wp-content/uploads/2022/06/WonderWoods-3DBox.jpg. Edition check: English rules and publisher product page show the same Wonder Woods box design.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

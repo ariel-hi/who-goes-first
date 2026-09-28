@@ -3,10 +3,10 @@
   "slug": "smash-up-comprehensive-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-25",
-  "approvedRevision": "bd70aa760272759df710237ca8a6ef84ebb6d4e12af1e1adda1d38fc77c2b929",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "09dc55538a307421fa1ebfafab61c2c0818180a1a0ce62d40f9e4adca84f37ff",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Smash Up",
   "aliases": [
     "Smash Up!",
@@ -39,5 +39,22 @@
   "internalEvidence": "Starting instructions were checked on rendered publisher pages, including relevant mode context. Publisher source context: https://www.alderac.com/smash-up/. Finding: Check these fantasy events in order: alien abduction, pirate press-ganging, a vampire bite, dragon burns, a princess's kiss, Cthulhu-induced madness, a teddy-bear attack, or being eaten by an orc. The most recent match to the first applicable event starts. Local source SHA-256: ce5f852fd2bccdaca0b8d438f6726dc96eb7db8c4a59a65d8c1fa3f88b9cdb77. Editorial review 2026-09-23: Rechecked cited starting instruction, edition, and setup or turn-order distinctions against rendered publisher pages. Owner authorized assistant review on 2026-09-22. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
   "uncertainty": [
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/smash-up-comprehensive-en-cover.jpg",
+    "alt": "Smash Up box cover",
+    "width": 477,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.alderac.com/wp-content/uploads/2018/06/Bigger-Geekier-Box-3D-Box.png",
+      "publisher": "Alderac Entertainment Group"
+    },
+    "fairUse": {
+      "rightsHolder": "Alderac Entertainment Group, Inc. (edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://www.alderac.com/smash-up-home/smash-up-bigger-geekier-box/. Exact image file: https://www.alderac.com/wp-content/uploads/2018/06/Bigger-Geekier-Box-3D-Box.png. Edition check: The article cites Bigger Geekier Box comprehensive rules; the publisher page depicts that exact box.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

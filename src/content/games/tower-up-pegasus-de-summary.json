@@ -3,10 +3,10 @@
   "slug": "tower-up-pegasus-de-summary",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "2c25d23a5f03f005eda2f9feb3d5e3a95d6895df97cd02a8ea7e21b3d11b611f",
+  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
+  "approvedRevision": "3d3b0a1ce741a460725a0e8a217ec6c3545e1124b3cc67146cb5070bd612518f",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-23",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Tower Up",
   "aliases": [],
   "editionLabel": "Pegasus Spiele German rules, English summary",
@@ -34,5 +34,22 @@
   "uncertainty": [
     "No starting tie-break is stated alongside this instruction.",
     "The answer applies to the identified publisher file; other editions may differ."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/tower-up-pegasus-de-summary-cover.jpg",
+    "alt": "Tower Up box cover",
+    "width": 423,
+    "height": 480,
+    "presentation": "cover",
+    "source": {
+      "url": "https://cdn.pegasus.de/public/media/cb/2b/3c/1751290601/4250231740800_web.jpg?ts=1751290601",
+      "publisher": "Pegasus Spiele"
+    },
+    "fairUse": {
+      "rightsHolder": "Pegasus Spiele GmbH (German edition publisher)",
+      "rationale": "Reduced-size box art identifies the specific edition discussed in this independent rules article. It is contextual to the game, links to the publisher source, and does not substitute for the game or full artwork. This is an editorial fair-use assessment, not a licence or permission.",
+      "provenance": "Official product page: https://pegasus.de/Tower-Up/51887G. Exact image file: https://cdn.pegasus.de/public/media/cb/2b/3c/1751290601/4250231740800_web.jpg?ts=1751290601. Edition check: The German Tower Up product page links the cited German rulebook and depicts that edition's box.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
