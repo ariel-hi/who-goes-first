@@ -148,6 +148,26 @@ test('broad directory searches reveal every match in keyboard-accessible batches
   await expect(page.locator('[data-count]')).not.toContainText('showing');
 });
 
+test('new native game identities remain searchable without borrowed starting rules', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
+  await page.goto('/board-games/');
+  const input = page.getByRole('searchbox', { name: 'Search board games' });
+  for (const [id, name] of [
+    ['38195', 'Herr der Ziegen'], ['40234', 'Einauge sei wachsam'], ['191473', 'Speed Dice'],
+    ['205766', 'Mino und Tauri'], ['262941', 'Dominant Species: Marine'], ['270314', 'Ohanami'],
+    ['271519', 'Ecosystem'], ['300905', 'Top Ten'], ['419195', 'Fischen'], ['425549', 'Moon Colony Bloodbath'],
+  ] as const) {
+    await input.fill(name);
+    const row = page.locator(`[data-results] li[data-id="${id}"]`);
+    await expect(row).toBeVisible();
+    await expect(row).toHaveAttribute('data-has-rule', 'false');
+    await expect(row.locator('summary')).toContainText(name);
+    await row.locator('summary').click();
+    await expect(row.getByRole('link', { name: 'Pick a player' })).toHaveAttribute('href', '/');
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
 for (const width of [320, 1280]) {
   test(`accepted native names preserve their directory identity and rule status at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 844 });
