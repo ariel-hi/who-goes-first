@@ -3,10 +3,10 @@
   "slug": "mint-delivery-five24-2017-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "edfa747f830f62ba445a1f1daab1bdfc5c87a8a8fbc1cfde6b28e449d37c5e0d",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "24a59a414b062d9b0564a011da5a6a7fc9340391b1ac246e82ef96f3e06be0c3",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Mint Delivery",
   "aliases": [],
   "editionLabel": "Five24 Labs English rules sheet, 2017",
@@ -33,5 +33,22 @@
   "internalEvidence": "Rendered final Five24 Labs rules PDF page 1 states the freshest-breath criterion and shows the 69-card, five-truck component set. The same page credits Five24 Labs ©2017. This finished sheet supersedes the archived booklet with unfinished placeholders and matches inventory BGG 230251. SHA-256: d638e1d8dc84653cfc6edefe8b1fea7b095f282d3b0442558d3d4c38fa72a542. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The rules give no objective test or tie procedure for freshest breath."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/mint-delivery-five24-2017-en-cover.jpg",
+    "alt": "Mint Delivery original green Five24 Labs metal tin, with white title and delivery truck pattern",
+    "width": 360,
+    "height": 229,
+    "presentation": "cover",
+    "source": {
+      "url": "https://www.thegamesteward.com/cdn/shop/products/mint-delivery-kickstarter-special-kickstarter-board-game-five24-labs-31641183813784_600x.jpg?v=1628661279",
+      "publisher": "The Game Steward, product image of original Five24 Labs Kickstarter tin"
+    },
+    "fairUse": {
+      "rightsHolder": "Five24 Labs / Poketto; original game artwork credited to Thomas Tamblyn and Delapouite",
+      "rationale": "Small clean photograph of the original product tin identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "The Game Steward listing https://www.thegamesteward.com/products/mint-delivery identifies its photographed tin as the Five24 Labs Mint Delivery Kickstarter edition and lists the original components. The creator-led 2017 campaign https://www.kickstarter.com/projects/poketto/mint-delivery-the-minty-fresh-pick-up-and-deliver independently identifies the original game as a pocket-sized mint tin. The Five24 Labs English rules sheet dated 2017 identifies the same game and publisher. The photographed tin is the original package; the retailer image does not establish publisher permission or that every Kickstarter extra is covered by the cited rules sheet. Reduced to 360 pixels wide.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

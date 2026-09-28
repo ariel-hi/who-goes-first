@@ -3,10 +3,10 @@
   "slug": "portal-uncooperative-cake-cryptozoic-2015-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "6e81a3dfdf79ee1888f695b1b464de637296918bd36a3a692153621bab914c6b",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "99b3bc64cdf597cbfcefc75018bc9a3f5924e3371b1f23838fa66905390b53c9",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Portal: The Uncooperative Cake Acquisition Game",
   "aliases": [],
   "editionLabel": "Cryptozoic Entertainment / Valve English edition, 2015",
@@ -35,5 +35,22 @@
   "internalEvidence": "The image-based English rulebook was rendered and visually checked. Printed page 7 names the player who most recently ate cake and specifies clockwise play. The cover shows ©2015 Valve / ©2015 CZE and matches inventory BGG 159406. SHA-256: 60b67473aba2016544db81bb2f764ec27df5dee03f881fed52284e9c1336cd0a. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the rendered pages, opening instruction, game identity, and edition.",
   "uncertainty": [
     "No tie or no-qualifier fallback is stated."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/portal-uncooperative-cake-cryptozoic-2015-en-cover.jpg",
+    "alt": "Portal: The Uncooperative Cake Acquisition Game 2015 blue Cryptozoic and Valve box",
+    "width": 266,
+    "height": 298,
+    "presentation": "cover",
+    "source": {
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUIoh2SC3zVxdWB0IwVD14DOIVwHAP_7SYQEitilkHTLJrx_Bo_X0cnY-_caCiCqUnWjSt0SCKmHC3H4Js2KsUxrprjqaDlnAdHGzd7bybQxasOc2Oi8fVzJZxzZtLE7JBroTT_qdczu8-/s640/CTZ01823.jpg",
+      "publisher": "ACD Distribution, original 2015 Cryptozoic product announcement image"
+    },
+    "fairUse": {
+      "rightsHolder": "Valve Corporation / Cryptozoic Entertainment",
+      "rationale": "Small crop of the exact 2015 product box identifies the game discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "ACD Distribution published this Cryptozoic product announcement on 2015-10-23 at https://acddistribution.blogspot.com/2015/10/new-from-cryptozoic-entertainment.html, naming the English game, supplier SKU CTZ01823 and contents. Its image depicts the original blue Valve/Cryptozoic box with components; this derivative crops only the box from that distributor-authored promotional image. The original Cryptozoic/Valve 2015 manual corroborates the edition and components. Distributor hosting does not imply permission for this editorial reuse.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }

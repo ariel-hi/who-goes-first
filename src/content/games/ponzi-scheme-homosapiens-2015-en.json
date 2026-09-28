@@ -3,10 +3,10 @@
   "slug": "ponzi-scheme-homosapiens-2015-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial review, authorized by the owner on 2026-09-22",
-  "approvedRevision": "55ec036f50b26a94ea69a11b93fb1737c2adb5d78aa21b0df94722c7d58a7d83",
+  "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
+  "approvedRevision": "5cd2643b94d3c10eb5bd40e0ce004e5f455bd07fdfeb1187a755ca02df6bafbb",
   "publishedAt": "2026-09-24",
-  "materiallyUpdatedAt": "2026-09-24",
+  "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Ponzi Scheme",
   "aliases": [],
   "editionLabel": "Original English rules, 2015",
@@ -34,5 +34,22 @@
   "internalEvidence": "Rendered PDF page 2 gives the keeping-one’s-word criterion and clockwise direction; page 4 explains marker handoff. Funding board, 72 Fund cards and Time wheels match inventory BGG 180899. Original publisher identity cross-checked against the BGG game record; the archived booklet itself has no publisher imprint. SHA-256: a0ab4082502fb17b3f4fb5276c001b38d2be86dbffbaadc8754590b3a955ab3d. Owner authorized assistant review on 2026-09-22. Editorial review 2026-09-24: Rechecked the opening instruction, game identity and named edition against the rendered rulebook.",
   "uncertainty": [
     "The subjective criterion has no objective test or tie procedure."
-  ]
+  ],
+  "image": {
+    "file": "/images/games/ponzi-scheme-homosapiens-2015-en-cover.jpg",
+    "alt": "Original 2015 Homosapiens Lab Ponzi Scheme multilingual box with handshake and blue geometric background",
+    "width": 240,
+    "height": 240,
+    "presentation": "cover",
+    "source": {
+      "url": "https://image.nobleknight.com/2/jpg240/22280590008g.jpg",
+      "publisher": "Noble Knight Games, image of Homosapiens Lab 2015 multilingual edition"
+    },
+    "fairUse": {
+      "rightsHolder": "Homosapiens Lab / original illustrator Chih-Fan Chen",
+      "rationale": "Small plain product box image identifies the precise original edition discussed in this starting-rule article. It is used for editorial reference with no more package artwork than needed for identification.",
+      "provenance": "Noble Knight listing https://www.nobleknight.com/P/2148005862/Ponzi-Scheme-Multilingual-Edition explicitly identifies Homosapiens Lab, Jesse Li, the 2015 multilingual boxed game, and hosts this isolated box front. Jesse Li's original creator campaign https://www.flyingv.cc/projects/4303?lang=en confirms the 2015 original project; the publisher-authored multilingual rules depict the matching original components. A contemporary 2015 review https://opinionatedgamers.com/2015/08/19/dale-yu-first-impressions-of-ponzi-scheme/ shows the same finished handshake box and identifies its publisher and multilingual rules, distinguishing it from later TMG and Bright Eye editions. The image itself is retailer-hosted, and no permission is implied.",
+      "reviewedAt": "2026-09-28"
+    }
+  }
 }
