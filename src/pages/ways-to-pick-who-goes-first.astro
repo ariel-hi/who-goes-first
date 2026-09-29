@@ -1,24 +1,91 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RandomRule from '../components/RandomRule.astro';
 import RuleList from '../components/RuleList.astro';
 import { getCatalog } from '../lib/content/catalog';
 import { randomRuleEligible } from '../lib/content/random-rules';
 import { groupByTheme } from '../lib/content/hubs';
+import type { PublicRule } from '../lib/content/schema';
 // Only the individually reviewed portable criteria: each works at any table
 // without that game's components, setup roles, or simultaneous play.
 const rules = getCatalog().filter(randomRuleEligible);
 const { groups, other } = groupByTheme(rules);
 const count = rules.length;
+const previewFor = (items: PublicRule[]) => items.reduce((best, current) => current.firstPlayerRule.length < best.firstPlayerRule.length ? current : best).firstPlayerRule;
+const sections = [
+  ...groups.map(group => ({ id: group.theme.slug, label: group.theme.label, rules: group.rules, preview: previewFor(group.rules) })),
+  ...(other.length ? [{ id: 'more-ideas', label: 'More ideas', rules: other, preview: previewFor(other) }] : []),
+];
 ---
 <Layout title={`${count} Fun Ways to Decide Who Goes First, From Real Rulebooks`} description={`Need a fun way to choose who goes first? ${count} starting-player rules from published board games that work at any table, grouped by theme.`} pageType="CollectionPage" noindex={count === 0}>
-  <div class="content-page">
+  <div class="content-page ways-page">
     <span class="eyebrow">From publishers’ rulebooks</span>
     <h1>{count} fun ways to decide who goes first</h1>
     <p class="lede">Borrow a starting rule from another game. Every idea below comes from a published board game rulebook and works without that game’s pieces.</p>
     <p>Prefer a fair draw? <a href="/">Pick a starting player at random</a>. Or <a href="/games/">look up the rule for your own game</a>.</p>
-    <nav aria-label="Themes on this page"><ul class="theme-links">{groups.map(group => <li><a href={`#${group.theme.slug}`}>{group.theme.label}</a></li>)}{other.length > 0 && <li><a href="#more-ideas">More ideas</a></li>}</ul></nav>
-    {groups.map(group => <section class="rule-section" id={group.theme.slug}><h2>{group.theme.label}</h2><RuleList rules={group.rules} /></section>)}
-    {other.length > 0 && <section class="rule-section" id="more-ideas"><h2>More ideas</h2><RuleList rules={other} /></section>}
-    <p class="small muted rule-section">A borrowed rule doesn’t bring its game’s tie-break with it. If several people qualify, or nobody does, <a href="/">use the random picker</a> to settle it fairly.</p>
+    <RandomRule games={rules} lazy featured />
+    <section class="ways-browser" aria-labelledby="browse-ideas">
+      <div class="ways-browser-heading">
+        <span class="eyebrow">Explore the collection</span>
+        <h2 id="browse-ideas">Browse by theme</h2>
+        <p>Open a theme to see its starting rules and the game behind each one.</p>
+      </div>
+      <div class="ways-groups">
+        {sections.map(section => <details class="ways-group" id={section.id}>
+          <summary>
+            <span class="ways-group-copy">
+              <h3>{section.label}</h3>
+              <span>For example: {section.preview}</span>
+            </span>
+            <span class="ways-group-count">{section.rules.length} {section.rules.length === 1 ? 'idea' : 'ideas'}</span>
+            <span class="ways-group-toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class="ways-group-content"><RuleList rules={section.rules} /></div>
+        </details>)}
+      </div>
+    </section>
+    <p class="small muted ways-note">A borrowed rule doesn’t bring its game’s tie-break with it. If several people qualify, or nobody does, <a href="/">use the random picker</a> to settle it fairly.</p>
   </div>
+  <script>
+    const openLinkedTheme = () => {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target instanceof HTMLDetailsElement && target.classList.contains('ways-group')) target.open = true;
+    };
+    openLinkedTheme();
+    window.addEventListener('hashchange', openLinkedTheme);
+  </script>
 </Layout>
+<style>
+  .ways-page { max-width:840px; }
+  .ways-page > .random-rule { margin:26px 0 38px; }
+  .ways-browser-heading { margin-bottom:16px; }
+  .ways-browser-heading .eyebrow { display:block; margin-bottom:7px; }
+  .ways-browser-heading h2 { margin:0 0 5px; font-size:26px; }
+  .ways-browser-heading p { margin:0; color:var(--muted); font-size:14px; }
+  .ways-groups { display:grid; gap:10px; }
+  .ways-group { min-width:0; border:1px solid var(--line); border-radius:17px; background:var(--paper); overflow:hidden; transition:border-color .18s ease, box-shadow .18s ease; }
+  .ways-group:hover, .ways-group:focus-within, .ways-group[open] { border-color:color-mix(in srgb,var(--green) 55%,var(--line)); }
+  .ways-group:focus-within { box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 24%,transparent); }
+  .ways-group summary { display:flex; align-items:center; gap:13px; min-height:96px; padding:17px 19px; cursor:pointer; list-style:none; }
+  .ways-group summary::-webkit-details-marker { display:none; }
+  .ways-group-copy { display:flex; flex:1; flex-direction:column; gap:4px; min-width:0; }
+  .ways-group-copy h3 { margin:0; font-family:Georgia,"Times New Roman",serif; font-size:21px; font-weight:400; line-height:1.2; }
+  .ways-group-copy > span { color:var(--muted); font-size:12px; line-height:1.45; }
+  .ways-group-count { flex:none; padding:6px 9px; border-radius:999px; background:var(--soft); color:var(--green); font-size:11px; font-weight:700; white-space:nowrap; }
+  .ways-group-toggle { display:grid; place-items:center; flex:none; width:24px; height:24px; color:var(--green); font-size:23px; font-weight:300; line-height:1; transition:transform .18s ease; }
+  .ways-group[open] .ways-group-toggle { transform:rotate(45deg); }
+  .ways-group-content { padding:0 19px 17px; border-top:1px solid var(--line); }
+  .ways-group-content :global(.game-list) { margin-top:0; }
+  .ways-note { margin:22px 0 0; }
+  @media(max-width:550px) {
+    .ways-group summary { align-items:flex-start; flex-wrap:wrap; gap:8px; min-height:0; padding:16px; }
+    .ways-group-copy { flex-basis:calc(100% - 40px); }
+    .ways-group-copy h3 { font-size:20px; }
+    .ways-group-count { order:3; margin-left:0; }
+    .ways-group-toggle { margin-left:auto; }
+    .ways-group-content { padding:0 16px 14px; }
+  }
+  @media(prefers-reduced-motion:reduce) {
+    .ways-group, .ways-group-toggle { transition:none; }
+  }
+</style>
