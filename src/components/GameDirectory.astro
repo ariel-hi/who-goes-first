@@ -14,21 +14,32 @@ if (enableAlphabetBrowse) for (const game of games) {
   else letterCounts.set(letter, { count: 1, firstId: game.id });
 }
 const letters = ['0-9', ...'abcdefghijklmnopqrstuvwxyz', 'other'].filter(letter => letterCounts.has(letter));
+const letterGroups = enableAlphabetBrowse ? letters.map(letter => ({ letter, games: games.filter(game => browseLetter(game.gameName) === letter) })) : [];
 ---
-<div data-game-directory data-search-history={enableSearchHistory ? 'true' : undefined}>
+<div data-game-directory data-search-history={enableSearchHistory ? 'true' : undefined} data-letter-shelves={enableAlphabetBrowse ? 'true' : undefined}>
   <label class="search-box"><span>Search by game or another name</span><input type="search" name="game-search" placeholder="Find a game…" autocomplete="off" maxlength="100" /></label>
   <p class="count-label" data-count aria-live="polite">{games.length} {games.length === 1 ? 'rule' : 'rules'} available</p>
   {(hasDiscovery || enableAlphabetBrowse) && <div data-directory-discovery>
     <slot name="discovery" />
     {letters.length > 0 && <section class="rule-alphabet-section" aria-labelledby="rule-alphabet-heading">
       <h2 id="rule-alphabet-heading">Browse rules by game title</h2>
+      <p>Jump to a letter, then open its rules.</p>
       <nav class="directory-alphabet" aria-label="Jump to starting rules by letter">{letters.map(letter => <a href={`#rule-letter-${letter}`} aria-label={`Jump to ${shelfLabel(letter)} rules, ${letterCounts.get(letter)!.count} available`}>{shelfLabel(letter)}</a>)}</nav>
     </section>}
   </div>}
-  <ul class="game-list">{games.map(game => <li data-game={JSON.stringify({ gameName: game.gameName, aliases: searchAliases?.get(game.id) ?? game.aliases, editionLabel: game.editionLabel })}>
-    {letterCounts.get(browseLetter(game.gameName))?.firstId === game.id && <h2 id={`rule-letter-${browseLetter(game.gameName)}`} class="rule-letter-heading" tabindex="-1">{shelfLabel(browseLetter(game.gameName))}</h2>}
+  {enableAlphabetBrowse ? <>
+    <div class="rule-letter-groups" data-rule-groups>
+      {letterGroups.map(group => <details class="rule-letter-group" id={`rule-letter-${group.letter}`}>
+        <summary><strong>{shelfLabel(group.letter)}</strong><span>{group.games.length.toLocaleString('en')} {group.games.length === 1 ? 'rule' : 'rules'}</span><span class="rule-letter-toggle" aria-hidden="true"></span></summary>
+        <ul class="game-list">{group.games.map(game => <li data-game={JSON.stringify({ gameName: game.gameName, aliases: searchAliases?.get(game.id) ?? game.aliases, editionLabel: game.editionLabel })}>
+          <a href={`${approvedIds.includes(game.id) ? '/games/' : prefix}${game.slug}/`}><span>{game.gameName}{(shared.has(game.gameName) || game.gameName === 'Go') && <small>{game.editionLabel}</small>}</span></a>
+        </li>)}</ul>
+      </details>)}
+    </div>
+    <ul class="game-list rule-search-results" data-search-results hidden></ul>
+  </> : <ul class="game-list">{games.map(game => <li data-game={JSON.stringify({ gameName: game.gameName, aliases: searchAliases?.get(game.id) ?? game.aliases, editionLabel: game.editionLabel })}>
     <a href={`${approvedIds.includes(game.id) ? '/games/' : prefix}${game.slug}/`}><span>{game.gameName}{(shared.has(game.gameName) || game.gameName === 'Go') && <small>{game.editionLabel}</small>}</span></a>
-  </li>)}</ul>
+  </li>)}</ul>}
   <div class="empty-state" data-empty hidden={games.length > 0}><h2>{games.length ? 'No matching rule yet.' : 'No rules published yet'}</h2><p>{games.length ? 'No reviewed rule matches your search. The catalog is still growing.' : 'Rules will appear here after their publisher sources have been checked.'}</p>{enableDirectorySearch && <><a class="inline-link" data-directory-search href="/board-games/">Find this game in the directory</a><br /></>}<a class="inline-link" href="/">Pick a starting player instead</a></div>
   <noscript><p class="small muted">Search needs JavaScript. All available rules are listed above as ordinary links.</p>{enableDirectorySearch && <p><a class="inline-link" href="/board-games/">Find this game in the directory</a></p>}</noscript>
 </div>
@@ -37,17 +48,32 @@ const letters = ['0-9', ...'abcdefghijklmnopqrstuvwxyz', 'other'].filter(letter 
   import { directorySearchHref, readDirectorySearchFragment } from '../lib/directory-search';
   document.querySelectorAll<HTMLElement>('[data-game-directory]').forEach(directory => {
     const input = directory.querySelector<HTMLInputElement>('input')!;
-    const list = directory.querySelector<HTMLUListElement>(':scope > .game-list')!;
-    const items = [...list.querySelectorAll<HTMLLIElement>('li')].map(item => ({ item, search: prepareSearch(JSON.parse(item.dataset.game!)) }));
+    const groups = directory.querySelector<HTMLElement>('[data-rule-groups]');
+    const list = directory.querySelector<HTMLUListElement>(groups ? '[data-search-results]' : ':scope > .game-list')!;
+    const items = [...(groups ?? list).querySelectorAll<HTMLLIElement>('li')].map(item => ({ item, search: prepareSearch(JSON.parse(item.dataset.game!)) }));
     const bridge = directory.querySelector<HTMLAnchorElement>('[data-directory-search]');
     const discovery = directory.querySelector<HTMLElement>('[data-directory-discovery]');
     const historyEnabled = directory.dataset.searchHistory === 'true';
     const render = () => {
-      directory.dataset.searching = String(Boolean(input.value.trim()));
+      const searching = Boolean(input.value.trim());
+      directory.dataset.searching = String(searching);
       if (bridge) bridge.href = directorySearchHref(input.value);
-      if (discovery) discovery.hidden = Boolean(input.value.trim());
+      if (discovery) discovery.hidden = searching;
       const rank = createSearchRanker(input.value);
       const ranked = items.map(({ item, search }) => ({ item, rank: rank(search) })).sort((a, b) => a.rank - b.rank);
+      if (groups) {
+        const matches = searching ? ranked.filter(({ rank }) => Number.isFinite(rank)) : [];
+        const fragment = document.createDocumentFragment();
+        for (const { item } of matches) fragment.append(item.cloneNode(true));
+        list.replaceChildren(fragment);
+        groups.hidden = searching;
+        list.hidden = !searching || matches.length === 0;
+        directory.querySelector<HTMLElement>('[data-count]')!.textContent = searching
+          ? `${matches.length} ${matches.length === 1 ? 'rule' : 'rules'} found`
+          : `${items.length} ${items.length === 1 ? 'rule' : 'rules'} available`;
+        directory.querySelector<HTMLElement>('[data-empty]')!.hidden = !searching || matches.length > 0;
+        return;
+      }
       let count = 0;
       const newlyHidden = ranked.filter(({ item, rank }) => !item.hidden && !Number.isFinite(rank)).length;
       const stage = newlyHidden > items.length / 2;
@@ -100,6 +126,17 @@ const letters = ['0-9', ...'abcdefghijklmnopqrstuvwxyz', 'other'].filter(letter 
       input.value = query;
       render();
     };
+    const openFragmentShelf = () => {
+      if (!groups || !location.hash.startsWith('#rule-letter-')) return;
+      const shelf = document.getElementById(location.hash.slice(1));
+      if (shelf instanceof HTMLDetailsElement && groups.contains(shelf)) shelf.open = true;
+    };
+    directory.querySelector('.directory-alphabet')?.addEventListener('click', event => {
+      const link = (event.target as Element).closest<HTMLAnchorElement>('a[href^="#rule-letter-"]');
+      if (!link) return;
+      const shelf = document.getElementById(link.hash.slice(1));
+      if (shelf instanceof HTMLDetailsElement) shelf.open = true;
+    });
     input.addEventListener('input', () => {
       if (historyEnabled) saveSearch();
       render();
@@ -108,8 +145,9 @@ const letters = ['0-9', ...'abcdefghijklmnopqrstuvwxyz', 'other'].filter(letter 
       // Preserve input entered before this module starts on a plain page.
       if (location.hash.startsWith('#q=')) restoreSearch();
       else if (input.value.trim()) { if (!location.hash) saveSearch(); render(); }
-      window.addEventListener('hashchange', restoreSearch);
+      window.addEventListener('hashchange', () => { openFragmentShelf(); restoreSearch(); });
       window.addEventListener('pageshow', event => { if (event.persisted) restoreSearch(); });
     } else if (input.value.trim()) render();
+    openFragmentShelf();
   });
 </script>

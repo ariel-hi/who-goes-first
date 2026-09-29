@@ -35,7 +35,24 @@
   .directory-alphabet a:hover { background:#eae0eb; }
   .rule-alphabet-section { margin-top:25px; }
   .rule-alphabet-section h2 { font-size:16px; margin:0 0 5px; }
+  .rule-alphabet-section p { margin:0 0 10px; color:var(--muted); font-size:13px; }
   .rule-alphabet-section .directory-alphabet { flex-wrap:wrap; overflow:visible; }
+  .rule-letter-groups { display:grid; gap:8px; margin:18px 0 28px; }
+  .rule-letter-groups[hidden], .rule-search-results[hidden] { display:none; }
+  .rule-letter-group { scroll-margin-top:16px; border:1px solid var(--line); border-radius:12px; background:var(--paper); overflow:hidden; }
+  .rule-letter-group summary { display:flex; align-items:center; gap:12px; min-height:56px; padding:10px 16px; list-style:none; cursor:pointer; }
+  .rule-letter-group summary::-webkit-details-marker { display:none; }
+  .rule-letter-group summary:hover, .rule-letter-group[open] summary { background:var(--soft); }
+  .rule-letter-group summary:focus-visible { outline:3px solid var(--green); outline-offset:-3px; }
+  .rule-letter-group summary strong { min-width:34px; color:var(--green); font:normal 26px/1 Georgia,serif; }
+  .rule-letter-group summary span:nth-child(2) { color:var(--muted); font-size:13px; }
+  .rule-letter-toggle { margin-left:auto; color:var(--green); font-size:22px; line-height:1; }
+  .rule-letter-toggle::before { content:'+'; }
+  .rule-letter-group[open] .rule-letter-toggle::before { content:'−'; }
+  .rule-letter-group[open] summary { border-bottom:1px solid var(--line); }
+  .rule-letter-group .game-list { margin:0; padding:0 16px 8px; }
+  .rule-letter-group .game-list li:last-child { border-bottom:0; }
+  .rule-letter-group .game-list a { padding:13px 4px; }
   .rule-letter-heading { display:flex; align-items:center; gap:14px; scroll-margin-top:20px; margin:20px 0 2px; color:var(--green); font-family:Georgia,serif; font-size:22px; }
   .rule-letter-heading::after { content:""; flex:1; border-top:1px solid var(--line); }
   [data-game-directory][data-searching="true"] .rule-letter-heading { display:none; }

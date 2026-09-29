@@ -16,7 +16,7 @@ for (const width of [320, 1280]) {
     expect(searchBox!.y + searchBox!.height).toBeLessThan(randomBox!.y);
     await search.fill('Azul');
     await expect(discovery).toBeHidden();
-    await expect(directory.locator('.game-list li:visible').first()).toContainText('Azul');
+    await expect(directory.locator('[data-search-results] li').first()).toContainText('Azul');
     await search.fill('');
     await expect(discovery).toBeVisible();
   });
@@ -26,10 +26,10 @@ test('repeated rule searches retain ranked links and clearing restores the compl
   await page.goto('/games/');
   const rules = page.locator('[data-game-directory]');
   const search = rules.getByRole('searchbox');
-  const original = await rules.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')));
+  const original = await rules.locator('[data-rule-groups] .game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')));
   expect(original.length).toBeGreaterThan(800);
   await search.fill('TTR');
-  const matches = rules.locator('.game-list li:visible a');
+  const matches = rules.locator('[data-search-results] li a');
   await expect(matches).toHaveCount(4);
   await expect(search).toBeFocused();
   const aliases = await matches.evaluateAll(links => links.map(link => link.getAttribute('href')));
@@ -40,8 +40,9 @@ test('repeated rule searches retain ranked links and clearing restores the compl
   await expect(matches).toHaveCount(4);
   expect(await matches.evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(aliases);
   await search.fill('');
-  await expect(rules.locator('.game-list li:visible')).toHaveCount(original.length);
-  expect(await rules.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(original);
+  await expect(rules.locator('[data-rule-groups]')).toBeVisible();
+  await expect(rules.locator('[data-search-results]')).toBeHidden();
+  expect(await rules.locator('[data-rule-groups] .game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(original);
   await search.fill('Azul');
   await expect(matches.first()).toHaveAttribute('href', '/games/azul-2018-en/');
   // Windows WebKit skips anchors on Tab; still require native link focus and
@@ -125,7 +126,8 @@ test('rules-page recovery follows the latest query and bounds its Unicode fragme
   await search.fill('');
   await expect(bridge).toHaveAttribute('href', '/board-games/');
   await expect(rules.locator('[data-empty]')).toBeHidden();
-  await expect(rules.locator('.game-list li:visible').first()).toBeVisible();
+  await expect(rules.locator('[data-rule-groups]')).toBeVisible();
+  await expect(rules.locator('[data-search-results]')).toBeHidden();
 });
 
 test('draft rule directories do not acquire the public directory recovery', async ({ page }) => {
@@ -144,7 +146,8 @@ test('rules-page directory recovery remains an ordinary link without JavaScript'
     const page = await context.newPage();
     await page.goto('/games/');
     const rules = page.locator('[data-game-directory]');
-    await expect(rules.locator('.game-list li').first()).toBeVisible();
+    await rules.locator('.rule-letter-group summary').first().click();
+    await expect(rules.locator('[data-rule-groups] .game-list li').first()).toBeVisible();
     const bridge = rules.getByRole('link', { name: 'Find this game in the directory' });
     await expect(bridge).toHaveAttribute('href', '/board-games/');
     expect((await bridge.boundingBox())!.height).toBeGreaterThanOrEqual(44);

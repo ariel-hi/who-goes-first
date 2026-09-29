@@ -14,10 +14,10 @@ for (const width of [320, 1280]) {
     await page.goto('/games/');
     const directory = page.locator('[data-game-directory]');
     const search = directory.getByRole('searchbox');
-    const original = await directory.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')));
+    const original = await directory.locator('[data-rule-groups] .game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')));
     const visitLength = await page.evaluate(() => history.length);
     await search.pressSequentially('Azul');
-    const matches = directory.locator('.game-list li:visible a');
+    const matches = directory.locator('[data-search-results] li a');
     await expect(matches).toHaveCount(3);
     const hrefs = await matches.evaluateAll(links => links.map(link => link.getAttribute('href')));
     await expect(page).toHaveURL(/\/games\/#q=Azul$/);
@@ -36,8 +36,9 @@ for (const width of [320, 1280]) {
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/games\/$/);
     await search.fill('');
     await expect(page).toHaveURL(/\/games\/$/);
-    await expect(directory.locator('.game-list li:visible')).toHaveCount(original.length);
-    expect(await directory.locator('.game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(original);
+    await expect(directory.locator('[data-rule-groups]')).toBeVisible();
+    await expect(directory.locator('[data-search-results]')).toBeHidden();
+    expect(await directory.locator('[data-rule-groups] .game-list a').evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual(original);
     expect(requests.every(url => !new URL(url).search && !new URL(url).hash)).toBe(true);
     // Production providers use their own configuration queries. A search
     // fragment must remain private across every first- and third-party request.
@@ -95,7 +96,7 @@ test('rules bookmarks restore Unicode and keep ordinary anchors separate', async
   const search = directory.getByRole('searchbox');
   await page.goto(`/games/#q=${encodeURIComponent('Последний Титан')}`);
   await expect(search).toHaveValue('Последний Титан');
-  await expect(directory.locator('.game-list li:visible a')).toHaveAttribute('href', '/games/final-titan-gaga-2026-ru-main/');
+  await expect(directory.locator('[data-search-results] li a')).toHaveAttribute('href', '/games/final-titan-gaga-2026-ru-main/');
   const query = '四季 + &filter=rules 🧩';
   await search.fill(query);
   await expect.poll(() => new URL(page.url()).hash).toBe(`#q=${encodeURIComponent(query)}`);
@@ -111,7 +112,8 @@ test('rules bookmarks restore Unicode and keep ordinary anchors separate', async
   await page.goto('/games/#q=%00');
   await expect(search).toHaveValue('');
   await expect(directory.locator('[data-empty]')).toBeHidden();
-  await expect(directory.locator('.game-list li:visible')).toHaveCount(await directory.locator('.game-list li').count());
+  await expect(directory.locator('[data-rule-groups]')).toBeVisible();
+  await expect(directory.locator('[data-search-results]')).toBeHidden();
 });
 
 test('blocked rules history writes leave native search and clearing usable', async ({ page }) => {
@@ -123,8 +125,9 @@ test('blocked rules history writes leave native search and clearing usable', asy
   const search = directory.getByRole('searchbox');
   await search.fill('Azul');
   await expect(search).toBeFocused();
-  await expect(directory.locator('.game-list li:visible')).toHaveCount(3);
+  await expect(directory.locator('[data-search-results] li')).toHaveCount(3);
   await search.fill('');
-  await expect(directory.locator('.game-list li:visible')).toHaveCount(await directory.locator('.game-list li').count());
+  await expect(directory.locator('[data-rule-groups]')).toBeVisible();
+  await expect(directory.locator('[data-search-results]')).toBeHidden();
   expect(errors).toEqual([]);
 });

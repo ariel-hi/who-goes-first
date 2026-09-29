@@ -47,7 +47,7 @@ for (const width of [320, 1280]) {
       page.on('pageerror', error => errors.push(error.message));
       const home = route === '/';
       const root = page.locator(home ? '[data-rule-lookup]' : '[data-game-directory]');
-      const links = root.locator(home ? '[data-results] a' : '.game-list li:not([hidden]) a');
+      const links = root.locator(home ? '[data-results] a' : '[data-search-results] li a');
       for (const [query, name, slug] of checked) {
         await page.goto(`${route}#q=${encodeURIComponent(query)}`);
         await expect(root.getByRole('searchbox')).toHaveValue(query);
@@ -77,7 +77,7 @@ for (const width of [320, 1280]) {
       await input.press('Backspace');
       await expect(input).toHaveValue('');
       if (home) await expect(root.locator('[data-results]')).toBeHidden();
-      else await expect(root.locator('[data-count]')).toContainText('rules found');
+      else await expect(root.locator('[data-count]')).toContainText('rules available');
       expect(errors).toEqual([]);
     });
   }

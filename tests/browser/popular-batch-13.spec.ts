@@ -48,7 +48,7 @@ for (const path of ['/games/', '/']) {
     const surface = page.locator(path === '/' ? '[data-rule-lookup]' : '[data-game-directory]');
     for (const game of games) {
       await surface.getByRole('searchbox').fill(game.rule.gameName);
-      await expect(surface.locator(`a[href="/games/${game.id}/"]`).first()).toBeVisible();
+      await expect(surface.locator(`${path === '/' ? '[data-results]' : '[data-search-results]'} a[href="/games/${game.id}/"]`)).toBeVisible();
     }
   });
 }

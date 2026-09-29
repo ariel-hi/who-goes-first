@@ -43,7 +43,7 @@ for (const width of [320, 1280]) {
     await page.goto('/games/');
     const library = page.locator('[data-game-directory]');
     await nativeType(library.getByRole('searchbox'), query);
-    const libraryLinks = library.locator('.game-list li:not([hidden]) a');
+    const libraryLinks = library.locator('[data-search-results] li a');
     await expect(libraryLinks).toHaveCount(1);
     await expect(libraryLinks).toBeVisible();
     await expect(libraryLinks).toContainText('7 Wonders');

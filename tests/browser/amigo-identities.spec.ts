@@ -234,7 +234,7 @@ for (const width of [320, 1280]) {
       const root = page.locator(directory ? '[data-board-directory]' : home ? '[data-rule-lookup]' : '[data-game-directory]');
       const input = root.getByRole('searchbox');
       await input.fill(query);
-      const links = root.locator(directory || home ? '[data-results] a' : '.game-list li:not([hidden]) a');
+      const links = root.locator(directory || home ? '[data-results] a' : '[data-search-results] li a');
       await expect(links).toHaveCount(1);
       await expect(links).toHaveAttribute('href', `/games/${game.slug}/`);
       if (directory) await expectReviewedRow(root.locator(`[data-results] li[data-id="${game.id}"]`), game);
