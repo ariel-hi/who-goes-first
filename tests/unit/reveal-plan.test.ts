@@ -15,7 +15,7 @@ test('large groups keep the compact reveals and result timing follows the last v
   const plan = createRevealPlan(outcome, random(92));
   const pieces = Object.values(plan);
   expect(revealDuration('balloon', plan)).toBe(Math.max(...pieces.map(piece => (piece.popAt ?? 0) + 600)) + 120);
-  expect(revealDuration('dice', plan)).toBe(Math.max(...pieces.map(piece => piece.diceAt + 1920)) + 120);
+  expect(revealDuration('dice', plan)).toBe(Math.max(...pieces.map(piece => piece.diceAt + piece.diceRoll + 270)) + 120);
   expect(revealDuration('balloon', plan)).toBeLessThan(3600);
   expect(revealDuration('dice', plan)).toBeLessThan(3400);
   expect(revealDuration('shells', plan)).toBeLessThan(3000);
@@ -66,7 +66,9 @@ test('every animation finishes within its deadline', () => {
       expect(p.flipAt + p.flipDuration).toBeLessThan(3400);
       expect(p.coin.delay + p.coin.duration).toBeLessThan(3200);
       expect(p.matchAt + 1440).toBeLessThan(3000);
-      expect(p.diceAt + 1920).toBeLessThan(3400);
+      expect(p.diceAt + p.diceRoll + 270).toBeLessThan(3400);
+      expect(p.diceAt).toBeLessThan(130);
+      expect(p.coin.delay).toBeLessThan(190);
       expect(p.dice.every(value => value >= 1 && value <= 6)).toBe(true);
       expect(Math.abs(p.coin.turn) % 360).toBe(0);
       expect([4, 5, 6, -4, -5, -6]).toContain(p.spinnerTurns);
@@ -78,7 +80,7 @@ test('every animation finishes within its deadline', () => {
         // Every elimination method resolves the chosen player last, with the single highest roll.
         expect(star.shell.delay).toBeGreaterThan(p.shell.delay);
         expect(star.matchAt).toBeGreaterThan(p.matchAt);
-        expect(star.diceAt).toBeGreaterThan(p.diceAt);
+        expect(star.diceAt + star.diceRoll).toBeGreaterThan(p.diceAt + p.diceRoll);
         expect(star.coin.delay + star.coin.duration).toBeGreaterThan(p.coin.delay + p.coin.duration);
         expect(star.dice[0] + star.dice[1]).toBeGreaterThan(p.dice[0] + p.dice[1]);
         expect(star.flipAt).toBeGreaterThan(p.flipAt);

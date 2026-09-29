@@ -31,7 +31,7 @@ export function revealDuration(mode: string, plan: RevealPlan): number {
     balloon: last(piece => (piece.popAt ?? 0) + 600),
     tower: last(piece => piece.tower.fallAt + piece.tower.stagger * 2 + piece.tower.fallDuration),
     straws: last(piece => piece.matchAt + 1440),
-    dice: last(piece => piece.diceAt + 1920),
+    dice: last(piece => piece.diceAt + piece.diceRoll + 270),
     coin: last(piece => piece.coin.delay + piece.coin.duration),
     shells: last(piece => piece.shell.delay + 820),
   }[mode];

@@ -14,6 +14,7 @@ export interface PlayerReveal {
   matchTilt: number;
   matchAt: number;
   diceAt: number;
+  diceRoll: number;
   dice: readonly [number, number];
   spinnerTurns: number;
   spinnerOffset: number;
@@ -40,7 +41,7 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
   for (const player of outcome.players) {
     plan[player.id] = {
       popAt: null, flipAt: 0, flipDuration: 900 + random() * 160, matchTilt: -8 + random() * 16,
-      matchAt: 0, diceAt: 0, dice: [1, 1], spinnerTurns: 5, spinnerOffset: 0, coin: { delay: 0, duration: 0, lift: 0, tilt: 0, turn: 720, drift: 0 },
+      matchAt: 0, diceAt: 0, diceRoll: 1650, dice: [1, 1], spinnerTurns: 5, spinnerOffset: 0, coin: { delay: 0, duration: 0, lift: 0, tilt: 0, turn: 720, drift: 0 },
       balloon: { style: 0, driftX: 0, driftY: 0, turn: 0, bobDelay: 0, bobDuration: 0, bobX: 0, bobY: 0, bobTurn: 0 },
       shell: { delay: 0, tilt: 0 },
       tower: { style: 0, fallAt: 0, fallDuration: 0, stagger: 0, drift: 0 },
@@ -79,9 +80,10 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
   };
   order(1000, 240, 520 + random() * 100, 480, (piece, time) => { piece.flipAt = time; }, piece => piece.flipAt);
   order(900, 230, 80, 420, (piece, time) => { piece.matchAt = time; }, piece => piece.matchAt);
-  order(1000, 240, 0, 360, (piece, time) => { piece.diceAt = time; }, piece => piece.diceAt);
+  // Dice and coins all leave the hand together; they land one at a time instead.
+  order(900, 200, 1250, 380, (piece, time) => { piece.diceRoll = time; }, piece => piece.diceRoll);
   order(1000, 240, 420, 460, (piece, time) => { piece.shell.delay = time; }, piece => piece.shell.delay);
-  order(900, 220, 90, 380, (piece, time) => { piece.coin.delay = time; }, piece => piece.coin.delay);
+  order(800, 200, 1300, 380, (piece, time) => { piece.coin.duration = time; }, piece => piece.coin.duration);
   // The chosen roll is always the single highest total; the totals themselves vary.
   const roll = () => 1 + Math.floor(random() * 6);
   const best = 7 + Math.floor(random() * 6);
@@ -94,6 +96,7 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
   }
   for (const player of outcome.players) {
     const piece = plan[player.id]!;
+    piece.diceAt = Math.round(random() * 120);
     piece.spinnerTurns = [4, 5, 6, -4, -5, -6][Math.floor(random() * 6)]!;
     // Keep the pointer comfortably inside the chosen slice, but rarely dead center.
     piece.spinnerOffset = (random() < .5 ? -1 : 1) * (.09 + random() * .24);
@@ -104,8 +107,8 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
     piece.balloon.bobY = Math.round(-4 - random() * 5);
     piece.balloon.bobTurn = Math.round((random() - .5) * 6);
     piece.coin = {
-      delay: piece.coin.delay,
-      duration: Math.round(1420 + random() * 200),
+      delay: Math.round(60 + random() * 120),
+      duration: piece.coin.duration,
       lift: Math.round(32 + random() * 22),
       tilt: Math.round(-9 + random() * 18),
       turn: [720, -720, 1080, -1080][Math.floor(random() * 4)]!,
