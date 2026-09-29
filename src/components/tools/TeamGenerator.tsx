@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { MAX_TEAM_NAMES, parseNames, splitTeams } from '../../lib/tools';
 
 export default function TeamGenerator() {
@@ -7,20 +7,32 @@ export default function TeamGenerator() {
   const [teams, setTeams] = useState<string[][]>([]);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const [copyFallback, setCopyFallback] = useState(false);
+  const [draw, setDraw] = useState(0);
+  const copyField = useRef<HTMLTextAreaElement>(null);
   const revision = useRef(0);
   const names = parseNames(text, true);
   const tooManyNames = names.length > MAX_TEAM_NAMES;
   const limitError = tooManyNames ? 'Add up to 200 names. Remove the extra names to make teams.' : '';
-  const invalidate = () => { revision.current++; setTeams([]); setError(''); setCopied(false); };
+  const teamText = teams.map((team, i) => `Team ${i + 1}: ${team.join(', ')}`).join('\n');
+  useEffect(() => { if (copyFallback) { copyField.current?.focus(); copyField.current?.select(); } }, [copyFallback]);
+  const invalidate = () => { revision.current++; setTeams([]); setError(''); setCopied(false); setCopyFallback(false); };
   const generate = () => {
-    revision.current++; setCopied(false);
+    revision.current++; setCopied(false); setCopyFallback(false);
     if (tooManyNames) { setTeams([]); setError(limitError); return; }
     if (names.length < teamCount) { setTeams([]); setError(`Add at least ${teamCount} names for ${teamCount} teams.`); return; }
-    setError(''); setTeams(splitTeams(names, teamCount));
+    setError(''); setTeams(splitTeams(names, teamCount)); setDraw(value => value + 1);
   };
   const copy = async () => {
     const current = revision.current;
-    try { await navigator.clipboard.writeText(teams.map((team, i) => `Team ${i + 1}: ${team.join(', ')}`).join('\n')); if (current === revision.current) setCopied(true); } catch { if (current === revision.current) setCopied(false); }
+    try {
+      await navigator.clipboard.writeText(teamText);
+      if (current === revision.current) { setCopied(true); setCopyFallback(false); }
+    } catch {
+      if (current !== revision.current) return;
+      setCopied(false); setCopyFallback(true);
+      copyField.current?.focus(); copyField.current?.select();
+    }
   };
   return (
     <div className="team-tool">
@@ -35,12 +47,20 @@ export default function TeamGenerator() {
       </div>
       <button type="button" className="primary" onClick={generate} disabled={tooManyNames}>{teams.length ? 'Shuffle again' : 'Make teams'}</button>
       {(limitError || error) && <p id="team-error" className="error" role="alert">{limitError || error}</p>}
-      {teams.length > 0 && (
+      {teams.length > 0 && <>
         <div role="status" aria-live="polite">
-          <ol className="team-list">{teams.map((team, i) => <li key={i}><h3>Team {i + 1}</h3><p>{team.join(', ')}</p></li>)}</ol>
-          <button type="button" className="text-button" onClick={copy}>{copied ? 'Copied' : 'Copy teams'}</button>
+          <ol className="team-list" key={draw}>{teams.map((team, i) => <li key={i} style={{ '--team-index': i } as CSSProperties}><h2>Team {i + 1}</h2><p>{team.join(', ')}</p></li>)}</ol>
         </div>
-      )}
+        <div className="team-copy-actions">
+          <button type="button" className="text-button" onClick={copy}>{copied ? 'Copied' : 'Copy teams'}</button>
+          {copied && <span className="small muted" role="status">Teams copied to clipboard.</span>}
+        </div>
+        {copyFallback && <div className="team-copy-fallback">
+          <label className="tool-label" htmlFor="team-copy-text">Copy this list manually</label>
+          <textarea id="team-copy-text" ref={copyField} value={teamText} rows={Math.min(teamCount + 1, 11)} readOnly onFocus={event => event.currentTarget.select()} onClick={event => event.currentTarget.select()} />
+          <p className="small muted">Select the list, then use your device’s Copy command.</p>
+        </div>}
+      </>}
     </div>
   );
 }

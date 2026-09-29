@@ -15,6 +15,7 @@
 
 :root[data-theme=dark] { --green:#bba1ca; --ink:#f4edf4; --muted:#c6b7ca; --line:#57475b; --paper:#332c36; --soft:#3b3140; background:#262129; color:var(--ink); }
 :root[data-theme=dark] body { background:#262129; }
+:root[data-theme=dark] ::selection { background:#76527e; color:#fff; }
 :root[data-theme=dark] :is(input[type=search],input[type=text],input[readonly],textarea,.settings,.prompt-stage) { background:var(--paper); border-color:var(--line); color:var(--ink); }
 :root[data-theme=dark] .home-rules { background:var(--soft); border-color:var(--line); }
 :root[data-theme=dark] .picker-card { border-color:var(--line); }

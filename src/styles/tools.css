@@ -12,9 +12,14 @@
 .text-button{border:0;background:none;padding:10px 0;color:var(--green);font:inherit;font-size:14px;text-decoration:underline;min-height:44px;cursor:pointer}
 .team-tool textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);font:inherit;font-size:16px;resize:vertical}
 .team-list{list-style:none;padding:0;margin:20px 0 4px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
-.team-list li{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:12px 14px}
-.team-list h3{margin:0 0 4px;font-size:15px;color:var(--green)}
+.team-list li{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:12px 14px;animation:team-arrive .32s cubic-bezier(.2,.75,.3,1) both;animation-delay:min(calc(var(--team-index) * 45ms),315ms)}
+.team-list h2{margin:0 0 4px;font-family:inherit;font-size:15px;font-weight:700;letter-spacing:normal;color:var(--green)}
 .team-list p{margin:0;overflow-wrap:anywhere}
+@keyframes team-arrive{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+.team-copy-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.team-copy-fallback{margin-top:6px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+.team-copy-fallback textarea{min-height:76px;resize:vertical}
+.team-copy-fallback p{margin:4px 0 0}
 
 .finger-area{position:relative;height:min(62vh,560px);min-height:320px;border:2px dashed var(--line);border-radius:18px;background:var(--soft);overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .finger-handoff{display:grid;grid-template-columns:160px minmax(0,1fr);align-items:center;gap:20px 25px;padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}
@@ -92,4 +97,4 @@
 
 
 
-@media (prefers-reduced-motion:reduce){.finger-dot,.finger-counting .finger-dot,.tool-coin-shadow-moving,.tool-coin-flight-moving,.tool-coin-spinning,.rps-contender,.rps-versus,.rps-victor .rps-choice-token{animation:none;transition:none}}
+@media (prefers-reduced-motion:reduce){.team-list li,.finger-dot,.finger-counting .finger-dot,.tool-coin-shadow-moving,.tool-coin-flight-moving,.tool-coin-spinning,.rps-contender,.rps-versus,.rps-victor .rps-choice-token{animation:none;transition:none}}
