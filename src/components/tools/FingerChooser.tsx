@@ -23,7 +23,10 @@ export default function FingerChooser() {
   const modeRef = useRef(mode); modeRef.current = mode;
   const render = () => setTick(tick => tick + 1);
 
-  useEffect(() => { setTouchCapable(navigator.maxTouchPoints > 0); return () => clearTimeout(timer.current); }, []);
+  useEffect(() => {
+    setTouchCapable(navigator.maxTouchPoints > 0 || matchMedia('(any-pointer: coarse)').matches);
+    return () => clearTimeout(timer.current);
+  }, []);
 
   const pick = useCallback(() => {
     const ids = [...fingers.current.keys()];
@@ -72,6 +75,19 @@ export default function FingerChooser() {
 
   return (
     <div className="finger-tool">
+      {!touchCapable ? (
+        <section className="finger-handoff" aria-labelledby="finger-handoff-title">
+          <div className="finger-handoff-qr">
+            <img src="/finger-chooser-qr.svg" width="160" height="160" alt="Scan to open the finger chooser on your phone" />
+          </div>
+          <div className="finger-handoff-copy">
+            <h2 id="finger-handoff-title">Bring everyone to the screen</h2>
+            <p>Scan with your phone camera, then place the phone in the middle of the table. Everyone can put a finger down to pick who starts or set the full turn order.</p>
+            <a className="finger-handoff-address" href="https://whogoesfirst.fun/finger-chooser/">whogoesfirst.fun/finger-chooser</a>
+          </div>
+          <a className="primary finger-handoff-picker" href="/">Use the first-player picker on this computer <span aria-hidden="true">→</span></a>
+        </section>
+      ) : <>
       <div className="tool-options" role="group" aria-label="What to choose">
         <button type="button" aria-pressed={mode === 'first'} onClick={() => setMode('first')} disabled={phase !== 'waiting' || count > 0}>First player</button>
         <button type="button" aria-pressed={mode === 'order'} onClick={() => setMode('order')} disabled={phase !== 'waiting' || count > 0}>Full turn order</button>
@@ -83,7 +99,7 @@ export default function FingerChooser() {
         onContextMenu={event => event.preventDefault()}
         aria-describedby="finger-status"
       >
-        {count === 0 && <p className="finger-hint" aria-hidden="true">{touchCapable ? 'Touch here' : 'Open this page on a phone or tablet'}</p>}
+        {count === 0 && <p className="finger-hint" aria-hidden="true">Touch here</p>}
         {[...fingers.current.entries()].map(([id, finger]) => {
           const rank = ranks.get(id);
           const state = phase !== 'done' ? '' : mode === 'first' ? (rank ? ' finger-winner' : ' finger-out') : ' finger-ranked';
@@ -95,7 +111,7 @@ export default function FingerChooser() {
         })}
       </div>
       <p id="finger-status" className="tool-status" role="status" aria-live="polite">{status}</p>
-      {!touchCapable && <p className="small muted">This chooser needs a touch screen. On a computer, use the <a href="/">first-player picker</a> with names or seats.</p>}
+      </>}
     </div>
   );
 }

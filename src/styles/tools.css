@@ -17,6 +17,15 @@
 .team-list p{margin:0;overflow-wrap:anywhere}
 
 .finger-area{position:relative;height:min(62vh,560px);min-height:320px;border:2px dashed var(--line);border-radius:18px;background:var(--soft);overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.finger-handoff{display:grid;grid-template-columns:160px minmax(0,1fr);align-items:center;gap:20px 25px;padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--paper)}
+.finger-handoff-qr{padding:8px;border:1px solid var(--line);border-radius:12px;background:#fff;line-height:0}
+.finger-handoff-qr img{display:block;width:100%;height:auto;aspect-ratio:1}
+.finger-handoff-copy h2{margin:0 0 9px;font-size:24px}
+.finger-handoff-copy p{margin:0 0 10px;color:var(--muted);font-size:14px;line-height:1.55}
+.finger-handoff-address{font-size:13px;overflow-wrap:anywhere}
+.finger-handoff-picker{grid-column:1/-1;margin-top:2px;padding:8px 16px;text-align:center}
+.finger-handoff-picker span{font-size:20px}
+@media(max-width:560px){.finger-handoff{grid-template-columns:1fr;padding:20px}.finger-handoff-qr{width:176px;margin:auto}.finger-handoff-copy{text-align:center}}
 .finger-counting{border-style:solid;border-color:var(--green)}
 .finger-hint{position:absolute;inset:0;display:grid;place-items:center;margin:0;color:var(--muted);font-size:20px;pointer-events:none;text-align:center;padding:0 20px}
 .finger-dot{position:absolute;width:96px;height:96px;margin:-48px 0 0 -48px;border-radius:50%;background:var(--finger);box-shadow:0 0 0 8px color-mix(in srgb,var(--finger) 30%,transparent);pointer-events:none;display:grid;place-items:center;transition:transform .35s ease,opacity .35s ease}
