@@ -4,20 +4,95 @@ import { siteSettings } from '../lib/site';
 const localPreview = import.meta.env.DEV && !siteSettings().production;
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
 const tools = [
-  { href: '/', name: 'First-player picker', use: 'Choose among 2–50 players, with names or numbered seats.' },
-  { href: '/finger-chooser/', name: 'Finger chooser', use: 'Use a touch screen to choose a starter or a full turn order.' },
-  { href: '/coin-flip/', name: 'Coin flip', use: 'Make a fair heads-or-tails decision between two choices.' },
-  { href: '/random-team-generator/', name: 'Random team generator', use: 'Split up to 200 names into 2–10 evenly sized random teams.' },
-  { href: '/rock-paper-scissors/', name: 'Rock paper scissors', use: 'Two players choose in secret, then reveal both throws together.' },
+  { href: '/finger-chooser/', name: 'Finger chooser', use: 'Touch the screen to choose a starter or a full turn order.', label: 'AT THE TABLE' },
+  { href: '/coin-flip/', name: 'Coin flip', use: 'Make a fair heads-or-tails decision between two choices.', label: 'TWO CHOICES' },
+  { href: '/random-team-generator/', name: 'Random team generator', use: 'Split up to 200 names into 2–10 evenly sized teams.', label: 'MAKE TEAMS' },
+  { href: '/rock-paper-scissors/', name: 'Rock paper scissors', use: 'Choose in secret, then reveal both players’ throws together.', label: 'TWO PLAYERS' },
 ];
 ---
 <Layout ads={false} title="Free Game-Night Decision Tools — Who Goes First?" description="Choose a starting player, flip a coin, make random teams or play rock paper scissors. Find the right free browser tool for your game night." pageType="CollectionPage">
-  <div class="content-page">
-    <h1>Decision tools.</h1>
-    <p class="lede">Pick a starter, settle a choice, or split your group into teams.</p>
-    <p>Playing a specific board game? <a href={gamesPath}>Check its starting-player rule</a> first.</p>
-    <ul class="game-list" aria-label="Decision tools">
-      {tools.map(tool => <li><a href={tool.href}><span>{tool.name}<small>{tool.use}</small></span></a></li>)}
-    </ul>
+  <div class="content-page tools-index">
+    <header class="tools-intro">
+      <span class="tools-eyebrow">GAME NIGHT, SORTED</span>
+      <h1>Decision tools.</h1>
+      <p class="lede">Pick a starter, settle a choice, or split your group into teams.</p>
+    </header>
+    <p class="tools-rule-note">Playing a specific board game? <a href={gamesPath}>Check its starting-player rule</a> first.</p>
+    <section aria-labelledby="first-player-tools">
+      <h2 id="first-player-tools" class="tools-section-heading">Choose a first player</h2>
+      <a class="tools-feature" href="/">
+        <span class="tools-feature-copy">
+          <span class="tools-card-label">FOR 2–50 PLAYERS</span>
+          <strong>First-player picker</strong>
+          <span>Use names or numbered seats, then choose a quick pick or a playful reveal.</span>
+          <span class="tools-feature-action">Open the picker <span aria-hidden="true">→</span></span>
+        </span>
+        <span class="tools-seats" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span></span>
+      </a>
+    </section>
+    <section aria-labelledby="other-tools">
+      <h2 id="other-tools" class="tools-section-heading">Other ways to decide</h2>
+      <ul class="tools-grid">
+        {tools.map((tool, index) => <li>
+          <a class="tools-card" href={tool.href}>
+            <span class="tools-card-top"><span class="tools-card-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><span class="tools-card-label">{tool.label}</span><span class="tools-card-arrow" aria-hidden="true">→</span></span>
+            <strong>{tool.name}</strong>
+            <span class="tools-card-use">{tool.use}</span>
+          </a>
+        </li>)}
+      </ul>
+    </section>
   </div>
 </Layout>
+<style>
+  .tools-index { max-width:840px; }
+  .tools-intro { margin-bottom:25px; }
+  .tools-eyebrow, .tools-card-label { display:block; color:var(--green); font-size:10px; font-weight:750; letter-spacing:.13em; }
+  .tools-eyebrow { margin-bottom:9px; }
+  .tools-intro h1 { margin-bottom:8px; }
+  .tools-intro .lede { margin-bottom:0; }
+  .tools-rule-note { margin:0 0 35px; padding:13px 17px; border-left:3px solid var(--green); border-radius:0 12px 12px 0; background:var(--soft); font-size:14px; }
+  .tools-section-heading { margin:0 0 14px; font-size:21px; }
+  .tools-feature, .tools-card { color:var(--ink); text-decoration:none; background:var(--paper); border:1px solid var(--line); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .tools-feature:hover, .tools-feature:focus-visible, .tools-card:hover, .tools-card:focus-visible { border-color:var(--green); box-shadow:0 10px 26px #2c233014; transform:translateY(-2px); }
+  .tools-feature { display:flex; align-items:center; justify-content:space-between; gap:22px; min-height:194px; padding:27px 30px; border-radius:20px; }
+  .tools-feature-copy { display:flex; flex-direction:column; align-items:flex-start; gap:6px; min-width:0; }
+  .tools-feature-copy strong { font-family:Georgia,"Times New Roman",serif; font-size:30px; font-weight:400; line-height:1.14; letter-spacing:-.6px; }
+  .tools-feature-copy>span:nth-child(3) { max-width:47ch; color:var(--muted); font-size:14px; line-height:1.5; }
+  .tools-feature-action { display:inline-flex; align-items:center; gap:9px; margin-top:8px; color:var(--green); font-size:14px; font-weight:700; }
+  .tools-feature-action span, .tools-card-arrow { transition:transform .2s ease; }
+  .tools-feature:is(:hover,:focus-visible) .tools-feature-action span, .tools-card:is(:hover,:focus-visible) .tools-card-arrow { transform:translateX(3px); }
+  .tools-seats { display:grid; grid-template-columns:repeat(2,48px); gap:8px; flex:none; transform:rotate(-8deg); }
+  .tools-seats span { display:grid; place-items:center; width:48px; height:48px; border-radius:15px; font-family:Georgia,"Times New Roman",serif; font-size:24px; color:#493d46; }
+  .tools-seats span:nth-child(1) { background:#f5dfd6; }
+  .tools-seats span:nth-child(2) { background:#dcece3; }
+  .tools-seats span:nth-child(3) { background:#e3e8f2; }
+  .tools-seats span:nth-child(4) { background:#f5ebcc; }
+  .tools-index section + section { margin-top:35px; }
+  .tools-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; padding:0; margin:0; list-style:none; }
+  .tools-grid li { min-width:0; }
+  .tools-card { display:flex; flex-direction:column; min-height:176px; height:100%; padding:20px 22px; border-radius:17px; }
+  .tools-card-top { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .tools-card-number { display:grid; place-items:center; width:34px; height:34px; flex:none; border-radius:11px; background:var(--soft); color:var(--green); font-family:Georgia,"Times New Roman",serif; font-size:17px; }
+  .tools-grid li:nth-child(2) .tools-card-number { background:#f5ebcc; color:#665128; }
+  .tools-grid li:nth-child(3) .tools-card-number { background:#e3e8f2; color:#3c5575; }
+  .tools-grid li:nth-child(4) .tools-card-number { background:#f5dfd6; color:#785143; }
+  .tools-card-arrow { margin-left:auto; color:var(--green); font-size:19px; line-height:1; }
+  .tools-card strong { font-family:Georgia,"Times New Roman",serif; font-size:22px; font-weight:400; line-height:1.2; }
+  .tools-card-use { margin-top:6px; color:var(--muted); font-size:13px; line-height:1.45; }
+  @media(max-width:550px) {
+    .tools-index { margin-top:31px; }
+    .tools-rule-note { margin-bottom:28px; }
+    .tools-feature { min-height:176px; padding:20px; gap:12px; }
+    .tools-feature-copy strong { font-size:26px; }
+    .tools-seats { grid-template-columns:repeat(2,34px); gap:5px; }
+    .tools-seats span { width:34px; height:34px; border-radius:10px; font-size:18px; }
+    .tools-grid { grid-template-columns:1fr; gap:10px; }
+    .tools-card { min-height:134px; padding:16px 18px; }
+    .tools-card-top { margin-bottom:8px; }
+  }
+  @media(prefers-reduced-motion:reduce) {
+    .tools-feature, .tools-card, .tools-feature-action span, .tools-card-arrow { transition:none; }
+    .tools-feature:hover, .tools-feature:focus-visible, .tools-card:hover, .tools-card:focus-visible, .tools-feature:is(:hover,:focus-visible) .tools-feature-action span, .tools-card:is(:hover,:focus-visible) .tools-card-arrow { transform:none; }
+  }
+</style>
