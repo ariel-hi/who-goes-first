@@ -84,12 +84,12 @@ function Spinner({ outcome, plan, settled, preview, sound, chosen }: { outcome: 
         </>}
         {chosen >= 0 && <path className="spinner-winning-slice" d={slicePath(chosen)} fill="none" stroke="none" pointerEvents="none"/>}
         {outcome.players.map((player, i) => {
+          // Names that fit are written around the circle, reading left to right when
+          // their slice is at the top. Longer names run along the slice instead.
           const name = sliceName(displayLabel(player, outcome.players), count);
-          // Short labels sit upright where the wheel stops; names run along the slice.
-          if (Array.from(name).length <= 3) {
-            const [tx, ty] = point(i * step, count <= 4 ? 78 : 88);
-            return <text key={player.id} className="spinner-name" transform={`rotate(${-turn} ${tx} ${ty})`} x={tx} y={ty} dy=".35em" textAnchor="middle" fill="#34342f" fontSize={size + 2} fontFamily="Georgia">{name}</text>;
-          }
+          const radius = count <= 3 ? 70 : count <= 6 ? 82 : 88;
+          const room = Math.min(150, 2 * Math.PI * radius / count * .86);
+          if (Array.from(name).length * size * .58 <= room) return <text key={player.id} className="spinner-name" transform={`rotate(${i * step} 140 140)`} x="140" y={140 - radius} dy=".35em" textAnchor="middle" fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
           const rest = ((i * step + turn) % 360 + 360) % 360;
           const flipped = rest > 180;
           return <text key={player.id} className="spinner-name" transform={`rotate(${i * step + (flipped ? 90 : -90)} 140 140)`} x={flipped ? 32 : 248} y="140" dy=".35em" textAnchor={flipped ? 'start' : 'end'} fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
