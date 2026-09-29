@@ -64,7 +64,7 @@ for (const width of [320, 1280]) {
         await expect(button).toHaveText('Pick again');
         await expect(button).toBeFocused();
         expect(await original!.evaluate(node => node === document.querySelector('.picker-card > .primary'))).toBe(true);
-        await expect(button).toHaveAttribute('aria-disabled', 'false');
+        await expect(button).not.toHaveAttribute('aria-disabled');
         if (motion === 'reduce') await page.clock.runFor(500);
         await page.keyboard.press('Enter');
         await expect.poll(() => draws(page)).toBe(2);
@@ -72,9 +72,8 @@ for (const width of [320, 1280]) {
         await expect(button).toBeFocused();
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
         if (motion === 'no-preference') {
-          // The uninterrupted keyboard draws above use real time. Isolate the
-          // busy guard on a fresh page with its timer paused, so a slow trace
-          // cannot turn the pointer check into a valid post-completion draw.
+          // Pause the reveal so the second Enter exercises the new skip action
+          // rather than a naturally completed draw.
           await page.clock.install({ time: new Date('2026-09-26T08:00:00Z') });
           await page.reload();
           await expect(button).toHaveText('Pick a player');
@@ -84,16 +83,19 @@ for (const width of [320, 1280]) {
             await button.focus();
             await page.keyboard.press('Enter');
             await expect(picker).toHaveAttribute('data-phase', 'revealing');
-            await expect(button).toHaveAttribute('aria-disabled', 'true');
+            await expect(button).toHaveText('Show result now');
+            await expect(button).not.toHaveAttribute('aria-disabled');
             expect(await button.evaluate(node => (node as HTMLButtonElement).disabled)).toBe(false);
             await expect(button).toBeFocused();
             await page.keyboard.press('Enter');
+            await expect(picker).toHaveAttribute('data-phase', 'result');
+            await expect(button).toHaveText('Pick again');
             expect(await draws(page)).toBe(1);
-            // Real pointer events retain each engine's native focus behavior.
+            // A quick extra pointer click cannot select a second player.
             const box = await button.boundingBox();
             expect(box).not.toBeNull();
             await page.mouse.click(box!.x + box!.width / 2, box!.y + box!.height / 2);
-            await expect(picker).toHaveAttribute('data-phase', 'revealing');
+            await expect(picker).toHaveAttribute('data-phase', 'result');
             expect(await draws(page)).toBe(1);
             const pointerDestination = await page.evaluateHandle(() => document.activeElement);
             try {

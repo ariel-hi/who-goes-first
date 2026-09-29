@@ -23,6 +23,22 @@ async function openMethod(page: Page, path: string) {
   await expect(page.getByRole('button', { name: 'Pick a player' })).toBeEnabled();
 }
 
+for (const width of [390, 1280]) test(`Dice Roll can show its locked result early at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 844 });
+  await openMethod(page, 'dice');
+  const button = page.locator('.picker-card > .primary');
+  await button.click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'revealing');
+  await expect(button).toHaveText('Show result now');
+  await button.click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
+  await expect(page.locator('.winner-announcement')).toHaveText('Seat 2 goes first.');
+  await expect(page.locator('.dice-reveal')).toHaveAttribute('data-settled', 'true');
+  await expect(page.locator('.dice-reveal .reveal-chosen')).toHaveCount(1);
+  await expect(button).toHaveText('Pick again');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
 test('dice show pips while rolling without a loading ring and stay decorative to assistive tech', async ({ page }) => {
   await openMethod(page, 'dice');
   await page.getByRole('button', { name: 'Pick a player' }).click();

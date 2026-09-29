@@ -461,7 +461,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
         </fieldset>
         {fallbackLimit !== null && <p className="small notice">{chosenMethod.label} fits up to {fallbackLimit} players. Quick is selected for your group of {eligible.length}.</p>}
         {error && <p role="alert" className="error">{error}</p>}
-        <button type="button" className="primary" disabled={!hydrated || errors.length > 0} aria-disabled={busy} onPointerDown={event => holdCountForPick(event.currentTarget)} onClick={() => pick()}>{!hydrated ? 'Getting ready…' : busy ? 'Revealing…' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
+        <button type="button" className="primary" disabled={!hydrated || errors.length > 0} onPointerDown={event => { if (!busy) holdCountForPick(event.currentTarget); }} onClick={() => { if (busy) finish(); else pick(); }}>{!hydrated ? 'Getting ready…' : busy ? 'Show result now' : state.phase === 'result' ? 'Pick again' : 'Pick a player'}</button>
         {visualMode && scene && <div ref={revealStage} className="reveal-stage" data-mode={renderedMode} aria-hidden="true"><EffectBoundary key={`${renderedMode}-${Math.max(0, (state.outcome?.drawId ?? 1) - 1)}`} onFail={state.outcome ? finish : () => {}}>
           <Suspense fallback={<RevealLoading mode={renderedMode} players={scene.outcome.players} />}>
             {renderedMode === 'balloon' ? <BalloonRise outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} preview={preview} /> : <TableReveals outcome={scene.outcome} plan={scene.plan} settled={state.phase === 'result'} mode={renderedMode as 'spinner' | 'cards' | 'tower' | 'straws' | 'dice' | 'coin' | 'shells'} preview={preview} sound={prefs.sound} />}
