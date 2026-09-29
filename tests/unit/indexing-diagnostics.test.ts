@@ -42,4 +42,18 @@ describe('Search Console indexing diagnostics', () => {
     expect(snapshot.inspections.every(item => item.status === 'unavailable' && item.reason === 'Search Console API HTTP 403')).toBe(true);
     expect(JSON.stringify(snapshot)).not.toContain('Sensitive API detail');
   });
+
+  it('does not present zero errors as a successful sitemap read before any download is recorded', () => {
+    const report = indexingReport({
+      generatedAt: '2026-09-28T20:23:12Z', property: 'https://whogoesfirst.fun/',
+      source: 'Google Search Console API', scope: 'sample', sitemapsStatus: 'available',
+      submittedSitemaps: [{
+        path: 'https://whogoesfirst.fun/sitemap-index.xml', lastSubmitted: '2026-09-27T23:27:43Z',
+        lastDownloaded: null, isPending: true, errors: 0, warnings: 0, submittedUrls: null,
+      }], inspections: [],
+    });
+    expect(report).toContain('no download recorded · not processed yet; fetch outcome unconfirmed');
+    expect(report).toContain('check the Sitemaps UI for fetch errors');
+    expect(report).not.toContain('0 errors, 0 warnings');
+  });
 });

@@ -87,11 +87,16 @@ export async function indexingSnapshot(token: string, property: string, origin: 
 export function indexingReport(snapshot: IndexingSnapshot): string {
   const sitemaps = snapshot.sitemapsStatus === 'available'
     ? snapshot.submittedSitemaps.length
-      ? snapshot.submittedSitemaps.map(item => `- Submitted sitemap: ${item.path} · last downloaded ${item.lastDownloaded ?? 'unknown'} · ${item.errors} errors, ${item.warnings} warnings${item.isPending ? ' · processing pending' : ''}`).join('\n')
+      ? snapshot.submittedSitemaps.map(item => item.lastDownloaded
+        ? `- Submitted sitemap: ${item.path} · last downloaded ${item.lastDownloaded} · ${item.errors} errors, ${item.warnings} warnings${item.isPending ? ' · latest submission not processed yet' : ''}`
+        : `- Submitted sitemap: ${item.path} · submitted ${item.lastSubmitted ?? 'at an unknown time'} · no download recorded · ${item.isPending ? 'not processed yet' : 'processing state unknown'}; fetch outcome unconfirmed`).join('\n')
       : '- Search Console lists no submitted sitemaps for this property.'
     : `- Submitted sitemap status unavailable: ${snapshot.sitemapsReason}.`;
+  const sitemapCaveat = snapshot.sitemapsStatus === 'available' && snapshot.submittedSitemaps.some(item => !item.lastDownloaded)
+    ? "\n\nThe Search Console API does not provide the Sitemaps report's fetch label. Zero errors without a download timestamp does not establish a successful read; check the Sitemaps UI for fetch errors."
+    : '';
   const inspections = snapshot.inspections.map(item => item.status === 'available'
     ? `- ${item.path}: ${item.verdict}; ${item.coverageState || 'coverage unknown'}; last crawl ${item.lastCrawlTime ?? 'unknown'}; fetch ${item.pageFetchState}.`
     : `- ${item.path}: inspection unavailable (${item.reason}).`).join('\n');
-  return `## Google indexing sample\n${sitemaps}\n${inspections}\n\nThis checks six named URLs in Google's indexed data, not the current live pages or the full site.\n`;
+  return `## Google indexing sample\n${sitemaps}${sitemapCaveat}\n${inspections}\n\nThis checks six named URLs in Google's indexed data, not the current live pages or the full site.\n`;
 }

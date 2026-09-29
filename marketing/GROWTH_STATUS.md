@@ -4,7 +4,7 @@
 
 Keep the picker and reviewed starting rules as the primary journeys. Pause new utility categories and additional affiliate placements while search discovery and returning use remain unproven. Continue correcting sources and filling high-priority missing rules. Review the existing Search Console sitemap/indexing report, then use its impressions and clicks together with consented page visits to decide which journeys merit further work. Do not add search-query or player-level tracking to answer this question.
 
-Last checked: 2026-09-26 UTC. This is an observation log, not a claim of traffic growth.
+Last checked: 2026-09-28 UTC. This is an observation log, not a claim of traffic growth.
 
 ## Published and verified
 
@@ -20,6 +20,8 @@ Last checked: 2026-09-26 UTC. This is an observation log, not a claim of traffic
 Search Console accepted the printable page into a priority crawl queue on 2026-09-26 UTC. Its inspection before submission said the URL was unknown to Google. Submission is not indexing, ranking or a search visit. Do not repeatedly submit the same unchanged page.
 
 The performance report still says it is processing data and to check again in a day or so. Treat clicks and impressions as unavailable, not zero.
+
+On 2026-09-28, the Search Console Sitemaps UI showed **Couldn't fetch** for both submitted `/sitemap-index.xml` and `/sitemap.xml`, with no last-read date and zero discovered pages. The live flat sitemap, index, and four child sitemaps all returned HTTP 200, parsed as XML, and contained 1,280 total canonical URLs. Google's live URL Inspection for the index and flat sitemap reported a successful fetch; the index explicitly showed crawling allowed. Both existing sitemap URLs were resubmitted once through the Sitemaps UI. Submission succeeded, but the table still showed Couldn't fetch immediately afterward. This is unresolved until Search Console records a successful read. Do not repeat submissions or relax Cloudflare security without evidence of a continuing crawl failure. [Google's Sitemaps report guide](https://support.google.com/webmasters/answer/7451001?hl=en) distinguishes submission from a successful fetch.
 
 ### Discovery beyond Google
 
