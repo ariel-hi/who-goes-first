@@ -3789,6 +3789,392 @@
       "reviewedBy": "Codex /root",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "eab14bda4155477b3e99575e362e6b85bf3d913b3a89b46240b1e60917fb7f1f"
+    },
+    {
+      "identityId": "game-3e233e7f-f2d8-485e-9f79-7d6865fbde5b",
+      "routeKey": "game-3e233e7f-f2d8-485e-9f79-7d6865fbde5b",
+      "name": "The Garrison Game (Parker Brothers catalog issue)",
+      "searchNames": [
+        "The Garrison Game"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The boxed, folding-board siege game on printed page 12 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). The precise manufacture year and equivalence to later Garrison Game issues are unproved.",
+      "identityEvidence": "The catalog illustrates a Garrison Game box label with Parker Bros. Salem identification and describes an asymmetric fort assault with 50 attacking pieces and three defenders. The listed large box contains a mounted folding board, turned maple pieces and directions. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-garrison-game",
+      "sources": [
+        {
+          "id": "parker-catalog-garrison-game",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 8 / printed page 12: Garrison Game illustrated label, separate heading, physical board and piece description."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldiers and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-garrison-game"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-garrison-game"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders) and Rex (Parker Brothers single-board issue) (single Rex track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-garrison-game"
+          ]
+        },
+        {
+          "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+          "reason": "The original Parker Brothers catalog separately lists The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders) and Progressive Rex (Parker Brothers four-board set) (four-board Progressive Rex set). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-garrison-game"
+          ]
+        },
+        {
+          "identityId": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+          "reason": "The original Parker Brothers catalog separately lists The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders) and The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-garrison-game"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "dff2f5891e935b6214d978474dadf5a82835cf3cd2d3b60629a23b34ad6461b9"
+    },
+    {
+      "identityId": "game-6747c489-8d06-49f6-a074-fb05f6bcbffd",
+      "routeKey": "game-6747c489-8d06-49f6-a074-fb05f6bcbffd",
+      "name": "The Railroad Game (Parker Brothers wooden-board issue)",
+      "searchNames": [
+        "The Railroad Game"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The 50-cent boxed wooden-board Railroad Game on printed page 13 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). The separately listed 25-cent Popular Edition is a different physical catalog issue, even though title and rules may overlap.",
+      "identityEvidence": "Under A New Board Game, the publisher describes a folding wooden landscape board with branching railway lines, an illuminated spinning teetotum and playing pieces in the box; price is 50 cents. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-railroad-wooden",
+      "sources": [
+        {
+          "id": "parker-catalog-railroad-wooden",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 8 / printed page 13: The Railroad Game 50-cent wooden-board issue with illustrated train, spinner and pieces."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldiers and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-wooden"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-wooden"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum) and Rex (Parker Brothers single-board issue) (single Rex track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-wooden"
+          ]
+        },
+        {
+          "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum) and Progressive Rex (Parker Brothers four-board set) (four-board Progressive Rex set). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-wooden"
+          ]
+        },
+        {
+          "identityId": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum) and The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-wooden"
+          ]
+        },
+        {
+          "identityId": "game-3e233e7f-f2d8-485e-9f79-7d6865fbde5b",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum) and The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-wooden"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "0e7e2c082df797f3ba5e08a1fc86c588187986c9f8fedcb1fd45f2d436adde37"
+    },
+    {
+      "identityId": "game-a3644921-b283-4a5b-8183-30ecf7a7034e",
+      "routeKey": "game-a3644921-b283-4a5b-8183-30ecf7a7034e",
+      "name": "The Railroad Game: Popular Edition (Parker Brothers)",
+      "searchNames": [
+        "The Railroad Game Popular Edition"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The separately advertised 25-cent Popular Edition of The Railroad Game on printed page 13 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). Its lithographed folding board and showy box are distinguished from the 50-cent wooden-board issue; detailed rules and component correspondence are unproved.",
+      "identityEvidence": "The publisher gives The Railroad Game a second heading marked Popular Edition and describes a color-and-gold lithographed folding board that folds into a box with pieces and directions, priced at 25 cents. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-railroad-popular",
+      "sources": [
+        {
+          "id": "parker-catalog-railroad-popular",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 8 / printed page 13: separate Railroad Game Popular Edition listing, lithographed folding board, box, components and 25-cent price."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldiers and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and Rex (Parker Brothers single-board issue) (single Rex track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        },
+        {
+          "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and Progressive Rex (Parker Brothers four-board set) (four-board Progressive Rex set). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        },
+        {
+          "identityId": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        },
+        {
+          "identityId": "game-3e233e7f-f2d8-485e-9f79-7d6865fbde5b",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        },
+        {
+          "identityId": "game-6747c489-8d06-49f6-a074-fb05f6bcbffd",
+          "reason": "The original Parker Brothers catalog separately lists The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box) and The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-railroad-popular"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "6791286c4ca6a66ca47d7b27dc51c2b1c2230dac9ba10339222381477b49f89b"
+    },
+    {
+      "identityId": "game-fcf81100-12d6-4108-9d35-c50dc4fc2d35",
+      "routeKey": "game-fcf81100-12d6-4108-9d35-c50dc4fc2d35",
+      "name": "The Grocery Store Game (Parker Brothers 50-cent issue)",
+      "searchNames": [
+        "The Grocery Store Game"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The 50-cent large-box premium card edition advertised on printed page 14 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). The publisher explicitly says it is played in the same manner as its 25-cent Corner Grocery, but this record binds only the higher-priced physical issue.",
+      "identityEvidence": "The illustrated Grocery Store Game box label bears the Parker Bros. Salem publisher imprint. The text describes a more elaborate large-box edition, with illustrated grocery cards on prepared cardboard, priced at 50 cents. It states that playing qualities follow Corner Grocery; no starting-player rule is reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-grocery-store",
+      "sources": [
+        {
+          "id": "parker-catalog-grocery-store",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 9 / printed page 14: illustrated Grocery Store Game label, premium-card description, same-manner relation to Corner Grocery and 50-cent price."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldiers and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and Rex (Parker Brothers single-board issue) (single Rex track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and Progressive Rex (Parker Brothers four-board set) (four-board Progressive Rex set). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-3e233e7f-f2d8-485e-9f79-7d6865fbde5b",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-6747c489-8d06-49f6-a074-fb05f6bcbffd",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        },
+        {
+          "identityId": "game-a3644921-b283-4a5b-8183-30ecf7a7034e",
+          "reason": "The original Parker Brothers catalog separately lists The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards) and The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-grocery-store"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "a311aaae36f2b633d0eec3d54a037571ecddcf2c77fd96cf81faa20dbb6ceeeb"
+    },
+    {
+      "identityId": "game-c8943689-960a-4007-9af6-c3a51c83a735",
+      "routeKey": "game-c8943689-960a-4007-9af6-c3a51c83a735",
+      "name": "Corner Grocery (Parker Brothers 25-cent issue)",
+      "searchNames": [
+        "The Amusing Game of the Corner Grocery",
+        "Corner Grocery"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The 25-cent boxed card-and-play-money Corner Grocery product advertised on printed page 15 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). The 50-cent Grocery Store Game is a separately packaged premium edition described on the facing page; other Corner Grocery printings are unlinked.",
+      "identityEvidence": "The catalog illustrates a box label headed The Amusing Game of the Corner Grocery. Its description specifies about 40 illustrated grocery cards with prices and about 100 money pieces for buying and paying, in a separately priced 25-cent product. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-corner-grocery",
+      "sources": [
+        {
+          "id": "parker-catalog-corner-grocery",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 9 / printed page 15: illustrated Corner Grocery box label, card and money components and 25-cent price."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldiers and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and Rex (Parker Brothers single-board issue) (single Rex track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and Progressive Rex (Parker Brothers four-board set) (four-board Progressive Rex set). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-3e233e7f-f2d8-485e-9f79-7d6865fbde5b",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and The Garrison Game (Parker Brothers catalog issue) (siege board with 50 attackers and three defenders). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-6747c489-8d06-49f6-a074-fb05f6bcbffd",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and The Railroad Game (Parker Brothers wooden-board issue) (50-cent wooden railway board with a teetotum). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-a3644921-b283-4a5b-8183-30ecf7a7034e",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and The Railroad Game: Popular Edition (Parker Brothers) (25-cent lithographed folding railway board and box). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        },
+        {
+          "identityId": "game-fcf81100-12d6-4108-9d35-c50dc4fc2d35",
+          "reason": "The original Parker Brothers catalog separately lists Corner Grocery (Parker Brothers 25-cent issue) (25-cent grocery cards and play money) and The Grocery Store Game (Parker Brothers 50-cent issue) (50-cent large-box premium illustrated grocery cards). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-corner-grocery"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "35c02adfd0b0a116b50a3da29fd15ec2fa5186dc27c755c1374ffc91d2d17a7b"
     }
   ]
 }
