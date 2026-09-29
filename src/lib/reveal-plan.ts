@@ -71,12 +71,17 @@ export function createRevealPlan(outcome: Outcome, random: () => number = Math.r
     };
   });
   // Every table method eliminates the others one at a time in a fresh order,
-  // then holds a beat before the chosen player's piece resolves last.
+  // then holds a beat and resolves the final two together, so nobody knows
+  // until the very end. Either of the pair may land a moment first.
   const order = (window: number, perPlayer: number, start: number, hold: number, set: (piece: PlayerReveal, at: number) => void, at: (piece: PlayerReveal) => number) => {
     const sequence = shuffle(losers, random);
-    const span = Math.min(window, perPlayer * sequence.length);
-    sequence.forEach((player, rank) => set(plan[player.id]!, Math.round(start + (sequence.length > 1 ? rank / (sequence.length - 1) : 0) * span + random() * 40)));
-    set(plan[outcome.winnerId]!, Math.max(start, ...sequence.map(player => at(plan[player.id]!))) + hold);
+    const early = sequence.slice(0, -1);
+    const span = Math.min(window, perPlayer * early.length);
+    early.forEach((player, rank) => set(plan[player.id]!, Math.round(start + (early.length > 1 ? rank / (early.length - 1) : 0) * span + random() * 40)));
+    const final = Math.max(start, ...early.map(player => at(plan[player.id]!))) + (early.length ? hold : 0);
+    const offset = Math.round((random() - .5) * 90);
+    set(plan[sequence.at(-1)!.id]!, final - offset / 2);
+    set(plan[outcome.winnerId]!, final + offset / 2);
   };
   order(1000, 240, 520 + random() * 100, 480, (piece, time) => { piece.flipAt = time; }, piece => piece.flipAt);
   order(900, 230, 80, 420, (piece, time) => { piece.matchAt = time; }, piece => piece.matchAt);

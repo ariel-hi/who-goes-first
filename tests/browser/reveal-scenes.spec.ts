@@ -395,7 +395,7 @@ test('balloon timings persist through completion and change on a new pick', asyn
   expect(await delays()).not.toEqual(before);
 });
 
-test('cards turn one at a time in three dimensions, the chosen card last, and retain their faces', async ({ page }) => {
+test('cards turn one at a time in three dimensions, the final two together, and retain their faces', async ({ page }) => {
   await openMethod(page, 'cards');
   await page.getByLabel('Player count', { exact: true }).fill('12');
   await page.getByRole('button', { name: 'Pick a player' }).click();
@@ -406,7 +406,8 @@ test('cards turn one at a time in three dimensions, the chosen card last, and re
   }));
   expect(new Set(timings.map(t => t.delay)).size).toBeGreaterThan(6);
   const chosenDelay = await page.locator('.cards-reveal .reveal-chosen .card-flipper').evaluate(card => parseFloat(getComputedStyle(card).animationDelay));
-  expect(timings.filter(t => t.delay !== chosenDelay).every(t => t.delay < chosenDelay)).toBe(true);
+  // Only one other card turns alongside the chosen card at the end.
+  expect(timings.filter(t => t.delay > chosenDelay - .05)).toHaveLength(2);
   expect(timings.every(t => t.animation === 'flip-card' && t.depth === 'preserve-3d')).toBe(true);
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   await expect(page.locator('.cards-reveal')).toHaveAttribute('data-settled', 'true');
@@ -424,7 +425,7 @@ test('cards turn one at a time in three dimensions, the chosen card last, and re
   expect(await page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-front').evaluateAll(elements => elements.every(element => getComputedStyle(element).animationName === 'none'))).toBe(true);
 });
 
-test('coins land one at a time and settle with one GO face up', async ({ page }) => {
+test('coins land one at a time, the final two together, and settle with one GO face up', async ({ page }) => {
   await openMethod(page, 'coin');
   await page.getByLabel('Player count', { exact: true }).fill('12');
   await page.getByRole('button', { name: 'Pick a player' }).click();

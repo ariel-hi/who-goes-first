@@ -31,7 +31,7 @@ test('every supported player has a distinct color that follows their identity', 
   for (const player of [...players].reverse()) expect(playerColor({ ...player, label: 'Renamed' })).toBe(colors[players.indexOf(player)]);
 });
 
-test('balloons shuffle with uneven gaps; cards turn one at a time in a fresh order each draw', () => {
+test('balloons shuffle with uneven gaps; cards turn one at a time and the final two together', () => {
   const outcome = select(seats(12), 1, () => 4);
   const plan = createRevealPlan(outcome, random(92));
   const next = createRevealPlan(outcome, random(109));
@@ -48,11 +48,10 @@ test('balloons shuffle with uneven gaps; cards turn one at a time in a fresh ord
   expect(next).not.toEqual(plan);
   expect(outcome.winnerId).toBe('player-5');
   const star = plan[outcome.winnerId]!;
-  for (const player of outcome.players.filter(player => player.id !== outcome.winnerId)) {
-    const card = plan[player.id]!;
-    expect(star.flipAt).toBeGreaterThan(card.flipAt);
-    expect(star.flipAt + star.flipDuration).toBeGreaterThan(card.flipAt + card.flipDuration);
-  }
+  // The chosen card turns together with one final card, after all the others.
+  const beside = outcome.players.filter(player => player.id !== outcome.winnerId && Math.abs(plan[player.id]!.flipAt - star.flipAt) <= 50);
+  expect(beside).toHaveLength(1);
+  expect(outcome.players.filter(player => player.id !== outcome.winnerId && plan[player.id]!.flipAt > star.flipAt + 50)).toHaveLength(0);
 });
 
 test('every animation finishes within its deadline', () => {
@@ -77,14 +76,16 @@ test('every animation finishes within its deadline', () => {
       expect(p.balloon.bobDuration).toBeGreaterThanOrEqual(1300);
       expect(p.shell.delay + 820).toBeLessThan(3000);
       if (player.id !== outcome.winnerId) {
-        // Every elimination method resolves the chosen player last, with the single highest roll.
-        expect(star.shell.delay).toBeGreaterThan(p.shell.delay);
-        expect(star.matchAt).toBeGreaterThan(p.matchAt);
-        expect(star.diceAt + star.diceRoll).toBeGreaterThan(p.diceAt + p.diceRoll);
-        expect(star.coin.delay + star.coin.duration).toBeGreaterThan(p.coin.delay + p.coin.duration);
+        // The chosen player resolves with the final loser, after everyone else.
+        const later = (time: (piece: typeof p) => number) => outcome.players.filter(other => other.id !== outcome.winnerId && time(plan[other.id]!) > time(star) - 50).length;
+        expect(later(piece => piece.shell.delay)).toBeLessThanOrEqual(1);
+        expect(later(piece => piece.matchAt)).toBeLessThanOrEqual(1);
+        expect(later(piece => piece.diceAt + piece.diceRoll)).toBeLessThanOrEqual(1);
+        expect(later(piece => piece.coin.delay + piece.coin.duration)).toBeLessThanOrEqual(1);
+        expect(later(piece => piece.flipAt)).toBeLessThanOrEqual(1);
+      }
+      if (player.id !== outcome.winnerId) {
         expect(star.dice[0] + star.dice[1]).toBeGreaterThan(p.dice[0] + p.dice[1]);
-        expect(star.flipAt).toBeGreaterThan(p.flipAt);
-        expect(star.flipAt + star.flipDuration).toBeGreaterThan(p.flipAt + p.flipDuration);
       }
     }
   }
