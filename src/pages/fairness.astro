@@ -1,5 +1,107 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const reveals = [
+  { label: 'Spinner', href: '/methods/spinner/' },
+  { label: 'Card Draw', href: '/methods/cards/' },
+  { label: 'Balloon Rise', href: '/methods/balloon/' },
+  { label: 'Towers', href: '/methods/towers/' },
+  { label: 'Shortest Match', href: '/methods/straws/' },
+  { label: 'Dice Roll', href: '/methods/dice/' },
+  { label: 'Coin Flip', href: '/methods/coin/' },
+  { label: 'Shell Game', href: '/methods/shells/' },
+];
 ---
-<Layout title="How the fair picker works — Who Goes First?" description="Each listed player gets an equal chance, with secure browser randomness and an outcome locked before any reveal begins."><div class="content-page prose"><h1>How the draw works</h1><p class="lede">With four players, each person has a 1 in 4 chance. With twelve, it’s 1 in 12.</p><h2>Around the table</h2><p>Seat 1 is the person holding the phone; count clockwise. Tap any player name to change it, or paste a list. Blank names keep their seat number. Adding or removing seats keeps the remaining names in place.</p><p>Choose Quick or Instant for a fast answer, or try <a href="/methods/spinner/">Spinner</a>, <a href="/methods/cards/">Card Draw</a>, <a href="/methods/balloon/">Balloon Rise</a> or <a href="/methods/towers/">Towers</a>. You can also try <a href="/methods/straws/">Shortest Match</a>, <a href="/methods/dice/">Dice Roll</a>, <a href="/methods/coin/">Coin Flip</a>, or <a href="/methods/shells/">Shell Game</a>. Every method uses the same equal-chance draw.</p><h2>The decision comes first</h2><p>When you pick, we freeze the current player list and ask your browser’s secure random-number generator for a value. Rejection sampling discards the small leftover range that would otherwise favor some positions. Every listed entry gets the same number of possible values.</p><p>The result is locked before an animation begins. Balloon height, names, colors, sound, screen size, and the reveal animation cannot change it.</p><h2>Repeats are normal</h2><p>Each pick is independent. The same person can win twice—or more—in a row. We don’t quietly remove the last winner or balance results over time. Duplicate names are separate entries with identifying numbers.</p><h2>If something interrupts</h2><p>Switching tabs reveals the already-selected winner. If sound or a decorative effect fails, the text result still appears. If secure randomness fails, we show an error and select nobody; we don’t substitute a weaker generator.</p><h2>House rules work differently</h2><p><a href="/house-rules/">Fun questions</a> do not give everyone equal chances of qualifying. Agree as a group, skip the question, or use the fair picker as an explicit tie-break.</p><p>This is a casual game-night utility. It has not been independently audited or certified for regulated prize draws.</p><a class="inline-link" href="/">Pick a starting player</a></div></Layout>
+<Layout title="How the fair picker works — Who Goes First?" description="Each listed player gets an equal chance, with secure browser randomness and an outcome locked before any reveal begins.">
+  <div class="content-page fairness-page">
+    <header class="fairness-intro">
+      <span class="eyebrow">The fair draw</span>
+      <h1>How the draw works</h1>
+      <p class="lede">One entry, one equal chance. The winner is chosen first; the animation reveals it.</p>
+    </header>
 
+    <div class="odds-card">
+      <div class="odds-seats" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span></div>
+      <div class="odds-copy"><span class="eyebrow">Four players</span><strong>1 in 4</strong><span>chance for each listed entry</span></div>
+    </div>
+    <p class="odds-note">With twelve players, each entry has a 1 in 12 chance.</p>
+
+    <section class="fairness-flow" aria-labelledby="fairness-steps">
+      <h2 id="fairness-steps">From seats to result</h2>
+      <ol>
+        <li><span class="step-number" aria-hidden="true">01</span><div><h3>Set your table</h3><p>Seat 1 is the person holding the phone; count clockwise. Tap a name to change it, or paste a list. Blank names keep their seat number. Adding or removing seats keeps the remaining names in place.</p></div></li>
+        <li><span class="step-number" aria-hidden="true">02</span><div><h3>Make the draw</h3><p>When you pick, we freeze the current player list and ask your browser’s secure random-number generator for a value. Rejection sampling discards the small leftover range that would otherwise favor some positions, giving every entry the same number of possible values.</p></div></li>
+        <li><span class="step-number" aria-hidden="true">03</span><div><h3>Reveal the locked result</h3><p>The winner is set before any animation begins. Balloon height, names, colors, sound, screen size, and the reveal method cannot change it.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="fairness-methods" aria-labelledby="fairness-methods-heading">
+      <h2 id="fairness-methods-heading">Choose how to see it</h2>
+      <p>Choose Quick or Instant for a fast answer, or make the reveal part of game night. Every method uses the same equal-chance draw.</p>
+      <ul>{reveals.map(reveal => <li><a href={reveal.href}>{reveal.label}<span aria-hidden="true">→</span></a></li>)}</ul>
+    </section>
+
+    <div class="fairness-details">
+      <section aria-labelledby="fairness-repeats"><h2 id="fairness-repeats">Repeats are normal</h2><p>Each pick is independent. The same person can win twice—or more—in a row. We don’t quietly remove the last winner or balance results over time. Duplicate names are separate entries with identifying numbers.</p></section>
+      <section aria-labelledby="fairness-interruptions"><h2 id="fairness-interruptions">If something interrupts</h2><p>Switching tabs reveals the already-selected winner. If sound or a decorative effect fails, the text result still appears. If secure randomness fails, we show an error and select nobody; we don’t substitute a weaker generator.</p></section>
+    </div>
+
+    <aside class="fairness-house"><h2>Fun questions work differently</h2><p><a href="/house-rules/">Fun questions</a> do not give everyone equal chances of qualifying. Agree as a group, skip the question, or use the fair picker as an explicit tie-break.</p></aside>
+    <p class="fairness-disclaimer">This is a casual game-night utility. It has not been independently audited or certified for regulated prize draws.</p>
+    <a class="fairness-cta" href="/">Pick a starting player <span aria-hidden="true">→</span></a>
+  </div>
+</Layout>
+<style>
+  .fairness-page { max-width:760px; }
+  .fairness-intro { margin-bottom:25px; }
+  .fairness-intro h1 { margin-bottom:9px; }
+  .fairness-intro .lede { max-width:42ch; margin:0; }
+  .odds-card { display:flex; align-items:center; justify-content:space-between; gap:22px; padding:25px 29px; border:1px solid var(--line); border-radius:22px; background:var(--paper); box-shadow:7px 7px 0 color-mix(in srgb,var(--green) 13%,transparent); }
+  .odds-seats { display:flex; gap:7px; flex:none; }
+  .odds-seats span { display:grid; place-items:center; width:54px; height:54px; border-radius:15px; font:24px/1 Georgia,"Times New Roman",serif; color:#493d46; }
+  .odds-seats span:nth-child(1) { background:#f5dfd6; }
+  .odds-seats span:nth-child(2) { background:#dcece3; }
+  .odds-seats span:nth-child(3) { background:#e3e8f2; }
+  .odds-seats span:nth-child(4) { background:#f5ebcc; }
+  .odds-copy { display:flex; flex-direction:column; align-items:flex-start; min-width:0; }
+  .odds-copy .eyebrow { margin:0 0 3px; }
+  .odds-copy strong { font:normal clamp(34px,5vw,45px)/1 Georgia,"Times New Roman",serif; letter-spacing:-1px; color:var(--green); white-space:nowrap; }
+  .odds-copy > span:last-child { margin-top:5px; color:var(--muted); font-size:13px; }
+  .odds-note { margin:15px 0 38px; color:var(--muted); font-size:14px; }
+  .fairness-page h2 { margin:0 0 17px; font-size:25px; }
+  .fairness-flow ol { display:grid; gap:10px; padding:0; margin:0; list-style:none; }
+  .fairness-flow li { display:flex; gap:17px; padding:21px 23px; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
+  .step-number { flex:none; color:var(--green); font:22px/1.3 Georgia,"Times New Roman",serif; }
+  .fairness-flow h3 { margin:0 0 5px; font-family:Georgia,"Times New Roman",serif; font-size:20px; font-weight:400; }
+  .fairness-flow p { margin:0; color:var(--muted); font-size:14px; line-height:1.6; }
+  .fairness-methods { margin-top:38px; }
+  .fairness-methods > p { max-width:59ch; color:var(--muted); font-size:14px; }
+  .fairness-methods ul { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; padding:0; margin:18px 0 0; list-style:none; }
+  .fairness-methods li { min-width:0; }
+  .fairness-methods a { display:flex; align-items:center; justify-content:space-between; gap:5px; min-height:50px; height:100%; padding:9px 12px; border:1px solid var(--line); border-radius:12px; background:var(--paper); color:var(--ink); font-size:12px; font-weight:650; line-height:1.3; text-decoration:none; transition:border-color .18s ease, transform .18s ease; }
+  .fairness-methods a:hover, .fairness-methods a:focus-visible { border-color:var(--green); transform:translateY(-2px); }
+  .fairness-methods a span { color:var(--green); font-size:17px; }
+  .fairness-details { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:39px; }
+  .fairness-details section { padding:21px 22px; border:1px solid var(--line); border-radius:17px; background:var(--paper); }
+  .fairness-details h2 { margin-bottom:8px; font-size:21px; }
+  .fairness-details p { margin:0; color:var(--muted); font-size:14px; line-height:1.6; }
+  .fairness-house { margin-top:23px; padding:19px 22px; border-left:3px solid var(--green); border-radius:0 14px 14px 0; background:var(--soft); }
+  .fairness-house h2 { margin-bottom:5px; font-size:21px; }
+  .fairness-house p { margin:0; font-size:14px; line-height:1.6; }
+  .fairness-disclaimer { margin:24px 0 17px; color:var(--muted); font-size:12px; }
+  .fairness-cta { display:inline-flex; align-items:center; justify-content:space-between; gap:20px; min-height:48px; padding:10px 17px; border-radius:999px; background:var(--green); color:var(--paper); font-size:14px; font-weight:700; text-decoration:none; transition:transform .18s ease, box-shadow .18s ease; }
+  .fairness-cta:hover, .fairness-cta:focus-visible { transform:translateY(-2px); box-shadow:0 7px 17px color-mix(in srgb,var(--green) 22%,transparent); }
+  @media(max-width:650px) {
+    .odds-card { flex-direction:column; align-items:flex-start; gap:20px; padding:22px; }
+    .odds-seats span { width:49px; height:49px; font-size:22px; }
+    .fairness-methods ul { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .fairness-details { grid-template-columns:1fr; }
+  }
+  @media(max-width:380px) {
+    .odds-seats span { width:44px; height:44px; }
+    .fairness-flow li { gap:12px; padding:17px; }
+  }
+  @media(prefers-reduced-motion:reduce) {
+    .fairness-methods a, .fairness-cta { transition:none; }
+    .fairness-methods a:hover, .fairness-methods a:focus-visible, .fairness-cta:hover, .fairness-cta:focus-visible { transform:none; }
+  }
+</style>
