@@ -1,0 +1,22 @@
+# Eight SimplyFun publisher-linked rules — 2026-09-28
+
+This batch adds eight English first-player answers for products already accepted in the 31-product SimplyFun identity review. The publisher product page for each accepted SKU links its exact PDF. No original release year, earlier printing, outside edition, or BoardGameGeek correspondence is inferred. On the merged catalog base, the directory has 5,250 identities; researched identities rise from 1,123 to 1,131 and approved edition rules from 1,135 to 1,143. Five standalone criteria enter the opt-in random-rule pool, bringing it from 405 to 410.
+
+Each PDF was downloaded in full from its accepted product page's Rulebook link. The opening page (PDF page 3, printed page 3) was rendered and checked against the PDF text. The later distinction in 15 to Zero was also checked on page 5, and Acorn Paws' later-round instruction on page 7. Exact PDF bytes, extraction, renders, and SHA-256 receipt are retained locally in ignored `artifacts/simplyfun-rule-next31/`. Product-page response hashes and SKUs are bound in `research/coverage/publisher-identities.json`; the new rule revisions and two-source edition correspondence are bound in `research/coverage/identity-assignments.json`.
+
+| Product / SKU | Official opening instruction | PDF SHA-256 | Source |
+| --- | --- | --- | --- |
+| 15 to Zero / SF113 | Highest sum after each player rolls all three dice | `1e4c15f51d5f8ab0bf7912ef9058045b6636a9807a752a450e3407d4033c99b8` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/15toZero_002_Rules.pdf?v=1764706435) |
+| Acorn Paws / SF191 | Most recent squirrel sighting | `2fc7df6d9a7252372c415efcc08fbd4208a8b4dc847a3a3ea6a378d3f53d25c8` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AcornPaws_Rules.pdf?v=1764706595) |
+| Alphabet Woods / SF156 | Youngest player with a letter card closest to A | `8463dbeca3f3fcf0acb1feed749a5aa339e4e4fc29492250b68c8cd9e10cd466` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AlphabetWoods_Rules.pdf?v=1764706723) |
+| Amalgam / SF160 | First to name their tower | `472cdd83db7125ad68d2320c24c20a5fc33f19c5eab853b704ca71af830fa4c6` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Amalgam_rulebook.pdf?v=1764706867) |
+| Ancient Finds / SF143 | First to name a Mediterranean-bordering country | `fe24f3a0bac18ac2d06d70d3c83ecd7f37099baa3cd550922b47b1d0b096c732` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AncientFinds_Rules.pdf?v=1764706946) |
+| Animal Snacks / SF158 | Youngest player rolls first | `61f16c36031074e858e9c939d834a57eca0b71ca65bd306d7744da32abce2b74` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AnimalSnacks_rulebook.pdf?v=1764707029) |
+| Arctic Riders / SF204 | Highest sum after each player rolls two dice; reroll tied results | `61d5bd380d19e38fabbbbb8a5cc093de15ca85c2e101950ed26b7abb4302d542` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/ArcticRiders_rulebook.pdf?v=1764707139) |
+| Bee Alert / SF092 | Most recent honey eater | `b0dd5bc44c64f27fb5c4e0b9601fd9c8b1d37869d5b6ad90a4074b2a73207e2d` | [English rules](https://cdn.shopify.com/s/files/1/0669/5134/8509/files/BeeAlert_rulebook.pdf?v=1764707471) |
+
+The 15 to Zero booklet also uses youngest player to resolve a tie during the opening round of **card play**. That instruction was not transferred to the earlier starter-selection roll. Acorn Paws moves bag choice to the next player left in later rounds; its first round still uses the squirrel sighting. Animal Snacks uses youngest player for both initial animal selection and the first die roll. Arctic Riders is the only one of these eight with an explicit opening tie procedure.
+
+The random pool includes Acorn Paws, Amalgam, Ancient Finds, Animal Snacks, and Bee Alert. It excludes 15 to Zero and Arctic Riders because their criteria require game dice, and Alphabet Woods because it requires the dealt letter cards. Every rule has a separately labeled house fallback for an unresolved start. No box artwork was added, so no image rights assertion or edition-cover transfer was needed.
+
+Other newly accepted SimplyFun products remain discovery-only until their linked manuals receive the same opening-rule review. Nebulous Connections, Poles Apart, and Team Digger retain their earlier documented holds: their checked manuals do not establish a conventional opening player.

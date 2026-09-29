@@ -1,0 +1,40 @@
+{
+  "id": "bee-alert-simplyfun-en",
+  "slug": "bee-alert-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of full publisher-linked English PDF and rendered opening page, under owner content authorization",
+  "approvedRevision": "122d4af453daa4b2f0f8d5a6f993d6ac008b7c24683b9d42a54dda50fede0fc5",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Bee Alert",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF092",
+  "firstPlayerRule": "The player who most recently ate honey goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "That player draws the first card."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/BeeAlert_rulebook.pdf?v=1764707471",
+      "title": "Bee Alert — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/bee-alert is accepted identity game-cb6afbbb-4fb2-49db-9296-c7e0a04f0830 (SKU SF092; exact accepted response SHA-256 c13d5152c09286adcc6a1a733d6b0d482abb2827e603b919eb125cf2fe1cc468, 898065 bytes). The product Rulebook link directly supplies the cited English PDF, SHA-256 b0dd5bc44c64f27fb5c4e0b9601fd9c8b1d37869d5b6ad90a4074b2a73207e2d, 1086009 bytes, 6 pages. Read the complete PDF and visually checked rendered PDF page 3 against extracted text and the product title. Opening finding: The player who most recently ate honey goes first. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No other printing or edition correspondence is asserted. No package artwork is reproduced in this record.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}

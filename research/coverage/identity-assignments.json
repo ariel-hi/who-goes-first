@@ -720,6 +720,206 @@
       "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "a60acebdb51c6bb0365e3aae249714afdb575cc0ac6b4b7fc67045eafcd09d0a"
+    },
+    {
+      "ruleId": "15-to-zero-simplyfun-en",
+      "ruleRevision": "2f937107bde15fcf57d10adeed2911db7cd98b556aceb62533d5b570aafd7bd7",
+      "identityId": "game-f5ff14a1-3d91-4c42-8ef6-4581251f74fc",
+      "identityRevision": "515cd13d14dea32428dea1cbc2b269f77aed60706a81d6f081deb2bb3c6a210e",
+      "editionScope": "SimplyFun English rules linked from product SKU SF113",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/15-to-zero",
+          "sha256": "85e58efad894a0a66a10481bd2b987b785dd133b9a7b240fc4ce34385eb67ff3",
+          "location": "Accepted SimplyFun product page identifies 15 to Zero as SKU SF113 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/15toZero_002_Rules.pdf?v=1764706435",
+          "sha256": "1e4c15f51d5f8ab0bf7912ef9058045b6636a9807a752a450e3407d4033c99b8",
+          "location": "PDF pages 3, 5; Setup; Playing Cards",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "eabbadd2a525ee3b0749f44bd564c0e4aedbb3113d901efb30fbb3c5b4d37da8"
+    },
+    {
+      "ruleId": "acorn-paws-simplyfun-en",
+      "ruleRevision": "d7f18aded79ebcd957154304faa6077340be0abd69877c7b2a4869b1a9daffa8",
+      "identityId": "game-6569e3dd-2cbc-4332-82cd-870dc765334d",
+      "identityRevision": "13ac75fe241ce96fcb2a31bcda354dfa555fc0c0814c5a1e122b3a8fe05dd288",
+      "editionScope": "SimplyFun English rules linked from product SKU SF191",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/acorn-paws",
+          "sha256": "743acdda6a8723b27fb3c68eac7e123bc4225a455e361fc1350609f2ee78a2bf",
+          "location": "Accepted SimplyFun product page identifies Acorn Paws as SKU SF191 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AcornPaws_Rules.pdf?v=1764706595",
+          "sha256": "2fc7df6d9a7252372c415efcc08fbd4208a8b4dc847a3a3ea6a378d3f53d25c8",
+          "location": "PDF pages 3, 7; Setup; How to Play; later-round start",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "46b85097b8d17f0bc935168c133d6e1909e04ace0e7f067653afa2c6f35eb417"
+    },
+    {
+      "ruleId": "alphabet-woods-simplyfun-en",
+      "ruleRevision": "cb321b8b2ccc67b36a91257801e0953a64a339cd8d770a1269ce3fd42e666b20",
+      "identityId": "game-c8edc55f-bc77-4c9f-8285-14b1955d89f2",
+      "identityRevision": "ee31608e96b953c47537d5c63621afebea49c95ee57e5b32ef4376d33205a75d",
+      "editionScope": "SimplyFun English rules linked from product SKU SF156",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/alphabet-woods",
+          "sha256": "0416b7d0bec1c0d57b23e9e3c7c4dbb7ec841adb303bbdabe1ef48f8726ca048",
+          "location": "Accepted SimplyFun product page identifies Alphabet Woods as SKU SF156 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AlphabetWoods_Rules.pdf?v=1764706723",
+          "sha256": "8463dbeca3f3fcf0acb1feed749a5aa339e4e4fc29492250b68c8cd9e10cd466",
+          "location": "PDF page 3; Playing the Game",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "f0050c59868f90277e3e804dcd02d03ced99db9f72f108090bfafe0683f0c532"
+    },
+    {
+      "ruleId": "amalgam-simplyfun-en",
+      "ruleRevision": "78ab0ca091c1482ee1f3c9e389bb4f33e978bc7b07e8cffbd05d2c89e8b5a13b",
+      "identityId": "game-afc3b4fa-55dd-4e5d-bc27-edbbb86dfaa6",
+      "identityRevision": "a378ac55aeb7ba22023f0695b9a0109d26b3f03be94c3a909fada5115ff2f147",
+      "editionScope": "SimplyFun English rules linked from product SKU SF160",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/amalgam",
+          "sha256": "89efad984b449c14662b564f63190afc36c09907b7520e18a01a61747b249768",
+          "location": "Accepted SimplyFun product page identifies Amalgam as SKU SF160 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/Amalgam_rulebook.pdf?v=1764706867",
+          "sha256": "472cdd83db7125ad68d2320c24c20a5fc33f19c5eab853b704ca71af830fa4c6",
+          "location": "PDF page 3; Setup",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "368ccab814007870187548d7cda1dfb5384199a8464bb8e9a572d0b3c26bf781"
+    },
+    {
+      "ruleId": "ancient-finds-simplyfun-en",
+      "ruleRevision": "5dc453e4c5b0bdb945109439bf95ee052eeeb55222916cf60a27492239262fae",
+      "identityId": "game-25d72f74-a0ac-416d-a858-947df173ae11",
+      "identityRevision": "483f333df6b39b8e217eda041d18fbc86b0fbd1f56c844fa0b74c09b0812c1de",
+      "editionScope": "SimplyFun English rules linked from product SKU SF143",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/ancient-finds",
+          "sha256": "84da24de8d5d453840db24b1613d13cde97fa1f253ab5eefeeeb205fb48d9cd1",
+          "location": "Accepted SimplyFun product page identifies Ancient Finds as SKU SF143 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AncientFinds_Rules.pdf?v=1764706946",
+          "sha256": "fe24f3a0bac18ac2d06d70d3c83ecd7f37099baa3cd550922b47b1d0b096c732",
+          "location": "PDF page 3; Playing the Game",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "503268ca02ccb064151b70750e3d770c5e01e791c2d3474057383e7c0ed0efe0"
+    },
+    {
+      "ruleId": "animal-snacks-simplyfun-en",
+      "ruleRevision": "d2ea6284a9182cd116f953538e8f8f634c5d647a84126aadb1341894d2551f62",
+      "identityId": "game-9cb2e3a8-dee0-4a90-83a2-7d4b7af60ad9",
+      "identityRevision": "eb06a568d1c2b0da986e9c946593dc1cd8063ea8a2fbff8ccdfd9b9385610db9",
+      "editionScope": "SimplyFun English rules linked from product SKU SF158",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/animal-snacks",
+          "sha256": "a8cfe23659fae72671bbe64b0f81a5832b708b105410a33c9cbb86916c545864",
+          "location": "Accepted SimplyFun product page identifies Animal Snacks as SKU SF158 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AnimalSnacks_rulebook.pdf?v=1764707029",
+          "sha256": "61f16c36031074e858e9c939d834a57eca0b71ca65bd306d7744da32abce2b74",
+          "location": "PDF page 3; Setup",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "e44ac9fd7b5488ccb1d26dd540e12e020ed8cecb2153415f8116cf58406b4c54"
+    },
+    {
+      "ruleId": "arctic-riders-simplyfun-en",
+      "ruleRevision": "be1acef6fe87859ef5ab098cb90b1e0223a6ac8447ede8ddbd4c19984a265929",
+      "identityId": "game-d153a463-9885-4ee1-8569-5293a41114a5",
+      "identityRevision": "687598cc8073b7fc6fc2982e1759e508a7a44469cf85c8ea419f4fe9d0b5f2da",
+      "editionScope": "SimplyFun English rules linked from product SKU SF204",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/arctic-riders",
+          "sha256": "c71d3c193f6d6e60f8c27f94ca71e12d88d56e5ee2a8911990d109edc7c127dc",
+          "location": "Accepted SimplyFun product page identifies Arctic Riders as SKU SF204 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/ArcticRiders_rulebook.pdf?v=1764707139",
+          "sha256": "61d5bd380d19e38fabbbbb8a5cc093de15ca85c2e101950ed26b7abb4302d542",
+          "location": "PDF pages 3; Setup",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "40f780d87797d8f75e99fcae791aacfdc7025d5608a0063665c44690298a4306"
+    },
+    {
+      "ruleId": "bee-alert-simplyfun-en",
+      "ruleRevision": "122d4af453daa4b2f0f8d5a6f993d6ac008b7c24683b9d42a54dda50fede0fc5",
+      "identityId": "game-cb6afbbb-4fb2-49db-9296-c7e0a04f0830",
+      "identityRevision": "adea4911d808bc68a0252130ec961d65b9c7bb4174cdaeca90fd5225959385be",
+      "editionScope": "SimplyFun English rules linked from product SKU SF092",
+      "evidence": [
+        {
+          "url": "https://simplyfun.com/products/bee-alert",
+          "sha256": "c13d5152c09286adcc6a1a733d6b0d482abb2827e603b919eb125cf2fe1cc468",
+          "location": "Accepted SimplyFun product page identifies Bee Alert as SKU SF092 and directly links the Rulebook PDF.",
+          "correspondence": "Publisher product identity, SKU and direct rulebook link bind this exact marketed product to the English PDF; no older printing or outside edition is claimed."
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/BeeAlert_rulebook.pdf?v=1764707471",
+          "sha256": "b0dd5bc44c64f27fb5c4e0b9601fd9c8b1d37869d5b6ad90a4074b2a73207e2d",
+          "location": "PDF page 3; Setup",
+          "correspondence": "The publisher-linked English PDF names the same game and depicts the matching physical components; its opening instruction was checked on the rendered page."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "c23844fea80784679539e1d2285a84345faa87cf57da81f49901b0f23863d8f9"
     }
   ]
 }

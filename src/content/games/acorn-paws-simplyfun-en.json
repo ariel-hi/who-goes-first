@@ -1,0 +1,42 @@
+{
+  "id": "acorn-paws-simplyfun-en",
+  "slug": "acorn-paws-simplyfun-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Codex editorial review of full publisher-linked English PDF and rendered opening page, under owner content authorization",
+  "approvedRevision": "d7f18aded79ebcd957154304faa6077340be0abd69877c7b2a4869b1a9daffa8",
+  "publishedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-09-28",
+  "gameName": "Acorn Paws",
+  "aliases": [],
+  "editionLabel": "SimplyFun English rules linked from product SKU SF191",
+  "firstPlayerRule": "The player who most recently saw a squirrel goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the official instruction leaves an unresolved tie or cannot be applied, agree to choose randomly. This is this site's suggested house rule.",
+  "clarifications": [
+    "The first starter chooses and empties an acorn bag. In later rounds, the next player to the left of the previous starter chooses a bag."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0669/5134/8509/files/AcornPaws_Rules.pdf?v=1764706595",
+      "title": "Acorn Paws — SimplyFun rules",
+      "publisher": "SimplyFun",
+      "printedPages": [
+        "3",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        3,
+        7
+      ],
+      "location": "Setup; How to Play; later-round start",
+      "checkedAt": "2026-09-28"
+    }
+  ],
+  "internalEvidence": "Publisher product https://simplyfun.com/products/acorn-paws is accepted identity game-6569e3dd-2cbc-4332-82cd-870dc765334d (SKU SF191; exact accepted response SHA-256 743acdda6a8723b27fb3c68eac7e123bc4225a455e361fc1350609f2ee78a2bf, 843113 bytes). The product Rulebook link directly supplies the cited English PDF, SHA-256 2fc7df6d9a7252372c415efcc08fbd4208a8b4dc847a3a3ea6a378d3f53d25c8, 3210312 bytes, 8 pages. Read the complete PDF and visually checked rendered PDF pages 3 and 7 against extracted text and the product title. Opening finding: The player who most recently saw a squirrel goes first. No opening tie-break identified. Random-rule mix: include; standalone non-component criterion. No other printing or edition correspondence is asserted. No package artwork is reproduced in this record.",
+  "uncertainty": [
+    "The manual gives no opening tie-break for an unresolved tie or ambiguous comparison.",
+    "This answer applies to the publisher-linked English PDF for the identified product; another edition may differ."
+  ]
+}
