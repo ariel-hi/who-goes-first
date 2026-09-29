@@ -1,6 +1,8 @@
 /** Rebuild or validate two exact physical-game identities from inspected museum artifacts. */
 import { createHash } from 'node:crypto';
+import console from 'node:console';
 import { readFileSync, writeFileSync } from 'node:fs';
+import process from 'node:process';
 
 const registryPath = 'research/coverage/publisher-identities.json';
 const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
@@ -70,7 +72,7 @@ if (mode === '--write') {
   const observed = await Promise.all(sources.map(async source => {
     const bytes = source.id === 'road-nypl-catalog'
       ? readFileSync('artifacts/coverage-research/nypl-pd-collections.csv')
-      : Buffer.from(await (await fetch(source.url, { signal: AbortSignal.timeout(30000) })).arrayBuffer());
+      : new Uint8Array(await (await globalThis.fetch(source.url, { signal: globalThis.AbortSignal.timeout(30000) })).arrayBuffer());
     if (bytes.length !== source.byteCount || hash(bytes) !== source.sha256) {
       throw new Error(`Source changed: ${source.id}`);
     }
