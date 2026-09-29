@@ -3580,6 +3580,215 @@
       "reviewedBy": "Codex /root",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "3d4cf64e75b56d03c8807e4572127b4fc53be4d7193e8307eeb6a0b81c3a4178"
+    },
+    {
+      "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+      "routeKey": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+      "name": "The Soldier Boy (Parker Brothers catalog issue)",
+      "searchNames": [
+        "The Soldier Boy"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The boxed folding-board game advertised on printed page 3 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). The catalog does not establish an exact manufacture year or correspondence to later Soldier Boy issues.",
+      "identityEvidence": "The publisher catalog illustrates a circular military-career board headed The Soldier Boy and describes a nearly two-foot-square folding board, uniformed metal soldier pieces, a spinning indicator and box. Its finish is Commander-in-Chief. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-soldier-boy",
+      "sources": [
+        {
+          "id": "parker-catalog-soldier-boy",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 3 / printed page 3: publisher introduction, The Soldier Boy board illustration, physical contents and product description."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "8ddc1b1ef9e3c29ccf4839748e0dced1b06bf84feba4b6e6f1abf3af8f9a697a"
+    },
+    {
+      "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+      "routeKey": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+      "name": "Innocence Abroad (Parker Brothers catalog issue)",
+      "searchNames": [
+        "Innocence Abroad"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The boxed travel board game advertised on printed page 4 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). The description identifies this catalog product but does not establish an exact manufacture year or later-edition equivalence.",
+      "identityEvidence": "The publisher catalog depicts a box label naming The Amusing Game of Innocence Abroad and describes a large lithographed folding board, a party travelling by several routes to one destination, playing utensils and a box. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-innocence-abroad",
+      "sources": [
+        {
+          "id": "parker-catalog-innocence-abroad",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 4 / printed page 4: illustrated Innocence Abroad box label and product description of the folding travel board and box."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldier pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-innocence-abroad"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "7e7c27fd10e41cb4e0e371454d2052641895504ca20495006a52b7d2166fedde"
+    },
+    {
+      "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+      "routeKey": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+      "name": "Rex (Parker Brothers single-board issue)",
+      "searchNames": [
+        "Rex"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The single-board Rex boxed product advertised on printed page 5 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). Progressive Rex, separately advertised there as a four-board set, is a distinct catalog product.",
+      "identityEvidence": "The publisher catalog illustrates a Rex track board with a Parker Bros. center imprint and describes turned maple pieces, a spinning indicator, a folding board and one large box priced at $1.00. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-rex",
+      "sources": [
+        {
+          "id": "parker-catalog-rex",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 4 / printed page 5: Rex board illustration and $1 single-board product description; separate Progressive Rex listing below."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists Rex (Parker Brothers single-board issue) (single track board, maple pieces and spinner) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldier pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-rex"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists Rex (Parker Brothers single-board issue) (single track board, maple pieces and spinner) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-rex"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "430d648793808b087d5d7100711f6fb2bd7e270d077f41194755c088564492f9"
+    },
+    {
+      "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+      "routeKey": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+      "name": "Progressive Rex (Parker Brothers four-board set)",
+      "searchNames": [
+        "Progressive Rex"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The four-board Progressive Rex boxed set advertised separately on printed page 5 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). Its relation to the single-board Rex is stated only at the product-family level; rules and component equivalence are not assumed.",
+      "identityEvidence": "The publisher gives Progressive Rex its own heading and describes a large-group progressive game with four boards and complete utensils in each boxed set, priced at $3.50; the single-board Rex above it is priced at $1.00. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-progressive-rex",
+      "sources": [
+        {
+          "id": "parker-catalog-progressive-rex",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 4 / printed page 5: separate Progressive Rex heading, four-board boxed-set contents and $3.50 price."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists Progressive Rex (Parker Brothers four-board set) (four-board progressive set) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldier pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-progressive-rex"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists Progressive Rex (Parker Brothers four-board set) (four-board progressive set) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-progressive-rex"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists Progressive Rex (Parker Brothers four-board set) (four-board progressive set) and Rex (Parker Brothers single-board issue) (single track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-progressive-rex"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "4fa9b5cc0e84c13631b40be6ac47d2b93859be9c400d41a4d185b01239ba6820"
+    },
+    {
+      "identityId": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+      "routeKey": "game-a84bd742-749d-4704-8144-b47ad8f5c957",
+      "name": "The Game of War (Parker Brothers catalog issue)",
+      "searchNames": [
+        "The Game of War"
+      ],
+      "publisher": "Parker Brothers",
+      "identityScope": "The boxed strategy board game advertised on printed page 9 of Parker Brothers’ undated Illustrated Catalogue of Standard Games (archived as 1889). This particular Parker Brothers battlefield board is separate from other games bearing the generic title Game of War.",
+      "identityEvidence": "The publisher catalog illustrates the connected-point battlefield board and describes a folding, multicolor board with a box, a full set of turned maple pieces and directions, priced at 75 cents. No starting-player rule has been reviewed or transferred.",
+      "publisherReferenceSourceId": "parker-catalog-game-of-war",
+      "sources": [
+        {
+          "id": "parker-catalog-game-of-war",
+          "kind": "primary-publisher",
+          "url": "https://gamesandpuzzles.org/images/trade-catalogs/parker-brothers/1889_Parker_Brothers_catalog_-Strong_Parker_Brothers_Inc._1889_95033143-from_TheStrong_%28handmarked_1892_incorrectly%29_-prep_2025-01-02_6MB.pdf",
+          "sha256": "8c13acd3edc81b6466d622bb2fb2f9e7609dd8773b046d1dfd6f7438a6282d60",
+          "byteCount": 6015474,
+          "location": "Original Parker Brothers publisher catalog, PDF page 6 / printed page 9: The Game of War board diagram, physical product description, components and price."
+        }
+      ],
+      "collisionReviews": [
+        {
+          "identityId": "game-056efc27-4c46-496a-8eba-1d15b51e8e02",
+          "reason": "The original Parker Brothers catalog separately lists The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces) and The Soldier Boy (Parker Brothers catalog issue) (military-career board, metal soldier pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-game-of-war"
+          ]
+        },
+        {
+          "identityId": "game-138bf8ab-46f7-4f92-8157-3f4caf2bde25",
+          "reason": "The original Parker Brothers catalog separately lists The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces) and Innocence Abroad (Parker Brothers catalog issue) (boxed folding travel board). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-game-of-war"
+          ]
+        },
+        {
+          "identityId": "game-324ca9c3-5445-40d4-97ee-e9716f59dfc0",
+          "reason": "The original Parker Brothers catalog separately lists The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces) and Rex (Parker Brothers single-board issue) (single track board, maple pieces and spinner). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-game-of-war"
+          ]
+        },
+        {
+          "identityId": "game-2c89d6f3-74c4-4103-a73a-07bf933637ff",
+          "reason": "The original Parker Brothers catalog separately lists The Game of War (Parker Brothers catalog issue) (connected-point battlefield board and maple pieces) and Progressive Rex (Parker Brothers four-board set) (four-board progressive set). These distinct physical configurations warrant separate identities despite the shared source-volume URL.",
+          "sourceIds": [
+            "parker-catalog-game-of-war"
+          ]
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Codex /root",
+      "reviewedAt": "2026-09-28",
+      "acceptedRevision": "eab14bda4155477b3e99575e362e6b85bf3d913b3a89b46240b1e60917fb7f1f"
     }
   ]
 }
