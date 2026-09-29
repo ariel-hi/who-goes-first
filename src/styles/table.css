@@ -284,7 +284,7 @@
   .shell-bowl { fill:color-mix(in srgb,var(--piece) 38%,#ead9dc); }
   .shell-bowl-light { fill:color-mix(in srgb,var(--piece) 17%,#fffaf6); }
   .shell-wobble { position:absolute; inset:0; z-index:2; transform-origin:50% 77%; animation:shell-wiggle .65s .2s ease-in-out both; }
-  .reveal-chosen .shell-wobble { animation:shell-wiggle .65s .2s ease-in-out both, shell-wiggle .45s calc(var(--shell-delay) - 460ms) ease-in-out both; }
+  .shells-reveal .shell-wobble { animation:shell-wiggle .65s .2s ease-in-out both, shell-wiggle .45s calc(var(--shell-delay) - 460ms) ease-in-out both; }
   .shell-lid { position:absolute; top:3px; left:5px; width:100px; height:88px; overflow:visible; transform-origin:50% 80%; animation:shell-open .82s var(--shell-delay) cubic-bezier(.18,.72,.22,1) both; filter:drop-shadow(0 2px 2px #51404826); }
   .shell-pearl { position:absolute; z-index:1; bottom:33px; left:43px; width:24px; height:24px; border:1px solid #a690a3; border-radius:50%; background:radial-gradient(circle at 30% 24%,#fff 0 16%,#f9f3fa 38%,#dbcfe1 75%,#b9a6bd); box-shadow:inset -3px -4px 5px #8d7b9a36; }
   @keyframes shell-wiggle { 0%,100% { transform:none; } 35% { transform:translateX(-3px) rotate(-4deg); } 70% { transform:translateX(2px) rotate(3deg); } }
