@@ -3,6 +3,7 @@ import { randomCollectionIndex } from '../../lib/selection';
 import { shuffle } from '../../lib/tools';
 
 type Finger = { x: number; y: number; color: string };
+type Placed = Finger & { id: number; rank?: number };
 type Phase = 'waiting' | 'counting' | 'done';
 type Mode = 'first' | 'order';
 const colors = ['#e4572e', '#2e86ab', '#f2a541', '#6a4c93', '#3bb273', '#e84393', '#17bebb', '#8d6a9f', '#c0ca33', '#ff7f11'];
@@ -17,7 +18,8 @@ export default function FingerChooser() {
   const [, setTick] = useState(0);
   const [phase, setPhase] = useState<Phase>('waiting');
   const [mode, setMode] = useState<Mode>('first');
-  const [ranks, setRanks] = useState<Map<number, number>>(new Map());
+  // Results are a snapshot so they stay readable after everyone lifts.
+  const [result, setResult] = useState<Placed[]>([]);
   const [touchCapable, setTouchCapable] = useState(true);
   const phaseRef = useRef(phase); phaseRef.current = phase;
   const modeRef = useRef(mode); modeRef.current = mode;
@@ -32,7 +34,8 @@ export default function FingerChooser() {
     const ids = [...fingers.current.keys()];
     if (ids.length < 2) { setPhase('waiting'); return; }
     const order = modeRef.current === 'first' ? [ids[randomCollectionIndex(ids.length)]!] : shuffle(ids);
-    setRanks(new Map(order.map((id, index) => [id, index + 1])));
+    const ranks = new Map(order.map((id, index) => [id, index + 1]));
+    setResult([...fingers.current.entries()].map(([id, finger]) => ({ ...finger, id, rank: ranks.get(id) })));
     setPhase('done');
     navigator.vibrate?.(60);
   }, []);
@@ -49,8 +52,11 @@ export default function FingerChooser() {
     return { x: event.clientX - box.left, y: event.clientY - box.top };
   };
   const down = (event: React.PointerEvent) => {
-    if (phaseRef.current === 'done') return;
     event.preventDefault();
+    if (phaseRef.current === 'done') {
+      if (fingers.current.size > 0) return;
+      setResult([]); phaseRef.current = 'waiting'; setPhase('waiting');
+    }
     const used = new Set([...fingers.current.values()].map(finger => finger.color));
     fingers.current.set(event.pointerId, { ...position(event), color: colors.find(color => !used.has(color)) ?? colors[fingers.current.size % colors.length]! });
     render(); rearm();
@@ -62,13 +68,12 @@ export default function FingerChooser() {
   };
   const up = (event: React.PointerEvent) => {
     if (!fingers.current.delete(event.pointerId)) return;
-    if (phaseRef.current === 'done' && fingers.current.size === 0) { setRanks(new Map()); setPhase('waiting'); }
     render(); rearm();
   };
 
   const count = fingers.current.size;
   const status = phase === 'done'
-    ? (mode === 'first' ? 'Chosen! The highlighted finger goes first. Lift all fingers to play again.' : 'Turn order is set. Lift all fingers to play again.')
+    ? (mode === 'first' ? 'Chosen! The highlighted finger goes first.' : 'Turn order is set.') + (count > 0 ? ' Lift your fingers to see it clearly.' : ' Touch the screen to play again.')
     : phase === 'counting' ? `${count} fingers. Hold still…`
     : count === 1 ? 'One finger down. Waiting for at least one more…'
     : 'Everyone put one finger on the screen and hold still.';
@@ -89,8 +94,8 @@ export default function FingerChooser() {
         </section>
       ) : <>
       <div className="tool-options" role="group" aria-label="What to choose">
-        <button type="button" aria-pressed={mode === 'first'} onClick={() => setMode('first')} disabled={phase !== 'waiting' || count > 0}>First player</button>
-        <button type="button" aria-pressed={mode === 'order'} onClick={() => setMode('order')} disabled={phase !== 'waiting' || count > 0}>Full turn order</button>
+        <button type="button" aria-pressed={mode === 'first'} onClick={() => { setMode('first'); setResult([]); setPhase('waiting'); }} disabled={phase === 'counting' || count > 0}>First player</button>
+        <button type="button" aria-pressed={mode === 'order'} onClick={() => { setMode('order'); setResult([]); setPhase('waiting'); }} disabled={phase === 'counting' || count > 0}>Full turn order</button>
       </div>
       <div
         ref={area}
@@ -100,11 +105,10 @@ export default function FingerChooser() {
         aria-describedby="finger-status"
       >
         {count === 0 && <p className="finger-hint" aria-hidden="true">Touch here</p>}
-        {[...fingers.current.entries()].map(([id, finger]) => {
-          const rank = ranks.get(id);
+        {(phase === 'done' ? result : [...fingers.current.entries()].map(([id, finger]): Placed => ({ ...finger, id }))).map(({ id, x, y, color, rank }) => {
           const state = phase !== 'done' ? '' : mode === 'first' ? (rank ? ' finger-winner' : ' finger-out') : ' finger-ranked';
           return (
-            <span key={id} className={`finger-dot${state}`} style={{ left: finger.x, top: finger.y, '--finger': finger.color } as React.CSSProperties}>
+            <span key={id} className={`finger-dot${state}`} style={{ left: x, top: y, '--finger': color } as React.CSSProperties}>
               {phase === 'done' && mode === 'order' && rank && <b>{rank}</b>}
             </span>
           );
