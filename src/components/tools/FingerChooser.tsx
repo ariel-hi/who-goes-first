@@ -105,10 +105,11 @@ export default function FingerChooser() {
         aria-describedby="finger-status"
       >
         {count === 0 && <p className="finger-hint" aria-hidden="true">Touch here</p>}
+        {phase === 'done' && mode === 'first' && result.filter(dot => dot.rank).map(dot => <span key="spot" className="finger-spot" style={{ left: dot.x, top: dot.y }} />)}
         {(phase === 'done' ? result : [...fingers.current.entries()].map(([id, finger]): Placed => ({ ...finger, id }))).map(({ id, x, y, color, rank }) => {
           const state = phase !== 'done' ? '' : mode === 'first' ? (rank ? ' finger-winner' : ' finger-out') : ' finger-ranked';
           return (
-            <span key={id} className={`finger-dot${state}`} style={{ left: x, top: y, '--finger': color } as React.CSSProperties}>
+            <span key={id} className={`finger-dot${state}`} style={{ left: x, top: y, '--finger': color, '--i': (rank ?? 1) - 1 } as React.CSSProperties}>
               {phase === 'done' && mode === 'order' && rank && <b>{rank}</b>}
             </span>
           );
