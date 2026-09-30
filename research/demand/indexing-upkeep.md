@@ -12,10 +12,10 @@
 
 To let this job submit sitemaps, give the service account **Full** permission in Search Console (Settings → Users and permissions).
 
-## Coverage (150 of 1288 URLs inspected so far)
-- Indexed: 119 (79%)
-- Submitted and indexed: 119
-- URL is unknown to Google: 31
+## Coverage (294 of 1288 URLs inspected so far)
+- Indexed: 236 (80%)
+- Submitted and indexed: 236
+- URL is unknown to Google: 58
 - Inspected this run: 150
 
 ## Worth a manual "Request indexing"
@@ -27,5 +27,5 @@ To let this job submit sitemaps, give the service account **Full** permission in
 - https://whogoesfirst.fun/house-rules/ (URL is unknown to Google)
 - https://whogoesfirst.fun/methods/coin/ (URL is unknown to Google)
 - https://whogoesfirst.fun/methods/dice/ (URL is unknown to Google)
+- https://whogoesfirst.fun/games/calico/ (URL is unknown to Google)
 - https://whogoesfirst.fun/games/aqualin/ (URL is unknown to Google)
-- https://whogoesfirst.fun/finger-chooser/ (URL is unknown to Google)
