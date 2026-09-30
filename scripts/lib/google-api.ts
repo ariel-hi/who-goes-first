@@ -40,6 +40,13 @@ export async function searchSitemaps(token: string, property: string): Promise<S
   return report.sitemap ?? [];
 }
 
+/** Submits (or resubmits) a sitemap; needs the webmasters scope and Full permission. */
+export async function submitSitemap(token: string, property: string, sitemapUrl: string): Promise<void> {
+  const url = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(property)}/sitemaps/${encodeURIComponent(sitemapUrl)}`;
+  const response = await fetch(url, { method: 'PUT', headers: { Authorization: `Bearer ${token}` } });
+  if (!response.ok) throw new Error(`${new URL(url).host} request failed (${response.status}): ${await response.text()}`);
+}
+
 export type IndexStatus = {
   verdict?: string; coverageState?: string; robotsTxtState?: string; indexingState?: string;
   pageFetchState?: string; lastCrawlTime?: string; googleCanonical?: string; userCanonical?: string;
