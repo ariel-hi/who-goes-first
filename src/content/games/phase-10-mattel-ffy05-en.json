@@ -1,0 +1,39 @@
+{
+  "id": "phase-10-mattel-ffy05-en",
+  "slug": "phase-10-mattel-ffy05-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "1c35b06756ee07eef1fd3fce9e1fd2fe2f356d5e8079703f538c62bb56840a7f",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Phase 10",
+  "aliases": [
+    "Phase Ten"
+  ],
+  "editionLabel": "Mattel English instructions, item FFY05 (2018)",
+  "firstPlayerRule": "Choose one player to be dealer. The player to the left of the dealer goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the dealer; use the picker.",
+  "clarifications": [
+    "If the dealer starts the discard pile with a Skip card, the first player’s first turn is skipped."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction-sheets/files/FFY05%20Phase%2010%20%5BEnglish_French_German_Italian_Dutch%5D%20%5B5LD%5D.PDF",
+      "title": "Phase 10 — Instructions (FFY05)",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Setup\" (English section)",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site PDF for item FFY05 and extracted its text with pdftotext. Setup: \"Choose one player to be dealer.\" \"The player to the left of the dealer goes first.\" Also: \"If the dealer starts the discard pile with a Skip card, the first player’s first turn is automatically skipped.\" © 2018 Mattel.",
+  "uncertainty": [
+    "The rules do not say how to choose the dealer."
+  ]
+}

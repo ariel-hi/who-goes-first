@@ -1,0 +1,38 @@
+{
+  "id": "skip-bo-mattel-42050-en",
+  "slug": "skip-bo-mattel-42050-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "ae31dd31cc110db7e83049b99096749e9b57e4a1683d09504d814561fccfd7ee",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Skip-Bo",
+  "aliases": [
+    "Skip Bo",
+    "SkipBo"
+  ],
+  "editionLabel": "Mattel English instructions, item 42050 (2011)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/42050-Skip-Bo.pdf",
+      "title": "Skip-Bo — Instructions (42050)",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Let’s Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site PDF for item 42050 and extracted its text with pdftotext. \"LET’S PLAY The youngest player goes first.\" © 2011 Mattel.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

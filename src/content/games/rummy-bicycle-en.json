@@ -1,0 +1,37 @@
+{
+  "id": "rummy-bicycle-en",
+  "slug": "rummy-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "14cffeeaa6119990175a3beffa3f169bc34e305e5aacd4df9ce357c4e318ce9d",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Rummy",
+  "aliases": [
+    "Rum",
+    "Rummy card game",
+    "Basic Rummy"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Play begins with the player to the left of the dealer. With two players, the winner of each hand deals the next; with more, the deal passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals first; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/rummy-rum",
+      "title": "Rummy (Rum) — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Rummy (Rum) page in a browser. \"When two people play, the winner of each hand deals the next. When more than two play, the deal passes to next the player on the left.\" \"Beginning with the player to the left of the dealer, players either draw the top card of the stock or takes the top card of the discard pile\".",
+  "uncertainty": [
+    "The page does not say how the first dealer is chosen."
+  ]
+}

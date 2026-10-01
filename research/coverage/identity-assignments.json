@@ -1224,6 +1224,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "509a9ae3a2ab0c302b9bcb0e3e9f1da49753274fc853cc73be77defd6bcc6ec6"
+    },
+    {
+      "ruleId": "rummy-bicycle-en",
+      "ruleRevision": "14cffeeaa6119990175a3beffa3f169bc34e305e5aacd4df9ce357c4e318ce9d",
+      "identityId": "game-6512d1ba-0406-4c04-8aef-c378bd169a4c",
+      "identityRevision": "de82a9fb671f46e5374159c67cf860e979d8e2d5145106d7a3b29c870aae299a",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/rummy-rum",
+          "sha256": "82dad8c75086206ecb5adecdbd76edb601ba4a53e4498227c28e68c76b658be7",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Rummy."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "39e656c771ea79b7eb8dd91b87b1b68c27811d7a0db3d7e51ca0f93504797240"
     }
   ]
 }

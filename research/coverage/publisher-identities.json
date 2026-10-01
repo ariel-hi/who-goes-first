@@ -4615,6 +4615,35 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "caf1e4dc150360d95d23f77b398e9a7e8b68eded1a47f4cb7883a52f5b590c7d"
+    },
+    {
+      "identityId": "game-6512d1ba-0406-4c04-8aef-c378bd169a4c",
+      "routeKey": "game-6512d1ba-0406-4c04-8aef-c378bd169a4c",
+      "name": "Rummy",
+      "searchNames": [
+        "Rum",
+        "Rummy card game",
+        "Basic Rummy"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Rummy (Rum), played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Rummy (Rum) and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "rummy-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "rummy-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/rummy-rum",
+          "sha256": "82dad8c75086206ecb5adecdbd76edb601ba4a53e4498227c28e68c76b658be7",
+          "byteCount": 138401,
+          "location": "\"The Deal\" and \"The Play\" sections"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "de82a9fb671f46e5374159c67cf860e979d8e2d5145106d7a3b29c870aae299a"
     }
   ]
 }
