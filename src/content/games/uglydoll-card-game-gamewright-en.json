@@ -1,0 +1,37 @@
+{
+  "id": "uglydoll-card-game-gamewright-en",
+  "slug": "uglydoll-card-game-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "3439b369306c82f79069096b845965556581e1cb922da4521ffffed18b2ec374",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Uglydoll Card Game",
+  "aliases": [
+    "Uglydoll"
+  ],
+  "editionLabel": "Gamewright English rules",
+  "firstPlayerRule": "Starting with the youngest player and moving to the left, players take turns flipping over cards.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/UglydollCardGame-RULES.pdf",
+      "title": "Uglydoll Card Game — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"How to Play Starting with the youngest player and moving to left, take turns flipping over cards face up onto the scatter of face down cards.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

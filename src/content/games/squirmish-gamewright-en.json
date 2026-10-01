@@ -1,0 +1,35 @@
+{
+  "id": "squirmish-gamewright-en",
+  "slug": "squirmish-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "acec8925dd6cd234866e9679a1530aeaeca8f19b2f56ee24add34651b3d80d95",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Squirmish",
+  "aliases": [
+    "Squirmish card game"
+  ],
+  "editionLabel": "Gamewright English rules",
+  "firstPlayerRule": "Everyone reveals a chosen card at the same time. The player who revealed the card with the lowest hit points goes first, then play goes clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/squirmish_rules_web_v2pt0.pdf",
+      "title": "Squirmish — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 4: \"Then everyone reveals their chosen cards at the same time. The player who revealed the … card with the lowest hit points goes first by placing it face up in the center of the playing area. Going clockwise, each other player places their chosen card adjacent\".",
+  "uncertainty": []
+}

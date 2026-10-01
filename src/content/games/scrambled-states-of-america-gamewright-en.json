@@ -1,0 +1,38 @@
+{
+  "id": "scrambled-states-of-america-gamewright-en",
+  "slug": "scrambled-states-of-america-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "c8a0c43ebe0be982c60049024a9495e38dd7d1736769731d97a835cece8adf1b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "The Scrambled States of America",
+  "aliases": [
+    "Scrambled States of America",
+    "Scrambled States"
+  ],
+  "editionLabel": "Gamewright English rules (© 2002 Gamewright)",
+  "firstPlayerRule": "When everyone is ready, the player to the left of the dealer turns over the first Scramble card and reads it aloud.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/TheScrambledStatesofAmericaTMGame-RULES.pdf",
+      "title": "The Scrambled States of America — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 2: \"When all players are ready, the player to the left of the dealer turns over the top card of the Scramble Deck, places it face-up next to the deck, and reads it aloud.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

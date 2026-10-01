@@ -1,0 +1,35 @@
+{
+  "id": "fun-guys-gamewright-en",
+  "slug": "fun-guys-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "3b6e11c66ed3783a182a33727b7c64e0537a59b6ead5ff11f2b341b8c1a3531c",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Fun Guys",
+  "aliases": [
+    "Fun Guys mushroom game"
+  ],
+  "editionLabel": "Gamewright English rules (© 2024 Gamewright)",
+  "firstPlayerRule": "Everyone reveals a Foraging card at the same time. The player who played the lowest number takes the first turn, then the next lowest, and so on.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/FunGuys_Instructions_v2_NF.pdf",
+      "title": "Fun Guys — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"the cards are simultaneously revealed. The turn order for collecting Mushroom cards is based on the numbers shown on the Foraging cards. The player who played the lowest number will take the first turn. The player with the next lowest numbers goes next\".",
+  "uncertainty": []
+}

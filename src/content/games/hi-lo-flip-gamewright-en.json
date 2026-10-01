@@ -1,0 +1,35 @@
+{
+  "id": "hi-lo-flip-gamewright-en",
+  "slug": "hi-lo-flip-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "2f59fe3e6ba2295fa9b96ee970170fa0b5f0edd02aac53a26f6fc00337afd188",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Hi Lo Flip",
+  "aliases": [
+    "Hi-Lo Flip"
+  ],
+  "editionLabel": "Gamewright English rules (© 2020 Gamewright)",
+  "firstPlayerRule": "Flip the Hi-Lo chip. If it lands on “Hi”, the oldest player starts; on “Lo”, the youngest player starts.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/HiLoFlip_Rules.pdf",
+      "title": "Hi Lo Flip — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"4. Flip the Hi-Lo chip and place it next to the draw pile. If the chip landed on ‘Hi’ the oldest player starts, if it landed on ‘Lo’ the youngest player starts.\"",
+  "uncertainty": []
+}

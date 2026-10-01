@@ -3390,6 +3390,139 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "1872ee25d757a7faf876f25d18c02c91bee34af192c58607960237b77feb6801"
+    },
+    {
+      "ruleId": "hi-lo-flip-gamewright-en",
+      "ruleRevision": "2f59fe3e6ba2295fa9b96ee970170fa0b5f0edd02aac53a26f6fc00337afd188",
+      "identityId": "game-4febc151-ac03-4ff0-8ad6-34d42a2e8db3",
+      "identityRevision": "d115eb73048b901fd13d841adeaf27605431bdd7a7f584b9193f5bbb03722dc4",
+      "editionScope": "Gamewright English rules (© 2020 Gamewright)",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/HiLoFlip_Rules.pdf",
+          "sha256": "31701a528c0e4cbe00e0000fb946ec375db3667a194705d98a8592b67197cef7",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for Hi Lo Flip."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e3b31112059fd48c6048661d54f8a1935d446cb88cc6067166e528b24cedb711"
+    },
+    {
+      "ruleId": "fun-guys-gamewright-en",
+      "ruleRevision": "3b6e11c66ed3783a182a33727b7c64e0537a59b6ead5ff11f2b341b8c1a3531c",
+      "identityId": "game-1a1170fb-aa58-4a36-a19e-ef6288ee9490",
+      "identityRevision": "49e84cecfd7e274bccb4438336f3cb4e6283248357ea591effbe5af73febc617",
+      "editionScope": "Gamewright English rules (© 2024 Gamewright)",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/FunGuys_Instructions_v2_NF.pdf",
+          "sha256": "81ac36bbcf585e332df9acf51cef62e4bdd9dbec486204b55f9434b77662dfba",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for Fun Guys."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "0d415d84e6cd5e84dfb41a72c64a0486c889993ad6764929630ea247cd1e6555"
+    },
+    {
+      "ruleId": "ricochet-gamewright-en",
+      "ruleRevision": "aa3592f0cc655ab129322c424015c166776df8889161da6cd62e4214597c3f5f",
+      "identityId": "game-abd787fe-ff0b-438a-8a57-ab89e7e672f0",
+      "identityRevision": "bc0bfb99c795499db50d6e415834e4ec00c91fdf0707befc88923f984f0bf8cc",
+      "editionScope": "Gamewright English rules (© 2004 Gamewright)",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/Ricochet-RULES.pdf",
+          "sha256": "6893ff66c5287a35141ecbec02dd7fd68e7a1344ac6b6bccbdb01198124eb27b",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for Ricochet."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "8b668090d2bcea81f53dc7342f86a269482c3ed8c1a9fb3709b4a423599c954d"
+    },
+    {
+      "ruleId": "lickety-split-gamewright-en",
+      "ruleRevision": "49679d21f5990b1d6caa666a9a7eff0b629c73dcf94918c1ad56c6a8f3c019b1",
+      "identityId": "game-0a0dcf41-494d-4390-b29b-8612a120f38c",
+      "identityRevision": "0d4bf3e36e83ff84217245492d1034d9dbf5ed7747179ce139607d5ebb1066eb",
+      "editionScope": "Gamewright English rules (© 2003 Gamewright)",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/LicketySplit-RULES.pdf",
+          "sha256": "5389a6155520b07eefb71add211cde9f2f547911fce81114c1d77ac270022b8c",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for Lickety Split."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "b4fc0b3b69261ce91608a5d5d4627940d937144e16fa57486acc4764f7ca8c2c"
+    },
+    {
+      "ruleId": "uglydoll-card-game-gamewright-en",
+      "ruleRevision": "3439b369306c82f79069096b845965556581e1cb922da4521ffffed18b2ec374",
+      "identityId": "game-d9ea20a0-34fc-4b27-863a-54b4763b458a",
+      "identityRevision": "3c9c2d1860abd8e169ce2b536e2c65b47103a8e7b7540776a779de997f129785",
+      "editionScope": "Gamewright English rules",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/UglydollCardGame-RULES.pdf",
+          "sha256": "e391815fd7ce68e058cc63b09648e24acbb7580072ab1ed9c1ee820a55a35ad8",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for Uglydoll Card Game."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "3630954e341f5a54a7d4a1b1346e0f27f9b76d33923543df2814d6e112cd62b8"
+    },
+    {
+      "ruleId": "scrambled-states-of-america-gamewright-en",
+      "ruleRevision": "c8a0c43ebe0be982c60049024a9495e38dd7d1736769731d97a835cece8adf1b",
+      "identityId": "game-fb16ecf1-73b7-4380-b349-51fa91c63e63",
+      "identityRevision": "39cb59db6ac9488b08d72e41bcc7a8742f2a12470d8f7bb5ef264eabfda32708",
+      "editionScope": "Gamewright English rules (© 2002 Gamewright)",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/TheScrambledStatesofAmericaTMGame-RULES.pdf",
+          "sha256": "a881c58950ff10f750496e53bb45349f6e6fce705568d63ee1e22fd25cd34964",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for The Scrambled States of America."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e0c3e259f8c2c0802e11ca9cfe8cdf4530b509ee345dd3b5f62b52ab31e28d09"
+    },
+    {
+      "ruleId": "squirmish-gamewright-en",
+      "ruleRevision": "acec8925dd6cd234866e9679a1530aeaeca8f19b2f56ee24add34651b3d80d95",
+      "identityId": "game-da3851d2-064b-4256-beb0-e051aabdda9b",
+      "identityRevision": "2a4e632d47e4bfe2dc7c5cb95b658c5ee82a86bf505bc46d211f42d9af3e3195",
+      "editionScope": "Gamewright English rules",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/squirmish_rules_web_v2pt0.pdf",
+          "sha256": "840a63895ce1844afb36c6351efe9df31334a81f6cf4e516b13fb3c184e4ff41",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Gamewright document for Squirmish."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "630df6b4c00fc06734d4268fd44b12a510eacf0531ab404bb698bbd15324c144"
     }
   ]
 }

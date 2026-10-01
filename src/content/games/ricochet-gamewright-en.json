@@ -1,0 +1,37 @@
+{
+  "id": "ricochet-gamewright-en",
+  "slug": "ricochet-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "aa3592f0cc655ab129322c424015c166776df8889161da6cd62e4214597c3f5f",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Ricochet",
+  "aliases": [
+    "Ricochet card game"
+  ],
+  "editionLabel": "Gamewright English rules (© 2004 Gamewright)",
+  "firstPlayerRule": "The oldest player starts by placing the top card of the draw pile face up in the middle.",
+  "officialTieBreak": null,
+  "houseFallback": "If the oldest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Ricochet-RULES.pdf",
+      "title": "Ricochet — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"How to Play The oldest player takes the top card of the draw pile and places it face up in the middle of the four cards.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

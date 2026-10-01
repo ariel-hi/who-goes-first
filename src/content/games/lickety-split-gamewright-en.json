@@ -1,0 +1,37 @@
+{
+  "id": "lickety-split-gamewright-en",
+  "slug": "lickety-split-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "49679d21f5990b1d6caa666a9a7eff0b629c73dcf94918c1ad56c6a8f3c019b1",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Lickety Split",
+  "aliases": [
+    "Lickety-Split"
+  ],
+  "editionLabel": "Gamewright English rules (© 2003 Gamewright)",
+  "firstPlayerRule": "Give the color die to the youngest player, who rolls first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/LicketySplit-RULES.pdf",
+      "title": "Lickety Split — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"Stack the Find-It deck face down in the center of the playing area and give the color die to the youngest player.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
