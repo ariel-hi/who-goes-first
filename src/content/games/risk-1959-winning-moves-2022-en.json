@@ -1,0 +1,38 @@
+{
+  "id": "risk-1959-winning-moves-2022-en",
+  "slug": "risk-1959-winning-moves-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d335bc2f8336f7b4983710cac44a390b2080fed1e64ee21f461c842b1ea15649",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Risk",
+  "aliases": [
+    "Risk 1959",
+    "Risk 1959 Edition"
+  ],
+  "editionLabel": "Winning Moves Risk 1959 edition rules (2022 sheet)",
+  "firstPlayerRule": "One player is selected to be the dealer. The player to the left of the dealer has the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to select the dealer; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Risk_Rules_2022.pdf",
+      "title": "Risk — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        6
+      ],
+      "location": "\"The Set Up\" and the start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 6: \"One player is selected to act as the dealer.\" \"The player to the left of the dealer has the first turn.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is selected."
+  ]
+}
