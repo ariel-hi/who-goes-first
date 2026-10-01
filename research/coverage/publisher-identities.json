@@ -6987,6 +6987,35 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "d602fb6f268055830706698de4892a60dc67377dfacd5609f63b7c4ffe0ec471"
+    },
+    {
+      "identityId": "game-5ce62b2f-8483-4d86-a1db-726382c76590",
+      "routeKey": "game-5ce62b2f-8483-4d86-a1db-726382c76590",
+      "name": "Hold ’Em",
+      "searchNames": [
+        "Hold 'Em",
+        "Texas Hold'em",
+        "Texas Holdem"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "Hold 'Em poker as a home card game with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names Hold 'Em and gives its home-game rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "hold-em-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "hold-em-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/hold-em",
+          "sha256": "9d59a1a9c15386fea5d6f06543129ac25164180f541697d9b911067ad765ce70",
+          "byteCount": 192247,
+          "location": "\"The Deal\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "221c423454dde13c4f599dae2af14ca5184b38dc2227259ab19d2df96f8fe291"
     }
   ]
 }

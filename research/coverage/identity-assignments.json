@@ -2858,6 +2858,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "4f623ac6bec62096718a2c0365b94c252b4fc83dba14d3ab2b60c5e9e9320266"
+    },
+    {
+      "ruleId": "hold-em-bicycle-en",
+      "ruleRevision": "36542cbb394efa3572e3399efb54da40ea0332e3d5cec4725b63dbcf10a14f00",
+      "identityId": "game-5ce62b2f-8483-4d86-a1db-726382c76590",
+      "identityRevision": "221c423454dde13c4f599dae2af14ca5184b38dc2227259ab19d2df96f8fe291",
+      "editionScope": "Bicycle Cards home-game rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/hold-em",
+          "sha256": "9d59a1a9c15386fea5d6f06543129ac25164180f541697d9b911067ad765ce70",
+          "location": "\"The Deal\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Hold ’Em."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "cc9e6ea240ce580c583f868ae5e5ea645141dce8f66bb298d522787ceb2f37df"
     }
   ]
 }

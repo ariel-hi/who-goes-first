@@ -1,0 +1,39 @@
+{
+  "id": "hold-em-bicycle-en",
+  "slug": "hold-em-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "36542cbb394efa3572e3399efb54da40ea0332e3d5cec4725b63dbcf10a14f00",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Hold ’Em",
+  "aliases": [
+    "Hold 'Em",
+    "Texas Hold'em",
+    "Texas Holdem"
+  ],
+  "editionLabel": "Bicycle Cards home-game rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Once the cards are dealt, the person to the left of the dealer begins the first round of betting.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals first; use the picker or a high-card draw.",
+  "clarifications": [
+    "These are Bicycle’s simplified home-game rules; casino games use a dealer button and blinds."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/hold-em",
+      "title": "Hold ’Em — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Hold ’Em page in a browser. \"Once the cards are dealt, the person to the left of the dealer begins the first round of betting.\" The page describes a home version with two hole cards and five center cards.",
+  "uncertainty": [
+    "The page does not say how the first dealer is chosen."
+  ]
+}
