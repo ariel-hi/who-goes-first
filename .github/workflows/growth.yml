@@ -11,7 +11,7 @@ on:
       task:
         description: Which job to run
         type: choice
-        options: [post, weekly, indexing]
+        options: [post, weekly, indexing, visitors]
         default: weekly
 concurrency:
   group: growth-${{ github.event.schedule || inputs.task }}
@@ -120,3 +120,31 @@ jobs:
           git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update indexing coverage [skip ci]"
           git pull --rebase
           git push
+  visitors:
+    if: inputs.task == 'visitors'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+          cache: npm
+      - run: npm ci
+      - id: google
+        if: vars.GCP_WORKLOAD_IDENTITY_PROVIDER != ''
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/analytics.readonly
+          create_credentials_file: false
+      - run: npx tsx scripts/visitor-behavior.ts
+        env:
+          GOOGLE_ACCESS_TOKEN: ${{ steps.google.outputs.access_token }}
