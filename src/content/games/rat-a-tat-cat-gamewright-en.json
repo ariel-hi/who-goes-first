@@ -1,0 +1,40 @@
+{
+  "id": "rat-a-tat-cat-gamewright-en",
+  "slug": "rat-a-tat-cat-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5eecc4a0c078d42473cb00ce4dc92da0998db9c6d3768057941ef1783034bd95",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Rat-a-Tat Cat",
+  "aliases": [
+    "Rat a Tat Cat",
+    "Ratatat Cat"
+  ],
+  "editionLabel": "Gamewright English rules (card game, 2003)",
+  "firstPlayerRule": "Choose one player to be the dealer. The player to the left of the dealer has the first turn, and play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the dealer; use the picker.",
+  "clarifications": [
+    "The player to the left of the dealer also cuts the cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/gamewright/pdfs/Rules/Rat-a-TatCat-RULES.pdf",
+      "title": "Rat-a-Tat Cat — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Set-up\" and \"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted rules PDF and extracted its text with pdftotext. PDF page 1: \"Set-up: Choose one player to be the dealer. The player to the left of the dealer cuts the cards.\" \"The player to the left of the dealer has the first turn, and play continues in a clockwise direction.\" © 2003 Gamewright.",
+  "uncertainty": [
+    "The rules do not say how to choose the dealer."
+  ]
+}

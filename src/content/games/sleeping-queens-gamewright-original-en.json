@@ -1,0 +1,37 @@
+{
+  "id": "sleeping-queens-gamewright-original-en",
+  "slug": "sleeping-queens-gamewright-original-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "9196671af8891c2bcf189eba408e0f2ba65d157cb1b569b18882b395eba145be",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Sleeping Queens",
+  "aliases": [
+    "Sleeping Queens card game"
+  ],
+  "editionLabel": "Gamewright English rules (original game, 2005/2015)",
+  "firstPlayerRule": "The player to the left of the dealer goes first, and play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Sleeping-Queens-Rules.pdf",
+      "title": "Sleeping Queens — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted rules PDF and extracted its text with pdftotext. PDF page 1: \"How to Play: The player to the left of the dealer goes first and continues clockwise.\" © 2005, 2015 Gamewright.",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

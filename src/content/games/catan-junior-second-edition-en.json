@@ -1,0 +1,40 @@
+{
+  "id": "catan-junior-second-edition-en",
+  "slug": "catan-junior-second-edition-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a1d07e33f82008156bc25ef5b4add8ec260d1622635e3b3a825b7ea85263e6b6",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Catan Junior",
+  "aliases": [
+    "CATAN Junior",
+    "Settlers of Catan Junior"
+  ],
+  "editionLabel": "CATAN English rules, Catan Junior second edition",
+  "firstPlayerRule": "The youngest player starts the game and takes the first turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [
+    "Begin each turn by rolling the dice."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.catan.com/sites/default/files/2026-03/catan_junior_rules_2ndEd_2600316.pdf",
+      "title": "Catan Junior Rules (2nd edition)",
+      "publisher": "CATAN GmbH",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "\"Turn Sequence\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted rules PDF and extracted its text with pdftotext. PDF page 3: \"The youngest player starts the game and takes the first turn. Begin your turn by rolling the dice.\" The earlier catan.com rules PDF (catan_junior_rules_180403) has the same sentence.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
