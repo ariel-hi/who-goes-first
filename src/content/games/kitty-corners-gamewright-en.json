@@ -1,0 +1,35 @@
+{
+  "id": "kitty-corners-gamewright-en",
+  "slug": "kitty-corners-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "ff4bd2fed949de543bd1bb41f8e8e754c43ade1e1248757e05cab7af1af29705",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Kitty Corners",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (© 2002 Gamewright)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/KittyCorners-RULES.pdf",
+      "title": "Kitty Corners — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"Game Play The youngest player goes first.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

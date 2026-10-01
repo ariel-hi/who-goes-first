@@ -1,0 +1,35 @@
+{
+  "id": "taradiddle-gamewright-en",
+  "slug": "taradiddle-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "c0b8e5d0a470fc0e8e86c9d257358b3d05ba5e0feb2807171c3f8ee639fd9e56",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Taradiddle",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules",
+  "firstPlayerRule": "The youngest player goes first, and play continues to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Taradiddle-RULES.pdf",
+      "title": "Taradiddle — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"Gameplay Overview The youngest player goes first, and play continues to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "midsummer-nights-fayre-gamewright-en",
+  "slug": "midsummer-nights-fayre-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "6fa26b38c4ce6b327ac2a66ddbbc8f0ebc9eca797328ec9f737260f381b5988a",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "A Midsummer Night’s Fayre",
+  "aliases": [
+    "A Midsummer Night's Fayre",
+    "Midsummer Nights Fayre"
+  ],
+  "editionLabel": "Gamewright English rules (© 2024 Gamewright)",
+  "firstPlayerRule": "The player who last went to a carnival begins the game.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody remembers, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/126_MidsummerNightsFayre_RULES_compressed.pdf",
+      "title": "A Midsummer Night’s Fayre — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 2: \"The player who last went to a carnival begins the game.\"",
+  "uncertainty": []
+}

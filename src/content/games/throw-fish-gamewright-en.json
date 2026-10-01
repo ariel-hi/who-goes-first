@@ -1,0 +1,33 @@
+{
+  "id": "throw-fish-gamewright-en",
+  "slug": "throw-fish-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "fbaef686c6949b0f65c45e42ab2915371a0d944d8d7a9a62deba4223585c5a79",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Throw Fish",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (© 2024 Gamewright)",
+  "firstPlayerRule": "The player who last saw a fish goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody remembers, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Throw_Fish_INSTR.pdf",
+      "title": "Throw Fish — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"The player who last saw a fish, goes first.\"",
+  "uncertainty": []
+}

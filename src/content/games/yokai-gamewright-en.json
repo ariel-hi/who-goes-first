@@ -1,0 +1,35 @@
+{
+  "id": "yokai-gamewright-en",
+  "slug": "yokai-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "2bd10065456b4ef868c2dd0f174c570b0d67b0cd5d2772842cddd40da9ef12b9",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Yokai",
+  "aliases": [
+    "Yōkai"
+  ],
+  "editionLabel": "Gamewright English rules (© 2021 Gamewright)",
+  "firstPlayerRule": "Whoever has the longest neck goes first, and play continues to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "Can’t decide whose neck is longest? Use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Yokai-Rules.pdf",
+      "title": "Yokai — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"HOW TO PLAY Whoever has the longest neck goes first and play continues to the left.\"",
+  "uncertainty": []
+}

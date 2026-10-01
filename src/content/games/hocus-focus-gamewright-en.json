@@ -1,0 +1,33 @@
+{
+  "id": "hocus-focus-gamewright-en",
+  "slug": "hocus-focus-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "bba7cb938ef3e4f2a85e4c645e16c248c97643e9a5eff78552363eb18d364d82",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Hocus Focus",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules",
+  "firstPlayerRule": "Select one player to go first, such as the person whose birthday is coming up next.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/HocusFocus-RULES.pdf",
+      "title": "Hocus Focus — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"Select one player to go first, such as the person whose birthday is coming up next.\"",
+  "uncertainty": []
+}

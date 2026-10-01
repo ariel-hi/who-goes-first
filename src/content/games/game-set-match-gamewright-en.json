@@ -1,0 +1,37 @@
+{
+  "id": "game-set-match-gamewright-en",
+  "slug": "game-set-match-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "fd11a133d1d30bfbaa8f69d4b3347ca470ee282a047c7a89803db44065621685",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Game, Set, Match!",
+  "aliases": [
+    "Game Set Match"
+  ],
+  "editionLabel": "Gamewright English rules (© 2003 Gamewright)",
+  "firstPlayerRule": "The youngest player goes first, and play continues to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/GameSetMatch-RULES.pdf",
+      "title": "Game, Set, Match! — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"How to Play The youngest player goes first and play continues to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

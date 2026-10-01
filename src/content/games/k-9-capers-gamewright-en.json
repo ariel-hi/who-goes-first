@@ -1,0 +1,35 @@
+{
+  "id": "k-9-capers-gamewright-en",
+  "slug": "k-9-capers-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "f96de323c1636b0202e203997d658db1087e0921566eac6817c4c0b56b57ef34",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "K-9 Capers",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules",
+  "firstPlayerRule": "The youngest player goes first, and play moves to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/K-9Capers-RULES.pdf",
+      "title": "K-9 Capers — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"Youngest player goes first and play moves to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

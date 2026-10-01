@@ -1,0 +1,35 @@
+{
+  "id": "lucky-catch-gamewright-en",
+  "slug": "lucky-catch-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "3d410c0ec0295ea4f72681411f0d5a21209b107aca7cb59f2bcd27fdc4f01569",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Lucky Catch",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (© 2001 Gamewright)",
+  "firstPlayerRule": "The youngest player starts first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/LuckyCatch-RULES.pdf",
+      "title": "Lucky Catch — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"The youngest player starts first.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

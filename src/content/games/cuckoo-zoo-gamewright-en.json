@@ -1,0 +1,35 @@
+{
+  "id": "cuckoo-zoo-gamewright-en",
+  "slug": "cuckoo-zoo-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d528a5afa4cf0a58b6c2ef8d574520606d3c50987fff215c04aab35aa605756a",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Cuckoo Zoo",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (© 2005 Gamewright)",
+  "firstPlayerRule": "The youngest player goes first, and play moves to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/CuckooZoo-RULES.pdf",
+      "title": "Cuckoo Zoo — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"How to Play The youngest player goes first and play moves to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

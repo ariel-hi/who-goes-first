@@ -1,0 +1,35 @@
+{
+  "id": "sushi-roll-gamewright-en",
+  "slug": "sushi-roll-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "e70b650302a4c4a64405a38a59e78a86fd073bf092a47d80fede91fdf288d559",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Sushi Roll",
+  "aliases": [
+    "Sushi Go! Sushi Roll"
+  ],
+  "editionLabel": "Gamewright English rules (© 2019 Gamewright)",
+  "firstPlayerRule": "After everyone rolls, the player with the red-bordered conveyor belt goes first, then play moves to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Sushi-Roll-Rules.pdf",
+      "title": "Sushi Roll — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 2: \"To start a round, all players pick up all the dice on their conveyor belts and roll them on the table.\" \"EVERYBODY TAKES A TURN The player who has the red-bordered conveyor belt goes first, then play moves to the left until each player has had a turn.\"",
+  "uncertainty": []
+}

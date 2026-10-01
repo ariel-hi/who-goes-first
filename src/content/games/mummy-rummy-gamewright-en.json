@@ -1,0 +1,33 @@
+{
+  "id": "mummy-rummy-gamewright-en",
+  "slug": "mummy-rummy-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a4c75d226dbda9013bec76a41e2eb47a4bfca5852156d2133e84c97c30c51dd6",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Mummy Rummy",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (© 2024 Gamewright)",
+  "firstPlayerRule": "The player who woke the earliest today goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody remembers, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/201P_MummyRummy_RULES.pdf",
+      "title": "Mummy Rummy — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 3: \"The player who woke the earliest today goes first.\"",
+  "uncertainty": []
+}

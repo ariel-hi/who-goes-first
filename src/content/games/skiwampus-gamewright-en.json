@@ -1,0 +1,35 @@
+{
+  "id": "skiwampus-gamewright-en",
+  "slug": "skiwampus-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "dd03402e69511776c9513d98a8fc24e6b4ba9c812ca2df5d7e4aff38e6526074",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Skiwampus",
+  "aliases": [],
+  "editionLabel": "Gamewright English rules (© 2016 Gamewright)",
+  "firstPlayerRule": "Starting with the youngest player and moving to the left, players take turns playing a tile.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/SkiwampusRules.pdf",
+      "title": "Skiwampus — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 2: \"Play Starting with the youngest player and moving to the left, take turns playing a tile to the grid and then drawing back up to three tiles.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

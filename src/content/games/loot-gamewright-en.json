@@ -1,0 +1,37 @@
+{
+  "id": "loot-gamewright-en",
+  "slug": "loot-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "bd89fdbb67221249b8c91c2237e5fc737c1095ab388a4d9b84e43d69178a6a74",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Loot",
+  "aliases": [
+    "Loot card game"
+  ],
+  "editionLabel": "Gamewright English rules (© 2005 Gamewright)",
+  "firstPlayerRule": "In individual play, the player to the left of the dealer starts and play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Loot-RULES.pdf",
+      "title": "Loot — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"Individual Play The player to the left of the dealer starts and play continues clockwise.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

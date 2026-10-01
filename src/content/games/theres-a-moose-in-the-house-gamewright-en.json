@@ -1,0 +1,38 @@
+{
+  "id": "theres-a-moose-in-the-house-gamewright-en",
+  "slug": "theres-a-moose-in-the-house-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5c11cb8f0a2f2a7292c15dfa5a7771143590e2984eadb962fe3176a3e4d6dd1b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "There’s a Moose in the House",
+  "aliases": [
+    "There's a Moose in the House",
+    "Moose in the House"
+  ],
+  "editionLabel": "Gamewright English rules (© 2004 Gamewright)",
+  "firstPlayerRule": "The player to the left of the dealer goes first, and play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/TheresaMooseintheHouseTM-RULES.pdf",
+      "title": "There’s a Moose in the House — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"The player to the left of the dealer goes first and play continues clockwise.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

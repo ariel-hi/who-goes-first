@@ -1,0 +1,35 @@
+{
+  "id": "check-out-gamewright-en",
+  "slug": "check-out-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "669f4c259f1c01af800a714d3cc93ce99d7128e504d524ffc8e19a0a917ae38c",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Check Out",
+  "aliases": [
+    "Check Out game"
+  ],
+  "editionLabel": "Gamewright English rules (© 2003 Gamewright)",
+  "firstPlayerRule": "Choose a player to start, such as the youngest player or the player whose birthday is coming up next.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/CheckOut-RULES.pdf",
+      "title": "Check Out — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF listed on gamewright.com/rules and extracted its text with pdftotext. PDF page 1: \"How to Play Choose a player to start the game (such as the youngest player or the player whose birthday is coming up next).\"",
+  "uncertainty": []
+}
