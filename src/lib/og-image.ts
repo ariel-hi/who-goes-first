@@ -51,3 +51,28 @@ export async function renderRuleImage(gameName: string, answer: string, host: st
   // Satori embeds bundled-font glyphs as paths; scanning system fonts is redundant.
   return new Resvg(svg, { fitTo: { mode: 'width', value: 1200 }, font: { loadSystemFonts: false } }).render().asPng();
 }
+
+/** Vertical 2:3 Pinterest pin in the same palette as the rule cards. */
+export async function renderPinImage(heading: string, body: string, footer: string, host: string): Promise<Buffer> {
+  const title = clip(heading, 70);
+  const text = clip(body, 260);
+  const titleSize = title.length > 44 ? 72 : 88;
+  const bodySize = text.length > 170 ? 40 : 46;
+  const dots = [[20, 20], [48, 20], [34, 34], [20, 48], [48, 48]].map(([x, y]) => el('div', { position: 'absolute', left: x! - 4, top: y! - 4, width: 8, height: 8, borderRadius: 4, background: '#fffef9' }));
+  const tree = el('div', { width: 1000, height: 1500, display: 'flex', flexDirection: 'column', background: '#f5f0ed', padding: '96px 84px', fontFamily: 'Sans', color: '#39343b' }, [
+    el('div', { display: 'flex', alignItems: 'center', gap: 24 }, [
+      el('div', { position: 'relative', width: 68, height: 68, borderRadius: 14, background: '#62506f', display: 'flex', transform: 'rotate(-6deg)' }, dots),
+      el('div', { fontFamily: 'Serif', fontSize: 40, color: '#62506f' }, 'Who goes first?'),
+    ]),
+    el('div', { display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center' }, [
+      el('div', { fontFamily: 'Serif', fontSize: titleSize, lineHeight: 1.08, letterSpacing: -2, marginBottom: 48 }, title),
+      el('div', { display: 'flex', background: '#fffef9', borderRadius: 28, padding: '44px 48px', fontSize: bodySize, lineHeight: 1.38, color: '#4d4550' }, text),
+    ]),
+    el('div', { display: 'flex', flexDirection: 'column', gap: 10, borderTop: '2px solid #e2dae0', paddingTop: 34, fontSize: 32, color: '#62506f' }, [
+      el('div', { fontWeight: 600 }, footer),
+      el('div', {}, host),
+    ]),
+  ]);
+  const svg = await satori(tree as unknown as Parameters<typeof satori>[0], { width: 1000, height: 1500, fonts: loadFonts() });
+  return new Resvg(svg, { fitTo: { mode: 'width', value: 1000 }, font: { loadSystemFonts: false } }).render().asPng();
+}

@@ -1,4 +1,5 @@
 import { getCatalog, getPrompts } from '../lib/content/catalog';
+import { releasedPins } from '../lib/pinterest-pins';
 import { siteSettings } from '../lib/site';
 
 const escapeXml = (value: string) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
@@ -27,9 +28,11 @@ export function GET() {
       image: '/pins/fun-questions.png', campaign: 'house_questions',
     }] : []),
   ];
-  const entries = items.map(item => {
+  // Daily drip of popular-game and tool Pins, newest first.
+  const dripped = releasedPins().reverse().map(pin => ({ ...pin, image: `/pins/q/${pin.id}.png`, pubDate: new Date(`${pin.date}T13:00:00Z`).toUTCString() }));
+  const entries = [...dripped, ...items.map(item => ({ ...item, pubDate: 'Fri, 25 Sep 2026 00:00:00 GMT' }))].map(item => {
     const link = `${site}${item.path}?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=${item.campaign}`;
-    return `<item><title>${escapeXml(item.title)}</title><link>${link}</link><guid isPermaLink="false">wgf:${item.id}:v1</guid><pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate><description>${escapeXml(item.description)}</description><media:content url="${site}${item.image}" type="image/png" medium="image" /></item>`;
+    return `<item><title>${escapeXml(item.title)}</title><link>${link}</link><guid isPermaLink="false">wgf:${item.id}:v1</guid><pubDate>${item.pubDate}</pubDate><description>${escapeXml(item.description)}</description><media:content url="${site}${item.image}" type="image/png" medium="image" /></item>`;
   }).join('');
   return new Response(`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Who Goes First? Game Night Ideas</title><link>${site}/</link><description>Selected ways to start your board game night.</description>${entries}</channel></rss>`, { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8', 'Cache-Control': 'public, max-age=3600' } });
 }
