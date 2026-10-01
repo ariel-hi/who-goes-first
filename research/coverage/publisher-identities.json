@@ -6465,6 +6465,34 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "d40041d49a8f83ffece068c25bfeae1125b95233f2063662eb4fcd056e4c2ae7"
+    },
+    {
+      "identityId": "game-9ef17a10-e7b8-44ba-bfdc-6b54b1c39820",
+      "routeKey": "game-9ef17a10-e7b8-44ba-bfdc-6b54b1c39820",
+      "name": "Don’t Step In It",
+      "searchNames": [
+        "Don't Step In It",
+        "Dont Step In It"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Don't Step In It, the Hasbro blindfolded mat game, item E2489, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Don't Step In It instructions name the game, item E2489, with its mat, blindfold and compound piles.",
+      "publisherReferenceSourceId": "dont-step-in-it-hasbro-e2489-en-primary",
+      "sources": [
+        {
+          "id": "dont-step-in-it-hasbro-e2489-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/b4df0fd0-ea46-44ea-bd79-eb0968392f28/633f9b8000f5724126a6ab35f46bf2fd.pdf",
+          "sha256": "f4ec940e57bb98cbd79a61ad5a56d116a2dbaf533005b2aff0609431a89322ad",
+          "byteCount": 2931844,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "31c5e7face38de74cc386344465a978cb65b8b64b1a6c2c953e6664072d03c42"
     }
   ]
 }

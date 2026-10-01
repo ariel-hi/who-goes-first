@@ -1,0 +1,38 @@
+{
+  "id": "mouse-trap-hasbro-c0431-en",
+  "slug": "mouse-trap-hasbro-c0431-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "c41009fb6671f3a65f67ac3e774a3af060d427f7d772f39cf50bda90a3095f24",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Mouse Trap",
+  "aliases": [
+    "Mousetrap",
+    "Mouse Trap board game"
+  ],
+  "editionLabel": "Hasbro English instructions, item C0431 (2016)",
+  "firstPlayerRule": "Roll the die to determine who goes first. The first player then rolls and moves clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [],
+  "interpretation": "This site reads “roll the die to determine who goes first” as the highest roll going first.",
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/03ec0f3a-213c-43fe-adc9-2e712f97f795/66e6f0b593926874ac966ac1fd5904fb.pdf",
+      "title": "Mouse Trap — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com (Mouse-Trap-Game) and extracted its text with pdftotext. PDF page 1: \"Roll the die to determine who goes first.\" \"The first player rolls the die and moves clockwise that number of spaces along the path.\" Item C0431, © 2016 Hasbro.",
+  "uncertainty": [
+    "The rules do not say whether high or low wins the roll, or how to break ties."
+  ]
+}

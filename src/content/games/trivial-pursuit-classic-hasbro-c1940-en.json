@@ -1,0 +1,38 @@
+{
+  "id": "trivial-pursuit-classic-hasbro-c1940-en",
+  "slug": "trivial-pursuit-classic-hasbro-c1940-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "75c835eeaa7553d094a3f86957f6479f408716117e2273685ad40846b49ca732",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Trivial Pursuit",
+  "aliases": [
+    "Trivial Pursuit Classic Edition",
+    "Trivial Pursuit Classic"
+  ],
+  "editionLabel": "Hasbro English instructions, Classic Edition item C1940 (2017)",
+  "firstPlayerRule": "Choose a player to take the first turn. After each turn, the player to the left rolls next.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/d7eb801c-3036-4d33-847f-0ef6abf58de5/C19400000_Trivial_Pursuit_17_INST.pdf",
+      "title": "Trivial Pursuit — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com (trivial-pursuit-game-classic-edition) and extracted its text with pdftotext. PDF page 1: \"Choose a player to take the first turn.\" \"The player to your left now rolls the die to take a turn.\" Classic Edition, item C1940, © 2017 Hasbro.",
+  "uncertainty": [
+    "The rules do not say how to choose the first player."
+  ]
+}
