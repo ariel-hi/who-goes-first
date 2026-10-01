@@ -6105,6 +6105,60 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "d1ad1d42ab4ceaac00584e36f9c3e556a6540f53136806f780c5b3cc522746cf"
+    },
+    {
+      "identityId": "game-06871e11-05c6-4fbc-9667-c6338c58f7f2",
+      "routeKey": "game-06871e11-05c6-4fbc-9667-c6338c58f7f2",
+      "name": "Apples to Apples Junior",
+      "searchNames": [
+        "Apples to Apples Jr"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Apples to Apples Junior, the Mattel children's edition of Apples to Apples, item N1387, as described in its English instructions PDF.",
+      "identityEvidence": "Mattel's service-site instructions name Apples to Apples Junior, item N1387, with Red and Green Apple cards.",
+      "publisherReferenceSourceId": "apples-to-apples-junior-mattel-n1387-en-primary",
+      "sources": [
+        {
+          "id": "apples-to-apples-junior-mattel-n1387-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/N1387-Eng.pdf",
+          "sha256": "3fc2238ad52bde54872044d8bff79781463d7f70d1ef4a87bbb9288d403e3d2b",
+          "byteCount": 623141,
+          "location": "\"How to Play\" step 1"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "061d1c61360e01135c75da90c55ff81090009126bc69e3a05cb7a03faa42a0a9"
+    },
+    {
+      "identityId": "game-eb08d627-1602-43f7-936c-027c9e7c9d73",
+      "routeKey": "game-eb08d627-1602-43f7-936c-027c9e7c9d73",
+      "name": "Blokus Junior",
+      "searchNames": [
+        "Blokus Jr"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Blokus Junior, the two-player Mattel edition of Blokus, item T8138, as described in its English instructions PDF.",
+      "identityEvidence": "Mattel's service-site instructions name Blokus Junior, item T8138, with two 24-piece color sets.",
+      "publisherReferenceSourceId": "blokus-junior-mattel-t8138-en-primary",
+      "sources": [
+        {
+          "id": "blokus-junior-mattel-t8138-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/T8138-0520.pdf",
+          "sha256": "c625e1371f4aa9b86618eb19105e0761b34ec39eb57d2458c16457235ba91d00",
+          "byteCount": 312009,
+          "location": "\"Let’s Play\" steps 1–2"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "59380ac94711dc9bb036fac484d6c24752021ccb901fdeaf55c45b4173259799"
     }
   ]
 }

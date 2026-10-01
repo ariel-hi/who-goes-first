@@ -1,0 +1,37 @@
+{
+  "id": "apples-to-apples-junior-mattel-n1387-en",
+  "slug": "apples-to-apples-junior-mattel-n1387-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "84be7b3db9b9de34155f9247b76ff4cfabd3db6268682427fc59b7b8b59014b7",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Apples to Apples Junior",
+  "aliases": [
+    "Apples to Apples Jr"
+  ],
+  "editionLabel": "Mattel English instructions, item N1387 (2015)",
+  "firstPlayerRule": "Choose a player to be the first judge. That player deals 5 Red Apple cards to everyone and turns over the first Green Apple card.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the first judge; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/N1387-Eng.pdf",
+      "title": "Apples to Apples Junior — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "\"How to Play\" step 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 3: \"Choose a player to be the first judge. This player deals 5 Red Apple cards, face down, to each player (including him or herself).\" \"The judge turns over the top Green Apple card, reads the word out loud\". © 2015 Mattel.",
+  "uncertainty": [
+    "The rules do not say how to choose the first judge."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "tumblin-monkeys-mattel-t1852-en",
+  "slug": "tumblin-monkeys-mattel-t1852-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d0948e3107a38e2bba51aa74baff7958266023f4ba691a000c09925937479c4d",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Tumblin’ Monkeys",
+  "aliases": [
+    "Tumblin' Monkeys",
+    "Tumbling Monkeys"
+  ],
+  "editionLabel": "Mattel English instructions, item T1852 (2009)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/T1852-0920.pdf",
+      "title": "Tumblin’ Monkeys — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"The youngest player goes first.\" © 2009 Mattel, toy no. T1852.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

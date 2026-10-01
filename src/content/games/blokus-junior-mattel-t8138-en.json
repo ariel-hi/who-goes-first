@@ -1,0 +1,35 @@
+{
+  "id": "blokus-junior-mattel-t8138-en",
+  "slug": "blokus-junior-mattel-t8138-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d01530927d2035ea95a109e0e736b62f3e0e3491a7f9090436e2b3300c8b32aa",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Blokus Junior",
+  "aliases": [
+    "Blokus Jr"
+  ],
+  "editionLabel": "Mattel English instructions, item T8138 (2010)",
+  "firstPlayerRule": "Decide who will go first. That player places a piece on either of the two starting points.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules leave the choice to the players; use the picker or a coin flip.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/T8138-0520.pdf",
+      "title": "Blokus Junior — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Let’s Play\" steps 1–2",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Let’s Play! 1. Each player chooses a color and takes that set of 24 pieces. 2. Decide who will go first. Player 1 places one of their pieces on either of the two starting points\". © 2010 Mattel.",
+  "uncertainty": []
+}
