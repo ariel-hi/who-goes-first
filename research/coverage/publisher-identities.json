@@ -6407,6 +6407,35 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "60fc37ce5fe7eca1caa5fde7b427a9e2011afcf01e1c272056daf1ac545d532e"
+    },
+    {
+      "identityId": "game-dd456a7b-0e21-4470-b2a0-98c8d0a6bd73",
+      "routeKey": "game-dd456a7b-0e21-4470-b2a0-98c8d0a6bd73",
+      "name": "Memory",
+      "searchNames": [
+        "Original Memory",
+        "Ravensburger Memory",
+        "Memory matching game"
+      ],
+      "publisher": "Ravensburger",
+      "identityScope": "Ravensburger's original memory picture-pair matching game, game no. 01 035 6, as described in its rules PDF.",
+      "identityEvidence": "Ravensburger's hosted rules PDF names original memory, game no. 01 035 6, with 104 picture cards (52 pairs) for 2 to 10 players.",
+      "publisherReferenceSourceId": "memory-ravensburger-01035-en-primary",
+      "sources": [
+        {
+          "id": "memory-ravensburger-01035-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/Memory%2001035.pdf",
+          "sha256": "96ebc5bd20bee94000e15a5163027b691f5c26447c887fa655ddec7a9ce6fc2a",
+          "byteCount": 771451,
+          "location": "\"Who begins?\" (English section)"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f543b3252688975bfbd944d9abe23f03c1870ed7256f40efd63414739861288e"
     }
   ]
 }

@@ -2459,6 +2459,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "03e858e4e0874a46436ab13e90ce1418d89fc4fdc6c0e8980263a28d8f825bfe"
+    },
+    {
+      "ruleId": "memory-ravensburger-01035-en",
+      "ruleRevision": "984fd4fb679d5eeeb5bb449f0fe638bb42246cc695bc2defe4f78a885f8273ae",
+      "identityId": "game-dd456a7b-0e21-4470-b2a0-98c8d0a6bd73",
+      "identityRevision": "f543b3252688975bfbd944d9abe23f03c1870ed7256f40efd63414739861288e",
+      "editionScope": "Ravensburger original memory, game no. 01 035 6 (English rules, 1992)",
+      "evidence": [
+        {
+          "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/Memory%2001035.pdf",
+          "sha256": "96ebc5bd20bee94000e15a5163027b691f5c26447c887fa655ddec7a9ce6fc2a",
+          "location": "\"Who begins?\" (English section)",
+          "correspondence": "The rule cites this same Ravensburger document for Memory."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "936e3a4b0b8b2628d4089d266657bae41e03757a5a7befec45f661e8dec5208a"
     }
   ]
 }

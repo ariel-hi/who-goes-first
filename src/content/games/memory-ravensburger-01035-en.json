@@ -1,0 +1,39 @@
+{
+  "id": "memory-ravensburger-01035-en",
+  "slug": "memory-ravensburger-01035-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "984fd4fb679d5eeeb5bb449f0fe638bb42246cc695bc2defe4f78a885f8273ae",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Memory",
+  "aliases": [
+    "Original Memory",
+    "Ravensburger Memory",
+    "Memory matching game"
+  ],
+  "editionLabel": "Ravensburger original memory, game no. 01 035 6 (English rules, 1992)",
+  "firstPlayerRule": "The players decide who begins: it could be the youngest, the smallest, the oldest. Play moves clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "Can’t agree? Use the picker.",
+  "clarifications": [
+    "A player who turns over a matching pair keeps it and turns over two more cards."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/Memory%2001035.pdf",
+      "title": "Original Memory — Rules",
+      "publisher": "Ravensburger",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Who begins?\" (English section)",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Ravensburger-hosted rules PDF, a multilingual scan with no text layer, rendered it to an image and read the English section. \"Who begins? It could be the youngest, the smallest, the oldest… you decide. Play moves in a clockwise direction.\" Imprint © 1992 by Otto Maier Verlag Ravensburg; Ravensburger Spiele 01 035 6.",
+  "uncertainty": []
+}
