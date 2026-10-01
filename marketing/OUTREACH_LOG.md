@@ -5,8 +5,8 @@ Sent from edamame.makers@gmail.com, signed "Ariel, Who Goes First?". Each batch'
 ## Rules for the routine
 - Only use addresses the publisher publishes on its own site or rulebooks. Skip web-form-only and sales-only contacts (logged below as "form only").
 - Never email the same publisher twice unless they replied asking for something.
-- Next batch only when the previous batch is at least **7 days** old, had **no bounces or spam complaints**, and none of its replies asked us to stop. Batch size: **5–8**, sent at least a minute apart, on a weekday morning US Eastern time.
-- After two clean batches, the size may rise to 10. Any bounce or complaint pauses sending until Ariel reviews it.
+- One batch per weekday (the routine runs at 6:30 AM Pacific), as long as there are **no bounces or spam complaints** and no reply asked us to stop. Batch size: **8**, sent at least a minute apart.
+- After three clean batches, the size may rise to 10. Any bounce or complaint pauses sending until Ariel reviews it.
 - Log every reply, correction request and earned link here.
 
 ## Batch 1: 2026-10-01 (8 sent, ~08:22–08:30 PT)
