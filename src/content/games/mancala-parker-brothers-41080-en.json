@@ -1,0 +1,38 @@
+{
+  "id": "mancala-parker-brothers-41080-en",
+  "slug": "mancala-parker-brothers-41080-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "0a8b6b029612a4a16dcb3e3a86ef90398b6be930cd893b98f893a2c9e6a8eaba",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Mancala",
+  "aliases": [
+    "Kalah",
+    "Mancala board game"
+  ],
+  "editionLabel": "Parker Brothers / Hasbro English instructions, item 41080 (2003)",
+  "firstPlayerRule": "Choose a player to go first. Players then alternate turns.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose; flip a coin or use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/Mancala.pdf",
+      "title": "Mancala — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. \"How to Play: Choose a player to go first.\" \"The game continues with players alternating turns.\" Imprint © 2003 Hasbro, Parker Brothers, proof of purchase 41080.",
+  "uncertainty": [
+    "The rules do not say how to choose the first player."
+  ]
+}

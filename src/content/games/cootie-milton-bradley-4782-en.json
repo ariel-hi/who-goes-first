@@ -1,0 +1,39 @@
+{
+  "id": "cootie-milton-bradley-4782-en",
+  "slug": "cootie-milton-bradley-4782-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "bf3c911c1a09d5edee130aa69c0cd6f1159c7647d9347d016f681507cf675b37",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Cootie",
+  "aliases": [
+    "Cootie game"
+  ],
+  "editionLabel": "Milton Bradley English instructions, 4782 (1986–1997)",
+  "firstPlayerRule": "Each player rolls the Cootie cube once. The player with the highest number starts the game.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [
+    "You must roll a 1 for the body before collecting any other part."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/Cootie.pdf",
+      "title": "Cootie — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Go Buggy!\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. \"Go Buggy! To see who goes first, each of you rolls the Cootie cube once. The player with the highest number starts the game.\" Imprint © 1986, 1993, 1997 Milton Bradley Company, 4782-I.",
+  "uncertainty": [
+    "No tie-break is stated for equal high rolls."
+  ]
+}

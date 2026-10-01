@@ -1,0 +1,35 @@
+{
+  "id": "stratego-milton-bradley-4714-en",
+  "slug": "stratego-milton-bradley-4714-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "51dbdcbfc21e68d905fb30efc2846722ac814e6731e9048aa9341800238619c1",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Stratego",
+  "aliases": [
+    "Stratego classic"
+  ],
+  "editionLabel": "Milton Bradley English instructions, 4714 (1986/1996)",
+  "firstPlayerRule": "The red player moves first. Colours are chosen by hiding a red and a blue piece, one in each hand, and letting your opponent pick a hand.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/Stratego.pdf",
+      "title": "Stratego — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "\"Setup\" step 2 (page 3) and \"Gameplay\" (page 4)",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. Setup step 2: \"Hide a Red Army piece in one hand and a Blue Army piece in the other. Your opponent chooses a hand and plays with the color army the selected piece designates.\" Gameplay: \"You and your opponent alternate turns. The red player moves first.\" Imprint © 1986, 1996 Milton Bradley Company, 4714-I.",
+  "uncertainty": []
+}

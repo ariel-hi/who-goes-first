@@ -1243,6 +1243,44 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "39e656c771ea79b7eb8dd91b87b1b68c27811d7a0db3d7e51ca0f93504797240"
+    },
+    {
+      "ruleId": "jenga-milton-bradley-04793-en",
+      "ruleRevision": "77694ce244e9c26daa91dd0ab3e7f2bd324540f43c1fed01db889beb631843f8",
+      "identityId": "game-e4a4e0d3-2360-4037-878a-93f8a4b48965",
+      "identityRevision": "03163aac35893ca15d25d1b875aa4a3c260a4043788bca195534237caab77d34",
+      "editionScope": "Milton Bradley / Hasbro English instructions, item 04793 (2000)",
+      "evidence": [
+        {
+          "url": "https://www.hasbro.com/common/instruct/jenga.pdf",
+          "sha256": "6a8264b164bfbbe96efc8b1766f6bf2c4a4a5e06e0d52440aa632e2820375622",
+          "location": "\"Gameplay\" and \"Winning\"",
+          "correspondence": "The rule cites this same Hasbro document for Jenga."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "fe867d5f1793382d8aee2d77f97863985456583e3b612a1d2da2a3d4782cb829"
+    },
+    {
+      "ruleId": "stratego-milton-bradley-4714-en",
+      "ruleRevision": "51dbdcbfc21e68d905fb30efc2846722ac814e6731e9048aa9341800238619c1",
+      "identityId": "game-dd820d2e-e9d6-4abf-aa12-7783a6852e33",
+      "identityRevision": "ac69d8208697f7efacbad4e255332161063458ba1740b888af0aedfe2e2b6a99",
+      "editionScope": "Milton Bradley English instructions, 4714 (1986/1996)",
+      "evidence": [
+        {
+          "url": "https://www.hasbro.com/common/instruct/Stratego.pdf",
+          "sha256": "9461d638e84086411f85ec961c5e8672ec1ba2111b07cb4b61b5074dd6e79254",
+          "location": "\"Setup\" step 2 (page 3) and \"Gameplay\" (page 4)",
+          "correspondence": "The rule cites this same Hasbro document for Stratego."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "c4f9047590e5534e41c49ef0b7ff398c57de27f8062ceaab2d7731b38887ea68"
     }
   ]
 }

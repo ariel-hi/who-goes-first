@@ -4644,6 +4644,60 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "de82a9fb671f46e5374159c67cf860e979d8e2d5145106d7a3b29c870aae299a"
+    },
+    {
+      "identityId": "game-e4a4e0d3-2360-4037-878a-93f8a4b48965",
+      "routeKey": "game-e4a4e0d3-2360-4037-878a-93f8a4b48965",
+      "name": "Jenga",
+      "searchNames": [
+        "Jenga Classic"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Jenga, the 54-block hardwood stacking game sold by Milton Bradley/Hasbro, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Jenga instructions name the game and its 54 hardwood blocks, loading tray and 18-story tower setup.",
+      "publisherReferenceSourceId": "jenga-milton-bradley-04793-en-primary",
+      "sources": [
+        {
+          "id": "jenga-milton-bradley-04793-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.hasbro.com/common/instruct/jenga.pdf",
+          "sha256": "6a8264b164bfbbe96efc8b1766f6bf2c4a4a5e06e0d52440aa632e2820375622",
+          "byteCount": 988635,
+          "location": "\"Gameplay\" and \"Winning\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "03163aac35893ca15d25d1b875aa4a3c260a4043788bca195534237caab77d34"
+    },
+    {
+      "identityId": "game-dd820d2e-e9d6-4abf-aa12-7783a6852e33",
+      "routeKey": "game-dd820d2e-e9d6-4abf-aa12-7783a6852e33",
+      "name": "Stratego",
+      "searchNames": [
+        "Stratego classic"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Stratego, the two-player hidden-rank army game sold by Milton Bradley/Hasbro, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Stratego instructions name the game and its 40-piece red and blue armies with Flag, Bombs and Spy.",
+      "publisherReferenceSourceId": "stratego-milton-bradley-4714-en-primary",
+      "sources": [
+        {
+          "id": "stratego-milton-bradley-4714-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.hasbro.com/common/instruct/Stratego.pdf",
+          "sha256": "9461d638e84086411f85ec961c5e8672ec1ba2111b07cb4b61b5074dd6e79254",
+          "byteCount": 425597,
+          "location": "\"Setup\" step 2 (page 3) and \"Gameplay\" (page 4)"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ac69d8208697f7efacbad4e255332161063458ba1740b888af0aedfe2e2b6a99"
     }
   ]
 }

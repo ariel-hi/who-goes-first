@@ -1,0 +1,37 @@
+{
+  "id": "jenga-milton-bradley-04793-en",
+  "slug": "jenga-milton-bradley-04793-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "77694ce244e9c26daa91dd0ab3e7f2bd324540f43c1fed01db889beb631843f8",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Jenga",
+  "aliases": [
+    "Jenga Classic"
+  ],
+  "editionLabel": "Milton Bradley / Hasbro English instructions, item 04793 (2000)",
+  "firstPlayerRule": "The player who built the tower goes first. Play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "In later games, the player who made the tower fall sets it up for the next game."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/jenga.pdf",
+      "title": "Jenga — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Gameplay\" and \"Winning\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. \"Gameplay: The player who built the tower goes first. Play passes to the left.\" \"Winning: ... The player who makes the tower fall gets to set up the tower for the next game.\" Imprint © 2000 Hasbro, item 04793.",
+  "uncertainty": []
+}
