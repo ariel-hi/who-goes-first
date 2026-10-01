@@ -2877,6 +2877,44 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "cc9e6ea240ce580c583f868ae5e5ea645141dce8f66bb298d522787ceb2f37df"
+    },
+    {
+      "ruleId": "pig-bicycle-en",
+      "ruleRevision": "1c5c4ec15dc26ba9b4699fda512a84ec1a2adc777a716166f0dbf85c8500f61d",
+      "identityId": "game-e6a36233-2488-40a9-bbca-c5c199498cb1",
+      "identityRevision": "e2c5956bd67594093f7795532753db92021f807362d4a6f30c8c5991fbba4a9b",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/pig",
+          "sha256": "f5b97b89b71338ee64390831d90f4125b915f80700171f44986637951ee6d941",
+          "location": "\"The Play\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Pig (card game)."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "deb5b245fe393d2c2e737955fe847dfce88c216b166c7e6aa0c8837e280b3819"
+    },
+    {
+      "ruleId": "snip-snap-snorem-bicycle-en",
+      "ruleRevision": "a659580ac654437f0813f67e1bae96e8bd286875847f7bb0b172c4cf8f273218",
+      "identityId": "game-06b378c9-5c4c-48a2-a948-c4003c559980",
+      "identityRevision": "09aa8b06f640b01ea10f5c4408a3b110f7d24a276d0904c94bca8a242ffa31fc",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/snip-snap-snorem",
+          "sha256": "d6615217b26cadead21d23fb2f997c7bb14fa175e99f9cb76a5662326a1a8099",
+          "location": "\"The Play\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Snip Snap Snorem."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f9956a5d9fcba3561866a12516d6d951a06d139f7ff8faa0719dacdae4e4acbc"
     }
   ]
 }

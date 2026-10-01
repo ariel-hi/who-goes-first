@@ -1,0 +1,34 @@
+{
+  "id": "pig-bicycle-en",
+  "slug": "pig-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "1c5c4ec15dc26ba9b4699fda512a84ec1a2adc777a716166f0dbf85c8500f61d",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pig (card game)",
+  "aliases": [
+    "Pig card game",
+    "Pig four of a kind"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Nobody goes first: everyone looks at their hand, then all players pass one card to the left at the same time.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": "The page describes everyone passing together rather than in turn; this site reads that as simultaneous play.",
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/pig",
+      "title": "Pig — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards page in a browser. \"The players look at their hands; then each player passes one card to the left and picks up the card passed by the player on their right.\"",
+  "uncertainty": []
+}

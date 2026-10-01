@@ -7016,6 +7016,62 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "221c423454dde13c4f599dae2af14ca5184b38dc2227259ab19d2df96f8fe291"
+    },
+    {
+      "identityId": "game-e6a36233-2488-40a9-bbca-c5c199498cb1",
+      "routeKey": "game-e6a36233-2488-40a9-bbca-c5c199498cb1",
+      "name": "Pig (card game)",
+      "searchNames": [
+        "Pig card game",
+        "Pig four of a kind"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Pig (card game), played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names this game and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "pig-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "pig-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/pig",
+          "sha256": "f5b97b89b71338ee64390831d90f4125b915f80700171f44986637951ee6d941",
+          "byteCount": 96194,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e2c5956bd67594093f7795532753db92021f807362d4a6f30c8c5991fbba4a9b"
+    },
+    {
+      "identityId": "game-06b378c9-5c4c-48a2-a948-c4003c559980",
+      "routeKey": "game-06b378c9-5c4c-48a2-a948-c4003c559980",
+      "name": "Snip Snap Snorem",
+      "searchNames": [
+        "Snip-Snap-Snorem",
+        "Earl of Coventry"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Snip Snap Snorem, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names this game and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "snip-snap-snorem-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "snip-snap-snorem-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/snip-snap-snorem",
+          "sha256": "d6615217b26cadead21d23fb2f997c7bb14fa175e99f9cb76a5662326a1a8099",
+          "byteCount": 176158,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "09aa8b06f640b01ea10f5c4408a3b110f7d24a276d0904c94bca8a242ffa31fc"
     }
   ]
 }
