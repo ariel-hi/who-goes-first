@@ -1,0 +1,41 @@
+{
+  "id": "connect-4-hasbro-a5640-en",
+  "slug": "connect-4-hasbro-a5640-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "68eb427e8d9e6f686f2b40a69d5ca47409d1eb0684aa3644123b15a39c3cb1c4",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Connect 4",
+  "aliases": [
+    "Connect Four",
+    "Connect4",
+    "Four in a Row"
+  ],
+  "editionLabel": "Hasbro English instructions, item A5640 (2020 grid)",
+  "firstPlayerRule": "The youngest player goes first. Players then take turns dropping one disc each.",
+  "officialTieBreak": null,
+  "houseFallback": "If both players are the same age, use the picker or a coin flip.",
+  "clarifications": [
+    "For a new game, the winner of the previous game releases the discs."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/857af03b-ee47-4aeb-9142-d2825f06ecad/A5640C040_INST_CONNECT_4_GRID_S20_FAR.pdf",
+      "title": "Connect 4 — Instructions (item A5640)",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\" step 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com/en-us/instruction/Connect-4-Game and extracted its text with pdftotext. \"HOW TO PLAY 1. The youngest player goes first! 2. On your turn, drop one of your discs into any slot in the top of the grid.\" \"STARTING A NEW GAME The winner of the previous game slides the slider bar to the side to release all the discs.\" © 2020 Hasbro, item A5640.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
