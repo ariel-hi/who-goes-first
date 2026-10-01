@@ -5627,6 +5627,61 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "405417e6cdd13fa244bf216921af377d46cf638b9baddf14bdbc3af3c474235c"
+    },
+    {
+      "identityId": "game-65073bb1-da21-4e45-aa6c-9184e37de81f",
+      "routeKey": "game-65073bb1-da21-4e45-aa6c-9184e37de81f",
+      "name": "Pie Face",
+      "searchNames": [
+        "Pie Face game"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Pie Face, the Hasbro whipped-cream spinner game, item E2762, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Pie Face instructions name the game, item E2762, its arm, face mask and spinner.",
+      "publisherReferenceSourceId": "pie-face-hasbro-e2762-en-primary",
+      "sources": [
+        {
+          "id": "pie-face-hasbro-e2762-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/fb7bb771-064b-40bc-a7a1-8b4b9ca9abdd/582f628153da9c50fb7a5c8a4c0f81db.pdf",
+          "sha256": "b9958d36e6820bedb6c64a4c734cf158fcdc406921c50cdb176ccc33cd8ea02b",
+          "byteCount": 4786663,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "98794eb50a2ef742389b79c7adc2e8d2519e1f1465ed733ddaeaf0f981af0b58"
+    },
+    {
+      "identityId": "game-31ba5332-b9d3-4975-8a84-49907b08d562",
+      "routeKey": "game-31ba5332-b9d3-4975-8a84-49907b08d562",
+      "name": "The Game of Life Junior",
+      "searchNames": [
+        "Game of Life Junior",
+        "Life Junior"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "The Game of Life Junior, the Hasbro children's edition, item B0654, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Game of Life Junior instructions name the game, item B0654, and its star-collecting route.",
+      "publisherReferenceSourceId": "game-of-life-junior-hasbro-b0654-en-primary",
+      "sources": [
+        {
+          "id": "game-of-life-junior-hasbro-b0654-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/8a5cd431-417d-43f1-a261-1cfb19880ca7/B06540000_GOL_JNR_14_instr.pdf",
+          "sha256": "495144eae4e9fde8c4c719b4120579eb234bfaafaa4b05f474047aae5d1d0369",
+          "byteCount": 4109829,
+          "location": "\"How to Play\" step 1"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "0519fa90c3488903ebb92243e9782eee2bef3c53f94d6d60f749256730284543"
     }
   ]
 }

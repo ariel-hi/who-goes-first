@@ -1,0 +1,38 @@
+{
+  "id": "game-of-life-junior-hasbro-b0654-en",
+  "slug": "game-of-life-junior-hasbro-b0654-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "8c9c9e67d2c99e07b2634e62e65a93c69722486b007071668bad570c80c302e3",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "The Game of Life Junior",
+  "aliases": [
+    "Game of Life Junior",
+    "Life Junior"
+  ],
+  "editionLabel": "Hasbro English instructions, item B0654 (2014)",
+  "firstPlayerRule": "The oldest player starts. Then spin the spinner and move clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If the oldest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/8a5cd431-417d-43f1-a261-1cfb19880ca7/B06540000_GOL_JNR_14_instr.pdf",
+      "title": "The Game of Life Junior — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "\"How to Play\" step 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com/en-us/instruction/the-game-of-life-junior-game and extracted its text with pdftotext. \"How to play 1. The oldest player starts. 2. Spin the spinner.\" Item B0654, © 2014 Hasbro.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
