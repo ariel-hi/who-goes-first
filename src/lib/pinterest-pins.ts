@@ -19,7 +19,8 @@ const TOOLS = [
   { id: 'dice-roller', path: '/dice-roller/', heading: 'Lost the dice? Roll them online', body: 'Roll up to 12 virtual dice, from d4 to d20 and d100, with the total added up. Free and fair on any phone.', campaign: 'tool_dice_roller' },
   { id: 'turn-order', path: '/turn-order-generator/', heading: 'Random turn order for game night', body: 'Type everyone’s name and shuffle them into a fair playing order in one tap. Free, no account.', campaign: 'tool_turn_order' },
   { id: 'random-number', path: '/random-number-generator/', heading: 'Pick a random number, any range', body: 'A fair random number from 1 to 10, 1 to 100 or any range you like. Great for picking a player or seat.', campaign: 'tool_random_number' },
-  { id: 'printable',path: '/printable-game-night/', heading: 'Printable game night kit', body: 'Print free who-goes-first extras and keep them in the game box for your next game night.', campaign: 'printable' },
+  { id: 'score-keeper', path: '/score-keeper/', heading: 'Lost the score pad? Keep score online', body: 'A free scoreboard for board and card games. Add players, tap to score, and see who is winning.', campaign: 'tool_score_keeper' },
+  { id: 'printable', path:'/printable-game-night/', heading: 'Printable game night kit', body: 'Print free who-goes-first extras and keep them in the game box for your next game night.', campaign: 'printable' },
 ];
 
 let cache: QueuedPin[] | undefined;

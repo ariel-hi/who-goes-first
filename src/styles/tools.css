@@ -1,4 +1,11 @@
-/* Standalone decision tools: finger chooser, coin flip, team generator, rock paper scissors, dice, numbers, turn order. */
+/* Standalone decision tools: finger chooser, coin flip, team generator, rock paper scissors, dice, numbers, turn order, score keeper. */
+.score-list{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:8px}
+.score-list li{display:grid;grid-template-columns:1fr 44px 64px 44px auto;align-items:center;gap:8px;border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:8px 10px}
+.score-list li.score-leader{border-color:var(--green);box-shadow:inset 3px 0 0 var(--green)}
+.score-name{min-width:0;min-height:44px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:16px;font-weight:600}
+.score-step{min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--soft);color:var(--ink);font-size:22px;line-height:1}
+.score-value{text-align:center;font-size:24px;font-weight:700;font-variant-numeric:tabular-nums}
+.score-remove{padding:0 6px;text-decoration:none;font-size:20px}
 .dice-tool .tool-row,.number-tool .tool-row{flex-wrap:wrap}
 .dice-tray{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
 .tool-die{width:64px;height:64px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--paper);box-shadow:0 3px 0 var(--line);font-size:26px;font-weight:700;color:var(--ink);animation:die-land .42s cubic-bezier(.2,.75,.3,1.3) both}
