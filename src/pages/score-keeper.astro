@@ -1,6 +1,8 @@
 ---
 import ToolPage from '../components/tools/ToolPage.astro';
 import ScoreKeeper from '../components/tools/ScoreKeeper';
+import { getCatalog } from '../lib/content/catalog';
+const hasCribbageRule = getCatalog().some(rule => rule.slug === 'cribbage-bicycle-en');
 ---
 <ToolPage current="/score-keeper/" title="Score Keeper: Free Online Scoreboard for Board & Card Games | Who Goes First?" description="Keep score for any board game or card game on your phone. Add players, tap to add or subtract points, and see who is winning. Free, no app or account." heading="Score keeper" lede="Lost the score pad? Track everyone’s points right here.">
   <ScoreKeeper client:load />
@@ -8,6 +10,6 @@ import ScoreKeeper from '../components/tools/ScoreKeeper';
     <h2>How it works</h2>
     <p>Rename each player, choose how many points a tap adds, then tap + or − as you play. The leader is highlighted. Scores are saved on this device, so a refresh won’t lose them, and nothing is sent anywhere.</p>
     <h2>Starting a new game?</h2>
-    <p>Reset the scores, then <a href="/">pick who goes first</a>. Many card games pass the deal to the left each round, and some, like <a href="/games/cribbage-bicycle-en/">Cribbage</a>, have the loser of the last game deal next.</p>
+    {hasCribbageRule ? <p>Reset the scores, then <a href="/">pick who goes first</a>. Many card games pass the deal to the left each round, and some, like <a href="/games/cribbage-bicycle-en/">Cribbage</a>, have the loser of the last game deal next.</p> : <p>Reset the scores, then <a href="/">pick who goes first</a>. Many card games pass the deal to the left each round.</p>}
   </Fragment>
 </ToolPage>

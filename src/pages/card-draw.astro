@@ -1,12 +1,15 @@
 ---
 import ToolPage from '../components/tools/ToolPage.astro';
 import CardDraw from '../components/tools/CardDraw';
+import { getCatalog } from '../lib/content/catalog';
+const dealerRules = new Set(getCatalog().map(rule => rule.slug));
+const hasDealerRules = ['spades-bicycle-en', 'cribbage-bicycle-en', 'euchre-bicycle-en'].every(slug => dealerRules.has(slug));
 ---
 <ToolPage current="/card-draw/" title="Draw a Card Online: Random Playing Card Generator | Who Goes First?" description="Draw random cards from a shuffled 52-card deck online. Free and fair, with no repeats until you reshuffle. Great for high-card draws to pick a dealer." heading="Draw a card" lede="Draw from a freshly shuffled 52-card deck.">
   <CardDraw client:load />
   <Fragment slot="about">
     <h2>Drawing for the deal</h2>
-    <p>Many card games choose the first dealer by a draw: in <a href="/games/spades-bicycle-en/">Spades</a> the high card deals, in <a href="/games/cribbage-bicycle-en/">Cribbage</a> and <a href="/games/euchre-bicycle-en/">Euchre</a> the low card does. Take turns drawing here, one card each, and compare.</p>
+    {hasDealerRules ? <p>Many card games choose the first dealer by a draw: in <a href="/games/spades-bicycle-en/">Spades</a> the high card deals, in <a href="/games/cribbage-bicycle-en/">Cribbage</a> and <a href="/games/euchre-bicycle-en/">Euchre</a> the low card does. Take turns drawing here, one card each, and compare.</p> : <p>Take turns drawing here, one card each, and compare to decide who deals first.</p>}
     <h2>How the deck works</h2>
     <p>The deck is shuffled with an unbiased Fisher–Yates shuffle using your browser’s secure randomness, and cards don’t come back until you shuffle a new deck, just like a real pack.</p>
   </Fragment>
