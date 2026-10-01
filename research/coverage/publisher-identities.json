@@ -6631,6 +6631,34 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "407a7413da40c8400e710d742270afea47fb34e52d0321e61bd53be372eac487"
+    },
+    {
+      "identityId": "game-120f843e-a1d8-4eb0-83b4-78664bd6572f",
+      "routeKey": "game-120f843e-a1d8-4eb0-83b4-78664bd6572f",
+      "name": "Clue Master Detective",
+      "searchNames": [
+        "Clue: Master Detective",
+        "Master Detective Clue"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Clue Master Detective, the expanded Clue edition sold by Winning Moves Games, as described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted Clue Master Detective rules PDF, listed on winning-moves.com/rules/, names the game and gives its complete English rules.",
+      "publisherReferenceSourceId": "clue-master-detective-winning-moves-2023-en-primary",
+      "sources": [
+        {
+          "id": "clue-master-detective-winning-moves-2023-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/CMD_Rules_2023.pdf",
+          "sha256": "ab16c0e2610271ef69ee09e0f3b5d3e77debd29f143466b19a8a2587e313ad50",
+          "byteCount": 12902341,
+          "location": "Start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "538b01243d36baebc58d45bdcdcec9d41e0ecd16437a00ff5569fc22f314dd42"
     }
   ]
 }

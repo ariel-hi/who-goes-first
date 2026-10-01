@@ -1,0 +1,38 @@
+{
+  "id": "sorry-classic-winning-moves-2023-en",
+  "slug": "sorry-classic-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "84e9f50f2d716cc1cccb113558ee0a24617419f73544ec70690a24cb1a2e28aa",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Sorry!",
+  "aliases": [
+    "Sorry Classic",
+    "Classic Sorry!"
+  ],
+  "editionLabel": "Winning Moves Classic Sorry! rules (2023 sheet)",
+  "firstPlayerRule": "Each player draws a card; the highest card is the Leader, who picks a color and has the first play. A Sorry! card counts highest. The winner of a game is the Leader in the next game.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Sorry_Rules_2023.pdf",
+      "title": "Sorry! — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"The Start\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 2: \"Each player then draws a card from the pack. The player drawing the highest card is called the Leader. They choose the color playing pieces that they want and have the first play. The Sorry! card counts the highest in drawing. The Winner of the first game is the Leader in the second game.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal draws."
+  ]
+}

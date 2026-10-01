@@ -1,0 +1,38 @@
+{
+  "id": "clue-master-detective-winning-moves-2023-en",
+  "slug": "clue-master-detective-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "c2c1c616f4c02d4d8c4a76153076113259c2063900ae63333a2ee939fcfcbbb1",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Clue Master Detective",
+  "aliases": [
+    "Clue: Master Detective",
+    "Master Detective Clue"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "Each player rolls the dice; the highest roller starts, and play proceeds to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/CMD_Rules_2023.pdf",
+      "title": "Clue Master Detective — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        8
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 8: \"Each player rolls the dice; play will proceed to the left, and the highest roller starts.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal high rolls."
+  ]
+}

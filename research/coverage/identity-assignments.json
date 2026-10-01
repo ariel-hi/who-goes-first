@@ -2611,6 +2611,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "f3d57cc1bde910391f633b8b17152cd9de6d6181a72e8fd7a27db89e9f900e10"
+    },
+    {
+      "ruleId": "clue-master-detective-winning-moves-2023-en",
+      "ruleRevision": "c2c1c616f4c02d4d8c4a76153076113259c2063900ae63333a2ee939fcfcbbb1",
+      "identityId": "game-120f843e-a1d8-4eb0-83b4-78664bd6572f",
+      "identityRevision": "538b01243d36baebc58d45bdcdcec9d41e0ecd16437a00ff5569fc22f314dd42",
+      "editionScope": "Winning Moves English rules (2023 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/CMD_Rules_2023.pdf",
+          "sha256": "ab16c0e2610271ef69ee09e0f3b5d3e77debd29f143466b19a8a2587e313ad50",
+          "location": "Start of play",
+          "correspondence": "The rule cites this same Winning Moves Games document for Clue Master Detective."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "8baa151d8962b0b5531c309dd3a9656bb00c776c9accff1ebf66250fb85975ef"
     }
   ]
 }

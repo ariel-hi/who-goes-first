@@ -1,0 +1,38 @@
+{
+  "id": "game-of-life-classic-winning-moves-2021-en",
+  "slug": "game-of-life-classic-winning-moves-2021-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "177acc594e6285a6c2c5683b8a6213888e2a3cc82b33bab245e62db0d65306ec",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "The Game of Life",
+  "aliases": [
+    "Game of Life Classic Edition",
+    "The Game of Life Classic"
+  ],
+  "editionLabel": "Winning Moves Classic Edition rules (2021 sheet)",
+  "firstPlayerRule": "Spin the wheel. The high number starts first, and the others take turns going clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the high number, those players spin again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/LIFE_rules_2021.pdf",
+      "title": "The Game of Life — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Playing the Game\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"PLAYING THE GAME Spin the Wheel. High number starts first, others take turns going clockwise.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal spins."
+  ]
+}
