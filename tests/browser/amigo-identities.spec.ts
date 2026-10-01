@@ -16,7 +16,7 @@ const reviewed = [
       "The instructions for the last active player apply during a round after everyone else has quit."
     ],
     "sourceUrl": "https://blog.amigo-spiele.de/content/ap/rule/02103-GB-AmigoRule.pdf",
-    "sourceTitle": "Lama Dice — AMIGO English rules, Version 1.0",
+    "sourceTitle": "Lama Dice: AMIGO English rules, Version 1.0",
     "sourceLocation": "PDF page 1: Setting Up the Game and Playing the Game. PDF page 2: Scoring, final paragraph before The End of the Game, and copyright/version footer; no visible printed page numbers.",
     "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule."
   },
@@ -32,7 +32,7 @@ const reviewed = [
       "A round ends at the end of a turn after any required penalty draws. Playing or throwing the last card does not bypass those draws."
     ],
     "sourceUrl": "https://blog.amigo-spiele.de/content/ap/rule/02353-GB-AmigoRule.pdf",
-    "sourceTitle": "Cabanga! — AMIGO English rules, Version 1.0",
+    "sourceTitle": "Cabanga!: AMIGO English rules, Version 1.0",
     "sourceLocation": "PDF page 1: Setup and Gameplay. PDF page 2: End of a round, including its final paragraph, and copyright/version footer; no visible printed page numbers.",
     "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule."
   },
@@ -49,7 +49,7 @@ const reviewed = [
       "The meditation criterion is used at initial setup. Later rounds and phases use the current figure holder."
     ],
     "sourceUrl": "https://blog.amigo-spiele.de/content/ap/rule/02553-GB-AmigoRule.pdf",
-    "sourceTitle": "Meister Makatsu — AMIGO English rules, Version 1.0",
+    "sourceTitle": "Meister Makatsu: AMIGO English rules, Version 1.0",
     "sourceLocation": "PDF page 1: Setup and How to Play. PDF page 2: Distribute tokens and The next phase, and copyright/version footer; no visible printed page numbers.",
     "houseFallback": "If the criterion cannot select one player, agree to choose randomly. This is a house rule."
   }
@@ -58,7 +58,7 @@ const reviewed = [
     "id": "15828",
     "name": "Schnapp, Land, Fluss!",
     "slug": "schnapp-land-fluss-amigo-en-v4-1-family",
-    "edition": "AMIGO English rules, Version 4.1 — Family Game (2–6 players)",
+    "edition": "AMIGO English rules, Version 4.1, Family Game (2–6 players)",
     "opening": "Family Game: the oldest player reveals the first category. Everyone then plays at the same time.",
     "clarifications": [
       "This answer covers the Family Game for 2–6 players. The manual offers four play options and does not declare an official default. The Family Game can also be played in teams.",
@@ -71,7 +71,7 @@ const reviewed = [
       "Shared endgame wins and the Duel response tie procedure do not break a tie for the Family Game’s opening revealer."
     ],
     "sourceUrl": "https://blog.amigo-spiele.de/content/ap/rule/07930-GB-AmigoRule.pdf",
-    "sourceTitle": "Schnapp, Land, Fluss! — English rules, Version 4.1",
+    "sourceTitle": "Schnapp, Land, Fluss!: English rules, Version 4.1",
     "sourceLocation": "PDF page 1: cover/Contents/Idea of the Game; Family Game → Setup → Playing the Game (opening and later-category handling) → The End of the Game. PDF page 2: Race for Words, Duel, Turbo Round and Version 4.1/copyright footer. Two complete tall pages; no visible printed page numbers.",
     "houseFallback": "If age cannot select one opening revealer, agree to choose that revealer randomly. This is an original house convention; everyone still plays at the same time after the reveal.",
     "pdfPages": [
@@ -93,7 +93,7 @@ const reviewed = [
       "At game end, tied highest card totals share the win. This is separate from choosing the opening revealer."
     ],
     "sourceUrl": "https://blog.amigo-spiele.de/content/ap/rule/03780-GB-AmigoRule.pdf",
-    "sourceTitle": "Speed Cups — English rules, Version 2.0",
+    "sourceTitle": "Speed Cups: English rules, Version 2.0",
     "sourceLocation": "PDF page 2 first: left printed page 2, Preparation → How to Play (own-cups opening tower/first reveal); right printed page 3, arrangement and bell-order correctness. PDF page 1: left printed page 4, unsolved card/last-card-winner continuation/End of the Game/Version 2.0 copyright footer; right printed page 1, cover/components/credits. Original two-page imposed spreads, not PDF-page equals printed-page.",
     "houseFallback": "If the tower race cannot select one opening revealer, agree to choose that revealer randomly. This is an original house convention; everyone still arranges cups at the same time after the reveal.",
     "pdfPages": [
@@ -105,7 +105,7 @@ const reviewed = [
     "id": "433340",
     "name": "Fischfutter",
     "slug": "fischfutter-amigo-en-v1-0-base",
-    "edition": "AMIGO English rules, Version 1.0 — competitive base game (2–5 players)",
+    "edition": "AMIGO English rules, Version 1.0, competitive base game (2–5 players)",
     "opening": "In the competitive base game, the bravest player goes first. Play then proceeds clockwise.",
     "clarifications": [
       "Base-game setup uses 36 double-sided piranha cards, one hand card and five bandage tokens per player, a central draw deck and an initial pond card whose two sides are shown. The four protection cards are only for the cooperative variant; 36 piranha cards plus four protection cards explain the 40-card component total.",
@@ -116,7 +116,7 @@ const reviewed = [
       "In the competitive game, players tied for the most remaining bandages share victory. The optional scoring over several games does not specify a winner-starts or other carry-over opening rule."
     ],
     "sourceUrl": "https://blog.amigo-spiele.de/content/ap/rule/02503-GB-AmigoRule.pdf",
-    "sourceTitle": "Fischfutter — English rules, Version 1.0",
+    "sourceTitle": "Fischfutter: English rules, Version 1.0",
     "sourceLocation": "PDF page 1: cover/Components → Setup → Playing the Game (opening sentence and clockwise continuation) → Attack. PDF page 2: attack/deck continuation; The End of the Game and consecutive-game scoring; Cooperative Variant → Super-Bitey steps 1–4/outcomes A–C; Version 1.0/copyright footer. Two complete tall pages with no visible printed page numbers; circled 1–4 are cooperative example steps.",
     "houseFallback": "If the group cannot agree who is bravest, choose a player randomly. This is an original house convention.",
     "pdfPages": [

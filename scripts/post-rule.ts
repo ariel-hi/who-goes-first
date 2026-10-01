@@ -19,7 +19,7 @@ if (!dryRun) {
   if (live.status !== 200) { console.log(`Skipping: ${url} returned ${live.status}.`); process.exit(0); }
 }
 
-const bluesky = { handle: process.env.BLUESKY_HANDLE?.trim(), password: process.env.BLUESKY_APP_PASSWORD?.trim(), service: process.env.BLUESKY_SERVICE?.trim() || 'https://bsky.social' };
+const bluesky = { handle: process.env.BLUESKY_HANDLE?.trim().replace(/^@/, ''), password: process.env.BLUESKY_APP_PASSWORD?.trim(), service: process.env.BLUESKY_SERVICE?.trim() || 'https://bsky.social' };
 const mastodon = { instance: process.env.MASTODON_INSTANCE?.trim().replace(/\/$/, ''), token: process.env.MASTODON_TOKEN?.trim() };
 const failures: string[] = [];
 

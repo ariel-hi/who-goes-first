@@ -40,7 +40,7 @@ export default function TurnTimer() {
       </div>
       <p className={`tool-result tool-big-number${left === 0 ? ' timer-done' : ''}`} role="timer" aria-live={left === 0 ? 'assertive' : 'off'}>{left === 0 ? 'Time!' : label(left)}</p>
       <div className="timer-bar" aria-hidden="true"><span style={{ width: `${(left / length) * 100}%` }} /></div>
-      <button type="button" className="primary" onClick={running ? restart : start}>{running ? 'Next player — restart' : left === 0 || left === length ? 'Start' : 'Resume'}</button>
+      <button type="button" className="primary" onClick={running ? restart : start}>{running ? 'Next player: restart' : left === 0 || left === length ? 'Start' : 'Resume'}</button>
       {running && <button type="button" className="text-button" onClick={() => setRunning(false)}>Pause</button>}
     </div>
   );

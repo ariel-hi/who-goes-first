@@ -18,9 +18,9 @@ const buyLink = amazonTag && game.rules.length ? amazonSearchUrl(game.name, amaz
 // Only games with several editions need their own chooser page in search results;
 // the directory links single-edition games straight to the rule.
 const namesake = Astro.props.namesake as boolean;
-const label = namesake ? game.origin === 'legacy' ? `${game.name} (BoardGameGeek ${game.bggId})` : `${game.name} (${game.publisher} — ${game.identityScope})` : game.name;
+const label = namesake ? game.origin === 'legacy' ? `${game.name} (BoardGameGeek ${game.bggId})` : `${game.name} (${game.publisher}, ${game.identityScope})` : game.name;
 ---
-<Layout title={game.rules.length > 1 ? `${ruleHeading(label)} Choose your edition` : game.rules.length ? `${label}: starting-player rule — Who Goes First?` : `${label} — Who Goes First?`} description={game.rules.length ? `${ruleHeading(label)} Choose your edition to see the starting-player rule from the publisher’s rulebook.` : `${label} doesn’t have a sourced starting-player rule here yet. Use the fair player picker instead.`} noindex={game.rules.length < 2}>
+<Layout title={game.rules.length > 1 ? `${ruleHeading(label)} Choose your edition` : game.rules.length ? `${label}: starting-player rule | Who Goes First?` : `${label} | Who Goes First?`} description={game.rules.length ? `${ruleHeading(label)} Choose your edition to see the starting-player rule from the publisher’s rulebook.` : `${label} doesn’t have a sourced starting-player rule here yet. Use the fair player picker instead.`} noindex={game.rules.length < 2}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Board games', item: `${site}/board-games/` }, { '@type': 'ListItem', position: 3, name: game.name, item: `${site}/board-games/${game.routeKey}/` }] }).replace(/</g, '\\u003c')} />
   <div class="content-page">
     <a class="back-link" href="/board-games/">← Board game directory</a>
