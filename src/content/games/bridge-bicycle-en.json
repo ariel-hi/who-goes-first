@@ -1,0 +1,36 @@
+{
+  "id": "bridge-bicycle-en",
+  "slug": "bridge-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5dd72e9ee23b414235290c9b73d3d4638701c8779d5072ab0c84417b54e1525f",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Bridge",
+  "aliases": [
+    "Contract Bridge",
+    "Rubber Bridge"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The dealer makes the first call in the auction. After bidding, the defender on the declarer’s left makes the opening lead.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say how the first dealer is chosen; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/bridge",
+      "title": "Bridge — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\", \"Calls\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Bridge page in a browser. \"Calls - Once the cards are dealt, each player picks up their hand and, beginning with the dealer, makes a call (pass, bid, double or redouble).\" \"For the first trick, the defender on the declarer’s left makes the first lead (the opening lead).\"",
+  "uncertainty": [
+    "The page does not say how the first dealer is chosen."
+  ]
+}

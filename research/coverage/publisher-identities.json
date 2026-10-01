@@ -5682,6 +5682,61 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "0519fa90c3488903ebb92243e9782eee2bef3c53f94d6d60f749256730284543"
+    },
+    {
+      "identityId": "game-d0ae4c05-4f83-49ca-88bc-e612268a6004",
+      "routeKey": "game-d0ae4c05-4f83-49ca-88bc-e612268a6004",
+      "name": "Kings Corner",
+      "searchNames": [
+        "King's Corner",
+        "Kings in the Corner"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Kings Corner, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Kings Corner and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "kings-corner-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "kings-corner-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/kings-corner",
+          "sha256": "68df8daca3a7c27178bd6ca45299db61a7258a6495cf72ba437fcc2cc22bc635",
+          "byteCount": 117435,
+          "location": "Quick rules summary"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "09fdda70e06f4eebf3e155e9a40c3f5c2f3dec9737ad884adc74c73b9a8a8fdc"
+    },
+    {
+      "identityId": "game-9dbbfe08-33d3-47f9-9189-9fd5872b3c27",
+      "routeKey": "game-9dbbfe08-33d3-47f9-9189-9fd5872b3c27",
+      "name": "Go Boom",
+      "searchNames": [
+        "Go Boom card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Go Boom, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Go Boom and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "go-boom-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "go-boom-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/go-boom",
+          "sha256": "fd9eff481f30e33d1eb8f62087af151a84924c5bf2b41393f9128981c9e1d66c",
+          "byteCount": 33814,
+          "location": "\"The Deal\" and \"The Play\" sections"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2af5b76c1d49f70fe838899f1cfaeb408d5581e406143300662b66397c12937d"
     }
   ]
 }

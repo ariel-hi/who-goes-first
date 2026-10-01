@@ -1965,6 +1965,44 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "0584e224500cd5daafddf6e3b2fd528b5d7d55b2bcdbe9ad5134aa401099c48b"
+    },
+    {
+      "ruleId": "kings-corner-bicycle-en",
+      "ruleRevision": "8b001e4b26112119250bfb051b08aa671983667f118e531fe3832170dbcb1789",
+      "identityId": "game-d0ae4c05-4f83-49ca-88bc-e612268a6004",
+      "identityRevision": "09fdda70e06f4eebf3e155e9a40c3f5c2f3dec9737ad884adc74c73b9a8a8fdc",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/kings-corner",
+          "sha256": "68df8daca3a7c27178bd6ca45299db61a7258a6495cf72ba437fcc2cc22bc635",
+          "location": "Quick rules summary",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Kings Corner."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "c91815f1b2305b3350fc64418b5170fab416e8a880b7de5c9c1d19f2bf1cecac"
+    },
+    {
+      "ruleId": "go-boom-bicycle-en",
+      "ruleRevision": "e7a81e6f6ff75171040a5fc514c7d53d0a05c171ccd270fb79f717ff11596eb2",
+      "identityId": "game-9dbbfe08-33d3-47f9-9189-9fd5872b3c27",
+      "identityRevision": "2af5b76c1d49f70fe838899f1cfaeb408d5581e406143300662b66397c12937d",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/go-boom",
+          "sha256": "fd9eff481f30e33d1eb8f62087af151a84924c5bf2b41393f9128981c9e1d66c",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Go Boom."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a6c21b66f1350ddea51b1e218296a0c5442b7e1672a3a2ff704e535e7e816830"
     }
   ]
 }
