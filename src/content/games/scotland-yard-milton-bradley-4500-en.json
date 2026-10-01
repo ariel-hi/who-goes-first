@@ -1,0 +1,39 @@
+{
+  "id": "scotland-yard-milton-bradley-4500-en",
+  "slug": "scotland-yard-milton-bradley-4500-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "681f220e199a3deed8ba0b13f970eafcebb297b38aefbac41d53d16581d26091",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Scotland Yard",
+  "aliases": [
+    "Scotland Yard board game"
+  ],
+  "editionLabel": "Milton Bradley English instructions, 4500-X2 (1985)",
+  "firstPlayerRule": "Mr. X plays first. Play then moves from left to right around the board.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose who plays Mr. X; use the picker.",
+  "clarifications": [
+    "One player is Mr. X; all other players are detectives."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/ScotlandYard.PDF",
+      "title": "Scotland Yard — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        4
+      ],
+      "location": "\"Turn Sequence\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Hasbro-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. \"Turn Sequence — For the detectives: Play always moves from left to right around the board with Mr. X playing first.\" Page 1: \"One player is Mr. X. All other players are the detectives.\" Imprint © 1985 by Milton Bradley Co., 4500-X2.",
+  "uncertainty": [
+    "The rules do not say how to choose Mr. X."
+  ]
+}

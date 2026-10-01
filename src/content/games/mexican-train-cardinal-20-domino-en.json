@@ -1,0 +1,40 @@
+{
+  "id": "mexican-train-cardinal-20-domino-en",
+  "slug": "mexican-train-cardinal-20-domino-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d404c85f70c50d1b35a282a253704692360789c635653d08d11fcf3f69bb706d",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Mexican Train",
+  "aliases": [
+    "Mexican Train Dominoes",
+    "Mexican Train dominos"
+  ],
+  "editionLabel": "Cardinal 20 Domino Games instructions, double-twelve set (English)",
+  "firstPlayerRule": "The rules do not say who plays first. The first player opens the station by placing their highest double in the hub; if they have no double, the next player opens it. Play always moves to the left.",
+  "officialTieBreak": "If no one has a double, players draw in turn until one is found.",
+  "houseFallback": "Use the picker to choose the first player.",
+  "clarifications": [
+    "With 2–4 players, each draws 15 dominoes; with 5–6, 12; with 7–8, 11."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://s3.amazonaws.com/cardinalcdn/instructions/T98405_0000_20083278_NBL_IS_R1+_CGI_DOM+Mexican+Train+Dominoes+9593.pdf",
+      "title": "20 Domino Games — Instructions",
+      "publisher": "Cardinal Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Mexican Train\": \"First Player\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched Cardinal’s instruction PDF from its cardinalcdn host and extracted its text with pdftotext. Mexican Train, \"First Player\": \"Open the Mexican Train station by placing your highest double in the center of the hub.\" \"(When the first player has no double, the next player opens the station. If no one has a double, draw in turn until one is found.)\" \"Play always rotates to the left.\"",
+  "uncertainty": [
+    "The rules never say how the first player is chosen."
+  ]
+}
