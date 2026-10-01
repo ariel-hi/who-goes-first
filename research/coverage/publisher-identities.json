@@ -6159,6 +6159,143 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "59380ac94711dc9bb036fac484d6c24752021ccb901fdeaf55c45b4173259799"
+    },
+    {
+      "identityId": "game-547c44b7-85ce-4e76-8e76-feb8ef70cfbc",
+      "routeKey": "game-547c44b7-85ce-4e76-8e76-feb8ef70cfbc",
+      "name": "Phase 10 Dice",
+      "searchNames": [
+        "Phase 10 Dice Game"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Phase 10 Dice, the Mattel game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names Phase 10 Dice and gives its complete English rules.",
+      "publisherReferenceSourceId": "phase-10-dice-mattel-x3028-en-primary",
+      "sources": [
+        {
+          "id": "phase-10-dice-mattel-x3028-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/X3028%20Phase%2010%20Dice%20Game%20IS.pdf",
+          "sha256": "21b0a30795292b5459faa8cf46c8bb66c4c965e9f496e49c71ce61d63d2f640c",
+          "byteCount": 256217,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "9106d72c010d4646e4ac0bf15a85b3996a6cb96350e371f6167dfc8f4d2caad1"
+    },
+    {
+      "identityId": "game-16dadf27-9228-4384-b9f6-e2b5823a40f3",
+      "routeKey": "game-16dadf27-9228-4384-b9f6-e2b5823a40f3",
+      "name": "UNO Spin",
+      "searchNames": [
+        "Uno Spin"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "UNO Spin, the Mattel game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names UNO Spin and gives its complete English rules.",
+      "publisherReferenceSourceId": "uno-spin-mattel-n8367-en-primary",
+      "sources": [
+        {
+          "id": "uno-spin-mattel-n8367-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/N8367-0920.pdf",
+          "sha256": "228365eeaf44396e959965177e848343fbe7562cc5497aeee9a878d662df0f63",
+          "byteCount": 345481,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "1a162386f23a23bc0e1e3e4a556e6b3bc1533d7d8f6c9013cb28c5f89044a769"
+    },
+    {
+      "identityId": "game-ab7c8964-5746-4ee0-addb-f8bfa7139963",
+      "routeKey": "game-ab7c8964-5746-4ee0-addb-f8bfa7139963",
+      "name": "UNO Dare!",
+      "searchNames": [
+        "UNO Dare",
+        "Uno Dare"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "UNO Dare!, the Mattel game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names UNO Dare! and gives its complete English rules.",
+      "publisherReferenceSourceId": "uno-dare-mattel-cdy11-en-primary",
+      "sources": [
+        {
+          "id": "uno-dare-mattel-cdy11-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/CDY11-Eng.pdf",
+          "sha256": "36a663f1405b0d2d77dc09539f75d92dc8d8b23943e9c3a40408038ddcdb551f",
+          "byteCount": 126268,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "73b4e473fb2f544bafe6fd10f2a779a89269389d679bc3348995362f7405f092"
+    },
+    {
+      "identityId": "game-e9756078-1882-446d-b680-791ccf5dc4c0",
+      "routeKey": "game-e9756078-1882-446d-b680-791ccf5dc4c0",
+      "name": "Skip-Bo Junior",
+      "searchNames": [
+        "Skip Bo Junior",
+        "Skip-Bo Jr"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Skip-Bo Junior, the Mattel game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names Skip-Bo Junior and gives its complete English rules.",
+      "publisherReferenceSourceId": "skip-bo-junior-mattel-hhb37-en-primary",
+      "sources": [
+        {
+          "id": "skip-bo-junior-mattel-hhb37-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/HHB37.pdf",
+          "sha256": "e1b0a11fa2673092b7ff2fc32cb4e95369346f78e402bbdebe0ce31a5fc41229",
+          "byteCount": 10355289,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "c8f8b7507b6807e9f010a424efa31ef70b0503b1fae364e355655f053d5667b3"
+    },
+    {
+      "identityId": "game-bb95ccbe-2437-48a8-93bf-8ac8adfbd21b",
+      "routeKey": "game-bb95ccbe-2437-48a8-93bf-8ac8adfbd21b",
+      "name": "Pictionary Card Game",
+      "searchNames": [
+        "Pictionary Cards"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Pictionary Card Game, the Mattel game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names Pictionary Card Game and gives its complete English rules.",
+      "publisherReferenceSourceId": "pictionary-card-game-mattel-t5132-en-primary",
+      "sources": [
+        {
+          "id": "pictionary-card-game-mattel-t5132-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/T5132-0920.pdf",
+          "sha256": "1f4ad9c6798e585d17deb832004117c01324c49d8c97eb127b1da56849bc5d98",
+          "byteCount": 261313,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a8487abd2a5391fdd4b69bece16a6fc99a658fc40a92eef6f2138c943377c832"
     }
   ]
 }

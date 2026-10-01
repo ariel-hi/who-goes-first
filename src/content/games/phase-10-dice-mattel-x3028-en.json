@@ -1,0 +1,37 @@
+{
+  "id": "phase-10-dice-mattel-x3028-en",
+  "slug": "phase-10-dice-mattel-x3028-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "43bbed8703cd329297a9ed5308d2c89da414a768b6b3cc69cf56ce30149dce16",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Phase 10 Dice",
+  "aliases": [
+    "Phase 10 Dice Game"
+  ],
+  "editionLabel": "Mattel English instructions, item X3028 (2011)",
+  "firstPlayerRule": "Each player rolls one of the dice numbered 5 to 10. The highest roll plays first, and so on down to the lowest roll, who plays last.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie, those players roll again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/X3028%20Phase%2010%20Dice%20Game%20IS.pdf",
+      "title": "Phase 10 Dice — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"PLAY: To see who plays first, each player rolls one of the dice numbered 5 to 10. The player with the highest roll plays first, and so on, down to the player with the lowest roll, who plays last.\" © 2011 Mattel.",
+  "uncertainty": [
+    "No tie-break is stated for equal rolls."
+  ]
+}

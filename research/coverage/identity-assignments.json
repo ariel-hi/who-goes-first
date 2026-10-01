@@ -2288,6 +2288,101 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "487672ba1c80ab544d4d670900fd0e4dbb795e66201dc6a8061557b263ef93de"
+    },
+    {
+      "ruleId": "phase-10-dice-mattel-x3028-en",
+      "ruleRevision": "43bbed8703cd329297a9ed5308d2c89da414a768b6b3cc69cf56ce30149dce16",
+      "identityId": "game-547c44b7-85ce-4e76-8e76-feb8ef70cfbc",
+      "identityRevision": "9106d72c010d4646e4ac0bf15a85b3996a6cb96350e371f6167dfc8f4d2caad1",
+      "editionScope": "Mattel English instructions, item X3028 (2011)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/X3028%20Phase%2010%20Dice%20Game%20IS.pdf",
+          "sha256": "21b0a30795292b5459faa8cf46c8bb66c4c965e9f496e49c71ce61d63d2f640c",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for Phase 10 Dice."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "63f82235bb7032ab71df2b773b6ae89d0467315131666370e8e76eb07cb811d7"
+    },
+    {
+      "ruleId": "uno-spin-mattel-n8367-en",
+      "ruleRevision": "51c6ee378f07ec0909f47d62d3cc11e5bcfec5a994120a15bf4234418695f59e",
+      "identityId": "game-16dadf27-9228-4384-b9f6-e2b5823a40f3",
+      "identityRevision": "1a162386f23a23bc0e1e3e4a556e6b3bc1533d7d8f6c9013cb28c5f89044a769",
+      "editionScope": "Mattel English instructions, item N8367 (2008)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/N8367-0920.pdf",
+          "sha256": "228365eeaf44396e959965177e848343fbe7562cc5497aeee9a878d662df0f63",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for UNO Spin."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ad3b65aee0fc9f362ffa0582581bc9c777fa7b0e8f8976f33733b4beb93c46e9"
+    },
+    {
+      "ruleId": "uno-dare-mattel-cdy11-en",
+      "ruleRevision": "10b45a14991ede917cc1b842f78b3be3d951a07a679678d501c6a857c0f788f9",
+      "identityId": "game-ab7c8964-5746-4ee0-addb-f8bfa7139963",
+      "identityRevision": "73b4e473fb2f544bafe6fd10f2a779a89269389d679bc3348995362f7405f092",
+      "editionScope": "Mattel English instructions, item CDY11 (2013)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/CDY11-Eng.pdf",
+          "sha256": "36a663f1405b0d2d77dc09539f75d92dc8d8b23943e9c3a40408038ddcdb551f",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for UNO Dare!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f85df59d67c3fd520b9b9c0729dadc6023f14d8a62a1de0dd8c8b04481d8a8b3"
+    },
+    {
+      "ruleId": "skip-bo-junior-mattel-hhb37-en",
+      "ruleRevision": "ea842ef73f2c72c1faeb88e036d09a9bbd0e5f28ca619aeb4b7b7cff25e6fdc1",
+      "identityId": "game-e9756078-1882-446d-b680-791ccf5dc4c0",
+      "identityRevision": "c8f8b7507b6807e9f010a424efa31ef70b0503b1fae364e355655f053d5667b3",
+      "editionScope": "Mattel English instructions, item HHB37 (2021)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/HHB37.pdf",
+          "sha256": "e1b0a11fa2673092b7ff2fc32cb4e95369346f78e402bbdebe0ce31a5fc41229",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for Skip-Bo Junior."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "6646c41c94fdab3456d5dde853ad8cf17b0a964d75b2a845a44499aa5797b8cf"
+    },
+    {
+      "ruleId": "pictionary-card-game-mattel-t5132-en",
+      "ruleRevision": "8c04f79cc06d113f2cd33de162f06d028ab9aebe356498ff9b06f9dd9102830d",
+      "identityId": "game-bb95ccbe-2437-48a8-93bf-8ac8adfbd21b",
+      "identityRevision": "a8487abd2a5391fdd4b69bece16a6fc99a658fc40a92eef6f2138c943377c832",
+      "editionScope": "Mattel English instructions, item T5132 (2009)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/T5132-0920.pdf",
+          "sha256": "1f4ad9c6798e585d17deb832004117c01324c49d8c97eb127b1da56849bc5d98",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for Pictionary Card Game."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "79f67fec29e381687649b621e3cdcb0d7e857bed153e27cb0b85af7a8a0a0f72"
     }
   ]
 }

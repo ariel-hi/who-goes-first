@@ -1,0 +1,38 @@
+{
+  "id": "skip-bo-junior-mattel-hhb37-en",
+  "slug": "skip-bo-junior-mattel-hhb37-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "ea842ef73f2c72c1faeb88e036d09a9bbd0e5f28ca619aeb4b7b7cff25e6fdc1",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Skip-Bo Junior",
+  "aliases": [
+    "Skip Bo Junior",
+    "Skip-Bo Jr"
+  ],
+  "editionLabel": "Mattel English instructions, item HHB37 (2021)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/HHB37.pdf",
+      "title": "Skip-Bo Junior — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"The youngest player goes first.\" © 2021 Mattel.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
