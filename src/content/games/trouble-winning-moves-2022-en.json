@@ -1,0 +1,38 @@
+{
+  "id": "trouble-winning-moves-2022-en",
+  "slug": "trouble-winning-moves-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "af77a52afdc8249f05ca08499d6280ae1f91d8231a13571e36e787091b407727",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Trouble",
+  "aliases": [
+    "Classic Trouble",
+    "Pop-O-Matic Trouble"
+  ],
+  "editionLabel": "Winning Moves English rules (2022 sheet)",
+  "firstPlayerRule": "Each player pops the Pop-O-Matic die once. The player who pops the highest number goes first, and play continues to their left.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest pop, those players pop again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Trouble_rules_2022.pdf",
+      "title": "Trouble — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Who Starts the Game\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"WHO STARTS THE GAME: Each player rolls the die by pressing down the top of the Pop-O-Matic once, then letting go. The player who pops the highest number goes first. Play continues to the left of the starting player.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal high pops."
+  ]
+}

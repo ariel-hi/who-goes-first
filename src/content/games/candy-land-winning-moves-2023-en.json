@@ -1,0 +1,37 @@
+{
+  "id": "candy-land-winning-moves-2023-en",
+  "slug": "candy-land-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5c4799ee49854a9d97d506c76c6dae6fcfc02e404acb2a86322130a308238978",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Candy Land",
+  "aliases": [
+    "Candyland"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "The youngest child plays first. Other players follow in turn.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Candyland_Rules_2023.pdf",
+      "title": "Candy Land — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"To Start the Game\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"The youngest child should play first. They draw the top card from the pile and move from ‘Start’ to the first matching colored space along the path. Other players follow in turn.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "parcheesi-winning-moves-2023-en",
+  "slug": "parcheesi-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d057d9a39251f0ab73214bba9e0e45ad6a99b79f93e362e140703b7e25441c56",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Parcheesi",
+  "aliases": [
+    "Parcheesi Royal Edition",
+    "Pachisi"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "All players roll two dice. The highest roller starts, then play continues to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Parcheesi_Rules_2023.pdf",
+      "title": "Parcheesi — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of \"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"All players roll two dice (use your dice cup if you wish.) Highest roller starts. Play then continues to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal high rolls."
+  ]
+}

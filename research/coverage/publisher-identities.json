@@ -4503,6 +4503,118 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "db67aa96051fd5ef44ad577e8a4eb310cb8af869663a9fd86ffea3fb194ac481"
+    },
+    {
+      "identityId": "game-8aa1338a-9e21-4fcd-a679-750eb464cbf9",
+      "routeKey": "game-8aa1338a-9e21-4fcd-a679-750eb464cbf9",
+      "name": "Hi-Ho! Cherry-O",
+      "searchNames": [
+        "Hi Ho Cherry O",
+        "Hi-Ho Cherry-O"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Hi-Ho! Cherry-O, the cherry-picking spinner game for young children, as sold by Winning Moves Games and described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted rules PDF, listed on winning-moves.com/rules/, names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "hi-ho-cherry-o-winning-moves-2020-en-primary",
+      "sources": [
+        {
+          "id": "hi-ho-cherry-o-winning-moves-2020-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/HiHo_Rules_2020.pdf",
+          "sha256": "97c4d06ddecc669011f9d9a0d68a4e13b3c59a6bb9ff1750184255a651644426",
+          "byteCount": 578157,
+          "location": "\"Gameplay\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e9aa7acd48c8557e180819661ec0f3638f3d4437bc8e768d46ccba8365357038"
+    },
+    {
+      "identityId": "game-ab144c58-c63e-42ac-958f-a4cee2086ae7",
+      "routeKey": "game-ab144c58-c63e-42ac-958f-a4cee2086ae7",
+      "name": "Parcheesi",
+      "searchNames": [
+        "Parcheesi Royal Edition",
+        "Pachisi"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Parcheesi Royal Edition, the cross-and-circle race game, as sold by Winning Moves Games and described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted rules PDF, listed on winning-moves.com/rules/, names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "parcheesi-winning-moves-2023-en-primary",
+      "sources": [
+        {
+          "id": "parcheesi-winning-moves-2023-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/Parcheesi_Rules_2023.pdf",
+          "sha256": "fb22cf6bf2b73c2c531aabd1c1dc92b2ea00510f29e06fb4fde33c1b31096590",
+          "byteCount": 550470,
+          "location": "Start of \"How to Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "bebe89d09b2d8befc7d04f12589625d2c3c6f9cdcf0b9421cf9058668ca7cb5e"
+    },
+    {
+      "identityId": "game-734a4df8-d42a-4469-b9f0-e7a1f6222986",
+      "routeKey": "game-734a4df8-d42a-4469-b9f0-e7a1f6222986",
+      "name": "Rack-O",
+      "searchNames": [
+        "Racko",
+        "Rack O"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Rack-O, the card-rack ordering game, as sold by Winning Moves Games and described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted rules PDF, listed on winning-moves.com/rules/, names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "rack-o-winning-moves-2023-en-primary",
+      "sources": [
+        {
+          "id": "rack-o-winning-moves-2023-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/RackO_Rules_2023.pdf",
+          "sha256": "779955c919511f07312b3c81b27bb07660cf04caf683b25af903a7c718f10814",
+          "byteCount": 1111759,
+          "location": "\"Deal\" and \"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "4f23a05f86e8219e14477612680a7c84d0eb7a73e9763b4e79282b8b5a762a96"
+    },
+    {
+      "identityId": "game-f50cfeee-952d-4919-b913-ea4af291bb2a",
+      "routeKey": "game-f50cfeee-952d-4919-b913-ea4af291bb2a",
+      "name": "Waterworks",
+      "searchNames": [
+        "Classic Waterworks",
+        "Water Works"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Waterworks, the pipe-building card game, as sold by Winning Moves Games and described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted rules PDF, listed on winning-moves.com/rules/, names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "waterworks-winning-moves-2023-en-primary",
+      "sources": [
+        {
+          "id": "waterworks-winning-moves-2023-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/WaterWorks_Rules_2023.pdf",
+          "sha256": "19f9f9033403f276e2770aaa9eb7069d10b36dbe4983f30e0a6ed5cf4d8612ac",
+          "byteCount": 449265,
+          "location": "Start of \"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "caf1e4dc150360d95d23f77b398e9a7e8b68eded1a47f4cb7883a52f5b590c7d"
     }
   ]
 }

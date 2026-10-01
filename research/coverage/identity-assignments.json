@@ -1148,6 +1148,82 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "9b86aed6aa5aaacd05fcda25914b398dd62bcbbc8711fecfd3b23bada66d4cb1"
+    },
+    {
+      "ruleId": "hi-ho-cherry-o-winning-moves-2020-en",
+      "ruleRevision": "d234a238dadb327da7051fb70a0db4d0ebef168d34caa582b735f5fd6a36a033",
+      "identityId": "game-8aa1338a-9e21-4fcd-a679-750eb464cbf9",
+      "identityRevision": "e9aa7acd48c8557e180819661ec0f3638f3d4437bc8e768d46ccba8365357038",
+      "editionScope": "Winning Moves English rules (2020 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/HiHo_Rules_2020.pdf",
+          "sha256": "97c4d06ddecc669011f9d9a0d68a4e13b3c59a6bb9ff1750184255a651644426",
+          "location": "\"Gameplay\"",
+          "correspondence": "The rule cites this same Winning Moves Games document for Hi-Ho! Cherry-O."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "08ba48461d21a4e0927f46bb7c4a7b83d52ef1923eb5d78055d40d80533e59fc"
+    },
+    {
+      "ruleId": "parcheesi-winning-moves-2023-en",
+      "ruleRevision": "d057d9a39251f0ab73214bba9e0e45ad6a99b79f93e362e140703b7e25441c56",
+      "identityId": "game-ab144c58-c63e-42ac-958f-a4cee2086ae7",
+      "identityRevision": "bebe89d09b2d8befc7d04f12589625d2c3c6f9cdcf0b9421cf9058668ca7cb5e",
+      "editionScope": "Winning Moves English rules (2023 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/Parcheesi_Rules_2023.pdf",
+          "sha256": "fb22cf6bf2b73c2c531aabd1c1dc92b2ea00510f29e06fb4fde33c1b31096590",
+          "location": "Start of \"How to Play\"",
+          "correspondence": "The rule cites this same Winning Moves Games document for Parcheesi."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d1824acbb8bbdb48f7d4e466b2042d363ec0187c22a3693a21228401dc8268ce"
+    },
+    {
+      "ruleId": "rack-o-winning-moves-2023-en",
+      "ruleRevision": "48606cf6a2e1aac59fdb5f49fef5469d2404e24b6de4a457b1e0d85d221ac665",
+      "identityId": "game-734a4df8-d42a-4469-b9f0-e7a1f6222986",
+      "identityRevision": "4f23a05f86e8219e14477612680a7c84d0eb7a73e9763b4e79282b8b5a762a96",
+      "editionScope": "Winning Moves English rules (2023 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/RackO_Rules_2023.pdf",
+          "sha256": "779955c919511f07312b3c81b27bb07660cf04caf683b25af903a7c718f10814",
+          "location": "\"Deal\" and \"Play\"",
+          "correspondence": "The rule cites this same Winning Moves Games document for Rack-O."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ad6f45502abf6a8e331c4613d850cfd8ca6947cfb9b281eba795a46931f52bed"
+    },
+    {
+      "ruleId": "waterworks-winning-moves-2023-en",
+      "ruleRevision": "3b2bf971acd8e4772ff8bacfec823b38793f751220b273f41cecde02085d88c7",
+      "identityId": "game-f50cfeee-952d-4919-b913-ea4af291bb2a",
+      "identityRevision": "caf1e4dc150360d95d23f77b398e9a7e8b68eded1a47f4cb7883a52f5b590c7d",
+      "editionScope": "Winning Moves English rules (2023 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/WaterWorks_Rules_2023.pdf",
+          "sha256": "19f9f9033403f276e2770aaa9eb7069d10b36dbe4983f30e0a6ed5cf4d8612ac",
+          "location": "Start of \"Play\"",
+          "correspondence": "The rule cites this same Winning Moves Games document for Waterworks."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "509a9ae3a2ab0c302b9bcb0e3e9f1da49753274fc853cc73be77defd6bcc6ec6"
     }
   ]
 }

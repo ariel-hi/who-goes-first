@@ -1,0 +1,38 @@
+{
+  "id": "rack-o-winning-moves-2023-en",
+  "slug": "rack-o-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "48606cf6a2e1aac59fdb5f49fef5469d2404e24b6de4a457b1e0d85d221ac665",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Rack-O",
+  "aliases": [
+    "Racko",
+    "Rack O"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "Cut for the deal; the low card deals first. Play begins with the player to the left of the dealer.",
+  "officialTieBreak": null,
+  "houseFallback": "If players cut the same low card, cut again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/RackO_Rules_2023.pdf",
+      "title": "Rack-O — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Deal\" and \"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 2: \"Cut for the deal. Low card deals first.\" \"Players take turns, beginning with the player seated to the left of the dealer.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal low cuts."
+  ]
+}

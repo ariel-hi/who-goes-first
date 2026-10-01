@@ -1,0 +1,37 @@
+{
+  "id": "flinch-winning-moves-2022-en",
+  "slug": "flinch-winning-moves-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "bb40011d218dcf7c94d00549248b7811c0a9c703bd9e628f83c322952e45e6a2",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Flinch",
+  "aliases": [
+    "Flinch card game"
+  ],
+  "editionLabel": "Winning Moves English rules (2022 sheet)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Flinch_Rules_2022.pdf",
+      "title": "Flinch — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"How to Play\" step 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 2: \"1. The youngest player goes first.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "aggravation-winning-moves-2023-en",
+  "slug": "aggravation-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "b538a7f61356a1bcd2987935e9fe1ee665847cf7692bff65456d50ed9e63315b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Aggravation",
+  "aliases": [
+    "Aggravation board game"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "The player rolling the highest number goes first. Play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Aggravation_Rules_2023.pdf",
+      "title": "Aggravation — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of \"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"The player rolling the highest number goes first. Play passes to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal high rolls."
+  ]
+}

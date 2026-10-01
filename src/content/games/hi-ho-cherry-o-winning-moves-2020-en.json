@@ -1,0 +1,38 @@
+{
+  "id": "hi-ho-cherry-o-winning-moves-2020-en",
+  "slug": "hi-ho-cherry-o-winning-moves-2020-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d234a238dadb327da7051fb70a0db4d0ebef168d34caa582b735f5fd6a36a033",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Hi-Ho! Cherry-O",
+  "aliases": [
+    "Hi Ho Cherry O",
+    "Hi-Ho Cherry-O"
+  ],
+  "editionLabel": "Winning Moves English rules (2020 sheet)",
+  "firstPlayerRule": "The youngest player goes first, then play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/HiHo_Rules_2020.pdf",
+      "title": "Hi-Ho! Cherry-O — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Gameplay\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 2: \"The youngest player will go first and then play passes to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

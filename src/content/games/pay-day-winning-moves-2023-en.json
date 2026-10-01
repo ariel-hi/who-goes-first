@@ -1,0 +1,37 @@
+{
+  "id": "pay-day-winning-moves-2023-en",
+  "slug": "pay-day-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "4657777777c642d450e2f86e086b7dab504b25438cdaf5c87f2ce52d1de36e10",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pay Day",
+  "aliases": [
+    "PayDay"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "Pick a player to go first. Play passes to the left. The Banker and Loan Record Keeper also play.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/PAYDAYRULES-SQ-2023.pdf",
+      "title": "Pay Day — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 6",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"6. Pick a player to go first. (The Banker and Record Keeper both play.) Play passes to the left around the table.\"",
+  "uncertainty": [
+    "The rules do not say how to pick the first player."
+  ]
+}

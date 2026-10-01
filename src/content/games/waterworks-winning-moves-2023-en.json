@@ -1,0 +1,38 @@
+{
+  "id": "waterworks-winning-moves-2023-en",
+  "slug": "waterworks-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "3b2bf971acd8e4772ff8bacfec823b38793f751220b273f41cecde02085d88c7",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Waterworks",
+  "aliases": [
+    "Classic Waterworks",
+    "Water Works"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "Select a player to play first. Play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/WaterWorks_Rules_2023.pdf",
+      "title": "Waterworks — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of \"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"Select a player who will play first. Play passes to the left.\"",
+  "uncertainty": [
+    "The rules do not say how to select the first player."
+  ]
+}

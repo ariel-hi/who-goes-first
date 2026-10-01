@@ -1,0 +1,37 @@
+{
+  "id": "pretty-pretty-princess-winning-moves-2023-en",
+  "slug": "pretty-pretty-princess-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "b6fd31934333c7235973338a532b1d8fdf955b41ed29a2d15bd7fbc067b9dc00",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pretty Pretty Princess",
+  "aliases": [
+    "Pretty Pretty Princess game"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "Each player spins the spinner. Whoever spins the highest number goes first, and play continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest spin, those players spin again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/PPP_Rules_2023.pdf",
+      "title": "Pretty Pretty Princess — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Start of \"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 2: \"Each player spins the spinner. Whoever spins the highest number goes first. Play continues clockwise.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal high spins."
+  ]
+}

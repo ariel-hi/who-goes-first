@@ -1,0 +1,35 @@
+{
+  "id": "uncle-wiggily-winning-moves-2022-en",
+  "slug": "uncle-wiggily-winning-moves-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d0dfaeaf4b650675a50e908b661818812fd4a569fa2441b869a3d614aa69e2b8",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Uncle Wiggily",
+  "aliases": [
+    "Uncle Wiggily game"
+  ],
+  "editionLabel": "Winning Moves English rules (2022 sheet)",
+  "firstPlayerRule": "Choose one player to go first. The rules recommend choosing the youngest player.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/UnWig_Rules_2022.pdf",
+      "title": "Uncle Wiggily — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"Choose one player to go first. We recommend that you choose the youngest player to go first.\"",
+  "uncertainty": []
+}
