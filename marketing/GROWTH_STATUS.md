@@ -4,15 +4,17 @@
 
 The owner asked for an overnight push on visibility and discovery, which supersedes the earlier pause on new utility pages below.
 
-- **New search entry points:** `/dice-roller/`, `/random-number-generator/`, `/turn-order-generator/`, `/score-keeper/` (saves to `wgf:scores:v1`, noted in Privacy) and `/turn-timer/`. All are in the tools hub, nav, sitemap, `llms.txt` and the Pinterest queue, and every rule page links to them.
-- **About 90 new sourced rules** for high-search classics: Candy Land, Chutes and Ladders, Sorry!, Trouble, The Game of Life, Connect 4, Jenga, Stratego, Checkers, Othello, Spades, Hearts, Euchre, Cribbage, Rummy, Phase 10, Skip-Bo, Yahtzee-style dice games and many PlayMonster and Winning Moves family titles. The sources are publisher PDFs or pages (Hasbro, Winning Moves, PlayMonster, Bicycle, Mattel, Gamewright, Catan, Cardinal, ACF, World Othello Federation).
-- **New theme hubs:** highest roll, dealer's left, and silly contests (42 rules).
-- **AI and search discovery:** `/llms.txt`, WebApplication structured data on the tool pages, and rule titles that now say "Official rule & rulebook". Search Console data showed rule pages appearing for "<game> rules/rulebook" queries.
-- **Search Console (owner account, Chrome profile u/1):** submitted the four child sitemaps and requested indexing for 10 key URLs. All sitemaps still show "Couldn't fetch", although the live files return 200 with valid XML. Sep 24–28 totals: 207 impressions, 2 clicks, average position 7.4.
-- **Pinterest:** the @whogoesfirst business account already auto-publishes `/pinterest.xml` to "Board Game Night Ideas". The drip is now 3 pins a day, from a queue of about 110 items.
-- **Bluesky:** posted from @whogoesfirst.fun manually. The daily bot is still blocked on the `BLUESKY_APP_PASSWORD` secret.
+- **157 new sourced starting rules** (catalog 1,143 → 1,300), focused on high-search classics and family games: Candy Land, Chutes and Ladders, Sorry! (Hasbro and Winning Moves classic editions), Trouble, The Game of Life (current, classic and Junior), Monopoly Junior/1980s/Ultimate Banking, Risk Junior/1959, Connect 4, Jenga, Stratego, Mouse Trap, Trivial Pursuit, Checkers, Othello, Dominoes, Mexican Train, Memory, 30+ Bicycle card games (Spades, Hearts, Euchre, Cribbage, Rummy, Gin, Go Fish, Crazy Eights, Bridge, Pinochle, Canasta, Presidents, LCR…), Phase 10, Skip-Bo, many UNO variants (No Mercy, Attack, Flip-family, Party, Teams, Giant), DOS, and ~45 PlayMonster and ~20 Winning Moves titles. Sources are publisher PDFs/pages (Hasbro, Winning Moves, PlayMonster, Bicycle, Mattel, Gamewright, Catan, Cardinal, Ravensburger, ACF, World Othello Federation).
+- **New tools (search entry points):** dice roller, random number generator, turn order generator, score keeper (`wgf:scores:v1`, noted in Privacy), turn timer, random letter generator (Scattergories) and draw-a-card. Linked from the tools hub, nav, sitemap, `llms.txt`, the Pinterest queue and every rule page; roll- and card-draw rules link the matching tool.
+- **New theme hubs:** highest roll, dealer's left, silly contests (42), everyone plays at once (30).
+- **Share images:** every tool, theme hub and publisher hub now has its own 1200×630 card instead of the generic image.
+- **AI/search discovery:** `/llms.txt`, WebApplication structured data on tools, rule titles say "Official rule & rulebook" (Search Console showed rulebook-intent queries).
+- **Search Console (owner account, Chrome `u/1`):** submitted the four child sitemaps and requested indexing for 10 key URLs. The daily upkeep job on Oct 1 counted 329 indexed of 438 inspected (75%).
+- **Pinterest:** @whogoesfirst already auto-publishes `/pinterest.xml` to "Board Game Night Ideas"; the drip is now 3 pins/day from a ~120-item queue.
+- **Bluesky (@whogoesfirst.fun, posted manually):** dice roller, silly-rules roundup, letter generator, Sorry! edition differences; followed back four board-game accounts.
+- **Publisher outreach drafts** regenerated (102 publishers) in `PUBLISHER_OUTREACH.md`.
 
-Still needs the owner: the Bluesky app password secret, Search Console **Full** permission for the service account (so the bot can submit sitemaps), and the browser CI suite, which times out at 60 minutes. A fix task for the CI suite was offered.
+Still needs the owner: the `BLUESKY_APP_PASSWORD` secret (daily bot), Search Console **Full** permission for the service account (bot sitemap submission), and the browser CI suite that times out at 60 minutes (a fix task was offered).
 
 ## Priority after the 2026-09-27 site review
 
