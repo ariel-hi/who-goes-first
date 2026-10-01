@@ -22,6 +22,7 @@ const TOOLS = [
   { id: 'random-number', path: '/random-number-generator/', heading: 'Pick a random number, any range', body: 'A fair random number from 1 to 10, 1 to 100 or any range you like. Great for picking a player or seat.', campaign: 'tool_random_number' },
   { id: 'score-keeper', path: '/score-keeper/', heading: 'Lost the score pad? Keep score online', body: 'A free scoreboard for board and card games. Add players, tap to score, and see who is winning.', campaign: 'tool_score_keeper' },
   { id: 'turn-timer', path: '/turn-timer/', heading: 'Lost the sand timer? Use a turn timer', body: 'A free countdown for board and party games, from 30 seconds to 3 minutes. Tap to restart for the next player.', campaign: 'tool_turn_timer' },
+  { id: 'random-letter', path: '/random-letter-generator/', heading: 'Random letter generator for Scattergories', body: 'Lost the letter die? Draw a fair random letter, skip the hard ones, and avoid repeats. Free on any phone.', campaign: 'tool_random_letter' },
   { id: 'printable', path:'/printable-game-night/', heading: 'Printable game night kit', body: 'Print free who-goes-first extras and keep them in the game box for your next game night.', campaign: 'printable' },
 ];
 

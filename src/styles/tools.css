@@ -1,4 +1,6 @@
 /* Standalone decision tools: finger chooser, coin flip, team generator, rock paper scissors, dice, numbers, turn order, score keeper. */
+.letter-tool .tool-row{flex-wrap:wrap;justify-content:center}
+.letter-tool label{display:flex;align-items:center;gap:6px;min-height:44px;font-size:15px}
 .timer-bar{height:8px;border-radius:4px;background:var(--soft);overflow:hidden;margin:0 0 18px}
 .timer-bar span{display:block;height:100%;background:var(--green);transition:width .2s linear}
 .timer-done{color:#b3261e}

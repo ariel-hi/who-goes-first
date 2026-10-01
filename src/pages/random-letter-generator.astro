@@ -1,0 +1,13 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import RandomLetter from '../components/tools/RandomLetter';
+---
+<ToolPage current="/random-letter-generator/" title="Random Letter Generator for Scattergories & Word Games — Who Goes First?" description="Pick a random letter for Scattergories, Categories or any word game. Skip hard letters like Q, X and Z, and avoid repeats. Free, instant, no app." heading="Random letter generator" lede="Lost the letter die? Draw a fair random letter.">
+  <RandomLetter client:load />
+  <Fragment slot="about">
+    <h2>For Scattergories and word games</h2>
+    <p>Pick a letter, start the <a href="/turn-timer/">timer</a>, and everyone writes an answer for each category that starts with that letter. “Skip Q, U, V, X, Y, Z” leaves out the letters that are hardest to play, and “No repeats” keeps a letter from coming up twice in one game.</p>
+    <h2>Is it fair?</h2>
+    <p>Each remaining letter has exactly the same chance, using your browser’s secure randomness. Keep score with the <a href="/score-keeper/">score keeper</a>.</p>
+  </Fragment>
+</ToolPage>

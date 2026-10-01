@@ -14,7 +14,7 @@ const canonical = new URL(canonicalPath, settings.url).href;
 const path = Astro.url.pathname;
 const localPreview = import.meta.env.DEV && !settings.production;
 // The picker and standalone tools offer home-screen install; content pages do not.
-const installable = ['/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/'].includes(path) || path.startsWith('/methods/');
+const installable = ['/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/', '/random-letter-generator/'].includes(path) || path.startsWith('/methods/');
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
 const indexed = settings.production && !noindex;
 const imageUrl = new URL(image, settings.url).href;
@@ -65,7 +65,7 @@ const structuredData = {
     <a class="skip-link" href="#main" tabindex="0">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="/" aria-label="Who Goes First? Home"><svg class="brand-mark" aria-hidden="true" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="8"/><g fill="#fafaf7"><circle cx="10" cy="10" r="2.2"/><circle cx="22" cy="10" r="2.2"/><circle cx="16" cy="16" r="2.2"/><circle cx="10" cy="22" r="2.2"/><circle cx="22" cy="22" r="2.2"/></g></svg>Who goes first?</a>
-      <nav class="site-nav" aria-label="Main navigation"><a href="/board-games/" aria-current={path.startsWith('/board-games/') ? 'page' : undefined}>All games</a><a href={gamesPath} aria-current={path.startsWith('/games/') || path.startsWith('/dev/games/') || path.startsWith('/dev/rules/') ? 'page' : undefined}>Starting rules</a><a href="/tools/" aria-current={path === '/tools/' || ['/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/'].includes(path) || path.startsWith('/methods/') ? 'page' : undefined}>Tools</a><a href="/about/" aria-current={path === '/about/' ? 'page' : undefined}>About</a></nav>
+      <nav class="site-nav" aria-label="Main navigation"><a href="/board-games/" aria-current={path.startsWith('/board-games/') ? 'page' : undefined}>All games</a><a href={gamesPath} aria-current={path.startsWith('/games/') || path.startsWith('/dev/games/') || path.startsWith('/dev/rules/') ? 'page' : undefined}>Starting rules</a><a href="/tools/" aria-current={path === '/tools/' || ['/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/', '/random-letter-generator/'].includes(path) || path.startsWith('/methods/') ? 'page' : undefined}>Tools</a><a href="/about/" aria-current={path === '/about/' ? 'page' : undefined}>About</a></nav>
       <ThemeToggle />
     </header>
     <main id="main" tabindex="-1"><slot /></main>
