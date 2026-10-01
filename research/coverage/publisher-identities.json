@@ -4725,6 +4725,61 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "5761847457929fe4f17c6db22ccc0258ff92bd02ab0100c1a0ed211f44d5808a"
+    },
+    {
+      "identityId": "game-4708bfb8-e66e-4979-a317-51f165d3968e",
+      "routeKey": "game-4708bfb8-e66e-4979-a317-51f165d3968e",
+      "name": "Rook",
+      "searchNames": [
+        "Rook card game",
+        "Deluxe Rook"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Rook, the 57-card trick-taking game sold by Winning Moves Games, as described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted Rook rules PDF, listed on winning-moves.com/rules/, names the game and gives its complete English rules.",
+      "publisherReferenceSourceId": "rook-winning-moves-2021-en-primary",
+      "sources": [
+        {
+          "id": "rook-winning-moves-2021-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/Rook_Rules_2021.pdf",
+          "sha256": "e621ce62dea8bbb48da764628cb0d3c88f9cb3dd22d55dfc5938fa32e8fa5708",
+          "byteCount": 747514,
+          "location": "Partnership Rook: \"Bidding\" and \"First Lead\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d9b77cb36c65abfd1d0726083435ccffcb0194cb9f0cd452dcae85989d6b88d9"
+    },
+    {
+      "identityId": "game-fe9d3130-98f5-4ff6-9ed8-3675c3bb0acd",
+      "routeKey": "game-fe9d3130-98f5-4ff6-9ed8-3675c3bb0acd",
+      "name": "Clue Suspect",
+      "searchNames": [
+        "Clue Suspect Card Game"
+      ],
+      "publisher": "Winning Moves Games",
+      "identityScope": "Clue Suspect, the Clue-themed deduction card game sold by Winning Moves Games, as described in its English rules PDF.",
+      "identityEvidence": "Winning Moves Games' hosted Clue Suspect rules PDF, listed on winning-moves.com/rules/, names the game and gives its complete English rules.",
+      "publisherReferenceSourceId": "clue-suspect-winning-moves-2023-en-primary",
+      "sources": [
+        {
+          "id": "clue-suspect-winning-moves-2023-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://winning-moves.com/images/ClueSuspect_Rules_2023.pdf",
+          "sha256": "7be0a20ab0558af0b73bb3bac24cd53363584b8a46bccaebb9943aa789a78cd1",
+          "byteCount": 3123754,
+          "location": "End of setup, before \"How to Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d715cd36c79ea684e122815f1c416cf3e0f6578e3a8da9b7190a37aa4e86c627"
     }
   ]
 }

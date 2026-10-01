@@ -1,0 +1,38 @@
+{
+  "id": "rook-winning-moves-2021-en",
+  "slug": "rook-winning-moves-2021-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "c7808571d74ccdbaab1f6c4b85b27c96e2e4e0a61aac38d9e5b9f24c074fac31",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Rook",
+  "aliases": [
+    "Rook card game",
+    "Deluxe Rook"
+  ],
+  "editionLabel": "Winning Moves English rules (2021 sheet)",
+  "firstPlayerRule": "The player at the dealer’s left starts the bidding. The player to the left of the dealer also makes the first lead, whether or not they won the bid.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules page does not say how the first dealer is chosen; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Rook_Rules_2021.pdf",
+      "title": "Rook — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        7
+      ],
+      "location": "Partnership Rook: \"Bidding\" and \"First Lead\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 7: \"the bidding begins with the player at dealer’s left and continues clockwise around the table.\" \"First Lead: The player to the left of the dealer (who may or may not be the highest bidder) makes the initial lead and play begins.\"",
+  "uncertainty": [
+    "How the first dealer is chosen is not stated in the cited section."
+  ]
+}

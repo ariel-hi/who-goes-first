@@ -1300,6 +1300,44 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "f7afb74e4c7986bd190944d09e5b8acddff31405ee57289e7adef64bb797e4c6"
+    },
+    {
+      "ruleId": "rook-winning-moves-2021-en",
+      "ruleRevision": "c7808571d74ccdbaab1f6c4b85b27c96e2e4e0a61aac38d9e5b9f24c074fac31",
+      "identityId": "game-4708bfb8-e66e-4979-a317-51f165d3968e",
+      "identityRevision": "d9b77cb36c65abfd1d0726083435ccffcb0194cb9f0cd452dcae85989d6b88d9",
+      "editionScope": "Winning Moves English rules (2021 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/Rook_Rules_2021.pdf",
+          "sha256": "e621ce62dea8bbb48da764628cb0d3c88f9cb3dd22d55dfc5938fa32e8fa5708",
+          "location": "Partnership Rook: \"Bidding\" and \"First Lead\"",
+          "correspondence": "The rule cites this same Winning Moves Games document for Rook."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "420cf860cf87a5ad6a373a173d0d68005370f401d445fa0d9a3622e1dcb935ea"
+    },
+    {
+      "ruleId": "clue-suspect-winning-moves-2023-en",
+      "ruleRevision": "4da217d81d51ad48419c6039f63bb2324b05d5be0ff4d86c3810986af042018e",
+      "identityId": "game-fe9d3130-98f5-4ff6-9ed8-3675c3bb0acd",
+      "identityRevision": "d715cd36c79ea684e122815f1c416cf3e0f6578e3a8da9b7190a37aa4e86c627",
+      "editionScope": "Winning Moves English rules (2023 sheet)",
+      "evidence": [
+        {
+          "url": "https://winning-moves.com/images/ClueSuspect_Rules_2023.pdf",
+          "sha256": "7be0a20ab0558af0b73bb3bac24cd53363584b8a46bccaebb9943aa789a78cd1",
+          "location": "End of setup, before \"How to Play\"",
+          "correspondence": "The rule cites this same Winning Moves Games document for Clue Suspect."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f2ea72fd3a8c521a412dbfc889b0e01c987338242be508b44390ba2753fb2fc9"
     }
   ]
 }

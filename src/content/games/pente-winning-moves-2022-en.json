@@ -1,0 +1,37 @@
+{
+  "id": "pente-winning-moves-2022-en",
+  "slug": "pente-winning-moves-2022-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "33467fedfa3e68a29f7a698a2ca16f98893aa093c974384d14167f5a5d83eea6",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pente",
+  "aliases": [
+    "Deluxe Pente"
+  ],
+  "editionLabel": "Winning Moves English rules (2022 sheet)",
+  "firstPlayerRule": "Use a method of chance to decide who plays first in the first game; that player places the first stone on the center point. In later games, the loser of the last game moves first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The rules note that the first player has a slight advantage."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/Pente_Rules_2022a.pdf",
+      "title": "Pente — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Rule 4 and the note on first-player advantage",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"The first player (chosen by chance) begins the game by playing one stone on the center point.\" \"Therefore some method of chance should be used to decide who plays first in the first game. In following games, the loser of the last game moves first.\"",
+  "uncertainty": []
+}

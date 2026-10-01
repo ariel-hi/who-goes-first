@@ -1,0 +1,37 @@
+{
+  "id": "clue-suspect-winning-moves-2023-en",
+  "slug": "clue-suspect-winning-moves-2023-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "4da217d81d51ad48419c6039f63bb2324b05d5be0ff4d86c3810986af042018e",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Clue Suspect",
+  "aliases": [
+    "Clue Suspect Card Game"
+  ],
+  "editionLabel": "Winning Moves English rules (2023 sheet)",
+  "firstPlayerRule": "The oldest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the oldest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/ClueSuspect_Rules_2023.pdf",
+      "title": "Clue Suspect — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "End of setup, before \"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted rules PDF listed on winning-moves.com/rules/ and extracted its text with pdftotext. PDF page 1: \"Time to start investigating! The oldest player goes first.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
