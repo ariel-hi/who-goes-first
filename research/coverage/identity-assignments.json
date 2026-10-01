@@ -1357,6 +1357,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "0f0b9733b70343cf6d67de9966d39be7de0b61414679739b1b4b5830abbecb50"
+    },
+    {
+      "ruleId": "hisss-gamewright-en",
+      "ruleRevision": "517ebf1a0b54f3d2b1121e94a58e092aa74b2cb1e6204cd2a2d13c12c67dcc0f",
+      "identityId": "game-b666f441-9848-4fec-b685-0aa963b30b3b",
+      "identityRevision": "f704e475963065e2c84a994304cfbf92ea44bfcbc9ac5c25624ff1953850af01",
+      "editionScope": "Gamewright English rules",
+      "evidence": [
+        {
+          "url": "https://gamewright.com/pdfs/Rules/Hisss-RULES.pdf",
+          "sha256": "fe36f0cfb2dae88f9b3f8cb3b50b23c1b5fa4cc7da4905c7e19114cbceb57984",
+          "location": "Start of play",
+          "correspondence": "The rule cites this same Gamewright document for Hisss."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "c87fb7d9875a892d59a4dd5c530bf7248cb69c03581314009982026cb39bd6ca"
     }
   ]
 }

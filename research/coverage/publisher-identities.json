@@ -4808,6 +4808,34 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "df77adbab677039beb1cd3c837c6bfb1bc1f6962733ffca3b16d1b28cf8379dc"
+    },
+    {
+      "identityId": "game-b666f441-9848-4fec-b685-0aa963b30b3b",
+      "routeKey": "game-b666f441-9848-4fec-b685-0aa963b30b3b",
+      "name": "Hisss",
+      "searchNames": [
+        "Hiss",
+        "Hisss card game"
+      ],
+      "publisher": "Gamewright",
+      "identityScope": "Hisss, the snake-building card game for young children sold by Gamewright, as described in its English rules PDF.",
+      "identityEvidence": "Gamewright's hosted Hisss rules PDF names the game and gives its complete English rules for building snakes from head, body and tail cards.",
+      "publisherReferenceSourceId": "hisss-gamewright-en-primary",
+      "sources": [
+        {
+          "id": "hisss-gamewright-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://gamewright.com/pdfs/Rules/Hisss-RULES.pdf",
+          "sha256": "fe36f0cfb2dae88f9b3f8cb3b50b23c1b5fa4cc7da4905c7e19114cbceb57984",
+          "byteCount": 148389,
+          "location": "Start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f704e475963065e2c84a994304cfbf92ea44bfcbc9ac5c25624ff1953850af01"
     }
   ]
 }

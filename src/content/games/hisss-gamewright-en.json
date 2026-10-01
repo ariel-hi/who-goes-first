@@ -1,0 +1,38 @@
+{
+  "id": "hisss-gamewright-en",
+  "slug": "hisss-gamewright-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "517ebf1a0b54f3d2b1121e94a58e092aa74b2cb1e6204cd2a2d13c12c67dcc0f",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Hisss",
+  "aliases": [
+    "Hiss",
+    "Hisss card game"
+  ],
+  "editionLabel": "Gamewright English rules",
+  "firstPlayerRule": "The youngest player starts first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://gamewright.com/pdfs/Rules/Hisss-RULES.pdf",
+      "title": "Hisss — Rules",
+      "publisher": "Gamewright",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Gamewright-hosted rules PDF and extracted its text with pdftotext. \"The youngest player starts first.\" The worked example continues: \"Because none of the cards in play are purple, he places the card face-up in a new location and starts a new snake.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
