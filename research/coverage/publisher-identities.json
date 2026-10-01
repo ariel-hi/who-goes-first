@@ -6521,6 +6521,89 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "630fff3f4305a04c91c2933637f2e36468327e1f72aeea4019e39d1fe4be4164"
+    },
+    {
+      "identityId": "game-90447e12-2d12-43da-b5e6-9fe51fc0fac7",
+      "routeKey": "game-90447e12-2d12-43da-b5e6-9fe51fc0fac7",
+      "name": "Catch Phrase",
+      "searchNames": [
+        "Catchphrase",
+        "Catch Phrase electronic"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Catch Phrase, the Hasbro electronic word-guessing party game, item B7389, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted instructions PDF names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "catch-phrase-hasbro-b7389-en-primary",
+      "sources": [
+        {
+          "id": "catch-phrase-hasbro-b7389-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/bfc10945-12e6-40f4-b3cd-19945734d47e/1fcb4805c8d7b13354167b95ff63c1c2.pdf",
+          "sha256": "ac3285b6c56fe0b92b2640fc675add5e867212cf4b72d4b53e3931cc71a771f0",
+          "byteCount": 357984,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "27a7a405698844bbd9461b1cb62d99ae2170bd33be66a591321ed17457c97c5f"
+    },
+    {
+      "identityId": "game-b46e051f-f151-456b-949e-d02bfa1cc2f4",
+      "routeKey": "game-b46e051f-f151-456b-949e-d02bfa1cc2f4",
+      "name": "Monopoly Ultimate Banking",
+      "searchNames": [
+        "Monopoly Ultimate Banking Edition"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Monopoly Ultimate Banking Edition, the Hasbro Monopoly with a card-reader banking unit, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted instructions PDF names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "monopoly-ultimate-banking-hasbro-2015-en-primary",
+      "sources": [
+        {
+          "id": "monopoly-ultimate-banking-hasbro-2015-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/48f7df1c-bf99-406f-a3c7-b8395148cd95/80b94ba06fc0e94354c6e3783018d630.pdf",
+          "sha256": "a374dcbd0aac6a64ee1f74d1d95e431ce2b2b379e10c26631e83a5abbe8ec874",
+          "byteCount": 6718932,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2d06048db2d44886dcadc54122796cf3f5fe16a2ef22f1737d287c8de5a94bad"
+    },
+    {
+      "identityId": "game-e0c37663-53e3-4c99-98b4-c1ae1ecda327",
+      "routeKey": "game-e0c37663-53e3-4c99-98b4-c1ae1ecda327",
+      "name": "Guess Who? Grab & Go",
+      "searchNames": [
+        "Guess Who Grab and Go",
+        "Guess Who travel game"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Guess Who? Grab & Go, the Hasbro travel edition of Guess Who?, item B1204, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted instructions PDF names this game and gives its complete English rules.",
+      "publisherReferenceSourceId": "guess-who-grab-and-go-hasbro-b1204-en-primary",
+      "sources": [
+        {
+          "id": "guess-who-grab-and-go-hasbro-b1204-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/0eee9378-ea9a-4787-bc82-c3ba16848dfe/82e27c7df60c425e7170346dcf229aef.pdf",
+          "sha256": "0bbf03bd7bc9ece69b59b3e259a02affc69603815b7f420573d3a6e66ff4a860",
+          "byteCount": 467563,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "6fcbb45bd1410593c98c705056e5ff2c6fa0e7e473e419a6b7705d994328ee53"
     }
   ]
 }
