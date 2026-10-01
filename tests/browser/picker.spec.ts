@@ -245,14 +245,21 @@ test('a fully visible desktop reveal and Quick draws do not request reveal scrol
   expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
   await page.setViewportSize({ width: 320, height: 844 });
   await page.getByRole('radio', { name: 'Quick', exact: true }).check();
-  await page.getByRole('button', { name: 'Pick again', exact: true }).click();
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'ready');
+  await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   expect(await page.evaluate(() => (window as unknown as { revealScrolls: number }).revealScrolls)).toBe(0);
 });
 
-test('switching methods after a result shows the new preview before drawing again', async ({ page }) => {
+test('method pages, roster edits, and method changes wait for Pick before drawing', async ({ page }) => {
   await controlledRandom(page);
   await ready(page, '/methods/balloon/');
+  await expect(page.locator('.balloon-field[data-preview="true"]')).toBeVisible();
+  expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(0);
+  await page.getByRole('button', { name: 'Add a player', exact: true }).click();
+  await expect(page.locator('.player')).toHaveCount(5);
+  await expect(page.locator('.balloon-field[data-preview="true"]')).toBeVisible();
+  expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(0);
   await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(1);
@@ -264,6 +271,9 @@ test('switching methods after a result shows the new preview before drawing agai
     await page.getByRole('radio', { name: label, exact: true }).check();
     await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'ready');
     await expect(page.locator(`.reveal-stage[data-mode="${mode}"] ${scene}[data-preview="true"]`)).toBeVisible();
+    await expect(announcement(page)).toBeEmpty();
+    expect(await page.evaluate(() => (window as unknown as { __testDrawCount: number }).__testDrawCount)).toBe(mode === 'cards' ? 1 : 2);
+    await page.getByRole('button', { name: 'Pick a player', exact: true }).click();
     await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
     await expect(page.locator(`.reveal-stage[data-mode="${mode}"] ${scene}[data-settled="true"]`)).toBeVisible();
   }

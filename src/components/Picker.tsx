@@ -37,8 +37,6 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
   const [inputMode, setInputMode] = useState<'seats' | 'names'>('seats');
   const [mode, setMode] = useState<Mode>(initialMode);
   const selectedMode = useRef<Mode>(initialMode);
-  const pendingModePick = useRef<number | null>(null);
-  const pickCurrent = useRef<(nextMode?: Mode) => void>(() => {});
   const [prefs, setPrefs] = useState<Preferences>({ ...defaults, mode: initialMode });
   const [hydrated, setHydrated] = useState(false);
   const [systemReduced, setSystemReduced] = useState(false);
@@ -80,7 +78,6 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
   selectedMode.current = mode;
   useEffect(() => () => {
     countPressCleanup.current();
-    if (pendingModePick.current !== null) clearTimeout(pendingModePick.current);
   }, []);
 
   useEffect(() => {
@@ -322,11 +319,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
     edited(next, next.every(p => graphemeCount(p.label.trim()) <= 24 && !hasControls(p.label)));
     setText(next.map(p => p.label).join('\n'));
   }
-  function pick(nextMode?: Mode) {
-    if (pendingModePick.current !== null) {
-      clearTimeout(pendingModePick.current);
-      pendingModePick.current = null;
-    }
+  function pick() {
     if (!hydrated || busy || errors.length || performance.now() - lastStart.current < 450) return;
     const countFocused = document.activeElement === countInput.current;
     const commitDraft = countFocused || heldCountCommit.current;
@@ -339,8 +332,7 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
     if (countFocused) countInput.current?.blur();
     else if (commitDraft) commitCount();
     const drawEligible = drawPlayers.map((player, index) => ({ ...player, label: player.label.trim() || `Seat ${index + 1}` }));
-    const requestedMode = nextMode ?? mode;
-    const drawingMode = supportsGroup(requestedMode, drawEligible.length) ? requestedMode : 'quick';
+    const drawingMode = supportsGroup(mode, drawEligible.length) ? mode : 'quick';
     lastStart.current = performance.now();
     try {
       const outcome = select(drawEligible, ++draw.current);
@@ -355,35 +347,16 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
       dispatch({ type: 'EDIT', valid: true });
     }
   }
-  pickCurrent.current = pick;
   function changeMode(nextMode: Mode) {
     if (selectedMode.current === nextMode) return;
     selectedMode.current = nextMode;
-    const replay = state.phase === 'result' || pendingModePick.current !== null;
-    if (pendingModePick.current !== null) clearTimeout(pendingModePick.current);
-    pendingModePick.current = null;
     setMode(nextMode);
-    if (!replay) return;
-    // Clear the previous result so the new method gets a real idle scene.
+    if (state.phase !== 'result') return;
+    // Every method choice shows an idle preview. Only Pick starts a draw.
     locked.current = null;
     lastStart.current = -Infinity;
     setRevealPlan(null);
     dispatch({ type: 'EDIT', valid: true });
-    const deadline = performance.now() + 3000;
-    const startWhenPreviewIsVisible = () => {
-      const visual = nextMode !== 'quick' && nextMode !== 'instant';
-      const stage = revealStage.current;
-      const ready = !visual || (stage?.dataset.mode === nextMode && stage.querySelector('[data-preview="true"]'));
-      if (!ready && performance.now() < deadline) {
-        pendingModePick.current = window.setTimeout(startWhenPreviewIsVisible, 50);
-        return;
-      }
-      pendingModePick.current = window.setTimeout(() => {
-        pendingModePick.current = null;
-        pickCurrent.current(nextMode);
-      }, 180);
-    };
-    pendingModePick.current = window.setTimeout(startWhenPreviewIsVisible, 50);
   }
   function forget() {
     let cleared = false;
