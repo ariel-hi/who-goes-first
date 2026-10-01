@@ -1,0 +1,38 @@
+{
+  "id": "candy-land-hasbro-g1726-2025-en",
+  "slug": "candy-land-hasbro-g1726-2025-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d8fd33081b6a85187defcc49a0504d84f9dcf7435c1bedf1fd3d3fc711c0d96b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Candy Land",
+  "aliases": [
+    "Candy Land 2025 Edition",
+    "Candyland Hasbro"
+  ],
+  "editionLabel": "Hasbro English instructions, 2025 edition item G1726",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/61c87d59-0141-48ba-81b7-f9ba80883dd3/G1726GA01_INST_537406_CANDYLAND_REFRESH_F25_P1.pdf",
+      "title": "Candy Land — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com (candy-land-board-game-2025-edition) and extracted its text with pdftotext. PDF page 1: \"The youngest player goes first.\" Item G1726 (Candy Land refresh, 2025).",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

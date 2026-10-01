@@ -1,0 +1,37 @@
+{
+  "id": "chutes-and-ladders-hasbro-a4756-en",
+  "slug": "chutes-and-ladders-hasbro-a4756-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "21b50d9b5c05c1894a54b86a27136a3884bc8bb00f46483a16ef212b88d7e819",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Chutes and Ladders",
+  "aliases": [
+    "Chutes & Ladders Hasbro"
+  ],
+  "editionLabel": "Hasbro English instructions, item A4756 (2021 sheet)",
+  "firstPlayerRule": "The youngest player goes first, then play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/f9c9b8cb-259f-4046-b971-24d06804d9eb/3b199c24d82efe4c0325b4bd3b119112.pdf",
+      "title": "Chutes and Ladders — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com (chutes-and-ladders-board-game-instructions) and extracted its text with pdftotext. PDF page 2: \"The youngest player goes first, then play passes to the left.\" \"On your turn, spin the spinner and move your character pawn forward that number of spaces!\" © 2021 Hasbro.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
