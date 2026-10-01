@@ -1,0 +1,41 @@
+{
+  "id": "crocodile-dentist-milton-bradley-4153-en",
+  "slug": "crocodile-dentist-milton-bradley-4153-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "bf06a5bb0106929b5502c3190811794609cffb85aa8091ce7ecd9272ed55dd72",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Crocodile Dentist",
+  "aliases": [
+    "Croc Dentist"
+  ],
+  "editionLabel": "Milton Bradley English instructions, 4153 (1990)",
+  "firstPlayerRule": "The youngest player starts the game. Play then continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [
+    "After someone gets chomped, play continues with the player to the left of the last chomped player."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/CrocodileDentist.pdf",
+      "title": "Crocodile Dentist — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "3"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"How to Play\" and \"Getting Chomped!\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Hasbro-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. \"How to Play: The youngest player starts the game. Play then continues clockwise.\" \"Getting Chomped! ... Play continues as described above, beginning with the player to the left of the last chomped player.\" Imprint ©1990 Milton Bradley Company, 4153.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
