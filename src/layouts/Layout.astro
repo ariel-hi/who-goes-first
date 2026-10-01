@@ -25,6 +25,7 @@ const structuredData = {
   '@graph': [
     ...(path === '/' ? [{ '@type': 'WebSite', '@id': `${settings.url}/#website`, name: 'Who Goes First?', url: `${settings.url}/`, inLanguage: 'en' }] : []),
     { '@type': pageType, '@id': `${canonical}#webpage`, name: title, description, url: canonical, inLanguage: 'en', isPartOf: { '@id': `${settings.url}/#website` }, ...(modified ? { dateModified: modified } : {}), ...(citations ? { citation: citations } : {}) },
+    ...(installable ? [{ '@type': 'WebApplication', '@id': `${canonical}#app`, name: title, description, url: canonical, applicationCategory: 'GameApplication', operatingSystem: 'Any (web browser)', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } }] : []),
   ],
 };
 ---
