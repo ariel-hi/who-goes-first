@@ -1,10 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { toolCards } from '../../lib/tool-cards';
 import '../../styles/tools.css';
 interface Props { title: string; description: string; heading: string; lede: string; current: string }
-const { title, description, heading, lede } = Astro.props;
+const { title, description, heading, lede, current } = Astro.props;
+const cardId = current.replace(/\//g, '');
+const card = toolCards[cardId];
 ---
-<Layout ads={false} title={title} description={description}>
+<Layout ads={false} title={title} description={description} {...(card ? { image: `/og/tool-${cardId}.png`, imageAlt: `${card.heading}: ${card.body}` } : {})}>
   <div class="tool-page">
     <a class="back-link" href="/tools/">← All decision tools</a>
     <div class="intro"><h1>{heading}</h1><p>{lede}</p></div>

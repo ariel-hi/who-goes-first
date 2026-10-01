@@ -29,8 +29,13 @@ const el = (type: string, style: Record<string, string | number>, children?: Nod
 
 export async function renderRuleImage(gameName: string, answer: string, host: string): Promise<Buffer> {
   const title = clip(gameName, 60);
-  const body = clip(answer, 190);
-  const titleSize = title.length > 38 ? 54 : 66;
+  return renderCardImage(ruleHeading(gameName, title), answer, 'From the publisher’s rulebook', host, title.length);
+}
+
+/** 1200×630 share card; tool pages reuse it with their own heading and footer. Size is keyed to the game name for rule cards. */
+export async function renderCardImage(heading: string, text: string, footer: string, host: string, sizingLength = heading.length): Promise<Buffer> {
+  const body = clip(text, 190);
+  const titleSize = sizingLength > 38 ? 54 : 66;
   const bodySize = body.length > 130 ? 34 : 40;
   const dots = [[14, 14], [34, 14], [24, 24], [14, 34], [34, 34]].map(([x, y]) => el('div', { position: 'absolute', left: x! - 3, top: y! - 3, width: 6, height: 6, borderRadius: 3, background: '#fffef9' }));
   const tree = el('div', { width: 1200, height: 630, display: 'flex', flexDirection: 'column', background: '#f5f0ed', padding: '64px 88px', fontFamily: 'Sans', color: '#39343b' }, [
@@ -39,11 +44,11 @@ export async function renderRuleImage(gameName: string, answer: string, host: st
       el('div', { fontFamily: 'Serif', fontSize: 30, color: '#62506f' }, 'Who goes first?'),
     ]),
     el('div', { display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center' }, [
-      el('div', { fontFamily: 'Serif', fontSize: titleSize, lineHeight: 1.1, letterSpacing: -1.5, marginBottom: 26 }, ruleHeading(gameName, title)),
+      el('div', { fontFamily: 'Serif', fontSize: titleSize, lineHeight: 1.1, letterSpacing: -1.5, marginBottom: 26 }, heading),
       el('div', { fontSize: bodySize, lineHeight: 1.35, color: '#4d4550' }, body),
     ]),
     el('div', { display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid #e2dae0', paddingTop: 26, fontSize: 24, color: '#62506f' }, [
-      el('div', { fontWeight: 600 }, 'From the publisher’s rulebook'),
+      el('div', { fontWeight: 600 }, footer),
       el('div', {}, host),
     ]),
   ]);
