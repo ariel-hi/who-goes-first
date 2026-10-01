@@ -1,0 +1,38 @@
+{
+  "id": "uno-teams-mattel-hxt58-en",
+  "slug": "uno-teams-mattel-hxt58-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "7b5151bff3b03713a7386835840bbf2457c4726cb7c56fc4a7824129c37e66d3",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "UNO Teams!",
+  "aliases": [
+    "UNO Teams",
+    "Uno Teams"
+  ],
+  "editionLabel": "Mattel English instructions, item HXT58 (2024)",
+  "firstPlayerRule": "Choose a dealer. The player to the left of the dealer goes first, and play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the dealer; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/HXT58-Eng.pdf",
+      "title": "UNO Teams! — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Choose a dealer and shuffle the cards.\" \"The player to the left of the dealer goes first and play proceeds clockwise.\" © 2024 Mattel.",
+  "uncertainty": [
+    "The rules do not say how to choose the dealer."
+  ]
+}

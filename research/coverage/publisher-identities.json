@@ -6296,6 +6296,117 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "a8487abd2a5391fdd4b69bece16a6fc99a658fc40a92eef6f2138c943377c832"
+    },
+    {
+      "identityId": "game-df8354dc-0d70-4cc3-88f1-542768a0fb5d",
+      "routeKey": "game-df8354dc-0d70-4cc3-88f1-542768a0fb5d",
+      "name": "UNO Triple Play",
+      "searchNames": [
+        "Uno Triple Play"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "UNO Triple Play, the Mattel UNO-family card game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names UNO Triple Play and gives its complete English rules.",
+      "publisherReferenceSourceId": "uno-triple-play-mattel-gxv87-en-primary",
+      "sources": [
+        {
+          "id": "uno-triple-play-mattel-gxv87-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/GXV87-Eng.pdf",
+          "sha256": "870e80877ec8a462f1e1efb76faa88eaa94fe59fee6c989b1eea7853e5a053b3",
+          "byteCount": 3984613,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ec131d89bc32a8c9c9d61c55131d44447794a17e8d98fe58e48787cbf6d5b6b0"
+    },
+    {
+      "identityId": "game-f2978162-a2e0-4d5a-8c0c-4f6351ff2620",
+      "routeKey": "game-f2978162-a2e0-4d5a-8c0c-4f6351ff2620",
+      "name": "UNO Party!",
+      "searchNames": [
+        "UNO Party",
+        "Uno Party"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "UNO Party!, the Mattel UNO-family card game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names UNO Party! and gives its complete English rules.",
+      "publisherReferenceSourceId": "uno-party-mattel-hmy49-en-primary",
+      "sources": [
+        {
+          "id": "uno-party-mattel-hmy49-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/HMY49-Eng.pdf",
+          "sha256": "efe4288cd6630e1b2c5dd164d8503628163d35afe3438d60c4e64dd015d269a7",
+          "byteCount": 1938008,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "884d54351d944eb52bf2913656f016cc6874b515bc80affdd927a05116442ede"
+    },
+    {
+      "identityId": "game-4113ed5c-0866-480f-8e64-17fa7020bf99",
+      "routeKey": "game-4113ed5c-0866-480f-8e64-17fa7020bf99",
+      "name": "UNO Teams!",
+      "searchNames": [
+        "UNO Teams",
+        "Uno Teams"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "UNO Teams!, the Mattel UNO-family card game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names UNO Teams! and gives its complete English rules.",
+      "publisherReferenceSourceId": "uno-teams-mattel-hxt58-en-primary",
+      "sources": [
+        {
+          "id": "uno-teams-mattel-hxt58-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/HXT58-Eng.pdf",
+          "sha256": "fdcd5c8359c73b4930ce2b62f58c8395ff1e875c4633976de8837ca5d5f09e88",
+          "byteCount": 1017208,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ac0d55a04608ab0efc27ec5242dec802749aa6a6014417fb9e67c98c7ce85adf"
+    },
+    {
+      "identityId": "game-cdc43d29-7754-45ba-80f4-7e889b3a6f00",
+      "routeKey": "game-cdc43d29-7754-45ba-80f4-7e889b3a6f00",
+      "name": "Giant UNO",
+      "searchNames": [
+        "Giant Uno",
+        "UNO Giant"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Giant UNO, the Mattel UNO-family card game, as described in its English instructions PDF on the Mattel service site.",
+      "identityEvidence": "Mattel's service-site instruction PDF names Giant UNO and gives its complete English rules.",
+      "publisherReferenceSourceId": "giant-uno-mattel-gpj46-en-primary",
+      "sources": [
+        {
+          "id": "giant-uno-mattel-gpj46-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/GPJ46.pdf",
+          "sha256": "667b35c59f830996679c1fed3ec53d00b6320e6cc158cc0dd2733bf8ead5e461",
+          "byteCount": 1620350,
+          "location": "Setup and start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "60fc37ce5fe7eca1caa5fde7b427a9e2011afcf01e1c272056daf1ac545d532e"
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "id": "uno-party-mattel-hmy49-en",
+  "slug": "uno-party-mattel-hmy49-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "edb40fe72cae6b6fa8812cafd51720bc3c04d9b8adb5114e8c69512138a6b620",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "UNO Party!",
+  "aliases": [
+    "UNO Party",
+    "Uno Party"
+  ],
+  "editionLabel": "Mattel English instructions, item HMY49 (2022, 6–16 players)",
+  "firstPlayerRule": "Choose a dealer. The player to the left of the dealer goes first, and play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the dealer; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/HMY49-Eng.pdf",
+      "title": "UNO Party! — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Choose a dealer and shuffle the remaining cards.\" \"The player to the left of the dealer goes first and play proceeds clockwise.\" © 2022 Mattel.",
+  "uncertainty": [
+    "The rules do not say how to choose the dealer."
+  ]
+}

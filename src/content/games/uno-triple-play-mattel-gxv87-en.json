@@ -1,0 +1,37 @@
+{
+  "id": "uno-triple-play-mattel-gxv87-en",
+  "slug": "uno-triple-play-mattel-gxv87-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a2bc50b9274ad0de1ea1afe9ee2435e8aefd92c70bb2322f3544be1858677006",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "UNO Triple Play",
+  "aliases": [
+    "Uno Triple Play"
+  ],
+  "editionLabel": "Mattel English instructions, item GXV87 (2020)",
+  "firstPlayerRule": "Play begins with the player to the left of the dealer.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the dealer; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/GXV87-Eng.pdf",
+      "title": "UNO Triple Play — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Play begins with the player to the left of the dealer.\" © 2020 Mattel.",
+  "uncertainty": [
+    "The rules do not say how to choose the dealer."
+  ]
+}

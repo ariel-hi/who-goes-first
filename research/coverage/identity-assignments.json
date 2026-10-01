@@ -2383,6 +2383,82 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "79f67fec29e381687649b621e3cdcb0d7e857bed153e27cb0b85af7a8a0a0f72"
+    },
+    {
+      "ruleId": "uno-triple-play-mattel-gxv87-en",
+      "ruleRevision": "a2bc50b9274ad0de1ea1afe9ee2435e8aefd92c70bb2322f3544be1858677006",
+      "identityId": "game-df8354dc-0d70-4cc3-88f1-542768a0fb5d",
+      "identityRevision": "ec131d89bc32a8c9c9d61c55131d44447794a17e8d98fe58e48787cbf6d5b6b0",
+      "editionScope": "Mattel English instructions, item GXV87 (2020)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/GXV87-Eng.pdf",
+          "sha256": "870e80877ec8a462f1e1efb76faa88eaa94fe59fee6c989b1eea7853e5a053b3",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for UNO Triple Play."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "98e907ae672cea081edd6a9744d84121fa9e0963d10e3521af517410e1e05505"
+    },
+    {
+      "ruleId": "uno-party-mattel-hmy49-en",
+      "ruleRevision": "edb40fe72cae6b6fa8812cafd51720bc3c04d9b8adb5114e8c69512138a6b620",
+      "identityId": "game-f2978162-a2e0-4d5a-8c0c-4f6351ff2620",
+      "identityRevision": "884d54351d944eb52bf2913656f016cc6874b515bc80affdd927a05116442ede",
+      "editionScope": "Mattel English instructions, item HMY49 (2022, 6–16 players)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/HMY49-Eng.pdf",
+          "sha256": "efe4288cd6630e1b2c5dd164d8503628163d35afe3438d60c4e64dd015d269a7",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for UNO Party!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "dba20b61fb91e3b2d850fd29f6cf74f2560c910f98b2322ca3f984aacd482612"
+    },
+    {
+      "ruleId": "uno-teams-mattel-hxt58-en",
+      "ruleRevision": "7b5151bff3b03713a7386835840bbf2457c4726cb7c56fc4a7824129c37e66d3",
+      "identityId": "game-4113ed5c-0866-480f-8e64-17fa7020bf99",
+      "identityRevision": "ac0d55a04608ab0efc27ec5242dec802749aa6a6014417fb9e67c98c7ce85adf",
+      "editionScope": "Mattel English instructions, item HXT58 (2024)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/HXT58-Eng.pdf",
+          "sha256": "fdcd5c8359c73b4930ce2b62f58c8395ff1e875c4633976de8837ca5d5f09e88",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for UNO Teams!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "be33d24b959636a69e71585229a429832a1be0645e58b4aa2edc0e2e48f3f80f"
+    },
+    {
+      "ruleId": "giant-uno-mattel-gpj46-en",
+      "ruleRevision": "edba59cae50402596526ef037239e40850806a85cc991b0e706f323c698f7c1b",
+      "identityId": "game-cdc43d29-7754-45ba-80f4-7e889b3a6f00",
+      "identityRevision": "60fc37ce5fe7eca1caa5fde7b427a9e2011afcf01e1c272056daf1ac545d532e",
+      "editionScope": "Mattel English instructions, item GPJ46 (2019)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/GPJ46.pdf",
+          "sha256": "667b35c59f830996679c1fed3ec53d00b6320e6cc158cc0dd2733bf8ead5e461",
+          "location": "Setup and start of play",
+          "correspondence": "The rule cites this same Mattel document for Giant UNO."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "03e858e4e0874a46436ab13e90ce1418d89fc4fdc6c0e8980263a28d8f825bfe"
     }
   ]
 }

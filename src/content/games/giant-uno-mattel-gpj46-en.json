@@ -1,0 +1,38 @@
+{
+  "id": "giant-uno-mattel-gpj46-en",
+  "slug": "giant-uno-mattel-gpj46-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "edba59cae50402596526ef037239e40850806a85cc991b0e706f323c698f7c1b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Giant UNO",
+  "aliases": [
+    "Giant Uno",
+    "UNO Giant"
+  ],
+  "editionLabel": "Mattel English instructions, item GPJ46 (2019)",
+  "firstPlayerRule": "Each player draws a card; the highest number deals (symbol cards count as zero). The person to the left of the dealer starts play.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest number, those players draw again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/GPJ46.pdf",
+      "title": "Giant UNO — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Each player draws a card; the player that draws the highest number deals (count any card with a symbol as zero).\" \"LET’S PLAY The person to the left of the dealer starts play.\" © 2019 Mattel.",
+  "uncertainty": [
+    "No tie-break is stated for equal high draws."
+  ]
+}
