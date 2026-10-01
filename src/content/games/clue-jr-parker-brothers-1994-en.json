@@ -1,0 +1,38 @@
+{
+  "id": "clue-jr-parker-brothers-1994-en",
+  "slug": "clue-jr-parker-brothers-1994-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "520a28b4d564f67b5ded382ee57d74389c27c07e156f454a87bd2e9476f8bff7",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Clue Jr.",
+  "aliases": [
+    "Clue Junior",
+    "Clue Jr"
+  ],
+  "editionLabel": "Parker Brothers English instructions, Detective Game for Juniors (1994)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/ClueJr.pdf",
+      "title": "Clue Jr. — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "Start of play",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Hasbro-hosted PDF and extracted its text with pdftotext. \"The youngest player goes first.\" Header: \"Detective Game for Juniors, For 2 to 4 players / Ages 5 to 7, ©1994 Waddingtons Games Ltd. ... used under license to Parker Brothers.\" The mystery is Which Child, Which Room, Which Pet.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

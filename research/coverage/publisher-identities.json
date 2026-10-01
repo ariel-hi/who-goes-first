@@ -4780,6 +4780,34 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "d715cd36c79ea684e122815f1c416cf3e0f6578e3a8da9b7190a37aa4e86c627"
+    },
+    {
+      "identityId": "game-fb2b6241-28ba-4737-9568-ad77ffbacc73",
+      "routeKey": "game-fb2b6241-28ba-4737-9568-ad77ffbacc73",
+      "name": "Clue Jr.",
+      "searchNames": [
+        "Clue Junior",
+        "Clue Jr"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Clue Jr., the 1994 Parker Brothers junior detective game (Which Child, Which Room, Which Pet), as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Clue Jr. instructions name the game as the Detective Game for Juniors for 2 to 4 players ages 5 to 7.",
+      "publisherReferenceSourceId": "clue-jr-parker-brothers-1994-en-primary",
+      "sources": [
+        {
+          "id": "clue-jr-parker-brothers-1994-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.hasbro.com/common/instruct/ClueJr.pdf",
+          "sha256": "5800bc745e15dbb25c103c7d64211701d745675aa53e72bd14b2957e9aa064b6",
+          "byteCount": 117710,
+          "location": "Start of play"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "df77adbab677039beb1cd3c837c6bfb1bc1f6962733ffca3b16d1b28cf8379dc"
     }
   ]
 }
