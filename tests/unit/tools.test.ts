@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { flipCoin, parseNames, rpsWinner, shuffle, splitTeams } from '../../src/lib/tools';
+import { flipCoin, parseNames, randomInteger, rollDice, rpsWinner, shuffle, splitTeams } from '../../src/lib/tools';
 
 const sequence = (...words: number[]) => { let i = 0; return () => words[i++ % words.length]!; };
 
@@ -36,5 +36,18 @@ describe('decision tools', () => {
     expect(rpsWinner('rock', 'scissors')).toBe(1);
     expect(rpsWinner('rock', 'paper')).toBe(2);
     expect(rpsWinner('paper', 'paper')).toBe(0);
+  });
+});
+
+describe('dice and numbers', () => {
+  it('rolls each die within its faces', () => {
+    for (let i = 0; i < 200; i++) for (const value of rollDice(3, 20)) expect(value >= 1 && value <= 20).toBe(true);
+    expect(rollDice(12, 6)).toHaveLength(12);
+    expect(() => rollDice(13, 6)).toThrow(RangeError);
+  });
+  it('includes both ends of a number range', () => {
+    const seen = new Set(Array.from({ length: 400 }, () => randomInteger(-2, 2)));
+    expect([...seen].sort()).toEqual([-1, -2, 0, 1, 2].sort());
+    expect(() => randomInteger(5, 1)).toThrow(RangeError);
   });
 });

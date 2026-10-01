@@ -1,0 +1,14 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import DiceRoller from '../components/tools/DiceRoller';
+---
+<ToolPage current="/dice-roller/" title="Roll Dice Online: Free Virtual Dice Roller (d6, d20 & More) — Who Goes First?" description="Roll up to 12 virtual dice online: d4, d6, d8, d10, d12, d20 or d100. Fair, instant and free, with the total added up. For board games when the dice go missing." heading="Roll dice" lede="Lost the dice? Pick how many and how many sides, then roll.">
+  <DiceRoller client:load />
+  <Fragment slot="about">
+    <h2>Using dice to pick who goes first</h2>
+    <p>Many rulebooks say the highest roller starts. Everyone rolls in turn and the highest total goes first; players who tie roll again. To skip the rerolls, the <a href="/methods/dice/">dice reveal in the picker</a> rolls for the whole table at once and never ties.</p>
+    <h2>Are these dice fair?</h2>
+    <p>Each die is an independent draw from your browser’s secure random number generator, so every face has exactly the same chance. Unlike real dice, there are no worn edges or lucky throws.</p>
+    <p>Not sure what your game says? <a href="/games/">Look up its official starting rule</a>.</p>
+  </Fragment>
+</ToolPage>

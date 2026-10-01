@@ -1,0 +1,14 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import TurnOrder from '../components/tools/TurnOrder';
+---
+<ToolPage current="/turn-order-generator/" title="Random Turn Order Generator for Board Games — Who Goes First?" description="Enter the players’ names and shuffle them into a fair random turn order. Free and instant, for board games, card games and party games." heading="Turn order generator" lede="Shuffle your players into a random playing order.">
+  <TurnOrder client:load />
+  <Fragment slot="about">
+    <h2>When a random turn order helps</h2>
+    <p>Some games need more than a first player. Drafting, auctions and games played in seat order without sitting in a circle all need a full order. Shuffle once and write it down, or keep it on screen.</p>
+    <h2>Is the order fair?</h2>
+    <p>The names are shuffled with an unbiased Fisher–Yates shuffle using your browser’s secure randomness, so every order is equally likely. Names stay on your device.</p>
+    <p>Playing at one phone? Try the <a href="/finger-chooser/">finger chooser</a>, which can also pick a full turn order.</p>
+  </Fragment>
+</ToolPage>

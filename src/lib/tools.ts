@@ -44,3 +44,19 @@ export function rpsWinner(first: Throw, second: Throw): 0 | 1 | 2 {
   if (first === second) return 0;
   return beats[first] === second ? 1 : 2;
 }
+
+export const DIE_SIDES = [4, 6, 8, 10, 12, 20, 100] as const;
+export const MAX_DICE = 12;
+/** Rolls `count` fair dice with `sides` faces each. */
+export function rollDice(count: number, sides: number, word: RandomWord = secureWord): number[] {
+  if (!Number.isInteger(count) || count < 1 || count > MAX_DICE) throw new RangeError(`Roll 1–${MAX_DICE} dice.`);
+  if (!Number.isInteger(sides) || sides < 2) throw new RangeError('Dice need at least 2 sides.');
+  return Array.from({ length: count }, () => randomCollectionIndex(sides, word) + 1);
+}
+
+/** A uniform whole number from min to max inclusive. */
+export function randomInteger(min: number, max: number, word: RandomWord = secureWord): number {
+  if (!Number.isSafeInteger(min) || !Number.isSafeInteger(max) || max < min) throw new RangeError('Use whole numbers, with the second at least the first.');
+  if (max - min + 1 > 2 ** 32) throw new RangeError('That range is too large.');
+  return min + randomCollectionIndex(max - min + 1, word);
+}

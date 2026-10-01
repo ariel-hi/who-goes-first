@@ -1,0 +1,13 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import RandomNumber from '../components/tools/RandomNumber';
+---
+<ToolPage current="/random-number-generator/" title="Random Number Generator: Pick a Number From 1 to 10 or Any Range — Who Goes First?" description="Generate a random whole number in any range, such as 1 to 10 or 1 to 100. Fair, instant and free. Great for picking a player, a seat or a raffle winner." heading="Random number generator" lede="Choose a range and get a fair random number.">
+  <RandomNumber client:load />
+  <Fragment slot="about">
+    <h2>Picking a first player by number</h2>
+    <p>Number the players around the table, then generate a number from 1 to the player count. That player goes first. The <a href="/">first-player picker</a> does the same with numbered seats or names and adds a reveal.</p>
+    <h2>How it works</h2>
+    <p>Every number in the range, including both ends, has the same chance. The result comes from your browser’s secure random number generator with no bias toward low or high numbers.</p>
+  </Fragment>
+</ToolPage>
