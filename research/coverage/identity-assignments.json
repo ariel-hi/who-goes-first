@@ -2763,6 +2763,101 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "be546034cf9a89dcf4a647380dcb5ca8d54acaa3d45531b4d21c821503da5afe"
+    },
+    {
+      "ruleId": "brain-fart-playmonster-en",
+      "ruleRevision": "ebef8ff8ba853fe3060ffd7ce7c47e1c9be959f57f05b526b5f778ced8d52133",
+      "identityId": "game-3c6dd909-92da-4f5e-800f-a29a495fefd7",
+      "identityRevision": "62b3d243172d7c26c43220142e1cbf5e02bf3168b51df866fc21ec63b1268bdd",
+      "editionScope": "PlayMonster English rules, item 7691",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/08/BrainFart_Rules.pdf",
+          "sha256": "acc298df682358f4d9e1f09bfb5ec0512bef92373cb96cb413fbcd15a9502733",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Brain Fart."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d327f57ad439b465d18528a0824c5c0fd8d7cbaafbc1e70819c9f90abc6831dd"
+    },
+    {
+      "ruleId": "full-circle-playmonster-en",
+      "ruleRevision": "09c685b6d330f9ab54a56b746f082486c4aed370e8596ae2ee7b62986fea89ef",
+      "identityId": "game-d60ffbbd-babd-4537-872d-6919e6b754ba",
+      "identityRevision": "5fe983a66efea45d5e01e32850eacf2b3f76927e9ab230eb8083cf1b00f1e263",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/09/FullCircle_Rules.pdf",
+          "sha256": "7b6f46d40f0f94d2bb9e2b2cff1519d4e38332e0e10451dee716d91f51947cac",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Full Circle."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d5166389062429f90fe7f8c6b33de385a95603268067970006768b196d525120"
+    },
+    {
+      "ruleId": "prove-it-playmonster-en",
+      "ruleRevision": "fe988040c3e5dc5f6026bebf460952985deaa824c9ee6c458a2dfd9c591ea052",
+      "identityId": "game-eaad087a-14a5-46f2-b2ba-25556c060759",
+      "identityRevision": "8729271eca4592d68ad0703f15082892a1cdceec3728e048ecac103842efbe85",
+      "editionScope": "PlayMonster English rules, item 7429",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7429_ProveIt_Instr.pdf",
+          "sha256": "273bed776fea5faaef944ee37096cffa9dfc69dde4ed28a480034813bf9aee01",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Prove It!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "b2c88440bcfeddda1fbfcb2abc8a527e39ce0ad2343f1d861f6f6adb0ca7830f"
+    },
+    {
+      "ruleId": "grabolo-playmonster-2016-en",
+      "ruleRevision": "b003318293344d4b985ed5995381faeaefe66d3bd5dcf60d09b51391edbe2cc0",
+      "identityId": "game-8b4d1226-b770-483c-87b7-89484ebbd7d7",
+      "identityRevision": "cbe3bae41d94624888bf9362a831d4858abcfea02ff412553b15792bad78fdaf",
+      "editionScope": "PlayMonster English rules (© 2016 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Grabolo_Rules.pdf",
+          "sha256": "281220a9ad840caecbf7e5df5ef8a0efd9f0d663e415d9afc62405ab88c242d4",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Grabolo."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "af75dd4b4177a37bcab809df09588bf9dda9bf9695fdc8fa4cd244eecca605c1"
+    },
+    {
+      "ruleId": "spit-playmonster-en",
+      "ruleRevision": "4d5a93473b64f4f255762ce4ef8eb422ff3d18a264fe4eaef076c579452b4d84",
+      "identityId": "game-1596f2f9-3d3c-4505-8ff1-30fb91858b00",
+      "identityRevision": "d602fb6f268055830706698de4892a60dc67377dfacd5609f63b7c4ffe0ec471",
+      "editionScope": "PlayMonster English rules (two-player Spit!)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/BD_Spitrules.pdf",
+          "sha256": "fb7b5c52fa964a54236c31169cb962ac93b4ba7d2118cc3cd99d7fdbbdb3cb08",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Spit!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "4f623ac6bec62096718a2c0365b94c252b4fc83dba14d3ab2b60c5e9e9320266"
     }
   ]
 }

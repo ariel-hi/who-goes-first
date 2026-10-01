@@ -1,0 +1,37 @@
+{
+  "id": "brain-fart-playmonster-en",
+  "slug": "brain-fart-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "ebef8ff8ba853fe3060ffd7ce7c47e1c9be959f57f05b526b5f778ced8d52133",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Brain Fart",
+  "aliases": [
+    "Brain Fart game"
+  ],
+  "editionLabel": "PlayMonster English rules, item 7691",
+  "firstPlayerRule": "Everyone rolls the cubes, someone starts the Brain timer, and the youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/08/BrainFart_Rules.pdf",
+      "title": "Brain Fart — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • Everyone rolls the cubes onto the playing area! • Someone presses down on the top of the Brain—this starts the timer and displays a letter! • The youngest player goes first, naming something in one of the categories shown on a cube\".",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

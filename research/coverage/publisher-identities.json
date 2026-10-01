@@ -6850,6 +6850,143 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "976934e48c9d3ffea9fc525f263cc97ba4f755db1ce967680325b8a1a6e328dc"
+    },
+    {
+      "identityId": "game-3c6dd909-92da-4f5e-800f-a29a495fefd7",
+      "routeKey": "game-3c6dd909-92da-4f5e-800f-a29a495fefd7",
+      "name": "Brain Fart",
+      "searchNames": [
+        "Brain Fart game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Brain Fart, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Brain Fart and gives its complete English rules.",
+      "publisherReferenceSourceId": "brain-fart-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "brain-fart-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/08/BrainFart_Rules.pdf",
+          "sha256": "acc298df682358f4d9e1f09bfb5ec0512bef92373cb96cb413fbcd15a9502733",
+          "byteCount": 5629908,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "62b3d243172d7c26c43220142e1cbf5e02bf3168b51df866fc21ec63b1268bdd"
+    },
+    {
+      "identityId": "game-d60ffbbd-babd-4537-872d-6919e6b754ba",
+      "routeKey": "game-d60ffbbd-babd-4537-872d-6919e6b754ba",
+      "name": "Full Circle",
+      "searchNames": [
+        "Full Circle word game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Full Circle, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Full Circle and gives its complete English rules.",
+      "publisherReferenceSourceId": "full-circle-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "full-circle-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/09/FullCircle_Rules.pdf",
+          "sha256": "7b6f46d40f0f94d2bb9e2b2cff1519d4e38332e0e10451dee716d91f51947cac",
+          "byteCount": 1060765,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "5fe983a66efea45d5e01e32850eacf2b3f76927e9ab230eb8083cf1b00f1e263"
+    },
+    {
+      "identityId": "game-eaad087a-14a5-46f2-b2ba-25556c060759",
+      "routeKey": "game-eaad087a-14a5-46f2-b2ba-25556c060759",
+      "name": "Prove It!",
+      "searchNames": [
+        "Prove It",
+        "Prove It! It's easier said than done"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Prove It!, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Prove It! and gives its complete English rules.",
+      "publisherReferenceSourceId": "prove-it-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "prove-it-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7429_ProveIt_Instr.pdf",
+          "sha256": "273bed776fea5faaef944ee37096cffa9dfc69dde4ed28a480034813bf9aee01",
+          "byteCount": 561484,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "8729271eca4592d68ad0703f15082892a1cdceec3728e048ecac103842efbe85"
+    },
+    {
+      "identityId": "game-8b4d1226-b770-483c-87b7-89484ebbd7d7",
+      "routeKey": "game-8b4d1226-b770-483c-87b7-89484ebbd7d7",
+      "name": "Grabolo",
+      "searchNames": [
+        "Grabolo card game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Grabolo, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Grabolo and gives its complete English rules.",
+      "publisherReferenceSourceId": "grabolo-playmonster-2016-en-primary",
+      "sources": [
+        {
+          "id": "grabolo-playmonster-2016-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Grabolo_Rules.pdf",
+          "sha256": "281220a9ad840caecbf7e5df5ef8a0efd9f0d663e415d9afc62405ab88c242d4",
+          "byteCount": 249316,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "cbe3bae41d94624888bf9362a831d4858abcfea02ff412553b15792bad78fdaf"
+    },
+    {
+      "identityId": "game-1596f2f9-3d3c-4505-8ff1-30fb91858b00",
+      "routeKey": "game-1596f2f9-3d3c-4505-8ff1-30fb91858b00",
+      "name": "Spit!",
+      "searchNames": [
+        "Spit",
+        "Spit card game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Spit!, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Spit! and gives its complete English rules.",
+      "publisherReferenceSourceId": "spit-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "spit-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/BD_Spitrules.pdf",
+          "sha256": "fb7b5c52fa964a54236c31169cb962ac93b4ba7d2118cc3cd99d7fdbbdb3cb08",
+          "byteCount": 543942,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d602fb6f268055830706698de4892a60dc67377dfacd5609f63b7c4ffe0ec471"
     }
   ]
 }

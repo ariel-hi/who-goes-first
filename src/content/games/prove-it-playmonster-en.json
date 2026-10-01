@@ -1,0 +1,36 @@
+{
+  "id": "prove-it-playmonster-en",
+  "slug": "prove-it-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "fe988040c3e5dc5f6026bebf460952985deaa824c9ee6c458a2dfd9c591ea052",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Prove It!",
+  "aliases": [
+    "Prove It",
+    "Prove It! It's easier said than done"
+  ],
+  "editionLabel": "PlayMonster English rules, item 7429",
+  "firstPlayerRule": "The player who suggested playing the game is the first Challenger.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7429_ProveIt_Instr.pdf",
+      "title": "Prove It! — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • The player who suggested playing this awesome game will be the first Challenger!\"",
+  "uncertainty": []
+}

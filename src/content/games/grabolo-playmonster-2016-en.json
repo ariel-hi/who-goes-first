@@ -1,0 +1,37 @@
+{
+  "id": "grabolo-playmonster-2016-en",
+  "slug": "grabolo-playmonster-2016-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "b003318293344d4b985ed5995381faeaefe66d3bd5dcf60d09b51391edbe2cc0",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Grabolo",
+  "aliases": [
+    "Grabolo card game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2016 PlayMonster)",
+  "firstPlayerRule": "The youngest player rolls the dice first, then everyone races to grab the matching card. Rolling continues clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Grabolo_Rules.pdf",
+      "title": "Grabolo — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play: The youngest player rolls the Dice that will show you which combination of color and number you’re looking for. Now ALL PLAYERS try to be the first one to claim that Card\". \"Now the next player rolls the Dice, and it’s time to race for another Card. Play continues clockwise.\" © 2016 PlayMonster LLC.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "full-circle-playmonster-en",
+  "slug": "full-circle-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "09c685b6d330f9ab54a56b746f082486c4aed370e8596ae2ee7b62986fea89ef",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Full Circle",
+  "aliases": [
+    "Full Circle word game"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "The youngest player goes first. The player to the right goes next.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2019/09/FullCircle_Rules.pdf",
+      "title": "Full Circle — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • The youngest player goes first, using Letter Tiles from the center of the Game Disc to spell a word.\" \"• The next player to the right now spells a word using at least one of the letters from the previous player’s word.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
