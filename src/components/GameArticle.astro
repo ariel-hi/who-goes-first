@@ -20,6 +20,8 @@ const sourceIsPdf = isPdfSource(firstSource.url, firstSource.pdfPagesOneBased);
 const passageUrl = firstPage ? pdfPageHref(firstSource.url, firstPage) : null;
 // Roll-based starts link to the dice roller for tables missing their dice.
 const rollsDice = /\broll(s|ed|er|ing)?\b/i.test(`${rule.firstPlayerRule} ${rule.officialTieBreak ?? ''}`);
+// Card draws for the deal link to the online deck.
+const drawsCards = /\b(high|low|higher|lower|highest|lowest) card\b|\bcut (for|the deck)\b|\bdraws? (cards|for)\b/i.test(`${rule.firstPlayerRule} ${rule.officialTieBreak ?? ''}`);
 const houseFallbackUsesRandomChoice = /\brandom(?:ly)?\b/i.test(rule.houseFallback ?? '');
 const coverImage = rule.image?.presentation === 'cover' ? rule.image : undefined;
 const insetCoverImage = coverImage && (coverImage.width / coverImage.height <= 1.45 || coverImage.width < 320) ? coverImage : undefined;
@@ -45,6 +47,7 @@ const creditedImages = [...(rule.image ? [rule.image] : []), ...(rule.additional
   })}</ul>{publisherHub && <a class="inline-link" href={`/publishers/${publisherHub.slug}/`}>All {publisherHub.count} {publisherHub.name} starting rules</a>}{creditedImages.map(image => <p class="small muted image-credit">Image: {image.licence?.attribution ?? `© ${image.fairUse?.rightsHolder}`} · <a href={image.source.url} rel="noreferrer">{image.source.publisher}</a>{image.licence && <> · <a href={image.licence.url} rel="noreferrer">{image.licence.name}</a></>}{image.fairUse && <> · Editorial fair use ({image.fairUse.rationale})</>}</p>)}</section>
   {rule.pickerSuggestionApplicable !== false && !rule.houseFallback && <p class="small muted">If your rules call for a random choice, <a class="inline-link" href="/">use the player picker</a>.</p>}
   {!preview && rollsDice && <p class="small muted">Missing the dice? <a class="inline-link" href="/dice-roller/">Roll them online</a>.</p>}
+  {!preview && drawsCards && <p class="small muted">No deck handy? <a class="inline-link" href="/card-draw/">Draw a card online</a>.</p>}
   {!preview && <SharePage label="Share this rule" title={ruleHeading(rule.gameName)} pin={{ path: `/games/${rule.slug}/`, description: `${ruleHeading(rule.gameName)} ${rule.firstPlayerRule}` }} />}
   {rule.clarifications.length > 0 && <section class="rule-section rule-card"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
   {rule.interpretation && <section class="rule-section rule-card"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
