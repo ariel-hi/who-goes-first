@@ -1,0 +1,35 @@
+{
+  "id": "war-bicycle-en",
+  "slug": "war-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "4e988f1453d43b28a016f19f15ab97f4493ccf3ec2fbb2aa61758e67af0526dc",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "War (card game)",
+  "aliases": [
+    "War card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Nobody goes first: both players turn up a card at the same time. Anyone may deal.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "If the turned-up cards match in rank, it is War: each player adds one card face down and one face up."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/war",
+      "title": "War (card game) — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards War page in a browser. \"Anyone may deal first.\" \"Each player turns up a card at the same time and the player with the higher card takes both cards\".",
+  "uncertainty": []
+}

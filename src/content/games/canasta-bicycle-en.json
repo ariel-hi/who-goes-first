@@ -1,0 +1,36 @@
+{
+  "id": "canasta-bicycle-en",
+  "slug": "canasta-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a8a21405724740d95cd2c6f2b509d6db6d094c937e4922b5cc2d2d0189c894de",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Canasta",
+  "aliases": [
+    "Canasta card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Players draw cards; the highest card chooses a seat and plays first in the first deal. The player to that player’s right deals the first hand.",
+  "officialTieBreak": "Players drawing equal cards or jokers draw again.",
+  "houseFallback": null,
+  "clarifications": [
+    "For the draw, suits rank spades (high), hearts, diamonds, clubs.",
+    "After the first hand, the turn to play always starts with the player to the dealer’s left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/canasta",
+      "title": "Canasta — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Draw\", \"The Shuffle and Cut\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Canasta page in a browser. \"The player drawing the highest card has choice of seats, plays first in the first deal, and has the player drawing the second-highest card as their partner.\" \"Players drawing equal cards or jokers must draw again.\" \"The first hand is dealt by the player to the right of the person who drew the highest card.\" \"The player to left of the dealer plays first.\"",
+  "uncertainty": []
+}

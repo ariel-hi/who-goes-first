@@ -996,6 +996,82 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "e2c8111dfe234ff42917465f3083f88afafc04988ee5f1d14d128d32a7c2b726"
+    },
+    {
+      "ruleId": "canasta-bicycle-en",
+      "ruleRevision": "a8a21405724740d95cd2c6f2b509d6db6d094c937e4922b5cc2d2d0189c894de",
+      "identityId": "game-d7459948-60c1-4db7-b5ac-b14af0de538a",
+      "identityRevision": "ae6429d93d79c7feec9d45898177f9b7d42cc8fc8387135506662af62c1188bf",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/canasta",
+          "sha256": "79c22e7d3248df0edbeae801bbbbb79d4a95c33550fc47908b870c4de7a1f2d0",
+          "location": "\"The Draw\", \"The Shuffle and Cut\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Canasta."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "50c8c03a1e4f44fe6cf624fa7510f2519650df5f0a487768afe3ef27af468b2b"
+    },
+    {
+      "ruleId": "war-bicycle-en",
+      "ruleRevision": "4e988f1453d43b28a016f19f15ab97f4493ccf3ec2fbb2aa61758e67af0526dc",
+      "identityId": "game-7bee8131-a262-4a08-8be2-d2123143eafe",
+      "identityRevision": "baf451718b2dc79a0d6f74e485a1efcd7485270b05dbc542f5e4b43a49338f7d",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/war",
+          "sha256": "cc6495c21ad127506bc0082db9946e711df54fa3e65160954e035a546954df8c",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for War (card game)."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "48afd4b7548b1c6860ca37317da9671f74d0d130e32ce3ba41be0eb45669d3e8"
+    },
+    {
+      "ruleId": "slapjack-bicycle-en",
+      "ruleRevision": "36741ba133d2941ac5032e8b1f2c65ba9ca20243eb929123ab95152fd8938cb0",
+      "identityId": "game-931355b8-84b9-4598-a8d8-ce91db8ccac5",
+      "identityRevision": "3327dbfeac84003b7a17437c8b2b347895eb8448460c28d4d045310e56f4080b",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/slapjack",
+          "sha256": "001479afa34a8ec66f45ee08ac3756ef1924144b4c8730786bb8b2a506b05e94",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Slapjack."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "1ce2d9796c025c8ceff0ec5443b9b72475f1df3569e1319f040c11c25d9894b6"
+    },
+    {
+      "ruleId": "old-maid-bicycle-en",
+      "ruleRevision": "66b9639c9a4f90a1836b2d629fa217bdf7af7bc3e5bd28386655c5cb5b0d51f9",
+      "identityId": "game-8f16301f-fda2-443c-85c4-783978cf40cb",
+      "identityRevision": "e3a829f121381a2fd1beaa2c05667de8e53ff91fb9a4d42ad057049e87d7fcf6",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/old-maid",
+          "sha256": "e3699969a7c64411fe9714df23c59f7cf6c4b9582297ca17484c036c4e98ec25",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Old Maid."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "b71b18d3f867aaafbcc85aa9373f47e7e8dddc33cd0e0fcbe0ee381e0138d4c9"
     }
   ]
 }

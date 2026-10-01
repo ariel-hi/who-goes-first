@@ -4284,6 +4284,114 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "ca10d856dddd6a23f1854cfc0c19ec504b20cca67e00575bd112718a2aab887b"
+    },
+    {
+      "identityId": "game-d7459948-60c1-4db7-b5ac-b14af0de538a",
+      "routeKey": "game-d7459948-60c1-4db7-b5ac-b14af0de538a",
+      "name": "Canasta",
+      "searchNames": [
+        "Canasta card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Canasta, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Canasta and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-canasta",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-canasta",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/canasta",
+          "sha256": "79c22e7d3248df0edbeae801bbbbb79d4a95c33550fc47908b870c4de7a1f2d0",
+          "byteCount": 128646,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ae6429d93d79c7feec9d45898177f9b7d42cc8fc8387135506662af62c1188bf"
+    },
+    {
+      "identityId": "game-7bee8131-a262-4a08-8be2-d2123143eafe",
+      "routeKey": "game-7bee8131-a262-4a08-8be2-d2123143eafe",
+      "name": "War (card game)",
+      "searchNames": [
+        "War card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game War (card game), played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game War (card game) and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-war",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-war",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/war",
+          "sha256": "cc6495c21ad127506bc0082db9946e711df54fa3e65160954e035a546954df8c",
+          "byteCount": 52898,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "baf451718b2dc79a0d6f74e485a1efcd7485270b05dbc542f5e4b43a49338f7d"
+    },
+    {
+      "identityId": "game-931355b8-84b9-4598-a8d8-ce91db8ccac5",
+      "routeKey": "game-931355b8-84b9-4598-a8d8-ce91db8ccac5",
+      "name": "Slapjack",
+      "searchNames": [
+        "Slap Jack"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Slapjack, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Slapjack and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-slapjack",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-slapjack",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/slapjack",
+          "sha256": "001479afa34a8ec66f45ee08ac3756ef1924144b4c8730786bb8b2a506b05e94",
+          "byteCount": 95220,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "3327dbfeac84003b7a17437c8b2b347895eb8448460c28d4d045310e56f4080b"
+    },
+    {
+      "identityId": "game-8f16301f-fda2-443c-85c4-783978cf40cb",
+      "routeKey": "game-8f16301f-fda2-443c-85c4-783978cf40cb",
+      "name": "Old Maid",
+      "searchNames": [
+        "Old Maid card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Old Maid, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Old Maid and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-old-maid",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-old-maid",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/old-maid",
+          "sha256": "e3699969a7c64411fe9714df23c59f7cf6c4b9582297ca17484c036c4e98ec25",
+          "byteCount": 94305,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e3a829f121381a2fd1beaa2c05667de8e53ff91fb9a4d42ad057049e87d7fcf6"
     }
   ]
 }

@@ -1,0 +1,37 @@
+{
+  "id": "slapjack-bicycle-en",
+  "slug": "slapjack-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "36741ba133d2941ac5032e8b1f2c65ba9ca20243eb929123ab95152fd8938cb0",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Slapjack",
+  "aliases": [
+    "Slap Jack"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The player on the dealer’s left turns up the first card, then play continues to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker to choose the dealer.",
+  "clarifications": [
+    "Anyone can slap a jack, so the first turn gives no real advantage."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/slapjack",
+      "title": "Slapjack — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Slapjack page in a browser. \"Beginning on the dealer’s left, each player lifts one card at a time from their pile and places it face up in the center of the table.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}
