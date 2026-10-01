@@ -6050,6 +6050,61 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "99db68e390f929b21890c0cf163b95e443bf1a34aa1cbafe0ef55394e553a82f"
+    },
+    {
+      "identityId": "game-6cd022d5-c778-4e43-9691-0dfdf92dd20f",
+      "routeKey": "game-6cd022d5-c778-4e43-9691-0dfdf92dd20f",
+      "name": "DOS Second Edition",
+      "searchNames": [
+        "DOS 2nd Edition"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "DOS Second Edition, the Mattel UNO-family card game, item HNN01, as described in its English instructions PDF.",
+      "identityEvidence": "Mattel's service-site instructions name DOS Second Edition, item HNN01, with its 112-card deck.",
+      "publisherReferenceSourceId": "dos-second-edition-mattel-hnn01-en-primary",
+      "sources": [
+        {
+          "id": "dos-second-edition-mattel-hnn01-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/HNN01-Eng.pdf",
+          "sha256": "1fa4162ff7d21795107e3387546a61ed2900b7f36609dfb4355700655d3ed24a",
+          "byteCount": 1795298,
+          "location": "Setup and \"Let’s Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a99920911a9b91a5db062db83612dbdfd6e6e7ae563afa9dc98c9fe1d240eebb"
+    },
+    {
+      "identityId": "game-ba8cbb41-e7d8-4101-b84a-14b771203056",
+      "routeKey": "game-ba8cbb41-e7d8-4101-b84a-14b771203056",
+      "name": "UNO Attack",
+      "searchNames": [
+        "UNO Attack!",
+        "Uno Attack launcher"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "UNO Attack, the Mattel card launcher edition of UNO, item 41943, as described in its English instructions PDF.",
+      "identityEvidence": "Mattel's service-site instructions name UNO Attack, item 41943, with its card launcher and 112-card deck.",
+      "publisherReferenceSourceId": "uno-attack-mattel-41943-en-primary",
+      "sources": [
+        {
+          "id": "uno-attack-mattel-41943-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/41943-0821-g1.pdf",
+          "sha256": "5c5d7e14568d754233f485b31af774fb63ddabae2c51f69b3b7d79a15aca096b",
+          "byteCount": 1165073,
+          "location": "Setup and \"Let’s Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d1ad1d42ab4ceaac00584e36f9c3e556a6540f53136806f780c5b3cc522746cf"
     }
   ]
 }

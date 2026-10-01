@@ -2212,6 +2212,44 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "79b8b39145dc4b3b980b821cdf0e10917038c0e0e9f898ea3ea9656bce819c66"
+    },
+    {
+      "ruleId": "dos-second-edition-mattel-hnn01-en",
+      "ruleRevision": "d5784ddfec3b401fe5043698b4a88488b56da434c99264d1953a1ba18ec00b13",
+      "identityId": "game-6cd022d5-c778-4e43-9691-0dfdf92dd20f",
+      "identityRevision": "a99920911a9b91a5db062db83612dbdfd6e6e7ae563afa9dc98c9fe1d240eebb",
+      "editionScope": "Mattel English instructions, item HNN01 (2022)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/HNN01-Eng.pdf",
+          "sha256": "1fa4162ff7d21795107e3387546a61ed2900b7f36609dfb4355700655d3ed24a",
+          "location": "Setup and \"Let’s Play\"",
+          "correspondence": "The rule cites this same Mattel document for DOS Second Edition."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "6b3df2f97ad81f563e6d11f9dec85dbf55223a8b6ba7d2b4ceaa489877362308"
+    },
+    {
+      "ruleId": "uno-attack-mattel-41943-en",
+      "ruleRevision": "680f840f27168154aecd33ef4287bf8300e73ff1a9419251b2227c5bca6eb7c2",
+      "identityId": "game-ba8cbb41-e7d8-4101-b84a-14b771203056",
+      "identityRevision": "d1ad1d42ab4ceaac00584e36f9c3e556a6540f53136806f780c5b3cc522746cf",
+      "editionScope": "Mattel English instructions, item 41943 (2002)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/41943-0821-g1.pdf",
+          "sha256": "5c5d7e14568d754233f485b31af774fb63ddabae2c51f69b3b7d79a15aca096b",
+          "location": "Setup and \"Let’s Play\"",
+          "correspondence": "The rule cites this same Mattel document for UNO Attack."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "9413d8bf840332cdde31326ff867ce3b7904b18be3b3bc4ea8da5a5095fa7c44"
     }
   ]
 }

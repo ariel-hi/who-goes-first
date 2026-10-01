@@ -1,0 +1,38 @@
+{
+  "id": "dos-mattel-frm36-en",
+  "slug": "dos-mattel-frm36-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "8c3ba8abdd46b77a7e2ada36488259d5aced41003243be97cfc6affe13b6ffe0",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "DOS",
+  "aliases": [
+    "DOS card game",
+    "Dos"
+  ],
+  "editionLabel": "Mattel English instructions, item FRM36 (2017)",
+  "firstPlayerRule": "Each player draws a card; the highest number deals (symbol cards count as zero). The person to the left of the dealer starts play.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest number, those players draw again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/FRM36-Eng.pdf",
+      "title": "DOS — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and \"Let’s Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Each player draws a card; the player that draws the highest number deals (count any card with a symbol as zero).\" \"Let’s Play: The person to the left of the dealer starts play.\" © 2017 Mattel.",
+  "uncertainty": [
+    "No tie-break is stated for equal high draws."
+  ]
+}

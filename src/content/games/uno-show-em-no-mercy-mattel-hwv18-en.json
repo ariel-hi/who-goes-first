@@ -1,0 +1,39 @@
+{
+  "id": "uno-show-em-no-mercy-mattel-hwv18-en",
+  "slug": "uno-show-em-no-mercy-mattel-hwv18-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "02d36b55912d84d3a3b996cca466082618b87afd7a0ed1199f5ba6c2ae5fcce9",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "UNO Show ’Em No Mercy",
+  "aliases": [
+    "UNO Show 'Em No Mercy",
+    "UNO No Mercy",
+    "No Mercy UNO"
+  ],
+  "editionLabel": "Mattel English instructions, item HWV18 (2023)",
+  "firstPlayerRule": "Choose a dealer. The player to the left of the dealer goes first, and play proceeds clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say how to choose the dealer; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/HVW18-Eng.pdf",
+      "title": "UNO Show ’Em No Mercy — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup and \"Let’s Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 1: \"Choose a dealer and shuffle the cards. Deal 7 cards to each player.\" \"The player to the left of the dealer goes first and play proceeds clockwise.\" © 2023 Mattel.",
+  "uncertainty": [
+    "The rules do not say how to choose the dealer."
+  ]
+}

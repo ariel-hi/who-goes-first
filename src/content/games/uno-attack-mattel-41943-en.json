@@ -1,0 +1,38 @@
+{
+  "id": "uno-attack-mattel-41943-en",
+  "slug": "uno-attack-mattel-41943-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "680f840f27168154aecd33ef4287bf8300e73ff1a9419251b2227c5bca6eb7c2",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "UNO Attack",
+  "aliases": [
+    "UNO Attack!",
+    "Uno Attack launcher"
+  ],
+  "editionLabel": "Mattel English instructions, item 41943 (2002)",
+  "firstPlayerRule": "Players pick cards to choose the dealer; the highest number deals and special cards don’t count. The player to the left of the dealer starts play.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest number, those players pick again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/41943-0821-g1.pdf",
+      "title": "UNO Attack — Instructions",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "Setup and \"Let’s Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. PDF page 3: \"...number deals. If you picked a Special Card, too bad – they don’t count.\" \"The dealer deals 7 cards to each player, starts the Discard pile ..., then loads the Launcher.\" \"Player to the left of dealer starts play.\" © 2002 Mattel.",
+  "uncertainty": [
+    "No tie-break is stated for equal high picks."
+  ]
+}
