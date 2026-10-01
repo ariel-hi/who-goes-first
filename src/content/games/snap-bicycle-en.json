@@ -1,0 +1,35 @@
+{
+  "id": "snap-bicycle-en",
+  "slug": "snap-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "71b9fd80f7c075796ccd5f513dfd1ad97ac63cbeb2c296ad7672a41a056a0e2a",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Snap",
+  "aliases": [
+    "Snap card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The player on the dealer’s left turns over the first card.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/snap",
+      "title": "Snap — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Snap page. \"The Play: The player on the dealer’s left turns over the top card of his pile and puts it face up starting a pile of cards next to their face down cards.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}

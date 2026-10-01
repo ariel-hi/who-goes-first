@@ -1,0 +1,36 @@
+{
+  "id": "in-between-bicycle-en",
+  "slug": "in-between-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5f8bc6043e0c9361f342373424d7d48ab09ab1f1b355ab632d7f5fdcc1cc6ef3",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "In-Between (card game)",
+  "aliases": [
+    "Acey Deucey card game",
+    "In Between card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The player on the dealer’s left bets first. Each player then takes a turn, ending with the dealer.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/in-between",
+      "title": "In-Between — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Betting\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards In-Between page. \"The Betting: The player on the dealer’s left may bet up to the entire pot\". \"the dealer repeats the same procedure until all the players, including the dealer, have had a turn.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}

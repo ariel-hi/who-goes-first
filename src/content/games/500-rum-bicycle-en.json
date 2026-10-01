@@ -1,0 +1,37 @@
+{
+  "id": "500-rum-bicycle-en",
+  "slug": "500-rum-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "6d7cf83bab90f21db15ef220dd4c56bc779a32438db70ab4bfb341373e840cd8",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "500 Rum",
+  "aliases": [
+    "500 Rummy",
+    "Rummy 500",
+    "Pinochle Rummy"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Play begins with the player to the left of the dealer, who draws either from the stock or the discard pile.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/500-rum",
+      "title": "500 Rum — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards 500 Rum page. \"The Play: Each player, beginning with the player to the left of the dealer, may draw either the top card of the stock or any card from the discard pile.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}

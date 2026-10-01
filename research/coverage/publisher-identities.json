@@ -5737,6 +5737,233 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "2af5b76c1d49f70fe838899f1cfaeb408d5581e406143300662b66397c12937d"
+    },
+    {
+      "identityId": "game-aafb30f2-1869-4f25-9a1c-57df83d6c49f",
+      "routeKey": "game-aafb30f2-1869-4f25-9a1c-57df83d6c49f",
+      "name": "In-Between (card game)",
+      "searchNames": [
+        "Acey Deucey card game",
+        "In Between card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game In-Between (card game), played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game In-Between (card game) and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "in-between-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "in-between-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/in-between",
+          "sha256": "d18d6ae0ebeab0a19200014376d94347afbde5f90f33e8634346c2b8ce52d847",
+          "byteCount": 191138,
+          "location": "\"The Betting\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "91e66144f326f0ae539570243d031ca184834464ca49a0f97ffb86532ffbd26e"
+    },
+    {
+      "identityId": "game-916bbbe5-5a14-4e4b-8760-12027562728a",
+      "routeKey": "game-916bbbe5-5a14-4e4b-8760-12027562728a",
+      "name": "I Doubt It",
+      "searchNames": [
+        "Cheat",
+        "Bluff"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game I Doubt It, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game I Doubt It and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "i-doubt-it-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "i-doubt-it-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/i-doubt-it",
+          "sha256": "3f14c98b4650abe9595bf4cb2db6f30839fe4d62054404238506e3eddbf71f1d",
+          "byteCount": 176653,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f4d0bd1e23e0e25e9ae0d0148a26535cd7fea8c38b889b3c97e75d82fcf104f7"
+    },
+    {
+      "identityId": "game-22526b5b-9610-4128-acf6-9311114fa41c",
+      "routeKey": "game-22526b5b-9610-4128-acf6-9311114fa41c",
+      "name": "Presidents",
+      "searchNames": [
+        "President",
+        "Kings and Scum"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Presidents, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Presidents and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "presidents-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "presidents-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/presidents",
+          "sha256": "faf49a2368dc6dae31edc0abcfb70a2043f1b582c76e5c03f9262859b9d79f1d",
+          "byteCount": 130308,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "16c09e9f75fb6801d6b05531904971dd97ca6b4ebcf97af3664958fa3c359da7"
+    },
+    {
+      "identityId": "game-f047b772-a5e4-46b8-a653-df8dd4a1a964",
+      "routeKey": "game-f047b772-a5e4-46b8-a653-df8dd4a1a964",
+      "name": "Six Card Golf",
+      "searchNames": [
+        "Golf card game",
+        "Golf"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Six Card Golf, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Six Card Golf and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "six-card-golf-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "six-card-golf-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/six-card-golf",
+          "sha256": "c9af22187e402e483490b92305c1c61c5eec1fe79be190193849753887dd3b78",
+          "byteCount": 98723,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "677abdce415d74edaee426764cbd3e60119e758246e78db21109894952205020"
+    },
+    {
+      "identityId": "game-8e95d651-c6ad-4e98-8507-b0ffca705d8a",
+      "routeKey": "game-8e95d651-c6ad-4e98-8507-b0ffca705d8a",
+      "name": "500 Rum",
+      "searchNames": [
+        "500 Rummy",
+        "Rummy 500",
+        "Pinochle Rummy"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game 500 Rum, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game 500 Rum and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "500-rum-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "500-rum-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/500-rum",
+          "sha256": "49f834595ca3001379d3acb9acf4c42250e7cb049e33dcfa7086774d32b30b65",
+          "byteCount": 136278,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "75e45ba602cafc88bbe062ca36b90fa99950d628abc608f20e6f907a2a424958"
+    },
+    {
+      "identityId": "game-63973082-684e-48e3-9c30-fc74d9a51b5c",
+      "routeKey": "game-63973082-684e-48e3-9c30-fc74d9a51b5c",
+      "name": "Oh Pshaw",
+      "searchNames": [
+        "Oh Hell",
+        "Oh Well",
+        "Up and Down the River"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Oh Pshaw, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Oh Pshaw and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "oh-pshaw-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "oh-pshaw-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/oh-pshaw",
+          "sha256": "e7a0e78e4fef5b2c3c0c12a924969f352e3088ccc2f241fef71ba5689201edb4",
+          "byteCount": 116820,
+          "location": "\"The Bidding\" and \"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "64dc44dc2f6714371b4385cb66dab794458e7d7584852c3f45a7f321529a0f8e"
+    },
+    {
+      "identityId": "game-a7e8efc3-ac60-4d25-b540-68288eda7632",
+      "routeKey": "game-a7e8efc3-ac60-4d25-b540-68288eda7632",
+      "name": "Fan Tan",
+      "searchNames": [
+        "Fan-Tan",
+        "Sevens",
+        "Card Dominoes",
+        "Parliament"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Fan Tan, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Fan Tan and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "fan-tan-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "fan-tan-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/fan-tan",
+          "sha256": "3c0abdd9e316cccddf440331f59043b095190db917d49921042c42c4ca0acff0",
+          "byteCount": 188789,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "dfe6ba930ee233163e99bc9f58aaab08e9c0d210be74f5abe4e6e7d98a4a250e"
+    },
+    {
+      "identityId": "game-6982a2c7-952e-4629-960d-952ae13e7ae5",
+      "routeKey": "game-6982a2c7-952e-4629-960d-952ae13e7ae5",
+      "name": "Snap",
+      "searchNames": [
+        "Snap card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Snap, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Snap and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "snap-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "snap-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/snap",
+          "sha256": "bea37dff46d0b5c60bbbb9ca417947781067014177d99c0b3dfa55f0f4e74746",
+          "byteCount": 77283,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a2190a2aa89b5f597e2a0b3e8f448a47e7219492e09507cf644b29285565067a"
     }
   ]
 }
