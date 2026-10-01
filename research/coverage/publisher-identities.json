@@ -6714,6 +6714,142 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "532948af926b08e2e125f46cd8f98502b21dc4bda88faabfda8835ce8b002248"
+    },
+    {
+      "identityId": "game-9e69826d-8f13-4eee-88cc-8c18d1646cbd",
+      "routeKey": "game-9e69826d-8f13-4eee-88cc-8c18d1646cbd",
+      "name": "Booyah!",
+      "searchNames": [
+        "Booyah",
+        "Booyah dice game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Booyah!, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Booyah! and gives its complete English rules.",
+      "publisherReferenceSourceId": "booyah-playmonster-2019-en-primary",
+      "sources": [
+        {
+          "id": "booyah-playmonster-2019-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/09/Booyah_Rules.pdf",
+          "sha256": "63066055d1aa69fc35bee5bde99f5e3e7f32a1e4fab4a53a7be2660396cbb464",
+          "byteCount": 681009,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "fb791af45c22b3e1a6f08b2d7cacc56ecc9d1d1d01a8d950c63cd412d905d741"
+    },
+    {
+      "identityId": "game-a529dc69-1b24-4a6f-9884-c191920c6493",
+      "routeKey": "game-a529dc69-1b24-4a6f-9884-c191920c6493",
+      "name": "Cheese Dip",
+      "searchNames": [
+        "Cheese Dip spelling game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Cheese Dip, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Cheese Dip and gives its complete English rules.",
+      "publisherReferenceSourceId": "cheese-dip-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "cheese-dip-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7846_cheese_dip_rules.pdf",
+          "sha256": "ceccfab63d4064e08d87edd5db3ae5bf13c695dffc2bda35498dbdb7b76a4b3f",
+          "byteCount": 3244086,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "7936bec2b78f2fbc3e7ca6abc0e024503e7a5470e187c8f80c0d8495ffb76bda"
+    },
+    {
+      "identityId": "game-f96074e0-5aa8-44a0-9825-0955a045082a",
+      "routeKey": "game-f96074e0-5aa8-44a0-9825-0955a045082a",
+      "name": "Puppy Up",
+      "searchNames": [
+        "Puppy Up numbers game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Puppy Up, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Puppy Up and gives its complete English rules.",
+      "publisherReferenceSourceId": "puppy-up-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "puppy-up-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7844_Puppy-Up-Rules.pdf",
+          "sha256": "bf025c7c1d411dc3e0653a61098cbe92b6a712290528e39260e024a2e71fb4cb",
+          "byteCount": 1516607,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f73caeafac6ae806e808e188c98ec867926baa87beb2623fafd679f56f0c3e39"
+    },
+    {
+      "identityId": "game-6f0ab8bc-901d-4588-9899-0e9258677e34",
+      "routeKey": "game-6f0ab8bc-901d-4588-9899-0e9258677e34",
+      "name": "Go Oink!",
+      "searchNames": [
+        "Go Oink"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Go Oink!, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Go Oink! and gives its complete English rules.",
+      "publisherReferenceSourceId": "go-oink-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "go-oink-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/GoOink_Rules.pdf",
+          "sha256": "dc2ecd4bc2ef6c0cd9649f7c72bf1680b2b046ab9cc0700ef1b878178a6aa828",
+          "byteCount": 1192243,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "01c33417d404ea4a7a81c930fbe86c02d8652758e96a36ffdcda637d5af13ff9"
+    },
+    {
+      "identityId": "game-27513182-f11a-4c4b-85c4-df8e51dbbe8c",
+      "routeKey": "game-27513182-f11a-4c4b-85c4-df8e51dbbe8c",
+      "name": "Yeti, Set, Go!",
+      "searchNames": [
+        "Yeti Set Go"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Yeti, Set, Go!, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Yeti, Set, Go! and gives its complete English rules.",
+      "publisherReferenceSourceId": "yeti-set-go-playmonster-2018-en-primary",
+      "sources": [
+        {
+          "id": "yeti-set-go-playmonster-2018-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/08/YetiSetGo_Rules_Eng.pdf",
+          "sha256": "56c4dc6cccdb7ca387a7446d2ae59024a196c89a85a666bf429cca71c0e01a83",
+          "byteCount": 1432074,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "976934e48c9d3ffea9fc525f263cc97ba4f755db1ce967680325b8a1a6e328dc"
     }
   ]
 }

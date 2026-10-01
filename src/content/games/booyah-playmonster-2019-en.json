@@ -1,0 +1,38 @@
+{
+  "id": "booyah-playmonster-2019-en",
+  "slug": "booyah-playmonster-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "b41053e792238995e6d41db70209f0e21228270bfb09110ed43294b55618c6d1",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Booyah!",
+  "aliases": [
+    "Booyah",
+    "Booyah dice game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2019 PlayMonster)",
+  "firstPlayerRule": "Each player rolls a die. The team with the highest combined roll is the first to play offense.",
+  "officialTieBreak": null,
+  "houseFallback": "If the teams tie, roll again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2020/09/Booyah_Rules.pdf",
+      "title": "Booyah! — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • Each player rolls a die, and the team with the highest combined roll is the first to play offense.\" © 2019 PlayMonster LLC.",
+  "uncertainty": [
+    "No tie-break is stated for equal team totals."
+  ]
+}

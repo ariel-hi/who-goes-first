@@ -1,0 +1,37 @@
+{
+  "id": "go-oink-playmonster-en",
+  "slug": "go-oink-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "68edaab3615a90937aa57c6c0c6ec60cbe305a936c8ee12525f5e4733827a766",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Go Oink!",
+  "aliases": [
+    "Go Oink"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2013 Patch Products)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/GoOink_Rules.pdf",
+      "title": "Go Oink! — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • If you’re the youngest player, you go first.\" © 2013 Patch Products.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

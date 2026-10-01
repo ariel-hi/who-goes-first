@@ -2668,6 +2668,101 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "c165d40e167d4f947aea3ffb806874a116b4046c977de7d995f9ffdb1592400a"
+    },
+    {
+      "ruleId": "booyah-playmonster-2019-en",
+      "ruleRevision": "b41053e792238995e6d41db70209f0e21228270bfb09110ed43294b55618c6d1",
+      "identityId": "game-9e69826d-8f13-4eee-88cc-8c18d1646cbd",
+      "identityRevision": "fb791af45c22b3e1a6f08b2d7cacc56ecc9d1d1d01a8d950c63cd412d905d741",
+      "editionScope": "PlayMonster English rules (© 2019 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/09/Booyah_Rules.pdf",
+          "sha256": "63066055d1aa69fc35bee5bde99f5e3e7f32a1e4fab4a53a7be2660396cbb464",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Booyah!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "0e16ac9041b7a6092702020bfc298e8298f8bcbc844ffcc2a9e6fa67d56d4c13"
+    },
+    {
+      "ruleId": "cheese-dip-playmonster-en",
+      "ruleRevision": "a72132e77a3d7912f2c3aeccc20c42dd0f3a3b14fcb97d1f1fc117d29aa59947",
+      "identityId": "game-a529dc69-1b24-4a6f-9884-c191920c6493",
+      "identityRevision": "7936bec2b78f2fbc3e7ca6abc0e024503e7a5470e187c8f80c0d8495ffb76bda",
+      "editionScope": "PlayMonster English rules (© 2015 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7846_cheese_dip_rules.pdf",
+          "sha256": "ceccfab63d4064e08d87edd5db3ae5bf13c695dffc2bda35498dbdb7b76a4b3f",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Cheese Dip."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "7e7e07145068c61925296af1727481f4d49ed750270c9108bb0abdbd8a458131"
+    },
+    {
+      "ruleId": "puppy-up-playmonster-en",
+      "ruleRevision": "90c0ef7b1fdc5536d33b8d52902dc645de194b1b9f6fd3991307cd31cb473d1e",
+      "identityId": "game-f96074e0-5aa8-44a0-9825-0955a045082a",
+      "identityRevision": "f73caeafac6ae806e808e188c98ec867926baa87beb2623fafd679f56f0c3e39",
+      "editionScope": "PlayMonster English rules (© 2015 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7844_Puppy-Up-Rules.pdf",
+          "sha256": "bf025c7c1d411dc3e0653a61098cbe92b6a712290528e39260e024a2e71fb4cb",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Puppy Up."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "056a7ad260e48a2e37662663d258ef71f556fcaa3a85ac2f39dc1d92385955ed"
+    },
+    {
+      "ruleId": "go-oink-playmonster-en",
+      "ruleRevision": "68edaab3615a90937aa57c6c0c6ec60cbe305a936c8ee12525f5e4733827a766",
+      "identityId": "game-6f0ab8bc-901d-4588-9899-0e9258677e34",
+      "identityRevision": "01c33417d404ea4a7a81c930fbe86c02d8652758e96a36ffdcda637d5af13ff9",
+      "editionScope": "PlayMonster English rules (© 2013 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/GoOink_Rules.pdf",
+          "sha256": "dc2ecd4bc2ef6c0cd9649f7c72bf1680b2b046ab9cc0700ef1b878178a6aa828",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Go Oink!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "b4e946bed0e26fd9a6c610bfa5d3b0f9d6c4f50283794109c781e033a3fad8f9"
+    },
+    {
+      "ruleId": "yeti-set-go-playmonster-2018-en",
+      "ruleRevision": "fd411d6fa7c811fc0b64e9cbcbaf174df0fe4993cd5581fe343cbc3438fe99db",
+      "identityId": "game-27513182-f11a-4c4b-85c4-df8e51dbbe8c",
+      "identityRevision": "976934e48c9d3ffea9fc525f263cc97ba4f755db1ce967680325b8a1a6e328dc",
+      "editionScope": "PlayMonster English rules (© 2018 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/08/YetiSetGo_Rules_Eng.pdf",
+          "sha256": "56c4dc6cccdb7ca387a7446d2ae59024a196c89a85a666bf429cca71c0e01a83",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Yeti, Set, Go!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "be546034cf9a89dcf4a647380dcb5ca8d54acaa3d45531b4d21c821503da5afe"
     }
   ]
 }
