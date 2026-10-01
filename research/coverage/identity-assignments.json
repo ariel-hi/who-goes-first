@@ -1851,6 +1851,82 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "736cfc66482c4bae657425a966dcf1ef6eaead808d2a88d5e4fadfdb76abc254"
+    },
+    {
+      "ruleId": "stinky-pig-playmonster-2014-en",
+      "ruleRevision": "dcf6a8aac5534f6eca602c6a680e7f2c5ab095e226ae46e55c0b5ad17977c289",
+      "identityId": "game-427340f0-c6bd-441a-af8a-3fdc2f6e23f2",
+      "identityRevision": "8b15ed655cba610cc909e2ae6ee3cef6d3ed1ac4409179a57230c5f9159ed9a8",
+      "editionScope": "PlayMonster English rules (© 2014 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/StinkyPigRules.pdf",
+          "sha256": "fa2d73a3011b101bc65ed4d5ff440ee73445a861a9afe07ef0174042a0bae9c9",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Stinky Pig."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "07ba80a6b21381fe9b7dff04f210aae31bd3473162ce2a39fcaecfe7d9ae32b8"
+    },
+    {
+      "ruleId": "pass-the-pup-playmonster-6608-en",
+      "ruleRevision": "6a5cd2cba4cdd7250667e92a75050ab8105c97aef32e6e720752d07117d1e1db",
+      "identityId": "game-910f3063-c210-4940-b9c3-96a16756c3c1",
+      "identityRevision": "211666063bcf29c5768870db9811984c9a30b8b6d1f27d7895f6cfec87db9703",
+      "editionScope": "PlayMonster English rules, item 6608",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/08/PassPup_Rules.pdf",
+          "sha256": "b21db9b62bad6f26f6bbb4de5d68e678b438bd700c7c34c653f438ce9b4fe987",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Pass the Pup."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "3be52f1500ab87ec2e90c1bdad3fa69a3625441c51d81913e71edcef8cc73b8a"
+    },
+    {
+      "ruleId": "utter-nonsense-family-playmonster-en",
+      "ruleRevision": "9e649b84e68a927809a08145af330c31beda9fc192bd3334416c114981910d04",
+      "identityId": "game-2fa3e8ae-e37e-4db2-bdc2-084752d22c9f",
+      "identityRevision": "e565ceb676df16e8d3c1fec734ae4367f6fa40f00fe20fb35af74481b3e5a169",
+      "editionScope": "PlayMonster English rules (Family Edition)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/05/UtterFamily_RULES-2.pdf",
+          "sha256": "26f1961d3367396292547742beb9c6e209045b1a514a5e2545548c8e7ec77694",
+          "location": "\"The Rules of Play\" Nos. 1, 3 and 5",
+          "correspondence": "The rule cites this same PlayMonster document for Utter Nonsense! Family Edition."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "848c9d70b32f70bd759a98b633f1429d8673d25c21e4383444105a2bf1637871"
+    },
+    {
+      "ruleId": "relative-insanity-playmonster-en",
+      "ruleRevision": "0ba206012135740fee71db311840808a9ed8271c697745fd7392644c27100c05",
+      "identityId": "game-93a20581-3d13-42bf-9fe0-51bfc26f28af",
+      "identityRevision": "405417e6cdd13fa244bf216921af377d46cf638b9baddf14bdbc3af3c474235c",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/RelativeInsanityRules.pdf",
+          "sha256": "3cb214749c3d95648d5ce99e199d422d3fe3d0de6b09db95084e370cce71acb4",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Relative Insanity."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "318967a79809741a08a4f63e621ddbbc146ad50f7a620208996f2c5985250cd2"
     }
   ]
 }

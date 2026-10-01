@@ -5518,6 +5518,115 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "fd11ed92e7eea4e43a42c09d0cd1b6d4f2acd135e7e4e8b2b262469d517dfa5e"
+    },
+    {
+      "identityId": "game-427340f0-c6bd-441a-af8a-3fdc2f6e23f2",
+      "routeKey": "game-427340f0-c6bd-441a-af8a-3fdc2f6e23f2",
+      "name": "Stinky Pig",
+      "searchNames": [
+        "Pass Him Fast Stinky Pig"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Stinky Pig, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Stinky Pig and gives its complete English rules.",
+      "publisherReferenceSourceId": "stinky-pig-playmonster-2014-en-primary",
+      "sources": [
+        {
+          "id": "stinky-pig-playmonster-2014-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/StinkyPigRules.pdf",
+          "sha256": "fa2d73a3011b101bc65ed4d5ff440ee73445a861a9afe07ef0174042a0bae9c9",
+          "byteCount": 2252995,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "8b15ed655cba610cc909e2ae6ee3cef6d3ed1ac4409179a57230c5f9159ed9a8"
+    },
+    {
+      "identityId": "game-910f3063-c210-4940-b9c3-96a16756c3c1",
+      "routeKey": "game-910f3063-c210-4940-b9c3-96a16756c3c1",
+      "name": "Pass the Pup",
+      "searchNames": [
+        "Pass the Pup game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Pass the Pup, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Pass the Pup and gives its complete English rules.",
+      "publisherReferenceSourceId": "pass-the-pup-playmonster-6608-en-primary",
+      "sources": [
+        {
+          "id": "pass-the-pup-playmonster-6608-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/08/PassPup_Rules.pdf",
+          "sha256": "b21db9b62bad6f26f6bbb4de5d68e678b438bd700c7c34c653f438ce9b4fe987",
+          "byteCount": 1150662,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "211666063bcf29c5768870db9811984c9a30b8b6d1f27d7895f6cfec87db9703"
+    },
+    {
+      "identityId": "game-2fa3e8ae-e37e-4db2-bdc2-084752d22c9f",
+      "routeKey": "game-2fa3e8ae-e37e-4db2-bdc2-084752d22c9f",
+      "name": "Utter Nonsense! Family Edition",
+      "searchNames": [
+        "Utter Nonsense Family",
+        "Utter Nonsense"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Utter Nonsense! Family Edition, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Utter Nonsense! Family Edition and gives its complete English rules.",
+      "publisherReferenceSourceId": "utter-nonsense-family-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "utter-nonsense-family-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/05/UtterFamily_RULES-2.pdf",
+          "sha256": "26f1961d3367396292547742beb9c6e209045b1a514a5e2545548c8e7ec77694",
+          "byteCount": 949451,
+          "location": "\"The Rules of Play\" Nos. 1, 3 and 5"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e565ceb676df16e8d3c1fec734ae4367f6fa40f00fe20fb35af74481b3e5a169"
+    },
+    {
+      "identityId": "game-93a20581-3d13-42bf-9fe0-51bfc26f28af",
+      "routeKey": "game-93a20581-3d13-42bf-9fe0-51bfc26f28af",
+      "name": "Relative Insanity",
+      "searchNames": [
+        "Relative Insanity party game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Relative Insanity, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Relative Insanity and gives its complete English rules.",
+      "publisherReferenceSourceId": "relative-insanity-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "relative-insanity-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/RelativeInsanityRules.pdf",
+          "sha256": "3cb214749c3d95648d5ce99e199d422d3fe3d0de6b09db95084e370cce71acb4",
+          "byteCount": 328708,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "405417e6cdd13fa244bf216921af377d46cf638b9baddf14bdbc3af3c474235c"
     }
   ]
 }

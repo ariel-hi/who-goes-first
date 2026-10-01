@@ -1,0 +1,37 @@
+{
+  "id": "pass-the-pup-playmonster-6608-en",
+  "slug": "pass-the-pup-playmonster-6608-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "6a5cd2cba4cdd7250667e92a75050ab8105c97aef32e6e720752d07117d1e1db",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pass the Pup",
+  "aliases": [
+    "Pass the Pup game"
+  ],
+  "editionLabel": "PlayMonster English rules, item 6608",
+  "firstPlayerRule": "The Pup is given to the youngest player, who begins the game by squeezing the Pup’s right paw.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/08/PassPup_Rules.pdf",
+      "title": "Pass the Pup — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, which is a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • The Pup is given to the youngest player, who begins the game by squeezing the Pup’s right paw to start the music.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

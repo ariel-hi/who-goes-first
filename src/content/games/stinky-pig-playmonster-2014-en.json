@@ -1,0 +1,37 @@
+{
+  "id": "stinky-pig-playmonster-2014-en",
+  "slug": "stinky-pig-playmonster-2014-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "dcf6a8aac5534f6eca602c6a680e7f2c5ab095e226ae46e55c0b5ad17977c289",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Stinky Pig",
+  "aliases": [
+    "Pass Him Fast Stinky Pig"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2014 Patch Products)",
+  "firstPlayerRule": "The youngest player goes first, holding Stinky Pig and the die, then pressing the pig’s belly.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/StinkyPigRules.pdf",
+      "title": "Stinky Pig — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, which is a scan with no text layer, rendered it to an image and read it. PDF page 1: \"Play • The youngest player goes first. Hold Stinky Pig in one hand, and the Die in the other. Press the pig’s belly, and when he starts singing, roll the Die!\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
