@@ -1,0 +1,35 @@
+{
+  "id": "authors-bicycle-en",
+  "slug": "authors-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "fcba41a1bb3210378e9430c12ddd8f2a92a089329c06720f380f62708cad8873",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Authors",
+  "aliases": [
+    "Authors card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Beginning with the player to the left of the dealer, each player asks for a card by rank and suit.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/authors",
+      "title": "Authors — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Authors page in a browser. \"Beginning with the player to the left of the dealer, each player requests a desired card by rank and suit.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}

@@ -2592,6 +2592,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "92d35f9ae3e54e7320833a221c889096dfb3bdbf6a5dcc6fcf3a0dbded6f0b5c"
+    },
+    {
+      "ruleId": "concentration-bicycle-en",
+      "ruleRevision": "c3a9656e1a422ece01022a9456457f7bac5ef043605b7ecdcaf92d6b019a36fb",
+      "identityId": "game-a361dd90-842d-4355-97f2-6e75fd3c411c",
+      "identityRevision": "407a7413da40c8400e710d742270afea47fb34e52d0321e61bd53be372eac487",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/concentration",
+          "sha256": "b7389d6fd43266e868b080e93ca0c4a545f728b393bad73bbab9d13a9bdc56a6",
+          "location": "\"The Play\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Concentration."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f3d57cc1bde910391f633b8b17152cd9de6d6181a72e8fd7a27db89e9f900e10"
     }
   ]
 }

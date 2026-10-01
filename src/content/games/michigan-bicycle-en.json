@@ -1,0 +1,37 @@
+{
+  "id": "michigan-bicycle-en",
+  "slug": "michigan-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "14adaa601b75592e0da66cf1c7973517aab8690053b61b6a1eea6bfb128681f4",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Michigan",
+  "aliases": [
+    "Michigan card game",
+    "Boodle",
+    "Newmarket"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The person to the left of the dealer plays first, leading the lowest card they hold in any suit.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/michigan",
+      "title": "Michigan — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Michigan page in a browser. \"The person to the left of the dealer plays first by leading with the lowest card in any suit.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}

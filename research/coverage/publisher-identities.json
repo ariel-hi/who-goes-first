@@ -6604,6 +6604,33 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "6fcbb45bd1410593c98c705056e5ff2c6fa0e7e473e419a6b7705d994328ee53"
+    },
+    {
+      "identityId": "game-a361dd90-842d-4355-97f2-6e75fd3c411c",
+      "routeKey": "game-a361dd90-842d-4355-97f2-6e75fd3c411c",
+      "name": "Concentration",
+      "searchNames": [
+        "Concentration card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Concentration, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Concentration and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "concentration-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "concentration-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/concentration",
+          "sha256": "b7389d6fd43266e868b080e93ca0c4a545f728b393bad73bbab9d13a9bdc56a6",
+          "byteCount": 76932,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "407a7413da40c8400e710d742270afea47fb34e52d0321e61bd53be372eac487"
     }
   ]
 }
