@@ -1,0 +1,38 @@
+{
+  "id": "snails-pace-race-ravensburger-22052-en",
+  "slug": "snails-pace-race-ravensburger-22052-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "0ed864fd853e0825818443ad6841220ba4ded90fac2edde170a78ca066109000",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Snail’s Pace Race",
+  "aliases": [
+    "Snail's Pace Race",
+    "Snails Pace Race"
+  ],
+  "editionLabel": "Ravensburger English rules, game no. 22052 6",
+  "firstPlayerRule": "The youngest player goes first. Players then take turns rolling the two colored dice.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/Snail%27s%20Pace%20Race%20complete.pdf",
+      "title": "Snail’s Pace Race — Rules",
+      "publisher": "Ravensburger",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Let’s Play!\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Ravensburger-hosted rules PDF, which is a scan with no text layer, rendered its pages to images and read them. PDF page 2: \"Let’s Play! The youngest player goes first. Take turns rolling the two colored dice.\" Game No. 22052 6, for 2-6 players, ages 3+.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

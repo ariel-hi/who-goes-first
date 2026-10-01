@@ -1,0 +1,37 @@
+{
+  "id": "enchanted-forest-ravensburger-01148-en",
+  "slug": "enchanted-forest-ravensburger-01148-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "f3555cec6faf9354f8f72477b31b24903ce9eabe1aa8b7b5ab0d514a63531053",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Enchanted Forest",
+  "aliases": [
+    "Enchanted Forest Ravensburger"
+  ],
+  "editionLabel": "Ravensburger English rules, game no. 01 148 3",
+  "firstPlayerRule": "Decide who goes first by rolling the dice. Players then take turns clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [],
+  "interpretation": "The rules say to decide by rolling the dice without naming high or low; this site treats the highest roll as going first.",
+  "sources": [
+    {
+      "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/Enchanted_Forest.pdf",
+      "title": "Enchanted Forest — Rules",
+      "publisher": "Ravensburger",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Preparation\" step 5 and \"Playing the Game\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Ravensburger-hosted rules PDF, which is a scan with no text layer, rendered its pages to images and read them. PDF page 2: \"5. Decide by rolling the dice who goes first.\" \"Playing the Game: Players take their turns clockwise. Both dice are thrown at each turn.\" Ravensburger Games no. 01 148 3, by Alex Randolph and Michel Matschoss.",
+  "uncertainty": [
+    "The rules do not say whether high or low wins the roll; this site reads it as the highest roll."
+  ]
+}
