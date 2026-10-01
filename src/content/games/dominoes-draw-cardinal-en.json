@@ -1,0 +1,42 @@
+{
+  "id": "dominoes-draw-cardinal-en",
+  "slug": "dominoes-draw-cardinal-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "9dc98d6dc7e97f99ddc711f045d0671025b3155e23a914a6c1d86e860c8394d3",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Dominoes",
+  "aliases": [
+    "Draw Dominoes",
+    "Block Dominoes",
+    "Domino game"
+  ],
+  "editionLabel": "Cardinal 20 Domino Games instructions: Draw and Block games (English)",
+  "firstPlayerRule": "Decide the leader before the game starts. That player may lead any domino and leads at the start of each new hand.",
+  "officialTieBreak": null,
+  "houseFallback": "Use the picker to choose the leader.",
+  "clarifications": [
+    "Block is the same game as Draw, except players pass instead of drawing when they cannot play.",
+    "In Muggins, from the same booklet, the highest double leads instead."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://s3.amazonaws.com/cardinalcdn/instructions/T98405_0000_20083278_NBL_IS_R1+_CGI_DOM+Mexican+Train+Dominoes+9593.pdf",
+      "title": "20 Domino Games — Instructions",
+      "publisher": "Cardinal Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Draw\", \"Block\" and \"Muggins\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched Cardinal’s instruction PDF from its cardinalcdn host and extracted its text with pdftotext. \"DRAW: Each player draws seven pieces. Any domino can be lead. The leader is determined before the game starts. It leads at the beginning of each new hand\". \"BLOCK: The same game as ‘Draw’ except that excess pieces are not drawn when a player cannot play.\" \"MUGGINS: Each player draws seven pieces. The highest double leads.\"",
+  "uncertainty": [
+    "The rules do not say how the leader is determined."
+  ]
+}

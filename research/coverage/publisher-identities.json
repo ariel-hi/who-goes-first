@@ -6436,6 +6436,35 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "f543b3252688975bfbd944d9abe23f03c1870ed7256f40efd63414739861288e"
+    },
+    {
+      "identityId": "game-9db722cc-d33d-422b-a6eb-95625a48db24",
+      "routeKey": "game-9db722cc-d33d-422b-a6eb-95625a48db24",
+      "name": "Dominoes",
+      "searchNames": [
+        "Draw Dominoes",
+        "Block Dominoes",
+        "Domino game"
+      ],
+      "publisher": "Cardinal Games",
+      "identityScope": "Dominoes, the traditional tile game (Draw and Block games), as described in Cardinal's 20 Domino Games instruction booklet.",
+      "identityEvidence": "Cardinal's hosted instruction booklet names and gives complete rules for the Draw and Block domino games.",
+      "publisherReferenceSourceId": "dominoes-draw-cardinal-en-primary",
+      "sources": [
+        {
+          "id": "dominoes-draw-cardinal-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://s3.amazonaws.com/cardinalcdn/instructions/T98405_0000_20083278_NBL_IS_R1+_CGI_DOM+Mexican+Train+Dominoes+9593.pdf",
+          "sha256": "49abeefb3426ee24aa3b4de9290c6e2ccc9382d17720029e17b302b3b02877e5",
+          "byteCount": 302059,
+          "location": "\"Draw\", \"Block\" and \"Muggins\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d40041d49a8f83ffece068c25bfeae1125b95233f2063662eb4fcd056e4c2ae7"
     }
   ]
 }

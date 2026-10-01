@@ -2478,6 +2478,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "936e3a4b0b8b2628d4089d266657bae41e03757a5a7befec45f661e8dec5208a"
+    },
+    {
+      "ruleId": "dominoes-draw-cardinal-en",
+      "ruleRevision": "9dc98d6dc7e97f99ddc711f045d0671025b3155e23a914a6c1d86e860c8394d3",
+      "identityId": "game-9db722cc-d33d-422b-a6eb-95625a48db24",
+      "identityRevision": "d40041d49a8f83ffece068c25bfeae1125b95233f2063662eb4fcd056e4c2ae7",
+      "editionScope": "Cardinal 20 Domino Games instructions: Draw and Block games (English)",
+      "evidence": [
+        {
+          "url": "https://s3.amazonaws.com/cardinalcdn/instructions/T98405_0000_20083278_NBL_IS_R1+_CGI_DOM+Mexican+Train+Dominoes+9593.pdf",
+          "sha256": "49abeefb3426ee24aa3b4de9290c6e2ccc9382d17720029e17b302b3b02877e5",
+          "location": "\"Draw\", \"Block\" and \"Muggins\"",
+          "correspondence": "The rule cites this same Cardinal Games document for Dominoes."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "cd54117cb014f8853ce945d3ae706b97e69d51e12ce42ba2ebb3323d60449e78"
     }
   ]
 }
