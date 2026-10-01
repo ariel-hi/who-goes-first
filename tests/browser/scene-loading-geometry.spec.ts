@@ -58,7 +58,7 @@ for (const width of [320, 1280]) for (const count of [4, 12, 24]) for (const met
           preferences: position(picker.querySelector('button[aria-controls="picker-settings"]')!),
           stage: position(stage),
           scene: position(stage.querySelector('.loading-table,.loading-balloon,[data-preview="true"]')!),
-          labels: [...stage.querySelectorAll('bdi')].map(label => ({ text: label.textContent, ...position(label) })),
+          labels: [...stage.querySelectorAll('bdi:not(.stage-result bdi)')].map(label => ({ text: label.textContent, ...position(label) })),
           scrollX, scrollY,
         };
       });

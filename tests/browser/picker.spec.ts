@@ -605,6 +605,7 @@ test('no Balloon code before use, no sound by default, and failed share has a cl
   await ready(page); await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
   expect(assets.some(url => url.includes('BalloonRise'))).toBe(false);
   expect(await page.evaluate(() => (window as unknown as { audioCalls: number }).audioCalls)).toBe(0);
+  await page.getByRole('group', { name: 'Share this page' }).getByRole('button', { name: 'More sharing options' }).click();
   await page.getByRole('group', { name: 'Share this page' }).getByRole('button', { name: 'Share this page' }).click();
   await expect(page.getByRole('textbox', { name: 'Clean sharing link' })).toHaveValue(`${STATIC}/`);
 });
@@ -656,6 +657,7 @@ test('names never enter requests or clean sharing', async ({ page }) => {
   await page.getByLabel('Player names').fill('PRIVATE_ZEBRA_927\nPRIVATE_BADGER_819');
   await page.getByRole('button', { name: 'Pick a player' }).click(); await expect(announcement(page)).toContainText('goes first');
   await page.evaluate(() => history.replaceState(null, '', '/?unrelated=1#fragment'));
+  await page.getByRole('group', { name: 'Share this page' }).getByRole('button', { name: 'More sharing options' }).click();
   await page.getByRole('group', { name: 'Share this page' }).getByRole('button', { name: 'Share this page' }).click();
   expect(await page.evaluate(() => (window as unknown as { shared: unknown }).shared)).toEqual({ title: 'Who Goes First? Random First Player Picker', url: `${STATIC}/` });
   expect(payloads.join('\n')).not.toMatch(/PRIVATE_ZEBRA|PRIVATE_BADGER/);

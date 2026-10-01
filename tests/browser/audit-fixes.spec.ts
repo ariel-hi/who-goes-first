@@ -30,7 +30,7 @@ for (const width of [320, 1280]) test(`the homepage has one usable random-rule p
   await page.goto('/');
   await expect(page.getByRole('heading', { name: 'Try a random rule' })).toHaveCount(1);
   await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveCount(0);
-  await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveCount(1);
+  await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveCount(0);
   const prior = await page.locator('[data-home-rule-source]').getAttribute('href');
   await page.getByRole('button', { name: 'Another rule' }).click();
   await expect(page.locator('[data-home-rule-source]')).not.toHaveAttribute('href', prior!);

@@ -15,6 +15,8 @@ test('sharing artwork loads inside round badges in both themes', async ({ page }
   await page.goto('/');
   const consent = page.getByRole('button', { name: 'No thanks', exact: true });
   if (await consent.isVisible()) await consent.click();
+  // Platform artwork is only rendered in production builds.
+  test.skip(await page.locator('meta[name="google-site-verification"]').count() === 0, 'non-production build has no platform links');
   const toolbar = page.getByRole('group', { name: 'Share this page', exact: true });
   await toolbar.getByRole('button', { name: 'More sharing options' }).click();
   await expect(toolbar.locator('.social-badge')).toHaveCount(11);

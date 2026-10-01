@@ -70,8 +70,8 @@ for (const viewport of [{ width: 1280, height: 720 }, { width: 320, height: 844 
         }
       }
       expect(Math.abs(before.scene.width - before.scene.height)).toBeLessThanOrEqual(0.5);
-      expect(before.scene.width).toBeLessThanOrEqual(235.5);
-      expect(Math.abs(before.scene.width - Math.min(before.stageContentWidth, 235))).toBeLessThanOrEqual(0.5);
+      expect(before.scene.width).toBeLessThanOrEqual(280.5);
+      expect(Math.abs(before.scene.width - Math.min(before.stageContentWidth, 280))).toBeLessThanOrEqual(0.5);
       // Scroll anchoring must not move the viewport under the held pointer.
       expect(Math.abs(after.scrollX - before.scrollX)).toBeLessThanOrEqual(0.5);
       expect(Math.abs(after.scrollY - before.scrollY)).toBeLessThanOrEqual(0.5);

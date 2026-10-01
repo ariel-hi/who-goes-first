@@ -24,6 +24,7 @@ for (const game of games) {
     await expect(page.locator('meta[property="og:url"]')).toHaveAttribute('content', `${canonicalOrigin}/games/${game.id}/`);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.evaluate(() => history.replaceState({}, '', '?participant=private#result'));
+    await page.getByRole('button', { name: 'More sharing options', exact: true }).click();
     await page.getByRole('button', { name: 'Share this rule', exact: true }).click();
     await expect(page.locator('html')).toHaveAttribute('data-shared-url', new URL(`/games/${game.id}/`, page.url()).href);
   });

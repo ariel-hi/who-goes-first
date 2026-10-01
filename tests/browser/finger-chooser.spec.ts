@@ -33,6 +33,13 @@ test('touch finger chooser still draws a full turn order', async ({ browser, bas
     await expect(area.locator('.finger-ranked')).toHaveCount(2, { timeout: 5000 });
     expect(await area.locator('.finger-ranked b').allTextContents()).toEqual(expect.arrayContaining(['1', '2']));
     for (const pointerId of [1, 2]) await area.dispatchEvent('pointerup', { pointerId, pointerType: 'touch' });
+    // Results stay on screen after everyone lifts; the next touch starts over.
+    await expect(area.locator('.finger-ranked')).toHaveCount(2);
+    await expect(page.locator('#finger-status')).toHaveText('Turn order is set. Touch the screen to play again.');
+    await area.dispatchEvent('pointerdown', { pointerId: 3, pointerType: 'touch', clientX: 120, clientY: 500 });
+    await expect(area.locator('.finger-ranked')).toHaveCount(0);
+    await expect(area.locator('.finger-dot')).toHaveCount(1);
+    await area.dispatchEvent('pointerup', { pointerId: 3, pointerType: 'touch' });
     await expect(area.locator('.finger-dot')).toHaveCount(0);
     await expect(page.locator('#finger-status')).toHaveText('Everyone put one finger on the screen and hold still.');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

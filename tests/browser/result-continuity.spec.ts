@@ -26,6 +26,12 @@ async function pick(page: Page) {
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   await expect(live(page)).toContainText('goes first.');
 }
+// Choosing another method after a result replays one new draw in that method.
+async function replay(page: Page, draws: number) {
+  await expect.poll(() => drawCount(page), { timeout: 10000 }).toBe(draws + 1);
+  await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result', { timeout: 15000 });
+  await expect(live(page)).toContainText('goes first.');
+}
 async function choose(page: Page, label: string) {
   await page.getByRole('radio', { name: label, exact: true }).check();
   await expect(page.getByRole('radio', { name: label, exact: true })).toBeChecked();
@@ -61,7 +67,6 @@ for (const width of [320, 1280]) for (const motion of ['no-preference', 'reduce'
     await page.getByRole('button', { name: 'More methods', exact: true }).click();
     await expect(page.getByRole('radio', { name: 'Instant', exact: true })).toBeFocused();
     await preserved();
-    for (const label of ['Coin Flip', 'Quick', 'Instant']) { await choose(page, label); await preserved(); }
     await page.getByRole('button', { name: 'Paste a list', exact: true }).click();
     await expect(page.getByLabel('Player names')).toHaveValue(names.join('\n'));
     await preserved();
@@ -73,9 +78,7 @@ for (const width of [320, 1280]) for (const motion of ['no-preference', 'reduce'
     await preserved();
     await page.getByRole('button', { name: 'Preferences', exact: true }).click();
     await choose(page, 'Coin Flip');
-    if (motion === 'reduce') await page.waitForTimeout(500);
-    await pick(page);
-    expect(await drawCount(page)).toBe(draws + 1);
+    await replay(page, draws);
     await expect(page.locator('.picker .cards-reveal')).toHaveCount(0);
     await expect(page.locator('.picker .coin-reveal[data-settled="true"]')).toHaveCount(1);
     await expect(live(page).locator('p')).toHaveCount(1);
@@ -88,7 +91,7 @@ for (const width of [320, 1280]) for (const motion of ['no-preference', 'reduce'
     expect(errors).toEqual([]);
   });
 
-  test(`next reveal loads only on a new draw and real list edits clear the result at ${width}px with ${motion} motion`, async ({ page }) => {
+  test(`a method change replays one draw and real list edits clear the result at ${width}px with ${motion} motion`, async ({ page }) => {
     await prepare(page, width, motion);
     await choose(page, 'Quick');
     await pick(page);
@@ -96,17 +99,9 @@ for (const width of [320, 1280]) for (const motion of ['no-preference', 'reduce'
     const draws = await drawCount(page);
     const requests: string[] = [];
     page.on('request', request => { if (request.resourceType() === 'script') requests.push(request.url()); });
+    expect(answer).toContain('goes first.');
     await choose(page, 'Balloon Rise');
-    await expect(live(page)).toHaveText(answer);
-    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
-    await expect(page.locator('.picker')).toHaveAttribute('data-visual', 'false');
-    await expect(page.locator('.picker .reveal-stage')).toHaveCount(0);
-    expect(requests).toEqual([]);
-    expect(await drawCount(page)).toBe(draws);
-    // The existing 450ms repeat guard still applies to reduced/Instant draws.
-    if (motion === 'reduce') await page.waitForTimeout(500);
-    await pick(page);
-    expect(await drawCount(page)).toBe(draws + 1);
+    await replay(page, draws);
     await expect(page.locator('.picker .balloon-field')).toHaveCount(1);
     expect(requests.some(url => /BalloonRise/.test(url))).toBe(true);
     await page.getByRole('button', { name: 'Paste a list', exact: true }).click();
@@ -122,22 +117,15 @@ for (const width of [320, 1280]) for (const motion of ['no-preference', 'reduce'
     await noOverflow(page);
   });
 
-  test(`fallback draws keep their own presentation until a new supported draw at ${width}px with ${motion} motion`, async ({ page }) => {
+  test(`fallback draws replay in a newly chosen supported method at ${width}px with ${motion} motion`, async ({ page }) => {
     await prepare(page, width, motion, 13, '/methods/spinner/');
     await expect(page.getByText('Spinner fits up to 12 players. Quick is selected for your group of 13.', { exact: true })).toBeVisible();
     await pick(page);
-    const answer = await live(page).innerText();
+    await expect(page.locator('.picker')).toHaveAttribute('data-visual', 'false');
     const draws = await drawCount(page);
     await choose(page, 'Coin Flip');
-    await expect(live(page)).toHaveText(answer);
-    await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
-    await expect(page.locator('.picker')).toHaveAttribute('data-visual', 'false');
-    await expect(page.locator('.picker .reveal-stage')).toHaveCount(0);
-    expect(await drawCount(page)).toBe(draws);
-    if (motion === 'reduce') await page.waitForTimeout(500);
-    await pick(page);
+    await replay(page, draws);
     await expect(page.locator('.picker .coin-reveal .reveal-player')).toHaveCount(13);
-    expect(await drawCount(page)).toBe(draws + 1);
     const count = page.getByLabel('Player count', { exact: true });
     await count.fill('25'); await count.press('Enter');
     await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'ready');

@@ -1,5 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 import { DEV, STATIC, devPort, staticPort } from './tests/browser/urls';
+const catalogOnly = /(popular-batch-\d+|publisher-zoch[\w-]*)\.spec\.ts$/;
 export default defineConfig({
   // The live-route checks add and remove temporary catalog records. Keep browser
   // cases serial so a directory read cannot race with fixture cleanup.
@@ -13,7 +14,8 @@ export default defineConfig({
   ],
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-    { name: 'webkit', use: { ...devices['Desktop Safari'] } },
+    // Per-game catalog checks exercise content, not engine behavior; one engine is enough.
+    { name: 'firefox', use: { ...devices['Desktop Firefox'] }, testIgnore: catalogOnly },
+    { name: 'webkit', use: { ...devices['Desktop Safari'] }, testIgnore: catalogOnly },
   ],
 });

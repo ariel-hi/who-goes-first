@@ -317,7 +317,7 @@ test('every balloon floats before the first pop, including the eventual survivor
 test('fairness links open the same picker heading with the requested method selected', async ({ page }) => {
   for (const method of methods) {
     await page.goto('/fairness/');
-    await page.locator(`.prose a[href="/methods/${method.path}/"]`).click();
+    await page.locator(`.fairness-methods a[href="/methods/${method.path}/"]`).click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(method.label);
     await expect(page.getByRole('radio', { name: method.label, exact: true })).toBeChecked();
     await expect(page.locator('body')).not.toContainText(/[↗→]/);

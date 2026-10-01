@@ -70,7 +70,8 @@ test('actual dev preview hydrates and supports all reveals, names and preference
 
 test('the full researched catalog is listed and representative sourced pages work', async ({ page, request }) => {
   test.setTimeout(90000);
-  const count = readdirSync('research/games').filter(name => name.endsWith('.json')).length;
+  // The preview lists reviewed rules plus any remaining research drafts.
+  const count = new Set(['src/content/games', 'research/games'].flatMap(dir => readdirSync(dir).filter(name => name.endsWith('.json')).map(name => (JSON.parse(readFileSync(`${dir}/${name}`, 'utf8')) as { id: string }).id))).size;
   await page.goto(`${DEV}/dev/games/`);
   await expect(page.getByText(`Local preview · ${count} game rules`)).toBeVisible();
   await expect(page.locator('.game-list li')).toHaveCount(count);
@@ -154,11 +155,11 @@ test('random game rule redraw and source navigation work without treating a rule
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${DEV}/`);
   await expect(page.getByRole('heading', { name: 'Playing a specific game?' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Browse game rules' })).toHaveAttribute('href', '/dev/games/');
+  await expect(page.getByRole('link', { name: 'Starting rules', exact: true }).first()).toHaveAttribute('href', '/dev/games/');
   await expect(page.getByRole('link', { name: 'Try a random rule' })).toHaveCount(0);
   await page.getByRole('button', { name: 'Another rule' }).click();
   await expect(page.locator('[data-home-rule-answer]')).not.toBeEmpty();
-  await page.getByRole('link', { name: 'Browse game rules' }).click();
+  await page.getByRole('link', { name: 'Starting rules', exact: true }).first().click();
   await page.getByRole('button', { name: 'Pick a rule' }).click();
   const answer = await page.locator('[data-rule-answer]').textContent();
   const priorLink = await page.locator('[data-rule-link]').getAttribute('href');

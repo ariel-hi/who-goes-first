@@ -25,7 +25,7 @@ for (const width of [320, 1280]) {
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(/\/tools\/$/);
     await expect(tools).toHaveAttribute('aria-current', 'page');
-    const team = page.getByRole('list', { name: 'Decision tools', exact: true }).getByRole('link', { name: /^Random team generator/ });
+    const team = page.locator('main section').getByRole('link', { name: /Random team generator/ });
     await team.focus();
     await page.keyboard.press('Enter');
     await expect(page).toHaveURL(/\/random-team-generator\/$/);
@@ -63,9 +63,10 @@ for (const width of [320, 1280]) {
       await page.keyboard.press('Enter');
       await expect(page).toHaveURL(/\/tools\/$/);
       await expect(page.getByRole('heading', { level: 1 })).toHaveText('Decision tools.');
-      const choices = page.getByRole('list', { name: 'Decision tools', exact: true }).locator('a');
+      const choices = page.locator('main section a');
       expect(await choices.evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual([
-        '/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/',
+        '/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/turn-order-generator/',
+        '/score-keeper/', '/turn-timer/', '/random-letter-generator/', '/card-draw/', '/random-number-generator/',
       ]);
       for (const choice of await choices.all()) expect((await choice.boundingBox())!.height).toBeGreaterThanOrEqual(44);
       const rule = page.locator('main').getByRole('link', { name: 'Check its starting-player rule', exact: true });
