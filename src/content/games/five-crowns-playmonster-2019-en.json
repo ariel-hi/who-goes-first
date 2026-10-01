@@ -1,0 +1,39 @@
+{
+  "id": "five-crowns-playmonster-2019-en",
+  "slug": "five-crowns-playmonster-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "c33592c53e91bf4c62495a6b79d7e42ba41efef08e5ac2d12fa2fc4e03eb567b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Five Crowns",
+  "aliases": [
+    "5 Crowns"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2019 Cannei, LLC)",
+  "firstPlayerRule": "The player to the dealer’s left goes first, and play continues clockwise. After each round, the player to the dealer’s left deals next.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals the first round; use the picker to choose the first dealer.",
+  "clarifications": [
+    "Each round deals one more card, from 3 cards up to 13."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2019/09/5Crowns_RULES.pdf",
+      "title": "Five Crowns — Instructions",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\" steps 1 and 9",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted PDF and extracted its text with pdftotext. \"PLAY: 1. The player to the dealer’s left goes first and play continues clockwise.\" Step 9: \"The player to the dealer’s left shuffles all of the cards and deals the next round.\" Imprint: © 2019 Cannei, LLC.",
+  "uncertainty": [
+    "The rules do not say how the first dealer is chosen."
+  ]
+}

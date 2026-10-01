@@ -1,0 +1,39 @@
+{
+  "id": "pass-the-pigs-winning-moves-en",
+  "slug": "pass-the-pigs-winning-moves-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "b3826efc1abd1f5cc5684ba128fdb7c2a8b2b7423b2026af17740ebd15c9dafb",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pass the Pigs",
+  "aliases": [
+    "Pass the Pigs dice game"
+  ],
+  "editionLabel": "Winning Moves English rules (2014 sheet)",
+  "firstPlayerRule": "Choose a player to go first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "On your turn, toss both pigs into the air at the same time."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://winning-moves.com/images/PTP_Rule.pdf",
+      "title": "Pass the Pigs — Rules",
+      "publisher": "Winning Moves Games",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 3",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Winning Moves-hosted PDF and extracted its text with pdftotext. Setup step 3: \"Choose a player to go first.\" Then: \"On your turn, toss both pigs simultaneously into the air.\" Print file PTP’s_Rule.indd dated 6/25/14.",
+  "uncertainty": [
+    "The rules do not say how to choose the first player."
+  ]
+}

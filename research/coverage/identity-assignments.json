@@ -1129,6 +1129,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "032b87b3c2b9eb6497499a103728a51b1b49026ecef656046a89c02ada80f1ab"
+    },
+    {
+      "ruleId": "five-crowns-playmonster-2019-en",
+      "ruleRevision": "c33592c53e91bf4c62495a6b79d7e42ba41efef08e5ac2d12fa2fc4e03eb567b",
+      "identityId": "game-e007a11c-61cc-44e2-890e-56b6bfc43ce2",
+      "identityRevision": "db67aa96051fd5ef44ad577e8a4eb310cb8af869663a9fd86ffea3fb194ac481",
+      "editionScope": "PlayMonster English rules (© 2019 Cannei, LLC)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/09/5Crowns_RULES.pdf",
+          "sha256": "c1f00799d4c36bf06fa3c76a2e180bca40a866a2ef6934716afb18688f743c3a",
+          "location": "\"Play\" steps 1 and 9",
+          "correspondence": "The rule cites this same PlayMonster document for Five Crowns."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "9b86aed6aa5aaacd05fcda25914b398dd62bcbbc8711fecfd3b23bada66d4cb1"
     }
   ]
 }
