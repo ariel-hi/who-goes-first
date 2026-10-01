@@ -1,0 +1,38 @@
+{
+  "id": "risk-junior-hasbro-e6936-en",
+  "slug": "risk-junior-hasbro-e6936-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a0272659850740dab46a3e2b0d1a297c4bf64e7d307cf0f31e1108f29530b6df",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Risk Junior",
+  "aliases": [
+    "Risk Jr",
+    "Risk Junior pirates"
+  ],
+  "editionLabel": "Hasbro English instructions, item E6936 (2019)",
+  "firstPlayerRule": "The youngest player starts by placing a pirate token, and the youngest also takes the first turn. Play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/2178c160-d009-4fe5-b8e6-549e87509e44/E69361020_INST_RISK_Junior_2020_RC3_FAR%20%282%29.pdf",
+      "title": "Risk Junior — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com (risk-junior-game-intro-to-the-classic-board-game-for-kids-ages-5-and-up) and extracted its text with pdftotext. PDF page 2: \"The youngest player starts by placing one of their pirate tokens on the island of their choice.\" \"The youngest player goes first and play passes to the left.\" Item E6936, © 2019 Hasbro.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

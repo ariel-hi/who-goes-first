@@ -2516,6 +2516,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "f111216d4f385cc52555797cfc243a2ae87011643820a363d6f38f8e15d1f0f4"
+    },
+    {
+      "ruleId": "risk-junior-hasbro-e6936-en",
+      "ruleRevision": "a0272659850740dab46a3e2b0d1a297c4bf64e7d307cf0f31e1108f29530b6df",
+      "identityId": "game-22e710a0-4514-42f5-8630-572f4d4f25d6",
+      "identityRevision": "630fff3f4305a04c91c2933637f2e36468327e1f72aeea4019e39d1fe4be4164",
+      "editionScope": "Hasbro English instructions, item E6936 (2019)",
+      "evidence": [
+        {
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/2178c160-d009-4fe5-b8e6-549e87509e44/E69361020_INST_RISK_Junior_2020_RC3_FAR%20%282%29.pdf",
+          "sha256": "6869a1b599a23bc4a4cd7169ebd2bd3dd5ec00fd75e0439fcfae70ce519cba45",
+          "location": "\"How to Play\"",
+          "correspondence": "The rule cites this same Hasbro document for Risk Junior."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a757dbabb9def6619ffb6fafcc93d654ed721799e51d51f2df1c5dc4bd656799"
     }
   ]
 }

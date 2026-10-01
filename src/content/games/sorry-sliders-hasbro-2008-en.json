@@ -1,0 +1,35 @@
+{
+  "id": "sorry-sliders-hasbro-2008-en",
+  "slug": "sorry-sliders-hasbro-2008-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "55caf93d91439095320769d0a7ef18e18f4229df58c285c676ec94e825221f31",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Sorry! Sliders",
+  "aliases": [
+    "Sorry Sliders"
+  ],
+  "editionLabel": "Hasbro English instructions (2008)",
+  "firstPlayerRule": "The youngest player, or the one who says “Sorry” the most, goes first. In each later round, the player to the left of the previous round’s starter goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/8a1212d9-9476-4efa-8e15-42120740ae29/46ec7e29fe7d704aa880caadbe396a7f.pdf",
+      "title": "Sorry! Sliders — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com (sorry-sliders-game) and extracted its text with pdftotext. PDF page 1: \"HOW TO PLAY The youngest player (or the one who says ‘Sorry’ the most) goes first.\" \"The player to the left of the player who started the previous round goes first.\" © 2008 Hasbro.",
+  "uncertainty": []
+}

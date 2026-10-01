@@ -6493,6 +6493,34 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "31c5e7face38de74cc386344465a978cb65b8b64b1a6c2c953e6664072d03c42"
+    },
+    {
+      "identityId": "game-22e710a0-4514-42f5-8630-572f4d4f25d6",
+      "routeKey": "game-22e710a0-4514-42f5-8630-572f4d4f25d6",
+      "name": "Risk Junior",
+      "searchNames": [
+        "Risk Jr",
+        "Risk Junior pirates"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Risk Junior, the Hasbro pirate-themed children's edition of Risk, item E6936, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Risk Junior instructions name the game, item E6936, with pirate tokens and islands.",
+      "publisherReferenceSourceId": "risk-junior-hasbro-e6936-en-primary",
+      "sources": [
+        {
+          "id": "risk-junior-hasbro-e6936-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/2178c160-d009-4fe5-b8e6-549e87509e44/E69361020_INST_RISK_Junior_2020_RC3_FAR%20%282%29.pdf",
+          "sha256": "6869a1b599a23bc4a4cd7169ebd2bd3dd5ec00fd75e0439fcfae70ce519cba45",
+          "byteCount": 14831419,
+          "location": "\"How to Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "630fff3f4305a04c91c2933637f2e36468327e1f72aeea4019e39d1fe4be4164"
     }
   ]
 }
