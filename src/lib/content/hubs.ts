@@ -14,6 +14,8 @@ export const themes = [
   { slug: 'most-recently', title: '“Most Recently” Rules for Who Goes First', label: 'Whoever did something most recently', about: 'whoever did something most recently', pattern: /\bmost recent(ly)?\b|\blast (person|player) to\b|\b(who|whoever) (last|was last)\b/i },
   { slug: 'group-choice', title: 'Games That Let the Group Choose Who Goes First', label: 'The group decides', about: 'letting the group decide', pattern: /^(the group (chooses|decides|picks)|(the )?players (choose|decide|agree)|choose (a|the|any) (first|starting|start) player[.;,]|choose who (starts|goes first)|decide who|agree on)/i },
   { slug: 'random', title: 'Starting-Player Rules That Mention a Random Choice', label: 'A random draw', about: 'choosing at random', pattern: /\brandom(ly)?\b/i },
+  { slug: 'highest-roll', title: 'Highest Roll Goes First: Dice Starting Rules', label: 'The highest roll', about: 'rolling dice to start', pattern: /\bhigh(est)?[ -]roll(er|ing|s)?\b|\brolls? the (highest|most)\b|\bwith the highest (roll|total)\b/i },
+  { slug: 'dealers-left', title: 'Dealer’s Left Goes First: Card Game Rules', label: 'Left of the dealer', about: 'the player on the dealer’s left', pattern: /\b(dealer[’']s left|left of the dealer|dealer[’']s left-hand)\b/i },
 ] as const;
 export const minimumHubSize = 5;
 export const minimumPublisherSize = 3;
