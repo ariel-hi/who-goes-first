@@ -1281,6 +1281,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "c4f9047590e5534e41c49ef0b7ff398c57de27f8062ceaab2d7731b38887ea68"
+    },
+    {
+      "ruleId": "scrabble-junior-hasbro-94039-en",
+      "ruleRevision": "3d6ecba6a35674bcc15622615f8c471ee951275fc50c3fac987ef5c1c593379b",
+      "identityId": "game-5222aea6-be2f-4a69-9ade-5200eda1a7b8",
+      "identityRevision": "5761847457929fe4f17c6db22ccc0258ff92bd02ab0100c1a0ed211f44d5808a",
+      "editionScope": "Hasbro English instructions, 94039 (1999)",
+      "evidence": [
+        {
+          "url": "https://www.hasbro.com/common/instruct/Scrabble_Junior.pdf",
+          "sha256": "32c8249827b9478a711a77f3825ded39164fbd7960a52e4a8c1b198997bb6609",
+          "location": "\"Game Setup\" step 5",
+          "correspondence": "The rule cites this same Hasbro document for Scrabble Junior."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f7afb74e4c7986bd190944d09e5b8acddff31405ee57289e7adef64bb797e4c6"
     }
   ]
 }

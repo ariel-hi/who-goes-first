@@ -1,0 +1,40 @@
+{
+  "id": "upwords-milton-bradley-4312-en",
+  "slug": "upwords-milton-bradley-4312-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "df49a9d7e975cd891369485427287dd532319b83418b55fdac204cc1d3aa4ad5",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Upwords",
+  "aliases": [
+    "UpWords",
+    "Up Words"
+  ],
+  "editionLabel": "Milton Bradley English instructions, 4312 (1988/1997)",
+  "firstPlayerRule": "Each player draws one letter tile. Whoever draws the tile nearest to the letter A plays first, then play proceeds to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If players draw the same letter, those players draw again.",
+  "clarifications": [
+    "Return the drawn tiles to the pile and mix them before drawing your seven."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/Upwords.pdf",
+      "title": "Upwords — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Game Play\" step 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. Game Play step 1: \"You and your opponents each draw one letter tile from the draw pile. Whoever draws the tile nearest to the letter ‘A’ plays first. Play then proceeds to the left. Return the tiles, letter-side down, to the draw pile and mix them up again.\" Imprint ©1988, 1997 Milton Bradley Company, 4312-I.",
+  "uncertainty": [
+    "No tie-break is stated for equal letters."
+  ]
+}

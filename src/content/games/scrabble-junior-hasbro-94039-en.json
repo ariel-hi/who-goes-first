@@ -1,0 +1,37 @@
+{
+  "id": "scrabble-junior-hasbro-94039-en",
+  "slug": "scrabble-junior-hasbro-94039-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "3d6ecba6a35674bcc15622615f8c471ee951275fc50c3fac987ef5c1c593379b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Scrabble Junior",
+  "aliases": [
+    "Scrabble Jr"
+  ],
+  "editionLabel": "Hasbro English instructions, 94039 (1999)",
+  "firstPlayerRule": "Choose a player to go first; the rules note there is no advantage to making the first play. Play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.hasbro.com/common/instruct/Scrabble_Junior.pdf",
+      "title": "Scrabble Junior — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Game Setup\" step 5",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF, which is a scan with no text layer, rendered its pages to images and read them. Game Setup step 5: \"Choose a player to go first (there’s no advantage to making the first play). Play passes to the left.\" Imprint ©1999 Hasbro, 94039.",
+  "uncertainty": [
+    "The rules do not say how to choose the first player."
+  ]
+}

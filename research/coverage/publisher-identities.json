@@ -4698,6 +4698,33 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "ac69d8208697f7efacbad4e255332161063458ba1740b888af0aedfe2e2b6a99"
+    },
+    {
+      "identityId": "game-5222aea6-be2f-4a69-9ade-5200eda1a7b8",
+      "routeKey": "game-5222aea6-be2f-4a69-9ade-5200eda1a7b8",
+      "name": "Scrabble Junior",
+      "searchNames": [
+        "Scrabble Jr"
+      ],
+      "publisher": "Hasbro",
+      "identityScope": "Scrabble Junior, the two-sided children's crossword board game sold by Hasbro, as described in its English instructions PDF.",
+      "identityEvidence": "Hasbro's hosted Scrabble Junior instructions name the game, its two-sided gameboard, 101 letter tiles and scoring chips.",
+      "publisherReferenceSourceId": "scrabble-junior-hasbro-94039-en-primary",
+      "sources": [
+        {
+          "id": "scrabble-junior-hasbro-94039-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.hasbro.com/common/instruct/Scrabble_Junior.pdf",
+          "sha256": "32c8249827b9478a711a77f3825ded39164fbd7960a52e4a8c1b198997bb6609",
+          "byteCount": 383735,
+          "location": "\"Game Setup\" step 5"
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "5761847457929fe4f17c6db22ccc0258ff92bd02ab0100c1a0ed211f44d5808a"
     }
   ]
 }
