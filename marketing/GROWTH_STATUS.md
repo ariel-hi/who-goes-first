@@ -1,5 +1,19 @@
 # Growth launch status
 
+## Overnight growth push (2026-09-30 → 2026-10-01 UTC)
+
+The owner asked for an overnight push on visibility and discovery, which supersedes the earlier pause on new utility pages below.
+
+- **New search entry points:** `/dice-roller/`, `/random-number-generator/`, `/turn-order-generator/`, `/score-keeper/` (saves to `wgf:scores:v1`, noted in Privacy) and `/turn-timer/`. All are in the tools hub, nav, sitemap, `llms.txt` and the Pinterest queue, and every rule page links to them.
+- **About 90 new sourced rules** for high-search classics: Candy Land, Chutes and Ladders, Sorry!, Trouble, The Game of Life, Connect 4, Jenga, Stratego, Checkers, Othello, Spades, Hearts, Euchre, Cribbage, Rummy, Phase 10, Skip-Bo, Yahtzee-style dice games and many PlayMonster and Winning Moves family titles. The sources are publisher PDFs or pages (Hasbro, Winning Moves, PlayMonster, Bicycle, Mattel, Gamewright, Catan, Cardinal, ACF, World Othello Federation).
+- **New theme hubs:** highest roll, dealer's left, and silly contests (42 rules).
+- **AI and search discovery:** `/llms.txt`, WebApplication structured data on the tool pages, and rule titles that now say "Official rule & rulebook". Search Console data showed rule pages appearing for "<game> rules/rulebook" queries.
+- **Search Console (owner account, Chrome profile u/1):** submitted the four child sitemaps and requested indexing for 10 key URLs. All sitemaps still show "Couldn't fetch", although the live files return 200 with valid XML. Sep 24–28 totals: 207 impressions, 2 clicks, average position 7.4.
+- **Pinterest:** the @whogoesfirst business account already auto-publishes `/pinterest.xml` to "Board Game Night Ideas". The drip is now 3 pins a day, from a queue of about 110 items.
+- **Bluesky:** posted from @whogoesfirst.fun manually. The daily bot is still blocked on the `BLUESKY_APP_PASSWORD` secret.
+
+Still needs the owner: the Bluesky app password secret, Search Console **Full** permission for the service account (so the bot can submit sitemaps), and the browser CI suite, which times out at 60 minutes. A fix task for the CI suite was offered.
+
 ## Priority after the 2026-09-27 site review
 
 Keep the picker and reviewed starting rules as the primary journeys. Pause new utility categories and additional affiliate placements while search discovery and returning use remain unproven. Continue correcting sources and filling high-priority missing rules. Review the existing Search Console sitemap/indexing report, then use its impressions and clicks together with consented page visits to decide which journeys merit further work. Do not add search-query or player-level tracking to answer this question.
