@@ -307,9 +307,9 @@ test('new native identities attach exact editions while keeping phase and portab
 test('Amigo manual approvals preserve initial versus later order and the figure-dependent portable exclusion', () => {
   const catalog = getCatalog();
   for (const [id, file, revision, opening, portable] of [
-    ['lama-dice-amigo-en-v1-0', '02103-GB-AmigoRule.pdf', 'cb8bfd005f72d5f6b3db3ce2591915a10750af8fa83e13ab8ea54c18dd252a74', 'The youngest player starts the first round.', true],
-    ['cabanga-amigo-en-v1-0', '02353-GB-AmigoRule.pdf', '78f15eaaebe0b3b5f7bad9f884b20b1513651fb9163ad7c0d15aa659e6c10899', 'The first player to spell Cabanga! backwards starts the first round.', true],
-    ['meister-makatsu-amigo-en-v1-0', '02553-GB-AmigoRule.pdf', '515061d6472f19409ce42ebd6799878ab04208e41619cf8775d4a6930354881e', 'The player who most recently meditated takes the Meister Makatsu figure and starts the first round.', false],
+    ['lama-dice-amigo-en-v1-0', '02103-GB-AmigoRule.pdf', '8d1defba23053b9533393a2414d1fcfd26122e11dcd78b82b721d2f1828a615a', 'The youngest player starts the first round.', true],
+    ['cabanga-amigo-en-v1-0', '02353-GB-AmigoRule.pdf', 'bd0347223130e5fd4d5cb46639c16c6ae0b1c16c6afba7f16db0d6701c475c13', 'The first player to spell Cabanga! backwards starts the first round.', true],
+    ['meister-makatsu-amigo-en-v1-0', '02553-GB-AmigoRule.pdf', '9e5bf9e455a5ae654f66c063f424a50cb069e127637aff26a17d5812ed8bf4d6', 'The player who most recently meditated takes the Meister Makatsu figure and starts the first round.', false],
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));
@@ -331,9 +331,9 @@ test('Amigo manual approvals preserve initial versus later order and the figure-
 test('Amigo multi-mode manuals preserve reveal roles, original PDF order and competitive-only portability', () => {
   const catalog = getCatalog();
   for (const [id, revision, pages, portable] of [
-    ['schnapp-land-fluss-amigo-en-v4-1-family', 'd08a17427bf765b6750bad8a26ab526faa97b4148e4d6da8c966141b2da93612', [1, 2], false],
-    ['speed-cups-amigo-en-v2-0', '4dc60dad411a0481ce7a37b9d43bc1861b3ad9fecb96c4aed330b7b59739be9c', [2, 1], false],
-    ['fischfutter-amigo-en-v1-0-base', '3b9527d4a5ac60704be6aab0ea8e7c9a352704e79f8cfd35cdf6fd3d3647b052', [1, 2], true],
+    ['schnapp-land-fluss-amigo-en-v4-1-family', '8f91455194b99d672c3298d467d475dd63a62f02750cb5dded465669342a7290', [1, 2], false],
+    ['speed-cups-amigo-en-v2-0', 'e17d30fa69fef177326fb743c61142e3b0dda28aff847bab2fe5c255b86601dc', [2, 1], false],
+    ['fischfutter-amigo-en-v1-0-base', 'c08f8739435d687ea10ab567b97356d3d9ac0a533c83df88afc0429fd8b7db68', [1, 2], true],
   ] as const) {
     const raw = ruleSchema.parse(JSON.parse(readFileSync(`src/content/games/${id}.json`, 'utf8')));
     const draft = ruleSchema.parse(JSON.parse(readFileSync(`research/games/${id}.json`, 'utf8')));

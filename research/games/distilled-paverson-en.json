@@ -8,15 +8,22 @@
   "firstPlayerRule": "Randomly choose the first player, or give the first-player token to whoever last visited a distillery.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["At the end of each round, pass the first-player token clockwise."],
+  "clarifications": [
+    "At the end of each round, pass the first-player token clockwise."
+  ],
   "interpretation": null,
   "sources": [
     {
       "url": "https://gamers-hq.de/media/pdf/7f/09/47/Rulebook-Distilled.pdf",
-      "title": "Distilled — English rulebook",
+      "title": "Distilled: English rulebook",
       "publisher": "Paverson Games",
-      "printedPages": ["6", "7"],
-      "pdfPagesOneBased": [4],
+      "printedPages": [
+        "6",
+        "7"
+      ],
+      "pdfPagesOneBased": [
+        4
+      ],
       "location": "Player Setup, step 5; Round Overview",
       "checkedAt": "2026-09-23"
     }

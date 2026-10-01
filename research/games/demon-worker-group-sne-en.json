@@ -8,15 +8,21 @@
   "firstPlayerRule": "The player who has been evil most recently goes first, or choose a player randomly.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["The first player takes the number 1 Turn Order card; the other players take the following cards clockwise around the table."],
+  "clarifications": [
+    "The first player takes the number 1 Turn Order card; the other players take the following cards clockwise around the table."
+  ],
   "interpretation": null,
   "sources": [
     {
       "url": "https://cdn.1j1ju.com/medias/e4/c8/6e-demon-worker-rulebook.pdf",
-      "title": "Demon Worker — English rulebook",
+      "title": "Demon Worker: English rulebook",
       "publisher": "Group SNE",
-      "printedPages": ["2"],
-      "pdfPagesOneBased": [2],
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
       "location": "Game Setup, step 8",
       "checkedAt": "2026-09-23"
     }

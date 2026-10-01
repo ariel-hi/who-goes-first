@@ -8,15 +8,21 @@
   "firstPlayerRule": "The player who most recently trained a raptor to respond to hand signals goes first. If no one has done that, choose the first player randomly.",
   "officialTieBreak": null,
   "houseFallback": null,
-  "clarifications": ["Give the first-player marker to the selected player. Place the other players' turn-order markers in clockwise order; starting coins increase from first to fourth player."],
+  "clarifications": [
+    "Give the first-player marker to the selected player. Place the other players' turn-order markers in clockwise order; starting coins increase from first to fourth player."
+  ],
   "interpretation": null,
   "sources": [
     {
       "url": "https://cdn.1j1ju.com/medias/d0/fb/47-dinosaur-world-rulebook.pdf",
-      "title": "Dinosaur World — English rulebook",
+      "title": "Dinosaur World: English rulebook",
       "publisher": "Pandasaurus Games",
-      "printedPages": ["6"],
-      "pdfPagesOneBased": [6],
+      "printedPages": [
+        "6"
+      ],
+      "pdfPagesOneBased": [
+        6
+      ],
       "location": "Player Area Setup, Turn Order",
       "checkedAt": "2026-09-23"
     }

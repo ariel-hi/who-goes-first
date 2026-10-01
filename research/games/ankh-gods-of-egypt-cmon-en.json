@@ -15,16 +15,22 @@
   "sources": [
     {
       "url": "https://www.cmon.com/wp-content/uploads/2023/06/Ankh_Rulebook.pdf",
-      "title": "Ankh: Gods of Egypt — CMON English rulebook",
+      "title": "Ankh: Gods of Egypt: CMON English rulebook",
       "publisher": "CMON",
-      "printedPages": ["13"],
-      "pdfPagesOneBased": [13],
+      "printedPages": [
+        "13"
+      ],
+      "pdfPagesOneBased": [
+        13
+      ],
       "location": "Setup, steps 4 and 9",
       "checkedAt": "2026-09-23"
     }
   ],
   "internalEvidence": "Rendered page 13 of the final CMON-hosted English rulebook. Setup step 4 offers either random selection or the player who owns the most cats; clockwise seating order follows. Step 9 maps the first player to scenario player 1. Source SHA-256: ccfaa04d644e1bccf88439f9285fded0ffb9badd4700854ead2fefd69b8bac6c. Owner authorized assistant review on 2026-09-22.",
-  "uncertainty": ["The rulebook does not specify a tie-break if multiple players own the same greatest number of cats."],
+  "uncertainty": [
+    "The rulebook does not specify a tie-break if multiple players own the same greatest number of cats."
+  ],
   "status": "draft",
   "approvedBy": null,
   "approvedRevision": null,

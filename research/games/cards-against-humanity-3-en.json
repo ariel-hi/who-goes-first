@@ -15,16 +15,22 @@
   "sources": [
     {
       "url": "https://cdn.sanity.io/files/vc07edlh/production/56d42226c6771d4c7bdd5f225d506dc79caa6077.pdf",
-      "title": "Cards Against Humanity — Game Rules 3.0",
+      "title": "Cards Against Humanity: Game Rules 3.0",
       "publisher": "Cards Against Humanity",
-      "printedPages": ["unnumbered"],
-      "pdfPagesOneBased": [1],
+      "printedPages": [
+        "unnumbered"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
       "location": "Basic Rules; House Rules (Meritocracy)",
       "checkedAt": "2026-09-23"
     }
   ],
   "internalEvidence": "The publisher website links this one-page official Game Rules 3.0 PDF. The rendered Basic Rules give the first Card Czar criterion and Hugh Jackman exception. The optional Meritocracy variation appears separately under House Rules. Source SHA-256: 79f347b28edf9025310cfea38ce5fa1e671e84b96ed8f71e898f35a8df37aa0e. Owner authorized assistant review on 2026-09-22.",
-  "uncertainty": ["The base rules do not specify how to choose later Card Czars or break a tie in recency of the opening criterion."],
+  "uncertainty": [
+    "The base rules do not specify how to choose later Card Czars or break a tie in recency of the opening criterion."
+  ],
   "status": "draft",
   "approvedBy": null,
   "approvedRevision": null,
