@@ -1,0 +1,41 @@
+{
+  "id": "game-of-life-hasbro-e4304-en",
+  "slug": "game-of-life-hasbro-e4304-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "09af52fb1518c6fa86af08048de13b032af0338c9c606d3a3193f1c9562d4f7b",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "The Game of Life",
+  "aliases": [
+    "Game of Life",
+    "Life",
+    "The Game of Life classic"
+  ],
+  "editionLabel": "Hasbro English instructions, item E4304 (2017 classic)",
+  "firstPlayerRule": "The youngest player goes first, and play moves to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/80e33fce-d2d9-4d29-aab7-77de0b253bd6/1aed0a87097e40506c18d3ed2297c09a.pdf",
+      "title": "The Game of Life — Instructions (item E4304)",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "2"
+      ],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Who Goes First\" heading",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com/en-us/instruction/the-game-of-life-game and extracted its text with pdftotext. Under the heading \"Who Goes First\": \"The youngest player goes first, and play moves to the left.\" The sheet is item E4304, © 2017 Hasbro (file \"E43040000 18 I GOL Classic\").",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

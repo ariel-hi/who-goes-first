@@ -1,0 +1,42 @@
+{
+  "id": "monopoly-junior-hasbro-1990-en",
+  "slug": "monopoly-junior-hasbro-1990-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "4b7af27ab01a86cb82112cd9d4587a174c5ff01771aa00487fa038608d443895",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Monopoly Junior",
+  "aliases": [
+    "Monopoly Jr",
+    "Monopoly Jr."
+  ],
+  "editionLabel": "Hasbro English instructions, 1990/1995 rules (amusement park board)",
+  "firstPlayerRule": "Roll the die. The high roller goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [
+    "The Banker also plays, but keeps the bank's money separate."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/cf226f5a-9fe8-4d76-a84f-d5f45f75536c/a3d9caef2ce4c8efad72ee56e4e883f1.pdf",
+      "title": "Monopoly Junior — Instructions",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup steps before \"Game Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com/en-us/instruction/monopoly-junior-game and extracted its text with pdftotext. The setup reads \"Roll the die. High roller goes first.\" The sheet covers the amusement-park board (Ticket Booths, Boardwalk) for 2 to 4 players ages 5 to 8, with rules dated 1990 and 1995.",
+  "uncertainty": [
+    "No tie-break is stated for equal high rolls; rerolling ties is a house rule."
+  ]
+}

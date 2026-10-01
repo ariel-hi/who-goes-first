@@ -1,0 +1,42 @@
+{
+  "id": "sorry-hasbro-00390-en",
+  "slug": "sorry-hasbro-00390-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "4efa0b1cb27236ab37b4c603022e6aeb7baa9716076655603576f32fb9632bdc",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Sorry!",
+  "aliases": [
+    "Sorry",
+    "Sorry board game"
+  ],
+  "editionLabel": "Hasbro English instructions, item 00390 (2003)",
+  "firstPlayerRule": "Pick a player to go first. Play moves clockwise. In later games, the winner of the previous game goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If nobody volunteers, use the picker to choose who goes first.",
+  "clarifications": [
+    "Each player starts with all pawns in their color START space."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/d0dc3b91-28ec-4f9a-b32b-31306ae2cb17/af23343336930172b83a82fd2897c930.pdf",
+      "title": "Sorry! — Instructions (item 00390)",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Setup\" and \"Winning the cards (continued)\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com/en-us/instruction/sorry-game and extracted its text with pdftotext. Setup says \"Pick a player to go first. Movement is clockwise around the board.\" The winning section adds \"If you play again, the winner goes first.\" The sheet is marked © 2003 Hasbro and item code 00390.",
+  "uncertainty": [
+    "The rulebook does not say how to pick the first player in the first game."
+  ]
+}
