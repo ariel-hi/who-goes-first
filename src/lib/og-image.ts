@@ -107,7 +107,7 @@ export async function renderPinImage(art: PinArt, host: string): Promise<Buffer>
     pawn(820, 1130, 104, a),
     die(700, 1210, 96, faces[1]!, -18, c, p.bg),
     el('div', { display: 'flex', alignItems: 'center', gap: 16, fontFamily: 'Serif', fontSize: 38, color: p.ink }, [
-      el('div', { width: 18, height: 18, borderRadius: 18, background: p.accent }), 'Who goes first?',
+      el('div', { width: 18, height: 18, borderRadius: 18, background: p.accent }), el('div', {}, 'Who goes first?'),
     ]),
     el('div', { display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center' }, [
       el('div', { display: 'flex' }, el('div', { background: p.accent, color: p.kickerInk, fontWeight: 600, fontSize: 30, letterSpacing: 3, padding: '12px 26px', borderRadius: 40, textTransform: 'uppercase' }, art.kicker)),
