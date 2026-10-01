@@ -1,0 +1,38 @@
+{
+  "id": "five-crowns-junior-playmonster-2019-en",
+  "slug": "five-crowns-junior-playmonster-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "f526544dcb0047829bdbe92063bf427c534b939a876b027c3dff378e24c85b95",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Five Crowns Junior",
+  "aliases": [
+    "5 Crowns Junior",
+    "Five Crowns Jr"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2019 Cannei)",
+  "firstPlayerRule": "The player to the dealer’s left goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2019/09/5CrownsJR_RULES.pdf",
+      "title": "Five Crowns Junior — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        3
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 3: \"The player to the dealer’s left goes first.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

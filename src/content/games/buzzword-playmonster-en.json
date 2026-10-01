@@ -1,0 +1,35 @@
+{
+  "id": "buzzword-playmonster-en",
+  "slug": "buzzword-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a85281e1bf7d12e7ed42feb5cdb300d4e637a6f5149d6ff0803b5927a36df1a3",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Buzzword",
+  "aliases": [
+    "Buzzword party game"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "Deal five Scoring Cards to each team. The team whose cards add up to the highest total goes first.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/BuzzwordRules.pdf",
+      "title": "Buzzword — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"Shuffle the 10 Scoring Cards and deal them out, five to a team. Each team add up the numbers on your five cards. If your team has the highest total, you go first.\"",
+  "uncertainty": []
+}

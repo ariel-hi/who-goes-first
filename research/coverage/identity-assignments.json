@@ -1376,6 +1376,215 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "c87fb7d9875a892d59a4dd5c530bf7248cb69c03581314009982026cb39bd6ca"
+    },
+    {
+      "ruleId": "5-second-rule-playmonster-en",
+      "ruleRevision": "1b729dbdcc3614b894c7cf88e12e590e840eb59f165a8bf9601629b9b9b78896",
+      "identityId": "game-be62ce30-9b8e-4694-9a0e-507598b67c9b",
+      "identityRevision": "f8cee02e1539f79366359a621df9f3e7c8e23758a04f93e4475e4cc42ea425bc",
+      "editionScope": "PlayMonster English rules (© 2010 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/5SecRules.pdf",
+          "sha256": "f4dab8fe3adad9158eca2672aa09971efa7aaf2a34b0d1f284a0970e780266c2",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for 5 Second Rule."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d381bd9ce743e39c4966dde34d587fe7dabf06bfbfbccd239c4d93c7bda1d9db"
+    },
+    {
+      "ruleId": "5-second-rule-jr-playmonster-en",
+      "ruleRevision": "84ef39608bfed7d2e73829b084b27b10583ca17cc97da857d345e9d6dfbf5c30",
+      "identityId": "game-bf0fa83d-e7a4-496b-85d2-23ee9b9b82ee",
+      "identityRevision": "ea7199c2a5b2efebbd0413fe4b3eb01d4ef24269ca5aba107c98dcaf9f0cd9b1",
+      "editionScope": "PlayMonster English rules (© 2015 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7424_5-Sec-Rule-Jr_rules.pdf",
+          "sha256": "dbe2f96dc4a91554f2733333412e815fcb6ab2d1bd357d891396e32664c044f4",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for 5 Second Rule Jr.."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "58ca22a3409665fa3c80eb3f4b376584e7fae76e7b51ddf2e3b1f37ded694aa7"
+    },
+    {
+      "ruleId": "buzzword-playmonster-en",
+      "ruleRevision": "a85281e1bf7d12e7ed42feb5cdb300d4e637a6f5149d6ff0803b5927a36df1a3",
+      "identityId": "game-45c64383-e7bd-4121-a966-27a99d893b1c",
+      "identityRevision": "f1b5df3f27f4c85640ed6a2c15d22914b4e99d27251f787955b6784d0d9ed5e6",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/BuzzwordRules.pdf",
+          "sha256": "55d7c9505c7b5bbf39e97ec8bd2156ba1355b8a2505ac26734494fb7a66cd30e",
+          "location": "Setup",
+          "correspondence": "The rule cites this same PlayMonster document for Buzzword."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "cb4663c44f2bf1ea88139f976a64ecd7d3aec034506f727418c12b73c96d4771"
+    },
+    {
+      "ruleId": "five-crowns-junior-playmonster-2019-en",
+      "ruleRevision": "f526544dcb0047829bdbe92063bf427c534b939a876b027c3dff378e24c85b95",
+      "identityId": "game-51e4af6f-8560-4aa8-bce9-e216a97402f9",
+      "identityRevision": "53d8e6d60eea175c08506a6427f75129be11fb390c8f75eb8a2f35fb2dfce3e5",
+      "editionScope": "PlayMonster English rules (© 2019 Cannei)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/09/5CrownsJR_RULES.pdf",
+          "sha256": "304857163efe80de5da0cbba6df97b503a5a156804b1bc7521fa7e4e06b72e71",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Five Crowns Junior."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2986e5f714f7b0a927a5f484ac65473edd6f8d3a36864e5de80b0bb2083a8d3a"
+    },
+    {
+      "ruleId": "dont-rock-the-boat-playmonster-en",
+      "ruleRevision": "330c34b3bb9c1045df613cbd86faae38a01003538ef69a892693f317f01fa323",
+      "identityId": "game-dea84112-3e97-42e3-9e17-f7bc4dd9f8df",
+      "identityRevision": "5bd7018add59e4d0a30c36418e6d4d292b398bd4e26e34422f5ef643b01bbc60",
+      "editionScope": "PlayMonster English instructions (© 2018)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/DRTB_Instructions.pdf",
+          "sha256": "81daf03e4eaac3acdc78dd66c569a50a6c62831b2881e571ff7d2c469e3bd3e0",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Don’t Rock the Boat."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ba5cbc920bf3add6690b759c28e4e423cf8e7f964ecd343051ff6d0b34473311"
+    },
+    {
+      "ruleId": "toss-up-playmonster-en",
+      "ruleRevision": "d5154e6d6475064adcb5def4cb255f5aa81d2089012d49eb8b933e9f408d8673",
+      "identityId": "game-d781a890-ae1e-4a0b-aa9f-84d97a5c217d",
+      "identityRevision": "58dce0bdbc4ec85341397cd7771fed4b0fead5ec47f1995afaa357d1b0d73b59",
+      "editionScope": "PlayMonster English rules (© 2004 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/TossUpRules.pdf",
+          "sha256": "d44ed8155ffc6044a3129ff72231c07c35d4edfc79349c6ee15b832abd47fde8",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Toss Up!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "c1da243f6380d71da337b9af1c595083d45d8ea53747b905bbd40e49cfc0c739"
+    },
+    {
+      "ruleId": "stack-attack-playmonster-en",
+      "ruleRevision": "c964ba50da83c435f5e68e5bca712c96d42d5ffc83b62c1e1360e9d3cbdbdb5d",
+      "identityId": "game-e0a19cf0-0471-405b-bf62-a5b3a779c570",
+      "identityRevision": "81162fc605354195594abc52c8e0c7bec1873e74739ae7fb4cf24d8e7e494e2b",
+      "editionScope": "PlayMonster English rules (© 2015 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/6890_Stack-Attack_rules.pdf",
+          "sha256": "7e43dc11e0ce710f996f154e568cdc4c58b18194943855e2684d7c996d9ad877",
+          "location": "\"Details\"",
+          "correspondence": "The rule cites this same PlayMonster document for Stack Attack."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a3c0b0983f31488a8ff7baee6fc90df0da3acd5ec5dc1e7063319c19d86a8859"
+    },
+    {
+      "ruleId": "go-ape-playmonster-en",
+      "ruleRevision": "c895e0ec6fecc38c8de16651b09a09b47d519730b0fbe855ef317e7f08c088dd",
+      "identityId": "game-6fb60fde-1aa8-4230-b6f4-00f3cfcd28a4",
+      "identityRevision": "df6374925d4e3eca2bdd0691a4065d3c55942e3596195fd5c41af8557003c347",
+      "editionScope": "PlayMonster English rules (© 2008 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/GoApe-rules.pdf",
+          "sha256": "1ee3a049d5de4f3b7069c1eeb0724453294835c05da58871005d1e26e066fdda",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Go Ape!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a11adde624c566080766395daa55f4e69d193cc90965ab83f8ac4bbed9fe9182"
+    },
+    {
+      "ruleId": "word-shout-playmonster-en",
+      "ruleRevision": "a932f77d627b3ca0bb565729f071facc93e30b5bd10d8df580049b94d30f8678",
+      "identityId": "game-23ceeb94-b297-4987-894f-91be55a8a24f",
+      "identityRevision": "3ae9982f6357db34d44b93616c9fe772637b6959a0182ff1c431846380ded7b5",
+      "editionScope": "PlayMonster English rules (© 2010 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/WordShoutRules.pdf",
+          "sha256": "82b8213c5db2a45d82605aeec92d6ab4e0d973d04d0a3be3c554a8c75240f724",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Word Shout."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "30acff30d2e31bd303ae3b838c6440753fa14a58e957ab43239dcb49a522bf7c"
+    },
+    {
+      "ruleId": "wordspiel-playmonster-2020-en",
+      "ruleRevision": "3563270c5a33e6dba7643e0dc7201a4ab71bf903f67d872524a1abdd2d447362",
+      "identityId": "game-8baf5ca9-b87d-4c26-b89e-66aaf39a7a8f",
+      "identityRevision": "1fbf40bb9508350a03b5c9cee932b49b756bf2506bf7dc6c3db58433a86a7070",
+      "editionScope": "PlayMonster English rules (© 2020 Cannei)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/01/Wordspiel_RULES.pdf",
+          "sha256": "051de48504295f431cd3e15ae544ea0be73517767d45e150064b9bbc5faeb54e",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for WordSpiel."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "6c407b9bcea71803b7e3ba9cf050a4a793f55bc92abbec62824b0b538082983c"
+    },
+    {
+      "ruleId": "rats-playmonster-en",
+      "ruleRevision": "ead7c7962e04cf2cb731f408f0c7e124be22e43a125bf79cf4b8ea1878528215",
+      "identityId": "game-89d8edc2-435d-4fed-8599-14e646c0f297",
+      "identityRevision": "ed463af2ee70e1b34cf22b7cb2fae4587360f02e69c61b3c4814f98646300802",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/BD_Ratsrules.pdf",
+          "sha256": "0a617017466f4a8a319132ac04f04dfe931a79c26f5c69ac4154ab34031fa0c4",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Rats!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "71c4f27ebb797128c2ef16ce426c0b3a5cb8346c4c1cbdfeec667c5c81ceb9c8"
     }
   ]
 }

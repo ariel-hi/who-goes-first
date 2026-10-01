@@ -1,0 +1,38 @@
+{
+  "id": "farkle-playmonster-en",
+  "slug": "farkle-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "6e398e9592f079641477d35e2ba29d5234e42394de03f771dee6049ffa35476a",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Farkle",
+  "aliases": [
+    "Farkle dice game",
+    "10000"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2016)",
+  "firstPlayerRule": "Whoever has the highest roll goes first, with play passing to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the highest roll, those players roll again.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Farkle-Rules.pdf",
+      "title": "Farkle — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"Whoever has the highest roll goes first, with play passing to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for equal high rolls."
+  ]
+}

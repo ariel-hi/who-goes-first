@@ -1,0 +1,37 @@
+{
+  "id": "5-second-rule-playmonster-en",
+  "slug": "5-second-rule-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "1b729dbdcc3614b894c7cf88e12e590e840eb59f165a8bf9601629b9b9b78896",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "5 Second Rule",
+  "aliases": [
+    "Five Second Rule"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2010 Patch Products)",
+  "firstPlayerRule": "The person who owns the game is first in the Hot Seat, and play moves to the right.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The player to the left of the Hot Seat player reads the card aloud."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/5SecRules.pdf",
+      "title": "5 Second Rule — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"The person who owns the game is first in the Hot Seat, and play will move to the right.\"",
+  "uncertainty": []
+}

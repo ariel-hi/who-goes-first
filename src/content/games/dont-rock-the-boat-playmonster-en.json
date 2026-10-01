@@ -1,0 +1,38 @@
+{
+  "id": "dont-rock-the-boat-playmonster-en",
+  "slug": "dont-rock-the-boat-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "330c34b3bb9c1045df613cbd86faae38a01003538ef69a892693f317f01fa323",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Don’t Rock the Boat",
+  "aliases": [
+    "Don't Rock the Boat",
+    "Dont Rock the Boat"
+  ],
+  "editionLabel": "PlayMonster English instructions (© 2018)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/DRTB_Instructions.pdf",
+      "title": "Don’t Rock the Boat — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 2: \"Play – The youngest player goes first.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

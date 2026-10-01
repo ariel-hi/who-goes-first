@@ -1,0 +1,37 @@
+{
+  "id": "rats-playmonster-en",
+  "slug": "rats-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "ead7c7962e04cf2cb731f408f0c7e124be22e43a125bf79cf4b8ea1878528215",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Rats!",
+  "aliases": [
+    "Rats card game"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "The player to the left of the dealer goes first, and play goes to the left around the table.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/BD_Ratsrules.pdf",
+      "title": "Rats! — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"Player to the left of the dealer goes first, and play goes to the left around the table.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

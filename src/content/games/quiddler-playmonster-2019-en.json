@@ -1,0 +1,37 @@
+{
+  "id": "quiddler-playmonster-2019-en",
+  "slug": "quiddler-playmonster-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5929556ce1719c0eb6cb47da5ec440a408c30fb85cc005e95e140ee9af717e9a",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Quiddler",
+  "aliases": [
+    "Quiddler card game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2019 Cannei)",
+  "firstPlayerRule": "The player to the dealer’s left goes first, and play continues clockwise. That player also deals the next round.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals the first round; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2019/09/Quiddler_RULES.pdf",
+      "title": "Quiddler — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"The player to the dealer’s left goes first and play continues clockwise.\" \"The player to the dealer’s left shuffles all of the cards and deals the next round.\"",
+  "uncertainty": [
+    "The rules do not say how the first dealer is chosen."
+  ]
+}

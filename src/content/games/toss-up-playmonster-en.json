@@ -1,0 +1,36 @@
+{
+  "id": "toss-up-playmonster-en",
+  "slug": "toss-up-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d5154e6d6475064adcb5def4cb255f5aa81d2089012d49eb8b933e9f408d8673",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Toss Up!",
+  "aliases": [
+    "Toss Up",
+    "Toss Up dice game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2004 Patch Products)",
+  "firstPlayerRule": "Decide who goes first, then play passes to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules leave the choice to the group; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/TossUpRules.pdf",
+      "title": "Toss Up! — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"Play: Decide who goes first, then play passes to the left.\"",
+  "uncertainty": []
+}

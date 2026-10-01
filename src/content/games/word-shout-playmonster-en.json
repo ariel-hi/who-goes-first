@@ -1,0 +1,37 @@
+{
+  "id": "word-shout-playmonster-en",
+  "slug": "word-shout-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a932f77d627b3ca0bb565729f071facc93e30b5bd10d8df580049b94d30f8678",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Word Shout",
+  "aliases": [
+    "Word Shout dice game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2010 Patch Products)",
+  "firstPlayerRule": "The youngest player rolls the dice first, then players take turns rolling, passing to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/WordShoutRules.pdf",
+      "title": "Word Shout — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"The youngest player will be the first to roll the dice and then players take turns rolling, play passing to the left.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

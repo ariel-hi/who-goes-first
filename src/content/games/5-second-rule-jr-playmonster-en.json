@@ -1,0 +1,38 @@
+{
+  "id": "5-second-rule-jr-playmonster-en",
+  "slug": "5-second-rule-jr-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "84ef39608bfed7d2e73829b084b27b10583ca17cc97da857d345e9d6dfbf5c30",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "5 Second Rule Jr.",
+  "aliases": [
+    "5 Second Rule Junior",
+    "Five Second Rule Jr"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2015 Patch Products)",
+  "firstPlayerRule": "The youngest player is first in the Hot Seat, and play moves to the right.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7424_5-Sec-Rule-Jr_rules.pdf",
+      "title": "5 Second Rule Jr. — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text with pdftotext. PDF page 1: \"The youngest player is first in the Hot Seat, and play will move to the right.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
