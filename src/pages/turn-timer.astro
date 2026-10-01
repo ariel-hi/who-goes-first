@@ -1,0 +1,12 @@
+---
+import ToolPage from '../components/tools/ToolPage.astro';
+import TurnTimer from '../components/tools/TurnTimer';
+---
+<ToolPage current="/turn-timer/" title="Board Game Turn Timer: Free Online Sand Timer — Who Goes First?" description="A free turn timer for board games and party games. Pick 30 seconds to 3 minutes, tap to start, and restart for the next player. Beeps when time is up." heading="Turn timer" lede="Keep turns moving, or stand in for a lost sand timer.">
+  <TurnTimer client:load />
+  <Fragment slot="about">
+    <h2>Using a turn timer</h2>
+    <p>Choose a length, start the timer, and tap “Next player — restart” as each turn ends. When time runs out, the timer beeps and shows “Time!”. It works as a replacement sand timer for word and drawing games too.</p>
+    <p>Still deciding who takes the first turn? <a href="/">Pick a starting player</a> or <a href="/games/">look up your game’s official rule</a>.</p>
+  </Fragment>
+</ToolPage>

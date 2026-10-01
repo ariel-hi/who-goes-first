@@ -18,6 +18,7 @@ export function GET() {
     `- [Dice roller](${url}/dice-roller/): d4 to d100, up to 12 dice`,
     `- [Turn order generator](${url}/turn-order-generator/): shuffle players into a random playing order`,
     `- [Score keeper](${url}/score-keeper/): free scoreboard for any game`,
+    `- [Turn timer](${url}/turn-timer/): countdown sand timer for turns`,
     `- [Random number generator](${url}/random-number-generator/)`,
     `- [Ways to pick who goes first](${url}/ways-to-pick-who-goes-first/): starting rules from real rulebooks that work for any game`,
     '',

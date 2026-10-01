@@ -20,6 +20,7 @@ const TOOLS = [
   { id: 'turn-order', path: '/turn-order-generator/', heading: 'Random turn order for game night', body: 'Type everyone’s name and shuffle them into a fair playing order in one tap. Free, no account.', campaign: 'tool_turn_order' },
   { id: 'random-number', path: '/random-number-generator/', heading: 'Pick a random number, any range', body: 'A fair random number from 1 to 10, 1 to 100 or any range you like. Great for picking a player or seat.', campaign: 'tool_random_number' },
   { id: 'score-keeper', path: '/score-keeper/', heading: 'Lost the score pad? Keep score online', body: 'A free scoreboard for board and card games. Add players, tap to score, and see who is winning.', campaign: 'tool_score_keeper' },
+  { id: 'turn-timer', path: '/turn-timer/', heading: 'Lost the sand timer? Use a turn timer', body: 'A free countdown for board and party games, from 30 seconds to 3 minutes. Tap to restart for the next player.', campaign: 'tool_turn_timer' },
   { id: 'printable', path:'/printable-game-night/', heading: 'Printable game night kit', body: 'Print free who-goes-first extras and keep them in the game box for your next game night.', campaign: 'printable' },
 ];
 
