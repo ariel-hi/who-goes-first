@@ -1,0 +1,38 @@
+{
+  "id": "swap-playmonster-en",
+  "slug": "swap-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5eb2e47894decc4336d6a90e0fa0be1f1aee751b167625d5d0e3971f796e9f03",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "SWAP!",
+  "aliases": [
+    "Swap card game",
+    "Swap"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "The player to the left of the dealer goes first, with play moving to the left.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/SwapRulesNew.pdf",
+      "title": "SWAP! — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scanned booklet with no text layer, rendered its pages to images and read them. PDF page 2: \"The player to the left of the dealer goes first, with play moving to the left as players take turns.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

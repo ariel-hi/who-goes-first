@@ -1,0 +1,37 @@
+{
+  "id": "qwitch-playmonster-en",
+  "slug": "qwitch-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "6bf6be150b6d169fb434d1a6ee55d334ab47c2076697a871a85298ccf77f29e8",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Qwitch",
+  "aliases": [
+    "Qwitch card game"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "Nobody takes turns: the dealer turns over the top Direction Card and yells “Go!”, and everyone races at once.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Qwitch_Rules.pdf",
+      "title": "Qwitch — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Game Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scanned booklet with no text layer, rendered its pages to images and read them. PDF page 2: \"Game Play • The player who dealt the cards turns over the top Direction Card and then yells, ‘Go!’ to start the game play. The most important thing to remember is that this is a race!\"",
+  "uncertainty": [
+    "The rules do not say who deals."
+  ]
+}

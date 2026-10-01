@@ -6659,6 +6659,61 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "538b01243d36baebc58d45bdcdcec9d41e0ecd16437a00ff5569fc22f314dd42"
+    },
+    {
+      "identityId": "game-989fd40a-e67c-452b-bb1f-b5cf6a6f2c0f",
+      "routeKey": "game-989fd40a-e67c-452b-bb1f-b5cf6a6f2c0f",
+      "name": "Qwitch",
+      "searchNames": [
+        "Qwitch card game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Qwitch, the PlayMonster card game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Qwitch and gives its complete English rules.",
+      "publisherReferenceSourceId": "qwitch-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "qwitch-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Qwitch_Rules.pdf",
+          "sha256": "1bc0b4a8dff0c6d69041a3fd969df8542c1f01c74b023cdf197c7758f5578864",
+          "byteCount": 11168226,
+          "location": "\"Game Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "af8b40eaad161813306ad951143f503752cbd3bf90435d4eda40d8f2d69cadcf"
+    },
+    {
+      "identityId": "game-7cd5e1cc-70b1-493a-afdc-ef3dd7e0fd7e",
+      "routeKey": "game-7cd5e1cc-70b1-493a-afdc-ef3dd7e0fd7e",
+      "name": "SWAP!",
+      "searchNames": [
+        "Swap card game",
+        "Swap"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "SWAP!, the PlayMonster card game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names SWAP! and gives its complete English rules.",
+      "publisherReferenceSourceId": "swap-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "swap-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/SwapRulesNew.pdf",
+          "sha256": "5f32930e80fe8a131a6b114ac0158e33ee4f2ce115d8fe6055edc5d691ff1564",
+          "byteCount": 914265,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "532948af926b08e2e125f46cd8f98502b21dc4bda88faabfda8835ce8b002248"
     }
   ]
 }

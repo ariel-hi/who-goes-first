@@ -2630,6 +2630,44 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "8baa151d8962b0b5531c309dd3a9656bb00c776c9accff1ebf66250fb85975ef"
+    },
+    {
+      "ruleId": "qwitch-playmonster-en",
+      "ruleRevision": "6bf6be150b6d169fb434d1a6ee55d334ab47c2076697a871a85298ccf77f29e8",
+      "identityId": "game-989fd40a-e67c-452b-bb1f-b5cf6a6f2c0f",
+      "identityRevision": "af8b40eaad161813306ad951143f503752cbd3bf90435d4eda40d8f2d69cadcf",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Qwitch_Rules.pdf",
+          "sha256": "1bc0b4a8dff0c6d69041a3fd969df8542c1f01c74b023cdf197c7758f5578864",
+          "location": "\"Game Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Qwitch."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ac37a7ac6569766940b956acd0a5ab346d5891015e975389447eba01159c42dd"
+    },
+    {
+      "ruleId": "swap-playmonster-en",
+      "ruleRevision": "5eb2e47894decc4336d6a90e0fa0be1f1aee751b167625d5d0e3971f796e9f03",
+      "identityId": "game-7cd5e1cc-70b1-493a-afdc-ef3dd7e0fd7e",
+      "identityRevision": "532948af926b08e2e125f46cd8f98502b21dc4bda88faabfda8835ce8b002248",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/SwapRulesNew.pdf",
+          "sha256": "5f32930e80fe8a131a6b114ac0158e33ee4f2ce115d8fe6055edc5d691ff1564",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for SWAP!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "c165d40e167d4f947aea3ffb806874a116b4046c977de7d995f9ffdb1592400a"
     }
   ]
 }

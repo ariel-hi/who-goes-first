@@ -1,0 +1,37 @@
+{
+  "id": "7-ate-9-playmonster-en",
+  "slug": "7-ate-9-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "ec3072afe4cb14f2a6896d3fb1dc0544706e5fe24e4708f4e9be8ef613364ff6",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "7 Ate 9",
+  "aliases": [
+    "Seven Ate Nine"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "Nobody takes turns: the player who dealt yells “Go!” and everyone races at once.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/789_Rules.pdf",
+      "title": "7 Ate 9 — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Game Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/, a scanned booklet with no text layer, rendered its pages to images and read them. PDF page 2: \"Game Play • The player who dealt the Cards yells, ‘Go!’ to start the game play. The most important thing to remember is that this is a race!\"",
+  "uncertainty": [
+    "The rules do not say who deals."
+  ]
+}
