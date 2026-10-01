@@ -2155,6 +2155,63 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "77c054080cba9616bd07eeb885d5bf10910ec0fecabb9dd429c860c89b3775b3"
+    },
+    {
+      "ruleId": "left-center-right-bicycle-en",
+      "ruleRevision": "c9cc11f8fc8b5588d0fe79d3e12254edf6e8ede51c8052e751e0e48c8005602c",
+      "identityId": "game-d6d6b5fb-9e07-4e03-882b-1dfb44269cfd",
+      "identityRevision": "50b15ed4db6d997683d8bbe378cc00b90622dba8764e469e2063ef60729ed0ab",
+      "editionScope": "Bicycle Cards rules (three LCR dice and chips)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/left-center-right",
+          "sha256": "db7dbe78b119bcb329677d13959c7ab4651141afb6ee1523de66c9ac8a8213ed",
+          "location": "Setup and \"The Play\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Left Center Right."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2040364b11ef7ab65f08708363ecb52e475f925c215237c3e742574a292aaa9e"
+    },
+    {
+      "ruleId": "pinochle-bicycle-en",
+      "ruleRevision": "576e6df2aa31cea7afb428363f6b2794c7f1caa47dc202dfdb7b910e9d70f88e",
+      "identityId": "game-6066c9b6-a0b9-4475-9036-82271e8697cc",
+      "identityRevision": "3ce831d6947b59179923d2b60d083c36ef0493b3c82bfc7a7e62de0b5f45bbd3",
+      "editionScope": "Bicycle Cards rules, two-hand Pinochle (48-card pinochle deck)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/pinochle-2",
+          "sha256": "a59748341e24c6016def4e8521baf498aa6cb69731da157d152417ce73329ac0",
+          "location": "\"The Play\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Pinochle."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "7c33238573e0ccbe2284736c4b170c0e183538eff92b105029a34ff69575e04d"
+    },
+    {
+      "ruleId": "ship-captain-and-crew-bicycle-en",
+      "ruleRevision": "5b7d844d1aecbd048b915b3c1746b1c7b04e8373a4bba115ff2c7eecfe5f94c1",
+      "identityId": "game-aefe2f22-ed4f-492a-93c5-d9ae5738f69d",
+      "identityRevision": "99db68e390f929b21890c0cf163b95e443bf1a34aa1cbafe0ef55394e553a82f",
+      "editionScope": "Bicycle Cards rules (five dice)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/ship-captain-and-crew",
+          "sha256": "dfe70099764ebbd8d4ea7acd03f9a677ad90469b77ee543c43c36502d031baab",
+          "location": "\"The Play\"",
+          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Ship, Captain, and Crew."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "79b8b39145dc4b3b980b821cdf0e10917038c0e0e9f898ea3ea9656bce819c66"
     }
   ]
 }

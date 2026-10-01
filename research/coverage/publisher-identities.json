@@ -5964,6 +5964,92 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "a2190a2aa89b5f597e2a0b3e8f448a47e7219492e09507cf644b29285565067a"
+    },
+    {
+      "identityId": "game-d6d6b5fb-9e07-4e03-882b-1dfb44269cfd",
+      "routeKey": "game-d6d6b5fb-9e07-4e03-882b-1dfb44269cfd",
+      "name": "Left Center Right",
+      "searchNames": [
+        "LCR",
+        "Left, Center, Right",
+        "LCR dice game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional game Left Center Right, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Left Center Right and gives its complete rules.",
+      "publisherReferenceSourceId": "left-center-right-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "left-center-right-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/left-center-right",
+          "sha256": "db7dbe78b119bcb329677d13959c7ab4651141afb6ee1523de66c9ac8a8213ed",
+          "byteCount": 105355,
+          "location": "Setup and \"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "50b15ed4db6d997683d8bbe378cc00b90622dba8764e469e2063ef60729ed0ab"
+    },
+    {
+      "identityId": "game-6066c9b6-a0b9-4475-9036-82271e8697cc",
+      "routeKey": "game-6066c9b6-a0b9-4475-9036-82271e8697cc",
+      "name": "Pinochle",
+      "searchNames": [
+        "Two-handed Pinochle",
+        "Pinochle card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional game Pinochle, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Pinochle and gives its complete rules.",
+      "publisherReferenceSourceId": "pinochle-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "pinochle-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/pinochle-2",
+          "sha256": "a59748341e24c6016def4e8521baf498aa6cb69731da157d152417ce73329ac0",
+          "byteCount": 126777,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "3ce831d6947b59179923d2b60d083c36ef0493b3c82bfc7a7e62de0b5f45bbd3"
+    },
+    {
+      "identityId": "game-aefe2f22-ed4f-492a-93c5-d9ae5738f69d",
+      "routeKey": "game-aefe2f22-ed4f-492a-93c5-d9ae5738f69d",
+      "name": "Ship, Captain, and Crew",
+      "searchNames": [
+        "Ship Captain and Crew",
+        "Ship Captain Crew",
+        "6-5-4"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional game Ship, Captain, and Crew, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Ship, Captain, and Crew and gives its complete rules.",
+      "publisherReferenceSourceId": "ship-captain-and-crew-bicycle-en-primary",
+      "sources": [
+        {
+          "id": "ship-captain-and-crew-bicycle-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/ship-captain-and-crew",
+          "sha256": "dfe70099764ebbd8d4ea7acd03f9a677ad90469b77ee543c43c36502d031baab",
+          "byteCount": 104386,
+          "location": "\"The Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "99db68e390f929b21890c0cf163b95e443bf1a34aa1cbafe0ef55394e553a82f"
     }
   ]
 }

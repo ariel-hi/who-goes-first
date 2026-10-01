@@ -1,0 +1,36 @@
+{
+  "id": "pinochle-bicycle-en",
+  "slug": "pinochle-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "576e6df2aa31cea7afb428363f6b2794c7f1caa47dc202dfdb7b910e9d70f88e",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pinochle",
+  "aliases": [
+    "Two-handed Pinochle",
+    "Pinochle card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, two-hand Pinochle (48-card pinochle deck)",
+  "firstPlayerRule": "In two-hand Pinochle, the non-dealer leads the first trick. After that, the winner of each trick leads.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/pinochle-2",
+      "title": "Pinochle — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Pinochle page in a browser. \"Each trick consists of a lead and a play. The non-dealer leads; thereafter the winner of each trick leads next.\"",
+  "uncertainty": [
+    "The page does not say how the dealer is chosen."
+  ]
+}
