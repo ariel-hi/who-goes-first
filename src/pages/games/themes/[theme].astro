@@ -22,6 +22,7 @@ const context: Record<string, string> = {
   heading={`Starting rules about ${hub.about}`}
   lede={`${count} sourced board game rules that mention ${hub.about} when choosing who goes first.`}
   crumb={hub.label}
+  image={`/og/hub-${hub.slug}.png`}
   rules={hub.rules}
 >
   {context[hub.slug] && <p>{context[hub.slug]}</p>}
