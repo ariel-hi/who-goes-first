@@ -1,8 +1,8 @@
 import { getCatalog } from './content/catalog';
-import { clip } from './og-image';
+import { clip, type PinArt } from './og-image';
 import { ruleHeading } from './rule-copy';
 
-export type QueuedPin = { id: string; path: string; title: string; heading: string; body: string; footer: string; description: string; campaign: string; date: string };
+export type QueuedPin = { id: string; path: string; title: string; heading: string; body: string; art: PinArt; description: string; campaign: string; date: string };
 
 // Drip schedule for the Pinterest RSS feed. Pinterest only creates Pins from
 // items it has not seen, so new items must keep appearing. The daily
@@ -34,9 +34,9 @@ export function pinQueue(): QueuedPin[] {
     const rule = bySlug.get(slug);
     if (!rule) return [];
     const heading = ruleHeading(rule.gameName);
-    return [{ id: `game-${slug}`, path: `/games/${slug}/`, title: `${heading} Official Starting Player Rule`, heading, body: rule.firstPlayerRule, footer: 'From the publisher’s rulebook', description: clip(`${rule.firstPlayerRule} The official ${rule.gameName} rule (${rule.editionLabel}), with its rulebook source and a fair picker for ties.`, 480), campaign: 'game_rule_pin' }];
+    return [{ id: `game-${slug}`, path: `/games/${slug}/`, title: `${heading} Official Starting Player Rule`, heading, body: rule.firstPlayerRule, art: { seed: slug, kicker: 'Official rule', lead: /[.!?…]$/u.test(rule.gameName) ? 'Starting rule for' : 'Who goes first in', title: /[.!?…]$/u.test(rule.gameName) ? rule.gameName : `${rule.gameName}?`, body: rule.firstPlayerRule, cta: 'Full rule + fair picker' }, description: clip(`${rule.firstPlayerRule} The official ${rule.gameName} rule (${rule.editionLabel}), with its rulebook source and a fair picker for ties.`, 480), campaign: 'game_rule_pin' }];
   });
-  const tools = TOOLS.map(tool => ({ ...tool, id: `tool-${tool.id}`, title: tool.heading, footer: 'Free game night tool', description: tool.body }));
+  const tools = TOOLS.map(tool => ({ ...tool, id: `tool-${tool.id}`, title: tool.heading, art: { seed: tool.id, kicker: 'Free game night tool', title: tool.heading, body: tool.body, cta: 'Try it free' }, description: tool.body }));
   // One tool after every five games keeps the board varied.
   const ordered: Omit<QueuedPin, 'date'>[] = [];
   games.forEach((pin, index) => { ordered.push(pin); if (index % 5 === 4 && tools.length) ordered.push(tools.shift()!); });
