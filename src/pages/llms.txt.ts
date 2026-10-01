@@ -20,6 +20,7 @@ export function GET() {
     `- [Score keeper](${url}/score-keeper/): free scoreboard for any game`,
     `- [Turn timer](${url}/turn-timer/): countdown sand timer for turns`,
     `- [Random letter generator](${url}/random-letter-generator/): letters for Scattergories and word games`,
+    `- [Draw a card](${url}/card-draw/): random cards from a shuffled 52-card deck`,
     `- [Random number generator](${url}/random-number-generator/)`,
     `- [Ways to pick who goes first](${url}/ways-to-pick-who-goes-first/): starting rules from real rulebooks that work for any game`,
     '',
