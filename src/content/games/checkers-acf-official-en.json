@@ -1,0 +1,37 @@
+{
+  "id": "checkers-acf-official-en",
+  "slug": "checkers-acf-official-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "58b412a5f64b627e375538a5308ff445158916c8a450d62a5699829fa0fef7d8",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Checkers",
+  "aliases": [
+    "Draughts",
+    "English draughts",
+    "American checkers"
+  ],
+  "editionLabel": "American Checker Federation official rules (English)",
+  "firstPlayerRule": "Players choose colours by random selection, such as a coin toss. The player with the Red (dark) men makes the first move. In later games, players alternate colours.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The dark pieces are sometimes called Black in checkers books."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.usacheckers.com/rulesofcheckers.php",
+      "title": "The Official Rules of Checkers",
+      "publisher": "American Checker Federation",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"Order of Play\" section and its note on random selection",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Downloaded the American Checker Federation rules document served at usacheckers.com/rulesofcheckers.php (a Word document) and extracted its text. \"To start the first game the players decide by random selection which colour they will play. In subsequent games the players alternate colours. The first move in each game is made by the player with the Red men\". The note on random selection describes a coin toss or guessing which hand holds each colour.",
+  "uncertainty": []
+}

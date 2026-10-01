@@ -1,0 +1,37 @@
+{
+  "id": "othello-wof-official-en",
+  "slug": "othello-wof-official-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "63acfcc9eb3a1636ca6f8a818ece503f7341defa7dd56c8228c825b77c5c7585",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Othello",
+  "aliases": [
+    "Reversi"
+  ],
+  "editionLabel": "World Othello Federation official rules (English)",
+  "firstPlayerRule": "Black always moves first. Each player chooses one colour to use for the whole game.",
+  "officialTieBreak": null,
+  "houseFallback": "If both players want the same colour, flip a coin to choose.",
+  "clarifications": [
+    "The game always begins with two black and two white discs in the centre."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.worldothello.org/about/about-othello/othello-rules/official-rules/english",
+      "title": "Official Rules (English)",
+      "publisher": "World Othello Federation",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Setup and rule 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the World Othello Federation English official rules in a browser. \"Each player takes 32 discs and chooses one colour to use throughout the game.\" Rule 1: \"Black always moves first.\"",
+  "uncertainty": [
+    "The rules do not say how players choose colours."
+  ]
+}

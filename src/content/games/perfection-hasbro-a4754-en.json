@@ -1,0 +1,39 @@
+{
+  "id": "perfection-hasbro-a4754-en",
+  "slug": "perfection-hasbro-a4754-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "5147eb25c37ff45c2a917575f83d22fe4ba6eb6b7219d0e28ff901843d17368a",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Perfection",
+  "aliases": [
+    "Perfection game"
+  ],
+  "editionLabel": "Hasbro English instructions, item A4754",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/f2ff5ed9-b11f-49ec-b889-c08253022162/A47540000_Perfection_13_instr.pdf",
+      "title": "Perfection — Instructions (item A4754)",
+      "publisher": "Hasbro",
+      "printedPages": [
+        "1"
+      ],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "Setup step 1",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the publisher-hosted PDF linked from instructions.hasbro.com/en-us/instruction/perfection-game and extracted its text with pdftotext. Step 1: \"The youngest player goes first.\" File name A47540000_Perfection_13_instr.",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
