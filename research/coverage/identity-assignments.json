@@ -2915,6 +2915,25 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "f9956a5d9fcba3561866a12516d6d951a06d139f7ff8faa0719dacdae4e4acbc"
+    },
+    {
+      "ruleId": "skip-bo-mod-mattel-r2830-en",
+      "ruleRevision": "74eec802c450c6ec4d3ca0f04cfc931d8daa33eab03eb6bf0aae0c2512b67988",
+      "identityId": "game-0ba653fd-f4db-4ed7-89cb-b8109950ac64",
+      "identityRevision": "a834c3a912c36c0e879a26517ac650653f0206a68886a3b4c743cd6dd61c6337",
+      "editionScope": "Mattel English instructions, item R2830 (2009)",
+      "evidence": [
+        {
+          "url": "https://service.mattel.com/instruction_sheets/Skip-BoMOD.pdf",
+          "sha256": "b5e37190fce102762da57278e2ca8759a8372677f3772fcce071b45580a23c21",
+          "location": "\"How to Play\"",
+          "correspondence": "The rule cites this same Mattel document for Skip-Bo MOD."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "5aad5667320247062decd5c2ca95d5b052a886fa4dadf5a1baff7fbd56ae931b"
     }
   ]
 }

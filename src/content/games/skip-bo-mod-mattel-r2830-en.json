@@ -1,0 +1,38 @@
+{
+  "id": "skip-bo-mod-mattel-r2830-en",
+  "slug": "skip-bo-mod-mattel-r2830-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "74eec802c450c6ec4d3ca0f04cfc931d8daa33eab03eb6bf0aae0c2512b67988",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Skip-Bo MOD",
+  "aliases": [
+    "Skip-Bo Mod",
+    "Skip Bo MOD"
+  ],
+  "editionLabel": "Mattel English instructions, item R2830 (2009)",
+  "firstPlayerRule": "The person to the left of the dealer starts.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://service.mattel.com/instruction_sheets/Skip-BoMOD.pdf",
+      "title": "Skip-Bo MOD — Instructions (R2830)",
+      "publisher": "Mattel",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"How to Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the Mattel service-site instruction PDF and extracted its text with pdftotext. \"HOW TO PLAY The person to the left of the dealer starts.\" Item R2830, © 2009 Mattel, with one die and 112 cards.",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

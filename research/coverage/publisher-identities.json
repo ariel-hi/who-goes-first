@@ -7072,6 +7072,34 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "09aa8b06f640b01ea10f5c4408a3b110f7d24a276d0904c94bca8a242ffa31fc"
+    },
+    {
+      "identityId": "game-0ba653fd-f4db-4ed7-89cb-b8109950ac64",
+      "routeKey": "game-0ba653fd-f4db-4ed7-89cb-b8109950ac64",
+      "name": "Skip-Bo MOD",
+      "searchNames": [
+        "Skip-Bo Mod",
+        "Skip Bo MOD"
+      ],
+      "publisher": "Mattel",
+      "identityScope": "Skip-Bo MOD, the Mattel dice-and-cards edition of Skip-Bo, item R2830, as described in its English instructions PDF.",
+      "identityEvidence": "Mattel's service-site instructions name Skip-Bo MOD, item R2830, with one die and 112 cards.",
+      "publisherReferenceSourceId": "skip-bo-mod-mattel-r2830-en-primary",
+      "sources": [
+        {
+          "id": "skip-bo-mod-mattel-r2830-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://service.mattel.com/instruction_sheets/Skip-BoMOD.pdf",
+          "sha256": "b5e37190fce102762da57278e2ca8759a8372677f3772fcce071b45580a23c21",
+          "byteCount": 372947,
+          "location": "\"How to Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a834c3a912c36c0e879a26517ac650653f0206a68886a3b4c743cd6dd61c6337"
     }
   ]
 }
