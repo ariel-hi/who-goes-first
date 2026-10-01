@@ -1,0 +1,38 @@
+{
+  "id": "crazy-eights-bicycle-en",
+  "slug": "crazy-eights-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "7d06371d496fecb441ce0539cbe9bba33c19e714d823fce5a286b5381b6fcb11",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Crazy Eights",
+  "aliases": [
+    "Crazy 8s",
+    "Crazy 8"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The player to the dealer’s left plays first, then play continues around the table.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say who deals; use the picker to choose the first dealer.",
+  "clarifications": [
+    "The dealer turns up a starter card. If it is an eight, it is buried in the pack and the next card is turned."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/crazy-eights",
+      "title": "Crazy Eights — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Crazy Eights page in a browser. \"The Play\": \"Starting to the dealer’s left, each player must place one card face up on the starter pile.\"",
+  "uncertainty": [
+    "The page does not say how the first dealer is chosen."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "euchre-bicycle-en",
+  "slug": "euchre-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "cec92a1cb32220dd8b6b4bd4b90c6233c2cf899936a63f3c5577e3358c7cf252",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Euchre",
+  "aliases": [
+    "Euchre card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Players draw cards; the lowest card deals first. The player to the dealer’s left decides on trump first and makes the opening lead. If that player’s partner is playing alone, the player across from the dealer leads.",
+  "officialTieBreak": "Players drawing equal cards draw again.",
+  "houseFallback": null,
+  "clarifications": [
+    "For the draw, cards rank K (high), Q, J, 10, 9, 8, 7, A.",
+    "After the first hand, the deal passes to the left."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/euchre",
+      "title": "Euchre — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\", \"Making the Trump\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Euchre page in a browser. \"The player with the lowest card deals first. For drawing, the cards rank: K (high), Q, J, 10, 9, 8, 7, A. Players drawing equal cards must draw again.\" \"Beginning with the player to the left of the dealer, each player passes or accepts the turn-up as trump.\" \"The opening lead is made by the player to the dealer’s left, or if this player’s partner is playing alone, it is made by the player across from the dealer.\"",
+  "uncertainty": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "go-fish-bicycle-en",
+  "slug": "go-fish-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "bac57a9a6b097264031d07309dc7b9ea1ff50ab3a44e41941f18df029dcfa3fc",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Go Fish",
+  "aliases": [
+    "Go Fish card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Deal one card face up to each player; the lowest card deals. The player to the left of the dealer goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If players tie for the lowest card, deal those players another card.",
+  "clarifications": [
+    "A player keeps the turn while they keep catching the rank they asked for."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/go-fish",
+      "title": "Go Fish — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Go Fish page in a browser. \"The Deal\": \"Any player deals one card face up to each player. The player with the lowest card is the dealer.\" \"The Play\": \"The player to the left of the dealer looks directly at any opponent and says, for example, ‘Give me your kings’\".",
+  "uncertainty": [
+    "No tie-break is stated for the lowest card."
+  ]
+}

@@ -920,6 +920,82 @@
       "reviewedBy": "Codex editorial review of publisher product and linked rulebook",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "c23844fea80784679539e1d2285a84345faa87cf57da81f49901b0f23863d8f9"
+    },
+    {
+      "ruleId": "spades-bicycle-en",
+      "ruleRevision": "a62fb7ec85cfef29972d986c0c2483497b9ea8ab2b73ad442d2c2fd4ae4d4a39",
+      "identityId": "game-20dc410b-360e-4b4b-9163-0993e78e70a5",
+      "identityRevision": "117db704651f6aa4112415622b76d0d59ba39ea14b4da383be902b0735aa1d00",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/spades",
+          "sha256": "3f5af2446156acc3ae3f6154035ebb7232a82e283c0b00d66ab9ed2afe8d8f18",
+          "location": "\"The Deal\", \"The Bidding\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Spades."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ea48b430b7802f6fafb87dcbb6b2830cf4a9b6f148cc2ab495cc8f12e39d53a3"
+    },
+    {
+      "ruleId": "euchre-bicycle-en",
+      "ruleRevision": "cec92a1cb32220dd8b6b4bd4b90c6233c2cf899936a63f3c5577e3358c7cf252",
+      "identityId": "game-1ead86b2-1f44-41d6-8605-44f841bdb276",
+      "identityRevision": "2aa802be8c03e9bd54cb0b4efa4eef9ee60fb94e136e26f5086773ee9206cda1",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/euchre",
+          "sha256": "22dc587b88e3d7c635c948f452980e05956514b048f42fc13b07cc8177c15c38",
+          "location": "\"The Deal\", \"Making the Trump\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Euchre."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "1b764397556321bf7411ca32c0f441ee9d704205f407fbbb30d7460e1feb7235"
+    },
+    {
+      "ruleId": "gin-rummy-bicycle-en",
+      "ruleRevision": "a8be9ad4f4e51d8a2994d84f5c7cbc75f8c1bc0dca3ff40050b3c663dde852d3",
+      "identityId": "game-84c39059-1f3c-47a6-9dbf-c70eceabd031",
+      "identityRevision": "0094c378a3a432fea5ec80a320fd22d9c82364a0e0b6e6a389e4480c7337ab27",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/gin-rummy",
+          "sha256": "1c59bf813c8a4842ca04fba0ef3328a039cc262015799513e1813dc4f6e8abee",
+          "location": "\"The Deal\" section",
+          "correspondence": "The rule cites this same Bicycle Cards page for Gin Rummy."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "eb82a5566212bf9a1edc9f740377456624871a229dcd4a163b16e3c38db165cf"
+    },
+    {
+      "ruleId": "crazy-eights-bicycle-en",
+      "ruleRevision": "7d06371d496fecb441ce0539cbe9bba33c19e714d823fce5a286b5381b6fcb11",
+      "identityId": "game-1b451856-ca5a-4ff5-8e37-919da2b730ad",
+      "identityRevision": "ca10d856dddd6a23f1854cfc0c19ec504b20cca67e00575bd112718a2aab887b",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/crazy-eights",
+          "sha256": "7820b65813687acd5459bc20f37a779c0c0bce4442b9e3416b08d7b1d7e9ad9d",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Crazy Eights."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e2c8111dfe234ff42917465f3083f88afafc04988ee5f1d14d128d32a7c2b726"
     }
   ]
 }

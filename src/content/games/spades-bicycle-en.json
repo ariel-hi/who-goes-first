@@ -1,0 +1,37 @@
+{
+  "id": "spades-bicycle-en",
+  "slug": "spades-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a62fb7ec85cfef29972d986c0c2483497b9ea8ab2b73ad442d2c2fd4ae4d4a39",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Spades",
+  "aliases": [
+    "Spades card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The first dealer is chosen by a draw for high card. The player on the dealer’s left starts the bidding and makes the opening lead.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "The deal then passes clockwise each hand."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/spades",
+      "title": "Spades — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\", \"The Bidding\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards (United States Playing Card Company) Spades page in a browser. \"The Deal\": \"The first dealer is chosen by a draw for high card, and thereafter the turn to deal proceeds clockwise.\" \"The Bidding\": \"The player to the dealer’s left starts the bidding.\" \"The Play\": \"The player on the dealer’s left makes the opening lead.\"",
+  "uncertainty": [
+    "The page does not say how to break a tie in the draw for first dealer."
+  ]
+}

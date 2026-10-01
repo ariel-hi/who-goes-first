@@ -1,0 +1,37 @@
+{
+  "id": "gin-rummy-bicycle-en",
+  "slug": "gin-rummy-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a8be9ad4f4e51d8a2994d84f5c7cbc75f8c1bc0dca3ff40050b3c663dde852d3",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Gin Rummy",
+  "aliases": [
+    "Gin"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Each player takes a card from the spread deck; the higher card chooses a seat and deals. The player who did not deal starts. In later games, the winner of the previous game deals.",
+  "officialTieBreak": null,
+  "houseFallback": "If the cards tie, draw again.",
+  "clarifications": [
+    "The non-dealer may first take the upturned card or pass; if they pass, the dealer gets that choice before the non-dealer draws from the stock."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/gin-rummy",
+      "title": "Gin Rummy — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" section",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Gin Rummy page in a browser. \"The player who draws the highest card chooses where to sit and deals out ten cards to each player.\" \"In the following games, the player who wins the previous game becomes the dealer.\" \"The player who did not deal the cards starts the game, with the option to pick up the upturned card\".",
+  "uncertainty": [
+    "No tie-break is stated for equal draws."
+  ]
+}

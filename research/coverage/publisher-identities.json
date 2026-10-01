@@ -4175,6 +4175,115 @@
       "reviewedBy": "Codex /root",
       "reviewedAt": "2026-09-28",
       "acceptedRevision": "35c02adfd0b0a116b50a3da29fd15ec2fa5186dc27c755c1374ffc91d2d17a7b"
+    },
+    {
+      "identityId": "game-20dc410b-360e-4b4b-9163-0993e78e70a5",
+      "routeKey": "game-20dc410b-360e-4b4b-9163-0993e78e70a5",
+      "name": "Spades",
+      "searchNames": [
+        "Spades card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Spades, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Spades and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-spades",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-spades",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/spades",
+          "sha256": "3f5af2446156acc3ae3f6154035ebb7232a82e283c0b00d66ab9ed2afe8d8f18",
+          "byteCount": 144982,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "117db704651f6aa4112415622b76d0d59ba39ea14b4da383be902b0735aa1d00"
+    },
+    {
+      "identityId": "game-1ead86b2-1f44-41d6-8605-44f841bdb276",
+      "routeKey": "game-1ead86b2-1f44-41d6-8605-44f841bdb276",
+      "name": "Euchre",
+      "searchNames": [
+        "Euchre card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Euchre, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Euchre and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-euchre",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-euchre",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/euchre",
+          "sha256": "22dc587b88e3d7c635c948f452980e05956514b048f42fc13b07cc8177c15c38",
+          "byteCount": 96881,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2aa802be8c03e9bd54cb0b4efa4eef9ee60fb94e136e26f5086773ee9206cda1"
+    },
+    {
+      "identityId": "game-84c39059-1f3c-47a6-9dbf-c70eceabd031",
+      "routeKey": "game-84c39059-1f3c-47a6-9dbf-c70eceabd031",
+      "name": "Gin Rummy",
+      "searchNames": [
+        "Gin"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Gin Rummy, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Gin Rummy and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-gin-rummy",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-gin-rummy",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/gin-rummy",
+          "sha256": "1c59bf813c8a4842ca04fba0ef3328a039cc262015799513e1813dc4f6e8abee",
+          "byteCount": 60769,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "0094c378a3a432fea5ec80a320fd22d9c82364a0e0b6e6a389e4480c7337ab27"
+    },
+    {
+      "identityId": "game-1b451856-ca5a-4ff5-8e37-919da2b730ad",
+      "routeKey": "game-1b451856-ca5a-4ff5-8e37-919da2b730ad",
+      "name": "Crazy Eights",
+      "searchNames": [
+        "Crazy 8s",
+        "Crazy 8"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Crazy Eights, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Crazy Eights and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-crazy-eights",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-crazy-eights",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/crazy-eights",
+          "sha256": "7820b65813687acd5459bc20f37a779c0c0bce4442b9e3416b08d7b1d7e9ad9d",
+          "byteCount": 94705,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ca10d856dddd6a23f1854cfc0c19ec504b20cca67e00575bd112718a2aab887b"
     }
   ]
 }

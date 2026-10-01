@@ -1,0 +1,35 @@
+{
+  "id": "cribbage-bicycle-en",
+  "slug": "cribbage-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "dffc53fe5f416dd860c5ad24dcf8aa14d08b55599b1f99ea703d7eb73d20e5ec",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Cribbage",
+  "aliases": [
+    "Crib"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Both players cut the deck; the lower card deals the first hand. The non-dealer plays the first card. In later games, the loser of the previous game deals first.",
+  "officialTieBreak": "If both players cut cards of the same rank, they each draw again.",
+  "houseFallback": null,
+  "clarifications": [
+    "The crib belongs to the dealer."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/cribbage",
+      "title": "Cribbage — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Draw, Shuffle and Cut\", \"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Cribbage page in a browser. \"If both players cut cards of the same rank, they each draw again. The player with the lower card deals the first hand. If another game is played, the loser of the previous game deals first.\" \"After the starter is turned up, players alternate playing cards face-up, starting with the non-dealer.\"",
+  "uncertainty": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": "hearts-bicycle-en",
+  "slug": "hearts-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "93169bcb5e7fea10362420f9b26279624ca28a4ff9cb0eec9fe20308bcb86f9e",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Hearts",
+  "aliases": [
+    "Hearts card game",
+    "Black Lady"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "Whoever holds the 2 of clubs after the pass leads first. In a three-player game, the page says the 3 of clubs is led instead.",
+  "officialTieBreak": null,
+  "houseFallback": null,
+  "clarifications": [
+    "For three players the 2 of diamonds is removed; for five players the 2 of clubs is removed."
+  ],
+  "interpretation": "With the 2 of clubs removed in a five-player game, this site reads the rule as the holder of the lowest remaining club leading.",
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/hearts",
+      "title": "Hearts — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Hearts page in a browser. \"The Play\": \"The player holding the 2 of clubs after the pass makes the opening lead. If the 2 has been removed for the three handed game, then the 3 of clubs is led.\" \"The Deal\" says the 2 of diamonds is removed for three players and the 2 of clubs for five players.",
+  "uncertainty": [
+    "The page’s three-player removal (2 of diamonds) and lead instruction (3 of clubs) do not match exactly; the lead instruction is quoted as written.",
+    "The five-player opening lead is not stated."
+  ]
+}
