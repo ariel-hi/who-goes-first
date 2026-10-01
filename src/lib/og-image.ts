@@ -89,6 +89,14 @@ function card(x: number, y: number, w: number, rotate: number, color: string, ma
     el('div', { width: w * 0.36, height: w * 0.36, borderRadius: w, border: `${w * 0.07}px solid ${mark}`, display: 'flex' }));
 }
 
+// The site logo (purple die, five pips). A cream ring keeps it visible on the
+// purple palette.
+function logoMark(size: number): Node {
+  const dot = size * 0.14; const inner = size - 8; const at = (v: number) => inner * v - dot / 2;
+  return el('div', { position: 'relative', width: size, height: size, borderRadius: size * 0.21, background: '#62506f', border: '4px solid #fffef9', display: 'flex', transform: 'rotate(-6deg)' },
+    [[0.3, 0.3], [0.7, 0.3], [0.5, 0.5], [0.3, 0.7], [0.7, 0.7]].map(([x, y]) => el('div', { position: 'absolute', left: at(x!), top: at(y!), width: dot, height: dot, borderRadius: dot, background: '#fffef9' })));
+}
+
 /** Vertical 2:3 Pinterest pin: bold colour, big game name, answer card, game pieces. */
 export async function renderPinImage(art: PinArt, host: string): Promise<Buffer> {
   const n = hash(art.seed); const p = PIN_PALETTES[n % PIN_PALETTES.length]!;
@@ -106,8 +114,8 @@ export async function renderPinImage(art: PinArt, host: string): Promise<Buffer>
     card(650, 150, 96, -16, c, b),
     pawn(820, 1130, 104, a),
     die(700, 1210, 96, faces[1]!, -18, c, p.bg),
-    el('div', { display: 'flex', alignItems: 'center', gap: 16, fontFamily: 'Serif', fontSize: 38, color: p.ink }, [
-      el('div', { width: 18, height: 18, borderRadius: 18, background: p.accent }), el('div', {}, 'Who goes first?'),
+    el('div', { display: 'flex', alignItems: 'center', gap: 22, fontFamily: 'Serif', fontSize: 40, color: p.ink }, [
+      logoMark(64), el('div', {}, 'Who goes first?'),
     ]),
     el('div', { display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center' }, [
       el('div', { display: 'flex' }, el('div', { background: p.accent, color: p.kickerInk, fontWeight: 600, fontSize: 30, letterSpacing: 3, padding: '12px 26px', borderRadius: 40, textTransform: 'uppercase' }, art.kicker)),

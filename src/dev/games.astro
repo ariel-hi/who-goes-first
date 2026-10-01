@@ -8,7 +8,7 @@ const approved = getCatalog();
 const drafts = readRecords('research/games').map(record => ruleSchema.parse(record)).sort((a, b) => a.gameName.localeCompare(b.gameName));
 const games = [...approved, ...drafts.map(publicRule)].filter((game, i, all) => all.findIndex(other => other.id === game.id) === i).sort((a, b) => a.gameName.localeCompare(b.gameName));
 ---
-<Layout title="Game rules — local preview" description="Search researched game-rule drafts and inspect their publisher sources. Local review only." noindex={true}>
+<Layout title="Game rules | local preview" description="Search researched game-rule drafts and inspect their publisher sources. Local review only." noindex={true}>
   <div class="content-page">
     <h1>Game rules.</h1><p class="lede">Who starts, according to the rulebook.</p>
     <div class="preview-banner"><strong>Local preview · {games.length} game rules</strong> · <a href="/dev/review/">Review sources</a><br/>{approved.length} reviewed; remaining entries are research drafts. <a href="/dev/coverage/">Full collection research status</a></div>
