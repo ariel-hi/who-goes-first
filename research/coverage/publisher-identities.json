@@ -5137,6 +5137,387 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "ed463af2ee70e1b34cf22b7cb2fae4587360f02e69c61b3c4814f98646300802"
+    },
+    {
+      "identityId": "game-719cea10-015b-4aae-8df5-43cb0a0fb628",
+      "routeKey": "game-719cea10-015b-4aae-8df5-43cb0a0fb628",
+      "name": "Shizzle",
+      "searchNames": [
+        "Shizzle Twist & Tumble Dice Game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Shizzle, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Shizzle and gives its complete English rules.",
+      "publisherReferenceSourceId": "shizzle-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "shizzle-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/ShizzleRules.pdf",
+          "sha256": "593e40fd619202c7f938496758ced292d284f1ba8aa5ef627a7954fde2b27528",
+          "byteCount": 1017492,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "8013bc3c4f4fe3ad11d16b603961a147a693e23839365e85dc00e1a05004fcac"
+    },
+    {
+      "identityId": "game-1c9ae78d-b4fe-4836-b7fd-c82180a6f1d9",
+      "routeKey": "game-1c9ae78d-b4fe-4836-b7fd-c82180a6f1d9",
+      "name": "Farkle Flip",
+      "searchNames": [
+        "Farkle Flip card game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Farkle Flip, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Farkle Flip and gives its complete English rules.",
+      "publisherReferenceSourceId": "farkle-flip-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "farkle-flip-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/FarkleFlip-Rules.pdf",
+          "sha256": "7719e2984892223b7c2d455dbf453ee78207c14cb005319bea0dcdf59e90b425",
+          "byteCount": 186403,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d1572a7378351b4d9fdfa00f1ceb677f73f65fff01caf6a01aa90cb66d0e72d5"
+    },
+    {
+      "identityId": "game-9934e37b-2d09-4619-98a1-38bfb69de6d7",
+      "routeKey": "game-9934e37b-2d09-4619-98a1-38bfb69de6d7",
+      "name": "Qubosity",
+      "searchNames": [
+        "Qubosity game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Qubosity, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Qubosity and gives its complete English rules.",
+      "publisherReferenceSourceId": "qubosity-playmonster-2016-en-primary",
+      "sources": [
+        {
+          "id": "qubosity-playmonster-2016-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7690_Qubosity_RULES.pdf",
+          "sha256": "834fe8f099ca8391feb967bb25e244c236c6d86edbdc787fe080afdec230c79f",
+          "byteCount": 2766581,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "1fb150031940d3ac91f4cdf55b453151cf27f79ca58213cf3559a5e97e4f975a"
+    },
+    {
+      "identityId": "game-af38be67-ce7c-4eaa-b37e-3c47e87de12e",
+      "routeKey": "game-af38be67-ce7c-4eaa-b37e-3c47e87de12e",
+      "name": "Mad Moves",
+      "searchNames": [
+        "Mad Moves game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Mad Moves, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Mad Moves and gives its complete English rules.",
+      "publisherReferenceSourceId": "mad-moves-playmonster-2018-en-primary",
+      "sources": [
+        {
+          "id": "mad-moves-playmonster-2018-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/01/MMoves_Rules.pdf",
+          "sha256": "54295773304874f53a0ba1208705e230ca1a7475153b986d724c66d319af76e4",
+          "byteCount": 249830,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "874e6bf5802c28331861074a3a0b1ce3a9427adf863919ad6af0e882eeecc0b9"
+    },
+    {
+      "identityId": "game-62b13915-0c63-4ad8-b82e-6762c574fe61",
+      "routeKey": "game-62b13915-0c63-4ad8-b82e-6762c574fe61",
+      "name": "Chicks Go Boom",
+      "searchNames": [
+        "Chicks Go Boom game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Chicks Go Boom, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Chicks Go Boom and gives its complete English rules.",
+      "publisherReferenceSourceId": "chicks-go-boom-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "chicks-go-boom-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/ChicksGoBoomRules_English.pdf",
+          "sha256": "43e3e94301681ae9f6353cc84e10d737893de181886fcbd496b672bb026f602e",
+          "byteCount": 626826,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "8175cf3c6b5cfe40d271e63121164f6ba6609c17f8d1bbd7131ef69003508f79"
+    },
+    {
+      "identityId": "game-5befcf97-6880-4b8b-b0aa-9d873faaf726",
+      "routeKey": "game-5befcf97-6880-4b8b-b0aa-9d873faaf726",
+      "name": "Spurtle Turtle",
+      "searchNames": [
+        "Spurtle Turtle game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Spurtle Turtle, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Spurtle Turtle and gives its complete English rules.",
+      "publisherReferenceSourceId": "spurtle-turtle-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "spurtle-turtle-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/SpurtleTurtle_Rules.pdf",
+          "sha256": "47416d165fea217d37918a936199923c8ff411a4784f4fee4c8137bf860dacb6",
+          "byteCount": 760970,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "fffb5350999d84bf1f54ae0d087a05ffe58b8f0e2be64183ee56336e68d74d5c"
+    },
+    {
+      "identityId": "game-32cad504-cb7e-4ca1-9ab7-ca20ba3fcc65",
+      "routeKey": "game-32cad504-cb7e-4ca1-9ab7-ca20ba3fcc65",
+      "name": "OranguTwang",
+      "searchNames": [
+        "Orangutwang"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "OranguTwang, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names OranguTwang and gives its complete English rules.",
+      "publisherReferenceSourceId": "orangutwang-playmonster-2018-en-primary",
+      "sources": [
+        {
+          "id": "orangutwang-playmonster-2018-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/01/Orangutwang_Rules.pdf",
+          "sha256": "59464bdaffc6079c8ba5fbf6426b266e16f42c75e378f834036db36b8b7d0372",
+          "byteCount": 787781,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "936f275a57d53825ceec4a385002af6af5bee6cb26ce78a3d4245d215ab6f1ec"
+    },
+    {
+      "identityId": "game-80212fcd-08b7-49dd-8fd9-2bc0975d2039",
+      "routeKey": "game-80212fcd-08b7-49dd-8fd9-2bc0975d2039",
+      "name": "Flingin’ Frogs",
+      "searchNames": [
+        "Flingin' Frogs",
+        "Flinging Frogs"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Flingin Frogs, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Flingin Frogs and gives its complete English rules.",
+      "publisherReferenceSourceId": "flingin-frogs-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "flingin-frogs-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/FlinginFrogs_Rules.pdf",
+          "sha256": "02e2c0a0c6c606ac884a45451e59d2d5fb32849a729cf86718c2944794d342b1",
+          "byteCount": 740140,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f2027eff5ccc830b75f28a20855b402898dfbbe0c451791aff815c3d63b2e391"
+    },
+    {
+      "identityId": "game-605b5e38-0667-4225-82d4-4ce37b19caf5",
+      "routeKey": "game-605b5e38-0667-4225-82d4-4ce37b19caf5",
+      "name": "Stacktopus",
+      "searchNames": [
+        "Stacktopus game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Stacktopus, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Stacktopus and gives its complete English rules.",
+      "publisherReferenceSourceId": "stacktopus-playmonster-2019-en-primary",
+      "sources": [
+        {
+          "id": "stacktopus-playmonster-2019-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/01/Stacktopus_Rules.pdf",
+          "sha256": "cc74f86f37da7836eab1051eabf0e959974e254b2b7abdf4ef0e923841c7c982",
+          "byteCount": 2363567,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "f9310a8c3ff68f09bb4393ffa78a38bea8c602b2a562d895f555e0a62f9a1316"
+    },
+    {
+      "identityId": "game-7a5a20af-4262-48e3-9f5e-704f729a9f4e",
+      "routeKey": "game-7a5a20af-4262-48e3-9f5e-704f729a9f4e",
+      "name": "Yeti Forgetti",
+      "searchNames": [
+        "Yeti Forgetti game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Yeti Forgetti, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Yeti Forgetti and gives its complete English rules.",
+      "publisherReferenceSourceId": "yeti-forgetti-playmonster-2018-en-primary",
+      "sources": [
+        {
+          "id": "yeti-forgetti-playmonster-2018-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/05/YetiForget_RULES.pdf",
+          "sha256": "b6b6a1019d2a447eb9d7bdcd3969c4cdf876310e7e6f4d515aa9ff1a959752be",
+          "byteCount": 1909635,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "912b29c10570b9a68faf291f2e0213f8d5af3bedad6440254d27b0737a96234f"
+    },
+    {
+      "identityId": "game-ad2a4f0a-8b8c-4f81-bdd5-39f588e8172b",
+      "routeKey": "game-ad2a4f0a-8b8c-4f81-bdd5-39f588e8172b",
+      "name": "Know It or Blow It",
+      "searchNames": [
+        "Know It or Blow It game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Know It or Blow It, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Know It or Blow It and gives its complete English rules.",
+      "publisherReferenceSourceId": "know-it-or-blow-it-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "know-it-or-blow-it-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/KIOBI_RulesNEW.pdf",
+          "sha256": "bbc61a237b2570f09cabe63e1a637a38411b7ef7909e1f46e9027de1986ab296",
+          "byteCount": 908078,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "9d6a9083f31c3c597500ceb4c9f6a76b49ef344cd59a659070ad1f7e5150585a"
+    },
+    {
+      "identityId": "game-10e6b413-035f-400d-be3a-4cf8cd73d339",
+      "routeKey": "game-10e6b413-035f-400d-be3a-4cf8cd73d339",
+      "name": "Trailz",
+      "searchNames": [
+        "Trailz game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Trailz, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Trailz and gives its complete English rules.",
+      "publisherReferenceSourceId": "trailz-playmonster-2019-en-primary",
+      "sources": [
+        {
+          "id": "trailz-playmonster-2019-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/07/Trailz-Rules.pdf",
+          "sha256": "804d915f7ae69c49d314321bd61dee9ff4c8b6796faa611945a7cbff416655e6",
+          "byteCount": 2735667,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "280923a09cc808f70cb78a5377694f39a2a71fa78c0ec8e747d2659955ce95c7"
+    },
+    {
+      "identityId": "game-8d34e760-d7f5-408e-81d1-f2a314e72a04",
+      "routeKey": "game-8d34e760-d7f5-408e-81d1-f2a314e72a04",
+      "name": "Clifford You’re Invited!",
+      "searchNames": [
+        "Clifford You're Invited",
+        "Clifford Game"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "Clifford Youre Invited!, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names Clifford Youre Invited! and gives its complete English rules.",
+      "publisherReferenceSourceId": "clifford-youre-invited-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "clifford-youre-invited-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/6947_InviteCliff_Rules.pdf",
+          "sha256": "ef967c989436958c9198b8a7d823f04c7985b6b7fadd58513abfa8b7603a7f04",
+          "byteCount": 541365,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "e8a69dfd570e0ca99cd051269e7f3b90aabafc50896449e1fca1c80004793ce5"
+    },
+    {
+      "identityId": "game-85a07030-1257-4d66-add1-f7b668eac9a7",
+      "routeKey": "game-85a07030-1257-4d66-add1-f7b668eac9a7",
+      "name": "You Might Be a Redneck If…",
+      "searchNames": [
+        "Jeff Foxworthy You Might Be a Redneck If",
+        "You Might Be a Redneck If"
+      ],
+      "publisher": "PlayMonster",
+      "identityScope": "You Might Be a Redneck If, the PlayMonster game, as described in its English rules PDF hosted by PlayMonster.",
+      "identityEvidence": "PlayMonster's hosted rules PDF, listed on playmonster.com/rules-and-activity-guide/, names You Might Be a Redneck If and gives its complete English rules.",
+      "publisherReferenceSourceId": "redneck-if-playmonster-en-primary",
+      "sources": [
+        {
+          "id": "redneck-if-playmonster-en-primary",
+          "kind": "primary-publisher",
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Foxworthy-rules.pdf",
+          "sha256": "bb9f58daa62e20ed822317132259d0cd026423032395a43ea8d690406279c930",
+          "byteCount": 240596,
+          "location": "\"Play\""
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "fd11ed92e7eea4e43a42c09d0cd1b6d4f2acd135e7e4e8b2b262469d517dfa5e"
     }
   ]
 }

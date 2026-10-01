@@ -1,0 +1,37 @@
+{
+  "id": "farkle-flip-playmonster-en",
+  "slug": "farkle-flip-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "7bdc2de1d776b5e3535fc777c94d2833321d8ba7a8693aa484d39941f0843728",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Farkle Flip",
+  "aliases": [
+    "Farkle Flip card game"
+  ],
+  "editionLabel": "PlayMonster English rules",
+  "firstPlayerRule": "The player to the left of the dealer is the first to draw a card from the deck.",
+  "officialTieBreak": null,
+  "houseFallback": "The rules do not say who deals; use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/FarkleFlip-Rules.pdf",
+      "title": "Farkle Flip — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text. PDF page 1: \"Play – The player to the left of the dealer is the first to draw a Card from the deck.\"",
+  "uncertainty": [
+    "The rules do not say how the dealer is chosen."
+  ]
+}

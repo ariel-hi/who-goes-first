@@ -1,0 +1,37 @@
+{
+  "id": "stacktopus-playmonster-2019-en",
+  "slug": "stacktopus-playmonster-2019-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "51ed4903b939fdc8dea0a22ec015f82ea7793728022eee050f5494778b23c904",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Stacktopus",
+  "aliases": [
+    "Stacktopus game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2019 PlayMonster)",
+  "firstPlayerRule": "The oldest player starts the game by flipping over the top card.",
+  "officialTieBreak": null,
+  "houseFallback": "If the oldest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2020/01/Stacktopus_Rules.pdf",
+      "title": "Stacktopus — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text. PDF page 1: \"Play • The oldest player starts the game by flipping over the top Card and setting it next to the pile for all players to see.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

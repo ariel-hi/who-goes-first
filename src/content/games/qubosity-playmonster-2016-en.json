@@ -1,0 +1,37 @@
+{
+  "id": "qubosity-playmonster-2016-en",
+  "slug": "qubosity-playmonster-2016-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "49d73bdd945f480fd11a55281477c0d759dd37fd644fcf7004228aab10b3654d",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Qubosity",
+  "aliases": [
+    "Qubosity game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2016 PlayMonster)",
+  "firstPlayerRule": "The youngest player goes first.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7690_Qubosity_RULES.pdf",
+      "title": "Qubosity — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text. PDF page 1: \"The youngest player goes first, naming something in one of the categories shown on a cube, and it must start with the letter displayed.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

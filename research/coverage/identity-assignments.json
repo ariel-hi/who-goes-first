@@ -1585,6 +1585,272 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "71c4f27ebb797128c2ef16ce426c0b3a5cb8346c4c1cbdfeec667c5c81ceb9c8"
+    },
+    {
+      "ruleId": "shizzle-playmonster-en",
+      "ruleRevision": "8a55ce414fe924c8831ed0f98bce311590a4aa91f9ef847f965cc2f9de38d446",
+      "identityId": "game-719cea10-015b-4aae-8df5-43cb0a0fb628",
+      "identityRevision": "8013bc3c4f4fe3ad11d16b603961a147a693e23839365e85dc00e1a05004fcac",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/ShizzleRules.pdf",
+          "sha256": "593e40fd619202c7f938496758ced292d284f1ba8aa5ef627a7954fde2b27528",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Shizzle."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "01a6feda7fd9d62e7588af03b1edbd903d6cadc9c92d4494dadaedd143c3128f"
+    },
+    {
+      "ruleId": "farkle-flip-playmonster-en",
+      "ruleRevision": "7bdc2de1d776b5e3535fc777c94d2833321d8ba7a8693aa484d39941f0843728",
+      "identityId": "game-1c9ae78d-b4fe-4836-b7fd-c82180a6f1d9",
+      "identityRevision": "d1572a7378351b4d9fdfa00f1ceb677f73f65fff01caf6a01aa90cb66d0e72d5",
+      "editionScope": "PlayMonster English rules",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/FarkleFlip-Rules.pdf",
+          "sha256": "7719e2984892223b7c2d455dbf453ee78207c14cb005319bea0dcdf59e90b425",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Farkle Flip."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2212c89b19a94b70df1ea43b2089f1bc801a343a02ff5da5f8e7dbc4b24e8ef4"
+    },
+    {
+      "ruleId": "qubosity-playmonster-2016-en",
+      "ruleRevision": "49d73bdd945f480fd11a55281477c0d759dd37fd644fcf7004228aab10b3654d",
+      "identityId": "game-9934e37b-2d09-4619-98a1-38bfb69de6d7",
+      "identityRevision": "1fb150031940d3ac91f4cdf55b453151cf27f79ca58213cf3559a5e97e4f975a",
+      "editionScope": "PlayMonster English rules (© 2016 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/7690_Qubosity_RULES.pdf",
+          "sha256": "834fe8f099ca8391feb967bb25e244c236c6d86edbdc787fe080afdec230c79f",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Qubosity."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "2c9b73885ddffd853473bcea7f695c4a8f00c70fa12bfab3925f4c5e1537e583"
+    },
+    {
+      "ruleId": "mad-moves-playmonster-2018-en",
+      "ruleRevision": "a66dc003942389487e7aab5b18f73fdf2cb3da896c2e3456fbf62aa4113f68b9",
+      "identityId": "game-af38be67-ce7c-4eaa-b37e-3c47e87de12e",
+      "identityRevision": "874e6bf5802c28331861074a3a0b1ce3a9427adf863919ad6af0e882eeecc0b9",
+      "editionScope": "PlayMonster English rules (© 2018 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/01/MMoves_Rules.pdf",
+          "sha256": "54295773304874f53a0ba1208705e230ca1a7475153b986d724c66d319af76e4",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Mad Moves."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "4ff191cc8c71aa23e368ea15b4e25f1cb176dc9f8c2fa6d418138c96b3607087"
+    },
+    {
+      "ruleId": "chicks-go-boom-playmonster-en",
+      "ruleRevision": "7c0073284240ef8b6c8626bdab726be914691b5f254c574ec386102f756fad58",
+      "identityId": "game-62b13915-0c63-4ad8-b82e-6762c574fe61",
+      "identityRevision": "8175cf3c6b5cfe40d271e63121164f6ba6609c17f8d1bbd7131ef69003508f79",
+      "editionScope": "PlayMonster English rules (© 2013 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/ChicksGoBoomRules_English.pdf",
+          "sha256": "43e3e94301681ae9f6353cc84e10d737893de181886fcbd496b672bb026f602e",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Chicks Go Boom."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "b20b2ea5e4806bead70d558f474768148f4e0ca5ec171318217ec0155986cf8e"
+    },
+    {
+      "ruleId": "spurtle-turtle-playmonster-en",
+      "ruleRevision": "143bf9aeaeea89a5f07ad6af63f46e4cde49c1486311d25103bf649ff5bc0c71",
+      "identityId": "game-5befcf97-6880-4b8b-b0aa-9d873faaf726",
+      "identityRevision": "fffb5350999d84bf1f54ae0d087a05ffe58b8f0e2be64183ee56336e68d74d5c",
+      "editionScope": "PlayMonster English rules (© 2012 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/SpurtleTurtle_Rules.pdf",
+          "sha256": "47416d165fea217d37918a936199923c8ff411a4784f4fee4c8137bf860dacb6",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Spurtle Turtle."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "4fe49f7f8ca507a99ace2b93b8c2bff292755be865c01831a2f4fc8da1ffbdcc"
+    },
+    {
+      "ruleId": "orangutwang-playmonster-2018-en",
+      "ruleRevision": "0e6bb67409d29832d3b999483349a60eb86267db2858b92bf182d9b12d8d7dcb",
+      "identityId": "game-32cad504-cb7e-4ca1-9ab7-ca20ba3fcc65",
+      "identityRevision": "936f275a57d53825ceec4a385002af6af5bee6cb26ce78a3d4245d215ab6f1ec",
+      "editionScope": "PlayMonster English rules (© 2018 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/01/Orangutwang_Rules.pdf",
+          "sha256": "59464bdaffc6079c8ba5fbf6426b266e16f42c75e378f834036db36b8b7d0372",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for OranguTwang."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "bc3e479c526556fd24bb83ddb821ef8f1d591867dbbe031f5fe4dc12caebb052"
+    },
+    {
+      "ruleId": "flingin-frogs-playmonster-en",
+      "ruleRevision": "0e71889064c3291eb0a81413987fc5152f129dca4ec180c1a5910f9e0a21039d",
+      "identityId": "game-80212fcd-08b7-49dd-8fd9-2bc0975d2039",
+      "identityRevision": "f2027eff5ccc830b75f28a20855b402898dfbbe0c451791aff815c3d63b2e391",
+      "editionScope": "PlayMonster English rules (© 2012 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/FlinginFrogs_Rules.pdf",
+          "sha256": "02e2c0a0c6c606ac884a45451e59d2d5fb32849a729cf86718c2944794d342b1",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Flingin’ Frogs."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ec827ff486a40f8834ed84e1c4550fc3dfd3b6013c6a131c1cc922b2af0e8f24"
+    },
+    {
+      "ruleId": "stacktopus-playmonster-2019-en",
+      "ruleRevision": "51ed4903b939fdc8dea0a22ec015f82ea7793728022eee050f5494778b23c904",
+      "identityId": "game-605b5e38-0667-4225-82d4-4ce37b19caf5",
+      "identityRevision": "f9310a8c3ff68f09bb4393ffa78a38bea8c602b2a562d895f555e0a62f9a1316",
+      "editionScope": "PlayMonster English rules (© 2019 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/01/Stacktopus_Rules.pdf",
+          "sha256": "cc74f86f37da7836eab1051eabf0e959974e254b2b7abdf4ef0e923841c7c982",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Stacktopus."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "af47691e0fb2b6087e431adb7d01e8bfe5c7ea56fc4657fc2b3ce4f336ca4f1f"
+    },
+    {
+      "ruleId": "yeti-forgetti-playmonster-2018-en",
+      "ruleRevision": "d1178a157238d85a1322a98ce63ee3081fca221cf984a430069534147487a139",
+      "identityId": "game-7a5a20af-4262-48e3-9f5e-704f729a9f4e",
+      "identityRevision": "912b29c10570b9a68faf291f2e0213f8d5af3bedad6440254d27b0737a96234f",
+      "editionScope": "PlayMonster English rules (© 2018 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2019/05/YetiForget_RULES.pdf",
+          "sha256": "b6b6a1019d2a447eb9d7bdcd3969c4cdf876310e7e6f4d515aa9ff1a959752be",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Yeti Forgetti."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "b305955d55ccf2ffd7fb4dd7a5ce98ea2ff408e876398da9f7e9ba85b99471cf"
+    },
+    {
+      "ruleId": "know-it-or-blow-it-playmonster-en",
+      "ruleRevision": "9a322bdd2e0cd156a0025c5201a97bc4b1af645702f0cfd2233a081f86b28be2",
+      "identityId": "game-ad2a4f0a-8b8c-4f81-bdd5-39f588e8172b",
+      "identityRevision": "9d6a9083f31c3c597500ceb4c9f6a76b49ef344cd59a659070ad1f7e5150585a",
+      "editionScope": "PlayMonster English rules (© 2013 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/KIOBI_RulesNEW.pdf",
+          "sha256": "bbc61a237b2570f09cabe63e1a637a38411b7ef7909e1f46e9027de1986ab296",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Know It or Blow It."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "ff8d9d41d3971a1ae6950933d321a7c099df24efc17491b47cb0ff834caf9721"
+    },
+    {
+      "ruleId": "trailz-playmonster-2019-en",
+      "ruleRevision": "85a701a91ca89d3e649af816753efa8859915600ca432e2a48cbb48854935131",
+      "identityId": "game-10e6b413-035f-400d-be3a-4cf8cd73d339",
+      "identityRevision": "280923a09cc808f70cb78a5377694f39a2a71fa78c0ec8e747d2659955ce95c7",
+      "editionScope": "PlayMonster English rules (© 2019 PlayMonster)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2020/07/Trailz-Rules.pdf",
+          "sha256": "804d915f7ae69c49d314321bd61dee9ff4c8b6796faa611945a7cbff416655e6",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Trailz."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "371051f564c5c54981acf12e39eb9da33b37853430ddfa212674fc14749f0656"
+    },
+    {
+      "ruleId": "clifford-youre-invited-playmonster-en",
+      "ruleRevision": "891a99a02a3be9610aff052cb885b174fd671b58f14a1e2534a6dd54ad3587cc",
+      "identityId": "game-8d34e760-d7f5-408e-81d1-f2a314e72a04",
+      "identityRevision": "e8a69dfd570e0ca99cd051269e7f3b90aabafc50896449e1fca1c80004793ce5",
+      "editionScope": "PlayMonster English rules (© 2012 Patch Products)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/6947_InviteCliff_Rules.pdf",
+          "sha256": "ef967c989436958c9198b8a7d823f04c7985b6b7fadd58513abfa8b7603a7f04",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for Clifford You’re Invited!."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "674d8cd38ec77fcd1da280fbe8917634b0f95c4cd68d29f39c0f7aadc3e999c0"
+    },
+    {
+      "ruleId": "redneck-if-playmonster-en",
+      "ruleRevision": "c5eb0a94d6404ea2c57f2953df35e00e692c53c76a8fd423ecb0f8988b3aaca1",
+      "identityId": "game-85a07030-1257-4d66-add1-f7b668eac9a7",
+      "identityRevision": "fd11ed92e7eea4e43a42c09d0cd1b6d4f2acd135e7e4e8b2b262469d517dfa5e",
+      "editionScope": "PlayMonster English rules (© 2006 Jeff Foxworthy)",
+      "evidence": [
+        {
+          "url": "https://www.playmonster.com/wp-content/uploads/2018/06/Foxworthy-rules.pdf",
+          "sha256": "bb9f58daa62e20ed822317132259d0cd026423032395a43ea8d690406279c930",
+          "location": "\"Play\"",
+          "correspondence": "The rule cites this same PlayMonster document for You Might Be a Redneck If…."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "736cfc66482c4bae657425a966dcf1ef6eaead808d2a88d5e4fadfdb76abc254"
     }
   ]
 }

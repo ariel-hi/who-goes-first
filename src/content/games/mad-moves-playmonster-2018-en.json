@@ -1,0 +1,37 @@
+{
+  "id": "mad-moves-playmonster-2018-en",
+  "slug": "mad-moves-playmonster-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "a66dc003942389487e7aab5b18f73fdf2cb3da896c2e3456fbf62aa4113f68b9",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Mad Moves",
+  "aliases": [
+    "Mad Moves game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2018 PlayMonster)",
+  "firstPlayerRule": "The youngest player goes first, rolling the die and drawing a matching category card.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2019/01/MMoves_Rules.pdf",
+      "title": "Mad Moves — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text. PDF page 1: \"Play • The youngest player rolls the die and draws a category card from the same color pile that is shown on the die.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

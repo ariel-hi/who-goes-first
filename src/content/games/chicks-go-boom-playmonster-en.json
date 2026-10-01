@@ -1,0 +1,37 @@
+{
+  "id": "chicks-go-boom-playmonster-en",
+  "slug": "chicks-go-boom-playmonster-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "7c0073284240ef8b6c8626bdab726be914691b5f254c574ec386102f756fad58",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Chicks Go Boom",
+  "aliases": [
+    "Chicks Go Boom game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2013 Patch Products)",
+  "firstPlayerRule": "The youngest player starts by pressing down the Coop, then rolls the die.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2018/06/ChicksGoBoomRules_English.pdf",
+      "title": "Chicks Go Boom — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        1
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text. PDF page 1: \"Play • The youngest player starts the madness by pressing down the Coop firmly.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}

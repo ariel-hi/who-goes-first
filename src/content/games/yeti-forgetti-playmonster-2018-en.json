@@ -1,0 +1,37 @@
+{
+  "id": "yeti-forgetti-playmonster-2018-en",
+  "slug": "yeti-forgetti-playmonster-2018-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d1178a157238d85a1322a98ce63ee3081fca221cf984a430069534147487a139",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Yeti Forgetti",
+  "aliases": [
+    "Yeti Forgetti game"
+  ],
+  "editionLabel": "PlayMonster English rules (© 2018 PlayMonster)",
+  "firstPlayerRule": "The youngest player goes first by drawing a card from the pile.",
+  "officialTieBreak": null,
+  "houseFallback": "If the youngest players are the same age, use the picker.",
+  "clarifications": [],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://www.playmonster.com/wp-content/uploads/2019/05/YetiForget_RULES.pdf",
+      "title": "Yeti Forgetti — Rules",
+      "publisher": "PlayMonster",
+      "printedPages": [],
+      "pdfPagesOneBased": [
+        2
+      ],
+      "location": "\"Play\"",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Fetched the PlayMonster-hosted rules PDF listed on playmonster.com/rules-and-activity-guide/ and extracted its text. PDF page 2: \"Play • The youngest player goes first by drawing a Card from the pile and placing it in the discard pile.\"",
+  "uncertainty": [
+    "No tie-break is stated for players of the same age."
+  ]
+}
