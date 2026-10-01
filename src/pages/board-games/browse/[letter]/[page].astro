@@ -18,12 +18,12 @@ const pages = letters.find(item => item.letter === shelf.letter)!.pages;
 const first = (shelf.page - 1) * BROWSE_PAGE_SIZE + 1;
 const last = first + shelf.games.length - 1;
 ---
-<Layout title={`Board games ${label} · Page ${shelf.page} | Who Goes First?`} description={`Browse board games starting with ${label}, names ${first} through ${last} of ${shelf.total}. Find a sourced starting-player rule when available.`} pageType="CollectionPage" noindex={true}>
+<Layout title={`Board games ${label} · Page ${shelf.page} — Who Goes First?`} description={`Browse board games starting with ${label}, names ${first} through ${last} of ${shelf.total}. Find a sourced starting-player rule when available.`} pageType="CollectionPage" noindex={true}>
   <div class="content-page">
     <a class="back-link" href="/board-games/">← Board game directory</a>
     <h1>{label} board games.</h1>
     <p class="lede">{first.toLocaleString('en')}–{last.toLocaleString('en')} of {shelf.total.toLocaleString('en')} names in this section.</p>
-    <SharePage title={`Board games ${label} · Page ${shelf.page} | Who Goes First?`} />
+    <SharePage title={`Board games ${label} · Page ${shelf.page} — Who Goes First?`} />
     <nav class="directory-alphabet" aria-label="Browse game names by letter">{letters.map(item => <a href={shelfHref(item.letter)} aria-label={`Browse ${shelfLabel(item.letter)} games`} aria-current={item.letter === shelf.letter ? 'page' : undefined}>{shelfLabel(item.letter)}</a>)}</nav>
     {pages > 1 && <DirectoryPagination letter={shelf.letter} page={shelf.page} pages={pages} previous={previous} next={next} label="Directory pages above games" />}
     <ul class="game-list directory-shelf" data-directory-shelf>

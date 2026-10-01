@@ -10,4 +10,4 @@ const draft = readRecords('research/games').map(raw => ruleSchema.parse(raw)).fi
 const rule = draft ? publicRule(draft) : undefined;
 if (!rule) Astro.response.status = 404;
 ---
-{rule ? <Layout title={`Draft: ${rule.gameName} | local review`} description="Research copy, available only in development." noindex={true}><div class="content-page"><div class="preview-banner"><strong>Research copy · source review</strong><br/>This research copy is separate from the reviewed catalog.</div><GameArticle rule={rule} preview={true} /></div></Layout> : <NotFound />}
+{rule ? <Layout title={`Draft: ${rule.gameName} — local review`} description="Research copy, available only in development." noindex={true}><div class="content-page"><div class="preview-banner"><strong>Research copy · source review</strong><br/>This research copy is separate from the reviewed catalog.</div><GameArticle rule={rule} preview={true} /></div></Layout> : <NotFound />}

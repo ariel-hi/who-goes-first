@@ -4,7 +4,7 @@
   "language": "en",
   "status": "approved",
   "approvedBy": "Codex cover editorial review, fair-use approach authorized by owner on 2026-09-28",
-  "approvedRevision": "51e096643b743a75baff6d5416d4eb08847034985406457441cb6dc48de4dcba",
+  "approvedRevision": "0a6c73ff89dbfa2d0f4994117e0311436592ffa0266005f91d6bf326de3cf79d",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "Qwixx",
@@ -37,7 +37,7 @@
   "sources": [
     {
       "url": "https://gamewright.com/gamewright/pdfs/Rules/QwixxTM-RULES.pdf",
-      "title": "Qwixx: A Fast Family Dice Game: Rules of Play",
+      "title": "Qwixx — A Fast Family Dice Game — Rules of Play",
       "publisher": "Gamewright",
       "printedPages": [
         "1"
@@ -49,7 +49,7 @@
       "checkedAt": "2026-09-27"
     }
   ],
-  "internalEvidence": "Fetched the official Gamewright rules PDF and extracted its text with pdftotext. \"HOW TO PLAY, The first player to roll a 6 takes on the role of 'active player.' The active player rolls all six dice.\" The \"END OF A ROUND\" section separately states: \"Once all players are ready, the player to the left becomes the new active player and re-rolls all six dice.\"",
+  "internalEvidence": "Fetched the official Gamewright rules PDF and extracted its text with pdftotext. \"HOW TO PLAY — The first player to roll a 6 takes on the role of 'active player.' The active player rolls all six dice.\" The \"END OF A ROUND\" section separately states: \"Once all players are ready, the player to the left becomes the new active player and re-rolls all six dice.\"",
   "uncertainty": [
     "The rulebook does not explain how dice are physically passed or who rolls first attempt in a brand-new game beyond \"the first player to roll a 6\"; it is unclear whether players take turns rolling until someone hits a 6, or all roll simultaneously."
   ]

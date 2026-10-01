@@ -418,7 +418,7 @@ test('cards turn one at a time in three dimensions, the final two together, and 
   await expect(page.locator('.card-front')).toHaveCount(12);
   await expect(page.locator('.cards-reveal .card-result')).toHaveCount(12);
   await expect(page.locator('.cards-reveal .reveal-chosen .card-result')).toHaveText('GO');
-  await expect(page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-result')).toHaveText(Array(11).fill('·'));
+  await expect(page.locator('.cards-reveal .reveal-player:not(.reveal-chosen) .card-result')).toHaveText(Array(11).fill('—'));
   await expect(page.locator('.cards-reveal .card-front svg')).toHaveCount(0);
   await expect(page.locator('.cards-reveal .reveal-chosen .card-front')).toHaveCSS('animation-name', 'piece-glimmer');
   expect(await page.locator('.cards-reveal .reveal-chosen .card-front').evaluate(element => getComputedStyle(element, '::before').animationName)).toBe('surface-shimmer');

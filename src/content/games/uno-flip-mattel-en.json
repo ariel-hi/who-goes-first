@@ -4,7 +4,7 @@
   "language": "en",
   "status": "approved",
   "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
-  "approvedRevision": "db94f0a3c56afc917fd559abaaf4ab7b50c947f4ab396f6c68f8b4ccc326f058",
+  "approvedRevision": "873902c2975fa655d6a236bbb507883fdd7923cf1a89a3331d9275b501f58a03",
   "publishedAt": "2026-09-28",
   "materiallyUpdatedAt": "2026-09-28",
   "gameName": "UNO Flip!",
@@ -34,7 +34,7 @@
       "checkedAt": "2026-09-27"
     }
   ],
-  "internalEvidence": "Fetched the official Mattel instruction-sheet PDF and extracted its English text with pdftotext. Setup: \"2. Each player draws a card and then reveals the Light Side; the player that draws the highest number is the dealer (count any card with a symbol as zero). 3. The dealer shuffles and deals each player 7 cards.\" \"LET'S PLAY, The person to the left of the dealer starts play.\" No wording elsewhere in the document overrides this for the light or dark side.",
+  "internalEvidence": "Fetched the official Mattel instruction-sheet PDF and extracted its English text with pdftotext. Setup: \"2. Each player draws a card and then reveals the Light Side; the player that draws the highest number is the dealer (count any card with a symbol as zero). 3. The dealer shuffles and deals each player 7 cards.\" \"LET'S PLAY — The person to the left of the dealer starts play.\" No wording elsewhere in the document overrides this for the light or dark side.",
   "uncertainty": [
     "No tie-break is stated for the dealer-selection draw if two players draw equally high cards.",
     "This English sheet does not specify a special exception when an Action Card is the first card turned face up on the discard pile beyond the general action-card rules."
