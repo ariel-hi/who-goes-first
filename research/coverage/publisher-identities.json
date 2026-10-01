@@ -4392,6 +4392,90 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "e3a829f121381a2fd1beaa2c05667de8e53ff91fb9a4d42ad057049e87d7fcf6"
+    },
+    {
+      "identityId": "game-1130babd-d67e-42b4-b6a3-42fc4fcb5d0a",
+      "routeKey": "game-1130babd-d67e-42b4-b6a3-42fc4fcb5d0a",
+      "name": "Pitch",
+      "searchNames": [
+        "Setback",
+        "High Low Jack"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Pitch, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Pitch and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-pitch",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-pitch",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/pitch",
+          "sha256": "eabbf8cffcb64c34858055fe4b802b3547f233ff05e45fdcd32b2e01a29d2908",
+          "byteCount": 146387,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d19dff1c8cfd3ae9a1da81069f1b7ca250f71693eadfb9705f39779d8c7002fc"
+    },
+    {
+      "identityId": "game-ed22ce03-c19e-4be5-ae7e-a865ab408ff7",
+      "routeKey": "game-ed22ce03-c19e-4be5-ae7e-a865ab408ff7",
+      "name": "Egyptian Rat Screw",
+      "searchNames": [
+        "Egyptian Ratscrew",
+        "ERS",
+        "Egyptian War"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Egyptian Rat Screw, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Egyptian Rat Screw and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-egyptian-rat-screw",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-egyptian-rat-screw",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/egyptian-rat-screw",
+          "sha256": "e3c0605cc69ac02a9cc685c90b0f20487709a85f345888d0e1f585efc1fa0daa",
+          "byteCount": 104390,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "94623510a33e1867785a15db433ef3c5f0a8549720c70e939650e588f26f19d9"
+    },
+    {
+      "identityId": "game-a90251a2-57be-4418-9beb-0282cec7ed31",
+      "routeKey": "game-a90251a2-57be-4418-9beb-0282cec7ed31",
+      "name": "Spoons",
+      "searchNames": [
+        "Spoons card game"
+      ],
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "identityScope": "The traditional card game Spoons, played with a standard 52-card pack, as described on the Bicycle Cards how-to-play page.",
+      "identityEvidence": "Bicycle Cards' official how-to-play page names the game Spoons and gives its complete rules for a standard 52-card pack.",
+      "publisherReferenceSourceId": "bicycle-how-to-play-spoons",
+      "sources": [
+        {
+          "id": "bicycle-how-to-play-spoons",
+          "kind": "primary-publisher",
+          "url": "https://bicyclecards.com/how-to-play/spoons",
+          "sha256": "81557f046f73a149c4ce8fc88172dd39cfd5961ab533a6f1216e3732a4d20faf",
+          "byteCount": 95869,
+          "location": "Page title, game summary and rule sections."
+        }
+      ],
+      "collisionReviews": [],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "a0a501791a95754b5dfbce333f1c6f9a70e93d247011900bcb47b50aef224c51"
     }
   ]
 }

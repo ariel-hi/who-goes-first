@@ -1,0 +1,39 @@
+{
+  "id": "pitch-bicycle-en",
+  "slug": "pitch-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "eeb3b71b69e89b4a6ba3e65ede562781640c426475a0468f5dc3ef37e32d061d",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Pitch",
+  "aliases": [
+    "Setback",
+    "High Low Jack"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The player on the dealer’s left bids first. The highest bidder, called the pitcher, leads the first card, and its suit becomes trump.",
+  "officialTieBreak": null,
+  "houseFallback": "The page does not say how the first dealer is chosen; use the picker.",
+  "clarifications": [
+    "After each hand, the deal passes to the left.",
+    "The dealer may take the contract at the highest preceding bid."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/pitch",
+      "title": "Pitch — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"The Deal\", \"The Bidding\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Pitch page in a browser. \"The player on the dealer’s left bids first.\" \"The ‘pitcher’ (highest bidder, or the dealer if they assume the contract at the highest preceding bid) leads first. The suit of the card ‘pitched’ indicates the trump suit.\"",
+  "uncertainty": [
+    "The page does not say how the first dealer is chosen."
+  ]
+}

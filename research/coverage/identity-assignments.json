@@ -1072,6 +1072,63 @@
       "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
       "reviewedAt": "2026-10-01",
       "acceptedRevision": "b71b18d3f867aaafbcc85aa9373f47e7e8dddc33cd0e0fcbe0ee381e0138d4c9"
+    },
+    {
+      "ruleId": "pitch-bicycle-en",
+      "ruleRevision": "eeb3b71b69e89b4a6ba3e65ede562781640c426475a0468f5dc3ef37e32d061d",
+      "identityId": "game-1130babd-d67e-42b4-b6a3-42fc4fcb5d0a",
+      "identityRevision": "d19dff1c8cfd3ae9a1da81069f1b7ca250f71693eadfb9705f39779d8c7002fc",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/pitch",
+          "sha256": "eabbf8cffcb64c34858055fe4b802b3547f233ff05e45fdcd32b2e01a29d2908",
+          "location": "\"The Deal\", \"The Bidding\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Pitch."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "1f7125423257e9a9644541f7df653881df99276efbdc4c8bce2467fd3529b790"
+    },
+    {
+      "ruleId": "egyptian-rat-screw-bicycle-en",
+      "ruleRevision": "e2cb33d9b84ccd353b9dfb350c67cecac61d7850853f630fc3cc0d117634b9fb",
+      "identityId": "game-ed22ce03-c19e-4be5-ae7e-a865ab408ff7",
+      "identityRevision": "94623510a33e1867785a15db433ef3c5f0a8549720c70e939650e588f26f19d9",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/egyptian-rat-screw",
+          "sha256": "e3c0605cc69ac02a9cc685c90b0f20487709a85f345888d0e1f585efc1fa0daa",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Egyptian Rat Screw."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "d724f50b9fb6cf37d8ddf6ef9e3cc59650f452f990c7d607efff3534ded4e341"
+    },
+    {
+      "ruleId": "spoons-bicycle-en",
+      "ruleRevision": "c10e55d741b967e5d963ad247718cdf33544771edfd218ec3e1c2ff76ee4be87",
+      "identityId": "game-a90251a2-57be-4418-9beb-0282cec7ed31",
+      "identityRevision": "a0a501791a95754b5dfbce333f1c6f9a70e93d247011900bcb47b50aef224c51",
+      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "evidence": [
+        {
+          "url": "https://bicyclecards.com/how-to-play/spoons",
+          "sha256": "81557f046f73a149c4ce8fc88172dd39cfd5961ab533a6f1216e3732a4d20faf",
+          "location": "\"The Deal\" and \"The Play\" sections",
+          "correspondence": "The rule cites this same Bicycle Cards page for Spoons."
+        }
+      ],
+      "decision": "accept",
+      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+      "reviewedAt": "2026-10-01",
+      "acceptedRevision": "032b87b3c2b9eb6497499a103728a51b1b49026ecef656046a89c02ada80f1ab"
     }
   ]
 }

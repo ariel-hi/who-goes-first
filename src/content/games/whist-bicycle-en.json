@@ -1,0 +1,37 @@
+{
+  "id": "whist-bicycle-en",
+  "slug": "whist-bicycle-en",
+  "language": "en",
+  "status": "approved",
+  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
+  "approvedRevision": "d9aa39c03b9fdea591e62b6ce62c51a9ee3f6c1d33d4491e816c6bc39cbcb191",
+  "publishedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-01",
+  "gameName": "Whist",
+  "aliases": [
+    "Whist card game"
+  ],
+  "editionLabel": "Bicycle Cards rules, standard 52-card pack (English)",
+  "firstPlayerRule": "The player on the dealer’s left leads first and may play any card. Play then moves clockwise.",
+  "officialTieBreak": null,
+  "houseFallback": "The page notes that ace is low when drawing for partners and deal, but does not say whether high or low deals; agree before drawing.",
+  "clarifications": [
+    "The dealer’s last card is turned face up to set trumps."
+  ],
+  "interpretation": null,
+  "sources": [
+    {
+      "url": "https://bicyclecards.com/how-to-play/whist",
+      "title": "Whist — How to Play",
+      "publisher": "Bicycle Cards (The United States Playing Card Company)",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "\"Rank of Cards\", \"The Deal\" and \"The Play\" sections",
+      "checkedAt": "2026-10-01"
+    }
+  ],
+  "internalEvidence": "Read the Bicycle Cards Whist page in a browser. \"(In drawing for partners and deal, however, ace is low.)\" \"The player on the dealer’s left leads first and may play any card.\"",
+  "uncertainty": [
+    "The page does not state whether the high or low card deals."
+  ]
+}
