@@ -78,6 +78,12 @@ export function auditSeo(output: string, files: string[], origin: string, produc
     assert.ok(href && !/^javascript:/i.test(href), `${page.file}: non-crawlable link`);
     assert.ok(anchor.label || anchor.ariaLabel, `${page.file}: unnamed link`);
     const url = new URL(href, page.canonical);
+    if (url.hostname === 'www.pinterest.com' && url.pathname === '/pin/create/button/') {
+      const media = new URL(url.searchParams.get('media') || '', page.canonical);
+      assert.equal(media.origin, origin, `${page.file}: Pinterest artwork must use the canonical site`);
+      assert.ok(existsSync(join(output, media.pathname)), `${page.file}: missing Pinterest artwork ${media.pathname}`);
+      assert.equal(url.searchParams.get('url'), page.canonical, `${page.file}: Pinterest must share the current canonical page`);
+    }
     if (url.origin !== origin) continue;
     links++;
     const target = resolve(output, `.${decodeURIComponent(url.pathname)}`);

@@ -1,6 +1,8 @@
 ---
 import { siteSettings } from '../lib/site';
 import SocialIcon from './SocialIcon.astro';
+import { pinQueue } from '../lib/pinterest-pins';
+import { toolCards } from '../lib/tool-cards';
 
 interface Props { kind: 'picker' | 'rules' | 'questions'; path?: string; description?: string }
 const items = {
@@ -8,8 +10,15 @@ const items = {
   rules: { path: '/games/', image: '/pins/starting-rules.png', description: 'Search publisher-checked starting-player rules by board game and edition. Each answer links to its source.' },
   questions: { path: '/house-rules/', image: '/pins/fun-questions.png', description: 'Try an original house-rule question for a playful start to game night. Break ties with the fair picker.' },
 };
-// A rule page pins itself with the shared rules image.
+// Prefer artwork for the answer or tool the visitor actually opened.
 const item = { ...items[Astro.props.kind], ...(Astro.props.path ? { path: Astro.props.path } : {}), ...(Astro.props.description ? { description: Astro.props.description } : {}) };
+const pin = pinQueue().find(pin => pin.path === item.path);
+const segments = item.path.split('/').filter(Boolean);
+if (pin) item.image = `/pins/q/${pin.id}.png`;
+else if (segments[0] === 'games' && segments[1] === 'themes' && segments[2]) item.image = `/og/hub-${segments[2]}.png`;
+else if (segments[0] === 'games' && segments.length === 2) item.image = `/og/${segments[1]}.png`;
+else if (segments[0] === 'publishers' && segments.length === 2) item.image = `/og/publisher-${segments[1]}.png`;
+else if (segments.length === 1 && toolCards[segments[0]!]) item.image = `/og/tool-${segments[0]}.png`;
 const site = siteSettings();
 const destination = new URL('https://www.pinterest.com/pin/create/button/');
 destination.search = new URLSearchParams({ url: new URL(item.path, site.url).href, media: new URL(item.image, site.url).href, description: item.description }).toString();

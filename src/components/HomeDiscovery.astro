@@ -1,0 +1,43 @@
+---
+import type { PublicRule } from '../lib/content/schema';
+import { themeHubs } from '../lib/content/hubs';
+interface Props { games: PublicRule[] }
+const { games } = Astro.props;
+const shortcuts = ['uno-10020-sn70-en', 'monopoly-classic-hasbro-c1009-en', 'catan-2020-en', 'ticket-to-ride-2015-en', 'scrabble-hasbro-2021-en', 'wingspan-online-en', 'azul-2018-en', 'carcassonne-2021-en']
+  .flatMap(slug => { const rule = games.find(game => game.slug === slug); return rule ? [rule] : []; });
+const themes = themeHubs(games).filter(hub => ['silly-contests', 'food-and-drink', 'animals', 'travel'].includes(hub.slug));
+---
+<div class="home-discovery">
+  {shortcuts.length > 0 && <section aria-labelledby="home-library-heading">
+    <div class="discovery-heading"><div><span class="eyebrow">STRAIGHT FROM THE RULEBOOK</span><h2 id="home-library-heading">Who goes first in your game?</h2></div><a href="/games/">Browse all {games.length.toLocaleString('en')} starting rules →</a></div>
+    <p class="discovery-lede">Check the starting player before you play. Every answer names the edition and links to its source.</p>
+    <ul class="discovery-rules">{shortcuts.map(rule => <li><a href={`/games/${rule.slug}/`}><h3>{rule.gameName}</h3><p>{rule.firstPlayerRule}</p><span>See the rule & edition <span aria-hidden="true">→</span></span></a></li>)}</ul>
+  </section>}
+  {themes.length > 0 && <section aria-labelledby="home-explore-heading">
+    <h2 id="home-explore-heading">Discover a rule you’ve never tried.</h2>
+    <p class="discovery-lede">Real rulebooks get surprisingly playful. Find a question for tonight’s table, then check whether it suits your group.</p>
+    <ul class="discovery-themes">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}<span>{hub.rules.length} sourced rules <span aria-hidden="true">→</span></span></a></li>)}</ul>
+    <p class="small muted">Want to try one with any game? <a href="/ways-to-pick-who-goes-first/">Browse rules you can borrow</a> or <a href="/house-rules/">draw an original house question</a>.</p>
+  </section>}
+  <section aria-labelledby="home-kit-heading">
+    <h2 id="home-kit-heading">Keep game night moving.</h2>
+    <p class="discovery-lede">Free tools for the next turn, missing pieces, and the final score. Open them on your phone, with no account or download.</p>
+    <ul class="discovery-themes">
+      <li><a href="/dice-roller/">Roll dice<span>d4 to d100, with totals <span aria-hidden="true">→</span></span></a></li>
+      <li><a href="/score-keeper/">Keep score<span>Points for everyone at the table <span aria-hidden="true">→</span></span></a></li>
+      <li><a href="/random-team-generator/">Make teams<span>Split your group evenly <span aria-hidden="true">→</span></span></a></li>
+      <li><a href="/turn-timer/">Time a turn<span>A countdown for each player <span aria-hidden="true">→</span></span></a></li>
+    </ul>
+    <p class="small"><a href="/tools/">See all game-night tools</a> · <a href="/game-night-checklist/">Plan your next game night</a></p>
+  </section>
+  <section class="discovery-clubs" aria-labelledby="home-clubs-heading">
+    <div><span class="eyebrow">FOR YOUR REGULAR TABLE</span><h2 id="home-clubs-heading">One less thing to explain next time.</h2><p>Put a QR card in the game box or on a café table. Everyone can open the picker and rule library when they need them.</p></div>
+    <div><a href="/printable-game-night/">Get free printable table cards →</a><a href="/embed/">Add a starting rule to your club or blog →</a></div>
+  </section>
+  <section class="table-notes" aria-labelledby="home-questions-heading">
+    <h2 id="home-questions-heading">Choosing the first player</h2>
+    <details><summary>How do you choose who goes first in a board game?</summary><p>Check the game’s rulebook first: the starting instruction can depend on the edition, setup, or a player’s role. If it calls for a random choice, enter names or use numbered seats in the picker above. If your group agrees to a house rule, try a question from <a href="/house-rules/">the house-rule deck</a>. The <a href="/choose-who-goes-first/">choosing guide</a> explains the options.</p></details>
+    <details><summary>Is the first-player picker fair?</summary><p>Each entry has the same chance of being selected. The picker uses your browser’s secure random number generator; the animation reveals a result that has already been chosen. Read <a href="/fairness/">how the picker works</a> for the details.</p></details>
+    <details><summary>Can I use it without downloading an app?</summary><p>Yes. The picker and game-night tools work in your browser without an account. Player names and picks stay on your device. Bookmark the page for next time, or use a <a href="/printable-game-night/">printed QR card</a> to open it at the table.</p></details>
+  </section>
+</div>
