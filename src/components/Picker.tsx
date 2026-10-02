@@ -429,7 +429,19 @@ export default function Picker({ initialMode = 'quick', balloonEnabled = true, s
               <input type="radio" name="presentation" value={option.id} checked={effectiveMode === option.id} onClick={() => changeMode(option.id)} onChange={() => changeMode(option.id)} />
               <ModeIcon mode={option.id} /><span>{option.label}</span>
             </label>)}
-            {!showAllModes && <button type="button" className="more-modes" onClick={e => { const group = e.currentTarget.parentElement!; const shown = group.querySelectorAll('input').length; setMoreModes(true); requestAnimationFrame(() => group.querySelectorAll('input')[shown]?.focus()); }}><span aria-hidden="true">•••</span><span>More methods</span></button>}
+            {!showAllModes && <button type="button" className="more-modes" onClick={e => {
+              const button = e.currentTarget;
+              const group = button.parentElement!;
+              const shown = group.querySelectorAll('input').length;
+              setMoreModes(true);
+              requestAnimationFrame(() => {
+                // Expansion removes the button. Transfer keyboard focus after
+                // that removal only if the user has not focused another control.
+                const active = group.ownerDocument.activeElement;
+                if (!group.isConnected || (active !== button && active !== group.ownerDocument.body)) return;
+                group.querySelectorAll('input')[shown]?.focus();
+              });
+            }}><span aria-hidden="true">•••</span><span>More methods</span></button>}
           </div>
         </fieldset>
         {fallbackLimit !== null && <p className="small notice">{chosenMethod.label} fits up to {fallbackLimit} players. Quick is selected for your group of {eligible.length}.</p>}
