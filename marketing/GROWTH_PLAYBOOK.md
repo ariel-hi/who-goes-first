@@ -6,6 +6,8 @@ Updated October 1, 2026 (America/Los_Angeles). Use with [AUTOMATION.md](AUTOMATI
 
 The October 1 Search Console check reported 448 impressions and 2 clicks for its available September 24–29 data. The indexing sample inspected 438 of 1,420 URLs, finding 329 indexed. Pinterest's checked panel estimated five impressions and zero outbound clicks; five October 1 Pins were visibly published. These are separate samples with different periods and reporting delays. Do not add them together or call them verified human visitors.
 
+The refreshed GA4 report covers September 28–30: 60 reported sessions, 140 screen/page views and 55 users, with 55 direct, three Bluesky referral and two organic-search sessions. Earlier production-build test traffic is excluded. September 28 is a partial rollout day; live tests, bots and analytics choices can still affect this sample. Preserve it as a three-day observation, not a complete 30-day comparison or proof of growth.
+
 The growth objective is more people finding a useful answer, using the picker, and returning for their next game night. Optimize for qualified visits and repeated usefulness; publishing more items is an input, not the outcome. Search, owned distribution, community participation, reusable host resources and selective partnerships cover different parts of that journey.
 
 ## Priorities for the next two weeks
@@ -39,7 +41,7 @@ Do not insert the tool into unrelated discussions. Identify our affiliation when
 
 Maintain one ledger with distinct states: researched → drafted → sent/submitted with evidence → replied → correction/placement verified → traffic observed. [OUTREACH_LOG.md](OUTREACH_LOG.md) holds completed send history; new drafts remain unsent until a real receipt exists. An automatic acknowledgement is not a partnership.
 
-Keep all Bluesky, publisher, library and embed destinations clean. Pinterest retains its fixed organic-social editorial campaigns. The October 1 review found new queue labels absent from the legacy four-label analytics allowlist; a finite reviewed-queue repair is pending verification and deployment. Confirm the live repair before relying on those newer campaign labels. The loaders remove arbitrary queries before analytics loads. A made-up `utm_source=publisher` would not become an attributable campaign. Outreach IDs track the research and placement in the ledger, without query identifiers, shorteners, email pixels or additional analytics.
+Keep all Bluesky, publisher, library and embed destinations clean. Pinterest retains its fixed organic-social editorial campaigns. The October 1 review found new queue labels absent from the legacy four-label analytics allowlist; release `ab1736b0` repairs both loaders with the finite reviewed-queue set. The live deployment was verified with 19 approved labels. Collect post-release data before comparing those newer campaigns. The loaders remove arbitrary queries before analytics loads. A made-up `utm_source=publisher` would not become an attributable campaign. Outreach IDs track the research and placement in the ledger, without query identifiers, shorteners, email pixels or additional analytics.
 
 For an earned web link, save the referring page URL and check its destination. Use existing consented GA4 referral source/landing-page samples when available, with publisher replies as separate evidence. Email and clean QR visits may appear as direct traffic and cannot be assigned to an individual recipient. Missing channel data is unavailable, not zero.
 

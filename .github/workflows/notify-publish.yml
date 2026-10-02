@@ -34,9 +34,9 @@ jobs:
         with:
           script: |
             const sha = context.sha;
+            const { isProductionReleaseCurrent } = await import(`${process.env.GITHUB_WORKSPACE}/scripts/lib/production-release.js`);
             for (let attempt = 0; attempt < 40; attempt++) {
-              const main = await github.rest.repos.getCommit({ ...context.repo, ref: 'main' });
-              if (main.data.sha !== sha) { core.notice('Superseded release; no stale URLs submitted.'); return; }
+              if (!await isProductionReleaseCurrent(github, context.repo, sha)) { core.notice('Superseded release or current content unconfirmed; no stale URLs submitted.'); return; }
               const live = await fetch(`https://whogoesfirst.fun/release.json?expected=${sha}`, { cache: 'no-store' });
               if (live.ok && live.headers.get('content-type')?.includes('application/json') && (await live.json()).commit === sha) { core.setOutput('ready', 'true'); return; }
               await new Promise(resolve => setTimeout(resolve, 15000));
@@ -73,10 +73,11 @@ jobs:
         with:
           script: |
             const sha = context.sha;
-            const main = await github.rest.repos.getCommit({ ...context.repo, ref: 'main' });
+            const { isProductionReleaseCurrent } = await import(`${process.env.GITHUB_WORKSPACE}/scripts/lib/production-release.js`);
+            const current = await isProductionReleaseCurrent(github, context.repo, sha);
             const live = await fetch(`https://whogoesfirst.fun/release.json?expected=${sha}`, { cache: 'no-store' });
-            if (main.data.sha === sha && live.ok && (await live.json()).commit === sha) core.setOutput('ready', 'true');
-            else core.notice('Superseded during verification; no URLs submitted.');
+            if (current && live.ok && live.headers.get('content-type')?.includes('application/json') && (await live.json()).commit === sha) core.setOutput('ready', 'true');
+            else core.notice('Superseded or unconfirmed during verification; no URLs submitted.');
       - name: Notify only new or materially changed live canonical pages
         id: notify
         if: steps.current.outputs.ready == 'true'
