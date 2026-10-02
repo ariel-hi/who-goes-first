@@ -1,6 +1,6 @@
 # Automated growth operations
 
-Updated October 1, 2026 (Pacific). The owner asked Codex to take charge of automated growth and deploy verified improvements immediately. This replaces the older draft-only growth instructions. Partnership outreach is secondary.
+Updated October 2, 2026 (Pacific). The owner asked Codex to take charge of automated growth and deploy verified improvements immediately. This replaces the older draft-only growth instructions. Partnership outreach is secondary.
 
 ## Publishing that runs without the desktop
 
@@ -11,6 +11,8 @@ Updated October 1, 2026 (Pacific). The owner asked Codex to take charge of autom
 - Keep all Bluesky URLs clean: no UTM or other tracking parameters. Pinterest retains its existing fixed campaigns. No new visitor tracking was added.
 
 ## Daily autonomous work
+
+The October 2 audit confirmed four active Who Goes First desktop routines: growth at 10am, community replies at 9am/5pm, automation review at 11am/7pm, and the older site-overhaul routine at 11am. The site-overhaul prompt now reads this procedure and the pending experiment before edits. It owns source-reviewed coverage and confirmed content/UX/accessibility/performance defects; the growth routine owns weekly acquisition review, report refresh and queue replenishment. Both preserve the October 8 response review and October 15 discovery/distribution evaluation, concurrent work, privacy and immediate verified deployment. The update preserved the older routine's name, active status, cadence and destination chat. Do not reverse this evidence-backed adjustment for seven days unless it is broken. No publisher-email routine was found in the local Who Goes First configurations; the old eight-email weekday policy in the outreach log is historical.
 
 The existing Who Goes First automated growth heartbeat runs at 10am Pacific. Read the small state and run:
 

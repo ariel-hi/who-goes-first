@@ -94,6 +94,8 @@ Who Goes First?
 
 **Route:** the [public ALA GameRT contact form](https://connect.ala.org/gamert/contactus), which asks for first name, last name, email, subject and message (phone optional). No guessed email address. This manual-form opportunity is outside the publisher email routine. ALA's [official initiatives page](https://www.ala.org/gamert/events-and-initiatives) describes November International Games Month and a periodically updated library-resource list. A contact form's existence does not mean the site accepts our resource or has approved a listing.
 
+**October 2 preparation:** the root agent freshly verified those fields in Chrome and entered Ariel, the existing business sender, and the exact subject/message below. The required last name remains blank. Submission is pending the owner's explicit approval and last name; no form was sent. An invisible CAPTCHA badge was present, but no completed CAPTCHA or submission is claimed. Both destination pages were rechecked with HTTP 200 and their exact canonical URLs. The prepared form remains in browser tab `1217980978`; local screenshot evidence is `artifacts/growth/ala-gamert-prepared.jpg`. The four publisher drafts and eight-message send history are unchanged.
+
 **Subject:** Optional free table resources for International Games Month
 
 Hello GameRT team,

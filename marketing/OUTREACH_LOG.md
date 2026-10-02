@@ -2,11 +2,13 @@
 
 Sent from edamame.makers@gmail.com, signed "Ariel, Who Goes First?". Each batch's addresses and examples are in `outreach-batch-N.json`. Template: `scripts/outreach-drafts.ts` / `PUBLISHER_OUTREACH.md`.
 
-## Rules for the routine
+## Current outreach controls
+
+The current growth routine keeps partnerships secondary and does not run publisher-email batches. The October 2 audit found no matching Who Goes First publisher-email automation in the local Codex configurations. The older weekday 6:30 AM / eight-email policy is historical, not a current publishing schedule. The eight completed sends below are preserved; the four reviewed media drafts and one library-form draft remain unsent. Preserve the October 8 publisher-response review; check existing replies, bounces and stop requests before any newly authorized publisher wave. The separate library-form opportunity remains outside the email routine.
+
 - Only use addresses the publisher publishes on its own site or rulebooks. Skip web-form-only and sales-only contacts (logged below as "form only").
 - Never email the same publisher twice unless they replied asking for something.
-- One batch per weekday (the routine runs at 6:30 AM Pacific), as long as there are **no bounces or spam complaints** and no reply asked us to stop. Batch size: **8**, sent at least a minute apart.
-- After three clean batches, the size may rise to 10. Any bounce or complaint pauses sending until Ariel reviews it.
+- Any bounce, spam complaint or stop request pauses further sending until Ariel reviews it.
 - Log every reply, correction request and earned link here.
 - Before an authorized send, check the sender's mailbox across all folders, including Spam and Trash, so a moved thread cannot hide a reply or delivery failure.
 
