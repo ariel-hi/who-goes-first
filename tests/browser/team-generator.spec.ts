@@ -43,3 +43,46 @@ for (const motion of ['no-preference', 'reduce'] as const) {
     expect(await first.evaluate(element => getComputedStyle(element).animationName)).toBe(motion === 'reduce' ? 'none' : 'team-arrive');
   });
 }
+
+for (const theme of ['light', 'dark'] as const) {
+  test(`team text retains contrast at an intermediate reveal phase in ${theme} mode`, async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    await page.goto('/random-team-generator/');
+    await expect(page.locator('astro-island[ssr]')).toHaveCount(0);
+    if (theme === 'dark') await page.getByRole('button', { name: 'Switch to dark mode', exact: true }).click();
+    await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+    await page.getByRole('textbox', { name: /Names/ }).fill('Alex\nSam\nJordan\nRiley\nMorgan\nCasey');
+    await page.getByRole('combobox', { name: 'Teams', exact: true }).selectOption('3');
+    await page.getByRole('button', { name: 'Make teams', exact: true }).click();
+    const cards = page.locator('.team-list li');
+    await expect(cards).toHaveCount(3);
+    // Sample each real CSS animation one quarter into its active duration,
+    // accounting for its stagger. Only these team animations are paused.
+    const sample = await cards.evaluateAll(async elements => Promise.all(elements.map(async element => {
+      const animation = element.getAnimations().find(animation => animation instanceof CSSAnimation && animation.animationName === 'team-arrive');
+      if (!animation?.effect) throw new Error('The team arrival animation is missing.');
+      const { delay = 0, duration = 0 } = animation.effect.getTiming();
+      animation.pause();
+      animation.currentTime = delay + Number(duration) / 4;
+      await animation.ready;
+      const style = getComputedStyle(element);
+      return {
+        duration, delay, phase: animation.effect.getComputedTiming().progress,
+        state: animation.playState, opacity: style.opacity,
+        movement: new DOMMatrixReadOnly(style.transform).m42,
+      };
+    })));
+    for (const [index, card] of sample.entries()) {
+      expect(card.duration).toBe(320);
+      expect(card.delay).toBe(index * 45);
+      expect(card.state).toBe('paused');
+      expect(card.phase).toBeGreaterThan(0);
+      expect(card.phase).toBeLessThan(1);
+      expect(card.movement).toBeGreaterThan(0);
+      expect(card.movement).toBeLessThan(9);
+    }
+    expect((await new AxeBuilder({ page }).include('.team-list').analyze()).violations).toEqual([]);
+    expect(sample.map(card => card.opacity)).toEqual(['1', '1', '1']);
+  });
+}

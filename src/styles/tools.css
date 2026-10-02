@@ -45,7 +45,7 @@
 .team-list li{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:12px 14px;animation:team-arrive .32s cubic-bezier(.2,.75,.3,1) both;animation-delay:min(calc(var(--team-index) * 45ms),315ms)}
 .team-list h2{margin:0 0 4px;font-family:inherit;font-size:15px;font-weight:700;letter-spacing:normal;color:var(--green)}
 .team-list p{margin:0;overflow-wrap:anywhere}
-@keyframes team-arrive{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+@keyframes team-arrive{from{transform:translateY(9px)}to{transform:none}}
 .team-copy-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
 .team-copy-fallback{margin-top:6px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
 .team-copy-fallback textarea{min-height:76px;resize:vertical}
