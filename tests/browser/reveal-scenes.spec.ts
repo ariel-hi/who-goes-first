@@ -245,7 +245,14 @@ test('choosing an icon shows still pieces before picking anyone', async ({ page 
   await page.getByRole('radio', { name: 'Card Draw', exact: true }).check();
   await expect(page.locator('.reveal-stage .card-back').first()).toBeVisible();
   const stage = page.locator('.reveal-stage');
-  const position = (selector: string) => page.locator(selector).evaluate(element => ({ top: element.getBoundingClientRect().top + scrollY, height: element.getBoundingClientRect().height }));
+  const position = (selector: string) => page.locator(selector).evaluate(element => {
+    const rect = element.getBoundingClientRect();
+    const transform = getComputedStyle(element).transform;
+    // Compare flow geometry while the primary's hover/press lift animates.
+    // The interaction-motion tests separately check its visual transform.
+    const lift = transform === 'none' ? 0 : new DOMMatrixReadOnly(transform).m42;
+    return { top: rect.top + scrollY - lift, height: rect.height };
+  });
   const beforeStage = await position('.reveal-stage');
   const beforeOptions = await position('.reveal-options');
   const beforeButton = await position('.picker-card > .primary');
