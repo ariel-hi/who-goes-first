@@ -4,9 +4,9 @@
 
 The site uses warm paper, plum controls, serif headings, and small pastel game pieces. Functional labels use the system sans-serif font. The page loads no webfonts, stock imagery, background video, or decorative third-party assets.
 
-The front page opens with a visible serif headline and original SVG playing cards, a die, and a pawn. A wider picker and a quieter rulebook sidebar establish the main task; sharing sits below them. Mobile keeps the headline compact and removes the opening illustration so the first pick stays within reach. Soft corners, plum controls, and hand-shaped seat counters carry the tabletop character. Its ordinary four-seat state has one primary action, directly editable names, four reveal choices, and a More methods control.
+The front page opens with one functional headline, a wider picker, and a quiet rulebook sidebar; sharing sits below them. The opening has no decorative illustrations, taglines, or duplicate visible picker heading. Soft corners, plum controls, and hand-shaped seat counters carry the tabletop character. Its ordinary four-seat state has one primary action, directly editable names, four reveal choices, and a More methods control.
 
-Discovery uses numbered rule excerpts, illustrated theme cards, an asymmetric toolkit, and a sage table-card feature. The illustrations are original, decorative inline SVGs with no external assets or requests. Exact sourced rules and edition links remain visible, and the layout supports dark mode, reduced motion, narrow screens, and keyboard use.
+Discovery uses concise game, theme, and tool links without decorative arrows or illustrations. Short hover lifts and button press feedback use 150ms transitions. They preserve layout and respect reduced motion; the picker also respects its own motion preference. The layout supports dark mode, narrow screens, and keyboard use.
 
 The roster reflows as its count changes and has no nested scrolling region. Long names wrap and grow. For 13–50 players, the primary action and result move above the roster. The page itself can scroll for a large group; participants are never removed to make a layout fit. No fabricated testimonials, customer counts, awards, or ratings are used.
 

@@ -117,6 +117,32 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   await page.screenshot({ path: test.info().outputPath('home-mobile.png'), fullPage: true });
 });
 
+for (const width of [320, 1280]) {
+  test(`subtle home feedback keeps the draw usable and respects reduced motion at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 844 });
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    await page.goto('/');
+    const picker = page.locator('.picker');
+    const button = picker.locator('.picker-card > .primary');
+    await expect(button).toHaveText('Pick a player');
+    await expect(button).toBeEnabled();
+    const before = (await picker.boundingBox())!;
+    await button.hover();
+    await expect.poll(() => button.evaluate(element => getComputedStyle(element).transform)).not.toBe('none');
+    const after = (await picker.boundingBox())!;
+    expect(Math.abs(after.y - before.y)).toBeLessThanOrEqual(1);
+    expect(Math.abs(after.height - before.height)).toBeLessThanOrEqual(1);
+    await button.click();
+    await expect(picker).toHaveAttribute('data-phase', 'result');
+    await expect(page.locator('.winner-announcement p')).toBeVisible();
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await expect(picker).toHaveAttribute('data-reduced', 'true');
+    await page.getByRole('button', { name: 'Pick again', exact: true }).hover();
+    await expect.poll(() => button.evaluate(element => getComputedStyle(element).transform)).toBe('none');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  });
+}
+
 test('appearance persists across reloads and answer pages with accessible dark colors', async ({ page }) => {
   await page.goto('/');
   const toggle = page.getByRole('button', { name: 'Switch to dark mode' });

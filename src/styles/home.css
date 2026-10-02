@@ -1,38 +1,27 @@
-/* A little more play: an illustrated opening and a clear place for the first turn. */
+/* Keep the opening compact and let the tabletop controls carry the character. */
 .site-header { max-width:1140px; padding:17px 24px; }
 .brand { font-size:22px; font-weight:700; letter-spacing:-.8px; gap:11px; }
 .brand-mark { width:38px; height:38px; flex:none; }
-.brand-mark .brand-underlay { fill:#e1c36c; }
 .site-nav a { font-weight:500; }
 .home-page { max-width:1140px; margin-top:16px; }
-.home-intro { display:grid; grid-template-columns:minmax(0,1fr) 290px; align-items:center; gap:32px; margin:0 0 26px; }
-.home-intro .eyebrow { font-size:11px; letter-spacing:1.8px; margin-bottom:13px; }
-.home-intro h1 { font-size:clamp(36px,4.7vw,58px); line-height:1.08; letter-spacing:-2px; margin:0 0 13px; max-width:650px; text-wrap:balance; }
-.home-intro h1 em { color:var(--green); font-weight:400; }
-.home-intro-copy > p { color:var(--ink); font-size:19px; margin:0 0 5px; }
-.home-intro-note { color:var(--muted); font-size:13px; }
-.home-intro-art { display:block; width:100%; height:auto; }
-.home-intro-picture { min-width:0; }
+.home-intro { margin:0 0 22px; }
+.home-intro h1 { font-size:clamp(32px,4vw,44px); line-height:1.12; letter-spacing:-1.3px; margin:0; text-wrap:balance; }
 .home-layout { grid-template-columns:minmax(0,1.95fr) minmax(0,1fr); gap:26px; align-items:start; }
 .home-picker, .home-rules { min-width:0; }
-.home-tool-heading { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px 12px; margin:0 4px 13px; }
-.home-tool-heading h2 { font-size:24px; margin:0; }
-.home-tool-heading > span { font-size:12px; color:var(--muted); }
 .home-picker .picker-card { border:1.5px solid #bcaabe; border-radius:24px; box-shadow:0 5px 0 #e8dce8,0 12px 28px #4f3b5c08; padding:20px 24px 24px; }
 .home-picker .player { border:1px solid color-mix(in srgb,var(--piece) 36%,var(--paper)); }
 .home-picker .player.winner { border-color:var(--winner-edge); }
+/* Compact rows need room for the token, duplicate ID, and a complete name. */
+.home-picker .roster-compact { grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); }
 .home-picker .primary { min-height:56px; font-size:16px; font-weight:650; border:1px solid #51405f; background:#51405f; box-shadow:0 3px 0 #35273f; }
 .home-picker .primary:hover { background:#635074; }
 .home-picker .segmented label.selected { border-color:#baa8c4; }
-.home-rules { margin-top:43px; background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:24px; }
-.home-rules > .eyebrow { font-size:10px; letter-spacing:1.5px; margin:0 0 10px; }
+.home-rules { margin-top:0; background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:24px; }
 .home-rules h2 { font-size:25px; line-height:1.18; margin-bottom:12px; text-wrap:balance; }
-.home-rules > p { color:var(--muted); font-size:14px; margin-bottom:17px; }
 .home-rules .search-box label { font-size:12px; }
 .home-rules .rule-lookup input { font-size:14px; }
 .home-rules-links { margin-top:14px; gap:0 15px; font-size:12px; }
 .home-share { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:6px 18px; margin:20px 0 0; }
-.home-share > span { color:var(--muted); font-size:12px; }
 .home-share .social-links { margin:0; }
 .home-page:has(.picker[data-large=true]) .home-layout { grid-template-columns:1fr; }
 .home-page:has(.picker[data-large=true]) .home-rules { margin-top:0; }
@@ -51,8 +40,6 @@
 .home-random-note { font-size:12px; line-height:1.5; color:var(--muted); margin:12px 0 0; }
 @media(max-width:900px) {
   .home-page { max-width:760px; }
-  .home-intro { grid-template-columns:minmax(0,1fr) 200px; gap:16px; }
-  .home-intro h1 { font-size:44px; }
   .home-layout { grid-template-columns:1fr; gap:26px; }
   .home-rules { margin-top:0; }
 }
@@ -67,15 +54,8 @@
   .brand { font-size:21px; }
   .brand-mark { width:32px; height:32px; }
   .home-page { margin-top:14px; padding:0 16px; }
-  .home-intro { display:block; margin-bottom:23px; }
-  .home-intro-picture { display:none; }
-  .home-intro .eyebrow { font-size:9px; letter-spacing:1.5px; margin-bottom:10px; }
-  .home-intro h1 { font-size:39px; letter-spacing:-1.3px; max-width:360px; margin-bottom:10px; }
-  .home-intro-copy > p { font-size:16px; margin-bottom:3px; }
-  .home-intro-note { font-size:12px; }
-  .home-tool-heading { margin-bottom:10px; gap:2px 10px; }
-  .home-tool-heading h2 { font-size:22px; }
-  .home-tool-heading > span { font-size:10px; }
+  .home-intro { margin-bottom:18px; }
+  .home-intro h1 { font-size:32px; letter-spacing:-1px; }
   .home-picker .picker-card { padding:16px 14px 18px; border-radius:20px; }
   .home-picker .primary { min-height:52px; font-size:15px; }
   .home-rules { padding:22px; }
@@ -83,11 +63,20 @@
 }
 @media(max-width:360px) {
   .brand { font-size:19px; }
-  .home-intro h1 { font-size:34px; }
-  .home-tool-heading > span { font-size:9px; }
+  .home-intro h1 { font-size:30px; }
   .home-picker .picker-card { padding:14px 12px 16px; }
 }
 :root[data-theme=dark] .home-rules { background:var(--paper); }
 :root[data-theme=dark] .home-picker .picker-card { border-color:#8c7194; box-shadow:0 5px 0 #48384e,0 12px 28px #00000016; }
 :root[data-theme=dark] .home-picker .primary { background:var(--green); border-color:var(--green); color:#28212c; box-shadow:0 3px 0 #806589; }
 :root[data-theme=dark] .home-picker .primary:hover { background:#ccb3da; }
+@media(prefers-reduced-motion:no-preference) {
+  .home-picker .picker[data-reduced=false] .primary, .home-random-actions button { transition:transform .15s ease,background .15s ease,box-shadow .15s ease; }
+  .home-picker .picker[data-reduced=false] .player { transition:transform .15s ease; }
+  @media(hover:hover) and (pointer:fine) {
+    .home-picker .picker[data-reduced=false] .primary:hover:not(:disabled), .home-random-actions button:hover:not([aria-disabled=true]) { transform:translateY(-2px); }
+    .home-picker .picker[data-phase=ready][data-reduced=false] .player:hover:not(:focus-within) { transform:translateY(-2px); }
+  }
+  .home-picker .picker[data-reduced=false] .primary:active:not(:disabled) { transform:translateY(2px); box-shadow:0 1px 0 #35273f; }
+  .home-random-actions button:active:not([aria-disabled=true]) { transform:translateY(1px); }
+}

@@ -1,53 +1,39 @@
 ---
 import type { PublicRule } from '../lib/content/schema';
 import { themeHubs } from '../lib/content/hubs';
-import TabletopIllustration from './TabletopIllustration.astro';
-import type { IllustrationKind } from './TabletopIllustration.astro';
 interface Props { games: PublicRule[] }
 const { games } = Astro.props;
 const shortcuts = ['uno-10020-sn70-en', 'monopoly-classic-hasbro-c1009-en', 'catan-2020-en', 'ticket-to-ride-2015-en', 'scrabble-hasbro-2021-en', 'wingspan-online-en', 'azul-2018-en', 'carcassonne-2021-en']
   .flatMap(slug => { const rule = games.find(game => game.slug === slug); return rule ? [rule] : []; });
 const themes = themeHubs(games).filter(hub => ['silly-contests', 'food-and-drink', 'animals', 'travel'].includes(hub.slug));
-const themeArt: Record<string, IllustrationKind> = { 'silly-contests': 'questions', 'food-and-drink': 'food', animals: 'animals', travel: 'travel' };
-const tools: { href: string; label: string; detail: string; art: IllustrationKind }[] = [
-  { href: '/dice-roller/', label: 'Roll dice', detail: 'd4 to d100, with totals', art: 'dice' },
-  { href: '/score-keeper/', label: 'Keep score', detail: 'Points for everyone at the table', art: 'score' },
-  { href: '/random-team-generator/', label: 'Make teams', detail: 'Split your group evenly', art: 'teams' },
-  { href: '/turn-timer/', label: 'Time a turn', detail: 'A countdown for each player', art: 'timer' },
+const tools = [
+  { href: '/dice-roller/', label: 'Roll dice' },
+  { href: '/score-keeper/', label: 'Keep score' },
+  { href: '/random-team-generator/', label: 'Make teams' },
+  { href: '/turn-timer/', label: 'Time a turn' },
 ];
 ---
 <div class="home-discovery">
   {shortcuts.length > 0 && <section class="discovery-library" aria-labelledby="home-library-heading">
-    <div class="discovery-heading"><div><span class="eyebrow">Straight from the rulebook</span><h2 id="home-library-heading">Who goes first in your game?</h2></div><a class="discovery-browse" href="/games/">Browse all {games.length.toLocaleString('en')} starting rules <span aria-hidden="true">↗</span></a></div>
-    <p class="discovery-lede">Check the starting player before you play. Every answer names the edition and links to its source.</p>
-    <ul class="discovery-rules">{shortcuts.map((rule, index) => <li><a href={`/games/${rule.slug}/`}>
-      <span class="discovery-rule-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-      <div class="discovery-rule-copy"><h3>{rule.gameName}</h3><p>{rule.firstPlayerRule}</p><span class="discovery-rule-link">See the rule & edition <span aria-hidden="true">→</span></span></div>
-    </a></li>)}</ul>
+    <div class="discovery-heading"><h2 id="home-library-heading">Who goes first in your game?</h2><a class="discovery-browse" href="/games/">All {games.length.toLocaleString('en')} starting rules</a></div>
+    <ul class="discovery-rules">{shortcuts.map(rule => <li><a href={`/games/${rule.slug}/`}>{rule.gameName}</a></li>)}</ul>
   </section>}
   {themes.length > 0 && <section class="discovery-explore" aria-labelledby="home-explore-heading">
-    <span class="eyebrow">A little unexpected</span>
-    <h2 id="home-explore-heading">Discover a rule you’ve never tried.</h2>
-    <p class="discovery-lede">Real rulebooks get surprisingly playful. Find a question for tonight’s table, then check whether it suits your group.</p>
-    <ul class="discovery-themes">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`} data-art={themeArt[hub.slug]}>
-      <div class="discovery-theme-art"><TabletopIllustration kind={themeArt[hub.slug]} /></div>
-      <div class="discovery-theme-copy"><h3>{hub.label}</h3><span>{hub.rules.length} sourced rules</span><span class="discovery-card-arrow" aria-hidden="true">↗</span></div>
-    </a></li>)}</ul>
-    <p class="discovery-afterword">Want to try one with any game? <a href="/ways-to-pick-who-goes-first/">Browse rules you can borrow</a> or <a href="/house-rules/">draw an original house question</a>.</p>
+    <h2 id="home-explore-heading">Explore starting rules</h2>
+    <ul class="discovery-themes">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}</a></li>)}</ul>
+    <div class="discovery-links"><a href="/ways-to-pick-who-goes-first/">Rules to borrow</a><a href="/house-rules/">Fun questions</a></div>
   </section>}
   <section class="discovery-kit" aria-labelledby="home-kit-heading">
-    <div class="discovery-kit-intro"><span class="eyebrow">The game-night toolkit</span><h2 id="home-kit-heading">Keep game night moving.</h2><p class="discovery-lede">Free tools for the next turn, missing pieces, and the final score. Open them on your phone, with no account or download.</p><a class="discovery-browse" href="/tools/">See all game-night tools <span aria-hidden="true">↗</span></a></div>
-    <div class="discovery-kit-tools"><ul class="discovery-tools">{tools.map(tool => <li><a href={tool.href}>
-      <div class="discovery-tool-art"><TabletopIllustration kind={tool.art} /></div>
-      <div><h3>{tool.label}</h3><span>{tool.detail}</span></div><span class="discovery-card-arrow" aria-hidden="true">↗</span>
-    </a></li>)}</ul><p class="discovery-afterword"><a href="/game-night-checklist/">Plan your next game night →</a></p></div>
+    <div class="discovery-heading"><h2 id="home-kit-heading">Game-night tools</h2><a class="discovery-browse" href="/tools/">All tools</a></div>
+    <ul class="discovery-tools">{tools.map(tool => <li><a href={tool.href}>{tool.label}</a></li>)}</ul>
+    <div class="discovery-links"><a href="/game-night-checklist/">Game-night checklist</a></div>
   </section>
   <section class="discovery-clubs" aria-labelledby="home-clubs-heading">
-    <div class="discovery-clubs-art"><TabletopIllustration kind="table-cards" /></div>
-    <div class="discovery-clubs-copy"><span class="eyebrow">For your regular table</span><h2 id="home-clubs-heading">One less thing to explain next time.</h2><p>Put a QR card in the game box or on a café table. Everyone can open the picker and rule library when they need them.</p><div class="discovery-clubs-actions"><a class="discovery-browse" href="/printable-game-night/">Get free printable table cards <span aria-hidden="true">↗</span></a><a href="/embed/">Add a starting rule to your club or blog <span aria-hidden="true">→</span></a></div></div>
+    <h2 id="home-clubs-heading">For your table</h2>
+    <div class="discovery-links"><a href="/printable-game-night/">Print table cards</a><a href="/embed/">Embed a starting rule</a></div>
   </section>
   <section class="table-notes discovery-notes" aria-labelledby="home-questions-heading">
-    <div class="discovery-notes-intro"><span class="eyebrow">A few table questions</span><h2 id="home-questions-heading">Choosing the first player</h2></div>
+    <h2 id="home-questions-heading">Choosing the first player</h2>
     <div class="discovery-notes-answers">
     <details><summary>How do you choose who goes first in a board game?</summary><p>Check the game’s rulebook first: the starting instruction can depend on the edition, setup, or a player’s role. If it calls for a random choice, enter names or use numbered seats in the picker above. If your group agrees to a house rule, try a question from <a href="/house-rules/">the house-rule deck</a>. The <a href="/choose-who-goes-first/">choosing guide</a> explains the options.</p></details>
     <details><summary>Is the first-player picker fair?</summary><p>Each entry has the same chance of being selected. The picker uses your browser’s secure random number generator; the animation reveals a result that has already been chosen. Read <a href="/fairness/">how the picker works</a> for the details.</p></details>
