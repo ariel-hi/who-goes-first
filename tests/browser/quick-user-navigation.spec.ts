@@ -19,8 +19,7 @@ async function prepare(page: Page, width: number, pendingCount = false) {
   await page.goto('/');
   const picker = page.locator('.picker'), button = picker.locator('.picker-card > .primary');
   await expect(button).toBeEnabled();
-  // The normal desktop page fits the viewport; the native disclosure supplies
-  // actual scroll range without adding or modifying layout in the test.
+  // Open the native disclosure without adding or modifying layout in the test.
   if (width === 1280) await page.getByRole('button', { name: 'Preferences', exact: true }).click();
   await page.getByRole('textbox', { name: 'Player count', exact: true }).click();
   await page.keyboard.press('ControlOrMeta+A');
@@ -81,7 +80,9 @@ for (const width of [320, 1280]) {
     await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
     await expect(picker).toHaveAttribute('data-phase', 'revealing');
     await page.mouse.move(width / 2, 600);
-    await page.mouse.wheel(0, width === 320 ? -1100 : 1800);
+    // Use the actual control position: the growing discovery content below
+    // the picker must not make the next native draw's button unreachable.
+    await page.mouse.wheel(0, width === 320 ? -1100 : box.y - 80);
     if (width === 320) await expect.poll(() => page.evaluate(() => scrollY)).toBeLessThan(initial - 200);
     else await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(initial + 100);
     await scrollSettled(page);

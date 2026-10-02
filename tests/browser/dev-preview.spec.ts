@@ -92,7 +92,7 @@ test('the full researched catalog is listed and representative sourced pages wor
   await expect(page.locator('.game-list li:visible')).toHaveCount(2);
   await page.locator('.game-list li:visible a[href="/games/7-wonders-2020-en/"]').click();
   await expect(page.locator('.rule-answer')).toContainText('no single starting player');
-  await expect(page.getByRole('link', { name: 'Read the publisher' })).toHaveAttribute('href', /^https:\/\//);
+  await expect(page.getByRole('link', { name: 'Read the publisher’s rulebook', exact: true })).toHaveAttribute('href', 'https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/en/sev-en02-rules-1716388903zBEZx.pdf');
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
   for (const path of ['/dev/games/', '/dev/house-rules/', '/dev/coverage/']) {
     expect((await request.get(`${STATIC}${path}`)).status()).toBe(404);

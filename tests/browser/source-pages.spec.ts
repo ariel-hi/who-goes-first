@@ -54,18 +54,23 @@ test('Stonesaga preserves both suffixless PDF URLs and their exact cited page or
   await page.goto('/games/stonesaga-open-owl-en-rulebook-1-1/');
   const documents = [
     {
+      title: 'Stonesaga: Rulebook v1.1',
       href: 'https://drive.usercontent.google.com/download?id=14EfqsIbeFudnJltnWzlNq3hKV3uuoxwW&export=download&confirm=t',
       pages: [24, 6, 7, 8, 9, 10, 11, 98, 100, 101, 107],
     },
     {
+      title: 'Stonesaga: publisher FAQ and errata, cover v1.3.1 updated 5.22.2026',
       href: 'https://docs.google.com/document/d/17SKgAs0-sOVsJ03L0mYUAiabDA3JsLKqkCtT7zXqsj8/export?format=pdf',
       pages: [2, 4, 5, 6, 7, 8, 9, 10, 11],
     },
   ];
   const sources = page.locator('.source-list > li');
   await expect(sources).toHaveCount(documents.length);
+  const shortcuts = page.getByRole('navigation', { name: 'Rulebook sources', exact: true });
+  await expect(shortcuts.getByRole('link')).toHaveCount(documents.length + 1);
   for (const [index, document] of documents.entries()) {
     const source = sources.nth(index);
+    await expect(shortcuts.getByRole('link', { name: `Read ${document.title} (PDF)`, exact: true })).toHaveAttribute('href', document.href);
     await expect(source.locator('.source-document')).toHaveAttribute('href', document.href);
     await expect(source.locator('.source-cited-pages a')).toHaveText(document.pages.map(number => `PDF page ${number}`));
     for (const number of document.pages) {
@@ -73,7 +78,6 @@ test('Stonesaga preserves both suffixless PDF URLs and their exact cited page or
     }
   }
   await expect(page.getByRole('link', { name: 'View cited page (PDF page 24)', exact: true })).toHaveAttribute('href', `${documents[0]!.href}#page=24`);
-  await expect(page.getByRole('link', { name: 'Read the publisher’s rulebook', exact: true })).toHaveAttribute('href', documents[0]!.href);
 });
 
 test('source pages are ordinary touch-sized links without JavaScript, and HTML sources get no PDF shortcuts', async ({ browser }) => {

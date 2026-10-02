@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { economics, inspectProbe, validateMetrics, type Metrics, type Probe } from './lib/growth-report';
+import { economics, ga4HostnameGuardStart, ga4MeasurementNote, inspectProbe, validateMetrics, type Metrics, type Probe } from './lib/growth-report';
 
 const origin = 'https://whogoesfirst.fun';
 const output = new URL('../artifacts/growth/', import.meta.url);
@@ -35,7 +35,8 @@ catch (error) {
 }
 const checkedAt = new Date().toISOString();
 const metricsAgeDays = metrics ? Math.max(0, Math.floor((Date.now() - Date.parse(metrics.periodEnd)) / 86400000)) : null;
-const metricsStatus = metricsIssue ? 'invalid' : !metrics ? 'unavailable' : Date.parse(metrics.periodEnd) > Date.now() ? 'future-period' : metricsAgeDays! > 14 ? 'stale' : 'available';
+const contaminatedGa4Window = metrics?.scope === 'ga4-reported-sessions' && metrics.periodStart < ga4HostnameGuardStart;
+const metricsStatus = metricsIssue ? 'invalid' : !metrics ? 'unavailable' : Date.parse(metrics.periodEnd) > Date.now() ? 'future-period' : contaminatedGa4Window ? 'contaminated-window' : metricsAgeDays! > 14 ? 'stale' : 'available';
 const observed = metrics ? economics(metrics) : null;
 const summary = { checks, metrics, metricsIssue, metricsStatus };
 // Ignore timestamps, volatile page copy, and catalog additions when detecting alerts.
@@ -58,6 +59,7 @@ const text = [
   ...(metrics ? [
     `Period: ${metrics.periodStart} to ${metrics.periodEnd}; source: ${metrics.source}; scope: ${metrics.scope}.`,
     `Sessions: ${metrics.sessions ?? 'unknown'}; pageviews: ${metrics.pageviews ?? 'unknown'}.`,
+    ...(metrics.scope === 'ga4-reported-sessions' ? [ga4MeasurementNote(metrics.periodStart, metrics.periodEnd)] : []),
     `Cash contribution: ${money(observed?.cashContributionUsd)}. After valued labor: ${money(observed?.contributionAfterLaborUsd)}.`,
     `Revenue per total session: ${observed?.revenuePerSessionUsd == null ? 'unknown (requires total sessions and actual revenue)' : `$${observed.revenuePerSessionUsd.toFixed(5)}`}.`,
   ] : ['No real traffic or revenue snapshot is available. Do not substitute the economics planning model or report missing values as zero.']), '',

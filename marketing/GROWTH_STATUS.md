@@ -1,5 +1,15 @@
 # Growth launch status
 
+## Measurement and outreach review (2026-10-01 Pacific)
+
+The historical GA4 report showing 1,864 sessions includes known production-build test traffic before the September 28 live-hostname guard. It is superseded as a growth baseline. The refreshed report must use the guard window, with the first day marked partial; live synthetic visits and analytics choices can still affect reported sessions. Search Console's 448 impressions and two clicks remain a separate small search observation.
+
+The next release repairs attribution for the existing reviewed Pinterest queue labels in both analytics loaders and exposes all approved source documents directly in multi-source rule answers. The Star Wars: Rebellion headline and description remain unchanged: its PDF-intent search sample may include internal research, and source access alone does not establish a ranking improvement. The native scroll regression test is adjusted to the expanded homepage without weakening its focus and user-navigation assertions.
+
+The current channel plan and review dates are in [GROWTH_PLAYBOOK.md](GROWTH_PLAYBOOK.md). Four personalized publisher media drafts and one ALA GameRT library-resource draft are ready in [VERIFIED_OUTREACH.md](VERIFIED_OUTREACH.md), with contact evidence and clean links in [outreach-next-reviewed.json](outreach-next-reviewed.json). No new messages or forms were sent during this review. The existing eight-send history is preserved. The connected Gmail mailbox is the owner's personal mailbox, rather than the outreach sender, so this check cannot confirm that sender's current replies or bounces.
+
+The existing daily growth heartbeat was confirmed active through the app. Cloud publishing remains one Bluesky original per Pacific day and five queued Pinterest entries per UTC day; no overlapping routine was added. Live HTTP discovery checks passed. Deployment evidence and the refreshed GA4 baseline will be recorded after release verification.
+
 ## Automated acquisition configuration (2026-10-01 Pacific)
 
 The owner asked Codex to take charge of automated distribution and improvements. Partnerships are secondary; no additional email batch is part of this change. `marketing/AUTOMATION.md` is the current operating procedure; older account-choice and credential blockers below are historical.

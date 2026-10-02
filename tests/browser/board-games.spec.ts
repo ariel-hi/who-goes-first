@@ -4,19 +4,19 @@ import { directorySearchKey } from '../../src/lib/search';
 
 // Reviewed Dropbox sharing viewers retain their exact source URLs and plain citations.
 // Keep explicit fixtures independent of the production PDF detection helper.
-const sharingViewerSources: Record<string, readonly { href: string; pages: readonly number[] }[]> = {
+const sharingViewerSources: Record<string, readonly { title: string; href: string; pages: readonly number[] }[]> = {
   'john-company-second-edition-wehrlegig-en': [
-    { href: 'https://www.dropbox.com/scl/fi/v1p712l0dkgiqa0jx0vr8/John-Company-Rules.pdf?dl=0&rlkey=xtek9x06fla1cb5d8b8ov3q7b', pages: [13, 10, 11, 4, 5, 2, 43, 44, 48] },
+    { title: 'John Company: Second Edition, Rules of Play, Second Printing (2023)', href: 'https://www.dropbox.com/scl/fi/v1p712l0dkgiqa0jx0vr8/John-Company-Rules.pdf?dl=0&rlkey=xtek9x06fla1cb5d8b8ov3q7b', pages: [13, 10, 11, 4, 5, 2, 43, 44, 48] },
   ],
   'the-game-pandasaurus-kwanchai-moriya-en': [
-    { href: 'https://www.dropbox.com/scl/fi/rux1sfbevshr8x593n0a2/P_TG_Rulebook_Print.pdf?dl=0&rlkey=6bbw1wlsych1lrxznas12g6ty&st=sn56zvzr', pages: [1, 2] },
+    { title: 'The Game: Pandasaurus English rulebook', href: 'https://www.dropbox.com/scl/fi/rux1sfbevshr8x593n0a2/P_TG_Rulebook_Print.pdf?dl=0&rlkey=6bbw1wlsych1lrxznas12g6ty&st=sn56zvzr', pages: [1, 2] },
   ],
   'cubirds-pandasaurus-en-2023': [
-    { href: 'https://www.dropbox.com/scl/fi/gzz5r4pttiz304zkgymcg/PANCUBIRCORE-cubirds_rules_ENG-1st_Printing.pdf?dl=0&rlkey=e92ddts66hwvxdnb93yn3iiuv', pages: [2, 3, 8, 1] },
+    { title: 'CuBirds: Pandasaurus English first-printing rulebook', href: 'https://www.dropbox.com/scl/fi/gzz5r4pttiz304zkgymcg/PANCUBIRCORE-cubirds_rules_ENG-1st_Printing.pdf?dl=0&rlkey=e92ddts66hwvxdnb93yn3iiuv', pages: [2, 3, 8, 1] },
   ],
   'nucleum-board-and-dice-2023-en': [
-    { href: 'https://www.dropbox.com/scl/fi/6mtcwklpiuanocyk7tia4/nucleum_rulebook_ENG_web.pdf?rlkey=dhh8nrsnw8dgk33tu4j4y36zv&e=1&dl=0', pages: [5, 6, 8, 4, 1, 27] },
-    { href: 'https://www.dropbox.com/scl/fi/fyptmj5kkcb70slql68zi/nucleum_rulebook_solo_ENG_web.pdf?rlkey=adhuw09dzhrxfsugq0vnzo6u6&e=1&dl=0', pages: [2, 1, 4] },
+    { title: 'Nucleum English base-game rulebook (©2023)', href: 'https://www.dropbox.com/scl/fi/6mtcwklpiuanocyk7tia4/nucleum_rulebook_ENG_web.pdf?rlkey=dhh8nrsnw8dgk33tu4j4y36zv&e=1&dl=0', pages: [5, 6, 8, 4, 1, 27] },
+    { title: 'Nucleum: Baron von Automat English solo rules', href: 'https://www.dropbox.com/scl/fi/fyptmj5kkcb70slql68zi/nucleum_rulebook_solo_ENG_web.pdf?rlkey=adhuw09dzhrxfsugq0vnzo6u6&e=1&dl=0', pages: [2, 1, 4] },
   ],
 };
 
@@ -28,11 +28,20 @@ async function expectReviewedSourceCitation(page: Page, slug: string, pdfPage: n
   }
   await expect(page.getByRole('link', { name: /View cited page/ })).toHaveCount(0);
   await expect(page.locator('.source-cited-pages')).toHaveCount(0);
-  await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', documents[0]!.href);
+  if (documents.length === 1) {
+    await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', documents[0]!.href);
+  } else {
+    const shortcuts = page.getByRole('navigation', { name: 'Rulebook sources', exact: true });
+    await expect(shortcuts.getByRole('link')).toHaveCount(documents.length);
+    for (const document of documents) {
+      await expect(shortcuts.getByRole('link', { name: `Read ${document.title}`, exact: true })).toHaveAttribute('href', document.href);
+    }
+  }
   const sources = page.locator('.source-list > li');
   await expect(sources).toHaveCount(documents.length);
   for (const [index, document] of documents.entries()) {
     const source = sources.nth(index);
+    await expect(source.locator('.source-document')).toHaveText(document.title);
     await expect(source.locator('.source-document')).toHaveAttribute('href', document.href);
     await expect(source.getByText(`Cited PDF pages: ${document.pages.join(', ')}`, { exact: true })).toBeVisible();
   }

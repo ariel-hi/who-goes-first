@@ -4,6 +4,14 @@
   const { document, location } = window;
   const choiceKey = 'wgf:analytics-choice:v3';
   const measurementId = 'G-XDVR78FJXY';
+  // This finite list comes from the site's reviewed editorial queue, captured
+  // while this script is current (before a later consent click). Older cached
+  // pages retain their legacy labels; malformed configuration enables no extras.
+  let campaigns = new Set(['first_player_picker', 'game_rules', 'house_questions', 'choose_first_player']);
+  try {
+    const names = JSON.parse(document.currentScript?.dataset.campaigns || 'null');
+    if (Array.isArray(names) && names.length <= 64 && names.every(name => typeof name === 'string' && /^[a-z][a-z0-9_]{0,63}$/.test(name))) campaigns = new Set(names);
+  } catch { /* Keep the legacy finite list. */ }
   const panel = document.querySelector('[data-analytics-consent]');
   const settings = document.querySelector('[data-analytics-settings]');
   const allow = document.querySelector('[data-analytics-allow]');
@@ -54,7 +62,6 @@
     const source = params.get('utm_source');
     const medium = params.get('utm_medium');
     const name = params.get('utm_campaign');
-    const campaigns = new Set(['first_player_picker', 'game_rules', 'house_questions', 'choose_first_player']);
     const campaign = ['pinterest', 'bluesky'].includes(source) && medium === 'organic_social' && campaigns.has(name)
       ? { campaign_source: source, campaign_medium: medium, campaign_name: name }
       : {};

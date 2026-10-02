@@ -10,7 +10,7 @@ Everything here is off until its setting exists. A missing setting never breaks 
 | "Games with a similar starting rule" and publisher links on each rule page | `GameArticle.astro` | Every build |
 | Per-rule share images (`/og/<slug>.png`) | `src/lib/og-image.ts` | Every build (≈95 ms per rule) |
 | Rule of the day on Bluesky and/or Mastodon | `scripts/post-rule.ts` | Daily, 15:17 UTC |
-| Search-demand research queue and weekly report | `scripts/growth-weekly.ts` → `research/demand/` | Mondays, 06:41 UTC |
+| Search-demand research queue and growth report | `scripts/growth-weekly.ts` → `research/demand/` | Mondays and Thursdays, 06:41 UTC |
 | Amazon affiliate links on rule and board-game pages | `src/lib/affiliate.ts` | Every build, when the tag is set |
 | One manual AdSense unit below a rule answer, with Google's consent message | `RuleAd.astro`, `public/google-tags.js` | Production builds when both the client ID and rule slot are set |
 
@@ -39,7 +39,7 @@ After changing a variable, trigger a new deployment.
 | `GCP_WORKLOAD_IDENTITY_PROVIDER`, `GCP_SERVICE_ACCOUNT` | variables | **Configured 2026-09-27 (keyless, preferred).** Google Cloud project `who-goes-first-growth` trusts only this repository's GitHub OIDC tokens and lets the weekly job act as `growth-reader@who-goes-first-growth.iam.gserviceaccount.com` (Search Console: Restricted user). No key exists to leak. |
 | `GOOGLE_SERVICE_ACCOUNT_JSON` | secret | Fallback only; not needed with the keyless variables. |
 | (key setup, if ever needed) | — | Weekly job. A Google Cloud service-account key; add its email as a **Restricted user** in Search Console, and as a **Viewer** in GA4. Enable the Search Console API and the Google Analytics Data API in that Cloud project. |
-| `GSC_PROPERTY` | variable | Defaults to `sc-domain:whogoesfirst.fun`. Use `https://whogoesfirst.fun/` if the property is URL-prefix. |
+| `GSC_PROPERTY` | variable | Defaults to the configured URL-prefix property `https://whogoesfirst.fun/`. Use a domain property only if that exact property has access configured. |
 | `GA4_PROPERTY_ID` | variable | Optional numeric GA4 property ID (Admin → Property details). Enables traffic totals and ad-network readiness. |
 | `BLUESKY_HANDLE`, `BLUESKY_APP_PASSWORD` | secrets | Daily post. Use an app password (Settings → Privacy and security → App passwords), never the account password. |
 | `MASTODON_INSTANCE`, `MASTODON_TOKEN` | secrets | Daily post. `https://your.instance`, and a token from Preferences → Development with only `write:statuses`. Mark the account as a bot in its profile settings. |
@@ -48,6 +48,16 @@ Scheduled workflows only run from the default branch, so `growth.yml` must be me
 
 ### Cloudflare
 Turn on **Caching → Configuration → Crawler Hints** for `whogoesfirst.fun`. Cloudflare then notifies IndexNow search engines (Bing, Yandex and others) when pages change.
+
+## Acquisition and outreach review
+
+Use [the growth playbook](marketing/GROWTH_PLAYBOOK.md) to review search, Pinterest, Bluesky, host resources, returning use and selective partnerships together. [Verified outreach drafts](marketing/VERIFIED_OUTREACH.md) identify current media routes and one library resource opportunity; draft status does not mean delivery. Preserve the October 15 discovery evaluation and existing publishing cadence.
+
+The GA4 hostname guard began September 28, 2026. Earlier production-build browser tests contaminated reports; the first guard day can still contain pre-deployment events. Weekly reporting excludes earlier dates, leaves two UTC days of reporting lag, and labels the short observation window. Do not use historical 30-day totals or the partial guard window to claim human growth or ad-network qualification. GA4 reporting dates follow the property's timezone, and the two-day lag is not a guarantee of finalized data. [Google DateRange reference](https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/DateRange).
+
+Both analytics loaders receive a finite list of editorial campaign labels derived from the reviewed Pinterest queue. This repairs attribution for the existing rule, tool and guide campaigns without accepting arbitrary query labels. Keep consent, clean page addresses and clean Bluesky/outreach links. A consented campaign session and a platform outbound click remain separate observations.
+
+Read-only Search Console reports need Restricted access; the daily job's sitemap submissions need Full permission and the webmasters scope. Verify the actual job result before concluding a sitemap was submitted or read.
 
 ## Checking it
 - `npx tsx scripts/post-rule.ts --dry-run` prints today's post.

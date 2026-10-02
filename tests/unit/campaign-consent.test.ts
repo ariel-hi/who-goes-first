@@ -1,10 +1,12 @@
 import { describe, expect, test } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
+import { pinQueue } from '../../src/lib/pinterest-pins';
+import { socialCampaignNames } from '../../src/lib/social-attribution';
 
 const script = readFileSync('public/analytics-consent.js', 'utf8');
 
-function runCampaign(search: string, savedChoice: string | null, hash = '', pathname = '/games/') {
+function runCampaign(search: string, savedChoice: string | null, hash = '', pathname = '/games/', campaignDataset: string | undefined = JSON.stringify(socialCampaignNames())) {
   const order: string[] = [];
   const elements = new Map(['[data-analytics-consent]', '[data-analytics-settings]', '[data-analytics-allow]', '[data-analytics-decline]'].map(selector => [selector, {
     hidden: true,
@@ -12,6 +14,7 @@ function runCampaign(search: string, savedChoice: string | null, hash = '', path
     focus() { /* no click in this test */ },
   }]));
   const document = {
+    currentScript: { dataset: { campaigns: campaignDataset } },
     addEventListener() { /* share bridge tested separately */ },
     title: 'Who Goes First?',
     head: { append() { order.push('tag requested'); } },
@@ -33,6 +36,24 @@ function runCampaign(search: string, savedChoice: string | null, hash = '', path
 }
 
 describe('consented campaign attribution', () => {
+  test('attributes every reviewed Pinterest campaign after consent using the rendered finite list', () => {
+    for (const name of new Set(pinQueue().map(pin => pin.campaign))) {
+      const search = `?utm_source=pinterest&utm_medium=organic_social&utm_campaign=${name}&names=Private`;
+      expect(runCampaign(search, 'allow').config).toMatchObject({ campaign_source: 'pinterest', campaign_medium: 'organic_social', campaign_name: name });
+      expect(runCampaign(search, null).config).toBeUndefined();
+      expect(runCampaign(search, 'decline').config).toBeUndefined();
+    }
+    const result = runCampaign('?utm_source=pinterest&utm_medium=organic_social&utm_campaign=private_player_name', 'allow');
+    expect(result.config).not.toHaveProperty('campaign_name');
+    expect(JSON.stringify(result.config)).not.toContain('private_player_name');
+  });
+  test('malformed or missing rendered configuration falls back to legacy labels', () => {
+    for (const dataset of ['', '{broken', '{"private_player_name":true}', '["tool_coin_flip",12]']) {
+      const search = '?utm_source=pinterest&utm_medium=organic_social&utm_campaign=tool_coin_flip';
+      expect(runCampaign(search, 'allow', '', '/coin-flip/', dataset).config).not.toHaveProperty('campaign_name');
+      expect(runCampaign(search.replace('tool_coin_flip', 'game_rules'), 'allow', '', '/coin-flip/', dataset).config?.campaign_name).toBe('game_rules');
+    }
+  });
   test('sends only fixed campaign labels and a clean page address', () => {
     const result = runCampaign('?utm_source=pinterest&utm_medium=organic_social&utm_campaign=game_rules&player=secret', 'allow');
     expect(result.config).toMatchObject({

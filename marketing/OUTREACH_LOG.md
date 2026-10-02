@@ -28,3 +28,9 @@ Rio Grande Games, Blue Orange, Days of Wonder, HABA, Ravensburger, Schmidt Spiel
 
 ## Replies and results
 - 2026-10-01 Allplay: automatic acknowledgement only.
+
+## Reviewed next-wave research (2026-10-01; unsent)
+
+Four recipient-specific media drafts and one separate ALA GameRT public-form draft are in [VERIFIED_OUTREACH.md](VERIFIED_OUTREACH.md), with official contact evidence and clean destination checks in [outreach-next-reviewed.json](outreach-next-reviewed.json). None was sent or submitted during this review. These do not change Batch 1's delivery history or the no-repeat rule. Review existing replies/bounces before any authorized next wave; partnerships remain secondary under [AUTOMATION.md](AUTOMATION.md).
+
+Verified media candidates: ABACUSSPIELE, Eagle-Gryphon, IELLO and Blue Orange US. Rio Grande and Queen request contact forms; ThunderGryph's press form requires terms consent. Those are deferred outside the email routine. The old largest-first candidate list is a research inventory, not an instruction to send to a guessed address or a support/sales inbox.

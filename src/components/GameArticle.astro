@@ -38,7 +38,12 @@ const creditedImages = [...(rule.image ? [rule.image] : []), ...(rule.additional
     {insetCoverImage && <figure class="rule-hero-cover"><img src={insetCoverImage.file} alt={insetCoverImage.alt} width={insetCoverImage.width} height={insetCoverImage.height} loading="eager" decoding="async" /></figure>}
     <p class="rule-answer">{rule.firstPlayerRule}</p>
     {rule.tieBreakApplicable !== false && rule.officialTieBreak && <section class="rule-section opening-tie"><h2>Official tie-break or fallback</h2><p>{rule.officialTieBreak}</p></section>}
-    <nav class="source-actions" aria-label="Rulebook source">{passageUrl && <a href={passageUrl} rel="noreferrer">View cited page (PDF page {firstPage})</a>}<a href={firstSource.url} rel="noreferrer">{sourceIsPdf ? 'Read the publisher’s rulebook' : 'Read the source rules'}</a></nav>
+    <nav class="source-actions" aria-label={rule.sources.length > 1 ? 'Rulebook sources' : 'Rulebook source'}>
+      {passageUrl && <a href={passageUrl} rel="noreferrer">View cited page (PDF page {firstPage})</a>}
+      {rule.sources.length > 1
+        ? rule.sources.map(source => <a href={source.url} rel="noreferrer">Read {source.title}{isPdfSource(source.url, source.pdfPagesOneBased) ? ' (PDF)' : ''}</a>)
+        : <a href={firstSource.url} rel="noreferrer">{sourceIsPdf ? 'Read the publisher’s rulebook' : 'Read the source rules'}</a>}
+    </nav>
     {photoImages.map(image => <figure class="rule-hero-photo"><img src={image.file} alt={image.alt} width={image.width} height={image.height} loading={insetCoverImage ? 'lazy' : 'eager'} decoding="async" /></figure>)}
   </header>
   <section class="rule-section rule-card source-card"><h2>Source & edition</h2><ul class="source-list">{rule.sources.map(source => {

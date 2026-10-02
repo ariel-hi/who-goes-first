@@ -6,7 +6,7 @@ import { rankDemand } from './lib/demand';
 import { searchOpportunities } from './lib/search-opportunities';
 import { sitemapEntries } from '../src/lib/sitemap';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
-import { ga4TrafficMetrics } from './lib/growth-report';
+import { ga4MeasurementNote, ga4MeasurementWindow, ga4TrafficMetrics } from './lib/growth-report';
 import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCountryTraffic } from './lib/country-traffic';
 import { indexingReport, indexingSnapshot } from './lib/indexing-diagnostics';
 import { acquisitionReport, summarizeAcquisition, type AcquisitionSummary, type UnavailableAcquisition } from './lib/acquisition';
@@ -44,10 +44,12 @@ const indexing = await indexingSnapshot(token, property, origin);
 let traffic: AnalyticsTotals | undefined;
 let country: CountryTrafficSummary | undefined;
 let acquisition: AcquisitionSummary | undefined;
-const trafficWindow = { start: daysAgo(30), end: daysAgo(1) };
+// A UTC date one day ago can still be today in the GA4 property's time zone.
+// Leave two UTC days of lag, and exclude the known pre-guard CI contamination.
+const trafficWindow = ga4MeasurementWindow(daysAgo(31), daysAgo(2));
 const affiliateWindow = { start: trafficWindow.start < affiliateMeasurementStart ? affiliateMeasurementStart : trafficWindow.start, end: trafficWindow.end };
 let affiliateEvents: AffiliateEventsSnapshot | undefined;
-if (gaProperty) {
+if (gaProperty && trafficWindow.days > 0) {
   try { traffic = await analyticsTotals(token, gaProperty, trafficWindow.start, trafficWindow.end); }
   catch (error) { console.warn(`GA4 report skipped: ${(error as Error).message}`); }
   if (traffic) {
@@ -104,14 +106,16 @@ const report = `# Weekly growth report — ${new Date().toISOString().slice(0, 1
 - Published rules: ${getCatalog().length}
 
 ${indexingReport(indexing)}
-${traffic ? `## Traffic (GA4, last 30 days)
+${traffic ? `## Traffic (GA4, ${trafficWindow.start} through ${trafficWindow.end})
 - Sessions: **${traffic.sessions.toLocaleString('en')}** · Screen/page views: **${traffic.screenPageViews.toLocaleString('en')}** · Users: ${traffic.totalUsers.toLocaleString('en')}
 - Screen/page views per session: ${traffic.sessions ? (traffic.screenPageViews / traffic.sessions).toFixed(2) : '—'}
+\n${ga4MeasurementNote(trafficWindow.start, trafficWindow.end)} Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
 ${country ? `- Named US/CA/GB/AU subtotal: ${country.namedJourneySessions.toLocaleString('en')} sessions. Five-country US/CA/GB/AU/NZ subtotal: ${country.raptiveCountryScreenPageViews.toLocaleString('en')} screen/page views. These are GA4 observations, not ad-network qualification.\n` : '- Country breakdown unavailable for this run.\n'}
 ` : '_GA4 totals unavailable: set GA4_PROPERTY_ID and give the service account Viewer access._\n'}
 ${acquisitionReport(acquisitionSnapshot)}
 ${affiliateEventsReport(affiliateSnapshot)}
-${adNetworkReadiness(traffic, country)}
+${adNetworkReadiness(trafficWindow.isFull30Days ? traffic : undefined, trafficWindow.isFull30Days ? country : undefined)}
+${!trafficWindow.isFull30Days ? `A full 30-day GA4 comparison is unavailable until the measurement guard covers 30 reporting days. The ${trafficWindow.days}-day observation above is excluded from the qualification comparison.\n` : ''}
 ## Research queue (last 28 days)
 ${demand.missingRules.length ? demand.missingRules.slice(0, 15).map((game, index) => `${index + 1}. **${game.name}**${game.bggId ? ` (BGG ${game.bggId})` : ""} — ${game.impressions} impressions: ${game.queries.map(query => `“${query}”`).join(', ')}`).join('\n') : 'No starting-rule searches for games without a sourced rule yet.'}
 

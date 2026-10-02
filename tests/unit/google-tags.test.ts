@@ -1,9 +1,11 @@
 import { expect, test } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
+import { pinQueue } from '../../src/lib/pinterest-pins';
+import { socialCampaignNames } from '../../src/lib/social-attribution';
 
 const script = readFileSync('public/google-tags.js', 'utf8');
-function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = false, hasSlot = true) {
+function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = false, hasSlot = true, search = '?utm_source=bluesky&utm_medium=organic_social&utm_campaign=game_rules&names=Private', campaignDataset: string | undefined = JSON.stringify(socialCampaignNames())) {
   const order: string[] = [];
   const scripts: string[] = [];
   const dataLayer: IArguments[] = [];
@@ -14,7 +16,7 @@ function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = fa
   }
   const status = { textContent: '' };
   const document = {
-    currentScript: { dataset: { client: 'ca-pub-1234567890123456', ads: ads ? 'on' : 'off' } },
+    currentScript: { dataset: { client: 'ca-pub-1234567890123456', ads: ads ? 'on' : 'off', campaigns: campaignDataset } },
     title: 'Public rule', cookie: '_ga=old',
     head: { append(node: { src: string }) { order.push('script'); scripts.push(node.src); } },
     createElement() { return {}; },
@@ -25,7 +27,7 @@ function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = fa
   };
   const window = {
     document, dataLayer, URLSearchParams, Element, frames: { googlefcPresent: true },
-    location: { origin: 'https://whogoesfirst.fun', hostname: 'whogoesfirst.fun', pathname: '/games/test/', search: '?utm_source=bluesky&utm_medium=organic_social&utm_campaign=game_rules&names=Private', hash: '#q=Private' },
+    location: { origin: 'https://whogoesfirst.fun', hostname: 'whogoesfirst.fun', pathname: '/games/test/', search, hash: '#q=Private' },
     localStorage: { getItem(key: string) { return saved[key] ?? null; }, setItem(key: string, value: string) { saved[key] = value; } },
     history: { state: null, replaceState(_state: unknown, _title: string, url: string) { if (cleanupFails) throw Error('blocked'); order.push(url); } },
   };
@@ -36,6 +38,27 @@ function run(ads: boolean, saved: Record<string, string> = {}, cleanupFails = fa
     affiliateClick: () => listeners.get('click')!({ target: new Element('affiliate') }), status,
   };
 }
+
+test('ads mode attributes every reviewed Pinterest campaign and rejects unknown query labels', () => {
+  for (const name of new Set(pinQueue().map(pin => pin.campaign))) {
+    const search = `?utm_source=pinterest&utm_medium=organic_social&utm_campaign=${name}&names=Private`;
+    const page = run(false, {}, false, true, search);
+    const config = page.dataLayer.find(args => args[0] === 'config')![2];
+    expect(config).toMatchObject({ campaign_source: 'pinterest', campaign_medium: 'organic_social', campaign_name: name });
+    expect(JSON.stringify(config)).not.toMatch(/Private|names|#q/);
+    expect(run(false, { 'wgf:analytics-choice:v3': 'decline' }, false, true, search).dataLayer.some(args => args[0] === 'config')).toBe(false);
+  }
+  const page = run(false, {}, false, true, '?utm_source=pinterest&utm_medium=organic_social&utm_campaign=private_player_name');
+  expect(page.dataLayer.find(args => args[0] === 'config')![2]).not.toHaveProperty('campaign_name');
+});
+
+test('ads mode uses only legacy labels if the rendered campaign list is malformed', () => {
+  for (const dataset of ['', '{broken', '{"private_player_name":true}', '["tool_coin_flip",12]']) {
+    const page = run(false, {}, false, true, '?utm_source=pinterest&utm_medium=organic_social&utm_campaign=tool_coin_flip', dataset);
+    expect(page.dataLayer.find(args => args[0] === 'config')![2]).not.toHaveProperty('campaign_name');
+    expect(run(false, {}, false, true, undefined, dataset).dataLayer.find(args => args[0] === 'config')![2]).toHaveProperty('campaign_name', 'game_rules');
+  }
+});
 
 test('ads mode keeps picker pages ad free and cleans private query values before third-party scripts', () => {
   const page = run(false);

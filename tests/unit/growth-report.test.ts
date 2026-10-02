@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { economics, ga4TrafficMetrics, inspectProbe, validateMetrics, type Metrics, type Probe } from '../../scripts/lib/growth-report';
+import { economics, ga4MeasurementNote, ga4MeasurementWindow, ga4TrafficMetrics, inspectProbe, validateMetrics, type Metrics, type Probe } from '../../scripts/lib/growth-report';
 
 const origin = 'https://whogoesfirst.fun';
 const probe = (body: string, extra: Partial<Probe> = {}): Probe => ({ path: '/', status: 200, url: `${origin}/`, body, robots: '', ...extra });
@@ -24,6 +24,25 @@ describe('growth check decisions', () => {
 });
 
 describe('observed economics', () => {
+  it('excludes known earlier CI contamination and identifies the partial guard window', () => {
+    expect(ga4MeasurementWindow('2026-09-01', '2026-09-30')).toEqual({ start: '2026-09-28', end: '2026-09-30', days: 3, isFull30Days: false, includesRolloutDay: true });
+    const note = ga4MeasurementNote('2026-09-28', '2026-09-30');
+    expect(note).toContain('rollout day is partial');
+    expect(note).toContain('3-day observation, not a complete 30-day comparison');
+    expect(note).toContain('do not establish verified human traffic');
+  });
+  it('keeps the requested rolling window once thirty post-guard days are available', () => {
+    expect(ga4MeasurementWindow('2026-09-29', '2026-10-28')).toEqual({ start: '2026-09-29', end: '2026-10-28', days: 30, isFull30Days: true, includesRolloutDay: false });
+    expect(ga4MeasurementNote('2026-09-29', '2026-10-28')).not.toContain('not a complete 30-day');
+    expect(ga4MeasurementWindow('2026-09-01', '2026-10-27').isFull30Days).toBe(false);
+    expect(ga4MeasurementWindow('2026-09-01', '2026-09-27').days).toBe(0);
+  });
+  it('warns when a historical GA4 snapshot still contains pre-guard data', () => {
+    const snapshot = ga4TrafficMetrics('2026-09-01', '2026-09-30', 1800, 3000);
+    expect(snapshot.source).toContain('includes known earlier CI contamination');
+    expect(snapshot.sessions).toBe(1800);
+    expect(snapshot.pageviews).toBe(3000);
+  });
   it('subtracts cash costs and valued labor separately', () => {
     expect(economics(validateMetrics(metrics))).toEqual({ cashContributionUsd: 722, contributionAfterLaborUsd: -278, revenuePerSessionUsd: 0.00822 });
   });

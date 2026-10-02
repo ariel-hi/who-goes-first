@@ -10,9 +10,23 @@ export type Metrics = {
   cashRevenueUsd: number | null; cashCostsUsd: number | null;
   laborHours: number | null; laborHourlyUsd: number | null;
 };
+// Production-build browser checks sent GA4 events until this live-hostname
+// guard shipped. The rollout day is partial and live synthetic visits can
+// still contribute afterwards; this boundary is not proof of human traffic.
+export const ga4HostnameGuardStart = '2026-09-28';
+export function ga4MeasurementWindow(requestedStart: string, end: string) {
+  const start = requestedStart < ga4HostnameGuardStart ? ga4HostnameGuardStart : requestedStart;
+  const days = Math.max(0, Math.round((Date.parse(end) - Date.parse(start)) / 86400000) + 1);
+  return { start, end, days, isFull30Days: days === 30 && start > ga4HostnameGuardStart, includesRolloutDay: start === ga4HostnameGuardStart && days > 0 };
+}
+export function ga4MeasurementNote(start: string, end: string): string {
+  const window = ga4MeasurementWindow(start, end);
+  if (start < ga4HostnameGuardStart) return `This GA4 snapshot includes known earlier CI contamination before the live-hostname guard began on ${ga4HostnameGuardStart}; refresh it using the guard window before judging growth.`;
+  return `The live-hostname measurement guard began on ${ga4HostnameGuardStart}; known CI contamination from earlier dates is excluded.${window.includesRolloutDay ? ' The rollout day is partial and may include events from before the guard.' : ''}${window.isFull30Days ? '' : ` This is a ${window.days}-day observation, not a complete 30-day comparison.`} These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic.`;
+}
 export function ga4TrafficMetrics(periodStart: string, periodEnd: string, sessions: number, screenPageViews: number): Metrics {
   return validateMetrics({
-    periodStart, periodEnd, source: 'Google Analytics 4 Data API (screenPageViews)', scope: 'ga4-reported-sessions',
+    periodStart, periodEnd, source: `Google Analytics 4 Data API (screenPageViews). ${ga4MeasurementNote(periodStart, periodEnd)}`, scope: 'ga4-reported-sessions',
     sessions, pageviews: screenPageViews,
     cashRevenueUsd: null, cashCostsUsd: null, laborHours: null, laborHourlyUsd: null,
   });
