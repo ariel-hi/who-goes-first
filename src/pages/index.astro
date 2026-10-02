@@ -4,6 +4,8 @@ import PickerShell from '../components/PickerShell.astro';
 import RuleLookup from '../components/RuleLookup.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import HomeRandomRule from '../components/HomeRandomRule.astro';
+import HomeDiscovery from '../components/HomeDiscovery.astro';
+import '../styles/discovery.css';
 import { getCatalog } from '../lib/content/catalog';
 const balloonEnabled = process.env.DISABLE_BALLOON !== 'true';
 const approved = getCatalog();
@@ -33,5 +35,6 @@ const title = 'Who Goes First? Random First Player Picker';
         <SocialLinks kind="picker" title={title} />
       </section>
     </div>
+    <HomeDiscovery games={approved} />
   </div>
 </Layout>

@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SharePage from '../components/SharePage.astro';
+const title = 'Game Night Checklist: Free Printable Planner | Who Goes First?';
+const description = 'Plan a board game night with a free printable checklist: guests, games, table setup, starting player, teams, scores and timers. No account needed.';
+const sections = [
+  { heading: 'Before people arrive', items: [
+    { id: 'guests', text: 'Confirm the head count, time and place.', detail: 'Include when you expect to finish. Ask about accessibility needs and food preferences while planning.' },
+    { id: 'games', text: 'Choose a main game and a short backup.', detail: 'Check the player count and play time on your box. Allow extra time when someone is learning.' },
+    { id: 'rules', text: 'Read the setup and first-turn instructions.', detail: 'Use the rulebook for your edition. Our starting-rule library links to its sources.', href: '/games/', link: 'Find the starting rule' },
+    { id: 'pieces', text: 'Check the pieces and clear enough table space.', detail: 'Leave room for each player’s cards, score area and any shared board. Put drinks somewhere stable.' },
+  ] },
+  { heading: 'At the table', items: [
+    { id: 'teach', text: 'Explain the goal, a turn, and how the game ends.', detail: 'Try a sample turn together. Give new players a chance to ask questions before scoring begins.' },
+    { id: 'starter', text: 'Choose the starting player.', detail: 'Follow your edition’s rule first. If it calls for a random choice, use numbered seats or names.', href: '/', link: 'Open the first-player picker' },
+    { id: 'teams', text: 'Set teams or turn order if the game needs them.', detail: 'Agree on house rules together. A random full order is an option only when it fits your game.', href: '/random-team-generator/', link: 'Make random teams' },
+    { id: 'scores', text: 'Set up scoring and any turn limit.', detail: 'Open a score sheet before the first round. Use a timer if everyone agrees or the rules require one.', href: '/score-keeper/', link: 'Open the score keeper' },
+  ] },
+  { heading: 'When you finish', items: [
+    { id: 'pack', text: 'Return the pieces to the right bags and boxes.', detail: 'Keep expansion pieces and edition-specific instructions with the game they belong to.' },
+    { id: 'next', text: 'Pick a game or date for next time.', detail: 'Keep a QR table card in the box so your group can find the picker again.', href: '/printable-game-night/', link: 'Get free QR table cards' },
+  ] },
+];
+---
+<Layout ads={false} title={title} description={description} image="/og/game-night-checklist.png" imageAlt="A free game night checklist: plan, set up, play and pack away.">
+  <div class="content-page prose game-checklist">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Game-night checklist</nav>
+    <span class="eyebrow">FOR BOARD GAMES, CARD GAMES & CLUB TABLES</span>
+    <h1>Your game-night checklist.</h1>
+    <p class="lede">Less scrambling. More playing. Work through this list on your phone, or print a copy for the table.</p>
+    <div class="checklist-actions" data-print-actions hidden><button type="button" class="checklist-print" data-checklist-print>Print the checklist</button><button type="button" class="checklist-reset" data-checklist-reset>Clear checkmarks</button><span role="status" data-checklist-status></span></div>
+    <p class="small muted checklist-note">Checkmarks last while this page stays open. No sign-in is needed. To save a paper copy, choose Print in your browser, or select Save as PDF in the print dialog.</p>
+    {sections.map(section => <section class="checklist-section"><h2>{section.heading}</h2><ul>{section.items.map(item => <li><label for={`check-${item.id}`}><input type="checkbox" id={`check-${item.id}`} /><span><strong>{item.text}</strong><span class="checklist-detail">{item.detail}</span></span></label>{'href' in item && <a class="checklist-link" href={item.href}>{item.link} →</a>}</li>)}</ul></section>)}
+    <p class="checklist-print-address">More free tools and sourced starting rules: whogoesfirst.fun</p>
+    <div class="checklist-extras">
+      <h2>A small toolkit for the table</h2>
+      <ul>
+        <li><a href="/dice-roller/">Dice roller</a>: replace a missing die, from d4 to d100.</li>
+        <li><a href="/turn-timer/">Turn timer</a>: restart a countdown for the next player.</li>
+        <li><a href="/card-draw/">Card draw</a>: draw from a shuffled 52-card deck.</li>
+        <li><a href="/turn-order-generator/">Turn order generator</a>: shuffle your whole group into an order.</li>
+        <li><a href="/random-letter-generator/">Letter generator</a>: draw letters for word games.</li>
+      </ul>
+      <p>Each tool opens in your browser without a download. Check your game’s rules before substituting any tool for a component or changing the turn order.</p>
+      <SharePage label="Share this checklist" title={title} pin={{ path: '/game-night-checklist/', description }} />
+      <h2>Hosting a club or café table?</h2>
+      <p>Leave a <a href="/printable-game-night/">printable QR card</a> beside the game, or <a href="/embed/">add the picker badge and a sourced starting rule to your website</a>. Your players get a shortcut they can reuse next time.</p>
+    </div>
+  </div>
+</Layout>
+<script>
+  const root = document.querySelector<HTMLElement>('.game-checklist');
+  if (root) {
+    root.querySelector<HTMLElement>('[data-print-actions]')!.hidden = false;
+    root.querySelector('[data-checklist-print]')!.addEventListener('click', () => window.print());
+    root.querySelector('[data-checklist-reset]')!.addEventListener('click', () => {
+      root.querySelectorAll<HTMLInputElement>('input[type=checkbox]').forEach(input => { input.checked = false; });
+      root.querySelector<HTMLElement>('[data-checklist-status]')!.textContent = 'Checkmarks cleared.';
+    });
+  }
+</script>
+<style>
+  .checklist-actions { display:flex; flex-wrap:wrap; gap:8px 14px; margin:20px 0 12px; align-items:center; }
+  .checklist-actions[hidden] { display:none; }
+  .checklist-actions button { padding:10px 16px; border-radius:9px; }
+  .checklist-print { background:var(--green); color:var(--paper); border:1px solid var(--green); }
+  :global(:root[data-theme=dark]) .checklist-print { color:#262129; }
+  .checklist-reset { background:transparent; color:var(--green); border:1px solid var(--line); }
+  .checklist-actions [role=status] { font-size:13px; }
+  .checklist-section { margin-top:30px; }
+  .checklist-section ul { list-style:none; margin:0; padding:0; }
+  .checklist-section li { padding:14px 0; border-bottom:1px solid var(--line); break-inside:avoid; }
+  .checklist-section label { display:flex; gap:12px; cursor:pointer; }
+  .checklist-section input { flex:none; width:20px; height:20px; min-height:20px; margin:4px 0 0; }
+  .checklist-section label > span { min-width:0; }
+  .checklist-section strong { font-size:16px; }
+  .checklist-detail { display:block; color:var(--muted); font-size:14px; margin-top:3px; }
+  .checklist-section input:checked + span strong { text-decoration:line-through; }
+  .checklist-link { display:inline-flex; min-height:44px; align-items:center; font-size:14px; margin-left:32px; }
+  .checklist-extras { margin:36px 0; }
+  .checklist-extras h2 { margin-top:30px; }
+  .checklist-print-address { display:none; }
+  @media print {
+    @page { size:auto; margin:14mm; }
+    :global(body:has(.game-checklist)), :global(html:has(.game-checklist)) { background:white !important; color:black !important; }
+    :global(body:has(.game-checklist) .site-header), :global(body:has(.game-checklist) .site-footer), :global(body:has(.game-checklist) .skip-link), :global(body:has(.game-checklist) .analytics-consent) { display:none !important; }
+    .game-checklist { margin:0; padding:0; max-width:none; }
+    .breadcrumb, .eyebrow, .checklist-actions, .checklist-note, .checklist-extras, .checklist-link { display:none; }
+    h1 { font-size:26px; margin-bottom:8px; }
+    .lede { font-size:12px; margin-bottom:12px; }
+    .checklist-section { margin-top:14px; }
+    h2 { font-size:17px; margin-bottom:5px; break-after:avoid; }
+    .checklist-section li { padding:7px 0; border-color:#ddd; }
+    .checklist-section strong { font-size:12px; }
+    .checklist-detail { font-size:11px; color:#333; line-height:1.35; }
+    .checklist-section input { width:14px; height:14px; min-height:14px; margin-top:3px; }
+    .checklist-print-address { display:block; font-size:11px; margin:16px 0 0; color:#333; }
+  }
+</style>

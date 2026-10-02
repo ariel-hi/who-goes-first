@@ -1,11 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { toolCards } from '../../lib/tool-cards';
+import { relatedTools } from '../../lib/tool-directory';
+import SharePage from '../SharePage.astro';
 import '../../styles/tools.css';
 interface Props { title: string; description: string; heading: string; lede: string; current: string }
 const { title, description, heading, lede, current } = Astro.props;
 const cardId = current.replace(/\//g, '');
 const card = toolCards[cardId];
+const nextTools = relatedTools(current);
 ---
 <Layout ads={false} title={title} description={description} {...(card ? { image: `/og/tool-${cardId}.png`, imageAlt: `${card.heading}: ${card.body}` } : {})}>
   <div class="tool-page">
@@ -13,8 +16,23 @@ const card = toolCards[cardId];
     <div class="intro"><h1>{heading}</h1><p>{lede}</p></div>
     <noscript><p class="noscript">Enable JavaScript to use this tool.</p></noscript>
     <slot />
+    <div class="tool-sharing"><SharePage label="Share this tool" title={title} pin={{ path: current, description }} /></div>
     <div class="below-tool prose">
       <slot name="about" />
     </div>
+    <section class="tool-next" aria-labelledby="tool-next-heading">
+      <h2 id="tool-next-heading">For the rest of game night</h2>
+      <ul>{nextTools.map(tool => <li><a href={tool.href}><strong>{tool.name}</strong><span>{tool.use}</span></a></li>)}</ul>
+      <p><a href="/games/">Check your game’s starting rule</a> · <a href="/game-night-checklist/">Game-night checklist</a> · <a href="/tools/">All free tools</a></p>
+    </section>
   </div>
 </Layout>
+<style>
+  .tool-sharing { margin:20px 0; }
+  .tool-next { margin:32px 0; border-top:1px solid var(--line); padding-top:24px; }
+  .tool-next ul { list-style:none; padding:0; display:grid; gap:10px; }
+  .tool-next a { overflow-wrap:anywhere; }
+  .tool-next li a { display:flex; flex-direction:column; gap:4px; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:var(--paper); color:var(--ink); text-decoration:none; }
+  .tool-next li a:hover { border-color:var(--green); }
+  .tool-next li span, .tool-next p { font-size:13px; color:var(--muted); }
+</style>
