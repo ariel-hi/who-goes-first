@@ -2,7 +2,7 @@
 
 Researched October 1, 2026 (America/Los_Angeles). **All drafts below are unsent; no form was submitted.** The eight already-sent publishers remain in [OUTREACH_LOG.md](OUTREACH_LOG.md) and are excluded here. Use [outreach-next-reviewed.json](outreach-next-reviewed.json) as the research/placement ledger. Each clean link below was checked on the live domain: HTTP 200, matching canonical, and publisher counts matching the live title and approved catalog.
 
-Before an authorized send, inspect the existing inbox for bounces, complaints, stop requests and replies, recheck the contact source and current landing page, and follow the existing no-repeat rule. The current workflow makes partnerships secondary. These four media contacts are prepared options, not an instruction to expand the old eight-recipient batch or send an automated campaign.
+Before an authorized send, inspect the outreach sender's mailbox across all folders, including Spam and Trash, for bounces, complaints, stop requests and replies; recheck the contact source and current landing page; and follow the existing no-repeat rule. The current workflow makes partnerships secondary. These four media contacts are prepared options, not an instruction to expand the old eight-recipient batch or send an automated campaign.
 
 ## WGF-OCT01-ABACUS — ABACUSSPIELE
 

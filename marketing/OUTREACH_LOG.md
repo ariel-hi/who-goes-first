@@ -8,6 +8,7 @@ Sent from edamame.makers@gmail.com, signed "Ariel, Who Goes First?". Each batch'
 - One batch per weekday (the routine runs at 6:30 AM Pacific), as long as there are **no bounces or spam complaints** and no reply asked us to stop. Batch size: **8**, sent at least a minute apart.
 - After three clean batches, the size may rise to 10. Any bounce or complaint pauses sending until Ariel reviews it.
 - Log every reply, correction request and earned link here.
+- Before an authorized send, check the sender's mailbox across all folders, including Spam and Trash, so a moved thread cannot hide a reply or delivery failure.
 
 ## Batch 1: 2026-10-01 (8 sent, ~08:22–08:30 PT)
 | Publisher | To | Rules | Status |
@@ -28,6 +29,8 @@ Rio Grande Games, Blue Orange, Days of Wonder, HABA, Ravensburger, Schmidt Spiel
 
 ## Replies and results
 - 2026-10-01 Allplay: automatic acknowledgement only.
+
+Browser follow-up on October 1 Pacific verified the eight original outgoing threads in `edamame.makers@gmail.com`. Allplay's original message and automatic acknowledgement were in Trash; the acknowledgement estimates 3–4 business days and remains separate from a human response. Date-bounded searches across all folders found no Who Goes First delivery failure. This observation does not establish recipient reading or sender-level deliverability. The five reviewed next-wave drafts remain unsent.
 
 ## Reviewed next-wave research (2026-10-01; unsent)
 

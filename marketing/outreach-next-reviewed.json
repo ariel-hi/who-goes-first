@@ -8,7 +8,7 @@
   "attribution": "Clean canonical links joined to this ledger by outreach ID. No email-open tracking or new campaign parameters. Existing consented referral samples may support a verified web placement; email and QR acquisition cannot be assigned per recipient.",
   "dispatchPreconditions": [
     "Current user authorization covers the specific communication and recipient.",
-    "Inspect the existing inbox for replies, bounces, complaints and stop requests before an actual send.",
+    "Inspect the outreach sender's mailbox across all folders, including Spam and Trash, for replies, bounces, complaints and stop requests before an actual send.",
     "Check OUTREACH_LOG.md and actual send evidence; never send the same organization again unless it replied requesting something.",
     "Recheck the official contact source and live edition-specific landing page.",
     "No new terms, spending, account creation or membership enrollment is authorized by this draft ledger."
