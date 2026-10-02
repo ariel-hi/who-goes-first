@@ -41,8 +41,6 @@ export function pinQueue(): QueuedPin[] {
   const ordered: Omit<QueuedPin, 'date'>[] = [];
   games.forEach((pin, index) => { ordered.push(pin); if (index % 5 === 4 && tools.length) ordered.push(tools.shift()!); });
   ordered.push(...tools);
-  // Append new campaigns so published GUIDs keep their original release dates.
-  ordered.push({ id: 'guide-game-night-checklist', path: '/game-night-checklist/', title: 'Free printable game night checklist', heading: 'Your game-night checklist', body: 'Plan the guests, choose the games, set up the table and get playing. A free checklist to print or use on your phone.', art: { seed: 'game-night-checklist', kicker: 'Free printable checklist', title: 'Your game-night checklist', body: 'Plan, set up, play and pack away. Ten simple checks and free tools for the table.', cta: 'Open the free checklist' }, description: 'A free board game night checklist for hosts, clubs and café tables: guests, games, starting player, teams, scores and packing away. Print it or use it on your phone, with no account or app.', campaign: 'game_night_checklist' });
   return cache = ordered.map((pin, index) => ({ ...pin, date: new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10) }));
 }
 

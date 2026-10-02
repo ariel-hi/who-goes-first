@@ -62,7 +62,7 @@ for (const width of [320, 1280]) {
       await link.focus();
       await page.keyboard.press('Enter');
       await expect(page).toHaveURL(/\/tools\/$/);
-      await expect(page.getByRole('heading', { level: 1 })).toHaveText('Your game-night toolkit.');
+      await expect(page.getByRole('heading', { level: 1 })).toHaveText('Decision tools.');
       const choices = page.locator('main section a');
       expect(await choices.evaluateAll(links => links.map(link => link.getAttribute('href')))).toEqual([
         '/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/turn-order-generator/',

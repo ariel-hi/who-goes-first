@@ -14,7 +14,7 @@ export function sitemapEntries(): Record<SitemapSection, Entry[]> {
   const pages = ['/', '/about/', '/fairness/', '/privacy/', '/tools/', '/choose-who-goes-first/', '/printable-game-night/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/', '/random-letter-generator/', '/card-draw/', '/embed/', '/methods/spinner/', '/methods/cards/', '/methods/towers/', '/methods/straws/', '/methods/dice/', '/methods/coin/', '/methods/shells/', ...(process.env.DISABLE_BALLOON !== 'true' ? ['/methods/balloon/'] : []), ...(getPrompts().length ? ['/house-rules/'] : [])];
   const hubs = [...(games.length ? ['/games/'] : []), ...themeHubs(games).map(hub => `/games/themes/${hub.slug}/`), ...(publishers.length ? ['/publishers/'] : []), ...publishers.map(hub => `/publishers/${hub.slug}/`), ...(games.some(randomRuleEligible) ? ['/ways-to-pick-who-goes-first/'] : [])];
   return {
-    pages: [...pages, '/game-night-checklist/'].map(path => ({ path })),
+    pages: pages.map(path => ({ path })),
     rules: games.map(game => ({ path: `/games/${game.slug}/`, lastmod: game.materiallyUpdatedAt ?? undefined })),
     'board-games': ['/board-games/', ...getBoardGames().filter(game => game.rules.length > 1).map(game => `/board-games/${game.routeKey}/`)].map(path => ({ path })),
     hubs: hubs.map(path => ({ path })),

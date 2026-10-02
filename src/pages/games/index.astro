@@ -10,11 +10,11 @@ const { rules: games, identitiesWithRules, ruleEditions } = getPublicCounts();
 const searchAliases = getRuleSearchAliases();
 const themes = themeHubs(games);
 const publishers = publisherHubs(games);
-const title = 'Who Goes First in Board Games? Official Starting Rules';
+const title = 'Board Game Starting-Player Rules | Who Goes First?';
 ---
 <Layout title={title} description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}>
   <div class="content-page">
-    <h1>Who goes first in your board game?</h1>
+    <h1>Starting-player rules.</h1>
     <p class="lede">Who starts, according to the rulebook.</p>
     <p>{ruleEditions.toLocaleString('en')} checked starting-player edition records linked to {identitiesWithRules.toLocaleString('en')} documented games. Some games have multiple editions, and a shared rule can apply to more than one game. Can’t find yours? Try the <a href="/board-games/">wider board game directory</a> or the <a href="/">player picker</a>.</p>
     <GameDirectory games={games} searchAliases={searchAliases} enableDirectorySearch enableSearchHistory enableAlphabetBrowse>
@@ -24,6 +24,5 @@ const title = 'Who Goes First in Board Games? Official Starting Rules';
         {games.length > 0 && <SocialLinks kind="rules" title={title} />}
       </Fragment>
     </GameDirectory>
-    <p class="small muted rule-section">New answers are added as their sources are reviewed. <a href="/rss.xml">Follow new starting rules via RSS</a>. Hosting a table? Use the <a href="/game-night-checklist/">game-night checklist</a>.</p>
   </div>
 </Layout>

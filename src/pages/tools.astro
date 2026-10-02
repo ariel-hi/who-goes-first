@@ -1,16 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { siteSettings } from '../lib/site';
-import { toolDirectory as tools } from '../lib/tool-directory';
 const localPreview = import.meta.env.DEV && !siteSettings().production;
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
+const tools = [
+  { href: '/finger-chooser/', name: 'Finger chooser', use: 'Touch the screen to choose a starter or a full turn order.', label: 'AT THE TABLE' },
+  { href: '/coin-flip/', name: 'Coin flip', use: 'Make a fair heads-or-tails decision between two choices.', label: 'TWO CHOICES' },
+  { href: '/random-team-generator/', name: 'Random team generator', use: 'Split up to 200 names into 2–10 evenly sized teams.', label: 'MAKE TEAMS' },
+  { href: '/rock-paper-scissors/', name: 'Rock paper scissors', use: 'Choose in secret, then reveal both players’ throws together.', label: 'TWO PLAYERS' },
+  { href: '/dice-roller/', name: 'Dice roller', use: 'Roll up to 12 dice, from d4 to d100, and see the total.', label: 'LOST THE DICE' },
+  { href: '/turn-order-generator/', name: 'Turn order generator', use: 'Shuffle every player into a fair random playing order.', label: 'FULL ORDER' },
+  { href: '/score-keeper/', name: 'Score keeper', use: 'Track points for every player, saved on your phone.', label: 'KEEP SCORE' },
+  { href: '/turn-timer/', name: 'Turn timer', use: 'Count down each turn from 30 seconds to 3 minutes.', label: 'KEEP IT MOVING' },
+  { href: '/random-letter-generator/', name: 'Random letter generator', use: 'Draw a letter for Scattergories and word games, skipping hard letters.', label: 'WORD GAMES' },
+  { href: '/card-draw/', name: 'Draw a card', use: 'Draw from a shuffled 52-card deck, for high-card draws and more.', label: 'CARD GAMES' },
+  { href: '/random-number-generator/', name: 'Random number generator', use: 'Get a fair whole number in any range you choose.', label: 'ANY RANGE' },
+];
 ---
-<Layout ads={false} title="Free Board Game Tools: Dice, Scores, Teams & Timers | Who Goes First?" description="Free board game tools in your browser: first-player picker, dice roller, score keeper, turn timer, random teams, card draw and more. No account or app needed." pageType="CollectionPage">
+<Layout ads={false} title="Free Game-Night Decision Tools | Who Goes First?" description="Choose a starting player, flip a coin, make random teams or play rock paper scissors. Find the right free browser tool for your game night." pageType="CollectionPage">
   <div class="content-page tools-index">
     <header class="tools-intro">
       <span class="tools-eyebrow">GAME NIGHT, SORTED</span>
-      <h1>Your game-night toolkit.</h1>
-      <p class="lede">Pick a starter, roll the dice, keep score, and make the next turn easy.</p>
+      <h1>Decision tools.</h1>
+      <p class="lede">Pick a starter, settle a choice, or split your group into teams.</p>
     </header>
     <p class="tools-rule-note">Playing a specific board game? <a href={gamesPath}>Check its starting-player rule</a> first.</p>
     <section aria-labelledby="first-player-tools">
@@ -26,7 +38,7 @@ const gamesPath = localPreview ? '/dev/games/' : '/games/';
       </a>
     </section>
     <section aria-labelledby="other-tools">
-      <h2 id="other-tools" class="tools-section-heading">For every part of the game</h2>
+      <h2 id="other-tools" class="tools-section-heading">Other ways to decide</h2>
       <ul class="tools-grid">
         {tools.map((tool, index) => <li>
           <a class="tools-card" href={tool.href}>
@@ -37,7 +49,6 @@ const gamesPath = localPreview ? '/dev/games/' : '/games/';
         </li>)}
       </ul>
     </section>
-    <p class="tools-rule-note tools-planning">Hosting the evening? Use the <a href="/game-night-checklist/">free printable game-night checklist</a>, or put a <a href="/printable-game-night/">QR shortcut</a> on the table.</p>
   </div>
 </Layout>
 <style>
@@ -48,7 +59,6 @@ const gamesPath = localPreview ? '/dev/games/' : '/games/';
   .tools-intro h1 { margin-bottom:8px; }
   .tools-intro .lede { margin-bottom:0; }
   .tools-rule-note { margin:0 0 35px; padding:13px 17px; border-left:3px solid var(--green); border-radius:0 12px 12px 0; background:var(--soft); font-size:14px; }
-  .tools-planning { margin-top:30px; }
   .tools-section-heading { margin:0 0 14px; font-size:21px; }
   .tools-feature, .tools-card { color:var(--ink); text-decoration:none; background:var(--paper); border:1px solid var(--line); transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
   .tools-feature:hover, .tools-feature:focus-visible, .tools-card:hover, .tools-card:focus-visible { border-color:var(--green); box-shadow:0 10px 26px #2c233014; transform:translateY(-2px); }
