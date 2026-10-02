@@ -1,0 +1,65 @@
+---
+export type IllustrationKind = 'hero' | 'questions' | 'food' | 'animals' | 'travel' | 'dice' | 'score' | 'teams' | 'timer' | 'table-cards';
+interface Props { kind?: IllustrationKind; class?: string }
+const { kind = 'hero', class: className } = Astro.props;
+---
+<svg class:list={['tabletop-illustration', className]} viewBox="0 0 360 240" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  {kind === 'hero' && <>
+    <ellipse cx="183" cy="204" rx="151" ry="19" fill="#665271" opacity=".08" />
+    <g transform="rotate(-13 119 109)"><rect x="64" y="37" width="116" height="157" rx="13" fill="#d9c8aa" /><rect x="61" y="30" width="116" height="157" rx="13" fill="#fffaf0" stroke="#665271" stroke-width="2" /><rect x="72" y="42" width="94" height="133" rx="8" fill="#ecdcca" /><path d="M87 67h22m-11-11v22" stroke="#ad654e" stroke-width="3" stroke-linecap="round" /><path d="m96 133 13-29 18 4 23 37-49 5Z" fill="#ad654e" /><circle cx="121" cy="84" r="10" fill="#ad654e" /><path d="m117 111-17 20m29-18 13 21" stroke="#fffaf0" stroke-width="3" stroke-linecap="round" /></g>
+    <g transform="rotate(12 221 127)"><rect x="168" y="56" width="111" height="151" rx="13" fill="#c9bbce" /><rect x="168" y="48" width="111" height="151" rx="13" fill="#665271" stroke="#56435f" stroke-width="2" /><rect x="179" y="60" width="89" height="127" rx="8" fill="none" stroke="#bba6c2" stroke-width="1.5" /><path d="m224 90 10 23 25 3-19 17 5 25-22-13-22 13 5-25-19-17 25-3Z" fill="#e8c777" /><circle cx="187" cy="70" r="3" fill="#e8c777" /><circle cx="260" cy="177" r="3" fill="#e8c777" /></g>
+    <g transform="rotate(-8 84 183)"><rect x="43" y="152" width="69" height="66" rx="15" fill="#91a393" /><rect x="40" y="145" width="69" height="66" rx="15" fill="#b6c8ad" stroke="#718873" stroke-width="2" /><g fill="#4d6655"><circle cx="56" cy="162" r="4" /><circle cx="92" cy="162" r="4" /><circle cx="74" cy="178" r="4" /><circle cx="56" cy="195" r="4" /><circle cx="92" cy="195" r="4" /></g></g>
+    <g transform="rotate(10 298 173)"><path d="M273 188h45l-9-29h-27Z" fill="#c39154" /><path d="M268 184h50l-10-29h-30Z" fill="#e8c777" stroke="#b18d4d" stroke-width="2" /><circle cx="293" cy="135" r="16" fill="#e8c777" stroke="#b18d4d" stroke-width="2" /><path d="M284 156h18" stroke="#b18d4d" stroke-width="2" /></g>
+    <path d="m288 40 4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#ad654e" /><path d="m41 93 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#b6c8ad" /><path d="m322 93 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#e8c777" />
+  </>}
+  {kind === 'questions' && <>
+    <ellipse cx="179" cy="204" rx="114" ry="13" fill="#665271" opacity=".08" />
+    <g transform="rotate(-12 129 121)"><rect x="76" y="49" width="112" height="152" rx="15" fill="#d6b295" /><rect x="72" y="40" width="112" height="152" rx="15" fill="#e9cbb2" stroke="#ad654e" stroke-width="2" /><path d="M104 63h45M104 75h30" stroke="#ad654e" stroke-width="3" stroke-linecap="round" /><circle cx="111" cy="131" r="17" fill="#ad654e" /><path d="m99 152-13 20h52l-12-20Z" fill="#ad654e" /></g>
+    <g transform="rotate(11 225 120)"><rect x="175" y="53" width="101" height="142" rx="14" fill="#c8b8cf" /><rect x="175" y="45" width="101" height="142" rx="14" fill="#665271" /><path d="M210 97c0-12 31-18 31 1 0 12-16 13-16 25" fill="none" stroke="#fffaf0" stroke-width="7" stroke-linecap="round" /><circle cx="225" cy="140" r="4" fill="#fffaf0" /></g>
+    <path d="m291 57 4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#e8c777" />
+  </>}
+  {kind === 'food' && <>
+    <ellipse cx="181" cy="204" rx="112" ry="14" fill="#665271" opacity=".08" />
+    <ellipse cx="145" cy="190" rx="66" ry="14" fill="#d8c2b0" /><path d="M99 117h91v28c0 25-15 43-45 43s-46-18-46-43Z" fill="#ad654e" stroke="#8d513f" stroke-width="2" /><path d="M191 126h7c30 0 28 40-6 40" fill="none" stroke="#8d513f" stroke-width="9" /><ellipse cx="145" cy="116" rx="45" ry="11" fill="#e9cbb2" stroke="#8d513f" stroke-width="2" /><ellipse cx="145" cy="116" rx="33" ry="6" fill="#665271" />
+    <path d="M127 98c-17-18 12-25 0-43m25 43c-15-14 13-20 4-36" fill="none" stroke="#ad654e" stroke-width="3" stroke-linecap="round" opacity=".6" />
+    <g transform="rotate(10 252 145)"><path d="m212 183 39-99 40 99Z" fill="#d6b295" /><path d="m207 177 40-99 40 99Z" fill="#e8c777" stroke="#b18d4d" stroke-width="2" /><path d="M212 168h69" stroke="#ad654e" stroke-width="10" stroke-linecap="round" /><circle cx="247" cy="117" r="8" fill="#ad654e" /><circle cx="231" cy="148" r="8" fill="#ad654e" /><circle cx="262" cy="146" r="8" fill="#ad654e" /></g>
+  </>}
+  {kind === 'animals' && <>
+    <ellipse cx="180" cy="204" rx="110" ry="13" fill="#665271" opacity=".08" />
+    <path d="M103 161c-51-8-60 38-20 38h51" fill="none" stroke="#91a393" stroke-width="15" stroke-linecap="round" /><path d="M121 125c-34 24-26 78 27 78h47c39 0 47-51 19-75Z" fill="#b6c8ad" stroke="#718873" stroke-width="2" /><path d="m109 102 4-54 44 31m65 23-7-54-42 31" fill="#b6c8ad" stroke="#718873" stroke-width="2" stroke-linejoin="round" /><ellipse cx="165" cy="116" rx="58" ry="49" fill="#b6c8ad" stroke="#718873" stroke-width="2" /><path d="m122 76-3-15 17 13m54 0 17-13-1 16" fill="#e9cbb2" /><g fill="#4d6655"><circle cx="144" cy="111" r="4" /><circle cx="186" cy="111" r="4" /><path d="m159 126 6 5 6-5Z" /></g><path d="m126 125-26-5m26 13-29 2m107-10 26-5m-26 13 29 2m-67-4v8m-8 2 8-2 8 2" fill="none" stroke="#4d6655" stroke-width="2" stroke-linecap="round" /><circle cx="264" cy="169" r="24" fill="#e8c777" stroke="#b18d4d" stroke-width="2" /><path d="m244 169 39 0m-20-20c-13 13-13 26 0 40m5-39c13 13 13 25 0 38" fill="none" stroke="#b18d4d" stroke-width="2" />
+  </>}
+  {kind === 'travel' && <>
+    <ellipse cx="184" cy="204" rx="112" ry="13" fill="#665271" opacity=".08" />
+    <g transform="rotate(-9 146 138)"><path d="M132 78V65h36v13" fill="none" stroke="#665271" stroke-width="7" /><rect x="92" y="79" width="114" height="120" rx="15" fill="#d6b295" /><rect x="88" y="72" width="114" height="120" rx="15" fill="#e9cbb2" stroke="#ad654e" stroke-width="2" /><path d="M112 76v111m66-111v111" stroke="#ad654e" stroke-width="8" /><rect x="128" y="110" width="35" height="35" rx="4" fill="#b6c8ad" transform="rotate(12 145 127)" /><path d="m137 127 6 6 10-12" fill="none" stroke="#4d6655" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g>
+    <path d="M245 58c-32 0-48 25-40 49 7 21 40 55 40 55s33-34 40-55c8-24-8-49-40-49Z" fill="#665271" stroke="#56435f" stroke-width="2" /><circle cx="245" cy="99" r="17" fill="#fffaf0" /><path d="m245 188 9-9m4-10 5-9" fill="none" stroke="#ad654e" stroke-width="3" stroke-linecap="round" />
+  </>}
+  {kind === 'dice' && <>
+    <ellipse cx="180" cy="202" rx="115" ry="14" fill="#665271" opacity=".08" />
+    <g transform="rotate(-12 124 141)"><rect x="72" y="90" width="103" height="110" rx="22" fill="#91a393" /><rect x="69" y="80" width="103" height="110" rx="22" fill="#b6c8ad" stroke="#718873" stroke-width="2" /><g fill="#4d6655"><circle cx="94" cy="105" r="6" /><circle cx="147" cy="105" r="6" /><circle cx="120" cy="135" r="6" /><circle cx="94" cy="166" r="6" /><circle cx="147" cy="166" r="6" /></g></g>
+    <g transform="rotate(16 239 114)"><rect x="190" y="67" width="102" height="103" rx="22" fill="#c8b8cf" /><rect x="187" y="57" width="102" height="103" rx="22" fill="#665271" stroke="#56435f" stroke-width="2" /><g fill="#fffaf0"><circle cx="213" cy="83" r="6" /><circle cx="263" cy="83" r="6" /><circle cx="213" cy="134" r="6" /><circle cx="263" cy="134" r="6" /></g></g>
+  </>}
+  {kind === 'score' && <>
+    <ellipse cx="184" cy="206" rx="111" ry="12" fill="#665271" opacity=".08" />
+    <g transform="rotate(-8 172 125)"><rect x="104" y="39" width="136" height="173" rx="9" fill="#d6b295" /><rect x="99" y="30" width="136" height="173" rx="9" fill="#fffaf0" stroke="#ad654e" stroke-width="2" /><path d="M122 55h89m-89 37h89m-89 35h89m-89 35h89m-60-70v88m31-88v88" stroke="#d8c2b0" stroke-width="2" /><path d="m131 79 6 7 11-15m-16 45 5 6 11-14m-16 43 5 6 11-14" fill="none" stroke="#718873" stroke-width="3" stroke-linecap="round" /><path d="M165 80h9m-9 37h9m-9 33h9m17-70h9m-9 37h9m-9 33h9" stroke="#665271" stroke-width="3" stroke-linecap="round" /></g>
+    <g transform="rotate(26 273 138)"><path d="M264 69h15v113l-7 16-8-16Z" fill="#e8c777" stroke="#b18d4d" stroke-width="2" /><path d="m264 182 8 16 7-16Z" fill="#e9cbb2" /><path d="m269 192 3 6 3-6Z" fill="#665271" /><path d="M264 75h15" stroke="#ad654e" stroke-width="10" /></g>
+  </>}
+  {kind === 'teams' && <>
+    <ellipse cx="180" cy="199" rx="120" ry="14" fill="#665271" opacity=".08" />
+    <g fill="#b6c8ad" stroke="#718873" stroke-width="2"><path d="m65 177 16-48h37l16 48Z" /><circle cx="99" cy="105" r="24" /><path d="m127 191 16-48h37l16 48Z" /><circle cx="162" cy="119" r="24" /></g>
+    <g fill="#e9cbb2" stroke="#ad654e" stroke-width="2"><path d="m230 177 16-48h37l16 48Z" /><circle cx="264" cy="105" r="24" /><path d="m190 191 16-48h37l16 48Z" /><circle cx="225" cy="119" r="24" /></g>
+    <path d="m170 58 10-10 10 10m-10-10v30" fill="none" stroke="#665271" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </>}
+  {kind === 'timer' && <>
+    <ellipse cx="180" cy="205" rx="105" ry="13" fill="#665271" opacity=".08" />
+    <path d="M153 40h54m-45 5v9m35-9v9" stroke="#665271" stroke-width="8" stroke-linecap="round" /><circle cx="182" cy="132" r="76" fill="#c8b8cf" /><circle cx="178" cy="125" r="76" fill="#665271" stroke="#56435f" stroke-width="2" /><circle cx="178" cy="125" r="61" fill="#fffaf0" /><path d="M178 68v57l39 36" fill="#ecdcca" /><path d="M178 81v44l30 25" fill="none" stroke="#ad654e" stroke-width="5" stroke-linecap="round" /><circle cx="178" cy="125" r="6" fill="#665271" /><path d="M178 77v5m48 43h-5m-43 48v-5m-48-43h5" stroke="#665271" stroke-width="3" stroke-linecap="round" />
+  </>}
+  {kind === 'table-cards' && <>
+    <ellipse cx="180" cy="205" rx="125" ry="14" fill="#665271" opacity=".08" />
+    <path d="m210 53 72 145H108Z" fill="#91a393" stroke="#718873" stroke-width="2" /><path d="m126 48 84 5-36 145H75Z" fill="#fffaf0" stroke="#718873" stroke-width="2" /><path d="m122 71 59 4m-62 8 49 4" stroke="#665271" stroke-width="3" stroke-linecap="round" />
+    <g fill="#665271" transform="matrix(1 .065 -.23 .91 121 101)"><path d="M0 0h20v20H0Zm4 4v12h12V4ZM32 0h20v20H32Zm4 4v12h12V4ZM0 32h20v20H0Zm4 4v12h12V36Z" fill-rule="evenodd" /><path d="M25 0h4v9h-4Zm0 14h4v15h-4Zm-25 11h13v4H0Zm17 0h6v4h-6Zm15 0h8v4h-8Zm13 0h7v11h-7Zm-20 9h4v10h-4Zm9 0h7v6h-7Zm0 11h5v7h-5Zm11-5h7v4h-7Zm0 8h7v4h-7Z" /></g>
+    <g transform="rotate(10 281 173)"><rect x="253" y="151" width="55" height="53" rx="12" fill="#d6b295" /><rect x="250" y="144" width="55" height="53" rx="12" fill="#e9cbb2" stroke="#ad654e" stroke-width="2" /><g fill="#ad654e"><circle cx="264" cy="158" r="3.5" /><circle cx="290" cy="158" r="3.5" /><circle cx="277" cy="170" r="3.5" /><circle cx="264" cy="183" r="3.5" /><circle cx="290" cy="183" r="3.5" /></g></g>
+  </>}
+</svg>
+<style>
+  .tabletop-illustration { display:block; width:100%; height:auto; overflow:visible; }
+</style>

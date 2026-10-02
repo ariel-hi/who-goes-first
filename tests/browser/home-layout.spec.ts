@@ -70,7 +70,8 @@ test('comma-separated names work and shell cards follow the dark theme', async (
 test('home pairs the picker with rules on desktop and preserves the mobile stack', async ({ page }) => {
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Pick a starting player');
-  await expect(page.locator('#home-picker-heading')).toHaveClass(/sr-only/);
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+  await expect(page.locator('#home-picker-heading')).toHaveText('Your table');
   await expect(page.getByRole('navigation', { name: 'Footer' }).getByRole('link', { name: 'Coin flip' })).toHaveCount(0);
   await expect(page.locator('.picker-utilities').getByRole('button', { name: 'Share' })).toHaveCount(0);
   await expect(page.getByRole('group', { name: 'Share this page' })).toHaveCount(1);
@@ -97,6 +98,7 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   await expect(page.locator('input[name=presentation]')).toHaveCount(10);
   await expect(page.getByRole('button', { name: 'More methods' })).toHaveCount(0);
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
+  await page.screenshot({ path: test.info().outputPath('home-desktop.png'), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   await page.reload();
   const mobilePicker = await page.locator('.home-picker').boundingBox();
@@ -111,6 +113,7 @@ test('home pairs the picker with rules on desktop and preserves the mobile stack
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result');
   const winnerSize = await page.locator('.winner-announcement p').evaluate(element => parseFloat(getComputedStyle(element).fontSize));
   expect(winnerSize).toBeGreaterThanOrEqual(21);
+  expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag22aa']).analyze()).violations).toEqual([]);
   await page.screenshot({ path: test.info().outputPath('home-mobile.png'), fullPage: true });
 });
 

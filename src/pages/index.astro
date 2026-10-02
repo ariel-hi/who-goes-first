@@ -5,6 +5,7 @@ import RuleLookup from '../components/RuleLookup.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import HomeRandomRule from '../components/HomeRandomRule.astro';
 import HomeDiscovery from '../components/HomeDiscovery.astro';
+import TabletopIllustration from '../components/TabletopIllustration.astro';
 import '../styles/discovery.css';
 import { getCatalog } from '../lib/content/catalog';
 const balloonEnabled = process.env.DISABLE_BALLOON !== 'true';
@@ -17,14 +18,24 @@ const title = 'Who Goes First? Random First Player Picker';
 <Layout ads={false} title={title} description="Choose who goes first in your board game. A free, fair random picker for 2–50 players, with names or numbered seats. No account or download needed.">
   <div class="tool-page home-page">
     <noscript><p class="noscript">Enable JavaScript to pick a player on your device. You can still browse the static rules and fairness pages.</p></noscript>
+    <div class="home-intro">
+      <div class="home-intro-copy">
+        <span class="eyebrow">GAME NIGHT STARTS HERE</span>
+        <h1 id="home-heading">Pick a starting <em>player</em></h1>
+        <p>A little suspense. A fair first turn.</p>
+        <span class="home-intro-note">Free for 2–50 players. No account, no download.</span>
+      </div>
+      <div class="home-intro-picture"><TabletopIllustration kind="hero" class="home-intro-art" /></div>
+    </div>
     <div class="home-layout">
       <section class="home-picker" aria-labelledby="home-picker-heading">
-        <h1 id="home-picker-heading" class="sr-only">Pick a starting player</h1>
+        <div class="home-tool-heading"><h2 id="home-picker-heading">Your table</h2><span>Everyone gets an equal chance</span></div>
         <PickerShell balloonEnabled={balloonEnabled} shareInPicker={false} />
       </section>
       <section class="home-rules" aria-labelledby="home-rules-heading">
+        <span class="eyebrow">THE RULEBOOK ROUTE</span>
         <h2 id="home-rules-heading">Playing a specific game?</h2>
-        <p>Many rulebooks say who starts. Look it up, straight from the publisher’s rules.</p>
+        <p>Find who starts, straight from the publisher’s rules.</p>
         {approved.length > 0 && <RuleLookup ruleCount={approved.length} />}
         {quickRules.length > 0 && <nav class="home-quick-rules" aria-label="Quick game rules"><span>Go straight to a rule:</span><ul>{quickRules.map(rule => <li><a href={`/games/${rule.slug}/`}>{rule.gameName}</a></li>)}</ul></nav>}
         <HomeRandomRule games={approved} />
@@ -32,9 +43,9 @@ const title = 'Who Goes First? Random First Player Picker';
           <li><a href="/house-rules/">Fun questions</a></li>
           <li><a href="/choose-who-goes-first/">How to choose who starts</a></li>
         </ul>
-        <SocialLinks kind="picker" title={title} />
       </section>
     </div>
+    <div class="home-share"><span>A good start is worth sharing.</span><SocialLinks kind="picker" title={title} /></div>
     <HomeDiscovery games={approved} />
   </div>
 </Layout>

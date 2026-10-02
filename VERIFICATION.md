@@ -1,4 +1,14 @@
-# Local verification — updated 2026-09-27 UTC
+# Local verification — updated 2026-10-02
+
+## Homepage visual polish — 2026-10-02
+
+Added a visible opening headline, original tabletop SVG illustrations, a wider picker, a quieter rulebook sidebar, and illustrated discovery sections. The sourced rules, editions, tool links, and picker behavior remain intact. Desktop and mobile full-page renders and the dark layout were visually reviewed; the mobile opening keeps the picker action within the first screen.
+
+Type checking passed with 292 files and zero diagnostics; lint passed. All 267 unit tests passed on the complete rerun (the first run had one 20-second catalog-test timeout). Content validation and the build passed for 1,339 approved game rules, 410 portable criteria, and 60 prompts. The artifact audit checked 1,550 pages and 44,000 internal links, exact canonicals, metadata, structured data, sitemap parity, security headers, and private-content exclusion. Conservative gzip estimates were 116,536 B initial JavaScript and 155,751 B basic home. The complete release matrix passed, including preview, empty and populated production, growth settings, disabled Balloon, and invalid configuration rejection.
+
+The six affected browser files ran 234 cases across Chromium, Firefox, and WebKit: 228 passed, three production-only sharing cases were skipped by the preview build, and three WebKit interactions timed out. Their original traces are preserved in `test-results/`: CJK loading feedback, delayed More methods focus, and the 1,366px reduced-motion large named group. The traces stop in click actionability or dispatch; their cause is not established. A fresh isolated WebKit run passed seven unchanged cases (all six loading/focus cases and the failed large-group case) in 1.1 minutes, retaining normal clicks, assertions, deadlines, and zero retries. Evidence is in `artifacts/design-polish/webkit-recheck/`. The desktop/mobile/dark homepage geometry, keyboard navigation, picker modes, privacy, no-JavaScript fallback, reduced motion, and light/dark axe checks passed in the affected run.
+
+Fresh Lighthouse reports for the local production fixture passed all seven gates: homepage mobile performance 100/100/99, homepage desktop 100, Balloon 99, directory 100, and rule page 100; all accessibility, best-practices, and SEO scores were 100. All seven measured layout shifts were zero. Reports are in `artifacts/lighthouse/`; these are simulated local measurements, not field data. Live deployment and hosted CI are verified against the pushed revision separately.
 
 ## First real publisher identities and five English answers — 2026-09-27 UTC
 
