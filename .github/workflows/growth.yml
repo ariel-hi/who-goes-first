@@ -1,10 +1,10 @@
 name: Growth automation
-# Schedules run only from the default branch. Each job skips itself cleanly
-# when its secrets are not configured yet.
+# Schedules run from the default branch. The publisher requires credentials;
+# optional reporting jobs skip cleanly when Google access is not configured.
 on:
   schedule:
-    - cron: '17 15 * * *' # daily rule of the day (15:17 UTC)
-    - cron: '41 6 * * 1'  # weekly search demand + report (Mondays)
+    - cron: '17 15 * * *' # daily discovery campaign (15:17 UTC)
+    - cron: '41 6 * * 1,4' # search opportunities + report (Mondays and Thursdays)
     - cron: '29 11 * * *' # daily Search Console indexing upkeep
   workflow_dispatch:
     inputs:
@@ -39,7 +39,7 @@ jobs:
       - run: npm ci
       - run: npx tsx scripts/post-rule.ts
   weekly:
-    if: github.event.schedule == '41 6 * * 1' || inputs.task == 'weekly'
+    if: github.event.schedule == '41 6 * * 1,4' || inputs.task == 'weekly'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:

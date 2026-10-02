@@ -3,6 +3,8 @@ import { getBoardGames } from '../src/lib/content/board-games';
 import { getCatalog } from '../src/lib/content/catalog';
 import { analyticsAcquisition, analyticsAffiliateOpens, analyticsCountryTraffic, analyticsTotals, daysAgo, googleAccessToken, searchAnalytics, type AnalyticsTotals, type SearchRow } from './lib/google-api';
 import { rankDemand } from './lib/demand';
+import { searchOpportunities } from './lib/search-opportunities';
+import { sitemapEntries } from '../src/lib/sitemap';
 import { adNetworkReadiness } from './lib/ad-network-readiness';
 import { ga4TrafficMetrics } from './lib/growth-report';
 import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCountryTraffic } from './lib/country-traffic';
@@ -35,6 +37,7 @@ const [queries, pages, thisWeek, lastWeek] = await Promise.all([
 ]);
 const games = getBoardGames().map(game => ({ identityId: game.identityId, name: game.name, ...(game.bggId ? { bggId: game.bggId } : {}), hasRule: game.rules.length > 0 }));
 const demand = rankDemand(queries, pages, games, origin);
+const opportunities = searchOpportunities(pages, origin, new Set(Object.values(sitemapEntries()).flat().map(entry => entry.path)));
 const sum = (rows: SearchRow[]) => rows.reduce((total, row) => ({ clicks: total.clicks + row.clicks, impressions: total.impressions + row.impressions }), { clicks: 0, impressions: 0 });
 const weekNow = sum(thisWeek); const weekBefore = sum(lastWeek);
 const indexing = await indexingSnapshot(token, property, origin);
@@ -63,6 +66,7 @@ if (gaProperty) {
 }
 
 mkdirSync('research/demand', { recursive: true });
+writeFileSync('research/demand/search-opportunities.json', `${JSON.stringify({ generatedAt: new Date().toISOString(), property, window: window28, note: 'Observed page demand, not a forecast. Watch rows need more data before changing copy.', opportunities }, null, 2)}\n`);
 if (traffic) writeFileSync('research/demand/traffic-metrics.json', `${JSON.stringify(ga4TrafficMetrics(trafficWindow.start, trafficWindow.end, traffic.sessions, traffic.screenPageViews), null, 2)}\n`);
 const countrySnapshot = country ?? {
   status: 'unavailable', periodStart: trafficWindow.start, periodEnd: trafficWindow.end,
@@ -118,6 +122,9 @@ ${topQueries.map(row => `- “${row.keys[0]}” — ${row.clicks} clicks, ${row.
 
 ## Top pages (28 days)
 ${topPages.map(row => `- ${row.keys[0]!.replace(origin, '') || '/'} — ${row.clicks} clicks, ${row.impressions} impressions`).join('\n') || '—'}
+
+## Discovery improvement queue (tools, guides and rules)
+${opportunities.map(row => `- ${row.readiness === 'experiment' ? 'Ready to investigate' : 'Watch'}: ${row.path} — ${row.impressions} impressions, ${row.clicks} clicks, ${pct(row.ctr)} CTR, position ${row.position.toFixed(1)}. ${row.action}`).join('\n') || 'No eligible low-click pages with at least five impressions. Keep collecting evidence.'}
 `;
 writeFileSync('research/demand/weekly-report.md', report);
 if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);

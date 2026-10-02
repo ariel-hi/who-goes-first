@@ -1,29 +1,41 @@
-# Efficient growth operations
+# Automated growth operations
 
-Use the existing **Who Goes First growth follow-up** daily at 10am. Its first step is `node node_modules/tsx/dist/cli.mjs scripts/growth-check.ts` from the repository root using the existing Node runtime. On this Windows checkout the pinned runtime can be used directly: `& ./node_modules/node/bin/node.exe ./node_modules/tsx/dist/cli.mjs scripts/growth-check.ts`. This avoids npm package resolution on scheduled runs. The script uses seven parallel, bounded public requests and writes a short report to `artifacts/growth/report.md` plus structured results to `report.json`. No extra services or dependencies are needed. Existing CI already performs the full release checks when code changes; do not repeat that suite on unchanged daily runs.
+Updated October 1, 2026 (Pacific). The owner asked Codex to take charge of automated growth and deploy verified improvements immediately. This replaces the older draft-only growth instructions. Partnership outreach is secondary.
 
-## Daily gate
+## Publishing that runs without the desktop
 
-Read the short result and local state first. Diagnose newly observed HTTP, canonical, robots, sitemap, or RSS failures. Confirm a failure once before making a change; a transient timeout is not evidence of a broken site. Repeated failures need a new action or external change, not repeated notifications. A reachable sitemap does not establish Search Console acceptance or indexing. A reachable feed does not establish a claimed Pinterest account. These checks do not exercise the picker; use existing browser tests when implementation changes or a user reports a functional problem.
+- `.github/workflows/pinterest.yml` releases five queued Pins per UTC day through the existing claimed-domain RSS connection to @whogoesfirst. `scripts/release-pins.ts` keeps a unique ledger, catches overdue items after a missed run and avoids rerun commits. Existing Pin GUIDs and release dates must remain stable. A feed release is not proof of Pinterest publication.
+- `.github/workflows/growth.yml` runs one original Bluesky campaign daily at 15:17 UTC using the existing account secrets. The weekly mix is three sourced starting rules, three practical tools and one Friday hosting guide. Only reviewed portable rules are eligible. `scripts/lib/bluesky-publisher.ts` checks earlier site posts, uses a dated repository key and a commit guard, requires a live destination and image, and verifies the saved record. Failed preflights and uncertain writes are not blindly retried. Missing credentials fail visibly rather than pretending publication succeeded. The cap uses the Pacific calendar.
+- The same growth workflow refreshes Google Search Console demand and consented GA4 acquisition on Mondays and Thursdays at 06:41 UTC. Daily indexing upkeep continues at 11:29 UTC. Existing keyless Google authentication is configured. Inspect actual job results before treating data as available; a schedule is not proof a job ran.
+- `research/demand/search-opportunities.json` ranks observed low-click tools, guides and rule pages. Rows under 50 impressions stay in watch; use actual supporting query evidence before changing copy. The queue excludes unlisted, private and noncanonical paths. No mass generation of thin search pages.
+- Keep all Bluesky URLs clean: no UTM or other tracking parameters. Pinterest retains its existing fixed campaigns. No new visitor tracking was added.
 
-If nothing changed and the weekly review is not due, stop. Avoid broad browsing, repeated screenshot capture, full catalog research, and speculative redesign. Preserve other tasks' edits; prepare one scoped local improvement only when evidence supports it.
+## Daily autonomous work
 
-## Weekly review
+The existing Who Goes First automated growth heartbeat runs at 10am Pacific. Read the small state and run:
 
-Start with `research/demand/search-console.json` when the Monday growth workflow has produced it. Research `missingRules` in ranked order before other inventory games; verify names in `unmatchedQueries` before treating them as new identities; use `lowClickPages` to improve page titles and descriptions. Demand sets priority only. Primary sources and the exact-revision review in `CONTENT_REVIEW.md` remain required for every rule.
+```powershell
+& ./node_modules/node/bin/node.exe ./node_modules/tsx/dist/cli.mjs scripts/growth-check.ts
+```
 
-Review available Search Console, consented GA4, channel, and actual cost/revenue evidence. Select at most one measurable experiment: a high-demand rule page, a rule-to-picker journey improvement, a useful distribution asset, or a relevant channel test. Write its hypothesis, baseline, measure, time cost, and evaluation date to `artifacts/growth/experiments.md`. Missing baselines are explicit limitations. Keep an experiment pending until it has useful evidence; do not create a replacement every week because results are unavailable.
+The checker makes bounded public requests and writes `artifacts/growth/report.json` and `report.md`. Do not install packages or run the full suite on unchanged checks. Confirm a new failure once before repairing it. Implement supported fixes, run the necessary verification, deploy immediately and verify the actual live release. Do not stop at a draft or another plan. Preserve concurrent work and stage only this task's files.
 
-After completing a review, set `weeklyReviewAt` in `artifacts/growth/state.json` to the current ISO timestamp, preserving its fingerprint. The checker never marks the review done just because it ran. If access is unavailable, record that once, use the available evidence, and finish the review without inventing metrics. Stay quiet until there is a material finding, completed improvement, failure, or required action.
+Check the latest publisher job receipts when delivery changes or a run fails. Never claim that an HTTP check, a green workflow or a feed item proves indexing, reach or traffic. Use the actual Pinterest profile and the saved Bluesky URL to verify delivery. Do not rerun unchanged sitemap submissions repeatedly.
 
-## Metrics input
+## Weekly improvement and queue maintenance
 
-No Analytics or Search Console API is connected in this setup. Account reporting must come from an accessible authenticated account, a connected read-only API, or a real export. Normalize aggregate values to `artifacts/growth/metrics.json` using `marketing/metrics.example.json` as the schema. Keep all metrics and experiment evidence under the ignored artifacts directory. Never copy the example as if it were observed data. Use `null` for unknown values and `0` only for an observed zero. Dates, traffic, revenue, and costs must cover the same period. Cash costs should include attributable tools, advertising, hosting, and other operating expenses; valued labor is separate. Document any allocation limitation in the experiment record.
+Use the twice-weekly report once per seven days for a focused improvement review. If the report is stale, dispatch the existing weekly workflow once and inspect the completed output. Read the search opportunity queue, ranked rule demand and acquisition snapshot. A consented GA4 session is an observation, not a verified human visitor; platform impressions and Pin clicks are not website outbound clicks.
 
-GA4 consented sessions are a sample. Set scope to `consented-sessions`; the report deliberately does not divide whole-site revenue by that sample to claim unit economics. Use `all-sessions` only with a defensible total-session measure for the same period. Snapshots older than 14 days are marked stale. Cash contribution is before valued labor and tax; contribution after labor is still before tax. These are observations, not forecasts or a paid-acquisition budget.
+Choose one supported improvement to an existing page or one reviewed distribution creative. Record the hypothesis, baseline, time cost, metric and evaluation date in `artifacts/growth/experiments.md`. Preserve the October 15 discovery review in `marketing/DISCOVERY_EXPERIMENT.md`. Keep an experiment pending until its review date or meaningful evidence arrives. Do not repeatedly rewrite low-sample pages or start replacement experiments merely because data is absent.
 
-## Account and business actions
+Check the final date in the Pinterest queue. With fewer than 14 days remaining, append a small reviewed batch of distinct, useful campaigns toward 28 days of coverage. Keep the original IDs and dates stable. Review copy, factual claims, destination and rendered artwork before making it eligible for release. Do not dump the full catalog into the feed, reuse the same creative with a new ID merely to repost, or publish unverified rule claims. Use existing build auditing and relevant tests for a release.
 
-Prepare factual Pins, social drafts, partner prospect lists, QR/table assets, sponsorship proposals, and experiment changes locally. Publish, send outreach, deploy, add telemetry, activate monetization, or spend only when the existing user authorization covers that specific action. Do not infer outreach authorization from general automation setup. Existing pageview-only consent and privacy behavior remain the active measurement policy.
+After a completed review, update `weeklyReviewAt` in `artifacts/growth/state.json`, preserving its fingerprint. Record missing access or metrics as unavailable. Stay quiet when nothing actionable changes; notify only for a meaningful finding, completed improvement, verified failure or required user action. Report a repeated unchanged blocker once.
 
-Local scheduled runs need the computer on and the desktop app running. Keep this single follow-up rather than adding overlapping daily agents. Prefer existing RSS and CI mechanisms for repetitive work; use the scheduled agent for interpretation and one evidence-backed improvement.
+## Coordination and authorization
+
+The existing twice-daily Bluesky community routine handles useful replies and notifications. It must not publish extra originals: GitHub owns the daily original campaign. The existing automation review may make one evidence-backed routine adjustment while preserving this division and existing schedules. Keep conversations natural and end completed exchanges. No stock comments, bulk replies or unsolicited direct messages.
+
+The owner has authorized routine growth work, existing-account publishing, verification and immediate deployment. This does not create a spending budget or permission for new accounts, accepting new terms, broad email batches, additional telemetry or monetization changes. Preserve current consent and privacy behavior. Use only the existing Who Goes First accounts.
+
+The GitHub publishers and reports run in the cloud. Codex interpretation, community replies and autonomous edits need the computer on and the desktop app running. Reuse these existing automations; do not add overlapping daily agents.

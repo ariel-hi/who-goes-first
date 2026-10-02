@@ -5,6 +5,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: pinterest-release
+  cancel-in-progress: false
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -21,8 +24,7 @@ jobs:
       # GITHUB_TOKEN do not start the CI workflow.
       - name: Record today's Pins
         run: |
-          mkdir -p research/pinterest
-          npx tsx -e "import { releasedPins } from './src/lib/pinterest-pins'; const today = new Date().toISOString().slice(0, 10); for (const pin of releasedPins().filter(pin => pin.date === today)) console.log(today + ' ' + pin.id);" >> research/pinterest/released.txt
+          npx tsx scripts/release-pins.ts
           git add research/pinterest
           if git diff --cached --quiet; then echo "No Pins due today."; exit 0; fi
           git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Release today's Pinterest Pins"

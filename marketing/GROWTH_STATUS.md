@@ -1,5 +1,16 @@
 # Growth launch status
 
+## Automated acquisition configuration (2026-10-01 Pacific)
+
+The owner asked Codex to take charge of automated distribution and improvements. Partnerships are secondary; no additional email batch is part of this change. `marketing/AUTOMATION.md` is the current operating procedure; older account-choice and credential blockers below are historical.
+
+- GitHub repository secrets for the existing Bluesky handle and app password were confirmed on October 1. Earlier cloud runs 36883711277 and 36885091736 successfully published sourced rules. The new publisher mixes useful tools, sourced rules and hosting guides, caps originals at one per Pacific day, and uses a stable TID and commit guard to protect reruns. It checks live pages/images and verifies saved posts.
+- Pinterest @whogoesfirst visibly published the five October 1 queued rules: CATAN, Ticket to Ride, UNO, Carcassonne and Monopoly. Example: [CATAN Pin](https://www.pinterest.com/pin/1093319247090590651/). Its analytics panel showed five impressions and zero outbound clicks for September 2–October 2 when checked October 1 Pacific. This is a small platform estimate, not evidence of acquired human visitors. Pin clicks and outbound clicks are different metrics.
+- The existing queue has 114 dated campaigns through October 23 at five per UTC day. No published Pin IDs or dates were changed. The release ledger now removes duplicate lines, catches overdue items and leaves a repeated run unchanged.
+- Search demand and consented acquisition reporting are configured for Mondays and Thursdays. The new improvement queue covers tools and guides as well as rules; small samples stay in watch.
+- Three existing Codex routines were updated in place and confirmed ACTIVE: daily autonomous growth at 10am, community replies at 9am/5pm, and routine review at 11am/7pm. GitHub owns original social posts so the community routine does not duplicate them. Growth work now includes verified deployment and reviewed queue replenishment, with meaningful-change notifications.
+- GitHub publishing and reporting run in the cloud. Interpretation, community replies and autonomous site edits need this computer and the desktop app running. Existing consent, clean Bluesky links and the October 15 discovery review are preserved.
+
 ## Overnight growth push (2026-09-30 → 2026-10-01 UTC)
 
 The owner asked for an overnight push on visibility and discovery, which supersedes the earlier pause on new utility pages below.
