@@ -1,12 +1,33 @@
 {
-  "generatedAt": "2026-09-28T20:23:13.023Z",
+  "generatedAt": "2026-10-02T04:18:05.075Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-08-29",
-    "end": "2026-09-25"
+    "start": "2026-09-02",
+    "end": "2026-09-29"
   },
   "note": "Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.",
   "missingRules": [],
-  "unmatchedQueries": [],
-  "lowClickPages": []
+  "unmatchedQueries": [
+    {
+      "query": "first player picker",
+      "impressions": 7
+    },
+    {
+      "query": "which goes first",
+      "impressions": 2
+    },
+    {
+      "query": "who goes first",
+      "impressions": 2
+    }
+  ],
+  "lowClickPages": [
+    {
+      "page": "/games/star-wars-rebellion-ffg-en/",
+      "impressions": 160,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6.8
+    }
+  ]
 }

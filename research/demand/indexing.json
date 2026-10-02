@@ -1,13 +1,40 @@
 {
-  "generatedAt": "2026-09-28T20:23:12.147Z",
+  "generatedAt": "2026-10-02T04:18:03.824Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Sitemaps and URL Inspection APIs",
   "scope": "Six named URLs in Google’s index; URL Inspection does not test the current live page or prove site-wide indexing.",
   "sitemapsStatus": "available",
   "submittedSitemaps": [
     {
-      "path": "https://whogoesfirst.fun/sitemap-index.xml",
-      "lastSubmitted": "2026-09-27T23:27:43.006Z",
+      "path": "https://whogoesfirst.fun/sitemaps/board-games.xml",
+      "lastSubmitted": "2026-10-01T07:56:21.539Z",
+      "lastDownloaded": null,
+      "isPending": true,
+      "errors": 0,
+      "warnings": 0,
+      "submittedUrls": null
+    },
+    {
+      "path": "https://whogoesfirst.fun/sitemaps/hubs.xml",
+      "lastSubmitted": "2026-10-01T07:55:53.501Z",
+      "lastDownloaded": null,
+      "isPending": true,
+      "errors": 0,
+      "warnings": 0,
+      "submittedUrls": null
+    },
+    {
+      "path": "https://whogoesfirst.fun/sitemaps/pages.xml",
+      "lastSubmitted": "2026-10-01T07:54:46.466Z",
+      "lastDownloaded": null,
+      "isPending": true,
+      "errors": 0,
+      "warnings": 0,
+      "submittedUrls": null
+    },
+    {
+      "path": "https://whogoesfirst.fun/sitemaps/rules.xml",
+      "lastSubmitted": "2026-10-01T07:52:28.455Z",
       "lastDownloaded": null,
       "isPending": true,
       "errors": 0,
@@ -16,7 +43,16 @@
     },
     {
       "path": "https://whogoesfirst.fun/sitemap.xml",
-      "lastSubmitted": "2026-09-27T02:59:36.079Z",
+      "lastSubmitted": "2026-09-29T00:18:27.605Z",
+      "lastDownloaded": null,
+      "isPending": true,
+      "errors": 0,
+      "warnings": 0,
+      "submittedUrls": null
+    },
+    {
+      "path": "https://whogoesfirst.fun/sitemap-index.xml",
+      "lastSubmitted": "2026-09-29T00:18:10.160Z",
       "lastDownloaded": null,
       "isPending": true,
       "errors": 0,
@@ -33,7 +69,7 @@
       "robotsTxtState": "ALLOWED",
       "indexingState": "INDEXING_ALLOWED",
       "pageFetchState": "SUCCESSFUL",
-      "lastCrawlTime": "2026-09-28T14:53:02Z",
+      "lastCrawlTime": "2026-10-02T02:43:46Z",
       "googleCanonical": "https://whogoesfirst.fun/",
       "userCanonical": "https://whogoesfirst.fun/",
       "knownSitemaps": []
@@ -54,21 +90,27 @@
     {
       "path": "/board-games/",
       "status": "available",
-      "verdict": "NEUTRAL",
-      "coverageState": "URL is unknown to Google",
-      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "indexingState": "INDEXING_STATE_UNSPECIFIED",
-      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-10-01T08:06:24Z",
+      "googleCanonical": "https://whogoesfirst.fun/board-games/",
+      "userCanonical": "https://whogoesfirst.fun/board-games/",
       "knownSitemaps": []
     },
     {
       "path": "/games/catan-2020-en/",
       "status": "available",
-      "verdict": "NEUTRAL",
-      "coverageState": "URL is unknown to Google",
-      "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-      "indexingState": "INDEXING_STATE_UNSPECIFIED",
-      "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+      "verdict": "PASS",
+      "coverageState": "Submitted and indexed",
+      "robotsTxtState": "ALLOWED",
+      "indexingState": "INDEXING_ALLOWED",
+      "pageFetchState": "SUCCESSFUL",
+      "lastCrawlTime": "2026-10-01T08:08:27Z",
+      "googleCanonical": "https://whogoesfirst.fun/games/catan-2020-en/",
+      "userCanonical": "https://whogoesfirst.fun/games/catan-2020-en/",
       "knownSitemaps": []
     },
     {
