@@ -23,30 +23,29 @@ The Search Console API does not provide the Sitemaps report's fetch label. Zero 
 
 This checks six named URLs in Google's indexed data, not the current live pages or the full site.
 
-## Traffic (GA4, last 30 days)
-- Sessions: **1,864** · Screen/page views: **3,248** · Users: 1,825
-- Screen/page views per session: 1.74
-- Named US/CA/GB/AU subtotal: 1,856 sessions. Five-country US/CA/GB/AU/NZ subtotal: 3,239 screen/page views. These are GA4 observations, not ad-network qualification.
+## Traffic (GA4, 2026-09-28 through 2026-09-30)
+- Sessions: **60** · Screen/page views: **140** · Users: 55
+- Screen/page views per session: 2.33
+
+The live-hostname measurement guard began on 2026-09-28; known CI contamination from earlier dates is excluded. The rollout day is partial and may include events from before the guard. This is a 3-day observation, not a complete 30-day comparison. These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic. Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
+- Named US/CA/GB/AU subtotal: 55 sessions. Five-country US/CA/GB/AU/NZ subtotal: 134 screen/page views. These are GA4 observations, not ad-network qualification.
 
 
 ## Traffic acquisition (GA4)
-- Direct: 1,852 reported row sessions, 496 engaged row sessions.
-- Organic Search: 7 reported row sessions, 6 engaged row sessions.
-- Unassigned: 6 reported row sessions, 0 engaged row sessions.
-- Referral: 5 reported row sessions, 3 engaged row sessions.
-- Cross-network: 1 reported row sessions, 0 engaged row sessions.
+- Direct: 55 reported row sessions (91.7% of GA4 sessions), 11 engaged row sessions.
+- Referral: 3 reported row sessions (5.0% of GA4 sessions), 2 engaged row sessions.
+- Organic Search: 2 reported row sessions (3.3% of GA4 sessions), 2 engaged row sessions.
 
 Top source / medium pairs:
-- \(direct\) / \(none\) (Direct): 1,852 reported row sessions.
-- google / organic (Organic Search): 7 reported row sessions.
-- \(not set\) (Unassigned): 6 reported row sessions.
-- go\.bsky\.app / referral (Referral): 3 reported row sessions.
-- bsky\.app / referral (Referral): 2 reported row sessions.
+- \(direct\) / \(none\) (Direct): 55 reported row sessions.
+- go\.bsky\.app / referral (Referral): 2 reported row sessions.
+- google / organic (Organic Search): 2 reported row sessions.
+- bsky\.app / referral (Referral): 1 reported row sessions.
 
-Dimension rows sum to 1,871, which is 7 above the undimensioned 1,864 sessions. Do not add row counts or interpret them as unique-session shares. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
+Dimension rows reconcile with the undimensioned 60 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
 ## Affiliate link opens (GA4)
-- Amazon link opens: **1** reported events (2026-09-28 through 2026-10-01).
+- Amazon link opens: **1** reported events (2026-09-28 through 2026-09-30).
 
 Measurement began on 2026-09-28; that first day is partial. Analytics choices can suppress events. Opens are not verified purchases, commissions, or revenue.
 
@@ -55,13 +54,15 @@ Official policies checked 2026-09-28; confirm current requirements before an app
 
 | Network | Published minimum | Available observation | Status / unassessed requirements |
 | --- | --- | --- | --- |
-| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 1,864 total sessions; 1,856 sessions from US/CA/GB/AU (99.6% of GA4 sessions); full Tier 1 set unmeasured | Four named countries measured; complete Tier 1 count and eligibility unassessed. Grow, original content, content quality and traffic standards unassessed. |
-| Raptive | 25,000 monthly pageviews within 30 days | 3,248 GA4 screenPageViews; 3,239 screen/page views from US/CA/GB/AU/NZ (99.7% of GA4 views) | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
+| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | Unknown total sessions; Tier 1 sessions unknown | Unknown — Tier 1 sessions not collected. Grow, original content, content quality and traffic standards unassessed. |
+| Raptive | 25,000 monthly pageviews within 30 days | Unknown GA4 screenPageViews; qualifying-country share unknown | Unknown — GA4 totals unavailable. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
 | Mediavine | $5,000 annual ad revenue | Unknown — annual ad revenue not collected | Unknown. Original content, clean human brand-safe traffic, Google AdSense/AdExchange standing and advertising-compatible reader experience unassessed. |
 
-GA4 screenPageViews combines screen and page views; confirm website pageviews for Raptive. The country report shows 0 sessions outside the returned country rows. No annual ad-revenue evidence is supplied by this job. Mediavine's 2026 publisher programs use prior-calendar-year ad revenue; monthly traffic is not a substitute.
+GA4 screenPageViews combines screen and page views; confirm website pageviews for Raptive. No country report was available. No annual ad-revenue evidence is supplied by this job. Mediavine's 2026 publisher programs use prior-calendar-year ad revenue; monthly traffic is not a substitute.
 
 Sources: [Mediavine and Journey requirements](https://www.mediavine.com/mediavine-requirements/), [Mediavine 2026 programs](https://help.mediavine.com/programs-and-the-publisher-path-to-growth), [Raptive Analytics requirements](https://help.raptive.com/hc/en-us/articles/6681661647515-Applying-to-Raptive-with-Google-Analytics), [Raptive full requirements](https://help.raptive.com/hc/en-us/articles/360032840891-Who-is-eligible-for-Raptive).
+
+A full 30-day GA4 comparison is unavailable until the measurement guard covers 30 reporting days. The 3-day observation above is excluded from the qualification comparison.
 
 ## Research queue (last 28 days)
 No starting-rule searches for games without a sourced rule yet.

@@ -1,79 +1,57 @@
 {
   "status": "available",
-  "periodStart": "2026-09-02",
-  "periodEnd": "2026-10-01",
+  "periodStart": "2026-09-28",
+  "periodEnd": "2026-09-30",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 1864,
-  "rowSessions": 1871,
-  "rowTotalDifference": 7,
+  "totalSessions": 60,
+  "rowSessions": 60,
+  "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 6,
+  "rowCount": 4,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 1852,
-      "engagedSessions": 496
-    },
-    {
-      "name": "Organic Search",
-      "sessions": 7,
-      "engagedSessions": 6
-    },
-    {
-      "name": "Unassigned",
-      "sessions": 6,
-      "engagedSessions": 0
+      "sessions": 55,
+      "engagedSessions": 11
     },
     {
       "name": "Referral",
-      "sessions": 5,
-      "engagedSessions": 3
+      "sessions": 3,
+      "engagedSessions": 2
     },
     {
-      "name": "Cross-network",
-      "sessions": 1,
-      "engagedSessions": 0
+      "name": "Organic Search",
+      "sessions": 2,
+      "engagedSessions": 2
     }
   ],
   "topSources": [
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 1852,
-      "engagedSessions": 496
-    },
-    {
-      "name": "google / organic",
-      "channel": "Organic Search",
-      "sessions": 7,
-      "engagedSessions": 6
-    },
-    {
-      "name": "(not set)",
-      "channel": "Unassigned",
-      "sessions": 6,
-      "engagedSessions": 0
+      "sessions": 55,
+      "engagedSessions": 11
     },
     {
       "name": "go.bsky.app / referral",
       "channel": "Referral",
-      "sessions": 3,
+      "sessions": 2,
       "engagedSessions": 1
     },
     {
-      "name": "bsky.app / referral",
-      "channel": "Referral",
+      "name": "google / organic",
+      "channel": "Organic Search",
       "sessions": 2,
       "engagedSessions": 2
     },
     {
-      "name": "(data not available)",
-      "channel": "Cross-network",
+      "name": "bsky.app / referral",
+      "channel": "Referral",
       "sessions": 1,
-      "engagedSessions": 0
+      "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-10-02T04:18:05.075Z"
+  "generatedAt": "2026-10-02T05:52:28.133Z"
 }
