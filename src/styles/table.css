@@ -387,7 +387,9 @@
     animation:balloon-land .32s ease-out both, filter-glimmer 2.4s .32s ease-in-out both, balloon-win .9s cubic-bezier(.2,.8,.3,1) both;
   }
   /* The chosen piece lifts once when the reveal lands. */
-  .table-reveal[data-settled=true] .reveal-chosen, .spinner-stage[data-settled=true] .spinner-disc { animation:win-pop .5s cubic-bezier(.2,.8,.3,1.3) both; }
+  .table-reveal[data-settled=true] .reveal-chosen { animation:win-pop .5s cubic-bezier(.2,.8,.3,1.3) both; }
+  .spinner-stage[data-settled=true] .spinner-winner { transform-box:view-box; transform-origin:140px 140px; animation:slice-pop .5s cubic-bezier(.2,.8,.3,1.3) both; }
+  @keyframes slice-pop { from { transform:none; } 45% { transform:translate(var(--pop-x),var(--pop-y)) scale(1.06); } to { transform:none; } }
   @keyframes win-pop { from { transform:none; } 45% { transform:translateY(-6px) scale(1.1); } to { transform:none; } }
   @keyframes balloon-win { from { translate:0; scale:1; } 55% { translate:0 -16px; scale:1.12; } to { translate:0 -6px; scale:1.05; } }
   .stage-result { --piece:#d9cfd9; margin:10px auto 2px; width:fit-content; max-width:100%; padding:6px 16px; border-radius:999px; border:1.5px solid color-mix(in srgb,var(--piece) 65%,#51415b); background:color-mix(in srgb,var(--piece) 30%,#fffdf9); color:#3e3046; font:20px/1.3 Georgia,serif; text-align:center; overflow-wrap:anywhere; animation:stage-result-in .4s cubic-bezier(.2,.8,.3,1.2) both; }

@@ -72,28 +72,33 @@ function Spinner({ outcome, plan, settled, preview, sound, chosen }: { outcome: 
     };
     const turn = preview ? 0 : spinnerRotation(chosen, count, plan[outcome.winnerId]!.spinnerTurns, plan[outcome.winnerId]!.spinnerOffset);
     const size = count <= 4 ? 16 : count <= 8 ? 14 : 12;
+    const nameLabel = (player: (typeof outcome.players)[number], i: number) => {
+      // Names that fit are written around the circle, reading left to right when
+      // their slice is at the top. Longer names run along the slice instead.
+      const name = sliceName(displayLabel(player, outcome.players), count);
+      const radius = count <= 3 ? 70 : count <= 6 ? 82 : 88;
+      const room = Math.min(150, 2 * Math.PI * radius / count * .86);
+      if (Array.from(name).length * size * .58 <= room) return <text key={player.id} className="spinner-name" transform={`rotate(${i * step} 140 140)`} x="140" y={140 - radius} dy=".35em" textAnchor="middle" fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
+      const rest = ((i * step + turn) % 360 + 360) % 360;
+      const flipped = rest > 180;
+      return <text key={player.id} className="spinner-name" transform={`rotate(${i * step + (flipped ? 90 : -90)} 140 140)`} x={flipped ? 32 : 248} y="140" dy=".35em" textAnchor={flipped ? 'start' : 'end'} fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
+    };
     return <div className="spinner-stage" role="img" aria-label={preview ? 'Spinner preview' : settled ? 'Spinner result' : 'Spinner turning'} data-settled={settled} data-preview={preview} data-winner-index={preview ? undefined : chosen} style={preview ? undefined : { '--piece': playerColor(outcome.players[chosen]!) } as CSSProperties}>
       <div className="spinner-disc"><svg ref={wheel} viewBox="0 0 280 280" className="spinner-wheel" aria-hidden="true" style={{ '--turn': `${turn}deg` } as CSSProperties}>
         {outcome.players.map((player, i) => <g key={player.id}><path d={slicePath(i)} fill={playerColor(player)} stroke="#fffaf4" strokeWidth="2"/></g>)}
-        {settled && chosen >= 0 && <>
-          <defs>
-            <linearGradient id={`${sheenId}-light`} x1="0" y1="0" x2="1" y2=".35"><stop offset="35%" stopColor="#fffdf9" stopOpacity="0"/><stop offset="50%" stopColor="#fffdf9" stopOpacity=".65"/><stop offset="65%" stopColor="#fffdf9" stopOpacity="0"/></linearGradient>
-            <clipPath id={`${sheenId}-slice`}><path d={slicePath(chosen)}/></clipPath>
-          </defs>
-          <g clipPath={`url(#${sheenId}-slice)`} pointerEvents="none"><rect className="spinner-sheen" x="-280" y="0" width="280" height="280" fill={`url(#${sheenId}-light)`}/></g>
-        </>}
-        {chosen >= 0 && <path className="spinner-winning-slice" d={slicePath(chosen)} fill="none" stroke="none" pointerEvents="none"/>}
-        {outcome.players.map((player, i) => {
-          // Names that fit are written around the circle, reading left to right when
-          // their slice is at the top. Longer names run along the slice instead.
-          const name = sliceName(displayLabel(player, outcome.players), count);
-          const radius = count <= 3 ? 70 : count <= 6 ? 82 : 88;
-          const room = Math.min(150, 2 * Math.PI * radius / count * .86);
-          if (Array.from(name).length * size * .58 <= room) return <text key={player.id} className="spinner-name" transform={`rotate(${i * step} 140 140)`} x="140" y={140 - radius} dy=".35em" textAnchor="middle" fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
-          const rest = ((i * step + turn) % 360 + 360) % 360;
-          const flipped = rest > 180;
-          return <text key={player.id} className="spinner-name" transform={`rotate(${i * step + (flipped ? 90 : -90)} 140 140)`} x={flipped ? 32 : 248} y="140" dy=".35em" textAnchor={flipped ? 'start' : 'end'} fill="#34342f" fontSize={size} fontFamily="Georgia">{name}</text>;
-        })}
+        {chosen >= 0 && <g className="spinner-winner" style={{ '--pop-x': `${Math.sin(chosen * step * Math.PI / 180) * 6}px`, '--pop-y': `${-Math.cos(chosen * step * Math.PI / 180) * 6}px` } as CSSProperties}>
+          <path d={slicePath(chosen)} fill={playerColor(outcome.players[chosen]!)} stroke="#fffaf4" strokeWidth="2"/>
+          {settled && chosen >= 0 && <>
+            <defs>
+              <linearGradient id={`${sheenId}-light`} x1="0" y1="0" x2="1" y2=".35"><stop offset="35%" stopColor="#fffdf9" stopOpacity="0"/><stop offset="50%" stopColor="#fffdf9" stopOpacity=".65"/><stop offset="65%" stopColor="#fffdf9" stopOpacity="0"/></linearGradient>
+              <clipPath id={`${sheenId}-slice`}><path d={slicePath(chosen)}/></clipPath>
+            </defs>
+            <g clipPath={`url(#${sheenId}-slice)`} pointerEvents="none"><rect className="spinner-sheen" x="-280" y="0" width="280" height="280" fill={`url(#${sheenId}-light)`}/></g>
+          </>}
+          <path className="spinner-winning-slice" d={slicePath(chosen)} fill="none" stroke="none" pointerEvents="none"/>
+          {nameLabel(outcome.players[chosen]!, chosen)}
+        </g>}
+        {outcome.players.map((player, i) => i === chosen ? null : nameLabel(player, i))}
         <circle cx="140" cy="140" r="17" fill="#fffaf4"/>
       </svg></div>
       <svg ref={pin} viewBox="0 0 24 32" className="spinner-pin" aria-hidden="true"><path d="M3 3Q12-1 21 3L12 29Z" fill="#61566f"/></svg>
