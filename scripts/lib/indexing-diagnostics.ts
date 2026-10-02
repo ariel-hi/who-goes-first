@@ -3,6 +3,7 @@ import { inspectIndexedUrl, searchSitemaps, type IndexStatus, type SearchSitemap
 export const indexingSamplePaths = [
   '/', '/games/', '/board-games/',
   '/games/catan-2020-en/', '/games/ticket-to-ride-2015-en/', '/games/wingspan-online-en/',
+  '/tools/', '/game-night-checklist/',
 ] as const;
 
 export type SitemapObservation = {
@@ -77,7 +78,7 @@ export async function indexingSnapshot(token: string, property: string, origin: 
   return {
     generatedAt: new Date().toISOString(), property,
     source: 'Google Search Console Sitemaps and URL Inspection APIs',
-    scope: 'Six named URLs in Google’s index; URL Inspection does not test the current live page or prove site-wide indexing.',
+    scope: `${inspections.length} named URLs in Google’s indexed data; URL Inspection does not test the current live page or prove site-wide indexing.`,
     sitemapsStatus: sitemapsReason ? 'unavailable' : 'available',
     ...(sitemapsReason ? { sitemapsReason } : {}),
     submittedSitemaps, inspections,
@@ -98,5 +99,5 @@ export function indexingReport(snapshot: IndexingSnapshot): string {
   const inspections = snapshot.inspections.map(item => item.status === 'available'
     ? `- ${item.path}: ${item.verdict}; ${item.coverageState || 'coverage unknown'}; last crawl ${item.lastCrawlTime ?? 'unknown'}; fetch ${item.pageFetchState}.`
     : `- ${item.path}: inspection unavailable (${item.reason}).`).join('\n');
-  return `## Google indexing sample\n${sitemaps}${sitemapCaveat}\n${inspections}\n\nThis checks six named URLs in Google's indexed data, not the current live pages or the full site.\n`;
+  return `## Google indexing sample\n${sitemaps}${sitemapCaveat}\n${inspections}\n\nThis checks ${snapshot.inspections.length} named URLs in Google's indexed data, not the current live pages or the full site.\n`;
 }

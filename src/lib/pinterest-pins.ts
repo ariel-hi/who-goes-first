@@ -34,7 +34,11 @@ export function pinQueue(): QueuedPin[] {
     const rule = bySlug.get(slug);
     if (!rule) return [];
     const heading = ruleHeading(rule.gameName);
-    return [{ id: `game-${slug}`, path: `/games/${slug}/`, title: `${heading} Official Starting Player Rule`, heading, body: rule.firstPlayerRule, art: { seed: slug, kicker: 'Official rule', lead: /[.!?…]$/u.test(rule.gameName) ? 'Starting rule for' : 'Who goes first in', title: /[.!?…]$/u.test(rule.gameName) ? rule.gameName : `${rule.gameName}?`, body: rule.firstPlayerRule, cta: 'Full rule + fair picker' }, description: clip(`${rule.firstPlayerRule} The official ${rule.gameName} rule (${rule.editionLabel}), with its rulebook source and a fair picker for ties.`, 480), campaign: 'game_rule_pin' }];
+    // Simultaneous play and other ineligible rules need no first-player draw.
+    // Keep their sourced answer, without promising a picker for nonexistent ties.
+    const canSuggestPicker = rule.pickerSuggestionApplicable !== false && rule.tieBreakApplicable !== false;
+    const sourceDescription = `The official ${rule.gameName} rule (${rule.editionLabel}), with its rulebook source${canSuggestPicker ? ' and a fair picker for ties.' : '.'}`;
+    return [{ id: `game-${slug}`, path: `/games/${slug}/`, title: `${heading} Official Starting Player Rule`, heading, body: rule.firstPlayerRule, art: { seed: slug, kicker: 'Official rule', lead: /[.!?…]$/u.test(rule.gameName) ? 'Starting rule for' : 'Who goes first in', title: /[.!?…]$/u.test(rule.gameName) ? rule.gameName : `${rule.gameName}?`, body: rule.firstPlayerRule, cta: canSuggestPicker ? 'Full rule + fair picker' : 'Full rule + source' }, description: clip(`${rule.firstPlayerRule} ${sourceDescription}`, 480), campaign: 'game_rule_pin' }];
   });
   const tools = TOOLS.map(tool => ({ ...tool, id: `tool-${tool.id}`, title: tool.heading, art: { seed: tool.id, kicker: 'Free game night tool', title: tool.heading, body: tool.body, cta: 'Try it free' }, description: tool.body }));
   // One tool after every five games keeps the board varied.

@@ -59,6 +59,8 @@ Both analytics loaders receive a finite list of editorial campaign labels derive
 
 Read-only Search Console reports need Restricted access; the daily job's sitemap submissions need Full permission and the webmasters scope. Verify the actual job result before concluding a sitemap was submitted or read.
 
+The weekly indexing sample and daily inspection priorities share eight named URLs, including `/tools/` and `/game-night-checklist/` alongside the original six key pages. Reports state their actual sample size; URL Inspection describes Google's indexed data and does not test the current live page or establish site-wide indexing.
+
 ## Checking it
 - `npx tsx scripts/post-rule.ts --dry-run` prints today's post.
 - Actions → Growth automation → Run workflow runs either job on demand. The weekly job's summary page shows the report.
