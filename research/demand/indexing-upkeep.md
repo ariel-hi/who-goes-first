@@ -1,4 +1,4 @@
-# Indexing upkeep 2026-10-02
+# Indexing upkeep 2026-10-03
 
 ## Live sitemaps
 - All 5 sitemap files load; 1504 URLs listed.
@@ -10,10 +10,10 @@
 - https://whogoesfirst.fun/sitemaps/board-games.xml: submitted 2026-10-01T07:56:21.539Z, waiting
 - https://whogoesfirst.fun/sitemaps/hubs.xml: submitted 2026-10-01T07:55:53.501Z, waiting
 
-## Coverage (723 of 1504 URLs inspected so far)
-- Indexed: 539 (75%)
-- Submitted and indexed: 539
-- URL is unknown to Google: 184
+## Coverage (865 of 1504 URLs inspected so far)
+- Indexed: 631 (73%)
+- Submitted and indexed: 631
+- URL is unknown to Google: 234
 - Inspected this run: 150
 
 ## Worth a manual "Request indexing"
