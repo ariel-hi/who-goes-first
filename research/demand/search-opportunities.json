@@ -1,27 +1,108 @@
 {
-  "generatedAt": "2026-10-02T05:52:28.132Z",
+  "generatedAt": "2026-10-05T15:13:34.678Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-09-02",
-    "end": "2026-09-29"
+    "start": "2026-09-05",
+    "end": "2026-10-02"
   },
   "note": "Observed page demand, not a forecast. Watch rows need more data before changing copy.",
   "opportunities": [
     {
       "path": "/games/star-wars-rebellion-ffg-en/",
-      "impressions": 160,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 6.8125,
+      "impressions": 168,
+      "clicks": 1,
+      "ctr": 0.005952380952380952,
+      "position": 6.767857142857143,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
     {
       "path": "/choose-who-goes-first/",
+      "impressions": 26,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 9.23076923076923,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/concordia-rio-grande-en/",
+      "impressions": 17,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.9411764705882355,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/ways-to-pick-who-goes-first/",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6.928571428571429,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/chess-fide-laws-2023-en/",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 21.142857142857142,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/dino-garden-uchibacoya-en-rulebook/",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.076923076923077,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/root-leder-standard-en/",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.461538461538462,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 11.153846153846153,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/scrabble-hasbro-2021-en/",
       "impressions": 12,
       "clicks": 0,
       "ctr": 0,
-      "position": 7.75,
+      "position": 10.083333333333334,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/ticket-to-ride-nordic-countries-days-of-wonder-en/",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 5,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/voting-game-player-ten-en/",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.2,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -35,20 +116,56 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/root-leder-standard-en/",
-      "impressions": 8,
+      "path": "/games/meister-makatsu-amigo-en-v1-0/",
+      "impressions": 9,
       "clicks": 0,
       "ctr": 0,
-      "position": 5.5,
+      "position": 6.111111111111111,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/",
+      "path": "/games/topp-die-torte-schmidt-de-40659-placement/",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.11111111111111,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/barrage-cranio-original-en/",
       "impressions": 8,
       "clicks": 0,
       "ctr": 0,
-      "position": 13.75,
+      "position": 5,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/ticket-to-ride-2015-en/",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/wingspan-online-en/",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.857142857142858,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/feed-the-kitty-gamewright-en/",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 10.428571428571429,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -62,29 +179,11 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/scythe-stonemaier-en/",
+      "path": "/games/clank-direwolf-en-2016/",
       "impressions": 6,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.5,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/bears-vs-babies-exploding-kittens-2023-en/",
-      "impressions": 6,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 8.666666666666668,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/kemet-matagot-original-en/",
-      "impressions": 5,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 7.2,
+      "position": 5.5,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     }
