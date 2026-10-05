@@ -42,4 +42,6 @@ Four recipient-specific media drafts and one separate ALA GameRT public-form dra
 
 Verified media candidates: ABACUSSPIELE, Eagle-Gryphon, IELLO and Blue Orange US. Rio Grande and Queen request contact forms; ThunderGryph's press form requires terms consent. Those are deferred outside the email routine. The old largest-first candidate list is a research inventory, not an instruction to send to a guessed address or a support/sales inbox.
 
+- 2026-10-05 Claude scheduled `publisher-outreach` check (edamame.makers@gmail.com, all folders, last 6 days): still no human reply, correction, stop request or bounce from any Batch 1 publisher; the only bounce is the unrelated CopySprig one already noted. **No batch 2 sent** because the paused controls above are unchanged and Ariel has not answered the Oct 2 question. To resume, update "Current outreach controls" to allow the weekday batch. Otherwise, disable the `publisher-outreach` scheduled task.
+
 - 2026-10-04: Bluesky holiday post https://bsky.app/profile/whogoesfirst.fun/post/3mwkexx3uws2q
