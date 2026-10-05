@@ -1,5 +1,14 @@
 # Growth launch status
 
+## Comprehensive review and fixes (2026-10-04)
+
+- Rule meta descriptions now lead with "Who goes first in X?" and fit ~155 characters (were 170+ with an edition/rulebook parenthetical).
+- Rule titles shorten their suffix for long game names; titles over 65 characters fell from 536 to 80 (the rest are shared-edition labels kept for uniqueness).
+- New `/holiday-game-night/` hub (32 family classics with sourced starting rules), in sitemap, `llms.txt`, footer and the Pinterest queue (Oct 23 release) ahead of Thanksgiving/December search demand.
+- Sitewide footer now links every tool and key guide, so every page passes internal links to the tool pages.
+- Search Console spot checks: coin-flip, fairness, random-number-generator, finger-chooser, turn-timer, letter generator, card-draw, house-rules and methods/coin are indexed even though `indexing-upkeep.md` still listed several as unknown; that report lags. `/games/` is 60 KB brotli, so no pagination needed.
+- Still owner-gated: sending the prepared publisher/GameRT outreach, BoardGameGeek/Reddit/directory submissions (posting as the owner), and the Cloudflare login.
+
 ## Hosting-account ownership follow-up (2026-10-02 UTC)
 
 A narrow all-folder search in the existing business mailbox found Cloudflare's domain-registration notice for `whogoesfirst.fun`. Gmail shows delivery to the business address, sender `noreply@notify.cloudflare.com`, signed-by `notify.cloudflare.com`, and a dashboard link matching the already known hosting account. This supports using the existing business sign-in; actual dashboard access under that identity remains unverified. No payment receipt, billing details or unrelated correspondence was inspected.
