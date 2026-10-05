@@ -5,6 +5,7 @@ import '../styles/home.css';
 import '../styles/theme.css';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import { siteSettings } from '../lib/site';
+import { toolDirectory } from '../lib/tool-directory';
 import { socialCampaignNames } from '../lib/social-attribution';
 // `ads` is false on the picker and error pages: a tool used mid-game night is no place for
 // ads that shift layout or invite accidental taps, and AdSense disallows ads on error pages.
@@ -73,7 +74,7 @@ const structuredData = {
       <ThemeToggle />
     </header>
     <main id="main" tabindex="-1"><slot /></main>
-    <footer class="site-footer"><nav aria-label="Footer">{path !== '/printable-game-night/' && <a href="/printable-game-night/">Print table cards</a>}{path !== '/privacy/' && <a href="/privacy/">Privacy</a>}{settings.tipUrl && <a href={settings.tipUrl} rel="noopener">Support the site</a>}{googleAds ? path !== '/privacy/' && <a href="/privacy/#choices">Privacy choices</a> : settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
+    <footer class="site-footer"><nav class="footer-tools" aria-label="Free tools and guides">{[...toolDirectory, { href: '/games/', name: 'Game rules' }, { href: '/holiday-game-night/', name: 'Holiday game night' }, { href: '/ways-to-pick-who-goes-first/', name: 'Ways to pick' }, { href: '/house-rules/', name: 'House rules' }, { href: '/fairness/', name: 'Fairness' }].filter(item => item.href !== path).map(item => <a href={item.href}>{item.name}</a>)}</nav><nav aria-label="Footer">{path !== '/printable-game-night/' && <a href="/printable-game-night/">Print table cards</a>}{path !== '/privacy/' && <a href="/privacy/">Privacy</a>}{settings.tipUrl && <a href={settings.tipUrl} rel="noopener">Support the site</a>}{googleAds ? path !== '/privacy/' && <a href="/privacy/#choices">Privacy choices</a> : settings.production && <button type="button" class="footer-action" data-analytics-settings>Analytics choices</button>}{localPreview && <a href="/dev/review/">Review drafts</a>}</nav></footer>
     {settings.production && !googleAds && <aside class="analytics-consent" data-analytics-consent hidden aria-label="Analytics choices"><p>Allow page visit, sharing, and affiliate-link analytics? Google Analytics receives the page address without search parameters, basic device information, fixed social campaign labels, successful Share actions, and Amazon link opens. It may set analytics cookies. Player names and picks are not sent.</p><div><button type="button" data-analytics-allow>Allow analytics</button><button type="button" data-analytics-decline>No thanks</button></div></aside>}
   </body>
 </html>

@@ -23,6 +23,7 @@ export function GET() {
     `- [Draw a card](${url}/card-draw/): random cards from a shuffled 52-card deck`,
     `- [Random number generator](${url}/random-number-generator/)`,
     `- [Game-night checklist](${url}/game-night-checklist/): free printable planning and table-setup checklist`,
+    `- [Holiday family game night](${url}/holiday-game-night/): official starting rules for classic family games played at holiday gatherings`,
     `- [Printable QR table cards](${url}/printable-game-night/): a shortcut to the first-player picker for clubs and cafés`,
     `- [Embed a starting rule](${url}/embed/): sourced answer snippets and a picker badge for blogs and club websites`,
     `- [Ways to pick who goes first](${url}/ways-to-pick-who-goes-first/): starting rules from real rulebooks that work for any game`,

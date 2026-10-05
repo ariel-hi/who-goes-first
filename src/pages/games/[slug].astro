@@ -33,7 +33,10 @@ function ruleDescription(game: string, answer: string) {
 }
 // Searchers often want the rulebook PDF itself; say so when the page links one.
 const hasPdf = rule?.sources.some(source => isPdfSource(source.url, source.pdfPagesOneBased));
-const title = rule ? `${ruleHeading(rule.gameName)} ${shared ? rule.editionLabel : hasPdf ? 'Official rule & rulebook PDF' : 'Official rule & rulebook'}` : '';
+// Keep titles under ~65 characters so results do not truncate them; shorten the suffix for long game names.
+const suffixes = hasPdf ? ['Official rule & rulebook PDF', 'Official rules PDF', 'Rules PDF'] : ['Official rule & rulebook', 'Official rules', 'Rules'];
+const heading = rule ? ruleHeading(rule.gameName) : '';
+const title = rule ? `${heading} ${shared ? rule.editionLabel : suffixes.find(suffix => heading.length + suffix.length < 65) ?? suffixes.at(-1)}` : '';
 ---
 {rule ? <Layout ads={true} title={title} description={ruleDescription(shared ? `${rule.gameName} (${rule.editionLabel})` : rule.gameName, rule.firstPlayerRule)} modified={rule.materiallyUpdatedAt || undefined} citations={rule.sources.map(source => source.url)} image={`/og/${rule.slug}.png`} imageAlt={`${ruleHeading(rule.gameName)} ${rule.firstPlayerRule}`}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: rule.gameName, item: `${site}/games/${rule.slug}/` }] }).replace(/</g, '\u003c')} />

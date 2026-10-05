@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SharePage from '../components/SharePage.astro';
+import { getCatalog } from '../lib/content/catalog';
+const title = 'Holiday Family Game Night: Who Goes First in 30 Classics';
+const description = 'Planning a Thanksgiving or holiday game night? See who goes first in Monopoly, UNO, Clue, Catan and more, from the official rules, plus free picker tools.';
+const catalog = getCatalog();
+const shelves = [
+  { heading: 'Classic family board games', intro: 'The games most likely to come out of the closet when everyone is home.', slugs: ['monopoly-classic-hasbro-c1009-en', 'clue-hasbro-2023-en', 'sorry-hasbro-00390-en', 'trouble-winning-moves-2022-en', 'game-of-life-hasbro-e4304-en', 'scrabble-hasbro-2021-en', 'trivial-pursuit-classic-hasbro-c1940-en', 'connect-4-hasbro-a5640-en', 'yahtzee-hasbro-en'] },
+  { heading: 'For the youngest players', intro: 'Short, simple games where a young cousin can join in.', slugs: ['candy-land-hasbro-g1726-2025-en', 'chutes-and-ladders-hasbro-a4756-en', 'spot-it-blue-orange-original-en', 'blokus-junior-mattel-t8138-en', 'apples-to-apples-junior-mattel-n1387-en'] },
+  { heading: 'Card games and dominoes', intro: 'Easy to pack, easy to teach, and fine for a crowded table.', slugs: ['uno-10020-sn70-en', 'uno-flip-mattel-en', 'phase-10-mattel-ffy05-en', 'skip-bo-mattel-42050-en', 'exploding-kittens-original-en', 'sushi-go-2014-en', 'mexican-train-cardinal-20-domino-en', 'rummikub-original-en'] },
+  { heading: 'Party games for a big group', intro: 'For when the whole family wants in at once.', slugs: ['codenames-2025-en', 'pictionary-mattel-en', 'apples-apples-mattel-en', 'taboo-hasbro-en', 'dixit-2021-en', 'jenga-milton-bradley-04793-en'] },
+  { heading: 'Modern favorites (and popular gifts)', intro: 'Newer games that often show up unwrapped on the table.', slugs: ['catan-2020-en', 'ticket-to-ride-2015-en', 'azul-2018-en', 'blokus-mattel-bjv44-en'] },
+].map(shelf => ({ ...shelf, rules: shelf.slugs.map(slug => catalog.find(rule => rule.slug === slug)).filter(rule => rule !== undefined) })).filter(shelf => shelf.rules.length);
+const count = shelves.reduce((total, shelf) => total + shelf.rules.length, 0);
+---
+<Layout ads={true} title={title.replace('30', String(count))} description={description} pageType="CollectionPage" image="/og/game-night-checklist.png" imageAlt="Who goes first at your holiday game night, from the official rules.">
+  <div class="content-page prose">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / Holiday game night</nav>
+    <span class="eyebrow">THANKSGIVING · HOLIDAYS · FAMILY VISITS</span>
+    <h1>Holiday family game night: who goes first?</h1>
+    <p class="lede">Big family gatherings bring out the classics, and the argument over who starts. Here is the official starting rule for {count} games that show up at holiday tables, each linked to its publisher’s rulebook.</p>
+    <p>No rule handy, or a mixed group that wants to keep it simple? <a href="/">Open the free first-player picker</a> and let a fair random draw decide.</p>
+    {shelves.map(shelf => <section><h2>{shelf.heading}</h2><p>{shelf.intro}</p><ul class="similar-rules">{shelf.rules.map(rule => <li><a href={`/games/${rule.slug}/`}>{rule.gameName}</a><small>{rule.firstPlayerRule}</small></li>)}</ul></section>)}
+    <h2>Tools for a crowded table</h2>
+    <ul>
+      <li><a href="/random-team-generator/">Random team generator</a>: split cousins, siblings and in-laws into fair teams.</li>
+      <li><a href="/score-keeper/">Score keeper</a>: track points without hunting for a pencil.</li>
+      <li><a href="/turn-timer/">Turn timer</a>: keep long turns moving when the pie is waiting.</li>
+      <li><a href="/dice-roller/">Dice roller</a>: for the game with a missing die.</li>
+      <li><a href="/printable-game-night/">Printable table cards</a> and a <a href="/game-night-checklist/">game-night checklist</a> for hosts.</li>
+    </ul>
+    <p>Looking for a different game? <a href="/games/">Search all starting rules</a>.</p>
+    <SharePage label="Share this page" title={title.replace('30', String(count))} pin={{ path: '/holiday-game-night/', description }} />
+  </div>
+</Layout>
