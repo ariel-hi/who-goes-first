@@ -80,3 +80,6 @@
   .home-picker .picker[data-reduced=false] .primary:active:not(:disabled) { transform:translateY(2px); box-shadow:0 1px 0 #35273f; }
   .home-random-actions button:active:not([aria-disabled=true]) { transform:translateY(1px); }
 }
+.home-intro { display:flex; align-items:baseline; flex-wrap:wrap; gap:6px 20px; }
+.home-tagline { margin:0; color:var(--muted); font-size:16px; line-height:1.5; text-wrap:balance; }
+@media(max-width:550px) { .home-tagline { font-size:15px; } }
