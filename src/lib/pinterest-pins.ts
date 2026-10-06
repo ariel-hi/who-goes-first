@@ -51,8 +51,9 @@ export function pinQueue(): QueuedPin[] {
   ordered.push({ id: 'guide-holiday-game-night', path: '/holiday-game-night/', title: 'Holiday family game night: who goes first?', heading: 'Holiday game night: who goes first?', body: 'The official starting rule for Monopoly, UNO, Clue, Catan and more family classics, each linked to its rulebook.', art: { seed: 'holiday-game-night', kicker: 'Thanksgiving & holiday games', title: 'Holiday game night: who goes first?', body: 'Official starting rules for 30+ family classics, from Monopoly and Clue to UNO and Catan.', cta: 'See every starting rule' }, description: 'Planning a Thanksgiving or holiday family game night? See who goes first in Monopoly, UNO, Clue, Sorry!, Catan, Ticket to Ride and more, from the official rules, plus free picker, team and score tools.', campaign: 'holiday_game_night' });
   for (const { slot, replaces, ...scene } of sceneCampaigns) {
     const pin = { ...scene, heading: scene.art.title.replaceAll('\n', ' '), body: scene.art.body };
-    // New batches append by default. Only the reviewed launch migration uses slots.
-    if (slot === undefined) { ordered.push(pin); continue; }
+    // New batches append by default. Catalog-free builds (including the release
+    // fixtures) have no game slots to replace, so keep their tool/scene queue valid.
+    if (slot === undefined || games.length === 0) { ordered.push(pin); continue; }
     const displaced = ordered[slot];
     if (!displaced || displaced.id !== replaces) throw new Error(`Pinterest scene slot ${slot} no longer matches its reviewed schedule`);
     ordered[slot] = pin;
