@@ -1,6 +1,7 @@
 import { getCatalog } from './content/catalog';
 import { clip, type PinArt } from './og-image';
 import { ruleHeading } from './rule-copy';
+import { sceneCampaigns } from './pinterest-scenes';
 
 export type QueuedPin = { id: string; path: string; title: string; heading: string; body: string; art: PinArt; description: string; campaign: string; date: string };
 
@@ -48,6 +49,15 @@ export function pinQueue(): QueuedPin[] {
   // Append new campaigns so published GUIDs keep their original release dates.
   ordered.push({ id: 'guide-game-night-checklist', path: '/game-night-checklist/', title: 'Free printable game night checklist', heading: 'Your game-night checklist', body: 'Plan the guests, choose the games, set up the table and get playing. A free checklist to print or use on your phone.', art: { seed: 'game-night-checklist', kicker: 'Free printable checklist', title: 'Your game-night checklist', body: 'Plan, set up, play and pack away. Ten simple checks and free tools for the table.', cta: 'Open the free checklist' }, description: 'A free board game night checklist for hosts, clubs and café tables: guests, games, starting player, teams, scores and packing away. Print it or use it on your phone, with no account or app.', campaign: 'game_night_checklist' });
   ordered.push({ id: 'guide-holiday-game-night', path: '/holiday-game-night/', title: 'Holiday family game night: who goes first?', heading: 'Holiday game night: who goes first?', body: 'The official starting rule for Monopoly, UNO, Clue, Catan and more family classics, each linked to its rulebook.', art: { seed: 'holiday-game-night', kicker: 'Thanksgiving & holiday games', title: 'Holiday game night: who goes first?', body: 'Official starting rules for 30+ family classics, from Monopoly and Clue to UNO and Catan.', cta: 'See every starting rule' }, description: 'Planning a Thanksgiving or holiday family game night? See who goes first in Monopoly, UNO, Clue, Sorry!, Catan, Ticket to Ride and more, from the official rules, plus free picker, team and score tools.', campaign: 'holiday_game_night' });
+  for (const { slot, replaces, ...scene } of sceneCampaigns) {
+    const pin = { ...scene, heading: scene.art.title.replaceAll('\n', ' '), body: scene.art.body };
+    // New batches append by default. Only the reviewed launch migration uses slots.
+    if (slot === undefined) { ordered.push(pin); continue; }
+    const displaced = ordered[slot];
+    if (!displaced || displaced.id !== replaces) throw new Error(`Pinterest scene slot ${slot} no longer matches its reviewed schedule`);
+    ordered[slot] = pin;
+    ordered.push(displaced);
+  }
   return cache = ordered.map((pin, index) => ({ ...pin, date: new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10) }));
 }
 

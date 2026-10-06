@@ -12,7 +12,7 @@ const items = {
 };
 // Prefer artwork for the answer or tool the visitor actually opened.
 const item = { ...items[Astro.props.kind], ...(Astro.props.path ? { path: Astro.props.path } : {}), ...(Astro.props.description ? { description: Astro.props.description } : {}) };
-const pin = pinQueue().find(pin => pin.path === item.path);
+const pin = pinQueue().find(pin => pin.path === item.path && pin.art.scene) ?? pinQueue().find(pin => pin.path === item.path);
 const segments = item.path.split('/').filter(Boolean);
 if (pin) item.image = `/pins/q/${pin.id}.png`;
 else if (segments[0] === 'games' && segments[1] === 'themes' && segments[2]) item.image = `/og/hub-${segments[2]}.png`;

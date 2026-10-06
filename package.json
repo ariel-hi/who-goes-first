@@ -22,6 +22,7 @@
     "test:dev-release": "tsx scripts/test-dev-release.ts",
     "content:validate": "tsx scripts/validate-content.ts",
     "images:prepare": "tsx scripts/prepare-rule-thumbnails.ts",
+    "pinterest:preview": "tsx scripts/preview-pinterest.ts",
     "content:review": "tsx scripts/review-content.ts",
     "content:coverage": "tsx scripts/check-coverage.ts",
     "links:check": "tsx scripts/check-links.ts",

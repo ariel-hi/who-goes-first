@@ -1,5 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
+import { createHash } from 'node:crypto';
+import sceneReviews from '../assets/pinterest/reviews.json';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
 import { ruleHeading } from './rule-copy';
@@ -57,7 +59,7 @@ export async function renderCardImage(heading: string, text: string, footer: str
   return new Resvg(svg, { fitTo: { mode: 'width', value: 1200 }, font: { loadSystemFonts: false } }).render().asPng();
 }
 
-export type PinArt = { kicker: string; lead?: string; title: string; body: string; cta: string; seed: string };
+export type PinArt = { kicker: string; lead?: string; title: string; body: string; cta: string; seed: string; scene?: 'woodland' | 'autumn' | 'sky-railway' };
 
 // Bold, warm palettes: [background, deep accent, card, piece colours]. Picked
 // per pin from its id so a board of Pins looks varied but stays on brand.
@@ -98,7 +100,8 @@ function logoMark(size: number): Node {
 }
 
 /** Vertical 2:3 Pinterest pin: bold colour, big game name, answer card, game pieces. */
-export async function renderPinImage(art: PinArt, host: string): Promise<Buffer> {
+export async function renderPinImage(art: PinArt, host: string, options: { draftScene?: boolean } = {}): Promise<Buffer> {
+  if (art.scene) return renderScenePin(art, host, options.draftScene === true);
   const n = hash(art.seed); const p = PIN_PALETTES[n % PIN_PALETTES.length]!;
   const title = clip(art.title, 48);
   const text = clip(art.body, 230);
@@ -130,4 +133,30 @@ export async function renderPinImage(art: PinArt, host: string): Promise<Buffer>
   ]);
   const svg = await satori(tree as unknown as Parameters<typeof satori>[0], { width: 1000, height: 1500, fonts: loadFonts() });
   return new Resvg(svg, { fitTo: { mode: 'width', value: 1000 }, font: { loadSystemFonts: false } }).render().asPng();
+}
+
+/** Reviewed backgrounds only; typography stays deterministic and editable. */
+async function renderScenePin(art: PinArt, host: string, draft: boolean): Promise<Buffer> {
+  const review = sceneReviews[art.scene!];
+  if (!review && !draft) throw new Error('Pinterest scene has no visual review');
+  const background = readFileSync(`src/assets/pinterest/${art.scene}.png`);
+  if (!draft && (createHash('sha256').update(background).digest('hex') !== review.sha256
+    || createHash('sha256').update(JSON.stringify(art)).digest('hex') !== review.artSha256)) {
+    throw new Error(`Pinterest scene ${art.scene} changed since visual review`);
+  }
+  const tree = el('div', { width: 1000, height: 1500, display: 'flex', position: 'relative', flexDirection: 'column', color: '#fff4df', fontFamily: 'Sans' }, [
+    { type: 'img', props: { src: `data:image/png;base64,${background.toString('base64')}`, style: { position: 'absolute', width: 1000, height: 1500, objectFit: 'cover' } } } as Node,
+    el('div', { position: 'absolute', top: 0, width: 1000, height: 470, background: 'linear-gradient(rgba(5,12,28,0.65),rgba(5,12,28,0))' }),
+    el('div', { display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '58px 64px' }, [
+      el('div', { fontSize: 25, letterSpacing: 4, fontWeight: 600, textTransform: 'uppercase' }, art.kicker),
+      el('div', { display: 'flex', flexDirection: 'column', alignItems: 'center', fontFamily: 'Serif', fontSize: 92, lineHeight: 1.04, letterSpacing: -2, marginTop: 22 }, art.title.split('\n').map(line => el('div', {}, line))),
+      el('div', { fontSize: 34, lineHeight: 1.2, marginTop: 22 }, art.body),
+    ]),
+    el('div', { position: 'absolute', bottom: 0, width: 1000, height: 230, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 48, background: 'linear-gradient(rgba(5,12,28,0),rgba(5,12,28,0.85))' }, [
+      el('div', { background: '#fff4df', color: '#242038', borderRadius: 40, padding: '15px 32px', fontSize: 30, fontWeight: 600 }, art.cta),
+      el('div', { fontSize: 27, marginTop: 16 }, host),
+    ]),
+  ]);
+  const svg = await satori(tree as unknown as Parameters<typeof satori>[0], { width: 1000, height: 1500, fonts: loadFonts() });
+  return new Resvg(svg, { font: { loadSystemFonts: false } }).render().asPng();
 }

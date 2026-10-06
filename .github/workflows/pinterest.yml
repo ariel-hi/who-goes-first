@@ -19,6 +19,8 @@ jobs:
           node-version: '22.23.2'
           cache: npm
       - run: npm ci
+      - name: Verify reviewed scene artwork before releasing
+        run: npm run pinterest:preview
       # The feed is static, so a commit is what makes Cloudflare Pages rebuild
       # it with today's Pins. No [skip ci]: Pages must build. Pushes made with
       # GITHUB_TOKEN do not start the CI workflow.

@@ -26,6 +26,8 @@ Check the latest publisher job receipts when delivery changes or a run fails. Ne
 
 ## Weekly improvement and queue maintenance
 
+Pinterest creative production now follows [PINTEREST_SCENES.md](PINTEREST_SCENES.md): mix reviewed scene-led artwork into the existing queue, with distinct worlds, matched destinations, deterministic typography and explicit dice inspection. The October 7, 10 and 13 scenes occupy three previously unpublished slots; their displaced rules move to the queue end. Preserve all published identities and dates and the five-Pin daily cap. Future batches append reviewed creatives, never duplicate already-published scenes. The build and daily release preflight verify artwork against its visual-review hashes.
+
 Use the twice-weekly report once per seven days for a focused improvement review. If the report is stale, dispatch the existing weekly workflow once and inspect the completed output. Read the search opportunity queue, ranked rule demand and acquisition snapshot. A consented GA4 session is an observation, not a verified human visitor; platform impressions and Pin clicks are not website outbound clicks.
 
 Choose one supported improvement to an existing page or one reviewed distribution creative. Record the hypothesis, baseline, time cost, metric and evaluation date in `artifacts/growth/experiments.md`. Preserve the October 15 discovery review in `marketing/DISCOVERY_EXPERIMENT.md`. Keep an experiment pending until its review date or meaningful evidence arrives. Do not repeatedly rewrite low-sample pages or start replacement experiments merely because data is absent.
