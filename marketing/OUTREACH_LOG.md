@@ -44,4 +44,6 @@ Verified media candidates: ABACUSSPIELE, Eagle-Gryphon, IELLO and Blue Orange US
 
 - 2026-10-05 Claude scheduled `publisher-outreach` check (edamame.makers@gmail.com, all folders, last 6 days): still no human reply, correction, stop request or bounce from any Batch 1 publisher; the only bounce is the unrelated CopySprig one already noted. **No batch 2 sent** because the paused controls above are unchanged and Ariel has not answered the Oct 2 question. To resume, update "Current outreach controls" to allow the weekday batch. Otherwise, disable the `publisher-outreach` scheduled task.
 
+- 2026-10-06 Claude scheduled `publisher-outreach` check (edamame.makers@gmail.com, all folders, last 7 days, by subject, bounce terms and the eight publisher domains): no change. No human reply, correction, stop request or publisher bounce; only Allplay's Oct 1 auto-acknowledgement (Allplay's 3–4 business-day window has now passed with no human reply) and the unrelated CopySprig bounce. **No batch 2 sent:** the paused controls are unchanged and Ariel's Oct 2 decision is still pending.
+
 - 2026-10-04: Bluesky holiday post https://bsky.app/profile/whogoesfirst.fun/post/3mwkexx3uws2q
