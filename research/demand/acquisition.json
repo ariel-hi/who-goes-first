@@ -1,57 +1,68 @@
 {
   "status": "available",
   "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-03",
+  "periodEnd": "2026-10-05",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 92,
-  "rowSessions": 92,
+  "totalSessions": 105,
+  "rowSessions": 105,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 4,
+  "rowCount": 5,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 83,
+      "sessions": 88,
       "engagedSessions": 18
     },
     {
+      "name": "Organic Search",
+      "sessions": 9,
+      "engagedSessions": 4
+    },
+    {
       "name": "Referral",
-      "sessions": 6,
+      "sessions": 7,
       "engagedSessions": 5
     },
     {
-      "name": "Organic Search",
-      "sessions": 3,
-      "engagedSessions": 2
+      "name": "AI Assistant",
+      "sessions": 1,
+      "engagedSessions": 1
     }
   ],
   "topSources": [
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 83,
+      "sessions": 88,
       "engagedSessions": 18
-    },
-    {
-      "name": "go.bsky.app / referral",
-      "channel": "Referral",
-      "sessions": 5,
-      "engagedSessions": 4
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 3,
-      "engagedSessions": 2
+      "sessions": 9,
+      "engagedSessions": 4
+    },
+    {
+      "name": "go.bsky.app / referral",
+      "channel": "Referral",
+      "sessions": 6,
+      "engagedSessions": 4
     },
     {
       "name": "bsky.app / referral",
       "channel": "Referral",
       "sessions": 1,
       "engagedSessions": 1
+    },
+    {
+      "name": "gemini.google.com / ai-assistant",
+      "channel": "AI Assistant",
+      "sessions": 1,
+      "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-10-05T15:13:34.679Z"
+  "generatedAt": "2026-10-07T03:46:56.328Z"
 }
