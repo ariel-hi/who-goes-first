@@ -1,24 +1,24 @@
 {
   "status": "available",
   "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-05",
+  "periodEnd": "2026-10-06",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 105,
-  "rowSessions": 105,
+  "totalSessions": 113,
+  "rowSessions": 113,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 5,
+  "rowCount": 6,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 88,
-      "engagedSessions": 18
+      "sessions": 94,
+      "engagedSessions": 20
     },
     {
       "name": "Organic Search",
-      "sessions": 9,
+      "sessions": 10,
       "engagedSessions": 4
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Assistant",
-      "sessions": 1,
+      "sessions": 2,
       "engagedSessions": 1
     }
   ],
@@ -36,13 +36,13 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 88,
-      "engagedSessions": 18
+      "sessions": 94,
+      "engagedSessions": 20
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 9,
+      "sessions": 10,
       "engagedSessions": 4
     },
     {
@@ -58,11 +58,17 @@
       "engagedSessions": 1
     },
     {
+      "name": "chatgpt.com / ai-assistant",
+      "channel": "AI Assistant",
+      "sessions": 1,
+      "engagedSessions": 0
+    },
+    {
       "name": "gemini.google.com / ai-assistant",
       "channel": "AI Assistant",
       "sessions": 1,
       "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-10-07T03:46:56.328Z"
+  "generatedAt": "2026-10-08T13:58:15.943Z"
 }
