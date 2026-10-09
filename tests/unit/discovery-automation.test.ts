@@ -90,6 +90,7 @@ test('the campaign week mixes practical tools, hosting advice and sourced rules 
   const week = Array.from({ length: 7 }, (_, day) => campaignForDay(rules, new Date(Date.UTC(2026, 9, 4 + day, 15, 17)))!);
   expect(week.filter(item => item.kind === 'rule')).toHaveLength(3);
   expect(week.filter(item => item.kind === 'tool')).toHaveLength(3);
+  expect(new Set(week.filter(item => item.kind === 'tool').map(item => item.id)).size).toBe(3);
   expect(week.filter(item => item.kind === 'guide')).toHaveLength(1);
   for (let day = 0; day < 42; day++) {
     const item = campaignForDay(rules, new Date(Date.UTC(2026, 9, 4 + day, 15, 17)))!;

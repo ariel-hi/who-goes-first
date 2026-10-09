@@ -40,8 +40,9 @@ export function campaignForDay(rules: PublicRule[], date: Date): SocialCampaign 
   const calendar = new Date(`${publicationDay(date)}T12:00:00Z`);
   const day = Math.floor(calendar.getTime() / 86_400_000);
   if (!Number.isFinite(day)) throw new Error('A valid campaign date is required.');
-  const week = Math.floor(day / 7);
   const weekday = calendar.getUTCDay();
+  // Anchor the rotation to Sunday so all three tool slots in one week differ.
+  const week = Math.floor((day - weekday) / 7);
   if (weekday === 5) return tagged(guides[((week % guides.length) + guides.length) % guides.length]);
   if ([0, 2, 4].includes(weekday)) {
     const slot = [0, 2, 4].indexOf(weekday);
