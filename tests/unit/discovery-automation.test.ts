@@ -106,6 +106,22 @@ test('the campaign week mixes practical tools, hosting advice and sourced rules 
   expect(campaignForDay(rules, new Date('2026-10-02T03:00:00Z'))?.id).toBe(campaignForDay(rules, new Date('2026-10-01T15:17:00Z'))?.id);
 });
 
+test('the next campaigns avoid the recent live posts across the rotation cutover', () => {
+  const recent: { date: Date; id: string; kind: 'tool' | 'guide' }[] = [
+    { date: new Date('2026-10-06T20:19:09Z'), id: 'timer', kind: 'tool' },
+    { date: new Date('2026-10-08T20:42:02Z'), id: 'letter', kind: 'tool' },
+    { date: new Date('2026-10-09T20:06:41Z'), id: 'checklist', kind: 'guide' },
+  ];
+  for (let offset = 0; offset < 30; offset++) {
+    const date = new Date(Date.UTC(2026, 9, 10 + offset, 15, 17));
+    const selected = campaignForDay([], date);
+    if (!selected || selected.kind === 'rule') continue;
+    const repeats = recent.filter(previous => previous.kind === selected.kind && date.getTime() - previous.date.getTime() <= 7 * 86_400_000).map(previous => previous.id);
+    expect(repeats, `recent ${selected.kind} campaigns before ${publicationDay(date)}`).not.toContain(selected.id);
+    recent.push({ date, id: selected.id, kind: selected.kind });
+  }
+});
+
 test('Pinterest reruns are idempotent and recover overdue items without releasing future items', () => {
   const pins = [{ id: 'old', date: '2026-10-01' }, { id: 'due', date: '2026-10-02' }, { id: 'future', date: '2026-10-03' }];
   const ledger = releaseLedger('2026-10-01 old\n2026-10-01 old\n', pins, '2026-10-02');
