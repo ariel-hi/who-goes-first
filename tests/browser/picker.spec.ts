@@ -647,6 +647,7 @@ test('failed picker download offers a working reload without selecting anyone', 
 });
 
 test('twelve long names remain readable on mobile Balloon and result states', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
   await page.setViewportSize({ width: 390, height: 844 }); await controlledRandom(page, 10); await ready(page, '/methods/balloon/');
   await page.getByRole('button', { name: 'Paste a list' }).click();
   await page.getByLabel('Player names').fill(Array.from({ length: 12 }, (_, i) => `LongName${i}abcdefghijklmn`).join('\n'));
@@ -654,6 +655,13 @@ test('twelve long names remain readable on mobile Balloon and result states', as
   await expect(page.locator('.balloon-player')).toHaveCount(12);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await expect(page.locator('.picker')).toHaveAttribute('data-phase', 'result'); await expect(announcement(page)).toContainText('LongName10');
+  await page.locator('.stage-result').evaluate(element => {
+    const entrance = element.getAnimations().find(animation => animation instanceof CSSAnimation && animation.animationName === 'stage-result-in');
+    if (!entrance) throw new Error('The result entrance animation was not found.');
+    entrance.pause();
+    entrance.currentTime = 100;
+  });
+  await expect(page.locator('.stage-result')).toHaveCSS('opacity', '1');
   expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze()).violations).toEqual([]);
 });
 

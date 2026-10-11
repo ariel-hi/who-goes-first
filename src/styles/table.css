@@ -395,7 +395,7 @@
   .stage-result { --piece:#d9cfd9; margin:10px auto 2px; width:fit-content; max-width:100%; padding:6px 16px; border-radius:999px; border:1.5px solid color-mix(in srgb,var(--piece) 65%,#51415b); background:color-mix(in srgb,var(--piece) 30%,#fffdf9); color:#3e3046; font:20px/1.3 Georgia,serif; text-align:center; overflow-wrap:anywhere; animation:stage-result-in .4s cubic-bezier(.2,.8,.3,1.2) both; }
   .stage-result bdi { font-weight:700; }
   .stage-result[data-pending=true] { visibility:hidden; animation:none; }
-  @keyframes stage-result-in { from { opacity:0; transform:translateY(8px) scale(.9); } to { opacity:1; transform:none; } }
+  @keyframes stage-result-in { from { transform:translateY(8px) scale(.9); } to { transform:none; } }
   .balloon-sheen { animation:balloon-shimmer 2.4s ease-in-out both; }
   .spinner-sheen { animation:spinner-shimmer 2.4s ease-in-out both; }
   @keyframes seat-glimmer { 0%,100% { box-shadow:0 0 0 1.5px #fffdf9,0 0 8px 2px var(--winner-soft); } 50% { box-shadow:0 0 0 1.5px #fffdf9,0 0 8px 2px var(--winner-halo); } }
