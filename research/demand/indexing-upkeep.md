@@ -1,20 +1,19 @@
-# Indexing upkeep 2026-10-10
+# Indexing upkeep 2026-10-11
 
 ## Live sitemaps
 - All 5 sitemap files load; 1505 URLs listed.
 
 ## Search Console sitemaps
 - https://whogoesfirst.fun/sitemap-index.xml: submitted 2026-10-09T17:30:57.558Z, waiting
-- https://whogoesfirst.fun/sitemaps/pages.xml: submitted 2026-10-07T17:55:44.308Z, waiting
-- https://whogoesfirst.fun/sitemaps/rules.xml: submitted 2026-10-07T17:55:44.422Z, waiting
-- https://whogoesfirst.fun/sitemaps/board-games.xml: submitted 2026-10-07T17:55:44.513Z, waiting
-- https://whogoesfirst.fun/sitemaps/hubs.xml: submitted 2026-10-07T17:55:44.602Z, waiting
+- https://whogoesfirst.fun/sitemaps/pages.xml: submitted (still unread 3 days after submission)
+- https://whogoesfirst.fun/sitemaps/rules.xml: submitted (still unread 3 days after submission)
+- https://whogoesfirst.fun/sitemaps/board-games.xml: submitted (still unread 3 days after submission)
+- https://whogoesfirst.fun/sitemaps/hubs.xml: submitted (still unread 3 days after submission)
 
 ## Coverage (1505 of 1505 URLs inspected so far)
-- Indexed: 1102 (73%)
-- Submitted and indexed: 1102
-- URL is unknown to Google: 402
-- Crawled - currently not indexed: 1
+- Indexed: 1108 (74%)
+- Submitted and indexed: 1108
+- URL is unknown to Google: 397
 - Inspected this run: 150
 
 ## Worth a manual "Request indexing"
