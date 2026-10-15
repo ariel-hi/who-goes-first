@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-12T16:02:10.283Z",
+  "generatedAt": "2026-10-15T12:01:51.204Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-09-12",
-    "end": "2026-10-09"
+    "start": "2026-09-15",
+    "end": "2026-10-12"
   },
   "note": "Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.",
   "missingRules": [],
@@ -18,7 +18,7 @@
     },
     {
       "query": "who goes first in uno",
-      "impressions": 3
+      "impressions": 4
     },
     {
       "query": "who starts in uno",
@@ -31,6 +31,14 @@
     {
       "query": "who starts uno",
       "impressions": 2
+    },
+    {
+      "query": "mtg who goes first",
+      "impressions": 1
+    },
+    {
+      "query": "pick who goes first",
+      "impressions": 1
     },
     {
       "query": "who goes first app",
@@ -48,6 +56,20 @@
       "clicks": 1,
       "ctr": 0.0059,
       "position": 6.8
+    },
+    {
+      "page": "/games/rummy-bicycle-en/",
+      "impressions": 120,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.3
+    },
+    {
+      "page": "/games/root-leder-standard-en/",
+      "impressions": 58,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 9.5
     }
   ]
 }

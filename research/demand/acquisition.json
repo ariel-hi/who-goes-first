@@ -1,10 +1,10 @@
 {
   "status": "available",
   "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-10",
+  "periodEnd": "2026-10-13",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 159,
-  "rowSessions": 159,
+  "totalSessions": 175,
+  "rowSessions": 175,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
@@ -13,13 +13,13 @@
   "channels": [
     {
       "name": "Direct",
-      "sessions": 134,
-      "engagedSessions": 29
+      "sessions": 145,
+      "engagedSessions": 30
     },
     {
       "name": "Organic Search",
-      "sessions": 16,
-      "engagedSessions": 8
+      "sessions": 21,
+      "engagedSessions": 13
     },
     {
       "name": "Referral",
@@ -36,14 +36,14 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 134,
-      "engagedSessions": 29
+      "sessions": 145,
+      "engagedSessions": 30
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 16,
-      "engagedSessions": 8
+      "sessions": 21,
+      "engagedSessions": 13
     },
     {
       "name": "go.bsky.app / referral",
@@ -70,5 +70,5 @@
       "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-10-12T16:02:10.283Z"
+  "generatedAt": "2026-10-15T12:01:51.204Z"
 }
