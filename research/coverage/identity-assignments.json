@@ -1227,22 +1227,22 @@
     },
     {
       "ruleId": "rummy-bicycle-en",
-      "ruleRevision": "61fdfba54a0079888d8599698ae4c710ed60368f30bef3784a7065611d0502cf",
+      "ruleRevision": "d0270eb3c6c7d1aee6d3afbf2be2b0e4e5d68df1f77dccc88b4ea1948ce57dc7",
       "identityId": "game-6512d1ba-0406-4c04-8aef-c378bd169a4c",
       "identityRevision": "de82a9fb671f46e5374159c67cf860e979d8e2d5145106d7a3b29c870aae299a",
-      "editionScope": "Bicycle Cards rules, standard 52-card pack (English)",
+      "editionScope": "Bicycle Cards basic Rummy rules (English)",
       "evidence": [
         {
           "url": "https://bicyclecards.com/how-to-play/rummy-rum",
-          "sha256": "82dad8c75086206ecb5adecdbd76edb601ba4a53e4498227c28e68c76b658be7",
+          "sha256": "53d1cf6352bc2b3eaf2a1cea5b9440f6308be2eaf3aa403a290f6bbf3e5a5f76",
           "location": "\"The Deal\" and \"The Play\" sections",
-          "correspondence": "The rule cites this same Bicycle Cards (The United States Playing Card Company) document for Rummy."
+          "correspondence": "The Rummy rule still cites the same Bicycle Cards (The United States Playing Card Company) document for basic Rummy. Codex rechecked its introduction, The Deal and The Play on 2026-10-15. The edition label now avoids an unsupported pack-size claim; this does not change the reviewed game identity or transfer rules from Gin Rummy."
         }
       ],
       "decision": "accept",
-      "reviewedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
-      "reviewedAt": "2026-10-01",
-      "acceptedRevision": "4a25b22d5ed108ca46b0f7d740912b93f2f46ab65030b138fdf83c4c27a8056f"
+      "reviewedBy": "Codex editorial source review, authorized by the owner on 2026-10-15",
+      "reviewedAt": "2026-10-15",
+      "acceptedRevision": "1a56c5909dcc5b6ae7e43d35c42e0ce6ab03dc56cf014d3a6b055f4a59f25ee2"
     },
     {
       "ruleId": "jenga-milton-bradley-04793-en",

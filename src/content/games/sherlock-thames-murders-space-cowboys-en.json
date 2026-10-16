@@ -3,18 +3,23 @@
   "slug": "sherlock-thames-murders-space-cowboys-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
-  "approvedRevision": "3961c06ecbf811e5c3c34d9dabc9d3e3c70c273ed4bced2e819e9e28697159c9",
+  "approvedBy": "Codex editorial source review, authorized by the owner on 2026-10-15; existing image review retained",
+  "approvedRevision": "a34e170d1ba628a0bb051d8a1d30a218b2a3b163659f2d258ac358b05e90d234",
   "publishedAt": "2026-09-26",
-  "materiallyUpdatedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-10-15",
   "gameName": "Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases",
   "aliases": [],
   "editionLabel": "Space Cowboys English Thames Murders",
-  "firstPlayerRule": "Choose a lead investigator. That player reads the case introduction and takes the first turn, choosing a lead to investigate.",
+  "firstPlayerRule": "Choose a lead investigator. That player reads the case introduction, then chooses the first lead to investigate. The role passes left after each turn.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
-    "After reading one lead, pass the booklet to the player on the left, who becomes the next lead investigator. The group may discuss freely; the current lead investigator decides if players disagree about the next destination."
+    "Everyone cooperates and may discuss the next lead. If the group disagrees about where to go, the current lead investigator decides.",
+    "Read one lead aloud and record that it has been followed, then pass the booklet left. If a location has no entry in this case, choose another lead.",
+    "Choose a case together; the rules suggest chronological order to avoid newspaper spoilers. Use its dated newspaper and earlier issues, leaving later newspapers aside.",
+    "Keep the London map, directory and informant list available to the group."
   ],
   "interpretation": null,
   "sources": [
@@ -29,10 +34,10 @@
         8
       ],
       "location": "Game setup; Game overview",
-      "checkedAt": "2026-09-26"
+      "checkedAt": "2026-10-15"
     }
   ],
-  "internalEvidence": "Current SpaceCowboys product the-thames-murders explicitly links SHJR_Rules_C1_EN_BD.pdf as TheThamesMurdersRuleEnglish. RenderedPDF8printed6setup and firstlead. Search previously returnedJackRippermanual, rejected and overwritten with correct publisher product-linkedThamesmanual. Source custody: research/source-files/popular-sep26-09/sherlock.pdf; SHA-256 c2198ad34225905c7e0d658f36b8e3ab52c34c988ae856962b9e125a669995bb. Codex inspected the cited source passages and rendered pages on 2026-09-26. Owner authorized assistant source review and publication on 2026-09-26. Random mix: excluded; game-specific sequence, simultaneous play, or generic random choice.",
+  "internalEvidence": "Codex rechecked the publisher's current English product page, https://www.spacecowboys-games.com/game/the-thames-murders/, on 2026-10-15. Its The Thames Murders Rule English link still resolves to the cited SHJR_Rules_C1_EN_BD.pdf. The downloaded PDF has SHA-256 c2198ad34225905c7e0d658f36b8e3ab52c34c988ae856962b9e125a669995bb, matching the 2026-09-26 reviewed source. Source custody: research/source-files/indexing-oct15/sherlock-thames.pdf. Codex visually read the complete rendered PDF page 8, printed page 6, and checked the extracted booklet text and 2016 Space Cowboys credits. Game setup chooses a case and lead investigator; chronological case order is recommended to avoid spoilers, and only the case-date and earlier newspapers are used. Game overview specifies cooperative discussion, one lead per turn, leftward booklet/role rotation, another choice if a location has no entry, and the current lead investigator's final say on a disputed destination. Public text paraphrases this setup without case solutions. This is the Thames Murders box, not Jack the Ripper or another standalone set. No criterion creates a player-selection tie; generic tie and picker advice are suppressed. Owner authorized the factual improvements and deployment on 2026-10-15. Existing image source/fair-use review is retained, not represented as newly reviewed. Random mix: excluded because this is a game-specific cooperative role.",
   "uncertainty": [],
   "image": {
     "file": "/images/games/sherlock-thames-murders-space-cowboys-en-cover.jpg",

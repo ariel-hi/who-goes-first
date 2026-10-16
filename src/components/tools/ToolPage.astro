@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { toolCards } from '../../lib/tool-cards';
 import { relatedTools } from '../../lib/tool-directory';
+import { pageUpdates } from '../../lib/page-updates';
 import SharePage from '../SharePage.astro';
 import '../../styles/tools.css';
 interface Props { title: string; description: string; heading: string; lede: string; current: string }
@@ -10,7 +11,7 @@ const cardId = current.replace(/\//g, '');
 const card = toolCards[cardId];
 const nextTools = relatedTools(current);
 ---
-<Layout ads={false} title={title} description={description} {...(card ? { image: `/og/tool-${cardId}.png`, imageAlt: `${card.heading}: ${card.body}` } : {})}>
+<Layout ads={false} title={title} description={description} modified={pageUpdates[current]} {...(card ? { image: `/og/tool-${cardId}.png`, imageAlt: `${card.heading}: ${card.body}` } : {})}>
   <div class="tool-page">
     <a class="back-link" href="/tools/">← All decision tools</a>
     <div class="intro"><h1>{heading}</h1><p>{lede}</p></div>

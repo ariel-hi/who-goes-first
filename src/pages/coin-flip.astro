@@ -5,9 +5,17 @@ import CoinFlip from '../components/tools/CoinFlip';
 <ToolPage current="/coin-flip/" title="Flip a Coin Online: Heads or Tails | Who Goes First?" description="Flip a virtual coin for a fair heads-or-tails decision. Free, instant, with a running tally. Settle who goes first in a two-player game." heading="Flip a coin" lede="Heads or tails? Tap to flip a fair virtual coin.">
   <CoinFlip client:load />
   <Fragment slot="about">
-    <h2>How to use it to pick a first player</h2>
-    <p>For a two-player game, one player calls heads or tails before the flip. If the call is right, that player chooses who goes first. For three or more players, use the <a href="/methods/coin/">coin reveal in the picker</a>, which flips a coin for everyone at once.</p>
-    <h2>Is this coin fair?</h2>
-    <p>Each flip is an independent 50/50 draw from your browser’s secure random number generator. The result is decided before the animation starts, so the spin can’t change it. Four heads in a row happens about once in every 16 sets of four flips.</p>
+    <h2>Choose who starts with one flip</h2>
+    <ol>
+      <li>Check your game’s starting rule first. Use a coin when it calls for a random choice, or when everyone agrees to a house rule.</li>
+      <li>Before flipping, assign heads to one player and tails to the other. Agree whether the winner starts or gets to choose.</li>
+      <li>Tap <strong>Flip the coin</strong> and wait for the Heads or Tails result. The tally records the completed flip.</li>
+    </ol>
+    <p>For example, assign heads to Alex and tails to Sam. If you agreed the winner starts, heads means Alex takes the first turn. With three or more players, use the <a href="/">first-player picker</a> to give everyone an equal chance, or generate a <a href="/turn-order-generator/">complete turn order</a>.</p>
+    <h2>What the tally tells you</h2>
+    <p>The heads and tails counts cover this visit only. <strong>Flip again</strong> adds another result; <strong>Reset</strong> clears the counts and returns the coin to Ready. Reloading the page also clears the tally.</p>
+    <h2>Can heads come up several times in a row?</h2>
+    <p>Yes. Each flip is an independent 50/50 draw using your browser’s secure random number generator. Four heads in four specified flips has a 1 in 16 chance; the next flip still has a 1 in 2 chance of heads. A short run does not have to contain equal numbers of heads and tails.</p>
+    <p>The result is chosen before the animation begins. The spin and its direction only reveal it. See <a href="/fairness/">how our random selection works</a> for the method and its limits.</p>
   </Fragment>
 </ToolPage>

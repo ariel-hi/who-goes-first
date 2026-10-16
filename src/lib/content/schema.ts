@@ -37,6 +37,7 @@ export const ruleSchema = z.object({
   additionalImages: z.array(ruleImageSchema).max(3).optional(),
   firstPlayerRule: nonempty, officialTieBreak: nonempty.nullable(), houseFallback: nonempty.nullable(),
   tieBreakApplicable: z.boolean().optional(), pickerSuggestionApplicable: z.boolean().optional(),
+  purchaseSuggestionApplicable: z.boolean().optional(),
   clarifications: z.array(nonempty), interpretation: nonempty.nullable(),
   sources: z.array(z.object({
     url: z.url().refine(value => new URL(value).protocol === 'https:' && !new URL(value).username && !new URL(value).password),
@@ -67,7 +68,7 @@ export function assertPublishable(record: Record): void {
   const publicCopy = 'firstPlayerRule' in record ? [record.firstPlayerRule, record.gameName, record.editionLabel, ...record.clarifications].join(' ') : record.prompt;
   if (/\b(TODO|TBD|placeholder|lorem ipsum)\b/i.test(publicCopy)) throw new Error(`${record.id}: placeholder content cannot be published`);
 }
-export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'pickerSuggestionApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt' | 'image' | 'additionalImages'>;
+export type PublicRule = Pick<RuleRecord, 'id' | 'slug' | 'gameName' | 'aliases' | 'editionLabel' | 'language' | 'firstPlayerRule' | 'officialTieBreak' | 'houseFallback' | 'tieBreakApplicable' | 'pickerSuggestionApplicable' | 'purchaseSuggestionApplicable' | 'clarifications' | 'interpretation' | 'sources' | 'materiallyUpdatedAt' | 'image' | 'additionalImages'>;
 export function publicRule(record: RuleRecord): PublicRule {
   return {
     id: record.id, slug: record.slug, gameName: record.gameName, aliases: record.aliases,
@@ -77,6 +78,7 @@ export function publicRule(record: RuleRecord): PublicRule {
     officialTieBreak: record.officialTieBreak, houseFallback: record.houseFallback,
     ...(record.tieBreakApplicable === undefined ? {} : { tieBreakApplicable: record.tieBreakApplicable }),
     ...(record.pickerSuggestionApplicable === undefined ? {} : { pickerSuggestionApplicable: record.pickerSuggestionApplicable }),
+    ...(record.purchaseSuggestionApplicable === undefined ? {} : { purchaseSuggestionApplicable: record.purchaseSuggestionApplicable }),
     clarifications: record.clarifications,
     interpretation: record.interpretation, sources: record.sources, materiallyUpdatedAt: record.materiallyUpdatedAt,
   };

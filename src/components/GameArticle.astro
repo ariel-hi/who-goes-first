@@ -6,14 +6,14 @@ import EmbedRule from './EmbedRule.astro';
 import { ruleHeading } from '../lib/rule-copy';
 import type { PublicRule } from '../lib/content/schema';
 import { siteSettings } from '../lib/site';
-import { amazonSearchUrl, gearLinks } from '../lib/affiliate';
+import { amazonSearchUrl } from '../lib/affiliate';
 import { citedPdfPages, isPdfSource, pdfPageHref } from '../lib/source-pages';
 import { coverThumbnailPath } from '../lib/content/cover-thumbnail';
 import '../styles/rule-page.css';
 interface Props { rule: PublicRule; related?: PublicRule[]; similar?: PublicRule[]; similarHub?: { slug: string; about: string }; publisherHub?: { slug: string; name: string; count: number }; preview?: boolean }
 const { rule, related = [], similar = [], similarHub, publisherHub, preview = false } = Astro.props;
 const { contact, amazonTag } = siteSettings();
-const buyLink = !preview && amazonTag ? amazonSearchUrl(rule.gameName, amazonTag) : '';
+const buyLink = !preview && amazonTag && rule.purchaseSuggestionApplicable !== false ? amazonSearchUrl(rule.gameName, amazonTag) : '';
 const firstSource = rule.sources[0]!;
 const firstPage = firstSource.pdfPagesOneBased[0];
 const sourceIsPdf = isPdfSource(firstSource.url, firstSource.pdfPagesOneBased);
@@ -46,6 +46,8 @@ const creditedImages = [...(rule.image ? [rule.image] : []), ...(rule.additional
     </nav>
     {photoImages.map(image => <figure class="rule-hero-photo"><img src={image.file} alt={image.alt} width={image.width} height={image.height} loading={insetCoverImage ? 'lazy' : 'eager'} decoding="async" /></figure>)}
   </header>
+  {rule.clarifications.length > 0 && <section class="rule-section rule-card"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
+  {rule.interpretation && <section class="rule-section rule-card"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   <section class="rule-section rule-card source-card"><h2>Source & edition</h2><ul class="source-list">{rule.sources.map(source => {
     const pages = citedPdfPages(source.url, source.pdfPagesOneBased);
     return <li><a class="source-document" href={source.url} rel="noreferrer">{source.title}</a><small>{source.publisher} · {source.location} · Checked {source.checkedAt}</small>{pages.length > 0 ? <nav class="source-cited-pages" aria-label={`Cited PDF pages for ${source.title}`}>{pages.map(({ page, href }) => <a href={href} rel="noreferrer">PDF page {page}</a>)}</nav> : source.pdfPagesOneBased.length > 0 && <small>Cited PDF pages: {[...new Set(source.pdfPagesOneBased)].join(', ')}</small>}</li>;
@@ -54,13 +56,10 @@ const creditedImages = [...(rule.image ? [rule.image] : []), ...(rule.additional
   {!preview && rollsDice && <p class="small muted">Missing the dice? <a class="inline-link" href="/dice-roller/">Roll them online</a>.</p>}
   {!preview && drawsCards && <p class="small muted">No deck handy? <a class="inline-link" href="/card-draw/">Draw a card online</a>.</p>}
   {!preview && <SharePage label="Share this rule" title={ruleHeading(rule.gameName)} pin={{ path: `/games/${rule.slug}/`, description: `${ruleHeading(rule.gameName)} ${rule.firstPlayerRule}` }} />}
-  {rule.clarifications.length > 0 && <section class="rule-section rule-card"><h2>Rule details</h2>{rule.clarifications.map(text => <p>{text}</p>)}</section>}
-  {rule.interpretation && <section class="rule-section rule-card"><h2>Our interpretation</h2><p>{rule.interpretation}</p></section>}
   {rule.tieBreakApplicable !== false && !rule.officialTieBreak && <section class="rule-section rule-card"><h2>If there’s a tie</h2><p>{rule.houseFallback ? 'The rulebook doesn’t say.' : <>The rulebook doesn’t say. If you need a tie-break, <a href="/">pick a player at random</a>.</>}</p></section>}
   {rule.houseFallback && <aside class="fallback"><span class="eyebrow rule-chip">Optional house rule</span><h2>Not working for your group?</h2><p>{rule.houseFallback}</p>{houseFallbackUsesRandomChoice && <a class="primary" href="/">Pick a player at random</a>}</aside>}
   {!preview && <RuleAd />}
   {buyLink && <BuyGame href={buyLink} name={rule.gameName} />}
-  {buyLink && amazonTag && <section class="rule-section gear-links"><h2>Game night gear</h2><ul class="gear-grid">{gearLinks(amazonTag).map(item => <li><a href={item.href} rel="sponsored nofollow noopener" target="_blank">{item.label}<small>{item.note}</small></a></li>)}</ul></section>}
   <section class="rule-section"><h2>{related.length ? 'Related games and editions' : 'More starting rules'}</h2>{related.length > 0 && <ul class="rule-links">{related.map(game => <li><a href={`/games/${game.slug}/`}>{game.image && <img class:list={['rule-link-photo', { 'rule-link-cover': game.image.presentation === 'cover' }]} src={coverThumbnailPath(game.image)} alt="" width={game.image.presentation === 'cover' ? 104 : game.image.width} height={game.image.presentation === 'cover' ? 128 : game.image.height} loading="lazy" decoding="async" />}<span>{game.gameName}<small>{game.editionLabel}</small></span></a></li>)}</ul>}<a class="inline-link" href={preview ? '/dev/games/' : '/games/'}>Browse available game rules</a></section>
   {similar.length > 0 && similarHub && <section class="rule-section"><h2>Games with a similar starting rule</h2><ul class="similar-rules">{similar.map(game => <li><a href={`/games/${game.slug}/`}>{game.image && <img class:list={['rule-link-photo', { 'rule-link-cover': game.image.presentation === 'cover' }]} src={coverThumbnailPath(game.image)} alt="" width={game.image.presentation === 'cover' ? 104 : game.image.width} height={game.image.presentation === 'cover' ? 128 : game.image.height} loading="lazy" decoding="async" />}<span>{game.gameName}<small>{game.firstPlayerRule}</small></span></a></li>)}</ul><a class="inline-link" href={`/games/themes/${similarHub.slug}/`}>More starting rules about {similarHub.about}</a></section>}
   {!preview && <p class="small muted rule-section">Free game-night tools: <a href="/score-keeper/">score keeper</a> · <a href="/turn-timer/">turn timer</a> · <a href="/dice-roller/">dice roller</a> · <a href="/tools/">all tools</a></p>}

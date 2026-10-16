@@ -1,9 +1,10 @@
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { googleAccessToken, inspectIndexedUrl, searchSitemaps, submitSitemap } from './lib/google-api';
 import { indexingSamplePaths } from './lib/indexing-diagnostics';
+import { coverageReport, inspectionBudget, inspectionQueue, recordInspectionAttempt, requestIndexingCandidates, type Coverage } from './lib/indexing-rotation';
 
-// Daily Search Console upkeep: confirm the live sitemaps load, (re)submit any
-// sitemap Google has not read, and inspect a rotating batch of sitemap URLs so
+// Daily Search Console upkeep: confirm the live sitemaps load, submit missing
+// sitemaps once, and inspect a rotating batch of sitemap URLs so
 // indexing coverage builds up across the whole site within about two weeks.
 // Google offers no API to "request indexing" for ordinary pages; that stays a
 // manual Search Console action, so the report lists the pages worth requesting.
@@ -12,8 +13,7 @@ const property = process.env.GSC_PROPERTY || 'https://whogoesfirst.fun/';
 const origin = new URL(process.env.SITE_URL || 'https://whogoesfirst.fun').origin;
 const credentials = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
 const federatedToken = process.env.GOOGLE_ACCESS_TOKEN?.trim();
-const budget = Number(process.env.INSPECTION_BUDGET || 150); // API quota is 2,000/day per property
-const resubmitAfterDays = 3;
+const budget = inspectionBudget(process.env.INSPECTION_BUDGET); // Leave headroom below the 2,000/day property quota.
 const coverageFile = 'research/demand/indexing-coverage.json';
 const sitemapIndex = `${origin}/sitemap-index.xml`;
 
@@ -23,7 +23,6 @@ if (!federatedToken && !credentials) {
 }
 const token = federatedToken || await googleAccessToken(credentials!, ['https://www.googleapis.com/auth/webmasters']);
 
-type Coverage = { path: string; coverageState: string; verdict: string; lastCrawlTime?: string; checkedAt: string };
 type CoverageFile = { updatedAt: string; property: string; pages: Record<string, Coverage> };
 
 const locs = (xml: string) => [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map(match => match[1]!);
@@ -45,20 +44,21 @@ else {
   }
 }
 
-// 2. Submitted sitemaps: submit missing ones, resubmit ones Google has not read.
-const now = Date.now();
+// A partial live inventory must not erase saved coverage or trigger submissions.
+if (liveProblems.length || !pageUrls.size) {
+  throw new Error(`Live sitemap validation failed; no submissions or coverage changes: ${liveProblems.join('; ') || 'empty inventory'}`);
+}
+
+// 2. Missing download timestamps do not establish a failed fetch. Preserve the
+// original submission date for diagnosis instead of resetting it every 3 days.
 const sitemapActions: string[] = [];
 let submitDenied = false;
 const known = new Map((await searchSitemaps(token, property)).map(item => [item.path, item]));
 for (const path of sitemapFiles) {
   const item = known.get(path);
-  const submittedAgo = item?.lastSubmitted ? (now - Date.parse(item.lastSubmitted)) / 86_400_000 : Infinity;
-  const reason = !item ? 'not submitted yet'
-    : !item.lastDownloaded && submittedAgo >= resubmitAfterDays ? `still unread ${Math.floor(submittedAgo)} days after submission`
-    : Number(item.errors ?? 0) > 0 && submittedAgo >= 1 ? `${item.errors} errors reported`
-    : null;
+  const reason = !item ? 'not submitted yet' : null;
   if (!reason) {
-    sitemapActions.push(`- ${path}: ${item?.lastDownloaded ? `read by Google ${item.lastDownloaded}` : `submitted ${item?.lastSubmitted}, waiting`}`);
+    sitemapActions.push(`- ${path}: ${Number(item?.errors ?? 0) > 0 ? `${item?.errors} errors; investigate the Sitemaps report before resubmitting` : item?.lastDownloaded ? `read by Google ${item.lastDownloaded}` : `submitted ${item?.lastSubmitted}, no download recorded; check the Sitemaps report. No automatic resubmission`}`);
     continue;
   }
   try {
@@ -71,46 +71,51 @@ for (const path of sitemapFiles) {
   }
 }
 
-// 3. Rotating URL inspections: key pages, then never-checked, then not-indexed, then oldest.
+// 3. A small priority sample plus oldest attempts across every indexing state.
+// These recovery/control pages help track the October visibility loss; priority
+// is bounded so it cannot starve the rest of the sitemap.
+const priorityPaths = [
+  '/coin-flip/', '/games/rummy-bicycle-en/', '/games/sherlock-thames-murders-space-cowboys-en/',
+  '/games/7-wonders-duel-repos-en/', '/ways-to-pick-who-goes-first/', ...indexingSamplePaths,
+];
 const coverage: CoverageFile = existsSync(coverageFile)
   ? JSON.parse(readFileSync(coverageFile, 'utf8'))
   : { updatedAt: '', property, pages: {} };
-const allPaths = [...pageUrls].map(url => new URL(url).pathname);
-for (const path of Object.keys(coverage.pages)) if (!allPaths.includes(path)) delete coverage.pages[path];
-const indexed = (path: string) => coverage.pages[path]?.verdict === 'PASS';
-const age = (path: string) => coverage.pages[path]?.checkedAt ?? '';
-const queue = [...new Set([
-  ...indexingSamplePaths,
-  ...allPaths.filter(path => !coverage.pages[path]),
-  ...allPaths.filter(path => !indexed(path)).sort((a, b) => age(a).localeCompare(age(b))),
-  ...allPaths.sort((a, b) => age(a).localeCompare(age(b))),
-])].slice(0, budget);
+const allPaths = [...new Set([...pageUrls].map(url => new URL(url).pathname))];
+const inventory = new Set(allPaths);
+for (const path of Object.keys(coverage.pages)) if (!inventory.has(path)) delete coverage.pages[path];
+const queue = inspectionQueue(allPaths, coverage.pages, budget, priorityPaths);
 
+const saveCoverage = () => {
+  coverage.updatedAt = new Date().toISOString();
+  coverage.property = property;
+  mkdirSync('research/demand', { recursive: true });
+  writeFileSync(coverageFile, `${JSON.stringify(coverage, null, 2)}\n`);
+};
 let inspectionErrors = 0;
+const successfulPaths: string[] = [];
 for (let i = 0; i < queue.length; i += 5) {
   await Promise.all(queue.slice(i, i + 5).map(async path => {
+    const lastAttemptedAt = new Date().toISOString();
+    recordInspectionAttempt(coverage.pages, path, lastAttemptedAt);
     try {
       const result = await inspectIndexedUrl(token, property, new URL(path, origin).href);
       coverage.pages[path] = {
         path, coverageState: result.coverageState ?? 'unknown', verdict: result.verdict ?? 'VERDICT_UNSPECIFIED',
-        ...(result.lastCrawlTime ? { lastCrawlTime: result.lastCrawlTime } : {}), checkedAt: new Date().toISOString(),
+        ...(result.lastCrawlTime ? { lastCrawlTime: result.lastCrawlTime } : {}), checkedAt: new Date().toISOString(), lastAttemptedAt,
       };
+      successfulPaths.push(path);
     } catch { inspectionErrors++; }
   }));
+  // A full refresh can take over half an hour. Preserve completed results if
+  // the runner is interrupted; the workflow commits coverage even on failure.
+  if ((i + 5) % 25 === 0) saveCoverage();
 }
-coverage.updatedAt = new Date().toISOString();
-coverage.property = property;
-mkdirSync('research/demand', { recursive: true });
-writeFileSync(coverageFile, `${JSON.stringify(coverage, null, 2)}\n`);
+saveCoverage();
 
 // 4. Report.
-const pages = Object.values(coverage.pages);
-const states = new Map<string, number>();
-pages.forEach(page => states.set(page.coverageState, (states.get(page.coverageState) ?? 0) + 1));
-const indexedCount = pages.filter(page => page.verdict === 'PASS').length;
-const requestable = pages.filter(page => page.verdict !== 'PASS')
-  .sort((a, b) => (indexingSamplePaths as readonly string[]).indexOf(b.path) - (indexingSamplePaths as readonly string[]).indexOf(a.path) || a.path.length - b.path.length)
-  .slice(0, 10);
+const now = Date.now();
+const requestable = requestIndexingCandidates(allPaths, coverage.pages, priorityPaths, now);
 
 const report = `# Indexing upkeep ${new Date().toISOString().slice(0, 10)}
 
@@ -120,15 +125,11 @@ ${liveProblems.length ? liveProblems.map(problem => `- ${problem}`).join('\n') :
 ## Search Console sitemaps
 ${sitemapActions.join('\n')}${submitDenied ? '\n\nTo let this job submit sitemaps, give the service account **Full** permission in Search Console (Settings → Users and permissions).' : ''}
 
-## Coverage (${pages.length} of ${allPaths.length} URLs inspected so far)
-- Indexed: ${indexedCount} (${pages.length ? Math.round(100 * indexedCount / pages.length) : 0}%)
-${[...states].sort((a, b) => b[1] - a[1]).map(([state, count]) => `- ${state}: ${count}`).join('\n')}
-- Inspected this run: ${queue.length - inspectionErrors}${inspectionErrors ? ` (${inspectionErrors} failed)` : ''}
+${coverageReport(allPaths, coverage.pages, successfulPaths, inspectionErrors, now)}
 
 ## Worth a manual "Request indexing"
-${requestable.length ? requestable.map(page => `- ${origin}${page.path} (${page.coverageState})`).join('\n') : '- Nothing: every inspected URL is indexed.'}
+${requestable.length ? requestable.map(page => `- ${origin}${page.path} (${page.coverageState}; inspected ${page.checkedAt})`).join('\n') : '- No recent non-PASS observations available. Historical or unavailable results do not establish current indexing.'}
 `;
 console.log(report);
 if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, report);
 writeFileSync('research/demand/indexing-upkeep.md', report);
-if (liveProblems.length) process.exitCode = 1;
