@@ -24,4 +24,18 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_sky_turn_order',
     art: { seed: 'sky-railway-turn-order', scene: 'sky-railway', kicker: 'Next stop: game night', title: 'All aboard.\nWho’s up first?', body: 'Shuffle your playing order. Start the adventure.', cta: 'Try the free turn-order tool' },
   },
+  {
+    id: 'scene-coral-reef-teams', path: '/random-team-generator/',
+    title: 'Undersea game night: split into random teams',
+    description: 'Original AI-created coral reef tabletop diorama with colorful wooden meeples. For your real game night, enter player names and split them into fair random teams with our free tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_coral_teams',
+    art: { seed: 'coral-reef-teams', scene: 'coral-reef', kicker: 'Dive into game night', title: 'Find your team.\nStart the fun.', body: 'Split friends into random teams in one tap.', cta: 'Try the free team generator' },
+  },
+  {
+    id: 'scene-observatory-number', path: '/random-number-generator/',
+    title: 'Starlit game night: pick a random number',
+    description: 'Original AI-created miniature observatory with an orrery and colorful wooden meeples. For your real game night, pick a fair random number in any range using our free tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_observatory_number',
+    art: { seed: 'observatory-number', scene: 'observatory', kicker: 'A number among the stars', title: 'Leave it\nto chance.', body: 'Draw a fair random number in any range.', cta: 'Try the free number picker' },
+  },
 ];

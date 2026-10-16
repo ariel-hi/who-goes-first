@@ -11,6 +11,38 @@ export type QueuedPin = { id: string; path: string; title: string; heading: stri
 const START = Date.UTC(2026, 9, 1);
 const PER_DAY = 5;
 const GAMES = ['catan-2020-en', 'ticket-to-ride-2015-en', 'uno-10020-sn70-en', 'carcassonne-2021-en', 'monopoly-classic-hasbro-c1009-en', 'azul-2018-en', 'codenames-2025-en', 'wingspan-online-en', 'pandemic-2013-en', 'scrabble-hasbro-2021-en', 'exploding-kittens-original-en', 'splendor-2024-en', 'clue-classic-hasbro-en', 'king-of-tokyo-iello-en', 'sushi-go-2014-en', 'risk-hasbro-2015-en', 'dixit-2021-en', '7-wonders-2020-en', 'kingdomino-2016-en', 'qwirkle-mindware-en', 'flip-7-the-op-revised-en', 'cascadia-base-en', 'terraforming-mars-fryxgames-en', 'spot-it-blue-orange-original-en', 'blokus-mattel-bjv44-en', 'love-letter-2025-en', 'uno-flip-mattel-en', 'harmonies-libellud-en-2024', 'the-crew-2019-en', 'patchwork-lookout-mayfair-2014-en', 'forbidden-island-gamewright-en', 'camel-up-lookout-second-en', 'dominion-2021-en', 'root-leder-standard-en', 'heat-pedal-to-the-metal-dow-en', 'skull-space-cowboys-pink-en', 'santorini-roxley-en', 'jaipur-space-cowboys-en', 'hanabi-rnr-en', 'machi-koro-idw-pandasaurus-en', 'sushi-go-party-gamewright-en', 'ark-nova-capstone-en', 'mysterium-libellud-en', 'tsuro-calliope-2020-en', 'hive-gen42-en', 'coup-indie-game-studios-en-dized', '7-wonders-duel-repos-en', 'splendor-duel-space-cowboys-en', 'codenames-duet-cge-refreshed-en', 'brass-birmingham-roxley-en', 'spirit-island-gtg-en', 'lost-cities-card-game-kosmos-2018-en', 'agricola-revised-edition-lookout-en', '6-nimmt-amigo-2024-en', 'gloomhaven-cephalofair-original-en', 'pandemic-legacy-season-1-zman-en', 'game-of-life-hasbro-e4304-en', 'spades-bicycle-en', 'sorry-hasbro-00390-en', 'hearts-bicycle-en', 'go-fish-bicycle-en', 'euchre-bicycle-en', 'monopoly-junior-hasbro-1990-en', 'cribbage-bicycle-en', 'crazy-eights-bicycle-en', 'canasta-bicycle-en', 'gin-rummy-bicycle-en', 'old-maid-bicycle-en', 'candy-land-winning-moves-2023-en', 'chutes-and-ladders-winning-moves-2023-en', 'trouble-winning-moves-2022-en', 'checkers-acf-official-en', 'parcheesi-winning-moves-2023-en', 'hi-ho-cherry-o-winning-moves-2020-en', 'five-crowns-playmonster-2019-en', 'pass-the-pigs-winning-moves-en', 'connect-4-hasbro-a5640-en', 'jenga-milton-bradley-04793-en', 'phase-10-mattel-ffy05-en', 'skip-bo-mattel-42050-en', 'stratego-milton-bradley-4714-en', 'mancala-parker-brothers-41080-en', 'rummy-bicycle-en', 'upwords-milton-bradley-4312-en', 'catan-junior-second-edition-en', 'sleeping-queens-gamewright-original-en', 'crocodile-dentist-milton-bradley-4153-en', 'scotland-yard-milton-bradley-4500-en', 'mexican-train-cardinal-20-domino-en', 'cootie-milton-bradley-4782-en', 'clue-jr-parker-brothers-1994-en', 'uno-show-em-no-mercy-mattel-hwv18-en', 'dominoes-draw-cardinal-en', 'memory-ravensburger-01035-en', 'left-center-right-bicycle-en', 'yeti-in-my-spaghetti-playmonster-en', '5-second-rule-playmonster-en', 'farkle-playmonster-en', 'snails-pace-race-ravensburger-22052-en', 'utter-nonsense-family-playmonster-en'];
+// Reviewed additions for the October 16 queue extension. These are explicit
+// sourced rules, not an automatic export of the full catalog.
+const OCTOBER_RULES = [
+  'chess-fide-laws-2023-en',
+  'concordia-rio-grande-en',
+  'power-grid-recharged-rio-grande-en',
+  'scout-one-more-game-en',
+  'battleship-hasbro-en',
+  'backgammon-usbgf-basics-standard-en',
+  'yahtzee-hasbro-en',
+  'guess-who-hasbro-en',
+  'operation-hasbro-en',
+  'rummikub-original-en',
+  'labyrinth-ravensburger-en-2017',
+  'point-salad-aeg-en',
+  'trekking-national-parks-underdog-en-second-edition',
+  'bunny-kingdom-iello-2017-en',
+  'quacks-of-quedlinburg-schmidt-en',
+  'kingdom-builder-queen-en',
+  'small-world-days-of-wonder-en',
+  'betrayal-at-house-on-the-hill-avalon-hill-2e-en',
+  'decrypto-scorpion-masque-en',
+  'sea-salt-paper-bombyx-en',
+  'no-thanks-amigo-en',
+  'colt-express-ludonaute-2016-en',
+  'telestrations-the-op-second-en',
+  'just-one-repos-refresh-2025-en',
+  'wavelength-cmyk-en',
+  'clank-direwolf-en-2016',
+  'twilight-imperium-fourth-edition-en',
+  'star-realms-white-wizard-en',
+];
 const TOOLS = [
   { id: 'silly-contests', path: '/games/themes/silly-contests/', heading: '42 silly ways to decide who goes first', body: 'Hold your breath, make the best monkey sound, or have the stinkiest feet: real starting rules from published games.', campaign: 'hub_silly_contests' },
   { id: 'finger-chooser', path: '/finger-chooser/', heading: 'Finger chooser: everyone touch the screen', body: 'Each player puts a finger on the phone. A spotlight closes in and picks who goes first. Free, no app needed.', campaign: 'tool_finger_chooser' },
@@ -31,15 +63,19 @@ let cache: QueuedPin[] | undefined;
 export function pinQueue(): QueuedPin[] {
   if (cache) return cache;
   const bySlug = new Map(getCatalog().map(rule => [rule.slug, rule]));
-  const games = GAMES.flatMap(slug => {
+  const makeGamePin = (slug: string) => {
     const rule = bySlug.get(slug);
-    if (!rule) return [];
+    if (!rule) return null;
     const heading = ruleHeading(rule.gameName);
     // Simultaneous play and other ineligible rules need no first-player draw.
     // Keep their sourced answer, without promising a picker for nonexistent ties.
     const canSuggestPicker = rule.pickerSuggestionApplicable !== false && rule.tieBreakApplicable !== false;
     const sourceDescription = `The official ${rule.gameName} rule (${rule.editionLabel}), with its rulebook source${canSuggestPicker ? ' and a fair picker for ties.' : '.'}`;
-    return [{ id: `game-${slug}`, path: `/games/${slug}/`, title: `${heading} Official Starting Player Rule`, heading, body: rule.firstPlayerRule, art: { seed: slug, kicker: 'Official rule', lead: /[.!?…]$/u.test(rule.gameName) ? 'Starting rule for' : 'Who goes first in', title: /[.!?…]$/u.test(rule.gameName) ? rule.gameName : `${rule.gameName}?`, body: rule.firstPlayerRule, cta: canSuggestPicker ? 'Full rule + fair picker' : 'Full rule + source' }, description: clip(`${rule.firstPlayerRule} ${sourceDescription}`, 480), campaign: 'game_rule_pin' }];
+    return { id: `game-${slug}`, path: `/games/${slug}/`, title: `${heading} Official Starting Player Rule`, heading, body: rule.firstPlayerRule, art: { seed: slug, kicker: 'Official rule', lead: /[.!?…]$/u.test(rule.gameName) ? 'Starting rule for' : 'Who goes first in', title: /[.!?…]$/u.test(rule.gameName) ? rule.gameName : `${rule.gameName}?`, body: rule.firstPlayerRule, cta: canSuggestPicker ? 'Full rule + fair picker' : 'Full rule + source' }, description: clip(`${rule.firstPlayerRule} ${sourceDescription}`, 480), campaign: 'game_rule_pin' };
+  };
+  const games = GAMES.flatMap(slug => {
+    const pin = makeGamePin(slug);
+    return pin ? [pin] : [];
   });
   const tools = TOOLS.map(tool => ({ ...tool, id: `tool-${tool.id}`, title: tool.heading, art: { seed: tool.id, kicker: 'Free game night tool', title: tool.heading, body: tool.body, cta: 'Try it free' }, description: tool.body }));
   // One tool after every five games keeps the board varied.
@@ -49,16 +85,30 @@ export function pinQueue(): QueuedPin[] {
   // Append new campaigns so published GUIDs keep their original release dates.
   ordered.push({ id: 'guide-game-night-checklist', path: '/game-night-checklist/', title: 'Free printable game night checklist', heading: 'Your game-night checklist', body: 'Plan the guests, choose the games, set up the table and get playing. A free checklist to print or use on your phone.', art: { seed: 'game-night-checklist', kicker: 'Free printable checklist', title: 'Your game-night checklist', body: 'Plan, set up, play and pack away. Ten simple checks and free tools for the table.', cta: 'Open the free checklist' }, description: 'A free board game night checklist for hosts, clubs and café tables: guests, games, starting player, teams, scores and packing away. Print it or use it on your phone, with no account or app.', campaign: 'game_night_checklist' });
   ordered.push({ id: 'guide-holiday-game-night', path: '/holiday-game-night/', title: 'Holiday family game night: who goes first?', heading: 'Holiday game night: who goes first?', body: 'The official starting rule for Monopoly, UNO, Clue, Catan and more family classics, each linked to its rulebook.', art: { seed: 'holiday-game-night', kicker: 'Thanksgiving & holiday games', title: 'Holiday game night: who goes first?', body: 'Official starting rules for 30+ family classics, from Monopoly and Clue to UNO and Catan.', cta: 'See every starting rule' }, description: 'Planning a Thanksgiving or holiday family game night? See who goes first in Monopoly, UNO, Clue, Sorry!, Catan, Ticket to Ride and more, from the official rules, plus free picker, team and score tools.', campaign: 'holiday_game_night' });
+  const futureScenes: Omit<QueuedPin, 'date'>[] = [];
   for (const { slot, replaces, ...scene } of sceneCampaigns) {
     const pin = { ...scene, heading: scene.art.title.replaceAll('\n', ' '), body: scene.art.body };
     // New batches append by default. Catalog-free builds (including the release
     // fixtures) have no game slots to replace, so keep their tool/scene queue valid.
-    if (slot === undefined || games.length === 0) { ordered.push(pin); continue; }
+    if (slot === undefined) { futureScenes.push(pin); continue; }
+    if (games.length === 0) { ordered.push(pin); continue; }
     const displaced = ordered[slot];
     if (!displaced || displaced.id !== replaces) throw new Error(`Pinterest scene slot ${slot} no longer matches its reviewed schedule`);
     ordered[slot] = pin;
     ordered.push(displaced);
   }
+  const extraGames: Omit<QueuedPin, 'date'>[] = (games.length ? OCTOBER_RULES : []).map(slug => {
+    const pin = makeGamePin(slug);
+    if (!pin || !bySlug.get(slug)?.sources.length) throw new Error(`Unreviewed Pinterest rule: ${slug}`);
+    return pin;
+  });
+  const [coral, observatory, ...laterScenes] = futureScenes;
+  if (!coral || !observatory) throw new Error('Pinterest queue is missing its reviewed October scenes');
+  // Spread new scenes among rules, after every old campaign. Existing IDs and
+  // dates stay fixed; no scheduled day contains more than five Pins.
+  extraGames.splice(5, 0, coral);
+  extraGames.splice(20, 0, observatory);
+  ordered.push(...extraGames, ...laterScenes);
   return cache = ordered.map((pin, index) => ({ ...pin, date: new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10) }));
 }
 

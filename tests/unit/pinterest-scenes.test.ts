@@ -15,7 +15,12 @@ test('scene launch respects the daily cap and does not release scenes early', ()
   const days = new Map<string, number>();
   for (const pin of queue) days.set(pin.date, (days.get(pin.date) ?? 0) + 1);
   expect([...days.values()].every(count => count <= 5)).toBe(true);
-  expect(queue.filter(pin => pin.art.scene).map(pin => pin.date)).toEqual(['2026-10-07', '2026-10-10', '2026-10-13']);
+  expect(queue.filter(pin => pin.art.scene).map(pin => pin.date)).toEqual([
+    '2026-10-07', '2026-10-10', '2026-10-13', '2026-10-25', '2026-10-28',
+  ]);
+  expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
+  expect(queue).toHaveLength(148);
+  expect(queue.at(-1)?.date).toBe('2026-10-30');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-10-07T13:07:00Z')).filter(pin => pin.art.scene)).toHaveLength(1);
   for (const id of ['game-love-letter-2025-en', 'game-hanabi-rnr-en', 'game-spirit-island-gtg-en']) {

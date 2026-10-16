@@ -59,7 +59,7 @@ export async function renderCardImage(heading: string, text: string, footer: str
   return new Resvg(svg, { fitTo: { mode: 'width', value: 1200 }, font: { loadSystemFonts: false } }).render().asPng();
 }
 
-export type PinArt = { kicker: string; lead?: string; title: string; body: string; cta: string; seed: string; scene?: 'woodland' | 'autumn' | 'sky-railway' };
+export type PinArt = { kicker: string; lead?: string; title: string; body: string; cta: string; seed: string; scene?: 'woodland' | 'autumn' | 'sky-railway' | 'coral-reef' | 'observatory' };
 
 // Bold, warm palettes: [background, deep accent, card, piece colours]. Picked
 // per pin from its id so a board of Pins looks varied but stays on brand.
