@@ -158,7 +158,7 @@ async function expectArticle(page: Page, game: Reviewed) {
   await expect(source).toHaveCount(1);
   await expect(source.locator('.source-document')).toHaveText(game.sourceTitle);
   await expect(source.locator('.source-document')).toHaveAttribute('href', game.sourceUrl);
-  await expect(source.locator('small')).toHaveText(`AMIGO Spiel + Freizeit GmbH · ${game.sourceLocation} · Checked 2026-09-26`);
+  await expect(source.getByText(`AMIGO Spiel + Freizeit GmbH · ${game.sourceLocation} · Checked 2026-09-26`, { exact: true })).toBeVisible();
   await expect(source.locator('.source-cited-pages a')).toHaveText(pdfPages.map(number => `PDF page ${number}`));
   for (const number of pdfPages) {
     await expect(source.getByRole('link', { name: `PDF page ${number}`, exact: true })).toHaveAttribute('href', `${game.sourceUrl}#page=${number}`);

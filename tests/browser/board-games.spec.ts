@@ -31,7 +31,7 @@ async function expectReviewedSourceCitation(page: Page, slug: string, pdfPage: n
   if (documents.length === 1) {
     await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', documents[0]!.href);
   } else {
-    const shortcuts = page.getByRole('navigation', { name: 'Rulebook sources', exact: true });
+    const shortcuts = page.getByRole('navigation', { name: 'Rule sources', exact: true });
     await expect(shortcuts.getByRole('link')).toHaveCount(documents.length);
     for (const document of documents) {
       await expect(shortcuts.getByRole('link', { name: `Read ${document.title}`, exact: true })).toHaveAttribute('href', document.href);
@@ -322,7 +322,7 @@ test('traditional rules preserve fixed roles, handicap starts and actual opening
   await expect(page.getByRole('link', { name: 'Read the source rules', exact: true })).toHaveAttribute('href', 'https://usbgf.org/backgammon-basics-how-to-play/');
   // Resolve the opening before optional stake and match-play details.
   expect(await page.locator('.opening-tie').evaluate(section => Boolean(section.compareDocumentPosition(document.querySelector('.rule-section:not(.opening-tie)')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
-  const sourceTarget = await page.getByRole('navigation', { name: 'Rulebook source', exact: true }).getByRole('link').boundingBox();
+  const sourceTarget = await page.getByRole('navigation', { name: 'Rule sources', exact: true }).getByRole('link').boundingBox();
   expect(sourceTarget!.height).toBeGreaterThanOrEqual(44);
 });
 

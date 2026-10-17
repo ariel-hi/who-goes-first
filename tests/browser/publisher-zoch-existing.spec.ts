@@ -82,7 +82,7 @@ for (const width of [320, 1280]) {
       await expect(article.locator('.source-list > li')).toHaveCount(1);
       await expect(article.locator('.source-document')).toHaveText(game.sourceTitle);
       await expect(article.locator('.source-document')).toHaveAttribute('href', game.source);
-      await expect(article.locator('.source-list > li > small')).toContainText(game.locator);
+      await expect(article.locator('.source-list > li > small').filter({ hasText: ' · Checked ' })).toContainText(game.locator);
       await expect(article.getByRole('link', { name: 'Read the publisher’s rulebook', exact: true })).toHaveAttribute('href', game.source);
       await expect(article.getByRole('link', { name: `View cited page (PDF page ${game.openingPage})`, exact: true })).toHaveAttribute('href', `${game.source}#page=${game.openingPage}`);
       const citations = article.locator('.source-cited-pages a');
