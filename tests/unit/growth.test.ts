@@ -7,6 +7,7 @@ import { clip } from '../../src/lib/og-image';
 import { rankDemand } from '../../scripts/lib/demand';
 import { postText, ruleForDay } from '../../scripts/lib/social';
 import { ruleSchema } from '../../src/lib/content/schema';
+import { ruleContext } from '../../src/lib/content/related';
 
 const rule = (id: string, firstPlayerRule: string, publisher = 'Fixture Games', gameName = id): PublicRule => ({
   id, slug: id, gameName, aliases: [], editionLabel: 'Fixture edition', language: 'en', firstPlayerRule, officialTieBreak: null, houseFallback: null,
@@ -44,6 +45,22 @@ test('similar rules prefer the closest wording, excluding the page and its relat
   expect(picks).not.toContain('b');
   expect(similarRules(catalog[0]!, catalog, new Set(['b']), 3).rules.map(item => item.id)).toEqual(picks);
   expect(similarRules(rule('solo', 'Take turns.'), catalog, new Set()).rules).toEqual([]);
+});
+
+test('reviewed game variants link to one another without treating their rules as shared editions', () => {
+  const catalog = [
+    rule('rummy-bicycle-en', 'Dealer selection and first turn.', 'Bicycle', 'Rummy'),
+    rule('gin-rummy-bicycle-en', 'Nondealer begins.', 'Bicycle', 'Gin Rummy'),
+    rule('500-rum-bicycle-en', 'Player left of dealer begins.', 'Bicycle', '500 Rum'),
+    rule('rummy-unreviewed', 'A different game.', 'Other', 'Rummy Cubes'),
+  ];
+  for (const game of catalog.slice(0, 3)) {
+    const context = ruleContext(catalog, game);
+    expect(context.related.map(item => item.id).toSorted()).toEqual(catalog.slice(0, 3).filter(item => item.id !== game.id).map(item => item.id).toSorted());
+    expect(context.shared).toBe(false);
+  }
+  expect(ruleContext([catalog[0]!], catalog[0]!).related).toEqual([]);
+  expect(ruleContext(catalog, catalog[3]!).related).toEqual([]);
 });
 
 test('publisher hubs need three rules and have stable slugs', () => {

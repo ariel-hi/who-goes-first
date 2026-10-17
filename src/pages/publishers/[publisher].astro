@@ -8,9 +8,9 @@ const count = hub.rules.length;
 ---
 <HubPage
   title={`${hub.name} Games: Who Goes First? ${count} Starting-Player Rules`}
-  description={`Who goes first in ${count} games from ${hub.name} rulebooks, with the source edition for each starting-player rule.`}
+  description={`${count} starting-player rules from ${hub.name}, with the source and edition for each answer.`}
   heading={`Who goes first in ${hub.name} games?`}
-  lede={`${count} starting-player rules checked against ${hub.name} rulebooks.`}
+  lede={`${count} starting-player rules checked against ${hub.name} sources. Open an answer for its edition and cited passage.`}
   crumb={hub.name}
   image={`/og/publisher-${hub.slug}.png`}
   rules={hub.rules}

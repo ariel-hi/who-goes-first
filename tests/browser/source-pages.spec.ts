@@ -1,5 +1,24 @@
 import { test, expect } from '@playwright/test';
 
+test('printed page numbers remain distinct from PDF positions', async ({ page }) => {
+  await page.goto('/games/sherlock-thames-murders-space-cowboys-en/');
+  const source = page.locator('.source-list > li').first();
+  await expect(source.getByText('Printed page references: 6', { exact: true })).toBeVisible();
+  await expect(source.getByRole('link', { name: 'PDF page 8', exact: true })).toHaveAttribute('href', /#page=8$/);
+  await expect(source.getByRole('link', { name: 'PDF page 6', exact: true })).toHaveCount(0);
+});
+
+test('Wingspan identifies its online source and later-round rule without inventing a tie-break', async ({ page }) => {
+  await page.goto('/games/wingspan-online-en/');
+  await expect(page).toHaveTitle(/Official rule & source/);
+  await expect(page.getByRole('navigation', { name: 'Rule sources', exact: true }).getByRole('link', { name: 'Read Wingspan Rules: Setup, Player', exact: true })).toHaveAttribute('href', 'https://wingspan.rulepop.com/#setup');
+  await expect(page.locator('.source-document')).toHaveCount(2);
+  await expect(page.locator('.source-cited-pages')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Official tie-break or fallback', exact: true })).toHaveCount(0);
+  await expect(page.locator('.source-document').filter({ hasText: 'Round Structure' })).toHaveAttribute('href', 'https://wingspan.rulepop.com/#rounds');
+  await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText('After rounds 1, 2 and 3');
+});
+
 test('Brass exposes its setup and round pages without changing the query or top shortcut', async ({ page }) => {
   await page.goto('/games/brass-birmingham-roxley-en/');
   const source = page.locator('.source-list > li').first();

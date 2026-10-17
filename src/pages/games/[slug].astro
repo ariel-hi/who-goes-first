@@ -27,14 +27,14 @@ const site = siteSettings().url;
 // Search results cut descriptions near 155 characters, so lead with the answer and trim at a word.
 function ruleDescription(game: string, answer: string) {
   const lead = `Who goes first in ${game}? ${answer}`;
-  if (lead.length <= 128) return `${lead} Official rulebook linked.`;
+  if (lead.length <= 128) return `${lead} Source rules linked.`;
   if (lead.length <= 155) return lead;
   return `${lead.slice(0, 154).replace(/\s+\S*$/, '').replace(/[,;:]$/, '')}…`;
 }
 // Searchers often want the rulebook PDF itself; say so when the page links one.
 const hasPdf = rule?.sources.some(source => isPdfSource(source.url, source.pdfPagesOneBased));
 // Keep titles under ~65 characters so results do not truncate them; shorten the suffix for long game names.
-const suffixes = hasPdf ? ['Official rule & rulebook PDF', 'Official rules PDF', 'Rules PDF'] : ['Official rule & rulebook', 'Official rules', 'Rules'];
+const suffixes = hasPdf ? ['Official rule & rulebook PDF', 'Official rules PDF', 'Rules PDF'] : ['Official rule & source', 'Official rules', 'Rules'];
 const heading = rule ? ruleHeading(rule.gameName) : '';
 const title = rule ? `${heading} ${shared ? rule.editionLabel : suffixes.find(suffix => heading.length + suffix.length < 65) ?? suffixes.at(-1)}` : '';
 ---

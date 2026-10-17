@@ -17,10 +17,10 @@ const context: Record<string, string> = {
 };
 ---
 <HubPage
-  title={`${hub.title}: ${count} Board Games | Who Goes First?`}
-  description={`${count} board games whose starting-player rules mention ${hub.about}. Each answer is checked against the publisher’s rulebook for that edition.`}
+  title={`${hub.title}: ${count} Rules | Who Goes First?`}
+  description={`${count} starting-player rules that mention ${hub.about}. Each answer is checked against the published rules for its edition.`}
   heading={`Starting rules about ${hub.about}`}
-  lede={`${count} sourced board game rules that mention ${hub.about} when choosing who goes first.`}
+  lede={`${count} sourced starting rules that mention ${hub.about}. Check the edition before using an answer.`}
   crumb={hub.label}
   image={`/og/hub-${hub.slug}.png`}
   rules={hub.rules}

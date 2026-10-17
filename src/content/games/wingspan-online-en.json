@@ -3,21 +3,22 @@
   "slug": "wingspan-online-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Owner-authorized fair-use editorial review by Codex on 2026-09-28",
-  "approvedRevision": "a52828745ac67eac1d64c37d8694ebb28f26462476a1a53e2e3d1d6915563921",
+  "approvedBy": "Codex editorial source review, authorized by the owner on 2026-10-17; prior image review retained",
+  "approvedRevision": "9906d22225c31867e52f0a5e3674a4ed689bb8f554de6b824434b074a674b312",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-09-28",
+  "materiallyUpdatedAt": "2026-10-17",
   "gameName": "Wingspan",
   "aliases": [
     "Wingspan base game"
   ],
   "editionLabel": "Stonemaier Games English base game · official online rules, standard multiplayer",
   "firstPlayerRule": "Choose the starting player at random and give that player the first-player token.",
-  "officialTieBreak": "A single random selection determines the starting player; no qualifying personal trait is required.",
+  "officialTieBreak": null,
   "houseFallback": null,
   "clarifications": [
-    "This entry covers standard play with human opponents. Automa, Duet and Flock modes have their own setup instructions.",
-    "The random selection is the official setup instruction, not an added house rule."
+    "Players take turns clockwise during each round.",
+    "After rounds 1, 2 and 3, pass the first-player token one seat to the left. Its new holder starts the next round; you do not choose a new random starter each round.",
+    "This entry covers the base game's standard multiplayer mode with 2-5 human players. Automa, Duet and Flock modes have their own setup instructions."
   ],
   "interpretation": null,
   "sources": [
@@ -28,10 +29,19 @@
       "printedPages": [],
       "pdfPagesOneBased": [],
       "location": "Setup → Player, first-player token; Settings: Wingspan only, Standard (2–5 players), Human",
-      "checkedAt": "2026-09-23"
+      "checkedAt": "2026-10-17"
+    },
+    {
+      "url": "https://wingspan.rulepop.com/#rounds",
+      "title": "Wingspan Rules: Round Structure",
+      "publisher": "Stonemaier Games / Rulepop",
+      "printedPages": [],
+      "pdfPagesOneBased": [],
+      "location": "Round Structure, clockwise turns and end-of-round step 4; Settings: Wingspan only, Standard (2-5 players), Human",
+      "checkedAt": "2026-10-17"
     }
   ],
-  "internalEvidence": "Stonemaier’s Wingspan rules page links Rulepop. Inspected the live setup with expansion sets disabled and standard human multiplayer selected; the first-player token instruction requires random selection. Editorial review 2026-09-23: Codex checked the rendered source pages and relevant edition, setup, regular-turn and variant context; Wingspan used the live filtered base-game Player setup. Cached source research/source-files/core-games-review/wingspan-player.html; SHA-256 cc2b165a6a281428e9b0a169dfb26e0bb6757553e5b5d08e30ece16dabbdde7c. Original draft preserved. Owner authorization: Reload localhost, 2026-09-22. Random-mix decision: exclude. The official base-game reference calls for random selection in standard human multiplayer, without a distinct portable criterion. Label edit 2026-09-25: removed file/print bookkeeping from the edition label; rule content unchanged.",
+  "internalEvidence": "Codex rechecked the live official Rulepop reference on 2026-10-17 in a browser under the owner's request to improve affected pages. Selected only the Wingspan standalone set, disabled Wingspan Asia, Americas, European and Oceania, and verified Standard (2-5 players) and Human. Setup > Player step 4 explicitly selects the first player randomly and gives that player the token. First Player (#first-player) says to pass it left at round end and that the recipient starts the next round. Round Structure (#rounds) specifies clockwise turns and, after rounds 1-3, a clockwise token pass; after round 4 the game ends. Removed the previous officialTieBreak sentence because it merely restated setup, rather than a separate official tie-break. No personal criterion or house selection is added. The source HTML includes all selectable modes; the actual selected UI was used to establish the base-game scope. Download custody: research/source-files/indexing-oct17/wingspan-rulepop.html; SHA-256 3a73b87dbb08360f5c15d812567bf8f742a595b6db9e95d41ccb8e40c15efccf. Restored the source website's original displayed expansion settings after review. Prior publisher-link provenance and image review remain recorded in git history and the image record. The exact rule remains excluded from the portable random-rule pool.",
   "uncertainty": [
     "The online reference is live rather than a dated print edition; review future changes before updating this record."
   ],
@@ -51,5 +61,6 @@
       "provenance": "Official publisher product page: https://store.stonemaiergames.com/products/wingspan. Exact publisher-hosted package image: https://store.stonemaiergames.com/cdn/shop/products/3d-wingspan_1200x1200.png?v=1569132201. The package and game identity were visually reviewed against the article edition (Stonemaier Games English base game · official online rules, standard multiplayer).",
       "reviewedAt": "2026-09-28"
     }
-  }
+  },
+  "tieBreakApplicable": false
 }
