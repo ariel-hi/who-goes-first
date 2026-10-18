@@ -19,20 +19,27 @@ const shortcuts = [
   return rule ? [rule] : [];
 });
 const headingId = compact ? 'starting-rule-shortcuts-compact-heading' : 'starting-rule-shortcuts-heading';
+const answerSlugs = new Set(['catan-2020-en', 'wingspan-online-en']);
+const answers = compact ? [] : shortcuts.filter(rule => answerSlugs.has(rule.slug));
+const links = compact ? shortcuts : shortcuts.filter(rule => !answerSlugs.has(rule.slug));
 ---
 {shortcuts.length > 0 && <section class:list={['starting-rule-shortcuts', { compact }]} aria-labelledby={headingId}>
   <h2 id={headingId}>{compact ? 'Starting rules to look up' : 'Quick starting-rule answers'}</h2>
   <p class="shortcuts-intro">Choose the reviewed edition that matches your game. Open its rule details for setup notes and the publisher source.</p>
-  <ul class="shortcuts-grid">
-    {shortcuts.map(rule => <li class="shortcut">
-      {compact ? <a class="shortcut-compact-link" href={`/games/${rule.slug}/`}><strong>{rule.gameName}</strong><span class="shortcut-edition">{rule.editionLabel}</span></a> : <>
+  {answers.length > 0 && <ul class="shortcuts-grid shortcuts-answers">
+    {answers.map(rule => <li class="shortcut">
         <h3><a href={`/games/${rule.slug}/`}>{rule.gameName}</a></h3>
         <p class="shortcut-edition">{rule.editionLabel}</p>
         <p class="shortcut-answer">{rule.firstPlayerRule}</p>
         <a class="shortcut-source" href={`/games/${rule.slug}/`}>Rule details &amp; source<span class="sr-only"> for {rule.gameName}</span><span aria-hidden="true"> →</span></a>
-      </>}
     </li>)}
-  </ul>
+  </ul>}
+  {links.length > 0 && <>
+    {!compact && <h3 class="shortcuts-more-heading">More starting rules</h3>}
+    <ul class="shortcuts-grid shortcuts-links">
+      {links.map(rule => <li class="shortcut"><a class="shortcut-compact-link" href={`/games/${rule.slug}/`}><strong>{rule.gameName}</strong><span class="shortcut-edition">{rule.editionLabel}</span></a></li>)}
+    </ul>
+  </>}
 </section>}
 <style>
   .starting-rule-shortcuts { margin:30px 0 36px; }
@@ -46,15 +53,16 @@ const headingId = compact ? 'starting-rule-shortcuts-compact-heading' : 'startin
   .shortcut-edition { display:block; margin:0; color:var(--muted); font-size:12px; line-height:1.5; }
   .shortcut-answer { margin:12px 0; font-size:14px; line-height:1.6; overflow-wrap:anywhere; }
   .shortcut-source { display:flex; align-items:center; align-self:flex-start; min-height:44px; margin-top:auto; gap:4px; font-size:13px; font-weight:700; }
-  .compact .shortcuts-grid { gap:10px; }
-  .compact .shortcut { padding:0; }
+  .shortcuts-more-heading { margin:20px 0 12px; font-size:18px; }
+  .shortcuts-links { gap:10px; }
+  .shortcuts-links .shortcut { padding:0; }
   .shortcut-compact-link { display:flex; flex-direction:column; justify-content:center; min-height:72px; height:100%; padding:13px 16px; color:var(--ink); text-decoration:none; border-radius:14px; }
   .shortcut-compact-link strong { font-size:15px; }
   .shortcut-compact-link .shortcut-edition { margin-top:4px; }
   .shortcut-compact-link:hover, .shortcut-compact-link:focus-visible { background:var(--soft); }
   .shortcut-compact-link:hover strong, .shortcut-compact-link:focus-visible strong { color:var(--green); text-decoration:underline; }
   @media(max-width:550px) {
-    .shortcuts-grid { grid-template-columns:1fr; }
+    .shortcuts-answers { grid-template-columns:1fr; }
     .shortcut { padding:13px 16px; }
   }
 </style>
