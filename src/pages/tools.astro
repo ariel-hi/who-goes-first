@@ -2,15 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import { siteSettings } from '../lib/site';
 import { toolDirectory as tools } from '../lib/tool-directory';
+import { pageUpdates } from '../lib/page-updates';
 const localPreview = import.meta.env.DEV && !siteSettings().production;
 const gamesPath = localPreview ? '/dev/games/' : '/games/';
 ---
-<Layout ads={false} title="Free Board Game Tools: Dice, Scores, Teams & Timers | Who Goes First?" description="Free board game tools in your browser: first-player picker, dice roller, score keeper, turn timer, random teams, card draw and more. No account or app needed." pageType="CollectionPage">
+<Layout modified={pageUpdates['/tools/']} ads={false} title="Free Board Game Tools: Dice, Scores, Teams & Timers | Who Goes First?" description="Free board game tools in your browser: first-player picker, dice roller, score keeper, turn timer, random teams, card draw and more. No account or app needed." pageType="CollectionPage">
   <div class="content-page tools-index">
     <header class="tools-intro">
       <span class="tools-eyebrow">GAME NIGHT, SORTED</span>
-      <h1>Your game-night toolkit.</h1>
-      <p class="lede">Pick a starter, roll the dice, keep score, and make the next turn easy.</p>
+      <h1>Free board game tools</h1>
+      <p class="lede">Choose a first player, roll virtual dice, keep score, set a turn timer, or split into random teams. Every tool runs in your browser without an account.</p>
     </header>
     <p class="tools-rule-note">Playing a specific board game? <a href={gamesPath}>Check its starting-player rule</a> first.</p>
     <section aria-labelledby="first-player-tools">

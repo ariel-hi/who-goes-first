@@ -6,6 +6,7 @@ import { siteSettings } from './site';
 import { pageUpdates } from './page-updates';
 
 type Entry = { path: string; lastmod?: string };
+const datedEntry = (path: string): Entry => ({ path, ...(pageUpdates[path] ? { lastmod: pageUpdates[path] } : {}) });
 export type SitemapSection = 'pages' | 'rules' | 'board-games' | 'hubs';
 export const sitemapSections: SitemapSection[] = ['pages', 'rules', 'board-games', 'hubs'];
 
@@ -15,10 +16,10 @@ export function sitemapEntries(): Record<SitemapSection, Entry[]> {
   const pages = ['/', '/about/', '/fairness/', '/privacy/', '/tools/', '/choose-who-goes-first/', '/printable-game-night/', '/holiday-game-night/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/', '/random-letter-generator/', '/card-draw/', '/embed/', '/methods/spinner/', '/methods/cards/', '/methods/towers/', '/methods/straws/', '/methods/dice/', '/methods/coin/', '/methods/shells/', ...(process.env.DISABLE_BALLOON !== 'true' ? ['/methods/balloon/'] : []), ...(getPrompts().length ? ['/house-rules/'] : [])];
   const hubs = [...(games.length ? ['/games/'] : []), ...themeHubs(games).map(hub => `/games/themes/${hub.slug}/`), ...(publishers.length ? ['/publishers/'] : []), ...publishers.map(hub => `/publishers/${hub.slug}/`), ...(games.some(randomRuleEligible) ? ['/ways-to-pick-who-goes-first/'] : [])];
   return {
-    pages: [...pages, '/game-night-checklist/'].map(path => ({ path, ...(pageUpdates[path] ? { lastmod: pageUpdates[path] } : {}) })),
+    pages: [...pages, '/game-night-checklist/'].map(datedEntry),
     rules: games.map(game => ({ path: `/games/${game.slug}/`, lastmod: game.materiallyUpdatedAt ?? undefined })),
-    'board-games': ['/board-games/', ...getBoardGames().filter(game => game.rules.length > 1).map(game => `/board-games/${game.routeKey}/`)].map(path => ({ path })),
-    hubs: hubs.map(path => ({ path })),
+    'board-games': ['/board-games/', ...getBoardGames().filter(game => game.rules.length > 1).map(game => `/board-games/${game.routeKey}/`)].map(datedEntry),
+    hubs: hubs.map(datedEntry),
   };
 }
 

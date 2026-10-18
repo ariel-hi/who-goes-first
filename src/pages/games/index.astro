@@ -2,23 +2,26 @@
 import Layout from '../../layouts/Layout.astro';
 import GameDirectory from '../../components/GameDirectory.astro';
 import RandomRule from '../../components/RandomRule.astro';
+import StartingRuleShortcuts from '../../components/StartingRuleShortcuts.astro';
 import SocialLinks from '../../components/SocialLinks.astro';
 import { getPublicCounts } from '../../lib/content/public-counts';
 import { publisherHubs, themeHubs } from '../../lib/content/hubs';
 import { getRuleSearchAliases } from '../../lib/content/rule-search';
+import { pageUpdates } from '../../lib/page-updates';
 const { rules: games, identitiesWithRules, ruleEditions } = getPublicCounts();
 const searchAliases = getRuleSearchAliases();
 const themes = themeHubs(games);
 const publishers = publisherHubs(games);
 const title = 'Who Goes First in Board Games? Official Starting Rules';
 ---
-<Layout title={title} description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0}>
+<Layout title={title} description="Look up who goes first in a board game. Search starting-player rules by game and edition, with publisher sources and clearly labeled house rules." pageType="CollectionPage" noindex={games.length === 0} modified={pageUpdates['/games/']}>
   <div class="content-page">
     <h1>Who goes first in your board game?</h1>
     <p class="lede">Who starts, according to the rulebook.</p>
     <p>{ruleEditions.toLocaleString('en')} checked starting-player edition records linked to {identitiesWithRules.toLocaleString('en')} documented games. Some games have multiple editions, and a shared rule can apply to more than one game. Can’t find yours? Try the <a href="/board-games/">wider board game directory</a> or the <a href="/">player picker</a>.</p>
     <GameDirectory games={games} searchAliases={searchAliases} enableDirectorySearch enableSearchHistory enableAlphabetBrowse>
       <Fragment slot="discovery">
+        <StartingRuleShortcuts games={games} />
         <RandomRule games={games} lazy />
         {themes.length > 0 && <nav class="hub-nav" aria-label="Browse rules"><h2>Browse by kind of rule</h2><ul class="theme-links">{themes.map(hub => <li><a href={`/games/themes/${hub.slug}/`}>{hub.label}</a></li>)}<li><a href="/ways-to-pick-who-goes-first/">Fun ways to pick</a></li>{publishers.length > 0 && <li><a href="/publishers/">By publisher</a></li>}</ul></nav>}
         {games.length > 0 && <SocialLinks kind="rules" title={title} />}

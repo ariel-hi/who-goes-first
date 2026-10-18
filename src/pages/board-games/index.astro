@@ -1,17 +1,19 @@
 ---
 import SharePage from "../../components/SharePage.astro";
 import Layout from '../../layouts/Layout.astro';
+import StartingRuleShortcuts from '../../components/StartingRuleShortcuts.astro';
 import { buildBrowseShelves, shelfHref, shelfLabel } from '../../lib/content/board-game-browse';
 import { getPublicCounts } from '../../lib/content/public-counts';
 import { siteSettings } from '../../lib/site';
 import { gameRequestHref } from '../../lib/game-request';
+import { pageUpdates } from '../../lib/page-updates';
 const { boardGames, rules, identities, identitiesWithRules, identitiesAwaitingRules, ruleEditions } = getPublicCounts();
 const { games, letters } = buildBrowseShelves(boardGames);
 const { contact } = siteSettings();
 const linkedRuleIds = new Set(games.flatMap(game => game.rules.map(rule => rule.id)));
 const extraRules = rules.filter(rule => !linkedRuleIds.has(rule.id));
 ---
-<Layout title="Board Game Directory | Who Goes First?" description={`Find sourced starting-player rules for ${identitiesWithRules} documented board games, or browse the wider directory by name.`} pageType="CollectionPage">
+<Layout title="Board Game Directory | Who Goes First?" description={`Find sourced starting-player rules for ${identitiesWithRules} documented board games, or browse the wider directory by name.`} pageType="CollectionPage" modified={pageUpdates['/board-games/']}>
   <div class="content-page">
     <h1>Board game directory.</h1>
     <p class="lede">Find the game you’re playing.</p>
@@ -33,6 +35,7 @@ const extraRules = rules.filter(rule => !linkedRuleIds.has(rule.id));
       </div>
       <noscript><p class="small muted">Browse the letter pages below. Search needs JavaScript.</p></noscript>
     </div>
+    <StartingRuleShortcuts games={rules} compact />
     <h2 class="directory-browse-heading">Browse by name</h2>
     <nav class="directory-letter-grid" aria-label="Browse game names by letter">
       {letters.map(({ letter, count }) => <a href={shelfHref(letter)}><strong>{shelfLabel(letter)}</strong><span>{count.toLocaleString('en')} {count === 1 ? 'game' : 'games'}</span></a>)}
