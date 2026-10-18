@@ -2,7 +2,7 @@ import { createSign } from 'node:crypto';
 
 // Service-account auth without a Google SDK: one signed JWT exchanged for a
 // short-lived token. The key comes from a CI secret and is never written to disk.
-export async function googleAccessToken(credentialsJson: string, scopes: string[]): Promise<string> {
+export async function googleAccessToken(credentialsJson: string, scopes: string[], signal?: AbortSignal): Promise<string> {
   const key = JSON.parse(credentialsJson) as { client_email?: string; private_key?: string; token_uri?: string };
   if (!key.client_email || !key.private_key) throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON must be a service account key with client_email and private_key.');
   const audience = key.token_uri || 'https://oauth2.googleapis.com/token';
@@ -10,13 +10,13 @@ export async function googleAccessToken(credentialsJson: string, scopes: string[
   const part = (value: unknown) => Buffer.from(JSON.stringify(value)).toString('base64url');
   const unsigned = `${part({ alg: 'RS256', typ: 'JWT' })}.${part({ iss: key.client_email, scope: scopes.join(' '), aud: audience, iat: now, exp: now + 3600 })}`;
   const signature = createSign('RSA-SHA256').update(unsigned).sign(key.private_key).toString('base64url');
-  const response = await fetch(audience, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion: `${unsigned}.${signature}` }) });
+  const response = await fetch(audience, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer', assertion: `${unsigned}.${signature}` }), signal });
   if (!response.ok) throw new Error(`Google token request failed (${response.status}): ${await response.text()}`);
   return ((await response.json()) as { access_token: string }).access_token;
 }
 
-async function postJson<T>(url: string, token: string, body: unknown): Promise<T> {
-  const response = await fetch(url, { method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+async function postJson<T>(url: string, token: string, body: unknown, signal?: AbortSignal): Promise<T> {
+  const response = await fetch(url, { method: 'POST', headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal });
   if (!response.ok) throw new Error(`${new URL(url).host} request failed (${response.status}): ${await response.text()}`);
   return await response.json() as T;
 }
@@ -54,10 +54,10 @@ export type IndexStatus = {
 };
 
 /** Status of Google's indexed version; this is not a live URL test. */
-export async function inspectIndexedUrl(token: string, property: string, url: string): Promise<IndexStatus> {
+export async function inspectIndexedUrl(token: string, property: string, url: string, signal?: AbortSignal): Promise<IndexStatus> {
   const report = await postJson<{ inspectionResult?: { indexStatusResult?: IndexStatus } }>(
     'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', token,
-    { inspectionUrl: url, siteUrl: property });
+    { inspectionUrl: url, siteUrl: property }, signal);
   if (!report.inspectionResult?.indexStatusResult) throw new Error('Search Console URL inspection returned no index status');
   return report.inspectionResult.indexStatusResult;
 }
