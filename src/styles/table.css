@@ -53,6 +53,10 @@
   .rule-letter-group .game-list { margin:0; padding:0 16px 8px; }
   .rule-letter-group .game-list li:last-child { border-bottom:0; }
   .rule-letter-group .game-list a { padding:13px 4px; }
+  @media(max-width:550px) {
+    .rule-letter-groups { gap:4px; }
+    .rule-letter-group summary { min-height:44px; padding:8px 16px; }
+  }
   .rule-letter-heading { display:flex; align-items:center; gap:14px; scroll-margin-top:20px; margin:20px 0 2px; color:var(--green); font-family:Georgia,serif; font-size:22px; }
   .rule-letter-heading::after { content:""; flex:1; border-top:1px solid var(--line); }
   [data-game-directory][data-searching="true"] .rule-letter-heading { display:none; }
