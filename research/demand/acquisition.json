@@ -1,20 +1,20 @@
 {
   "status": "available",
   "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-13",
+  "periodEnd": "2026-10-17",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 175,
-  "rowSessions": 175,
+  "totalSessions": 196,
+  "rowSessions": 196,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 6,
+  "rowCount": 8,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 145,
-      "engagedSessions": 30
+      "sessions": 163,
+      "engagedSessions": 34
     },
     {
       "name": "Organic Search",
@@ -23,21 +23,31 @@
     },
     {
       "name": "Referral",
-      "sessions": 7,
-      "engagedSessions": 5
+      "sessions": 8,
+      "engagedSessions": 6
     },
     {
       "name": "AI Assistant",
       "sessions": 2,
       "engagedSessions": 1
+    },
+    {
+      "name": "Organic Social",
+      "sessions": 1,
+      "engagedSessions": 1
+    },
+    {
+      "name": "Unassigned",
+      "sessions": 1,
+      "engagedSessions": 0
     }
   ],
   "topSources": [
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 145,
-      "engagedSessions": 30
+      "sessions": 163,
+      "engagedSessions": 34
     },
     {
       "name": "google / organic",
@@ -48,12 +58,24 @@
     {
       "name": "go.bsky.app / referral",
       "channel": "Referral",
-      "sessions": 6,
-      "engagedSessions": 4
+      "sessions": 7,
+      "engagedSessions": 5
+    },
+    {
+      "name": "(not set)",
+      "channel": "Unassigned",
+      "sessions": 1,
+      "engagedSessions": 0
     },
     {
       "name": "bsky.app / referral",
       "channel": "Referral",
+      "sessions": 1,
+      "engagedSessions": 1
+    },
+    {
+      "name": "ca.pinterest.com / referral",
+      "channel": "Organic Social",
       "sessions": 1,
       "engagedSessions": 1
     },
@@ -70,5 +92,5 @@
       "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-10-15T12:01:51.204Z"
+  "generatedAt": "2026-10-19T13:53:10.174Z"
 }

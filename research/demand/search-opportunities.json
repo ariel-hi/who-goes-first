@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-15T12:01:51.203Z",
+  "generatedAt": "2026-10-19T13:53:10.164Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-09-15",
-    "end": "2026-10-12"
+    "start": "2026-09-19",
+    "end": "2026-10-16"
   },
   "note": "Observed page demand, not a forecast. Watch rows need more data before changing copy.",
   "opportunities": [
@@ -36,10 +36,10 @@
     },
     {
       "path": "/games/root-leder-standard-en/",
-      "impressions": 58,
+      "impressions": 59,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.46551724137931,
+      "position": 9.40677966101695,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
@@ -117,10 +117,10 @@
     },
     {
       "path": "/games/dino-garden-uchibacoya-en-rulebook/",
-      "impressions": 25,
+      "impressions": 26,
       "clicks": 0,
       "ctr": 0,
-      "position": 3.88,
+      "position": 3.923076923076923,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -139,6 +139,15 @@
       "clicks": 1,
       "ctr": 0.041666666666666664,
       "position": 5.875,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/john-company-second-edition-wehrlegig-en/",
+      "impressions": 24,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6.291666666666667,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -175,15 +184,6 @@
       "clicks": 0,
       "ctr": 0,
       "position": 9.681818181818182,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/barrage-cranio-original-en/",
-      "impressions": 21,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 5.904761904761905,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     }
