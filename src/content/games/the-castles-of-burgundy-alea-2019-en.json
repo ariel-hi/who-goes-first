@@ -3,10 +3,10 @@
   "slug": "the-castles-of-burgundy-alea-2019-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex /root/indexing_recovery source and exact-record review; /root independently inspected publisher manual pages 1, 3, 4, 5, 13, 14 and 16 and approved the correction on 2026-10-17 under the owner's standing review and publication authorization; existing image fair-use review retained",
-  "approvedRevision": "6917a2c053b3e6a3bbebc093dbe86a67b3a55b0dd22f1488d810dd2a7949e4d9",
+  "approvedBy": "Codex /root/deployment_audit source and exact-record review on 2026-10-20 under the owner's standing review and publication authorization; visually inspected publisher manual pages 1, 3, 4, 5, 13, 14 and 16; existing image fair-use review retained",
+  "approvedRevision": "091440e494507c02fb8898e573b7adcb59b2e5ef7a76d273801d2482a9c4760c",
   "publishedAt": "2026-09-25",
-  "materiallyUpdatedAt": "2026-10-17",
+  "materiallyUpdatedAt": "2026-10-20",
   "gameName": "The Castles of Burgundy",
   "aliases": [],
   "editionLabel": "alea reissued English edition (2020 rulebook printing)",
@@ -15,9 +15,10 @@
   "houseFallback": "Reroll among players tied for the highest result until one player wins.",
   "clarifications": [
     "The starter receives one worker. Continue clockwise, giving the next players two, three and four workers as applicable; stack their bridge pieces underneath the starter's in that order.",
-    "At the start of a round, everyone rolls their two dice. The starter also rolls the white die, uses it to place the round's goods tile, then takes the first turn.",
-    "Later turns follow bridge position: nearer the city center acts earlier, with the top piece first within a stack. Placing a ship advances a piece and can change who starts the next round.",
-    "This answer covers the standard base game. The team and solo variants have separate setup instructions on pages 13 and 14."
+    "After setup, bridge position determines who goes first: nearer the city center acts earlier, with the top piece first within a stack. Do not repeat the starting-player roll for each round.",
+    "At the start of each round, everyone rolls their two dice. The starter also rolls the white die, uses it to place the round's goods tile, then takes the first turn. The white die does not provide an extra action.",
+    "When you place a ship, move your bridge piece one space toward the city center and put it on top of any pieces already there. If that makes you the next round's starter, take the white die.",
+    "Team-game exception: round one uses A1, B1, A2, B2 instead of the base-game order; later rounds follow the bridge (page 13). The solo game has its own setup (page 14)."
   ],
   "interpretation": null,
   "sources": [
@@ -41,11 +42,11 @@
         14,
         16
       ],
-      "location": "Page 3: starting roll, workers and bridge stack; page 4: rounds and turn order; page 5: ships; pages 13–14: separate team and solo setup; page 16: printing imprint",
-      "checkedAt": "2026-10-17"
+      "location": "Page 3: starting roll, workers and bridge stack; page 4: rounds, white die and turn order; page 5: ship movement and white-die handoff; page 13: team opening order; page 14: solo setup; page 16: printing imprint",
+      "checkedAt": "2026-10-20"
     }
   ],
-  "internalEvidence": "Correction reviewed 2026-10-17 by Codex /root/indexing_recovery and independently by /root after visually inspecting rendered publisher manual pages 1, 3, 4, 5, 13, 14 and 16. Official product https://www.ravensburger.us/en-US/pdp/26925 identifies the reissue with expansions and links its Instructions download directly to https://product-files.ravensburger.cloud/manuals/664462.pdf. The 16-page English manual, code 238798-A, has a 2011/2020 publisher imprint on page 16; the edition label accurately identifies that printing while retaining the existing 2019 reissue URL and identity. Page 3 explicitly selects the highest die result, assigns the white die and initial bridge stack; no first-player tile is specified. Pages 4–5 establish first actual turn and subsequent bridge order. Team and solo setup on pages 13–14 are outside this base-game answer. Equal initial die results have no stated procedure in the cited setup; reroll is explicitly a house fallback. Replaced the incorrect citation to the original 12-page 2011 manual, SHA-256 6fb4eb68f7fc788d9c68f325e310648def996faf16016aa81140c6f3dc798b1c. The separately indexed original-edition record remains unchanged. Source custody: research/source-files/indexing-oct17-burgundy/ravensburger-26925-en.pdf; SHA-256 46b59905e23e6b6d799abedb68db0f5400ff5876d25591cb1ebe50b469987242. Existing product image and its fair-use assessment retained; publisher item 26925 matches its recorded source. No other edition or printing is asserted to share every rule.",
+  "internalEvidence": "Correction reviewed 2026-10-17 by Codex /root/indexing_recovery and independently by /root after visually inspecting rendered publisher manual pages 1, 3, 4, 5, 13, 14 and 16. Official product https://www.ravensburger.us/en-US/pdp/26925 identifies the reissue with expansions and links its Instructions download directly to https://product-files.ravensburger.cloud/manuals/664462.pdf. The 16-page English manual, code 238798-A, has a 2011/2020 publisher imprint on page 16; the edition label accurately identifies that printing while retaining the existing 2019 reissue URL and identity. Page 3 explicitly selects the highest die result, assigns the white die and initial bridge stack; no first-player tile is specified. Pages 4–5 establish first actual turn and subsequent bridge order. Equal initial die results have no stated procedure in the cited setup; reroll is explicitly a house fallback. Replaced the incorrect citation to the original 12-page 2011 manual, SHA-256 6fb4eb68f7fc788d9c68f325e310648def996faf16016aa81140c6f3dc798b1c. The separately indexed original-edition record remains unchanged. Source custody: research/source-files/indexing-oct17-burgundy/ravensburger-26925-en.pdf; SHA-256 46b59905e23e6b6d799abedb68db0f5400ff5876d25591cb1ebe50b469987242. Existing product image and its fair-use assessment retained; publisher item 26925 matches its recorded source. No other edition or printing is asserted to share every rule. On 2026-10-20 Codex /root/deployment_audit fetched the current publisher PDF successfully and verified the same SHA-256, then visually reviewed pages 1, 3, 4, 5, 13, 14 and 16. Clarifications now distinguish the one-time setup roll from subsequent bridge order; page 4 limits the white die to goods placement, and page 5 moves a ship owner's bridge piece one space onto any existing stack and transfers the white die if they will start the next round. Page 13 explicitly sets the team variant's first round to A1, B1, A2, B2; page 14 provides separate solo setup. The original publisher-authored manual hosted at https://cdn.1j1ju.com/medias/04/f5/f9-the-castles-of-burgundy-rulebook.pdf was also reread on 2026-10-20: page 3 says to determine the starter by rolling dice without stating highest or lowest, whereas this reissue's page 3 explicitly chooses the highest. This is a documented edition distinction, not a reason to copy the reissue's rule into the original record or merge their URLs.",
   "uncertainty": [
     "The setup text does not prescribe a dice-roll tie-break."
   ],

@@ -3,10 +3,10 @@
   "slug": "catan-2020-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Codex editorial source review, authorized by the owner on 2026-10-17; prior image review retained",
-  "approvedRevision": "8540c15d50568729419ac3b0dbd2f00d636c7c50fbb1edecf28a2aa0113c2277",
+  "approvedBy": "Codex editorial source review, authorized by the owner on 2026-10-20; prior image review retained",
+  "approvedRevision": "c4a8cb00be6d51f2ba03fd00e70e37554e811544e5a8552f41d79274b8dfa5de",
   "publishedAt": "2026-09-23",
-  "materiallyUpdatedAt": "2026-10-17",
+  "materiallyUpdatedAt": "2026-10-20",
   "gameName": "CATAN",
   "aliases": [
     "The Settlers of Catan",
@@ -61,9 +61,9 @@
   "officialTieBreak": null,
   "houseFallback": "If the starting instruction leaves your group tied, you can agree to pick randomly. This is the site’s house-rule fallback, not a tie-break supplied by this manual.",
   "clarifications": [
-    "The beginner layout fixes the opening settlement and road positions shown in the manual. Once that layout is ready, the oldest player rolls for resource production.",
+    "Beginner setup uses the manual’s fixed settlement and road positions. Each player takes three starting resource cards from the hexes beside their settlement marked with a white star, then the oldest player rolls.",
     "Variable setup places one settlement and road per player clockwise, then reverses. For four players starting with A, the placement order is A-B-C-D, then D-C-B-A. A then takes the first regular turn.",
-    "In variable setup, collect starting resources from the hexes beside your second settlement. The first regular turn begins with a new roll of both dice for resource production."
+    "In variable setup, collect starting resources immediately after placing your second settlement, from its adjacent terrain hexes. The original starter then rolls both dice again for resource production. Regular turns proceed clockwise; only the second placement round reverses."
   ],
   "interpretation": null,
   "sources": [
@@ -83,11 +83,11 @@
         13,
         15
       ],
-      "location": "Page 4, Turn Overview; page 12, Set-Up Phase and Round Two note; page 13, Starting Set-Up for Beginners; page 15, credits",
-      "checkedAt": "2026-10-17"
+      "location": "Page 4, Turn Overview and clockwise regular turns; page 12, Set-Up Phase and second-settlement resources; page 13, Starting Set-Up for Beginners and white-star settlement resources; page 15, credits",
+      "checkedAt": "2026-10-20"
     }
   ],
-  "internalEvidence": "Codex rechecked the cited 2020 English CATAN Game Rules & Almanac on 2026-10-17 under the owner's request to improve affected pages. Download SHA-256 3fed941bf202314ed462d4d0cdfb0384c97fe04166b48a7186833b3f6f4ac024 matches the previously reviewed manual. Visually read complete rendered PDF/printed pages 4, 12, 13 and 15. Page 4 gives oldest-first unless experienced setup and a resource-production roll at the start of a turn. Page 12 specifies both dice for initial selection, clockwise first settlement/road placement, reverse second placement, starting resources from the second settlement, and the original starter's new roll to begin regular play. The A-B-C-D/D-C-B-A sequence is an explanatory four-player example of that order, not an additional rule. Page 13 uses fixed illustrated settlement/road positions and oldest-first for beginner setup. Page 15 confirms fifth-edition development and copyright 2020. No tie resolution is supplied in the cited starting instructions, so the separately labeled house fallback remains. Source custody: research/source-files/indexing-oct17/catan-2020.pdf. Existing image sources and reviews retained. This review does not transfer rules to other CATAN editions or change the excluded random-mix status.",
+  "internalEvidence": "Codex rechecked the cited 2020 English CATAN Game Rules & Almanac on 2026-10-17 under the owner's request to improve affected pages. Download SHA-256 3fed941bf202314ed462d4d0cdfb0384c97fe04166b48a7186833b3f6f4ac024 matches the previously reviewed manual. Visually read complete rendered PDF/printed pages 4, 12, 13 and 15. Page 4 gives oldest-first unless experienced setup and a resource-production roll at the start of a turn. Page 12 specifies both dice for initial selection, clockwise first settlement/road placement, reverse second placement, starting resources from the second settlement, and the original starter's new roll to begin regular play. The A-B-C-D/D-C-B-A sequence is an explanatory four-player example of that order, not an additional rule. Page 13 uses fixed illustrated settlement/road positions and oldest-first for beginner setup. Page 15 confirms fifth-edition development and copyright 2020. No tie resolution is supplied in the cited starting instructions, so the separately labeled house fallback remains. Source custody: research/source-files/indexing-oct17/catan-2020.pdf. Existing image sources and reviews retained. This review does not transfer rules to other CATAN editions or change the excluded random-mix status. Codex reread complete rendered pages 4, 12, 13 and 15 on 2026-10-20 after a fresh publisher download returned the identical SHA-256. Page 13 explicitly gives beginners the three resources beside the settlement marked with a white star, before the oldest player's production roll. Page 12 gives variable-setup resources immediately after the second settlement. Page 4 says to pass the dice left after the turn: regular play is clockwise, unlike the second placement round. Revised two existing clarifications to distinguish those resources and the return to clockwise turns; the main answer, house fallback, images and edition scope remain unchanged. Latest source custody: research/source-files/indexing-oct20-catan/catan-2020.pdf and manifest.json. This adds source-supported setup guidance and does not establish why Google excluded the page.",
   "uncertainty": [
     "The cited highest-roll and oldest-player instructions do not provide a tie resolution.",
     "This entry covers the specific 2020-copyright English manual, not every CATAN edition."
