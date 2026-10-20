@@ -1,8 +1,8 @@
-# Weekly growth report — 2026-10-19
+# Weekly growth report — 2026-10-20
 
 ## Search (Google, last 7 days of final data vs the 7 before)
-- Clicks: **8** (-58%)
-- Impressions: **846** (-52%)
+- Clicks: **4** (-82%)
+- Impressions: **524** (-70%)
 - Published rules: 1339
 
 ## Google indexing sample
@@ -25,33 +25,33 @@ The Search Console API does not provide the Sitemaps report's fetch label. Zero 
 
 This checks 8 named URLs in Google's indexed data, not the current live pages or the full site.
 
-## Traffic (GA4, 2026-09-28 through 2026-10-17)
-- Sessions: **196** · Screen/page views: **491** · Users: 179
-- Screen/page views per session: 2.51
+## Traffic (GA4, 2026-09-28 through 2026-10-18)
+- Sessions: **205** · Screen/page views: **504** · Users: 187
+- Screen/page views per session: 2.46
 
-The live-hostname measurement guard began on 2026-09-28; known CI contamination from earlier dates is excluded. The rollout day is partial and may include events from before the guard. This is a 20-day observation, not a complete 30-day comparison. These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic. Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
-- Named US/CA/GB/AU subtotal: 135 sessions. Five-country US/CA/GB/AU/NZ subtotal: 405 screen/page views. These are GA4 observations, not ad-network qualification.
+The live-hostname measurement guard began on 2026-09-28; known CI contamination from earlier dates is excluded. The rollout day is partial and may include events from before the guard. This is a 21-day observation, not a complete 30-day comparison. These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic. Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
+- Named US/CA/GB/AU subtotal: 138 sessions. Five-country US/CA/GB/AU/NZ subtotal: 408 screen/page views. These are GA4 observations, not ad-network qualification.
 
 
 ## Traffic acquisition (GA4)
-- Direct: 163 reported row sessions (83.2% of GA4 sessions), 34 engaged row sessions.
-- Organic Search: 21 reported row sessions (10.7% of GA4 sessions), 13 engaged row sessions.
-- Referral: 8 reported row sessions (4.1% of GA4 sessions), 6 engaged row sessions.
+- Direct: 172 reported row sessions (83.9% of GA4 sessions), 37 engaged row sessions.
+- Organic Search: 21 reported row sessions (10.2% of GA4 sessions), 13 engaged row sessions.
+- Referral: 8 reported row sessions (3.9% of GA4 sessions), 6 engaged row sessions.
 - AI Assistant: 2 reported row sessions (1.0% of GA4 sessions), 1 engaged row sessions.
 - Organic Social: 1 reported row sessions (0.5% of GA4 sessions), 1 engaged row sessions.
 - Unassigned: 1 reported row sessions (0.5% of GA4 sessions), 0 engaged row sessions.
 
 Top source / medium pairs:
-- \(direct\) / \(none\) (Direct): 163 reported row sessions.
+- \(direct\) / \(none\) (Direct): 172 reported row sessions.
 - google / organic (Organic Search): 21 reported row sessions.
 - go\.bsky\.app / referral (Referral): 7 reported row sessions.
 - \(not set\) (Unassigned): 1 reported row sessions.
 - bsky\.app / referral (Referral): 1 reported row sessions.
 
-Dimension rows reconcile with the undimensioned 196 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
+Dimension rows reconcile with the undimensioned 205 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
 ## Affiliate link opens (GA4)
-- Amazon link opens: **1** reported events (2026-09-28 through 2026-10-17).
+- Amazon link opens: **1** reported events (2026-09-28 through 2026-10-18).
 
 Measurement began on 2026-09-28; that first day is partial. Analytics choices can suppress events. Opens are not verified purchases, commissions, or revenue.
 
@@ -68,7 +68,7 @@ GA4 screenPageViews combines screen and page views; confirm website pageviews fo
 
 Sources: [Mediavine and Journey requirements](https://www.mediavine.com/mediavine-requirements/), [Mediavine 2026 programs](https://help.mediavine.com/programs-and-the-publisher-path-to-growth), [Raptive Analytics requirements](https://help.raptive.com/hc/en-us/articles/6681661647515-Applying-to-Raptive-with-Google-Analytics), [Raptive full requirements](https://help.raptive.com/hc/en-us/articles/360032840891-Who-is-eligible-for-Raptive).
 
-A full 30-day GA4 comparison is unavailable until the measurement guard covers 30 reporting days. The 20-day observation above is excluded from the qualification comparison.
+A full 30-day GA4 comparison is unavailable until the measurement guard covers 30 reporting days. The 21-day observation above is excluded from the qualification comparison.
 
 ## Research queue (last 28 days)
 No starting-rule searches for games without a sourced rule yet.
