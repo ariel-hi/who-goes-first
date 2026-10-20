@@ -3,10 +3,10 @@
   "slug": "war-bicycle-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
-  "approvedRevision": "bd9a5370597f36f45242c10073bb0c7a1ac230222c4aa6e2e4c5a2840b472cdd",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-10-20; prior edition and identity review retained",
+  "approvedRevision": "1aa00ce33d432aaf112501e4a796d53a0435c7b625f0ca2627f76106a152b1d0",
   "publishedAt": "2026-10-01",
-  "materiallyUpdatedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-20",
   "gameName": "War (card game)",
   "aliases": [
     "War card game"
@@ -15,6 +15,8 @@
   "firstPlayerRule": "Nobody goes first: both players turn up a card at the same time. Anyone may deal.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [
     "If the turned-up cards match in rank, it is War: each player adds one card face down and one face up."
   ],
@@ -27,9 +29,9 @@
       "printedPages": [],
       "pdfPagesOneBased": [],
       "location": "\"The Deal\" and \"The Play\" sections",
-      "checkedAt": "2026-10-01"
+      "checkedAt": "2026-10-20"
     }
   ],
-  "internalEvidence": "Read the Bicycle Cards War page in a browser. \"Anyone may deal first.\" \"Each player turns up a card at the same time and the player with the higher card takes both cards\".",
+  "internalEvidence": "Read the Bicycle Cards War page in a browser. \"Anyone may deal first.\" \"Each player turns up a card at the same time and the player with the higher card takes both cards\". Codex rechecked the complete official HTML rules on 2026-10-20 under the owner's indexing-recovery authorization. The Deal still allows anyone to deal, and The Play still has both players reveal simultaneously. A first-player tie or random starter is therefore inapplicable; explicit presentation flags remove those generic suggestions. The existing clarification about equal-rank cards remains intact: each player adds one face-down and one face-up card. It describes the game's actual card-tie procedure, not a starting-player selection. Local source custody: research/source-files/indexing-oct20-simultaneous/war.html; SHA-256 66289385621dd61696019a6bfcbadd058a2fa2c9a0632cf48f12fe172d4196d8. This is a verified content correction found on an indexed control page, not evidence of the cause of Google's indexing exclusions.",
   "uncertainty": []
 }

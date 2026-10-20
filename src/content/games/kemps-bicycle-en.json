@@ -3,10 +3,10 @@
   "slug": "kemps-bicycle-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
-  "approvedRevision": "dfceb8fc1adba7533ae00902ed26f54bbea25fcd0a97a1927ae5fe5b90c6afc1",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-10-20; prior edition and identity review retained",
+  "approvedRevision": "75f668a118c60217d17b5106132612ac92cdd23e6ac5250bac6d17f1179d4ba0",
   "publishedAt": "2026-10-01",
-  "materiallyUpdatedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-20",
   "gameName": "Kemps",
   "aliases": [
     "Kemps card game",
@@ -16,6 +16,8 @@
   "firstPlayerRule": "Nobody goes first: after “Ready, set, go!” everyone swaps cards with the center at the same time, without turns.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [],
   "interpretation": null,
   "sources": [
@@ -26,9 +28,9 @@
       "printedPages": [],
       "pdfPagesOneBased": [],
       "location": "\"The Play\"",
-      "checkedAt": "2026-10-01"
+      "checkedAt": "2026-10-20"
     }
   ],
-  "internalEvidence": "Read the Bicycle Cards Kemps page in a browser. \"Say, ‘Ready, set, go!’ and begin the round. Each player can discard a card from their hand and then grab any card from the center of the table. It is an ongoing process without structured turns\".",
+  "internalEvidence": "Read the Bicycle Cards Kemps page in a browser. \"Say, ‘Ready, set, go!’ and begin the round. Each player can discard a card from their hand and then grab any card from the center of the table. It is an ongoing process without structured turns\". Codex rechecked the complete official HTML rules on 2026-10-20 under the owner's indexing-recovery authorization. The Play still describes a shared start cue followed by unstructured simultaneous card exchanges. A first-player tie or random starter is therefore inapplicable; explicit presentation flags remove those generic suggestions while preserving the approved answer and source scope. Random partner assignment is a separate setup instruction, not a starting-player choice. Local source custody: research/source-files/indexing-oct20-simultaneous/kemps.html; SHA-256 17657c98bdc3658664489049f35e19187b1afff6788c22cfa1300f1a104cb60d. This is a verified content correction, not evidence of the cause of Google's indexing exclusion.",
   "uncertainty": []
 }

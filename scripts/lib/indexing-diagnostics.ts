@@ -3,6 +3,7 @@ import { inspectIndexedUrl, searchSitemaps, type IndexStatus, type SearchSitemap
 export const indexingSamplePaths = [
   '/', '/games/', '/board-games/',
   '/games/catan-2020-en/', '/games/ticket-to-ride-2015-en/', '/games/wingspan-online-en/',
+  '/games/the-castles-of-burgundy-alea-2019-en/',
   '/tools/', '/game-night-checklist/',
 ] as const;
 

@@ -4,7 +4,7 @@ import { indexingReport, indexingSamplePaths, indexingSnapshot } from '../../scr
 describe('Search Console indexing diagnostics', () => {
   afterEach(() => vi.unstubAllGlobals());
 
-  it('inspects the original key pages plus the tools hub and new checklist', async () => {
+  it('inspects each named recovery and control page once and maps its evidence into the report', async () => {
     const requests: string[] = [];
     const inspectionUrls: string[] = [];
     vi.stubGlobal('fetch', vi.fn(async (input: string, init?: RequestInit) => {
@@ -29,7 +29,9 @@ describe('Search Console indexing diagnostics', () => {
     expect(inspectionUrls).toEqual([
       'https://whogoesfirst.fun/', 'https://whogoesfirst.fun/games/', 'https://whogoesfirst.fun/board-games/',
       'https://whogoesfirst.fun/games/catan-2020-en/', 'https://whogoesfirst.fun/games/ticket-to-ride-2015-en/',
-      'https://whogoesfirst.fun/games/wingspan-online-en/', 'https://whogoesfirst.fun/tools/',
+      'https://whogoesfirst.fun/games/wingspan-online-en/',
+      'https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/',
+      'https://whogoesfirst.fun/tools/',
       'https://whogoesfirst.fun/game-night-checklist/',
     ]);
     expect(new Set(inspectionUrls).size).toBe(inspectionUrls.length);

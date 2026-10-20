@@ -19,6 +19,23 @@ test('Wingspan identifies its online source and later-round rule without inventi
   await expect(page.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText('After rounds 1, 2 and 3');
 });
 
+test('simultaneous card games omit starter tie and picker advice while preserving actual card ties', async ({ page }) => {
+  for (const game of ['kemps', 'nerts', 'war']) {
+    await page.goto(`/games/${game}-bicycle-en/`);
+    const article = page.locator('.game-article');
+    await expect(article.locator('.rule-answer')).toContainText('Nobody goes first:');
+    await expect(article.getByRole('heading', { name: 'If there’s a tie', exact: true })).toHaveCount(0);
+    await expect(article.getByText('If your rules call for a random choice', { exact: false })).toHaveCount(0);
+    await expect(article.locator('.source-document')).toHaveAttribute('href', `https://bicyclecards.com/how-to-play/${game}`);
+    if (game === 'war') {
+      await expect(article.locator('.rule-section').filter({ hasText: 'Rule details' })).toContainText('If the turned-up cards match in rank, it is War: each player adds one card face down and one face up.');
+    }
+  }
+  // A genuinely random starting instruction retains the relevant picker suggestion.
+  await page.goto('/games/wingspan-online-en/');
+  await expect(page.locator('.game-article').getByText('If your rules call for a random choice', { exact: false })).toBeVisible();
+});
+
 test('Brass exposes its setup and round pages without changing the query or top shortcut', async ({ page }) => {
   await page.goto('/games/brass-birmingham-roxley-en/');
   const source = page.locator('.source-list > li').first();

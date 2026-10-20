@@ -3,10 +3,10 @@
   "slug": "nerts-bicycle-en",
   "language": "en",
   "status": "approved",
-  "approvedBy": "Claude editorial review, authorized by the owner on 2026-09-30",
-  "approvedRevision": "ef09f080fafe37018c65a21e10ed3e4c1817c8a52dd4ca4088fa5dcf4aa97f8f",
+  "approvedBy": "Codex source review, authorized by the owner on 2026-10-20; prior edition and identity review retained",
+  "approvedRevision": "4defc592b814ec9a157210620eb9483f7266445b3f602fe0b7325717de57cdc3",
   "publishedAt": "2026-10-01",
-  "materiallyUpdatedAt": "2026-10-01",
+  "materiallyUpdatedAt": "2026-10-20",
   "gameName": "Nerts",
   "aliases": [
     "Nertz",
@@ -17,6 +17,8 @@
   "firstPlayerRule": "Nobody goes first: players play at the same time, as fast as they like, without taking turns.",
   "officialTieBreak": null,
   "houseFallback": null,
+  "tieBreakApplicable": false,
+  "pickerSuggestionApplicable": false,
   "clarifications": [],
   "interpretation": null,
   "sources": [
@@ -27,9 +29,9 @@
       "printedPages": [],
       "pdfPagesOneBased": [],
       "location": "\"The Play\"",
-      "checkedAt": "2026-10-01"
+      "checkedAt": "2026-10-20"
     }
   ],
-  "internalEvidence": "Read the Bicycle Cards Nerts page in a browser. \"Players play simultaneously as fast as they like, not taking turns, moving cards around their own tableau building on the foundations in the common area.\"",
+  "internalEvidence": "Read the Bicycle Cards Nerts page in a browser. \"Players play simultaneously as fast as they like, not taking turns, moving cards around their own tableau building on the foundations in the common area.\" Codex rechecked the complete official HTML rules on 2026-10-20 under the owner's indexing-recovery authorization. The Play still explicitly describes simultaneous play without turns. A first-player tie or random starter is therefore inapplicable; explicit presentation flags remove those generic suggestions while preserving the approved answer and source scope. The source separately resolves simultaneous attempts to play to one foundation, including an unresolved collision tie; that is an in-game rule, not a starting-player tie. Local source custody: research/source-files/indexing-oct20-simultaneous/nerts.html; SHA-256 34dc0e805010b58bc9fd8266a58e631e39da5cac5e223d29dd42e00bef12efb5. This is a verified content correction found on an indexed control page, not evidence of the cause of Google's indexing exclusions.",
   "uncertainty": []
 }
