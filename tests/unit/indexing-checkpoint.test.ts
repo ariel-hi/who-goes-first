@@ -3,13 +3,13 @@ import { checkpointInspection, checkpointOrigin, checkpointRelease, checkpointTa
 import type { Probe } from '../../scripts/lib/growth-report';
 import { inspectIndexedUrl } from '../../scripts/lib/google-api';
 
-const now = () => new Date('2026-10-19T16:02:00Z');
+const now = () => new Date('2026-10-21T16:02:00Z');
 const url = `${checkpointOrigin}${checkpointTargets[0].path}`;
 const healthy = async (path: string): Promise<Probe> => ({
   path, status: 200, url: `${checkpointOrigin}${path}`, robots: '',
   body: `<h1>Game</h1><link rel="canonical" href="${checkpointOrigin}${path}">`,
 });
-const indexed = { verdict: 'PASS', coverageState: 'Submitted and indexed', lastCrawlTime: '2026-10-18T12:00:00Z', googleCanonical: url };
+const indexed = { verdict: 'PASS', coverageState: 'Submitted and indexed', lastCrawlTime: '2026-10-21T12:00:00Z', googleCanonical: url };
 const excluded = { verdict: 'NEUTRAL', coverageState: 'Crawled - currently not indexed' };
 
 describe('October indexing checkpoint', () => {
@@ -33,10 +33,11 @@ describe('October indexing checkpoint', () => {
 
   it('distinguishes predeployment, postdeployment and unusable crawl dates', () => {
     const inspect = (lastCrawlTime: unknown) => checkpointInspection({ ...indexed, lastCrawlTime }, url, now().toISOString());
-    expect(inspect('2026-10-16T12:00:00Z').crawledAfterRelease).toBe(false);
+    expect(inspect('2026-10-18T12:00:00Z').crawledAfterRelease).toBe(false);
+    expect(inspect('2026-10-20T22:29:20Z').crawledAfterRelease).toBe(false);
     expect(inspect(checkpointRelease).crawledAfterRelease).toBe(false);
-    expect(inspect('2026-10-17T16:25:46Z').crawledAfterRelease).toBe(true);
-    for (const date of [undefined, 'invalid', '2026-10-20T00:00:00Z']) expect(inspect(date).crawledAfterRelease).toBeNull();
+    expect(inspect('2026-10-20T22:29:22Z').crawledAfterRelease).toBe(true);
+    for (const date of [undefined, 'invalid', '2026-10-22T00:00:00Z']) expect(inspect(date).crawledAfterRelease).toBeNull();
   });
 
   it('checks all three exact URLs and preserves partial API and live failures without raw errors', async () => {

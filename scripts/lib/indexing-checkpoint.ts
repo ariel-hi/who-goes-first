@@ -3,7 +3,8 @@ import { inspectProbe, type Probe } from './growth-report';
 
 export const checkpointOrigin = 'https://whogoesfirst.fun';
 export const checkpointProperty = `${checkpointOrigin}/`;
-export const checkpointRelease = '2026-10-17T16:25:45Z';
+// Cloudflare Pages success for content release 5fa3b7c9 (check 118923269383).
+export const checkpointRelease = '2026-10-20T22:29:21Z';
 export const checkpointTargets = [
   { name: 'CATAN', path: '/games/catan-2020-en/' },
   { name: 'Wingspan', path: '/games/wingspan-online-en/' },
