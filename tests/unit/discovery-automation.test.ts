@@ -106,19 +106,30 @@ test('the campaign week mixes practical tools, hosting advice and sourced rules 
   expect(campaignForDay(rules, new Date('2026-10-02T03:00:00Z'))?.id).toBe(campaignForDay(rules, new Date('2026-10-01T15:17:00Z'))?.id);
 });
 
-test('the next campaigns avoid the recent live posts across the rotation cutover', () => {
-  const recent: { date: Date; id: string; kind: 'tool' | 'guide' }[] = [
-    { date: new Date('2026-10-06T20:19:09Z'), id: 'timer', kind: 'tool' },
-    { date: new Date('2026-10-08T20:42:02Z'), id: 'letter', kind: 'tool' },
-    { date: new Date('2026-10-09T20:06:41Z'), id: 'checklist', kind: 'guide' },
+test('the expanded rotation avoids recent live campaigns across its October 22 cutover', () => {
+  const recent: { day: string; id: string; kind: 'tool' | 'guide' }[] = [
+    { day: '2026-10-02', id: 'checklist', kind: 'guide' },
+    { day: '2026-10-04', id: 'letter', kind: 'tool' },
+    { day: '2026-10-06', id: 'timer', kind: 'tool' },
+    { day: '2026-10-08', id: 'letter', kind: 'tool' },
+    { day: '2026-10-09', id: 'checklist', kind: 'guide' },
+    { day: '2026-10-11', id: 'scores', kind: 'tool' },
+    { day: '2026-10-13', id: 'teams', kind: 'tool' },
+    { day: '2026-10-15', id: 'timer', kind: 'tool' },
+    { day: '2026-10-16', id: 'table-cards', kind: 'guide' },
+    { day: '2026-10-18', id: 'letter', kind: 'tool' },
+    { day: '2026-10-20', id: 'dice', kind: 'tool' },
+    { day: '2026-10-22', id: 'scores', kind: 'tool' },
   ];
-  for (let offset = 0; offset < 30; offset++) {
-    const date = new Date(Date.UTC(2026, 9, 10 + offset, 15, 17));
+  const dayNumber = (day: string) => Date.parse(`${day}T12:00:00Z`) / 86_400_000;
+  for (let offset = 0; offset < 60; offset++) {
+    const date = new Date(Date.UTC(2026, 9, 23 + offset, 15, 17));
     const selected = campaignForDay([], date);
     if (!selected || selected.kind === 'rule') continue;
-    const repeats = recent.filter(previous => previous.kind === selected.kind && date.getTime() - previous.date.getTime() <= 7 * 86_400_000).map(previous => previous.id);
-    expect(repeats, `recent ${selected.kind} campaigns before ${publicationDay(date)}`).not.toContain(selected.id);
-    recent.push({ date, id: selected.id, kind: selected.kind });
+    const day = publicationDay(date);
+    const repeats = recent.filter(previous => previous.kind === selected.kind && dayNumber(day) - dayNumber(previous.day) <= 20).map(previous => previous.id);
+    expect(repeats, `recent ${selected.kind} campaigns before ${day}`).not.toContain(selected.id);
+    recent.push({ day, id: selected.id, kind: selected.kind });
   }
 });
 
