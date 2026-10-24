@@ -19,8 +19,9 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     '2026-10-07', '2026-10-10', '2026-10-13', '2026-10-25', '2026-10-28',
   ]);
   expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
-  expect(queue).toHaveLength(148);
-  expect(queue.at(-1)?.date).toBe('2026-10-30');
+  expect(queue.slice(0, 148).at(-1)?.date).toBe('2026-10-30');
+  expect(queue).toHaveLength(168);
+  expect(queue.at(-1)?.date).toBe('2026-11-03');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-10-07T13:07:00Z')).filter(pin => pin.art.scene)).toHaveLength(1);
   for (const id of ['game-love-letter-2025-en', 'game-hanabi-rnr-en', 'game-spirit-island-gtg-en']) {

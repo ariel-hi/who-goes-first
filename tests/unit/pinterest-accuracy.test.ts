@@ -33,3 +33,20 @@ test('already-released first-day game campaigns retain their original picker cop
     expect(pin.description).toContain('with its rulebook source and a fair picker for ties.');
   }
 });
+
+test('November replenishment follows the existing queue with distinct sourced rules', () => {
+  const queue = pinQueue();
+  const catalog = new Map(getCatalog().map(rule => [rule.slug, rule]));
+  expect(queue[147]).toMatchObject({ id: 'game-star-realms-white-wizard-en', date: '2026-10-30' });
+  const added = queue.slice(148);
+  expect(added).toHaveLength(20);
+  expect(new Set(added.map(pin => pin.id)).size).toBe(20);
+  expect(added.at(0)?.date).toBe('2026-10-30');
+  expect(added.at(-1)?.date).toBe('2026-11-03');
+  for (const pin of added) {
+    const rule = catalog.get(pin.id.slice('game-'.length));
+    expect(rule?.sources.length).toBeGreaterThan(0);
+    expect(pin.path).toBe(`/games/${rule?.slug}/`);
+    expect(pin.body).toBe(rule?.firstPlayerRule);
+  }
+});

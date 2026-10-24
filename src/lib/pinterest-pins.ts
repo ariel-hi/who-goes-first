@@ -43,6 +43,30 @@ const OCTOBER_RULES = [
   'twilight-imperium-fourth-edition-en',
   'star-realms-white-wizard-en',
 ];
+// Small sourced-rule replenishment after the October 30 queue end. These
+// destinations already have reviewed edition-specific answers and sources.
+const NOVEMBER_RULES = [
+  '7-wonders-architects-repos-en',
+  'a-feast-for-odin-feuerland-en',
+  'aeons-end-indie-original-en',
+  'akropolis-gigamic-en',
+  'alhambra-queen-revised-en',
+  'android-netrunner-ffg-2012-en',
+  'architects-of-the-west-kingdom-garphill-2018-en',
+  'bohnanza-rio-grande-en',
+  'calico',
+  'flamecraft-cardboard-alchemy-en',
+  'horrified-ravensburger-it-2021',
+  'lost-ruins-of-arnak-cge-en',
+  'micromacro-crime-city-spielwiese-en',
+  'parks-keymaster-en-v12',
+  'photosynthesis-blue-orange-en',
+  'star-wars-rebellion-ffg-en',
+  'isle-of-cats-city-of-games-en',
+  'the-quest-for-el-dorado-ravensburger-en-2023',
+  'viticulture-essential-stonemaier-en',
+  'zoo-vadis-bitewing-2023-en',
+];
 const TOOLS = [
   { id: 'silly-contests', path: '/games/themes/silly-contests/', heading: '42 silly ways to decide who goes first', body: 'Hold your breath, make the best monkey sound, or have the stinkiest feet: real starting rules from published games.', campaign: 'hub_silly_contests' },
   { id: 'finger-chooser', path: '/finger-chooser/', heading: 'Finger chooser: everyone touch the screen', body: 'Each player puts a finger on the phone. A spotlight closes in and picks who goes first. Free, no app needed.', campaign: 'tool_finger_chooser' },
@@ -109,6 +133,13 @@ export function pinQueue(): QueuedPin[] {
   extraGames.splice(5, 0, coral);
   extraGames.splice(20, 0, observatory);
   ordered.push(...extraGames, ...laterScenes);
+  for (const slug of games.length ? NOVEMBER_RULES : []) {
+    const pin = makeGamePin(slug);
+    if (!pin || !bySlug.get(slug)?.sources.length || ordered.some(item => item.id === pin.id)) {
+      throw new Error(`Unreviewed or duplicate Pinterest rule: ${slug}`);
+    }
+    ordered.push(pin);
+  }
   return cache = ordered.map((pin, index) => ({ ...pin, date: new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10) }));
 }
 
