@@ -1,8 +1,8 @@
-name: October 21 Google indexing checkpoint
+name: October 25 Google indexing checkpoint
 
 on:
   schedule:
-    - cron: '0 16 21 10 *' # October 21, 09:00 America/Los_Angeles (2026)
+    - cron: '0 16 25 10 *' # October 25, 09:00 America/Los_Angeles (2026)
   workflow_dispatch:
     inputs:
       publish_report:
@@ -14,7 +14,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: google-indexing-checkpoint-oct21
+  group: google-indexing-checkpoint-oct25
   cancel-in-progress: false
 
 jobs:
@@ -26,12 +26,12 @@ jobs:
       id-token: write
       issues: write
     steps:
-      - name: Limit the scheduled run to October 21, 2026 in Pacific time
+      - name: Limit the scheduled run to October 25, 2026 in Pacific time
         id: due
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [[ "$EVENT_NAME" == "workflow_dispatch" || "$(TZ=America/Los_Angeles date +%F)" == "2026-10-21" ]]; then
+          if [[ "$EVENT_NAME" == "workflow_dispatch" || "$(TZ=America/Los_Angeles date +%F)" == "2026-10-25" ]]; then
             echo 'run=true' >> "$GITHUB_OUTPUT"
           fi
       - uses: actions/checkout@v4
@@ -74,13 +74,13 @@ jobs:
           script: |
             const fs = require('node:fs');
             const scheduled = context.eventName === 'schedule';
-            const marker = `<!-- google-indexing-checkpoint-2026-10-21:${scheduled ? 'scheduled' : 'verification'} -->`;
+            const marker = `<!-- google-indexing-checkpoint-2026-10-25:${scheduled ? 'scheduled' : 'verification'} -->`;
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             const reportFile = 'artifacts/indexing-checkpoint/report.md';
             const report = fs.existsSync(reportFile) ? fs.readFileSync(reportFile, 'utf8') :
               'Inspection could not complete. The indexing status of all three pages is **unknown**. Review the linked workflow failure; this is not evidence that the pages are excluded.';
-            const intro = scheduled ? 'October 21 scheduled checkpoint result.' :
-              'Manual cloud verification only; this is not the October 21 scheduled result. The configured checkpoint is October 21, 2026 at 09:00 Pacific (16:00 UTC).';
+            const intro = scheduled ? 'October 25 scheduled checkpoint result.' :
+              'Manual cloud verification only; this is not the October 25 scheduled result. The configured checkpoint is October 25, 2026 at 09:00 Pacific (16:00 UTC).';
             const body = `${marker}\n\n@ariel-hi ${intro}\n\n${report}\n\n[Workflow and retained evidence](${runUrl})\n\nThe check runs on GitHub-hosted servers with the computer off. It checks CATAN, Wingspan and Burgundy without requesting indexing or changing the site.`;
             const issue = (await github.rest.issues.get({ ...context.repo, issue_number: 27 })).data;
             const comments = await github.paginate(github.rest.issues.listComments, { ...context.repo, issue_number: issue.number, per_page: 100 });
