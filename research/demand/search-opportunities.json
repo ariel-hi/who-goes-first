@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-10-26T07:12:58.760Z",
+  "generatedAt": "2026-10-29T06:48:45.010Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-09-26",
-    "end": "2026-10-23"
+    "start": "2026-09-29",
+    "end": "2026-10-26"
   },
   "note": "Observed page demand, not a forecast. Watch rows need more data before changing copy.",
   "opportunities": [
-    {
-      "path": "/games/star-wars-rebellion-ffg-en/",
-      "impressions": 170,
-      "clicks": 1,
-      "ctr": 0.0058823529411764705,
-      "position": 6.794117647058823,
-      "readiness": "experiment",
-      "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
-    },
     {
       "path": "/games/rummy-bicycle-en/",
       "impressions": 120,
       "clicks": 0,
       "ctr": 0,
       "position": 8.275,
+      "readiness": "experiment",
+      "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
+    },
+    {
+      "path": "/games/star-wars-rebellion-ffg-en/",
+      "impressions": 108,
+      "clicks": 1,
+      "ctr": 0.009259259259259259,
+      "position": 6.87962962962963,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
@@ -36,10 +36,10 @@
     },
     {
       "path": "/games/root-leder-standard-en/",
-      "impressions": 63,
+      "impressions": 62,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.412698412698413,
+      "position": 9.5,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
@@ -54,19 +54,10 @@
     },
     {
       "path": "/games/wingspan-online-en/",
-      "impressions": 40,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 8.375,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/choose-who-goes-first/",
       "impressions": 39,
       "clicks": 0,
       "ctr": 0,
-      "position": 12.153846153846153,
+      "position": 8.384615384615385,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -81,10 +72,10 @@
     },
     {
       "path": "/games/concordia-rio-grande-en/",
-      "impressions": 34,
+      "impressions": 33,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.529411764705882,
+      "position": 6.454545454545454,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -94,6 +85,15 @@
       "clicks": 0,
       "ctr": 0,
       "position": 6.774193548387097,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/choose-who-goes-first/",
+      "impressions": 29,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 13.758620689655173,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -170,20 +170,20 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/7-wonders-duel-repos-en/",
-      "impressions": 22,
+      "path": "/games/hues-and-cues-the-op-en/",
+      "impressions": 21,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.7727272727272725,
+      "position": 7.809523809523809,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/",
-      "impressions": 22,
+      "path": "/games/forest-shuffle-dartmoor-lookout-en/",
+      "impressions": 20,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.681818181818182,
+      "position": 7.45,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     }
