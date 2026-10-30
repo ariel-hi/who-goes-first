@@ -1,4 +1,4 @@
-# Indexing upkeep 2026-10-29
+# Indexing upkeep 2026-10-30
 
 ## Live sitemaps
 - All 5 sitemap files load; 1505 URLs listed.
@@ -12,8 +12,8 @@
 
 ## Coverage freshness (1505 sitemap URLs)
 - This run: 150 successful inspections; 0 failed. Indexed (PASS) in this run: 83 of 150.
-- Recent observations (last 3 days, latest attempt successful): 558; indexed (PASS) in those observations: 265.
-- Historical observations (older than 3 days): 947; last observed PASS: 424. These are not current indexing counts.
+- Recent observations (last 3 days, latest attempt successful): 558; indexed (PASS) in those observations: 342.
+- Historical observations (older than 3 days): 947; last observed PASS: 346. These are not current indexing counts.
 - Latest inspection unavailable: 0; previous PASS retained as historical only: 0.
 - Not yet inspected: 0.
 
@@ -25,13 +25,13 @@ These are observations of Google's indexed data at inspection time, not live fet
 
 
 ## Worth a manual "Request indexing"
-- https://whogoesfirst.fun/coin-flip/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:34.895Z)
-- https://whogoesfirst.fun/games/rummy-bicycle-en/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:34.923Z)
-- https://whogoesfirst.fun/games/sherlock-thames-murders-space-cowboys-en/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:34.820Z)
-- https://whogoesfirst.fun/games/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:41.252Z)
-- https://whogoesfirst.fun/board-games/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:41.259Z)
-- https://whogoesfirst.fun/games/catan-2020-en/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:41.250Z)
-- https://whogoesfirst.fun/games/wingspan-online-en/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:47.683Z)
-- https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:34.803Z)
-- https://whogoesfirst.fun/tools/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:47.654Z)
-- https://whogoesfirst.fun/game-night-checklist/ (Crawled - currently not indexed; inspected 2026-10-29T11:34:47.661Z)
+- https://whogoesfirst.fun/coin-flip/ (Crawled - currently not indexed; inspected 2026-10-30T11:34:58.817Z)
+- https://whogoesfirst.fun/games/rummy-bicycle-en/ (Crawled - currently not indexed; inspected 2026-10-30T11:34:58.651Z)
+- https://whogoesfirst.fun/games/sherlock-thames-murders-space-cowboys-en/ (Crawled - currently not indexed; inspected 2026-10-30T11:34:58.659Z)
+- https://whogoesfirst.fun/games/ (Crawled - currently not indexed; inspected 2026-10-30T11:35:05.446Z)
+- https://whogoesfirst.fun/board-games/ (Crawled - currently not indexed; inspected 2026-10-30T11:35:05.645Z)
+- https://whogoesfirst.fun/games/catan-2020-en/ (Crawled - currently not indexed; inspected 2026-10-30T11:35:05.185Z)
+- https://whogoesfirst.fun/games/wingspan-online-en/ (Crawled - currently not indexed; inspected 2026-10-30T11:35:12.082Z)
+- https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/ (Crawled - currently not indexed; inspected 2026-10-30T11:34:58.894Z)
+- https://whogoesfirst.fun/tools/ (Crawled - currently not indexed; inspected 2026-10-30T11:35:12.213Z)
+- https://whogoesfirst.fun/game-night-checklist/ (Crawled - currently not indexed; inspected 2026-10-30T11:35:11.774Z)
