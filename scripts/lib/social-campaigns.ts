@@ -41,7 +41,7 @@ export function hashtagFacets(text: string) {
 }
 
 /** Three sourced rules, three practical tools and a Friday hosting idea per week. */
-export function campaignForDay(rules: PublicRule[], date: Date): SocialCampaign | undefined {
+export function campaignForDay(rules: PublicRule[], date: Date, excludedRuleSlugs?: ReadonlySet<string>): SocialCampaign | undefined {
   if (!Number.isFinite(date.getTime())) throw new Error('A valid campaign date is required.');
   const calendar = new Date(`${publicationDay(date)}T12:00:00Z`);
   const day = Math.floor(calendar.getTime() / 86_400_000);
@@ -54,13 +54,13 @@ export function campaignForDay(rules: PublicRule[], date: Date): SocialCampaign 
     const slot = [0, 2, 4].indexOf(weekday);
     return tagged(tools[((week * 3 + slot) % tools.length + tools.length) % tools.length]);
   }
-  const rule = ruleForDay(rules, calendar);
+  const rule = ruleForDay(rules, calendar, excludedRuleSlugs);
   if (!rule) return undefined;
   return tagged({ id: `rule-${rule.slug}`, kind: 'rule', path: `/games/${rule.slug}/`, image: `/og/${rule.slug}.png`, title: `Who goes first in ${rule.gameName}?`, description: `${rule.firstPlayerRule} Edition: ${rule.editionLabel}.`, text: postText(rule, 270, ' Source and edition below.') });
 }
 
 /** Replies and another site's links do not consume the daily site-post slot. */
-export function isSitePostOnDay(value: { createdAt?: string; text?: string; reply?: unknown; facets?: { features?: { uri?: string }[] }[]; embed?: { external?: { uri?: string } } }, date: Date, origin: string): boolean {
+export function isSitePostOnDay(value: { createdAt?: string; text?: string; reply?: unknown; facets?: { features?: { uri?: string }[] }[]; embed?: { external?: { uri?: string; title?: string } } }, date: Date, origin: string): boolean {
   if (value.reply || !value.createdAt || !Number.isFinite(Date.parse(value.createdAt)) || publicationDay(new Date(value.createdAt)) !== publicationDay(date)) return false;
   const links = [value.embed?.external?.uri, ...(value.facets ?? []).flatMap(facet => (facet.features ?? []).map(feature => feature.uri))];
   // Some manual posts use a visible bare domain instead of a preview card.

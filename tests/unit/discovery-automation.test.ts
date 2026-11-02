@@ -10,10 +10,13 @@ const date = new Date('2026-10-02T15:17:00Z');
 const origin = 'https://whogoesfirst.fun';
 const did = 'did:plc:fixture';
 const campaign: SocialCampaign = { id: 'checklist', kind: 'guide', path: '/game-night-checklist/', image: '/og/game-night-checklist.png', title: 'Checklist', description: 'Plan game night.', text: 'Hosting game night? Try the checklist.' };
-const uri = `at://${did}/app.bsky.feed.post/${publicationKey(date)}`;
 const value = { text: campaign.text, createdAt: date.toISOString(), embed: { external: { uri: `${origin}${campaign.path}` } } };
 
-function fixture(options: { existing?: boolean; manual?: boolean; failure?: 'history' | 'page' | 'image' | 'concurrent'; manyOlder?: boolean } = {}) {
+function fixture(options: { existing?: boolean; manual?: boolean; failure?: 'history' | 'page' | 'image' | 'concurrent'; manyOlder?: boolean; cursor?: boolean; publicationDate?: Date; campaign?: SocialCampaign; prior?: { createdAt: string; path: string; title: string }[] } = {}) {
+  const selected = options.campaign ?? campaign;
+  const fixtureDate = options.publicationDate ?? date;
+  const fixtureUri = `at://${did}/app.bsky.feed.post/${publicationKey(fixtureDate)}`;
+  let savedValue = { text: selected.text, createdAt: fixtureDate.toISOString(), embed: { external: { uri: `${origin}${selected.path}` } } };
   let saved = Boolean(options.existing);
   const bodies: Record<string, unknown>[] = [];
   const request = vi.fn(async (input: string | URL | Request, init?: RequestInit) => {
@@ -21,16 +24,18 @@ function fixture(options: { existing?: boolean; manual?: boolean; failure?: 'his
     const json = (data: unknown, status = 200) => Response.json(data, { status });
     if (url.includes('createSession')) return json({ accessJwt: 'fixture-token', did });
     if (url.includes('getLatestCommit')) return new Headers(init?.headers).get('Authorization') === 'Bearer fixture-token' ? json({ cid: 'before-check' }) : json({ error: 'AuthMissing' }, 401);
-    if (url.includes('getRecord')) return saved ? json({ uri, value }) : json({ error: options.failure === 'history' ? 'AuthRequired' : 'RecordNotFound' }, 400);
-    if (url.includes('getAuthorFeed')) return json({ feed: options.manual ? [{ post: { uri: `at://${did}/app.bsky.feed.post/manual-key`, author: { did }, record: value } }] : options.manyOlder ? Array.from({ length: 100 }, () => ({ post: { uri, author: { did }, record: { ...value, createdAt: '2026-09-30T15:17:00Z' } } })) : [], ...(options.manyOlder ? { cursor: 'older' } : {}) });
-    if (url === `${origin}${campaign.path}`) return new Response(null, { status: options.failure === 'page' ? 404 : 200 });
-    if (url === `${origin}${campaign.image}`) return new Response('png-fixture', { headers: { 'Content-Type': options.failure === 'image' ? 'text/html' : 'image/png' } });
+    if (url.includes('getRecord')) return saved ? json({ uri: fixtureUri, value: savedValue }) : json({ error: options.failure === 'history' ? 'AuthRequired' : 'RecordNotFound' }, 400);
+    if (url.includes('getAuthorFeed')) return json({ feed: options.manual ? [{ post: { uri: `at://${did}/app.bsky.feed.post/manual-key`, author: { did }, record: savedValue } }] : options.manyOlder ? Array.from({ length: 100 }, () => ({ post: { uri: fixtureUri, author: { did }, record: { ...savedValue, createdAt: '2026-09-30T15:17:00Z' } } })) : (options.prior ?? []).map((item, index) => ({ post: { uri: `at://${did}/app.bsky.feed.post/prior-${index}`, author: { did }, record: { createdAt: item.createdAt, embed: { external: { uri: `${origin}${item.path}`, title: item.title } } } } })), ...(options.manyOlder || options.cursor ? { cursor: 'older' } : {}) });
+    if (url.startsWith(`${origin}/`) && init?.method === 'HEAD') return new Response(null, { status: options.failure === 'page' ? 404 : 200 });
+    if (url.startsWith(`${origin}/og/`)) return new Response('png-fixture', { headers: { 'Content-Type': options.failure === 'image' ? 'text/html' : 'image/png' } });
     if (url.includes('uploadBlob')) return json({ blob: { ref: 'image-fixture' } });
     if (url.includes('createRecord')) {
-      bodies.push(JSON.parse(String(init?.body)));
+      const body = JSON.parse(String(init?.body));
+      bodies.push(body);
       if (options.failure === 'concurrent') return json({ error: 'InvalidSwap' }, 400);
+      savedValue = body.record;
       saved = true;
-      return json({ uri });
+      return json({ uri: fixtureUri });
     }
     throw new Error(`Unexpected request: ${url}`);
   });
@@ -44,6 +49,32 @@ test('a verified daily post rerun creates exactly one record, with a clean desti
   expect((await publish(mock.request)).status).toBe('already-published');
   expect(mock.bodies).toHaveLength(1);
   expect(mock.bodies[0]).toMatchObject({ rkey: publicationKey(date), swapCommit: 'before-check', record: { text: campaign.text, embed: { external: { uri: `${origin}${campaign.path}` } } } });
+});
+
+test('a rule post uses a different game when the recent feed already contains that game', async () => {
+  const rules = [
+    { id: 'citadels-a', slug: 'citadels-a', gameName: 'Citadels', editionLabel: '2016', firstPlayerRule: 'The oldest player starts.' },
+    { id: 'citadels-b', slug: 'citadels-b', gameName: 'Citadels', editionLabel: '2020', firstPlayerRule: 'The oldest player starts.' },
+    { id: 'other-game', slug: 'other-game', gameName: 'Other Game', editionLabel: '2026', firstPlayerRule: 'The youngest player starts.' },
+  ] as PublicRule[];
+  const publicationDate = Array.from({ length: 60 }, (_, offset) => new Date(Date.UTC(2026, 9, 31 + offset, 15, 17)))
+    .find(day => campaignForDay(rules, day)?.title === 'Who goes first in Citadels?')!;
+  const first = campaignForDay(rules, publicationDate)!;
+  const mock = fixture({ publicationDate, campaign: first, prior: [{ createdAt: new Date(publicationDate.getTime() - 3 * 86_400_000).toISOString(), path: first.path, title: first.title }] });
+  const result = await publishBluesky({ handle: 'whogoesfirst.fun', password: 'fixture-password', service: 'https://bsky.social', origin, date: publicationDate, campaign: first, rulePool: rules, request: mock.request });
+  expect(result.status).toBe('published');
+  expect(result.selectedCampaign?.path).toBe('/games/other-game/');
+  expect(mock.bodies).toHaveLength(1);
+  expect(mock.bodies[0]).toMatchObject({ record: { embed: { external: { uri: `${origin}/games/other-game/` } } } });
+});
+
+test('a rule post waits when its recent history is truncated', async () => {
+  const publicationDate = new Date('2026-11-02T15:17:00Z');
+  const rules = [{ id: 'one', slug: 'one', gameName: 'One', editionLabel: '2026', firstPlayerRule: 'The youngest player starts.' }] as PublicRule[];
+  const selected = campaignForDay(rules, publicationDate)!;
+  const mock = fixture({ publicationDate, campaign: selected, cursor: true, prior: [{ createdAt: '2026-11-01T15:17:00Z', path: '/games/other/', title: 'Who goes first in Other?' }] });
+  await expect(publishBluesky({ handle: 'whogoesfirst.fun', password: 'fixture-password', service: 'https://bsky.social', origin, date: publicationDate, campaign: selected, rulePool: rules, request: mock.request })).rejects.toThrow('Recent rule history is incomplete');
+  expect(mock.bodies).toHaveLength(0);
 });
 
 test('an earlier manual site post consumes the daily slot before any uploads or writes', async () => {
