@@ -38,7 +38,7 @@ test('November replenishment follows the existing queue with distinct sourced ru
   const queue = pinQueue();
   const catalog = new Map(getCatalog().map(rule => [rule.slug, rule]));
   expect(queue[147]).toMatchObject({ id: 'game-star-realms-white-wizard-en', date: '2026-10-30' });
-  const added = queue.slice(148);
+  const added = queue.slice(148, 168);
   expect(added).toHaveLength(20);
   expect(new Set(added.map(pin => pin.id)).size).toBe(20);
   expect(added.at(0)?.date).toBe('2026-10-30');
@@ -48,5 +48,23 @@ test('November replenishment follows the existing queue with distinct sourced ru
     expect(rule?.sources.length).toBeGreaterThan(0);
     expect(pin.path).toBe(`/games/${rule?.slug}/`);
     expect(pin.body).toBe(rule?.firstPlayerRule);
+  }
+});
+
+test('follow-up queue keeps the first 168 campaigns and extends sourced rules through November 11', () => {
+  const queue = pinQueue();
+  const catalog = new Map(getCatalog().map(rule => [rule.slug, rule]));
+  const added = queue.slice(168);
+  expect(queue[167]).toMatchObject({ id: 'game-zoo-vadis-bitewing-2023-en', date: '2026-11-03' });
+  expect(added).toHaveLength(40);
+  expect(added.at(0)?.date).toBe('2026-11-03');
+  expect(added.at(-1)?.date).toBe('2026-11-11');
+  expect(new Set(queue.map(pin => pin.id)).size).toBe(queue.length);
+  for (const pin of added) {
+    const rule = catalog.get(pin.id.slice('game-'.length));
+    expect(rule?.sources.length).toBeGreaterThan(0);
+    expect(pin.path).toBe(`/games/${rule?.slug}/`);
+    expect(pin.body).toBe(rule?.firstPlayerRule);
+    expect(pin.description).toContain(rule?.editionLabel);
   }
 });

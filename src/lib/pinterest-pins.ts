@@ -67,6 +67,50 @@ const NOVEMBER_RULES = [
   'viticulture-essential-stonemaier-en',
   'zoo-vadis-bitewing-2023-en',
 ];
+// Reviewed November follow-up. Append after the first 168 campaigns so the
+// release ledger keeps every published ID and date unchanged.
+const NOVEMBER_FOLLOWUP_RULES = [
+  '7-wonders-repos-original-en',
+  'abandon-all-artichokes-gamewright-en',
+  'abyss-bombyx-us-en',
+  'acquire-renegade-en',
+  'agent-avenue-nerdlab-en',
+  'aggravation-winning-moves-2023-en',
+  'agricola-zman-original-en',
+  'alchemists-cge-en',
+  'animal-upon-animal-haba-en',
+  'ankh-gods-of-egypt-cmon-en',
+  'apples-apples-mattel-en',
+  'cahoots-gamewright-en',
+  'cryptid-osprey-original-en',
+  'arcs-leder-base-en',
+  'azul-sintra-next-move-en-2024',
+  'baerenpark-lookout-en',
+  'bang-dice-game-dv-giochi-en',
+  'bang-dv-giochi-en',
+  'barrage-cranio-original-en',
+  'beacon-patrol-pandasaurus-en',
+  'bears-vs-babies-exploding-kittens-2023-en',
+  'beyond-the-sun-rio-grande-en',
+  'blokus-junior-mattel-t8138-en',
+  'bomb-busters-cocktail-games-2024-en',
+  'brass-lancashire-roxley-en',
+  'castle-combo-asmodee-en-2024',
+  'cacao-abacus-base-en',
+  'camel-up-eggertspiele-original-en',
+  'candy-land-hasbro-g1726-2025-en',
+  'canopy-weird-city-en',
+  'clue-hasbro-2023-en',
+  'crokinole-nca-en',
+  'cartographers-thunderworks-en',
+  'castles-burgundy-alea-original-en',
+  'castles-mad-king-ludwig-bezier-second-en',
+  'caverna-cave-farmers-lookout-en',
+  'century-spice-road-plan-b-big-box-en',
+  'citadels-zman-2016-en',
+  'cosmic-encounter-ffg-2018-en',
+  'dice-forge-libellud-en',
+];
 const TOOLS = [
   { id: 'silly-contests', path: '/games/themes/silly-contests/', heading: '42 silly ways to decide who goes first', body: 'Hold your breath, make the best monkey sound, or have the stinkiest feet: real starting rules from published games.', campaign: 'hub_silly_contests' },
   { id: 'finger-chooser', path: '/finger-chooser/', heading: 'Finger chooser: everyone touch the screen', body: 'Each player puts a finger on the phone. A spotlight closes in and picks who goes first. Free, no app needed.', campaign: 'tool_finger_chooser' },
@@ -133,7 +177,7 @@ export function pinQueue(): QueuedPin[] {
   extraGames.splice(5, 0, coral);
   extraGames.splice(20, 0, observatory);
   ordered.push(...extraGames, ...laterScenes);
-  for (const slug of games.length ? NOVEMBER_RULES : []) {
+  for (const slug of games.length ? [...NOVEMBER_RULES, ...NOVEMBER_FOLLOWUP_RULES] : []) {
     const pin = makeGamePin(slug);
     if (!pin || !bySlug.get(slug)?.sources.length || ordered.some(item => item.id === pin.id)) {
       throw new Error(`Unreviewed or duplicate Pinterest rule: ${slug}`);
