@@ -1,35 +1,35 @@
 {
   "status": "available",
-  "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-27",
+  "periodStart": "2026-10-02",
+  "periodEnd": "2026-10-31",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 245,
-  "rowSessions": 245,
+  "totalSessions": 177,
+  "rowSessions": 177,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 11,
+  "rowCount": 12,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 208,
-      "engagedSessions": 47
+      "sessions": 143,
+      "engagedSessions": 31
     },
     {
       "name": "Organic Search",
       "sessions": 22,
-      "engagedSessions": 13
-    },
-    {
-      "name": "Referral",
-      "sessions": 8,
-      "engagedSessions": 6
+      "engagedSessions": 12
     },
     {
       "name": "Organic Social",
+      "sessions": 5,
+      "engagedSessions": 5
+    },
+    {
+      "name": "Referral",
       "sessions": 4,
-      "engagedSessions": 4
+      "engagedSessions": 3
     },
     {
       "name": "AI Assistant",
@@ -46,20 +46,26 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 208,
-      "engagedSessions": 47
+      "sessions": 143,
+      "engagedSessions": 31
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 22,
-      "engagedSessions": 13
+      "sessions": 20,
+      "engagedSessions": 11
     },
     {
       "name": "go.bsky.app / referral",
       "channel": "Referral",
-      "sessions": 7,
-      "engagedSessions": 5
+      "sessions": 4,
+      "engagedSessions": 3
+    },
+    {
+      "name": "pinterest.com / referral",
+      "channel": "Organic Social",
+      "sessions": 2,
+      "engagedSessions": 2
     },
     {
       "name": "(not set)",
@@ -68,8 +74,8 @@
       "engagedSessions": 0
     },
     {
-      "name": "bsky.app / referral",
-      "channel": "Referral",
+      "name": "bing / organic",
+      "channel": "Organic Search",
       "sessions": 1,
       "engagedSessions": 1
     },
@@ -92,17 +98,11 @@
       "engagedSessions": 1
     },
     {
-      "name": "pinterest.com / referral",
-      "channel": "Organic Social",
+      "name": "qwant.com / organic",
+      "channel": "Organic Search",
       "sessions": 1,
-      "engagedSessions": 1
-    },
-    {
-      "name": "tr.pinterest.com / referral",
-      "channel": "Organic Social",
-      "sessions": 1,
-      "engagedSessions": 1
+      "engagedSessions": 0
     }
   ],
-  "generatedAt": "2026-10-29T06:48:45.011Z"
+  "generatedAt": "2026-11-02T06:51:07.358Z"
 }

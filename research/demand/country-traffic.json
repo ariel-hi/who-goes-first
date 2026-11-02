@@ -1,35 +1,30 @@
 {
   "status": "available",
-  "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-27",
+  "periodStart": "2026-10-02",
+  "periodEnd": "2026-10-31",
   "source": "Google Analytics 4 Data API (countryId; sessions and screenPageViews)",
-  "totalSessions": 245,
-  "totalScreenPageViews": 567,
-  "namedJourneySessions": 158,
-  "raptiveCountrySessions": 158,
-  "raptiveCountryScreenPageViews": 440,
+  "totalSessions": 177,
+  "totalScreenPageViews": 399,
+  "namedJourneySessions": 92,
+  "raptiveCountrySessions": 92,
+  "raptiveCountryScreenPageViews": 273,
   "unattributedSessions": 0,
   "unattributedScreenPageViews": 0,
-  "reportRowCount": 25,
-  "returnedRows": 25,
+  "reportRowCount": 23,
+  "returnedRows": 23,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
   "topCountries": [
     {
       "countryId": "US",
-      "sessions": 150,
-      "screenPageViews": 424
+      "sessions": 84,
+      "screenPageViews": 256
     },
     {
       "countryId": "SG",
-      "sessions": 40,
+      "sessions": 41,
       "screenPageViews": 41
-    },
-    {
-      "countryId": "CA",
-      "sessions": 6,
-      "screenPageViews": 8
     },
     {
       "countryId": "UZ",
@@ -42,6 +37,11 @@
       "screenPageViews": 14
     },
     {
+      "countryId": "CA",
+      "sessions": 5,
+      "screenPageViews": 7
+    },
+    {
       "countryId": "CN",
       "sessions": 4,
       "screenPageViews": 19
@@ -52,20 +52,20 @@
       "screenPageViews": 5
     },
     {
-      "countryId": "IN",
-      "sessions": 3,
-      "screenPageViews": 3
-    },
-    {
-      "countryId": "TH",
-      "sessions": 3,
+      "countryId": "TR",
+      "sessions": 4,
       "screenPageViews": 4
     },
     {
-      "countryId": "TR",
+      "countryId": "AU",
+      "sessions": 3,
+      "screenPageViews": 10
+    },
+    {
+      "countryId": "IN",
       "sessions": 3,
       "screenPageViews": 3
     }
   ],
-  "generatedAt": "2026-10-29T06:48:45.011Z"
+  "generatedAt": "2026-11-02T06:51:07.358Z"
 }

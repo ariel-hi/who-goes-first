@@ -1,32 +1,16 @@
 {
-  "generatedAt": "2026-10-29T06:48:45.012Z",
+  "generatedAt": "2026-11-02T06:51:07.359Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-09-29",
-    "end": "2026-10-26"
+    "start": "2026-10-03",
+    "end": "2026-10-30"
   },
   "note": "Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.",
   "missingRules": [],
   "unmatchedQueries": [
     {
       "query": "who goes first in uno",
-      "impressions": 4
-    },
-    {
-      "query": "who starts in uno",
       "impressions": 3
-    },
-    {
-      "query": "who goes first",
-      "impressions": 2
-    },
-    {
-      "query": "who starts uno",
-      "impressions": 2
-    },
-    {
-      "query": "first player picker",
-      "impressions": 1
     },
     {
       "query": "mtg who goes first",
@@ -37,7 +21,7 @@
       "impressions": 1
     },
     {
-      "query": "which goes first",
+      "query": "who goes first",
       "impressions": 1
     },
     {
@@ -46,6 +30,14 @@
     },
     {
       "query": "who starts",
+      "impressions": 1
+    },
+    {
+      "query": "who starts in uno",
+      "impressions": 1
+    },
+    {
+      "query": "who starts uno",
       "impressions": 1
     }
   ],
@@ -58,18 +50,11 @@
       "position": 8.3
     },
     {
-      "page": "/games/star-wars-rebellion-ffg-en/",
-      "impressions": 108,
-      "clicks": 1,
-      "ctr": 0.0093,
-      "position": 6.9
-    },
-    {
       "page": "/games/root-leder-standard-en/",
-      "impressions": 62,
+      "impressions": 51,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.5
+      "position": 9.6
     }
   ]
 }
