@@ -45,6 +45,23 @@ describe('changed-page search notifications', () => {
     const f = fixture(); const result = await notifyChangedPages(['/printable-game-night/'], key, false, [], f.fetcher);
     expect(result.status).toBeNull(); expect(f.requests.map(request => request.url)).toEqual([`${searchOrigin}/sitemap.xml`, page]);
   });
+  test('retries a transient public read before sending once', async () => {
+    const f = fixture(); let attempts = 0;
+    const fetcher: typeof fetch = async (input, init) => {
+      if (String(input) === page && attempts++ === 0) return new Response('Unavailable', { status: 503 });
+      return f.fetcher(input, init);
+    };
+    const receipt = await notifyChangedPages([page], key, true, [], fetcher);
+    expect(receipt.status).toBe(202);
+    expect(attempts).toBe(2);
+    expect(f.requests.filter(request => request.method === 'POST')).toHaveLength(1);
+  });
+  test('reports the failing URL and status without sending when preflight stays blocked', async () => {
+    const f = fixture();
+    const fetcher: typeof fetch = async (input, init) => String(input) === page ? new Response('Blocked', { status: 403 }) : f.fetcher(input, init);
+    await expect(notifyChangedPages([page], key, true, [], fetcher)).rejects.toThrow(`Public preflight failed for ${page}: HTTP 403`);
+    expect(f.requests.some(request => request.method === 'POST')).toBe(false);
+  });
   test('refuses unknown, preview and incorrectly canonicalized pages without posting', async () => {
     for (const [path, robots, canonical] of [['/dev/review/', 'index, follow', page], ['/printable-game-night/', 'noindex, follow', page], ['/printable-game-night/', 'index, follow', `${searchOrigin}/`]]) { const f = fixture(robots, canonical); await expect(notifyChangedPages([path!], key, true, [], f.fetcher)).rejects.toThrow(); expect(f.requests.some(request => request.method === 'POST')).toBe(false); }
   });

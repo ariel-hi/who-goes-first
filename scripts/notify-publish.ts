@@ -14,10 +14,17 @@ const previous = existsSync(ledger) ? readFileSync(ledger, 'utf8').trim().split(
   const receipt = JSON.parse(line) as SubmissionReceipt;
   return receipt.status ? receipt.pages : [];
 }) : [];
+const acknowledged = new Map(latestAcknowledgedPages(previous).map(page => [page.url, page]));
 const key = readFileSync('public/indexnow-key.txt', 'utf8').trim();
 console.log(`${urls.length} new or materially changed indexable pages.`);
 for (let offset = 0; offset < urls.length; offset += 20) {
-  const batch = urls.slice(offset, offset + 20);
+  // The cached receipt already proves an unchanged editorial revision was
+  // accepted. Avoid re-reading it on every interrupted large publication.
+  const batch = urls.slice(offset, offset + 20).filter(url => {
+    const prior = acknowledged.get(url);
+    return prior?.editorialDigestAlgorithm !== publishedDigestAlgorithm || prior.editorialDigest !== current.get(url);
+  });
+  if (!batch.length) continue;
   // Preflight each page; skip an acknowledged identical live page on a rerun.
   const plan = await notifyChangedPages(batch, key, false, [], fetch, validateCandidate);
   const fresh = unacknowledgedPublishedPages(plan.pages, previous, current);
@@ -29,6 +36,7 @@ for (let offset = 0; offset < urls.length; offset += 20) {
   mkdirSync('artifacts/indexnow', { recursive: true });
   appendFileSync(ledger, `${JSON.stringify(receipt)}\n`);
   previous.push(...receipt.pages);
+  for (const page of receipt.pages) acknowledged.set(page.url, page);
   console.log(`IndexNow HTTP ${receipt.status}: ${fresh.length} URLs received. Indexing is not guaranteed.`);
 }
 // The first run starts from the verified production baseline, not the historical catalog.

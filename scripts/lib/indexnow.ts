@@ -46,9 +46,23 @@ export async function notifyChangedPages(paths: string[], key: string, send = fa
   }))];
   if (!urls.length || urls.length > 20) throw new Error('Select 1–20 meaningfully changed pages; use the sitemap for the full inventory.');
   async function get(url: string, contentType: RegExp, requireIndexable = true) {
-    const response = await fetcher(url, { redirect: 'error', signal: AbortSignal.timeout(20_000), headers: { 'User-Agent': 'WhoGoesFirst search notification preflight/1.0' } });
-    if (response.status !== 200 || (requireIndexable && excluded.test(response.headers.get('x-robots-tag') || '')) || !contentType.test(response.headers.get('content-type') || '')) throw new Error('Public preflight failed; nothing was submitted.');
-    return response.text();
+    // Public reads can briefly fail during a deployment. Retry only preflight GETs;
+    // an uncertain IndexNow POST must never be sent again blindly.
+    for (let attempt = 0; attempt < 3; attempt++) {
+      let response: Response;
+      try {
+        response = await fetcher(url, { redirect: 'error', signal: AbortSignal.timeout(20_000), headers: { 'User-Agent': 'WhoGoesFirst search notification preflight/1.0' } });
+      } catch (error) {
+        if (attempt < 2) { await new Promise(resolve => setTimeout(resolve, 250 * (attempt + 1))); continue; }
+        throw new Error(`Public preflight failed for ${url}: ${error instanceof Error ? error.message : String(error)}; nothing was submitted.`, { cause: error });
+      }
+      const robots = response.headers.get('x-robots-tag') || '';
+      const type = response.headers.get('content-type') || '';
+      if (response.status === 200 && (!requireIndexable || !excluded.test(robots)) && contentType.test(type)) return response.text();
+      if (attempt < 2 && (response.status === 429 || response.status >= 500)) { await new Promise(resolve => setTimeout(resolve, 250 * (attempt + 1))); continue; }
+      throw new Error(`Public preflight failed for ${url}: HTTP ${response.status}, content-type ${type || '(missing)'}, x-robots-tag ${robots || '(missing)'}; nothing was submitted.`);
+    }
+    throw new Error(`Public preflight failed for ${url}; nothing was submitted.`);
   }
   const sitemap = await get(`${searchOrigin}/sitemap.xml`, /(?:application|text)\/xml/i);
   const published = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]));
