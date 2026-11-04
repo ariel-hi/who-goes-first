@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-03T17:15:15.726Z",
+  "generatedAt": "2026-11-04T17:02:54.270Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-10-04",
-    "end": "2026-10-31"
+    "start": "2026-10-05",
+    "end": "2026-11-01"
   },
   "note": "Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.",
   "missingRules": [],
   "unmatchedQueries": [
     {
       "query": "who goes first in uno",
-      "impressions": 3
+      "impressions": 2
     },
     {
       "query": "mtg who goes first",
@@ -44,17 +44,10 @@
   "lowClickPages": [
     {
       "page": "/games/rummy-bicycle-en/",
-      "impressions": 116,
+      "impressions": 112,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.3
-    },
-    {
-      "page": "/games/root-leder-standard-en/",
-      "impressions": 51,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 9.6
+      "position": 8.2
     }
   ]
 }

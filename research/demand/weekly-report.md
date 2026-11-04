@@ -1,8 +1,8 @@
-# Weekly growth report — 2026-11-03
+# Weekly growth report — 2026-11-04
 
 ## Search (Google, last 7 days of final data vs the 7 before)
-- Clicks: **0** (new)
-- Impressions: **15** (-17%)
+- Clicks: **1** (new)
+- Impressions: **17** (+31%)
 - Published rules: 1339
 
 ## Google indexing sample
@@ -26,33 +26,33 @@ The Search Console API does not provide the Sitemaps report's fetch label. Zero 
 
 This checks 9 named URLs in Google's indexed data, not the current live pages or the full site.
 
-## Traffic (GA4, 2026-10-03 through 2026-11-01)
-- Sessions: **175** · Screen/page views: **396** · Users: 163
-- Screen/page views per session: 2.26
+## Traffic (GA4, 2026-10-04 through 2026-11-02)
+- Sessions: **172** · Screen/page views: **394** · Users: 160
+- Screen/page views per session: 2.29
 
 The live-hostname measurement guard began on 2026-09-28; known CI contamination from earlier dates is excluded. These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic. Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
-- Named US/CA/GB/AU subtotal: 88 sessions. Five-country US/CA/GB/AU/NZ subtotal: 268 screen/page views. These are GA4 observations, not ad-network qualification.
+- Named US/CA/GB/AU subtotal: 83 sessions. Five-country US/CA/GB/AU/NZ subtotal: 262 screen/page views. These are GA4 observations, not ad-network qualification.
 
 
 ## Traffic acquisition (GA4)
-- Direct: 141 reported row sessions (80.6% of GA4 sessions), 30 engaged row sessions.
-- Organic Search: 23 reported row sessions (13.1% of GA4 sessions), 12 engaged row sessions.
+- Direct: 139 reported row sessions (80.8% of GA4 sessions), 31 engaged row sessions.
+- Organic Search: 22 reported row sessions (12.8% of GA4 sessions), 12 engaged row sessions.
 - Organic Social: 5 reported row sessions (2.9% of GA4 sessions), 5 engaged row sessions.
-- Referral: 3 reported row sessions (1.7% of GA4 sessions), 2 engaged row sessions.
-- AI Assistant: 2 reported row sessions (1.1% of GA4 sessions), 1 engaged row sessions.
+- Referral: 3 reported row sessions (1.7% of GA4 sessions), 1 engaged row sessions.
+- AI Assistant: 2 reported row sessions (1.2% of GA4 sessions), 1 engaged row sessions.
 - Unassigned: 1 reported row sessions (0.6% of GA4 sessions), 0 engaged row sessions.
 
 Top source / medium pairs:
-- \(direct\) / \(none\) (Direct): 141 reported row sessions.
-- google / organic (Organic Search): 21 reported row sessions.
-- go\.bsky\.app / referral (Referral): 3 reported row sessions.
+- \(direct\) / \(none\) (Direct): 139 reported row sessions.
+- google / organic (Organic Search): 20 reported row sessions.
+- go\.bsky\.app / referral (Referral): 2 reported row sessions.
 - pinterest\.com / referral (Organic Social): 2 reported row sessions.
 - \(not set\) (Unassigned): 1 reported row sessions.
 
-Dimension rows reconcile with the undimensioned 175 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
+Dimension rows reconcile with the undimensioned 172 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
 ## Affiliate link opens (GA4)
-- Amazon link opens: **0** reported events (2026-10-03 through 2026-11-01).
+- Amazon link opens: **0** reported events (2026-10-04 through 2026-11-02).
 
 Measurement began on 2026-09-28; that first day is partial. Analytics choices can suppress events. Opens are not verified purchases, commissions, or revenue.
 
@@ -61,8 +61,8 @@ Official policies checked 2026-09-28; confirm current requirements before an app
 
 | Network | Published minimum | Available observation | Status / unassessed requirements |
 | --- | --- | --- | --- |
-| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 175 total sessions; 88 sessions from US/CA/GB/AU (50.3% of GA4 sessions); full Tier 1 set unmeasured | Total sessions below the minimum; Tier 1 sessions unknown. Grow, original content, content quality and traffic standards unassessed. |
-| Raptive | 25,000 monthly pageviews within 30 days | 396 GA4 screenPageViews; 268 screen/page views from US/CA/GB/AU/NZ (67.7% of GA4 views) | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
+| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 172 total sessions; 83 sessions from US/CA/GB/AU (48.3% of GA4 sessions); full Tier 1 set unmeasured | Total sessions below the minimum; Tier 1 sessions unknown. Grow, original content, content quality and traffic standards unassessed. |
+| Raptive | 25,000 monthly pageviews within 30 days | 394 GA4 screenPageViews; 262 screen/page views from US/CA/GB/AU/NZ (66.5% of GA4 views) | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
 | Mediavine | $5,000 annual ad revenue | Unknown — annual ad revenue not collected | Unknown. Original content, clean human brand-safe traffic, Google AdSense/AdExchange standing and advertising-compatible reader experience unassessed. |
 
 GA4 screenPageViews combines screen and page views; confirm website pageviews for Raptive. The country report shows 0 sessions outside the returned country rows. No annual ad-revenue evidence is supplied by this job. Mediavine's 2026 publisher programs use prior-calendar-year ad revenue; monthly traffic is not a substitute.
@@ -74,7 +74,7 @@ Sources: [Mediavine and Journey requirements](https://www.mediavine.com/mediavin
 No starting-rule searches for games without a sourced rule yet.
 
 Starting-rule searches that match no known game (possible new games):
-- “who goes first in uno” — 3
+- “who goes first in uno” — 2
 - “mtg who goes first” — 1
 - “pick who goes first” — 1
 - “who goes first” — 1
@@ -84,51 +84,50 @@ Starting-rule searches that match no known game (possible new games):
 - “who starts uno” — 1
 
 ## Rule pages seen but rarely clicked
-- /games/rummy-bicycle-en/ — 116 impressions, 0.0% CTR, position 8.3
-- /games/root-leder-standard-en/ — 51 impressions, 0.0% CTR, position 9.6
+- /games/rummy-bicycle-en/ — 112 impressions, 0.0% CTR, position 8.2
 
 ## Top queries (28 days)
-- “who goes first in root” — 0 clicks, 12 impressions
-- “pick a number” — 0 clicks, 9 impressions
 - “who goes first in wingspan” — 0 clicks, 9 impressions
+- “pick a number” — 0 clicks, 8 impressions
 - “random number generator fun decision maker” — 0 clicks, 8 impressions
 - “pick a finger” — 0 clicks, 7 impressions
-- “forest shuffle dartmoor rules” — 0 clicks, 6 impressions
 - “random team generator” — 0 clicks, 6 impressions
-- “who counts first in crib” — 0 clicks, 6 impressions
 - “coin flip” — 0 clicks, 5 impressions
-- “roll em game rules” — 0 clicks, 5 impressions
+- “forest shuffle dartmoor rules” — 0 clicks, 5 impressions
+- “who counts first in crib” — 0 clicks, 5 impressions
+- “math medalist game” — 0 clicks, 4 impressions
+- “roll em game rules” — 0 clicks, 4 impressions
 
 ## Top pages (28 days)
-- /ways-to-pick-who-goes-first/ — 3 clicks, 62 impressions
-- /games/heat-pedal-to-the-metal-dow-en/ — 2 clicks, 12 impressions
-- /random-number-generator/ — 1 clicks, 89 impressions
-- /games/topp-die-torte-schmidt-de-40659-placement/ — 1 clicks, 24 impressions
+- /ways-to-pick-who-goes-first/ — 2 clicks, 57 impressions
+- /games/heat-pedal-to-the-metal-dow-en/ — 2 clicks, 11 impressions
 - /finger-chooser/ — 1 clicks, 22 impressions
-- / — 1 clicks, 19 impressions
-- /dice-roller/ — 1 clicks, 14 impressions
+- /games/topp-die-torte-schmidt-de-40659-placement/ — 1 clicks, 22 impressions
+- / — 1 clicks, 18 impressions
+- /dice-roller/ — 1 clicks, 11 impressions
 - /games/themes/dealers-left/ — 1 clicks, 11 impressions
-- /games/mansions-of-madness-second-edition-ffg-en/ — 1 clicks, 10 impressions
-- /games/quacks-co-quedlinburg-dash-schmidt-de-summary/ — 1 clicks, 10 impressions
+- /games/quacks-co-quedlinburg-dash-schmidt-de-summary/ — 1 clicks, 9 impressions
+- /games/bruges-dv-giochi-it-summary/ — 1 clicks, 6 impressions
+- /games/rock-hard-1977-devir-en/ — 1 clicks, 5 impressions
 
 ## Discovery improvement queue (tools, guides and rules)
-- Ready to investigate: /games/rummy-bicycle-en/ — 116 impressions, 0 clicks, 0.0% CTR, position 8.3. Check the live search intent, title, description and opening answer; change only with supporting query evidence.
-- Ready to investigate: /ways-to-pick-who-goes-first/ — 62 impressions, 3 clicks, 4.8% CTR, position 6.9. Check the live search intent, title, description and opening answer; change only with supporting query evidence.
-- Ready to investigate: /games/root-leder-standard-en/ — 51 impressions, 0 clicks, 0.0% CTR, position 9.6. Check the live search intent, title, description and opening answer; change only with supporting query evidence.
-- Watch: /games/uno-10020-sn70-en/ — 29 impressions, 0 clicks, 0.0% CTR, position 9.9. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/wingspan-online-en/ — 27 impressions, 0 clicks, 0.0% CTR, position 6.3. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/topp-die-torte-schmidt-de-40659-placement/ — 24 impressions, 1 clicks, 4.2% CTR, position 6.2. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/aqua-garden-uchibacoya-en-rulebook/ — 22 impressions, 0 clicks, 0.0% CTR, position 6.1. Keep observing; this sample is too small to judge the title or click rate.
+- Ready to investigate: /games/rummy-bicycle-en/ — 112 impressions, 0 clicks, 0.0% CTR, position 8.2. Check the live search intent, title, description and opening answer; change only with supporting query evidence.
+- Ready to investigate: /ways-to-pick-who-goes-first/ — 57 impressions, 2 clicks, 3.5% CTR, position 6.8. Check the live search intent, title, description and opening answer; change only with supporting query evidence.
+- Watch: /games/root-leder-standard-en/ — 32 impressions, 0 clicks, 0.0% CTR, position 9.9. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/uno-10020-sn70-en/ — 27 impressions, 0 clicks, 0.0% CTR, position 10.0. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/wingspan-online-en/ — 25 impressions, 0 clicks, 0.0% CTR, position 6.4. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/topp-die-torte-schmidt-de-40659-placement/ — 22 impressions, 1 clicks, 4.5% CTR, position 6.5. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /finger-chooser/ — 22 impressions, 1 clicks, 4.5% CTR, position 16.0. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/john-company-second-edition-wehrlegig-en/ — 21 impressions, 0 clicks, 0.0% CTR, position 6.0. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/aqua-garden-uchibacoya-en-rulebook/ — 21 impressions, 0 clicks, 0.0% CTR, position 6.0. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/gloomhaven-jaws-of-the-lion-cephalofair-en/ — 21 impressions, 0 clicks, 0.0% CTR, position 6.6. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/one-night-ultimate-werewolf-bezier-en/ — 19 impressions, 0 clicks, 0.0% CTR, position 12.2. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/dune-imperium-uprising-dire-wolf-en-2023/ — 17 impressions, 0 clicks, 0.0% CTR, position 6.1. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/one-night-ultimate-werewolf-bezier-en/ — 18 impressions, 0 clicks, 0.0% CTR, position 12.4. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/hues-and-cues-the-op-en/ — 17 impressions, 0 clicks, 0.0% CTR, position 7.4. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/forest-shuffle-dartmoor-lookout-en/ — 17 impressions, 0 clicks, 0.0% CTR, position 7.9. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/concordia-rio-grande-en/ — 16 impressions, 0 clicks, 0.0% CTR, position 8.2. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/themes/youngest-player/ — 16 impressions, 0 clicks, 0.0% CTR, position 8.3. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/century-spice-road-plan-b-big-box-en/ — 16 impressions, 0 clicks, 0.0% CTR, position 12.9. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/dune-imperium-uprising-dire-wolf-en-2023/ — 15 impressions, 0 clicks, 0.0% CTR, position 6.3. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/codenames-pictures-cge-refreshed-en/ — 14 impressions, 0 clicks, 0.0% CTR, position 5.4. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/azul-2018-en/ — 14 impressions, 0 clicks, 0.0% CTR, position 6.2. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/magic-the-gathering-wizards-en/ — 14 impressions, 0 clicks, 0.0% CTR, position 9.9. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/hive-gen42-en/ — 13 impressions, 0 clicks, 0.0% CTR, position 5.8. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/azul-2018-en/ — 13 impressions, 0 clicks, 0.0% CTR, position 6.2. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/7-wonders-duel-repos-en/ — 13 impressions, 0 clicks, 0.0% CTR, position 7.2. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /games/wavelength-cmyk-en/ — 13 impressions, 0 clicks, 0.0% CTR, position 13.5. Keep observing; this sample is too small to judge the title or click rate.
+- Watch: /choose-who-goes-first/ — 13 impressions, 0 clicks, 0.0% CTR, position 18.0. Keep observing; this sample is too small to judge the title or click rate.

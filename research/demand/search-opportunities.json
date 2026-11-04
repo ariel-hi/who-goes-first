@@ -1,72 +1,63 @@
 {
-  "generatedAt": "2026-11-03T17:15:15.725Z",
+  "generatedAt": "2026-11-04T17:02:54.269Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-10-04",
-    "end": "2026-10-31"
+    "start": "2026-10-05",
+    "end": "2026-11-01"
   },
   "note": "Observed page demand, not a forecast. Watch rows need more data before changing copy.",
   "opportunities": [
     {
       "path": "/games/rummy-bicycle-en/",
-      "impressions": 116,
+      "impressions": 112,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.25,
+      "position": 8.205357142857142,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
     {
       "path": "/ways-to-pick-who-goes-first/",
-      "impressions": 62,
-      "clicks": 3,
-      "ctr": 0.04838709677419355,
-      "position": 6.887096774193548,
+      "impressions": 57,
+      "clicks": 2,
+      "ctr": 0.03508771929824561,
+      "position": 6.842105263157895,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
     {
       "path": "/games/root-leder-standard-en/",
-      "impressions": 51,
+      "impressions": 32,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.627450980392156,
-      "readiness": "experiment",
-      "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
+      "position": 9.9375,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
       "path": "/games/uno-10020-sn70-en/",
-      "impressions": 29,
+      "impressions": 27,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.862068965517242,
+      "position": 9.962962962962964,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
       "path": "/games/wingspan-online-en/",
-      "impressions": 27,
+      "impressions": 25,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.296296296296297,
+      "position": 6.4,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
       "path": "/games/topp-die-torte-schmidt-de-40659-placement/",
-      "impressions": 24,
-      "clicks": 1,
-      "ctr": 0.041666666666666664,
-      "position": 6.166666666666667,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/aqua-garden-uchibacoya-en-rulebook/",
       "impressions": 22,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 6.090909090909091,
+      "clicks": 1,
+      "ctr": 0.045454545454545456,
+      "position": 6.454545454545454,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -89,6 +80,15 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
+      "path": "/games/aqua-garden-uchibacoya-en-rulebook/",
+      "impressions": 21,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
       "path": "/games/gloomhaven-jaws-of-the-lion-cephalofair-en/",
       "impressions": 21,
       "clicks": 0,
@@ -99,19 +99,10 @@
     },
     {
       "path": "/games/one-night-ultimate-werewolf-bezier-en/",
-      "impressions": 19,
+      "impressions": 18,
       "clicks": 0,
       "ctr": 0,
-      "position": 12.210526315789474,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/dune-imperium-uprising-dire-wolf-en-2023/",
-      "impressions": 17,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 6.117647058823529,
+      "position": 12.38888888888889,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -125,24 +116,6 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/forest-shuffle-dartmoor-lookout-en/",
-      "impressions": 17,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 7.9411764705882355,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/concordia-rio-grande-en/",
-      "impressions": 16,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 8.1875,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
       "path": "/games/themes/youngest-player/",
       "impressions": 16,
       "clicks": 0,
@@ -152,11 +125,11 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/century-spice-road-plan-b-big-box-en/",
-      "impressions": 16,
+      "path": "/games/dune-imperium-uprising-dire-wolf-en-2023/",
+      "impressions": 15,
       "clicks": 0,
       "ctr": 0,
-      "position": 12.9375,
+      "position": 6.266666666666667,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -170,20 +143,47 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/azul-2018-en/",
-      "impressions": 14,
+      "path": "/games/hive-gen42-en/",
+      "impressions": 13,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.214285714285714,
+      "position": 5.769230769230769,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/magic-the-gathering-wizards-en/",
-      "impressions": 14,
+      "path": "/games/azul-2018-en/",
+      "impressions": 13,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.928571428571429,
+      "position": 6.230769230769231,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/7-wonders-duel-repos-en/",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 7.230769230769231,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/wavelength-cmyk-en/",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 13.538461538461538,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/choose-who-goes-first/",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 18,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     }

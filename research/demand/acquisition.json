@@ -1,24 +1,24 @@
 {
   "status": "available",
-  "periodStart": "2026-10-03",
-  "periodEnd": "2026-11-01",
+  "periodStart": "2026-10-04",
+  "periodEnd": "2026-11-02",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 175,
-  "rowSessions": 175,
+  "totalSessions": 172,
+  "rowSessions": 172,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 12,
+  "rowCount": 13,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 141,
-      "engagedSessions": 30
+      "sessions": 139,
+      "engagedSessions": 31
     },
     {
       "name": "Organic Search",
-      "sessions": 23,
+      "sessions": 22,
       "engagedSessions": 12
     },
     {
@@ -29,7 +29,7 @@
     {
       "name": "Referral",
       "sessions": 3,
-      "engagedSessions": 2
+      "engagedSessions": 1
     },
     {
       "name": "AI Assistant",
@@ -46,20 +46,20 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 141,
-      "engagedSessions": 30
+      "sessions": 139,
+      "engagedSessions": 31
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 21,
+      "sessions": 20,
       "engagedSessions": 11
     },
     {
       "name": "go.bsky.app / referral",
       "channel": "Referral",
-      "sessions": 3,
-      "engagedSessions": 2
+      "sessions": 2,
+      "engagedSessions": 1
     },
     {
       "name": "pinterest.com / referral",
@@ -98,11 +98,11 @@
       "engagedSessions": 1
     },
     {
-      "name": "qwant.com / organic",
-      "channel": "Organic Search",
+      "name": "github.com / referral",
+      "channel": "Referral",
       "sessions": 1,
       "engagedSessions": 0
     }
   ],
-  "generatedAt": "2026-11-03T17:15:15.726Z"
+  "generatedAt": "2026-11-04T17:02:54.270Z"
 }
