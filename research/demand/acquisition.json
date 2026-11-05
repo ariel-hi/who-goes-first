@@ -1,10 +1,10 @@
 {
   "status": "available",
-  "periodStart": "2026-10-04",
-  "periodEnd": "2026-11-02",
+  "periodStart": "2026-10-05",
+  "periodEnd": "2026-11-03",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 172,
-  "rowSessions": 172,
+  "totalSessions": 166,
+  "rowSessions": 166,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
@@ -13,13 +13,13 @@
   "channels": [
     {
       "name": "Direct",
-      "sessions": 139,
+      "sessions": 138,
       "engagedSessions": 31
     },
     {
       "name": "Organic Search",
-      "sessions": 22,
-      "engagedSessions": 12
+      "sessions": 18,
+      "engagedSessions": 11
     },
     {
       "name": "Organic Social",
@@ -27,12 +27,12 @@
       "engagedSessions": 5
     },
     {
-      "name": "Referral",
-      "sessions": 3,
+      "name": "AI Assistant",
+      "sessions": 2,
       "engagedSessions": 1
     },
     {
-      "name": "AI Assistant",
+      "name": "Referral",
       "sessions": 2,
       "engagedSessions": 1
     },
@@ -46,20 +46,14 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 139,
+      "sessions": 138,
       "engagedSessions": 31
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 20,
-      "engagedSessions": 11
-    },
-    {
-      "name": "go.bsky.app / referral",
-      "channel": "Referral",
-      "sessions": 2,
-      "engagedSessions": 1
+      "sessions": 16,
+      "engagedSessions": 10
     },
     {
       "name": "pinterest.com / referral",
@@ -102,7 +96,13 @@
       "channel": "Referral",
       "sessions": 1,
       "engagedSessions": 0
+    },
+    {
+      "name": "go.bsky.app / referral",
+      "channel": "Referral",
+      "sessions": 1,
+      "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-11-04T17:02:54.270Z"
+  "generatedAt": "2026-11-05T06:45:07.623Z"
 }
