@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-11-05T06:45:07.622Z",
+  "generatedAt": "2026-11-06T15:56:21.995Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-10-06",
-    "end": "2026-11-02"
+    "start": "2026-10-07",
+    "end": "2026-11-03"
   },
   "note": "Observed page demand, not a forecast. Watch rows need more data before changing copy.",
   "opportunities": [
     {
       "path": "/games/rummy-bicycle-en/",
-      "impressions": 107,
+      "impressions": 100,
       "clicks": 0,
       "ctr": 0,
-      "position": 8.168224299065422,
+      "position": 8.23,
       "readiness": "experiment",
       "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
     },
     {
       "path": "/ways-to-pick-who-goes-first/",
-      "impressions": 53,
+      "impressions": 46,
       "clicks": 2,
-      "ctr": 0.03773584905660377,
-      "position": 6.830188679245283,
-      "readiness": "experiment",
-      "action": "Check the live search intent, title, description and opening answer; change only with supporting query evidence."
+      "ctr": 0.043478260869565216,
+      "position": 6.804347826086956,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
       "path": "/games/root-leder-standard-en/",
@@ -45,10 +45,10 @@
     },
     {
       "path": "/games/uno-10020-sn70-en/",
-      "impressions": 24,
+      "impressions": 22,
       "clicks": 0,
       "ctr": 0,
-      "position": 7.708333333333333,
+      "position": 7.636363636363637,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -63,28 +63,10 @@
     },
     {
       "path": "/games/gloomhaven-jaws-of-the-lion-cephalofair-en/",
-      "impressions": 19,
+      "impressions": 18,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.473684210526316,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/finger-chooser/",
-      "impressions": 19,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 13.631578947368421,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/aqua-garden-uchibacoya-en-rulebook/",
-      "impressions": 17,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 6.0588235294117645,
+      "position": 6.722222222222222,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -98,11 +80,29 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/one-night-ultimate-werewolf-bezier-en/",
-      "impressions": 16,
+      "path": "/finger-chooser/",
+      "impressions": 17,
       "clicks": 0,
       "ctr": 0,
-      "position": 13.3125,
+      "position": 13.647058823529411,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/one-night-ultimate-werewolf-bezier-en/",
+      "impressions": 15,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 13.866666666666667,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/aqua-garden-uchibacoya-en-rulebook/",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 6.071428571428571,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -126,28 +126,19 @@
     },
     {
       "path": "/games/hive-gen42-en/",
-      "impressions": 13,
+      "impressions": 12,
       "clicks": 0,
       "ctr": 0,
-      "position": 5.769230769230769,
+      "position": 6.083333333333333,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
       "path": "/games/7-wonders-duel-repos-en/",
-      "impressions": 13,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 7.230769230769231,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
-      "path": "/games/azul-2018-en/",
       "impressions": 12,
       "clicks": 0,
       "ctr": 0,
-      "position": 6,
+      "position": 6.916666666666667,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
@@ -161,15 +152,6 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/wavelength-cmyk-en/",
-      "impressions": 12,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 7.75,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
-    {
       "path": "/games/century-spice-road-plan-b-big-box-en/",
       "impressions": 11,
       "clicks": 0,
@@ -179,11 +161,29 @@
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     },
     {
-      "path": "/games/roll-em-fold-em-schmidt-en/",
+      "path": "/games/magic-the-gathering-wizards-en/",
       "impressions": 11,
       "clicks": 0,
       "ctr": 0,
-      "position": 7.545454545454546,
+      "position": 10.181818181818182,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/azul-2018-en/",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 5.7,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/wavelength-cmyk-en/",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 7.8,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     }

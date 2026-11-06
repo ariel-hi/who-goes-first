@@ -1,15 +1,15 @@
 {
   "status": "available",
-  "periodStart": "2026-10-05",
-  "periodEnd": "2026-11-03",
+  "periodStart": "2026-10-06",
+  "periodEnd": "2026-11-04",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 166,
-  "rowSessions": 166,
+  "totalSessions": 169,
+  "rowSessions": 169,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 13,
+  "rowCount": 12,
   "channels": [
     {
       "name": "Direct",
@@ -18,8 +18,8 @@
     },
     {
       "name": "Organic Search",
-      "sessions": 18,
-      "engagedSessions": 11
+      "sessions": 22,
+      "engagedSessions": 10
     },
     {
       "name": "Organic Social",
@@ -27,14 +27,14 @@
       "engagedSessions": 5
     },
     {
-      "name": "AI Assistant",
+      "name": "Referral",
       "sessions": 2,
       "engagedSessions": 1
     },
     {
-      "name": "Referral",
-      "sessions": 2,
-      "engagedSessions": 1
+      "name": "AI Assistant",
+      "sessions": 1,
+      "engagedSessions": 0
     },
     {
       "name": "Unassigned",
@@ -52,8 +52,8 @@
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 16,
-      "engagedSessions": 10
+      "sessions": 20,
+      "engagedSessions": 9
     },
     {
       "name": "pinterest.com / referral",
@@ -86,12 +86,6 @@
       "engagedSessions": 0
     },
     {
-      "name": "gemini.google.com / ai-assistant",
-      "channel": "AI Assistant",
-      "sessions": 1,
-      "engagedSessions": 1
-    },
-    {
       "name": "github.com / referral",
       "channel": "Referral",
       "sessions": 1,
@@ -102,7 +96,13 @@
       "channel": "Referral",
       "sessions": 1,
       "engagedSessions": 1
+    },
+    {
+      "name": "qwant.com / organic",
+      "channel": "Organic Search",
+      "sessions": 1,
+      "engagedSessions": 0
     }
   ],
-  "generatedAt": "2026-11-05T06:45:07.623Z"
+  "generatedAt": "2026-11-06T15:56:21.996Z"
 }
