@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  coverageFreshness, coverageReport, inspectionBudget, inspectionQueue, recordInspectionAttempt,
+  coverageFreshness, coverageObservation, coverageReport, inspectionBudget, inspectionQueue, recordInspectionAttempt,
   requestIndexingCandidates, type Coverage,
 } from '../../scripts/lib/indexing-rotation';
 
@@ -102,5 +102,37 @@ describe('indexing observation freshness', () => {
     };
     expect(requestIndexingCandidates(Object.keys(pages), pages, ['/stale/', '/recovery/'], now).map(page => page.path))
       .toEqual(['/recovery/', '/recent/']);
+  });
+});
+
+describe('saved indexing diagnostics', () => {
+  const path = '/ways-to-pick-who-goes-first/';
+  const checkedAt = '2026-11-06T11:34:28Z';
+  const attemptedAt = '2026-11-06T11:34:22Z';
+
+  it('preserves canonical, fetch and indexing evidence through JSON persistence', () => {
+    const result = {
+      verdict: 'NEUTRAL', coverageState: 'Crawled - currently not indexed', lastCrawlTime: '2026-11-06T09:29:49Z',
+      googleCanonical: 'https://whogoesfirst.fun/choose-who-goes-first/',
+      userCanonical: `https://whogoesfirst.fun${path}`, pageFetchState: 'SUCCESSFUL',
+      robotsTxtState: 'ALLOWED', indexingState: 'INDEXING_ALLOWED',
+    };
+    const saved = JSON.parse(JSON.stringify(coverageObservation(path, result, checkedAt, attemptedAt)));
+    expect(saved).toEqual({ path, ...result, checkedAt, lastAttemptedAt: attemptedAt });
+    const pages: Record<string, Coverage> = { [path]: saved };
+    recordInspectionAttempt(pages, path, '2026-11-07T11:34:22Z');
+    expect(pages[path]).toMatchObject({ ...result, checkedAt });
+    expect(coverageFreshness([path], pages, Date.parse('2026-11-07T12:00:00Z')).unavailable).toEqual([pages[path]]);
+  });
+
+  it('loads old cache entries and replaces them without inventing missing diagnostic values', () => {
+    const pages: Record<string, Coverage> = JSON.parse(JSON.stringify({ [path]: observation(path) }));
+    expect(inspectionQueue([path], pages, 1)).toEqual([path]);
+    recordInspectionAttempt(pages, path, attemptedAt);
+    pages[path] = { ...pages[path]!, googleCanonical: 'https://whogoesfirst.fun/old/' };
+    pages[path] = coverageObservation(path, { verdict: 'NEUTRAL' }, checkedAt, attemptedAt);
+    expect(JSON.parse(JSON.stringify(pages[path]))).toEqual({
+      path, verdict: 'NEUTRAL', coverageState: 'unknown', checkedAt, lastAttemptedAt: attemptedAt,
+    });
   });
 });

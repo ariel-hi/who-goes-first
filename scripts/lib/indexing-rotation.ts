@@ -1,5 +1,9 @@
+import type { IndexStatus } from './google-api';
+
 export type Coverage = {
   path: string; coverageState: string; verdict: string; lastCrawlTime?: string;
+  googleCanonical?: string; userCanonical?: string; pageFetchState?: string;
+  robotsTxtState?: string; indexingState?: string;
   checkedAt: string; lastAttemptedAt?: string;
 };
 
@@ -37,6 +41,21 @@ export function recordInspectionAttempt(pages: Record<string, Coverage>, path: s
   pages[path] = {
     ...(pages[path] ?? { path, coverageState: 'Inspection unavailable', verdict: 'VERDICT_UNSPECIFIED', checkedAt: '' }),
     lastAttemptedAt: attemptedAt,
+  };
+}
+
+// Keep Google's diagnostic fields with the successful observation that supplied
+// them. A later response that omits a field must not inherit an older value.
+export function coverageObservation(path: string, result: IndexStatus, checkedAt: string, lastAttemptedAt: string): Coverage {
+  return {
+    path, coverageState: result.coverageState ?? 'unknown', verdict: result.verdict ?? 'VERDICT_UNSPECIFIED',
+    ...(result.lastCrawlTime !== undefined ? { lastCrawlTime: result.lastCrawlTime } : {}),
+    ...(result.googleCanonical !== undefined ? { googleCanonical: result.googleCanonical } : {}),
+    ...(result.userCanonical !== undefined ? { userCanonical: result.userCanonical } : {}),
+    ...(result.pageFetchState !== undefined ? { pageFetchState: result.pageFetchState } : {}),
+    ...(result.robotsTxtState !== undefined ? { robotsTxtState: result.robotsTxtState } : {}),
+    ...(result.indexingState !== undefined ? { indexingState: result.indexingState } : {}),
+    checkedAt, lastAttemptedAt,
   };
 }
 

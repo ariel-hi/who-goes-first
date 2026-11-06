@@ -1,7 +1,7 @@
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { googleAccessToken, inspectIndexedUrl, searchSitemaps, submitSitemap } from './lib/google-api';
 import { indexingSamplePaths } from './lib/indexing-diagnostics';
-import { coverageReport, inspectionBudget, inspectionQueue, recordInspectionAttempt, requestIndexingCandidates, type Coverage } from './lib/indexing-rotation';
+import { coverageObservation, coverageReport, inspectionBudget, inspectionQueue, recordInspectionAttempt, requestIndexingCandidates, type Coverage } from './lib/indexing-rotation';
 
 // Daily Search Console upkeep: confirm the live sitemaps load, submit missing
 // sitemaps once, and inspect a rotating batch of sitemap URLs so
@@ -100,10 +100,7 @@ for (let i = 0; i < queue.length; i += 5) {
     recordInspectionAttempt(coverage.pages, path, lastAttemptedAt);
     try {
       const result = await inspectIndexedUrl(token, property, new URL(path, origin).href);
-      coverage.pages[path] = {
-        path, coverageState: result.coverageState ?? 'unknown', verdict: result.verdict ?? 'VERDICT_UNSPECIFIED',
-        ...(result.lastCrawlTime ? { lastCrawlTime: result.lastCrawlTime } : {}), checkedAt: new Date().toISOString(), lastAttemptedAt,
-      };
+      coverage.pages[path] = coverageObservation(path, result, new Date().toISOString(), lastAttemptedAt);
       successfulPaths.push(path);
     } catch { inspectionErrors++; }
   }));
