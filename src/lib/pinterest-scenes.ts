@@ -38,4 +38,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_observatory_number',
     art: { seed: 'observatory-number', scene: 'observatory', kicker: 'A number among the stars', title: 'Leave it\nto chance.', body: 'Draw a fair random number in any range.', cta: 'Try the free number picker' },
   },
+  {
+    id: 'scene-glasshouse-picker', path: '/',
+    title: 'Rainy glasshouse game night: pick who starts',
+    description: 'Original AI-created glasshouse tabletop scene with a curved tile path and painted wooden meeples. At your real game night, use the free first-player picker with names or numbered seats. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_glasshouse_picker',
+    art: { seed: 'glasshouse-picker', scene: 'glasshouse', kicker: 'A fresh start for game night', title: 'Who starts\nthe next game?', body: 'Pick a starting player fairly.', cta: 'Try the free player picker' },
+  },
+  {
+    id: 'scene-city-cafe-checklist', path: '/game-night-checklist/',
+    title: 'Cozy café game night: a free planning checklist',
+    description: 'Original AI-created café tabletop scene with painted wooden meeples and warm lights. Plan guests, games and table setup with a free game-night checklist you can print or use on your phone. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_city_cafe_checklist',
+    art: { seed: 'city-cafe-checklist', scene: 'city-cafe', kicker: 'Make space to play', title: 'Game night,\nready.', body: 'A simple plan for guests, games and setup.', cta: 'Open the free checklist' },
+  },
+  {
+    id: 'scene-desert-canyon-turn-order', path: '/turn-order-generator/',
+    title: 'Canyon game night: shuffle the whole turn order',
+    description: 'Original AI-created miniature canyon path with painted wooden meeples. For your real game night, enter names and shuffle them into a random turn order with our free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_desert_canyon_turn_order',
+    art: { seed: 'desert-canyon-turn-order', scene: 'desert-canyon', kicker: 'Your next turn awaits', title: 'Who’s next?', body: 'Shuffle everyone into a fair turn order.', cta: 'Try the free turn-order tool' },
+  },
 ];

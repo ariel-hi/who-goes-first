@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "batches": [
+    {
+      "id": "scene-led-2026-11-06-a",
+      "preparedAt": "2026-11-06",
+      "baseline": "Authenticated October 7–November 6 Pin Stats: botanical reference 3381 impressions, 8 saves, 5 outbound clicks; café reference 804, 5, 1; miniature-world reference 13971, 50, 5. Publication ages unknown, so no conversion winner is established.",
+      "hypothesis": "Distinct scene compositions with practical, destination-matched hooks may earn saves and outbound clicks; compare same-age public Pins after release rather than ranking against older lifetime counts.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-20 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-glasshouse-picker",
+          "scene": "glasshouse",
+          "background": "src/assets/pinterest/glasshouse.png",
+          "renderedPin": "/pins/q/scene-glasshouse-picker.png",
+          "plannedUtcDate": "2026-11-11",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Original rain-washed glasshouse and curved tabletop path test the botanical composition with a shorter fair-start hook.",
+          "title": "Rainy glasshouse game night: pick who starts",
+          "copy": "Pick a starting player fairly.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_glasshouse_picker"
+        },
+        {
+          "queueId": "scene-city-cafe-checklist",
+          "scene": "city-cafe",
+          "background": "src/assets/pinterest/city-cafe.png",
+          "renderedPin": "/pins/q/scene-city-cafe-checklist.png",
+          "plannedUtcDate": "2026-11-11",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "An original rainy city café tabletop tests the cozy tactile theme with a concrete hosting-plan promise.",
+          "title": "Cozy café game night: a free planning checklist",
+          "copy": "A simple plan for guests, games and setup.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "scene_city_cafe_checklist"
+        },
+        {
+          "queueId": "scene-desert-canyon-turn-order",
+          "scene": "desert-canyon",
+          "background": "src/assets/pinterest/desert-canyon.png",
+          "renderedPin": "/pins/q/scene-desert-canyon-turn-order.png",
+          "plannedUtcDate": "2026-11-12",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "An original terraced canyon path tests a layered miniature world with an exact turn-order-tool promise.",
+          "title": "Canyon game night: shuffle the whole turn order",
+          "copy": "Shuffle everyone into a fair turn order.",
+          "destination": "https://whogoesfirst.fun/turn-order-generator/",
+          "campaign": "scene_desert_canyon_turn_order"
+        }
+      ]
+    }
+  ]
+}

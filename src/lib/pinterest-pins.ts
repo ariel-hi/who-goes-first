@@ -176,7 +176,7 @@ export function pinQueue(): QueuedPin[] {
   // dates stay fixed; no scheduled day contains more than five Pins.
   extraGames.splice(5, 0, coral);
   extraGames.splice(20, 0, observatory);
-  ordered.push(...extraGames, ...laterScenes);
+  ordered.push(...extraGames);
   for (const slug of games.length ? [...NOVEMBER_RULES, ...NOVEMBER_FOLLOWUP_RULES] : []) {
     const pin = makeGamePin(slug);
     if (!pin || !bySlug.get(slug)?.sources.length || ordered.some(item => item.id === pin.id)) {
@@ -184,6 +184,9 @@ export function pinQueue(): QueuedPin[] {
     }
     ordered.push(pin);
   }
+  // New scene batches use the earliest unused future slots. Earlier IDs and
+  // release dates stay stable even when a long rule queue delays these scenes.
+  ordered.push(...laterScenes);
   return cache = ordered.map((pin, index) => ({ ...pin, date: new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10) }));
 }
 

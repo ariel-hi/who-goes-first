@@ -59,7 +59,7 @@ export async function renderCardImage(heading: string, text: string, footer: str
   return new Resvg(svg, { fitTo: { mode: 'width', value: 1200 }, font: { loadSystemFonts: false } }).render().asPng();
 }
 
-export type PinArt = { kicker: string; lead?: string; title: string; body: string; cta: string; seed: string; scene?: 'woodland' | 'autumn' | 'sky-railway' | 'coral-reef' | 'observatory' };
+export type PinArt = { kicker: string; lead?: string; title: string; body: string; cta: string; seed: string; scene?: 'woodland' | 'autumn' | 'sky-railway' | 'coral-reef' | 'observatory' | 'glasshouse' | 'city-cafe' | 'desert-canyon' };
 
 // Bold, warm palettes: [background, deep accent, card, piece colours]. Picked
 // per pin from its id so a board of Pins looks varied but stays on brand.
@@ -158,5 +158,9 @@ async function renderScenePin(art: PinArt, host: string, draft: boolean): Promis
     ]),
   ]);
   const svg = await satori(tree as unknown as Parameters<typeof satori>[0], { width: 1000, height: 1500, fonts: loadFonts() });
-  return new Resvg(svg, { font: { loadSystemFonts: false } }).render().asPng();
+  const png = new Resvg(svg, { font: { loadSystemFonts: false } }).render().asPng();
+  if (!draft && 'renderedSha256' in review && createHash('sha256').update(png).digest('hex') !== review.renderedSha256) {
+    throw new Error(`Pinterest scene ${art.scene} rendered image changed since visual review`);
+  }
+  return png;
 }

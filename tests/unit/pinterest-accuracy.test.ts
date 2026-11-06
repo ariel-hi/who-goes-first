@@ -54,7 +54,7 @@ test('November replenishment follows the existing queue with distinct sourced ru
 test('follow-up queue keeps the first 168 campaigns and extends sourced rules through November 11', () => {
   const queue = pinQueue();
   const catalog = new Map(getCatalog().map(rule => [rule.slug, rule]));
-  const added = queue.slice(168);
+  const added = queue.slice(168, 208);
   expect(queue[167]).toMatchObject({ id: 'game-zoo-vadis-bitewing-2023-en', date: '2026-11-03' });
   expect(added).toHaveLength(40);
   expect(added.at(0)?.date).toBe('2026-11-03');
