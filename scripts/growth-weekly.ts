@@ -11,6 +11,7 @@ import { summarizeCountryTraffic, type CountryTrafficSummary, type UnavailableCo
 import { indexingReport, indexingSnapshot } from './lib/indexing-diagnostics';
 import { acquisitionReport, summarizeAcquisition, type AcquisitionSummary, type UnavailableAcquisition } from './lib/acquisition';
 import { affiliateEventsReport, affiliateEventsSummary, affiliateMeasurementStart, type AffiliateEventsSnapshot } from './lib/affiliate-events';
+import { collectSearchPerformance, searchPerformanceMetadata, searchPerformanceWindows } from './lib/search-performance';
 
 // Weekly job: turns Search Console demand into a research queue for the rule
 // pipeline and writes a traffic report with ad-network readiness.
@@ -27,14 +28,21 @@ const federatedToken = process.env.GOOGLE_ACCESS_TOKEN?.trim();
 if (!federatedToken && !credentials) { console.log('No Google credentials are configured; skipping the weekly growth job.'); process.exit(0); }
 
 const token = federatedToken || await googleAccessToken(credentials!, ['https://www.googleapis.com/auth/webmasters.readonly', ...(gaProperty ? ['https://www.googleapis.com/auth/analytics.readonly'] : [])]);
-const end = daysAgo(3);
-const window28 = { start: daysAgo(30), end };
+const performanceWindows = searchPerformanceWindows(new Date().toISOString().slice(0, 10));
+const end = performanceWindows.twentyEightDay.current.end;
+const window28 = performanceWindows.twentyEightDay.current;
 const [queries, pages, thisWeek, lastWeek] = await Promise.all([
   searchAnalytics(token, property, window28.start, end, ['query']),
   searchAnalytics(token, property, window28.start, end, ['page']),
-  searchAnalytics(token, property, daysAgo(9), end, ['date']),
-  searchAnalytics(token, property, daysAgo(16), daysAgo(10), ['date']),
+  searchAnalytics(token, property, performanceWindows.sevenDay.current.start, end, ['date']),
+  searchAnalytics(token, property, performanceWindows.sevenDay.previous.start, performanceWindows.sevenDay.previous.end, ['date']),
 ]);
+// Keep exact comparisons alongside the existing report without coupling its
+// availability to optional page/query or prior-period requests.
+const performanceSnapshot = collectSearchPerformance(property, performanceWindows,
+  (start, finish, dimensions) => searchAnalytics(token, property, start, finish, dimensions), pages)
+  .catch(() => ({ ...searchPerformanceMetadata(property, performanceWindows), status: 'unavailable',
+    windows: performanceWindows, reason: 'Search performance comparison unavailable; existing report preserved.' }));
 const games = getBoardGames().map(game => ({ identityId: game.identityId, name: game.name, ...(game.bggId ? { bggId: game.bggId } : {}), hasRule: game.rules.length > 0 }));
 const demand = rankDemand(queries, pages, games, origin);
 const opportunities = searchOpportunities(pages, origin, new Set(Object.values(sitemapEntries()).flat().map(entry => entry.path)));
@@ -67,7 +75,9 @@ if (gaProperty && trafficWindow.days > 0) {
   }
 }
 
+const performance = await performanceSnapshot;
 mkdirSync('research/demand', { recursive: true });
+writeFileSync('research/demand/search-performance.json', `${JSON.stringify(performance, null, 2)}\n`);
 writeFileSync('research/demand/search-opportunities.json', `${JSON.stringify({ generatedAt: new Date().toISOString(), property, window: window28, note: 'Observed page demand, not a forecast. Watch rows need more data before changing copy.', opportunities }, null, 2)}\n`);
 if (traffic) writeFileSync('research/demand/traffic-metrics.json', `${JSON.stringify(ga4TrafficMetrics(trafficWindow.start, trafficWindow.end, traffic.sessions, traffic.screenPageViews), null, 2)}\n`);
 const countrySnapshot = country ?? {
@@ -104,6 +114,8 @@ const report = `# Weekly growth report — ${new Date().toISOString().slice(0, 1
 - Clicks: **${weekNow.clicks.toLocaleString('en')}** (${change(weekNow.clicks, weekBefore.clicks)})
 - Impressions: **${weekNow.impressions.toLocaleString('en')}** (${change(weekNow.impressions, weekBefore.impressions)})
 - Published rules: ${getCatalog().length}
+
+[Exact sitewide, page and visible page/query comparisons](search-performance.json): ${performance.status}. Missing rows are not zero or proof of new/disappearing rankings.
 
 ${indexingReport(indexing)}
 ${traffic ? `## Traffic (GA4, ${trafficWindow.start} through ${trafficWindow.end})
