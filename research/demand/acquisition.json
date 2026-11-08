@@ -1,7 +1,7 @@
 {
   "status": "available",
-  "periodStart": "2026-10-06",
-  "periodEnd": "2026-11-04",
+  "periodStart": "2026-10-08",
+  "periodEnd": "2026-11-06",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
   "totalSessions": 169,
   "rowSessions": 169,
@@ -9,17 +9,17 @@
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 12,
+  "rowCount": 11,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 138,
-      "engagedSessions": 31
+      "sessions": 142,
+      "engagedSessions": 25
     },
     {
       "name": "Organic Search",
-      "sessions": 22,
-      "engagedSessions": 10
+      "sessions": 19,
+      "engagedSessions": 9
     },
     {
       "name": "Organic Social",
@@ -32,11 +32,6 @@
       "engagedSessions": 1
     },
     {
-      "name": "AI Assistant",
-      "sessions": 1,
-      "engagedSessions": 0
-    },
-    {
       "name": "Unassigned",
       "sessions": 1,
       "engagedSessions": 0
@@ -46,14 +41,14 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 138,
-      "engagedSessions": 31
+      "sessions": 142,
+      "engagedSessions": 25
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 20,
-      "engagedSessions": 9
+      "sessions": 17,
+      "engagedSessions": 8
     },
     {
       "name": "pinterest.com / referral",
@@ -80,12 +75,6 @@
       "engagedSessions": 1
     },
     {
-      "name": "chatgpt.com / ai-assistant",
-      "channel": "AI Assistant",
-      "sessions": 1,
-      "engagedSessions": 0
-    },
-    {
       "name": "github.com / referral",
       "channel": "Referral",
       "sessions": 1,
@@ -102,7 +91,13 @@
       "channel": "Organic Search",
       "sessions": 1,
       "engagedSessions": 0
+    },
+    {
+      "name": "tr.pinterest.com / referral",
+      "channel": "Organic Social",
+      "sessions": 1,
+      "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-11-06T15:56:21.996Z"
+  "generatedAt": "2026-11-08T23:30:44.411Z"
 }
