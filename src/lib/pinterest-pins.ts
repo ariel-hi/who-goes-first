@@ -187,6 +187,10 @@ export function pinQueue(): QueuedPin[] {
   // New scene batches use the earliest unused future slots. Earlier IDs and
   // release dates stay stable even when a long rule queue delays these scenes.
   ordered.push(...laterScenes);
+  // Two distinct utility cards complete the small November 10 creative batch.
+  // They follow the scene majority and preserve every prior queue position.
+  ordered.push({ id: 'tool-card-draw-dealer-nov', path: '/card-draw/', title: 'No deck? Draw a card to choose the dealer', heading: 'Draw a card for the deal', body: 'Take turns drawing from a shuffled 52-card deck. Cards do not repeat until you reshuffle.', art: { seed: 'card-draw-dealer-nov', kicker: 'A deck in your browser', title: 'Who deals\nfirst?', body: 'Draw a card each from a shuffled deck.', cta: 'Open the free card draw' }, description: 'Need to choose a dealer without a deck? Draw cards from a shuffled 52-card deck in your browser. Cards do not repeat until you reshuffle. Free, no account needed.', campaign: 'tool_card_draw_dealer' });
+  ordered.push({ id: 'tool-score-keeper-save-nov', path: '/score-keeper/', title: 'Keep game-night scores on your phone', heading: 'Keep score on your phone', body: 'Add players and points as you play. Scores stay on this device, even after a refresh.', art: { seed: 'score-keeper-save-nov', kicker: 'Put down the score pad', title: 'Keep every\npoint in view.', body: 'Add players and tap to score.', cta: 'Try the free score keeper' }, description: 'Keep board and card game scores on your phone. Add players and points, see the leader, and keep scores on this device after a refresh. Free, no account needed.', campaign: 'tool_score_keeper_local' });
   return cache = ordered.map((pin, index) => ({ ...pin, date: new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10) }));
 }
 

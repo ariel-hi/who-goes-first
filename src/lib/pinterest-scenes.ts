@@ -59,4 +59,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_desert_canyon_turn_order',
     art: { seed: 'desert-canyon-turn-order', scene: 'desert-canyon', kicker: 'Your next turn awaits', title: 'Who’s next?', body: 'Shuffle everyone into a fair turn order.', cta: 'Try the free turn-order tool' },
   },
+  {
+    id: 'scene-canal-courtyard-picker', path: '/',
+    title: 'Canal courtyard game night: choose who starts',
+    description: 'Original AI-created canal courtyard tabletop scene with a winding tile path and painted wooden meeples. At your real table, use the free first-player picker with names or numbered seats. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_canal_courtyard_picker',
+    art: { seed: 'canal-courtyard-picker', scene: 'canal-courtyard', kicker: 'A fair first turn', title: 'Ready to play?\nPick who starts.', body: 'Choose a starting player in seconds.', cta: 'Try the free player picker' },
+  },
+  {
+    id: 'scene-coastal-porch-checklist', path: '/game-night-checklist/',
+    title: 'Coastal porch game night: a free hosting checklist',
+    description: 'Original AI-created coastal porch tabletop scene with wooden game pieces and a blank planning sheet. Use the free game-night checklist to plan guests, games and table setup on your phone or in print. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_coastal_porch_checklist',
+    art: { seed: 'coastal-porch-checklist', scene: 'coastal-porch', kicker: 'Make room to play', title: 'A calmer\ngame night.', body: 'Plan the guests, games and setup.', cta: 'Open the free checklist' },
+  },
+  {
+    id: 'scene-winter-market-teams', path: '/random-team-generator/',
+    title: 'Winter market game night: split into teams',
+    description: 'Original AI-created miniature winter market with branching paths and painted wooden meeples. For your real game night, enter names and split players into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_winter_market_teams',
+    art: { seed: 'winter-market-teams', scene: 'winter-market', kicker: 'Find your side', title: 'Two teams.\nOne game night.', body: 'Split the group into random teams.', cta: 'Try the free team generator' },
+  },
 ];

@@ -49,6 +49,88 @@
           "campaign": "scene_desert_canyon_turn_order"
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-10-a",
+      "preparedAt": "2026-11-10",
+      "baseline": "The queue ended November 12 with one item on that date. Authenticated October 11–November 10 reference Pin Stats: botanical 3308 impressions, 8 saves and 5 outbound clicks; cozy 823, 5 and 1; layered world 14101, 49 and 5. Publication ages are unknown and the account Top Pins panels show Not enough data to display.",
+      "hypothesis": "A majority of new scene Pins with distinct practical hooks can keep the existing RSS supply active while earning saves and outbound clicks; compare their same-age results after public availability, without assuming a feed release means a Pinterest Pin or a site visitor.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-21 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-canal-courtyard-picker",
+          "scene": "canal-courtyard",
+          "background": "src/assets/pinterest/canal-courtyard.png",
+          "renderedPin": "/pins/q/scene-canal-courtyard-picker.png",
+          "renderedSha256": "de8d55fdacd1d02f46591218252a4d1aebf1488a19328ae3786f1ed05c69f33c",
+          "plannedUtcDate": "2026-11-12",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Original canal courtyard and single bridge test a fresh curved-path composition with a direct first-player picker promise.",
+          "title": "Canal courtyard game night: choose who starts",
+          "copy": "Choose a starting player in seconds.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_canal_courtyard_picker"
+        },
+        {
+          "queueId": "scene-coastal-porch-checklist",
+          "scene": "coastal-porch",
+          "background": "src/assets/pinterest/coastal-porch.png",
+          "renderedPin": "/pins/q/scene-coastal-porch-checklist.png",
+          "renderedSha256": "446ced5b32df8ba6e2f9500d7de6042758f5990c37f6d4a17a519ca4f42938d2",
+          "plannedUtcDate": "2026-11-12",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "A new bright coastal porch arrangement tests the cozy tactile table theme with an exact planning-checklist promise.",
+          "title": "Coastal porch game night: a free hosting checklist",
+          "copy": "Plan the guests, games and setup.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "scene_coastal_porch_checklist"
+        },
+        {
+          "queueId": "scene-winter-market-teams",
+          "scene": "winter-market",
+          "background": "src/assets/pinterest/winter-market.png",
+          "renderedPin": "/pins/q/scene-winter-market-teams.png",
+          "renderedSha256": "69f0dfaca7d3d4f49cb3fa6c6884b501c8c72246661f6c4aadedd632250bc9a5",
+          "plannedUtcDate": "2026-11-12",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Original branching winter-market miniature tests layered-world saving intent with a useful random-team promise.",
+          "title": "Winter market game night: split into teams",
+          "copy": "Split the group into random teams.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_winter_market_teams"
+        },
+        {
+          "queueId": "tool-card-draw-dealer-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-card-draw-dealer-nov.png",
+          "renderedSha256": "1d63a8dba661588224f6494ac2d7c8bbc84b71d841e19453986d5b8bffc3fa63",
+          "artworkReview": "Codex, 2026-11-10: deterministic card visually checked full-size and at 320 x 480. Stylized dice motif has standard pips; no malformed faces. Headline, claim, CTA and card-draw destination match.",
+          "plannedUtcDate": "2026-11-12",
+          "parentReference": null,
+          "selection": "Minority practical-tool control: a dealer-selection hook for the shuffled 52-card draw, a destination absent from the earlier tool queue.",
+          "title": "No deck? Draw a card to choose the dealer",
+          "copy": "Draw a card each from a shuffled deck.",
+          "destination": "https://whogoesfirst.fun/card-draw/",
+          "campaign": "tool_card_draw_dealer"
+        },
+        {
+          "queueId": "tool-score-keeper-save-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-score-keeper-save-nov.png",
+          "renderedSha256": "963fdeb95c42ed869573c1647777f82d6c67cc81ab0efa191f7fb92af857f9d3",
+          "artworkReview": "Codex, 2026-11-10: deterministic card visually checked full-size and at 320 x 480. Stylized dice motif has standard pips; no malformed faces. Headline, local-score claim, CTA and score-keeper destination match.",
+          "plannedUtcDate": "2026-11-13",
+          "parentReference": null,
+          "selection": "Minority practical-tool control: local score persistence is a distinct useful promise from the older generic score-keeper card.",
+          "title": "Keep game-night scores on your phone",
+          "copy": "Add players and tap to score.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "tool_score_keeper_local"
+        }
+      ]
     }
   ]
 }
