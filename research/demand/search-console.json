@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-09T06:52:36.785Z",
+  "generatedAt": "2026-11-10T17:04:33.654Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-10-10",
-    "end": "2026-11-06"
+    "start": "2026-10-11",
+    "end": "2026-11-07"
   },
   "note": "Research priority input. Games are ranked by Search Console impressions for starting-player queries that name them. Demand never substitutes for a primary source.",
   "missingRules": [],
@@ -13,21 +13,9 @@
       "impressions": 1
     },
     {
-      "query": "pick who goes first",
-      "impressions": 1
-    },
-    {
       "query": "who goes first in uno",
       "impressions": 1
     }
   ],
-  "lowClickPages": [
-    {
-      "page": "/games/rummy-bicycle-en/",
-      "impressions": 77,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 8.4
-    }
-  ]
+  "lowClickPages": []
 }

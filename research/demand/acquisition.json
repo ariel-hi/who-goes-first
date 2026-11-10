@@ -1,10 +1,10 @@
 {
   "status": "available",
-  "periodStart": "2026-10-09",
-  "periodEnd": "2026-11-07",
+  "periodStart": "2026-10-10",
+  "periodEnd": "2026-11-08",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 164,
-  "rowSessions": 164,
+  "totalSessions": 155,
+  "rowSessions": 155,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
@@ -13,13 +13,13 @@
   "channels": [
     {
       "name": "Direct",
-      "sessions": 137,
+      "sessions": 130,
       "engagedSessions": 23
     },
     {
       "name": "Organic Search",
-      "sessions": 19,
-      "engagedSessions": 9
+      "sessions": 17,
+      "engagedSessions": 8
     },
     {
       "name": "Organic Social",
@@ -41,14 +41,14 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 137,
+      "sessions": 130,
       "engagedSessions": 23
     },
     {
       "name": "google / organic",
       "channel": "Organic Search",
-      "sessions": 17,
-      "engagedSessions": 8
+      "sessions": 15,
+      "engagedSessions": 7
     },
     {
       "name": "pinterest.com / referral",
@@ -99,5 +99,5 @@
       "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-11-09T06:52:36.785Z"
+  "generatedAt": "2026-11-10T17:04:33.654Z"
 }
