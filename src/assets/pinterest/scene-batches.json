@@ -131,6 +131,88 @@
           "campaign": "tool_score_keeper_local"
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-11-a",
+      "preparedAt": "2026-11-11",
+      "baseline": "The reviewed 216-item queue ended November 13 with one item on that date. The November 11 scheduled RSS release succeeded, but the signed-in Pinterest extension was unavailable at this check; reference Pin outbound counts remain last observed on November 10 and publication ages are unknown.",
+      "hypothesis": "Three newly composed scene Pins with direct tool or sourced-guide hooks can sustain the finite feed and earn saves and outbound clicks. Evaluate only after confirmed public availability, against comparable publication ages and matching reporting windows.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-22 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-orchard-picnic-turn-order",
+          "scene": "orchard-picnic",
+          "background": "src/assets/pinterest/orchard-picnic.png",
+          "renderedPin": "/pins/q/scene-orchard-picnic-turn-order.png",
+          "renderedSha256": "044a4dc7bab4ce4190a00a1048374efb0cb9cbfeaf2872d8df91d1c8c6104cae",
+          "plannedUtcDate": "2026-11-13",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Fresh open-air orchard and stitched curved path vary the botanical theme while the exact turn-order tool offers a new practical hook.",
+          "title": "Orchard picnic game night: shuffle the turn order",
+          "copy": "Shuffle the whole table into a turn order.",
+          "destination": "https://whogoesfirst.fun/turn-order-generator/",
+          "campaign": "scene_orchard_picnic_turn_order"
+        },
+        {
+          "queueId": "scene-pottery-studio-score",
+          "scene": "pottery-studio",
+          "background": "src/assets/pinterest/pottery-studio.png",
+          "renderedPin": "/pins/q/scene-pottery-studio-score.png",
+          "renderedSha256": "6e98ca15c13c6394b564b9f3e4c3933c327a13d8e6ccb7275585a38dd4ee1645",
+          "plannedUtcDate": "2026-11-13",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Original warm pottery workbench tests the cozy tabletop theme with a score-keeping promise, rather than another hosting checklist.",
+          "title": "Pottery studio game night: keep score without paper",
+          "copy": "Track everyone’s points on this device.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "scene_pottery_studio_score"
+        },
+        {
+          "queueId": "scene-vineyard-hillside-ideas",
+          "scene": "vineyard-hillside",
+          "background": "src/assets/pinterest/vineyard-hillside.png",
+          "renderedPin": "/pins/q/scene-vineyard-hillside-ideas.png",
+          "renderedSha256": "5892d8c5215c9577ef99446391bb7fdd8b95dc852f72706e0f349f268f725f0a",
+          "plannedUtcDate": "2026-11-13",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Supported terraced vineyard and cork path vary the layered miniature theme while testing the sourced starting-ideas guide.",
+          "title": "Vineyard game night: ideas for who goes first",
+          "copy": "Find playful ideas from real rulebooks.",
+          "destination": "https://whogoesfirst.fun/ways-to-pick-who-goes-first/",
+          "campaign": "scene_vineyard_hillside_ideas"
+        },
+        {
+          "queueId": "tool-turn-timer-sand-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-turn-timer-sand-nov.png",
+          "renderedSha256": "2bb28b03781b1d6b4ff7c0ffb2c786ac87c019ec1ac7cd297ab72b0d441733e3",
+          "artworkReview": "Codex, 2026-11-11: deterministic card visually checked full-size and at 320 x 480. Flat stylized dice motif has ordinary pip counts and no ambiguous adjacent faces. Headline, 30-second to 3-minute claim, CTA and timer destination match.",
+          "plannedUtcDate": "2026-11-13",
+          "parentReference": null,
+          "selection": "Minority practical-tool card tests a lost-sand-timer use case with a distinct restart-for-next-player promise.",
+          "title": "Lost the sand timer? Keep turns moving",
+          "copy": "Set a limit and restart for the next player.",
+          "destination": "https://whogoesfirst.fun/turn-timer/",
+          "campaign": "tool_turn_timer_sand"
+        },
+        {
+          "queueId": "tool-random-letter-skip-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-random-letter-skip-nov.png",
+          "renderedSha256": "4dbef0afbfe954dca622e2d4c29758964cfb4f89d0ea7888b69f4e172bdf68b1",
+          "artworkReview": "Codex, 2026-11-11: deterministic card visually checked full-size and at 320 x 480. Flat stylized dice motif has ordinary pip counts and no ambiguous adjacent faces. Headline, skip-hard-letters/no-repeats claim, CTA and letter-tool destination match.",
+          "plannedUtcDate": "2026-11-14",
+          "parentReference": null,
+          "selection": "Minority practical-tool card tests a word-game hook and configurable hard-letter/no-repeat options.",
+          "title": "Pick a random letter and skip the tricky ones",
+          "copy": "Skip tricky letters and avoid repeats.",
+          "destination": "https://whogoesfirst.fun/random-letter-generator/",
+          "campaign": "tool_random_letter_skip"
+        }
+      ]
     }
   ]
 }

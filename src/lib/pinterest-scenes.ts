@@ -80,4 +80,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_winter_market_teams',
     art: { seed: 'winter-market-teams', scene: 'winter-market', kicker: 'Find your side', title: 'Two teams.\nOne game night.', body: 'Split the group into random teams.', cta: 'Try the free team generator' },
   },
+  {
+    id: 'scene-orchard-picnic-turn-order', path: '/turn-order-generator/',
+    title: 'Orchard picnic game night: shuffle the turn order',
+    description: 'Original AI-created orchard picnic tabletop scene with a stitched path and painted wooden meeples. At your real game night, enter names and shuffle everyone into a random turn order with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_orchard_picnic_turn_order',
+    art: { seed: 'orchard-picnic-turn-order', scene: 'orchard-picnic', kicker: 'An easy order for everyone', title: 'Who plays\nnext?', body: 'Shuffle the whole table into a turn order.', cta: 'Try the free turn-order tool' },
+  },
+  {
+    id: 'scene-pottery-studio-score', path: '/score-keeper/',
+    title: 'Pottery studio game night: keep score without paper',
+    description: 'Original AI-created pottery studio tabletop scene with wooden game pieces and a blank scoring board. Use the free browser score keeper to add players and points; scores stay on this device after a refresh. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_pottery_studio_score',
+    art: { seed: 'pottery-studio-score', scene: 'pottery-studio', kicker: 'Keep the game moving', title: 'Keep score.\nSkip the paper.', body: 'Track everyone’s points on this device.', cta: 'Try the free score keeper' },
+  },
+  {
+    id: 'scene-vineyard-hillside-ideas', path: '/ways-to-pick-who-goes-first/',
+    title: 'Vineyard game night: ideas for who goes first',
+    description: 'Original AI-created miniature vineyard path with painted wooden meeples. Browse playful ways to choose a starting player borrowed from published board-game rulebooks, each tied to its source. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_vineyard_hillside_ideas',
+    art: { seed: 'vineyard-hillside-ideas', scene: 'vineyard-hillside', kicker: 'Start with a story', title: 'Who gets\nthe first turn?', body: 'Find playful ideas from real rulebooks.', cta: 'Explore ways to choose' },
+  },
 ];
