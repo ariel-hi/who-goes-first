@@ -20,6 +20,7 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     '2026-11-11', '2026-11-11', '2026-11-12',
     '2026-11-12', '2026-11-12', '2026-11-12',
     '2026-11-13', '2026-11-13', '2026-11-13',
+    '2026-11-14', '2026-11-14', '2026-11-14',
   ]);
   expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
   expect(queue.slice(0, 148).at(-1)?.date).toBe('2026-10-30');
@@ -32,8 +33,15 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['tool-score-keeper-save-nov', '2026-11-13'],
   ]);
   expect(queue.slice(0, 216).at(-1)?.date).toBe('2026-11-13');
-  expect(queue).toHaveLength(221);
-  expect(queue.at(-1)?.date).toBe('2026-11-14');
+  expect(queue.slice(216, 221).map(pin => [pin.id, pin.date])).toEqual([
+    ['scene-orchard-picnic-turn-order', '2026-11-13'],
+    ['scene-pottery-studio-score', '2026-11-13'],
+    ['scene-vineyard-hillside-ideas', '2026-11-13'],
+    ['tool-turn-timer-sand-nov', '2026-11-13'],
+    ['tool-random-letter-skip-nov', '2026-11-14'],
+  ]);
+  expect(queue).toHaveLength(226);
+  expect(queue.at(-1)?.date).toBe('2026-11-15');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-10-07T13:07:00Z')).filter(pin => pin.art.scene)).toHaveLength(1);
   for (const id of ['game-love-letter-2025-en', 'game-hanabi-rnr-en', 'game-spirit-island-gtg-en']) {

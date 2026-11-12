@@ -101,4 +101,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_vineyard_hillside_ideas',
     art: { seed: 'vineyard-hillside-ideas', scene: 'vineyard-hillside', kicker: 'Start with a story', title: 'Who gets\nthe first turn?', body: 'Find playful ideas from real rulebooks.', cta: 'Explore ways to choose' },
   },
+  {
+    id: 'scene-library-path-ideas', path: '/ways-to-pick-who-goes-first/',
+    title: 'Library game night: ideas for who goes first',
+    description: 'Original AI-created miniature library scene with a path of blank books and painted wooden meeples. Explore playful starting-player ideas from published board-game rulebooks, each connected to its source. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_library_path_ideas',
+    art: { seed: 'library-path-ideas', scene: 'library-path', kicker: 'A story starts somewhere', title: 'Who begins\nthe game?', body: 'Find starting ideas from real rulebooks.', cta: 'Explore ways to choose' },
+  },
+  {
+    id: 'scene-lighthouse-path-teams', path: '/random-team-generator/',
+    title: 'Lighthouse game night: split the crew into teams',
+    description: 'Original AI-created miniature lighthouse and wooden path with painted meeples. At your real table, enter player names and split the group into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_lighthouse_path_teams',
+    art: { seed: 'lighthouse-path-teams', scene: 'lighthouse-path', kicker: 'Gather your crew', title: 'Make teams.\nStart playing.', body: 'Split the whole group into random teams.', cta: 'Try the free team generator' },
+  },
+  {
+    id: 'scene-theater-stage-picker', path: '/',
+    title: 'Theater game night: pick who takes the first turn',
+    description: 'Original AI-created miniature theater stage with a winding wooden path and colorful meeples. At your real game night, enter names or use numbered seats to choose a starting player fairly. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_theater_stage_picker',
+    art: { seed: 'theater-stage-picker', scene: 'theater-stage', kicker: 'The stage is set', title: 'Who starts?', body: 'Pick a starting player fairly.', cta: 'Try the free player picker' },
+  },
 ];

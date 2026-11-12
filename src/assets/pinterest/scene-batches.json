@@ -213,6 +213,88 @@
           "campaign": "tool_random_letter_skip"
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-12-a",
+      "preparedAt": "2026-11-12",
+      "baseline": "The 221-item queue ended November 14 with one item. The three reference Pins last had authenticated individual stats on November 10; current outbound clicks and new Pin publication remain unavailable.",
+      "hypothesis": "Three distinct scene compositions with destination-matched hooks may earn saves and actual outbound clicks after Pinterest publishes them. Compare matching reporting windows and publication ages after seven observed public days.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-23 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-library-path-ideas",
+          "scene": "library-path",
+          "background": "src/assets/pinterest/library-path.png",
+          "renderedPin": "/pins/q/scene-library-path-ideas.png",
+          "renderedSha256": "19fa568cc5195f45573e05d61bbf6a5f924aecb7c621e3ac77864e9872695323",
+          "plannedUtcDate": "2026-11-14",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Original warm library and winding book path tests a sourced-ideas hook in the cozy tactile theme without repeating the café or pottery composition.",
+          "title": "Library game night: ideas for who goes first",
+          "copy": "Find starting ideas from real rulebooks.",
+          "destination": "https://whogoesfirst.fun/ways-to-pick-who-goes-first/",
+          "campaign": "scene_library_path_ideas"
+        },
+        {
+          "queueId": "scene-lighthouse-path-teams",
+          "scene": "lighthouse-path",
+          "background": "src/assets/pinterest/lighthouse-path.png",
+          "renderedPin": "/pins/q/scene-lighthouse-path-teams.png",
+          "renderedSha256": "45f505bc41b06cc9526e9bf502ba888720d5ed96cda63b8c2b16c581852464ed",
+          "plannedUtcDate": "2026-11-14",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "New supported harbor path and lighthouse test miniature-world depth with a team generator promise.",
+          "title": "Lighthouse game night: split the crew into teams",
+          "copy": "Split the whole group into random teams.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_lighthouse_path_teams"
+        },
+        {
+          "queueId": "scene-theater-stage-picker",
+          "scene": "theater-stage",
+          "background": "src/assets/pinterest/theater-stage.png",
+          "renderedPin": "/pins/q/scene-theater-stage-picker.png",
+          "renderedSha256": "0a9ebd4ad8e2e6f740debbefcf3360cebcf8ebb88c37f80442068ad857702986",
+          "plannedUtcDate": "2026-11-14",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "New framed theater composition tests a short direct picker hook with four clearly visible game pieces.",
+          "title": "Theater game night: pick who takes the first turn",
+          "copy": "Pick a starting player fairly.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_theater_stage_picker"
+        },
+        {
+          "queueId": "tool-numbered-seats-picker-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-numbered-seats-picker-nov.png",
+          "renderedSha256": "bacaf65aeaa295654dd6e4ceeead61973039558a99e5b85c4e0eb8529757d24b",
+          "artworkReview": "Codex, 2026-11-12: deterministic card visually checked at 1000 x 1500 and 320 x 480. Stylized flat dice show valid single-face pip counts; no ambiguous adjacent faces. Typography, factual promise and CTA match the live destination.",
+          "plannedUtcDate": "2026-11-14",
+          "parentReference": null,
+          "selection": "Minority practical card tests a faster no-name first-player use case.",
+          "title": "Use numbered seats to choose who starts",
+          "copy": "Give each seat a number and draw one fairly.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "tool_numbered_seats_picker"
+        },
+        {
+          "queueId": "guide-checklist-packup-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-checklist-packup-nov.png",
+          "renderedSha256": "1f5b72ee91e3ddd640975077ac5198a69d9d6e8891fce7edfd9dda8bde3098d6",
+          "artworkReview": "Codex, 2026-11-12: deterministic card visually checked at 1000 x 1500 and 320 x 480. Stylized flat dice show valid single-face pip counts; no ambiguous adjacent faces. Typography, factual promise and CTA match the live destination.",
+          "plannedUtcDate": "2026-11-15",
+          "parentReference": null,
+          "selection": "Minority practical card highlights the real checklist from setup through packing away.",
+          "title": "A game-night checklist from setup to pack-up",
+          "copy": "Ten simple checks from setup to the end.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "game_night_checklist"
+        }
+      ]
     }
   ]
 }
