@@ -295,6 +295,88 @@
           "campaign": "game_night_checklist"
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-13-a",
+      "preparedAt": "2026-11-13",
+      "baseline": "The 226-item queue ended November 15 with one item. The scheduled November 13 feed release succeeded, but public Pinterest publication and current outbound clicks remain unconfirmed; authenticated reference Pin Stats last observed November 10.",
+      "hypothesis": "Three new compositions with verified checklist, timer and picker hooks may earn saves and actual outbound clicks after Pinterest publishes them. Compare matched windows and publication ages after seven observed public days.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-24 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-bakery-tabletop-checklist",
+          "scene": "bakery-tabletop",
+          "background": "src/assets/pinterest/bakery-tabletop.png",
+          "renderedPin": "/pins/q/scene-bakery-tabletop-checklist.png",
+          "renderedSha256": "bc8583e506f9f025ee59655de92cc4be83ff754afa2d2f4cd04ba78173fc6289",
+          "plannedUtcDate": "2026-11-15",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "New bakery tabletop varies the cozy tactile theme with a concrete ten-check hosting promise.",
+          "title": "Bakery table game night: a free hosting checklist",
+          "copy": "Plan the table with ten simple checks.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "scene_bakery_tabletop_checklist"
+        },
+        {
+          "queueId": "scene-clockwork-workshop-timer",
+          "scene": "clockwork-workshop",
+          "background": "src/assets/pinterest/clockwork-workshop.png",
+          "renderedPin": "/pins/q/scene-clockwork-workshop-timer.png",
+          "renderedSha256": "cc65289b1dbbfc7d5893b0bb7eeeea9d7208c59b84b48e3df61df9b6467a69d1",
+          "plannedUtcDate": "2026-11-15",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Original mechanical S-path tests layered miniature depth with a turn-timer use case.",
+          "title": "Clockwork game night: a free timer for every turn",
+          "copy": "Set a limit and restart for the next player.",
+          "destination": "https://whogoesfirst.fun/turn-timer/",
+          "campaign": "scene_clockwork_workshop_timer"
+        },
+        {
+          "queueId": "scene-rooftop-terrace-picker",
+          "scene": "rooftop-terrace",
+          "background": "src/assets/pinterest/rooftop-terrace.png",
+          "renderedPin": "/pins/q/scene-rooftop-terrace-picker.png",
+          "renderedSha256": "07532c93a28602ad075fa2677902b5df102a308e370959f7a40a7903d73ba1d4",
+          "plannedUtcDate": "2026-11-15",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Fresh open-air herb terrace tests the curved botanical path with a direct fair-start hook.",
+          "title": "Rooftop game night: choose who starts fairly",
+          "copy": "A fair first turn for the whole group.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_rooftop_terrace_picker"
+        },
+        {
+          "queueId": "tool-coin-flip-two-player-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-coin-flip-two-player-nov.png",
+          "renderedSha256": "f6249701ed7ca198ca52866e619d4cfbbc6aa86ef782c92869f6067d64ca3743",
+          "artworkReview": "Codex, 2026-11-13: deterministic card inspected full size and at 320 x 480. Flat dice motifs show valid single-face pip layouts and no adjacent faces; headlines, claims and CTAs match the working destination.",
+          "plannedUtcDate": "2026-11-15",
+          "parentReference": null,
+          "selection": "Minority practical card teaches pre-assigned heads and tails for two-player starts.",
+          "title": "Two players? Flip a coin for the first turn",
+          "copy": "Assign sides and flip for the first turn.",
+          "destination": "https://whogoesfirst.fun/coin-flip/",
+          "campaign": "tool_coin_flip_two_player"
+        },
+        {
+          "queueId": "tool-dice-roller-lost-d20-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-dice-roller-lost-d20-nov.png",
+          "renderedSha256": "4715bb6e4569fa402caeeeca6f429f5ad45671029fba81606a6580c5b7446450",
+          "artworkReview": "Codex, 2026-11-13: deterministic card inspected full size and at 320 x 480. Flat dice motifs show valid single-face pip layouts and no adjacent faces; headlines, claims and CTAs match the working destination.",
+          "plannedUtcDate": "2026-11-16",
+          "parentReference": null,
+          "selection": "Minority practical card targets a specific missing-d20 problem with the existing multipolyhedral roller.",
+          "title": "Lost a d20? Roll virtual dice on your phone",
+          "copy": "Roll d4 through d100 dice in your browser.",
+          "destination": "https://whogoesfirst.fun/dice-roller/",
+          "campaign": "tool_dice_roller_missing_d20"
+        }
+      ]
     }
   ]
 }

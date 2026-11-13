@@ -122,4 +122,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_theater_stage_picker',
     art: { seed: 'theater-stage-picker', scene: 'theater-stage', kicker: 'The stage is set', title: 'Who starts?', body: 'Pick a starting player fairly.', cta: 'Try the free player picker' },
   },
+  {
+    id: 'scene-bakery-tabletop-checklist', path: '/game-night-checklist/',
+    title: 'Bakery table game night: a free hosting checklist',
+    description: 'Original AI-created miniature bakery tabletop with a path of wooden boards and painted meeples. Plan guests, games, setup and packing away using the free printable game-night checklist. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_bakery_tabletop_checklist',
+    art: { seed: 'bakery-tabletop-checklist', scene: 'bakery-tabletop', kicker: 'A warm start for everyone', title: 'Make room\nfor game night.', body: 'Plan the table with ten simple checks.', cta: 'Open the free checklist' },
+  },
+  {
+    id: 'scene-clockwork-workshop-timer', path: '/turn-timer/',
+    title: 'Clockwork game night: a free timer for every turn',
+    description: 'Original AI-created miniature clockwork workshop with a winding path and painted wooden meeples. For your real game night, choose a 30-second to 3-minute turn timer and restart it for the next player. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_clockwork_workshop_timer',
+    art: { seed: 'clockwork-workshop-timer', scene: 'clockwork-workshop', kicker: 'Keep every turn moving', title: 'Time for\nthe next turn.', body: 'Set a limit and restart for the next player.', cta: 'Try the free turn timer' },
+  },
+  {
+    id: 'scene-rooftop-terrace-picker', path: '/',
+    title: 'Rooftop game night: choose who starts fairly',
+    description: 'Original AI-created rooftop miniature path with painted wooden meeples. At your real table, enter names or number seats and choose a starting player fairly with the free browser picker. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_rooftop_terrace_picker',
+    art: { seed: 'rooftop-terrace-picker', scene: 'rooftop-terrace', kicker: 'Gather around the table', title: 'Ready to play?\nPick who starts.', body: 'A fair first turn for the whole group.', cta: 'Try the free player picker' },
+  },
 ];
