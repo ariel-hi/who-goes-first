@@ -1,21 +1,12 @@
 {
-  "generatedAt": "2026-11-12T06:45:30.158Z",
+  "generatedAt": "2026-11-13T17:03:51.180Z",
   "property": "https://whogoesfirst.fun/",
   "window": {
-    "start": "2026-10-13",
-    "end": "2026-11-09"
+    "start": "2026-10-14",
+    "end": "2026-11-10"
   },
   "note": "Observed page demand, not a forecast. Watch rows need more data before changing copy.",
   "opportunities": [
-    {
-      "path": "/games/root-leder-standard-en/",
-      "impressions": 6,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 8.666666666666668,
-      "readiness": "watch",
-      "action": "Keep observing; this sample is too small to judge the title or click rate."
-    },
     {
       "path": "/games/inis-matagot-original-en/",
       "impressions": 6,
@@ -94,6 +85,15 @@
       "clicks": 0,
       "ctr": 0,
       "position": 8.4,
+      "readiness": "watch",
+      "action": "Keep observing; this sample is too small to judge the title or click rate."
+    },
+    {
+      "path": "/games/root-leder-standard-en/",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 9.2,
       "readiness": "watch",
       "action": "Keep observing; this sample is too small to judge the title or click rate."
     }
