@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:03:43.599Z",
+  "generatedAt": "2026-11-14T16:58:21.488Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Search Analytics API",
   "searchType": "web",
@@ -16,7 +16,7 @@
       "query"
     ]
   },
-  "anchorDateUtc": "2026-11-13",
+  "anchorDateUtc": "2026-11-14",
   "reportingLagDays": 3,
   "aggregation": "auto (API default); responseAggregationType is not retained by the existing API client",
   "totalsSource": "Independent dimensionless requests; sitewide position is Google-provided, never a page-position average.",
@@ -35,8 +35,8 @@
   "sevenDay": {
     "current": {
       "window": {
-        "start": "2026-11-04",
-        "end": "2026-11-10"
+        "start": "2026-11-05",
+        "end": "2026-11-11"
       },
       "totals": {
         "status": "available",
@@ -44,14 +44,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 9,
           "ctr": 0,
-          "averagePosition": 16.375
+          "averagePosition": 14.88888888888889
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 12,
+        "returnedRowCount": 13,
         "emptyResult": false,
         "data": [
           {
@@ -98,6 +98,15 @@
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 5
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/cat-lady/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 3
           },
           {
             "keys": [
@@ -173,8 +182,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-10-28",
-        "end": "2026-11-03"
+        "start": "2026-10-29",
+        "end": "2026-11-04"
       },
       "totals": {
         "status": "available",
@@ -182,9 +191,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 2,
-          "impressions": 16,
-          "ctr": 0.125,
-          "averagePosition": 5.8125
+          "impressions": 15,
+          "ctr": 0.13333333333333333,
+          "averagePosition": 6.133333333333334
         }
       },
       "pages": {
@@ -224,9 +233,9 @@
               "https://whogoesfirst.fun/games/arcs-leder-base-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 5.5
+            "averagePosition": 10
           },
           {
             "keys": [
@@ -366,11 +375,11 @@
     "changes": {
       "totals": {
         "clicks": -2,
-        "impressions": -8,
+        "impressions": -6,
         "clicksPercent": -100,
-        "impressionsPercent": -50,
-        "ctrPercentagePoints": -12.5,
-        "averagePosition": 10.5625
+        "impressionsPercent": -40,
+        "ctrPercentagePoints": -13.333333333333334,
+        "averagePosition": 8.755555555555556
       },
       "pages": [
         {
@@ -448,9 +457,9 @@
               "https://whogoesfirst.fun/games/arcs-leder-base-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 5.5
+            "averagePosition": 10
           },
           "change": null
         },
@@ -534,6 +543,23 @@
             "ctrPercentagePoints": 0,
             "averagePosition": -1
           }
+        },
+        {
+          "keys": [
+            "https://whogoesfirst.fun/games/cat-lady/"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/games/cat-lady/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 3
+          },
+          "previous": null,
+          "change": null
         },
         {
           "keys": [
@@ -872,8 +898,8 @@
   "twentyEightDay": {
     "current": {
       "window": {
-        "start": "2026-10-14",
-        "end": "2026-11-10"
+        "start": "2026-10-15",
+        "end": "2026-11-11"
       },
       "totals": {
         "status": "available",
@@ -881,14 +907,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 2,
-          "impressions": 55,
-          "ctr": 0.03636363636363636,
-          "averagePosition": 10.50909090909091
+          "impressions": 49,
+          "ctr": 0.04081632653061224,
+          "averagePosition": 10.591836734693878
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 37,
+        "returnedRowCount": 35,
         "emptyResult": false,
         "data": [
           {
@@ -974,6 +1000,15 @@
           },
           {
             "keys": [
+              "https://whogoesfirst.fun/games/cat-lady/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 3
+          },
+          {
+            "keys": [
               "https://whogoesfirst.fun/games/codenames-2025-en/"
             ],
             "clicks": 0,
@@ -989,24 +1024,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 2
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/food-chain-magnate-splotter-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 7
           },
           {
             "keys": [
@@ -1049,9 +1066,9 @@
               "https://whogoesfirst.fun/games/john-company-second-edition-wehrlegig-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 4.6
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -1061,15 +1078,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 10
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/mansions-of-madness-second-edition-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 33
           },
           {
             "keys": [
@@ -1235,8 +1243,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-09-16",
-        "end": "2026-10-13"
+        "start": "2026-09-17",
+        "end": "2026-10-14"
       },
       "totals": {
         "status": "available",
@@ -1244,9 +1252,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 33,
-          "impressions": 3721,
-          "ctr": 0.008868583714055361,
-          "averagePosition": 14.156409567320614
+          "impressions": 3728,
+          "ctr": 0.008851931330472103,
+          "averagePosition": 14.146459227467812
         }
       },
       "pages": {
@@ -1394,9 +1402,9 @@
               "https://whogoesfirst.fun/games/mansions-of-madness-second-edition-ffg-en/"
             ],
             "clicks": 1,
-            "impressions": 12,
-            "ctr": 0.08333333333333333,
-            "averagePosition": 10.416666666666666
+            "impressions": 13,
+            "ctr": 0.07692307692307693,
+            "averagePosition": 12.153846153846153
           },
           {
             "keys": [
@@ -3383,9 +3391,9 @@
               "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
             ],
             "clicks": 0,
-            "impressions": 25,
+            "impressions": 26,
             "ctr": 0,
-            "averagePosition": 3.88
+            "averagePosition": 3.923076923076923
           },
           {
             "keys": [
@@ -3950,9 +3958,9 @@
               "https://whogoesfirst.fun/games/food-chain-magnate-splotter-en/"
             ],
             "clicks": 0,
-            "impressions": 11,
+            "impressions": 12,
             "ctr": 0,
-            "averagePosition": 7.2727272727272725
+            "averagePosition": 7.25
           },
           {
             "keys": [
@@ -4733,9 +4741,9 @@
               "https://whogoesfirst.fun/games/john-company-second-edition-wehrlegig-en/"
             ],
             "clicks": 0,
-            "impressions": 20,
+            "impressions": 24,
             "ctr": 0,
-            "averagePosition": 6.7
+            "averagePosition": 6.291666666666667
           },
           {
             "keys": [
@@ -12475,11 +12483,11 @@
     "changes": {
       "totals": {
         "clicks": -31,
-        "impressions": -3666,
+        "impressions": -3679,
         "clicksPercent": -93.93939393939394,
-        "impressionsPercent": -98.5219027143241,
-        "ctrPercentagePoints": 2.7495052649581,
-        "averagePosition": -3.647318658229704
+        "impressionsPercent": -98.68562231759657,
+        "ctrPercentagePoints": 3.196439520014014,
+        "averagePosition": -3.554622492773934
       },
       "pages": [
         {
@@ -15079,8 +15087,16 @@
           "keys": [
             "https://whogoesfirst.fun/games/cat-lady/"
           ],
-          "presence": "previous_only_returned",
-          "current": null,
+          "presence": "returned_both",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/games/cat-lady/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 3
+          },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/cat-lady/"
@@ -15090,7 +15106,14 @@
             "ctr": 0,
             "averagePosition": 5.5
           },
-          "change": null
+          "change": {
+            "clicks": 0,
+            "impressions": -3,
+            "clicksPercent": null,
+            "impressionsPercent": -75,
+            "ctrPercentagePoints": 0,
+            "averagePosition": -2.5
+          }
         },
         {
           "keys": [
@@ -16318,33 +16341,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
             ],
             "clicks": 0,
-            "impressions": 25,
+            "impressions": 26,
             "ctr": 0,
-            "averagePosition": 3.88
+            "averagePosition": 3.923076923076923
           },
-          "change": {
-            "clicks": 0,
-            "impressions": -24,
-            "clicksPercent": null,
-            "impressionsPercent": -96,
-            "ctrPercentagePoints": 0,
-            "averagePosition": 1.12
-          }
+          "change": null
         },
         {
           "keys": [
@@ -17438,33 +17446,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/food-chain-magnate-splotter-en/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/food-chain-magnate-splotter-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 7
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/food-chain-magnate-splotter-en/"
             ],
             "clicks": 0,
-            "impressions": 11,
+            "impressions": 12,
             "ctr": 0,
-            "averagePosition": 7.2727272727272725
+            "averagePosition": 7.25
           },
-          "change": {
-            "clicks": 0,
-            "impressions": -10,
-            "clicksPercent": null,
-            "impressionsPercent": -90.9090909090909,
-            "ctrPercentagePoints": 0,
-            "averagePosition": -0.2727272727272725
-          }
+          "change": null
         },
         {
           "keys": [
@@ -19034,26 +19027,26 @@
               "https://whogoesfirst.fun/games/john-company-second-edition-wehrlegig-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 4.6
+            "averagePosition": 6
           },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/john-company-second-edition-wehrlegig-en/"
             ],
             "clicks": 0,
-            "impressions": 20,
+            "impressions": 24,
             "ctr": 0,
-            "averagePosition": 6.7
+            "averagePosition": 6.291666666666667
           },
           "change": {
             "clicks": 0,
-            "impressions": -15,
+            "impressions": -23,
             "clicksPercent": null,
-            "impressionsPercent": -75,
+            "impressionsPercent": -95.83333333333334,
             "ctrPercentagePoints": 0,
-            "averagePosition": -2.1000000000000005
+            "averagePosition": -0.29166666666666696
           }
         },
         {
@@ -19755,33 +19748,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/mansions-of-madness-second-edition-ffg-en/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/mansions-of-madness-second-edition-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 33
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/mansions-of-madness-second-edition-ffg-en/"
             ],
             "clicks": 1,
-            "impressions": 12,
-            "ctr": 0.08333333333333333,
-            "averagePosition": 10.416666666666666
+            "impressions": 13,
+            "ctr": 0.07692307692307693,
+            "averagePosition": 12.153846153846153
           },
-          "change": {
-            "clicks": -1,
-            "impressions": -11,
-            "clicksPercent": -100,
-            "impressionsPercent": -91.66666666666666,
-            "ctrPercentagePoints": -8.333333333333332,
-            "averagePosition": 22.583333333333336
-          }
+          "change": null
         },
         {
           "keys": [
