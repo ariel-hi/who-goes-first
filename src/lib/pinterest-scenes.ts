@@ -143,4 +143,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_rooftop_terrace_picker',
     art: { seed: 'rooftop-terrace-picker', scene: 'rooftop-terrace', kicker: 'Gather around the table', title: 'Ready to play?\nPick who starts.', body: 'A fair first turn for the whole group.', cta: 'Try the free player picker' },
   },
+  {
+    id: 'scene-hedge-maze-teams', path: '/random-team-generator/',
+    title: 'Hedge maze game night: make random teams fairly',
+    description: 'Original AI-created miniature hedge maze with four painted wooden meeples on a winding path. At your real table, enter player names and shuffle them into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_hedge_maze_teams',
+    art: { seed: 'hedge-maze-teams', scene: 'hedge-maze', kicker: 'Two teams, one table', title: 'Make teams\nin a tap.', body: 'Shuffle names into random teams.', cta: 'Try the free team maker' },
+  },
+  {
+    id: 'scene-textile-atelier-score', path: '/score-keeper/',
+    title: 'Textile tabletop game night: keep score on your phone',
+    description: 'Original AI-created miniature textile workshop with woven swatch paths, blank wooden counters and painted meeples. At your real table, add players and track scores with the free browser score keeper. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_textile_atelier_score',
+    art: { seed: 'textile-atelier-score', scene: 'textile-atelier', kicker: 'Keep the game moving', title: 'Every point\nhas a place.', body: 'Track players and scores on your phone.', cta: 'Try the free score keeper' },
+  },
+  {
+    id: 'scene-treetop-village-turn-order', path: '/turn-order-generator/',
+    title: 'Treetop game night: shuffle the turn order',
+    description: 'Original AI-created miniature tree-canopy village with wooden bridges and painted meeples. For your real game, enter names and shuffle a complete turn order with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_treetop_village_turn_order',
+    art: { seed: 'treetop-village-turn-order', scene: 'treetop-village', kicker: 'No turn-order debate', title: "Who's next?\nShuffle the list.", body: 'Set a fair order for the whole round.', cta: 'Try the free turn-order tool' },
+  },
 ];

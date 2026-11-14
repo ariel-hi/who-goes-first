@@ -377,6 +377,88 @@
           "campaign": "tool_dice_roller_missing_d20"
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-14-a",
+      "preparedAt": "2026-11-14",
+      "baseline": "The 231-item queue ended November 16 with one item. The November 14 scheduled feed release succeeded; public Pinterest publication and current outbound clicks remain unconfirmed. Latest authenticated reference Pin Stats are from November 10.",
+      "hypothesis": "Three original, physically coherent compositions with practical team, score and turn-order hooks may earn saves and actual outbound clicks after public publication. Compare matching windows and publication ages.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-25 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-hedge-maze-teams",
+          "scene": "hedge-maze",
+          "background": "src/assets/pinterest/hedge-maze.png",
+          "renderedPin": "/pins/q/scene-hedge-maze-teams.png",
+          "renderedSha256": "23e538f94bd12b6d60aeefcf640cc496d0e68e6af126e6eed4e20c5245ffba0c",
+          "plannedUtcDate": "2026-11-16",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Original paired-meeple hedge maze varies the curved botanical path and points to random team creation.",
+          "title": "Hedge maze game night: make random teams fairly",
+          "copy": "Shuffle names into random teams.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_hedge_maze_teams"
+        },
+        {
+          "queueId": "scene-textile-atelier-score",
+          "scene": "textile-atelier",
+          "background": "src/assets/pinterest/textile-atelier.png",
+          "renderedPin": "/pins/q/scene-textile-atelier-score.png",
+          "renderedSha256": "f0030f5d03760433993d3c552d3e6737b0a04a4371d326a49e70ba6d0ebd85f1",
+          "plannedUtcDate": "2026-11-16",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "New tactile woven tabletop composition pairs blank score counters with the existing score keeper.",
+          "title": "Textile tabletop game night: keep score on your phone",
+          "copy": "Track players and scores on your phone.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "scene_textile_atelier_score"
+        },
+        {
+          "queueId": "scene-treetop-village-turn-order",
+          "scene": "treetop-village",
+          "background": "src/assets/pinterest/treetop-village.png",
+          "renderedPin": "/pins/q/scene-treetop-village-turn-order.png",
+          "renderedSha256": "4b69c0276809a0782c18ffea169fce84df33aab777c51886b8ba2ab670280723",
+          "plannedUtcDate": "2026-11-16",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Layered supported tree platforms and linked bridges vary the miniature world with a complete turn-order hook.",
+          "title": "Treetop game night: shuffle the turn order",
+          "copy": "Set a fair order for the whole round.",
+          "destination": "https://whogoesfirst.fun/turn-order-generator/",
+          "campaign": "scene_treetop_village_turn_order"
+        },
+        {
+          "queueId": "tool-rps-one-phone-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-rps-one-phone-nov.png",
+          "renderedSha256": "86eea9d4d5c00c8720d38fd29fdcce62e0171f03bc311b26c44a9870471d7e69",
+          "plannedUtcDate": "2026-11-16",
+          "parentReference": null,
+          "selection": "Minority practical card presents a secret two-player pass-and-play decider with a verified tool destination.",
+          "title": "Rock paper scissors on one phone for two players",
+          "copy": "Pass the phone and reveal both throws.",
+          "destination": "https://whogoesfirst.fun/rock-paper-scissors/",
+          "campaign": "tool_rps_one_phone",
+          "artworkReview": "Codex, 2026-11-14: deterministic card inspected full size and at 320 x 480. Flat decorative dice motifs show valid single-face pip layouts, with no adjacent faces; typography, claims and CTAs match the working destination."
+        },
+        {
+          "queueId": "tool-random-number-range-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-random-number-range-nov.png",
+          "renderedSha256": "d2dac3c3bdc69c67e64598941eec5ab3bcc79bc68d6d5ffe65d320531c1839e8",
+          "plannedUtcDate": "2026-11-17",
+          "parentReference": null,
+          "selection": "Minority practical card targets custom-range numbered draws with the verified inclusive-range tool.",
+          "title": "Pick a fair random number in any range",
+          "copy": "Choose both ends and draw fairly.",
+          "destination": "https://whogoesfirst.fun/random-number-generator/",
+          "campaign": "tool_random_number_range",
+          "artworkReview": "Codex, 2026-11-14: deterministic card inspected full size and at 320 x 480. Flat decorative dice motifs show valid single-face pip layouts, with no adjacent faces; typography, claims and CTAs match the working destination."
+        }
+      ]
     }
   ]
 }
