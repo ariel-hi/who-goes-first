@@ -1,30 +1,35 @@
 {
   "status": "available",
-  "periodStart": "2026-10-14",
-  "periodEnd": "2026-11-12",
+  "periodStart": "2026-10-15",
+  "periodEnd": "2026-11-13",
   "source": "Google Analytics 4 Data API (countryId; sessions and screenPageViews)",
-  "totalSessions": 167,
-  "totalScreenPageViews": 219,
-  "namedJourneySessions": 114,
-  "raptiveCountrySessions": 114,
-  "raptiveCountryScreenPageViews": 146,
+  "totalSessions": 169,
+  "totalScreenPageViews": 213,
+  "namedJourneySessions": 110,
+  "raptiveCountrySessions": 110,
+  "raptiveCountryScreenPageViews": 135,
   "unattributedSessions": 0,
   "unattributedScreenPageViews": 0,
-  "reportRowCount": 22,
-  "returnedRows": 22,
+  "reportRowCount": 23,
+  "returnedRows": 23,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
   "topCountries": [
     {
       "countryId": "US",
-      "sessions": 111,
-      "screenPageViews": 134
+      "sessions": 108,
+      "screenPageViews": 126
     },
     {
       "countryId": "SG",
       "sessions": 25,
       "screenPageViews": 25
+    },
+    {
+      "countryId": "ID",
+      "sessions": 4,
+      "screenPageViews": 6
     },
     {
       "countryId": "CN",
@@ -47,25 +52,20 @@
       "screenPageViews": 9
     },
     {
-      "countryId": "ID",
-      "sessions": 2,
-      "screenPageViews": 4
-    },
-    {
-      "countryId": "KR",
+      "countryId": "BR",
       "sessions": 2,
       "screenPageViews": 3
     },
     {
-      "countryId": "TW",
+      "countryId": "HK",
       "sessions": 2,
       "screenPageViews": 2
     },
     {
-      "countryId": "UA",
+      "countryId": "JP",
       "sessions": 2,
-      "screenPageViews": 2
+      "screenPageViews": 4
     }
   ],
-  "generatedAt": "2026-11-14T16:58:25.413Z"
+  "generatedAt": "2026-11-15T17:00:18.835Z"
 }

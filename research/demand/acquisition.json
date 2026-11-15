@@ -1,20 +1,20 @@
 {
   "status": "available",
-  "periodStart": "2026-10-14",
-  "periodEnd": "2026-11-12",
+  "periodStart": "2026-10-15",
+  "periodEnd": "2026-11-13",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 167,
-  "rowSessions": 167,
+  "totalSessions": 169,
+  "rowSessions": 169,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 11,
+  "rowCount": 9,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 143,
-      "engagedSessions": 24
+      "sessions": 147,
+      "engagedSessions": 23
     },
     {
       "name": "Organic Search",
@@ -23,13 +23,13 @@
     },
     {
       "name": "Organic Social",
-      "sessions": 5,
-      "engagedSessions": 5
+      "sessions": 4,
+      "engagedSessions": 4
     },
     {
       "name": "Referral",
-      "sessions": 2,
-      "engagedSessions": 1
+      "sessions": 1,
+      "engagedSessions": 0
     },
     {
       "name": "Unassigned",
@@ -41,8 +41,8 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 143,
-      "engagedSessions": 24
+      "sessions": 147,
+      "engagedSessions": 23
     },
     {
       "name": "google / organic",
@@ -69,22 +69,10 @@
       "engagedSessions": 0
     },
     {
-      "name": "ca.pinterest.com / referral",
-      "channel": "Organic Social",
-      "sessions": 1,
-      "engagedSessions": 1
-    },
-    {
       "name": "github.com / referral",
       "channel": "Referral",
       "sessions": 1,
       "engagedSessions": 0
-    },
-    {
-      "name": "go.bsky.app / referral",
-      "channel": "Referral",
-      "sessions": 1,
-      "engagedSessions": 1
     },
     {
       "name": "qwant.com / organic",
@@ -97,7 +85,13 @@
       "channel": "Organic Social",
       "sessions": 1,
       "engagedSessions": 1
+    },
+    {
+      "name": "uk.pinterest.com / referral",
+      "channel": "Organic Social",
+      "sessions": 1,
+      "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-11-14T16:58:25.413Z"
+  "generatedAt": "2026-11-15T17:00:18.835Z"
 }
