@@ -164,4 +164,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_treetop_village_turn_order',
     art: { seed: 'treetop-village-turn-order', scene: 'treetop-village', kicker: 'No turn-order debate', title: "Who's next?\nShuffle the list.", body: 'Set a fair order for the whole round.', cta: 'Try the free turn-order tool' },
   },
+  {
+    id: 'scene-marble-gallery-picker', path: '/',
+    title: 'Museum game night: choose the first player fairly',
+    description: 'Original AI-created miniature museum atrium with a curving blank stone path and painted wooden meeples. At your real table, enter names or number seats and choose a starting player randomly with the free browser picker. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_marble_gallery_picker',
+    art: { seed: 'marble-gallery-picker', scene: 'marble-gallery', kicker: 'The first turn is open', title: 'Who starts?\nPick fairly.', body: 'Draw a starting player at random.', cta: 'Try the free player picker' },
+  },
+  {
+    id: 'scene-stone-garden-teams', path: '/random-team-generator/',
+    title: 'Stone garden game night: split into random teams',
+    description: 'Original AI-created miniature rock and moss garden with painted wooden meeples on blank stepping stones. At your real table, enter player names and shuffle them into random teams using the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_stone_garden_teams',
+    art: { seed: 'stone-garden-teams', scene: 'stone-garden', kicker: 'No choosing sides', title: 'Make teams\nin a shuffle.', body: 'Enter names and split players randomly.', cta: 'Try the free team maker' },
+  },
+  {
+    id: 'scene-mountain-campsite-checklist', path: '/game-night-checklist/',
+    title: 'Mountain camp game night: a free hosting checklist',
+    description: 'Original AI-created miniature mountain campsite with a winding blank cork path and painted meeples. For your real game night, use ten simple checks for guests, setup, play and pack-up with the free printable checklist. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_mountain_campsite_checklist',
+    art: { seed: 'mountain-campsite-checklist', scene: 'mountain-campsite', kicker: 'A smoother game night', title: 'Plan the table.\nThen play.', body: 'Ten simple checks from setup to pack-up.', cta: 'Open the free checklist' },
+  },
 ];

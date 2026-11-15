@@ -459,6 +459,89 @@
           "artworkReview": "Codex, 2026-11-14: deterministic card inspected full size and at 320 x 480. Flat decorative dice motifs show valid single-face pip layouts, with no adjacent faces; typography, claims and CTAs match the working destination."
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-15-a",
+      "preparedAt": "2026-11-15",
+      "baseline": "The prior 236-item queue ended November 17 with one item. The November 15 feed release contains five scheduled entries; public Pinterest publication and current outbound clicks are unconfirmed. Latest authenticated reference Pin Stats are from November 10.",
+      "hypothesis": "Three distinct, physically coherent miniature scenes with direct picker, team and checklist hooks may earn saves and actual outbound clicks. Compare matching reporting windows and comparable public Pin ages after release.",
+      "timeCost": "Creative generation, visual review, copy, implementation and verification: approximately 2 hours; monetary labor cost unmeasured.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-26 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-marble-gallery-picker",
+          "scene": "marble-gallery",
+          "background": "src/assets/pinterest/marble-gallery.png",
+          "renderedPin": "/pins/q/scene-marble-gallery-picker.png",
+          "renderedSha256": "4b4dd3b20a0bd996934237cb2dfbf8dcd8a1322aaa3f02c6dc379f54a22bbb3d",
+          "plannedUtcDate": "2026-11-17",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "A new gallery atrium and broad curving floor path vary the layered miniature-world reference with a direct first-player picker promise.",
+          "title": "Museum game night: choose the first player fairly",
+          "copy": "Draw a starting player at random.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_marble_gallery_picker"
+        },
+        {
+          "queueId": "scene-stone-garden-teams",
+          "scene": "stone-garden",
+          "background": "src/assets/pinterest/stone-garden.png",
+          "renderedPin": "/pins/q/scene-stone-garden-teams.png",
+          "renderedSha256": "4e839ee3a4988b5e2d875b4debbb78faaecd629f4928310946fb29904c5951e6",
+          "plannedUtcDate": "2026-11-17",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Paired meeples in a low stone garden vary the botanical path reference and make the random-teams destination visually relevant.",
+          "title": "Stone garden game night: split into random teams",
+          "copy": "Enter names and split players randomly.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_stone_garden_teams"
+        },
+        {
+          "queueId": "scene-mountain-campsite-checklist",
+          "scene": "mountain-campsite",
+          "background": "src/assets/pinterest/mountain-campsite.png",
+          "renderedPin": "/pins/q/scene-mountain-campsite-checklist.png",
+          "renderedSha256": "2f8c04655c12ed7f95b0e6c1abb1c1d269bf8da57a1955511cd13ab9f54e1aa9",
+          "plannedUtcDate": "2026-11-17",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Supported campsite path and warm lanterns vary the cozy tactile reference with a specific ten-check hosting promise.",
+          "title": "Mountain camp game night: a free hosting checklist",
+          "copy": "Ten simple checks from setup to pack-up.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "scene_mountain_campsite_checklist"
+        },
+        {
+          "queueId": "guide-printable-qr-cards-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-printable-qr-cards-nov.png",
+          "renderedSha256": "8870212fba2c79b6b016907cda29c8a2b818a14a33c47672a5414064ee7f631f",
+          "plannedUtcDate": "2026-11-17",
+          "parentReference": null,
+          "selection": "Minority practical card names the two cut-out QR cards on the verified free printable sheet.",
+          "title": "Print two QR table cards for game night",
+          "copy": "Print QR cards for the game table.",
+          "destination": "https://whogoesfirst.fun/printable-game-night/",
+          "campaign": "guide_printable_qr_cards",
+          "artworkReview": "Codex, 2026-11-15: deterministic 1000 x 1500 card and 320 x 480 phone rendering visually inspected. Flat dice motifs have valid single-face pips and no visible adjacent faces. Readable spelling, specific claims and CTA match the verified destination."
+        },
+        {
+          "queueId": "guide-sourced-starting-ideas-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-sourced-starting-ideas-nov.png",
+          "renderedSha256": "75cc7645c84187900f35d3e6e268e6326c9f33428661cde9ffa2336f622b55ac",
+          "plannedUtcDate": "2026-11-18",
+          "parentReference": null,
+          "selection": "Minority practical card points to source-backed first-player ideas grouped by theme.",
+          "title": "Borrow starting ideas from real game rulebooks",
+          "copy": "Browse starting ideas grouped by theme.",
+          "destination": "https://whogoesfirst.fun/ways-to-pick-who-goes-first/",
+          "campaign": "guide_sourced_starting_ideas",
+          "artworkReview": "Codex, 2026-11-15: deterministic 1000 x 1500 card and 320 x 480 phone rendering visually inspected. Flat dice motifs have valid single-face pips and no visible adjacent faces. Readable spelling, specific claims and CTA match the verified destination."
+        }
+      ]
     }
   ]
 }
