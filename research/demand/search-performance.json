@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:00:12.129Z",
+  "generatedAt": "2026-11-16T06:59:43.761Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Search Analytics API",
   "searchType": "web",
@@ -16,7 +16,7 @@
       "query"
     ]
   },
-  "anchorDateUtc": "2026-11-15",
+  "anchorDateUtc": "2026-11-16",
   "reportingLagDays": 3,
   "aggregation": "auto (API default); responseAggregationType is not retained by the existing API client",
   "totalsSource": "Independent dimensionless requests; sitewide position is Google-provided, never a page-position average.",
@@ -35,8 +35,8 @@
   "sevenDay": {
     "current": {
       "window": {
-        "start": "2026-11-06",
-        "end": "2026-11-12"
+        "start": "2026-11-07",
+        "end": "2026-11-13"
       },
       "totals": {
         "status": "available",
@@ -44,14 +44,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 9,
           "ctr": 0,
-          "averagePosition": 3.6666666666666665
+          "averagePosition": 12.222222222222221
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 13,
+        "returnedRowCount": 15,
         "emptyResult": false,
         "data": [
           {
@@ -59,9 +59,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 1.3333333333333333
+            "averagePosition": 20
           },
           {
             "keys": [
@@ -119,12 +119,30 @@
           },
           {
             "keys": [
+              "https://whogoesfirst.fun/games/earth-inside-up-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 1
+          },
+          {
+            "keys": [
               "https://whogoesfirst.fun/games/inis-matagot-original-en/"
             ],
             "clicks": 0,
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 8
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 11
           },
           {
             "keys": [
@@ -175,15 +193,26 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 0,
-        "emptyResult": true,
-        "data": []
+        "returnedRowCount": 1,
+        "emptyResult": false,
+        "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 76
+          }
+        ]
       }
     },
     "previous": {
       "window": {
-        "start": "2026-10-30",
-        "end": "2026-11-05"
+        "start": "2026-10-31",
+        "end": "2026-11-06"
       },
       "totals": {
         "status": "available",
@@ -191,14 +220,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 2,
-          "impressions": 14,
-          "ctr": 0.14285714285714285,
-          "averagePosition": 13.785714285714286
+          "impressions": 9,
+          "ctr": 0.2222222222222222,
+          "averagePosition": 17.555555555555557
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 8,
+        "returnedRowCount": 5,
         "emptyResult": false,
         "data": [
           {
@@ -206,9 +235,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 5,
-            "ctr": 0.2,
-            "averagePosition": 23.8
+            "impressions": 4,
+            "ctr": 0.25,
+            "averagePosition": 29.25
           },
           {
             "keys": [
@@ -221,34 +250,7 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/arcs-leder-base-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/marshmallow-test-gamewright-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 8
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
             ],
             "clicks": 0,
             "impressions": 1,
@@ -260,9 +262,9 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -285,11 +287,11 @@
     "changes": {
       "totals": {
         "clicks": -2,
-        "impressions": -8,
+        "impressions": 0,
         "clicksPercent": -100,
-        "impressionsPercent": -57.14285714285714,
-        "ctrPercentagePoints": -14.285714285714285,
-        "averagePosition": -10.11904761904762
+        "impressionsPercent": 0,
+        "ctrPercentagePoints": -22.22222222222222,
+        "averagePosition": -5.333333333333336
       },
       "pages": [
         {
@@ -302,26 +304,26 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 1.3333333333333333
+            "averagePosition": 20
           },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 5,
-            "ctr": 0.2,
-            "averagePosition": 23.8
+            "impressions": 4,
+            "ctr": 0.25,
+            "averagePosition": 29.25
           },
           "change": {
             "clicks": -1,
-            "impressions": -2,
+            "impressions": 0,
             "clicksPercent": -100,
-            "impressionsPercent": -40,
-            "ctrPercentagePoints": -20,
-            "averagePosition": -22.46666666666667
+            "impressionsPercent": 0,
+            "ctrPercentagePoints": -25,
+            "averagePosition": -9.25
           }
         },
         {
@@ -339,23 +341,6 @@
             "averagePosition": 7
           },
           "previous": null,
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/arcs-leder-base-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/arcs-leder-base-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
           "change": null
         },
         {
@@ -445,6 +430,23 @@
         },
         {
           "keys": [
+            "https://whogoesfirst.fun/games/earth-inside-up-en/"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/games/earth-inside-up-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 1
+          },
+          "previous": null,
+          "change": null
+        },
+        {
+          "keys": [
             "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
           ],
           "presence": "previous_only_returned",
@@ -479,19 +481,19 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/marshmallow-test-gamewright-en/"
+            "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
           ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
+          "presence": "current_only_returned",
+          "current": {
             "keys": [
-              "https://whogoesfirst.fun/games/marshmallow-test-gamewright-en/"
+              "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
             ],
             "clicks": 0,
             "impressions": 1,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 11
           },
+          "previous": null,
           "change": null
         },
         {
@@ -564,23 +566,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
           ],
           "presence": "returned_both",
@@ -598,17 +583,17 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6
           },
           "change": {
             "clicks": 0,
-            "impressions": -2,
+            "impressions": -1,
             "clicksPercent": null,
-            "impressionsPercent": -66.66666666666666,
+            "impressionsPercent": -50,
             "ctrPercentagePoints": 0,
-            "averagePosition": 3
+            "averagePosition": 4
           }
         },
         {
@@ -646,14 +631,34 @@
           "change": null
         }
       ],
-      "pageQuery": []
+      "pageQuery": [
+        {
+          "keys": [
+            "https://whogoesfirst.fun/",
+            "who goes first"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 76
+          },
+          "previous": null,
+          "change": null
+        }
+      ]
     }
   },
   "twentyEightDay": {
     "current": {
       "window": {
-        "start": "2026-10-16",
-        "end": "2026-11-12"
+        "start": "2026-10-17",
+        "end": "2026-11-13"
       },
       "totals": {
         "status": "available",
@@ -661,14 +666,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 2,
-          "impressions": 47,
-          "ctr": 0.0425531914893617,
-          "averagePosition": 10.72340425531915
+          "impressions": 49,
+          "ctr": 0.04081632653061224,
+          "averagePosition": 12.040816326530612
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 34,
+        "returnedRowCount": 35,
         "emptyResult": false,
         "data": [
           {
@@ -676,9 +681,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 13,
-            "ctr": 0.07692307692307693,
-            "averagePosition": 14.307692307692308
+            "impressions": 14,
+            "ctr": 0.07142857142857142,
+            "averagePosition": 18.714285714285715
           },
           {
             "keys": [
@@ -781,6 +786,15 @@
           },
           {
             "keys": [
+              "https://whogoesfirst.fun/games/earth-inside-up-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 1
+          },
+          {
+            "keys": [
               "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
             ],
             "clicks": 0,
@@ -835,12 +849,12 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/my-farm-shop-pegasus-2020-en/"
+              "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
             ],
             "clicks": 0,
             "impressions": 1,
             "ctr": 0,
-            "averagePosition": 2
+            "averagePosition": 11
           },
           {
             "keys": [
@@ -981,15 +995,26 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 0,
-        "emptyResult": true,
-        "data": []
+        "returnedRowCount": 1,
+        "emptyResult": false,
+        "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 76
+          }
+        ]
       }
     },
     "previous": {
       "window": {
-        "start": "2026-09-18",
-        "end": "2026-10-15"
+        "start": "2026-09-19",
+        "end": "2026-10-16"
       },
       "totals": {
         "status": "available",
@@ -997,9 +1022,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 33,
-          "impressions": 3730,
-          "ctr": 0.008847184986595175,
-          "averagePosition": 14.142895442359249
+          "impressions": 3731,
+          "ctr": 0.008844813722862504,
+          "averagePosition": 14.13964084695792
         }
       },
       "pages": {
@@ -5053,9 +5078,9 @@
               "https://whogoesfirst.fun/games/my-farm-shop-pegasus-2020-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 4.625
+            "averagePosition": 4.333333333333334
           },
           {
             "keys": [
@@ -12228,11 +12253,11 @@
     "changes": {
       "totals": {
         "clicks": -31,
-        "impressions": -3683,
+        "impressions": -3682,
         "clicksPercent": -93.93939393939394,
-        "impressionsPercent": -98.73994638069705,
-        "ctrPercentagePoints": 3.3706006502766526,
-        "averagePosition": -3.4194911870400997
+        "impressionsPercent": -98.68667917448406,
+        "ctrPercentagePoints": 3.197151280774974,
+        "averagePosition": -2.098824520427309
       },
       "pages": [
         {
@@ -12245,9 +12270,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 13,
-            "ctr": 0.07692307692307693,
-            "averagePosition": 14.307692307692308
+            "impressions": 14,
+            "ctr": 0.07142857142857142,
+            "averagePosition": 18.714285714285715
           },
           "previous": {
             "keys": [
@@ -12260,11 +12285,11 @@
           },
           "change": {
             "clicks": -1,
-            "impressions": -13,
+            "impressions": -12,
             "clicksPercent": -50,
-            "impressionsPercent": -50,
-            "ctrPercentagePoints": 0,
-            "averagePosition": 7.153846153846154
+            "impressionsPercent": -46.15384615384615,
+            "ctrPercentagePoints": -0.5494505494505503,
+            "averagePosition": 11.560439560439562
           }
         },
         {
@@ -16528,8 +16553,16 @@
           "keys": [
             "https://whogoesfirst.fun/games/earth-inside-up-en/"
           ],
-          "presence": "previous_only_returned",
-          "current": null,
+          "presence": "returned_both",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/games/earth-inside-up-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 1
+          },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/earth-inside-up-en/"
@@ -16539,7 +16572,14 @@
             "ctr": 0,
             "averagePosition": 6
           },
-          "change": null
+          "change": {
+            "clicks": 0,
+            "impressions": 0,
+            "clicksPercent": null,
+            "impressionsPercent": 0,
+            "ctrPercentagePoints": 0,
+            "averagePosition": -5
+          }
         },
         {
           "keys": [
@@ -19901,33 +19941,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/my-farm-shop-pegasus-2020-en/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/my-farm-shop-pegasus-2020-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 2
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/my-farm-shop-pegasus-2020-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 4.625
+            "averagePosition": 4.333333333333334
           },
-          "change": {
-            "clicks": 0,
-            "impressions": -7,
-            "clicksPercent": null,
-            "impressionsPercent": -87.5,
-            "ctrPercentagePoints": 0,
-            "averagePosition": -2.625
-          }
+          "change": null
         },
         {
           "keys": [
@@ -19967,8 +19992,16 @@
           "keys": [
             "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
           ],
-          "presence": "previous_only_returned",
-          "current": null,
+          "presence": "returned_both",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 11
+          },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
@@ -19978,7 +20011,14 @@
             "ctr": 0,
             "averagePosition": 6.555555555555555
           },
-          "change": null
+          "change": {
+            "clicks": 0,
+            "impressions": -8,
+            "clicksPercent": null,
+            "impressionsPercent": -88.88888888888889,
+            "ctrPercentagePoints": 0,
+            "averagePosition": 4.444444444444445
+          }
         },
         {
           "keys": [
@@ -25304,6 +25344,25 @@
             "ctr": 0,
             "averagePosition": 6
           },
+          "change": null
+        },
+        {
+          "keys": [
+            "https://whogoesfirst.fun/",
+            "who goes first"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 76
+          },
+          "previous": null,
           "change": null
         },
         {
