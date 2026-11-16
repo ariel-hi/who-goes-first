@@ -4,6 +4,7 @@ import { publisherHubs, themeHubs } from './content/hubs';
 import { randomRuleEligible } from './content/random-rules';
 import { siteSettings } from './site';
 import { pageUpdates } from './page-updates';
+import { isRuleIndexed, publisherHubsIndexed } from './indexing-policy';
 
 type Entry = { path: string; lastmod?: string };
 const datedEntry = (path: string): Entry => ({ path, ...(pageUpdates[path] ? { lastmod: pageUpdates[path] } : {}) });
@@ -12,13 +13,13 @@ export const sitemapSections: SitemapSection[] = ['pages', 'rules', 'board-games
 
 /** Canonical URLs grouped by section. One source for the flat sitemap, the index and each section file. */
 export function sitemapEntries(): Record<SitemapSection, Entry[]> {
-  const games = getCatalog(); const publishers = publisherHubs(games);
+  const games = getCatalog(); const publishers = publisherHubsIndexed ? publisherHubs(games) : [];
   const pages = ['/', '/about/', '/fairness/', '/privacy/', '/tools/', '/choose-who-goes-first/', '/printable-game-night/', '/holiday-game-night/', '/finger-chooser/', '/coin-flip/', '/random-team-generator/', '/rock-paper-scissors/', '/dice-roller/', '/random-number-generator/', '/turn-order-generator/', '/score-keeper/', '/turn-timer/', '/random-letter-generator/', '/card-draw/', '/embed/', '/methods/spinner/', '/methods/cards/', '/methods/towers/', '/methods/straws/', '/methods/dice/', '/methods/coin/', '/methods/shells/', ...(process.env.DISABLE_BALLOON !== 'true' ? ['/methods/balloon/'] : []), ...(getPrompts().length ? ['/house-rules/'] : [])];
   const hubs = [...(games.length ? ['/games/'] : []), ...themeHubs(games).map(hub => `/games/themes/${hub.slug}/`), ...(publishers.length ? ['/publishers/'] : []), ...publishers.map(hub => `/publishers/${hub.slug}/`), ...(games.some(randomRuleEligible) ? ['/ways-to-pick-who-goes-first/'] : [])];
   return {
     pages: [...pages, '/game-night-checklist/'].map(datedEntry),
-    rules: games.map(game => ({ path: `/games/${game.slug}/`, lastmod: game.materiallyUpdatedAt ?? undefined })),
-    'board-games': ['/board-games/', ...getBoardGames().filter(game => game.rules.length > 1).map(game => `/board-games/${game.routeKey}/`)].map(datedEntry),
+    rules: games.filter(game => isRuleIndexed(game.slug)).map(game => ({ path: `/games/${game.slug}/`, lastmod: game.materiallyUpdatedAt ?? undefined })),
+    'board-games': ['/board-games/', ...getBoardGames().filter(game => game.rules.length > 1 && game.rules.some(rule => isRuleIndexed(rule.slug))).map(game => `/board-games/${game.routeKey}/`)].map(datedEntry),
     hubs: hubs.map(datedEntry),
   };
 }

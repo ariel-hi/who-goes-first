@@ -4,12 +4,12 @@ import RuleList from './RuleList.astro';
 import SharePage from './SharePage.astro';
 import type { PublicRule } from '../lib/content/schema';
 import { siteSettings } from '../lib/site';
-interface Props { title: string; description: string; heading: string; lede: string; crumb: string; rules: PublicRule[]; image?: string }
-const { title, description, heading, lede, crumb, rules, image } = Astro.props;
+interface Props { title: string; description: string; heading: string; lede: string; crumb: string; rules: PublicRule[]; image?: string; noindex?: boolean }
+const { title, description, heading, lede, crumb, rules, image, noindex = false } = Astro.props;
 const site = siteSettings().url;
 const path = Astro.url.pathname;
 ---
-<Layout title={title} description={description} {...(image ? { image, imageAlt: heading } : {})} pageType="CollectionPage" modified={rules.map(rule => rule.materiallyUpdatedAt).filter(Boolean).sort().at(-1) || undefined}>
+<Layout title={title} description={description} {...(image ? { image, imageAlt: heading } : {})} pageType="CollectionPage" noindex={noindex} modified={rules.map(rule => rule.materiallyUpdatedAt).filter(Boolean).sort().at(-1) || undefined}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${site}/` }, { '@type': 'ListItem', position: 2, name: 'Game rules', item: `${site}/games/` }, { '@type': 'ListItem', position: 3, name: crumb, item: `${site}${path}` }] }).replace(/</g, '\\u003c')} />
   <div class="content-page">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/games/">Game rules</a> / {crumb}</nav>

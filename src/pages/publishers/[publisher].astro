@@ -2,6 +2,7 @@
 import HubPage from '../../components/HubPage.astro';
 import { getCatalog } from '../../lib/content/catalog';
 import { publisherHubs } from '../../lib/content/hubs';
+import { publisherHubsIndexed } from '../../lib/indexing-policy';
 export function getStaticPaths() { return publisherHubs(getCatalog()).map(hub => ({ params: { publisher: hub.slug }, props: { hub } })); }
 const { hub } = Astro.props as { hub: ReturnType<typeof publisherHubs>[number] };
 const count = hub.rules.length;
@@ -14,4 +15,5 @@ const count = hub.rules.length;
   crumb={hub.name}
   image={`/og/publisher-${hub.slug}.png`}
   rules={hub.rules}
+  noindex={!publisherHubsIndexed}
 ><p class="small"><a href="/publishers/">All publishers</a></p></HubPage>
