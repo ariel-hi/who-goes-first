@@ -185,4 +185,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_mountain_campsite_checklist',
     art: { seed: 'mountain-campsite-checklist', scene: 'mountain-campsite', kicker: 'A smoother game night', title: 'Plan the table.\nThen play.', body: 'Ten simple checks from setup to pack-up.', cta: 'Open the free checklist' },
   },
+  {
+    id: 'scene-mossy-watermill-picker', path: '/',
+    title: 'Watermill game night: choose the first player fairly',
+    description: 'Original AI-created miniature watermill garden with a curved blank stone path and painted wooden meeples. At your real table, enter names or numbered seats and choose a starting player at random with the free browser picker. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_mossy_watermill_picker',
+    art: { seed: 'mossy-watermill-picker', scene: 'mossy-watermill', kicker: 'The path starts here', title: 'Who goes first?\nDraw fairly.', body: 'Draw one starter from your player list.', cta: 'Try the free player picker' },
+  },
+  {
+    id: 'scene-rainy-puzzle-nook-score', path: '/score-keeper/',
+    title: 'Rainy game night: keep the score together',
+    description: 'Original AI-created cozy tabletop scene with painted wooden meeples and blank score counters near a rainy window. At your real table, add players and track points with the free browser score keeper. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_rainy_puzzle_nook_score',
+    art: { seed: 'rainy-puzzle-nook-score', scene: 'rainy-puzzle-nook', kicker: 'No score pad needed', title: 'Every point\nin one place.', body: 'Keep the game score on your phone.', cta: 'Try the free score keeper' },
+  },
+  {
+    id: 'scene-crystal-cavern-turn-order', path: '/turn-order-generator/',
+    title: 'Crystal cavern game night: shuffle the turn order',
+    description: 'Original AI-created crystal cavern miniature with a supported blank stone path and three painted wooden meeples. At your real table, enter player names and shuffle a complete turn order with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_crystal_cavern_turn_order',
+    art: { seed: 'crystal-cavern-turn-order', scene: 'crystal-cavern', kicker: 'A path for every player', title: 'Set the order.\nStart playing.', body: 'Shuffle names into a full turn order.', cta: 'Try the free turn-order tool' },
+  },
 ];

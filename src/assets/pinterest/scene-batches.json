@@ -542,6 +542,89 @@
           "artworkReview": "Codex, 2026-11-15: deterministic 1000 x 1500 card and 320 x 480 phone rendering visually inspected. Flat dice motifs have valid single-face pips and no visible adjacent faces. Readable spelling, specific claims and CTA match the verified destination."
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-17-a",
+      "preparedAt": "2026-11-17",
+      "baseline": "The prior 241-item queue ended November 18 with one item. Today’s RSS released five scheduled items, but individual Pinterest publication and current outbound clicks are unconfirmed. Latest authenticated reference Pin Stats are October 11-November 10; the layered-world reference led reach and saves, with only one to five outbound clicks per reference Pin.",
+      "hypothesis": "Three new scene compositions with destination-matched picker, score and turn-order hooks may earn saves and actual outbound clicks after Pinterest publication. Compare matching reporting windows and comparable public Pin ages; current low outbound counts do not establish a winner.",
+      "timeCost": "Approximately 30 minutes elapsed for generation, visual review, copy and local verification before deployment; labor valuation, tool charges and revenue are unavailable.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-27 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-mossy-watermill-picker",
+          "scene": "mossy-watermill",
+          "background": "src/assets/pinterest/mossy-watermill.png",
+          "renderedPin": "/pins/q/scene-mossy-watermill-picker.png",
+          "renderedSha256": "a5dbbec67ffc3aabc617233fd98c7bab47dfbe7f0ebca1073a56b8efe20ecc5d",
+          "plannedUtcDate": "2026-11-18",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "New rustic watermill and supported curved slate route vary the promising botanical path reference with a direct first-player picker promise.",
+          "title": "Watermill game night: choose the first player fairly",
+          "copy": "Draw one starter from your player list.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_mossy_watermill_picker"
+        },
+        {
+          "queueId": "scene-rainy-puzzle-nook-score",
+          "scene": "rainy-puzzle-nook",
+          "background": "src/assets/pinterest/rainy-puzzle-nook.png",
+          "renderedPin": "/pins/q/scene-rainy-puzzle-nook-score.png",
+          "renderedSha256": "e857183a56bc087ec6040b1b9ac7b3861b2a4cc542791d4954c5b5240e00d97f",
+          "plannedUtcDate": "2026-11-18",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Original rainy home tabletop and blank scoring counters vary the cozy tactile reference with a specific score-keeping promise.",
+          "title": "Rainy game night: keep the score together",
+          "copy": "Keep the game score on your phone.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "scene_rainy_puzzle_nook_score"
+        },
+        {
+          "queueId": "scene-crystal-cavern-turn-order",
+          "scene": "crystal-cavern",
+          "background": "src/assets/pinterest/crystal-cavern.png",
+          "renderedPin": "/pins/q/scene-crystal-cavern-turn-order.png",
+          "renderedSha256": "bc65400dd194c2f4f1ae36ffba45ecc28f6de66c678cea1099d21c556ad35a1a",
+          "plannedUtcDate": "2026-11-18",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Supported crystal cavern path varies the layered miniature-world reference with a full turn-order promise.",
+          "title": "Crystal cavern game night: shuffle the turn order",
+          "copy": "Shuffle names into a full turn order.",
+          "destination": "https://whogoesfirst.fun/turn-order-generator/",
+          "campaign": "scene_crystal_cavern_turn_order"
+        },
+        {
+          "queueId": "guide-three-starting-choices-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-three-starting-choices-nov.png",
+          "renderedSha256": "8650839ad59e69814e70351f91ff12ae75e41797892cb19f7d4c473474b56eb2",
+          "plannedUtcDate": "2026-11-18",
+          "parentReference": null,
+          "selection": "Minority practical card explains the verified guide’s three choices: rulebook, equal-chance draw or playful question.",
+          "title": "Three clear ways to choose who starts a board game",
+          "copy": "See three ways to choose who starts.",
+          "destination": "https://whogoesfirst.fun/choose-who-goes-first/",
+          "campaign": "guide_three_starting_choices",
+          "artworkReview": "Codex, 2026-11-17: deterministic card visually inspected at 1000 x 1500 and 320 x 480. Flat dice motifs have valid single-face pip layouts and no visible adjacent faces; spelling, factual claims and CTA align with the destination."
+        },
+        {
+          "queueId": "guide-playful-house-rules-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-playful-house-rules-nov.png",
+          "renderedSha256": "8f0e7c1fc79b8466c48ae3d5cefbc987aeb6d330c9631650b35ba817a498716a",
+          "plannedUtcDate": "2026-11-19",
+          "parentReference": null,
+          "selection": "Minority practical card accurately distinguishes original house-rule prompts from random or official rules.",
+          "title": "Playful house-rule questions for who starts",
+          "copy": "Playful prompts, not random draws.",
+          "destination": "https://whogoesfirst.fun/house-rules/",
+          "campaign": "guide_playful_house_rules",
+          "artworkReview": "Codex, 2026-11-17: deterministic card visually inspected at 1000 x 1500 and 320 x 480. Flat dice motifs have valid single-face pip layouts and no visible adjacent faces; spelling, factual claims and CTA align with the destination."
+        }
+      ]
     }
   ]
 }
