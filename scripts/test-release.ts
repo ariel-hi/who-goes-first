@@ -81,9 +81,12 @@ assert.doesNotMatch(privacy, /This local version has no public hosting service c
 const answer = readFileSync(join(populated, 'games/synthetic-fixture/index.html'), 'utf8');
 assert.match(answer, /This synthetic answer exists only/);
 assert.match(answer, /publisher.example.org/);
-assert.match(answer, /content="index, follow"/);
+// Approved content stays public, but these invented slugs are deliberately not
+// in the production search allowlist. Approval alone must not make them indexable.
+assert.match(answer, /content="noindex, follow"/);
+assert.ok(answer.includes(`<link rel="canonical" href="${origin}/games/synthetic-fixture/">`));
 assert.doesNotMatch(answer, /PRIVATE_BUILD_CANARY|AUTOMATED FIXTURE|astro-island|component-url/);
-assert.match(readFileSync(join(populated, 'sitemap.xml'), 'utf8'), /\/games\/synthetic-fixture\//);
+assert.doesNotMatch(readFileSync(join(populated, 'sitemap.xml'), 'utf8'), /\/games\/synthetic-(?:fixture|scale-\d+)\//);
 assert.match(readFileSync(join(populated, 'sitemap.xml'), 'utf8'), /\/house-rules\//);
 assert.match(readFileSync(join(populated, 'house-rules/index.html'), 'utf8'), /Which fictional test participant volunteers/);
 assert.doesNotMatch(readFileSync(join(populated, 'house-rules/index.html'), 'utf8'), /PRIVATE_PROMPT_CANARY/);
@@ -102,6 +105,7 @@ for (const file of ['index.html', '404.html', ...['balloon', 'spinner', 'cards',
   assert.doesNotMatch(html, /data-ads="on"|src="\/analytics-consent\.js"|data-analytics-consent/);
 }
 const growthAnswer = readFileSync(join(monetized, 'games/synthetic-fixture/index.html'), 'utf8');
+assert.match(growthAnswer, /content="noindex, follow"/);
 assert.equal([...growthAnswer.matchAll(/<ins\b[^>]*data-ad-slot=/g)].length, 1);
 assert.ok(growthAnswer.indexOf('class="rule-ad"') > growthAnswer.indexOf('class="source-actions"'));
 assert.match(growthAnswer, /height:250px/);
@@ -112,7 +116,10 @@ assert.match(growthAnswer, /rel="sponsored nofollow noopener"/);
 assert.match(growthAnswer, /Support the site/);
 assert.match(growthAnswer, /Privacy choices/);
 assert.doesNotMatch(growthAnswer.match(/<p class="rule-answer">([^]*?)<\/p>/)![1]!, /<a\b/);
-assert.match(readFileSync(join(monetized, 'sitemap.xml'), 'utf8'), /\/publishers\/test-fixture\//);
+const publisher = readFileSync(join(monetized, 'publishers/test-fixture/index.html'), 'utf8');
+assert.match(publisher, /content="noindex, follow"/);
+assert.ok(publisher.includes(`<link rel="canonical" href="${origin}/publishers/test-fixture/">`));
+assert.doesNotMatch(readFileSync(join(monetized, 'sitemap.xml'), 'utf8'), /\/(?:games\/synthetic-(?:fixture|scale-\d+)|publishers\/test-fixture)\//);
 const disabled = build('balloon-disabled', { DISABLE_BALLOON: 'true' });
 assert.doesNotMatch(readFileSync(join(disabled, 'index.html'), 'utf8'), /href="\/methods\/balloon\/"|value="balloon"/);
 const disabledBalloon = readFileSync(join(disabled, 'methods/balloon/index.html'), 'utf8');
