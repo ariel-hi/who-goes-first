@@ -1,35 +1,35 @@
 {
   "status": "available",
-  "periodStart": "2026-10-16",
-  "periodEnd": "2026-11-14",
+  "periodStart": "2026-10-17",
+  "periodEnd": "2026-11-15",
   "source": "Google Analytics 4 Data API (countryId; sessions and screenPageViews)",
-  "totalSessions": 178,
-  "totalScreenPageViews": 215,
-  "namedJourneySessions": 114,
-  "raptiveCountrySessions": 114,
-  "raptiveCountryScreenPageViews": 132,
+  "totalSessions": 186,
+  "totalScreenPageViews": 222,
+  "namedJourneySessions": 118,
+  "raptiveCountrySessions": 118,
+  "raptiveCountryScreenPageViews": 135,
   "unattributedSessions": 0,
   "unattributedScreenPageViews": 0,
-  "reportRowCount": 26,
-  "returnedRows": 26,
+  "reportRowCount": 27,
+  "returnedRows": 27,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
   "topCountries": [
     {
       "countryId": "US",
-      "sessions": 113,
-      "screenPageViews": 130
+      "sessions": 117,
+      "screenPageViews": 133
     },
     {
       "countryId": "SG",
-      "sessions": 25,
-      "screenPageViews": 25
+      "sessions": 24,
+      "screenPageViews": 24
     },
     {
       "countryId": "BR",
-      "sessions": 4,
-      "screenPageViews": 5
+      "sessions": 5,
+      "screenPageViews": 6
     },
     {
       "countryId": "ID",
@@ -37,19 +37,24 @@
       "screenPageViews": 6
     },
     {
+      "countryId": "TR",
+      "sessions": 4,
+      "screenPageViews": 4
+    },
+    {
       "countryId": "CN",
       "sessions": 3,
       "screenPageViews": 7
     },
     {
-      "countryId": "TR",
-      "sessions": 3,
-      "screenPageViews": 3
-    },
-    {
       "countryId": "UZ",
       "sessions": 3,
       "screenPageViews": 7
+    },
+    {
+      "countryId": "CO",
+      "sessions": 2,
+      "screenPageViews": 2
     },
     {
       "countryId": "HK",
@@ -60,12 +65,7 @@
       "countryId": "JP",
       "sessions": 2,
       "screenPageViews": 4
-    },
-    {
-      "countryId": "TW",
-      "sessions": 2,
-      "screenPageViews": 2
     }
   ],
-  "generatedAt": "2026-11-16T06:59:50.215Z"
+  "generatedAt": "2026-11-17T19:00:56.897Z"
 }

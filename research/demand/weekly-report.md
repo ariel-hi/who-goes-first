@@ -1,8 +1,8 @@
-# Weekly growth report — 2026-11-16
+# Weekly growth report — 2026-11-17
 
 ## Search (Google, last 7 days of final data vs the 7 before)
 - Clicks: **0** (-100%)
-- Impressions: **9** (+0%)
+- Impressions: **7** (-30%)
 - Published rules: 1339
 
 [Exact sitewide, page and visible page/query comparisons](search-performance.json): available. Missing rows are not zero or proof of new/disappearing rankings.
@@ -28,32 +28,32 @@ The Search Console API does not provide the Sitemaps report's fetch label. Zero 
 
 This checks 9 named URLs in Google's indexed data, not the current live pages or the full site.
 
-## Traffic (GA4, 2026-10-16 through 2026-11-14)
-- Sessions: **178** · Screen/page views: **215** · Users: 173
-- Screen/page views per session: 1.21
+## Traffic (GA4, 2026-10-17 through 2026-11-15)
+- Sessions: **186** · Screen/page views: **222** · Users: 179
+- Screen/page views per session: 1.19
 
 The live-hostname measurement guard began on 2026-09-28; known CI contamination from earlier dates is excluded. These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic. Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
-- Named US/CA/GB/AU subtotal: 114 sessions. Five-country US/CA/GB/AU/NZ subtotal: 132 screen/page views. These are GA4 observations, not ad-network qualification.
+- Named US/CA/GB/AU subtotal: 118 sessions. Five-country US/CA/GB/AU/NZ subtotal: 135 screen/page views. These are GA4 observations, not ad-network qualification.
 
 
 ## Traffic acquisition (GA4)
-- Direct: 156 reported row sessions (87.6% of GA4 sessions), 21 engaged row sessions.
-- Organic Search: 16 reported row sessions (9.0% of GA4 sessions), 1 engaged row sessions.
+- Direct: 160 reported row sessions (86.0% of GA4 sessions), 20 engaged row sessions.
+- Organic Search: 20 reported row sessions (10.8% of GA4 sessions), 1 engaged row sessions.
 - Organic Social: 4 reported row sessions (2.2% of GA4 sessions), 4 engaged row sessions.
-- Referral: 1 reported row sessions (0.6% of GA4 sessions), 0 engaged row sessions.
-- Unassigned: 1 reported row sessions (0.6% of GA4 sessions), 0 engaged row sessions.
+- Referral: 1 reported row sessions (0.5% of GA4 sessions), 0 engaged row sessions.
+- Unassigned: 1 reported row sessions (0.5% of GA4 sessions), 0 engaged row sessions.
 
 Top source / medium pairs:
-- \(direct\) / \(none\) (Direct): 156 reported row sessions.
+- \(direct\) / \(none\) (Direct): 160 reported row sessions.
+- bing / organic (Organic Search): 9 reported row sessions.
 - google / organic (Organic Search): 8 reported row sessions.
-- bing / organic (Organic Search): 7 reported row sessions.
+- duckduckgo / organic (Organic Search): 2 reported row sessions.
 - pinterest\.com / referral (Organic Social): 2 reported row sessions.
-- \(not set\) (Unassigned): 1 reported row sessions.
 
-Dimension rows reconcile with the undimensioned 178 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
+Dimension rows reconcile with the undimensioned 186 sessions. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
 ## Affiliate link opens (GA4)
-- Amazon link opens: **0** reported events (2026-10-16 through 2026-11-14).
+- Amazon link opens: **0** reported events (2026-10-17 through 2026-11-15).
 
 Measurement began on 2026-09-28; that first day is partial. Analytics choices can suppress events. Opens are not verified purchases, commissions, or revenue.
 
@@ -62,8 +62,8 @@ Official policies checked 2026-09-28; confirm current requirements before an app
 
 | Network | Published minimum | Available observation | Status / unassessed requirements |
 | --- | --- | --- | --- |
-| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 178 total sessions; 114 sessions from US/CA/GB/AU (64.0% of GA4 sessions); full Tier 1 set unmeasured | Total sessions below the minimum; Tier 1 sessions unknown. Grow, original content, content quality and traffic standards unassessed. |
-| Raptive | 25,000 monthly pageviews within 30 days | 215 GA4 screenPageViews; 132 screen/page views from US/CA/GB/AU/NZ (61.4% of GA4 views) | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
+| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 186 total sessions; 118 sessions from US/CA/GB/AU (63.4% of GA4 sessions); full Tier 1 set unmeasured | Total sessions below the minimum; Tier 1 sessions unknown. Grow, original content, content quality and traffic standards unassessed. |
+| Raptive | 25,000 monthly pageviews within 30 days | 222 GA4 screenPageViews; 135 screen/page views from US/CA/GB/AU/NZ (60.8% of GA4 views) | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
 | Mediavine | $5,000 annual ad revenue | Unknown — annual ad revenue not collected | Unknown. Original content, clean human brand-safe traffic, Google AdSense/AdExchange standing and advertising-compatible reader experience unassessed. |
 
 GA4 screenPageViews combines screen and page views; confirm website pageviews for Raptive. The country report shows 0 sessions outside the returned country rows. No annual ad-revenue evidence is supplied by this job. Mediavine's 2026 publisher programs use prior-calendar-year ad revenue; monthly traffic is not a substitute.
@@ -75,14 +75,16 @@ Sources: [Mediavine and Journey requirements](https://www.mediavine.com/mediavin
 No starting-rule searches for games without a sourced rule yet.
 
 Starting-rule searches that match no known game (possible new games):
+- “ways to decide who goes first” — 1
 - “who goes first” — 1
 
 
 ## Top queries (28 days)
+- “ways to decide who goes first” — 0 clicks, 1 impressions
 - “who goes first” — 0 clicks, 1 impressions
 
 ## Top pages (28 days)
-- / — 1 clicks, 14 impressions
+- / — 1 clicks, 15 impressions
 - /games/schnapp-land-fluss-amigo-en-v4-1-family/ — 1 clicks, 1 impressions
 - /games/inis-matagot-original-en/ — 0 clicks, 6 impressions
 - /games/alpaca-gateongames-en/ — 0 clicks, 5 impressions
@@ -94,12 +96,6 @@ Starting-rule searches that match no known game (possible new games):
 - /games/songbirds-homosapiens-en/ — 0 clicks, 5 impressions
 
 ## Discovery improvement queue (tools, guides and rules)
-- Watch: /games/inis-matagot-original-en/ — 6 impressions, 0 clicks, 0.0% CTR, position 9.3. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/songbirds-homosapiens-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 2.0. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/octopie-gamewright-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 3.0. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/codenames-2025-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 4.0. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/castell-renegade-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 5.6. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/carnegie-pegasus-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 7.2. Keep observing; this sample is too small to judge the title or click rate.
-- Watch: /games/alpaca-gateongames-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 8.2. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/star-wars-x-wing-ffg-original-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 8.4. Keep observing; this sample is too small to judge the title or click rate.
 - Watch: /games/root-leder-standard-en/ — 5 impressions, 0 clicks, 0.0% CTR, position 9.2. Keep observing; this sample is too small to judge the title or click rate.

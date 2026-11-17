@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T06:59:43.761Z",
+  "generatedAt": "2026-11-17T19:00:35.100Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Search Analytics API",
   "searchType": "web",
@@ -16,7 +16,7 @@
       "query"
     ]
   },
-  "anchorDateUtc": "2026-11-16",
+  "anchorDateUtc": "2026-11-17",
   "reportingLagDays": 3,
   "aggregation": "auto (API default); responseAggregationType is not retained by the existing API client",
   "totalsSource": "Independent dimensionless requests; sitewide position is Google-provided, never a page-position average.",
@@ -35,8 +35,8 @@
   "sevenDay": {
     "current": {
       "window": {
-        "start": "2026-11-07",
-        "end": "2026-11-13"
+        "start": "2026-11-08",
+        "end": "2026-11-14"
       },
       "totals": {
         "status": "available",
@@ -44,14 +44,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 0,
-          "impressions": 9,
+          "impressions": 7,
           "ctr": 0,
-          "averagePosition": 12.222222222222221
+          "averagePosition": 26.285714285714285
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 15,
+        "returnedRowCount": 6,
         "emptyResult": false,
         "data": [
           {
@@ -59,8 +59,122 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 2,
             "ctr": 0,
+            "averagePosition": 77
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/booyah-playmonster-2019-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 5
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/cat-lady/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 3
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/earth-inside-up-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 1
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 11
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 10
+          }
+        ]
+      },
+      "pageQuery": {
+        "status": "available",
+        "returnedRowCount": 2,
+        "emptyResult": false,
+        "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "ways to decide who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 78
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 76
+          }
+        ]
+      }
+    },
+    "previous": {
+      "window": {
+        "start": "2026-11-01",
+        "end": "2026-11-07"
+      },
+      "totals": {
+        "status": "available",
+        "returnedRowCount": 1,
+        "emptyResult": false,
+        "data": {
+          "clicks": 2,
+          "impressions": 10,
+          "ctr": 0.2,
+          "averagePosition": 15
+        }
+      },
+      "pages": {
+        "status": "available",
+        "returnedRowCount": 13,
+        "emptyResult": false,
+        "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/"
+            ],
+            "clicks": 1,
+            "impressions": 6,
+            "ctr": 0.16666666666666666,
+            "averagePosition": 18.666666666666668
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/schnapp-land-fluss-amigo-en-v4-1-family/"
+            ],
+            "clicks": 1,
+            "impressions": 1,
+            "ctr": 1,
             "averagePosition": 20
           },
           {
@@ -71,15 +185,6 @@
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 7
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/booyah-playmonster-2019-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
           },
           {
             "keys": [
@@ -101,15 +206,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/cat-lady/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 3
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/codenames-2025-en/"
             ],
             "clicks": 0,
@@ -119,12 +215,12 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/earth-inside-up-en/"
+              "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
             ],
             "clicks": 0,
             "impressions": 1,
             "ctr": 0,
-            "averagePosition": 1
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -134,15 +230,6 @@
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 8
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/nemesis-awaken-realms-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 11
           },
           {
             "keys": [
@@ -176,9 +263,9 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 10
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -193,92 +280,6 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 1,
-        "emptyResult": false,
-        "data": [
-          {
-            "keys": [
-              "https://whogoesfirst.fun/",
-              "who goes first"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 76
-          }
-        ]
-      }
-    },
-    "previous": {
-      "window": {
-        "start": "2026-10-31",
-        "end": "2026-11-06"
-      },
-      "totals": {
-        "status": "available",
-        "returnedRowCount": 1,
-        "emptyResult": false,
-        "data": {
-          "clicks": 2,
-          "impressions": 9,
-          "ctr": 0.2222222222222222,
-          "averagePosition": 17.555555555555557
-        }
-      },
-      "pages": {
-        "status": "available",
-        "returnedRowCount": 5,
-        "emptyResult": false,
-        "data": [
-          {
-            "keys": [
-              "https://whogoesfirst.fun/"
-            ],
-            "clicks": 1,
-            "impressions": 4,
-            "ctr": 0.25,
-            "averagePosition": 29.25
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/schnapp-land-fluss-amigo-en-v4-1-family/"
-            ],
-            "clicks": 1,
-            "impressions": 1,
-            "ctr": 1,
-            "averagePosition": 20
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/war-of-the-ring-ares-second-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 3
-          }
-        ]
-      },
-      "pageQuery": {
-        "status": "available",
         "returnedRowCount": 0,
         "emptyResult": true,
         "data": []
@@ -287,11 +288,11 @@
     "changes": {
       "totals": {
         "clicks": -2,
-        "impressions": 0,
+        "impressions": -3,
         "clicksPercent": -100,
-        "impressionsPercent": 0,
-        "ctrPercentagePoints": -22.22222222222222,
-        "averagePosition": -5.333333333333336
+        "impressionsPercent": -30,
+        "ctrPercentagePoints": -20,
+        "averagePosition": 11.285714285714285
       },
       "pages": [
         {
@@ -304,34 +305,35 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 20
+            "averagePosition": 77
           },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 4,
-            "ctr": 0.25,
-            "averagePosition": 29.25
+            "impressions": 6,
+            "ctr": 0.16666666666666666,
+            "averagePosition": 18.666666666666668
           },
           "change": {
             "clicks": -1,
-            "impressions": 0,
+            "impressions": -4,
             "clicksPercent": -100,
-            "impressionsPercent": 0,
-            "ctrPercentagePoints": -25,
-            "averagePosition": -9.25
+            "impressionsPercent": -66.66666666666666,
+            "ctrPercentagePoints": -16.666666666666664,
+            "averagePosition": 58.33333333333333
           }
         },
         {
           "keys": [
             "https://whogoesfirst.fun/games/alpaca-gateongames-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/alpaca-gateongames-en/"
             ],
@@ -340,7 +342,6 @@
             "ctr": 0,
             "averagePosition": 7
           },
-          "previous": null,
           "change": null
         },
         {
@@ -364,8 +365,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/carnegie-pegasus-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/carnegie-pegasus-en/"
             ],
@@ -374,15 +376,15 @@
             "ctr": 0,
             "averagePosition": 6
           },
-          "previous": null,
           "change": null
         },
         {
           "keys": [
             "https://whogoesfirst.fun/games/castell-renegade-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/castell-renegade-en/"
             ],
@@ -391,7 +393,6 @@
             "ctr": 0,
             "averagePosition": 5
           },
-          "previous": null,
           "change": null
         },
         {
@@ -415,8 +416,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/codenames-2025-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/codenames-2025-en/"
             ],
@@ -425,7 +427,6 @@
             "ctr": 0,
             "averagePosition": 4
           },
-          "previous": null,
           "change": null
         },
         {
@@ -466,8 +467,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/inis-matagot-original-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/inis-matagot-original-en/"
             ],
@@ -476,7 +478,6 @@
             "ctr": 0,
             "averagePosition": 8
           },
-          "previous": null,
           "change": null
         },
         {
@@ -500,8 +501,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/octopie-gamewright-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/octopie-gamewright-en/"
             ],
@@ -510,7 +512,6 @@
             "ctr": 0,
             "averagePosition": 3
           },
-          "previous": null,
           "change": null
         },
         {
@@ -534,8 +535,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/scrabble-hasbro-2021-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/scrabble-hasbro-2021-en/"
             ],
@@ -544,15 +546,15 @@
             "ctr": 0,
             "averagePosition": 10
           },
-          "previous": null,
           "change": null
         },
         {
           "keys": [
             "https://whogoesfirst.fun/games/songbirds-homosapiens-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/songbirds-homosapiens-en/"
             ],
@@ -561,7 +563,6 @@
             "ctr": 0,
             "averagePosition": 2
           },
-          "previous": null,
           "change": null
         },
         {
@@ -598,27 +599,11 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/war-of-the-ring-ares-second-en/"
+            "https://whogoesfirst.fun/games/zooloretto-rio-grande-en/"
           ],
           "presence": "previous_only_returned",
           "current": null,
           "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/war-of-the-ring-ares-second-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 3
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/zooloretto-rio-grande-en/"
-          ],
-          "presence": "current_only_returned",
-          "current": {
             "keys": [
               "https://whogoesfirst.fun/games/zooloretto-rio-grande-en/"
             ],
@@ -627,11 +612,29 @@
             "ctr": 0,
             "averagePosition": 9
           },
-          "previous": null,
           "change": null
         }
       ],
       "pageQuery": [
+        {
+          "keys": [
+            "https://whogoesfirst.fun/",
+            "ways to decide who goes first"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "ways to decide who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 78
+          },
+          "previous": null,
+          "change": null
+        },
         {
           "keys": [
             "https://whogoesfirst.fun/",
@@ -657,8 +660,8 @@
   "twentyEightDay": {
     "current": {
       "window": {
-        "start": "2026-10-17",
-        "end": "2026-11-13"
+        "start": "2026-10-18",
+        "end": "2026-11-14"
       },
       "totals": {
         "status": "available",
@@ -666,9 +669,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 2,
-          "impressions": 49,
-          "ctr": 0.04081632653061224,
-          "averagePosition": 12.040816326530612
+          "impressions": 50,
+          "ctr": 0.04,
+          "averagePosition": 13.36
         }
       },
       "pages": {
@@ -681,9 +684,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 14,
-            "ctr": 0.07142857142857142,
-            "averagePosition": 18.714285714285715
+            "impressions": 15,
+            "ctr": 0.06666666666666667,
+            "averagePosition": 22.666666666666668
           },
           {
             "keys": [
@@ -995,9 +998,19 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 1,
+        "returnedRowCount": 2,
         "emptyResult": false,
         "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "ways to decide who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 78
+          },
           {
             "keys": [
               "https://whogoesfirst.fun/",
@@ -1013,8 +1026,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-09-19",
-        "end": "2026-10-16"
+        "start": "2026-09-20",
+        "end": "2026-10-17"
       },
       "totals": {
         "status": "available",
@@ -12253,11 +12266,11 @@
     "changes": {
       "totals": {
         "clicks": -31,
-        "impressions": -3682,
+        "impressions": -3681,
         "clicksPercent": -93.93939393939394,
-        "impressionsPercent": -98.68667917448406,
-        "ctrPercentagePoints": 3.197151280774974,
-        "averagePosition": -2.098824520427309
+        "impressionsPercent": -98.65987670865721,
+        "ctrPercentagePoints": 3.1155186277137497,
+        "averagePosition": -0.7796408469579212
       },
       "pages": [
         {
@@ -12270,9 +12283,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 14,
-            "ctr": 0.07142857142857142,
-            "averagePosition": 18.714285714285715
+            "impressions": 15,
+            "ctr": 0.06666666666666667,
+            "averagePosition": 22.666666666666668
           },
           "previous": {
             "keys": [
@@ -12285,11 +12298,11 @@
           },
           "change": {
             "clicks": -1,
-            "impressions": -12,
+            "impressions": -11,
             "clicksPercent": -50,
-            "impressionsPercent": -46.15384615384615,
-            "ctrPercentagePoints": -0.5494505494505503,
-            "averagePosition": 11.560439560439562
+            "impressionsPercent": -42.30769230769231,
+            "ctrPercentagePoints": -1.0256410256410262,
+            "averagePosition": 15.512820512820515
           }
         },
         {
@@ -25306,6 +25319,25 @@
             "ctr": 0,
             "averagePosition": 7
           },
+          "change": null
+        },
+        {
+          "keys": [
+            "https://whogoesfirst.fun/",
+            "ways to decide who goes first"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "ways to decide who goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 78
+          },
+          "previous": null,
           "change": null
         },
         {
