@@ -9,8 +9,8 @@ export async function publishBluesky(options: Options): Promise<{ status: 'publi
   const { handle, password, service, origin, date, campaign, rulePool, request = fetch } = options;
   const rkey = publicationKey(date);
   const collection = 'app.bsky.feed.post';
-  async function xrpc<T>(method: string, init: RequestInit = {}): Promise<T> {
-    const response = await request(`${service}/xrpc/${method}`, { ...init, signal: AbortSignal.timeout(15000) });
+  async function xrpc<T>(method: string, init: RequestInit = {}, timeoutMs = 15000): Promise<T> {
+    const response = await request(`${service}/xrpc/${method}`, { ...init, signal: AbortSignal.timeout(timeoutMs) });
     if (!response.ok) throw new Error(`Bluesky ${method.split('?')[0]} failed (${response.status}).`);
     return await response.json() as T;
   }
@@ -58,7 +58,18 @@ export async function publishBluesky(options: Options): Promise<{ status: 'publi
   if (live.status !== 200) throw new Error(`Campaign destination is not live (${live.status}): ${activeCampaign.path}`);
   const image = await request(`${origin}${activeCampaign.image}`, { redirect: 'error', signal: AbortSignal.timeout(15000) });
   if (!image.ok || !image.headers.get('content-type')?.startsWith('image/png')) throw new Error('Campaign image is unavailable; skipping publication.');
-  const thumb = (await xrpc<{ blob: unknown }>('com.atproto.repo.uploadBlob', { method: 'POST', headers: { ...auth, 'Content-Type': 'image/png' }, body: new Uint8Array(await image.arrayBuffer()) })).blob;
+  const imageBytes = new Uint8Array(await image.arrayBuffer());
+  let thumb: unknown;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      thumb = (await xrpc<{ blob: unknown }>('com.atproto.repo.uploadBlob', { method: 'POST', headers: { ...auth, 'Content-Type': 'image/png' }, body: imageBytes }, attempt === 0 ? 15000 : 30000)).blob;
+      break;
+    } catch (error) {
+      // Blob uploads are content-addressed, so repeating identical bytes after a
+      // timeout is safe. Never retry the subsequent createRecord write here.
+      if (attempt === 1 || !(error instanceof Error) || !['TimeoutError', 'AbortError'].includes(error.name)) throw error;
+    }
+  }
   const result = await xrpc<RecordResult>('com.atproto.repo.createRecord', { method: 'POST', headers: { ...auth, 'Content-Type': 'application/json' }, body: JSON.stringify({
     repo: session.did, collection, rkey, swapCommit: commit.cid,
     record: { $type: collection, text: activeCampaign.text, facets: hashtagFacets(activeCampaign.text), createdAt: date.toISOString(), langs: ['en'],

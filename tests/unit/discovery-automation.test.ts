@@ -12,12 +12,13 @@ const did = 'did:plc:fixture';
 const campaign: SocialCampaign = { id: 'checklist', kind: 'guide', path: '/game-night-checklist/', image: '/og/game-night-checklist.png', title: 'Checklist', description: 'Plan game night.', text: 'Hosting game night? Try the checklist.' };
 const value = { text: campaign.text, createdAt: date.toISOString(), embed: { external: { uri: `${origin}${campaign.path}` } } };
 
-function fixture(options: { existing?: boolean; manual?: boolean; failure?: 'history' | 'page' | 'image' | 'concurrent'; manyOlder?: boolean; cursor?: boolean; publicationDate?: Date; campaign?: SocialCampaign; prior?: { createdAt: string; path: string; title: string }[] } = {}) {
+function fixture(options: { existing?: boolean; manual?: boolean; failure?: 'history' | 'page' | 'image' | 'concurrent'; uploadTimeouts?: number; manyOlder?: boolean; cursor?: boolean; publicationDate?: Date; campaign?: SocialCampaign; prior?: { createdAt: string; path: string; title: string }[] } = {}) {
   const selected = options.campaign ?? campaign;
   const fixtureDate = options.publicationDate ?? date;
   const fixtureUri = `at://${did}/app.bsky.feed.post/${publicationKey(fixtureDate)}`;
   let savedValue = { text: selected.text, createdAt: fixtureDate.toISOString(), embed: { external: { uri: `${origin}${selected.path}` } } };
   let saved = Boolean(options.existing);
+  let remainingUploadTimeouts = options.uploadTimeouts ?? 0;
   const bodies: Record<string, unknown>[] = [];
   const request = vi.fn(async (input: string | URL | Request, init?: RequestInit) => {
     const url = String(input);
@@ -28,7 +29,10 @@ function fixture(options: { existing?: boolean; manual?: boolean; failure?: 'his
     if (url.includes('getAuthorFeed')) return json({ feed: options.manual ? [{ post: { uri: `at://${did}/app.bsky.feed.post/manual-key`, author: { did }, record: savedValue } }] : options.manyOlder ? Array.from({ length: 100 }, () => ({ post: { uri: fixtureUri, author: { did }, record: { ...savedValue, createdAt: '2026-09-30T15:17:00Z' } } })) : (options.prior ?? []).map((item, index) => ({ post: { uri: `at://${did}/app.bsky.feed.post/prior-${index}`, author: { did }, record: { createdAt: item.createdAt, embed: { external: { uri: `${origin}${item.path}`, title: item.title } } } } })), ...(options.manyOlder || options.cursor ? { cursor: 'older' } : {}) });
     if (url.startsWith(`${origin}/`) && init?.method === 'HEAD') return new Response(null, { status: options.failure === 'page' ? 404 : 200 });
     if (url.startsWith(`${origin}/og/`)) return new Response('png-fixture', { headers: { 'Content-Type': options.failure === 'image' ? 'text/html' : 'image/png' } });
-    if (url.includes('uploadBlob')) return json({ blob: { ref: 'image-fixture' } });
+    if (url.includes('uploadBlob')) {
+      if (remainingUploadTimeouts-- > 0) throw Object.assign(new Error('fixture timeout'), { name: 'TimeoutError' });
+      return json({ blob: { ref: 'image-fixture' } });
+    }
     if (url.includes('createRecord')) {
       const body = JSON.parse(String(init?.body));
       bodies.push(body);
@@ -49,6 +53,16 @@ test('a verified daily post rerun creates exactly one record, with a clean desti
   expect((await publish(mock.request)).status).toBe('already-published');
   expect(mock.bodies).toHaveLength(1);
   expect(mock.bodies[0]).toMatchObject({ rkey: publicationKey(date), swapCommit: 'before-check', record: { text: campaign.text, embed: { external: { uri: `${origin}${campaign.path}` } } } });
+});
+
+test('a timed-out blob upload retries identical bytes, but exhausted uploads never create a post', async () => {
+  const recovered = fixture({ uploadTimeouts: 1 });
+  expect((await publish(recovered.request)).status).toBe('published');
+  expect(recovered.calls.mock.calls.filter(call => String(call[0]).includes('uploadBlob'))).toHaveLength(2);
+  expect(recovered.bodies).toHaveLength(1);
+  const exhausted = fixture({ uploadTimeouts: 2 });
+  await expect(publish(exhausted.request)).rejects.toMatchObject({ name: 'TimeoutError' });
+  expect(exhausted.bodies).toHaveLength(0);
 });
 
 test('a rule post uses a different game when the recent feed already contains that game', async () => {
