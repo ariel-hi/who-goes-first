@@ -1,20 +1,20 @@
 {
   "status": "available",
-  "periodStart": "2026-10-17",
-  "periodEnd": "2026-11-15",
+  "periodStart": "2026-10-19",
+  "periodEnd": "2026-11-17",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 186,
-  "rowSessions": 186,
+  "totalSessions": 258,
+  "rowSessions": 258,
   "rowTotalDifference": 0,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
-  "rowCount": 10,
+  "rowCount": 9,
   "channels": [
     {
       "name": "Direct",
-      "sessions": 160,
-      "engagedSessions": 20
+      "sessions": 233,
+      "engagedSessions": 17
     },
     {
       "name": "Organic Search",
@@ -30,19 +30,14 @@
       "name": "Referral",
       "sessions": 1,
       "engagedSessions": 0
-    },
-    {
-      "name": "Unassigned",
-      "sessions": 1,
-      "engagedSessions": 0
     }
   ],
   "topSources": [
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 160,
-      "engagedSessions": 20
+      "sessions": 233,
+      "engagedSessions": 17
     },
     {
       "name": "bing / organic",
@@ -69,12 +64,6 @@
       "engagedSessions": 2
     },
     {
-      "name": "(not set)",
-      "channel": "Unassigned",
-      "sessions": 1,
-      "engagedSessions": 0
-    },
-    {
       "name": "github.com / referral",
       "channel": "Referral",
       "sessions": 1,
@@ -99,5 +88,5 @@
       "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-11-17T19:00:56.897Z"
+  "generatedAt": "2026-11-19T06:48:30.140Z"
 }

@@ -1,25 +1,25 @@
 {
   "status": "available",
-  "periodStart": "2026-10-17",
-  "periodEnd": "2026-11-15",
+  "periodStart": "2026-10-19",
+  "periodEnd": "2026-11-17",
   "source": "Google Analytics 4 Data API (countryId; sessions and screenPageViews)",
-  "totalSessions": 186,
-  "totalScreenPageViews": 222,
-  "namedJourneySessions": 118,
-  "raptiveCountrySessions": 118,
-  "raptiveCountryScreenPageViews": 135,
+  "totalSessions": 258,
+  "totalScreenPageViews": 290,
+  "namedJourneySessions": 141,
+  "raptiveCountrySessions": 141,
+  "raptiveCountryScreenPageViews": 158,
   "unattributedSessions": 0,
   "unattributedScreenPageViews": 0,
-  "reportRowCount": 27,
-  "returnedRows": 27,
+  "reportRowCount": 34,
+  "returnedRows": 34,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
   "dataTruncation": false,
   "topCountries": [
     {
       "countryId": "US",
-      "sessions": 117,
-      "screenPageViews": 133
+      "sessions": 139,
+      "screenPageViews": 155
     },
     {
       "countryId": "SG",
@@ -28,13 +28,33 @@
     },
     {
       "countryId": "BR",
-      "sessions": 5,
-      "screenPageViews": 6
+      "sessions": 14,
+      "screenPageViews": 15
+    },
+    {
+      "countryId": "MY",
+      "sessions": 8,
+      "screenPageViews": 8
+    },
+    {
+      "countryId": "VN",
+      "sessions": 8,
+      "screenPageViews": 8
     },
     {
       "countryId": "ID",
-      "sessions": 4,
+      "sessions": 7,
+      "screenPageViews": 9
+    },
+    {
+      "countryId": "CO",
+      "sessions": 6,
       "screenPageViews": 6
+    },
+    {
+      "countryId": "HK",
+      "sessions": 4,
+      "screenPageViews": 4
     },
     {
       "countryId": "TR",
@@ -42,30 +62,10 @@
       "screenPageViews": 4
     },
     {
-      "countryId": "CN",
+      "countryId": "BD",
       "sessions": 3,
-      "screenPageViews": 7
-    },
-    {
-      "countryId": "UZ",
-      "sessions": 3,
-      "screenPageViews": 7
-    },
-    {
-      "countryId": "CO",
-      "sessions": 2,
-      "screenPageViews": 2
-    },
-    {
-      "countryId": "HK",
-      "sessions": 2,
-      "screenPageViews": 2
-    },
-    {
-      "countryId": "JP",
-      "sessions": 2,
-      "screenPageViews": 4
+      "screenPageViews": 3
     }
   ],
-  "generatedAt": "2026-11-17T19:00:56.897Z"
+  "generatedAt": "2026-11-19T06:48:30.140Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T19:00:35.100Z",
+  "generatedAt": "2026-11-19T06:46:28.958Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Search Analytics API",
   "searchType": "web",
@@ -16,7 +16,7 @@
       "query"
     ]
   },
-  "anchorDateUtc": "2026-11-17",
+  "anchorDateUtc": "2026-11-19",
   "reportingLagDays": 3,
   "aggregation": "auto (API default); responseAggregationType is not retained by the existing API client",
   "totalsSource": "Independent dimensionless requests; sitewide position is Google-provided, never a page-position average.",
@@ -35,8 +35,8 @@
   "sevenDay": {
     "current": {
       "window": {
-        "start": "2026-11-08",
-        "end": "2026-11-14"
+        "start": "2026-11-10",
+        "end": "2026-11-16"
       },
       "totals": {
         "status": "available",
@@ -44,14 +44,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 0,
-          "impressions": 7,
+          "impressions": 6,
           "ctr": 0,
-          "averagePosition": 26.285714285714285
+          "averagePosition": 29.666666666666668
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 6,
+        "returnedRowCount": 4,
         "emptyResult": false,
         "data": [
           {
@@ -62,15 +62,6 @@
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 77
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/booyah-playmonster-2019-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
           },
           {
             "keys": [
@@ -86,9 +77,9 @@
               "https://whogoesfirst.fun/games/earth-inside-up-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 1
+            "averagePosition": 5
           },
           {
             "keys": [
@@ -98,15 +89,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 11
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
           }
         ]
       },
@@ -140,42 +122,33 @@
     },
     "previous": {
       "window": {
-        "start": "2026-11-01",
-        "end": "2026-11-07"
+        "start": "2026-11-03",
+        "end": "2026-11-09"
       },
       "totals": {
         "status": "available",
         "returnedRowCount": 1,
         "emptyResult": false,
         "data": {
-          "clicks": 2,
-          "impressions": 10,
-          "ctr": 0.2,
-          "averagePosition": 15
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "averagePosition": 16.375
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 13,
+        "returnedRowCount": 12,
         "emptyResult": false,
         "data": [
           {
             "keys": [
               "https://whogoesfirst.fun/"
             ],
-            "clicks": 1,
-            "impressions": 6,
-            "ctr": 0.16666666666666666,
-            "averagePosition": 18.666666666666668
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/schnapp-land-fluss-amigo-en-v4-1-family/"
-            ],
-            "clicks": 1,
-            "impressions": 1,
-            "ctr": 1,
-            "averagePosition": 20
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "averagePosition": 26
           },
           {
             "keys": [
@@ -185,6 +158,15 @@
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 7
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/booyah-playmonster-2019-en/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 5
           },
           {
             "keys": [
@@ -212,15 +194,6 @@
             "impressions": 2,
             "ctr": 0,
             "averagePosition": 4
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
           },
           {
             "keys": [
@@ -263,9 +236,9 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 6
+            "averagePosition": 7.333333333333333
           },
           {
             "keys": [
@@ -287,12 +260,12 @@
     },
     "changes": {
       "totals": {
-        "clicks": -2,
-        "impressions": -3,
-        "clicksPercent": -100,
-        "impressionsPercent": -30,
-        "ctrPercentagePoints": -20,
-        "averagePosition": 11.285714285714285
+        "clicks": 0,
+        "impressions": -2,
+        "clicksPercent": null,
+        "impressionsPercent": -25,
+        "ctrPercentagePoints": 0,
+        "averagePosition": 13.291666666666668
       },
       "pages": [
         {
@@ -313,18 +286,18 @@
             "keys": [
               "https://whogoesfirst.fun/"
             ],
-            "clicks": 1,
-            "impressions": 6,
-            "ctr": 0.16666666666666666,
-            "averagePosition": 18.666666666666668
+            "clicks": 0,
+            "impressions": 4,
+            "ctr": 0,
+            "averagePosition": 26
           },
           "change": {
-            "clicks": -1,
-            "impressions": -4,
-            "clicksPercent": -100,
-            "impressionsPercent": -66.66666666666666,
-            "ctrPercentagePoints": -16.666666666666664,
-            "averagePosition": 58.33333333333333
+            "clicks": 0,
+            "impressions": -2,
+            "clicksPercent": null,
+            "impressionsPercent": -50,
+            "ctrPercentagePoints": 0,
+            "averagePosition": 51
           }
         },
         {
@@ -348,8 +321,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/booyah-playmonster-2019-en/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/booyah-playmonster-2019-en/"
             ],
@@ -358,7 +332,6 @@
             "ctr": 0,
             "averagePosition": 5
           },
-          "previous": null,
           "change": null
         },
         {
@@ -439,28 +412,11 @@
               "https://whogoesfirst.fun/games/earth-inside-up-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 1
+            "averagePosition": 5
           },
           "previous": null,
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
           "change": null
         },
         {
@@ -516,23 +472,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/schnapp-land-fluss-amigo-en-v4-1-family/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/schnapp-land-fluss-amigo-en-v4-1-family/"
-            ],
-            "clicks": 1,
-            "impressions": 1,
-            "ctr": 1,
-            "averagePosition": 20
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/scrabble-hasbro-2021-en/"
           ],
           "presence": "previous_only_returned",
@@ -569,33 +508,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 6
+            "averagePosition": 7.333333333333333
           },
-          "change": {
-            "clicks": 0,
-            "impressions": -1,
-            "clicksPercent": null,
-            "impressionsPercent": -50,
-            "ctrPercentagePoints": 0,
-            "averagePosition": 4
-          }
+          "change": null
         },
         {
           "keys": [
@@ -660,8 +584,8 @@
   "twentyEightDay": {
     "current": {
       "window": {
-        "start": "2026-10-18",
-        "end": "2026-11-14"
+        "start": "2026-10-20",
+        "end": "2026-11-16"
       },
       "totals": {
         "status": "available",
@@ -669,14 +593,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 2,
-          "impressions": 50,
-          "ctr": 0.04,
-          "averagePosition": 13.36
+          "impressions": 45,
+          "ctr": 0.044444444444444446,
+          "averagePosition": 12.311111111111112
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 35,
+        "returnedRowCount": 32,
         "emptyResult": false,
         "data": [
           {
@@ -792,27 +716,18 @@
               "https://whogoesfirst.fun/games/earth-inside-up-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 1
+            "averagePosition": 5
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/hick-hack-in-gackelwack-zoch-de-printout-2007/"
-            ],
-            "clicks": 0,
             "impressions": 1,
             "ctr": 0,
-            "averagePosition": 76
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -831,15 +746,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 6
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
           },
           {
             "keys": [
@@ -882,9 +788,9 @@
               "https://whogoesfirst.fun/games/root-leder-standard-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 9.2
+            "averagePosition": 8.666666666666668
           },
           {
             "keys": [
@@ -948,15 +854,6 @@
             "impressions": 3,
             "ctr": 0,
             "averagePosition": 5
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/summoner-wars-second-edition-plaid-hat-en-v1-2/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 11
           },
           {
             "keys": [
@@ -1026,8 +923,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-09-20",
-        "end": "2026-10-17"
+        "start": "2026-09-22",
+        "end": "2026-10-19"
       },
       "totals": {
         "status": "available",
@@ -1035,14 +932,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 33,
-          "impressions": 3731,
-          "ctr": 0.008844813722862504,
-          "averagePosition": 14.13964084695792
+          "impressions": 3737,
+          "ctr": 0.008830612791008831,
+          "averagePosition": 14.149852823120149
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 732,
+        "returnedRowCount": 733,
         "emptyResult": false,
         "data": [
           {
@@ -3930,9 +3827,9 @@
               "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 2
+            "averagePosition": 4
           },
           {
             "keys": [
@@ -4230,6 +4127,15 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 7
+          },
+          {
+            "keys": [
+              "https://whogoesfirst.fun/games/hick-hack-in-gackelwack-zoch-de-printout-2007/"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 76
           },
           {
             "keys": [
@@ -4767,9 +4673,9 @@
               "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 7.75
           },
           {
             "keys": [
@@ -5829,9 +5735,9 @@
               "https://whogoesfirst.fun/games/root-leder-standard-en/"
             ],
             "clicks": 0,
-            "impressions": 59,
+            "impressions": 61,
             "ctr": 0,
-            "averagePosition": 9.40677966101695
+            "averagePosition": 9.426229508196721
           },
           {
             "keys": [
@@ -6513,9 +6419,9 @@
               "https://whogoesfirst.fun/games/summoner-wars-second-edition-plaid-hat-en-v1-2/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 10.5
+            "averagePosition": 10.666666666666666
           },
           {
             "keys": [
@@ -12266,11 +12172,11 @@
     "changes": {
       "totals": {
         "clicks": -31,
-        "impressions": -3681,
+        "impressions": -3692,
         "clicksPercent": -93.93939393939394,
-        "impressionsPercent": -98.65987670865721,
-        "ctrPercentagePoints": 3.1155186277137497,
-        "averagePosition": -0.7796408469579212
+        "impressionsPercent": -98.7958255284988,
+        "ctrPercentagePoints": 3.5613831653435617,
+        "averagePosition": -1.8387417120090372
       },
       "pages": [
         {
@@ -16572,9 +16478,9 @@
               "https://whogoesfirst.fun/games/earth-inside-up-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 1
+            "averagePosition": 5
           },
           "previous": {
             "keys": [
@@ -16587,11 +16493,11 @@
           },
           "change": {
             "clicks": 0,
-            "impressions": 0,
+            "impressions": 1,
             "clicksPercent": null,
-            "impressionsPercent": 0,
+            "impressionsPercent": 100,
             "ctrPercentagePoints": 0,
-            "averagePosition": -5
+            "averagePosition": -1
           }
         },
         {
@@ -17607,7 +17513,7 @@
               "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
             "averagePosition": 6
           },
@@ -17616,17 +17522,17 @@
               "https://whogoesfirst.fun/games/ghost-lift-engames-en/"
             ],
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 2
+            "averagePosition": 4
           },
           "change": {
             "clicks": 0,
-            "impressions": 1,
+            "impressions": -1,
             "clicksPercent": null,
-            "impressionsPercent": 100,
+            "impressionsPercent": -50,
             "ctrPercentagePoints": 0,
-            "averagePosition": 4
+            "averagePosition": 2
           }
         },
         {
@@ -18228,8 +18134,9 @@
           "keys": [
             "https://whogoesfirst.fun/games/hick-hack-in-gackelwack-zoch-de-printout-2007/"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/hick-hack-in-gackelwack-zoch-de-printout-2007/"
             ],
@@ -18238,7 +18145,6 @@
             "ctr": 0,
             "averagePosition": 76
           },
-          "previous": null,
           "change": null
         },
         {
@@ -19295,33 +19201,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 7.75
           },
-          "change": {
-            "clicks": 0,
-            "impressions": -2,
-            "clicksPercent": null,
-            "impressionsPercent": -66.66666666666666,
-            "ctrPercentagePoints": 0,
-            "averagePosition": 3
-          }
+          "change": null
         },
         {
           "keys": [
@@ -21454,26 +21345,26 @@
               "https://whogoesfirst.fun/games/root-leder-standard-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 9.2
+            "averagePosition": 8.666666666666668
           },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/root-leder-standard-en/"
             ],
             "clicks": 0,
-            "impressions": 59,
+            "impressions": 61,
             "ctr": 0,
-            "averagePosition": 9.40677966101695
+            "averagePosition": 9.426229508196721
           },
           "change": {
             "clicks": 0,
-            "impressions": -54,
+            "impressions": -58,
             "clicksPercent": null,
-            "impressionsPercent": -91.52542372881356,
+            "impressionsPercent": -95.08196721311475,
             "ctrPercentagePoints": 0,
-            "averagePosition": -0.20677966101695056
+            "averagePosition": -0.7595628415300535
           }
         },
         {
@@ -22911,33 +22802,18 @@
           "keys": [
             "https://whogoesfirst.fun/games/summoner-wars-second-edition-plaid-hat-en-v1-2/"
           ],
-          "presence": "returned_both",
-          "current": {
-            "keys": [
-              "https://whogoesfirst.fun/games/summoner-wars-second-edition-plaid-hat-en-v1-2/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 11
-          },
+          "presence": "previous_only_returned",
+          "current": null,
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/summoner-wars-second-edition-plaid-hat-en-v1-2/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 10.5
+            "averagePosition": 10.666666666666666
           },
-          "change": {
-            "clicks": 0,
-            "impressions": -1,
-            "clicksPercent": null,
-            "impressionsPercent": -50,
-            "ctrPercentagePoints": 0,
-            "averagePosition": 0.5
-          }
+          "change": null
         },
         {
           "keys": [
