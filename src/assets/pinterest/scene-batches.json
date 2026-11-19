@@ -625,6 +625,89 @@
           "artworkReview": "Codex, 2026-11-17: deterministic card visually inspected at 1000 x 1500 and 320 x 480. Flat dice motifs have valid single-face pip layouts and no visible adjacent faces; spelling, factual claims and CTA align with the destination."
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-18-a",
+      "preparedAt": "2026-11-18",
+      "baseline": "Existing 246-item queue ends November 19 with one scheduled item; current individual Pinterest outbound clicks are unavailable. Last authenticated October 11–November 10 reference window has only 1–5 outbound clicks per seed Pin, insufficient for a conversion winner.",
+      "hypothesis": "Three distinct scene compositions with specific useful hooks may earn saves and outbound visits, while two practical cards test group participation and sourced family rules. Compare matching windows after public availability.",
+      "timeCost": "Approximately 35 minutes for generation, source/render review and local verification; monetary cost unavailable.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-28 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-sunflower-boardwalk-picker",
+          "scene": "sunflower-boardwalk",
+          "background": "src/assets/pinterest/sunflower-boardwalk.png",
+          "renderedPin": "/pins/q/scene-sunflower-boardwalk-picker.png",
+          "renderedSha256": "99f0295bb037b996fba31393baa2ad894ad2f70114d77764b77f621f83386ca0",
+          "plannedUtcDate": "2026-11-19",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Original sunflower boardwalk varies botanical curved-path reference with a practical equal-chance starter hook.",
+          "title": "Sunflower path game night: choose who starts",
+          "copy": "Choose one name fairly from the group.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_sunflower_boardwalk_picker"
+        },
+        {
+          "queueId": "scene-camper-van-score",
+          "scene": "camper-van-score",
+          "background": "src/assets/pinterest/camper-van-score.png",
+          "renderedPin": "/pins/q/scene-camper-van-score.png",
+          "renderedSha256": "4dae10d8b82480b4524f7bb9eea0a9b9e0def5dbe85eb3caa66012f0b23e30ab",
+          "plannedUtcDate": "2026-11-19",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Original camper van tabletop varies cozy tactile reference with a score-keeping promise.",
+          "title": "Camper van game night: keep score without paper",
+          "copy": "Add players and tap to update points.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "scene_camper_van_score"
+        },
+        {
+          "queueId": "scene-volcanic-archipelago-turn-order",
+          "scene": "volcanic-archipelago",
+          "background": "src/assets/pinterest/volcanic-archipelago.png",
+          "renderedPin": "/pins/q/scene-volcanic-archipelago-turn-order.png",
+          "renderedSha256": "f7e8af9dbfd94d819867bb1b16329950e03db2d04faf274716dde405f58221e8",
+          "plannedUtcDate": "2026-11-19",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Original basalt island path varies layered miniature-world reference with a full turn-order promise.",
+          "title": "Volcanic islands game night: shuffle the turns",
+          "copy": "Shuffle all player names in one tap.",
+          "destination": "https://whogoesfirst.fun/turn-order-generator/",
+          "campaign": "scene_volcanic_archipelago_turn_order"
+        },
+        {
+          "queueId": "tool-finger-chooser-group-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-finger-chooser-group-nov.png",
+          "renderedSha256": "0cdb9f4e807674f7d3c91bdea02e031ef653b0d86d9ff2270282493e5e3cc324",
+          "plannedUtcDate": "2026-11-19",
+          "parentReference": null,
+          "selection": "Minority practical card tests a group finger draw on one phone with a direct finger-chooser destination.",
+          "title": "Everyone touches the phone. One player starts.",
+          "copy": "Touch the screen to choose one player.",
+          "destination": "https://whogoesfirst.fun/finger-chooser/",
+          "campaign": "tool_finger_chooser_group",
+          "artworkReview": "Codex, 2026-11-18: exact deterministic 1000 x 1500 Pin and 320 x 480 phone preview inspected. Flat dice motifs have valid single-face pip layouts without visible adjacent faces; text, spelling, factual claims and CTA align with destination."
+        },
+        {
+          "queueId": "guide-holiday-family-starters-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-holiday-family-starters-nov.png",
+          "renderedSha256": "55afc40ca504bb010e9fd4b10751a31b930d8377da64cd24a7c942f5b546d0a2",
+          "plannedUtcDate": "2026-11-20",
+          "parentReference": null,
+          "selection": "Minority sourced guide card surfaces familiar family games and verified publisher-rule links.",
+          "title": "Find first-player rules for family holiday games",
+          "copy": "Find sourced first-player rules for family games.",
+          "destination": "https://whogoesfirst.fun/holiday-game-night/",
+          "campaign": "guide_holiday_family_starters",
+          "artworkReview": "Codex, 2026-11-18: exact deterministic 1000 x 1500 Pin and 320 x 480 phone preview inspected. Flat dice motifs have valid single-face pip layouts without visible adjacent faces; text, spelling, factual claims and CTA align with destination."
+        }
+      ]
     }
   ]
 }

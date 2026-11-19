@@ -206,4 +206,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_crystal_cavern_turn_order',
     art: { seed: 'crystal-cavern-turn-order', scene: 'crystal-cavern', kicker: 'A path for every player', title: 'Set the order.\nStart playing.', body: 'Shuffle names into a full turn order.', cta: 'Try the free turn-order tool' },
   },
+  {
+    id: 'scene-sunflower-boardwalk-picker', path: '/',
+    title: 'Sunflower path game night: choose who starts',
+    description: 'Original AI-created sunflower farm miniature with a supported timber boardwalk and three painted wooden meeples. At your real table, add names or numbered seats and draw one starting player with the free browser picker. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_sunflower_boardwalk_picker',
+    art: { seed: 'sunflower-boardwalk-picker', scene: 'sunflower-boardwalk', kicker: 'The first turn starts here', title: 'Add the players.\nDraw a starter.', body: 'Choose one name fairly from the group.', cta: 'Try the free player picker' },
+  },
+  {
+    id: 'scene-camper-van-score', path: '/score-keeper/',
+    title: 'Camper van game night: keep score without paper',
+    description: 'Original AI-created camper van tabletop at dusk with a supported fold-out table, painted wooden meeples and blank scoring tokens. At your real game night, add players and tap to update points with the free browser score keeper. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_camper_van_score',
+    art: { seed: 'camper-van-score', scene: 'camper-van-score', kicker: 'Scores around the table', title: 'Keep the\nscore rolling.', body: 'Add players and tap to update points.', cta: 'Try the free score keeper' },
+  },
+  {
+    id: 'scene-volcanic-archipelago-turn-order', path: '/turn-order-generator/',
+    title: 'Volcanic islands game night: shuffle the turns',
+    description: 'Original AI-created volcanic archipelago miniature with a joined basalt path and three painted wooden meeples. At your real table, enter player names and shuffle a complete turn order with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_volcanic_archipelago_turn_order',
+    art: { seed: 'volcanic-archipelago-turn-order', scene: 'volcanic-archipelago', kicker: 'A route for every player', title: 'Put every\nturn in order.', body: 'Shuffle all player names in one tap.', cta: 'Try the free turn-order tool' },
+  },
 ];
