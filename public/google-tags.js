@@ -30,7 +30,7 @@
   let campaigns = new Set(['first_player_picker', 'game_rules', 'house_questions', 'choose_first_player']);
   try {
     const names = JSON.parse(tag?.dataset.campaigns || 'null');
-    if (Array.isArray(names) && names.length <= 64 && names.every(name => typeof name === 'string' && /^[a-z][a-z0-9_]{0,63}$/.test(name))) campaigns = new Set(names);
+    if (Array.isArray(names) && names.length <= 128 && names.every(name => typeof name === 'string' && /^[a-z][a-z0-9_]{0,63}$/.test(name))) campaigns = new Set(names);
   } catch { /* Keep the legacy finite list on older or malformed pages. */ }
   const campaign = ['pinterest', 'bluesky'].includes(source) && medium === 'organic_social' && campaigns.has(name)
     ? { campaign_source: source, campaign_medium: medium, campaign_name: name }
