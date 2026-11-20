@@ -708,6 +708,59 @@
           "artworkReview": "Codex, 2026-11-18: exact deterministic 1000 x 1500 Pin and 320 x 480 phone preview inspected. Flat dice motifs have valid single-face pip layouts without visible adjacent faces; text, spelling, factual claims and CTA align with destination."
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-20-a",
+      "preparedAt": "2026-11-20",
+      "baseline": "The 251-item queue ended November 20 with one scheduled Pin, and authenticated current outbound clicks are unavailable. The October 11–November 10 reference sample has only one to five outbound clicks per seed Pin and unknown publication ages.",
+      "hypothesis": "Three original scenes with exact tool/checklist promises may earn saves and outbound visits; compare matching windows and publication ages after at least seven observed public days.",
+      "timeCost": "Approximately 25 minutes for generation, visual review and local verification; monetary costs unavailable.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-11-30 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-lantern-plaza-teams",
+          "scene": "lantern-plaza",
+          "background": "src/assets/pinterest/lantern-plaza.png",
+          "renderedPin": "/pins/q/scene-lantern-plaza-teams.png",
+          "renderedSha256": "1a537929a4a0bb6e8eded69ba8ba8a8bb8a5d44c2940b5ffd6c7965fcacaf1a8",
+          "plannedUtcDate": "2026-11-21",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Original two-plaza miniature varies the layered-world reference with an exact team-generator promise.",
+          "title": "Lantern festival game night: make random teams",
+          "copy": "Shuffle players into random teams.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_lantern_plaza_teams"
+        },
+        {
+          "queueId": "scene-kitchen-table-checklist",
+          "scene": "kitchen-table",
+          "background": "src/assets/pinterest/kitchen-table.png",
+          "renderedPin": "/pins/q/scene-kitchen-table-checklist.png",
+          "renderedSha256": "845a44d2294e84212128245f9a4e04950bfc770878690592fa98a7c670a85d2a",
+          "plannedUtcDate": "2026-11-21",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Original kitchen-table still life varies the cozy tactile reference with a full hosting-checklist promise.",
+          "title": "Cozy kitchen game night: a free planning checklist",
+          "copy": "A free checklist from guests to pack-up.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "scene_kitchen_table_checklist"
+        },
+        {
+          "queueId": "scene-tea-garden-picker",
+          "scene": "tea-garden",
+          "background": "src/assets/pinterest/tea-garden.png",
+          "renderedPin": "/pins/q/scene-tea-garden-picker.png",
+          "renderedSha256": "252dec2c9f4336553c9e4f96f97b2ec9b1f7ae912306bc85a1b8bb30d0a84bf8",
+          "plannedUtcDate": "2026-11-21",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Original curved tea-garden path varies the botanical reference with a specific equal-chance draw promise.",
+          "title": "Tea garden game night: a fair first-player draw",
+          "copy": "Draw one name from your player list.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_tea_garden_picker"
+        }
+      ]
     }
   ]
 }

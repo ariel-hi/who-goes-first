@@ -227,4 +227,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_volcanic_archipelago_turn_order',
     art: { seed: 'volcanic-archipelago-turn-order', scene: 'volcanic-archipelago', kicker: 'A route for every player', title: 'Put every\nturn in order.', body: 'Shuffle all player names in one tap.', cta: 'Try the free turn-order tool' },
   },
+  {
+    id: 'scene-lantern-plaza-teams', path: '/random-team-generator/',
+    title: 'Lantern festival game night: make random teams',
+    description: 'Original AI-created lantern plaza miniature with two supported gathering areas and painted wooden meeples. At your real table, enter player names and shuffle them into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_lantern_plaza_teams',
+    art: { seed: 'lantern-plaza-teams', scene: 'lantern-plaza', kicker: 'Two teams, one table', title: 'Split the\nwhole table.', body: 'Shuffle players into random teams.', cta: 'Try the free team maker' },
+  },
+  {
+    id: 'scene-kitchen-table-checklist', path: '/game-night-checklist/',
+    title: 'Cozy kitchen game night: a free planning checklist',
+    description: 'Original AI-created kitchen tabletop with blank planning paper, painted wooden meeples and unmarked counters. Use the free game-night checklist to plan guests, games, setup and pack-up. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_kitchen_table_checklist',
+    art: { seed: 'kitchen-table-checklist', scene: 'kitchen-table', kicker: 'Make room for game night', title: 'Plan the\nwhole game night.', body: 'A free checklist from guests to pack-up.', cta: 'Open the free checklist' },
+  },
+  {
+    id: 'scene-tea-garden-picker', path: '/',
+    title: 'Tea garden game night: a fair first-player draw',
+    description: 'Original AI-created terraced tea garden miniature with a supported curved tile path and three painted wooden meeples. At your real table, add player names and draw one starting player with the free browser picker. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_tea_garden_picker',
+    art: { seed: 'tea-garden-picker', scene: 'tea-garden', kicker: 'A place for every player', title: 'A fair start\nfor everyone.', body: 'Draw one name from your player list.', cta: 'Try the free player picker' },
+  },
 ];

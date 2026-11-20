@@ -26,6 +26,7 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     '2026-11-17', '2026-11-17', '2026-11-17',
     '2026-11-18', '2026-11-18', '2026-11-18',
     '2026-11-19', '2026-11-19', '2026-11-19',
+    '2026-11-21', '2026-11-21', '2026-11-21',
   ]);
   expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
   expect(queue.slice(0, 148).at(-1)?.date).toBe('2026-10-30');
@@ -87,8 +88,13 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['tool-finger-chooser-group-nov', '2026-11-19'],
     ['guide-holiday-family-starters-nov', '2026-11-20'],
   ]);
-  expect(queue).toHaveLength(251);
-  expect(queue.at(-1)?.date).toBe('2026-11-20');
+  expect(queue.slice(251, 254).map(pin => [pin.id, pin.date])).toEqual([
+    ['scene-lantern-plaza-teams', '2026-11-21'],
+    ['scene-kitchen-table-checklist', '2026-11-21'],
+    ['scene-tea-garden-picker', '2026-11-21'],
+  ]);
+  expect(queue).toHaveLength(254);
+  expect(queue.at(-1)?.date).toBe('2026-11-21');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:06:59Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:07:00Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(true);
