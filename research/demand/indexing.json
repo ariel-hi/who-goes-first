@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T17:01:45.576Z",
+  "generatedAt": "2026-11-20T18:26:58.629Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Sitemaps and URL Inspection APIs",
   "scope": "9 named URLs in Google’s indexed data; URL Inspection does not test the current live page or prove site-wide indexing.",
@@ -150,16 +150,8 @@
     },
     {
       "path": "/games/the-castles-of-burgundy-alea-2019-en/",
-      "status": "available",
-      "verdict": "NEUTRAL",
-      "coverageState": "Crawled - currently not indexed",
-      "robotsTxtState": "ALLOWED",
-      "indexingState": "INDEXING_ALLOWED",
-      "pageFetchState": "SUCCESSFUL",
-      "lastCrawlTime": "2026-10-17T18:27:36Z",
-      "googleCanonical": "https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/",
-      "userCanonical": "https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/",
-      "knownSitemaps": []
+      "status": "unavailable",
+      "reason": "Search Console API HTTP 503"
     },
     {
       "path": "/tools/",

@@ -23,7 +23,7 @@ The Search Console API does not provide the Sitemaps report's fetch label. Zero 
 - /games/catan-2020-en/: NEUTRAL; Crawled - currently not indexed; last crawl 2026-10-17T18:25:35Z; fetch SUCCESSFUL.
 - /games/ticket-to-ride-2015-en/: NEUTRAL; Crawled - currently not indexed; last crawl 2026-09-27T08:19:27Z; fetch SUCCESSFUL.
 - /games/wingspan-online-en/: NEUTRAL; Crawled - currently not indexed; last crawl 2026-10-11T04:17:40Z; fetch SUCCESSFUL.
-- /games/the-castles-of-burgundy-alea-2019-en/: NEUTRAL; Crawled - currently not indexed; last crawl 2026-10-17T18:27:36Z; fetch SUCCESSFUL.
+- /games/the-castles-of-burgundy-alea-2019-en/: inspection unavailable (Search Console API HTTP 503).
 - /tools/: NEUTRAL; Crawled - currently not indexed; last crawl 2026-10-13T16:28:42Z; fetch SUCCESSFUL.
 - /game-night-checklist/: NEUTRAL; Crawled - currently not indexed; last crawl 2026-10-02T03:10:22Z; fetch SUCCESSFUL.
 
