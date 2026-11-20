@@ -11,11 +11,11 @@
 
 ## What this change does
 
-1. **Only 148 rule pages stay indexable** (`src/lib/indexing-policy.ts`), chosen as:
+1. **Only 148 rule pages stay indexable** (listed in `src/lib/indexed-rules.json`), chosen as:
    - the home page quick rules,
    - the curated popular-games list in `src/lib/pinterest-pins.ts`,
    - every rule page with at least 10 impressions in the pre-drop window.
-   The list is static on purpose, so it does not change with daily metrics.
+   The initial list was chosen once, not from daily metrics. It now grows only through the weekly graduation described under Automation.
 2. **All other rule pages stay live and linked but carry `noindex, follow`**, and leave the sitemaps. Visitors, social posts, embeds and Pinterest links keep working.
 3. **Publisher hubs (`/publishers/…`) carry `noindex, follow`** and leave the sitemaps.
 4. **Board-game chooser pages** stay indexable only when at least one of their editions is indexable.
@@ -33,3 +33,15 @@
 - Strengthen the tool pages (home picker, coin flip, number generator). They earned impressions before the drop and are the site's core purpose.
 - Pause bulk rule publishing. Add new rule pages to the index list only when they have substantial guidance or proven demand.
 - Expect recovery over weeks to months. It most often shows up at a core update. Track it in the weekly report: impressions on kept pages and the tool pages, and indexed counts from the daily upkeep.
+
+## Automation (added 20 November 2026)
+
+Everything below runs in `.github/workflows/growth.yml` with no manual step.
+
+- **Weekly graduation (Mondays):** `scripts/indexing-graduate.ts` adds up to 10 rule pages a week to `src/lib/indexed-rules.json`. A page qualifies with at least 80 words of game-specific guidance (answer, official tie-break, clarifications, interpretation; the shared house fallback does not count), at least one source, and no other edition of the same game already indexed. Deepest pages go first. The commit deploys, and the job dispatches the IndexNow publish notification. Pages whose content is deepened later qualify automatically.
+- **Guardrails in every build:** `scripts/audit-build.ts` fails a production build if a core page (home or tool page) is not `index, follow`, if more than 400 rule pages are indexable, or if the sitemap passes 550 URLs.
+- **Weekly health check (Mondays and Thursdays):** `scripts/search-health.ts` reads the Search Console data the automation already collects. It writes `search-health.md`, and opens (or updates) a GitHub issue labelled `search-health` when impressions fall at least 50% week over week from a base of 30 or more, when a core page drops out of the index after being indexed, when the home page is not indexed, or when the Search Console data stops refreshing. The issue closes itself once a check is clean.
+- **Daily indexing upkeep** keeps inspecting sitemap URLs only. Its report no longer suggests manual "Request indexing"; Google recrawls on its own.
+
+What stays out of automation on purpose: Google offers no API to request indexing for ordinary pages (its Indexing API is limited to job postings and livestreams), and turning on ad units involves the AdSense account.
+

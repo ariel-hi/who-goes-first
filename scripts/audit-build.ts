@@ -6,6 +6,7 @@ import { siteSettings } from '../src/lib/site';
 import { readRecords } from '../src/lib/content/catalog';
 import { ruleSchema, promptSchema } from '../src/lib/content/schema';
 import { auditSeo } from './lib/audit-seo';
+import { corePaths, graduationPolicy } from '../src/lib/indexing-policy';
 import { editorialGuard } from './lib/audit-editorial';
 import { boardGameHref, getBrowseShelves, shelfHref } from '../src/lib/content/board-game-browse';
 const output = process.env.BUILD_OUT_DIR || 'dist';
@@ -40,6 +41,20 @@ for (const path of files) {
 const home = readFileSync(join(output, 'index.html'), 'utf8');
 auditSeo(output, files, settings.url, settings.production);
 if (settings.production && !home.includes('content="index, follow"')) throw new Error('Production home has noindex');
+// Indexing guardrails (November 2026 recovery): core pages stay indexable, and no change can quietly
+// offer more rule pages to search engines than the policy ceiling. See src/lib/indexing-policy.ts.
+if (settings.production) {
+  for (const path of corePaths) {
+    const html = readFileSync(join(output, path, 'index.html'), 'utf8');
+    if (!html.includes('content="index, follow"')) throw new Error(`Core page is not indexable: ${path}`);
+  }
+  const indexableRules = files.filter(path => /[\\/]games[\\/][^\\/]+[\\/]index\.html$/.test(path) && !/[\\/]games[\\/]themes[\\/]/.test(path))
+    .filter(path => readFileSync(path, 'utf8').includes('content="index, follow"')).length;
+  if (indexableRules > graduationPolicy.maxIndexedRules) throw new Error(`${indexableRules} indexable rule pages exceed the ceiling of ${graduationPolicy.maxIndexedRules}. Grow the index gradually through scripts/indexing-graduate.ts.`);
+  const sitemapUrls = (readFileSync(join(output, 'sitemap.xml'), 'utf8').match(/<loc>/g) ?? []).length;
+  const sitemapCeiling = graduationPolicy.maxIndexedRules + 150;
+  if (sitemapUrls > sitemapCeiling) throw new Error(`Sitemap lists ${sitemapUrls} URLs, above the ${sitemapCeiling} ceiling.`);
+}
 if (readFileSync(join(output, 'sitemap.xml'), 'utf8').includes('/404')) throw new Error('404 in sitemap');
 const jsFiles = files.filter(path => path.endsWith('.js'));
 const initialJs = jsFiles.filter(path => !/BalloonRise|HousePrompts/.test(path)).reduce((sum, path) => sum + gzipSync(readFileSync(path)).length, 0);

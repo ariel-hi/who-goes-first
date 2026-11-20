@@ -6,12 +6,13 @@ on:
     - cron: '17 15 * * *' # daily discovery campaign (15:17 UTC)
     - cron: '41 6 * * 1,4' # search opportunities + report (Mondays and Thursdays)
     - cron: '29 11 * * *' # daily Search Console indexing upkeep
+    - cron: '7 16 * * 1' # weekly indexing graduation (Mondays)
   workflow_dispatch:
     inputs:
       task:
         description: Which job to run
         type: choice
-        options: [post, weekly, indexing, visitors]
+        options: [post, weekly, indexing, graduate, visitors]
         default: weekly
       inspection_budget:
         description: URL inspections for the indexing job (1–1600; scheduled runs use 150)
@@ -49,6 +50,7 @@ jobs:
     permissions:
       contents: write
       id-token: write
+      issues: write
     env:
       ASTRO_TELEMETRY_DISABLED: '1'
       SITE_URL: ${{ vars.SITE_URL || 'https://whogoesfirst.fun' }}
@@ -76,6 +78,25 @@ jobs:
       - run: npx tsx scripts/growth-weekly.ts
         env:
           GOOGLE_ACCESS_TOKEN: ${{ steps.google.outputs.access_token }}
+      # Runs even when the report step fails, so a broken data feed raises an alert.
+      - id: health
+        if: always()
+        run: npx tsx scripts/search-health.ts
+      # One open issue labelled search-health carries alerts; GitHub notifies the owner.
+      - name: Raise or resolve the search health issue
+        if: always() && steps.health.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ALERTS: ${{ steps.health.outputs.alerts }}
+        run: |
+          gh label create search-health --color B60205 --description "Automated search health alerts" 2>/dev/null || true
+          open=$(gh issue list --label search-health --state open --json number --jq '.[0].number')
+          if [ "${ALERTS:-0}" -gt 0 ]; then
+            if [ -n "$open" ]; then gh issue comment "$open" --body-file research/demand/search-health.md
+            else gh issue create --title "Search health needs attention" --label search-health --body-file research/demand/search-health.md; fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Resolved: the latest weekly check found no alerts."
+          fi
       # research/ never deploys; [skip ci] keeps this data commit from
       # triggering a site build on Cloudflare Pages or the CI workflow.
       - name: Commit research queue
@@ -125,6 +146,37 @@ jobs:
           git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update indexing coverage [skip ci]"
           git pull --rebase
           git push
+  graduate:
+    if: github.event.schedule == '7 16 * * 1' || inputs.task == 'graduate'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: write
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.2'
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/indexing-graduate.ts
+      - run: npx vitest run tests/unit/indexing-policy.test.ts --testTimeout=60000
+      # No [skip ci]: this change must deploy. The workflow token's push does not start
+      # push-triggered workflows, so the search notification is dispatched explicitly.
+      - name: Commit and publish newly indexable rule pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git add src/lib/indexed-rules.json
+          if git diff --cached --quiet; then echo "No rule pages graduated."; exit 0; fi
+          count=$(git diff --cached -U0 src/lib/indexed-rules.json | grep -c '^+ *"slug"' || true)
+          git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Offer ${count} more rule pages for indexing"
+          git pull --rebase
+          git push
+          gh workflow run notify-publish.yml --ref main
   visitors:
     if: inputs.task == 'visitors'
     runs-on: ubuntu-latest

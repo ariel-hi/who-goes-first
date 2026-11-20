@@ -2,6 +2,9 @@ name: Notify search after publication
 on:
   push:
     branches: [main]
+  # The weekly indexing graduation pushes with the workflow token, which does not trigger push
+  # workflows, so it starts this run explicitly after its commit.
+  workflow_dispatch:
 permissions:
   contents: read
 concurrency:

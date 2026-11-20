@@ -1,171 +1,61 @@
 /**
- * Search indexing policy (November 2026 recovery).
+ * Search indexing policy.
  *
  * Search Console showed sitewide impressions collapsing on 12-13 October 2026, days after Google's
- * September 2026 spam update finished (8 October), with even core tool pages moved to
- * "Crawled - currently not indexed". About 1,350 templated rule pages had launched in late September.
- * To present a smaller, higher-quality site, only the rule pages below are offered for indexing; every
- * other rule page stays published and linked for visitors but carries `noindex, follow` and is left out
- * of the sitemaps. Publisher hubs are thin listings and are not indexed either.
+ * September 2026 spam update finished, with even core tool pages moved to "Crawled - currently not
+ * indexed". About 1,350 templated rule pages had launched in late September. Since then only the rule
+ * pages listed in indexed-rules.json are offered for indexing. Every other rule page stays published and
+ * linked for visitors but carries `noindex, follow` and is left out of the sitemaps.
  *
- * The list is deliberately static so it does not churn with daily metrics. It is the union of:
- * - the home page quick rules,
- * - the curated popular-games list in src/lib/pinterest-pins.ts,
- * - rule pages with at least 10 Google impressions from 14 September to 11 October 2026
- *   (research/demand/search-performance.json, previous 28-day window).
- * Add a page only when it has substantial, game-specific guidance or proven search demand.
+ * The list grows slowly and automatically: scripts/indexing-graduate.ts adds at most
+ * `graduationPolicy.weeklyLimit` pages a week that pass `graduationCandidates` below. The build refuses
+ * to ship more than `graduationPolicy.maxIndexedRules` indexable rules (scripts/audit-build.ts), so a bulk
+ * change cannot silently recreate the October problem. See research/demand/indexing-recovery-2026-11.md.
  */
-export const indexedRuleSlugs: ReadonlySet<string> = new Set([
-  '5-second-rule-playmonster-en',
-  '6-nimmt-amigo-2024-en',
-  '7-wonders-2020-en',
-  '7-wonders-duel-repos-en',
-  'agricola-revised-edition-lookout-en',
-  'aqua-garden-uchibacoya-en-rulebook',
-  'ark-nova-capstone-en',
-  'azul-2018-en',
-  'barrage-cranio-original-en',
-  'bears-vs-babies-exploding-kittens-2023-en',
-  'blokus-mattel-bjv44-en',
-  'brass-birmingham-roxley-en',
-  'camel-up-lookout-second-en',
-  'canasta-bicycle-en',
-  'candy-land-winning-moves-2023-en',
-  'carcassonne-2021-en',
-  'cards-against-humanity-3-en',
-  'cascadia-base-en',
-  'catan-2020-en',
-  'catan-junior-second-edition-en',
-  'century-golem-eastern-mountains-plan-b-en',
-  'century-spice-road-plan-b-big-box-en',
-  'checkers-acf-official-en',
-  'chess-fide-laws-2023-en',
-  'chutes-and-ladders-winning-moves-2023-en',
-  'clue-classic-hasbro-en',
-  'clue-jr-parker-brothers-1994-en',
-  'codenames-2025-en',
-  'codenames-duet-cge-refreshed-en',
-  'codenames-pictures-cge-refreshed-en',
-  'concordia-rio-grande-en',
-  'connect-4-hasbro-a5640-en',
-  'cootie-milton-bradley-4782-en',
-  'coup-indie-game-studios-en-dized',
-  'crazy-eights-bicycle-en',
-  'cribbage-bicycle-en',
-  'crocodile-dentist-milton-bradley-4153-en',
-  'crokinole-nca-en',
-  'dino-garden-uchibacoya-en-rulebook',
-  'dixit-2021-en',
-  'dominion-2021-en',
-  'dominoes-draw-cardinal-en',
-  'dune-imperium-uprising-dire-wolf-en-2023',
-  'egyptian-rat-screw-bicycle-en',
-  'euchre-bicycle-en',
-  'exploding-kittens-original-en',
-  'farkle-playmonster-en',
-  'first-orchard-haba-en',
-  'first-rat-pegasus-en',
-  'five-crowns-playmonster-2019-en',
-  'flip-7-the-op-revised-en',
-  'food-chain-magnate-splotter-en',
-  'forbidden-island-gamewright-en',
-  'forest-shuffle-dartmoor-lookout-en',
-  'game-of-life-hasbro-e4304-en',
-  'ghost-stories-repos-en',
-  'gin-rummy-bicycle-en',
-  'gloomhaven-cephalofair-original-en',
-  'gloomhaven-jaws-of-the-lion-cephalofair-en',
-  'go-fish-bicycle-en',
-  'grabolo-playmonster-2016-en',
-  'guess-who-grab-and-go-hasbro-b1204-en',
-  'hanabi-rnr-en',
-  'harmonies-libellud-en-2024',
-  'hearts-bicycle-en',
-  'heat-pedal-to-the-metal-dow-en',
-  'hi-ho-cherry-o-winning-moves-2020-en',
-  'hive-gen42-en',
-  'hues-and-cues-the-op-en',
-  'jaipur-space-cowboys-en',
-  'jenga-milton-bradley-04793-en',
-  'john-company-second-edition-wehrlegig-en',
-  'king-of-tokyo-iello-en',
-  'kingdomino-2016-en',
-  'left-center-right-bicycle-en',
-  'lord-of-rings-card-game-ffg-original-core-en',
-  'lost-cities-card-game-kosmos-2018-en',
-  'love-letter-2025-en',
-  'machi-koro-idw-pandasaurus-en',
-  'magic-the-gathering-wizards-en',
-  'mancala-parker-brothers-41080-en',
-  'mansions-of-madness-second-edition-ffg-en',
-  'marvel-champions-ffg-core-en',
-  'math-medalist-simplyfun-en',
-  'memory-ravensburger-01035-en',
-  'mexican-train-cardinal-20-domino-en',
-  'monopoly-classic-hasbro-c1009-en',
-  'monopoly-junior-hasbro-1990-en',
-  'mysterium-libellud-en',
-  'old-maid-bicycle-en',
-  'one-night-ultimate-werewolf-bezier-en',
-  'pandemic-2013-en',
-  'pandemic-legacy-season-1-zman-en',
-  'parcheesi-winning-moves-2023-en',
-  'pass-the-pigs-winning-moves-en',
-  'patchwork-lookout-mayfair-2014-en',
-  'phase-10-mattel-ffy05-en',
-  'quacks-co-quedlinburg-dash-schmidt-de-summary',
-  'qwirkle-mindware-en',
-  'risk-hasbro-2015-en',
-  'roll-em-fold-em-schmidt-en',
-  'root-leder-standard-en',
-  'rummy-bicycle-en',
-  'santorini-roxley-en',
-  'scotland-yard-milton-bradley-4500-en',
-  'scrabble-hasbro-2021-en',
-  'sherlock-thames-murders-space-cowboys-en',
-  'skip-bo-mattel-42050-en',
-  'skull-space-cowboys-pink-en',
-  'skyjo-magilano-en',
-  'sleeping-queens-gamewright-original-en',
-  'snails-pace-race-ravensburger-22052-en',
-  'sorry-hasbro-00390-en',
-  'spades-bicycle-en',
-  'spirit-island-gtg-en',
-  'splendor-2024-en',
-  'splendor-duel-space-cowboys-en',
-  'spot-it-blue-orange-original-en',
-  'star-wars-rebellion-ffg-en',
-  'star-wars-x-wing-ffg-original-en',
-  'stratego-milton-bradley-4714-en',
-  'sushi-go-2014-en',
-  'sushi-go-party-gamewright-en',
-  'taboo-hasbro-en',
-  'telestrations-the-op-second-en',
-  'terraforming-mars-fryxgames-en',
-  'the-castles-of-burgundy-alea-2019-en',
-  'the-crew-2019-en',
-  'the-magic-labyrinth-schmidt-de-summary',
-  'the-resistance-avalon-indie-dized-en',
-  'ticket-to-ride-2015-en',
-  'ticket-to-ride-europe-15th-days-of-wonder-en',
-  'ticket-to-ride-nordic-countries-days-of-wonder-en',
-  'tipperary-lookout-en',
-  'topp-die-torte-schmidt-de-40659-placement',
-  'trouble-winning-moves-2022-en',
-  'tsuro-calliope-2020-en',
-  'twilight-imperium-fourth-edition-en',
-  'uno-10020-sn70-en',
-  'uno-attack-mattel-41943-en',
-  'uno-flip-mattel-en',
-  'uno-show-em-no-mercy-mattel-hwv18-en',
-  'upwords-milton-bradley-4312-en',
-  'utter-nonsense-family-playmonster-en',
-  'voting-game-player-ten-en',
-  'wavelength-cmyk-en',
-  'wingspan-online-en',
-  'yeti-in-my-spaghetti-playmonster-en',
-]);
+import indexedRules from './indexed-rules.json';
 
+export type IndexedRule = { slug: string; addedAt: string; reason: string };
+export const indexedRuleEntries: readonly IndexedRule[] = indexedRules.rules;
+export const indexedRuleSlugs: ReadonlySet<string> = new Set(indexedRuleEntries.map(rule => rule.slug));
 export const isRuleIndexed = (slug: string) => indexedRuleSlugs.has(slug);
 /** Publisher hubs are thin listings of rule links; keep them for navigation only. */
 export const publisherHubsIndexed = false;
+
+export const graduationPolicy = {
+  /** New rule pages offered to search engines per weekly run. */
+  weeklyLimit: 10,
+  /** Game-specific words a rule page needs before it is offered for indexing. */
+  minimumDepth: 80,
+  /** Hard ceiling on indexable rule pages; the build audit fails above it. */
+  maxIndexedRules: 400,
+} as const;
+
+/** Home page and standalone tools: these must always stay indexable. */
+export const corePaths = ['/', '/coin-flip/', '/random-number-generator/', '/ways-to-pick-who-goes-first/', '/choose-who-goes-first/', '/card-draw/', '/finger-chooser/', '/dice-roller/', '/random-team-generator/', '/tools/'] as const;
+
+type DepthFields = { slug: string; gameName: string; firstPlayerRule: string; officialTieBreak?: unknown; clarifications?: unknown; interpretation?: unknown; sources: readonly unknown[] };
+const countWords = (value: unknown): number => {
+  if (typeof value === 'string') return value.split(/\s+/).filter(Boolean).length;
+  if (Array.isArray(value)) return value.reduce((total: number, item) => total + countWords(item), 0);
+  if (value && typeof value === 'object') return Object.values(value).reduce((total: number, item) => total + countWords(item), 0);
+  return 0;
+};
+/**
+ * Words written for this game specifically: the answer, the official tie-break, clarifications and
+ * interpretation. Shared template text (house fallback, share and affiliate blocks) is excluded.
+ */
+export const ruleDepth = (rule: DepthFields) => countWords(rule.firstPlayerRule) + countWords(rule.officialTieBreak) + countWords(rule.clarifications) + countWords(rule.interpretation);
+
+const gameKey = (name: string) => name.toLocaleLowerCase('en').replace(/[^a-z0-9]+/g, ' ').trim();
+/**
+ * Rule pages eligible to be offered next, deepest first. One edition per game title: another edition
+ * of an already indexed game would be a near-duplicate.
+ */
+export function graduationCandidates<T extends DepthFields>(catalog: readonly T[], indexed: ReadonlySet<string> = indexedRuleSlugs) {
+  const indexedGames = new Set(catalog.filter(rule => indexed.has(rule.slug)).map(rule => gameKey(rule.gameName)));
+  const seen = new Set<string>();
+  return catalog
+    .filter(rule => !indexed.has(rule.slug) && rule.sources.length > 0 && ruleDepth(rule) >= graduationPolicy.minimumDepth && !indexedGames.has(gameKey(rule.gameName)))
+    .sort((a, b) => ruleDepth(b) - ruleDepth(a) || a.slug.localeCompare(b.slug))
+    .filter(rule => { const key = gameKey(rule.gameName); if (seen.has(key)) return false; seen.add(key); return true; });
+}

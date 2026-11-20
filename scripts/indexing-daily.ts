@@ -124,7 +124,9 @@ ${sitemapActions.join('\n')}${submitDenied ? '\n\nTo let this job submit sitemap
 
 ${coverageReport(allPaths, coverage.pages, successfulPaths, inspectionErrors, now)}
 
-## Worth a manual "Request indexing"
+## Not indexed yet
+Google recrawls these on its own; no manual step is needed. Pages that stay unindexed for weeks are candidates for deeper content.
+
 ${requestable.length ? requestable.map(page => `- ${origin}${page.path} (${page.coverageState}; inspected ${page.checkedAt})`).join('\n') : '- No recent non-PASS observations available. Historical or unavailable results do not establish current indexing.'}
 `;
 console.log(report);

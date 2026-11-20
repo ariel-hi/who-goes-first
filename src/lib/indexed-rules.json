@@ -1,0 +1,745 @@
+{
+  "note": "Rule pages offered to search engines. Every other rule page is published with noindex, follow and left out of the sitemaps. Initial set: November 2026 search recovery (see research/demand/indexing-recovery-2026-11.md). scripts/indexing-graduate.ts adds pages weekly that pass the depth check in src/lib/indexing-policy.ts.",
+  "rules": [
+    {
+      "slug": "5-second-rule-playmonster-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "6-nimmt-amigo-2024-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "7-wonders-2020-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "7-wonders-duel-repos-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "agricola-revised-edition-lookout-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "aqua-garden-uchibacoya-en-rulebook",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "ark-nova-capstone-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "azul-2018-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "barrage-cranio-original-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "bears-vs-babies-exploding-kittens-2023-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "blokus-mattel-bjv44-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "brass-birmingham-roxley-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "camel-up-lookout-second-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "canasta-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "candy-land-winning-moves-2023-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "carcassonne-2021-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "cards-against-humanity-3-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "cascadia-base-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "catan-2020-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "catan-junior-second-edition-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "century-golem-eastern-mountains-plan-b-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "century-spice-road-plan-b-big-box-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "checkers-acf-official-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "chess-fide-laws-2023-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "chutes-and-ladders-winning-moves-2023-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "clue-classic-hasbro-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "clue-jr-parker-brothers-1994-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "codenames-2025-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "codenames-duet-cge-refreshed-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "codenames-pictures-cge-refreshed-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "concordia-rio-grande-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "connect-4-hasbro-a5640-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "cootie-milton-bradley-4782-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "coup-indie-game-studios-en-dized",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "crazy-eights-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "cribbage-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "crocodile-dentist-milton-bradley-4153-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "crokinole-nca-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "dino-garden-uchibacoya-en-rulebook",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "dixit-2021-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "dominion-2021-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "dominoes-draw-cardinal-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "dune-imperium-uprising-dire-wolf-en-2023",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "egyptian-rat-screw-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "euchre-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "exploding-kittens-original-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "farkle-playmonster-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "first-orchard-haba-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "first-rat-pegasus-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "five-crowns-playmonster-2019-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "flip-7-the-op-revised-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "food-chain-magnate-splotter-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "forbidden-island-gamewright-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "forest-shuffle-dartmoor-lookout-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "game-of-life-hasbro-e4304-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "ghost-stories-repos-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "gin-rummy-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "gloomhaven-cephalofair-original-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "gloomhaven-jaws-of-the-lion-cephalofair-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "go-fish-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "grabolo-playmonster-2016-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "guess-who-grab-and-go-hasbro-b1204-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "hanabi-rnr-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "harmonies-libellud-en-2024",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "hearts-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "heat-pedal-to-the-metal-dow-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "hi-ho-cherry-o-winning-moves-2020-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "hive-gen42-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "hues-and-cues-the-op-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "jaipur-space-cowboys-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "jenga-milton-bradley-04793-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "john-company-second-edition-wehrlegig-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "king-of-tokyo-iello-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "kingdomino-2016-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "left-center-right-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "lord-of-rings-card-game-ffg-original-core-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "lost-cities-card-game-kosmos-2018-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "love-letter-2025-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "machi-koro-idw-pandasaurus-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "magic-the-gathering-wizards-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "mancala-parker-brothers-41080-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "mansions-of-madness-second-edition-ffg-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "marvel-champions-ffg-core-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "math-medalist-simplyfun-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "memory-ravensburger-01035-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "mexican-train-cardinal-20-domino-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "monopoly-classic-hasbro-c1009-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "monopoly-junior-hasbro-1990-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "mysterium-libellud-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "old-maid-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "one-night-ultimate-werewolf-bezier-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "pandemic-2013-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "pandemic-legacy-season-1-zman-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "parcheesi-winning-moves-2023-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "pass-the-pigs-winning-moves-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "patchwork-lookout-mayfair-2014-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "phase-10-mattel-ffy05-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "quacks-co-quedlinburg-dash-schmidt-de-summary",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "qwirkle-mindware-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "risk-hasbro-2015-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "roll-em-fold-em-schmidt-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "root-leder-standard-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "rummy-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "santorini-roxley-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "scotland-yard-milton-bradley-4500-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "scrabble-hasbro-2021-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "sherlock-thames-murders-space-cowboys-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "skip-bo-mattel-42050-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "skull-space-cowboys-pink-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "skyjo-magilano-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "sleeping-queens-gamewright-original-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "snails-pace-race-ravensburger-22052-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "sorry-hasbro-00390-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "spades-bicycle-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "spirit-island-gtg-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "splendor-2024-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "splendor-duel-space-cowboys-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "spot-it-blue-orange-original-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "star-wars-rebellion-ffg-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "star-wars-x-wing-ffg-original-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "stratego-milton-bradley-4714-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "sushi-go-2014-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "sushi-go-party-gamewright-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "taboo-hasbro-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "telestrations-the-op-second-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "terraforming-mars-fryxgames-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "the-castles-of-burgundy-alea-2019-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "the-crew-2019-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "the-magic-labyrinth-schmidt-de-summary",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "the-resistance-avalon-indie-dized-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "ticket-to-ride-2015-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "ticket-to-ride-europe-15th-days-of-wonder-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "ticket-to-ride-nordic-countries-days-of-wonder-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "tipperary-lookout-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "topp-die-torte-schmidt-de-40659-placement",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "trouble-winning-moves-2022-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "tsuro-calliope-2020-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "twilight-imperium-fourth-edition-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "uno-10020-sn70-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "uno-attack-mattel-41943-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "uno-flip-mattel-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "uno-show-em-no-mercy-mattel-hwv18-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "upwords-milton-bradley-4312-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "utter-nonsense-family-playmonster-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "voting-game-player-ten-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "wavelength-cmyk-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "wingspan-online-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    },
+    {
+      "slug": "yeti-in-my-spaghetti-playmonster-en",
+      "addedAt": "2026-11-16",
+      "reason": "initial recovery set"
+    }
+  ]
+}
