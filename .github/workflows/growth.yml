@@ -103,7 +103,9 @@ jobs:
         run: |
           git add research/demand
           if git diff --cached --quiet; then echo "No demand changes."; exit 0; fi
-          git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update search demand research queue [skip ci]"
+          git config user.name "growth-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update search demand research queue [skip ci]"
           git pull --rebase
           git push
   indexing:
@@ -143,7 +145,9 @@ jobs:
         run: |
           git add research/demand
           if git diff --cached --quiet; then echo "No indexing changes."; exit 0; fi
-          git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update indexing coverage [skip ci]"
+          git config user.name "growth-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update indexing coverage [skip ci]"
           git pull --rebase
           git push
   graduate:
@@ -173,7 +177,9 @@ jobs:
           git add src/lib/indexed-rules.json
           if git diff --cached --quiet; then echo "No rule pages graduated."; exit 0; fi
           count=$(git diff --cached -U0 src/lib/indexed-rules.json | grep -c '^+ *"slug"' || true)
-          git -c user.name="growth-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Offer ${count} more rule pages for indexing"
+          git config user.name "growth-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Offer ${count} more rule pages for indexing"
           git pull --rebase
           git push
           gh workflow run notify-publish.yml --ref main
