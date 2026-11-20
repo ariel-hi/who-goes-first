@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T06:46:28.958Z",
+  "generatedAt": "2026-11-20T17:01:41.009Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Search Analytics API",
   "searchType": "web",
@@ -16,7 +16,7 @@
       "query"
     ]
   },
-  "anchorDateUtc": "2026-11-19",
+  "anchorDateUtc": "2026-11-20",
   "reportingLagDays": 3,
   "aggregation": "auto (API default); responseAggregationType is not retained by the existing API client",
   "totalsSource": "Independent dimensionless requests; sitewide position is Google-provided, never a page-position average.",
@@ -35,8 +35,8 @@
   "sevenDay": {
     "current": {
       "window": {
-        "start": "2026-11-10",
-        "end": "2026-11-16"
+        "start": "2026-11-11",
+        "end": "2026-11-17"
       },
       "totals": {
         "status": "available",
@@ -44,9 +44,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "averagePosition": 29.666666666666668
+          "averagePosition": 37.42857142857143
         }
       },
       "pages": {
@@ -59,9 +59,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 77
+            "averagePosition": 79.33333333333333
           },
           {
             "keys": [
@@ -94,9 +94,19 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 2,
+        "returnedRowCount": 3,
         "emptyResult": false,
         "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 84
+          },
           {
             "keys": [
               "https://whogoesfirst.fun/",
@@ -122,8 +132,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-11-03",
-        "end": "2026-11-09"
+        "start": "2026-11-04",
+        "end": "2026-11-10"
       },
       "totals": {
         "status": "available",
@@ -261,11 +271,11 @@
     "changes": {
       "totals": {
         "clicks": 0,
-        "impressions": -2,
+        "impressions": -1,
         "clicksPercent": null,
-        "impressionsPercent": -25,
+        "impressionsPercent": -12.5,
         "ctrPercentagePoints": 0,
-        "averagePosition": 13.291666666666668
+        "averagePosition": 21.05357142857143
       },
       "pages": [
         {
@@ -278,9 +288,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 77
+            "averagePosition": 79.33333333333333
           },
           "previous": {
             "keys": [
@@ -293,11 +303,11 @@
           },
           "change": {
             "clicks": 0,
-            "impressions": -2,
+            "impressions": -1,
             "clicksPercent": null,
-            "impressionsPercent": -50,
+            "impressionsPercent": -25,
             "ctrPercentagePoints": 0,
-            "averagePosition": 51
+            "averagePosition": 53.33333333333333
           }
         },
         {
@@ -543,6 +553,25 @@
         {
           "keys": [
             "https://whogoesfirst.fun/",
+            "goes first"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 84
+          },
+          "previous": null,
+          "change": null
+        },
+        {
+          "keys": [
+            "https://whogoesfirst.fun/",
             "ways to decide who goes first"
           ],
           "presence": "current_only_returned",
@@ -584,8 +613,8 @@
   "twentyEightDay": {
     "current": {
       "window": {
-        "start": "2026-10-20",
-        "end": "2026-11-16"
+        "start": "2026-10-21",
+        "end": "2026-11-17"
       },
       "totals": {
         "status": "available",
@@ -595,7 +624,7 @@
           "clicks": 2,
           "impressions": 45,
           "ctr": 0.044444444444444446,
-          "averagePosition": 12.311111111111112
+          "averagePosition": 13.933333333333334
         }
       },
       "pages": {
@@ -608,9 +637,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 15,
-            "ctr": 0.06666666666666667,
-            "averagePosition": 22.666666666666668
+            "impressions": 16,
+            "ctr": 0.0625,
+            "averagePosition": 26.5
           },
           {
             "keys": [
@@ -833,9 +862,9 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8.4
+            "averagePosition": 7.75
           },
           {
             "keys": [
@@ -895,9 +924,19 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 2,
+        "returnedRowCount": 3,
         "emptyResult": false,
         "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 84
+          },
           {
             "keys": [
               "https://whogoesfirst.fun/",
@@ -923,8 +962,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-09-22",
-        "end": "2026-10-19"
+        "start": "2026-09-23",
+        "end": "2026-10-20"
       },
       "totals": {
         "status": "available",
@@ -932,9 +971,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 33,
-          "impressions": 3737,
-          "ctr": 0.008830612791008831,
-          "averagePosition": 14.149852823120149
+          "impressions": 3738,
+          "ctr": 0.00882825040128411,
+          "averagePosition": 14.149010165864098
         }
       },
       "pages": {
@@ -6311,9 +6350,9 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 11,
+            "impressions": 12,
             "ctr": 0,
-            "averagePosition": 10.909090909090908
+            "averagePosition": 10.916666666666666
           },
           {
             "keys": [
@@ -12172,11 +12211,11 @@
     "changes": {
       "totals": {
         "clicks": -31,
-        "impressions": -3692,
+        "impressions": -3693,
         "clicksPercent": -93.93939393939394,
-        "impressionsPercent": -98.7958255284988,
-        "ctrPercentagePoints": 3.5613831653435617,
-        "averagePosition": -1.8387417120090372
+        "impressionsPercent": -98.79614767255217,
+        "ctrPercentagePoints": 3.561619404316034,
+        "averagePosition": -0.21567683253076453
       },
       "pages": [
         {
@@ -12189,9 +12228,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 15,
-            "ctr": 0.06666666666666667,
-            "averagePosition": 22.666666666666668
+            "impressions": 16,
+            "ctr": 0.0625,
+            "averagePosition": 26.5
           },
           "previous": {
             "keys": [
@@ -12204,11 +12243,11 @@
           },
           "change": {
             "clicks": -1,
-            "impressions": -11,
+            "impressions": -10,
             "clicksPercent": -50,
-            "impressionsPercent": -42.30769230769231,
-            "ctrPercentagePoints": -1.0256410256410262,
-            "averagePosition": 15.512820512820515
+            "impressionsPercent": -38.46153846153847,
+            "ctrPercentagePoints": -1.4423076923076927,
+            "averagePosition": 19.346153846153847
           }
         },
         {
@@ -22559,26 +22598,26 @@
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8.4
+            "averagePosition": 7.75
           },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/"
             ],
             "clicks": 0,
-            "impressions": 11,
+            "impressions": 12,
             "ctr": 0,
-            "averagePosition": 10.909090909090908
+            "averagePosition": 10.916666666666666
           },
           "change": {
             "clicks": 0,
-            "impressions": -6,
+            "impressions": -8,
             "clicksPercent": null,
-            "impressionsPercent": -54.54545454545454,
+            "impressionsPercent": -66.66666666666666,
             "ctrPercentagePoints": 0,
-            "averagePosition": -2.509090909090908
+            "averagePosition": -3.166666666666666
           }
         },
         {
@@ -25176,6 +25215,25 @@
             "ctr": 0,
             "averagePosition": 9.428571428571429
           },
+          "change": null
+        },
+        {
+          "keys": [
+            "https://whogoesfirst.fun/",
+            "goes first"
+          ],
+          "presence": "current_only_returned",
+          "current": {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 84
+          },
+          "previous": null,
           "change": null
         },
         {
