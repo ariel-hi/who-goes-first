@@ -28,6 +28,7 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     '2026-11-19', '2026-11-19', '2026-11-19',
     '2026-11-21', '2026-11-21', '2026-11-21',
     '2026-11-24', '2026-11-24', '2026-11-24',
+    '2026-11-25', '2026-11-25', '2026-11-25', '2026-11-25',
   ]);
   expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
   expect(queue.slice(0, 148).at(-1)?.date).toBe('2026-10-30');
@@ -99,8 +100,17 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['scene-airship-dock-teams', '2026-11-24'],
     ['scene-ceramic-studio-score', '2026-11-24'],
   ]);
-  expect(queue).toHaveLength(257);
-  expect(queue.at(-1)?.date).toBe('2026-11-24');
+  expect(queue.slice(257).map(pin => [pin.id, pin.date])).toEqual([
+    ['guide-fair-draw-how-it-works-nov', '2026-11-24'],
+    ['tool-spinner-reveal-nov', '2026-11-24'],
+    ['scene-houseboat-checklist', '2026-11-25'],
+    ['scene-alpine-cable-turn-order', '2026-11-25'],
+    ['scene-cactus-courtyard-number', '2026-11-25'],
+    ['scene-origami-city-teams', '2026-11-25'],
+    ['tool-dice-roller-many-dice-nov', '2026-11-25'],
+  ]);
+  expect(queue).toHaveLength(264);
+  expect(queue.at(-1)?.date).toBe('2026-11-25');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:06:59Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:07:00Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(true);
@@ -118,4 +128,4 @@ test('reviewed scenes render as portrait PNGs and changed copy is rejected', asy
     expect(pin.description).toContain('AI-created');
     await expect(renderPinImage({ ...pin.art, title: 'Unreviewed copy' }, 'whogoesfirst.fun')).rejects.toThrow('changed since visual review');
   }
-});
+}, 60_000);

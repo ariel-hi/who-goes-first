@@ -269,4 +269,32 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_ceramic_studio_score',
     art: { seed: 'ceramic-studio-score', scene: 'ceramic-studio', kicker: 'Put down the score pad', title: 'Keep score\non your phone.', body: 'Add players and tap to update points.', cta: 'Try the free score keeper' },
   },
+  {
+    id: 'scene-houseboat-checklist', path: '/game-night-checklist/',
+    title: 'Riverside houseboat game night: plan the whole table',
+    description: 'Original AI-created riverside houseboat tabletop with a blank planning sheet and painted wooden meeples. Use the free game-night checklist for guests, games, setup and pack-up. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_houseboat_checklist',
+    art: { seed: 'houseboat-checklist', scene: 'houseboat', kicker: 'Ready for everyone aboard', title: 'A game night\nto remember.', body: 'Plan guests, games, setup and pack-up.', cta: 'Open the free checklist' },
+  },
+  {
+    id: 'scene-alpine-cable-turn-order', path: '/turn-order-generator/',
+    title: 'Alpine cable-car game night: shuffle the turn order',
+    description: 'Original AI-created miniature alpine cable-car station with a supported boardwalk and painted wooden meeples. Enter names and shuffle a complete playing order with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_alpine_cable_turn_order',
+    art: { seed: 'alpine-cable-turn-order', scene: 'alpine-cable', kicker: 'Next stop: game night', title: 'Give every\nplayer a turn.', body: 'Shuffle names into a random order.', cta: 'Try the free turn-order tool' },
+  },
+  {
+    id: 'scene-cactus-courtyard-number', path: '/random-number-generator/',
+    title: 'Cactus courtyard game night: pick a fair random number',
+    description: 'Original AI-created miniature cactus courtyard with a curved tile path and painted wooden meeples. For your real game, set a whole-number range and draw one number fairly with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_cactus_courtyard_number',
+    art: { seed: 'cactus-courtyard-number', scene: 'cactus-courtyard', kicker: 'Leave it to chance', title: 'Pick a number.\nStart the game.', body: 'Choose a range and draw fairly.', cta: 'Try the free number generator' },
+  },
+  {
+    id: 'scene-origami-city-teams', path: '/random-team-generator/',
+    title: 'Paper city game night: split into random teams',
+    description: 'Original AI-created miniature folded-paper city with two supported plazas and groups of painted wooden meeples. For your real table, enter names and shuffle players into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_origami_city_teams',
+    art: { seed: 'origami-city-teams', scene: 'origami-city', kicker: 'Two teams, one table', title: 'Split the\nwhole crew.', body: 'Shuffle player names into teams.', cta: 'Try the free team generator' },
+  },
 ];
