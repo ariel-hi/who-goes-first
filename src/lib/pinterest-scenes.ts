@@ -248,4 +248,25 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     campaign: 'scene_tea_garden_picker',
     art: { seed: 'tea-garden-picker', scene: 'tea-garden', kicker: 'A place for every player', title: 'A fair start\nfor everyone.', body: 'Draw one name from your player list.', cta: 'Try the free player picker' },
   },
+  {
+    id: 'scene-train-carriage-timer', path: '/turn-timer/',
+    title: 'Train carriage game night: a timer for every turn',
+    description: 'Original AI-created train carriage tabletop with wooden game pieces and a brass hourglass. At your real game night, set a 30-second to 3-minute turn limit and restart the free browser timer for the next player. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_train_carriage_timer',
+    art: { seed: 'train-carriage-timer', scene: 'train-carriage', kicker: 'Keep the game moving', title: 'Time for\nthe next turn.', body: 'Set a limit and restart for each player.', cta: 'Try the free turn timer' },
+  },
+  {
+    id: 'scene-airship-dock-teams', path: '/random-team-generator/',
+    title: 'Airship dock game night: shuffle into teams',
+    description: 'Original AI-created tabletop airship dock with two supported gathering platforms and colorful wooden meeples. At your real table, enter player names and shuffle them into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_airship_dock_teams',
+    art: { seed: 'airship-dock-teams', scene: 'airship-dock', kicker: 'Gather your crew', title: 'Find your\nteam.', body: 'Shuffle friends into random teams.', cta: 'Try the free team generator' },
+  },
+  {
+    id: 'scene-ceramic-studio-score', path: '/score-keeper/',
+    title: 'Ceramic studio game night: keep scores on your phone',
+    description: 'Original AI-created ceramic tile studio tabletop with blank paper and painted wooden meeples. At your real game night, add players and update their scores with the free browser score keeper; scores stay on this device. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_ceramic_studio_score',
+    art: { seed: 'ceramic-studio-score', scene: 'ceramic-studio', kicker: 'Put down the score pad', title: 'Keep score\non your phone.', body: 'Add players and tap to update points.', cta: 'Try the free score keeper' },
+  },
 ];
