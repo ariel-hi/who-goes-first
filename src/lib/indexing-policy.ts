@@ -30,7 +30,7 @@ export const graduationPolicy = {
   maxIndexedRules: 400,
 } as const;
 
-/** Home page and standalone tools: these must always stay indexable. */
+/** Home page, standalone tools and the portable-rule collection. The collection is noindex only when empty. */
 export const corePaths = ['/', '/coin-flip/', '/random-number-generator/', '/ways-to-pick-who-goes-first/', '/choose-who-goes-first/', '/card-draw/', '/finger-chooser/', '/dice-roller/', '/random-team-generator/', '/tools/'] as const;
 
 type DepthFields = { slug: string; gameName: string; firstPlayerRule: string; officialTieBreak?: unknown; clarifications?: unknown; interpretation?: unknown; sources: readonly unknown[] };
