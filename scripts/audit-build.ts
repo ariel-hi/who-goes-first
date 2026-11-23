@@ -9,13 +9,15 @@ import { auditSeo } from './lib/audit-seo';
 import { corePaths, graduationPolicy } from '../src/lib/indexing-policy';
 import { editorialGuard } from './lib/audit-editorial';
 import { boardGameHref, getBrowseShelves, shelfHref } from '../src/lib/content/board-game-browse';
+import { randomRuleEligible } from '../src/lib/content/random-rules';
 const output = process.env.BUILD_OUT_DIR || 'dist';
 const settings = siteSettings();
 function walk(dir: string): string[] { return readdirSync(dir).flatMap(name => { const path = join(dir, name); return statSync(path).isDirectory() ? walk(path) : [path]; }); }
 const files = walk(output);
 if (files.length + 2 > 20_000) throw new Error(`Build has ${files.length + 2} files; Cloudflare Pages Free supports at most 20,000 files. Keep unverified identities on browse shelves rather than generating one page per game.`);
+const approvedRules = readRecords('src/content/games').map(raw => ruleSchema.parse(raw));
 const checkEditorial = editorialGuard(
-  readRecords('src/content/games').map(raw => ruleSchema.parse(raw)),
+  approvedRules,
   readRecords('src/content/prompts').flatMap(raw => Array.isArray(raw) ? raw : [raw]).map(raw => promptSchema.parse(raw)),
   readRecords('research/games').map(raw => ruleSchema.parse(raw)),
   readRecords('research/prompts').map(raw => promptSchema.parse(raw)),
@@ -46,6 +48,12 @@ if (settings.production && !home.includes('content="index, follow"')) throw new 
 if (settings.production) {
   for (const path of corePaths) {
     const html = readFileSync(join(output, path, 'index.html'), 'utf8');
+    // This collection deliberately opts out of indexing when no reviewed,
+    // portable rules exist (including the empty-catalog release fixture).
+    if (path === '/ways-to-pick-who-goes-first/' && !approvedRules.some(randomRuleEligible)) {
+      if (!html.includes('content="noindex, follow"')) throw new Error(`Empty collection is indexable: ${path}`);
+      continue;
+    }
     if (!html.includes('content="index, follow"')) throw new Error(`Core page is not indexable: ${path}`);
   }
   const indexableRules = files.filter(path => /[\\/]games[\\/][^\\/]+[\\/]index\.html$/.test(path) && !/[\\/]games[\\/]themes[\\/]/.test(path))
