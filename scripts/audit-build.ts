@@ -3,10 +3,11 @@ import { join, relative } from 'node:path';
 import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
 import { siteSettings } from '../src/lib/site';
-import { readRecords } from '../src/lib/content/catalog';
+import { getCatalog, readRecords } from '../src/lib/content/catalog';
 import { ruleSchema, promptSchema } from '../src/lib/content/schema';
 import { auditSeo } from './lib/audit-seo';
 import { corePaths, graduationPolicy } from '../src/lib/indexing-policy';
+import { auditCorePageIndexing } from './lib/audit-core-indexing';
 import { editorialGuard } from './lib/audit-editorial';
 import { boardGameHref, getBrowseShelves, shelfHref } from '../src/lib/content/board-game-browse';
 const output = process.env.BUILD_OUT_DIR || 'dist';
@@ -41,12 +42,13 @@ for (const path of files) {
 const home = readFileSync(join(output, 'index.html'), 'utf8');
 auditSeo(output, files, settings.url, settings.production);
 if (settings.production && !home.includes('content="index, follow"')) throw new Error('Production home has noindex');
-// Indexing guardrails (November 2026 recovery): core pages stay indexable, and no change can quietly
-// offer more rule pages to search engines than the policy ceiling. See src/lib/indexing-policy.ts.
+// Core tools stay indexable; Ways follows its reviewed-rule empty-state policy.
+// No change can quietly exceed the indexing ceilings. See src/lib/indexing-policy.ts.
 if (settings.production) {
+  const catalog = getCatalog();
   for (const path of corePaths) {
     const html = readFileSync(join(output, path, 'index.html'), 'utf8');
-    if (!html.includes('content="index, follow"')) throw new Error(`Core page is not indexable: ${path}`);
+    auditCorePageIndexing(path, html, catalog);
   }
   const indexableRules = files.filter(path => /[\\/]games[\\/][^\\/]+[\\/]index\.html$/.test(path) && !/[\\/]games[\\/]themes[\\/]/.test(path))
     .filter(path => readFileSync(path, 'utf8').includes('content="index, follow"')).length;

@@ -44,6 +44,7 @@ assert.equal(existsSync(join(production, 'ads.txt')), false);
 assert.doesNotMatch(readFileSync(join(production, '_headers'), 'utf8'), /googlesyndication|strict-origin-when-cross-origin/);
 assert.match(readFileSync(join(production, 'index.html'), 'utf8'), /content="index, follow"/);
 assert.match(readFileSync(join(production, 'games/index.html'), 'utf8'), /content="noindex, follow"/);
+assert.match(readFileSync(join(production, 'ways-to-pick-who-goes-first/index.html'), 'utf8'), /content="noindex, follow"/);
 assert.doesNotMatch(readFileSync(join(production, 'sitemap.xml'), 'utf8'), /\/games\/|\/house-rules\/|\/dev\//);
 const productionHeaders = readFileSync(join(production, '_headers'), 'utf8');
 assert.doesNotMatch(productionHeaders.split('\n\n')[0]!, /X-Robots-Tag/);
@@ -79,6 +80,8 @@ const privacy = readFileSync(join(populated, 'privacy/index.html'), 'utf8');
 assert.match(privacy, /The hosting provider is Fixture Host\. Fixture access logs are deleted after 30 days\./);
 assert.doesNotMatch(privacy, /This local version has no public hosting service configured/);
 const answer = readFileSync(join(populated, 'games/synthetic-fixture/index.html'), 'utf8');
+// An approved synthetic catalog still has no individually reviewed portable rules.
+assert.match(readFileSync(join(populated, 'ways-to-pick-who-goes-first/index.html'), 'utf8'), /content="noindex, follow"/);
 assert.match(answer, /This synthetic answer exists only/);
 assert.match(answer, /publisher.example.org/);
 // Approved content stays public, but these invented slugs are deliberately not
