@@ -194,7 +194,8 @@ export function pinQueue(): QueuedPin[] {
   const november17SceneIds = new Set(['scene-mossy-watermill-picker', 'scene-rainy-puzzle-nook-score', 'scene-crystal-cavern-turn-order']);
   const november18SceneIds = new Set(['scene-sunflower-boardwalk-picker', 'scene-camper-van-score', 'scene-volcanic-archipelago-turn-order']);
   const november20SceneIds = new Set(['scene-lantern-plaza-teams', 'scene-kitchen-table-checklist', 'scene-tea-garden-picker']);
-  ordered.push(...laterScenes.filter(scene => !november11SceneIds.has(scene.id) && !november12SceneIds.has(scene.id) && !november13SceneIds.has(scene.id) && !november14SceneIds.has(scene.id) && !november15SceneIds.has(scene.id) && !november17SceneIds.has(scene.id) && !november18SceneIds.has(scene.id) && !november20SceneIds.has(scene.id)));
+  const november23SceneIds = new Set(['scene-train-carriage-timer', 'scene-airship-dock-teams', 'scene-ceramic-studio-score']);
+  ordered.push(...laterScenes.filter(scene => !november11SceneIds.has(scene.id) && !november12SceneIds.has(scene.id) && !november13SceneIds.has(scene.id) && !november14SceneIds.has(scene.id) && !november15SceneIds.has(scene.id) && !november17SceneIds.has(scene.id) && !november18SceneIds.has(scene.id) && !november20SceneIds.has(scene.id) && !november23SceneIds.has(scene.id)));
   // Two distinct utility cards complete the small November 10 creative batch.
   // They follow the scene majority and preserve every prior queue position.
   ordered.push({ id: 'tool-card-draw-dealer-nov', path: '/card-draw/', title: 'No deck? Draw a card to choose the dealer', heading: 'Draw a card for the deal', body: 'Take turns drawing from a shuffled 52-card deck. Cards do not repeat until you reshuffle.', art: { seed: 'card-draw-dealer-nov', kicker: 'A deck in your browser', title: 'Who deals\nfirst?', body: 'Draw a card each from a shuffled deck.', cta: 'Open the free card draw' }, description: 'Need to choose a dealer without a deck? Draw cards from a shuffled 52-card deck in your browser. Cards do not repeat until you reshuffle. Free, no account needed.', campaign: 'tool_card_draw_dealer' });
@@ -224,10 +225,11 @@ export function pinQueue(): QueuedPin[] {
   ordered.push({ id: 'tool-finger-chooser-group-nov', path: '/finger-chooser/', title: 'Everyone touches the phone. One player starts.', heading: 'A group draw on one phone', body: 'Each player puts a finger on the screen. The spotlight chooses one at random.', art: { seed: 'finger-chooser-group-nov', kicker: 'One phone, one fair pick', title: 'Everyone\njoins the draw.', body: 'Touch the screen to choose one player.', cta: 'Try the finger chooser' }, description: 'Gather around one phone and let each player touch the screen with a finger. A spotlight chooses one starting player at random. Free, no account needed.', campaign: 'tool_finger_chooser_group' });
   ordered.push({ id: 'guide-holiday-family-starters-nov', path: '/holiday-game-night/', title: 'Find first-player rules for family holiday games', heading: 'Start the holiday games fairly', body: 'Browse sourced starting-player rules for more than 30 family games.', art: { seed: 'holiday-family-starters-nov', kicker: 'For holiday game night', title: 'Who starts\nthe classics?', body: 'Find sourced first-player rules for family games.', cta: 'Browse holiday game rules' }, description: 'Planning a family game night? Browse starting-player rules for more than 30 familiar games, each tied to its publisher rulebook, plus free tools for a fair fallback. No account needed.', campaign: 'guide_holiday_family_starters' });
   ordered.push(...laterScenes.filter(scene => november20SceneIds.has(scene.id)));
+  ordered.push(...laterScenes.filter(scene => november23SceneIds.has(scene.id)));
   return cache = ordered.map((pin, index) => ({
     ...pin,
     // Today's release already ran; this reviewed batch begins tomorrow.
-    date: november20SceneIds.has(pin.id) ? '2026-11-21' : new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10),
+    date: november20SceneIds.has(pin.id) ? '2026-11-21' : november23SceneIds.has(pin.id) ? '2026-11-24' : new Date(START + Math.floor(index / PER_DAY) * 86_400_000).toISOString().slice(0, 10),
   }));
 }
 

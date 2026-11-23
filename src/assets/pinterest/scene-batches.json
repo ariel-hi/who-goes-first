@@ -761,6 +761,59 @@
           "campaign": "scene_tea_garden_picker"
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-23-a",
+      "preparedAt": "2026-11-23",
+      "baseline": "The 254-item queue ended November 21; scheduled November 22 and 23 release jobs completed successfully but had no queued items. The November 23 live RSS has no items dated November 22 or 23. Latest authenticated October 11–November 10 reference Pin Stats had only one to five outbound clicks per seed Pin and unknown publication ages; current outbound clicks are unavailable.",
+      "hypothesis": "Three distinct practical scene hooks for timer, team assignment and score keeping may earn saves and actual outbound clicks after Pinterest publication. Compare matching windows and publication ages, not older lifetime totals.",
+      "timeCost": "Approximately 25 minutes for generation, source and rendered visual review, and local verification; monetary charges and valued labor unavailable.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-12-01 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-train-carriage-timer",
+          "scene": "train-carriage",
+          "background": "src/assets/pinterest/train-carriage.png",
+          "renderedPin": "/pins/q/scene-train-carriage-timer.png",
+          "renderedSha256": "8c660a29fda19d1c4bdbd18b731639ed307e8375ecbd7aad324e72f53bed769b",
+          "plannedUtcDate": "2026-11-24",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "Original train-carriage still life varies the cozy tactile reference with a specific per-turn timer promise.",
+          "title": "Train carriage game night: a timer for every turn",
+          "copy": "Set a limit and restart for each player.",
+          "destination": "https://whogoesfirst.fun/turn-timer/",
+          "campaign": "scene_train_carriage_timer"
+        },
+        {
+          "queueId": "scene-airship-dock-teams",
+          "scene": "airship-dock",
+          "background": "src/assets/pinterest/airship-dock.png",
+          "renderedPin": "/pins/q/scene-airship-dock-teams.png",
+          "renderedSha256": "ecb59251805319c1eff630c4633a90586f2950301843301a5059b45faccd74dd",
+          "plannedUtcDate": "2026-11-24",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Original two-platform airship dock varies the layered miniature reference with a clear team-generator promise.",
+          "title": "Airship dock game night: shuffle into teams",
+          "copy": "Shuffle friends into random teams.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_airship_dock_teams"
+        },
+        {
+          "queueId": "scene-ceramic-studio-score",
+          "scene": "ceramic-studio",
+          "background": "src/assets/pinterest/ceramic-studio.png",
+          "renderedPin": "/pins/q/scene-ceramic-studio-score.png",
+          "renderedSha256": "cd0158b2856755dec37b52ee98a3cfa3987797e06e25efc8745d99dc2b6e3e42",
+          "plannedUtcDate": "2026-11-24",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Original bright geometric studio tests a new tabletop arrangement against the botanical reference while promising a useful score keeper.",
+          "title": "Ceramic studio game night: keep scores on your phone",
+          "copy": "Add players and tap to update points.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "scene_ceramic_studio_score"
+        }
+      ]
     }
   ]
 }

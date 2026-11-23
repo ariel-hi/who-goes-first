@@ -303,5 +303,32 @@
     "sha256": "eb4abac007c83bca024246c00fab7a8014931dae26d2ad01d23b771351bb6bd3",
     "artSha256": "c1408f2cc822961954d5884746e88903b5c9fa2c2c0c858ebaa89fdd3fcb19bc",
     "renderedSha256": "252dec2c9f4336553c9e4f96f97b2ec9b1f7ae912306bc85a1b8bb30d0a84bf8"
+  },
+  "train-carriage": {
+    "reviewedAt": "2026-11-23",
+    "reviewer": "Codex",
+    "objects": "Exact 1024 x 1536 source and 1000 x 1500 final inspected: three distinct wooden pawns sit on a supported carriage table beside a brass hourglass with connected glass bulbs, visible sand, stable frame and plausible contact shadows. Table, lamp, window, upholstery, perspective, materials and occlusion are coherent. No dice, cards, hands, printed marks or generated letters. Final title, body, CTA, spelling and destination checked full size and at 320 x 480.",
+    "dice": "none",
+    "sha256": "bd6761966d6f07a5d929f4ce52f4ba8309a1574de640736bd603237c9824773c",
+    "artSha256": "36d56a546b44056ea3dc1c6395d645453240a15ef63bf6ae3ccdf6a5d7e7234f",
+    "renderedSha256": "8c660a29fda19d1c4bdbd18b731639ed307e8375ecbd7aad324e72f53bed769b"
+  },
+  "airship-dock": {
+    "reviewedAt": "2026-11-23",
+    "reviewer": "Codex",
+    "objects": "Exact 1024 x 1536 source and 1000 x 1500 final inspected: two distinct groups of painted wooden meeples stand on separate joined platforms with timber leg and brace supports; short plank bridge, rails, ropes, lamps and tethered paper airship have coherent shapes, joins, perspective, occlusion and shadows. No dice, cards, hands, printed marks or generated letters. Final title, body, CTA, spelling and destination checked full size and at 320 x 480.",
+    "dice": "none",
+    "sha256": "b58c46cbb6cef163d3e3e33f00100eb3575a643cb998008b619ca78d7eb30a60",
+    "artSha256": "cf2ab3ad77cbaa32d82812adce63f1e6d2e85967e96ce5a2fd5be6a652f41fdc",
+    "renderedSha256": "ecb59251805319c1eff630c4633a90586f2950301843301a5059b45faccd74dd"
+  },
+  "ceramic-studio": {
+    "reviewedAt": "2026-11-23",
+    "reviewer": "Codex",
+    "objects": "Exact 1024 x 1536 source and 1000 x 1500 final inspected: three distinct wooden meeples, separate neat stacks of glazed tiles, blank paper score sheets, closed pencil case, brush pot, plant and arched window rest on coherent workbench/sill surfaces. Tile shapes, perspective, materials, occlusion and contact shadows are plausible. No dice, cards, hands, printed marks or generated letters. Final title, body, CTA, spelling and destination checked full size and at 320 x 480.",
+    "dice": "none",
+    "sha256": "6bd3ca1e59232d6ca8779019e7115a94732e51380cf97c61484d6ca4fa2b9511",
+    "artSha256": "33115a01b79485d790988fadb51e8c3c78cc95fc87a7eb1e26ca09aa418ddd44",
+    "renderedSha256": "cd0158b2856755dec37b52ee98a3cfa3987797e06e25efc8745d99dc2b6e3e42"
   }
 }
