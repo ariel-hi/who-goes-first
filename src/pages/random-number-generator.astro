@@ -9,5 +9,19 @@ import RandomNumber from '../components/tools/RandomNumber';
     <p>Number the players around the table, then generate a number from 1 to the player count. That player goes first. The <a href="/">first-player picker</a> does the same with numbered seats or names and adds a reveal.</p>
     <h2>How it works</h2>
     <p>Every number in the range, including both ends, has the same chance. The result comes from your browser’s secure random number generator with no bias toward low or high numbers.</p>
+    <h2>Other ways to use it at the table</h2>
+    <ul>
+      <li><strong>Pick a seat or a player.</strong> Number the seats clockwise from the host and generate 1 to the seat count.</li>
+      <li><strong>Choose a scenario or variant.</strong> Number the scenarios in your rulebook or expansion and let the generator pick tonight’s.</li>
+      <li><strong>Draw a raffle or prize winner.</strong> Give each ticket a number, then generate from the first ticket to the last.</li>
+      <li><strong>Replace a missing die.</strong> 1 to 6 is a six-sided die; 1 to 20 is a d20. For several dice with a total, use the <a href="/dice-roller/">dice roller</a>.</li>
+    </ul>
+    <h2>Questions</h2>
+    <h3>Can the same number come up twice?</h3>
+    <p>Yes. Each result is a fresh draw, so repeats are normal. The last ten results are listed under the button so the table can check what came up. If you need everyone in a different position with no repeats, use the <a href="/turn-order-generator/">turn order generator</a> instead.</p>
+    <h3>Which ranges work?</h3>
+    <p>Any whole numbers where the second is at least the first, including negative numbers, such as −5 to 5. A range can hold up to about 4.3 billion values.</p>
+    <h3>Is anything sent or saved?</h3>
+    <p>No. The number is generated in your browser, and the recent list clears when you leave or reload the page.</p>
   </Fragment>
 </ToolPage>

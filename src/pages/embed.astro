@@ -13,7 +13,13 @@ const badge = badgeSnippet(siteSettings().url);
     <h1>Embed a starting rule</h1>
     <p class="lede">Writing a review, a how-to-play guide or a café game list? Add the official “who goes first” answer, with its edition and a link to the source. It’s free.</p>
     <h2>A game’s starting rule</h2>
-    <p>Every <a href="/games/">rule page</a> has an <b>Embed this answer</b> section near the bottom. The code is plain HTML, with no script or tracking, so it works in WordPress, Squarespace, Blogger, forums and most newsletters. Here is the one for {sample?.gameName}:</p>
+    <p>Search for a game below to get the code for its <a href="/games/">starting rule</a>. The code is plain HTML, with no script or tracking, so it works in WordPress, Squarespace, Blogger, forums and most newsletters. It starts with {sample?.gameName}:</p>
+    <div class="embed-search" data-embed-search hidden>
+      <label for="embed-game">Find a game</label>
+      <input id="embed-game" type="search" autocomplete="off" placeholder="Type a game name" data-embed-query />
+      <ul class="embed-results" data-embed-results></ul>
+      <p class="small muted" role="status" data-embed-status></p>
+    </div>
     {sample && <EmbedRule rule={sample} open />}
     <h2>A “Who goes first?” button</h2>
     <p>For game cafés, club sites and publishers: a small badge that opens our free first-player picker.</p>
@@ -25,6 +31,38 @@ const badge = badgeSnippet(siteSettings().url);
   </div>
 </Layout>
 <script>
+  import { embedSnippet } from '../lib/embed';
+  type IndexRule = { n: string; a: string[]; e: string; s: string; r: string };
+  const search = document.querySelector<HTMLElement>('[data-embed-search]');
+  const ruleField = document.querySelector<HTMLTextAreaElement>('[data-embed-snippet]');
+  if (search && ruleField) {
+    const query = search.querySelector<HTMLInputElement>('[data-embed-query]')!;
+    const results = search.querySelector<HTMLUListElement>('[data-embed-results]')!;
+    const status = search.querySelector<HTMLElement>('[data-embed-status]')!;
+    let rules: Promise<IndexRule[]> | undefined;
+    const load = () => rules ??= fetch('/rule-index.json').then(response => { if (!response.ok) throw new Error('index'); return response.json() as Promise<IndexRule[]>; });
+    const normal = (text: string) => text.toLocaleLowerCase('en').normalize('NFKD').replace(/[^a-z0-9]+/g, ' ').trim();
+    search.hidden = false;
+    query.addEventListener('focus', () => { void load().catch(() => { status.textContent = 'The game list could not load. Try again later.'; }); });
+    query.addEventListener('input', async () => {
+      const term = normal(query.value);
+      results.replaceChildren();
+      if (term.length < 2) { status.textContent = ''; return; }
+      try {
+        const matches = (await load()).filter(rule => [rule.n, ...rule.a].some(name => normal(name).includes(term))).slice(0, 8);
+        status.textContent = matches.length ? '' : 'No matching game yet.';
+        for (const rule of matches) {
+          const item = document.createElement('li'); const button = document.createElement('button');
+          button.type = 'button'; button.className = 'text-button'; button.textContent = `${rule.n} (${rule.e})`;
+          button.addEventListener('click', () => {
+            ruleField.value = embedSnippet({ slug: rule.s, gameName: rule.n, firstPlayerRule: rule.r, editionLabel: rule.e }, window.location.origin);
+            results.replaceChildren(); query.value = rule.n; status.textContent = `Embed code for ${rule.n} is ready below.`;
+          });
+          item.append(button); results.append(item);
+        }
+      } catch { status.textContent = 'The game list could not load. Try again later.'; }
+    });
+  }
   const badge = document.querySelector<HTMLElement>('.badge-embed');
   if (badge) {
     const button = badge.querySelector<HTMLButtonElement>('[data-badge-copy]')!;
@@ -39,5 +77,8 @@ const badge = badgeSnippet(siteSettings().url);
 </script>
 <style>
   .embed-snippet{width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);font:12px/1.5 ui-monospace,Consolas,monospace}
+  .embed-search{display:grid;gap:6px;margin:12px 0}
+  .embed-search input{padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font:inherit}
+  .embed-results{list-style:none;padding:0;margin:0;display:grid;gap:4px}
   .content-page :global(details.embed-rule){border:1px solid var(--line);border-radius:12px;padding:4px 14px 10px}
 </style>
