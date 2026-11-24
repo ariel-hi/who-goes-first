@@ -97,6 +97,26 @@ jobs:
           elif [ -n "$open" ]; then
             gh issue close "$open" --comment "Resolved: the latest weekly check found no alerts."
           fi
+      # Word King has no CI credentials of its own; its read-only check runs here.
+      - id: wordking
+        if: always()
+        run: npx tsx scripts/wordking-health.ts
+        env:
+          GOOGLE_ACCESS_TOKEN: ${{ steps.google.outputs.access_token }}
+      - name: Raise or resolve the Word King search health issue
+        if: always() && steps.wordking.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ALERTS: ${{ steps.wordking.outputs.wordking_alerts }}
+        run: |
+          gh label create wordking-search-health --color 5319E7 --description "Automated Word King search health alerts" 2>/dev/null || true
+          open=$(gh issue list --label wordking-search-health --state open --json number --jq '.[0].number')
+          if [ "${ALERTS:-0}" -gt 0 ]; then
+            if [ -n "$open" ]; then gh issue comment "$open" --body-file research/demand/wordking-health.md
+            else gh issue create --title "Word King search health needs attention" --label wordking-search-health --body-file research/demand/wordking-health.md; fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Resolved: the latest weekly check found no alerts."
+          fi
       # research/ never deploys; [skip ci] keeps this data commit from
       # triggering a site build on Cloudflare Pages or the CI workflow.
       - name: Commit research queue
