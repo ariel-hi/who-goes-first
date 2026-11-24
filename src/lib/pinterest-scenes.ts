@@ -1,7 +1,7 @@
 import type { PinArt } from './og-image';
 
-// Each scene occupies one existing, unpublished slot. The displaced rule is
-// appended, so all other dates and all published identities remain stable.
+// Early scenes replace unpublished slots and append the displaced rules;
+// later scenes append to future slots. Published IDs and dates stay stable.
 export const sceneCampaigns: { slot?: number; replaces?: string; id: string; path: string; title: string; description: string; campaign: string; art: PinArt }[] = [
   {
     slot: 30, replaces: 'game-love-letter-2025-en', id: 'scene-woodland-first-turn', path: '/',
@@ -296,5 +296,47 @@ export const sceneCampaigns: { slot?: number; replaces?: string; id: string; pat
     description: 'Original AI-created miniature folded-paper city with two supported plazas and groups of painted wooden meeples. For your real table, enter names and shuffle players into random teams with the free browser tool. Fantasy artwork, not a commercial game.',
     campaign: 'scene_origami_city_teams',
     art: { seed: 'origami-city-teams', scene: 'origami-city', kicker: 'Two teams, one table', title: 'Split the\nwhole crew.', body: 'Shuffle player names into teams.', cta: 'Try the free team generator' },
+  },
+  {
+    id: 'scene-castle-bridge-teams', path: '/random-team-generator/',
+    title: 'Castle bridge game night: split the table into teams',
+    description: 'Original AI-created castle-bridge miniature with two groups of painted wooden meeples. Enter names and make random, evenly sized teams with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_castle_bridge_teams',
+    art: { seed: 'castle-bridge-teams', scene: 'castle-bridge', kicker: 'Gather both sides', title: 'Make teams\nfor game night.', body: 'Shuffle names into evenly sized teams.', cta: 'Try the free team maker' },
+  },
+  {
+    id: 'scene-lily-pond-picker', path: '/',
+    title: 'Lily pond game night: draw a starting player fairly',
+    description: 'Original AI-created lily-pond miniature with a winding supported path and three painted wooden meeples. Enter each player once and draw one starter with equal chance using the free browser picker. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_lily_pond_picker',
+    art: { seed: 'lily-pond-picker', scene: 'lily-pond', kicker: 'A fresh first turn', title: 'Everyone gets\na fair draw.', body: 'Enter names and pick one starter.', cta: 'Try the free player picker' },
+  },
+  {
+    id: 'scene-glassworks-score', path: '/score-keeper/',
+    title: 'Glassworks game night: keep score on your phone',
+    description: 'Original AI-created glassworks tabletop with blank scoring paper, translucent tiles and painted wooden meeples. Add players and update points in the free browser score keeper; scores stay on this device. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_glassworks_score',
+    art: { seed: 'glassworks-score', scene: 'glassworks', kicker: 'Keep every point', title: 'Score the game\nas you play.', body: 'Tap to add or correct each score.', cta: 'Try the free score keeper' },
+  },
+  {
+    id: 'scene-balloon-meadow-turn-order', path: '/turn-order-generator/',
+    title: 'Balloon meadow game night: shuffle the turn order',
+    description: 'Original AI-created balloon meadow miniature with a supported boardwalk, tethered balloons and three painted wooden meeples. Enter names and shuffle a complete playing order with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_balloon_meadow_turn_order',
+    art: { seed: 'balloon-meadow-turn-order', scene: 'balloon-meadow', kicker: 'Let every player join', title: 'Set the order.\nThen take turns.', body: 'Shuffle everyone into a full order.', cta: 'Try the free turn-order tool' },
+  },
+  {
+    id: 'scene-moon-observatory-number', path: '/random-number-generator/',
+    title: 'Moon observatory game night: draw a random number',
+    description: 'Original AI-created moonlit observatory miniature with a telescope and painted wooden meeples. Set a whole-number range and draw one number with the free browser tool. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_moon_observatory_number',
+    art: { seed: 'moon-observatory-number', scene: 'moon-observatory', kicker: 'Leave it to chance', title: 'Set a range.\nDraw a number.', body: 'Every whole number gets a fair chance.', cta: 'Try the number generator' },
+  },
+  {
+    id: 'scene-harvest-barn-checklist', path: '/game-night-checklist/',
+    title: 'Harvest barn game night: plan the whole gathering',
+    description: 'Original AI-created barn-loft tabletop with a blank planning sheet and painted wooden meeples. Use the free game-night checklist to plan guests, games, setup and pack-up. Fantasy artwork, not a commercial game.',
+    campaign: 'scene_harvest_barn_checklist',
+    art: { seed: 'harvest-barn-checklist', scene: 'harvest-barn', kicker: 'A smoother game night', title: 'Plan the table.\nThen play.', body: 'Ten checks from guests to pack-up.', cta: 'Open the free checklist' },
   },
 ];
