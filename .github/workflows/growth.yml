@@ -14,6 +14,10 @@ on:
         type: choice
         options: [post, weekly, indexing, graduate, visitors]
         default: weekly
+      report_only:
+        description: 'Weekly only: skip issue publishing and Word King checks'
+        type: boolean
+        default: false
       inspection_budget:
         description: URL inspections for the indexing job (1–1600; scheduled runs use 150)
         type: number
@@ -84,7 +88,7 @@ jobs:
         run: npx tsx scripts/search-health.ts
       # One open issue labelled search-health carries alerts; GitHub notifies the owner.
       - name: Raise or resolve the search health issue
-        if: always() && steps.health.outcome == 'success'
+        if: always() && steps.health.outcome == 'success' && inputs.report_only != true
         env:
           GH_TOKEN: ${{ github.token }}
           ALERTS: ${{ steps.health.outputs.alerts }}
@@ -99,12 +103,12 @@ jobs:
           fi
       # Word King has no CI credentials of its own; its read-only check runs here.
       - id: wordking
-        if: always()
+        if: always() && inputs.report_only != true
         run: npx tsx scripts/wordking-health.ts
         env:
           GOOGLE_ACCESS_TOKEN: ${{ steps.google.outputs.access_token }}
       - name: Raise or resolve the Word King search health issue
-        if: always() && steps.wordking.outcome == 'success'
+        if: always() && steps.wordking.outcome == 'success' && inputs.report_only != true
         env:
           GH_TOKEN: ${{ github.token }}
           ALERTS: ${{ steps.wordking.outputs.wordking_alerts }}
