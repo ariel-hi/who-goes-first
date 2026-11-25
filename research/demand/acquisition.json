@@ -1,10 +1,10 @@
 {
   "status": "available",
-  "periodStart": "2026-10-24",
-  "periodEnd": "2026-11-22",
+  "periodStart": "2026-10-25",
+  "periodEnd": "2026-11-23",
   "source": "Google Analytics 4 Data API (sessionDefaultChannelGroup; sessionSourceMedium; sessions; engagedSessions)",
-  "totalSessions": 720,
-  "rowSessions": 722,
+  "totalSessions": 885,
+  "rowSessions": 887,
   "rowTotalDifference": 2,
   "subjectToThresholding": false,
   "dataLossFromOtherRow": false,
@@ -13,8 +13,8 @@
   "channels": [
     {
       "name": "Direct",
-      "sessions": 698,
-      "engagedSessions": 14
+      "sessions": 863,
+      "engagedSessions": 15
     },
     {
       "name": "Organic Search",
@@ -36,8 +36,8 @@
     {
       "name": "(direct) / (none)",
       "channel": "Direct",
-      "sessions": 698,
-      "engagedSessions": 14
+      "sessions": 863,
+      "engagedSessions": 15
     },
     {
       "name": "bing / organic",
@@ -82,5 +82,5 @@
       "engagedSessions": 1
     }
   ],
-  "generatedAt": "2026-11-24T19:01:27.337Z"
+  "generatedAt": "2026-11-25T17:09:07.544Z"
 }

@@ -1,8 +1,8 @@
-# Weekly growth report — 2026-11-24
+# Weekly growth report — 2026-11-25
 
 ## Search (Google, last 7 days of final data vs the 7 before)
 - Clicks: **1** (new)
-- Impressions: **4** (-43%)
+- Impressions: **3** (-57%)
 - Published rules: 1339
 
 [Exact sitewide, page and visible page/query comparisons](search-performance.json): available. Missing rows are not zero or proof of new/disappearing rankings.
@@ -29,31 +29,31 @@ The Search Console API does not provide the Sitemaps report's fetch label. Zero 
 
 This checks 9 named URLs in Google's indexed data, not the current live pages or the full site.
 
-## Traffic (GA4, 2026-10-24 through 2026-11-22)
-- Sessions: **720** · Screen/page views: **740** · Users: 720
-- Screen/page views per session: 1.03
+## Traffic (GA4, 2026-10-25 through 2026-11-23)
+- Sessions: **885** · Screen/page views: **916** · Users: 886
+- Screen/page views per session: 1.04
 
 The live-hostname measurement guard began on 2026-09-28; known CI contamination from earlier dates is excluded. These are GA4 reported sessions; live tests, bots and analytics choices can affect them, so they do not establish verified human traffic. Reports use explicit dates with two UTC days of lag; GA4 dates follow the property's reporting time zone and recent data may still change.
 - Country breakdown unavailable for this run.
 
 
 ## Traffic acquisition (GA4)
-- Direct: 698 reported row sessions, 14 engaged row sessions.
+- Direct: 863 reported row sessions, 15 engaged row sessions.
 - Organic Search: 20 reported row sessions, 1 engaged row sessions.
 - Organic Social: 3 reported row sessions, 3 engaged row sessions.
 - Referral: 1 reported row sessions, 0 engaged row sessions.
 
 Top source / medium pairs:
-- \(direct\) / \(none\) (Direct): 698 reported row sessions.
+- \(direct\) / \(none\) (Direct): 863 reported row sessions.
 - bing / organic (Organic Search): 9 reported row sessions.
 - google / organic (Organic Search): 8 reported row sessions.
 - duckduckgo / organic (Organic Search): 2 reported row sessions.
 - pinterest\.com / referral (Organic Social): 2 reported row sessions.
 
-Dimension rows sum to 722, which is 2 above the undimensioned 720 sessions. Do not add row counts or interpret them as unique-session shares. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
+Dimension rows sum to 887, which is 2 above the undimensioned 885 sessions. Do not add row counts or interpret them as unique-session shares. Engaged sessions are GA4 sessions lasting over 10 seconds, recording a key event, or showing at least two pages/screens. These are reported sessions, not verified human visitors or revenue.
 
 ## Affiliate link opens (GA4)
-- Amazon link opens: **0** reported events (2026-10-24 through 2026-11-22).
+- Amazon link opens: **0** reported events (2026-10-25 through 2026-11-23).
 
 Measurement began on 2026-09-28; that first day is partial. Analytics choices can suppress events. Opens are not verified purchases, commissions, or revenue.
 
@@ -62,8 +62,8 @@ Official policies checked 2026-09-28; confirm current requirements before an app
 
 | Network | Published minimum | Available observation | Status / unassessed requirements |
 | --- | --- | --- | --- |
-| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 720 total sessions; Tier 1 sessions unknown | Total sessions below the minimum; Tier 1 sessions unknown. Grow, original content, content quality and traffic standards unassessed. |
-| Raptive | 25,000 monthly pageviews within 30 days | 740 GA4 screenPageViews; qualifying-country share unknown | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
+| Journey by Mediavine | 1,000 Tier 1-country sessions within 30 days | 885 total sessions; Tier 1 sessions unknown | Total sessions below the minimum; Tier 1 sessions unknown. Grow, original content, content quality and traffic standards unassessed. |
+| Raptive | 25,000 monthly pageviews within 30 days | 916 GA4 screenPageViews; qualifying-country share unknown | Observed views below the minimum. US/CA/UK/AU/NZ requirement: 50% at 25,000–99,999 website pageviews; 40% at 100,000+. Applicable website-pageview tier unknown. Original content with meaningful human involvement, majority long-form pages, domain age ≥6 months, correct Analytics and ad-compatible site unassessed. |
 | Mediavine | $5,000 annual ad revenue | Unknown — annual ad revenue not collected | Unknown. Original content, clean human brand-safe traffic, Google AdSense/AdExchange standing and advertising-compatible reader experience unassessed. |
 
 GA4 screenPageViews combines screen and page views; confirm website pageviews for Raptive. No country report was available. No annual ad-revenue evidence is supplied by this job. Mediavine's 2026 publisher programs use prior-calendar-year ad revenue; monthly traffic is not a substitute.
