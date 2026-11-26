@@ -1225,6 +1225,157 @@
           "selection": "Rulebook-at-random guidance tests a practical educational hook."
         }
       ]
+    },
+    {
+      "id": "scene-led-2026-11-26-a",
+      "preparedAt": "2026-11-26",
+      "baseline": "The 284-item queue had five November 26 feed releases and only November 27–29 as full future UTC days. Today’s public profile and reference/recent Pin pages were accessible, but authenticated current saves and outbound-click counts remained unavailable; the October 11–November 10 reference window had only one to five outbound clicks per Pin with unknown ages.",
+      "hypothesis": "Six original scenes that vary botanical paths, cozy tabletop still life and layered miniature worlds, paired with four distinct practical cards, will extend the buffer and may earn saves and actual outbound clicks after public publication. Compare matching windows and ages; feed releases alone are not traffic.",
+      "timeCost": "Approximately 60 minutes for image generation, source and full-size/phone review, copy, queue, tests and release; monetary labor cost and tool charges unavailable.",
+      "status": "reviewed-and-queued",
+      "reviewCheckpoint": "2026-12-09 or at least seven days after each Pin is observed publicly available, whichever is later",
+      "items": [
+        {
+          "queueId": "scene-vinyl-room-score",
+          "scene": "vinyl-listening-room",
+          "background": "src/assets/pinterest/vinyl-listening-room.png",
+          "renderedPin": "/pins/q/scene-vinyl-room-score.png",
+          "renderedSha256": "5ace2261dbf782c3475f464482437d61534a6a5eee895908a5cdb41050b1a9e5",
+          "plannedUtcDate": "2026-11-30",
+          "title": "Listening room game night: keep score together",
+          "copy": "Add players and update the score.",
+          "destination": "https://whogoesfirst.fun/score-keeper/",
+          "campaign": "scene_vinyl_room_score",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "A new mid-century listening-room still life tests the cozy tactile reference with a specific score-keeping promise."
+        },
+        {
+          "queueId": "scene-fossil-path-number",
+          "scene": "fossil-sand-table",
+          "background": "src/assets/pinterest/fossil-sand-table.png",
+          "renderedPin": "/pins/q/scene-fossil-path-number.png",
+          "renderedSha256": "947e297a622d80d52a514a1e3cbd4bde431d5568c91a89e6f9b184576c1ddd4c",
+          "plannedUtcDate": "2026-11-30",
+          "title": "Fossil path game night: draw a random number",
+          "copy": "Give each whole number a fair chance.",
+          "destination": "https://whogoesfirst.fun/random-number-generator/",
+          "campaign": "scene_fossil_path_number",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315350/",
+          "selection": "Layered desert sand-table and winding path vary the miniature-world reference with a number-draw hook."
+        },
+        {
+          "queueId": "scene-orchid-archway-picker",
+          "scene": "orchid-archway",
+          "background": "src/assets/pinterest/orchid-archway.png",
+          "renderedPin": "/pins/q/scene-orchid-archway-picker.png",
+          "renderedSha256": "daf6e7f81ac5b43ba892c623c1ad76b06a854d14cb610f9043660adefa49f744",
+          "plannedUtcDate": "2026-11-30",
+          "title": "Orchid path game night: choose the first player",
+          "copy": "Give each name one equal chance.",
+          "destination": "https://whogoesfirst.fun/",
+          "campaign": "scene_orchid_archway_picker",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "Orchid arches over a curved path vary the botanical composition with a short fair-start promise."
+        },
+        {
+          "queueId": "tool-card-draw-no-repeat-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-card-draw-no-repeat-nov.png",
+          "renderedSha256": "354fe69745fa34475720c9eaa042109cd5fe4872b612828f49c4e7f632dd1633",
+          "plannedUtcDate": "2026-11-30",
+          "title": "Draw cards without repeats on one phone",
+          "copy": "No repeats until you reshuffle.",
+          "destination": "https://whogoesfirst.fun/card-draw/",
+          "campaign": "tool_card_draw_no_repeat",
+          "parentReference": null,
+          "selection": "A shared no-repeat deck hook addresses a different card-draw use case from the prior low-card dealer Pin."
+        },
+        {
+          "queueId": "tool-four-balanced-teams-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-four-balanced-teams-nov.png",
+          "renderedSha256": "71c43c2a3ace9c329cc09ed29ad8816b63a06d6fde61f748cd98c67efd7d9f38",
+          "plannedUtcDate": "2026-11-30",
+          "title": "Make four balanced random teams",
+          "copy": "Split the whole list into balanced groups.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "tool_four_balanced_teams",
+          "parentReference": null,
+          "selection": "Four balanced teams tests a concrete larger-group utility."
+        },
+        {
+          "queueId": "scene-cinema-room-turn-order",
+          "scene": "cinema-projection-room",
+          "background": "src/assets/pinterest/cinema-projection-room.png",
+          "renderedPin": "/pins/q/scene-cinema-room-turn-order.png",
+          "renderedSha256": "fbf114cf5039a1258acbb2acb1c85fcc9eb17673e0af61d44aa3bc081bf58c07",
+          "plannedUtcDate": "2026-12-01",
+          "title": "Cinema room game night: shuffle the playing order",
+          "copy": "Shuffle all names into one sequence.",
+          "destination": "https://whogoesfirst.fun/turn-order-generator/",
+          "campaign": "scene_cinema_room_turn_order",
+          "parentReference": null,
+          "selection": "A new cinema projection-room composition tests a theatrical scene with a complete-turn-order promise."
+        },
+        {
+          "queueId": "scene-cedar-cabin-checklist",
+          "scene": "cedar-cabin",
+          "background": "src/assets/pinterest/cedar-cabin.png",
+          "renderedPin": "/pins/q/scene-cedar-cabin-checklist.png",
+          "renderedSha256": "e933a9b8fd0c02759f8068401cd8f65459f2c66769cc19e0c06dc88d385140b1",
+          "plannedUtcDate": "2026-12-01",
+          "title": "Cedar cabin game night: plan the whole gathering",
+          "copy": "Ten simple checks from setup to pack-up.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "scene_cedar_cabin_checklist",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315243/",
+          "selection": "A cedar cabin tabletop varies the cozy tactile reference with a specific hosting checklist."
+        },
+        {
+          "queueId": "scene-river-pebble-teams",
+          "scene": "river-pebble-garden",
+          "background": "src/assets/pinterest/river-pebble-garden.png",
+          "renderedPin": "/pins/q/scene-river-pebble-teams.png",
+          "renderedSha256": "7852462a3b7a07ad268e3fd8224d3ee775588f6ffd33c1e06d7bc821b797800b",
+          "plannedUtcDate": "2026-12-01",
+          "title": "River pebble game night: shuffle friends into teams",
+          "copy": "Make balanced teams at random.",
+          "destination": "https://whogoesfirst.fun/random-team-generator/",
+          "campaign": "scene_river_pebble_teams",
+          "parentReference": "https://www.pinterest.com/pin/1093319247090315130/",
+          "selection": "A tray-scale dry pebble garden varies the botanical curved-path reference with a balanced-team hook."
+        },
+        {
+          "queueId": "tool-one-minute-turn-limit-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/tool-one-minute-turn-limit-nov.png",
+          "renderedSha256": "6ccb57e522284c309d3e421025789f684749357a1ecee89f7661eb6962a822a6",
+          "plannedUtcDate": "2026-12-01",
+          "title": "Give every player a one-minute turn",
+          "copy": "Set the limit and restart each turn.",
+          "destination": "https://whogoesfirst.fun/turn-timer/",
+          "campaign": "tool_one_minute_turn_limit",
+          "parentReference": null,
+          "selection": "A 60-second example tests a specific turn-timer use case."
+        },
+        {
+          "queueId": "guide-holiday-setup-checklist-nov",
+          "scene": null,
+          "background": null,
+          "renderedPin": "/pins/q/guide-holiday-setup-checklist-nov.png",
+          "renderedSha256": "6456d2ee5d634030e10fa18fe76fe0a9a0170759e26985a39a485ede24faa560",
+          "plannedUtcDate": "2026-12-01",
+          "title": "Plan a holiday game night in ten checks",
+          "copy": "Ten simple checks for the whole night.",
+          "destination": "https://whogoesfirst.fun/game-night-checklist/",
+          "campaign": "guide_holiday_setup_checklist",
+          "parentReference": null,
+          "selection": "Holiday hosting copy points to the ten-step checklist without inventing extra features."
+        }
+      ]
     }
   ]
 }
