@@ -33,6 +33,8 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     '2026-11-27', '2026-11-27', '2026-11-27',
     '2026-11-28', '2026-11-28', '2026-11-28',
     '2026-11-29', '2026-11-29', '2026-11-29',
+    '2026-11-30', '2026-11-30', '2026-11-30',
+    '2026-12-01', '2026-12-01', '2026-12-01',
   ]);
   expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
   expect(queue.slice(0, 148).at(-1)?.date).toBe('2026-10-30');
@@ -125,7 +127,7 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['tool-turn-timer-next-player-nov', '2026-11-27'],
     ['tool-coin-flip-tally-nov', '2026-11-27'],
   ]);
-  expect(queue.slice(274).map(pin => [pin.id, pin.date])).toEqual([
+  expect(queue.slice(274, 284).map(pin => [pin.id, pin.date])).toEqual([
     ['scene-atlas-room-teams', '2026-11-28'],
     ['scene-snowglobe-picker', '2026-11-28'],
     ['scene-coral-display-number', '2026-11-28'],
@@ -137,8 +139,20 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['tool-fifty-player-picker-nov', '2026-11-29'],
     ['guide-rulebook-random-fallback-nov', '2026-11-29'],
   ]);
-  expect(queue).toHaveLength(284);
-  expect(queue.at(-1)?.date).toBe('2026-11-29');
+  expect(queue.slice(284).map(pin => [pin.id, pin.date])).toEqual([
+    ['scene-vinyl-room-score', '2026-11-30'],
+    ['scene-fossil-path-number', '2026-11-30'],
+    ['scene-orchid-archway-picker', '2026-11-30'],
+    ['tool-card-draw-no-repeat-nov', '2026-11-30'],
+    ['tool-four-balanced-teams-nov', '2026-11-30'],
+    ['scene-cinema-room-turn-order', '2026-12-01'],
+    ['scene-cedar-cabin-checklist', '2026-12-01'],
+    ['scene-river-pebble-teams', '2026-12-01'],
+    ['tool-one-minute-turn-limit-nov', '2026-12-01'],
+    ['guide-holiday-setup-checklist-nov', '2026-12-01'],
+  ]);
+  expect(queue).toHaveLength(294);
+  expect(queue.at(-1)?.date).toBe('2026-12-01');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:06:59Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:07:00Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(true);
