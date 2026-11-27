@@ -35,6 +35,9 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     '2026-11-29', '2026-11-29', '2026-11-29',
     '2026-11-30', '2026-11-30', '2026-11-30',
     '2026-12-01', '2026-12-01', '2026-12-01',
+    '2026-12-02', '2026-12-02', '2026-12-02',
+    '2026-12-03', '2026-12-03', '2026-12-03',
+    '2026-12-04', '2026-12-04',
   ]);
   expect(queue.slice(0, 118).at(-1)?.date).toBe('2026-10-24');
   expect(queue.slice(0, 148).at(-1)?.date).toBe('2026-10-30');
@@ -139,7 +142,7 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['tool-fifty-player-picker-nov', '2026-11-29'],
     ['guide-rulebook-random-fallback-nov', '2026-11-29'],
   ]);
-  expect(queue.slice(284).map(pin => [pin.id, pin.date])).toEqual([
+  expect(queue.slice(284, 294).map(pin => [pin.id, pin.date])).toEqual([
     ['scene-vinyl-room-score', '2026-11-30'],
     ['scene-fossil-path-number', '2026-11-30'],
     ['scene-orchid-archway-picker', '2026-11-30'],
@@ -151,8 +154,25 @@ test('scene launch respects the daily cap and does not release scenes early', ()
     ['tool-one-minute-turn-limit-nov', '2026-12-01'],
     ['guide-holiday-setup-checklist-nov', '2026-12-01'],
   ]);
-  expect(queue).toHaveLength(294);
-  expect(queue.at(-1)?.date).toBe('2026-12-01');
+  expect(queue.slice(294).map(pin => [pin.id, pin.date])).toEqual([
+    ['scene-luthier-workbench-score', '2026-12-02'],
+    ['scene-bonsai-tray-picker', '2026-12-02'],
+    ['scene-honeycomb-courtyard-teams', '2026-12-02'],
+    ['tool-d100-percentile-dec', '2026-12-02'],
+    ['tool-letter-no-repeat-dec', '2026-12-02'],
+    ['scene-postal-room-turn-order', '2026-12-03'],
+    ['scene-spice-market-number', '2026-12-03'],
+    ['scene-shadow-puppet-checklist', '2026-12-03'],
+    ['tool-score-subtract-dec', '2026-12-03'],
+    ['tool-high-card-dealer-dec', '2026-12-03'],
+    ['scene-pendulum-attic-timer', '2026-12-04'],
+    ['scene-paper-parasol-picker', '2026-12-04'],
+    ['guide-coin-independent-dec', '2026-12-04'],
+    ['tool-finger-full-order-dec', '2026-12-04'],
+    ['tool-three-minute-turn-dec', '2026-12-04'],
+  ]);
+  expect(queue).toHaveLength(309);
+  expect(queue.at(-1)?.date).toBe('2026-12-04');
   expect(releasedPins(new Date('2026-10-06T23:59:59Z')).some(pin => pin.art.scene)).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:06:59Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(false);
   expect(releasedPins(new Date('2026-11-19T13:07:00Z')).some(pin => pin.id === 'scene-sunflower-boardwalk-picker')).toBe(true);
@@ -170,4 +190,4 @@ test('reviewed scenes render as portrait PNGs and changed copy is rejected', asy
     expect(pin.description).toContain('AI-created');
     await expect(renderPinImage({ ...pin.art, title: 'Unreviewed copy' }, 'whogoesfirst.fun')).rejects.toThrow('changed since visual review');
   }
-}, 60_000);
+}, 120_000);
