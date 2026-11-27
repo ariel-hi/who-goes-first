@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T06:47:56.554Z",
+  "generatedAt": "2026-11-27T16:58:53.180Z",
   "property": "https://whogoesfirst.fun/",
   "source": "Google Search Console Search Analytics API",
   "searchType": "web",
@@ -16,7 +16,7 @@
       "query"
     ]
   },
-  "anchorDateUtc": "2026-11-26",
+  "anchorDateUtc": "2026-11-27",
   "reportingLagDays": 3,
   "aggregation": "auto (API default); responseAggregationType is not retained by the existing API client",
   "totalsSource": "Independent dimensionless requests; sitewide position is Google-provided, never a page-position average.",
@@ -35,8 +35,8 @@
   "sevenDay": {
     "current": {
       "window": {
-        "start": "2026-11-17",
-        "end": "2026-11-23"
+        "start": "2026-11-18",
+        "end": "2026-11-24"
       },
       "totals": {
         "status": "available",
@@ -44,9 +44,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 1,
-          "impressions": 3,
-          "ctr": 0.3333333333333333,
-          "averagePosition": 60.666666666666664
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 49
         }
       },
       "pages": {
@@ -68,15 +68,15 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 69
+            "averagePosition": 54
           }
         ]
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 2,
+        "returnedRowCount": 1,
         "emptyResult": false,
         "data": [
           {
@@ -88,24 +88,14 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 54
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/",
-              "goes first"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 84
           }
         ]
       }
     },
     "previous": {
       "window": {
-        "start": "2026-11-10",
-        "end": "2026-11-16"
+        "start": "2026-11-11",
+        "end": "2026-11-17"
       },
       "totals": {
         "status": "available",
@@ -113,9 +103,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 0,
-          "impressions": 6,
+          "impressions": 7,
           "ctr": 0,
-          "averagePosition": 29.666666666666668
+          "averagePosition": 37.42857142857143
         }
       },
       "pages": {
@@ -128,9 +118,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 77
+            "averagePosition": 79.33333333333333
           },
           {
             "keys": [
@@ -163,9 +153,19 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 2,
+        "returnedRowCount": 3,
         "emptyResult": false,
         "data": [
+          {
+            "keys": [
+              "https://whogoesfirst.fun/",
+              "goes first"
+            ],
+            "clicks": 0,
+            "impressions": 1,
+            "ctr": 0,
+            "averagePosition": 84
+          },
           {
             "keys": [
               "https://whogoesfirst.fun/",
@@ -192,11 +192,11 @@
     "changes": {
       "totals": {
         "clicks": 1,
-        "impressions": -3,
+        "impressions": -5,
         "clicksPercent": null,
-        "impressionsPercent": -50,
-        "ctrPercentagePoints": 33.33333333333333,
-        "averagePosition": 30.999999999999996
+        "impressionsPercent": -71.42857142857143,
+        "ctrPercentagePoints": 50,
+        "averagePosition": 11.57142857142857
       },
       "pages": [
         {
@@ -209,26 +209,26 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 69
+            "averagePosition": 54
           },
           "previous": {
             "keys": [
               "https://whogoesfirst.fun/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 77
+            "averagePosition": 79.33333333333333
           },
           "change": {
             "clicks": 0,
-            "impressions": 0,
+            "impressions": -2,
             "clicksPercent": null,
-            "impressionsPercent": 0,
+            "impressionsPercent": -66.66666666666666,
             "ctrPercentagePoints": 0,
-            "averagePosition": -8
+            "averagePosition": -25.33333333333333
           }
         },
         {
@@ -325,8 +325,9 @@
             "https://whogoesfirst.fun/",
             "goes first"
           ],
-          "presence": "current_only_returned",
-          "current": {
+          "presence": "previous_only_returned",
+          "current": null,
+          "previous": {
             "keys": [
               "https://whogoesfirst.fun/",
               "goes first"
@@ -336,7 +337,6 @@
             "ctr": 0,
             "averagePosition": 84
           },
-          "previous": null,
           "change": null
         },
         {
@@ -383,8 +383,8 @@
   "twentyEightDay": {
     "current": {
       "window": {
-        "start": "2026-10-27",
-        "end": "2026-11-23"
+        "start": "2026-10-28",
+        "end": "2026-11-24"
       },
       "totals": {
         "status": "available",
@@ -392,9 +392,9 @@
         "emptyResult": false,
         "data": {
           "clicks": 3,
-          "impressions": 34,
-          "ctr": 0.08823529411764706,
-          "averagePosition": 18.88235294117647
+          "impressions": 33,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 17.696969696969695
         }
       },
       "pages": {
@@ -407,9 +407,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 16,
-            "ctr": 0.0625,
-            "averagePosition": 29.75
+            "impressions": 15,
+            "ctr": 0.06666666666666667,
+            "averagePosition": 27.866666666666667
           },
           {
             "keys": [
@@ -679,8 +679,8 @@
     },
     "previous": {
       "window": {
-        "start": "2026-09-29",
-        "end": "2026-10-26"
+        "start": "2026-09-30",
+        "end": "2026-10-27"
       },
       "totals": {
         "status": "available",
@@ -688,14 +688,14 @@
         "emptyResult": false,
         "data": {
           "clicks": 31,
-          "impressions": 3544,
-          "ctr": 0.008747178329571106,
-          "averagePosition": 14.514390519187359
+          "impressions": 3304,
+          "ctr": 0.009382566585956417,
+          "averagePosition": 15.039951573849878
         }
       },
       "pages": {
         "status": "available",
-        "returnedRowCount": 713,
+        "returnedRowCount": 699,
         "emptyResult": false,
         "data": [
           {
@@ -703,9 +703,9 @@
               "https://whogoesfirst.fun/ways-to-pick-who-goes-first/"
             ],
             "clicks": 3,
-            "impressions": 82,
-            "ctr": 0.036585365853658534,
-            "averagePosition": 6.987804878048781
+            "impressions": 80,
+            "ctr": 0.0375,
+            "averagePosition": 6.9625
           },
           {
             "keys": [
@@ -723,7 +723,7 @@
             "clicks": 1,
             "impressions": 15,
             "ctr": 0.06666666666666667,
-            "averagePosition": 6.666666666666667
+            "averagePosition": 10.133333333333333
           },
           {
             "keys": [
@@ -766,9 +766,9 @@
               "https://whogoesfirst.fun/games/carnegie-pegasus-en/"
             ],
             "clicks": 1,
-            "impressions": 8,
-            "ctr": 0.125,
-            "averagePosition": 7.125
+            "impressions": 4,
+            "ctr": 0.25,
+            "averagePosition": 5.5
           },
           {
             "keys": [
@@ -802,9 +802,9 @@
               "https://whogoesfirst.fun/games/dune-imperium-uprising-dire-wolf-en-2023/"
             ],
             "clicks": 1,
-            "impressions": 24,
-            "ctr": 0.041666666666666664,
-            "averagePosition": 5.875
+            "impressions": 23,
+            "ctr": 0.043478260869565216,
+            "averagePosition": 5.869565217391305
           },
           {
             "keys": [
@@ -856,18 +856,18 @@
               "https://whogoesfirst.fun/games/rising-sun-cmon-en/"
             ],
             "clicks": 1,
-            "impressions": 8,
-            "ctr": 0.125,
-            "averagePosition": 9.75
+            "impressions": 6,
+            "ctr": 0.16666666666666666,
+            "averagePosition": 11
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/rock-hard-1977-devir-en/"
             ],
             "clicks": 1,
-            "impressions": 8,
-            "ctr": 0.125,
-            "averagePosition": 7.25
+            "impressions": 7,
+            "ctr": 0.14285714285714285,
+            "averagePosition": 7.142857142857143
           },
           {
             "keys": [
@@ -883,9 +883,9 @@
               "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/"
             ],
             "clicks": 1,
-            "impressions": 108,
-            "ctr": 0.009259259259259259,
-            "averagePosition": 6.87962962962963
+            "impressions": 10,
+            "ctr": 0.1,
+            "averagePosition": 6.5
           },
           {
             "keys": [
@@ -910,9 +910,9 @@
               "https://whogoesfirst.fun/games/topp-die-torte-schmidt-de-40659-placement/"
             ],
             "clicks": 1,
-            "impressions": 35,
-            "ctr": 0.02857142857142857,
-            "averagePosition": 6.6
+            "impressions": 32,
+            "ctr": 0.03125,
+            "averagePosition": 6.3125
           },
           {
             "keys": [
@@ -973,9 +973,9 @@
               "https://whogoesfirst.fun/choose-who-goes-first/"
             ],
             "clicks": 0,
-            "impressions": 29,
+            "impressions": 27,
             "ctr": 0,
-            "averagePosition": 13.758620689655173
+            "averagePosition": 14.11111111111111
           },
           {
             "keys": [
@@ -1009,9 +1009,9 @@
               "https://whogoesfirst.fun/games/"
             ],
             "clicks": 0,
-            "impressions": 16,
+            "impressions": 14,
             "ctr": 0,
-            "averagePosition": 7.4375
+            "averagePosition": 7.357142857142857
           },
           {
             "keys": [
@@ -1126,9 +1126,9 @@
               "https://whogoesfirst.fun/games/890-anno-domini-gateongames-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.333333333333333
+            "averagePosition": 8
           },
           {
             "keys": [
@@ -1153,9 +1153,9 @@
               "https://whogoesfirst.fun/games/a-feast-for-odin-feuerland-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 3.5
+            "averagePosition": 4
           },
           {
             "keys": [
@@ -1249,15 +1249,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/agent-avenue-nerdlab-en/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 8
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/aggravation-winning-moves-2023-en/"
             ],
             "clicks": 0,
@@ -1270,9 +1261,9 @@
               "https://whogoesfirst.fun/games/agricola-revised-edition-lookout-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7.166666666666667
+            "averagePosition": 7.6
           },
           {
             "keys": [
@@ -1315,9 +1306,9 @@
               "https://whogoesfirst.fun/games/alles-tomate-zoch-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 6.5
+            "averagePosition": 10
           },
           {
             "keys": [
@@ -1342,9 +1333,9 @@
               "https://whogoesfirst.fun/games/anachrony-essential-mindclash-en-2021/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 7,
             "ctr": 0,
-            "averagePosition": 6.875
+            "averagePosition": 7
           },
           {
             "keys": [
@@ -1363,15 +1354,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 4
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/ancient-world-red-raven-en-second-edition/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
           },
           {
             "keys": [
@@ -1423,9 +1405,9 @@
               "https://whogoesfirst.fun/games/aqua-garden-uchibacoya-en-rulebook/"
             ],
             "clicks": 0,
-            "impressions": 27,
+            "impressions": 26,
             "ctr": 0,
-            "averagePosition": 6.481481481481482
+            "averagePosition": 6.461538461538462
           },
           {
             "keys": [
@@ -1462,15 +1444,6 @@
             "impressions": 4,
             "ctr": 0,
             "averagePosition": 4.25
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/architects-of-the-west-kingdom-garphill-2018-en/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 4.5
           },
           {
             "keys": [
@@ -1513,9 +1486,9 @@
               "https://whogoesfirst.fun/games/arkham-horror-second-edition-ffg-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 10
           },
           {
             "keys": [
@@ -1585,9 +1558,9 @@
               "https://whogoesfirst.fun/games/azul-2018-en/"
             ],
             "clicks": 0,
-            "impressions": 19,
+            "impressions": 18,
             "ctr": 0,
-            "averagePosition": 6.368421052631579
+            "averagePosition": 6.222222222222222
           },
           {
             "keys": [
@@ -1639,9 +1612,9 @@
               "https://whogoesfirst.fun/games/baerenpark-lookout-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 6.5
+            "averagePosition": 4
           },
           {
             "keys": [
@@ -1711,9 +1684,9 @@
               "https://whogoesfirst.fun/games/bears-vs-babies-exploding-kittens-2023-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 17.333333333333332
+            "averagePosition": 21
           },
           {
             "keys": [
@@ -1738,9 +1711,9 @@
               "https://whogoesfirst.fun/games/berried-treasure-restoration-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 8
           },
           {
             "keys": [
@@ -1945,9 +1918,9 @@
               "https://whogoesfirst.fun/games/burgle-bros-2-fowers-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8.8
+            "averagePosition": 8.5
           },
           {
             "keys": [
@@ -1990,9 +1963,9 @@
               "https://whogoesfirst.fun/games/caldera-park-deep-print-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 6
+            "averagePosition": 7
           },
           {
             "keys": [
@@ -2122,15 +2095,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/castle-combo-asmodee-en-2024/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 17.5
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/castles-burgundy-alea-original-en/"
             ],
             "clicks": 0,
@@ -2224,9 +2188,9 @@
               "https://whogoesfirst.fun/games/caylus-ystari-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 3.3333333333333335
+            "averagePosition": 2
           },
           {
             "keys": [
@@ -2251,9 +2215,9 @@
               "https://whogoesfirst.fun/games/century-spice-road-plan-b-big-box-en/"
             ],
             "clicks": 0,
-            "impressions": 17,
+            "impressions": 16,
             "ctr": 0,
-            "averagePosition": 12.470588235294118
+            "averagePosition": 12.9375
           },
           {
             "keys": [
@@ -2350,9 +2314,9 @@
               "https://whogoesfirst.fun/games/chocolate-factory-alley-cat-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6.333333333333333
           },
           {
             "keys": [
@@ -2413,9 +2377,9 @@
               "https://whogoesfirst.fun/games/clank-direwolf-en-2016/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 6.8
+            "averagePosition": 7
           },
           {
             "keys": [
@@ -2437,30 +2401,12 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/clever-cubed-schmidt-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 7
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/clue-classic-hasbro-en/"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 7.666666666666667
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/clue-hasbro-2023-en/"
             ],
             "clicks": 0,
             "impressions": 2,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 6.5
           },
           {
             "keys": [
@@ -2512,9 +2458,9 @@
               "https://whogoesfirst.fun/games/color-flush-blue-orange-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7.25
+            "averagePosition": 9
           },
           {
             "keys": [
@@ -2539,9 +2485,9 @@
               "https://whogoesfirst.fun/games/concordia-rio-grande-en/"
             ],
             "clicks": 0,
-            "impressions": 33,
+            "impressions": 30,
             "ctr": 0,
-            "averagePosition": 6.454545454545454
+            "averagePosition": 6.766666666666667
           },
           {
             "keys": [
@@ -2557,9 +2503,9 @@
               "https://whogoesfirst.fun/games/container-10th-anniversary-mercury-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 5.2
+            "averagePosition": 5.25
           },
           {
             "keys": [
@@ -2719,9 +2665,9 @@
               "https://whogoesfirst.fun/games/deception-murder-hong-kong-grey-fox-en/"
             ],
             "clicks": 0,
-            "impressions": 7,
+            "impressions": 6,
             "ctr": 0,
-            "averagePosition": 10.285714285714286
+            "averagePosition": 9.5
           },
           {
             "keys": [
@@ -2737,9 +2683,9 @@
               "https://whogoesfirst.fun/games/deduckto-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7.833333333333333
+            "averagePosition": 8.2
           },
           {
             "keys": [
@@ -2800,9 +2746,9 @@
               "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
             ],
             "clicks": 0,
-            "impressions": 26,
+            "impressions": 22,
             "ctr": 0,
-            "averagePosition": 3.923076923076923
+            "averagePosition": 3.909090909090909
           },
           {
             "keys": [
@@ -2935,9 +2881,9 @@
               "https://whogoesfirst.fun/games/dragonwood-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 9
+            "averagePosition": 7
           },
           {
             "keys": [
@@ -2971,9 +2917,9 @@
               "https://whogoesfirst.fun/games/dune-imperium-dire-wolf-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5.5
+            "averagePosition": 6.666666666666667
           },
           {
             "keys": [
@@ -3049,15 +2995,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/eldritch-horror-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 18.333333333333332
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/electropolis-homosapiens-en/"
             ],
             "clicks": 0,
@@ -3112,21 +3049,12 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/equinox-next-move-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 2
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/ethnos-cmon-original-2017-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 8.333333333333332
+            "averagePosition": 8.6
           },
           {
             "keys": [
@@ -3187,9 +3115,9 @@
               "https://whogoesfirst.fun/games/feed-the-kitty-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 6,
             "ctr": 0,
-            "averagePosition": 10.5
+            "averagePosition": 10.166666666666666
           },
           {
             "keys": [
@@ -3205,27 +3133,27 @@
               "https://whogoesfirst.fun/games/finding-nessie-lifestyle-2018-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 10
+            "averagePosition": 5
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/first-orchard-haba-en/"
             ],
             "clicks": 0,
-            "impressions": 9,
+            "impressions": 8,
             "ctr": 0,
-            "averagePosition": 7.222222222222222
+            "averagePosition": 7.125
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/first-rat-pegasus-en/"
             ],
             "clicks": 0,
-            "impressions": 12,
+            "impressions": 11,
             "ctr": 0,
-            "averagePosition": 6
+            "averagePosition": 5.909090909090909
           },
           {
             "keys": [
@@ -3394,36 +3322,36 @@
               "https://whogoesfirst.fun/games/formula-d-asmodee-basic-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5
+            "averagePosition": 4.666666666666666
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/fort-leder-2020-en/"
             ],
             "clicks": 0,
-            "impressions": 7,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 4.428571428571429
+            "averagePosition": 9
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/fragments-grrre-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6.2
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/fresh-fish-2f-2014-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7.333333333333333
+            "averagePosition": 7.8
           },
           {
             "keys": [
@@ -3619,9 +3547,9 @@
               "https://whogoesfirst.fun/games/go-nuts-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7.5
+            "averagePosition": 9
           },
           {
             "keys": [
@@ -3835,9 +3763,9 @@
               "https://whogoesfirst.fun/games/high-society-allplay-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 6.666666666666667
+            "averagePosition": 6.2
           },
           {
             "keys": [
@@ -3847,15 +3775,6 @@
             "impressions": 3,
             "ctr": 0,
             "averagePosition": 7
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/hiroba-funnyfox-fr-summary/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
           },
           {
             "keys": [
@@ -4030,21 +3949,12 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/ingenious-thames-kosmos-original-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/inis-matagot-original-en/"
             ],
             "clicks": 0,
-            "impressions": 7,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 9.428571428571429
+            "averagePosition": 9.8
           },
           {
             "keys": [
@@ -4114,9 +4024,9 @@
               "https://whogoesfirst.fun/games/john-company-second-edition-wehrlegig-en/"
             ],
             "clicks": 0,
-            "impressions": 25,
+            "impressions": 23,
             "ctr": 0,
-            "averagePosition": 6.28
+            "averagePosition": 6.260869565217392
           },
           {
             "keys": [
@@ -4159,9 +4069,9 @@
               "https://whogoesfirst.fun/games/kemet-matagot-original-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7.5
+            "averagePosition": 9
           },
           {
             "keys": [
@@ -4339,9 +4249,9 @@
               "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 8
           },
           {
             "keys": [
@@ -4366,18 +4276,18 @@
               "https://whogoesfirst.fun/games/lord-of-rings-card-game-ffg-original-core-en/"
             ],
             "clicks": 0,
-            "impressions": 10,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 12.8
+            "averagePosition": 13.555555555555555
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/lords-of-waterdeep-wizards-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 3.75
+            "averagePosition": 3
           },
           {
             "keys": [
@@ -4402,9 +4312,9 @@
               "https://whogoesfirst.fun/games/mage-knight-wizkids-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 9
           },
           {
             "keys": [
@@ -4456,9 +4366,9 @@
               "https://whogoesfirst.fun/games/mapmaker-lafair-2019-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 5.666666666666667
+            "averagePosition": 4
           },
           {
             "keys": [
@@ -4474,9 +4384,9 @@
               "https://whogoesfirst.fun/games/marvel-champions-ffg-core-en/"
             ],
             "clicks": 0,
-            "impressions": 10,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 20.9
+            "averagePosition": 22.88888888888889
           },
           {
             "keys": [
@@ -4708,9 +4618,9 @@
               "https://whogoesfirst.fun/games/nomads-ludonaute-en-v12/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 2
+            "averagePosition": 1
           },
           {
             "keys": [
@@ -4762,9 +4672,9 @@
               "https://whogoesfirst.fun/games/one-night-ultimate-werewolf-bezier-en/"
             ],
             "clicks": 0,
-            "impressions": 24,
+            "impressions": 23,
             "ctr": 0,
-            "averagePosition": 16.541666666666664
+            "averagePosition": 17
           },
           {
             "keys": [
@@ -4798,9 +4708,9 @@
               "https://whogoesfirst.fun/games/outfoxed-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 24.5
+            "averagePosition": 20.75
           },
           {
             "keys": [
@@ -4960,9 +4870,9 @@
               "https://whogoesfirst.fun/games/petrichor-mighty-boards-2019-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 6.6
+            "averagePosition": 6.5
           },
           {
             "keys": [
@@ -4996,9 +4906,9 @@
               "https://whogoesfirst.fun/games/pies-allplay-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 7,
             "ctr": 0,
-            "averagePosition": 6.25
+            "averagePosition": 6.428571428571429
           },
           {
             "keys": [
@@ -5068,9 +4978,9 @@
               "https://whogoesfirst.fun/games/power-vacuum-keen-bean-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 8.333333333333332
+            "averagePosition": 7.5
           },
           {
             "keys": [
@@ -5383,9 +5293,9 @@
               "https://whogoesfirst.fun/games/root-leder-standard-en/"
             ],
             "clicks": 0,
-            "impressions": 62,
+            "impressions": 55,
             "ctr": 0,
-            "averagePosition": 9.5
+            "averagePosition": 9.981818181818182
           },
           {
             "keys": [
@@ -5473,9 +5383,9 @@
               "https://whogoesfirst.fun/games/scythe-stonemaier-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 9
           },
           {
             "keys": [
@@ -5491,9 +5401,9 @@
               "https://whogoesfirst.fun/games/sea-salt-paper-bombyx-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 6,
             "ctr": 0,
-            "averagePosition": 5.25
+            "averagePosition": 6.166666666666667
           },
           {
             "keys": [
@@ -5626,9 +5536,9 @@
               "https://whogoesfirst.fun/games/skunk-bingo-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 7.6
+            "averagePosition": 8
           },
           {
             "keys": [
@@ -5707,9 +5617,9 @@
               "https://whogoesfirst.fun/games/snail-sprint-haba-en-2018/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 4.75
+            "averagePosition": 3.6666666666666665
           },
           {
             "keys": [
@@ -5788,9 +5698,9 @@
               "https://whogoesfirst.fun/games/space-base-aeg-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 7,
             "ctr": 0,
-            "averagePosition": 7.875
+            "averagePosition": 7.714285714285714
           },
           {
             "keys": [
@@ -5824,18 +5734,18 @@
               "https://whogoesfirst.fun/games/speculation-queen-games-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 18.333333333333332
+            "averagePosition": 45
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/speed-cups-amigo-en-v2-0/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 23.333333333333332
+            "averagePosition": 7.5
           },
           {
             "keys": [
@@ -5878,9 +5788,9 @@
               "https://whogoesfirst.fun/games/spot-it-blue-orange-original-en/"
             ],
             "clicks": 0,
-            "impressions": 9,
+            "impressions": 8,
             "ctr": 0,
-            "averagePosition": 39.55555555555556
+            "averagePosition": 43.375
           },
           {
             "keys": [
@@ -5899,15 +5809,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 4
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 8
           },
           {
             "keys": [
@@ -5950,9 +5851,9 @@
               "https://whogoesfirst.fun/games/stockpile-nauvoo-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 8.5
+            "averagePosition": 10
           },
           {
             "keys": [
@@ -6049,18 +5950,18 @@
               "https://whogoesfirst.fun/games/survive-atlantis-stronghold-anniversary-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 6
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/sushi-go-2014-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 36.833333333333336
+            "averagePosition": 42
           },
           {
             "keys": [
@@ -6121,9 +6022,9 @@
               "https://whogoesfirst.fun/games/telestrations-the-op-second-en/"
             ],
             "clicks": 0,
-            "impressions": 13,
+            "impressions": 10,
             "ctr": 0,
-            "averagePosition": 5.6923076923076925
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -6175,9 +6076,9 @@
               "https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/"
             ],
             "clicks": 0,
-            "impressions": 12,
+            "impressions": 11,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 7.363636363636363
           },
           {
             "keys": [
@@ -6256,9 +6157,9 @@
               "https://whogoesfirst.fun/games/the-mind-nsv-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 4.666666666666666
+            "averagePosition": 3.5
           },
           {
             "keys": [
@@ -6268,15 +6169,6 @@
             "impressions": 13,
             "ctr": 0,
             "averagePosition": 6.3076923076923075
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/the-resistance-indie-boards-cards-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
           },
           {
             "keys": [
@@ -6301,9 +6193,9 @@
               "https://whogoesfirst.fun/games/themes/youngest-player/"
             ],
             "clicks": 0,
-            "impressions": 23,
+            "impressions": 22,
             "ctr": 0,
-            "averagePosition": 8.391304347826086
+            "averagePosition": 8.318181818181818
           },
           {
             "keys": [
@@ -6328,9 +6220,9 @@
               "https://whogoesfirst.fun/games/through-the-desert-allplay-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 10.25
+            "averagePosition": 10
           },
           {
             "keys": [
@@ -6373,9 +6265,9 @@
               "https://whogoesfirst.fun/games/ticket-to-ride-nordic-countries-days-of-wonder-en/"
             ],
             "clicks": 0,
-            "impressions": 13,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 8.76923076923077
+            "averagePosition": 10.444444444444445
           },
           {
             "keys": [
@@ -6397,15 +6289,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/tiny-epic-kingdoms-gamelyn-en-dized/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 4
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/tiny-epic-western-gamelyn-en-dized/"
             ],
             "clicks": 0,
@@ -6418,9 +6301,9 @@
               "https://whogoesfirst.fun/games/tipperary-lookout-en/"
             ],
             "clicks": 0,
-            "impressions": 14,
+            "impressions": 13,
             "ctr": 0,
-            "averagePosition": 7.5
+            "averagePosition": 7.461538461538462
           },
           {
             "keys": [
@@ -6436,9 +6319,9 @@
               "https://whogoesfirst.fun/games/too-many-monkeys-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 8
           },
           {
             "keys": [
@@ -6535,16 +6418,16 @@
               "https://whogoesfirst.fun/games/tuned-thundergryph-en-2022/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 6.666666666666667
+            "averagePosition": 8.5
           },
           {
             "keys": [
               "https://whogoesfirst.fun/games/tussie-mussie-button-shy-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
             "averagePosition": 8
           },
@@ -6562,9 +6445,9 @@
               "https://whogoesfirst.fun/games/ueber-den-wolken-zoch-601105207-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8.333333333333332
+            "averagePosition": 7.75
           },
           {
             "keys": [
@@ -6811,15 +6694,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/watson-holmes-ludonova-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 8
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/wavelength-cmyk-en/"
             ],
             "clicks": 0,
@@ -6868,9 +6742,9 @@
               "https://whogoesfirst.fun/games/wondrous-creatures-bad-comet-v2-2-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 9.6
+            "averagePosition": 9.5
           },
           {
             "keys": [
@@ -6904,9 +6778,9 @@
               "https://whogoesfirst.fun/games/yak-pretzel-2022-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 22.25
+            "averagePosition": 29.333333333333332
           },
           {
             "keys": [
@@ -7119,7 +6993,7 @@
       },
       "pageQuery": {
         "status": "available",
-        "returnedRowCount": 456,
+        "returnedRowCount": 439,
         "emptyResult": false,
         "data": [
           {
@@ -7151,16 +7025,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 7
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/",
-              "which goes first"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
           },
           {
             "keys": [
@@ -7815,22 +7679,12 @@
           {
             "keys": [
               "https://whogoesfirst.fun/games/",
-              "rebis dungeon"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/",
               "the curse of muziris"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5
+            "averagePosition": 4.666666666666666
           },
           {
             "keys": [
@@ -7918,9 +7772,9 @@
               "who goes first in azul"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 6.75
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -7941,16 +7795,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 56
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/bears-vs-babies-exploding-kittens-2023-en/",
-              "bears vs babies rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
           },
           {
             "keys": [
@@ -8038,19 +7882,9 @@
               "carnegie rulebook"
             ],
             "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 9.5
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/castle-combo-asmodee-en-2024/",
-              "castle combo rules"
-            ],
-            "clicks": 0,
             "impressions": 1,
             "ctr": 0,
-            "averagePosition": 27
+            "averagePosition": 10
           },
           {
             "keys": [
@@ -8394,16 +8228,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/deception-murder-hong-kong-grey-fox-en/",
-              "deception: murder in hong kong rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 15
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/decrypto-scorpion-masque-en/",
               "decrypto rules pdf"
             ],
@@ -8421,16 +8245,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 10
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/dragonwood-gamewright-en/",
-              "dragonwood game rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 13
           },
           {
             "keys": [
@@ -8634,16 +8448,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/eldritch-horror-ffg-en/",
-              "eldritch horror rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 39
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/emberleaf-city-of-kings-en/",
               "emberleaf rules pdf"
             ],
@@ -8688,9 +8492,9 @@
               "feed the kitty game rules"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 11
+            "averagePosition": 10.75
           },
           {
             "keys": [
@@ -8708,9 +8512,9 @@
               "first orchard game rules"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6
           },
           {
             "keys": [
@@ -8781,16 +8585,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 1
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/fort-leder-2020-en/",
-              "\"determine the starting player and seating order randomly\" root"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 4.333333333333334
           },
           {
             "keys": [
@@ -9041,16 +8835,6 @@
             "impressions": 3,
             "ctr": 0,
             "averagePosition": 9
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/kemet-matagot-original-en/",
-              "\"determine the starting player and seating order randomly\" root"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 7.333333333333333
           },
           {
             "keys": [
@@ -9418,17 +9202,7 @@
               "outfoxed game rules"
             ],
             "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 24.333333333333332
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/outfoxed-gamewright-en/",
-              "outfoxed rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
             "averagePosition": 9
           },
@@ -9635,16 +9409,6 @@
           {
             "keys": [
               "https://whogoesfirst.fun/games/root-leder-standard-en/",
-              "\"determine the starting player and seating order randomly\" root"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 6.333333333333333
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/root-leder-standard-en/",
               "root rules"
             ],
             "clicks": 0,
@@ -9741,16 +9505,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 11
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/scythe-stonemaier-en/",
-              "who goes first in scythe"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 4
           },
           {
             "keys": [
@@ -9984,16 +9738,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/speed-cups-amigo-en-v2-0/",
-              "cups game friends"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 55
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/spirit-island-gtg-en/",
               "spirit island rulebook"
             ],
@@ -10084,26 +9828,6 @@
           },
           {
             "keys": [
-              "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/",
-              "\"star wars rebellion rules reference\" pdf"
-            ],
-            "clicks": 0,
-            "impressions": 5,
-            "ctr": 0,
-            "averagePosition": 7
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/",
-              "\"star wars: rebellion rules reference\" pdf"
-            ],
-            "clicks": 0,
-            "impressions": 11,
-            "ctr": 0,
-            "averagePosition": 6.909090909090909
-          },
-          {
-            "keys": [
               "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/",
               "star wars x wing rules"
             ],
@@ -10168,9 +9892,9 @@
               "sushi go rulebook"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 46
+            "averagePosition": 81
           },
           {
             "keys": [
@@ -10221,26 +9945,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 56
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/telestrations-the-op-second-en/",
-              "rules for telestrations"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          {
-            "keys": [
-              "https://whogoesfirst.fun/games/telestrations-the-op-second-en/",
-              "telestrations rules pdf"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
           },
           {
             "keys": [
@@ -10378,9 +10082,9 @@
               "\"the most experienced traveler goes first\" \"ticket to ride europe\""
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 3.3333333333333335
+            "averagePosition": 4
           },
           {
             "keys": [
@@ -10388,9 +10092,9 @@
               "\"ticket to ride europe\" \"the most experienced traveler goes first\""
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5.2
+            "averagePosition": 4
           },
           {
             "keys": [
@@ -10438,9 +10142,9 @@
               "too many monkeys rules"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 9
           },
           {
             "keys": [
@@ -11688,11 +11392,11 @@
     "changes": {
       "totals": {
         "clicks": -28,
-        "impressions": -3510,
+        "impressions": -3271,
         "clicksPercent": -90.32258064516128,
-        "impressionsPercent": -99.04063205417607,
-        "ctrPercentagePoints": 7.948811578807597,
-        "averagePosition": 4.367962421989112
+        "impressionsPercent": -99.00121065375302,
+        "ctrPercentagePoints": 8.152652432313449,
+        "averagePosition": 2.6570181231198173
       },
       "pages": [
         {
@@ -11705,9 +11409,9 @@
               "https://whogoesfirst.fun/"
             ],
             "clicks": 1,
-            "impressions": 16,
-            "ctr": 0.0625,
-            "averagePosition": 29.75
+            "impressions": 15,
+            "ctr": 0.06666666666666667,
+            "averagePosition": 27.866666666666667
           },
           "previous": {
             "keys": [
@@ -11716,15 +11420,15 @@
             "clicks": 1,
             "impressions": 15,
             "ctr": 0.06666666666666667,
-            "averagePosition": 6.666666666666667
+            "averagePosition": 10.133333333333333
           },
           "change": {
             "clicks": 0,
-            "impressions": 1,
+            "impressions": 0,
             "clicksPercent": 0,
-            "impressionsPercent": 6.666666666666667,
-            "ctrPercentagePoints": -0.4166666666666666,
-            "averagePosition": 23.083333333333332
+            "impressionsPercent": 0,
+            "ctrPercentagePoints": 0,
+            "averagePosition": 17.733333333333334
           }
         },
         {
@@ -11772,9 +11476,9 @@
               "https://whogoesfirst.fun/choose-who-goes-first/"
             ],
             "clicks": 0,
-            "impressions": 29,
+            "impressions": 27,
             "ctr": 0,
-            "averagePosition": 13.758620689655173
+            "averagePosition": 14.11111111111111
           },
           "change": null
         },
@@ -11874,9 +11578,9 @@
               "https://whogoesfirst.fun/games/"
             ],
             "clicks": 0,
-            "impressions": 16,
+            "impressions": 14,
             "ctr": 0,
-            "averagePosition": 7.4375
+            "averagePosition": 7.357142857142857
           },
           "change": null
         },
@@ -12095,9 +11799,9 @@
               "https://whogoesfirst.fun/games/890-anno-domini-gateongames-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.333333333333333
+            "averagePosition": 8
           },
           "change": null
         },
@@ -12146,9 +11850,9 @@
               "https://whogoesfirst.fun/games/a-feast-for-odin-feuerland-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 3.5
+            "averagePosition": 4
           },
           "change": null
         },
@@ -12324,23 +12028,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/agent-avenue-nerdlab-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/agent-avenue-nerdlab-en/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 8
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/aggravation-winning-moves-2023-en/"
           ],
           "presence": "previous_only_returned",
@@ -12367,9 +12054,9 @@
               "https://whogoesfirst.fun/games/agricola-revised-edition-lookout-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7.166666666666667
+            "averagePosition": 7.6
           },
           "change": null
         },
@@ -12452,9 +12139,9 @@
               "https://whogoesfirst.fun/games/alles-tomate-zoch-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 6.5
+            "averagePosition": 10
           },
           "change": null
         },
@@ -12520,9 +12207,9 @@
               "https://whogoesfirst.fun/games/anachrony-essential-mindclash-en-2021/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 7,
             "ctr": 0,
-            "averagePosition": 6.875
+            "averagePosition": 7
           },
           "change": null
         },
@@ -12557,23 +12244,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 4
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/ancient-world-red-raven-en-second-edition/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/ancient-world-red-raven-en-second-edition/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
           },
           "change": null
         },
@@ -12673,9 +12343,9 @@
               "https://whogoesfirst.fun/games/aqua-garden-uchibacoya-en-rulebook/"
             ],
             "clicks": 0,
-            "impressions": 27,
+            "impressions": 26,
             "ctr": 0,
-            "averagePosition": 6.481481481481482
+            "averagePosition": 6.461538461538462
           },
           "change": null
         },
@@ -12744,23 +12414,6 @@
             "impressions": 4,
             "ctr": 0,
             "averagePosition": 4.25
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/architects-of-the-west-kingdom-garphill-2018-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/architects-of-the-west-kingdom-garphill-2018-en/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 4.5
           },
           "change": null
         },
@@ -12858,9 +12511,9 @@
               "https://whogoesfirst.fun/games/arkham-horror-second-edition-ffg-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 10
           },
           "change": null
         },
@@ -12994,9 +12647,9 @@
               "https://whogoesfirst.fun/games/azul-2018-en/"
             ],
             "clicks": 0,
-            "impressions": 19,
+            "impressions": 18,
             "ctr": 0,
-            "averagePosition": 6.368421052631579
+            "averagePosition": 6.222222222222222
           },
           "change": null
         },
@@ -13096,9 +12749,9 @@
               "https://whogoesfirst.fun/games/baerenpark-lookout-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 6.5
+            "averagePosition": 4
           },
           "change": null
         },
@@ -13232,9 +12885,9 @@
               "https://whogoesfirst.fun/games/bears-vs-babies-exploding-kittens-2023-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 17.333333333333332
+            "averagePosition": 21
           },
           "change": null
         },
@@ -13283,9 +12936,9 @@
               "https://whogoesfirst.fun/games/berried-treasure-restoration-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 8
           },
           "change": null
         },
@@ -13725,9 +13378,9 @@
               "https://whogoesfirst.fun/games/burgle-bros-2-fowers-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8.8
+            "averagePosition": 8.5
           },
           "change": null
         },
@@ -13810,9 +13463,9 @@
               "https://whogoesfirst.fun/games/caldera-park-deep-print-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 6
+            "averagePosition": 7
           },
           "change": null
         },
@@ -14039,17 +13692,17 @@
               "https://whogoesfirst.fun/games/carnegie-pegasus-en/"
             ],
             "clicks": 1,
-            "impressions": 8,
-            "ctr": 0.125,
-            "averagePosition": 7.125
+            "impressions": 4,
+            "ctr": 0.25,
+            "averagePosition": 5.5
           },
           "change": {
             "clicks": -1,
-            "impressions": -3,
+            "impressions": 1,
             "clicksPercent": -100,
-            "impressionsPercent": -37.5,
-            "ctrPercentagePoints": -12.5,
-            "averagePosition": 0.07500000000000018
+            "impressionsPercent": 25,
+            "ctrPercentagePoints": -25,
+            "averagePosition": 1.7000000000000002
           }
         },
         {
@@ -14100,23 +13753,6 @@
             "ctrPercentagePoints": 0,
             "averagePosition": -1.4000000000000004
           }
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/castle-combo-asmodee-en-2024/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/castle-combo-asmodee-en-2024/"
-            ],
-            "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 17.5
-          },
-          "change": null
         },
         {
           "keys": [
@@ -14348,9 +13984,9 @@
               "https://whogoesfirst.fun/games/caylus-ystari-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 3.3333333333333335
+            "averagePosition": 2
           },
           "change": null
         },
@@ -14399,9 +14035,9 @@
               "https://whogoesfirst.fun/games/century-spice-road-plan-b-big-box-en/"
             ],
             "clicks": 0,
-            "impressions": 17,
+            "impressions": 16,
             "ctr": 0,
-            "averagePosition": 12.470588235294118
+            "averagePosition": 12.9375
           },
           "change": null
         },
@@ -14601,9 +14237,9 @@
               "https://whogoesfirst.fun/games/chocolate-factory-alley-cat-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6.333333333333333
           },
           "change": null
         },
@@ -14737,9 +14373,9 @@
               "https://whogoesfirst.fun/games/clank-direwolf-en-2016/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 6.8
+            "averagePosition": 7
           },
           "change": null
         },
@@ -14779,23 +14415,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/clever-cubed-schmidt-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/clever-cubed-schmidt-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 7
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/clue-classic-hasbro-en/"
           ],
           "presence": "previous_only_returned",
@@ -14805,26 +14424,9 @@
               "https://whogoesfirst.fun/games/clue-classic-hasbro-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 7.666666666666667
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/clue-hasbro-2023-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/clue-hasbro-2023-en/"
-            ],
-            "clicks": 0,
             "impressions": 2,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 6.5
           },
           "change": null
         },
@@ -14939,9 +14541,9 @@
               "https://whogoesfirst.fun/games/color-flush-blue-orange-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7.25
+            "averagePosition": 9
           },
           "change": null
         },
@@ -14990,9 +14592,9 @@
               "https://whogoesfirst.fun/games/concordia-rio-grande-en/"
             ],
             "clicks": 0,
-            "impressions": 33,
+            "impressions": 30,
             "ctr": 0,
-            "averagePosition": 6.454545454545454
+            "averagePosition": 6.766666666666667
           },
           "change": null
         },
@@ -15024,9 +14626,9 @@
               "https://whogoesfirst.fun/games/container-10th-anniversary-mercury-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 5.2
+            "averagePosition": 5.25
           },
           "change": null
         },
@@ -15330,9 +14932,9 @@
               "https://whogoesfirst.fun/games/deception-murder-hong-kong-grey-fox-en/"
             ],
             "clicks": 0,
-            "impressions": 7,
+            "impressions": 6,
             "ctr": 0,
-            "averagePosition": 10.285714285714286
+            "averagePosition": 9.5
           },
           "change": null
         },
@@ -15364,9 +14966,9 @@
               "https://whogoesfirst.fun/games/deduckto-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7.833333333333333
+            "averagePosition": 8.2
           },
           "change": null
         },
@@ -15483,9 +15085,9 @@
               "https://whogoesfirst.fun/games/dino-garden-uchibacoya-en-rulebook/"
             ],
             "clicks": 0,
-            "impressions": 26,
+            "impressions": 22,
             "ctr": 0,
-            "averagePosition": 3.923076923076923
+            "averagePosition": 3.909090909090909
           },
           "change": null
         },
@@ -15738,9 +15340,9 @@
               "https://whogoesfirst.fun/games/dragonwood-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 9
+            "averagePosition": 7
           },
           "change": null
         },
@@ -15806,9 +15408,9 @@
               "https://whogoesfirst.fun/games/dune-imperium-dire-wolf-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5.5
+            "averagePosition": 6.666666666666667
           },
           "change": null
         },
@@ -15823,9 +15425,9 @@
               "https://whogoesfirst.fun/games/dune-imperium-uprising-dire-wolf-en-2023/"
             ],
             "clicks": 1,
-            "impressions": 24,
-            "ctr": 0.041666666666666664,
-            "averagePosition": 5.875
+            "impressions": 23,
+            "ctr": 0.043478260869565216,
+            "averagePosition": 5.869565217391305
           },
           "change": null
         },
@@ -15982,23 +15584,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/eldritch-horror-ffg-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/eldritch-horror-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 18.333333333333332
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/electropolis-homosapiens-en/"
           ],
           "presence": "previous_only_returned",
@@ -16101,23 +15686,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/equinox-next-move-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/equinox-next-move-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 2
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/ethnos-cmon-original-2017-en/"
           ],
           "presence": "previous_only_returned",
@@ -16127,9 +15695,9 @@
               "https://whogoesfirst.fun/games/ethnos-cmon-original-2017-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 8.333333333333332
+            "averagePosition": 8.6
           },
           "change": null
         },
@@ -16246,9 +15814,9 @@
               "https://whogoesfirst.fun/games/feed-the-kitty-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 6,
             "ctr": 0,
-            "averagePosition": 10.5
+            "averagePosition": 10.166666666666666
           },
           "change": null
         },
@@ -16280,9 +15848,9 @@
               "https://whogoesfirst.fun/games/finding-nessie-lifestyle-2018-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 10
+            "averagePosition": 5
           },
           "change": null
         },
@@ -16297,9 +15865,9 @@
               "https://whogoesfirst.fun/games/first-orchard-haba-en/"
             ],
             "clicks": 0,
-            "impressions": 9,
+            "impressions": 8,
             "ctr": 0,
-            "averagePosition": 7.222222222222222
+            "averagePosition": 7.125
           },
           "change": null
         },
@@ -16314,9 +15882,9 @@
               "https://whogoesfirst.fun/games/first-rat-pegasus-en/"
             ],
             "clicks": 0,
-            "impressions": 12,
+            "impressions": 11,
             "ctr": 0,
-            "averagePosition": 6
+            "averagePosition": 5.909090909090909
           },
           "change": null
         },
@@ -16654,9 +16222,9 @@
               "https://whogoesfirst.fun/games/formula-d-asmodee-basic-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5
+            "averagePosition": 4.666666666666666
           },
           "change": null
         },
@@ -16671,9 +16239,9 @@
               "https://whogoesfirst.fun/games/fort-leder-2020-en/"
             ],
             "clicks": 0,
-            "impressions": 7,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 4.428571428571429
+            "averagePosition": 9
           },
           "change": null
         },
@@ -16688,9 +16256,9 @@
               "https://whogoesfirst.fun/games/fragments-grrre-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6.2
           },
           "change": null
         },
@@ -16705,9 +16273,9 @@
               "https://whogoesfirst.fun/games/fresh-fish-2f-2014-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 7.333333333333333
+            "averagePosition": 7.8
           },
           "change": null
         },
@@ -17094,9 +16662,9 @@
               "https://whogoesfirst.fun/games/go-nuts-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7.5
+            "averagePosition": 9
           },
           "change": null
         },
@@ -17536,9 +17104,9 @@
               "https://whogoesfirst.fun/games/high-society-allplay-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 6.666666666666667
+            "averagePosition": 6.2
           },
           "change": null
         },
@@ -17556,23 +17124,6 @@
             "impressions": 3,
             "ctr": 0,
             "averagePosition": 7
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/hiroba-funnyfox-fr-summary/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/hiroba-funnyfox-fr-summary/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
           },
           "change": null
         },
@@ -17901,23 +17452,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/ingenious-thames-kosmos-original-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/ingenious-thames-kosmos-original-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/inis-matagot-original-en/"
           ],
           "presence": "returned_both",
@@ -17935,17 +17469,17 @@
               "https://whogoesfirst.fun/games/inis-matagot-original-en/"
             ],
             "clicks": 0,
-            "impressions": 7,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 9.428571428571429
+            "averagePosition": 9.8
           },
           "change": {
             "clicks": 0,
-            "impressions": -2,
+            "impressions": 0,
             "clicksPercent": null,
-            "impressionsPercent": -28.57142857142857,
+            "impressionsPercent": 0,
             "ctrPercentagePoints": 0,
-            "averagePosition": -0.22857142857142954
+            "averagePosition": -0.6000000000000014
           }
         },
         {
@@ -18078,9 +17612,9 @@
               "https://whogoesfirst.fun/games/john-company-second-edition-wehrlegig-en/"
             ],
             "clicks": 0,
-            "impressions": 25,
+            "impressions": 23,
             "ctr": 0,
-            "averagePosition": 6.28
+            "averagePosition": 6.260869565217392
           },
           "change": null
         },
@@ -18180,9 +17714,9 @@
               "https://whogoesfirst.fun/games/kemet-matagot-original-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7.5
+            "averagePosition": 9
           },
           "change": null
         },
@@ -18520,9 +18054,9 @@
               "https://whogoesfirst.fun/games/life-amazonia-bad-comet-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 8
           },
           "change": null
         },
@@ -18571,9 +18105,9 @@
               "https://whogoesfirst.fun/games/lord-of-rings-card-game-ffg-original-core-en/"
             ],
             "clicks": 0,
-            "impressions": 10,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 12.8
+            "averagePosition": 13.555555555555555
           },
           "change": null
         },
@@ -18588,9 +18122,9 @@
               "https://whogoesfirst.fun/games/lords-of-waterdeep-wizards-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 3.75
+            "averagePosition": 3
           },
           "change": null
         },
@@ -18639,9 +18173,9 @@
               "https://whogoesfirst.fun/games/mage-knight-wizkids-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 9
           },
           "change": null
         },
@@ -18758,9 +18292,9 @@
               "https://whogoesfirst.fun/games/mapmaker-lafair-2019-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 5.666666666666667
+            "averagePosition": 4
           },
           "change": null
         },
@@ -18807,9 +18341,9 @@
               "https://whogoesfirst.fun/games/marvel-champions-ffg-core-en/"
             ],
             "clicks": 0,
-            "impressions": 10,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 20.9
+            "averagePosition": 22.88888888888889
           },
           "change": null
         },
@@ -19264,9 +18798,9 @@
               "https://whogoesfirst.fun/games/nomads-ludonaute-en-v12/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 2
+            "averagePosition": 1
           },
           "change": null
         },
@@ -19383,9 +18917,9 @@
               "https://whogoesfirst.fun/games/one-night-ultimate-werewolf-bezier-en/"
             ],
             "clicks": 0,
-            "impressions": 24,
+            "impressions": 23,
             "ctr": 0,
-            "averagePosition": 16.541666666666664
+            "averagePosition": 17
           },
           "change": null
         },
@@ -19451,9 +18985,9 @@
               "https://whogoesfirst.fun/games/outfoxed-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 24.5
+            "averagePosition": 20.75
           },
           "change": null
         },
@@ -19757,9 +19291,9 @@
               "https://whogoesfirst.fun/games/petrichor-mighty-boards-2019-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 6.6
+            "averagePosition": 6.5
           },
           "change": null
         },
@@ -19825,9 +19359,9 @@
               "https://whogoesfirst.fun/games/pies-allplay-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 7,
             "ctr": 0,
-            "averagePosition": 6.25
+            "averagePosition": 6.428571428571429
           },
           "change": null
         },
@@ -19961,9 +19495,9 @@
               "https://whogoesfirst.fun/games/power-vacuum-keen-bean-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 8.333333333333332
+            "averagePosition": 7.5
           },
           "change": null
         },
@@ -20386,9 +19920,9 @@
               "https://whogoesfirst.fun/games/rising-sun-cmon-en/"
             ],
             "clicks": 1,
-            "impressions": 8,
-            "ctr": 0.125,
-            "averagePosition": 9.75
+            "impressions": 6,
+            "ctr": 0.16666666666666666,
+            "averagePosition": 11
           },
           "change": null
         },
@@ -20471,9 +20005,9 @@
               "https://whogoesfirst.fun/games/rock-hard-1977-devir-en/"
             ],
             "clicks": 1,
-            "impressions": 8,
-            "ctr": 0.125,
-            "averagePosition": 7.25
+            "impressions": 7,
+            "ctr": 0.14285714285714285,
+            "averagePosition": 7.142857142857143
           },
           "change": null
         },
@@ -20615,17 +20149,17 @@
               "https://whogoesfirst.fun/games/root-leder-standard-en/"
             ],
             "clicks": 0,
-            "impressions": 62,
+            "impressions": 55,
             "ctr": 0,
-            "averagePosition": 9.5
+            "averagePosition": 9.981818181818182
           },
           "change": {
             "clicks": 0,
-            "impressions": -61,
+            "impressions": -54,
             "clicksPercent": null,
-            "impressionsPercent": -98.38709677419355,
+            "impressionsPercent": -98.18181818181819,
             "ctrPercentagePoints": 0,
-            "averagePosition": -1.5
+            "averagePosition": -1.9818181818181824
           }
         },
         {
@@ -20839,9 +20373,9 @@
               "https://whogoesfirst.fun/games/scythe-stonemaier-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 9
           },
           "change": null
         },
@@ -20873,9 +20407,9 @@
               "https://whogoesfirst.fun/games/sea-salt-paper-bombyx-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 6,
             "ctr": 0,
-            "averagePosition": 5.25
+            "averagePosition": 6.166666666666667
           },
           "change": null
         },
@@ -21128,9 +20662,9 @@
               "https://whogoesfirst.fun/games/skunk-bingo-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 7.6
+            "averagePosition": 8
           },
           "change": null
         },
@@ -21281,9 +20815,9 @@
               "https://whogoesfirst.fun/games/snail-sprint-haba-en-2018/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 4.75
+            "averagePosition": 3.6666666666666665
           },
           "change": null
         },
@@ -21451,9 +20985,9 @@
               "https://whogoesfirst.fun/games/space-base-aeg-en/"
             ],
             "clicks": 0,
-            "impressions": 8,
+            "impressions": 7,
             "ctr": 0,
-            "averagePosition": 7.875
+            "averagePosition": 7.714285714285714
           },
           "change": null
         },
@@ -21519,9 +21053,9 @@
               "https://whogoesfirst.fun/games/speculation-queen-games-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 18.333333333333332
+            "averagePosition": 45
           },
           "change": null
         },
@@ -21536,9 +21070,9 @@
               "https://whogoesfirst.fun/games/speed-cups-amigo-en-v2-0/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 23.333333333333332
+            "averagePosition": 7.5
           },
           "change": null
         },
@@ -21621,9 +21155,9 @@
               "https://whogoesfirst.fun/games/spot-it-blue-orange-original-en/"
             ],
             "clicks": 0,
-            "impressions": 9,
+            "impressions": 8,
             "ctr": 0,
-            "averagePosition": 39.55555555555556
+            "averagePosition": 43.375
           },
           "change": null
         },
@@ -21680,7 +21214,7 @@
           "keys": [
             "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
           ],
-          "presence": "returned_both",
+          "presence": "current_only_returned",
           "current": {
             "keys": [
               "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
@@ -21690,23 +21224,8 @@
             "ctr": 0,
             "averagePosition": 6
           },
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-imperial-assault-ffg-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 8
-          },
-          "change": {
-            "clicks": 0,
-            "impressions": 0,
-            "clicksPercent": null,
-            "impressionsPercent": 0,
-            "ctrPercentagePoints": 0,
-            "averagePosition": -2
-          }
+          "previous": null,
+          "change": null
         },
         {
           "keys": [
@@ -21719,9 +21238,9 @@
               "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/"
             ],
             "clicks": 1,
-            "impressions": 108,
-            "ctr": 0.009259259259259259,
-            "averagePosition": 6.87962962962963
+            "impressions": 10,
+            "ctr": 0.1,
+            "averagePosition": 6.5
           },
           "change": null
         },
@@ -21819,9 +21338,9 @@
               "https://whogoesfirst.fun/games/stockpile-nauvoo-en/"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 8.5
+            "averagePosition": 10
           },
           "change": null
         },
@@ -22021,9 +21540,9 @@
               "https://whogoesfirst.fun/games/survive-atlantis-stronghold-anniversary-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 6
           },
           "change": null
         },
@@ -22038,9 +21557,9 @@
               "https://whogoesfirst.fun/games/sushi-go-2014-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 5,
             "ctr": 0,
-            "averagePosition": 36.833333333333336
+            "averagePosition": 42
           },
           "change": null
         },
@@ -22174,9 +21693,9 @@
               "https://whogoesfirst.fun/games/telestrations-the-op-second-en/"
             ],
             "clicks": 0,
-            "impressions": 13,
+            "impressions": 10,
             "ctr": 0,
-            "averagePosition": 5.6923076923076925
+            "averagePosition": 6
           },
           "change": null
         },
@@ -22276,9 +21795,9 @@
               "https://whogoesfirst.fun/games/the-castles-of-burgundy-alea-2019-en/"
             ],
             "clicks": 0,
-            "impressions": 12,
+            "impressions": 11,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 7.363636363636363
           },
           "change": null
         },
@@ -22429,9 +21948,9 @@
               "https://whogoesfirst.fun/games/the-mind-nsv-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 4.666666666666666
+            "averagePosition": 3.5
           },
           "change": null
         },
@@ -22449,23 +21968,6 @@
             "impressions": 13,
             "ctr": 0,
             "averagePosition": 6.3076923076923075
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/the-resistance-indie-boards-cards-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/the-resistance-indie-boards-cards-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 5
           },
           "change": null
         },
@@ -22531,9 +22033,9 @@
               "https://whogoesfirst.fun/games/themes/youngest-player/"
             ],
             "clicks": 0,
-            "impressions": 23,
+            "impressions": 22,
             "ctr": 0,
-            "averagePosition": 8.391304347826086
+            "averagePosition": 8.318181818181818
           },
           "change": null
         },
@@ -22582,9 +22084,9 @@
               "https://whogoesfirst.fun/games/through-the-desert-allplay-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 10.25
+            "averagePosition": 10
           },
           "change": null
         },
@@ -22667,9 +22169,9 @@
               "https://whogoesfirst.fun/games/ticket-to-ride-nordic-countries-days-of-wonder-en/"
             ],
             "clicks": 0,
-            "impressions": 13,
+            "impressions": 9,
             "ctr": 0,
-            "averagePosition": 8.76923076923077
+            "averagePosition": 10.444444444444445
           },
           "change": null
         },
@@ -22709,23 +22211,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/tiny-epic-kingdoms-gamelyn-en-dized/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/tiny-epic-kingdoms-gamelyn-en-dized/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 4
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/tiny-epic-western-gamelyn-en-dized/"
           ],
           "presence": "previous_only_returned",
@@ -22752,9 +22237,9 @@
               "https://whogoesfirst.fun/games/tipperary-lookout-en/"
             ],
             "clicks": 0,
-            "impressions": 14,
+            "impressions": 13,
             "ctr": 0,
-            "averagePosition": 7.5
+            "averagePosition": 7.461538461538462
           },
           "change": null
         },
@@ -22786,9 +22271,9 @@
               "https://whogoesfirst.fun/games/too-many-monkeys-gamewright-en/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 7.666666666666667
+            "averagePosition": 8
           },
           "change": null
         },
@@ -22803,9 +22288,9 @@
               "https://whogoesfirst.fun/games/topp-die-torte-schmidt-de-40659-placement/"
             ],
             "clicks": 1,
-            "impressions": 35,
-            "ctr": 0.02857142857142857,
-            "averagePosition": 6.6
+            "impressions": 32,
+            "ctr": 0.03125,
+            "averagePosition": 6.3125
           },
           "change": null
         },
@@ -23007,9 +22492,9 @@
               "https://whogoesfirst.fun/games/tuned-thundergryph-en-2022/"
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 2,
             "ctr": 0,
-            "averagePosition": 6.666666666666667
+            "averagePosition": 8.5
           },
           "change": null
         },
@@ -23024,7 +22509,7 @@
               "https://whogoesfirst.fun/games/tussie-mussie-button-shy-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
             "averagePosition": 8
           },
@@ -23058,9 +22543,9 @@
               "https://whogoesfirst.fun/games/ueber-den-wolken-zoch-601105207-en/"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 8.333333333333332
+            "averagePosition": 7.75
           },
           "change": null
         },
@@ -23557,23 +23042,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/watson-holmes-ludonova-en/"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/watson-holmes-ludonova-en/"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 8
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/wavelength-cmyk-en/"
           ],
           "presence": "previous_only_returned",
@@ -23668,9 +23136,9 @@
               "https://whogoesfirst.fun/games/wondrous-creatures-bad-comet-v2-2-en/"
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 9.6
+            "averagePosition": 9.5
           },
           "change": null
         },
@@ -23736,9 +23204,9 @@
               "https://whogoesfirst.fun/games/yak-pretzel-2022-en/"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 22.25
+            "averagePosition": 29.333333333333332
           },
           "change": null
         },
@@ -24195,9 +23663,9 @@
               "https://whogoesfirst.fun/ways-to-pick-who-goes-first/"
             ],
             "clicks": 3,
-            "impressions": 82,
-            "ctr": 0.036585365853658534,
-            "averagePosition": 6.987804878048781
+            "impressions": 80,
+            "ctr": 0.0375,
+            "averagePosition": 6.9625
           },
           "change": null
         }
@@ -24296,25 +23764,6 @@
             "averagePosition": 78
           },
           "previous": null,
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/",
-            "which goes first"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/",
-              "which goes first"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
           "change": null
         },
         {
@@ -25574,25 +25023,6 @@
         {
           "keys": [
             "https://whogoesfirst.fun/games/",
-            "rebis dungeon"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/",
-              "rebis dungeon"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/",
             "the curse of muziris"
           ],
           "presence": "previous_only_returned",
@@ -25603,9 +25033,9 @@
               "the curse of muziris"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5
+            "averagePosition": 4.666666666666666
           },
           "change": null
         },
@@ -25774,9 +25204,9 @@
               "who goes first in azul"
             ],
             "clicks": 0,
-            "impressions": 4,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 6.75
+            "averagePosition": 6
           },
           "change": null
         },
@@ -25815,25 +25245,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 56
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/bears-vs-babies-exploding-kittens-2023-en/",
-            "bears vs babies rules"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/bears-vs-babies-exploding-kittens-2023-en/",
-              "bears vs babies rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 10
           },
           "change": null
         },
@@ -26002,28 +25413,9 @@
               "carnegie rulebook"
             ],
             "clicks": 0,
-            "impressions": 2,
-            "ctr": 0,
-            "averagePosition": 9.5
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/castle-combo-asmodee-en-2024/",
-            "castle combo rules"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/castle-combo-asmodee-en-2024/",
-              "castle combo rules"
-            ],
-            "clicks": 0,
             "impressions": 1,
             "ctr": 0,
-            "averagePosition": 27
+            "averagePosition": 10
           },
           "change": null
         },
@@ -26675,25 +26067,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/deception-murder-hong-kong-grey-fox-en/",
-            "deception: murder in hong kong rules"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/deception-murder-hong-kong-grey-fox-en/",
-              "deception: murder in hong kong rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 15
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/decrypto-scorpion-masque-en/",
             "decrypto rules pdf"
           ],
@@ -26727,25 +26100,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 10
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/dragonwood-gamewright-en/",
-            "dragonwood game rules"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/dragonwood-gamewright-en/",
-              "dragonwood game rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 13
           },
           "change": null
         },
@@ -27131,25 +26485,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/eldritch-horror-ffg-en/",
-            "eldritch horror rules"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/eldritch-horror-ffg-en/",
-              "eldritch horror rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 39
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/emberleaf-city-of-kings-en/",
             "emberleaf rules pdf"
           ],
@@ -27237,9 +26572,9 @@
               "feed the kitty game rules"
             ],
             "clicks": 0,
-            "impressions": 6,
+            "impressions": 4,
             "ctr": 0,
-            "averagePosition": 11
+            "averagePosition": 10.75
           },
           "change": null
         },
@@ -27275,9 +26610,9 @@
               "first orchard game rules"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 7
+            "averagePosition": 6
           },
           "change": null
         },
@@ -27411,25 +26746,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 1
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/fort-leder-2020-en/",
-            "\"determine the starting player and seating order randomly\" root"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/fort-leder-2020-en/",
-              "\"determine the starting player and seating order randomly\" root"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 4.333333333333334
           },
           "change": null
         },
@@ -27905,25 +27221,6 @@
             "impressions": 3,
             "ctr": 0,
             "averagePosition": 9
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/kemet-matagot-original-en/",
-            "\"determine the starting player and seating order randomly\" root"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/kemet-matagot-original-en/",
-              "\"determine the starting player and seating order randomly\" root"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 7.333333333333333
           },
           "change": null
         },
@@ -28624,26 +27921,7 @@
               "outfoxed game rules"
             ],
             "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 24.333333333333332
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/outfoxed-gamewright-en/",
-            "outfoxed rules"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/outfoxed-gamewright-en/",
-              "outfoxed rules"
-            ],
-            "clicks": 0,
-            "impressions": 1,
+            "impressions": 2,
             "ctr": 0,
             "averagePosition": 9
           },
@@ -29032,25 +28310,6 @@
         {
           "keys": [
             "https://whogoesfirst.fun/games/root-leder-standard-en/",
-            "\"determine the starting player and seating order randomly\" root"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/root-leder-standard-en/",
-              "\"determine the starting player and seating order randomly\" root"
-            ],
-            "clicks": 0,
-            "impressions": 3,
-            "ctr": 0,
-            "averagePosition": 6.333333333333333
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/root-leder-standard-en/",
             "root rules"
           ],
           "presence": "previous_only_returned",
@@ -29235,25 +28494,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 11
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/scythe-stonemaier-en/",
-            "who goes first in scythe"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/scythe-stonemaier-en/",
-              "who goes first in scythe"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 4
           },
           "change": null
         },
@@ -29696,25 +28936,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/speed-cups-amigo-en-v2-0/",
-            "cups game friends"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/speed-cups-amigo-en-v2-0/",
-              "cups game friends"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 55
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/spirit-island-gtg-en/",
             "spirit island rulebook"
           ],
@@ -29886,44 +29107,6 @@
         },
         {
           "keys": [
-            "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/",
-            "\"star wars rebellion rules reference\" pdf"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/",
-              "\"star wars rebellion rules reference\" pdf"
-            ],
-            "clicks": 0,
-            "impressions": 5,
-            "ctr": 0,
-            "averagePosition": 7
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/",
-            "\"star wars: rebellion rules reference\" pdf"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/star-wars-rebellion-ffg-en/",
-              "\"star wars: rebellion rules reference\" pdf"
-            ],
-            "clicks": 0,
-            "impressions": 11,
-            "ctr": 0,
-            "averagePosition": 6.909090909090909
-          },
-          "change": null
-        },
-        {
-          "keys": [
             "https://whogoesfirst.fun/games/star-wars-x-wing-ffg-original-en/",
             "star wars x wing rules"
           ],
@@ -30049,9 +29232,9 @@
               "sushi go rulebook"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 46
+            "averagePosition": 81
           },
           "change": null
         },
@@ -30147,44 +29330,6 @@
             "impressions": 1,
             "ctr": 0,
             "averagePosition": 56
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/telestrations-the-op-second-en/",
-            "rules for telestrations"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/telestrations-the-op-second-en/",
-              "rules for telestrations"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
-          },
-          "change": null
-        },
-        {
-          "keys": [
-            "https://whogoesfirst.fun/games/telestrations-the-op-second-en/",
-            "telestrations rules pdf"
-          ],
-          "presence": "previous_only_returned",
-          "current": null,
-          "previous": {
-            "keys": [
-              "https://whogoesfirst.fun/games/telestrations-the-op-second-en/",
-              "telestrations rules pdf"
-            ],
-            "clicks": 0,
-            "impressions": 1,
-            "ctr": 0,
-            "averagePosition": 6
           },
           "change": null
         },
@@ -30448,9 +29593,9 @@
               "\"the most experienced traveler goes first\" \"ticket to ride europe\""
             ],
             "clicks": 0,
-            "impressions": 3,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 3.3333333333333335
+            "averagePosition": 4
           },
           "change": null
         },
@@ -30467,9 +29612,9 @@
               "\"ticket to ride europe\" \"the most experienced traveler goes first\""
             ],
             "clicks": 0,
-            "impressions": 5,
+            "impressions": 3,
             "ctr": 0,
-            "averagePosition": 5.2
+            "averagePosition": 4
           },
           "change": null
         },
@@ -30562,9 +29707,9 @@
               "too many monkeys rules"
             ],
             "clicks": 0,
-            "impressions": 2,
+            "impressions": 1,
             "ctr": 0,
-            "averagePosition": 8
+            "averagePosition": 9
           },
           "change": null
         },
